@@ -1,15 +1,12 @@
-<img src="./logo/logo-bar.svg" width="1000" height="500">
+# About
 
-## About
+This repository contains source code for Dasharo documentation webpage
 
-A new kind of BIOS firmware that will solve the problems of ownership, security
-and compatibility allowing you create secure, efficient images that are fully
-customizable to your tastes and needs.
+# Local build
 
-[Dasharo homepage](https://dasharo.com/)
-
-## Variants
-
-* [Dasharo Workstation](variants/workstation.md)
-* [Dasharo Secure Firewall](variants/secure-firewall.md)
-* [Dasharo Trustworthy Server](variants/trustworthy-server.md)
+```
+virutalenv -p $(which python3) venv
+source venv/bin/activate
+pip install mkdocs mkdocs-material
+mkdocs build
+```
