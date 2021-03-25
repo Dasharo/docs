@@ -1,3 +1,4 @@
 site_name: Dasharo documentation
 theme:
     name: material
+    favicon: images/favicon.png
