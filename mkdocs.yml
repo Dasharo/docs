@@ -2,3 +2,6 @@ site_name: Dasharo documentation
 theme:
     name: material
     favicon: images/favicon.png
+google_analytics:
+    - UA-39420295-13
+    - auto
