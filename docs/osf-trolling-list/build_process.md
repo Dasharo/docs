@@ -105,6 +105,8 @@ Open Source Firmware development and build environment SHOULD have:
   with what version of dev and build system, description should include
   side-spec compliance e.g. ACPI, SMBIOS, UEFI etc.
 * reproducible process that works across systems and in long run
+* signature, so anyone can identify where build and dev env coming from and if
+  it is trustworthy
 
 ## Ideas for solving above issues
 
@@ -118,6 +120,8 @@ Open Source Firmware development and build environment SHOULD have:
    - this is private channel, feel free to ping anyone from 3mdeb Team to join.
 2. coreboot toolchain is build by its own build system, which would be hard to
    couple with Dockerfile or something else.
+3. Docker images can be signed using `docker trust` commands as described
+   [here](https://docs.docker.com/engine/security/trust/#signing-images-with-docker-content-trust).
 
 I'm not tracking all activity in community, so some claims may be plain
 wrong. Please let me know what I miss when I'm wrong.
