@@ -19,7 +19,7 @@ values after firmware update, we gaining following advantages:
   the same version of OSF
 * Process of replying measurements provided in TPM Event Log is simpler because
   we can easily obtain software and confirm hashes used during PCR extension
-  process were valid and the same as produced by software build process
+  process was valid and the same as produced by software build process
 * Looking for bugs by using bisection is easier since being able to build every
   commit of software in reproducible manner give us confidence that there would
   be no change in behavior between 2 consecutive builds
@@ -31,7 +31,7 @@ values after firmware update, we gaining following advantages:
   industrial applications e.g. robots, trains, smart city infrastructure, if
   bug will be detected after long time it is important to have tools and be
   able to confirm the same binary can be generated in future. If we know given
-  toolchain reproduce binary bit by bit we are sure it also reproduce
+  toolchain reproduce binary bit by bit we are sure it also reproduces
   software/firmware behavior. In that light making small incremental
   improvement using toolchain that give reproducible results give us higher
   chance that we will not introduce uncontrolled change in behavior and code
@@ -40,7 +40,7 @@ values after firmware update, we gaining following advantages:
 
 # [OSFI0011] Docker containers as build systems "considered harmful"
 
-Docker containers for couple last years become default method for provide
+Docker containers for couple last years become default method for providing
 reproducible runtime environment for software as well those started to be very
 useful for developers to transfer exact configuration for building given
 software stack. We wrote about usefulness of Docker containers in embedded
@@ -101,7 +101,7 @@ Open Source Firmware development and build environment SHOULD have:
   processes [here](#TBD)
 * meaningful validation process, at least basic build system and dev env
   capabilities should be tested
-* meaningful revisions with clear explanation what software stack can be build
+* meaningful revisions with clear explanation of what software stack can be build
   with what version of dev and build system, description should include
   side-spec compliance e.g. ACPI, SMBIOS, UEFI etc.
 * reproducible process that works across systems and in long run
@@ -115,7 +115,7 @@ Open Source Firmware development and build environment SHOULD have:
    not reproducible build environment. Of course there is some work making
    Docker images reproducible, but it opens Pandora's box
    [[3]](https://elinux.org/images/6/62/Building-Container-Images-with-OpenEmbedded-and-the-Yocto-Project-Scott-Murray-Konsulko-Group-1.pdf)
-   of Yocto or Buildroot. Other path could be Nix or Guix, what is currently
+   of Yocto or Buildroot. Other paths could be Nix or Guix, which is currently
    pursued in community [OSFW #guix-buildstack channel](http://osfw.slack.com/)
    - this is private channel, feel free to ping anyone from 3mdeb Team to join.
 2. coreboot toolchain is build by its own build system, which would be hard to
