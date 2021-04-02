@@ -1,8 +1,6 @@
 Remote Testing Environment v1.1.0
 ---------------------------------
 
-### Product description
-
 **RTE** is a hat designed for Orange Pi Zero board which runs specially crafted
 Linux distribution using the Yocto Project. RTE boards are used for controlling
 **Device Under Test** fully remotely through the network interface. Most common
@@ -15,37 +13,21 @@ applications are:
 
 ![](../../../images/rte-v1.1.0-trans.png)
 
----
-
-#### RTE elements
+## RTE elements
 
 ![](../../../images/rte-v1.1.0-interface-desc.png)
 
-* UART0 header
-> 1x3 Orange Pi Zero system debug output and console (pins: `RX`, `TX`, `GND`).
-
-* SPI header
-> 2x4 standard 2.5mm IDC compatible header with all necessary signals to flash SPI
+* **UART0 header** - 1x3 Orange Pi Zero system debug output and console (pins: `RX`, `TX`, `GND`).
+* **SPI header** - 2x4 standard 2.5mm IDC compatible header with all necessary signals to flash SPI
   chips.
-
-* Orange Pi Zero GPIO
-> 1x3 GPIO pin header directly connected to Orange Pi zero platform.
-
-* I2C header
-> 1x4 populated pins: `3.3V`, `SCK`, `SDA`, `GND`.
-
-* OC buffers output
-> 1x12 GPIO pin header connected to Open Collector buffers.
-
-* DUT power control connectors
-> 2x DC jack 5.5/2.1mm female connectors for a Device Under Test power supply controlled
-  directly through the relay.
-
-* Reset button
-> Simple switch to reset RTE
-
-* RS232
-> DB9 male connector for RS232 communication with a hardware flow control.
+* **Orange Pi Zero GPIO** - 1x3 GPIO pin header directly connected to Orange Pi
+  zero platform.
+* **I2C header** - 1x4 populated pins: `3.3V`, `SCK`, `SDA`, `GND`.
+* **OC buffers output** - 1x12 GPIO pin header connected to Open Collector buffers.
+* **DUT power control connectors** - 2x DC jack 5.5/2.1mm female connectors for
+  a Device Under Test power supply controlled directly through the relay.
+* **Reset button** - Simple switch to reset RTE
+* **RS232** - DB9 male connector for RS232 communication with a hardware flow control.
 
 * UART output select header
 > 2x3 UART OUTPUT SELECT header destined for selecting serial output between
@@ -70,29 +52,6 @@ applications are:
 
 * micro USB connector
 > Connector for powering up RTE and OrangePi Zero setup.
-
----
-
-#### Reasons behind choosing RTE
-
-* high accessibility and flexibility
-> *test your device from any location.*
-
-* efficiency
-> *simplify validation: write one script and run it on unlimited platforms.
-  Don’t repeat yourself!*
-
-* independent development
-> *open hardware license: modify, upgrade and set it as you like. All blueprints
-  are at your disposal.*
-
-* instant setup
-> *intuitive connection: you do not need to be a certified engineer.*
-
-* automation
-> *time is money: let the machine do all the work for you*
-
----
 
 ### Product features
 
