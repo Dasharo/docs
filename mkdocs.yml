@@ -19,6 +19,8 @@ nav:
         - 'Compatibility': value-prop/compatibility.md
         - 'Performance': value-prop/performance.md
         - 'Marketing': value-prop/marketing.md
+        - 'Certification Program':
+            - 'Overview': value-prop/certification-program/overview.md
     - 'Development Environment':
         - 'Nix': dev-env/nix-dev-env.md
     - 'Stock Keeping Units (SKUs)':
