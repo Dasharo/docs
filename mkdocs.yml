@@ -22,9 +22,12 @@ nav:
     - 'Development Environment':
         - 'Nix': dev-env/nix-dev-env.md
     - 'Transparent Validation':
-        - 'Remote Testing Environment': transparent-validation/rte/introduction.md
-        - 'RTE v1.1.0 User Manual': transparent-validation/rte/v1.1.0/specifciation.md
-        - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
+        - 'Remote Testing Environment':
+            - 'Introduction': transparent-validation/rte/introduction.md
+            - 'Specification': transparent-validation/rte/v1.1.0/specifciation.md
+            - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
+            - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
+            - 'Revision History': transparent-validation/rte/revision-history.md
     - 'Stock Keeping Units (SKUs)':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md

@@ -1,18 +1,4 @@
-# RTE
-
-**RTE** is a hat designed for Orange Pi Zero board which runs specially crafted
-Linux distribution using the Yocto Project. RTE boards are used for controlling
-**Device Under Test** fully remotely through the network interface. Most common
-applications are:
-
-* debugging tasks,
-* flashing firmware,
-* controlling GPIOs
-* power management for **Device Under Test**.
-
-![](../../../images/rte-v1.1.0-trans.png)
-
-## RTE elements
+# RTE elements
 
 ![](../../../images/rte-v1.1.0-interface-desc.png)
 
@@ -55,7 +41,7 @@ applications are:
 * Open Source REST API controller
 * Cost-free future software improvements
 
-### Web interface
+### RteCtrl: Web interface
 
 ![](../../../images/rte-rest-api-interface.png)
 
@@ -89,7 +75,7 @@ Maximum voltage for all data signals: 3.3 V.
 | GPIO11      | 2     |
 | GPIO6       | 3     |
 
-#### GPIO header (2)
+### GPIO header (2)
 
 Second GPIO header (`J10`) is a 1x4 pin header straight type 2.54mm pitch. It is
 derived from GPIO expander on RTE board. They are accessible for general use. By
@@ -105,9 +91,7 @@ Expander GPIO: 25 mA maximum output current.
 | GPIO402     | 3     |
 | GPIO403     | 4     |
 
----
-
-#### GPIO header (3)
+### GPIO header (3)
 
 Third GPIO header (`J11`) is a 1x9 pin header straight type 2.54mm pitch. It is
 derived from GPIO expander on RTE board with an additional connection to OC
@@ -116,7 +100,6 @@ derived from GPIO expander on RTE board with an additional connection to OC
 Maximum voltage for all data signals: 3.3 V.
 OC buffers: 40 mA maximum output current.
 
-.pure-table[
 | Description | Pin # |
 |:-----------:|:-----:|
 | GPIO407     | 1     |
@@ -127,90 +110,79 @@ OC buffers: 40 mA maximum output current.
 | GPIO410     | 6     |
 | GPIO411     | 7     |
 | GPIO412     | 8     |
-| GPIO413     | 9     |]
+| GPIO413     | 9     |
 
-#### I2C header
+### I2C header
 
 I2C header (`J9`) is 1x4 pin header straight type 2.54mm pitch. It is used to
 rather low-speed applications such as reading sensors or accessing DACs and ADCs.
 
 Maximum voltage for all data signals: 3.3 V.
 
-.pure-table[
 | Description | Pin # |
 |:-----------:|:-----:|
 | 3V3         | 1     |
 | SCK         | 2     |
 | SDA         | 3     |
-| GND         | 4     |]
+| GND         | 4     |
 
----
-
-#### SPI header
+### SPI header
 
 SPI header (`J7`) is a 2x4 pin header straight type 2.54mm pitch. It is used to
 control the application SPI flash with a minimal set of connections.
 
 Maximum voltage for all data signals: 3.3 V.
 
-.pure-table[
 | Description | Pin # |  Pin # | Description |
 |:-----------:|:-----:|:------:|:-----------:|
 | Vcc         | 1     | 2      | GND         |
 | CS          | 3     | 4      | SCLK        |
 | MISO        | 5     | 6      | MOSI        |
-| ISP         | 7     | 8      | NC          |]
+| ISP         | 7     | 8      | NC          |
 
 Revision v1.1.0 features new possibilities for SPI configuration:
 
 * SPI `Vcc` pin has been populated - power is now supplied to the SPI `Vcc`
 connector and can be enabled/disabled on demand:
 
-.pure-table[
 | GPIO406 (OC_OUT1) state | SPI Vcc               |
 |:-----------------------:|:---------------------:|
 | 0 - low                 | disabled (by default) |
-| 1 - high                | enabled               |]
+| 1 - high                | enabled               |
 
 * user can choose the voltage level for `Vcc` SPI - either 1.8V or 3.3 V:
 
-.pure-table[
 | GPIO405 (OC_OUT2) state | SPI Vcc voltage level |
 |:-----------------------:|:---------------------:|
 | 0 - low                 | 1.8 V (by default)    |
-| 1 - high                | 3.3 V                 |]
+| 1 - high                | 3.3 V                 |
 
 * user can enable/disable SPI lines (some platforms have problems when booting
   with SPI wires connected):
 
-.pure-table[
 | GPIO404 (OC_OUT3) state | SPI lines (MOSI/MISO/CS/SCLK) |
 |:-----------------------:|:-----------------------------:|
 | 0 - low                 | disabled (by default)         |
-| 1 - high                | enabled                       |]
+| 1 - high                | enabled                       |
 
----
-
-#### UART OUTPUT SELECT header
+### UART OUTPUT SELECT header
 
 UART OUTPUT SELECT header (`J16`) is a 2x3 pin header straight type 2.54mm pitch.
 It is used for enabling serial communication output: RS232 DB9 port (`J14`) or
 UART1 header (`J18`). If jumpers are not attached, serial ports are disabled.
 
-.pure-table[
 | Jumper position (TX) | Jumper position (RX) | Serial communication enabled |
 |:--------------------:|:--------------------:|:----------------------------:|
 | RS232 + COM          | RS232 + COM          | RS232 DB9 port (J14)         |
-| EXT + COM            | EXT + COM            | 3.3V UART1 header (J18)      |]
+| EXT + COM            | EXT + COM            | 3.3V UART1 header (J18)      |
 
-#### RS232 connector
+### RS232 connector
 
 RS232 connector (`J14`) is a DB9 male 9 pin connector for serial communication
 between Remote Testing Environment and Device Under Test platform. It supports
 a hardware flow control. RS232 connector can be enabled/disabled according to
 [UART OUTPUT SELECT](#uart-output-select-header) section.
 
-.pure-table[
 | Pin # | Signal | Description         |
 |:-----:|:------:|:-------------------:|
 | 1     | DCD    | Data Carrier Detect |
@@ -221,11 +193,9 @@ a hardware flow control. RS232 connector can be enabled/disabled according to
 | 6     | DSR    | Data Set Ready      |
 | 7     | RTS    | Request to Send     |
 | 8     | CTS    | Clear to Send       |
-| 9     | RI     | Ring Indicator      |]
+| 9     | RI     | Ring Indicator      |
 
----
-
-#### UART0 header
+### UART0 header
 
 UART0 header (`J2`) is a 1x3 pin header straight type 2.54mm pitch. It is
 derived from Orange Pi Zero serial debug UART for debugging and serial
@@ -233,14 +203,13 @@ communication purposes.
 
 Maximum voltage for all data signals: 3.3 V.
 
-.pure-table[
 | Description | Pin # |
 |:-----------:|:-----:|
 | GND         | 1     |
 | RX          | 2     |
-| TX          | 3     |]
+| TX          | 3     |
 
-#### UART1 header
+### UART1 header
 
 UART1 header (`J18`) is a 1x3 pin header straight type 2.54mm pitch. It is used
 for serial communication with DUT. UART1 header can be enabled/disabled
@@ -248,16 +217,13 @@ according to [UART OUTPUT SELECT](#uart-output-select-header) section.
 
 Maximum voltage for all data signals: 3.3 V.
 
-.pure-table[
 | Description | Pin # |
 |:-----------:|:-----:|
 | GND         | 1     |
 | RX          | 2     |
-| TX          | 3     |]
+| TX          | 3     |
 
----
-
-#### Power output header
+### Power output header
 
 Power output header (`J15`) is 1x2 pin header straight type 2.54mm pitch. It is
 used for additional 5V or ground pin connections with various devices.
@@ -268,14 +234,14 @@ used for additional 5V or ground pin connections with various devices.
 | 5V          | 1     |
 | GND         | 2     |]
 
-#### DC jack
+### DC jack
 
 Two DC Jacks (`J12` and `J13`) are 5.5/2.1mm female plug connectors used for
 Device Under Test power supply. The output from DC Jacks is controlled through a
 relay. There is no matter whether `J12` or `J13` plug is input/output for power
 supply.
 
-#### Relay
+### Relay
 
 Relay (`K1`) is a mechanical switch for controlling Device Under Test power
 supply.
@@ -293,158 +259,24 @@ Technical reference:
 Relay state is indicated by LED (`D5`) located near relay and can be controlled
 via meta-rte operating system through GPIO199:
 
-.pure-table[
 | GPIO199 state | Relay state | D5 LED state |
 |:-------------:|:-----------:|:------------:|
 | 0             | OFF         | OFF          |
-| 1             | ON          | ON           |]
+| 1             | ON          | ON           |
 
----
-
-#### USB connectors
+### USB connectors
 
 USB connectors (`J6`, `J8`) available on RTE are additional USB type A ports
 derived from Orange Pi Zero header. They can be used for storage extension,
 serial communication through various adapters or USB programmer extension.
 
-#### microUSB connector
+### microUSB connector
 
 The micro USB connector (`J17`) is a USB B micro socket for powering up RTE and
 OrangePi Zero setup. It is required to use a 5V/2A power adapter. There is no
 difference whether the user plugs the power supply to the micro USB connector
 located on RTE board or use OrangePi Zero original socket.
 
-#### Reset button
+### Reset button
 
 Reset button (`SW1`) located near relay is used for resetting the RTE itself.
-
----
-
-### Shopping kit
-
-Full Remote Testing Environment set includes:
-
-.pure-table[
-| Category     | Description                                                     | Quantity |
-|:------------:|:---------------------------------------------------------------:|:--------:|
-| shield       | Remote Testing Environment v1.1.0                               | 1        |
-| control unit | Orange Pi Zero 256MB RAM version                                | 1        |
-| power supply | MicroUSB 5V/2A                                                  | 1        |
-| storage      | SanDisk 16GB microSD card (with preinstalled compatible system) | 1        |
-| clip         | Pomona 8-pin SOIC clip for Device Under Test SPI interface      | 1        |
-| cables       | standard female-female connection wire 2.56mm raster            | 8        |
-| cables       | IDC 8-pin wires for Device Under Test SPI interface             | 1        |
-| cables       | DC Jack - DC Jack power cable for Device Under Test             | 1        |
-| cables       | RS232 D-Sub 9P/9P cable for serial communication                | 1        |
-| jumpers      | jumper for UART OUTPUT SELECT header                            | 2        |
-| spacers      | Polyamide M3 spacers and bolts                                  | 4        |]
-
-**Price:** ~93 €
-
----
-
-### Revision history
-
-#### v1.1.0
-
-* added `Open hardware` logo
-* added `SW1` reset button
-* added `D5` relay state LED indicator
-* added `J16` 2x3pin UART OUTPUT SELECT header
-* added `J18` 1x2pin UART1 header
-* added 1.8V stabilizer
-* populated SPI `Vcc` pin
-* modified capacitors near MAX3232 SOIC
-* reduced OC buffers GPIO header (J11) from 12 to 9 pin
-* eliminated issue with J6 USB port (unreliable detection of USB devices)
-
-#### v1.0.0
-
-* added RoHS logo
-* added Crossed Wheelie Bin logo
-* modified footprints of the pin headers
-
-#### v0.5.3
-
-* enlarged added holes
-
-#### v0.5.2
-
-* modified I2C GPIO expander outputs connections (now 4 of them are connected to
-  the dedicated header)
-* modified version number on board
-* removed SPI header for APU recovery with output pin role information labels
-* removed 7 and 8 pin of SPI header with GPIO expander connection
-
----
-
-#### v0.5.1
-
-* added micro USB connector for power supply
-* added 5 V power supply pins
-* added SPI connector for APU SPI recovery
-* added fiducials on the bottom layer
-* added pins information labels
-* modified relay control system elements placement
-* modified SPI connector for APU paths placement
-* modified project text descriptions
-* removed 2 pin GPIO expander connector
-
-#### v0.5
-
-* added 5 V power supply signal diode (red) + limiting current resistor
-* added 3.3 V power supply signal diode (orange) + limiting current resistor
-* relay NO/NC connection switched to the previous configuration
-* switched `SPI1_MISO`with `SPI1_MOSI` output
-* mirrored `RS232` socket pads
-* removed I2C pull-up resistors
-
-#### v0.3.6
-
-* relay NO/NC connection switched
-
-#### v0.3.5
-
-* enlarged the hole diameter by 0.1 mm
-
-#### v0.3.4
-
-* added 3mdeb logo and board name on PCB
-* modified elements marks placing
-
----
-
-#### v0.3.3
-
-* added SPI output IO pins connection with GPIO
-* added PCB mechanical schematic
-* added I2C INT pins connection
-* added mounting holes
-* added fiducials
-* modified MOSFET transistor pinout numeration
-* modified USB footprint from horizontal to vertical
-* modified I2C GPIO expander with OC buffers connection
-
-#### v0.3.2
-
-* added mounting holes
-* modified relay pinout
-* removed I2C to GND connection
-
-#### v0.3.1
-
-* modified power supply from 5V to 3V3 for I2C bus `MCP23017`, and `MAX3232`
-* removed capacitors connected to the I2C bus
-
-#### v0.3
-
-* added I2C bus with output header
-* added `MCP23017` I2C GPIO expander
-* added second `SN74LS06` OC buffer
-* added relay with required neighboring items
-* added `MAX3232` RS232 electrical level changer
-* added RS232 socket
-* added GPIO output header for pins unused to OC buffer control
-* modified some of input pins connection
-* removed ARK joint for the relay module
-* removed header for relay module control
