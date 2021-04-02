@@ -122,6 +122,15 @@ Open Source Firmware development and build environment SHOULD have:
    couple with Dockerfile or something else.
 3. Docker images can be signed using `docker trust` commands as described
    [here](https://docs.docker.com/engine/security/trust/#signing-images-with-docker-content-trust).
+4. Other idea would be to use `wget` and `dpkg -i` for every needed package in
+   `Dockerfile` that create base image for reproducible toolchain. Of course
+  that means quite extensive dependency management, but maybe simplicity is worth
+  the effort.
+5. It is also possible to maintain VMs per given coreboot (or other OSF)
+  version. That may mean long term VM image compatibility issues as well as
+  problems with making sure images would work with various hypervisor versions.
+  It is even more complex if multiple OS should be supported. VMs also have quite
+  big overhead in terms of performance
 
 I'm not tracking all activity in community, so some claims may be plain
 wrong. Please let me know what I miss when I'm wrong.
