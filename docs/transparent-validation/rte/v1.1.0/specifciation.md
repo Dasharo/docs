@@ -1,5 +1,4 @@
-Remote Testing Environment v1.1.0
----------------------------------
+# RTE
 
 **RTE** is a hat designed for Orange Pi Zero board which runs specially crafted
 Linux distribution using the Yocto Project. RTE boards are used for controlling
@@ -28,34 +27,22 @@ applications are:
   a Device Under Test power supply controlled directly through the relay.
 * **Reset button** - Simple switch to reset RTE
 * **RS232** - DB9 male connector for RS232 communication with a hardware flow control.
+* **UART output select header** 2x3 UART OUTPUT SELECT header destined for
+  selecting serial output between UART1 header and DB9 RS232 connector.
+* **UART1 header** - 1x3 UART header for 3V3 serial communication with DUT
+  (pins: `RX`, `TX`, `GND`).
+* **2x USB connectors** - Connect additional storages, external flash
+  programmers, USB-RS232 or USB-UART converters.
+* **5V header** - 1x2 5V output populated pins: `5V`, `GND`.
+* **expander GPIO** - 1x4 GPIO pin header connected to GPIOs expander with no
+  OC buffers.
+* **Relay** - Controls Device Under Tests power supply
+* **micro USB connector** - Connector for powering up RTE and OrangePi Zero
+  setup.
 
-* UART output select header
-> 2x3 UART OUTPUT SELECT header destined for selecting serial output between
-> UART1 header and DB9 RS232
-  connector.
+## Product features
 
-* UART1 header
-> 1x3 UART header for 3V3 serial communication with DUT (pins: `RX`, `TX`, `GND`).
-
-* 2x USB connectors
-> Connect additional storages, external flash programmers, USB-RS232 or USB-UART
-  converters.
-
-* 5V header
-> 1x2 5V output populated pins: `5V`, `GND`.
-
-* expander GPIO
-> 1x4 GPIO pin header connected to GPIOs expander with no OC buffers.
-
-* Relay
-> Controls Device Under Tests power supply
-
-* micro USB connector
-> Connector for powering up RTE and OrangePi Zero setup.
-
-### Product features
-
-#### Key features
+### Key features
 
 * Cheaper and more feature-rich in comparison to other products
 * Ultra-fast SPI flashing (16MHz)
@@ -68,27 +55,9 @@ applications are:
 * Open Source REST API controller
 * Cost-free future software improvements
 
-#### Yocto meta-rte
+### Web interface
 
-Our specially crafted operating system fully customized for Remote Testing
-Environment platform aspects. **meta-rte** is based on open source project -
-**Yocto Project** used for building Linux-based systems regardless of the
-hardware architecture. **meta-rte** has most mandatory tools and dependencies
-required for everyday debugging task with various range of hardware. RTE running
-**meta-rte** is ready to use completely out of the box, without the need for
-additional laborious configuration.
-
-Moreover, open source solutions such as the Yocto Project and **meta-rte**
-provides possibility to rebuild the whole system strictly for the end users
-requirements, making the whole set more universal with endless applications!
-
-More information can be found at https://github.com/3mdeb/meta-rte
-
----
-
-### Product features
-
-#### REST API
+![](../../../images/rte-rest-api-interface.png)
 
 **RteCtrl** is a REST API controller used for RTE board. It comes with meta-rte
 operating system and starts automatically on port `8000` without the necessity
@@ -98,20 +67,15 @@ Internet browser and provides a possibility to:
 * control Device Under Test power supply (coldboot and warmboot)
 * reset Device Under Test platform
 * flash Device Under Test firmware
-
-.center[<img src="https://blog.3mdeb.com/img/REST-API.png" width="425px">]
-
-More information can be found at https://github.com/3mdeb/RteCtrl
+More information can be found at [RteCtrl repository](https://github.com/3mdeb/RteCtrl)
 
 > **DISCLAIMER:** Before starting the flashing procedure through REST API console,
   make sure that appropriate SPI logic levels are set accordingly to
   [SPI](#spi-header) section.
 
----
+## Specification
 
-### Specification
-
-#### GPIO header (1)
+### GPIO header (1)
 
 First GPIO header (`J1`) is a 1x3 pin header straight type 2.54mm pitch. It is
 derived directly from Orange Pi GPIOs for general use. By default, these GPIOs
@@ -119,13 +83,11 @@ are set to `INPUT` mode.
 
 Maximum voltage for all data signals: 3.3 V.
 
-
-.pure-table[
 | Description | Pin # |
 |:-----------:|:-----:|
 | GPIO12      | 1     |
 | GPIO11      | 2     |
-| GPIO6       | 3     |]
+| GPIO6       | 3     |
 
 #### GPIO header (2)
 
@@ -136,13 +98,12 @@ default, these GPIOs are set to `INPUT` mode.
 Maximum voltage for all data signals: 3.3 V.
 Expander GPIO: 25 mA maximum output current.
 
-.pure-table[
 | Description | Pin # |
 |:-----------:|:-----:|
 | GPIO400     | 1     |
 | GPIO401     | 2     |
 | GPIO402     | 3     |
-| GPIO403     | 4     |]
+| GPIO403     | 4     |
 
 ---
 

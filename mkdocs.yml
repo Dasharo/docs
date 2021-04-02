@@ -24,6 +24,7 @@ nav:
     - 'Transparent Validation':
         - 'Remote Testing Environment': transparent-validation/rte/introduction.md
         - 'RTE v1.1.0 User Manual': transparent-validation/rte/v1.1.0/specifciation.md
+        - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
     - 'Stock Keeping Units (SKUs)':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
