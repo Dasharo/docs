@@ -8,6 +8,9 @@ extra_css:
 google_analytics:
     - UA-39420295-13
     - auto
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences
 nav:
     - 'Intro': index.md
     - 'Trolling Topics List':
