@@ -19,7 +19,7 @@ of your platform.
 Also called variants or flavours. In essence Dasharo SKUs are set of Open
 Source Firmware releases produced for given market segment with awareness of
 features that given segment requires. Each market segment includes two types of
-platforms Reference Platform (RP) and Hardware Compatibility List Platforms
+platforms: Reference Platform (RP) and Hardware Compatibility List Platforms
 (HCLP).
 
 What SKUs we support:

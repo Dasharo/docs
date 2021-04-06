@@ -27,6 +27,14 @@ nav:
         - 'Marketing': value-prop/marketing.md
     - 'Development Environment':
         - 'Nix': dev-env/nix-dev-env.md
+    - 'Transparent Validation':
+        - 'Remote Testing Environment':
+            - 'Introduction': transparent-validation/rte/introduction.md
+            - 'Specification': transparent-validation/rte/v1.1.0/specifciation.md
+            - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
+            - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
+            - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
+            - 'Revision History': transparent-validation/rte/revision-history.md
     - 'Stock Keeping Units (SKUs)':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
