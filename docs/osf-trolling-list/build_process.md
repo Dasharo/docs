@@ -16,10 +16,12 @@ values after firmware update, we are gaining the following advantages:
 
 * We can easily confirm if the firmware is valid by reading TPM PCRs and compare to
   reference integrity measures (RIM), RIM can be calculated by build exactly
-  the same version of OSF
-  _NOTE_: Please note that depending on your threat model using TPM chip with
-  closed source firmware implementation may lead to solution which is not
-  trustworthy.
+  the same version of OSF.
+
+    __NOTE__: Please note that depending on your threat model using TPM chip with
+    closed source firmware implementation may lead to solution which is not
+    trustworthy.
+
 * Process of replying measurements provided in TPM Event Log is simpler because
   we can easily obtain software and confirm hashes used during PCR extension
   the process was valid and the same as produced by the software build process
