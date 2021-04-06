@@ -14,9 +14,9 @@
 
 Possible stages:
 * **Planning** - platform support is planned either through internal, community or commercial sponsorship.
-* **Implementation** - under active development to provide base line support.
-* **Testing and Integration** - under validation to sign-off on base line quality criteria.
-* **Maintanance** - under active maintenance release cycle according to schedule presented in Roadmap.
+* **Implementation** - under active development to provide baseline support.
+* **Testing and Integration** - under validation to sign-off on baseline quality criteria.
+* **Maintenance** - under active maintenance release cycle according to schedule presented in Roadmap.
 
 ## Releases
 

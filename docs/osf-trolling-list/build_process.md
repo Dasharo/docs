@@ -108,6 +108,7 @@ Open Source Firmware development and build environment SHOULD have:
   processes [here](#TBD)
 * meaningful validation process, at least basic build system and dev env
   capabilities should be tested
+
 * meaningful revisions with a clear explanation of what software stack can be build
   with what version of dev and build system, a description should include
   side-spec compliance, e.g., ACPI, SMBIOS, UEFI, etc.
@@ -128,6 +129,15 @@ Open Source Firmware development and build environment SHOULD have:
 2. coreboot toolchain is built by its own build system, which would be hard to couple with Dockerfile or something else.
 3. Docker images can be signed using `docker trust` commands as described
    [here](https://docs.docker.com/engine/security/trust/#signing-images-with-docker-content-trust).
+4. Other idea would be to use `wget` and `dpkg -i` for every needed package in
+   `Dockerfile` that create base image for reproducible toolchain. Of course
+  that means quite extensive dependency management, but maybe simplicity is worth
+  the effort.
+5. It is also possible to maintain VMs per given coreboot (or other OSF)
+  version. That may mean long term VM image compatibility issues as well as
+  problems with making sure images would work with various hypervisor versions.
+  It is even more complex if multiple OS should be supported. VMs also have quite
+  big overhead in terms of performance
 
 I'm not tracking all activity in the community, so some claims may be plain
 wrong. Please let me know what I miss when I'm wrong.
