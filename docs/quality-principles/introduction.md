@@ -4,16 +4,16 @@
 
 Each Dasharo release is secured cryptographically, ensuring with RSA 4096 keys
 the authenticity of binary SHA-256 integrity checksum. The three-step key
-verification is assuming that your client receives a clean file without any
+verification is guarantees that your client receives a clean file without any
 third-party modifications. Integrity and signature verification procedure is
-included so that the key compliance can be easily checked.
+included, so that the key compliance can be easily checked.
 
 ## Secure Maintenance
 
 Dasharo doesn't believe in security through obscurity. That is why each Dasharo
 firmware is supported with the system of Transparent Validation, proving its
 efficiency and quality with testing results. As an Open Source product, it
-provides fast emergency releases and patches together with long-lasting
+provides timely emergency releases and patches together with long-lasting
 maintenance.
 
 ## Credibility
@@ -26,7 +26,7 @@ product versioning.
 
 Generic testing procedures for a given Dasharo product line are included in the
 product documentation. Specific testing procedures are delivered in the form of
-a PDF document with a release.
+a PDF document accompanying a release.
 
 ## Availability
 
