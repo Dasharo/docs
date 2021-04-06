@@ -202,6 +202,8 @@ If the above does not resolve the problem, the kernel may be compiled with stric
 devmem, which prohibits accessing the IOMEM. You should then take different
 Linux system.
 
+TBD: add refrence to Dasharo Reference OS on USB stick or other method
+
 ### Ubuntu installation
 
 Ubuntu legacy installers have problems with graphical setup mode. When you see an
