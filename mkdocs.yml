@@ -8,6 +8,10 @@ extra_css:
 google_analytics:
     - UA-39420295-13
     - auto
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences
+    - pymdownx.keys
 nav:
     - 'Intro': index.md
     - 'Trolling Topics List':
@@ -27,7 +31,10 @@ nav:
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
         - 'Secure Firewall': variants/secure-firewall.md
-        - 'Workstation': variants/workstation.md
+        - 'Workstation':
+            - 'SKU description': variants/workstation.md
+            - 'Releases': variants/workstation/releases.md
+            - 'Installation manual': variants/workstation/installation-manual.md
         - 'Server': variants/server.md
         - 'Trustworthy Server': variants/trustworthy-server.md
         - 'Trustworthy Computing': variants/trustworthy-computing.md
