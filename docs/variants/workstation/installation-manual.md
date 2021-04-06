@@ -65,7 +65,7 @@ You will need root privileges from now on to proceed. So switch to the root user
 use __*sudo*__ in each command.
 
 1. Install flashrom v1.1 or newer with your distribution's package manager if
-   you don't have it installed yet. If your distro doesn't provide flashrom,
+   you don't have it installed yet. If your distro doesn't provide flashrom or provides an outdated one,
    you can build it yourself using [this instruction](https://www.flashrom.org/Downloads).
 2. Back your firmware image up with: `sudo flashrom -p internal -r bios_backup.bin`
    (be sure flashrom doesn't report any errors like below).
