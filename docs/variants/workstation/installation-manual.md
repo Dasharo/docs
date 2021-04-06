@@ -48,7 +48,7 @@ steps. Follow the below instructions:
 
 8. Place the jumper in the place marked by red rectangle.
 
-    ![](../../images/service_jumper.jpg)
+    ![](../../images/service_jumper_header.jpg)
 
 9. It should look like this.
 
