@@ -14,7 +14,8 @@ for a secure firewall solution based on open-source software and technologies.
 
 TBD: we need more precise characteristics of Dasharo Firewall, it should be
 defined by tests we applying to typical firewall devices e.g. OPNsense
-compatibility
+compatibility.
+TBD: maybe also add some picture/diagram of Dasharo Firewall to compliment the text.
 
 ## Hardware compatibility
 
