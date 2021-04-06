@@ -11,6 +11,7 @@ google_analytics:
 markdown_extensions:
     - pymdownx.highlight
     - pymdownx.superfences
+    - pymdownx.keys
 nav:
     - 'Intro': index.md
     - 'Trolling Topics List':
