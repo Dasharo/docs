@@ -52,7 +52,7 @@ steps. Follow the below instructions:
 
 9. It should look like this.
 
-    ![](../../images/image0.jpeg)
+    ![](../../images/service_jumper.jpeg)
 
 10. Power on the machine. You should see a warning that service jumper is
 active. Press F1 to proceed  and boot to your Linux system.
