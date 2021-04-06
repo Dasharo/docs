@@ -2,9 +2,9 @@
 
 ## Secure Delivery
 
-Each Dasharo release is secured cryptographically, ensuring with RSA 4096 keys,
-authenticity of binary SHA-256 integrity checksum. The three-step key
-verification assuming that your client receives a clean file without any
+Each Dasharo release is secured cryptographically, ensuring with RSA 4096 keys
+the authenticity of binary SHA-256 integrity checksum. The three-step key
+verification is assuming that your client receives a clean file without any
 third-party modifications. Integrity and signature verification procedure is
 included so that the key compliance can be easily checked.
 
@@ -30,9 +30,9 @@ a PDF document with a release.
 
 ## Availability
 
-Dasharo product line page includes hardware compatibility platform list. The
-platform for which the new product line is created, becomes it's reference
-platform. The consecutive platforms are added to the hardware compatibility
+Dasharo product line page includes a hardware compatibility platform list. The
+platform for which the new product line is created becomes its reference
+platform. The consecutive hardware platforms are added to the hardware compatibility
 list (HCL).
 
 ## Compliance
