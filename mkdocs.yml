@@ -32,7 +32,7 @@ nav:
     - 'Transparent Validation':
         - 'Remote Testing Environment':
             - 'Introduction': transparent-validation/rte/introduction.md
-            - 'Specification': transparent-validation/rte/v1.1.0/specifciation.md
+            - 'Specification': transparent-validation/rte/v1.1.0/specification.md
             - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
             - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
             - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
