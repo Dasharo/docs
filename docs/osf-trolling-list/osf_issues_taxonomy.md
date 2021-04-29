@@ -11,3 +11,9 @@ discussions.
 Other role of this list is to create taxonomy of OSF problems and issues to
 community and Dasharo customers, to avoid repeating argumentation and
 explanation of topics which most of community already are familiar with.
+
+## OSFTTL candidates
+
+Below is the list of potential candidates for trolling questions.
+
+* Will OSF support device X?
