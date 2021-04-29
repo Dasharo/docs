@@ -1,4 +1,4 @@
-site_name: Dasharo Ecosystem Documentation
+site_name: Dasharo Universe
 site_url: https://docs.dasharo.com/
 theme:
     name: material
@@ -18,6 +18,36 @@ markdown_extensions:
         toc_depth: 2
 nav:
     - 'Intro': index.md
+    - 'Ecosystem':
+        - 'Overview': ecosystem/overview.md
+        - 'Open Source Firmware Community': ecosystem/osf-community.md
+        - 'Development': ecosystem/dev.md
+        - 'Production': ecosystem/prod.md
+        - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
+        - 'Transparent Validation':
+            - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
+            - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
+            - 'muxPi':
+                - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
+                - 'Basic validation': transparent-validation/muxpi/basic-validation.md
+            - 'Remote Testing Environment':
+                - 'Introduction': transparent-validation/rte/introduction.md
+                - 'Specification': transparent-validation/rte/v1.1.0/specification.md
+                - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
+                - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
+                - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
+                - 'Revision History': transparent-validation/rte/revision-history.md
+            - 'SD Wire':
+                - 'Getting started': transparent-validation/sd-wire/getting-started.md
+                - 'Specification': transparent-validation/sd-wire/specification.md
+                - 'Usage': transparent-validation/sd-wire/usage-validation.md
+        - 'Secure Storage': ecosystem/secure-storage.md
+        - 'Signing Server': ecosystem/signing-server.md
+        - 'Attestation Server': ecosystem/attestation-server.md
+        - 'Deployment and Provisioning Server': ecosystem/deployment-and-provisioning-server.md
+        - 'Reference OS': ecosystem/reference-os.md
+        - 'Publishing Server': ecosystem/publishing-server.md
+        - 'End User Device': ecosystem/end-user.md
     - 'Quality Principles':
         - 'Introduction': quality-principles/introduction.md
         - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
@@ -36,21 +66,6 @@ nav:
         - 'Versioning': dev-proc/versioning.md
         - 'Features and bug fixes development process': dev-proc/feature-bug-fix-dev-process.md
         - 'Standard Release Process': dev-proc/standard-release-process.md
-    - 'Transparent Validation':
-        - 'muxPi':
-            - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
-            - 'Basic validation': transparent-validation/muxpi/basic-validation.md
-        - 'Remote Testing Environment':
-            - 'Introduction': transparent-validation/rte/introduction.md
-            - 'Specification': transparent-validation/rte/v1.1.0/specification.md
-            - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
-            - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
-            - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
-            - 'Revision History': transparent-validation/rte/revision-history.md
-        - 'SD Wire':
-            - 'Getting started': transparent-validation/sd-wire/getting-started.md
-            - 'Specification': transparent-validation/sd-wire/specification.md
-            - 'Usage': transparent-validation/sd-wire/usage-validation.md
     - 'Supported hardware':
         - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
         - 'Dell OptiPlex':
