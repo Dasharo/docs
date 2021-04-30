@@ -15,7 +15,11 @@ organization. This section overview role of every component.
   which Embedded Firmware Team use for development of Dasharo Modules, which
   are sometimes custom services, but most of the time ready to use productised
   services, Open Core or SaaS.
-* [Production](ecosystem/prod.md) - 
+* [Production](ecosystem/prod.md) - Dasharo Production describe process of putting
+  together Dasharo Modules according to specific requirements. In this section we
+  describe development infrastructure, build environment, CI/CD and build publishing
+  methods. We also cover how production interact with Dasharo Transparent Validation
+  System. 
 * [Customer Infrastructure](ecosystem/customer-infrastructure.md)
 * [Testing Infrastructure](ecosystem/testing-infrastructure.md)
 * [Hardware Laboratory](ecosystem/hardware-infrastructure.md)
