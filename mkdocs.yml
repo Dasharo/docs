@@ -1,4 +1,4 @@
-site_name: Dasharo Ecosystem Documentation
+site_name: Dasharo Universe
 theme:
     name: material
     favicon: images/favicon.png
@@ -13,7 +13,31 @@ markdown_extensions:
     - pymdownx.superfences
     - pymdownx.keys
 nav:
-    - 'Intro': index.md
+    - 'About': index.md
+    - 'Ecosystem':
+        - 'Overview': ecosystem/overview.md
+        - 'Open Source Firmware Community': ecosystem/osf-community.md
+        - 'Development': ecosystem/dev.md
+        - 'Production': ecosystem/prod.md
+        - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
+        - 'Transparent Validation':
+            - 'Overview': ecosystem/transparent-validation.md
+            - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
+            - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
+            - 'RTE':
+                - 'Introduction': transparent-validation/rte/introduction.md
+                - 'Specification': transparent-validation/rte/v1.1.0/specification.md
+                - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
+                - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
+                - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
+                - 'Revision History': transparent-validation/rte/revision-history.md
+        - 'Secure Storage': ecosystem/secure-storage.md
+        - 'Signing Server': ecosystem/signing-server.md
+        - 'Attestation Server': ecosystem/attestation-server.md
+        - 'Deployment and Provisioning Server': ecosystem/deployment-and-provisioning-server.md
+        - 'Reference OS': ecosystem/reference-os.md
+        - 'Publishing Server': ecosystem/publishing-server.md
+        - 'End User Device': ecosystem/end-user.md
     - 'Trolling Topics List':
         - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
         - 'Firmware build process': osf-trolling-list/build_process.md
@@ -29,14 +53,6 @@ nav:
             - 'Overview': value-prop/certification-program/overview.md
     - 'Development Environment':
         - 'Nix': dev-env/nix-dev-env.md
-    - 'Transparent Validation':
-        - 'Remote Testing Environment':
-            - 'Introduction': transparent-validation/rte/introduction.md
-            - 'Specification': transparent-validation/rte/v1.1.0/specification.md
-            - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
-            - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
-            - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
-            - 'Revision History': transparent-validation/rte/revision-history.md
     - 'Stock Keeping Units (SKUs)':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
