@@ -25,6 +25,7 @@ nav:
         - 'Production': ecosystem/prod.md
         - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
         - 'Transparent Validation':
+            - 'Overview': ecosystem/transparent-validation.md
             - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
             - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
             - 'muxPi':
