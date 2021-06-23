@@ -1,6 +1,12 @@
 # SD-Wire usgae:
+![](./../../images/SD-Wire.png)
 
-## Evnironment preparation:
+* [Environment preparation](#evnironment-preparation)
+* [First Use](#first-use)
+* [Everyday use](#everyday-use)
+* [Presale Validation](#presale-validation)
+
+## Evnironment preparation
 
 ### Software
 SD-MUX has dedicated software which is a simple tool meant to control
@@ -41,7 +47,7 @@ Then again run:
  ```
  Now the environment is ready to configure and control the SD-Wire.
 
- ## First use:
+ ## First use
  1. Run `dmesg -w` in the terminal
  2. Connect the SD-wire to your machine using micro-USB-->USB cabel.
  3. Dmesg output you should looks like this:
@@ -62,7 +68,7 @@ Then again run:
 ```
 sudo  sd-mux-ctrl --list
 ```
-If output looks like below, it means that SD-Wire is configured, go to "Everyday use" section.
+If output looks like below, it means that SD-Wire is configured, go to [Everyday use](#everyday-use) section.
 ```
 Number of FTDI devices found: 1
 Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
@@ -95,9 +101,9 @@ Number of FTDI devices found: 1
 Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
 ```
 
-## Everyday use:
+## Everyday use
 
-Typical scenario is: 
+### Typical scenario is: 
 
 1. Disconnect power supply from the DUT.
 2. Disconnect micro SD card from the DUT.
@@ -109,19 +115,86 @@ Typical scenario is:
 
 Using SD-Wire there is no need to disconnect SD card from DUT.
 
-Scenario using SD-Wire:
+### Scenario using SD-Wire:
 
-1. Insert card to the SD-Wire and connect it to the DUT
-2. Connect 
+Setup preparation:
 
+1. Insert SD card to the SD-Wire.
+2. Insert SD-Wire into the DUT and connect it to the TS with micro-USB-->USB cable.
+3. Connect RTE power control connectors to the DUT
+4. Check serial no. of SD-Wire:
+
+```
+➜  ~ sudo  sd-mux-ctrl --list
+Number of FTDI devices found: 1
+Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
+
+```
+Usage: 
+
+1. Disconnect power supply using RTE.
+2. Connect SD card to the TS (using sd-mux-ctrl)
+```
+sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
+```
+3. Flash the SD card usign bmaptool or balenaEtcher.
+4. Connect SD card to the DUT (using sd-mux-ctrl)
+```
+sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
+```
+5. Connect power supply using RTE.
+6. DUT should boot from freshly burned SD-card.
+
+Command `sudo sd-mux-ctrl --device-serial=sd-wire_11 --status`
+returns information if SD-Wire is connected to DUT or TS.
+```
+➜  ~ sudo sd-mux-ctrl --device-serial=sd-wire_11 --status
+SD connected to: TS
+```
 At the moment RTE does not support sd-mux-ctrl, so SD-Wire must be
 controlled from configured TS.
 
-
 TS - Test server
+
 DUT - Device under test
 
+## Presale validation
+
+### HW setup
+* SD-Wire
+* SD card
+* DUT bootable from SD card (RPI, Orange PI etc.)
+* DUT power supply
+* Micro-USB-->USB cable
+
+### Validation Steps
+1. Prepare environment (go to [environment preparation](#evnironment-preparation) section)
+2. Insert SD card to the SD-Wire.
+3. Put SD-Wire into the DUT and connect it to the TS with the
+micro USB - USB cable.
+4. Check if SD-Wire is preconfigured:
+
+```
+sudo  sd-mux-ctrl --list
+Number of FTDI devices found: 1
+Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
+```
+If any FTDI device is found, it means that SD-wire is preconfigured,
+if not - go to [first use](#first-use) section and prepare the device.
+4. Connect SD card to the TS:
+```
+sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
+```
+5. Flash the SD card usign bmaptool or balenaEtcher.
+6. Connect SD card to the DUT (using sd-mux-ctrl)
+```
+sudo sd-mux-ctrl --device-serial=sd-wire_11 --DUT
+```
+7. Connect power supply to the DUT and check if it boots properly from 
+newly burned image.
 
 References:
 
 https://wiki.tizen.org/SD_MUX
+
+https://wiki.tizen.org/SD_MUX/manpage
