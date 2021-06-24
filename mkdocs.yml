@@ -1,4 +1,5 @@
 site_name: Dasharo Ecosystem Documentation
+site_url: https://docs.dasharo.com/
 theme:
     name: material
     favicon: images/favicon.png
@@ -39,6 +40,10 @@ nav:
             - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
             - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
             - 'Revision History': transparent-validation/rte/revision-history.md
+        - 'SD Wire':
+            - 'Getting started': transparent-validation/sd-wire/getting-started.md
+            - 'Specification': transparent-validation/sd-wire/specification.md
+            - 'Usage': transparent-validation/sd-wire/usage-validation.md
     - 'Stock Keeping Units (SKUs)':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
