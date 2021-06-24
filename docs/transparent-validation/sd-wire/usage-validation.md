@@ -1,11 +1,4 @@
-# SDWire usage:
-
-![](./../../images/SD-Wire.png)
-
-* [Environment preparation](#evnironment-preparation)
-* [First Use](#first-use)
-* [Everyday use](#everyday-use)
-* [Presale Validation](#presale-validation)
+# SDWire usage
 
 ## Evnironment preparation
 
