@@ -42,7 +42,11 @@ nav:
     - 'Stock Keeping Units (SKUs)':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
-        - 'Secure Firewall': variants/secure-firewall.md
+        - 'Secure Firewall':
+            - 'SKU description': variants/secure-firewall.md
+            - 'Releases': variants/secure-firewall/releases.md
+            - 'Installation manual': variants/secure-firewall/installation-manual.md
+            - 'Release process': variants/secure-firewall/release-process.md
         - 'Workstation':
             - 'SKU description': variants/workstation.md
             - 'Releases': variants/workstation/releases.md
