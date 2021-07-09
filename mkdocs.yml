@@ -33,6 +33,9 @@ nav:
     - 'Development Environment':
         - 'Nix': dev-env/nix-dev-env.md
     - 'Transparent Validation':
+        - 'muxPi':
+            - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
+            - 'Basic validation': transparent-validation/muxpi/basic-validation.md
         - 'Remote Testing Environment':
             - 'Introduction': transparent-validation/rte/introduction.md
             - 'Specification': transparent-validation/rte/v1.1.0/specification.md
