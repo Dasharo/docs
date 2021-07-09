@@ -218,3 +218,7 @@ Minicom quick guide:
 1. Type: `help`
 
 > NOTE: If output is the same as above then basic validation for muxPi is done.
+
+---
+
+*Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)*
