@@ -17,6 +17,6 @@ and should be maintained in that way.
 3. Run platform regression test suite
 5. Fix all required issues and repeat point 4 until fixed - this doesn't mean
    all tests pass, this mean that approved set passed
-6. If results are accepted merge it to `release` branch
+6. If results are accepted merge it to `<platform>/release` branch
 7. Add tag, which should trigger CI and publish binaries
 8. Merge release branch to develop
