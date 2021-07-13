@@ -1,5 +1,4 @@
-Standard Release Process
-------------------------
+# Standard Release Process
 
 Following procedure is generic description of release process of firmware for
 supported hardware platforms. Precise steps and any difference from standard

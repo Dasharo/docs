@@ -1,5 +1,4 @@
-Dasharo RTE Reference OS
-------------------------
+# Dasharo RTE Reference OS
 
 Our specially crafted operating system fully customized for Remote Testing
 Environment platform aspects. **meta-rte** is based on open source project -

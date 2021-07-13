@@ -1,5 +1,4 @@
-Source code structure
----------------------
+# Source code structure
 
 Every repository forked and maintained by Dasharo Release Team has following
 branch structure:

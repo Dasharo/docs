@@ -1,5 +1,4 @@
-Open Source Firmware Trivia Questions List (OSFTQL)
----------------------------------------------------
+# Open Source Firmware Trivia Questions List (OSFTQL)
 
 Goal of following questions list is to provide answers to terribly trivial
 topics or questions that were asked and answered gazillion times. We believe to

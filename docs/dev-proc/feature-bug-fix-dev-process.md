@@ -1,5 +1,4 @@
-Features and bug fixes development
-----------------------------------
+# Features and bug fixes development
 
 We are in favor of Test Driven Bug Fixing methodology for which process looks
 as follows:

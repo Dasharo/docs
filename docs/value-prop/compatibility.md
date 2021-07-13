@@ -1,5 +1,4 @@
-Dasharo Compatibility Module
-----------------------------
+# Dasharo Compatibility Module
 
 From communication bus standards, through industry specifications like ACPI and
 ending up with support for Operating Systems, each platform needs set of

@@ -1,5 +1,4 @@
-Versioning
-----------
+# Versioning
 
 Dasharo Releases are versioned using [Semantic Versioning](https://semver.org/)
 and [Keep A Changelog](https://keepachangelog.com/en/1.0.0/) to document

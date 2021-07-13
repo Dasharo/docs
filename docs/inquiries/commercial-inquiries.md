@@ -1,5 +1,4 @@
-Commercial inquiries
---------------------
+# Commercial inquiries
 
 If you have any questions about our services, feel free to contact us using
 [Dasharo contact form](https://dasharo.com/pages/contact.html) or 
