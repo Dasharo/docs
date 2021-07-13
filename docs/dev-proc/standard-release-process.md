@@ -1,0 +1,22 @@
+Standard Release Process
+------------------------
+
+Following procedure is generic description of release process of firmware for
+supported hardware platforms. Precise steps and any difference from standard
+process are described in platform specific documentation.
+
+Description here is, intentionally, Open Source Firmware framework agnostics
+and should be maintained in that way.
+
+## Process steps
+
+1. Checkout new branch `<platform>/rel_x.y.z` from recent commit on
+   `<platfrom>/release` - to understand versioning scheme please read
+   [Versioning](versioning.md) section
+2. Merge current `<platform>/develop` to `<platform>/rel_x.y.z`
+3. Run platform regression test suite
+5. Fix all required issues and repeat point 4 until fixed - this doesn't mean
+   all tests pass, this mean that approved set passed
+6. If results are accepted merge it to `release` branch
+7. Add tag, which should trigger CI and publish binaries
+8. Merge release branch to develop
