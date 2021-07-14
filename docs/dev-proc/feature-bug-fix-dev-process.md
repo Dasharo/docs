@@ -12,4 +12,4 @@ as follows:
 6. Run test written in point 1 and make sure it pass.
 7. Run `<platform>` regression test suite and make sure new feature does not
    introduce new bugs.
-8. Submit PR to `develop`
+8. Submit PR to `<platform>/develop`
