@@ -7,7 +7,7 @@ as follows:
    this point
 2. Pull upstream `master` branch to Dasharo forked repository `master` branch
 3. Merge `master` to `<platform>/develop`
-4. Create new branch `<platform>/<feature>` from `develop`
+4. Create new branch `<platform>/<feature>` from `<platform>/develop`
 5. Commit changes to `<platform>/<feature>`
 6. Run test written in point 1 and make sure it pass.
 7. Run `<platform>` regression test suite and make sure new feature does not
