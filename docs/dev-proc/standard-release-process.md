@@ -14,7 +14,7 @@ and should be maintained in that way.
    [Versioning](versioning.md) section
 2. Merge current `<platform>/develop` to `<platform>/rel_vX.Y.Z`
 3. Run platform regression test suite
-4. Fix all required issues and repeat point 4 until fixed - this doesn't mean
+4. Fix all required issues and repeat point 3 until fixed - this doesn't mean
    all tests pass, this mean that approved set passed
 5. If results are accepted merge it to `<platform>/release` branch
 6. Add tag, which should trigger CI and publish binaries
