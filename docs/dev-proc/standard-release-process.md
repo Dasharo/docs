@@ -9,7 +9,7 @@ and should be maintained in that way.
 
 ## Process steps
 
-1. Checkout new branch `<platform>/rel_x.y.z` from recent commit on
+1. Checkout new branch `<platform>/rel_vX.Y.Z` from recent commit on
    `<platfrom>/release` - to understand versioning scheme please read
    [Versioning](versioning.md) section
 2. Merge current `<platform>/develop` to `<platform>/rel_x.y.z`
