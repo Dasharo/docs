@@ -17,7 +17,7 @@ information about hardware.
 
 ## Tags
 
-Dasharo Release tags in git repository use format: `<platform>_vx.y.z`
+Dasharo Release tags in git repository use format: `<platform>_vX.Y.Z`
 
 ## New platform support
 
@@ -25,4 +25,3 @@ Branch for new platform should be created from most recent`master` branch tag.
 If there is justified need to create support for new board at arbitrary
 non-tagged commit developer should mark this commit with `<platform>_v0.0.0`
 tag.
-
