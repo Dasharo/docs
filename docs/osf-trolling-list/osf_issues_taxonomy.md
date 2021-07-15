@@ -1,5 +1,4 @@
-Open Source Firmware Trolling Topics List (OSFTTL)
---------------------------------------------------
+# Open Source Firmware Trolling Topics List (OSFTTL)
 
 Name of this list was chosen purposefully and facetiously, because its goal is
 to confront opinions of various community members about controversial topics.

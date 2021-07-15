@@ -1,5 +1,4 @@
-Glossary
---------
+# Glossary
 
 After years of providing services and products on firmware
 market we recognize that it is poisoned by incorrect and

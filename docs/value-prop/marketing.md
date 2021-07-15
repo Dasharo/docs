@@ -1,5 +1,4 @@
-Dasharo Marketing Module
-------------------------
+# Dasharo Marketing Module
 
 We think every advanced piece of software requires correct communication to all
 users who will interact with it. Marketing module helps in organizing and

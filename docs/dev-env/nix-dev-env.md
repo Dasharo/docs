@@ -1,8 +1,7 @@
-Build system and development environment
-----------------------------------------
+# Build system and development environment
 
-# Docker containers considered harmful
+## Docker containers considered harmful
 
 > 
 
-# Nix as reproducible development environment
+## Nix as reproducible development environment

@@ -1,14 +1,13 @@
-`[OSFI001]` Build process
--------------------------
+# `[OSFI001]` Build process
 
-# `[OSFI0010]` There is no healthy OSF without reproducible builds
+## `[OSFI0010]` There is no healthy OSF without reproducible builds
 
-## What are the reproducible builds?
+### What are the reproducible builds?
 
 [Reproducible Builds](https://reproducible-builds.org/) and a lot of its aspects
 is well explained on the linked website.
 
-## Why are reproducible builds crucial OSF?
+### Why are reproducible builds crucial OSF?
 
 This is because knowing hashes of firmware components, we can calculate expected
 TPM PCRs values. By knowing good PCR values and being able to predict further
@@ -43,7 +42,7 @@ values after firmware update, we are gaining the following advantages:
   the change will be reflected by the compilation process without affecting previous
   software behavior.
 
-# [OSFI0011] Docker containers as build systems "considered harmful."
+## [OSFI0011] Docker containers as build systems "considered harmful."
 
 Docker containers for a couple of last years become the default method for providing
 reproducible runtime environment for software as well those started to be very
@@ -56,7 +55,7 @@ After a long time of using Docker containers for embedded software development
 and build environments we noticed problems for long time maintenance and
 reproducibility.
 
-## coreboot-sdk problems
+### coreboot-sdk problems
 
 The example can be `coreboot-sdk` used for building
 [coreboot project](https://coreboot.org).
@@ -91,7 +90,7 @@ Some more detailed notes related to `coreboot-sdk` issues are presented below.
    a good thing to use the most recent compiler and update code accordingly since it
    can easily break OSes.
 
-### Why we care?
+#### Why we care?
 
 1. Whenever we deliver code or service to community or customer, we provide
    build environment which, for the sake of quality user support, should be
@@ -101,7 +100,7 @@ Some more detailed notes related to `coreboot-sdk` issues are presented below.
    increase maintenance cost significantly and increase maintenance cost
    significantly
 
-## Requirements for OSF dev and build process
+### Requirements for OSF dev and build process
 
 Open Source Firmware development and build environment SHOULD have:
 * meaningful release process, we describe our approach to OSF-related release
@@ -116,7 +115,7 @@ Open Source Firmware development and build environment SHOULD have:
 * signature, so anyone can identify where build and dev env coming from and if
   it is trustworthy
 
-## Ideas for solving the above issues
+### Ideas for solving the above issues
 
 1. Docker images are not reproducible - this is a known fact, and if we are
    extremely serious about stability, security and quality, we should stop

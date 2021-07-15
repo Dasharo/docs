@@ -15,13 +15,9 @@ markdown_extensions:
     - pymdownx.keys
 nav:
     - 'Intro': index.md
-    - 'Trolling Topics List (OSFTTL)':
-        - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
-        - 'Firmware build process': osf-trolling-list/build_process.md
-    - 'Trivia Questions List (OSFTQL)':
-        - 'Trivial questions': osf-trivia-list/introduction.md
     - 'Quality Principles':
         - 'Introduction': quality-principles/introduction.md
+        - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
     - 'Value proposition':
         - 'Overview': value-prop/overview.md
         - 'Security': value-prop/security.md
@@ -32,6 +28,11 @@ nav:
             - 'Overview': value-prop/certification-program/overview.md
     - 'Development Environment':
         - 'Nix': dev-env/nix-dev-env.md
+    - 'Development Process':
+        - 'Source code structure': dev-proc/source-code-structure.md
+        - 'Versioning': dev-proc/versioning.md
+        - 'Features and bug fixes development process': dev-proc/feature-bug-fix-dev-process.md
+        - 'Standard Release Process': dev-proc/standard-release-process.md
     - 'Transparent Validation':
         - 'muxPi':
             - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
@@ -47,14 +48,17 @@ nav:
             - 'Getting started': transparent-validation/sd-wire/getting-started.md
             - 'Specification': transparent-validation/sd-wire/specification.md
             - 'Usage': transparent-validation/sd-wire/usage-validation.md
-    - 'Stock Keeping Units (SKUs)':
+    - 'Supported hardware':
+        - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
+        - 'Dell OptiPlex':
+            - 'Releases': variants/dell_optiplex/releases.md
+            - 'Installation manual': variants/dell_optiplex/installation-manual.md
+    - 'Dasharo SKUs':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
         - 'Secure Firewall': variants/secure-firewall.md
         - 'Workstation':
             - 'SKU description': variants/workstation.md
-            - 'Releases': variants/workstation/releases.md
-            - 'Installation manual': variants/workstation/installation-manual.md
         - 'Server': variants/server.md
         - 'Trustworthy Server': variants/trustworthy-server.md
         - 'Trustworthy Computing': variants/trustworthy-computing.md
@@ -65,5 +69,12 @@ nav:
         - 'Community Edition': inquiries/community-edition.md
         - 'Sponsorware': inquiries/sponsorware.md
         - 'Commercial inquiries': inquiries/commercial-inquiries.md
+    - 'Knowledge base':
+        - 'Trolling Topics List':
+            - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
+            - 'Firmware build process': osf-trolling-list/build_process.md
+            - 'Firmware release process': osf-trolling-list/release_process.md
+        - 'Frequently Asked Questions':
+            - 'Introduction': osf-trivia-list/introduction.md
     - 'Glossary': glossary.md
 

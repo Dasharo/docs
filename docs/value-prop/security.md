@@ -1,5 +1,4 @@
-Dasharo Security Module
------------------------
+# Dasharo Security Module
 
 This module gathers all security features Dasharo Ecosystem can bring to your
 platform through software. No matter if this is new hardware at design stage,
