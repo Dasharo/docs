@@ -28,10 +28,8 @@ tag.
 
 ## Force-pushes rules
 
-Force-pushes to `<platform>/rel_vX.Y.Z` or `<platfrom>/<feature>` are
-unconditionally forbidden.
-
-For other branches force-pushes are forbidden with following exceptions:
+Force-pushes to `<platform>/rel_vX.Y.Z` or `<platform>/<feature>` are forbidden
+with following exceptions:
 * rebasing - when some other PR is merged to target branch before our does, or
   when upstream's master introduces the same fixes that our branch would
 * squashing - to not produce unnecessary "fix indentation" or "add missing
@@ -39,3 +37,5 @@ For other branches force-pushes are forbidden with following exceptions:
 * (re-)signing commits (both -S and -s) - shouldn't happen, but if it does
   happen it would be better to have it fixed by original author than the person
   that tries to upstream it some time later.
+
+Force-pushes to other branches are unconditionally forbidden.
