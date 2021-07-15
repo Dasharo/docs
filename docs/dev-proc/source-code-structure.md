@@ -17,7 +17,7 @@ information about hardware.
 
 ## Tags
 
-Dasharo Release tags in git repository use format: `<platform>_vx.y.z`
+Dasharo Release tags in git repository use format: `<platform>_vX.Y.Z`
 
 ## New platform support
 
@@ -26,3 +26,16 @@ If there is justified need to create support for new board at arbitrary
 non-tagged commit developer should mark this commit with `<platform>_v0.0.0`
 tag.
 
+## Force-pushes rules
+
+Force-pushes to `<platform>/rel_vX.Y.Z` or `<platform>/<feature>` are forbidden
+with following exceptions:
+* rebasing - when some other PR is merged to target branch before our does, or
+  when upstream's master introduces the same fixes that our branch would
+* squashing - to not produce unnecessary "fix indentation" or "add missing
+  braces" commits to the history
+* (re-)signing commits (both -S and -s) - shouldn't happen, but if it does
+  happen it would be better to have it fixed by original author than the person
+  that tries to upstream it some time later.
+
+Force-pushes to other branches are unconditionally forbidden.

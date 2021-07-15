@@ -9,13 +9,13 @@ and should be maintained in that way.
 
 ## Process steps
 
-1. Checkout new branch `<platform>/rel_x.y.z` from recent commit on
+1. Checkout new branch `<platform>/rel_vX.Y.Z` from recent commit on
    `<platfrom>/release` - to understand versioning scheme please read
    [Versioning](versioning.md) section
-2. Merge current `<platform>/develop` to `<platform>/rel_x.y.z`
+2. Merge current `<platform>/develop` to `<platform>/rel_vX.Y.Z`
 3. Run platform regression test suite
-5. Fix all required issues and repeat point 4 until fixed - this doesn't mean
+4. Fix all required issues and repeat point 3 until fixed - this doesn't mean
    all tests pass, this mean that approved set passed
-6. If results are accepted merge it to `<platform>/release` branch
-7. Add tag, which should trigger CI and publish binaries
-8. Merge release branch to develop
+5. If results are accepted merge it to `<platform>/release` branch
+6. Add tag, which should trigger CI and publish binaries
+7. Merge release branch to develop
