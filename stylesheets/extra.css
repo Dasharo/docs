@@ -1,0 +1,11 @@
+:root {
+  --md-primary-fg-color:        #29363b;
+  --md-primary-fg-color--light: #808080;
+  --md-primary-fg-color--dark:  #29363b;
+  --md-accent-fg-color:         hsla(117, 66%, 51%, 0.7);
+  --md-text-font-family:        "Oswald",sans-serif;
+}
+
+:root > * {
+  --md-typeset-a-color:         #38d430;
+}

@@ -1,0 +1,1937 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://docs.dasharo.com/transparent-validation/muxpi/theory-of-operations/">
+      
+      <link rel="icon" href="../../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
+    
+    
+      
+        <title>Theory of Operations - Dasharo Ecosystem Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.be71726b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+      
+  
+
+
+
+  
+  
+
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-39420295-13","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#muxpi-theory-of-operations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Dasharo Ecosystem Documentation" class="md-header__button md-logo" aria-label="Dasharo Ecosystem Documentation" data-md-component="logo">
+      
+  <img src="../../../images/dasharo-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dasharo Ecosystem Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Theory of Operations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Dasharo Ecosystem Documentation" class="md-nav__button md-logo" aria-label="Dasharo Ecosystem Documentation" data-md-component="logo">
+      
+  <img src="../../../images/dasharo-logo.png" alt="logo">
+
+    </a>
+    Dasharo Ecosystem Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Intro
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Quality Principles
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Quality Principles" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Quality Principles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quality-principles/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quality-principles/dasharo-quality-criteria.md" class="md-nav__link">
+        Dasharo Quality Criteria
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Value proposition
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Value proposition" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Value proposition
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../value-prop/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../value-prop/security/" class="md-nav__link">
+        Security
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../value-prop/compatibility/" class="md-nav__link">
+        Compatibility
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../value-prop/performance/" class="md-nav__link">
+        Performance
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../value-prop/marketing/" class="md-nav__link">
+        Marketing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      <label class="md-nav__link" for="__nav_3_6">
+        Certification Program
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Certification Program" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Certification Program
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../value-prop/certification-program/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Development Environment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Development Environment" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Development Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev-env/nix-dev-env/" class="md-nav__link">
+        Nix
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Development Process
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Development Process" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Development Process
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev-proc/source-code-structure/" class="md-nav__link">
+        Source code structure
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev-proc/versioning/" class="md-nav__link">
+        Versioning
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev-proc/feature-bug-fix-dev-process/" class="md-nav__link">
+        Features and bug fixes development process
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev-proc/standard-release-process/" class="md-nav__link">
+        Standard Release Process
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Transparent Validation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Transparent Validation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Transparent Validation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" checked>
+      
+      <label class="md-nav__link" for="__nav_6_1">
+        muxPi
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="muxPi" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          muxPi
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Theory of Operations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Theory of Operations
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#block-diagram" class="md-nav__link">
+    Block diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#muxpi-setup" class="md-nav__link">
+    muxPi setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-installation" class="md-nav__link">
+    Software installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dut-setup" class="md-nav__link">
+    DUT setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interacting-with-muxpi" class="md-nav__link">
+    Interacting with muxPi
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-validation/" class="md-nav__link">
+        Basic validation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      <label class="md-nav__link" for="__nav_6_2">
+        Remote Testing Environment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Remote Testing Environment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Remote Testing Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rte/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rte/v1.1.0/specification/" class="md-nav__link">
+        Specification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rte/v1.1.0/getting-started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rte/pcengines/" class="md-nav__link">
+        RTE and PC Engines
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rte/v1.1.0/reference-os/" class="md-nav__link">
+        RTE Reference OS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rte/revision-history/" class="md-nav__link">
+        Revision History
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      <label class="md-nav__link" for="__nav_6_3">
+        SD Wire
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="SD Wire" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          SD Wire
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sd-wire/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sd-wire/specification/" class="md-nav__link">
+        Specification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sd-wire/usage-validation/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Supported hardware
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Supported hardware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Supported hardware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/hardware-compatibility-list/" class="md-nav__link">
+        Hardware Compatibility List
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
+      
+      <label class="md-nav__link" for="__nav_7_2">
+        Dell OptiPlex
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dell OptiPlex" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dell OptiPlex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/dell_optiplex/releases/" class="md-nav__link">
+        Releases
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/dell_optiplex/installation-manual/" class="md-nav__link">
+        Installation manual
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      <label class="md-nav__link" for="__nav_8">
+        Dasharo SKUs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dasharo SKUs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Dasharo SKUs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/skus-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/firewall/" class="md-nav__link">
+        Firewall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/secure-firewall/" class="md-nav__link">
+        Secure Firewall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_4" type="checkbox" id="__nav_8_4" >
+      
+      <label class="md-nav__link" for="__nav_8_4">
+        Workstation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Workstation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          Workstation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/workstation/" class="md-nav__link">
+        SKU description
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/server/" class="md-nav__link">
+        Server
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/trustworthy-server/" class="md-nav__link">
+        Trustworthy Server
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/trustworthy-computing/" class="md-nav__link">
+        Trustworthy Computing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/safety-critical/" class="md-nav__link">
+        Safety-Critical
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variants/custom/" class="md-nav__link">
+        Custom
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      <label class="md-nav__link" for="__nav_9">
+        How to work with us?
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="How to work with us?" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          How to work with us?
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inquiries/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inquiries/community-edition/" class="md-nav__link">
+        Community Edition
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inquiries/sponsorware/" class="md-nav__link">
+        Sponsorware
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inquiries/commercial-inquiries/" class="md-nav__link">
+        Commercial inquiries
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      <label class="md-nav__link" for="__nav_10">
+        Knowledge base
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Knowledge base" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Knowledge base
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+      
+      <label class="md-nav__link" for="__nav_10_1">
+        Trolling Topics List
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Trolling Topics List" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_1">
+          <span class="md-nav__icon md-icon"></span>
+          Trolling Topics List
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../osf-trolling-list/osf_issues_taxonomy/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../osf-trolling-list/build_process/" class="md-nav__link">
+        Firmware build process
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../osf-trolling-list/release_process.md" class="md-nav__link">
+        Firmware release process
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
+      
+      <label class="md-nav__link" for="__nav_10_2">
+        Frequently Asked Questions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Frequently Asked Questions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Frequently Asked Questions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../osf-trivia-list/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#block-diagram" class="md-nav__link">
+    Block diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#muxpi-setup" class="md-nav__link">
+    muxPi setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-installation" class="md-nav__link">
+    Software installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dut-setup" class="md-nav__link">
+    DUT setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interacting-with-muxpi" class="md-nav__link">
+    Interacting with muxPi
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="muxpi-theory-of-operations">MuxPi - Theory of Operations</h1>
+<h2 id="block-diagram">Block diagram</h2>
+<p><img alt="" src="../../../images/muxPi-block-diagram.png" /></p>
+<h2 id="muxpi-setup">muxPi setup</h2>
+<h4 id="nanopi-neo">NanoPi NEO</h4>
+<p>Preparation of the muxPi's "heart":</p>
+<ol>
+<li>Prepare microSD card (minimum 8GB) for NanoPi NEO operating system.</li>
+<li>Download and extract image - <a href="https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download">link</a></li>
+<li>Flash image into microSD card (<a href="https://www.balena.io/etcher/">Etcher</a> tool could be helpful)</li>
+<li>Insert card to NanoPi microSD slot.</li>
+<li>Attach NanoPi to muxPi connectors.</li>
+<li>Plug Ethernet cable to RJ45 NanoPi port.</li>
+</ol>
+<h4 id="serial-communication">Serial communication</h4>
+<p>There are two methods to setup serial communication with muxPi:</p>
+<ul>
+<li>with microUSB&lt;-&gt;USB cable</li>
+</ul>
+<p><img alt="" src="../../../images/muxPi-board-bottom.png" /></p>
+<ul>
+<li>with UART/USB converter</li>
+</ul>
+<p>Attach USB/UART converter to muxPi's left addon female header (<code>GND</code>, <code>DBG UART
+RX</code>, <code>DBG UART TX</code> on pinout image below):</p>
+<p><img alt="" src="../../../images/muxPi-addon-left.png" /></p>
+<p>and plug USB connector to the computer. Next, open connection in PC terminal by
+typing: <code>sudo minicom -D /dev/ttyUSB0 -o -b 115200</code>.</p>
+<blockquote>
+<p><code>/dev/ttyUSB0</code> is example device - check whether <code>USB0</code> is the correct one</p>
+</blockquote>
+<h4 id="jumpers-configuration">Jumpers configuration</h4>
+<p><img alt="" src="../../../images/muxPi-jumpers.png" /></p>
+<ul>
+<li>UART - pins <code>Vloc</code> &amp; <code>VCC</code> - if jumped then internal voltage generator is used
+  as voltage reference for data lines and powers up target device. If open then
+  voltage reference for data lines comes from target device and internal voltage
+  generator is unused.</li>
+<li>USB/ETH - determines what USB data lines of one USB HUB are connected to. If
+  first two pins are jumped then USB lines are connected to add-on connector. If
+  last two pins are jumped then these lines are connected tu USB&lt;-&gt;ETH converter.
+  If none of the pins are jumped then the only connection is the upper socket of
+  double connector.</li>
+</ul>
+<blockquote>
+<p>NOTE: The upper socket of double USB-A connector must be left empty if
+USB&lt;-&gt;ETH is selected or add-on connector is selected and something is connected
+to these data lines on the addon!</p>
+<p>NOTE: Both jumpers must be placed in the same position!</p>
+</blockquote>
+<ul>
+<li>VDD - if this pins are jumped then the VDD and 3V3 are always on. If this is
+  left open then VDD and 3V3 are controlled by NanoPi. The usage example is
+  setting value of USB ID potentiometer (which is located underneath NanoPi).
+  But when NanoPi NEO is removed there is no way to turn on power for
+  microcontroller (that is when VDD jumper is helpful).</li>
+</ul>
+<blockquote>
+<p>NOTE: If there is no particular need then leave this jumper open.</p>
+</blockquote>
+<h4 id="power-supply">Power supply</h4>
+<p>To power on MuxPi with NanoPi attached, plug the 5V/2A DC 5.5/2.1mm power supply
+jack to the CON1 muxPi's connector. Power consumption of MuxPi should be less
+then 1A assuming no addons connected.</p>
+<p><img alt="" src="../../../images/muxPi-connectors.png" /></p>
+<h4 id="ip-address">IP address</h4>
+<p>To check which IP address has been assigned, type in terminal: <code>ifconfig</code>.</p>
+<p>OPTIONAL STEP:
+To set static IP, create following file:</p>
+<p><code>sudo vi /etc/NetworkManager/NetworkManager.conf</code></p>
+<p>Edit NetworkManger.conf and set the value of "managed" under "ifupdown" to false:</p>
+<div class="highlight"><pre><span></span><code>[ifupdown]
+managed=false
+</code></pre></div>
+<p>Add network setting to <code>/etc/network/interfaces</code>:</p>
+<p><code>sudo vi /etc/network/interfaces</code></p>
+<p>Here is sample of <code>/etc/network/interfaces</code>:</p>
+<div class="highlight"><pre><span></span><code># The loopback network interface
+auto lo
+iface lo inet loopback
+
+# network interface not managed by Network Manager
+allow-hotplug eth0
+iface eth0 inet static
+address 192.168.4.XXX
+netmask 255.255.255.0
+gateway 192.168.4.1
+dns-nameservers 192.168.4.1
+</code></pre></div>
+<p>Restart the whole device:</p>
+<div class="highlight"><pre><span></span><code>reboot
+</code></pre></div>
+<p>Now you should be able to connect to device through ssh:</p>
+<div class="highlight"><pre><span></span><code>ssh root@192.168.4.XXX
+</code></pre></div>
+<p>with the password: <code>fa</code></p>
+<h4 id="install-wiringnp">Install WiringNP</h4>
+<p>Connect to NanoPi NEO through ssh (serial connection automatically login to non
+root user <code>pi</code>), then type:</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/friendlyarm/WiringNP
+cd WiringNP/
+chmod 755 build
+./build
+</code></pre></div>
+<p>Verify installation:</p>
+<p><code>gpio readall</code></p>
+<p>If your installation is successful the following messages will show up:</p>
+<div class="highlight"><pre><span></span><code> +-----+-----+----------+------+---+-NanoPi-NEO--+------+----------+-----+-----+
+ | BCM | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | BCM |
+ +-----+-----+----------+------+---+----++----+---+------+----------+-----+-----+
+ |     |     |     3.3V |      |   |  1 || 2  |   |      | 5V       |     |     |
+ |  12 |   8 |  GPIOA12 | ALT5 | 0 |  3 || 4  |   |      | 5V       |     |     |
+ |  11 |   9 |  GPIOA11 | ALT5 | 0 |  5 || 6  |   |      | 0v       |     |     |
+ | 203 |   7 |  GPIOG11 |  OFF | 0 |  7 || 8  | 0 | ALT5 | GPIOG6   | 15  | 198 |
+ |     |     |       0v |      |   |  9 || 10 | 0 | ALT5 | GPIOG7   | 16  | 199 |
+ |   0 |   0 |   GPIOA0 | ALT5 | 0 | 11 || 12 | 0 |  OUT | GPIOA6   | 1   | 6   |
+ |   2 |   2 |   GPIOA2 |  OFF | 0 | 13 || 14 |   |      | 0v       |     |     |
+ |   3 |   3 |   GPIOA3 |  OFF | 0 | 15 || 16 | 0 |  OFF | GPIOG8   | 4   | 200 |
+ |     |     |     3.3v |      |   | 17 || 18 | 0 |  OFF | GPIOG9   | 5   | 201 |
+ |  64 |  12 |   GPIOC0 | ALT4 | 0 | 19 || 20 |   |      | 0v       |     |     |
+ |  65 |  13 |   GPIOC1 | ALT4 | 0 | 21 || 22 | 0 | ALT5 | GPIOA1   | 6   | 1   |
+ |  66 |  14 |   GPIOC2 | ALT4 | 0 | 23 || 24 | 1 |  OUT | GPIOC3   | 10  | 67  |
+ +-----+-----+----------+------+---+----++----+---+------+----------+-----+-----+
+ | BCM | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | BCM |
+ +-----+-----+----------+------+---+-NanoPi-NEO--+------+----------+-----+-----+
+
+ +-----+----NanoPi-NEO USB/Audio-+----+
+ | BCM | wPi |   Name   | Mode | V | Ph |
+ +-----+-----+----------+------+---+----+
+ |     |     |       5V |      |   | 25 |
+ |     |     |  USB-DP1 |      |   | 26 |
+ |     |     |  USB-DM1 |      |   | 27 |
+ |     |     |  USB-DP2 |      |   | 28 |
+ |     |     |  USB-DM2 |      |   | 29 |
+ |     |     |    IR-RX |      |   | 30 |
+ |  17 |  19 |  GPIOA17 |  OFF | 0 | 31 |
+ |     |     |  PCM/I2C |      |   | 32 |
+ |     |     |  PCM/I2C |      |   | 33 |
+ |     |     |  PCM/I2C |      |   | 34 |
+ |     |     |  PCM/I2C |      |   | 35 |
+ |     |     |       0V |      |   | 36 |
+ +-----+-----+----------+------+---+----+
+
+ +-----+----NanoPi-NEO Debug UART-+----+
+ | BCM | wPi |   Name   | Mode | V | Ph |
+ +-----+-----+----------+------+---+----+
+ |   4 |  17 |   GPIOA4 | ALT5 | 0 | 37 |
+ |   5 |  18 |   GPIOA5 | ALT5 | 0 | 38 |
+ +-----+-----+----------+------+---+----+
+</code></pre></div>
+<h4 id="cortex-m0-flashing">Cortex-M0 flashing</h4>
+<p>The second controllable unit on the muxPi board is embedded microcontroller
+<code>STM32 F030C6T6</code> from Cortex-M0 family. It is required to flash special binary
+prepared by Tizen group (the code is not open yet, but this process is in
+progress). To flash muxPi's microcontroller, follow steps below:</p>
+<ol>
+<li>Make sure that <code>VDD</code> jumper is left open.</li>
+<li>Download binary file - <a href="https://cloud.3mdeb.com/index.php/s/adnEZLgo2diXkdw/download">link</a></li>
+<li>Copy binary to nanoPi: <code>scp &lt;path-to-file&gt; root@192.168.4.XXX:/root/</code></li>
+<li>Update package lists (nanoPi): <code>apt-get update</code></li>
+<li>Install stm32flash utility (nanoPi): <code>sudo apt-get install stm32flash</code></li>
+<li>Export GPIO: <code>gpio mode 3 out</code> and <code>gpio mode 7 out</code></li>
+<li>Set Cortex-M0 to "Flashing mode": <code>gpio write 7 1</code></li>
+<li>Power up microcontroller: <code>gpio write 3 1</code></li>
+<li>Flash firmware: <code>stm32flash -w firmware-05.bin -v -g 0x0 /dev/ttyS2</code></li>
+<li>Power off microcontroller: <code>gpio write 3 0</code></li>
+<li>Set Cortex-M0 to "Execution mode": <code>gpio write 7 0</code></li>
+<li>Power on microcontroller: <code>gpio write 3 1</code></li>
+</ol>
+<p>From now on, muxPi's LCD should light on and display:</p>
+<div class="highlight"><pre><span></span><code>*  MuxPi  *
+HW: 1.0 SW: 0.5
+</code></pre></div>
+<h2 id="software-installation">Software installation</h2>
+<blockquote>
+<p>NOTE: It is recommended to cross-compile muxPi's software on your host machine</p>
+</blockquote>
+<h4 id="building-using-docker">Building using docker</h4>
+<p>Prerequisites: <code>Docker</code>, <code>Make</code>.</p>
+<ol>
+<li>Clone repository: <code>git clone https://github.com/SamsungSLAV/muxpi.git</code>.</li>
+<li>Change directory: <code>cd muxpi/sw/nanopi</code>.</li>
+<li>Build muxPi software: <code>make docker-build</code></li>
+</ol>
+<p>Resulting binaries will be in <code>bin</code> directory.</p>
+<h4 id="building-from-source">Building from source</h4>
+<p>Prerequisites: <code>git</code>, <code>go (1.10+)</code></p>
+<ol>
+<li>Go get it: <code>go get github.com/SamsungSLAV/muxpi</code></li>
+<li>Change directory: <code>cd $GOPATH/src/github.com/SamsungSLAV/muxpi/sw/nanopi</code></li>
+<li>Download dependencies: <code>go get ./...</code></li>
+<li>Build binaries:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>mkdir -p bin
+GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/stm ./cmd/stm/
+GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/fota ./cmd/fota/
+</code></pre></div>
+<h4 id="install-muxpi-power">Install muxpi-power</h4>
+<p><code>muxpi-power</code> - tool for controling power supply for  MuxPi's main board.</p>
+<ol>
+<li>
+<p>Copy muxpi-power files (change <code>XXX</code> to proper values):
+<div class="highlight"><pre><span></span><code>scp power/muxpi-power root@192.168.4.XXX:/usr/bin
+scp power/systemd/muxpi-power.service root@192.168.4.XXX:/etc/systemd/system
+</code></pre></div></p>
+</li>
+<li>
+<p>On your MuxPi device, enable and start muxpi-power service:
+<div class="highlight"><pre><span></span><code>systemctl enable muxpi-power.service
+systemctl start muxpi-power.service
+</code></pre></div></p>
+</li>
+</ol>
+<h4 id="install-stm">Install stm</h4>
+<p><code>stm</code> - tools/libs for communicating with STM32F030 microcontroller.</p>
+<ol>
+<li>
+<p>Copy stm binary and systemd files (change <code>XXX</code> to proper values):
+<div class="highlight"><pre><span></span><code>scp bin/stm_armv7 root@192.168.4.XXX:/usr/bin/stm
+scp stm/systemd/stm.service root@192.168.4.XXX:/etc/systemd/system
+scp stm/systemd/stm-user.socket root@192.168.4.XXX:/etc/systemd/system
+scp stm/systemd/stm.socket root@192.168.4.XXX:/etc/systemd/system
+scp stm/stm root@192.168.4.XXX:/usr/local/bin/stm
+</code></pre></div></p>
+</li>
+<li>
+<p>On your MuxPi device - create group stm and add your user:
+<div class="highlight"><pre><span></span><code>groupadd stm
+usermod -aG stm root
+</code></pre></div></p>
+</li>
+<li>
+<p>On your MuxPi device - enable stm sockets:
+<div class="highlight"><pre><span></span><code>systemctl daemon-reload
+systemctl enable stm.socket stm-user.socket
+systemctl start stm.socket stm-user.socket
+</code></pre></div></p>
+</li>
+</ol>
+<h4 id="install-fota">Install fota</h4>
+<p><code>fota</code> - tools/libs for flashing devices - usually microSD card.</p>
+<ol>
+<li>
+<p>Copy fota binary to MuxPi device (change <code>XXX</code> to proper values):
+<div class="highlight"><pre><span></span><code>scp bin/fota_armv7 root@192.168.4.XXX:/usr/bin/fota
+</code></pre></div></p>
+</li>
+<li>
+<p>On your MuxPi device - create a symlink from <code>/usr/local/bin/fota</code> to
+<code>/usr/bin/fota/</code>. Only <code>/usr/local/bin/fota/</code> should be used by software
+interfacing with MuxPi. This allows to swap fota implementation to your
+preferred tool:
+<div class="highlight"><pre><span></span><code>ln -s /usr/bin/fota /usr/local/bin/fota
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="dut-setup">DUT setup</h2>
+<h4 id="dut-power-supply">DUT power supply</h4>
+<p>MuxPi is capable of:</p>
+<ul>
+<li>power switching on/off</li>
+<li>current measurement</li>
+</ul>
+<p>Power switching - it can switch power supply up to 5A and 250VAC. One line is
+connected directly and one is connected through relay.</p>
+<p>Current measurement - It is able to measure up to -/+5A and is galvanically
+isolated from the rest of components thanks to use of Hall effect current sensor
+ACS712ELCTR-05B-T. It is connected to unswitchable power line. The current
+sensor is bypassed with 3 0R resistors tha can be populated if current sensor is
+not needed. These resistors must not be populated if current measurement is
+required.</p>
+<p><img alt="" src="../../../images/muxPi-power.png" /></p>
+<h4 id="uart-connections">UART connections</h4>
+<p><img alt="muxpi-connectors" src="../../../images/muxPi-pin-connectors.png" /></p>
+<p><img alt="muxpi-uart" src="../../../images/muxPi-uart.png" /></p>
+<ul>
+<li><code>GND</code> - digital ground of MuxPi board</li>
+<li><code>N.C.</code> - not connected</li>
+<li><code>Vloc</code> - local voltage - voltage may be generated internally on MuxPi if the
+  DUT, or anything else we are connecting to, has not power pin. Nn such case
+  voltage generator must be set to desired value and activated. Command "uart
+  3300" must be sent to Cortex-M0, where 3300 is desired voltage given in
+  millivolts. The voltage range is from 0 to 5000mv. Pins <code>Vloc</code> an <code>VCC</code> must be
+  connected eachother. Typical jumper is a perfect connector for this purpose.
+  <code>Vloc</code> may be also used to power up additional converter RS232C. For example if
+  converter to RS232C (+/-12v) must be used then it may be powered from <code>Vloc</code> pin.</li>
+<li><code>VCC</code> - power of DUT. If dut has no such power pin then it must be connected to
+  Vloc and vloc must be configured properly as stated above.</li>
+<li><code>DUT RX</code> - receiver data line in the DUT - through this line MuxPi sends data to
+  the DUT</li>
+<li><code>DUT TX</code> - transmitter data line in the DUT - from this line MuxPi reads data form
+  the DUT</li>
+<li><code>DUT CTS</code> - Clear To Send - hardware handshake</li>
+<li><code>DUT RTS</code> - Ready To Send - hardware handshake</li>
+</ul>
+<p>Example configuration for OrangePi (DUT) uart connection:</p>
+<ol>
+<li>Set 3.3V Vloc (/dev/ttyS2 terminal): <code>uart 3300</code></li>
+<li>Attach UART jumper (<code>Vloc</code> and <code>Vcc</code>).</li>
+<li>Connect GND, RX and TX (without crossing).</li>
+<li>Open connection: <code>screen /dev/ttyS1 115200,cs8,ixon,ixoff</code></li>
+</ol>
+<blockquote>
+<p>NOTE: <code>RX</code>, <code>TX</code>, <code>XTS</code>, <code>RTS</code> are crossed on the board so you don't need to
+  cross the wires by yourself.</p>
+<p>NOTE: A device powered from <code>Vloc</code> mustn't draw more than 50mA of current.</p>
+</blockquote>
+<h4 id="add-ons">Add-ons</h4>
+<p>Add-ons headers are extensions for attaching new shields or simply using NanoPi
+and CortexM0 interfaces:</p>
+<p><img alt="" src="../../../images/muxPi-addon-left.png" /></p>
+<ul>
+<li><code>5V</code> - power supply - not switchable - always present</li>
+<li><code>3V3</code> - switchable (controlled by NanoPi) 3.3V power supply</li>
+<li><code>I2C0 SDA</code> - I2C0 SDA line connected to NanoPi</li>
+<li><code>I2C0 SCL</code> - I2C0 SCL line connected to NanoPi</li>
+<li><code>DBG UART TX</code> - UART0 (debug) of NanoPi</li>
+<li><code>DBG UART RX</code> - UART0 (debug) of NanoPi</li>
+<li><code>USB B+/-</code>, <code>USB A+/-</code> USB host lines connected to NanoPi through USB HUB</li>
+<li><code>GND</code> - ground lines</li>
+<li><code>N.C</code>. - not connected</li>
+</ul>
+<p><img alt="" src="../../../images/muxPi-addon-right.png" /></p>
+<ul>
+<li><code>SPI0 CLK</code> - SPI0 clock line connected to NanoPi</li>
+<li><code>SPI0 MOSI</code> - SPI0 "master output slave input" line connected to NanoPi</li>
+<li><code>SPI0 CS</code> - SPI0 "chip select" line connected to NanoPi</li>
+<li><code>SPI0 MISO</code> - SPI0 "master input slave output" line connected to NanoPi</li>
+<li><code>PI GPIO 1,2,3</code> - GPIO (General Purpose Input/Output) connected to NanoPi NEO.
+  Ports PG11, PL11, PA17 respectively.</li>
+<li><code>ST GPIO 1,2,3</code> - GPIO connected to Cortex-M0 microcontroller. Ports PB3, PB4,
+  PB5 of STM32F03C6T6 respectively.</li>
+<li><code>ADC1,2</code> - analog inputs connected to analog to digital converter of Cortex-M0
+  microcontroller. Ports PA1, PA2 respectively. Voltage range of this input is 0
+  to 3.3V. This lines are not buffered in any way so attention must paid when
+  dealing with them.</li>
+<li><code>GND</code> - ground lines</li>
+</ul>
+<p>NOTE: PI GPIO 1 has additional special function. It is connected to Cortex-M0 Boot0 pin which enables firmware download mode during microcontroller boot. 1 - enables this mode while 0 disables it. So it is useless as GPIO when the microcontroller is being booted.</p>
+<h4 id="dypers">DyPers</h4>
+<p><img alt="" src="../../../images/muxPi-dypers.png" /></p>
+<p>Dyper is a small, electromagnetic relay which is controllable by software. There
+are 2 dypers on MuxPi board. Each of them has two channels. Both channels are
+switched at the same time with the same command. So both of them can be on and
+both can be off but there is no way to turn one on and one off. They can be
+controlled by CortexM0 - examples <a href="#user-interface">here</a>.</p>
+<h4 id="eth-and-usb">ETH and USB</h4>
+<p>ETH and upper USB of double USB socket share the same USB channel from USB HUB.
+Jumpers located at the rear side of double USB connector allow to disconnect
+this USB from ETH and connect to add-on connector. Details on this topic are
+covered in jumpers section.</p>
+<p><img alt="" src="../../../images/muxPi-eth.png" /></p>
+<h4 id="usb-m">USB-M</h4>
+<p>This is USB connector dedicated to mobile devices from Samsung company. This
+connector has controllable Vbus line and also controllable ID line.</p>
+<p><img alt="" src="../../../images/muxPi-usb-m.png" /></p>
+<p>More information about this type of interface, it's capabilities and example of
+flashing smartphone can be found <a href="https://wiki.tizen.org/MuxPi#USB-M">here</a>.</p>
+<h4 id="sd-adapter">SD Adapter</h4>
+<p>This connector is used to connect microSD card, put into MuxPi, to a DUT.</p>
+<p><img alt="" src="../../../images/muxPi-sd.png" /></p>
+<p>This connector requires IDC-uSD cable adapter:</p>
+<p><img alt="" src="../../../images/idc-sd-cable.jpg" /></p>
+<p>Target microSD card must be attached to microSD card reader accessible on bottom
+side of muxPi board.</p>
+<p>To enable microSD card reader, connect to Cortex from MuxPi via minicom:</p>
+<div class="highlight"><pre><span></span><code>minicom -D /dev/ttyS2
+</code></pre></div>
+<p>and enter in minicom following commands:</p>
+<div class="highlight"><pre><span></span><code>ts
+</code></pre></div>
+<p>and then</p>
+<div class="highlight"><pre><span></span><code>dut
+</code></pre></div>
+<p>Each command should return <code>OK</code></p>
+<p>After doing this you can connect the uSD's end of the cable adapter to the
+external card reader and check if it is correctly recognized by PC. You should
+also be able to run the microcontroller from the card attached to MuxPi if the
+card contains appropriate OS.</p>
+<h2 id="interacting-with-muxpi">Interacting with muxPi</h2>
+<h4 id="connection-with-nanopi">Connection with NanoPi</h4>
+<p>User can simply open SSH connection by (password: <code>fa</code>):</p>
+<p><code>ssh root@&lt;muxpi-ip-address&gt;</code></p>
+<ul>
+<li>or use serial connection mentioned <a href="#serial-communication">here</a></li>
+</ul>
+<blockquote>
+<p>NOTE: Connecting with MuxPi through serial will automatically login as non
+root user <code>pi</code> with password <code>pi</code>.</p>
+</blockquote>
+<h4 id="user-interface">User interface</h4>
+<p><img alt="" src="../../../images/muxPi-user-ui.png" /></p>
+<p>Features operable directly via NanoPi GPIOs:</p>
+<table>
+<thead>
+<tr>
+<th align="center">#Pin (board)</th>
+<th align="center">#WiringNP</th>
+<th align="center">Description</th>
+<th align="center">Low state "0"</th>
+<th align="center">High state "1"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">12</td>
+<td align="center">1</td>
+<td align="center">LED1</td>
+<td align="center">LED off</td>
+<td align="center">LED on</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">2</td>
+<td align="center">LED2</td>
+<td align="center">LED off</td>
+<td align="center">LED on</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">3</td>
+<td align="center">Power (Cortex m0)</td>
+<td align="center">Power off</td>
+<td align="center">Power on</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">7</td>
+<td align="center">Boot (Cortex m0)</td>
+<td align="center">Execution mode</td>
+<td align="center">Flashing mode</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>NOTE: Initially, above GPIOs are not exported. Set GPIOs mode with <code>gpio mode
+  &lt;#WiringNP&gt; out</code>.</p>
+</blockquote>
+<p>Example LED1 control:</p>
+<ul>
+<li>LED1 on: <code>gpio write 1 1</code></li>
+<li>LED1 off: <code>gpio write 1 0</code></li>
+</ul>
+<p>Example of flashing Cortex-M0 is described <a href="#cortex-m0-flashing">here</a>.</p>
+<p>The microcontroller is connected to NanoPi NEO with UART. This UART is connected
+to third UART of NanoPi - /dev/ttyS2. The port is configured to 115200,8,N1 and
+cannot be changed without modification of the firmware. The protocol is text
+based, simple and human readable. Each command has to be ended with 'n' or 'r'
+character. Each command is confirmed with 'OK' string or error string.</p>
+<p>It is recommended to use <code>screen</code> program for communication:</p>
+<ol>
+<li>Install screen: <code>sudo apt-get install screen</code></li>
+<li>Open connection (from muxPi): <code>screen /dev/ttyS2 115200,cs8,ixon,ixoff</code></li>
+<li>Write <code>help</code> and press <code>Enter</code>.</li>
+</ol>
+<p>Features operable through Cortex-M0 microcontroller (help output):</p>
+<div class="highlight"><pre><span></span><code>help --- This help
+version --- Display version of the firmware
+echo --- Get (no arguments) or set (&#39;on&#39; or &#39;off&#39;) echo on serial &quot;console&quot;: echo [on|off]. The default value is on.
+power --- Get (no arguments) or set (&#39;on&#39; or &#39;off&#39;) or switch off and on (&#39;tick&#39;) power supply for DUT: power [on|off|tick]
+hdmi --- Get (no arguments) or set (&#39;on&#39; or &#39;off&#39;) HDMI HOTPLUG pin: hdmi [on|off]
+dyper --- Get (no second argument) or set (&#39;on&#39; or &#39;off&#39;) DyPer state: dyper 1|2 [on|off]
+ mux --- Connect microSD card to external connector (DUT) or card reader (ts): mux [dut|ts]
+ dut --- Connect microSD card and power to DUT: dut
+  ts --- Connect microSD card and power to TS: ts
+ led --- Get (no second or third argument) or set (&#39;R G B&#39;) color of led (1 | 2), ex: led 1 255 0 255
+ clr --- Clear oled display
+text --- Print text on the OLED display: text x y color content
+draw --- Draw an object on the OLED display: draw object x1 y1 [x2 y2], objects are:
+         - point x y color - draws one point at given coordinates
+         - line x1 y1 x2 y2 color - draws line between given coordinates
+         - rectangle left top width height color - draws line between given coordinates
+         - circle x y radius color - draws line between given coordinates
+color must be &#39;on&#39;, &#39;off&#39; or &#39;inv&#39;
+ adc --- Print current adc value of all (if no arguments are given) or one specified channel, ex: adc 1
+voltage --- Print current voltage [mV] of all (if no arguments are given) or one specified channel, ex: voltage 1
+current --- Print current current [mA] being consumed by DUT
+lthor --- Get (no second argument) or set state of lthor control signals:
+         - lthor switch [usb|uart] - redirect DUT&#39;s USB wires to NanoPi&#39;s &#39;usb&#39; or &#39;uart&#39;
+         - lthor id [usb|uart] - switch DUT&#39;s USB to &#39;usb&#39; or &#39;uart&#39; mode
+         - lthor vbus [on|off] - switch DUT&#39;s VBUS &#39;on&#39; or &#39;off&#39;
+         - lthor combo [usb|uart] - make DUT and MuxPi USB work in &#39;usb&#39; or &#39;uart&#39; mode - no get function
+
+ key --- Get current state of given key or both if no key number is given: key [1|2]
+uart --- Get current value of UART voltage or set if new value is given [in millivolts]
+</code></pre></div>
+<hr />
+<p><em>Images source: <a href="https://wiki.tizen.org/MuxPi">Wiki Tizen</a></em></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../../dev-proc/standard-release-process/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Standard Release Process" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Standard Release Process
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../basic-validation/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic validation" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Basic validation
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56a63758.min.js"></script>
+      
+    
+  </body>
+</html>

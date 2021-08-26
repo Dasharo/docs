@@ -1,0 +1,1913 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://docs.dasharo.com/transparent-validation/rte/v1.1.0/specification/">
+      
+      <link rel="icon" href="../../../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
+    
+    
+      
+        <title>Specification - Dasharo Ecosystem Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.be71726b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    
+      
+  
+
+
+
+  
+  
+
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-39420295-13","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rte-elements" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Dasharo Ecosystem Documentation" class="md-header__button md-logo" aria-label="Dasharo Ecosystem Documentation" data-md-component="logo">
+      
+  <img src="../../../../images/dasharo-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dasharo Ecosystem Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Specification
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Dasharo Ecosystem Documentation" class="md-nav__button md-logo" aria-label="Dasharo Ecosystem Documentation" data-md-component="logo">
+      
+  <img src="../../../../images/dasharo-logo.png" alt="logo">
+
+    </a>
+    Dasharo Ecosystem Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        Intro
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Quality Principles
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Quality Principles" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Quality Principles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../quality-principles/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../quality-principles/dasharo-quality-criteria.md" class="md-nav__link">
+        Dasharo Quality Criteria
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Value proposition
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Value proposition" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Value proposition
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../value-prop/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../value-prop/security/" class="md-nav__link">
+        Security
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../value-prop/compatibility/" class="md-nav__link">
+        Compatibility
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../value-prop/performance/" class="md-nav__link">
+        Performance
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../value-prop/marketing/" class="md-nav__link">
+        Marketing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      <label class="md-nav__link" for="__nav_3_6">
+        Certification Program
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Certification Program" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Certification Program
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../value-prop/certification-program/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Development Environment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Development Environment" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Development Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dev-env/nix-dev-env/" class="md-nav__link">
+        Nix
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Development Process
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Development Process" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Development Process
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dev-proc/source-code-structure/" class="md-nav__link">
+        Source code structure
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dev-proc/versioning/" class="md-nav__link">
+        Versioning
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dev-proc/feature-bug-fix-dev-process/" class="md-nav__link">
+        Features and bug fixes development process
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dev-proc/standard-release-process/" class="md-nav__link">
+        Standard Release Process
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Transparent Validation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Transparent Validation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Transparent Validation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      <label class="md-nav__link" for="__nav_6_1">
+        muxPi
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="muxPi" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          muxPi
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../muxpi/theory-of-operations/" class="md-nav__link">
+        Theory of Operations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../muxpi/basic-validation/" class="md-nav__link">
+        Basic validation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" checked>
+      
+      <label class="md-nav__link" for="__nav_6_2">
+        Remote Testing Environment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Remote Testing Environment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Remote Testing Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Specification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Specification
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#product-features" class="md-nav__link">
+    Product features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification" class="md-nav__link">
+    Specification
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pcengines/" class="md-nav__link">
+        RTE and PC Engines
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference-os/" class="md-nav__link">
+        RTE Reference OS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../revision-history/" class="md-nav__link">
+        Revision History
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      <label class="md-nav__link" for="__nav_6_3">
+        SD Wire
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="SD Wire" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          SD Wire
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sd-wire/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sd-wire/specification/" class="md-nav__link">
+        Specification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sd-wire/usage-validation/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Supported hardware
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Supported hardware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Supported hardware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/hardware-compatibility-list/" class="md-nav__link">
+        Hardware Compatibility List
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
+      
+      <label class="md-nav__link" for="__nav_7_2">
+        Dell OptiPlex
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dell OptiPlex" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dell OptiPlex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/dell_optiplex/releases/" class="md-nav__link">
+        Releases
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/dell_optiplex/installation-manual/" class="md-nav__link">
+        Installation manual
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      <label class="md-nav__link" for="__nav_8">
+        Dasharo SKUs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dasharo SKUs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Dasharo SKUs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/skus-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/firewall/" class="md-nav__link">
+        Firewall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/secure-firewall/" class="md-nav__link">
+        Secure Firewall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_4" type="checkbox" id="__nav_8_4" >
+      
+      <label class="md-nav__link" for="__nav_8_4">
+        Workstation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Workstation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          Workstation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/workstation/" class="md-nav__link">
+        SKU description
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/server/" class="md-nav__link">
+        Server
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/trustworthy-server/" class="md-nav__link">
+        Trustworthy Server
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/trustworthy-computing/" class="md-nav__link">
+        Trustworthy Computing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/safety-critical/" class="md-nav__link">
+        Safety-Critical
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../variants/custom/" class="md-nav__link">
+        Custom
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      <label class="md-nav__link" for="__nav_9">
+        How to work with us?
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="How to work with us?" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          How to work with us?
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../inquiries/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../inquiries/community-edition/" class="md-nav__link">
+        Community Edition
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../inquiries/sponsorware/" class="md-nav__link">
+        Sponsorware
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../inquiries/commercial-inquiries/" class="md-nav__link">
+        Commercial inquiries
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      <label class="md-nav__link" for="__nav_10">
+        Knowledge base
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Knowledge base" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Knowledge base
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+      
+      <label class="md-nav__link" for="__nav_10_1">
+        Trolling Topics List
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Trolling Topics List" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_1">
+          <span class="md-nav__icon md-icon"></span>
+          Trolling Topics List
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../osf-trolling-list/osf_issues_taxonomy/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../osf-trolling-list/build_process/" class="md-nav__link">
+        Firmware build process
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../osf-trolling-list/release_process.md" class="md-nav__link">
+        Firmware release process
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
+      
+      <label class="md-nav__link" for="__nav_10_2">
+        Frequently Asked Questions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Frequently Asked Questions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Frequently Asked Questions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../osf-trivia-list/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#product-features" class="md-nav__link">
+    Product features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification" class="md-nav__link">
+    Specification
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="rte-elements">RTE elements</h1>
+<p><img alt="" src="../../../../images/rte-v1.1.0-interface-desc.png" /></p>
+<ul>
+<li><strong>UART0 header</strong> - 1x3 Orange Pi Zero system debug output and console (pins: <code>RX</code>, <code>TX</code>, <code>GND</code>).</li>
+<li><strong>SPI header</strong> - 2x4 standard 2.5mm IDC compatible header with all necessary signals to flash SPI
+  chips.</li>
+<li><strong>Orange Pi Zero GPIO</strong> - 1x3 GPIO pin header directly connected to Orange Pi
+  zero platform.</li>
+<li><strong>I2C header</strong> - 1x4 populated pins: <code>3.3V</code>, <code>SCK</code>, <code>SDA</code>, <code>GND</code>.</li>
+<li><strong>OC buffers output</strong> - 1x12 GPIO pin header connected to Open Collector buffers.</li>
+<li><strong>DUT power control connectors</strong> - 2x DC jack 5.5/2.1mm female connectors for
+  a Device Under Test power supply controlled directly through the relay.</li>
+<li><strong>Reset button</strong> - Simple switch to reset RTE</li>
+<li><strong>RS232</strong> - DB9 male connector for RS232 communication with a hardware flow control.</li>
+<li><strong>UART output select header</strong> 2x3 UART OUTPUT SELECT header destined for
+  selecting serial output between UART1 header and DB9 RS232 connector.</li>
+<li><strong>UART1 header</strong> - 1x3 UART header for 3V3 serial communication with DUT
+  (pins: <code>RX</code>, <code>TX</code>, <code>GND</code>).</li>
+<li><strong>2x USB connectors</strong> - Connect additional storages, external flash
+  programmers, USB-RS232 or USB-UART converters.</li>
+<li><strong>5V header</strong> - 1x2 5V output populated pins: <code>5V</code>, <code>GND</code>.</li>
+<li><strong>expander GPIO</strong> - 1x4 GPIO pin header connected to GPIOs expander with no
+  OC buffers.</li>
+<li><strong>Relay</strong> - Controls Device Under Tests power supply</li>
+<li><strong>micro USB connector</strong> - Connector for powering up RTE and OrangePi Zero
+  setup.</li>
+</ul>
+<h2 id="product-features">Product features</h2>
+<h3 id="key-features">Key features</h3>
+<ul>
+<li>Cheaper and more feature-rich in comparison to other products</li>
+<li>Ultra-fast SPI flashing (16MHz)</li>
+<li>In-Circuit Programming (program onboard SPI Flash)</li>
+<li>Pomona connector to work with Serial Flash soldered on board</li>
+<li>Two logic levels SPI (1.8V and 3.3V)</li>
+<li>Remote power control over the target device</li>
+<li>Open Hardware</li>
+<li>Open Source software attached</li>
+<li>Open Source REST API controller</li>
+<li>Cost-free future software improvements</li>
+</ul>
+<h3 id="rtectrl-web-interface">RteCtrl: Web interface</h3>
+<p><img alt="" src="../../../../images/rte-rest-api-interface.png" /></p>
+<p><strong>RteCtrl</strong> is a REST API controller used for RTE board. It comes with meta-rte
+operating system and starts automatically on port <code>8000</code> without the necessity
+of additional configuration. REST API dashboard can be reached through the
+Internet browser and provides a possibility to:</p>
+<ul>
+<li>control Device Under Test power supply (coldboot and warmboot)</li>
+<li>reset Device Under Test platform</li>
+<li>flash Device Under Test firmware
+More information can be found at <a href="https://github.com/3mdeb/RteCtrl">RteCtrl repository</a></li>
+</ul>
+<blockquote>
+<p><strong>DISCLAIMER:</strong> Before starting the flashing procedure through REST API console,
+  make sure that appropriate SPI logic levels are set accordingly to
+  <a href="#spi-header">SPI</a> section.</p>
+</blockquote>
+<h2 id="specification">Specification</h2>
+<h3 id="gpio-header-1">GPIO header (1)</h3>
+<p>First GPIO header (<code>J1</code>) is a 1x3 pin header straight type 2.54mm pitch. It is
+derived directly from Orange Pi GPIOs for general use. By default, these GPIOs
+are set to <code>INPUT</code> mode.</p>
+<p>Maximum voltage for all data signals: 3.3 V.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Pin #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">GPIO12</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">GPIO11</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">GPIO6</td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gpio-header-2">GPIO header (2)</h3>
+<p>Second GPIO header (<code>J10</code>) is a 1x4 pin header straight type 2.54mm pitch. It is
+derived from GPIO expander on RTE board. They are accessible for general use. By
+default, these GPIOs are set to <code>INPUT</code> mode.</p>
+<p>Maximum voltage for all data signals: 3.3 V.
+Expander GPIO: 25 mA maximum output current.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Pin #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">GPIO400</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">GPIO401</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">GPIO402</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">GPIO403</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gpio-header-3">GPIO header (3)</h3>
+<p>Third GPIO header (<code>J11</code>) is a 1x9 pin header straight type 2.54mm pitch. It is
+derived from GPIO expander on RTE board with an additional connection to OC
+(Open Collector) buffers. By default, these GPIOs are set to <code>OUTPUT</code> mode.</p>
+<p>Maximum voltage for all data signals: 3.3 V.
+OC buffers: 40 mA maximum output current.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Pin #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">GPIO407</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">GPIO415</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">GPIO414</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">GPIO408</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">GPIO409</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">GPIO410</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">GPIO411</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">GPIO412</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">GPIO413</td>
+<td align="center">9</td>
+</tr>
+</tbody>
+</table>
+<h3 id="i2c-header">I2C header</h3>
+<p>I2C header (<code>J9</code>) is 1x4 pin header straight type 2.54mm pitch. It is used to
+rather low-speed applications such as reading sensors or accessing DACs and ADCs.</p>
+<p>Maximum voltage for all data signals: 3.3 V.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Pin #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">3V3</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">SCK</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">SDA</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">GND</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spi-header">SPI header</h3>
+<p>SPI header (<code>J7</code>) is a 2x4 pin header straight type 2.54mm pitch. It is used to
+control the application SPI flash with a minimal set of connections.</p>
+<p>Maximum voltage for all data signals: 3.3 V.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Pin #</th>
+<th align="center">Pin #</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Vcc</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">GND</td>
+</tr>
+<tr>
+<td align="center">CS</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">SCLK</td>
+</tr>
+<tr>
+<td align="center">MISO</td>
+<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">MOSI</td>
+</tr>
+<tr>
+<td align="center">ISP</td>
+<td align="center">7</td>
+<td align="center">8</td>
+<td align="center">NC</td>
+</tr>
+</tbody>
+</table>
+<p>Revision v1.1.0 features new possibilities for SPI configuration:</p>
+<ul>
+<li>SPI <code>Vcc</code> pin has been populated - power is now supplied to the SPI <code>Vcc</code>
+connector and can be enabled/disabled on demand:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">GPIO406 (OC_OUT1) state</th>
+<th align="center">SPI Vcc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0 - low</td>
+<td align="center">disabled (by default)</td>
+</tr>
+<tr>
+<td align="center">1 - high</td>
+<td align="center">enabled</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>user can choose the voltage level for <code>Vcc</code> SPI - either 1.8V or 3.3 V:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">GPIO405 (OC_OUT2) state</th>
+<th align="center">SPI Vcc voltage level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0 - low</td>
+<td align="center">1.8 V (by default)</td>
+</tr>
+<tr>
+<td align="center">1 - high</td>
+<td align="center">3.3 V</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>user can enable/disable SPI lines (some platforms have problems when booting
+  with SPI wires connected):</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">GPIO404 (OC_OUT3) state</th>
+<th align="center">SPI lines (MOSI/MISO/CS/SCLK)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0 - low</td>
+<td align="center">disabled (by default)</td>
+</tr>
+<tr>
+<td align="center">1 - high</td>
+<td align="center">enabled</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uart-output-select-header">UART OUTPUT SELECT header</h3>
+<p>UART OUTPUT SELECT header (<code>J16</code>) is a 2x3 pin header straight type 2.54mm pitch.
+It is used for enabling serial communication output: RS232 DB9 port (<code>J14</code>) or
+UART1 header (<code>J18</code>). If jumpers are not attached, serial ports are disabled.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Jumper position (TX)</th>
+<th align="center">Jumper position (RX)</th>
+<th align="center">Serial communication enabled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">RS232 + COM</td>
+<td align="center">RS232 + COM</td>
+<td align="center">RS232 DB9 port (J14)</td>
+</tr>
+<tr>
+<td align="center">EXT + COM</td>
+<td align="center">EXT + COM</td>
+<td align="center">3.3V UART1 header (J18)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rs232-connector">RS232 connector</h3>
+<p>RS232 connector (<code>J14</code>) is a DB9 male 9 pin connector for serial communication
+between Remote Testing Environment and Device Under Test platform. It supports
+a hardware flow control. RS232 connector can be enabled/disabled according to
+<a href="#uart-output-select-header">UART OUTPUT SELECT</a> section.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Pin #</th>
+<th align="center">Signal</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">DCD</td>
+<td align="center">Data Carrier Detect</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">RXD</td>
+<td align="center">Receive Data</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">TXD</td>
+<td align="center">Transmit Data</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">DTR</td>
+<td align="center">Data Terminal Ready</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">GND</td>
+<td align="center">Signal Ground</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">DSR</td>
+<td align="center">Data Set Ready</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">RTS</td>
+<td align="center">Request to Send</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">CTS</td>
+<td align="center">Clear to Send</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">RI</td>
+<td align="center">Ring Indicator</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uart0-header">UART0 header</h3>
+<p>UART0 header (<code>J2</code>) is a 1x3 pin header straight type 2.54mm pitch. It is
+derived from Orange Pi Zero serial debug UART for debugging and serial
+communication purposes.</p>
+<p>Maximum voltage for all data signals: 3.3 V.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Pin #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">GND</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">RX</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">TX</td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uart1-header">UART1 header</h3>
+<p>UART1 header (<code>J18</code>) is a 1x3 pin header straight type 2.54mm pitch. It is used
+for serial communication with DUT. UART1 header can be enabled/disabled
+according to <a href="#uart-output-select-header">UART OUTPUT SELECT</a> section.</p>
+<p>Maximum voltage for all data signals: 3.3 V.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Pin #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">GND</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">RX</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">TX</td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="power-output-header">Power output header</h3>
+<p>Power output header (<code>J15</code>) is 1x2 pin header straight type 2.54mm pitch. It is
+used for additional 5V or ground pin connections with various devices.</p>
+<p>.pure-table[
+| Description | Pin # |
+|:-----------:|:-----:|
+| 5V          | 1     |
+| GND         | 2     |]</p>
+<h3 id="dc-jack">DC jack</h3>
+<p>Two DC Jacks (<code>J12</code> and <code>J13</code>) are 5.5/2.1mm female plug connectors used for
+Device Under Test power supply. The output from DC Jacks is controlled through a
+relay. There is no matter whether <code>J12</code> or <code>J13</code> plug is input/output for power
+supply.</p>
+<h3 id="relay">Relay</h3>
+<p>Relay (<code>K1</code>) is a mechanical switch for controlling Device Under Test power
+supply.</p>
+<p>Technical reference:</p>
+<ul>
+<li>1 Form C (1PDT) contact arrangement</li>
+<li>5 V coil nominal voltage</li>
+<li>70 Ohms nominal resistance</li>
+<li>72 mA nominal current</li>
+<li>24 VDC maximal input voltage</li>
+<li>10 A maximal input voltage</li>
+<li>Expected relay life: 100 000 operations</li>
+</ul>
+<p>Relay state is indicated by LED (<code>D5</code>) located near relay and can be controlled
+via meta-rte operating system through GPIO199:</p>
+<table>
+<thead>
+<tr>
+<th align="center">GPIO199 state</th>
+<th align="center">Relay state</th>
+<th align="center">D5 LED state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">OFF</td>
+<td align="center">OFF</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">ON</td>
+<td align="center">ON</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usb-connectors">USB connectors</h3>
+<p>USB connectors (<code>J6</code>, <code>J8</code>) available on RTE are additional USB type A ports
+derived from Orange Pi Zero header. They can be used for storage extension,
+serial communication through various adapters or USB programmer extension.</p>
+<h3 id="microusb-connector">microUSB connector</h3>
+<p>The micro USB connector (<code>J17</code>) is a USB B micro socket for powering up RTE and
+OrangePi Zero setup. It is required to use a 5V/2A power adapter. There is no
+difference whether the user plugs the power supply to the micro USB connector
+located on RTE board or use OrangePi Zero original socket.</p>
+<h3 id="reset-button">Reset button</h3>
+<p>Reset button (<code>SW1</code>) located near relay is used for resetting the RTE itself.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Introduction
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../getting-started/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Getting Started
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.56a63758.min.js"></script>
+      
+    
+  </body>
+</html>
