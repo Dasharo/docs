@@ -13,6 +13,9 @@ markdown_extensions:
     - pymdownx.highlight
     - pymdownx.superfences
     - pymdownx.keys
+    - attr_list
+    - toc:
+        toc_depth: 2
 nav:
     - 'Intro': index.md
     - 'Quality Principles':
