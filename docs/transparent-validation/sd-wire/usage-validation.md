@@ -18,21 +18,21 @@ library.
         ```
         dpkg -L libftdi1-dev
         ```
-        If library is installed, after typing the above command you will see 
+        If the library is installed, after typing the above command you will see 
         information about the paths to the library components. 
     * popt development library is installed. To do this, open the terminal and
        type the following command:
         ```
         dpkg -L libftdi1-dev
         ```
-        If library is installed, after typing the above command you will see 
+        If the library is installed, after typing the above command you will see 
         information about the paths to the library components. 
     * cmake binary tool is installed. To do this, open the terminal and type 
        the following command:
         ```
         cmake --version
         ```
-        If tool is installed, after typing the above command you will see 
+        If the tool is installed, after typing the above command you will see 
         information about the installed on your computer cmake version. 
     
     If any above-mentioned requirements are not met - go to point 3. If they are
@@ -66,14 +66,14 @@ library.
         make
         ```
 
-6. In above-desribed directory run the following command to binary:
+6. In the above-described directory run the following command to binary:
     ```
     sudo make install
     ```
-    Note, that above-desribed command install binary into '/usr/local/bin' (the 
-    default one) directory. If you want to install files into different directory 
-    then add argument to cmakecommand: 'cmake -DCMAKE_INSTALL_PREFIX=/usr ..'. 
-    Then it is obligatory to run agint the following commands:
+    Note, that the above-described command installs binary into '/usr/local/bin' 
+    (the default one) directory. If you want to install files into  a different 
+    directory then add an argument to cmakecommand: 'cmake -DCMAKE_INSTALL_PREFIX=/usr ..'. 
+    Then it is obligatory to run again the following commands:
     ```
     make
     make install
