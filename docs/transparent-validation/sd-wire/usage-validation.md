@@ -39,17 +39,17 @@ library.
     met - go to point 4. 
 
 3. Install missing libraries and/or tools:
-   * libftdi1 1.4 development library. To do this, open the terminal and type 
+    * libftdi1 1.4 development library. To do this, open the terminal and type 
        the following command: 
         ```
         sudo apt-get install libftdi1-dev
         ```
-   * popt development library. To do this, open the terminal and type the
+    * popt development library. To do this, open the terminal and type the
        following command: 
         ```
         sudo apt-get install libpopt-dev
         ```
-   * cmake binary tool. To do this, open the terminal and type the following 
+    * cmake binary tool. To do this, open the terminal and type the following 
         command:  
         ```
         sudo apt-get install cmake
@@ -57,22 +57,31 @@ library.
 
 5. Enter into sd-mux project directory and reproduce the following steps to 
     build project:
-    * open directory in terminal.
+    * open directory in terminal
     * create 'build' directory by the following command:
+        ```
+        mkdir build
+        ```
     * enter into 'build' directory by the following command:
+        ```
+        cd build
+        ```
     * run the following commands one by one:
         ```
         cmake ..
         make
         ```
 
-6. In the above-described directory run the following command to binary:
+6. In the above-described directory run the following command to build binary:
     ```
     sudo make install
     ```
-    Note, that the above-described command installs binary into '/usr/local/bin' 
-    (the default one) directory. If you want to install files into  a different 
-    directory then add an argument to cmakecommand: 'cmake -DCMAKE_INSTALL_PREFIX=/usr ..'. 
+    Note, that the above-described command installs binary into '/usr/local/bin'.
+    If you want to install files in directory rather than the default one add an 
+    argument to cmake command: 
+    ```
+    cmake -DCMAKE_INSTALL_PREFIX=/usr .. 
+    ```
     Then it is obligatory to run again the following commands:
     ```
     make
@@ -139,7 +148,7 @@ Number of FTDI devices found: 1
 Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
 ```
 
-## Everyday use typical scenario
+## Everyday use scenario
 
 1. Disconnect power supply from the DUT (Device Under Test).
 2. Disconnect micro SD card from the DUT.
@@ -151,7 +160,7 @@ Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
 
 Using SDWire there is no need to disconnect SD card from DUT.
 
-## Scenario when SDWire and RTE are in use
+## SDWire with RTE use scenario
 
 1. Insert SD card to the SDWire.
 2. Insert SDWire into the DUT and connect it to the TS with micro-USB-->USB
