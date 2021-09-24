@@ -101,7 +101,7 @@ Hardware requirements:
 
 * SDWire
 * SD card
-* DUT bootable from SD card (RPI, Orange PI etc.)
+* DUT (Device Under Test) bootable from SD card (RPI, Orange PI etc.)
 * DUT power supply
 * Micro-USB-->USB cable
 
@@ -111,8 +111,8 @@ To perform first use procedure reproduce the following steps:
 
 2. Insert SD card to the SDWire.
 
-3. Put SDWire into the DUT and connect it to the TS with the micro USB - USB 
-    cable.
+3. Put SDWire into the DUT (Device Under Test) and connect it to the TS with 
+    the micro USB - USB cable.
 
 4. Check whether SDWire is configured by reproducing the following steps:
     * run in terminal the following command:
@@ -172,11 +172,11 @@ To perform first use procedure reproduce the following steps:
         Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
         ```
 
-5. Connect SD card to the TS:
+5. Connect SD card to the TS (test server):
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
     ```
-6. Flash the SD card usign `bmaptool` or balenaEtcher.
+6. Flash the SD card using `bmaptool` or balenaEtcher.
 
 7. Connect SD card to the DUT using `sd-mux-ctrl`:
     ```
@@ -219,7 +219,7 @@ Using SDWire there is no need to disconnect SD card from DUT.
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
     ```
-7. Flash the SD card usign `bmaptool` or balenaEtcher.
+7. Flash the SD card using `bmaptool` or balenaEtcher.
 8. Connect SD card to the DUT (using sd-mux-ctrl)
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
