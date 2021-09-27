@@ -56,6 +56,8 @@ nav:
         - 'Dell OptiPlex':
             - 'Releases': variants/dell_optiplex/releases.md
             - 'Installation manual': variants/dell_optiplex/installation-manual.md
+        - 'Asus KGPE-D16':
+            - 'Hardware setup': variants/asus_kgpe_d16/setup.md
     - 'Dasharo SKUs':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
