@@ -93,33 +93,31 @@ To prepare the environment reproduce the following steps:
 
 ## First use
 
-Attention! The following procedure should not be performed only before the 
-first use of the device. It should also be done before selling it to another 
-user. 
+> The following procedure should be performed not only before the first use of
+the device, but also as the presale validation procedure!
 
 Hardware requirements:
 
 * SDWire
 * SD card
-* DUT (Device Under Test) bootable from SD card (RPI, Orange PI etc.)
+* DUT (Device Under Test) bootable from SD card (for example: RPI, Orange PI
+  etc.)
 * DUT power supply
-* Micro-USB-->USB cable
+* Micro-USB --> USB cable
 
 To perform first use procedure reproduce the following steps:
 
-1. Prepare environment in accordance with this [section](#environment-preparation).
-
+1. Prepare environment in accordance with this
+   [section](#environment-preparation).
 2. Insert SD card to the SDWire.
-
 3. Put SDWire into the DUT (Device Under Test) and connect it to the TS with 
     the micro USB - USB cable.
-
 4. Check whether SDWire is configured by reproducing the following steps:
     * run in terminal the following command:
         ```
         dmesg -w
         ```
-    * connect the SDWire to your machine using micro-USB--> USB cable.
+    * connect the SDWire to your machine using micro-USB --> USB cable.
     * after connecting your `dmesg` output should looks like this:
         ```
         (...)
@@ -200,11 +198,11 @@ Using SDWire there is no need to disconnect SD card from DUT.
 ## SDWire with RTE use scenario
 
 1. Insert SD card to the SDWire.
-2. Insert SDWire into the DUT and connect it to the TS with micro-USB-->USB
+2. Insert SDWire into the DUT and connect it to the TS with micro-USB --> USB
    cable.
 3. Connect [RTE][shop1] power control connectors to the DUT (RTE here is
-   optional, it helps with automated and remote power control of the connected
-   device).
+   optional but highly recommended for remote work, because it helps with
+   automated and remote power control of the connected device).
 4. Check serial no. of SDWire:
     ```
     sudo  sd-mux-ctrl --list
