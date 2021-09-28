@@ -104,16 +104,20 @@ Hardware requirements:
   etc.)
 * DUT power supply
 * Micro-USB --> USB cable
+* TS (Test Server) - in mostly cases personal computer with prepared 
+    environment.
 
-To perform first use procedure reproduce the following steps:
+To perform first use (assuming Raspberry Pi platform as a DUT) procedure 
+reproduce the following steps:
 
 1. Prepare environment in accordance with this
    [section](#environment-preparation).
 2. Insert SD card to the SDWire.
-3. Put SDWire into the DUT (Device Under Test) and connect it to the TS with 
-    the micro USB - USB cable.
-4. Check whether SDWire is configured by reproducing the following steps:
-    * run in terminal the following command:
+3. Put SDWire into the DUT (Device Under Test).
+4. Prepare a micro USB --> USB cable. It will be used to connect SDWire to TS 
+    (Test Server).
+5. Check whether SDWire is configured by reproducing the following steps:
+    * run in TS terminal the following command:
         ```
         dmesg -w
         ```
@@ -136,7 +140,7 @@ To perform first use procedure reproduce the following steps:
         sudo  sd-mux-ctrl --list
         ```
         If output looks like below, it means that SDWire is configured and ready
-        to use. Now, you can go to point 5 in this section.
+        to use. Now, you can go to point 6 in this section.
         ```
         Number of FTDI devices found: 1
         Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
@@ -170,17 +174,17 @@ To perform first use procedure reproduce the following steps:
         Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
         ```
 
-5. Connect SD card to the TS (test server):
+6. Connect SD card to the TS (Test Server):
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
     ```
-6. Flash the SD card using `bmaptool` or balenaEtcher.
+7. Flash the SD card using `bmaptool` or balenaEtcher.
 
-7. Connect SD card to the DUT using `sd-mux-ctrl`:
+8. Connect SD card to the DUT using `sd-mux-ctrl`:
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --DUT
     ```
-8. Connect power supply to the DUT and check if it boots properly from newly
+9. Connect power supply to the DUT and check if it boots properly from newly
    burned image.
 
 ## Everyday use scenario
@@ -232,7 +236,7 @@ Using SDWire there is no need to disconnect SD card from DUT.
     SD connected to: TS
     ```
     At the moment RTE does not support sd-mux-ctrl, so SDWire must be controlled
-    from configured TS (host computer).
+    from configured TS (Test Server).
 
 ---
 
