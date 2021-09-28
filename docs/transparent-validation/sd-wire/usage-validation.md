@@ -2,109 +2,205 @@
 
 ## Environment preparation
 
-SD-MUX has dedicated software which is a simple tool meant to control the
-hardware. Source code of the tool is published on [tizen
-git](https://git.tizen.org/cgit/tools/testlab/sd-mux/) server. This is simple to
-use, command-line utility software written in C and based on open-source libFTDI
-library.
+SDWire has dedicated software which is a simple tool meant to control the
+hardware. Source code of the tool is published on [tizen git][tizen] server.
+This is simple to use, command-line utility software written in C and based on
+open-source libFTDI library.
+
+To prepare the environment reproduce the following steps:
 
 1. Clone the repository:
-```
-git clone git://git.tizen.org/tools/testlab/sd-mux
-```
+    ```
+    git clone git://git.tizen.org/tools/testlab/sd-mux
+    ```
+2. Check whether the installation requirements for sd-mux are met:
+    * libftdi1 1.4 development library is installed. To do this, open the 
+       terminal and type the following command:
+        ```
+        dpkg -L libftdi1-dev
+        ```
+        If the library is installed, after typing the above command you will see 
+        information about the paths to the library components. 
+    * popt development library is installed. To do this, open the terminal and
+       type the following command:
+        ```
+        dpkg -L libftdi1-dev
+        ```
+        If the library is installed, after typing the above command you will see 
+        information about the paths to the library components. 
+    * cmake binary tool is installed. To do this, open the terminal and type 
+       the following command:
+        ```
+        cmake --version
+        ```
+        If the tool is installed, after typing the above command you will see 
+        information about the installed on your computer cmake version. 
+    
+    If any above-mentioned requirements are not met - go to point 3. If they are
+    met - go to point 4. 
 
-2. Follow the instruction included in sd-mux/README:
-```
-Requirements:
-  1. libftdi1 1.4 - development library
-  2. popt - development library
-  3. cmake - binary tool
+3. Install missing libraries and/or tools:
+    * libftdi1 1.4 development library. To do this, open the terminal and type 
+       the following command: 
+        ```
+        sudo apt-get install libftdi1-dev
+        ```
+    * popt development library. To do this, open the terminal and type the
+       following command: 
+        ```
+        sudo apt-get install libpopt-dev
+        ```
+    * cmake binary tool. To do this, open the terminal and type the following 
+        command:  
+        ```
+        sudo apt-get install cmake
+        ```
 
-Build:
- - enter into project directory
- - create 'build' directory
- - enter into "build" directory
- - run 'cmake ..'
- - run 'make'
+4. Enter into sd-mux project directory and reproduce the following steps to 
+    build project:
+    * open directory in terminal
+    * create 'build' directory by the following command:
+        ```
+        mkdir build
+        ```
+    * enter into 'build' directory by the following command:
+        ```
+        cd build
+        ```
+    * run the following commands one by one:
+        ```
+        cmake ..
+        make
+        ```
 
-Install:
- - enter into 'build' directory
- - run 'sudo make install' to install binary into '/usr/local/bin' (the default
-   one) directory
-
-Note:
-If you want to install files into different directory then add argument to cmake
-command: `cmake -DCMAKE_INSTALL_PREFIX=/usr ..`
-
-Then again run:
- make
- make install
-```
-3. Now the environment is ready to configure and control the SDWire.
+5. In the above-described directory (`sd-mux/build`) run the following command to 
+    build binary:
+    ```
+    sudo make install
+    ```
+    Note, that the above-described command installs binary into '/usr/local/bin'.
+    If you want to install files in directory rather than the default one add an 
+    argument to cmake command: 
+    ```
+    cmake -DCMAKE_INSTALL_PREFIX=/usr .. 
+    ```
+    Then it is obligatory to run again the following commands:
+    ```
+    make
+    make install
+    ```
 
 ## First use
 
-1. Run in the terminal:
-```
-dmesg -w
-```
-2. Connect the SDWire to your machine using micro-USB-->USB cable.
-3. Your `dmesg` output should looks like this:
-```
-(...)
-[73278.307591] usb-storage 3-1.1:1.0: USB Mass Storage device detected
-[73278.307823] scsi host6: usb-storage 3-1.1:1.0
-[73278.384925] usb 3-1.2: new full-speed USB device number 45 using xhci_hcd
-[73278.492025] usb 3-1.2: New USB device found, idVendor=0403, idProduct=6015, bcdDevice=10.00
-[73278.492027] usb 3-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
-[73278.492028] usb 3-1.2: Product: FT200X USB I2C
-[73278.492029] usb 3-1.2: Manufacturer: FTDI
-[73278.492030] usb 3-1.2: SerialNumber: DB007V7V
-(...)
-```
+> The following procedure should be performed not only before the first use of
+the device, but also as the presale validation procedure!
 
-4. Check if SDWire is configured:
-```
-sudo  sd-mux-ctrl --list
-```
-If output looks like below, it means that SDWire is configured and ready to use.
-From now on, you can go to ["Everyday use"](#everyday-use) section.
-```
-Number of FTDI devices found: 1
-Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
-```
-Otherwise, if output shows no devices (like in the example below):
-```
-Number of FTDI devices found: 0
-```
-you have to configure SDWire:
-```
-sudo sd-mux-ctrl --device-serial=DB007V7V --vendor=0x0403 --product=0x6015 --device-type=sd-wire --set-serial=sd-wire_11
-```
-where:
-```
---device-serial=<SerialNumber> (from dmesg output)
+Hardware requirements:
 
---vendor=0x<idVendor> (from dmesg output)
+* SDWire
+* SD card
+* DUT (Device Under Test) bootable from SD card (for example: RPI, Orange PI
+  etc.)
+* DUT power supply
+* Micro-USB --> USB cable
+* TS (Test Server) - in most cases personal computer with prepared environment.
 
---product=0x<idProduct> (from dmesg output)
+To perform first use (assuming Raspberry Pi platform as a DUT) procedure
+reproduce the following steps:
 
---set-serial=<New serial device>
-```
+1. Prepare environment in accordance with this
+   [section](#environment-preparation).
+2. Insert SD card to the SDWire.
+3. Put SDWire into the DUT (Device Under Test).
+4. Prepare a micro USB --> USB cable. It will be used to connect SDWire to TS 
+    (Test Server).
+5. Check whether SDWire is configured by reproducing the following steps:
+    * run in TS terminal the following command:
+        ```
+        dmesg -w
+        ```
+    * connect the SDWire to your machine using micro-USB --> USB cable.
+    * after connecting your `dmesg` output should looks like this:
+        ```
+        (...)
+        [73278.307591] usb-storage 3-1.1:1.0: USB Mass Storage device detected
+        [73278.307823] scsi host6: usb-storage 3-1.1:1.0
+        [73278.384925] usb 3-1.2: new full-speed USB device number 45 using xhci_hcd
+        [73278.492025] usb 3-1.2: New USB device found, idVendor=0403, idProduct=6015, bcdDevice=10.00
+        [73278.492027] usb 3-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+        [73278.492028] usb 3-1.2: Product: FT200X USB I2C
+        [73278.492029] usb 3-1.2: Manufacturer: FTDI
+        [73278.492030] usb 3-1.2: SerialNumber: DB007V7V
+        (...)
+        ```
+    * open new terminal window and run the following command:
+        ```
+        sudo  sd-mux-ctrl --list
+        ```
+        If output looks like below, it means that SDWire is configured and ready
+        to use. Now, you can go to point 6 in this section.
+        ```
+        Number of FTDI devices found: 1
+        Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
+        ```
+        Otherwise, if output shows no devices (like in the example below):
+        ```
+        Number of FTDI devices found: 0
+        ```
+        you have to configure SDWire:
+        ```
+        sudo sd-mux-ctrl --device-serial=DB007V7V --vendor=0x0403 --product=0x6015 --device-type=sd-wire --set-serial=sd-wire_11
+        ```
+        where:
+        ```
+        --device-serial=<SerialNumber> (from dmesg output)
 
-5. Check if SDWire is properly configured:
-```
-sudo  sd-mux-ctrl --list
-```
-should output:
-```
-Number of FTDI devices found: 1
-Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
-```
+        --vendor=0x<idVendor> (from dmesg output)
 
-## Everyday use
+        --product=0x<idProduct> (from dmesg output)
 
-### Typical scenario
+        --set-serial=<New serial device>
+        ```
+        After above-desribed procedure check again if SDWire is properly 
+        configured:
+        ```
+        sudo  sd-mux-ctrl --list
+        ```
+        Should output:
+        ```
+        Number of FTDI devices found: 1
+        Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
+        ```
+
+6. Connect SD card to the TS (Test Server):
+    ```
+    sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
+    ```
+7. Flash the SD card using `bmaptool` or balenaEtcher.
+    * download the OS image for the target DUT - [link for RPi image][rpios]
+    * to do this by `balenaEtcher` go to the [producer site][balena]
+    and follow his procedure how to download and flash SD card
+    * to do this by `bmaptool` reproduce the following steps:
+        - install bmaptool by opening terminal and typing the following command:
+            ```
+            sudo apt install bmap-tools
+            ```
+        - create the bmap by typing the following command:
+            ```
+            bmaptool create /path/to/your/image > /path/where/you/want/bmap/file/saved/bmapfilename.bmap
+            ```
+        - flash image to the SD card by typing the following command:
+            ```
+            sudo bmaptool copy --bmap ~/path/where/your/bmap/file/is/located /path/where/your/image/is/located /path/to/memory/device
+            ```
+8. Connect SD card to the DUT using `sd-mux-ctrl`:
+    ```
+    sudo sd-mux-ctrl --device-serial=sd-wire_11 --DUT
+    ```
+9. Connect power supply to the DUT and check if it boots properly from newly
+   burned image.
+
+## Everyday use scenario
 
 1. Disconnect power supply from the DUT (Device Under Test).
 2. Disconnect micro SD card from the DUT.
@@ -116,80 +212,44 @@ Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
 
 Using SDWire there is no need to disconnect SD card from DUT.
 
-### Scenario using SDWire and RTE
+## SDWire with RTE use scenario
 
 1. Insert SD card to the SDWire.
-1. Insert SDWire into the DUT and connect it to the TS with micro-USB-->USB
+2. Insert SDWire into the DUT and connect it to the TS with micro-USB --> USB
    cable.
-1. Connect [RTE][shop1] power control connectors to the DUT (RTE here is
-   optional, it helps with automated and remote power control of the connected
-   device).
-1. Check serial no. of SDWire:
-```
-sudo  sd-mux-ctrl --list
-```
-Output:
-```
-Number of FTDI devices found: 1
-Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
-```
-1. Disconnect power supply using RTE.
-1. Connect SD card to the TS (using sd-mux-ctrl)
-```
-sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
-```
-1. Flash the SD card usign `bmaptool` or balenaEtcher.
-1. Connect SD card to the DUT (using sd-mux-ctrl)
-```
-sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
-```
-1. Connect power supply using RTE.
-1. DUT should boot from freshly burned SD card.
+3. Connect [RTE][shop1] power control connectors to the DUT (RTE here is
+   optional but highly recommended for remote work, because it helps with
+   automated and remote power control of the connected device).
+4. Check serial no. of SDWire:
+    ```
+    sudo  sd-mux-ctrl --list
+    ```
+    Output:
+    ```
+    Number of FTDI devices found: 1
+    Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
+    ```
+5. Disconnect power supply using RTE.
+6. Connect SD card to the TS (using sd-mux-ctrl)
+    ```
+    sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
+    ```
+7. Flash the SD card using `bmaptool` or `balenaEtcher` as described in the [First use](#first-use) section
+8. Connect SD card to the DUT (using sd-mux-ctrl)
+    ```
+    sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
+    ```
+9. Connect power supply using RTE.
+10. DUT should boot from freshly burned SD card.
 
-> Command `sudo sd-mux-ctrl --device-serial=sd-wire_11 --status` returns
-information if SDWire is connected to DUT or TS.
-```
-➜  ~ sudo sd-mux-ctrl --device-serial=sd-wire_11 --status
-SD connected to: TS
-```
-At the moment RTE does not support sd-mux-ctrl, so SDWire must be controlled
-from configured TS (host computer).
-
-## Presale validation
-
-Hardware requirements:
-
-* SDWire
-* SD card
-* DUT bootable from SD card (RPI, Orange PI etc.)
-* DUT power supply
-* Micro-USB-->USB cable
-
-Validation steps:
-
-1. Prepare environment in accordance with this [section](#evnironment-preparation).
-1. Insert SD card to the SDWire.
-1. Put SDWire into the DUT and connect it to the TS with the micro USB - USB
-   cable.
-1. Check if SDWire is preconfigured:
-```
-sudo  sd-mux-ctrl --list
-Number of FTDI devices found: 1
-Dev: 0, Manufacturer: SRPOL, Serial: sd-wire_11, Description: sd-wire
-```
-If any FTDI device is found, it means that SDWire is preconfigured, if not - go
-to [first use](#first-use) section and prepare the device.
-1. Connect SD card to the TS:
-```
-sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
-```
-1. Flash the SD card usign `bmaptool` or balenaEtcher.
-1. Connect SD card to the DUT using `sd-mux-ctrl`:
-```
-sudo sd-mux-ctrl --device-serial=sd-wire_11 --DUT
-```
-1. Connect power supply to the DUT and check if it boots properly from newly
-   burned image.
+    > Command `sudo sd-mux-ctrl --device-serial=sd-wire_11 --status` returns
+    information if SDWire is connected to DUT or TS.
+    ```
+    ➜  ~ sudo sd-mux-ctrl --device-serial=sd-wire_11 --status
+    SD connected to: TS
+    ```
+    At the moment RTE does not support sd-mux-ctrl, so SDWire must be controlled
+    from configured TS (Test Server).
 
 ---
 
@@ -198,4 +258,7 @@ References:
 * [https://wiki.tizen.org/SD_MUX](https://wiki.tizen.org/SD_MUX)
 * [https://wiki.tizen.org/SD_MUX/manpage](https://wiki.tizen.org/SD_MUX/manpage)
 
+[tizen]: https://git.tizen.org/cgit/tools/testlab/sd-mux/
 [shop1]: https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/
+[balena]: https://www.balena.io/etcher/
+[rpios]: https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/2021-05-07-raspios-buster-armhf.zip
