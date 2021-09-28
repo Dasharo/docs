@@ -3,10 +3,9 @@
 ## Environment preparation
 
 SDWire has dedicated software which is a simple tool meant to control the
-hardware. Source code of the tool is published on [tizen
-git](https://git.tizen.org/cgit/tools/testlab/sd-mux/) server. This is simple to
-use, command-line utility software written in C and based on open-source libFTDI
-library.
+hardware. Source code of the tool is published on [tizen git][tizen] server.
+This is simple to use, command-line utility software written in C and based on
+open-source libFTDI library.
 
 To prepare the environment reproduce the following steps:
 
@@ -104,10 +103,9 @@ Hardware requirements:
   etc.)
 * DUT power supply
 * Micro-USB --> USB cable
-* TS (Test Server) - in mostly cases personal computer with prepared 
-    environment.
+* TS (Test Server) - in most cases personal computer with prepared environment.
 
-To perform first use (assuming Raspberry Pi platform as a DUT) procedure 
+To perform first use (assuming Raspberry Pi platform as a DUT) procedure
 reproduce the following steps:
 
 1. Prepare environment in accordance with this
@@ -179,7 +177,22 @@ reproduce the following steps:
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
     ```
 7. Flash the SD card using `bmaptool` or balenaEtcher.
-
+    * download the OS image for the target DUT - [link for RPi image][rpios]
+    * to do this by `balenaEtcher` go to the [producer site][balena]
+    and follow his procedure how to download and flash SD card
+    * to do this by `bmaptool` reproduce the following steps:
+        - install bmaptool by opening terminal and typing the following command:
+            ```
+            sudo apt install bmap-tools
+            ```
+        - create the bmap by typing the following command:
+            ```
+            bmaptool create /path/to/your/image > /path/where/you/want/bmap/file/saved/bmapfilename.bmap
+            ```
+        - flash image to the SD card by typing the following command:
+            ```
+            sudo bmaptool copy --bmap ~/path/where/your/bmap/file/is/located /path/where/your/image/is/located /path/to/memory/device
+            ```
 8. Connect SD card to the DUT using `sd-mux-ctrl`:
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --DUT
@@ -221,7 +234,7 @@ Using SDWire there is no need to disconnect SD card from DUT.
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
     ```
-7. Flash the SD card using `bmaptool` or balenaEtcher.
+7. Flash the SD card using `bmaptool` or `balenaEtcher` as described in the [First use](#first-use) section
 8. Connect SD card to the DUT (using sd-mux-ctrl)
     ```
     sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
@@ -245,4 +258,7 @@ References:
 * [https://wiki.tizen.org/SD_MUX](https://wiki.tizen.org/SD_MUX)
 * [https://wiki.tizen.org/SD_MUX/manpage](https://wiki.tizen.org/SD_MUX/manpage)
 
+[tizen]: https://git.tizen.org/cgit/tools/testlab/sd-mux/
 [shop1]: https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/
+[balena]: https://www.balena.io/etcher/
+[rpios]: https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/2021-05-07-raspios-buster-armhf.zip
