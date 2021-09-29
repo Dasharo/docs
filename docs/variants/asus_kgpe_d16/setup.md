@@ -18,8 +18,9 @@ able to attach to various SPI modules footprints and sockets. The DIP-8 adapter
 is put into the DIP-8 socket on the mainboard, which allows attaching the
 qspimux SPI multiplexer. The multiplexer is responsible for switching between
 the external SPI lines and the mainboard lines routed to the external SPi flash
-chip. The external flash chip is soldered an a SOIC8 adapter, which is
-connected to the qspimux. The connection of the RTE and qspimux is as follows:
+chip. The external flash chip is soldered on a SOIC8 adapter, which is
+connected to the qspimux. The connection of the
+[RTE](https://3mdeb.com/open-source-hardware/#rte)and qspimux is as follows:
 
  RTE header J7 pin | qspimux J101 pin
 :-----------------:|:-------------------:
@@ -32,13 +33,15 @@ connected to the qspimux. The connection of the RTE and qspimux is as follows:
  7 (NC)            | Not connected
  8 (NC)            | Not connected
 
-Additionally one has to tie the IO3_HOLD_PROG (qspimux pin 4) high, so connect
-it to the 3.3V permanently. One more additional GPIO is required in order to
-control the routing of SPI lines. The MUX_SEL (qsppimux pin 9) decides whether
+Additionally, one has to tie the IO3_HOLD_PROG (qspimux pin 4) high, so connect
+it to the 3.3V permanently. One more additional GPIO is required to control the
+routing of SPI lines. The MUX_SEL (qsppimux pin 9) decides whether
 the programmer is allowed to access the SPI flash or the mainboard.
 
-The proposed connection used RTE GPIO400 to control MUX_SEL and RTE GPIO401 to
-control IO3_HOLD_PROG. Simple flashing script looks as follows:
+The proposed connection used [RTE](https://3mdeb.com/open-source-hardware/#rte)
+GPIO400 to control MUX_SEL and
+[RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO401 to control
+IO3_HOLD_PROG. Simple flashing script looks as follows:
 
 ```
 # select flash <-> programmer
@@ -61,7 +64,7 @@ echo "1" > /sys/class/gpio/gpio400/value
 
 ![](/images/qspimux_kgpe.jpeg)
 
-> qspimux schematics: https://github.com/felixheld/qspimux/blob/master/qspimux/qspimux.pdf
+> qspimux schematic is available [here](https://github.com/felixheld/qspimux/blob/master/qspimux/qspimux.pdf)
 
 #### Serial
 
@@ -75,8 +78,10 @@ via RS232 DB9 cable.
 Asus KGPE-D16 has a LPC header for TPM or debugging. Since there is no other
 option to connect a TPM, we use the header for that purpose.
 
-Example connection of PC Engines TPM 20pin module (tpm1a) to TPM header on
-KGPE-D16:
+Example connection of the
+[PC Engines TPM 20pin module](https://3mdeb.com/shop/modules/modules-lpn-plant/tpm-2-0/)
+([tpm1a](https://www.pcengines.ch/schema/tpm1a.pdf)) to the TPM header on the
+KGPE-D16 board:
 
 ![](/images/kgpe_tpm_header.png)
 
@@ -93,7 +98,7 @@ KGPE-D16:
 | V3 pin 18     | TPM pin 9  (+3V)     |
 | SERIRQ pin 19 | TPM pin 16 (SERIRQ)  |
 
-> For PC Engines TPM pinout refer to https://www.pcengines.ch/schema/tpm1a.pdf
+> PC Engines TPM schematic is available [here](//www.pcengines.ch/schema/tpm1a.pdf)
 
 #### Power management
 
@@ -106,13 +111,13 @@ Asus KGPE-D16 provides a front panel pin header (PANEL1):
 | 8 (OC buffer output)   | PANEL1 pin 11 (PWR)       |
 | 9 (OC buffer output)   | PANEL1 pin 17 (RESET)     |
 
-Additionally connect one of the PANEL1 ground pins to one of the ground pins on
+Additionally, connect one of the PANEL1 ground pins to one of the ground pins on
 RTE.
 
-### MANUAL
+### Manunal
 
-For more details about KGPE-D16 refer to the manual:
-https://dlcdnets.asus.com/pub/ASUS/mb/SocketG34(1944)/KGPE-D16/Menual_QVL/E8847_KGPE-D16.pdf
+For more details about the KGPE-D16, refer to
+[the manual](https://raw.githubusercontent.com/Dasharo/docs/master/pdf/E8847_KGPE-D16.pdf).
 
 ### Theory of operation
 
@@ -178,7 +183,7 @@ else
 fi
 ```
 
-To turn off the pwoer from the platform `./sonoff.sh off` and to turn it on
+To turn off the power from the platform `./sonoff.sh off` and to turn it on
 `./sonoff.sh on`. Invoking the script without any argument will print the
 current state of the switch.
 
@@ -203,9 +208,17 @@ A short demo presenting RTE capabilities with KGPE-D16:
 
 ### Remote access
 
-if you are interested in developing coreboot on KGPE-D16 and have some spare
+If you are interested in developing coreboot on KGPE-D16 and have some spare
 time, there is a possibility to obtain the access to the hardware. Drop us an
 email to [leads@3mdeb.com](mailto:leads@3mdeb.com) with a request.
+
+
+### Newsletter
+
+If you are interested in this project, you can subscribe to the
+[Dasharo KGPE-D16 Newsletter](https://newsletter.3mdeb.com/subscription/ozes4Jxuo).
+If you are interested in the Dasharo in general, you are welcome to subscribe
+to the [Dasharo Newsletter](https://newsletter.3mdeb.com/subscription/wwL90UkXP).
 
 ### Gallery
 
