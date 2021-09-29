@@ -143,8 +143,10 @@ signals is restored to the platform.
 
 #### Power management
 
-RTE is able to control the power of the board with the `rte_ctrl` application
-or with the web GUI available at RTE's IP address port 8000. Possible command are:
+[RTE](https://3mdeb.com/open-source-hardware/#rte) is able to control the power
+of the board with the `rte_ctrl` command line application, or with the web GUI
+([RteCtrl](https://github.com/3mdeb/RteCtrl)) available at RTE's IP address
+port 8000. Possible commands are:
 
 ```shell
 ./rte_ctrl -pon # power on the platform
