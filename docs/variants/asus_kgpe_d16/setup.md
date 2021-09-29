@@ -3,13 +3,13 @@ RTE v.0.5.3 with Asus KGPE-D16 connection
 
 ![](/images/kgpe_overview.png)
 
-#### Power supply
+## Power supply
 
 Power to the Asus KGPE-D16 is delivered by a common PC power supply. Simply
 connect the power supply to ATX compatible connectors on the mainboard
 (SSIPWR1, SSI12V1, SSI12V2).
 
-#### SPI
+## SPI
 
 BIOS SPI flash is a socketed DIP-8. There is no simple way to attach to it with
 any tools. That is why we have thought about the
@@ -66,14 +66,14 @@ echo "1" > /sys/class/gpio/gpio400/value
 
 > qspimux schematic is available [here](https://github.com/felixheld/qspimux/blob/master/qspimux/qspimux.pdf)
 
-#### Serial
+## Serial
 
 Asus KGPE-D16 has a DB9 serial connector for the debug UART. Connect it to the RTE
 via RS232 DB9 cable.
 
 ![](/images/kgpe_rear_panel.png)
 
-#### TPM
+## TPM
 
 Asus KGPE-D16 has an LPC header for TPM or debugging. Since there is no other
 option to connect a TPM, we use the header for that purpose.
@@ -100,7 +100,7 @@ KGPE-D16 board:
 
 > PC Engines TPM schematic is available [here](//www.pcengines.ch/schema/tpm1a.pdf)
 
-#### Power management
+## Power management
 
 Asus KGPE-D16 provides a front panel pin header (PANEL1):
 
@@ -114,14 +114,14 @@ Asus KGPE-D16 provides a front panel pin header (PANEL1):
 Additionally, connect one of the PANEL1 ground pins to one of the ground pins on
 RTE.
 
-### Manunal
+## Manunal
 
 For more details about the KGPE-D16, refer to
 [the manual](https://raw.githubusercontent.com/Dasharo/docs/master/pdf/E8847_KGPE-D16.pdf).
 
 ### Theory of operation
 
-#### Flashing
+### Flashing
 
 There are two RTEs connected to two Asus KGPE-D16 boards:
 
@@ -141,7 +141,7 @@ The script will automatically power off the board and update flash chip
 contents using flashrom. After the operation is finished the routing of SPI
 signals is restored to the platform.
 
-#### Power management
+### Power management
 
 [RTE](https://3mdeb.com/open-source-hardware/#rte) can control the power
 of the board with the `rte_ctrl` command-line application, or with the web GUI
@@ -189,7 +189,7 @@ To turn off the power from the platform `./sonoff.sh off` and to turn it on
 `./sonoff.sh on`. Invoking the script without any argument will print the
 current state of the switch.
 
-#### Serial console access
+### Serial console access
 
 A serial port is very useful in debugging and as a remote console of the system
 on the platform. The serial port of KGPE-D16 is connected to the RTE's serial
@@ -202,7 +202,7 @@ this `telnet RTE_IP 13541`, e.g.:
 telnet 192.168.4.236 13541
 ```
 
-### Demo
+## Demo
 
 A short demo presenting RTE capabilities with KGPE-D16:
 
@@ -215,14 +215,14 @@ time, there is a possibility to obtain access to the hardware. Drop us an
 email to [leads@3mdeb.com](mailto:leads@3mdeb.com) with a request.
 
 
-### Newsletter
+## Newsletter
 
 If you are interested in this project, you can subscribe to the
 [Dasharo KGPE-D16 Newsletter](https://newsletter.3mdeb.com/subscription/ozes4Jxuo).
 If you are interested in the Dasharo in general, you are welcome to subscribe
 to the [Dasharo Newsletter](https://newsletter.3mdeb.com/subscription/wwL90UkXP).
 
-### Gallery
+## Gallery
 
 ![](/images/kgpe_1.jpg)
 ![](/images/kgpe_2.jpg)
