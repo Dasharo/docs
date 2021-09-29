@@ -5,7 +5,7 @@ RTE v.0.5.3 with Asus KGPE-D16 connection
 
 #### Power supply
 
-Power to the Asus KGPE-D16 is delivered by common PC power supply. Simply
+Power to the Asus KGPE-D16 is delivered by a common PC power supply. Simply
 connect the power supply to ATX compatible connectors on the mainboard
 (SSIPWR1, SSI12V1, SSI12V2).
 
@@ -13,8 +13,8 @@ connect the power supply to ATX compatible connectors on the mainboard
 
 BIOS SPI flash is a socketed DIP-8. There is no simple way to attach to it with
 any tools. That is why we have thought about the
-[qspimux](https://github.com/felixheld/qspimux) made by Felix Held which is
-able to attach to various SPI modules footprints and sockets. The DIP-8 adapter
+[qspimux](https://github.com/felixheld/qspimux) made by Felix Held which can
+attach to various SPI modules footprints and sockets. The DIP-8 adapter
 is put into the DIP-8 socket on the mainboard, which allows attaching the
 qspimux SPI multiplexer. The multiplexer is responsible for switching between
 the external SPI lines and the mainboard lines routed to the external SPi flash
@@ -35,7 +35,7 @@ connected to the qspimux. The connection of the
 
 Additionally, one has to tie the IO3_HOLD_PROG (qspimux pin 4) high, so connect
 it to the 3.3V permanently. One more additional GPIO is required to control the
-routing of SPI lines. The MUX_SEL (qsppimux pin 9) decides whether
+routing of SPI lines. The MUX_SEL (qspimux pin 9) decides whether
 the programmer is allowed to access the SPI flash or the mainboard.
 
 The proposed connection used [RTE](https://3mdeb.com/open-source-hardware/#rte)
@@ -68,14 +68,14 @@ echo "1" > /sys/class/gpio/gpio400/value
 
 #### Serial
 
-Asus KGPE-D16 has a DB9 serial connector for debug UART. Connect it to the RTE
+Asus KGPE-D16 has a DB9 serial connector for the debug UART. Connect it to the RTE
 via RS232 DB9 cable.
 
 ![](/images/kgpe_rear_panel.png)
 
 #### TPM
 
-Asus KGPE-D16 has a LPC header for TPM or debugging. Since there is no other
+Asus KGPE-D16 has an LPC header for TPM or debugging. Since there is no other
 option to connect a TPM, we use the header for that purpose.
 
 Example connection of the
@@ -131,7 +131,7 @@ There are two RTEs connected to two Asus KGPE-D16 boards:
 Both boards are equipped with the qspimux and a replaced flash chip (Winbond
 W25Q64FV 8MB). The flash chip is attached to the qspimux with an adapter
 available with qspimux. Flashing may be done via the commands shown earlier or
-the flash script on present in the root directory of the RTE:
+the flash script which is present in the root directory of the RTE:
 
 ```shell
 ./flash.sh coreboot.rom
@@ -143,8 +143,8 @@ signals is restored to the platform.
 
 #### Power management
 
-[RTE](https://3mdeb.com/open-source-hardware/#rte) is able to control the power
-of the board with the `rte_ctrl` command line application, or with the web GUI
+[RTE](https://3mdeb.com/open-source-hardware/#rte) can control the power
+of the board with the `rte_ctrl` command-line application, or with the web GUI
 ([RteCtrl](https://github.com/3mdeb/RteCtrl)) available at RTE's IP address
 port 8000. Possible commands are:
 
@@ -155,14 +155,14 @@ port 8000. Possible commands are:
 ```
 
 It is also possible to control the ATX power supply by disconnecting it from
-the power socket. For this special purpose Sonoff S20 is used to remotely
+the power socket. For this special purpose, Sonoff S20 is used to remotely
 control the power socket activity. Sonoff IP to RTE IP mapping:
 
 * RTE IP 192.168.4.236 - Sonoff IP 192.168.4.125
 * RTE IP 192.168.4.111 - Sonoff IP 192.168.4.146
 
 Sonoffs respond to rest API requests to enable or disable the power socket.
-Shell scripts has been added to RTE root directories to ease the ocntrol of
+Shell scripts have been added to RTE root directories to ease the control of
 power of the KGPE-D16 platform:
 
 ```shell
@@ -191,7 +191,7 @@ current state of the switch.
 
 #### Serial console access
 
-Serial port is very useful in debugging and as a remote console of the system
+A serial port is very useful in debugging and as a remote console of the system
 on the platform. The serial port of KGPE-D16 is connected to the RTE's serial
 port which can be accessed on RTE with `/dev/ttyS1`. One may use minicom
 directly or take advantage of the ser2net service running on RTE which exposes
@@ -211,7 +211,7 @@ A short demo presenting RTE capabilities with KGPE-D16:
 ### Remote access
 
 If you are interested in developing coreboot on KGPE-D16 and have some spare
-time, there is a possibility to obtain the access to the hardware. Drop us an
+time, there is a possibility to obtain access to the hardware. Drop us an
 email to [leads@3mdeb.com](mailto:leads@3mdeb.com) with a request.
 
 
