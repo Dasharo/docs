@@ -144,14 +144,14 @@ signals is restored to the platform.
 ### Power management
 
 [RTE](https://3mdeb.com/open-source-hardware/#rte) can control the power
-of the board with the `rte_ctrl` command-line application, or with the web GUI
+of the board with the `RteCtrl` command-line application, or with the web GUI
 ([RteCtrl](https://github.com/3mdeb/RteCtrl)) available at RTE's IP address
 port 8000. Possible commands are:
 
 ```shell
-./rte_ctrl -pon # power on the platform
-./rte_ctrl -poff # force 5seconds power button power off
-./rte_ctrl -reset # briefly assert platform reset pin to perform reset
+./RteCtrl -pon # power on the platform
+./RteCtrl -poff # force 5seconds power button power off
+./RteCtrl -reset # briefly assert platform reset pin to perform reset
 ```
 
 It is also possible to control the ATX power supply by disconnecting it from
@@ -206,14 +206,13 @@ telnet 192.168.4.236 13541
 
 A short demo presenting RTE capabilities with KGPE-D16:
 
-<script id="asciicast-438342" src="https://asciinema.org/a/438342.js" async data-rows="25"></script>
+<script id="asciicast-439834" src="https://asciinema.org/a/439834.js" async data-rows="25"></script>
 
 ### Remote access
 
 If you are interested in developing coreboot on KGPE-D16 and have some spare
 time, there is a possibility to obtain access to the hardware. Drop us an
 email to [leads@3mdeb.com](mailto:leads@3mdeb.com) with a request.
-
 
 ## Newsletter
 
