@@ -24,7 +24,7 @@ To prepare the environment reproduce the following steps:
     * popt development library is installed. To do this, open the terminal and
        type the following command:
         ```
-        dpkg -L libftdi1-dev
+        dpkg -L libpopt-dev
         ```
         If the library is installed, after typing the above command you will see 
         information about the paths to the library components. 
@@ -195,7 +195,7 @@ reproduce the following steps:
             ```
 8. Connect SD card to the DUT using `sd-mux-ctrl`:
     ```
-    sudo sd-mux-ctrl --device-serial=sd-wire_11 --DUT
+    sudo sd-mux-ctrl --device-serial=sd-wire_11 --dut
     ```
 9. Connect power supply to the DUT and check if it boots properly from newly
    burned image.
