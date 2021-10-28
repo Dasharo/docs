@@ -58,6 +58,9 @@ nav:
             - 'Installation manual': variants/dell_optiplex/installation-manual.md
         - 'Asus KGPE-D16':
             - 'Hardware setup': variants/asus_kgpe_d16/setup.md
+        - 'Talos II':
+            - 'Releases': variants/talos_2/releases.md
+            - 'Installation manual': variants/talos_2/installation-manual.md
     - 'Dasharo SKUs':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
