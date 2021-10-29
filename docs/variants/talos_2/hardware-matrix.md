@@ -1,4 +1,4 @@
-# Hardware configuration
+# Hardware configuration matrix
 
 Configuration with a single IBM POWER9 64bit CPU is supported.
 Dual CPU setup not supported currently.

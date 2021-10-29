@@ -1,45 +1,55 @@
-# Buidling coreboot image
+# Insurgo Dasharo on Talos II - building manual
 
-In order to build coreboot image, follow the steps below:
+## Building coreboot
+
+To build coreboot image, follow the steps below:
 
 1. Clone the coreboot repository:
 
-   ```
-   git clone git@github.com:Dasharo/coreboot.git -b talos_2_support_ramstage
-   # or HTTPS alternatively
-   git clone git@github.com:Dasharo/coreboot.git -b talos_2_support_ramstage
-   ```
+    ```bash
+    $ git clone git@github.com:dasharo/coreboot.git -b raptor-cs_talos-2/release
+    ```
 
-    master - follows upstream project master branch
-    raptor-cs_talos-2/release - contains all code releases for given <platform>, list of supported platforms is in Hardware Compatibility List section
-    raptor-cs_talos-2/rel_vX.Y.Z - release branch for version X.Y.Z
-    raptor-cs_talos-2/develop - contains most recent development and is periodically synced with master branch
-    raptor-cs_talos-2/<feature> - tracks development of platform specific feature
+1. Get the submodules:
 
+    ```bash
+    $ cd coreboot
+    $ git submodule update --init --recursive --checkout
+    ```
 
-2. Get the submodules:
+1. Start docker container:
 
-   ```
-   cd coreboot
-   git submodule update --init --checkout
-   ```
+    ```
+    $ docker run --rm -it \
+       -v $PWD:/home/coreboot/coreboot \
+       -w /home/coreboot/coreboot \
+       3mdeb/coreboot-sdk:mkimage /bin/bash
+    ```
 
-3. Start docker container (assuming you are already in coreboot root
-   directory):
+1. Inside of the container, configure and start the build process:
 
-   ```
-   docker run --rm -it -v $PWD:/home/coreboot/coreboot -w /home/coreboot/coreboot 3mdeb/coreboot-sdk:mkimage /bin/bash
-   ```
+    ```
+    (docker)$ cp configs/config.raptor-cs-talos-2 .config
+    (docker)$ make olddefconfig
+    (docker)$ make
+    ```
 
-4. When inside of the container, configure the build for Talos II:
+## Building heads
 
-   ```
-   cp configs/config.raptor-cs-talos-2 .config
-   make olddefconfig
-   ```
+1. Clone the heads repository:
 
-5. Start the build process of coreboot inside the container:
+    ```bash
+    $ git clone git@github.com:dasharo/heads.git -b raptor-cs_talos-2/release
+    ```
 
-   ```
-   make
-   ```
+1. Start docker container:
+
+    ```
+    $ docker run --rm -it -v $PWD:$PWD -w $PWD 3mdeb/heads-docker:2.3.0 /bin/bash
+    ```
+
+1. Build:
+
+    ```bash
+    $ make BOARD=talos-2_server
+    ```

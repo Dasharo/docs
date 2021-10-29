@@ -60,7 +60,6 @@ nav:
             - 'Hardware setup': variants/asus_kgpe_d16/setup.md
         - 'Talos II':
             - 'Releases': variants/talos_2/releases.md
-            - 'Test results': variants/talos_2/test-results.md
             - 'Building manual': variants/talos_2/building-manual.md
             - 'Installation manual': variants/talos_2/installation-manual.md
             - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
