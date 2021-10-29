@@ -14,6 +14,7 @@
 
    ```
    pflash -P HBB -r /tmp/hbb.bin
+   pflash -P HBI -r /tmp/hbi.bin
    ```
 
 3. Flash the binaries by replacing HBB partition (execute from BMC):
@@ -40,3 +41,4 @@
 > **Optional:** In order to recovery the platform quickly to healthy state, flash
 > the HBB partition back with: \
 > `pflash -e -P HBB -p /tmp/hbb.bin`
+> `pflash -e -P HBI -p /tmp/hbi.bin`
