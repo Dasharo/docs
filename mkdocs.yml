@@ -58,6 +58,7 @@ nav:
             - 'Installation manual': variants/dell_optiplex/installation-manual.md
         - 'Asus KGPE-D16':
             - 'Hardware setup': variants/asus_kgpe_d16/setup.md
+            - 'Building manual': variants/asus_kgpe_d16/building-manual.md
         - 'Talos II':
             - 'Releases': variants/talos_2/releases.md
             - 'Building manual': variants/talos_2/building-manual.md
