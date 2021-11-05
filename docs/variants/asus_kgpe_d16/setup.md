@@ -125,7 +125,7 @@ For more details about the KGPE-D16, refer to
 
 There are two RTEs connected to two Asus KGPE-D16 boards:
 
-* 192.168.4.236
+* 192.168.20.15
 * 192.168.4.111
 
 Both boards are equipped with the qspimux and a replaced flash chip (Winbond
@@ -158,7 +158,7 @@ It is also possible to control the ATX power supply by disconnecting it from
 the power socket. For this special purpose, Sonoff S20 is used to remotely
 control the power socket activity. Sonoff IP to RTE IP mapping:
 
-* RTE IP 192.168.4.236 - Sonoff IP 192.168.4.125
+* RTE IP 192.168.20.15 - Sonoff IP 192.168.4.125
 * RTE IP 192.168.4.111 - Sonoff IP 192.168.4.146
 
 Sonoffs respond to rest API requests to enable or disable the power socket.
@@ -199,7 +199,7 @@ the serial port over the network. The serial port can be accessed remotely like
 this `telnet RTE_IP 13541`, e.g.:
 
 ```shell
-telnet 192.168.4.236 13541
+telnet 192.168.20.15 13541
 ```
 
 ## Demo
