@@ -28,8 +28,8 @@ tag.
 
 ## Force-pushes rules
 
-Force-pushes to `<platform>/rel_vX.Y.Z` or `<platform>/<feature>` are forbidden
-with following exceptions:
+Force-pushes to `<platform>/rel_vX.Y.Z`, `<platform>/develop` or
+`<platform>/<feature>` are forbidden with following exceptions:
 * rebasing - when some other PR is merged to target branch before our does, or
   when upstream's master introduces the same fixes that our branch would
 * squashing - to not produce unnecessary "fix indentation" or "add missing
@@ -38,4 +38,4 @@ with following exceptions:
   happen it would be better to have it fixed by original author than the person
   that tries to upstream it some time later.
 
-Force-pushes to other branches are unconditionally forbidden.
+Force-pushes to  `<platform>/release` branches are unconditionally forbidden.
