@@ -39,3 +39,47 @@ Force-pushes to `<platform>/rel_vX.Y.Z`, `<platform>/develop` or
   that tries to upstream it some time later.
 
 Force-pushes to  `<platform>/release` branches are unconditionally forbidden.
+
+## Merging guidelines
+
+We want to keep the history linear. The `rebase` merging strategy is desired.
+Merge commits in the code repositories are not allowed. The `rebase` strategy
+should be the only one available in the GitHub web UI.
+
+Is is, however, **strongly advised not to use GitHub web UI** to perform code
+merges. The `signed-off` tends to be dropped (even when using the `rebase`
+strategy), which is problematic for some projects (e.g. it makes the coreboot
+lint checks fail after merging from the UI).
+
+The procedure of merging is as follows:
+1. Review the code in GitHub.
+1. Make sure to receive at least one `Approve` in the review process.
+1. Make sure that **all** change requests are resolved.
+1. Merge the branch using git CLI. In case of merging the `feature` branch into
+   `develop` branch it may look as follows:
+
+    ```bash
+    $ git fetch dasharo
+    $ git checkout dasharo/<platform>/develop
+    $ git checkout -b <platform>/develop
+    $ git merge --ff-only dasharo/<platform>/<feature>
+    $ git push dasharo <platform>/develop
+    ```
+
+1. This should automatically trigger closing the MR in the GitHub web UI.
+1. The remote branch can be safely deleted after this process.
+
+    ```bash
+    $ git push dasharo --delete <platform>/<feature>
+    ```
+
+1. Note that the merging may fail if the source (in this case: `feature`) branch
+   is not properly rebased on top of the target (in this case: `develop`)
+   branch. In such a case, one must rebase the source branch first:
+
+   ```bash
+   $ git checkout dasharo/<platform>/<feature>
+   $ git checkout -b <platform>/<feature>
+   $ git rebase dasharo/<platform>/<develop>
+   $ git push -f dasharo <platform>/<feature>
+   ```
