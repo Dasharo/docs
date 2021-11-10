@@ -22,6 +22,10 @@ For details about our release process please read
 
 [asus_kgpe-d16_v0.1.0.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.1.0.rom){ .md-button }
 
+[asus_kgpe-d16_v0.1.0.rom.sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.1.0.rom.sha256){ .md-button }
+
+[asus_kgpe-d16_v0.1.0.rom.sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.1.0.rom.sha256.sig){ .md-button }
+
 ### SBOM (Software Bill of Materials):
 
 - [coreboot based on 03aef28 revision e6af2206](https://github.com/Dasharo/coreboot/tree/e6af2206)
