@@ -11,9 +11,9 @@ need to execute the setup actions before each independent case.
 #### Firmware
 
 1. Obtain `FIRMWARE` binary
-    1. you can download it from [release](../release.md)
+    1. you can download it from [releases](../releases.md)
        section
     1. or you can build one yourself as shown in the
        [Building manual](../building-manual.md) section
 1. Flash `FIRMWARE` binary to the DUT
-    1. If coreboot is not yet installed: Refer to [setup](../setup.md)
+    1. If coreboot is not yet installed: Refer to [setup](../setup.md/#spi)
