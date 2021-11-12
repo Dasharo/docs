@@ -19,3 +19,9 @@ and should be maintained in that way.
 5. If results are accepted merge it to `<platform>/release` branch
 6. Add tag, which should trigger CI and publish binaries
 7. Merge release branch to develop
+
+## Release Code Signing
+
+
+
+
