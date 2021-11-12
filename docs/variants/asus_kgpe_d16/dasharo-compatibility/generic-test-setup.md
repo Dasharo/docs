@@ -1,4 +1,4 @@
-# Dasharo Compatibility: generic test setup
+# Dasharo Compatibility: Generic test setup
 
 ## Test setup
 
@@ -11,9 +11,9 @@ need to execute the setup actions before each independent case.
 #### Firmware
 
 1. Obtain `FIRMWARE` binary
-    1. you can download it from [releases](../releases.md)
+    * you can download it from [releases](../releases.md)
        section
-    1. or you can build one yourself as shown in the
+    * also you can build one yourself as shown in the
        [Building manual](../building-manual.md) section
 1. Flash `FIRMWARE` binary to the DUT
-    1. If coreboot is not yet installed: Refer to [setup](../setup.md/#spi)
+    * If coreboot is not yet installed: Refer to [setup](../setup.md/#spi)
