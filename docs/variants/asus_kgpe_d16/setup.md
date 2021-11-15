@@ -34,14 +34,18 @@ connected to the qspimux. The connection of the
  8 (NC)            | Not connected
 
 Additionally, one has to tie the IO3_HOLD_PROG (qspimux pin 4) high, so connect
-it to the 3.3V permanently. One more additional GPIO is required to control the
+it to the 3.3V permanently. Another additional GPIO is required to control the
 routing of SPI lines. The MUX_SEL (qspimux pin 9) decides whether
-the programmer is allowed to access the SPI flash or the mainboard.
+the programmer is allowed to access the SPI flash or the mainboard. One more
+GPIO is used to control state of #WP of the flash chip by connecting GPIO to
+IO2_WP_PROG.
 
-The proposed connection used [RTE](https://3mdeb.com/open-source-hardware/#rte)
-GPIO400 to control MUX_SEL and
-[RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO401 to control
-IO3_HOLD_PROG. Simple flashing script looks as follows:
+The proposed connections used:
+ * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO400 to control MUX_SEL
+ * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO401 to control IO3_HOLD_PROG
+ * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO402 to control IO2_WP_PROG
+
+Simple flashing script looks as follows:
 
 ```
 # select flash <-> programmer
@@ -55,10 +59,23 @@ flashrom -w firmware.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000
 echo "1" > /sys/class/gpio/gpio400/value
 ```
 
+Controlling state of #WP:
+
+```
+# configure direction of the pin
+echo "out" > /sys/class/gpio/gpio402/direction
+
+# deassert WP pin to disable hardware protection of status registers
+echo "1" > /sys/class/gpio/gpio402/value
+# assert WP pin to enable hardware protection of status registers
+echo "0"  > /sys/class/gpio/gpio402/value
+```
+
  RTE header J10 pin | qspimux J101 pin
 :------------------:|:-------------------:
  1 (GPIO400)        | 9 (MUX_SEL)
  2 (GPIO401)        | 4 (IO3_HOLD_PROG)
+ 3 (GPIO402)        | 5 (IO2_WP_PROG)
 
 ![](/images/qspimux_pin_header.png)
 
