@@ -17,10 +17,10 @@ any tools. That is why we have thought about the
 attach to various SPI modules footprints and sockets. The DIP-8 adapter
 is put into the DIP-8 socket on the mainboard, which allows attaching the
 qspimux SPI multiplexer. The multiplexer is responsible for switching between
-the external SPI lines and the mainboard lines routed to the external SPi flash
+the external SPI lines and the mainboard lines routed to the external SPI flash
 chip. The external flash chip is soldered on a SOIC8 adapter, which is
 connected to the qspimux. The connection of the
-[RTE](https://3mdeb.com/open-source-hardware/#rte)and qspimux is as follows:
+[RTE](https://3mdeb.com/open-source-hardware/#rte) and qspimux is as follows:
 
  RTE header J7 pin | qspimux J101 pin
 :-----------------:|:-------------------:
