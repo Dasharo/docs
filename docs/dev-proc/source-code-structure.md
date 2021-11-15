@@ -46,7 +46,7 @@ We want to keep the history linear. The `rebase` merging strategy is desired.
 Merge commits in the code repositories are not allowed. The `rebase` strategy
 should be the only one available in the GitHub web UI.
 
-Is is, however, **strongly advised not to use GitHub web UI** to perform code
+It is, however, **strongly advised not to use GitHub web UI** to perform code
 merges. The `signed-off` tends to be dropped (even when using the `rebase`
 strategy), which is problematic for some projects (e.g. it makes the coreboot
 lint checks fail after merging from the UI).
@@ -60,8 +60,7 @@ The procedure of merging is as follows:
 
     ```bash
     $ git fetch dasharo
-    $ git checkout dasharo/<platform>/develop
-    $ git checkout -b <platform>/develop
+    $ git checkout dasharo/<platform>/develop -b <platform>/develop
     $ git merge --ff-only dasharo/<platform>/<feature>
     $ git push dasharo <platform>/develop
     ```
