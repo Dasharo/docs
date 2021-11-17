@@ -14,8 +14,9 @@ Refer to [setup](../setup.md/#spi)
 
 **Test description**
 
-This test verifies whether whether the DUT during booting procedure reaches 
-stage bootblock.
+This test verifies whether the DUT during booting procedure reaches 
+stage bootblock. The bootblock is the first stage executed after CPU reset, 
+its main task is to set up everything for a C-environment.
 
 **Test configuration data**
 
@@ -42,8 +43,9 @@ stage bootblock.
 
 **Test description**
 
-This test verifies whether whether the DUT during booting procedure reaches 
-stage romstage.
+This test verifies whether the DUT during booting procedure reaches 
+stage romstage. The romstage initializes the DRAM and prepares everything 
+for device init.
 
 **Test configuration data**
 
@@ -70,8 +72,8 @@ stage romstage.
 
 **Test description**
 
-This test verifies whether whether the DUT during booting procedure reaches 
-stage postcar.
+This test verifies whether the DUT during booting procedure reaches 
+stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test configuration data**
 
@@ -98,8 +100,8 @@ stage postcar.
 
 **Test description**
 
-This test verifies whether whether the DUT during booting procedure reaches 
-stage ramstage.
+This test verifies whether the DUT during booting procedure reaches 
+stage ramstage. The ramstage does the main device init.
 
 **Test configuration data**
 
