@@ -36,7 +36,7 @@ stage bootblock.
 
 1. The console output should contain string with the phrase:
 
-            bootblock starting (log level: 8)...
+            bootblock starting
 
 ### CBP004.002 Boot into coreboot stage romstage
 
@@ -64,7 +64,7 @@ stage romstage.
 
 1. The console output should contain string with the phrase:
 
-            romstage starting (log level: 8)...
+            romstage starting
 
 ### CBP004.003 Boot into coreboot stage postcar
 
@@ -92,7 +92,7 @@ stage postcar.
 
 1. The console output should contain string with the phrase:
 
-            postcar starting (log level: 8)...
+            postcar starting
 
 ### CBP004.004 Boot into coreboot stage ramstage
 
@@ -120,4 +120,4 @@ stage ramstage.
 
 1. The console output should contain string the with phrase:
 
-            ramstage starting (log level: 8)...
+            ramstage starting
