@@ -14,6 +14,15 @@ of your platform.
 
 [Dasharo homepage](https://dasharo.com/)
 
+## Community
+
+* [Dasharo Matrix Workspace](https://matrix.to/#/#dasharo:matrix.org) - general
+  Dasharo discussion, support and other open source firmware related work.
+* [Dasharo OSF vPub](https://vpub.dasharo.com/) - 3-4 times a year we organize
+  online party to discuss recent achievements in open source firmware, open
+  source hardware and open instruction set architecture. Feel free to check the
+  website about recent vPub plans or subscribe to newsletter.
+
 ## Stock Keeping Units (SKUs)
 
 Also called variants or flavours. In essence Dasharo SKUs are set of Open
