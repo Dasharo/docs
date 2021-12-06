@@ -49,6 +49,7 @@ nav:
         - 'Reference OS': ecosystem/reference-os.md
         - 'Publishing Server': ecosystem/publishing-server.md
         - 'End User Device': ecosystem/end-user.md
+        - 'Roadmap' : ecosystem/roadmap.md
     - 'Quality Principles':
         - 'Introduction': quality-principles/introduction.md
         - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
@@ -120,4 +121,5 @@ nav:
             - 'Trusted Computing': osf-trolling-list/trusted_computing.md
         - 'Frequently Asked Questions':
             - 'Introduction': osf-trivia-list/introduction.md
+            - 'Deployment': osf-trivia-list/deployment.md
     - 'Glossary': glossary.md

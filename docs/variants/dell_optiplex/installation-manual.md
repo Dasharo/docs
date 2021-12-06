@@ -161,48 +161,7 @@ take the following steps:
 4. Choose a USB drive from the list.
 5. Re-install the operating system.
 
-If you see a flashrom error like this:
-
-``` console
-ERROR: Could not get I/O privileges (Operation not permitted).
-You need to be root.
-Error: Programmer initialization failed.
-```
-
-Use `sudo` with the flashrom command. If the problem persists, probably the
-kernel restricts access to IOMEM. To work around it, append
-`iomem=relaxed` to the kernel command line. You may do it in following ways:
-
-* Edit `grub.cfg` in `/boot/grub/`:
-  ``` bash
-  Linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed`
-  ```
-  And reboot. Then try flashing again.
-
-* Edit `/etc/default/grub`:
-  ``` bash
-  GRUB_CMDLINE_LINUX="iomem=relaxed"`
-  ```
-  And regenerate grub config file with `sudo update-grub2` or
-  `sudo grub-mkconfig -o /boot/grub/grub.cfg`. Reboot and then try flashing
-  again.
-
-* If your computer uses BIOS for booting, then hold down the ++shift++, or if
-  your computer uses UEFI for booting, press ++esc++ several times, while GRUB
-  is loading to get the boot menu. And, after getting a GRUB menu, press ++e++
-  on a boot entry to append `iomem=relaxed` to kernel command line and press
-  ++ctrl+x++ or ++f10++ to boot. Although this setting is temporary and will
-  last only during the next boot, this way is faster and a customer doesn't
-  need to re-generate anything.
-
-Please note having it as a temporary setting maybe is slightly better for security
-_(there's a reason why it's disabled by default)_.
-
-If the above does not resolve the problem, the kernel may be compiled with strict
-devmem, which prohibits accessing the IOMEM. You should then take different
-Linux system.
-
-TBD: add refrence to Dasharo Reference OS on USB stick or other method
+Common deployment problems you can find in [FAQ](../../osf-trivia-list/deployment.md).
 
 ### Ubuntu installation
 
