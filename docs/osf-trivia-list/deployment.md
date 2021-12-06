@@ -73,4 +73,31 @@ If the above does not resolve the problem, the kernel may be compiled with stric
 devmem, which prohibits accessing the IOMEM. You should then take different
 Linux system.
 
+## What to do when flashrom returns `Transaction error between offset ...`?
+
+``` console
+SPI Configuration is locked down.
+FREG0: Flash Descriptor region (0x00000000-0x00000fff) is read-only.
+FREG2: Management Engine region (0x00005000-0x005fffff) is locked.
+Not all flash regions are freely accessible by flashrom. This is most likely
+due to an active ME. Please see https://flashrom.org/ME for details.
+At least some flash regions are read protected. You have to use a flash
+layout and include only accessible regions. For write operations, you'll
+additionally need the --noverify-all switch. See manpage for more details.
+Enabling hardware sequencing due to multiple flash chips detected.
+OK.
+Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+Reading flash... Transaction error between offset 0x00005000 and 0x0000503f (= 0x00005000 + 63)!
+Read operation failed!
+FAILED.
+```
+
+Most probably it means problem lays in ME not allowing to read its region. One
+of the method to mitigate the issues is to put ME in Manufacturing Mode. Such
+operation depends on ME version, SPI flash layout and platform design. Detail
+information you should find in sections dedicated to given hardware. To access
+documentation for supported hardware please go to [Hardware Compatibility
+List](../variants/hardware-compatibility-list.md).
+
+
 Please note we consider further mitigations in [Dasharo Roadmap](../ecosystem/roadmap.md).

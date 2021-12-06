@@ -1,10 +1,10 @@
 # Hardware Compatibility List
 
-| Vendor | Model | Status | Roadmap | 3mdeb shop | Vendor shop | Releases |
-:-------:|:-----:|:------:|:-------:|:----------:|:-----------:|:--------:|
-|Dell    | OptiPlex 7010 SFF | Implementation | TBD | TBD | TBD | [link](dell_optiplex/releases.md) |
-|Dell    | OptiPlex 7010 DT | Implementation | TBD | TBD | TBD | [link](dell_optiplex/releases.md) |
-|Dell    | OptiPlex 9010 SFF | Implementation | TBD | TBD | TBD | [link](dell_optiplex/releases.md) |
+| Vendor | Model | Status | Roadmap | Shop | Documentation |
+:-------:|:-----:|:------:|:-------:|:----------:|:--------:|
+|Dell    | OptiPlex 7010 SFF | Implementation | TBD | TBD | [link](dell_optiplex/overview.md) |
+|Dell    | OptiPlex 7010 DT | Implementation | TBD | TBD | [link](dell_optiplex/overview.md) |
+|Dell    | OptiPlex 9010 SFF | Implementation | TBD | TBD | [link](dell_optiplex/overview.md) |
 
 Possible status:
 
