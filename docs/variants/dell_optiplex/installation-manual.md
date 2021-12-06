@@ -11,10 +11,10 @@ since Dasharo Workstation v0.2 supports UEFI mode booting only).
 
 TBD: picture of whole workstation hardware, as it would be shown in shop
 
-## Preparation
+## Flash descriptor security override
 
-To install Dasharo Workstation, one has to conduct a few preparation
-steps. Follow the below instructions:
+To perform any SPI NOR flash operations in presence of ME we have to put it in
+flash descriptor security override mode. Please follow below steps:
 
 1. Open the case by lifting the handle on the case up.
 
@@ -59,18 +59,46 @@ active. Press F1 to proceed and boot to your Linux system.
 
     ![](../../images/service_mode_warn.jpg)
 
+## Install flashrom
+
+* Install flashrom v1.1 or newer with your distribution's package manager if
+  you don't have it installed yet. If your distro doesn't provide flashrom or
+  provides an outdated one, you can build it yourself using
+  [this instruction](https://www.flashrom.org/Downloads).
+* Or compile recent version of flashrom:
+  ``` console
+  sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
+  git clone https://github.com/flashrom/flashrom.git
+  cd flashrom
+  sudo make install
+  ```
+
+## BIOS backup
+
+<!-- BIOS backup section is very generic and should be treated in such way This
+section even can be replaced with Dasharo Reference OS, fwupd or other tools
+that can simplify the operation for the user -->
+
+It is always good idea to backup original BIOS of your hardware, before
+switching to open source firmware.
+
+* Read content of SPI NOR flash:
+  ``` console
+  sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+  ```
+
+If you will face any issues please refer to [troubleshooting section](#troubleshooting).
+
 ## Installation
 
-You will need root privileges from now on to proceed. So switch to the root user or
-use __*sudo*__ in each command.
+Following procedure will flash Dasharo Dell OptiPlex 7010/9010 SFF firmware to your
+machine SPI NOR flash.
 
-1. Install flashrom v1.1 or newer with your distribution's package manager if
-   you don't have it installed yet. If your distro doesn't provide flashrom or provides an outdated one,
-   you can build it yourself using [this instruction](https://www.flashrom.org/Downloads).
-2. Back your firmware image up with: `sudo flashrom -p internal -r bios_backup.bin`
-   (be sure flashrom doesn't report any errors like below).
-3. Download the [Dasharo Workstation firmware image](https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23)
-4. Flash it on you Dell OptiPlex machine:
+<!-- Link should be replaced to something that not point to 3mdeb cloud. Most
+useful would be location at http server -->
+
+1. Download the Dasharo Dell OptiPlex 7010/9010 [firmware image](https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23)
+2. Flash it on you Dell OptiPlex machine:
 
    ``` console
    sudo flashrom -p internal --ifd -i bios -i me -w <path_to_the_binary_file>
@@ -127,6 +155,8 @@ use __*sudo*__ in each command.
    A newer version of flashrom may not display the warning about unsupported
    chipset as it already may be marked as tested. Our team has verified that
    the flashrom updates firmware reliably on this chipset.
+
+If you will face any issues please refer to [troubleshooting section](#troubleshooting).
 
 ## Verification
 

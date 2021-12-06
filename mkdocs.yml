@@ -71,6 +71,7 @@ nav:
     - 'Supported hardware':
         - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
         - 'Dell OptiPlex':
+            - 'Overview': variants/dell_optiplex/overview.md
             - 'Releases': variants/dell_optiplex/releases.md
             - 'Installation manual': variants/dell_optiplex/installation-manual.md
         - 'Asus KGPE-D16':
