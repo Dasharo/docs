@@ -34,9 +34,10 @@ Linux kernel restricts access to IOMEM. To fix that add `iomem=relaxed` to the
 kernel command line.
 
 Recommended way to fix the problem:
+
 * Edit `/etc/default/grub`:
   ``` bash
-  GRUB_CMDLINE_LINUX="iomem=relaxed"`
+  GRUB_CMDLINE_LINUX="iomem=relaxed"
   ```
 * Update GRUB2 config with:
   ``` bash
@@ -49,13 +50,14 @@ Recommended way to fix the problem:
 * Reboot and try `flashrom` command again
 
 Other method:
+
 * Edit `grub.cfg` in `/boot/grub/`:
   ``` bash
-  linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed`
-  ```
+  linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed
 * Reboot and try `flashrom` command again
 
 Last resort you can try to modify boot option runtime. YMMV:
+
 * If your computer uses BIOS for booting, then hold down the ++shift++, or if
   your computer uses UEFI for booting, press ++esc++ several times, while GRUB
   is loading to get the boot menu. And, after getting a GRUB menu, press ++e++
