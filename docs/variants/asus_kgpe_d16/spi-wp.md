@@ -204,22 +204,12 @@ Now that we have selected the desired range to protect, it is time to check the
 current protection status:
 
 ```shell
-./flashrom -p internal --wp-status 2> /dev/null
-flashrom v1.2-585-g3542afe on Linux 5.10.0-9-amd64 (x86_64)
-flashrom is free software, get the source code at https://flashrom.org
-
-Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-coreboot table found at 0x7eeba000.
-Found chipset "AMD FCH".
-Enabling flash write... OK.
-Found Winbond flash chip "W25Q64.V" (8192 kB, SPI) mapped at physical address 0x00000000ff800000.
+./flashrom -p internal --wp-status
+...
 WP config bits: SRP1=0 SRP0=0 CMP=0 SEC=0 TB=0 BP2=0 BP1=0 BP0=0 
 Protection range: start=0x00000000 length=0x00000000 (none)
 Protection mode: disabled
 ```
-
-> I am using ` 2> /dev/null` to prevent the output of erros when flashrom tries
-> to map large flash parts but OS refuses to map the memory region.
 
 The protection range should be set to zeros and all WP config bits should be
 cleared. If you see some bits were not cleared, ensure the WP pin jumper on the
