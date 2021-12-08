@@ -21,7 +21,7 @@ hotkey.
 **Test steps**
 
 1. Power on the DUT.
-2. Wait for boot until `BOOT_MENU_STRING` appears.
+2. Wait until `BOOT_MENU_STRING` appears.
 3. Press `BOOT_MENU_KEY` to enter the boot menu.
 
 **Expected result**

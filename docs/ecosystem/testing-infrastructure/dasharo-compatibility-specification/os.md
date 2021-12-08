@@ -1,8 +1,8 @@
-# Dasharo Compatibility: Operating System
+# Dasharo Compatibility: Debian Stable and Ubuntu LTS support
 
 ## Test cases
 
-### OS001.001 Debian boot from USB
+### LBT001.001 Debian boot from USB
 
 **Test description**
 
@@ -30,7 +30,7 @@ This test aims to verify that DUT boots properly Debian from USB.
 
 The `Debian GNU/Linux` is visible and confirms successful boot into OS.
 
-### OS001.002 Log into booted Debian 
+### LBT001.002 Log into booted Debian 
 
 **Test description**
 
