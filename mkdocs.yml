@@ -77,6 +77,7 @@ nav:
             - 'Hardware setup': variants/asus_kgpe_d16/setup.md
             - 'Building manual': variants/asus_kgpe_d16/building-manual.md
             - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
+            - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
         - 'Talos II':
             - 'Releases': variants/talos_2/releases.md
             - 'Building manual': variants/talos_2/building-manual.md
