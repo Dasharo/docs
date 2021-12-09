@@ -8,6 +8,8 @@ For details about our release process please read
 
 [Subscribe to ASUS KGPE-D16 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/ozes4Jxuo){ .md-button .md-button--primary .center }
 
+Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasharo:matrix.org).
+
 ## v0.2.0 - 2021-12-9
 
 ### Added
