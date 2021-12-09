@@ -52,6 +52,7 @@ strategy), which is problematic for some projects (e.g. it makes the coreboot
 lint checks fail after merging from the UI).
 
 The procedure of merging is as follows:
+
 1. Review the code in GitHub.
 1. Make sure to receive at least one `Approve` in the review process.
 1. Make sure that **all** change requests are resolved.
