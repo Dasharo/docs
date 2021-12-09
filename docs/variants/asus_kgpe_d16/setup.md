@@ -158,6 +158,22 @@ The script will automatically power off the board and update flash chip
 contents using flashrom. After the operation is finished the routing of SPI
 signals is restored to the platform.
 
+### Preparing the flash chip adapter
+The new flash chip supports more memory and it exists in the SOIC-8 package. 
+In case of that necessary was an assembly of adapter preparation (from SOIC-8 to 
+DIP-8). By the way, there was implemented a jumper for protection against 
+unauthorized data written to the flash memory. On the PCB there are two long 
+headers on which can be placed the jumper connecting WP and GND pins. That 
+configuration is the hardware protection against bystanders flashing.
+
+[Winbond W25Q128 - datasheet](https://pl.mouser.com/datasheet/2/949/w25q128jv_dtr_revc_03272018_plus-1489858.pdf)
+
+[SOIC-8 to DIP-8 adapter](https://pl.farnell.com/aries/lcqt-soic8-8/ic-adaptor-8-soic-to-dip-2-54mm/dp/2476033?CMP=KNC-GPL-GEN-KWL-LowLevel&mckv=_dc|pcrid|438445498791|kword||match||plid||slid||product||pgrid|102646699180|ptaid|aud-896247166062:dsa-331171635311|&gclid=CjwKCAiA78aNBhAlEiwA7B76p_wd61RyHOocfyLK-vm-GgVyCzE6UdAOSr0siAzl3VSStJyukBiRgRoCv8kQAvD_BwE)
+
+![Flash](flash_chip_adapter/flash_chip_adapter_1.jpg)
+![Flash](flash_chip_adapter/flash_chip_adapter_2.jpg)
+![Flash](flash_chip_adapter/flash_chip_adapter_3.jpg)
+
 ### Power management
 
 [RTE](https://3mdeb.com/open-source-hardware/#rte) can control the power
