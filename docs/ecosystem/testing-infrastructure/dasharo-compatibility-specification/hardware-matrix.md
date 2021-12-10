@@ -26,7 +26,7 @@ environment for ASUS KGPE-D16 boards available in 3mdeb testing laboratory.
 | CPU:                       | AMD Opteron(TM) Processor 6282 SE                                    | `CPU1` slot                                |
 |                            | CPU Cooler                                                           | `CPU_FAN1` connector                       |
 | RAM                        | DDR3 16GB Kingston KVR16R11D4/16                                     | `DIMM_B2` slot                             |
-| Flash memory               | Winbond W25Q128JV 16MB                                                 | `BIOS` slot                                |
+| Flash memory               | Winbond W25Q128JV 16MB                                               | `BIOS` slot                                |
 | Network                    | Local network wired connection                                       | `LAN1` port                                |
 | Attached devices:          | 1. Goodram 16GB USB stick                                            | `USB1` port                                |
 |                            | 2. ASUS TPM 1.2 module (chip Infineon SLB9635)                       | `TPM1` connector                           |
