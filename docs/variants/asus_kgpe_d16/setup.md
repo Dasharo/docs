@@ -169,10 +169,11 @@ hardware protection against bystanders flashing.
 [Winbond W25Q128 - datasheet](https://pl.mouser.com/datasheet/2/949/w25q128jv_dtr_revc_03272018_plus-1489858.pdf)
 
 [SOIC-8 to DIP-8 adapter](https://pl.farnell.com/aries/lcqt-soic8-8/ic-adaptor-8-soic-to-dip-2-54mm/dp/2476033?CMP=KNC-GPL-GEN-KWL-LowLevel&mckv=_dc|pcrid|438445498791|kword||match||plid||slid||product||pgrid|102646699180|ptaid|aud-896247166062:dsa-331171635311|&gclid=CjwKCAiA78aNBhAlEiwA7B76p_wd61RyHOocfyLK-vm-GgVyCzE6UdAOSr0siAzl3VSStJyukBiRgRoCv8kQAvD_BwE)
-![Flash](flash_chip_adapter/3D_model.png)
-![Flash](flash_chip_adapter/3D_model_2.png)
-![Flash](flash_chip_adapter/flash_chip_adapter_1.jpg)
-![Flash](flash_chip_adapter/flash_chip_adapter_2.jpg)
+</br>
+![Flash](flash_chip_adapter/3D_model.png){: style="height:700px"}
+![Flash](flash_chip_adapter/3D_model_2.png){: style="height:515px"}
+![Flash](flash_chip_adapter/flash_chip_adapter_1.jpg){: style="height:595px"}
+![Flash](flash_chip_adapter/flash_chip_adapter_2.jpg){: style="height:595px"}
 
 ### Power management
 
