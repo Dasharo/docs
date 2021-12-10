@@ -28,7 +28,7 @@ To build coreboot image, follow the steps below:
 4. Start docker container:
 
     ```bash
-    $ docker run --rm -it \
+    $ docker run --rm -it -u $UID \
        -v $PWD:/home/coreboot/coreboot \
        -w /home/coreboot/coreboot \
        coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
@@ -42,5 +42,10 @@ To build coreboot image, follow the steps below:
     (docker)$ make
     ```
 
-This will produce a debug binary placed in `build/coreboot.rom`. To flash
-coreboot refer to [Flashing section in the hardware setup page.](setup.md#flashing)
+This will produce a debug binary placed in `build/coreboot.rom` for a 2MB flash
+chip. In order to build for 8MB or 16MB chip use the `configs/config.asus_kgpe_d16_8M`
+and `configs/config.asus_kgpe_d16_16M` respectively.
+
+Dasharo v0.1.0 foe KGPE-D16 supports only 8MB target with `configs/config.asus_kgpe_d16`.
+
+To flash coreboot refer to [Flashing section in the hardware setup page.](setup.md#flashing)
