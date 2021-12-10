@@ -21,6 +21,11 @@ For details about our release process please read
   - Sporadic signing failure due to the tools not being built
   - Building with cross compiler other than powerpc64-linux-gnu-
 
+### Known issues
+  - [Only one CPU is started](https://github.com/Dasharo/dasharo-issues/issues/30)
+  - [SPDs are not exposed in sysfs automatically](https://github.com/Dasharo/dasharo-issues/issues/31)
+  - [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
+
 ### Binaries
 
 [dasharo_talos_2_bootblock_v0.4.1.signed.ecc](https://cloud.3mdeb.com/index.php/s/LMHyYRoByoiDXK6){ .md-button }
