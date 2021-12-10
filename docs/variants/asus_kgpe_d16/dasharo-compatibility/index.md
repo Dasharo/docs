@@ -6,3 +6,4 @@
 * [Fan control](fan-control.md)
 * [Memtest86plus](memtest.md)
 * [Operating system](os.md)
+* [SMBIOS/DMI tables verification](dmidecode.md)
