@@ -6,8 +6,8 @@
 
 **Test description**
 
-This test aims to verify that the DUT serial number is the same as it is 
-expected.
+This test aims to verify that the DUT serial number is the same as specified in
+coreboot configuration.
 
 **Test configuration data**
 
@@ -67,8 +67,8 @@ expected.
 
    root@debian:~# 
    ```
-1. The character string after `Serial Number:` should be the same as it is
-   expected.
+2. The character string after `Serial Number:` should be the same as in the
+   coreboot config file.
 
 ### DMI001.002 Verify the firmware version
 
@@ -128,8 +128,7 @@ the firmware filename.
 
 **Test description**
 
-This test aims to verify that the DUT product name is the same as it is 
-expected.
+This test aims to verify that the DUT product name and manufacturer is correct.
 
 **Test configuration data**
 
@@ -176,21 +175,21 @@ expected.
 
    root@debian:~#
    ```
-1. The character string after `Product Name:` should be the same as it is
-   expected.
+2. The character string after `Product Name:` should be `KGPE-D16` and after
+   `Manufacturer` should be `ASUS`.
 
 ### DMI001.004 Verify the release date
 
 **Test description**
 
-This test aims to verify that the firmware release date on the DUT is the same 
-as for the firmware file.
+This test aims to verify that the firmware release date on the DUT is the same
+as the tag of given Dasharo version on the Dasharo repository.
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `ESC`
-1. `OPERATING_SYSTEM` = `Debian 11.0`
+2. `BOOT_MENU_KEY` = `ESC`
+3. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
@@ -230,4 +229,4 @@ as for the firmware file.
         Firmware Revision: 0.0
    ```
 2. The character string after `Release date:` should point to the date of the
-   tag on the repository of given Dasharo version.
+   tag of given Dasharo version on Dasharo the repository.
