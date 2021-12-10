@@ -159,21 +159,28 @@ contents using flashrom. After the operation is finished the routing of SPI
 signals is restored to the platform.
 
 ### The flash chip adapter
-The new flash chip gives more memory. Winbond W25Q flash chip exists in the 
-SOIC-8 package. In case of that necessary was the usage of adapter (from SOIC-8 
-to DIP-8). On the PCB there are two long headers on which can be placed the 
-jumper which short the WP and GND pins. Jumper make protection against 
-unauthorized data written to the flash memory.  That configuration is the 
-hardware protection against bystanders flashing.
 
-[Winbond W25Q128 - datasheet](https://pl.mouser.com/datasheet/2/949/w25q128jv_dtr_revc_03272018_plus-1489858.pdf)
+In order to provide an easy way to protect the SPI flash chip one may use a
+DIP-8 to SOIC-8 adapter with a special long pin header for WP pin jumper. It
+allows to use a SOIC-8 packaged flash in the DIP-8 socket and easily place a
+jumper to protect the flash. In order to assembly the adapter you will need 
 
-[SOIC-8 to DIP-8 adapter](https://pl.farnell.com/aries/lcqt-soic8-8/ic-adaptor-8-soic-to-dip-2-54mm/dp/2476033?CMP=KNC-GPL-GEN-KWL-LowLevel&mckv=_dc|pcrid|438445498791|kword||match||plid||slid||product||pgrid|102646699180|ptaid|aud-896247166062:dsa-331171635311|&gclid=CjwKCAiA78aNBhAlEiwA7B76p_wd61RyHOocfyLK-vm-GgVyCzE6UdAOSr0siAzl3VSStJyukBiRgRoCv8kQAvD_BwE)
-</br>
+- the target SPI flash chip (we use wither Winbond W25Q64FV (8MB) or W25Q128JV
+(16MB)),
+- male pin headers 2.54 mm pitch (6 pins)
+- male long pin headers 2.54 mm pitch (2 pins) for the WP jumper
+- [SOIC-8 to DIP-8 adapter](https://pl.farnell.com/en-PL/aries/lcqt-soic8-8/ic-adaptor-8-soic-to-dip-2-54mm/dp/2476033?ost=lcqt-soic8-8)
+- soldering station and the solder
+
+The build shall look like this:
+
 ![Flash](flash_chip_adapter/3D_model.png){: style="height:700px"}
 ![Flash](flash_chip_adapter/3D_model_2.png){: style="height:515px"}
 ![Flash](flash_chip_adapter/flash_chip_adapter_1.jpg){: style="height:595px"}
 ![Flash](flash_chip_adapter/flash_chip_adapter_2.jpg){: style="height:595px"}
+
+Such adapters will be soon available in our shop for purchase. For more details
+how to enable SPI flash protection refer to [SPI FLash protection page](spi-wp.md).
 
 ### Power management
 
