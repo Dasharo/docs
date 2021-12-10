@@ -15,7 +15,7 @@ This test aims to verify that the Memtest86+ entry is available in DUT boot menu
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -41,7 +41,7 @@ This test aims to verify that the DUT enters the Memtest86+ boot option.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -68,7 +68,7 @@ This test aims to verify that the Memtest86+ starts does not hang under DUT.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**   
 
@@ -96,7 +96,7 @@ This test aims to verify that DUT refreshes Memtest86+ properly.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -124,7 +124,7 @@ This test aims to verify that DUT refreshes Memtest86+ properly.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -150,7 +150,7 @@ This test aims to verify that DUT completes Memtest86+.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -164,6 +164,5 @@ This test aims to verify that DUT completes Memtest86+.
 **Expected result**
 
 After the test completes without any errors
-`** Pass complete, no errors, press Esc to exit **` message is visible on the 
-bootom of the screen.
-
+`** Pass complete, no errors, press Esc to exit **` message is visible on the
+bottom of the screen.

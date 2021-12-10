@@ -16,7 +16,7 @@ This test aims to verify that DUT boots properly Debian from USB.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -44,7 +44,7 @@ This test aims to verify that DUT logs properly into Debian booted from USB.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../generic-test-setup.md/#firmware).
+1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 

@@ -8,7 +8,7 @@ Refer to [building manual](../building-manual.md)
 
 ### CBP002.001 Firmware flashing - external programmer
 
-Refer to [setup](../setup.md/#spi)
+Refer to [setup](../setup.md#spi)
 
 ### CBP004.001 Boot into coreboot stage bootblock
 
@@ -25,7 +25,7 @@ its main task is to set up everything for a C-environment.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
 **Test steps**
@@ -54,7 +54,7 @@ for device init.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
 **Test steps**
@@ -82,7 +82,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
 **Test steps**
@@ -110,7 +110,7 @@ stage ramstage. The ramstage does the main device init.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
 **Test steps**
@@ -138,7 +138,7 @@ Resource Allocator v4 during booting procedure.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
 **Test steps**
@@ -156,7 +156,7 @@ Resource Allocator v4 during booting procedure.
 
 **Test description**
 
-This test aims to verify that DUT reaches the `allocating resources` stage for 
+This test aims to verify that DUT reaches the `allocating resources` stage for
 Resource Allocator v4 during booting procedure.
 
 **Test configuration data**
@@ -166,7 +166,7 @@ Resource Allocator v4 during booting procedure.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
 **Test steps**

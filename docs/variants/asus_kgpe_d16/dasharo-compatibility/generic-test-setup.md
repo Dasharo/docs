@@ -16,4 +16,4 @@ need to execute the setup actions before each independent case.
     * also you can build one yourself as shown in the
        [Building manual](../building-manual.md) section
 1. Flash `FIRMWARE` binary to the DUT
-    * If coreboot is not yet installed: Refer to [setup](../setup.md/#spi)
+    * If coreboot is not yet installed: Refer to [setup](../setup.md#spi)
