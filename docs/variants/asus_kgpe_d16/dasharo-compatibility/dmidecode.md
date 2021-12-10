@@ -18,7 +18,7 @@ expected.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](generic-test-setup#firmware)
 
 **Test steps**
 
@@ -86,7 +86,7 @@ the firmware filename.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](generic-test-setup#firmware)
 
 **Test steps**
 
@@ -120,8 +120,6 @@ the firmware filename.
                 Targeted content distribution is supported
         BIOS Revision: 4.14
         Firmware Revision: 0.0
-
-   root@debian:~# 
    ```
 1. The character string after `Version:` should be the same as the firmware 
    fileneme indicates.
@@ -142,7 +140,7 @@ expected.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](generic-test-setup#firmware)
 
 **Test steps**
 
@@ -197,7 +195,7 @@ as for the firmware file.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](generic-test-setup#firmware)
 
 **Test steps**
 
@@ -211,7 +209,25 @@ as for the firmware file.
 1. Output from the command should be similar to:
 
    ```
-   TBD
+   # dmidecode 3.3
+   Getting SMBIOS data from sysfs.
+   SMBIOS 3.0 present.
+
+   Handle 0x0000, DMI type 0, 26 bytes
+   BIOS Information
+        Vendor: 3mdeb Embedded Systems Consulting
+        Version: Dasharo (coreboot+SeaBIOS) v0.2.0
+        Release Date: 12/09/2021
+        ROM Size: 16 MB
+        Characteristics:
+                PCI is supported
+                PC Card (PCMCIA) is supported
+                BIOS is upgradeable
+                Selectable boot is supported
+                ACPI is supported
+                Targeted content distribution is supported
+        BIOS Revision: 4.14
+        Firmware Revision: 0.0
    ```
-1. The character string after `Release date:` should be the same as it is
-   expected.
+2. The character string after `Release date:` should point to the date of the
+   tag on the repository of given Dasharo version.
