@@ -17,7 +17,7 @@ To build coreboot image, follow the steps below:
     $ git submodule update --init --recursive --checkout
     ```
 
-3. Checkout Dasharo branch for KGPE-D16:
+3. Checkout Dasharo development branch for KGPE-D16:
 
     ```bash
     $ git remote add dasharo https://github.com/dasharo/coreboot.git
@@ -46,6 +46,6 @@ This will produce a debug binary placed in `build/coreboot.rom` for a 2MB flash
 chip. In order to build for 8MB or 16MB chip use the `configs/config.asus_kgpe_d16_8M`
 and `configs/config.asus_kgpe_d16_16M` respectively.
 
-Dasharo v0.1.0 foe KGPE-D16 supports only 8MB target with `configs/config.asus_kgpe_d16`.
+Dasharo v0.1.0 for KGPE-D16 supports only 8MB target with `configs/config.asus_kgpe_d16`.
 
 To flash coreboot refer to [Flashing section in the hardware setup page.](setup.md#flashing)
