@@ -8,7 +8,7 @@ For details about our release process please read
 
 [Subscribe to Raptor Computing Systems Talos II Dasharo Release Newsletter]( https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj){ .md-button .md-button--primary .center }
 
-## v0.4.1 - 2021-12-??
+## v0.4.1 - 2021-12-10
 
 ### Changed
   - Simplify memory layout
@@ -17,23 +17,21 @@ For details about our release process please read
   - Print signing output to terminal
 
 ### Fixed
-
-### Known issues
   - Watchdog timing out
   - Sporadic signing failure due to the tools not being built
   - Building with cross compiler other than powerpc64-linux-gnu-
 
 ### Binaries
 
-[dasharo_talos_2_bootblock_v0.4.1.signed.ecc](TBD){ .md-button }
+[dasharo_talos_2_bootblock_v0.4.1.signed.ecc](https://cloud.3mdeb.com/index.php/s/LMHyYRoByoiDXK6){ .md-button }
 [sha256](TBD){ .md-button }
 [sha256.sig](TBD){ .md-button }
 
-[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc](TBD){ .md-button }
+[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc](https://cloud.3mdeb.com/index.php/s/QsHSASCHFL3zRss){ .md-button }
 [sha256](TBD){ .md-button }
 [sha256.sig](TBD){ .md-button }
 
-[zImage_v0.4.1.bundled](TBD){ .md-button }
+[zImage_v0.4.1.bundled](https://cloud.3mdeb.com/index.php/s/kWsXz9f94ciMZ6d){ .md-button }
 [sha256](TBD){ .md-button }
 [sha256.sig](TBD){ .md-button }
 
