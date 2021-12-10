@@ -123,3 +123,59 @@ stage ramstage. The ramstage does the main device init.
 1. The console output should contain string the with phrase:
 
             ramstage starting
+
+### CBP005.001 Resource allocator v4 - gathering requirements
+
+**Test description**
+
+This test aims to verify that DUT reaches the `gathering requirements` stage for 
+Resource Allocator v4 during booting procedure.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the 
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+2. Connect to the UART debug interface and open a serial console.
+
+**Test steps**
+
+1. Power ON the DUT.
+2. By using the serial console read the booting procedure stage.
+
+**Expected result**
+
+1. The console output should contain a string with the phrase:
+
+            Pass 1 (gathering requirements)
+
+### CBP005.002 Resource allocator v4 - allocating resources
+
+**Test description**
+
+This test aims to verify that DUT reaches the `allocating resources` stage for 
+Resource Allocator v4 during booting procedure.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the 
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md/#firmware)
+2. Connect to the UART debug interface and open a serial console.
+
+**Test steps**
+
+1. Power ON the DUT.
+2. By using the serial console read the booting procedure stage.
+
+**Expected result**
+
+1. The console output should contain a string with the phrase:
+
+            Pass 2 (allocating resources)
