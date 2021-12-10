@@ -15,6 +15,30 @@ branch structure:
 platform is supported by coreboot, otherwise we use common sense and available
 information about hardware.
 
+## Remotes
+
+It is assumed that upstream repository is cloned and remote named `dasharo` is
+added later. This has to be done in order to pull git submodules from upstream
+repository so they don't have to be kept on Dasharo's repository. This can be
+done like this:
+
+```bash
+$ git clone https://review.coreboot.org/coreboot.git
+$ cd coreboot
+$ git submodule update --init --checkout
+$ git remote add dasharo git@github.com:Dasharo/coreboot.git
+```
+
+If everything was done properly, this is expected state of remotes:
+
+```bash
+$ git remote -v
+dasharo	git@github.com:Dasharo/coreboot.git (fetch)
+dasharo	git@github.com:Dasharo/coreboot.git (push)
+origin	https://review.coreboot.org/coreboot.git (fetch)
+origin	https://review.coreboot.org/coreboot.git (push)
+```
+
 ## Tags
 
 Dasharo Release tags in git repository use format: `<platform>_vX.Y.Z`
