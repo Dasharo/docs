@@ -84,7 +84,20 @@ switching to open source firmware.
 
 * Read content of SPI NOR flash:
   ``` console
-  sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+  $ sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+  flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
+  flashrom is free software, get the source code at https://flashrom.org
+
+  Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+  Found chipset "Intel Q77".
+  Enabling flash write... SPI Configuration is locked down.
+  The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
+  the Master Section of the flash descriptor are NOT in effect. Please note
+  that Protected Range (PR) restrictions still apply.
+  Enabling hardware sequencing due to multiple flash chips detected.
+  OK.
+  Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+  Reading flash... done.
   ```
 
 If you will face any issues please refer to [troubleshooting section](#troubleshooting).
