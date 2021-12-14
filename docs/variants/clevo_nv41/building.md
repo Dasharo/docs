@@ -8,6 +8,7 @@ This documents describes the procedure for compiling coreboot for Clevo NV41MZ.
 
 - Docker
   - follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+  - follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 - Git
 
 ## Procedure
@@ -44,6 +45,10 @@ Enter the Docker container:
 $ docker run -u $UID --rm -it -v $PWD:/home/coreboot/coreboot -w /home/coreboot/coreboot \
     coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
 ```
+
+*Warning: Do not run `docker` as root. This command should be executed as your
+current user. If you're having trouble running `docker` on your user account,
+follow the steps outlined in [Requirements](#requirements).*
 
 You should be inside the Docker container. Now run following script to build
 the image:
