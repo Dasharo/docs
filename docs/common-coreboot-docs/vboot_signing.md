@@ -16,21 +16,29 @@ Navigate to the coreboot tree.
 
 Start by updating git submodules:
 
-        git submodule update --init --checkout
+```bash
+git submodule update --init --checkout
+```
 
 Build and install vboot utilities:
 
-        cd 3rdparty/vboot
-        make
-        sudo make install
+```bash
+cd 3rdparty/vboot
+make
+sudo make install
+```
 
 Navigate to the directory containing vboot key generation scripts:
 
-        cd scripts/keygeneration
+```bash
+cd scripts/keygeneration
+```
 
 Generate the scripts with the following command:
 
-        ./create_new_keys.sh
+```bash
+./create_new_keys.sh
+```
 
 The keys will be created in the directory `3rdparty/vboot/scripts/keygeneration`.
 
@@ -38,7 +46,9 @@ The keys will be created in the directory `3rdparty/vboot/scripts/keygeneration`
 
 In the root of the coreboot tree, execute the following command:
 
-        make nconfig
+```bash
+make nconfig
+```
 
 Navigate to `Security` -> `Verified Boot (vboot)` -> `Vboot keys` and enter the
 paths to the keys in the appropriate fields.
