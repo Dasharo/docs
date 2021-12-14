@@ -85,6 +85,14 @@ nav:
             - 'Building manual': variants/talos_2/building-manual.md
             - 'Installation manual': variants/talos_2/installation-manual.md
             - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
+        - 'Clevo NV41':
+            - 'Releases': variants/clevo_nv41/releases.md
+            - 'Building': variants/clevo_nv41/building.md
+            - 'EC firmware update': variants/clevo_nv41/ec_update.md
+            - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
+            - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
+            - 'Hardware Configuration Matrix': variants/clevo_nv41/testing_configuration.md
+            - 'Logo customization': variants/clevo_nv41/custom_logo.md
     - 'Dasharo SKUs':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
@@ -102,6 +110,8 @@ nav:
         - 'Sponsorware': inquiries/sponsorware.md
         - 'Commercial inquiries': inquiries/commercial-inquiries.md
     - 'Knowledge base':
+        - 'Common coreboot documentation':
+            - 'Vboot signing': common-coreboot-docs/vboot_signing.md
         - 'Trolling Topics List':
             - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
             - 'Firmware build process': osf-trolling-list/build_process.md
