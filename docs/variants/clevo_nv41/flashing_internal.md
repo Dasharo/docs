@@ -8,7 +8,7 @@ running flashrom on Ubuntu 20.04.
 
 ## Pre-setup
 
-Ensure that the EC is running firmware 1.07.05. Follow the steps outlined in
+Ensure that the EC is running updated firmware. Follow the steps outlined in
 [EC firmware update](../ec_update)
 
 ## Build flashrom
