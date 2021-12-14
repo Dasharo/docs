@@ -111,6 +111,8 @@ measurements and verification of next stages.
 
 ## Setting flash protection using flashrom
 
+**NOTE: be sure to update the firmware first before proceeding!**
+
 ### Estimating bootblock size and protection range
 
 First let's see how much space we need to protect. Take your coreboot.rom file
@@ -296,3 +298,80 @@ range, e.g.
 ```
 
 And proceed with enabling protection and setting back the jumper.
+
+## Setting flash protection for vboot
+
+In case when vboot is enabled the protection range must be extended in order to
+cover other parts of the firmware. Vboot model assumes there is a read-only
+copy of the coreboot and payload called recovery partition. The recovery
+partition is supposed to be protected with a SPI write protection. The
+read-only region contains the bootblock, verstage (vboot stage used to verify
+other firmware components) and vboot keys and all other stages required to boot
+the platform in case of emergency. Typically the read-only partition occupies a
+space that matches the possible write protected regions of the flash chip.
+There are also read-write partitions (up to 2) that contain an updatable copies
+of the coreboot and payload. Unlike read-only partitions, read-write partitions
+are being verified using the signatures put into the read-write partitions.
+vboot checks the signature and decides whether read-write partition is safe to
+boot, otherwise it proceeds with execution of recovery firmware. The boot flow
+is shown on the diagram below:
+
+![vboot boot flow](/images/vboot_bootflow.png)
+
+In order to properly protect the firmware, one has to lock whole `WP_RO` region
+define by flashmap in coreboot. To locate the region offset and size one has to
+use cbfstool to retrieve layout:
+
+```shell
+cd /path/to/coreboot/build
+./cbfstool coreboot.rom layout -w
+This image contains the following sections that can be accessed with this tool:
+
+'RW_MISC' (read-only, size 524288, offset 0)
+'UNIFIED_MRC_CACHE' (read-only, size 131072, offset 0)
+'RECOVERY_MRC_CACHE' (size 65536, offset 0)
+'RW_MRC_CACHE' (size 65536, offset 65536)
+'SMMSTORE' (preserve, size 262144, offset 131072)
+'CONSOLE' (size 131072, offset 393216)
+'RW_NVRAM' (size 16384, offset 524288)
+'RW_SECTION_A' (read-only, size 5750784, offset 540672)
+'VBLOCK_A' (size 8192, offset 540672)
+'FW_MAIN_A' (CBFS, size 5742528, offset 548864)
+'RW_FWID_A' (size 64, offset 6291392)
+'WP_RO' (read-only, size 2097152, offset 6291456)
+'RO_VPD' (preserve, size 16384, offset 6291456)
+'RO_SECTION' (read-only, size 2080768, offset 6307840)
+'FMAP' (read-only, size 2048, offset 6307840)
+'RO_FRID' (size 64, offset 6309888)
+'RO_FRID_PAD' (size 1984, offset 6309952)
+'GBB' (size 16384, offset 6311936)
+'COREBOOT' (CBFS, size 2060288, offset 6328320)
+
+It is at least possible to perform the read action on every section listed above.
+```
+
+The above example shows the KGPE-D16 8MB target with vboot enabled. The `WP_RO`
+section is at offset of 6291456 bytes from the beginning of the flash and has
+size of 2097152 bytes. These numbers are in decimal, so one must convert them
+to hex. Either use an online hex converter or use the command in bash like a pro :)
+
+```
+printf "0x%x\n" 6291456
+0x600000
+printf "0x%x\n" 2097152
+0x200000
+```
+
+So our WP range would be 2MB at 6MB offset
+`start=0x00600000 length=0x00200000 (upper 1/4)`:
+
+```
+./flashrom -p internal --wp-range=0x00600000,0x00200000
+```
+
+Then proceed with [Setting SPI status register protection](#setting-spi-status-register-protection)
+and [Verifying SPI wite protection](#verifying-spi-wite-protection).
+
+At this point you should have your coreboot firmware with vboot well protected
+and ready to go. Place the jumper in order to prevent any changes to the
+configuration.
