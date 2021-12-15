@@ -26,7 +26,7 @@ The script `build.sh` located in the coreboot directory can be used
 to replace the logo. To replace the logo, run the following command:
 
 ```bash
-./build.sh build -l path/to/logo.bmp
+$ ./build.sh build -l path/to/logo.bmp
 ```
 
 The command will output an updated coreboot image into the directory `artifacts`.
