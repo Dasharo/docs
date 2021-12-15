@@ -7,7 +7,9 @@
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device and boots into
-operating system after coldboot.
+the operating system after coldboot. In this test case powering on/off is done by
+changing the Sonoff switch state. This test case may be re-done several times to
+specify the platform and connection stability.
 
 **Test configuration data**
 
@@ -21,7 +23,7 @@ operating system after coldboot.
 
 **Test steps**
 
-1. Disconnect the DUT from the power source and then wait a few seconds.
+1. Power off the DUT.
 2. Power on the DUT.
 3. Wait for boot until `BOOT_MENU_STRING` appears.
 4. Press `BOOT_MENU_KEY` to enter the boot menu.
@@ -39,7 +41,9 @@ coldboot.
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device and boots into
-operating system after warmboot.
+the operating system after warmboot. In this test case powering on/off is done
+by RTE relay. This test case may be re-done several times to specify the 
+platform and connection stability.
 
 **Test configuration data**
 
@@ -70,7 +74,9 @@ warmboot.
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device and boots into
-operating system after system reboot.
+the operating system after system reboot. In this test case powering on/off is
+done by RTE relay. This test case may be re-done several times to specify the 
+platform and connection stability.
 
 **Test configuration data**
 
@@ -90,13 +96,17 @@ operating system after system reboot.
 4. Check if `USB_STICK` entry is available.
 5. Select the proper number for `USB_STICK` option.
 6. Wait for `Debian GNU/Linux`.
-7. Log into `Debian` as `root`.
-8. Execute `reboot` command.
-9. Wait for boot until `BOOT_MENU_STRING` appears.
-10. Press `BOOT_MENU_KEY` to enter the boot menu.
-11. Check if `USB_STICK` entry is available.
-12. Select the proper number for `USB_STICK` option.
-13. Wait for `Debian GNU/Linux`.
+7. Wait for `debian login:`.
+8. Type the `root` login.
+9. Wait for `Password:`.
+10. Type the proper password.
+11. Wait for `root@debian:~#`.
+12. Execute `reboot` command.
+13. Wait for boot until `BOOT_MENU_STRING` appears.
+14. Press `BOOT_MENU_KEY` to enter the boot menu.
+15. Check if `USB_STICK` entry is available.
+16. Select the proper number for `USB_STICK` option.
+17. Wait for `Debian GNU/Linux`.
 
 **Expected result**
 
