@@ -29,9 +29,9 @@ For details about our release process please read
   
 ### Known issues
   
-- [Unable to download the system by using iPXE](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/8)
-- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
-- [The touchpad ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/1)
+- [Unable to download the system by using iPXE](https://github.com/Dasharo/dasharo-issues/issues/40)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://github.com/Dasharo/dasharo-issues/issues/39)
+- [The touchpad ON/OFF switch Fn key is not functional](https://github.com/Dasharo/dasharo-issues/issues/38)
 
 ### Binaries
 
