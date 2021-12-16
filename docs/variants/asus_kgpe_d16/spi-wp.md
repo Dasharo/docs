@@ -353,7 +353,8 @@ It is at least possible to perform the read action on every section listed above
 The above example shows the KGPE-D16 8MB target with vboot enabled. The `WP_RO`
 section is at offset of 6291456 bytes from the beginning of the flash and has
 size of 2097152 bytes. These numbers are in decimal, so one must convert them
-to hex. Either use an online hex converter or use the command in bash like a pro :)
+to hex. Either use an online hex converter or use the command in bash like a
+pro :)
 
 ```
 printf "0x%x\n" 6291456
@@ -363,7 +364,15 @@ printf "0x%x\n" 2097152
 ```
 
 So our WP range would be 2MB at 6MB offset
-`start=0x00600000 length=0x00200000 (upper 1/4)`:
+`start=0x00600000 length=0x00200000 (upper 1/4)`. But before proceeding with
+setting the WP range, one may want to sign the firmware with own vboot keys.
+The Dasharo build come by default with Google vboot developer keys, so to take
+advantage of vboot, one should sign the binary before flashing and setting the
+WP range. Refer to [vboot signing](/common-coreboot-docs/vboot_signing/).
+Unfortunately the utilities support only 2 RW partitions for resiging.
+Otherwise a whole image must be rebuilt. After custo mkeys have been used to
+sign the ifmrware image and the image has been flashed proceed with enalbing
+the protection:
 
 ```
 ./flashrom -p internal --wp-range=0x00600000,0x00200000
