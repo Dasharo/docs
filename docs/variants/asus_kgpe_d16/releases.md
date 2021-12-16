@@ -13,8 +13,8 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 ## v0.3.0 - 2021-12-16
 ### Added
   
-- TPM support
-- vboot support
+- [TPM support](tpm-mboot.md)
+- vboot support (see how to sign and protect the image [here](spi-wp.md#setting-flash-protection-for-vboot))
 - build targets for vboot with measured boot using TPM 1.2 and TPM 2.0
 
 ### Fixed
