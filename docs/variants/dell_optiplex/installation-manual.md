@@ -102,7 +102,30 @@ switching to open source firmware.
 
 If you will face any issues please refer to [troubleshooting section](#troubleshooting).
 
-## Installation
+## Obtain Dasharo binary
+
+Download the Dell OptiPlex 7010/9010 Dasharo from [release section](release.md#binaries)
+or [build from source](building-manual.md).
+
+## Include blobs from original BIOS
+
+TODO: add `run.sh` verification
+TODO: why I have to do that, what value it gives
+
+```
+$ ./run.sh bios_backup.bin coreboot.rom
+```
+
+<!--
+TODO: publish known valid hashes for given coreboot version
+TODO: add to script verification of expected hash of coreboot.rom
+before adding blobs:
+f6327df6578e5f0d2d0d16ecb23a5ba57b5ced50add79d53821f31fd050a9b2b  coreboot.rom
+after adding blobs
+8a0be7a199dd2917e86e0c8e4237dae4b67a417b237d108b0cc7501b93d951b5  coreboot.rom
+-->
+
+## Flashing
 
 Following procedure will flash Dasharo Dell OptiPlex 7010/9010 SFF firmware to your
 machine SPI NOR flash.
@@ -110,64 +133,60 @@ machine SPI NOR flash.
 <!-- Link should be replaced to something that not point to 3mdeb cloud. Most
 useful would be location at http server -->
 
-1. Download the Dasharo Dell OptiPlex 7010/9010 [firmware image](https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23)
-2. Flash it on you Dell OptiPlex machine:
+Flash it on you Dell OptiPlex machine:
 
-   ``` console
-   sudo flashrom -p internal --ifd -i bios -i me -w <path_to_the_binary_file>
-   ```
+``` console
+sudo flashrom -p internal --ifd -i bios -i me -w <path_to_the_binary_file>
+```
 
-   for example:
+for example:
 
-   ``` console
-   $ sudo flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom 
+``` console
+$ sudo flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom
 
-   flashrom v1.1-rc1-127-g370a9f3 on Linux 4.19.0-9-amd64 (x86_64)
-   flashrom is free software, get the source code at https://flashrom.org
+flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
 
-   Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-   Found chipset "Intel Q77".
-   This chipset is marked as untested. If you are using an up-to-date version
-   of flashrom *and* were (not) able to successfully update your firmware with
-   it, then please email a report to flashrom@flashrom.org including a verbose
-   (-V) log.
-   Thank you!
-   Enabling flash write... SPI Configuration is locked down.
-   The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
-   the Master Section of the flash descriptor are NOT in effect. Please note
-   that Protected Range (PR) restrictions still apply.
-   Enabling hardware sequencing due to multiple flash chips detected.
-   OK.
-   Found Programmer flash chip "Opaque flash chip" (12288 kB,
-      Programmer-specific) mapped at physical address 0x0000000000000000.
-   Reading old flash chip contents... done.
-   Erasing and writing flash chip... Erase/write done.
-   Verifying flash... VERIFIED.
-   ```
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+Found chipset "Intel Q77".
+Enabling flash write... SPI Configuration is locked down.
+The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
+the Master Section of the flash descriptor are NOT in effect. Please note
+that Protected Range (PR) restrictions still apply.
+Enabling hardware sequencing due to multiple flash chips detected.
+OK.
+Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+Reading ich descriptor... done.
+Using regions: "me", "bios".
+Reading old flash chip contents... done.
+Erasing and writing flash chip... Erase/write done.
+Verifying flash... VERIFIED.
+```
 
-   If you get a warning:
+If you get a warning:
 
-   ``` console
-   WARNING! You may be running flashrom on an unsupported laptop.
-   ```
+``` console
+WARNING! You may be running flashrom on an unsupported laptop.
+```
 
-   And programmer initialization failed, run command:
+And programmer initialization failed, run command:
 
-   ``` console
-   flashrom -p internal:laptop=this_is_not_a_laptop -w /tmp/dasharo_workstation_v0.2_rc3.rom --ifd -i bios -i me
-   ```
+``` console
+flashrom -p internal:laptop=this_is_not_a_laptop -w /tmp/dasharo_workstation_v0.2_rc3.rom --ifd -i bios -i me
+```
 
-   If you have placed the jumper correctly, you should see the following message
-   in flashrom's output:
+If you have placed the jumper correctly, you should see the following message
+in flashrom's output:
 
-   ``` console
-   The Flash Descriptor Override Strap-Pin is set. Restrictions implied by the Master Section of the flash descriptor are NOT in effect. Please note
-   that Protected Range (PR) restrictions still apply.
-   ```
+``` console
+The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
+the Master Section of the flash descriptor are NOT in effect. Please note
+that Protected Range (PR) restrictions still apply.
+```
 
-   A newer version of flashrom may not display the warning about unsupported
-   chipset as it already may be marked as tested. Our team has verified that
-   the flashrom updates firmware reliably on this chipset.
+A newer version of flashrom may not display the warning about unsupported
+chipset as it already may be marked as tested. Our team has verified that
+the flashrom updates firmware reliably on this chipset.
 
 If you will face any issues please refer to [troubleshooting section](#troubleshooting).
 
