@@ -40,7 +40,7 @@ be accessed from the operating system.
 ```
 tpm2_pcrread
 ```
-1.  For TPM1.2 - Execute command:
+12.  For TPM1.2 - Execute command:
 
 ```
 cat /sys/class/tpm/tpm0/pcrs
