@@ -7,9 +7,9 @@
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after
-coldboot. In this test case powering on/off is done by changing the Sonoff 
-switch state. This test case may be re-done several times to specify the 
-platform and connection stability.
+coldboot (reboot realized by power supply cutting off then cutting on). This 
+test case may be re-done several times to specify the platform and connection
+stability.
 
 **Test configuration data**
 
@@ -31,14 +31,15 @@ platform and connection stability.
 
 **Expected result**
 
-The `USB_STICK` is visible and confirms successful detection after coldboot.
+The `USB_STICK` entry is visible which confirms successful detection after 
+coldboot.
 
 ### USB001.002 USB detect and boot after warmboot
 
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after
-warmboot. In this test case powering on/off is done by RTE relay. This test case
+warmboot (reboot realized by device turning off then turning on). This test case
 may be re-done several times to specify the platform and connection stability.
 
 **Test configuration data**
@@ -60,15 +61,16 @@ may be re-done several times to specify the platform and connection stability.
 
 **Expected result**
 
-The `USB_STICK` is visible and confirms successful detection after warmboot.
+The `USB_STICK` entry is visible which confirms successful detection after 
+warmboot.
 
 ### USB001.003 USB detect and boot after system reboot
 
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after system
-reboot. In this test case powering on/off is done by RTE relay. This test case 
-may be re-done several times to specify the platform and connection stability.
+reboot (reboot performed by relevant command). This test case may be re-done 
+several times to specify the platform and connection stability.
 
 **Test configuration data**
 
@@ -105,5 +107,5 @@ boot menu.
 
 **Expected result**
 
-The `USB_STICK` is visible and confirms successful detection after system 
-reboot.
+The `USB_STICK` entry is visible which confirms successful detection after 
+system reboot.
