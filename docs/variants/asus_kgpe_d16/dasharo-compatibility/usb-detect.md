@@ -7,7 +7,7 @@
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after
-coldboot (reboot realized by power supply cutting off then cutting on). This 
+coldboot (reboot realized by power supply cutting off then restoring back). This 
 test case may be re-done several times to specify the platform and connection
 stability.
 
@@ -23,8 +23,8 @@ stability.
 
 **Test steps**
 
-1. Power off the DUT.
-2. Power on the DUT.
+1. Cut the power off.
+2. Restore power to the DUT.
 3. Wait for boot until `BOOT_MENU_STRING` appears.
 4. Press `BOOT_MENU_KEY` to enter the boot menu.
 5. Check if `USB_STICK` entry is available.

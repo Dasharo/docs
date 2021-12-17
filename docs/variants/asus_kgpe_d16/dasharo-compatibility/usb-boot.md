@@ -7,9 +7,9 @@
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device and boots into
-the operating system after coldboot. In this test case powering on/off is done by
-changing the Sonoff switch state. This test case may be re-done several times to
-specify the platform and connection stability.
+the operating system after coldboot (reboot realized by power supply cutting off
+then restoring back). This test case may be re-done several times to specify the
+platform and connection stability.
 
 **Test configuration data**
 
@@ -23,8 +23,8 @@ specify the platform and connection stability.
 
 **Test steps**
 
-1. Power off the DUT.
-2. Power on the DUT.
+1. Cut the power off.
+2. Restore power to the DUT.
 3. Wait for boot until `BOOT_MENU_STRING` appears.
 4. Press `BOOT_MENU_KEY` to enter the boot menu.
 5. Check if `USB_STICK` entry is available.
@@ -41,9 +41,9 @@ coldboot.
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device and boots into
-the operating system after warmboot. In this test case powering on/off is done
-by RTE relay. This test case may be re-done several times to specify the 
-platform and connection stability.
+the operating system after warmboot (reboot realized by device turning off then
+turning on). This test case may be re-done several times to specify the platform
+and connection stability.
 
 **Test configuration data**
 
@@ -74,9 +74,9 @@ warmboot.
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device and boots into
-the operating system after system reboot. In this test case powering on/off is
-done by RTE relay. This test case may be re-done several times to specify the 
-platform and connection stability.
+the operating system after system reboot (reboot performed by relevant command).
+This test case may be re-done several times to specify the platform and
+connection stability.
 
 **Test configuration data**
 
