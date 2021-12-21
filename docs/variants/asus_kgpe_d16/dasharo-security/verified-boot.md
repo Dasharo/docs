@@ -16,8 +16,9 @@ functional.
 
 **Test steps**
 
-1. Power on the DUT.
-2. Read coreboot loading logs.
+1. Connect to the DUT using the serial port.
+2. Power on DUT.
+3. Read coreboot loading logs.
 
 **Expected result**
 
@@ -27,7 +28,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-### VBO002.001 Verified boot: Booting from Slot A
+### VBO001.002 Verified boot: Booting from Slot A
 
 **Test description**
 
@@ -40,8 +41,9 @@ proceed to boot from Slot A.
 
 **Test steps**
 
-1. Power on the DUT.
-2. Read coreboot loading logs.
+1. Connect to the DUT using the serial port.
+2. Power on the DUT.
+3. Read coreboot loading logs.
 
 **Expected result**
 
@@ -51,7 +53,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-### VBO003.001 Verified boot: Booting from Recovery (Debian)
+### VBO001.003 Verified boot: Booting from Recovery (Debian)
 
 **Test description**
 
@@ -87,8 +89,9 @@ command:
         flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 
 12. Power off the DUT
-13. Power on the DUT
-14. Read coreboot loading logs.
+13. Connect to the DUT using the serial port.
+14. Power on the DUT
+15. Read coreboot loading logs.
 
 **Expected result**
 
