@@ -12,7 +12,8 @@ environment for ASUS KGPE-D16 boards available in 3mdeb testing laboratory.
 | RAM                        | DDR3 16GB Kingston KVR16R11D4/16                             | `DIMM_B2` slot                             |
 | Flash memory               | Winbond W25Q64FV 8MB                                         | `BIOS` slot                                |
 | Network                    | Local network wired connection                               | `LAN1` port                                |
-| Attached devices           | Goodram 16GB USB stick                                       | `USB1` port                                |
+| Attached devices           | 1. Goodram 16GB USB stick                                    | `USB1` port                                |
+|                            | 2. ASUS TPM-L R2.0 module (chip Infineon SLB9665 TT2.0)      | `TPM1` connector                           |
 | Power Supply               | 700 W ATX type power supply                                  | `SSIPWR1`, `SSI12V1` connectors            |
 | Power Control:             | 1. Sonoff S20 switch                                         | N/A                                        |
 |                            | 2. Goldpin cables (RTE <-> Board connection)                 | `PANEL1` connector                         |
@@ -29,7 +30,7 @@ environment for ASUS KGPE-D16 boards available in 3mdeb testing laboratory.
 | Flash memory               | Winbond W25Q128JV 16MB                                               | `BIOS` slot                                |
 | Network                    | Local network wired connection                                       | `LAN1` port                                |
 | Attached devices:          | 1. Goodram 16GB USB stick                                            | `USB1` port                                |
-|                            | 2. ASUS TPM 1.2 module (chip Infineon SLB9635)                       | `TPM1` connector                           |
+|                            | 2. ASUS TPM 1.2 Rev 1.02h module (chip Infineon SLB9635 TT 1.2)      | `TPM1` connector                           |
 |                            | 3. Post Debug Card                                                   | `PCI6` slot                                |
 | Power Supply               | 700 W ATX type power supply                                          | `SSIPWR1`, `SSI12V1`, `SSI12V2` connectors |
 | Power Control:             | 1. Sonoff S20 switch                                                 | N/A                                        |

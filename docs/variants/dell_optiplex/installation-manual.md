@@ -11,10 +11,10 @@ since Dasharo Workstation v0.2 supports UEFI mode booting only).
 
 TBD: picture of whole workstation hardware, as it would be shown in shop
 
-## Preparation
+## Flash descriptor security override
 
-To install Dasharo Workstation, one has to conduct a few preparation
-steps. Follow the below instructions:
+To perform any SPI NOR flash operations in presence of ME we have to put it in
+flash descriptor security override mode. Please follow below steps:
 
 1. Open the case by lifting the handle on the case up.
 
@@ -59,74 +59,136 @@ active. Press F1 to proceed and boot to your Linux system.
 
     ![](../../images/service_mode_warn.jpg)
 
-## Installation
+## Install flashrom
 
-You will need root privileges from now on to proceed. So switch to the root user or
-use __*sudo*__ in each command.
+* Install flashrom v1.1 or newer with your distribution's package manager if
+  you don't have it installed yet. If your distro doesn't provide flashrom or
+  provides an outdated one, you can build it yourself using
+  [this instruction](https://www.flashrom.org/Downloads).
+* Or compile recent version of flashrom:
+  ``` console
+  sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
+  git clone https://github.com/flashrom/flashrom.git
+  cd flashrom
+  sudo make install
+  ```
 
-1. Install flashrom v1.1 or newer with your distribution's package manager if
-   you don't have it installed yet. If your distro doesn't provide flashrom or provides an outdated one,
-   you can build it yourself using [this instruction](https://www.flashrom.org/Downloads).
-2. Back your firmware image up with: `sudo flashrom -p internal -r bios_backup.bin`
-   (be sure flashrom doesn't report any errors like below).
-3. Download the [Dasharo Workstation firmware image](https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23)
-4. Flash it on you Dell OptiPlex machine:
+## BIOS backup
 
-   ``` console
-   sudo flashrom -p internal --ifd -i bios -i me -w <path_to_the_binary_file>
-   ```
+<!-- BIOS backup section is very generic and should be treated in such way This
+section even can be replaced with Dasharo Reference OS, fwupd or other tools
+that can simplify the operation for the user -->
 
-   for example:
+It is always good idea to backup original BIOS of your hardware, before
+switching to open source firmware.
 
-   ``` console
-   $ sudo flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom 
+* Read content of SPI NOR flash:
+  ``` console
+  $ sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+  flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
+  flashrom is free software, get the source code at https://flashrom.org
 
-   flashrom v1.1-rc1-127-g370a9f3 on Linux 4.19.0-9-amd64 (x86_64)
-   flashrom is free software, get the source code at https://flashrom.org
+  Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+  Found chipset "Intel Q77".
+  Enabling flash write... SPI Configuration is locked down.
+  The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
+  the Master Section of the flash descriptor are NOT in effect. Please note
+  that Protected Range (PR) restrictions still apply.
+  Enabling hardware sequencing due to multiple flash chips detected.
+  OK.
+  Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+  Reading flash... done.
+  ```
 
-   Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-   Found chipset "Intel Q77".
-   This chipset is marked as untested. If you are using an up-to-date version
-   of flashrom *and* were (not) able to successfully update your firmware with
-   it, then please email a report to flashrom@flashrom.org including a verbose
-   (-V) log.
-   Thank you!
-   Enabling flash write... SPI Configuration is locked down.
-   The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
-   the Master Section of the flash descriptor are NOT in effect. Please note
-   that Protected Range (PR) restrictions still apply.
-   Enabling hardware sequencing due to multiple flash chips detected.
-   OK.
-   Found Programmer flash chip "Opaque flash chip" (12288 kB,
-      Programmer-specific) mapped at physical address 0x0000000000000000.
-   Reading old flash chip contents... done.
-   Erasing and writing flash chip... Erase/write done.
-   Verifying flash... VERIFIED.
-   ```
+If you will face any issues please refer to [troubleshooting section](#troubleshooting).
 
-   If you get a warning:
+## Obtain Dasharo binary
 
-   ``` console
-   WARNING! You may be running flashrom on an unsupported laptop.
-   ```
+Download the Dell OptiPlex 7010/9010 Dasharo from [release section](release.md#binaries)
+or [build from source](building-manual.md).
 
-   And programmer initialization failed, run command:
+## Include blobs from original BIOS
 
-   ``` console
-   flashrom -p internal:laptop=this_is_not_a_laptop -w /tmp/dasharo_workstation_v0.2_rc3.rom --ifd -i bios -i me
-   ```
+TODO: add `run.sh` verification
+TODO: why I have to do that, what value it gives
 
-   If you have placed the jumper correctly, you should see the following message
-   in flashrom's output:
+```
+$ ./run.sh bios_backup.bin coreboot.rom
+```
 
-   ``` console
-   The Flash Descriptor Override Strap-Pin is set. Restrictions implied by the Master Section of the flash descriptor are NOT in effect. Please note
-   that Protected Range (PR) restrictions still apply.
-   ```
+<!--
+TODO: publish known valid hashes for given coreboot version
+TODO: add to script verification of expected hash of coreboot.rom
+before adding blobs:
+f6327df6578e5f0d2d0d16ecb23a5ba57b5ced50add79d53821f31fd050a9b2b  coreboot.rom
+after adding blobs
+8a0be7a199dd2917e86e0c8e4237dae4b67a417b237d108b0cc7501b93d951b5  coreboot.rom
+-->
 
-   A newer version of flashrom may not display the warning about unsupported
-   chipset as it already may be marked as tested. Our team has verified that
-   the flashrom updates firmware reliably on this chipset.
+## Flashing
+
+Following procedure will flash Dasharo Dell OptiPlex 7010/9010 SFF firmware to your
+machine SPI NOR flash.
+
+<!-- Link should be replaced to something that not point to 3mdeb cloud. Most
+useful would be location at http server -->
+
+Flash it on you Dell OptiPlex machine:
+
+``` console
+sudo flashrom -p internal --ifd -i bios -i me -w <path_to_the_binary_file>
+```
+
+for example:
+
+``` console
+$ sudo flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom
+
+flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+Found chipset "Intel Q77".
+Enabling flash write... SPI Configuration is locked down.
+The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
+the Master Section of the flash descriptor are NOT in effect. Please note
+that Protected Range (PR) restrictions still apply.
+Enabling hardware sequencing due to multiple flash chips detected.
+OK.
+Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+Reading ich descriptor... done.
+Using regions: "me", "bios".
+Reading old flash chip contents... done.
+Erasing and writing flash chip... Erase/write done.
+Verifying flash... VERIFIED.
+```
+
+If you get a warning:
+
+``` console
+WARNING! You may be running flashrom on an unsupported laptop.
+```
+
+And programmer initialization failed, run command:
+
+``` console
+flashrom -p internal:laptop=this_is_not_a_laptop -w /tmp/dasharo_workstation_v0.2_rc3.rom --ifd -i bios -i me
+```
+
+If you have placed the jumper correctly, you should see the following message
+in flashrom's output:
+
+``` console
+The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
+the Master Section of the flash descriptor are NOT in effect. Please note
+that Protected Range (PR) restrictions still apply.
+```
+
+A newer version of flashrom may not display the warning about unsupported
+chipset as it already may be marked as tested. Our team has verified that
+the flashrom updates firmware reliably on this chipset.
+
+If you will face any issues please refer to [troubleshooting section](#troubleshooting).
 
 ## Verification
 
@@ -161,48 +223,7 @@ take the following steps:
 4. Choose a USB drive from the list.
 5. Re-install the operating system.
 
-If you see a flashrom error like this:
-
-``` console
-ERROR: Could not get I/O privileges (Operation not permitted).
-You need to be root.
-Error: Programmer initialization failed.
-```
-
-Use `sudo` with the flashrom command. If the problem persists, probably the
-kernel restricts access to IOMEM. To work around it, append
-`iomem=relaxed` to the kernel command line. You may do it in following ways:
-
-* Edit `grub.cfg` in `/boot/grub/`:
-  ``` bash
-  Linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed`
-  ```
-  And reboot. Then try flashing again.
-
-* Edit `/etc/default/grub`:
-  ``` bash
-  GRUB_CMDLINE_LINUX="iomem=relaxed"`
-  ```
-  And regenerate grub config file with `sudo update-grub2` or
-  `sudo grub-mkconfig -o /boot/grub/grub.cfg`. Reboot and then try flashing
-  again.
-
-* If your computer uses BIOS for booting, then hold down the ++shift++, or if
-  your computer uses UEFI for booting, press ++esc++ several times, while GRUB
-  is loading to get the boot menu. And, after getting a GRUB menu, press ++e++
-  on a boot entry to append `iomem=relaxed` to kernel command line and press
-  ++ctrl+x++ or ++f10++ to boot. Although this setting is temporary and will
-  last only during the next boot, this way is faster and a customer doesn't
-  need to re-generate anything.
-
-Please note having it as a temporary setting maybe is slightly better for security
-_(there's a reason why it's disabled by default)_.
-
-If the above does not resolve the problem, the kernel may be compiled with strict
-devmem, which prohibits accessing the IOMEM. You should then take different
-Linux system.
-
-TBD: add refrence to Dasharo Reference OS on USB stick or other method
+Common deployment problems you can find in [FAQ](../../osf-trivia-list/deployment.md).
 
 ### Ubuntu installation
 
