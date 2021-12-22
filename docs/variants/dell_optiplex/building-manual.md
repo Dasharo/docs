@@ -44,5 +44,11 @@ To build coreboot image, follow the steps below:
     (docker)$ make
     ```
 
+    or simply:
+
+    ```bash
+    (docker)$ make distclean && cp configs/config.dell_optiplex_9010_sff .config && make olddefconfig && make
+    ```
+
 This will produce a debug binary placed in `build/coreboot.rom`. To flash
 coreboot refer to [installation manual](installation-manual.md).
