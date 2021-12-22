@@ -107,14 +107,24 @@ If you will face any issues please refer to [troubleshooting section](#troublesh
 Download the Dell OptiPlex 7010/9010 Dasharo from [release section](release.md#binaries)
 or [build from source](building-manual.md).
 
-## Include blobs from original BIOS
+## Non-redistributable blobs
 
-TODO: add `run.sh` verification
-TODO: why I have to do that, what value it gives
+Some Dell OptiPlex 7010/9010 SFF binary blobs have unknown license or
+questionable redistributability. To avoid potential issues we transfer
+non-redistributable components from your original BIOS to Dell OptiPlex 9010
+Dasharo binary using [fwdeploy](https://github.com/Dasharo/fwdeploy).
 
 ```
-$ ./run.sh bios_backup.bin coreboot.rom
+$ wget https://raw.githubusercontent.com/Dasharo/fwdeploy/main/run.sh
+$ ./run.sh <bios_backup> <dasharo_optiplex_9010_firmware>
 ```
+
+After that procedure `<dasharo_optiplex_9010_firmware>` can be flashed on your
+Dell OptiPlex 7010/9010 SFF.
+
+**NOTE:** We gathering information about non-redistributable firmware components
+in [Dasharo fwdeploy](https://github.com/Dasharo/fwdeploy/blob/main/blobs/dell_optiplex_9010.sha256)
+project. Feel free to report SHA256 of blobs from your platform.
 
 <!--
 TODO: publish known valid hashes for given coreboot version
@@ -127,7 +137,7 @@ after adding blobs
 
 ## Flashing
 
-Following procedure will flash Dasharo Dell OptiPlex 7010/9010 SFF firmware to your
+Following procedure will flash Dell OptiPlex 7010/9010 SFF Dasharo firmware to your
 machine SPI NOR flash.
 
 <!-- Link should be replaced to something that not point to 3mdeb cloud. Most
@@ -136,7 +146,7 @@ useful would be location at http server -->
 Flash it on you Dell OptiPlex machine:
 
 ``` console
-sudo flashrom -p internal --ifd -i bios -i me -w <path_to_the_binary_file>
+sudo flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
 ```
 
 for example:
