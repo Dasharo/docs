@@ -116,6 +116,7 @@ Dasharo binary using [fwdeploy](https://github.com/Dasharo/fwdeploy).
 
 ```
 $ wget https://raw.githubusercontent.com/Dasharo/fwdeploy/main/run.sh
+$ chmod +x run.sh
 $ ./run.sh <bios_backup> <dasharo_optiplex_9010_firmware>
 ```
 
