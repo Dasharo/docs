@@ -54,6 +54,8 @@ Other method:
 * Edit `grub.cfg` in `/boot/grub/`:
   ``` bash
   linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed
+  ```
+
 * Reboot and try `flashrom` command again
 
 Last resort you can try to modify boot option runtime. YMMV:
