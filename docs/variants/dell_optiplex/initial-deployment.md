@@ -229,7 +229,7 @@ If you will face any issues please refer to [troubleshooting section](#troublesh
 2. Shut down machine, move the jumper to the original place
 3. Power on the machine.
 4. After rebooting, you should see the Dasharo Workstation logo when booting.
-   When the logo appears, you may press ESC to select the boot device if you want to
+   When the logo appears, you may press ++esc++ to select the boot device if you want to
    reboot from another source.
 
    ![](../../images/dasharo-black.jpg)
@@ -252,7 +252,7 @@ take the following steps:
 
 1. Put a bootable USB stick to the USB port.
 2. Restart the computer using the power button.
-3. Press the ESC key to enter a boot menu.
+3. Press the ++esc++ key to enter a boot menu.
 4. Choose a USB drive from the list.
 5. Re-install the operating system.
 
