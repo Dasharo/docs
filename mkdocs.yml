@@ -74,7 +74,9 @@ nav:
             - 'Overview': variants/dell_optiplex/overview.md
             - 'Releases': variants/dell_optiplex/releases.md
             - 'Building manual': variants/dell_optiplex/building-manual.md
-            - 'Installation manual': variants/dell_optiplex/installation-manual.md
+            - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
+            - 'Firmware update': variants/dell_optiplex/firmware-update.md
+            - 'Recovery': variants/dell_optiplex/recovery.md
         - 'Asus KGPE-D16':
             - 'Releases': variants/asus_kgpe_d16/releases.md
             - 'Hardware setup': variants/asus_kgpe_d16/setup.md
