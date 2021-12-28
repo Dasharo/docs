@@ -1,17 +1,22 @@
-# Dasharo Workstation installation manual
+# Initial deployment
 
-## Introduction
+Following documentation describe process of replacing original BIOS/UEFI
+firmware with Dasharo open source firmware. Following procedure is supported
+for following models
 
-__*Dasharo Workstation is a firmware product designed for Dell OptiPlex
-7010 and 9010*__
+<center>
 
-To install the Dasharo Workstation, you will need the Dell OptiPlex
-7010 or 9010 machines and a Linux installed on it (**in UEFI mode**
-since Dasharo Workstation v0.2 supports UEFI mode booting only).
+| Vendor | Model |
+:-------:|:-----:|
+|Dell    | OptiPlex 7010 SFF |
+|Dell    | OptiPlex 7010 DT |
+|Dell    | OptiPlex 9010 SFF |
 
-TBD: picture of whole workstation hardware, as it would be shown in shop
+</center>
 
-## Flash descriptor security override
+## Hardware preparation
+
+### Flash descriptor security override
 
 To perform any SPI NOR flash operations in presence of ME we have to put it in
 flash descriptor security override mode. Please follow below steps:
@@ -59,7 +64,12 @@ active. Press F1 to proceed and boot to your Linux system.
 
     ![](../../images/service_mode_warn.jpg)
 
-## Install flashrom
+## OS booting
+
+For simplicity we using network boot [netboot.xyz from USB](https://netboot.xyz/docs/booting/usb)
+with self-hosted local instance.
+
+## Flashrom installation
 
 * Install flashrom v1.1 or newer with your distribution's package manager if
   you don't have it installed yet. If your distro doesn't provide flashrom or
@@ -102,7 +112,7 @@ switching to open source firmware.
 
 If you will face any issues please refer to [troubleshooting section](#troubleshooting).
 
-## Obtain Dasharo binary
+## Get Dasharo
 
 Download the Dell OptiPlex 7010/9010 Dasharo from [release section](release.md#binaries)
 or [build from source](building-manual.md).
