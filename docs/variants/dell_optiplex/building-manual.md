@@ -51,4 +51,4 @@ To build coreboot image, follow the steps below:
     ```
 
 This will produce a debug binary placed in `build/coreboot.rom`. To flash
-coreboot refer to [installation manual](installation-manual.md).
+coreboot refer to [initial deployment manual](initial-deployment.md).

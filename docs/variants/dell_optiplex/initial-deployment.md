@@ -126,7 +126,7 @@ If you will face any issues please refer to [troubleshooting section](#troublesh
 
 ## Get Dasharo
 
-Download the Dell OptiPlex 7010/9010 Dasharo from [release section](release.md#binaries)
+Download the Dell OptiPlex 7010/9010 Dasharo from [release section](releases.md#binaries)
 or [build from source](building-manual.md).
 
 ## Non-redistributable blobs
