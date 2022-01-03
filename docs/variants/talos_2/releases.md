@@ -17,7 +17,7 @@ For details about our release process please read
   - Print signing output to terminal
 
 ### Fixed
-  - Watchdog timing out
+  - [Watchdog timing out](https://github.com/Dasharo/dasharo-issues/issues/29)
   - Sporadic signing failure due to the tools not being built
   - Building with cross compiler other than powerpc64-linux-gnu-
 
