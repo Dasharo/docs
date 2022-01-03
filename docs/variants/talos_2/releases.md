@@ -28,15 +28,15 @@ For details about our release process please read
 
 ### Binaries
 
-[dasharo_talos_2_bootblock_v0.4.1.signed.ecc](https://cloud.3mdeb.com/index.php/s/LMHyYRoByoiDXK6){ .md-button }
+[dasharo_talos_2_bootblock_v0.4.1.signed.ecc](https://cloud.3mdeb.com/index.php/s/gNKGnx7sJK3neSX){ .md-button }
 [sha256](TBD){ .md-button }
 [sha256.sig](TBD){ .md-button }
 
-[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc](https://cloud.3mdeb.com/index.php/s/QsHSASCHFL3zRss){ .md-button }
+[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc](https://cloud.3mdeb.com/index.php/s/6RoMELcqQNyaF7b){ .md-button }
 [sha256](TBD){ .md-button }
 [sha256.sig](TBD){ .md-button }
 
-[zImage_v0.4.1.bundled](https://cloud.3mdeb.com/index.php/s/kWsXz9f94ciMZ6d){ .md-button }
+[zImage_v0.4.1.bundled](https://cloud.3mdeb.com/index.php/s/SfZAMdqKXymkc34){ .md-button }
 [sha256](TBD){ .md-button }
 [sha256.sig](TBD){ .md-button }
 
