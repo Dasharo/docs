@@ -101,6 +101,7 @@ nav:
             - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
             - 'Hardware Configuration Matrix': variants/clevo_nv41/testing_configuration.md
             - 'Logo customization': variants/clevo_nv41/custom_logo.md
+            - 'Openness score': variants/clevo_nv41/openness_analysis.md
     - 'Dasharo SKUs':
         - 'Overview': variants/skus-overview.md
         - 'Firewall': variants/firewall.md
