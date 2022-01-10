@@ -8,16 +8,15 @@ For details about our release process please read
 
 [Subscribe to Raptor Computing Systems Talos II Dasharo Release Newsletter]( https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj){ .md-button .md-button--primary .center }
 
-## v0.4.1 - 2021-12-10
-
+## v0.4.1 - 2022-01-10
 ### Changed
-  - Simplify memory layout
+  - Simplify memlayout
   - Replace PPC_SHIFT with PPC_PLACE macro
   - Change SPR numbers definitions to decimal
   - Print signing output to terminal
 
 ### Fixed
-  - [Watchdog timing out](https://github.com/Dasharo/dasharo-issues/issues/29)
+  - Watchdog timing out
   - Sporadic signing failure due to the tools not being built
   - Building with cross compiler other than powerpc64-linux-gnu-
 
@@ -28,22 +27,22 @@ For details about our release process please read
 
 ### Binaries
 
-[dasharo_talos_2_bootblock_v0.4.1.signed.ecc](https://cloud.3mdeb.com/index.php/s/gNKGnx7sJK3neSX){ .md-button }
-[sha256](TBD){ .md-button }
-[sha256.sig](TBD){ .md-button }
+[dasharo_talos_2_bootblock_v0.4.1.signed.ecc](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256.sig){ .md-button }
 
-[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc](https://cloud.3mdeb.com/index.php/s/6RoMELcqQNyaF7b){ .md-button }
-[sha256](TBD){ .md-button }
-[sha256.sig](TBD){ .md-button }
+[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256.sig){ .md-button }
 
-[zImage_v0.4.1.bundled](https://cloud.3mdeb.com/index.php/s/SfZAMdqKXymkc34){ .md-button }
-[sha256](TBD){ .md-button }
-[sha256.sig](TBD){ .md-button }
+[dasharo_talos_2_zImage_v0.4.1.bundled](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256.sig){ .md-button }
 
 ### SBOM (Software Bill of Materials):
 
-- [coreboot based on TBD revision TBD](https://github.com/Dasharo/coreboot/tree/raptor-cs_talos-2_v0.4.1)
-- [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/)
+- [coreboot based on 5621a1e revision 13b58058](https://github.com/Dasharo/coreboot/commit/13b58058)
+- [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/98581863)
 - [heads based on 21e50681 revision 34c77951](https://git.raptorcs.com/git/talos-skiboot/commit/?id=9858186353f2203fe477f316964e03609d12fd1d)
 
 ## v0.4.0 - 2021-10-29
