@@ -99,6 +99,7 @@ nav:
             - 'EC firmware update': variants/clevo_nv41/ec_update.md
             - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
             - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
+            - 'Post-installation steps': variants/clevo_nv41/post_install.md
             - 'Hardware Configuration Matrix': variants/clevo_nv41/testing_configuration.md
             - 'Logo customization': variants/clevo_nv41/custom_logo.md
             - 'Openness score': variants/clevo_nv41/openness_analysis.md
