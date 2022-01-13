@@ -6,12 +6,12 @@ Clevo NV41MZ
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Clevo NV41MZ Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR){ .md-button .md-button--primary .center }
+[Subscribe to Clevo NV41MZ Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/T61MyO2sP){ .md-button .md-button--primary .center }
 
 ## v0.5.0 - 2021-11-19
 
 ### Added
-  
+
 - vboot Verified Boot
 - TPM Measured Boot
 - Custom fan curve
@@ -19,16 +19,16 @@ For details about our release process please read
 - Documentation for EC firmware update
 
 ### Changed
-  
+
 - Disabled unused DPTF device
 
 ### Fixed
 
 - [Performance drop when the power adaptor is disconnected](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/5)
 - [High Nvidia GPU energy draw at idle in Windows](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/6)
-  
+
 ### Known issues
-  
+
 - [Unable to download the system by using iPXE](https://github.com/Dasharo/dasharo-issues/issues/40)
 - [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://github.com/Dasharo/dasharo-issues/issues/39)
 - [The touchpad ON/OFF switch Fn key is not functional](https://github.com/Dasharo/dasharo-issues/issues/38)
@@ -49,23 +49,23 @@ For details about our release process please read
 ## v0.4.0 - 2021-10-26
 
 ### Added
-  
+
 - Added full support for sleep mode (s0ix / Modern Standby)
 - Added support for NV41MB model
 - Added support for nvidia discrete graphics (doesn't power off in Windows yet)
 
 ### Changed
-  
+
 - Fixed regression with non-funtional airplane mode hotkey on Windows
 - Disabled legacy 8254 timer for lower power draw
-  
+
 ### Fixed
 
 - [Sleep mode is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/3)
 - [The camera ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/2)
 
 ### Known issues
-  
+
 - [Unable to download the system by using iPXE](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/8)
 - [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
 - [High Nvidia GPU energy draw at idle in Windows](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/6)
@@ -154,12 +154,12 @@ For details about our release process please read
 - Preserve boot order settings after Dasharo update
 
 ### Changed
-  
+
 - Replaced CorebootPayloadPkg with Dasharo UEFIPayloadPkg
 - Changed the behavior of airplane mode to match stock firmware (now it can be disabled in software)
-  
+
 ### Known issues
-  
+
 - [Screen brightness is stuck at 0% in the Windows Installer](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/4)
 - [Sleep mode is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/3)
 - [The camera ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/2)
@@ -167,10 +167,10 @@ For details about our release process please read
 
 ### Binaries
 
-- [dasharo_clevo_nv41mz_0.2.0.rom](https://cloud.3mdeb.com/index.php/s/BnWwH7X8RYinm7x){ .md-button } 
-- [dasharo_clevo_nv41mz_0.2.0.SHA256](https://cloud.3mdeb.com/index.php/s/xrwfNdC9PnfoMEL){ .md-button } 
-- [dasharo_clevo_nv41mz_0.2.0.SHA256.sig](https://cloud.3mdeb.com/index.php/s/yWitrxMRrCHYPE4){ .md-button } 
-  
+- [dasharo_clevo_nv41mz_0.2.0.rom](https://cloud.3mdeb.com/index.php/s/BnWwH7X8RYinm7x){ .md-button }
+- [dasharo_clevo_nv41mz_0.2.0.SHA256](https://cloud.3mdeb.com/index.php/s/xrwfNdC9PnfoMEL){ .md-button }
+- [dasharo_clevo_nv41mz_0.2.0.SHA256.sig](https://cloud.3mdeb.com/index.php/s/yWitrxMRrCHYPE4){ .md-button }
+
 ### SBOM (Software Bill of Materials):
 
 - [coreboot based on 4.14 revision ff1c6572](https://gitlab.com/novacustom/coreboot/-/tree/ff1c6572)
