@@ -5,22 +5,29 @@ using fwupd.
 
 ## Installing fwupd
 
+### Using binary packages
+
+Only `.deb` packages are provided. The procudure was verified on `Ubuntu 20.04
+LTS`, but is should also apply to other Debian-based dsitributions. If you are
+using different distribution, you might need to
+[build from source](#building-form-source).
+
 1. Download fwupd archive:
 ```bash
 $ wget --content-disposition \
      https://cloud.3mdeb.com/index.php/s/peqT6xsrCn5pzRk/download \
-     https://cloud.3mdeb.com/index.php/s/rqYA6gq4YbCESnq/download \
-     https://cloud.3mdeb.com/index.php/s/ZAg7zyz9eAPnaSy/download
+     https://cloud.3mdeb.com/index.php/s/TPKDpzedRi7sEJJ \
+     https://cloud.3mdeb.com/index.php/s/C58L5c5RmbjKWWz \
 ```
 
-2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v0.1.0.zip`):
+2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.0.zip`):
 ```bash
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/oss_master_key/open-source-software/3mdeb-open-source-software-master-key.asc
-$ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-software-release-0.x-key.asc
+$ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc
 
-$ sha256sum -c fwupd-novacustom-v0.1.0.zip.sha256
-$ gpg -v --verify fwupd-novacustom-v0.1.0.zip.sha256.sig fwupd-novacustom-v0.1.0.zip.sha256
+$ sha256sum -c fwupd-novacustom-v1.0.0.zip.sha256
+$ gpg -v --verify fwupd-novacustom-v1.0.0.zip.sha256.sig fwupd-novacustom-v1.0.0.zip.sha256
 ```
 
 3. flashrom packages are located inside `flashrom-1.2-2-3mdeb.zip`:
