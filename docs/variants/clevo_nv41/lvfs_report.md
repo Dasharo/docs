@@ -8,6 +8,7 @@ fwupd/LVFS firmware update method, including potential risks and roadblocks.
 ### Device specification
 
 NovaCustom NV4x system firmware
+
 - Intel i7-1165G7 (Tiger Lake ULV platform)
 - Samsung 980PRO NVMe SSD
 - 2x SO-DIMM DDR4 system memory
