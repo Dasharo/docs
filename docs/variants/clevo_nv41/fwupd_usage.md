@@ -91,7 +91,7 @@ $ sudo ninja -C build install
 
 1. Obtain source code:
 ```bash
-$ git clone https://github.com/3mdeb/fwupd -b novacustom_nv41
+$ git clone https://github.com/Dasharo/fwupd.git -b v1.7.3.1
 $ cd fwupd
 ```
 
