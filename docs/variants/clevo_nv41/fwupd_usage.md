@@ -75,9 +75,8 @@ $ sudo apt install -y build-essential pciutils libpci-dev libusb-1.0-0-dev \
 
 2. Obtain source code:
 ```bash
-$ git clone https://github.com/flashrom/flashrom.git
+$ git clone https://github.com/Dasharo/flashrom.git -b v1.2.0.1
 $ cd flashrom
-$ git checkout b5dc7418e22c15b83e412419099a6d311c5f9f66
 ```
 
 3. Build and install flashrom:
