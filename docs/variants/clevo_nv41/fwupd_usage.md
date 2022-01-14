@@ -86,29 +86,15 @@ $ sudo ninja -C build install
 
 #### fwupd
 
-1. Install build dependencies:
-```bash
-$ sudo apt install -y abigail-tools bash-completion bubblewrap ca-certificates \
-  clang clang-tools libcairo-dev libcairo-gobject2 libjson-glib-dev libftdi1-dev\
-  libpci-dev fonts-noto devscripts debhelper dbus-x11 dh-strip-nondeterminism \
-  libelf-dev fakeroot libfreetype6-dev fontconfig libflashrom-dev gcab gettext \
-  gnu-efi gnu-efi git libglib2.0-doc libglib2.0-dev gobject-introspection \
-  gnome-desktop-testing gnutls-dev gnutls-bin gtk-doc-tools libxmlb-dev \
-  libjcat-dev libarchive-dev libefivar-dev libefiboot-dev libgcab-dev \
-  libgirepository1.0-dev libgudev-1.0-dev libgusb-dev libsmbios-dev \
-  libsoup2.4-dev libcurl4-gnutls-dev libtool-bin libumockdev-dev lintian \
-  locales meson mingw-w64-tools gir1.2-pango-1.0 pkg-config policykit-1 \
-  libmm-glib-dev libqmi-glib-dev libmbim-glib-dev libpolkit-gobject-1-dev \
-  python3-gi-cairo python3-pygments python3-typogrify python3-toml \
-   python3-jinja2 python3-requests libsqlite3-dev systemd \
-  libsystemd-dev shared-mime-info texlive-fonts-recommended udev umockdev \
-  valac valgrind libtss2-dev shellcheck
-```
-
-2. Obtain source code:
+1. Obtain source code:
 ```bash
 $ git clone https://github.com/3mdeb/fwupd -b novacustom_nv41
 $ cd fwupd
+```
+
+2. Install build dependencies:
+```bash
+$ ./contrib/setup
 ```
 
 3. Build and install fwupd:
