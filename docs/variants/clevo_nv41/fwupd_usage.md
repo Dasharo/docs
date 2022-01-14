@@ -10,7 +10,7 @@ using fwupd.
 Only `.deb` packages are provided. The procudure was verified on `Ubuntu 20.04
 LTS`, but is should also apply to other Debian-based dsitributions. If you are
 using different distribution, you might need to
-[build from source](#building-form-source).
+[build from source](#building-from-source).
 
 1. Download fwupd archive:
 ```bash
