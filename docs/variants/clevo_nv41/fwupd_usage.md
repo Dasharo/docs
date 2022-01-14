@@ -60,32 +60,61 @@ $ sudo apt install ./libgusb-dev_0.3.5-1_amd64.deb
 > You might need to adjust the package manager commands and package names to
 > your distribution.
 
-#### Preperation
+#### Flashrom
 
-1. Obtain source code of `flashrom` and `fwupd`:
-
+1. Install build dependencies:
 ```bash
-$ git clone https://github.com/dasharo/flashrom -b TBD
-$ git clone https://github.com/dasharo/fwupd -b TBD
-```
-
-2. Install build dependencies for flashrom:
-
-```bash
+$ sudo apt update
 $ sudo apt install -y build-essential pciutils libpci-dev libusb-1.0-0-dev \
     cmake meson pkg-config libftdi1-dev debhelper git wget python3-markdown \
     gcab
 ```
 
-3. Install fwupd dependencies
-
+2. Obtain source code:
 ```bash
-$ cd fwupd
-$ ./contrib/setup
+$ git clone https://github.com/flashrom/flashrom.git
+$ cd flashrom
+$ git checkout b5dc7418e22c15b83e412419099a6d311c5f9f66
 ```
 
-#### Building
+3. Build and install flashrom:
+```bash
+$ meson build
+$ ninja -C build
+$ sudo ninja -C build install
+```
 
-TBD
+#### fwupd
 
-#### Installing
+1. Install build dependencies:
+```bash
+$ sudo apt install -y abigail-tools bash-completion bubblewrap ca-certificates \
+  clang clang-tools libcairo-dev libcairo-gobject2 libjson-glib-dev libftdi1-dev\
+  libpci-dev fonts-noto devscripts debhelper dbus-x11 dh-strip-nondeterminism \
+  libelf-dev fakeroot libfreetype6-dev fontconfig libflashrom-dev gcab gettext \
+  gnu-efi gnu-efi git libglib2.0-doc libglib2.0-dev gobject-introspection \
+  gnome-desktop-testing gnutls-dev gnutls-bin gtk-doc-tools libxmlb-dev \
+  libjcat-dev libarchive-dev libefivar-dev libefiboot-dev libgcab-dev \
+  libgirepository1.0-dev libgudev-1.0-dev libgusb-dev libsmbios-dev \
+  libsoup2.4-dev libcurl4-gnutls-dev libtool-bin libumockdev-dev lintian \
+  locales meson mingw-w64-tools gir1.2-pango-1.0 pkg-config policykit-1 \
+  libmm-glib-dev libqmi-glib-dev libmbim-glib-dev libpolkit-gobject-1-dev \
+  python3-gi-cairo python3-pygments python3-typogrify python3-toml \
+   python3-jinja2 python3-requests libsqlite3-dev systemd \
+  libsystemd-dev shared-mime-info texlive-fonts-recommended udev umockdev \
+  valac valgrind libtss2-dev shellcheck
+```
+
+2. Obtain source code:
+```bash
+$ git clone https://github.com/3mdeb/fwupd -b novacustom_nv41
+$ cd fwupd
+```
+
+3. Build and install fwupd:
+```bash
+$ sudo depmod
+$ meson build -Ddocs=none -Dplugin_flashrom=true
+$ ninja -C build
+$ sudo ninja -C build install
+```
