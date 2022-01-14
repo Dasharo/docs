@@ -16,8 +16,8 @@ using different distribution, you might need to
 ```bash
 $ wget --content-disposition \
      https://cloud.3mdeb.com/index.php/s/peqT6xsrCn5pzRk/download \
-     https://cloud.3mdeb.com/index.php/s/TPKDpzedRi7sEJJ \
-     https://cloud.3mdeb.com/index.php/s/C58L5c5RmbjKWWz \
+     https://cloud.3mdeb.com/index.php/s/TPKDpzedRi7sEJJ/download \
+     https://cloud.3mdeb.com/index.php/s/C58L5c5RmbjKWWz/download
 ```
 
 2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.0.zip`):
