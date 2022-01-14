@@ -57,6 +57,9 @@ $ sudo apt install ./libgusb-dev_0.3.5-1_amd64.deb
 
 ### Building from source
 
+> There is no need to do any of these steps unless you can't use the packages
+> provided in [the previous step](#using-binary-packages)
+
 > You might need to adjust the package manager commands and package names to
 > your distribution.
 
