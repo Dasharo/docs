@@ -8,6 +8,40 @@ For details about our release process please read
 
 [Subscribe to Clevo NV41MZ Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/T61MyO2sP){ .md-button .md-button--primary .center }
 
+## v1.0.0 - 2022-01-19
+
+### Added
+
+- Documentation for touchpad hotkey enablement on Linux
+
+### Removed
+
+- Removed proprietary blobs from built coreboot images
+
+### Fixed
+
+- The touchpad ON/OFF switch Fn key is not functional
+- Charging indicator displays wrong state if power adapter was unplugged while in sleep mode
+- Bluetooth does not work under Windows
+
+### Known issues
+
+- [Unable to download the system by using iPXE](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/8)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
+- [Windows 10 SD card reader driver needs manual installation on NV41MB](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/16)
+
+### Binaries
+
+[clevo_nv41mz_v1.0.0.rom](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256.sig){ .md-button }
+
+### SBOM (Software Bill of Materials):
+
+- [coreboot based on ae9a8447 revision e995fc1c](https://github.com/Dasharo/coreboot/commit/e995fc1c)
+- [edk2 based on 2020.03.17 revision 59ae285f](https://github.com/Dasharo/edk2/tree/59ae285f)
+- [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
+
 ## v0.5.0 - 2021-11-19
 
 ### Added
