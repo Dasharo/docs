@@ -17,6 +17,31 @@ Requirements:
 Ensure that the EC is running updated firmware. Follow the steps outlined in
 [EC firmware update](../ec_update)
 
+## Build flashrom
+
+Currently, the latest flashrom release lacks support for Tiger Lake-U flash
+descriptor processing. Because of this, we need to build flashrom from source.
+
+Install build dependencies:
+
+```bash
+# apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+```
+
+Obtain source code:
+
+```bash
+$ git clone https://review.coreboot.org/flashrom.git
+$ cd flashrom
+```
+
+Build flashrom:
+
+```bash
+$ make
+$ sudo make install
+```
+
 ## Setup
 
 Connect the Pomona clip to the programmmer. The red wire should be connected
@@ -84,8 +109,9 @@ securely.
 Once you have the backups saved, proceed to flashing the chip - replace
 `[path]` with the path to the binary you want to write - e.g. `build/coreboot.rom`
 
+
 ```bash
-# flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -w [path]
+# flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -w [path] --ifd -i bios
 ```
 
 flashrom will read the flash, erase it, write the new image and verify that
