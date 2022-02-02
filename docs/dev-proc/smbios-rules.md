@@ -13,6 +13,12 @@ for Dasharo developers.
 The vendor field is always set as follows:
 
 ```
+3mdeb
+```
+
+*for firmware first released before January 13 2022:*
+
+```
 3mdeb Embedded Systems Consulting
 ```
 
@@ -31,18 +37,17 @@ Dasharo ([major_framework]+[minor_framework]) v[version]
   primary framework, e.g. a coreboot payload. May not always be used, e.g. if
   `edk2` is used as the primary framework.
 
-*For TianoCore UEFIPayload, we use the simpler and more recognizable UEFI name.*
+- `version` means version according to official [Dasharo Versioning](../versioning) documentation.
+
+*For [TianoCore UEFIPayloadPkg](https://github.com/Dasharo/edk2/tree/workstation/master/UefiPayloadPkg),
+we use the simpler and more recognizable UEFI name.*
 
 Examples:
 
-```bash
-Dasharo (coreboot+UEFI) v1.0.0    - for coreboot-based builds with TianoCore UEFIPayload
-Dasharo (coreboot+SeaBIOS) v1.0.0 - for coreboot-based builds with SeaBIOS payload
-Dasharo (coreboot+Heads) v1.0.0   - for coreboot-based builds with Heads payload
-Dasharo (edk2) v1.0.0             - for plain edk2-based builds
-```
-
-For the version number fields, refer to [Versioning](../versioning).
+- `Dasharo (coreboot+UEFI) v1.0.0` - for coreboot-based builds with TianoCore UEFIPayload
+- `Dasharo (coreboot+SeaBIOS) v1.0.0` - for coreboot-based builds with SeaBIOS payload
+- `Dasharo (coreboot+Heads) v1.0.0` - for coreboot-based builds with Heads payload
+- `Dasharo (edk2) v1.0.0` - for plain edk2-based builds
 
 ## System Information (Type 1)
 
@@ -53,7 +58,7 @@ vendor) to the same values as the stock firmware.
 
 To obtain SMBIOS values from the stock firmware, either:
 
-- Obtain the logs from the machin from the cloud
+- Obtain the `fwdump-docker` logs from 3mdeb cloud
 - Run `dmidecode -t 1` on the machine itself
 
 ### Devices with no existing BIOS implementation
