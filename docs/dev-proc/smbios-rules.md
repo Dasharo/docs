@@ -1,4 +1,4 @@
-# DMI/SMBIOS filling convention
+# Dasharo Product Guidelines: SMBIOS BIOS Information (Type 0)
 
 2 types of devices may be supported by Dasharo:
 
