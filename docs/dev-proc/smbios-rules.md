@@ -24,7 +24,7 @@ The vendor field is always set as follows:
 
 ### Version field
 
-The BIOS version string is defined as follows:
+The BIOS Version string is defined as follows:
 
 ```bash
 Dasharo ([major_framework]+[minor_framework]) v[version]
