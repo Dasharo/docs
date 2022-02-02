@@ -67,7 +67,7 @@ nav:
         - 'Nix': dev-env/nix-dev-env.md
     - 'Development Process':
         - 'Source code structure': dev-proc/source-code-structure.md
-        - 'SMBIOS filling convention': dev-proc/smbios-rules.md
+        - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
         - 'Versioning': dev-proc/versioning.md
         - 'Features and bug fixes development process': dev-proc/feature-bug-fix-dev-process.md
         - 'Standard Release Process': dev-proc/standard-release-process.md
