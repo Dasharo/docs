@@ -61,4 +61,4 @@ To obtain SMBIOS values from the stock firmware, either:
 In the case where the device does not have an existing supported BIOS or the
 client chooses to use different SMBIOS fields (e.g. to make it easier to
 differentiate devices), refer to the
-[SMBIOS specification](https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.5.0.pdf).
+[SMBIOS specification v3.5.0](https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.5.0.pdf).
