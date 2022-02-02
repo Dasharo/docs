@@ -32,11 +32,9 @@ Dasharo ([major_framework]+[minor_framework]) v[version]
 
 - `major_framework` refers to the primary framework in which the firmware is
   developed, e.g. `coreboot` or `edk2`.
-
 - `minor_framework` is the secondary framework, a supporting component for the
   primary framework, e.g. a coreboot payload. May not always be used, e.g. if
   `edk2` is used as the primary framework.
-
 - `version` means version according to official [Dasharo Versioning](../versioning) documentation.
 
 *For [TianoCore UEFIPayloadPkg](https://github.com/Dasharo/edk2/tree/workstation/master/UefiPayloadPkg),
