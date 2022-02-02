@@ -10,19 +10,19 @@ for Dasharo developers.
 
 ### Vendor field
 
-The vendor field is always set as follows:
+The Vendor field, for firmware with initial release date after 13 January 2021, is set as follows:
 
 ```
 3mdeb
 ```
 
-*for firmware first released before January 13 2022:*
+For firmware with initial release date before 13 January 2021:
 
 ```
 3mdeb Embedded Systems Consulting
 ```
 
-### Version field
+### BIOS Version field
 
 The BIOS Version string is defined as follows:
 
