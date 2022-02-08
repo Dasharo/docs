@@ -14,49 +14,49 @@ To prepare the environment reproduce the following steps:
     git clone git://git.tizen.org/tools/testlab/sd-mux
     ```
 2. Check whether the installation requirements for sd-mux are met:
-    * libftdi1 1.4 development library is installed. To do this, open the 
+    * libftdi1 1.4 development library is installed. To do this, open the
        terminal and type the following command:
         ```
         dpkg -L libftdi1-dev
         ```
-        If the library is installed, after typing the above command you will see 
-        information about the paths to the library components. 
+        If the library is installed, after typing the above command you will see
+        information about the paths to the library components.
     * popt development library is installed. To do this, open the terminal and
        type the following command:
         ```
         dpkg -L libpopt-dev
         ```
-        If the library is installed, after typing the above command you will see 
-        information about the paths to the library components. 
-    * cmake binary tool is installed. To do this, open the terminal and type 
+        If the library is installed, after typing the above command you will see
+        information about the paths to the library components.
+    * cmake binary tool is installed. To do this, open the terminal and type
        the following command:
         ```
         cmake --version
         ```
-        If the tool is installed, after typing the above command you will see 
-        information about the installed on your computer cmake version. 
-    
+        If the tool is installed, after typing the above command you will see
+        information about the installed on your computer cmake version.
+
     If any above-mentioned requirements are not met - go to point 3. If they are
-    met - go to point 4. 
+    met - go to point 4.
 
 3. Install missing libraries and/or tools:
-    * libftdi1 1.4 development library. To do this, open the terminal and type 
-       the following command: 
+    * libftdi1 1.4 development library. To do this, open the terminal and type
+       the following command:
         ```
         sudo apt-get install libftdi1-dev
         ```
     * popt development library. To do this, open the terminal and type the
-       following command: 
+       following command:
         ```
         sudo apt-get install libpopt-dev
         ```
-    * cmake binary tool. To do this, open the terminal and type the following 
-        command:  
+    * cmake binary tool. To do this, open the terminal and type the following
+        command:
         ```
         sudo apt-get install cmake
         ```
 
-4. Enter into sd-mux project directory and reproduce the following steps to 
+4. Enter into sd-mux project directory and reproduce the following steps to
     build project:
     * open directory in terminal
     * create 'build' directory by the following command:
@@ -73,16 +73,16 @@ To prepare the environment reproduce the following steps:
         make
         ```
 
-5. In the above-described directory (`sd-mux/build`) run the following command to 
+5. In the above-described directory (`sd-mux/build`) run the following command to
     build binary:
     ```
     sudo make install
     ```
     Note, that the above-described command installs binary into '/usr/local/bin'.
-    If you want to install files in directory rather than the default one add an 
-    argument to cmake command: 
+    If you want to install files in directory rather than the default one add an
+    argument to cmake command:
     ```
-    cmake -DCMAKE_INSTALL_PREFIX=/usr .. 
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     ```
     Then it is obligatory to run again the following commands:
     ```
@@ -112,7 +112,7 @@ reproduce the following steps:
    [section](#environment-preparation).
 2. Insert SD card to the SDWire.
 3. Put SDWire into the DUT (Device Under Test).
-4. Prepare a micro USB --> USB cable. It will be used to connect SDWire to TS 
+4. Prepare a micro USB --> USB cable. It will be used to connect SDWire to TS
     (Test Server).
 5. Check whether SDWire is configured by reproducing the following steps:
     * run in TS terminal the following command:
@@ -161,7 +161,7 @@ reproduce the following steps:
 
         --set-serial=<New serial device>
         ```
-        After above-desribed procedure check again if SDWire is properly 
+        After above-desribed procedure check again if SDWire is properly
         configured:
         ```
         sudo  sd-mux-ctrl --list
