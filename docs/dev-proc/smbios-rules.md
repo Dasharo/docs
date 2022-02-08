@@ -31,7 +31,7 @@ Dasharo ([major_framework]+[minor_framework]) v[version]
 ```
 
 - `major_framework` refers to the primary framework in which the firmware is
-  developed, e.g. `coreboot` or `edk2`.
+  developed, e.g. `coreboot` or `UEFI`.
 - `minor_framework` is the secondary framework, a supporting component for the
   primary framework, e.g. a coreboot payload. May not always be used, e.g. if
   `edk2` is used as the primary framework.
@@ -45,7 +45,7 @@ Examples:
 - `Dasharo (coreboot+UEFI) v1.0.0` - for coreboot-based builds with TianoCore UEFIPayload
 - `Dasharo (coreboot+SeaBIOS) v1.0.0` - for coreboot-based builds with SeaBIOS payload
 - `Dasharo (coreboot+Heads) v1.0.0` - for coreboot-based builds with Heads payload
-- `Dasharo (edk2) v1.0.0` - for plain edk2-based builds
+- `Dasharo (UEFI) v1.0.0` - for plain edk2-based builds
 
 ## System Information (Type 1)
 
