@@ -237,7 +237,7 @@ Using SDWire there is no need to disconnect SD card from DUT.
 7. Flash the SD card using `bmaptool` or `balenaEtcher` as described in the [First use](#first-use) section
 8. Connect SD card to the DUT (using sd-mux-ctrl)
     ```
-    sudo sd-mux-ctrl --device-serial=sd-wire_11 --ts
+    sudo sd-mux-ctrl --device-serial=sd-wire_11 --dut
     ```
 9. Connect power supply using RTE.
 10. DUT should boot from freshly burned SD card.
