@@ -12,12 +12,13 @@ LTS`, but is should also apply to other Debian-based dsitributions. If you are
 using different distribution, you might need to
 [build from source](#building-from-source).
 
-1. Download fwupd archive:
+1. Download and extract the fwupd archive:
 ```bash
 $ wget --content-disposition \
      https://cloud.3mdeb.com/index.php/s/peqT6xsrCn5pzRk/download \
      https://cloud.3mdeb.com/index.php/s/TPKDpzedRi7sEJJ/download \
      https://cloud.3mdeb.com/index.php/s/C58L5c5RmbjKWWz/download
+$ unzip fwupd-novacustom-v1.0.0.zip
 ```
 
 2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.0.zip`):
@@ -41,18 +42,18 @@ $ sudo apt install ./libflashrom-dev_1.2-2_amd64.deb
 4. fwupd packages are located inside `fwupd-1.7.3-3mdeb.zip`:
 ```bash
 $ unzip fwupd-1.7.3-3mdeb.zip
-$ sudo apt install ./fwupd_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./fwupd-doc_1.7.3+r68+gf3a5e4d1_all.deb
-$ sudo apt install ./fwupd-tests_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./gir1.2-fwupd-2.0_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./gir1.2-fwupdplugin-1.0_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./gir1.2-gusb-1.0_0.3.5-1_amd64.deb
-$ sudo apt install ./libfwupd2_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./libfwupd-dev_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./libfwupdplugin4_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./libfwupdplugin-dev_1.7.3+r68+gf3a5e4d1_amd64.deb
-$ sudo apt install ./libgusb2_0.3.5-1_amd64.deb
-$ sudo apt install ./libgusb-dev_0.3.5-1_amd64.deb
+$ sudo apt install ./fwupd_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./fwupd-doc_1.7.3+r68+gf3a5e4d1_all.deb \
+                   ./fwupd-tests_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./gir1.2-fwupd-2.0_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./gir1.2-fwupdplugin-1.0_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./gir1.2-gusb-1.0_0.3.5-1_amd64.deb \
+                   ./libfwupd2_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./libfwupd-dev_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./libfwupdplugin4_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./libfwupdplugin-dev_1.7.3+r68+gf3a5e4d1_amd64.deb \
+                   ./libgusb2_0.3.5-1_amd64.deb \
+                   ./libgusb-dev_0.3.5-1_amd64.deb
 ```
 
 ### Building from source
