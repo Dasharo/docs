@@ -30,8 +30,8 @@ $ git clone https://github.com/Dasharo/coreboot.git
 Navigate to the source code directory and checkout to the desired revision:
 
 > Replace the REVISION with one of the:
-> - `clevo_nv41/release` for the latest released version
-> - `clevo_nv41/vVERSION` (e.g. `v0.1.1`) for the given release
+> - `clevo_nv41mz/release` for the latest released version
+> - `clevo_nv41mz/vVERSION` (e.g. `v0.1.1`) for the given release
 
 ```bash
 $ cd coreboot
