@@ -27,7 +27,7 @@ several times to specify the platform stability.
 1. Boot into OS.
 1. Run command `date` and write down output of the command.
 1. Run command `systemctl suspend -i`.
-1. Control status of the platform.
+1. Check the status of the platform.
 1. Press the power button once and note the result.
 1. Run the following command: `journalctl | grep suspend`.
 
