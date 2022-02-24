@@ -41,6 +41,7 @@ GPIO is used to control state of #WP of the flash chip by connecting GPIO to
 IO2_WP_PROG.
 
 The proposed connections used:
+
  * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO400 to control MUX_SEL
  * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO401 to control IO3_HOLD_PROG
  * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO402 to control IO2_WP_PROG
