@@ -1,4 +1,4 @@
-# coreboot building
+# Dasharo for Tuxedo IBS15 Gen6 - Building manual
 
 ## Intro
 
