@@ -39,23 +39,14 @@ $ git checkout REVISION
 $ git submodule update --init --recursive --checkout
 ```
 
-Enter the Docker container:
-
-```bash
-$ docker run -u $UID --rm -it -v $PWD:/home/coreboot/coreboot -w /home/coreboot/coreboot \
-    coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
-```
-
-*Warning: Do not run `docker` as root. This command should be executed as your
-current user. If you're having trouble running `docker` on your user account,
-follow the steps outlined in [Requirements](#requirements).*
-
-You should be inside the Docker container. Now run following script to build
-the image:
-
 ```bash
 $ ./build.sh build
 ```
 
 The resulting coreboot image will be placed in
 `artifacts/dasharo_tuxedo_ibs15_VERSION.rom`.
+
+*Warning: Do not run `./build.sh` as root. This command uses docker and should
+be executed as your current user. If you're having trouble running `build.sh`
+on your user account, follow the `Docker` instructions outlined in
+[Requirements](#requirements).*
