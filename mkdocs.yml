@@ -56,6 +56,7 @@ nav:
             - 'Logo customization': variants/clevo_nv41/custom_logo.md
             - 'Openness score': variants/clevo_nv41/openness_analysis.md
             - 'LVFS report': variants/clevo_nv41/lvfs_report.md
+<<<<<<< HEAD
   # - 'Development Environment':
   #     - 'Nix': dev-env/nix-dev-env.md
     - 'Development Process':
@@ -80,6 +81,30 @@ nav:
   #     - 'Community Edition': inquiries/community-edition.md
   #     - 'Sponsorware': inquiries/sponsorware.md
   #     - 'Commercial inquiries': inquiries/commercial-inquiries.md
+=======
+        - 'Tuxedo IBS15':
+            - 'Releases': variants/tuxedo_ibs15/releases.md
+            - 'Building': variants/tuxedo_ibs15/building.md
+            - 'Flashing with internal programmer': variants/tuxedo_ibs15/flashing_internal.md
+            - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
+            - 'Logo customization': variants/tuxedo_ibs15/custom_logo.md
+    - 'Dasharo SKUs':
+        - 'Overview': variants/skus-overview.md
+        - 'Firewall': variants/firewall.md
+        - 'Secure Firewall': variants/secure-firewall.md
+        - 'Workstation':
+            - 'SKU description': variants/workstation.md
+        - 'Server': variants/server.md
+        - 'Trustworthy Server': variants/trustworthy-server.md
+        - 'Trustworthy Computing': variants/trustworthy-computing.md
+        - 'Safety-Critical': variants/safety-critical.md
+        - 'Custom': variants/custom.md
+    - 'How to work with us?':
+        - 'Overview': inquiries/overview.md
+        - 'Community Edition': inquiries/community-edition.md
+        - 'Sponsorware': inquiries/sponsorware.md
+        - 'Commercial inquiries': inquiries/commercial-inquiries.md
+>>>>>>> Add Tuxedo IBS15 documentation
     - 'Knowledge base':
         - 'Common coreboot documentation':
             - 'Vboot signing': common-coreboot-docs/vboot_signing.md
