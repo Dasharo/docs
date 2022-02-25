@@ -28,7 +28,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-### VBO001.002 Verified boot: Booting from Slot A
+### VBO002.001 Verified boot: Booting from Slot A
 
 **Test description**
 
@@ -53,7 +53,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-### VBO001.003 Verified boot: Booting from Recovery (Debian)
+### VBO003.001 Verified boot: Booting from Recovery (Debian)
 
 **Test description**
 
