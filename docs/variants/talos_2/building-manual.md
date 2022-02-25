@@ -7,7 +7,7 @@ To build coreboot image, follow the steps below:
 1. Clone the coreboot repository:
 
     ```bash
-    $ git clone git@github.com:dasharo/coreboot.git -b raptor-cs_talos-2/release
+    $ git clone https://github.com/Dasharo/coreboot.git -b raptor-cs_talos-2/release
     ```
 
 1. Get the submodules:
@@ -39,7 +39,7 @@ To build coreboot image, follow the steps below:
 1. Clone the heads repository:
 
     ```bash
-    $ git clone git@github.com:dasharo/heads.git -b raptor-cs_talos-2/release
+    $ git clone https://github.com/Dasharo/heads.git -b raptor-cs_talos-2/release
     ```
 
 1. Start docker container:
