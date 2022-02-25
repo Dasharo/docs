@@ -85,7 +85,7 @@ nav:
         - 'Tuxedo IBS15':
             - 'Releases': variants/tuxedo_ibs15/releases.md
             - 'Building': variants/tuxedo_ibs15/building.md
-            - 'Flashing with internal programmer': variants/tuxedo_ibs15/flashing_internal.md
+            - 'Installation': variants/tuxedo_ibs15/installation.md
             - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
             - 'Logo customization': variants/tuxedo_ibs15/custom_logo.md
     - 'Dasharo SKUs':

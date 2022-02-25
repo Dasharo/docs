@@ -1,4 +1,4 @@
-# coreboot internal flashing (Ubuntu 20.04)
+# Dasharo for Tuxedo IBS15 Gen6 - Installation manual
 
 ## Intro
 
