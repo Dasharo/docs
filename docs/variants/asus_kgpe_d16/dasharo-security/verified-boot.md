@@ -12,7 +12,7 @@ functional.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -37,7 +37,7 @@ proceed to boot from Slot A.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -67,7 +67,7 @@ should revert to booting from the recovery slot.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
 2. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/kgpe-d16/releases/Dasharo/v0.3.0/testing&fileid=419752)
 signed with wrong vboot keys
 
