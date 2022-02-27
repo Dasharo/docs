@@ -67,8 +67,9 @@ should revert to booting from the recovery slot.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
-2. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/kgpe-d16/releases/Dasharo/v0.3.0/testing&fileid=419752)
+1. Proceed with the [Generic test setup:
+   firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
+2. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/s/DAn2sdk3osSxG8A)
 signed with wrong vboot keys
 
 **Test steps**
