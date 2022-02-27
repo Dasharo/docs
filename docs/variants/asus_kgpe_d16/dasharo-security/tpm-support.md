@@ -17,7 +17,7 @@ be accessed from the operating system.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
 
 **Test steps**
 
