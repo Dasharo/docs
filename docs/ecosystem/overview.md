@@ -21,7 +21,7 @@ organization. This section overview role of every component.
   methods. We also cover how production interacts with Dasharo Transparent
   Validation System.
 * Customer Infrastructure - Some customers may have need of replicating part of
-  Dasharo Production process and infrastructure in their own environment, what
+  Dasharo Production process and infrastructure in their own environment, which
   leads to repositories synchronization, different CI/CD setup and other needs.
   This section describe interaction with Customer Infrastructure and what part
   of Dasharo Production is deployable on customer site.
