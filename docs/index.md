@@ -6,7 +6,7 @@ Dasharo is open source firmware distribution focusing on clean and simple code,
 long-term maintenance, transparent validation, privacy-respecting
 implementation, liberty for the owners, and trustworthiness for all.
 
-Dasharo consist of productized services, open-core, and SaaS products which
+Dasharo consists of productized services, open-core, and SaaS products which
 help to provide scalable, modular, easy to combine open-source BIOS, UEFI, and
 firmware solutions. It offers the components that are needed to develop and
 maintain a high quality, and modular firmware, for the stability and security
