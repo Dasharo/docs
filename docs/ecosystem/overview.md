@@ -12,7 +12,7 @@ organization. This section overview role of every component.
   to projects related to embedded firmware. Dasharo project contributors are
   part of OSF community.
 * Development - Dasharo Development describes processes which Embedded Firmware
-  Team use for development of Dasharo Modules, which are sometimes custom
+  Team uses for development of Dasharo Modules, which are sometimes custom
   services, but most of the time ready to use productised services, Open Core
   or SaaS.
 * Production - Dasharo Production describe process of putting together Dasharo
