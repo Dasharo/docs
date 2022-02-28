@@ -11,7 +11,7 @@ organization. This section overview role of every component.
 * Open Source Firmware Community - semi-organised collections of contributors
   to projects related to embedded firmware. Dasharo project contributors are
   part of OSF community.
-* Development - Dasharo Development describe processes which Embedded Firmware
+* Development - Dasharo Development describes processes which Embedded Firmware
   Team use for development of Dasharo Modules, which are sometimes custom
   services, but most of the time ready to use productised services, Open Core
   or SaaS.
