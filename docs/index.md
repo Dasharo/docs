@@ -2,7 +2,7 @@
 
 ## About
 
-Dasharo is open source firmware distribution focusing on clean and simple code,
+Dasharo is open-source firmware distribution focusing on clean and simple code,
 long-term maintenance, transparent validation, privacy-respecting
 implementation, liberty for the owners, and trustworthiness for all.
 
