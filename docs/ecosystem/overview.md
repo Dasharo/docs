@@ -28,7 +28,7 @@ organization. This section overview role of every component.
 * Transparent Validation - Dasharo Transparent Validation (DTV) is a set of
   software, firmware and hardware components with the goal of simplifying and
   improving long term maintenance of Dasharo firmware. In this section we
-  introduce components, which belong to DTV.
+  introduce components which belong to DTV.
 * Testing Infrastructure - Part of Dasharo Transparent Validation responsible
   for scheduling automated testing, publishing test results and interacting
   with Dasharo Production in area of release candidate quality confirmation.
