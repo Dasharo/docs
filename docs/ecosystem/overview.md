@@ -18,7 +18,7 @@ organization. This section overview role of every component.
 * Production - Dasharo Production describes the process of putting together Dasharo
   Modules according to specific requirements. In this section we describe
   development infrastructure, build environment, CI/CD and build publishing
-  methods. We also cover how production interact with Dasharo Transparent
+  methods. We also cover how production interacts with Dasharo Transparent
   Validation System.
 * Customer Infrastructure - Some customers may have need of replicating part of
   Dasharo Production process and infrastructure in their own environment, what
