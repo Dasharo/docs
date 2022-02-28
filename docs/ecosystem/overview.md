@@ -15,7 +15,7 @@ organization. This section overview role of every component.
   Team uses for development of Dasharo Modules, which are sometimes custom
   services, but most of the time ready to use productised services, Open Core
   or SaaS.
-* Production - Dasharo Production describe process of putting together Dasharo
+* Production - Dasharo Production describes the process of putting together Dasharo
   Modules according to specific requirements. In this section we describe
   development infrastructure, build environment, CI/CD and build publishing
   methods. We also cover how production interact with Dasharo Transparent
