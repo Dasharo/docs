@@ -8,6 +8,46 @@ For details about our release process please read
 
 [Subscribe to Clevo NV41MZ Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/T61MyO2sP){ .md-button .md-button--primary .center }
 
+## v1.0.1 - 2022-3-1
+
+### Added
+
+- Change DMI fields to match previous Insyde firmware
+- Hide unknown ACPI devices
+- Set correct Realtek HD Audio subsystem ID
+- Set correct ACPI path for the TPM
+- Set TPM IRQ in a manner understood by Windows
+
+### Removed
+
+- Removed proprietary blobs from built coreboot images
+
+### Fixed
+
+- Updating firmware using fwupd
+- MIC-in phone jack not working
+- This PC can't run Windows 11 error while installing Windows 11 from a USB pen drive
+
+### Known issues
+
+- [Custom fan curve is not functional after suspend](https://github.com/Dasharo/dasharo-issues/issues/45)
+- [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/19)
+- [USB4 Root Device Router device displays an error in Windows 11 Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/18)
+- [Windows 10 SD card reader driver needs manual installation on NV41MB](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/16)
+- [Low level interfering crackling/popping of the speakers while playing no sound](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/13)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
+
+### Binaries
+
+[clevo_nv41mz_v1.0.1.rom](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256.sig){ .md-button }
+### SBOM (Software Bill of Materials):
+
+- [coreboot based on ae9a8447 revision 3a3808f9](https://github.com/Dasharo/coreboot/tree/3a3808f9)
+- [edk2 based on 2020.03.17 revision e0334c22](https://github.com/Dasharo/edk2/tree/e0334c22)
+- [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
+
 ## v1.0.0 - 2022-01-19
 
 ### Added
