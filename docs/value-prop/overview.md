@@ -9,7 +9,7 @@ hardware.
 
 Finally, we agree with John Hennessy and David Patterson that we enter era of
 [New Golden Age](https://www.youtube.com/watch?v=3LVeEjsn8Ts) of domain
-specific computing with open architectures and open source implementations.
+specific computing with open architectures and open-source implementations.
 What eventually will lead to more [firmware everywhere](../osf-trivia-list/introduction.md#where-is-firmware). Addressing mentioned areas is just
 beginning for Dasharo we think following years would need way more firmware
 expertise then at any other point in time.

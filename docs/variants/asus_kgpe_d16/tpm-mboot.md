@@ -16,7 +16,7 @@ by default. The firmware comes with 2 variants for all 3 flash size targets:
 
 Both chips are supported by coreboot. For the time being the platforms will be
 tested with ASUS modules until OSHW [lpnTPM](https://nlnet.nl/project/lpnTPM/)
-with open source TPM firmware is ready.
+with open-source TPM firmware is ready.
 
 ## Measured boot behaviour
 

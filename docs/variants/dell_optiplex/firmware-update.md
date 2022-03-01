@@ -1,6 +1,6 @@
 # Firmware update
 
-Following documentation describe process of Dasharo open source firmware
+Following documentation describe process of Dasharo open-source firmware
 update.
 
 ## OS booting

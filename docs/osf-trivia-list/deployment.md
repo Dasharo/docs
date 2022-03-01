@@ -1,6 +1,6 @@
 # Deployment
 
-Deployment section of Dasharo Knowledge Base FAQ considers topic of open source
+Deployment section of Dasharo Knowledge Base FAQ considers topic of open-source
 firmware deployment, which may include operations of reading and writing SPI NOR
 flash, as well as binary modifications.
 

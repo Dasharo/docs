@@ -8,7 +8,7 @@ documentation._
 * [Releases](releases.md) - list all releases.
 * [Initial deployment](initial-deployment.md) - describe initial Dasharo
   deployment methods for Dell OptiPlex 7010/9010 SFF.
-* [Firmware update](firmware-update.md) - explain supported Dasharo open source
+* [Firmware update](firmware-update.md) - explain supported Dasharo open-source
   firmware update methods.
 * [Recovery](recovery.md) - gathers information how to recover from potential
   failure.

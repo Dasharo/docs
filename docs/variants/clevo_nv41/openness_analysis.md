@@ -21,7 +21,7 @@ structures are present.
 
 ### CBFS
 
-| image                  | size (bytes) | Is it open source? |
+| image                  | size (bytes) | Is it open-source? |
 | ---                    | ---:         | ---                |
 | cbfs master header     | 20h          | Yes                |
 | fallback/romstage      | 14770h       | Yes                |
