@@ -64,7 +64,10 @@ Software BOM:
   config and CI YAML)](https://github.com/Dasharo/coreboot/compare/dell_optiplex_9010_v0.0.0...dell_optiplex_9010_v0.0.0)
 - [SeaBIOS 1.13.0](https://review.coreboot.org/plugins/gitiles/seabios/+/refs/tags/rel-1.13.0)
 
+<!--
+
 #### Binary blobs
 
 TBD
 
+-->

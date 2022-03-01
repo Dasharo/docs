@@ -14,5 +14,3 @@ requirements, making the whole set more universal with endless applications!
 
 More information can be found in [meta-rte repository](https://github.com/3mdeb/meta-rte)
 
-## TBD: Releases
-
