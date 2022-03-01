@@ -21,7 +21,7 @@ markdown_extensions:
 nav:
     - 'Intro': index.md
     - 'Supported hardware':
-        - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
+    #   - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
         - 'Dell OptiPlex':
             - 'Overview': variants/dell_optiplex/overview.md
             - 'Releases': variants/dell_optiplex/releases.md
@@ -127,8 +127,8 @@ nav:
         - 'Overview': value-prop/overview.md
         - 'Security': value-prop/security.md
         - 'Compatibility': value-prop/compatibility.md
-        - 'Performance': value-prop/performance.md
+      # - 'Performance': value-prop/performance.md
         - 'Marketing': value-prop/marketing.md
-        - 'Certification Program':
-            - 'Overview': value-prop/certification-program/overview.md
+      # - 'Certification Program':
+      #     - 'Overview': value-prop/certification-program/overview.md
     - 'Glossary': glossary.md

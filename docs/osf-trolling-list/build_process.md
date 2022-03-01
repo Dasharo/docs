@@ -102,12 +102,10 @@ Some more detailed notes related to `coreboot-sdk` issues are presented below.
 
 ### Requirements for OSF dev and build process
 
-Open Source Firmware development and build environment SHOULD have:
-* meaningful release process, we describe our approach to OSF-related release
-  processes [here](#TBD)
+Open-source firmware development and build environment SHOULD have:
+* meaningful release process
 * meaningful validation process, at least basic build system and dev env
   capabilities should be tested
-
 * meaningful revisions with a clear explanation of what software stack can be build
   with what version of dev and build system, a description should include
   side-spec compliance, e.g., ACPI, SMBIOS, UEFI, etc.

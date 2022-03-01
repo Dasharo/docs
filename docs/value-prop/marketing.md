@@ -12,9 +12,13 @@ produced by Dasharo Ecosystem.
 Most hardware vendors do not leverage ability to differentiate through firmware
 features, which is way easier then designing new hardware.
 
+<!--
+
 ### Low quality release notes
 
 TODO: continue moving content from internal presenations
+
+-->
 
 ## Products
 

@@ -1,9 +1,13 @@
 # Overview
 
+<!--
+
 _**TBD**: this page should contain most important information about Dasharo OSF
 support for Dell OptiPlex 7010/9010 including presentations, demos, external
 resources, reviews etc. Currently it just points to subsecations of the
 documentation._
+
+-->
 
 * [Releases](releases.md) - list all releases.
 * [Initial deployment](initial-deployment.md) - describe initial Dasharo

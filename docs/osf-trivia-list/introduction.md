@@ -9,6 +9,8 @@ Other role of this list is to create taxonomy of OSF trivia questions for
 community and Dasharo customers, to avoid repeating explanation of topics which
 most of community already agree on.
 
+<!--
+
 ## `[OSFTQL0001]` Where is firmware?
 
 TODO: draw diagram based on famous training materials, that show where we have
@@ -18,3 +20,5 @@ firmware and where firmware will be in future
 
 TODO: Explain how wrong is this question and why often there is no answer to it
 on mailing list.
+
+-->
