@@ -1,7 +1,7 @@
 # Initial deployment
 
 Following documentation describe process of replacing original BIOS/UEFI
-firmware with Dasharo open source firmware. Following procedure is supported
+firmware with Dasharo open-source firmware. Following procedure is supported
 for following models
 
 <center>
@@ -102,7 +102,7 @@ section even can be replaced with Dasharo Reference OS, fwupd or other tools
 that can simplify the operation for the user -->
 
 It is always good idea to backup original BIOS of your hardware, before
-switching to open source firmware.
+switching to open-source firmware.
 
 * Read content of SPI NOR flash:
   ``` console
