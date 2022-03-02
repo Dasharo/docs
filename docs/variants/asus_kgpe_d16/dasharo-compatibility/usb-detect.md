@@ -7,7 +7,7 @@
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after
-coldboot (reboot realized by power supply cutting off then restoring back). This 
+coldboot (reboot realized by power supply cutting off then restoring back). This
 test case may be re-done several times to specify the platform and connection
 stability.
 
@@ -31,7 +31,7 @@ stability.
 
 **Expected result**
 
-The `USB_STICK` entry is visible which confirms successful detection after 
+The `USB_STICK` entry is visible which confirms successful detection after
 coldboot.
 
 ### USB001.002 USB detect and boot after warmboot
@@ -61,7 +61,7 @@ may be re-done several times to specify the platform and connection stability.
 
 **Expected result**
 
-The `USB_STICK` entry is visible which confirms successful detection after 
+The `USB_STICK` entry is visible which confirms successful detection after
 warmboot.
 
 ### USB001.003 USB detect and boot after system reboot
@@ -69,7 +69,7 @@ warmboot.
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after system
-reboot (reboot performed by relevant command). This test case may be re-done 
+reboot (reboot performed by relevant command). This test case may be re-done
 several times to specify the platform and connection stability.
 
 **Test configuration data**
@@ -92,7 +92,7 @@ several times to specify the platform and connection stability.
 6. Press `Ctrl+B` when prompted to stop iPXE from booting automatically.
 7. Wait until `iPXE>` prompt appears.
 8. Type in `dhcp` to obtain an IP address.
-9. Type in `chain` and local iPXE address after a single space to load a network 
+9. Type in `chain` and local iPXE address after a single space to load a network
 boot menu.
 10. Select `Debian stable netboot 4.14.y` option below `iPXE boot menu` header.
 11. Wait for `debian login:`.
@@ -107,5 +107,5 @@ boot menu.
 
 **Expected result**
 
-The `USB_STICK` entry is visible which confirms successful detection after 
+The `USB_STICK` entry is visible which confirms successful detection after
 system reboot.

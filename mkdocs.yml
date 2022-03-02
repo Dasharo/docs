@@ -121,7 +121,7 @@ nav:
       # - 'End User Device': ecosystem/end-user.md
         - 'Roadmap' : ecosystem/roadmap.md
     - 'Quality Principles': quality-principles/introduction.md
-      # - 'Introduction': 
+      # - 'Introduction':
       # - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
     - 'Value proposition':
         - 'Overview': value-prop/overview.md

@@ -27,7 +27,7 @@ into `Debian` from an iPXE server.
 5. Press `Ctrl+B` when prompted to stop iPXE from booting automatically.
 6. Wait until `iPXE>` prompt appears.
 7. Type in `dhcp` to obtain an IP address.
-8. Type in `chain` and local iPXE address after a single space to load a network 
+8. Type in `chain` and local iPXE address after a single space to load a network
 boot menu.
 8. Select `Debian stable netboot 4.14.y` option below `iPXE boot menu` header.
 9.  Wait for `debian login:`.

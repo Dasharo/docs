@@ -65,7 +65,7 @@ coreboot configuration.
         Type Instance: 0
         Bus Address: 0000:e8:01.0
 
-   root@debian:~# 
+   root@debian:~#
    ```
 2. The character string after `Serial Number:` should be the same as in the
    coreboot config file.
@@ -121,7 +121,7 @@ the firmware filename.
         BIOS Revision: 4.14
         Firmware Revision: 0.0
    ```
-1. The character string after `Version:` should be the same as the firmware 
+1. The character string after `Version:` should be the same as the firmware
    fileneme indicates.
 
 ### DMI001.003 Verify the product name

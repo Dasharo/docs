@@ -12,7 +12,7 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 
 ## v0.3.0 - 2021-12-16
 ### Added
-  
+
 - [TPM support](tpm-mboot.md)
 - vboot support (see how to sign and protect the image [here](spi-wp.md#setting-flash-protection-for-vboot))
 - build targets for vboot with measured boot using TPM 1.2 and TPM 2.0
@@ -45,7 +45,7 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM1.2.rom.sha256.sig){ .md-button }
 
 * 8MB vboot TPM 2.0
- 
+
 [asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom.sha256.sig){ .md-button }
@@ -72,7 +72,7 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 ## v0.2.0 - 2021-12-9
 
 ### Added
-  
+
 - coreboot resource allocator v4 support
 - Nuvoton W83795 HW monitor driver
 - [automatic fan control with W83795](fan-control.md)
@@ -110,7 +110,7 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 ## v0.1.0 - 2021-11-10
 
 ### Added
-  
+
 - C bootblock support
 - postcar stage and no CAR global migration support
 - separated chipset and mainboard code

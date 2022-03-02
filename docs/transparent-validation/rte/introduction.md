@@ -56,4 +56,3 @@ Full Remote Testing Environment set includes:
 
 * automation
 > *time is money: let the machine do all the work for you*
-

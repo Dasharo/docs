@@ -1,6 +1,6 @@
 # Hardware configuration matrix
 
-The tables below contain information about current components of the testing 
+The tables below contain information about current components of the testing
 environment for ASUS KGPE-D16 boards available in 3mdeb testing laboratory.
 
 ## Board No. 1
@@ -35,7 +35,7 @@ environment for ASUS KGPE-D16 boards available in 3mdeb testing laboratory.
 | Power Supply               | 700 W ATX type power supply                                          | `SSIPWR1`, `SSI12V1`, `SSI12V2` connectors |
 | Power Control:             | 1. Sonoff S20 switch                                                 | N/A                                        |
 |                            | 2. Goldpin cables (RTE <-> Board connection)                         | `PANEL1` connector                         |
-| Remote Testing Environment:| 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232              | `COM1` port                                | 
+| Remote Testing Environment:| 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232              | `COM1` port                                |
 |                            | 2. POMONA Clip + DIP8/SOIC8 adapter (RTE <-> flash memory connection)| `BIOS` slot                                |
 
 ASUS KGPE-D16 board ports, slots, and connectors description is available in the

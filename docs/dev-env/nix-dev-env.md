@@ -2,6 +2,6 @@
 
 ## Docker containers considered harmful
 
-> 
+>
 
 ## Nix as reproducible development environment
