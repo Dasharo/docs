@@ -14,4 +14,3 @@ tagged `enhancement`.
 * Dasharo Reference OS on USB stick to simplify firmware deployment
 * fwupd/LVFS for firmware deployment
 * ipxe for firmware deployment
-

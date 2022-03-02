@@ -48,7 +48,7 @@ Docker containers for a couple of last years become the default method for provi
 reproducible runtime environment for software as well those started to be very
 useful for developers to transfer exact configuration for building given
 software stack. We wrote about the usefulness of Docker containers in embedded
-software development environment on 
+software development environment on
 [3mdeb blog](https://blog.3mdeb.com/2018/2018-09-27-optimize-performance-in-docker/).
 
 After a long time of using Docker containers for embedded software development

@@ -164,7 +164,7 @@ signals is restored to the platform.
 In order to provide an easy way to protect the SPI flash chip one may use a
 DIP-8 to SOIC-8 adapter with a special long pin header for WP pin jumper. It
 allows to use a SOIC-8 packaged flash in the DIP-8 socket and easily place a
-jumper to protect the flash. In order to assembly the adapter you will need 
+jumper to protect the flash. In order to assembly the adapter you will need
 
 - the target SPI flash chip (we use wither Winbond W25Q64FV (8MB) or W25Q128JV
 (16MB)),

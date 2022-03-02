@@ -7,7 +7,7 @@
 **Test description**
 
 Verified Boot is a method of verifying that the firmware compents come from a
-trusted source. This test aims to confirm that verified boot is enabled and 
+trusted source. This test aims to confirm that verified boot is enabled and
 functional.
 
 **Test setup**
@@ -83,7 +83,7 @@ signed with wrong vboot keys
 8. Type the proper password.
 9. Wait for `root@debian:~#`.
 10. Install `flashrom` by `apt-get install flashrom` command.
-11. Flash coreboot signed with wrong vboot keys by executing the following 
+11. Flash coreboot signed with wrong vboot keys by executing the following
 command:
 
         flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]

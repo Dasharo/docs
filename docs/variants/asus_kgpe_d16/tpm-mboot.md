@@ -100,4 +100,3 @@ TPM: Write digest for FMAP: COREBOOT CBFS: cmos_layout.bin into PCR 2
 tlcl_extend: response is 0
 TPM: setup succeeded
 ```
-
