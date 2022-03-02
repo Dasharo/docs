@@ -69,6 +69,7 @@ nav:
             - 'Introduction': transparent-validation/rte/introduction.md
             - 'Specification': transparent-validation/rte/v1.1.0/specification.md
             - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
+            - 'Update': transparent-validation/rte/v1.1.0/update.md
         #   - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
         #   - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
             - 'Revision History': transparent-validation/rte/revision-history.md

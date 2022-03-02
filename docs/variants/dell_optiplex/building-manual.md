@@ -50,5 +50,8 @@ To build coreboot image, follow the steps below:
     (docker)$ make distclean && cp configs/config.dell_optiplex_9010_sff .config && make olddefconfig && make
     ```
 
-This will produce a debug binary placed in `build/coreboot.rom`. To flash
-coreboot refer to [initial deployment manual](initial-deployment.md).
+6. Container can be closed safely with `exit` Release Dasharo binary compatible
+   with Dell OptiPlex 7010/9010 SFF can be found in `build/coreboot.rom`.
+
+In case of flashing Dasharo first time please continue using [initial deployment manual](initial-deployment.md). 
+To perform update from older Dasharo version please continue using [firmware update](firmware-update.md).
