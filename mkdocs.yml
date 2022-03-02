@@ -1,134 +1,135 @@
+---
 site_name: Dasharo Universe
 site_url: https://docs.dasharo.com/
 theme:
-    name: material
-    favicon: images/favicon.png
-    logo: images/dasharo-logo.png
+  name: material
+  favicon: images/favicon.png
+  logo: images/dasharo-logo.png
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
 google_analytics:
-    - UA-39420295-13
-    - auto
+  - UA-39420295-13
+  - auto
 markdown_extensions:
-    - pymdownx.highlight
-    - pymdownx.superfences
-    - pymdownx.keys
-    - attr_list
-    - toc:
-        toc_depth: 2
-    - pymdownx.tasklist:
-        custom_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.keys
+  - attr_list
+  - toc:
+      toc_depth: 2
+  - pymdownx.tasklist:
+      custom_checkbox: true
 nav:
-    - 'Intro': index.md
-    - 'Supported hardware':
-    #   - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
-        - 'Dell OptiPlex':
-            - 'Overview': variants/dell_optiplex/overview.md
-            - 'Releases': variants/dell_optiplex/releases.md
-            - 'Building manual': variants/dell_optiplex/building-manual.md
-            - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
-            - 'Firmware update': variants/dell_optiplex/firmware-update.md
-            - 'Recovery': variants/dell_optiplex/recovery.md
-        - 'Asus KGPE-D16':
-            - 'Releases': variants/asus_kgpe_d16/releases.md
-            - 'Hardware setup': variants/asus_kgpe_d16/setup.md
-            - 'Building manual': variants/asus_kgpe_d16/building-manual.md
-            - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
-            - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
-            - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
-            - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
-            - 'Dasharo Compatibility Test Specification': variants/asus_kgpe_d16/dasharo-compatibility/index.md
-        - 'Talos II':
-            - 'Releases': variants/talos_2/releases.md
-            - 'Building manual': variants/talos_2/building-manual.md
-            - 'Installation manual': variants/talos_2/installation-manual.md
-            - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
-            - 'Conference materials': variants/talos_2/conferences.md
-        - 'Clevo NV41':
-            - 'Releases': variants/clevo_nv41/releases.md
-            - 'Building': variants/clevo_nv41/building.md
-            - 'Updating firmware using fwupd': variants/clevo_nv41/fwupd_usage.md
-            - 'EC firmware update': variants/clevo_nv41/ec_update.md
-            - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
-            - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
-            - 'Post-installation steps': variants/clevo_nv41/post_install.md
-            - 'Hardware Configuration Matrix': variants/clevo_nv41/testing_configuration.md
-            - 'Logo customization': variants/clevo_nv41/custom_logo.md
-            - 'Openness score': variants/clevo_nv41/openness_analysis.md
-            - 'LVFS report': variants/clevo_nv41/lvfs_report.md
-  # - 'Development Environment':
-  #     - 'Nix': dev-env/nix-dev-env.md
-    - 'Development Process':
-        - 'Source code structure': dev-proc/source-code-structure.md
-        - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
-        - 'Versioning': dev-proc/versioning.md
-        - 'Features and bug fixes development process': dev-proc/feature-bug-fix-dev-process.md
-        - 'Standard Release Process': dev-proc/standard-release-process.md
-  # - 'Dasharo SKUs':
-      # - 'Overview': variants/skus-overview.md
-      # - 'Firewall': variants/firewall.md
-      # - 'Secure Firewall': variants/secure-firewall.md
-      # - 'Workstation':
-      #     - 'SKU description': variants/workstation.md
-      # - 'Server': variants/server.md
-      # - 'Trustworthy Server': variants/trustworthy-server.md
-      # - 'Trustworthy Computing': variants/trustworthy-computing.md
-      # - 'Safety-Critical': variants/safety-critical.md
-      # - 'Custom': variants/custom.md
-  # - 'How to work with us?':
-  #     - 'Overview': inquiries/overview.md
-  #     - 'Community Edition': inquiries/community-edition.md
-  #     - 'Sponsorware': inquiries/sponsorware.md
-  #     - 'Commercial inquiries': inquiries/commercial-inquiries.md
-    - 'Knowledge base':
-        - 'Common coreboot documentation':
-            - 'Vboot signing': common-coreboot-docs/vboot_signing.md
-      # - 'Trolling Topics List':
-      #     - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
-    - 'Frequently Asked Questions':
-        - 'Introduction': osf-trivia-list/introduction.md
-        - 'Deployment': osf-trivia-list/deployment.md
-        - 'Firmware build process': osf-trolling-list/build_process.md
-      # - 'Firmware release process': osf-trolling-list/release_process.md
-        - 'Trusted Computing': osf-trolling-list/trusted_computing.md
-    - 'Ecosystem':
-        - 'Overview': ecosystem/overview.md
-      # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
-        - 'Transparent Validation':
-          # - 'Overview': ecosystem/transparent-validation.md
-          # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
-          # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
-            - 'muxPi':
-                - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
-                - 'Basic validation': transparent-validation/muxpi/basic-validation.md
-            - 'Remote Testing Environment':
-                - 'Introduction': transparent-validation/rte/introduction.md
-                - 'Specification': transparent-validation/rte/v1.1.0/specification.md
-                - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
-                - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
-                - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
-                - 'Revision History': transparent-validation/rte/revision-history.md
-            - 'SD Wire':
-                - 'Getting started': transparent-validation/sd-wire/getting-started.md
-                - 'Specification': transparent-validation/sd-wire/specification.md
-                - 'Usage': transparent-validation/sd-wire/usage-validation.md
-      # - 'Secure Storage': ecosystem/secure-storage.md
-      # - 'Signing Server': ecosystem/signing-server.md
-      # - 'Attestation Server': ecosystem/attestation-server.md
-      # - 'Deployment and Provisioning Server': ecosystem/deployment-and-provisioning-server.md
-      # - 'Reference OS': ecosystem/reference-os.md
-      # - 'Publishing Server': ecosystem/publishing-server.md
-      # - 'End User Device': ecosystem/end-user.md
-        - 'Roadmap' : ecosystem/roadmap.md
-    - 'Quality Principles': quality-principles/introduction.md
-      # - 'Introduction':
-      # - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
-    - 'Value proposition':
-        - 'Overview': value-prop/overview.md
-        - 'Security': value-prop/security.md
-        - 'Compatibility': value-prop/compatibility.md
-      # - 'Performance': value-prop/performance.md
-        - 'Marketing': value-prop/marketing.md
-      # - 'Certification Program':
-      #     - 'Overview': value-prop/certification-program/overview.md
-    - 'Glossary': glossary.md
+  - 'Intro': index.md
+  - 'Supported hardware':
+      # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
+      - 'Dell OptiPlex':
+          - 'Overview': variants/dell_optiplex/overview.md
+          - 'Releases': variants/dell_optiplex/releases.md
+          - 'Building manual': variants/dell_optiplex/building-manual.md
+          - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
+          - 'Firmware update': variants/dell_optiplex/firmware-update.md
+          - 'Recovery': variants/dell_optiplex/recovery.md
+      - 'Asus KGPE-D16':
+          - 'Releases': variants/asus_kgpe_d16/releases.md
+          - 'Hardware setup': variants/asus_kgpe_d16/setup.md
+          - 'Building manual': variants/asus_kgpe_d16/building-manual.md
+          - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
+          - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
+          - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
+          - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
+          - 'Dasharo Compatibility Test Specification': variants/asus_kgpe_d16/dasharo-compatibility/index.md
+      - 'Talos II':
+          - 'Releases': variants/talos_2/releases.md
+          - 'Building manual': variants/talos_2/building-manual.md
+          - 'Installation manual': variants/talos_2/installation-manual.md
+          - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
+          - 'Conference materials': variants/talos_2/conferences.md
+      - 'Clevo NV41':
+          - 'Releases': variants/clevo_nv41/releases.md
+          - 'Building': variants/clevo_nv41/building.md
+          - 'Updating firmware using fwupd': variants/clevo_nv41/fwupd_usage.md
+          - 'EC firmware update': variants/clevo_nv41/ec_update.md
+          - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
+          - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
+          - 'Post-installation steps': variants/clevo_nv41/post_install.md
+          - 'Hardware Configuration Matrix': variants/clevo_nv41/testing_configuration.md
+          - 'Logo customization': variants/clevo_nv41/custom_logo.md
+          - 'Openness score': variants/clevo_nv41/openness_analysis.md
+          - 'LVFS report': variants/clevo_nv41/lvfs_report.md
+# - 'Development Environment':
+#     - 'Nix': dev-env/nix-dev-env.md
+  - 'Development Process':
+      - 'Source code structure': dev-proc/source-code-structure.md
+      - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
+      - 'Versioning': dev-proc/versioning.md
+      - 'Features and bug fixes development process': dev-proc/feature-bug-fix-dev-process.md
+      - 'Standard Release Process': dev-proc/standard-release-process.md
+# - 'Dasharo SKUs':
+    # - 'Overview': variants/skus-overview.md
+    # - 'Firewall': variants/firewall.md
+    # - 'Secure Firewall': variants/secure-firewall.md
+    # - 'Workstation':
+    #     - 'SKU description': variants/workstation.md
+    # - 'Server': variants/server.md
+    # - 'Trustworthy Server': variants/trustworthy-server.md
+    # - 'Trustworthy Computing': variants/trustworthy-computing.md
+    # - 'Safety-Critical': variants/safety-critical.md
+    # - 'Custom': variants/custom.md
+# - 'How to work with us?':
+#     - 'Overview': inquiries/overview.md
+#     - 'Community Edition': inquiries/community-edition.md
+#     - 'Sponsorware': inquiries/sponsorware.md
+#     - 'Commercial inquiries': inquiries/commercial-inquiries.md
+  - 'Knowledge base':
+      - 'Common coreboot documentation':
+          - 'Vboot signing': common-coreboot-docs/vboot_signing.md
+    # - 'Trolling Topics List':
+    #     - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
+  - 'Frequently Asked Questions':
+      - 'Introduction': osf-trivia-list/introduction.md
+      - 'Deployment': osf-trivia-list/deployment.md
+      - 'Firmware build process': osf-trolling-list/build_process.md
+    # - 'Firmware release process': osf-trolling-list/release_process.md
+      - 'Trusted Computing': osf-trolling-list/trusted_computing.md
+  - 'Ecosystem':
+      - 'Overview': ecosystem/overview.md
+    # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
+      - 'Transparent Validation':
+        # - 'Overview': ecosystem/transparent-validation.md
+        # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
+        # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
+          - 'muxPi':
+              - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
+              - 'Basic validation': transparent-validation/muxpi/basic-validation.md
+          - 'Remote Testing Environment':
+              - 'Introduction': transparent-validation/rte/introduction.md
+              - 'Specification': transparent-validation/rte/v1.1.0/specification.md
+              - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
+              - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
+              - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
+              - 'Revision History': transparent-validation/rte/revision-history.md
+          - 'SD Wire':
+              - 'Getting started': transparent-validation/sd-wire/getting-started.md
+              - 'Specification': transparent-validation/sd-wire/specification.md
+              - 'Usage': transparent-validation/sd-wire/usage-validation.md
+    # - 'Secure Storage': ecosystem/secure-storage.md
+    # - 'Signing Server': ecosystem/signing-server.md
+    # - 'Attestation Server': ecosystem/attestation-server.md
+    # - 'Deployment and Provisioning Server': ecosystem/deployment-and-provisioning-server.md
+    # - 'Reference OS': ecosystem/reference-os.md
+    # - 'Publishing Server': ecosystem/publishing-server.md
+    # - 'End User Device': ecosystem/end-user.md
+      - 'Roadmap': ecosystem/roadmap.md
+  - 'Quality Principles': quality-principles/introduction.md
+    # - 'Introduction':
+    # - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
+  - 'Value proposition':
+      - 'Overview': value-prop/overview.md
+      - 'Security': value-prop/security.md
+      - 'Compatibility': value-prop/compatibility.md
+    # - 'Performance': value-prop/performance.md
+      - 'Marketing': value-prop/marketing.md
+    # - 'Certification Program':
+    #     - 'Overview': value-prop/certification-program/overview.md
+  - 'Glossary': glossary.md
