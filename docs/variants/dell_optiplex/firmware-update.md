@@ -3,7 +3,7 @@
 Following documentation describe process of Dasharo open-source firmware
 update.
 
-## OS booting
+## Operating system booting and preparation
 
 For simplicity we using network boot [netboot.xyz from USB](https://netboot.xyz/docs/booting/usb).
 
@@ -14,8 +14,34 @@ Boot system from USB:
 * You should see prompt `Enter kernel cmdline parameters`
 * Type: `iomem=relaxed` and ++enter++
 * Use ++esc++ to get back to netboot.xyz main menu
-* From section `Distributions` choose `Live CDs`, then `Debian`, `Debian Live
+* From section `Distributions` choose `Live CDs`, then `Devuan`, `Debian Live
   11 (bullseye)` and `Debian 11 (Core)`
+* Login: `user`, password: `live`
+* Install required packages:
+```shell
+$ sudo apt update
+$ sudo apt install flashrom
+```
+
+### Using Dasharo release binaries
+
+* Download [release binary](releases.md)
+```shell
+```
+
+### Using Dasharo binaries built locally
+
+If you followed [building manual](building-manual.md)
+
+* Copy Dasharo firmware to target:
+```ssh
+$ scp build/coreboot.rom user@<target_ip>:/tmp
+```
+
+* Flash firmware:
+```ssh
+
+```
 
 **NOTE**: If trustworthiness of that solution is in question please note
 netboot.xyz can be [self-hosted](https://netboot.xyz/docs/selfhosting).
