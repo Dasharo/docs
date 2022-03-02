@@ -33,3 +33,22 @@ mkdocs.yml)
 - TBD or TODO is visible on website
 
 There should be no TBD or TODO visible on website.
+
+# pre-commit hooks
+
+* [Install pre-commit](https://pre-commit.com/index.html#install)
+
+* Install hooks into repo:
+
+```
+pre-commit install
+```
+
+* Enjoy automatic checks on each `git commit` action!
+
+* (Optional) Run hooks on all files (for example, when adding new hooks or
+  configuring existing ones):
+
+```bash
+pre-commit run --all-files
+```
