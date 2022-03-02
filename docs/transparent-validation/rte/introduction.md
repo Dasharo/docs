@@ -24,6 +24,8 @@ applications are:
 
 Full Remote Testing Environment set includes:
 
+<center>
+
 | Category     | Description                                                     | Quantity |
 |:-------------|:----------------------------------------------------------------|:---------|
 | shield       | Remote Testing Environment v1.1.0                               | 1        |
@@ -37,6 +39,8 @@ Full Remote Testing Environment set includes:
 | cables       | RS232 D-Sub 9P/9P cable for serial communication                | 1        |
 | jumpers      | jumper for UART OUTPUT SELECT header                            | 2        |
 | spacers      | Polyamide M3 spacers and bolts                                  | 4        |
+
+</center>
 
 ## Why choose 3mdeb RTE?
 
