@@ -13,6 +13,7 @@ using different distribution, you might need to
 [build from source](#building-from-source).
 
 1. Download and extract the fwupd archive:
+
 ```bash
 $ wget --content-disposition \
      https://cloud.3mdeb.com/index.php/s/peqT6xsrCn5pzRk/download \
@@ -22,6 +23,7 @@ $ unzip fwupd-novacustom-v1.0.0.zip
 ```
 
 2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.0.zip`):
+
 ```bash
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/oss_master_key/open-source-software/3mdeb-open-source-software-master-key.asc
@@ -32,6 +34,7 @@ $ gpg -v --verify fwupd-novacustom-v1.0.0.zip.sha256.sig fwupd-novacustom-v1.0.0
 ```
 
 3. flashrom packages are located inside `flashrom-1.2-2-3mdeb.zip`:
+
 ```bash
 $ unzip flashrom-1.2-2-3mdeb.zip
 $ sudo apt install ./flashrom_1.2-2_amd64.deb
@@ -40,6 +43,7 @@ $ sudo apt install ./libflashrom-dev_1.2-2_amd64.deb
 ```
 
 4. fwupd packages are located inside `fwupd-1.7.3-3mdeb.zip`:
+
 ```bash
 $ unzip fwupd-1.7.3-3mdeb.zip
 $ sudo apt install ./fwupd_1.7.3+r68+gf3a5e4d1_amd64.deb \
@@ -67,6 +71,7 @@ $ sudo apt install ./fwupd_1.7.3+r68+gf3a5e4d1_amd64.deb \
 #### Flashrom
 
 1. Install build dependencies:
+
 ```bash
 $ sudo apt update
 $ sudo apt install -y build-essential pciutils libpci-dev libusb-1.0-0-dev \
@@ -75,12 +80,14 @@ $ sudo apt install -y build-essential pciutils libpci-dev libusb-1.0-0-dev \
 ```
 
 2. Obtain source code:
+
 ```bash
 $ git clone https://github.com/Dasharo/flashrom.git -b v1.2.0.1
 $ cd flashrom
 ```
 
 3. Build and install flashrom:
+
 ```bash
 $ meson build
 $ ninja -C build
@@ -90,17 +97,20 @@ $ sudo ninja -C build install
 #### fwupd
 
 1. Obtain source code:
+
 ```bash
 $ git clone https://github.com/Dasharo/fwupd.git -b v1.7.3.1
 $ cd fwupd
 ```
 
 2. Install build dependencies:
+
 ```bash
 $ ./contrib/setup
 ```
 
 3. Build and install fwupd:
+
 ```bash
 $ sudo depmod
 $ meson build -Ddocs=none -Dplugin_flashrom=true
@@ -114,6 +124,7 @@ $ sudo ninja -C build install
 
     *Note: You may be asked which device to update. If you see a prompt, select
     NV4XMB,ME,MZ*
+
 ```bash
 $ sudo fwupdmgr update
 
@@ -159,6 +170,7 @@ An update requires the system to shutdown to complete. Shutdown now? [y|N]:
 
 3. Power on the laptop again
 4. Log in and run the following command to verify results:
+
 ```bash
 $ sudo fwupdmgr get-results
 
@@ -174,6 +186,7 @@ Choose a device:
 ```
 
 5. Select `NV4XMB,ME,MZ` when prompted, and the results will be displayed:
+
 ```bash
 NV4XMB,ME,MZ:
   Device ID:            dbee8bd3b1ae0316ad143336155651eedb495a0e

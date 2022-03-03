@@ -109,7 +109,6 @@ securely.
 Once you have the backups saved, proceed to flashing the chip - replace
 `[path]` with the path to the binary you want to write - e.g. `build/coreboot.rom`
 
-
 ```bash
 # flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -w [path] --ifd -i bios
 ```

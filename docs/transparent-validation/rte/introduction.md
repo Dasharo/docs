@@ -41,7 +41,7 @@ Full Remote Testing Environment set includes:
 ## Why choose 3mdeb RTE?
 
 * high accessibility and flexibility
-> *test your device from any location.*
+> _test your device from any location._
 
 * efficiency
 > *simplify validation: write one script and run it on unlimited platforms.
@@ -52,7 +52,7 @@ Full Remote Testing Environment set includes:
   are at your disposal.*
 
 * instant setup
-> *intuitive connection: you do not need to be a certified engineer.*
+> _intuitive connection: you do not need to be a certified engineer._
 
 * automation
-> *time is money: let the machine do all the work for you*
+> _time is money: let the machine do all the work for you_

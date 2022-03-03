@@ -6,8 +6,6 @@ organization. This section overview role of every component.
 
 ![](../images/ecosystem_overview.png)
 
-
-
 * Open Source Firmware Community - semi-organised collections of contributors
   to projects related to embedded firmware. Dasharo project contributors are
   part of OSF community.

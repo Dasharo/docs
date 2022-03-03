@@ -88,6 +88,7 @@ netboot.xyz can be [self-hosted](https://netboot.xyz/docs/selfhosting).
   provides an outdated one, you can build it yourself using
   [this instruction](https://www.flashrom.org/Downloads).
 * Or compile recent version of flashrom:
+
   ``` console
   sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
   git clone https://github.com/flashrom/flashrom.git
@@ -105,6 +106,7 @@ It is always good idea to backup original BIOS of your hardware, before
 switching to open-source firmware.
 
 * Read content of SPI NOR flash:
+
   ``` console
   $ sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
   flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)

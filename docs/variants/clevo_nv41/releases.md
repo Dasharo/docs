@@ -77,7 +77,7 @@ For details about our release process please read
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256.sig){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on ae9a8447 revision e995fc1c](https://github.com/Dasharo/coreboot/commit/e995fc1c)
 - [edk2 based on 2020.03.17 revision 59ae285f](https://github.com/Dasharo/edk2/tree/59ae285f)
@@ -114,12 +114,11 @@ For details about our release process please read
 [dasharo_clevo_nv41mz_0.5.0.SHA256.sig](https://cloud.3mdeb.com/index.php/s/6BeLRkSaawB42T6){ .md-button }
 [dasharo_clevo_nv41mz_0.5.0.rom](https://cloud.3mdeb.com/index.php/s/xM8FcCsMc8kfmKB){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on ae9a8447 revision 7d439573](https://gitlab.com/novacustom/coreboot/-/tree/7d439573)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
 - [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
-
 
 ## v0.4.0 - 2021-10-26
 
@@ -153,7 +152,7 @@ For details about our release process please read
 - [dasharo_clevo_nv41mz_0.4.0.SHA256](https://cloud.3mdeb.com/index.php/s/2SkwmGFoyAf2e7d){ .md-button }
 - [dasharo_clevo_nv41mz_0.4.0.SHA256.sig](https://cloud.3mdeb.com/index.php/s/HZxynzX3zDscTXr){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on ae9a8447 revision 03972293](https://gitlab.com/novacustom/coreboot/-/tree/03972293)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
@@ -162,15 +161,18 @@ For details about our release process please read
 ## v0.3.0 - 2021-10-11
 
 ### Added
+
 - Support for discrete TPM
 - USB Type-C ACPI support (UCSI)
 - Improved runtime power management for SSD (reduces power usage while in sleep)
 - Added partial sleep support (system saves power, but fans still spin)
 
 ### Changed
+
 - Rebased on coreboot revision ae9a8447
 
 ### Known issues
+
 - [Sleep mode is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/3)
 - [The camera ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/2)
 - [The touchpad ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/1)
@@ -181,7 +183,7 @@ For details about our release process please read
 - [dasharo_clevo_nv41mz_0.3.0.SHA256](https://cloud.3mdeb.com/index.php/s/j7RxnDWEzreD6w3){ .md-button }
 - [dasharo_clevo_nv41mz_0.3.0.SHA256.sig](https://cloud.3mdeb.com/index.php/s/NLbgZiyiMFRyZt7){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on ae9a8447 revision v0.3.0](https://gitlab.com/novacustom/coreboot/-/tree/v0.3.0)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
@@ -190,15 +192,19 @@ For details about our release process please read
 ## v0.2.1 - 2021-9-29
 
 ### Added
+
 - Integrated graphics backlight configuration for Windows
 
 ### Changed
+
 - Updated the Video Bios Table
 
 ### Fixed
+
 - [Screen brightness is stuck at 0% in the Windows Installer](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/4)
 
 ### Known issues
+
 - [Sleep mode is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/3)
 - [The camera ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/2)
 - [The touchpad ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/1)
@@ -209,7 +215,7 @@ For details about our release process please read
 - [dasharo_clevo_nv41mz_0.2.1.rom.SHA256](https://cloud.3mdeb.com/index.php/s/q7aZz4LFA6B5byD){ .md-button }
 - [dasharo_clevo_nv41mz_0.2.1.rom.SHA256.sig](https://cloud.3mdeb.com/index.php/s/YnNXcyQyfKkabDG){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.14 revision 43c9604b](https://gitlab.com/novacustom/coreboot/-/tree/43c9604b)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
@@ -246,7 +252,7 @@ For details about our release process please read
 - [dasharo_clevo_nv41mz_0.2.0.SHA256](https://cloud.3mdeb.com/index.php/s/xrwfNdC9PnfoMEL){ .md-button }
 - [dasharo_clevo_nv41mz_0.2.0.SHA256.sig](https://cloud.3mdeb.com/index.php/s/yWitrxMRrCHYPE4){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.14 revision ff1c6572](https://gitlab.com/novacustom/coreboot/-/tree/ff1c6572)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
@@ -255,6 +261,7 @@ For details about our release process please read
 ## v0.1.2 - 2021-08-31
 
 ### Added
+
 - Clevo NV41MZ platform support
 - Clevo IT5570 EC support
 - UEFI boot support
@@ -269,7 +276,7 @@ For details about our release process please read
 
 [All in one zip](https://cloud.3mdeb.com/index.php/s/LXQizpTxg7C9g94/download){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot 4.14 (with additional commits for Clevo NV41MZ board support)](https://gitlab.com/novacustom/coreboot/-/compare/4.14...v0.1.1?from_project_id=29249618)
 - [EDK2](https://github.com/MrChromebox/edk2/commit/659ed4cb983a66ec241c05f42b69ad4d2e47b714)
