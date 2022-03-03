@@ -67,6 +67,7 @@ coreboot configuration.
 
    root@debian:~#
    ```
+
 2. The character string after `Serial Number:` should be the same as in the
    coreboot config file.
 
@@ -121,6 +122,7 @@ the firmware filename.
         BIOS Revision: 4.14
         Firmware Revision: 0.0
    ```
+
 1. The character string after `Version:` should be the same as the firmware
    fileneme indicates.
 
@@ -175,6 +177,7 @@ This test aims to verify that the DUT product name and manufacturer is correct.
 
    root@debian:~#
    ```
+
 2. The character string after `Product Name:` should be `KGPE-D16` and after
    `Manufacturer` should be `ASUS`.
 
@@ -228,5 +231,6 @@ as the tag of given Dasharo version on the Dasharo repository.
         BIOS Revision: 4.14
         Firmware Revision: 0.0
    ```
+
 2. The character string after `Release date:` should point to the date of the
    tag of given Dasharo version on Dasharo the repository.

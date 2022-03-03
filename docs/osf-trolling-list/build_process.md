@@ -17,7 +17,7 @@ values after firmware update, we are gaining the following advantages:
   reference integrity measures (RIM), RIM can be calculated by build exactly
   the same version of OSF.
 
-    __NOTE__: Please note that depending on your threat model using TPM chip with
+    **NOTE**: Please note that depending on your threat model using TPM chip with
     closed source firmware implementation may lead to solution which is not
     trustworthy.
 

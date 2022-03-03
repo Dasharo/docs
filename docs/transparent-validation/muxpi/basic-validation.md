@@ -54,11 +54,13 @@ root user `pi` with password `pi`.
 ```
 
 * verify installation:
+
 ```
 gpio readall
 ```
 
 * If your installation is successful the following messages will show up:
+
 ```
  +-----+-----+----------+------+---+-NanoPi-NEO--+------+----------+-----+-----+
  | BCM | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | BCM |
@@ -139,17 +141,23 @@ HW: 1.0 SW: 0.5
 2. Insert the microSD card to microSD card slot accessible on the bottom side of
    muxPi board.
 3. To enable microSD card reader, connect to Cortex from MuxPi via minicom:
+
 ```
 minicom -D /dev/ttyS2
 ```
+
 and enter in minicom following commands:
+
 ```
 ts
 ```
+
 and then
+
 ```
 dut
 ```
+
 > NOTE: Each command should return `OK`
 
 4. Connect IDC-uSD adapter to a SD card adapter plugged into your machine
@@ -176,6 +184,7 @@ via IDC-uSD adapter.
 1. Write `help` and press Enter.
 
 Help output:
+
 ```
 help --- This help
 version --- Display version of the firmware

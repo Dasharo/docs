@@ -35,12 +35,14 @@ be accessed from the operating system.
     ```
     apt install tpm2-tools
     ```
+
 11. For TPM2.0 - Execute command.
 
 ```
 tpm2_pcrread
 ```
-12.  For TPM1.2 - Execute command:
+
+12. For TPM1.2 - Execute command:
 
 ```
 cat /sys/class/tpm/tpm0/pcrs
@@ -104,6 +106,7 @@ sha256 :
   22 : ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   23 : 0000000000000000000000000000000000000000000000000000000000000000
 ```
+
 Example for TPM1.2:
 
 ```

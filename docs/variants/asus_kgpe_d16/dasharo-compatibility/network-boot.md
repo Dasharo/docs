@@ -30,7 +30,7 @@ into `Debian` from an iPXE server.
 8. Type in `chain` and local iPXE address after a single space to load a network
 boot menu.
 8. Select `Debian stable netboot 4.14.y` option below `iPXE boot menu` header.
-9.  Wait for `debian login:`.
+9. Wait for `debian login:`.
 10. Type the `root` login.
 11. Wait for `Password:`.
 12. Type the proper password.

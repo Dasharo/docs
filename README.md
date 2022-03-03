@@ -36,17 +36,17 @@ There should be no TBD or TODO visible on website.
 
 # pre-commit hooks
 
-* [Install pre-commit](https://pre-commit.com/index.html#install)
+- [Install pre-commit](https://pre-commit.com/index.html#install)
 
-* Install hooks into repo:
+- Install hooks into repo:
 
 ```
 pre-commit install --hook-type commit-msg
 ```
 
-* Enjoy automatic checks on each `git commit` action!
+- Enjoy automatic checks on each `git commit` action!
 
-* (Optional) Run hooks on all files (for example, when adding new hooks or
+- (Optional) Run hooks on all files (for example, when adding new hooks or
   configuring existing ones):
 
 ```bash

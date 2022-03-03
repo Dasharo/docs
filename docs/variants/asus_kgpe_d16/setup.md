@@ -42,9 +42,9 @@ IO2_WP_PROG.
 
 The proposed connections used:
 
- * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO400 to control MUX_SEL
- * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO401 to control IO3_HOLD_PROG
- * [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO402 to control IO2_WP_PROG
+* [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO400 to control MUX_SEL
+* [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO401 to control IO3_HOLD_PROG
+* [RTE](https://3mdeb.com/open-source-hardware/#rte) GPIO402 to control IO2_WP_PROG
 
 Simple flashing script looks as follows:
 
@@ -166,12 +166,12 @@ DIP-8 to SOIC-8 adapter with a special long pin header for WP pin jumper. It
 allows to use a SOIC-8 packaged flash in the DIP-8 socket and easily place a
 jumper to protect the flash. In order to assembly the adapter you will need
 
-- the target SPI flash chip (we use wither Winbond W25Q64FV (8MB) or W25Q128JV
+* the target SPI flash chip (we use wither Winbond W25Q64FV (8MB) or W25Q128JV
 (16MB)),
-- male pin headers 2.54 mm pitch (6 pins)
-- male long pin headers 2.54 mm pitch (2 pins) for the WP jumper
-- [SOIC-8 to DIP-8 adapter](https://pl.farnell.com/en-PL/aries/lcqt-soic8-8/ic-adaptor-8-soic-to-dip-2-54mm/dp/2476033?ost=lcqt-soic8-8)
-- soldering station and the solder
+* male pin headers 2.54 mm pitch (6 pins)
+* male long pin headers 2.54 mm pitch (2 pins) for the WP jumper
+* [SOIC-8 to DIP-8 adapter](https://pl.farnell.com/en-PL/aries/lcqt-soic8-8/ic-adaptor-8-soic-to-dip-2-54mm/dp/2476033?ost=lcqt-soic8-8)
+* soldering station and the solder
 
 The build shall look like this:
 

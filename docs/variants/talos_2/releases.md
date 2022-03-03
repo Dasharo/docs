@@ -9,21 +9,25 @@ For details about our release process please read
 [Subscribe to Raptor Computing Systems Talos II Dasharo Release Newsletter]( https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj){ .md-button .md-button--primary .center }
 
 ## v0.4.1 - 2022-01-10
+
 ### Changed
-  - Simplify memlayout
-  - Replace PPC_SHIFT with PPC_PLACE macro
-  - Change SPR numbers definitions to decimal
-  - Print signing output to terminal
+
+- Simplify memlayout
+- Replace PPC_SHIFT with PPC_PLACE macro
+- Change SPR numbers definitions to decimal
+- Print signing output to terminal
 
 ### Fixed
-  - Watchdog timing out
-  - Sporadic signing failure due to the tools not being built
-  - Building with cross compiler other than powerpc64-linux-gnu-
+
+- Watchdog timing out
+- Sporadic signing failure due to the tools not being built
+- Building with cross compiler other than powerpc64-linux-gnu-
 
 ### Known issues
-  - [Only one CPU is started](https://github.com/Dasharo/dasharo-issues/issues/30)
-  - [SPDs are not exposed in sysfs automatically](https://github.com/Dasharo/dasharo-issues/issues/31)
-  - [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
+
+- [Only one CPU is started](https://github.com/Dasharo/dasharo-issues/issues/30)
+- [SPDs are not exposed in sysfs automatically](https://github.com/Dasharo/dasharo-issues/issues/31)
+- [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
 
 ### Binaries
 
@@ -39,7 +43,7 @@ For details about our release process please read
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256.sig){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision 13b58058](https://github.com/Dasharo/coreboot/commit/13b58058)
 - [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/98581863)
@@ -48,17 +52,19 @@ For details about our release process please read
 ## v0.4.0 - 2021-10-29
 
 ### Added
-  - OCC support
-  - XIVE support
-  - PCIe initialization
-  - IPMI block transfer interface
-  - Non-constant nodes in Device Tree are generated programmatically
+
+- OCC support
+- XIVE support
+- PCIe initialization
+- IPMI block transfer interface
+- Non-constant nodes in Device Tree are generated programmatically
 
 ### Known issues
-  - [Only one CPU is started](https://github.com/Dasharo/dasharo-issues/issues/30)
-  - [SPDs are not exposed in sysfs automatically](https://github.com/Dasharo/dasharo-issues/issues/31)
-  - [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
-  - [Watchdog times out](https://github.com/Dasharo/dasharo-issues/issues/29)
+
+- [Only one CPU is started](https://github.com/Dasharo/dasharo-issues/issues/30)
+- [SPDs are not exposed in sysfs automatically](https://github.com/Dasharo/dasharo-issues/issues/31)
+- [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
+- [Watchdog times out](https://github.com/Dasharo/dasharo-issues/issues/29)
 
 ### Binaries
 
@@ -74,7 +80,7 @@ For details about our release process please read
 [sha256](https://cloud.3mdeb.com/index.php/s/FgeHfa4LzcZK6Pj){ .md-button }
 [sha256.sig](https://cloud.3mdeb.com/index.php/s/awNSefJrN4d2tAD){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision b535763b](https://github.com/Dasharo/coreboot/tree/raptor-cs_talos-2_v0.4.0)
 - [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/)

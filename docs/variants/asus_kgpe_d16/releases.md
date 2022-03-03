@@ -11,6 +11,7 @@ For details about our release process please read
 Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasharo:matrix.org).
 
 ## v0.3.0 - 2021-12-16
+
 ### Added
 
 - [TPM support](tpm-mboot.md)
@@ -26,43 +27,43 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 
 ### Binaries
 
-* 2MB vboot TPM 1.2
+- 2MB vboot TPM 1.2
 
 [asus_kgpe-d16_v0.3.0_2M_vboot_TPM1.2.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_2M_vboot_TPM1.2.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_2M_vboot_TPM1.2.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_2M_vboot_TPM1.2.rom.sha256.sig){ .md-button }
 
-* 2MB vboot TPM 2.0
+- 2MB vboot TPM 2.0
 
 [asus_kgpe-d16_v0.3.0_2M_vboot_TPM2.0.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_2M_vboot_TPM2.0.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_2M_vboot_TPM2.0.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_2M_vboot_TPM2.0.rom.sha256.sig){ .md-button }
 
-* 8MB vboot TPM 1.2
+- 8MB vboot TPM 1.2
 
 [asus_kgpe-d16_v0.3.0_8M_vboot_TPM1.2.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM1.2.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM1.2.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM1.2.rom.sha256.sig){ .md-button }
 
-* 8MB vboot TPM 2.0
+- 8MB vboot TPM 2.0
 
 [asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_8M_vboot_TPM2.0.rom.sha256.sig){ .md-button }
 
-* 16MB vboot TPM 1.2
+- 16MB vboot TPM 1.2
 
 [asus_kgpe-d16_v0.3.0_16M_vboot_TPM1.2.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM1.2.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM1.2.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM1.2.rom.sha256.sig){ .md-button }
 
-* 16MB vboot TPM 2.0
+- 16MB vboot TPM 2.0
 
 [asus_kgpe-d16_v0.3.0_16M_vboot_TPM2.0.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM2.0.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM2.0.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM2.0.rom.sha256.sig){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.14 revision 67190bf](https://github.com/Dasharo/coreboot/commit/67190bf)
 - [SeaBIOS based on rel-1.14.0 revision 155821a1](https://review.coreboot.org/plugins/gitiles/seabios/+/155821a1)
@@ -82,25 +83,25 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 
 ### Binaries
 
-* 2MB target
+- 2MB target
 
 [asus_kgpe-d16_v0.2.0_2M.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_2M.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_2M.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_2M.rom.sha256.sig){ .md-button }
 
-* 8MB target
+- 8MB target
 
-[asus_kgpe-d16_v0.2.0_8M.rom ](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_8M.rom){ .md-button }
+[asus_kgpe-d16_v0.2.0_8M.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_8M.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_8M.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_8M.rom.sha256.sig){ .md-button }
 
-* 16MB target
+- 16MB target
 
 [asus_kgpe-d16_v0.2.0_16M.rom](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_16M.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_16M.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_16M.rom.sha256.sig){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.14 revision 63b7cbc1](https://github.com/Dasharo/coreboot/commit/63b7cbc1)
 - [SeaBIOS based on rel-1.14.0 revision 155821a1](https://review.coreboot.org/plugins/gitiles/seabios/+/155821a1)
@@ -125,6 +126,6 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 
 [asus_kgpe-d16_v0.1.0.rom.sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.1.0.rom.sha256.sig){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 03aef28 revision e6af2206](https://github.com/Dasharo/coreboot/tree/e6af2206)

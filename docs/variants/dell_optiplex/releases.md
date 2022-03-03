@@ -10,14 +10,14 @@ For details about our release process please read
 
 ## Unreleased
 
-
 Software BOM:
 
 - coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
   config and CI YAML)
-  - EDK2
+  + EDK2
 
 ### Added
+
 - UEFI boot support
 - Discrete graphics support
 - SATA password
@@ -30,6 +30,7 @@ Software BOM:
 - One-time boot feature
 
 ### Removed
+
 - Legacy boot support
 
 ### Binaries
@@ -37,6 +38,7 @@ Software BOM:
 ## v0.1.0 - 2021-01-18
 
 ### Added
+
 - Dell OptiPlex 7010 and 9010 platforms supported
 - Dasharo bootsplash
 - Legacy boot support
@@ -58,7 +60,7 @@ Software BOM:
 
 [All in one zip](#){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
   config and CI YAML)](https://github.com/Dasharo/coreboot/compare/dell_optiplex_9010_v0.0.0...dell_optiplex_9010_v0.0.0)
