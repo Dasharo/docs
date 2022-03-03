@@ -17,11 +17,8 @@ repos:
       - id: yamllint
         args: [-c=.yamllint]
 
-  # https://github.com/igorshubovych/markdownlint-cli/pull/268/files
-  # pushed to upstream here:
-  # https://github.com/igorshubovych/markdownlint-cli/pull/268
-  - repo: https://github.com/3mdeb/markdownlint-cli
-    rev: ee19418c1223cdbec1926b95ad001ba98fba3a25
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: 7a1deeeb04c39a015896af2a03f21aa81903acde
     hooks:
       - id: markdownlint-docker
       - id: markdownlint-fix-docker
