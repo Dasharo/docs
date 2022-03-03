@@ -20,8 +20,8 @@ repos:
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: 7a1deeeb04c39a015896af2a03f21aa81903acde
     hooks:
-      - id: markdownlint-docker
-      - id: markdownlint-fix-docker
+      - id: markdownlint
+      - id: markdownlint-fix
 
   - repo: https://github.com/talos-systems/conform
     rev: v0.1.0-alpha.25
