@@ -69,11 +69,15 @@ are set to `INPUT` mode.
 
 Maximum voltage for all data signals: 3.3 V.
 
+<center>
+
 | Description | Pin # |
 |:-----------:|:-----:|
 | GPIO12      | 1     |
 | GPIO11      | 2     |
 | GPIO6       | 3     |
+
+</center>
 
 ### GPIO header (2)
 
@@ -84,12 +88,16 @@ default, these GPIOs are set to `INPUT` mode.
 Maximum voltage for all data signals: 3.3 V.
 Expander GPIO: 25 mA maximum output current.
 
+<center>
+
 | Description | Pin # |
 |:-----------:|:-----:|
 | GPIO400     | 1     |
 | GPIO401     | 2     |
 | GPIO402     | 3     |
 | GPIO403     | 4     |
+
+</center>
 
 ### GPIO header (3)
 
@@ -99,6 +107,8 @@ derived from GPIO expander on RTE board with an additional connection to OC
 
 Maximum voltage for all data signals: 3.3 V.
 OC buffers: 40 mA maximum output current.
+
+<center>
 
 | Description | Pin # |
 |:-----------:|:-----:|
@@ -112,12 +122,16 @@ OC buffers: 40 mA maximum output current.
 | GPIO412     | 8     |
 | GPIO413     | 9     |
 
+</center>
+
 ### I2C header
 
 I2C header (`J9`) is 1x4 pin header straight type 2.54mm pitch. It is used to
 rather low-speed applications such as reading sensors or accessing DACs and ADCs.
 
 Maximum voltage for all data signals: 3.3 V.
+
+<center>
 
 | Description | Pin # |
 |:-----------:|:-----:|
@@ -126,12 +140,16 @@ Maximum voltage for all data signals: 3.3 V.
 | SDA         | 3     |
 | GND         | 4     |
 
+</center>
+
 ### SPI header
 
 SPI header (`J7`) is a 2x4 pin header straight type 2.54mm pitch. It is used to
 control the application SPI flash with a minimal set of connections.
 
 Maximum voltage for all data signals: 3.3 V.
+
+<center>
 
 | Description | Pin # |  Pin # | Description |
 |:-----------:|:-----:|:------:|:-----------:|
@@ -140,30 +158,45 @@ Maximum voltage for all data signals: 3.3 V.
 | MISO        | 5     | 6      | MOSI        |
 | ISP         | 7     | 8      | NC          |
 
+</center>
+
 Revision v1.1.0 features new possibilities for SPI configuration:
 
 * SPI `Vcc` pin has been populated - power is now supplied to the SPI `Vcc`
 connector and can be enabled/disabled on demand:
+
+<center>
 
 | GPIO406 (OC_OUT1) state | SPI Vcc               |
 |:-----------------------:|:---------------------:|
 | 0 - low                 | disabled (by default) |
 | 1 - high                | enabled               |
 
+</center>
+
 * user can choose the voltage level for `Vcc` SPI - either 1.8V or 3.3 V:
+
+
+<center>
 
 | GPIO405 (OC_OUT2) state | SPI Vcc voltage level |
 |:-----------------------:|:---------------------:|
 | 0 - low                 | 1.8 V (by default)    |
 | 1 - high                | 3.3 V                 |
 
+</center>
+
 * user can enable/disable SPI lines (some platforms have problems when booting
   with SPI wires connected):
+
+<center>
 
 | GPIO404 (OC_OUT3) state | SPI lines (MOSI/MISO/CS/SCLK) |
 |:-----------------------:|:-----------------------------:|
 | 0 - low                 | disabled (by default)         |
 | 1 - high                | enabled                       |
+
+</center>
 
 ### UART OUTPUT SELECT header
 
@@ -171,10 +204,14 @@ UART OUTPUT SELECT header (`J16`) is a 2x3 pin header straight type 2.54mm pitch
 It is used for enabling serial communication output: RS232 DB9 port (`J14`) or
 UART1 header (`J18`). If jumpers are not attached, serial ports are disabled.
 
+<center>
+
 | Jumper position (TX) | Jumper position (RX) | Serial communication enabled |
 |:--------------------:|:--------------------:|:----------------------------:|
 | RS232 + COM          | RS232 + COM          | RS232 DB9 port (J14)         |
 | EXT + COM            | EXT + COM            | 3.3V UART1 header (J18)      |
+
+</center>
 
 ### RS232 connector
 
@@ -182,6 +219,8 @@ RS232 connector (`J14`) is a DB9 male 9 pin connector for serial communication
 between Remote Testing Environment and Device Under Test platform. It supports
 a hardware flow control. RS232 connector can be enabled/disabled according to
 [UART OUTPUT SELECT](#uart-output-select-header) section.
+
+<center>
 
 | Pin # | Signal | Description         |
 |:-----:|:------:|:-------------------:|
@@ -195,6 +234,8 @@ a hardware flow control. RS232 connector can be enabled/disabled according to
 | 8     | CTS    | Clear to Send       |
 | 9     | RI     | Ring Indicator      |
 
+</center>
+
 ### UART0 header
 
 UART0 header (`J2`) is a 1x3 pin header straight type 2.54mm pitch. It is
@@ -203,11 +244,15 @@ communication purposes.
 
 Maximum voltage for all data signals: 3.3 V.
 
+<center>
+
 | Description | Pin # |
 |:-----------:|:-----:|
 | GND         | 1     |
 | RX          | 2     |
 | TX          | 3     |
+
+</center>
 
 ### UART1 header
 
@@ -217,22 +262,29 @@ according to [UART OUTPUT SELECT](#uart-output-select-header) section.
 
 Maximum voltage for all data signals: 3.3 V.
 
+<center>
+
 | Description | Pin # |
 |:-----------:|:-----:|
 | GND         | 1     |
 | RX          | 2     |
 | TX          | 3     |
 
+</center>
+
 ### Power output header
 
 Power output header (`J15`) is 1x2 pin header straight type 2.54mm pitch. It is
 used for additional 5V or ground pin connections with various devices.
 
-.pure-table[
+<center>
+
 | Description | Pin # |
 |:-----------:|:-----:|
 | 5V          | 1     |
 | GND         | 2     |]
+
+</center>
 
 ### DC jack
 
@@ -259,10 +311,14 @@ Technical reference:
 Relay state is indicated by LED (`D5`) located near relay and can be controlled
 via meta-rte operating system through GPIO199:
 
+<center>
+
 | GPIO199 state | Relay state | D5 LED state |
 |:-------------:|:-----------:|:------------:|
 | 0             | OFF         | OFF          |
 | 1             | ON          | ON           |
+
+</center>
 
 ### USB connectors
 

@@ -7,7 +7,7 @@ This repository contains source code for Dasharo documentation webpage
 ```shell
 virtualenv -p $(which python3) venv
 source venv/bin/activate
-pip install mkdocs mkdocs-material
+pip install -r requirements.txt
 mkdocs build
 ```
 

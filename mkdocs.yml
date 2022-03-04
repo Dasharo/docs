@@ -18,6 +18,8 @@ markdown_extensions:
         toc_depth: 2
     - pymdownx.tasklist:
         custom_checkbox: true
+plugins:
+    - mkdocs-video
 nav:
     - 'Intro': index.md
     - 'Supported hardware':
@@ -56,6 +58,24 @@ nav:
             - 'Logo customization': variants/clevo_nv41/custom_logo.md
             - 'Openness score': variants/clevo_nv41/openness_analysis.md
             - 'LVFS report': variants/clevo_nv41/lvfs_report.md
+    - 'Validation':
+      # - 'Overview': ecosystem/transparent-validation.md
+      # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
+      # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
+        - 'muxPi':
+            - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
+            - 'Basic validation': transparent-validation/muxpi/basic-validation.md
+        - 'RTE':
+            - 'Introduction': transparent-validation/rte/introduction.md
+            - 'Specification': transparent-validation/rte/v1.1.0/specification.md
+            - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
+        #   - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
+        #   - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
+            - 'Revision History': transparent-validation/rte/revision-history.md
+        - 'SD Wire':
+            - 'Getting started': transparent-validation/sd-wire/getting-started.md
+            - 'Specification': transparent-validation/sd-wire/specification.md
+            - 'Usage': transparent-validation/sd-wire/usage-validation.md
   # - 'Development Environment':
   #     - 'Nix': dev-env/nix-dev-env.md
     - 'Development Process':
@@ -94,24 +114,6 @@ nav:
     - 'Ecosystem':
         - 'Overview': ecosystem/overview.md
       # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
-        - 'Transparent Validation':
-          # - 'Overview': ecosystem/transparent-validation.md
-          # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
-          # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
-            - 'muxPi':
-                - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
-                - 'Basic validation': transparent-validation/muxpi/basic-validation.md
-            - 'Remote Testing Environment':
-                - 'Introduction': transparent-validation/rte/introduction.md
-                - 'Specification': transparent-validation/rte/v1.1.0/specification.md
-                - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
-                - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
-                - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
-                - 'Revision History': transparent-validation/rte/revision-history.md
-            - 'SD Wire':
-                - 'Getting started': transparent-validation/sd-wire/getting-started.md
-                - 'Specification': transparent-validation/sd-wire/specification.md
-                - 'Usage': transparent-validation/sd-wire/usage-validation.md
       # - 'Secure Storage': ecosystem/secure-storage.md
       # - 'Signing Server': ecosystem/signing-server.md
       # - 'Attestation Server': ecosystem/attestation-server.md
