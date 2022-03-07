@@ -64,6 +64,12 @@ nav:
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing_configuration.md
+      - 'NovaCustom NS5X':
+          - 'Releases': variants/novacustom_ns5x/releases.md
+          - 'Building manual': variants/novacustom_ns5x/building.md
+          - 'Installation manual': variants/novacustom_ns5x/installation.md
+          - 'Post-installation steps': variants/novacustom_ns5x/post_install.md
+          - 'Logo customization': common-coreboot-docs/custom_logo.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
