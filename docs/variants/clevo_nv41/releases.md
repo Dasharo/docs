@@ -8,7 +8,7 @@ For details about our release process please read
 
 [Subscribe to Clevo NV41MZ Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/T61MyO2sP){ .md-button .md-button--primary .center }
 
-## v1.0.1 - 2022-3-1
+## v1.0.1 - 2022-03-01
 
 ### Added
 
@@ -42,6 +42,7 @@ For details about our release process please read
 [clevo_nv41mz_v1.0.1.rom](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom){ .md-button }
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256.sig){ .md-button }
+
 ### SBOM (Software Bill of Materials):
 
 - [coreboot based on ae9a8447 revision 3a3808f9](https://github.com/Dasharo/coreboot/tree/3a3808f9)
