@@ -61,7 +61,7 @@ For Debian based distros execute:
 
         `./flashrom -p internal --wp-list`
 
-4. Set protection range e.g.:  
+4. Set protection range e.g.(details on WP ranges [here](https://docs.dasharo.com/variants/asus_kgpe_d16/spi-wp/)):  
 
         `./flashrom -p internal --wp-range=0x007fc000,0x00004000`  
         `./flashrom -p internal --wp-enable`
@@ -79,7 +79,23 @@ For Debian based distros execute:
 
         `Sucessfully set the requested mode.`
 
-2. WP status should change between 2. and 5. test steps.
+2. WP status should change between 2. and 5. test steps. Output samples:
+
+    Step 2:
+
+    ```
+    WP config bits: SRP1=0 SRP0=0 CMP=0 SEC=0 TB=0 BP2=0 BP1=0 BP0=0
+    Protection range: start=0x00000000 length=0x00000000 (none)
+    Protection mode: disabled
+    ```
+
+    Step 5:
+
+    ```
+    WP config bits: SRP1=0 SRP0=1 CMP=0 SEC=1 TB=0 BP2=0 BP1=1 BP0=1
+    Protection range: start=0x007fc000 length=0x00004000 (upper 1/512)
+    Protection mode: hardware
+    ```
 
 ### WPR002.001 BIOS WP range changing test
 
@@ -137,7 +153,7 @@ For Debian based distros execute:
 
         `./flashrom -p internal --wp-list`
 
-4. Change write protection range e.g.:  
+4. Change write protection range e.g.(details on WP ranges [here](https://docs.dasharo.com/variants/asus_kgpe_d16/spi-wp/)):  
 
         `./flashrom -p internal --wp-range=0x008000,0x00001000`  
         `./flashrom -p internal --wp-enable`  
