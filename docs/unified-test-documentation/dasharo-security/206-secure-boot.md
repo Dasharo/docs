@@ -13,15 +13,16 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: Firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
 1. Proceed with the
    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+1. Proceed with the
+   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
 
 **Test steps**
 
@@ -38,13 +39,17 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 1. Log in to the default user session
 1. Open a terminal window and execute the following command:
 
-        sudo dmesg | grep secureboot
+```
+sudo dmesg | grep secureboot
+```
 
 **Expected result**
 
 The output of the command should contain the line:
 
-        secureboot: Secure boot enabled
+```
+secureboot: Secure boot enabled
+```
 
 ### SBO001.002 UEFI Secure Boot (Windows 10)
 
@@ -57,15 +62,16 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Windows 10
 
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: Firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
 1. Proceed with the
-   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#firmware)
+   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+1. Proceed with the
+   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
 
 **Test steps**
 
@@ -83,7 +89,6 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 1. Press Windows+R to open Run Window. Type msinfo32 and press Enter.
 1. In the System Information window, go to System Summary, and in the right pane
    select the Secure Boot State and check its state.
-
 
 **Expected result**
 
