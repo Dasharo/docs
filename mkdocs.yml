@@ -126,6 +126,8 @@ nav:
     # - 'Reference OS': ecosystem/reference-os.md
     # - 'Publishing Server': ecosystem/publishing-server.md
     # - 'End User Device': ecosystem/end-user.md
+      - 'Dasharo Test Specification':
+          - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
