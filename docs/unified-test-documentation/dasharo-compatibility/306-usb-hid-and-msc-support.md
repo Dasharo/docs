@@ -19,7 +19,7 @@
 
 **Test description**
 
-This test aims to verify that the external USB devices are detected 
+This test aims to verify that the external USB devices are detected
 correctly by the firmware and all basic keys work according to their labels.
 
 **Test configuration data**
@@ -132,7 +132,7 @@ by the firmware and all basic keys work according to their labels.
 
 **Test steps**
 
-1. Power on the DUT 
+1. Power on the DUT
 1. Enter the boot menu using the `BIOS_SETUP_KEY`.
 1. Use the arrow keys, Esc key and the Enter key to navigate the menus.
 

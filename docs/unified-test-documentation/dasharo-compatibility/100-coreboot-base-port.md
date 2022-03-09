@@ -16,7 +16,7 @@ its main task is to set up everything for a C-environment.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
@@ -46,7 +46,7 @@ for device init.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
@@ -104,7 +104,7 @@ stage ramstage. The ramstage does the main device init.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**

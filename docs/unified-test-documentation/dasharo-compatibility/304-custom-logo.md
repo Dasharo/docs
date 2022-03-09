@@ -25,5 +25,5 @@ This test aims to verify that the DUT is configured to display the specified
 
 **Expected result**
 
-The logo that is displayed should be in accordance with ]custom logo] 
+The logo that is displayed should be in accordance with ]custom logo]
 documentation.
