@@ -32,7 +32,7 @@ its main task is to set up everything for a C-environment.
 bootblock starting
 ```
 
-### CBP002.002 Boot into coreboot stage romstage
+### CBP002.001 Boot into coreboot stage romstage
 
 **Test description**
 
@@ -62,7 +62,7 @@ for device init.
 romstage starting
 ```
 
-### CBP004.003 Boot into coreboot stage postcar
+### CBP003.001 Boot into coreboot stage postcar
 
 **Test description**
 
@@ -91,7 +91,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 postcar starting
 ```
 
-### CBP004.004 Boot into coreboot stage ramstage
+### CBP004.001 Boot into coreboot stage ramstage
 
 **Test description**
 
@@ -149,7 +149,7 @@ Resource Allocator v4 during booting procedure.
 Pass 1 (gathering requirements)
 ```
 
-### CBP005.002 Resource allocator v4 - allocating resources
+### CBP006.001 Resource allocator v4 - allocating resources
 
 **Test description**
 
