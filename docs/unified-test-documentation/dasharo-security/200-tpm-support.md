@@ -17,13 +17,13 @@ be accessed from the operating system.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
 1. Proceed with the
-   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
 1. Proceed with the
-   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
+    [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
 1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`
 
 **Test steps**
@@ -49,7 +49,7 @@ cat /sys/class/tpm/tpm0/pcrs
 
 1. The command should return a list of PCRs and their contents.
 
-Example for TPM2.0:
+Output example for TPM2.0:
 
 ```
 sha1 :
@@ -104,7 +104,7 @@ sha256 :
   23 : 0000000000000000000000000000000000000000000000000000000000000000
 ```
 
-Example for TPM1.2:
+Output example for TPM1.2:
 
 ```
 PCR-00: B3 F3 60 E1 D5 1F 82 D4 62 E6 B9 69 92 2F 65 F4 9F 1A 5F 8E
@@ -148,20 +148,20 @@ be accessed from the operating system.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
 1. Proceed with the
-   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
 1. Proceed with the
-   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
+    [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into system.
 1. Log into system by using the proper login and password.
-1. Open a PowerShell and execute following command
+1. Open a PowerShell and execute following command:
 
 ```PowerShell
 get-tpm
@@ -170,7 +170,7 @@ get-tpm
 **Expected result**
 
 1. The command should return informations about TPM state: if the TPM is
-    present, ready and enabled.
+    present, ready and enabled:
 
 ```
 TpmPresent     : True
