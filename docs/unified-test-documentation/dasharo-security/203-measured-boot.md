@@ -15,7 +15,7 @@ TPM.a
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
 
@@ -33,9 +33,14 @@ TPM.a
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-        sudo ./cbmem -c | grep -i PCR
+```
+sudo ./cbmem -c | grep -i PCR
+```
 
 **Expected result**
 
