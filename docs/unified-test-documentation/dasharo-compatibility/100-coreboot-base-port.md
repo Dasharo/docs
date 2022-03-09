@@ -16,7 +16,8 @@ its main task is to set up everything for a C-environment.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware)
+1. Proceed with the 
+    [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -45,7 +46,8 @@ for device init.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware)
+1. Proceed with the 
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -73,7 +75,8 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware)
+1. Proceed with the
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -101,7 +104,8 @@ stage ramstage. The ramstage does the main device init.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware)
+1. Proceed with the 
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -129,7 +133,8 @@ Resource Allocator v4 during booting procedure.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware)
+1. Proceed with the
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -157,7 +162,8 @@ Resource Allocator v4 during booting procedure.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware)
+1. Proceed with the
+    [Generic test setup: firmware](generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -166,8 +172,8 @@ Resource Allocator v4 during booting procedure.
 
 **Test steps**
 
-1. Power ON the DUT.
-2. By using the serial console read the booting procedure stage.
+1. Power on the DUT.
+1. Read coreboot loading logs.
 
 **Expected result**
 
