@@ -25,7 +25,7 @@ whether it actually works.
 
 4. Proceed with the [Generic test setup: OS boot from disk](https://novacustom.gitlab.io/dasharo-compatibility/dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
 
-5. Install flashrom tools and cbfstool with the below commands:
+5. Install flashrom and cbfstool tools with the below commands:
 
     - In order to build flashrom we will need some packages and libraries.  
 For Debian based distros execute:  
@@ -120,7 +120,7 @@ protected memory
 
 4. Proceed with the [Generic test setup: OS boot from disk](https://novacustom.gitlab.io/dasharo-compatibility/dasharo-compatibility/generic-test-setup/#os-boot-from-disk) 
 
-5. Install flashrom tools and cbfstool with the below commands with the below commands:  
+5. Install flashrom and cbfstool tools with the below commands with the below commands:  
 
     - In order to build flashrom we will need some packages and libraries.  
 For Debian based distros execute:  
@@ -194,7 +194,7 @@ This test aims to verify whether it is possible to remove write protecion.
 
 4. Proceed with the [Generic test setup: OS boot from disk](https://novacustom.gitlab.io/dasharo-compatibility/dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
 
-5. Install flashrom tools and cbfstool with the below commands with the below commands:
+5. Install flashrom and cbfstool tools with the below commands with the below commands:
 
     - In order to build flashrom we will need some packages and libraries.  
 For Debian based distros execute:  
