@@ -20,12 +20,10 @@ This test aims to verify that the DUT is configured to display the specified
 
 **Test steps**
 
-1. Power on the DUT
-1. Wait for the boot logo to appear
-1. Verify that it's the NovaCustom logo
+1. Power on the DUT.
+1. Wait for the boot logo to appear.
 
 **Expected result**
 
-The NovaCustom logo should be displayed at boot:
-
-![NovaCustom logo](../../images/novacustom_logo.bmp)
+The logo that is displayed should be in accordance with ]custom logo] 
+documentation.
