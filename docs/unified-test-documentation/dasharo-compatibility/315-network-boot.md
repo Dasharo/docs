@@ -12,12 +12,11 @@ server.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../generic-test-setup/#firmware).
 
 **Test steps**
 
