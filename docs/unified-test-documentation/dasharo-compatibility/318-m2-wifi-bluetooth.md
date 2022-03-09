@@ -7,20 +7,20 @@
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#os-installer)
+   [Generic test setup: OS installer](../generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation)
+   [Generic test setup: OS installation](../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk)
+   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
 
 ### WLE001.001 Wireless card detection (Ubuntu 20.04)
 
 **Test description**
 
 This test aims to verify that the Wi-Fi/Bluetooth card is enumerated correctly
-and can be detected from the operating system
+and can be detected from the operating system.
 
 **Test configuration data**
 
@@ -33,29 +33,36 @@ and can be detected from the operating system
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-        lspci | grep AX20
+```
+lspci | grep AX20
+```
 
 **Expected result**
 
 The output of the command should contain the line:
 
-        2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+```
+2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+```
 
 The exact name and revision may be different depending on hardware configuration.
 
-### WLE001.002 Wireless card detection (Windows 10)
+### WLE001.002 Wireless card detection (Windows 11)
 
 **Test description**
 
 This test aims to verify that the Wi-Fi/Bluetooth card is enumerated correctly
-and can be detected from the operating system
+and can be detected from the operating system.
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -63,19 +70,30 @@ and can be detected from the operating system
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open PowerShell and execute following command:
-   `Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"`
-1. Note the result
+
+```
+Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
+```
+
+1. Note the result.
 
 **Expected result**
 
 The output of the command should contain a line starting with:
 
-        Intel(R) Wi-Fi 6AX200 160MHz
+```
+Intel(R) Wi-Fi 6AX200 160MHz
+```
 
-or a line starting with
+or a line starting with:
 
-        Intel(R) Wi-Fi 6AX201 160MHz
+```
+Intel(R) Wi-Fi 6AX201 160MHz
+```
 
 ### WLE002.001 Wi-Fi scanning (Ubuntu 20.04)
 
@@ -92,17 +110,21 @@ correctly and can be used from within the operating system.
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
-1. Make sure to have any Wi-Fi signal available
+1. Make sure to have any Wi-Fi signal available.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following commands as root:
 
-        nmcli radio wifi on
-        nmcli device wifi rescan
-        # Wait ~5 seconds
-        nmcli device wifi list
-
+```
+nmcli radio wifi on
+nmcli device wifi rescan
+# Wait ~5 seconds
+nmcli device wifi list
+```
 
 **Expected result**
 
@@ -124,7 +146,7 @@ IN-USE  BSSID              SSID                    MODE   CHAN  RATE        SIGN
         B0:BE:76:06:9F:22  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
 ```
 
-### WLE002.002 Wi-Fi scanning (Windows 10)
+### WLE002.002 Wi-Fi scanning (Windows 11)
 
 **Test description**
 
@@ -134,7 +156,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -143,15 +165,17 @@ correctly and can be used from within the operating system.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Locate in the bottom right corner of the screen `Internet access`
-   icon and click it
+   icon and click it.
 1. Enable Wi-Fi and note the result.
-
 
 **Expected result**
 
 After enabling Wi-Fi available networks should appear
-in the `Internet access` menu
+in the `Internet access` menu.
 
 ### WLE003.001 Bluetooth scanning (Ubuntu 20.04)
 
@@ -168,18 +192,22 @@ correctly and can be used from within the operating system.
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
-1. Enable Bluetooth and make it discoverable in any device nearby DUT
+1. Enable Bluetooth and make it discoverable in any device nearby DUT.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following commands:
 
-        bluetoothctl
-        power on
-        scan on
-        # Wait ~5 seconds
-        devices
-
+```
+bluetoothctl
+power on
+scan on
+# Wait ~5 seconds
+devices
+```
 
 **Expected result**
 
@@ -220,13 +248,16 @@ correctly and can be used from within the operating system.
 
 **Test steps**
 
-1. Enter `Notification Center` in the bottom right part of the screen
-1. Using right mouse button click on the Bluetooth icon
-1. In shown drop-down menu click `Go to settings`
-1. Click the `+` icon described as `Add Bluetooth or other device`
-1. In the `Add a device` menu click `Bluetooth`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Enter `Notification Center` in the bottom right part of the screen.
+1. Using right mouse button click on the Bluetooth icon.
+1. In shown drop-down menu click `Go to settings`.
+1. Click the `+` icon described as `Add Bluetooth or other device`.
+1. In the `Add a device` menu click `Bluetooth`.
 1. Wait a few moments until DUT scans for nearby Bluetooth devices and note
-   the result
+   the result.
 
 **Expected result**
 
