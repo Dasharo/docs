@@ -1055,7 +1055,7 @@ This test verifies that the sleep hotkey works correctly.
 **Test description**
 
 This test verifies that the power button is detected correctly by the operating
-system. In Ubuntu 20.04 OS the default function assigned to this key is suspend 
+system. In Ubuntu 20.04 OS the default function assigned to this key is suspend
 mode.
 
 **Test configuration data**
@@ -1070,19 +1070,19 @@ mode.
 
 **Test steps**
 
-1. Open the terminal and run the following command to check the power button 
+1. Open the terminal and run the following command to check the power button
    action:
 
          gsettings get org.gnome.settings-daemon.plugins.power power-button-action
 
-2. If the status is other than `suspend` run the following command to change 
+2. If the status is other than `suspend` run the following command to change
    the power button action:
 
          gsettings set org.gnome.settings-daemon.plugins.power power-button-action "suspend"
 
 3. Check the power button action again by running the following command:
 
-         gsettings get org.gnome.settings-daemon.plugins.power power-button-action 
+         gsettings get org.gnome.settings-daemon.plugins.power power-button-action
 
 4. Press the power button once and note the result.
 5. Press `Enter` and note the result.
@@ -1104,7 +1104,7 @@ mode.
 **Test description**
 
 This test verifies that the power button is detected correctly by the operating
-system. In Windows 10 OS the default function assigned to this key is sleep 
+system. In Windows 10 OS the default function assigned to this key is sleep
 mode.
 
 **Test configuration data**

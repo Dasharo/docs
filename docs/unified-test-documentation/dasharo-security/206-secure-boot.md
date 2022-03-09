@@ -6,8 +6,8 @@
 
 **Test description**
 
-Secure boot is a verification mechanism for ensuring that code launched by 
-firmware is trusted. This test verifies that secure boot can be enabled from 
+Secure boot is a verification mechanism for ensuring that code launched by
+firmware is trusted. This test verifies that secure boot can be enabled from
 Tianocore and, after the DUT reset, it is seen from the OS.
 
 **Test configuration data**
@@ -27,7 +27,7 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 **Test steps**
 
 1. Power on the DUT
-1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup 
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu
 1. Enter the `Device Manager` menu using the arrow keys and Enter
 1. Enter the `Secure Boot Configuration` submenu
@@ -55,8 +55,8 @@ secureboot: Secure boot enabled
 
 **Test description**
 
-Secure boot is a verification mechanism for ensuring that code launched by 
-firmware is trusted. This test verifies that secure boot can be enabled from 
+Secure boot is a verification mechanism for ensuring that code launched by
+firmware is trusted. This test verifies that secure boot can be enabled from
 Tianocore and, after the DUT reset, it is seen from the OS.
 
 **Test configuration data**
@@ -76,7 +76,7 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 **Test steps**
 
 1. Power on the DUT
-1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup 
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
    Menu
 1. Enter the `Device Manager` menu using the arrow keys and Enter
 1. Enter the `Secure Boot Configuration` submenu

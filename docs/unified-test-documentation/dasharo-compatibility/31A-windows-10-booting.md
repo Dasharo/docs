@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test verifies that Windows 10 OS could be installed on the Device 
+This test verifies that Windows 10 OS could be installed on the Device
 Under Test and works properly.
 
 **Test configuration data**

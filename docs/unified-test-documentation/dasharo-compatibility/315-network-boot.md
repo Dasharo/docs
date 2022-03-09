@@ -27,7 +27,7 @@ server.
 1. Type in `dhcp` to obtain an IP address
 1. Type in `chain --autofree http://boot.netboot.xyz/` to load a boot menu
 1. Enter the "Live CDs" submenu using the arrow keys and Enter
-1. Select `Debian` -> `Debian Live 11 (bullseye)` -> `Debian 11 Gnome` and 
+1. Select `Debian` -> `Debian Live 11 (bullseye)` -> `Debian 11 Gnome` and
     press Enter
 
 **Expected result**

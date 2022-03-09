@@ -19,7 +19,7 @@
 
 **Test description**
 
-This test verifies how quickly the battery discharges while in sleep mode in 
+This test verifies how quickly the battery discharges while in sleep mode in
 the OS.
 
 **Test configuration data**
@@ -48,7 +48,7 @@ the OS.
 
 **Expected result**
 
-1. The battery should discharge at a similar rate as in the table below (take 
+1. The battery should discharge at a similar rate as in the table below (take
    the battery wear into account).
 
 | Time           | Battery level    |
@@ -64,7 +64,7 @@ the OS.
 
 **Test description**
 
-This test verifies how quickly the battery discharges while in sleep mode in 
+This test verifies how quickly the battery discharges while in sleep mode in
 the OS.
 
 **Test configuration data**
@@ -92,7 +92,7 @@ the OS.
 
 **Expected result**
 
-1. The battery should discharge at a similar rate as in the table below (take 
+1. The battery should discharge at a similar rate as in the table below (take
    the battery wear into account).
 
 | Time           | Battery level    |

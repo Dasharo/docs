@@ -31,14 +31,14 @@ be accessed from the operating system.
 1. Power on the DUT.
 1. Boot into system.
 1. Log into system by using the proper login and password.
-1. If your device is equipped with TPM2.0 - execute the following command 
+1. If your device is equipped with TPM2.0 - execute the following command
     in terminal:
 
 ```
 tpm2_pcrlist
 ```
 
-1. If your device is equipped with TPM1.2 - execute the following command 
+1. If your device is equipped with TPM1.2 - execute the following command
     in terminal:
 
 ```
@@ -169,7 +169,7 @@ get-tpm
 
 **Expected result**
 
-1. The command should return informations about TPM state: if the TPM is 
+1. The command should return informations about TPM state: if the TPM is
     present, ready and enabled.
 
 ```

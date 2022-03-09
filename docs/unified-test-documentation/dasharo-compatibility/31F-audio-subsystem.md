@@ -207,15 +207,15 @@ after plugging in the 3.5 mm jack into the slot.
 
 **Test steps**
 
-1. Plug in a headset jack into micro jack slot located on the right side of the 
+1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. When the `Select Audio Device` menu appears, select what type of external
     device has been connected to the laptop (headset).
 1. Open a terminal window.
-1. Run `amixer -c 0 contents | grep -A 2 'Front Headphone Jack'` in the 
+1. Run `amixer -c 0 contents | grep -A 2 'Front Headphone Jack'` in the
     terminal.
 1. Disconnect the headset from the laptop.
-1. Run `amixer -c 0 contents | grep -A 2 'Front Headphone Jack'` in the 
+1. Run `amixer -c 0 contents | grep -A 2 'Front Headphone Jack'` in the
     terminal again.
 
 **Expected result**
@@ -232,7 +232,7 @@ after plugging in the 3.5 mm jack into the slot.
 
 **Test description**
 
-This test aims to verify that the external headset is properly recognized 
+This test aims to verify that the external headset is properly recognized
 after plugging in the 3.5 mm jack into the slot.
 
 **Test configuration data**
@@ -249,25 +249,25 @@ after plugging in the 3.5 mm jack into the slot.
 
 1. Plug in a headset jack into micro jack slot located on the right
     side of the laptop.
-1. After the `Which device did you plug in` menu appearing, select what type 
+1. After the `Which device did you plug in` menu appearing, select what type
     of external device has been connected to the laptop (headset).
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button and then using the left mouse button
     click `Open Sound Settings`.
 1. Locate `Input` section and click on the `Device properties` option.
 1. In `Device properties` window select option `Additional device properties`.
-1. Locate in `General` the section field named `Jack Information`. 
+1. Locate in `General` the section field named `Jack Information`.
 1. Close the window `Microphone properties`.
 1. Disconnect a headset from the laptop.
-1. Select again the `Addtional device properties` option and locate again 
+1. Select again the `Addtional device properties` option and locate again
     field named `Jack information`.
 
 **Expected result**
 
-1. `Jack Information` field in the first case should show the position 
+1. `Jack Information` field in the first case should show the position
     `Front Panel 3.5 mm Jack`.
-1. After disconnecting a headset from the laptop and checking again 
-    option `Addtional device properties` field `Jack Information` should not 
+1. After disconnecting a headset from the laptop and checking again
+    option `Addtional device properties` field `Jack Information` should not
     contain the phrase `Front Panel 3.5 mm Jack`.
 
 ### AUD005.001 External headset audio playback (Ubuntu 20.04)
@@ -289,7 +289,7 @@ recordings by using the external headset speakers.
 
 **Test steps**
 
-1. Plug in a headset jack into micro jack slot located on the right side of the 
+1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Open a terminal window and execute the following command:
 
@@ -320,7 +320,7 @@ recordings by using the external headset speakers.
 
 **Test steps**
 
-1. Plug in a headset jack into micro jack slot located on the right side of the 
+1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
    it using the left mouse button to open volume menu.
@@ -334,7 +334,7 @@ Sound should be played from the external speakers.
 
 **Test description**
 
-This test aims to verify that the audio subsystem is able to capture audio 
+This test aims to verify that the audio subsystem is able to capture audio
 from external headset.
 
 **Test configuration data**
@@ -349,7 +349,7 @@ from external headset.
 
 **Test steps**
 
-1. Plug in a headset jack into micro jack slot located on the right side of the 
+1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Open a terminal window.
 1. Execute `arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav` and make some
@@ -361,16 +361,16 @@ from external headset.
 
 **Expected result**
 
-1. During playback of the first recording, all noise that was made for headset 
+1. During playback of the first recording, all noise that was made for headset
     should be clearly heard.
-2. During playback of the second recording, all noise that was made for DUT 
+2. During playback of the second recording, all noise that was made for DUT
     should be quiet or not heard.
 
 ### AUD006.002 External headset audio capture (Windows 10)
 
 **Test description**
 
-This test aims to verify that the audio subsystem is able to capture audio 
+This test aims to verify that the audio subsystem is able to capture audio
 from external headset.
 
 **Test configuration data**
@@ -385,7 +385,7 @@ from external headset.
 
 **Test steps**
 
-1. Plug in a headset jack into micro jack slot located on the right side of the 
+1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button and then using the left mouse button
@@ -393,7 +393,7 @@ from external headset.
 1. Locate the `Test your microphone` section and observe it.
 1. Create some noise for the headset to capture and note the result.
     For example, say something.
-1. Create some noise for the DUT. For example tap a few times in the laptop 
+1. Create some noise for the DUT. For example tap a few times in the laptop
     casing.
 
 **Expected result**

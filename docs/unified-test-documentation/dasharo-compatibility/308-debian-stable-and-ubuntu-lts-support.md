@@ -15,7 +15,7 @@
 
 **Test description**
 
-This test verifies that Debian stable distribution could be installed on 
+This test verifies that Debian stable distribution could be installed on
 the DUT and works properly.
 
 **Test configuration data**
@@ -40,7 +40,7 @@ The `OPERATING_SYSTEM` login screen should be displayed.
 
 **Test description**
 
-This test verifies that Ubuntu LTS modern ditribution could be installed 
+This test verifies that Ubuntu LTS modern ditribution could be installed
 on the DUT and works properly.
 
 **Test configuration data**
