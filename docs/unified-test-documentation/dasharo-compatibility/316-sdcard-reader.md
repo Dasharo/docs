@@ -126,7 +126,7 @@ The output from the last command should contain 2 indentical checksums:
 **Test description**
 
 This test aims to verify that the SD Card reader is initialized correctly and
-can be used from the operating system
+can be used from the operating system.
 
 **Test configuration data**
 

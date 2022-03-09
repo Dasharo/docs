@@ -17,22 +17,25 @@ correctly and can be accessed from the operating system
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+    [Generic test setup: firmware](../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk)
-1. Install ffprobe: `sudo apt install ffmpeg`
+    [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
+1. Install ffprobe: `sudo apt install ffmpeg`.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and run the following commands:
 
-```bash
-ffprobe /dev/video0 # the regular camera
-ffprobe /dev/video2 # infrared Windows Hello camera
+```
+ffprobe /dev/video0
+ffprobe /dev/video2
 ```
 
 **Expected result**
@@ -76,6 +79,9 @@ correctly and can be accessed from the operating system
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open `Camera` app and note the result
 
 **Expected result**
