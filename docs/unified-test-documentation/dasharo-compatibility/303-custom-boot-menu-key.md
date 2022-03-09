@@ -7,7 +7,7 @@
 **Test description**
 
 This test aims to verify that the DUT is configured to use custom boot menu and
-setup menu hotkeys.
+setup menu (if it exists) hotkeys.
 
 **Test configuration data**
 
@@ -16,15 +16,15 @@ setup menu hotkeys.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../generic-test-setup/#firmware).
 
 **Test steps**
 
-1. Power on the DUT and hold the `BIOS_SETUP_KEY` to enter the UEFI Setup Menu
+1. Power on the DUT and hold the `BIOS_SETUP_KEY` to enter the UEFI Setup Menu.
 1. Once the DUT has booted into the setup menu, power it off using the power
-   button
+    button.
 1. Power on the DUT again and hold the `BOOT_MENU_KEY` to enter the UEFI Boot
-   Menu
+    Menu.
 
 **Expected result**
 
