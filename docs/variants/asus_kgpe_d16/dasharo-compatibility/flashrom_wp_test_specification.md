@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### WPR001.001 BIOS WP enable test
+### WPR001.001 BIOS WP enable
 
 #### Test description
 
@@ -97,7 +97,7 @@ For Debian based distros execute:
     Protection mode: hardware
     ```
 
-### WPR002.001 BIOS WP range changing test
+### WPR002.001 BIOS WP range changing
 
 #### Test description
 
@@ -172,7 +172,7 @@ For Debian based distros execute:
         `Sucessfully set the requested mode.`
 2. WP status should change between 1. and 5. test steps.
 
-### BIOS WP disable test
+### BIOS WP disable
 
 ### Test description
 
