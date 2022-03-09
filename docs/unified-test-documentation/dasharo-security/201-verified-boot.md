@@ -12,8 +12,9 @@ functional.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
-1. Disable Secure Boot
+1. Proceed with the
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
+1. Disable Secure Boot.
 
 **Test steps**
 
@@ -44,15 +45,15 @@ functional.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
+    [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
 1. Download `cbmem` and `flashrom` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
-   to the DUT.
+    to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -76,8 +77,8 @@ VBOOT: Loading verstage.
 TPM: Extending digest for VBOOT: boot mode into PCR 0
 TPM: Extending digest for VBOOT: GBB HWID into PCR 1
 VBOOT WORK  8. 0x76c05000 0x00014000
- PCR-0 2547cc736e951fa4919853c43ae890861a3b3264000000000000000000000000 SHA256 [VBOOT: boot mode]
- PCR-1 e3324765a25f8a59c7c20cc35c1c33a8ab384159d2b40a269246b0b4491cdf89 SHA256 [VBOOT: GBB HWID]
+PCR-0 2547cc736e951fa4919853c43ae890861a3b3264000000000000000000000000 SHA256 [VBOOT: boot mode]
+PCR-1 e3324765a25f8a59c7c20cc35c1c33a8ab384159d2b40a269246b0b4491cdf89 SHA256 [VBOOT: GBB HWID]
 ```
 
 ### VBO002.001 Verified boot: Booting from Slot A (firmware)
@@ -89,8 +90,9 @@ proceed to boot from Slot A.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
-1. Disable Secure Boot
+1. Proceed with the
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
+1. Disable Secure Boot.
 
 **Test steps**
 
@@ -166,16 +168,16 @@ should revert to booting from the recovery slot.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
+   [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
 1. Download `cbmem` and `flashrom` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
-   to the DUT
-1. Disable Secure Boot
+   to the DUT.
+1. Disable Secure Boot.
 1. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/s/DAn2sdk3osSxG8A)
     signed with wrong vboot keys.
 
