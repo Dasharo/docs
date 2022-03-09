@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test verifies that firmware is able to correctly
+This test aims to verify that firmware is able to correctly
 detect NVMe disk in the M.2 slot.
 
 **Test configuration data**
@@ -33,7 +33,8 @@ detect NVMe disk in the M.2 slot.
 
 **Test description**
 
-This test verifies booting the Operating System from NVMe disk in the M.2 slot.
+This test aims to verify booting the Operating System from NVMe disk in
+the M.2 slot.
 
 **Test configuration data**
 
@@ -73,7 +74,8 @@ sudo mount | grep 'on / '
 
 **Test description**
 
-This test verifies booting the Operating System from NVMe disk in the M.2 slot.
+This test aims to verify booting the Operating System from NVMe disk in the
+M.2 slot.
 
 **Test configuration data**
 
