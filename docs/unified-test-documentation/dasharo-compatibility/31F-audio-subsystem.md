@@ -162,10 +162,21 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 **Test steps**
 
-1. Open a terminal window.
-1. Execute `arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav` and make some
-   noise aroud DUT. For example, say something.
-1. Execute `aplay /tmp/test-mic.wav` and note the result.
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+```
+arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav
+```
+
+1. Make some noise aroud DUT. For example, say something.
+1. Execute the following command:
+
+```
+aplay /tmp/test-mic.wav
+```
 
 **Expected result**
 
@@ -188,6 +199,9 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button and then using the left mouse button
     click `Open Sound Settings`.
@@ -218,16 +232,25 @@ after plugging in the 3.5 mm jack into the slot.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. When the `Select Audio Device` menu appears, select what type of external
     device has been connected to the laptop (headset).
-1. Open a terminal window.
-1. Run `amixer -c 0 contents | grep -A 2 'Front Headphone Jack'` in the
-    terminal.
+1. Open a terminal window and execute the following command:
+
+```
+amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
+```
+
 1. Disconnect the headset from the laptop.
-1. Run `amixer -c 0 contents | grep -A 2 'Front Headphone Jack'` in the
-    terminal again.
+1. Execute the following command again:
+
+```
+amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
+```
 
 **Expected result**
 
@@ -261,6 +284,9 @@ after plugging in the 3.5 mm jack into the slot.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right
     side of the laptop.
 1. After the `Which device did you plug in` menu appearing, select what type
@@ -302,6 +328,9 @@ recordings by using the external headset speakers.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Open a terminal window and execute the following command:
@@ -334,6 +363,9 @@ recordings by using the external headset speakers.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
@@ -362,15 +394,36 @@ from external headset.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
-1. Open a terminal window.
-1. Execute `arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav` and make some
-    noise for the headset. For example, say something.
-1. Execute `aplay /tmp/test-mic.wav` and note the result.
-1. Execute `arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic-1.wav` and make some
-    noise for the DUT. For example tap a few times in the laptop casing.
-1. Execute `aplay /tmp/test-mic.wav` and note the result.
+1. Open a terminal window and execute the following command:
+
+```
+arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav
+```
+
+1. Make some noise for the headset. For example, say something.
+1. Execute the following command:
+
+```
+aplay /tmp/test-mic.wav
+```
+
+1. Execute the following command:
+
+```
+arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic-1.wav
+```
+
+1. Make some noise for the DUT. For example tap a few times in the laptop casing.
+1. Execute the following command:
+
+```
+aplay /tmp/test-mic.wav
+```
 
 **Expected result**
 
@@ -397,6 +450,9 @@ from external headset.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
