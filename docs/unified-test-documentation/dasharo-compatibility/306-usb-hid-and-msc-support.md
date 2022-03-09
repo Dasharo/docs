@@ -19,7 +19,7 @@
 
 **Test description**
 
-This test test aims to verify that the external USB devices are detected 
+This test aims to verify that the external USB devices are detected 
 correctly by the firmware and all basic keys work according to their labels.
 
 **Test configuration data**
@@ -48,7 +48,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 **Test description**
 
-This test test aims to verify that the external USB devices are detected
+This test aims to verify that the external USB devices are detected
 correctly by the `OPERATING_SYSTEM` and all basic keys work according to their
 labels.
 
@@ -81,7 +81,7 @@ watch -n1 lsusb
 
 **Test description**
 
-This test verifies that the external USB devices are detected correctly
+This test aims to verify that the external USB devices are detected correctly
 by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
@@ -113,7 +113,7 @@ while (1) {Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^US
 
 **Test description**
 
-This test verifies that the external USB keyboard is detected correctly
+This test aims to verify that the external USB keyboard is detected correctly
 by the firmware and all basic keys work according to their labels.
 
 **Test configuration data**
@@ -139,7 +139,7 @@ by the firmware and all basic keys work according to their labels.
 
 **Test description**
 
-This test verifies that the external USB keyboard is detected correctly
+This test aims to verify that the external USB keyboard is detected correctly
 by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
@@ -184,7 +184,7 @@ libinput debug-events --show-keycodes
 
 **Test description**
 
-This test verifies that the external USB keyboard is detected correctly
+This test aims to verify that the external USB keyboard is detected correctly
 by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
