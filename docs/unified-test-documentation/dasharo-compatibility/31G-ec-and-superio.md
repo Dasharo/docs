@@ -7,13 +7,13 @@
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+    [Generic test setup: firmware](../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk)
+    [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
 
 ### ECR001.001 Battery monitoring - charge level in OS (Ubuntu 20.04)
 
@@ -24,7 +24,6 @@ This test verifies whether the battery charge level is reported in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -33,13 +32,16 @@ This test verifies whether the battery charge level is reported in the OS.
 
 **Test steps**
 
-1. Locate the power menu in the upper right corner of the screen
-1. Open the power menu and locate the battery status indicator
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Locate the power menu in the upper right corner of the screen.
+1. Open the power menu and locate the battery status indicator.
 
 **Expected result**
 
 1. The battery status indicator should show the current charge level (percentage
-   left).
+    left).
 
 ### ECR001.002 Battery monitoring - charge level in OS (Windows 10)
 
@@ -50,7 +52,6 @@ This test verifies whether the battery charge level is reported in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Windows 10
 
 **Test setup**
@@ -59,12 +60,15 @@ This test verifies whether the battery charge level is reported in the OS.
 
 **Test steps**
 
-1. Locate the power menu in the lower right corner of the screen
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Locate the power menu in the lower right corner of the screen.
 
 **Expected result**
 
 1. The battery status indicator should show the current charge level (percentage
-   left).
+    left).
 
 ### ECR002.001 Battery monitoring - charging state in OS (Ubuntu 20.04)
 
@@ -75,7 +79,6 @@ This test verifies that the power supply state is detected correctly in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -84,20 +87,23 @@ This test verifies that the power supply state is detected correctly in the OS.
 
 **Test steps**
 
-1. Locate the power menu in the upper right corner of the screen
-1. Open the power menu and locate the battery status indicator
-1. Note the current state
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Locate the power menu in the upper right corner of the screen.
+1. Open the power menu and locate the battery status indicator.
+1. Note the current state.
 1. Unplug the power supply and wait for the battery charge state to change to
-   `Discharging`
+    `Discharging`.
 1. Plug in the power supply and wait for the battery charge state to change to
-   `Charging`
+    `Charging`.
 
 **Expected result**
 
 1. The battery charge indicator should correctly show whether the power supply
-   is plugged in or not.
+    is plugged in or not.
 1. The battery charge indicator should detect the AC adapter state change
-   within seconds of the adapter being plugged in / out
+    within seconds of the adapter being plugged in / out.
 
 ### ECR002.002 Battery monitoring - charging state in OS (Windows 10)
 
@@ -108,7 +114,6 @@ This test verifies that the power supply state is detected correctly in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Windows 10
 
 **Test setup**
@@ -117,20 +122,23 @@ This test verifies that the power supply state is detected correctly in the OS.
 
 **Test steps**
 
-1. Locate the power menu in the lower right corner of the screen
-1. Open the power menu and locate the battery status indicator
-1. Note the current state
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Locate the power menu in the lower right corner of the screen.
+1. Open the power menu and locate the battery status indicator.
+1. Note the current state.
 1. Unplug the power supply and wait for the battery charge state to change to
-   `on battery`
+    `on battery`.
 1. Plug in the power supply and wait for the battery charge state to change to
-   `plugged in`
+    `plugged in`.
 
 **Expected result**
 
 1. The battery charge indicator should correctly show whether the power supply
    is plugged in or not.
 1. The battery charge indicator should detect the AC adapter state change
-   within seconds of the adapter being plugged in / out
+   within seconds of the adapter being plugged in / out.
 
 ### ECR003.001 Touchpad in OS - (Ubuntu 20.04)
 
@@ -142,7 +150,6 @@ by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -153,11 +160,11 @@ by the operating system.
 **Test steps**
 
 1. Verify that the cursor can be moved with the touchpad and that clicking works
-   (test both clicking and tapping)
+    (test both clicking and tapping).
 1. Run `sudo libinput debug-events` in the terminal:
-    1. Verify that scrolling with 2 fingers generates a `POINTER_AXIS` event
-    1. Verify that pinching with 2 fingers generates a `GESTURE_PINCH_UPDATE` event
-1. Press `Ctrl + C` to terminate the `libinput` program
+    1. Verify that scrolling with 2 fingers generates a `POINTER_AXIS` event,
+    1. Verify that pinching with 2 fingers generates a `GESTURE_PINCH_UPDATE` event.
+1. Press `Ctrl + C` to terminate the `libinput` program.
 
 **Expected result**
 
@@ -174,7 +181,6 @@ by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Windows 10
 
 **Test setup**
@@ -184,10 +190,10 @@ by the operating system.
 **Test steps**
 
 1. Verify that the cursor can be moved with the touchpad and that clicking works
-   (test both clicking and tapping)
+   (test both clicking and tapping).
 1. Open `C:\Windows` in `Windows Explorer`
-    1. Verify that scrolling with 2 fingers moves the content of the window
-    1. Verify that pinching with 2 fingers zooms in and zooms out the content
+    1. Verify that scrolling with 2 fingers moves the content of the window,
+    1. Verify that pinching with 2 fingers zooms in and zooms out the content.
 
 **Expected result**
 
