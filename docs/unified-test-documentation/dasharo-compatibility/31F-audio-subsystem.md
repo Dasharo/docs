@@ -7,15 +7,15 @@
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+    [Generic test setup: firmware](../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk)
+    [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
 1. Install the `alsa-utils` package:
-    `sudo apt install alsa-utils`
+    `sudo apt install alsa-utils`.
 
 ### AUD001.001 Audio subsystem detection (Ubuntu 20.04)
 
@@ -27,7 +27,6 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -36,18 +35,25 @@ and can be detected from the operating system.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-        cat /sys/class/sound/card0/hwC0D*/chip_name
+```
+cat /sys/class/sound/card0/hwC0D*/chip_name
+```
 
 **Expected result**
 
 The output of the command should return a list of detected audio devices:
 
-        ALC293
-        Tigerlake HDMI
+```
+ALC293
+Tigerlake HDMI
+```
 
-### AUD001.002 Audio subsystem detection (Windows 10)
+### AUD001.002 Audio subsystem detection (Windows 11)
 
 **Test description**
 
@@ -57,8 +63,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -66,13 +71,16 @@ and can be detected from the operating system.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open `Start Menu`, find and open `Device Manager`.
 1. Find `Audio inputs and outputs` group and expand it. Note the result.
 
 **Expected result**
 
 1. `Microphone (Realtek(R) Audio)` and `Speakers (Realtek(R) Audio)`
-   should be listed in the `Audio inputs and outputs` group.
+    should be listed in the `Audio inputs and outputs` group.
 1. Both audio devices should not report any error.
 
 ### AUD002.001 Audio playback (Ubuntu 20.04)
@@ -85,7 +93,6 @@ recordings.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -94,17 +101,22 @@ recordings.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-        pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo  0
-        pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 65535
-        speaker-test
+```
+pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo  0
+pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 65535
+speaker-test
+```
 
 **Expected result**
 
 Sound should be played from the integrated speakers.
 
-### AUD002.002 Audio playback (Windows 10)
+### AUD002.002 Audio playback (Windows 11)
 
 **Test description**
 
@@ -114,8 +126,7 @@ recordings.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -123,8 +134,11 @@ recordings.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
-   it using the left mouse button to open volume menu.
+    it using the left mouse button to open volume menu.
 2. In the volume menu, click the rightmost part of it and note the reult.
 
 **Expected result**
@@ -140,7 +154,6 @@ This test aims to verify that the audio subsystem is able to capture audio.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -158,7 +171,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 Recorded audio clip is recorded correctly and played back.
 
-### AUD003.002 Audio capture (Windows 10)
+### AUD003.002 Audio capture (Windows 11)
 
 **Test description**
 
@@ -167,8 +180,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -177,11 +189,11 @@ This test aims to verify that the audio subsystem is able to capture audio.
 **Test steps**
 
 1. Find the `Speakers` icon in the bottom right part of the screen and click
-   it using the right mouse button and then using the left mouse button
-   click `Open Sound Settings`.
+    it using the right mouse button and then using the left mouse button
+    click `Open Sound Settings`.
 1. Locate the `Test your microphone` section and observe it.
 1. Create some noise for the DUT to capture and note the result.
-   For example, say something.
+    For example, say something.
 
 **Expected result**
 
@@ -198,7 +210,6 @@ after plugging in the 3.5 mm jack into the slot.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -222,13 +233,17 @@ after plugging in the 3.5 mm jack into the slot.
 
 1. The output of the first command should not be empty and contains the line:
 
-        : values=on
+```
+: values=on
+```
 
 2. The output of the second command should not be empty and contains the line:
 
-        : values=off
+```
+: values=off
+```
 
-### AUD004.002 External headset recognition (Windows 10)
+### AUD004.002 External headset recognition (Windows 11)
 
 **Test description**
 
@@ -238,8 +253,7 @@ after plugging in the 3.5 mm jack into the slot.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -280,7 +294,6 @@ recordings by using the external headset speakers.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -293,15 +306,17 @@ recordings by using the external headset speakers.
     laptop.
 1. Open a terminal window and execute the following command:
 
-        pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo  0
-        pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 65535
-        speaker-test
+```
+pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo  0
+pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 65535
+speaker-test
+```
 
 **Expected result**
 
 Sound should be played from the external speakers.
 
-### AUD005.002 External headset audio playback (Windows 10)
+### AUD005.002 External headset audio playback (Windows 11)
 
 **Test description**
 
@@ -311,8 +326,7 @@ recordings by using the external headset speakers.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -340,7 +354,6 @@ from external headset.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -366,7 +379,7 @@ from external headset.
 2. During playback of the second recording, all noise that was made for DUT
     should be quiet or not heard.
 
-### AUD006.002 External headset audio capture (Windows 10)
+### AUD006.002 External headset audio capture (Windows 11)
 
 **Test description**
 
@@ -376,8 +389,7 @@ from external headset.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 

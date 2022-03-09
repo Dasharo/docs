@@ -58,6 +58,9 @@ This test verifies initialization of the laptop's embedded LCD in the OS.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Observe the internal LCD after the `OPERATING_SYSTEM` has booted
 
 **Expected result**
@@ -74,7 +77,6 @@ This test verifies initialization of the laptop's embedded LCD in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Windows 10
 
 **Test setup**
@@ -83,6 +85,9 @@ This test verifies initialization of the laptop's embedded LCD in the OS.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Observe the internal LCD after the `OPERATING_SYSTEM` has booted.
 
 **Expected result**
@@ -107,6 +112,9 @@ This test verifies initialization of the external HDMI display in the OS.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Switch the display mode between `Mirror` and `Join Displays`.
 
 **Expected result**
@@ -131,6 +139,9 @@ This test verifies initialization of the external HDMI display in the OS.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Switch the display mode between `Duplicate` and `Extend`.
 
 **Expected result**
