@@ -47,7 +47,7 @@ for device init.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -76,7 +76,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -105,7 +105,7 @@ stage ramstage. The ramstage does the main device init.
 **Test setup**
 
 1. Proceed with the 
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -134,7 +134,7 @@ Resource Allocator v4 during booting procedure.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -163,7 +163,7 @@ Resource Allocator v4 during booting procedure.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
+    [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**
 

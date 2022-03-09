@@ -12,26 +12,25 @@ module combinations specified in the HCL
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
 
 1. Prepare the memory modules specified in the HCL.
 1. Proceed with the
-   [Generic test setup: Firmware](../generic-test-setup/#firmware)
+    [Generic test setup: Firmware](../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation).
 
 **Test steps**
 
-1. Insert the memory module to the DUT's memory port, starting with the first
+1. Insert the memory module into the DUT's memory port, starting with the first
     position from the HCL.
-1. Power On DUT.
-1. Power OFF DUT.
-1. Repeat the `test steps` for all positions in the HCL
+1. Power on the DUT.
+1. Power off the DUT.
+1. Repeat the `test steps` for all positions in the HCL.
 
 **Expected result**
 
