@@ -10,7 +10,7 @@ Measured Boot is a method for detecting changes to firmware by storing hashes
 of each firmware component into the TPM PCR registers. If a PCR changes value
 across reboots, a change to the firmware has been made. This test aims to
 verify that Measured Boot is functional and measurements are stored into the
-TPM.a
+TPM.a.
 
 **Test configuration data**
 
@@ -20,16 +20,16 @@ TPM.a
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+   [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+   [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
+   [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
 1. Download `cbmem` and `flashrom` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
-   to the DUT
-1. Disable Secure Boot
+   to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 
