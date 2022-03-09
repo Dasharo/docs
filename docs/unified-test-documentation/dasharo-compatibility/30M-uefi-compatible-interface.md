@@ -23,7 +23,7 @@ UEFI-aware Operating System.
 
 **Test steps**
 
-1. Power ON the DUT.
+1. Power on the DUT.
 1. Enter the boot menu using the `BIOS_SETUP_KEY`.
 1. Select the `Boot Menu` and press `Enter`.
 1. Select the USB stick and press `Enter`.
@@ -59,7 +59,7 @@ UEFI-aware Operating System.
 
 **Test steps**
 
-1. Power ON the DUT.
+1. Power on the DUT.
 1. Enter the boot menu using the `BIOS_SETUP_KEY`.
 1. Select the `Boot Menu` and press `Enter`.
 1. Select the USB stick and press `Enter`.
