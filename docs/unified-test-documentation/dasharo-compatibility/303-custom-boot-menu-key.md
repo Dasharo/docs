@@ -20,11 +20,12 @@ setup menu (if it exists) hotkeys.
 
 **Test steps**
 
-1. Power on the DUT and hold the `BIOS_SETUP_KEY` to enter the UEFI Setup Menu.
+1. Power on the DUT.
+1. Hold the `BIOS_SETUP_KEY` to enter the UEFI Setup Menu.
 1. Once the DUT has booted into the setup menu, power it off using the power
     button.
-1. Power on the DUT again and hold the `BOOT_MENU_KEY` to enter the UEFI Boot
-    Menu.
+1. Power on the DUT again.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
 
 **Expected result**
 

@@ -29,6 +29,7 @@ module combinations specified in the HCL
 1. Insert the memory module into the DUT's memory port, starting with the first
     position from the HCL.
 1. Power on the DUT.
+1. Boot into the system.
 1. Power off the DUT.
 1. Repeat the `test steps` for all positions in the HCL.
 

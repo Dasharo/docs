@@ -36,7 +36,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 **Test steps**
 
-1. Power ON the DUT.
+1. Power on the DUT.
 1. Enter the boot menu using the `BIOS_SETUP_KEY`.
 1. Select the `Boot Menu`, press `Enter` and note the result.
 
@@ -64,6 +64,8 @@ labels.
 **Test steps**
 
 1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and run the follwing command:
 
 ```
@@ -96,6 +98,8 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 **Test steps**
 
 1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open PowerShell and and run the follwing command:
 
 ```
@@ -128,7 +132,8 @@ by the firmware and all basic keys work according to their labels.
 
 **Test steps**
 
-1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+1. Power on the DUT 
+1. Enter the boot menu using the `BIOS_SETUP_KEY`.
 1. Use the arrow keys, Esc key and the Enter key to navigate the menus.
 
 **Expected result**
@@ -155,6 +160,9 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open a terminal window and run the follwing command:
 
 ```
@@ -199,6 +207,9 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open `notepad`.
 1. Test the alphanumeric keys and note the generated characters.
 1. Test non-alphanumeric keys and verify that they generate the signs.
