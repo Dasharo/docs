@@ -13,25 +13,29 @@ according to the defined values.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BOOT_MENU_KEY` = `F7`
 
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#os-installer)
+   [Generic test setup: OS installer](../generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation)
+   [Generic test setup: OS installation](../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk)
-1. Install `lm-sensors` and `stress-ng` on the DUT
+   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
+1. Install `lm-sensors` and `stress-ng` on the DUT.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open the terminal window and execute the following command:
 
-        sensors | grep 'Package id 0'
+```
+sensors | grep 'Package id 0'
+```
 
 1. Verify using `sensors` that the temperature is below 40°C
 1. If the temperature is above 40, enable fan turbo mode (Fn + 1) until it cools
@@ -40,7 +44,9 @@ according to the defined values.
    key) is spinning
 1. In the terminal window, run following command:
 
-        stress-ng -c 8
+```
+stress-ng -c 8
+```
 
 1. Verify using `sensors` that the temperature increases above 40
 1. Flip the laptop over and check if the CPU fan is spinning
@@ -66,20 +72,25 @@ according to the defined values.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#ps-installer)
+   [Generic test setup: OS installer](../generic-test-setup/#ps-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation)
+   [Generic test setup: OS installation](../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk)
-1. Install `nvidia-smi` and `mesa-utils` on the DUT
+   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
+1. Install `nvidia-smi` and `mesa-utils` on the DUT.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open the terminal window and execute the following command:
 
-        watch -n1 nvidia-smi
+```
+watch -n1 nvidia-smi
+```
 
 1. Verify using that the temperature is below 40°C
 1. If the temperature is above 40, enable fan turbo mode (Fn + 1) until it cools
@@ -88,7 +99,9 @@ according to the defined values.
    key) is spinning
 1. In another terminal window, run following command:
 
-        _NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __GL_SYNC_TO_VBLANK=0 glxgears
+```
+_NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __GL_SYNC_TO_VBLANK=0 glxgears
+```
 
 1. Verify that the temperature increases above 40
 1. Flip the laptop over and check if the GPU fan is spinning
