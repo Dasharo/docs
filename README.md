@@ -41,7 +41,7 @@ There should be no TBD or TODO visible on website.
 * Install hooks into repo:
 
 ```
-pre-commit install
+pre-commit install --hook-type commit-msg
 ```
 
 * Enjoy automatic checks on each `git commit` action!

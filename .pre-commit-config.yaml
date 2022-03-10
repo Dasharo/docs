@@ -17,6 +17,13 @@ repos:
       - id: yamllint
         args: [-c=.yamllint]
 
+  - repo: https://github.com/talos-systems/conform
+    rev: v0.1.0-alpha.25
+    hooks:
+      - id: conform
+        stages:
+          - commit-msg
+
 ci:
   autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
   autofix_prs: false
