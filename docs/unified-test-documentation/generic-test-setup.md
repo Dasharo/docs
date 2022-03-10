@@ -16,10 +16,10 @@ need to execute the setup actions before each independent case.
     1. or you can build one yourself as shown in the `building` document
         dedicated for platform which is used by you.
 1. Flash `FIRMWARE` binary to the DUT:
-    1. If coreboot is not yet installed: refer to 
+    1. If coreboot is not yet installed: refer to
         `Flashing with external programmer` document dedicated for platform
         which is used by you.
-    1. If coreboot is already installed: refer to 
+    1. If coreboot is already installed: refer to
         `Flashing with internal programmer` document dedicated for platform
         which is used by you.
 
