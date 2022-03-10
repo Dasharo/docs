@@ -7,7 +7,7 @@
 **Test description**
 
 This test verifies whether the DUT might be put into suspend mode and then, by
-using the power button, might be properly resumed. This test case may be 
+using the power button, might be properly resumed. This test case may be
 re-done several times to specify the platform stability.
 
 **Test configuration data**
@@ -51,7 +51,7 @@ journalctl | grep suspend
 1. After running suspend command the platform should enter the suspend mode.
 1. After pressing power button the platform should initiate the resume
     procedure.
-1. Output of the last command should contains the line with the following 
+1. Output of the last command should contains the line with the following
     statement:
 
 ```

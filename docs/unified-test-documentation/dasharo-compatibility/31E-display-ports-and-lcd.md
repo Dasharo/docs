@@ -19,7 +19,7 @@
 
 **Test description**
 
-This test aims to verify initialization of the laptop's embedded LCD screen 
+This test aims to verify initialization of the laptop's embedded LCD screen
 during firmware execution phase.
 
 **Test configuration data**
