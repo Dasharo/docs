@@ -33,7 +33,7 @@ The `Payload [memtest]` option should be visible as the one of boot menu options
 
 **Test description**
 
-This test aims to verify that the DUT enters the Memtest86+ boot option.
+This test aims to verify that the DUT enters the Memtestboot option.
 
 **Test configuration data**
 
