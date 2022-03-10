@@ -16,3 +16,7 @@ repos:
     hooks:
       - id: yamllint
         args: [-c=.yamllint]
+
+ci:
+  autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
+  autofix_prs: false
