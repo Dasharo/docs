@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test aims to verify that the Memtest entry is available in DUT boot 
+This test aims to verify that the Memtest entry is available in DUT boot
     menu.
 
 **Test configuration data**
@@ -15,7 +15,7 @@ This test aims to verify that the Memtest entry is available in DUT boot
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware).
 
 **Test steps**

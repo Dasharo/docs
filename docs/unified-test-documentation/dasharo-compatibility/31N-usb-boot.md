@@ -75,7 +75,7 @@ warmboot.
 
 This test aims to verify that the DUT properly detects USB device and boots
 into the operating system after system reboot (reboot performed by relevant
-command). This test case may be re-done several times to specify the 
+command). This test case may be re-done several times to specify the
 platform and connection stability.
 
 **Test configuration data**
