@@ -16,7 +16,7 @@ This test aims to verify that the Memtest entry is available in DUT boot
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -41,7 +41,8 @@ This test aims to verify that the DUT enters the Memtestboot option.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -67,7 +68,8 @@ This test aims to verify that the Memtest starts does not hang under DUT.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -94,7 +96,8 @@ This test aims to verify that DUT refreshes Memtest properly.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -121,7 +124,8 @@ This test aims to verify that DUT refreshes Memtest properly.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -146,7 +150,8 @@ This test aims to verify that DUT completes Memtest.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
