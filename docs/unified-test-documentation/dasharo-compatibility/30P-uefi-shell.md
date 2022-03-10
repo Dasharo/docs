@@ -16,7 +16,7 @@ UEFI Shell application.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: Firmware](../generic-test-setup/#firmware).
+   [Generic test setup: Firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 

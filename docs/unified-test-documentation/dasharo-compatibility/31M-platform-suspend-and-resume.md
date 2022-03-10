@@ -18,7 +18,7 @@ re-done several times to specify the platform stability.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 

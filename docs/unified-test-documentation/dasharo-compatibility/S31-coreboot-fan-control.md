@@ -17,7 +17,8 @@ available.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -52,7 +53,8 @@ temperature.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 

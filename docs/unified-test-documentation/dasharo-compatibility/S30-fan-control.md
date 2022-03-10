@@ -17,13 +17,13 @@ according to the defined values.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#os-installer).
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation).
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. Install `lm-sensors` and `stress-ng` on the DUT.
 
 **Test steps**
@@ -72,13 +72,13 @@ according to the defined values.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../generic-test-setup/#ps-installer).
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../generic-test-setup/#os-installation).
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../generic-test-setup/#os-boot-from-disk).
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. Install `nvidia-smi` and `mesa-utils` on the DUT.
 
 **Test steps**

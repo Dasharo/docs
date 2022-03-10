@@ -17,14 +17,14 @@ be accessed from the operating system.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
-    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
-1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`.
 
 **Test steps**
 
@@ -148,13 +148,13 @@ be accessed from the operating system.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
-    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
 **Test steps**
 

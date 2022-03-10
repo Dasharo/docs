@@ -16,7 +16,7 @@ setup menu (if it exists) hotkeys.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
