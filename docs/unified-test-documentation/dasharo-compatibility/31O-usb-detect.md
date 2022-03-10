@@ -7,19 +7,19 @@
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after
-coldboot (reboot realized by power supply cutting off then restoring back). This
-test case may be re-done several times to specify the platform and connection
-stability.
+coldboot (reboot realized by power supply cutting off then restoring back).
+This test case may be re-done several times to specify the platform and
+connection stability.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](generic-test-setup#firmware).
 
 **Test steps**
 
@@ -34,7 +34,7 @@ stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 coldboot.
 
-### USB001.002 USB detect and boot after warmboot
+### USB002.001 USB detect and boot after warmboot
 
 **Test description**
 
@@ -44,13 +44,13 @@ may be re-done several times to specify the platform and connection stability.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](generic-test-setup#firmware).
 
 **Test steps**
 
@@ -64,7 +64,7 @@ may be re-done several times to specify the platform and connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 warmboot.
 
-### USB001.003 USB detect and boot after system reboot
+### USB003.001 USB detect and boot after system reboot
 
 **Test description**
 
@@ -74,13 +74,13 @@ several times to specify the platform and connection stability.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](generic-test-setup#firmware).
 
 **Test steps**
 
