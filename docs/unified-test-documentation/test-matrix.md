@@ -3,7 +3,7 @@
 ## About
 
 <!--
-Matryca testowa służy do określenia które z zetsawów i przypadków testych 
+Matryca testowa służy do określenia które z zetsawów i przypadków testych
 opisanych w dokumentacji testowej dedykowane są dla danej platformy
 -->
 
