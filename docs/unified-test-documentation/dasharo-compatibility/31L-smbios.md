@@ -16,28 +16,36 @@ according to the [Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/s
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
+    [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
 1. Install the `dmidecode` package: `sudo apt install dmidecode`
-1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118)
-1. Extract the dump and open the `dmidecode.log` file
+1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118).
+1. Extract the dump and open the `dmidecode.log` file.
 
 **Test steps**
 
-1. Open a terminal window and run `sudo dmidecode -t bios`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+```
+dmidecode -t bios
+```
+
 1. In the `BIOS Information` section, check the `Version` field against the
-   [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/) and
-   `dmidecode.log`
+    [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/) and
+    `dmidecode.log`
 
 **Expected result**
 
 1. The fields should be filled in according to the Dasharo Guidelines and
-   `dmidecode.log`
+    `dmidecode.log`
 
 ### DMI003.001 Verify the firmware product name
 
@@ -55,32 +63,46 @@ correctly according to the
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
-1. Install the `dmidecode` package: `sudo apt install dmidecode`
-1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118)
-1. Extract the dump and open the `dmidecode.log` file
+    [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
+1. Install the `dmidecode` package: `sudo apt install dmidecode`.
+1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118).
+1. Extract the dump and open the `dmidecode.log` file.
 
 **Test steps**
 
-1. Open a terminal window and run `sudo dmidecode -t system`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+```
+dmidecode -t system
+```
+
 1. In the `System Information` section, check the `Product Name` field
-   against the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/)
-   and `dmidecode.log`
-1. Open a terminal window and run `sudo dmidecode -t baseboard`
+    against the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/)
+    and `dmidecode.log`
+
+1. Execute the following command in the terminal:
+
+```
+dmidecode -t baseboard
+```
+
 1. In the `Base Board Information` section, check the `Product Name` field
-   against the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/)
-   and `dmidecode.log`
+    against the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/)
+    and `dmidecode.log`
 
 **Expected result**
 
 1. The fields should be filled in according to the Dasharo Guidelines and
-   `dmidecode.log`
+    `dmidecode.log`
 
 ### DMI005.001 Verify the firmware manufacturer
 
@@ -98,24 +120,37 @@ correctly according to the
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
-1. Install the `dmidecode` package: `sudo apt install dmidecode`
-1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118)
-1. Extract the dump and open the `dmidecode.log` file
+    [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
+1. Install the `dmidecode` package: `sudo apt install dmidecode`.
+1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118).
+1. Extract the dump and open the `dmidecode.log` file.
 
 **Test steps**
 
-1. Open a terminal window and run `sudo dmidecode -t system`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+```
+dmidecode -t system
+```
+
 1. In the `System Information` section, check the `Manufacturer` field against
    the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/) and
    `dmidecode.log`
-1. Open a terminal window and run `sudo dmidecode -t baseboard`
+1. Execute the following command in the terminal:
+
+```
+dmidecode -t baseboard
+```
+
 1. In the `Base Board Information` section, check the `Manufacturer` field
    against the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/)
    and `dmidecode.log`
@@ -140,28 +175,36 @@ according to the [Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/s
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware)
+   [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer)
+   [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation)
+   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
-1. Install the `dmidecode` package: `sudo apt install dmidecode`
-1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118)
-1. Extract the dump and open the `dmidecode.log` file
+   [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
+1. Install the `dmidecode` package: `sudo apt install dmidecode`.
+1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118).
+1. Extract the dump and open the `dmidecode.log` file.
 
 **Test steps**
 
-1. Open a terminal window and run `sudo dmidecode -t bios`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+```
+dmidecode -t bios
+```
+
 1. In the `BIOS Information` section, check the `Vendor` field against
-   the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/) and
-   `dmidecode.log`
+    the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/) and
+    `dmidecode.log`
 
 **Expected result**
 
 1. The field should be filled in according to the Dasharo Guidelines and
-   `dmidecode.log`
+    `dmidecode.log`
 
 ### DMI007.001 Verify the firmware family
 
@@ -178,20 +221,28 @@ according to the [Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/s
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation)
+   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
-1. Install the `dmidecode` package: `sudo apt install dmidecode`
-1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118)
-1. Extract the dump and open the `dmidecode.log` file
+    [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
+1. Install the `dmidecode` package: `sudo apt install dmidecode`.
+1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118).
+1. Extract the dump and open the `dmidecode.log` file.
 
 **Test steps**
 
-1. Open a terminal window and run `sudo dmidecode -t system`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+```
+dmidecode -t system
+```
+
 1. In the `System Information` section, check the `Family` field against
    the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/) and
    `dmidecode.log`
@@ -199,7 +250,7 @@ according to the [Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/s
 **Expected result**
 
 1. The field should be filled in according to the Dasharo Guidelines and
-   `dmidecode.log`
+    `dmidecode.log`
 
 ### DMI008.001 Verify the firmware type
 
@@ -216,20 +267,28 @@ according to the [Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/s
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware)
+    [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup/#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer)
+    [Generic test setup: OS installer](../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation)
+    [Generic test setup: OS installation](../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
-1. Install the `dmidecode` package: `sudo apt install dmidecode`
-1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118)
-1. Extract the dump and open the `dmidecode.log` file
+    [Generic test setup: OS boot from disk](../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
+1. Install the `dmidecode` package: `sudo apt install dmidecode`.
+1. Obtain the stock firmware dump from [cloud.3mdeb.com](https://cloud.3mdeb.com/index.php/f/391118).
+1. Extract the dump and open the `dmidecode.log` file.
 
 **Test steps**
 
-1. Open a terminal window and run `sudo dmidecode -t chassis`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+```
+dmidecode -t chassis
+```
+
 1. In the `Chassis Information` section, check the `Type` field against
    the [guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/) and
    `dmidecode.log`
