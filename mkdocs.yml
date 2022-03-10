@@ -57,12 +57,12 @@ nav:
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/clevo_nv41/openness_analysis.md
           - 'LVFS report': variants/clevo_nv41/lvfs_report.md
-        - 'Tuxedo IBS15':
-            - 'Releases': variants/tuxedo_ibs15/releases.md
-            - 'Building manual': variants/tuxedo_ibs15/building.md
-            - 'Installation manual': variants/tuxedo_ibs15/installation.md
-            - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
-            - 'Logo customization': common-coreboot-docs/custom_logo.md
+      - 'Tuxedo IBS15':
+          - 'Releases': variants/tuxedo_ibs15/releases.md
+          - 'Building manual': variants/tuxedo_ibs15/building.md
+          - 'Installation manual': variants/tuxedo_ibs15/installation.md
+          - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
+          - 'Logo customization': common-coreboot-docs/custom_logo.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
