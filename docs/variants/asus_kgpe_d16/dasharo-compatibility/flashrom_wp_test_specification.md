@@ -102,7 +102,7 @@ For Debian based distros execute:
 #### Test description
 
 This test aims to verify whether it is possible to change the range of the  
-protected memory
+protected memory.
 
 #### Test configuration data
 
