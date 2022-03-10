@@ -230,7 +230,7 @@ For Debian based distros execute:
 
 #### Expected result
 
-1. Command return from step 3. of test steps should include:
+1. Command output from step 3. of test steps should be similar to:
 
         `Protection range: start=0x00000000 length=0x00000000 (none)`
         `Protection mode: disabled`
