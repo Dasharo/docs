@@ -46,7 +46,7 @@ connected smartphone.
 **Expected result**
 
 1. The smartphone should indicate that it's charging when connected to either
-   USB Type-A port.
+    USB Type-A port.
 
 ### UTC002.001 Thunderbolt 4 USB Type-C charging capability
 

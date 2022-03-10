@@ -42,13 +42,13 @@ UEFI-aware Operating System.
 
 **Test description**
 
-This test verifies the presence of UEFI compatible interfaces by booting
+This test aims to verify the presence of UEFI compatible interfaces by booting
 UEFI-aware Operating System.
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 

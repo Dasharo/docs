@@ -19,8 +19,8 @@
 
 **Test description**
 
-This test verifies initialization of the laptop's embedded LCD screen during
-firmware execution phase.
+This test aims to verify initialization of the laptop's embedded LCD screen 
+during firmware execution phase.
 
 **Test configuration data**
 
@@ -45,7 +45,7 @@ firmware execution phase.
 
 **Test description**
 
-This test verifies initialization of the laptop's embedded LCD in the OS.
+This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 **Test configuration data**
 
@@ -68,16 +68,16 @@ This test verifies initialization of the laptop's embedded LCD in the OS.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
     internal LCD.
 
-### DSP001.003 Internal LCD in OS (Windows 10)
+### DSP001.003 Internal LCD in OS (Windows 11)
 
 **Test description**
 
-This test verifies initialization of the laptop's embedded LCD in the OS.
+This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -99,7 +99,7 @@ This test verifies initialization of the laptop's embedded LCD in the OS.
 
 **Test description**
 
-This test verifies initialization of the external HDMI display in the OS.
+This test aims to verify initialization of the external HDMI display in the OS.
 
 **Test configuration data**
 
@@ -126,12 +126,12 @@ This test verifies initialization of the external HDMI display in the OS.
 
 **Test description**
 
-This test verifies initialization of the external HDMI display in the OS.
+This test aims to verify initialization of the external HDMI display in the OS.
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 

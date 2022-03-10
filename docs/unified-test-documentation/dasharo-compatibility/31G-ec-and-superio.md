@@ -43,7 +43,7 @@ This test verifies whether the battery charge level is reported in the OS.
 1. The battery status indicator should show the current charge level (percentage
     left).
 
-### ECR001.002 Battery monitoring - charge level in OS (Windows 10)
+### ECR001.002 Battery monitoring - charge level in OS (Windows 11)
 
 **Test description**
 
@@ -52,7 +52,7 @@ This test verifies whether the battery charge level is reported in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -105,7 +105,7 @@ This test verifies that the power supply state is detected correctly in the OS.
 1. The battery charge indicator should detect the AC adapter state change
     within seconds of the adapter being plugged in / out.
 
-### ECR002.002 Battery monitoring - charging state in OS (Windows 10)
+### ECR002.002 Battery monitoring - charging state in OS (Windows 11)
 
 **Test description**
 
@@ -114,7 +114,7 @@ This test verifies that the power supply state is detected correctly in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -159,6 +159,9 @@ by the operating system.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Verify that the cursor can be moved with the touchpad and that clicking works
     (test both clicking and tapping).
 1. Run `sudo libinput debug-events` in the terminal:
@@ -171,7 +174,7 @@ by the operating system.
 1. Moving the cursor, clicking, zooming and scrolling are detected correctly by
    the operating system.
 
-### ECR003.002 Touchpad in OS - (Windows 10)
+### ECR003.002 Touchpad in OS - (Windows 11)
 
 **Test description**
 
@@ -181,7 +184,7 @@ by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -189,6 +192,9 @@ by the operating system.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Verify that the cursor can be moved with the touchpad and that clicking works
    (test both clicking and tapping).
 1. Open `C:\Windows` in `Windows Explorer`
@@ -246,6 +252,9 @@ system and all basic keys work according to their labels.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Run `sudo libinput debug-events --show-keycodes` in the terminal
 1. Press each keyboard key and check the generated keycode
 
@@ -255,7 +264,7 @@ system and all basic keys work according to their labels.
    their labels
 1. Key combinations are detected correctly
 
-### ECR004.003 Keyboard (standard keypad) in OS (Windows 10)
+### ECR004.003 Keyboard (standard keypad) in OS (Windows 11)
 
 **Test description**
 
@@ -265,8 +274,7 @@ system and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -274,6 +282,9 @@ system and all basic keys work according to their labels.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open `notepad`
     1. Test the alphanumeric keys and note the generated characters
     1. Test non-alphanumeric keys and verify that they generate the signs
@@ -297,8 +308,7 @@ This test verifies that the play/pause hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -307,6 +317,9 @@ This test verifies that the play/pause hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Run `sudo libinput debug-events --show-keycodes` in the terminal
 1. Verify that pressing the play/pause key generates a `KEY_PLAYPAUSE` event
 
@@ -314,7 +327,7 @@ This test verifies that the play/pause hotkey works correctly.
 
 1. Pressing the play/pause hotkey generates a `KEY_PLAYPAUSE` event
 
-### ECR005.002 Keyboard (function key: play/pause) in OS (Windows 10)
+### ECR005.002 Keyboard (function key: play/pause) in OS (Windows 11)
 
 **Test description**
 
@@ -323,8 +336,7 @@ This test verifies that the play/pause hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -332,6 +344,9 @@ This test verifies that the play/pause hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Start `Groove Music`
 1. Verify that when pressing the `play/pause` button, player menu apperars
     in the upper left part of the screen for a few seconds.
@@ -349,7 +364,6 @@ This test verifies that the cooling mode hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -358,6 +372,9 @@ This test verifies that the cooling mode hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the cooling mode hotkey (Fn + 1) once and note the effect
 1. Press the cooling mode hotkey once again and note the effect
 
@@ -368,7 +385,7 @@ This test verifies that the cooling mode hotkey works correctly.
 1. Pressing the hotkey again should deactivate the cooling mode (fans should
    return to normal)
 
-### ECR006.002 Keyboard (function key: cooling mode) in OS (Windows 10)
+### ECR006.002 Keyboard (function key: cooling mode) in OS (Windows 11)
 
 **Test description**
 
@@ -377,8 +394,7 @@ This test verifies that the cooling mode hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -386,6 +402,9 @@ This test verifies that the cooling mode hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the cooling mode hotkey (Fn + 1) once and note the effect
 1. Press the cooling mode hotkey once again and note the effect
 
@@ -405,11 +424,13 @@ This test verifies that the touchpad on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Proceed with the [Common](#common) section.
 1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
    ```
@@ -434,7 +455,7 @@ This test verifies that the touchpad on/off hotkey works correctly.
    completely inoperable)
 1. Pressing the hotkey again should reactivate the touchpad
 
-### ECR007.002 Keyboard (function key: touchpad on/off) in OS (Windows 10)
+### ECR007.002 Keyboard (function key: touchpad on/off) in OS (Windows 11)
 
 **Test description**
 
@@ -443,8 +464,7 @@ This test verifies that the touchpad on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -452,6 +472,9 @@ This test verifies that the touchpad on/off hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the touchpad on/off key and try to use the touchpad.
 1. Press the touchpad on/off key once again and try to use the touchpad again.
 
@@ -470,7 +493,6 @@ This test verifies that the display on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -479,6 +501,9 @@ This test verifies that the display on/off hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the display on/off hotkey once and note the effect
 1. Press any key on the keyboard and note the effect
 
@@ -487,7 +512,7 @@ This test verifies that the display on/off hotkey works correctly.
 1. Pressing the hotkey once should turn the internal LCD panel off
 1. Pressing any key on the keyboard should power the internal LCD panel back on
 
-### ECR008.002 Keyboard (function key: display on/off) in OS (Windows 10)
+### ECR008.002 Keyboard (function key: display on/off) in OS (Windows 11)
 
 **Test description**
 
@@ -496,8 +521,7 @@ This test verifies that the display on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -505,13 +529,16 @@ This test verifies that the display on/off hotkey works correctly.
 
 **Test steps**
 
-1. Press the display on/off hotkey once and note the effect
-1. Press any key on the keyboard and note the effect
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the display on/off hotkey once and note the effect.
+1. Press any key on the keyboard and note the effect.
 
 **Expected result**
 
-1. Pressing the hotkey once should turn the internal LCD panel off
-1. Pressing any key on the keyboard should power the internal LCD panel back on
+1. Pressing the hotkey once should turn the internal LCD panel off.
+1. Pressing any key on the keyboard should power the internal LCD panel back on.
 
 ### ECR009.001 Keyboard (function key: mute) in OS (Ubuntu 20.04)
 
@@ -522,7 +549,6 @@ This test verifies that the volume mute hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -531,15 +557,18 @@ This test verifies that the volume mute hotkey works correctly.
 
 **Test steps**
 
-1. Press the volume mute hotkey twice and note the effect each keypress has
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the volume mute hotkey twice and note the effect each keypress has.
 
 **Expected result**
 
 1. Pressing the hotkey should mute or unmute the currently enabled audio output.
 1. Each keypress should cause a mute/unmute notification to appear in the middle
-   of the screen
+   of the screen.
 
-### ECR009.002 Keyboard (function key: mute) in OS (Windows 10)
+### ECR009.002 Keyboard (function key: mute) in OS (Windows 11)
 
 **Test description**
 
@@ -548,8 +577,7 @@ This test verifies that the mute hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -557,6 +585,9 @@ This test verifies that the mute hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the mute hotkey once and check the volume indicator in the bottom right
    part of the screen.
 1. Press the mute hotkey once and check the volume indicator again.
@@ -575,7 +606,6 @@ This test verifies that the keyboard backlight hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -584,8 +614,11 @@ This test verifies that the keyboard backlight hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the keyboard backlight hotkey 6 times and note the effect on the
-   keyboard backlight after each keypress
+   keyboard backlight after each keypress.
 
 **Expected result**
 
@@ -593,7 +626,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
    set the keyboard to the next mode, with the last mode wrapping back around
    to the first.
 
-### ECR010.002 Keyboard (function key: keyboard backlight) in OS (Windows 10)
+### ECR010.002 Keyboard (function key: keyboard backlight) in OS (Windows 11)
 
 **Test description**
 
@@ -602,8 +635,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -611,8 +643,11 @@ This test verifies that the keyboard backlight hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the keyboard backlight hotkey 6 times and note the effect on the
-   keyboard backlight after each keypress
+   keyboard backlight after each keypress.
 
 **Expected result**
 
@@ -629,7 +664,6 @@ This test verifies that the volume down hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -638,6 +672,9 @@ This test verifies that the volume down hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the volume down hotkey once and note the effects.
 
 **Expected result**
@@ -647,7 +684,7 @@ This test verifies that the volume down hotkey works correctly.
 1. Each keypress should cause a volume down notification to appear in the middle
    of the screen
 
-### ECR011.002 Keyboard (function key: volume down) in OS (Windows 10)
+### ECR011.002 Keyboard (function key: volume down) in OS (Windows 11)
 
 **Test description**
 
@@ -656,8 +693,7 @@ This test verifies that the volume down hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -665,6 +701,9 @@ This test verifies that the volume down hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the volume down hotkey once and note the effects.
 
 **Expected result**
@@ -683,7 +722,6 @@ This test verifies that the volume up hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -692,6 +730,9 @@ This test verifies that the volume up hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the volume up hotkey once and note the effects.
 
 **Expected result**
@@ -699,9 +740,9 @@ This test verifies that the volume up hotkey works correctly.
 1. Pressing the hotkey should increase the volume of the currently enabled audio
    output.
 1. Each keypress should cause a volume up notification to appear in the middle
-   of the screen
+   of the screen.
 
-### ECR012.002 Keyboard (function key: volume up) in OS (Windows 10)
+### ECR012.002 Keyboard (function key: volume up) in OS (Windows 11)
 
 **Test description**
 
@@ -710,8 +751,7 @@ This test verifies that the volume up hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -719,7 +759,10 @@ This test verifies that the volume up hotkey works correctly.
 
 **Test steps**
 
-1. 1. Press the volume down hotkey once and note the effects.
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the volume down hotkey once and note the effects.
 
 **Expected result**
 
@@ -737,7 +780,6 @@ This test verifies that the display switch hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -747,6 +789,9 @@ This test verifies that the display switch hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Run `sudo libinput debug-events --show-keycodes` in the terminal
 1. Press the display switch hotkey once and note the effect
 
@@ -761,7 +806,7 @@ This test verifies that the display switch hotkey works correctly.
  event3   KEYBOARD_KEY     +0.015s	KEY_LEFTMETA (125) released
 ```
 
-### ECR013.002 Keyboard (function key: display switch) in OS (Windows 10)
+### ECR013.002 Keyboard (function key: display switch) in OS (Windows 11)
 
 **Test description**
 
@@ -770,8 +815,7 @@ This test verifies that the display switch hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -779,7 +823,10 @@ This test verifies that the display switch hotkey works correctly.
 
 **Test steps**
 
-1. Press the display switch hotkey once and note the effect
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the display switch hotkey once and note the effect.
 
 **Expected result**
 
@@ -795,7 +842,6 @@ This test verifies that the brightness down hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test steps**
@@ -804,12 +850,15 @@ This test verifies that the brightness down hotkey works correctly.
 
 **Expected result**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Pressing the hotkey should decrease the brightness of the internal LCD
-   display
+   display.
 1. Each keypress should cause a brightness down notification to appear in the
-   middle of the screen
+   middle of the screen.
 
-### ECR014.002 Keyboard (function key: brightness down) in OS (Windows 10)
+### ECR014.002 Keyboard (function key: brightness down) in OS (Windows 11)
 
 **Test description**
 
@@ -818,8 +867,7 @@ This test verifies that the brightness down hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -827,14 +875,17 @@ This test verifies that the brightness down hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the brightness down hotkey once and note the effects.
 
 **Expected result**
 
 1. Pressing the hotkey should decrease the brightness of the internal LCD
-   display
+   display.
 1. Each keypress should cause a brightness down notification to appear in the
-   top left of the screen
+   top left of the screen.
 
 ### ECR015.001 Keyboard (function key: brightness up) in OS (Ubuntu 20.04)
 
@@ -845,7 +896,6 @@ This test verifies that the brightness up hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -854,16 +904,19 @@ This test verifies that the brightness up hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the brightness up hotkey once and note the effects.
 
 **Expected result**
 
 1. Pressing the hotkey should increase the brightness of the internal LCD
-   display
+   display.
 1. Each keypress should cause a brightness up notification to appear in the
-   middle of the screen
+   middle of the screen.
 
-### ECR015.002 Keyboard (function key: brightness up) in OS (Windows 10)
+### ECR015.002 Keyboard (function key: brightness up) in OS (Windows 11)
 
 **Test description**
 
@@ -872,8 +925,7 @@ This test verifies that the brightness down hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -881,14 +933,17 @@ This test verifies that the brightness down hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the brightness up hotkey once and note the effects.
 
 **Expected result**
 
 1. Pressing the hotkey should increase the brightness of the internal LCD
-   display
+   display.
 1. Each keypress should cause a brightness up notification to appear in the
-   top left of the screen
+   top left of the screen.
 
 ### ECR016.001 Keyboard (function key: camera on/off) in OS (Ubuntu 20.04)
 
@@ -899,7 +954,6 @@ This test verifies that the camera on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -908,8 +962,11 @@ This test verifies that the camera on/off hotkey works correctly.
 
 **Test steps**
 
-1. Open the terminal and run the command: `watch -n1 lsusb`
-1. Press the camera on/off hotkey twice and note the effect after each keypress
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open the terminal and run the command: `watch -n1 lsusb`.
+1. Press the camera on/off hotkey twice and note the effect after each keypress.
 
 **Expected result**
 
@@ -917,7 +974,7 @@ This test verifies that the camera on/off hotkey works correctly.
    device disappear from the output of `lsusb`
 1. Pressing the hotkey again should make the USB device reappear
 
-### ECR016.002 Keyboard (function key: camera on/off) in OS (Windows 10)
+### ECR016.002 Keyboard (function key: camera on/off) in OS (Windows 11)
 
 **Test description**
 
@@ -926,8 +983,7 @@ This test verifies that the camera on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -935,7 +991,10 @@ This test verifies that the camera on/off hotkey works correctly.
 
 **Test steps**
 
-1. Open the `Camera` app
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open the `Camera` app.
 1. Press the camera on/off hotkey twice and note the effect after
    a few seconds after the keypress.
 
@@ -954,7 +1013,6 @@ This test verifies that the flight mode hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -963,6 +1021,9 @@ This test verifies that the flight mode hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Locate and open the power menu in the upper right corner of the screen
 1. Enter Settings and navigate to the Wi-Fi panel
 1. Note the current state of the Airplane Mode switch
@@ -970,10 +1031,10 @@ This test verifies that the flight mode hotkey works correctly.
 
 **Expected result**
 
-1. Pressing the hotkey once should enable airplane mode
-1. Pressing the hotkey again should disable airplane mode
+1. Pressing the hotkey once should enable airplane mode.
+1. Pressing the hotkey again should disable airplane mode.
 
-### ECR017.002 Keyboard (function key: flight mode) in OS (Windows 10)
+### ECR017.002 Keyboard (function key: flight mode) in OS (Windows 11)
 
 **Test description**
 
@@ -982,8 +1043,7 @@ This test verifies that the flight mode hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -991,6 +1051,9 @@ This test verifies that the flight mode hotkey works correctly.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the camera on/off hotkey twice and note the effect after the keypress.
 
 **Expected result**
@@ -1011,7 +1074,6 @@ This test verifies that the sleep hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -1020,16 +1082,19 @@ This test verifies that the sleep hotkey works correctly.
 
 **Test steps**
 
-1. Press the sleep hotkey once and note the result
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the sleep hotkey once and note the result.
 1. Look at the power LED located next to the AC adapter plug, towards the front
-   end of the laptop
+   end of the laptop.
 
 **Expected result**
 
 1. The laptop should go to sleep within seconds of the hotkey being pressed.
-1. The power LED should be blinking green, indicating the laptop is sleeping
+1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-### ECR018.002 Keyboard (function key: sleep) in OS (Windows 10)
+### ECR018.002 Keyboard (function key: sleep) in OS (Windows 11)
 
 **Test description**
 
@@ -1038,8 +1103,7 @@ This test verifies that the sleep hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -1047,14 +1111,17 @@ This test verifies that the sleep hotkey works correctly.
 
 **Test steps**
 
-1. Press the sleep hotkey once and note the result
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the sleep hotkey once and note the result.
 1. Look at the power LED located next to the AC adapter plug, towards the front
-   end of the laptop
+   end of the laptop.
 
 **Expected result**
 
 1. The laptop should go to sleep within seconds of the hotkey being pressed.
-1. The power LED should be blinking green, indicating the laptop is sleeping
+1. The power LED should be blinking green, indicating the laptop is sleeping.
 
 ### ECR019.001 Buttons (button: power) in OS (Ubuntu 20.04)
 
@@ -1067,7 +1134,6 @@ mode.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -1076,6 +1142,9 @@ mode.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Open the terminal and run the following command to check the power button
    action:
 
@@ -1105,7 +1174,7 @@ mode.
 
          Operation 'sleep' finished
 
-### ECR019.002 Buttons (button: power) in OS (Windows 10)
+### ECR019.002 Buttons (button: power) in OS (Windows 11)
 
 **Test description**
 
@@ -1116,8 +1185,7 @@ mode.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -1125,6 +1193,9 @@ mode.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Press the power button once and note the result.
 
 **Expected result**
@@ -1142,7 +1213,6 @@ system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
 1. `OPERATING_SYSTEM` = Ubuntu 20.04
 
 **Test setup**
@@ -1151,20 +1221,23 @@ system.
 
 **Test steps**
 
-1. Open one terminal window and run the command `sudo systemd-inhibit --what handle-lid-switch --mode block watch echo "Inhibiting lid switch"`
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Open one terminal window and run the command `sudo systemd-inhibit --what handle-lid-switch --mode block watch echo "Inhibiting lid switch"`.
 1. Open another terminal and run the command `sleep 5 && cat /proc/acpi/button/lid/LID0/state`
-   to read the state of the lid while it is closed
-1. Close the lid and wait 5 seconds
-1. Open the lid and note the output of the command
+   to read the state of the lid while it is closed.
+1. Close the lid and wait 5 seconds.
+1. Open the lid and note the output of the command.
 1. Run the command `cat /proc/acpi/button/lid/LID0/state` while the lid is open
-   and note the output
+   and note the output.
 
 **Expected result**
 
-1. The output of the second command should report that the lid is closed
-1. The output of the third command should report that the lid is open
+1. The output of the second command should report that the lid is closed.
+1. The output of the third command should report that the lid is open.
 
-### ECR020.002 Buttons (button: lid switch) in OS (Windows 10)
+### ECR020.002 Buttons (button: lid switch) in OS (Windows 11)
 
 **Test description**
 
@@ -1174,8 +1247,7 @@ system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -1183,6 +1255,9 @@ system.
 
 **Test steps**
 
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
 1. Close the lid and note the effect on the power LED.
 
 **Expected result**

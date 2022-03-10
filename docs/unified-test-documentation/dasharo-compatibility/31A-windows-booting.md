@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test verifies that Windows 10 OS could be installed on the Device
+This test aims to verify that Windows 11 OS could be installed on the Device
 Under Test and works properly.
 
 **Test configuration data**
@@ -28,4 +28,4 @@ Under Test and works properly.
 
 **Expected result**
 
-The Windows 10 login screen should be displayed.
+The Windows 11 login screen should be displayed.
