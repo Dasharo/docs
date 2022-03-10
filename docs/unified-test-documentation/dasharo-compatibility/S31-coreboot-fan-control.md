@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Fan Control
+# Dasharo Compatibility: coreboot Fan Control
 
 ## Test cases
 
