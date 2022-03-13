@@ -97,7 +97,8 @@ option to connect a TPM, we use the header for that purpose.
 
 IMPORTANT: Use only TPM modules which match their pinout with the board's
 header! Using a spider web connection degrades the signal quality to the point
-where CPU cannot properly talk to TPM via LPC bus.
+where CPU cannot properly talk to TPM via LPC bus. Tested with PC Engines TPM
+and failed to succeed this way.
 
 ![](/images/kgpe_tpm_header.png)
 
