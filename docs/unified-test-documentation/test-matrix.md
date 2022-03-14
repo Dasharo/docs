@@ -14,7 +14,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:-----|:--------------------------------------------------|:-------------------------------------|
 | 1.   | Coreboot base port                                | All                                  |
 | 2.   | SMBIOS                                            | DMI002.001, DMI003.001               |
 | 3.   | Coreboot fan control                              | All                                  |
@@ -31,7 +31,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:-----|:--------------------------------------------------|:-------------------------------------|
 | 1.   | TPM Support                                       | TPM001.001                           |
 | 2.   | Verified Boot support                             | VBO001.001, VBO002.001, VBO003.001   |
 
@@ -44,7 +44,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:-----|:--------------------------------------------------|:-------------------------------------|
 | 1.   | Memory HCL                                        | All                                  |
 | 2.   | UEFI compatible interface                         | All                                  |
 | 3.   | Display ports and LCD support                     | All                                  |
@@ -75,7 +75,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:-----|:--------------------------------------------------|:-------------------------------------|
 | 1.   | TPM Support                                       | All                                  |
 | 2.   | Verified Boot support                             | VBO001.002, VBO002.002, VBO003.001   |
 | 3.   | Measured Boot support                             | All                                  |
@@ -90,7 +90,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:-----|:--------------------------------------------------|:-------------------------------------|
 | 1.   | Memory HCL                                        | All                                  |
 | 2.   | UEFI compatible interface                         | All                                  |
 | 3.   | Display ports and LCD support                     | All                                  |
@@ -120,7 +120,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:-----|:--------------------------------------------------|:-------------------------------------|
 | 1.   | TPM Support                                       | All                                  |
 | 2.   | Verified Boot support                             | VBO001.002, VBO002.002, VBO003.001   |
 | 3.   | Measured Boot support                             | All                                  |
@@ -134,9 +134,9 @@ described in this documentation are dedicated to the given platform
 
 <center>
 
-| No.  | Supported test suite                  | Supported test cases                           |
-|:----:|:-------------------------------------:|:----------------------------------------------:|
-| 1.   | Coreboot base port                    | CBP001.001, CBP002.001, CBP004.001             |
+| No.  | Supported test suite                              | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------------------------------|
+| 1.   | Coreboot base port                                | CBP001.001, CBP002.001, CBP004.001   |
 
 </center>
 
@@ -147,7 +147,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:----:|:--------------------------------------------------|:-------------------------------------|
 | 1.   | Memory HCL                                        | All                                  |
 | 2.   | UEFI compatible interface                         | All                                  |
 | 3.   | Display ports and LCD support                     | All                                  |
@@ -175,7 +175,7 @@ described in this documentation are dedicated to the given platform
 <center>
 
 | No.  | Supported test suite                              | Supported test cases                 |
-|:----:|:-------------------------------------------------:|:------------------------------------:|
+|:-----|:--------------------------------------------------|:-------------------------------------|
 | 1.   | TPM Support                                       | All                                  |
 | 2.   | Verified Boot support                             | VBO001.002, VBO002.002               |
 | 3.   | Measured Boot support                             | All                                  |
