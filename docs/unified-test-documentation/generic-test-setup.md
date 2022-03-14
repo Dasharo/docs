@@ -15,13 +15,9 @@ need to execute the setup actions before each independent case.
         is used by you.
     1. or you can build one yourself as shown in the `building` document
         dedicated for platform which is used by you.
-1. Flash `FIRMWARE` binary to the DUT:
-    1. If coreboot is not yet installed: refer to
-        `Flashing with external programmer` document dedicated for platform
-        which is used by you.
-    1. If coreboot is already installed: refer to
-        `Flashing with internal programmer` document dedicated for platform
-        which is used by you.
+1. Flash `FIRMWARE` binary to the DUT. Device flashing procedure should be
+    carried out in accordance with the guidelines in `Flashing` doucment 
+    dedicated for platform which is in use.
 
 #### OS installer
 
@@ -32,7 +28,7 @@ need to execute the setup actions before each independent case.
 
 #### OS installation
 
-1. Power ON the DUT
+1. Power on the DUT
 1. Enter the boot menu using the `BIOS_SETUP_KEY`.
 1. Select the `Boot Menu` and press `Enter`.
 1. Select the USB stick and press `Enter`.
@@ -40,14 +36,12 @@ need to execute the setup actions before each independent case.
        GRUB menu.
 1. Wait for the `OPERATING_SYSTEM` installer to start.
 1. Install `OPERATING_SYSTEM` on the disk.
-1. In case of `Ubuntu 20.04` on `NV41MB`: Follow the steps outlined in
-   [NVIDIA drivers - Ubuntu 20.04](./#nvidia-drivers-ubuntu-2004).
-1. Power OFF the DUT.
+1. Power off the DUT.
 1. Remove the installation media (USB stick with installer).
 
 #### NVIDIA drivers - Ubuntu 20.04
 
-1. Power ON the DUT.
+1. Power on the DUT.
 1. Wait until the `OPERATING_SYSTEM` boots from disk.
 1. Login into the `OPERATING_SYSTEM`.
 1. Open a terminal window and execute the following commands:
@@ -72,6 +66,6 @@ sudo apt install nvidia-driver-470
 
 #### OS boot from disk
 
-1. Power ON the DUT.
+1. Power on the DUT.
 1. Wait until the `OPERATING_SYSTEM` boots from disk.
 1. Login into the `OPERATING_SYSTEM`.
