@@ -27,19 +27,19 @@ This test aims to measure coldboot time.
 
 3. Power ON the DUT.
 
-4. Use the below command to look at boot timestamps:  
+4. Use the below command to look at boot timestamps:
 
         sudo cbmem -T
 
 **Expected result**
 
-1. Read timestamp from last row and second column. Last row may look like this:  
+1. Read timestamp from last row and second column. Last row may look like this:
 
-        99     4084321 818      selfboot jump 
+        99     4084321 818      selfboot jump
 
 In this example we take `4084321` timestamp.
 
-2. To get time in seconds, we need to divide the timestamp by 1000000.  
+2. To get time in seconds, we need to divide the timestamp by 1000000.
 
         4084321 / 1000000
 
@@ -68,19 +68,19 @@ This test aims to measure warmboot time.
 
 3. Power ON the DUT.
 
-4. Use the below command to look at boot timestamps:  
+4. Use the below command to look at boot timestamps:
 
         sudo cbmem -T
 
 **Expected result**
 
-1. Read timestamp from last row and second column. Last row may look like this:  
+1. Read timestamp from last row and second column. Last row may look like this:
 
-        99     4084321 818      selfboot jump 
+        99     4084321 818      selfboot jump
 
 In this example we take `4084321` timestamp.
 
-2. To get time in seconds, we need to divide the timestamp by 1000000.  
+2. To get time in seconds, we need to divide the timestamp by 1000000.
 
         4084321 / 1000000
 
@@ -112,18 +112,18 @@ This test aims to measure reboot time.
 
 3. Wait until DUT reboots.
 
-4. Use the below command to look at boot timestamps:  
+4. Use the below command to look at boot timestamps:
 
         sudo cbmem -T
 
 **Expected result**
 
-1. Read timestamp from last row and second column. Last row may look like this:  
+1. Read timestamp from last row and second column. Last row may look like this:
 
-        99     4084321 818      selfboot jump 
+        99     4084321 818      selfboot jump
 
 In this example we take `4084321` timestamp.
 
-2. To get time in seconds, we need to divide the timestamp by 1000000.  
+2. To get time in seconds, we need to divide the timestamp by 1000000.
 
         4084321 / 1000000
