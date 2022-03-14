@@ -6,7 +6,7 @@
 
 **Test description**
 
-Test aims to measure coldboot time.
+This test aims to measure coldboot time.
 
 **Test configuration data**
 
@@ -17,7 +17,7 @@ Test aims to measure coldboot time.
 1. Proceed with the
    [Generic test setup: firmware](generic-test-setup#firmware)
 
-2. Get `cbmem`
+2. Get `cbmem` tool.
 
 **Test steps**
 
@@ -47,7 +47,7 @@ In this example we take `4084321` timestamp.
 
 **Test description**
 
-Test aims to measure warmboot time.
+This test aims to measure warmboot time.
 
 **Test configuration data**
 
@@ -58,7 +58,7 @@ Test aims to measure warmboot time.
 1. Proceed with the
    [Generic test setup: firmware](generic-test-setup#firmware)
 
-2. Get `cbmem`
+2. Get `cbmem` tool.
 
 **Test steps**
 
@@ -89,7 +89,7 @@ In this example we take `4084321` timestamp.
 
 **Test description**
 
-Test aims to measure reboot time.
+This test aims to measure reboot time.
 
 **Test configuration data**
 
@@ -100,7 +100,7 @@ Test aims to measure reboot time.
 1. Proceed with the
    [Generic test setup: firmware](generic-test-setup#firmware)
 
-2. Get `cbmem`
+2. Get `cbmem` tool.
 
 **Test steps**
 
