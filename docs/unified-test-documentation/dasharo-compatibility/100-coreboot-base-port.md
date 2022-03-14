@@ -1,4 +1,4 @@
-# Dasharo comapitbility: coreboot base port
+# Dasharo compatibility: coreboot base port
 
 ## Test cases
 
