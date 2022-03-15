@@ -126,17 +126,17 @@ nav:
     # - 'Reference OS': ecosystem/reference-os.md
     # - 'Publishing Server': ecosystem/publishing-server.md
     # - 'End User Device': ecosystem/end-user.md
-      - 'Dasharo Test Specification':
-          - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
-            - 'Dasharo-Compatibility':
-                - 'Display ports and LCD': unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
-                - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
-                - 'USB type C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
-          - 'Dasharo Security':
-              - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
-              - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
-              - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
-              - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
+          - 'Dasharo Test Specification':
+              - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
+              - 'Dasharo compatibility':
+                  - 'Display ports and LCD': unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
+                  - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
+                  - 'USB type C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
+              - 'Dasharo security':
+                  - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
+                  - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
+                  - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
+                  - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
