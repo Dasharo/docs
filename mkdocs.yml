@@ -137,6 +137,7 @@ nav:
               - 'Display ports and LCD': unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
               - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
               - 'USB type C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
+              - 'Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
           - 'Dasharo Security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
