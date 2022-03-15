@@ -20,8 +20,8 @@
 
 **Test description**
 
-This test aims to verify that the NVIDIA graphics card is initialized correctly
-and can be detected by the operating system.
+This test aims to verify that the NVIDIA graphics card is correctly
+initialized and can be detected by the operating system.
 
 **Test configuration data**
 
@@ -34,35 +34,32 @@ and can be detected by the operating system.
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-```
-lspci | grep -i nvidia
-```
+    ```bash
+    lspci | grep -i nvidia
+    ```
 
 **Expected result**
 
 1. The command should return one line containing the name of the graphics
    card, e.g:
 
-```
-2d:00.0 3D controller: NVIDIA Corporation TU117M (rev a1)
-```
+    ```bash
+    2d:00.0 3D controller: NVIDIA Corporation TU117M (rev a1)
+    ```
 
-### NVI001.002 NVIDIA Graphics detect (Windows 10)
+### NVI001.002 NVIDIA Graphics detect (Windows 11)
 
 **Test description**
 
-This test aims to verify that the NVIDIA graphics card is initialized correctly
-and can be detected by the operating system
+This test aims to verify that the NVIDIA graphics card is correctly
+initialized and can be detected by the operating system
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -71,13 +68,10 @@ and can be detected by the operating system
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into system by using the proper login and password.
-1. Open the Start menu
-1. Type in Device Manager
-1. Click on the Device Manager icon to open the Device Manager
-1. Open the `Display adapters` section to wiew the GPUs present in the system
+1. Open the Start menu.
+1. Type in `Device Manager`.
+1. Click on the Device Manager icon to open the Device Manager.
+1. Open the `Display adapters` section to wiew the GPUs present in the system.
 
 **Expected result**
 
@@ -102,50 +96,47 @@ and the card powers on only while it's used.
 1. Proceed with the [Common](#common) section.
 1. Install the package `mesa-utils` with the following command:
 
-```
-sudo apt install mesa-utils
-```
+    ```bash
+    sudo apt install mesa-utils
+    ```
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into system by using the proper login and password.
-1. Open a terminal window
+1. Open a terminal window.
 1. Run the following command to see whether the card is off:
 
-```
-cat /sys/class/drm/card1/device/power/runtime_status
-```
+    ```bash
+    cat /sys/class/drm/card1/device/power/runtime_status
+    ```
 
 1. Launch a test application on the discrete graphics card using the following
    command:
 
-```
-__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxgears
-```
+    ```bash
+    __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxgears
+    ```
 
 1. Run the following command to see whether the card has turned on:
 
-```
-cat /sys/class/drm/card1/device/power/runtime_status
-```
+    ```bash
+    cat /sys/class/drm/card1/device/power/runtime_status
+    ```
 
-1. Close the test application and wait ~20 seconds to let the graphics card shut
-   itself down
+1. Close the test application and wait ~20 seconds to let the graphics card
+    shut itself down.
 1. Run the following command to see whether the card has turned off again:
 
-```
-cat /sys/class/drm/card1/device/power/runtime_status
-```
+    ```bash
+    cat /sys/class/drm/card1/device/power/runtime_status
+    ```
 
 **Expected result**
 
-1. The output from the first command should be the word `suspended`
-1. The output from the second command should be the word `active`
-1. The output from the third command should be the word `suspended`
+1. The output from the first command should be the word `suspended`.
+1. The output from the second command should be the word `active`.
+1. The output from the third command should be the word `suspended`.
 
-### NVI002.002 NVIDIA Graphics power management (Windows 10)
+### NVI002.002 NVIDIA Graphics power management (Windows 11)
 
 **Test description**
 
@@ -155,19 +146,17 @@ and the card powers on only while it's used.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
-1. Install the driver for the graphics card (GTX 1650) from [the official page](nvidia.com)
-1. Download and extract `gputest` from [Geeks3D](geeks3d.com/gputest)
+1. Install the driver for the graphics card (GTX 1650) from
+    [the official page](nvidia.com).
+1. Download and extract `gputest` from [Geeks3D](geeks3d.com/gputest).
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into system by using the proper login and password.
 1. Open the NVIDIA Control Panel window.
 1. In the menu bar, open the Desktop menu.
 1. Enable the `Display GPU Activity Icon in Notification Area` option.
