@@ -434,11 +434,11 @@ This test verifies that the touchpad on/off hotkey works correctly.
 1. Proceed with the [Common](#common) section.
 1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
 
-```bash
-evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4XMB,ME,MZ:*
-         KEYBOARD_KEY_f7=191
-         KEYBOARD_KEY_f8=191
-   ```
+    ```bash
+    evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4XMB,ME,MZ:*
+             KEYBOARD_KEY_f7=191
+             KEYBOARD_KEY_f8=191
+    ```
 
 1. Execute the following commands:
 
@@ -803,12 +803,12 @@ This test verifies that the display switch hotkey works correctly.
 
 1. Pressing the hotkey should yield the following output in the terminal:
 
-```bash
--event3   KEYBOARD_KEY     +0.000s	KEY_LEFTMETA (125) pressed
- event3   KEYBOARD_KEY     +0.004s	KEY_P (25) pressed
- event3   KEYBOARD_KEY     +0.010s	KEY_P (25) released
- event3   KEYBOARD_KEY     +0.015s	KEY_LEFTMETA (125) released
-```
+    ```bash
+    -event3   KEYBOARD_KEY     +0.000s	KEY_LEFTMETA (125) pressed
+     event3   KEYBOARD_KEY     +0.004s	KEY_P (25) pressed
+     event3   KEYBOARD_KEY     +0.010s	KEY_P (25) released
+     event3   KEYBOARD_KEY     +0.015s	KEY_LEFTMETA (125) released
+    ```
 
 ### ECR013.002 Keyboard (function key: display switch) in OS (Windows 11)
 
@@ -1154,30 +1154,30 @@ mode.
 1. Open the terminal and run the following command to check the power button
     action:
 
-```bash
-gsettings get org.gnome.settings-daemon.plugins.power power-button-action
-```
+    ```bash
+    gsettings get org.gnome.settings-daemon.plugins.power power-button-action
+    ```
 
 1. If the status is other than `suspend` run the following command to change
    the power button action:
 
-```bash
-gsettings set org.gnome.settings-daemon.plugins.power power-button-action "suspend"
-```
+    ```bash
+    gsettings set org.gnome.settings-daemon.plugins.power power-button-action "suspend"
+    ```
 
 1. Check the power button action again by running the following command:
 
-```bash
-gsettings get org.gnome.settings-daemon.plugins.power power-button-action
-```
+    ```bash
+    gsettings get org.gnome.settings-daemon.plugins.power power-button-action
+    ```
 
 1. Press the power button once and note the result.
 1. Press `Enter` and note the result.
 1. Run the following command to check last finished operation:
 
-```bash
-journalctl | grep systemd-logind | tail -1
-```
+    ```bash
+    journalctl | grep systemd-logind | tail -1
+    ```
 
 **Expected result**
 
@@ -1186,9 +1186,9 @@ journalctl | grep systemd-logind | tail -1
 1. After completing the 5th step device should wake up.
 1. The output of the last command should contain the line:
 
-```bash
-Operation 'sleep' finished
-```
+    ```bash
+    Operation 'sleep' finished
+    ```
 
 ### ECR019.002 Buttons (button: power) in OS (Windows 11)
 
@@ -1242,9 +1242,9 @@ system.
 1. Log into system by using the proper login and password.
 1. Open one terminal window and run the following command:
 
-```bash
-sudo systemd-inhibit --what handle-lid-switch --mode block watch echo "Inhibiting lid switch"
-```
+    ```bash
+    sudo systemd-inhibit --what handle-lid-switch --mode block watch echo "Inhibiting lid switch"
+    ```
 
 1. Open another terminal and run the command
     `sleep 5 && cat /proc/acpi/button/lid/LID0/state` to read the state of
