@@ -140,6 +140,8 @@ nav:
               - 'Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
               - 'Windows 11 booting': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
               - 'Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
+              - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
+              - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
