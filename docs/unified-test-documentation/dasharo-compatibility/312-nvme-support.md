@@ -16,7 +16,7 @@ detect NVMe disk in the M.2 slot.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
 
 **Test steps**
 
@@ -44,10 +44,10 @@ the M.2 slot.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
 1. Insert a NVMe disk into the M.2 slot on the DUT.
 1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
 
 **Test steps**
 
@@ -85,10 +85,10 @@ M.2 slot.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
 1. Insert a NVMe disk into the M.2 slot on the DUT.
 1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
 
 **Test steps**
 
