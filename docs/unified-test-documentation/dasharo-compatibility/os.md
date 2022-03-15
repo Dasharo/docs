@@ -54,13 +54,13 @@ This test aims to verify that DUT logs properly into Debian booted from USB.
 4. Select the proper number for `USB_STICK` option.
 5. Wait for `debian login:`.
 6. Type proper login
-8. Wait for `Password:`
-9. Type the proper password
-10. Wait for `root@debian:~#`
+7. Wait for `Password:`
+8. Type the proper password
+9. Wait for `root@debian:~#`
 
 **Expected result**
 
-The `root@debian:~#` is visible after successful login.
+The `root@debian:~#` prompt is visible after successful login.
 
 ### LBT002.001 Ubuntu boot from USB
 
@@ -120,4 +120,4 @@ This test aims to verify that DUT logs properly into Ubuntu booted from USB.
 
 **Expected result**
 
-The `root@ubuntu:~#` is visible after successful login.
+The `root@ubuntu:~#` prompt is visible after successful login.

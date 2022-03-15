@@ -147,6 +147,7 @@ nav:
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
+              - 'OS': unified-test-documentation/dasharo-compatibility/os.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
