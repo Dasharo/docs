@@ -38,7 +38,6 @@ list (HCL).
 ## Compliance
 
 No danger of version lock. Dasharo releases are versioned according to the
-[Semantic Versioning 2.0.0] (https://semver.org/) specification for the sake of
+[Semantic Versioning 2.0.0] (<https://semver.org/>) specification for the sake of
 consistency. Release notes comply with the [Keep A Changelog 1.0.0]
-specification (https://keepachangelog.com/en/1.0.0/).
-
+specification (<https://keepachangelog.com/en/1.0.0/>).

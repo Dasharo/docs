@@ -1,6 +1,6 @@
 # Deployment
 
-Deployment section of Dasharo Knowledge Base FAQ considers topic of open source
+Deployment section of Dasharo Knowledge Base FAQ considers topic of open-source
 firmware deployment, which may include operations of reading and writing SPI NOR
 flash, as well as binary modifications.
 
@@ -36,22 +36,29 @@ kernel command line.
 Recommended way to fix the problem:
 
 * Edit `/etc/default/grub`:
+
   ``` bash
   GRUB_CMDLINE_LINUX="iomem=relaxed"
   ```
+
 * Update GRUB2 config with:
+
   ``` bash
   sudo update-grub2
   ```
+
 * Alternatively, if previous command doesn't work:
+
   ``` bash
   sudo grub-mkconfig -o /boot/grub/grub.cfg
   ```
+
 * Reboot and try `flashrom` command again
 
 Other method:
 
 * Edit `grub.cfg` in `/boot/grub/`:
+
   ``` bash
   linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed
   ```
@@ -100,6 +107,5 @@ operation depends on ME version, SPI flash layout and platform design. Detail
 information you should find in sections dedicated to given hardware. To access
 documentation for supported hardware please go to [Hardware Compatibility
 List](../variants/hardware-compatibility-list.md).
-
 
 Please note we consider further mitigations in [Dasharo Roadmap](../ecosystem/roadmap.md).

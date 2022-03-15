@@ -17,7 +17,7 @@ values after firmware update, we are gaining the following advantages:
   reference integrity measures (RIM), RIM can be calculated by build exactly
   the same version of OSF.
 
-    __NOTE__: Please note that depending on your threat model using TPM chip with
+    **NOTE**: Please note that depending on your threat model using TPM chip with
     closed source firmware implementation may lead to solution which is not
     trustworthy.
 
@@ -48,7 +48,7 @@ Docker containers for a couple of last years become the default method for provi
 reproducible runtime environment for software as well those started to be very
 useful for developers to transfer exact configuration for building given
 software stack. We wrote about the usefulness of Docker containers in embedded
-software development environment on 
+software development environment on
 [3mdeb blog](https://blog.3mdeb.com/2018/2018-09-27-optimize-performance-in-docker/).
 
 After a long time of using Docker containers for embedded software development
@@ -102,12 +102,10 @@ Some more detailed notes related to `coreboot-sdk` issues are presented below.
 
 ### Requirements for OSF dev and build process
 
-Open Source Firmware development and build environment SHOULD have:
-* meaningful release process, we describe our approach to OSF-related release
-  processes [here](#TBD)
+Open-source firmware development and build environment SHOULD have:
+* meaningful release process
 * meaningful validation process, at least basic build system and dev env
   capabilities should be tested
-
 * meaningful revisions with a clear explanation of what software stack can be build
   with what version of dev and build system, a description should include
   side-spec compliance, e.g., ACPI, SMBIOS, UEFI, etc.

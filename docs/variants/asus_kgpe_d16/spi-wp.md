@@ -208,7 +208,7 @@ current protection status:
 ```shell
 ./flashrom -p internal --wp-status
 ...
-WP config bits: SRP1=0 SRP0=0 CMP=0 SEC=0 TB=0 BP2=0 BP1=0 BP0=0 
+WP config bits: SRP1=0 SRP0=0 CMP=0 SEC=0 TB=0 BP2=0 BP1=0 BP0=0
 Protection range: start=0x00000000 length=0x00000000 (none)
 Protection mode: disabled
 ```
@@ -219,7 +219,7 @@ flash is not placed and invoke:
 
 ```shell
 ./flashrom -p internal --wp-disable
-./flashrom -p internal --wp-range=0,0 
+./flashrom -p internal --wp-range=0,0
 ```
 
 now that we have a clear state of the flash protection we may proceed with
@@ -285,7 +285,7 @@ Now you should get `Sucessfully set the requested mode.` now. Check the WP
 status:
 
 ```shell
-WP config bits: SRP1=0 SRP0=0 CMP=0 SEC=1 TB=0 BP2=0 BP1=1 BP0=1 
+WP config bits: SRP1=0 SRP0=0 CMP=0 SEC=1 TB=0 BP2=0 BP1=1 BP0=1
 Protection range: start=0x007fc000 length=0x00004000 (upper 1/512)
 Protection mode: disabled
 ```

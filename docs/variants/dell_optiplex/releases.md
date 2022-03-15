@@ -3,21 +3,21 @@
 Following Release Notes describe status of Open Source Firmware development for
 Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF.
 
-For details about our release process please read 
+For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 [Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR){ .md-button .md-button--primary .center }
 
 ## Unreleased
 
-
 Software BOM:
 
 - coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
   config and CI YAML)
-  - EDK2
+  + EDK2
 
 ### Added
+
 - UEFI boot support
 - Discrete graphics support
 - SATA password
@@ -30,6 +30,7 @@ Software BOM:
 - One-time boot feature
 
 ### Removed
+
 - Legacy boot support
 
 ### Binaries
@@ -37,6 +38,7 @@ Software BOM:
 ## v0.1.0 - 2021-01-18
 
 ### Added
+
 - Dell OptiPlex 7010 and 9010 platforms supported
 - Dasharo bootsplash
 - Legacy boot support
@@ -54,17 +56,20 @@ Software BOM:
 
 ### Binaries
 
-[Dell OptiPlex 7010/9010 Dasharo](#){ .md-button } [SHA256](#){ .md-button } [SHA256.sig](#){ .md-button } 
+[Dell OptiPlex 7010/9010 Dasharo](#){ .md-button } [SHA256](#){ .md-button } [SHA256.sig](#){ .md-button }
 
 [All in one zip](#){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
   config and CI YAML)](https://github.com/Dasharo/coreboot/compare/dell_optiplex_9010_v0.0.0...dell_optiplex_9010_v0.0.0)
 - [SeaBIOS 1.13.0](https://review.coreboot.org/plugins/gitiles/seabios/+/refs/tags/rel-1.13.0)
 
+<!--
+
 #### Binary blobs
 
 TBD
 
+-->

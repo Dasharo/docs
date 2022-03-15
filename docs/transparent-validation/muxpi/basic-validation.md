@@ -1,6 +1,6 @@
 # muxPi board validation
 
-> In case of any troubles, first it is recommended to read [comprehend Theory of Operations](theory-of-operations.md) for muxPi devices.  
+> In case of any troubles, first it is recommended to read [comprehend Theory of Operations](theory-of-operations.md) for muxPi devices.
 
 ## Necessary components preparation
 
@@ -26,16 +26,16 @@
 1. Plug ETH cable to RJ45 NanoPi port.
 1. Plug microUSB<->USB cable to muxPi and your machine.
 1. Plug in power supply.
-1. Make sure that jumpers are correctly set according to image:  
+1. Make sure that jumpers are correctly set according to image:
 ![](../../images/muxPi-jumpers.png)
 
-1. Connect to NanoPi using terminal:  
+1. Connect to NanoPi using terminal:
 `sudo minicom -D /dev/ttyUSB0 -o -b 115200`
 
-1. Save ip address:  
+1. Save ip address:
 `ifconfig`
 
-1. Connect to NanoPi via ssh (with password: `fa`):  
+1. Connect to NanoPi via ssh (with password: `fa`):
 `ssh root@192.168.4.XXX`
 
 1. Or via serial connection
@@ -47,18 +47,20 @@ root user `pi` with password `pi`.
 #### 1. Install WiringNP
 
 ```
- git clone https://github.com/friendlyarm/WiringNP  
- cd WiringNP/  
- chmod 755 build  
- ./build  
+ git clone https://github.com/friendlyarm/WiringNP
+ cd WiringNP/
+ chmod 755 build
+ ./build
 ```
 
 * verify installation:
+
 ```
 gpio readall
 ```
 
 * If your installation is successful the following messages will show up:
+
 ```
  +-----+-----+----------+------+---+-NanoPi-NEO--+------+----------+-----+-----+
  | BCM | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | BCM |
@@ -133,30 +135,36 @@ HW: 1.0 SW: 0.5
 
 #### 3. SD Adapter
 
-1. Connect IDC-uSD adapter to the muxPI board:  
+1. Connect IDC-uSD adapter to the muxPI board:
 ![](../../images/muxPi-sd.png)
 
 2. Insert the microSD card to microSD card slot accessible on the bottom side of
    muxPi board.
 3. To enable microSD card reader, connect to Cortex from MuxPi via minicom:
+
 ```
 minicom -D /dev/ttyS2
 ```
+
 and enter in minicom following commands:
+
 ```
 ts
 ```
+
 and then
+
 ```
 dut
 ```
+
 > NOTE: Each command should return `OK`
 
 4. Connect IDC-uSD adapter to a SD card adapter plugged into your machine
 > NOTE: You need to force IDC-uSD adapter to insert into SD card adapter
 
-5. (On your machine) Check if device is connected: `dmesg -w` 
-should help. You should also be able to read and write 
+5. (On your machine) Check if device is connected: `dmesg -w`
+should help. You should also be able to read and write
 data to uSD card from file manager.
 
 6. Flash image into microSD card (for RPI or other device
@@ -176,6 +184,7 @@ via IDC-uSD adapter.
 1. Write `help` and press Enter.
 
 Help output:
+
 ```
 help --- This help
 version --- Display version of the firmware

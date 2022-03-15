@@ -30,7 +30,7 @@ This test aims to verify that DUT boots properly Debian from USB.
 
 The `Debian GNU/Linux` is visible and confirms successful boot into OS.
 
-### LBT001.002 Log into booted Debian 
+### LBT001.002 Log into booted Debian
 
 **Test description**
 

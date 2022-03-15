@@ -2,11 +2,11 @@
 
 ## Test cases
 
-### FAN001.001 Check CPU entry temperature and CPU fan speed 
+### FAN001.001 Check CPU entry temperature and CPU fan speed
 
 **Test description**
 
-This test aims to verify that data for CPU temperature and CPU fan speed is 
+This test aims to verify that data for CPU temperature and CPU fan speed is
 available.
 
 **Test configuration data**
@@ -41,7 +41,7 @@ CPU temperature.
 
 **Test description**
 
-This test aims to verify that CPU fan speed responds properly to increasing CPU 
+This test aims to verify that CPU fan speed responds properly to increasing CPU
 temperature.
 
 **Test configuration data**
@@ -67,11 +67,11 @@ temperature.
 10. Wait for `root@debian:~#`.
 11. Install `stress-ng` package by executing: `sudo apt install stress-ng`.
 12. Confirm installation by typing `Y` and pressing `Enter` when asked.
-13. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"` 
+13. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`
     and check current CPU temperature and CPU fan speed.
 14. Execute command: `stress-ng --cpu 16 --io 8 --vm 4 --vm-bytes 4G --timeout 30s --metrics`.
 15. Wait 2 minutes.
-16. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"` 
+16. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`
     and check current CPU temperature and CPU fan speed.
 
 **Expected result**

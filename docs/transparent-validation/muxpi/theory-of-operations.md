@@ -247,12 +247,14 @@ GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/fota ./cmd/fota/
 `muxpi-power` - tool for controling power supply for  MuxPi's main board.
 
 1. Copy muxpi-power files (change `XXX` to proper values):
+
 ```
 scp power/muxpi-power root@192.168.4.XXX:/usr/bin
 scp power/systemd/muxpi-power.service root@192.168.4.XXX:/etc/systemd/system
 ```
 
 2. On your MuxPi device, enable and start muxpi-power service:
+
 ```
 systemctl enable muxpi-power.service
 systemctl start muxpi-power.service
@@ -263,6 +265,7 @@ systemctl start muxpi-power.service
 `stm` - tools/libs for communicating with STM32F030 microcontroller.
 
 1. Copy stm binary and systemd files (change `XXX` to proper values):
+
 ```
 scp bin/stm_armv7 root@192.168.4.XXX:/usr/bin/stm
 scp stm/systemd/stm.service root@192.168.4.XXX:/etc/systemd/system
@@ -272,12 +275,14 @@ scp stm/stm root@192.168.4.XXX:/usr/local/bin/stm
 ```
 
 2. On your MuxPi device - create group stm and add your user:
+
 ```
 groupadd stm
 usermod -aG stm root
 ```
 
 3. On your MuxPi device - enable stm sockets:
+
 ```
 systemctl daemon-reload
 systemctl enable stm.socket stm-user.socket
@@ -289,6 +294,7 @@ systemctl start stm.socket stm-user.socket
 `fota` - tools/libs for flashing devices - usually microSD card.
 
 1. Copy fota binary to MuxPi device (change `XXX` to proper values):
+
 ```
 scp bin/fota_armv7 root@192.168.4.XXX:/usr/bin/fota
 ```
@@ -297,6 +303,7 @@ scp bin/fota_armv7 root@192.168.4.XXX:/usr/bin/fota
 `/usr/bin/fota/`. Only `/usr/local/bin/fota/` should be used by software
 interfacing with MuxPi. This allows to swap fota implementation to your
 preferred tool:
+
 ```
 ln -s /usr/bin/fota /usr/local/bin/fota
 ```
@@ -346,7 +353,6 @@ required.
   the DUT
 * `DUT CTS` - Clear To Send - hardware handshake
 * `DUT RTS` - Ready To Send - hardware handshake
-
 
 Example configuration for OrangePi (DUT) uart connection:
 

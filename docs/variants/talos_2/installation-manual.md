@@ -9,6 +9,7 @@
     $ scp build/bootblock.signed.ecc root@<BMC_IP>:/tmp/bootblock.signed.ecc
     $ scp build/coreboot.rom.signed.ecc root@<BMC_IP>:/tmp/coreboot.rom.signed.ecc
     ```
+
     > If that file is not present, use `coreboot.rom` instead
 
 1. Backup the HBB partition (for faster later recovery) by invoking this
@@ -25,6 +26,7 @@
     # pflash -e -P HBB -p /tmp/bootblock.signed.ecc
     # pflash -e -P HBI -p /tmp/coreboot.rom.signed.ecc
     ```
+
     > Again, if that file is not present, use `coreboot.rom` instead
 
     Answer yes to the prompt and wait for the process to finish.

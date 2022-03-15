@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test aims to verify that the DUT is configured to use the custom boot menu 
+This test aims to verify that the DUT is configured to use the custom boot menu
 hotkey.
 
 **Test configuration data**
@@ -26,5 +26,5 @@ hotkey.
 
 **Expected result**
 
-The DUT boots into the boot menu using a specified hotkey. Depending on attached 
+The DUT boots into the boot menu using a specified hotkey. Depending on attached
 devices boot options should be visible.

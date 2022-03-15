@@ -7,12 +7,12 @@
 **Test description**
 
 Verified Boot is a method of verifying that the firmware compents come from a
-trusted source. This test aims to confirm that verified boot is enabled and 
+trusted source. This test aims to confirm that verified boot is enabled and
 functional.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -28,7 +28,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-### VBO001.002 Verified boot: Booting from Slot A
+### VBO002.001 Verified boot: Booting from Slot A
 
 **Test description**
 
@@ -37,7 +37,7 @@ proceed to boot from Slot A.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -53,7 +53,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-### VBO001.003 Verified boot: Booting from Recovery (Debian)
+### VBO003.001 Verified boot: Booting from Recovery (Debian)
 
 **Test description**
 
@@ -67,9 +67,9 @@ should revert to booting from the recovery slot.
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
-2. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/kgpe-d16/releases/Dasharo/v0.3.0/testing&fileid=419752)
-signed with wrong vboot keys
+1. Proceed with the [Generic test setup: firmware](../dasharo-compatibility/generic-test-setup.md#firmware).
+2. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/s/DAn2sdk3osSxG8A)
+    signed with wrong vboot keys
 
 **Test steps**
 
@@ -83,7 +83,7 @@ signed with wrong vboot keys
 8. Type the proper password.
 9. Wait for `root@debian:~#`.
 10. Install `flashrom` by `apt-get install flashrom` command.
-11. Flash coreboot signed with wrong vboot keys by executing the following 
+11. Flash coreboot signed with wrong vboot keys by executing the following
 command:
 
         flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]

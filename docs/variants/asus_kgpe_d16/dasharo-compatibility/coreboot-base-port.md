@@ -14,8 +14,8 @@ Refer to [setup](../setup.md#spi)
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches 
-stage bootblock. The bootblock is the first stage executed after CPU reset, 
+This test verifies whether the DUT during booting procedure reaches
+stage bootblock. The bootblock is the first stage executed after CPU reset,
 its main task is to set up everything for a C-environment.
 
 **Test configuration data**
@@ -24,7 +24,7 @@ its main task is to set up everything for a C-environment.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
@@ -43,8 +43,8 @@ its main task is to set up everything for a C-environment.
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches 
-stage romstage. The romstage initializes the DRAM and prepares everything 
+This test verifies whether the DUT during booting procedure reaches
+stage romstage. The romstage initializes the DRAM and prepares everything
 for device init.
 
 **Test configuration data**
@@ -53,7 +53,7 @@ for device init.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
@@ -72,7 +72,7 @@ for device init.
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches 
+This test verifies whether the DUT during booting procedure reaches
 stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test configuration data**
@@ -81,7 +81,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
@@ -100,7 +100,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches 
+This test verifies whether the DUT during booting procedure reaches
 stage ramstage. The ramstage does the main device init.
 
 **Test configuration data**
@@ -109,7 +109,7 @@ stage ramstage. The ramstage does the main device init.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
@@ -128,7 +128,7 @@ stage ramstage. The ramstage does the main device init.
 
 **Test description**
 
-This test aims to verify that DUT reaches the `gathering requirements` stage for 
+This test aims to verify that DUT reaches the `gathering requirements` stage for
 Resource Allocator v4 during booting procedure.
 
 **Test configuration data**
@@ -137,7 +137,7 @@ Resource Allocator v4 during booting procedure.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 
@@ -165,7 +165,7 @@ Resource Allocator v4 during booting procedure.
 
 **Test setup**
 
-1. Proceed with the 
+1. Proceed with the
     [Generic test setup: firmware](generic-test-setup.md#firmware)
 2. Connect to the UART debug interface and open a serial console.
 

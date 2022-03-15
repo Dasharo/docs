@@ -1,0 +1,35 @@
+---
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.26.3
+    hooks:
+      - id: yamllint
+        args: [-c=.yamllint]
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: 7a1deeeb04c39a015896af2a03f21aa81903acde
+    hooks:
+      - id: markdownlint
+      - id: markdownlint-fix
+
+  - repo: https://github.com/talos-systems/conform
+    rev: v0.1.0-alpha.25
+    hooks:
+      - id: conform
+        stages:
+          - commit-msg
+
+ci:
+  autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
+  autofix_prs: false

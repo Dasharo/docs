@@ -7,8 +7,8 @@ This documents describes the procedure for compiling coreboot for Clevo NV41MZ.
 ## Requirements
 
 - Docker
-  - follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-  - follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
+  + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+  + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 - Git
 
 ## Procedure
@@ -31,7 +31,7 @@ Navigate to the source code directory and checkout to the desired revision:
 
 > Replace the REVISION with one of the:
 > - `clevo_nv41mz/release` for the latest released version
-> - `clevo_nv41mz/vVERSION` (e.g. `v0.1.1`) for the given release
+> - `clevo_nv41mz/vVERSION` (e.g. `v1.0.1`) for the given release
 
 ```bash
 $ cd coreboot

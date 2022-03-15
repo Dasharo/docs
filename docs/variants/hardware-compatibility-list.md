@@ -15,4 +15,3 @@ Possible status:
   quality criteria.
 * **Maintenance** - under active maintenance release cycle according to
   schedule presented in Roadmap.
-

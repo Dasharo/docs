@@ -6,8 +6,8 @@
 
 **Test description**
 
-This test verifies whether the DUT might be put into suspend mode and then, by 
-using the power button, might be properly resumed. This test case may be re-done 
+This test verifies whether the DUT might be put into suspend mode and then, by
+using the power button, might be properly resumed. This test case may be re-done
 several times to specify the platform stability.
 
 **Test configuration data**
@@ -34,11 +34,11 @@ several times to specify the platform stability.
 **Expected result**
 
 1. After running suspend command the platform should enter the suspend mode.
-1. After pressing power button the platform should initiate the resume 
+1. After pressing power button the platform should initiate the resume
     procedure.
 1. Output of the last command should contains the line with the statement:
 
             systemd[1]: systemd-suspend.service: Succeeded
 
-1. Date of the above-described event should be later than date from 
+1. Date of the above-described event should be later than date from
     command `date` from the test steps' third point.

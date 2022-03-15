@@ -70,7 +70,7 @@ This test aims to verify that the Memtest86+ starts does not hang under DUT.
 
 1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
 
-**Test steps**   
+**Test steps**
 
 1. Power on the DUT.
 2. Wait for boot until `BOOT_MENU_STRING` appears.
@@ -80,7 +80,7 @@ This test aims to verify that the Memtest86+ starts does not hang under DUT.
 
 **Expected result**
 
-The `State: - Running...` is visible after a few seconds and confirms that the 
+The `State: - Running...` is visible after a few seconds and confirms that the
 the test is in progress.
 
 ### MEM001.004 Memtest86+ refreshing by 'L' key
@@ -112,7 +112,7 @@ This test aims to verify that DUT refreshes Memtest86+ properly.
 The `Memtest86+` is visible before and after pressing `L`.
 
 ### MEM001.005 Memtest86+ refreshing by 'l' key
- 
+
 **Test description**
 
 This test aims to verify that DUT refreshes Memtest86+ properly.
