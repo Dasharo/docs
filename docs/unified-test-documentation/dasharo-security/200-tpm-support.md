@@ -34,14 +34,14 @@ be accessed from the operating system.
 1. If your device is equipped with TPM2.0 - execute the following command
     in terminal:
 
-```
+```bash
 tpm2_pcrlist
 ```
 
 1. If your device is equipped with TPM1.2 - execute the following command
     in terminal:
 
-```
+```bash
 cat /sys/class/tpm/tpm0/pcrs
 ```
 
@@ -51,7 +51,7 @@ cat /sys/class/tpm/tpm0/pcrs
 
 Output example for TPM2.0:
 
-```
+```text
 sha1 :
   0  : 3a3f780f11a4b49969fcaa80cd6e3957c33b2275
   1  : 8a074fdf65a11e5dbf02d25e7f26b00c26c98b41
@@ -106,7 +106,7 @@ sha256 :
 
 Output example for TPM1.2:
 
-```
+```text
 PCR-00: B3 F3 60 E1 D5 1F 82 D4 62 E6 B9 69 92 2F 65 F4 9F 1A 5F 8E
 PCR-01: 21 9F 1F 4A C1 AD AD 4D F1 8B 9F AB 98 23 68 B1 73 A6 32 87
 PCR-02: 40 CF E3 DC A7 FF 67 FB AA BB 20 85 A4 39 43 D8 54 A7 AB 98
@@ -172,7 +172,7 @@ get-tpm
 1. The command should return informations about TPM state: if the TPM is
     present, ready and enabled:
 
-```
+```text
 TpmPresent     : True
 TpmReady       : True
 TpmEnabled     : True

@@ -27,7 +27,7 @@ TPM.a.
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Download `cbmem` and `flashrom` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
+1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
 
@@ -38,7 +38,7 @@ TPM.a.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 sudo ./cbmem -c | grep -i PCR
 ```
 
@@ -47,7 +47,7 @@ sudo ./cbmem -c | grep -i PCR
 The output of the command should indicate that measurements of the coreboot
 components have been made:
 
-```
+```text
 TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/romstage to PCR 2 measured
 TPM: Digest of FMAP: FW_MAIN_A CBFS: fspm.bin to PCR 2 measured
 TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/postcar to PCR 2 measured
@@ -61,6 +61,6 @@ TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/payload to PCR 2 measured
 
 The output should also not contain the following message:
 
-```
+```text
 TPM: Extending hash into PCR failed.
 ```

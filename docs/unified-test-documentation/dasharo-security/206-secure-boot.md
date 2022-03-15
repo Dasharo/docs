@@ -39,7 +39,7 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 1. Log in to the default user session.
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 sudo dmesg | grep secureboot
 ```
 
@@ -47,7 +47,7 @@ sudo dmesg | grep secureboot
 
 The output of the command should contain the line:
 
-```
+```text
 secureboot: Secure boot enabled
 ```
 

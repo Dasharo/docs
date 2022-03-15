@@ -25,7 +25,7 @@ functional.
 
 The logs should indicate that vboot is enabled and verstage has been entered:
 
-```
+```text
 VBOOT: Loading verstage.
 ```
 
@@ -52,7 +52,7 @@ functional.
     [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk).
-1. Download `cbmem` and `flashrom` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
+1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
     to the DUT.
 1. Disable Secure Boot.
 
@@ -63,7 +63,7 @@ functional.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
-```
+```bash
 sudo ./cbmem -c | grep VBOOT
 ```
 
@@ -72,7 +72,7 @@ sudo ./cbmem -c | grep VBOOT
 The output of the command should indicate that vboot is enabled and verstage
 has been entered:
 
-```
+```text
 VBOOT: Loading verstage.
 TPM: Extending digest for VBOOT: boot mode into PCR 0
 TPM: Extending digest for VBOOT: GBB HWID into PCR 1
@@ -103,7 +103,7 @@ proceed to boot from Slot A.
 
 The logs should indicate that vboot has chosen to boot from slot A:
 
-```
+```text
 Slot A is selected
 ```
 
@@ -129,7 +129,7 @@ proceed to boot from Slot A.
    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation)
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../dasharo-compatibility/generic-test-setup/#os-boot-from-disk)
-1. Download `cbmem` and `flashrom` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
+1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
 
@@ -140,7 +140,7 @@ proceed to boot from Slot A.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
-```
+```bash
 sudo ./cbmem -c | grep "Slot A"
 ```
 
@@ -149,7 +149,7 @@ sudo ./cbmem -c | grep "Slot A"
 The output of the command should indicate that vboot has chosen to boot from
 slot A:
 
-```
+```text
 Slot A is selected
 ```
 
@@ -175,7 +175,7 @@ should revert to booting from the recovery slot.
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Download `cbmem` and `flashrom` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
+1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
 1. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/s/DAn2sdk3osSxG8A)
@@ -189,7 +189,7 @@ should revert to booting from the recovery slot.
 1. Flash coreboot signed with wrong vboot keys by executing the following
 command:
 
-```
+```bash
 flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 ```
 
@@ -200,7 +200,7 @@ flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
-```
+```bash
 sudo ./cbmem -c | grep -i recovery
 ```
 
@@ -213,7 +213,7 @@ the recovery slot.
 
 Example:
 
-```
+```text
 VB2:vb2_check_recovery() Recovery reason from previous boot: 0x3 / 0x3
 VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
 Recovery requested (1009000e)
