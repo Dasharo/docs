@@ -39,7 +39,7 @@ can be detected from the operating system.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
-```
+```bash
 lspci | grep RTS522A
 ```
 
@@ -47,7 +47,7 @@ lspci | grep RTS522A
 
 The output from the command should contain the line:
 
-```
+```bash
 2d:00.0 Unassigned class [ff00]: Realtek Semiconductor Co., Ltd. RTS522A PCI Express Card Reader (rev 01)
 ```
 
@@ -105,7 +105,7 @@ can be used from the operating system.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following commands as root:
 
-```
+```bash
 dd if=/dev/urandom of=/tmp/in.bin bs=4K count=100
 dd if=/tmp/in.bin of=/dev/mmcblk0 bs=4K count=100
 dd if=/dev/mmcblk0 of=/tmp/out.bin bs=4K count=100
@@ -116,7 +116,7 @@ sha256sum /tmp/in.bin /tmp/out.bin
 
 The output from the last command should contain 2 indentical checksums:
 
-```
+```bash
 2083776668ed0c8095a9ac42188153c02f360e116c14b36d2ef5c98665d75dcb  /tmp/in.bin
 2083776668ed0c8095a9ac42188153c02f360e116c14b36d2ef5c98665d75dcb  /tmp/out.bin
 ```

@@ -56,7 +56,7 @@ the M.2 slot.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
-```
+```bash
 sudo mount | grep 'on / '
 ```
 
@@ -66,7 +66,7 @@ sudo mount | grep 'on / '
 1. Output in Terminal indicates that system partition is installed on the NVMe
     disk:
 
-```
+```bash
 /dev/nvme* on / tpe ext4 (rw,relatime,errors=remount-ro)
 ```
 
