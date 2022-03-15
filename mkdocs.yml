@@ -138,7 +138,9 @@ nav:
               - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
               - 'USB type C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
               - 'Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
-          - 'Dasharo Security':
+              - 'Windows 11 booting': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
+              - 'Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
+          - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
