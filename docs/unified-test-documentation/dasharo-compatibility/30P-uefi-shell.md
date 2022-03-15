@@ -21,7 +21,7 @@ UEFI Shell application.
 **Test steps**
 
 1. Power on the DUT.
-1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the UEFI Boot 
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the UEFI Boot
     Menu.
 1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
 
@@ -30,7 +30,7 @@ UEFI Shell application.
 The DUT boots into an UEFI Shell successfully, as indicated by the example
 console output shown on the screen:
 
-```
+```text
 UEFI Interactive Shell v2.2
 EDK II
 UEFI v2.70 (EDK II, 0x00010000)
