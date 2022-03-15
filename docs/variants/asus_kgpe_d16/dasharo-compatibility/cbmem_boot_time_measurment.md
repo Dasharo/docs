@@ -100,7 +100,7 @@ This test aims to measure reboot time.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](generic-test-setup#firmware)
+   [Generic test setup: firmware](generic-test-setup#firmware).
 
 2. Get `cbmem` tool from
 [here](https://cloud.3mdeb.com/index.php/s/siyMirafZCPMi3Q/download).
