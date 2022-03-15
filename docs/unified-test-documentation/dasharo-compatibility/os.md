@@ -34,7 +34,7 @@ The `Debian GNU/Linux` is visible and confirms successful boot into OS.
 
 **Test description**
 
-This test aims to verify that DUT logs properly into Debian booted from USB.
+This test aims to verify whether the DUT logs properly into Debian booted from USB.
 
 **Test configuration data**
 
