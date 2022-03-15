@@ -103,7 +103,7 @@ This test verifies that the power supply state is detected correctly in the OS.
 1. The battery charge indicator should correctly show whether the power supply
     is plugged in or not.
 1. The battery charge indicator should detect the AC adapter state change
-    within seconds of the adapter being plugged in / out.
+    within seconds of the adapter being plugged in/out.
 
 ### ECR002.002 Battery monitoring - charging state in OS (Windows 11)
 
@@ -195,8 +195,8 @@ by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Verify that the cursor can be moved with the touchpad and that clicking works
-   (test both clicking and tapping).
+1. Verify that the cursor can be moved with the touchpad and that clicking
+    works (test both clicking and tapping).
 1. Open `C:\Windows` in `Windows Explorer`
     1. Verify that scrolling with 2 fingers moves the content of the window,
     1. Verify that pinching with 2 fingers zooms in and zooms out the content.
@@ -225,12 +225,12 @@ and all basic keys work according to their labels.
 
 **Test steps**
 
-1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu
-1. Use the arrow keys and the Enter key to navigate the menus
+1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+1. Use the arrow keys and the Enter key to navigate the menus.
 
 **Expected result**
 
-1. All menus can be entered using the internal keyboard
+1. All menus can be entered using the internal keyboard.
 
 ### ECR004.002 Keyboard (standard keypad) in OS (Ubuntu 20.04)
 
@@ -255,14 +255,14 @@ system and all basic keys work according to their labels.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Run `sudo libinput debug-events --show-keycodes` in the terminal
-1. Press each keyboard key and check the generated keycode
+1. Run `sudo libinput debug-events --show-keycodes` in the terminal.
+1. Press each keyboard key and check the generated keycode.
 
 **Expected result**
 
 1. All standard keyboard keys generate the correct keycodes and events as per
-   their labels
-1. Key combinations are detected correctly
+    their labels.
+1. Key combinations are detected correctly.
 
 ### ECR004.003 Keyboard (standard keypad) in OS (Windows 11)
 
@@ -320,12 +320,12 @@ This test verifies that the play/pause hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Run `sudo libinput debug-events --show-keycodes` in the terminal
-1. Verify that pressing the play/pause key generates a `KEY_PLAYPAUSE` event
+1. Run `sudo libinput debug-events --show-keycodes` in the terminal.
+1. Verify that pressing the play/pause key generates a `KEY_PLAYPAUSE` event.
 
 **Expected result**
 
-1. Pressing the play/pause hotkey generates a `KEY_PLAYPAUSE` event
+1. Pressing the play/pause hotkey generates a `KEY_PLAYPAUSE` event.
 
 ### ECR005.002 Keyboard (function key: play/pause) in OS (Windows 11)
 
@@ -375,15 +375,15 @@ This test verifies that the cooling mode hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the cooling mode hotkey (Fn + 1) once and note the effect
-1. Press the cooling mode hotkey once again and note the effect
+1. Press the cooling mode hotkey (Fn + 1) once and note the effect.
+1. Press the cooling mode hotkey once again and note the effect.
 
 **Expected result**
 
 1. Pressing the hotkey once should activate the cooling mode (fans should
-   spin up to their maximum speed)
+   spin up to their maximum speed).
 1. Pressing the hotkey again should deactivate the cooling mode (fans should
-   return to normal)
+   return to normal).
 
 ### ECR006.002 Keyboard (function key: cooling mode) in OS (Windows 11)
 
@@ -405,15 +405,15 @@ This test verifies that the cooling mode hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the cooling mode hotkey (Fn + 1) once and note the effect
-1. Press the cooling mode hotkey once again and note the effect
+1. Press the cooling mode hotkey (Fn + 1) once and note the effect.
+1. Press the cooling mode hotkey once again and note the effect.
 
 **Expected result**
 
 1. Pressing the hotkey once should activate the cooling mode (fans should
-   spin up to their maximum speed)
+   spin up to their maximum speed).
 1. Pressing the hotkey again should deactivate the cooling mode (fans should
-   return to normal)
+   return to normal).
 
 ### ECR007.001 Keyboard (function key: touchpad on/off) in OS (Ubuntu 20.04)
 
@@ -455,8 +455,8 @@ sudo udevadm trigger
 **Expected result**
 
 1. Pressing the hotkey once should deactivate the touchpad (touchpad should be
-   completely inoperable)
-1. Pressing the hotkey again should reactivate the touchpad
+   completely inoperable).
+1. Pressing the hotkey again should reactivate the touchpad.
 
 ### ECR007.002 Keyboard (function key: touchpad on/off) in OS (Windows 11)
 
@@ -484,8 +484,8 @@ This test verifies that the touchpad on/off hotkey works correctly.
 **Expected result**
 
 1. Pressing the hotkey once should deactivate the touchpad (touchpad should be
-   completely inoperable)
-1. Pressing the hotkey again should reactivate the touchpad
+   completely inoperable).
+1. Pressing the hotkey again should reactivate the touchpad.
 
 ### ECR008.001 Keyboard (function key: display on/off) in OS (Ubuntu 20.04)
 
@@ -507,13 +507,13 @@ This test verifies that the display on/off hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the display on/off hotkey once and note the effect
-1. Press any key on the keyboard and note the effect
+1. Press the display on/off hotkey once and note the effect.
+1. Press any key on the keyboard and note the effect.
 
 **Expected result**
 
-1. Pressing the hotkey once should turn the internal LCD panel off
-1. Pressing any key on the keyboard should power the internal LCD panel back on
+1. Pressing the hotkey once should turn the internal LCD panel off.
+1. Pressing any key on the keyboard should power the internal LCD panel back on.
 
 ### ECR008.002 Keyboard (function key: display on/off) in OS (Windows 11)
 
@@ -541,7 +541,8 @@ This test verifies that the display on/off hotkey works correctly.
 **Expected result**
 
 1. Pressing the hotkey once should turn the internal LCD panel off.
-1. Pressing any key on the keyboard should power the internal LCD panel back on.
+1. Pressing any key on the keyboard should power the internal LCD panel
+    back on.
 
 ### ECR009.001 Keyboard (function key: mute) in OS (Ubuntu 20.04)
 
@@ -685,7 +686,7 @@ This test verifies that the volume down hotkey works correctly.
 1. Pressing the hotkey should decrease the volume of the currently enabled audio
    output.
 1. Each keypress should cause a volume down notification to appear in the middle
-   of the screen
+   of the screen.
 
 ### ECR011.002 Keyboard (function key: volume down) in OS (Windows 11)
 
@@ -795,8 +796,8 @@ This test verifies that the display switch hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Run `sudo libinput debug-events --show-keycodes` in the terminal
-1. Press the display switch hotkey once and note the effect
+1. Run `sudo libinput debug-events --show-keycodes` in the terminal.
+1. Press the display switch hotkey once and note the effect.
 
 **Expected result**
 
@@ -976,8 +977,8 @@ This test verifies that the camera on/off hotkey works correctly.
 
 1. Pressing the hotkey once should make the
     `Chicony Electronics Co., Ltd Chicony USB2.0 Camera` device disappear
-    from the output of `lsusb`
-1. Pressing the hotkey again should make the USB device reappear
+    from the output of `lsusb`.
+1. Pressing the hotkey again should make the USB device reappear.
 
 ### ECR016.002 Keyboard (function key: camera on/off) in OS (Windows 11)
 
@@ -1029,10 +1030,10 @@ This test verifies that the flight mode hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Locate and open the power menu in the upper right corner of the screen
-1. Enter Settings and navigate to the Wi-Fi panel
-1. Note the current state of the Airplane Mode switch
-1. Press the flight mode hotkey twice and note the result of each keypress
+1. Locate and open the power menu in the upper right corner of the screen.
+1. Enter Settings and navigate to the Wi-Fi panel.
+1. Note the current state of the Airplane Mode switch.
+1. Press the flight mode hotkey twice and note the result of each keypress.
 
 **Expected result**
 
