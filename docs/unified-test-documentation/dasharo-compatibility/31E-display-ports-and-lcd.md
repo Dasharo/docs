@@ -61,7 +61,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Observe the internal LCD after the `OPERATING_SYSTEM` has booted
+1. Observe the internal LCD after the `OPERATING_SYSTEM` has booted.
 
 **Expected result**
 
@@ -120,7 +120,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 **Expected result**
 
 1. The image should be displayed on the internal LCD and an external HDMI display
-    in `Mirror` and `Join Displays` modes
+    in `Mirror` and `Join Displays` modes.
 
 ### DSP002.002 External HDMI display in OS (Windows 11)
 
