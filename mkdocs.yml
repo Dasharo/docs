@@ -143,7 +143,9 @@ nav:
               - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
               - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
               - 'Platform suspend and resume': unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
-          - 'Dasharo Security':
+              - 'USB detection': unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
+              - 'USB booting': unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
+          - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
