@@ -17,9 +17,9 @@ Under Test and works properly.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: Firmware](../../generic-test-setup/#firmware).
+   [Generic test setup: Firmware](../../generic-test-setup#firmware).
 1. Proceed with the
-   [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+   [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 
 **Test steps**
 
