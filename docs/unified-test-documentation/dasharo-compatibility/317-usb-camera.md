@@ -42,17 +42,17 @@ ffprobe /dev/video2
 
 1. The output from the first command should contain the lines:
 
-```bash
-Input #0, video4linux2,v4l2, from '/dev/video0':
-    Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, 147456 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc
-```
+    ```bash
+    Input #0, video4linux2,v4l2, from '/dev/video0':
+        Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, 147456 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc
+    ```
 
 1. The output from the second command should contain the lines:
 
-```bash
-Input #0, video4linux2,v4l2, from '/dev/video2':
-    Stream #0:0: Video: rawvideo (Y800 / 0x30303859), gray, 640x360, 55296 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc
-```
+    ```bash
+    Input #0, video4linux2,v4l2, from '/dev/video2':
+        Stream #0:0: Video: rawvideo (Y800 / 0x30303859), gray, 640x360, 55296 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc
+    ```
 
 ### CAM001.002 USB Camera (Windows 10)
 
