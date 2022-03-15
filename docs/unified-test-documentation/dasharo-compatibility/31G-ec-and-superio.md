@@ -433,16 +433,19 @@ This test verifies that the touchpad on/off hotkey works correctly.
 1. Log into system by using the proper login and password.
 1. Proceed with the [Common](#common) section.
 1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
+
+```bash
+evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4XMB,ME,MZ:*
+         KEYBOARD_KEY_f7=191
+         KEYBOARD_KEY_f8=191
    ```
-   evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4XMB,ME,MZ:*
-           KEYBOARD_KEY_f7=191
-           KEYBOARD_KEY_f8=191
-   ```
-3. Execute the following commands:
-   ```
-   sudo systemd-hwdb update
-   sudo udevadm trigger
-   ```
+
+1. Execute the following commands:
+
+```bash
+sudo systemd-hwdb update
+sudo udevadm trigger
+```
 
 **Test steps**
 
@@ -799,7 +802,7 @@ This test verifies that the display switch hotkey works correctly.
 
 1. Pressing the hotkey should yield the following output in the terminal:
 
-```
+```bash
 -event3   KEYBOARD_KEY     +0.000s	KEY_LEFTMETA (125) pressed
  event3   KEYBOARD_KEY     +0.004s	KEY_P (25) pressed
  event3   KEYBOARD_KEY     +0.010s	KEY_P (25) released
@@ -966,12 +969,14 @@ This test verifies that the camera on/off hotkey works correctly.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
 1. Open the terminal and run the command: `watch -n1 lsusb`.
-1. Press the camera on/off hotkey twice and note the effect after each keypress.
+1. Press the camera on/off hotkey twice and note the effect after each
+    keypress.
 
 **Expected result**
 
-1. Pressing the hotkey once should make the `Chicony Electronics Co., Ltd Chicony USB2.0 Camera`
-   device disappear from the output of `lsusb`
+1. Pressing the hotkey once should make the
+    `Chicony Electronics Co., Ltd Chicony USB2.0 Camera` device disappear
+    from the output of `lsusb`
 1. Pressing the hotkey again should make the USB device reappear
 
 ### ECR016.002 Keyboard (function key: camera on/off) in OS (Windows 11)
@@ -1146,24 +1151,32 @@ mode.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
 1. Open the terminal and run the following command to check the power button
-   action:
+    action:
 
-         gsettings get org.gnome.settings-daemon.plugins.power power-button-action
+```bash
+gsettings get org.gnome.settings-daemon.plugins.power power-button-action
+```
 
-2. If the status is other than `suspend` run the following command to change
+1. If the status is other than `suspend` run the following command to change
    the power button action:
 
-         gsettings set org.gnome.settings-daemon.plugins.power power-button-action "suspend"
+```bash
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action "suspend"
+```
 
-3. Check the power button action again by running the following command:
+1. Check the power button action again by running the following command:
 
-         gsettings get org.gnome.settings-daemon.plugins.power power-button-action
+```bash
+gsettings get org.gnome.settings-daemon.plugins.power power-button-action
+```
 
-4. Press the power button once and note the result.
-5. Press `Enter` and note the result.
-6. Run the following command to check last finished operation:
+1. Press the power button once and note the result.
+1. Press `Enter` and note the result.
+1. Run the following command to check last finished operation:
 
-         journalctl | grep systemd-logind | tail -1
+```bash
+journalctl | grep systemd-logind | tail -1
+```
 
 **Expected result**
 
@@ -1172,7 +1185,9 @@ mode.
 1. After completing the 5th step device should wake up.
 1. The output of the last command should contain the line:
 
-         Operation 'sleep' finished
+```bash
+Operation 'sleep' finished
+```
 
 ### ECR019.002 Buttons (button: power) in OS (Windows 11)
 
@@ -1224,13 +1239,19 @@ system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Open one terminal window and run the command `sudo systemd-inhibit --what handle-lid-switch --mode block watch echo "Inhibiting lid switch"`.
-1. Open another terminal and run the command `sleep 5 && cat /proc/acpi/button/lid/LID0/state`
-   to read the state of the lid while it is closed.
+1. Open one terminal window and run the following command:
+
+```bash
+sudo systemd-inhibit --what handle-lid-switch --mode block watch echo "Inhibiting lid switch"
+```
+
+1. Open another terminal and run the command
+    `sleep 5 && cat /proc/acpi/button/lid/LID0/state` to read the state of
+    the lid while it is closed.
 1. Close the lid and wait 5 seconds.
 1. Open the lid and note the output of the command.
-1. Run the command `cat /proc/acpi/button/lid/LID0/state` while the lid is open
-   and note the output.
+1. Run the command `cat /proc/acpi/button/lid/LID0/state` while the lid is
+    open and note the output.
 
 **Expected result**
 
