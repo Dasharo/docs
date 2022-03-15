@@ -148,6 +148,7 @@ nav:
               - 'coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - 'Custom Fan Curve': unified-test-documentation/dasharo-compatibility/S30-fan-control.md
               - 'Embedded Controller and Super I/O initialization ': unified-test-documentation/dasharo-compatibility/31G-ec-and-superio.md
+              - 'Nvidia Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
