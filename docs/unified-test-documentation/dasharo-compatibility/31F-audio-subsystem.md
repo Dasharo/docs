@@ -40,7 +40,7 @@ and can be detected from the operating system.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 cat /sys/class/sound/card0/hwC0D*/chip_name
 ```
 
@@ -48,7 +48,7 @@ cat /sys/class/sound/card0/hwC0D*/chip_name
 
 The output of the command should return a list of detected audio devices:
 
-```
+```text
 ALC293
 Tigerlake HDMI
 ```
@@ -106,7 +106,7 @@ recordings.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo  0
 pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 65535
 speaker-test
@@ -139,7 +139,7 @@ recordings.
 1. Log into system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the left mouse button to open volume menu.
-2. In the volume menu, click the rightmost part of it and note the reult.
+1. In the volume menu, click the rightmost part of it and note the reult.
 
 **Expected result**
 
@@ -167,14 +167,14 @@ This test aims to verify that the audio subsystem is able to capture audio.
 1. Log into system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav
 ```
 
 1. Make some noise aroud DUT. For example, say something.
 1. Execute the following command:
 
-```
+```bash
 aplay /tmp/test-mic.wav
 ```
 
@@ -241,14 +241,14 @@ after plugging in the 3.5 mm jack into the slot.
     device has been connected to the laptop (headset).
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 ```
 
 1. Disconnect the headset from the laptop.
 1. Execute the following command again:
 
-```
+```bash
 amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 ```
 
@@ -256,13 +256,13 @@ amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 
 1. The output of the first command should not be empty and contains the line:
 
-```
+```text
 : values=on
 ```
 
-2. The output of the second command should not be empty and contains the line:
+1. The output of the second command should not be empty and contains the line:
 
-```
+```text
 : values=off
 ```
 
@@ -335,7 +335,7 @@ recordings by using the external headset speakers.
     laptop.
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo  0
 pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 65535
 speaker-test
@@ -401,27 +401,27 @@ from external headset.
     laptop.
 1. Open a terminal window and execute the following command:
 
-```
+```bash
 arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav
 ```
 
 1. Make some noise for the headset. For example, say something.
 1. Execute the following command:
 
-```
+```bash
 aplay /tmp/test-mic.wav
 ```
 
 1. Execute the following command:
 
-```
+```bash
 arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic-1.wav
 ```
 
 1. Make some noise for the DUT. For example tap a few times in the laptop casing.
 1. Execute the following command:
 
-```
+```bash
 aplay /tmp/test-mic.wav
 ```
 
