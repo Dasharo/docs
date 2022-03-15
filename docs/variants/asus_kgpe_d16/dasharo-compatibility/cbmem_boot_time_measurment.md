@@ -17,7 +17,8 @@ This test aims to measure coldboot time.
 1. Proceed with the
    [Generic test setup: firmware](generic-test-setup#firmware)
 
-2. Get `cbmem` tool.
+2. Get `cbmem` tool from
+[here](https://cloud.3mdeb.com/index.php/s/siyMirafZCPMi3Q/download).
 
 **Test steps**
 
@@ -37,7 +38,7 @@ This test aims to measure coldboot time.
 
         99     4084321 818      selfboot jump
 
-In this example we take `4084321` timestamp.
+    In this example we take `4084321` timestamp.
 
 2. To get time in seconds, we need to divide the timestamp by 1000000.
 
@@ -58,7 +59,8 @@ This test aims to measure warmboot time.
 1. Proceed with the
    [Generic test setup: firmware](generic-test-setup#firmware)
 
-2. Get `cbmem` tool.
+2. Get `cbmem` tool from
+[here](https://cloud.3mdeb.com/index.php/s/siyMirafZCPMi3Q/download).
 
 **Test steps**
 
@@ -78,7 +80,7 @@ This test aims to measure warmboot time.
 
         99     4084321 818      selfboot jump
 
-In this example we take `4084321` timestamp.
+    In this example we take `4084321` timestamp.
 
 2. To get time in seconds, we need to divide the timestamp by 1000000.
 
@@ -100,7 +102,8 @@ This test aims to measure reboot time.
 1. Proceed with the
    [Generic test setup: firmware](generic-test-setup#firmware)
 
-2. Get `cbmem` tool.
+2. Get `cbmem` tool from
+[here](https://cloud.3mdeb.com/index.php/s/siyMirafZCPMi3Q/download).
 
 **Test steps**
 
@@ -122,7 +125,7 @@ This test aims to measure reboot time.
 
         99     4084321 818      selfboot jump
 
-In this example we take `4084321` timestamp.
+    In this example we take `4084321` timestamp.
 
 2. To get time in seconds, we need to divide the timestamp by 1000000.
 
