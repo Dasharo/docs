@@ -142,7 +142,8 @@ nav:
               - 'Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
               - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
               - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
-          - 'Dasharo security':
+              - 'Platform suspend and resume': unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+          - 'Dasharo Security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
