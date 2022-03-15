@@ -17,7 +17,7 @@ UEFI-aware Operating System.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
 1. Proceed with the
    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
 
@@ -53,7 +53,7 @@ UEFI-aware Operating System.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
 1. Proceed with the
    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
 
