@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test verifies the presence of UEFI compatible interfaces by booting
+This test verifies the presence of UEFI compatible interface by booting
 UEFI-aware Operating System.
 
 **Test configuration data**
@@ -42,7 +42,7 @@ UEFI-aware Operating System.
 
 **Test description**
 
-This test aims to verify the presence of UEFI compatible interfaces by booting
+This test aims to verify the presence of UEFI compatible interface by booting
 UEFI-aware Operating System.
 
 **Test configuration data**

@@ -20,9 +20,10 @@ UEFI Shell application.
 
 **Test steps**
 
-1. Power on the DUT
-1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu
-1. Select the `UEFI Shell` option using the arrow keys and press `Enter`
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the UEFI Boot 
+    Menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
 
 **Expected result**
 
