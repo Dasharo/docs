@@ -55,7 +55,7 @@ This test aims to verify that DUT logs properly into Debian booted from USB.
 5. Wait for `debian login:`.
 6. Type proper login
 7. Wait for `Password:`
-8. Type the proper password
+8. Type the proper password.
 9. Wait for `root@debian:~#`.
 
 **Expected result**
