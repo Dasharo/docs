@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test aims to verify that DUT boots properly Debian from USB.
+This test aims to verify whether the DUT boots properly Debian from USB.
 
 **Test configuration data**
 
