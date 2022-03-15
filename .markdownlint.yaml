@@ -79,7 +79,7 @@ MD013:
   # Strict length checking (e.g. allow for longer URLs)
   strict: false
   # Stern length checking
-  stern: true
+  stern: false
 
 # MD014/commands-show-output - Dollar signs used before commands without showing output
 # TODO: set false for now but we should consider enabling it
