@@ -24,7 +24,7 @@ This test aims to verify that DUT boots properly Debian from USB.
 2. Wait for boot until `BOOT_MENU_STRING` appears.
 3. Press `BOOT_MENU_KEY` to enter the boot menu.
 4. Select the proper number for `USB_STICK` option.
-5. Wait for `Debian GNU/Linux`
+5. Wait for `Debian GNU/Linux`.
 
 **Expected result**
 
