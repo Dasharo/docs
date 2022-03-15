@@ -128,6 +128,11 @@ nav:
     # - 'End User Device': ecosystem/end-user.md
       - 'Dasharo Test Specification':
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
+          - 'Dasharo Security':
+              - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
+              - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
+              - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
+              - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
