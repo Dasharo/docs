@@ -129,6 +129,12 @@ nav:
       - 'Dasharo Test Specification':
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
           - 'Dasharo Compatibility':
+              - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
+              - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
+              - 'Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
+              - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
+              - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
+              - 'USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
               - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
               - 'Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
               - 'SD card reader': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
