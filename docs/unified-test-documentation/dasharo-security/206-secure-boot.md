@@ -51,7 +51,7 @@ The output of the command should contain the line:
 secureboot: Secure boot enabled
 ```
 
-### SBO001.002 UEFI Secure Boot (Windows 10)
+### SBO001.002 UEFI Secure Boot (Windows 11)
 
 **Test description**
 
@@ -62,7 +62,7 @@ Tianocore and, after the DUT reset, it is seen from the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 

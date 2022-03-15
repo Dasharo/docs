@@ -229,7 +229,7 @@ Device 4C:58:3B:C1:37:90 4C-58-3B-C1-37-90
 Device 6A:93:A2:6A:E5:20 6A-93-A2-6A-E5-20
 ```
 
-### WLE003.002 Bluetooth scanning (Windows 10)
+### WLE003.002 Bluetooth scanning (Windows 11)
 
 **Test description**
 
@@ -239,7 +239,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Windows 10
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 

@@ -1195,7 +1195,7 @@ mode.
 **Test description**
 
 This test verifies that the power button is detected correctly by the operating
-system. In Windows 10 OS the default function assigned to this key is sleep
+system. In Windows 11 OS the default function assigned to this key is sleep
 mode.
 
 **Test configuration data**
