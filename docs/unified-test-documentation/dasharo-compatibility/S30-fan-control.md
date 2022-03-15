@@ -33,7 +33,7 @@ according to the defined values.
 1. Log into system by using the proper login and password.
 1. Open the terminal window and execute the following command:
 
-```
+```bash
 sensors | grep 'Package id 0'
 ```
 
@@ -44,7 +44,7 @@ sensors | grep 'Package id 0'
    key) is spinning
 1. In the terminal window, run following command:
 
-```
+```bash
 stress-ng -c 8
 ```
 
@@ -88,7 +88,7 @@ according to the defined values.
 1. Log into system by using the proper login and password.
 1. Open the terminal window and execute the following command:
 
-```
+```bash
 watch -n1 nvidia-smi
 ```
 
@@ -99,7 +99,7 @@ watch -n1 nvidia-smi
    key) is spinning
 1. In another terminal window, run following command:
 
-```
+```bash
 _NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __GL_SYNC_TO_VBLANK=0 glxgears
 ```
 

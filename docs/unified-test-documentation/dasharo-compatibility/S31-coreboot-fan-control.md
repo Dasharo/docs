@@ -11,27 +11,31 @@ available.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
 **Test steps**
 
 1. Power on the DUT.
-2. Wait for boot until `BOOT_MENU_STRING` appears.
-3. Press `BOOT_MENU_KEY` to enter the boot menu.
-4. Select the proper number for `USB_STICK` option.
-5. Wait for `debian login:`.
-6. Type proper login.
-8. Wait for `Password:`.
-9. Type the proper password.
-10. Wait for `root@debian:~#`.
-11. Execute `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`.
+1. Wait for boot until `BOOT_MENU_STRING` appears.
+1. Press `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the proper number for `USB_STICK` option.
+1. Wait for `debian login:`.
+1. Type proper login.
+1. Wait for `Password:`.
+1. Type the proper password.
+1. Wait for `root@debian:~#`.
+1. Execute `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`.
 
 **Expected result**
 
@@ -47,36 +51,41 @@ temperature.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
 **Test steps**
 
 1. Power on the DUT.
-2. Wait for boot until `BOOT_MENU_STRING` appears.
-3. Press `BOOT_MENU_KEY` to enter the boot menu.
-4. Select the proper number for `USB_STICK` option.
-5. Wait for `debian login:`.
-6. Type proper login.
-8. Wait for `Password:`.
-9. Type the proper password.
-10. Wait for `root@debian:~#`.
-11. Install `stress-ng` package by executing: `sudo apt install stress-ng`.
-12. Confirm installation by typing `Y` and pressing `Enter` when asked.
-13. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`
+1. Wait for boot until `BOOT_MENU_STRING` appears.
+1. Press `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the proper number for `USB_STICK` option.
+1. Wait for `debian login:`.
+1. Type proper login.
+1. Wait for `Password:`.
+1. Type the proper password.
+1. Wait for `root@debian:~#`.
+1. Install `stress-ng` package by executing: `sudo apt install stress-ng`.
+1. Confirm installation by typing `Y` and pressing `Enter` when asked.
+1. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`
     and check current CPU temperature and CPU fan speed.
-14. Execute command: `stress-ng --cpu 16 --io 8 --vm 4 --vm-bytes 4G --timeout 30s --metrics`.
-15. Wait 2 minutes.
-16. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`
+1. Execute command:
+    `stress-ng --cpu 16 --io 8 --vm 4 --vm-bytes 4G --timeout 30s --metrics`.
+1. Wait 2 minutes.
+1. Execute command: `watch -n 1 "sensors w83795g-i2c-1-2f |grep fan1 -A 16"`
     and check current CPU temperature and CPU fan speed.
 
 **Expected result**
 
 1. The CPU temperature after the second check is higher at least 20 degrees.
-2. The CPU fan speed after the second check is higher at least 1000 RPM.
+1. The CPU fan speed after the second check is higher at least 1000 RPM.
