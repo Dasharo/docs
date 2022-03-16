@@ -36,4 +36,4 @@ be distinguished:
 * `Dasharo Compatibility` which contains test suites related to the basic
     functionailited of the device.
 * `Dasharo Security` which contains test suites related to the platform
-    security and supporting security modules).
+    security and supporting security modules.
