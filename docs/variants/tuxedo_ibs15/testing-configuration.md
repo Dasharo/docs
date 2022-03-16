@@ -1,4 +1,4 @@
-# coreboot testing hardware configurations
+# Hardware configuration matrix
 
 ## Introduction
 
