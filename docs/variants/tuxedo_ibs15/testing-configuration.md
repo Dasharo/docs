@@ -5,7 +5,7 @@
 This document describes the hardware configurations used for validation of the
 coreboot port.
 
-## InfinityBook S 15 #1
+## InfinityBook S 15 #1 (used during testing procedure)
 
 - CPU: Intel Core i5-1135G7
 - SSD:
@@ -25,7 +25,7 @@ coreboot port.
 
 ## InfinityBook S 15 #2
 
-- CPU: Intel Core i5-1135G7
+- CPU: Intel Core i5-1130H
 - SSD:
   + M.2 SSD PCIE4X/SATA: Samsung 860 EVO SATA M.2 250 GB
   + M.2 SSD PCIE4X: Samsung 980 PRO NVMe M.2 250 GB
