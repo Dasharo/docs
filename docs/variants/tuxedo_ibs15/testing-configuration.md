@@ -25,7 +25,7 @@ coreboot port.
 
 ## InfinityBook S 15 #2
 
-- CPU: Intel Core i5-1130H
+- CPU: Intel Core i5-11300H
 - SSD:
   + M.2 SSD PCIE4X/SATA: Samsung 860 EVO SATA M.2 250 GB
   + M.2 SSD PCIE4X: Samsung 980 PRO NVMe M.2 250 GB
