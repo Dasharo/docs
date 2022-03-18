@@ -2,9 +2,10 @@
 
 ![](../../../images/rte-v1.1.0-interface-desc.png)
 
-* **UART0 header** - 1x3 Orange Pi Zero system debug output and console (pins: `RX`, `TX`, `GND`).
-* **SPI header** - 2x4 standard 2.5mm IDC compatible header with all necessary signals to flash SPI
-  chips.
+* **UART0 header** - 1x3 Orange Pi Zero system debug output and console
+  (pins: `RX`, `TX`, `GND`).
+* **SPI header** - 2x4 standard 2.5mm IDC compatible header with all necessary
+  signals to flash SPI chips.
 * **Orange Pi Zero GPIO** - 1x3 GPIO pin header directly connected to Orange Pi
   zero platform.
 * **I2C header** - 1x4 populated pins: `3.3V`, `SCK`, `SDA`, `GND`.

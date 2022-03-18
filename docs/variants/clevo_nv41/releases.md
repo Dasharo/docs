@@ -43,7 +43,7 @@ For details about our release process please read
 [sha256](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256){ .md-button }
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256.sig){ .md-button }
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on ae9a8447 revision 3a3808f9](https://github.com/Dasharo/coreboot/tree/3a3808f9)
 - [edk2 based on 2020.03.17 revision e0334c22](https://github.com/Dasharo/edk2/tree/e0334c22)
@@ -62,7 +62,8 @@ For details about our release process please read
 ### Fixed
 
 - The touchpad ON/OFF switch Fn key is not functional
-- Charging indicator displays wrong state if power adapter was unplugged while in sleep mode
+- Charging indicator displays wrong state if power adapter was unplugged while
+  in sleep mode
 - Bluetooth does not work under Windows
 
 ### Known issues
@@ -237,7 +238,8 @@ For details about our release process please read
 ### Changed
 
 - Replaced CorebootPayloadPkg with Dasharo UEFIPayloadPkg
-- Changed the behavior of airplane mode to match stock firmware (now it can be disabled in software)
+- Changed the behavior of airplane mode to match stock firmware (now it can be
+  disabled in software)
 
 ### Known issues
 

@@ -6,7 +6,7 @@
 
 ## muxPi setup
 
-#### NanoPi NEO
+### NanoPi NEO
 
 Preparation of the muxPi's "heart":
 
@@ -54,7 +54,6 @@ typing: `sudo minicom -D /dev/ttyUSB0 -o -b 115200`.
 > NOTE: The upper socket of double USB-A connector must be left empty if
 USB<->ETH is selected or add-on connector is selected and something is connected
 to these data lines on the addon!
-
 > NOTE: Both jumpers must be placed in the same position!
 
 * VDD - if this pins are jumped then the VDD and 3V3 are always on. If this is
@@ -84,7 +83,7 @@ To set static IP, create following file:
 
 Edit NetworkManger.conf and set the value of "managed" under "ifupdown" to false:
 
-```
+```bash
 [ifupdown]
 managed=false
 ```
@@ -95,7 +94,7 @@ Add network setting to `/etc/network/interfaces`:
 
 Here is sample of `/etc/network/interfaces`:
 
-```
+```bash
 # The loopback network interface
 auto lo
 iface lo inet loopback
@@ -111,13 +110,13 @@ dns-nameservers 192.168.4.1
 
 Restart the whole device:
 
-```
+```bash
 reboot
 ```
 
 Now you should be able to connect to device through ssh:
 
-```
+```bash
 ssh root@192.168.4.XXX
 ```
 
@@ -128,7 +127,7 @@ with the password: `fa`
 Connect to NanoPi NEO through ssh (serial connection automatically login to non
 root user `pi`), then type:
 
-```
+```bash
 git clone https://github.com/friendlyarm/WiringNP
 cd WiringNP/
 chmod 755 build
@@ -141,7 +140,7 @@ Verify installation:
 
 If your installation is successful the following messages will show up:
 
-```
+```bash
  +-----+-----+----------+------+---+-NanoPi-NEO--+------+----------+-----+-----+
  | BCM | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | BCM |
  +-----+-----+----------+------+---+----++----+---+------+----------+-----+-----+
@@ -208,7 +207,7 @@ progress). To flash muxPi's microcontroller, follow steps below:
 
 From now on, muxPi's LCD should light on and display:
 
-```
+```bash
 *  MuxPi  *
 HW: 1.0 SW: 0.5
 ```
@@ -217,7 +216,7 @@ HW: 1.0 SW: 0.5
 
 > NOTE: It is recommended to cross-compile muxPi's software on your host machine
 
-#### Building using docker
+### Building using docker
 
 Prerequisites: `Docker`, `Make`.
 
@@ -236,7 +235,7 @@ Prerequisites: `git`, `go (1.10+)`
 1. Download dependencies: `go get ./...`
 1. Build binaries:
 
-```
+```bash
 mkdir -p bin
 GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/stm ./cmd/stm/
 GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/fota ./cmd/fota/
@@ -248,14 +247,14 @@ GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/fota ./cmd/fota/
 
 1. Copy muxpi-power files (change `XXX` to proper values):
 
-```
+```bash
 scp power/muxpi-power root@192.168.4.XXX:/usr/bin
 scp power/systemd/muxpi-power.service root@192.168.4.XXX:/etc/systemd/system
 ```
 
-2. On your MuxPi device, enable and start muxpi-power service:
+1. On your MuxPi device, enable and start muxpi-power service:
 
-```
+```bash
 systemctl enable muxpi-power.service
 systemctl start muxpi-power.service
 ```
@@ -266,7 +265,7 @@ systemctl start muxpi-power.service
 
 1. Copy stm binary and systemd files (change `XXX` to proper values):
 
-```
+```bash
 scp bin/stm_armv7 root@192.168.4.XXX:/usr/bin/stm
 scp stm/systemd/stm.service root@192.168.4.XXX:/etc/systemd/system
 scp stm/systemd/stm-user.socket root@192.168.4.XXX:/etc/systemd/system
@@ -274,16 +273,16 @@ scp stm/systemd/stm.socket root@192.168.4.XXX:/etc/systemd/system
 scp stm/stm root@192.168.4.XXX:/usr/local/bin/stm
 ```
 
-2. On your MuxPi device - create group stm and add your user:
+1. On your MuxPi device - create group stm and add your user:
 
-```
+```bash
 groupadd stm
 usermod -aG stm root
 ```
 
-3. On your MuxPi device - enable stm sockets:
+1. On your MuxPi device - enable stm sockets:
 
-```
+```bash
 systemctl daemon-reload
 systemctl enable stm.socket stm-user.socket
 systemctl start stm.socket stm-user.socket
@@ -295,22 +294,22 @@ systemctl start stm.socket stm-user.socket
 
 1. Copy fota binary to MuxPi device (change `XXX` to proper values):
 
-```
+```bash
 scp bin/fota_armv7 root@192.168.4.XXX:/usr/bin/fota
 ```
 
-2. On your MuxPi device - create a symlink from `/usr/local/bin/fota` to
+1. On your MuxPi device - create a symlink from `/usr/local/bin/fota` to
 `/usr/bin/fota/`. Only `/usr/local/bin/fota/` should be used by software
 interfacing with MuxPi. This allows to swap fota implementation to your
 preferred tool:
 
-```
+```bash
 ln -s /usr/bin/fota /usr/local/bin/fota
 ```
 
 ## DUT setup
 
-#### DUT power supply
+### DUT power supply
 
 MuxPi is capable of:
 
@@ -363,7 +362,6 @@ Example configuration for OrangePi (DUT) uart connection:
 
 > NOTE: `RX`, `TX`, `XTS`, `RTS` are crossed on the board so you don't need to
   cross the wires by yourself.
-
 > NOTE: A device powered from `Vloc` mustn't draw more than 50mA of current.
 
 #### Add-ons
@@ -399,7 +397,10 @@ and CortexM0 interfaces:
   dealing with them.
 * `GND` - ground lines
 
-NOTE: PI GPIO 1 has additional special function. It is connected to Cortex-M0 Boot0 pin which enables firmware download mode during microcontroller boot. 1 - enables this mode while 0 disables it. So it is useless as GPIO when the microcontroller is being booted.
+NOTE: PI GPIO 1 has additional special function. It is connected to Cortex-M0
+Boot0 pin which enables firmware download mode during microcontroller boot.
+1 - enables this mode while 0 disables it. So it is useless as GPIO when the
+microcontroller is being booted.
 
 #### DyPers
 
@@ -445,19 +446,19 @@ side of muxPi board.
 
 To enable microSD card reader, connect to Cortex from MuxPi via minicom:
 
-```
+```bash
 minicom -D /dev/ttyS2
 ```
 
 and enter in minicom following commands:
 
-```
+```bash
 ts
 ```
 
 and then
 
-```
+```bash
 dut
 ```
 
@@ -470,7 +471,7 @@ card contains appropriate OS.
 
 ## Interacting with muxPi
 
-#### Connection with NanoPi
+### Connection with NanoPi
 
 User can simply open SSH connection by (password: `fa`):
 
@@ -518,7 +519,7 @@ It is recommended to use `screen` program for communication:
 
 Features operable through Cortex-M0 microcontroller (help output):
 
-```
+```bash
 help --- This help
 version --- Display version of the firmware
 echo --- Get (no arguments) or set ('on' or 'off') echo on serial "console": echo [on|off]. The default value is on.
@@ -552,7 +553,7 @@ uart --- Get current value of UART voltage or set if new value is given [in mill
 
 ---
 
-*Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)*
+_Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)_
 
 [nanopi-image]: https://cloud.3mdeb.com/index.php/s/MENgScifExeeo6P/download
 [nanopi-image2]: https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download

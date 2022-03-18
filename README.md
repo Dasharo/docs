@@ -40,7 +40,7 @@ There should be no TBD or TODO visible on website.
 
 - Install hooks into repo:
 
-```
+```bash
 pre-commit install --hook-type commit-msg
 ```
 

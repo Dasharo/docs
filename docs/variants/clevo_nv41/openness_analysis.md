@@ -4,7 +4,7 @@ This document aims to compare the openness of Dasharo Firmware and Insyde BIOS.
 
 There is an [ongoing discussion](https://github.com/Dasharo/dasharo-issues/issues/43) about the methodology of the openness metric.
 
-#### BIOS versions used in the analysis
+## BIOS versions used in the analysis
 
 * [Dasharo coreboot v0.5.0](https://cloud.3mdeb.com/index.php/s/xM8FcCsMc8kfmKB)
 * [Insyde BIOS](https://cloud.3mdeb.com/index.php/s/6Pte9F9nefxQEMN)

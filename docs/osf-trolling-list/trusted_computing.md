@@ -1,5 +1,6 @@
-`[OSFI002]` Trusted computing
--------------------------
+# `[OSFI002]` Trusted computing
+
+---
 
 # `[OSFI0020]` CRTM what it stand for?
 

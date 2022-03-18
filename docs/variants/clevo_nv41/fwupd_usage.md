@@ -22,7 +22,7 @@ $ wget --content-disposition \
 $ unzip fwupd-novacustom-v1.0.0.zip
 ```
 
-2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.0.zip`):
+1. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.0.zip`):
 
 ```bash
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
@@ -33,7 +33,7 @@ $ sha256sum -c fwupd-novacustom-v1.0.0.zip.sha256
 $ gpg -v --verify fwupd-novacustom-v1.0.0.zip.sha256.sig fwupd-novacustom-v1.0.0.zip.sha256
 ```
 
-3. flashrom packages are located inside `flashrom-1.2-2-3mdeb.zip`:
+1. flashrom packages are located inside `flashrom-1.2-2-3mdeb.zip`:
 
 ```bash
 $ unzip flashrom-1.2-2-3mdeb.zip
@@ -42,7 +42,7 @@ $ sudo apt install ./libflashrom1_1.2-2_amd64.deb
 $ sudo apt install ./libflashrom-dev_1.2-2_amd64.deb
 ```
 
-4. fwupd packages are located inside `fwupd-1.7.3-3mdeb.zip`:
+1. fwupd packages are located inside `fwupd-1.7.3-3mdeb.zip`:
 
 ```bash
 $ unzip fwupd-1.7.3-3mdeb.zip
@@ -64,7 +64,6 @@ $ sudo apt install ./fwupd_1.7.3+r68+gf3a5e4d1_amd64.deb \
 
 > There is no need to do any of these steps unless you can't use the packages
 > provided in [the previous step](#using-binary-packages)
-
 > You might need to adjust the package manager commands and package names to
 > your distribution.
 
@@ -79,14 +78,14 @@ $ sudo apt install -y build-essential pciutils libpci-dev libusb-1.0-0-dev \
     gcab
 ```
 
-2. Obtain source code:
+1. Obtain source code:
 
 ```bash
 $ git clone https://github.com/Dasharo/flashrom.git -b v1.2.0.1
 $ cd flashrom
 ```
 
-3. Build and install flashrom:
+1. Build and install flashrom:
 
 ```bash
 $ meson build
@@ -103,13 +102,13 @@ $ git clone https://github.com/Dasharo/fwupd.git -b v1.7.3.1
 $ cd fwupd
 ```
 
-2. Install build dependencies:
+1. Install build dependencies:
 
 ```bash
 $ ./contrib/setup
 ```
 
-3. Build and install fwupd:
+1. Build and install fwupd:
 
 ```bash
 $ sudo depmod
@@ -122,8 +121,8 @@ $ sudo ninja -C build install
 
 1. Use the following command to update firmware with fwupd:
 
-    *Note: You may be asked which device to update. If you see a prompt, select
-    NV4XMB,ME,MZ*
+    _Note: You may be asked which device to update. If you see a prompt, select
+    NV4XMB,ME,MZ_
 
 ```bash
 $ sudo fwupdmgr update
@@ -166,10 +165,10 @@ Successfully installed firmware
 An update requires the system to shutdown to complete. Shutdown now? [y|N]:
 ```
 
-2. Shut down the computer when prompted, or manually later on
+1. Shut down the computer when prompted, or manually later on
 
-3. Power on the laptop again
-4. Log in and run the following command to verify results:
+2. Power on the laptop again
+3. Log in and run the following command to verify results:
 
 ```bash
 $ sudo fwupdmgr get-results
@@ -185,7 +184,7 @@ Choose a device:
 7.	eefcbd318bd31fc1eba6358e628b3f9dceb87206 (USB4 host controller)
 ```
 
-5. Select `NV4XMB,ME,MZ` when prompted, and the results will be displayed:
+1. Select `NV4XMB,ME,MZ` when prompted, and the results will be displayed:
 
 ```bash
 NV4XMB,ME,MZ:

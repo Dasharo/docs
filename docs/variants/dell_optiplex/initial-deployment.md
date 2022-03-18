@@ -138,7 +138,7 @@ questionable redistributability. To avoid potential issues we transfer
 non-redistributable components from your original BIOS to Dell OptiPlex 9010
 Dasharo binary using [fwdeploy](https://github.com/Dasharo/fwdeploy).
 
-```
+```bash
 $ wget https://raw.githubusercontent.com/Dasharo/fwdeploy/main/run.sh
 $ chmod +x run.sh
 $ ./run.sh <bios_backup> <dasharo_optiplex_9010_firmware>
@@ -231,8 +231,8 @@ If you will face any issues please refer to [troubleshooting section](#troublesh
 2. Shut down machine, move the jumper to the original place
 3. Power on the machine.
 4. After rebooting, you should see the Dasharo Workstation logo when booting.
-   When the logo appears, you may press ++esc++ to select the boot device if you want to
-   reboot from another source.
+   When the logo appears, you may press ++esc++ to select the boot device if
+   you want to reboot from another source.
 
    ![](../../images/dasharo-black.jpg)
 

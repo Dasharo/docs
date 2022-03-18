@@ -44,12 +44,12 @@ Full Remote Testing Environment set includes:
 > _test your device from any location._
 
 * efficiency
-> *simplify validation: write one script and run it on unlimited platforms.
-  Don’t repeat yourself!*
+> _simplify validation: write one script and run it on unlimited platforms.
+  Don’t repeat yourself!_
 
 * independent development
-> *open hardware license: modify, upgrade and set it as you like. All blueprints
-  are at your disposal.*
+> _open hardware license: modify, upgrade and set it as you like. All blueprints
+  are at your disposal._
 
 * instant setup
 > _intuitive connection: you do not need to be a certified engineer._
