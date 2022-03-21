@@ -25,6 +25,8 @@ could be helpful)
 
 ## muxPi setup
 
+![](https://cloud.3mdeb.com/index.php/s/o3D5fwWbjscXDw9/preview)
+
 1. Attach NanoPi to muxPi connectors.
 1. Plug ETH cable to RJ45 NanoPi port.
 1. Plug microUSB<->USB cable to muxPi and your machine.
