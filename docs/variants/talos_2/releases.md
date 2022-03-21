@@ -6,7 +6,7 @@ Raptor Computing Systems Talos II
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Raptor Computing Systems Talos II Dasharo Release Newsletter]( https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj){ .md-button .md-button--primary .center }
+[Subscribe to Raptor Computing Systems Talos II Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj){ .md-button .md-button--primary .center }
 
 ## v0.4.1 - 2022-01-10
 
