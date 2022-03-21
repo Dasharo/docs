@@ -33,13 +33,15 @@ RX`, `DBG UART TX` on pinout image below):
 ![](../../images/muxPi-addon-left.png)
 
 and plug USB connector to the computer. Next, open connection in PC terminal by
-typing: `sudo minicom -D /dev/ttyUSB0 -o -b 115200`.
+typing:
+
+    sudo minicom -D /dev/ttyUSB0 -o -b 115200.
 
 > `/dev/ttyUSB0` is example device - check whether `USB0` is the correct one
 
 #### Jumpers configuration
 
-![](../../images/muxPi-jumpers.png)
+![](https://cloud.3mdeb.com/index.php/s/EMpXf8c4JaDNTpH/preview)
 
 * UART - pins `Vloc` & `VCC` - if jumped then internal voltage generator is used
   as voltage reference for data lines and powers up target device. If open then
@@ -80,7 +82,7 @@ To check which IP address has been assigned, type in terminal: `ifconfig`.
 OPTIONAL STEP:
 To set static IP, create following file:
 
-`sudo vi /etc/NetworkManager/NetworkManager.conf`
+    sudo vi /etc/NetworkManager/NetworkManager.conf
 
 Edit NetworkManger.conf and set the value of "managed" under "ifupdown" to false:
 
@@ -91,7 +93,7 @@ managed=false
 
 Add network setting to `/etc/network/interfaces`:
 
-`sudo vi /etc/network/interfaces`
+    sudo vi /etc/network/interfaces
 
 Here is sample of `/etc/network/interfaces`:
 
@@ -137,7 +139,7 @@ chmod 755 build
 
 Verify installation:
 
-`gpio readall`
+    gpio readall
 
 If your installation is successful the following messages will show up:
 

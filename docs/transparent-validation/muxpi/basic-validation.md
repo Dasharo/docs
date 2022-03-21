@@ -1,6 +1,7 @@
 # muxPi board validation
 
-> In case of any troubles, first it is recommended to read [comprehend Theory of Operations](theory-of-operations.md) for muxPi devices.
+> In case of any troubles, first it is recommended to read
+[comprehend Theory of Operations](theory-of-operations.md) for muxPi devices.
 
 ## Necessary components preparation
 
@@ -17,8 +18,10 @@
 ## NanoPi setup
 
 1. Prepare microSD card (minimum 8GB) for NanoPi NEO operating system.
-1. Download and extract image - [link](https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download)
-1. Flash image into microSD card ([Etcher](https://www.balena.io/etcher/) tool could be helpful)
+1. Download and extract image -
+[link](https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download)
+1. Flash image into microSD card ([Etcher](https://www.balena.io/etcher/) tool
+could be helpful)
 
 ## muxPi setup
 
@@ -27,16 +30,19 @@
 1. Plug microUSB<->USB cable to muxPi and your machine.
 1. Plug in power supply.
 1. Make sure that jumpers are correctly set according to image:
-![](../../images/muxPi-jumpers.png)
+![](https://cloud.3mdeb.com/index.php/s/EMpXf8c4JaDNTpH/preview)
 
-1. Connect to NanoPi using terminal:
-`sudo minicom -D /dev/ttyUSB0 -o -b 115200`
+1. Connect to NanoPi using terminal
+
+   sudo minicom -D /dev/ttyUSB0 -o -b 115200`
 
 1. Save ip address:
-`ifconfig`
+
+      ifconfig
 
 1. Connect to NanoPi via ssh (with password: `fa`):
-`ssh root@192.168.4.XXX`
+
+       ssh root@192.168.4.XXX
 
 1. Or via serial connection
 > NOTE: Connecting with MuxPi through serial will automatically login as non
@@ -114,7 +120,8 @@ prepared by Tizen group (the code is not open yet, but this process is in
 progress). To flash muxPi's microcontroller, follow steps below:
 
 1. Make sure that VDD jumper is left open.
-1. Download binary file - [link](https://cloud.3mdeb.com/index.php/s/adnEZLgo2diXkdw/download).
+1. Download binary file -
+[link](https://cloud.3mdeb.com/index.php/s/adnEZLgo2diXkdw/download).
 1. Copy binary to nanoPi: `scp <path-to-file> root@192.168.4.XXX:/root/`
 1. Update package lists (nanoPi): `apt-get update`
 1. Install stm32flash utility (nanoPi): `sudo apt-get install stm32flash`
