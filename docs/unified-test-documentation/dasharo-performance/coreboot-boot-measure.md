@@ -1,4 +1,4 @@
-# Dasharo Security: Verified Boot support
+# Dasharo Performance: coreboot boot measure
 
 ## Test cases
 
