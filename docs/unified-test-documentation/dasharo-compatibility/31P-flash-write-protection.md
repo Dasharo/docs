@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Make yourself familiar with
-    [SPI hardware write protection](../../../variants/asus_kgpe_d16/spi-wp.md).
+    [SPI hardware write protection](../../../variants/asus_kgpe_d16/spi-wp/).
 
 ### HWP001.001 Hardware flash write protection support
 
@@ -106,9 +106,9 @@ hardware write protection on the DUT.
 
 **Test steps**
 
-1. Based on [the documentation](../../../variants/asus_kgpe_d16/spi-wp.md)
+1. Based on [the documentation](../../../variants/asus_kgpe_d16/spi-wp/)
     erase current write protection.
-1. Based on [the documentation](../../../variants/asus_kgpe_d16/spi-wp.md)
+1. Based on [the documentation](../../../variants/asus_kgpe_d16/spi-wp/)
     set write protection for a specific range.
 1. Execute the following command in the terminal to check the status and the
     range of write protection:
