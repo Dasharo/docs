@@ -37,3 +37,5 @@ be distinguished:
     functionailited of the device.
 * `Dasharo Security` which contains test suites related to the platform
     security and supporting security modules.
+* `Dasharo Performance` which contains test suites related to the platform
+    booting performance.
