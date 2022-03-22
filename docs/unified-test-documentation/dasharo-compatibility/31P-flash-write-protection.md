@@ -12,8 +12,8 @@
     [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Download and build flashrom tool in accordance with 
-    [documentation](../../../variants/asus_kgpe_d16/spi-wp.md).
+1. Make yourself familiar with
+    [SPI hardware write protection](../../../variants/asus_kgpe_d16/spi-wp.md).
 
 ### HWP001.001 Hardware flash write protection support
 
@@ -106,16 +106,28 @@ hardware write protection on the DUT.
 
 **Test steps**
 
-1. Open a terminal window and execute the following command:
+1. Based on [the documentation](../../../variants/asus_kgpe_d16/spi-wp.md)
+    erase current write protection.
+1. Based on [the documentation](../../../variants/asus_kgpe_d16/spi-wp.md)
+    set write protection for a specific range.
+1. Execute the following command in the terminal to check the status and the
+    range of write protection:
 
-```bash
-sudo ./flashrom -p internal --wp-list
-```
+    ```bash
+    sudo ./flashrom -p internal --wp-status
+    ```
 
 **Expected result**
 
-The output of the command should contain the information about duration of 
-all boot stages.
+1. The output of the command should contain the information about protection 
+    mode:
+
+    ```bash
+    Protection mode: hardware
+    ```
+
+1. Protection range: read from the command output and set before should be the
+    same.
 
 ### CBMEM003.001 Serial boot measure: coreboot booting time after system reboot
 
