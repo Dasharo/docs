@@ -143,3 +143,33 @@ described in this documentation are dedicated to the given platform
 | 2.   | Verified Boot support                             | VBO           | VBO001.002, VBO002.002               |
 | 3.   | Measured Boot support                             | MBO           | All                                  |
 | 4.   | Secure Boot support                               | SBO           | All                                  |
+
+## Test matrix - Protectli VP4620
+
+### Module: Dasharo compatibility
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | Memory HCL                                        | HCL           | All                                  |
+| 2.   | UEFI compatible interface                         | EFI           | EFI001.001                           |
+| 3.   | Display ports                                     | DSP           | DSP002.001 (missing display port validation) |
+| 4.   | Network boot                                      | PXE           | PXE001.001                           |
+| 5.   | Custom Network Boot Entries (one iPXE entry in boot menu) | PXE?  | TBD                                  |
+| 6.   | NVMe support                                      | NVM           | NVM001.001, NVM001.002               |
+| 7.   | Custom logo                                       | CLG           | All                                  |
+| 8.   | Custom boot menu key                              | CBK           | All                                  |
+| 9.   | USB HID and MSC Support                           | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 10.  | Debian Stable and Ubuntu LTS support              | LBT           | All (missing descriptions)           |
+| 11.  | FreeBSD support                                   | BSD?          | TBD                                  |
+| 12.  | USB-C/Thunderbolt                                 | UTC           | UTC004.001                           |
+| 13.  | M.2 WiFi/Bluetooth                                | WLE           | WLE001.001, WLE002.001, WLE003.001   |
+| 14.  | miniPCIe LTE/WiFi/Bluetooth                       | WLE?          | TBD                                  |
+| 15.  | eMMC support                                      | ???           | TBD                                  |
+| 16.  | SMBIOS                                            | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+| 17.  | M.2 automatic SATA/NVMe switching support         | NVM?          | TBD                                  |
+
+### Module: Dasharo security
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | TPM Support                                       | TPM           | TPM001.001                           |
