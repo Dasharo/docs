@@ -62,6 +62,6 @@ pre-commit run --all-files
 In some cases it may be needed to skip `pre-commit` tests, to do that please
 use:
 
-```
+```bash
 git commit --no-verify
 ```
