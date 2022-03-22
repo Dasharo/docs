@@ -21,6 +21,8 @@ described in this documentation are dedicated to the given platform
 | 6.   | Network boot                                      | PXE           | All                                  |
 | 7.   | USB detect                                        | USB           | All                                  |
 | 8.   | USB boot                                          | UBB           | All                                  |
+| 9.   | Platform suspend and resume                       | SUSP          | All                                  |
+| 10.  | Flash write protection                            | FWP           | All                                  |
 
 ### Module: Dasharo security
 
@@ -28,6 +30,12 @@ described in this documentation are dedicated to the given platform
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | TPM Support                                       | TPM           | TPM001.001                           |
 | 2.   | Verified Boot support                             | VBO           | VBO001.001, VBO002.001, VBO003.001   |
+
+### Module: Dasharo performance
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | Coreboot boot measure                             | CBMEM         | All                                  |
 
 ## Test matrix - Clevo NV41MZ
 
