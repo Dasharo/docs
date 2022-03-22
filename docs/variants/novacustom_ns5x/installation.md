@@ -40,16 +40,27 @@ following command:
 # flashrom -p internal -r dump.rom
 ```
 
-## Flashing coreboot
+## Installing Dasharo
+
+### Initial Installation
+
+Before installing Dasharo, ensure you have a supported Intel ME version
+installed on the device. Check the release notes for the supported ME version
+in the current release.
+
+If you need an Intel ME update for your device, contact us
+[via e-mail](mailto:FIXME@3mdeb.com).
 
 To flash coreboot to the laptop, execute the following command - replace [path]
-with the path to the coreboot image you want to flash, e.g. `build/coreboot.rom`.
+with the path to the coreboot image you want to flash, e.g. `build/coreboot.rom`
 
 If stock firmware is currently installed:
 
 ```bash
 # flashrom -p internal -w [path] --ifd -i bios
 ```
+
+### Updating Dasharo
 
 If Dasharo is currently installed, only the RW_SECTION_A partition of the flash
 needs to be updated. Flash it using the following command:
