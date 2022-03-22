@@ -7,7 +7,7 @@ This repository contains source code for Dasharo documentation webpage
 ```shell
 virtualenv -p $(which python3) venv
 source venv/bin/activate
-pip install mkdocs mkdocs-material
+pip install -r requirements.txt
 mkdocs build
 ```
 
@@ -36,7 +36,11 @@ There should be no TBD or TODO visible on website.
 
 # pre-commit hooks
 
-- [Install pre-commit](https://pre-commit.com/index.html#install)
+- [Install pre-commit](https://pre-commit.com/index.html#install), if you
+  followed [local build](#local-build) procedure `pre-commit` should be
+  installed
+
+- [Install go](https://go.dev/doc/install)
 
 - Install hooks into repo:
 
@@ -51,4 +55,13 @@ pre-commit install --hook-type commit-msg
 
 ```bash
 pre-commit run --all-files
+```
+
+## To skip verification
+
+In some cases it may be needed to skip `pre-commit` tests, to do that please
+use:
+
+```
+git commit --no-verify
 ```
