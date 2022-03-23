@@ -152,10 +152,9 @@ described in this documentation are dedicated to the given platform
 |:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | Memory HCL                                        | HCL           | All                                  |
 | 2.   | UEFI compatible interface                         | EFI           | EFI001.001                           |
-| 3.   | Display ports                                     | DSP           | DSP002.001 (missing display port validation) |
-| 4.   | Network boot                                      | PXE           | PXE001.001                           |
-| 5.   | Custom Network Boot Entries (one iPXE entry in boot menu) | PXE?  | TBD                                  |
-| 6.   | NVMe support                                      | NVM           | NVM001.001, NVM001.002               |
+| 3.   | Display ports                                     | DSP           | DSP002.001,DSP002.003, DSP003.001, DSP003.003 |
+| 4.   | Network boot                                      | PXE           | All                           |
+| 5.   | NVMe support                                      | NVM           | NVM001.001, NVM001.002               |
 | 7.   | Custom logo                                       | CLG           | All                                  |
 | 8.   | Custom boot menu key                              | CBK           | All                                  |
 | 9.   | USB HID and MSC Support                           | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
