@@ -106,3 +106,41 @@ M.2 slot.
 
 1. The `OPERATING_SYSTEM` booting from the NVMe disk
 1. `NVMe` text found in the `Hardware Ids` `Values` window
+
+### NVM001.003 M.2 automatic SATA/NVMe switching support (Ubuntu 20.04)
+
+VM001.002 NVMe support (Ubuntu 20.04)
+
+**Test description**
+
+This test aims to verify detection of the NVMe and SATA disk in M.2 hybrid slot
+via the Operating System slot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+1. Insert a NVMe disk into the M.2 slot on the DUT.
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into system by using the proper login and password.
+4. Open a terminal window and execute `sudo parted -l`.
+5. Check if the connected disk is present on the list.
+6. Power off the DUT.
+7. Replace the NVMe disk with SATA M.2 disk.
+8. Repeat steps 1-5.
+
+**Expected result**
+
+1. The NVMe M.2 disk is detected in OS.
+2. The SATA M.2 disk is detected in OS.
