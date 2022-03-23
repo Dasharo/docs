@@ -13,9 +13,9 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | Coreboot base port                                | CBP           | All                                  |
+| 1.   | coreboot base port                                | CBP           | All                                  |
 | 2.   | SMBIOS                                            | DMI           | DMI002.001, DMI003.001               |
-| 3.   | Coreboot fan control                              | CFN           | All                                  |
+| 3.   | coreboot fan control                              | CFN           | All                                  |
 | 4.   | Custom boot menu key                              | CBK           | All                                  |
 | 5.   | Debian Stable and Ubuntu LTS support              | LBT           | LBT001.002                           |
 | 6.   | Network boot                                      | PXE           | All                                  |
@@ -35,7 +35,7 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | Coreboot boot measure                             | CBMEM         | All                                  |
+| 1.   | coreboot boot measure                             | CBMEM         | All                                  |
 
 ## Test matrix - Clevo NV41MZ
 
@@ -116,7 +116,7 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | Coreboot base port                                | CBP           | CBP001.001, CBP002.001, CBP004.001   |
+| 1.   | coreboot base port                                | CBP           | CBP001.001, CBP002.001, CBP004.001   |
 
 ## Test matrix - Clevo NS50
 
