@@ -40,16 +40,27 @@ following command:
 # flashrom -p internal -r dump.rom
 ```
 
-## Flashing coreboot
+## Installing Dasharo
 
-To flash coreboot to the laptop, execute the following command - replace [path]
-with the path to the coreboot image you want to flash, e.g. `build/coreboot.rom`.
+### Initial Installation
 
-If stock firmware is currently installed:
+During initial installation of Dasharo, you should deploy supported Intel ME
+version (and configuration) on the device.
+
+> Publicly released binaries do not contain ME binary. If you need an Intel ME
+> update for your device, contact us via already established commercial support
+> channel.
+
+When flashing binaries with ME binary included, flashing of the whole chip is
+recommended. To flash firmware to the laptop, execute the following command -
+replace [path] with the path to the firmware image you want to flash, e.g.
+`tuxedo_ibs15_full_v1.0.0.rom`
 
 ```bash
-# flashrom -p internal -w [path] --ifd -i bios
+# flashrom -p internal -w [path]
 ```
+
+### Updating Dasharo
 
 If Dasharo is currently installed, only the RW_SECTION_A partition of the flash
 needs to be updated. Flash it using the following command:
