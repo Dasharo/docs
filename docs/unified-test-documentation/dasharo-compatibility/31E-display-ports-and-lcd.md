@@ -115,12 +115,13 @@ This test aims to verify initialization of the external HDMI display in the OS.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Switch the display mode between `Mirror` and `Join Displays`.
+1. If using more than one display, switch the display mode between `Mirror` and
+   `Join Displays`.
 
 **Expected result**
 
-1. The image should be displayed on the internal LCD and an external HDMI display
-    in `Mirror` and `Join Displays` modes.
+1. The image should be displayed on the external HDMI display in `Mirror` and
+   `Join Displays` modes.
 
 ### DSP002.002 External HDMI display in OS (Windows 11)
 
@@ -142,9 +143,114 @@ This test aims to verify initialization of the external HDMI display in the OS.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Switch the display mode between `Duplicate` and `Extend`.
+1. If using more than one display, switch the display mode between `Duplicate`
+   and `Extend`.
 
 **Expected result**
 
-1. The image should be displayed on the internal LCD and an external HDMI display
-   in `Duplicate` and `Extend` modes.
+1. The image should be displayed on the external HDMI display in `Duplicate`
+   and `Extend` modes.
+
+### DSP002.003 External HDMI display in firmware
+
+This test aims to verify initialization of the external HDMI display
+during firmware execution phase.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Observe the external HDMI display during firmware execution phase.
+1. Power off the DUT.
+
+**Expected result**
+
+1. Logo appears on the screen during firmware execution phase.
+
+### DSP003.001 External DP display in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test aims to verify initialization of the external DP display in the OS.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. If using more than one display, switch the display mode between `Mirror` and
+   `Join Displays`.
+
+**Expected result**
+
+1. The image should be displayed on the external DP display in `Mirror` and
+   `Join Displays` modes.
+
+### DSP003.002 External DP display in OS (Windows 11)
+
+**Test description**
+
+This test aims to verify initialization of the external DP display in the OS.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. If using more than one display, switch the display mode between `Duplicate`
+   and `Extend`.
+
+**Expected result**
+
+1. The image should be displayed on the external DP display in `Duplicate`
+   and `Extend` modes.
+
+### DSP003.003 External DP display in firmware
+
+This test aims to verify initialization of the external DP display
+during firmware execution phase.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Observe the external DP display during firmware execution phase.
+1. Power off the DUT.
+
+**Expected result**
+
+1. Logo appears on the screen during firmware execution phase.
