@@ -35,7 +35,7 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | coreboot boot measure                             | CBMEM         | All                                  |
+| 1.   | coreboot bring up time measurement                | CBMEM         | All                                  |
 
 ## Test matrix - Clevo NV41MZ
 
