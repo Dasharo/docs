@@ -120,7 +120,9 @@ $ sudo ninja -C build install
 
 ## Updating firmware from LVFS
 
-1. Use the following command to update firmware with fwupd:
+1. Disable Secure Boot.
+
+2. Use the following command to update firmware with fwupd:
 
     *Note: You may be asked which device to update. If you see a prompt, select
     NV4XMB,ME,MZ*
@@ -166,10 +168,10 @@ Successfully installed firmware
 An update requires the system to shutdown to complete. Shutdown now? [y|N]:
 ```
 
-2. Shut down the computer when prompted, or manually later on
+3. Shut down the computer when prompted, or manually later on
 
-3. Power on the laptop again
-4. Log in and run the following command to verify results:
+4. Power on the laptop again
+5. Log in and run the following command to verify results:
 
 ```bash
 $ sudo fwupdmgr get-results
@@ -185,7 +187,7 @@ Choose a device:
 7.	eefcbd318bd31fc1eba6358e628b3f9dceb87206 (USB4 host controller)
 ```
 
-5. Select `NV4XMB,ME,MZ` when prompted, and the results will be displayed:
+6. Select `NV4XMB,ME,MZ` when prompted, and the results will be displayed:
 
 ```bash
 NV4XMB,ME,MZ:
