@@ -77,6 +77,7 @@ nav:
           - 'Releases': variants/protectli_vp4620/releases.md
           - 'Building manual': variants/protectli_vp4620/building-manual.md
           - 'Installation manual': variants/protectli_vp4620/installation-manual.md
+          - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
