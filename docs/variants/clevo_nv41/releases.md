@@ -8,6 +8,35 @@ For details about our release process please read
 
 [Subscribe to Clevo NV41MZ Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/T61MyO2sP){ .md-button .md-button--primary .center }
 
+## v1.1.0 - 2022-03-23
+
+### Added
+
+- Add Dasharo Tools Suite network boot integration
+- Add a persistent bootlogo implementation
+
+### Known issues
+
+- [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/19)
+- [USB4 Root Device Router device displays an error in Windows 11 Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/18)
+- [Windows 10 SD card reader driver needs manual installation on NV41MB](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/16)
+- [Low level interfering crackling/popping of the speakers while playing no sound](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/13)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
+
+
+### Binaries
+
+[clevo_nv41mz_v1.1.0.rom](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.1.0.rom){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.1.0.rom.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.1.0.rom.sha256.sig){ .md-button }
+
+
+### SBOM (Software Bill of Materials):
+
+- [coreboot based on ae9a8447 revision 0722fdf0](https://github.com/Dasharo/coreboot/tree/0722fdf0)
+- [edk2 based on 2020.03.17 revision ec6805c2](https://github.com/Dasharo/edk2/tree/ec6805c2)
+- [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
+
 ## v1.0.1 - 2022-03-01
 
 ### Added
