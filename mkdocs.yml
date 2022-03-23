@@ -53,7 +53,7 @@ nav:
           - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
           - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
           - 'Post-installation steps': variants/clevo_nv41/post_install.md
-          - 'Hardware Configuration Matrix': variants/clevo_nv41/testing_configuration.md
+          - 'Hardware Configuration Matrix': variants/clevo_nv41/hardware-matrix.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/clevo_nv41/openness_analysis.md
           - 'LVFS report': variants/clevo_nv41/lvfs_report.md
