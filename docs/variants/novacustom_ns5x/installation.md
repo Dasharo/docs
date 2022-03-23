@@ -44,20 +44,20 @@ following command:
 
 ### Initial Installation
 
-Before installing Dasharo, ensure you have a supported Intel ME version
-installed on the device. Check the release notes for the supported ME version
-in the current release.
+During initial installation of Dasharo, you should deploy supported Intel ME
+version (and configuration) on the device.
 
-If you need an Intel ME update for your device, contact us
-[via e-mail](mailto:FIXME@3mdeb.com).
+> Publicly released binaries do not contain ME binary. If you need an Intel ME
+> update for your device, contact us via already established commercial support
+> channel.
 
-To flash coreboot to the laptop, execute the following command - replace [path]
-with the path to the coreboot image you want to flash, e.g. `build/coreboot.rom`
-
-If stock firmware is currently installed:
+When flashing binaries with ME binary included, flashing of the whole chip is
+recommended. To flash firmware to the laptop, execute the following command -
+replace [path] with the path to the firmware image you want to flash, e.g.
+`novacustom_ns5x_full_v1.0.0.rom`
 
 ```bash
-# flashrom -p internal -w [path] --ifd -i bios
+# flashrom -p internal -w [path]
 ```
 
 ### Updating Dasharo
