@@ -35,3 +35,29 @@ server.
 1. The iPXE application boots successfully.
 1. iPXE obtains an IP address.
 1. iPXE boots an `Debian 11` from netboot.xyz.
+
+### PXE001.002 Custom network boot menu entries
+
+**Test description**
+
+This test aims to verify that thenetwork boot option with iPXE appears only
+once in the boot option list.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+2. Check the iPXE is listed only once on the boot option list
+
+**Expected result**
+
+1. There is only one iPXE entry on the boot option list.
