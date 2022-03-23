@@ -9,6 +9,7 @@ The touchpad hotkey needs extra setup to function correctly under Linux. To
 enable the touchpad hotkey to work under Linux, follow the steps below:
 
 1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
+
    ```bash
    evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNS50MU:*
            KEYBOARD_KEY_f7=191
@@ -16,6 +17,7 @@ enable the touchpad hotkey to work under Linux, follow the steps below:
    ```
 
 1. Execute the following commands:
+
    ```bash
    sudo systemd-hwdb update
    sudo udevadm trigger
