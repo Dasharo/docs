@@ -35,7 +35,7 @@ be accessed from the operating system.
     in terminal:
 
 ```bash
-tpm2_pcrlist
+tpm2_pcrread
 ```
 
 1. If your device is equipped with TPM1.2 - execute the following command
