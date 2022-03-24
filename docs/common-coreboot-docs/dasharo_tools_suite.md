@@ -20,8 +20,8 @@ To access Dasharo Tools Suite:
 - Attach a wired network cable to the device's Ethernet port
 - Power on the device, holding down the Boot Menu entry key
 - In the Boot Menu, select the `iPXE Network Boot` option
-- In the Network Boot menu, select the Dasharo Tools Suite option
-- In the DTS menu, select the Dasharo Tools Suite again
+- In the Network Boot menu, select the `Dasharo Tools Suite` option
+- Login as `root` (no password)
 
 The DTS shell will now appear.
 
