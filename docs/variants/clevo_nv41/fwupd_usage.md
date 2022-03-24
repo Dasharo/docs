@@ -120,7 +120,8 @@ $ sudo ninja -C build install
 
 ## Updating firmware from LVFS
 
-1. Disable Secure Boot.
+1. Disable Secure Boot. To do this you can follow steps described in
+   [Secure Boot test](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/).
 
 2. Use the following command to update firmware with fwupd:
 
