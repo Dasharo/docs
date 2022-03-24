@@ -50,7 +50,8 @@ The output of the command should contain the line:
 2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
 ```
 
-The exact name and revision may be different depending on hardware configuration.
+The exact name and revision may be different depending on hardware
+configuration.
 
 ### MWL001.002 Wireless card detection (Windows 11)
 
