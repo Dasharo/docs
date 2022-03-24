@@ -8,8 +8,10 @@ For details about our release process please read
 
 <center>
 
-[Subscribe to Release Newsletter][1]
+[Subscribe to Release Newsletter][newsletter]
 { .md-button .md-button--primary .center }
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj
 
 </center>
 
@@ -36,17 +38,29 @@ For details about our release process please read
 
 ### Binaries
 
-[dasharo_talos_2_bootblock_v0.4.1.signed.ecc][2]{ .md-button }
-[sha256][3]{ .md-button }
-[sha256.sig][4]{ .md-button }
+[dasharo_talos_2_bootblock_v0.4.1.signed.ecc][v0.4.1_bootblock_rom]{ .md-button }
+[sha256][v0.4.1_bootblock_sha]{ .md-button }
+[sha256.sig][v0.4.1_bootblock_sig]{ .md-button }
 
-[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc][5]{ .md-button }
-[sha256][6]{ .md-button }
-[sha256.sig][7]{ .md-button }
+[v0.4.1_bootblock_rom]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc
+[v0.4.1_bootblock_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256
+[v0.4.1_bootblock_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256.sig
 
-[dasharo_talos_2_zImage_v0.4.1.bundled][8]{ .md-button }
-[sha256][9]{ .md-button }
-[sha256.sig][10]{ .md-button }
+[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc][v0.4.1_coreboot_rom]{ .md-button }
+[sha256][v0.4.1_coreboot_sha]{ .md-button }
+[sha256.sig][v0.4.1_coreboot_sig]{ .md-button }
+
+[v0.4.1_coreboot_rom]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc
+[v0.4.1_coreboot_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256
+[v0.4.1_coreboot_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256.sig
+
+[dasharo_talos_2_zImage_v0.4.1.bundled][v0.4.1_bundled_rom]{ .md-button }
+[sha256][v0.4.1_bundled_sha]{ .md-button }
+[sha256.sig][v0.4.1_bundled_sig]{ .md-button }
+
+[v0.4.1_bundled_rom]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled
+[v0.4.1_bundled_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256
+[v0.4.1_bundled_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -73,34 +87,32 @@ For details about our release process please read
 
 ### Binaries
 
-[dasharo_talos_2_bootblock_v0.4.0.signed.ecc][11]{ .md-button }
-[sha256](https://cloud.3mdeb.com/index.php/s/DwpWdgfZyD9StBW){ .md-button }
-[sha256.sig](https://cloud.3mdeb.com/index.php/s/5xawXEissBZN6rT){ .md-button }
+[dasharo_talos_2_bootblock_v0.4.0.signed.ecc][v0.4.0_bootblock_rom]{ .md-button }
+[sha256][v0.4.0_bootblock_sha]{ .md-button }
+[sha256.sig][v0.4.0_bootblock_sig]{ .md-button }
 
-[dasharo_talos_2_coreboot.rom.signed.ecc][12]{ .md-button }
-[sha256](https://cloud.3mdeb.com/index.php/s/TNcLAz3CZo4QzeD){ .md-button }
-[sha256.sig](https://cloud.3mdeb.com/index.php/s/9Fr6Kn57mP2bbwS){ .md-button }
+[v0.4.0_bootblock_rom]: https://cloud.3mdeb.com/index.php/s/54MDtRgBNEmyKo6
+[v0.4.0_bootblock_sha]: https://cloud.3mdeb.com/index.php/s/DwpWdgfZyD9StBW
+[v0.4.0_bootblock_sig]: https://cloud.3mdeb.com/index.php/s/5xawXEissBZN6rT
 
-[zImage_v0.4.0.bundled][13]{ .md-button }
-[sha256](https://cloud.3mdeb.com/index.php/s/FgeHfa4LzcZK6Pj){ .md-button }
-[sha256.sig](https://cloud.3mdeb.com/index.php/s/awNSefJrN4d2tAD){ .md-button }
+[dasharo_talos_2_coreboot.rom.signed.ecc][v0.4.0_coreboot_rom]{ .md-button }
+[sha256][v0.4.0_coreboot_sha]{ .md-button }
+[sha256.sig][v0.4.0_coreboot_sig]{ .md-button }
+
+[v0.4.0_coreboot_rom]: https://cloud.3mdeb.com/index.php/s/5Pbw5EtmNimrdrj
+[v0.4.0_coreboot_sha]: https://cloud.3mdeb.com/index.php/s/TNcLAz3CZo4QzeD
+[v0.4.0_coreboot_sig]: https://cloud.3mdeb.com/index.php/s/9Fr6Kn57mP2bbwS
+
+[zImage_v0.4.0.bundled][v0.4.0_bundled_rom]{ .md-button }
+[sha256][v0.4.0_bundled_sha]{ .md-button }
+[sha256.sig][v0.4.0_bundled_sig]{ .md-button }
+
+[v0.4.0_bundled_rom]: https://cloud.3mdeb.com/index.php/s/o5RE7oj4r9kFXS2
+[v0.4.0_bundled_sha]: https://cloud.3mdeb.com/index.php/s/FgeHfa4LzcZK6Pj
+[v0.4.0_bundled_sig]: https://cloud.3mdeb.com/index.php/s/awNSefJrN4d2tAD
 
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision b535763b](https://github.com/Dasharo/coreboot/tree/raptor-cs_talos-2_v0.4.0)
 - [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/)
 - [heads based on 21e50681 revision 34c77951](https://git.raptorcs.com/git/talos-skiboot/commit/?id=9858186353f2203fe477f316964e03609d12fd1d)
-
-[1]: https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj
-[2]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc
-[3]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256
-[4]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256.sig
-[5]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc
-[6]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256
-[7]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256.sig
-[8]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled
-[9]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256
-[10]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256.sig
-[11]: https://cloud.3mdeb.com/index.php/s/54MDtRgBNEmyKo6
-[12]: https://cloud.3mdeb.com/index.php/s/5Pbw5EtmNimrdrj
-[13]: https://cloud.3mdeb.com/index.php/s/o5RE7oj4r9kFXS2
