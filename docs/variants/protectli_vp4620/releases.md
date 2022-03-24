@@ -6,8 +6,10 @@ Protectli VP4620
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
+<center>
 [Subscribe to Protectli VP4620 Dasharo Release Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
+</center>
 
 ## v1.0.13 - 2022-03-22
 
