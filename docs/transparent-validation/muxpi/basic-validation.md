@@ -25,14 +25,14 @@ could be helpful)
 
 ## muxPi setup
 
-![](https://cloud.3mdeb.com/index.php/s/o3D5fwWbjscXDw9/preview)
+![](../../images/muxpi1.4_connection.png)
 
 1. Attach NanoPi to muxPi connectors.
 1. Plug ETH cable to RJ45 NanoPi port.
 1. Plug microUSB<->USB cable to muxPi and your machine.
 1. Plug in power supply.
 1. Make sure that jumpers are correctly set according to image:
-![](https://cloud.3mdeb.com/index.php/s/EMpXf8c4JaDNTpH/preview)
+![](../../images/muxpi1.4_jumpers.png)
 
 1. Connect to NanoPi using terminal
 
@@ -44,7 +44,9 @@ could be helpful)
 
 1. Connect to NanoPi via ssh (with password: `fa`):
 
-       ssh root@192.168.4.XXX
+```bash
+ssh root@192.168.4.XXX
+```
 
 1. Or via serial connection
 > NOTE: Connecting with MuxPi through serial will automatically login as non
@@ -54,7 +56,7 @@ root user `pi` with password `pi`.
 
 #### 1. Install WiringNP
 
-```
+```bash
  git clone https://github.com/friendlyarm/WiringNP
  cd WiringNP/
  chmod 755 build
@@ -63,13 +65,13 @@ root user `pi` with password `pi`.
 
 * verify installation:
 
-```
+```bash
 gpio readall
 ```
 
 * If your installation is successful the following messages will show up:
 
-```
+```bash
  +-----+-----+----------+------+---+-NanoPi-NEO--+------+----------+-----+-----+
  | BCM | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | BCM |
  +-----+-----+----------+------+---+----++----+---+------+----------+-----+-----+
@@ -137,7 +139,7 @@ progress). To flash muxPi's microcontroller, follow steps below:
 
 From now on, muxPi's LCD should light on and display:
 
-```
+```bash
 *  MuxPi  *
 HW: 1.0 SW: 0.5
 ```
@@ -151,26 +153,26 @@ HW: 1.0 SW: 0.5
    muxPi board.
 3. To enable microSD card reader, connect to Cortex from MuxPi via minicom:
 
-```
-minicom -D /dev/ttyS2
-```
+    ```bash
+    minicom -D /dev/ttyS2
+    ```
 
-and enter in minicom following commands:
+    and enter in minicom following commands:
 
-```
-ts
-```
+    ```bash
+    ts
+    ```
 
-and then
+    and then
 
-```
-dut
-```
+    ```bash
+    dut
+    ```
 
-> NOTE: Each command should return `OK`
+   > NOTE: Each command should return `OK`
 
 4. Connect IDC-uSD adapter to a SD card adapter plugged into your machine
-> NOTE: You need to force IDC-uSD adapter to insert into SD card adapter
+   > NOTE: You need to force IDC-uSD adapter to insert into SD card adapter
 
 5. (On your machine) Check if device is connected: `dmesg -w`
 should help. You should also be able to read and write
@@ -194,7 +196,7 @@ via IDC-uSD adapter.
 
 Help output:
 
-```
+```bash
 help --- This help
 version --- Display version of the firmware
 echo --- Get (no arguments) or set ('on' or 'off') echo on serial "console": echo [on|off]. The default value is on.
@@ -239,4 +241,4 @@ Minicom quick guide:
 
 ---
 
-*Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)*
+_Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)_
