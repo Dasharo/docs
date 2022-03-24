@@ -6,7 +6,12 @@ Clevo NV41MZ
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Clevo NV41MZ Dasharo Release Newsletter][1]{ .md-button .md-button--primary .center }
+<center>
+
+[Subscribe to Clevo NV41MZ Dasharo Release Newsletter][1]
+{ .md-button .md-button--primary .center }
+
+</center>
 
 ## v1.0.1 - 2022-03-01
 

@@ -7,7 +7,10 @@ For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
-[Subscribe to Release Newsletter][1]{ .md-button .md-button--primary .center }
+
+[Subscribe to Release Newsletter][1]
+{ .md-button .md-button--primary .center }
+
 </center>
 
 ## v0.4.1 - 2022-01-10
