@@ -3,6 +3,7 @@ site_name: Dasharo Universe
 site_url: https://docs.dasharo.com/
 theme:
   name: material
+  custom_dir: overrides
   favicon: images/favicon.png
   logo: images/dasharo-logo.png
 extra_css:
@@ -15,6 +16,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - attr_list
+  - meta
   - toc:
       toc_depth: 2
   - pymdownx.tasklist:
@@ -185,4 +187,6 @@ nav:
       - 'Marketing': value-prop/marketing.md
     # - 'Certification Program':
     #     - 'Overview': value-prop/certification-program/overview.md
+  - 'Projects':
+      - 'TrenchBoot Anti Evil Maid': projects/trenchboot-aem.md
   - 'Glossary': glossary.md
