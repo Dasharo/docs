@@ -50,18 +50,18 @@ following command:
 To flash coreboot to the laptop, execute the following command - replace [path]
 with the path to the coreboot image you want to flash, e.g. `build/coreboot.rom`.
 
-If stock firmware or coreboot version below v0.5.0 is currently installed:
+If stock firmware or coreboot version below v1.1.0 is currently installed:
 
 ```bash
 # flashrom -p internal -w [path] --ifd -i bios
 ```
 
-If version v0.5.0 or higher is currently installed, only the RW_SECTION_A
-partition of the flash can be flashed from the operating system. Flash it using
-the following command:
+If version v1.1.0 or higher is currently installed, only the RW_SECTION_A
+partition of the flash needs to be updated. Flash it using the following
+command:
 
 ```bash
 # flashrom -p internal -w [path] --fmap -i RW_SECTION_A
 ```
 
-This command also preserves UEFI settings and the boot order.
+This command also preserves the bootsplash, UEFI settings and the boot order.
