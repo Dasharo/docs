@@ -27,6 +27,7 @@ nav:
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
           - 'Building manual': variants/dell_optiplex/building-manual.md
+          - 'Hardware configuration matrix': variants/dell_optiplex/hardware-matrix.md
           - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
@@ -63,7 +64,7 @@ nav:
           - 'Installation manual': variants/tuxedo_ibs15/installation.md
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing_configuration.md
+          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
