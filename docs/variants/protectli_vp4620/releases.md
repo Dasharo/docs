@@ -30,9 +30,9 @@ For details about our release process please read
 
 ### Binaries
 
-[protectli_vault_cml_v1.0.13.rom](https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom){.md-button}
-[sha256](https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256){.md-button}
-[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256.sig){.md-button}
+[protectli_vault_cml_v1.0.13.rom][v1.0.13_rom]{.md-button}
+[sha256][v1.0.13_hash]{.md-button}
+[sha256.sig][v1.0.13_sig]{.md-button}
 
 ### SBOM (Software Bill of Materials)
 
@@ -40,3 +40,6 @@ For details about our release process please read
 - [edk2 based on 7f90b9cd revision 7f90b9cd](https://github.com/Dasharo/edk2/tree/7f90b9cd)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[v1.0.13_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom
+[v1.0.13_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256
+[v1.0.13_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256.sig
