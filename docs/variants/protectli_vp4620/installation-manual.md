@@ -53,7 +53,7 @@ If Dasharo is currently installed, only the COREBOOT partition of the flash
 needs to be updated. Flash it using the following command:
 
 ```bash
-flashrom -p internal -w [path] --fmap -i COREBOOT
+flashrom -p internal -w protectli_vault_cml_v1.0.13.rom --fmap -i COREBOOT
 ```
 
 This command also preserves Dasharo UEFI settings and the boot order.
