@@ -6,25 +6,6 @@ environment for Talos II board available in 3mdeb testing laboratory.
 Configuration with a single IBM POWER9 64bit CPU is supported.
 Dual CPU setup not supported currently.
 
-Following RAM configurations were tested and are proved to be properly initialized.
-
-```
-MCS0, MCA0
-   DIMM0: 1Rx4 16GB PC4-2666V-RC2-12-PA0
-   DIMM1: not installed
-MCS0, MCA1
-   DIMM0: 1Rx8 8GB PC4-2666V-RD1-12
-   DIMM1: not installed
-MCS1, MCA0
-   DIMM0: 2Rx4 32GB PC4-2666V-RB2-12-MA0
-   DIMM1: not installed
-MCS1, MCA1
-   DIMM0: 2Rx8 16GB PC4-2666V-RE2-12
-   DIMM1: not installed
-```
-
-All 3 major DRAM vendors are supported, namely Samsung, Micron and Hynix.
-
 ## Board No. 1
 
 | Component                      | Description                                                   | Board connection                |
@@ -42,3 +23,23 @@ All 3 major DRAM vendors are supported, namely Samsung, Micron and Hynix.
 |                                | 2. Goldpin cables (RTE <-> Board connection)                  | `PANEL1` connector              |
 | **Remote Testing Environment** | 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232       | `COM1` port                     |
 |                                | 2. Goldpin cables + qspimux (RTE <-> flash memory connection) | `BIOS` slot                     |
+
+Following RAM configurations were tested and are proved to be properly
+initialized.
+
+```bash
+MCS0, MCA0
+   DIMM0: 1Rx4 16GB PC4-2666V-RC2-12-PA0
+   DIMM1: not installed
+MCS0, MCA1
+   DIMM0: 1Rx8 8GB PC4-2666V-RD1-12
+   DIMM1: not installed
+MCS1, MCA0
+   DIMM0: 2Rx4 32GB PC4-2666V-RB2-12-MA0
+   DIMM1: not installed
+MCS1, MCA1
+   DIMM0: 2Rx8 16GB PC4-2666V-RE2-12
+   DIMM1: not installed
+```
+
+All 3 major DRAM vendors are supported, namely Samsung, Micron and Hynix.
