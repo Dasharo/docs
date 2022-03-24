@@ -1,8 +1,8 @@
-# coreboot internal flashing (Ubuntu 20.04)
+# Dasharo internal flashing (Ubuntu 20.04)
 
 ## Intro
 
-Flashing coreboot can be done from Linux using flashrom with the internal
+Flashing Dasharo can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and
 running flashrom on Ubuntu 20.04.
 
@@ -45,12 +45,12 @@ following command:
 # flashrom -p internal -r dump.rom
 ```
 
-## Flashing coreboot
+## Flashing Dasharo
 
-To flash coreboot to the laptop, execute the following command - replace [path]
-with the path to the coreboot image you want to flash, e.g. `build/coreboot.rom`.
+To flash Dasharo to the laptop, execute the following command - replace [path]
+with the path to the Dasharo image you want to flash, e.g. `build/coreboot.rom`.
 
-If stock firmware or coreboot version below v1.1.0 is currently installed:
+If stock firmware or Dasharo version below v1.1.0 is currently installed:
 
 ```bash
 # flashrom -p internal -w [path] --ifd -i bios
