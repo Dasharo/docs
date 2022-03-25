@@ -26,27 +26,27 @@ environment.
 The usage of DRT technologies like Intel Trusted Execution Technology (TXT) or
 AMD Secure Startup becomes more and more significant, for example, Dynamic Root
 of Trust for Measurement (DRTM) requirements of
-[Microsoft Secured Core PCs][1]. In open-source projects, DRTM hasn't found its
-place yet, but that gradually changes. The demand on having firmware
+[Microsoft Secured Core PCs][ms_sec_core]. In open-source projects, DRTM hasn't
+found its place yet, but that gradually changes. The demand on having firmware
 independent Roots of Trust is increasing and projects that satisfy this demand
-are growing, for instance, [TrenchBoot][2]. TrenchBoot is a framework that
+are growing, for instance, [TrenchBoot][tb_org]. TrenchBoot is a framework that
 allows individuals and projects to build security engines to perform launch
 integrity actions for their systems. The framework builds upon Boot Integrity
 Technologies (BITs) that establish one or more Roots of Trust (RoT) from which
 a degree of confidence that integrity actions were not subverted. The project
-has grown a lot thanks to the previous [NLnet NGI0 PET grant][3] and now it
-looks for further expansion into extensive use of the DRT technologies in
-open-source and security-oriented operating systems like [Qubes OS][4].
-[Qubes OS Anti Evil Maid (AEM)][5] software heavily depends on the availability
-of the DRTM technologies to prevent the [Evil Maid attacks][6]. However, the
-project hasn't evolved much since the beginning of 2018 and froze on the
-support of TPM 1.2 with Intel TXT in legacy boot mode (BIOS). This effectively
-limits the usage of this security software to older Intel machines only. TPM
-1.2 implemented SHA1 hashing algorithm which is nowadays considered weak in the
-era of forever-increasing computer performance and quantum computing. The
-solution to this problem comes with a newer TPM 2.0 with more agile
-cryptographic algorithms and SHA256 implementation by default. Qubes OS AEM
-software suffers from the following:
+has grown a lot thanks to the previous [NLnet NGI0 PET grant][nlnet_opendrtm]
+and now it looks for further expansion into extensive use of the DRT
+technologies in open-source and security-oriented operating systems like
+[Qubes OS][qubes_os_org]. [Qubes OS Anti Evil Maid (AEM)][it_aem] software
+heavily depends on the availability of the DRTM technologies to prevent the
+[Evil Maid attacks][em_attacks]. However, the project hasn't evolved much since
+the beginning of 2018 and froze on the support of TPM 1.2 with Intel TXT in
+legacy boot mode (BIOS). This effectively limits the usage of this security
+software to older Intel machines only. TPM 1.2 implemented SHA1 hashing
+algorithm which is nowadays considered weak in the era of forever-increasing
+computer performance and quantum computing. The solution to this problem comes
+with a newer TPM 2.0 with more agile cryptographic algorithms and SHA256
+implementation by default. Qubes OS AEM software suffers from the following:
 
 1. Lack of TPM 2.0 support to handle more secure hashes and safer design of the
    TPM firmware according to a newer specification.
@@ -57,13 +57,13 @@ software suffers from the following:
    technology. Implementing AMD support would make a huge impact and broaden
    the usage of DRTM technologies.
 
-The initial AEM implementation relied on the [Trusted Boot project][7], Intel's
-reference implementation of Intel TXT. It had never any plans to support AMD
-processors. TrenchBoot is filling this gap supporting both Intel and AMD
-hardware which makes it an ideal target to replace Trusted Boot in Qubes OS AEM
-implementation. Furthermore, the project grant would be used to implement the
-missing pieces in the Qubes OS AEM software to cover the AMD and Intel support
-for both TPM 1.2 and TPM 2.0.
+The initial AEM implementation relied on the [Trusted Boot][tboot_wiki],
+Intel's reference implementation of Intel TXT. It had never any plans to
+support AMD processors. TrenchBoot is filling this gap supporting both Intel
+and AMD hardware which makes it an ideal target to replace Trusted Boot in
+Qubes OS AEM implementation. Furthermore, the project grant would be used to
+implement the missing pieces in the Qubes OS AEM software to cover the AMD and
+Intel support for both TPM 1.2 and TPM 2.0.
 
 ## Compare your own project with existing or historical efforts
 
@@ -78,25 +78,25 @@ mini-conference events with Qubes OS maintainer Marek Marczykowski-Górecki
 where various topics related to Qubes OS security are discussed. Among them,
 the Anti Evil Maid was frequently presented by 3mdeb engineers:
 
-- [Anti Evil Maid for Intel coreboot-based platform][9]
-- [Anti Evil Maid for modern AMD UEFI-based platform][10]
+- [Anti Evil Maid for Intel coreboot-based platform][aem_intel]
+- [Anti Evil Maid for modern AMD UEFI-based platform][aem_amd]
 
 A similar approach was already tried by Assured Information Security (AIS) to
-boot [Xen in UEFI mode with Intel TXT DRTM technology][11], however, this is
-only a small portion of the work covered by our proposal. Additionally, Qubes
-OS does not launch using Xen.efi like in the AIS work, but uses
-[Multiboot2 protocol with GRUB2][12] instead which makes this approach
+boot [Xen in UEFI mode with Intel TXT DRTM technology][ais_aem], however, this
+is only a small portion of the work covered by our proposal. Additionally,
+Qubes OS does not launch using Xen.efi like in the AIS work, but uses
+[Multiboot2 protocol with GRUB2][qubes_mb2] instead which makes this approach
 unusable. Moreover, the Xen.efi approach is much more complex and assumes usage
 of Trusted Boot, limiting the feature to Intel hardware only.
 
 ## What are the significant technical challenges you expect to solve
 
 First of all Qubes OS AEM software consists of software packages providing
-Trusted Boot and the [Qubes OS TPM scripts][13]. These software packages would
-need to replace the Trusted Boot with TrenchBoot supported GRUB2 and Xen.
-Secondly, the TPM scripts require adding support for TPM 2.0 equivalent
-functionality. AEM requires access to non-volatile RAM inside TPM which is
-defined differently in the TPM 2.0 specification compared to TPM 1.2.
+Trusted Boot and the [Qubes OS TPM scripts][aem_scripts]. These software
+packages would need to replace the Trusted Boot with TrenchBoot supported GRUB2
+and Xen. Secondly, the TPM scripts require adding support for TPM 2.0
+equivalent functionality. AEM requires access to non-volatile RAM inside TPM
+which is defined differently in the TPM 2.0 specification compared to TPM 1.2.
 
 Another challenge would be to make Xen possible to boot in UEFI boot mode
 without Boot Services defined in UEFI specification. Boot Services are a set of
@@ -271,16 +271,16 @@ Further reviews and suggestions are welcome. You can do it in two ways:
 - using Giscus on the bottom of this page
 - contributing to this repository directly via Pull Request
 
-[1]: https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure#what-makes-a-secured-core-pc
-[2]: https://trenchboot.org/
-[3]: https://nlnet.nl/project/OpenDRTM/
-[4]: https://www.qubes-os.org/
-[5]: https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html
-[6]: http://theinvisiblethings.blogspot.com/2009/10/evil-maid-goes-after-truecrypt.html
-[7]: https://sourceforge.net/p/tboot/wiki/Home/
-[8]: https://blog.3mdeb.com/2020/2020-07-14-qubesos-fwupd-core/
-[9]: https://www.youtube.com/watch?v=YE2FbFlszI4
-[10]: https://www.youtube.com/watch?v=rM0vRi6qABE
-[11]: https://www.youtube.com/watch?v=6NScGNSg3ks
-[12]: https://github.com/QubesOS/qubes-issues/issues/4902
-[13]: https://github.com/QubesOS/qubes-antievilmaid/blob/master/sbin/
+[ms_sec_core]: https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure#what-makes-a-secured-core-pc
+[tb_org]: https://trenchboot.org/
+[nlnet_open_drtm]: https://nlnet.nl/project/OpenDRTM/
+[qubes_os_org]: https://www.qubes-os.org/
+[it_aem]: https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html
+[em_attacks]: http://theinvisiblethings.blogspot.com/2009/10/evil-maid-goes-after-truecrypt.html
+[tboot_wiki]: https://sourceforge.net/p/tboot/wiki/Home/
+[qubes_fwupd]: https://blog.3mdeb.com/2020/2020-07-14-qubesos-fwupd-core/
+[aem_intel]: https://www.youtube.com/watch?v=YE2FbFlszI4
+[aem_amd]: https://www.youtube.com/watch?v=rM0vRi6qABE
+[ais_aem]: https://www.youtube.com/watch?v=6NScGNSg3ks
+[qubes_mb2]: https://github.com/QubesOS/qubes-issues/issues/4902
+[aem_scripts]: https://github.com/QubesOS/qubes-antievilmaid/blob/master/sbin/
