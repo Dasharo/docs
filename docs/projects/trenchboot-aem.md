@@ -25,28 +25,28 @@ environment.
 
 The usage of DRT technologies like Intel Trusted Execution Technology (TXT) or
 AMD Secure Startup becomes more and more significant, for example, Dynamic Root
-of Trust for Measurement (DRTM) requirements of Microsoft Secured Core PCs
-\[[1]\]. In open-source projects, DRTM hasn't found its place yet, but that
-gradually changes. The demand on having firmware independent Roots of Trust is
-increasing and projects that satisfy this demand are growing, for instance,
-TrenchBoot \[[2]\]. TrenchBoot is a framework that allows individuals and
-projects to build security engines to perform launch integrity actions for
-their systems. The framework builds upon Boot Integrity Technologies (BITs)
-that establish one or more Roots of Trust (RoT) from which a degree of
-confidence that integrity actions were not subverted. The project has grown a
-lot thanks to the previous NLnet NGI0 PET grant \[[3]\] and now it looks for
-further expansion into extensive use of the DRT technologies in open-source and
-security-oriented operating systems like Qubes OS \[[4]\]. Qubes OS Anti Evil
-Maid (AEM) \[[5]\] software heavily depends on the availability of the DRTM
-technologies to prevent the Evil Maid attacks \[[6]\]. However, the project
-hasn't evolved much since the beginning of 2018 and froze on the support of TPM
-1.2 with Intel TXT in legacy boot mode (BIOS). This effectively limits the
-usage of this security software to older Intel machines only. TPM 1.2
-implemented SHA1 hashing algorithm which is nowadays considered weak in the era
-of forever-increasing computer performance and quantum computing. The solution
-to this problem comes with a newer TPM 2.0 with more agile cryptographic
-algorithms and SHA256 implementation by default. Qubes OS AEM software suffers
-from the following:
+of Trust for Measurement (DRTM) requirements of
+[Microsoft Secured Core PCs][1]. In open-source projects, DRTM hasn't found its
+place yet, but that gradually changes. The demand on having firmware
+independent Roots of Trust is increasing and projects that satisfy this demand
+are growing, for instance, [TrenchBoot][2]. TrenchBoot is a framework that
+allows individuals and projects to build security engines to perform launch
+integrity actions for their systems. The framework builds upon Boot Integrity
+Technologies (BITs) that establish one or more Roots of Trust (RoT) from which
+a degree of confidence that integrity actions were not subverted. The project
+has grown a lot thanks to the previous [NLnet NGI0 PET grant][3] and now it
+looks for further expansion into extensive use of the DRT technologies in
+open-source and security-oriented operating systems like [Qubes OS][4].
+[Qubes OS Anti Evil Maid (AEM)][5] software heavily depends on the availability
+of the DRTM technologies to prevent the [Evil Maid attacks][6]. However, the
+project hasn't evolved much since the beginning of 2018 and froze on the
+support of TPM 1.2 with Intel TXT in legacy boot mode (BIOS). This effectively
+limits the usage of this security software to older Intel machines only. TPM
+1.2 implemented SHA1 hashing algorithm which is nowadays considered weak in the
+era of forever-increasing computer performance and quantum computing. The
+solution to this problem comes with a newer TPM 2.0 with more agile
+cryptographic algorithms and SHA256 implementation by default. Qubes OS AEM
+software suffers from the following:
 
 1. Lack of TPM 2.0 support to handle more secure hashes and safer design of the
    TPM firmware according to a newer specification.
@@ -57,27 +57,13 @@ from the following:
    technology. Implementing AMD support would make a huge impact and broaden
    the usage of DRTM technologies.
 
-The initial AEM implementation relied on the Trusted Boot project \[[7]\],
-Intel's reference implementation of Intel TXT. It had never any plans to
-support AMD processors. TrenchBoot is filling this gap supporting both Intel
-and AMD hardware which makes it an ideal target to replace Trusted Boot in
-Qubes OS AEM implementation. Furthermore, the project grant would be used to
-implement the missing pieces in the Qubes OS AEM software to cover the AMD and
-Intel support for both TPM 1.2 and TPM 2.0.
-
-\[1\]: `https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure#what-makes-a-secured-core-pc`
-
-\[2\]: `https://trenchboot.org/`
-
-\[3\]: `https://nlnet.nl/project/OpenDRTM/`
-
-\[4\]: `https://www.qubes-os.org/`
-
-\[5\]: `https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html`
-
-\[6\]: `http://theinvisiblethings.blogspot.com/2009/10/evil-maid-goes-after-truecrypt.html`
-
-\[7\]: `https://sourceforge.net/p/tboot/wiki/Home/`
+The initial AEM implementation relied on the [Trusted Boot project][7], Intel's
+reference implementation of Intel TXT. It had never any plans to support AMD
+processors. TrenchBoot is filling this gap supporting both Intel and AMD
+hardware which makes it an ideal target to replace Trusted Boot in Qubes OS AEM
+implementation. Furthermore, the project grant would be used to implement the
+missing pieces in the Qubes OS AEM software to cover the AMD and Intel support
+for both TPM 1.2 and TPM 2.0.
 
 ## Compare your own project with existing or historical efforts
 
@@ -87,33 +73,27 @@ of the PC Engines APU series platform for over 4-years. Delivering high-quality
 firmware releases each month and providing technical support on PC Engines and
 OPNSense forums. 3mdeb embedded systems developers are experienced engineers
 accustomed to operating systems development. Our developers have contributed to
-the fwupd support for Qubes OS \[[8]\]. 3mdeb is also regularly co-organizing
+the [fwupd support for Qubes OS][8]. 3mdeb is also regularly co-organizing
 mini-conference events with Qubes OS maintainer Marek Marczykowski-Górecki
 where various topics related to Qubes OS security are discussed. Among them,
-the Anti Evil Maid was frequently presented by 3mdeb engineers \[[9]\]\[[10]\].
+the Anti Evil Maid was frequently presented by 3mdeb engineers:
+
+- [Anti Evil Maid for Intel coreboot-based platform][9]
+- [Anti Evil Maid for modern AMD UEFI-based platform][10]
+
 A similar approach was already tried by Assured Information Security (AIS) to
-boot Xen in UEFI mode with Intel TXT DRTM technology \[[11]\], however, this is
+boot [Xen in UEFI mode with Intel TXT DRTM technology][11], however, this is
 only a small portion of the work covered by our proposal. Additionally, Qubes
-OS does not launch using Xen.efi like in the AIS work, but uses Multiboot2
-protocol with GRUB2 \[[12]\] instead which makes this approach unusable.
-Moreover, the Xen.efi approach is much more complex and assumes usage of
-Trusted Boot, limiting the feature to Intel hardware only.
-
-\[8\]: `https://blog.3mdeb.com/2020/2020-07-14-qubesos-fwupd-core/`
-
-\[9\]: `https://www.youtube.com/watch?v=YE2FbFlszI4`
-
-\[10\]: `https://www.youtube.com/watch?v=rM0vRi6qABE`
-
-\[11\]: `https://www.youtube.com/watch?v=6NScGNSg3ks`
-
-\[12\]: `https://github.com/QubesOS/qubes-issues/issues/4902`
+OS does not launch using Xen.efi like in the AIS work, but uses
+[Multiboot2 protocol with GRUB2][12] instead which makes this approach
+unusable. Moreover, the Xen.efi approach is much more complex and assumes usage
+of Trusted Boot, limiting the feature to Intel hardware only.
 
 ## What are the significant technical challenges you expect to solve
 
 First of all Qubes OS AEM software consists of software packages providing
-Trusted Boot and the Qubes OS TPM scripts \[[13]\]. These software packages
-would need to replace the Trusted Boot with TrenchBoot supported GRUB2 and Xen.
+Trusted Boot and the [Qubes OS TPM scripts][13]. These software packages would
+need to replace the Trusted Boot with TrenchBoot supported GRUB2 and Xen.
 Secondly, the TPM scripts require adding support for TPM 2.0 equivalent
 functionality. AEM requires access to non-volatile RAM inside TPM which is
 defined differently in the TPM 2.0 specification compared to TPM 1.2.
@@ -139,19 +119,17 @@ GRUB before Boot Services are terminated and passed to the Xen. The proposed
 solution is to pass this information via the Multiboot2 tags defined in the
 specification for this particular Boot Services information.
 
-\[13\]: `https://github.com/QubesOS/qubes-antievilmaid/blob/master/sbin/`
-
 ## Requested support
 
 1. Phase 1: TrenchBoot Intel TXT and TPM 1.2 support
 
-    - Add TPM 1.2 support for Intel TXT in TrenchBoot GRUB2
+    + Add TPM 1.2 support for Intel TXT in TrenchBoot GRUB2
 
         The TrenchBoot support hasn't been implemented and verified with TPM
         1.2 on Intel TXT path. This requirement ensures the TPM 1.2 is also
         supported for older Intel hardware with Intel TXT.
 
-    - Xen Secure Launch - Intel TXT support in Xen for TrenchBoot
+    + Xen Secure Launch - Intel TXT support in Xen for TrenchBoot
 
         Due to the requirements of Intel TXT and how it is utilised, it is
         impossible to use the Xen boot protocols defined in the UEFI or Multiboot2
@@ -161,26 +139,26 @@ specification for this particular Boot Services information.
         is no support for launching Xen with Intel TXT other than Trusted Boot. It
         has to be ported from Trusted Boot specific code:
 
-         + constructing MLE header
-         + waking up APs
-         + restoring MTRRs
-         + reserving the TXT memory
-         + reenabling SMIs
-         + handling TXT shutdown and S3 resume/suspend
-         + TPM event log finding
+         * constructing MLE header
+         * waking up APs
+         * restoring MTRRs
+         * reserving the TXT memory
+         * reenabling SMIs
+         * handling TXT shutdown and S3 resume/suspend
+         * TPM event log finding
 
-    - Test the solution on Intel hardware with TPM 1.2 with legacy boot mode
+    + Test the solution on Intel hardware with TPM 1.2 with legacy boot mode
 
 2. Phase 2 - Qubes OS AEM TPM 2.0 support:
 
-    - Extend the AEM scripts to detect TPM version on the platform
+    + Extend the AEM scripts to detect TPM version on the platform
 
         As TPM 1.2 and TPM 2.0 use different software stacks and tools, it is
         necessary to distinguish the TPM module family and use the appropriate
         software. The task will implement the logic to distinguish the TPM
         families.
 
-    - Extend the AEM scripts to use appropriate software stack for TPM 2.0
+    + Extend the AEM scripts to use appropriate software stack for TPM 2.0
 
         While AEM fully supports TPM 1.2 there is no support for TPM 2.0 at
         all. When the TPM family is determined the script should use the
@@ -190,11 +168,11 @@ specification for this particular Boot Services information.
         implementing the access to TPM 2.0 NVRAM, sealing and unsealing the
         secret data and generating TOTP.
 
-    - Test the solution on Intel hardware with TPM 2.0 with legacy boot mode
+    + Test the solution on Intel hardware with TPM 2.0 with legacy boot mode
 
 3. Phase 3 - Qubes OS AEM AMD support:
 
-    - Rebase and refresh TrenchBoot GRUB2 for QubesOS
+    + Rebase and refresh TrenchBoot GRUB2 for QubesOS
 
         Some work to implement TrenchBoot support for Qubes OS on AMD hardware
         has been done. GRUB2 with TrenchBoot support has been added to Qubes
@@ -202,7 +180,7 @@ specification for this particular Boot Services information.
         The task aims to refresh the work and align with the upstream
         [Qubes OS GRUB2 repository](https://github.com/QubesOS/qubes-grub2)
 
-    - Clean up the Secure Kernel Loader (formerly LandingZone) package support
+    + Clean up the Secure Kernel Loader (formerly LandingZone) package support
       for QubesOS
 
         Since the initial work done by 3mdeb engineers for AMD AEM in Qubes OS a
@@ -212,7 +190,7 @@ specification for this particular Boot Services information.
         technology to perform DRTM launch. The task aims to refresh the previous
         work and upate the SKL package for Qubes OS to the newest revision.
 
-    - TrenchBoot Secure Kernel Loader (SKL) improvements for AMD server CPUs with
+    + TrenchBoot Secure Kernel Loader (SKL) improvements for AMD server CPUs with
       multiple nodes
 
         While SKL was extensively tested on System on Chip and single CPU
@@ -223,19 +201,19 @@ specification for this particular Boot Services information.
         node when TrenchBoot DRTM tasks are done. The task implements the correct
         support for server CPUs in TrenchBoot SKL.
 
-    - Test the solution on AMD hardware with TPM 2.0 and TPM 1.2 with legacy boot
+    + Test the solution on AMD hardware with TPM 2.0 and TPM 1.2 with legacy boot
       mode
 
 4. Phase 4 - Xen UEFI boot mode with DRTM:
 
-    - TrenchBoot support for UEFI boot mode for AMD in GRUB
+    + TrenchBoot support for UEFI boot mode for AMD in GRUB
 
         While TrenchBoot DRTM was extensively tested on Intel hardware with UEFI
         firmware and Linux, it was not on AMD platforms. This task ensures that
         DRTM works with UEFI boot mode on AMD processors in GRUB2 and Linux without
         UEFI Boot Services.
 
-    - TrenchBoot support for UEFI boot mode in Xen
+    + TrenchBoot support for UEFI boot mode in Xen
 
         When UEFI boot mode with TrenchBoot is working with GRUB2 and Linux, all
         that is missing to fully support AMD and Intel hardware with Qubes OS AEM
@@ -244,25 +222,25 @@ specification for this particular Boot Services information.
         that Xen would obtain from UEFI Boot Services would be still available. The
         information has to be passed by GRUB2 to Xen via Multiboot2 protocol:
 
-         + EFI memory map
-         + Framebuffer information
-         + PCI devices information with their option ROMs
+         * EFI memory map
+         * Framebuffer information
+         * PCI devices information with their option ROMs
 
         Additionally "EFI boot services not terminated" Multiboot2 tag must not be
         passed to Xen by GRUB2 on DRTM launch when GRUB2 will terminate Boot
         Services. Xen should detect such situation and act according to the state
         of Boot Services. Xen will be implemented to:
 
-         + parse the EFI memory map, framebuffer information and PCI devices
+         * parse the EFI memory map, framebuffer information and PCI devices
            information passed by GRUB2
-         + do not expose the "EFI boot services" Multiboot2 tag indicating that
+         * do not expose the "EFI boot services" Multiboot2 tag indicating that
            Xen can be executed without UEFI Boot Services presence
-         + allocate the memory space for the trampoline used to launch other
+         * allocate the memory space for the trampoline used to launch other
            processors or use the allocation done by GRUB2 if necessary
-         + do not go error path when Boot Services are not present and skip all
+         * do not go error path when Boot Services are not present and skip all
            calls to UEFI Boot Services by using the information provided by GRUB2
 
-    - Test the solution on AMD and Intel hardware with TPM 2.0 and TPM 1.2 with
+    + Test the solution on AMD and Intel hardware with TPM 2.0 and TPM 1.2 with
       legacy and UEFI boot mode
 
 ## Projects or organizations relevant to this project before?
@@ -285,6 +263,13 @@ will participate in review of the work:
 - Andrew Cooper (Citrix) - Xen Hypervisor Maintainer
 - Daniel Kiper (Oracle) - GRUB2 Maintainer
 - Daniel Smith (Apertus Solutions) - TrenchBoot founder and maintainer
+
+## Review
+
+Further reviews and suggestions are welcome. You can do it in two ways:
+
+- using Giscus on the bottom of this page
+- contributing to this repository directly via Pull Request
 
 [1]: https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure#what-makes-a-secured-core-pc
 [2]: https://trenchboot.org/
