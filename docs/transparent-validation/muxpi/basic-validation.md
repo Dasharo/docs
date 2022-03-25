@@ -27,7 +27,6 @@
 1. Plug microUSB<->USB cable to muxPi and your machine.
 1. Plug in power supply.
 ![](https://cloud.3mdeb.com/index.php/s/o3D5fwWbjscXDw9/preview)
-
 1. Make sure that jumpers are correctly set according to image:
 ![](../../images/muxPi-jumpers.png)
 
