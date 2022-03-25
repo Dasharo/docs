@@ -67,9 +67,9 @@ Intel support for both TPM 1.2 and TPM 2.0.
 
 ## Compare your own project with existing or historical efforts
 
-3mdeb is a licensed provider for quality coreboot consulting services for 5
-years. We are well-known in the open-source community for maintaining firmware
-of the PC Engines APU series platform for over 4-years. Delivering high-quality
+3mdeb is a licensed provider for quality coreboot consulting services since
+2016. We are well-known in the open-source community for maintaining firmware
+of the PC Engines APU series platform since 2016. Delivering high-quality
 firmware releases each month and providing technical support on PC Engines and
 OPNSense forums. 3mdeb embedded systems developers are experienced engineers
 accustomed to operating systems development. Our developers have contributed to
