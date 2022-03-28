@@ -11,7 +11,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 
-### LBT001.001 Debian Stable installation and boot
+### BSD001.001 FreeBSD installation and boot
 
 **Test description**
 
