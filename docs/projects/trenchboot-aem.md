@@ -36,7 +36,7 @@ perform launch integrity actions for their systems. The framework builds upon
 Boot Integrity Technologies (BITs) that establish one or more Roots of Trust
 (RoT) from which a degree of confidence that integrity actions were not
 subverted. The project has grown a lot thanks to the previous
-[NLnet NGI0 PET grant][nlnet_opendrtm] and now it looks for further expansion
+[NLnet NGI0 PET grant][nlnet_open_drtm] and now it looks for further expansion
 into extensive use of the DRT technologies in open-source and security-oriented
 operating systems like [Qubes OS][qubes_os_org].
 [Qubes OS Anti Evil Maid (AEM)][it_aem] software heavily depends on the
@@ -76,8 +76,8 @@ firmware of the PC Engines APU series platform since 2016. Delivering
 high-quality firmware releases each month and providing technical support on PC
 Engines and OPNSense forums. 3mdeb embedded systems developers are experienced
 engineers accustomed to operating systems development. Our developers have
-contributed to the [fwupd support for Qubes OS][8]. 3mdeb is also regularly
-co-organizing mini-conference events with Qubes OS maintainer Marek
+contributed to the [fwupd support for Qubes OS][qubes_fwupd]. 3mdeb is also
+regularly co-organizing mini-conference events with Qubes OS maintainer Marek
 Marczykowski-Górecki, where various topics related to Qubes OS security are
 discussed. Among them, the Anti Evil Maid was frequently presented by 3mdeb
 engineers:
