@@ -72,6 +72,7 @@ nav:
           - 'Installation manual': variants/novacustom_ns5x/installation.md
           - 'Post-installation steps': variants/novacustom_ns5x/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
+          - 'RGB keyboard': variants/novacustom_ns5x/rgb_keyboard.md
       - 'Protectli VP4620':
           - 'Releases': variants/protectli_vp4620/releases.md
           - 'Building manual': variants/protectli_vp4620/building-manual.md
