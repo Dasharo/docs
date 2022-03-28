@@ -9,8 +9,8 @@ coreboot port.
 
 - CPU: Intel Core i7-10510U
 - SSD:
-    - M.2 SSD SATA: msata 16g 16GB SSD
-    - M.2 SSD PCIE4X: Samsung 980 PRO NVMe M.2 1TB
+    - M.2 SSD SATA: Hoodisk SSL032GTTC7-S9A-2S
+    - M.2 SSD PCIE4X: ADATA SX8200 480GB
     - external SATA 2.5 inch: Goodram SSDPR-CL100-240-G2 240GB
 - Memory (all possible combinations in 2 slots for HCL):
     - CRUCIAL CT4G4SFS824A
