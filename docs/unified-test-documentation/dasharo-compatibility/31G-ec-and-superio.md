@@ -1286,3 +1286,225 @@ system.
 
 1. Pressing the button once should make laptop enter sleep mode.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
+
+### ECR021.001 Keyboard (function key: RGB keyboard toggle) in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the RGB keyboard toggle hotkey is handled properly by
+the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard toggle hotkey twice and note the result each time
+
+**Expected result**
+
+1. Pressing the button once should disable the keyboard backlight
+1. Pressing the button again should re-enable the keyboard backlight
+
+### ECR021.002 Keyboard (function key: RGB keyboard toggle) in OS (Windows 11)
+
+**Test description**
+
+This test verifies that the RGB keyboard toggle hotkey is handled properly by
+the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard toggle hotkey twice and note the result each time
+
+**Expected result**
+
+1. Pressing the button once should disable the keyboard backlight
+1. Pressing the button again should re-enable the keyboard backlight
+
+### ECR022.001 RGB keyboard next color FN key in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the RGB keyboard next color hotkey is handled properly
+by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard color hotkey repeatedly until the keyboard cycles
+   through all color modes
+
+**Expected result**
+
+1. Pressing the button once should switch the keyboard color
+1. All color modes according to product documentation should be accessible
+
+### ECR022.002 RGB keyboard next color FN key in OS (Windows 11)
+
+**Test description**
+
+This test verifies that the RGB keyboard next color hotkey is handled properly
+by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard color hotkey repeatedly until the keyboard cycles
+   through all color modes
+
+**Expected result**
+
+1. Pressing the button once should switch the keyboard color
+1. All color modes according to product documentation should be accessible
+
+### ECR023.001 RGB keyboard brightness down FN key in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the RGB keyboard brightness down hotkey is handled
+properly by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard brightness down hotkey and note the result
+
+**Expected result**
+
+1. Pressing the button once should lower the keyboard backlight
+
+### ECR023.002 RGB keyboard brightness down FN key in OS (Windows 11)
+
+**Test description**
+
+This test verifies that the RGB keyboard brightness down hotkey is handled
+properly by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard brightness down hotkey and note the result
+
+**Expected result**
+
+1. Pressing the button once should lower the keyboard backlight
+
+### ECR024.001 RGB keyboard brightness up FN key in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the RGB keyboard brightness up hotkey is handled
+properly by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard brightness up hotkey and note the result
+
+**Expected result**
+
+1. Pressing the button once should increase the keyboard backlight
+
+### ECR024.002 RGB keyboard keyboard brightness up FN key in OS (Windows 11)
+
+**Test description**
+
+This test verifies that the RGB keyboard brightness up hotkey is handled
+properly by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into system by using the proper login and password.
+1. Press the RGB keyboard brightness up hotkey and note the result
+
+**Expected result**
+
+1. Pressing the button once should increase the keyboard backlight
