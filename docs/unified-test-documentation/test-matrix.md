@@ -166,8 +166,8 @@ described in this documentation are dedicated to the given platform
 | 7.   | Custom logo                                       | CLG           | All                                  |
 | 8.   | Custom boot menu key                              | CBK           | All                                  |
 | 9.   | USB HID and MSC Support                           | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
-| 10.  | Debian Stable and Ubuntu LTS support              | LBT           | All (missing)                        |
-| 11.  | FreeBSD support                                   | BSD           | All (missing)                        |
+| 10.  | FreeBSD support                                   | BSD           | All                                  |
+| 11.  | Debian Stable and Ubuntu LTS support              | LBT           | All                                  |
 | 12.  | USB-C/Thunderbolt                                 | UTC           | UTC004.001                           |
 | 13.  | M.2 WiFi/Bluetooth                                | WLE           | WLE001.001, WLE002.001, WLE003.001   |
 | 14.  | miniPCIe LTE/WiFi/Bluetooth                       | MWL           | MWL004.001                           |
