@@ -156,6 +156,7 @@ nav:
               - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
               - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
               - 'Platform suspend and resume': unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+              - 'FreeBSD support': unified-test-documentation/dasharo-compatibility/307-freebsd-support.md
               - 'Debian Stable and Ubuntu LTS support': unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
               - 'USB detection': unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
               - 'USB booting': unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
