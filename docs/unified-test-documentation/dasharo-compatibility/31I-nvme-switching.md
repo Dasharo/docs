@@ -140,5 +140,34 @@ via the Operating System slot.
 
 **Expected result**
 
-1. The NVMe M.2 disk is detected in OS.
-2. The SATA M.2 disk is detected in OS.
+1. The NVMe M.2 disk is detected in OS:
+
+    ```
+    Model: SAMSUNG MZVLB256HBHQ-00000 (nvme)
+    Disk /dev/nvme0n1: 256GB
+    Sector size (logical/physical): 512B/512B
+    Partition Table: gpt
+    Disk Flags: 
+    
+    Number  Start   End     Size    File system  Name                  Flags
+     1      1049kB  2097kB  1049kB
+     2      2097kB  540MB   538MB   fat32        EFI System Partition  boot, esp
+     3      540MB   67,6GB  67,1GB  ext4
+     6      67,6GB  126GB   57,9GB  ext4
+     4      126GB   193GB   67,7GB  ext4
+     5      193GB   256GB   62,9GB  ext4
+    ```
+
+2. The SATA M.2 disk is detected in OS:
+
+    ```
+    Model: ATA Hoodisk SSD (scsi)
+    Disk /dev/sda: 32,0GB
+    Sector size (logical/physical): 512B/512B
+    Partition Table: gpt
+    Disk Flags: 
+    
+    Number  Start   End     Size    File system  Name                  Flags
+     1      1049kB  538MB   537MB   fat32        EFI System Partition  boot, esp
+     2      538MB   32,0GB  31,5GB  ext4
+    ```
