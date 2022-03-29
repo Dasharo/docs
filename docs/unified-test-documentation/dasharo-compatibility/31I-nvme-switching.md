@@ -109,8 +109,6 @@ M.2 slot.
 
 ### NVM001.003 M.2 automatic SATA/NVMe switching support (Ubuntu 20.04)
 
-VM001.002 NVMe support (Ubuntu 20.04)
-
 **Test description**
 
 This test aims to verify detection of the NVMe and SATA disk in M.2 hybrid slot
