@@ -179,7 +179,8 @@ during firmware execution phase.
 
 **Test description**
 
-This test aims to verify initialization of the external DP display in the OS.
+This test aims to verify initialization of the external Display Port connected
+in the OS.
 
 **Test configuration data**
 
@@ -189,25 +190,27 @@ This test aims to verify initialization of the external DP display in the OS.
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
+2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
 
 1. Power on the DUT.
-1. Boot into the system.
-1. Log into system by using the proper login and password.
-1. If using more than one display, switch the display mode between `Mirror` and
+2. Boot into the system.
+3. Log into system by using the proper login and password.
+4. If using more than one display, switch the display mode between `Mirror` and
    `Join Displays`.
 
 **Expected result**
 
-1. The image should be displayed on the external DP display in `Mirror` and
-   `Join Displays` modes.
+1. The image should be displayed on the external Display Port connected display
+   in `Mirror` and `Join Displays` modes.
 
 ### DSP003.002 External DP display in OS (Windows 11)
 
 **Test description**
 
-This test aims to verify initialization of the external DP display in the OS.
+This test aims to verify initialization of the external Display Port connected
+display in the OS.
 
 **Test configuration data**
 
@@ -217,6 +220,7 @@ This test aims to verify initialization of the external DP display in the OS.
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
+2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
 
@@ -228,13 +232,13 @@ This test aims to verify initialization of the external DP display in the OS.
 
 **Expected result**
 
-1. The image should be displayed on the external DP display in `Duplicate`
-   and `Extend` modes.
+1. The image should be displayed on the external Display Port connected display
+   in `Duplicate` and `Extend` modes.
 
 ### DSP003.003 External DP display in firmware
 
-This test aims to verify initialization of the external DP display
-during firmware execution phase.
+This test aims to verify initialization of the external Display Port connected
+display during firmware execution phase.
 
 **Test configuration data**
 
@@ -244,12 +248,14 @@ during firmware execution phase.
 
 1. Proceed with the
    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
 
 1. Power on the DUT.
-1. Observe the external DP display during firmware execution phase.
-1. Power off the DUT.
+2. Observe the external Display Port connected display during firmware
+   execution phase.
+3. Power off the DUT.
 
 **Expected result**
 
