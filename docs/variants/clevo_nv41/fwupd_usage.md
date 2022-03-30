@@ -16,21 +16,21 @@ using different distribution, you might need to
 
 ```bash
 $ wget --content-disposition \
-     https://cloud.3mdeb.com/index.php/s/peqT6xsrCn5pzRk/download \
-     https://cloud.3mdeb.com/index.php/s/TPKDpzedRi7sEJJ/download \
-     https://cloud.3mdeb.com/index.php/s/C58L5c5RmbjKWWz/download
-$ unzip fwupd-novacustom-v1.0.0.zip
+     https://cloud.3mdeb.com/index.php/s/dFWpcAkEAqd9pHX/download\
+     https://cloud.3mdeb.com/index.php/s/gLdfYX84a4yrLRm/download \
+     https://cloud.3mdeb.com/index.php/s/XPn57kZeCSjk7iN/download
+$ unzip fwupd-novacustom-v1.0.1.zip
 ```
 
-2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.0.zip`):
+2. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.1.zip`):
 
 ```bash
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/oss_master_key/open-source-software/3mdeb-open-source-software-master-key.asc
 $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc
 
-$ sha256sum -c fwupd-novacustom-v1.0.0.zip.sha256
-$ gpg -v --verify fwupd-novacustom-v1.0.0.zip.sha256.sig fwupd-novacustom-v1.0.0.zip.sha256
+$ sha256sum -c fwupd-novacustom-v1.0.1.zip.sha256
+$ gpg -v --verify fwupd-novacustom-v1.0.1.zip.sha256.sig fwupd-novacustom-v1.0.1.zip.sha256
 ```
 
 3. flashrom packages are located inside `flashrom-1.2-2-3mdeb.zip`:
@@ -45,19 +45,16 @@ $ sudo apt install ./libflashrom-dev_1.2-2_amd64.deb
 4. fwupd packages are located inside `fwupd-1.7.3-3mdeb.zip`:
 
 ```bash
-$ unzip fwupd-1.7.3-3mdeb.zip
-$ sudo apt install ./fwupd_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./fwupd-doc_1.7.3+r68+gf3a5e4d1_all.deb \
-                   ./fwupd-tests_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./gir1.2-fwupd-2.0_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./gir1.2-fwupdplugin-1.0_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./gir1.2-gusb-1.0_0.3.5-1_amd64.deb \
-                   ./libfwupd2_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./libfwupd-dev_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./libfwupdplugin4_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./libfwupdplugin-dev_1.7.3+r68+gf3a5e4d1_amd64.deb \
-                   ./libgusb2_0.3.5-1_amd64.deb \
-                   ./libgusb-dev_0.3.5-1_amd64.deb
+$ unzip fwupd-1.7.3.2-3mdeb.zip
+$ sudo apt install ./fwupd_1.7.3+r70+ge720ed96_amd64.deb \
+                   ./fwupd-doc_1.7.3+r70+ge720ed96_all.deb \
+                   ./fwupd-tests_1.7.3+r70+ge720ed96_amd64.deb \
+                   ./gir1.2-fwupd-2.0_1.7.3+r70+ge720ed96_amd64.deb \
+                   ./gir1.2-fwupdplugin-1.0_1.7.3+r70+ge720ed96_amd64.deb \
+                   ./libfwupd2_1.7.3+r70+ge720ed96_amd64.deb \
+                   ./libfwupd-dev_1.7.3+r70+ge720ed96_amd64.deb \
+                   ./libfwupdplugin4_1.7.3+r70+ge720ed96_amd64.deb \
+                   ./libfwupdplugin-dev_1.7.3+r70+ge720ed96_amd64.deb
 ```
 
 ### Building from source
@@ -99,7 +96,7 @@ $ sudo ninja -C build install
 1. Obtain source code:
 
 ```bash
-$ git clone https://github.com/Dasharo/fwupd.git -b v1.7.3.1
+$ git clone https://github.com/Dasharo/fwupd.git -b v1.7.3.2
 $ cd fwupd
 ```
 
