@@ -49,6 +49,19 @@ If stock firmware is currently installed:
 flashrom -p internal -w protectli_vault_cml_v1.0.13.rom
 ```
 
+This will flash the full image including Intel ME. The operation requires a
+hard reset of the platform. To perform a hard reset:
+
+1. Power off the platform. Note, it may not power off completely due to flashed
+   ME.
+2. Disconnect power supply from the board when OS finishes all tasks before
+   power off (the screen goes dark or black).
+3. Disconnect the RTC/CMOS battery OR clear the CMOS using the pin header
+   located near memory slots. Wait about half a minute (unshort the pins).
+4. Connect the power supply back.
+5. The platform should power on normally now. You can connect the battery back
+   if it was disconnected.
+
 If Dasharo is currently installed, only the COREBOOT partition of the flash
 needs to be updated. Flash it using the following command:
 
