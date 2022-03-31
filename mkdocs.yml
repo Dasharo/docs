@@ -59,7 +59,7 @@ nav:
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/clevo_nv41/openness_analysis.md
           - 'LVFS report': variants/clevo_nv41/lvfs_report.md
-          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo-tools-suite.md
+          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
