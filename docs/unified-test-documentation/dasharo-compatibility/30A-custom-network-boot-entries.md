@@ -22,7 +22,7 @@ once in the boot option list.
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-2. Check the iPXE is listed only once on the boot option list.
+1. Check the iPXE is listed only once on the boot option list.
 
 **Expected result**
 

@@ -14,7 +14,7 @@
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches
+This test aims to verify that DUT during booting procedure reaches
 stage bootblock. The bootblock is the first stage executed after CPU reset,
 its main task is to set up everything for a C-environment.
 
@@ -44,7 +44,7 @@ its main task is to set up everything for a C-environment.
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches
+This test aims to verify that DUT during booting procedure reaches
 stage romstage. The romstage initializes the DRAM and prepares everything
 for device init.
 
@@ -73,7 +73,7 @@ for device init.
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches
+This test aims to verify that DUT during booting procedure reaches
 stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test configuration data**
@@ -101,7 +101,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches
+This test aims to verify that DUT during booting procedure reaches
 stage ramstage. The ramstage does the main device init.
 
 **Test configuration data**
@@ -129,8 +129,8 @@ stage ramstage. The ramstage does the main device init.
 
 **Test description**
 
-This test aims to verify that DUT reaches the `gathering requirements` stage for
-Resource Allocator v4 during booting procedure.
+This test aims to verify that DUT reaches the `gathering requirements`
+stage for Resource Allocator v4 during booting procedure.
 
 **Test configuration data**
 

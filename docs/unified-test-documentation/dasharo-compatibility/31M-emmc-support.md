@@ -32,16 +32,16 @@ This test aims to verify detection of the eMMC driver via the Operating System.
 
 1. The eMMC disk is detected in OS:
 
-```
-Model: MMC 8GTF4R (sd/mmc)
-Disk /dev/mmcblk0: 7818MB
-Sector size (logical/physical): 512B/512B
-Partition Table: msdos
-Disk Flags: 
+    ```bash
+    Model: MMC 8GTF4R (sd/mmc)
+    Disk /dev/mmcblk0: 7818MB
+    Sector size (logical/physical): 512B/512B
+    Partition Table: msdos
+    Disk Flags:
 
-Number  Start   End     Size    Type      File system  Flags
- 1      1049kB  538MB   537MB   primary   fat32
- 2      538MB   1076MB  538MB   primary   fat32        boot, esp
- 3      1077MB  7817MB  6740MB  extended
- 5      1077MB  7817MB  6740MB  logical   ext4
-```
+    Number  Start   End     Size    Type      File system  Flags
+     1      1049kB  538MB   537MB   primary   fat32
+     2      538MB   1076MB  538MB   primary   fat32        boot, esp
+     3      1077MB  7817MB  6740MB  extended
+     5      1077MB  7817MB  6740MB  logical   ext4
+    ```

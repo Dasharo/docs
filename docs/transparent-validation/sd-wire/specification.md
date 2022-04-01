@@ -1,4 +1,4 @@
-## Hardware design
+# Hardware design
 
 Design of this board is based on [SD MUX](https://wiki.tizen.org/SD_MUX). SDWire
 does not have power switch or USB switch but has built in USB SD card reader. SD
@@ -6,7 +6,7 @@ card multiplexer itself is exactly the same in both devices.
 
 There are four LEDs on the board:
 
-```
+```bash
 red - power presence from USB
 blue - USB reader activity
 blue - card connected to TS (Test Server)

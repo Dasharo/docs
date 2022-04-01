@@ -12,7 +12,7 @@
     [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Download `cbmem` from https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd
+1. Download `cbmem` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
     to the DUT.
 
 ### CBMEM001.001  Serial boot measure: coreboot booting time after coldboot
@@ -42,7 +42,7 @@ sudo ./cbmem -T
 
 **Expected result**
 
-The output of the command should contain the information about duration of 
+The output of the command should contain the information about duration of
 all boot stages.
 
 ### CBMEM002.001 Serial boot measure: coreboot booting time after warmboot
@@ -72,7 +72,7 @@ sudo ./cbmem -T
 
 **Expected result**
 
-The output of the command should contain the information about duration of 
+The output of the command should contain the information about duration of
 all boot stages.
 
 ### CBMEM003.001 Serial boot measure: coreboot booting time after system reboot
@@ -102,5 +102,5 @@ sudo ./cbmem -T
 
 **Expected result**
 
-The output of the command should contain the information about duration of 
+The output of the command should contain the information about duration of
 all boot stages.

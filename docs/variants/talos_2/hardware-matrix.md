@@ -5,7 +5,7 @@ Dual CPU setup not supported currently.
 
 Following RAM configurations were tested and are proved to be properly initialized.
 
-```
+```bash
 MCS0, MCA0
    DIMM0: 1Rx4 16GB PC4-2666V-RC2-12-PA0
    DIMM1: not installed

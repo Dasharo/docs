@@ -1,5 +1,6 @@
-Ecosystem Overview
-------------------
+# Ecosystem Overview
+
+---
 
 Dasharo ecosystem contain multiple components on various levels of
 organization. This section overview role of every component.
@@ -18,11 +19,11 @@ organization. This section overview role of every component.
   development infrastructure, build environment, CI/CD and build publishing
   methods. We also cover how production interacts with Dasharo Transparent
   Validation System.
-* Customer Infrastructure - Some customers may have the need of replicating part of
-  Dasharo Production process and infrastructure in their own environment, which
-  leads to repositories synchronization, different CI/CD setup and other needs.
-  This section describes interaction with Customer Infrastructure and which part
-  of Dasharo Production is deployable on the customer site.
+* Customer Infrastructure - Some customers may have the need of replicating part
+  of Dasharo Production process and infrastructure in their own environment,
+  which leads to repositories synchronization, different CI/CD setup and other
+  needs. This section describes interaction with Customer Infrastructure and
+  which part of Dasharo Production is deployable on the customer site.
 * Transparent Validation - Dasharo Transparent Validation (DTV) is a set of
   software, firmware and hardware components with the goal of simplifying and
   improving long term maintenance of Dasharo firmware. In this section we

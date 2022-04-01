@@ -64,7 +64,7 @@ if the programmer is detected properly, run the following command:
 
 The output should contain the following text:
 
-```
+```bash
 Found GigaDevice flash chip "GD25Q128B" (16384 kB, SPI) on linux_spi.
 Found GigaDevice flash chip "GD25Q128C" (16384 kB, SPI) on linux_spi.
 Multiple flash chip definitions match the detected chip(s): "GD25Q128B", "GD25Q128C"
