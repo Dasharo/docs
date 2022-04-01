@@ -65,7 +65,7 @@ nav:
           - 'Installation manual': variants/tuxedo_ibs15/installation.md
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing_configuration.md
+          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing-configuration.md
       - 'NovaCustom NS5X':
           - 'Releases': variants/novacustom_ns5x/releases.md
           - 'Building manual': variants/novacustom_ns5x/building.md
@@ -144,7 +144,7 @@ nav:
           - 'Overview': unified-test-documentation/overview.md
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
           - 'Test Matrix': unified-test-documentation/test-matrix.md
-          - 'Dasharo Compatibility':
+          - 'Dasharo compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
               - 'Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
@@ -174,6 +174,10 @@ nav:
               - 'Embedded Controller and Super I/O initialization ': unified-test-documentation/dasharo-compatibility/31G-ec-and-superio.md
               - 'Nvidia Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
               - 'Flash write protection': unified-test-documentation/dasharo-compatibility/31P-flash-write-protection.md
+              - 'Custom Network Boot entries': unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
+              - 'M.2 automatic SATA/NVMe switching support': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
+              - 'miniPCIe slot verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
+              - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md

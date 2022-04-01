@@ -15,7 +15,7 @@
 
 **Test description**
 
-This test verifies that FreeBSD distribution could be installed on 
+This test verifies that FreeBSD distribution could be installed on
 the DUT and works properly.
 
 **Test configuration data**

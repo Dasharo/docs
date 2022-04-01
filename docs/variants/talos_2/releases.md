@@ -46,13 +46,13 @@ For details about our release process please read
 [v0.4.1_bootblock_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256
 [v0.4.1_bootblock_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_bootblock_v0.4.1.signed.ecc.sha256.sig
 
-[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc][v0.4.1_coreboot_rom]{ .md-button }
-[sha256][v0.4.1_coreboot_sha]{ .md-button }
-[sha256.sig][v0.4.1_coreboot_sig]{ .md-button }
+[dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc][v0.4.1_rom]{ .md-button }
+[sha256][v0.4.1_sha]{ .md-button }
+[sha256.sig][v0.4.1_sig]{ .md-button }
 
-[v0.4.1_coreboot_rom]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc
-[v0.4.1_coreboot_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256
-[v0.4.1_coreboot_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256.sig
+[v0.4.1_rom]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc
+[v0.4.1_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256
+[v0.4.1_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_coreboot_v0.4.1.rom.signed.ecc.sha256.sig
 
 [dasharo_talos_2_zImage_v0.4.1.bundled][v0.4.1_bundled_rom]{ .md-button }
 [sha256][v0.4.1_bundled_sha]{ .md-button }

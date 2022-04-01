@@ -92,7 +92,7 @@ Available write protection ranges:
 
 **Test description**
 
-This test aims to verify whether there is a possibility to set and erase 
+This test aims to verify whether there is a possibility to set and erase
 hardware write protection on the DUT.
 
 **Test configuration data**
@@ -119,7 +119,7 @@ hardware write protection on the DUT.
 
 **Expected result**
 
-1. The output of the command should contain the information about protection 
+1. The output of the command should contain the information about protection
     mode:
 
     ```bash
@@ -156,5 +156,5 @@ sudo ./cbmem -T
 
 **Expected result**
 
-The output of the command should contain the information about duration of 
+The output of the command should contain the information about duration of
 all boot stages.

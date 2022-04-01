@@ -153,7 +153,7 @@ and the card powers on only while it's used.
 
 1. Proceed with the [Common](#common) section.
 1. Install the driver for the graphics card (GTX 1650) from
-    [the official page](nvidia.com).
+    [the official page](https://www.nvidia.com/).
 1. Download and extract `gputest` from [Geeks3D](geeks3d.com/gputest).
 
 **Test steps**
