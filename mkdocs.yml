@@ -3,6 +3,7 @@ site_name: Dasharo Universe
 site_url: https://docs.dasharo.com/
 theme:
   name: material
+  custom_dir: overrides
   favicon: images/favicon.png
   logo: images/dasharo-logo.png
 extra_css:
@@ -15,6 +16,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - attr_list
+  - meta
   - toc:
       toc_depth: 2
   - pymdownx.tasklist:
@@ -56,13 +58,25 @@ nav:
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/clevo_nv41/openness_analysis.md
           - 'LVFS report': variants/clevo_nv41/lvfs_report.md
+          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
           - 'Installation manual': variants/tuxedo_ibs15/installation.md
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing-configuration.md
+          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing_configuration.md
+      - 'NovaCustom NS5X':
+          - 'Releases': variants/novacustom_ns5x/releases.md
+          - 'Building manual': variants/novacustom_ns5x/building.md
+          - 'Installation manual': variants/novacustom_ns5x/installation.md
+          - 'Post-installation steps': variants/novacustom_ns5x/post_install.md
+          - 'Logo customization': common-coreboot-docs/custom_logo.md
+      - 'Protectli VP4620':
+          - 'Releases': variants/protectli_vp4620/releases.md
+          - 'Building manual': variants/protectli_vp4620/building-manual.md
+          - 'Installation manual': variants/protectli_vp4620/installation-manual.md
+          - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
@@ -151,17 +165,22 @@ nav:
               - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
               - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
               - 'Platform suspend and resume': unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+              - 'FreeBSD support': unified-test-documentation/dasharo-compatibility/307-freebsd-support.md
+              - 'Debian Stable and Ubuntu LTS support': unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
               - 'USB detection': unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
               - 'USB booting': unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
               - 'coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - 'Custom Fan Curve': unified-test-documentation/dasharo-compatibility/S30-fan-control.md
               - 'Embedded Controller and Super I/O initialization ': unified-test-documentation/dasharo-compatibility/31G-ec-and-superio.md
               - 'Nvidia Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
+              - 'Flash write protection': unified-test-documentation/dasharo-compatibility/31P-flash-write-protection.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
+          - 'Dasharo performance':
+              - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
@@ -174,4 +193,6 @@ nav:
       - 'Marketing': value-prop/marketing.md
     # - 'Certification Program':
     #     - 'Overview': value-prop/certification-program/overview.md
+  - 'Projects':
+      - 'TrenchBoot Anti Evil Maid': projects/trenchboot-aem.md
   - 'Glossary': glossary.md

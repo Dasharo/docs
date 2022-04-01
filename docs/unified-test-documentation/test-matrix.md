@@ -13,14 +13,16 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | Coreboot base port                                | CBP           | All                                  |
+| 1.   | coreboot base port                                | CBP           | All                                  |
 | 2.   | SMBIOS                                            | DMI           | DMI002.001, DMI003.001               |
-| 3.   | Coreboot fan control                              | CFN           | All                                  |
+| 3.   | coreboot fan control                              | CFN           | All                                  |
 | 4.   | Custom boot menu key                              | CBK           | All                                  |
 | 5.   | Debian Stable and Ubuntu LTS support              | LBT           | LBT001.002                           |
 | 6.   | Network boot                                      | PXE           | All                                  |
 | 7.   | USB detect                                        | USB           | All                                  |
 | 8.   | USB boot                                          | UBB           | All                                  |
+| 9.   | Platform suspend and resume                       | SUSP          | All                                  |
+| 10.  | Flash write protection                            | FWP           | All                                  |
 
 ### Module: Dasharo security
 
@@ -28,6 +30,12 @@ described in this documentation are dedicated to the given platform
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | TPM Support                                       | TPM           | TPM001.001                           |
 | 2.   | Verified Boot support                             | VBO           | VBO001.001, VBO002.001, VBO003.001   |
+
+### Module: Dasharo performance
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | coreboot bring up time measurement                | CBMEM         | All                                  |
 
 ## Test matrix - Clevo NV41MZ
 
@@ -108,7 +116,7 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | Coreboot base port                                | CBP           | CBP001.001, CBP002.001, CBP004.001   |
+| 1.   | coreboot base port                                | CBP           | CBP001.001, CBP002.001, CBP004.001   |
 
 ## Test matrix - Clevo NS50
 
@@ -143,3 +151,33 @@ described in this documentation are dedicated to the given platform
 | 2.   | Verified Boot support                             | VBO           | VBO001.002, VBO002.002               |
 | 3.   | Measured Boot support                             | MBO           | All                                  |
 | 4.   | Secure Boot support                               | SBO           | All                                  |
+
+## Test matrix - Protectli VP4620
+
+### Module: Dasharo compatibility
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | Memory HCL                                        | HCL           | All                                  |
+| 2.   | UEFI compatible interface                         | EFI           | EFI001.001                           |
+| 3.   | Display ports                                     | DSP           | DSP002.001,DSP002.003, DSP003.001, DSP003.003 |
+| 4.   | Network boot                                      | PXE           | All                                  |
+| 5.   | NVMe support                                      | NVM           | NVM001.001, NVM001.002               |
+| 7.   | Custom logo                                       | CLG           | All                                  |
+| 8.   | Custom boot menu key                              | CBK           | All                                  |
+| 9.   | USB HID and MSC Support                           | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 10.  | FreeBSD support                                   | BSD           | All                                  |
+| 11.  | Debian Stable and Ubuntu LTS support              | LBT           | All                                  |
+| 12.  | USB-C/Thunderbolt                                 | UTC           | UTC004.001                           |
+| 13.  | M.2 WiFi/Bluetooth                                | WLE           | WLE001.001, WLE002.001, WLE003.001   |
+| 14.  | miniPCIe LTE/WiFi/Bluetooth                       | MWL           | MWL004.001                           |
+| 15.  | eMMC support                                      | MMC           | MMC001.001                           |
+| 16.  | SMBIOS                                            | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+| 17.  | Custom network boot entries                       | CNB           | CNB001.002                           |
+| 18.  | M.2 automatic SATA/NVMe switching support         | MSS           | MSS001.001                           |
+
+### Module: Dasharo security
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | TPM Support                                       | TPM           | TPM001.001                           |

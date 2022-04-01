@@ -1,4 +1,4 @@
-# Dasharo for Tuxedo IBS15 Gen6 - Installation manual
+# Dasharo for NovaCustom NS5X - Installation manual
 
 ## Intro
 
@@ -64,7 +64,7 @@ Steps for initial Dasharo installation:
 - Disconnect the CMOS battery (2)
 - Attach an external programmer with a SOIC-8 clip to the SPI flash chip (3)
 - Execute the following command, replaceing [path] with the path to the firmware
-  image you want to flash, e.g. `tuxedo_ibs15_full_v1.0.0.rom`
+  image you want to flash, e.g. `novacustom_ns5x_full_v1.0.0.rom`
 
   ```bash
   # flashrom -p ch341a_spi -w [path]
