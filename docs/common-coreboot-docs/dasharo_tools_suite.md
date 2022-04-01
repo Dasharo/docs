@@ -33,5 +33,6 @@ downgrade, or reinstall your firmware.
 To update your firmware to the latest version:
 
 ```bash
-fwupdmgr update
+$ fwupdmgr refresh
+$ fwupdmgr update
 ```
