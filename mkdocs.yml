@@ -38,7 +38,6 @@ nav:
           - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
           - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
-          - 'Dasharo Compatibility Test Specification': variants/asus_kgpe_d16/dasharo-compatibility/index.md
       - 'Talos II':
           - 'Releases': variants/talos_2/releases.md
           - 'Building manual': variants/talos_2/building-manual.md
@@ -130,6 +129,7 @@ nav:
       - 'Dasharo Test Specification':
           - 'Overview': unified-test-documentation/overview.md
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
+          - 'Test Matrix': unified-test-documentation/test-matrix.md
           - 'Dasharo Compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
