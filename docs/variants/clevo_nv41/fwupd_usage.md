@@ -122,6 +122,16 @@ using different distribution, you might need to
 1. Disable Secure Boot. To do this you can follow steps described in
    [Secure Boot test](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/).
 
+1. Refresh the fwupd database:
+
+    ```bash
+    $ sudo fwupdmgr refresh
+    Updating lvfs
+    Downloading…             [***************************************]
+    Downloading…             [***************************************]
+    Successfully downloaded new metadata: 1 local device supported
+    ```
+
 1. Use the following command to update firmware with fwupd:
 
     _Note: You may be asked which device to update. If you see a prompt, select
