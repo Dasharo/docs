@@ -64,7 +64,8 @@ initialized and can be detected by the operating system
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
-1. Install the driver for the graphics card (GTX 1650) from [the official page](nvidia.com)
+1. Install the driver for the graphics card (GTX 1650) from
+    [the official page](https://www.nvidia.com/).
 
 **Test steps**
 
@@ -77,7 +78,7 @@ initialized and can be detected by the operating system
 
 1. The list should contain the NVIDIA graphics card present in the system:
 
-![Device Manager](../../../images/nvidia_win10.png)
+![Device Manager](../../images/nvidia_win10.png)
 
 ### NVI002.001 NVIDIA Graphics power management (Ubuntu 20.04)
 
@@ -163,7 +164,7 @@ and the card powers on only while it's used.
 1. Open the system tray located in the bottom right corner of the screen
    and locate the GPU activity icon:
 
-![GPU activity icon](../../../images/gpu_activity_win10.png)
+![GPU activity icon](../../images/gpu_activity_win10.png)
 
 1. Open the previously extracted gputest directory and open the `GPUTest_GUI`
    application.
