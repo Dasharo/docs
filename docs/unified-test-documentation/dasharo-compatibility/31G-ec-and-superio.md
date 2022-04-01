@@ -1308,12 +1308,12 @@ the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the RGB keyboard toggle hotkey twice and note the result each time
+1. Press the RGB keyboard toggle hotkey twice and note the result each time.
 
 **Expected result**
 
-1. Pressing the button once should disable the keyboard backlight
-1. Pressing the button again should re-enable the keyboard backlight
+1. Pressing the button once should disable the keyboard backlight.
+1. Pressing the button again should re-enable the keyboard backlight.
 
 ### ECR021.002 Keyboard (function key: RGB keyboard toggle) in OS (Windows 11)
 
@@ -1336,12 +1336,12 @@ the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the RGB keyboard toggle hotkey twice and note the result each time
+1. Press the RGB keyboard toggle hotkey twice and note the result each time.
 
 **Expected result**
 
-1. Pressing the button once should disable the keyboard backlight
-1. Pressing the button again should re-enable the keyboard backlight
+1. Pressing the button once should disable the keyboard backlight.
+1. Pressing the button again should re-enable the keyboard backlight.
 
 ### ECR022.001 RGB keyboard next color FN key in OS (Ubuntu 20.04)
 
@@ -1365,12 +1365,12 @@ by the operating system.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
 1. Press the RGB keyboard color hotkey repeatedly until the keyboard cycles
-   through all color modes
+   through all color modes.
 
 **Expected result**
 
-1. Pressing the button once should switch the keyboard color
-1. All color modes according to product documentation should be accessible
+1. Pressing the button once should switch the keyboard color.
+1. All color modes according to product documentation should be accessible.
 
 ### ECR022.002 RGB keyboard next color FN key in OS (Windows 11)
 
@@ -1394,12 +1394,12 @@ by the operating system.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
 1. Press the RGB keyboard color hotkey repeatedly until the keyboard cycles
-   through all color modes
+   through all color modes.
 
 **Expected result**
 
-1. Pressing the button once should switch the keyboard color
-1. All color modes according to product documentation should be accessible
+1. Pressing the button once should switch the keyboard color.
+1. All color modes according to product documentation should be accessible.
 
 ### ECR023.001 RGB keyboard brightness down FN key in OS (Ubuntu 20.04)
 
@@ -1422,7 +1422,7 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the RGB keyboard brightness down hotkey and note the result
+1. Press the RGB keyboard brightness down hotkey and note the result.
 
 **Expected result**
 
@@ -1449,11 +1449,11 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the RGB keyboard brightness down hotkey and note the result
+1. Press the RGB keyboard brightness down hotkey and note the result.
 
 **Expected result**
 
-1. Pressing the button once should lower the keyboard backlight
+1. Pressing the button once should lower the keyboard backlight.
 
 ### ECR024.001 RGB keyboard brightness up FN key in OS (Ubuntu 20.04)
 
@@ -1476,11 +1476,11 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the RGB keyboard brightness up hotkey and note the result
+1. Press the RGB keyboard brightness up hotkey and note the result.
 
 **Expected result**
 
-1. Pressing the button once should increase the keyboard backlight
+1. Pressing the button once should increase the keyboard backlight.
 
 ### ECR024.002 RGB keyboard keyboard brightness up FN key in OS (Windows 11)
 
@@ -1503,8 +1503,8 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. Press the RGB keyboard brightness up hotkey and note the result
+1. Press the RGB keyboard brightness up hotkey and note the result.
 
 **Expected result**
 
-1. Pressing the button once should increase the keyboard backlight
+1. Pressing the button once should increase the keyboard backlight.
