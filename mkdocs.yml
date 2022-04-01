@@ -40,7 +40,6 @@ nav:
           - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
           - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
-          - 'Dasharo Compatibility Test Specification': variants/asus_kgpe_d16/dasharo-compatibility/index.md
       - 'Talos II':
           - 'Releases': variants/talos_2/releases.md
           - 'Building manual': variants/talos_2/building-manual.md
@@ -59,20 +58,25 @@ nav:
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/clevo_nv41/openness_analysis.md
           - 'LVFS report': variants/clevo_nv41/lvfs_report.md
-          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo-tools-suite.md
+          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
           - 'Installation manual': variants/tuxedo_ibs15/installation.md
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing_configuration.md
+          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing-configuration.md
       - 'NovaCustom NS5X':
           - 'Releases': variants/novacustom_ns5x/releases.md
           - 'Building manual': variants/novacustom_ns5x/building.md
           - 'Installation manual': variants/novacustom_ns5x/installation.md
           - 'Post-installation steps': variants/novacustom_ns5x/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
+      - 'Protectli VP4620':
+          - 'Releases': variants/protectli_vp4620/releases.md
+          - 'Building manual': variants/protectli_vp4620/building-manual.md
+          - 'Installation manual': variants/protectli_vp4620/installation-manual.md
+          - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
@@ -139,6 +143,7 @@ nav:
       - 'Dasharo Test Specification':
           - 'Overview': unified-test-documentation/overview.md
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
+          - 'Test Matrix': unified-test-documentation/test-matrix.md
           - 'Dasharo compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -160,6 +165,7 @@ nav:
               - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
               - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
               - 'Platform suspend and resume': unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+              - 'FreeBSD support': unified-test-documentation/dasharo-compatibility/307-freebsd-support.md
               - 'Debian Stable and Ubuntu LTS support': unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
               - 'USB detection': unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
               - 'USB booting': unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
@@ -168,6 +174,10 @@ nav:
               - 'Embedded Controller and Super I/O initialization ': unified-test-documentation/dasharo-compatibility/31G-ec-and-superio.md
               - 'Nvidia Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
               - 'Flash write protection': unified-test-documentation/dasharo-compatibility/31P-flash-write-protection.md
+              - 'Custom Network Boot entries': unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
+              - 'M.2 automatic SATA/NVMe switching support': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
+              - 'miniPCIe slot verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
+              - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md

@@ -1,6 +1,6 @@
-<img src="images/logo/logo-bar.svg" width="1000" height="500">
+# <img src="images/logo/logo-bar.svg" width="1000" height="500">
 
-## About
+# About
 
 Dasharo is open-source firmware distribution focusing on clean and simple code,
 long-term maintenance, transparent validation, privacy-respecting

@@ -46,9 +46,9 @@ $ docker run -u $UID --rm -it -v $PWD:/home/coreboot/coreboot -w /home/coreboot/
     coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
 ```
 
-*Warning: Do not run `docker` as root. This command should be executed as your
+_Warning: Do not run `docker` as root. This command should be executed as your
 current user. If you're having trouble running `docker` on your user account,
-follow the steps outlined in [Requirements](#requirements).*
+follow the steps outlined in [Requirements](#requirements)._
 
 You should be inside the Docker container. Now run following script to build
 the image:

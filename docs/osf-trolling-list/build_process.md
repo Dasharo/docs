@@ -13,8 +13,8 @@ This is because knowing hashes of firmware components, we can calculate expected
 TPM PCRs values. By knowing good PCR values and being able to predict further
 values after firmware update, we are gaining the following advantages:
 
-* We can easily confirm if the firmware is valid by reading TPM PCRs and compare to
-  reference integrity measures (RIM), RIM can be calculated by build exactly
+* We can easily confirm if the firmware is valid by reading TPM PCRs and compare
+  to reference integrity measures (RIM), RIM can be calculated by build exactly
   the same version of OSF.
 
     **NOTE**: Please note that depending on your threat model using TPM chip with
@@ -87,8 +87,8 @@ Some more detailed notes related to `coreboot-sdk` issues are presented below.
 3. `coreboot-sdk` is based on moving target Debian sid. It is close to impossible
    to build the same Docker images at 2 different points in time.
 4. coreboot-sdk enforce given version of ACPI spec - this may not always be
-   a good thing to use the most recent compiler and update code accordingly since it
-   can easily break OSes.
+   a good thing to use the most recent compiler and update code accordingly
+   since it can easily break OSes.
 
 #### Why we care?
 
@@ -123,7 +123,8 @@ Open-source firmware development and build environment SHOULD have:
    of Yocto or Buildroot. Another path could be Nix or Guix, which is currently
    pursued in the community [OSFW #guix-buildstack channel](http://osfw.slack.com/)
    - this is a private channel; feel free to ping anyone from 3mdeb Team to join.
-2. coreboot toolchain is built by its own build system, which would be hard to couple with Dockerfile or something else.
+2. coreboot toolchain is built by its own build system, which would be hard to
+   couple with Dockerfile or something else.
 3. Docker images can be signed using `docker trust` commands as described
    [here](https://docs.docker.com/engine/security/trust/#signing-images-with-docker-content-trust).
 4. Other idea would be to use `wget` and `dpkg -i` for every needed package in

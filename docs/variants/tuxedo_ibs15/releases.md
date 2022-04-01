@@ -6,8 +6,12 @@ Tuxedo IBS15
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Tuxedo IBS15 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/7IPf_aUHR
-){ .md-button .md-button--primary .center }
+<center>
+
+[Subscribe to Tuxedo IBS15 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/7IPf_aUHR)
+{ .md-button .md-button--primary .center }
+
+</center>
 
 ## v1.0.0 - 2022-03-15
 

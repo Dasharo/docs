@@ -1,6 +1,7 @@
 # muxPi board validation
 
-> In case of any troubles, first it is recommended to read [comprehend Theory of Operations](theory-of-operations.md) for muxPi devices.
+> In case of any troubles, first it is recommended to read
+  [comprehend Theory of Operations](theory-of-operations.md) for muxPi devices.
 
 ## Necessary components preparation
 
@@ -17,8 +18,10 @@
 ## NanoPi setup
 
 1. Prepare microSD card (minimum 8GB) for NanoPi NEO operating system.
-1. Download and extract image - [link](https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download)
-1. Flash image into microSD card ([Etcher](https://www.balena.io/etcher/) tool could be helpful)
+1. Download and extract image -
+   [link](https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download)
+1. Flash image into microSD card ([Etcher](https://www.balena.io/etcher/)
+   tool could be helpful)
 
 ## muxPi setup
 
@@ -44,9 +47,9 @@ root user `pi` with password `pi`.
 
 ## Validation steps
 
-#### 1. Install WiringNP
+### 1. Install WiringNP
 
-```
+```bash
  git clone https://github.com/friendlyarm/WiringNP
  cd WiringNP/
  chmod 755 build
@@ -55,13 +58,13 @@ root user `pi` with password `pi`.
 
 * verify installation:
 
-```
+```bash
 gpio readall
 ```
 
 * If your installation is successful the following messages will show up:
 
-```
+```bash
  +-----+-----+----------+------+---+-NanoPi-NEO--+------+----------+-----+-----+
  | BCM | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | BCM |
  +-----+-----+----------+------+---+----++----+---+------+----------+-----+-----+
@@ -128,7 +131,7 @@ progress). To flash muxPi's microcontroller, follow steps below:
 
 From now on, muxPi's LCD should light on and display:
 
-```
+```bash
 *  MuxPi  *
 HW: 1.0 SW: 0.5
 ```
@@ -142,38 +145,38 @@ HW: 1.0 SW: 0.5
    muxPi board.
 3. To enable microSD card reader, connect to Cortex from MuxPi via minicom:
 
-```
+```bash
 minicom -D /dev/ttyS2
 ```
 
 and enter in minicom following commands:
 
-```
+```bash
 ts
 ```
 
 and then
 
-```
+```bash
 dut
 ```
 
 > NOTE: Each command should return `OK`
 
-4. Connect IDC-uSD adapter to a SD card adapter plugged into your machine
+1. Connect IDC-uSD adapter to a SD card adapter plugged into your machine
 > NOTE: You need to force IDC-uSD adapter to insert into SD card adapter
 
-5. (On your machine) Check if device is connected: `dmesg -w`
+1. (On your machine) Check if device is connected: `dmesg -w`
 should help. You should also be able to read and write
 data to uSD card from file manager.
 
-6. Flash image into microSD card (for RPI or other device
+2. Flash image into microSD card (for RPI or other device
 bootable form SD card.)
 
-7. Disconnect uSD adapter form a SD card adapter and connect
+3. Disconnect uSD adapter form a SD card adapter and connect
 to the device (e.g. RPI).
 
-8. Connect device to the power supply, now device should boot
+4. Connect device to the power supply, now device should boot
 via IDC-uSD adapter.
 
 #### 4. Screening
@@ -185,7 +188,7 @@ via IDC-uSD adapter.
 
 Help output:
 
-```
+```bash
 help --- This help
 version --- Display version of the firmware
 echo --- Get (no arguments) or set ('on' or 'off') echo on serial "console": echo [on|off]. The default value is on.
@@ -230,4 +233,4 @@ Minicom quick guide:
 
 ---
 
-*Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)*
+_Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)_
