@@ -16,7 +16,7 @@ using different distribution, you might need to
 
     ```bash
     $ wget --content-disposition \
-         https://cloud.3mdeb.com/index.php/s/FIXME/download \
+         https://cloud.3mdeb.com/index.php/s/kzDYbk35FDcn8WD/download \
          https://cloud.3mdeb.com/index.php/s/FIXME/download \
          https://cloud.3mdeb.com/index.php/s/FIXME/download
     $ unzip fwupd-novacustom-v1.1.0.zip
