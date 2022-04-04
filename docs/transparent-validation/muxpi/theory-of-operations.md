@@ -23,46 +23,50 @@ There are two methods to setup serial communication with muxPi:
 
 * with microUSB<->USB cable
 
-![](../../images/muxPi-board-bottom.png)
+    ![](../../images/muxPi-board-bottom.png)
 
 * with UART/USB converter
 
-Attach USB/UART converter to muxPi's left addon female header (`GND`, `DBG UART
-RX`, `DBG UART TX` on pinout image below):
+    Attach USB/UART converter to muxPi's left addon female header (`GND`,
+     `DBG UART RX`, `DBG UART TX` on pinout image below):
 
-![](../../images/muxPi-addon-left.png)
+    ![](../../images/muxPi-addon-left.png)
 
-and plug USB connector to the computer. Next, open connection in PC terminal by
-typing: `sudo minicom -D /dev/ttyUSB0 -o -b 115200`.
+    and plug USB connector to the computer. Next, open connection in PC
+    terminal by typing:
 
-> `/dev/ttyUSB0` is example device - check whether `USB0` is the correct one
+    ```bash
+    sudo minicom -D /dev/ttyUSB0 -o -b 115200.
+    ```
+
+    > `/dev/ttyUSB0` is example device - check whether `USB0` is the correct one
 
 #### Jumpers configuration
 
-![](../../images/muxPi-jumpers.png)
+![](../../images/muxpi1.4_jumpers.png)
 
-* UART - pins `Vloc` & `VCC` - if jumped then internal voltage generator is used
-  as voltage reference for data lines and powers up target device. If open then
-  voltage reference for data lines comes from target device and internal voltage
-  generator is unused.
+* UART - pins `Vloc` & `VCC` - if jumped then internal voltage generator is
+    used as voltage reference for data lines and powers up target device. If
+    open then voltage reference for data lines comes from target device and
+    internal voltage generator is unused.
 * USB/ETH - determines what USB data lines of one USB HUB are connected to. If
-  first two pins are jumped then USB lines are connected to add-on connector. If
-  last two pins are jumped then these lines are connected tu USB<->ETH converter.
-  If none of the pins are jumped then the only connection is the upper socket of
-  double connector.
+    first two pins are jumped then USB lines are connected to add-on connector.
+    If last two pins are jumped then these lines are connected tu USB<->ETH
+    converter. If none of the pins are jumped then the only connection is the
+     upper socket of double connector.
 
-> NOTE: The upper socket of double USB-A connector must be left empty if
-USB<->ETH is selected or add-on connector is selected and something is connected
-to these data lines on the addon!
-> NOTE: Both jumpers must be placed in the same position!
+    > NOTE: The upper socket of double USB-A connector must be left empty if
+    USB<->ETH is selected or add-on connector is selected and something is
+    connected to these data lines on the addon!
+    > NOTE: Both jumpers must be placed in the same position!
 
 * VDD - if this pins are jumped then the VDD and 3V3 are always on. If this is
-  left open then VDD and 3V3 are controlled by NanoPi. The usage example is
-  setting value of USB ID potentiometer (which is located underneath NanoPi).
-  But when NanoPi NEO is removed there is no way to turn on power for
-  microcontroller (that is when VDD jumper is helpful).
+    left open then VDD and 3V3 are controlled by NanoPi. The usage example is
+    setting value of USB ID potentiometer (which is located underneath NanoPi).
+    But when NanoPi NEO is removed there is no way to turn on power for
+    microcontroller (that is when VDD jumper is helpful).
 
-> NOTE: If there is no particular need then leave this jumper open.
+    > NOTE: If there is no particular need then leave this jumper open.
 
 #### Power supply
 
@@ -77,11 +81,14 @@ then 1A assuming no addons connected.
 To check which IP address has been assigned, type in terminal: `ifconfig`.
 
 OPTIONAL STEP:
-To set static IP, create following file:
+To set static IP, create the following file:
 
-`sudo vi /etc/NetworkManager/NetworkManager.conf`
+```bash
+sudo vi /etc/NetworkManager/NetworkManager.conf
+```
 
-Edit NetworkManger.conf and set the value of "managed" under "ifupdown" to false:
+Edit NetworkManger.conf and set the value of "managed" under "ifupdown" to
+false:
 
 ```bash
 [ifupdown]
@@ -90,7 +97,9 @@ managed=false
 
 Add network setting to `/etc/network/interfaces`:
 
-`sudo vi /etc/network/interfaces`
+```bash
+sudo vi /etc/network/interfaces
+```
 
 Here is sample of `/etc/network/interfaces`:
 
@@ -136,7 +145,9 @@ chmod 755 build
 
 Verify installation:
 
-`gpio readall`
+```bash
+gpio readall
+```
 
 If your installation is successful the following messages will show up:
 
@@ -235,11 +246,11 @@ Prerequisites: `git`, `go (1.10+)`
 1. Download dependencies: `go get ./...`
 1. Build binaries:
 
-```bash
-mkdir -p bin
-GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/stm ./cmd/stm/
-GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/fota ./cmd/fota/
-```
+    ```bash
+    mkdir -p bin
+    GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/stm ./cmd/stm/
+    GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/fota ./cmd/fota/
+    ```
 
 #### Install muxpi-power
 
@@ -247,17 +258,17 @@ GOARCH=arm GOOARM=7 GOOS=linux go build -o bin/fota ./cmd/fota/
 
 1. Copy muxpi-power files (change `XXX` to proper values):
 
-```bash
-scp power/muxpi-power root@192.168.4.XXX:/usr/bin
-scp power/systemd/muxpi-power.service root@192.168.4.XXX:/etc/systemd/system
-```
+    ```bash
+    scp power/muxpi-power root@192.168.4.XXX:/usr/bin
+    scp power/systemd/muxpi-power.service root@192.168.4.XXX:/etc/systemd/system
+    ```
 
 1. On your MuxPi device, enable and start muxpi-power service:
 
-```bash
-systemctl enable muxpi-power.service
-systemctl start muxpi-power.service
-```
+    ```bash
+    systemctl enable muxpi-power.service
+    systemctl start muxpi-power.service
+    ```
 
 #### Install stm
 
@@ -265,28 +276,28 @@ systemctl start muxpi-power.service
 
 1. Copy stm binary and systemd files (change `XXX` to proper values):
 
-```bash
-scp bin/stm_armv7 root@192.168.4.XXX:/usr/bin/stm
-scp stm/systemd/stm.service root@192.168.4.XXX:/etc/systemd/system
-scp stm/systemd/stm-user.socket root@192.168.4.XXX:/etc/systemd/system
-scp stm/systemd/stm.socket root@192.168.4.XXX:/etc/systemd/system
-scp stm/stm root@192.168.4.XXX:/usr/local/bin/stm
-```
+    ```bash
+    scp bin/stm_armv7 root@192.168.4.XXX:/usr/bin/stm
+    scp stm/systemd/stm.service root@192.168.4.XXX:/etc/systemd/system
+    scp stm/systemd/stm-user.socket root@192.168.4.XXX:/etc/systemd/system
+    scp stm/systemd/stm.socket root@192.168.4.XXX:/etc/systemd/system
+    scp stm/stm root@192.168.4.XXX:/usr/local/bin/stm
+    ```
 
 1. On your MuxPi device - create group stm and add your user:
 
-```bash
-groupadd stm
-usermod -aG stm root
-```
+    ```bash
+    groupadd stm
+    usermod -aG stm root
+    ```
 
 1. On your MuxPi device - enable stm sockets:
 
-```bash
-systemctl daemon-reload
-systemctl enable stm.socket stm-user.socket
-systemctl start stm.socket stm-user.socket
-```
+    ```bash
+    systemctl daemon-reload
+    systemctl enable stm.socket stm-user.socket
+    systemctl start stm.socket stm-user.socket
+    ```
 
 #### Install fota
 
@@ -294,18 +305,18 @@ systemctl start stm.socket stm-user.socket
 
 1. Copy fota binary to MuxPi device (change `XXX` to proper values):
 
-```bash
-scp bin/fota_armv7 root@192.168.4.XXX:/usr/bin/fota
-```
+    ```bash
+    scp bin/fota_armv7 root@192.168.4.XXX:/usr/bin/fota
+    ```
 
 1. On your MuxPi device - create a symlink from `/usr/local/bin/fota` to
 `/usr/bin/fota/`. Only `/usr/local/bin/fota/` should be used by software
 interfacing with MuxPi. This allows to swap fota implementation to your
 preferred tool:
 
-```bash
-ln -s /usr/bin/fota /usr/local/bin/fota
-```
+    ```bash
+    ln -s /usr/bin/fota /usr/local/bin/fota
+    ```
 
 ## DUT setup
 
@@ -340,16 +351,17 @@ required.
   DUT, or anything else we are connecting to, has not power pin. Nn such case
   voltage generator must be set to desired value and activated. Command "uart
   3300" must be sent to Cortex-M0, where 3300 is desired voltage given in
-  millivolts. The voltage range is from 0 to 5000mv. Pins `Vloc` an `VCC` must be
-  connected eachother. Typical jumper is a perfect connector for this purpose.
-  `Vloc` may be also used to power up additional converter RS232C. For example if
-  converter to RS232C (+/-12v) must be used then it may be powered from `Vloc` pin.
-* `VCC` - power of DUT. If dut has no such power pin then it must be connected to
-  Vloc and vloc must be configured properly as stated above.
-* `DUT RX` - receiver data line in the DUT - through this line MuxPi sends data to
-  the DUT
-* `DUT TX` - transmitter data line in the DUT - from this line MuxPi reads data form
-  the DUT
+  millivolts. The voltage range is from 0 to 5000mv. Pins `Vloc` an `VCC` must
+  be connected eachother. Typical jumper is a perfect connector for this
+  purpose. `Vloc` may be also used to power up additional converter RS232C. For
+  example if converter to RS232C (+/-12v) must be used then it may be powered
+  from `Vloc` pin.
+* `VCC` - power of DUT. If dut has no such power pin then it must be connected
+to Vloc and vloc must be configured properly as stated above.
+* `DUT RX` - receiver data line in the DUT - through this line MuxPi sends data
+to the DUT
+* `DUT TX` - transmitter data line in the DUT - from this line MuxPi reads data
+form the DUT
 * `DUT CTS` - Clear To Send - hardware handshake
 * `DUT RTS` - Ready To Send - hardware handshake
 
@@ -360,8 +372,8 @@ Example configuration for OrangePi (DUT) uart connection:
 1. Connect GND, RX and TX (without crossing).
 1. Open connection: `screen /dev/ttyS1 115200,cs8,ixon,ixoff`
 
-> NOTE: `RX`, `TX`, `XTS`, `RTS` are crossed on the board so you don't need to
-  cross the wires by yourself.
+> NOTE: `RX`, `TX`, `XTS`, `RTS` are crossed on the board so you don't need
+    to cross the wires by yourself.
 > NOTE: A device powered from `Vloc` mustn't draw more than 50mA of current.
 
 #### Add-ons
@@ -369,7 +381,7 @@ Example configuration for OrangePi (DUT) uart connection:
 Add-ons headers are extensions for attaching new shields or simply using NanoPi
 and CortexM0 interfaces:
 
- ![](../../images/muxPi-addon-left.png)
+![](../../images/muxPi-addon-left.png)
 
 * `5V` - power supply - not switchable - always present
 * `3V3` - switchable (controlled by NanoPi) 3.3V power supply
@@ -397,10 +409,10 @@ and CortexM0 interfaces:
   dealing with them.
 * `GND` - ground lines
 
-NOTE: PI GPIO 1 has additional special function. It is connected to Cortex-M0
-Boot0 pin which enables firmware download mode during microcontroller boot.
-1 - enables this mode while 0 disables it. So it is useless as GPIO when the
-microcontroller is being booted.
+>NOTE: PI GPIO 1 has additional special function. It is connected to Cortex-M0
+    Boot0 pin which enables firmware download mode during microcontroller boot.
+    1 - enables this mode while 0 disables it. So it is useless as GPIO when
+    the microcontroller is being booted.
 
 #### DyPers
 
@@ -456,7 +468,7 @@ and enter in minicom following commands:
 ts
 ```
 
-and then
+and then:
 
 ```bash
 dut
@@ -480,7 +492,7 @@ User can simply open SSH connection by (password: `fa`):
 * or use serial connection mentioned [here](#serial-communication)
 
 > NOTE: Connecting with MuxPi through serial will automatically login as non
-root user `pi` with password `pi`.
+    root user `pi` with password `pi`.
 
 #### User interface
 
