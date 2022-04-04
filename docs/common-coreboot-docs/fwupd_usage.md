@@ -16,21 +16,21 @@ using different distribution, you might need to
 
     ```bash
     $ wget --content-disposition \
-         https://cloud.3mdeb.com/index.php/s/RHRtf72d6MoMdy2/download \
-         https://cloud.3mdeb.com/index.php/s/DqXD2So3eYrNf2y/download \
-         https://cloud.3mdeb.com/index.php/s/FqH7akAq6XPaweF/download
-    $ unzip fwupd-novacustom-v1.0.2.zip
+         https://cloud.3mdeb.com/index.php/s/FIXME/download \
+         https://cloud.3mdeb.com/index.php/s/FIXME/download \
+         https://cloud.3mdeb.com/index.php/s/FIXME/download
+    $ unzip fwupd-novacustom-v1.1.0.zip
     ```
 
-1. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.0.2.zip`):
+1. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.1.0.zip`):
 
     ```bash
     $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
     $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/oss_master_key/open-source-software/3mdeb-open-source-software-master-key.asc
     $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc
 
-    $ sha256sum -c fwupd-novacustom-v1.0.2.zip.sha256
-    $ gpg -v --verify fwupd-novacustom-v1.0.2.zip.sha256.sig fwupd-novacustom-v1.0.2.zip.sha256
+    $ sha256sum -c fwupd-novacustom-v1.1.0.zip.sha256
+    $ gpg -v --verify fwupd-novacustom-v1.1.0.zip.sha256.sig fwupd-novacustom-v1.1.0.zip.sha256
     ```
 
 1. flashrom packages are located inside `flashrom-1.2-2-3mdeb.zip`:
@@ -39,25 +39,18 @@ using different distribution, you might need to
     $ unzip flashrom-1.2-2-3mdeb.zip
     $ sudo apt install ./flashrom_1.2-2_amd64.deb
     $ sudo apt install ./libflashrom1_1.2-2_amd64.deb
-    $ sudo apt install ./libflashrom-dev_1.2-2_amd64.deb
     ```
 
-1. fwupd packages are located inside `fwupd-1.7.3-3mdeb.zip`:
+1. fwupd packages are located inside `fwupd-1.7.3.3-3mdeb.zip`:
 
     ```bash
-    $ unzip fwupd-1.7.3.2-3mdeb.zip
-    $ sudo apt install ./fwupd_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./fwupd-doc_1.7.3+r70+ge720ed96_all.deb \
-                       ./fwupd-tests_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./gir1.2-fwupd-2.0_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./gir1.2-fwupdplugin-1.0_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./gir1.2-gusb-1.0_0.3.5-1_amd64.deb \
-                       ./libfwupd2_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./libfwupd-dev_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./libfwupdplugin4_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./libfwupdplugin-dev_1.7.3+r70+ge720ed96_amd64.deb \
-                       ./libgusb2_0.3.5-1_amd64.deb \
-                       ./libgusb-dev_0.3.5-1_amd64.deb
+    $ unzip fwupd-1.7.3.3-3mdeb.zip
+    $ sudo apt install fwupd_1.7.4_amd64.deb \
+                       fwupd-doc_1.7.4_all.deb \
+                       gir1.2-fwupd-2.0_1.7.4_amd64.deb \
+                       gir1.2-fwupdplugin-1.0_1.7.4_amd64.deb \
+                       libfwupd2_1.7.4_amd64.deb \
+                       libfwupdplugin4_1.7.4_amd64.deb
     ```
 
 ### Building from source
@@ -98,7 +91,7 @@ using different distribution, you might need to
 1. Obtain source code:
 
     ```bash
-    $ git clone https://github.com/Dasharo/fwupd.git -b v1.7.3.2
+    $ git clone https://github.com/Dasharo/fwupd.git -b v1.7.3.3
     $ cd fwupd
     ```
 
@@ -132,7 +125,7 @@ using different distribution, you might need to
     Successfully downloaded new metadata: 1 local device supported
     ```
 
-1. Use the following command to update firmware with fwupd:
+1. Use the following command to update firmware with fwupd - example for NV41MZ:
 
     _Note: You may be asked which device to update. If you see a prompt, select
     NV4XMB,ME,MZ_
