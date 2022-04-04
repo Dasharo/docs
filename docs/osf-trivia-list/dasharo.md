@@ -21,3 +21,9 @@ it may consist of:
 * Fixes introducing Dasharo SMBIOS/DMI tables format according to [Dasharo
   Product Guidelines](../../dev-proc/smbios-rules)
 * Fixes for submodules building
+
+Those improvements are stored on `dasharo/common-base` branch in relevant
+repositories:
+
+* [Dasharo
+  coreboot](https://github.com/Dasharo/coreboot/tree/dasharo/common-base) fork
