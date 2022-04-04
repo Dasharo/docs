@@ -45,12 +45,12 @@ using different distribution, you might need to
 
     ```bash
     $ unzip fwupd-1.7.3.3-3mdeb.zip
-    $ sudo apt install fwupd_1.7.4_amd64.deb \
-                       fwupd-doc_1.7.4_all.deb \
-                       gir1.2-fwupd-2.0_1.7.4_amd64.deb \
-                       gir1.2-fwupdplugin-1.0_1.7.4_amd64.deb \
-                       libfwupd2_1.7.4_amd64.deb \
-                       libfwupdplugin4_1.7.4_amd64.deb
+    $ sudo apt install ./fwupd_1.7.4_amd64.deb \
+                       ./fwupd-doc_1.7.4_all.deb \
+                       ./gir1.2-fwupd-2.0_1.7.4_amd64.deb \
+                       ./gir1.2-fwupdplugin-1.0_1.7.4_amd64.deb \
+                       ./libfwupd2_1.7.4_amd64.deb \
+                       ./libfwupdplugin4_1.7.4_amd64.deb
     ```
 
 ### Building from source
