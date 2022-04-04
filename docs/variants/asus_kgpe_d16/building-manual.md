@@ -59,5 +59,7 @@ TPM 1.2 and TPM 2.0 support. Now the possible confis to use are:
 - `configs/config.asus_kgpe_d16_vboot_tpm2` - 2MB target with vboot and TPM 2.0
 - `configs/config.asus_kgpe_d16_8M_vboot_tpm12` - 8MB target with vboot and TPM 1.2
 - `configs/config.asus_kgpe_d16_8M_vboot_tpm2` - 8MB target with vboot and TPM  2.0
-- `configs/config.asus_kgpe_d16_16M_vboot_tpm12` - 16MB target with vboot and TPM 1.2
-- `configs/config.asus_kgpe_d16_16M_vboot_tpm2` - 16MB target with vboot and TPM 2.0
+- `configs/config.asus_kgpe_d16_16M_vboot_tpm12` - 16MB target with vboot and
+  TPM 1.2
+- `configs/config.asus_kgpe_d16_16M_vboot_tpm2` - 16MB target with vboot and
+  TPM 2.0

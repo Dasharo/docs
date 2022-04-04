@@ -6,7 +6,8 @@ Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR){ .md-button .md-button--primary .center }
+[Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR)
+{ .md-button .md-button--primary .center }
 
 ## Unreleased
 
@@ -56,9 +57,11 @@ Software BOM:
 
 ### Binaries
 
-[Dell OptiPlex 7010/9010 Dasharo](#){ .md-button } [SHA256](#){ .md-button } [SHA256.sig](#){ .md-button }
+[Dell OptiPlex 7010/9010 Dasharo](TBD){ .md-button }
+[SHA256](TBD){ .md-button }
+[SHA256.sig](TBD){ .md-button }
 
-[All in one zip](#){ .md-button }
+[All in one zip](TBD){ .md-button }
 
 ### SBOM (Software Bill of Materials)
 

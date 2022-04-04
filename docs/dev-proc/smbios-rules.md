@@ -10,15 +10,16 @@ for Dasharo developers.
 
 ### Vendor field
 
-The Vendor field, for firmware with initial release date after 13 January 2021, is set as follows:
+The Vendor field, for firmware with initial release date after 13 January 2021,
+is set as follows:
 
-```
+```bash
 3mdeb
 ```
 
 For firmware with initial release date before 13 January 2021:
 
-```
+```bash
 3mdeb Embedded Systems Consulting
 ```
 
@@ -35,10 +36,11 @@ Dasharo ([major_framework]+[minor_framework]) v[version]
 - `minor_framework` is the secondary framework, a supporting component for the
   primary framework, e.g. a coreboot payload. May not always be used, e.g. if
   `edk2` is used as the primary framework.
-- `version` means version according to official [Dasharo Versioning](../versioning) documentation.
+- `version` means version according to official
+  [Dasharo Versioning](../versioning) documentation.
 
-*For [TianoCore UEFIPayloadPkg](https://github.com/Dasharo/edk2/tree/workstation/master/UefiPayloadPkg),
-we use the simpler and more recognizable UEFI name.*
+_For [TianoCore UEFIPayloadPkg](https://github.com/Dasharo/edk2/tree/workstation/master/UefiPayloadPkg),
+we use the simpler and more recognizable UEFI name._
 
 Examples:
 

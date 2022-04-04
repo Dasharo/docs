@@ -1,7 +1,8 @@
 # muxPi board validation
 
 > In case of any troubles, first it is recommended to read
-[comprehend Theory of Operations](theory-of-operations.md) for muxPi devices.
+    [comprehend Theory of Operations](theory-of-operations.md) for muxPi
+    devices.
 
 ## Necessary components preparation
 
@@ -19,9 +20,9 @@
 
 1. Prepare microSD card (minimum 8GB) for NanoPi NEO operating system.
 1. Download and extract image -
-[link](https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download)
-1. Flash image into microSD card ([Etcher](https://www.balena.io/etcher/) tool
-could be helpful)
+    [link](https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download)
+1. Flash image into microSD card ([Etcher](https://www.balena.io/etcher/)
+    tool could be helpful)
 
 ## muxPi setup
 
@@ -32,29 +33,35 @@ could be helpful)
 1. Plug microUSB<->USB cable to muxPi and your machine.
 1. Plug in power supply.
 1. Make sure that jumpers are correctly set according to image:
-![](../../images/muxpi1.4_jumpers.png)
 
-1. Connect to NanoPi using terminal
+    ![](../../images/muxpi1.4_jumpers.png)
 
-   sudo minicom -D /dev/ttyUSB0 -o -b 115200`
+1. Connect to NanoPi using terminal:
+
+    ```bash
+    sudo minicom -D /dev/ttyUSB0 -o -b 115200`
+    ```
 
 1. Save ip address:
 
-      ifconfig
+    ```bash
+    ifconfig
+    ```
 
 1. Connect to NanoPi via ssh (with password: `fa`):
 
-```bash
-ssh root@192.168.4.XXX
-```
+    ```bash
+    ssh root@192.168.4.XXX
+   ```
 
-1. Or via serial connection
-> NOTE: Connecting with MuxPi through serial will automatically login as non
-root user `pi` with password `pi`.
+1. Or via serial connection.
+
+    > NOTE: Connecting with MuxPi through serial will automatically login as
+    non root user `pi` with password `pi`.
 
 ## Validation steps
 
-#### 1. Install WiringNP
+### 1. Install WiringNP
 
 ```bash
  git clone https://github.com/friendlyarm/WiringNP
@@ -140,18 +147,19 @@ progress). To flash muxPi's microcontroller, follow steps below:
 From now on, muxPi's LCD should light on and display:
 
 ```bash
-*  MuxPi  *
-HW: 1.0 SW: 0.5
+    *  MuxPi  *
+    HW: 1.0 SW: 0.5
 ```
 
 #### 3. SD Adapter
 
 1. Connect IDC-uSD adapter to the muxPI board:
-![](../../images/muxPi-sd.png)
 
-2. Insert the microSD card to microSD card slot accessible on the bottom side of
+    ![](../../images/muxPi-sd.png)
+
+1. Insert the microSD card to microSD card slot accessible on the bottom side of
    muxPi board.
-3. To enable microSD card reader, connect to Cortex from MuxPi via minicom:
+1. To enable microSD card reader, connect to Cortex from MuxPi via minicom:
 
     ```bash
     minicom -D /dev/ttyS2
@@ -169,22 +177,20 @@ HW: 1.0 SW: 0.5
     dut
     ```
 
-   > NOTE: Each command should return `OK`
+    > NOTE: Each command should return `OK`
 
-4. Connect IDC-uSD adapter to a SD card adapter plugged into your machine
-   > NOTE: You need to force IDC-uSD adapter to insert into SD card adapter
+1. Connect IDC-uSD adapter to a SD card adapter plugged into your machine
 
-5. (On your machine) Check if device is connected: `dmesg -w`
+    > NOTE: You need to force IDC-uSD adapter to insert into SD card adapter
+
+1. (On your machine) Check if device is connected: `dmesg -w`
 should help. You should also be able to read and write
 data to uSD card from file manager.
-
-6. Flash image into microSD card (for RPI or other device
-bootable form SD card.)
-
-7. Disconnect uSD adapter form a SD card adapter and connect
+1. Flash image into microSD card (for RPI or other device
+bootable form SD card).
+1. Disconnect uSD adapter form a SD card adapter and connect
 to the device (e.g. RPI).
-
-8. Connect device to the power supply, now device should boot
+1. Connect device to the power supply, now device should boot
 via IDC-uSD adapter.
 
 #### 4. Screening
@@ -237,7 +243,8 @@ Minicom quick guide:
 1. Connect via minicom: `sudo minicom -D /dev/ttyS2 -o -b 115200`
 1. Type: `help`
 
-> NOTE: If output is the same as above then basic validation for muxPi is done.
+    > NOTE: If output is the same as above then basic validation for muxPi is
+    done.
 
 ---
 

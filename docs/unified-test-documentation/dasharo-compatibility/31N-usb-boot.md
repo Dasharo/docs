@@ -6,20 +6,20 @@
 
 **Test description**
 
-This test aims to verify that the DUT properly detects USB device and boots into
-the operating system after coldboot (reboot realized by power supply cutting off
-then restoring back). This test case may be re-done several times to specify the
-platform and connection stability.
+This test aims to verify that the DUT properly detects USB device and boots
+into the operating system after coldboot (reboot realized by power supply
+cutting off then restoring back). This test case may be re-done several times
+to specify the platform and connection stability.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -36,24 +36,24 @@ platform and connection stability.
 The `Debian GNU/Linux` is visible and confirms successful boot into OS after
 coldboot.
 
-### UBB001.002 USB detect and boot after warmboot
+### UBB002.001 USB detect and boot after warmboot
 
 **Test description**
 
-This test aims to verify that the DUT properly detects USB device and boots into
-the operating system after warmboot (reboot realized by device turning off then
-turning on). This test case may be re-done several times to specify the platform
-and connection stability.
+This test aims to verify that the DUT properly detects USB device and boots
+into the operating system after warmboot (reboot realized by device turning
+off then turning on). This test case may be re-done several times to specify
+the platform and connection stability.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -69,24 +69,24 @@ and connection stability.
 The `Debian GNU/Linux` is visible and confirms successful boot into OS after
 warmboot.
 
-### UBB001.003 USB detect and boot after system reboot
+### UBB003.001 USB detect and boot after system reboot
 
 **Test description**
 
-This test aims to verify that the DUT properly detects USB device and boots into
-the operating system after system reboot (reboot performed by relevant command).
-This test case may be re-done several times to specify the platform and
-connection stability.
+This test aims to verify that the DUT properly detects USB device and boots
+into the operating system after system reboot (reboot performed by relevant
+command). This test case may be re-done several times to specify the
+platform and connection stability.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
-3. `USB_STICK` = `USB MSC Drive General USB Flash Disk 1100`
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 

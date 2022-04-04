@@ -1,21 +1,22 @@
-# Dasharo Compatibility: Memtest86+
+# Dasharo Compatibility: Memtest payload support
 
 ## Test cases
 
-### MEM001.001 Memtest86+ availability
+### MEM001.001 Memtest availability
 
 **Test description**
 
-This test aims to verify that the Memtest86+ entry is available in DUT boot menu.
+This test aims to verify that the Memtest entry is available in DUT boot
+    menu.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -28,20 +29,20 @@ This test aims to verify that the Memtest86+ entry is available in DUT boot menu
 
 The `Payload [memtest]` option should be visible as the one of boot menu options.
 
-### MEM001.002 Enter Memtest86+
+### MEM002.001 Enter Memtest
 
 **Test description**
 
-This test aims to verify that the DUT enters the Memtest86+ boot option.
+This test aims to verify that the DUT enters the Memtestboot option.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -55,20 +56,20 @@ This test aims to verify that the DUT enters the Memtest86+ boot option.
 
 The `Memtest86+` is visible at the top of the output.
 
-### MEM001.003 Memtest86+ stability
+### MEM003.001 Memtest stability
 
 **Test description**
 
-This test aims to verify that the Memtest86+ starts does not hang under DUT.
+This test aims to verify that the Memtest starts does not hang under DUT.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -83,20 +84,20 @@ This test aims to verify that the Memtest86+ starts does not hang under DUT.
 The `State: - Running...` is visible after a few seconds and confirms that the
 the test is in progress.
 
-### MEM001.004 Memtest86+ refreshing by 'L' key
+### MEM004.001 Memtest refreshing by 'L' key
 
 **Test description**
 
-This test aims to verify that DUT refreshes Memtest86+ properly.
+This test aims to verify that DUT refreshes Memtest properly.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -111,20 +112,20 @@ This test aims to verify that DUT refreshes Memtest86+ properly.
 
 The `Memtest86+` is visible before and after pressing `L`.
 
-### MEM001.005 Memtest86+ refreshing by 'l' key
+### MEM005.001 Memtest refreshing by 'l' key
 
 **Test description**
 
-This test aims to verify that DUT refreshes Memtest86+ properly.
+This test aims to verify that DUT refreshes Memtest properly.
 
 **Test configuration data**
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -139,18 +140,18 @@ This test aims to verify that DUT refreshes Memtest86+ properly.
 
 The `Memtest86+` is visible before and after pressing `l`.
 
-### MEM001.006 Memtest86+ completing
+### MEM006.001 Memtest completing
 
 **Test description**
 
-This test aims to verify that DUT completes Memtest86+.
+This test aims to verify that DUT completes Memtest.
 
-1. `BOOT_MENU_KEY` = `ESC`
-2. `BOOT_MENU_STRING` = `Press ESC for boot menu`
+1. `FIRMWARE` = coreboot
 
 **Test setup**
 
-1. Proceed with the [Generic test setup: firmware](generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 

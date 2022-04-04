@@ -19,7 +19,7 @@ To build coreboot image, follow the steps below:
 
 1. Start docker container:
 
-    ```
+    ```bash
     $ docker run --rm -it \
        -v $PWD:/home/coreboot/coreboot \
        -w /home/coreboot/coreboot \
@@ -28,7 +28,7 @@ To build coreboot image, follow the steps below:
 
 1. Inside of the container, configure and start the build process:
 
-    ```
+    ```bash
     (docker)$ cp configs/config.raptor-cs-talos-2 .config
     (docker)$ make olddefconfig
     (docker)$ make
@@ -44,7 +44,7 @@ To build coreboot image, follow the steps below:
 
 1. Start docker container:
 
-    ```
+    ```bash
     $ docker run --rm -it -v $PWD:$PWD -w $PWD 3mdeb/heads-docker:2.3.0 /bin/bash
     ```
 

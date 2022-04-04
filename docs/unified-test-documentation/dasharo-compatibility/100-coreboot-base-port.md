@@ -2,48 +2,49 @@
 
 ## Test cases
 
-### CBP001.001 Firmware building
-
-Refer to [building manual](../building-manual.md)
-
-### CBP002.001 Firmware flashing - external programmer
-
-Refer to [setup](../setup.md#spi)
-
-### CBP004.001 Boot into coreboot stage bootblock
-
-**Test description**
-
-This test verifies whether the DUT during booting procedure reaches
-stage bootblock. The bootblock is the first stage executed after CPU reset,
-its main task is to set up everything for a C-environment.
-
-**Test configuration data**
-
-1. `FIRMWARE` = coreboot
+### Common
 
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
-2. Connect to the UART debug interface and open a serial console.
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Connect to the UART debug interface and open a serial console.
+
+### CBP001.001 Boot into coreboot stage bootblock
+
+**Test description**
+
+This test aims to verify that DUT during booting procedure reaches
+stage bootblock. The bootblock is the first stage executed after CPU reset,
+its main task is to set up everything for a C-environment.
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
 
 **Test steps**
 
 1. Power ON the DUT.
 2. By using the serial console read the booting procedure stage.
 
+**Test steps**
+
+1. Power on the DUT.
+2. Read the booting procedure stage.
+
 **Expected result**
 
 1. The console output should contain string with the phrase:
 
-            bootblock starting
+    ```bash
+    bootblock starting
+    ```
 
-### CBP004.002 Boot into coreboot stage romstage
+### CBP002.001 Boot into coreboot stage romstage
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches
+This test aims to verify that DUT during booting procedure reaches
 stage romstage. The romstage initializes the DRAM and prepares everything
 for device init.
 
@@ -53,9 +54,7 @@ for device init.
 
 **Test setup**
 
-1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
-2. Connect to the UART debug interface and open a serial console.
+1. Proceed with the [Common](#common) section.
 
 **Test steps**
 
@@ -66,13 +65,15 @@ for device init.
 
 1. The console output should contain string with the phrase:
 
-            romstage starting
+    ```bash
+    romstage starting
+    ```
 
-### CBP004.003 Boot into coreboot stage postcar
+### CBP003.001 Boot into coreboot stage postcar
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches
+This test aims to verify that DUT during booting procedure reaches
 stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test configuration data**
@@ -81,9 +82,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 
 **Test setup**
 
-1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
-2. Connect to the UART debug interface and open a serial console.
+1. Proceed with the [Common](#common) section.
 
 **Test steps**
 
@@ -94,13 +93,15 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
 
 1. The console output should contain string with the phrase:
 
-            postcar starting
+    ```bash
+    postcar starting
+    ```
 
-### CBP004.004 Boot into coreboot stage ramstage
+### CBP004.001 Boot into coreboot stage ramstage
 
 **Test description**
 
-This test verifies whether the DUT during booting procedure reaches
+This test aims to verify that DUT during booting procedure reaches
 stage ramstage. The ramstage does the main device init.
 
 **Test configuration data**
@@ -109,9 +110,7 @@ stage ramstage. The ramstage does the main device init.
 
 **Test setup**
 
-1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
-2. Connect to the UART debug interface and open a serial console.
+1. Proceed with the [Common](#common) section.
 
 **Test steps**
 
@@ -122,14 +121,16 @@ stage ramstage. The ramstage does the main device init.
 
 1. The console output should contain string the with phrase:
 
-            ramstage starting
+    ```bash
+    ramstage starting
+    ```
 
 ### CBP005.001 Resource allocator v4 - gathering requirements
 
 **Test description**
 
-This test aims to verify that DUT reaches the `gathering requirements` stage for
-Resource Allocator v4 during booting procedure.
+This test aims to verify that DUT reaches the `gathering requirements`
+stage for Resource Allocator v4 during booting procedure.
 
 **Test configuration data**
 
@@ -137,9 +138,7 @@ Resource Allocator v4 during booting procedure.
 
 **Test setup**
 
-1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
-2. Connect to the UART debug interface and open a serial console.
+1. Proceed with the [Common](#common) section.
 
 **Test steps**
 
@@ -150,9 +149,11 @@ Resource Allocator v4 during booting procedure.
 
 1. The console output should contain a string with the phrase:
 
-            Pass 1 (gathering requirements)
+    ```bash
+    Pass 1 (gathering requirements)
+    ```
 
-### CBP005.002 Resource allocator v4 - allocating resources
+### CBP006.001 Resource allocator v4 - allocating resources
 
 **Test description**
 
@@ -165,9 +166,7 @@ Resource Allocator v4 during booting procedure.
 
 **Test setup**
 
-1. Proceed with the
-    [Generic test setup: firmware](generic-test-setup.md#firmware)
-2. Connect to the UART debug interface and open a serial console.
+1. Proceed with the [Common](#common) section.
 
 **Test steps**
 
@@ -178,4 +177,6 @@ Resource Allocator v4 during booting procedure.
 
 1. The console output should contain a string with the phrase:
 
-            Pass 2 (allocating resources)
+    ```bash
+    Pass 2 (allocating resources)
+    ```

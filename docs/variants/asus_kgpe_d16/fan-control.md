@@ -21,7 +21,7 @@ modprobe w83795
 
 The `dmesg` should contain the following message after loading the module:
 
-```
+```shell
 i2c i2c-1: Found w83795g rev. B at 0x2f
 w83795 1-002f: hwmon_device_register() is deprecated.
      Please convert the driver to use hwmon_device_register_with_info().
@@ -36,7 +36,7 @@ sensors
 
 The output should be similar to the one below:
 
-```
+```shell
 k10temp-pci-00cb
 Adapter: PCI adapter
 temp1:        +36.5°C  (high = +70.0°C)
