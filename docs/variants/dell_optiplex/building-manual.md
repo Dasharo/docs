@@ -34,8 +34,11 @@ To build coreboot image, follow the steps below:
     docker run --rm -it \
        -v $PWD:/home/coreboot/coreboot \
        -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+       coreboot/coreboot-sdk:VERSION /bin/bash
     ```
+
+    * `VERSION` should be replaced according to version you building:
+      - `v0.1.0` - `2021-09-23_b0d87f753c`
 
 5. Inside of the container, configure and start the build process:
 
