@@ -118,6 +118,7 @@ nav:
       - 'Firmware build process': osf-trolling-list/build_process.md
     # - 'Firmware release process': osf-trolling-list/release_process.md
       - 'Trusted Computing': osf-trolling-list/trusted_computing.md
+      - 'Jira Service Management': osf-trolling-list/jsm_documentation.md
   - 'Ecosystem':
       - 'Overview': ecosystem/overview.md
     # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
