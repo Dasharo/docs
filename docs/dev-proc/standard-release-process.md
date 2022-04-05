@@ -5,7 +5,7 @@ supported hardware platforms and targets open-source firmware developers.
 Precise steps and any difference from standard process are described in
 platform specific documentation.
 
-Description here is, intentionally, open-source firmware framework agnostics
+Description here is, intentionally, open-source firmware framework agnostic
 and should be maintained in that way.
 
 ## Initial release
