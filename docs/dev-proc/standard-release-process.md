@@ -21,7 +21,7 @@ matrix](../../unified-test-documentation/overview/#test-matrix) section.
     - `coreboot` - use most recent commit on upstream `master`
     - `edk2` - use most recent stable tag
 1. Create branch `<platform>/rel_v0.1.0`
-1. Cherry-pick required patches from `dasharo-common-base` branch
+1. Merge `dasharo/base` branch to `<platform>/rel_v0.1.0`
 1. Apply all other modifications necessary to  provide initial support for
    `<platform>` according to platform test matrix scope.
 1. Run platform regression test suite

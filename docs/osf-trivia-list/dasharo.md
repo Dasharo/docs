@@ -22,7 +22,7 @@ it may consist of:
   Product Guidelines](../../dev-proc/smbios-rules)
 * Fixes for submodules building
 
-Those improvements are stored on `dasharo/common-base` branch in relevant
+Those improvements are stored on `dasharo/base` branch in relevant
 repositories:
 
 * [Dasharo
