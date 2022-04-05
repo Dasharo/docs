@@ -76,7 +76,10 @@ The progress on resolving the request has been paused, and the work may be resum
 
 ### Closed
 
-The request has been resolved, but there was no work to be done.
+The request has been resolved, but there was no work to be done or work was stopped due to:
+1. the client's decision
+2. feasibility study showed 0% success rate
+3. other
 
 ### Done
 
