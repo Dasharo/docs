@@ -260,3 +260,58 @@ display during firmware execution phase.
 **Expected result**
 
 1. Logo appears on the screen during firmware execution phase.
+
+### DSP004.001 External VGA display in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test aims to verify initialization of the external VGA in the OS.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect a video input connector to the VGA and a display.
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into system by using the proper login and password.
+4. If using more than one display, switch the display mode between `Mirror` and
+   `Join Displays`.
+
+**Expected result**
+
+1. The image should be displayed on the external VGA connected display in
+   `Mirror` and `Join Displays` modes.
+
+### DSP004.002 External VGA display in firmware
+
+This test aims to verify initialization of the external VGA during firmware
+execution phase.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+2. Connect a video input connector to the VGA and a display.
+
+**Test steps**
+
+1. Power on the DUT.
+2. During boot, press `BOOT MENU KEY`.
+3. Observe the external VGA connected display during firmware execution phase.
+4. Power off the DUT.
+
+**Expected result**
+
+1. Boot menu appears on the screen during firmware execution phase.
