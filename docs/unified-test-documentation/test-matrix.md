@@ -23,6 +23,7 @@ described in this documentation are dedicated to the given platform
 | 8.   | USB boot                                          | UBB           | All                                  |
 | 9.   | Platform suspend and resume                       | SUSP          | All                                  |
 | 10.  | Flash write protection                            | FWP           | All                                  |
+| 11.  | Display ports and LCD support                     | DSP           | DSP004.001, DSP004.002               |
 
 ### Module: Dasharo security
 
@@ -45,7 +46,9 @@ described in this documentation are dedicated to the given platform
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | Memory HCL                                        | HCL           | All                                  |
 | 2.   | UEFI compatible interface                         | EFI           | All                                  |
-| 3.   | Display ports and LCD support                     | DSP           | All                                  |
+| 3.   | Display ports and LCD support                     | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
+|      |                                                   |               | DSP002.001, DSP002.002, DSP002.003   |
+|      |                                                   |               | DSP003.001, DSP003.002, DSP003.003   |
 | 4.   | Embedded Controller and Super I/O initialization  | ECR           | All                                  |
 | 5.   | NVMe support                                      | NVM           | All                                  |
 | 6.   | Custom logo                                       | CLG           | All                                  |
@@ -82,7 +85,9 @@ described in this documentation are dedicated to the given platform
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | Memory HCL                                        | HCL           | All                                  |
 | 2.   | UEFI compatible interface                         | EFI           | All                                  |
-| 3.   | Display ports and LCD support                     | DSP           | All                                  |
+| 3.   | Display ports and LCD support                     | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
+|      |                                                   |               | DSP002.001, DSP002.002, DSP002.003   |
+|      |                                                   |               | DSP003.001, DSP003.002, DSP003.003   |
 | 4.   | Embedded Controller and Super I/O initialization  | ECR           | Whithout ECR010.001 and ECR010.002   |
 | 5.   | NVMe support                                      | NVM           | All                                  |
 | 6.   | Custom logo                                       | CLG           | All                                  |
@@ -126,7 +131,9 @@ described in this documentation are dedicated to the given platform
 |:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | Memory HCL                                        | HCL           | All                                  |
 | 2.   | UEFI compatible interface                         | EFI           | All                                  |
-| 3.   | Display ports and LCD support                     | DSP           | All                                  |
+| 3.   | Display ports and LCD support                     | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
+|      |                                                   |               | DSP002.001, DSP002.002, DSP002.003   |
+|      |                                                   |               | DSP003.001, DSP003.002, DSP003.003   |
 | 4.   | Embedded Controller and Super I/O initialization  | ECR           | Whithout ECR010.001 and ECR010.002   |
 | 5.   | NVMe support                                      | NVM           | All                                  |
 | 6.   | Custom logo                                       | CLG           | All                                  |
@@ -160,7 +167,8 @@ described in this documentation are dedicated to the given platform
 |:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | Memory HCL                                        | HCL           | All                                  |
 | 2.   | UEFI compatible interface                         | EFI           | EFI001.001                           |
-| 3.   | Display ports                                     | DSP           | DSP002.001,DSP002.003, DSP003.001, DSP003.003 |
+| 3.   | Display ports                                     | DSP           | DSP002.001, DSP002.003, DSP003.001,  |
+|      |                                                   |               | DSP003.003                           |
 | 4.   | Network boot                                      | PXE           | All                                  |
 | 5.   | NVMe support                                      | NVM           | NVM001.001, NVM001.002               |
 | 7.   | Custom logo                                       | CLG           | All                                  |
