@@ -11,6 +11,16 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | UEFI compatible interface                         | EFI           | EFI001.001                           |
+| 2.   | UEFI Shell                                        | USH           | All                                  |
+| 3.   | Display ports and LCD support                     | DSP           | DSP002.001, DSP002.003, DSP003.001. DSP003.003 |
+| 4.   | USB HID and MSC Support                           | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+
+<!--
+## Module: Dasharo compatibility
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | SMBIOS                                            | DMI           | All                                  |
 | 2.   | Memory HCL                                        | HCL           | All                                  |
 | 3.   | UEFI compatible interface                         | EFI           | All                                  |
@@ -42,3 +52,4 @@ described in this documentation are dedicated to the given platform
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | coreboot bring up time measurement                | CBMEM         | All                                  |
+-->
