@@ -80,6 +80,7 @@ nav:
           - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
       - 'MSI PRO Z690-A WIFI DDR4':
           - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
+          - 'Test matrix': variants/msi-z690/test-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
