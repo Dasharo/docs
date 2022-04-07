@@ -1,4 +1,4 @@
-# Test matrix - MSI-Z960
+# Test matrix - Alder Lake Workstation
 
 ## About
 
