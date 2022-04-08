@@ -11,6 +11,15 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [coreboot base port][CBP]                         | CBP           | CBP001.001, CBP002.001, CBP004.001   |
+
+[CBP]: ../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
+
+<!--
+## Module: Dasharo compatibility
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot base port][CBP]                         | CBP           | All                                  |
 | 2.   | [Petitboot][PBT]                                  | PBT           | All                                  |
 | 3.   | [Heads][HDS]                                      | HDS           | All                                  |
@@ -31,4 +40,4 @@ described in this documentation are dedicated to the given platform
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
-
+-->
