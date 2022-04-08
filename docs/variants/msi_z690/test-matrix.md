@@ -1,4 +1,4 @@
-# Test matrix - Alder Lake Workstation
+# Test matrix - MSI Z690-A WIFI DDR4
 
 ## About
 
