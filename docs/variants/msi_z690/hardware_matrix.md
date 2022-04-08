@@ -1,7 +1,7 @@
 # Hardware configuration matrix
 
 The tables below contain information about current components of
-workstations for Zir_Blazer available in 3mdeb testing laboratory.
+workstations for MSI PRO Z690-A available in 3mdeb testing laboratory.
 
 ## LA1E312159
 
