@@ -44,5 +44,5 @@ workstations for MSI PRO Z690-A available in 3mdeb testing laboratory.
 |                                | 5. Dell Mouse MS116p                        |
 |                                | 6. 1-port USB Type-C                        |
 | **Power Supply**               | SeaSonic FOCUS Plus Platinum                |
-| **Power Control**              | Sonoff ip:192.168.4.244                     |
-| **Remote Testing Environment** | RTE v1.1.0 ip:192.168.4.248                 |
+| **Power Control**              | Sonoff                                      |
+| **Remote Testing Environment** | RTE v1.1.0                                  |
