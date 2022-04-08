@@ -1,7 +1,9 @@
-# Hardware configuration matrix
+# Hardware configuration matrix - MSI PRO Z690-A WIFI DDR4
 
-The tables below contain information about current components of
-workstations for MSI PRO Z690-A available in 3mdeb testing laboratory.
+## Introduction
+
+This document describes the hardware configuration used for validation of the
+coreboot port on the MSI PRO Z690-A workstation.
 
 ## LA1E312159
 

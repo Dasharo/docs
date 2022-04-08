@@ -1,10 +1,9 @@
-# Hardware configuration matrix
+# Hardware configuration matrix - Talos II
 
-The tables below contain information about current components of the testing
-environment for Talos II board available in 3mdeb testing laboratory.
+## Introduction
 
-Configuration with a single IBM POWER9 64bit CPU is supported.
-Dual CPU setup not supported currently.
+This document describes the hardware configuration used for validation of the
+coreboot port on the Talos II platform.
 
 ## Board No. 1
 
@@ -15,7 +14,7 @@ Dual CPU setup not supported currently.
 |                                | CPU Cooler                                                    |
 | **RAM**                        | TBD                                                           |
 | **Flash memory**               | TBD                                                           |
-| **Network**                    | Local network wired connection                                | 
+| **Network**                    | Local network wired connection                                |
 | **Attached devices**           | 1. TBD                                                        |
 |                                | 2. TBD                                                        |
 | **Power Supply**               | TBD W ATX type power supply                                   |
@@ -26,7 +25,6 @@ Dual CPU setup not supported currently.
 
 Following RAM configurations were tested and are proved to be properly
 initialized.
-
 
 ```bash
 MCS0, MCA0

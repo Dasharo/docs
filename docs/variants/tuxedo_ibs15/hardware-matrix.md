@@ -1,14 +1,9 @@
-# coreboot testing hardware configurations
+# Hardware configuration matrix - Tuxedo IBS15
 
 ## Introduction
 
 This document describes the hardware configurations used for validation of the
-coreboot port on the Clevo IBS15 laptop.
-
-## Laptops hardware configuration matrix
-
-The tables below contain information about current components of the testing
-environment for Tuxedo IBS15 laptops available in 3mdeb testing laboratory.
+coreboot port on the Tuxedo IBS15 laptop.
 
 ## IBS15 #1
 

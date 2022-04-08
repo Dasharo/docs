@@ -1,14 +1,9 @@
-# coreboot testing hardware configurations
+# Hardware configuration matrix - Clevo NV41
 
 ## Introduction
 
 This document describes the hardware configurations used for validation of the
 coreboot port on the Clevo NV41 laptop.
-
-## Laptops hardware configuration matrix
-
-The tables below contain information about current components of the testing
-environment for Clevo NV41 laptops available in 3mdeb testing laboratory.
 
 ## NV41MZ
 
