@@ -29,7 +29,7 @@ nav:
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
           - 'Building manual': variants/dell_optiplex/building-manual.md
-          - 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
+          #- 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
           - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
@@ -45,7 +45,7 @@ nav:
           - 'Releases': variants/talos_2/releases.md
           - 'Building manual': variants/talos_2/building-manual.md
           - 'Installation manual': variants/talos_2/installation-manual.md
-          - 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
+          #- 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
       - 'Clevo NV41':
           - 'Releases': variants/clevo_nv41/releases.md
