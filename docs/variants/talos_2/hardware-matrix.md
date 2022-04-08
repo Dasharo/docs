@@ -8,28 +8,25 @@ Dual CPU setup not supported currently.
 
 ## Board No. 1
 
-<<<<<<< HEAD
-| Component                      | Description                                                   | Board connection                |
-|--------------------------------|---------------------------------------------------------------|---------------------------------|
-| **CPU**                        | TBD                                                           | `CPU1` slot                     |
-|                                | TBD                                                           | `CPU2` slot                     |
-|                                | CPU Cooler                                                    | `CPU_FAN1` connector            |
-| **RAM**                        | TBD                                                           | `DIMM_B2` slot                  |
-| **Flash memory**               | TBD                                                           | `BIOS` slot                     |
-| **Network**                    | Local network wired connection                                | `LAN1` port                     |
-| **Attached devices**           | 1. TBD                                                        | `USB1` port                     |
-|                                | 2. TBD                                                        | `TPM1` connector                |
-| **Power Supply**               | TBD W ATX type power supply                                   | `SSIPWR1`, `SSI12V1` connectors |
-| **Power Control**              | 1. Sonoff S20 switch                                          | N/A                             |
-|                                | 2. Goldpin cables (RTE <-> Board connection)                  | `PANEL1` connector              |
-| **Remote Testing Environment** | 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232       | `COM1` port                     |
-|                                | 2. Goldpin cables + qspimux (RTE <-> flash memory connection) | `BIOS` slot                     |
+| Component                      | Description                                                   |
+|--------------------------------|---------------------------------------------------------------|
+| **CPU**                        | TBD                                                           |
+|                                | TBD                                                           |
+|                                | CPU Cooler                                                    |
+| **RAM**                        | TBD                                                           |
+| **Flash memory**               | TBD                                                           |
+| **Network**                    | Local network wired connection                                | 
+| **Attached devices**           | 1. TBD                                                        |
+|                                | 2. TBD                                                        |
+| **Power Supply**               | TBD W ATX type power supply                                   |
+| **Power Control**              | 1. Sonoff S20 switch                                          |
+|                                | 2. Goldpin cables (RTE <-> Board connection)                  |
+| **Remote Testing Environment** | 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232       |
+|                                | 2. Goldpin cables + qspimux (RTE <-> flash memory connection) |
 
 Following RAM configurations were tested and are proved to be properly
 initialized.
 
-=======
->>>>>>> 3c275ad19786fa1db6035a0197b5e5c82583814a
 
 ```bash
 MCS0, MCA0

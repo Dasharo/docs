@@ -8,7 +8,7 @@ coreboot port on the Clevo IBS15 laptop.
 ## Laptops hardware configuration matrix
 
 The tables below contain information about current components of the testing
-environment for Clevo IBS15 laptops available in 3mdeb testing laboratory.
+environment for Tuxedo IBS15 laptops available in 3mdeb testing laboratory.
 
 ## IBS15 #1
 
@@ -16,7 +16,6 @@ environment for Clevo IBS15 laptops available in 3mdeb testing laboratory.
 |--------------------------------|--------------------------------------------------|
 | **CPU**                        | Intel(R) Core(TM) i5-1135G7                      |
 |                                | Internal Cooling                                 |
-| **GPU**                        | N/A                                              |
 | **RAM**                        | Slot 1: KVR29S21S6/8                             |
 |                                | Slot 2: KVR29S21S6/4                             |
 | **SSD**                        | 1. Samsung 980 PRO NVMe 250 GB                   |
@@ -48,7 +47,6 @@ environment for Clevo IBS15 laptops available in 3mdeb testing laboratory.
 |--------------------------------|--------------------------------------------------|
 | **CPU**                        | Intel(R) Core(TM) i5-11300H                      |
 |                                | Internal Cooling                                 |
-| **GPU**                        | N/A                                              |
 | **RAM**                        | Slot 1: KVR29S21S6/8                             |
 |                                | Slot 2: KVR29S21S6/4                             |
 | **SSD**                        | Toshiba KXG50NV256G NVMe 256GB                   |

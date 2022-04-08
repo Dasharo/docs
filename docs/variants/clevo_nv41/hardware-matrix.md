@@ -16,7 +16,6 @@ environment for Clevo NV41 laptops available in 3mdeb testing laboratory.
 |--------------------------------|--------------------------------------------------|
 | **CPU**                        | Intel(R) Core(TM) i7-1165G7                      |
 |                                | Internal Cooling                                 |
-| **GPU**                        | N/A                                              |
 | **RAM**                        | Slot 1: KVR29S21S6/8                             |
 |                                | Slot 2: KVR29S21S6/8                             |
 | **SSD**                        | Samsung 980 PRO NVMe 500 GB                      |
