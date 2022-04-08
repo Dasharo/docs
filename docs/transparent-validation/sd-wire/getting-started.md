@@ -1,4 +1,4 @@
-SDWire is a small board with two features:
+# SDWire is a small board with two features
 
 * SD card reader
 * SD card MUX

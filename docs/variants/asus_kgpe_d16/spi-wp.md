@@ -1,4 +1,5 @@
-SPI hardware write protection
+# SPI hardware write protection
+
 =============================
 
 In order to from a Root of Trust in the firmware, e.g. in the immutable piece
@@ -118,7 +119,7 @@ measurements and verification of next stages.
 First let's see how much space we need to protect. Take your coreboot.rom file
 and use cbfstool to show its contents:
 
-```
+```bash
 cd /path/to/coreboot/build
 ./cbfstool coreboot.rom print
 FMAP REGION: COREBOOT
@@ -148,7 +149,7 @@ flash. Converting 12KB to hex would be equal to `0x3000` but we must cover a
 little bit more than that. Let's see what protection ranges are available for
 the chip (running from the tagret machine to be protected):
 
-```
+```bash
 ./flashrom -p internal --wp-list
 ...
 Available write protection ranges:
@@ -293,7 +294,7 @@ Protection mode: disabled
 It must indicate `Protection mode: disabled`. Now you may reconfigure the
 range, e.g.
 
-```
+```bash
 ./flashrom -p internal --wp-range=0x007e0000,0x00020000
 ```
 
@@ -356,7 +357,7 @@ size of 2097152 bytes. These numbers are in decimal, so one must convert them
 to hex. Either use an online hex converter or use the command in bash like a
 pro :)
 
-```
+```bash
 printf "0x%x\n" 6291456
 0x600000
 printf "0x%x\n" 2097152
@@ -374,7 +375,7 @@ Otherwise a whole image must be rebuilt. After custo mkeys have been used to
 sign the ifmrware image and the image has been flashed proceed with enalbing
 the protection:
 
-```
+```bash
 ./flashrom -p internal --wp-range=0x00600000,0x00200000
 ```
 

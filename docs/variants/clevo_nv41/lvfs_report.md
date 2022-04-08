@@ -1,6 +1,6 @@
-## NovaCustom fwupd/LVFS support service
+# NovaCustom fwupd/LVFS support service
 
-### Introduction
+## Introduction
 
 This document contains the report of the discovery of the most appropriate
 fwupd/LVFS firmware update method, including potential risks and roadblocks.

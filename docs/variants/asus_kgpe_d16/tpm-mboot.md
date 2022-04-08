@@ -45,7 +45,7 @@ and the measurements could be faked before they are migrated to the TPM.
 If you check the boot logs either on serial port on via cbmem utility you
 should see:
 
-```
+```bash
 coreboot-asus_kgpe-d16_v0.2.0-15-g521dec6dff Wed Dec 15 11:43:34 UTC 2021 bootblock starting (log level: 8)...
 CPU INIT detected 00000000
 Found TPM SLB9665 TT 2.0 by Infineon
@@ -70,7 +70,7 @@ When vboot is enabled and the verstage is being located, the bootblock measures
 itself and the verstage, but the measurements are sent to the TPM PCRs not in
 bootblock, but in verstage:
 
-```
+```bash
 coreboot-asus_kgpe-d16_v0.2.0-15-g521dec6dff Wed Dec 15 11:43:34 UTC 2021 bootblock starting (log level: 8)...
 CPU INIT detected 00000000
 VBOOT: Loading verstage.

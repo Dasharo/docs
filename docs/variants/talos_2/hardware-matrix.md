@@ -8,6 +8,7 @@ Dual CPU setup not supported currently.
 
 ## Board No. 1
 
+<<<<<<< HEAD
 | Component                      | Description                                                   | Board connection                |
 |--------------------------------|---------------------------------------------------------------|---------------------------------|
 | **CPU**                        | TBD                                                           | `CPU1` slot                     |
@@ -27,6 +28,8 @@ Dual CPU setup not supported currently.
 Following RAM configurations were tested and are proved to be properly
 initialized.
 
+=======
+>>>>>>> 3c275ad19786fa1db6035a0197b5e5c82583814a
 ```bash
 MCS0, MCA0
    DIMM0: 1Rx4 16GB PC4-2666V-RC2-12-PA0

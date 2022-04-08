@@ -8,7 +8,11 @@ If you can't find the answer to your questions feel free to contact us through
 [Community Channels](../index.md#community) or submit issue through [Dasharo
 Github](https://github.com/Dasharo/dasharo-issues).
 
-## What to do when flashrom returns `Could not get I/O privileges (Operation not permitted)`?
+## Flashrom
+
+Following sections explain how to deal with most common `flashrom` errors.
+
+### `Could not get I/O privileges (Operation not permitted)`
 
 If you see a flashrom error like this:
 
@@ -21,7 +25,7 @@ Error: Programmer initialization failed.
 It means you have insufficient privileges to perform initialization. Please use
 `sudo` before `flashrom` command.
 
-## What to do when flashrom returns `/dev/mem mmap failed: Operation not permitted`?
+### `/dev/mem mmap failed: Operation not permitted`
 
 ``` console
 /dev/mem mmap failed: Operation not permitted
@@ -82,7 +86,7 @@ If the above does not resolve the problem, the kernel may be compiled with stric
 devmem, which prohibits accessing the IOMEM. You should then take different
 Linux system.
 
-## What to do when flashrom returns `Transaction error between offset ...`?
+### `Transaction error between offset ...`?
 
 ``` console
 SPI Configuration is locked down.

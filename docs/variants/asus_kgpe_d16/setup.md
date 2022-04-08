@@ -1,4 +1,5 @@
-RTE v.0.5.3 with Asus KGPE-D16 connection
+# RTE v.0.5.3 with Asus KGPE-D16 connection
+
 =========================================
 
 ![](/images/kgpe_overview.png)
@@ -48,7 +49,7 @@ The proposed connections used:
 
 Simple flashing script looks as follows:
 
-```
+```bash
 # select flash <-> programmer
 echo "0" > /sys/class/gpio/gpio400/value
 # deassert SPI HOLD#
@@ -62,7 +63,7 @@ echo "1" > /sys/class/gpio/gpio400/value
 
 Controlling state of #WP:
 
-```
+```bash
 # configure direction of the pin
 echo "out" > /sys/class/gpio/gpio402/direction
 
