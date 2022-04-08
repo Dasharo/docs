@@ -46,6 +46,7 @@ nav:
           - 'Building manual': variants/talos_2/building-manual.md
           - 'Installation manual': variants/talos_2/installation-manual.md
           #- 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
+          - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
       - 'Clevo NV41':
           - 'Releases': variants/clevo_nv41/releases.md
