@@ -14,13 +14,13 @@ environment for Clevo IBS15 laptops available in 3mdeb testing laboratory.
 
 | Component                      | Description                                      |
 |--------------------------------|--------------------------------------------------|
-| **CPU**                        | Intel(R) Core(TM) i5-1135G7                      | 
+| **CPU**                        | Intel(R) Core(TM) i5-1135G7                      |
 |                                | Internal Cooling                                 |
 | **GPU**                        | N/A                                              |
 | **RAM**                        | Slot 1: KVR29S21S6/8                             |
 |                                | Slot 2: KVR29S21S6/4                             |
 | **SSD**                        | 1. Samsung 980 PRO NVMe 250 GB                   |
-|                                | 2. Samsung 860 EVO SATA M.2 250 GB               | 
+|                                | 2. Samsung 860 EVO SATA M.2 250 GB               |
 | **Flash memory**               | GigaDevice 25B127DSIG 16 MB                      |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 15 inch screen                      |
@@ -37,7 +37,7 @@ environment for Clevo IBS15 laptops available in 3mdeb testing laboratory.
 |                                | 5. DELL KB216 USB Keyboard                       |
 |                                | 6. 4-port USB Type-C Hub Pro                     |
 |                                | 7. HDMI 1920x1080p Display                       |
-|                                | 8. Sony MDR-EX15AP headset                       | 
+|                                | 8. Sony MDR-EX15AP headset                       |
 | **Power Supply**               | Chicony 65 W                                     |
 | **Power Control**              | N/A                                              |
 | **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
@@ -46,7 +46,7 @@ environment for Clevo IBS15 laptops available in 3mdeb testing laboratory.
 
 | Component                      | Description                                      |
 |--------------------------------|--------------------------------------------------|
-| **CPU**                        | Intel(R) Core(TM) i5-11300H                      | 
+| **CPU**                        | Intel(R) Core(TM) i5-11300H                      |
 |                                | Internal Cooling                                 |
 | **GPU**                        | N/A                                              |
 | **RAM**                        | Slot 1: KVR29S21S6/8                             |

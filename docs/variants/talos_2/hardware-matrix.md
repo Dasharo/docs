@@ -30,6 +30,7 @@ initialized.
 
 =======
 >>>>>>> 3c275ad19786fa1db6035a0197b5e5c82583814a
+
 ```bash
 MCS0, MCA0
    DIMM0: 1Rx4 16GB PC4-2666V-RC2-12-PA0

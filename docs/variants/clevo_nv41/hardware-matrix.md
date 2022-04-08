@@ -14,7 +14,7 @@ environment for Clevo NV41 laptops available in 3mdeb testing laboratory.
 
 | Component                      | Description                                      |
 |--------------------------------|--------------------------------------------------|
-| **CPU**                        | Intel(R) Core(TM) i7-1165G7                      | 
+| **CPU**                        | Intel(R) Core(TM) i7-1165G7                      |
 |                                | Internal Cooling                                 |
 | **GPU**                        | N/A                                              |
 | **RAM**                        | Slot 1: KVR29S21S6/8                             |
@@ -42,7 +42,7 @@ environment for Clevo NV41 laptops available in 3mdeb testing laboratory.
 
 | Component                      | Description                                      |
 |--------------------------------|--------------------------------------------------|
-| **CPU**                        | Intel(R) Core(TM) i7-1165G7                      | 
+| **CPU**                        | Intel(R) Core(TM) i7-1165G7                      |
 |                                | Internal Cooling                                 |
 | **GPU**                        | NVIDIA GeForce GTX1650 4 GB                      |
 | **RAM**                        | Slot 1: KVR29S21D8/32                            |

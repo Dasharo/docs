@@ -7,7 +7,7 @@ environment for Dell OptiPlex workstations available in 3mdeb testing laboratory
 
 | Component                      | Description                              |
 |--------------------------------|------------------------------------------|
-| **CPU**                        | Intel Core iTBD                          | 
+| **CPU**                        | Intel Core iTBD                          |
 |                                | CPU Cooler                               |
 | **GPU**                        | N/A                                      |
 | **RAM**                        | TBD                                      |
@@ -24,7 +24,7 @@ environment for Dell OptiPlex workstations available in 3mdeb testing laboratory
 
 | Component                      | Description                                             |
 |--------------------------------|---------------------------------------------------------|
-| **CPU**                        | Intel Core iTBD                                         | 
+| **CPU**                        | Intel Core iTBD                                         |
 |                                | CPU Cooler                                              |
 | **GPU**                        | N/A                                                     |
 | **RAM**                        | TBD                                                     |
