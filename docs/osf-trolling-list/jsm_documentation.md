@@ -8,6 +8,10 @@ needs. To ensure that we can provide comprehensive assistance with your current 
 future new developments, we encourage you to choose our new Support Package for more streamlined
 cooperation, guaranteed availability, and quick, on-time delivery.
 
+## Before you raise your first request
+
+Remember to provide a list of email addresses of people that need an access to the portal.
+
 ## How to add a request
 
 ### Raising requests using the portal
@@ -36,7 +40,10 @@ The email address is be provided to you by separate message.
 You can always add a comment to the request and attach files. You can do it directly from the
 JSM request page or using email simply by replying to the email thread.
 
-You'll also recieve an information, w
+### What happens after you raise a request
+
+We'll soon let you know let you know about the cost and what solutions are proposed.
+You'll also receive an information what requests will be resolved in the next release.
 
 ## Process and request statuses
 
@@ -84,6 +91,10 @@ The request has been resolved, but there was no work to be done or work was stop
 ### Done
 
 The request is resolved, and work has been completed.
+
+## Your SP budget
+
+After completing the request, you'll recive an information about the state of your SP budget by email.
 
 ## SLAs
 
