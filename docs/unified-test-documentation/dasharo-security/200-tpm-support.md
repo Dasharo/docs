@@ -31,15 +31,29 @@ be accessed from the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
-1. If your device is equipped with TPM2.0 - execute the following command
-    in terminal:
+1. Check the version of installed tpm2-tools - execute the following command
+in the terminal:
+
+```bash
+dpkg --list tpm2-tools
+```
+
+1. If your device is equipped with TPM2.0 and the version of `tpm2-tools`
+is 4.0 or higher - execute the following command in terminal:
+
+```bash
+tpm2_pcrread
+```
+
+1. If your device is equipped with TPM2.0 and the version of `tpm2-tools`
+is lower than 4.0 - execute the following command in terminal:
 
 ```bash
 tpm2_pcrlist
 ```
 
 1. If your device is equipped with TPM1.2 - execute the following command
-    in terminal:
+in terminal:
 
 ```bash
 cat /sys/class/tpm/tpm0/pcrs

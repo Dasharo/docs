@@ -6,7 +6,41 @@ Clevo NV41MZ
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Clevo NV41MZ Dasharo Release Newsletter][1]{ .md-button .md-button--primary .center }
+[Subscribe to Clevo NV41MZ Dasharo Release Newsletter]
+[newsletter]{ .md-button .md-button--primary .center }
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
+
+## v1.1.0 - 2022-03-23
+
+### Added
+
+- Add Dasharo Tools Suite network boot integration
+- Add a persistent bootlogo implementation
+
+### Known issues
+
+- [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/19)
+- [USB4 Root Device Router device displays an error in Windows 11 Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/18)
+- [Windows 10 SD card reader driver needs manual installation on NV41MB](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/16)
+- [Low level interfering crackling/popping of the speakers while playing no sound](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/13)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
+
+### Binaries
+
+[clevo_nv41mz_v1.1.0.rom][v1.1.0_rom]{ .md-button }
+[sha256][v1.1.0_sha]{ .md-button }
+[sha256.sig][v1.1.0_sig]{ .md-button }
+
+[v1.1.0_rom]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.1.0.rom
+[v1.1.0_sha]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.1.0.rom.sha256
+[v1.1.0_sig]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.1.0.rom.sha256.sig
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on ae9a8447 revision 0722fdf0](https://github.com/Dasharo/coreboot/tree/0722fdf0)
+- [edk2 based on 2020.03.17 revision ec6805c2](https://github.com/Dasharo/edk2/tree/ec6805c2)
+- [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
 
 ## v1.0.1 - 2022-03-01
 
@@ -39,9 +73,13 @@ For details about our release process please read
 
 ### Binaries
 
-[clevo_nv41mz_v1.0.1.rom][2]{ .md-button }
-[sha256][3]{ .md-button }
-[sha256.sig][4]{ .md-button }
+[clevo_nv41mz_v1.0.1.rom][v1.0.1_rom]{ .md-button }
+[sha256][v1.0.1_sha]{ .md-button }
+[sha256.sig][v1.0.1_sig]{ .md-button }
+
+[v1.0.1_rom]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom
+[v1.0.1_sha]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256
+[v1.0.1_sig]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -74,9 +112,13 @@ For details about our release process please read
 
 ### Binaries
 
-[clevo_nv41mz_v1.0.0.rom][5]{ .md-button }
-[sha256][6]{ .md-button }
-[sha256.sig][7]{ .md-button }
+[clevo_nv41mz_v1.0.0.rom][v1.0.0_rom]{ .md-button }
+[sha256][v1.0.0_sha]{ .md-button }
+[sha256.sig][v1.0.0_sig]{ .md-button }
+
+[v1.0.0_rom]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom
+[v1.0.0_sha]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256
+[v1.0.0_sig]:https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -111,9 +153,13 @@ For details about our release process please read
 
 ### Binaries
 
-[dasharo_clevo_nv41mz_0.5.0.SHA256][8]{ .md-button }
-[dasharo_clevo_nv41mz_0.5.0.SHA256.sig][9]{ .md-button }
-[dasharo_clevo_nv41mz_0.5.0.rom][10]{ .md-button }
+[dasharo_clevo_nv41mz_v0.5.0.rom][v0.5.0_rom]{ .md-button }
+[sha256][v0.5.0_sha]{ .md-button }
+[sha256.sig][v0.5.0_sig]{ .md-button }
+
+[v0.5.0_rom]:https://cloud.3mdeb.com/index.php/s/ywZtKFR3J3Y3sbG
+[v0.5.0_sha]:https://cloud.3mdeb.com/index.php/s/6BeLRkSaawB42T6
+[v0.5.0_sig]:https://cloud.3mdeb.com/index.php/s/xM8FcCsMc8kfmKB
 
 ### SBOM (Software Bill of Materials)
 
@@ -149,9 +195,13 @@ For details about our release process please read
 
 ### Binaries
 
-- [dasharo_clevo_nv41mz_0.4.0.rom][11]{ .md-button }
-- [dasharo_clevo_nv41mz_0.4.0.SHA256][12]{ .md-button }
-- [dasharo_clevo_nv41mz_0.4.0.SHA256.sig][13]{ .md-button }
+[dasharo_clevo_nv41mz_v0.4.0.rom][v0.4.0_rom]{ .md-button }
+[sha256][v0.4.0_sha]{ .md-button }
+[sha256.sig][v0.4.0_sig]{ .md-button }
+
+[v0.4.0_rom]:https://cloud.3mdeb.com/index.php/s/MZnCrbWqaKPc8st
+[v0.4.0_sha]:https://cloud.3mdeb.com/index.php/s/2SkwmGFoyAf2e7d
+[v0.4.0_sig]:https://cloud.3mdeb.com/index.php/s/HZxynzX3zDscTXr
 
 ### SBOM (Software Bill of Materials)
 
@@ -180,9 +230,13 @@ For details about our release process please read
 
 ### Binaries
 
-- [dasharo_clevo_nv41mz_0.3.0.rom][14]{ .md-button }
-- [dasharo_clevo_nv41mz_0.3.0.SHA256][15]{ .md-button }
-- [dasharo_clevo_nv41mz_0.3.0.SHA256.sig][16]{ .md-button }
+[dasharo_clevo_nv41mz_v0.3.0.rom][v0.3.0_rom]{ .md-button }
+[sha256][v0.3.0_sha]{ .md-button }
+[sha256.sig][v0.3.0_sig]{ .md-button }
+
+[v0.3.0_rom]:https://cloud.3mdeb.com/index.php/s/D7atioMH5Ega6JZ
+[v0.3.0_sha]:https://cloud.3mdeb.com/index.php/s/j7RxnDWEzreD6w3
+[v0.3.0_sig]:https://cloud.3mdeb.com/index.php/s/NLbgZiyiMFRyZt7
 
 ### SBOM (Software Bill of Materials)
 
@@ -212,9 +266,13 @@ For details about our release process please read
 
 ### Binaries
 
-- [dasharo_clevo_nv41mz_0.2.1.rom][17]{ .md-button }
-- [dasharo_clevo_nv41mz_0.2.1.rom.SHA256][18]{ .md-button }
-- [dasharo_clevo_nv41mz_0.2.1.rom.SHA256.sig][19]{ .md-button }
+[dasharo_clevo_nv41mz_v0.2.1.rom][v0.2.1_rom]{ .md-button }
+[sha256][v0.2.1_sha]{ .md-button }
+[sha256.sig][v0.2.1_sig]{ .md-button }
+
+[v0.2.1_rom]:https://cloud.3mdeb.com/index.php/s/9f9S9zNHZDYW8NM
+[v0.2.1_sha]:https://cloud.3mdeb.com/index.php/s/q7aZz4LFA6B5byD
+[v0.2.1_sig]:https://cloud.3mdeb.com/index.php/s/YnNXcyQyfKkabDG
 
 ### SBOM (Software Bill of Materials)
 
@@ -250,9 +308,13 @@ For details about our release process please read
 
 ### Binaries
 
-- [dasharo_clevo_nv41mz_0.2.0.rom][20]{ .md-button }
-- [dasharo_clevo_nv41mz_0.2.0.SHA256][21]{ .md-button }
-- [dasharo_clevo_nv41mz_0.2.0.SHA256.sig][22]{ .md-button }
+[dasharo_clevo_nv41mz_v0.2.0.rom][v0.2.0_rom]{ .md-button }
+[sha256][v0.2.0_sha]{ .md-button }
+[sha256.sig][v0.2.0_sig]{ .md-button }
+
+[v0.2.0_rom]:https://cloud.3mdeb.com/index.php/s/BnWwH7X8RYinm7x
+[v0.2.0_sha]:https://cloud.3mdeb.com/index.php/s/xrwfNdC9PnfoMEL
+[v0.2.0_sig]:https://cloud.3mdeb.com/index.php/s/yWitrxMRrCHYPE4
 
 ### SBOM (Software Bill of Materials)
 
@@ -274,11 +336,16 @@ For details about our release process please read
 
 ### Binaries
 
-[Clevo NV41MZ Dasharo][23]{ .md-button }
-[SHA256][24]{ .md-button }
-[SHA256.sig][25]{ .md-button }
+[clevo_nv41mz_v0.1.2.rom][v0.1.2_rom]{ .md-button }
+[sha256][v0.1.2_sha]{ .md-button }
+[sha256.sig][v0.1.2_sig]{ .md-button }
 
-[All in one zip][26]{ .md-button }
+[All in one zip][v0.1.2_aio]
+
+[v0.1.2_rom]:https://cloud.3mdeb.com/index.php/s/zzWBdLkF78Ax6pP/download
+[v0.1.2_sha]:https://cloud.3mdeb.com/index.php/s/mYzWRma6CYQpZg6/download
+[v0.1.2_sig]:https://cloud.3mdeb.com/index.php/s/d6bsNzpnWyqLbqC/download
+[v0.1.2_aio]:https://cloud.3mdeb.com/index.php/s/LXQizpTxg7C9g94/download
 
 ### SBOM (Software Bill of Materials)
 
@@ -288,30 +355,3 @@ For details about our release process please read
 #### Binary blobs
 
 - [blobs extracted from the vendor firmware](https://gitlab.com/novacustom/blobs/-/tree/d56dacf5a06881c327e54b0632585402c4c3718d/mainboard/clevo/tgl-u/nv41mz)
-
-[1]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
-[2]: https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom
-[3]: https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256
-[4]: https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.1.rom.sha256.sig
-[5]: https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom
-[6]: https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256
-[7]: https://3mdeb.com/open-source-firmware/Dasharo/clevo_nv41mz/clevo_nv41mz_v1.0.0.rom.sha256.sig
-[8]: https://cloud.3mdeb.com/index.php/s/ywZtKFR3J3Y3sbG
-[9]: https://cloud.3mdeb.com/index.php/s/6BeLRkSaawB42T6
-[10]: https://cloud.3mdeb.com/index.php/s/xM8FcCsMc8kfmKB
-[11]: https://cloud.3mdeb.com/index.php/s/MZnCrbWqaKPc8st
-[12]: https://cloud.3mdeb.com/index.php/s/2SkwmGFoyAf2e7d
-[13]: https://cloud.3mdeb.com/index.php/s/HZxynzX3zDscTXr
-[14]: https://cloud.3mdeb.com/index.php/s/D7atioMH5Ega6JZ
-[15]: https://cloud.3mdeb.com/index.php/s/j7RxnDWEzreD6w3
-[16]: https://cloud.3mdeb.com/index.php/s/NLbgZiyiMFRyZt7
-[17]: https://cloud.3mdeb.com/index.php/s/9f9S9zNHZDYW8NM
-[18]: https://cloud.3mdeb.com/index.php/s/q7aZz4LFA6B5byD
-[19]: https://cloud.3mdeb.com/index.php/s/YnNXcyQyfKkabDG
-[20]: https://cloud.3mdeb.com/index.php/s/BnWwH7X8RYinm7x
-[21]: https://cloud.3mdeb.com/index.php/s/xrwfNdC9PnfoMEL
-[22]: https://cloud.3mdeb.com/index.php/s/yWitrxMRrCHYPE4
-[23]: https://cloud.3mdeb.com/index.php/s/zzWBdLkF78Ax6pP/download
-[24]: https://cloud.3mdeb.com/index.php/s/mYzWRma6CYQpZg6/download
-[25]: https://cloud.3mdeb.com/index.php/s/d6bsNzpnWyqLbqC/download
-[26]: https://cloud.3mdeb.com/index.php/s/LXQizpTxg7C9g94/download
