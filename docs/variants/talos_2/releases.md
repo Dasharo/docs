@@ -15,6 +15,46 @@ For details about our release process please read
 
 </center>
 
+## v0.5.0 - 2022-04-12
+
+### Changed
+  
+- Add FSI initialization and functions for accessing devices behind FSI bus
+- Cache MVPD between stages
+- Initialize and train XBus links
+- Change SCOM API to be able to access second CPU
+- Initialize PCIe, MCS, OCC and TOD for second CPU
+- Switch to ELF payload, clean up Device Tree generation
+- Various boot time optimizations
+
+### Fixed
+
+- [Only one CPU is started](https://github.com/Dasharo/dasharo-issues/issues/30)
+- [SPDs are not exposed in sysfs automatically](https://github.com/Dasharo/dasharo-issues/issues/31)
+
+### Known issues
+
+- [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
+- [CBMEM can no longer be accessed from OS](https://github.com/Dasharo/dasharo-issues/issues/69)
+
+### Binaries
+
+[raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc.sha256.sig){ .md-button }
+
+[raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc){ .md-button }
+[sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc.sha256){ .md-button }
+[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc.sha256.sig){ .md-button }
+
+Heads was not modified in this release, its binary from previous releases can be
+used.
+
+### SBOM (Software Bill of Materials):
+
+- [coreboot based on 5621a1e revision c92383f9](https://github.com/Dasharo/coreboot/tree/c92383f9)
+- [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/?id=98581863)
+
 ## v0.4.1 - 2022-01-10
 
 ### Changed
