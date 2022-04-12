@@ -29,7 +29,7 @@ during firmware execution phase.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -116,12 +116,12 @@ This test aims to verify initialization of the external HDMI display in the OS.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Mirror` and
-   `Join Displays`.
+    `Join Displays`.
 
 **Expected result**
 
 1. The image should be displayed on the external HDMI display in `Mirror` and
-   `Join Displays` modes.
+    `Join Displays` modes.
 
 ### DSP002.002 External HDMI display in OS (Windows 11)
 
@@ -144,12 +144,12 @@ This test aims to verify initialization of the external HDMI display in the OS.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
-   and `Extend`.
+    and `Extend`.
 
 **Expected result**
 
 1. The image should be displayed on the external HDMI display in `Duplicate`
-   and `Extend` modes.
+    and `Extend` modes.
 
 ### DSP002.003 External HDMI display in firmware
 
@@ -163,7 +163,7 @@ during firmware execution phase.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
 **Test steps**
 
@@ -198,12 +198,12 @@ in the OS.
 2. Boot into the system.
 3. Log into system by using the proper login and password.
 4. If using more than one display, switch the display mode between `Mirror` and
-   `Join Displays`.
+    `Join Displays`.
 
 **Expected result**
 
 1. The image should be displayed on the external Display Port connected display
-   in `Mirror` and `Join Displays` modes.
+    in `Mirror` and `Join Displays` modes.
 
 ### DSP003.002 External DP display in OS (Windows 11)
 
@@ -228,12 +228,12 @@ display in the OS.
 1. Boot into the system.
 1. Log into system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
-   and `Extend`.
+    and `Extend`.
 
 **Expected result**
 
 1. The image should be displayed on the external Display Port connected display
-   in `Duplicate` and `Extend` modes.
+    in `Duplicate` and `Extend` modes.
 
 ### DSP003.003 External DP display in firmware
 
@@ -247,7 +247,7 @@ display during firmware execution phase.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
@@ -283,12 +283,12 @@ This test aims to verify initialization of the external VGA in the OS.
 2. Boot into the system.
 3. Log into system by using the proper login and password.
 4. If using more than one display, switch the display mode between `Mirror` and
-   `Join Displays`.
+    `Join Displays`.
 
 **Expected result**
 
 1. The image should be displayed on the external VGA connected display in
-   `Mirror` and `Join Displays` modes.
+    `Mirror` and `Join Displays` modes.
 
 ### DSP004.002 External VGA display in firmware
 
