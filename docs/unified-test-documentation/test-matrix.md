@@ -113,14 +113,6 @@ described in this documentation are dedicated to the given platform
 | 3.   | Measured Boot support                             | MBO           | All                                  |
 | 4.   | Secure Boot support                               | SBO           | All                                  |
 
-## Test matrix - Talos II
-
-### Module: Dasharo compatibility
-
-| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | coreboot base port                                | CBP           | CBP001.001, CBP002.001, CBP004.001   |
-
 ## Test matrix - Clevo NS50
 
 ### Module: Dasharo compatibility

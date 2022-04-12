@@ -29,6 +29,7 @@ nav:
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
           - 'Building manual': variants/dell_optiplex/building-manual.md
+          #- 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
           - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
@@ -44,7 +45,8 @@ nav:
           - 'Releases': variants/talos_2/releases.md
           - 'Building manual': variants/talos_2/building-manual.md
           - 'Installation manual': variants/talos_2/installation-manual.md
-          - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
+          #- 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
+          - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
       - 'Clevo NV41':
           - 'Releases': variants/clevo_nv41/releases.md
@@ -54,7 +56,7 @@ nav:
           - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
           - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
           - 'Post-installation steps': variants/clevo_nv41/post_install.md
-          - 'Hardware Configuration Matrix': variants/clevo_nv41/testing_configuration.md
+          - 'Hardware Configuration Matrix': variants/clevo_nv41/hardware-matrix.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/clevo_nv41/openness_analysis.md
           - 'LVFS report': variants/clevo_nv41/lvfs_report.md
@@ -65,7 +67,7 @@ nav:
           - 'Installation manual': variants/tuxedo_ibs15/installation.md
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/testing-configuration.md
+          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
       - 'NovaCustom NS5X':
           - 'Releases': variants/novacustom_ns5x/releases.md
           - 'Building manual': variants/novacustom_ns5x/building.md
@@ -78,6 +80,9 @@ nav:
           - 'Building manual': variants/protectli_vp4620/building-manual.md
           - 'Installation manual': variants/protectli_vp4620/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
+      - 'MSI PRO Z690-A WIFI DDR4':
+          - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
+          - 'Test matrix': variants/msi_z690/test-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
