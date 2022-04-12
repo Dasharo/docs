@@ -48,7 +48,6 @@ described in this documentation are dedicated to the given platform
 | 2.   | UEFI compatible interface                         | EFI           | All                                  |
 | 3.   | Display ports and LCD support                     | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
 |      |                                                   |               | DSP002.001, DSP002.002, DSP002.003   |
-|      |                                                   |               | DSP003.001, DSP003.002, DSP003.003   |
 | 4.   | Embedded Controller and Super I/O initialization  | ECR           | All                                  |
 | 5.   | NVMe support                                      | NVM           | All                                  |
 | 6.   | Custom logo                                       | CLG           | All                                  |
@@ -87,7 +86,6 @@ described in this documentation are dedicated to the given platform
 | 2.   | UEFI compatible interface                         | EFI           | All                                  |
 | 3.   | Display ports and LCD support                     | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
 |      |                                                   |               | DSP002.001, DSP002.002, DSP002.003   |
-|      |                                                   |               | DSP003.001, DSP003.002, DSP003.003   |
 | 4.   | Embedded Controller and Super I/O initialization  | ECR           | Whithout ECR010.001 and ECR010.002   |
 | 5.   | NVMe support                                      | NVM           | All                                  |
 | 6.   | Custom logo                                       | CLG           | All                                  |
@@ -133,7 +131,6 @@ described in this documentation are dedicated to the given platform
 | 2.   | UEFI compatible interface                         | EFI           | All                                  |
 | 3.   | Display ports and LCD support                     | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
 |      |                                                   |               | DSP002.001, DSP002.002, DSP002.003   |
-|      |                                                   |               | DSP003.001, DSP003.002, DSP003.003   |
 | 4.   | Embedded Controller and Super I/O initialization  | ECR           | Whithout ECR010.001 and ECR010.002   |
 | 5.   | NVMe support                                      | NVM           | All                                  |
 | 6.   | Custom logo                                       | CLG           | All                                  |
