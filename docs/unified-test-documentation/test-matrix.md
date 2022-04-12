@@ -23,7 +23,7 @@ described in this documentation are dedicated to the given platform
 | 8.   | USB boot                                          | UBB           | All                                  |
 | 9.   | Platform suspend and resume                       | SUSP          | All                                  |
 | 10.  | Flash write protection                            | FWP           | All                                  |
-| 11.  | Display ports and LCD support                     | DSP           | DSP004.001, DSP004.002               |
+| 11.  | Display ports and LCD support                     | DSP           | DSP004.001, DSP004.003               |
 
 ### Module: Dasharo security
 
