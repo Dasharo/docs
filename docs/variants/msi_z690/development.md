@@ -7,6 +7,13 @@ Dasharo compatible with the MSI PRO Z690-A WIFI DDR4 platform.
 
 ## Hardware connection
 
+### Requirements
+
+- peripherals listed in the [Hardware Configuration Matrix](hardware-matrix.md)
+- [RTE](https://3mdeb.com/open-source-hardware/#rte)
+- [Sonoff S20 Smart Plug](https://wiki.iteadstudio.com/S20_Smart_Socket)
+   with [custom firmware](https://esphome.io/devices/sonoff_s20.html)
+
 ### Serial debug
 
 * Attach the jumpers in `J16` header to eanble header `J18` according to the

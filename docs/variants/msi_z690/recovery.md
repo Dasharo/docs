@@ -20,7 +20,7 @@ platform.
 ### External flashing with programmer
 
 In this case, using external programmer is necessary. We are using
-[RTE](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
+[RTE](https://3mdeb.com/open-source-hardware/#rte)
 here.
 
 * Connect programmer to the flash chip as shown in the
