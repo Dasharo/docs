@@ -36,8 +36,8 @@ $ sudo make install
 ## Flashing
 
 All flash operations require UEFI Secure Boot to be disabled. You may download
-the binary using scp or wget command. The binaries can be found on
-[release page](releases.md).
+the binary using scp (need to install openssh-server package) or wget command.
+The binaries can be found on [release page](releases.md).
 
 ### Reading flash contents
 
@@ -50,8 +50,7 @@ sudo flashrom -p internal -r dump.rom
 
 ### Flashing Dasharo
 
-To flash Dasharo on the platform, execute the following command - replace `[path]`
-with the path to the Dasharo image you want to flash, e.g. `msi_ms7d25_v0.1.0.rom`.
+To flash Dasharo on the platform, execute the following command:
 
 ```bash
 sudo flashrom -p internal -w msi_ms7d25_v0.1.0.rom --ifd -i bios
