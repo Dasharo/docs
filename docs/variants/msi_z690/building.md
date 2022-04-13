@@ -13,10 +13,13 @@ This documents describes the procedure for compiling coreboot for MSI PRO Z690-A
 
 ## Procedure
 
+Download and install UEFIExtract
+
 ```
 sudo apt install wget
-git clone --depth 1 -b A59 git@github.com:LongSoft/UEFITool.git
-cp UEFIExtract /usr/bin
+wget https://github.com/LongSoft/UEFITool/releases/download/A59/UEFIExtract_NE_A59_linux_x86_64.zip
+unzip UEFIExtract_NE_A59_linux_x86_64.zip
+cp ./UEFIExtract /usr/bin
 ```
 
 Obtain coreboot source code for MSI PRO Z690-A WIFI DDR4:
