@@ -9,14 +9,19 @@ documentation._
 
 -->
 
-* [Releases](releases.md) - lists all releases
-* [Building manual](building-manual.md) - how to build Dasharo compatible with
+* [Releases](releases.md) - list of all releases
+* [Building manual](building.md) - how to build Dasharo compatible with
   the MSI PRO Z690-A WiFi DDR4
 * [Installation manual](installation-manual.md) - how to install Dasharo
   firmware on the  MSI PRO Z690-A WiFi DDR4
 * [Hardware configuration matrix](hardware-matrix.md) - definition of hardwre
   configuration used during validation
 * [Test matrix](test-matrix.md) - validation scope for the MSI PRO Z690-A WiFi DDR4
+
+## Useful documents
+
+* [MSI Z690-A PRO DDR4 WiFI site](https://pl.msi.com/Motherboard/PRO-Z690-A-WIFI)
+* [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
 
 ## Press releases
 
