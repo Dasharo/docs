@@ -8,7 +8,8 @@ running flashrom on Ubuntu 21.04.
 
 Currently, the latest flashrom release lacks support for Alder Lake S internal
 flashing. Because of this, we need to build flashrom from source of 3mdeb fork.
-The procedure is based on [Ubuntu 21.04 desktop amd64 ISO](http://www.releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso)
+The procedure is based on
+[Ubuntu 21.04 desktop amd64 ISO](http://www.releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso)
 burned on the USB stick.
 
 Boot the Ubuntu live image and select `Try ubuntu` option. Open a terminal and
@@ -36,8 +37,8 @@ $ sudo make install
 ## Flashing
 
 All flash operations require UEFI Secure Boot to be disabled. You may download
-the binary using scp (need to install openssh-server package) or wget command.
-The binaries can be found on [release page](releases.md).
+the binary using `scp` (need to install openssh-server package) or `wget`
+command. The binaries can be found on the [release page](releases.md).
 
 ### Reading flash contents
 
