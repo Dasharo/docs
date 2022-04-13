@@ -15,10 +15,12 @@ compatible with MSI PRO Z690-A WIFI DDR4.
 * Git, wget, unzip installed
 
 ```bash
-sudo apt install git  unzip wget
+sudo apt install git unzip wget
 ```
 
 * UEFIExtract installed
+   - this tool is used in the `build.sh` script to extract CPU microcode from
+     the original MSI firmware
 
 ```bash
 $ sudo apt install wget
