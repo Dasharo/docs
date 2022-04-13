@@ -19,8 +19,8 @@ sudo apt install git unzip wget
 ```
 
 * UEFIExtract installed
-   - this tool is used in the `build.sh` script to extract CPU microcode from
-     the original MSI firmware
+    - this tool is used in the `build.sh` script to extract CPU microcode from
+      the original MSI firmware
 
 ```bash
 $ sudo apt install wget
