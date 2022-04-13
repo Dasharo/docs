@@ -55,8 +55,11 @@ $ sudo flashrom -p internal -r dump.rom
 
 To flash Dasharo on the platform, execute the following command:
 
+> Replace the `VERSION` in firmware file name with the version you want to
+> flash. For example: `msi_ms7d25_v0.1.0.rom`.
+
 ```bash
-$ sudo flashrom -p internal -w msi_ms7d25_v0.1.0.rom --ifd -i bios
+$ sudo flashrom -p internal -w msi_ms7d25_vVERSION.rom --ifd -i bios
 ```
 
 After the command succeeds, invoke `poweroff` or click the power off in the GUI
