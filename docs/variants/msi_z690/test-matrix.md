@@ -15,11 +15,15 @@ described in this documentation are dedicated to the given platform
 | 2.   | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.001, DSP002.003, DSP003.001, DSP003.003 |
 | 4.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 5.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001, DMI008.001|
+| 6.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
 
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
 [USB]: ../../unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
+[DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md
+[CLG]: ../../unified-test-documentation/dasharo-compatibility/304-custom-logo.md
 
 <!--
 ## Module: Dasharo compatibility
