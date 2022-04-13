@@ -67,7 +67,6 @@
 1. Flash the `BOOTKERNEL` partition with heads:
 
     ```bash
-    # pflash -E -p /tmp/flash.pnor
     # pflash -e -P BOOTKERNEL -p /tmp/zImage.bundled
     ```
 
@@ -83,6 +82,83 @@
 
 1. Wait for a while until heads shows up:
 
-   [![asciicast](https://asciinema.org/a/VYszHn2aslY4GdAVBvsgbWb3d.svg)](https://asciinema.org/a/VYszHn2aslY4GdAVBvsgbWb3d)
+    [![asciicast](https://asciinema.org/a/VYszHn2aslY4GdAVBvsgbWb3d.svg)](https://asciinema.org/a/VYszHn2aslY4GdAVBvsgbWb3d)
 
 1. Enjoy the heads running on Talos II.
+
+## Testing firmware images without flashing
+
+It is possible to test new firmware images without flashing the physical flash
+device. This makes testing and switching between two versions (e.g. Hostboot and
+coreboot) much faster and safer. There are two ways of doing so, one is
+described on [Raptor's wiki](https://wiki.raptorcs.com/wiki/Compiling_Firmware#Running_the_firmware_temporarily)
+and requires starting `mboxd` manually, the second one is described below.
+v2.00+ BMC firmware requirement still applies.
+
+1. Read original flash:
+
+    For earlier versions of coreboot port it is required to read from system
+    that booted at least once, since some of the partitions are modified on the
+    first boot. this is no longer necessary since v0.5.0.
+
+    ```shell
+    root@talos:~# pflash -r /tmp/talos.pnor
+    ```
+
+    This file may also be copied out of BMC to a secure place and serve as a
+    backup of whole flash contents.
+
+    > Keep in mind that tmpfs size is limited and exceeding that limit may
+    > result in unresponsive BMC, which in most severe cases requires hard power
+    > cycle.
+
+1. "Flashing" modified partition(s):
+
+    This is similar to flashing real device with two changes: no need to erase
+    the flash and target file must be specified. New command looks like this:
+
+    ```shell
+    root@talos:~# pflash -P <partition> -p <partition>.bin -F /tmp/talos.pnor
+    ```
+
+    For partition and file names check previous sections. Since the real flash
+    device is not used, backup can be skipped.
+
+1. Mount the file as flash device:
+
+    ```shell
+    root@talos:~# mboxctl --backend file:/tmp/flash.pnor
+    ```
+
+    Sometimes this command fails with timeout, in that case repeat it until it
+    succeeds. Optionally, success can be tested with:
+
+    ```shell
+    root@talos:~# mboxctl --lpc-state
+    LPC Bus Maps: BMC Memory
+    ```
+
+    `BMC Memory` tells that emulated flash is used instead of real one. Host
+    doesn't see any difference (except maybe different access times and erase
+    block size), it still reads and writes PNOR the same way as with physical
+    device.
+
+1. Start the platform as described in previous sections and test it.
+
+1. To get back to using real PNOR:
+
+    ```shell
+    root@talos:~# mboxctl --backend vpnor
+    Failed to post message: Connection timed out
+    root@talos:~# mboxctl --lpc-state
+    LPC Bus Maps: Flash Device
+    ```
+
+    Even though that command reports failure, it maps LPC back to flash device.
+    This can be tested with `mboxctl --lpc-state`.
+
+1. (Optional) Flash tested image to permanent storage:
+
+    ```shell
+    root@talos:~# pflash -E -p /tmp/talos.pnor
+    ```
