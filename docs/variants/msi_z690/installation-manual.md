@@ -7,7 +7,8 @@ running flashrom on Ubuntu 21.04.
 ## Build flashrom
 
 Currently, the latest flashrom release lacks support for Alder Lake S internal
-flashing. Because of this, we need to build flashrom from source of 3mdeb fork.
+flashing. Because of this, we need to build flashrom from
+[3mdeb fork](https://github.com/3mdeb/flashrom/tree/alder_lake_s).
 The procedure is based on
 [Ubuntu 21.04 desktop amd64 ISO](http://www.releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso)
 burned on the USB stick.
