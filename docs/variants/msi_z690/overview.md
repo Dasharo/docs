@@ -17,6 +17,7 @@ documentation._
 * [Hardware configuration matrix](hardware-matrix.md) - definition of hardwre
   configuration used during validation
 * [Test matrix](test-matrix.md) - validation scope for the MSI PRO Z690-A WiFi DDR4
+* [Development](development.md) - information for Dasharo developers
 
 ## Useful documents
 
