@@ -8,16 +8,17 @@ compatible with MSI PRO Z690-A WIFI DDR4.
 ## Requirements
 
 * `Ubuntu 20.04 LTS` as a host OS
-* Docker
+* Internet connection
+* Docker installed
     - follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
     - follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
-* Git
+* Git, wget, unzip installed
 
 ```bash
-sudo apt install git
+sudo apt install git  unzip wget
 ```
 
-* UEFIExtract
+* UEFIExtract installed
 
 ```bash
 $ sudo apt install wget
@@ -43,7 +44,6 @@ Navigate to the source code directory and start the build process:
 
 ```bash
 $ cd coreboot
-$ git submodule update --init --recursive --checkout
 $ ./build.sh build
 ```
 
