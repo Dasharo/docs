@@ -31,3 +31,5 @@ documentation._
 * [Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Coreboot-Start-ADL-MSI-Dasharo)
 * [Tom's Hardware](https://www.tomshardware.com/news/msi-z690-a-pro-wifi-coreboot)
 * [Root.cz](https://www.root.cz/zpravicky/port-coreboot-na-intel-alder-lake-z690-od-msi/)
+* [GN24](https://game-news24.com/2022/04/13/open-source-coreboot-bios-is-ported-to-msi-z690-a-motherboard/)
+* [ITBusiness](https://itbusiness.com.ua/gamezone/113401-u-etogo-neubivaemogo-bios-s-otkrytym-ishodnym-kodom-ogromnyj-potenczial.html)
