@@ -85,8 +85,10 @@ nav:
           - 'Releases': variants/msi_z690/releases.md
           - 'Building manual': variants/msi_z690/building.md
           - 'Installation manual': variants/msi_z690/installation-manual.md
+          - 'Recovery': variants/msi_z690/recovery.md
           - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
           - 'Test matrix': variants/msi_z690/test-matrix.md
+          - 'Development': variants/msi_z690/development.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':

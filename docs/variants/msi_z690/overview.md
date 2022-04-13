@@ -14,6 +14,7 @@ documentation._
   the MSI PRO Z690-A WiFi DDR4
 * [Installation manual](installation-manual.md) - how to install Dasharo
   firmware on the MSI PRO Z690-A WiFi DDR4
+* [Recovery](recovery.md) - recovering bricked platform
 * [Hardware configuration matrix](hardware-matrix.md) - definition of hardware
   configuration used during validation
 * [Test matrix](test-matrix.md) - validation scope for the MSI PRO Z690-A WiFi DDR4

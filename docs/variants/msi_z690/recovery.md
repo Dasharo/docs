@@ -23,8 +23,9 @@ In this case, using external programmer is necessary. We are using
 [RTE](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 here.
 
-* Connect programmer to the flash chip as shown in the [SPI connection]()
-  section of the `development` documentation
+* Connect programmer to the flash chip as shown in the
+  [Hardware connection / SPI](development.md/#hardware-connection) section of
+  the `Development` documentation.
 
 * Download official BIOS from vendor's website:
 
