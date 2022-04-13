@@ -81,6 +81,8 @@ nav:
           - 'Installation manual': variants/protectli_vp4620/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
       - 'MSI PRO Z690-A WIFI DDR4':
+          - 'Releases': variants/msi_z690/releases.md
+          - 'Installation manual': variants/msi_z690/installation-manual.md
           - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
           - 'Test matrix': variants/msi_z690/test-matrix.md
 # - 'Development Environment':
