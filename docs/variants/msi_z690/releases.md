@@ -29,6 +29,7 @@ For details about our release process please read
 [sha256][v0.1.0_hash]{.md-button}
 [sha256.sig][v0.1.0_sig]{.md-button}
 
+See how to verify signatures on [asciinema](https://asciinema.org/a/486982)
 
 ### SBOM (Software Bill of Materials):
 
