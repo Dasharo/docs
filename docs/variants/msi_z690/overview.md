@@ -10,7 +10,7 @@ documentation._
 -->
 
 * [Releases](releases.md) - list of all releases
-* [Building manual](building.md) - how to build Dasharo compatible with
+* [Building manual](building-manual.md) - how to build Dasharo compatible with
   the MSI PRO Z690-A WiFi DDR4
 * [Installation manual](installation-manual.md) - how to install Dasharo
   firmware on the MSI PRO Z690-A WiFi DDR4

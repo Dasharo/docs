@@ -83,7 +83,7 @@ nav:
       - 'MSI PRO Z690-A WIFI DDR4':
           - 'Overview': variants/msi_z690/overview.md
           - 'Releases': variants/msi_z690/releases.md
-          - 'Building manual': variants/msi_z690/building.md
+          - 'Building manual': variants/msi_z690/building-manual.md
           - 'Installation manual': variants/msi_z690/installation-manual.md
           - 'Recovery': variants/msi_z690/recovery.md
           - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
