@@ -47,13 +47,16 @@ Check whether the all declared for the DUT cache levels are enabled.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-        getconf -a | grep CACHE
+```bash
+getconf -a | grep CACHE
+```
 
 1. Note the result.
 
 **Expected result**
 
 Example results:
+
 ```bash
 LEVEL1_ICACHE_SIZE                 32768
 LEVEL1_ICACHE_ASSOC                32
@@ -93,13 +96,16 @@ Check whether the DUT has multiple CPU support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-        lscpu
+```bash
+lscpu
+```
 
 1. Note the result.
 
 **Expected result**
 
 Example results:
+
 ```bash
 Architecture:                    ppc64le
 Byte Order:                      Little Endian
@@ -111,6 +117,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ...
 ```
+
 If `CPU(s)` are more than 1, DUT has multiple CPU support.
 
 ### CPU004.001 Multiple-core support
@@ -134,13 +141,16 @@ Check whether the DUT has multi-core support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-        lscpu
+```bash
+lscpu
+```
 
 1. Note the result.
 
 **Expected result**
 
 Example results:
+
 ```bash
 Architecture:                    ppc64le
 Byte Order:                      Little Endian
@@ -152,6 +162,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ...
 ```
+
 If `Core(s) per socket` are more than 1, DUT has multi-core support.
 
 ### CPU005.001 CPU not stuck on initial frequency
@@ -175,13 +186,16 @@ Check whether the mounted CPU does not stuck on the initial frequency.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-        cat /proc/cpuinfo | grep clock
+```bash
+cat /proc/cpuinfo | grep clock
+```
 
 1. Note the result.
 
 **Expected result**
 
 Example unwanted results:
+
 ```bash
 clock		: 2700.000000MHz
 clock		: 2700.000000MHz
@@ -198,4 +212,5 @@ clock		: 2700.000000MHz
 clock		: 2700.000000MHz
 clock		: 2700.000000MHz
 ```
+
 The values of clock should be diffrent than `2700.000000MHz`.
