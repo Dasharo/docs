@@ -29,7 +29,21 @@ For details about our release process please read
 [sha256][v0.1.0_hash]{.md-button}
 [sha256.sig][v0.1.0_sig]{.md-button}
 
-See how to verify signatures on [asciinema](https://asciinema.org/a/486982)
+See how to verify signatures on [YouTube](https://www.youtube.com/watch?v=741UtuZE8fA)
+
+Commands snippet:
+
+```
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
+gpg --list-sigs "3mdeb Master Key" "3mdeb Dasharo Master Key" "Dasharo release 0.x compatible with MSI MS-7D25 signing key"
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom.sha256.sig
+sha256sum -c msi_ms7d25_v0.1.0.rom.sha256
+gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
+```
 
 ### SBOM (Software Bill of Materials):
 
