@@ -13,11 +13,17 @@ For details about our release process please read
 
 ## v0.1.0 - 2022-04-13
 ### Added
-  
-- UEFI boot support
-- USB support
-- HDMI and DP rear panel display support
-- UEFI Shell
+
+- Initial support for the MSI PRO Z690-A WIFI DDR4 platform
+- [Dasharo boot logo](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/304-custom-logo/)
+- [Dasharo SMBIOS compatibility](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31L-smbios/)
+- [UEFI compatibility](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface/)
+- [UEFI shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
+- Configurable boot order
+- Configurable boot options
+- One-time boot feature
+- [External HDMI and Display Port rear panel display support](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd/)
+- [USB support](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support/)
 
 ### Known issues
 
@@ -29,7 +35,7 @@ For details about our release process please read
 [sha256][v0.1.0_hash]{.md-button}
 [sha256.sig][v0.1.0_sig]{.md-button}
 
-See how to verify signatures on [YouTube](https://www.youtube.com/watch?v=741UtuZE8fA)
+See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
 
 Commands snippet:
 
