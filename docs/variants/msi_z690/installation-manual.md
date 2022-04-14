@@ -25,7 +25,7 @@ $ sudo apt-get install git build-essential pkg-config libpci-dev udev
 Obtain source code:
 
 ```bash
-$ git clone https://github.com/3mdeb/flashrom.git -b alder_lake_s
+$ git clone https://github.com/Dasharo/flashrom.git -b bbb599e5c4f63e3b98098db252836f9c830f1857
 $ cd flashrom
 ```
 
