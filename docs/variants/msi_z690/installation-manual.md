@@ -51,6 +51,11 @@ following command:
 $ sudo flashrom -p internal -r dump.rom
 ```
 
+**IMPORTANT!** You will need a second USB storage to keep the dumped firmware
+backup or alternatively upload it to some cloud or network drive (Ubuntu live
+has a Firefox browser installed). Ubuntu live image is volatile and has no
+persistent storage. All changes made in live image will be lost after reboot.
+
 ### Flashing Dasharo
 
 To flash Dasharo on the platform, execute the following command:
