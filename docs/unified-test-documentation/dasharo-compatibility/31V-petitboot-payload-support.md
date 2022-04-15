@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Petitboot support
+# Dasharo Compatibility: Petitboot payload support
 
 ## Test cases
 
@@ -13,7 +13,7 @@
 
 **Test description**
 
-This test verifies that the DUT during booting procedure can reach Petitboot
+This test verifies that the DUT during booting procedure reaches Petitboot
 menu.
 
 **Test configuration data**
@@ -54,12 +54,12 @@ works correctly.
 1. Wait for the `Petitboot` to boot.
 1. Select the `System Information` option using the arrow keys and press
     `Enter`.
-1. Note results.
+1. Note the result.
 
 **Expected result**
 
-After select `System Information` option, informations about `Petitboot` should
-be displayed.
+After select `System Information` option, device information tree should be
+displayed.
 
 ### PBT003.001 Rescan Devices by Petitboot
 
@@ -81,11 +81,11 @@ works correctly.
 1. Power on the DUT.
 1. Wait for the `Petitboot` to boot.
 1. Select the `Rescan Devices` option using the arrow keys and press `Enter`.
-1. Note results.
+1. Note the results.
 1. Attach `USB Stick` with bootable system to USB port in DUT.
-1. Select the `Rescan Devices` again and note results.
+1. Select the `Rescan Devices` again and note the results.
 
 **Expected result**
 
-Information of inserted `USB Stick` should be displayed after the next use of
-the `Rescan Devices` option.
+Information about the attached `USB Stick` should be displayed after the
+second use of the `Rescan Devices` option.
