@@ -30,7 +30,7 @@ be accessed from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Check the version of installed tpm2-tools - execute the following command
 in the terminal:
 
@@ -174,7 +174,7 @@ be accessed from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a PowerShell and execute following command:
 
 ```PowerShell

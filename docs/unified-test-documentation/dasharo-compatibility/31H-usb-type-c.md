@@ -35,7 +35,7 @@ connected smartphone.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Connect a phone to the USB Type-A port located on the left side of the laptop
     using a USB cable.
 1. Note the charging status on the phone screen.
@@ -68,7 +68,7 @@ a connected smartphone.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Connect a phone to the Thunderbolt 4 USB Type-C port located on the left side
     of the laptop using a USB cable.
 1. Note the charging status on the phone screen.
@@ -97,7 +97,7 @@ supply connected to the Thunderbolt 4 port.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Connect the charger plug to the Thunderbolt 4 USB Type-C port located on the
     left side of the laptop.
 1. Observe the battery indicator located in the top right corner of the screen.
@@ -126,9 +126,9 @@ supply connected to the Thunderbolt 4 port.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Connect the charger plug to the Thunderbolt 4 USB Type-C port located on the
     left side of the laptop.
 1. Observe the battery indicator located in the bottom right corner of the
@@ -158,7 +158,7 @@ the Thunderbolt 4 USB Type-C port.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Connect a display to the Thunderbolt 4 USB Type-C port located on the left
     side of the laptop using the USB Type-C hub.
 1. Open the Settings application and select the Displays panel in the left menu.
@@ -190,7 +190,7 @@ the Thunderbolt 4 USB Type-C port.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Connect a display to the Thunderbolt 4 USB Type-C port located on the left.
     side of the laptop using a USB Type-C hub.
 1. Right click on the desktop to open the desktop context menu.

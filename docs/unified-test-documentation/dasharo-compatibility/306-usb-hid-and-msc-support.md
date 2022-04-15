@@ -65,7 +65,7 @@ labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the follwing command:
 
     ```bash
@@ -99,7 +99,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open PowerShell and and run the follwing command:
 
     ```bash
@@ -162,7 +162,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the follwing command:
 
     ```bash
@@ -209,7 +209,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open `notepad`.
 1. Test the alphanumeric keys and note the generated characters.
 1. Test non-alphanumeric keys and verify that they generate the signs.

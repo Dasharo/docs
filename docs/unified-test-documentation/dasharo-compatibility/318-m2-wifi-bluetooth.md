@@ -35,7 +35,7 @@ and can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
 ```bash
@@ -72,7 +72,7 @@ and can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open PowerShell and execute following command:
 
 ```bash
@@ -116,7 +116,7 @@ correctly and can be used from within the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following commands as root:
 
 ```bash
@@ -167,7 +167,7 @@ correctly and can be used from within the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Locate in the bottom right corner of the screen `Internet access`
     icon and click it.
 1. Enable Wi-Fi and note the result.
@@ -198,7 +198,7 @@ correctly and can be used from within the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following commands:
 
 ```bash
@@ -250,7 +250,7 @@ correctly and can be used from within the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Enter `Notification Center` in the bottom right part of the screen.
 1. Using right mouse button click on the Bluetooth icon.
 1. In shown drop-down menu click `Go to settings`.

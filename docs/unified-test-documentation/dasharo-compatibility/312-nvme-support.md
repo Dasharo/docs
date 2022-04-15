@@ -53,7 +53,7 @@ the M.2 slot.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
 ```bash
@@ -94,7 +94,7 @@ M.2 slot.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open device manager.
 1. Select `Disk drives` option and find correct drive.
 1. Right click the drive entry and select `Properties` option
