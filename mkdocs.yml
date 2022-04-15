@@ -165,6 +165,7 @@ nav:
               - 'Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
               - 'Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
               - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
+              - 'Device Tree': unified-test-documentation/dasharo-compatibility/31W-device-tree.md
               - 'USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
               - 'CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
               - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
