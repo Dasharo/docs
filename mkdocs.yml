@@ -164,6 +164,7 @@ nav:
               - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
               - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
               - 'USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
+              - 'CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
               - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
               - 'Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
               - 'SD card reader': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
