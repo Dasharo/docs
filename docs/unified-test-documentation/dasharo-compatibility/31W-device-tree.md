@@ -47,7 +47,11 @@ Tree.
 **Expected result**
 
 The output of the command should contain information about memory sectors
-dedicated for coreboot. 
+dedicated for coreboot. Example output:
+
+```bash
+00000000: 636f 7265 626f 6f74 00                   coreboot
+```
 
 ### DVT002.001 Memory for coreboot is reserved (Ubuntu 20.04)
 
@@ -77,21 +81,17 @@ coreboot.
     ```
 
 1. Note the results.
+1. Run the following command in the terminal:
+
+    ```bash
+     xxd /sys/firmware/devicetree/base/reserved-memory/ranges
+    ```
 
 **Expected result**
 
-If output is diffrent from:
-
-```bash
-No such file or directory
-```
-
-test completed successfully.
-
-Example results:
-
-```bash
-1b[?2004l
-00000000: 636f 7265 626f 6f74 00 coreboot.
-1b[?2004h
-```
+1. Output of the first command should contain information about memory ranges
+    for corebotot.
+1. Output of the second command should contain information about reserved
+    ranges.
+1. All memory range for coreboot (output from command 1) should be reserved
+    (output from command 2).
