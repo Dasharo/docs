@@ -36,6 +36,8 @@ For details about our release process please read
 [sha256][v1.0.13_hash]{.md-button}
 [sha256.sig][v1.0.13_sig]{.md-button}
 
+See how to verify signatures on [asciinema](TBD)
+
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.16 revision 546e1c86](https://github.com/Dasharo/coreboot/tree/546e1c86)

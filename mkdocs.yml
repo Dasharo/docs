@@ -81,8 +81,14 @@ nav:
           - 'Installation manual': variants/protectli_vp4620/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
       - 'MSI PRO Z690-A WIFI DDR4':
+          - 'Overview': variants/msi_z690/overview.md
+          - 'Releases': variants/msi_z690/releases.md
+          - 'Building manual': variants/msi_z690/building-manual.md
+          - 'Installation manual': variants/msi_z690/installation-manual.md
+          - 'Recovery': variants/msi_z690/recovery.md
           - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
           - 'Test matrix': variants/msi_z690/test-matrix.md
+          - 'Development': variants/msi_z690/development.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
@@ -158,6 +164,7 @@ nav:
               - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
               - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
               - 'USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
+              - 'CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
               - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
               - 'Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
               - 'SD card reader': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
