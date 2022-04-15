@@ -60,7 +60,7 @@ functional.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
 ```bash
@@ -137,7 +137,7 @@ proceed to boot from Slot A.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
 ```bash
@@ -185,7 +185,7 @@ should revert to booting from the recovery slot.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Flash coreboot signed with wrong vboot keys by executing the following
 command:
 
@@ -197,14 +197,14 @@ flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 1. Connect to the DUT using the serial port.
 1. Power on the DUT
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
 ```bash
 sudo ./cbmem -c | grep -i recovery
 ```
 
-1. If booting into system is impossible, read coreboot loading logs.
+1. If booting into the system is impossible, read coreboot loading logs.
 
 **Expected result**
 

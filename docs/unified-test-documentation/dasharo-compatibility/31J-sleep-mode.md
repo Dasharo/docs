@@ -35,7 +35,7 @@ the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Charge the battery fully (note: due to the manufacturer's settings the
     maximum battery charge level is limited to 90%; also, the battery charging
     process can only be started if the current battery level is less than 80%).
@@ -82,7 +82,7 @@ the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Charge the battery fully (note: due to the manufacturer's settings the
     maximum battery charge level is limited to 90%; also, the battery charging
     process can only be started if the current battery level is less than 80%).

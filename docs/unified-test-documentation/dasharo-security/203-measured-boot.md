@@ -35,7 +35,7 @@ TPM.a.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
 ```bash

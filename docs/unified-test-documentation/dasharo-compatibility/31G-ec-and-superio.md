@@ -34,7 +34,7 @@ This test verifies whether the battery charge level is reported in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Locate the power menu in the upper right corner of the screen.
 1. Open the power menu and locate the battery status indicator.
 
@@ -62,7 +62,7 @@ This test verifies whether the battery charge level is reported in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Locate the power menu in the lower right corner of the screen.
 
 **Expected result**
@@ -89,7 +89,7 @@ This test verifies that the power supply state is detected correctly in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Locate the power menu in the upper right corner of the screen.
 1. Open the power menu and locate the battery status indicator.
 1. Note the current state.
@@ -124,7 +124,7 @@ This test verifies that the power supply state is detected correctly in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Locate the power menu in the lower right corner of the screen.
 1. Open the power menu and locate the battery status indicator.
 1. Note the current state.
@@ -161,7 +161,7 @@ by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Verify that the cursor can be moved with the touchpad and that clicking works
     (test both clicking and tapping).
 1. Run `sudo libinput debug-events` in the terminal:
@@ -194,7 +194,7 @@ by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Verify that the cursor can be moved with the touchpad and that clicking
     works (test both clicking and tapping).
 1. Open `C:\Windows` in `Windows Explorer`
@@ -254,7 +254,7 @@ system and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Run `sudo libinput debug-events --show-keycodes` in the terminal.
 1. Press each keyboard key and check the generated keycode.
 
@@ -284,7 +284,7 @@ system and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open `notepad`
     1. Test the alphanumeric keys and note the generated characters
     1. Test non-alphanumeric keys and verify that they generate the signs
@@ -319,7 +319,7 @@ This test verifies that the play/pause hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Run `sudo libinput debug-events --show-keycodes` in the terminal.
 1. Verify that pressing the play/pause key generates a `KEY_PLAYPAUSE` event.
 
@@ -346,7 +346,7 @@ This test verifies that the play/pause hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Start `Groove Music`
 1. Verify that when pressing the `play/pause` button, player menu apperars
     in the upper left part of the screen for a few seconds.
@@ -374,7 +374,7 @@ This test verifies that the cooling mode hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the cooling mode hotkey (Fn + 1) once and note the effect.
 1. Press the cooling mode hotkey once again and note the effect.
 
@@ -404,7 +404,7 @@ This test verifies that the cooling mode hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the cooling mode hotkey (Fn + 1) once and note the effect.
 1. Press the cooling mode hotkey once again and note the effect.
 
@@ -430,7 +430,7 @@ This test verifies that the touchpad on/off hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Proceed with the [Common](#common) section.
 1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
 
@@ -477,7 +477,7 @@ This test verifies that the touchpad on/off hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the touchpad on/off key and try to use the touchpad.
 1. Press the touchpad on/off key once again and try to use the touchpad again.
 
@@ -506,7 +506,7 @@ This test verifies that the display on/off hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the display on/off hotkey once and note the effect.
 1. Press any key on the keyboard and note the effect.
 
@@ -534,7 +534,7 @@ This test verifies that the display on/off hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the display on/off hotkey once and note the effect.
 1. Press any key on the keyboard and note the effect.
 
@@ -563,7 +563,7 @@ This test verifies that the volume mute hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the volume mute hotkey twice and note the effect each keypress has.
 
 **Expected result**
@@ -591,7 +591,7 @@ This test verifies that the mute hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the mute hotkey once and check the volume indicator in the bottom right
    part of the screen.
 1. Press the mute hotkey once and check the volume indicator again.
@@ -620,7 +620,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the keyboard backlight hotkey 6 times and note the effect on the
    keyboard backlight after each keypress.
 
@@ -649,7 +649,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the keyboard backlight hotkey 6 times and note the effect on the
    keyboard backlight after each keypress.
 
@@ -678,7 +678,7 @@ This test verifies that the volume down hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the volume down hotkey once and note the effects.
 
 **Expected result**
@@ -707,7 +707,7 @@ This test verifies that the volume down hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the volume down hotkey once and note the effects.
 
 **Expected result**
@@ -736,7 +736,7 @@ This test verifies that the volume up hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the volume up hotkey once and note the effects.
 
 **Expected result**
@@ -765,7 +765,7 @@ This test verifies that the volume up hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the volume down hotkey once and note the effects.
 
 **Expected result**
@@ -795,7 +795,7 @@ This test verifies that the display switch hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Run `sudo libinput debug-events --show-keycodes` in the terminal.
 1. Press the display switch hotkey once and note the effect.
 
@@ -829,7 +829,7 @@ This test verifies that the display switch hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the display switch hotkey once and note the effect.
 
 **Expected result**
@@ -856,7 +856,7 @@ This test verifies that the brightness down hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Pressing the hotkey should decrease the brightness of the internal LCD
    display.
 1. Each keypress should cause a brightness down notification to appear in the
@@ -881,7 +881,7 @@ This test verifies that the brightness down hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the brightness down hotkey once and note the effects.
 
 **Expected result**
@@ -910,7 +910,7 @@ This test verifies that the brightness up hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the brightness up hotkey once and note the effects.
 
 **Expected result**
@@ -939,7 +939,7 @@ This test verifies that the brightness down hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the brightness up hotkey once and note the effects.
 
 **Expected result**
@@ -968,7 +968,7 @@ This test verifies that the camera on/off hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open the terminal and run the command: `watch -n1 lsusb`.
 1. Press the camera on/off hotkey twice and note the effect after each
     keypress.
@@ -999,7 +999,7 @@ This test verifies that the camera on/off hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open the `Camera` app.
 1. Press the camera on/off hotkey twice and note the effect after
    a few seconds after the keypress.
@@ -1029,7 +1029,7 @@ This test verifies that the flight mode hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Locate and open the power menu in the upper right corner of the screen.
 1. Enter Settings and navigate to the Wi-Fi panel.
 1. Note the current state of the Airplane Mode switch.
@@ -1059,7 +1059,7 @@ This test verifies that the flight mode hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the camera on/off hotkey twice and note the effect after the keypress.
 
 **Expected result**
@@ -1090,7 +1090,7 @@ This test verifies that the sleep hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the sleep hotkey once and note the result.
 1. Look at the power LED located next to the AC adapter plug, towards the front
    end of the laptop.
@@ -1119,7 +1119,7 @@ This test verifies that the sleep hotkey works correctly.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the sleep hotkey once and note the result.
 1. Look at the power LED located next to the AC adapter plug, towards the front
    end of the laptop.
@@ -1150,7 +1150,7 @@ mode.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open the terminal and run the following command to check the power button
     action:
 
@@ -1211,7 +1211,7 @@ mode.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the power button once and note the result.
 
 **Expected result**
@@ -1239,7 +1239,7 @@ system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open one terminal window and run the following command:
 
     ```bash
@@ -1279,7 +1279,7 @@ system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Close the lid and note the effect on the power LED.
 
 **Expected result**
@@ -1307,7 +1307,7 @@ the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard toggle hotkey twice and note the result each time.
 
 **Expected result**
@@ -1335,7 +1335,7 @@ the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard toggle hotkey twice and note the result each time.
 
 **Expected result**
@@ -1363,7 +1363,7 @@ by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard color hotkey repeatedly until the keyboard cycles
    through all color modes.
 
@@ -1392,7 +1392,7 @@ by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard color hotkey repeatedly until the keyboard cycles
    through all color modes.
 
@@ -1421,7 +1421,7 @@ properly by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard brightness down hotkey and note the result.
 
 **Expected result**
@@ -1448,7 +1448,7 @@ properly by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard brightness down hotkey and note the result.
 
 **Expected result**
@@ -1475,7 +1475,7 @@ properly by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard brightness up hotkey and note the result.
 
 **Expected result**
@@ -1502,7 +1502,7 @@ properly by the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Press the RGB keyboard brightness up hotkey and note the result.
 
 **Expected result**

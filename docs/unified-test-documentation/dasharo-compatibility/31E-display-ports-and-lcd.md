@@ -60,7 +60,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Observe the internal LCD after the `OPERATING_SYSTEM` has booted.
 
 **Expected result**
@@ -87,7 +87,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log the  by using the proper login and password.
 1. Observe the internal LCD after the `OPERATING_SYSTEM` has booted.
 
 **Expected result**
@@ -115,7 +115,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log the  by using the proper login and password.
 1. If using more than one display, switch the display mode between `Mirror` and
     `Join Displays`.
 
@@ -144,7 +144,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log the  by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
     and `Extend`.
 
@@ -199,7 +199,7 @@ in the OS.
 
 1. Power on the DUT.
 2. Boot into the system.
-3. Log into system by using the proper login and password.
+3. Log the  by using the proper login and password.
 4. If using more than one display, switch the display mode between `Mirror` and
     `Join Displays`.
 
@@ -229,7 +229,7 @@ display in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log the  by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
     and `Extend`.
 
@@ -284,7 +284,7 @@ This test aims to verify initialization of the external VGA in the OS.
 
 1. Power on the DUT.
 2. Boot into the system.
-3. Log into system by using the proper login and password.
+3. Log the  by using the proper login and password.
 4. If using more than one display, switch the display mode between `Mirror` and
     `Join Displays`.
 
@@ -313,7 +313,7 @@ This test aims to verify initialization of the external VGA in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log the  by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
     and `Extend`.
 

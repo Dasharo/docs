@@ -36,7 +36,7 @@ can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
 ```bash
@@ -71,7 +71,7 @@ can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open `Device Manager`
 1. Find `Memory technology devices` category and expand it
 1. In the expanded section, find `Realtek PCIE CardReader` device
@@ -102,7 +102,7 @@ can be used from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following commands as root:
 
 ```bash
@@ -141,7 +141,7 @@ can be used from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open `Windows Explorer` and go to `This PC`
 1. Find SD card icon and double click it
 1. Click the right mouse button and choose `New` then choose `Text Document`
