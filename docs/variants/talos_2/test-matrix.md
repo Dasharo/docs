@@ -23,7 +23,7 @@ described in this documentation are dedicated to the given platform
 [CBP]: ../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
 [PBT]: ../../unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
 [HDS]: ../../unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
-[DVT]: 
+[DVT]: ../../unified-test-documentation/dasharo-compatibility/31W-device-tree.md
 [USB]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
 [UBB]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
