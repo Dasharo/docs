@@ -71,23 +71,23 @@ Check whether all declared for the DUT cache levels are enabled.
 The utput of the command should contain information about all cache levels,
 their size and association. Example output:
 
-    ```bash
-    LEVEL1_ICACHE_SIZE                 32768
-    LEVEL1_ICACHE_ASSOC                32
-    LEVEL1_ICACHE_LINESIZE             128
-    LEVEL1_DCACHE_SIZE                 32768
-    LEVEL1_DCACHE_ASSOC                32
-    LEVEL1_DCACHE_LINESIZE             128
-    LEVEL2_CACHE_SIZE                  524288
-    LEVEL2_CACHE_ASSOC                 2048
-    LEVEL2_CACHE_LINESIZE              32
-    LEVEL3_CACHE_SIZE                  10485760
-    LEVEL3_CACHE_ASSOC                 40960
-    LEVEL3_CACHE_LINESIZE              32
-    LEVEL4_CACHE_SIZE                  0
-    LEVEL4_CACHE_ASSOC                 0
-    LEVEL4_CACHE_LINESIZE              0
-    ```
+```bash
+LEVEL1_ICACHE_SIZE                 32768
+LEVEL1_ICACHE_ASSOC                32
+LEVEL1_ICACHE_LINESIZE             128
+LEVEL1_DCACHE_SIZE                 32768
+LEVEL1_DCACHE_ASSOC                32
+LEVEL1_DCACHE_LINESIZE             128
+LEVEL2_CACHE_SIZE                  524288
+LEVEL2_CACHE_ASSOC                 2048
+LEVEL2_CACHE_LINESIZE              32
+LEVEL3_CACHE_SIZE                  10485760
+LEVEL3_CACHE_ASSOC                 40960
+LEVEL3_CACHE_LINESIZE              32
+LEVEL4_CACHE_SIZE                  0
+LEVEL4_CACHE_ASSOC                 0
+LEVEL4_CACHE_LINESIZE              0
+```
 
 ### CPU003.001 Multiple CPU support
 
@@ -122,16 +122,16 @@ The output of the command should contain basic information about the CPU,
 including the number of the `CPU (s)`. If `CPU(s)` are more than 1, the DUT
 has multiple CPU support. Example results:
 
-    ```bash
-    Architecture:                    ppc64le
-    Byte Order:                      Little Endian
-    CPU(s):                          32
-    On-line CPU(s) list:             0-31
-    Thread(s) per core:              4
-    Core(s) per socket:              4
-    Socket(s):                       2
-    NUMA node(s):                    2
-    ```
+```bash
+Architecture:                    ppc64le
+Byte Order:                      Little Endian
+CPU(s):                          32
+On-line CPU(s) list:             0-31
+Thread(s) per core:              4
+Core(s) per socket:              4
+Socket(s):                       2
+NUMA node(s):                    2
+```
 
 ### CPU004.001 Multiple-core support
 
@@ -166,16 +166,16 @@ The output of the command should contain basic information about the CPU,
 including the number of the `Core(s) per socket`. If `Core(s) per socket`
 are more than 1, the DUT has multi-core support. Example results:
 
-    ```bash
-    Architecture:                    ppc64le
-    Byte Order:                      Little Endian
-    CPU(s):                          32
-    On-line CPU(s) list:             0-31
-    Thread(s) per core:              4
-    Core(s) per socket:              4
-    Socket(s):                       2
-    NUMA node(s):                    2
-    ```
+```bash
+Architecture:                    ppc64le
+Byte Order:                      Little Endian
+CPU(s):                          32
+On-line CPU(s) list:             0-31
+Thread(s) per core:              4
+Core(s) per socket:              4
+Socket(s):                       2
+NUMA node(s):                    2
+```
 
 ### CPU005.001 CPU not stuck on initial frequency
 
@@ -213,19 +213,19 @@ considered as failed.
 
 Example of unwanted results:
 
-    ```bash
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    clock		: 2700.000000MHz
-    ```
+```bash
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+clock		: 2700.000000MHz
+```
