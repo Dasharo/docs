@@ -162,8 +162,11 @@ nav:
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
               - 'Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
+              - 'Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
+              - 'Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
               - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
               - 'USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
+              - 'CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
               - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
               - 'Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
               - 'SD card reader': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
