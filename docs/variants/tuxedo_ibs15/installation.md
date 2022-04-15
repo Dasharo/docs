@@ -58,7 +58,8 @@ required. Follow the steps below:
 - While holding the Fn+M keys, power on the laptop - This unlocks the ME and
   allows for it to be overwritten. The fans will spin at 100% speed at this
   point
-- Execute the following command:
+- Execute the following command, replacing [path] with the path to the firmware
+  image you want to flash, e.g. `tuxedo_ibs15_full_v1.0.0.rom`
 
   ```bash
   # flashrom -p internal -w [path]
