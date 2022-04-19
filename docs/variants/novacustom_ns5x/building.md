@@ -21,22 +21,29 @@ Obtain the image:
 $ docker pull coreboot/coreboot-sdk:0ad5fbd48d
 ```
 
-Obtain coreboot source code for NovaCustom NS5X:
+Clone the coreboot repository:
 
 ```bash
-$ git clone https://github.com/Dasharo/coreboot.git
+$ git clone https://review.coreboot.org/coreboot.git
 ```
 
-Navigate to the source code directory and checkout to the desired revision:
+Update the submodules:
+
+```bash
+$ cd coreboot
+$ git submodule update --init --recursive --checkout
+```
+
+Checkout to the desired Dasharo revision:
 
 > Replace the REVISION with one of the:
 > - `novacustom_ns5x/release` for the latest released version
 > - `novacustom_ns5x/vVERSION` (e.g. `v1.0.0`) for the given release
 
 ```bash
-$ cd coreboot
+$ git remote add dasharo https://github.com/dasharo/coreboot.git
+$ git fetch dasharo
 $ git checkout REVISION
-$ git submodule update --init --recursive --checkout
 ```
 
 ```bash
