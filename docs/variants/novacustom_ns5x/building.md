@@ -38,7 +38,7 @@ Checkout to the desired Dasharo revision:
 
 > Replace the REVISION with one of the:
 > - `novacustom_ns5x/release` for the latest released version
-> - `novacustom_ns5x/vVERSION` (e.g. `v1.0.0`) for the given release
+> - `novacustom_ns5x_vVERSION` (e.g. `v1.0.0`) for the given release
 
 ```bash
 $ git remote add dasharo https://github.com/dasharo/coreboot.git
