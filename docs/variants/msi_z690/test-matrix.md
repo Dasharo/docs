@@ -17,11 +17,10 @@ described in this documentation are dedicated to the given platform
 | 4.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
 | 5.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001, DMI008.001|
 | 6.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
-| 7.   | [miniPCIe slot verification][MWL]                 | MWL           | MWL001.001, MWL002.001, MWL003.001, MWL004.001 |
-| 8.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
-| 9.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD004.001, AUD005.001, AUD006.001 |
-| 10.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM002.001               |
-| 11.  | [Network boot][PXE]                               | PXE           | All                                  |
+| 7.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
+| 8.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD004.001, AUD005.001, AUD006.001 |
+| 9.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM002.001               |
+| 10.  | [Network boot][PXE]                               | PXE           | All                                  |
 
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
