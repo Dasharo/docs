@@ -41,7 +41,8 @@ and `cbfstool`.
 	$ cbfstool [path] remove -r BOOTSPLASH -n logo.bmp
 	```
 
-1. Add your desired bootlogo to the firmware image:
+1. Add your desired bootlogo to the firmware image (replace `[path]` with the
+   path to your firmware image and `[logo]` with the path to the logo):
 	```bash
 	$ util/cbfstool/cbfstool [path] add -f [logo] -r BOOTSPLASH -n logo.bmp -t raw -c lzma
 	```
