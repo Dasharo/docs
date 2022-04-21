@@ -1,4 +1,4 @@
-# Test matrix - Clevo NS70
+# Test matrix - Clevo NS5x/NS7x
 
 ## About
 
@@ -13,8 +13,7 @@ described in this documentation are dedicated to the given platform
 |:----:|:-------------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                      | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                       | EFI           | All                                  |
-| 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
-|      |                                                        |               | DSP002.001, DSP002.002, DSP002.003   |
+| 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002, DSP002.003 |
 | 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Whithout ECR010.001 and ECR010.002   |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
@@ -28,8 +27,7 @@ described in this documentation are dedicated to the given platform
 | 14.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 15.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
 | 16.  | [Custom fan curve][FAN]                                | FAN           | FAN001.001                           |
-| 17.  | [SMBIOS][DMI]                                          | DMI           | DMI002.001, DMI003.001, DMI005.001,  |
-|      |                                                        |               | DMI006.001, DMI007.001, DMI008.001   |
+| 17.  | [SMBIOS][DMI]                                          | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -53,10 +51,9 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | TPM Support                                       | TPM           | All                                  |
-| 2.   | Verified Boot support                             | VBO           | VBO001.002, VBO002.002               |
-| 3.   | Measured Boot support                             | MBO           | All                                  |
-| 4.   | Secure Boot support                               | SBO           | All                                  |
+| 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
+| 2.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
+| 3.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
