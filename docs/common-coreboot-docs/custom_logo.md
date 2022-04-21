@@ -19,7 +19,7 @@ The image file must fulfill a number of requirements:
 ## Replace logo in an existing image
 
 For devices supporting persistent bootlogo, it's possible to replace the logo
-without rebuilding coreboot from scratch. You only need the firmware image
+without rebuilding firmware from scratch. You only need the firmware image
 and `cbfstool`.
 
 1. Obtain cbfstool source code (skip if you've already cloned the coreboot
@@ -44,11 +44,12 @@ and `cbfstool`.
 1. Add your desired bootlogo to the firmware image (replace `[path]` with the
    path to your firmware image and `[logo]` with the path to the logo):
 	```bash
-	$ util/cbfstool/cbfstool [path] add -f [logo] -r BOOTSPLASH -n logo.bmp -t raw -c lzma
+	$ cbfstool [path] add -f [logo] -r BOOTSPLASH -n logo.bmp -t raw -c lzma
 	```
 
-1. Now you can flash the updated coreboot image. If you're not updating firmware
-   and just changing the logo, only the BOOTSPLASH region needs to be updated:
+1. Now you can flash the updated firmware image as usual. If you're not
+   updating firmware and just changing the logo, only the BOOTSPLASH region
+   needs to be updated. For example:
 	```bash
 	$ sudo flashrom -p internal --fmap -i BOOTSPLASH -w [path]
 	```
