@@ -11,6 +11,45 @@ For details about our release process please read
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
 
+## v1.1.0 - 2022-04-22
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
+
+### Added
+
+- Support for NovaCustom NS7x
+- [Support for RGB Keyboard](https://docs.dasharo.com/variants/novacustom_ns5x/rgb_keyboard/)
+- [Persistent boot logo implementation](https://docs.dasharo.com/common-coreboot-docs/custom_logo/)
+
+### Changed
+
+- [Temporarily disable vboot due to the risk of bricinkg certain units when flashing via internal programmer](https://github.com/Dasharo/dasharo-issues/issues/73)
+
+### Known issues
+
+- [CPU not running on expected frequency and usage NS50MU](https://github.com/Dasharo/dasharo-issues/issues/64)
+- [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://github.com/Dasharo/dasharo-issues/issues/57)
+- [The touchpad ON/OFF switch Fn key is not functional](https://github.com/Dasharo/dasharo-issues/issues/38)
+- [Incorrect vendor name in SMBIOS](https://github.com/Dasharo/dasharo-issues/issues/74)
+
+### Binaries
+
+[novacustom_ns5x_v1.1.0.rom][rom_v1.1.0]{ .md-button }
+[sha256][sha_v1.1.0]{ .md-button }
+[sha256.sig][sig_v1.1.0]{ .md-button }
+
+[rom_v1.1.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/novacustom_ns5x_v1.1.0.rom
+[sha_v1.1.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/novacustom_ns5x_v1.1.0.rom.sha256
+[sig_v1.1.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/novacustom_ns5x_v1.1.0.rom.sha256.sig
+
+See how to verify signatures on [this video](https://asciinema.org/a/433461)
+
+### SBOM (Software Bill of Materials):
+
+- [coreboot based on 4.16 revision c2f031af](https://github.com/Dasharo/coreboot/tree/c2f031af)
+- [tianocore based on e0334c228ce4ba51f47ff79a118f214031d4650f revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)
+
 ## v1.0.0 - 2022-03-23
 
 ### Added
