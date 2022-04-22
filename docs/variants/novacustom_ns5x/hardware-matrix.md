@@ -14,7 +14,7 @@ coreboot port on the Clevo NS51/NS70 laptops.
 | **RAM**                        | Slot 1: KVR32S22D8/16                            |
 |                                | Slot 2: KVR32S22D8/16                            |
 | **SSD**                        | Samsung SSD 980 PRO 250 GB                       |
-| **Flash memory**               | GigaDevice 25B127DSIG 16 MB                      |
+| **Flash memory**               | Winbond 25Q128JVSQ 2118 16 MB                    |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
 |                                | 2. Internal keyboard with LED backlight          |
