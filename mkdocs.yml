@@ -77,6 +77,7 @@ nav:
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'RGB keyboard': variants/novacustom_ns5x/rgb_keyboard.md
           - 'Hardware Configuration Matrix': variants/novacustom_ns5x/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
       - 'Protectli VP4620':
           - 'Releases': variants/protectli_vp4620/releases.md
           - 'Building manual': variants/protectli_vp4620/building-manual.md
