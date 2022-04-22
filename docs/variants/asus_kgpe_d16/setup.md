@@ -181,8 +181,8 @@ The build shall look like this:
 ![Flash](flash_chip_adapter/flash_chip_adapter_1.jpg){: style="height:595px"}
 ![Flash](flash_chip_adapter/flash_chip_adapter_2.jpg){: style="height:595px"}
 
-Such adapters will be soon available in our shop for purchase. For more details
-how to enable SPI flash protection refer to [SPI FLash protection page](spi-wp.md).
+Such adapters are now available in our [online shop](https://3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/) for purchase. 
+For more details how to enable SPI flash protection refer to [SPI FLash protection page](spi-wp.md).
 
 ### Power management
 
