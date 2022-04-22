@@ -69,7 +69,10 @@ require more recent microcode.
 
 We can say the "supported" one is the one we have tested. It is the
 `Kingston Fury Beast KF436C17BBK4/32` part populated in all 4 slots, and you
-can check that in the [Hardware Configuration Matrix](../hardware-matrix).
+can check that in the [Hardware Configuration Matrix](../hardware-matrix). At
+that point it was not extensively tested either, though. Once the memory
+initialization goes through (we can see firmware logo on the display, and then
+boot into OS), we assume it is good enough at this stage.
 
 No other memory modules or combination in slots were verified so far. This is
 on the roadmap for future releases.
