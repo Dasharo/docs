@@ -77,13 +77,12 @@ boot into OS), we assume it is good enough at this stage.
 No other memory modules or combination in slots were verified so far. This is
 on the roadmap for future releases.
 
-Some mention about the Motherboard Memory Compatibiliy List not applying to
-Dasharo due to the differences between IBV modified code and Intel reference
-FSP.
-
-Maybe linking the PDFs that we had to go though when we picked the memory
-modules, since Intel maintains its own FSP compatibility list so we are
-expecting those to work. Are those public?
+You **should not** refer to the
+[Memory Compatibility](https://www.msi.com/Motherboard/PRO-Z690-A-DDR4/support#mem)
+of the mainboard. It does not need to apply here due the difference on what
+memory initialization routines are used in the original MSI firmware and the
+ones in Dasharo firmware (provied by the
+[Intel FSP](https://www.intel.com/FSP)).
 
 ## What is the memory profile?
 
