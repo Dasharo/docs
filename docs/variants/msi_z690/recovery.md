@@ -24,7 +24,7 @@ In this case, using external programmer is necessary. We are using
 here.
 
 * Connect programmer to the flash chip as shown in the
-  [Hardware connection / SPI](development.md/#hardware-connection) section of
+  [Hardware connection / SPI](../development/#hardware-connection) section of
   the `Development` documentation.
 
 * Download official BIOS from vendor's website:
