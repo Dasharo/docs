@@ -30,7 +30,6 @@ coreboot port on the Clevo NS51/NS70 laptops.
 |                                | 7. 4-port USB Type-C Hub Pro                     |
 | **Power Supply**               | Chicony 65 W                                     |
 | **Power Control**              | N/A                                              |
-| **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
 
 ## NS70
 
@@ -58,4 +57,3 @@ coreboot port on the Clevo NS51/NS70 laptops.
 |                                | 7. 4-port USB Type-C Hub Pro                     |
 | **Power Supply**               | Chicony 65 W                                     |
 | **Power Control**              | N/A                                              |
-| **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
