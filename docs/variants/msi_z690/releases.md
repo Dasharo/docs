@@ -11,6 +11,50 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
+## v0.2.0 - 2022-04-22
+### Added
+
+- Configurable boot order
+- Configurable boot options
+- [NVMe support](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/312-nvme-support/)
+- [Integrated WiFi and BT support](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth/)
+- PCIe support
+- [Network boot with integrated Ethernet](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/315-network-boot/)
+- [Audio support](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31F-audio-subsystem/)
+
+### Known issues
+
+- [USB storage devices disappear after reboot/power failure](https://github.com/Dasharo/dasharo-issues/issues/70)
+- [Some PCIe ports are not working](https://github.com/Dasharo/dasharo-issues/issues/75)
+
+
+### Binaries
+
+[MSI PRO Z690-A WIFI DDR4 v0.2.0][v0.2.0_rom]{.md-button}
+[sha256][v0.2.0_hash]{.md-button}
+[sha256.sig][v0.2.0_sig]{.md-button}
+
+See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
+
+Commands snippet:
+
+```
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
+gpg --list-sigs "3mdeb Master Key" "3mdeb Dasharo Master Key" "Dasharo release 0.x compatible with MSI MS-7D25 signing key"
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.2.0.rom
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.2.0.rom
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.2.0.rom.sha256.sig
+sha256sum -c msi_ms7d25_v0.2.0.rom.sha256
+gpg --verify msi_ms7d25_v0.2.0.rom.sha256.sig msi_ms7d25_v0.2.0.rom.sha256
+```
+
+### SBOM (Software Bill of Materials):
+
+- [coreboot based on a552cfc9 revision 83fbdcf1](https://github.com/Dasharo/coreboot/tree/83fbdcf1)
+- [edk2 based on 4d2846ba revision 0a188758](https://github.com/Dasharo/edk2/tree/0a188758)
+
 ## v0.1.0 - 2022-04-13
 ### Added
 
@@ -58,3 +102,6 @@ gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 [v0.1.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom
 [v0.1.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom.sha256
 [v0.1.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom.sha256.sig
+[v0.2.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.2.0.rom
+[v0.2.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.2.0.rom.sha256
+[v0.2.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.2.0.rom.sha256.sig
