@@ -11,20 +11,27 @@ For details about our release process please read
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
 
-## v1.1.0 - 2022-04-20
+## v1.1.0 - 2022-04-22
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
+
 ### Added
 
 - Support for NovaCustom NS7x
-- Support for RGB Keyboard
-- Persistent boot logo implementation
+- [Support for RGB Keyboard](https://docs.dasharo.com/variants/novacustom_ns5x/rgb_keyboard/)
+- [Persistent boot logo implementation](https://docs.dasharo.com/common-coreboot-docs/custom_logo/)
+
+### Changed
+
+- [Temporarily disable vboot due to the risk of bricinkg certain units when flashing via internal programmer](https://github.com/Dasharo/dasharo-issues/issues/73)
 
 ### Known issues
 
 - [CPU not running on expected frequency and usage NS50MU](https://github.com/Dasharo/dasharo-issues/issues/64)
 - [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://github.com/Dasharo/dasharo-issues/issues/57)
+- [The touchpad ON/OFF switch Fn key is not functional](https://github.com/Dasharo/dasharo-issues/issues/38)
+- [Incorrect vendor name in SMBIOS](https://github.com/Dasharo/dasharo-issues/issues/74)
 
 ### Binaries
 
