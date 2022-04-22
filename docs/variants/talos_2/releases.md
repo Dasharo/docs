@@ -18,7 +18,7 @@ For details about our release process please read
 ## v0.5.0 - 2022-04-12
 
 ### Changed
-  
+
 - Add FSI initialization and functions for accessing devices behind FSI bus
 - Cache MVPD between stages
 - Initialize and train XBus links

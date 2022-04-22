@@ -15,7 +15,7 @@
 
 **Test description**
 
-This test verifies that the DUT during booting procedure reaches Heads 
+This test verifies that the DUT during booting procedure reaches Heads
 bootloader.
 
 **Test configuration data**
