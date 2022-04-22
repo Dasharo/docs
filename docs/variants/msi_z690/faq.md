@@ -7,7 +7,7 @@ the DDR5 variant in the future. **Do not try that**.
 
 ## Will this work on my `MSI PRO Z690-A DDR4` ?
 
-Although we do not own that one and cannot give promises, we believe that it
+Although we do not own that one and cannot give promises without testing, we believe that it
 should work the same as the `MSI PRO Z690-A WIFI DDR4`. This is almost the
 same board, just with no WiFi card.
 
@@ -17,7 +17,7 @@ If you are afraid of bricking the board and have no means of
 [recovering from failed installation](../recovery), we **do not recommend**
 trying it out until at least the v1.0.0 is released. Recovery process is not
 suitable for inexperienced users right now. We will be trying to make it
-easier, and if that happens, we may cahnge our recommendation here.
+easier, and if that happens, we may change our recommendation here.
 
 ## Can I destroy my hardware by installing this firmware?
 
@@ -49,7 +49,7 @@ Please follow the [recovery procedure](../recovery).
 
 ## Which CPUs are supported?
 
-We can say the "supported" one is the one we have verified. It is the
+We can say the "supported" one is the one we have tested. It is the
 `Intel Core i5-12600K` and you can check that in the
 [Hardware Configuration Matrix](../hardware-matrix).
 
@@ -67,7 +67,7 @@ require more recent microcode.
 
 ## Which DDR4 memory modules are supported?
 
-We can say the "supported" one is the one we have verified. It is the
+We can say the "supported" one is the one we have tested. It is the
 `Kingston Fury Beast KF436C17BBK4/32` part populated in all 4 slots, and you
 can check that in the [Hardware Configuration Matrix](../hardware-matrix).
 
@@ -76,7 +76,7 @@ on the roadmap for future releases.
 
 Some mention about the Motherboard Memory Compatibiliy List not applying to
 Dasharo due to the differences between IBV modified code and Intel reference
-FSP
+FSP.
 
 Maybe linking the PDFs that we had to go though when we picked the memory
 modules, since Intel maintains its own FSP compatibility list so we are
