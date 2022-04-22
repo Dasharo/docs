@@ -125,51 +125,13 @@ using different distribution, you might need to
     Successfully downloaded new metadata: 1 local device supported
     ```
 
-1. Use the following command to update firmware with fwupd - example for NV41MZ:
-
-    _Note: You may be asked which device to update. If you see a prompt, select
-    NV4XMB,ME,MZ_
+1. Use the following command to update firmware with fwupd:
 
     ```bash
-    $ sudo fwupdmgr update
-
-    Selected device: NV4XMB,ME,MZ
-    ╔══════════════════════════════════════════════════════════════════════════════╗
-    ║ Update NV4XMB,ME,MZ to 0.5.0?                                                ║
-    ╠══════════════════════════════════════════════════════════════════════════════╣
-    ║ This release adds the following features:                                    ║
-    ║                                                                              ║
-    ║ • vboot Verified Boot                                                        ║
-    ║ • TPM Measured Boot                                                          ║
-    ║ • Custom fan curve                                                           ║
-    ║ • Microcode for Tiger Lake stepping 0x2                                      ║
-    ║                                                                              ║
-    ║ This release changes the following features:                                 ║
-    ║                                                                              ║
-    ║ • Disabled unused DPTF device                                                ║
-    ║                                                                              ║
-    ║ NV4XMB,ME,MZ and all connected devices may not be usable while updating.     ║
-    ╚══════════════════════════════════════════════════════════════════════════════╝
-
-    Perform operation? [Y|n]:
-    Downloading…             [***************************************]
-    Downloading…             [***************************************]
-    Decompressing…           [***************************************]
-    Decompressing…           [***************************************]
-    Authenticating…          [***************************************]
-    Authenticating…          [***************************************]
-    Restarting device…       [***************************************]
-    Writing…                 [***************************************]
-    Decompressing…           [***************************************]
-    Writing…                 [***************************************]
-    Verifying…               [***************************************]
-    Writing…                 [***************************************]
-    Restarting device…       [***************************************]
-    Waiting…                 [***************************************]
-    Successfully installed firmware
-
-    An update requires the system to shutdown to complete. Shutdown now? [y|N]:
+    $ sudo fwupdtool update
     ```
+
+    > Use `--verbose` option with command to get more informations
 
 1. Shut down the computer when prompted, or manually later on.
 1. Power on the laptop again.
