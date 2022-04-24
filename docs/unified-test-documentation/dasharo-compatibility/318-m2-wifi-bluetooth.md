@@ -215,18 +215,18 @@ The output of the last command should return a list of detectable Bluetooth
 devices, for example:
 
 ```bash
-Device XX:XX:XX:XX:XX:XX 48-24-57-E0-61-74
+Device XX:XX:XX:XX:XX:XX Device 1
 Device XX:XX:XX:XX:XX:XX Wojtek N
 Device XX:XX:XX:XX:XX:XX Mi Smart Band 4
 Device XX:XX:XX:XX:XX:XX Galaxy Watch4 Classic (PHLM)
 Device XX:XX:XX:XX:XX:XX Galaxy Watch4 Classic (PHLM)
-Device XX:XX:XX:XX:XX:XX 0F-18-A1-D9-23-F6
+Device XX:XX:XX:XX:XX:XX Device 2
 Device XX:XX:XX:XX:XX:XX [Signage] Samsung QMR Series
 Device XX:XX:XX:XX:XX:XX [Signage] Samsung QMR Series
-Device XX:XX:XX:XX:XX:XX 76-C7-FD-86-9B-0E
-Device XX:XX:XX:XX:XX:XX 40-5E-96-43-3A-6A
-Device XX:XX:XX:XX:XX:XX 4C-58-3B-C1-37-90
-Device XX:XX:XX:XX:XX:XX 6A-93-A2-6A-E5-20
+Device XX:XX:XX:XX:XX:XX Device 3
+Device XX:XX:XX:XX:XX:XX Device 4
+Device XX:XX:XX:XX:XX:XX Device 5
+Device XX:XX:XX:XX:XX:XX Device 6
 ```
 
 ### WLE003.002 Bluetooth scanning (Windows 11)
