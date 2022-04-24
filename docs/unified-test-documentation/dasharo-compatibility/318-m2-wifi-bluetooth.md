@@ -133,17 +133,17 @@ for example:
 
 ```bash
 IN-USE  BSSID              SSID                    MODE   CHAN  RATE        SIGNAL  BARS  SECURITY
-        36:78:EE:05:03:45  DIRECT-ny               Infra  6     65 Mbit/s   75      ▂▄▆_  WPA2
-*       60:38:E0:D6:46:9A  3mdeb_abr_5GHz          Infra  48    405 Mbit/s  72      ▂▄▆_  WPA2
-        60:38:E0:D6:46:99  3mdeb_abr               Infra  11    54 Mbit/s   69      ▂▄▆_  WPA2
-        D8:D7:75:02:F9:BF  FunBox2-F9BF_2.4GHz     Infra  1     130 Mbit/s  50      ▂▄__  WPA1 WPA2
-        30:5A:3A:A1:46:B0  H_Office                Infra  2     270 Mbit/s  35      ▂▄__  WPA2
-        9E:93:4E:74:C0:3F  DIRECT-xpPhaser 3330    Infra  1     65 Mbit/s   34      ▂▄__  WPA2
-        D8:A7:56:D9:A7:9F  Orange_Swiatlowod_A79A  Infra  108   540 Mbit/s  32      ▂▄__  WPA2
-        86:25:19:05:D4:A0  DIRECT-KRM288x Series   Infra  11    54 Mbit/s   22      ▂___  WPA2
-        D8:A7:56:D9:A7:9A  Orange_Swiatlowod_A79A  Infra  11    130 Mbit/s  20      ▂___  WPA2
-        9E:93:4E:74:C0:57  DIRECT-ejPhaser 3330    Infra  1     65 Mbit/s   17      ▂___  WPA2
-        B0:BE:76:06:9F:22  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
+        XX:XX:XX:XX:XX:XX  DIRECT-ny               Infra  6     65 Mbit/s   75      ▂▄▆_  WPA2
+*       XX:XX:XX:XX:XX:XX  3mdeb_abr_5GHz          Infra  48    405 Mbit/s  72      ▂▄▆_  WPA2
+        XX:XX:XX:XX:XX:XX  3mdeb_abr               Infra  11    54 Mbit/s   69      ▂▄▆_  WPA2
+        XX:XX:XX:XX:XX:XX  FunBox2-F9BF_2.4GHz     Infra  1     130 Mbit/s  50      ▂▄__  WPA1 WPA2
+        XX:XX:XX:XX:XX:XX  H_Office                Infra  2     270 Mbit/s  35      ▂▄__  WPA2
+        XX:XX:XX:XX:XX:XX  DIRECT-xpPhaser 3330    Infra  1     65 Mbit/s   34      ▂▄__  WPA2
+        XX:XX:XX:XX:XX:XX  Orange_Swiatlowod_A79A  Infra  108   540 Mbit/s  32      ▂▄__  WPA2
+        XX:XX:XX:XX:XX:XX  DIRECT-KRM288x Series   Infra  11    54 Mbit/s   22      ▂___  WPA2
+        XX:XX:XX:XX:XX:XX  Orange_Swiatlowod_A79A  Infra  11    130 Mbit/s  20      ▂___  WPA2
+        XX:XX:XX:XX:XX:XX  DIRECT-ejPhaser 3330    Infra  1     65 Mbit/s   17      ▂___  WPA2
+        XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
 ```
 
 ### WLE002.002 Wi-Fi scanning (Windows 11)
@@ -215,18 +215,18 @@ The output of the last command should return a list of detectable Bluetooth
 devices, for example:
 
 ```bash
-Device 48:24:57:E0:61:74 48-24-57-E0-61-74
-Device 88:BD:45:74:FA:A5 Wojtek N
-Device CE:9E:7B:BF:69:F2 Mi Smart Band 4
-Device 56:62:93:8B:1A:F9 Galaxy Watch4 Classic (PHLM)
-Device 64:F2:FD:1E:26:BC Galaxy Watch4 Classic (PHLM)
-Device 0F:18:A1:D9:23:F6 0F-18-A1-D9-23-F6
-Device 8C:EA:48:B1:59:B3 [Signage] Samsung QMR Series
-Device 8C:EA:48:B1:57:EB [Signage] Samsung QMR Series
-Device 76:C7:FD:86:9B:0E 76-C7-FD-86-9B-0E
-Device 40:5E:96:43:3A:6A 40-5E-96-43-3A-6A
-Device 4C:58:3B:C1:37:90 4C-58-3B-C1-37-90
-Device 6A:93:A2:6A:E5:20 6A-93-A2-6A-E5-20
+Device XX:XX:XX:XX:XX:XX 48-24-57-E0-61-74
+Device XX:XX:XX:XX:XX:XX Wojtek N
+Device XX:XX:XX:XX:XX:XX Mi Smart Band 4
+Device XX:XX:XX:XX:XX:XX Galaxy Watch4 Classic (PHLM)
+Device XX:XX:XX:XX:XX:XX Galaxy Watch4 Classic (PHLM)
+Device XX:XX:XX:XX:XX:XX 0F-18-A1-D9-23-F6
+Device XX:XX:XX:XX:XX:XX [Signage] Samsung QMR Series
+Device XX:XX:XX:XX:XX:XX [Signage] Samsung QMR Series
+Device XX:XX:XX:XX:XX:XX 76-C7-FD-86-9B-0E
+Device XX:XX:XX:XX:XX:XX 40-5E-96-43-3A-6A
+Device XX:XX:XX:XX:XX:XX 4C-58-3B-C1-37-90
+Device XX:XX:XX:XX:XX:XX 6A-93-A2-6A-E5-20
 ```
 
 ### WLE003.002 Bluetooth scanning (Windows 11)
