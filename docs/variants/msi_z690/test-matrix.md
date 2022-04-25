@@ -11,17 +11,22 @@ described in this documentation are dedicated to the given platform
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [UEFI compatible interface][EFI]                  | EFI           | EFI001.001                           |
-| 2.   | [UEFI Shell][USH]                                 | USH           | All                                  |
-| 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.001, DSP002.003, DSP003.001, DSP003.003 |
-| 4.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
-| 5.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001, DMI008.001|
-| 6.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
-| 7.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
-| 8.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD004.001, AUD005.001, AUD006.001 |
-| 9.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM002.001               |
-| 10.  | [Network boot][PXE]                               | PXE           | All                                  |
+| 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
+| 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
+| 3.   | [UEFI Shell][USH]                                 | USH           | All                                  |
+| 4.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
+| 5.   | [USB HID and MSC Support][USB]                    | USB           | All                                  |
+| 6.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001, DMI008.001|
+| 7.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
+| 8.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
+| 9.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD001.002, AUD004.001, AUD004.002 AUD005.001, AUD005.002 AUD006.001, AUD006.002 |
+| 10.  | [NVMe support][NVM]                               | NVM           | All                                  |
+| 11.  | [Network boot][PXE]                               | PXE           | All                                  |
+| 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
+| 13.  | [Windows 11 booting][WBT]                         | WBT           | All                                  |
+| 14.  | [SD card support][SDC]                            | SDC           | All                                  |
 
+[HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
@@ -33,6 +38,19 @@ described in this documentation are dedicated to the given platform
 [AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
 [NVM]: ../../unified-test-documentation/dasharo-compatibility/312-nvme-support.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
+[LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
+[WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
+[SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
+
+## Module: Dasharo security
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
+| 2.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+
+[TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
+[SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 
 <!--
 ## Module: Dasharo compatibility
