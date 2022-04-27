@@ -23,7 +23,7 @@ described in this documentation are dedicated to the given platform
 | 10.  | [NVMe support][NVM]                               | NVM           | All                                  |
 | 11.  | [Network boot][PXE]                               | PXE           | All                                  |
 | 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
-| 13.  | [Windows 11 booting][WBT]                         | WBT           | All                                  |
+| 13.  | [Windows booting][WBT]                            | WBT           | All                                  |
 | 14.  | [SD card support][SDC]                            | SDC           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -70,7 +70,7 @@ described in this documentation are dedicated to the given platform
 | 11.  | Network boot                                      | PXE           | All                                  |
 | 12.  | Debian Stable and Ubuntu LTS support              | LBT           | All                                  |
 | 13.  | SD card support                                   | SDC           | All                                  |
-| 14.  | Windows 11 booting                                | WBT           | All                                  |
+| 14.  | Windows booting                                   | WBT           | All                                  |
 | 15.  | Custom logo                                       | CLG           | All                                  |
 | 16.  | Custom boot menu key                              | CBK           | All                                  |
 
