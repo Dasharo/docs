@@ -20,7 +20,7 @@ described in this documentation are dedicated to the given platform
 | 7.   | [Custom boot menu key][CBK]                            | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][USB]                         | USB           | All                                  |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | All                                  |
-| 10.  | [Windows 11 booting][WBT]                              | WBT           | All                                  |
+| 10.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |
 | 11.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
 | 12.  | [USB-C/Thunderbolt][UTC]                               | UTC           | All                                  |
 | 13.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All                                  |
