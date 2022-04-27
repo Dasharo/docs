@@ -55,7 +55,7 @@ described in this documentation are dedicated to the given platform
 | 8.   | USB HID and MSC Support                           | USB           | All                                  |
 | 9.   | Debian Stable and Ubuntu LTS support              | LBT           | All                                  |
 | 10.  | UEFI Shell                                        | USH           | All                                  |
-| 11.  | Windows 11 booting                                | WBT           | All                                  |
+| 11.  | Windows booting                                   | WBT           | WBT001.001                           |
 | 12.  | Audio subsystem                                   | AUD           | All                                  |
 | 13.  | USB-C/Thunderbolt                                 | UTC           | All                                  |
 | 14.  | Network boot                                      | PXE           | All                                  |
@@ -93,7 +93,7 @@ described in this documentation are dedicated to the given platform
 | 8.   | USB HID and MSC Support                           | USB           | All                                  |
 | 9.   | Debian Stable and Ubuntu LTS support              | LBT           | All                                  |
 | 10.  | UEFI Shell                                        | USH           | All                                  |
-| 11.  | Windows 11 booting                                | WBT           | All                                  |
+| 11.  | Windows booting                                   | WBT           | WBT001.001                           |
 | 12.  | Audio subsystem                                   | AUD           | All                                  |
 | 13.  | USB-C/Thunderbolt                                 | UTC           | All                                  |
 | 14.  | Network boot                                      | PXE           | All                                  |
@@ -110,41 +110,6 @@ described in this documentation are dedicated to the given platform
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | TPM Support                                       | TPM           | All                                  |
 | 2.   | Verified Boot support                             | VBO           | VBO001.002, VBO002.002, VBO003.001   |
-| 3.   | Measured Boot support                             | MBO           | All                                  |
-| 4.   | Secure Boot support                               | SBO           | All                                  |
-
-## Test matrix - Clevo NS50
-
-### Module: Dasharo compatibility
-
-| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
-|:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | Memory HCL                                        | HCL           | All                                  |
-| 2.   | UEFI compatible interface                         | EFI           | All                                  |
-| 3.   | Display ports and LCD support                     | DSP           | DSP001.001, DSP001.002, DSP001.003,  |
-|      |                                                   |               | DSP002.001, DSP002.002, DSP002.003   |
-| 4.   | Embedded Controller and Super I/O initialization  | ECR           | Whithout ECR010.001 and ECR010.002   |
-| 5.   | NVMe support                                      | NVM           | All                                  |
-| 6.   | Custom logo                                       | CLG           | All                                  |
-| 7.   | Custom boot menu key                              | CBK           | All                                  |
-| 8.   | USB HID and MSC Support                           | USB           | All                                  |
-| 9.   | Debian Stable and Ubuntu LTS support              | LBT           | All                                  |
-| 10.  | Windows 11 booting                                | WBT           | All                                  |
-| 11.  | Audio subsystem                                   | AUD           | All                                  |
-| 12.  | USB-C/Thunderbolt                                 | UTC           | All                                  |
-| 13.  | M.2 WiFi/Bluetooth                                | WLE           | All                                  |
-| 14.  | SD card support                                   | SDC           | All                                  |
-| 15.  | USB Camera verification                           | CAM           | All                                  |
-| 16.  | Custom fan curve                                  | FAN           | FAN001.001                           |
-| 17.  | SMBIOS                                            | DMI           | DMI002.001, DMI003.001, DMI005.001,  |
-|      |                                                   |               | DMI006.001, DMI007.001, DMI008.001   |
-
-### Module: Dasharo security
-
-| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | TPM Support                                       | TPM           | All                                  |
-| 2.   | Verified Boot support                             | VBO           | VBO001.002, VBO002.002               |
 | 3.   | Measured Boot support                             | MBO           | All                                  |
 | 4.   | Secure Boot support                               | SBO           | All                                  |
 
