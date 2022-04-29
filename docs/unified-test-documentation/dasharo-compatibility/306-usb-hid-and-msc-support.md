@@ -106,11 +106,11 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
     Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' }
     ```
 
-1. Note results.
+1. Note the results.
 
 **Expected result**
 
-Example output:
+    Example output:
 
     ```bash
     Status     Class           FriendlyName
@@ -125,8 +125,8 @@ Example output:
     OK         USB             USB Mass Storage Device
     ```
 
-Connect additional USB device, run command once again and note reults.
-Connected USB device should be included on the list on output.
+    Connect additional USB device, run command once again and note the results.
+    Connected USB device should be included on the list on output.
 
 ### USB002.001 USB keyboard detection (firmware)
 
@@ -235,9 +235,9 @@ by the `OPERATING_SYSTEM`.
 
 **Expected result**
 
-Informations about connected keyboard should be displayed.
+1. Information about connected keyboard should be displayed.
 
-Example output:
+    Example output:
 
     ```bash
     Caption                     : Enhanced (101- or 102-key)
