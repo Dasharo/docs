@@ -83,13 +83,13 @@ Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
 
 **Expected result**
 
-The output of the command should contain a line starting with:
+The output of the command should contain a line with:
 
 ```bash
 Intel(R) Wi-Fi 6AX200 160MHz
 ```
 
-or a line starting with:
+or a line with:
 
 ```bash
 Intel(R) Wi-Fi 6AX201 160MHz
@@ -168,14 +168,40 @@ correctly and can be used from within the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Locate in the bottom right corner of the screen `Internet access`
-    icon and click it.
-1. Enable Wi-Fi and note the result.
+1. Open PowerShell and execute following command:
+
+```bash
+netsh wlan show network
+```
+
+1. Note the result.
 
 **Expected result**
 
-After enabling Wi-Fi available networks should appear
-in the `Internet access` menu.
+The output of the command should return a list of available Wi-Fi networks,
+for example:
+
+```bash
+SSID 1 : Orange_Swiatlowod_A79A
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+
+SSID 2 : DIRECT-Y9Phaser 3330
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+
+SSID 3 : 3mdeb_abr_5GHz
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+
+SSID 4 : 3mdeb_abr
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+```
 
 ### WLE003.001 Bluetooth scanning (Ubuntu 20.04)
 
