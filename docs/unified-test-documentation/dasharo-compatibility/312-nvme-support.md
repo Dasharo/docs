@@ -96,7 +96,7 @@ M.2 slot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell as administrator.
-1. Run below command and note result:
+1. Run below command and note the result:
 
     ```powershell
     Get-PnpDevice -Status "OK" | where { $_.InstanceId -like "SCSI\DISK&VEN_NVME&*"}
