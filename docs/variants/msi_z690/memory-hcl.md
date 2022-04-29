@@ -7,7 +7,7 @@ hide:
 
 ## Contributing
 
-Feel free to test different modules and report us your results via en
+Feel free to test different modules and report your results via
 [email](mailto:contact@dasharo.com) or submit a Pull Request to
 [Dasharo documentation repository](https://github.com/Dasharo/docs).
 
@@ -44,8 +44,8 @@ Be sure to include information about the memory:
       down list.
 
 DDR4 DIMMs include a SPD ROM which can have up to 4 SPD Profiles. Each SPD
-Profile contains data for a combination of Speed (MHz), Timmings and Voltage
-than the module is factory rated to run at. These SPD Profiles can be
+Profile contains data for a combination of Speed (MHz), Timings and Voltage
+that the module is factory rated to run at. These SPD Profiles can be
 considered either JEDEC standard or XMP (Overclocking). Currently, Dasharo only
 loads the JEDEC standard profile and ignores the XMP ones.
 
