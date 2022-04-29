@@ -104,4 +104,11 @@ M.2 slot.
 
 **Expected result**
 
-1. Command should output at least one NVMe drive.
+1. The `OPERATING_SYSTEM` booting from the NVMe disk
+1. Command should output at least one NVMe drive. Similar as below:
+
+    ```powershell
+    Status     Class           FriendlyName
+    ------     -----           ------------
+    OK         DiskDrive       Samsung SSD 980 PRO 500GB
+    ```
