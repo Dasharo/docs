@@ -31,13 +31,13 @@
 
     Answer yes to the prompt and wait for the process to finish.
 
-1. Log into the BMC GUI again at `https://<BMC_IP>.`
+1. Log into the BMC GUI again at `https://<BMC_IP>`.
 
 1. Enter the `Server power operations`
    (`https://<BMC_IP>/#/server-control/power-operations`) and invoke
   `warm reboot`.
 
-1. Go to `Serial over LAN remote console` (`https://<BMC_IP>/#/server-control/remote-console`)
+1. Go to `Serial over LAN remote console` (`https://<BMC_IP>/#/server-control/remote-console`).
 
 1. Wait for a while until coreboot shows up:
 
@@ -50,21 +50,21 @@
 > `pflash -e -P HBB -p /tmp/hbb.bin`
 > `pflash -e -P HBI -p /tmp/hbi.bin`
 
-## heads installation
+## Heads installation
 
-1. Copy the heads binary to the BMC (assuming in the heads root directory):
+1. Copy the Heads binary to the BMC (assuming in the Heads root directory):
 
     ```bash
     $ scp build/zImage.bundled root@<BMC_IP>:/tmp/zImage.bundled
     ```
 
-1. Log in to the BMC
+1. Log in to the BMC:
 
     ```bash
     $ ssh root@<BMC_IP>
     ```
 
-1. Flash the `BOOTKERNEL` partition with heads:
+1. Flash the `BOOTKERNEL` partition with Heads:
 
     ```bash
     # pflash -e -P BOOTKERNEL -p /tmp/zImage.bundled
@@ -78,13 +78,13 @@
    (`https://<BMC_IP>/#/server-control/power-operations`) and invoke
   `warm reboot`.
 
-1. Go to `Serial over LAN remote console` (`https://<BMC_IP>/#/server-control/remote-console`)
+1. Go to `Serial over LAN remote console` (`https://<BMC_IP>/#/server-control/remote-console`).
 
-1. Wait for a while until heads shows up:
+1. Wait for a while until Heads shows up:
 
     [![asciicast](https://asciinema.org/a/VYszHn2aslY4GdAVBvsgbWb3d.svg)](https://asciinema.org/a/VYszHn2aslY4GdAVBvsgbWb3d)
 
-1. Enjoy the heads running on Talos II.
+1. Enjoy the Heads running on Talos II.
 
 ## Testing firmware images without flashing
 
