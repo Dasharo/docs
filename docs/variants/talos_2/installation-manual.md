@@ -119,8 +119,18 @@ so, here's a more convenient one that uses `mboxctl`:
     root@talos:~# pflash -P <partition> -p <partition>.bin -F /tmp/talos.pnor
     ```
 
-    For partition and file names check previous sections. Since the real flash
-    device is not used, backup can be skipped.
+    Since the real flash device is not used, backup can be skipped. The rest is
+    like above:
+
+    ```shell
+    # bootblock
+    pflash -P HBB -p /tmp/bootblock.signed.ecc -F /tmp/talos.pnor
+    # coreboot
+    pflash -P HBI -p /tmp/coreboot.rom.signed.ecc -F /tmp/talos.pnor
+
+    # Heads
+    pflash -P BOOTKERNEL -p /tmp/zImage.bundled -F /tmp/talos.pnor
+    ```
 
 1. Mount the file as flash device:
 
