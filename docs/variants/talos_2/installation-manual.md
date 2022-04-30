@@ -127,7 +127,7 @@ v2.00+ BMC firmware requirement still applies.
 1. Mount the file as flash device:
 
     ```shell
-    root@talos:~# mboxctl --backend file:/tmp/flash.pnor
+    root@talos:~# mboxctl --backend file:/tmp/talos.pnor
     ```
 
     Sometimes this command fails with timeout, in that case repeat it until it
