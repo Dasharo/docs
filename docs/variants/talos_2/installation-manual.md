@@ -88,12 +88,10 @@
 
 ## Testing firmware images without flashing
 
-It is possible to test new firmware images without flashing the physical flash
-device. This makes testing and switching between two versions (e.g. Hostboot and
-coreboot) much faster and safer. There are two ways of doing so, one is
-described on [Raptor's wiki](https://wiki.raptorcs.com/wiki/Compiling_Firmware#Running_the_firmware_temporarily)
-and requires starting `mboxd` manually, the second one is described below.
-v2.00+ BMC firmware requirement still applies.
+BMC firmware v2.00+ allows testing new firmware images without flashing the
+physical flash device. This makes testing and switching between two versions
+(e.g. Hostboot and coreboot) much faster and safer. There are two ways of doing
+so, here's a more convenient one that uses `mboxctl`:
 
 1. Read original flash:
 
@@ -162,3 +160,9 @@ v2.00+ BMC firmware requirement still applies.
     ```shell
     root@talos:~# pflash -E -p /tmp/talos.pnor
     ```
+
+The other method is described on
+[Raptor's wiki](https://wiki.raptorcs.com/wiki/Compiling_Firmware#Running_the_firmware_temporarily)
+and requires starting `mboxd` manually (still needs BMC firmware v2.00+). It's
+worth to take a look there because sometimes `mboxd` stops working (`mboxctl`
+errors every time) and that page shows how it can be started.
