@@ -75,24 +75,21 @@ and can be detected from the operating system.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and execute following command:
 
-```bash
-Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
-```
+    ```PowerShell
+    Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
+    ```
 
 1. Note the result.
 
 **Expected result**
 
-The output of the command should contain a line with:
+The output of the command should contain the line with Wi-Fi device, which
+has been phisically mounted in the device.
 
-```bash
+Output example:
+
+```PowerShell
 Intel(R) Wi-Fi 6AX200 160MHz
-```
-
-or a line with:
-
-```bash
-Intel(R) Wi-Fi 6AX201 160MHz
 ```
 
 ### WLE002.001 Wi-Fi scanning (Ubuntu 20.04)
@@ -170,18 +167,19 @@ correctly and can be used from within the operating system.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and execute following command:
 
-```bash
-netsh wlan show network
-```
+    ```PowerShell
+    netsh wlan show network
+    ```
 
 1. Note the result.
 
 **Expected result**
 
-The output of the command should return a list of available Wi-Fi networks,
-for example:
+The output of the command should return a list of available Wi-Fi networks.
 
-```bash
+Output example:
+
+```PowerShell
 SSID 1 : Orange_Swiatlowod_A79A
     Network type            : Infrastructure
     Authentication          : WPA2-Personal
