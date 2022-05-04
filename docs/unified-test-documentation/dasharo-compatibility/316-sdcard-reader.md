@@ -75,13 +75,22 @@ can be detected from the operating system.
 1. Open PowerShell as administrator.
 1. Run below command and note result:
 
-    ```powershell
+    ```PowerShell
     Get-PnpDevice -Status "OK" -Class "MTD"
     ```
 
 **Expected result**
 
-1. Command should output at least one card reader.
+The output of the command should contain basic information about mounted
+SD card reader.
+
+Output example:
+
+```PowerShell
+Status     Class           FriendlyName
+------     -----           ------------
+OK         MTD             Realtek PCIE CardReader
+```
 
 ### SDC002.001 SD Card read/write (Ubuntu 20.04)
 
@@ -143,14 +152,13 @@ can be used from the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Determine localisation of SD card (next steps assume that SD has been mounted
-at `F:\`).
+1. Determine the localisation of the mounted SD card.
 1. Open PowerShell as administrator.
 1. Run below commands and note results:
 
     ```powershell
-    New-Item -Path "F:\" -Name "testfile.txt" -ItemType "file" -Value "This is a test string."
-    Get-Content -Path "F:\testfile.txt"
+    New-Item -Path "${drive_lacation}:\" -Name "testfile.txt" -ItemType "file" -Value "This is a test string."
+    Get-Content -Path "${drive_lacation}:\testfile.txt"
     ```
 
 **Expected result**
