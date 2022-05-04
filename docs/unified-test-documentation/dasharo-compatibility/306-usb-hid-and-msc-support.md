@@ -110,6 +110,9 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Expected result**
 
+1. After executing the command, a list containing all USB devices should
+be displayed. All devices' status should be `OK`.
+
     Example output:
 
     ```bash
@@ -124,9 +127,6 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
     OK         USB             Generic USB Hub
     OK         USB             USB Mass Storage Device
     ```
-
-    Connect additional USB device, run command once again and note the results.
-    Connected USB device should be included on the list on output.
 
 ### USB002.001 USB keyboard detection (firmware)
 
@@ -208,7 +208,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 **Test description**
 
 This test aims to verify that the external USB keyboard is detected correctly
-by the `OPERATING_SYSTEM`.
+by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
@@ -231,11 +231,19 @@ by the `OPERATING_SYSTEM`.
     Get-CimInstance win32_KEYBOARD
     ```
 
-1. Note results.
+1. Note the results.
+1. Open `notepad`.
+1. Test the alphanumeric keys and note the generated characters.
+1. Test non-alphanumeric keys and verify that they generate the signs.
+1. Test key combinations with the `Shift`, and `Alt` modifier keys.
+1. Open `On-Screen Keyboard` and press `Ctrl` key on the hardware keyboard.
+   Check if `On-Screen Keyboard` correctly highlights it.
+1. Open `Start menu` and press `Esc`. Check if `Start menu` is properly closed.
 
 **Expected result**
 
-1. Information about connected keyboard should be displayed.
+1. After running the PowerShell command information about connected keyboard
+    should be displayed.
 
     Example output:
 
@@ -266,3 +274,6 @@ by the `OPERATING_SYSTEM`.
     PSComputerName              :
     ```
 
+1. All standard keyboard keys generate correct characters
+   or actions when pressed.
+1. Key combinations are detected correctly.
