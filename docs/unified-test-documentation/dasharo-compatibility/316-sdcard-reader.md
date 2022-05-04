@@ -143,6 +143,8 @@ can be used from the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Determine localisation of SD card (next steps assume that SD has been mounted
+at `F:\`).
 1. Open PowerShell as administrator.
 1. Run below commands and note results:
 
