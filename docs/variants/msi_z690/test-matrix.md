@@ -25,6 +25,8 @@ described in this documentation are dedicated to the given platform
 | 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
 | 13.  | [Windows booting][WBT]                            | WBT           | All                                  |
 | 14.  | [SD card support][SDC]                            | SDC           | All                                  |
+| 15.  | [Custom logo][CLG]                                | CLG           | All                                  |
+| 16.  | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -41,51 +43,27 @@ described in this documentation are dedicated to the given platform
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
+[CLG]: ../../unified-test-documentation/dasharo-compatibility/304-custom-logo.md
+[CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
 
 ## Module: Dasharo security
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
+| 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
+| 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
+[VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
+[MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
-
-<!--
-## Module: Dasharo compatibility
-
-| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | SMBIOS                                            | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI006.001, DMI007.001, DMI008.001|
-| 2.   | Memory HCL                                        | HCL           | All                                  |
-| 3.   | UEFI compatible interface                         | EFI           | All                                  |
-| 4.   | UEFI Shell                                        | USH           | All                                  |
-| 5.   | Display ports and LCD support                     | DSP           | DSP002.001, DSP002.002 DSP002.003, DSP003.001, DSP003.002 DSP003.003 |
-| 6.   | USB HID and MSC Support                           | USB           | All                                  |
-| 7.   | miniPCIe slot verification                        | MWL           | All                                  |
-| 8.   | M.2 WiFi/Bluetooth                                | WLE           | All                                  |
-| 9.   | Audio subsystem                                   | AUD           | All                                  |
-| 10.  | NVMe support                                      | NVM           | All                                  |
-| 11.  | Network boot                                      | PXE           | All                                  |
-| 12.  | Debian Stable and Ubuntu LTS support              | LBT           | All                                  |
-| 13.  | SD card support                                   | SDC           | All                                  |
-| 14.  | Windows booting                                   | WBT           | All                                  |
-| 15.  | Custom logo                                       | CLG           | All                                  |
-| 16.  | Custom boot menu key                              | CBK           | All                                  |
-
-## Module: Dasharo security
-
-| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | TPM Support                                       | TPM           | All                                  |
-| 2.   | Verified Boot support                             | VBO           | VBO001.002, VBO002.002, VBO003.001   |
-| 3.   | Measured Boot support                             | MBO           | All                                  |
-| 4.   | Secure Boot support                               | SBO           | All                                  |
 
 ### Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | coreboot bring up time measurement                | CBMEM         | All                                  |
--->
+| 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+
+[CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
