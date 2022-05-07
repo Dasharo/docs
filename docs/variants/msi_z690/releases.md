@@ -15,6 +15,7 @@ Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
 ## v0.3.0 - 2022-05-05
+
 ### Added
 
 - Mainboard-specific SMBIOS data for slots and ports
@@ -42,7 +43,7 @@ See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
 
 Commands snippet:
 
-```
+```shell
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
@@ -54,12 +55,13 @@ sha256sum -c msi_ms7d25_v0.3.0.rom.sha256
 gpg --verify msi_ms7d25_v0.3.0.rom.sha256.sig msi_ms7d25_v0.3.0.rom.sha256
 ```
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on a552cfc9 revision b45173e9](https://github.com/Dasharo/coreboot/tree/b45173e9)
 - [edk2 based on 4d2846ba revision 5494c8e2](https://github.com/Dasharo/edk2/tree/5494c8e2)
 
 ## v0.2.0 - 2022-04-22
+
 ### Added
 
 - Configurable boot order
@@ -85,7 +87,7 @@ See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
 
 Commands snippet:
 
-```
+```shell
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
@@ -97,12 +99,13 @@ sha256sum -c msi_ms7d25_v0.2.0.rom.sha256
 gpg --verify msi_ms7d25_v0.2.0.rom.sha256.sig msi_ms7d25_v0.2.0.rom.sha256
 ```
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on a552cfc9 revision 83fbdcf1](https://github.com/Dasharo/coreboot/tree/83fbdcf1)
 - [edk2 based on 4d2846ba revision 0a188758](https://github.com/Dasharo/edk2/tree/0a188758)
 
 ## v0.1.0 - 2022-04-13
+
 ### Added
 
 - Initial support for the MSI PRO Z690-A WIFI DDR4 platform
@@ -128,7 +131,7 @@ See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
 
 Commands snippet:
 
-```
+```shell
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
@@ -140,7 +143,7 @@ sha256sum -c msi_ms7d25_v0.1.0.rom.sha256
 gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 ```
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on a552cfc9 revision 53948cd8](https://github.com/Dasharo/coreboot/commit/53948cd8)
 - [edk2 based on 4d2846ba revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)

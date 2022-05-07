@@ -23,11 +23,11 @@ TODO: continue moving content from internal presenations
 ## Products
 
 * Embedded Firmware Release
-  - Website
-  - Newsletter
-  - Repository
+    - Website
+    - Newsletter
+    - Repository
 * Community and Customer Support
-  - Issues repository maintenance
-  - Documentation repository maintenance
+    - Issues repository maintenance
+    - Documentation repository maintenance
 * Conference speaking
 * Technical Sales Support

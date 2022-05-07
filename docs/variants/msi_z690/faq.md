@@ -7,9 +7,9 @@ the DDR5 variant in the future. **Do not try that**.
 
 ## Will this work on my `MSI PRO Z690-A DDR4` ?
 
-Although we do not own that one and cannot give promises without testing, we believe that it
-should work the same as the `MSI PRO Z690-A WIFI DDR4`. This is almost the
-same board, just with no WiFi card.
+Although we do not own that one and cannot give promises without testing, we
+believe that it should work the same as the `MSI PRO Z690-A WIFI DDR4`. This is
+almost the same board, just with no WiFi card.
 
 ## Can i safely try this on my board?
 

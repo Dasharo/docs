@@ -45,7 +45,7 @@ Test results for this release can be found
 
 See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.16 revision c2f031af](https://github.com/Dasharo/coreboot/tree/c2f031af)
 - [tianocore based on e0334c228ce4ba51f47ff79a118f214031d4650f revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)

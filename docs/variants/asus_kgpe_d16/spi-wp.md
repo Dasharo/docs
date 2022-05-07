@@ -1,7 +1,5 @@
 # SPI hardware write protection
 
-=============================
-
 In order to from a Root of Trust in the firmware, e.g. in the immutable piece
 of firmware code for Static Root of Trust of Measurement one has to ensure the
 protection of this piece of code. One may achieve it by enabling Inte lBoot

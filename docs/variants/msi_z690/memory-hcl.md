@@ -14,8 +14,7 @@ Feel free to test different modules and report your results via
 Be sure to include information about the memory:
 
 1. If using Linux use `sudo dmidecode -t memory`.
-2. If using Windows attach screenshots from CPU-Z for example.
-
+1. If using Windows attach screenshots from CPU-Z for example.
 1. Part Number of the Memory Modules:
 
     - If you have physical access to the modules, the Part Number is printed on
@@ -26,11 +25,12 @@ Be sure to include information about the memory:
       possible than it doesn't match the Part Number on the sticker, or that it
       wasn't programmed onto the SPD at all.
 
-2. Dump of SPD Profiles:
+1. Dump of SPD Profiles:
 
     - If using Linux use `sudo dmidecode -t memory`. Additionally you may
       provide SPD data binaries (example for Ubuntu for all 4 DIMMs):
-      ```
+
+      ```shell
       sudo apt-get install i2c-tools
       decode-dimms > dimms.log
       cat /sys/bus/i2c/drivers/ee1004/0-0050/eeprom > dimm0_spd.bin
@@ -38,6 +38,7 @@ Be sure to include information about the memory:
       cat /sys/bus/i2c/drivers/ee1004/0-0052/eeprom > dimm2_spd.bin
       cat /sys/bus/i2c/drivers/ee1004/0-0053/eeprom > dimm3_spd.bin
       ```
+
     - If using Windows attach screenshots from CPU-Z SPD Tab. If multiple
       modules are installed, make sure to open multiple CPU-Z instances and
       have each one cover a different Slot via the Memory Slot Selection drop
@@ -78,11 +79,11 @@ Legend:
 * Size: DIMM capacity in GB
 * SPD profile: can be one of JEDEC(Standard) / XMP Profile #1 / XMP Profile #2.
   Profile data:
-  * Type/speed: for example DDR4-2400 means DDR4 module clocked at max 2400MHz
+    - Type/speed: for example DDR4-2400 means DDR4 module clocked at max 2400MHz
     for given profile
-  * Timings: for example CL17-17-17 means CAS Latency 17, tRCD 17, tRP 17
+    - Timings: for example CL17-17-17 means CAS Latency 17, tRCD 17, tRP 17
     (numbers expressed in clock cycles) for given memory profile
-  * Voltage: memory voltage in Volts for given memory profile
+    - Voltage: memory voltage in Volts for given memory profile
 
 > NOTE: some XMP profiles may have lower speeds than other ones, but also have
 > smaller CAS latency. Also the memory frequency configured in the memory
