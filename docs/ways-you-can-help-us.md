@@ -65,8 +65,12 @@ that works for you.
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick" />
   <input type="hidden" name="hosted_button_id" value="3FFL749PVUYP6" />
-  <input type="image" src="https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-  <img alt="" border="0" src="https://www.paypal.com/en_PL/i/scr/pixel.gif" width="1" height="1" />
+  <input type="image"
+  src="https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif"
+  border="0" name="submit" title="PayPal - The safer, easier way to pay
+  online!" alt="Donate with PayPal button" />
+  <img alt="" border="0" src="https://www.paypal.com/en_PL/i/scr/pixel.gif"
+  width="1" height="1" />
 </form>
 </center>
 
@@ -90,7 +94,7 @@ SWIFT: TRWIBEB1XXX
 
 ### Bank wire
 
-#### Donations in USD:
+#### Donations in USD
 
 ```text
 3mdeb Sp. z o.o
@@ -98,7 +102,7 @@ IBAN: PL 87 1160 2202 0000 0005 1576 2206
 SWIFT: BIGBPLPW
 ```
 
-#### Donations in EUR:
+#### Donations in EUR
 
 ```text
 3mdeb Sp. z o.o
@@ -125,7 +129,6 @@ way.
 ### Can't see your option?
 
 Contact us `contact@dasharo.com`
-
 
 ## For OEM/ODM: Join the private-beta program
 
