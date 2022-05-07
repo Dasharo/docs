@@ -15,7 +15,7 @@ Software BOM:
 
 - coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
   config and CI YAML)
-  + EDK2
+- EDKII
 
 ### Added
 

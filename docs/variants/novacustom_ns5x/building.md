@@ -7,8 +7,8 @@ This documents describes the procedure for compiling coreboot for NovaCustom NS5
 ## Requirements
 
 - Docker
-  + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-  + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
+    + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+    + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 - Git
 
 ## Procedure

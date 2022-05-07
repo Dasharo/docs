@@ -35,8 +35,8 @@ Obtain Dasharo source code for MSI PRO Z690-A WIFI DDR4:
 
 > Replace the `REVISION` with one of the:
 >
-> - `msi_ms7d25/release` for the latest released version
-> - `msi_ms7d25_vVERSION` (e.g. `msi_ms7d25_v0.1.0`) for the given release
+> * `msi_ms7d25/release` for the latest released version
+> * `msi_ms7d25_vVERSION` (e.g. `msi_ms7d25_v0.1.0`) for the given release
 
 ```bash
 $ git clone https://github.com/Dasharo/coreboot.git -b REVISION

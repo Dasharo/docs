@@ -39,18 +39,26 @@ For details about our release process please read
 
 ### Binaries
 
-[raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc){ .md-button }
-[sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc.sha256){ .md-button }
-[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc.sha256.sig){ .md-button }
+[raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc][v0.5.0_bb_rom]{ .md-button }
+[sha256][v0.5.0_bb_sha]{ .md-button }
+[sha256.sig][v0.5.0_bb_sig]{ .md-button }
 
-[raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc){ .md-button }
-[sha256](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc.sha256){ .md-button }
-[sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc.sha256.sig){ .md-button }
+[v0.5.0_bb_rom]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc
+[v0.5.0_bb_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc.sha256
+[v0.5.0_bb_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_bootblock_v0.5.0.signed.ecc.sha256.sig
+
+[raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc][v0.5.0_rom]{ .md-button }
+[sha256][v0.5.0_sha]{ .md-button }
+[sha256.sig][v0.5.0_sig]{ .md-button }
+
+[v0.5.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc
+[v0.5.0_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc.sha256
+[v0.5.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.5.0/raptor-cs_talos-2_coreboot_v0.5.0.rom.signed.ecc.sha256.sig
 
 Heads was not modified in this release, its binary from previous releases can be
 used.
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision c92383f9](https://github.com/Dasharo/coreboot/tree/c92383f9)
 - [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/?id=98581863)

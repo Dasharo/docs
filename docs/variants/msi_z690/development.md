@@ -16,14 +16,14 @@ Dasharo compatible with the MSI PRO Z690-A WIFI DDR4 platform.
 
 ### Serial debug
 
-* Attach the jumpers in `J16` header to eanble header `J18` according to the
+- Attach the jumpers in `J16` header to eanble header `J18` according to the
   table below:
 
 | Jumper position (TX)      | Jumper position (RX)            |
 |:-------------------------:|:-------------------------------:|
 | EXT + COM                 | EXT + COM                       |
 
-* Connect signals from the `J18` header to serial receiver:
+- Connect signals from the `J18` header to serial receiver:
 
 | RTE             | Msi Z690                                  |
 |:---------------:|:-----------------------------------------:|
@@ -40,7 +40,7 @@ from booting, but we cannot provide input to the platform at the same time.
 
 ### SPI
 
-* For external flashing, connect `RTE` with motherboard according to the table
+- For external flashing, connect `RTE` with motherboard according to the table
   below:
 
 | RTE SPI header      | Msi Z690                                             |
@@ -52,10 +52,9 @@ from booting, but we cannot provide input to the platform at the same time.
 | J7 pin 5 (MISO)     | JTPM1 pin 3 (MISO)                                   |
 | J7 pin 6 (MOSI)     | JTPM1 pin 4 (MOSI)                                   |
 
-
 ![JTPM1](images/msi_z690_spi.jpeg)
 
-* Example connection:
+- Example connection:
 
 ![RTE](images/msi_z690_connected_rte.jpg)
 
@@ -65,9 +64,9 @@ from booting, but we cannot provide input to the platform at the same time.
 
 #### Power buttons control
 
-* Connect 12V/4A power supply to RTE J13 connector to power on RTE
+- Connect 12V/4A power supply to RTE J13 connector to power on RTE
 
-* Connect power control pins from mainboard to RTE according to the table below:
+- Connect power control pins from mainboard to RTE according to the table below:
 
 > JFP1 is located in the corner of the mainbaord, near SATA interface ports
 
