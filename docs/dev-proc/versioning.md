@@ -32,7 +32,7 @@ In Dasharo we use following rules for keys:
     - Dasharo firmware produced by 3mdeb:
         - Real Name: `Dasharo release <version> compatible with <name> signing key`
         - Signing key: `3mdeb Dasharo Master Key`
-    - For Dasharo firmware produced by 3mdeb on behalf customer:
+    - For Dasharo firmware produced by 3mdeb on customer's behalf:
         - Real Name: `Dasharo open-source firmware <version> for <name> signing key`
         - Signing key: `3mdeb Dasharo Master Key`
 
