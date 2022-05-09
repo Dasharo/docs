@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 Until Nehalem (ME version 6) it was possible to remove ME firmware completely.
 Starting with Nehalem, ME firmware can't be completely removed.
@@ -33,7 +33,7 @@ A neutered ME will initialize hardware, then throw an error due to missing
 firmware
 
 - This sometimes results in power management issues
-    - Therefore it's not recommended in production without extensive testing
+    + Therefore it's not recommended in production without extensive testing
 - Functions provided by ME will no longer be operational
 
 ME >= v11.x: Sometimes `mfs` also needs to be preserved. `mfs` is responsible
