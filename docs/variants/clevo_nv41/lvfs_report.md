@@ -25,7 +25,7 @@ NovaCustom NV4x system firmware
 ### Feasibility analysis
 
 - Tiger Lake-U is supported in flashrom
-    + Present since commit <https://github.com/flashrom/flashrom/commit/93b01904db607ef8169047e68e376dcda1bd7fbe>,
+    + Present since [this commit](https://github.com/flashrom/flashrom/commit/93b01904db607ef8169047e68e376dcda1bd7fbe),
       not yet released to stable as of 14.01.2022
 - flashrom is supported in fwupd
     + flashrom plugin is enabled by default in many common desktop Linux
@@ -83,6 +83,6 @@ NovaCustom NV4x system firmware
           support anything like this, so support for it will also need to be
           implemented.
     + Prior work:
-        - <https://github.com/fwupd/fwupd/pull/1370>
-        - <https://github.com/fwupd/fwupd/pull/1481>
-        - <https://lkml.org/lkml/2019/11/28/291>
+        - [fwupd #1370](https://github.com/fwupd/fwupd/pull/1370)
+        - [fwupd #1481](https://github.com/fwupd/fwupd/pull/1481)
+        - [LKML thread](https://lkml.org/lkml/2019/11/28/291)
