@@ -37,7 +37,7 @@ and can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
 ```bash
@@ -73,7 +73,7 @@ and can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open `Start Menu`, find and open `Device Manager`.
 1. Find `Audio inputs and outputs` group and expand it. Note the result.
 
@@ -103,7 +103,7 @@ recordings.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
 ```bash
@@ -136,7 +136,7 @@ recordings.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the left mouse button to open volume menu.
 1. In the volume menu, click the rightmost part of it and note the reult.
@@ -164,7 +164,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following command:
 
 ```bash
@@ -201,7 +201,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button and then using the left mouse button
     click `Open Sound Settings`.
@@ -234,7 +234,7 @@ after plugging in the 3.5 mm jack into the slot.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. When the `Select Audio Device` menu appears, select what type of external
@@ -286,7 +286,7 @@ after plugging in the 3.5 mm jack into the slot.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right
     side of the laptop.
 1. After the `Which device did you plug in` menu appearing, select what type
@@ -330,7 +330,7 @@ recordings by using the external headset speakers.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Open a terminal window and execute the following command:
@@ -365,7 +365,7 @@ recordings by using the external headset speakers.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
@@ -396,7 +396,7 @@ from external headset.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Open a terminal window and execute the following command:
@@ -452,7 +452,7 @@ from external headset.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into micro jack slot located on the right side of the
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click

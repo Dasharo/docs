@@ -1,7 +1,5 @@
 # RTE v.0.5.3 with Asus KGPE-D16 connection
 
-=========================================
-
 ![](/images/kgpe_overview.png)
 
 ## Power supply
@@ -181,8 +179,9 @@ The build shall look like this:
 ![Flash](flash_chip_adapter/flash_chip_adapter_1.jpg){: style="height:595px"}
 ![Flash](flash_chip_adapter/flash_chip_adapter_2.jpg){: style="height:595px"}
 
-Such adapters will be soon available in our shop for purchase. For more details
-how to enable SPI flash protection refer to [SPI FLash protection page](spi-wp.md).
+Such adapters are now available in our [online shop][flashchip-adapter] for
+purchase. For more details how to enable SPI flash protection refer to [SPI
+Flash protection page](spi-wp.md).
 
 ### Power management
 
@@ -269,3 +268,5 @@ to the [Dasharo Newsletter](https://newsletter.3mdeb.com/subscription/wwL90UkXP)
 ![](/images/kgpe_1.jpg)
 ![](/images/kgpe_2.jpg)
 ![](/images/kgpe_3.jpg)
+
+[flashchip-adapter]: https://3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/

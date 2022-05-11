@@ -52,28 +52,25 @@ version (and configuration) on the device.
 > channel.
 
 When flashing binaries with ME binary included, flashing of the whole chip is
-required. Additionally, the firmware has to be flashed externally using an
-external programmer like a `ch341a_spi`.
+required. Follow the steps below:
 
-![ns50mu chips](../../images/ns50mu_board_chips.jpg)
-
-Steps for initial Dasharo installation:
-
-- Open the laptop
-- Disconnect the primary battery (1)
-- Disconnect the CMOS battery (2)
-- Attach an external programmer with a SOIC-8 clip to the SPI flash chip (3)
-- Execute the following command, replaceing [path] with the path to the firmware
+- Power off the laptop
+- While holding the Fn+M keys, power on the laptop - This unlocks the ME and
+  allows for it to be overwritten. The fans will spin at 100% speed at this
+  point
+- Execute the following command, replacing [path] with the path to the firmware
   image you want to flash, e.g. `tuxedo_ibs15_full_v1.0.0.rom`
 
   ```bash
-  # flashrom -p ch341a_spi -w [path]
+  # flashrom -p internal -w [path]
   ```
 
-- Detach the SOIC-8 clip
-- Connect the primary battery (1) - do **not** connect the CMOS battery yet (2)
-- Power on the laptop. The laptop may shut down once after training the memory.
-- Once Dasharo is booted, shut down the laptop and reconnect the CMOS battery.
+- **Reboot** the laptop
+- The laptop will boot into Dasharo. After Dasharo has booted, it is safe to
+  shut down the laptop to silence the fans
+
+> Note: if you shut down the laptop instead of rebooting, it may be necessary
+> to hold Fn+M for it to boot the first time after flashing.
 
 ### Updating Dasharo
 

@@ -51,7 +51,7 @@ nav:
       - 'Clevo NV41':
           - 'Releases': variants/clevo_nv41/releases.md
           - 'Building manual': variants/clevo_nv41/building.md
-          - 'Updating firmware using fwupd': variants/clevo_nv41/fwupd_usage.md
+          - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
           - 'EC firmware update': variants/clevo_nv41/ec_update.md
           - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
           - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
@@ -72,17 +72,28 @@ nav:
           - 'Releases': variants/novacustom_ns5x/releases.md
           - 'Building manual': variants/novacustom_ns5x/building.md
           - 'Installation manual': variants/novacustom_ns5x/installation.md
+          - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
           - 'Post-installation steps': variants/novacustom_ns5x/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'RGB keyboard': variants/novacustom_ns5x/rgb_keyboard.md
+          - 'Hardware Configuration Matrix': variants/novacustom_ns5x/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
       - 'Protectli VP4620':
           - 'Releases': variants/protectli_vp4620/releases.md
           - 'Building manual': variants/protectli_vp4620/building-manual.md
           - 'Installation manual': variants/protectli_vp4620/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
       - 'MSI PRO Z690-A WIFI DDR4':
+          - 'FAQ': variants/msi_z690/faq.md
+          - 'Overview': variants/msi_z690/overview.md
+          - 'Releases': variants/msi_z690/releases.md
+          - 'Building manual': variants/msi_z690/building-manual.md
+          - 'Installation manual': variants/msi_z690/installation-manual.md
+          - 'Recovery': variants/msi_z690/recovery.md
           - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
+          - 'Memory Compatibility': variants/msi_z690/memory-hcl.md
           - 'Test matrix': variants/msi_z690/test-matrix.md
+          - 'Development': variants/msi_z690/development.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
@@ -118,6 +129,8 @@ nav:
       - 'Firmware build process': osf-trolling-list/build_process.md
     # - 'Firmware release process': osf-trolling-list/release_process.md
       - 'Trusted Computing': osf-trolling-list/trusted_computing.md
+      - 'Jira Service Management': osf-trolling-list/jsm_documentation.md
+      - 'Intel ME/CSME': osf-trivia-list/me.md
   - 'Ecosystem':
       - 'Overview': ecosystem/overview.md
     # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
@@ -155,8 +168,12 @@ nav:
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
               - 'Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
+              - 'Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
+              - 'Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
               - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
+              - 'Device Tree': unified-test-documentation/dasharo-compatibility/31W-device-tree.md
               - 'USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
+              - 'CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
               - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
               - 'Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
               - 'SD card reader': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
@@ -166,7 +183,7 @@ nav:
               - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
               - 'USB type C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
               - 'Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
-              - 'Windows 11 booting': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
+              - 'Windows booting': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
               - 'Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
               - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
               - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
@@ -207,3 +224,4 @@ nav:
   - 'Projects':
       - 'TrenchBoot Anti Evil Maid': projects/trenchboot-aem.md
   - 'Glossary': glossary.md
+  - 'Ways you can help us': ways-you-can-help-us.md

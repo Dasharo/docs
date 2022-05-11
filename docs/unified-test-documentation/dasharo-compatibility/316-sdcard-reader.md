@@ -36,7 +36,7 @@ can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
 ```bash
@@ -71,16 +71,26 @@ can be detected from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
-1. Open `Device Manager`
-1. Find `Memory technology devices` category and expand it
-1. In the expanded section, find `Realtek PCIE CardReader` device
-1. Double click `Realtek PCIE CardReader` and note the result
+1. Log into the system by using the proper login and password.
+1. Open PowerShell as administrator.
+1. Run below command and note result:
+
+    ```PowerShell
+    Get-PnpDevice -Status "OK" -Class "MTD"
+    ```
 
 **Expected result**
 
-1. `Realtek PCIE CardReader` should be listed in the `Device Manager`
-and should not report any error.
+The output of the command should contain basic information about mounted
+SD card reader.
+
+Output example:
+
+```PowerShell
+Status     Class           FriendlyName
+------     -----           ------------
+OK         MTD             Realtek PCIE CardReader
+```
 
 ### SDC002.001 SD Card read/write (Ubuntu 20.04)
 
@@ -102,7 +112,7 @@ can be used from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following commands as root:
 
 ```bash
@@ -141,19 +151,16 @@ can be used from the operating system.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
-1. Open `Windows Explorer` and go to `This PC`
-1. Find SD card icon and double click it
-1. Click the right mouse button and choose `New` then choose `Text Document`
-1. Name the new file and double click the icon to open it in `Notepad`
-1. Write any text and press Ctrl+s
-1. Close `Notepad`
-1. In the `Windows Explorer` use the right mouse button to click icon
-   of the SD Card and click `Eject`
-1. Remove the SD Card and insert it again
-1. Find SD card icon and double click it again
-1. Find created text file, double click to open it and note the result
+1. Log into the system by using the proper login and password.
+1. Determine the localisation of the mounted SD card.
+1. Open PowerShell as administrator.
+1. Run below commands and note results:
+
+    ```powershell
+    New-Item -Path "${drive_lacation}:\" -Name "testfile.txt" -ItemType "file" -Value "This is a test string."
+    Get-Content -Path "${drive_lacation}:\testfile.txt"
+    ```
 
 **Expected result**
 
-Saved text should be readable ofter opening saved file in the `Notepad`.
+Last command should return `This is a test string.`

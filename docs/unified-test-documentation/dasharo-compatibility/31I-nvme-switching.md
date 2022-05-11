@@ -26,7 +26,7 @@ via the Operating System slot.
 
 1. Power on the DUT.
 2. Boot into the system.
-3. Log into system by using the proper login and password.
+3. Log into the system by using the proper login and password.
 4. Open a terminal window and execute `sudo parted -l`.
 5. Check if the connected disk is present on the list.
 6. Power off the DUT.

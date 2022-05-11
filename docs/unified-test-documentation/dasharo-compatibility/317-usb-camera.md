@@ -30,7 +30,7 @@ correctly and can be accessed from the operating system
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the following commands:
 
 ```bash
@@ -81,7 +81,7 @@ correctly and can be accessed from the operating system
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open `Camera` app and note the result.
 
 **Expected result**

@@ -34,7 +34,7 @@ MD006: true
 # MD007/ul-indent - Unordered list indentation
 MD007:
   # Spaces for indent
-  indent: 2
+  indent: 4
   # Whether to indent the first level of the list
   start_indented: false
 
@@ -140,7 +140,7 @@ MD031:
 # MD033/no-inline-html - Inline HTML
 MD033:
   # Allowed elements
-  allowed_elements: ["br", "center", "img", "script"]
+  allowed_elements: ["br", "center", "img", "script", "form", "input"]
 
 # MD034/no-bare-urls - Bare URL used
 MD034: true

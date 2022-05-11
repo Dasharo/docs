@@ -3,7 +3,8 @@
 ## Introduction
 
 This document describes the hardware configuration used for validation of the
-coreboot port on the MSI PRO Z690-A workstation.
+coreboot port on the MSI PRO Z690-A workstation. For additional information,
+please check the [FAQ section](./faq.md).
 
 ## LA1E312159
 

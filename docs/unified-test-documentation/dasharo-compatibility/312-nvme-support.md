@@ -53,7 +53,7 @@ the M.2 slot.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
 ```bash
@@ -94,15 +94,21 @@ M.2 slot.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
-1. Open device manager.
-1. Select `Disk drives` option and find correct drive.
-1. Right click the drive entry and select `Properties` option
-1. Go to `Details` tab.
-1. In the `Property` menu select `Hardware Ids` option.
-1. Find the `Value` window and note the result.
+1. Log into the system by using the proper login and password.
+1. Open PowerShell as administrator.
+1. Run below command and note the result:
+
+    ```powershell
+    Get-PnpDevice -Status "OK" | where { $_.InstanceId -like "SCSI\DISK&VEN_NVME&*"}
+    ```
 
 **Expected result**
 
 1. The `OPERATING_SYSTEM` booting from the NVMe disk
-1. `NVMe` text found in the `Hardware Ids` `Values` window
+1. Command should output at least one NVMe drive. Similar as below:
+
+    ```powershell
+    Status     Class           FriendlyName
+    ------     -----           ------------
+    OK         DiskDrive       Samsung SSD 980 PRO 500GB
+    ```

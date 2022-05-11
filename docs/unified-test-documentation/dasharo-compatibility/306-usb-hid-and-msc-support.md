@@ -65,7 +65,7 @@ labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the follwing command:
 
     ```bash
@@ -99,19 +99,34 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open PowerShell and and run the follwing command:
 
     ```bash
-    while (1) {Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' }; sleep 5; clear}
+    Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' }
     ```
 
-1. Connect external USB devices to DUT USB A port and note the result.
+1. Note the results.
 
 **Expected result**
 
-1. After each device is connected to the USB port, a new USB device entry in the
-    output of the command should appear.
+1. After executing the command, a list containing all USB devices should
+be displayed. All devices' status should be `OK`.
+
+    Example output:
+
+    ```bash
+    Status     Class           FriendlyName
+    ------     -----           ------------
+    OK         DiskDrive       Mass Storage Device USB Device
+    OK         USB             Generic USB Hub
+    OK         HIDClass        USB Input Device
+    OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
+    OK         USB             USB Root Hub (USB 3.0)
+    OK         Net             TP-LINK Gigabit Ethernet USB Adapter
+    OK         USB             Generic USB Hub
+    OK         USB             USB Mass Storage Device
+    ```
 
 ### USB002.001 USB keyboard detection (firmware)
 
@@ -162,7 +177,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the follwing command:
 
     ```bash
@@ -209,7 +224,14 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
+1. Open PowerShell and and run the follwing command:
+
+    ```bash
+    Get-CimInstance win32_KEYBOARD
+    ```
+
+1. Note the results.
 1. Open `notepad`.
 1. Test the alphanumeric keys and note the generated characters.
 1. Test non-alphanumeric keys and verify that they generate the signs.
@@ -219,6 +241,38 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 1. Open `Start menu` and press `Esc`. Check if `Start menu` is properly closed.
 
 **Expected result**
+
+1. After running the PowerShell command information about connected keyboard
+    should be displayed.
+
+    Example output:
+
+    ```bash
+    Caption                     : Enhanced (101- or 102-key)
+    Description                 : USB Input Device
+    InstallDate                 :
+    Name                        : Enhanced (101- or 102-key)
+    Status                      : OK
+    Availability                :
+    ConfigManagerErrorCode      : 0
+    ConfigManagerUserConfig     : False
+    CreationClassName           : Win32_Keyboard
+    DeviceID                    : USB\VID_046D&PID_C31C&MI_00\6&26C21341&0&0000
+    ErrorCleared                :
+    ErrorDescription            :
+    LastErrorCode               :
+    PNPDeviceID                 : USB\VID_046D&PID_C31C&MI_00\6&26C21341&0&0000
+    PowerManagementCapabilities :
+    PowerManagementSupported    : False
+    StatusInfo                  :
+    SystemCreationClassName     : Win32_ComputerSystem
+    SystemName                  : DESKTOP-CUR9H2J
+    IsLocked                    :
+    Layout                      : 00000409
+    NumberOfFunctionKeys        : 12
+    Password                    :
+    PSComputerName              :
+    ```
 
 1. All standard keyboard keys generate correct characters
    or actions when pressed.
