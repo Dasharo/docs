@@ -33,23 +33,25 @@ using fwupd demon.
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
-1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md/#dasharo-security-uefi-secure-boot).
+1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md).
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
-1. Go through [Using binary packages](../../variants/clevo_nv41/fwupd_usage.md)
-1. Start updating the firmware by executing the following command in terminal:
+1. Log into the  system by using the proper login and password.
+1. Configure environment in accordance with the 
+    [documentation](../../variants/clevo_nv41/fwupd_usage.md)
+1. Start firmware updating procedure by executing the following command in 
+    the terminal:
 
     ```bash
-        sudo fwupdtool update --verbose
+        sudo fwupdmgr update
     ```
 
 1. Reboot the DUT.
 1. Boot into the system.
-1. Log into system by using the proper login and password.
+1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the following command to verify results:
 
     ```bash
