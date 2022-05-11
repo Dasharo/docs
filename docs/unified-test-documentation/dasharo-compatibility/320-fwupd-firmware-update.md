@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Firmware Update
+# Dasharo Compatibility: Firmware Update using fwupd
 
 ## Test cases
 
@@ -15,14 +15,15 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. Install the `dmidecode` package: `sudo apt install dmidecode`.
-1. Make yourself familiar with [Updating firmware using fwupd](../../variants/clevo_nv41/fwupd_usage.md)
+1. Make yourself familiar with
+    [Updating firmware using fwupd](../../variants/clevo_nv41/fwupd_usage.md)
 
 ### FFF001.001 Firmware update by using fwupd
 
 **Test description**
 
-This test verify whether it is possible to update the firmware on the DUT, and
-check the firmware version is correct.
+This test verify whether it is possible to update the firmware on the DUT by
+using fwupd demon.
 
 **Test configuration data**
 
@@ -61,9 +62,11 @@ The output of `dmidecode` command should contain information about current
 firmware. The current firmware version should be equal to the latest released
 firmware version.
 
+Example output:
+
 ```bash
 BIOS Information
-        Vendor: 3mdeb Embedded Systems Consulting
+        Vendor: 3mdeb 
         Version: Dasharo (coreboot+UEFI) v1.1.0
         Release Date: 03/24/2022
         ROM Size: 16 MB
