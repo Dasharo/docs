@@ -24,6 +24,3 @@ coreboot port on the Protectli fw6e firewall.
 |                        | 4. USB Type-C Hub Pro UCN3286                            |
 | **USB Keyboard**       | DELL KB216                                               |
 | **Power supply**       | Channel Well Technology 12V, 7.5A 90W                    |
-
-> Note, that in **RAM** section all used during verification procedure
-    modules have been listed. Device has only two RAM mounting slots.
