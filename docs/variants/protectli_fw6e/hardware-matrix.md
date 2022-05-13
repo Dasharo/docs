@@ -1,11 +1,11 @@
-# Hardware configuration matrix - Protectli fw6e
+# Hardware configuration matrix - Protectli FW6E
 
 ## Introduction
 
 This document describes the hardware configuration used for validation of the
-coreboot port on the Protectli fw6e firewall.
+coreboot port on the Protectli FW6E firewall.
 
-## Protectli fw6e Dasharo v1.0.14
+## Protectli FW6E Dasharo v1.0.14
 
 | Component              | Description                                              |
 |------------------------|----------------------------------------------------------|
