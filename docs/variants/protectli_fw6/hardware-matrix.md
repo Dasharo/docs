@@ -5,7 +5,7 @@
 This document describes the hardware configuration used for validation of the
 coreboot port on the Protectli FW6E firewall.
 
-## Protectli FW6E Dasharo v1.0.14
+## Protectli FW6E Dasharo
 
 | Component              | Description                                              |
 |------------------------|----------------------------------------------------------|

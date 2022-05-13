@@ -32,7 +32,7 @@ subjected from before the release of the new binary.
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
-[BSD]: ../../unified-test-documentation/dasharo-compatibility/307-freebsd-support
+[BSD]: ../../unified-test-documentation/dasharo-compatibility/307-freebsd-support.md
 [CNB]: ../../unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
 
 ## Module: Dasharo performance
