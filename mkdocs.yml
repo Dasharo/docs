@@ -79,6 +79,10 @@ nav:
           - 'Hardware Configuration Matrix': variants/novacustom_ns5x/hardware-matrix.md
           - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
       - 'Protectli FW6':
+          - 'Overview': variants/protectli_fw6/overview.md
+          - 'Releases': variants/protectli_fw6/releases.md
+          - 'Building manual': variants/protectli_fw6/building-manual.md
+          - 'Installation manual': variants/protectli_fw6/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
           - 'Test matrix': variants/protectli_fw6/test-matrix.md
       - 'Protectli VP4620':
