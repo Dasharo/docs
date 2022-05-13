@@ -34,7 +34,7 @@ booting is not higher than the maximum allowed temperature.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     sensors
@@ -81,7 +81,7 @@ than the maximum allowed temperature after stress test.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command to turn on the stressor:
+1. Open a terminal window and run the following command to turn on the stressor:
 
     ```bash
     stress-ng --cpu 0 --tz -t 60s
@@ -90,7 +90,7 @@ than the maximum allowed temperature after stress test.
     Stress test duration time might be changed by change te value of the
     parameter `-t`.
 
-1. After end the stress test open a terminal window and run the follwing 
+1. After end the stress test open a terminal window and run the follwing
     command:
 
     ```bash

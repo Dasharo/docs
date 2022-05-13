@@ -40,9 +40,9 @@ using fwupd demon.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the  system by using the proper login and password.
-1. Configure environment in accordance with the 
+1. Configure environment in accordance with the
     [documentation](../../common-coreboot-docs/fwupd_usage.md)
-1. Start firmware updating procedure by executing the following command in 
+1. Start firmware updating procedure by executing the following command in
     the terminal:
 
     ```bash
@@ -68,7 +68,7 @@ Example output:
 
 ```bash
 BIOS Information
-        Vendor: 3mdeb 
+        Vendor: 3mdeb
         Version: Dasharo (coreboot+UEFI) v1.1.0
         Release Date: 03/24/2022
         ROM Size: 16 MB

@@ -30,7 +30,6 @@ flashrom -p internal -w [path] --ifd -i bios
 To flash Dasharo on the platform, execute the following command - replace `[path]`
 with the path to the Dasharo image you want to flash, e.g. `protectli_fw6_DF_v1.0.14.rom`.
 
-
 ```bash
 sudo flashrom -p internal -w protectli_fw6_DF_v1.0.14.rom --ifd -i bios
 ```
