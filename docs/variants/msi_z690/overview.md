@@ -24,7 +24,7 @@ documentation._
 
 ## Useful documents
 
-* [MSI Z690-A PRO DDR4 WiFI site](https://pl.msi.com/Motherboard/PRO-Z690-A-WIFI)
+* [MSI Z690-A PRO DDR4 WiFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
 * [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
 
 ## Press releases
