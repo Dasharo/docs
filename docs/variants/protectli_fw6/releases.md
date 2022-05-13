@@ -29,13 +29,12 @@ For details about our release process please read
 
 See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on 87f9fc85 revision e04b0ac8](https://github.com/Dasharo/coreboot/commits/e04b0ac8)
 - [seabios based on v1.0.6 revision 03bcdcaf](https://github.com/Dasharo/SeaBIOS/commits/03bcdcaf)
 - [ipxe based on 2019.3 stable revision ebf2eaf5](https://github.com/ipxe/ipxe/commits/ebf2eaf5)
 - [memtest based on v002 revision dd5b4ff2](https://review.coreboot.org/plugins/gitiles/memtest86plus/+/dd5b4ff2)
-
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
 [v1.0.14_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom
