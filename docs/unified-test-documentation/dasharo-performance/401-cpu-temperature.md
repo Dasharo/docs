@@ -25,6 +25,7 @@ temperature.
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
+1. Install the `lm-sensors` package: `sudo apt install lm-sensors`.
 
 **Test steps**
 
@@ -34,7 +35,7 @@ temperature.
 1. Open a terminal window and run the follwing command:
 
     ```bash
-    cat /sys/class/thermal/thermal_zone*/temp
+    sensors
     ```
 
 1. Note the result.
@@ -44,13 +45,19 @@ temperature.
 Example output:
 
     ```bash
-    38000
-    49000
+    coretemp-isa-0000
+    Adapter: ISA adapter
+    Package id 0:  +34.0°C  (high = +100.0°C, crit = +100.0°C)
+    Core 0:        +34.0°C  (high = +100.0°C, crit = +100.0°C)
+    Core 1:        +34.0°C  (high = +100.0°C, crit = +100.0°C)
+    Core 2:        +32.0°C  (high = +100.0°C, crit = +100.0°C)
+    Core 3:        +33.0°C  (high = +100.0°C, crit = +100.0°C)
     ```
 
-Displayed numbers should not exceed `80000`.
+Displayed temperature should not exceed `high value` and other specific 
+temperature value, if it has been defined.
 
-### CPT001.001 CPU temperature after stress test (Ubuntu 22.04)
+### CPT002.001 CPU temperature after stress test (Ubuntu 22.04)
 
 **Test description**
 
@@ -93,4 +100,5 @@ Example output:
     stress-ng: info:  [5706]         x86_pkg_temp   50.12 C (323.27 K)
     ```
 
-Displayed temperature should not exceed `80 C`.
+Displayed temperature should not exceed `high value` and other specific 
+temperature value, if it has been defined.
