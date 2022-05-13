@@ -9,14 +9,16 @@
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 
 ### CPT001.001 CPU temperature without load (Ubuntu 22.04)
 
 **Test description**
 
-Check whether the temperature of CPU is not greater than the maximum allowed 
-temperature.
+This test aims to verify whether the temperature of CPU after system booting
+is not higher than the maximum allowed temperature.
 
 **Test configuration data**
 
@@ -48,7 +50,9 @@ Example output:
     49000
     ```
 
-Displayed numbers should not exceed `80000`.
+To properly determine the current temperature of the CPU, output value
+should be divided by 1000. Displayed temperature should be not higher than
+defined by the DUT producer maximum temperature.
 
 ### CPT001.001 CPU temperature after stress test (Ubuntu 22.04)
 
