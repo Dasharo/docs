@@ -12,23 +12,19 @@ described in this documentation are dedicated to the given platform
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
-| 2.   | [UEFI compatible interface][EFI]                  | EFI           | EFI001.001                           |
-| 4.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
-| 5.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
-| 6.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001, DMI008.001|
-| 7.   | [Custom boot logo][CLG]                           | CLG           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-| 8.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
-| 10.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM001.002               |
-| 11.  | [Network boot][PXE]                               | PXE           | All                                  |
-| 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
-| 15.  | [Custom logo][CLG]                                | CLG           | All                                  |
-| 16.  | [Custom boot menu key][CBK]                       | CBK           | All                                  |
-| 10.  | [FreeBSD support][BSD]                            | BSD           | All                                  |
-| 12.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001                           |
-| 14.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.001                           |
-| 15.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
-| 17.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
-| 18.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
+| 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.001, DSP002.003               |
+| 3.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+| 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+| 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
+| 7.   | [Network boot][PXE]                               | PXE           | All                                  |
+| 8.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
+| 9.   | [Custom logo][CLG]                                | CLG           | All                                  |
+| 10.  | [Custom boot menu key][CBK]                       | CBK           | All                                  |
+| 11.  | [FreeBSD support][BSD]                            | BSD           | All                                  |
+| 12.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.001                           |
+| 13.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
+
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -50,10 +46,10 @@ described in this documentation are dedicated to the given platform
 [CNB]: ../../unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
 [MSS]: ../../unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
 
-## Module: Dasharo security
+## Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                                | TPM           | TPM001.001                           |
+| 1.   | [CPU temperature][CPT]                            | CPT           | All                                  |
 
-[TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
+[CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
