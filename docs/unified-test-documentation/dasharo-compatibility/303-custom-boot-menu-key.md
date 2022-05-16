@@ -6,8 +6,8 @@
 
 **Test description**
 
-This test aims to verify that the DUT is configured to use custom boot menu and
-setup menu (if it exists) hotkeys.
+This test aims to verify that the DUT is configured to use custom boot menu 
+(if it exists) hotkey.
 
 **Test configuration data**
 
@@ -21,12 +21,33 @@ setup menu (if it exists) hotkeys.
 **Test steps**
 
 1. Power on the DUT.
-1. Hold the `BIOS_SETUP_KEY` to enter the UEFI Setup Menu.
-1. Once the DUT has booted into the setup menu, power it off using the power
-    button.
-1. Power on the DUT again.
-1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Hold the `BIOS_MENU_KEY` to enter the UEFI Setup Menu.
 
 **Expected result**
 
-The DUT boots into an UEFI Setup menu and Boot menu using the specified hotkeys.
+The DUT boots into an UEFI Boot menu using the specified hotkey.
+
+### CBK002.001 Custom setup menu key
+
+**Test description**
+
+This test aims to verify that the DUT is configured to use custom setup menu 
+(if it exists) hotkey.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `SETUP_MENU_KEY` to enter the UEFI Setup Menu.
+
+**Expected result**
+
+The DUT boots into an UEFI Setup menu using the specified hotkey.
