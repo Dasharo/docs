@@ -6,7 +6,7 @@
 
 **Test description**
 
-This test aims to verify that the DUT is configured to use custom boot menu 
+This test aims to verify that the DUT is configured to use custom boot menu
 (if it exists) hotkey.
 
 **Test configuration data**
@@ -31,7 +31,7 @@ The DUT boots into an UEFI Boot menu using the specified hotkey.
 
 **Test description**
 
-This test aims to verify that the DUT is configured to use custom setup menu 
+This test aims to verify that the DUT is configured to use custom setup menu
 (if it exists) hotkey.
 
 **Test configuration data**
