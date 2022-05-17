@@ -69,7 +69,7 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
     watch -n1 lsusb
     ```
 
-1. Connect(or Disconnect) external USB devices to the USB ports on the docking 
+1. Connect(or Disconnect) external USB devices to the USB ports on the docking
     station and note the result.
 
 **Expected result**
@@ -134,7 +134,7 @@ be displayed. The list should contain the `USB_STICK`, which is plug in.
 **Test description**
 
 This test aims to verify that the external USB keyboard connected to the docking
-station is detected correctly by the `FIRMWARE` and all basic keys work 
+station is detected correctly by the `FIRMWARE` and all basic keys work
 according to their labels.
 
 **Test configuration data**

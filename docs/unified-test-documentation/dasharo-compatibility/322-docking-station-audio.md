@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Docking station audio 
+# Dasharo Compatibility: Docking station audio
 
 ## Test cases
 
@@ -100,7 +100,7 @@ TBD
 **Test description**
 
 This test aims to verify that the audio subsystem is able to playback audio
-recordings by using the external headset speakers connected to the docking 
+recordings by using the external headset speakers connected to the docking
 station.
 
 **Test configuration data**
@@ -136,7 +136,7 @@ Sound should be played from the external speakers.
 **Test description**
 
 This test aims to verify that the audio subsystem is able to playback audio
-recordings by using the external headset speakers connected to the docking 
+recordings by using the external headset speakers connected to the docking
 station.
 
 **Test configuration data**
