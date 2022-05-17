@@ -49,19 +49,19 @@ nav:
           #- 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
-      - 'Clevo NV41':
-          - 'Releases': variants/clevo_nv41/releases.md
-          - 'Building manual': variants/clevo_nv41/building.md
+      - 'NovaCustom NV4x':
+          - 'Releases': variants/novacustom_nv4x/releases.md
+          - 'Building manual': variants/novacustom_nv4x/building.md
           - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
-          - 'EC firmware update': variants/clevo_nv41/ec_update.md
-          - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
-          - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
-          - 'Post-installation steps': variants/clevo_nv41/post_install.md
-          - 'Hardware Configuration Matrix': variants/clevo_nv41/hardware-matrix.md
-          - 'Test matrix': variants/clevo_nv41/test-matrix.md
+          - 'EC firmware update': variants/novacustom_nv4x/ec_update.md
+          - 'Flashing with external programmer': variants/novacustom_nv4x/flashing_external.md
+          - 'Flashing with internal programmer': variants/novacustom_nv4x/flashing_internal.md
+          - 'Post-installation steps': variants/novacustom_nv4x/post_install.md
+          - 'Hardware Configuration Matrix': variants/novacustom_nv4x/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_nv4x/test-matrix.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Openness score': variants/clevo_nv41/openness_analysis.md
-          - 'LVFS report': variants/clevo_nv41/lvfs_report.md
+          - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
+          - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
           - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md

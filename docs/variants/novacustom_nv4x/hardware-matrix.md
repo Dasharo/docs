@@ -1,9 +1,9 @@
-# Hardware configuration matrix - Clevo NV41
+# Hardware configuration matrix - NovaCustom NV4X
 
 ## Introduction
 
 This document describes the hardware configurations used for validation of the
-coreboot port on the Clevo NV41 laptop.
+coreboot port on the NovaCustom NV4X laptop.
 
 ## NV41MZ
 
