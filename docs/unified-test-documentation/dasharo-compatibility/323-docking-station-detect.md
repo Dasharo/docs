@@ -14,7 +14,8 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Connected `USB_STICK` to the USB port.
+1. The docking station connected to the USB-C port.
+1. The `USB_STICK` connected to the docking station.
 
 ### DUD001.001 USB detection after coldboot (Ubuntu 22.04)
 
@@ -51,7 +52,6 @@ connection stability.
 **Expected result**
 
 The `USB_STICK` is detected after coldboot.
-
 
 ### DUD002.001 USB detection after warmboot (Ubuntu 22.04)
 
