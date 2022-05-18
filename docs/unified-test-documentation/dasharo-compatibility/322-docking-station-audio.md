@@ -43,14 +43,14 @@ after plugging in the 3.5 mm jack into the docking station.
 1. Open a terminal window and execute the following command:
 
 ```bash
-amixer -c 0 contents | grep -A 2 'TBD'
+amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 ```
 
-1. Disconnect the headset from the docking station.
+1. Disconnect the headset from the laptop.
 1. Execute the following command again:
 
 ```bash
-amixer -c 0 contents | grep -A 2 'TBD'
+amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 ```
 
 **Expected result**
@@ -89,11 +89,26 @@ after plugging in the 3.5 mm jack into the docking station.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into the docking station
-TBD
+1. After the `Which device did you plug in` menu appearing, select what type
+    of external device has been connected to the laptop (headset).
+1. Find the `Speakers` icon in the bottom right part of the screen and click
+    it using the right mouse button and then using the left mouse button
+    click `Open Sound Settings`.
+1. Locate `Input` section and click on the `Device properties` option.
+1. In `Device properties` window select option `Additional device properties`.
+1. Locate in `General` the section field named `Jack Information`.
+1. Close the window `Microphone properties`.
+1. Disconnect a headset from the laptop.
+1. Select again the `Addtional device properties` option and locate again
+    field named `Jack information`.
 
 **Expected result**
 
-TBD
+1. `Jack Information` field in the first case should show the position
+    `Front Panel 3.5 mm Jack`.
+1. After disconnecting a headset from the laptop and checking again
+    option `Addtional device properties` field `Jack Information` should not
+    contain the phrase `Front Panel 3.5 mm Jack`.
 
 ### DAU002.001 Audio playback (Ubuntu 22.04)
 
@@ -117,8 +132,7 @@ station.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Plug in a headset jack into micro jack slot located on the right side of the
-    laptop.
+1. Plug in a headset jack into the docking station.
 1. Open a terminal window and execute the following command:
 
 ```bash
@@ -153,8 +167,7 @@ station.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Plug in a headset jack into micro jack slot located on the right side of the
-    laptop.
+1. Plug in a headset jack into the docking station.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
    it using the left mouse button to open volume menu.
 1. In the volume menu, click the rightmost part of it and note the reult.
@@ -184,8 +197,7 @@ from external headset connected to the docking station.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Plug in a headset jack into micro jack slot located on the right side of the
-    laptop.
+1. Plug in a headset jack into the docking station.
 1. Open a terminal window and execute the following command:
 
 ```bash
@@ -224,7 +236,7 @@ aplay /tmp/test-mic.wav
 **Test description**
 
 This test aims to verify that the audio subsystem is able to capture audio
-from external headset.
+from external headset connected to the docking station.
 
 **Test configuration data**
 
@@ -240,8 +252,7 @@ from external headset.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Plug in a headset jack into micro jack slot located on the right side of the
-    laptop.
+1. Plug in a headset jack into the docking station.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button and then using the left mouse button
     click `Open Sound Settings`.
