@@ -1,13 +1,13 @@
-# Dasharo compatibility: Custom boot menu key
+# Dasharo compatibility: Custom Boot Keys
 
 ## Test cases
 
-### CBK001.001 Custom boot menu key
+### CBK001.001 Custom Boot Menu Key
 
 **Test description**
 
-This test aims to verify that the DUT is configured to use custom boot menu
-(if it exists) hotkey.
+This test aims to verify that the DUT is configured to use custom Boot Menu
+hotkey (if it exists).
 
 **Test configuration data**
 
@@ -21,18 +21,18 @@ This test aims to verify that the DUT is configured to use custom boot menu
 **Test steps**
 
 1. Power on the DUT.
-1. Hold the `BIOS_MENU_KEY` to enter the UEFI Setup Menu.
+1. Hold the `BOOT_MENU_KEY` to enter the Boot Menu.
 
 **Expected result**
 
-The DUT boots into an UEFI Boot menu using the specified hotkey.
+The DUT boots into the Boot Menu after using the specified hotkey.
 
-### CBK002.001 Custom setup menu key
+### CBK002.001 Custom BIOS Menu Key
 
 **Test description**
 
-This test aims to verify that the DUT is configured to use custom setup menu
-(if it exists) hotkey.
+This test aims to verify that the DUT is configured to use custom BIOS Menu
+hotkey.
 
 **Test configuration data**
 
@@ -46,8 +46,8 @@ This test aims to verify that the DUT is configured to use custom setup menu
 **Test steps**
 
 1. Power on the DUT.
-1. Hold the `SETUP_MENU_KEY` to enter the UEFI Setup Menu.
+1. Hold the `BIOS_MENU_KEY` to enter the BIOS menu.
 
 **Expected result**
 
-The DUT boots into an UEFI Setup menu using the specified hotkey.
+The DUT boots into the BIOS menu after using the specified hotkey.
