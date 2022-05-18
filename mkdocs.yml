@@ -174,7 +174,7 @@ nav:
           - 'Dasharo compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
-              - 'Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
+              - 'Custom Boot Keys': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
               - 'Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
               - 'Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
