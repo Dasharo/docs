@@ -40,12 +40,25 @@ port.
 1. Connect the docking station to the Thunderbolt 4 port located on the left side
     of the laptop.
 1. Connect the charger plug to the docking station.
-1. Observe the battery indicator located in the top right corner of the screen.
+1. Open a terminal window and run the follwing command:
+
+    ```bash
+    upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep state
+    ```
+
+1. Note the results
+
 
 **Expected result**
 
-1. The battery indicator should indicate that the laptop is currently charging.
+Example output:
 
+```bash
+state:               charging
+```
+
+If state is charging, that means laptop is charged properly.
+ 
 ### DUC001.002 USB Type-C laptop charging (Windows 11)
 
 **Test description**
@@ -71,9 +84,20 @@ port.
 1. Connect the docking station to the Thunderbolt 4 port located on the left side
     of the laptop.
 1. Connect the charger plug to the docking station.
-1. Observe the battery indicator located in the bottom right corner of the
-    screen.
+1. Open PowerShell and and run the follwing command:
+
+    ```powershell
+    Get-WmiObject win32_battery
+    ```
+
+1. Note the results
 
 **Expected result**
 
-1. The battery indicator should indicate that the laptop is currently charging.
+If `BatteryStatus` is equal 2, that means laptop is charged properly.
+
+Example part of output: 
+ 
+    ```powershell
+    BatteryStatus               : 2
+    ```
