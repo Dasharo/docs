@@ -15,7 +15,6 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. The docking station connected to the USB-C port.
-1. The `USB_STICK` connected to the docking station.
 
 ### DUD001.001 USB detection after coldboot (Ubuntu 22.04)
 
@@ -51,7 +50,16 @@ connection stability.
 
 **Expected result**
 
-The `USB_STICK` is detected after coldboot.
+After `lsusb` command the docking station entries should be displayed, but
+output can be diffrent depends on model of the docking station.
+
+Example entries signifing the docking station:
+
+```bash
+Bus 002 Device 010: Realtek Semiconductor Corp. RTL8153 Gigabit Ethernet Adapter
+Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader     
+Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub  
+```
 
 ### DUD002.001 USB detection after warmboot (Ubuntu 22.04)
 
