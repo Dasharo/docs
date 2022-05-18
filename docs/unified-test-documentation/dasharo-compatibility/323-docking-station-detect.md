@@ -16,11 +16,11 @@
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. The docking station connected to the USB-C port.
 
-### DUD001.001 USB detection after coldboot (Ubuntu 22.04)
+### DUD001.001 Docking station detection after coldboot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that the DUT properly detects USB device after
+This test aims to verify that the DUT properly detects the docking station after
 coldboot (realized by power supply cutting off then restoring back).
 This test case may be re-done several times to specify the platform and
 connection stability.
@@ -51,7 +51,7 @@ connection stability.
 **Expected result**
 
 After `lsusb` command the docking station entries should be displayed, but
-output can be diffrent depends on model of the docking station.
+output can be different depending on the model of the docking station.
 
 Example entries signifing the docking station:
 
@@ -61,11 +61,11 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-### DUD002.001 USB detection after warmboot (Ubuntu 22.04)
+### DUD002.001 Docking station detection after warmboot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that the DUT properly detects USB device after
+This test aims to verify that the DUT properly detects the docking station after
 warmboot (realized by device turning off then turning on). This test case
 may be re-done several times to specify the platform and connection stability.
 
@@ -93,14 +93,23 @@ may be re-done several times to specify the platform and connection stability.
 
 **Expected result**
 
-The `USB_STICK` is detected after warmboot.
+After `lsusb` command the docking station entries should be displayed, but
+output can be different depending on the model of the docking station.
 
-### DUD003.001 USB detection after reboot (Ubuntu 22.04)
+Example entries signifing the docking station:
+
+```bash
+Bus 002 Device 010: Realtek Semiconductor Corp. RTL8153 Gigabit Ethernet Adapter
+Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
+Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
+```
+
+### DUD003.001 Docking station detection after reboot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that the DUT properly detects USB device after system
-reboot (performed by relevant command). This test case may be re-done
+This test aims to verify that the DUT properly detects the docking station after
+system reboot (performed by relevant command). This test case may be re-done
 several times to specify the platform and connection stability.
 
 **Test configuration data**
@@ -136,4 +145,13 @@ several times to specify the platform and connection stability.
 
 **Expected result**
 
-The `USB_STICK` is detected after reboot.
+After `lsusb` command the docking station entries should be displayed, but
+output can be different depending on the model of the docking station.
+
+Example entries signifing the docking station:
+
+```bash
+Bus 002 Device 010: Realtek Semiconductor Corp. RTL8153 Gigabit Ethernet Adapter
+Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
+Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
+```
