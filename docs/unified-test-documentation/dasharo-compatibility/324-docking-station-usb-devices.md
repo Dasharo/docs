@@ -102,7 +102,7 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and and run the follwing command:
 
-    ```bash
+    ```powershell
     Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' }
     ```
 
@@ -116,17 +116,17 @@ be displayed. The list should contain the `USB_STICK`, which is plug in.
     Example output:
 
     ```bash
-    Status     Class           FriendlyName
-    ------     -----           ------------
-    OK         DiskDrive       Mass Storage Device USB Device
-    OK         USB             Generic USB Hub
-    OK         HIDClass        USB Input Device
-    OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
-    OK         DiskDrive       USB SanDisk 3.2Gen1 USB Device
-    OK         USB             USB Root Hub (USB 3.0)
-    OK         Net             TP-LINK Gigabit Ethernet USB Adapter
-    OK         USB             Generic USB Hub
-    OK         USB             USB Mass Storage Device
+        Status     Class           FriendlyName
+        ------     -----           ------------
+        OK         DiskDrive       Mass Storage Device USB Device
+        OK         USB             Generic USB Hub
+        OK         HIDClass        USB Input Device
+        OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
+        OK         DiskDrive       USB SanDisk 3.2Gen1 USB Device
+        OK         USB             USB Root Hub (USB 3.0)
+        OK         Net             TP-LINK Gigabit Ethernet USB Adapter
+        OK         USB             Generic USB Hub
+        OK         USB             USB Mass Storage Device
     ```
 
 ### DUB002.001 USB keyboard recognition (firmware)
@@ -229,7 +229,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and and run the follwing command:
 
-    ```bash
+    ```powershell
     Get-CimInstance win32_KEYBOARD
     ```
 
@@ -249,7 +249,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
     One of keyboard should have identical part of output:
 
-    ```bash
+    ```powershell
     Description                 : USB Input Device
     ```
 
