@@ -48,7 +48,6 @@ port.
 
 1. Note the results
 
-
 **Expected result**
 
 Example output:
@@ -58,7 +57,7 @@ state:               charging
 ```
 
 If state is charging, that means laptop is charged properly.
- 
+
 ### DUC001.002 USB Type-C laptop charging (Windows 11)
 
 **Test description**
@@ -96,8 +95,8 @@ port.
 
 If `BatteryStatus` is equal 2, that means laptop is charged properly.
 
-Example part of output: 
- 
-    ```powershell
-    BatteryStatus               : 2
-    ```
+Example part of output:
+
+```powershell
+BatteryStatus               : 2
+```
