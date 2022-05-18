@@ -57,8 +57,8 @@ Example entries signifing the docking station:
 
 ```bash
 Bus 002 Device 010: Realtek Semiconductor Corp. RTL8153 Gigabit Ethernet Adapter
-Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader     
-Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub  
+Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
+Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
 ### DUD002.001 USB detection after warmboot (Ubuntu 22.04)
