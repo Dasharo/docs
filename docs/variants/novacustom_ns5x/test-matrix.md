@@ -26,6 +26,10 @@ subjected from before the release of the new binary.
 | 15.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
 | 16.  | [Custom fan curve][FAN]                                | FAN           | FAN001.001                           |
 | 17.  | [SMBIOS][DMI]                                          | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001  |
+| 18.  | [Docking station detect][DUD]                          | DUD           | All                                  |
+| 19.  | [Docking station USB devices][DUB]                     | DUB           | All                                  |
+| 20.  | [Docking station Audio][DAU]                           | DAU           | All                                  |
+| 21.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -44,6 +48,10 @@ subjected from before the release of the new binary.
 [CAM]: ../../unified-test-documentation/dasharo-compatibility/317-usb-camera.md
 [FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-control.md
 [DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md
+[DUD]: ../../unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
+[DUB]: ../../unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
+[DAU]: ../../unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
+[DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
 
 ## Module: Dasharo security
 
