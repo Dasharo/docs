@@ -28,6 +28,7 @@ coreboot port on the Clevo NV41 laptop.
 |                                | 5. Logitech, Inc. Keyboard K120                  |
 |                                | 6. 4-port USB Type-C Hub Pro                     |
 |                                | 7. Pi-KVM virtual mouse and keyboard             |
+|                                | 8. Expansion Dock Type-C                         |
 | **Power Supply**               | Chicony 65 W                                     |
 | **Power Control**              | N/A                                              |
 | **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
@@ -56,6 +57,7 @@ coreboot port on the Clevo NV41 laptop.
 |                                | 5. Logitech, Inc. Keyboard K120                  |
 |                                | 6. 4-port USB Type-C Hub Pro                     |
 |                                | 7. Pi-KVM virtual mouse and keyboard             |
+|                                | 8. Expansion Dock Type-C                         |
 | **Power Supply**               | Chicony 90 W                                     |
 | **Power Control**              | N/A                                              |
 | **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
