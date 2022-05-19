@@ -19,11 +19,12 @@ documentation._
 * [Hardware configuration matrix](hardware-matrix.md) - definition of hardware
   configuration used during validation
 * [Test matrix](test-matrix.md) - validation scope for the MSI PRO Z690-A WiFi DDR4
+* [Memory Compatibility](memory-hcl.md) - tested memory modules
 * [Development](development.md) - information for Dasharo developers
 
 ## Useful documents
 
-* [MSI Z690-A PRO DDR4 WiFI site](https://pl.msi.com/Motherboard/PRO-Z690-A-WIFI)
+* [MSI Z690-A PRO DDR4 WiFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
 * [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
 
 ## Press releases

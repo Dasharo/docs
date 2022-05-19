@@ -78,11 +78,19 @@ nav:
           - 'RGB keyboard': variants/novacustom_ns5x/rgb_keyboard.md
           - 'Hardware Configuration Matrix': variants/novacustom_ns5x/hardware-matrix.md
           - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
+      - 'Protectli FW6':
+          - 'Overview': variants/protectli_fw6/overview.md
+          - 'Releases': variants/protectli_fw6/releases.md
+          - 'Building manual': variants/protectli_fw6/building-manual.md
+          - 'Installation manual': variants/protectli_fw6/installation-manual.md
+          - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
+          - 'Test matrix': variants/protectli_fw6/test-matrix.md
       - 'Protectli VP4620':
           - 'Releases': variants/protectli_vp4620/releases.md
           - 'Building manual': variants/protectli_vp4620/building-manual.md
           - 'Installation manual': variants/protectli_vp4620/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
+          - 'Test matrix': variants/protectli_vp4620/test-matrix.md
       - 'MSI PRO Z690-A WIFI DDR4':
           - 'FAQ': variants/msi_z690/faq.md
           - 'Overview': variants/msi_z690/overview.md
@@ -166,7 +174,7 @@ nav:
           - 'Dasharo compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
-              - 'Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
+              - 'Custom Boot Keys': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
               - 'Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
               - 'Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
@@ -201,6 +209,7 @@ nav:
               - 'M.2 automatic SATA/NVMe switching support': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
               - 'miniPCIe slot verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
               - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
+              - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -208,6 +217,7 @@ nav:
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+              - 'CPU temperature': unified-test-documentation/dasharo-performance/401-cpu-temperature.md
               - 'CPU frequency measure': unified-test-documentation/dasharo-performance/402-cpu-frequency.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
