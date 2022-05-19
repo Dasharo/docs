@@ -208,6 +208,7 @@ nav:
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+              - 'CPU frequency measure': unified-test-documentation/dasharo-performance/402-cpu-frequency.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
