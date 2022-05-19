@@ -124,7 +124,7 @@ expected frequency.
     cpu MHz		: 2000.000
     ```
 
-1. None of CPU core frequencies should be gigher than maximum frequency or
+1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
 ### CPF003.001 CPU runs on expected frequency (Ubuntu 22.04, battery)
