@@ -38,6 +38,7 @@ nav:
           - 'Hardware setup': variants/asus_kgpe_d16/setup.md
           - 'Building manual': variants/asus_kgpe_d16/building-manual.md
           - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
+          - 'Test matrix': variants/asus_kgpe_d16/test-matrix.md
           - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
           - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
@@ -57,6 +58,7 @@ nav:
           - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
           - 'Post-installation steps': variants/clevo_nv41/post_install.md
           - 'Hardware Configuration Matrix': variants/clevo_nv41/hardware-matrix.md
+          - 'Test matrix': variants/clevo_nv41/test-matrix.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/clevo_nv41/openness_analysis.md
           - 'LVFS report': variants/clevo_nv41/lvfs_report.md
@@ -170,7 +172,6 @@ nav:
       - 'Dasharo Test Specification':
           - 'Overview': unified-test-documentation/overview.md
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
-          - 'Test Matrix': unified-test-documentation/test-matrix.md
           - 'Dasharo compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
