@@ -13,9 +13,8 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
-| 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002,
-DSP002.003 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | All                                  |
+| 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002, DSP002.003 |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx      |
 | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
@@ -31,8 +30,7 @@ DSP002.003 |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
 | 18.  | [Nvidia Graphics support][NVI]                    | NVI           | All                                  |
 | 19.  | [Custom fan curve][FAN]                           | FAN           | All                                  |
-| 20.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001,
-DMI008.001 |
+| 20.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001 |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -46,7 +44,7 @@ DMI008.001 |
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
 [AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
-[UTC]: ../../unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
+[UTC]: ../../unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
 [WLE]: ../../unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
@@ -77,9 +75,8 @@ DMI008.001 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
-| 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002,
-DSP002.003 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | All                                  |
+| 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002, DSP002.003 |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx      |
 | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
@@ -94,8 +91,7 @@ DSP002.003 |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
 | 19.  | [Custom fan curve][FAN]                           | FAN           | FAN001.001                           |
-| 20.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001,
-DMI008.001 |
+| 20.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001 |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -109,7 +105,7 @@ DMI008.001 |
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
 [AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
-[UTC]: ../../unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
+[UTC]: ../../unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
 [WLE]: ../../unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
