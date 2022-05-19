@@ -1,4 +1,4 @@
-# Test matrix - MSI Z690-A WIFI DDR4
+# Test matrix - Clevo NV41
 
 ## About
 
