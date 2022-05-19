@@ -308,7 +308,6 @@ frequency after stress test. The DUT during test works on battery.
 
 1. Compare the output from the first and the third command.
 
-
 **Expected result**
 
 1. The result of running the first command should contain the information about
