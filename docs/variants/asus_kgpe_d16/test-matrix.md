@@ -2,10 +2,8 @@
 
 ## About
 
-<!--
-The test matrix is used to determine which of the test suites and test cases
-described in this documentation are dedicated to the given platform
--->
+The test matrix is used to determine the scope of tests which the DUT is
+subjected from before the release of the new binary.
 
 ## Module: Dasharo compatibility
 
@@ -40,7 +38,7 @@ described in this documentation are dedicated to the given platform
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.001                           |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.001, VBO002.001, VBO003.001   |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md

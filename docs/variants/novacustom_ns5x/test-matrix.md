@@ -2,10 +2,8 @@
 
 ## About
 
-<!--
-The test matrix is used to determine which of the test suites and test cases
-described in this documentation are dedicated to the given platform
--->
+The test matrix is used to determine the scope of tests which the DUT is
+subjected from before the release of the new binary.
 
 ## Module: Dasharo compatibility
 
