@@ -1,4 +1,4 @@
-# Dasharo Performance: CPU frequency
+# Dasharo Performance: CPU frequency measure
 
 ## Test cases
 
@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 
-### CPF001.001 CPU not stuck on initial frequency (ubuntu 22.04)
+### CPF001.001 CPU not stuck on initial frequency (Ubuntu 22.04)
 
 **Test description**
 
@@ -49,23 +49,23 @@ same as initial frequency, the test should be considered as failed.
 
 Example output with unwanted results:
 
-    ```bash
-    cpu MHz		: 2800.000
-    cpu MHz		: 2800.000
-    cpu MHz		: 2800.000
-    cpu MHz		: 2800.000
-    cpu MHz		: 2800.000
-    cpu MHz		: 2800.000
-    cpu MHz		: 2800.000
-    cpu MHz		: 2800.000
-    ```
+```bash
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+```
 
-### CPF002.001 CPU running on expected frequency without load (Ubuntu 22.04)
+### CPF002.001 CPU runs on expected frequency (Ubuntu 22.04)
 
 **Test description**
 
-Check whether the mounted CPU is running on expected frequency when charger
-is connected.
+This test aims to verify whether the mounted CPU is running on
+expected frequency.
 
 **Test configuration data**
 
@@ -127,12 +127,12 @@ is connected.
 1. None of CPU core frequencies should be gigher than maximum frequency or
     lower than minimum frequency.
 
-### CPF003.001 CPU running on expected frequency without load on battery (Ubuntu 22.04)
+### CPF003.001 CPU runs on expected frequency (Ubuntu 22.04, battery)
 
 **Test description**
 
-Check whether the mounted CPU is running on expected frequency without
-connected charger.
+This test aims to verify whether the mounted CPU is running on expected
+frequency when charger is disconnected. The DUT during test works on battery.
 
 **Test configuration data**
 
@@ -194,12 +194,12 @@ connected charger.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
-### CPF004.001 CPU running on expected frequency with load (Ubuntu 22.04)
+### CPF004.001 CPU with load runs on expected frequency (Ubuntu 22.04)
 
 **Test description**
 
-Check whether the mounted CPU is running on expected frequency with connected
-charger after stress test.
+This test aims to verify whether the mounted CPU is running on expected
+frequency after stress test.
 
 **Test configuration data**
 
@@ -267,12 +267,12 @@ charger after stress test.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
-### CPF005.001 CPU running on expected frequency with load on battery (Ubuntu 22.04)
+### CPF005.001 CPU with load runs on expected frequency (Ubuntu 22.04, battery)
 
 **Test description**
 
-Check whether the mounted CPU is running on expected frequency without charger
-connected during stress test.
+This test aims to verify whether the mounted CPU is running on expected
+frequency after stress test. The DUT during test works on battery.
 
 **Test configuration data**
 
