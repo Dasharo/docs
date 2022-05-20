@@ -11,7 +11,7 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
-Test results for this release can be found
+Detailed test results for every release can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
 ## v0.4.0 - 2022-05-13
@@ -55,6 +55,15 @@ gpg --verify msi_ms7d25_v0.4.0.rom.sha256.sig msi_ms7d25_v0.4.0.rom.sha256
 
 - [coreboot based on a552cfc9 revision 31c1da6b](https://github.com/Dasharo/coreboot/tree/31c1da6b)
 - [edk2 based on 4d2846ba revision 5494c8e2](https://github.com/Dasharo/edk2/tree/5494c8e2)
+
+### Test Results
+
+| MSI PRO Z690-A WIFI DDR4 |  v0.4.0  |
+|:------------------------:|:--------:|
+|TESTED                    |57        |
+|PASSED                    |57        |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |
 
 ## v0.3.0 - 2022-05-05
 
@@ -102,6 +111,15 @@ gpg --verify msi_ms7d25_v0.3.0.rom.sha256.sig msi_ms7d25_v0.3.0.rom.sha256
 - [coreboot based on a552cfc9 revision b45173e9](https://github.com/Dasharo/coreboot/tree/b45173e9)
 - [edk2 based on 4d2846ba revision 5494c8e2](https://github.com/Dasharo/edk2/tree/5494c8e2)
 
+### Test Results
+
+| MSI PRO Z690-A WIFI DDR4 |  v0.3.0  |
+|:------------------------:|:--------:|
+|TESTED                    |55        |
+|PASSED                    |55        |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |
+
 ## v0.2.0 - 2022-04-22
 
 ### Added
@@ -145,6 +163,15 @@ gpg --verify msi_ms7d25_v0.2.0.rom.sha256.sig msi_ms7d25_v0.2.0.rom.sha256
 
 - [coreboot based on a552cfc9 revision 83fbdcf1](https://github.com/Dasharo/coreboot/tree/83fbdcf1)
 - [edk2 based on 4d2846ba revision 0a188758](https://github.com/Dasharo/edk2/tree/0a188758)
+
+### Test Results
+
+| MSI PRO Z690-A WIFI DDR4 |  v0.2.0  |
+|:------------------------:|:--------:|
+|TESTED                    |29        |
+|PASSED                    |29        |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |
 
 ## v0.1.0 - 2022-04-13
 
@@ -203,3 +230,12 @@ gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 [v0.4.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom
 [v0.4.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom.sha256
 [v0.4.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom.sha256.sig
+
+### Test Results
+
+| MSI PRO Z690-A WIFI DDR4 |  v0.1.0  |
+|:------------------------:|:--------:|
+|TESTED                    |17        |
+|PASSED                    |17        |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |

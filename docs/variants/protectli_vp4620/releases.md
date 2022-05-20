@@ -11,6 +11,9 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
+Detailed test results for every release can be found
+[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
+
 ## v1.0.13 - 2022-03-22
 
 ### Added
@@ -47,3 +50,12 @@ See how to verify signatures on [asciinema](TBD)
 [v1.0.13_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom
 [v1.0.13_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256
 [v1.0.13_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256.sig
+
+### Test Results
+
+|     Protectli VP4620     |  v1.0.13 |
+|:------------------------:|:--------:|
+|TESTED                    |32        |
+|PASSED                    |32        |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |

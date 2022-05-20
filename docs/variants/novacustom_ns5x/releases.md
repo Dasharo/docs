@@ -11,10 +11,10 @@ For details about our release process please read
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
 
-## v1.1.0 - 2022-04-22
+Detailed test results for every release can be found
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
 
-Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
+## v1.1.0 - 2022-04-22
 
 ### Added
 
@@ -50,6 +50,15 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 - [coreboot based on 4.16 revision c2f031af](https://github.com/Dasharo/coreboot/tree/c2f031af)
 - [tianocore based on e0334c228ce4ba51f47ff79a118f214031d4650f revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)
 
+### Test Results
+
+|     NovaCustom NS51MU    |  v1.1.0  |
+|:------------------------:|:--------:|
+|TESTED                    |113       |
+|PASSED                    |111       |
+|PASSED(%)                 |98,23%    |
+|FAILED                    |2         |
+
 ## v1.0.0 - 2022-03-23
 
 ### Added
@@ -80,3 +89,12 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on 4.16 revision ecf1e9b8](https://github.com/Dasharo/coreboot/tree/ecf1e9b8)
 - [tianocore based on e0334c228ce4ba51f47ff79a118f214031d4650f revision ec6805c2](https://github.com/Dasharo/edk2/tree/ec6805c2)
+
+### Test Results
+
+|     NovaCustom NS51MU    |  v1.0.0  |
+|:------------------------:|:--------:|
+|TESTED                    |99        |
+|PASSED                    |96        |
+|PASSED(%)                 |96,97%    |
+|FAILED                    |3         |

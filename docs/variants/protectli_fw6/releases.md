@@ -11,6 +11,9 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
+Detailed test results for every release can be found
+[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
+
 ## v1.0.14 - 2022-05-13
 
 ### Changed
@@ -40,3 +43,12 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 [v1.0.14_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom
 [v1.0.14_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256
 [v1.0.14_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256.sig
+
+### Test Results
+
+|      Protectli FW6       |  v1.0.14 |
+|:------------------------:|:--------:|
+|TESTED                    |25        |
+|PASSED                    |25        |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |

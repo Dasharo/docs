@@ -13,6 +13,9 @@ For details about our release process please read
 
 </center>
 
+Detailed test results for every release can be found
+[here](https://docs.google.com/spreadsheets/d/126oG3VLk51sTIz-uVIAOTVPxA0qpH9wQ4P-ue2fJLtI/edit?usp=sharing).
+
 ## v1.0.0 - 2022-03-15
 
 ### Added
@@ -43,3 +46,12 @@ For details about our release process please read
 
 - [coreboot based on 4.16 revision cf13d6c7](https://github.com/Dasharo/coreboot/commit/cf13d6c7)
 - [tianocore based on 9522071f7497a1a0b1077d2b0d5fcc97a126cfd0 revision 7f90b9cd](https://github.com/Dasharo/edk2/commit/7f90b9cd)
+
+### Test Results
+
+|       Tuxedo IBS15       |  v1.0.0  |
+|:------------------------:|:--------:|
+|TESTED                    |103       |
+|PASSED                    |101       |
+|PASSED(%)                 |98,06%    |
+|FAILED                    |2         |

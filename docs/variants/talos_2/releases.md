@@ -15,6 +15,9 @@ For details about our release process please read
 
 </center>
 
+Detailed test results for every release can be found
+[here](https://docs.google.com/spreadsheets/d/1KpmuPEkWOj3SieophUbgf7CF6mydliMsEDLtOFOrKn0/edit?usp=sharing).
+
 ## v0.5.0 - 2022-04-12
 
 ### Changed
@@ -62,6 +65,15 @@ used.
 
 - [coreboot based on 5621a1e revision c92383f9](https://github.com/Dasharo/coreboot/tree/c92383f9)
 - [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/?id=98581863)
+
+### Test Results
+
+|        Talos II          |  v0.5.0  |
+|:------------------------:|:--------:|
+|TESTED                    |23        |
+|PASSED                    |22        |
+|PASSED(%)                 |95,65%    |
+|FAILED                    |1         |
 
 ## v0.4.1 - 2022-01-10
 
@@ -116,6 +128,15 @@ used.
 - [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/98581863)
 - [heads based on 21e50681 revision 34c77951](https://git.raptorcs.com/git/talos-skiboot/commit/?id=9858186353f2203fe477f316964e03609d12fd1d)
 
+### Test Results
+
+|        Talos II          |  v0.4.1  |
+|:------------------------:|:--------:|
+|TESTED                    |7         |
+|PASSED                    |7         |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |
+
 ## v0.4.0 - 2021-10-29
 
 ### Added
@@ -164,3 +185,12 @@ used.
 - [coreboot based on 5621a1e revision b535763b](https://github.com/Dasharo/coreboot/tree/raptor-cs_talos-2_v0.4.0)
 - [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/)
 - [heads based on 21e50681 revision 34c77951](https://git.raptorcs.com/git/talos-skiboot/commit/?id=9858186353f2203fe477f316964e03609d12fd1d)
+
+### Test Results
+
+|        Talos II          |  v0.4.0  |
+|:------------------------:|:--------:|
+|TESTED                    |7         |
+|PASSED                    |7         |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |

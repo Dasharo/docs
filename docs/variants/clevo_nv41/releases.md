@@ -11,6 +11,9 @@ For details about our release process please read
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
 
+Detailed test results for every release can be found
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
+
 ## v1.1.0 - 2022-03-23
 
 ### Added
@@ -41,6 +44,15 @@ For details about our release process please read
 - [coreboot based on ae9a8447 revision 0722fdf0](https://github.com/Dasharo/coreboot/tree/0722fdf0)
 - [edk2 based on 2020.03.17 revision ec6805c2](https://github.com/Dasharo/edk2/tree/ec6805c2)
 - [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
+
+### Test Results
+
+|       Clevo NV41MZ       |  v1.1.0  |
+|:------------------------:|:--------:|
+|TESTED                    |79        |
+|PASSED                    |72        |
+|PASSED(%)                 |97,74%    |
+|FAILED                    |2         |
 
 ## v1.0.1 - 2022-03-01
 
@@ -87,6 +99,15 @@ For details about our release process please read
 - [edk2 based on 2020.03.17 revision e0334c22](https://github.com/Dasharo/edk2/tree/e0334c22)
 - [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
 
+### Test Results
+
+|       Clevo NV41MZ       |  v1.0.1  |
+|:------------------------:|:--------:|
+|TESTED                    |98        |
+|PASSED                    |96        |
+|PASSED(%)                 |97,96%    |
+|FAILED                    |2         |
+
 ## v1.0.0 - 2022-01-19
 
 ### Added
@@ -125,6 +146,15 @@ For details about our release process please read
 - [coreboot based on ae9a8447 revision e995fc1c](https://github.com/Dasharo/coreboot/commit/e995fc1c)
 - [edk2 based on 2020.03.17 revision 59ae285f](https://github.com/Dasharo/edk2/tree/59ae285f)
 - [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
+
+### Test Results
+
+|       Clevo NV41MZ       |  v1.0.0  |
+|:------------------------:|:--------:|
+|TESTED                    |101       |
+|PASSED                    |99        |
+|PASSED(%)                 |98,02%    |
+|FAILED                    |2         |
 
 ## v0.5.0 - 2021-11-19
 
@@ -166,6 +196,15 @@ For details about our release process please read
 - [coreboot based on ae9a8447 revision 7d439573](https://gitlab.com/novacustom/coreboot/-/tree/7d439573)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
 - [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
+
+### Test Results
+
+|       Clevo NV41MZ       |  v0.5.0  |
+|:------------------------:|:--------:|
+|TESTED                    |99        |
+|PASSED                    |96        |
+|PASSED(%)                 |96,97%    |
+|FAILED                    |3         |
 
 ## v0.4.0 - 2021-10-26
 
@@ -209,6 +248,15 @@ For details about our release process please read
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
 - [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
 
+### Test Results
+
+|       Clevo NV41MZ       |  v0.4.0  |
+|:------------------------:|:--------:|
+|TESTED                    |96        |
+|PASSED                    |94        |
+|PASSED(%)                 |97,92%    |
+|FAILED                    |2         |
+
 ## v0.3.0 - 2021-10-11
 
 ### Added
@@ -243,6 +291,15 @@ For details about our release process please read
 - [coreboot based on ae9a8447 revision v0.3.0](https://gitlab.com/novacustom/coreboot/-/tree/v0.3.0)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
 - [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
+
+### Test Results
+
+|       Clevo NV41MZ       |  v0.3.0  |
+|:------------------------:|:--------:|
+|TESTED                    |92        |
+|PASSED                    |86        |
+|PASSED(%)                 |93,48%    |
+|FAILED                    |6         |
 
 ## v0.2.1 - 2021-9-29
 
@@ -279,6 +336,15 @@ For details about our release process please read
 - [coreboot based on 4.14 revision 43c9604b](https://gitlab.com/novacustom/coreboot/-/tree/43c9604b)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
 - [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
+
+### Test Results
+
+|       Clevo NV41MZ       |  v0.2.1  |
+|:------------------------:|:--------:|
+|TESTED                    |51        |
+|PASSED                    |47        |
+|PASSED(%)                 |92,16%    |
+|FAILED                    |4         |
 
 ## v0.2.0 - 2021-9-24
 
@@ -322,6 +388,15 @@ For details about our release process please read
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
 - [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
 
+### Test Results
+
+|       Clevo NV41MZ       |  v0.2.0  |
+|:------------------------:|:--------:|
+|TESTED                    |68        |
+|PASSED                    |61        |
+|PASSED(%)                 |89,71%    |
+|FAILED                    |7         |
+
 ## v0.1.2 - 2021-08-31
 
 ### Added
@@ -355,3 +430,12 @@ For details about our release process please read
 #### Binary blobs
 
 - [blobs extracted from the vendor firmware](https://gitlab.com/novacustom/blobs/-/tree/d56dacf5a06881c327e54b0632585402c4c3718d/mainboard/clevo/tgl-u/nv41mz)
+
+### Test Results
+
+|       Clevo NV41MZ       |  v0.1.2  |
+|:------------------------:|:--------:|
+|TESTED                    |30        |
+|PASSED                    |24        |
+|PASSED(%)                 |80,00%    |
+|FAILED                    |6         |

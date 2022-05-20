@@ -17,6 +17,9 @@ For details about our release process please read
 
 Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasharo:matrix.org).
 
+Detailed test results for every release can be found
+[here](https://docs.google.com/spreadsheets/d/1rsJECHmYrpkPSByTyt7jmMuQnExE20zW7Zk6c8oMk6E/edit?usp=sharing).
+
 ## v0.3.0 - 2021-12-16
 
 ### Added
@@ -101,6 +104,15 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 - [iPXE based on 2019.3 revision ebf2eaf5](https://github.com/ipxe/ipxe/commit/ebf2eaf5)
 - [nvramcui based on 4.14 revision f1d1309f](https://github.com/Dasharo/coreboot/blob/f1d1309f/payloads/nvramcui/nvramcui.c)
 
+### Test Results
+
+|      ASUS KGPE-D16       |  v0.3.0  |
+|:------------------------:|:--------:|
+|TESTED                    |62        |
+|PASSED                    |58        |
+|PASSED(%)                 |93,55%    |
+|FAILED                    |4         |
+
 ## v0.2.0 - 2021-12-9
 
 ### Added
@@ -151,6 +163,15 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 - [iPXE based on 2019.3 revision ebf2eaf5](https://github.com/ipxe/ipxe/commit/ebf2eaf5)
 - [nvramcui based on 4.14 revision 63b7cbc1](https://github.com/Dasharo/coreboot/blob/63b7cbc1/payloads/nvramcui/nvramcui.c)
 
+### Test Results
+
+|      ASUS KGPE-D16       |  v0.2.0  |
+|:------------------------:|:--------:|
+|TESTED                    |28        |
+|PASSED                    |28        |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |
+
 ## v0.1.0 - 2021-11-10
 
 ### Added
@@ -176,3 +197,12 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 03aef28 revision e6af2206](https://github.com/Dasharo/coreboot/tree/e6af2206)
+
+### Test Results
+
+|      ASUS KGPE-D16       |  v0.1.0  |
+|:------------------------:|:--------:|
+|TESTED                    |5         |
+|PASSED                    |5         |
+|PASSED(%)                 |100,00%   |
+|FAILED                    |0         |
