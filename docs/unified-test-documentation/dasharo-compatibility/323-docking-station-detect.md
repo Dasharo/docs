@@ -65,8 +65,8 @@ Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 
 **Test description**
 
-This test aims to verify that the DUT properly detects the docking station after
-warmboot (realized by device turning off then turning on). This test case
+This test aims to verify that the DUT properly detects the docking station
+after warmboot (realized by device turning off then turning on). This test case
 may be re-done several times to specify the platform and connection stability.
 
 **Test configuration data**
@@ -108,9 +108,9 @@ Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 
 **Test description**
 
-This test aims to verify that the DUT properly detects the docking station after
-system reboot (performed by relevant command). This test case may be re-done
-several times to specify the platform and connection stability.
+This test aims to verify that the DUT properly detects the docking station
+after system reboot (performed by relevant command). This test case may be
+re-done several times to specify the platform and connection stability.
 
 **Test configuration data**
 

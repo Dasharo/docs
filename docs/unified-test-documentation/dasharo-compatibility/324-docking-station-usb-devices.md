@@ -35,7 +35,7 @@ station are recognized correctly by the `FIRMWARE`.
 **Test steps**
 
 1. Power on the DUT.
-1. Hold the `BIOS_MENU_KEY` to enter the Bios Menu.
+1. Hold the `BIOS_MENU_KEY` to enter the BIOS Menu.
 1. Check if the `USB_STICK` is available on the list.
 
 **Expected result**
