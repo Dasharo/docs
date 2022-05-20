@@ -17,7 +17,7 @@ For details about our release process please read
 
 Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasharo:matrix.org).
 
-Test results for this release can be found
+Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1rsJECHmYrpkPSByTyt7jmMuQnExE20zW7Zk6c8oMk6E/edit?usp=sharing).
 
 ## v0.3.0 - 2021-12-16

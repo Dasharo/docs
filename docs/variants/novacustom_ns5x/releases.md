@@ -11,13 +11,10 @@ For details about our release process please read
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
 
-Test results for this release can be found
+Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
 
 ## v1.1.0 - 2022-04-22
-
-Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
 
 ### Added
 
