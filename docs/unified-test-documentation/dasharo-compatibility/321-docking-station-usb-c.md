@@ -19,9 +19,9 @@
 
 **Test description**
 
-This test verifies that the laptop can be charged using a USB Type-C PD power
-supply connected to the docking station, which is connected to the Thunderbolt 4
-port.
+This test aims to verify whether the DUT can be charged using a USB Type-C PD
+power supply connected to the docking station, which is connected to the
+Thunderbolt 4 port.
 
 **Test configuration data**
 
@@ -37,13 +37,14 @@ port.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Connect the docking station to the Thunderbolt 4 port located on the left side
-    of the laptop.
+1. Disconnect any charger from the DUT.
+1. Connect the docking station to the Thunderbolt 4 port located on the casing
+    of the DUT.
 1. Connect the charger plug to the docking station.
 1. Open a terminal window and run the follwing command:
 
     ```bash
-    upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep state
+    cat /sys/class/power_supply/BAT0/status
     ```
 
 1. Note the results
@@ -62,9 +63,9 @@ If state is charging, that means laptop is charged properly.
 
 **Test description**
 
-This test verifies that the laptop can be charged using a USB Type-C PD power
-supply connected to the docking station, which is connected to the Thunderbolt 4
-port.
+This test aims to verify whether the DUT can be charged using a USB Type-C PD
+power supply connected to the docking station, which is connected to the
+Thunderbolt 4 port.
 
 **Test configuration data**
 
