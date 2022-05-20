@@ -13,6 +13,9 @@ For details about our release process please read
 
 </center>
 
+Test results for this platform can be found
+[here](https://docs.google.com/spreadsheets/d/126oG3VLk51sTIz-uVIAOTVPxA0qpH9wQ4P-ue2fJLtI/edit?usp=sharing).
+
 ## v1.0.0 - 2022-03-15
 
 ### Added

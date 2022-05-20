@@ -11,7 +11,7 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
-Test results for this release can be found
+Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
 ## v0.4.0 - 2022-05-13
