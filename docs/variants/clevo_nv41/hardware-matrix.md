@@ -26,8 +26,8 @@ coreboot port on the Clevo NV41 laptop.
 |                                | 3. Kingston DataTraveler 3.1Gen1 16 GB           |
 |                                | 4. SanDisk Ultra microSD HC I 16 GB + SD Adapter |
 |                                | 5. Logitech, Inc. Keyboard K120                  |
-|                                | 6. 4-port USB Type-C Hub Pro                     |
-|                                | 7. Pi-KVM virtual mouse and keyboard             |
+|                                | 6. Pi-KVM virtual mouse and keyboard             |
+|                                | 7. Expansion Dock Type-C                         |
 | **Power Supply**               | Chicony 65 W                                     |
 | **Power Control**              | N/A                                              |
 | **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
@@ -54,8 +54,8 @@ coreboot port on the Clevo NV41 laptop.
 |                                | 3. Kingston DataTraveler 3.1Gen1 16 GB           |
 |                                | 4. SanDisk Ultra microSD HC I 16 GB + SD Adapter |
 |                                | 5. Logitech, Inc. Keyboard K120                  |
-|                                | 6. 4-port USB Type-C Hub Pro                     |
-|                                | 7. Pi-KVM virtual mouse and keyboard             |
+|                                | 6. Pi-KVM virtual mouse and keyboard             |
+|                                | 7. Expansion Dock Type-C                         |
 | **Power Supply**               | Chicony 90 W                                     |
 | **Power Control**              | N/A                                              |
 | **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
