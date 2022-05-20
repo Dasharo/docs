@@ -27,11 +27,12 @@ here.
   [Hardware connection / SPI](../development/#hardware-connection) section of
   the `Development` documentation.
 
-* Download official BIOS from vendor's website:
+* Download official BIOS from vendor's website (this is the newest version, you
+  may choose an older one too or in the best case use your firmware backup):
 
 ```bash
-$ wget https://download.msi.com/bos_exe/mb/7D25vA31.zip
-$ unzip 7D25vA31.zip
+$ wget https://download.msi.com/bos_exe/mb/7D25v13.zip
+$ unzip 7D25v13.zip
 ```
 
 * Flash via external programmer:
@@ -39,7 +40,7 @@ $ unzip 7D25vA31.zip
 > The command line will be different, depending on the programmer you use
 
 ```bash
-$ flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25vA31/E7D25IMS.A31
+$ flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
 ```
 
 * First boot after the recovery process is significantly longer
