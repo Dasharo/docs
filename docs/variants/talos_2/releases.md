@@ -15,6 +15,9 @@ For details about our release process please read
 
 </center>
 
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1KpmuPEkWOj3SieophUbgf7CF6mydliMsEDLtOFOrKn0/edit?usp=sharing).
+
 ## v0.5.0 - 2022-04-12
 
 ### Changed
