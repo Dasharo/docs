@@ -30,7 +30,7 @@ $ git clone https://github.com/Dasharo/coreboot.git
 Navigate to the source code directory and checkout to the desired revision:
 
 > Replace the REVISION with one of the:
-> - `dasharo_release` for the latest released version
+> - `novacustom_nv4x/release` for the latest released version
 > - `novacustom_nv4x/vVERSION` (e.g. `v1.0.1`) for the given release
 
 ```bash
