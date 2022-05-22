@@ -95,11 +95,13 @@ via RS232 DB9 cable.
 Asus KGPE-D16 has an LPC header for TPM or debugging. Since there is no other
 option to connect a TPM, we use the header for that purpose.
 
-IMPORTANT: Use only TPM modules which matches its pinout with the board's
-header! Using a spider web connection with a TPM degrades the signal quality
-to the point where CPU cannot properly talk to TPM via LPC bus.
+IMPORTANT: Use only TPM modules which match their pinout with the board's
+header! Using a spider web connection degrades the signal quality to the point
+where CPU cannot properly talk to TPM via LPC bus.
 
-TPM that were tested and verified to work in 3mdeb lab with coreboot:
+![](/images/kgpe_tpm_header.png)
+
+TPM modules that were tested and verified to work in 3mdeb lab with coreboot:
 
 * ASUS TPM-L R2.0 module (chip Infineon SLB9665 TT 2.0)
 * ASUS TPM 1.2 Rev 1.02h module (chip Infineon SLB9635 TT 1.2)
