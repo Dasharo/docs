@@ -18,11 +18,14 @@ of your platform.
 
 * [Asus KGPE-D16](variants/asus_kgpe_d16/releases.md)
 <!-- We should avoid using ODM names if we really mean OEM version of product -->
-* [Clevo NV41](variants/clevo_nv41/releases.md)
+* [Novacustom NV4X](variants/novacustom_nv4x/releases.md)
+* [Novacustom NS5X](variants/novacustom_ns5x/releases.md)
+* [TUXEDO InfinityBook S 15](variants/tuxedo_ibs15/releases.md)
 * [Dell OptiPlex 7010/9010](variants/dell_optiplex/overview.md)
 * [PC Engines apu series](https://pcengines.github.io/)
 * [Protectli Vault series](https://protectli.com/kb/coreboot-on-the-vault/)
 * [Raptor Computing Systems Talos II](variants/talos_2/releases.md)
+* [MSI PRO Z690-A DDR4 WIFI](variants/msi_z690/releases.md)
 
 <!--
 TODO: explain how user, developer, customer may add to this list
