@@ -51,13 +51,8 @@ Thunderbolt 4 port.
 
 **Expected result**
 
-Output of the command should show that the battery is being charged.
-
-Example output:
-
-```bash
-Charging
-```
+Output of the command should show one of this: `Charging` or `Full`. That means
+laptop is charged properly.
 
 ### DUC001.002 USB Type-C laptop charging (Windows 11)
 
