@@ -86,6 +86,12 @@ make -C util/cbfstool
 Then instead of `./build/cbfstool build/coreboot.rom add ...` type
 `util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add ...`.
 
+Not you will need to resign the binary after adding the SMBIOS data. Please
+check [Vboot documentation](../../common-coreboot-docs/vboot_signing.md) how to
+resign the data. Dasharo uses the default vboot keys, available in
+`coreboot/3rdparty/vboot/tests/devkeys`. It is user responsibility to generate
+and use own keys during updates.
+
 ### Flashing Dasharo
 
 To flash Dasharo on the platform, execute the following command:
