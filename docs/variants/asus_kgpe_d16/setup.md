@@ -95,27 +95,16 @@ via RS232 DB9 cable.
 Asus KGPE-D16 has an LPC header for TPM or debugging. Since there is no other
 option to connect a TPM, we use the header for that purpose.
 
-Example connection of the
-[PC Engines TPM 20pin module](https://3mdeb.com/shop/modules/modules-lpn-plant/tpm-2-0/)
-([tpm1a](https://www.pcengines.ch/schema/tpm1a.pdf)) to the TPM header on the
-KGPE-D16 board:
+IMPORTANT: Use only TPM modules which match their pinout with the board's
+header! Using a spider web connection degrades the signal quality to the point
+where CPU cannot properly talk to TPM via LPC bus.
 
 ![](/images/kgpe_tpm_header.png)
 
-| tpm1a         | Asus KGPE-D16        |
-|:-------------:|:--------------------:|
-| PCLK pin 1    | TPM pin 1  (PCICLK)  |
-| LAD0 pin 3    | TPM pin 11 (LAD0)    |
-| LAD1 pin 5    | TPM pin 10 (LAD1)    |
-| LAD2 pin 7    | TPM pin 8  (LAD2)    |
-| LAD3 pin 9    | TPM pin 7  (LAD3)    |
-| FRAME# pin 11 | TPM pin 3  (FRAME)   |
-| RESET# pin 13 | TPM pin 5  (PCIRST#) |
-| GND pin 17    | TPM pin 2  (GND)     |
-| V3 pin 18     | TPM pin 9  (+3V)     |
-| SERIRQ pin 19 | TPM pin 16 (SERIRQ)  |
+TPM modules that were tested and verified to work in 3mdeb lab with coreboot:
 
-> PC Engines TPM schematic is available [here](//www.pcengines.ch/schema/tpm1a.pdf)
+* ASUS TPM-L R2.0 module (chip Infineon SLB9665 TT 2.0)
+* ASUS TPM 1.2 Rev 1.02h module (chip Infineon SLB9635 TT 1.2)
 
 ## Power management
 

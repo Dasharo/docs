@@ -27,7 +27,7 @@ coreboot port on the Clevo NS51/NS70 laptops.
 |                                | 4. Kingston DataTraveler 3.1Gen1 16 GB           |
 |                                | 5. SanDisk Ultra microSD HC I 16 GB + SD Adapter |
 |                                | 6. Logitech, Inc. Keyboard K120                  |
-|                                | 7. 4-port USB Type-C Hub Pro                     |
+|                                | 7. Expansion Dock Type-C                         |
 | **Power Supply**               | Chicony 65 W                                     |
 | **Power Control**              | N/A                                              |
 
@@ -54,6 +54,6 @@ coreboot port on the Clevo NS51/NS70 laptops.
 |                                | 4. Kingston DataTraveler 3.1Gen1 16 GB           |
 |                                | 5. SanDisk Ultra microSD HC I 16 GB + SD Adapter |
 |                                | 6. Logitech, Inc. Keyboard K120                  |
-|                                | 7. 4-port USB Type-C Hub Pro                     |
+|                                | 7. Expansion Dock Type-C                         |
 | **Power Supply**               | Chicony 65 W                                     |
 | **Power Control**              | N/A                                              |

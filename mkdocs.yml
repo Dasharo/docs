@@ -38,6 +38,7 @@ nav:
           - 'Hardware setup': variants/asus_kgpe_d16/setup.md
           - 'Building manual': variants/asus_kgpe_d16/building-manual.md
           - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
+          - 'Test matrix': variants/asus_kgpe_d16/test-matrix.md
           - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
           - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
@@ -48,18 +49,19 @@ nav:
           #- 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
-      - 'Clevo NV41':
-          - 'Releases': variants/clevo_nv41/releases.md
-          - 'Building manual': variants/clevo_nv41/building.md
+      - 'NovaCustom NV4x':
+          - 'Releases': variants/novacustom_nv4x/releases.md
+          - 'Building manual': variants/novacustom_nv4x/building.md
           - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
-          - 'EC firmware update': variants/clevo_nv41/ec_update.md
-          - 'Flashing with external programmer': variants/clevo_nv41/flashing_external.md
-          - 'Flashing with internal programmer': variants/clevo_nv41/flashing_internal.md
-          - 'Post-installation steps': variants/clevo_nv41/post_install.md
-          - 'Hardware Configuration Matrix': variants/clevo_nv41/hardware-matrix.md
+          - 'EC firmware update': variants/novacustom_nv4x/ec_update.md
+          - 'Flashing with external programmer': variants/novacustom_nv4x/flashing_external.md
+          - 'Flashing with internal programmer': variants/novacustom_nv4x/flashing_internal.md
+          - 'Post-installation steps': variants/novacustom_nv4x/post_install.md
+          - 'Hardware Configuration Matrix': variants/novacustom_nv4x/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_nv4x/test-matrix.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Openness score': variants/clevo_nv41/openness_analysis.md
-          - 'LVFS report': variants/clevo_nv41/lvfs_report.md
+          - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
+          - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
           - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
@@ -68,6 +70,7 @@ nav:
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
       - 'NovaCustom NS5X':
           - 'Releases': variants/novacustom_ns5x/releases.md
           - 'Building manual': variants/novacustom_ns5x/building.md
@@ -170,7 +173,6 @@ nav:
       - 'Dasharo Test Specification':
           - 'Overview': unified-test-documentation/overview.md
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
-          - 'Test Matrix': unified-test-documentation/test-matrix.md
           - 'Dasharo compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -210,6 +212,10 @@ nav:
               - 'miniPCIe slot verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
               - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
               - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
+              - 'Docking station detect': unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
+              - 'Docking station USB devices': unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
+              - 'Docking station audio': unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
+              - 'Docking station USB-C': unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md

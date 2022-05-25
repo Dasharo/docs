@@ -1,15 +1,18 @@
-# Clevo NV41MZ Dasharo Release Notes
+# NovaCustom NV4X Dasharo Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
-Clevo NV41MZ
+NovaCustom NV4X
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Clevo NV41MZ Dasharo Release Newsletter]
+[Subscribe to NovaCustom NV4X Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
+
+Test results for this platform can be found
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
 
 ## v1.1.0 - 2022-03-23
 
