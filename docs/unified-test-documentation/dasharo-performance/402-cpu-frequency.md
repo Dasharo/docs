@@ -23,6 +23,7 @@ initial frequency after booting into the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
@@ -70,6 +71,7 @@ expected frequency.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
@@ -137,6 +139,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
@@ -204,6 +207,7 @@ frequency after stress test.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
@@ -277,6 +281,7 @@ frequency after stress test. The DUT during test works on battery.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
