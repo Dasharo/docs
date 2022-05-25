@@ -1,4 +1,4 @@
-# Dasharo Performance: CPU temperature
+# Dasharo Performance: CPU temperature measure
 
 ## Test cases
 
@@ -24,6 +24,7 @@ booting is not higher than the maximum allowed temperature.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
@@ -70,6 +71,7 @@ than the maximum allowed temperature after stress test.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
