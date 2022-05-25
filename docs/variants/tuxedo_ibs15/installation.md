@@ -74,11 +74,9 @@ required. Follow the steps below:
 
 ### Updating Dasharo
 
-If Dasharo is currently installed, only the RW_SECTION_A partition of the flash
-needs to be updated. Flash it using the following command:
+If Dasharo is currently installed, only the BIOS region of the flash needs to be
+updated. Flash it using the following command:
 
 ```bash
-# flashrom -p internal -w [path] --fmap -i RW_SECTION_A
+# flashrom -p internal -w [path] --ifd -i bios
 ```
-
-This command also preserves UEFI settings and the boot order.

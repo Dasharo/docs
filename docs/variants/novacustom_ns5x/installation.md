@@ -77,11 +77,17 @@ Steps for initial Dasharo installation:
 
 ### Updating Dasharo
 
-If Dasharo is currently installed, only the RW_SECTION_A partition of the flash
-needs to be updated. Flash it using the following command:
+If Dasharo v1.1.0 or newer is currently installed, only the COREBOOT partition
+of the flash needs to be updated. Flash it using the following command:
 
 ```bash
-# flashrom -p internal -w [path] --fmap -i RW_SECTION_A
+# flashrom -p internal -w [path] --fmap -i COREBOOT
 ```
 
 This command also preserves UEFI settings and the boot order.
+
+Otherwise, use the following command:
+
+```bash
+# flashrom -p internal -w [path] --ifd -i bios
+```
