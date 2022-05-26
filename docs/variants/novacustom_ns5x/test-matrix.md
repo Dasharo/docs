@@ -65,3 +65,11 @@ subjected from before the release of the new binary.
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
+
+## Module: Dasharo performance
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [CPU frequency measure][CPF]       | CPF         | All                                  |
+
+[CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
