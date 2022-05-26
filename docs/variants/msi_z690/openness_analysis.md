@@ -1,6 +1,7 @@
 # Intro
 
-This document aims to compare the openness of Dasharo firmware and AMI BIOS.
+This document aims to compare the openness of Dasharo firmware and AMI BIOS for
+MSI PRO Z690-A DDR4 WiFI.
 
 There is an
 [ongoing discussion](https://github.com/Dasharo/dasharo-issues/issues/43)
