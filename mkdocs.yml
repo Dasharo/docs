@@ -72,6 +72,7 @@ nav:
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
           - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
       - 'NovaCustom NS5X':
+          - 'Overview': variants/novacustom_ns5x/overview.md
           - 'Releases': variants/novacustom_ns5x/releases.md
           - 'Building manual': variants/novacustom_ns5x/building.md
           - 'Installation manual': variants/novacustom_ns5x/installation.md
