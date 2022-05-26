@@ -135,6 +135,10 @@ divided by
 | AMI BIOS | 0%                          |
 | Dasharo  | **37%**                     |
 
+Dasharo code takes approximately 4MB of space for a single region + some space
+for data which is less than 1MB. This reduces the single copy of firmware from
+16MB to roughly 5MB compared to AMI BIOS. This is almost 70% reduction of TCB.
+
 ![](/images/openness_msi.png)
 
 ![](/images/openness_msi_full.png)
