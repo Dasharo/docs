@@ -45,11 +45,12 @@ $ flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.13
 
 * First boot after the recovery process is significantly longer
 
-### SMBIOS unique data recovery
+## SMBIOS unique data recovery
 
-#### Serial number
+### Serial number format and recovery
 
-SMBIOS specification defines two spaces for serial number: the system serial
+[SMBIOS specification](https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.4.0.pdf)
+sections 7.2 and 7.3 defines two spaces for serial number: the system serial
 number and baseboard serial number. The original MSI PRO Z690-A firmware
 provides only baseboard serial number.
 
@@ -71,11 +72,12 @@ number. The serial number has the format `07D25xx_LyzEaaaaaa` where:
 * `aaaaaa` is the unique 6-digit number which is imprinted under the serial
   number QR code
 
-#### System UUID
+### System UUID format and recovery
 
-SMBIOS specification defines a field for unique system identification with a
-special number called UUID (Universally Unique IDentifier). UUID is specified
-by [RFC 4122](https://datatracker.ietf.org/doc/html/rfc4122). MSI firmware
+[SMBIOS specification](https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.4.0.pdf)
+section 7.2 defines a field for unique system identification with a special
+number called UUID (Universally Unique IDentifier). UUID is specified by
+[RFC 4122](https://datatracker.ietf.org/doc/html/rfc4122). MSI firmware
 provides the system UUID in the SMBIOS system information structure.
 
 The problem with UUID is that it cannot be recovered if the backup binary or
@@ -100,7 +102,7 @@ The MAC address is printed on a sticker placed on the 2x2 SATA connector:
 
 ![](/images/msi_mac.jpg)
 
-#### Recovery
+### SMBIOS data migration
 
 For Dasharo simply follow the [Installation manual](installation-manual.md) how
 to migrate the data.

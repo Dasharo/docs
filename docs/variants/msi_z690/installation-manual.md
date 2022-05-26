@@ -61,36 +61,55 @@ persistent storage. All changes made in live image will be lost after reboot.
 To migrate the SMBIOS system UUID and board serial number follow the Linux
 instructions below before attempting to flash the binary. The procedure is
 supported on Dasharo version v1.0.0 and later and requires cbfstool built from
-coreboot tree.
+coreboot tree. Follow the [Building Manual](building-manual.md) using v1.0.0
+version or newer and then:
 
 ```bash
 echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
 echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 # assuming in coreboot root directory
-./build/cbfstool build/coreboot.rom add -f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
-./build/cbfstool build/coreboot.rom add -f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
-./build/cbfstool build/coreboot.rom add -f serial_number.txt -n serial_number -t raw -r COREBOOT
-./build/cbfstool build/coreboot.rom add -f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
-./build/cbfstool build/coreboot.rom add -f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
-./build/cbfstool build/coreboot.rom add -f system_uuid.txt -n system_uuid -t raw -r COREBOOT
+./build/cbfstool build/coreboot.rom add \
+	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
+./build/cbfstool build/coreboot.rom add \
+	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
+./build/cbfstool build/coreboot.rom add \
+	-f serial_number.txt -n serial_number -t raw -r COREBOOT
+./build/cbfstool build/coreboot.rom add \
+	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
+./build/cbfstool build/coreboot.rom add \
+	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
+./build/cbfstool build/coreboot.rom add \
+	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
 ```
 
-One may use `msi_ms7d25_v1.0.0.rom` binary directly and simply build the
-cbfstool only from coreboot repository:
+One may use `msi_ms7d25_v1.0.0.rom` (or newer) binary directly and simply build
+the cbfstool only from coreboot repository:
 
 ```bash
+git clone https://github.com/Dasharo/coreboot -b msi_ms7d25/release
 cd coreboot
 make -C util/cbfstool
+echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
+echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
+# assuming in coreboot root directory
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
+	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
+	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
+	-f serial_number.txt -n serial_number -t raw -r COREBOOT
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
+	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
+	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
+	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
 ```
-
-Then instead of `./build/cbfstool build/coreboot.rom add ...` type
-`util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add ...`.
 
 Note you will need to resign the binary after adding the SMBIOS data. Please
 check [Vboot documentation](../../common-coreboot-docs/vboot_signing.md) how to
-resign the data. Dasharo uses the default vboot keys, available in
-`coreboot/3rdparty/vboot/tests/devkeys`. It is user responsibility to generate
-and use own keys during updates.
+resign the data. It is machine owner's responsibility to generate and use own
+keys during updates.
 
 ### Flashing Dasharo
 
