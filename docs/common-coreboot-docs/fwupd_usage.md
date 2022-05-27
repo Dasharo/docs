@@ -16,21 +16,21 @@ using different distribution, you might need to
 
     ```bash
     $ wget --content-disposition \
-         https://cloud.3mdeb.com/index.php/s/kzDYbk35FDcn8WD/download \
-         https://cloud.3mdeb.com/index.php/s/x53PtAWiwmMXkm2/download \
-         https://cloud.3mdeb.com/index.php/s/nYwNFJcwnnRfq9S/download
-    $ unzip fwupd-novacustom-v1.1.0.zip
+         https://cloud.3mdeb.com/index.php/s/mZyN4NgR8SngJ4j/download \
+         https://cloud.3mdeb.com/index.php/s/Z765y233CdJGKy2/download \
+         https://cloud.3mdeb.com/index.php/s/KkNaL6dbWs2ei3E/download
+    $ unzip fwupd-novacustom-v1.2.0.zip
     ```
 
-1. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.1.0.zip`):
+1. This is an example how to verify the binaries (in this case `fwupd-novacustom-v1.2.0.zip`):
 
     ```bash
     $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
     $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/oss_master_key/open-source-software/3mdeb-open-source-software-master-key.asc
     $ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc
 
-    $ sha256sum -c fwupd-novacustom-v1.1.0.zip.sha256
-    $ gpg -v --verify fwupd-novacustom-v1.1.0.zip.sha256.sig fwupd-novacustom-v1.1.0.zip.sha256
+    $ sha256sum -c fwupd-novacustom-v1.2.0.zip.sha256
+    $ gpg -v --verify fwupd-novacustom-v1.2.0.zip.sha256.sig fwupd-novacustom-v1.2.0.zip.sha256
     ```
 
 1. flashrom packages are located inside `flashrom-1.2-2-3mdeb.zip`:
@@ -41,16 +41,22 @@ using different distribution, you might need to
     $ sudo apt install ./libflashrom1_1.2-2_amd64.deb
     ```
 
-1. fwupd packages are located inside `fwupd-1.7.3.3-3mdeb.zip`:
+1. fwupd packages are located inside `fwupd-2.0.0.0-3mdeb.zip`:
 
     ```bash
-    $ unzip fwupd-1.7.3.3-3mdeb.zip
-    $ sudo apt install ./fwupd_1.7.4_amd64.deb \
-                       ./fwupd-doc_1.7.4_all.deb \
-                       ./gir1.2-fwupd-2.0_1.7.4_amd64.deb \
-                       ./gir1.2-fwupdplugin-1.0_1.7.4_amd64.deb \
-                       ./libfwupd2_1.7.4_amd64.deb \
-                       ./libfwupdplugin4_1.7.4_amd64.deb
+    $ unzip fwupd-2.0.0.0-3mdeb.zip
+    $ sudo apt install ./fwupd_2.0.0_amd64.deb \
+                       ./fwupd-doc_2.0.0_all.deb \
+                       ./fwupd-tests_2.0.0_amd64.deb \
+                       ./gir1.2-fwupd-2.0_2.0.0_amd64.deb \
+                       ./gir1.2-fwupdplugin-1.0_2.0.0_amd64.deb \
+                       ./gir1.2-gusb-1.0_0.3.5-1_amd64.deb \
+                       ./libfwupd2_2.0.0_amd64.deb \
+                       ./libfwupd-dev_2.0.0_amd64.deb \
+                       ./libfwupdplugin4_2.0.0_amd64.deb \
+                       ./libfwupdplugin-dev_2.0.0_amd64.deb \
+                       ./libgusb2_0.3.5-1_amd64.deb \
+                       ./libgusb-dev_0.3.5-1_amd64.deb
     ```
 
 ### Building from source
