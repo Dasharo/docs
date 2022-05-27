@@ -22,9 +22,12 @@ Test results for this release can be found
 ### Added
 
 - Persistent RGB keyboard settings
-- Fix for CVE-2022-29264
-- Fix BIOS vendor name in SMBIOS
 - Increased power limits
+
+### Fixed
+
+- CVE-2022-29264 SMM loader vulnerability
+- [Incorrect vendor name in SMBIOS](https://github.com/Dasharo/dasharo-issues/issues/74)
 
 ### Known issues
 
