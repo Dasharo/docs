@@ -40,7 +40,7 @@ Test results for this platform can be found
 [sha256][v1.0.0_hash]{.md-button}
 [sha256.sig][v1.0.0_sig]{.md-button}
 
-See how to verify signatures on [this video](TBD)
+See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
 
 Commands snippet:
 
