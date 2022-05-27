@@ -26,7 +26,7 @@ Test results for this release can be found
 
 ### Fixed
 
-- CVE-2022-29264 SMM loader vulnerability
+- [CVE-2022-29264 SMM loader vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2022-29264)
 - [Incorrect vendor name in SMBIOS](https://github.com/Dasharo/dasharo-issues/issues/74)
 
 ### Known issues
