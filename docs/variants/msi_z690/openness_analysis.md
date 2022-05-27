@@ -143,3 +143,5 @@ for data which is less than 1MB. This reduces the single copy of firmware from
 ![](/images/openness_msi.png)
 
 ![](/images/openness_msi_full.png)
+
+![](/images/openness_msi_full_ami.png)
