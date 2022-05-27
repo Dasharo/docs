@@ -22,7 +22,7 @@ Test results for this release can be found
 ### Added
 
 - Persistent RGB keyboard settings
-- Increased power limits
+- Increased power limits to CPU defaults (28W PL1 / 35W PL2)
 
 ### Fixed
 
