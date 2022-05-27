@@ -14,11 +14,12 @@ about the methodology of the openness metric.
 
 ## MSI original BIOS from AMI
 
-In the case of the AMI BIOS, the entire image should be considered
-proprietary. There are several parts of the image that have a well-known
-structure or make use of a public standard. However, to decode these structures,
-one needs to employ reverse-engineering tools and techniques to know what
-structures are present.
+In the case of the AMI BIOS, the entire image should be considered proprietary.
+There are several parts of the image that have a well-known structure or make
+use of a public standard. However, to decode these structures, one needs to
+employ reverse-engineering tools and techniques to know what structures are
+present. For simplicity we treat UEFI variables as BIOS data. All empty padding
+regions between FFS and all volume free spaces are treated as unused space.
 
 ## Dasharo BIOS
 
@@ -67,7 +68,7 @@ included in the calculations.
 | Type                      | Total size (bytes) | Percent    |
 | ---                       | ---:               | ---:       |
 | COREBOOT region           | 5208644            | N/A        |
-| empty (not included)      | 1057672            | N/A        |
+| empty                     | 1057672            | N/A        |
 | code size (open + closed) | 4150972            | N/A        |
 | open-source               | 2132006            | **51.36%** |
 | closed-source             | 2018966            | 48.64%     |
@@ -89,17 +90,21 @@ Region FW_MAIN_A/FW_MAIN_B:
 | vbt.bin                | 1254 (LZMA)    | &#10004;                   |
 | fallback/postcar       | 37504          | &#10004;                   |
 | fallback/payload       | 1813047 (LZMA) | &#10004; (with exceptions) |
+| (empty)                | 1306724        | N/A                        |
+
+The FW_MAIN_A/FW_MAIN_B regions have been expanded first with CBFStool to show
+whole empty space for given region.
 
 | Type                      | Total size (bytes) | Percent    |
 | ---                       | ---:               | ---:       |
 | FW_MAIN_A/B region        | 5340928            | N/A        |
-| empty (not included)      | 1298884            | N/A        |
+| empty                     | 1306824            | N/A        |
 | code size (open + closed) | 4042044            | N/A        |
 | open-source               | 2023078            | **50.05%** |
 | closed-source             | 2018966            | 49.95%     |
 
 COREBOOT has slightly higher open-source code percentage due to verstage and
-bootblock not being present in FW_MAIN_A/B regions.
+bootblock not being present in FW_MAIN_A/B regions. Summary for all 3 regions:
 
 ### Whole flash image
 
@@ -111,7 +116,7 @@ calculated as follows:
 `(COREBOOT region open-source size + FW_MAIN_A/B open-source size * 2) * 100`
 divided by `(COREBOOT region code size + FW_MAIN_A/B code size * 2)`.
 
-Full image percentage is calculated as follows:
+Full image code only percentage is calculated as follows:
 
 `(COREBOOT region open-source size + FW_MAIN_A/B open-source size * 2) * 100`
 divided by
@@ -123,25 +128,73 @@ divided by
 | ME          | 0x3D9000     | 0%                          |
 | unused hole | 0xC26000     | N/A                         |
 | BIOS        | 0x1000000    | **50.5%**                   |
-| **Summary** | 0x2000000    | **37%**                     |
+| **Summary** | 0x2000000    | **38%**                     |
+
+Comparison of pure code open-source vs closed-source.
 
 ![](/images/openness_msi_bios.png)
 
+![](/images/openness_msi_bios_ami.png)
+
+This was rather expected result.
+
+AMI BIOS region statistics:
+
+| Type                      | Total size (bytes) | Percent    |
+| ---                       | ---:               | ---:       |
+| BIOS data (UEFI var)      | 524288             | N/A        |
+| empty                     | 7638472            | N/A        |
+| code size (open + closed) | 8614456            | N/A        |
+| open-source               | 0                  | **0%**     |
+| closed-source             | 8614456            | **100%**   |
+
+Full BIOS region openness compared to AMI BIOS with data and free space:
+
 ![](/images/openness_msi_bios_full.png)
+
+![](/images/openness_msi_bios_full_ami.png)
+
+Full image openness code only compared to AMI BIOS:
+
+![](/images/openness_msi_full_code.png)
+
+![](/images/openness_msi_full_code_ami.png)
+
+Few conclusions from the above charts:
+
+* Dasharo needs more space for BIOS data, it is mainly dictated by the usage of
+  vboot which needs a significant amount of space for VBLOCKs, GBB and other
+  stuff
+* BIOS data is rather comparable between the firmware distributions, although
+  it must be noted that vboot also generates BIOS data as explained above
+* Dasharo has much less free space than AMI, however it must be noted that
+  Dasharo contains 3! copies of functional firmware, but AMI only a single
+  copy. Without vboot, BIOS region free space would reach over 70%!
+* While Dasharo BIOS region openness is 50%, when compared with Intel ME and
+  descriptor, the overall openness score is around 38%
+* ME share is different because the size of BIOS code is different on both
+  distributions
 
 ## Summary
 
 | Image    | Open-source percent (bytes) |
 | ---      | ---:                        |
 | AMI BIOS | 0%                          |
-| Dasharo  | **37%**                     |
+| Dasharo  | **38%**                     |
 
 Dasharo code takes approximately 4MB of space for a single region + some space
 for data which is less than 1MB. This reduces the single copy of firmware from
-16MB to roughly 5MB compared to AMI BIOS. This is almost 70% reduction of TCB.
-
-![](/images/openness_msi.png)
+8MB to roughly 4MB compared to AMI BIOS. This is roughly **50% reduction of
+TCB!**
 
 ![](/images/openness_msi_full.png)
 
 ![](/images/openness_msi_full_ami.png)
+
+Few conclusions:
+
+* Although the reduction of TCB is 50% it cannopt be seen on the charts due to
+  3 copies of the firmware in Dasharo image. It also effectively increases the
+  percentage of BIOS code both open and closed source in the full image.
+* More significant differences would be seen with vboot disabled, there would
+  be more free space and even less BIOS code both open and closed
