@@ -1,4 +1,4 @@
-# Intro
+# Dasharo Openness Score
 
 This document aims to compare the openness of Dasharo firmware and AMI BIOS for
 MSI PRO Z690-A DDR4 WiFI.
@@ -154,6 +154,8 @@ Full BIOS region openness compared to AMI BIOS with data and free space:
 
 ![](/images/openness_msi_bios_full_ami.png)
 
+THat mean
+
 Full image openness code only compared to AMI BIOS:
 
 ![](/images/openness_msi_full_code.png)
@@ -170,8 +172,8 @@ Few conclusions from the above charts:
 * Dasharo has much less free space than AMI, however it must be noted that
   Dasharo contains 3! copies of functional firmware, but AMI only a single
   copy. Without vboot, BIOS region free space would reach over 70%!
-* While Dasharo BIOS region openness is 50%, when compared with Intel ME and
-  descriptor, the overall openness score is around 38%
+* While BIOS region's Dasharo Openness Score is 50%, when compared with Intel
+  ME and descriptor, the overall Dasharo Openness Score is 38%
 * ME share is different because the size of BIOS code is different on both
   distributions
 
@@ -185,7 +187,8 @@ Few conclusions from the above charts:
 Dasharo code takes approximately 4MB of space for a single region + some space
 for data which is less than 1MB. This reduces the single copy of firmware from
 8MB to roughly 4MB compared to AMI BIOS. This is roughly **50% reduction of
-TCB!**
+TCB!** More over, given the 50% share in size of open-source code, **Dasharo
+liberates BIOS in 75%!**
 
 ![](/images/openness_msi_full.png)
 
@@ -193,7 +196,7 @@ TCB!**
 
 Few conclusions:
 
-* Although the reduction of TCB is 50% it cannopt be seen on the charts due to
+* Although the reduction of TCB is 50% it cannot be seen on the charts due to
   3 copies of the firmware in Dasharo image. It also effectively increases the
   percentage of BIOS code both open and closed source in the full image.
 * More significant differences would be seen with vboot disabled, there would
