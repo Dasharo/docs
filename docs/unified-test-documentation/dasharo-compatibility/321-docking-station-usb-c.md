@@ -54,6 +54,12 @@ Thunderbolt 4 port.
 Output of the command should show one of this: `Charging` or `Full`. That means
 laptop is charged properly.
 
+Example output:
+
+```bash
+Charging
+```
+
 ### DUC001.002 USB Type-C laptop charging (Windows 11)
 
 **Test description**
