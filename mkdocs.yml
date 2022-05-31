@@ -95,6 +95,9 @@ nav:
           - 'Installation manual': variants/protectli_vp4620/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_vp4620/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp4620/test-matrix.md
+      - 'Protectli VP2410':
+          - 'Hardware Configuration Matrix': variants/protectli_vp2410/hardware-matrix.md
+          - 'Test matrix': variants/protectli_vp2410/test-matrix.md
       - 'MSI PRO Z690-A WIFI DDR4':
           - 'FAQ': variants/msi_z690/faq.md
           - 'Overview': variants/msi_z690/overview.md
@@ -180,6 +183,7 @@ nav:
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
               - 'Custom Boot Keys': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
+              - 'Custom Boot Order': unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
               - 'Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
               - 'Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
               - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
