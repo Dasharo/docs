@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Custom Boot Order
+# Dasharo Compatibility: Custom Boot Order (SSD, USB)
 
 ## Test cases
 
