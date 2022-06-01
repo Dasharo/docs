@@ -107,6 +107,9 @@ nav:
           - 'Test matrix': variants/msi_z690/test-matrix.md
           - 'Openness score': variants/msi_z690/openness_analysis.md
           - 'Development': variants/msi_z690/development.md
+          - 'Community':
+            - 'Community HCL': variants/msi_z690/community/community-hcl.md
+            - 'Community test results': variants/msi_z690/community/community-test-results.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
