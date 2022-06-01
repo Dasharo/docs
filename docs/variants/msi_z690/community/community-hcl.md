@@ -18,8 +18,6 @@ This document contains three main sections:
 
 ## Testing method
 
-
-
 ## Hardware Compatible List
 
 | No.  | Supported hardware                                | Link to description | Notes               |
