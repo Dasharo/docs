@@ -31,11 +31,16 @@ Test results for this platform can be found
 
 ### Binaries
 
+<!--
 [protectli_vault_glk_v1.0.15.rom][v1.0.15_rom]{.md-button}
 [sha256][v1.0.15_hash]{.md-button}
 [sha256.sig][v1.0.15_sig]{.md-button}
 
 See how to verify signatures on [this video](https://asciinema.org/a/388861)
+-->
+
+The binaries will be published by Protectli on their webpage. As soon as they
+show up, Dasharo will link to them as well.
 
 ### SBOM (Software Bill of Materials):
 
