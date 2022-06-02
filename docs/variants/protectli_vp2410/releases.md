@@ -42,7 +42,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 The binaries will be published by Protectli on their webpage. As soon as they
 show up, Dasharo will link to them as well.
 
-### SBOM (Software Bill of Materials):
+### SBOM (Software Bill of Materials)
 
 - [coreboot based on b77cf229 revision f59b1ec9](https://github.com/Dasharo/coreboot/tree/f59b1ec9)
 - [edk2 based on 7f90b9cd revision 90364638](https://github.com/Dasharo/edk2/tree/90364638)
