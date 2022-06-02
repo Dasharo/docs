@@ -68,20 +68,38 @@ and can be detected from the operating system.
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
+1. Install package `AudioDeviceCmdlets`:
+
+    ```powershell
+    Install-PackageProvider -Name NuGet -Force
+    ```
+
+    ```powershell
+    Install-Module -Name AudioDeviceCmdlets -Force
+    ```
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open `Start Menu`, find and open `Device Manager`.
-1. Find `Audio inputs and outputs` group and expand it. Note the result.
+1. Run PowerShell as administrator and execute following command:
+
+```powershell
+Get-AudioDevice -list  | ft Index, Default, Type, Name
+```
 
 **Expected result**
 
 1. `Microphone (Realtek(R) Audio)` and `Speakers (Realtek(R) Audio)`
-    should be listed in the `Audio inputs and outputs` group.
-1. Both audio devices should not report any error.
+    should be listed in the output:
+
+```powershell
+Index Default Type      Name
+----- ------- ----      ----
+    1    True Playback  Speakers (Realtek(R) Audio)
+    2    True Recording Microphone (Realtek(R) Audio)
+```
 
 ### AUD002.001 Audio playback (Ubuntu 20.04)
 
@@ -287,28 +305,28 @@ after plugging in the 3.5 mm jack into the slot.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Plug in a headset jack into micro jack slot located on the right
-    side of the laptop.
-1. After the `Which device did you plug in` menu appearing, select what type
-    of external device has been connected to the laptop (headset).
-1. Find the `Speakers` icon in the bottom right part of the screen and click
-    it using the right mouse button and then using the left mouse button
-    click `Open Sound Settings`.
+1. Plug in a headset jack into micro jack slot located on the right side of the
+laptop.
+1. After the `Which device did you plug` in menu appearing, select what type of
+external device has been connected to the laptop (headset).
+1. Find the `Speakers` icon in the bottom right part of the screen and click it
+using the right mouse button and then using the left mouse button click
+`Open Sound Settings`.
 1. Locate `Input` section and click on the `Device properties` option.
 1. In `Device properties` window select option `Additional device properties`.
 1. Locate in `General` the section field named `Jack Information`.
 1. Close the window `Microphone properties`.
 1. Disconnect a headset from the laptop.
-1. Select again the `Addtional device properties` option and locate again
-    field named `Jack information`.
+1. Select again the `Addtional device properties` option and locate again field
+named `Jack information`.
 
-**Expected result**
+Expected result
 
 1. `Jack Information` field in the first case should show the position
-    `Front Panel 3.5 mm Jack`.
-1. After disconnecting a headset from the laptop and checking again
-    option `Addtional device properties` field `Jack Information` should not
-    contain the phrase `Front Panel 3.5 mm Jack`.
+`Front Panel 3.5 mm Jack`.
+1. After disconnecting a headset from the laptop and checking again option
+`Addtional device properties` field `Jack Information` should not contain the
+phrase `Front Panel 3.5 mm Jack`.
 
 ### AUD005.001 External headset audio playback (Ubuntu 20.04)
 
