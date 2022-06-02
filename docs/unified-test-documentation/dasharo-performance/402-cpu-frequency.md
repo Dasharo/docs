@@ -61,6 +61,48 @@ cpu MHz		: 2800.000
 cpu MHz		: 2800.000
 ```
 
+## CPF001.002 CPU not stuck on initial frequency (Windows 11)
+
+**Test description**
+
+This test aims to verify whether the mounted CPU does not stuck on the
+initial frequency after booting into the OS.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Windows 11`
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a powershell and run the follwing command:
+
+```powershell
+while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)% Processor Performance").CounterSamples.CookedValue/100)}
+```
+
+1. Note the results.
+
+**Expected result**
+
+```bash
+1023.98759600614
+1009.23827168367
+940.831608527132
+1201.62695181908
+1140.59449053201
+1021.87762893503
+983.647614379085
+1206.27777992278
+```
+
 ### CPF002.001 CPU runs on expected frequency (Ubuntu 22.04)
 
 **Test description**
@@ -129,6 +171,30 @@ expected frequency.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
+### CPF002.002 CPU runs on expected frequency (Windows 11)
+
+**Test description**
+
+This test aims to verify whether the mounted CPU is running on
+expected frequency.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Windows 11`
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+
+**Expected result**
+
 ### CPF003.001 CPU runs on expected frequency (Ubuntu 22.04, battery)
 
 **Test description**
@@ -196,6 +262,30 @@ frequency when charger is disconnected. The DUT during test works on battery.
 
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
+
+### CPF003.002 CPU runs on expected frequency (Windows 11, battery)
+
+**Test description**
+
+This test aims to verify whether the mounted CPU is running on expected
+frequency when charger is disconnected. The DUT during test works on battery.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Windows 11`
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+
+**Expected result**
 
 ### CPF004.001 CPU with load runs on expected frequency (Ubuntu 22.04)
 
@@ -271,6 +361,30 @@ frequency after stress test.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
+### CPF004.002 CPU with load runs on expected frequency (Windows 11)
+
+**Test description**
+
+This test aims to verify whether the mounted CPU is running on expected
+frequency after stress test.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Windows 11`
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+
+**Expected result**
+
 ### CPF005.001 CPU with load runs on expected frequency (Ubuntu 22.04, battery)
 
 **Test description**
@@ -344,3 +458,27 @@ frequency after stress test. The DUT during test works on battery.
 
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
+
+### CPF005.002 CPU with load runs on expected frequency (Windows 11, battery)
+
+**Test description**
+
+This test aims to verify whether the mounted CPU is running on expected
+frequency after stress test. The DUT during test works on battery.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = `Windows 11`
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+
+**Expected result**
