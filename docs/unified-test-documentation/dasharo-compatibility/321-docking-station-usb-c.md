@@ -51,7 +51,8 @@ Thunderbolt 4 port.
 
 **Expected result**
 
-Output of the command should show that the battery is being charged.
+Output of the command should show one of this: `Charging` or `Full`. That means
+laptop is charged properly.
 
 Example output:
 

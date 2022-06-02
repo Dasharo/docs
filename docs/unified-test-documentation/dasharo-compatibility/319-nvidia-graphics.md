@@ -69,16 +69,25 @@ initialized and can be detected by the operating system
 
 **Test steps**
 
-1. Open the Start menu.
-1. Type in `Device Manager`.
-1. Click on the Device Manager icon to open the Device Manager.
-1. Open the `Display adapters` section to wiew the GPUs present in the system.
+1. Run PowerShell as administrator and execute following command:
+
+```powershell
+Get-WmiObject -Class Win32_VideoController | Select Description, Name, Status
+```
 
 **Expected result**
 
-1. The list should contain the NVIDIA graphics card present in the system:
+1. The output should contain the information about installed Nvidia Graphics
+    card.
 
-![Device Manager](../../images/nvidia_win10.png)
+    Example output:
+
+    ```powershell
+    Description                  Name                         Status
+    -----------                  ----                         ------
+    Intel(R) Iris(R) Xe Graphics Intel(R) Iris(R) Xe Graphics OK
+    NVIDIA GeForce GTX 1650      NVIDIA GeForce GTX 1650      OK
+    ```
 
 ### NVI002.001 NVIDIA Graphics power management (Ubuntu 20.04)
 

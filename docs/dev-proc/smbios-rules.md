@@ -10,14 +10,14 @@ for Dasharo developers.
 
 ### Vendor field
 
-The Vendor field, for firmware with initial release date after 13 January 2021,
+The Vendor field, for firmware with release date after 13 January 2022,
 is set as follows:
 
 ```bash
 3mdeb
 ```
 
-For firmware with initial release date before 13 January 2021:
+For firmware with release date before 13 January 2022:
 
 ```bash
 3mdeb Embedded Systems Consulting

@@ -72,6 +72,7 @@ nav:
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
           - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
       - 'NovaCustom NS5X':
+          - 'Overview': variants/novacustom_ns5x/overview.md
           - 'Releases': variants/novacustom_ns5x/releases.md
           - 'Building manual': variants/novacustom_ns5x/building.md
           - 'Installation manual': variants/novacustom_ns5x/installation.md
@@ -104,6 +105,7 @@ nav:
           - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
           - 'Memory Compatibility': variants/msi_z690/memory-hcl.md
           - 'Test matrix': variants/msi_z690/test-matrix.md
+          - 'Openness score': variants/msi_z690/openness_analysis.md
           - 'Development': variants/msi_z690/development.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
@@ -223,7 +225,8 @@ nav:
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
-              - 'CPU temperature': unified-test-documentation/dasharo-performance/401-cpu-temperature.md
+              - 'CPU temperature measure': unified-test-documentation/dasharo-performance/401-cpu-temperature.md
+              - 'CPU frequency measure': unified-test-documentation/dasharo-performance/402-cpu-frequency.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
