@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Custom Boot Order (SSD, USB)
+# Dasharo Compatibility: Custom Boot Order
 
 ## Test cases
 
@@ -9,7 +9,7 @@
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-### CBO001.001 Custom boot order
+### CBO001.001 Custom boot order (SeaBIOS)
 
 **Test description**
 
@@ -54,3 +54,35 @@ Select boot device:
 6. iPXE
 7. Payload [memtest]
 ```
+
+### CBO001.002 Custom boot order (edk2)
+
+**Test description**
+
+This test aims to verify that the DUT boot from the suitable source, with the
+posibility to boot from other sources.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+
+**Test steps**
+
+1. Power on the DUT
+1. Press `SETUP MENU` key to display boot menu.
+1. Select `Boot Maintenance Manager` and press `ENTER`.
+1. In `Boot Maintenance Manager` menu select `Boot Options` and press `ENTER`.
+1. In `Change Boot Order` menu select `Change the order` option and press
+    `ENTER`.
+1. Set the desired boot order.
+1. Reboot the device.
+1. Press `BOOT_MENU_KEY` key to display boot menu.
+1. Compare the listed devices with the desired boot order.
+
+**Expected result**
+
+Current boot order option list should correspond to the desired boot order.
