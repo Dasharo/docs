@@ -11,7 +11,7 @@ firmware.
 
 This document contains three main sections:
 - `Testing method` in which we are describing our preferred testing method.
-- `Hardware Compatible List` in which in a labelled manner we show all
+- `Hardware Compatibility List` in which in a labeled manner we show all
     compatible hardware.
 - `Support us` - in which we describe the method of how it is possible to
     contribute to the development of this list.
