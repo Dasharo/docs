@@ -25,6 +25,8 @@ Legend:
 
 Information about GPU might be read from GPU package or documentation.
 
-| GPU name             | Memory size | Memory type | Bandwidth | PCI-E Architecture | Multi-Graphics Technology |
-|:--------------------:|:-----------:|:-----------:|:---------:|:------------------:|:-------------------------:|
-|                      |             |             |           |                    |                           |
+| GPU name         | Memory size | Memory type | Bandwidth | PCI-E Architecture | Multi-Graphics Technology | Results |
+|:----------------:|:-----------:|:-----------:|:---------:|:------------------:|:-------------------------:|:-------:|
+| Nvidia GeForce GTX 1060 | 3072 MB | GDDR5 | x16       | Gen3               | 1                         | [link][1]  |
+
+[1]: https://cloud.3mdeb.com/index.php/s/JRYxxxAe7fcCczx
