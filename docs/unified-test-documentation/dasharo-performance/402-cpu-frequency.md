@@ -105,9 +105,9 @@ expected frequency.
     Example output:
 
     ```bash
-    CPU MHz:                         1600.000
-    CPU max MHz:                     3900.0000
-    CPU min MHz:                     1600.0000
+    CPU MHz:                         2800.0000
+    CPU max MHz:                     4700.0000
+    CPU min MHz:                     400.0000
     ```
 
 1. The result of running the second command should contain the information
@@ -116,14 +116,14 @@ expected frequency.
     Example output:
 
     ```bash
-    cpu MHz		: 2200.000
-    cpu MHz		: 2016.592
-    cpu MHz		: 1700.000
-    cpu MHz		: 1700.000
-    cpu MHz		: 1800.000
-    cpu MHz		: 1700.000
-    cpu MHz		: 1800.000
-    cpu MHz		: 2000.000
+    cpu MHz		: 2800.000
+    cpu MHz		: 2800.000
+    cpu MHz		: 2800.000
+    cpu MHz		: 2800.000
+    cpu MHz		: 2800.000
+    cpu MHz		: 2800.000
+    cpu MHz		: 900.542
+    cpu MHz		: 461.831
     ```
 
 1. None of CPU core frequencies should be higher than maximum frequency or
