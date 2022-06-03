@@ -86,16 +86,16 @@ SMBIOS logs are lost. You can backup the SMBIOS information with our
 The `dmidecode.log` will have all the necessary information. Things we know
 about MSI system UUID:
 
-- UUID format is as follows: `33221100-5544-7766-8899-AABBCCDDEEFF`, the hex
+* UUID format is as follows: `33221100-5544-7766-8899-AABBCCDDEEFF`, the hex
   numbers represent the order of bytes in memory for the little-endian format
   as required by SMBIOS
-- MSI UUIDs do not conform to any of the RFC 4122 UUID variants/versions (the
+* MSI UUIDs do not conform to any of the RFC 4122 UUID variants/versions (the
   bits responsible for UUID version and variant identification are not constant
   across multiple boards)
-- the last octet group `AABBCCDDEEFF` is equal to the MAC address of the
+* the last octet group `AABBCCDDEEFF` is equal to the MAC address of the
   on-board Intel i225 Ethernet, so **be sure to NOT share the UUID** with
   anybody as it contains system sensitive information
-- the first four groups are either random numbers or some cryptographically
+* the first four groups are either random numbers or some cryptographically
   acquired value from e.g. combination of some board data, unfortunately it is
   not known by us
 
