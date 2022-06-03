@@ -166,7 +166,7 @@ connector and can be enabled/disabled on demand:
 | 0 - low                 | disabled (by default)         |
 | 1 - high                | enabled                       |
 
-* GPIO states during flashing:
+Example flashing procedure:
 
 1. Set proper SPI Vcc Voltage:
 
