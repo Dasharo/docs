@@ -141,6 +141,7 @@ nav:
   - 'Knowledge base':
       - 'Common coreboot documentation':
           - 'Vboot signing': common-coreboot-docs/vboot_signing.md
+          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Dasharo menu documentation':
           - 'Overview': dasharo-menu-docs/overview.md
     # - 'Trolling Topics List':
