@@ -82,8 +82,9 @@ provides the system UUID in the SMBIOS system information structure.
 
 The problem with UUID is that it cannot be recovered if the backup binary or
 SMBIOS logs are lost. You can backup the SMBIOS information with our
-[fwdump-docker](https://github.com/3mdeb/fwdump-docker). The `dmidecode.log`
-will have all the necessary information. Things we know about MSI system UUID:
+[Dasharo Tools Suite bootable stick](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-usb-stick).
+The `dmidecode.log` will have all the necessary information. Things we know
+about MSI system UUID:
 
 - UUID format is as follows: `33221100-5544-7766-8899-AABBCCDDEEFF`, the hex
   numbers represent the order of bytes in memory for the little-endian format
