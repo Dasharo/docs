@@ -43,8 +43,8 @@ This documentation is compatible with the `v0.3.0` version of the DTS.
 ### Launching DTS
 
 * Flash the downloaded `dts-base-image-ce-v0.3.0.wic.gz` image onto USB stick.
-  - you can use cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
-  - you can also use `dd` to flash from command line
+    - you can use cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
+    - you can also use `dd` to flash from command line
 
 ```bash
 gzip -cdk dts-base-image-ce-v0.3.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
