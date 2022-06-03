@@ -170,29 +170,43 @@ connector and can be enabled/disabled on demand:
 
 1. Set proper SPI Vcc Voltage:
 
-    `echo 0 > /sys/class/gpio/gpio405/value` - sets SPI Vcc to 1.8V
+    ```bash
+    echo 0 > /sys/class/gpio/gpio405/value
+    ```
 
     Or when flash chip operates on 3.3V:
 
-    `echo 1 > /sys/class/gpio/gpio405/value` - sets SPI Vcc to 3.3V
+    ```bash
+    echo 1 > /sys/class/gpio/gpio405/value
+    ```
 
 1. Enable SPI Vcc:
 
-    `echo 1 > /sys/class/gpio/gpio406/value`
+    ```bash
+    echo 1 > /sys/class/gpio/gpio406/value
+    ```
 
 1. Enable SPI signals:
 
-    `echo 1 > /sys/class/gpio/gpio404/value`
+    ```bash
+    echo 1 > /sys/class/gpio/gpio404/value
+    ```
 
-1. Flash SPI chip.
+1. Flash SPI chip:
+
+    ```bash
+    flashrom -w /path/to/coreboot.rom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000
+    ```
 
 1. When done, change back all states:
 
-    `echo 0 > /sys/class/gpio/gpio405/value`
+    ```bash
+    echo 0 > /sys/class/gpio/gpio405/value
 
-    `echo 0 > /sys/class/gpio/gpio406/value`
+    echo 0 > /sys/class/gpio/gpio406/value
 
-    `echo 0 > /sys/class/gpio/gpio404/value`
+    echo 0 > /sys/class/gpio/gpio404/value
+    ```
 
 ### UART OUTPUT SELECT header
 
