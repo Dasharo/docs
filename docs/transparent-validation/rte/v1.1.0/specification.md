@@ -138,7 +138,7 @@ Maximum voltage for all data signals: 3.3 V.
 |:-----------:|:-----:|:------:|:-----------:|
 | Vcc         | 1     | 2      | GND         |
 | CS          | 3     | 4      | SCLK        |
-| MISO        | 5     | 6      | MOSI        |
+| MISO (SO)   | 5     | 6      | MOSI (SI)   |
 | ISP         | 7     | 8      | NC          |
 
 Revision v1.1.0 features new possibilities for SPI configuration:
@@ -165,6 +165,34 @@ connector and can be enabled/disabled on demand:
 |:-----------------------:|:-----------------------------:|
 | 0 - low                 | disabled (by default)         |
 | 1 - high                | enabled                       |
+
+* GPIO states during flashing:
+
+1. Set proper SPI Vcc Voltage:
+
+    `echo 0 > /sys/class/gpio/gpio405/value` - sets SPI Vcc to 1.8V
+
+    Or when flash chip operates on 3.3V:
+
+    `echo 1 > /sys/class/gpio/gpio405/value` - sets SPI Vcc to 3.3V
+
+1. Enable SPI Vcc:
+
+    `echo 1 > /sys/class/gpio/gpio406/value`
+
+1. Enable SPI signals:
+
+    `echo 1 > /sys/class/gpio/gpio404/value`
+
+1. Flash SPI chip.
+
+1. When done, change back all states:
+
+    `echo 0 > /sys/class/gpio/gpio405/value`
+
+    `echo 0 > /sys/class/gpio/gpio406/value`
+
+    `echo 0 > /sys/class/gpio/gpio404/value`
 
 ### UART OUTPUT SELECT header
 
