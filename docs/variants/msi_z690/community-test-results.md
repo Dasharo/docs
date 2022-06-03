@@ -19,6 +19,8 @@ This document contains three main sections:
 
 ## Testing method
 
+To test platform:
+
 ## Community test results
 
 | No.  | Description                                       | Link to description | Notes               |
