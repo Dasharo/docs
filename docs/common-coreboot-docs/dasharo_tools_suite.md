@@ -47,7 +47,7 @@ This documentation is compatible with the `v0.3.0` version of the DTS.
   - you can also use `dd` to flash from command line
 
 ```bash
-gzip -cdk dts-base-image-ce-v0.3.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=progress
+gzip -cdk dts-base-image-ce-v0.3.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 ```
 
 * Insert the USB stick to a USB in your device
