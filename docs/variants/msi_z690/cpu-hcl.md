@@ -2,14 +2,14 @@
 
 ## Contributing
 
-Feel free to test different modules and report your results via
+Feel free to test different processors and report your results via
 [email](mailto:contact@dasharo.com) or submit a Pull Request to
 [Dasharo documentation repository](https://github.com/Dasharo/docs) or by using
 [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues).
 
 ## HCL list
 
-CPU Hardware Compatibility List present the CPUs tested and verified
+CPU Hardware Compatibility List presents the CPUs tested and verified
 to work with Dasharo by community. The following list does not include CPU
 which is tested and verfied in 3mdeb laboratory - this information might be
 found in [Hardware Matrix](../hardware-matrix.md) documentation.
