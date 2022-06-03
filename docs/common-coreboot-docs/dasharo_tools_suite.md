@@ -20,7 +20,7 @@ options:
 There is a common base, but there might be multiple flavors of the DTS images.
 Currently, there are:
 
-* CE
+* CE - Community Edition
     - `Dasharo HCL Report` - generates a package with logs containing hardware
       information
     - flashrom, fwupd, and many more useful tools
