@@ -61,7 +61,7 @@ cpu MHz		: 2800.000
 cpu MHz		: 2800.000
 ```
 
-## CPF001.002 CPU not stuck on initial frequency (Windows 11)
+### CPF001.002 CPU not stuck on initial frequency (Windows 11)
 
 **Test description**
 
@@ -85,26 +85,28 @@ initial frequency after booting into the OS.
 1. Open a powershell as administrator and run the follwing command:
 
 ```powershell
-while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)% Processor Performance").CounterSamples.CookedValue/100)}
+while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
 1. Note the results.
 
 **Expected result**
 
-The displayed values ​​that follow the called command should not be the same.
+The output of the command should contain information about the current
+frequency of CPU. If the following frequency values are the same, the test
+should be considered as failed.
 
-Example output:
+Example output with unwanted results:
 
 ```bash
-1023.98759600614
-1009.23827168367
-940.831608527132
-1201.62695181908
-1140.59449053201
-1021.87762893503
-983.647614379085
-1206.27777992278
+2800.00000000000
+2800.00000000000
+2800.00000000000
+2800.00000000000
+2800.00000000000
+2800.00000000000
+2800.00000000000
+2800.00000000000
 ```
 
 ### CPF002.001 CPU runs on expected frequency (Ubuntu 22.04)
@@ -206,7 +208,7 @@ expected frequency.
 1. Run the following command in the powershell:
 
 ```powershell
-while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)% Processor Performance").CounterSamples.CookedValue/100)}
+while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
 1. Note the results.
@@ -337,7 +339,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 1. Run the following command in the powershell:
 
 ```powershell
-while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)% Processor Performance").CounterSamples.CookedValue/100)}
+while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
 1. Note the results.
@@ -368,8 +370,6 @@ while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\
     983.647614379085
     1206.27777992278
     ```
-
-**Expected result**
 
 ### CPF004.001 CPU with load runs on expected frequency (Ubuntu 22.04)
 
@@ -449,8 +449,8 @@ frequency after stress test.
 
 **Test description**
 
-This test aims to verify whether the mounted CPU is running on expected
-frequency after stress test.
+This test aims to verify whether the mounted CPU is running on
+expected frequency after stress test.
 
 **Test configuration data**
 
@@ -466,8 +466,48 @@ frequency after stress test.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Open a powershell as administrator and run the follwing command:
+
+```powershell
+(Get-CimInstance CIM_Processor).MaxClockSpeed
+```
+
+1. Note the result.
+1. Run the stressor.
+1. Run the following command in the powershell:
+
+```powershell
+while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
+```
+
+1. Note the results.
 
 **Expected result**
+
+1. The result of running the first command should contain the information about
+   maximum CPU frequency.
+
+    Example output:
+
+    ```powershell
+    2419
+    ```
+
+1. None of displayed values ​​that follow the second command should be higher than
+   maximum frequency.
+
+    Example output:
+
+    ```bash
+    1023.98759600614
+    1009.23827168367
+    940.831608527132
+    1201.62695181908
+    1140.59449053201
+    1021.87762893503
+    983.647614379085
+    1206.27777992278
+    ```
 
 ### CPF005.001 CPU with load runs on expected frequency (Ubuntu 22.04, battery)
 
@@ -547,8 +587,8 @@ frequency after stress test. The DUT during test works on battery.
 
 **Test description**
 
-This test aims to verify whether the mounted CPU is running on expected
-frequency after stress test. The DUT during test works on battery.
+This test aims to verify whether the mounted CPU is running on
+expected frequency after stress test.
 
 **Test configuration data**
 
@@ -564,5 +604,45 @@ frequency after stress test. The DUT during test works on battery.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Open a powershell as administrator and run the follwing command:
+
+```powershell
+(Get-CimInstance CIM_Processor).MaxClockSpeed
+```
+
+1. Note the result.
+1. Run the stressor.
+1. Run the following command in the powershell:
+
+```powershell
+while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
+```
+
+1. Note the results.
 
 **Expected result**
+
+1. The result of running the first command should contain the information about
+   maximum CPU frequency.
+
+    Example output:
+
+    ```powershell
+    2419
+    ```
+
+1. None of displayed values ​​that follow the second command should be higher than
+   maximum frequency.
+
+    Example output:
+
+    ```bash
+    1023.98759600614
+    1009.23827168367
+    940.831608527132
+    1201.62695181908
+    1140.59449053201
+    1021.87762893503
+    983.647614379085
+    1206.27777992278
+    ```
