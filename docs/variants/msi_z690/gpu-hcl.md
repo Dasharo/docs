@@ -21,7 +21,7 @@ Legend:
 * Bandwith - GPU's bandwith.
 * PCI-E Architecture - declared by producer generation of PCI-E architecture.
 * Multi-Graphics Technology - information about support for Multi-Graphics
-    Technology.
+  Technology.
 
 Information about GPU might be read from GPU package or documentation.
 
