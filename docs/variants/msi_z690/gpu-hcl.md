@@ -29,4 +29,4 @@ Information about GPU might be read from GPU package or documentation.
 |:----------------:|:-----------:|:-----------:|:---------:|:------------------:|:-------------------------:|:-------:|
 | Nvidia GeForce GTX 1060 | 3072 MB | GDDR5 | x16       | Gen3               | 1                         | [link][1]  |
 
-[1]: https://cloud.3mdeb.com/index.php/s/JRYxxxAe7fcCczx
+[1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
