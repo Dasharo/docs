@@ -30,7 +30,7 @@ Platform testing might be carried out on the basis of
 
 If you prefer another mechanism for checking any functionality or check any
 mechanism that we did not include in the documentation - describe it in the
-contributing notification.
+test report issue.
 
 ## Community test results
 
