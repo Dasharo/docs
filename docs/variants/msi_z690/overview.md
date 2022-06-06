@@ -19,8 +19,12 @@ documentation._
 * [Hardware configuration matrix](hardware-matrix.md) - definition of hardware
   configuration used during validation
 * [Test matrix](test-matrix.md) - validation scope for the MSI PRO Z690-A WiFi DDR4
-* [Memory Compatibility](memory-hcl.md) - tested memory modules
 * [Development](development.md) - information for Dasharo developers
+* [Memory Compatibility](memory-hcl.md) - memory modules tested by community
+* [CPU Compatibility](cpu-hcl.md) - processors tested by community
+* [GPU Compatibility](gpu-hcl.md) - graphics cards tested by community
+* [Community test results](community-test-results.md) - test results performed
+  by the community.
 
 ## Useful documents
 
