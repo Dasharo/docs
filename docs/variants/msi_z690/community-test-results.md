@@ -15,8 +15,6 @@ This document contains three main sections:
 - `Testing method` in which we are describing our preferred testing method.
 - `Hardware Compatible List` in which in a labelled manner we show all
     tests carried out by the community.
-- `Support us` - in which we describe the method of how it is possible to
-    contribute to the development of this list.
 
 ## Contributing
 
@@ -28,11 +26,11 @@ Feel free to perform different tests and report your results via
 ## Testing method
 
 Platform testing might be carried out on the basis of
-[Dasharo Test Specifiaction](../../unified-test-documentation/overview.md).
+[Dasharo Test Specification](../../unified-test-documentation/overview.md).
 
 If you prefer another mechanism for checking any functionality or check any
 mechanism that we did not include in the documentation - describe it in the
-notification.
+contributing notification.
 
 ## Community test results
 
@@ -40,8 +38,3 @@ notification.
 |:-----|:--------------------------------------------------|:-------------------:|:-------------------:|
 | 1.   |                                                   |                     |                     |
 
-## Support Us
-
-Hardware compatible with Dasharo firmware you might report by:
-- using `Dasharo Issues project`, which is available under this
-    [link](https://github.com/Dasharo/dasharo-issues/issues).
