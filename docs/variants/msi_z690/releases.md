@@ -58,7 +58,7 @@ gpg --verify msi_ms7d25_v1.0.0.rom.sha256.sig msi_ms7d25_v1.0.0.rom.sha256
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot based on a552cfc9 revision 22caaa0a](https://github.com/Dasharo/coreboot/tree/22caaa0a)
+- [coreboot based on a552cfc9 revision d22caaa0a](https://github.com/Dasharo/coreboot/tree/d22caaa0a)
 - [edk2 based on 4d2846ba revision 0c94299b](https://github.com/Dasharo/edk2/tree/0c94299b)
 
 ## v0.4.0 - 2022-05-13
