@@ -32,4 +32,4 @@ Rest of the information might be read from CPU package or documentation.
 |:--------------------:|:-----------:|:--------------:|:---------------:|:-------:|:---------------:|:-------------:|
 | Intel Core i9-12900K | Alder Lake  | 3.2 GHz        | 5.3 GHz         | 125     | UHDGraphics710  | [link][1]     |
 
-[1]: https://cloud.3mdeb.com/index.php/s/JRYxxxAe7fcCczx
+[1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
