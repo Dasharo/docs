@@ -21,7 +21,7 @@ documentation._
 * [Test matrix](test-matrix.md) - validation scope for the MSI PRO Z690-A WiFi DDR4
 * [Development](development.md) - information for Dasharo developers
 * [Memory Compatibility](memory-hcl.md) - memory modules tested by community
-* [CPU Compatibility](cpu-hcl.md) - tested by community processors
+* [CPU Compatibility](cpu-hcl.md) - processors tested by community 
 * [GPU Compatibility](cpu-hcl.md) - tested by community graphics cards
 * [Community test results](community-test-results.md) - test results performed
   by the community.
