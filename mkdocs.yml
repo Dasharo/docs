@@ -50,6 +50,7 @@ nav:
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
       - 'NovaCustom NV4x':
+          - 'Overview': variants/novacustom_nv4x/overview.md
           - 'Releases': variants/novacustom_nv4x/releases.md
           - 'Building manual': variants/novacustom_nv4x/building.md
           - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
