@@ -54,7 +54,7 @@ impact every community.
 
 We also should be aware that open-source ecosystem is place of use of
 [OPSEC](https://en.wikipedia.org/wiki/Operations_security) and
-[PSYWAR](https://en.wikipedia.org/wiki/Operations_security) techniques, which
+[PSYWAR](https://en.wikipedia.org/wiki/Psychological_warfare) techniques, which
 leads to redirecting energy and resources into directions that make open-source
 community activity less competitive.
 
