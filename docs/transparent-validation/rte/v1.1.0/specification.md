@@ -166,48 +166,6 @@ connector and can be enabled/disabled on demand:
 | 0 - low                 | disabled (by default)         |
 | 1 - high                | enabled                       |
 
-Example flashing procedure:
-
-1. Set proper SPI Vcc Voltage:
-
-    ```bash
-    echo 0 > /sys/class/gpio/gpio405/value
-    ```
-
-    Or when flash chip operates on 3.3V:
-
-    ```bash
-    echo 1 > /sys/class/gpio/gpio405/value
-    ```
-
-1. Enable SPI Vcc:
-
-    ```bash
-    echo 1 > /sys/class/gpio/gpio406/value
-    ```
-
-1. Enable SPI signals:
-
-    ```bash
-    echo 1 > /sys/class/gpio/gpio404/value
-    ```
-
-1. Flash SPI chip:
-
-    ```bash
-    flashrom -w /path/to/coreboot.rom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000
-    ```
-
-1. When done, change back all states:
-
-    ```bash
-    echo 0 > /sys/class/gpio/gpio405/value
-
-    echo 0 > /sys/class/gpio/gpio406/value
-
-    echo 0 > /sys/class/gpio/gpio404/value
-    ```
-
 ### UART OUTPUT SELECT header
 
 UART OUTPUT SELECT header (`J16`) is a 2x3 pin header straight type 2.54mm pitch.
@@ -323,3 +281,47 @@ located on RTE board or use OrangePi Zero original socket.
 ### Reset button
 
 Reset button (`SW1`) located near relay is used for resetting the RTE itself.
+
+### FAQ
+
+* **How to set GPIO states to flash SPI:**
+
+1. Set proper SPI Vcc Voltage:
+
+    ```bash
+    echo 0 > /sys/class/gpio/gpio405/value
+    ```
+
+    Or when flash chip operates on 3.3V:
+
+    ```bash
+    echo 1 > /sys/class/gpio/gpio405/value
+    ```
+
+1. Enable SPI Vcc:
+
+    ```bash
+    echo 1 > /sys/class/gpio/gpio406/value
+    ```
+
+1. Enable SPI signals:
+
+    ```bash
+    echo 1 > /sys/class/gpio/gpio404/value
+    ```
+
+1. Flash SPI chip:
+
+    ```bash
+    flashrom -w /path/to/coreboot.rom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000
+    ```
+
+1. When done, change back all states:
+
+    ```bash
+    echo 0 > /sys/class/gpio/gpio405/value
+
+    echo 0 > /sys/class/gpio/gpio406/value
+
+    echo 0 > /sys/class/gpio/gpio404/value
+    ```
