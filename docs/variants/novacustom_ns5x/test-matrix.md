@@ -1,4 +1,4 @@
-# Test matrix - Clevo NS5x/NS7x
+# Test matrix - NovaCustom NS5x/NS7x
 
 ## About
 

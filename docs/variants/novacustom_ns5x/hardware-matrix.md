@@ -1,9 +1,9 @@
-# Hardware configuration matrix - Clevo NS51/NS70
+# Hardware configuration matrix - NovaCustom NS51/NS70
 
 ## Introduction
 
 This document describes the hardware configurations used for validation of the
-coreboot port on the Clevo NS51/NS70 laptops.
+coreboot port on the NovaCustom NS51/NS70 laptops.
 
 ## NS51
 

@@ -1,11 +1,11 @@
-# Test matrix - Clevo NV41
+# Test matrix - NovaCustom NV41
 
 ## About
 
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary.
 
-## Test matrix - Clevo NV41MZ
+## Test matrix - NovaCustom NV41MZ
 
 ### Module: Dasharo compatibility
 
@@ -75,7 +75,7 @@ subjected from before the release of the new binary.
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 
-## Test matrix - Clevo NV41MB
+## Test matrix - NovaCustom NV41MB
 
 ### Module: Dasharo compatibility
 

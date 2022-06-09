@@ -12,7 +12,7 @@ Feel free to test different graphics cards and report your results via
 GPU Hardware Compatibility List presents the GPUs tested and verified
 to work with Dasharo by community. The following list does not include GPU
 which is tested and verfied in 3mdeb laboratory - this information might be
-found in [Hardware Matrix](../hardware-matrix.md) documentation.
+found in [Hardware Matrix](hardware-matrix.md) documentation.
 
 Legend:
 * GPU name - the full name of GPU including vendor and model name.

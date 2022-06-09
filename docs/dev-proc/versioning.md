@@ -43,7 +43,7 @@ e.g. PC Engines. Examples:
 * `Dell OptiPlex 7010/9010`
 * `ASUS KGPE-D16`
 * `MSI MS7D25`
-* `Novacustom`
+* `NovaCustom`
 * `Tuxedo`
 
 Most recent status should be reflected in

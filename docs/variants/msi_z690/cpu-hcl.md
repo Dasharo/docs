@@ -12,7 +12,7 @@ Feel free to test different processors and report your results via
 CPU Hardware Compatibility List presents the CPUs tested and verified
 to work with Dasharo by community. The following list does not include CPU
 which is tested and verfied in 3mdeb laboratory - this information might be
-found in [Hardware Matrix](../hardware-matrix.md) documentation.
+found in [Hardware Matrix](hardware-matrix.md) documentation.
 
 Legend:
 * Processor name - the full name of processor including vendor, brand and
