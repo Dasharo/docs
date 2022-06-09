@@ -138,7 +138,7 @@ Maximum voltage for all data signals: 3.3 V.
 |:-----------:|:-----:|:------:|:-----------:|
 | Vcc         | 1     | 2      | GND         |
 | CS          | 3     | 4      | SCLK        |
-| MISO        | 5     | 6      | MOSI        |
+| MISO (SO)   | 5     | 6      | MOSI (SI)   |
 | ISP         | 7     | 8      | NC          |
 
 Revision v1.1.0 features new possibilities for SPI configuration:
@@ -281,3 +281,51 @@ located on RTE board or use OrangePi Zero original socket.
 ### Reset button
 
 Reset button (`SW1`) located near relay is used for resetting the RTE itself.
+
+### FAQ
+
+* **How to set GPIO states to flash SPI:**
+
+1. Set proper SPI Vcc Voltage:
+
+    Adequate Vcc voltege is neccesary for succesfull flash procedure. If it will
+    be to low chip will not recognize any signals, if too high chip will be
+    damaged.
+
+    ```bash
+    echo 0 > /sys/class/gpio/gpio405/value
+    ```
+
+    Or when flash chip operates on 3.3V:
+
+    ```bash
+    echo 1 > /sys/class/gpio/gpio405/value
+    ```
+
+1. Enable SPI Vcc:
+
+    ```bash
+    echo 1 > /sys/class/gpio/gpio406/value
+    ```
+
+1. Enable SPI signals:
+
+    ```bash
+    echo 1 > /sys/class/gpio/gpio404/value
+    ```
+
+1. Flash SPI chip:
+
+    ```bash
+    flashrom -w /path/to/coreboot.rom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000
+    ```
+
+1. When done, change back all states:
+
+    ```bash
+    echo 0 > /sys/class/gpio/gpio405/value
+
+    echo 0 > /sys/class/gpio/gpio406/value
+
+    echo 0 > /sys/class/gpio/gpio404/value
+    ```
