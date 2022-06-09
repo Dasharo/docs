@@ -18,8 +18,8 @@ of your platform.
 
 * [Asus KGPE-D16](variants/asus_kgpe_d16/releases.md)
 <!-- We should avoid using ODM names if we really mean OEM version of product -->
-* [Novacustom NV4X](variants/novacustom_nv4x/releases.md)
-* [Novacustom NS5X](variants/novacustom_ns5x/releases.md)
+* [NovaCustom NV4X](variants/novacustom_nv4x/releases.md)
+* [NovaCustom NS5X](variants/novacustom_ns5x/releases.md)
 * [TUXEDO InfinityBook S 15](variants/tuxedo_ibs15/releases.md)
 * [Dell OptiPlex 7010/9010](variants/dell_optiplex/overview.md)
 * [PC Engines apu series](https://pcengines.github.io/)
