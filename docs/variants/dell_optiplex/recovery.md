@@ -39,6 +39,7 @@ supported for following models
 Connect SOIC-8 Pomona according to [MX25L3206E datasheet](https://www.macronix.com/Lists/Datasheet/Attachments/8616/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf).
 
 <center>
+<<<<<<< HEAD
 ![](../../images/mx25l3206e_pinout.jpg)
 </center>
 
@@ -61,6 +62,30 @@ Connect SOIC-8 Pomona according to [MX25L3206E datasheet](https://www.macronix.c
 
  Numbers 1-4 have to be on one side and numbers 5-8 have to be on the other side
   of the clip.
+=======
+![](../../images/mx25l3206e_pinout.png)
+</center>
+
+<center>
+ ![Pomona SOIC clip](../../images/pomona_clip.jpg)
+</center>
+
+<center>
+
+ | RTE J7                                 | Pomona SOIC clip  |
+ |:--------------------------------------:|:-----------------:|
+ | CS                                     | pin 1 (upside)    |
+ | MISO                                   | pin 2 (upside)    |
+ | GND                                    | pin 4 (upside)    |
+ | VCC                                    | pin 5 (downside)  |
+ | SCLK                                   | pin 7 (downside)  |
+ | MOSI                                   | pin 8 (downside)  |
+
+</center>
+
+Numbers 1-4 have to be on one side and numbers 5-8 have to be on the other side
+of the clip.
+>>>>>>> dell_optiplex/recovery.md: initial procedure for ME recovery
 
 <center>
 ![Clip up](../../images/clip_upside.jpg)
@@ -70,8 +95,13 @@ Connect SOIC-8 Pomona according to [MX25L3206E datasheet](https://www.macronix.c
 ![Clip down](../../images/clip_downside.jpg)
 </center>
 
+<<<<<<< HEAD
 Clip on the SPI_1 chip. Match pin 1 (CS) of the Pomona clip with the first pin of SPI_1 
 chip, marked with a small dot engraved on the chip.
+=======
+Clip on the `SPI_1` chip. Match pin 1 (`CS`) of the Pomona clip with the first
+pin of `SPI_1` chip, marked with a small dot engraved on the chip.
+>>>>>>> dell_optiplex/recovery.md: initial procedure for ME recovery
 
 ![Clip connected](../../images/clip_connected.jpg)
 
@@ -133,3 +163,52 @@ echo 1 > /sys/class/gpio/gpio404/value
 ```bash
 flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX25L3208D"
 ```
+
+## (Optional) Step 7: Flash 8MB (ME) part
+
+When more serious problem with occur, like [broken ME](../faq/#cpu-was-replace-warm-reset-required-loop), it may be necessary to use
+your firmware backup and restore content of 8MB chip.
+
+* For your convenience we provide [8MB image with cleaned ME](https://cloud.3mdeb.com/index.php/s/KHZ2r8osSHWyN9n)
+
+### Step 7a: Connect SOIC-16 Pomona clip between RTE and target
+
+Connect SOIC-16 Pomona according to [MX25L6406E datasheet](https://www.digikey.ch/htmldatasheets/production/980657/0/0/1/MX25L6406E.pdf).
+
+<center>
+![](../../images/mx25l6406e_pinout.png)
+</center>
+
+<center>
+ ![Pomona SOIC16 clip](../../images/soic16_pomona_clip.jpg)
+</center>
+
+<center>
+
+ | RTE J7                                 | Pomona SOIC clip  |
+ |:--------------------------------------:|:-----------------:|
+ | VCC                                    | pin 2 (upside)    |
+ | CS                                     | pin 7 (upside)    |
+ | MISO                                   | pin 8 (upside)    |
+ | SCLK                                   | pin 16 (downside) |
+ | MOSI                                   | pin 15 (downside) |
+ | GND                                    | pin 10 (downside) |
+
+</center>
+
+Numbers 1-8 have to be on one side and numbers 9-16 have to be on the other
+side of the clip.
+
+<center>
+![Clip up](../../images/soic16_clip_upside.jpg)
+</center>
+
+<center>
+![Clip down](../../images/soic16_clip_downside.jpg)
+</center>
+
+Clip on the `SPI_2/SPI_3` chip. Match pin 1 (`HOLD#`) of the Pomona clip with
+the first pin of `SPI_2/SPI_3` chip, marked with a small dot engraved on the
+chip.
+
+![Clip connected](../../images/soic16_clip_connected.jpg)
