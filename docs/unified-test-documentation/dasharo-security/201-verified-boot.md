@@ -221,14 +221,6 @@ after flash firmware with wrong vboot keys.
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -242,13 +234,19 @@ The information about recovery mode should be displayed.
 
 **Test description**
 
+The test checks the functionality of confirming the popup: 
+If we press Enter, we should immediately move to the next stages of booting.
 
 **Test setup**
 
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Disable Secure Boot.
 
 **Test steps**
 
 
 **Expected result**
 
-
+After pressing Enter the DUT should immediately move to the next stages of 
+booting.
