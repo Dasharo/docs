@@ -28,10 +28,54 @@ supported for following models
     src="http://www.youtube.com/embed/TiUSTo-XwPo">
   </iframe>
   </center>
+## Step 2: Find SPI_1, SPI_2/SPI_3
 
-## Step 2: Connect SOIC-8 Pomona clip between RTE and target
+<center>
+![](../../images/dell_optiplex_9010_spi_pin1.jpg)
+</center>
 
-## Step 2: Connect RTE
+## Step 3: Connect SOIC-8 Pomona clip between RTE and target
+
+Connect SOIC-8 Pomona according to [MX25L3206E datasheet](https://www.macronix.com/Lists/Datasheet/Attachments/8616/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf).
+
+<center>
+![](../../images/mx25l3206e_pinout.jpg)
+</center>
+
+<center>
+ ![Pomona SOIC clip](../../images/pomona_clip.jpg)
+</center>
+
+<center>
+
+ | RTE J7                                 | Pomona SOIC clip  |
+ |:--------------------------------------:|:-----------------:|
+ | CS                                     | pin 1 (upside)    |
+ | MISO                                   | pin 2 (upside)    |
+ | GND                                    | pin 4 (upside)    |
+ | VCC                                    | pin 5 (downside)  |
+ | SCLK                                   | pin 7 (downside)  |
+ | MOSI                                   | pin 8 (downside)  |
+
+</center>
+
+ Numbers 1-4 have to be on one side and numbers 5-8 have to be on the other side
+  of the clip.
+
+<center>
+![Clip up](../../images/clip_upside.jpg)
+</center>
+
+<center>
+![Clip down](../../images/clip_downside.jpg)
+</center>
+
+Clip on the SPI_1 chip. Match pin 1 (CS) of the Pomona clip with the first pin of SPI_1 
+chip, marked with a small dot engraved on the chip.
+
+![Clip connected](../../images/clip_connected.jpg)
+
+## Step 4: Connect RTE
 
 <center>
 ![](../../images/rte-boot.jpg)
@@ -60,4 +104,32 @@ supported for following models
     password: meta-rte
     ```
 
+## Step 5: Prepare recovery binary
 
+* Legacy recovery binary [v0.2-rc3](https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23)
+  * Get binary
+  ```bash
+  wget https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23/download -O dasharo_dell_optiplex_9010_v0.2-rc3.rom
+  ```
+  * It has 12MB, so it have to be split
+  ```bash
+  split -b4M dasharo_dell_optiplex_9010_v0.2-rc3.rom
+  ```
+
+## Step 6: Flash 4MB (BIOS) part
+
+```bash
+echo 1 > /sys/class/gpio/gpio405/value
+```
+
+```bash
+echo 1 > /sys/class/gpio/gpio406/value
+```
+
+```bash
+echo 1 > /sys/class/gpio/gpio404/value
+```
+
+```bash
+flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX25L3208D"
+```
