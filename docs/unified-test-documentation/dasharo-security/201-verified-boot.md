@@ -208,13 +208,47 @@ sudo ./cbmem -c | grep -i recovery
 
 **Expected result**
 
-The logs should indicate that vboot has chosen to boot from
-the recovery slot.
 
-Example:
 
-```text
-VB2:vb2_check_recovery() Recovery reason from previous boot: 0x3 / 0x3
-VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
-Recovery requested (1009000e)
-```
+### VBO004.001 Recovery boot popup (firmware)
+
+**Test description**
+
+The test checks whether the information about recovery mode will be displayed 
+after flash firmware with wrong vboot keys.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
+   to the DUT.
+1. Disable Secure Boot.
+
+**Test steps**
+
+
+**Expected result**
+
+The information about recovery mode should be displayed.
+
+### VBO005.001  Recovery boot popup confirmation (firmware)
+
+**Test description**
+
+
+**Test setup**
+
+
+**Test steps**
+
+
+**Expected result**
+
+
