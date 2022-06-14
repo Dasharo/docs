@@ -208,7 +208,15 @@ sudo ./cbmem -c | grep -i recovery
 
 **Expected result**
 
+The logs should indicate that vboot has chosen to boot from the recovery slot.
 
+Example:
+
+```bash
+VB2:vb2_check_recovery() Recovery reason from previous boot: 0x3 / 0x3
+VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
+Recovery requested (1009000e)
+```
 
 ### VBO004.001 Recovery boot popup (firmware)
 
@@ -225,10 +233,11 @@ after flash firmware with wrong vboot keys.
 
 **Test steps**
 
+1. Power On the DUT
 
 **Expected result**
 
-The information about recovery mode should be displayed.
+Popup with some information about recovery mode should be displayed.
 
 ### VBO005.001  Recovery boot popup confirmation (firmware)
 
@@ -245,6 +254,8 @@ If we press Enter, we should immediately move to the next stages of booting.
 
 **Test steps**
 
+1. Power On the DUT
+1. Press `ENTER`
 
 **Expected result**
 
