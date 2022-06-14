@@ -145,10 +145,9 @@ flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX
 
 When more serious problem with occur, like
 [broken ME](../faq/#cpu-was-replace-warm-reset-required-loop),
-it may be necessary to use your firmware backup and restore content of 8MB
-chip.
-
-* For your convenience we provide [8MB image with cleaned ME](https://cloud.3mdeb.com/index.php/s/KHZ2r8osSHWyN9n)
+it may be necessary to use your
+[firmware backup](../initial-deployment/#bios-backup)
+and restore content of 8MB chip.
 
 ### Step 7a: Connect SOIC-16 Pomona clip between RTE and target
 
