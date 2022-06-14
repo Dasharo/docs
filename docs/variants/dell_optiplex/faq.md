@@ -43,4 +43,6 @@ If serial console logs contain:
 ```
 
 It means ME is broken and backup firmware would be required to recover it.
-Please follow [additional recovery step](../recovery/#optional-step-7-flash-8mb-me-part) to fix that problem.
+Please follow
+[additional recovery step](../recovery/#optional-step-7-flash-8mb-me-part)
+to fix that problem.

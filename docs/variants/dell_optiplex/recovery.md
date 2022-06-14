@@ -5,8 +5,8 @@
 ---
 
 Following documentation describe process of recovering hardware from brick
-state with [RTE]() and Dasharo open-source firmware. Following procedure is
-supported for following models
+state with [RTE](../../../transparent-validation/rte/introduction/) and Dasharo
+open-source firmware. Following procedure is supported for following models
 
 <center>
 
@@ -95,8 +95,9 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
     ```
 
     - `-b 115200` sets baudrate
-    - `-D /dev/ttyUSB0` points to USB-UART converter device, it can be different if
-      you already have some devices connected or you use different operating system
+    - `-D /dev/ttyUSB0` points to USB-UART converter device, it can be
+      different if you already have some devices connected or you use different
+      operating system
     - `-o` skip initialization
     - `-C /tmp/minicom.cap` capture serial terminal output, if you will have
       problems with exercises please post this file
@@ -142,8 +143,10 @@ flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX
 
 ## (Optional) Step 7: Flash 8MB (ME) part
 
-When more serious problem with occur, like [broken ME](../faq/#cpu-was-replace-warm-reset-required-loop), it may be necessary to use
-your firmware backup and restore content of 8MB chip.
+When more serious problem with occur, like
+[broken ME](../faq/#cpu-was-replace-warm-reset-required-loop),
+it may be necessary to use your firmware backup and restore content of 8MB
+chip.
 
 * For your convenience we provide [8MB image with cleaned ME](https://cloud.3mdeb.com/index.php/s/KHZ2r8osSHWyN9n)
 
