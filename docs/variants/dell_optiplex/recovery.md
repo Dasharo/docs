@@ -110,18 +110,17 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
 
 ## Step 5: Prepare recovery binary
 
-* Legacy recovery binary [v0.2-rc3](https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23)
-    - Get binary
+* Get v0.2-rc3 binary
 
-  ```bash
-  wget https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23/download -O dasharo_dell_optiplex_9010_v0.2-rc3.rom
-  ```
+```bash
+wget https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23/download -O dasharo_dell_optiplex_9010_v0.2-rc3.rom
+```
 
-    - It has 12MB, so it have to be split
+* It has 12MB, so it have to be split
 
-  ```bash
-  split -b4M dasharo_dell_optiplex_9010_v0.2-rc3.rom
-  ```
+```bash
+split -b4M dasharo_dell_optiplex_9010_v0.2-rc3.rom
+```
 
 ## Step 6: Flash 4MB (BIOS) part
 
