@@ -39,30 +39,6 @@ supported for following models
 Connect SOIC-8 Pomona according to [MX25L3206E datasheet](https://www.macronix.com/Lists/Datasheet/Attachments/8616/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf).
 
 <center>
-<<<<<<< HEAD
-![](../../images/mx25l3206e_pinout.jpg)
-</center>
-
-<center>
- ![Pomona SOIC clip](../../images/pomona_clip.jpg)
-</center>
-
-<center>
-
- | RTE J7                                 | Pomona SOIC clip  |
- |:--------------------------------------:|:-----------------:|
- | CS                                     | pin 1 (upside)    |
- | MISO                                   | pin 2 (upside)    |
- | GND                                    | pin 4 (upside)    |
- | VCC                                    | pin 5 (downside)  |
- | SCLK                                   | pin 7 (downside)  |
- | MOSI                                   | pin 8 (downside)  |
-
-</center>
-
- Numbers 1-4 have to be on one side and numbers 5-8 have to be on the other side
-  of the clip.
-=======
 ![](../../images/mx25l3206e_pinout.png)
 </center>
 
@@ -85,7 +61,6 @@ Connect SOIC-8 Pomona according to [MX25L3206E datasheet](https://www.macronix.c
 
 Numbers 1-4 have to be on one side and numbers 5-8 have to be on the other side
 of the clip.
->>>>>>> dell_optiplex/recovery.md: initial procedure for ME recovery
 
 <center>
 ![Clip up](../../images/clip_upside.jpg)
@@ -95,13 +70,8 @@ of the clip.
 ![Clip down](../../images/clip_downside.jpg)
 </center>
 
-<<<<<<< HEAD
-Clip on the SPI_1 chip. Match pin 1 (CS) of the Pomona clip with the first pin of SPI_1 
-chip, marked with a small dot engraved on the chip.
-=======
 Clip on the `SPI_1` chip. Match pin 1 (`CS`) of the Pomona clip with the first
 pin of `SPI_1` chip, marked with a small dot engraved on the chip.
->>>>>>> dell_optiplex/recovery.md: initial procedure for ME recovery
 
 ![Clip connected](../../images/clip_connected.jpg)
 
@@ -212,3 +182,22 @@ the first pin of `SPI_2/SPI_3` chip, marked with a small dot engraved on the
 chip.
 
 ![Clip connected](../../images/soic16_clip_connected.jpg)
+
+### Step 7b: Flash 8MB (ME) part
+
+```bash
+echo 1 > /sys/class/gpio/gpio405/value
+```
+
+```bash
+echo 1 > /sys/class/gpio/gpio406/value
+```
+
+```bash
+echo 1 > /sys/class/gpio/gpio404/value
+```
+
+```bash
+flashrom -w optiplex_flash_8M_IFD_ME_cleaned.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E"
+```
+
