@@ -89,16 +89,19 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
     - green - TX
     - white - RX
 4. Connect terminal to RTE and read OS version:
+
     ```shell
     sudo minicom -b 115200 -D /dev/ttyUSB0 -o -C /tmp/minicom.cap
     ```
-    * `-b 115200` sets baudrate
-    * `-D /dev/ttyUSB0` points to USB-UART converter device, it can be different if
+
+    - `-b 115200` sets baudrate
+    - `-D /dev/ttyUSB0` points to USB-UART converter device, it can be different if
       you already have some devices connected or you use different operating system
-    * `-o` skip initialization
-    * `-C /tmp/minicom.cap` capture serial terminal output, if you will have
+    - `-o` skip initialization
+    - `-C /tmp/minicom.cap` capture serial terminal output, if you will have
       problems with exercises please post this file
 5. Login using following credentials:
+
     ```shell
     login: root
     password: meta-rte
@@ -107,11 +110,14 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
 ## Step 5: Prepare recovery binary
 
 * Legacy recovery binary [v0.2-rc3](https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23)
-  * Get binary
+    - Get binary
+
   ```bash
   wget https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23/download -O dasharo_dell_optiplex_9010_v0.2-rc3.rom
   ```
-  * It has 12MB, so it have to be split
+
+    - It has 12MB, so it have to be split
+
   ```bash
   split -b4M dasharo_dell_optiplex_9010_v0.2-rc3.rom
   ```
@@ -200,4 +206,3 @@ echo 1 > /sys/class/gpio/gpio404/value
 ```bash
 flashrom -w optiplex_flash_8M_IFD_ME_cleaned.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E"
 ```
-
