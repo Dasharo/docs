@@ -53,6 +53,6 @@ displayed.
 
 Example output:
 
-    ```bash
-    Dasharo (coreboot+UEFI) v1.2.0
-    ```
+```bash
+Dasharo (coreboot+UEFI) v1.2.0
+```
