@@ -19,20 +19,20 @@ proceed with commands below.
 Install build dependencies:
 
 ```bash
-$ sudo apt-get install git build-essential pkg-config libpci-dev udev
+sudo apt-get install git build-essential pkg-config libpci-dev udev
 ```
 
 Obtain source code:
 
 ```bash
-$ git clone https://github.com/Dasharo/flashrom.git -b dasharo-release
-$ cd flashrom
+git clone https://github.com/Dasharo/flashrom.git -b dasharo-release
+cd flashrom
 ```
 
 Build and install flashrom:
 
 ```bash
-$ sudo make install
+sudo make install
 ```
 
 ## Flashing
@@ -48,7 +48,7 @@ firmware from the flash and save it to a file (`dump.rom`), execute the
 following command:
 
 ```bash
-$ sudo flashrom -p internal -r dump.rom
+sudo flashrom -p internal -r dump.rom
 ```
 
 **IMPORTANT!** You will need a second USB storage to keep the dumped firmware
@@ -119,7 +119,7 @@ To flash Dasharo on the platform, execute the following command:
 > flash. For example: `msi_ms7d25_v0.1.0.rom`.
 
 ```bash
-$ sudo flashrom -p internal -w msi_ms7d25_vVERSION.rom --ifd -i bios
+sudo flashrom -p internal -w msi_ms7d25_vVERSION.rom --ifd -i bios
 ```
 
 After the command succeeds, invoke `poweroff` or click the power off in the GUI
@@ -130,7 +130,7 @@ reboot and FSP fails to train the memory. Poweroff is required.
 ### Flashing back vendor firmware
 
 ```bash
-$ sudo flashrom -p internal -w dump.rom --ifd -i bios
+sudo flashrom -p internal -w dump.rom --ifd -i bios
 ```
 
 NOTE: Dasharo version v0.1.0 will not have network connection. Use a different

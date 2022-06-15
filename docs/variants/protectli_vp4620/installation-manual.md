@@ -18,15 +18,15 @@ apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev
 Obtain source code:
 
 ```bash
-$ git clone https://review.coreboot.org/flashrom.git
-$ cd flashrom
+git clone https://review.coreboot.org/flashrom.git
+cd flashrom
 ```
 
 Build flashrom:
 
 ```bash
-$ make
-$ sudo make install
+make
+sudo make install
 ```
 
 ## Reading flash contents

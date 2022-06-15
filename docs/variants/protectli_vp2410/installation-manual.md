@@ -18,14 +18,14 @@ apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev
 Obtain source code:
 
 ```bash
-$ git clone https://github.com/Dasharo/flashrom -b dasharo-release
-$ cd flashrom
+git clone https://github.com/Dasharo/flashrom -b dasharo-release
+cd flashrom
 ```
 
 Build flashrom:
 
 ```bash
-$ sudo make install
+sudo make install
 ```
 
 ## Reading flash contents

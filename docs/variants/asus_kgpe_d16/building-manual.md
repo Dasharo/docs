@@ -7,28 +7,28 @@ To build coreboot image, follow the steps below:
 1. Clone the coreboot repository:
 
     ```bash
-    $ git clone https://review.coreboot.org/coreboot.git
+    git clone https://review.coreboot.org/coreboot.git
     ```
 
 2. Get the submodules:
 
     ```bash
-    $ cd coreboot
-    $ git submodule update --init --recursive --checkout
+    cd coreboot
+    git submodule update --init --recursive --checkout
     ```
 
 3. Checkout Dasharo development branch for KGPE-D16:
 
     ```bash
-    $ git remote add dasharo https://github.com/dasharo/coreboot.git
-    $ git fetch dasharo
-    $ git checkout asus_kgpe-d16/release
+    git remote add dasharo https://github.com/dasharo/coreboot.git
+    git fetch dasharo
+    git checkout asus_kgpe-d16/release
     ```
 
 4. Start docker container:
 
     ```bash
-    $ docker run --rm -it -u $UID \
+    docker run --rm -it -u $UID \
        -v $PWD:/home/coreboot/coreboot \
        -w /home/coreboot/coreboot \
        coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
@@ -37,9 +37,9 @@ To build coreboot image, follow the steps below:
 5. Inside of the container, configure and start the build process:
 
     ```bash
-    (docker)$ cp configs/config.asus_kgpe_d16_<variant> .config
-    (docker)$ make olddefconfig
-    (docker)$ make
+    (docker)cp configs/config.asus_kgpe_d16_<variant> .config
+    (docker)make olddefconfig
+    (docker)make
     ```
 
 This will produce a debug binary placed in `build/coreboot.rom` for a 2MB flash

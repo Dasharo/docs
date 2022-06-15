@@ -6,8 +6,8 @@
    (assuming in the coreboot root directory):
 
     ```bash
-    $ scp build/bootblock.signed.ecc root@<BMC_IP>:/tmp/bootblock.signed.ecc
-    $ scp build/coreboot.rom.signed.ecc root@<BMC_IP>:/tmp/coreboot.rom.signed.ecc
+    scp build/bootblock.signed.ecc root@<BMC_IP>:/tmp/bootblock.signed.ecc
+    scp build/coreboot.rom.signed.ecc root@<BMC_IP>:/tmp/coreboot.rom.signed.ecc
     ```
 
     > If that file is not present, use `coreboot.rom` instead
@@ -16,15 +16,15 @@
    command on BMC:
 
     ```bash
-    # pflash -P HBB -r /tmp/hbb.bin
-    # pflash -P HBI -r /tmp/hbi.bin
+    pflash -P HBB -r /tmp/hbb.bin
+    pflash -P HBI -r /tmp/hbi.bin
     ```
 
 1. Flash the binaries by replacing HBB partition (execute from BMC):
 
     ```bash
-    # pflash -e -P HBB -p /tmp/bootblock.signed.ecc
-    # pflash -e -P HBI -p /tmp/coreboot.rom.signed.ecc
+    pflash -e -P HBB -p /tmp/bootblock.signed.ecc
+    pflash -e -P HBI -p /tmp/coreboot.rom.signed.ecc
     ```
 
     > Again, if that file is not present, use `coreboot.rom` instead
@@ -55,19 +55,19 @@
 1. Copy the Heads binary to the BMC (assuming in the Heads root directory):
 
     ```bash
-    $ scp build/zImage.bundled root@<BMC_IP>:/tmp/zImage.bundled
+    scp build/zImage.bundled root@<BMC_IP>:/tmp/zImage.bundled
     ```
 
 1. Log in to the BMC:
 
     ```bash
-    $ ssh root@<BMC_IP>
+    ssh root@<BMC_IP>
     ```
 
 1. Flash the `BOOTKERNEL` partition with Heads:
 
     ```bash
-    # pflash -e -P BOOTKERNEL -p /tmp/zImage.bundled
+    pflash -e -P BOOTKERNEL -p /tmp/zImage.bundled
     ```
 
     Answer yes to the prompt and wait for the process to finish.

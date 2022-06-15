@@ -25,21 +25,21 @@ descriptor processing. Because of this, we need to build flashrom from source.
 Install build dependencies:
 
 ```bash
-# apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
 ```
 
 Obtain source code:
 
 ```bash
-$ git clone https://review.coreboot.org/flashrom.git
-$ cd flashrom
+git clone https://review.coreboot.org/flashrom.git
+cd flashrom
 ```
 
 Build flashrom:
 
 ```bash
-$ make
-$ sudo make install
+make
+sudo make install
 ```
 
 ## Setup
@@ -59,7 +59,7 @@ Once the clip is connected, connect the programmer to a computer. To test
 if the programmer is detected properly, run the following command:
 
 ```bash
-# flashrom -p ch341a_spi
+flashrom -p ch341a_spi
 ```
 
 The output should contain the following text:
@@ -83,10 +83,10 @@ Before writing anything to the flash, it's important to always make a backup.
 Read the flash 3 times and ensure the backup is correct:
 
 ```bash
-# flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -r backup1.rom
-# flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -r backup2.rom
-# flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -r backup3.rom
-$ md5sum backup1.rom backup2.rom backup3.rom
+flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -r backup1.rom
+flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -r backup2.rom
+flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -r backup3.rom
+md5sum backup1.rom backup2.rom backup3.rom
 ```
 
 The output of the last command should contain 3 identical hashes.
@@ -110,7 +110,7 @@ Once you have the backups saved, proceed to flashing the chip - replace
 `[path]` with the path to the binary you want to write - e.g. `build/coreboot.rom`
 
 ```bash
-# flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -w [path] --ifd -i bios
+flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -w [path] --ifd -i bios
 ```
 
 flashrom will read the flash, erase it, write the new image and verify that
