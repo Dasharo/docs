@@ -8,14 +8,16 @@
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Wired network connection
+1. Wired network connection.
+1. Make yourself familiar with
+    [Bootable over network](../../../common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
 
-### FUD001.001 Firmware update by using Dasharo Tools Suite
+### FDT001.001 Firmware update by using Dasharo Tools Suite
 
 **Test description**
 
-This test verify whether it is possible to update the firmware on the DUT by
-using Dasharo Tools Suite(DTS).
+This test aims to verify whether there is the possibility to update the DUT
+firmware by using Dasharo Tools Suite (DTS).
 
 **Test configuration data**
 
@@ -30,8 +32,8 @@ using Dasharo Tools Suite(DTS).
 
 1. Power on the DUT.
 1. Press `BOOT_MENU_KEY` to enter the boot menu.
-1. In the Boot Menu, select the `iPXE Network Boot` option.
-1. In the Network Boot menu, select the `Dasharo Tools Suite` option.
+1. In the `Boot Menu`, select the `iPXE Network Boot` option.
+1. In the `Network Boot menu`, select the `Dasharo Tools Suite` option.
 1. Login as root (no password required).
 1. Run the following commands to update firmware to the latest version:
 
@@ -46,11 +48,11 @@ using Dasharo Tools Suite(DTS).
 
 **Expected result**
 
-In the setup menu should be displayed information about current firmware
-version.
+In the `Setup menu` information about the current firmware version should be
+displayed.
 
-Example:
+    Example output:
 
-```bash
-Dasharo (coreboot+UEFI) v1.2.0
-```
+    ```bash
+    Dasharo (coreboot+UEFI) v1.2.0
+    ```
