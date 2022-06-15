@@ -51,7 +51,7 @@ firmware by using Dasharo Tools Suite (DTS).
 In the `Setup menu` information about the current firmware version should be
 displayed.
 
-    Example output:
+Example output:
 
     ```bash
     Dasharo (coreboot+UEFI) v1.2.0
