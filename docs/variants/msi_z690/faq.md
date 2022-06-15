@@ -102,7 +102,7 @@ These types of drivers can be divided into `Legacy Option ROMs` and
 Legacy BIOS checks the availability of `Option ROM` and if its signature
 matches, it executes its entry point. This option ROM initializes the
 graphics.The only way to support `Option ROM`  in UEFI is through CSM,
-which we do not have implemented. 
+which we do not have implemented.
 
 `EFI Option ROMs` are nothing more than EFI drivers which have the same form
 as the UEFI files (PE format). UEFI firmware scans the `Option ROM` space of
