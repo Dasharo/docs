@@ -18,13 +18,13 @@ The easiest way to build coreboot is to use the official Docker image.
 Obtain the image:
 
 ```bash
-$ docker pull coreboot/coreboot-sdk:0ad5fbd48d
+docker pull coreboot/coreboot-sdk:0ad5fbd48d
 ```
 
 Obtain coreboot source code for Tuxedo IBS15:
 
 ```bash
-$ git clone https://github.com/Dasharo/coreboot.git
+git clone https://github.com/Dasharo/coreboot.git
 ```
 
 Navigate to the source code directory and checkout to the desired revision:
@@ -34,13 +34,13 @@ Navigate to the source code directory and checkout to the desired revision:
 > - `tuxedo_ibs15/vVERSION` (e.g. `v1.0.0`) for the given release
 
 ```bash
-$ cd coreboot
-$ git checkout REVISION
-$ git submodule update --init --recursive --checkout
+cd coreboot
+git checkout REVISION
+git submodule update --init --recursive --checkout
 ```
 
 ```bash
-$ ./build.sh build
+./build.sh build
 ```
 
 The resulting coreboot image will be placed in

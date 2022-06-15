@@ -108,7 +108,8 @@ switching to open-source firmware.
 * Read content of SPI NOR flash:
 
   ``` console
-  $ sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+  sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+
   flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
   flashrom is free software, get the source code at https://flashrom.org
 
@@ -139,9 +140,9 @@ non-redistributable components from your original BIOS to Dell OptiPlex 9010
 Dasharo binary using [fwdeploy](https://github.com/Dasharo/fwdeploy).
 
 ```bash
-$ wget https://raw.githubusercontent.com/Dasharo/fwdeploy/main/run.sh
-$ chmod +x run.sh
-$ ./run.sh <bios_backup> <dasharo_optiplex_9010_firmware>
+wget https://raw.githubusercontent.com/Dasharo/fwdeploy/main/run.sh
+chmod +x run.sh
+./run.sh <bios_backup> <dasharo_optiplex_9010_firmware>
 ```
 
 After that procedure `<dasharo_optiplex_9010_firmware>` can be flashed on your
@@ -177,7 +178,7 @@ sudo flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware
 for example:
 
 ``` console
-$ sudo flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom
+sudo flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom
 
 flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
 flashrom is free software, get the source code at https://flashrom.org

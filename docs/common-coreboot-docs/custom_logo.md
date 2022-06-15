@@ -26,29 +26,29 @@ and `cbfstool`.
    source):
 
     ```bash
-    $ git clone https://review.coreboot.org/coreboot.git
+    git clone https://review.coreboot.org/coreboot.git
     ```
 
 1. Build and install cbfstool:
 
     ```bash
-    $ cd coreboot/util/cbfstool
-    $ make
-    $ sudo make install
+    cd coreboot/util/cbfstool
+    make
+    sudo make install
     ```
 
 1. Remove the existing logo from the firmware image (replace `[path]` with the
    path to your firmware binary):
 
     ```bash
-    $ cbfstool [path] remove -r BOOTSPLASH -n logo.bmp
+    cbfstool [path] remove -r BOOTSPLASH -n logo.bmp
     ```
 
 1. Add your desired bootlogo to the firmware image (replace `[path]` with the
    path to your firmware image and `[logo]` with the path to the logo):
 
     ```bash
-    $ cbfstool [path] add -f [logo] -r BOOTSPLASH -n logo.bmp -t raw -c lzma
+    cbfstool [path] add -f [logo] -r BOOTSPLASH -n logo.bmp -t raw -c lzma
     ```
 
 1. Now you can flash the updated firmware image as usual. If you're not
@@ -56,7 +56,7 @@ and `cbfstool`.
    needs to be updated. For example:
 
     ```bash
-    $ sudo flashrom -p internal --fmap -i BOOTSPLASH -w [path]
+    sudo flashrom -p internal --fmap -i BOOTSPLASH -w [path]
     ```
 
 ## Build image with custom logo
@@ -67,7 +67,7 @@ The script `build.sh` located in the coreboot directory can be used to replace
 the logo at build time. To replace the logo, run the following command:
 
 ```bash
-$ ./build.sh build -l path/to/logo.bmp
+./build.sh build -l path/to/logo.bmp
 ```
 
 The command will output an updated coreboot image into the directory `artifacts`.

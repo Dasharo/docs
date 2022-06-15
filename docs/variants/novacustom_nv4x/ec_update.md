@@ -14,7 +14,7 @@ To check the current EC firmware version while running stock Insyde BIOS, run
 the following command:
 
 ```bash
-# dmidecode -t 0 | grep `Firmware Revision`
+dmidecode -t 0 | grep `Firmware Revision`
 
 Firmware Revision: 7.5
 ```

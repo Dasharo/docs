@@ -18,13 +18,13 @@ The easiest way to build coreboot is to use the official Docker image.
 Obtain the image:
 
 ```bash
-$ docker pull coreboot/coreboot-sdk:0ad5fbd48d
+docker pull coreboot/coreboot-sdk:0ad5fbd48d
 ```
 
 Clone the coreboot repository:
 
 ```bash
-$ git clone https://review.coreboot.org/coreboot.git
+git clone https://review.coreboot.org/coreboot.git
 ```
 
 Checkout to the desired Dasharo revision:
@@ -34,17 +34,17 @@ Checkout to the desired Dasharo revision:
 > - `novacustom_ns5x_vVERSION` (e.g. `v1.0.0`) for the given release
 
 ```bash
-$ cd coreboot
-$ git remote add dasharo https://github.com/dasharo/coreboot.git
-$ git submodule update --init --recursive --checkout
-$ git fetch dasharo
-$ git checkout REVISION
+cd coreboot
+git remote add dasharo https://github.com/dasharo/coreboot.git
+git submodule update --init --recursive --checkout
+git fetch dasharo
+git checkout REVISION
 ```
 
 Build the firmware:
 
 ```bash
-$ ./build.sh build
+./build.sh build
 ```
 
 The resulting coreboot image will be placed in
