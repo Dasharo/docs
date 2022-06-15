@@ -99,7 +99,7 @@ These types of drivers can be divided into `Legacy Option ROMs` and
 `EFI Option ROMs`.
 
 `Legacy Option ROMs` are only supported on legacy BIOS, such as SeaBIOS.
-Legacy BIOS checks the availability of `Option ROM `and if its signature
+Legacy BIOS checks the availability of `Option ROM` and if its signature
 matches, it executes its entry point. This option ROM initializes the
 graphics.The only way to support `Option ROM`  in UEFI is through CSM,
 which we do not have implemented. 
