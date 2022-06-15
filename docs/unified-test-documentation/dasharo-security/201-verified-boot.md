@@ -189,9 +189,9 @@ should revert to booting from the recovery slot.
 1. Flash coreboot signed with wrong vboot keys by executing the following
 command:
 
-```bash
-flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
-```
+    ```bash
+    flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
+    ```
 
 1. Power off the DUT
 1. Connect to the DUT using the serial port.
@@ -200,21 +200,111 @@ flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the follwing command:
 
-```bash
-sudo ./cbmem -c | grep -i recovery
-```
+    ```bash
+    sudo ./cbmem -c | grep -i recovery
+    ```
 
 1. If booting into the system is impossible, read coreboot loading logs.
 
 **Expected result**
 
-The logs should indicate that vboot has chosen to boot from
-the recovery slot.
+The logs should indicate that vboot has chosen to boot from the recovery slot.
 
 Example:
 
-```text
+```bash
 VB2:vb2_check_recovery() Recovery reason from previous boot: 0x3 / 0x3
 VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
 Recovery requested (1009000e)
 ```
+
+### VBO004.001 Recovery boot popup (firmware)
+
+**Test description**
+
+This test aims to verify whether the recovery mode information is displayed
+as the popup after rebooting the DUT which is flashed with the firmware with
+the wrong vboot keys.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+1. Disable Secure Boot.
+1. Obtain `coreboot binary` signed with wrong vboot keys.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Flash coreboot signed with wrong vboot keys by executing the following
+command:
+
+    ```bash
+    flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
+    ```
+
+1. Reboot the DUT.
+1. Wait for the popup to appear.
+
+**Expected result**
+
+Popup with information about recovery mode should be displayed.
+
+### VBO005.001  Recovery boot popup confirmation (firmware)
+
+**Test description**
+
+This test aims to verify whether the recovery popup might be confirmed which
+allows to proceed to the next booting stages.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+1. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+1. Disable Secure Boot.
+1. Obtain `coreboot binary` signed with wrong vboot keys.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Flash coreboot signed with wrong vboot keys by executing the following
+command:
+
+    ```bash
+    flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
+    ```
+
+1. Reboot the DUT.
+1. Wait for the popup to appear.
+1. Press `ENTER`.
+
+**Expected result**
+
+After pressing `ENTER` the DUT should immediately move to the next stages of
+booting.
