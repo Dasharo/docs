@@ -222,7 +222,7 @@ Recovery requested (1009000e)
 
 **Test description**
 
-The test checks whether the information about recovery mode will be displayed 
+The test checks whether the information about recovery mode will be displayed
 after flash firmware with wrong vboot keys.
 
 **Test configuration data**
@@ -266,7 +266,7 @@ Popup with some informations about recovery mode should be displayed.
 
 **Test description**
 
-The test checks the functionality of confirming the popup: 
+The test checks the functionality of confirming the popup:
 If we press Enter, we should immediately move to the next stages of booting.
 
 **Test configuration data**
@@ -305,5 +305,5 @@ flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 
 **Expected result**
 
-After pressing Enter the DUT should immediately move to the next stages of 
+After pressing Enter the DUT should immediately move to the next stages of
 booting.
