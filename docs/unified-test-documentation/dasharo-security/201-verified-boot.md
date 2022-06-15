@@ -218,12 +218,13 @@ VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
 Recovery requested (1009000e)
 ```
 
-### VBO004.001 Recovery boot popup
+### VBO004.001 Recovery boot popup (firmware)
 
 **Test description**
 
-The test checks whether the information about recovery mode will be displayed
-after flash firmware with wrong vboot keys.
+This test aims to verify whether the recovery mode information is displayed
+as the popup after rebooting the DUT which is flashed with the firmware with
+the wrong vboot keys.
 
 **Test configuration data**
 
@@ -260,14 +261,14 @@ flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 
 **Expected result**
 
-Popup with some informations about recovery mode should be displayed.
+Popup with information about recovery mode should be displayed.
 
-### VBO005.001  Recovery boot popup confirmation
+### VBO005.001  Recovery boot popup confirmation (firmware)
 
 **Test description**
 
-The test checks the functionality of confirming the popup:
-If we press Enter, we should immediately move to the next stages of booting.
+This test aims to verify whether the recovery popup might be confirmed which
+allows to proceed to the next booting stages.
 
 **Test configuration data**
 
@@ -301,9 +302,9 @@ flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
 
 1. Reboot the DUT.
 1. Wait for the popup to appear.
-1. Press `ENTER`
+1. Press `ENTER`.
 
 **Expected result**
 
-After pressing Enter the DUT should immediately move to the next stages of
+After pressing `ENTER` the DUT should immediately move to the next stages of
 booting.
