@@ -30,6 +30,8 @@ subjected from before the release of the new binary.
 | 19.  | [Docking station USB devices][DUB]                     | DUB           | All                                  |
 | 20.  | [Docking station Audio][DAU]                           | DAU           | All                                  |
 | 21.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
+| 22.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
+| 23.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -52,6 +54,8 @@ subjected from before the release of the new binary.
 [DUB]: ../../unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
 [DAU]: ../../unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
 [DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
+[FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
+[FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
 
 ## Module: Dasharo security
 
