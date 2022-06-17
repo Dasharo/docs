@@ -12,34 +12,37 @@ Requirements:
 - Pomona SOIC-8 clip with ribbon connecting cable
 - Computer running Linux with flashrom
 
-## Pre-setup
+## Preparation
 
 Ensure that the EC is running updated firmware. Follow the steps outlined in
 [EC firmware update](../ec_update)
 
-## Build flashrom
+Install Flashrom from your distribution's repositories.
 
-Currently, the latest flashrom release lacks support for Tiger Lake-U flash
-descriptor processing. Because of this, we need to build flashrom from source.
-
-Install build dependencies:
+For Ubuntu, Debian and derivatives:
 
 ```bash
-apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+sudo apt install flashrom
 ```
 
-Obtain source code:
+For Fedora:
 
 ```bash
-git clone https://review.coreboot.org/flashrom.git
-cd flashrom
+sudo dnf install flashrom
 ```
 
-Build flashrom:
+For Arch Linux:
 
 ```bash
-make
-sudo make install
+sudo pacman -S flashrom
+```
+
+Create a file `layout.txt` with the following contents:
+
+```bash
+00000000:00000fff fd
+00500000:00ffffff bios
+00001000:004fffff me
 ```
 
 ## Setup
@@ -110,7 +113,7 @@ Once you have the backups saved, proceed to flashing the chip - replace
 `[path]` with the path to the binary you want to write - e.g. `build/coreboot.rom`
 
 ```bash
-flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -w [path] --ifd -i bios
+flashrom -p ch341a_spi -c GD25B128B/GD25Q128B -w [path] -l layout.txt -i bios
 ```
 
 flashrom will read the flash, erase it, write the new image and verify that
