@@ -11,7 +11,7 @@ Although we do not own that one and cannot give promises without testing, we
 believe that it should work the same as the `MSI PRO Z690-A WIFI DDR4`. This is
 almost the same board, just with no WiFi card.
 
-## Can i safely try this on my board?
+## Can I safely try this on my board?
 
 If you are afraid of bricking the board and have no means of
 [recovering from failed installation](../recovery), we **do not recommend**
@@ -89,3 +89,29 @@ ones in Dasharo firmware (provied by the
 Currently, Dasharo firmware picks the highest standard SPD Profile, no support
 for XMP ones. This means that on the Kingston modules it is actually working at
 2400 MHz, but it is expected to work all the way to 3200 MHz.
+
+## Why my GPU doesn't work on `MSI PRO Z690-A DDR4` ?
+
+Due to the fact, that there's no possibility to insert all available GPU
+drivers into the firmware, the solution in the form of the `Option ROM` is in
+use. `Option ROMs` are the drivers flashed in the GPUs non-volatile memory.
+These types of drivers can be divided into `Legacy Option ROMs` and
+`EFI Option ROMs`.
+
+`Legacy Option ROMs` are only supported on legacy BIOS, such as SeaBIOS.
+Legacy BIOS checks the availability of `Option ROM` and if its signature
+matches, it executes its entry point. This option ROM initializes the
+graphics. The only way to support `Option ROM` in UEFI is through CSM,
+which we do not have implemented.
+
+`EFI Option ROMs` are nothing more than EFI drivers which have the same form
+as the UEFI files (PE format). UEFI firmware scans the `Option ROM` space of
+the graphics card and if it finds a potential `EFI Option ROM` with PE
+signature, it executes the file. This option ROM initializes the
+graphics.
+
+Considering the above, the firmware might have a problem with initializing
+older graphics cards - UEFI standard appeared about 15 years ago.
+
+The problem might also be caused by an enabled `Secure boot` - because there is
+no certainty that `EFI Option ROM` is signed correctly.
