@@ -82,8 +82,25 @@ correctly and can be accessed from the operating system
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open `Camera` app and note the result.
+1. Run PowerShell as administrator.
+1. Execute below command and note the result:
+
+    ```powershell
+    Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' }
+    ```
 
 **Expected result**
 
-1. In the `Camera` app, an image from the integrated USB camera should be shown.
+1. Output should contain `Chicony USB2.0 Camera`
+1. Example output:
+
+    ```powershell
+    Status     Class           FriendlyName
+    ------     -----           ------------
+    OK         Camera          Chicony USB2.0 Camera
+    OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
+    OK         Camera          IR Camera
+    OK         USB             USB Root Hub (USB 3.0)
+    OK         USB             USB Root Hub (USB 3.0)
+    OK         USB             USB Composite Device
+    ```
