@@ -76,7 +76,7 @@ and can be detected from the operating system.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and execute following command:
 
-```bash
+```powershell
 Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
 ```
 
@@ -169,14 +169,45 @@ correctly and can be used from within the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Locate in the bottom right corner of the screen `Internet access`
-    icon and click it.
-1. Enable Wi-Fi and note the result.
+1. Open PowerShell and execute following command:
+
+```powershell
+netsh wlan show network
+```
+
+1. Note the result.
 
 **Expected result**
 
-After enabling Wi-Fi available networks should appear
-in the `Internet access` menu.
+1. Output should contain `3mdeb_abr` and/or `3mdeb_abr_5GHz`.
+1. Example output:
+
+    ```powershell
+    SSID 1 : 3mdeb_abr
+        Network type            : Infrastructure
+        Authentication          : WPA2-Personal
+        Encryption              : CCMP 
+    
+    SSID 2 : Sonoff1 192.168.4.208 Hotspot
+        Network type            : Infrastructure
+        Authentication          : WPA2-Personal
+        Encryption              : CCMP 
+    
+    SSID 3 : Orange_Swiatlowod_F1A0
+        Network type            : Infrastructure
+        Authentication          : WPA2-Personal
+        Encryption              : CCMP
+    
+    SSID 4 : Sonoff1 Fallback Hotspot
+        Network type            : Infrastructure
+        Authentication          : WPA2-Personal
+        Encryption              : CCMP
+    
+    SSID 5 : DIRECT-KRM288x Series
+        Network type            : Infrastructure
+        Authentication          : WPA2-Personal
+        Encryption              : CCMP
+    ```
 
 ### MWL003.001 Bluetooth scanning (Ubuntu 20.04)
 
