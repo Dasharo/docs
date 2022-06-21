@@ -91,8 +91,7 @@ correctly and can be accessed from the operating system
 
 **Expected result**
 
-1. Output should contain `Chicony USB2.0 Camera`
-1. Example output:
+1. Output should contain `Chicony USB2.0 Camera`. Example output:
 
     ```powershell
     Status     Class           FriendlyName
