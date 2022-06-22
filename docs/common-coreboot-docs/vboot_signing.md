@@ -71,7 +71,7 @@ script.
 
 The successful output should look like this:
 
-```
+```txt
 No dev firmware keyblock/datakey found. Reusing normal keys.
  - import root_key from keys//root_key.vbpubk: success
  - import recovery_key from keys//recovery_key.vbpubk: success
