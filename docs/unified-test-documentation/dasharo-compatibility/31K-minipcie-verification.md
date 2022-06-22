@@ -182,32 +182,32 @@ netsh wlan show network
 1. Output should contain `3mdeb_abr` and/or `3mdeb_abr_5GHz`.
 1. Example output:
 
-    ```powershell
-    SSID 1 : 3mdeb_abr
-        Network type            : Infrastructure
-        Authentication          : WPA2-Personal
-        Encryption              : CCMP
-    
-    SSID 2 : Sonoff1 192.168.4.208 Hotspot
-        Network type            : Infrastructure
-        Authentication          : WPA2-Personal
-        Encryption              : CCMP
-    
-    SSID 3 : Orange_Swiatlowod_F1A0
-        Network type            : Infrastructure
-        Authentication          : WPA2-Personal
-        Encryption              : CCMP
-    
-    SSID 4 : Sonoff1 Fallback Hotspot
-        Network type            : Infrastructure
-        Authentication          : WPA2-Personal
-        Encryption              : CCMP
-    
-    SSID 5 : DIRECT-KRM288x Series
-        Network type            : Infrastructure
-        Authentication          : WPA2-Personal
-        Encryption              : CCMP
-    ```
+```powershell
+SSID 1 : 3mdeb_abr
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+
+SSID 2 : Sonoff1 192.168.4.208 Hotspot
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+
+SSID 3 : Orange_Swiatlowod_F1A0
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+
+SSID 4 : Sonoff1 Fallback Hotspot
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+
+SSID 5 : DIRECT-KRM288x Series
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+```
 
 ### MWL003.001 Bluetooth scanning (Ubuntu 20.04)
 
