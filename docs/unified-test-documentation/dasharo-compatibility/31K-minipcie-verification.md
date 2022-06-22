@@ -186,12 +186,12 @@ netsh wlan show network
     SSID 1 : 3mdeb_abr
         Network type            : Infrastructure
         Authentication          : WPA2-Personal
-        Encryption              : CCMP 
+        Encryption              : CCMP
     
     SSID 2 : Sonoff1 192.168.4.208 Hotspot
         Network type            : Infrastructure
         Authentication          : WPA2-Personal
-        Encryption              : CCMP 
+        Encryption              : CCMP
     
     SSID 3 : Orange_Swiatlowod_F1A0
         Network type            : Infrastructure
