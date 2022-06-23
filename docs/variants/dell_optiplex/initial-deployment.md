@@ -68,40 +68,16 @@ active. Press F1 to proceed and boot to your Linux system.
 
 ## OS booting
 
-For simplicity we using network boot [netboot.xyz from USB](https://netboot.xyz/docs/booting/usb).
+For simplicity we using network booted 
+[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite#bootable-usb-stick).
 
-Boot system from USB:
-
-* From section `Tools` choose `Utilities (64-bit)`
-* Then from section `netboot.xyz tools` choose `Kernel cmdline params`
-* You should see prompt `Enter kernel cmdline parameters`
-* Type: `iomem=relaxed` and ++enter++
-* Use ++esc++ to get back to netboot.xyz main menu
-* From section `Distributions` choose `Live CDs`, then `Debian`, `Debian Live
-  11 (bullseye)` and `Debian 11 (Core)`
-
-**NOTE**: If trustworthiness of that solution is in question please note
-netboot.xyz can be [self-hosted](https://netboot.xyz/docs/selfhosting).
-
-## Flashrom installation
-
-* Install flashrom v1.1 or newer with your distribution's package manager if
-  you don't have it installed yet. If your distro doesn't provide flashrom or
-  provides an outdated one, you can build it yourself using
-  [this instruction](https://www.flashrom.org/Downloads).
-* Or compile recent version of flashrom:
-
-  ``` console
-  sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
-  git clone https://github.com/flashrom/flashrom.git
-  cd flashrom
-  sudo make install
-  ```
+* Attach a wired network cable to the device's Ethernet port.
+* Boot from USB and enter shell.
 
 ## BIOS backup
 
 <!-- BIOS backup section is very generic and should be treated in such way This
-section even can be replaced with Dasharo Reference OS, fwupd or other tools
+section even can be replaced with Dasharo Tools Suite, fwupd or other tools
 that can simplify the operation for the user -->
 
 It is always good idea to backup original BIOS of your hardware, before

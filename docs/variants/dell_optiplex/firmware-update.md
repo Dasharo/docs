@@ -7,22 +7,32 @@ update.
 
 ## OS booting
 
-For simplicity we using network boot [netboot.xyz from USB](https://netboot.xyz/docs/booting/usb).
+For simplicity we using network booted 
+[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
-Boot system from USB:
+### Dasharo (coreboot+SeaBIOS) update
 
-* From section `Tools` choose `Utilities (64-bit)`
-* Then from section `netboot.xyz tools` choose `Kernel cmdline params`
-* You should see prompt `Enter kernel cmdline parameters`
-* Type: `iomem=relaxed` and ++enter++
-* Use ++esc++ to get back to netboot.xyz main menu
-* From section `Distributions` choose `Live CDs`, then `Debian`, `Debian Live
-  11 (bullseye)` and `Debian 11 (Core)`
+* Attach a wired network cable to the device's Ethernet port
+* Power on the device, holding down the Boot Menu entry key (ESC)
+* In the Boot Menu, select the `iPXE` option
+* In the Network Boot menu, select the `ipxe shell` option
+* Obtain address through DHCP or configure network connection in other way:
+```console
+dhcp net0
+```
 
-**NOTE**: If trustworthiness of that solution is in question please note
-netboot.xyz can be [self-hosted](https://netboot.xyz/docs/selfhosting).
+* Chainload Dasharo Tools Suite:
+```console
+chain http://boot.3mdeb.com/dts.ipxe
+```
 
-## Get Dasharo
+* Login as `root` (no password)
+* Download the Dell OptiPlex 7010/9010 Dasharo from [release
+  section](releases.md#binaries) or [build from source](building-manual.md).
+* Flash it using:
+```console
+sudo flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
+```
 
-Download the Dell OptiPlex 7010/9010 Dasharo from [release section](releases.md#binaries)
-or [build from source](building-manual.md).
+Please note that not using `-i bios -i me` may lead to 
+[this issue](faq/#cpu-was-replace-warm-reset-required-loop).

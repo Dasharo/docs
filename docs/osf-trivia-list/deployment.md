@@ -10,7 +10,22 @@ Github](https://github.com/Dasharo/dasharo-issues).
 
 ## Flashrom
 
-Following sections explain how to deal with most common `flashrom` errors.
+Following sections explain how to deal with most common `flashrom` problem.
+
+### How to install flashrom ?
+
+* Install flashrom v1.1 or newer with your distribution's package manager if
+  you don't have it installed yet. If your distro doesn't provide flashrom or
+  provides an outdated one, you can build it yourself using
+  [this instruction](https://www.flashrom.org/Downloads).
+* Or compile recent version of flashrom:
+
+  ``` console
+  sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
+  git clone https://github.com/flashrom/flashrom.git
+  cd flashrom
+  sudo make install
+  ```
 
 ### `Could not get I/O privileges (Operation not permitted)`
 
