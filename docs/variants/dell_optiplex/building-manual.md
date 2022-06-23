@@ -47,7 +47,7 @@ To build coreboot image, follow the steps below:
     ```
 
     * `VERSION` should be replaced according to version you building:
-      - `v0.1.0` - `2021-09-23_b0d87f753c`
+      - `v0.1.0` - `2022-04-04_9a8d0a03db`
 
 5. Inside of the container, configure and start the build process:
 
