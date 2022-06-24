@@ -328,15 +328,15 @@ command:
 1. If number of cores is higher than number of sockets then DUT has multi-core
 support. Example outputs:
 
-    - 1st command:
+- 1st command:
 
-    ```powershell
-    NumberOfCores  
-    4
-    ```
+```powershell
+NumberOfCores  
+4
+```
 
-    - 2nd command:
+- 2nd command:
 
-    ```powershell
-    1
-    ```
+```powershell
+1
+```
