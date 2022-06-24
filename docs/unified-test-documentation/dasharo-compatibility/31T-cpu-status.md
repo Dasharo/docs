@@ -84,7 +84,9 @@ Check whether all declared for the DUT cache levels are enabled.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-        getconf -a | grep CACHE
+    ```bash
+    getconf -a | grep CACHE
+    ```
 
 1. Note the result.
 
@@ -93,21 +95,23 @@ Check whether all declared for the DUT cache levels are enabled.
 The utput of the command should contain information about all cache levels,
 their size and association. Example output:
 
-        LEVEL1_ICACHE_SIZE                 32768
-        LEVEL1_ICACHE_ASSOC                32
-        LEVEL1_ICACHE_LINESIZE             128
-        LEVEL1_DCACHE_SIZE                 32768
-        LEVEL1_DCACHE_ASSOC                32
-        LEVEL1_DCACHE_LINESIZE             128
-        LEVEL2_CACHE_SIZE                  524288
-        LEVEL2_CACHE_ASSOC                 2048
-        LEVEL2_CACHE_LINESIZE              32
-        LEVEL3_CACHE_SIZE                  10485760
-        LEVEL3_CACHE_ASSOC                 40960
-        LEVEL3_CACHE_LINESIZE              32
-        LEVEL4_CACHE_SIZE                  0
-        LEVEL4_CACHE_ASSOC                 0
-        LEVEL4_CACHE_LINESIZE              0
+```bash
+LEVEL1_ICACHE_SIZE                 32768
+LEVEL1_ICACHE_ASSOC                32
+LEVEL1_ICACHE_LINESIZE             128
+LEVEL1_DCACHE_SIZE                 32768
+LEVEL1_DCACHE_ASSOC                32
+LEVEL1_DCACHE_LINESIZE             128
+LEVEL2_CACHE_SIZE                  524288
+LEVEL2_CACHE_ASSOC                 2048
+LEVEL2_CACHE_LINESIZE              32
+LEVEL3_CACHE_SIZE                  10485760
+LEVEL3_CACHE_ASSOC                 40960
+LEVEL3_CACHE_LINESIZE              32
+LEVEL4_CACHE_SIZE                  0
+LEVEL4_CACHE_ASSOC                 0
+LEVEL4_CACHE_LINESIZE              0
+```
 
 ### CPU002.002 CPU cache enabled (Windows 11)
 
@@ -130,7 +134,9 @@ Check whether all declared for the DUT cache levels are enabled.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Run PowerShell as an administrator and execute command:
 
-        Get-Wmiobject -class win32_cachememory | fl Purpose, CacheType, InstalledSize
+    ```powershell
+    Get-Wmiobject -class win32_cachememory | fl Purpose, CacheType, InstalledSize
+    ```
 
 1. Note the result.
 
@@ -139,21 +145,23 @@ Check whether all declared for the DUT cache levels are enabled.
 The output of the command should contain information about all cache levels,
 their size and association. Example output:
 
-        Purpose       : CACHE1
-        CacheType     : 4
-        InstalledSize : 192
-        
-        Purpose       : CACHE1
-        CacheType     : 3
-        InstalledSize : 128
-        
-        Purpose       : CACHE2
-        CacheType     : 5
-        InstalledSize : 5120
-        
-        Purpose       : CACHE3
-        CacheType     : 5
-        InstalledSize : 8192
+```powershell
+Purpose       : CACHE1
+CacheType     : 4
+InstalledSize : 192
+
+Purpose       : CACHE1
+CacheType     : 3
+InstalledSize : 128
+
+Purpose       : CACHE2
+CacheType     : 5
+InstalledSize : 5120
+
+Purpose       : CACHE3
+CacheType     : 5
+InstalledSize : 8192
+```
 
 ### CPU003.001 Multiple CPU support
 
@@ -176,7 +184,9 @@ Check whether the DUT has multiple CPU support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-        lscpu
+    ```bash
+    lscpu
+    ```
 
 1. Note the result.
 
@@ -186,14 +196,16 @@ The output of the command should contain basic information about the CPU,
 including the number of the `CPU (s)`. If `CPU(s)` are more than 1, the DUT
 has multiple CPU support. Example results:
 
-        Architecture:                    ppc64le
-        Byte Order:                      Little Endian
-        CPU(s):                          32
-        On-line CPU(s) list:             0-31
-        Thread(s) per core:              4
-        Core(s) per socket:              4
-        Socket(s):                       2
-        NUMA node(s):                    2
+```bash
+Architecture:                    ppc64le
+Byte Order:                      Little Endian
+CPU(s):                          32
+On-line CPU(s) list:             0-31
+Thread(s) per core:              4
+Core(s) per socket:              4
+Socket(s):                       2
+NUMA node(s):                    2
+```
 
 ### CPU003.002 Multiple CPU support (Windows 11)
 
@@ -216,7 +228,9 @@ Check whether the DUT has multiple CPU support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Run PowerShell as an administrator and execute command:
 
-        WMIC CPU Get NumberOfCores
+    ```powershell
+    WMIC CPU Get NumberOfCores
+    ```
 
 1. Note the result.
 
@@ -225,8 +239,10 @@ Check whether the DUT has multiple CPU support.
 The output of the command should contain information about the CPUs.
 Example results:
 
-        NumberOfCores  
-        4
+```powershell
+NumberOfCores  
+4
+```
 
 ### CPU004.001 Multiple-core support
 
@@ -249,7 +265,9 @@ Check whether the DUT has multi-core support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-        lscpu
+    ```bash
+    lscpu
+    ```
 
 1. Note the result.
 
@@ -259,14 +277,16 @@ The output of the command should contain basic information about the CPU,
 including the number of the `Core(s) per socket`. If `Core(s) per socket`
 are more than 1, the DUT has multi-core support. Example results:
 
-        Architecture:                    ppc64le
-        Byte Order:                      Little Endian
-        CPU(s):                          32
-        On-line CPU(s) list:             0-31
-        Thread(s) per core:              4
-        Core(s) per socket:              4
-        Socket(s):                       2
-        NUMA node(s):                    2
+```bash
+Architecture:                    ppc64le
+Byte Order:                      Little Endian
+CPU(s):                          32
+On-line CPU(s) list:             0-31
+Thread(s) per core:              4
+Core(s) per socket:              4
+Socket(s):                       2
+NUMA node(s):                    2
+```
 
 ### CPU004.002 Multiple-core support (Windows 11)
 
@@ -290,12 +310,16 @@ Check whether the DUT has multi-core support.
 1. Run PowerShell as an administrator and check total CPU cores by executing
 command:
 
-        WMIC CPU Get NumberOfCores
+    ```powershell
+    WMIC CPU Get NumberOfCores
+    ```
 
 1. Note the result.
 1. Check total CPU socket number by executing command:
 
-        (Get-CimInstance -ClassName Win32_ComputerSystem).NumberOfProcessors
+    ```powershell
+    (Get-CimInstance -ClassName Win32_ComputerSystem).NumberOfProcessors
+    ```
 
 1. Note the result.
 
@@ -306,9 +330,13 @@ support. Example outputs:
 
     - 1st command:
 
-        NumberOfCores  
-        4
+    ```powershell
+    NumberOfCores  
+    4
+    ```
 
     - 2nd command:
 
-        1
+    ```powershell
+    1
+    ```
