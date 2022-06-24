@@ -14,6 +14,78 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
 
+## v1.2.1 - 2022-06-23
+
+### Fixed
+
+- cbfstool logo replacement not working on NV4x v1.2.0
+
+### Known issues
+
+- [Custom fan curve after suspend](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/45)
+- [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/19)
+- [USB4 Root Device Router device displays an error in Windows 11 Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/18)
+- [Windows 10 SD card reader driver needs manual installation on NV41MB](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/16)
+- [Low level interfering crackling/popping of the speakers while playing no sound](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/13)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
+
+### Binaries
+
+[novacustom_nv4x_v1.2.1.rom][v1.2.1_rom]{ .md-button }
+[sha256][v1.2.1_sha]{ .md-button }
+[sha256.sig][v1.2.1_sig]{ .md-button }
+
+See how to verify signatures on [this video](https://asciinema.org/a/433461)
+
+[v1.2.1_rom]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.1/novacustom_nv4x_v1.2.1.rom
+[v1.2.1_sha]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.1/novacustom_nv4x_v1.2.1.rom.sha256
+[v1.2.1_sig]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.1/novacustom_nv4x_v1.2.1.rom.sha256.sig
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on e3e965b1 revision baada726](https://github.com/Dasharo/coreboot/tree/baada726)
+- [edk2 based on 2020.03.17 revision cad23725](https://github.com/Dasharo/edk2/tree/cad23725)
+- [Blobs based on v1.0 revision 5b0453b6](https://gitlab.com/novacustom/blobs/-/tree/5b0453b6)
+
+## v1.2.0 - 2022-06-10
+
+### Added
+
+- Renamed device to NovaCustom NV4x
+
+### Fixed
+
+- Wake from suspend doesn't work with certain SSDs
+- CVE-2022-29264 SMM loader vulnerability
+- Fix BIOS vendor name in SMBIOS
+
+### Known issues
+
+- [Custom fan curve after suspend](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/45)
+- [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/19)
+- [USB4 Root Device Router device displays an error in Windows 11 Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/18)
+- [Windows 10 SD card reader driver needs manual installation on NV41MB](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/16)
+- [Low level interfering crackling/popping of the speakers while playing no sound](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/13)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
+
+### Binaries
+
+[novacustom_nv4x_v1.2.0.rom][v1.2.0_rom]{ .md-button }
+[sha256][v1.2.0_sha]{ .md-button }
+[sha256.sig][v1.2.0_sig]{ .md-button }
+
+[v1.2.0_rom]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.0/novacustom_nv4x_v1.2.0.rom
+[v1.2.0_sha]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.0/novacustom_nv4x_v1.2.0.rom.sha256
+[v1.2.0_sig]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.0/novacustom_nv4x_v1.2.0.rom.sha256.sig
+
+See how to verify signatures on [this video](https://asciinema.org/a/433461)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on e3e965b1 revision baada726](https://github.com/Dasharo/coreboot/tree/baada726)
+- [edk2 based on 2020.03.17 revision cad23725](https://github.com/Dasharo/edk2/tree/cad23725)
+- [Blobs based on v1.0 revision 5b0453b6](https://gitlab.com/novacustom/blobs/-/tree/5b0453b6)
+
 ## v1.1.0 - 2022-03-23
 
 ### Added
