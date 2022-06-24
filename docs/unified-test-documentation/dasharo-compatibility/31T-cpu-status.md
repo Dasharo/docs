@@ -84,9 +84,9 @@ Check whether all declared for the DUT cache levels are enabled.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-```bash
-getconf -a | grep CACHE
-```
+    ```bash
+    getconf -a | grep CACHE
+    ```
 
 1. Note the result.
 
@@ -134,9 +134,9 @@ Check whether all declared for the DUT cache levels are enabled.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Run PowerShell as an administrator and execute command:
 
-```powershell
-Get-Wmiobject -class win32_cachememory | fl Purpose, CacheType, InstalledSize
-```
+    ```powershell
+    Get-Wmiobject -class win32_cachememory | fl Purpose, CacheType, InstalledSize
+    ```
 
 1. Note the result.
 
@@ -184,9 +184,9 @@ Check whether the DUT has multiple CPU support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-```bash
-lscpu
-```
+    ```bash
+    lscpu
+    ```
 
 1. Note the result.
 
@@ -228,9 +228,9 @@ Check whether the DUT has multiple CPU support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Run PowerShell as an administrator and execute command:
 
-```powershell
-WMIC CPU Get NumberOfCores
-```
+    ```powershell
+    WMIC CPU Get NumberOfCores
+    ```
 
 1. Note the result.
 
@@ -265,9 +265,9 @@ Check whether the DUT has multi-core support.
 1. Wait for the `OPERATING_SYSTEM` to boot.
 1. Execute below command in terminal:
 
-```bash
-lscpu
-```
+    ```bash
+    lscpu
+    ```
 
 1. Note the result.
 
@@ -310,16 +310,16 @@ Check whether the DUT has multi-core support.
 1. Run PowerShell as an administrator and check total CPU cores by executing
 command:
 
-```powershell
-WMIC CPU Get NumberOfCores
-```
+    ```powershell
+    WMIC CPU Get NumberOfCores
+    ```
 
 1. Note the result.
 1. Check total CPU socket number by executing command:
 
-```powershell
-(Get-CimInstance -ClassName Win32_ComputerSystem).NumberOfProcessors
-```
+    ```powershell
+    (Get-CimInstance -ClassName Win32_ComputerSystem).NumberOfProcessors
+    ```
 
 1. Note the result.
 
