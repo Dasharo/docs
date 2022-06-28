@@ -57,7 +57,7 @@ vboot keys.
 ## Signing image without rebuilding
 
 Be sure you have generated the keys as in [Generate keys](#generating-keys)
-section. Assuming you have generated keys to the `k
+section. Assuming you have generated keys to the `keys/` directory:
 
 ```bash
 ./3rdparty/vboot/scripts/image_signing/sign_firmware.sh \
