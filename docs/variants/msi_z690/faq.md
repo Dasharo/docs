@@ -1,5 +1,10 @@
 # FAQ
 
+## Why MSI Z690-A WIFI DDR4 was chosen for Dasharo ?
+
+Please read [this extensive analysis][msi_port_analysis] contributed to Intel
+Reddit.
+
 ## Will this work on my `MSI PRO Z690-A WIFI DDR5` or `MSI PRO Z690-A DDR5` ?
 
 Not yet. The build is configured for the DDR4 only. It might be extended with
@@ -115,3 +120,5 @@ older graphics cards - UEFI standard appeared about 15 years ago.
 
 The problem might also be caused by an enabled `Secure boot` - because there is
 no certainty that `EFI Option ROM` is signed correctly.
+
+[msi_port_analysis]: https://www.reddit.com/r/intel/comments/subaro/how_many_people_are_interesed_in_seeing_coreboot/
