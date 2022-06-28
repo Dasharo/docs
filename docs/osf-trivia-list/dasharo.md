@@ -141,7 +141,29 @@ level of support always would be available to community.
 - We provide ready to use binaries with GPG based signing scheme that improve
 verification where firmware coming from.
 
+<!--
 ## Why Dasharo Team is against moving code to branches in coreboot?
+-->
+
+## Why there is no AMD mainboard supported in Dasharo ?
+
+Unfortunately, from the perspective of a small open-source firmware vendor, it
+isn't easy to work with AMD. Despite our experience with AMD SoCs since 2016,
+we could not yet deliver Dasharo for a modern (Zen core-based) platform. We're
+trying hard, but Intel has a better ecosystem for open-source firmware
+development.
+
+The reason for that state may be because AMD is in a rush, and they are
+understaffed in all areas compared to their success. We've been doing AMD
+open-source firmware development for 6+ years, including our yearly reports of
+open-source firmware status at FOSDEM, but the level of support for small
+volume firmware development companies is not yet at the level of competition.
+
+AGESA distribution was a problem in the past, but we solved that, and Dasharo
+for AMD is possible. Because Dynamic Root of Trust can work without blob, we
+favor AMD, but we can't do anything without a partner who can sponsor the
+development effort. We are on the market of open-source firmware vendors, not
+hardware vendors.
 
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
 [dtsos]: https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue+is%3Aopen+label%3ADasharoToolsSuite
