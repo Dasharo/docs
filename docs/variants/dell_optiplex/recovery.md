@@ -1,6 +1,6 @@
 # Recovery
 
----------------------
+---
 
 ## **Prequisitions**
 
@@ -18,7 +18,7 @@
 1. Install flashrom using
     [flashrom installation guide](https://docs.dasharo.com/variants/dell_optiplex/initial-deployment/#flashrom-installation)
 
----------------------
+---
 
 ## **Internal flashing**
 
