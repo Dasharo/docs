@@ -16,7 +16,7 @@ Instruction for that can be found [here](../building-manual/#debug-build).
 It should be safe for debugging and recovery purposes. CPU after ~1min will
 reach temperature limits and will shutdown the platform.
 
-## CPU was replace & warm reset required loop
+## CPU was replaced & warm reset required loop
 
 If serial console logs contain:
 
