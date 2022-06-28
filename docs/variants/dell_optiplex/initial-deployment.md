@@ -68,7 +68,7 @@ active. Press F1 to proceed and boot to your Linux system.
 
 ## OS booting
 
-For simplicity we using network booted 
+For simplicity we using network booted
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite#bootable-usb-stick).
 
 * Attach a wired network cable to the device's Ethernet port.

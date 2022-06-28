@@ -9,35 +9,26 @@ To build coreboot image, follow the steps below:
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/dasharo/coreboot.git
     ```
-
-2. Get the submodules:
 
     ```bash
     cd coreboot
     ```
 
-    ```bash
-    git submodule update --init --recursive --checkout
-    ```
-
-3. Checkout Dasharo branch for OptiPlex 7010/9010 (replace vX.Y.Z with valid
-   version):
-
-    ```bash
-    git remote add dasharo https://github.com/dasharo/coreboot.git
-    ```
-
-    ```bash
-    git fetch dasharo
-    ```
+    Replace vX.Y.Z with valid version:
 
     ```bash
     git checkout dell_optiplex_9010_vX.Y.Z
     ```
 
-4. Start docker container:
+    Checkout subdmodules:
+
+    ```bash
+    git submodule update --init --recursive --checkout
+    ```
+
+2. Start docker container:
 
     ```bash
     docker run --rm -it \
@@ -49,7 +40,7 @@ To build coreboot image, follow the steps below:
     * `VERSION` should be replaced according to version you building:
       - `v0.1.0` - `2022-04-04_9a8d0a03db`
 
-5. Inside of the container, configure and start the build process:
+3. Inside of the container, configure and start the build process:
 
     ```bash
     make distclean
@@ -81,35 +72,26 @@ coreboot refer to [initial deployment manual](initial-deployment.md).
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/dasharo/coreboot.git
     ```
-
-2. Get the submodules:
 
     ```bash
     cd coreboot
     ```
 
-    ```bash
-    git submodule update --init --recursive --checkout
-    ```
-
-3. Checkout Dasharo branch for OptiPlex 7010/9010 (replace vX.Y.Z with valid
-   version):
-
-    ```bash
-    git remote add dasharo https://github.com/dasharo/coreboot.git
-    ```
-
-    ```bash
-    git fetch dasharo
-    ```
+    Replace vX.Y.Z with valid version:
 
     ```bash
     git checkout dell_optiplex_9010_vX.Y.Z
     ```
 
-4. Start docker container:
+    Checkout subdmodules:
+
+    ```bash
+    git submodule update --init --recursive --checkout
+    ```
+
+2. Start docker container:
 
     ```bash
     docker run --rm -it \
@@ -121,7 +103,7 @@ coreboot refer to [initial deployment manual](initial-deployment.md).
     * `VERSION` should be replaced according to version you building:
       - `v0.1.0` - `2022-04-04_9a8d0a03db`
 
-5. Inside of the container, configure and start the build process:
+3. Inside of the container, configure and start the build process:
 
     ```bash
     make distclean
