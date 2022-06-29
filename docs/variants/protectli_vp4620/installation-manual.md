@@ -62,11 +62,18 @@ hard reset of the platform. To perform a hard reset:
 5. The platform should power on normally now. You can connect the battery back
    if it was disconnected.
 
-If Dasharo is currently installed, only the COREBOOT partition of the flash
-needs to be updated. Flash it using the following command:
+If Dasharo v1.0.16 is currently installed, only the RW_SECTION_A partition of
+the flash needs to be updated. Flash it using the following command:
 
 ```bash
-flashrom -p internal -w protectli_vault_cml_v1.0.13.rom --fmap -i COREBOOT
+flashrom -p internal -w protectli_vault_cml_v1.0.13.rom --fmap -i RW_SECTION_A
 ```
 
 This command also preserves Dasharo UEFI settings and the boot order.
+
+If you have Dasharo older than v1.0.16, use the following command upgrade
+instead:
+
+```bash
+flashrom -p internal -w protectli_vault_cml_v1.0.13.rom --ifd -i bios
+```
