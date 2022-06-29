@@ -52,3 +52,11 @@ subjected from before the release of the new binary.
 | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.001                           |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
+
+## Module: Dasharo performance
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+
+[CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
