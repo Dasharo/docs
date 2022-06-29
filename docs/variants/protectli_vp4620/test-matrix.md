@@ -57,6 +57,6 @@ subjected from before the release of the new binary.
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+| 1.   | [Device boot measure][DBM]                        | DBM           | All                                  |
 
-[CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[DBM]: ../../unified-test-documentation/dasharo-performance/403-device-boot-measure.md
