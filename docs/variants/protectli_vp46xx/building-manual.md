@@ -1,4 +1,4 @@
-# Protectli Dasharo on VP4620 - building manual
+# Protectli Dasharo on VP46xx - building manual
 
 To build Dasharo firmware image, follow the steps below:
 
@@ -13,5 +13,5 @@ To build Dasharo firmware image, follow the steps below:
     ```bash
     cd coreboot
     # you will need to put the ZIP with blobs at this point
-    ./build.sh vp4620
+    ./build.sh vp46xx
     ```

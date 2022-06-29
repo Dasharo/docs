@@ -1,4 +1,4 @@
-# Protectli Dasharo on VP4620 - installation manual
+# Protectli Dasharo on VP46xx - installation manual
 
 Flashing coreboot can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and

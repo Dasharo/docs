@@ -1,13 +1,13 @@
-# Protectli VP4620 Dasharo Release Notes
+# Protectli VP46xx Dasharo Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
-Protectli VP4620
+Protectli VP46xx
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
-[Subscribe to Protectli VP4620 Dasharo Release Newsletter]
+[Subscribe to Protectli VP46xx Dasharo Release Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
