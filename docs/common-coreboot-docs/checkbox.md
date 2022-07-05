@@ -11,7 +11,7 @@ all its dependencies:
     $ sudo add-apt-repository ppa:hardware-certification/public
     $ sudo apt-get update
     $ sudo apt-get install checkbox-ng plainbox-provider-resource-generic \
-    plainbox-provider-certification-client plainbox-provider-checkbox \ 
+    plainbox-provider-certification-client plainbox-provider-checkbox \
     canonical-certification-client
     ```
 
@@ -23,7 +23,7 @@ We need to set up automatic login so that a password is not required during
 testing reboot etc.
 1. Press the `SUPER_KEY`, type in `Users` and click Enter. Window with options to
 change should appear.
-1. Next click the user name you want to enable and disable automatic login. 
+1. Next click the user name you want to enable and disable automatic login.
 1. Then on the top right side of the window click `Unlock...` button.
 1. You will be required to enter your user password to continue.
 1. You should now be able to toggle Automatic Login button to enable.
@@ -103,7 +103,7 @@ suites, the checkbox menu should look as follows:
 1. When testing end, menu with test results should appear. Press `R` to rerun
 test cases, or `F` to finish.
 
-1. Links to the test results should be displayed in the terminal. - Should be 
+1. Links to the test results should be displayed in the terminal. - Should be
 updated after tests.TBD
 
 ## Aditional options
@@ -115,12 +115,12 @@ updated after tests.TBD
     sudo checkbox-cli run com.canonical.certification::smoke
     ```
 
-2. `launcher` command lets you customize checkbox experience. To use it, you 
+2. `launcher` command lets you customize checkbox experience. To use it, you
    need to create `config_file.ini` and start run checbox like bellow:
 
     ```bash
     checkbox-cli launcher config_file.ini
     ```
-    
-For more details about this commands and also other visit 
+
+For more details about this commands and also other visit
 [checkboc-cli](https://checkbox.readthedocs.io/en/latest/using.html#).
