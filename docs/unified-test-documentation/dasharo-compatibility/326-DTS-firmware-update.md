@@ -34,31 +34,40 @@ firmware by using Dasharo Tools Suite (DTS).
 1. Power on the DUT.
 1. Press `BOOT_MENU_KEY` to enter the boot menu.
 1. In the `Boot Menu`, select the `iPXE Network Boot` option.
-1. In the `Network Boot menu`, select the `Dasharo Tools Suite` option.
-1. Login as root (no password required).
+1. In the `Network Boot menu`, select the `iPXE Shell` option.
+1. Type in `dhcp` to obtain an IP address.
+1. Type in `chain  http://boot.3mdeb.com/dts.ipxe` to load DTS.
+1. Wait for `Enter an option`.
 1. Type 9 and click `Enter` to launch into Shell.
-1. Run the following commands to update firmware to the latest version:
+1. Run the following commands to flash firmware:
 
     ```bash
     flashrom -p internal -w /tmp/coreboot.rom
     ```
 
-1. Reboot the DUT.
-1. Press `SETUP_MENU_KEY` to enter the setup menu.
+1. Power off the DUT.
+1. Repeat steps 1-8.
+1. Run the following commands to check firmware version:
+
+    ```bash
+    dmidecode -t 0
+    ```
+
 1. Note the results.
 
 **Expected result**
 
-In the `Setup menu` information about the current firmware version should be
-displayed.
+The output of `dmidecode` command should contain information about current
+firmware. The current firmware version should be equal to the binary version,
+which you were flashing.
 
 Example output:
 
 ```bash
-Dasharo (coreboot+UEFI) v1.2.0
+Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
 
-### FDT002.001 Firmware update by using Dasharo Tools Suite
+### FDT002.001 Firmware update using fwupd in Dasharo Tools Suite
 
 **Test description**
 
@@ -79,8 +88,10 @@ firmware by using Dasharo Tools Suite (DTS).
 1. Power on the DUT.
 1. Press `BOOT_MENU_KEY` to enter the boot menu.
 1. In the `Boot Menu`, select the `iPXE Network Boot` option.
-1. In the `Network Boot menu`, select the `Dasharo Tools Suite` option.
-1. Login as root (no password required).
+1. In the `Network Boot menu`, select the `iPXE Shell` option.
+1. Type in `dhcp` to obtain an IP address.
+1. Type in `chain  http://boot.3mdeb.com/dts.ipxe` to load DTS.
+1. Wait for `Enter an option`.
 1. Type 9 and click `Enter` to launch into Shell.
 1. Run the following commands to update firmware to the latest version:
 
@@ -89,17 +100,24 @@ firmware by using Dasharo Tools Suite (DTS).
     fwupdmgr update
     ```
 
-1. Reboot the DUT.
-1. Press `SETUP_MENU_KEY` to enter the setup menu.
+1. Power off the DUT.
+1. Repeat steps 1-8.
+1. Run the following commands to check firmware version:
+
+    ```bash
+    dmidecode -t 0
+    ```
+
 1. Note the results.
 
 **Expected result**
 
-In the `Setup menu` information about the current firmware version should be
-displayed.
+The output of `dmidecode` command should contain information about current
+firmware. The current firmware version should be equal to the binary version,
+which you were flashing.
 
 Example output:
 
 ```bash
-Dasharo (coreboot+UEFI) v1.2.0
+Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
