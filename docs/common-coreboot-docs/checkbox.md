@@ -1,6 +1,11 @@
 # Checkbox usage (Ubuntu 22.04)
 
-## Install Ubuntu ???
+## Introduction
+
+Checkbox is a system testing platform for Ubuntu. It aims to provide a common
+framework to run all types of tests, from hardware tests, to command line tests,
+unit tests or desktop tests. This documentation describes usage of checkbox on
+Ubuntu 22.04, but it can work on older versions Ubuntu.
 
 ## Download and install Checkbox
 
@@ -17,7 +22,27 @@ all its dependencies:
 
 ## Set up testing environment
 
-Fill all slots - TBD
+To achive the best results from the tests and do many of them, we should fill as
+many internal and external slots as possible. Before running the checkbox, try
+to fill the slots if the DUT has one:
+
+External:
+* Memory Card Reader
+* USB Ports
+* Monitor Ports
+* Ethernet Ports
+* Headphone and Microphone Jacks
+* Thunderbolt Ports
+* Power Socket
+* PCMCIA or ExpressCard slot 
+
+Internal:
+* DIMM/RAM slots
+* SATA ports
+* PCI/PCIe slots
+* M.2 slots
+* TPM header
+* Other slots
 
 We need to set up automatic login so that a password is not required during
 testing reboot etc.
