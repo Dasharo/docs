@@ -22,12 +22,12 @@ firmware by using Dasharo Tools Suite (DTS).
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
+1. {PATH} - Individual path to a specific binary.
 
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
 1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md).
-1. Obtain `coreboot.rom` binary.
 
 **Test steps**
 
@@ -39,7 +39,15 @@ firmware by using Dasharo Tools Suite (DTS).
 1. Type in `chain  http://boot.3mdeb.com/dts.ipxe` to load DTS.
 1. Wait for `Enter an option`.
 1. Type 9 and click `Enter` to launch into Shell.
-1. Run the following commands to flash firmware:
+1. Run the following command to obtain `coreboot.rom` binary:
+
+    ```bash
+    wget https://3mdeb.com/open-source-firmware/{PATH} -O /tmp/coreboot.rom
+    ```
+
+> This is not only way to obtain binary. For example you can use `scp`.
+
+1. Run the following command to flash firmware:
 
     ```bash
     flashrom -p internal -w /tmp/coreboot.rom
@@ -47,7 +55,7 @@ firmware by using Dasharo Tools Suite (DTS).
 
 1. Power off the DUT.
 1. Repeat steps 1-8.
-1. Run the following commands to check firmware version:
+1. Run the following command to check firmware version:
 
     ```bash
     dmidecode -t 0
@@ -102,7 +110,7 @@ firmware by using Dasharo Tools Suite (DTS).
 
 1. Power off the DUT.
 1. Repeat steps 1-8.
-1. Run the following commands to check firmware version:
+1. Run the following command to check firmware version:
 
     ```bash
     dmidecode -t 0
