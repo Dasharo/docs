@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Firmware update using Dasharo Tools Suite
+# Dasharo Compatibility: Firmware flashing using Dasharo Tools Suite
 
 ## Test cases
 
@@ -10,7 +10,7 @@
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Wired network connection.
 1. Make yourself familiar with
-    [Bootable over network](../../../common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
+    [Bootable over network](../../../common-coreboot-docs/dasharo_tools_suite/#bootable-over-network).
 
 ### FDT001.001 Flash firmware by using Dasharo Tools Suite
 
@@ -22,7 +22,7 @@ firmware by using Dasharo Tools Suite (DTS).
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. {PATH} - Individual path to a specific binary.
+1. `{PATH}` = individual path to a specific binary.
 
 **Test setup**
 
@@ -38,14 +38,14 @@ firmware by using Dasharo Tools Suite (DTS).
 1. Type in `dhcp` to obtain an IP address.
 1. Type in `chain  http://boot.3mdeb.com/dts.ipxe` to load DTS.
 1. Wait for `Enter an option`.
-1. Type 9 and click `Enter` to launch into Shell.
+1. Type 9 and click `Enter` to launch Shell.
 1. Run the following command to obtain `coreboot.rom` binary:
 
     ```bash
     wget https://3mdeb.com/open-source-firmware/{PATH} -O /tmp/coreboot.rom
     ```
 
-> This is not only way to obtain binary. For example you can use `scp`.
+    > This is not only way to obtain binary. For example you can use `scp`.
 
 1. Run the following command to flash firmware:
 
