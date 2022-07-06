@@ -22,9 +22,9 @@ all its dependencies:
 
 ## Set up testing environment
 
-To achive the best results from the tests and do many of them, we should fill as
-many internal and external slots as possible. Before running the checkbox, try
-to fill the slots if the DUT has one:
+To achieve the best results from the tests and do many of them, we should fill
+as many internal and external slots as possible. Before running the checkbox,
+try to fill the slots if the DUT has one:
 
 External:
 * Memory Card Reader
@@ -34,7 +34,7 @@ External:
 * Headphone and Microphone Jacks
 * Thunderbolt Ports
 * Power Socket
-* PCMCIA or ExpressCard slot 
+* PCMCIA or ExpressCard slot
 
 Internal:
 * DIMM/RAM slots
@@ -44,8 +44,33 @@ Internal:
 * TPM header
 * Other slots
 
-We need to set up automatic login so that a password is not required during
-testing reboot etc.
+In order for the tests to not require any interference after their startup,
+perform the following steps:
+
+To stop the screen from being locked on suspend, open terminal and run the
+following command:
+
+```bash
+ gsettings set org.gnome.desktop.lockdown disable-lock-screen 'true'
+```
+
+To execute all sudo commands without password, open terminal and run the
+following command:
+
+```bash
+sudo visudo
+```
+
+Append the following entry at the end of file to run ALL command without a
+password for a user:
+
+```bash
+user ALL=(ALL) NOPASSWD:ALL
+```
+
+To set up automatic login so that a password is not required during testing
+reboot, poweroff etc.:
+
 1. Press the `SUPER_KEY`, type in `Users` and click Enter. Window with options to
 change should appear.
 1. Next click the user name you want to enable and disable automatic login.
@@ -92,8 +117,9 @@ change should appear.
     ```
 
 1. Select test suites (`SPACE` - select, `ARROWS` - navigation, `Enter` -
-go to the next test suite), which you want to run. If you check all the test
-suites, the checkbox menu should look as follows:
+go to the next test suite), which you want to run. After it all modules should
+be displayed and you can manually uncheck some modules, which you don't want to
+test it.
 
     ```bash
     ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -123,15 +149,25 @@ suites, the checkbox menu should look as follows:
     └──────────────────────────────────────────────────────────────────────────────┘
     ```
 
-1. Press `T` to start the testing procedure.
+1. Press `T` to start the testing procedure. You can be asked about hardware in
+your machine. Just tick it truthfully and press `T` again.
+
+    ```bash
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │Does this machine have this piece of hardware?                                │
+    │    An Ethernet Port                              (X) YES  ( ) NO             │
+    │    Camera/Capture Device                         (X) YES  ( ) NO             │
+    │    USB Storage Device Connected                  (X) YES  ( ) NO             │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    ```
 
 1. When testing end, menu with test results should appear. Press `R` to rerun
 test cases, or `F` to finish.
 
-1. Links to the test results should be displayed in the terminal. - Should be
-updated after tests.TBD
+1. After all, paths to the tests results should be displayed in terminal.
+By default, they are placed in `/home/user/.local/share/checkbox-ng`.
 
-## Aditional options
+## Additional options
 
 1. `run` lets you run particular test plan or a set of jobs, but it not save any
    results. Example of run one test plan:
@@ -141,7 +177,7 @@ updated after tests.TBD
     ```
 
 2. `launcher` command lets you customize checkbox experience. To use it, you
-   need to create `config_file.ini` and start run checbox like bellow:
+   need to create `config_file.ini` and start run checkbox like bellow:
 
     ```bash
     checkbox-cli launcher config_file.ini
@@ -149,3 +185,38 @@ updated after tests.TBD
 
 For more details about this commands and also other visit
 [checkboc-cli](https://checkbox.readthedocs.io/en/latest/using.html#).
+
+## Troubleshooting
+
+When somehow checkbox will stop work you can resume previous session.
+To do this open terminal and run following command:
+
+```bash
+sudo checkbox-cli
+```
+
+If at least on machine is 1 incomplete session:
+
+```bash
+ Do you want to resume session 'session_title-2022-07-06T13.09.22'?
+  r => resume this session
+  n => next session
+  c => create new session
+  d => delete old sessions
+[rncd]:
+```
+
+Type in `r` to resume stopped session. You can also create new session or
+delete old session by typing the appropriate letter.
+
+```bash
+What do you want to do with that job?
+  s => skip that job
+  p => mark it as passed and continue
+  f => mark it as failed and continue
+  r => run it
+[spfr]:
+```
+
+Decide what do you want with the last test and type in the appropriate letter.
+After this your checkbox session will be resumed.
