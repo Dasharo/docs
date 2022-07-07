@@ -29,7 +29,7 @@ subjected from before the release of the new binary.
 | 18.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
 | 19.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
 | 20.  | [UEFI Shell][USH]                                 | USH           | All                                  |
-| 21.  | [USB detection][UBD]                              | UBD           | All                                  |
+| 21.  | [USB detection][UDT]                              | UDT           | All                                  |
 | 22.  | [USB booting][UBB]                                | UBB           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -52,7 +52,7 @@ subjected from before the release of the new binary.
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
 [AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
-[UBD]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
+[UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
 [UBB]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 
 ## Module: Dasharo security
