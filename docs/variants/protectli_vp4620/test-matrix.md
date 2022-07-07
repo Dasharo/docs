@@ -27,6 +27,10 @@ subjected from before the release of the new binary.
 | 16.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
 | 17.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
 | 18.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
+| 19.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
+| 20.  | [UEFI Shell][USH]                                 | USH           | All                                  |
+| 21.  | [USB detection][USB*]                             | USB           | All                                  |
+| 22.  | [USB booting][UBB]                                | UBB           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -46,21 +50,31 @@ subjected from before the release of the new binary.
 [CNB]: ../../unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
 [MSS]: ../../unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
+[AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
+[USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
+[UBB]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
+[USB*]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
 
 ## Module: Dasharo security
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.001                           |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO004.001, VBO005.001 |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
+| 3.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
+[SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 
 ## Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+| 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
+| 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
+[CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
