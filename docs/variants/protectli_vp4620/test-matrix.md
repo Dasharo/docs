@@ -30,7 +30,7 @@ subjected from before the release of the new binary.
 | 19.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
 | 20.  | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 21.  | [USB detection][UDT]                              | UDT           | All                                  |
-| 22.  | [USB booting][UBB]                                | UBB           | All                                  |
+| 22.  | [USB booting][UBT]                                | UBT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -53,7 +53,7 @@ subjected from before the release of the new binary.
 [AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
-[UBB]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
+[UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 
 ## Module: Dasharo security
 

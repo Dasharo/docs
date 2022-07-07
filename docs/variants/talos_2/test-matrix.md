@@ -14,7 +14,7 @@ subjected from before the release of the new binary.
 | 3.   | [Heads bootloader support][HDS]                   | HDS           | All                                  |
 | 4.   | [Device Tree][DVT]                                | DVT           | All                                  |
 | 5.   | [USB detection][USB]                              | USB           | All                                  |
-| 6.   | [USB booting][UBB]                                | UBB           | All                                  |
+| 6.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT002.001                           |
 | 8.   | [CPU status][CPU]                                 | CPU           | All                                  |
 
@@ -23,7 +23,7 @@ subjected from before the release of the new binary.
 [HDS]: ../../unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
 [DVT]: ../../unified-test-documentation/dasharo-compatibility/31W-device-tree.md
 [USB]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
-[UBB]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
+[UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
 
