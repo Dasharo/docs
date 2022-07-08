@@ -10,17 +10,17 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
-| 2.   | [UEFI compatible interface][EFI]                  | EFI           | EFI001.001                           |
-| 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.003, DSP003.001, DSP003.003 |
+| 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
+| 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
 | 4.   | [Network boot][PXE]                               | PXE           | All                                  |
-| 5.   | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM001.002               |
+| 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 8.   | [USB HID and MSC Support][USB]                    | USB           | All                                  |
 | 9.   | [FreeBSD support][BSD]                            | BSD           | All                                  |
 | 10.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
-| 11.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001                           |
-| 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
+| 11.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001, UTC004.001               |
+| 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | ALL                                  |
 | 13.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.001                           |
 | 14.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
 | 15.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
@@ -59,7 +59,7 @@ subjected from before the release of the new binary.
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                                | TPM           | TPM001.001                           |
+| 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
 | 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
 | 3.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
