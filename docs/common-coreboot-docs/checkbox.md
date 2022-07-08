@@ -4,23 +4,10 @@
 
 Checkbox is a system testing platform for Ubuntu. It aims to provide a common
 framework to run all types of tests, from hardware tests, to command line tests,
-unit tests or desktop tests. This documentation describes usage of checkbox on
-Ubuntu 22.04, but it can work on older versions Ubuntu.
+unit tests or desktop tests. This document describes the usage of Checkbox on
+Ubuntu 22.04, but it can work on older versions of Ubuntu.
 
-## Download and install Checkbox
-
-1. Open terminal and type in below-described commands to install Checkbox and
-all its dependencies:
-
-    ```bash
-    $ sudo add-apt-repository ppa:hardware-certification/public
-    $ sudo apt-get update
-    $ sudo apt-get install checkbox-ng plainbox-provider-resource-generic \
-    plainbox-provider-certification-client plainbox-provider-checkbox \
-    canonical-certification-client
-    ```
-
-## Set up testing environment
+## Prerequisites
 
 To achieve the best results from the tests and do many of them, we should fill
 as many internal and external slots as possible. Before running the checkbox,
@@ -44,24 +31,26 @@ Internal:
 * TPM header
 * Other slots
 
+## Set up testing environment
+
 In order for the tests to not require any interference after their startup,
 perform the following steps:
 
-To stop the screen from being locked on suspend, open terminal and run the
+To stop the screen from being locked on suspend, open the terminal and run the
 following command:
 
 ```bash
  gsettings set org.gnome.desktop.lockdown disable-lock-screen 'true'
 ```
 
-To execute all sudo commands without password, open terminal and run the
+To execute all sudo commands without password, open the terminal and run the
 following command:
 
 ```bash
 sudo visudo
 ```
 
-Append the following entry at the end of file to run ALL command without a
+Append the following entry at the end of file to run ALL commands without a
 password for a user:
 
 ```bash
@@ -79,12 +68,25 @@ change should appear.
 1. You should now be able to toggle Automatic Login button to enable.
 1. Restart your system for changes to take effect.
 
-## Run automatic validation
+## Download and install Checkbox
 
-1. Start checkbox. To do this, open terminal and run the following command:
+1. Open the terminal and type in the below-described commands to install
+Checkbox and all its dependencies:
 
     ```bash
-    $ sudo checkbox-cli
+    sudo add-apt-repository ppa:hardware-certification/public
+    sudo apt-get update
+    sudo apt-get install checkbox-ng plainbox-provider-resource-generic \
+    plainbox-provider-certification-client plainbox-provider-checkbox \
+    canonical-certification-client
+    ```
+
+## Run automatic validation
+
+1. Start checkbox. To do this, open the terminal and run the following command:
+
+    ```bash
+    sudo checkbox-cli
     ```
 
     After using the above-mentioned command, the following menu should appear:
@@ -116,10 +118,12 @@ change should appear.
     └──────────────────────────────────────────────────────────────────────────────┘
     ```
 
+> Marking the first option starts the full automate check.
+
 1. Select test suites (`SPACE` - select, `ARROWS` - navigation, `Enter` -
-go to the next test suite), which you want to run. After it all modules should
-be displayed and you can manually uncheck some modules, which you don't want to
-test it.
+go to the next test suite), which you want to run. Marking the first option
+starts the full automate check. After it all modules should be displayed and you
+can manually uncheck some modules, which you don't want to test it.
 
     ```bash
     ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -149,8 +153,9 @@ test it.
     └──────────────────────────────────────────────────────────────────────────────┘
     ```
 
-1. Press `T` to start the testing procedure. You can be asked about hardware in
-your machine. Just tick it truthfully and press `T` again.
+1. Press `T` to start the testing procedure.
+1. You can be asked about hardware in your machine. Just tick it truthfully and
+press `T` again.
 
     ```bash
     ┌──────────────────────────────────────────────────────────────────────────────┐
