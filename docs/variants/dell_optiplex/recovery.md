@@ -211,5 +211,5 @@ echo 1 > /sys/class/gpio/gpio404/value
 ```
 
 ```bash
-flashrom -w optiplex_flash_8M_IFD_ME_cleaned.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E"
+flashrom -w optiplex_flash_8M_IFD_ME_cleaned.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E --ifd -i fd -i me"
 ```
