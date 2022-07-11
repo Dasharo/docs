@@ -136,6 +136,9 @@ echo 1 > /sys/class/gpio/gpio406/value
 echo 1 > /sys/class/gpio/gpio404/value
 ```
 
+`xac` is third file resulting from previous binary split, so it contains BIOS
+region which in case of Dell OptiPlex 9010/7010 should be flashed to 4MB SPI.
+
 ```bash
 flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX25L3208D"
 ```
