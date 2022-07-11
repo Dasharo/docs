@@ -7,15 +7,7 @@ environment, with a goal of deploying, updating and maintaining firmware on
 Dasharo supported devices. For example, it can be used to update the firmware
 on a device, even when no OS is currently installed.
 
-## Distribution methods
-
-It can be distributed in various ways. Currently, there are two distribution
-options:
-
-* bootable USB stick image.
-* bootable over network (iPXE),
-
-## Flavors
+## DTS flavors
 
 There is a common base, but there might be multiple flavors of the DTS images.
 Currently, there are:
@@ -29,7 +21,19 @@ Currently, there are:
     - on top of that, provides tools for automatic firmware deployment and
       rollback (switching to Dasharo back and forth)
 
-## Bootable USB stick
+The following documentation describes how to otain and use Community Edition
+version. To obtain OEM version conatct us by using
+[email](mailto:contact@dasharo.com).
+
+## DTS CE distribution methods
+
+It can be distributed in various ways. Currently, there are two distribution
+options:
+
+* bootable USB stick image.
+* bootable over network (iPXE),
+
+### Bootable USB stick
 
 This documentation is compatible with the `v0.3.0` version of the DTS.
 
