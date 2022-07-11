@@ -97,7 +97,7 @@ more section
   to overload the reader with very precise IDs. As for vendors we try to reuse
   existing open-source firmware conventions, but if needed we can adjust the
   model name.
-- 'Overview' presents general information related to Dasharo, history, map of
+- `Overview` presents general information related to Dasharo, history, map of
   subsections, marketing materials, and press release links.
 - `Releases` section where all binaries are provided in a standardized way.
 - `Building manual` section provides instructions on how to build release and
