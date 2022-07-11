@@ -25,3 +25,21 @@ enable the touchpad hotkey to work under Linux, follow the steps below:
 
 After executing these steps, it should be possible to enable and disable the
 touchpad using the touchpad hotkey (Fn+F1) on the keyboard when using GNOME.
+
+## Touchpad multi-touch support (NS7x / 17-inch model, Linux)
+
+On NS7x an additional fix is necessary to enable multi-touch on Linux. Create
+a file `/etc/modprobe.d/blacklist-psmouse.conf` with the following contents:
+
+```bash
+blacklist psmouse
+```
+
+and then run the following commands:
+
+```bash
+sudo depmod -a
+sudo update-initramfs -u
+```
+
+Now reboot your computer to apply the changes.
