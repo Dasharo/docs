@@ -36,7 +36,8 @@ open-source firmware. Following procedure is supported for following models
 
 ## Step 3: Connect SOIC-8 Pomona clip between RTE and target
 
-Connect SOIC-8 Pomona according to [MX25L3206E datasheet](https://www.macronix.com/Lists/Datasheet/Attachments/8616/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf).
+Connect SOIC-8 Pomona according to
+[MX25L3206E datasheet](https://www.macronix.com/Lists/Datasheet/Attachments/8616/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf).
 
 <center>
 ![](../../images/mx25l3206e_pinout.png)
@@ -153,7 +154,8 @@ and restore content of 8MB chip.
 
 ### Step 7a: Connect SOIC-16 Pomona clip between RTE and target
 
-Connect SOIC-16 Pomona according to [MX25L6406E datasheet](https://www.digikey.ch/htmldatasheets/production/980657/0/0/1/MX25L6406E.pdf).
+Connect SOIC-16 Pomona according to
+[MX25L6406E datasheet](https://www.digikey.ch/htmldatasheets/production/980657/0/0/1/MX25L6406E.pdf).
 
 <center>
 ![](../../images/mx25l6406e_pinout.png)
