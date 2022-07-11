@@ -4,7 +4,7 @@
 
 ---
 
-Following documentation describe process of recovering hardware from brick
+Following documentation describes the process of recovering hardware from brick
 state with [RTE](../../../transparent-validation/rte/introduction/) and Dasharo
 open-source firmware. Following procedure is supported for following models
 
