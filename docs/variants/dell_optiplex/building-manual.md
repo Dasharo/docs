@@ -110,11 +110,11 @@ coreboot refer to [initial deployment manual](initial-deployment.md).
     ```
 
     ```bash
-    cp configs/config.dell_optiplex_9010_sff .config
+    cp configs/config.dell_optiplex_9010 .config
     ```
 
     ```bash
-    echo "CONFIG_DEFAULT_CONSOLE_LOGLEVEL_8=y" >> .config
+    sed -i 's/CONFIG_DEFAULT_CONSOLE_LOGLEVEL_0=y/CONFIG_DEFAULT_CONSOLE_LOGLEVEL_8=y/g' .config
     ```
 
     ```bash
