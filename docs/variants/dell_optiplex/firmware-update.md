@@ -29,8 +29,9 @@ chain http://boot.3mdeb.com/dts.ipxe
 ```
 
 * Login as `root` (no password)
-* Download the Dell OptiPlex 7010/9010 Dasharo from [release
-  section](releases.md#binaries) or [build from source](building-manual.md).
+* Download the Dell OptiPlex 7010/9010 Dasharo from
+  [release section](releases.md#binaries) or
+  [build from source](building-manual.md).
 * Flash it using:
 
 ```console
