@@ -68,6 +68,8 @@ version or newer and then:
 echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
 echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 # assuming in coreboot root directory
+./build/cbfstool build/coreboot.rom expand -r FW_MAIN_A
+./build/cbfstool build/coreboot.rom expand -r FW_MAIN_B
 ./build/cbfstool build/coreboot.rom add \
 	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
 ./build/cbfstool build/coreboot.rom add \
@@ -80,6 +82,8 @@ echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
 ./build/cbfstool build/coreboot.rom add \
 	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
+./build/cbfstool build/coreboot.rom truncate -r FW_MAIN_A
+./build/cbfstool build/coreboot.rom truncate -r FW_MAIN_B
 ```
 
 One may use `msi_ms7d25_v1.0.0.rom` (or newer) binary directly and simply build
@@ -92,6 +96,8 @@ make -C util/cbfstool
 echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
 echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 # assuming in coreboot root directory
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom expand -r FW_MAIN_A
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom expand -r FW_MAIN_B
 ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
 	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
 ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
@@ -104,6 +110,8 @@ echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
 ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
 	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom truncate -r FW_MAIN_A
+./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom truncate -r FW_MAIN_B
 ```
 
 Note you will need to resign the binary after adding the SMBIOS data. Please
