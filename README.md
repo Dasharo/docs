@@ -1,6 +1,6 @@
 # About
 
-This repository contains source code for Dasharo documentation webpage
+This repository contains source code for the Dasharo documentation webpage
 
 # Local build
 
@@ -28,11 +28,11 @@ grep -E "TBD|TODO" docs/**/*.md -r
 ```
 
 Iterate over all occurrences and check if:
-- file where TBD or TODO occurs is displayed (included in nav section of
+- file, where TBD or TODO occurs, is displayed (included in nav section of
 mkdocs.yml)
-- TBD or TODO is visible on website
+- TBD or TODO is visible on the website
 
-There should be no TBD or TODO visible on website.
+There should be no TBD or TODO visible on the website.
 
 # pre-commit hooks
 
@@ -59,7 +59,7 @@ pre-commit run --all-files
 
 ## To skip verification
 
-In some cases it may be needed to skip `pre-commit` tests, to do that please
+In some cases, it may be needed to skip `pre-commit` tests. To do that, please
 use:
 
 ```bash
@@ -89,37 +89,37 @@ more section
         - 'FAQ': variants/<vendor_model>/hardware-matrix.md
 ```
 
-- `Vendor` can have multiple meanings, but it can be vendor who sell platform,
-  OEM or ODM. We tend to follow naming convention used in `coreboot` or other
-open-source firmware projects. We can consider adjustment of the name for SEO
-reasons, community or customer demand.
+- `Vendor` can have multiple meanings, but it can be a vendor who sells the
+  platform, OEM or ODM. We tend to follow the naming convention used in
+  `coreboot` or other open-source firmware projects. We can consider adjustment
+  of the name for SEO reasons, community, or customer demand.
 - `Model` in most cases it would include some literal and number, we don't want
-  to overload reader with very precise IDs. As for vendor we try to reuse
-existing  open-source firmware conventions, but if needed we can adjust model
-name.
-- 'Overview' present general information related to Dasharo, history, map of
-  subsections, marketing materials and press releases link.
-- `Releases` section where all binaries are provided in standardized way.
-- `Building manual` section provide instruction how to build release and debug
-  binaries in reproducible manner.
-- `Firmware update` section explain all methods to update firmware. If
-  additional steps are needed to perform update between specific version it
+  to overload the reader with very precise IDs. As for vendors we try to reuse
+  existing open-source firmware conventions, but if needed we can adjust the
+  model name.
+- 'Overview' presents general information related to Dasharo, history, map of
+  subsections, marketing materials, and press release links.
+- `Releases` section where all binaries are provided in a standardized way.
+- `Building manual` section provides instructions on how to build release and
+  debug binaries in a reproducible manner.
+- `Firmware update` section explains all methods to update the firmware. If
+  additional steps are needed to perform updates between specific versions it,
 should also be covered in this section.
-- `Recovery` section describe what to do in case of various error signatures
-  e.g. platform not booting or hanging in certain place.
-- `Hardware Configuration Matrix` - present configuration used in Dasharo labs
-  to perform validation as well as community contributed hardware compatibility
-reports, which present CPUs, GPUs, memory modules and other components tested
-by community.
-- `Test Matrix` - present list of tests that we execute during release process.
-- `Community Test Results` - optional section which present test results
-  contributed by community.
-- `Security and Privacy` - optional section that provide section in which
-  security related information like size of trusted computing base (via Dasharo
-  Openness Score), manuals how to use verified boot, measured boot or UEFI Secure
-  Boot.
-- `Other manuals` - optional section that provide section in which other
-  manuals can be found like: how to enable fan control, update EC controller,
-  customize logo etc.
-- `FAQ` - frequently asked questions related to given hardware platform and
+- `Recovery` section describes what to do in case of various error signatures
+  e.g. platform not booting or hanging in a particular place.
+- `Hardware Configuration Matrix` - presents the configuration used in Dasharo
+  labs to perform validation as well as a community-contributed hardware
+  compatibility reports, which present CPUs, GPUs, memory modules, and other
+  components tested by community.
+- `Test Matrix` - presents a list of tests that we execute during the release
+  process.
+- `Community Test Results` - an optional section that presents test results
+  contributed by the community.
+- `Security and Privacy` - an optional section that provides security-related
+  information, like the size of the trusted computing base (via Dasharo
+  Openness Score), manuals on how to use verified boot, measured boot, or UEFI
+  Secure Boot.
+- `Other manuals` - an optional section that provides other manuals, such as:
+  how to enable fan control, update EC controller, customize logo etc.
+- `FAQ` - frequently asked questions related to a given hardware platform and
   Dasharo support for it.
