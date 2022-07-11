@@ -70,6 +70,11 @@ change should appear.
 
 ## Download and install Checkbox
 
+1. Disable Secure Boot. To do this you can follow steps described in
+   [Secure Boot test](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/).
+
+> Diable Secure boot is required to properly download packages.
+
 1. Open the terminal and type in the below-described commands to install
 Checkbox and all its dependencies:
 
