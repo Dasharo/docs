@@ -1,5 +1,12 @@
 # FAQ
 
+## I see orange LED blinking, but no output, is my board broken?
+
+It means ME is broken and backup firmware would be required to recover it.
+Please follow
+[additional recovery step](../recovery/#optional-step-7-flash-8mb-me-part)
+to fix that problem.
+
 ## I see white LED, but no output, is my board broken?
 
 There maybe many reasons of this behavior.

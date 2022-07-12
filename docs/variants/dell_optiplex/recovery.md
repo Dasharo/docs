@@ -210,6 +210,15 @@ echo 1 > /sys/class/gpio/gpio406/value
 echo 1 > /sys/class/gpio/gpio404/value
 ```
 
+```
+cat > dell_optiplex.layout <<EOF
+00000000:00000fff fd
+00001000:00004fff gbe
+00005000:005fffff me
+00600000:007fffff unused
+EOF
+```
+
 ```bash
-flashrom -w optiplex_flash_8M_IFD_ME_cleaned.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E --ifd -i fd -i me"
+flashrom -w optiplex_flash_8M_IFD_ME_cleaned.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E -i fd -i me --layout dell_optiplex.layout"
 ```
