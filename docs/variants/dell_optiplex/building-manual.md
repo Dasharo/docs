@@ -4,7 +4,8 @@
 
 ## Building coreboot
 
-To build coreboot image, follow the steps below:
+To build release image of Dasharo compatible with Dell OptiPlex 7010/9010,
+follow the steps below:
 
 1. Clone the coreboot repository:
 
@@ -65,7 +66,7 @@ To build coreboot image, follow the steps below:
     ```
 
 This will produce a release binary placed in `build/coreboot.rom`. To flash
-coreboot refer to [initial deployment manual](initial-deployment.md).
+Dasharo refer to [initial deployment manual](initial-deployment.md).
 
 ## Debug build
 
@@ -122,4 +123,4 @@ coreboot refer to [initial deployment manual](initial-deployment.md).
     ```
 
 This will produce a debug binary placed in `build/coreboot.rom`. To flash
-coreboot refer to [initial deployment manual](initial-deployment.md).
+Dasharo refer to [initial deployment manual](initial-deployment.md).
