@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[Checkbox](https://checkbox.readthedocs.io/en/latest/) is a flexible test
+[Checkbox](https://checkbox.readthedocs.io/en/latest/) is a flexible test 
 automation software. It’s the main tool used in Ubuntu Certification program.
 This document describes the usage of Checkbox on Ubuntu 22.04, but it can work
 on older versions of Ubuntu as well.
@@ -53,9 +53,9 @@ perform the following steps:
     ```
 
 1. To set up automatic login so that a password is not required during testing
-reboot, power off etc.:
-
-    * Press the `SUPER_KEY`, type in `Users` and click Enter. A window with
+    reboot, power off etc.:
+    
+    * Press the `SUPER_KEY`, type in `Users` and click Enter. A window with 
         options to change should appear.
     * Click the user name you want to enable automatic login for.
     * On the top right side of the window, click `Unlock`...` button.
@@ -120,8 +120,6 @@ reboot, power off etc.:
     └──────────────────────────────────────────────────────────────────────────────┘
     ```
 
-    > Marking the first option starts the full automate check.
-
 1. Select test suites (`SPACE` - select, `ARROWS` - navigation, `Enter` -
 go to the next test suite), which you want to run. Marking the first option
 starts the full automated check. After selecting the first option, all modules
@@ -157,7 +155,7 @@ want to test.
     ```
 
 1. Press `T` to start the testing procedure.
-1. You might be asked about the hardware in your machine. Just tick it
+1. You might be asked about the hardware in your machine. Just tick it 
     truthfully and press `T` again.
 
     ```bash
