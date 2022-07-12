@@ -80,7 +80,7 @@ Dasharo refer to [initial deployment manual](initial-deployment.md).
     cd coreboot
     ```
 
-    Replace vX.Y.Z with valid version:
+    Replace vX.Y.Z with a valid version:
 
     ```bash
     git checkout dell_optiplex_9010_vX.Y.Z
