@@ -22,7 +22,7 @@ open-source firmware. Following procedure is supported for following models
 
 1. To prepare hardware please follow
 [hardware preparation](../initial-deployment/#hardware-preparation) procedure.
-2. Follow instruction in the video to remove heatsink:
+1. Follow instruction in the video to remove heatsink:
   <center>
   <iframe width="640" height="480"
     src="http://www.youtube.com/embed/TiUSTo-XwPo">
@@ -83,13 +83,13 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
 </center>
 
 1. Connect J2 Orange Pi Zero system debug output
-2. Power the board and confirm it boots
-3. **Please note** typical convention of USB-UART converter colors is as follows
+1. Power the board and confirm it boots
+1. **Please note** typical convention of USB-UART converter colors is as follows
     - black - GND
     - red - +5V
     - green - TX
     - white - RX
-4. Connect terminal to RTE and read OS version:
+1. Connect terminal to RTE and read OS version:
 
     ```shell
     sudo minicom -b 115200 -D /dev/ttyUSB0 -o -C /tmp/minicom.cap
@@ -102,7 +102,7 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
     - `-o` skip initialization
     - `-C /tmp/minicom.cap` capture serial terminal output, if you will have
       problems with exercises please post this file
-5. Login using following credentials:
+1. Login using following credentials:
 
     ```shell
     login: root
@@ -111,13 +111,13 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
 
 ## Step 5: Prepare recovery binary
 
-* Get v0.2-rc3 binary
+1. Get v0.2-rc3 binary
 
 ```bash
 wget https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23/download -O dasharo_dell_optiplex_9010_v0.2-rc3.rom
 ```
 
-* It has 12MB, so it have to be split
+1. It has 12MB, so it have to be split
 
 ```bash
 split -b4M dasharo_dell_optiplex_9010_v0.2-rc3.rom

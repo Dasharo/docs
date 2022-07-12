@@ -28,7 +28,7 @@ To build coreboot image, follow the steps below:
     git submodule update --init --recursive --checkout
     ```
 
-2. Start docker container:
+1. Start docker container:
 
     ```bash
     docker run --rm -it \
@@ -40,7 +40,7 @@ To build coreboot image, follow the steps below:
     * `VERSION` should be replaced according to version you building:
       - `v0.1.0` - `2022-04-04_9a8d0a03db`
 
-3. Inside of the container, configure and start the build process:
+1. Inside of the container, configure and start the build process:
 
     ```bash
     make distclean
@@ -91,7 +91,7 @@ coreboot refer to [initial deployment manual](initial-deployment.md).
     git submodule update --init --recursive --checkout
     ```
 
-2. Start docker container:
+1. Start docker container:
 
     ```bash
     docker run --rm -it \
@@ -103,7 +103,7 @@ coreboot refer to [initial deployment manual](initial-deployment.md).
     * `VERSION` should be replaced according to version you building:
       - `v0.1.0` - `2022-04-04_9a8d0a03db`
 
-3. Inside of the container, configure and start the build process:
+1. Inside of the container, configure and start the build process:
 
     ```bash
     make distclean

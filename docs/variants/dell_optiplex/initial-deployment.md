@@ -27,41 +27,41 @@ flash descriptor security override mode. Please follow below steps:
 
     ![](../../images/case_open1.jpg)
 
-2. Lift the whole top cover and take it off.
+1. Lift the whole top cover and take it off.
 
     ![](../../images/case_open2.jpg)
 
-3. Now, it is time to release the disk dock. Lift up the handle of the CD/DVD drive
+1. Now, it is time to release the disk dock. Lift up the handle of the CD/DVD drive
    bay.
 
     ![](../../images/disk_dock_open1.jpg)
 
-4. Pull the CD/DVD drive bay to the CPU fan side.
+1. Pull the CD/DVD drive bay to the CPU fan side.
 
     ![](../../images/disk_dock_open2.jpg)
 
-5. Move the blue disk dock handle to the CPU fan side.
+1. Move the blue disk dock handle to the CPU fan side.
 
     ![](../../images/disk_dock_open3.jpg)
 
-6. The screw should be at the more giant hole now. Lift up the whole dock to
+1. The screw should be at the more giant hole now. Lift up the whole dock to
    remove it.
 
     ![](../../images/disk_dock_open4.jpg)
 
-7. When the dock is removed, the service mode jumper should be visible.
+1. When the dock is removed, the service mode jumper should be visible.
 
     ![](../../images/overview_service_jumper.jpg)
 
-8. Place the jumper in the place marked by the red rectangle.
+1. Place the jumper in the place marked by the red rectangle.
 
     ![](../../images/service_jumper_header.jpg)
 
-9. It should look like this.
+1. It should look like this.
 
     ![](../../images/service_jumper.jpeg)
 
-10. Power on the machine. You should see a warning that the service jumper is
+1. Power on the machine. You should see a warning that the service jumper is
 active. Press F1 to proceed and boot to your Linux system.
 
     ![](../../images/service_mode_warn.jpg)
@@ -207,9 +207,9 @@ If you will face any issues please refer to [troubleshooting section](#troublesh
 ## Verification
 
 1. If everything went well (flashrom has verified the flash content),
-2. Shut down machine, move the jumper to the original place
-3. Power on the machine.
-4. After rebooting, you should see the Dasharo Workstation logo when booting.
+1. Shut down machine, move the jumper to the original place
+1. Power on the machine.
+1. After rebooting, you should see the Dasharo Workstation logo when booting.
    When the logo appears, you may press ++esc++ to select the boot device if
    you want to reboot from another source.
 
@@ -232,10 +232,10 @@ If you see the logo and after that system does not starts (black screen), please
 take the following steps:
 
 1. Put a bootable USB stick to the USB port.
-2. Restart the computer using the power button.
-3. Press the ++esc++ key to enter a boot menu.
-4. Choose a USB drive from the list.
-5. Re-install the operating system.
+1. Restart the computer using the power button.
+1. Press the ++esc++ key to enter a boot menu.
+1. Choose a USB drive from the list.
+1. Re-install the operating system.
 
 Common deployment problems you can find in [FAQ](../../osf-trivia-list/deployment.md).
 
