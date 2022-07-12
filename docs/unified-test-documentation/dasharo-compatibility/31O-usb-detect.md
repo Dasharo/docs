@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### USB001.001 USB detection after coldboot
+### UDT001.001 USB detection after coldboot
 
 **Test description**
 
@@ -34,7 +34,7 @@ connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 coldboot.
 
-### USB002.001 USB detect and boot after warmboot
+### UDT002.001 USB detect and boot after warmboot
 
 **Test description**
 
@@ -64,7 +64,7 @@ may be re-done several times to specify the platform and connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 warmboot.
 
-### USB003.001 USB detect and boot after system reboot
+### UDT003.001 USB detect and boot after system reboot
 
 **Test description**
 

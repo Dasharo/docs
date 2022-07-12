@@ -23,7 +23,8 @@ coreboot port on the Protectli VP46XX firewall.
 | **Wireless card**      | Intel Wi-Fi 6 AX200                                      |
 | **Display**            | HDMI 1920x1080p, DP 1920x1080p                           |
 | **Ethernet**           | 6x intel i225 (on-board)                                 |
-| **Attached devices**   | 1. SanDisk USB 3.2Gen1 16 GB                             |
+| **Internal devices**   | Audio subsystem                                          |
+| **Attached devices**   | 1. SanDisk USB 3.2Gen1 32 GB (Ubuntu 22.04 LiveCD)       |
 |                        | 2. SanDisk USB 3.2Gen1 16 GB                             |
 |                        | 3. SanDisk USB 3.2Gen1 16 GB                             |
 |                        | 4. USB Type-C Hub Pro UCN3286                            |

@@ -15,8 +15,8 @@ subjected from before the release of the new binary.
 | 4.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT002.001                           |
 | 6.   | [Network boot][PXE]                               | PXE           | All                                  |
-| 7.   | [USB detection][USB]                              | USB           | All                                  |
-| 8.   | [USB booting][UBB]                                | UBB           | All                                  |
+| 7.   | [USB detection][USB]                              | UDT           | All                                  |
+| 8.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 9.   | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
 | 10.  | [Flash write protection][HWP]                     | HWP           | All                                  |
 | 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.001, DSP004.002               |
@@ -27,8 +27,8 @@ subjected from before the release of the new binary.
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
-[USB]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
-[UBB]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
+[UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
+[UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 [SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
 [HWP]: ../../unified-test-documentation/dasharo-compatibility/31P-flash-write-protection.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md

@@ -10,23 +10,27 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
-| 2.   | [UEFI compatible interface][EFI]                  | EFI           | EFI001.001                           |
-| 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.003, DSP003.001, DSP003.003 |
+| 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
+| 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
 | 4.   | [Network boot][PXE]                               | PXE           | All                                  |
-| 5.   | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM001.002               |
+| 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 8.   | [USB HID and MSC Support][USB]                    | USB           | All                                  |
 | 9.   | [FreeBSD support][BSD]                            | BSD           | All                                  |
 | 10.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
-| 11.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001                           |
-| 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
+| 11.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001, UTC004.001               |
+| 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | ALL                                  |
 | 13.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.001                           |
 | 14.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
 | 15.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
 | 16.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
 | 17.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
 | 18.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
+| 19.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
+| 20.  | [UEFI Shell][USH]                                 | USH           | All                                  |
+| 21.  | [USB detection][UDT]                              | UDT           | All                                  |
+| 22.  | [USB booting][UBT]                                | UBT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -46,21 +50,31 @@ subjected from before the release of the new binary.
 [CNB]: ../../unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
 [MSS]: ../../unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
+[AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
+[USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
+[UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
+[UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 
 ## Module: Dasharo security
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                                | TPM           | TPM001.001                           |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO004.001, VBO005.001 |
+| 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
+| 3.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
+[SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 
 ## Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+| 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
+| 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
+[CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
