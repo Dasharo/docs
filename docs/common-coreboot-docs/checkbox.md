@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[Checkbox](https://checkbox.readthedocs.io/en/latest/) is a flexible test 
+[Checkbox](https://checkbox.readthedocs.io/en/latest/) is a flexible test
 automation software. It’s the main tool used in Ubuntu Certification program.
 This document describes the usage of Checkbox on Ubuntu 22.04, but it can work
 on older versions of Ubuntu as well.
@@ -38,30 +38,30 @@ Internal:
 For the tests that don't require any interference after their startup,
 perform the following steps:
 
-To stop the screen from being locked on suspend, open the terminal and run the
-following command:
+1. To stop the screen from being locked on suspend, open the terminal and
+    run the following command:
 
-```bash
- gsettings set org.gnome.desktop.lockdown disable-lock-screen 'true'
-```
+    ```bash
+    gsettings set org.gnome.desktop.lockdown disable-lock-screen 'true'
+    ```
 
-To execute all `sudo` commands without a password, open the terminal and
-run the following command for a user:
+1. To execute all `sudo` commands without a password, open the terminal and
+    run the following command for a user:
 
-```bash
-echo "user ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/user
-```
+    ```bash
+    echo "user ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/user
+    ```
 
-To set up automatic login so that a password is not required during testing
+1. To set up automatic login so that a password is not required during testing
 reboot, power off etc.:
 
-1. Press the `SUPER_KEY`, type in `Users` and click Enter. A window with 
-    options to change should appear.
-1. Click the user name you want to enable automatic login for.
-1. On the top right side of the window, click `Unlock`...` button.
-1. You will be asked to enter your user password to continue.
-1. You should now be able to toggle the `Automatic Login` button to enable it.
-1. Restart your system for changes to take effect.
+    * Press the `SUPER_KEY`, type in `Users` and click Enter. A window with
+        options to change should appear.
+    * Click the user name you want to enable automatic login for.
+    * On the top right side of the window, click `Unlock`...` button.
+    * You will be asked to enter your user password to continue.
+    * You should now be able to toggle the `Automatic Login` button to enable it.
+    * Restart your system for changes to take effect.
 
 ![](../images/checkbox_aut_login.png)
 
@@ -157,7 +157,7 @@ want to test.
     ```
 
 1. Press `T` to start the testing procedure.
-1. You might be asked about the hardware in your machine. Just tick it 
+1. You might be asked about the hardware in your machine. Just tick it
     truthfully and press `T` again.
 
     ```bash
@@ -184,7 +184,7 @@ any results. Example of running one test plan:
     sudo checkbox-cli run com.canonical.certification::smoke
     ```
 
-2. `launcher` command lets you customize the checkbox experience. To use it, you
+1. `launcher` command lets you customize the checkbox experience. To use it, you
    need to create `config_file.ini` and start running the checkbox like below:
 
     ```bash
