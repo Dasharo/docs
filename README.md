@@ -70,7 +70,7 @@ git commit --no-verify
 
 ## Supported hardware
 
-Each subsection of supported hardware should look as follows there should no
+Each subsection of supported hardware should look as follows, there should no
 more section
 
 ```yaml
