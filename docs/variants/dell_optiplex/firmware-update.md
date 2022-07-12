@@ -35,7 +35,7 @@ chain http://boot.3mdeb.com/dts.ipxe
 * Flash it using:
 
 ```console
-sudo flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
+flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
 ```
 
 Please note that not using `-i bios -i me` may lead to
