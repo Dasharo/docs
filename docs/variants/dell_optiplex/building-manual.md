@@ -23,7 +23,7 @@ follow the steps below:
     git checkout dell_optiplex_9010_vX.Y.Z
     ```
 
-    Checkout subdmodules:
+    Checkout submodules:
 
     ```bash
     git submodule update --init --recursive --checkout
@@ -86,7 +86,7 @@ Dasharo refer to [initial deployment manual](initial-deployment.md).
     git checkout dell_optiplex_9010_vX.Y.Z
     ```
 
-    Checkout subdmodules:
+    Checkout submodules:
 
     ```bash
     git submodule update --init --recursive --checkout
