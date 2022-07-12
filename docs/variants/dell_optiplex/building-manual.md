@@ -47,7 +47,7 @@ To build coreboot image, follow the steps below:
     ```
 
     ```bash
-    cp configs/config.dell_optiplex_9010_sff .config
+    cp configs/config.dell_optiplex_9010 .config
     ```
 
     ```bash
@@ -61,7 +61,7 @@ To build coreboot image, follow the steps below:
     or simply:
 
     ```bash
-    make distclean && cp configs/config.dell_optiplex_9010_sff .config && make olddefconfig && make
+    make distclean && cp configs/config.dell_optiplex_9010 .config && make olddefconfig && make
     ```
 
 This will produce a release binary placed in `build/coreboot.rom`. To flash
