@@ -220,5 +220,5 @@ EOF
 ```
 
 ```bash
-flashrom -w optiplex_flash_8M_IFD_ME_cleaned.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E -i fd -i me --layout dell_optiplex.layout"
+flashrom -w your_bios_backup.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E" -i fd -i me --layout dell_optiplex.layout
 ```
