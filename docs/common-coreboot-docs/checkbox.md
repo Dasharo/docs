@@ -54,7 +54,7 @@ perform the following steps:
 
 1. To set up automatic login so that a password is not required during testing
     reboot, power off etc.:
-    
+
     - Press the `SUPER_KEY`, type in `Users` and click Enter. A window with
         options to change should appear.
     - Click the user name you want to enable automatic login for.
