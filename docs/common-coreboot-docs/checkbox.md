@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[Checkbox](https://checkbox.readthedocs.io/en/latest/) is a flexible test 
+[Checkbox](https://checkbox.readthedocs.io/en/latest/) is a flexible test
 automation software. It’s the main tool used in Ubuntu Certification program.
 This document describes the usage of Checkbox on Ubuntu 22.04, but it can work
 on older versions of Ubuntu as well.
@@ -55,12 +55,13 @@ perform the following steps:
 1. To set up automatic login so that a password is not required during testing
     reboot, power off etc.:
     
-    - Press the `SUPER_KEY`, type in `Users` and click Enter. A window with 
+    - Press the `SUPER_KEY`, type in `Users` and click Enter. A window with
         options to change should appear.
     - Click the user name you want to enable automatic login for.
     - On the top right side of the window, click `Unlock`...` button.
     - You will be asked to enter your user password to continue.
-    - You should now be able to toggle the `Automatic Login` button to enable it.
+    - You should now be able to toggle the `Automatic Login` button to enable
+        it.
     - Restart your system for changes to take effect.
 
 ![](../images/checkbox_aut_login.png)
@@ -155,7 +156,7 @@ want to test.
     ```
 
 1. Press `T` to start the testing procedure.
-1. You might be asked about the hardware in your machine. Just tick it 
+1. You might be asked about the hardware in your machine. Just tick it
     truthfully and press `T` again.
 
     ```bash
@@ -182,8 +183,9 @@ any results. Example of running one test plan:
     sudo checkbox-cli run com.canonical.certification::smoke
     ```
 
-1. `launcher` command lets you customize the checkbox experience. To use it, you
-   need to create `config_file.ini` and start running the checkbox like below:
+1. `launcher` command lets you customize the checkbox experience. To use it,
+    you need to create `config_file.ini` and start running the checkbox like
+    below:
 
     ```bash
     checkbox-cli launcher config_file.ini
