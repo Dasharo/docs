@@ -88,7 +88,7 @@ switching to open-source firmware.
 * Read content of SPI NOR flash:
 
   ``` console
-  sudo flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+  flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
 
   flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
   flashrom is free software, get the source code at https://flashrom.org
@@ -156,13 +156,13 @@ useful location would be at some HTTP server -->
 Flash it on your Dell OptiPlex machine:
 
 ``` console
-sudo flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
+flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
 ```
 
 for example:
 
 ``` console
-sudo flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom
+flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom
 
 flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
 flashrom is free software, get the source code at https://flashrom.org
