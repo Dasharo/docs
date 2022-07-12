@@ -10,8 +10,8 @@ on older versions of Ubuntu as well.
 ## Prerequisites
 
 To run the maximum number of tests, it is advised to connect as many peripheral
-devices as possible. Before running the checkbox, connect peripherals to available
-connectors, such as:
+devices as possible. Before running the checkbox, connect peripherals to
+available connectors, such as:
 
 External:
 
@@ -45,8 +45,8 @@ following command:
  gsettings set org.gnome.desktop.lockdown disable-lock-screen 'true'
 ```
 
-To execute all sudo commands without a password, open the terminal and run the
-following command for a user:
+To execute all `sudo` commands without a password, open the terminal and
+run the following command for a user:
 
 ```bash
 echo "user ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/user
@@ -55,8 +55,8 @@ echo "user ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/user
 To set up automatic login so that a password is not required during testing
 reboot, power off etc.:
 
-1. Press the `SUPER_KEY`, type in `Users` and click Enter. A window with options
-to change should appear.
+1. Press the `SUPER_KEY`, type in `Users` and click Enter. A window with 
+    options to change should appear.
 1. Click the user name you want to enable automatic login for.
 1. On the top right side of the window, click `Unlock`...` button.
 1. You will be asked to enter your user password to continue.
@@ -70,10 +70,10 @@ to change should appear.
 1. Disable Secure Boot. To do this you can follow the steps described in
    [Secure Boot test](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/).
 
-    > Diable Secure boot is required to properly download packages.
+    > Disable Secure boot is required to properly download packages.
 
 1. Open the terminal and type in the below commands to install Checkbox and all
-its dependencies:
+    its dependencies:
 
     ```bash
     sudo add-apt-repository ppa:hardware-certification/public
@@ -120,7 +120,7 @@ its dependencies:
     └──────────────────────────────────────────────────────────────────────────────┘
     ```
 
-> Marking the first option starts the full automate check.
+    > Marking the first option starts the full automate check.
 
 1. Select test suites (`SPACE` - select, `ARROWS` - navigation, `Enter` -
 go to the next test suite), which you want to run. Marking the first option
@@ -157,8 +157,8 @@ want to test.
     ```
 
 1. Press `T` to start the testing procedure.
-1. You can be asked about the hardware in your machine. Just tick it truthfully
-and press `T` again.
+1. You might be asked about the hardware in your machine. Just tick it 
+    truthfully and press `T` again.
 
     ```bash
     ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -195,6 +195,7 @@ For more details about these (and others) commands visit
 [checkbox-cli](https://checkbox.readthedocs.io/en/latest/using.html#).
 
 ## Troubleshooting
+
 When somehow the checkbox stop working you can resume the previous session.
 To do this, open the terminal and run the following command:
 
