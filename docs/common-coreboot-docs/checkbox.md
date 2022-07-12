@@ -1,4 +1,4 @@
-# Checkbox usage (Ubuntu 22.04)
+# Checkbox certification software usage (Ubuntu 22.04)
 
 ## Introduction
 
