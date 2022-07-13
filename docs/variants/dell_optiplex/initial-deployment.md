@@ -224,7 +224,7 @@ If you face any issues, please refer to the [troubleshooting section](#troublesh
 ## Troubleshooting
 
 If you do not see the logo after a few seconds, something probably went wrong,
-or you faced a bug. If the LED on the power button shines white, that means the
+or you encountered a bug. If the LED on the power button shines white, that means the
 platform booted correctly.
 
 ![](../../images/white_led.jpg)
