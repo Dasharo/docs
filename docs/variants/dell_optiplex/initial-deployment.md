@@ -248,7 +248,7 @@ Common deployment problems you can find in [FAQ](../../osf-trivia-list/deploymen
 ### Ubuntu installation
 
 Ubuntu legacy installers have problems with graphical setup mode. When you see
-an error:
+this error:
 
 ``` console
 graphics initialization failed
