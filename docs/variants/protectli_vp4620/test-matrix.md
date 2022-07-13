@@ -60,12 +60,16 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
-| 3.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
+| 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
+| 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
+[MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
+[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 
 ## Module: Dasharo performance
 
