@@ -12,7 +12,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
 | 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
-| 4.   | [Network boot][PXE]                               | PXE           | All                                  |
+| 4.   | [Network boot utilities][NBT]                     | NBT           | All                                  |
 | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
@@ -35,7 +35,7 @@ subjected from before the release of the new binary.
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
-[PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
+[NBT]: ../../unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
 [NVM]: ../../unified-test-documentation/dasharo-compatibility/312-nvme-support.md
 [CLG]: ../../unified-test-documentation/dasharo-compatibility/304-custom-logo.md
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md

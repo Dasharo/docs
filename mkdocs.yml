@@ -204,6 +204,7 @@ nav:
               - 'CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
               - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
               - 'Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
+              - 'Network boot utilities': unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
               - 'SD card reader': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
               - 'USB camera': unified-test-documentation/dasharo-compatibility/317-usb-camera.md
               - 'Wi-Fi and Bluetooth support': unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
