@@ -49,8 +49,8 @@ This test aims to verify that ME neuter function works correctly.
 1. The output of the command should not contain the information about
     Management Engine Interface.
 
-    Example of unwanted output:
+Example of unwanted output:
 
-    ```bash
-    Intel Corporation Comet Lake Management Engine Interface 
-    ```
+```bash
+Intel Corporation Comet Lake Management Engine Interface 
+```
