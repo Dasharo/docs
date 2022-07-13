@@ -31,7 +31,6 @@ subjected from before the release of the new binary.
 | 20.  | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 21.  | [USB detection][UDT]                              | UDT           | All                                  |
 | 22.  | [USB booting][UBT]                                | UBT           | All                                  |
-| 22.  | [ME neuter][MEN]                                  | MEN           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -55,7 +54,6 @@ subjected from before the release of the new binary.
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
 [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
-[MEN]: ../../unified-test-documentation/dasharo-compatibility/328-me-neuter.md
 
 ## Module: Dasharo security
 
@@ -65,12 +63,14 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+| 5.   | [ME neuter support][MNE]                          | MNE           | All                                  |
+| 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
+[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 
 ## Module: Dasharo performance
