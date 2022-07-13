@@ -78,7 +78,7 @@ booted over network.
 
 ## BIOS backup
 
-<!-- BIOS backup section is very generic and should be treated in such a way.
+<!-- BIOS backup section is very generic and should be treated as such.
 This the section even can be replaced with Dasharo Tools Suite, fwupd, or other
 tools that can simplify the operation for the user -->
 
