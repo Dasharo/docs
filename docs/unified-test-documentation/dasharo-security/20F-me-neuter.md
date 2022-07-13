@@ -1,5 +1,4 @@
-
-# Dasharo Compatibility: ME neuter
+# Dasharo Security: ME neuter
 
 ## Test cases
 
@@ -42,7 +41,7 @@ This test aims to verify that ME neuter function works correctly.
     lspci | grep Management Engine
     ```
 
-1. Note teh results.
+1. Note the results.
 
 **Expected result**
 
@@ -52,5 +51,5 @@ This test aims to verify that ME neuter function works correctly.
 Example of unwanted output:
 
 ```bash
-Intel Corporation Comet Lake Management Engine Interface 
+Intel Corporation Comet Lake Management Engine Interface
 ```
