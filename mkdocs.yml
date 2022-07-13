@@ -98,9 +98,12 @@ nav:
           - 'Hardware Configuration Matrix': variants/protectli_vp2410/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp2410/test-matrix.md
       - 'Protectli VP46xx':
+          - 'Overview': variants/protectli_vp46xx/overview.md
           - 'Releases': variants/protectli_vp46xx/releases.md
           - 'Building manual': variants/protectli_vp46xx/building-manual.md
-          - 'Installation manual': variants/protectli_vp46xx/installation-manual.md
+          - 'Initial deployment': variants/protectli_vp46xx/initial-deployment.md
+          - 'Firmware update': variants/protectli_vp46xx/firmware-update.md
+          - 'Firmware update': variants/protectli_vp46xx/recovery.md
           - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
       - 'MSI PRO Z690-A WIFI DDR4':
