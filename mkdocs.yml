@@ -241,6 +241,7 @@ nav:
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
+              - 'ME neuter': unified-test-documentation/dasharo-security/20F-me-neuter.md
               - 'BIOS lock support': unified-test-documentation/dasharo-security/20J-bios-lock-support.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
