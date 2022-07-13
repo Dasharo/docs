@@ -265,7 +265,7 @@ Version affected: Dasharo Workstation v0.1.
 If you see blinking yellow LED and black screen after reboot:
 1. Unplug the power supply cable
 2. Wait for the 30s
-3. Plug the power supply again (machine should start automatically)
+3. Plug in the power supply again (machine should start automatically)
 
 ### Bug reporting
 
