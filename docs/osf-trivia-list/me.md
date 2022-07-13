@@ -39,6 +39,16 @@ firmware
 ME >= v11.x: Sometimes `mfs` also needs to be preserved. `mfs` is responsible
 for some of the hardware initialization.
 
+## Why is it possible?
+
+- The FPT is not signed, has just a checksum
+- The partitions are individually signed
+- The offset and size of each partition are saved in each FPT entry
+
+![fpt](../images/fpt.png)
+
+Source: [Intel ME myths and reality, Igor Skochinsky & Nicola Corna](https://fahrplan.events.ccc.de/congress/2017/Fahrplan/system/event_attachments/attachments/000/003/391/original/Intel_ME_myths_and_reality.pdf)
+
 ## Soft-disabling ME
 
 <center>
@@ -53,16 +63,6 @@ a HECI `SET_ME_DISABLE` or `HMRFPO_ENABLE` message
 - Functional ME firmware must be present
 - Usually what the "Disable ME" option in some BIOSes does
 - Also offered as an option when buying some laptops (e.g. Dell)
-
-## Why is it possible?
-
-- The FPT is not signed, has just a checksum
-- The partitions are individually signed
-- The offset and size of each partition are saved in each FPT entry
-
-![fpt](../images/fpt.png)
-
-Source: [Intel ME myths and reality, Igor Skochinsky & Nicola Corna](https://fahrplan.events.ccc.de/congress/2017/Fahrplan/system/event_attachments/attachments/000/003/391/original/Intel_ME_myths_and_reality.pdf)
 
 ## HAP / AltMeDisable bit (aka disabling ME)
 
