@@ -16,11 +16,11 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### MEN001.001 Check aviability of ME neuter
+### MNE001.001 ME neuter support (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that ME neuter is disabled.
+This test aims to verify that ME neuter function works correctly.
 
 **Test configuration data**
 
@@ -38,16 +38,19 @@ This test aims to verify that ME neuter is disabled.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the follwing command:
 
-```bash
-lspci
-```
+    ```bash
+    lspci | grep Management Engine
+    ```
 
 1. Note teh results.
 
 **Expected result**
 
-Output after `lspci` command shouldn't contain contorller:
+1. The output of the command should not contain the information about
+    Management Engine Interface.
 
-```bash
-Intel Corporation Comet Lake Management Engine Interface 
-```
+    Example of unwanted output:
+
+    ```bash
+    Intel Corporation Comet Lake Management Engine Interface 
+    ```
