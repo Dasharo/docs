@@ -7,7 +7,7 @@ update.
 
 ## OS booting
 
-For simplicity we using network booted
+For simplicity we recommend using network booted
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
 ### Dasharo (coreboot+SeaBIOS) update
