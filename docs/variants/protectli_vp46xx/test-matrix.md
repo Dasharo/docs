@@ -1,4 +1,4 @@
-# Test matrix - Protectli VP4620
+# Test matrix
 
 ## About
 

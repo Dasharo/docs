@@ -1,11 +1,9 @@
-# Hardware configuration matrix - Protectli VP46XX
+# Hardware configuration matrix
 
 ## Introduction
 
 This document describes the hardware configuration used for validation of the
 coreboot port on the Protectli VP46XX firewall.
-
-## Protectli VP46XX Dasharo v1.0.16
 
 | Component              | Description                                              |
 |------------------------|----------------------------------------------------------|
