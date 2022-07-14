@@ -35,7 +35,7 @@ a test session.
 ### Fails comparison
 
 The following table collects information about all errors detected by the
-certification program. In second column test case name is described, in
+certification program. In the second column test case name is described and in
 third and fourth column the information about bug appearance on vendor/Dasharo
 firmware is shown.
 
