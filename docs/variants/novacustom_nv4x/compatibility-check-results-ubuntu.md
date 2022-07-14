@@ -17,9 +17,9 @@ a test session.
 
 ### Testing assumptions
 
-1. Tests has been conducted on the same OS version (Ubuntu 22.04 LTS).
-1. Tests has been conducted on the same device, firstly with vendor firmware,
-    secondly with Dasharo firmware (version 1.2.1).
+1. Tests have been conducted on the same OS version (Ubuntu 22.04 LTS).
+1. Tests have been conducted on the same device, firstly with vendor firmware
+and secondly with Dasharo firmware (version 1.2.1).
 
 ### Test results
 
@@ -36,18 +36,18 @@ a test session.
 
 The following table collects information about all errors detected by the
 certification program. In the second column test case name is described and in
-the third and fourth columns the information about bug appearance on vendor/Dasharo
-firmware is shown.
+the third and fourth columns, the information about bug appearance on
+vendor/Dasharo firmware is shown.
 
 | No.    | Test case name                                  | Dasharo firmware | Vendor firmware |
 |:------:|:------------------------------------------------|:-----------------|:----------------|
-| 1      | graphics/*                                      | YES              | YES             |
-| 2      | graphics/*                                      | YES              | YES             |
+| 1      | graphics/1_driver_version_TigerLake-LP_GT2__Iris_Xe_Graphics_| YES              | YES             |
+| 2      | graphics/1_driver_version_TigerLake-LP_GT2__Iris_Xe_Graphics_| YES              | YES             |
 | 3      | bluetooth4/beacon_eddystone_url_hci0            | YES              | YES             |
-| 4      | mediacard/storage-preinserted-disk/by-uuid/*    | YES              | YES             |
-| 5      | mediacard/storage-preinserted-disk/by-uuid/*    | YES              | YES             |
-| 6      | mediacard/storage-preinserted-disk/by-uuid/*    | YES              | YES             |
-| 7      | mediacard/storage-preinserted-disk/by-uuid/*    | YES              | YES             |
+| 4      | mediacard/storage-preinserted-disk/by-uuid/0868-01F6| YES              | YES             |
+| 5      | mediacard/storage-preinserted-disk/by-uuid/2adea2a3-f163-4d14-b6f3-b8d628611e23| YES              | YES             |
+| 6      | mediacard/storage-preinserted-disk/by-uuid/2d67f8a9-7f79-4419-b1d3-e096ca010512| YES              | YES             |
+| 7      | mediacard/storage-preinserted-disk/by-uuid/3bb6b676-1c4d-4ffb-8ede-e68f513fcdf1| YES              | YES             |
 | 8      | wireless/wireless_connection_open_ac_nm_wlp55s0 | YES              | YES             |
 | 9      | wireless/wireless_connection_open_ax_nm_wlp55s0 | YES              | YES             |
 | 10     | wireless/wireless_connection_open_bg_nm_wlp55s0 | YES              | YES             |
@@ -111,30 +111,16 @@ firmware is shown.
 | 68     | tpm2.0_4.1.1/tpm2_unseal                        | YES              | YES             |
 | 69     | tpm2.0_4.1.1/tpm2_verifysignature               | YES              | YES             |
 | 70     | audio/detect_sinks_sources                      | YES              | YES             |
-| 71     | suspend/*                                       | YES              | YES             |
-| 72     | suspend/*                                       | YES              | YES             |
+| 71     | suspend/1_driver_version_after_suspend_TigerLake-LP_GT2__Iris_Xe_Graphics__auto| YES              | YES             |
+| 72     | suspend/2_driver_version_after_suspend_TU117M_auto| YES              | YES             |
 | 73     | suspend/audio_before_suspend                    | YES              | YES             |
 | 74     | suspend/bluetooth_obex_send_after_suspend_auto  | YES              | YES             |
 | 75     | suspend/bluetooth_obex_send_before_suspend      | YES              | YES             |
 | 76     | usb/storage-preinserted-disk/by-uuid/0868-01F6  | YES              | YES             |
-| 77     | usb/storage-preinserted-disk/by-uuid/*          | YES              | YES             |
-| 78     | usb/storage-preinserted-disk/by-uuid/*          | YES              | YES             |
-| 79     | usb/storage-preinserted-disk/by-uuid/*          | YES              | YES             |
+| 77     | usb/storage-preinserted-disk/by-uuid/2adea2a3-f163-4d14-b6f3-b8d628611e23| YES              | YES             |
+| 78     | usb/storage-preinserted-disk/by-uuid/2d67f8a9-7f79-4419-b1d3-e096ca010512| YES              | YES             |
+| 79     | usb/storage-preinserted-disk/by-uuid/3bb6b676-1c4d-4ffb-8ede-e68f513fcdf1| YES              | YES             |
 | 80     | usb/storage-preinserted-disk/by-uuid/452E-652F  | YES              | YES             |
-
-*Full names:
-
-* 2. graphics/1_driver_version_TigerLake-LP_GT2__Iris_Xe_Graphics_
-* 3. graphics/1_driver_version_TigerLake-LP_GT2__Iris_Xe_Graphics_
-* 5. mediacard/storage-preinserted-disk/by-uuid/0868-01F6
-* 6. mediacard/storage-preinserted-disk/by-uuid/2adea2a3-f163-4d14-b6f3-b8d628611e23
-* 7. mediacard/storage-preinserted-disk/by-uuid/2d67f8a9-7f79-4419-b1d3-e096ca010512
-* 8. mediacard/storage-preinserted-disk/by-uuid/3bb6b676-1c4d-4ffb-8ede-e68f513fcdf1
-* 70. suspend/1_driver_version_after_suspend_TigerLake-LP_GT2__Iris_Xe_Graphics__auto
-* 71. suspend/2_driver_version_after_suspend_TU117M_auto
-* 77. usb/storage-preinserted-disk/by-uuid/2adea2a3-f163-4d14-b6f3-b8d628611e23
-* 78. usb/storage-preinserted-disk/by-uuid/2d67f8a9-7f79-4419-b1d3-e096ca010512
-* 79. usb/storage-preinserted-disk/by-uuid/3bb6b676-1c4d-4ffb-8ede-e68f513fcdf1
 
 ### Logs from tests
 
@@ -143,4 +129,4 @@ Logs are available under this
 
 ## Summary
 
-Test results are the same for vendor and dasharo firmware, no differences.
+Test results are the same for vendor and dasharo firmware, with no differences.

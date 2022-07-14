@@ -64,7 +64,7 @@ nav:
           - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
           - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
           - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
-          - 'Checkbox results' : variants/novacustom_nv4x/compatibility-check-results-ubuntu.md
+          - 'Checbox results': variants/novacustom_nv4x/compatibility-check-results-ubuntu.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
