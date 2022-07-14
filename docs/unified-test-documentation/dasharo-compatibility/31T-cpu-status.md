@@ -240,7 +240,7 @@ The output of the command should contain information about the CPUs.
 Example results:
 
 ```powershell
-NumberOfCores  
+NumberOfCores
 4
 ```
 
@@ -331,7 +331,7 @@ support. Example outputs:
 - 1st command:
 
 ```powershell
-NumberOfCores  
+NumberOfCores
 4
 ```
 
