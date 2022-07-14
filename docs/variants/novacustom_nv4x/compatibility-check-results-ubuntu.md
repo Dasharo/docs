@@ -5,7 +5,7 @@
 Checkbox is a flexible test automation software. It’s the main tool used in
 Ubuntu Certification program.
 
-You can use checkbox without any modification to check if your system is
+You can use this software without any modification to check if your system is
 behaving correctly or you can develop your own set of tests to check your
 needs.
 
