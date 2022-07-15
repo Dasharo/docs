@@ -11,7 +11,7 @@ subsections you will get to know:
 with commentary presenting Dasharo features.
 
 [Here](../variants/novacustom_nv4x/compatibility-check-results-ubuntu.md) you
-can see checkbox results on dasharo firmware.
+can see checkbox results on Dasharo firmware.
 
 ## Dasharo menu guides
 
