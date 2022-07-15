@@ -122,11 +122,8 @@ content is right.
 
 1. `iPXE Boot` option should be present in the `Network Boot and Utilities`
     menu.
-1. After selecting the `iPXE Boot` option the following menu should appear:
-
-    ```bash
-    ???? Work In Progress - NOT WORKING
-    ```
+1. After selecting the `iPXE Boot` option the autoboot procedure should be
+    started.
 
 ### NBT004.001 iPXE shell is available
 
