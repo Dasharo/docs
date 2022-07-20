@@ -7,6 +7,9 @@ Feel free to test different graphics cards and report your results via
 [Dasharo documentation repository](https://github.com/Dasharo/docs) or by using
 [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues).
 
+If you already have reported your results and you change some hardware
+configuration we would appreciate an additional HCL report.
+
 ## HCL list
 
 GPU Hardware Compatibility List presents the GPUs tested and verified
