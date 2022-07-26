@@ -46,7 +46,7 @@ Platform should remain in boot menu without rebooting during whole observation.
 
 **Test description**
 
-This test aims to verify that DUT booted to firmware will not reboot during
+This test aims to verify that DUT booted to Ubuntu will not reboot during
 given time.
 
 **Test configuration data**
