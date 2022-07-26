@@ -1,4 +1,4 @@
-# Dasharo Performance: Stability
+# Dasharo Performance: Platform stability
 
 ## Test cases
 
