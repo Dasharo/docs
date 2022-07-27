@@ -34,13 +34,16 @@ nav:
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
       - 'Asus KGPE-D16':
-          - 'Releases': variants/asus_kgpe_d16/releases.md
-          - 'Hardware setup': variants/asus_kgpe_d16/setup.md
-          - 'Building manual': variants/asus_kgpe_d16/building-manual.md
-          - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
+          - 'Overview': variants/asus_kgpe_d16/overwiew.md
+          - 'Initial deployment': variants/asus_kgpe_d16/initial-deployment.md
+          - 'Firmware update': variants/asus_kgpe_d16/firmware-update.md
+          - 'Recovery': variants/asus_kgpe_d16/recovery.md
+          - 'Hardware matrix': variants/asus_kgpe_d16/hardware-matrix.md
           - 'Test matrix': variants/asus_kgpe_d16/test-matrix.md
-          - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
-          - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
+          - 'Building manual': variants/asus_kgpe_d16/building-manual.md
+          - 'Fan Control': variants/asus_kgpe_d16/fan-control.md
+          - 'Hardware setup': variants/asus_kgpe_d16/setup.md
+          - 'SPI write protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
       - 'Talos II':
           - 'Releases': variants/talos_2/releases.md
