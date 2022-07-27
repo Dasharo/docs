@@ -45,7 +45,7 @@ To flash Dasharo on the platform, execute the following command - replace
 `asus_kgpe-d16_v0.3.0_2M_vboot_TPM1.2.rom`.
 
 ```bash
-flashrom -p internal -w [path] 
+flashrom -p internal -w [path]
 ```
 
 This will flash the full image, including the Intel ME. The operation requires
