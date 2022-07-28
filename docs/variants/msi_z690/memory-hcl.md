@@ -99,8 +99,10 @@ Legend:
 | Corsair  | [CMK16GX4M2B3200C16][2] |8GB | XMP 2.0: DDR4-3200 PC4-25600 CL16-18-18-36 1.35 V | -/-/&#10004; |
 | Kingston | [KF432C16BB1/16][3] |16GB | JEDEC: DDR4-2400 CL17-17-17 1.2V | -/-/&#10004; |
 | PNY      | [8GBF1X08QFHH38-135-K-HXR][4] |8GB | JEDEC: DDR4-2133 CL15-15-15 1.2V | -/-/&#10004; |
+| Kingston | [KF436C18BBK2/64][5] |32GB | JEDEC: DDR4-3600 CL17-17-17-39 1.2V | &#10004;/&#10004;/- |
 
 [1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
 [2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
 [3]: https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf
 [4]: https://www.pny.com/anarchy-x-ddr4-red?sku=MD16GK2D4320016AXR
+[5]: https://www.kingston.com/datasheets/KF436C18BBK2_64.pdf
