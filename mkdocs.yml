@@ -252,7 +252,7 @@ nav:
               - 'Device boot measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md
               - 'CPU temperature measure': unified-test-documentation/dasharo-performance/401-cpu-temperature.md
               - 'CPU frequency measure': unified-test-documentation/dasharo-performance/402-cpu-frequency.md
-              - 'Platform stability': unified-test-documentation/dasharo-performance/404-stability.md
+              - 'Platform stability': unified-test-documentation/dasharo-performance/404-platform-stability.md
       - 'Roadmap': ecosystem/roadmap.md
   - 'Quality Principles': quality-principles/introduction.md
     # - 'Introduction':
