@@ -5,9 +5,6 @@ update.
 
 ## Build flashrom
 
-Currently, the latest flashrom release lacks support for Comet Lake U internal
-flashing. Because of this, we need to build flashrom from source.
-
 Install build dependencies:
 
 ```bash

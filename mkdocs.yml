@@ -34,7 +34,8 @@ nav:
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
       - 'Asus KGPE-D16':
-          - 'Overview': variants/asus_kgpe_d16/overwiew.md
+          - 'Overview': variants/asus_kgpe_d16/overview.md
+          - 'Relases': variants/asus_kgpe_d16/relases.md
           - 'Initial deployment': variants/asus_kgpe_d16/initial-deployment.md
           - 'Firmware update': variants/asus_kgpe_d16/firmware-update.md
           - 'Recovery': variants/asus_kgpe_d16/recovery.md

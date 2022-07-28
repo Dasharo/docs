@@ -1,6 +1,6 @@
 # Overview
 
-* [Relases]
+* [Relases](releases.md)
 * [Initial deployment](initial-deployment.md)
 * [Firmware update](firmware-update.md)
 * [Recovery](recovery.md)

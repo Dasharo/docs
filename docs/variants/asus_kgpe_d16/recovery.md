@@ -4,13 +4,13 @@
 
 ## **Prequisitions**
 
-1. To proceed with recovery `.rom` file with backup vendor firmware will be
-    neccesary eg. `backup.rom`.
+To proceed with recovery `.rom` file with backup vendor firmware will be
+neccesary eg. `backup.rom`.
 
-    Backup file should be generated before making any changes in device flash
-    chip according to documentation in
-    [Reading flash contents](initial-deployment.md#reading-flash-contents)
-    section.
+Backup file should be generated before making any changes in device flash
+chip according to documentation in
+[Reading flash contents](initial-deployment.md#reading-flash-contents)
+section.
 
 ---
 

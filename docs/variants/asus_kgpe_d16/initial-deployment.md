@@ -53,10 +53,7 @@ a hard reset of the platform. To perform a hard reset:
 
 1. Power off the platform. Note, it may not power off completely due to flashed
    ME.
-2. Disconnect power supply from the board when OS finishes all tasks after
+1. Disconnect power supply from the board when OS finishes all tasks after
    power off (the screen goes dark or black).
-3. Disconnect the RTC/CMOS battery OR clear the CMOS using the pin header
-   located near memory slots. Wait about half a minute (unshort the pins).
-4. Connect the power supply back.
-5. The platform should power on normally now. You can connect the battery back
+1. The platform should power on normally now. You can connect the battery back
    if it was disconnected.
