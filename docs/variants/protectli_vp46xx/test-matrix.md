@@ -80,7 +80,9 @@ subjected from before the release of the new binary.
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
 | 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
 | 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
+| 4.   | [Platform stability][STB]                         | STB           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
+[STB]: ../../unified-test-documentation/dasharo-performance/404-platform-stability.md
