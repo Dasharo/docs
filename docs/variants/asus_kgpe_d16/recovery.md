@@ -4,8 +4,8 @@
 
 ## **Prequisitions**
 
-To proceed with recovery `.rom` file with backup vendor firmware will be
-neccesary eg. `backup.rom`.
+To proceed with the recovery procedurethe backup with the  vendor firmware will
+be neccesary eg. `backup.rom`.
 
 Backup file should be generated before making any changes in device flash
 chip according to documentation in
@@ -19,4 +19,4 @@ section.
 If platform is booting properly it's possible to recover vendor firmware using
 procedure described in
 [Flashing Dasharo](initial-deployment.md#flashing-dasharo) section, setting path
-to `backup.rom` with vendor firmware as `[path]` argument.
+to file with vendor firmware as `[path]` argument.
