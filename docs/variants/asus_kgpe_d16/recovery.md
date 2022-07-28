@@ -2,7 +2,7 @@
 
 ---
 
-## **Prequisitions**
+## Prequisitions
 
 To proceed with the recovery procedurethe backup with the  vendor firmware will
 be neccesary eg. `backup.rom`.
@@ -14,7 +14,7 @@ section.
 
 ---
 
-## **Internal flashing**
+## Internal flashing
 
 If platform is booting properly it's possible to recover vendor firmware using
 procedure described in
