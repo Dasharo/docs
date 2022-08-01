@@ -86,14 +86,14 @@ than the maximum allowed temperature after stress test.
 1. Open a terminal window and run the following command to turn on the stressor:
 
     ```bash
-    stress-ng --cpu 0 --tz -t 60s
+    stress-ng --cpu 0 --tz -t 5m
     ```
 
     Stress test duration time might be changed by change te value of the
     parameter `-t`.
 
-1. After end the stress test open a terminal window and run the follwing
-    command:
+1. While test runs, open a terminal window and run the follwing command several
+times to check temperatures:
 
     ```bash
     sensors
@@ -115,6 +115,6 @@ Example output:
     Core 3:        +51.0°C  (high = +100.0°C, crit = +100.0°C)
 ```
 
-The displayed temperature should be not higher than displayed high and
-critical temperatures. Also the temperature should be not higher than
-temperature declared by the DUT producer.
+The displayed temperatures should be not higher than displayed high and
+critical. Also the temperatures should be not higher than
+those declared by the DUT's producer.
