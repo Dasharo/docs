@@ -7,14 +7,6 @@ environment, with a goal of deploying, updating and maintaining firmware on
 Dasharo supported devices. For example, it can be used to update the firmware
 on a device, even when no OS is currently installed.
 
-## Distribution methods
-
-It can be distributed in various ways. Currently, there are two distribution
-options:
-
-* bootable USB stick image,
-* bootable over network (iPXE).
-
 ## Flavors
 
 There is a common base, but there might be multiple flavors of the DTS images.
@@ -29,9 +21,17 @@ Currently, there are:
     - on top of that, provides tools for automatic firmware deployment and
       rollback (switching to Dasharo back and forth)
 
+## Distribution methods
+
+It can be distributed in various ways. Currently, there are two distribution
+options:
+
+* bootable USB stick image,
+* bootable over network (iPXE).
+
 ## Bootable USB stick
 
-This documentation is compatible with the `v1.0.0` version of the DTS.
+This section describes how to boot DTS using USB stick.
 
 ### Requirements
 
@@ -42,7 +42,7 @@ This documentation is compatible with the `v1.0.0` version of the DTS.
 
 ### Launching DTS
 
-* Flash the downloaded `dts-base-image-ce-v1.0.0.wic.gz` image onto USB stick.
+* Flash the downloaded `dts-base-image-ce-v1.0.0.wic.gz` image onto USB stick,
     - you can use cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
     - you can also use `dd` to flash from command line
 
@@ -50,21 +50,13 @@ This documentation is compatible with the `v1.0.0` version of the DTS.
 gzip -cdk dts-base-image-ce-v1.0.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 ```
 
-* Insert the USB stick to a USB in your device
-
-* Boot from the USB stick
-
-### Using DTS
-
-* A menu should appear
-
-* Type `1` and click `Enter` to dump logs from your device
-
-![](../images/dts-hcl-run.png)
+* insert the USB stick to a USB in your device,
+* boot from the USB stick,
+* the DTS menu will now appear.
 
 ## Bootable over network
 
-This documentation is compatible with the `v1.0.0` version of the DTS.
+This section describes how to boot DTS using iPXE.
 
 ### Requirements
 
@@ -76,19 +68,33 @@ This documentation is compatible with the `v1.0.0` version of the DTS.
 
 To access Dasharo Tools Suite:
 
-* Attach a wired network cable to the device's Ethernet port
-* Power on the device, holding down the Boot Menu entry key
-* In the Boot Menu, select the `iPXE Network Boot` option
-* In the Network Boot menu, select the `Dasharo Tools Suite` option
+* attach a wired network cable to the device's Ethernet port,
+* power on the device, holding down the Boot Menu entry key,
+* in the Boot Menu, select the `iPXE Network Boot` option,
+* in the Network Boot menu, select the `Dasharo Tools Suite` option,
+* the DTS menu will now appear.
 
-The DTS menu will now appear.
+## DTS CE functionality
 
-### Using DTS
+This section describes functionality of Dasharo Tools Suite in Community
+Edition.
+
+## Dasharo HCL Report
+
+DTS allows to generate a package with logs containing hardware information. To
+create one, choose option number 1 and check out the disclaimer. If you would
+like to send the report to our servers, please remember about connecting the
+ethernet cable.
+
+![](../images/dts-hcl-run.png)
+
+## Dasharo firmware update
 
 Within DTS, you may use the `flashrom` and `fwupdmgr` utilities to update,
 downgrade, or reinstall your firmware.
 
-To update your firmware to the latest version:
+To update your firmware to the latest version first choose option number 9 to
+drop to shell a next run:
 
 ```bash
 fwupdmgr refresh
