@@ -12,8 +12,8 @@ on a device, even when no OS is currently installed.
 It can be distributed in various ways. Currently, there are two distribution
 options:
 
-* bootable USB stick image.
-* bootable over network (iPXE),
+* bootable USB stick image,
+* bootable over network (iPXE).
 
 ## Flavors
 
@@ -31,23 +31,23 @@ Currently, there are:
 
 ## Bootable USB stick
 
-This documentation is compatible with the `v0.3.0` version of the DTS.
+This documentation is compatible with the `v1.0.0` version of the DTS.
 
 ### Requirements
 
 * USB stick (at least 1GB)
 * Wired network connection
 * Secure Boot disabled
-* [DTS CE v0.3.0 downloaded](https://cloud.3mdeb.com/index.php/s/Q7pAppm4gnRCef9/download)
+* [DTS CE v1.0.0 downloaded](https://cloud.3mdeb.com/index.php/s/aB6dCdKLB33oZmC)
 
 ### Launching DTS
 
-* Flash the downloaded `dts-base-image-ce-v0.3.0.wic.gz` image onto USB stick.
+* Flash the downloaded `dts-base-image-ce-v1.0.0.wic.gz` image onto USB stick.
     - you can use cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
     - you can also use `dd` to flash from command line
 
 ```bash
-gzip -cdk dts-base-image-ce-v0.3.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
+gzip -cdk dts-base-image-ce-v1.0.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 ```
 
 * Insert the USB stick to a USB in your device
@@ -58,13 +58,13 @@ gzip -cdk dts-base-image-ce-v0.3.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=pr
 
 * A menu should appear
 
-* Enter `1` to dump logs with hardware from your device
+* Type `1` and click `Enter` to dump logs from your device
 
 ![](../images/dts-hcl-run.png)
 
 ## Bootable over network
 
-This documentation is compatible with the `v0.1.0` version of the DTS.
+This documentation is compatible with the `v1.0.0` version of the DTS.
 
 ### Requirements
 
@@ -80,9 +80,8 @@ To access Dasharo Tools Suite:
 * Power on the device, holding down the Boot Menu entry key
 * In the Boot Menu, select the `iPXE Network Boot` option
 * In the Network Boot menu, select the `Dasharo Tools Suite` option
-* Login as `root` (no password)
 
-The DTS shell will now appear.
+The DTS menu will now appear.
 
 ### Using DTS
 
