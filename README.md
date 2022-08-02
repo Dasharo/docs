@@ -82,11 +82,11 @@ no more sections:
         - 'Firmware update': variants/<vendor_model>/firmware-update.md
         - 'Recovery': variants/<vendor_model>/recovery.md
         - 'Hardware Configuration Matrix': variants/<vendor_model>/hardware-matrix.md
-        - 'Test Matrix': variants/<vendor_model>/hardware-matrix.md
+        - 'Test Matrix': variants/<vendor_model>/test-matrix.md
         - 'Community Test Results (optional)': variants/<vendor_model>/community-test-results.md
         - 'Security and Privacy (optional)': variants/<vendor_model>/security-and-privacy.md
         - 'Other manuals (optional)': variants/<vendor_model>/other-manuals.md
-        - 'FAQ': variants/<vendor_model>/hardware-matrix.md
+        - 'FAQ (optional)': variants/<vendor_model>/faq.md
 ```
 
 - `Vendor` can have multiple meanings, but it can be a vendor who sells the
