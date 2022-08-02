@@ -111,11 +111,7 @@ Dasharo refer to [initial deployment manual](initial-deployment.md).
     ```
 
     ```bash
-    cp configs/config.dell_optiplex_9010 .config
-    ```
-
-    ```bash
-    sed -i 's/CONFIG_DEFAULT_CONSOLE_LOGLEVEL_0=y/CONFIG_DEFAULT_CONSOLE_LOGLEVEL_8=y/g' .config
+    cp configs/config.dell_optiplex_9010.debug .config
     ```
 
     ```bash
