@@ -28,7 +28,8 @@ flashing the platform with the Dasharo firmware is correct.
 
 **Expected result**
 
-Secure Boot state should be compatibile with `platform settings`.
+`Secure Boot State` field should iforms that the current state of 
+Secure Boot is `Disabled`.
 
 ## SBO002.001 UEFI Secure Boot (Ubuntu 22.04)
 
