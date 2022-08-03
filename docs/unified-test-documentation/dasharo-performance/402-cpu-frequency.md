@@ -34,7 +34,7 @@ initial frequency after booting into the OS.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     cat /proc/cpuinfo | grep -i mhz
@@ -143,6 +143,7 @@ expected frequency.
     cat /proc/cpuinfo | grep -i mhz
     ```
 
+1. Repeat command every one minute, for 15 minutes.
 1. Compare the results.
 
 **Expected result**
@@ -211,6 +212,7 @@ expected frequency.
 while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
+1. Repeat command every one minute, for 15 minutes.
 1. Note the results.
 
 **Expected result**
@@ -274,6 +276,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
     cat /proc/cpuinfo | grep -i mhz
     ```
 
+1. Repeat command every one minute, for 15 minutes.
 1. Compare the results.
 
 **Expected result**
@@ -342,6 +345,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
+1. Repeat command couple times
 1. Note the results.
 
 **Expected result**
@@ -402,10 +406,11 @@ frequency after stress test.
 1. Run the follwing command in the terminal to start the stress test:
 
     ```bash
-    stress-ng --cpu 0 --timer 32 --timer-freq 1000000 -t 60s --cpu-load 100
+    stress-ng --cpu 0 --timer 32 --timer-freq 1000000 -t 5m --cpu-load 100
     ```
 
-1. After ending the stress test run the following command in the terminal:
+1. While stress test is running use the following command several times and
+note the results:
 
     ```bash
     cat /proc/cpuinfo | grep -i mhz
@@ -480,6 +485,7 @@ expected frequency after stress test.
 while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
+1. Repeat command couple times
 1. Note the results.
 
 **Expected result**
@@ -543,7 +549,8 @@ frequency after stress test. The DUT during test works on battery.
     stress-ng --cpu 0 --timer 32 --timer-freq 1000000 -t 60s --cpu-load 100
     ```
 
-1. After ending the stress test run the following command in the terminal:
+1. While stress test is running use the following command several times and
+note the results:
 
     ```bash
     cat /proc/cpuinfo | grep -i mhz
@@ -618,6 +625,7 @@ expected frequency after stress test.
 while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
+1. Repeat command couple times
 1. Note the results.
 
 **Expected result**
@@ -631,7 +639,7 @@ while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\
     2419
     ```
 
-1. None of displayed values ​​that follow the second command should be higher than
+1. None of displayed values that follow the second command should be higher than
    maximum frequency.
 
     Example output:
