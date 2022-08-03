@@ -1,5 +1,7 @@
 # Dasharo Tools Suite
 
+![](../images/dts-logo.png)
+
 ## Introduction
 
 Dasharo Tools Suite (DTS) is a set of tools running in a minimal Linux
@@ -21,6 +23,28 @@ Currently, there are:
     - on top of that, provides tools for automatic firmware deployment and
       rollback (switching to Dasharo back and forth)
 
+## Releases
+
+This section provide links and changelogs of DTS CE version started from release
+v1.0.0.
+
+### v1.0.0
+
+#### Images
+
+* [USB bootable DTS CE v1.0.0 image](https://cloud.3mdeb.com/index.php/s/aB6dCdKLB33oZmC/download)
+
+#### Changelog
+
+* Auto-login functionality
+* User menu
+* [Dasharo HCL Report](#dasharo-hcl-report) - the ability to automatically dump
+  device information and send it to 3mdeb servers
+* Possibility to manually [update the Dasharo firmware](#dasharo-firmware-update)
+* [Bootable via iPXE](#bootable-over-network)
+* [Bootable via USB](#bootable-usb-stick)
+* Tested on NovaCustom NV4x, Dell OptiPlex 7010/9010
+
 ## Distribution methods
 
 It can be distributed in various ways. Currently, there are two distribution
@@ -35,20 +59,25 @@ This section describes how to boot DTS using USB stick.
 
 ### Requirements
 
-* USB stick (at least 1GB)
+* USB stick (at least 2GB)
 * Wired network connection
 * Secure Boot disabled
-* [DTS CE v1.0.0 downloaded](https://cloud.3mdeb.com/index.php/s/aB6dCdKLB33oZmC)
+* Latest image from [releases](#releases) section
 
 ### Launching DTS
 
-* Flash the downloaded `dts-base-image-ce-v1.0.0.wic.gz` image onto USB stick,
+To access Dasharo Tools Suite:
+
+* flash the downloaded image onto USB stick,
     - you can use cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
     - you can also use `dd` to flash from command line
 
 ```bash
-gzip -cdk dts-base-image-ce-v1.0.0.wic.gz | sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
+gzip -cdk dts-base-image-ce-v1.0.0.wic.gz | \
+sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 ```
+
+> Note: this is an example for v1.0.0 image.
 
 * insert the USB stick to a USB in your device,
 * boot from the USB stick,
@@ -77,7 +106,10 @@ To access Dasharo Tools Suite:
 ## DTS CE functionality
 
 This section describes functionality of Dasharo Tools Suite in Community
-Edition.
+Edition. These are:
+
+* Dasharo HCL Report,
+* Dasharo firmware update.
 
 ## Dasharo HCL Report
 
@@ -100,3 +132,10 @@ drop to shell a next run:
 fwupdmgr refresh
 fwupdmgr update
 ```
+
+## Reporting issues
+
+Thank you for using Dasharo Tools Suite Community Edition. If you have
+encountered any problems with this version, or would like to provide feedback
+for us - please open an issue on [Dasharo
+issues](https://github.com/Dasharo/dasharo-issues).
