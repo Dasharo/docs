@@ -63,7 +63,7 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
 | 2.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
-| 3.   | [Secure Boot support][SBO]                        | SBO           | SBO002.001, SBO002.002               |
+| 3.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
