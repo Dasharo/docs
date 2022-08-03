@@ -72,7 +72,7 @@ subjected from before the release of the new binary.
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
 | 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
-| 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+| 4.   | [Secure Boot support][SBO]                        | SBO           | SBO002.001, SBO002.002               |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -144,7 +144,7 @@ subjected from before the release of the new binary.
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
 | 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
-| 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+| 4.   | [Secure Boot support][SBO]                        | SBO           | SBO002.001, SBO002.002               |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
