@@ -86,14 +86,14 @@ than the maximum allowed temperature after stress test.
 1. Open a terminal window and run the following command to turn on the stressor:
 
     ```bash
-    stress-ng --cpu 0 --tz -t 5m
+    stress-ng --cpu 0 --tz -t 60m
     ```
 
     Stress test duration time might be changed by change te value of the
     parameter `-t`.
 
-1. While test runs, open a terminal window and run the follwing command several
-times to check temperatures:
+1. While test runs, open a terminal window and run the following command every
+   one minute until the test finishes, to check the current temperature.
 
     ```bash
     sensors
