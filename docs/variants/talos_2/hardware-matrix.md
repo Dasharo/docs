@@ -5,23 +5,20 @@
 This document describes the hardware configuration used for validation of the
 coreboot port on the Talos II platform.
 
-## Board No. 1
+## Talos II
 
 | Component                      | Description                                                   |
 |--------------------------------|---------------------------------------------------------------|
-| **CPU**                        | TBD                                                           |
-|                                | TBD                                                           |
+| **CPU**                        | IBM POWER9 “Sforza”                                           |
 |                                | CPU Cooler                                                    |
-| **RAM**                        | TBD                                                           |
-| **Flash memory**               | TBD                                                           |
+| **RAM**                        | Crucial CT8G4RF88266                                          |
+| **Flash memory**               | Adesto 45DB021E                                               |
 | **Network**                    | Local network wired connection                                |
-| **Attached devices**           | 1. TBD                                                        |
-|                                | 2. TBD                                                        |
-| **Power Supply**               | TBD W ATX type power supply                                   |
+| **Attached devices**           | 1. SanDisk USB 3.2Gen1 16 GB                                  |
+| **Ethernet**                   | 2x Broadcom BCM5719                                           |
+| **Power Supply**               | Corsair TX550M                                                |
 | **Power Control**              | 1. Sonoff S20 switch                                          |
-|                                | 2. Goldpin cables (RTE <-> Board connection)                  |
-| **Remote Testing Environment** | 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232       |
-|                                | 2. Goldpin cables + qspimux (RTE <-> flash memory connection) |
+|                                | 2. OpenBMC                                                    |
 
 Following RAM configurations were tested and are proved to be properly
 initialized.
