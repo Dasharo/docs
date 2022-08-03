@@ -150,10 +150,10 @@ nav:
 #     - 'Community Edition': inquiries/community-edition.md
 #     - 'Sponsorware': inquiries/sponsorware.md
 #     - 'Commercial inquiries': inquiries/commercial-inquiries.md
+  - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
   - 'Knowledge base':
       - 'Common coreboot documentation':
           - 'Vboot signing': common-coreboot-docs/vboot_signing.md
-          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Dasharo menu documentation':
           - 'Overview': dasharo-menu-docs/overview.md
       - 'Checkbox certification software usage': common-coreboot-docs/checkbox.md
