@@ -39,7 +39,7 @@ the DUT reset, it is seen from the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -89,7 +89,7 @@ the DUT reset, it is seen from the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
