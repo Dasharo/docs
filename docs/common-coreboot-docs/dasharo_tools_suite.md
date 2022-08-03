@@ -126,7 +126,7 @@ Within DTS, you may use the `flashrom` and `fwupdmgr` utilities to update,
 downgrade, or reinstall your firmware.
 
 To update your firmware to the latest version first choose option number 9 to
-drop to shell a next run:
+drop to Shell and run:
 
 ```bash
 fwupdmgr refresh
