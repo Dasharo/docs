@@ -28,7 +28,7 @@ flashing the platform with the Dasharo firmware is correct.
 
 **Expected result**
 
-`Secure Boot State` field should iforms that the current state of 
+`Secure Boot State` field should iforms that the current state of
 Secure Boot is `Disabled`.
 
 ## SBO002.001 UEFI Secure Boot (Ubuntu 22.04)
@@ -68,7 +68,7 @@ the DUT reset, it is seen from the OS.
 1. Open a terminal window and run the follwing command:
 
     ```bash
-    cat /proc/cpuinfo | grep -i mhz
+    sudo dmesg | grep secureboot
     ```
 
 1. Note the results.
@@ -128,6 +128,6 @@ the DUT reset, it is seen from the OS.
 The output of the command should return the information, that Secure Boot is
 enabled:
 
-```bash
+```powershell
 True
 ```
