@@ -1,4 +1,4 @@
-# Insurgo Dasharo on Talos II - initial deployment
+# Initial deployment
 
 ## coreboot installation
 
