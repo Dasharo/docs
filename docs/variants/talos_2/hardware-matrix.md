@@ -14,11 +14,11 @@ coreboot port on the Talos II platform.
 | **RAM**                        | Crucial CT8G4RF88266                                          |
 | **Flash memory**               | Adesto 45DB021E                                               |
 | **Network**                    | Local network wired connection                                |
-| **Attached devices**           | 1. SanDisk USB 3.2Gen1 16 GB                                  |
+| **Attached devices**           | SanDisk USB 3.2Gen1 16 GB                                     |
 | **Ethernet**                   | 2x Broadcom BCM5719                                           |
 | **Power Supply**               | Corsair TX550M                                                |
-| **Power Control**              | 1. Sonoff S20 switch                                          |
-|                                | 2. OpenBMC                                                    |
+| **Power Control**              | Sonoff S20 switch                                             |
+| **Remote Control**             | OpenBMC                                                       |
 
 Following RAM configurations were tested and are proved to be properly
 initialized.
