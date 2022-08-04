@@ -51,9 +51,11 @@ nav:
           - 'Releases': variants/talos_2/releases.md
           - 'Building manual': variants/talos_2/building-manual.md
           - 'Initial deployment': variants/talos_2/initial-deployment.md
+          - 'Firmware update': variants/talos_2/firmware-update.md
+          - 'Recovery': variants/talos_2/recovery.md
           - 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
-          - 'Conference materials': variants/talos_2/conferences.md
+          - 'Other manuals': variants/talos_2/other-manuals.md
       - 'NovaCustom NV4x':
           - 'Overview': variants/novacustom_nv4x/overview.md
           - 'Releases': variants/novacustom_nv4x/releases.md
