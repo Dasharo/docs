@@ -210,7 +210,7 @@ echo 1 > /sys/class/gpio/gpio406/value
 echo 1 > /sys/class/gpio/gpio404/value
 ```
 
-```
+```bash
 cat > dell_optiplex.layout <<EOF
 00000000:00000fff fd
 00001000:00004fff gbe

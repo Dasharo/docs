@@ -114,7 +114,6 @@ Download the Dell OptiPlex 7010/9010 Dasharo from the
 [release section](releases.md#binaries) or
 [build from source](building-manual.md).
 
-
 ## Non-redistributable blobs
 
 Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown license or
@@ -135,7 +134,6 @@ Dell OptiPlex 7010/9010 SFF.
 components in
 [Dasharo fwdeploy](https://github.com/Dasharo/fwdeploy/blob/main/blobs/dell_optiplex_9010.sha256)
 project. Feel free to report SHA256 of blobs from your platform.
-
 <!--
 TODO: publish known valid hashes for given coreboot version
 TODO: add to script verification of expected hash of coreboot.rom
@@ -224,14 +222,13 @@ If you face any issues, please refer to the [troubleshooting section](#troublesh
 ## Troubleshooting
 
 If you do not see the logo after a few seconds, something probably went wrong,
-or you encountered a bug. If the LED on the power button shines white, that means the
-platform booted correctly.
+or you encountered a bug. If the LED on the power button shines white, that
+means the platform booted correctly.
 
 ![](../../images/white_led.jpg)
 
 If the power button LED constantly shines in orange color, that means you have
 hit an error. The LED will start blinking soon.
-
 
 ![](../../images/orange_led.jpg)
 If you see the logo and after that system does not starts (black screen), please
