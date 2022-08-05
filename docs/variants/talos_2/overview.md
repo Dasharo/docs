@@ -1,18 +1,20 @@
 # Overview
 
-* [Releases](releases.md) - list of all releases
-* [Building manual](building-manual.md) - how to build Dasharo compatible with
-  the Talos II
-* [Initial deployment](initial-deployment.md) - how to install Dasharo
-  firmware on the Talos II
-* [Firmware update](firmware-update.md) - explain supported Dasharo open-source
-  firmware update methods.
-* [Recovery](recovery.md) - gathers information how to recover from potential
-  failure.
-* [Hardware configuration matrix](hardware-matrix.md) - definition of hardware
-  configuration used during validation
-* [Test matrix](test-matrix.md) - validation scope for the Talos II
-* [Conferences](conferences.md) - materials from the conferences held
+* [Releases](releases.md) - grups information about all releases.
+* [Building manual](building-manual.md) - describes how to build Dasharo for
+    Talos II.
+* [Initial deployment](initial-deployment.md) - describes initial Dasharo
+    deployment methods (i. e. flashing new firmware) for Talos II.
+* [Firmware update](firmware-update.md) - explains supported Dasharo
+    open-source firmware update methods.
+* [Recovery](recovery.md) - gathers information on how to recover platform from
+    potential failure.
+* [Hardware configuration matrix](hardware-matrix.md)  describes platform's
+    hardware configuration used during Dasharo firmware validation procedure.
+* [Test matrix](test-matrix.md) - describes validation scope used during
+    Dasharo firmware validation procedure.
+* [Conferences](conferences.md) - includes information from various conferences
+    about POWER architecture support in coreboot.
 
 ## Useful documents
 
