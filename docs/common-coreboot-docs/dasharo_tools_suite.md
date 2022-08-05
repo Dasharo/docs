@@ -32,7 +32,14 @@ v1.0.0.
 
 #### Images
 
-* [USB bootable DTS CE v1.0.0 image](https://cloud.3mdeb.com/index.php/s/aB6dCdKLB33oZmC/download)
+* [USB bootable DTS CE v1.0.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz)
+* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz.sha256)
+
+  ```bash
+  # assuming all files have been downloaded to the same directory without
+  # changing names
+  sha256sum -c [sha256 file]
+  ```
 
 #### Changelog
 
