@@ -32,7 +32,8 @@ pflash -E -p /tmp/talos.pnor
 
 ## Restore Petitboot
 
-Gdy chcesz używać Petitboota, a zainstalowałeś już system heads postępuj zgodnei z tą procedurą:
+If you want to use Petitboot, and you have already installed system Heads,
+follow this procedure:
 
 1. Download the newest `PNOR` package from
     [raptor wiki](https://wiki.raptorcs.com/wiki/Talos_II/Firmware).
