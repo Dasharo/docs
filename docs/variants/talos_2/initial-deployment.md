@@ -1,4 +1,4 @@
-# Insurgo Dasharo on Talos II - installation manual
+# Initial deployment
 
 ## coreboot installation
 
@@ -116,7 +116,7 @@ so, here's a more convenient one that uses `mboxctl`:
     the flash and target file must be specified. New command looks like this:
 
     ```shell
-    root@talos:~# pflash -P <partition> -p <partition>.bin -F /tmp/talos.pnor
+    root@talos:~# pflash -f -P <partition> -p <partition>.bin -F /tmp/talos.pnor
     ```
 
     Since the real flash device is not used, backup can be skipped. The rest is
@@ -124,12 +124,12 @@ so, here's a more convenient one that uses `mboxctl`:
 
     ```shell
     # bootblock
-    pflash -P HBB -p /tmp/bootblock.signed.ecc -F /tmp/talos.pnor
+    pflash -f -P HBB -p /tmp/bootblock.signed.ecc -F /tmp/talos.pnor
     # coreboot
-    pflash -P HBI -p /tmp/coreboot.rom.signed.ecc -F /tmp/talos.pnor
+    pflash -f -P HBI -p /tmp/coreboot.rom.signed.ecc -F /tmp/talos.pnor
 
     # Heads
-    pflash -P BOOTKERNEL -p /tmp/zImage.bundled -F /tmp/talos.pnor
+    pflash -f -P BOOTKERNEL -p /tmp/zImage.bundled -F /tmp/talos.pnor
     ```
 
 1. Mount the file as flash device:

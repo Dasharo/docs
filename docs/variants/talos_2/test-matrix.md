@@ -13,16 +13,16 @@ subjected from before the release of the new binary.
 | 2.   | [Petitboot payload support][PBT]                  | PBT           | All                                  |
 | 3.   | [Heads bootloader support][HDS]                   | HDS           | All                                  |
 | 4.   | [Device Tree][DVT]                                | DVT           | All                                  |
-| 5.   | [USB detection][USB]                              | USB           | All                                  |
+| 5.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 6.   | [USB booting][UBT]                                | UBT           | All                                  |
-| 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT002.001                           |
+| 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.001                           |
 | 8.   | [CPU status][CPU]                                 | CPU           | All                                  |
 
 [CBP]: ../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
 [PBT]: ../../unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
 [HDS]: ../../unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
 [DVT]: ../../unified-test-documentation/dasharo-compatibility/31W-device-tree.md
-[USB]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
+[UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
 [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md

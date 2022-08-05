@@ -7,6 +7,7 @@ coreboot port on ASUS KGPE-D16 platforms.
 
 | Component                  | Description                                                  |
 |----------------------------|--------------------------------------------------------------|
+| Board revision             | 1.03G                                                        |
 | CPU                        | AMD Opteron(TM) Processor 6282 SE                            |
 |                            | CPU Cooler                                                   |
 |                            | AMD Opteron(TM) Processor 6282 SE                            |
@@ -27,6 +28,7 @@ coreboot port on ASUS KGPE-D16 platforms.
 
 | Component                  | Description                                                          |
 |----------------------------|----------------------------------------------------------------------|
+| Board revision             | 1.03G                                                        |
 | CPU                        | AMD Opteron(TM) Processor 6282 SE                                    |
 |                            | CPU Cooler                                                           |
 | RAM                        | DDR3 16GB Kingston KVR16R11D4/16                                     |
