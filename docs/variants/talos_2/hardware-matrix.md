@@ -12,7 +12,7 @@ coreboot port on the Talos II platform.
 | **CPU**                        | IBM POWER9 “Sforza”                                           |
 |                                | CPU Cooler                                                    |
 | **RAM**                        | Crucial CT8G4RF88266                                          |
-| **Flash memory**               | Adesto 45DB021E                                               |
+| **Flash memory**               | Micron MT25QL512ABB8ESF-0SIT                                  |
 | **Network**                    | Local network wired connection                                |
 | **Attached devices**           | SanDisk USB 3.2Gen1 16 GB                                     |
 | **Ethernet**                   | 2x Broadcom BCM5719                                           |
