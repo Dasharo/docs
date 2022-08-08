@@ -128,33 +128,3 @@ hardware write protection on the DUT.
 
 1. Protection range: read from the command output and set before should be the
     same.
-
-### CBMEM003.001 Serial boot measure: coreboot booting time after system reboot
-
-**Test description**
-
-This test aims to verify whether the DUT boots after system reboot and how long
-this process takes. This test case may be re-done several times to to average
-the results and specify the platform stability.
-
-**Test configuration data**
-
-1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = `Debian 11.0`
-
-**Test setup**
-
-1. Proceed with the [Common](#common) section.
-
-**Test steps**
-
-1. Open a terminal window and execute the following command:
-
-```bash
-sudo ./cbmem -T
-```
-
-**Expected result**
-
-The output of the command should contain the information about duration of
-all boot stages.
