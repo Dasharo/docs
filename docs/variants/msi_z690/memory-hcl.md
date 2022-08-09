@@ -102,6 +102,7 @@ Legend:
 | Kingston | [KF432C16BB1/16][3] |16GB | JEDEC: DDR4-2400 CL17-17-17 1.2V | -/&#10004;&sup1;/&#10004; |
 | PNY      | [8GBF1X08QFHH38-135-K-HXR][4] |8GB | JEDEC: DDR4-2133 CL15-15-15 1.2V | -/&#10004;&sup1;/&#10004; |
 | Kingston | [KF436C18BBK2/64][5] |32GB | JEDEC: DDR4-2400 CL17-17-17-39 1.2V | &#10004;/&#10004;/- |
+| Kingston | [KHX2666C16/16G][8] |16GB | JEDEC: DDR4-2133 CL16-18-18-39 1.2V | &#10004;/&#10004;/&#10004; |
 
 1) Tested in 2x2 mixed configuration
 
@@ -119,3 +120,4 @@ Legend:
 [5]: https://www.kingston.com/datasheets/KF436C18BBK2_64.pdf
 [6]: https://www.kingston.com/memory/gaming/kingston-fury-beast-ddr5-memory
 [7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
+[8]: https://www.kingston.com/datasheets/HX426C16FRK4_64.pdf
