@@ -68,7 +68,7 @@ This section describes how to boot DTS using USB stick.
 
 * USB stick (at least 2GB)
 * Wired network connection
-* Secure Boot disabled
+* [Secure Boot disabled](#common-requirements---disabling-secure-boot)
 * Latest image from [releases](#releases) section
 
 ### Launching DTS
@@ -98,7 +98,7 @@ This section describes how to boot DTS using iPXE.
 
 * Dasharo device with DTS functionality integrated
 * Wired network connection
-* Secure Boot disabled
+* [Secure Boot disabled](#common-requirements---disabling-secure-boot)
 
 ### Launching DTS
 
@@ -109,6 +109,28 @@ To access Dasharo Tools Suite:
 * in the Boot Menu, select the `iPXE Network Boot` option,
 * in the Network Boot menu, select the `Dasharo Tools Suite` option,
 * the DTS menu will now appear.
+
+## Common requirements - disabling Secure Boot
+
+Any procedure which affects the firmware should be preceded by controlling
+the Secure Boot status and if it is turned on, turning it off. The enabled
+Secure Boot will not only prevent you from operating on the firmware, but
+you will also not be able to launch DTS.
+
+To check the Secure Boot state:
+
+1. Turn off the station, on which you want to test the Dasharo firmware.
+1. Turn the station on and go to the next step immediately.
+1. Hold the `BIOS SETUP KEY` to enter the `BIOS MENU`.
+1. Localize and enter the `Secure Boot` menu using the arrow keys and Enter.
+1. Verify that the `Secure Boot Status` field says `Disabled` - if not,
+  deselect the `Enforce Secure Boot` option using the arrow keys and Enter.
+1. Change the setting of Secure Boot to `Disabled` and press Enter.
+1. Press the `F10` key to open the dialog box.
+1. Press `Enter` to confirm changes and exit from the menu.
+
+After completing the steps described above, Secure Boot should be disabled.
+You could confirm that by repeating steps 3 - 5.
 
 ## DTS CE functionality
 
