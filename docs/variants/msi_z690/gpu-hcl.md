@@ -31,5 +31,7 @@ Information about GPU might be read from GPU package or documentation.
 | GPU name         | Memory size | Memory type | Bandwidth | PCI-E Architecture | Multi-Graphics Technology | Results                |
 |:----------------:|:-----------:|:-----------:|:---------:|:------------------:|:-------------------------:|:----------------------:|
 | Nvidia GeForce GTX 1060 | 3072 MB | GDDR5 | x16       | Gen3               | 1                            | [Qubes HCL reports][1] |
+| Nvidia GeForce GTX 1080tI | 11264 MB | GDDR5X | x16       | Gen3               | 1                            | [Qubes HCL reports][2] |
 
 [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
+[2]: https://www.qubes-os.org/hcl/#msi_ms-7d25_i7-12700k_alder-lake_integrated-graphics-uhd-770-geforce-gtx-1080-ti
