@@ -68,7 +68,7 @@ This section describes how to boot DTS using USB stick.
 
 * USB stick (at least 2GB)
 * Wired network connection
-* [Secure Boot disabled](#common-requirements---disabling-secure-boot)
+* [Secure Boot disabled](#common-requirements-disabling-secure-boot)
 * Latest image from [releases](#releases) section
 
 ### Launching DTS
@@ -98,7 +98,7 @@ This section describes how to boot DTS using iPXE.
 
 * Dasharo device with DTS functionality integrated
 * Wired network connection
-* [Secure Boot disabled](#common-requirements---disabling-secure-boot)
+* [Secure Boot disabled](#common-requirements-disabling-secure-boot)
 
 ### Launching DTS
 
