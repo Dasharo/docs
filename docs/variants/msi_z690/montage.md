@@ -19,7 +19,7 @@ specified in [requirements](#requirements) components.
 
 Additionally, you will need a regular Phillips screwdriver.
 
-## Montage 
+## Montage
 
 1. Unpack all equipment.
 1. Place the motherboard in front of you, this is component with which most of
@@ -66,6 +66,6 @@ NEXT CONNECTIONS TBD
   the MSI PRO Z690-A DDR4
 * [Installation manual](installation-manual.md) - how to install Dasharo
   firmware on the MSI PRO Z690-A DDR4
-* [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf) -
-    there you will find detailed information about the motherboard and its
+* [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
+    -there you will find detailed information about the motherboard and its
     operations.
