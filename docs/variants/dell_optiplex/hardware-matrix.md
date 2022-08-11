@@ -1,5 +1,7 @@
 # Hardware configuration matrix
 
+**Please read the [overview page](overview.md) first!**
+
 The tables below contain information about current components of the testing
 environment for Dell OptiPlex workstations available in 3mdeb testing laboratory.
 

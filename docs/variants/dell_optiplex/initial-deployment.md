@@ -1,5 +1,7 @@
 # Initial deployment
 
+**Please read the [overview page](overview.md) first!**
+
 Following documentation describe process of replacing original BIOS/UEFI
 firmware with Dasharo open-source firmware. Following procedure is supported
 for following models

@@ -1,5 +1,7 @@
 # Firmware update
 
+**Please read the [overview page](overview.md) first!**
+
 Following documentation describe process of Dasharo open-source firmware
 update.
 

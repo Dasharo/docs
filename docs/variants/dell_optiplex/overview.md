@@ -9,13 +9,18 @@ documentation._
 
 -->
 
-* [Releases](releases.md) - list all releases.
-* [Initial deployment](initial-deployment.md) - describe initial Dasharo
-  deployment methods for Dell OptiPlex 7010/9010 SFF.
-* [Firmware update](firmware-update.md) - explain supported Dasharo open-source
-  firmware update methods.
-* [Recovery](recovery.md) - gathers information how to recover from potential
-  failure.
+Dasharo for Dell Optiplex is a community-driven effort. We work on this in our
+free time, since we have no sponsor for this project. To address the issue we
+organize [virtual hackathon](https://3mdeb.com/events/) on Dasharo Matrix
+almost every Tuesday. If you are interesteded in this project, you can consider
+joining the event or
+[supporting us in other way](../../ways-you-can-help-us.md).
+
+The most advanced code is on
+[rel_v0.1.0 branch](https://github.com/Dasharo/coreboot/pull/202) and the most
+advanced documentation is [here](https://github.com/Dasharo/docs/pull/139).
+This code supports only `Dasharo (coreboot+SeaBIOS)`, so legacy boot. UEFI is
+also quite ready, but we need to release `v0.1.0` properly first.
 
 ## History
 
