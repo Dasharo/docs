@@ -1,5 +1,7 @@
 # Dell OptiPlex 7010/9010 Dasharo - building manual
 
+**Please read the [overview page](overview.md) first!**
+
 ## Building coreboot
 
 To build coreboot image, follow the steps below:
