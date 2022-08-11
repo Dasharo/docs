@@ -9,7 +9,7 @@ documentation._
 
 -->
 
-Dasharo for Dell Optiplex is a community-driven effort. We work on this in our
+Dasharo compatible with Dell OptiPlex 7010/9010 is a community-driven effort. We work on this in our
 free time, since we have no sponsor for this project. To address the issue we
 organize [virtual hackathon](https://3mdeb.com/events/) on Dasharo Matrix
 almost every Tuesday. If you are interesteded in this project, you can consider
