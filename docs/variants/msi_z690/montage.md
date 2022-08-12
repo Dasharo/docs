@@ -40,7 +40,7 @@ Remember that make all connections in the grounding strap.
 
 1. To install the CPU cooler, the parts shown in the picture below are
     necessary:
-    
+
     ![Items](images/msi_z690_montage_coller_items.jpg)
 
 1. Attach the black stand to the bottom of the motherboard, then apply and screw
@@ -52,7 +52,7 @@ Remember that make all connections in the grounding strap.
 1. Then attach the cooler from above by tightening the two screws. Most likely,
     for this operation, it is necessary to dismantle the fan and restore it
     after tightening the screws.
-    
+
     ![CPU Cooler 2](images/msi_z690_montage_coller.jpg)
 
 1. Install the memory module into the DIMM slots. To insert a single module,
@@ -100,7 +100,7 @@ Remember that make all connections in the grounding strap.
 
 1. Connect the power supply to the motherboard using the cables marked RE25 for
     connection to the `G` and `H` slots and the cable marked RJ21 to connect the
-    `F` slots. 
+    `F` slots.
 
     ![Power Supply](images/msi_z690_montage_power_supply.png)
 
