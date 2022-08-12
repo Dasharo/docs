@@ -91,6 +91,7 @@ nav:
           - 'RGB keyboard': variants/novacustom_ns5x/rgb_keyboard.md
           - 'Hardware Configuration Matrix': variants/novacustom_ns5x/hardware-matrix.md
           - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
+          - 'EC recovery': variants/novacustom_ns5x/ec-recovery.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md
