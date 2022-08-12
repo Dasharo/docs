@@ -171,11 +171,10 @@ disk on the DUT.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-LBT004.002 Boot Ubuntu From Hard Disk - w dużej mierze dotychczasowy przypadek testowy, rozdzielamy tylko instalację i bootowanie.
+### LBT004.002 Boot Ubuntu From Hard Disk
+
 **Test description**
 
-This test verifies that Debian stable distribution could be installed on
-the DUT and works properly.
 
 **Test configuration data**
 
