@@ -129,7 +129,7 @@ nav:
           - 'CPU Compatibility': variants/msi_z690/cpu-hcl.md
           - 'GPU Compatibility': variants/msi_z690/gpu-hcl.md
           - 'Community Test Results': variants/msi_z690/community-test-results.md
-          - 'Montage': variants/msi_z690/montage.md
+          - 'Assembly': variants/msi_z690/assembly.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':

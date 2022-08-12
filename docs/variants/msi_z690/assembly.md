@@ -1,8 +1,8 @@
-# Dasharo compatible with MSI PRO Z690-A DDR4 - montage
+# Presale device assembly and validation
 
 ## Intro
 
-This document describes the montage procedure of the MSI PRO Z690-A DDR4 with
+This document describes the assembly procedure of the MSI PRO Z690-A DDR4 with
 specified components in [requirements](#requirements).
 
 ## Requirements
@@ -20,7 +20,7 @@ specified components in [requirements](#requirements).
 Additionally, you will need a regular Phillips screwdriver and thermal paste.
 Remember that make all connections in the grounding strap.
 
-## Montage
+## Device assembly
 
 1. Unpack all equipment.
 1. Place the motherboard in front of you, this is the component with which most
@@ -96,7 +96,7 @@ Remember that make all connections in the grounding strap.
 
     ![Speaker](images/msi_z690_montage_speaker.jpg)
 
-1. Now is the time to screw the motherboard onto the case.
+1. Screw the motherboard to the enclosure.
 
 1. Connect the power supply to the motherboard using the cables marked RE25 for
     connection to the `G` and `H` slots and the cable marked RJ21 to connect the
@@ -108,9 +108,12 @@ Remember that make all connections in the grounding strap.
 
     ![Fan](images/msi_z690_montage_fan.jpg)
 
-1. Close the case and connect the computer to power. Start it with the button
-    on the front panel. If all connections have been made correctly, the
-    computer will start up.
+1. Close the case of the computer.
+1. Connect the computer to power.
+1. Power on a device with the button on the front panel.
+1. If all connections have been made correctly, the computer will start up and
+    log Dasharo should appear after a while.
+1. Boot to any system to check that everything is working properly.
 
 ## Useful content
 
