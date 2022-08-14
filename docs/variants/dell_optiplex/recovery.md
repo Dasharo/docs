@@ -210,6 +210,10 @@ echo 1 > /sys/class/gpio/gpio406/value
 echo 1 > /sys/class/gpio/gpio404/value
 ```
 
+#### Dasharo recovery
+
+Use following procedure if your 4M flash contain Dasharo open-source firmware.
+
 ```bash
 cat > dell_optiplex.layout <<EOF
 00000000:00000fff fd
@@ -221,4 +225,12 @@ EOF
 
 ```bash
 flashrom -w your_bios_backup.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E" -i fd -i me --layout dell_optiplex.layout
+```
+
+#### Vendor BIOS recovery
+
+Use following procedure if your 4M flash contain vendor BIOS.
+
+```bash
+flashrom -w your_bios_backup_8M.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E"
 ```

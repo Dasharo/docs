@@ -71,42 +71,15 @@ active. Press F1 to proceed and boot to your Linux system.
 
 For simplicity, we are using
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite#bootable-usb-stick)
-booted over network.
+booted from USB.
 
-* Attach a wired network cable to the device's Ethernet port.
+* After booting to Dasharo Tools Suite, make sure to submit
+[Dasharo HCL report](../../../common-coreboot-docs/dasharo_tools_suite#dasharo-hcl-report)
 * Boot from USB and enter the shell.
+* **TODO**: run commands/script required for seamless Dasharo deployment
 
-## BIOS backup
-
-<!-- BIOS backup section is very generic and should be treated as such.
-This section even can be replaced with Dasharo Tools Suite, fwupd, or other
-tools that can simplify the operation for the user -->
-
-It is always a good idea to backup the original BIOS of your hardware, before
-switching to open-source firmware.
-
-* Read content of SPI NOR flash:
-
-  ``` console
-  flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
-
-  flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
-  flashrom is free software, get the source code at https://flashrom.org
-
-  Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-  Found chipset "Intel Q77".
-  Enabling flash write... SPI Configuration is locked down.
-  The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
-  the Master Section of the flash descriptor are NOT in effect. Please note
-  that Protected Range (PR) restrictions still apply.
-  Enabling hardware sequencing due to multiple flash chips detected.
-  OK.
-  Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
-  Reading flash... done.
-  ```
-
-If you face any issues, please refer to the
-[troubleshooting section](#troubleshooting).
+**Note**: If you not saving Dasharo HCL report, please
+[backup your vendor BIOS](../../..//osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
 
 ## Get Dasharo
 
@@ -114,6 +87,8 @@ Download the Dell OptiPlex 7010/9010 Dasharo from the
 [release section](releases.md#binaries) or
 [build from source](building-manual.md).
 
+<!--
+TODO: to be replaced by Dasharo blobs transmission script
 ## Non-redistributable blobs
 
 Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown license or
@@ -134,7 +109,6 @@ Dell OptiPlex 7010/9010 SFF.
 components in
 [Dasharo fwdeploy](https://github.com/Dasharo/fwdeploy/blob/main/blobs/dell_optiplex_9010.sha256)
 project. Feel free to report SHA256 of blobs from your platform.
-<!--
 TODO: publish known valid hashes for given coreboot version
 TODO: add to script verification of expected hash of coreboot.rom
 before adding blobs:
