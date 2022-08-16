@@ -16,7 +16,6 @@ You will need:
   on both ends of the cable)
 - a 24-pin FFC breakout board with a 1.0mm pitch FFC connector and a 2.54mm
   pitch pin header
-- A set of male-to-female jumper wires to connect the breakout to the Arduino
 - USB-A to USB-B cable to connect the Arduino to the host
 - USB-C cable for grouding
 
