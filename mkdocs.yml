@@ -177,7 +177,7 @@ nav:
         # - 'Overview': ecosystem/transparent-validation.md
         # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
         # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
-          - 'MSI Z690':    
+          - 'MSI Z690':
               - 'Assembly and Validation': transparent-validation/msi-z690/assembly-and-validation.md
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md

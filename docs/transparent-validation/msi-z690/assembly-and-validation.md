@@ -114,13 +114,25 @@ Remember that make all connections in the grounding strap.
 1. If all connections have been made correctly, the computer will start up and
     log Dasharo should appear after a while.
 1. Boot to any system to check that everything is working properly.
+1. To install Dasharo firmware proceed with
+    [Installation manual](../../variant4.111s/msi_z690/installation-manual.md) -
+    the `Migrating SMBIOS unique data` chapter can be skipped.
+1. Power on the device.
+1. Boot to Linux system (Ubuntu is recommended).
+1. Open a terminal window and run the following command:
+
+    ```bash
+    sudo dmidecode -t 0 | grep Version
+    ```
+
+1. Output of command above should be similar to:
+    `Version: Dasharo (coreboot+UEFI) <version>` where version should correspond
+    to the version of the flashing binary used eg. v1.0.0.
 
 ## Useful content
 
 * [Building manual](../../variants/msi_z690/building-manual.md) - how to
     build Dasharo compatible with the MSI PRO Z690-A DDR4
-* [Installation manual](../../variants/msi_z690/installation-manual.md) - how
-    to install Dasharo firmware on the MSI PRO Z690-A DDR4
 * [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
     -there you will find detailed information about the motherboard and its
     operations.
