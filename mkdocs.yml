@@ -129,7 +129,6 @@ nav:
           - 'CPU Compatibility': variants/msi_z690/cpu-hcl.md
           - 'GPU Compatibility': variants/msi_z690/gpu-hcl.md
           - 'Community Test Results': variants/msi_z690/community-test-results.md
-          - 'Assembly': variants/msi_z690/assembly.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Development Process':
@@ -178,6 +177,8 @@ nav:
         # - 'Overview': ecosystem/transparent-validation.md
         # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
         # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
+          - 'MSI Z690':    
+              - 'Assembly and Validation': transparent-validation/msi-z690/assembly-and-validation.md
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
               - 'Basic validation': transparent-validation/muxpi/basic-validation.md
