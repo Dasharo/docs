@@ -20,15 +20,6 @@ You will need:
 - USB-A to USB-B cable to connect the Arduino to the host
 - USB-C cable for grouding
 
-<!--
-  The instructions assume pre-flashed Arduino at this point, so as to not
-  overcomplicate this instruction. Depending on wiring, the code (GPIO map) will
-  need modification. We will be supplying the first preassembled kits anyway
-
-  Arduino flashing instructions available at:
-  https://github.com/Dasharo/ec/blob/master/doc/mega2560.md
--->
-
 ## Preparation
 
 - Clone the EC repository:
@@ -49,20 +40,24 @@ git clone https://github.com/Dasharo/ec.git
 source $HOME/.cargo/env
 ```
 
-- Build the firmware for your laptop:
+- Connect the Arduino to the computer using a USB-A to USB-B cable
 
-<!--
-  TBD: Device specific instructions, I guess we should add our own mainboards
-  in a different folder in the repository? For now let's just do system76/darp7
--->
+- Build and flash firmware for the Arduino, which will serve as the flasher:
 
 ```bash
-make BOARD=system76/darp7
+make BOARD=arduino/mega2560
+make BOARD=arduino/mega2560 flash
+```
+
+- Build the firmware for your laptop:
+
+```bash
+make BOARD=clevo/ns50mu
 ```
 
 The firmware should now be built.
 
-## Assembly
+## Flashing
 
 - Unscrew the bottom cover from the laptop
 - Disconnect the battery
@@ -73,7 +68,9 @@ The firmware should now be built.
 - Using a prying tool like a credit card, remove the keyboard from the laptop
 - Connect the USB-C cable to the Thunderbolt port on the laptop and to the host
   computer. This will provide grounding
-- Connect the FFC cable to the Arduino
+- Connect the FFC cable to the FFC breakout board
+- Insert the breakout into Arduino's digital pin header, pins 22-45, with the
+  FFC connector facing outwards
 - Connect the other end of the FFC cable to the keyboard connector on the
   laptop, taking care to align pin 1 of the FFC cable to pin 1 (leftmost) pin
   of the connector
@@ -81,5 +78,5 @@ The firmware should now be built.
 - Flash the firmware:
 
 ```bash
-make BOARD=system76/darp7 flash_external
+make BOARD=clevo/ns50mu flash_external
 ```
