@@ -117,10 +117,10 @@ Remember that make all connections in the grounding strap.
 
 ## Useful content
 
-* [Building manual](../../variants/msi_z690/building-manual.md) - how to build Dasharo compatible with
-  the MSI PRO Z690-A DDR4
-* [Installation manual](../../variants/msi_z690/installation-manual.md) - how to install Dasharo
-  firmware on the MSI PRO Z690-A DDR4
+* [Building manual](../../variants/msi_z690/building-manual.md) - how to
+    build Dasharo compatible with the MSI PRO Z690-A DDR4
+* [Installation manual](../../variants/msi_z690/installation-manual.md) - how
+    to install Dasharo firmware on the MSI PRO Z690-A DDR4
 * [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
     -there you will find detailed information about the motherboard and its
     operations.
