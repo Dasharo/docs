@@ -31,7 +31,7 @@ binaries with the generated keys.
     sudo apt install libflashrom-dev libssl-dev uuid-dev
     ```
 
-4. Install vboot libraries and modules on the host system:
+4. Build vboot environment and install it on the host system:
 
     ```bash
     make -C 3rdparty/vboot
