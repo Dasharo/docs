@@ -109,13 +109,15 @@ Remember that make all connections in the grounding strap.
     ![Fan](images/msi_z690_montage_fan.jpg)
 
 1. Close the case of the computer.
-1. Connect the computer to power.
-1. Power on a device with the button on the front panel.
-1. If all connections have been made correctly, the computer will start up and
-    log Dasharo should appear after a while.
-1. Boot to any system to check that everything is working properly.
-1. To install Dasharo firmware proceed with
-    [Installation manual](../../variant4.111s/msi_z690/installation-manual.md) -
+
+## Device validation
+
+1. Connect the device to the mains.
+1. Power on the device with the button located on the front panel.
+1. If all connections have been made correctly, the device shuold start and
+    the boot logo should be shown.
+1. Install Dasharo firmware in accordance with
+    [Installation manual](../../variants/msi_z690/installation-manual.md) -
     the `Migrating SMBIOS unique data` chapter can be skipped.
 1. Power on the device.
 1. Boot to Linux system (Ubuntu is recommended).
@@ -126,13 +128,15 @@ Remember that make all connections in the grounding strap.
     ```
 
 1. Output of command above should be similar to:
-    `Version: Dasharo (coreboot+UEFI) <version>` where version should correspond
-    to the version of the flashing binary used eg. v1.0.0.
+    `Version: Dasharo (coreboot+UEFI) <version>` where version should
+    correspond to the version of the flashing binary used eg. v1.0.0.
+1.Check in system that everything is working properly.
 
 ## Useful content
 
-* [Building manual](../../variants/msi_z690/building-manual.md) - how to
-    build Dasharo compatible with the MSI PRO Z690-A DDR4
-* [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
-    -there you will find detailed information about the motherboard and its
+* [Building manual](../../variants/msi_z690/building-manual.md) - documentation
+    contains information on how to build Dasharo compatible with the MSI PRO
+    Z690-A DDR4.
+* [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf) -
+    documentation contains detailed information about the motherboard and its
     operations.
