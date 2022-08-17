@@ -39,3 +39,12 @@ documentation._
 * [Root.cz](https://www.root.cz/zpravicky/port-coreboot-na-intel-alder-lake-z690-od-msi/)
 * [GN24](https://game-news24.com/2022/04/13/open-source-coreboot-bios-is-ported-to-msi-z690-a-motherboard/)
 * [ITBusiness](https://itbusiness.com.ua/gamezone/113401-u-etogo-neubivaemogo-bios-s-otkrytym-ishodnym-kodom-ogromnyj-potenczial.html)
+
+## Buy MSI PRO Z690 with Dasharo firmware
+
+You could buy the working station with MSI PRO Z690 motherboard with Dasharo
+firmware from the official
+[3mdeb store](https://3mdeb.com/shop/).
+
+Device assembly and presale validation will be carried out in accordance
+with the [following procedure](../../transparent-validation/msi-z690/assembly-and-validation.md).
