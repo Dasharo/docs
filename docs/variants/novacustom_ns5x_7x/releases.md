@@ -1,12 +1,12 @@
-# NovaCustom NS5x Dasharo Release Notes
+# NovaCustom NS5x/7x Dasharo Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
-NovaCustom NS5x
+NovaCustom NS5x/7x
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to NovaCustom NS5x Dasharo Release Newsletter]
+[Subscribe to NovaCustom NS5x/7x Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
@@ -93,7 +93,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 ### Added
 
-- Support for NovaCustom NS5x
+- Support for NovaCustom NS5x/7x
 - Support for EC firmware 1.07.07
 - UEFI Boot Support
 - Configurable boot order

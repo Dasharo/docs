@@ -79,19 +79,19 @@ nav:
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
-      - 'NovaCustom NS5X':
-          - 'Overview': variants/novacustom_ns5x/overview.md
-          - 'Releases': variants/novacustom_ns5x/releases.md
-          - 'Building manual': variants/novacustom_ns5x/building.md
-          - 'Installation manual': variants/novacustom_ns5x/installation.md
-          - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
-          - 'Post-installation steps': variants/novacustom_ns5x/post_install.md
+          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+      - 'NovaCustom NS5x/7x':
+          - 'Overview': variants/novacustom_ns5x_7x/overview.md
+          - 'Releases': variants/novacustom_ns5x_7x/releases.md
+          - 'Building manual': variants/novacustom_ns5x_7x/building-manual.md
+          - 'Initial deployment': variants/novacustom_ns5x_7x/initial-deployment.md
+          - 'Firmware update': variants/novacustom_ns5x_7x/firmware-update.md
+          - 'Recovery': variants/novacustom_ns5x_7x/recovery.md
+          - 'Hardware Configuration Matrix': variants/novacustom_ns5x_7x/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+          - 'Post-installation steps': variants/novacustom_ns5x_7x/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'RGB keyboard': variants/novacustom_ns5x/rgb_keyboard.md
-          - 'Hardware Configuration Matrix': variants/novacustom_ns5x/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
-          - 'EC recovery': variants/novacustom_ns5x/ec-recovery.md
+          - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md

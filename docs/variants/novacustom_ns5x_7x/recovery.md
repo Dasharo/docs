@@ -1,13 +1,38 @@
-# EC firmware recovery
+# Recovery
 
-## Introduction
+## Vendor firmware recovery
 
-This document describes the process of flashing EC firmware externally, in case
-it has been flashed using incompatible or broken firmware. This document is not
-intented for most users, but for developers, testers and advanced users
+### Prequisitions
+
+To proceed with the recovery procedure the backup with the vendor firmware will
+be necessary eg. `dump.rom`.
+
+The backup file should be generated before making any changes in the device
+flash chip according to documentation in the
+[Reading flash contents](initial-deployment.md#reading-flash-contents)
+section.
+
+### Internal flashing
+
+If the platform is booting properly it's possible to recover vendor firmware
+using flashrom on Ubuntu 20.04. If the flashrom from previous operations is lost
+somewhere, build it according to
+[this documentation](initial-deployment.md#build-flashrom).
+
+To restore the vendor firmware, open a terminal and run the following command:
+
+```bash
+flashrom -p internal -w dump.rom
+```
+
+## EC firmware recovery
+
+Bellow instruction describes the process of flashing EC firmware externally, in
+case it has been flashed using incompatible or broken firmware. This instruction
+is not intented for most users, but for developers, testers and advanced users
 experimenting with the EC firmware.
 
-## Prereqisites
+### Prereqisites
 
 You will need:
 
@@ -19,7 +44,7 @@ You will need:
 - USB-A to USB-B cable to connect the Arduino to the host
 - USB-C cable for grouding
 
-## Preparation
+### Preparation
 
 - Clone the EC repository:
 
@@ -56,7 +81,7 @@ make BOARD=clevo/ns50mu
 
 The firmware should now be built.
 
-## Flashing
+### Flashing
 
 - Unscrew the bottom cover from the laptop
 ![](../images/ns5x_bottom_cover_removed.jpg)

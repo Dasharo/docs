@@ -1,4 +1,4 @@
-# Test matrix - NovaCustom NS5x/NS7x
+# Test matrix - NovaCustom NS5x/7x
 
 ## About
 
