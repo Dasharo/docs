@@ -23,12 +23,15 @@ coreboot port on ASUS KGPE-D16 platforms.
 |                            | 2. Goldpin cables (RTE <-> Board connection)                 |
 | Remote Testing Environment | 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232      |
 |                            | 2. Goldpin cables + qspimux (RTE <-> flash memory connection)|
+| TPM                        | Infineon SLB9665 TT2.0                                       |
+
+> Standart testing procedure is performed on setup without TPM module.
 
 ## ASUS KGPE-D16 16MB
 
 | Component                  | Description                                                          |
 |----------------------------|----------------------------------------------------------------------|
-| Board revision             | 1.03G                                                        |
+| Board revision             | 1.03G                                                                |
 | CPU                        | AMD Opteron(TM) Processor 6282 SE                                    |
 |                            | CPU Cooler                                                           |
 | RAM                        | DDR3 16GB Kingston KVR16R11D4/16                                     |
@@ -42,6 +45,9 @@ coreboot port on ASUS KGPE-D16 platforms.
 |                            | 2. Goldpin cables (RTE <-> Board connection)                         |
 | Remote Testing Environment | 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232              |
 |                            | 2. POMONA Clip + DIP8/SOIC8 adapter (RTE <-> flash memory connection)|
+| TPM                        | Infineon SLB9635 TT1.2                                               |
+
+> Standart testing procedure is performed on setup without TPM module.
 
 ASUS KGPE-D16 board ports, slots, and connectors description is available in
 the manufacturer
