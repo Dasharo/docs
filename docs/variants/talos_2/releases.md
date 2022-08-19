@@ -1,4 +1,4 @@
-# Raptor Computing Systems Talos II Dasharo Release Notes
+# Release notes
 
 Following Release Notes describe status of Open Source Firmware development for
 Raptor Computing Systems Talos II
