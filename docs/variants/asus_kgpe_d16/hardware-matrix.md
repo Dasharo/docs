@@ -25,7 +25,7 @@ coreboot port on ASUS KGPE-D16 platforms.
 |                            | 2. Goldpin cables + qspimux (RTE <-> flash memory connection)|
 | TPM                        | Infineon SLB9665 TT2.0                                       |
 
-> Standart testing procedure is performed on setup without TPM module.
+> Standard testing procedure is performed on setup without TPM module.
 
 ## ASUS KGPE-D16 16MB
 
