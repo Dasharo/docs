@@ -1,4 +1,4 @@
-# Protectli Dasharo on VP2410 - building manual
+# Building manual
 
 To build Dasharo firmware image, follow the steps below:
 
