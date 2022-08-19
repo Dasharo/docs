@@ -1,15 +1,6 @@
 # Dasharo Compatibility: Embedded controller flashing
 
-## Test cases
-
-### Common
-
-**Test setup**
-
-1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-
-### ECF001.001 Flash EC firmware externally using Arduino
+## ECF001.001 EC firmware external flashing
 
 **Test description**
 
@@ -18,22 +9,23 @@ EC firmware externally using Arduino.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
-1. Prepare the necessary hardware according to the
-    [Prerequisites](../../../variants/novacustom_ns5x/ec-recovery/#prerequisites)
-    section.
-1. Prepare the firmware according to the
-    [Preparation](../../../variants/novacustom_ns5x/ec-recovery/#preparation)
-    section.
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Make yourself familiar with
+    [EC recovery documentation](../../../variants/novacustom_ns5x/ec-recovery/).
 
 **Test steps**
 
-1. Go throw [flashing](../../../variants/novacustom_ns5x/ec-recovery/#flashing)
-    procedure.
+1. Prepare the hardware for flashing in accordance with the
+    [Prerequisites section](../../../variants/novacustom_ns5x/ec-recovery/#prereqisites).
+1. Prepare the firmware in accordance with the
+    [Preparation section](../../../variants/novacustom_ns5x/ec-recovery/#preparation).
+1. Flash the EC firmware in accordance with the 
+    [Flashing section](../../../variants/novacustom_ns5x/ec-recovery/#flashing).
 1. Note the results.
 
 **Expected result**
