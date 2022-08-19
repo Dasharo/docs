@@ -24,7 +24,7 @@ EC firmware externally using Arduino.
     [Prerequisites section](../../../variants/novacustom_ns5x/ec-recovery/#prereqisites).
 1. Prepare the firmware in accordance with the
     [Preparation section](../../../variants/novacustom_ns5x/ec-recovery/#preparation).
-1. Flash the EC firmware in accordance with the 
+1. Flash the EC firmware in accordance with the
     [Flashing section](../../../variants/novacustom_ns5x/ec-recovery/#flashing).
 1. Note the results.
 
