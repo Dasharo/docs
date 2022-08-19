@@ -47,7 +47,7 @@ coreboot port on ASUS KGPE-D16 platforms.
 |                            | 2. POMONA Clip + DIP8/SOIC8 adapter (RTE <-> flash memory connection)|
 | TPM                        | Infineon SLB9635 TT1.2                                               |
 
-> Standart testing procedure is performed on setup without TPM module.
+> Standard testing procedure is performed on setup without TPM module.
 
 ASUS KGPE-D16 board ports, slots, and connectors description is available in
 the manufacturer
