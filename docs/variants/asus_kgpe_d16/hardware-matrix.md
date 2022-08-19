@@ -1,4 +1,4 @@
-# Hardware configuration matrix - ASUS KGPE-D16
+# Hardware configuration matrix
 
 This document describes the hardware configurations used for validation of the
 coreboot port on ASUS KGPE-D16 platforms.
