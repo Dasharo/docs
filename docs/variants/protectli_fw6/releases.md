@@ -1,4 +1,4 @@
-# Protectli FW6 Dasharo Release Notes
+# Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
 Protectli FW6.

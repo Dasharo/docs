@@ -1,4 +1,4 @@
-# Test matrix - Protectli FW6
+# Test matrix
 
 ## About
 
