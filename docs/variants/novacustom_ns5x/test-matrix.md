@@ -32,6 +32,7 @@ subjected from before the release of the new binary.
 | 21.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
 | 22.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 23.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
+| 23.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -56,6 +57,7 @@ subjected from before the release of the new binary.
 [DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
+[ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
 
 ## Module: Dasharo security
 

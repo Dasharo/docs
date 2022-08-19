@@ -15,7 +15,7 @@ subjected from before the release of the new binary.
 | 4.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT002.001                           |
 | 6.   | [Network boot][PXE]                               | PXE           | All                                  |
-| 7.   | [USB detection][USB]                              | UDT           | All                                  |
+| 7.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 8.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 9.   | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
 | 10.  | [Flash write protection][HWP]                     | HWP           | All                                  |
