@@ -9,8 +9,8 @@
     firmware update methods.
 * [Recovery](recovery.md) - gathers information on how to recover platform from
     potential failure.
-* [Hardware matrix](hardware-matrix.md) - describes platform's hardware
-    configuration used during Dasharo firmware validation procedure.
+* [Hardware configuration matrix](hardware-matrix.md) - describes platform's
+    hardware configuration used during Dasharo firmware validation procedure.
 * [Test matrix](test-matrix.md) - describes validation scope used during
     Dasharo firmware validation procedure.
 * [Fan Control](fan-control.md) - describes the method of testing the
