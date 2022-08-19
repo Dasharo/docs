@@ -46,14 +46,14 @@ nav:
           - 'Hardware setup': variants/asus_kgpe_d16/setup.md
           - 'SPI write protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
-      - 'Talos II':
+      - 'Raptor CS Talos II':
           - 'Overview': variants/talos_2/overview.md
           - 'Releases': variants/talos_2/releases.md
           - 'Building manual': variants/talos_2/building-manual.md
           - 'Initial deployment': variants/talos_2/initial-deployment.md
           - 'Firmware update': variants/talos_2/firmware-update.md
           - 'Recovery': variants/talos_2/recovery.md
-          - 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
+          - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
       - 'NovaCustom NV4x':
