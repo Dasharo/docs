@@ -4,10 +4,10 @@
 
 This document describes the process of flashing EC firmware externally, in case
 it has been flashed using incompatible or broken firmware. This document is not
-intented for most users, but for developers, testers and advanced users
+intended for most users, but for developers, testers and advanced users
 experimenting with the EC firmware.
 
-## Prereqisites
+## Prerequisites
 
 You will need:
 
@@ -17,7 +17,7 @@ You will need:
 - a 24-pin FFC breakout board with a 1.0mm pitch FFC connector and a 2.54mm
   pitch pin header
 - USB-A to USB-B cable to connect the Arduino to the host
-- USB-C cable for grouding
+- USB-C cable for grounding
 
 ## Preparation
 
@@ -25,6 +25,7 @@ You will need:
 
 ```bash
 git clone https://github.com/Dasharo/ec.git
+cd ec
 ```
 
 - Install dependencies:
@@ -100,7 +101,7 @@ The firmware should now be built.
   ![](images/ns5x_arduino_full_setup.jpg)
 
 - Connect the Arduino to the host using the USB-A to USB-B cable
-- Flash the firmware:
+- Run the following command from `ec` dictionary to flash the firmware:
 
 ```bash
 make BOARD=clevo/ns50mu flash_external
