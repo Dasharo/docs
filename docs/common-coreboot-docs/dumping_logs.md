@@ -11,7 +11,8 @@ One may use [Dasharo Tools Suite HCL report](/common-coreboot-docs/dasharo_tools
 or [fwdump-docker image](https://github.com/3mdeb/fwdump-docker) to
 gather all the hardware configuration information from a running system. The
 usage of the tools should result in an archive containing various logs from the
-running system. Submit them via email to [contact@dasharo.com](mailto:contact@dasharo.com).
+running system. Submit them via email to [contact@dasharo.com](mailto:contact@dasharo.com)
+or use [Dasharo pastebin](https://paste.dasharo.com/).
 
 ## coreboot logs
 
@@ -52,6 +53,6 @@ Short instruction how to compile and use `cbmem` on Ubuntu 22.04 live CD:
     ```
 
 8. Check if the file `coreboot.log` contains coreboot logs and send them to
-   Dasharo team.
+   Dasharo team via email or pastebin.
 
 TODO: [make cbmem available with DTS as well](https://github.com/Dasharo/meta-dts/issues/22)
