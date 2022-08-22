@@ -1,4 +1,4 @@
-# Dasharo for NovaCustom NS5x/7x - building manual
+# Building manual
 
 ## Intro
 
