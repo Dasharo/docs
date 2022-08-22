@@ -97,8 +97,10 @@ Legend:
 | Kingston | [KF436C17BBK4/32][1] |8GB | XMP profile #1: DDR4-3600 CL17-21-21 1.35V | -/-/&#10004; |
 | Kingston | [KF436C17BBK4/32][1] |8GB | XMP profile #2: DDR4-3000 CL15-17-17 1.35V | -/-/&#10004; |
 | Corsair  | [CMK16GX4M2B3200C16][2] |8GB | XMP 2.0: DDR4-3200 PC4-25600 CL16-18-18-36 1.35 V | -/-/&#10004; |
-| Kingston | [KF432C16BB1/16][3] |16GB | JEDEC: DDR4-2400 CL17-17-17 1.2V | -/-/&#10004; |
-| PNY      | [8GBF1X08QFHH38-135-K-HXR][4] |8GB | JEDEC: DDR4-2133 CL15-15-15 1.2V | -/-/&#10004; |
+| Kingston | [KF432C16BB1/16][3] |16GB | JEDEC: DDR4-2400 CL17-17-17 1.2V | -/&#10004;*/&#10004; |
+| PNY      | [8GBF1X08QFHH38-135-K-HXR][4] |8GB | JEDEC: DDR4-2133 CL15-15-15 1.2V | -/&#10004;*/&#10004; |
+
+*Tested in 2x2 mixed configuration
 
 [1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
 [2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
