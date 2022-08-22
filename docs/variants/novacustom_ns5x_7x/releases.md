@@ -93,7 +93,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 ### Added
 
-- Support for NovaCustom NS5x/7x
+- Support for NovaCustom NS5x
 - Support for EC firmware 1.07.07
 - UEFI Boot Support
 - Configurable boot order
