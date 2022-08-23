@@ -22,6 +22,8 @@ Remember that make all connections in the grounding strap.
 
 ## Device assembly
 
+Below is the complete procedure for assembling a computer.
+
 1. Unpack all equipment.
 1. Place the motherboard in front of you, this is the component with which most
     of the operations will be performed. It's best to put something softer under
@@ -88,7 +90,7 @@ Remember that make all connections in the grounding strap.
 
     ![Front Panel](images/msi_z690_montage_front_panel.png)
 
-    A detailed description of the connection cable marked `B` can be found in
+    A detailed description of the connection cable marked `D` can be found in
     the [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
     in section: JFP1, JFP2: Front Panel Connectors.
 
@@ -110,11 +112,18 @@ Remember that make all connections in the grounding strap.
 
 1. Close the case of the computer.
 
+If it is being prepared only motherboard not all steps are necessary:
+
+1. Go through steps 1-8
+1. Connect only cable marked `D` from the 13th step. (It is enough to connect
+    two pins marked Power Switch)
+1. Go through the 16th step only and skip the rest.
+
 ## Device validation
 
 1. Connect the device to the mains.
 1. Power on the device with the button located on the front panel.
-1. If all connections have been made correctly, the device shuold start and
+1. If all connections have been made correctly, the device should start and
     the boot logo should be shown.
 1. Install Dasharo firmware in accordance with
     [Installation manual](../../variants/msi_z690/installation-manual.md) -
@@ -127,10 +136,10 @@ Remember that make all connections in the grounding strap.
     sudo dmidecode -t 0 | grep Version
     ```
 
-1. Output of command above should be similar to:
-    `Version: Dasharo (coreboot+UEFI) <version>` where version should
+1. The output of the command above should be similar to:
+    `Version: Dasharo (coreboot+UEFI) <version>` where the version should
     correspond to the version of the flashing binary used eg. v1.0.0.
-1.Check in system that everything is working properly.
+1. Check in the system that everything is working properly.
 
 ## Useful content
 
