@@ -1,4 +1,4 @@
-# NovaCustom NS5x/7x Dasharo Release Notes
+# Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
 NovaCustom NS5x/7x

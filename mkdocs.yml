@@ -92,6 +92,7 @@ nav:
           - 'Post-installation steps': variants/novacustom_ns5x_7x/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
+          - 'EC firmware revocery': variants/novacustom_ns5x_7x/ec_recovery.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md
