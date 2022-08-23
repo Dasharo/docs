@@ -17,7 +17,7 @@ subjected from before the release of the new binary.
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                            | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][USB]                         | USB           | All                                  |
-| 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | All                                  |
+| 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 10.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |
 | 11.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
 | 12.  | [USB-C/Thunderbolt][UTC]                               | UTC           | All                                  |
