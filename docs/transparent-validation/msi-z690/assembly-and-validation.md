@@ -22,7 +22,10 @@ Remember that make all connections in the grounding strap.
 
 ## Device assembly
 
-Below is the complete procedure for assembling a computer.
+### Full set assembly
+
+Section below describes the procedure of complete assembling of the
+working station.
 
 1. Unpack all equipment.
 1. Place the motherboard in front of you, this is the component with which most
@@ -112,12 +115,20 @@ Below is the complete procedure for assembling a computer.
 
 1. Close the case of the computer.
 
-If it is being prepared only motherboard not all steps are necessary:
+### Motherboard assembly only
 
-1. Go through steps 1-8
-1. Connect only cable marked `D` from the 13th step. (It is enough to connect
-    two pins marked Power Switch)
-1. Go through the 16th step only and skip the rest.
+Section below describes the procedure of assembling the motherboard.
+
+To prepare the motherboard the following operations should be performed:
+
+1. Go through steps 1-8 from
+    [Full set assembling section](#motherboard-assembly-only).
+
+1. Connect cable marked `D` to allows power on the device as described in
+    the 13th point of the
+    [Full set assembling section](#motherboard-assembly-only).
+1. Connect the power supply to the motherboard as described in the 16th point
+    of the [Full set assembling section](#motherboard-assembly-only).
 
 ## Device validation
 
