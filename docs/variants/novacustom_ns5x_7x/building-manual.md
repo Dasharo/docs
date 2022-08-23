@@ -51,7 +51,7 @@ Build the firmware:
 The resulting coreboot image will be placed in
 `artifacts/dasharo_novacustom_ns5x_VERSION.rom`.
 
-**Warning**Do not run `./build.``sh` as root. This command uses docker and
+**Warning:** Do not run `./build.``sh` as root. This command uses docker and
 should be executed as your current user. If you're having trouble running
 `build.sh` on your user account, follow the `Docker` instructions outlined in
 [Requirements](#requirements).

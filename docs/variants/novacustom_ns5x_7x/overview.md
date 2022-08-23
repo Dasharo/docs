@@ -22,4 +22,4 @@
     keyboard hotkeys.
 * [EC firmware recovery](ec_recovery.md) - describes the process of flashing
     EC firmware externally, in case it has been flashed using incompatible
-    or broken firmware
+    or broken firmware.

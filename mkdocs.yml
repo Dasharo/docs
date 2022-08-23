@@ -89,7 +89,7 @@ nav:
           - 'Recovery': variants/novacustom_ns5x_7x/recovery.md
           - 'Hardware Configuration Matrix': variants/novacustom_ns5x_7x/hardware-matrix.md
           - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
-          - 'Post-installation steps': variants/novacustom_ns5x_7x/post_install.md
+          - 'Post-installation setup': variants/novacustom_ns5x_7x/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
           - 'EC firmware revocery': variants/novacustom_ns5x_7x/ec_recovery.md
