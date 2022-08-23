@@ -9,12 +9,12 @@
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-### LBT001.001 Debian stable installation on USB storage
+### LBT001.001 Debian Stable installation on USB storage
 
 **Test description**
 
-This test verifies that Debian stable distribution could be installed on USB
-storage on the DUT via iPXE.
+This test verifies that Debian Stable distribution could be installed on USB
+storage attached to the DUT.
 
 **Test configuration data**
 
@@ -27,18 +27,20 @@ storage on the DUT via iPXE.
 
 **Test steps**
 
-1. Install system via iPXE on USB storage.
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup#os-installation)
+    but properly choose USB storage when choosing a disk.
 
 **Expected result**
 
-The information about succesfull installation should be displayed.
+The information about successful installation should be displayed.
 
 ### LBT001.002 Boot Debian from USB
 
 **Test description**
 
-This test verifies that Debian stable ditribution could be booted from USB
-storage on the DUT.
+This test verifies that Debian Stable distribution could be booted from USB
+storage attached to the DUT.
 
 **Test configuration data**
 
@@ -66,7 +68,7 @@ The `OPERATING_SYSTEM` login screen should be displayed.
 **Test description**
 
 This test verifies that Ubuntu LTS modern distribution could be installed on USB
-storage on the DUT via iPXE.
+storage attached to the DUT.
 
 **Test configuration data**
 
@@ -79,18 +81,20 @@ storage on the DUT via iPXE.
 
 **Test steps**
 
-1. Install system via iPXE on USB storage.
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup#os-installation)
+    but properly choose USB storage when choosing a disk.
 
 **Expected result**
 
-The information about succesfull installation should be displayed.
+The information about successful installation should be displayed.
 
 ### LBT002.002 Boot Ubuntu from USB
 
 **Test description**
 
-This test verifies that Ubuntu LTS modern ditribution could be booted from USB
-storage on the DUT.
+This test verifies that Ubuntu LTS modern distribution could be booted from USB
+storage attached to the DUT.
 
 **Test configuration data**
 
@@ -113,12 +117,12 @@ storage on the DUT.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-### LBT003.001 Debian stable installation on Hard Disk
+### LBT003.001 Debian Stable installation on Hard Disk
 
 **Test description**
 
-This test verifies that Debian stable distribution could be installed on hard
-disk on the DUT.
+This test verifies that Debian Stable distribution could be installed on the
+hard disk on the DUT.
 
 **Test configuration data**
 
@@ -136,14 +140,14 @@ disk on the DUT.
 
 **Expected result**
 
-The information about succesfull installation should be displayed.
+The information about successful installation should be displayed.
 
 ### LBT003.002 Boot Debian from Hard Disk
 
 **Test description**
 
-This test verifies that Debian stable distribution could be booted from hard
-disk on the DUT.
+This test verifies that Debian Stable distribution could be booted from the
+hard disk on the DUT.
 
 **Test configuration data**
 
@@ -170,8 +174,8 @@ The `OPERATING_SYSTEM` login screen should be displayed.
 
 **Test description**
 
-This test verifies that Ubuntu LTS modern ditribution could be installed on hard
-disk on the DUT.
+This test verifies that Ubuntu LTS modern distribution could be installed on the
+hard disk on the DUT.
 
 **Test configuration data**
 
@@ -189,14 +193,14 @@ disk on the DUT.
 
 **Expected result**
 
-The information about succesfull installation should be displayed.
+The information about successful installation should be displayed.
 
 ### LBT004.002 Boot Ubuntu From Hard Disk
 
 **Test description**
 
-This test verifies that Ubuntu LTS modern ditribution could be booted from hard
-disk on the DUT.
+This test verifies that Ubuntu LTS modern distribution could be booted from the
+hard disk on the DUT.
 
 **Test configuration data**
 
