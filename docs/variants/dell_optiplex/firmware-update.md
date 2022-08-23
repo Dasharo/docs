@@ -3,7 +3,7 @@
 **Please read the [overview page](overview.md) first!**
 
 Following documentation describe process of Dasharo open-source firmware
-update.
+distribution update.
 
 ## OS booting
 
@@ -12,23 +12,10 @@ For simplicity we recommend using network booted
 
 ### Dasharo (coreboot+SeaBIOS) update
 
-* Attach a wired network cable to the device's Ethernet port
-* Power on the device, holding down the Boot Menu entry key (ESC)
-* In the Boot Menu, select the `iPXE` option
-* In the Network Boot menu, select the `ipxe shell` option
-* Obtain address through DHCP or configure network connection in other way:
-
-```console
-dhcp net0
-```
-
-* Chainload Dasharo Tools Suite:
-
-```console
-chain http://boot.3mdeb.com/dts.ipxe
-```
-
-* Login as `root` (no password)
+* Make sure a wired network cable to the device's Ethernet port
+* Boot platform and from SeaBIOS menu choose Dasharo Network Boot Menu
+* In the Dasharo Network Boot Menu, select the `Dasharo Tools Suite` option
+* Enter shell using option `9)`
 * Download the Dell OptiPlex 7010/9010 Dasharo from
   [release section](releases.md#binaries) or
   [build from source](building-manual.md).

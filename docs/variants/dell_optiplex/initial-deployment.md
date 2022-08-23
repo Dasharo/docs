@@ -67,120 +67,32 @@ active. Press F1 to proceed and boot to your Linux system.
 
     ![](../../images/service_mode_warn.jpg)
 
-## OS booting
+## Initiali deployment
 
-For simplicity, we are using
-[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite#bootable-usb-stick)
-booted from USB.
+For simplicity, we are using Dasharo Tools Suite OEM version booted from USB.
+Access to DTS OEM is available only through [OEM/ODM private
+beta](../../../ways-you-can-help-us/#for-oemodm-join-the-private-beta-program).
 
-* After booting to Dasharo Tools Suite, make sure to submit
-[Dasharo HCL report](../../../common-coreboot-docs/dasharo_tools_suite#dasharo-hcl-report)
-* Boot from USB and enter the shell.
-* **TODO**: run commands/script required for seamless Dasharo deployment
+* DTS OEM v1.0.0 boots only in UEFI mode
+
+![](../../images/dell_optiplex_uefi_mode.jpg)
+
+* After booting to Dasharo Tools Suite OEM load OEM keys
+* Make sure to submit [Dasharo HCL
+  report](../../../common-coreboot-docs/dasharo_tools_suite#dasharo-hcl-report)
+* Enter shell using option `9)`
+* Deploy using:
+```shell
+deploy 2>&1 | tee deploy.log
+```
 
 **Note**: If you not saving Dasharo HCL report, please
 [backup your vendor BIOS](../../..//osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
 
-## Get Dasharo
-
-Download the Dell OptiPlex 7010/9010 Dasharo from the
-[release section](releases.md#binaries) or
-[build from source](building-manual.md).
-
-<!--
-TODO: to be replaced by Dasharo blobs transmission script
-## Non-redistributable blobs
-
-Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown license or
-questionable redistribution policy. To avoid potential issues, we transfer
-non-redistributable components from your original BIOS to Dell OptiPlex 9010
-Dasharo binary using [fwdeploy](https://github.com/Dasharo/fwdeploy).
-
-```bash
-wget https://raw.githubusercontent.com/Dasharo/fwdeploy/main/run.sh
-chmod +x run.sh
-./run.sh <bios_backup> <dasharo_optiplex_9010_firmware>
-```
-
-After that procedure, `<dasharo_optiplex_9010_firmware>` can be flashed on your
-Dell OptiPlex 7010/9010 SFF.
-
-**NOTE:** We are gathering information about non-redistributable firmware
-components in
-[Dasharo fwdeploy](https://github.com/Dasharo/fwdeploy/blob/main/blobs/dell_optiplex_9010.sha256)
-project. Feel free to report SHA256 of blobs from your platform.
-TODO: publish known valid hashes for given coreboot version
-TODO: add to script verification of expected hash of coreboot.rom
-before adding blobs:
-f6327df6578e5f0d2d0d16ecb23a5ba57b5ced50add79d53821f31fd050a9b2b  coreboot.rom
-after adding blobs
-8a0be7a199dd2917e86e0c8e4237dae4b67a417b237d108b0cc7501b93d951b5  coreboot.rom
--->
-
-## Flashing
-
-Following procedure will flash Dell OptiPlex 7010/9010 SFF Dasharo firmware to
-your machine SPI NOR flash.
-
-<!-- Link should be replaced with something that does not point to the 3mdeb cloud. The most
-useful location would be at some HTTP server -->
-
-Flash it on your Dell OptiPlex machine:
-
-``` console
-flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
-```
-
-for example:
-
-``` console
-flashrom -p internal --ifd -i bios -i me -w /tmp/dasharo_workstation_v0.2_rc3.rom
-
-flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
-flashrom is free software, get the source code at https://flashrom.org
-
-Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-Found chipset "Intel Q77".
-Enabling flash write... SPI Configuration is locked down.
-The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
-the Master Section of the flash descriptor are NOT in effect. Please note
-that Protected Range (PR) restrictions still apply.
-Enabling hardware sequencing due to multiple flash chips detected.
-OK.
-Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
-Reading ich descriptor... done.
-Using regions: "me", "bios".
-Reading old flash chip contents... done.
-Erasing and writing flash chip... Erase/write done.
-Verifying flash... VERIFIED.
-```
-
-If you get a warning:
-
-``` console
-WARNING! You may be running flashrom on an unsupported laptop.
-```
-
-And programmer initialization failed, run command:
-
-``` console
-flashrom -p internal:laptop=this_is_not_a_laptop -w /tmp/dasharo_workstation_v0.2_rc3.rom --ifd -i bios -i me
-```
-
-If you have placed the jumper correctly, you should see the following message
-in flashrom's output:
-
-``` console
-The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
-the Master Section of the flash descriptor are NOT in effect. Please note
-that Protected Range (PR) restrictions still apply.
-```
-
-A newer version of flashrom may not display the warning about unsupported
-chipset as it already may be marked as tested. Our team has verified that
-the flashrom updates firmware reliably on this chipset.
-
-If you face any issues, please refer to the [troubleshooting section](#troubleshooting).
+**Note2 **: Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown license or
+questionable redistribution policy. To avoid potential issues, `deploy` script transfer
+non-redistributable components from your original BIOS to Dasharo compatible
+with Dell OptiPlex 7010/9010.
 
 ## Verification
 
@@ -192,6 +104,9 @@ If you face any issues, please refer to the [troubleshooting section](#troublesh
    you want to reboot from another source.
 
    ![](../../images/dasharo-black.jpg)
+
+From that point you can use [firmware update](../firmware-update) methods to
+update your firmware.
 
 ## Troubleshooting
 
