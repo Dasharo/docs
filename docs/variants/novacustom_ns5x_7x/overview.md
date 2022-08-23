@@ -2,9 +2,9 @@
 
 * [Releases](releases.md) - groups information about all releases.
 * [Building manual](building-manual.md) - describes how to build Dasharo for
-    ASUS KGPE D-16.
+    NovaCustom NS5x/7x.
 * [Initial deployment](initial-deployment.md) - describes initial Dasharo
-    deployment methods (i. e. flashing new firmware) for ASUS KGPE D16.
+    deployment methods (i. e. flashing new firmware) for NovaCustom NS5x/7x.
 * [Firmware update](firmware-update.md) - explains supported Dasharo open-source
     firmware update methods.
 * [Recovery](recovery.md) - gathers information on how to recover the platform
@@ -14,11 +14,12 @@
     procedure.
 * [Test matrix](test-matrix.md) - describes validation scope used during
     Dasharo firmware validation procedure.
-* [Fan Control](fan-control.md) - describes the method of testing the
-    automatic fan control mechanism.
-* [Hardware Setup](setup.md) - describes the method of enabling external
-    flashing for ASUS KGPE-D16.
-* [SPI write protection](spi-wp.md) - describes the method of setting
-    the write protection for flash chip on ASUS KGPE-D16.
-* [TPM measured boot](tpm-mboot.md) - describes the measured boot behaviour
-    on ASUS KGPE D-16.
+* [Post-installation setup](post_install.md) - describes post-installation
+    tweaks.
+* [Logo Customization](../../common-coreboot-docs/custom_logo.md) - describes
+    the method of customizing the displayed logo.
+* [RGB keyboard](rgb_keyboard.md) - describes the method of using the RGB
+    keyboard hotkeys.
+* [EC firmware recovery](ec_recovery.md) - describes the process of flashing
+    EC firmware externally, in case it has been flashed using incompatible
+    or broken firmware.

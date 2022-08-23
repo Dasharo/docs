@@ -1,4 +1,4 @@
-# Insurgo Dasharo on Talos II - building manual
+# Building manual
 
 ## Building coreboot
 
