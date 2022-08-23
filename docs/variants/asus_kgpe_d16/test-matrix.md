@@ -13,9 +13,9 @@ subjected from before the release of the new binary.
 | 2.   | [SMBIOS][DMI]                                     | DMI           | DMI001.001, DMI002.001, DMI003.001, DMI004.001|
 | 3.   | [coreboot fan control][FAN]                       | FAN           | All                                  |
 | 4.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
-| 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT002.001                           |
+| 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.001, LBT001.002, LBT002.001, LBT002.002|
 | 6.   | [Network boot][PXE]                               | PXE           | All                                  |
-| 7.   | [USB detection][USB]                              | UDT           | All                                  |
+| 7.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 8.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 9.   | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
 | 10.  | [Flash write protection][HWP]                     | HWP           | All                                  |

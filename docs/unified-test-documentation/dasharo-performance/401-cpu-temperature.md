@@ -61,12 +61,12 @@ Displayed temperature should be not higher than displayed high and
 critical temperatures. Also the temperature should be not higher than
 temperature declared by the DUT producer.
 
-### CPT002.001 CPU temperature after stress test (Ubuntu 22.04)
+### CPT002.001 CPU temperature during stress test (Ubuntu 22.04)
 
 **Test description**
 
 This test aims to verify whether the temperature of the CPU cores is not higher
-than the maximum allowed temperature after stress test.
+than the maximum allowed temperature during stress test.
 
 **Test configuration data**
 
@@ -86,20 +86,20 @@ than the maximum allowed temperature after stress test.
 1. Open a terminal window and run the following command to turn on the stressor:
 
     ```bash
-    stress-ng --cpu 0 --tz -t 60s
+    stress-ng --cpu 0 --tz -t 60m
     ```
 
-    Stress test duration time might be changed by change te value of the
+    Stress test duration time might be changed by change the value of the
     parameter `-t`.
 
-1. After end the stress test open a terminal window and run the follwing
-    command:
+1. While test runs, open a terminal window and run the following command every
+   one minute until the test finishes, to check the current temperature.
 
     ```bash
     sensors
     ```
 
-1. Note the result.
+1. Note the results.
 
 **Expected result**
 
@@ -115,6 +115,6 @@ Example output:
     Core 3:        +51.0°C  (high = +100.0°C, crit = +100.0°C)
 ```
 
-The displayed temperature should be not higher than displayed high and
-critical temperatures. Also the temperature should be not higher than
-temperature declared by the DUT producer.
+The displayed temperatures should be not higher than displayed high and
+critical. Also the temperatures should be not higher than
+those declared by the DUT's producer.

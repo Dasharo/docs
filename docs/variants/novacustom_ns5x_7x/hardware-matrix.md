@@ -1,4 +1,4 @@
-# Hardware configuration matrix - NovaCustom NS51/NS70
+# Hardware configuration matrix
 
 ## Introduction
 

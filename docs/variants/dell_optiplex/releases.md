@@ -1,5 +1,7 @@
 # Dell OptiPlex Dasharo Release Notes
 
+**Please read the [overview page](overview.md) first!**
+
 Following Release Notes describe status of Open Source Firmware development for
 Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF.
 
@@ -8,6 +10,7 @@ For details about our release process please read
 
 [Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR)
 { .md-button .md-button--primary .center }
+<!--
 
 ## Unreleased
 
@@ -68,8 +71,6 @@ Software BOM:
 - [coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
   config and CI YAML)](https://github.com/Dasharo/coreboot/compare/dell_optiplex_9010_v0.0.0...dell_optiplex_9010_v0.0.0)
 - [SeaBIOS 1.13.0](https://review.coreboot.org/plugins/gitiles/seabios/+/refs/tags/rel-1.13.0)
-
-<!--
 
 #### Binary blobs
 

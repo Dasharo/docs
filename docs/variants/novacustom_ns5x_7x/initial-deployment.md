@@ -1,4 +1,4 @@
-# Dasharo for NovaCustom NS5X - Installation manual
+# Initial Deployment
 
 ## Intro
 
@@ -64,7 +64,7 @@ Steps for initial Dasharo installation:
 - Disconnect the CMOS battery (2)
 - Attach an external programmer with a SOIC-8 clip to the SPI flash chip (3)
 - Execute the following command, replaceing [path] with the path to the firmware
-  image you want to flash, e.g. `novacustom_ns5x_full_v1.0.0.rom`
+  image you want to flash, e.g. `novacustom_ns5x_7x_full_v1.0.0.rom`
 
   ```bash
   flashrom -p ch341a_spi -w [path]
@@ -74,14 +74,3 @@ Steps for initial Dasharo installation:
 - Connect the primary battery (1) - do **not** connect the CMOS battery yet (2)
 - Power on the laptop. The laptop may shut down once after training the memory.
 - Once Dasharo is booted, shut down the laptop and reconnect the CMOS battery.
-
-### Updating Dasharo
-
-If Dasharo is currently installed, only the RW_SECTION_A partition of the flash
-needs to be updated. Flash it using the following command:
-
-```bash
-flashrom -p internal -w [path] --fmap -i RW_SECTION_A
-```
-
-This command also preserves UEFI settings and the boot order.

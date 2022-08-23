@@ -1,5 +1,7 @@
 # Recovery
 
+**Please read the [overview page](overview.md) first!**
+
 ---
 
 ## **Prequisitions**

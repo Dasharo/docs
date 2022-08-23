@@ -34,7 +34,7 @@ initial frequency after booting into the OS.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     cat /proc/cpuinfo | grep -i mhz
@@ -143,6 +143,7 @@ expected frequency.
     cat /proc/cpuinfo | grep -i mhz
     ```
 
+1. Repeat command every one minute, for 60 minutes.
 1. Compare the results.
 
 **Expected result**
@@ -211,6 +212,7 @@ expected frequency.
 while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
+1. Repeat command every one minute, for 60 minutes.
 1. Note the results.
 
 **Expected result**
@@ -274,6 +276,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
     cat /proc/cpuinfo | grep -i mhz
     ```
 
+1. Repeat command every one minute, for 60 minutes.
 1. Compare the results.
 
 **Expected result**
@@ -342,6 +345,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
 ```
 
+1. Repeat command couple times
 1. Note the results.
 
 **Expected result**
@@ -376,7 +380,7 @@ while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\
 **Test description**
 
 This test aims to verify whether the mounted CPU is running on expected
-frequency after stress test.
+frequency during the stress test.
 
 **Test configuration data**
 
@@ -399,19 +403,23 @@ frequency after stress test.
     ```
 
 1. Note the results.
-1. Run the follwing command in the terminal to start the stress test:
+1. Open a terminal window and run the following command to turn on the stressor:
 
     ```bash
-    stress-ng --cpu 0 --timer 32 --timer-freq 1000000 -t 60s --cpu-load 100
+    stress-ng --cpu 0 --tz -t 60m
     ```
 
-1. After ending the stress test run the following command in the terminal:
+    Stress test duration time might be changed by change the value of the
+    parameter `-t`.
+
+1. While test runs, open a terminal window and run the following command every
+   one minute until the test finishes, to check the current frequency.
 
     ```bash
     cat /proc/cpuinfo | grep -i mhz
     ```
 
-1. Compare the output from the first and the third command.
+1. Note the results.
 
 **Expected result**
 
@@ -450,7 +458,7 @@ frequency after stress test.
 **Test description**
 
 This test aims to verify whether the mounted CPU is running on
-expected frequency after stress test.
+expected frequency during the stress test.
 
 **Test configuration data**
 
@@ -474,12 +482,14 @@ expected frequency after stress test.
 
 1. Note the result.
 1. Run the stressor.
-1. Run the following command in the powershell:
+1. While test runs, open Powershell and run the following command every
+    one minute until the test finishes, to check the current frequency:
 
 ```powershell
-while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
+(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100
 ```
 
+1. Repeat command couple times.
 1. Note the results.
 
 **Expected result**
@@ -514,7 +524,7 @@ while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\
 **Test description**
 
 This test aims to verify whether the mounted CPU is running on expected
-frequency after stress test. The DUT during test works on battery.
+frequency during the stress test. The DUT during test works on battery.
 
 **Test configuration data**
 
@@ -537,19 +547,23 @@ frequency after stress test. The DUT during test works on battery.
     ```
 
 1. Note the results.
-1. Run the follwing command in the terminal to start the stress test:
+1. Open a terminal window and run the following command to turn on the stressor:
 
     ```bash
-    stress-ng --cpu 0 --timer 32 --timer-freq 1000000 -t 60s --cpu-load 100
+    stress-ng --cpu 0 --tz -t 60m
     ```
 
-1. After ending the stress test run the following command in the terminal:
+    Stress test duration time might be changed by change the value of the
+    parameter `-t`.
+
+1. While test runs, open a terminal window and run the following command every
+   one minute until the test finishes, to check the current frequency.
 
     ```bash
     cat /proc/cpuinfo | grep -i mhz
     ```
 
-1. Compare the output from the first and the third command.
+1. Note the results.
 
 **Expected result**
 
@@ -588,7 +602,7 @@ frequency after stress test. The DUT during test works on battery.
 **Test description**
 
 This test aims to verify whether the mounted CPU is running on
-expected frequency after stress test.
+expected frequency during the stress test.
 
 **Test configuration data**
 
@@ -612,12 +626,14 @@ expected frequency after stress test.
 
 1. Note the result.
 1. Run the stressor.
-1. Run the following command in the powershell:
+1. While test runs, open Powershell and run the following command every
+    one minute until the test finishes, to check the current frequency:
 
 ```powershell
-while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
+(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100
 ```
 
+1. Repeat command couple times.
 1. Note the results.
 
 **Expected result**
@@ -631,7 +647,7 @@ while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\
     2419
     ```
 
-1. None of displayed values ​​that follow the second command should be higher than
+1. None of displayed values that follow the second command should be higher than
    maximum frequency.
 
     Example output:

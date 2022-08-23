@@ -34,19 +34,26 @@ nav:
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
       - 'Asus KGPE-D16':
+          - 'Overview': variants/asus_kgpe_d16/overview.md
           - 'Releases': variants/asus_kgpe_d16/releases.md
-          - 'Hardware setup': variants/asus_kgpe_d16/setup.md
           - 'Building manual': variants/asus_kgpe_d16/building-manual.md
+          - 'Initial deployment': variants/asus_kgpe_d16/initial-deployment.md
+          - 'Firmware update': variants/asus_kgpe_d16/firmware-update.md
+          - 'Recovery': variants/asus_kgpe_d16/recovery.md
           - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
           - 'Test matrix': variants/asus_kgpe_d16/test-matrix.md
-          - 'Automatic fan control': variants/asus_kgpe_d16/fan-control.md
-          - 'Hardware flash protection': variants/asus_kgpe_d16/spi-wp.md
+          - 'Fan Control': variants/asus_kgpe_d16/fan-control.md
+          - 'Hardware setup': variants/asus_kgpe_d16/setup.md
+          - 'SPI write protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
       - 'Talos II':
+          - 'Overview': variants/talos_2/overview.md
           - 'Releases': variants/talos_2/releases.md
           - 'Building manual': variants/talos_2/building-manual.md
-          - 'Installation manual': variants/talos_2/installation-manual.md
-          #- 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
+          - 'Initial deployment': variants/talos_2/initial-deployment.md
+          - 'Firmware update': variants/talos_2/firmware-update.md
+          - 'Recovery': variants/talos_2/recovery.md
+          - 'Hardware Configuration Matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
       - 'NovaCustom NV4x':
@@ -72,18 +79,20 @@ nav:
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
-      - 'NovaCustom NS5X':
-          - 'Overview': variants/novacustom_ns5x/overview.md
-          - 'Releases': variants/novacustom_ns5x/releases.md
-          - 'Building manual': variants/novacustom_ns5x/building.md
-          - 'Installation manual': variants/novacustom_ns5x/installation.md
-          - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
-          - 'Post-installation steps': variants/novacustom_ns5x/post_install.md
+          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+      - 'NovaCustom NS5x/7x':
+          - 'Overview': variants/novacustom_ns5x_7x/overview.md
+          - 'Releases': variants/novacustom_ns5x_7x/releases.md
+          - 'Building manual': variants/novacustom_ns5x_7x/building-manual.md
+          - 'Initial deployment': variants/novacustom_ns5x_7x/initial-deployment.md
+          - 'Firmware update': variants/novacustom_ns5x_7x/firmware-update.md
+          - 'Recovery': variants/novacustom_ns5x_7x/recovery.md
+          - 'Hardware Configuration Matrix': variants/novacustom_ns5x_7x/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+          - 'Post-installation setup': variants/novacustom_ns5x_7x/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'RGB keyboard': variants/novacustom_ns5x/rgb_keyboard.md
-          - 'Hardware Configuration Matrix': variants/novacustom_ns5x/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x/test-matrix.md
+          - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
+          - 'EC firmware revocery': variants/novacustom_ns5x_7x/ec_recovery.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md
@@ -146,10 +155,10 @@ nav:
 #     - 'Community Edition': inquiries/community-edition.md
 #     - 'Sponsorware': inquiries/sponsorware.md
 #     - 'Commercial inquiries': inquiries/commercial-inquiries.md
+  - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
   - 'Knowledge base':
       - 'Common coreboot documentation':
           - 'Vboot signing': common-coreboot-docs/vboot_signing.md
-          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
       - 'Dasharo menu documentation':
           - 'Overview': dasharo-menu-docs/overview.md
       - 'Checkbox certification software usage': common-coreboot-docs/checkbox.md
@@ -170,6 +179,8 @@ nav:
         # - 'Overview': ecosystem/transparent-validation.md
         # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
         # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
+          - 'MSI Z690':
+              - 'Assembly and Validation': transparent-validation/msi-z690/assembly-and-validation.md
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
               - 'Basic validation': transparent-validation/muxpi/basic-validation.md
@@ -236,6 +247,7 @@ nav:
               - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
               - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
               - 'Firmware flashing using Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
+              - 'Embedded controller flashing': unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
               - 'Docking station detect': unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
               - 'Docking station USB devices': unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
               - 'Docking station audio': unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
