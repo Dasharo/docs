@@ -1,8 +1,6 @@
 # Dasharo Performance: Fan Control
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,21 +13,22 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. Check if package `lm-sensors` is installed and if not, use bellow command in
-the terminal to install:
+    the terminal to install:
 
     ```bash
     apt-get install --assume-yes lm-sensors
     ```
 
-### FNM001.001 Fan does not stuck after coldboot (Ubuntu 22.04)
+## FNM001.001 Fan does not stuck after coldboot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that fan RPM is not stuck after coldboot.
+This test aims to verify that the fan does not stuck on initial or any defined
+speed after coldboot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
@@ -38,9 +37,8 @@ This test aims to verify that fan RPM is not stuck after coldboot.
 
 **Test steps**
 
-1. Disconnect DUT from power surce.
-1. Reconnect DUT to power source.
-1. Power on the DUT.
+1. Cut the power off while DUT is turned on.
+1. Restore power and power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. In the terminal window run the following command\:
@@ -55,8 +53,9 @@ This test aims to verify that fan RPM is not stuck after coldboot.
 **Expected result**
 
 The output of the command should contain information about the current
-fan RPM. If the current RPM is the same as initial speed, the test should be
-considered as failed.
+fan speed. If the current speed is the same as initial speed, the test should
+be considered as failed. If the current speed does not change in the long term,
+the test should be considered as failed.
 
 Example output:
 
@@ -64,15 +63,16 @@ Example output:
 fan1:        1131 RPM  (min =  329 RPM)
 ```
 
-### FNM002.001 Fan does not stuck after warmboot (Ubuntu 22.04)
+## FNM002.001 Fan does not stuck after warmboot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that fan RPM is not stuck after warmboot.
+This test aims to verify that the fan does not stuck on initial or any defined
+speed after warmboot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
@@ -96,8 +96,9 @@ This test aims to verify that fan RPM is not stuck after warmboot.
 **Expected result**
 
 The output of the command should contain information about the current
-fan RPM. If the current RPM is the same as initial speed, the test should be
-considered as failed.
+fan speed. If the current speed is the same as initial speed, the test should
+be considered as failed. If the current speed does not change in the long term,
+the test should be considered as failed.
 
 Example output:
 
@@ -105,15 +106,16 @@ Example output:
 fan1:        1131 RPM  (min =  329 RPM)
 ```
 
-### FNM003.001 Fan does not stuck after reboot (Ubuntu 22.04)
+## FNM003.001 Fan does not stuck after reboot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that fan RPM is not stuck after reboot.
+This test aims to verify that the fan does not stuck on initial or any defined
+speed after reboot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
@@ -137,8 +139,9 @@ This test aims to verify that fan RPM is not stuck after reboot.
 **Expected result**
 
 The output of the command should contain information about the current
-fan RPM. If the current RPM is the same as initial speed, the test should be
-considered as failed.
+fan speed. If the current speed is the same as initial speed, the test should
+be considered as failed. If the current speed does not change in the long term,
+the test should be considered as failed.
 
 Example output:
 
