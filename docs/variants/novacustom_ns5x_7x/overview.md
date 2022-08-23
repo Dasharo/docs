@@ -20,6 +20,6 @@
     the method of customizing the displayed logo.
 * [RGB keyboard](rgb_keyboard.md) - describes the method of using the RGB
     keyboard hotkeys.
-* [EC firmware recovery](ec-recovery.md) - describes the process of flashing
+* [EC firmware recovery](ec_recovery.md) - describes the process of flashing
     EC firmware externally, in case it has been flashed using incompatible
     or broken firmware
