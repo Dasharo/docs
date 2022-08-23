@@ -17,7 +17,7 @@ subjected from before the release of the new binary.
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                            | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][USB]                         | USB           | All                                  |
-| 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | All                                  |
+| 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 10.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |
 | 11.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
 | 12.  | [USB-C/Thunderbolt][UTC]                               | UTC           | All                                  |
@@ -32,6 +32,7 @@ subjected from before the release of the new binary.
 | 21.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
 | 22.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 23.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
+| 23.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -56,6 +57,7 @@ subjected from before the release of the new binary.
 [DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
+[ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
 
 ## Module: Dasharo security
 

@@ -26,7 +26,6 @@ environment.
 The usage of DRT technologies like Intel Trusted Execution Technology (TXT) or
 AMD Secure Startup becomes more and more significant, for example, Dynamic Root
 of Trust for Measurement (DRTM) requirements of
-
 [Microsoft Secured Core PCs][ms_sec_core]. DRTM hasn't found its place in
 open-source projects yet, but that gradually changes. The demand on having
 firmware independent Roots of Trust is increasing, and projects that satisfy
