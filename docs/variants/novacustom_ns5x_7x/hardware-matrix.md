@@ -13,7 +13,8 @@ coreboot port on the NovaCustom NS51/NS70 laptops.
 |                                | Internal Cooling                                 |
 | **RAM**                        | Slot 1: KVR32S22D8/16                            |
 |                                | Slot 2: KVR32S22D8/16                            |
-| **SSD**                        | Samsung SSD 980 PRO 250 GB                       |
+| **SSD**                        | 1. Samsung SSD 980 PRO 250 GB                    |
+|                                | 2. Samsung SSD 980 PRO 500 GB                    |
 | **Flash memory**               | Winbond 25Q128JVSQ 2118 16 MB                    |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
@@ -39,8 +40,7 @@ coreboot port on the NovaCustom NS51/NS70 laptops.
 |                                | Internal Cooling                                 |
 | **RAM**                        | Slot 1: KVR32S22S8/8                             |
 |                                | Slot 2: KVR32S22S8/8                             |
-| **SSD**                        | Samsung SSD 980 250 GB                           |
-|                                | Samsung SSD 980 PRO 250 GB                       |
+| **SSD**                        | Samsung SSD 980 1 TB                             |
 | **Flash memory**               | GigaDevice 25B127DSIG 16 MB                      |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
