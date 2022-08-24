@@ -1,7 +1,5 @@
 # Recovery
 
----
-
 ## Prequisitions
 
 To proceed with the recovery procedurethe backup with the  vendor firmware will
@@ -11,8 +9,6 @@ Backup file should be generated before making any changes in device flash
 chip according to documentation in
 [Reading flash contents](initial-deployment.md#reading-flash-contents)
 section.
-
----
 
 ## Internal flashing
 

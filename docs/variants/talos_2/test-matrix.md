@@ -1,4 +1,4 @@
-# Test matrix - Talos II
+# Test matrix
 
 ## About
 

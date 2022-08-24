@@ -1,4 +1,4 @@
-# Test matrix - Asus KGPE-A16
+# Test matrix
 
 ## About
 

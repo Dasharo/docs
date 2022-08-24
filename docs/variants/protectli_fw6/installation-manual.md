@@ -1,4 +1,4 @@
-# Protectli Dasharo on FW6 - installation manual
+# Installation manual
 
 Flashing coreboot can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and
