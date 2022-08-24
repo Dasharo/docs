@@ -5,7 +5,7 @@
     ASUS KGPE D-16.
 * [Initial deployment](initial-deployment.md) - describes initial Dasharo
     deployment methods (i. e. flashing new firmware) for ASUS KGPE D16.
-* [Firmware update](firmware-update.md) - explains supported Dasharo 
+* [Firmware update](firmware-update.md) - explains supported Dasharo
     open-source firmware update methods.
 * [Recovery](recovery.md) - gathers information on how to recover the platform
     from potential failure.
