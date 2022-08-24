@@ -29,9 +29,8 @@ Test results for this platform can be found
 
 - [Heads console output only on BMC console, not VGA](https://github.com/Dasharo/dasharo-issues/issues/168)
 - [Startup on a single CPU configuration](https://github.com/Dasharo/dasharo-issues/issues/80)
-- Startup on chips that don't provide support for WOF
-- Frequency of the I2C bus number 2
-- Determining PowerBus frequency (it's fixed for all Talos II machines)
+- Startup on a single CPU configuration and support for older CPUs
+    (without WOF tables and with different frequencies)
 - [CBMEM can no longer be accessed from OS](https://github.com/Dasharo/dasharo-issues/issues/69)
 
 ### Known issues
