@@ -16,16 +16,16 @@ EC firmware externally using Arduino.
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Make yourself familiar with
-    [EC recovery documentation](../../../variants/novacustom_ns5x/ec-recovery/).
+    [EC recovery documentation](../../../variants/novacustom_ns5x_7x/ec_recovery/).
 
 **Test steps**
 
 1. Prepare the hardware for flashing in accordance with the
-    [Prerequisites section](../../../variants/novacustom_ns5x/ec-recovery/#prereqisites).
+    [Prerequisites section](../../../variants/novacustom_ns5x_7x/ec_recovery/#prereqisites).
 1. Prepare the firmware in accordance with the
-    [Preparation section](../../../variants/novacustom_ns5x/ec-recovery/#preparation).
+    [Preparation section](../../../variants/novacustom_ns5x_7x/ec_recovery/#preparation).
 1. Flash the EC firmware in accordance with the
-    [Flashing section](../../../variants/novacustom_ns5x/ec-recovery/#flashing).
+    [Flashing section](../../../variants/novacustom_ns5x_7x/ec_recovery/#flashing).
 1. Note the results.
 
 **Expected result**
