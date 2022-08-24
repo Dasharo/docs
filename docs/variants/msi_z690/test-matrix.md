@@ -20,7 +20,7 @@ subjected from before the release of the new binary.
 | 9.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD001.002, AUD004.001, AUD004.002 AUD005.001, AUD005.002 AUD006.001, AUD006.002 |
 | 10.  | [NVMe support][NVM]                               | NVM           | All                                  |
 | 11.  | [Network boot][PXE]                               | PXE           | All                                  |
-| 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
+| 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 13.  | [Windows booting][WBT]                            | WBT           | All                                  |
 | 14.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 15.  | [Custom logo][CLG]                                | CLG           | All                                  |

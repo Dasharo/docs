@@ -15,7 +15,7 @@ subjected from before the release of the new binary.
 | 4.   | [Device Tree][DVT]                                | DVT           | All                                  |
 | 5.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 6.   | [USB booting][UBT]                                | UBT           | All                                  |
-| 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.001                           |
+| 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.002                           |
 | 8.   | [CPU status][CPU]                                 | CPU           | All                                  |
 
 [CBP]: ../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md

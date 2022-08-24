@@ -22,6 +22,11 @@ Remember that make all connections in the grounding strap.
 
 ## Device assembly
 
+### Full set assembly
+
+Section below describes the procedure of complete assembling of the
+working station.
+
 1. Unpack all equipment.
 1. Place the motherboard in front of you, this is the component with which most
     of the operations will be performed. It's best to put something softer under
@@ -88,7 +93,7 @@ Remember that make all connections in the grounding strap.
 
     ![Front Panel](images/msi_z690_montage_front_panel.png)
 
-    A detailed description of the connection cable marked `B` can be found in
+    A detailed description of the connection cable marked `D` can be found in
     the [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
     in section: JFP1, JFP2: Front Panel Connectors.
 
@@ -110,11 +115,26 @@ Remember that make all connections in the grounding strap.
 
 1. Close the case of the computer.
 
+### Motherboard assembly only
+
+Section below describes the procedure of assembling the motherboard.
+
+To prepare the motherboard the following operations should be performed:
+
+1. Go through steps 1-8 from
+    [Full set assembling section](#motherboard-assembly-only).
+
+1. Connect cable marked `D` to allows power on the device as described in
+    the 13th point of the
+    [Full set assembling section](#motherboard-assembly-only).
+1. Connect the power supply to the motherboard as described in the 16th point
+    of the [Full set assembling section](#motherboard-assembly-only).
+
 ## Device validation
 
 1. Connect the device to the mains.
 1. Power on the device with the button located on the front panel.
-1. If all connections have been made correctly, the device shuold start and
+1. If all connections have been made correctly, the device should start and
     the boot logo should be shown.
 1. Install Dasharo firmware in accordance with
     [Installation manual](../../variants/msi_z690/installation-manual.md) -
@@ -127,10 +147,10 @@ Remember that make all connections in the grounding strap.
     sudo dmidecode -t 0 | grep Version
     ```
 
-1. Output of command above should be similar to:
-    `Version: Dasharo (coreboot+UEFI) <version>` where version should
+1. The output of the command above should be similar to:
+    `Version: Dasharo (coreboot+UEFI) <version>` where the version should
     correspond to the version of the flashing binary used eg. v1.0.0.
-1.Check in system that everything is working properly.
+1. Check in the system that everything is working properly.
 
 ## Useful content
 
