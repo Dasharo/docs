@@ -32,5 +32,7 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+| 2.   | [CPU frequency measure][CPF]                      | CPF           | CPF001.001                           |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
