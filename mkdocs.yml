@@ -29,7 +29,8 @@ nav:
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
           - 'Building manual': variants/dell_optiplex/building-manual.md
-          #- 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
+          - 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
+          - 'Test matrix': variants/dell_optiplex/test-matrix.md
           - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
