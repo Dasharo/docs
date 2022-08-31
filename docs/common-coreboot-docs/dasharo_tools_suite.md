@@ -184,8 +184,7 @@ ec_transition novacustom_ns5x_v1.3.0.rom novacustom_ns5x_v1.3.0_ec.rom
 <TBD>
 ```
 > Note: Make sure you have provided 2 argumets:
-- The first is path to BIOS update file
-- The second is path to EC update file
+The first is path to BIOS update file and the second is path to EC update file
 
 * Computer will shut down automaticly
 * Power on your computer. Booting process may take a while
