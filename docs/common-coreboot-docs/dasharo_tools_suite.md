@@ -138,7 +138,8 @@ This section describes functionality of Dasharo Tools Suite in Community
 Edition. These are:
 
 * Dasharo HCL Report,
-* Dasharo firmware update.
+* Dasharo firmware update,
+* Dasharo EC Transition.
 
 ## Dasharo HCL Report
 
@@ -160,6 +161,35 @@ drop to Shell and run:
 ```bash
 fwupdmgr refresh
 fwupdmgr update
+```
+
+## Dasharo EC Transition
+
+DTS allows to perform full EC transition from vendor to Dasharo/ec FW.
+
+To perform EC transition make sure you are running DTS version 1.0.1 or higher
+and follow this steps:
+
+* After boot, choose option number 9 to drop to Shell
+* Download BIOS and EC update files. You can download them from
+[there (BIOS)](https://cloud.3mdeb.com/index.php/f/491273) and
+[there (EC)](https://cloud.3mdeb.com/index.php/f/491331)
+> Note: At the time writing this instruction, current highest version is 1.3.0
+Always make sure you are downloading the newest version.
+
+* Run script for EC transition
+```bash
+ec_transition novacustom_ns5x_v1.3.0.rom novacustom_ns5x_v1.3.0_ec.rom
+```
+> Note: Make sure you have provided 2 argumets:
+- The first is path to BIOS update file
+- The second is path to EC update file
+
+* Computer will shut down automaticly
+* Power on your computer. Booting process may take a while
+* Your firmware is correcty installed. You can retrieve FW information using
+```bash
+system76_ectool info
 ```
 
 ## Reporting issues
