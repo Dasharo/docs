@@ -139,7 +139,8 @@ Edition. These are:
 
 * Dasharo HCL Report,
 * Dasharo firmware update,
-* Dasharo EC Transition.
+* Dasharo EC Transition,
+* Dasharo EC update
 
 ## Dasharo HCL Report
 
@@ -180,6 +181,7 @@ Always make sure you are downloading the newest version.
 * Run script for EC transition
 ```bash
 ec_transition novacustom_ns5x_v1.3.0.rom novacustom_ns5x_v1.3.0_ec.rom
+<TBD>
 ```
 > Note: Make sure you have provided 2 argumets:
 - The first is path to BIOS update file
@@ -190,6 +192,34 @@ ec_transition novacustom_ns5x_v1.3.0.rom novacustom_ns5x_v1.3.0_ec.rom
 * Your firmware is correcty installed. You can retrieve FW information using
 ```bash
 system76_ectool info
+<TBD>
+```
+
+## Dasharo EC update
+
+DTS allows to update EC to newer version. To properly update it, follow this
+steps:
+
+* Retrieve information about your current EC
+```bash
+system76_ectool_info
+<TBD>
+```
+* Download EC update file. You can find it
+[there (EC)](https://cloud.3mdeb.com/index.php/f/491331)
+> Note: At the time writing this instruction, current highest version is 1.3.0
+Always make sure you are downloading the newest version.
+
+* Flash EC internally
+```bash
+system76_ectool flash ec_file.rom
+<TBD>
+```
+
+* Retrieve information about your updated EC
+```bash
+system76_ectool_info
+<TBD>
 ```
 
 ## Reporting issues
