@@ -110,7 +110,8 @@ should also be covered in this section.
 - `Hardware Configuration Matrix` - presents the configuration used in Dasharo
   labs to perform validation as well as a community-contributed hardware
   compatibility reports, which present CPUs, GPUs, memory modules, and other
-  components tested by community.
+  components tested by community. To learn how to generate Hardware Configuration
+  Matrix please check our [howto](http://0.0.0.0:8000/howto/#how-to-generate-hardware-configuration-matrix).
 - `Test Matrix` - presents a list of tests that we execute during the release
   process.
 - `Community Test Results` - an optional section that presents test results
