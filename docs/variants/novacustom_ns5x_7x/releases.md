@@ -52,7 +52,7 @@ Test results for this platform can be found
 [sha_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256
 [sig_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256.sig
 
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+See how to verify signatures on [this video](https://asciinema.org/a/518379)
 
 ### SBOM (Software Bill of Materials)
 
