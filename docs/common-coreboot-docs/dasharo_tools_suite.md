@@ -166,59 +166,143 @@ fwupdmgr update
 
 ## Dasharo EC Transition
 
-DTS allows to perform full EC transition from vendor to Dasharo/ec FW.
+DTS allows to perform full EC transition from vendor to Dasharo/EC FW. For now
+this functionality is supported on NS50 and NS70 laptops.
 
 To perform EC transition make sure you are running DTS version 1.0.1 or higher
 and follow this steps:
 
 * After boot, choose option number 9 to drop to Shell
-* Download BIOS and EC update files. You can download them from
-[there (BIOS)](https://cloud.3mdeb.com/index.php/f/491273) and
-[there (EC)](https://cloud.3mdeb.com/index.php/f/491331)
-> Note: At the time writing this instruction, current highest version is 1.3.0
-Always make sure you are downloading the newest version.
+* Download BIOS and EC update files.
+
+```bash
+wget -O firmware.rom https://cloud.3mdeb.com/index.php/s/SKpqSNzfFNY7AbK/download
+```
+
+```bash
+wget -O ec.rom https://cloud.3mdeb.com/index.php/s/GK2KbXaYprkCCWM/download
+```
 
 * Run script for EC transition
+
 ```bash
-ec_transition novacustom_ns5x_v1.3.0.rom novacustom_ns5x_v1.3.0_ec.rom
-<TBD>
+ec_transition firmware.rom ec.rom
 ```
+
+```bash
+Getting update
+/tmp/biosupdate.rom: OK
+Found PCI subsystem match for device CLEVO NS50MU/NS51MU
+EC version: 1.07.07 is not supported, update required
+Getting EC firmware update...
+/tmp/ecupdate.rom: OK
+Updating EC...
+flashrom v1.2-575-g5618d82 on Linux 5.15.36-yocto-standard (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+Found PCI subsystem match for device CLEVO NS50MU/NS51MU
+Mainboard EC Project: NS50MU
+Mainboard EC Version: 1.07.07
+Flash Part ID: ef 00 00
+Found unknown Winbond flash chip
+Found Programmer flash chip "Opaque flash chip" (128 kB, Programmer-specific) on ite_ec.
+Reading old flash chip contents... done.
+Erasing and writing flash chip... Erase/write done.
+Verifying flash... VERIFIED.
+Successfully updated EC firmware
+Installing Dasharo firmware...
+flashrom v1.2-575-g5618d82 on Linux 5.15.36-yocto-standard (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+No DMI table found.
+Found chipset "Intel Tiger Lake U Premium".
+Enabling flash write... SPI Configuration is locked down.
+Enabling hardware sequencing because some important opcode is locked.
+OK.
+Found Programmer flash chip "Opaque flash chip" (16384 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+Reading ich descriptor... done.
+Using region: "bios".
+Reading old flash chip contents... done.
+Erasing and writing flash chip... Erase/write done.
+Verifying flash... VERIFIED.
+Successfully installed Dasharo firmware
+Powering off
+Syncing disks... Done.
+The computer will shut down automatically in 5 seconds
+```
+
 > Note: Make sure you have provided 2 argumets:
 The first is path to BIOS update file and the second is path to EC update file
 
 * Computer will shut down automaticly
 * Power on your computer. Booting process may take a while
+* After boot, choose option number 9 to drop to Shell
 * Your firmware is correcty installed. You can retrieve FW information using
+
 ```bash
 system76_ectool info
-<TBD>
+```
+
+```bash
+board: clevo/ns50mu
+version: 2022-08-31_cbff21b
 ```
 
 ## Dasharo EC update
 
-DTS allows to update EC to newer version. To properly update it, follow this
-steps:
+DTS allows to update Embedded Controller firmware to newer version. To properly
+update it, follow this steps:
 
 * Retrieve information about your current EC
+
 ```bash
 system76_ectool_info
-<TBD>
 ```
-* Download EC update file. You can find it
-[there (EC)](https://cloud.3mdeb.com/index.php/f/491331)
-> Note: At the time writing this instruction, current highest version is 1.3.0
-Always make sure you are downloading the newest version.
 
-* Flash EC internally
+```bash
+board: clevo/ns50mu
+version: 2022-08-16_c12ff1a
+```
+
+* Download the newest version of Embedded Controller firmware.
+
+* Flash Embedded Controller firmware internally
+
 ```bash
 system76_ectool flash ec_file.rom
-<TBD>
 ```
 
+```bash
+file board: Ok("clevo/ns50mu")
+file version: Ok("2022-08-16_c12ff1a")
+ec board: Ok("clevo/ns50mu")
+ec version: Ok("2022-08-31_cbff21b")
+Waiting 5 seconds for all keys to be released
+Sync
+SPI Read 128K
+Saving ROM to backup.rom
+SPI Write 128K
+SPI Read 128K
+Successfully programmed SPI ROM
+Result: Ok(())
+Sync
+System will shut off in 5 seconds
+Sync
+```
+
+> Note: this is example output, versions may differ
+
 * Retrieve information about your updated EC
+
 ```bash
 system76_ectool_info
-<TBD>
+```
+
+```bash
+board: clevo/ns50mu
+version: 2022-08-31_cbff21b
 ```
 
 ## Reporting issues
