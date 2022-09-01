@@ -42,7 +42,7 @@ Test results for this platform can be found
 [sha256][sha_v1.3.0]{ .md-button }
 [sha256.sig][sig_v1.3.0]{ .md-button }
 [novacustom_ns5x_v1.3.0_ec.rom][rom_ec_v1.3.0]{ .md-button }
-[sha256][sha_ec_v1.3.0]{ .md-buton }
+[sha256][sha_ec_v1.3.0]{ .md-button }
 [sha256.sig][sig_ec_v1.3.0]{ .md-button }
 
 [rom_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0.rom
