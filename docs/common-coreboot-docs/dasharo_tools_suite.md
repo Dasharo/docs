@@ -172,7 +172,9 @@ this functionality is supported on NS50 and NS70 laptops.
 To perform EC transition make sure you are running DTS version 1.0.1 or higher
 and follow this steps:
 
-* After boot, choose option number 9 to drop to Shell
+* After boot, choose option number 9 to drop to Shell.
+* Plug in power supply, without it, flashing EC is not possible as losing power
+  may cause in damaged firmware.
 * Download BIOS and EC update files.
 
 ```bash
@@ -183,7 +185,7 @@ wget -O firmware.rom https://cloud.3mdeb.com/index.php/s/SKpqSNzfFNY7AbK/downloa
 wget -O ec.rom https://cloud.3mdeb.com/index.php/s/GK2KbXaYprkCCWM/download
 ```
 
-* Run script for EC transition
+* Run script for EC transition.
 
 ```bash
 ec_transition firmware.rom ec.rom
@@ -236,10 +238,10 @@ The computer will shut down automatically in 5 seconds
 > Note: Make sure you have provided 2 argumets:
 The first is path to BIOS update file and the second is path to EC update file
 
-* Computer will shut down automaticly
-* Power on your computer. Booting process may take a while
-* After boot, choose option number 9 to drop to Shell
-* Your firmware is correcty installed. You can retrieve FW information using
+* Computer will shut down automaticly.
+* Power on your computer. Booting process may take a while.
+* After boot, choose option number 9 to drop to Shell.
+* Your firmware is correcty installed. You can retrieve FW information using.
 
 ```bash
 system76_ectool info
@@ -267,7 +269,8 @@ version: 2022-08-16_c12ff1a
 ```
 
 * Download the newest version of Embedded Controller firmware.
-
+* Plug in power supply, without it, flashing EC is not possible as losing power
+  may cause in damaged firmware.
 * Flash Embedded Controller firmware internally
 
 ```bash
