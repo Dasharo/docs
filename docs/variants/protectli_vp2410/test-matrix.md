@@ -1,4 +1,4 @@
-# Test matrix - Protectli VP2410
+# Test matrix
 
 ## About
 

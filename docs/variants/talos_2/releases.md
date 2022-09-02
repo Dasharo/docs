@@ -1,4 +1,4 @@
-# Raptor Computing Systems Talos II Dasharo Release Notes
+# Release notes
 
 Following Release Notes describe status of Open Source Firmware development for
 Raptor Computing Systems Talos II
@@ -17,6 +17,59 @@ For details about our release process please read
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1KpmuPEkWOj3SieophUbgf7CF6mydliMsEDLtOFOrKn0/edit?usp=sharing).
+
+## v0.6.0 - 2022-08-26
+
+### Added
+
+- Optional support for Infineon I2C TPM1 chips
+- Initial support for measured boot
+
+### Fixed
+
+- [Heads console output only on BMC console, not VGA](https://github.com/Dasharo/dasharo-issues/issues/168)
+- [Startup on a single CPU configuration](https://github.com/Dasharo/dasharo-issues/issues/80)
+- Startup on a single CPU configuration and support for older CPUs
+    (without WOF tables and with different frequencies)
+- [CBMEM can no longer be accessed from OS](https://github.com/Dasharo/dasharo-issues/issues/69)
+
+### Known issues
+
+- [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
+- [CPU appears to be stuck on initial frequency](https://github.com/Dasharo/dasharo-issues/issues/35)
+
+### Binaries
+
+[raptor-cs_talos-2_zImage_v0.6.0.bundled][zImage_v0.6.0_file]{ .md-button }
+[sha256][zImage_v0.6.0_hash]{ .md-button }
+[sha256.sig][zImage_v0.6.0_sig]{ .md-button }
+
+[raptor-cs_talos-2_coreboot_v0.6.0.rom.signed.ecc][cb_v0.6.0_file]{ .md-button }
+[sha256][cb_v0.6.0_hash]{ .md-button }
+[sha256.sig][cb_v0.6.0_sig]{ .md-button }
+
+[raptor-cs_talos-2_bootblock_v0.6.0.signed.ecc][bb_v0.6.0_file]{ .md-button }
+[sha256][bb_v0.6.0_hash]{ .md-button }
+[sha256.sig][bb_v0.6.0_sig]{ .md-button }
+
+See how to verify signatures on [this video](https://asciinema.org/a/415457)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 5621a1e revision 2207bbcc](https://github.com/Dasharo/coreboot/tree/2207bbcc)
+- [skiboot based on 7f90b9cd revision fa060c2c](https://github.com/Dasharo/skiboot/tree/fa060c2c)
+- [heads based on fdbd9b2 revision 66f0fce0870b729d](https://github.com/osresearch/heads/tree/66f0fce0870b729d)
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/w2Y2G4Rrj
+[zImage_v0.6.0_file]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_zImage_v0.6.0.bundled
+[zImage_v0.6.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_zImage_v0.6.0.bundled.sha256
+[zImage_v0.6.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_zImage_v0.6.0.bundled.sha256.sig
+[cb_v0.6.0_file]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_coreboot_v0.6.0.rom.signed.ecc
+[cb_v0.6.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_coreboot_v0.6.0.rom.signed.ecc.sha256
+[cb_v0.6.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_coreboot_v0.6.0.rom.signed.ecc.sha256.sig
+[bb_v0.6.0_file]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_bootblock_v0.6.0.signed.ecc
+[bb_v0.6.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_bootblock_v0.6.0.signed.ecc.sha256
+[bb_v0.6.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_bootblock_v0.6.0.signed.ecc.sha256.sig
 
 ## v0.5.0 - 2022-04-12
 

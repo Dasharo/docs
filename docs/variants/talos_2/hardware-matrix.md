@@ -1,4 +1,4 @@
-# Hardware configuration matrix - Talos II
+# Hardware configuration matrix
 
 ## Introduction
 

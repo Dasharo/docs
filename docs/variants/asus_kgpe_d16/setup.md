@@ -1,4 +1,4 @@
-# RTE v.0.5.3 with Asus KGPE-D16 connection
+# RTE v.0.5.3 with ASUS KGPE-D16 connection
 
 ![](/images/kgpe_overview.png)
 

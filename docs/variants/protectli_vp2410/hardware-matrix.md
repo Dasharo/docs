@@ -1,4 +1,4 @@
-# Hardware configuration matrix - Protectli VP2410
+# Hardware configuration matrix
 
 ## Introduction
 

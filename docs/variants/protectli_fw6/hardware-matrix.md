@@ -1,4 +1,4 @@
-# Hardware configuration matrix - Protectli FW6
+# Hardware configuration matrix
 
 ## Introduction
 

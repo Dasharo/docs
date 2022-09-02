@@ -1,7 +1,5 @@
 # Recovery
 
----
-
 ## Prequisitions
 
 To proceed with the recovery procedure the backup with the vendor firmware will
@@ -11,8 +9,6 @@ The backup file should be generated before making any changes in the device flas
 chip according to documentation in the first step in
 [Testing firmware images without flashing](initial-deployment.md#testing-firmware-images-without-flashing)
 section.
-
----
 
 ## Flashing using BMC
 

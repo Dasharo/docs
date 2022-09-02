@@ -1,4 +1,4 @@
-# Dasharo compatible with MSI PRO Z690-A WIFI DDR4 Release Notes
+# Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
 MSI PRO Z690-A WIFI DDR4

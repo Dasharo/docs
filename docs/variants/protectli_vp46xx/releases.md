@@ -1,4 +1,4 @@
-# Protectli VP46xx Dasharo Release Notes
+# Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
 Protectli VP46xx
