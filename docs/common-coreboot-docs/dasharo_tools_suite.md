@@ -28,6 +28,23 @@ Currently, there are:
 This section provide links and changelogs of DTS CE version started from release
 v1.0.0.
 
+### v1.0.1
+
+#### Images
+
+* [USB bootable DTS CE v1.0.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz)
+* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256)
+* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig)
+
+  See how to verify hash and singature on [this video.](https://youtu.be/oTx2iStxXOE)
+
+#### Changelog
+
+* Added system76_ectool to enable Embedded Controller [firmware updating](#dasharo-ec-update)
+* Added ec_transition script which helps with full Dasharo/Embedded Controller
+  [firmware transition](#dasharo-ec-transition) for NS50 70MU and NS70 laptops
+* First public release: [meta-dts-ce](https://github.com/Dasharo/meta-dts-ce)
+
 ### v1.0.0
 
 #### Images
