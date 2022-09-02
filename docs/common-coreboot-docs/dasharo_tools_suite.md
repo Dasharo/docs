@@ -327,7 +327,7 @@ properly update it, follow these steps:
 * Retrieve information about your updated EC
 
   ```bash
-  system76_ectool_info
+  system76_ectool info
   ```
 
   The output of the above-described command should contain information about
