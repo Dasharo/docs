@@ -3,26 +3,27 @@
 **Please read the [overview page](overview.md) first!**
 
 Following documentation describe process of Dasharo open-source firmware
-update.
+distribution update.
 
 ## OS booting
 
-For simplicity we using network boot [netboot.xyz from USB](https://netboot.xyz/docs/booting/usb).
+For simplicity we recommend using network booted
+[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
-Boot system from USB:
+### Dasharo (coreboot+SeaBIOS) update
 
-* From section `Tools` choose `Utilities (64-bit)`
-* Then from section `netboot.xyz tools` choose `Kernel cmdline params`
-* You should see prompt `Enter kernel cmdline parameters`
-* Type: `iomem=relaxed` and ++enter++
-* Use ++esc++ to get back to netboot.xyz main menu
-* From section `Distributions` choose `Live CDs`, then `Debian`, `Debian Live
-  11 (bullseye)` and `Debian 11 (Core)`
+* Make sure a wired network cable to the device's Ethernet port
+* Boot platform and from SeaBIOS menu choose Dasharo Network Boot Menu
+* In the Dasharo Network Boot Menu, select the `Dasharo Tools Suite` option
+* Enter shell using option `9)`
+* Download the Dell OptiPlex 7010/9010 Dasharo from
+  [release section](releases.md#binaries) or
+  [build from source](building-manual.md).
+* Flash it using:
 
-**NOTE**: If trustworthiness of that solution is in question please note
-netboot.xyz can be [self-hosted](https://netboot.xyz/docs/selfhosting).
+```console
+flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
+```
 
-## Get Dasharo
-
-Download the Dell OptiPlex 7010/9010 Dasharo from [release section](releases.md#binaries)
-or [build from source](building-manual.md).
+Please note that not using `-i bios -i me` may lead to
+[this issue](faq/#cpu-was-replace-warm-reset-required-loop).

@@ -4,84 +4,233 @@
 
 ---
 
-## **Prequisitions**
+Following documentation describes the process of recovering hardware from brick
+state with [RTE](../../../transparent-validation/rte/introduction/) and Dasharo
+open-source firmware. Following procedure is supported for following models
 
-1. To proceed with recovery `.rom` file with backup vendor firmware will be
-    neccesary eg. `backup.rom`.
+<center>
 
-    Backup file should be generated before making any changes in device flash
-    chip according to documentation in
-    [BIOS backup](https://docs.dasharo.com/variants/dell_optiplex/initial-deployment/#bios-backup)
-    section.
+| Vendor | Model |
+:-------:|:-----:|
+|Dell    | OptiPlex 7010 SFF |
+|Dell    | OptiPlex 7010 DT |
+|Dell    | OptiPlex 9010 SFF |
 
-1. Set jumper according to
-    [hardware preparation](https://docs.dasharo.com/variants/dell_optiplex/initial-deployment/#hardware-preparation)
+</center>
 
-1. Install flashrom using
-    [flashrom installation guide](https://docs.dasharo.com/variants/dell_optiplex/initial-deployment/#flashrom-installation)
+## Step 1: Prepare hardware
 
----
+1. To prepare hardware please follow
+[hardware preparation](../initial-deployment/#hardware-preparation) procedure.
+1. Follow instruction in the video to remove heatsink:
+  <center>
+  <iframe width="640" height="480"
+    src="http://www.youtube.com/embed/TiUSTo-XwPo">
+  </iframe>
+  </center>
+## Step 2: Find SPI_1, SPI_2/SPI_3
 
-## **Internal flashing**
+<center>
+![](../../images/dell_optiplex_9010_spi_pin1.jpg)
+</center>
 
-Flash firmware on you Dell OptiPlex machine using below command:
+## Step 3: Connect SOIC-8 Pomona clip between RTE and target
+
+Connect SOIC-8 Pomona according to
+[MX25L3206E datasheet](https://www.macronix.com/Lists/Datasheet/Attachments/8616/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf).
+
+<center>
+![](../../images/mx25l3206e_pinout.png)
+</center>
+
+<center>
+ ![Pomona SOIC clip](../../images/pomona_clip.jpg)
+</center>
+
+<center>
+
+ | RTE J7                                 | Pomona SOIC clip  |
+ |:--------------------------------------:|:-----------------:|
+ | CS                                     | pin 1 (upside)    |
+ | MISO                                   | pin 2 (upside)    |
+ | GND                                    | pin 4 (upside)    |
+ | VCC                                    | pin 5 (downside)  |
+ | SCLK                                   | pin 7 (downside)  |
+ | MOSI                                   | pin 8 (downside)  |
+
+</center>
+
+Numbers 1-4 have to be on one side and numbers 5-8 have to be on the other side
+of the clip.
+
+<center>
+![Clip up](../../images/clip_upside.jpg)
+</center>
+
+<center>
+![Clip down](../../images/clip_downside.jpg)
+</center>
+
+Clip on the `SPI_1` chip. Match pin 1 (`CS`) of the Pomona clip with the first
+pin of `SPI_1` chip, marked with a small dot engraved on the chip.
+
+![Clip connected](../../images/clip_connected.jpg)
+
+## Step 4: Connect RTE
+
+<center>
+![](../../images/rte-boot.jpg)
+</center>
+
+1. Connect J2 Orange Pi Zero system debug output
+1. Power the board and confirm it boots
+1. **Please note** typical convention of USB-UART converter colors is as follows
+    - black - GND
+    - red - +5V
+    - green - TX
+    - white - RX
+1. Connect terminal to RTE and read OS version:
+
+    ```shell
+    sudo minicom -b 115200 -D /dev/ttyUSB0 -o -C /tmp/minicom.cap
+    ```
+
+    - `-b 115200` sets baudrate
+    - `-D /dev/ttyUSB0` points to USB-UART converter device, it can be
+      different if you already have some devices connected or you use different
+      operating system
+    - `-o` skip initialization
+    - `-C /tmp/minicom.cap` capture serial terminal output, if you will have
+      problems with exercises please post this file
+1. Login using following credentials:
+
+    ```shell
+    login: root
+    password: meta-rte
+    ```
+
+## Step 5: Prepare recovery binary
+
+1. Get v0.2-rc3 binary
 
 ```bash
-sudo flashrom -p internal -i me -w <optiplex_firmware>
+wget https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23/download -O dasharo_dell_optiplex_9010_v0.2-rc3.rom
 ```
 
-for example:
+1. It has 12MB, so it have to be split
 
 ```bash
-sudo flashrom -p internal -i me -w /tmp/backup.rom
+split -b4M dasharo_dell_optiplex_9010_v0.2-rc3.rom
 ```
 
-output:
+## Step 6: Flash 4MB (BIOS) part
 
 ```bash
-flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
-flashrom is free software, get the source code at https://flashrom.org
-
-Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-Found chipset "Intel Q77".
-Enabling flash write... SPI Configuration is locked down.
-The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
-the Master Section of the flash descriptor are NOT in effect. Please note
-that Protected Range (PR) restrictions still apply.
-Enabling hardware sequencing due to multiple flash chips detected.
-OK.
-Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
-Reading ich descriptor... done.
-Using regions: "me", "bios".
-Reading old flash chip contents... done.
-Erasing and writing flash chip... Erase/write done.
-Verifying flash... VERIFIED.
+echo 1 > /sys/class/gpio/gpio405/value
 ```
-
-If you get a warning:
 
 ```bash
-WARNING! You may be running flashrom on an unsupported laptop.
+echo 1 > /sys/class/gpio/gpio406/value
 ```
-
-And programmer initialization failed, run command:
 
 ```bash
-flashrom -p internal:laptop=this_is_not_a_laptop -w /tmp/backup.rom -i me
+echo 1 > /sys/class/gpio/gpio404/value
 ```
 
-If you have placed the jumper correctly, you should see the following message
-in flashrom's output:
+`xac` is third file resulting from the previous binary split, so it contains
+Dasharo code and data which fits into 4MB and in case of Dell OptiPlex
+9010/7010 should be flashed to 4MB SPI.
 
 ```bash
-The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
-the Master Section of the flash descriptor are NOT in effect. Please note
-that Protected Range (PR) restrictions still apply.
+flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX25L3208D"
 ```
 
-A newer version of flashrom may not display the warning about unsupported
-chipset as it already may be marked as tested. Our team has verified that
-the flashrom updates firmware reliably on this chipset.
+## (Optional) Step 7: Flash 8MB (ME) part
 
-If you will face any issues please refer to
-[troubleshooting section](https://docs.dasharo.com/variants/dell_optiplex/initial-deployment/#troubleshooting).
+If a more serious problem occurs, like
+[broken ME](../faq/#cpu-was-replace-warm-reset-required-loop),
+it may be necessary to use your
+[firmware backup](../initial-deployment/#bios-backup)
+and restore content of 8MB chip.
+
+### Step 7a: Connect SOIC-16 Pomona clip between RTE and target
+
+Connect SOIC-16 Pomona according to
+[MX25L6406E datasheet](https://www.digikey.ch/htmldatasheets/production/980657/0/0/1/MX25L6406E.pdf).
+
+<center>
+![](../../images/mx25l6406e_pinout.png)
+</center>
+
+<center>
+ ![Pomona SOIC16 clip](../../images/soic16_pomona_clip.jpg)
+</center>
+
+<center>
+
+ | RTE J7                                 | Pomona SOIC clip  |
+ |:--------------------------------------:|:-----------------:|
+ | VCC                                    | pin 2 (upside)    |
+ | CS                                     | pin 7 (upside)    |
+ | MISO                                   | pin 8 (upside)    |
+ | SCLK                                   | pin 16 (downside) |
+ | MOSI                                   | pin 15 (downside) |
+ | GND                                    | pin 10 (downside) |
+
+</center>
+
+Numbers 1-8 have to be on one side and numbers 9-16 have to be on the other
+side of the clip.
+
+<center>
+![Clip up](../../images/soic16_clip_upside.jpg)
+</center>
+
+<center>
+![Clip down](../../images/soic16_clip_downside.jpg)
+</center>
+
+Clip on the `SPI_2/SPI_3` chip. Match pin 1 (`HOLD#`) of the Pomona clip with
+the first pin of `SPI_2/SPI_3` chip, marked with a small dot engraved on the
+chip.
+
+![Clip connected](../../images/soic16_clip_connected.jpg)
+
+### Step 7b: Flash 8MB (ME) part
+
+```bash
+echo 1 > /sys/class/gpio/gpio405/value
+```
+
+```bash
+echo 1 > /sys/class/gpio/gpio406/value
+```
+
+```bash
+echo 1 > /sys/class/gpio/gpio404/value
+```
+
+#### Dasharo recovery
+
+Use following procedure if your 4M flash contain Dasharo open-source firmware.
+
+```bash
+cat > dell_optiplex.layout <<EOF
+00000000:00000fff fd
+00001000:00004fff gbe
+00005000:005fffff me
+00600000:007fffff unused
+EOF
+```
+
+```bash
+flashrom -w your_bios_backup.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E" -i fd -i me --layout dell_optiplex.layout
+```
+
+#### Vendor BIOS recovery
+
+Use following procedure if your 4M flash contain vendor BIOS.
+
+```bash
+flashrom -w your_bios_backup_8M.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E"
+```

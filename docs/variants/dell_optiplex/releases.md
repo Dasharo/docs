@@ -1,4 +1,4 @@
-# Dell OptiPlex Dasharo Release Notes
+# Dasharo compatible with Dell OptiPlex 7010/9010 SFF
 
 **Please read the [overview page](overview.md) first!**
 

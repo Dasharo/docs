@@ -56,14 +56,20 @@ See how to verify signatures on [this video](https://asciinema.org/a/518379)
 
 ### EC firmware transition
 
-Note that, version 1.3.0 of Dasharo firmware works correctly only with the
+Note that, version 1.3.0 of Dasharo firmware works correctly **only** with the
 open EC firmware.
 
-Transition to the open EC firmware might be done in one of the two ways:
+Transition to the open EC firmware might be done:
 
 - by using [EC flashing kit](ec_recovery.md).
 - by using
-    [Dasharo Tools Suite](../../common-coreboot-docs/dasharo_tools_suite.md/#dasharo-ec-transition).
+    [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
+
+EC transition procedure should be performed immediately after flashing the new
+version of the firmware.
+
+Use of the firmware v1.3.0 without open EC firmware may cause bricking the
+system, and we are not responsible for such damage.
 
 ### SBOM (Software Bill of Materials)
 

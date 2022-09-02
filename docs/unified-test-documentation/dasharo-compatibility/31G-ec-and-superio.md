@@ -1508,3 +1508,285 @@ properly by the operating system.
 **Expected result**
 
 1. Pressing the button once should increase the keyboard backlight.
+
+### SIO001.001 PS/2 mouse in OS - (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the touchpad is initialized correctly and is detected
+by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect PS/2 mouse to the green PS/2 port on the board or the PS/2 splitter
+   (if the board has a unified, black PS/2 connector)
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Verify that the cursor can be moved with the PS/2 mouse and that clicking
+   works.
+
+**Expected result**
+
+1. Moving the cursor, clicking work correctly in the operating system.
+
+### SIO001.002 PS/2 mouse in OS - (Windows 11)
+
+**Test description**
+
+This test verifies that the touchpad is initialized correctly and is detected
+by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect PS/2 mouse to the green PS/2 port on the board or the PS/2 splitter
+   (if the board has a unified, black PS/2 connector)
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Verify that the cursor can be moved with the PS/2 mouse and that clicking
+   works.
+
+**Expected result**
+
+1. Moving the cursor, clicking work correctly in the operating system.
+
+### SIO002.001 PS/2 keyboard in firmware
+
+**Test description**
+
+This test verifies that the keyboard is detected correctly by the firmware
+and all basic keys work according to their labels.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `BIOS_SETUP_KEY` = `F2`
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../generic-test-setup/#firmware)
+2. Connect PS/2 keyboard to the violet PS/2 port on the board or the PS/2
+   splitter (if the board has a unified, black PS/2 connector)
+
+**Test steps**
+
+1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+2. Use the arrow keys and the Enter key to navigate the menus.
+
+**Expected result**
+
+1. All menus can be entered using the PS/2 keyboard.
+
+### SIO002.002 PS/2 keyboard in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the keyboard is detected correctly by the operating
+system and all basic keys work according to their labels.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `BIOS_SETUP_KEY` = `F2`
+3. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect PS/2 keyboard to the violet PS/2 port on the board or the PS/2
+   splitter (if the board has a unified, black PS/2 connector)
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Run `sudo libinput debug-events --show-keycodes` in the terminal.
+5. Press keyboard keys and check the generated keycode.
+
+**Expected result**
+
+1. All standard keyboard keys generate the correct keycodes and events as per
+   their labels.
+2. Key combinations are detected correctly.
+
+### SIO002.003 PS/2 keyboard in OS (Windows 11)
+
+**Test description**
+
+This test verifies that the keyboard is detected correctly by the operating
+system and all basic keys work according to their labels.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect PS/2 keyboard to the violet PS/2 port on the board or the PS/2
+   splitter (if the board has a unified, black PS/2 connector)
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Open `notepad`
+    * Test the alphanumeric keys and note the generated characters
+    * Test non-alphanumeric keys and verify that they generate the signs
+    * Test key combinations with the `Shift`, and `Alt` modifier keys
+5. Open `On-Screen Keyboard` and press `Ctrl` key on the hardware keyboard.
+   Check if `On-Screen Keyboard` correctly highlights it.
+6. Open `Start menu` and press `Esc`. Check if `Start menu` is properly closed.
+
+**Expected result**
+
+1. All standard keyboard keys generate correct characters
+   or actions when pressed.
+2. Key combinations are detected correctly.
+
+### SIO003.001 PS/2 keyboard wake in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the keyboard is detected correctly by the operating
+system and all basic keys work according to their labels.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `BIOS_SETUP_KEY` = `F2`
+3. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect PS/2 keyboard to the violet PS/2 port on the board or the PS/2
+   splitter (if the board has a unified, black PS/2 connector)
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Suspend the system to RAM.
+5. Press a keyboard key to wake the platform.
+
+**Expected result**
+
+1. Platform is resuming to the OS from sleeps after pressing the key.
+
+### SIO003.002 PS/2 keyboard wake in OS (Windows 11)
+
+**Test description**
+
+This test verifies that the keyboard is detected correctly by the operating
+system and all basic keys work according to their labels.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect PS/2 keyboard to the violet PS/2 port on the board or the PS/2
+   splitter (if the board has a unified, black PS/2 connector)
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Suspend the system to RAM.
+5. Press a keyboard key to wake the platform.
+
+**Expected result**
+
+1. Platform is resuming to the OS from sleeps after pressing the key.
+
+### SIO004.001 Serial port in firmware
+
+**Test description**
+
+This test verifies that the serial port is detected correctly by the firmware
+and the menu can be traversed with serial console.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `BIOS_SETUP_KEY` = `F2`
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../generic-test-setup/#firmware)
+2. Connect DB9 null modem cable to RS232/USB adapter and the onboard serial
+   port connector.
+
+**Test steps**
+
+1. Open the terminal emulator, e.g. minicom, on the RS232/USB adapter.
+2. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+3. Use the arrow keys and the Enter key to navigate the menus.
+
+**Expected result**
+
+1. All menus can be entered using the serial console.
+
+### SIO004.002 Serial port in OS (Ubuntu 20.04)
+
+**Test description**
+
+This test verifies that the serial port is detected correctly by the operating
+system and can be utilized as serial console.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+2. `BIOS_SETUP_KEY` = `F2`
+3. `OPERATING_SYSTEM` = Ubuntu 20.04
+
+**Test setup**
+
+1. Proceed with the [Common](#common) section.
+2. Connect DB9 null modem cable to RS232/USB adapter and the onboard serial
+   port connector.
+3. Configure Linux kernel parameters to use serial console, e.g.
+   `console=ttyS0,115200`
+
+**Test steps**
+
+1. Open the terminal emulator, e.g. minicom, on the RS232/USB adapter.
+2. Power on the DUT.
+3. Boot into the system.
+4. Log into the system by using the proper login and password through serial
+   console.
+
+**Expected result**
+
+1. Serial port can be used as Linux console to log in.
+2. Serial port can be used to execute commands in bash/shell.
