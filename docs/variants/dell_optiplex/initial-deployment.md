@@ -82,6 +82,7 @@ beta](../../../ways-you-can-help-us/#for-oemodm-join-the-private-beta-program).
   report](../../../common-coreboot-docs/dasharo_tools_suite#dasharo-hcl-report)
 * Enter shell using option `9)`
 * Deploy using:
+
 ```shell
 deploy 2>&1 | tee deploy.log
 ```
@@ -89,10 +90,10 @@ deploy 2>&1 | tee deploy.log
 **Note**: If you not saving Dasharo HCL report, please
 [backup your vendor BIOS](../../..//osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
 
-**Note2 **: Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown license or
-questionable redistribution policy. To avoid potential issues, `deploy` script transfer
-non-redistributable components from your original BIOS to Dasharo compatible
-with Dell OptiPlex 7010/9010.
+**Note2**: Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown
+license or questionable redistribution policy. To avoid potential issues,
+`deploy` script transfer non-redistributable components from your original BIOS
+to Dasharo compatible with Dell OptiPlex 7010/9010.
 
 ## Verification
 
