@@ -29,10 +29,12 @@ nav:
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
           - 'Building manual': variants/dell_optiplex/building-manual.md
-          #- 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
+          - 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
+          - 'Test matrix': variants/dell_optiplex/test-matrix.md
           - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
+          - 'FAQ': variants/dell_optiplex/faq.md
       - 'Asus KGPE-D16':
           - 'Overview': variants/asus_kgpe_d16/overview.md
           - 'Releases': variants/asus_kgpe_d16/releases.md
@@ -188,7 +190,7 @@ nav:
               - 'Introduction': transparent-validation/rte/introduction.md
               - 'Specification': transparent-validation/rte/v1.1.0/specification.md
               - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
-              - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
+        #     - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
               - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
               - 'Revision History': transparent-validation/rte/revision-history.md
           - 'SD Wire':
