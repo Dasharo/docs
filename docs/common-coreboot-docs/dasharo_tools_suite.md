@@ -32,7 +32,7 @@ v1.0.0.
 
 #### Images
 
-* [USB bootable DTS CE v1.0.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz)
+* [USB bootable DTS CE v1.0.1 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz)
 * [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256)
 * [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig)
 
@@ -183,8 +183,8 @@ fwupdmgr update
 
 ## Dasharo EC Transition
 
-DTS allows to perform full EC transition from vendor to Dasharo/EC FW. For now
-this functionality is supported on NS50 and NS70 laptops.
+DTS allows to perform full Embedded Controller firmware transition from vendor
+to open. For now this functionality is supported on NS50 and NS70 laptops.
 
 To perform EC transition make sure you are running DTS version 1.0.1 or higher
 and follow this steps:
