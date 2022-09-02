@@ -14,10 +14,52 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
 
-## v1.2.0 - 2022-05-26
+## v1.3.0 - 2022-09-01
 
-Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
+### Added
+
+- [Enabled Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
+
+- Vboot Recovery Popup
+
+- Fullscreen setup menu
+
+### Changed
+
+- Rebased on upstream coreboot revision 1a8eb6c0
+
+- [Support for Open EC Firmware](https://github.com/Dasharo/ec)
+
+- [Disabled UEFI Secure Boot by default](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
+
+### Fixed
+
+- [The touchpad ON/OFF switch Fn key is not functional](https://github.com/Dasharo/dasharo-issues/issues/38)
+
+### Binaries
+
+[novacustom_ns5x_v1.3.0.rom][rom_v1.3.0]{ .md-button }
+[sha256][sha_v1.3.0]{ .md-button }
+[sha256.sig][sig_v1.3.0]{ .md-button }
+[novacustom_ns5x_v1.3.0_ec.rom][rom_ec_v1.3.0]{ .md-button }
+[sha256][sha_ec_v1.3.0]{ .md-button }
+[sha256.sig][sig_ec_v1.3.0]{ .md-button }
+
+[rom_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0.rom
+[sha_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0.rom.sha256
+[sig_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0.rom.sha256.sig
+[rom_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom
+[sha_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256
+[sig_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256.sig
+
+See how to verify signatures on [this video](https://asciinema.org/a/518379)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 1a8eb6c02103727431ac1ea23f4f507e49f3cde7 revision 1153a18d](https://github.com/Dasharo/coreboot/tree/1153a18d)
+- [EDK2 based on e0334c228ce4ba51f47ff79a118f214031d4650f revision abfdef40](https://github.com/Dasharo/edk2/tree/abfdef40)
+
+## v1.2.0 - 2022-05-26
 
 ### Added
 
