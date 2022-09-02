@@ -62,12 +62,14 @@ open EC firmware.
 Transition to the open EC firmware might be done:
 
 - by using [EC flashing kit](ec_recovery.md).
+- by using
+    [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
 
 EC transition procedure should be performed immediately after flashing the new
 version of the firmware.
 
-Usage firmware v1.3.0 without open EC firmware may cause bricking the system,
-and we are not responsible for such damage.
+Use of the firmware v1.3.0 without open EC firmware may cause bricking the
+system, and we are not responsible for such damage.
 
 ### SBOM (Software Bill of Materials)
 
