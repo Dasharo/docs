@@ -66,8 +66,8 @@ Transition to the open EC firmware might be done:
 EC transition procedure should be performed immediately after flashing the new
 version of the firmware.
 
-Usage firmware v1.3.0 without open EC firmware may cause in bricking the system
-and we are not responsible for such a damage.
+Usage firmware v1.3.0 without open EC firmware may cause bricking the system,
+and we are not responsible for such damage.
 
 ### SBOM (Software Bill of Materials)
 
