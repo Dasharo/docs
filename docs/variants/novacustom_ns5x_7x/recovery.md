@@ -25,7 +25,7 @@ To restore the vendor firmware, open a terminal and run the following command:
 flashrom -p internal -w dump.rom
 ```
 
-### External flashing 
+### External flashing
 
 If the platform isn't booting properly it's possible to recover vendor firmware
 using external flashing. Follow the
