@@ -10,10 +10,7 @@ coreboot port on ASUS KGPE-D16 platforms.
 | Board revision             | 1.03G                                                        |
 | CPU                        | AMD Opteron(TM) Processor 6282 SE                            |
 |                            | CPU Cooler                                                   |
-|                            | AMD Opteron(TM) Processor 6282 SE                            |
-|                            | CPU Cooler                                                   |
 | RAM                        | DDR3 16GB Kingston KVR16R11D4/16                             |
-|                            | DDR3 16GB Kingston KVR16R11D4/16                             |
 | Flash memory               | Winbond W25Q64FV 8MB                                         |
 | Network                    | Local network wired connection                               |
 | Attached devices           | 1. Goodram 16GB USB stick                                    |
