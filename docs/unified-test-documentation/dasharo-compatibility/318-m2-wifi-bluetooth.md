@@ -276,10 +276,10 @@ correctly and can be used from within the operating system.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Enter `Notification Center` in the bottom right part of the screen.
-1. Using right mouse button click on the Bluetooth icon.
+1. Using right mouse button, click on the Bluetooth icon.
 1. In shown drop-down menu click `Go to settings`.
 1. Click the `+` icon described as `Add Bluetooth or other device`.
-1. In the `Add a device` menu click `Bluetooth`.
+1. In the `Add a device` menu, click `Bluetooth`.
 1. Wait a few moments until DUT scans for nearby Bluetooth devices and note
    the result.
 

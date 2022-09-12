@@ -157,7 +157,7 @@ recordings.
 1. Log into the system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the left mouse button to open volume menu.
-1. In the volume menu, click the rightmost part of it and note the reult.
+1. In the volume menu, click the rightmost part of it and note the result.
 
 **Expected result**
 
@@ -305,8 +305,8 @@ after plugging in the 3.5 mm jack into the slot.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Plug in a headset jack into micro jack slot located on the right side of the
-laptop.
+1. Plug in a headset jack into a micro jack slot located on the right side of
+the laptop.
 1. After the `Which device did you plug` in menu appearing, select what type of
 external device has been connected to the laptop (headset).
 1. Find the `Speakers` icon in the bottom right part of the screen and click it
@@ -388,7 +388,7 @@ recordings by using the external headset speakers.
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
    it using the left mouse button to open volume menu.
-1. In the volume menu, click the rightmost part of it and note the reult.
+1. In the volume menu, click the rightmost part of it and note the result.
 
 **Expected result**
 

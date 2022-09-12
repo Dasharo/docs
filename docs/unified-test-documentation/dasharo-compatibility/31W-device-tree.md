@@ -19,7 +19,7 @@
 
 **Test description**
 
-This test aims to verify whether the node with the coreboot exists in Device
+This test aims to verify whether the node with the coreboot exists in the Device
 Tree.
 
 **Test configuration data**
@@ -36,7 +36,7 @@ Tree.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     xxd /sys/firmware/devicetree/base/firmware/coreboot/compatible
@@ -74,7 +74,7 @@ coreboot.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     xxd /sys/firmware/devicetree/base/firmware/coreboot/reg

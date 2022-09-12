@@ -124,7 +124,7 @@ sha256sum /tmp/in.bin /tmp/out.bin
 
 **Expected result**
 
-The output from the last command should contain 2 indentical checksums:
+The output from the last command should contain 2 identical checksums:
 
 ```bash
 2083776668ed0c8095a9ac42188153c02f360e116c14b36d2ef5c98665d75dcb  /tmp/in.bin
@@ -152,7 +152,7 @@ can be used from the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Determine the localisation of the mounted SD card.
+1. Determine the localization of the mounted SD card.
 1. Open PowerShell as administrator.
 1. Run below commands and note results:
 

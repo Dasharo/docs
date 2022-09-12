@@ -348,12 +348,12 @@ This test verifies that the play/pause hotkey works correctly.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Start `Groove Music`
-1. Verify that when pressing the `play/pause` button, player menu apperars
+1. Verify that when pressing the `play/pause` button, player menu appears
     in the upper left part of the screen for a few seconds.
 
 **Expected result**
 
-1. Pressing the play/pause hotkey is proreply detected by the OS
+1. Pressing the play/pause hotkey is properly detected by the OS
 
 ### ECR006.001 Keyboard (function key: cooling mode) in OS (Ubuntu 20.04)
 
@@ -685,8 +685,8 @@ This test verifies that the volume down hotkey works correctly.
 
 1. Pressing the hotkey should decrease the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume down notification to appear in the middle
-   of the screen.
+1. Each key press should cause a volume down notification to appear in the
+   middle of the screen.
 
 ### ECR011.002 Keyboard (function key: volume down) in OS (Windows 11)
 
@@ -714,7 +714,7 @@ This test verifies that the volume down hotkey works correctly.
 
 1. Pressing the hotkey should decrease the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume down notification to appear in the upper
+1. Each key press should cause a volume down notification to appear in the upper
    left part of the screen.
 
 ### ECR012.001 Keyboard (function key: volume up) in OS (Ubuntu 20.04)
@@ -743,7 +743,7 @@ This test verifies that the volume up hotkey works correctly.
 
 1. Pressing the hotkey should increase the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume up notification to appear in the middle
+1. Each key press should cause a volume up notification to appear in the middle
    of the screen.
 
 ### ECR012.002 Keyboard (function key: volume up) in OS (Windows 11)
@@ -772,7 +772,7 @@ This test verifies that the volume up hotkey works correctly.
 
 1. Pressing the hotkey should increase the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume up notification to appear in the upper
+1. Each key press should cause a volume up notification to appear in the upper
    left part of the screen.
 
 ### ECR013.001 Keyboard (function key: display switch) in OS (Ubuntu 20.04)
@@ -859,7 +859,7 @@ This test verifies that the brightness down hotkey works correctly.
 1. Log into the system by using the proper login and password.
 1. Pressing the hotkey should decrease the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness down notification to appear in the
+1. Each key press should cause a brightness down notification to appear in the
    middle of the screen.
 
 ### ECR014.002 Keyboard (function key: brightness down) in OS (Windows 11)
@@ -888,7 +888,7 @@ This test verifies that the brightness down hotkey works correctly.
 
 1. Pressing the hotkey should decrease the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness down notification to appear in the
+1. Each key press should cause a brightness down notification to appear in the
    top left of the screen.
 
 ### ECR015.001 Keyboard (function key: brightness up) in OS (Ubuntu 20.04)
@@ -917,7 +917,7 @@ This test verifies that the brightness up hotkey works correctly.
 
 1. Pressing the hotkey should increase the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness up notification to appear in the
+1. Each key press should cause a brightness up notification to appear in the
    middle of the screen.
 
 ### ECR015.002 Keyboard (function key: brightness up) in OS (Windows 11)
@@ -946,7 +946,7 @@ This test verifies that the brightness down hotkey works correctly.
 
 1. Pressing the hotkey should increase the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness up notification to appear in the
+1. Each key press should cause a brightness up notification to appear in the
    top left of the screen.
 
 ### ECR016.001 Keyboard (function key: camera on/off) in OS (Ubuntu 20.04)
@@ -1006,8 +1006,8 @@ This test verifies that the camera on/off hotkey works correctly.
 
 **Expected result**
 
-1. Pressing the hotkey once should make the camera image to disappear.
-1. Pressing the hotkey again should make camera image to appear again
+1. Pressing the hotkey once should make the camera image disappear.
+1. Pressing the hotkey again should make the camera image appear again
    after a few seconds.
 
 ### ECR017.001 Keyboard (function key: flight mode) in OS (Ubuntu 20.04)
@@ -1060,7 +1060,7 @@ This test verifies that the flight mode hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Press the camera on/off hotkey twice and note the effect after the keypress.
+1. Press the camera on/off hotkey twice and note the effect after the key press.
 
 **Expected result**
 
@@ -1347,7 +1347,7 @@ the operating system.
 
 **Test description**
 
-This test verifies that the RGB keyboard next color hotkey is handled properly
+This test verifies that the RGB keyboard's next color hotkey is handled properly
 by the operating system.
 
 **Test configuration data**
@@ -1376,7 +1376,7 @@ by the operating system.
 
 **Test description**
 
-This test verifies that the RGB keyboard next color hotkey is handled properly
+This test verifies that the RGB keyboard's next color hotkey is handled properly
 by the operating system.
 
 **Test configuration data**
@@ -1482,7 +1482,7 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-### ECR024.002 RGB keyboard keyboard brightness up FN key in OS (Windows 11)
+### ECR024.002 RGB keyboard brightness up FN key in OS (Windows 11)
 
 **Test description**
 
@@ -1537,7 +1537,7 @@ by the operating system.
 
 **Expected result**
 
-1. Moving the cursor, clicking work correctly in the operating system.
+1. Moving the cursor and clicking working correctly in the operating system.
 
 ### SIO001.002 PS/2 mouse in OS - (Windows 11)
 
@@ -1567,7 +1567,7 @@ by the operating system.
 
 **Expected result**
 
-1. Moving the cursor, clicking work correctly in the operating system.
+1. Moving the cursor and clicking working correctly in the operating system.
 
 ### SIO002.001 PS/2 keyboard in firmware
 
@@ -1696,7 +1696,7 @@ system and all basic keys work according to their labels.
 
 **Expected result**
 
-1. Platform is resuming to the OS from sleeps after pressing the key.
+1. Platform is resuming to the OS from sleep after pressing the key.
 
 ### SIO003.002 PS/2 keyboard wake in OS (Windows 11)
 
@@ -1726,7 +1726,7 @@ system and all basic keys work according to their labels.
 
 **Expected result**
 
-1. Platform is resuming to the OS from sleeps after pressing the key.
+1. Platform is resuming to the OS from sleep after pressing the key.
 
 ### SIO004.001 Serial port in firmware
 

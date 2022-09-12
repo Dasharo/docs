@@ -183,7 +183,7 @@ get-tpm
 
 **Expected result**
 
-1. The command should return informations about TPM state: if the TPM is
+1. The command should return information about TPM state: if the TPM is
     present, ready and enabled:
 
 ```text

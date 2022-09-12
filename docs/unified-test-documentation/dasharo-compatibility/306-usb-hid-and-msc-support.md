@@ -198,7 +198,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Expected result**
 
-1. The extarnal USB keyboard is detected in OS.
+1. The external USB keyboard is detected in OS.
 1. All standard keyboard keys generate the correct keycodes and events as per
    their labels.
 1. Key combinations are detected correctly.
@@ -225,7 +225,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open PowerShell and and run the follwing command:
+1. Open PowerShell and run the following command:
 
     ```bash
     Get-CimInstance win32_KEYBOARD

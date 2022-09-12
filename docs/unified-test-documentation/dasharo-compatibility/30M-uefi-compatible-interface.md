@@ -28,7 +28,7 @@ UEFI-aware Operating System.
 1. Select the `Boot Menu` and press `Enter`.
 1. Select the USB stick and press `Enter`.
 1. Select the `Ubuntu (safe graphics)` in the GRUB menu.
-1. Wait for the `OPERATING_SYSTEM` to boot finalize booting, by either of the:
+1. Wait for the `OPERATING_SYSTEM` to finalize booting, by either of the:
    - `OPERATING_SYSTEM` installer initialization,
    - login form initialization.
 1. Power OFF the DUT.

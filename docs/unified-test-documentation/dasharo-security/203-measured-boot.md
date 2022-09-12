@@ -9,7 +9,7 @@
 Measured Boot is a method for detecting changes to firmware by storing hashes
 of each firmware component into the TPM PCR registers. If a PCR changes value
 across reboots, a change to the firmware has been made. This test aims to
-verify that Measured Boot is functional and measurements are stored into the
+verify that Measured Boot is functional and measurements are stored in the
 TPM.a.
 
 **Test configuration data**
