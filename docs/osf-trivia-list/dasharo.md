@@ -1,7 +1,13 @@
 ## What is Dasharo?
 
-Dasharo registered trademark and product developed by
+Dasharo is registered trademark and product developed by
 [3mdeb](https://3mdeb.com).
+
+Dasharo is open-source firmware distribution with optional features, like
+seamless initial deployment, firmware update and additional security, available
+in subscription model.
+
+## Why 3mdeb created Dasharo?
 
 From our experience to be considered as serious player on firmware market there
 is need for recognized brand with proved history of successful integrations. We
@@ -32,7 +38,6 @@ For every supported hardware Dasharo Team provides:
 * Test results in 
 * [GPG keys](https://github.com/3mdeb/3mdeb-secpack/tree/master/dasharo)
 * Signed binaries in release section
-* 
 
 
 ## What is Dasharo binary blob policy?
