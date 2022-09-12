@@ -46,41 +46,41 @@ Test results for this release can be found
 
 ### Binaries
 
-[asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_sig]{.md-button}
 
-[asus_kgpe-d16_v0.4.0_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_file]{ .md-button }
-[sha256][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_hash]{ .md-button }
-[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_sig]{ .md-button }
+[asus_kgpe-d16_v0.4.0_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_sig]{.md-button}
 
 See how to verify signatures on [this video](https://asciinema.org/a/448247)
 
