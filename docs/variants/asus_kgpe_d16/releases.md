@@ -20,6 +20,75 @@ Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasha
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1rsJECHmYrpkPSByTyt7jmMuQnExE20zW7Zk6c8oMk6E/edit?usp=sharing).
 
+## v0.4.0 - 2022-09-12
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1rsJECHmYrpkPSByTyt7jmMuQnExE20zW7Zk6c8oMk6E/edit#gid=0).
+
+### Changed
+
+- ACPI cleanup
+- Added missing PCI bridge initialization
+
+### Fixed
+
+- [KGPE-D16 can not boot with a GPU connected](https://github.com/Dasharo/dasharo-issues/issues/48)
+- [Configs for platforms without TPM](https://github.com/Dasharo/dasharo-issues/issues/62)
+- [Bugs in DQS timing (kudos to Mike Rothfuss)](https://github.com/Dasharo/coreboot/pull/116)
+
+### Known issues
+
+- [Booting from recovery doesn't work](https://github.com/Dasharo/dasharo-issues/issues/66)
+- [Fan controller gets stuck at 100%](https://github.com/Dasharo/dasharo-issues/issues/169)
+- [FreeBSD serial output is broken](https://github.com/Dasharo/dasharo-issues/issues/170)
+- [Linux kernel panic on booting USB media](https://github.com/Dasharo/dasharo-issues/issues/171)
+- [Builds are not reproducible](https://github.com/Dasharo/dasharo-issues/issues/189)
+
+### Binaries
+
+[asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_vboot_notpm.rom][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_notpm.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_vboot_tpm12.rom][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_sig]{.md-button}
+
+[asus_kgpe-d16_v0.4.0_vboot_tpm2.rom][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_file]{.md-button}
+[sha256][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_hash]{.md-button}
+[sha256.sig][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/448247)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 03aef28f1613 revision cef95aaa](https://github.com/Dasharo/coreboot/tree/cef95aaa)
+- [SeaBIOS based on rel-1.14.0 revision 155821a1](https://github.com/Dasharo/SeaBIOS/tree/155821a1)
+
 ## v0.3.0 - 2021-12-16
 
 ### Added
@@ -179,3 +248,32 @@ Test results for this platform can be found
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 03aef28 revision e6af2206](https://github.com/Dasharo/coreboot/tree/e6af2206)
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/ozes4Jxuo
+[asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom
+[asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom.sha256
+[asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom.sha256
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_tpm12.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom.sha256
+[asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_tpm2.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom
+[asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom.sha256
+[asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_notpm.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom.sha256
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_tpm12.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom.sha256
+[asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_8M_vboot_tpm2.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_vboot_notpm.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_notpm.rom
+[asus_kgpe-d16_v0.4.0_vboot_notpm.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_notpm.rom.sha256
+[asus_kgpe-d16_v0.4.0_vboot_notpm.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_notpm.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_tpm12.rom
+[asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_tpm12.rom.sha256
+[asus_kgpe-d16_v0.4.0_vboot_tpm12.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_tpm12.rom.sha256.sig
+[asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_tpm2.rom
+[asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_tpm2.rom.sha256
+[asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_vboot_tpm2.rom.sha256.sig
