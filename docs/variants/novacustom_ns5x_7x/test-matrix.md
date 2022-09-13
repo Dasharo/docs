@@ -2,8 +2,8 @@
 
 ## About
 
-The test matrix is used to determine the scope of tests which the DUT is
-subjected from before the release of the new binary.
+The test matrix is used to determine the scope of tests to which the DUT is
+subjected before the release of the new binary.
 
 ## Module: Dasharo compatibility
 
