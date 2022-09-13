@@ -1,4 +1,4 @@
-# Hardware configuration matrix - MSI PRO Z690-A WIFI DDR4
+# Hardware configuration matrix
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# KGPE-D16 automatic fan control
+# Automatic fan control for ASUS KGPE-D16
 
 Starting from KGPE-D16 Dasharo release v0.2.0, coreboot implements automatic
 fan control. The feature is realized on the Nuvoton W83795 hardware monitor.

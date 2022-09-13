@@ -1,4 +1,4 @@
-# Test matrix - Asus KGPE-A16
+# Test matrix
 
 ## About
 
@@ -13,9 +13,9 @@ subjected from before the release of the new binary.
 | 2.   | [SMBIOS][DMI]                                     | DMI           | DMI001.001, DMI002.001, DMI003.001, DMI004.001|
 | 3.   | [coreboot fan control][FAN]                       | FAN           | All                                  |
 | 4.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
-| 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT002.001                           |
+| 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.001, LBT001.002, LBT002.001, LBT002.002|
 | 6.   | [Network boot][PXE]                               | PXE           | All                                  |
-| 7.   | [USB detection][USB]                              | UDT           | All                                  |
+| 7.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 8.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 9.   | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
 | 10.  | [Flash write protection][HWP]                     | HWP           | All                                  |
@@ -48,5 +48,7 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+| 2.   | [Fan control measure][FNM]                        | FNM           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[FNM]: ../../unified-test-documentation/dasharo-performance/405-fan-control-measure.md

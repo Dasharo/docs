@@ -1,4 +1,4 @@
-# Insurgo Dasharo on Talos II - Conference materails
+# Conference materials
 
 ## OpenPOWER Summit, 2021
 

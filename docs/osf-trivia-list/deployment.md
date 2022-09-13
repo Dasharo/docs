@@ -10,7 +10,22 @@ Github](https://github.com/Dasharo/dasharo-issues).
 
 ## Flashrom
 
-Following sections explain how to deal with most common `flashrom` errors.
+Following sections explain how to deal with most common `flashrom` problem.
+
+### How to install flashrom ?
+
+* Install flashrom v1.1 or newer with your distribution's package manager if
+  you don't have it installed yet. If your distro doesn't provide flashrom or
+  provides an outdated one, you can build it yourself using
+  [this instruction](https://www.flashrom.org/Downloads).
+* Or compile recent version of flashrom:
+
+  ``` console
+  sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
+  git clone https://github.com/flashrom/flashrom.git
+  cd flashrom
+  sudo make install
+  ```
 
 ### `Could not get I/O privileges (Operation not permitted)`
 
@@ -113,3 +128,37 @@ documentation for supported hardware please go to [Hardware Compatibility
 List](../variants/hardware-compatibility-list.md).
 
 Please note we consider further mitigations in [Dasharo Roadmap](../ecosystem/roadmap.md).
+
+## How to use flashrom to backup vendor BIOS?
+
+<!-- BIOS backup section is very generic and should be treated as such.
+This section even can be replaced with Dasharo Tools Suite, fwupd, or other
+tools that can simplify the operation for the user -->
+
+It is always a good idea to backup the original BIOS of your hardware, before
+switching to open-source firmware.
+
+* Boot [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite#bootable-usb-stick)
+* Choose option 9) Shell.
+* Read content of SPI NOR flash:
+
+  ``` console
+  flashrom -p internal -r bios_backup_`date +%Y%m%d`.bin
+
+  flashrom v1.2-551-gf47ff31 on Linux 5.10.0-9-amd64 (x86_64)
+  flashrom is free software, get the source code at https://flashrom.org
+
+  Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+  Found chipset "Intel Q77".
+  Enabling flash write... SPI Configuration is locked down.
+  The Flash Descriptor Override Strap-Pin is set. Restrictions implied by
+  the Master Section of the flash descriptor are NOT in effect. Please note
+  that Protected Range (PR) restrictions still apply.
+  Enabling hardware sequencing due to multiple flash chips detected.
+  OK.
+  Found Programmer flash chip "Opaque flash chip" (12288 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+  Reading flash... done.
+  ```
+
+If you face any issues, please refer to the troubleshooting section for
+hardware platform.

@@ -1,4 +1,4 @@
-# Test matrix - Talos II
+# Test matrix
 
 ## About
 
@@ -15,7 +15,7 @@ subjected from before the release of the new binary.
 | 4.   | [Device Tree][DVT]                                | DVT           | All                                  |
 | 5.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 6.   | [USB booting][UBT]                                | UBT           | All                                  |
-| 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.001                           |
+| 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.002                           |
 | 8.   | [CPU status][CPU]                                 | CPU           | All                                  |
 
 [CBP]: ../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
@@ -32,5 +32,7 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+| 2.   | [CPU frequency measure][CPF]                      | CPF           | CPF001.001                           |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md

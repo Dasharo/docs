@@ -1,54 +1,122 @@
 # Dell OptiPlex 7010/9010 Dasharo - building manual
 
+**Please read the [overview page](overview.md) first!**
+
 ## Building coreboot
 
-To build coreboot image, follow the steps below:
+To build release image of Dasharo compatible with Dell OptiPlex 7010/9010,
+follow the steps below:
 
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/dasharo/coreboot.git
     ```
-
-2. Get the submodules:
 
     ```bash
     cd coreboot
-    git submodule update --init --recursive --checkout
     ```
 
-3. Checkout Dasharo branch for OptiPlex 7010/9010 (replace vX.Y.Z with valid
-   version):
+    Replace vX.Y.Z with valid version:
 
     ```bash
-    git remote add dasharo https://github.com/dasharo/coreboot.git
-    git fetch dasharo
     git checkout dell_optiplex_9010_vX.Y.Z
     ```
 
-4. Start docker container:
+    Checkout submodules:
+
+    ```bash
+    git submodule update --init --recursive --checkout
+    ```
+
+1. Start docker container:
 
     ```bash
     docker run --rm -it \
        -v $PWD:/home/coreboot/coreboot \
        -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+       coreboot/coreboot-sdk:VERSION /bin/bash
     ```
 
-5. Inside of the container, configure and start the build process:
+    * `VERSION` should be replaced according to version you building:
+      - `v0.1.0` - `2022-04-04_9a8d0a03db`
+
+1. Inside of the container, configure and start the build process:
 
     ```bash
-    (docker)make distclean
-    (docker)cp configs/config.dell_optiplex_9010_sff .config
-    (docker)make olddefconfig
-    (docker)make
+    make distclean
+    ```
+
+    ```bash
+    cp configs/config.dell_optiplex_9010 .config
+    ```
+
+    ```bash
+    make olddefconfig
+    ```
+
+    ```bash
+    make
     ```
 
     or simply:
 
     ```bash
-    (docker)make distclean && cp configs/config.dell_optiplex_9010_sff .config && make olddefconfig && make
+    make distclean && cp configs/config.dell_optiplex_9010 .config && make olddefconfig && make
+    ```
+
+This will produce a release binary placed in `build/coreboot.rom`. To flash
+Dasharo refer to [initial deployment manual](initial-deployment.md).
+
+## Debug build
+
+1. Clone the coreboot repository:
+
+    ```bash
+    git clone https://github.com/dasharo/coreboot.git
+    ```
+
+    ```bash
+    cd coreboot
+    ```
+
+    Replace vX.Y.Z with a valid version:
+
+    ```bash
+    git checkout dell_optiplex_9010_vX.Y.Z
+    ```
+
+    Checkout submodules:
+
+    ```bash
+    git submodule update --init --recursive --checkout
+    ```
+
+1. Start docker container:
+
+    ```bash
+    docker run --rm -it \
+       -v $PWD:/home/coreboot/coreboot \
+       -w /home/coreboot/coreboot \
+       coreboot/coreboot-sdk:VERSION /bin/bash
+    ```
+
+    * `VERSION` should be replaced according to version you building:
+      - `v0.1.0` - `2022-04-04_9a8d0a03db`
+
+1. Inside of the container, configure and start the build process:
+
+    ```bash
+    make distclean
+    ```
+
+    ```bash
+    cp configs/config.dell_optiplex_9010.debug .config
+    ```
+
+    ```bash
+    make olddefconfig && make
     ```
 
 This will produce a debug binary placed in `build/coreboot.rom`. To flash
-coreboot refer to [initial deployment manual](initial-deployment.md).
+Dasharo refer to [initial deployment manual](initial-deployment.md).

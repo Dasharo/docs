@@ -1,4 +1,4 @@
-# Dasharo for Asus KGPE-D16 - building manual
+# Building manual
 
 ## Building coreboot
 

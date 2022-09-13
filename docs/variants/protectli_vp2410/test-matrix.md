@@ -1,4 +1,4 @@
-# Test matrix - Protectli VP2410
+# Test matrix
 
 ## About
 
@@ -17,7 +17,7 @@ subjected from before the release of the new binary.
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
 | 9.   | [FreeBSD support][BSD]                            | BSD           | All                                  |
-| 10.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
+| 10.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 11.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001                           |
 | 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
 | 13.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL001.001, MWL002.001, MWL003.001, MWL004.001 |

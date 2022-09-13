@@ -1,4 +1,4 @@
-# Protectli Dasharo on FW6 - building manual
+# Building manual
 
 ## Requirements
 
