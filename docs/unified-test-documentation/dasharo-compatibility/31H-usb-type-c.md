@@ -25,7 +25,7 @@ connected smartphone.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -58,7 +58,7 @@ a connected smartphone.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -77,7 +77,7 @@ a connected smartphone.
 
 1. The smartphone should indicate that it's charging.
 
-### UTC003.001 USB Type-C PD laptop charging (Ubuntu 20.04)
+### UTC003.001 USB Type-C PD laptop charging (Ubuntu 22.04)
 
 **Test description**
 
@@ -87,7 +87,7 @@ supply connected to the Thunderbolt 4 port.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -138,7 +138,7 @@ supply connected to the Thunderbolt 4 port.
 
 1. The battery indicator should indicate that the laptop is currently charging.
 
-### UTC004.001 USB Type-C Display output (Ubuntu 20.04)
+### UTC004.001 USB Type-C Display output (Ubuntu 22.04)
 
 **Test description**
 
@@ -148,7 +148,7 @@ the Thunderbolt 4 USB Type-C port.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

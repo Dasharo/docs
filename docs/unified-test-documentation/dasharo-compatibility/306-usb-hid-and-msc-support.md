@@ -44,7 +44,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 1. Flash drive entry is listed in the boot menu.
 
-### USB001.002 USB devices detection in OS (Ubuntu 20.04)
+### USB001.002 USB devices detection in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -55,7 +55,7 @@ labels.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -155,7 +155,7 @@ by the firmware and all basic keys work according to their labels.
 
 1. All menus can be entered using the external USB keyboard.
 
-### USB002.002 USB keyboard detection (Ubuntu 20.04)
+### USB002.002 USB keyboard detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -165,7 +165,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

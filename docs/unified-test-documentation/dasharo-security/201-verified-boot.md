@@ -29,7 +29,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-### VBO001.002 Verified boot support (Ubuntu 20.04)
+### VBO001.002 Verified boot support (Ubuntu 22.04)
 
 **Test description**
 
@@ -40,7 +40,7 @@ functional.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -107,7 +107,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-### VBO002.002 Verified boot: Booting from Slot A (Ubuntu 20.04)
+### VBO002.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
 
 **Test description**
 
@@ -117,7 +117,7 @@ proceed to boot from Slot A.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -153,7 +153,7 @@ slot A:
 Slot A is selected
 ```
 
-### VBO003.001 Verified boot: Booting from Recovery (Ubuntu 20.04)
+### VBO003.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
 
 **Test description**
 
@@ -163,7 +163,7 @@ should revert to booting from the recovery slot.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -229,7 +229,7 @@ the wrong vboot keys.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -273,7 +273,7 @@ allows to proceed to the next booting stages.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### MBO001.001 Measured Boot support (Ubuntu 20.04)
+### MBO001.001 Measured Boot support (Ubuntu 22.04)
 
 **Test description**
 
@@ -15,7 +15,7 @@ TPM.a.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### TPM001.001 TPM Support (Ubuntu 20.04)
+### TPM001.001 TPM Support (Ubuntu 22.04)
 
 **Test description**
 
@@ -12,7 +12,7 @@ be accessed from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

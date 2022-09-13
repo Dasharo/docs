@@ -41,7 +41,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP001.002 Internal LCD in OS (Ubuntu 20.04)
+### DSP001.002 Internal LCD in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -50,7 +50,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -95,7 +95,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
     internal LCD.
 
-### DSP002.001 External HDMI display in OS (Ubuntu 20.04)
+### DSP002.001 External HDMI display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -104,7 +104,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -178,7 +178,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP003.001 External DP display in OS (Ubuntu 20.04)
+### DSP003.001 External DP display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -188,7 +188,7 @@ in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -264,7 +264,7 @@ display during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP004.001 External VGA display in OS (Ubuntu 20.04)
+### DSP004.001 External VGA display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -273,7 +273,7 @@ This test aims to verify initialization of the external VGA in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -302,7 +302,7 @@ This test aims to verify initialization of the external VGA in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

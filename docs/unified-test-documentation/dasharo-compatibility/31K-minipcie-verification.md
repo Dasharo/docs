@@ -15,7 +15,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### MWL001.001 Wireless card detection (Ubuntu 20.04)
+### MWL001.001 Wireless card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -25,7 +25,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -96,7 +96,7 @@ or a line starting with:
 Intel(R) Wi-Fi 6AX201 160MHz
 ```
 
-### MWL002.001 Wi-Fi scanning (Ubuntu 20.04)
+### MWL002.001 Wi-Fi scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -106,7 +106,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -209,7 +209,7 @@ SSID 5 : DIRECT-KRM288x Series
     Encryption              : CCMP
 ```
 
-### MWL003.001 Bluetooth scanning (Ubuntu 20.04)
+### MWL003.001 Bluetooth scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -219,7 +219,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -295,7 +295,7 @@ correctly and can be used from within the operating system.
 
 Available Bluetooth devices should appear in the `Add a device` window.
 
-### MWL004.001 LTE card detection (Ubuntu 20.04)
+### MWL004.001 LTE card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -305,7 +305,7 @@ operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-2. `OPERATING_SYSTEM` = Ubuntu 20.04
+2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

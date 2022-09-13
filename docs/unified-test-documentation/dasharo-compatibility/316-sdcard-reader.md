@@ -16,7 +16,7 @@
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 1. Insert an SD card into the SD Card reader.
 
-### SDC001.001 SD Card reader detection (Ubuntu 20.04)
+### SDC001.001 SD Card reader detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -26,7 +26,7 @@ can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -92,7 +92,7 @@ Status     Class           FriendlyName
 OK         MTD             Realtek PCIE CardReader
 ```
 
-### SDC002.001 SD Card read/write (Ubuntu 20.04)
+### SDC002.001 SD Card read/write (Ubuntu 22.04)
 
 **Test description**
 
@@ -102,7 +102,7 @@ can be used from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

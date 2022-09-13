@@ -16,7 +16,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### NVI001.001 NVIDIA Graphics detect (Ubuntu 20.04)
+### NVI001.001 NVIDIA Graphics detect (Ubuntu 22.04)
 
 **Test description**
 
@@ -26,7 +26,7 @@ initialized and can be detected by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -89,7 +89,7 @@ Get-WmiObject -Class Win32_VideoController | Select Description, Name, Status
     NVIDIA GeForce GTX 1650      NVIDIA GeForce GTX 1650      OK
     ```
 
-### NVI002.001 NVIDIA Graphics power management (Ubuntu 20.04)
+### NVI002.001 NVIDIA Graphics power management (Ubuntu 22.04)
 
 **Test description**
 
@@ -99,7 +99,7 @@ and the card powers on only while it's used.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

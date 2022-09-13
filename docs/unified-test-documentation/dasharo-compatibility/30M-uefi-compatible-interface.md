@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### EFI001.001 Boot into UEFI OS (Ubuntu 20.04)
+### EFI001.001 Boot into UEFI OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -12,7 +12,7 @@ UEFI-aware Operating System.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

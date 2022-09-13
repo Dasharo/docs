@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### HCL001.001 Memory HCL - boot into OS (Ubuntu 20.04)
+### HCL001.001 Memory HCL - boot into OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -12,7 +12,7 @@ module combinations specified in the HCL.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

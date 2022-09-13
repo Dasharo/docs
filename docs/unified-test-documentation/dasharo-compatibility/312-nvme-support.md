@@ -29,7 +29,7 @@ detect NVMe disk in the M.2 slot.
 
 1. The NVMe disk should be listed on the bootable devices list.
 
-### NVM001.002 NVMe support (Ubuntu 20.04)
+### NVM001.002 NVMe support (Ubuntu 22.04)
 
 **Test description**
 
@@ -39,7 +39,7 @@ the M.2 slot.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
