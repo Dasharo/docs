@@ -30,9 +30,8 @@ Information about GPU might be read from GPU package or documentation.
 
 | GPU name         | Memory size | Memory type | Bandwidth | PCI-E Architecture | Multi-Graphics Technology | Results                |
 |:----------------:|:-----------:|:-----------:|:---------:|:------------------:|:-------------------------:|:----------------------:|
-
-| Nvidia GeForce GTX 1060 | 3072 MB | GDDR5 | 192GB/s       | Gen3               | 1                            | [Qubes HCL reports][1] |
-| Nvidia GeForce GTX 1080tI | 11264 MB | GDDR5X | 192GB/s       | Gen3               | 1                            | [Qubes HCL reports][2] |
+| Nvidia GeForce GTX 1060 | 3072 MB | GDDR5 | 192GB/s      | Gen3               | 1                            | [Qubes HCL reports][1] |
+| Nvidia GeForce GTX 1080tI | 11264 MB | GDDR5X | 192GB/s  | Gen3               | 1                            | [Qubes HCL reports][2] |
 | MSI Radeon RX 6950 XT | 16GB | GDDR6 | 576GB/s           | Gen4               | 1                            |  |
 
 [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
