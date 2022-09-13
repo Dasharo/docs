@@ -1,7 +1,7 @@
 # Release Notes
 
-Following Release Notes describe status of Open Source Firmware development for
-NovaCustom NS5x/7x
+Following Release Notes describe the status of Open Source Firmware development
+for NovaCustom NS5x/7x.
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
@@ -16,6 +16,29 @@ Test results for this platform can be found
 
 ## v1.3.0 - 2022-09-01
 
+### EC firmware transition
+
+Note that, version 1.3.0 of Dasharo firmware works correctly **only** with the
+open EC firmware.
+
+The most recommended method of EC firmware transition is described in
+[Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
+
+If this is your first experience with DTS, first read its
+[documentation](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
+We recommend using DTS with the
+[Bootable over network](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
+method which is less time-consuming and just easier than DTS on the USB Stick.
+
+The second method of EC firmware transition requires specialized hardware. It
+should be done by using [EC flashing kit](ec_recovery.md) to externally fashing
+EC firmware and
+[Initial installation](initial-deployment.md#initial-installation) to externally
+flashing firmware.
+
+Use of the firmware v1.3.0 without open EC firmware may cause bricking of the
+system, and we are not responsible for such damage.
+
 ### Added
 
 - [Enabled Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
@@ -28,7 +51,7 @@ Test results for this platform can be found
 
 - Rebased on upstream coreboot revision 1a8eb6c0
 
-- [Support for Open EC Firmware](https://github.com/Dasharo/ec)
+- [Support for Open EC Firmware](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition)
 
 - [Disabled UEFI Secure Boot by default](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
 
@@ -53,23 +76,6 @@ Test results for this platform can be found
 [sig_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256.sig
 
 See how to verify signatures on [this video](https://asciinema.org/a/518379)
-
-### EC firmware transition
-
-Note that, version 1.3.0 of Dasharo firmware works correctly **only** with the
-open EC firmware.
-
-Transition to the open EC firmware might be done:
-
-- by using [EC flashing kit](ec_recovery.md).
-- by using
-    [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
-
-EC transition procedure should be performed immediately after flashing the new
-version of the firmware.
-
-Use of the firmware v1.3.0 without open EC firmware may cause bricking the
-system, and we are not responsible for such damage.
 
 ### SBOM (Software Bill of Materials)
 
