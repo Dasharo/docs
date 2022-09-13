@@ -44,7 +44,14 @@ flashrom -p internal -r dump.rom
 
 The following instructions describe how to flash Dasharo, but if you are
 interested in version v1.3.0 or higher, which is only compatible with Open EC
-Firmware, follow this instruction: TBD
+Firmware, follow this instruction:
+[Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
+
+If this is your first experience with DTS, first read its
+[documentation](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
+We recommend using DTS with the
+[Bootable over network](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
+method which is less time-consuming and just easier than DTS on the USB Stick.
 
 ### Internal flashing Dasharo
 
