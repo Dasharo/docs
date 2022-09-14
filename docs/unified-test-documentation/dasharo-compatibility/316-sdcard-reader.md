@@ -16,7 +16,7 @@
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 1. Insert an SD card into the SD Card reader.
 
-### SDC001.001 SD Card reader detection (Ubuntu 20.04)
+### SDC001.001 SD Card reader detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -26,7 +26,7 @@ can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -92,7 +92,7 @@ Status     Class           FriendlyName
 OK         MTD             Realtek PCIE CardReader
 ```
 
-### SDC002.001 SD Card read/write (Ubuntu 20.04)
+### SDC002.001 SD Card read/write (Ubuntu 22.04)
 
 **Test description**
 
@@ -102,7 +102,7 @@ can be used from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -124,7 +124,7 @@ sha256sum /tmp/in.bin /tmp/out.bin
 
 **Expected result**
 
-The output from the last command should contain 2 indentical checksums:
+The output from the last command should contain 2 identical checksums:
 
 ```bash
 2083776668ed0c8095a9ac42188153c02f360e116c14b36d2ef5c98665d75dcb  /tmp/in.bin
@@ -152,7 +152,7 @@ can be used from the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Determine the localisation of the mounted SD card.
+1. Determine the localization of the mounted SD card.
 1. Open PowerShell as administrator.
 1. Run below commands and note results:
 

@@ -15,7 +15,7 @@
 4. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### PEX001.001 PCI Express card detection (Ubuntu 20.04)
+### PEX001.001 PCI Express card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -25,7 +25,7 @@ correctly and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-2. `OPERATING_SYSTEM` = Ubuntu 20.04
+2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

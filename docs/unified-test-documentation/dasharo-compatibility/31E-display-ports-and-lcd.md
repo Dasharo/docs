@@ -41,7 +41,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP001.002 Internal LCD in OS (Ubuntu 20.04)
+### DSP001.002 Internal LCD in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -50,7 +50,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -87,7 +87,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log the  by using the proper login and password.
+1. Log in by using the proper login and password.
 1. Observe the internal LCD after the `OPERATING_SYSTEM` has booted.
 
 **Expected result**
@@ -95,7 +95,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
     internal LCD.
 
-### DSP002.001 External HDMI display in OS (Ubuntu 20.04)
+### DSP002.001 External HDMI display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -104,18 +104,18 @@ This test aims to verify initialization of the external HDMI display in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
 1. Proceed with the [Common](#common) section.
-2. Connect a HDMI cable to the DUT and a display.
+2. Connect an HDMI cable to the DUT and a display.
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log the  by using the proper login and password.
+1. Log in by using the proper login and password.
 1. If using more than one display, switch the display mode between `Mirror` and
     `Join Displays`.
 
@@ -144,7 +144,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log the  by using the proper login and password.
+1. Log in by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
     and `Extend`.
 
@@ -166,7 +166,7 @@ during firmware execution phase.
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
-2. Connect a HDMI cable to the DUT and a display.
+2. Connect an HDMI cable to the DUT and a display.
 
 **Test steps**
 
@@ -178,7 +178,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP003.001 External DP display in OS (Ubuntu 20.04)
+### DSP003.001 External DP display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -188,7 +188,7 @@ in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -199,7 +199,7 @@ in the OS.
 
 1. Power on the DUT.
 2. Boot into the system.
-3. Log the  by using the proper login and password.
+3. Log in by using the proper login and password.
 4. If using more than one display, switch the display mode between `Mirror` and
     `Join Displays`.
 
@@ -229,7 +229,7 @@ display in the OS.
 
 1. Power on the DUT.
 1. Boot into the system.
-1. Log the  by using the proper login and password.
+1. Log in by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
     and `Extend`.
 
@@ -264,7 +264,7 @@ display during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP004.001 External VGA display in OS (Ubuntu 20.04)
+### DSP004.001 External VGA display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -273,7 +273,7 @@ This test aims to verify initialization of the external VGA in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -302,7 +302,7 @@ This test aims to verify initialization of the external VGA in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

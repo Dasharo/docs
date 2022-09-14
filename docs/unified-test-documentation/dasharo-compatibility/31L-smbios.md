@@ -25,7 +25,7 @@ according to the
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -57,7 +57,7 @@ according to the
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -89,7 +89,7 @@ correctly according to the
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -129,7 +129,7 @@ correctly according to the
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -162,7 +162,7 @@ correctly according to the
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -203,7 +203,7 @@ according to the
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -235,7 +235,7 @@ according to the
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -266,7 +266,7 @@ according to the [Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/s
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

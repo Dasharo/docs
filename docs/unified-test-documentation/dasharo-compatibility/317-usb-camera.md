@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### CAM001.001 USB Camera (Ubuntu 20.04)
+### CAM001.001 USB Camera (Ubuntu 22.04)
 
 **Test description**
 
@@ -12,7 +12,7 @@ correctly and can be accessed from the operating system
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

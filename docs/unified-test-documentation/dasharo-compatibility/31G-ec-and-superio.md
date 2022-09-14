@@ -15,7 +15,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### ECR001.001 Battery monitoring - charge level in OS (Ubuntu 20.04)
+### ECR001.001 Battery monitoring - charge level in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -24,7 +24,7 @@ This test verifies whether the battery charge level is reported in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -70,7 +70,7 @@ This test verifies whether the battery charge level is reported in the OS.
 1. The battery status indicator should show the current charge level (percentage
     left).
 
-### ECR002.001 Battery monitoring - charging state in OS (Ubuntu 20.04)
+### ECR002.001 Battery monitoring - charging state in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -79,7 +79,7 @@ This test verifies that the power supply state is detected correctly in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -140,7 +140,7 @@ This test verifies that the power supply state is detected correctly in the OS.
 1. The battery charge indicator should detect the AC adapter state change
    within seconds of the adapter being plugged in / out.
 
-### ECR003.001 Touchpad in OS - (Ubuntu 20.04)
+### ECR003.001 Touchpad in OS - (Ubuntu 22.04)
 
 **Test description**
 
@@ -150,7 +150,7 @@ by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -232,7 +232,7 @@ and all basic keys work according to their labels.
 
 1. All menus can be entered using the internal keyboard.
 
-### ECR004.002 Keyboard (standard keypad) in OS (Ubuntu 20.04)
+### ECR004.002 Keyboard (standard keypad) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -243,7 +243,7 @@ system and all basic keys work according to their labels.
 
 1. `FIRMWARE` = coreboot
 1. `BIOS_SETUP_KEY` = `F2`
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -299,7 +299,7 @@ system and all basic keys work according to their labels.
    or actions when pressed.
 1. Key combinations are detected correctly.
 
-### ECR005.001 Keyboard (function key: play/pause) in OS (Ubuntu 20.04)
+### ECR005.001 Keyboard (function key: play/pause) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -348,14 +348,14 @@ This test verifies that the play/pause hotkey works correctly.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Start `Groove Music`
-1. Verify that when pressing the `play/pause` button, player menu apperars
+1. Verify that when pressing the `play/pause` button, player menu appears
     in the upper left part of the screen for a few seconds.
 
 **Expected result**
 
-1. Pressing the play/pause hotkey is proreply detected by the OS
+1. Pressing the play/pause hotkey is properly detected by the OS
 
-### ECR006.001 Keyboard (function key: cooling mode) in OS (Ubuntu 20.04)
+### ECR006.001 Keyboard (function key: cooling mode) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -364,7 +364,7 @@ This test verifies that the cooling mode hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -415,7 +415,7 @@ This test verifies that the cooling mode hotkey works correctly.
 1. Pressing the hotkey again should deactivate the cooling mode (fans should
    return to normal).
 
-### ECR007.001 Keyboard (function key: touchpad on/off) in OS (Ubuntu 20.04)
+### ECR007.001 Keyboard (function key: touchpad on/off) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -424,7 +424,7 @@ This test verifies that the touchpad on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -487,7 +487,7 @@ This test verifies that the touchpad on/off hotkey works correctly.
    completely inoperable).
 1. Pressing the hotkey again should reactivate the touchpad.
 
-### ECR008.001 Keyboard (function key: display on/off) in OS (Ubuntu 20.04)
+### ECR008.001 Keyboard (function key: display on/off) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -496,7 +496,7 @@ This test verifies that the display on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -544,7 +544,7 @@ This test verifies that the display on/off hotkey works correctly.
 1. Pressing any key on the keyboard should power the internal LCD panel
     back on.
 
-### ECR009.001 Keyboard (function key: mute) in OS (Ubuntu 20.04)
+### ECR009.001 Keyboard (function key: mute) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -553,7 +553,7 @@ This test verifies that the volume mute hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -601,7 +601,7 @@ This test verifies that the mute hotkey works correctly.
 1. Pressing the hotkey once should mute the device
 1. Pressing the hotkey again should reenable the sound
 
-### ECR010.001 Keyboard (function key: keyboard backlight) in OS (Ubuntu 20.04)
+### ECR010.001 Keyboard (function key: keyboard backlight) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -610,7 +610,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -659,7 +659,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
    set the keyboard to the next mode, with the last mode wrapping back around
    to the first.
 
-### ECR011.001 Keyboard (function key: volume down) in OS (Ubuntu 20.04)
+### ECR011.001 Keyboard (function key: volume down) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -668,7 +668,7 @@ This test verifies that the volume down hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -685,8 +685,8 @@ This test verifies that the volume down hotkey works correctly.
 
 1. Pressing the hotkey should decrease the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume down notification to appear in the middle
-   of the screen.
+1. Each key press should cause a volume down notification to appear in the
+   middle of the screen.
 
 ### ECR011.002 Keyboard (function key: volume down) in OS (Windows 11)
 
@@ -714,10 +714,10 @@ This test verifies that the volume down hotkey works correctly.
 
 1. Pressing the hotkey should decrease the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume down notification to appear in the upper
+1. Each key press should cause a volume down notification to appear in the upper
    left part of the screen.
 
-### ECR012.001 Keyboard (function key: volume up) in OS (Ubuntu 20.04)
+### ECR012.001 Keyboard (function key: volume up) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -726,7 +726,7 @@ This test verifies that the volume up hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -743,7 +743,7 @@ This test verifies that the volume up hotkey works correctly.
 
 1. Pressing the hotkey should increase the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume up notification to appear in the middle
+1. Each key press should cause a volume up notification to appear in the middle
    of the screen.
 
 ### ECR012.002 Keyboard (function key: volume up) in OS (Windows 11)
@@ -772,10 +772,10 @@ This test verifies that the volume up hotkey works correctly.
 
 1. Pressing the hotkey should increase the volume of the currently enabled audio
    output.
-1. Each keypress should cause a volume up notification to appear in the upper
+1. Each key press should cause a volume up notification to appear in the upper
    left part of the screen.
 
-### ECR013.001 Keyboard (function key: display switch) in OS (Ubuntu 20.04)
+### ECR013.001 Keyboard (function key: display switch) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -784,7 +784,7 @@ This test verifies that the display switch hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -837,7 +837,7 @@ This test verifies that the display switch hotkey works correctly.
 1. Pressing the hotkey should cause the display settings bar to appear
     on the right part of the screen.
 
-### ECR014.001 Keyboard (function key: brightness down) in OS (Ubuntu 20.04)
+### ECR014.001 Keyboard (function key: brightness down) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -846,7 +846,7 @@ This test verifies that the brightness down hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test steps**
 
@@ -859,7 +859,7 @@ This test verifies that the brightness down hotkey works correctly.
 1. Log into the system by using the proper login and password.
 1. Pressing the hotkey should decrease the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness down notification to appear in the
+1. Each key press should cause a brightness down notification to appear in the
    middle of the screen.
 
 ### ECR014.002 Keyboard (function key: brightness down) in OS (Windows 11)
@@ -888,10 +888,10 @@ This test verifies that the brightness down hotkey works correctly.
 
 1. Pressing the hotkey should decrease the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness down notification to appear in the
+1. Each key press should cause a brightness down notification to appear in the
    top left of the screen.
 
-### ECR015.001 Keyboard (function key: brightness up) in OS (Ubuntu 20.04)
+### ECR015.001 Keyboard (function key: brightness up) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -900,7 +900,7 @@ This test verifies that the brightness up hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -917,7 +917,7 @@ This test verifies that the brightness up hotkey works correctly.
 
 1. Pressing the hotkey should increase the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness up notification to appear in the
+1. Each key press should cause a brightness up notification to appear in the
    middle of the screen.
 
 ### ECR015.002 Keyboard (function key: brightness up) in OS (Windows 11)
@@ -946,10 +946,10 @@ This test verifies that the brightness down hotkey works correctly.
 
 1. Pressing the hotkey should increase the brightness of the internal LCD
    display.
-1. Each keypress should cause a brightness up notification to appear in the
+1. Each key press should cause a brightness up notification to appear in the
    top left of the screen.
 
-### ECR016.001 Keyboard (function key: camera on/off) in OS (Ubuntu 20.04)
+### ECR016.001 Keyboard (function key: camera on/off) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -958,7 +958,7 @@ This test verifies that the camera on/off hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1006,11 +1006,11 @@ This test verifies that the camera on/off hotkey works correctly.
 
 **Expected result**
 
-1. Pressing the hotkey once should make the camera image to disappear.
-1. Pressing the hotkey again should make camera image to appear again
+1. Pressing the hotkey once should make the camera image disappear.
+1. Pressing the hotkey again should make the camera image appear again
    after a few seconds.
 
-### ECR017.001 Keyboard (function key: flight mode) in OS (Ubuntu 20.04)
+### ECR017.001 Keyboard (function key: flight mode) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1019,7 +1019,7 @@ This test verifies that the flight mode hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1060,7 +1060,7 @@ This test verifies that the flight mode hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Press the camera on/off hotkey twice and note the effect after the keypress.
+1. Press the camera on/off hotkey twice and note the effect after the key press.
 
 **Expected result**
 
@@ -1071,7 +1071,7 @@ This test verifies that the flight mode hotkey works correctly.
    `airplane mode off` notification to appear in the top right
    part of the screen.
 
-### ECR018.001 Keyboard (function key: sleep) in OS (Ubuntu 20.04)
+### ECR018.001 Keyboard (function key: sleep) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1080,7 +1080,7 @@ This test verifies that the sleep hotkey works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1129,18 +1129,18 @@ This test verifies that the sleep hotkey works correctly.
 1. The laptop should go to sleep within seconds of the hotkey being pressed.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-### ECR019.001 Buttons (button: power) in OS (Ubuntu 20.04)
+### ECR019.001 Buttons (button: power) in OS (Ubuntu 22.04)
 
 **Test description**
 
 This test verifies that the power button is detected correctly by the operating
-system. In Ubuntu 20.04 OS the default function assigned to this key is suspend
+system. In Ubuntu 22.04 OS the default function assigned to this key is suspend
 mode.
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1219,7 +1219,7 @@ mode.
 1. Pressing the button once should make laptop enter sleep mode.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-### ECR020.001 Buttons (button: lid switch) in OS (Ubuntu 20.04)
+### ECR020.001 Buttons (button: lid switch) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1229,7 +1229,7 @@ system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1287,7 +1287,7 @@ system.
 1. Pressing the button once should make laptop enter sleep mode.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-### ECR021.001 Keyboard (function key: RGB keyboard toggle) in OS (Ubuntu 20.04)
+### ECR021.001 Keyboard (function key: RGB keyboard toggle) in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1297,7 +1297,7 @@ the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1343,17 +1343,17 @@ the operating system.
 1. Pressing the button once should disable the keyboard backlight.
 1. Pressing the button again should re-enable the keyboard backlight.
 
-### ECR022.001 RGB keyboard next color FN key in OS (Ubuntu 20.04)
+### ECR022.001 RGB keyboard next color FN key in OS (Ubuntu 22.04)
 
 **Test description**
 
-This test verifies that the RGB keyboard next color hotkey is handled properly
+This test verifies that the RGB keyboard's next color hotkey is handled properly
 by the operating system.
 
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1376,7 +1376,7 @@ by the operating system.
 
 **Test description**
 
-This test verifies that the RGB keyboard next color hotkey is handled properly
+This test verifies that the RGB keyboard's next color hotkey is handled properly
 by the operating system.
 
 **Test configuration data**
@@ -1401,7 +1401,7 @@ by the operating system.
 1. Pressing the button once should switch the keyboard color.
 1. All color modes according to product documentation should be accessible.
 
-### ECR023.001 RGB keyboard brightness down FN key in OS (Ubuntu 20.04)
+### ECR023.001 RGB keyboard brightness down FN key in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1411,7 +1411,7 @@ properly by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1455,7 +1455,7 @@ properly by the operating system.
 
 1. Pressing the button once should lower the keyboard backlight.
 
-### ECR024.001 RGB keyboard brightness up FN key in OS (Ubuntu 20.04)
+### ECR024.001 RGB keyboard brightness up FN key in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1465,7 +1465,7 @@ properly by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1482,7 +1482,7 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-### ECR024.002 RGB keyboard keyboard brightness up FN key in OS (Windows 11)
+### ECR024.002 RGB keyboard brightness up FN key in OS (Windows 11)
 
 **Test description**
 
@@ -1509,7 +1509,7 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-### SIO001.001 PS/2 mouse in OS - (Ubuntu 20.04)
+### SIO001.001 PS/2 mouse in OS - (Ubuntu 22.04)
 
 **Test description**
 
@@ -1519,7 +1519,7 @@ by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-2. `OPERATING_SYSTEM` = Ubuntu 20.04
+2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1537,7 +1537,7 @@ by the operating system.
 
 **Expected result**
 
-1. Moving the cursor, clicking work correctly in the operating system.
+1. Moving the cursor and clicking working correctly in the operating system.
 
 ### SIO001.002 PS/2 mouse in OS - (Windows 11)
 
@@ -1567,7 +1567,7 @@ by the operating system.
 
 **Expected result**
 
-1. Moving the cursor, clicking work correctly in the operating system.
+1. Moving the cursor and clicking working correctly in the operating system.
 
 ### SIO002.001 PS/2 keyboard in firmware
 
@@ -1597,7 +1597,7 @@ and all basic keys work according to their labels.
 
 1. All menus can be entered using the PS/2 keyboard.
 
-### SIO002.002 PS/2 keyboard in OS (Ubuntu 20.04)
+### SIO002.002 PS/2 keyboard in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1608,7 +1608,7 @@ system and all basic keys work according to their labels.
 
 1. `FIRMWARE` = coreboot
 2. `BIOS_SETUP_KEY` = `F2`
-3. `OPERATING_SYSTEM` = Ubuntu 20.04
+3. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1667,7 +1667,7 @@ system and all basic keys work according to their labels.
    or actions when pressed.
 2. Key combinations are detected correctly.
 
-### SIO003.001 PS/2 keyboard wake in OS (Ubuntu 20.04)
+### SIO003.001 PS/2 keyboard wake in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1678,7 +1678,7 @@ system and all basic keys work according to their labels.
 
 1. `FIRMWARE` = coreboot
 2. `BIOS_SETUP_KEY` = `F2`
-3. `OPERATING_SYSTEM` = Ubuntu 20.04
+3. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1696,7 +1696,7 @@ system and all basic keys work according to their labels.
 
 **Expected result**
 
-1. Platform is resuming to the OS from sleeps after pressing the key.
+1. Platform is resuming to the OS from sleep after pressing the key.
 
 ### SIO003.002 PS/2 keyboard wake in OS (Windows 11)
 
@@ -1726,7 +1726,7 @@ system and all basic keys work according to their labels.
 
 **Expected result**
 
-1. Platform is resuming to the OS from sleeps after pressing the key.
+1. Platform is resuming to the OS from sleep after pressing the key.
 
 ### SIO004.001 Serial port in firmware
 
@@ -1757,7 +1757,7 @@ and the menu can be traversed with serial console.
 
 1. All menus can be entered using the serial console.
 
-### SIO004.002 Serial port in OS (Ubuntu 20.04)
+### SIO004.002 Serial port in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -1768,7 +1768,7 @@ system and can be utilized as serial console.
 
 1. `FIRMWARE` = coreboot
 2. `BIOS_SETUP_KEY` = `F2`
-3. `OPERATING_SYSTEM` = Ubuntu 20.04
+3. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

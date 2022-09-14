@@ -32,14 +32,14 @@ need to execute the setup actions before each independent case.
 1. Enter the boot menu using the `BIOS_SETUP_KEY`.
 1. Select the `Boot Menu` and press `Enter`.
 1. Select the USB stick and press `Enter`.
-    1. In case of the `Ubuntu 20.04`, select the `Ubuntu (safe graphics)` in the
+    1. In case of the `Ubuntu 22.04`, select the `Ubuntu (safe graphics)` in the
        GRUB menu.
 1. Wait for the `OPERATING_SYSTEM` installer to start.
 1. Install `OPERATING_SYSTEM` on the disk.
 1. Power off the DUT.
 1. Remove the installation media (USB stick with installer).
 
-#### NVIDIA drivers - Ubuntu 20.04
+#### NVIDIA drivers - Ubuntu 22.04
 
 1. Power on the DUT.
 1. Wait until the `OPERATING_SYSTEM` boots from disk.

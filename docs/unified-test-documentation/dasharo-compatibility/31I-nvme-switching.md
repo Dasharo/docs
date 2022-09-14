@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### MSS001.001 M.2 automatic SATA/NVMe switching support (Ubuntu 20.04)
+### MSS001.001 M.2 automatic SATA/NVMe switching support (Ubuntu 22.04)
 
 **Test description**
 
@@ -12,13 +12,13 @@ via the Operating System slot.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-2. `OPERATING_SYSTEM` = Ubuntu 20.04
+2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup#firmware).
-1. Insert a NVMe disk into the M.2 slot on the DUT.
+1. Insert an NVMe disk into the M.2 slot on the DUT.
 1. Proceed with the
     [Generic test setup: OS installer](../../generic-test-setup#os-installer).
 

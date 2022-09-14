@@ -15,7 +15,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### SLM001.001 Sleep mode - battery monitoring (Ubuntu 20.04)
+### SLM001.001 Sleep mode - battery monitoring (Ubuntu 22.04)
 
 **Test description**
 
@@ -25,7 +25,7 @@ the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

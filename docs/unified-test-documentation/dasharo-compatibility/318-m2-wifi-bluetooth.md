@@ -15,7 +15,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### WLE001.001 Wireless card detection (Ubuntu 20.04)
+### WLE001.001 Wireless card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -25,7 +25,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -92,7 +92,7 @@ Output example:
 Intel(R) Wi-Fi 6AX200 160MHz
 ```
 
-### WLE002.001 Wi-Fi scanning (Ubuntu 20.04)
+### WLE002.001 Wi-Fi scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -102,7 +102,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -201,7 +201,7 @@ SSID 4 : 3mdeb_abr
     Encryption              : CCMP
 ```
 
-### WLE003.001 Bluetooth scanning (Ubuntu 20.04)
+### WLE003.001 Bluetooth scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -211,7 +211,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -276,10 +276,10 @@ correctly and can be used from within the operating system.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Enter `Notification Center` in the bottom right part of the screen.
-1. Using right mouse button click on the Bluetooth icon.
+1. Using right mouse button, click on the Bluetooth icon.
 1. In shown drop-down menu click `Go to settings`.
 1. Click the `+` icon described as `Add Bluetooth or other device`.
-1. In the `Add a device` menu click `Bluetooth`.
+1. In the `Add a device` menu, click `Bluetooth`.
 1. Wait a few moments until DUT scans for nearby Bluetooth devices and note
    the result.
 

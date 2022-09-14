@@ -17,7 +17,7 @@
 1. Install the `alsa-utils` package:
     `sudo apt install alsa-utils`.
 
-### AUD001.001 Audio subsystem detection (Ubuntu 20.04)
+### AUD001.001 Audio subsystem detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -27,7 +27,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -101,7 +101,7 @@ Index Default Type      Name
     2    True Recording Microphone (Realtek(R) Audio)
 ```
 
-### AUD002.001 Audio playback (Ubuntu 20.04)
+### AUD002.001 Audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -111,7 +111,7 @@ recordings.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -157,13 +157,13 @@ recordings.
 1. Log into the system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the left mouse button to open volume menu.
-1. In the volume menu, click the rightmost part of it and note the reult.
+1. In the volume menu, click the rightmost part of it and note the result.
 
 **Expected result**
 
 Sound should be played from the integrated speakers.
 
-### AUD003.001 Audio capture (Ubuntu 20.04)
+### AUD003.001 Audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -172,7 +172,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -232,7 +232,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 Audio level bar located in the `Test your microphone` should raise when
 some noise is being created.
 
-### AUD004.001 External headset recognition (Ubuntu 20.04)
+### AUD004.001 External headset recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -242,7 +242,7 @@ after plugging in the 3.5 mm jack into the slot.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -305,8 +305,8 @@ after plugging in the 3.5 mm jack into the slot.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Plug in a headset jack into micro jack slot located on the right side of the
-laptop.
+1. Plug in a headset jack into a micro jack slot located on the right side of
+the laptop.
 1. After the `Which device did you plug` in menu appearing, select what type of
 external device has been connected to the laptop (headset).
 1. Find the `Speakers` icon in the bottom right part of the screen and click it
@@ -328,7 +328,7 @@ Expected result
 `Addtional device properties` field `Jack Information` should not contain the
 phrase `Front Panel 3.5 mm Jack`.
 
-### AUD005.001 External headset audio playback (Ubuntu 20.04)
+### AUD005.001 External headset audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -338,7 +338,7 @@ recordings by using the external headset speakers.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -388,13 +388,13 @@ recordings by using the external headset speakers.
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
    it using the left mouse button to open volume menu.
-1. In the volume menu, click the rightmost part of it and note the reult.
+1. In the volume menu, click the rightmost part of it and note the result.
 
 **Expected result**
 
 Sound should be played from the external speakers.
 
-### AUD006.001 External headset audio capture (Ubuntu 20.04)
+### AUD006.001 External headset audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -404,7 +404,7 @@ from external headset.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 

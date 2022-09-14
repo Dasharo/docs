@@ -2,7 +2,7 @@
 
 ## Test cases
 
-### EFI001.001 Boot into UEFI OS (Ubuntu 20.04)
+### EFI001.001 Boot into UEFI OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -12,7 +12,7 @@ UEFI-aware Operating System.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Ubuntu 20.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -28,7 +28,7 @@ UEFI-aware Operating System.
 1. Select the `Boot Menu` and press `Enter`.
 1. Select the USB stick and press `Enter`.
 1. Select the `Ubuntu (safe graphics)` in the GRUB menu.
-1. Wait for the `OPERATING_SYSTEM` to boot finalize booting, by either of the:
+1. Wait for the `OPERATING_SYSTEM` to finalize booting, by either of the:
    - `OPERATING_SYSTEM` installer initialization,
    - login form initialization.
 1. Power OFF the DUT.
