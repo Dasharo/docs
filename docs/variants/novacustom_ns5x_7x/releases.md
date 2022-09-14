@@ -1,7 +1,7 @@
 # Release Notes
 
-Following Release Notes describe status of Open Source Firmware development for
-NovaCustom NS5x/7x
+Following Release Notes describe the status of Open Source Firmware development
+for NovaCustom NS5x/7x.
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
@@ -16,6 +16,16 @@ Test results for this platform can be found
 
 ## v1.3.0 - 2022-09-01
 
+### EC firmware transition
+
+Please note, that version 1.3.0 of `Dasharo BIOS firmware` works correctly
+**only** with the `Dasharo EC firmware`. This is the first release when this
+open-source EC firmware is used, so additional steps need to be taken when
+upgrading.
+
+Please refer to the [Firmware update](firmware-update.md) section for more
+details on upgrading your firmware.
+
 ### Added
 
 - [Enabled Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
@@ -28,7 +38,7 @@ Test results for this platform can be found
 
 - Rebased on upstream coreboot revision 1a8eb6c0
 
-- [Support for Open EC Firmware](https://github.com/Dasharo/ec)
+- [Support for Open EC Firmware](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition)
 
 - [Disabled UEFI Secure Boot by default](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
 
@@ -53,23 +63,6 @@ Test results for this platform can be found
 [sig_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256.sig
 
 See how to verify signatures on [this video](https://asciinema.org/a/518379)
-
-### EC firmware transition
-
-Note that, version 1.3.0 of Dasharo firmware works correctly **only** with the
-open EC firmware.
-
-Transition to the open EC firmware might be done:
-
-- by using [EC flashing kit](ec_recovery.md).
-- by using
-    [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
-
-EC transition procedure should be performed immediately after flashing the new
-version of the firmware.
-
-Use of the firmware v1.3.0 without open EC firmware may cause bricking the
-system, and we are not responsible for such damage.
 
 ### SBOM (Software Bill of Materials)
 

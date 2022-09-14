@@ -69,26 +69,71 @@ v1.0.0.
 * [Bootable via USB](#bootable-usb-stick)
 * Tested on NovaCustom NV4x, Dell OptiPlex 7010/9010
 
-## Distribution methods
+## Disabling Secure Boot
 
-It can be distributed in various ways. Currently, there are two distribution
-options:
+Any procedure which affects the firmware flashing should be preceded by
+controlling the Secure Boot status and if it is turned on, turning it off. The
+enabled Secure Boot will not only prevent you from operating on the firmware,
+but you will also not be able to launch DTS.
 
-* bootable USB stick image,
-* bootable over network (iPXE).
+To check the Secure Boot state:
 
-## Bootable USB stick
+1. Turn off the station, on which you want to test the Dasharo firmware.
+1. Turn the station on and go to the next step immediately.
+1. Hold the `BIOS SETUP KEY` to enter the `BIOS MENU`.
+1. Localize and enter the `Secure Boot` menu using the arrow keys and Enter.
+1. Verify that the `Secure Boot Status` field says `Disabled` - if not,
+  deselect the `Enforce Secure Boot` option using the arrow keys and Enter.
+1. Change the setting of Secure Boot to `Disabled` and press Enter.
+1. Press the `F10` key to open the dialog box.
+1. Press `Enter` to confirm changes and exit from the menu.
+
+After completing the steps described above, Secure Boot should be disabled.
+You could confirm that by repeating steps 3 - 5.
+
+## Running
+
+The Dasharo Tools Suite can be started in various ways. Currently, there are
+two options:
+
+* bootable over network (iPXE),
+* bootable USB stick image.
+
+The first one should be always preferred if possible, as it the easiest one to
+use.
+
+### Bootable over network
+
+This section describes how to boot DTS using iPXE.
+
+#### Requirements
+
+* Dasharo device with DTS functionality integrated
+* Wired network connection
+* [Secure Boot disabled](#disabling-secure-boot)
+
+#### Launching DTS
+
+To access Dasharo Tools Suite:
+
+* attach a wired network cable to the device's Ethernet port,
+* power on the device, holding down the Boot Menu entry key,
+* in the Boot Menu, select the `iPXE Network Boot` option,
+* in the Network Boot menu, select the `Dasharo Tools Suite` option,
+* the DTS menu will now appear.
+
+### Bootable USB stick
 
 This section describes how to boot DTS using USB stick.
 
-### Requirements
+#### Requirements
 
 * USB stick (at least 2GB)
 * Wired network connection
-* [Secure Boot disabled](#common-requirements-disabling-secure-boot)
+* [Secure Boot disabled](#disabling-secure-boot)
 * Latest image from [releases](#releases) section
 
-### Launching DTS
+#### Launching DTS
 
 To access Dasharo Tools Suite:
 
@@ -106,48 +151,6 @@ sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 * insert the USB stick to a USB in your device,
 * boot from the USB stick,
 * the DTS menu will now appear.
-
-## Bootable over network
-
-This section describes how to boot DTS using iPXE.
-
-### Requirements
-
-* Dasharo device with DTS functionality integrated
-* Wired network connection
-* [Secure Boot disabled](#common-requirements-disabling-secure-boot)
-
-### Launching DTS
-
-To access Dasharo Tools Suite:
-
-* attach a wired network cable to the device's Ethernet port,
-* power on the device, holding down the Boot Menu entry key,
-* in the Boot Menu, select the `iPXE Network Boot` option,
-* in the Network Boot menu, select the `Dasharo Tools Suite` option,
-* the DTS menu will now appear.
-
-## Common requirements - disabling Secure Boot
-
-Any procedure which affects the firmware should be preceded by controlling
-the Secure Boot status and if it is turned on, turning it off. The enabled
-Secure Boot will not only prevent you from operating on the firmware, but
-you will also not be able to launch DTS.
-
-To check the Secure Boot state:
-
-1. Turn off the station, on which you want to test the Dasharo firmware.
-1. Turn the station on and go to the next step immediately.
-1. Hold the `BIOS SETUP KEY` to enter the `BIOS MENU`.
-1. Localize and enter the `Secure Boot` menu using the arrow keys and Enter.
-1. Verify that the `Secure Boot Status` field says `Disabled` - if not,
-  deselect the `Enforce Secure Boot` option using the arrow keys and Enter.
-1. Change the setting of Secure Boot to `Disabled` and press Enter.
-1. Press the `F10` key to open the dialog box.
-1. Press `Enter` to confirm changes and exit from the menu.
-
-After completing the steps described above, Secure Boot should be disabled.
-You could confirm that by repeating steps 3 - 5.
 
 ## DTS CE functionality
 
@@ -183,15 +186,17 @@ fwupdmgr update
 
 ## Dasharo EC Transition
 
-DTS allows to perform full Embedded Controller firmware transition from vendor
-to open. For now, this functionality is supported on NS50 and NS70 laptops.
+DTS allows to perform full Embedded Controller firmware transition from the
+proprietary vendor EC firmware, to the open-source Dasharo EC firmware.
+Currently, this functionality is supported on  the
+[NovaCustom NS5x/NS7x only](../variants/novacustom_ns5x_7x/overview.md)).
 
-To perform EC transition make sure you are running DTS version 1.0.1 or higher
-and follow these steps:
+To perform EC transition, make sure you are
+[running DTS version 1.0.1 or higher](#running) and follow these steps:
 
-* After boot, choose option number 9 to drop to Shell.
-* Plug in power supply, without it, flashing EC is not possible as losing power
-  may cause damaged firmware.
+* After boot, choose option number 9 to drop to Shell
+* Plug in power supply (without it, flashing EC is not possible as losing power
+  may result in firmware corruption)
 * Download BIOS and EC update files:
 
   ```bash
@@ -211,7 +216,7 @@ and follow these steps:
   > Note: Make sure you have provided 2 arguments:
   The first is path to BIOS update file and the second is path to EC update file
 
-  The output of the above-described command should look as follows:
+  The output of the above command should look as follows:
 
   ```bash
   Getting update
@@ -257,16 +262,17 @@ and follow these steps:
   The computer will shut down automatically in 5 seconds
   ```
 
-* Computer will shut down automaticly.
+* Computer will shut down automatically.
 * Power on your computer. Booting process may take a while.
 * After boot, choose option number 9 to drop to Shell.
-* Your firmware is correcty installed. You can retrieve FW information using:
+* Your firmware is correcty installed. You can retrieve EC firmware information
+  using:
 
   ```bash
   system76_ectool info
   ```
 
-  The output of the above-described command should contain information about
+  The output of the above command should contain information about
   the version of flashed firmware:
 
   ```bash

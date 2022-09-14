@@ -14,7 +14,7 @@ enable the touchpad hotkey to work under Linux, follow the steps below:
     evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNS50_70MU:*
             KEYBOARD_KEY_f7=191
             KEYBOARD_KEY_f8=191
-   ```
+    ```
 
 1. Execute the following commands:
 

@@ -1,25 +1,26 @@
 # Overview
 
-* [Releases](releases.md) - groups information about all releases.
-* [Building manual](building-manual.md) - describes how to build Dasharo for
-    NovaCustom NS5x/7x.
-* [Initial deployment](initial-deployment.md) - describes initial Dasharo
-    deployment methods (i. e. flashing new firmware) for NovaCustom NS5x/7x.
-* [Firmware update](firmware-update.md) - explains supported Dasharo open-source
-    firmware update methods.
-* [Recovery](recovery.md) - gathers information on how to recover the platform
-    from potential failure.
-* [Hardware configuration matrix](hardware-matrix.md) - describes the platform's
-    hardware configuration used during the Dasharo firmware validation
-    procedure.
-* [Test matrix](test-matrix.md) - describes validation scope used during
-    Dasharo firmware validation procedure.
-* [Post-installation setup](post_install.md) - describes post-installation
-    tweaks.
-* [Logo Customization](../../common-coreboot-docs/custom_logo.md) - describes
-    the method of customizing the displayed logo.
-* [RGB keyboard](rgb_keyboard.md) - describes the method of using the RGB
-    keyboard hotkeys.
-* [EC firmware recovery](ec_recovery.md) - describes the process of flashing
-    EC firmware externally, in case it has been flashed using incompatible
-    or broken firmware.
+## Hardware
+
+The `NovaCustom NS5x/7x` section is related to the two physical NovaCustom
+laptops based on the 11th generation Intel Core processor:
+
+- [NS51 series](https://configurelaptop.eu/ns51-series/)
+- [NS70 series](https://configurelaptop.eu/ns70-series/)
+
+![](images/NS51-front-1.png)
+
+For more information on the hardware, please refer to the references in above
+links.
+
+## Firmware
+
+Each firmware release contains of two parts:
+
+- [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware,
+- [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
+  firmware.
+
+They both interact with each other tightly, so keeping their compatible versions
+in in sync is important. Information on compatiblity should be always explained
+in the [release page](releases.md).
