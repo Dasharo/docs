@@ -55,7 +55,12 @@ make BOARD=arduino/mega2560 flash
 make BOARD=clevo/ns50mu
 ```
 
-The firmware should now be built.
+The firmware should now be built. The name of the generated binary
+is printed at the end of the log, e.g.:
+
+```bash
+makebin -s 65536 -p < build/clevo/ns50mu/2022-08-31_cbff21b-dirty/ec.ihx > build/clevo/ns50mu/2022-08-31_cbff21b-dirty/ec.rom
+```
 
 ## Flashing
 
@@ -101,10 +106,16 @@ The firmware should now be built.
   ![](images/ns5x_arduino_full_setup.jpg)
 
 - Connect the Arduino to the host using the USB-A to USB-B cable
-- Run the following command from `ec` dictionary to flash the firmware:
+- Build the flashing utility:
 
 ```bash
-make BOARD=clevo/ns50mu flash_external
+cargo build --manifest-path ecflash/Cargo.toml --example isp --release
+```
+
+- Flash the firmware:
+
+```bash
+sudo ecflash/target/release/examples/isp [path to fw]
 ```
 
 The output will contain:
