@@ -18,26 +18,13 @@ Test results for this platform can be found
 
 ### EC firmware transition
 
-Note that, version 1.3.0 of Dasharo firmware works correctly **only** with the
-open EC firmware.
+Please note, that version 1.3.0 of `Dasharo BIOS firmware` works correctly
+**only** with the `Dasharo EC firmware`. This is the first release when this
+open-source EC firmware is used, so additional steps need to be taken when
+upgrading.
 
-The most recommended method of EC firmware transition is described in
-[Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
-
-If this is your first experience with DTS, first read its
-[documentation](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
-We recommend using DTS with the
-[Bootable over network](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
-method which is less time-consuming and just easier than DTS on the USB Stick.
-
-The second method of EC firmware transition requires specialized hardware. It
-should be done by using [EC flashing kit](ec_recovery.md) to externally fashing
-EC firmware and
-[Initial installation](initial-deployment.md#initial-installation) to externally
-flashing firmware.
-
-Use of the firmware v1.3.0 without open EC firmware may cause bricking of the
-system, and we are not responsible for such damage.
+Please refer to the [Firmware update](firmware-update.md) section for more
+details on upgrading your firmware.
 
 ### Added
 
