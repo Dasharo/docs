@@ -19,22 +19,35 @@ binaries with the generated keys.
     git checkout <board_vendor>_<board_model>/release
     ```
 
-2. Ensure submodules are up to date:
+2. Pull the `dasharo-sdk` docker:
+
+    ```bash
+    docker pull ghcr.io/dasharo/dasharo-sdk:latest
+    ```
+
+3. Ensure submodules are up to date:
 
     ```bash
     git submodule update --init --checkout
     ```
 
-3. Install the required libraries:
+4. Install the required libraries:
 
     ```bash
     sudo apt install libflashrom-dev libssl-dev uuid-dev
     ```
 
-4. Build vboot environment and install it on the host system:
+5. Build the vboot environment:
 
     ```bash
-    make -C 3rdparty/vboot
+    docker run -u root --rm -it -v $PWD:/home/coreboot/coreboot \
+    -w /home/coreboot/coreboot ghcr.io/dasharo/dasharo-sdk:latest make \
+    -C 3rdparty/vboot
+    ```
+
+6. install it on the host system:
+
+    ```bash
     sudo make -C 3rdparty/vboot install
     ```
 
