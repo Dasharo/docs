@@ -8,6 +8,12 @@ firmware comes from trusted source. This document covers the procedure for
 generating vboot keys and configuring the coreboot build system to sign the
 binaries with the generated keys.
 
+## Requirements
+
+- Docker
+    + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+    + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
+
 ## Prerequisites
 
 1. Clone `Dasharo/coreboot` repository and checkout on corresponding `release`
@@ -41,8 +47,8 @@ binaries with the generated keys.
 
     ```bash
     docker run -u root --rm -it -v $PWD:/home/coreboot/coreboot \
-    -w /home/coreboot/coreboot ghcr.io/dasharo/dasharo-sdk:latest make \
-    -C 3rdparty/vboot
+    -w /home/coreboot/coreboot ghcr.io/dasharo/dasharo-sdk:latest \
+    make -C 3rdparty/vboot
     ```
 
 6. install it on the host system:
