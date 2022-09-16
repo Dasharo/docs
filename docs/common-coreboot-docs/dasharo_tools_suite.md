@@ -344,6 +344,34 @@ properly update it, follow these steps:
   version: 2022-08-31_cbff21b
   ```
 
+## Dasharo flash firmware from logs
+
+One of the features of Dasharo HCL report is also dumping current firmware and
+sending it into cloud. Thanks to that, it can be used later to flash device with
+previous FW or use it to recreate environment of device, where bug occured. To
+do that properly, follow this steps:
+
+* Perform [HCL Report](dasharo_tools_suite.md#dasharo-hcl-report)
+* On cloud, locate your archive, and generate share link for it
+* Connect to RTE via ssh
+  ```bash
+  $ ssh root@<RTE IP address>
+  ```
+* Download your log archive
+  ```bash
+  # wget -O /tmp/logs_package.tar.gz <YOUR SHARE LINK>/download
+  ```
+* Unpack the archive
+  ```bash
+  # tar -xf /path/to/logs_package.tar.gz 
+  ```
+* Use flash script on rte to flash your board
+  ```bash
+  # ./flash.sh /path/to/unpacked/logs/rom.bin
+  ```
+  > Note: On RTE there is small amount of storge, make sure you have at least 50
+    MB of free space both on home directory and logs directory
+
 ## Reporting issues
 
 Thank you for using Dasharo Tools Suite Community Edition. If you have
