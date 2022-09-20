@@ -8,95 +8,61 @@ firmware comes from trusted source. This document covers the procedure for
 generating vboot keys and configuring the coreboot build system to sign the
 binaries with the generated keys.
 
-## Requirements
-
-- Docker
-    + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-    + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
-
 ## Prerequisites
 
-1. Clone `Dasharo/coreboot` repository and checkout on corresponding `release`
-   branch for your platform (please refer to the `Building manual` section):
+* Functional Docker installation
+    - follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+    - follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 
-    ```bash
-    git clone https://github.com/Dasharo/coreboot.git
-    cd coreboot
-    git checkout <board_vendor>_<board_model>/release
-    ```
+* Clone [dasharo-tools](https://github.com/Dasharo/dasharo-tools) repository
 
-2. Pull the `dasharo-sdk` docker:
-
-    ```bash
-    docker pull ghcr.io/dasharo/dasharo-sdk:latest
-    ```
-
-3. Ensure submodules are up to date:
-
-    ```bash
-    git submodule update --init --checkout
-    ```
-
-4. Install the required libraries:
-
-    ```bash
-    sudo apt install libflashrom-dev libssl-dev uuid-dev
-    ```
-
-5. Build the vboot environment:
-
-    ```bash
-    docker run -u root --rm -it -v $PWD:/home/coreboot/coreboot \
-    -w /home/coreboot/coreboot ghcr.io/dasharo/dasharo-sdk:latest \
-    make -C 3rdparty/vboot
-    ```
-
-6. install it on the host system:
-
-    ```bash
-    sudo make -C 3rdparty/vboot install
-    ```
+```bash
+git clone https://github.com/Dasharo/dasharo-tools.git
+```
 
 ## Generating keys
+
+> Make sure that you are in the `dasharo-tools` repository
 
 Generate the keys with the following command:
 
 ```bash
-./3rdparty/vboot/scripts/keygeneration/create_new_keys.sh --output keys/
+./vboot/generate_keys keys
 ```
 
-The keys will be created in the directory `$PWD/keys`, i.e. in the coreboot
-root directory in the `keys` subdirectory.
-
-If in doubt what parameters you should pass, add `--help` as a parameter to the
-script.
+The keys will be created in the directory `$PWD/keys`, i.e. in the `keys`
+subdirectory in your current directory.
 
 ## Signing image without rebuilding
 
-> This is the default procedure that should be followed by users downloading
-> firmware from the `Release` section, who want to use their own keys for
-> vboot.
+This is the default procedure that should be followed by users downloading
+firmware from the `Release` section, who wishes to use their own keys for
+vboot.
+
+> Make sure that you are in the `dasharo-tools` repository
 
 Be sure you have generated the keys as in [Generate keys](#generating-keys)
 section. Assuming you have generated keys to the `keys/` directory:
 
 ```bash
-./3rdparty/vboot/scripts/image_signing/sign_firmware.sh \
-  <released_firmware_file> \
-  keys/ \
-  dasharo_resigned.rom
+./vboot/resign <released_firmware_file> keys
 ```
 
-If in doubt what parameters you should pass, add `--help` as a parameter to the
-script.
+For example:
 
-The successful output should look like this:
+```bash
+./vboot/resign protectli_vault_cml_v1.0.16_resigned.rom keys
+```
+
+The successful output can look like this:
 
 ```txt
 ...
- - import root_key from keys//root_key.vbpubk: success
- - import recovery_key from keys//recovery_key.vbpubk: success
-successfully saved new image to: dasharo_resigned.rom
+INFO: sign_bios_at_end: BIOS image does not have FW_MAIN_B. Signing only FW_MAIN_A
+ - import root_key from /.../keys/root_key.vbpubk: success
+ - import recovery_key from /.../keys/recovery_key.vbpubk: success
+successfully saved new image to: /.../protectli_vault_cml_v1.0.16_resigned.rom
+The /.../protectli_vault_cml_v1.0.16.rom was resigned and saved as: /.../protectli_vault_cml_v1.0.16_resigned.rom
 ```
 
 Now the image will be signed with your own keys. Be sure to save the keys in a
