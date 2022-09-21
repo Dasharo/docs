@@ -16,12 +16,13 @@ Currently, there are:
 
 * CE - Community Edition
     - `Dasharo HCL Report` - generates a package with logs containing hardware
-      information
-    - flashrom, fwupd, and many more useful tools
-    - can drop to shell to update the firmware manually
+      information,
+    - flashrom, fwupd, and many more useful tools,
+    - can drop to shell to update the firmware manually.
 * OEM
-    - on top of that, provides tools for automatic firmware deployment and
-      rollback (switching to Dasharo back and forth)
+    - contains all of functionalities from Dasharo Tools Suite CE,
+    - provides tools for automatic firmware deployment and rollback (switching
+      to Dasharo back and forth).
 
 ## Releases
 
@@ -152,7 +153,7 @@ sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 * boot from the USB stick,
 * the DTS menu will now appear.
 
-## DTS CE functionality
+## DTS CE functionalities
 
 This section describes functionality of Dasharo Tools Suite in Community
 Edition. These are:
@@ -160,9 +161,9 @@ Edition. These are:
 * Dasharo HCL Report,
 * Dasharo firmware update,
 * Dasharo EC Transition,
-* Dasharo EC update
+* Dasharo EC update.
 
-## Dasharo HCL Report
+### Dasharo HCL Report
 
 DTS allows to generate a package with logs containing hardware information. To
 create one, choose option number 1 and check out the disclaimer. If you would
@@ -171,7 +172,7 @@ ethernet cable.
 
 ![](../images/dts-hcl-run.png)
 
-## Dasharo firmware update
+### Dasharo firmware update
 
 Within DTS, you may use the `flashrom` and `fwupdmgr` utilities to update,
 downgrade, or reinstall your firmware.
@@ -184,7 +185,7 @@ fwupdmgr refresh
 fwupdmgr update
 ```
 
-## Dasharo EC Transition
+### Dasharo EC Transition
 
 DTS allows to perform full Embedded Controller firmware transition from the
 proprietary vendor EC firmware, to the open-source Dasharo EC firmware.
@@ -280,7 +281,7 @@ To perform EC transition, make sure you are
   version: 2022-08-31_cbff21b
   ```
 
-## Dasharo EC update
+### Dasharo EC update
 
 DTS allows to update Embedded Controller firmware to the newer version. To
 properly update it, follow these steps:
@@ -343,6 +344,21 @@ properly update it, follow these steps:
   board: clevo/ns50mu
   version: 2022-08-31_cbff21b
   ```
+
+## DTS OEM additional functionalities
+
+This section describes additional functionalities of Dasharo Tools Suite
+in OEM Edition. These are:
+
+* Dasharo evaluation version installing,
+* Dasharo production version installing,
+* Vendor firmware restoring.
+
+### Dasharo evaluation version installing
+
+### Dasharo production version installing
+
+### Vendor firmware restoring
 
 ## Reporting issues
 
