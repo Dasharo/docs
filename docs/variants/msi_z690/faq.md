@@ -86,7 +86,7 @@ You **should not** refer to the
 [Memory Compatibility](https://www.msi.com/Motherboard/PRO-Z690-A-DDR4/support#mem)
 of the mainboard. It does not need to apply here due the difference on what
 memory initialization routines are used in the original MSI firmware and the
-ones in Dasharo firmware (provied by the
+ones in Dasharo firmware (provided by the
 [Intel FSP](https://www.intel.com/FSP)).
 
 ## What is the memory profile?
