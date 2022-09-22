@@ -26,4 +26,4 @@ flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
 ```
 
 Please note that not using `-i bios -i me` may lead to
-[this issue](faq.md#cpu-was-replace-warm-reset-required-loop)
+[this issue](faq.md#cpu-was-replaced-warm-reset-required-loop).
