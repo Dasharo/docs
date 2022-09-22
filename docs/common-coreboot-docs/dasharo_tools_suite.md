@@ -356,9 +356,74 @@ in OEM Edition. These are:
 
 ### Dasharo evaluation version installing
 
+DTS OEM edition allows the installation of the evaluation version of Dasharo
+firmware on certain platforms (currently - Clevo NV4x).
+
+The installing operation might be performed by choosing the option:
+`2) Install Dasharo firmware` in the DTS menu. To do this press key `2` and
+then press `Enter`.
+
+About 2 minutes after starting the installation process, the firmware version
+to install should be indicated. To choose the evaluation version, type `e` and
+press `Enter`.
+
+The rest of the operation will be performed automatically - it should last
+about 3 minutes. Do not disturb DTS at work - let it finish the work otherwise
+it will cause problems with booting your workstation. After the procedure is
+completed, the device will turn off automatically.
+
+Wait a while for everything to shut down completely and then power on the
+device. If all is worked out, you will see the Dasharo logo on the screen.
+Now you can enjoy the Dasharo firmware by yourself.
+
+Remember that during Dasharo firmware installation, a backup of your previous
+firmware was saved on this USB stick. So, to restore previous firmware in the
+future, you have to use the same USB. After installing Dasharo firmware, secure
+boot is enabled automatically. Keep in mind, when you want to boot into DTS
+again.
+
 ### Dasharo production version installing
 
+DTS OEM edition allows the installation of the production version of
+Dasharo firmware on certain platforms (currently - MSI PRO Z690-A WIFI DDR4).
+
+The installing operation might be performed by choosing the option:
+`2) Install Dasharo firmware` in the DTS menu. To do this press key `2` and
+then press `Enter`.
+
+About 2 minutes after starting the installation process, the firmware version
+to install should be indicated. To the choose production version, type `p` and
+press `Enter`.
+
+The rest of the operation will be performed automatically - it should last
+about 3 minutes. Do not disturb DTS at work - let it finish the work otherwise
+it will cause problems with booting your workstation. After the procedure is
+completed, the device will turn off automatically.
+
+Wait a while for everything to shut down completely and then power on the
+device. If all is worked out, you will see the Dasharo logo on the screen.
+Now you can enjoy the Dasharo firmware by yourself.
+
+Remember that during Dasharo firmware installation, a backup of your previous
+firmware was saved on this USB stick. So, to restore previous firmware in the
+future, you have to use the same USB. After installing Dasharo firmware, secure
+boot is enabled automatically. Keep in mind, when you want to boot into DTS
+again.
+
 ### Vendor firmware restoring
+
+DTS OEM edition allows the restoration of vendor firmware after testing the
+evaluation version of Dasharo firmware.
+
+The re-installing operation might be performed by choosing the option:
+`3) Restore original firmware` in the DTS menu. To do this press key `3` and
+then press `Enter`.
+
+Do not disturb DTS at work - let it finish the work otherwise it
+will cause problems with booting your computer. At the end of the process
+information `Successfully restored firmware` should be displayed. To implement
+changes choose `10) Poweroff System` option, wait a while for everything to
+shut down completely and then power on the device.
 
 ## Reporting issues
 
