@@ -29,7 +29,7 @@ subjected from before the release of the new binary.
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
 | 18.  | [Nvidia Graphics support][NVI]                    | NVI           | All                                  |
-| 19.  | [Custom fan curve][FAN]                           | FAN           | All                                  |
+| 19.  | [Custom fan curve][FAN]                           | FAN           | FAN001.001                           |
 | 20.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001 |
 | 21.  | [Docking station detect][DUD]                     | DUD           | All                                  |
 | 22.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
@@ -70,7 +70,7 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
@@ -102,7 +102,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
-| 18.  | [Custom fan curve][FAN]                           | FAN           | FAN001.001                           |
+| 18.  | [Custom fan curve][FAN]                           | FAN           | All                                  |
 | 19.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001 |
 | 20.  | [Docking station detect][DUD]                     | DUD           | All                                  |
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
@@ -142,7 +142,7 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001   |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
