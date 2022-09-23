@@ -1,4 +1,4 @@
-# Checkbox logs comparison
+# Checbox usage and results
 
 ## Introduction
 
@@ -12,6 +12,101 @@ needs.
 Checkbox optionally generates test reports in different formats
 (JSON, HTML, etc.) that can be used to easily share the results of
 a test session.
+
+## Checkbox installation and usage
+
+### Checkbox download and installation
+
+To install Checkbox and its dependencies open the terminal and run the
+following commands:
+
+```bash
+sudo add-apt-repository ppa:hardware-certification/public
+sudo apt-get update
+sudo apt-get install checkbox-ng plainbox-provider-resource-generic /
+plainbox-provider-certification-client plainbox-provider-checkbox / 
+canonical-certification-client
+```
+
+### Checkbox usage
+
+To start full automatic validation procedure by using Checkbox:
+
+1. Turn on `Automatic Login` in `Settings/Users`.
+1. Start checkbox. To do this, run the following command in the terminal:
+
+    ```bash
+    $ sudo checkbox-cli
+    ```
+
+    After using the above-mentioned command, the following menu should appear:
+
+    ```bash
+    ┌──────────────────────────────────────────────────────────────────────────┐
+    │    (X) (Deprecated) Fully Automatic Client Certification Tests           │
+    │    ( ) After suspend Dock Cert blocker tests                             │
+    │    ( ) After suspend Dock Cert tests                                     │
+    │    ( ) After suspend Dock Hot-plug Cert tests                            │
+    │    ( ) After suspend Dock Hot-plug tests                                 │
+    │    ( ) After suspend LED and oops tests (using special sleep key)        │
+    │    ( ) After suspend LED and oops tests (using special sleep key, cert.  │
+    │        blockers only)                                                    │
+    │    ( ) After suspend automated USB 3 write/read/compare tests on storage │
+    │        devices                                                           │
+    │    ( ) After suspend automated USB write/read/compare tests on storage   │
+    │        devices                                                           │
+    │    ( ) After suspend reference tests                                     │
+    │    ( ) After suspend reference tests (automated)                         │
+    │    ( ) After suspend reference tests (certification blockers only)       │
+    │    ( ) After suspend tests (discrete GPU automated)                      │
+    │    ( ) After suspend tests (discrete GPU manual)                         │
+    │    ( ) After suspend tests (discrete GPU)                                │
+    │    ( ) After suspend tests (discrete GPU, certification blockers only)   |
+            .
+            .
+            . etc.
+    └──────────────────────────────────────────────────────────────────────────┘
+    ```
+
+1. Select test suites (`SPACE` - select, `ARROWS` - navigation, `Enter` -
+go to the next test suite), which you want to run. If you check all the test
+suites, the checkbox menu should look as follows:
+
+    ```bash
+    ┌──────────────────────────────────────────────────────────────────────────┐
+    │[X] + Audio tests                                                         │
+    │[X] + Benchmarks tests                                                    │
+    │[X] + Bluetooth tests                                                     │
+    │[X] + CPU tests                                                           │
+    │[X] + Camera tests                                                        │
+    │[X] + Disk tests                                                          │
+    │[X] + Ethernet Device tests                                               │
+    │[X] + Firmware tests                                                      │
+    │[X] + Graphics tests                                                      │
+    │[X] + Informational tests                                                 │
+    │[X] + Input Devices tests                                                 │
+    │[X] + Memory tests                                                        │
+    │[X] + Miscellaneous tests                                                 │
+    │[X] + Mobile broadband tests                                              │
+    │[X] + Non-device specific networking tests                                │
+    │[X] + Optical Drive tests                                                 │
+    │[X] + Power Management tests                                              │
+    │[X] + Suspend tests                                                       │
+    │[X] + TPM 2.0 (Trusted Platform Module)                                   │
+    │[X] + Touchpad tests                                                      │
+            .
+            .
+            . etc.
+    └──────────────────────────────────────────────────────────────────────────┘
+    ```
+
+1. Press `T` to start the testing procedure. For some test cases more input
+information might be required (root password, etc.)
+
+1. When testing end, menu with test results should appear. Press `R` to rerun
+test cases, or `F` to finish.
+
+1. Links to the test results should be displayed in the terminal.
 
 ## Checkbox comparison - vendor firmware vs Dasharo
 
