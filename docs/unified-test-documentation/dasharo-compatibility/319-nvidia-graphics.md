@@ -1,9 +1,7 @@
 
 # Dasharo Compatibility: NVIDIA Graphics support
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -16,7 +14,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### NVI001.001 NVIDIA Graphics detect (Ubuntu 22.04)
+## NVI001.001 NVIDIA Graphics detect (Ubuntu 22.04)
 
 **Test description**
 
@@ -49,7 +47,7 @@ initialized and can be detected by the operating system.
     2d:00.0 3D controller: NVIDIA Corporation TU117M (rev a1)
     ```
 
-### NVI001.002 NVIDIA Graphics detect (Windows 11)
+## NVI001.002 NVIDIA Graphics detect (Windows 11)
 
 **Test description**
 
@@ -89,7 +87,7 @@ Get-WmiObject -Class Win32_VideoController | Select Description, Name, Status
     NVIDIA GeForce GTX 1650      NVIDIA GeForce GTX 1650      OK
     ```
 
-### NVI002.001 NVIDIA Graphics power management (Ubuntu 22.04)
+## NVI002.001 NVIDIA Graphics power management (Ubuntu 22.04)
 
 **Test description**
 
@@ -146,7 +144,7 @@ and the card powers on only while it's used.
 1. The output from the second command should be the word `active`.
 1. The output from the third command should be the word `suspended`.
 
-### NVI002.002 NVIDIA Graphics power management (Windows 11)
+## NVI002.002 NVIDIA Graphics power management (Windows 11)
 
 **Test description**
 
@@ -163,7 +161,7 @@ and the card powers on only while it's used.
 1. Proceed with the [Common](#common) section.
 1. Install the driver for the graphics card (GTX 1650) from
     [the official page](https://www.nvidia.com/).
-1. Download and extract `gputest` from [Geeks3D](geeks3d.com/gputest).
+1. Download and extract `gputest` from [Geeks3D](https://geeks3d.com/gputest).
 
 **Test steps**
 
