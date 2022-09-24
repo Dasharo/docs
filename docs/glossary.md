@@ -24,3 +24,27 @@ manageability created need for BMC (Board Management
 Controllers), EC (Environmental Controllers) and even more
 specialized one like USB Power Delivery firmware. What may
 make that firmware also covered by above definition.
+
+## Dasharo Hardware Compatibility List Report
+
+Dasharo HCL Report dumps most important information about platform and backup
+SPI NOR flash.  Gathered information can be used for future analysis, debugging
+and recovery.  Optionally scripts upload dump to [Dasharo HCL Backup
+Server](https://backup.dasharo.com), so Dasharo Team improve open source
+firmware product line and support customers in case of issues.
+
+Dasharo HCL Reports are also used during open source firmware port feasibilty
+analysis, so if you are interested in Dasharo support for you hardware feel
+free to [reach us](mailto:leads@3mdeb.com).
+
+Please note Dasharo HCL Report may contain sensitive information like serial
+numbers. Please do not make this information public. Dasharo Team respect your
+privacy.
+
+## Dasharo Blobs Transmission
+
+Unfortunately, some hardware platforms cannot be fully functional without
+binary blobs in the firmware. Some binary blobs have no EULA or any other
+licesnse discussing redistributability. To avoid issues Dasharo Blobs
+Transmission scripts extract blobs from SPI NOR flash backup and patch Dasharo
+open-source firmware distribution before initial deployment.

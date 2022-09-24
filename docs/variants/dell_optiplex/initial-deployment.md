@@ -69,15 +69,15 @@ active. Press F1 to proceed and boot to your Linux system.
 
 ## Initiali deployment
 
-For simplicity, we are using Dasharo Tools Suite OEM version booted from USB.
-Access to DTS OEM is available only through [OEM/ODM private
-beta](../../../ways-you-can-help-us/#for-oemodm-join-the-private-beta-program).
+For simplicity, we are using Dasharo Tools Suite SE version booted from USB.
+Access to DTS SE is available for supporters using [multiple
+methods](../../osf-trivia-list/dts/#how-to-get-dasharo-tools-suite-supporters-edition).
 
-* DTS OEM v1.0.0 boots only in UEFI mode
+* DTS SE v1.0.0 boots only in UEFI mode
 
 ![](../../images/dell_optiplex_uefi_mode.jpg)
 
-* After booting to Dasharo Tools Suite OEM load OEM keys
+* After booting to Dasharo Tools Suite SE load Supperter keys
 * Make sure to submit [Dasharo HCL
   report](../../../common-coreboot-docs/dasharo_tools_suite#dasharo-hcl-report)
 * Enter shell using option `9)`

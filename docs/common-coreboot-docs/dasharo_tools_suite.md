@@ -9,19 +9,22 @@ environment, with a goal of deploying, updating and maintaining firmware on
 Dasharo supported devices. For example, it can be used to update the firmware
 on a device, even when no OS is currently installed.
 
-## Flavors
+## Dasharo Tools Suite Editions
 
 There is a common base, but there might be multiple flavors of the DTS images.
 Currently, there are:
 
 * CE - Community Edition
-    - `Dasharo HCL Report` - generates a package with logs containing hardware
-      information
+    - [Dasharo HCL
+      Report](../../glossary/#dasharo-hardware-compatibility-list-report)
+      generates a package with logs containing hardware information
     - flashrom, fwupd, and many more useful tools
     - can drop to shell to update the firmware manually
-* OEM
-    - on top of that, provides tools for automatic firmware deployment and
-      rollback (switching to Dasharo back and forth)
+* SE - Supporters Edition
+    - on top of CE features, SE provides tools for automatic firmware
+      deployment and rollback (switching to Dasharo back and forth)
+    - it includes [Dasharo Blobs Transmission](../../glossary/#dasharo-blobs-transmission)
+    - [how to get DTS SE](../../osf-trivia-list/dts/#how-to-get-dasharo-tools-suite-supporters-edition)
 
 ## Releases
 
