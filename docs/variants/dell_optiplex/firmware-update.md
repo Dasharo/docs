@@ -22,8 +22,8 @@ For simplicity we recommend using network booted
 * Flash it using:
 
 ```console
-flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
+flashrom -p internal --ifd -i bios -w <dasharo_optiplex_9010_firmware>
 ```
 
-Please note that not using `-i bios -i me` may lead to
+Please note that not using `-i bios` may lead to
 [this issue](faq/#cpu-was-replace-warm-reset-required-loop).
