@@ -11,16 +11,16 @@ subset of Dasharo qualities.
 
 | Vendor | Model | Status | Roadmap | 3mdeb shop | Vendor shop |
 :-------:|:-----:|:------:|:-------:|:----------:|:-----------:|
-| PC Engines | apu1d | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu1d4 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu2e0 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu2e2 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu2e4 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu3d2 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu3d4 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu4d2 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu4d4 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu5 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu6 | Maintanance | TBD | TBD | TBD |
-| Protectli | FW2B | Maintanance | TBD | TBD | TBD |
-| Protectli | FW4B | Maintanance | TBD | TBD | TBD |
+| PC Engines | apu1d | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu1d4 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu2e0 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu2e2 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu2e4 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu3d2 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu3d4 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu4d2 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu4d4 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu5 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu6 | Maintenance | TBD | TBD | TBD |
+| Protectli | FW2B | Maintenance | TBD | TBD | TBD |
+| Protectli | FW4B | Maintenance | TBD | TBD | TBD |

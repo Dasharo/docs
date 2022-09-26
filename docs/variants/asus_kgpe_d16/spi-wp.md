@@ -40,7 +40,7 @@ The freshly built flashrom will be present in root directory of the repository.
 
 ## Flashrom write protection CLI
 
-Invoke the following command to see a lsit of available options for flashrom:
+Invoke the following command to see a list of available options for flashrom:
 
 ```shell
 ./flashrom --help
@@ -243,7 +243,7 @@ set the status register protection so the range protection cannot be changed:
 
 Flashrom should report `Sucessfully set the requested mode.`.
 
-### Verifying SPI wite protection
+### Verifying SPI write protection
 
 To check whether the settings are desired invoke:
 
@@ -378,7 +378,7 @@ the protection:
 ```
 
 Then proceed with [Setting SPI status register protection](#setting-spi-status-register-protection)
-and [Verifying SPI wite protection](#verifying-spi-wite-protection).
+and [Verifying SPI write protection](#verifying-spi-write-protection).
 
 At this point you should have your coreboot firmware with vboot well protected
 and ready to go. Place the jumper in order to prevent any changes to the

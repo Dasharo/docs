@@ -36,7 +36,7 @@ v1.0.0.
 * [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256)
 * [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig)
 
-  See how to verify hash and singature on [this video.](https://youtu.be/oTx2iStxXOE)
+  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
 
 #### Changelog
 
@@ -265,7 +265,7 @@ To perform EC transition, make sure you are
 * Computer will shut down automatically.
 * Power on your computer. Booting process may take a while.
 * After boot, choose option number 9 to drop to Shell.
-* Your firmware is correcty installed. You can retrieve EC firmware information
+* Your firmware is correctly installed. You can retrieve EC firmware information
   using:
 
   ```bash

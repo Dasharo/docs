@@ -16,7 +16,7 @@ Dasharo compatible with the MSI PRO Z690-A WIFI DDR4 platform.
 
 ### Serial debug
 
-- Attach the jumpers in `J16` header to eanble header `J18` according to the
+- Attach the jumpers in `J16` header to enable header `J18` according to the
   table below:
 
 | Jumper position (TX)      | Jumper position (RX)            |
@@ -58,7 +58,7 @@ from booting, but we cannot provide input to the platform at the same time.
 
 ![RTE](images/msi_z690_connected_rte.jpg)
 
-![All conections](images/msi_z690_all_connections.jpeg)
+![All connections](images/msi_z690_all_connections.jpeg)
 
 ### Power control
 

@@ -82,7 +82,7 @@ initial frequency after booting into the OS.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a powershell as administrator and run the follwing command:
+1. Open a powershell as administrator and run the following command:
 
 ```powershell
 while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\Processor Information(_Total)\% Processor Performance").CounterSamples.CookedValue)/100}
@@ -130,7 +130,7 @@ expected frequency.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     lscpu | grep -i mhz
@@ -199,7 +199,7 @@ expected frequency.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a powershell as administrator and run the follwing command:
+1. Open a powershell as administrator and run the following command:
 
 ```powershell
 (Get-CimInstance CIM_Processor).MaxClockSpeed
@@ -263,7 +263,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     lscpu | grep -i mhz
@@ -332,7 +332,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a powershell as administrator and run the follwing command:
+1. Open a powershell as administrator and run the following command:
 
 ```powershell
 (Get-CimInstance CIM_Processor).MaxClockSpeed
@@ -396,7 +396,7 @@ frequency during the stress test.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     lscpu | grep -i mhz
@@ -474,7 +474,7 @@ expected frequency during the stress test.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a powershell as administrator and run the follwing command:
+1. Open a powershell as administrator and run the following command:
 
 ```powershell
 (Get-CimInstance CIM_Processor).MaxClockSpeed
@@ -540,7 +540,7 @@ frequency during the stress test. The DUT during test works on battery.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     lscpu | grep -i mhz
@@ -618,7 +618,7 @@ expected frequency during the stress test.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a powershell as administrator and run the follwing command:
+1. Open a powershell as administrator and run the following command:
 
 ```powershell
 (Get-CimInstance CIM_Processor).MaxClockSpeed

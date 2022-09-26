@@ -42,7 +42,7 @@ sudo ./flashrom -p internal --wp-list
 **Expected result**
 
 The output of the command should contain the information about lst of
-available write protection ranges, exmaple has been shown below:
+available write protection ranges, example has been shown below:
 
 ```bash
 Available write protection ranges:

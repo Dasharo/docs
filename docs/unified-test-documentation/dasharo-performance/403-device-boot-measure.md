@@ -38,7 +38,7 @@ results and specify the platform stability.
 1. Restore power and power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     systemd-analyze
@@ -73,7 +73,7 @@ results and specify the platform stability.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     systemd-analyze
@@ -108,7 +108,7 @@ the results and specify the platform stability.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     sudo reboot
@@ -116,7 +116,7 @@ the results and specify the platform stability.
 
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     systemd-analyze

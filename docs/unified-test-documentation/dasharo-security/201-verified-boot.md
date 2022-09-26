@@ -61,7 +61,7 @@ functional.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and execute the follwing command:
+1. Open a terminal window and execute the following command:
 
 ```bash
 sudo ./cbmem -c | grep VBOOT
@@ -138,7 +138,7 @@ proceed to boot from Slot A.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and execute the follwing command:
+1. Open a terminal window and execute the following command:
 
 ```bash
 sudo ./cbmem -c | grep "Slot A"
@@ -198,7 +198,7 @@ command:
 1. Power on the DUT
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and execute the follwing command:
+1. Open a terminal window and execute the following command:
 
     ```bash
     sudo ./cbmem -c | grep -i recovery

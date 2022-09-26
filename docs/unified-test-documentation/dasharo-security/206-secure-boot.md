@@ -5,7 +5,7 @@
 **Test description**
 
 Secure Boot is a verification mechanism for ensuring that code launched by
-firmware is trusted. This test aims to verfiy that Secure Boot state after
+firmware is trusted. This test aims to verify that Secure Boot state after
 flashing the platform with the Dasharo firmware is correct.
 
 **Test configuration data**
@@ -65,7 +65,7 @@ the DUT reset, it is seen from the OS.
 1. Select the `Reset` option to apply the settings and reboot.
 1. The DUT will now attempt to boot `OPERATING_SYSTEM` with Secure Boot enabled.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     sudo dmesg | grep secureboot
@@ -115,7 +115,7 @@ the DUT reset, it is seen from the OS.
 1. Select the `Reset` option to apply the settings and reboot.
 1. The DUT will now attempt to boot `OPERATING_SYSTEM` with Secure Boot enabled.
 1. Log into the system by using the proper login and password.
-1. Open Powershell as administrator and run the follwing command:
+1. Open Powershell as administrator and run the following command:
 
     ```powershell
     Confirm-SecureBootUEFI

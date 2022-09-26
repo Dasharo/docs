@@ -254,7 +254,7 @@ Prerequisites: `git`, `go (1.10+)`
 
 #### Install muxpi-power
 
-`muxpi-power` - tool for controling power supply for  MuxPi's main board.
+`muxpi-power` - tool for controlling power supply for  MuxPi's main board.
 
 1. Copy muxpi-power files (change `XXX` to proper values):
 
@@ -333,8 +333,8 @@ connected directly and one is connected through relay.
 Current measurement - It is able to measure up to -/+5A and is galvanically
 isolated from the rest of components thanks to use of Hall effect current sensor
 ACS712ELCTR-05B-T. It is connected to unswitchable power line. The current
-sensor is bypassed with 3 0R resistors tha can be populated if current sensor is
-not needed. These resistors must not be populated if current measurement is
+sensor is bypassed with 3 0R resistors that can be populated if current sensor
+is not needed. These resistors must not be populated if current measurement is
 required.
 
 ![](../../images/muxPi-power.png)
@@ -352,7 +352,7 @@ required.
   voltage generator must be set to desired value and activated. Command "uart
   3300" must be sent to Cortex-M0, where 3300 is desired voltage given in
   millivolts. The voltage range is from 0 to 5000mv. Pins `Vloc` an `VCC` must
-  be connected eachother. Typical jumper is a perfect connector for this
+  be connected each other. Typical jumper is a perfect connector for this
   purpose. `Vloc` may be also used to power up additional converter RS232C. For
   example if converter to RS232C (+/-12v) must be used then it may be powered
   from `Vloc` pin.

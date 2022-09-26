@@ -406,7 +406,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 - UEFI boot support
 - configurable boot order
 - configurable boot options
-- Integreated graphics initialization for internal LCD (eDP) and external HDMI
+- Integrated graphics initialization for internal LCD (eDP) and external HDMI
   port
 
 ### Binaries

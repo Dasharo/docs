@@ -41,7 +41,7 @@ Thunderbolt 4 port.
 1. Connect the docking station to the Thunderbolt 4 port located on the casing
     of the DUT.
 1. Connect the charger plug to the docking station.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     cat /sys/class/power_supply/BAT0/status
@@ -85,7 +85,7 @@ Thunderbolt 4 port.
 1. Connect the docking station to the Thunderbolt 4 port located on the left side
     of the laptop.
 1. Connect the charger plug to the docking station.
-1. Open PowerShell and and run the follwing command:
+1. Open PowerShell and and run the following command:
 
     ```powershell
     Get-WmiObject win32_battery

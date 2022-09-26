@@ -21,7 +21,7 @@ Legend:
 * GPU name - the full name of GPU including vendor and model name.
 * Memory size - total amount of GPU memory declared by vendor.
 * Memory type - GPU's type of memory.
-* Bandwith - GPU's bandwith.
+* Bandwidth - GPU's bandwidth.
 * PCI-E Architecture - declared by producer generation of PCI-E architecture.
 * Multi-Graphics Technology - information about support for Multi-Graphics
   Technology.

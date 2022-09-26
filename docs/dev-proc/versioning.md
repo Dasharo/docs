@@ -21,13 +21,13 @@ In Dasharo we use following rules for keys:
 * There few types of naming conventions, which define `Real Name` field and
   chain of trust schemes:
     - Software:
-        + Real Name: `<name> open-source software relase <version> signing key`
+        + Real Name: `<name> open-source software release <version> signing key`
         + Signing key: `3mdeb Open Source Software Master Key <contact@3mdeb.com>`
     - Firmware:
-        + Real Name: `<name> open-source firmware relase <version> signing key`
+        + Real Name: `<name> open-source firmware release <version> signing key`
         + Signing key: `3mdeb Dasharo Master Key`
     - PC Engines (firmware exception):
-        + Real Name: `PC Engines open-source firmware relase <version> signing key`
+        + Real Name: `PC Engines open-source firmware release <version> signing key`
         + Signing key: `3mdeb Open Source Firmware Master Key <contact@3mdeb.com>`
     - Dasharo firmware produced by 3mdeb:
         + Real Name: `Dasharo release <version> compatible with <name> signing key`

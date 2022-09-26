@@ -599,7 +599,7 @@ This test verifies that the mute hotkey works correctly.
 **Expected result**
 
 1. Pressing the hotkey once should mute the device
-1. Pressing the hotkey again should reenable the sound
+1. Pressing the hotkey again should re-enable the sound
 
 ### ECR010.001 Keyboard (function key: keyboard backlight) in OS (Ubuntu 22.04)
 

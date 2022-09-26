@@ -189,7 +189,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 arecord -f S16_LE -d 10 -r 16000 /tmp/test-mic.wav
 ```
 
-1. Make some noise aroud DUT. For example, say something.
+1. Make some noise around DUT. For example, say something.
 1. Execute the following command:
 
 ```bash

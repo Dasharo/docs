@@ -18,11 +18,11 @@ performed before testing the various functionalities.
 
 ## Dasharo modules
 
-Tests preformed during validation procedure can be divided into test modules,
+Tests performed during validation procedure can be divided into test modules,
 test suites and test cases.
 
 Test cases are the smallest component of validation procedure. Their task
-is to check, that the given functionallity works properly under a certain
+is to check, that the given functionality works properly under a certain
 conditions.
 
 Test suites group test cases related to the given functionality, while

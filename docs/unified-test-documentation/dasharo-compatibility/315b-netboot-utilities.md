@@ -164,7 +164,7 @@ content is right.
 **Test description**
 
 This test aims to verify that the iPXE shell works correctly by configuring
-network interface and booting from selected adress.
+network interface and booting from selected address.
 
 **Test configuration data**
 

@@ -21,8 +21,8 @@ TBD: maybe also add some picture/diagram of Dasharo Firewall to compliment the t
 
 | Vendor | Model | Status | Roadmap | 3mdeb shop | Vendor shop |
 :-------:|:-----:|:------:|:-------:|:----------:|:-----------:|
-| PC Engines | apu2e0 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu2e2 | Maintanance | TBD | TBD | TBD |
-| PC Engines | apu2e4 | Maintanance | TBD | TBD | TBD |
+| PC Engines | apu2e0 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu2e2 | Maintenance | TBD | TBD | TBD |
+| PC Engines | apu2e4 | Maintenance | TBD | TBD | TBD |
 | Protectli | FW6D | Testing and Integration | TBD | TBD | TBD |
 | Protectli | FW6E | Testing and Integration | TBD | TBD | TBD |
