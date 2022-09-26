@@ -24,7 +24,7 @@ following commands:
 sudo add-apt-repository ppa:hardware-certification/public
 sudo apt-get update
 sudo apt-get install checkbox-ng plainbox-provider-resource-generic /
-plainbox-provider-certification-client plainbox-provider-checkbox / 
+plainbox-provider-certification-client plainbox-provider-checkbox /
 canonical-certification-client
 ```
 
