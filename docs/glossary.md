@@ -28,7 +28,7 @@ make that firmware also covered by above definition.
 ## Dasharo Hardware Compatibility List Report
 
 Dasharo HCL Report dumps most important information about platform and backup
-SPI NOR flash.  Gathered information can be used for future analysis, debugging
+SPI NOR flash. Gathered information can be used for future analysis, debugging
 and recovery.  Optionally scripts upload dump to [Dasharo HCL Backup
 Server](https://backup.dasharo.com), so Dasharo Team improve open source
 firmware product line and support customers in case of issues.
