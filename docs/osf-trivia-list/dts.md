@@ -45,7 +45,7 @@ developers. To get access to DTS SE you should [contact
 with links to your contribution and we would be glad to provide one year of DTS
 SE updates.
 
-### I have more money then time
+### I have more money than time
 
 Please [donate](../../ways-you-can-help-us/#donate-money) using one of
 available methods and [contact 3mdeb](mailto:leads@3mdeb.com) or [Dasharo
