@@ -1,8 +1,6 @@
 # Dasharo Security: TPM Support
 
-## Test cases
-
-### TPM001.001 TPM Support (Ubuntu 22.04)
+## TPM001.001 TPM Support (Ubuntu 22.04)
 
 **Test description**
 
@@ -147,7 +145,7 @@ PCR-22: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 PCR-23: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 ```
 
-### TPM001.002 TPM Support (Windows 11)
+## TPM001.002 TPM Support (Windows 11)
 
 **Test description**
 

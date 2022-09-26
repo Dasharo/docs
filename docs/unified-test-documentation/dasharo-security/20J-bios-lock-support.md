@@ -1,8 +1,6 @@
 # Dasharo Security: BIOS lock support
 
-## Test cases
-
-### BLS001.001 BIOS lock support (Ubuntu 22.04)
+## BLS001.001 BIOS lock support (Ubuntu 22.04)
 
 **Test description**
 

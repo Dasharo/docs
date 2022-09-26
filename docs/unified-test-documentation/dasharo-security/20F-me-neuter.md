@@ -1,8 +1,6 @@
 # Dasharo Security: ME neuter
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### MNE001.001 ME neuter support (Ubuntu 22.04)
+## MNE001.001 ME neuter support (Ubuntu 22.04)
 
 **Test description**
 

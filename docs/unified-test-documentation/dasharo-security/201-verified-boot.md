@@ -1,8 +1,6 @@
 # Dasharo Security: Verified Boot support
 
-## Test cases
-
-### VBO001.001 Verified boot support (firmware)
+## VBO001.001 Verified boot support (firmware)
 
 **Test description**
 
@@ -29,7 +27,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-### VBO001.002 Verified boot support (Ubuntu 22.04)
+## VBO001.002 Verified boot support (Ubuntu 22.04)
 
 **Test description**
 
@@ -81,7 +79,7 @@ PCR-0 2547cc736e951fa4919853c43ae890861a3b3264000000000000000000000000 SHA256 [V
 PCR-1 e3324765a25f8a59c7c20cc35c1c33a8ab384159d2b40a269246b0b4491cdf89 SHA256 [VBOOT: GBB HWID]
 ```
 
-### VBO002.001 Verified boot: Booting from Slot A (firmware)
+## VBO002.001 Verified boot: Booting from Slot A (firmware)
 
 **Test description**
 
@@ -107,7 +105,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-### VBO002.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
+## VBO002.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
 
 **Test description**
 
@@ -153,7 +151,7 @@ slot A:
 Slot A is selected
 ```
 
-### VBO003.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
+## VBO003.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
 
 **Test description**
 
@@ -218,7 +216,7 @@ VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
 Recovery requested (1009000e)
 ```
 
-### VBO004.001 Recovery boot popup (firmware)
+## VBO004.001 Recovery boot popup (firmware)
 
 **Test description**
 
@@ -263,7 +261,7 @@ command:
 
 Popup with information about recovery mode should be displayed.
 
-### VBO005.001  Recovery boot popup confirmation (firmware)
+## VBO005.001  Recovery boot popup confirmation (firmware)
 
 **Test description**
 

@@ -1,8 +1,6 @@
 # Dasharo Security: Measured Boot support
 
-## Test cases
-
-### MBO001.001 Measured Boot support (Ubuntu 22.04)
+## MBO001.001 Measured Boot support (Ubuntu 22.04)
 
 **Test description**
 
