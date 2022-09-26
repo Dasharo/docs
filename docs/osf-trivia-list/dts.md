@@ -8,7 +8,7 @@ or [Dasharo Team](mailto:contact@dasharo.com).
 
 In general there are three ways to support us:
 
-### I have more time then money and I can code
+### I have more time than money and I can code
 
 Please help us develop Dasharo influence on open-source firmware market and
 spread the word about it. There are multiple ways to do that:
