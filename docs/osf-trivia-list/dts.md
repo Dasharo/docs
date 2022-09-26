@@ -32,7 +32,7 @@ To get access to DTS SE you should [contact 3mdeb](mailto:leads@3mdeb.com) or
 regarding above areas of support and influence. If it would be meaningful we
 would be glad to give you access to DTS SE for a year.
 
-### I have more time then money and I can't code
+### I have more time than money and I can't code
 
 Please [contribute](../../ways-you-can-help-us/#contribute-through-github)
 features, review and bug fixes to our repositories.
