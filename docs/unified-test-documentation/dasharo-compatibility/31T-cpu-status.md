@@ -1,8 +1,6 @@
 # Dasharo Compatibility: CPU Status
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### CPU001.001 CPU works
+## CPU001.001 CPU works (Ubuntu 22.04)
 
 **Test description**
 
@@ -24,7 +22,7 @@ Check whether the mounted on the DUT CPU works.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Debian 11.0
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -63,7 +61,7 @@ Check whether the mounted on the DUT CPU works.
 
 The `OPERATING_SYSTEM` screen should be displayed.
 
-### CPU002.001 CPU cache enabled
+## CPU002.001 CPU cache enabled (Ubuntu 22.04)
 
 **Test description**
 
@@ -72,7 +70,7 @@ Check whether all declared for the DUT cache levels are enabled.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Debian 11.0
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -113,7 +111,7 @@ LEVEL4_CACHE_ASSOC                 0
 LEVEL4_CACHE_LINESIZE              0
 ```
 
-### CPU002.002 CPU cache enabled (Windows 11)
+## CPU002.002 CPU cache enabled (Windows 11)
 
 **Test description**
 
@@ -163,7 +161,7 @@ CacheType     : 5
 InstalledSize : 8192
 ```
 
-### CPU003.001 Multiple CPU support
+## CPU003.001 Multiple CPU support (Ubuntu 22.04)
 
 **Test description**
 
@@ -172,7 +170,7 @@ Check whether the DUT has multiple CPU support.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Debian 11.0
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -207,7 +205,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ```
 
-### CPU003.002 Multiple CPU support (Windows 11)
+## CPU003.002 Multiple CPU support (Windows 11)
 
 **Test description**
 
@@ -244,7 +242,7 @@ NumberOfCores
 4
 ```
 
-### CPU004.001 Multiple-core support
+## CPU004.001 Multiple-core support (Ubuntu 22.04)
 
 **Test description**
 
@@ -253,7 +251,7 @@ Check whether the DUT has multi-core support.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = Debian 11.0
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -288,7 +286,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ```
 
-### CPU004.002 Multiple-core support (Windows 11)
+## CPU004.002 Multiple-core support (Windows 11)
 
 **Test description**
 

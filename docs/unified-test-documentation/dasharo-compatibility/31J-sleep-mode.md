@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Sleep mode
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### SLM001.001 Sleep mode - battery monitoring (Ubuntu 22.04)
+## SLM001.001 Sleep mode - battery monitoring (Ubuntu 22.04)
 
 **Test description**
 
@@ -62,7 +60,7 @@ the OS.
 | 6h             | 80%              |
 | 24h (optional) | 57%              |
 
-### SLM000.002 Sleep mode - battery monitoring (Windows 11)
+## SLM000.002 Sleep mode - battery monitoring (Windows 11)
 
 **Test description**
 

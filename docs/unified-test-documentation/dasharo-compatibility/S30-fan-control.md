@@ -1,8 +1,6 @@
 # Dasharo Compatibility: custom fan curve
 
-## Test cases
-
-### FAN001.001 Custom fan curve: CPU fan
+## FAN001.001 Custom fan curve: CPU fan
 
 **Test description**
 
@@ -56,7 +54,7 @@ stress-ng -c 8
 1. The fan should not be spinning while the temperature is below 40 degrees
 1. The fan should be spinning while the temperature is above 40 degrees
 
-### FAN002.001 Custom fan curve: GPU fan (NV41MB)
+## FAN002.001 Custom fan curve: GPU fan (NV41MB)
 
 **Test description**
 

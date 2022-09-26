@@ -1,8 +1,6 @@
 # Dasharo Compatibility: M.2 WiFi/Bluetooth
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### WLE001.001 Wireless card detection (Ubuntu 22.04)
+## WLE001.001 Wireless card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -52,7 +50,7 @@ The output of the command should contain the line:
 
 The exact name and revision may be different depending on hardware configuration.
 
-### WLE001.002 Wireless card detection (Windows 11)
+## WLE001.002 Wireless card detection (Windows 11)
 
 **Test description**
 
@@ -92,7 +90,7 @@ Output example:
 Intel(R) Wi-Fi 6AX200 160MHz
 ```
 
-### WLE002.001 Wi-Fi scanning (Ubuntu 22.04)
+## WLE002.001 Wi-Fi scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -143,7 +141,7 @@ IN-USE  BSSID              SSID                    MODE   CHAN  RATE        SIGN
         XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
 ```
 
-### WLE002.002 Wi-Fi scanning (Windows 11)
+## WLE002.002 Wi-Fi scanning (Windows 11)
 
 **Test description**
 
@@ -201,7 +199,7 @@ SSID 4 : 3mdeb_abr
     Encryption              : CCMP
 ```
 
-### WLE003.001 Bluetooth scanning (Ubuntu 22.04)
+## WLE003.001 Bluetooth scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -253,7 +251,7 @@ Device XX:XX:XX:XX:XX:XX Device 5
 Device XX:XX:XX:XX:XX:XX Device 6
 ```
 
-### WLE003.002 Bluetooth scanning (Windows 11)
+## WLE003.002 Bluetooth scanning (Windows 11)
 
 **Test description**
 

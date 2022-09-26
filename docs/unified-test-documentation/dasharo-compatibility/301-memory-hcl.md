@@ -1,8 +1,6 @@
 # Dasharo compatibility: Memory HCL
 
-## Test cases
-
-### HCL001.001 Memory HCL - boot into OS (Ubuntu 22.04)
+## HCL001.001 Memory HCL - boot into OS (Ubuntu 22.04)
 
 **Test description**
 

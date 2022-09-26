@@ -1,8 +1,6 @@
 # Dasharo Compatibility: USB Detection
 
-## Test cases
-
-### UDT001.001 USB detection after coldboot
+## UDT001.001 USB detection after coldboot
 
 **Test description**
 
@@ -34,7 +32,7 @@ connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 coldboot.
 
-### UDT002.001 USB detection after warmboot
+## UDT002.001 USB detection after warmboot
 
 **Test description**
 
@@ -64,7 +62,7 @@ may be re-done several times to specify the platform and connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 warmboot.
 
-### UDT003.001 USB detection after system reboot
+## UDT003.001 USB detection after system reboot
 
 **Test description**
 

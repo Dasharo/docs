@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Display ports and LCD support
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### DSP001.001 Internal LCD in firmware
+## DSP001.001 Internal LCD in firmware
 
 **Test description**
 
@@ -41,7 +39,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP001.002 Internal LCD in OS (Ubuntu 22.04)
+## DSP001.002 Internal LCD in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -68,7 +66,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
     internal LCD.
 
-### DSP001.003 Internal LCD in OS (Windows 11)
+## DSP001.003 Internal LCD in OS (Windows 11)
 
 **Test description**
 
@@ -95,7 +93,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
     internal LCD.
 
-### DSP002.001 External HDMI display in OS (Ubuntu 22.04)
+## DSP002.001 External HDMI display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -124,7 +122,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 1. The image should be displayed on the external HDMI display in `Mirror` and
     `Join Displays` modes.
 
-### DSP002.002 External HDMI display in OS (Windows 11)
+## DSP002.002 External HDMI display in OS (Windows 11)
 
 **Test description**
 
@@ -153,7 +151,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 1. The image should be displayed on the external HDMI display in `Duplicate`
     and `Extend` modes.
 
-### DSP002.003 External HDMI display in firmware
+## DSP002.003 External HDMI display in firmware
 
 This test aims to verify initialization of the external HDMI display
 during firmware execution phase.
@@ -178,7 +176,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP003.001 External DP display in OS (Ubuntu 22.04)
+## DSP003.001 External DP display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -208,7 +206,7 @@ in the OS.
 1. The image should be displayed on the external Display Port connected display
     in `Mirror` and `Join Displays` modes.
 
-### DSP003.002 External DP display in OS (Windows 11)
+## DSP003.002 External DP display in OS (Windows 11)
 
 **Test description**
 
@@ -238,7 +236,7 @@ display in the OS.
 1. The image should be displayed on the external Display Port connected display
     in `Duplicate` and `Extend` modes.
 
-### DSP003.003 External DP display in firmware
+## DSP003.003 External DP display in firmware
 
 This test aims to verify initialization of the external Display Port connected
 display during firmware execution phase.
@@ -264,7 +262,7 @@ display during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-### DSP004.001 External VGA display in OS (Ubuntu 22.04)
+## DSP004.001 External VGA display in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -293,7 +291,7 @@ This test aims to verify initialization of the external VGA in the OS.
 1. The image should be displayed on the external VGA connected display in
     `Mirror` and `Join Displays` modes.
 
-### DSP004.002 External VGA display in OS (Windows 11)
+## DSP004.002 External VGA display in OS (Windows 11)
 
 **Test description**
 
@@ -322,7 +320,7 @@ This test aims to verify initialization of the external VGA in the OS.
 1. The image should be displayed on the external Display Port connected display
     in `Duplicate` and `Extend` modes.
 
-### DSP004.003 External VGA display in firmware
+## DSP004.003 External VGA display in firmware
 
 This test aims to verify initialization of the external VGA during firmware
 execution phase.

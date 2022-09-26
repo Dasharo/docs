@@ -1,8 +1,6 @@
 # Dasharo compatibility: Custom Logo
 
-## Test cases
-
-### CLG001.001 Custom boot logo
+## CLG001.001 Custom boot logo
 
 **Test description**
 

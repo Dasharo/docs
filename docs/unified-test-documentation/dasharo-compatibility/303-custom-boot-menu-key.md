@@ -1,8 +1,6 @@
 # Dasharo compatibility: Custom Boot Keys
 
-## Test cases
-
-### CBK001.001 Custom Boot Menu Key
+## CBK001.001 Custom Boot Menu Key
 
 **Test description**
 
@@ -27,7 +25,7 @@ hotkey (if it exists).
 
 The DUT boots into the Boot Menu after using the specified hotkey.
 
-### CBK002.001 Custom BIOS Menu Key
+## CBK002.001 Custom BIOS Menu Key
 
 **Test description**
 

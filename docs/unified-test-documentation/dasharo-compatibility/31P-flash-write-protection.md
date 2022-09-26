@@ -1,8 +1,6 @@
 # Dasharo Security: Flash write protection
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Make yourself familiar with
     [SPI hardware write protection](../../../variants/asus_kgpe_d16/spi-wp/).
 
-### HWP001.001 Hardware flash write protection support
+## HWP001.001 Hardware flash write protection support
 
 **Test description**
 
@@ -88,7 +86,7 @@ Available write protection ranges:
 	start=0x00000000 length=0x00800000 (all)
 ```
 
-### HWP002.001 Hardware flash write protection enable / disable
+## HWP002.001 Hardware flash write protection enable / disable
 
 **Test description**
 

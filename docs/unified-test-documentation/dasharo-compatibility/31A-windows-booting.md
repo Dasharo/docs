@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Windows booting
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -11,7 +9,7 @@
 1. Proceed with the
    [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 
-### WBT001.001 Windows 11 installation and boot
+## WBT001.001 Windows 11 installation and boot
 
 **Test description**
 
@@ -36,7 +34,7 @@ and works properly.
 
 The Windows 11 login screen should be displayed.
 
-### WBT002.001 Windows 10 installation and boot
+## WBT002.001 Windows 10 installation and boot
 
 **Test description**
 

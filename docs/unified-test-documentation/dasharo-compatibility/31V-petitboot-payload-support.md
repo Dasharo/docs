@@ -1,15 +1,13 @@
 # Dasharo Compatibility: Petitboot payload support
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-### PBT001.001 Boot into Petitboot
+## PBT001.001 Boot into Petitboot
 
 **Test description**
 
@@ -33,7 +31,7 @@ menu.
 
 The `Petitbooot` menu screen should be displayed.
 
-### PBT002.001 Read System Information from Petitboot
+## PBT002.001 Read System Information from Petitboot
 
 **Test description**
 
@@ -61,7 +59,7 @@ works correctly.
 After select `System Information` option, device information tree should be
 displayed.
 
-### PBT003.001 Rescan Devices by Petitboot
+## PBT003.001 Rescan Devices by Petitboot
 
 **Test description**
 

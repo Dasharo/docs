@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Firmware flashing using Dasharo Tools Suite
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -12,7 +10,7 @@
 1. Make yourself familiar with
     [Bootable over network](../../../common-coreboot-docs/dasharo_tools_suite/#bootable-over-network).
 
-### FDT001.001 Flash firmware by using Dasharo Tools Suite
+## FDT001.001 Flash firmware by using Dasharo Tools Suite
 
 **Test description**
 
@@ -75,7 +73,7 @@ Example output:
 Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
 
-### FDT002.001 Firmware update using fwupd in Dasharo Tools Suite
+## FDT002.001 Firmware update using fwupd in Dasharo Tools Suite
 
 **Test description**
 

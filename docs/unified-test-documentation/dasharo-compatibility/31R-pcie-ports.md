@@ -1,8 +1,6 @@
 # Dasharo Compatibility: PCI Express ports support
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 4. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### PEX001.001 PCI Express card detection (Ubuntu 22.04)
+## PEX001.001 PCI Express card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -53,7 +51,7 @@ The output of the command should contain the plugged device name:
 
 The exact name and revision may be different depending on hardware configuration.
 
-### PEX001.002 PCI Express card detection (Windows 11)
+## PEX001.002 PCI Express card detection (Windows 11)
 
 **Test description**
 

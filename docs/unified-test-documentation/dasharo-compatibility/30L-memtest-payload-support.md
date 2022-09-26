@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Memtest payload support
 
-## Test cases
-
-### MEM001.001 Memtest availability
+## MEM001.001 Memtest availability
 
 **Test description**
 
@@ -29,7 +27,7 @@ This test aims to verify that the Memtest entry is available in DUT boot
 
 The `Payload [memtest]` option should be visible as the one of boot menu options.
 
-### MEM002.001 Enter Memtest
+## MEM002.001 Enter Memtest
 
 **Test description**
 
@@ -56,7 +54,7 @@ This test aims to verify that the DUT enters the Memtestboot option.
 
 The `Memtest86+` is visible at the top of the output.
 
-### MEM003.001 Memtest stability
+## MEM003.001 Memtest stability
 
 **Test description**
 
@@ -84,7 +82,7 @@ This test aims to verify that the Memtest starts does not hang under DUT.
 The `State: - Running...` is visible after a few seconds and confirms that the
 the test is in progress.
 
-### MEM004.001 Memtest refreshing by 'L' key
+## MEM004.001 Memtest refreshing by 'L' key
 
 **Test description**
 
@@ -112,7 +110,7 @@ This test aims to verify that DUT refreshes Memtest properly.
 
 The `Memtest86+` is visible before and after pressing `L`.
 
-### MEM005.001 Memtest refreshing by 'l' key
+## MEM005.001 Memtest refreshing by 'l' key
 
 **Test description**
 
@@ -140,7 +138,7 @@ This test aims to verify that DUT refreshes Memtest properly.
 
 The `Memtest86+` is visible before and after pressing `l`.
 
-### MEM006.001 Memtest completing
+## MEM006.001 Memtest completing
 
 **Test description**
 

@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Platform suspend and resume
 
-## Test cases
-
-### SUSP001.001 Platform suspend and resume
+## SUSP001.001 Platform suspend and resume
 
 **Test description**
 

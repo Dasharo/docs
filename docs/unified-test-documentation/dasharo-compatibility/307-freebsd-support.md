@@ -1,8 +1,6 @@
 # Dasharo Compatibility: FreeBSD support
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -11,7 +9,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 
-### BSD001.001 FreeBSD installation and boot
+## BSD001.001 FreeBSD installation and boot
 
 **Test description**
 

@@ -1,8 +1,6 @@
 # Dasharo: coreboot base port
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -10,7 +8,7 @@
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Connect to the UART debug interface and open a serial console.
 
-### CBP001.001 Boot into coreboot stage bootblock
+## CBP001.001 Boot into coreboot stage bootblock
 
 **Test description**
 
@@ -40,7 +38,7 @@ its main task is to set up everything for a C-environment.
     bootblock starting
     ```
 
-### CBP002.001 Boot into coreboot stage romstage
+## CBP002.001 Boot into coreboot stage romstage
 
 **Test description**
 
@@ -69,7 +67,7 @@ for device init.
     romstage starting
     ```
 
-### CBP003.001 Boot into coreboot stage postcar
+## CBP003.001 Boot into coreboot stage postcar
 
 **Test description**
 
@@ -97,7 +95,7 @@ stage postcar. The postcar tears down CAR and loads the ramstage.
     postcar starting
     ```
 
-### CBP004.001 Boot into coreboot stage ramstage
+## CBP004.001 Boot into coreboot stage ramstage
 
 **Test description**
 
@@ -125,7 +123,7 @@ stage ramstage. The ramstage does the main device init.
     ramstage starting
     ```
 
-### CBP005.001 Resource allocator v4 - gathering requirements
+## CBP005.001 Resource allocator v4 - gathering requirements
 
 **Test description**
 
@@ -153,7 +151,7 @@ stage for Resource Allocator v4 during booting procedure.
     Pass 1 (gathering requirements)
     ```
 
-### CBP006.001 Resource allocator v4 - allocating resources
+## CBP006.001 Resource allocator v4 - allocating resources
 
 **Test description**
 

@@ -1,8 +1,6 @@
 # Dasharo Compatibility: eMMC support
 
-## Test cases
-
-### MMC001.001 eMMC support (Ubuntu 22.04)
+## MMC001.001 eMMC support (Ubuntu 22.04)
 
 **Test description**
 

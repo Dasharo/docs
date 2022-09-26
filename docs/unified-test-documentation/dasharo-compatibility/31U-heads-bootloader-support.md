@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Heads bootloader support
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -11,7 +9,7 @@
 2. Make yourself familiar with
     [Heads installation](../../../variants/talos_2/installation-manual/#heads-installation).
 
-### HDS001.001 Boot into Heads
+## HDS001.001 Boot into Heads
 
 **Test description**
 

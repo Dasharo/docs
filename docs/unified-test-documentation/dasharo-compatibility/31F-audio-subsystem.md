@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Audio subsystem
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -17,7 +15,7 @@
 1. Install the `alsa-utils` package:
     `sudo apt install alsa-utils`.
 
-### AUD001.001 Audio subsystem detection (Ubuntu 22.04)
+## AUD001.001 Audio subsystem detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -53,7 +51,7 @@ ALC293
 Tigerlake HDMI
 ```
 
-### AUD001.002 Audio subsystem detection (Windows 11)
+## AUD001.002 Audio subsystem detection (Windows 11)
 
 **Test description**
 
@@ -101,7 +99,7 @@ Index Default Type      Name
     2    True Recording Microphone (Realtek(R) Audio)
 ```
 
-### AUD002.001 Audio playback (Ubuntu 22.04)
+## AUD002.001 Audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -134,7 +132,7 @@ speaker-test
 
 Sound should be played from the integrated speakers.
 
-### AUD002.002 Audio playback (Windows 11)
+## AUD002.002 Audio playback (Windows 11)
 
 **Test description**
 
@@ -163,7 +161,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-### AUD003.001 Audio capture (Ubuntu 22.04)
+## AUD003.001 Audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -200,7 +198,7 @@ aplay /tmp/test-mic.wav
 
 Recorded audio clip is recorded correctly and played back.
 
-### AUD003.002 Audio capture (Windows 11)
+## AUD003.002 Audio capture (Windows 11)
 
 **Test description**
 
@@ -232,7 +230,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 Audio level bar located in the `Test your microphone` should raise when
 some noise is being created.
 
-### AUD004.001 External headset recognition (Ubuntu 22.04)
+## AUD004.001 External headset recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -284,7 +282,7 @@ amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 : values=off
 ```
 
-### AUD004.002 External headset recognition (Windows 11)
+## AUD004.002 External headset recognition (Windows 11)
 
 **Test description**
 
@@ -328,7 +326,7 @@ Expected result
 `Addtional device properties` field `Jack Information` should not contain the
 phrase `Front Panel 3.5 mm Jack`.
 
-### AUD005.001 External headset audio playback (Ubuntu 22.04)
+## AUD005.001 External headset audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -363,7 +361,7 @@ speaker-test
 
 Sound should be played from the external speakers.
 
-### AUD005.002 External headset audio playback (Windows 11)
+## AUD005.002 External headset audio playback (Windows 11)
 
 **Test description**
 
@@ -394,7 +392,7 @@ recordings by using the external headset speakers.
 
 Sound should be played from the external speakers.
 
-### AUD006.001 External headset audio capture (Ubuntu 22.04)
+## AUD006.001 External headset audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -450,7 +448,7 @@ aplay /tmp/test-mic.wav
 2. During playback of the second recording, all noise that was made for DUT
     should be quiet or not heard.
 
-### AUD006.002 External headset audio capture (Windows 11)
+## AUD006.002 External headset audio capture (Windows 11)
 
 **Test description**
 

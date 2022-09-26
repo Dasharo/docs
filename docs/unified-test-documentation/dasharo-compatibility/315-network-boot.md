@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Network Boot
 
-## Test cases
-
-### PXE001.001 iPXE network boot
+## PXE001.001 iPXE network boot
 
 **Test description**
 

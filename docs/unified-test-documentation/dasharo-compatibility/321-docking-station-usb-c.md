@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Docking station USB-C
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### DUC001.001 USB Type-C laptop charging (Ubuntu 22.04)
+## DUC001.001 USB Type-C laptop charging (Ubuntu 22.04)
 
 **Test description**
 
@@ -60,7 +58,7 @@ Example output:
 Charging
 ```
 
-### DUC001.002 USB Type-C laptop charging (Windows 11)
+## DUC001.002 USB Type-C laptop charging (Windows 11)
 
 **Test description**
 

@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Firmware update using fwupd
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -18,7 +16,7 @@
 1. Make yourself familiar with
     [Updating firmware using fwupd](../../common-coreboot-docs/fwupd_usage.md)
 
-### FFW001.001 Firmware update by using fwupd
+## FFW001.001 Firmware update by using fwupd
 
 **Test description**
 

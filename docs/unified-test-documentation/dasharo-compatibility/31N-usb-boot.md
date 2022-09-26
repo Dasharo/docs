@@ -1,8 +1,6 @@
 # Dasharo Compatibility: USB Boot
 
-## Test cases
-
-### UBT001.001 USB detect and boot after coldboot
+## UBT001.001 USB detect and boot after coldboot
 
 **Test description**
 
@@ -36,7 +34,7 @@ to specify the platform and connection stability.
 The `Debian GNU/Linux` is visible and confirms successful boot into OS after
 coldboot.
 
-### UBT002.001 USB detect and boot after warmboot
+## UBT002.001 USB detect and boot after warmboot
 
 **Test description**
 
@@ -69,7 +67,7 @@ the platform and connection stability.
 The `Debian GNU/Linux` is visible and confirms successful boot into OS after
 warmboot.
 
-### UBT003.001 USB detect and boot after system reboot
+## UBT003.001 USB detect and boot after system reboot
 
 **Test description**
 

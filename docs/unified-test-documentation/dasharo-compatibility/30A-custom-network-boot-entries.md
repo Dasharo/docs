@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Custom Network Boot entries
 
-## Test cases
-
-### CNB001.002 Only one iPXE in boot menu
+## CNB001.002 Only one iPXE in boot menu
 
 **Test description**
 
