@@ -1,8 +1,6 @@
 # Dasharo Performance: Device boot measure
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### DBM001.001 Device boot measure after coldboot (Ubuntu 22.04)
+## DBM001.001 Device boot measure after coldboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -51,7 +49,7 @@ results and specify the platform stability.
 The output of the command should contain the information about duration of
 all boot stages.
 
-### DBM002.001 Device boot measure after warmboot (Ubuntu 22.04)
+## DBM002.001 Device boot measure after warmboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -86,7 +84,7 @@ results and specify the platform stability.
 The output of the command should contain the information about duration of
 all boot stages.
 
-### DBM003.001 Device boot measure after reboot (Ubuntu 22.04)
+## DBM003.001 Device boot measure after reboot (Ubuntu 22.04)
 
 **Test description**
 
