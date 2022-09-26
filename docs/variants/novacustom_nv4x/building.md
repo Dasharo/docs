@@ -30,7 +30,7 @@ git clone https://review.coreboot.org/coreboot.git
 Navigate to the source code directory and checkout to the desired revision:
 
 > Replace the REVISION with one of the:
-> - `novacustom_nv4x/release` for the latest released version
+> - `clevo/release` for the latest released version
 > - `novacustom_nv4x_vVERSION` (e.g. `v1.2.1`) for the given release
 
 ```bash

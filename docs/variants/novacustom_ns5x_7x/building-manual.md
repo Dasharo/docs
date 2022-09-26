@@ -31,7 +31,7 @@ The easiest way to build coreboot is to use the official Docker image.
 1. Checkout to the desired Dasharo revision:
 
     > Replace the REVISION with one of the:
-    > - `novacustom_ns5x/release` for the latest released version
+    > - `clevo/release` for the latest released version
     > - `novacustom_ns5x_vVERSION` (e.g. `v1.0.0`) for the given release
 
     ```bash
