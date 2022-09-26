@@ -1,6 +1,6 @@
 # Dasharo Compatibility: UEFI Shell
 
-### USH001.001 UEFI Shell
+## USH001.001 UEFI Shell
 
 **Test description**
 
