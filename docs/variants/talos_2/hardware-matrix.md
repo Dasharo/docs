@@ -14,7 +14,8 @@ coreboot port on the Talos II platform.
 | **RAM**                        | Crucial CT8G4RF88266                                          |
 | **Flash memory**               | Micron MT25QL512ABB8ESF-0SIT                                  |
 | **Network**                    | Local network wired connection                                |
-| **Attached devices**           | SanDisk USB 3.2Gen1 16 GB                                     |
+| **Attached devices**           | 1. SanDisk USB 3.2Gen1 16 GB                                  |
+|                                | 2. Logitech, Inc. Keyboard K120                               |
 | **Ethernet**                   | 2x Broadcom BCM5719                                           |
 | **Power Supply**               | Corsair TX550M                                                |
 | **Power Control**              | Sonoff S20 switch                                             |
