@@ -9,7 +9,7 @@ be accessed from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -154,7 +154,7 @@ be accessed from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**

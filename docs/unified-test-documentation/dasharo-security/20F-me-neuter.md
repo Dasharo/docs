@@ -1,6 +1,6 @@
 # Dasharo Security: ME neuter
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -21,12 +21,12 @@ This test aims to verify that ME neuter function works correctly.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
