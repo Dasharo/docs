@@ -11,7 +11,7 @@ to specify the platform and connection stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
@@ -45,7 +45,7 @@ the platform and connection stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
@@ -78,7 +78,7 @@ platform and connection stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**

@@ -1,6 +1,6 @@
 # Dasharo Compatibility: Display ports and LCD support
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -22,7 +22,7 @@ during firmware execution phase.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -47,12 +47,12 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -74,12 +74,12 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -101,12 +101,12 @@ This test aims to verify initialization of the external HDMI display in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 2. Connect an HDMI cable to the DUT and a display.
 
 **Test steps**
@@ -130,12 +130,12 @@ This test aims to verify initialization of the external HDMI display in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 2. Connect a HDMI cable to the DUT and a display.
 
 **Test steps**
@@ -158,7 +158,7 @@ during firmware execution phase.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -185,12 +185,12 @@ in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
@@ -215,12 +215,12 @@ display in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
@@ -243,7 +243,7 @@ display during firmware execution phase.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -270,12 +270,12 @@ This test aims to verify initialization of the external VGA in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 2. Connect a video input connector to the VGA and a display.
 
 **Test steps**
@@ -299,12 +299,12 @@ This test aims to verify initialization of the external VGA in the OS.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 2. Connect a video input connector to the VGA and a display.
 
 **Test steps**
@@ -327,7 +327,7 @@ execution phase.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 

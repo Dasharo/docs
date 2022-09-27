@@ -1,6 +1,6 @@
 # Dasharo Compatibility: Firmware update using fwupd
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -25,12 +25,12 @@ using fwupd demon.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md).
 
 **Test steps**

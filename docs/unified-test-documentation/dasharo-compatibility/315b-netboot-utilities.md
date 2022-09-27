@@ -1,6 +1,6 @@
 # Dasharo Compatibility: Network boot utilities
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -16,11 +16,11 @@ available and its content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -53,11 +53,11 @@ available and its content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -102,11 +102,11 @@ content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -132,11 +132,11 @@ content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -166,11 +166,11 @@ network interface and booting from selected adress.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -205,11 +205,11 @@ is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -241,11 +241,11 @@ from it.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 

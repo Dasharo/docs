@@ -1,6 +1,6 @@
 # Dasharo Compatibility: SD Card Reader
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -23,12 +23,12 @@ can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -58,12 +58,12 @@ can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -99,12 +99,12 @@ can be used from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -138,12 +138,12 @@ can be used from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 

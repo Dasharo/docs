@@ -10,7 +10,7 @@ according to the defined values.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -64,7 +64,7 @@ according to the defined values.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `BOOT_MENU_KEY` = `F7`
 
 **Test setup**

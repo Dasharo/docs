@@ -1,7 +1,7 @@
 
 # Dasharo Compatibility: NVIDIA Graphics support
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -23,12 +23,12 @@ initialized and can be detected by the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -56,12 +56,12 @@ initialized and can be detected by the operating system
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. Install the driver for the graphics card (GTX 1650) from
     [the official page](https://www.nvidia.com/).
 
@@ -96,12 +96,12 @@ and the card powers on only while it's used.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. Install the package `mesa-utils` with the following command:
 
     ```bash
@@ -153,12 +153,12 @@ and the card powers on only while it's used.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. Install the driver for the graphics card (GTX 1650) from
     [the official page](https://www.nvidia.com/).
 1. Download and extract `gputest` from [Geeks3D](https://geeks3d.com/gputest).

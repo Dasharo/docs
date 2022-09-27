@@ -1,6 +1,6 @@
 # Dasharo Compatibility: Custom Boot Order
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -16,11 +16,11 @@ posibility to boot from other sources.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -62,11 +62,11 @@ posibility to boot from other sources.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 

@@ -1,6 +1,6 @@
 # Dasharo Compatibility: FreeBSD support
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -18,12 +18,12 @@ the DUT and works properly.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = FreeBSD 13
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 

@@ -1,6 +1,6 @@
 # Dasharo Compatibility: Firmware flashing using Dasharo Tools Suite
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -19,12 +19,12 @@ firmware by using Dasharo Tools Suite (DTS).
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `{PATH}` = individual path to a specific binary.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md).
 
 **Test steps**
@@ -82,11 +82,11 @@ firmware by using Dasharo Tools Suite (DTS).
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md).
 
 **Test steps**

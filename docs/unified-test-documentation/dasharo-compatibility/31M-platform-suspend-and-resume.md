@@ -10,7 +10,7 @@ re-done several times to specify the platform stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**

@@ -1,6 +1,6 @@
 # Dasharo compatibility: USB HID and MSC Support
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -22,7 +22,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -52,12 +52,12 @@ labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -86,12 +86,12 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -135,7 +135,7 @@ by the firmware and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -162,12 +162,12 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. Install `libinput-tools` on the DUT.
 1. Connect the external USB keyboard using the USB port.
 
@@ -210,12 +210,12 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 1. Connect the external USB keyboard using the USB port.
 
 **Test steps**

@@ -9,7 +9,7 @@ via the Operating System slot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**

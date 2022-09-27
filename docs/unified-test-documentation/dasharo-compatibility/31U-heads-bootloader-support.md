@@ -1,6 +1,6 @@
 # Dasharo Compatibility: Heads bootloader support
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -18,11 +18,11 @@ bootloader.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 

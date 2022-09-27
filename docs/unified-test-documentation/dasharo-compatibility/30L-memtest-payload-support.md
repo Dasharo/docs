@@ -9,7 +9,7 @@ This test aims to verify that the Memtest entry is available in DUT boot
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -35,7 +35,7 @@ This test aims to verify that the DUT enters the Memtestboot option.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -62,7 +62,7 @@ This test aims to verify that the Memtest starts does not hang under DUT.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -90,7 +90,7 @@ This test aims to verify that DUT refreshes Memtest properly.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -118,7 +118,7 @@ This test aims to verify that DUT refreshes Memtest properly.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -144,7 +144,7 @@ The `Memtest86+` is visible before and after pressing `l`.
 
 This test aims to verify that DUT completes Memtest.
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 

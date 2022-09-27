@@ -1,6 +1,6 @@
 # Dasharo Compatibility: Debian Stable and Ubuntu LTS support
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -21,7 +21,7 @@ on USB storage attached to the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -46,7 +46,7 @@ from USB storage attached to the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -74,7 +74,7 @@ installed on USB storage attached to the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -99,7 +99,7 @@ from USB storage attached to the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -127,7 +127,7 @@ on the hard disk on the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -153,7 +153,7 @@ the hard disk on the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -181,7 +181,7 @@ installed on the hard disk on the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -207,7 +207,7 @@ from the hard disk on the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 

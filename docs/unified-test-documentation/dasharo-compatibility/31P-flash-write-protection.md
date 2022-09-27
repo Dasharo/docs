@@ -1,6 +1,6 @@
 # Dasharo Security: Flash write protection
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -22,12 +22,12 @@ mechanism.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -95,12 +95,12 @@ hardware write protection on the DUT.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the [Common](#test-cases-common-documentation) section.
 
 **Test steps**
 

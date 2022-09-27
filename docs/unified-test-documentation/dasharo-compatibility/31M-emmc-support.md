@@ -8,7 +8,7 @@ This test aims to verify detection of the eMMC driver via the Operating System.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
