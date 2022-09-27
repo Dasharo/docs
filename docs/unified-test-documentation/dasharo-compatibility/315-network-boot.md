@@ -2,12 +2,12 @@
 
 ## Test cases
 
-### PXE001.001 iPXE network boot
+### PXE001.001 Dasharo Network Boot is available
 
 **Test description**
 
-This test aims to verify that the DUT is capable of network booting from a PXE
-server.
+This test aims to verify that the `iPXE Network boot` option is available and
+whether you are entered to `Dasharo Network Boot Menu` after selecting it.
 
 **Test configuration data**
 
@@ -23,15 +23,155 @@ server.
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
 1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
-1. Press `Ctrl+B` when prompted to stop iPXE from booting automatically.
-1. Type in `dhcp` to obtain an IP address.
-1. Type in `chain --autofree http://boot.netboot.xyz/` to load a boot menu
-1. Enter the "Live CDs" submenu using the arrow keys and Enter.
-1. Select `Debian` -> `Debian Live 11 (bullseye)` -> `Debian 11 Gnome` and
-    press Enter.
 
 **Expected result**
 
-1. The iPXE application boots successfully.
-1. iPXE obtains an IP address.
-1. iPXE boots an `Debian 11` from netboot.xyz.
+1. The `iPXE Network boot` option is available.
+1. After selecting the `iPXE Network boot` option you should enter to
+    `Dasharo Network Boot Menu`.
+
+### PXE002.001 Dasharo network boot menu boot options order is correct
+
+**Test description**
+
+This test aims to verify that `Dasharo Network Boot Menu` contains all the
+options and that they are listed in the correct order.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+
+**Expected result**
+
+`Dasharo Network Boot Menu` contains all the options and they are organized in
+the following order:
+
+```bash
+Autoboot
+Dasharo Tools Suite
+OS installation
+iPXE Shell
+```
+
+### PXE003.001 Autoboot option is available and works correctly
+
+**Test description**
+
+This test aims to verify that the `Autoboot` option in
+`Dasharo Network Boot Menu` works properlly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. Select the `Autoboot` option using the arrow keys and press `Enter`.
+
+**Expected result**
+
+TBD
+
+### PXE004.001 DTS option is available and works correctly
+
+**Test description**
+
+This test aims to verify that the `Dasharo Tools Suite` option in
+`Dasharo Network Boot Menu` allows to boot into DTS.
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+1. Procees with the
+    [Requirements for DTS](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#requirements).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. Select the `Dasharo Tools Suite` option using the arrow keys and press
+    `Enter`.
+
+**Expected result**
+
+After a while DTS menu should appear.
+
+### PXE005.001 OS installation option is available and works correctly
+
+**Test description**
+
+TBD
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. Select the `OS installation` option using the arrow keys and press `Enter`.
+
+**Expected result**
+
+TBD
+
+### PXE006.001 iPXE shell option is available and works correctly
+
+**Test description**
+
+TBD
+
+**Test configuration data**
+
+1. `FIRMWARE` = coreboot
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. TBD
+1. Type in `dhcp` to obtain an IP address.
+1. Type in `chain --autofree http://boot.netboot.xyz/` to load a boot menu
+1. TBD
+
+**Expected result**
+
+TBD
