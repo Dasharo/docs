@@ -1,8 +1,6 @@
 # Dasharo Security: BIOS lock support
 
-## Test cases
-
-### BLS001.001 BIOS lock support (Ubuntu 22.04)
+## BLS001.001 BIOS lock support (Ubuntu 22.04)
 
 **Test description**
 
@@ -12,7 +10,7 @@ flashrom.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**

@@ -1,8 +1,6 @@
 # Dasharo Compatibility: M.2 automatic SATA/NVMe switching support
 
-## Test cases
-
-### MSS001.001 M.2 automatic SATA/NVMe switching support (Ubuntu 22.04)
+## MSS001.001 M.2 automatic SATA/NVMe switching support (Ubuntu 22.04)
 
 **Test description**
 
@@ -11,7 +9,7 @@ via the Operating System slot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**

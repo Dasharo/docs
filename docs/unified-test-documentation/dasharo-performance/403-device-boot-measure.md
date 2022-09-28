@@ -1,8 +1,6 @@
 # Dasharo Performance: Device boot measure
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### DBM001.001 Device boot measure after coldboot (Ubuntu 22.04)
+## DBM001.001 Device boot measure after coldboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -25,12 +23,13 @@ results and specify the platform stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -51,7 +50,7 @@ results and specify the platform stability.
 The output of the command should contain the information about duration of
 all boot stages.
 
-### DBM002.001 Device boot measure after warmboot (Ubuntu 22.04)
+## DBM002.001 Device boot measure after warmboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -61,12 +60,13 @@ results and specify the platform stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -86,7 +86,7 @@ results and specify the platform stability.
 The output of the command should contain the information about duration of
 all boot stages.
 
-### DBM003.001 Device boot measure after reboot (Ubuntu 22.04)
+## DBM003.001 Device boot measure after reboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -96,12 +96,13 @@ the results and specify the platform stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

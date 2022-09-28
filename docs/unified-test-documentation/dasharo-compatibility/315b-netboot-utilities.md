@@ -1,15 +1,13 @@
 # Dasharo Compatibility: Network boot utilities
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup#firmware).
 
-### NBT001.001 Netboot is available
+## NBT001.001 Netboot is available
 
 **Test description**
 
@@ -18,11 +16,12 @@ available and its content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -46,7 +45,7 @@ available and its content is right.
        Advanced
     ```
 
-### NBT002.001 OS Selection & Utilities is available
+## NBT002.001 OS Selection & Utilities is available
 
 **Test description**
 
@@ -55,11 +54,12 @@ available and its content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -95,7 +95,7 @@ available and its content is right.
 
     ```
 
-### NBT003.001 iPXE boot is available
+## NBT003.001 iPXE boot is available
 
 **Test description**
 
@@ -104,11 +104,12 @@ content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -125,7 +126,7 @@ content is right.
 1. After selecting the `iPXE Boot` option the autoboot procedure should be
     started.
 
-### NBT004.001 iPXE shell is available
+## NBT004.001 iPXE shell is available
 
 **Test description**
 
@@ -134,11 +135,12 @@ content is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -159,7 +161,7 @@ content is right.
     iPXE>
     ```
 
-### NBT005.001 iPXE shell works correctly
+## NBT005.001 iPXE shell works correctly
 
 **Test description**
 
@@ -168,11 +170,12 @@ network interface and booting from selected adress.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -198,7 +201,7 @@ network interface and booting from selected adress.
 1. Communication interface configuration procedure should be successful.
 1. DTS boot menu should appear.
 
-### NBT006.001 Advanced option is available
+## NBT006.001 Advanced option is available
 
 **Test description**
 
@@ -207,11 +210,12 @@ is right.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -234,7 +238,7 @@ is right.
        Exit
     ```
 
-### NBT007.001 Change netboot URL works correctly
+## NBT007.001 Change netboot URL works correctly
 
 **Test description**
 
@@ -243,11 +247,12 @@ from it.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

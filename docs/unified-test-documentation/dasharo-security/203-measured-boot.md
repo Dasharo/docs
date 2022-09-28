@@ -1,8 +1,6 @@
 # Dasharo Security: Measured Boot support
 
-## Test cases
-
-### MBO001.001 Measured Boot support (Ubuntu 22.04)
+## MBO001.001 Measured Boot support (Ubuntu 22.04)
 
 **Test description**
 
@@ -14,7 +12,7 @@ TPM.a.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**

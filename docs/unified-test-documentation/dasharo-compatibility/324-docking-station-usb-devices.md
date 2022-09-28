@@ -1,8 +1,6 @@
 # Dasharo compatibility: Docking station USB devices
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -17,7 +15,7 @@
 1. The docking station connected to the USB-C port.
 1. The `USB_STICK` connected to the docking station.
 
-### DUB001.001 USB devices recognition (firmware)
+## DUB001.001 USB devices recognition (firmware)
 
 **Test description**
 
@@ -26,11 +24,12 @@ station are recognized correctly by the `FIRMWARE`.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -42,7 +41,7 @@ station are recognized correctly by the `FIRMWARE`.
 
 The `USB_STICK` is available which confirms successful recognition.
 
-### DUB001.002 USB devices recognition (Ubuntu 22.04)
+## DUB001.002 USB devices recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -51,12 +50,13 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -79,7 +79,7 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 1. After each device is disconnected from the USB port, a USB device entry
     in `lsusb` command output should disappear.
 
-### DUB001.003 USB devices recognition (Windows 11)
+## DUB001.003 USB devices recognition (Windows 11)
 
 **Test description**
 
@@ -88,12 +88,13 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -129,7 +130,7 @@ be displayed. The list should contain the `USB_STICK`, which is plug in.
         OK         USB             USB Mass Storage Device
     ```
 
-### DUB002.001 USB keyboard recognition (firmware)
+## DUB002.001 USB keyboard recognition (firmware)
 
 **Test description**
 
@@ -139,11 +140,12 @@ according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. The external USB keyboard connected to the docking station.
 
 **Test steps**
@@ -156,7 +158,7 @@ according to their labels.
 
 1. All menus can be entered using the external USB keyboard.
 
-### DUB002.002 USB keyboard detection (Ubuntu 22.04)
+## DUB002.002 USB keyboard detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -166,12 +168,13 @@ according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install the `libinput-tools` package: `sudo apt install libinput-tools`.
 1. Connect the external USB keyboard using the USB port.
 
@@ -205,7 +208,7 @@ according to their labels.
    their labels.
 1. Key combinations are detected correctly.
 
-### DUB002.003 USB keyboard recognition (Windows 11)
+## DUB002.003 USB keyboard recognition (Windows 11)
 
 **Test description**
 
@@ -214,12 +217,13 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Connect the external USB keyboard using the USB port.
 
 **Test steps**

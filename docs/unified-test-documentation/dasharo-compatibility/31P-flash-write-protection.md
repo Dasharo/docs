@@ -1,8 +1,6 @@
 # Dasharo Security: Flash write protection
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Make yourself familiar with
     [SPI hardware write protection](../../../variants/asus_kgpe_d16/spi-wp/).
 
-### HWP001.001 Hardware flash write protection support
+## HWP001.001 Hardware flash write protection support
 
 **Test description**
 
@@ -24,12 +22,13 @@ mechanism.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -88,7 +87,7 @@ Available write protection ranges:
 	start=0x00000000 length=0x00800000 (all)
 ```
 
-### HWP002.001 Hardware flash write protection enable / disable
+## HWP002.001 Hardware flash write protection enable / disable
 
 **Test description**
 
@@ -97,12 +96,13 @@ hardware write protection on the DUT.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

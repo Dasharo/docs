@@ -1,8 +1,6 @@
 # Dasharo Compatibility: NVMe support
 
-## Test cases
-
-### NVM001.001 NVMe support (firmware)
+## NVM001.001 NVMe support (firmware)
 
 **Test description**
 
@@ -11,7 +9,7 @@ detect NVMe disk in the M.2 slot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -29,7 +27,7 @@ detect NVMe disk in the M.2 slot.
 
 1. The NVMe disk should be listed on the bootable devices list.
 
-### NVM001.002 NVMe support (Ubuntu 22.04)
+## NVM001.002 NVMe support (Ubuntu 22.04)
 
 **Test description**
 
@@ -38,7 +36,7 @@ the M.2 slot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -70,7 +68,7 @@ sudo mount | grep 'on / '
 /dev/nvme* on / tpe ext4 (rw,relatime,errors=remount-ro)
 ```
 
-### NVM001.003 NVMe support in OS (Windows 11)
+## NVM001.003 NVMe support in OS (Windows 11)
 
 **Test description**
 
@@ -79,7 +77,7 @@ M.2 slot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**

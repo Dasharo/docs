@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Docking station USB-C
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### DUC001.001 USB Type-C laptop charging (Ubuntu 22.04)
+## DUC001.001 USB Type-C laptop charging (Ubuntu 22.04)
 
 **Test description**
 
@@ -25,12 +23,13 @@ Thunderbolt 4 port.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -60,7 +59,7 @@ Example output:
 Charging
 ```
 
-### DUC001.002 USB Type-C laptop charging (Windows 11)
+## DUC001.002 USB Type-C laptop charging (Windows 11)
 
 **Test description**
 
@@ -70,12 +69,13 @@ Thunderbolt 4 port.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Network Boot
 
-## Test cases
-
-### PXE001.001 iPXE network boot
+## PXE001.001 iPXE network boot
 
 **Test description**
 
@@ -11,7 +9,7 @@ server.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
