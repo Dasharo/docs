@@ -1,15 +1,13 @@
 # Dasharo Compatibility: Custom Boot Order
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-### CBO001.001 Custom boot order (SeaBIOS)
+## CBO001.001 Custom boot order (SeaBIOS)
 
 **Test description**
 
@@ -18,11 +16,12 @@ posibility to boot from other sources.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -55,7 +54,7 @@ Select boot device:
 7. Payload [memtest]
 ```
 
-### CBO001.002 Custom boot order (edk2)
+## CBO001.002 Custom boot order (edk2)
 
 **Test description**
 
@@ -64,11 +63,12 @@ posibility to boot from other sources.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

@@ -1,8 +1,6 @@
 # Dasharo Performance: CPU temperature measure
 
-## Test cases
-
-### Common
+## Common
 
 **Test setup**
 
@@ -14,7 +12,7 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Install `lm-sensors` package: `sudo apt install lm-sensors`.
 
-### CPT001.001 CPU temperature without load (Ubuntu 22.04)
+## CPT001.001 CPU temperature without load (Ubuntu 22.04)
 
 **Test description**
 
@@ -28,7 +26,8 @@ booting is not higher than the maximum allowed temperature.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -61,7 +60,7 @@ Displayed temperature should be not higher than displayed high and
 critical temperatures. Also the temperature should be not higher than
 temperature declared by the DUT producer.
 
-### CPT002.001 CPU temperature during stress test (Ubuntu 22.04)
+## CPT002.001 CPU temperature during stress test (Ubuntu 22.04)
 
 **Test description**
 
@@ -75,7 +74,8 @@ than the maximum allowed temperature during stress test.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install the `stress-ng` package: `sudo apt install stress-ng`.
 
 **Test steps**

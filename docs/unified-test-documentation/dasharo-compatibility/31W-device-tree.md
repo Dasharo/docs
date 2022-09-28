@@ -1,8 +1,6 @@
 # Dasharo compatibility: Device tree
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### DVT001.001 Node with coreboot exists
+## DVT001.001 Node with coreboot exists
 
 **Test description**
 
@@ -24,12 +22,13 @@ Tree.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Debian 11.0
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -53,7 +52,7 @@ dedicated for coreboot. Example output:
 00000000: 636f 7265 626f 6f74 00                   coreboot
 ```
 
-### DVT002.001 Memory for coreboot is reserved (Ubuntu 22.04)
+## DVT002.001 Memory for coreboot is reserved (Ubuntu 22.04)
 
 **Test description**
 
@@ -62,12 +61,13 @@ coreboot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Debian 11.0
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

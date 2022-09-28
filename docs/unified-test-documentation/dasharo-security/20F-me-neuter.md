@@ -1,8 +1,6 @@
 # Dasharo Security: ME neuter
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### MNE001.001 ME neuter support (Ubuntu 22.04)
+## MNE001.001 ME neuter support (Ubuntu 22.04)
 
 **Test description**
 
@@ -23,12 +21,13 @@ This test aims to verify that ME neuter function works correctly.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

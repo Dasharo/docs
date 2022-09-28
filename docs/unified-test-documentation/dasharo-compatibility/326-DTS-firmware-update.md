@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Firmware flashing using Dasharo Tools Suite
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -12,7 +10,7 @@
 1. Make yourself familiar with
     [Bootable over network](../../../common-coreboot-docs/dasharo_tools_suite/#bootable-over-network).
 
-### FDT001.001 Flash firmware by using Dasharo Tools Suite
+## FDT001.001 Flash firmware by using Dasharo Tools Suite
 
 **Test description**
 
@@ -21,12 +19,13 @@ firmware by using Dasharo Tools Suite (DTS).
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `{PATH}` = individual path to a specific binary.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md).
 
 **Test steps**
@@ -75,7 +74,7 @@ Example output:
 Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
 
-### FDT002.001 Firmware update using fwupd in Dasharo Tools Suite
+## FDT002.001 Firmware update using fwupd in Dasharo Tools Suite
 
 **Test description**
 
@@ -84,11 +83,12 @@ firmware by using Dasharo Tools Suite (DTS).
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. [Disable Secure Boot](../../unified-test-documentation/dasharo-security/206-secure-boot.md).
 
 **Test steps**

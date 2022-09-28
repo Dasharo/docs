@@ -201,7 +201,7 @@ This test aims to verify that the `iPXE Shell` option in
 After configuring the network interfaces, connecting to the server and booting,
 `netboot.xyz` menu should appear.
 
-## PXE001.001 iPXE network boot
+## PXE007.001 iPXE network boot
 
 **Test description**
 

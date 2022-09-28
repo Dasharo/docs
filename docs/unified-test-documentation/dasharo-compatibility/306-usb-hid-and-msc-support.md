@@ -1,8 +1,6 @@
 # Dasharo compatibility: USB HID and MSC Support
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### USB001.001 USB devices detection (firmware)
+## USB001.001 USB devices detection (firmware)
 
 **Test description**
 
@@ -24,7 +22,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -44,7 +42,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 1. Flash drive entry is listed in the boot menu.
 
-### USB001.002 USB devices detection in OS (Ubuntu 22.04)
+## USB001.002 USB devices detection in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -54,12 +52,13 @@ labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -79,7 +78,7 @@ labels.
 1. After each device is connected to the USB port, a new USB device entry
     in `lsusb` command output should appear.
 
-### USB001.003 USB devices detection in OS (Windows 11)
+## USB001.003 USB devices detection in OS (Windows 11)
 
 **Test description**
 
@@ -88,12 +87,13 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -128,7 +128,7 @@ be displayed. All devices' status should be `OK`.
     OK         USB             USB Mass Storage Device
     ```
 
-### USB002.001 USB keyboard detection (firmware)
+## USB002.001 USB keyboard detection (firmware)
 
 **Test description**
 
@@ -137,7 +137,7 @@ by the firmware and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -155,7 +155,7 @@ by the firmware and all basic keys work according to their labels.
 
 1. All menus can be entered using the external USB keyboard.
 
-### USB002.002 USB keyboard detection (Ubuntu 22.04)
+## USB002.002 USB keyboard detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -164,12 +164,13 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install `libinput-tools` on the DUT.
 1. Connect the external USB keyboard using the USB port.
 
@@ -203,7 +204,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    their labels.
 1. Key combinations are detected correctly.
 
-### USB002.003 USB keyboard detection (Windows 11)
+## USB002.003 USB keyboard detection (Windows 11)
 
 **Test description**
 
@@ -212,12 +213,13 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Connect the external USB keyboard using the USB port.
 
 **Test steps**

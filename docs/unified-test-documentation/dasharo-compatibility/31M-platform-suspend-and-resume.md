@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Platform suspend and resume
 
-## Test cases
-
-### SUSP001.001 Platform suspend and resume
+## SUSP001.001 Platform suspend and resume
 
 **Test description**
 
@@ -12,7 +10,7 @@ re-done several times to specify the platform stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = `Debian 11.0`
 
 **Test setup**

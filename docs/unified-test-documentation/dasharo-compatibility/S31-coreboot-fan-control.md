@@ -1,8 +1,6 @@
 # Dasharo Compatibility: coreboot Fan Control
 
-## Test cases
-
-### FAN001.001 Check CPU entry temperature and CPU fan speed
+## FAN001.001 Check CPU entry temperature and CPU fan speed
 
 **Test description**
 
@@ -11,7 +9,7 @@ available.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
@@ -42,7 +40,7 @@ available.
 There are visible data for `fan1` and `temp7` which represents CPU fan speed and
 CPU temperature.
 
-### FAN001.002 Check if increasing CPU temperature increases CPU fan speed
+## FAN001.002 Check if increasing CPU temperature increases CPU fan speed
 
 **Test description**
 
@@ -51,7 +49,7 @@ temperature.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 

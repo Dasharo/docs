@@ -1,8 +1,6 @@
 # Dasharo Compatibility: USB-C/Thunderbolt support with charging and display
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### UTC001.001 USB Type-A charging capability
+## UTC001.001 USB Type-A charging capability
 
 **Test description**
 
@@ -24,12 +22,13 @@ connected smartphone.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -48,7 +47,7 @@ connected smartphone.
 1. The smartphone should indicate that it's charging when connected to either
     USB Type-A port.
 
-### UTC002.001 Thunderbolt 4 USB Type-C charging capability
+## UTC002.001 Thunderbolt 4 USB Type-C charging capability
 
 **Test description**
 
@@ -57,12 +56,13 @@ a connected smartphone.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -77,7 +77,7 @@ a connected smartphone.
 
 1. The smartphone should indicate that it's charging.
 
-### UTC003.001 USB Type-C PD laptop charging (Ubuntu 22.04)
+## UTC003.001 USB Type-C PD laptop charging (Ubuntu 22.04)
 
 **Test description**
 
@@ -86,12 +86,13 @@ supply connected to the Thunderbolt 4 port.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -106,7 +107,7 @@ supply connected to the Thunderbolt 4 port.
 
 1. The battery indicator should indicate that the laptop is currently charging.
 
-### UTC003.002 USB Type-C PD laptop charging (Windows 11)
+## UTC003.002 USB Type-C PD laptop charging (Windows 11)
 
 **Test description**
 
@@ -115,12 +116,13 @@ supply connected to the Thunderbolt 4 port.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -138,7 +140,7 @@ supply connected to the Thunderbolt 4 port.
 
 1. The battery indicator should indicate that the laptop is currently charging.
 
-### UTC004.001 USB Type-C Display output (Ubuntu 22.04)
+## UTC004.001 USB Type-C Display output (Ubuntu 22.04)
 
 **Test description**
 
@@ -147,12 +149,13 @@ the Thunderbolt 4 USB Type-C port.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -170,7 +173,7 @@ the Thunderbolt 4 USB Type-C port.
 1. The monitor connected to the laptop via the Thunderbolt 4 port should power
    on and display video from the laptop.
 
-### UTC004.002 USB Type-C Display output (Windows 11)
+## UTC004.002 USB Type-C Display output (Windows 11)
 
 **Test description**
 
@@ -179,12 +182,13 @@ the Thunderbolt 4 USB Type-C port.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
