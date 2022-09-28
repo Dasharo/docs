@@ -1,8 +1,6 @@
 # Dasharo compatibility: Docking station detect
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -16,7 +14,7 @@
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. The docking station connected to the USB-C port.
 
-### DUD001.001 Docking station detection after coldboot (Ubuntu 22.04)
+## DUD001.001 Docking station detection after coldboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -27,12 +25,13 @@ connection stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -61,7 +60,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-### DUD002.001 Docking station detection after warmboot (Ubuntu 22.04)
+## DUD002.001 Docking station detection after warmboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -71,12 +70,13 @@ may be re-done several times to specify the platform and connection stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -104,7 +104,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-### DUD003.001 Docking station detection after reboot (Ubuntu 22.04)
+## DUD003.001 Docking station detection after reboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -114,7 +114,7 @@ re-done several times to specify the platform and connection stability.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**

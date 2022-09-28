@@ -1,8 +1,6 @@
 # Dasharo Performance: Platform stability
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-### STB001.001 Verify if no reboot occurs in the firmware
+## STB001.001 Verify if no reboot occurs in the firmware
 
 **Test description**
 
@@ -24,11 +22,12 @@ after a certain time.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -42,7 +41,7 @@ after a certain time.
 
 Platform should remain in boot menu without rebooting during whole observation.
 
-### STB001.002 Verify if no reboot occurs in the OS (Ubuntu 22.04)
+## STB001.002 Verify if no reboot occurs in the OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -51,12 +50,13 @@ reset after a certain time.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

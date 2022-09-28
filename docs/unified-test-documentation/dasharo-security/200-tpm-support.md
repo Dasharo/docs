@@ -1,8 +1,6 @@
 # Dasharo Security: TPM Support
 
-## Test cases
-
-### TPM001.001 TPM Support (Ubuntu 22.04)
+## TPM001.001 TPM Support (Ubuntu 22.04)
 
 **Test description**
 
@@ -11,7 +9,7 @@ be accessed from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -147,7 +145,7 @@ PCR-22: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 PCR-23: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 ```
 
-### TPM001.002 TPM Support (Windows 11)
+## TPM001.002 TPM Support (Windows 11)
 
 **Test description**
 
@@ -156,7 +154,7 @@ be accessed from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**

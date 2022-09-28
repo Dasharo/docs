@@ -1,6 +1,6 @@
 # Dasharo Performance: Fan Control
 
-## Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -33,7 +33,8 @@ speed after coldboot.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -77,7 +78,8 @@ speed after warmboot.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -120,7 +122,8 @@ speed after reboot.
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

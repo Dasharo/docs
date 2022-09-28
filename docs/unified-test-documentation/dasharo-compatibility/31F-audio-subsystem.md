@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Audio subsystem
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -17,7 +15,7 @@
 1. Install the `alsa-utils` package:
     `sudo apt install alsa-utils`.
 
-### AUD001.001 Audio subsystem detection (Ubuntu 22.04)
+## AUD001.001 Audio subsystem detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -26,12 +24,13 @@ and can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -53,7 +52,7 @@ ALC293
 Tigerlake HDMI
 ```
 
-### AUD001.002 Audio subsystem detection (Windows 11)
+## AUD001.002 Audio subsystem detection (Windows 11)
 
 **Test description**
 
@@ -62,12 +61,13 @@ and can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install package `AudioDeviceCmdlets`:
 
     ```powershell
@@ -101,7 +101,7 @@ Index Default Type      Name
     2    True Recording Microphone (Realtek(R) Audio)
 ```
 
-### AUD002.001 Audio playback (Ubuntu 22.04)
+## AUD002.001 Audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -110,12 +110,13 @@ recordings.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -134,7 +135,7 @@ speaker-test
 
 Sound should be played from the integrated speakers.
 
-### AUD002.002 Audio playback (Windows 11)
+## AUD002.002 Audio playback (Windows 11)
 
 **Test description**
 
@@ -143,12 +144,13 @@ recordings.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -163,7 +165,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-### AUD003.001 Audio capture (Ubuntu 22.04)
+## AUD003.001 Audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -171,12 +173,13 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -200,7 +203,7 @@ aplay /tmp/test-mic.wav
 
 Recorded audio clip is recorded correctly and played back.
 
-### AUD003.002 Audio capture (Windows 11)
+## AUD003.002 Audio capture (Windows 11)
 
 **Test description**
 
@@ -208,12 +211,13 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -232,7 +236,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 Audio level bar located in the `Test your microphone` should raise when
 some noise is being created.
 
-### AUD004.001 External headset recognition (Ubuntu 22.04)
+## AUD004.001 External headset recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -241,12 +245,13 @@ after plugging in the 3.5 mm jack into the slot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -284,7 +289,7 @@ amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 : values=off
 ```
 
-### AUD004.002 External headset recognition (Windows 11)
+## AUD004.002 External headset recognition (Windows 11)
 
 **Test description**
 
@@ -293,12 +298,13 @@ after plugging in the 3.5 mm jack into the slot.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -328,7 +334,7 @@ Expected result
 `Addtional device properties` field `Jack Information` should not contain the
 phrase `Front Panel 3.5 mm Jack`.
 
-### AUD005.001 External headset audio playback (Ubuntu 22.04)
+## AUD005.001 External headset audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -337,12 +343,13 @@ recordings by using the external headset speakers.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -363,7 +370,7 @@ speaker-test
 
 Sound should be played from the external speakers.
 
-### AUD005.002 External headset audio playback (Windows 11)
+## AUD005.002 External headset audio playback (Windows 11)
 
 **Test description**
 
@@ -372,12 +379,13 @@ recordings by using the external headset speakers.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -394,7 +402,7 @@ recordings by using the external headset speakers.
 
 Sound should be played from the external speakers.
 
-### AUD006.001 External headset audio capture (Ubuntu 22.04)
+## AUD006.001 External headset audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -403,12 +411,13 @@ from external headset.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -450,7 +459,7 @@ aplay /tmp/test-mic.wav
 2. During playback of the second recording, all noise that was made for DUT
     should be quiet or not heard.
 
-### AUD006.002 External headset audio capture (Windows 11)
+## AUD006.002 External headset audio capture (Windows 11)
 
 **Test description**
 
@@ -459,12 +468,13 @@ from external headset.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

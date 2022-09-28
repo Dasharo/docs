@@ -1,8 +1,6 @@
 # Dasharo Compatibility: Docking station audio
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -16,7 +14,7 @@
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 1. The docking station connected to the USB-C port.
 
-### DAU001.001 Audio recognition (Ubuntu 22.04)
+## DAU001.001 Audio recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -25,12 +23,13 @@ after plugging in the 3.5 mm jack into the docking station.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -67,7 +66,7 @@ amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
 : values=off
 ```
 
-### DAU001.002 Audio recognition (Windows 11)
+## DAU001.002 Audio recognition (Windows 11)
 
 **Test description**
 
@@ -76,12 +75,13 @@ after plugging in the 3.5 mm jack into the docking station.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -110,7 +110,7 @@ after plugging in the 3.5 mm jack into the docking station.
     option `Addtional device properties` field `Jack Information` should not
     contain the phrase `Front Panel 3.5 mm Jack`.
 
-### DAU002.001 Audio playback (Ubuntu 22.04)
+## DAU002.001 Audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -120,12 +120,13 @@ station.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -145,7 +146,7 @@ speaker-test
 
 Sound should be played from the external speakers.
 
-### DAU002.002 Audio playback (Windows 11)
+## DAU002.002 Audio playback (Windows 11)
 
 **Test description**
 
@@ -155,12 +156,13 @@ station.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -176,7 +178,7 @@ station.
 
 Sound should be played from the external speakers.
 
-### DAU003.001 Audio capture (Ubuntu 22.04)
+## DAU003.001 Audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -185,12 +187,13 @@ from external headset connected to the docking station.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -231,7 +234,7 @@ aplay /tmp/test-mic.wav
 2. During playback of the second recording, all noise that was made for DUT
     should be quiet or not heard.
 
-### DAU003.002 Audio capture (Windows 11)
+## DAU003.002 Audio capture (Windows 11)
 
 **Test description**
 
@@ -240,12 +243,13 @@ from external headset connected to the docking station.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

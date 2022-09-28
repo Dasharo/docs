@@ -1,6 +1,6 @@
 # Dasharo compatibility: SMBIOS
 
-## Test cases
+## Test cases common documentation
 
 **Test setup**
 
@@ -14,7 +14,7 @@
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 1. Install the `dmidecode` package: `sudo apt-get install dmidecode`.
 
-### DMI001.001 Verify the serial number
+## DMI001.001 Verify the serial number
 
 **Test description**
 
@@ -24,12 +24,13 @@ according to the
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -46,7 +47,7 @@ according to the
 
 1. The fields should be filled in according to the Dasharo SMBIOS guidelines.
 
-### DMI002.001 Verify the firmware version
+## DMI002.001 Verify the firmware version
 
 **Test description**
 
@@ -56,12 +57,13 @@ according to the
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -78,7 +80,7 @@ according to the
 
 1. The fields should be filled in according to the Dasharo SMBIOS guidelines.
 
-### DMI003.001 Verify the firmware product name
+## DMI003.001 Verify the firmware product name
 
 **Test description**
 
@@ -88,12 +90,13 @@ correctly according to the
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -118,7 +121,7 @@ correctly according to the
 
 1. The fields should be filled in according to the Dasharo SMBIOS guidelines.
 
-### DMI004.001 Verify the firmware release date
+## DMI004.001 Verify the firmware release date
 
 **Test description**
 
@@ -128,12 +131,13 @@ correctly according to the
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -151,7 +155,7 @@ correctly according to the
 
 1. The field should be filled in according to the Dasharo SMBIOS guidelines.
 
-### DMI005.001 Verify the firmware manufacturer
+## DMI005.001 Verify the firmware manufacturer
 
 **Test description**
 
@@ -161,12 +165,13 @@ correctly according to the
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -192,7 +197,7 @@ correctly according to the
 
 1. The fields should be filled in according to the Dasharo SMBIOS guidelines.
 
-### DMI006.001 Verify the firmware vendor
+## DMI006.001 Verify the firmware vendor
 
 **Test description**
 
@@ -202,12 +207,13 @@ according to the
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -224,7 +230,7 @@ according to the
 
 1. The field should be filled in according to the Dasharo SMBIOS guidelines.
 
-### DMI007.001 Verify the firmware family
+## DMI007.001 Verify the firmware family
 
 **Test description**
 
@@ -234,12 +240,13 @@ according to the
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -256,7 +263,7 @@ according to the
 
 1. The field should be filled in according to the Dasharo SMBIOS guidelines.
 
-### DMI008.001 Verify the firmware type
+## DMI008.001 Verify the firmware type
 
 **Test description**
 
@@ -265,12 +272,13 @@ according to the [Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/s
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

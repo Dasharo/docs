@@ -1,8 +1,6 @@
 # Dasharo Compatibility: UEFI Shell
 
-## Test cases
-
-### USH001.001 UEFI Shell
+## USH001.001 UEFI Shell
 
 **Test description**
 
@@ -11,7 +9,7 @@ UEFI Shell application.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 

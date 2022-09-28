@@ -1,8 +1,6 @@
 # Dasharo Compatibility: miniPCIe slot verification
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### MWL001.001 Wireless card detection (Ubuntu 22.04)
+## MWL001.001 Wireless card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -24,12 +22,13 @@ and can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -53,7 +52,7 @@ The output of the command should contain the line:
 The exact name and revision may be different depending on hardware
 configuration.
 
-### MWL001.002 Wireless card detection (Windows 11)
+## MWL001.002 Wireless card detection (Windows 11)
 
 **Test description**
 
@@ -62,12 +61,13 @@ and can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -96,7 +96,7 @@ or a line starting with:
 Intel(R) Wi-Fi 6AX201 160MHz
 ```
 
-### MWL002.001 Wi-Fi scanning (Ubuntu 22.04)
+## MWL002.001 Wi-Fi scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -105,12 +105,13 @@ correctly and can be used from within the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Make sure to have any Wi-Fi signal available.
 
 **Test steps**
@@ -147,7 +148,7 @@ IN-USE  BSSID              SSID                    MODE   CHAN  RATE        SIGN
         XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
 ```
 
-### MWL002.002 Wi-Fi scanning (Windows 11)
+## MWL002.002 Wi-Fi scanning (Windows 11)
 
 **Test description**
 
@@ -156,12 +157,13 @@ correctly and can be used from within the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Make sure to have any Wi-Fi signal available
 
 **Test steps**
@@ -209,7 +211,7 @@ SSID 5 : DIRECT-KRM288x Series
     Encryption              : CCMP
 ```
 
-### MWL003.001 Bluetooth scanning (Ubuntu 22.04)
+## MWL003.001 Bluetooth scanning (Ubuntu 22.04)
 
 **Test description**
 
@@ -218,12 +220,13 @@ correctly and can be used from within the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Enable Bluetooth and make it discoverable in any device nearby DUT.
 
 **Test steps**
@@ -261,7 +264,7 @@ Device XX:XX:XX:XX:XX:XX Device 5
 Device XX:XX:XX:XX:XX:XX Device 6
 ```
 
-### MWL003.002 Bluetooth scanning (Windows 11)
+## MWL003.002 Bluetooth scanning (Windows 11)
 
 **Test description**
 
@@ -270,12 +273,13 @@ correctly and can be used from within the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Enable Bluetooth and make it discoverable in any device nearby DUT
 
 **Test steps**
@@ -295,7 +299,7 @@ correctly and can be used from within the operating system.
 
 Available Bluetooth devices should appear in the `Add a device` window.
 
-### MWL004.001 LTE card detection (Ubuntu 22.04)
+## MWL004.001 LTE card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -304,12 +308,13 @@ operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Plug the LTE card into miniPCIe slot.
 
 **Test steps**

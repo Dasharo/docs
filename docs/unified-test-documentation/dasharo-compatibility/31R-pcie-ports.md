@@ -1,8 +1,6 @@
 # Dasharo Compatibility: PCI Express ports support
 
-## Test cases
-
-### Common
+## Test cases common documentation
 
 **Test setup**
 
@@ -15,7 +13,7 @@
 4. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-### PEX001.001 PCI Express card detection (Ubuntu 22.04)
+## PEX001.001 PCI Express card detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -24,12 +22,13 @@ correctly and can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 2. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Plug the PCI Express extension card to the tested slot.
 
 **Test steps**
@@ -53,7 +52,7 @@ The output of the command should contain the plugged device name:
 
 The exact name and revision may be different depending on hardware configuration.
 
-### PEX001.002 PCI Express card detection (Windows 11)
+## PEX001.002 PCI Express card detection (Windows 11)
 
 **Test description**
 
@@ -62,12 +61,13 @@ and can be detected from the operating system.
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 2. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
-1. Proceed with the [Common](#common) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Plug the PCI Express extension card to the tested slot.
 
 **Test steps**

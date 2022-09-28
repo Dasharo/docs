@@ -1,8 +1,6 @@
 # Dasharo compatibility: Custom Logo
 
-## Test cases
-
-### CLG001.001 Custom boot logo
+## CLG001.001 Custom boot logo
 
 **Test description**
 
@@ -11,7 +9,7 @@ This test aims to verify that the DUT is configured to display the specified
 
 **Test configuration data**
 
-1. `FIRMWARE` = coreboot
+1. `FIRMWARE` = Dasharo
 
 **Test setup**
 
