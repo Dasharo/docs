@@ -13,7 +13,7 @@
 **Test description**
 
 This test aims to verify, that the `iPXE Network boot` is available in the boot
-menu and whether, after selecting this boot option `Dasharo Network Boot Menu`
+menu and whether, after selecting this boot option, `Dasharo Network Boot Menu`
 is displayed.
 
 **Test configuration data**
@@ -61,8 +61,8 @@ needed options which are in the correct order.
 
 **Expected result**
 
-`Dasharo Network Boot Menu` contains all of the needed options which are in the
-following order:
+1. `Dasharo Network Boot Menu` contains all of the needed options.
+1. `Dasharo Network Boot Menu` options are in order as follows:
 
 ```bash
 Autoboot
@@ -92,16 +92,16 @@ This test aims to verify that the `Autoboot` option in
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
 1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
-1. Select the `Autoboot` option using the arrow keys and press `Enter`.
+1. Select the `Autoboot` option using the arrow keys, then press `Enter`.
 
 **Expected result**
 
 If the server assigned to the `Autoboot` option is available in the local
-network after a while menu should appear.
+network, the boot menu should appear.
 
 If the server assigned to the `Autoboot` option isn't available in the local
 network, selecting this option will result in configuring the network interfaces
-and in the case of no access to the server, return to the setup menu.
+and return to the `Setup Menu`.
 
 ## PXE004.001 DTS option is available and works correctly
 
@@ -126,12 +126,13 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
 1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
-1. Select the `Dasharo Tools Suite` option using the arrow keys and press
+1. Select the `Dasharo Tools Suite` option using the arrow keys, then press
     `Enter`.
 
 **Expected result**
 
-After connecting to the server and booting into DTS, the DTS menu should appear.
+After configuring the network interfaces, connecting to the server and booting,
+`Dasharo Tools Suite` menu should appear.
 
 ## PXE005.001 OS installation option is available and works correctly
 
@@ -158,8 +159,8 @@ This test aims to verify that the `OS installation` option in
 
 **Expected result**
 
-After a while netboot.xyz server menu should appear. You should be able to move
-in the menu using the arrow keys and select the option using `Enter`.
+After configuring the network interfaces, connecting to the server and booting,
+`netboot.xyz` menu should appear.
 
 ## PXE006.001 iPXE shell option is available and works correctly
 
@@ -189,7 +190,7 @@ This test aims to verify that the `iPXE Shell` option in
     dhcp
     ```
 
-1. Load a netboot.xyz server menu by executing the following command:
+1. Load `netboot.xyz` server menu by executing the following command:
 
     ```bash
     chain --autofree http://boot.netboot.xyz/
@@ -197,5 +198,5 @@ This test aims to verify that the `iPXE Shell` option in
 
 **Expected result**
 
-After a while netboot.xyz server menu should appear. You should be able to move
-in the menu using the arrow keys and select the option using `Enter`.
+After configuring the network interfaces, connecting to the server and booting,
+`netboot.xyz` menu should appear.
