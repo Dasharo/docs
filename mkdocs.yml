@@ -284,4 +284,5 @@ nav:
   - 'Projects':
       - 'TrenchBoot Anti Evil Maid': projects/trenchboot-aem.md
   - 'Glossary': glossary.md
+  - 'How to guides': howto.md
   - 'Ways you can help us': ways-you-can-help-us.md
