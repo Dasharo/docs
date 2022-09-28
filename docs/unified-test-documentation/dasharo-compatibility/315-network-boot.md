@@ -1,11 +1,20 @@
 # Dasharo Compatibility: Network Boot
 
+## Test cases common documentation
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+1. Device should be connected to the Internet by using an Ethernet cable.
+
 ## PXE001.001 Dasharo Network Boot is available
 
 **Test description**
 
-This test aims to verify that the `iPXE Network boot` option is available and
-whether you are entered to `Dasharo Network Boot Menu` after selecting it.
+This test aims to verify, that the `iPXE Network boot` is available in the boot
+menu and whether, after selecting this boot option `Dasharo Network Boot Menu`
+is displayed.
 
 **Test configuration data**
 
@@ -14,7 +23,7 @@ whether you are entered to `Dasharo Network Boot Menu` after selecting it.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -25,15 +34,15 @@ whether you are entered to `Dasharo Network Boot Menu` after selecting it.
 **Expected result**
 
 1. The `iPXE Network boot` option is available.
-1. After selecting the `iPXE Network boot` option you should enter to
-    `Dasharo Network Boot Menu`.
+1. After selecting the `iPXE Network boot`, the `Dasharo Network Boot Menu`
+    should be displayed.
 
 ## PXE002.001 Dasharo network boot menu boot options order is correct
 
 **Test description**
 
-This test aims to verify that `Dasharo Network Boot Menu` contains all the
-options and that they are listed in the correct order.
+This test aims to verify that `Dasharo Network Boot Menu` contains all of the
+needed options which are in the correct order.
 
 **Test configuration data**
 
@@ -42,7 +51,7 @@ options and that they are listed in the correct order.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -52,8 +61,8 @@ options and that they are listed in the correct order.
 
 **Expected result**
 
-`Dasharo Network Boot Menu` contains all the options and they are organized in
-the following order:
+`Dasharo Network Boot Menu` contains all of the needed options which are in the
+following order:
 
 ```bash
 Autoboot
@@ -67,7 +76,7 @@ iPXE Shell
 **Test description**
 
 This test aims to verify that the `Autoboot` option in
-`Dasharo Network Boot Menu` works properly.
+`Dasharo Network Boot Menu` works correctly.
 
 **Test configuration data**
 
@@ -76,7 +85,7 @@ This test aims to verify that the `Autoboot` option in
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -87,12 +96,12 @@ This test aims to verify that the `Autoboot` option in
 
 **Expected result**
 
-If the server assigned to the `Autoboot` option is available in our network
-after a while menu should appear.
+If the server assigned to the `Autoboot` option is available in the local
+network after a while menu should appear.
 
-If the server assigned to the `Autoboot` option isn't available in our network,
-selecting this option will result in configuring the network interfaces and in
-the case of no access to the server, return to the setup menu.
+If the server assigned to the `Autoboot` option isn't available in the local
+network, selecting this option will result in configuring the network interfaces
+and in the case of no access to the server, return to the setup menu.
 
 ## PXE004.001 DTS option is available and works correctly
 
@@ -108,7 +117,7 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Proceed with the
     [Requirements for DTS](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#requirements).
 
@@ -122,7 +131,7 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 
 **Expected result**
 
-After a while, the DTS menu should appear.
+After connecting to the server and booting into DTS, the DTS menu should appear.
 
 ## PXE005.001 OS installation option is available and works correctly
 
@@ -138,7 +147,7 @@ This test aims to verify that the `OS installation` option in
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -157,7 +166,7 @@ in the menu using the arrow keys and select the option using `Enter`.
 **Test description**
 
 This test aims to verify that the `iPXE Shell` option in
-`Dasharo Network Boot Menu` works properly.
+`Dasharo Network Boot Menu` works correctly.
 
 **Test configuration data**
 
@@ -166,7 +175,7 @@ This test aims to verify that the `iPXE Shell` option in
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
