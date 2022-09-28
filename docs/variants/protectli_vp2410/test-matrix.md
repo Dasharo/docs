@@ -12,7 +12,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | EFI001.001                           |
 | 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.003, DSP003.001, DSP003.003 |
-| 4.   | [Network boot][PXE]                               | PXE           | All                                  |
+| 4.   | [Network boot][PXE]                               | PXE           | PXE007.001                           |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |

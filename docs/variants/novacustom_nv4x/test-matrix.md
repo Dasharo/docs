@@ -24,7 +24,7 @@ subjected from before the release of the new binary.
 | 11.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
 | 12.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
 | 13.  | [USB-C/Thunderbolt][UTC]                          | UTC           | All                                  |
-| 14.  | [Network boot][PXE]                               | PXE           | All                                  |
+| 14.  | [Network boot][PXE]                               | PXE           | without PXE007.001                   |
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |

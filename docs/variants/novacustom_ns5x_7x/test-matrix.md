@@ -33,6 +33,7 @@ subjected before the release of the new binary.
 | 22.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 23.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
 | 23.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
+| 24.  | [Network boot][PXE]                                    | PXE           | PXE007.001                           |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -58,6 +59,7 @@ subjected before the release of the new binary.
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
 [ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
+[PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
 
 ## Module: Dasharo security
 
