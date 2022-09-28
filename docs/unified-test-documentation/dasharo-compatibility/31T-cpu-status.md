@@ -26,7 +26,8 @@ Check whether the mounted on the DUT CPU works.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -50,7 +51,8 @@ Check whether the mounted on the DUT CPU works.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -74,7 +76,8 @@ Check whether all declared for the DUT cache levels are enabled.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -124,7 +127,8 @@ Check whether all declared for the DUT cache levels are enabled.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -174,7 +178,8 @@ Check whether the DUT has multiple CPU support.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -218,7 +223,8 @@ Check whether the DUT has multiple CPU support.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -255,7 +261,8 @@ Check whether the DUT has multi-core support.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -299,7 +306,8 @@ Check whether the DUT has multi-core support.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

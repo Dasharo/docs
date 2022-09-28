@@ -30,7 +30,8 @@ connection stability.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -74,7 +75,8 @@ may be re-done several times to specify the platform and connection stability.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

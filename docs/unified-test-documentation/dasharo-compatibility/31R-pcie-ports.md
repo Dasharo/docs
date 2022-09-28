@@ -27,7 +27,8 @@ correctly and can be detected from the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Plug the PCI Express extension card to the tested slot.
 
 **Test steps**
@@ -65,7 +66,8 @@ and can be detected from the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Plug the PCI Express extension card to the tested slot.
 
 **Test steps**

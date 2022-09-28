@@ -27,7 +27,8 @@ mechanism.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -100,7 +101,8 @@ hardware write protection on the DUT.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 

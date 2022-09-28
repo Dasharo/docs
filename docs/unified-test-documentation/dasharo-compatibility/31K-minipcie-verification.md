@@ -27,7 +27,8 @@ and can be detected from the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -65,7 +66,8 @@ and can be detected from the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -108,7 +110,8 @@ correctly and can be used from within the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Make sure to have any Wi-Fi signal available.
 
 **Test steps**
@@ -159,7 +162,8 @@ correctly and can be used from within the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Make sure to have any Wi-Fi signal available
 
 **Test steps**
@@ -221,7 +225,8 @@ correctly and can be used from within the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Enable Bluetooth and make it discoverable in any device nearby DUT.
 
 **Test steps**
@@ -273,7 +278,8 @@ correctly and can be used from within the operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Enable Bluetooth and make it discoverable in any device nearby DUT
 
 **Test steps**
@@ -307,7 +313,8 @@ operating system.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Plug the LTE card into miniPCIe slot.
 
 **Test steps**

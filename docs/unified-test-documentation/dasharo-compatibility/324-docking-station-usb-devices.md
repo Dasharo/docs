@@ -28,7 +28,8 @@ station are recognized correctly by the `FIRMWARE`.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -54,7 +55,8 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -91,7 +93,8 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -141,7 +144,8 @@ according to their labels.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. The external USB keyboard connected to the docking station.
 
 **Test steps**
@@ -169,7 +173,8 @@ according to their labels.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install the `libinput-tools` package: `sudo apt install libinput-tools`.
 1. Connect the external USB keyboard using the USB port.
 
@@ -217,7 +222,8 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Connect the external USB keyboard using the USB port.
 
 **Test steps**

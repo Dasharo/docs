@@ -52,7 +52,8 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -79,7 +80,8 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -106,7 +108,8 @@ This test aims to verify initialization of the external HDMI display in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Connect an HDMI cable to the DUT and a display.
 
 **Test steps**
@@ -135,7 +138,8 @@ This test aims to verify initialization of the external HDMI display in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Connect a HDMI cable to the DUT and a display.
 
 **Test steps**
@@ -190,7 +194,8 @@ in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
@@ -220,7 +225,8 @@ display in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
@@ -275,7 +281,8 @@ This test aims to verify initialization of the external VGA in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Connect a video input connector to the VGA and a display.
 
 **Test steps**
@@ -304,7 +311,8 @@ This test aims to verify initialization of the external VGA in the OS.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 2. Connect a video input connector to the VGA and a display.
 
 **Test steps**

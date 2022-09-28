@@ -57,7 +57,8 @@ labels.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -91,7 +92,8 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -167,7 +169,8 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install `libinput-tools` on the DUT.
 1. Connect the external USB keyboard using the USB port.
 
@@ -215,7 +218,8 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 **Test setup**
 
-1. Proceed with the [Common](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Connect the external USB keyboard using the USB port.
 
 **Test steps**
