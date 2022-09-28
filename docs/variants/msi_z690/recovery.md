@@ -19,6 +19,8 @@ platform.
 
 ### External flashing with programmer
 
+#### RTE
+
 In this case, using external programmer is necessary. We are using
 [RTE](https://3mdeb.com/open-source-hardware/#rte)
 here.
@@ -44,6 +46,131 @@ flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
 ```
 
 * First boot after the recovery process is significantly longer
+
+### CH341A
+
+#### Prerequisites
+
+1. CH341A kit with 1.8V level-shifter. Can be bought on e.g. [Amazon](https://www.amazon.com/programmer-ch341a-Programmer-Adapter-Converter/dp/B07WP9FKZ2)
+
+    ![](/images/ch341a_rec/ch341a_kit.jpg)
+
+2. WSON8 probe. Can be bought from China on Aliexpress or eBay.
+
+    ![](/images/ch341a_rec/wson8_probe.jpg)
+
+3. USB2.0 Female-Male extension cord 0.5m or longer (optional)
+
+    ![](/images/ch341a_rec/usb_ext.jpg)
+
+4. Machine with Linux and flashrom.
+
+#### Connection
+
+First start with assembling the CH341A and the 1.8V adapter. Pay attention to
+which holes you attach the adapter. You should use the holes marked as 25XX
+(closer to the USB plug):
+
+![](/images/ch341a_rec/ch341a.jpg)
+
+Place the 1.8V adapter in the holes and lock it with the lever. Be sure that
+the arrow on the adapter is facing the black lever (opposite side of USB plug):
+
+![](/images/ch341a_rec/adapter_assemble.jpg)
+
+Now take the breakout board with pin headers:
+
+![](/images/ch341a_rec/pin_breakout.jpg)
+
+and plug it int other 1.8V adapter, be sure that numbers 1-4 on the breakout
+match the numbers 1 and 4 on the adapter:
+
+![](/images/ch341a_rec/adapter_shifter.jpg)
+
+Numbers should be visible on the upper side after assembling:
+
+![](/images/ch341a_rec/breakout_assemble.jpg)
+
+Next, take the WSON8 probe and locate the white dot on the needles side (it
+will indicate the first reference pin, although you may use any corner pin you
+want):
+
+![](/images/ch341a_rec/wson8_probe2.jpg)
+
+Check which wire is connecting to this pin (the connection should be 1 to 1).
+In my case it is white wire and it will be used as reference to connect the
+wires to the breakout board:
+
+![](/images/ch341a_rec/wire_attach2.jpg)
+
+The wires should follow the same order of colors as on the probe (keep them
+straight, do not cross). Repeat with the other 4 wires on the other side of the
+probe:
+
+![](/images/ch341a_rec/wire_attach1.jpg)
+
+Now the connection is ready. Time to locate the flash chip of the board.
+
+#### Flashing
+
+Connect the CH341A USB plug to the host machine which will be doing the
+flashing process (optionally use the USB extension cord for convenience).
+Locate the flash chip on the MSI PRO Z690-A DDR4 board:
+
+![](/images/ch341a_rec/msi_z690a.jpg)
+
+Locate the first pin on the flash chip (marked with a circle on the flash chip
+package and indicated by number 1 printed on the board - red circle):
+
+![](/images/ch341a_rec/msi_flash.jpg)
+
+Attach the WSON8 probe matching the first pin of the probe (white wire) and
+first pin of the flash chip:
+
+![](/images/ch341a_rec/probe_attach.jpg)
+
+Now on the Linux machine check if the flash is detected using a sample command
+
+```bash
+sudo flashrom -p ch341a_spi -r firmware.bin
+```
+
+You should see something like this:
+
+```bash
+flashrom v1.2-567-gf4eb405 on Linux 5.19.9-200.fc36.x86_64 (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+Found Winbond flash chip "W25Q256.W" (32768 kB, SPI) on ch341a_spi.
+Reading flash... done.
+```
+
+You don't need to wait for the command completion and interrupt it with Ctrl+C
+shortcut, it just serves as a confirmation of good connection. If yo udecide to
+interrupt it, reset the CH341A programmer bu unpluging and repluging it to USB
+port. Now stabilize your hand holding the WSON8 probe on the flash chip and
+invoke the real flashing command (e.g. if your original/working firmware backup
+is saved as `firmware_backup.bin`):
+
+```bash
+sudo flashrom -p ch341a_spi -w firmware_backup.bin
+```
+
+Note that USB programmers are pretty slow, the whole operation make take
+several minutes (can be 10-15 minutes in worst case). At the end of operation
+you should see:
+
+```bash
+flashrom v1.2-567-gf4eb405 on Linux 5.19.9-200.fc36.x86_64 (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+Found Winbond flash chip "W25Q256.W" (32768 kB, SPI) on ch341a_spi.
+Reading old flash chip contents... done.
+Erasing and writing flash chip... Erase/write done.
+Verifying flash... VERIFIED.
+```
 
 ## SMBIOS unique data recovery
 
