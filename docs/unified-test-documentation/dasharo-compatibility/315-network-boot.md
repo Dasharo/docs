@@ -175,10 +175,11 @@ This test aims to verify that the `iPXE Shell` option in
 1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
 1. Select the `iPXE Shell` option using the arrow keys and press `Enter`.
 1. Obtain an IP address by executing the following command:
-    
+
     ```bash
     dhcp
     ```
+
 1. Load a netboot.xyz server menu by executing the following command:
 
     ```bash
