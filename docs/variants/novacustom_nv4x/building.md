@@ -15,40 +15,52 @@ This documents describes the procedure for compiling coreboot for NovaCustom NV4
 
 The easiest way to build coreboot is to use the official Docker image.
 
-Obtain the image:
+1. Obtain the image:
 
-```bash
-docker pull coreboot/coreboot-sdk:0ad5fbd48d
-```
+    ```bash
+    docker pull coreboot/coreboot-sdk:0ad5fbd48d
+    ```
 
-Clone the coreboot repository:
+1. Clone the coreboot repository:
 
-```bash
-git clone https://review.coreboot.org/coreboot.git
-```
+    ```bash
+    git clone https://review.coreboot.org/coreboot.git
+    ```
 
-Navigate to the source code directory and checkout to the desired revision:
+    Navigate to the source code directory and checkout to the desired revision:
 
-> Replace the REVISION with one of the:
-> - `clevo/release` for the latest released version
-> - `novacustom_nv4x_vVERSION` (e.g. `v1.2.1`) for the given release
+    > Replace the REVISION with:
+    >
+    > - `clevo/release` for the latest released version
+    > - `novacustom_nv4x_vVERSION` (e.g. `v1.3.0`) for the given release
 
-```bash
-cd coreboot
-git remote add dasharo https://github.com/dasharo/coreboot.git
-git submodule update --init --recursive --checkout
-git fetch dasharo
-git checkout REVISION
-```
+    ```bash
+    cd coreboot
+    git remote add dasharo https://github.com/dasharo/coreboot.git
+    git submodule update --init --recursive --checkout
+    git fetch dasharo
+    git checkout REVISION
+    ```
 
-Build the firmware:
+1. Start the coreboot-sdk Docker container:
 
-```bash
-./build.sh build
-```
+    ```bash
+    docker run --rm -it -u $UID \
+       -v $PWD:/home/coreboot/coreboot \
+       -w /home/coreboot/coreboot \
+       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+    ```
+
+1. Build the firmware:
+
+    ```bash
+    cp configs/config.novacustom_ns5x .config
+    make olddefconfig
+    make
+    ```
 
 The resulting coreboot image will be placed in
-`artifacts/dasharo_novacustom_nv4x_VERSION.rom`.
+`build/coreboot.rom`.
 
 **Warning**: Do not run `./build.sh` as root. This command uses docker and should
 be executed as your current user. If you're having trouble running `build.sh`
