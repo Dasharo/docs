@@ -30,9 +30,10 @@ The easiest way to build coreboot is to use the official Docker image.
 
 1. Checkout to the desired Dasharo revision:
 
-    > Replace the REVISION with one of the:
+    > Replace the REVISION with:
+    >
     > - `clevo/release` for the latest released version
-    > - `novacustom_ns5x_vVERSION` (e.g. `v1.0.0`) for the given release
+    > - `novacustom_ns5x_vVERSION` (e.g. `v1.3.0`) for the given release
 
     ```bash
     cd coreboot
@@ -42,14 +43,25 @@ The easiest way to build coreboot is to use the official Docker image.
     git checkout REVISION
     ```
 
+1. Start the coreboot-sdk Docker container:
+
+    ```bash
+    docker run --rm -it -u $UID \
+       -v $PWD:/home/coreboot/coreboot \
+       -w /home/coreboot/coreboot \
+       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+    ```
+
 1. Build the firmware:
 
     ```bash
-    ./build.sh build
+    cp configs/config.novacustom_ns5x .config
+    make olddefconfig
+    make
     ```
 
-    The resulting coreboot image will be placed in
-    `artifacts/dasharo_novacustom_ns5x_VERSION.rom`.
+The resulting coreboot image will be placed in
+`build/coreboot.rom`.
 
 **Warning:** Do not run `./build.``sh` as root. This command uses docker and
 should be executed as your current user. If you're having trouble running
