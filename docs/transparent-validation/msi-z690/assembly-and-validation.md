@@ -18,7 +18,8 @@ specified components in [requirements](#requirements).
 | Enclosure    | SilentiumPC Armis AR1                                           |![Enclosure](images/enclosure.jpg)       |
 
 Additionally, you will need a regular Phillips screwdriver and thermal paste.
-Remember that make all connections in the grounding strap.
+Try not to tighten all the elements to the maximum, as it will make disassembly
+difficult. Remember that make all connections in the grounding strap.
 
 ## Device assembly
 
@@ -56,7 +57,7 @@ working station.
 
 1. Then attach the cooler from above by tightening the two screws. Most likely,
     for this operation, it is necessary to dismantle the fan and restore it
-    after tightening the screws.
+    after tightening the screws. TBD - 3
 
     ![CPU Cooler 2](images/msi_z690_montage_coller.jpg)
 
@@ -96,6 +97,14 @@ working station.
     A detailed description of the connection cable marked `D` can be found in
     the [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
     in section: JFP1, JFP2: Front Panel Connectors.
+    To verify correct connection of the cable marked `D`, you can compare them
+    to the pictures below:
+
+    Connection from the inside:
+    ![In_connection](images/msi_z690_montage_connection_from_inside.png)
+
+    Connection from the outside:
+    ![Out_connection](images/msi_z690_montage_connection_from_outside.png)
 
 1. Connect the speaker to the slot marked before `E`:
 
@@ -106,13 +115,16 @@ working station.
 1. Connect the power supply to the motherboard using the cables marked RE25 for
     connection to the `G` and `H` slots and the cable marked RJ21 to connect the
     `F` slots.
-
+    TBD - 2
     ![Power Supply](images/msi_z690_montage_power_supply.png)
 
+1. Connect the fan from the CPU cooler to the slot marked `I`.
 1. Connect the fan built into the enclosure to the indicated place:
 
     ![Fan](images/msi_z690_montage_fan.jpg)
 
+1. Bundle the cables so that they don't interfere with the fans or other
+    components.
 1. Close the case of the computer.
 
 ### Motherboard assembly only
