@@ -12,8 +12,6 @@
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
-1. Install the `alsa-utils` package:
-    `sudo apt install alsa-utils`.
 
 ## AUD001.001 Audio subsystem detection (Ubuntu 22.04)
 
@@ -117,6 +115,8 @@ recordings.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `alsa-utils` package:
+    `sudo apt install alsa-utils`.
 
 **Test steps**
 
@@ -180,6 +180,8 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `alsa-utils` package:
+    `sudo apt install alsa-utils`.
 
 **Test steps**
 
@@ -226,7 +228,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 1. Log into the system by using the proper login and password.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button and then using the left mouse button
-    click `Open Sound Settings`.
+    click `Sound Settings`.
 1. Locate the `Test your microphone` section and observe it.
 1. Create some noise for the DUT to capture and note the result.
     For example, say something.
@@ -252,6 +254,8 @@ after plugging in the 3.5 mm jack into the slot.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `alsa-utils` package:
+    `sudo apt install alsa-utils`.
 
 **Test steps**
 
@@ -317,7 +321,7 @@ the laptop.
 external device has been connected to the laptop (headset).
 1. Find the `Speakers` icon in the bottom right part of the screen and click it
 using the right mouse button and then using the left mouse button click
-`Open Sound Settings`.
+`Sound Settings`.
 1. Locate `Input` section and click on the `Device properties` option.
 1. In `Device properties` window select option `Additional device properties`.
 1. Locate in `General` the section field named `Jack Information`.
@@ -326,7 +330,7 @@ using the right mouse button and then using the left mouse button click
 1. Select again the `Addtional device properties` option and locate again field
 named `Jack information`.
 
-Expected result
+**Expected result**
 
 1. `Jack Information` field in the first case should show the position
 `Front Panel 3.5 mm Jack`.
@@ -350,6 +354,8 @@ recordings by using the external headset speakers.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `alsa-utils` package:
+    `sudo apt install alsa-utils`.
 
 **Test steps**
 
@@ -418,6 +424,8 @@ from external headset.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `alsa-utils` package:
+    `sudo apt install alsa-utils`.
 
 **Test steps**
 
@@ -485,7 +493,7 @@ from external headset.
     laptop.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button and then using the left mouse button
-    click `Open Sound Settings`.
+    click `Sound Settings`.
 1. Locate the `Test your microphone` section and observe it.
 1. Create some noise for the headset to capture and note the result.
     For example, say something.
@@ -498,3 +506,162 @@ from external headset.
     some noise have been created for the headset.
 1. Audio level bar located in the `Test your microphone` should not raise when
     some noise have been created for the DUT.
+
+## AUD007.001 HDMI Audio recognition (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the output audio is properly assigned after
+connecting the external display using the HDMI cable.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `alsa-utils` package:
+    `sudo apt install alsa-utils`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Connect the external display to the HDMI slot.
+1. Open a terminal window and execute the following command:
+
+```bash
+amixer -c 0 contents | grep -A 2 'HDMI/DP,pcm=3'
+```
+
+1. Disconnect the headset from the laptop.
+1. Execute the following command again:
+
+```bash
+amixer -c 0 contents | grep -A 2 'HDMI/DP,pcm=3'
+```
+
+**Expected result**
+
+1. The output of the first command should not be empty and contains the line:
+
+```text
+: values=on
+```
+
+1. The output of the second command should not be empty and contains the line:
+
+```text
+: values=off
+```
+
+## AUD007.002 HDMI Audio recognition (Windows 11)
+
+**Test description**
+
+This test aims to verify that the output audio is properly assigned after
+connecting the external display using the HDMI cable.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Find the `Speakers` icon in the bottom right part of the screen and click it
+    using the right mouse button and then using the left mouse button click
+    `Sound Settings`.
+1. Locate `All sound device` bar and click on it.
+1. Locate `Output devices`  and `Input devices`section.
+1. Connect the external display to the HDMI slot.
+
+**Expected result**
+
+The connected display should appear in the `Output devices`  and `Input devices`
+section.
+
+## AUD008.001 HDMI audio playback (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the audio subsystem is able to playback audio
+recordings by using the external display connected to HDMI slot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `alsa-utils` package:
+    `sudo apt install alsa-utils`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Connect the external display to the HDMI slot.
+
+1. Open a terminal window and execute the following commands:
+
+```bash
+pacmd set-card-profile 0 output:hdmi-stereo
+pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo  0
+pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 65535
+speaker-test
+```
+
+**Expected result**
+
+Sound should be played from the external display.
+
+## AUD008.002 HDMI audio playback (Windows 11)
+
+**Test description**
+
+This test aims to verify that the audio subsystem is able to playback audio
+recordings by using the external display connected to HDMI slot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Connect the external display to the HDMI slot.
+1. Find the `Speakers` icon in the bottom right part of the screen and click it
+    using the right mouse button and then using the left mouse button click
+    `Sound Settings`.
+1. Locate `All sound device` bar and click on it.
+1. Select the external display position in the `Output devices` section.
+1. Click on `Test` bar in the `Output settings` section.
+
+**Expected result**
+
+Sound should be played from the external display.
