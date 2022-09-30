@@ -72,7 +72,7 @@ subjected before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  | 
+| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
