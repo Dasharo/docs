@@ -12,7 +12,7 @@
 **Test description**
 
 This test aims to verify that the DUT boot from the suitable source, with the
-posibility to boot from other sources.
+possibility to boot from other sources.
 
 **Test configuration data**
 
@@ -59,7 +59,7 @@ Select boot device:
 **Test description**
 
 This test aims to verify that the DUT boot from the suitable source, with the
-posibility to boot from other sources.
+possibility to boot from other sources.
 
 **Test configuration data**
 

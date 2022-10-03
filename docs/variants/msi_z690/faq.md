@@ -43,7 +43,7 @@ information.
 ## What can be the reason of board "bricking"?
 
 The most common reason would be the fact that you DDR memory modules are not
-initializad properly.
+initialized properly.
 
 The other reason might be improper or interrupted installation. Please make
 sure to follow the [Installation Manual](../installation-manual) correctly.

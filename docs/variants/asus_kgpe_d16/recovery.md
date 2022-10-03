@@ -3,7 +3,7 @@
 ## Prequisitions
 
 To proceed with the recovery procedurethe backup with the  vendor firmware will
-be neccesary eg. `backup.rom`.
+be necessary eg. `backup.rom`.
 
 Backup file should be generated before making any changes in device flash
 chip according to documentation in

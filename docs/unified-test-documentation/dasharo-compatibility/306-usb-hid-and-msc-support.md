@@ -65,7 +65,7 @@ labels.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     watch -n1 lsusb
@@ -100,7 +100,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open PowerShell and and run the follwing command:
+1. Open PowerShell and and run the following command:
 
     ```bash
     Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' }
@@ -179,13 +179,13 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the follwing command:
+1. Open a terminal window and run the following command:
 
     ```bash
     lsusb
     ```
 
-1. Run the follwing command in the terminal:
+1. Run the following command in the terminal:
 
     ```bash
     libinput debug-events --show-keycodes

@@ -12,7 +12,7 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Check if package `lm-sensors` is installed and if not, use bellow command in
+1. Check if package `lm-sensors` is installed and if not, use below command in
     the terminal to install:
 
     ```bash

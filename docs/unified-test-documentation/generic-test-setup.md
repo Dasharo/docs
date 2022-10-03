@@ -16,7 +16,7 @@ need to execute the setup actions before each independent case.
     1. or you can build one yourself as shown in the `building` document
         dedicated for platform which is used by you.
 1. Flash `FIRMWARE` binary to the DUT. Device flashing procedure should be
-    carried out in accordance with the guidelines in `Flashing` doucment
+    carried out in accordance with the guidelines in `Flashing` document
     dedicated for platform which is in use.
 
 #### OS installer

@@ -93,7 +93,7 @@ Check whether all declared for the DUT cache levels are enabled.
 
 **Expected result**
 
-The utput of the command should contain information about all cache levels,
+The output of the command should contain information about all cache levels,
 their size and association. Example output:
 
 ```bash

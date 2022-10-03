@@ -84,7 +84,7 @@ and can be detected from the operating system.
 **Expected result**
 
 The output of the command should contain the line with Wi-Fi device, which
-has been phisically mounted in the device.
+has been physically mounted in the device.
 
 Output example:
 

@@ -22,5 +22,5 @@ Each firmware release contains of two parts:
   firmware.
 
 They both interact with each other tightly, so keeping their compatible versions
-in in sync is important. Information on compatiblity should be always explained
+in in sync is important. Information on compatibility should be always explained
 in the [release page](releases.md).

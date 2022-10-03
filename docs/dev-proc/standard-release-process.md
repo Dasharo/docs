@@ -10,7 +10,7 @@ and should be maintained in that way.
 ## Process steps
 
 1. Checkout new branch `<platform>/rel_vX.Y.Z` from recent commit on
-   `<platfrom>/release` - to understand versioning scheme please read
+   `<platform>/release` - to understand versioning scheme please read
    [Versioning](versioning.md) section
 2. Merge current `<platform>/develop` to `<platform>/rel_vX.Y.Z`
 3. Run platform regression test suite
