@@ -1,6 +1,202 @@
 # Dasharo Security: Verified Boot support
 
-## VBO001.001 Verified boot support (firmware)
+## VBO001.001 Generating keys for Verified Boot
+
+**Test description**
+
+This test aims to verify it is possible to generate vboot keys.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Proceed with the
+    [Generating keys prequisites](../../common-coreboot-docs/vboot_signing.md#prerequisites).
+1. Proceed with the
+    [Generating keys](../../common-coreboot-docs/vboot_signing.md#prerequisites).
+
+**Expected result**
+
+The keys will be created in the directory `$PWD/keys/`, i.e. in the `keys/`
+subdirectory in your current directory.
+
+## VBO002.001 Signing image without rebuild
+
+**Test description**
+
+This test aims to verify it is possible to sign firmware image without
+rebuilding.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Proceed with the
+    [Signing image without rebuilding](../../common-coreboot-docs/vboot_signing.md#signing-image-without-rebuilding).
+1. Note the result.
+
+**Expected result**
+
+1. The successful output can look like this:
+
+    ```bash
+    ...
+    INFO: sign_bios_at_end: BIOS image does not have FW_MAIN_B. Signing only FW_MAIN_A
+     - import root_key from /.../keys/root_key.vbpubk: success
+     - import recovery_key from /.../keys/recovery_key.vbpubk: success
+    successfully saved new image to: /.../protectli_vault_cml_v1.0.16_resigned.rom
+    The /.../protectli_vault_cml_v1.0.16.rom was resigned and saved as: /.../protectli_vault_cml_v1.0.16_resigned.rom
+    ```
+
+## VBO003.001 Flashing device with signed firmware
+
+**Test description**
+
+This test aims to verify it is possible to flash and boot DUT with signed
+firmware image.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Localise previously signed firmware image.
+1. Flash DUT with signed firmware accordingly to
+    [Flashing instructions for NV4x](../../variants/novacustom_nv4x/flashing_internal.md),
+    or with [Flashing instructions for NV5x/NV7x](../../variants/novacustom_ns5x_7x/firmware-update.md)
+    appropriate for DUT.
+1. Reboot DUT and note the results.
+
+**Expected result**
+
+1. DUT reboots properly without issues related to firmware signing.
+
+## VBO004.001 Adding keys and building image
+
+**Test description**
+
+This test aims to verify it is possible to generate vboot keys.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Proceed with the
+    [Adding keys to coreboot config](../../common-coreboot-docs/vboot_signing.md#adding-keys-to-the-coreboot-config).
+
+<!---------
+    WIP
+---------->
+
+**Expected result**
+
+## VBO005.001 Flashing device with built firmware
+
+**Test description**
+
+This test aims to verify it is possible to flash and boot DUT with signed
+firmware image.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Localise previously rebuilt and signed firmware image.
+1. Flash DUT with signed firmware accordingly to
+    [Flashing instructions for NV4x](../../variants/novacustom_nv4x/flashing_internal.md),
+    or with [Flashing instructions for NV5x/NV7x](../../variants/novacustom_ns5x_7x/firmware-update.md)
+    appropriate for DUT.
+1. Reboot DUT and note the results.
+
+**Expected result**
+
+1. DUT reboots properly without issues related to firmware signing.
+
+## VBO006.001 Verified boot support (firmware)
 
 **Test description**
 
@@ -27,7 +223,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-## VBO001.002 Verified boot support (Ubuntu 22.04)
+## VBO006.002 Verified boot support (Ubuntu 22.04)
 
 **Test description**
 
@@ -79,7 +275,7 @@ PCR-0 2547cc736e951fa4919853c43ae890861a3b3264000000000000000000000000 SHA256 [V
 PCR-1 e3324765a25f8a59c7c20cc35c1c33a8ab384159d2b40a269246b0b4491cdf89 SHA256 [VBOOT: GBB HWID]
 ```
 
-## VBO002.001 Verified boot: Booting from Slot A (firmware)
+## VBO007.001 Verified boot: Booting from Slot A (firmware)
 
 **Test description**
 
@@ -105,7 +301,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-## VBO002.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
+## VBO007.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
 
 **Test description**
 
@@ -151,7 +347,7 @@ slot A:
 Slot A is selected
 ```
 
-## VBO003.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
+## VBO008.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
 
 **Test description**
 
@@ -216,7 +412,7 @@ VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
 Recovery requested (1009000e)
 ```
 
-## VBO004.001 Recovery boot popup (firmware)
+## VBO009.001 Recovery boot popup (firmware)
 
 **Test description**
 
@@ -261,7 +457,7 @@ command:
 
 Popup with information about recovery mode should be displayed.
 
-## VBO005.001  Recovery boot popup confirmation (firmware)
+## VBO010.001  Recovery boot popup confirmation (firmware)
 
 **Test description**
 
