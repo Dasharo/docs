@@ -38,49 +38,10 @@ This test aims to verify whether it's possible to build firmware locally.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window.
-1. Obtain the Docker image:
-
-    ```bash
-    docker pull coreboot/coreboot-sdk:0ad5fbd48d
-    ```
-
-1. Clone the coreboot repository:
-
-    ```bash
-    git clone https://review.coreboot.org/coreboot.git
-    ```
-
-1. Navigate to the source code directory and checkout to the desired revision:
-
-    > Replace the REVISION with one of the:
-    > - `novacustom_nv4x/release` for the latest released version
-    > - `novacustom_nv4x_vVERSION` (e.g. `v1.2.1`) for the given release
-
-    ```bash
-    cd coreboot
-    git remote add dasharo https://github.com/dasharo/coreboot.git
-    git submodule update --init --recursive --checkout
-    git fetch dasharo
-    git checkout REVISION
-    ```
-
-1. Start the coreboot-sdk Docker container:
-
-    ```bash
-    docker run --rm -it -u $UID \
-       -v $PWD:/home/coreboot/coreboot \
-       -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
-    ```
-
-1. Build the firmware:
-
-    ```bash
-    cp configs/config.novacustom_ns5x .config
-    make olddefconfig
-    make
-    ```
+1. Proceed with the
+    [Building manual for NV4x](../../variants/novacustom_nv4x/building.md),
+    or [Building manual for NV5x/NV7x](../../variants/novacustom_ns5x_7x/building-manual.md)
+    appropriate for DUT.
 
 **Expected result**
 
@@ -111,12 +72,15 @@ This test aims to verify whether it's possible to flash locally built firmware.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Localise loaclly built the `ROM` file (eg. `coreboot/build/coreboot.rom`)
-1. Use below procedure to flash firmware on `nv4x` with the `ROM` file:
-    [Link to procedure](https://docs.dasharo.com/variants/novacustom_nv4x/flashing_internal/)
-1. Run the following command to check firmware version:
+1. Flash DUT with built firmware accordingly to
+    [Flashing instructions for NV4x](../../variants/novacustom_nv4x/flashing_internal.md),
+    or with [Flashing instructions for NV5x/NV7x](../../variants/novacustom_ns5x_7x/firmware-update.md)
+    appropriate for DUT.
+1. Reboot platform.
+1. Use below command to get firmware info:
 
     ```bash
-    dmidecode -t 0
+    sudo dmidecode
     ```
 
 1. Note the results.
@@ -125,7 +89,7 @@ This test aims to verify whether it's possible to flash locally built firmware.
 
 The output of `dmidecode` command should contain information about current
 firmware. The current firmware version should be equal to the binary version,
-which you were flashing.
+which you were building and flashing.
 
 Example output:
 
