@@ -18,7 +18,7 @@
 **Test description**
 
 This test aims to verify whether it's possible to replace logo in existing
-firmware image and flash this firmware on the DUT.
+firmware and after flash it shows properly.
 
 **Test configuration data**
 
