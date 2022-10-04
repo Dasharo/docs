@@ -14,6 +14,39 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
 
+## v1.0.17 - 2022-08-17
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/19YnBLxHw0mae-SQ2xl6BgPeims9hH_oVGwyF70pj9EY/edit#gid=1614315669).
+
+### Added
+
+- [Tools for resigning Vboot images with one RW partition](https://docs.dasharo.com/common-coreboot-docs/vboot_signing/)
+
+### Changed
+
+- Set thermal throttling temperature to 80 degrees
+- Disabled UEFI Secure Boot by default
+
+### Fixed
+
+- Platform rebooting every 56 minutes
+- Incorrect menu labels displayed in network boot menu
+- Built-in audio jack does not work
+
+### Binaries
+
+[protectli_vault_cml_v1.0.17.rom_file][protectli_vault_cml_v1.0.17.rom_file]{.md-button}
+[protectli_vault_cml_v1.0.17.rom_hash][protectli_vault_cml_v1.0.17.rom_hash]{.md-button}
+[protectli_vault_cml_v1.0.17.rom_sig][protectli_vault_cml_v1.0.17.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/388861)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 4.16 revision d662831d](https://github.com/Dasharo/coreboot/tree/d662831d)
+- [edk2 based on 7f90b9cd revision 576aa6a4](https://github.com/Dasharo/edk2/tree/576aa6a4)
+
 ## v1.0.16 - 2022-07-13
 
 Test results for this release can be found
@@ -84,6 +117,9 @@ See how to verify signatures on [asciinema](TBD)
 - [edk2 based on 7f90b9cd revision 7f90b9cd](https://github.com/Dasharo/edk2/tree/7f90b9cd)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[protectli_vault_cml_v1.0.17.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.17/protectli_vault_cml_v1.0.17.rom
+[protectli_vault_cml_v1.0.17.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.17/protectli_vault_cml_v1.0.17.rom.sha256
+[protectli_vault_cml_v1.0.17.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.17/protectli_vault_cml_v1.0.17.rom.sha256.sig
 [v1.0.16_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.16/protectli_vault_cml_v1.0.16.rom
 [v1.0.16_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.16/protectli_vault_cml_v1.0.16.rom.sha256
 [v1.0.16_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.16/protectli_vault_cml_v1.0.16.rom.sha256.sig
