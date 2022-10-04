@@ -34,6 +34,7 @@ subjected before the release of the new binary.
 | 23.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
 | 23.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
 | 24.  | [Network boot][PXE]                                    | PXE           | PXE007.001                           |
+| 26.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -60,6 +61,7 @@ subjected before the release of the new binary.
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
 [ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
+[LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 
 ## Module: Dasharo security
 
