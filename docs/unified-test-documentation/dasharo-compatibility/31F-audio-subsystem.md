@@ -303,7 +303,7 @@ after plugging the 3.5 mm jack into the slot.
 **Test description**
 
 This test aims to verify that the external headset is properly recognized
-after plugging in the 3.5 mm jack into the slot.
+after plugging the 3.5 mm jack into the slot.
 
 **Test configuration data**
 
@@ -327,22 +327,20 @@ after plugging in the 3.5 mm jack into the slot.
 1. Find the `Speakers` icon in the bottom right part of the screen and click it
     using the right mouse button then using the left mouse button click
     `Sound Settings`.
-1. Locate the `Input` section and click on the `Device properties` option.
-1. In the `Device properties` window select the `Additional device properties`
-    option.
+1. Locate the `More sound settings` bar and click on it.
+1. Click on the `Speakers` bar using the right mouse button then using the left
+    mouse button click `Properties`.
 1. Locate in `General` the section field named `Jack Information`.
-1. Close the window `Microphone properties`.
+1. Close the windows `Speakers Properties` and `Sound`.
 1. Disconnect a headset from the laptop.
-1. Select again the `Additional device properties` option and locate again the
-    field named `Jack` information`.
+1. Repeat steps 7-9.
 
 **Expected result**
 
 1. `Jack Information` field in the first case should show the position
     `Front Panel 3.5 mm Jack`.
-1. After disconnecting a headset from the laptop and checking again option
-    `Additional device properties` field `Jack Information` should not contain
-    the phrase `Front Panel 3.5 mm Jack`.
+1. After disconnecting a headset from the laptop and checking again field
+    `Jack Information` should not contain the phrase `Front Panel 3.5 mm Jack`.
 
 ## AUD005.001 External headset audio playback (Ubuntu 22.04)
 
