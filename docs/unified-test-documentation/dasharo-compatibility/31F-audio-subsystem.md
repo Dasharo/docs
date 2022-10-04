@@ -43,9 +43,12 @@ and can be detected from the operating system.
 
 **Expected result**
 
-The output of the command should return a list of detected audio devices:
+The output of the command should return a list of detected audio devices.
+Depending on mounted devices, the output might be different.
 
-```text
+Example output:
+
+```bash
 ALC293
 Tigerlake HDMI
 ```
