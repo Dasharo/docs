@@ -60,15 +60,15 @@ will be shown properly.
 
 **Expected result**
 
-During the DUT booting process custom logo should appear on the screen.
+During the DUT booting process, custom logo should appear on the screen.
 
 ## LCM002.001 Build image with custom logo and flashing firmware
 
 **Test description**
 
-This test aims to verify whether building image with the custom logo is possible
-and, whether after flashing the DUT with the new image, the new logo will be
-shown properly.
+This test aims to verify whether building an image with the custom logo is
+possible and, whether after flashing the DUT with the new image, the new logo
+will be shown properly.
 
 **Test configuration data**
 
@@ -113,14 +113,15 @@ shown properly.
 
 **Expected result**
 
-During the DUT booting process custom logo should appear on the screen.
+During the DUT booting process, custom logo should appear on the screen.
 
 ## LCM003.001 Attempt to flash firmware with improper image
 
 **Test description**
 
-This test aims to verify whether attempt to flash the DUT with firmware with
-improper logo is possible but will result in a fallback to the default logo.
+This test aims to verify whether the attempt to flash the DUT with firmware
+with an improper logo is possible but will result in a fallback to the default
+logo.
 
 **Test configuration data**
 
@@ -166,4 +167,4 @@ improper logo is possible but will result in a fallback to the default logo.
 
 **Expected result**
 
-During the DUT booting process the default logo should appear on the screen.
+During the DUT booting process, the default logo should appear on the screen.
