@@ -142,7 +142,7 @@ key.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `USB device`
+1. Additional  `USB storage` - at least 1GB - for keeping files for booting
 
 **Test setup**
 
