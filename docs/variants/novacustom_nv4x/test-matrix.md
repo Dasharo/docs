@@ -37,6 +37,7 @@ subjected from before the release of the new binary.
 | 24.  | [Docking station USB-C][DUC]                      | DUC           | All                                  |
 | 25.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
 | 26.  | [Firmware update using Dasharo Tools Suite][FDT]  | FDT           | All                                  |
+| 27.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
 | 28.  | [Logo customization functionality][LCM]           | LCM           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -65,6 +66,7 @@ subjected from before the release of the new binary.
 [DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
+[FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 
 ### Module: Dasharo security
@@ -112,6 +114,8 @@ subjected from before the release of the new binary.
 | 23.  | [Docking station USB-C][DUC]                      | DUC           | All                                  |
 | 24.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
 | 25.  | [Firmware update using Dasharo Tools Suite][FDT]  | FDT           | All                                  |
+| 26.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
+| 27.  | [Logo customization functionality][LCM]           | LCM           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -138,6 +142,8 @@ subjected from before the release of the new binary.
 [DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
+[FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
+[LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 
 ### Module: Dasharo security
 
