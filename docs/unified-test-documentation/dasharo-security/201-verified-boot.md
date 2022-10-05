@@ -1,5 +1,16 @@
 # Dasharo Security: Verified Boot support
 
+## Test cases common documentation
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+
 ## VBO001.001 Generating keys for Verified Boot
 
 **Test description**
@@ -14,13 +25,7 @@ This test aims to verify it is possible to generate vboot keys.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -52,13 +57,7 @@ rebuilding.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -97,13 +96,7 @@ firmware image.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -125,7 +118,7 @@ firmware image.
 
 **Test description**
 
-This test aims to verify it is possible to generate vboot keys.
+This test aims to verify it is possible to build firmware with provided keys.
 
 **Test configuration data**
 
@@ -135,13 +128,11 @@ This test aims to verify it is possible to generate vboot keys.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Make yourself familiar with Building manual procedure dedicated for
+    the relevant platform:
+    * [Novacustom NV4x](../../variants/novacustom_nv4x/building.md),
+    * [Novacustom NS5x/7x](../../variants/novacustom_ns5x_7x/building-manual.md).
 
 **Test steps**
 
@@ -150,12 +141,12 @@ This test aims to verify it is possible to generate vboot keys.
 1. Log into the system by using the proper login and password.
 1. Proceed with the
     [Adding keys to coreboot config](../../common-coreboot-docs/vboot_signing.md#adding-keys-to-the-coreboot-config).
-
-<!---------
-    WIP
----------->
+1. Based on the dedicated documentation build firmware.
 
 **Expected result**
+
+The `build` location contains the binary file, which size is equal to the flash
+chip size.
 
 ## VBO005.001 Flashing device with built firmware
 
@@ -172,13 +163,7 @@ firmware image.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -239,13 +224,7 @@ functional.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
     to the DUT.
 1. Disable Secure Boot.
@@ -316,13 +295,7 @@ proceed to boot from Slot A.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
@@ -362,13 +335,7 @@ should revert to booting from the recovery slot.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
@@ -428,13 +395,7 @@ the wrong vboot keys.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Disable Secure Boot.
 1. Obtain `coreboot binary` signed with wrong vboot keys.
 
@@ -472,13 +433,7 @@ allows to proceed to the next booting stages.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Disable Secure Boot.
 1. Obtain `coreboot binary` signed with wrong vboot keys.
 
