@@ -238,8 +238,8 @@ This test verifies that Secure Boot blocks booting a file without a key.
 
 **Expected result**
 
-1. The output of the command doesn't show file content and information about
-    access denied is displayed.
+The output of the command doesn't show file content and information about access
+denied is displayed.
 
 Example output:
 
@@ -290,8 +290,8 @@ key.
 
 **Expected result**
 
-1. The output of the command doesn't show file content and information about
-    access denied is displayed.
+The output of the command doesn't show file content and information about access
+denied is displayed.
 
 Example output:
 
