@@ -15,7 +15,8 @@
 
 **Test description**
 
-This test aims to verify it is possible to generate vboot keys.
+This test aims to verify whether there is a possibility to generate vboot keys
+for signing the firmware.
 
 **Test configuration data**
 
@@ -32,22 +33,21 @@ This test aims to verify it is possible to generate vboot keys.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Proceed with the
-    [Generating keys prequisites](../../common-coreboot-docs/vboot_signing.md#prerequisites).
-1. Proceed with the
-    [Generating keys](../../common-coreboot-docs/vboot_signing.md#prerequisites).
+1. Based on the dedicated documentation
+    [generate the keys](../../common-coreboot-docs/vboot_signing.md#prerequisites).
+1. Check if the keys, after finishing the generating process, are available in
+    the `keys` subdirectory.
 
 **Expected result**
 
-The keys will be created in the directory `$PWD/keys/`, i.e. in the `keys/`
-subdirectory in your current directory.
+The `keys` location contains the generated keys.
 
 ## VBO002.001 Signing image without rebuild
 
 **Test description**
 
-This test aims to verify it is possible to sign firmware image without
-rebuilding.
+This test aims to verify whether there is a possibility to sign the firmware
+image with generated keys without rebuilding.
 
 **Test configuration data**
 
@@ -64,29 +64,34 @@ rebuilding.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Proceed with the
-    [Signing image without rebuilding](../../common-coreboot-docs/vboot_signing.md#signing-image-without-rebuilding).
+1. Localize the keys, which were generated in the `VBO001.001` test case.
+1. Based on the
+    [dedicated documentation](../../common-coreboot-docs/vboot_signing.md#signing-image-without-rebuilding)
+    sign the firmware image with the keys without rebuilding.
 1. Note the result.
 
 **Expected result**
 
-1. The successful output can look like this:
+The output of the last command should contains information that resigning
+procedure was successful.
 
-    ```bash
-    ...
-    INFO: sign_bios_at_end: BIOS image does not have FW_MAIN_B. Signing only FW_MAIN_A
-     - import root_key from /.../keys/root_key.vbpubk: success
-     - import recovery_key from /.../keys/recovery_key.vbpubk: success
-    successfully saved new image to: /.../protectli_vault_cml_v1.0.16_resigned.rom
-    The /.../protectli_vault_cml_v1.0.16.rom was resigned and saved as: /.../protectli_vault_cml_v1.0.16_resigned.rom
-    ```
+Example output:
 
-## VBO003.001 Flashing device with signed firmware
+```bash
+...
+INFO: sign_bios_at_end: BIOS image does not have FW_MAIN_B. Signing only FW_MAIN_A
+ - import root_key from /.../keys/root_key.vbpubk: success
+ - import recovery_key from /.../keys/recovery_key.vbpubk: success
+successfully saved new image to: /.../protectli_vault_cml_v1.0.16_resigned.rom
+The /.../protectli_vault_cml_v1.0.16.rom was resigned and saved as: /.../protectli_vault_cml_v1.0.16_resigned.rom
+```
+
+## VBO003.001 Flashing device with the signed firmware
 
 **Test description**
 
-This test aims to verify it is possible to flash and boot DUT with signed
-firmware image.
+This test aims to verify whether there is a possibility to flash the locally
+signed firmware to the DUT.
 
 **Test configuration data**
 
@@ -103,22 +108,34 @@ firmware image.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Localise previously signed firmware image.
-1. Flash DUT with signed firmware accordingly to
-    [Flashing instructions for NV4x](../../variants/novacustom_nv4x/flashing_internal.md),
-    or with [Flashing instructions for NV5x/NV7x](../../variants/novacustom_ns5x_7x/firmware-update.md)
-    appropriate for DUT.
-1. Reboot DUT and note the results.
+1. Localize the firmware, which was signed in the `VBO002.001` test case.
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware, the following command
+    should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
+    ```
+
+    Otherwise, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    ```
+
+1. Reboot the DUT. and note the results.
 
 **Expected result**
 
-1. DUT reboots properly without issues related to firmware signing.
+The DUT reboots properly without issues related to firmware signing.
 
 ## VBO004.001 Adding keys and building image
 
 **Test description**
 
-This test aims to verify it is possible to build firmware with provided keys.
+This test aims to verify whether there is a possibility to build firmware
+on the local machine, based on `Build manual` procedure dedicated to the
+platform and sign it with the locally generated keys.
 
 **Test configuration data**
 
@@ -139,9 +156,13 @@ This test aims to verify it is possible to build firmware with provided keys.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Proceed with the
-    [Adding keys to coreboot config](../../common-coreboot-docs/vboot_signing.md#adding-keys-to-the-coreboot-config).
+1. Localize the keys, which were generated in the `VBO001.001` test case.
+1. Based on the
+    [dedicated documentation](../../common-coreboot-docs/vboot_signing.md#adding-keys-to-the-coreboot-config)
+    add locally generated keys to the coreboot config.
 1. Based on the dedicated documentation build firmware.
+1. Check if the binary file, after finishing the building process, is available
+    in the `build` subdirectory.
 
 **Expected result**
 
@@ -170,16 +191,26 @@ firmware image.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Localise previously rebuilt and signed firmware image.
-1. Flash DUT with signed firmware accordingly to
-    [Flashing instructions for NV4x](../../variants/novacustom_nv4x/flashing_internal.md),
-    or with [Flashing instructions for NV5x/NV7x](../../variants/novacustom_ns5x_7x/firmware-update.md)
-    appropriate for DUT.
-1. Reboot DUT and note the results.
+1. Localize the firmware, which was built in the `VBO004.001` test case.
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware, the following command
+    should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
+    ```
+
+    Otherwise, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    ```
+
+1. Reboot the DUT. and note the results.
 
 **Expected result**
 
-1. DUT reboots properly without issues related to firmware signing.
+The DUT reboots properly without issues related to firmware signing.
 
 ## VBO006.001 Verified boot support (firmware)
 
