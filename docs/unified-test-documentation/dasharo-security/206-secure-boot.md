@@ -151,8 +151,10 @@ key.
 
 **Test steps**
 
-1. Download the file and the certificate from the
-    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files).
+1. Download the file from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/rAK4qfFeGnSnryD).
+1. Download the certificate from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/sHRH2GeZcbgtpzF).
 1. Place the certificate and the file on the `USB storage`.
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
@@ -215,7 +217,7 @@ This test verifies that Secure Boot blocks booting a file without a key.
 **Test steps**
 
 1. Download the file from the
-    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files).
+    [cloud](https://cloud.3mdeb.com/index.php/s/iCHCE695FgqZpRF).
 1. Place the file on the `USB storage`.
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
@@ -267,7 +269,7 @@ key.
 **Test steps**
 
 1. Download the file from the
-    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files).
+    [cloud](https://cloud.3mdeb.com/index.php/s/rEWZp85ondabxE4).
 1. Place the file on the `USB storage`.
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
