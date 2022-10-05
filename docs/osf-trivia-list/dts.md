@@ -50,4 +50,4 @@ SE updates.
 Please [donate](../../ways-you-can-help-us/#donate-money) using one of
 available methods and contact [3mdeb](mailto:leads@3mdeb.com) or [Dasharo
 Team](mailto:contact@dasharo.com) to let us know about your donation. Minimal
-donatin to access DTS SE with one year update support is 60EUR.
+donating to access DTS SE with one year update support is 60EUR.
