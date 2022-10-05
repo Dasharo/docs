@@ -49,7 +49,7 @@ firmware and after flash it shows properly.
 **Test description**
 
 This test aims to verify whether it's possible to build firmware image from the
-source and flash it on the DUT.
+source and after flash it shows properly.
 
 **Test configuration data**
 
@@ -69,7 +69,7 @@ source and flash it on the DUT.
 1. Proceed with the
     [Build image with custom logo](../../common-coreboot-docs/custom_logo.md#build-image-with-custom-logo)
     section.
-1. Now you can flash the updated firmware image as usual. If you're not updating
+1. Now flash the updated firmware image as usual. If you're not updating
 firmware and just changing the logo, only the BOOTSPLASH region needs to be
 updated. For example:
 
@@ -109,7 +109,7 @@ logo fallback will occur.
     [Build image with custom logo](../../common-coreboot-docs/custom_logo.md#build-image-with-custom-logo)
     section, but use image that doesn't meet
     [Prequsities](../../common-coreboot-docs/custom_logo.md#prerequisites).
-1. Now you can flash the updated firmware image as usual. If you're not updating
+1. Now flash the updated firmware image as usual. If you're not updating
 firmware and just changing the logo, only the BOOTSPLASH region needs to be
 updated. For example:
 
