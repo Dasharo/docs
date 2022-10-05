@@ -77,7 +77,7 @@ methods](../../osf-trivia-list/dts/#how-to-get-dasharo-tools-suite-supporters-ed
 
 ![](../../images/dell_optiplex_uefi_mode.jpg)
 
-* After booting to Dasharo Tools Suite SE load Supperter keys
+* After booting to Dasharo Tools Suite SE load Supporter keys
 * Make sure to submit [Dasharo HCL
   report](../../../common-coreboot-docs/dasharo_tools_suite#dasharo-hcl-report)
 * Enter shell using option `9)`
