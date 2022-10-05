@@ -2,7 +2,7 @@
 
 ## How to get Dasharo Tools Suite Supporters Edition?
 
-DTS SE is availabele only to Dasharo Supporters for personal use. Commercial
+DTS SE is available only to Dasharo Supporters for personal use. Commercial
 use of DTS SE should be discussed directly with [3mdeb](mailto:leads@3mdeb.com)
 or [Dasharo Team](mailto:contact@dasharo.com).
 
