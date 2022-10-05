@@ -5,7 +5,7 @@
 **Test description**
 
 Secure Boot is a verification mechanism for ensuring that code launched by
-firmware is trusted. This test aims to verify that Secure Boot state after
+firmware is trusted. This test aims to verify that the Secure Boot state after
 flashing the platform with the Dasharo firmware is correct.
 
 **Test configuration data**
@@ -28,14 +28,14 @@ flashing the platform with the Dasharo firmware is correct.
 
 **Expected result**
 
-`Secure Boot State` field should inform that the current state of
+The `Secure Boot State` field should inform that the current state of
 Secure Boot is `Disabled`.
 
 ## SBO002.001 UEFI Secure Boot (Ubuntu 22.04)
 
 **Test description**
 
-This test verifies that Secure Boot can be enabled from boot menu and, after
+This test verifies that Secure Boot can be enabled from the boot menu and, after
 the DUT reset, it is seen from the OS.
 
 **Test configuration data**
@@ -85,7 +85,7 @@ secureboot: Secure boot enabled
 
 **Test description**
 
-This test verifies that Secure Boot can be enabled from boot menu and, after
+This test verifies that Secure Boot can be enabled from the boot menu and, after
 the DUT reset, it is seen from the OS.
 
 **Test configuration data**
@@ -130,4 +130,172 @@ enabled:
 
 ```powershell
 True
+```
+
+## SBO003.001 Attempt to boot file with the correct key from Shel (firmware)
+
+**Test description**
+
+This test verifies that Secure Boot allows booting a signed file with a correct
+key.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `USB device`
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+
+**Test steps**
+
+1. Download the file and the certificate from the
+    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files)
+    or prepare it yourself.
+1. Place the certificate and the file on the `USB device`.
+1. Plug the `USB device` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB device`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB device` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB device - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    hello-valid-keys.efi
+    ```
+
+**Expected result**
+
+Depending on what file is booting, the output can be different.
+
+Example output:
+
+```bash
+Hello, world!
+```
+
+Unwanted output:
+
+```bash
+Command Error Status: Access Denied
+```
+
+## SBO004.001 Attempt to boot file without the key from Shell (firmware)
+
+**Test description**
+
+This test verifies that Secure Boot blocks booting a file without a key.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `USB device`
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+
+**Test steps**
+
+1. Download the file from the
+    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files)
+    or prepare it yourself.
+1. Place the file on the `USB device`.
+1. Plug the `USB device` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB device` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB device - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    hello.efi
+    ```
+
+**Expected result**
+
+After the last step, a similar output should be displayed:
+
+```bash
+Command Error Status: Access Denied
+```
+
+## SBO005.001 Attempt to boot file with the wrong-signed key from Shell (firmware)
+
+**Test description**
+
+This test verifies that Secure Boot blocks booting a file with the wrong-signed
+key.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `USB device`
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+
+**Test steps**
+
+1. Download the file from the
+    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files)
+    or prepare it yourself.
+1. Place the file on the `USB device`.
+1. Plug the `USB device` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB device` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB device - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    hello-bad-keys.efi
+    ```
+
+**Expected result**
+
+After the last step, a similar output should be displayed:
+
+```bash
+Command Error Status: Access Denied
 ```
