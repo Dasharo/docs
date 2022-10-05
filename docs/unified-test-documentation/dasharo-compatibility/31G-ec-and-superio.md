@@ -1147,6 +1147,9 @@ This test verifies that the sleep hotkey works correctly.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Installing updates and drivers](../../../variants/novacustom_nv4x/post_install/#installing-updates-and-drivers-windows-11)
+    section.
 
 **Test steps**
 
@@ -1241,6 +1244,9 @@ mode.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Installing updates and drivers](../../../variants/novacustom_nv4x/post_install/#installing-updates-and-drivers-windows-11)
+    section.
 
 **Test steps**
 
@@ -1311,6 +1317,9 @@ system.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Proceed with the
+    [Installing updates and drivers](../../../variants/novacustom_nv4x/post_install/#installing-updates-and-drivers-windows-11)
+    section.
 
 **Test steps**
 
