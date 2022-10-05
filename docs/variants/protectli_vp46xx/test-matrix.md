@@ -27,7 +27,7 @@ subjected from before the release of the new binary.
 | 16.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
 | 17.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
 | 18.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
-| 19.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
+| 19.  | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD001.002, AUD002.001, AUD002.002, AUD003.001, AUD003.002, AUD004.001, AUD004.002, AUD005.001, AUD005.002, AUD006.001, AUD006.002 |
 | 20.  | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 21.  | [USB detection][UDT]                              | UDT           | All                                  |
 | 22.  | [USB booting][UBT]                                | UBT           | All                                  |
