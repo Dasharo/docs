@@ -40,7 +40,7 @@ for signing the firmware.
 
 **Expected result**
 
-The `keys` location contains the generated keys.
+The `keys` location should contain the generated keys.
 
 ## VBO002.001 Signing image without rebuild
 
@@ -72,7 +72,7 @@ image with generated keys without rebuilding.
 
 **Expected result**
 
-The output of the last command should contains information that resigning
+The output of the last command should contain information that resigning
 procedure was successful.
 
 Example output:
@@ -166,8 +166,8 @@ platform and sign it with the locally generated keys.
 
 **Expected result**
 
-The `build` location contains the binary file, which size is equal to the flash
-chip size.
+The `build` location should contain the binary file, which size is equal to the
+flash chip size.
 
 ## VBO005.001 Flashing device with built firmware
 
