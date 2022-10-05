@@ -40,8 +40,8 @@ ideas for new features, review documentation and help testing bug fixes.
 If you would like to pursue that path please contact us on [Dasharo -
 General](https://matrix.to/#/#dasharo-general:matrix.org) Matrix channel to
 agree on scope of contribution to avoid any potential collision with other
-developers. To get access to DTS SE you should [contact
-3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com)
+developers. To get access to DTS SE you should contact
+[3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com)
 with links to your contribution and we would be glad to provide one year of DTS
 SE updates.
 
