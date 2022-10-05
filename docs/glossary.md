@@ -36,7 +36,7 @@ customers in case of issues.
 As temporary solution we use 3mdeb NextCloud as Dasharo HCL Backup Server.
 
 Dasharo HCL Reports are also used during open source firmware port feasibilty
-analysis, so if you are interested in Dasharo support for you hardware feel
+analysis, so if you are interested in Dasharo support for your hardware, feel
 free to [reach us](mailto:leads@3mdeb.com).
 
 Please note Dasharo HCL Report may contain sensitive information like serial
