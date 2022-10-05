@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Firmware building locally
+# Dasharo Compatibility: Firmware locally build
 
 ## Test cases common documentation
 
@@ -10,12 +10,18 @@
     [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Make yourself familiar with Building manual procedure dedicated for
+    the relevant platform:
+    * [Novacustom NV4x](../../variants/novacustom_nv4x/building.md),
+    * [Novacustom NS5x/7x](../../variants/novacustom_ns5x_7x/building-manual.md).
 
 ## FWB001.001 Build firmware locally
 
 **Test description**
 
-This test aims to verify whether it's possible to build firmware locally.
+This test aims to verify whether there is a possibility to build firmware
+on the local machine, based on `Build manual` procedure dedicated to the
+platform.
 
 **Test configuration data**
 
@@ -26,33 +32,27 @@ This test aims to verify whether it's possible to build firmware locally.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Proceed with the
-    [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-    instruction.
-1. Proceed with the
-    [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
-    instruction.
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Proceed with the
-    [Building manual for NV4x](../../variants/novacustom_nv4x/building.md),
-    or [Building manual for NV5x/NV7x](../../variants/novacustom_ns5x_7x/building-manual.md)
-    appropriate for DUT.
+1. Based on the dedicated documentation build firmware.
+1. Check if the binary file, after finishing the building process, is available
+    in the `build` location.
 
 **Expected result**
 
-The resulting coreboot image is placed in
-`build/coreboot.rom`.
+The `build` location contains the binary file, which size is equal to the flash
+chip size.
 
 ## FWB002.001 Flash locally built firmware
 
 **Test description**
 
-This test aims to verify whether it's possible to flash locally built firmware.
+This test aims to verify whether there is a possibility to flash the locally
+built firmware to the DUT.
 
 **Test configuration data**
 
@@ -63,33 +63,41 @@ This test aims to verify whether it's possible to flash locally built firmware.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Make yourself familiar with
-    [SPI hardware write protection](../../../variants/asus_kgpe_d16/spi-wp/).
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Localise loaclly built the `ROM` file (eg. `coreboot/build/coreboot.rom`)
-1. Flash DUT with built firmware accordingly to
-    [Flashing instructions for NV4x](../../variants/novacustom_nv4x/flashing_internal.md),
-    or with [Flashing instructions for NV5x/NV7x](../../variants/novacustom_ns5x_7x/firmware-update.md)
-    appropriate for DUT.
-1. Reboot platform.
-1. Use below command to get firmware info:
+1. Localize the firmware, which was built in the `FWB001.001` test case.
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware, the following command
+    should be used:
 
     ```bash
-    sudo dmidecode
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
     ```
 
-1. Note the results.
+    Otherwise, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    ```
+
+1. Reboot the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and run the following command to verify the results:
+
+    ```bash
+    sudo dmidecode -t bios | grep Version
+    ```
 
 **Expected result**
 
-The output of `dmidecode` command should contain information about current
-firmware. The current firmware version should be equal to the binary version,
-which you were building and flashing.
+The output of `dmidecode` command should contain information about the current
+firmware. The current firmware version should be equal to the latest released
+firmware version.
 
 Example output:
 
