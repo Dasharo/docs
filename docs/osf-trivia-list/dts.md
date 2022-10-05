@@ -35,7 +35,7 @@ would be glad to give you access to DTS SE for a year.
 ### I have more time than money and I can't code
 
 Please [contribute](../../ways-you-can-help-us/#contribute-through-github)
-features, review and bug fixes to our repositories.
+ideas for new features, review documentation and help testing bug fixes.
 
 If you would like to pursue that path please contact us on [Dasharo -
 General](https://matrix.to/#/#dasharo-general:matrix.org) Matrix channel to
