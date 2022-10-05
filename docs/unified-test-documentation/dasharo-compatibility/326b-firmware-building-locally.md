@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Firmware locally build
+# Dasharo Compatibility: Firmware locally building and flashing
 
 ## Test cases common documentation
 
