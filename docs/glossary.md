@@ -29,9 +29,11 @@ make that firmware also covered by above definition.
 
 Dasharo HCL Report dumps most important information about platform and backup
 SPI NOR flash. Gathered information can be used for future analysis, debugging
-and recovery. Optionally scripts upload dump to [Dasharo HCL Backup
-Server](https://backup.dasharo.com), so Dasharo Team can improve open source
-firmware product line and support customers in case of issues.
+and recovery. Optionally scripts upload dump to Dasharo HCL Backup Server, so
+Dasharo Team can improve open source firmware product line and support
+customers in case of issues.
+
+As temporary solution we use 3mdeb NextCloud as Dasharo HCL Backup Server.
 
 Dasharo HCL Reports are also used during open source firmware port feasibilty
 analysis, so if you are interested in Dasharo support for you hardware feel
