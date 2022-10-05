@@ -256,6 +256,7 @@ nav:
               - 'Docking station USB devices': unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
               - 'Docking station audio': unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
               - 'Docking station USB-C': unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
+              - 'Logo customization': unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
