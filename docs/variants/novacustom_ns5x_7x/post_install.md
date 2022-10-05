@@ -46,14 +46,16 @@ Now reboot your computer to apply the changes.
 
 ## Installing updates and drivers (Windows 11)
 
-Some of the features on Windows 11 may not work or work unexpectedly without
-installing all the updates and drivers. To go through this procedure internet
-connection is required.
+Several features on Windows 11 (i. e. suspending the device) may not work or
+work unexpectedly without installing all of the updates and drivers.
+
+To install all of them, log into system, connect the device to the mains
+and Internet, then follow the steps below:
 
 1. Press the `Windows` button on the keypad.
 1. Type `Windows Update Settings` in the search and press `Enter`.
 1. Select the `Check for updates` bar to start installing available updates and
-    drivers. During this process previously selected bar can be changed to
+    drivers. During this process previously selected bar might be changed to
     `Restart now` or `Retry`, so click them if something hasn't been installed
     yet, something has gone wrong or restart is just required. The entire
     process may take up to 30 minutes.
@@ -61,7 +63,7 @@ connection is required.
 1. Locate the `Optional updates` option and click on it.
 1. Select all displayed updates and drivers.
 1. Select the `Download & Install` bar to start installing additional updates
-    and drivers. During this process previously selected bar can be changed to
-    `Restart now` or `Retry`, so click them if something hasn't been installed
-    yet, something has gone wrong or restart is just required. The entire
-    process may take up to 30 minutes.
+    and drivers. During this process previously selected bar might be changed
+    to `Restart now` or `Retry`, so click them if something hasn't been
+    installed yet, something has gone wrong or restart is just required.
+    The entire process may take up to 30 minutes.
