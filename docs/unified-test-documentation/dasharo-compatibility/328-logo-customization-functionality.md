@@ -12,13 +12,16 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+1. Make yourself familiar with
+    [Logo customization procedure](../../common-coreboot-docs/custom_logo.md)
 
 ## LCM001.001 Replace logo in existing image and flashing firmware
 
 **Test description**
 
-This test aims to verify whether it's possible to replace logo in existing
-firmware and after flash it shows properly.
+This test aims to verify whether replacing the logo in the existing image is
+possible and, whether after flashing the DUT with the new image, the new logo
+will be shown properly.
 
 **Test configuration data**
 
@@ -29,27 +32,43 @@ firmware and after flash it shows properly.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Current Dasharo firmware dedicated for the platform.
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Proceed with the
-    [Replace logo in an existing image](../../common-coreboot-docs/custom_logo.md#replace-logo-in-an-existing-image)
-    section.
+1. Based on the
+    [dedicated documentation](../../common-coreboot-docs/custom_logo.md#replace-logo-in-an-existing-image)
+    replace the logo in an existing image.
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware, the following command
+    should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
+    ```
+
+    Otherwise, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    ```
+
 1. Reboot DUT.
 
 **Expected result**
 
-1. While booting custom logo appears on screen.
+During the DUT booting process custom logo should appear on the screen.
 
 ## LCM002.001 Build image with custom logo and flashing firmware
 
 **Test description**
 
-This test aims to verify whether it's possible to build firmware image from the
-source and after flash it shows properly.
+This test aims to verify whether building image with the custom logo is possible
+and, whether after flashing the DUT with the new image, the new logo will be
+shown properly.
 
 **Test configuration data**
 
@@ -66,29 +85,42 @@ source and after flash it shows properly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Proceed with the
-    [Build image with custom logo](../../common-coreboot-docs/custom_logo.md#build-image-with-custom-logo)
-    section.
-1. Now flash the updated firmware image as usual. If you're not updating
-firmware and just changing the logo, only the BOOTSPLASH region needs to be
-updated. For example:
+1. Based on the
+    [dedicated documentation](../../common-coreboot-docs/custom_logo.md#build-image-with-custom-logo)
+    build firmware with the custom logo.
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware and only the logo should
+    be replaced, the following command should be used:
 
     ```bash
     sudo flashrom -p internal --fmap -i BOOTSPLASH -w [path]
+    ```
+
+    If also the procedure of Dasharo firmware updating should be performed,
+    the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
+    ```
+
+    In any other cases, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
     ```
 
 1. Reboot DUT.
 
 **Expected result**
 
-1. While booting custom logo appears on screen.
+During the DUT booting process custom logo should appear on the screen.
 
 ## LCM003.001 Attempt to flash firmware with improper image
 
 **Test description**
 
-This test aims to verify whether after building firmware with inproper custom
-logo fallback will occur.
+This test aims to verify whether attempt to flash the DUT with firmware with
+improper logo is possible but will result in a fallback to the default logo.
 
 **Test configuration data**
 
@@ -105,21 +137,33 @@ logo fallback will occur.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Proceed with the
-    [Build image with custom logo](../../common-coreboot-docs/custom_logo.md#build-image-with-custom-logo)
-    section, but use image that doesn't meet
-    [Prequsities](../../common-coreboot-docs/custom_logo.md#prerequisites).
-1. Now flash the updated firmware image as usual. If you're not updating
-firmware and just changing the logo, only the BOOTSPLASH region needs to be
-updated. For example:
+1. Based on the
+    [dedicated documentation](../../common-coreboot-docs/custom_logo.md#build-image-with-custom-logo)
+    build firmware with the logo, that that does not meet the
+    [Quality criteria](../../common-coreboot-docs/custom_logo.md#prerequisites).
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware and only the logo should
+    be replaced, the following command should be used:
 
     ```bash
     sudo flashrom -p internal --fmap -i BOOTSPLASH -w [path]
+    ```
+
+    If also the procedure of Dasharo firmware updating should be performed,
+    the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
+    ```
+
+    In any other cases, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
     ```
 
 1. Reboot DUT.
 
 **Expected result**
 
-Fallback to NovaCustom logo occurs, and during boot phase oroginal image is
-shown.
+During the DUT booting process the default logo should appear on the screen.
