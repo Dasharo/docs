@@ -142,7 +142,7 @@ key.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. Additional  `USB storage` - at least 1GB - for keeping files for booting
+1. Additional `USB storage` - at least 1GB - for keeping files for booting
 
 **Test setup**
 
@@ -152,10 +152,9 @@ key.
 **Test steps**
 
 1. Download the file and the certificate from the
-    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files)
-    or prepare it yourself.
-1. Place the certificate and the file on the `USB device`.
-1. Plug the `USB device` into DUT.
+    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files).
+1. Place the certificate and the file on the `USB storage`.
+1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
@@ -164,19 +163,19 @@ key.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
 1. Select options in the given order: `Custom Secure Boot Options` ->
     `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
-1. Select the certificate from the `USB device`.
+1. Select the certificate from the `USB storage`.
 1. Select the `Commit Changes and Exit` option.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option.
 1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
 1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
-1. In the shell open the `USB device` by executing the following command:
+1. In the shell open the `USB storage` by executing the following command:
 
     ```bash
     FS0:
     ```
 
-    > One of the filesystems in the FS list will be the USB device - typically
+    > One of the filesystems in the FS list will be the USB storage - typically
     > `FS0:`
 
 1. Boot the previously prepared file by typing its full name:
@@ -187,18 +186,14 @@ key.
 
 **Expected result**
 
-Depending on what file is booting, the output can be different.
+1. File boots correctly (no information: `Command Error Status: Access Denied`
+    on the output).
+1. The output of the command shows file content.
 
 Example output:
 
 ```bash
 Hello, world!
-```
-
-Unwanted output:
-
-```bash
-Command Error Status: Access Denied
 ```
 
 ## SBO004.001 Attempt to boot file without the key from Shell (firmware)
@@ -210,7 +205,7 @@ This test verifies that Secure Boot blocks booting a file without a key.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `USB device`
+1. Additional `USB storage` - at least 1GB - for keeping files for booting
 
 **Test setup**
 
@@ -220,20 +215,19 @@ This test verifies that Secure Boot blocks booting a file without a key.
 **Test steps**
 
 1. Download the file from the
-    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files)
-    or prepare it yourself.
-1. Place the file on the `USB device`.
-1. Plug the `USB device` into DUT.
+    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files).
+1. Place the file on the `USB storage`.
+1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
 1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
-1. In the shell open the `USB device` by executing the following command:
+1. In the shell open the `USB storage` by executing the following command:
 
     ```bash
     FS0:
     ```
 
-    > One of the filesystems in the FS list will be the USB device - typically
+    > One of the filesystems in the FS list will be the USB storage - typically
     > `FS0:`
 
 1. Boot the previously prepared file by typing its full name:
@@ -244,7 +238,10 @@ This test verifies that Secure Boot blocks booting a file without a key.
 
 **Expected result**
 
-After the last step, a similar output should be displayed:
+1. The output of the command doesn't show file content and information about
+    access denied is displayed.
+
+Example output:
 
 ```bash
 Command Error Status: Access Denied
@@ -260,7 +257,7 @@ key.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `USB device`
+1. Additional `USB storage` - at least 1GB - for keeping files for booting
 
 **Test setup**
 
@@ -270,20 +267,19 @@ key.
 **Test steps**
 
 1. Download the file from the
-    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files)
-    or prepare it yourself.
-1. Place the file on the `USB device`.
-1. Plug the `USB device` into DUT.
+    [cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/3mdeb/Dasharo/TAT/SecureBoot_testing_files).
+1. Place the file on the `USB storage`.
+1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
 1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
-1. In the shell open the `USB device` by executing the following command:
+1. In the shell open the `USB storage` by executing the following command:
 
     ```bash
     FS0:
     ```
 
-    > One of the filesystems in the FS list will be the USB device - typically
+    > One of the filesystems in the FS list will be the USB storage - typically
     > `FS0:`
 
 1. Boot the previously prepared file by typing its full name:
@@ -294,7 +290,10 @@ key.
 
 **Expected result**
 
-After the last step, a similar output should be displayed:
+1. The output of the command doesn't show file content and information about
+    access denied is displayed.
+
+Example output:
 
 ```bash
 Command Error Status: Access Denied
