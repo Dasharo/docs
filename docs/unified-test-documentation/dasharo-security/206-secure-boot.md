@@ -132,7 +132,7 @@ enabled:
 True
 ```
 
-## SBO003.001 Attempt to boot file with the correct key from Shel (firmware)
+## SBO003.001 Attempt to boot file with the correct key from Shell (firmware)
 
 **Test description**
 
