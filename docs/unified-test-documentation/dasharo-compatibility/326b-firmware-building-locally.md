@@ -15,7 +15,7 @@
     * [Novacustom NV4x](../../variants/novacustom_nv4x/building.md),
     * [Novacustom NS5x/7x](../../variants/novacustom_ns5x_7x/building-manual.md).
 
-## FWB001.001 Build firmware locally
+## FLB001.001 Firmware locally build
 
 **Test description**
 
@@ -47,7 +47,7 @@ platform.
 The `build` location contains the binary file, which size is equal to the flash
 chip size.
 
-## FWB002.001 Flash locally built firmware
+## FLB002.001 Flash locally built firmware
 
 **Test description**
 
@@ -69,7 +69,7 @@ built firmware to the DUT.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Localize the firmware, which was built in the `FWB001.001` test case.
+1. Localize the firmware, which was built in the `FLB001.001` test case.
 1. Flash the firmware by using the internal programmer and `flashrom` tool. If
     DUT is already flashed with the Dasharo firmware, the following command
     should be used:
