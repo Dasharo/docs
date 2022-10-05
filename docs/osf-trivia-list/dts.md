@@ -24,7 +24,7 @@ spread the word about it. There are multiple ways to do that:
   media](../../ways-you-can-help-us/#follow-us-on-social-media) and help
   spreading the word about Dasharo.
 * [Contribute](../../ways-you-can-help-us/#contribute-through-github)
-  documentation, test restuls, [Dasharo Hardoware Compatibility List
+  documentation, test results, [Dasharo Hardware Compatibility List
   Reports](../glossary/#dasharo-hardware-compatibility-list-report)
 
 To get access to DTS SE you should [contact 3mdeb](mailto:leads@3mdeb.com) or
