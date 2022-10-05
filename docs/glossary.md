@@ -47,6 +47,6 @@ privacy.
 
 Unfortunately, some hardware platforms cannot be fully functional without
 binary blobs in the firmware. Some binary blobs have no EULA or any other
-licesnse discussing redistributability. To avoid issues Dasharo Blobs
+license discussing redistributability. To avoid issues, Dasharo Blobs
 Transmission scripts extract blobs from SPI NOR flash backup and patch Dasharo
 open-source firmware distribution before initial deployment.
