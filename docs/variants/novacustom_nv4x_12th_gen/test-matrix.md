@@ -35,7 +35,9 @@ subjected from before the release of the new binary.
 | 24.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
 | 25.  | [Firmware update using Dasharo Tools Suite][FDT]  | FDT           | All                                  |
 | 26.  | [CPU status][CPU]                                 | CPU           | All                                  |
-| 27.  | [EC flashing][ECF]                                | ECF           | All                                  |
+| 27.  | [Embedded controller flashing][ECF]               | ECF           | All                                  |
+| 28.  | [Logo customization functionality][LCM]           | LCM           | All                                  |
+| 29.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -64,6 +66,9 @@ subjected from before the release of the new binary.
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
+[ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
+[FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
+[LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 
 ## Module: Dasharo security
 

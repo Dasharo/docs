@@ -74,7 +74,7 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
