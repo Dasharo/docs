@@ -1,6 +1,218 @@
 # Dasharo Security: Verified Boot support
 
-## VBO001.001 Verified boot support (firmware)
+## Test cases common documentation
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+
+## VBO001.001 Generating keys for Verified Boot
+
+**Test description**
+
+This test aims to verify whether there is a possibility to generate vboot keys
+for signing the firmware.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Based on the dedicated documentation
+    [generate the keys](../../common-coreboot-docs/vboot_signing.md#prerequisites).
+1. Check if the keys, after finishing the generating process, are available in
+    the `keys` subdirectory.
+
+**Expected result**
+
+The `keys` location should contain the generated keys.
+
+## VBO002.001 Signing image without rebuild
+
+**Test description**
+
+This test aims to verify whether there is a possibility to sign the firmware
+image with generated keys without rebuilding.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Localize the keys, which were generated in the `VBO001.001` test case.
+1. Based on the
+    [dedicated documentation](../../common-coreboot-docs/vboot_signing.md#signing-image-without-rebuilding)
+    sign the firmware image with the keys without rebuilding.
+1. Note the result.
+
+**Expected result**
+
+The output of the last command should contain information that resigning
+procedure was successful.
+
+Example output:
+
+```bash
+...
+INFO: sign_bios_at_end: BIOS image does not have FW_MAIN_B. Signing only FW_MAIN_A
+ - import root_key from /.../keys/root_key.vbpubk: success
+ - import recovery_key from /.../keys/recovery_key.vbpubk: success
+successfully saved new image to: /.../protectli_vault_cml_v1.0.16_resigned.rom
+The /.../protectli_vault_cml_v1.0.16.rom was resigned and saved as: /.../protectli_vault_cml_v1.0.16_resigned.rom
+```
+
+## VBO003.001 Flashing device with the signed firmware
+
+**Test description**
+
+This test aims to verify whether there is a possibility to flash the locally
+signed firmware to the DUT.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Localize the firmware, which was signed in the `VBO002.001` test case.
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware, the following command
+    should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
+    ```
+
+    Otherwise, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    ```
+
+1. Reboot the DUT. and note the results.
+
+**Expected result**
+
+The DUT reboots properly without issues related to firmware signing.
+
+## VBO004.001 Adding keys and building image
+
+**Test description**
+
+This test aims to verify whether there is a possibility to build firmware
+on the local machine, based on `Build manual` procedure dedicated to the
+platform and sign it with the locally generated keys.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Make yourself familiar with Building manual procedure dedicated for
+    the relevant platform:
+    * [Novacustom NV4x](../../variants/novacustom_nv4x/building.md),
+    * [Novacustom NS5x/7x](../../variants/novacustom_ns5x_7x/building-manual.md).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Localize the keys, which were generated in the `VBO001.001` test case.
+1. Based on the
+    [dedicated documentation](../../common-coreboot-docs/vboot_signing.md#adding-keys-to-the-coreboot-config)
+    add locally generated keys to the coreboot config.
+1. Based on the dedicated documentation build firmware.
+1. Check if the binary file, after finishing the building process, is available
+    in the `build` subdirectory.
+
+**Expected result**
+
+The `build` location should contain the binary file, which size is equal to the
+flash chip size.
+
+## VBO005.001 Flashing device with built firmware
+
+**Test description**
+
+This test aims to verify it is possible to flash and boot DUT with signed
+firmware image.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Localize the firmware, which was built in the `VBO004.001` test case.
+1. Flash the firmware by using the internal programmer and `flashrom` tool. If
+    DUT is already flashed with the Dasharo firmware, the following command
+    should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
+    ```
+
+    Otherwise, the following command should be used:
+
+    ```bash
+    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    ```
+
+1. Reboot the DUT. and note the results.
+
+**Expected result**
+
+The DUT reboots properly without issues related to firmware signing.
+
+## VBO006.001 Verified boot support (firmware)
 
 **Test description**
 
@@ -27,7 +239,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-## VBO001.002 Verified boot support (Ubuntu 22.04)
+## VBO006.002 Verified boot support (Ubuntu 22.04)
 
 **Test description**
 
@@ -43,13 +255,7 @@ functional.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
     to the DUT.
 1. Disable Secure Boot.
@@ -79,7 +285,7 @@ PCR-0 2547cc736e951fa4919853c43ae890861a3b3264000000000000000000000000 SHA256 [V
 PCR-1 e3324765a25f8a59c7c20cc35c1c33a8ab384159d2b40a269246b0b4491cdf89 SHA256 [VBOOT: GBB HWID]
 ```
 
-## VBO002.001 Verified boot: Booting from Slot A (firmware)
+## VBO007.001 Verified boot: Booting from Slot A (firmware)
 
 **Test description**
 
@@ -105,7 +311,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-## VBO002.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
+## VBO007.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
 
 **Test description**
 
@@ -120,13 +326,7 @@ proceed to boot from Slot A.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
@@ -151,7 +351,7 @@ slot A:
 Slot A is selected
 ```
 
-## VBO003.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
+## VBO008.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
 
 **Test description**
 
@@ -166,13 +366,7 @@ should revert to booting from the recovery slot.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
@@ -216,7 +410,7 @@ VB2:vb2_check_recovery() We have a recovery request: 0x3 / 0x0
 Recovery requested (1009000e)
 ```
 
-## VBO004.001 Recovery boot popup (firmware)
+## VBO009.001 Recovery boot popup (firmware)
 
 **Test description**
 
@@ -232,13 +426,7 @@ the wrong vboot keys.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Disable Secure Boot.
 1. Obtain `coreboot binary` signed with wrong vboot keys.
 
@@ -261,7 +449,7 @@ command:
 
 Popup with information about recovery mode should be displayed.
 
-## VBO005.001  Recovery boot popup confirmation (firmware)
+## VBO010.001  Recovery boot popup confirmation (firmware)
 
 **Test description**
 
@@ -276,13 +464,7 @@ allows to proceed to the next booting stages.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Disable Secure Boot.
 1. Obtain `coreboot binary` signed with wrong vboot keys.
 

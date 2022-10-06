@@ -44,8 +44,8 @@ platform.
 
 **Expected result**
 
-The `build` location contains the binary file, which size is equal to the flash
-chip size.
+The `build` location should contain the binary file, which size is equal to the
+flash chip size.
 
 ## FLB002.001 Flash locally built firmware
 
