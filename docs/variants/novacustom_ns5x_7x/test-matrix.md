@@ -70,9 +70,9 @@ subjected before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
-| 3.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 4.   | [Verified Boot support][VBO]                      | VBO           | Without VBO001.001 and VBO002.001    |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
+| 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
+| 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md

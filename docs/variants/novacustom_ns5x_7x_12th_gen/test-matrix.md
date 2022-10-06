@@ -22,7 +22,7 @@ subjected before the release of the new binary.
 | 11.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |
 | 12.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
 | 13.  | [USB-C/Thunderbolt][UTC]                               | UTC           | All                                  |
-| 14.  | [Network boot][PXE]                                    | PXE           | PXE007.001                           |
+| 14.  | [Network boot][PXE]                                    | PXE           | Without PXE007.001                   |
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
@@ -36,6 +36,8 @@ subjected before the release of the new binary.
 | 25.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
 | 26.  | [CPU status][CPU]                                      | CPU           | All                                  |
 | 27.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
+| 28.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
+| 29.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -63,13 +65,16 @@ subjected before the release of the new binary.
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
 [ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
+[CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
+[FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
+[LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 
 ## Module: Dasharo security
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | VBO001.002, VBO002.002, VBO003.001, VBO004.001, VBO005.001 |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 | 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
