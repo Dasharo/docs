@@ -121,6 +121,18 @@ keys during updates.
 
 ### Flashing Dasharo
 
+**WARNING**: If you use and external/discrete GPU and migrate to Dasharo, be
+sure to unplug the dGPU first (when machine is powered off before proceeding
+with flashing), as Dasharo firmware does not support all GPU cards properly yet
+(as of version v1.0.0). There is high risk for the graphical output to break in
+the firmware when dGPU is connected. Effectively it leaves the only option to
+boot in blind into previously installed OS (if the platform does not brick and
+if an OS is present on a disk). The first boot may take up to 2 minutes to
+fully train the memory, so be patient and wait for the Dasharo logo to appear,
+subsequent boots will take only seconds. MSI EZ debug leds are not supported by
+Dasharo and you may notice red led to be lit. If the platform boots with
+integrated GPU, you may try to plug the external GPU back and boot again.
+
 To flash Dasharo on the platform, execute the following command:
 
 > Replace the `VERSION` in firmware file name with the version you want to
@@ -130,10 +142,10 @@ To flash Dasharo on the platform, execute the following command:
 sudo flashrom -p internal -w msi_ms7d25_vVERSION.rom --ifd -i bios
 ```
 
-After the command succeeds, invoke `poweroff` or click the power off in the GUI
-to shutdown the board. Press `ENTER` when prompted on the screen. Power on the
-board back. Reboot will not work as some memory settings are preserved after
-reboot and FSP fails to train the memory. Poweroff is required.
+After the command succeeds, invoke `sudo poweroff` or click the power off in
+the GUI to shutdown the board. Press `ENTER` when prompted on the screen. Power
+on the board back. Reboot will not work as some memory settings are preserved
+after reboot and FSP fails to train the memory. Poweroff is required.
 
 ### Flashing back vendor firmware
 
