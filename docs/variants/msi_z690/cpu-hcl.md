@@ -35,6 +35,7 @@ Rest of the information might be read from CPU package or documentation.
 |:--------------------:|:-----------:|:--------------:|:---------------:|:-------:|:---------------:|:----------------------:|
 | Intel Core i9-12900K | Alder Lake  | 3.2 GHz        | 5.3 GHz         | 125     | UHDGraphics710  | [Qubes HCL reports][1] |
 | Intel Core i7-12700K | Alder Lake  | 3.6 GHz        | 5.0 GHz         | 125     | UHDGraphics770  | [Qubes HCL reports][2] |
+| Intel Core i5-12400F | Alder Lake  | 2.5 GHz        | 4.4 GHz         | 65      | -               |                        |
 
 [1]: <https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6>
 [2]: <https://www.qubes-os.org/hcl/#msi_ms-7d25_i7-12700k_alder-lake_integrated-graphics-uhd-770-geforce-gtx-1080-ti>
