@@ -24,7 +24,7 @@ The easiest way to build coreboot is to use the official Docker image.
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/Dasharo/coreboot.git
     ```
 
     Navigate to the source code directory and checkout to the desired revision:
@@ -36,10 +36,8 @@ The easiest way to build coreboot is to use the official Docker image.
 
     ```bash
     cd coreboot
-    git remote add dasharo https://github.com/dasharo/coreboot.git
-    git submodule update --init --recursive --checkout
-    git fetch dasharo
     git checkout REVISION
+    git submodule update --init --recursive --checkout
     ```
 
 1. Start the coreboot-sdk Docker container:
@@ -54,7 +52,7 @@ The easiest way to build coreboot is to use the official Docker image.
 1. Build the firmware:
 
     ```bash
-    cp configs/config.novacustom_ns5x .config
+    cp configs/config.novacustom_nv4x .config
     make olddefconfig
     make
     ```
