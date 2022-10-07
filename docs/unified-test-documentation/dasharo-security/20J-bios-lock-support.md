@@ -107,4 +107,5 @@ blocking changes in BIOS region of flash chip.
 
 **Expected result**
 
-<!--- WIP --->
+1. Flashrom should write information about succesfully finishing flashing
+    procedure.
