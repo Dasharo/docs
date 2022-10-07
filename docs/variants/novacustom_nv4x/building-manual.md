@@ -11,9 +11,9 @@ This documents describes the procedure for compiling coreboot for NovaCustom NV4
     + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 - Git
 
-## Procedure
+## Build Dasharo BIOS firmware
 
-The easiest way to build coreboot is to use the official Docker image.
+The easiest way to build Dasharo firmware is to use the official Docker image.
 
 1. Obtain the image:
 
@@ -59,3 +59,31 @@ The easiest way to build coreboot is to use the official Docker image.
 
 The resulting coreboot image will be placed in
 `build/coreboot.rom`.
+
+## Build EC firmware
+
+1. Clone the ec repository:
+
+    ```bash
+    git clone https://github.com/Dasharo/ec.git
+    ```
+
+    Navigate to the source code directory and checkout to the desired revision:
+
+    > Replace the REVISION with:
+    >
+    > - `release` for the latest released version
+    > - `novacustom_nv4x_vVERSION` (e.g. `v1.3.0`) for the given release
+
+    ```bash
+    cd ec
+    git checkout REVISION
+    ```
+
+1. Build the firmware:
+
+    ```bash
+    EC_BOARD_VENDOR=clevo EC_BOARD_MODEL=nv40mz ./build.sh
+    ```
+
+The resulting image will be placed in: `clevo_nv40mz_ec.rom`
