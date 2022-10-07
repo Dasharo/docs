@@ -4,10 +4,10 @@
 
 **Test description**
 
-Measured Boot is a method for detecting changes to firmware by storing hashes
-of each firmware component into the TPM PCR registers. If a PCR changes value
-across reboots, a change to the firmware has been made. This test aims to
-verify that Measured Boot is functional and measurements are stored in the
+Measured Boot is a method for detecting changes to the firmware by storing
+hashes of each firmware component in the TPM PCR registers. If a PCR changes
+value across reboots, a change to the firmware has been made. This test aims to
+verify that Measured Boot is functional and that measurements are stored in the
 TPM.a.
 
 **Test configuration data**
@@ -25,8 +25,8 @@ TPM.a.
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -42,23 +42,33 @@ sudo ./cbmem -c | grep -i PCR
 
 **Expected result**
 
-The output of the command should indicate that measurements of the coreboot
-components have been made:
+1. The output of the command should indicate that measurements of the coreboot
+    components have been made.
 
-```text
-TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/romstage to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: fspm.bin to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/postcar to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/ramstage to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: cpu_microcode_blob.bin to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: fsps.bin to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: vbt.bin to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/dsdt.aml to PCR 2 measured
-TPM: Digest of FMAP: FW_MAIN_A CBFS: fallback/payload to PCR 2 measured
-```
+    Example output:
 
-The output should also not contain the following message:
+    ```text
+    TPM: Extending digest for `VBOOT: boot mode` into PCR 0
+    TPM: Digest of `VBOOT: boot mode` to PCR 0 measured
+    TPM: Extending digest for `VBOOT: GBB HWID` into PCR 1
+    TPM: Digest of `VBOOT: GBB HWID` to PCR 1 measured
+    TPM: Extending digest for `FMAP: FMAP` into PCR 2
+    TPM: Digest of `FMAP: FMAP` to PCR 2 measured
+    TPM: Extending digest for `CBFS: bootblock` into PCR 2
+    TPM: Digest of `CBFS: bootblock` to PCR 2 measured
+    TPM: Extending digest for `CBFS: fallback/romstage` into PCR 2
+    TPM: Digest of `CBFS: fallback/romstage` to PCR 2 measured
+    TPM: Extending digest for `CBFS: fspm.bin` into PCR 2
+    TPM: Digest of `CBFS: fspm.bin` to PCR 2 measured
+    TPM: Extending digest for `CBFS: fallback/postcar` into PCR 2
+    TPM: Digest of `CBFS: fallback/postcar` to PCR 2 measured
+    TPM: Extending digest for `CBFS: fallback/ramstage` into PCR 2
+    TPM: Digest of `CBFS: fallback/ramstage` to PCR 2 measured
+    ...
+    ```
 
-```text
-TPM: Extending hash into PCR failed.
-```
+1. The output shouldn't contain the following message:
+
+    ```text
+    TPM: Extending hash into PCR failed.
+    ```
