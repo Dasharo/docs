@@ -25,10 +25,10 @@ The easiest way to build coreboot is to use the official Docker image.
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/Dasharo/coreboot.git
     ```
 
-1. Checkout to the desired Dasharo revision:
+    Navigate to the source code directory and checkout to the desired revision:
 
     > Replace the REVISION with:
     >
@@ -37,10 +37,8 @@ The easiest way to build coreboot is to use the official Docker image.
 
     ```bash
     cd coreboot
-    git remote add dasharo https://github.com/dasharo/coreboot.git
-    git submodule update --init --recursive --checkout
-    git fetch dasharo
     git checkout REVISION
+    git submodule update --init --recursive --checkout
     ```
 
 1. Start the coreboot-sdk Docker container:
