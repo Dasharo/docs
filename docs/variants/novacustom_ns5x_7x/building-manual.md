@@ -60,8 +60,3 @@ The easiest way to build coreboot is to use the official Docker image.
 
 The resulting coreboot image will be placed in
 `build/coreboot.rom`.
-
-**Warning:** Do not run `./build.``sh` as root. This command uses docker and
-should be executed as your current user. If you're having trouble running
-`build.sh` on your user account, follow the `Docker` instructions outlined in
-[Requirements](#requirements).
