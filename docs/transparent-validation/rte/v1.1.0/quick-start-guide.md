@@ -1,27 +1,48 @@
 # Quick start guide
 
-[comment]: <> (Type: How To Gudie )
+The canonical example of RTE usage is hooking it to some hardware for SPI
+flashing, power control and serial logs gathering. This document describes the
+common preparation of RTE without listed functions.
 
 ## Prerequisites (ALL)
 
-RTE board
-USB-UART converter
-Wire cables (male-female) (min. 3)
-Micro-usb 5V 2.5A power supply
-Ethernet cable
-Orange Pi
-SD card
-links to theory docs, specifications
+* [RTE board](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
+    (this document is based on v1.1.0)
+* Micro-USB 5V 2.5A power supply
+* Orange Pi
+* SD card
+* Ethernet cable
+* USB-UART converter with 3 wire cables
+* Ubuntu (based on 22.04)
 
 ## Preparation of RTE
 
-1. Prepare SD card.
-1. Flash SD card - etcher/bmaptool more?
-1. Insert SD card into Orange PI
-1. Insert Orange PI into RTE
-1. Connect Ethernet cable to Orange PI
-1. Connect USB-UART with RTE
-1. Minicom from Ubuntu ? / looking for ip rte in local network
-1. Plug power supply into RTE J17 Micro-usb slot
+1. Flash SD card using [this image](?). The flashing method isn't imposed but an
+    [etcher](https://www.balena.io/etcher/) is recommended.
+1. Insert SD card into Orange Pi.
+1. Insert Orange Pi into RTE.
+1. Connect the ethernet cable to Orange Pi.
+1. Plug the USB-UART converter into your computer and connect its pins with 
+    [RTE J2 Header](../v1.1.0/specification.md/#uart0-header). (you may need a
+    USB extension cable)
+    
+    |UART Converter | RTE J2 Header|
+    |:-------------:|:------------:|
+    | GND           | GND          |
+    | TXD           | RX           |
+    | RXD           | TX           |
 
-FINAL: Acces to command line in RTE
+1. Open the serial connection with RTE from your PC using a previously connected
+    USB-UART converter by executing the following command:
+
+    ```bash
+    sudo minicom -D /dev/ttyUSB<x>
+    ```
+
+    Substitute <x> with the device number corresponding to your USB-UART
+    Converter for example `/dev/ttyUSB0` if it is the only converter connected
+    to your PC.
+1. Plug the power supply into the RTE J17 Micro-USB slot.
+1. Login into the device by using the default credentials:
+    Login: `root`
+    Password: `meta-rte`
