@@ -22,10 +22,10 @@ common preparation of RTE without listed functions.
 1. Insert SD card into Orange Pi.
 1. Insert Orange Pi into RTE.
 1. Connect the ethernet cable to Orange Pi.
-1. Plug the USB-UART converter into your computer and connect its pins with 
+1. Plug the USB-UART converter into your computer and connect its pins with
     [RTE J2 Header](../v1.1.0/specification.md/#uart0-header). (you may need a
     USB extension cable)
-    
+
     |UART Converter | RTE J2 Header|
     |:-------------:|:------------:|
     | GND           | GND          |
@@ -39,7 +39,7 @@ common preparation of RTE without listed functions.
     sudo minicom -D /dev/ttyUSB<x>
     ```
 
-    Substitute <x> with the device number corresponding to your USB-UART
+    Substitute `<x>` with the device number corresponding to your USB-UART
     Converter for example `/dev/ttyUSB0` if it is the only converter connected
     to your PC.
 1. Plug the power supply into the RTE J17 Micro-USB slot.

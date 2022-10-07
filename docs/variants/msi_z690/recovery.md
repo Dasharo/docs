@@ -148,7 +148,7 @@ Reading flash... done.
 
 You don't need to wait for the command completion and interrupt it with Ctrl+C
 shortcut, it just serves as a confirmation of good connection. If yo udecide to
-interrupt it, reset the CH341A programmer bu unpluging and repluging it to USB
+interrupt it, reset the CH341A programmer by unpluging and repluging it to USB
 port. Now stabilize your hand holding the WSON8 probe on the flash chip and
 invoke the real flashing command (e.g. if your original/working firmware backup
 is saved as `firmware_backup.bin`):
