@@ -15,27 +15,29 @@ subjected before the release of the new binary.
 | 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR010.001 and ECR010.002   |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
-| 7.   | [Custom boot menu key][CBK]                            | CBK           | All                                  |
+| 7.   | [Custom boot keys][CBK]                                | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][USB]                         | USB           | All                                  |
-| 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-| 10.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |
-| 11.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
-| 12.  | [USB-C/Thunderbolt][UTC]                               | UTC           | All                                  |
-| 13.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All                                  |
-| 14.  | [SD card support][SDC]                                 | SDC           | All                                  |
-| 15.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
-| 16.  | [Custom fan curve][FAN]                                | FAN           | FAN001.001                           |
-| 17.  | [SMBIOS][DMI]                                          | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001  |
-| 18.  | [Docking station detect][DUD]                          | DUD           | All                                  |
-| 19.  | [Docking station USB devices][DUB]                     | DUB           | All                                  |
-| 20.  | [Docking station Audio][DAU]                           | DAU           | All                                  |
-| 21.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
-| 22.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
-| 23.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
-| 23.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
-| 24.  | [Network boot][PXE]                                    | PXE           | PXE007.001                           |
-| 25.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
-| 26.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
+| 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | All                                  |
+| 10.  | [UEFI Shell][USH]                                      | USH           | All                                  |
+| 11.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |
+| 12.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
+| 13.  | [USB-C/Thunderbolt][UTC]                               | UTC           | All                                  |
+| 14.  | [Network boot][PXE]                                    | PXE           | Without PXE007.001                   |
+| 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All                                  |
+| 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
+| 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
+| 18.  | [Custom fan curve][FAN]                                | FAN           | FAN001.001                           |
+| 19.  | [SMBIOS][DMI]                                          | DMI           | All                                  |
+| 20.  | [Docking station detect][DUD]                          | DUD           | All                                  |
+| 21.  | [Docking station USB devices][DUB]                     | DUB           | All                                  |
+| 22.  | [Docking station Audio][DAU]                           | DAU           | All                                  |
+| 23.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
+| 24.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
+| 25.  | [Firmware update using Dasharo Tools Suite][FDT]       | FDT           | All                                  |
+| 26.  | [CPU status][CPU]                                      | CPU           | All                                  |
+| 27.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
+| 28.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
+| 29.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -46,6 +48,7 @@ subjected before the release of the new binary.
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
 [USB]: ../../unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
+[USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
 [AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
 [UTC]: ../../unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
@@ -62,6 +65,7 @@ subjected before the release of the new binary.
 [FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
 [ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
+[CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 
@@ -73,16 +77,22 @@ subjected before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
+[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 
 ## Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [CPU frequency measure][CPF]       | CPF         | All                                  |
+| 1.   | [coreboot boot measure][CBMEM]                    | CBMEM         | All                                  |
+| 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
+| 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
 
+[CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md

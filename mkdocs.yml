@@ -58,6 +58,7 @@ nav:
           - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
+    #   - 'NovaCustom NV4x 11th gen':
       - 'NovaCustom NV4x':
           - 'Overview': variants/novacustom_nv4x/overview.md
           - 'Releases': variants/novacustom_nv4x/releases.md
@@ -74,14 +75,9 @@ nav:
           - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
           - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
           - 'Checbox results': variants/novacustom_nv4x/compatibility-check-results-ubuntu.md
-      - 'Tuxedo IBS15':
-          - 'Releases': variants/tuxedo_ibs15/releases.md
-          - 'Building manual': variants/tuxedo_ibs15/building.md
-          - 'Installation manual': variants/tuxedo_ibs15/installation.md
-          - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
-          - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+    #   - 'NovaCustom NV4x 12th gen':
+    #       - 'Test matrix': variants/novacustom_nv4x_12th_gen/test-matrix.md
+    #   - 'NovaCustom NS5x/7x 11th gen':
       - 'NovaCustom NS5x/7x':
           - 'Overview': variants/novacustom_ns5x_7x/overview.md
           - 'Releases': variants/novacustom_ns5x_7x/releases.md
@@ -95,6 +91,16 @@ nav:
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
           - 'EC firmware revocery': variants/novacustom_ns5x_7x/ec_recovery.md
+    #   - 'NovaCustom NS5x/7x 12th gen':
+    #       - 'Test matrix': variants/novacustom_ns5x_7x_12th_gen/test-matrix.md
+      - 'Tuxedo IBS15':
+          - 'Releases': variants/tuxedo_ibs15/releases.md
+          - 'Building manual': variants/tuxedo_ibs15/building.md
+          - 'Installation manual': variants/tuxedo_ibs15/installation.md
+          - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
+          - 'Logo customization': common-coreboot-docs/custom_logo.md
+          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md
