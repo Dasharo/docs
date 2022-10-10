@@ -11,7 +11,7 @@ enable the touchpad hotkey to work under Linux, follow the steps below:
 1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
 
     ```bash
-    evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNS50_70MU:*
+    evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNS5x_NS7xPU:*
             KEYBOARD_KEY_f7=191
             KEYBOARD_KEY_f8=191
     ```

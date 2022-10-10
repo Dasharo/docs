@@ -35,8 +35,3 @@ software flashing is not possible due to enabled BIOS Guard.
   ```
 
 > This command also preserves UEFI settings and the boot order.
-
-### Update using fwupd
-
-To update the firmware using fwupd follow
-[this documentation](../../common-coreboot-docs/fwupd_usage.md).
