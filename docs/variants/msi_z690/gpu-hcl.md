@@ -35,5 +35,4 @@ Information about GPU might be read from GPU package or documentation.
 | EVGA NVidia RTX 2080 | 8GB | GDDR6 | 448GB/s           | Gen3               | 1                            |  |
 | PNY NVidia RTX A5000 | 24GB | GDDR6 | 768GB/s           | Gen4               | 1                            |  |
 
-
 [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
