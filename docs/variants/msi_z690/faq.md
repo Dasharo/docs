@@ -58,14 +58,7 @@ We can say the "supported" one is the one we have tested. It is the
 `Intel Core i5-12600K` and you can check that in the
 [Hardware Configuration Matrix](../hardware-matrix).
 
-In practice, any Alder Lake-S Processor with integrated GPU
-(which means no F-series).
-
-F-series is not supported because currently the PCIe ports are not initialized,
-so there is no other way to get video output (or any other signs of system being
-functional, unless you have a way to get logging from the
-[Serial header](../development/#hardware-connection)) to know that it is
-actually working.
+In practice, any Alder Lake-S Processor should work.
 
 12900KS is rather unknown at the moment, because it was released later and may
 require more recent microcode.
