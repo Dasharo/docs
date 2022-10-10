@@ -42,16 +42,25 @@ The easiest way to build coreboot is to use the official Docker image.
     git checkout REVISION
     ```
 
+1. Run the coreboot-sdk container:
+
+    ```bash
+     docker run --rm -it \
+        -v $PWD:/home/coreboot/coreboot \
+        -w /home/coreboot/coreboot \
+        coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+    ```
+
 1. Build the firmware:
 
     ```bash
-    ./build.sh build
+    cp configs.config.clevo_ns5xpu_ns7xpu .config
+    make oldddefconfig
+    make
     ```
 
-    The resulting coreboot image will be placed in
-    `artifacts/dasharo_novacustom_ns5xz_VERSION.rom`.
+This will produce a Dasharo binary placed in `build/coreboot.rom`, which can be
+flashed in following ways, depending on your situation:
 
-**Warning:** Do not run `./build.``sh` as root. This command uses docker and
-should be executed as your current user. If you're having trouble running
-`build.sh` on your user account, follow the `Docker` instructions outlined in
-[Requirements](#requirements).
+- To flash Dasharo first time refer to [initial deployment manual](initial-deployment.md).
+- To update Dasharo refer [firmware update](firmware-update.md).
