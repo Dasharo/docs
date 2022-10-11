@@ -1,4 +1,4 @@
-## What is Dasharo?
+# What is Dasharo?
 
 Dasharo is registered trademark and product developed by
 [3mdeb](https://3mdeb.com).
@@ -29,16 +29,14 @@ Dasharo typically may get support for fully open platforms like [Raptor
 Computing Systems Talos II][raptor] family, [ASUS KGPE-D16][kgpe-d16] and other
 (not so open), but also very new stuff like [MSI Z690A DDR4][msi-z690a].
 
-
 ## What Dasharo provides?
 
 For every supported hardware Dasharo Team provides:
 
 * [Source code](https://github.com/dasharo)
-* Test results in 
+* Test results in
 * [GPG keys](https://github.com/3mdeb/3mdeb-secpack/tree/master/dasharo)
 * Signed binaries in release section
-
 
 ## What is Dasharo binary blob policy?
 
@@ -103,12 +101,9 @@ open-source firmware distribution (for details please check [gerrit review][gerr
 We respect coreboot community opinion, so we agreed that in case of coreboot
 documentation it would be better to use open-source based firmware
 distribution. It doesn't mean we agree with that decision:
-- Definitions and rules used in coreboot documentation review
-- Rules seem to no be applied equally to all contributors of [coreboot
+* Definitions and rules used in coreboot documentation review
+* Rules seem to no be applied equally to all contributors of [coreboot
 distribution][cb-distro]
-- 
-
-
 
 ## Why Dasharo is not called coreboot firmware distribution?
 
@@ -119,35 +114,41 @@ not enough in most cases for booting modern computer.
 
 ## What value Dasharo provide in comparison to coreboot?
 
-- Dasharo is open-source firmware distribution based on coreboot and other
+* Dasharo is open-source firmware distribution based on coreboot and other
 open-source firmware frameworks, you can think about Dasharo and coreboot
 relation in the same way as you think about Debian/Ubuntu/RedHat and Linux.
-- We provide long term maintenance - coreboot community for various reasons, do
+* We provide long term maintenance - coreboot community for various reasons, do
 not merge some patches, because understaffing, lack of reviewer some changes
 have long way to upstream, we maintain those patches and make them work
 before those will go upstream, if ever, we are committed to maintain platforms
 which are moved to branch in coreboot.
-- We provide transparent validation results - coreboot in itself provide no
+* We provide transparent validation results - coreboot in itself provide no
 guarantees around release quality and do not provide binary distribution (for
 reference please check [coreboot project scope][coreboot-scope], we provide
 those in scope of validation we perform.
-- We provide seamless deployment - our documentation provide information about
+* We provide seamless deployment - our documentation provide information about
 initial deployment, updates and recovery procedures. We working on commercial
 product called [Dasharo Tools Suite OS][dtsos], which will largely improve firmware
 deployment, hardware compatibility reporting and  binary blobs transmission
 wherever it is necessary, as well as recovery.
-- Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and enable
+* Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and enable
 customers and community platforms, so they can get seamless firmware update in
 Linux.
-- Support  - Dasharo team is paid to provide support in community through
+* Support  - Dasharo team is paid to provide support in community through
 [Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
 commercial products related to support to make business feasible, but some
 level of support always would be available to community.
-- We provide ready to use binaries with GPG based signing scheme that improve
+* We provide ready to use binaries with GPG based signing scheme that improve
 verification where firmware coming from.
 
 <!--
+
 ## Why Dasharo Team is against moving code to branches in coreboot?
+
+## What is the difference between open-source firmware development in free time
+and open-source firmware development as a business?
+
+## What is Dasharo Certification Program?
 -->
 
 ## Why there is no AMD mainboard supported in Dasharo ?
@@ -169,6 +170,33 @@ for AMD is possible. Because Dynamic Root of Trust can work without blob, we
 favor AMD, but we can't do anything without a partner who can sponsor the
 development effort. We are on the market of open-source firmware vendors, not
 hardware vendors.
+
+## Can you port Dasharo to my mainboard?
+
+There are other versions of the same questions:
+
+* Dasharo supports mainboard X and I have mainboard Y (or X'). Can you teach me
+  how to port Dasharo to my mainboard?
+* Can you help me port Dasahro to my mainboard?
+
+**TL;DR: No, we can't.**
+
+The answer to that question requires understanding of many aspects of
+open-source firmware business, which we learned over the years. Key point is
+that we can't help to port arbitrary targets. Hardware have to be carefully
+selected to bring most benefits to open-source firmware community and improve
+sustainability of the ecosystem. Random hardware porting lead to unmaintainable
+stack of platforms which no one adapts in scale, what does not lead to market
+change.
+
+Dasharo Team tries to select platforms with long term availability potential.
+
+Because we are fully responsible for hardware that we enable in open-source
+firmware ecosystem our releases have to pass Dasharo Certification criteria.
+Whole effort is relatively expensive and in most cases not feasible for
+enabling one platform. That's why in most cases our customers are OEM/ODM,
+angel investors, or commuinities which want to enable reasonable quantities of
+hardware (>200pcs).
 
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
 [dtsos]: https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue+is%3Aopen+label%3ADasharoToolsSuite
