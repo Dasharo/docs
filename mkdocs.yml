@@ -63,7 +63,7 @@ nav:
           - 'Overview': variants/novacustom_nv4x/overview.md
           - 'Releases': variants/novacustom_nv4x/releases.md
           - 'Building manual': variants/novacustom_nv4x/building-manual.md
-          #- 'Initial deployment': variants/novacustom_nv4x/initial-deployment.md
+          - 'Initial deployment': variants/novacustom_nv4x/initial-deployment.md
           # firmware update
           # recovery
           - 'Hardware Configuration Matrix': variants/novacustom_nv4x/hardware-matrix.md
