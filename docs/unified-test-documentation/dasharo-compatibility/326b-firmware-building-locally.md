@@ -12,7 +12,7 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Make yourself familiar with Building manual procedure dedicated for
     the relevant platform:
-    * [Novacustom NV4x](../../variants/novacustom_nv4x/building.md),
+    * [Novacustom NV4x](../../variants/novacustom_nv4x/building-manual.md),
     * [Novacustom NS5x/7x](../../variants/novacustom_ns5x_7x/building-manual.md).
 
 ## FLB001.001 Firmware locally build
