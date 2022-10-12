@@ -235,16 +235,18 @@ Use following procedure if your 4M flash contain vendor BIOS.
 flashrom -w your_bios_backup_8M.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E"
 ```
 
-# RPI RECOVERY STEPS TO VENDOR BIOS
+# RaspberryPi Recovery
 
-## Recovery For Initial Incorrect Deployment
-a. If you attempted to flash dasharo, using the below command, without using the Dasharo Tools Suite OEM you may have caused a break within the Intel ME  region of the flash chip.
+## Overview
+
+If you attempted to flash dasharo, using the below command, without using the Dasharo Tools Suite OEM you may have caused a break within the Intel ME region of the flash chip.
 
 ```bash
 flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
 ```
 
 ## Required Items
+
 You will need to purchase an [8 Pin Pomona Clip](https://www.digikey.com/en/products/detail/pomona-electronics/5250/745102?s=N4IgTCBcDaIKxjgBgAQAUD2BbDA7AhiiALoC%2BQA), a [16 Pin Pomona Clip](https://www.digikey.com/en/products/detail/pomona-electronics/5252/745103?s=N4IgTCBcDaIKxgQAgAoHsC2aB2BDJIAugL5A), a [Raspberry pi 3B+ or above](https://www.adafruit.com/product/3775?src=raspberrypi), and [female-to-female DuPont cables](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98)
 
 ## Steps
@@ -266,7 +268,7 @@ You will need to purchase an [8 Pin Pomona Clip](https://www.digikey.com/en/prod
    G                                   3.3V MOSIMISO|                              GND
    E                                 (VCC)         CLK
      Body of Pi (closest to you)
-     CREDIT: https://github.com/merge/skulls/blob/master/x230/README.md
+     CREDIT: [skulls](https://github.com/merge/skulls/blob/master/x230/README.md)
 
 3. Activate your SPI interface on your RPi.
 
@@ -285,11 +287,11 @@ Confirm changes.
 ```bash
 split -b8M bio_backup.bin
 ```
-
 This should produce two (2) seperate files within your directory, xaa and xab. You xaa blob will be 8MB (ME blob) and your xab will be 4MB (BIOS blob). 
 
 5. With your PC and your RPi powered off and power cords *removed* clip the 8 Pin Pomona Clip to the 8 Pin chip. 
 
+<center>
 ### 8 Pin Clip
 Left Side Clip
 x  x  x  x
@@ -304,6 +306,7 @@ x  x  x  x
 |  |     |
 MOSI    VCC
   CLK
+</center>
 
 6. Boot the RPi.
 
@@ -325,6 +328,7 @@ sudo flashrom -w xab -p linux_spi:dev=/dev/spidev0.0,spispeed=16000 -c "MX25L320
 
 10. Plug the DuPont female-to-female connectors to the 16 Pin Pomona Clip 
 
+<center>
 ### 16 Pin Clip
 Left Side Clip
 x  x  x  x  x  x  x  x
@@ -338,6 +342,7 @@ x  x  x  x  x  x  x  x
 |  |                 |
 CLK|                GND
   MOSI
+</center>
 
 11. With your PC and your RPi powered off and power cords *removed* clip the 16 Pin Pomona Clip to the 16 Pin chip. 
 
