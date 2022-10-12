@@ -1,6 +1,6 @@
 # Flashing guide
 
-This document describes how to set up external flashing on some devices using
+This document describes how to set up external flashing for the devices using
 RTE.
 
 ## NS5x/7x 12th Generation
