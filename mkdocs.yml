@@ -73,7 +73,6 @@ nav:
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
           - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
-          - 'Dasharo Tools Suite': common-coreboot-docs/dasharo_tools_suite.md
           - 'Checbox results': variants/novacustom_nv4x/compatibility-check-results-ubuntu.md
     #   - 'NovaCustom NV4x 12th gen':
     #       - 'Test matrix': variants/novacustom_nv4x_12th_gen/test-matrix.md
