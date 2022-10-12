@@ -8,7 +8,7 @@ RTE.
 ### Prerequisites
 
 * [Prepared RTE](../v1.1.0/quick-start-guide.md)
-* WSON8 probe - can be bought from China on Aliexpress or eBay.
+* WSON8 probe
 
     ![](../../../images/ch341a_rec/wson8_probe.jpg)
 
