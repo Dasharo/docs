@@ -17,7 +17,9 @@ common preparation of RTE without listed functions.
 
 ## Preparation of RTE
 
-1. Flash SD card using [this image](?). The flashing method isn't imposed but an
+1. Build RTE image using the
+    [meta-rte repository](https://github.com/3mdeb/meta-rte).
+1. Flash SD card using this image. The flashing method isn't imposed but an
     [etcher](https://www.balena.io/etcher/) is recommended.
 1. Insert SD card into Orange Pi.
 1. Insert Orange Pi into RTE.
