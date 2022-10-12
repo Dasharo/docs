@@ -28,6 +28,23 @@ Currently, there are:
 This section provide links and changelogs of DTS CE version started from release
 v1.0.0.
 
+### v1.0.2
+
+#### Images
+
+* [USB bootable DTS CE v1.0.2 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz)
+* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256)
+* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256.sig)
+
+  See how to verify hash and signature on [this video.](TBD-https://youtu.be/oTx2iStxXOE)
+
+#### Changelog
+
+* Added system76_ectool to enable Embedded Controller [firmware updating](#dasharo-ec-update)
+* Added ec_transition script which helps with full Dasharo/Embedded Controller
+  [firmware transition](#dasharo-ec-transition) for NS50 70MU and NS70 laptops
+* First public release: [meta-dts-ce](https://github.com/Dasharo/meta-dts-ce)
+
 ### v1.0.1
 
 #### Images
@@ -188,42 +205,54 @@ fwupdmgr update
 
 DTS allows to perform full Embedded Controller firmware transition from the
 proprietary vendor EC firmware, to the open-source Dasharo EC firmware.
-Currently, this functionality is supported on  the
-[NovaCustom NS5x/NS7x only](../variants/novacustom_ns5x_7x/overview.md)).
+Currently, this functionality is supported on the
+[NovaCustom NS5x/NS7x](../variants/novacustom_ns5x_7x/overview.md)) and
+[NovaCustom NV4x](../variants/novacustom_nv4x/overview.md) only.
 
 To perform EC transition, make sure you are
-[running DTS version 1.0.1 or higher](#running) and follow these steps:
+[running DTS version v1.0.2 or higher](#running) and follow these steps:
 
-* After boot, choose option number 9 to drop to Shell
+* After boot, choose option number 6 open custom vendor submenu
 * Plug in power supply (without it, flashing EC is not possible as losing power
   may result in firmware corruption)
-* Download BIOS and EC update files:
+* Choose option number 1 to perform full EC transition
+  > Note: below is an example output from Embedded Controller transition on
+    NovaCustom NS50MU laptop.
 
   ```bash
-  wget -O firmware.rom https://cloud.3mdeb.com/index.php/s/SKpqSNzfFNY7AbK/download
-  ```
+  Attempting to perform full EC transition
+  Checking for opensource firmware
+  Waiting for network connection ...
+  --2022-09-20 14:00:50--
+  https://cloud.3mdeb.com/index.php/s/GK2KbXaYprkCCWM/download
+  Resolving cloud.3mdeb.com... 84.10.27.202
+  Connecting to cloud.3mdeb.com|84.10.27.202|:443... connected.
+  HTTP request sent, awaiting response... 200 OK
+  Length: 131072 (128K) [application/octet-stream]
+  Saving to: '/tmp/ecupdate.rom'
 
-  ```bash
-  wget -O ec.rom https://cloud.3mdeb.com/index.php/s/GK2KbXaYprkCCWM/download
-  ```
+  /tmp/ecupdate.rom      100%[========>] 128.00K  --.-KB/s    in 0.02s
 
-* Run script for EC transition:
+  2022-09-20 14:00:51 (6.00 MB/s) - '/tmp/ecupdate.rom'
+  saved [131072/131072]
 
-  ```bash
-  ec_transition firmware.rom ec.rom
-  ```
+  --2022-09-20 14:00:51--
+  https://cloud.3mdeb.com/index.php/s/SKpqSNzfFNY7AbK/download
+  Resolving cloud.3mdeb.com... 84.10.27.202
+  Connecting to cloud.3mdeb.com|84.10.27.202|:443... connected.
+  HTTP request sent, awaiting response... 200 OK
+  Length: 16777216 (16M) [application/octet-stream]
+  Saving to: '/tmp/biosupdate.rom'
 
-  > Note: Make sure you have provided 2 arguments:
-  The first is path to BIOS update file and the second is path to EC update file
+  /tmp/biosupdate.rom      100%[========>]  16.00M  5.49MB/s    in 2.9s
 
-  The output of the above command should look as follows:
+  2022-09-20 14:00:54 (5.49 MB/s) - '/tmp/biosupdate.rom'
+  saved [16777216/16777216]
 
-  ```bash
-  Getting update
+  Successfully downloaded EC and FW files.
   /tmp/biosupdate.rom: OK
   Found PCI subsystem match for device CLEVO NS50MU/NS51MU
   EC version: 1.07.07 is not supported, update required
-  Getting EC firmware update...
   /tmp/ecupdate.rom: OK
   Updating EC...
   flashrom v1.2-575-g5618d82 on Linux 5.15.36-yocto-standard (x86_64)
@@ -235,7 +264,8 @@ To perform EC transition, make sure you are
   Mainboard EC Version: 1.07.07
   Flash Part ID: ef 00 00
   Found unknown Winbond flash chip
-  Found Programmer flash chip "Opaque flash chip" (128 kB, Programmer-specific) on ite_ec.
+  Found Programmer flash chip "Opaque flash chip" (128 kB,
+  Programmer-specific) on ite_ec.
   Reading old flash chip contents... done.
   Erasing and writing flash chip... Erase/write done.
   Verifying flash... VERIFIED.
@@ -245,12 +275,15 @@ To perform EC transition, make sure you are
   flashrom is free software, get the source code at https://flashrom.org
 
   Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-  No DMI table found.
+  coreboot table found at 0x76a64000.
   Found chipset "Intel Tiger Lake U Premium".
-  Enabling flash write... SPI Configuration is locked down.
-  Enabling hardware sequencing because some important opcode is locked.
+  Enabling flash write...
+  Warning: Setting BIOS Control at 0xdc from 0x8b to 0x89 failed.
+  New value is 0x8b.
+  SPI Configuration is locked down.
   OK.
-  Found Programmer flash chip "Opaque flash chip" (16384 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+  Found Programmer flash chip "Opaque flash chip" (16384 kB,
+  Programmer-specific) mapped at physical address 0x0000000000000000.
   Reading ich descriptor... done.
   Using region: "bios".
   Reading old flash chip contents... done.
@@ -275,15 +308,24 @@ To perform EC transition, make sure you are
   The output of the above command should contain information about
   the version of flashed firmware:
 
+    - on `NovaCustom NS5x/NS7x`
+
   ```bash
   board: clevo/ns50mu
   version: 2022-08-31_cbff21b
   ```
 
+    - on `NovaCustom NV4x`
+
+  ```bash
+  board: clevo/nv40mz
+  version: 2022-10-07_c662165
+  ```
+
 ## Dasharo EC update
 
-DTS allows to update Embedded Controller firmware to the newer version. To
-properly update it, follow these steps:
+DTS allows to update open-source Embedded Controller firmware to the newer
+version. To properly update it, follow these steps:
 
 * Retrieve information about your current EC
 
