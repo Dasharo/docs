@@ -17,12 +17,33 @@ common preparation of RTE without listed functions.
 
 ## Preparation of RTE
 
-1. Build RTE image using the
-    [meta-rte repository](https://github.com/3mdeb/meta-rte).
-1. Flash SD card using this image. The flashing method isn't imposed but an
-    [etcher](https://www.balena.io/etcher/) is recommended.
-1. Insert SD card into Orange Pi.
+1. Download the latest version of the RTE image from the
+    [meta-rte repository](https://github.com/3mdeb/meta-rte/releases/latest).
+1. Flash the SD card using `bmaptool` or `balenaEtcher`.
+    1. to do this by `balenaEtcher` go to the [producer site][https://www.balena.io/etcher/]
+        and follow his procedure on how to download and flash an SD card
+    1. to do this by `bmaptool` reproduce the following steps:
+        1. install `bmaptool` by opening the terminal and typing the following
+            command:
+
+            ```bash
+            sudo apt install bmap-tools
+            ```
+
+        1. create the bmap by typing the following command:
+
+            ```bash
+            bmaptool create /path/to/your/image > /path/where/you/want/bmap/file/saved/bmapfilename.bmap
+            ```
+
+        1. flash image to the SD card by typing the following command:
+
+            ```bash
+            sudo bmaptool copy --bmap ~/path/where/your/bmap/file/is/located /path/where/your/image/is/located /path/to/memory/device
+            ```
+
 1. Insert Orange Pi into RTE.
+1. Insert SD card into Orange Pi.
 1. Connect the ethernet cable to Orange Pi.
 1. Plug the USB-UART converter into your computer and connect its pins with
     [RTE J2 Header](../specification/#uart0-header). (you may need a
@@ -41,9 +62,9 @@ common preparation of RTE without listed functions.
     sudo minicom -D /dev/ttyUSB<x>
     ```
 
-    Substitute `<x>` with the device number corresponding to your USB-UART
-    Converter for example `/dev/ttyUSB0` if it is the only converter connected
-    to your PC.
+    > Substitute `<x>` with the device number corresponding to your USB-UART
+    > Converter for example `/dev/ttyUSB0`. The `dmesg` command allows to
+    > identify the latest connected devices.
 
 1. Plug the power supply into the RTE J17 Micro-USB slot.
 1. Login into the device by using the default credentials:
