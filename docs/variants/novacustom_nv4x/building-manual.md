@@ -1,8 +1,9 @@
-# coreboot building
+# Building manual
 
 ## Intro
 
-This documents describes the procedure for compiling coreboot for NovaCustom NV4X.
+This document describes the procedure for compiling coreboot for NovaCustom
+NV4x
 
 ## Requirements
 
@@ -15,42 +16,43 @@ This documents describes the procedure for compiling coreboot for NovaCustom NV4
 
 The easiest way to build coreboot is to use the official Docker image.
 
-Obtain the image:
+1. Obtain the image:
 
-```bash
-docker pull coreboot/coreboot-sdk:0ad5fbd48d
-```
+    ```bash
+    docker pull coreboot/coreboot-sdk:0ad5fbd48d
+    ```
 
-Clone the coreboot repository:
+1. Clone the coreboot repository:
 
-```bash
-git clone https://review.coreboot.org/coreboot.git
-```
+    ```bash
+    git clone https://review.coreboot.org/coreboot.git
+    ```
 
-Navigate to the source code directory and checkout to the desired revision:
+1. Checkout to the desired Dasharo revision:
 
-> Replace the REVISION with one of the:
-> - `novacustom_nv4x/release` for the latest released version
-> - `novacustom_nv4x_vVERSION` (e.g. `v1.2.1`) for the given release
+    > Replace the REVISION with one of the:
+    > - `novacustom_nv4x/release` for the latest released version
+    > - `novacustom_nv4x_vVERSION` (e.g. `v1.0.0`) for the given release
 
-```bash
-cd coreboot
-git remote add dasharo https://github.com/dasharo/coreboot.git
-git submodule update --init --recursive --checkout
-git fetch dasharo
-git checkout REVISION
-```
+    ```bash
+    cd coreboot
+    git remote add dasharo https://github.com/dasharo/coreboot.git
+    git submodule update --init --recursive --checkout
+    git fetch dasharo
+    git checkout REVISION
+    ```
 
-Build the firmware:
+1. Build the firmware:
 
-```bash
-./build.sh build
-```
+    ```bash
+    ./build.sh build
+    ```
 
-The resulting coreboot image will be placed in
-`artifacts/dasharo_novacustom_nv4x_VERSION.rom`.
+    The resulting coreboot image will be placed in
+    `artifacts/dasharo_novacustom_nv4x_VERSION.rom`.
 
-**Warning**: Do not run `./build.sh` as root. This command uses docker and should
-be executed as your current user. If you're having trouble running `build.sh`
-on your user account, follow the `Docker` instructions outlined in
+
+**Warning:** Do not run `./build.``sh` as root. This command uses docker and
+should be executed as your current user. If you're having trouble running
+`build.sh` on your user account, follow the `Docker` instructions outlined in
 [Requirements](#requirements).
