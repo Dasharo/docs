@@ -20,8 +20,8 @@ common preparation of RTE without listed functions.
 1. Download the latest version of the RTE image from the
     [meta-rte repository](https://github.com/3mdeb/meta-rte/releases/latest).
 1. Flash the SD card using `bmaptool` or `balenaEtcher`.
-    1. to do this by `balenaEtcher` go to the [producer site][https://www.balena.io/etcher/]
-        and follow his procedure on how to download and flash an SD card
+    1. to do this by `balenaEtcher` go to the [producer site](https://www.balena.io/etcher/)
+        and follow his procedure on how to download and flash an SD card.
     1. to do this by `bmaptool` reproduce the following steps:
         1. install `bmaptool` by opening the terminal and typing the following
             command:
