@@ -3,16 +3,16 @@
 This document describes how to set up external flashing on some devices using
 RTE.
 
-## NS50/70PU
+## NS5x/7x 12th Generation
 
-## Prerequisites
+### Prerequisites
 
 * [Prepared RTE](../v1.1.0/quick-start-guide.md)
 * WSON8 probe - can be bought from China on Aliexpress or eBay.
 
     ![](../../../images/ch341a_rec/wson8_probe.jpg)
 
-## Flashing
+### Flashing
 
 1. Unscrew the bottom cover of the laptop.
 1. Disconnect the battery

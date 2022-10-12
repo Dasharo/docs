@@ -7,7 +7,8 @@ another device.
 
 * [Prepared RTE](../v1.1.0/quick-start-guide.md)
 * Two jumpers
-* Wybierz jedno z poniższych zależnie od możliwości podłączenia do danej platformy:
+* Choose one of the following cables depending on the connectivity to your
+    platform:
     - RS232-RJ45 cable
     - RS232-RS232 cable
     - 3 wire cables
@@ -16,7 +17,7 @@ another device.
 
 1. Connect the RTE header (J14 or J18) with the device serial port.
 1. Put the two jumpers on
-    [RTE J16 Header](../v1.1.0/specification.md/#uart-output-select-header):
+    [RTE J16 Header](../specification/#uart-output-select-header):
 
     1. For the RS232 port, they join COM and RS232 rows both on RX and TX
         columns.

@@ -4,7 +4,7 @@ The canonical example of RTE usage is hooking it to some hardware for SPI
 flashing, power control and serial logs gathering. This document describes the
 common preparation of RTE without listed functions.
 
-## Prerequisites (ALL)
+## Prerequisites
 
 * [RTE board](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
     (this document is based on v1.1.0)
@@ -25,7 +25,7 @@ common preparation of RTE without listed functions.
 1. Insert Orange Pi into RTE.
 1. Connect the ethernet cable to Orange Pi.
 1. Plug the USB-UART converter into your computer and connect its pins with
-    [RTE J2 Header](../v1.1.0/specification.md/#uart0-header). (you may need a
+    [RTE J2 Header](../specification/#uart0-header). (you may need a
     USB extension cable)
 
     |UART Converter | RTE J2 Header|
@@ -44,7 +44,8 @@ common preparation of RTE without listed functions.
     Substitute `<x>` with the device number corresponding to your USB-UART
     Converter for example `/dev/ttyUSB0` if it is the only converter connected
     to your PC.
+
 1. Plug the power supply into the RTE J17 Micro-USB slot.
 1. Login into the device by using the default credentials:
-    Login: `root`
-    Password: `meta-rte`
+    * Login: `root`
+    * Password: `meta-rte`
