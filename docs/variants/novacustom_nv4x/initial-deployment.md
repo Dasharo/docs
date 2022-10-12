@@ -62,7 +62,7 @@ with the path to the Dasharo image you want to flash, e.g. `build/coreboot.rom`.
 flashrom -p internal -w [path] --ifd -i bios
 ```
 
-<!-- ### Initial Installation
+### Initial Installation
 
 During the initial installation of Dasharo, you should deploy the supported
 Intel ME version (and configuration) on the device.
@@ -75,7 +75,7 @@ When flashing binaries with ME binary included, flashing of the whole chip is
 required. Additionally, the firmware has to be flashed externally using an
 external programmer like a `ch341a_spi`.
 
-![ns50mu chips](../../images/ns50mu_board_chips.jpg)
+![nv4x chips](../images/nv4x_board_chips.jpg)
 
 Steps for initial Dasharo installation:
 
@@ -84,7 +84,7 @@ Steps for initial Dasharo installation:
 1. Disconnect the CMOS battery. (2)
 1. Attach an external programmer with a SOIC-8 clip to the SPI flash chip. (3)
 1. Execute the following command, replacing [path] with the path to the firmware
-    image you want to flash, e.g. `novacustom_ns5x_7x_full_v1.0.0.rom`
+    image you want to flash, e.g. `novacustom_nv4x_full_v1.0.0.rom`
 
     ```bash
     flashrom -p ch341a_spi -w [path]
@@ -94,4 +94,4 @@ Steps for initial Dasharo installation:
 1. Connect the primary battery (1) - do **not** connect the CMOS battery yet.
     (2)
 1. Power on the laptop. The laptop may shut down once after training the memory.
-1. Once Dasharo is booted, shut down the laptop and reconnect the CMOS battery. -->
+1. Once Dasharo is booted, shut down the laptop and reconnect the CMOS battery.
