@@ -65,13 +65,11 @@ nav:
           - 'Building manual': variants/novacustom_nv4x/building-manual.md
           - 'Initial deployment': variants/novacustom_nv4x/initial-deployment.md
           - 'Firmware update': variants/novacustom_nv4x/firmware-update.md
-          - 'Recovery': variants/novacustom_nv4x_7x/recovery.md
+          - 'Recovery': variants/novacustom_nv4x/recovery.md
           - 'Hardware Configuration Matrix': variants/novacustom_nv4x/hardware-matrix.md
           - 'Test matrix': variants/novacustom_nv4x/test-matrix.md
           - 'Post-installation setup': variants/novacustom_nv4x/post_install.md
           - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
-          - 'Flashing with external programmer': variants/novacustom_nv4x/flashing_external.md
-          - 'Flashing with internal programmer': variants/novacustom_nv4x/flashing_internal.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
           - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
