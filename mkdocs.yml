@@ -24,8 +24,8 @@ markdown_extensions:
 nav:
   - 'Intro': index.md
   - 'Supported hardware':
-      # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
-      - 'Dell OptiPlex':
+  #   - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
+      - 'Dell OptiPlex 9010':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
           - 'Building manual': variants/dell_optiplex/building-manual.md
@@ -58,7 +58,7 @@ nav:
           - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
-    #   - 'NovaCustom NV4x 11th gen':
+      #   - 'NovaCustom NV4x 11th gen':
       - 'NovaCustom NV4x':
           - 'Overview': variants/novacustom_nv4x/overview.md
           - 'Releases': variants/novacustom_nv4x/releases.md
@@ -181,15 +181,13 @@ nav:
       - 'Trusted Computing': osf-trolling-list/trusted_computing.md
       - 'Jira Service Management': osf-trolling-list/jsm_documentation.md
       - 'Intel ME/CSME': osf-trivia-list/me.md
-  - 'Ecosystem':
-      - 'Overview': ecosystem/overview.md
-    # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
-      - 'Transparent Validation':
-        # - 'Overview': ecosystem/transparent-validation.md
-        # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
-        # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
-          - 'MSI Z690':
-              - 'Assembly and Validation': transparent-validation/msi-z690/assembly-and-validation.md
+  - 'Dasharo Certification Program':
+      - 'Overview': certification/overview.md
+      - 'Lab Assembly Guides':
+          - 'Overview': certification/lab-overview.md
+          - 'Dell OptiPlex 9010': transparent-validation/dell_optiplex/assembly-and-validation.md
+          - 'MSI PRO Z690-A WIFI DDR4': transparent-validation/msi-z690/assembly-and-validation.md
+      - 'Hardware tools':
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
               - 'Basic validation': transparent-validation/muxpi/basic-validation.md
@@ -197,13 +195,19 @@ nav:
               - 'Introduction': transparent-validation/rte/introduction.md
               - 'Specification': transparent-validation/rte/v1.1.0/specification.md
               - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
-        #     - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
+              - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
               - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
               - 'Revision History': transparent-validation/rte/revision-history.md
           - 'SD Wire':
               - 'Getting started': transparent-validation/sd-wire/getting-started.md
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
+  - 'Ecosystem':
+      - 'Overview': ecosystem/overview.md
+    # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
+        # - 'Overview': ecosystem/transparent-validation.md
+        # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
+        # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md
