@@ -35,18 +35,22 @@ RTE.
     [SPI header](../v1.1.0/specification.md/#spi-header) according to the
     picture and table below.
 
+    * Top view of flash chip:
+
     ![](../../../images/rte-v1.1.0-flash_chip_NS50_70PU.png)
 
-    | RTE SPI header | Flash Chip |
-    |:--------------:|:----------:|
-    | Vcc            | VCC        |
-    | CS             | CS#        |
-    | MISO (SO)      | SO (IO1)   |
-    | ISP            | IO2        |
-    | GND            | VSS        |
-    | SCLK           | SCLK       |
-    | MOSI (SI)      | SI         |
-    | NC             | IO3        |
+    * Table with all required connections:
+
+        | RTE SPI header | Flash Chip |
+        |:--------------:|:----------:|
+        | Vcc            | VCC        |
+        | CS             | CS#        |
+        | MISO (SO)      | SO (IO1)   |
+        | ISP            | IO2        |
+        | GND            | VSS        |
+        | SCLK           | SCLK       |
+        | MOSI (SI)      | SI         |
+        | NC             | IO3        |
 
 1. Put the flash script on RTE:
 
