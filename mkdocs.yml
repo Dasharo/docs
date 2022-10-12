@@ -183,10 +183,6 @@ nav:
       - 'Intel ME/CSME': osf-trivia-list/me.md
   - 'Dasharo Certification Program':
       - 'Overview': certification/overview.md
-      - 'Lab Assembly Guides':
-          - 'Overview': certification/lab-overview.md
-          - 'Dell OptiPlex 9010': transparent-validation/dell_optiplex/assembly-and-validation.md
-          - 'MSI PRO Z690-A WIFI DDR4': transparent-validation/msi-z690/assembly-and-validation.md
       - 'Hardware tools':
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
@@ -195,13 +191,16 @@ nav:
               - 'Introduction': transparent-validation/rte/introduction.md
               - 'Specification': transparent-validation/rte/v1.1.0/specification.md
               - 'Getting Started': transparent-validation/rte/v1.1.0/getting-started.md
-              - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
               - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
               - 'Revision History': transparent-validation/rte/revision-history.md
           - 'SD Wire':
               - 'Getting started': transparent-validation/sd-wire/getting-started.md
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
+      - 'Lab Assembly Guides':
+          - 'Overview': certification/lab-overview.md
+      #   - 'Dell OptiPlex 9010': transparent-validation/dell_optiplex/assembly-and-validation.md
+          - 'MSI PRO Z690-A WIFI DDR4': transparent-validation/msi-z690/assembly-and-validation.md
   - 'Ecosystem':
       - 'Overview': ecosystem/overview.md
     # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
