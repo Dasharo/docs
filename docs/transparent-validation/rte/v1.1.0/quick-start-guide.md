@@ -47,5 +47,5 @@ common preparation of RTE without listed functions.
 
 1. Plug the power supply into the RTE J17 Micro-USB slot.
 1. Login into the device by using the default credentials:
-    * Login: `root`
-    * Password: `meta-rte`
+    - Login: `root`
+    - Password: `meta-rte`

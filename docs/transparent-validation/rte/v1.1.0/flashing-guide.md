@@ -35,11 +35,11 @@ RTE.
     [SPI header](../v1.1.0/specification.md/#spi-header) according to the
     picture and table below.
 
-    * Top view of flash chip:
+    - Top view of flash chip:
 
     ![](../../../images/rte-v1.1.0-flash_chip_NS50_70PU.png)
 
-    * Table with all required connections:
+    - Table with all required connections:
 
         | RTE SPI header | Flash Chip |
         |:--------------:|:----------:|
