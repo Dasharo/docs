@@ -36,7 +36,7 @@ v1.0.0.
 * [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256)
 * [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256.sig)
 
-  See how to verify hash and signature on [this video.](TBD-https://youtu.be/oTx2iStxXOE)
+  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
 
 #### Changelog
 
