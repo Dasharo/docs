@@ -197,10 +197,10 @@ nav:
               - 'Getting started': transparent-validation/sd-wire/getting-started.md
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
-      - 'Lab Assembly Guides':
-      #   - 'Overview': certification/lab-overview.md
-          - 'Dell OptiPlex 9010': transparent-validation/lab-assembly-guides/dell_optiplex.md
+      - 'Pre-sale Device Assembly':
           - 'MSI PRO Z690-A WIFI DDR4': transparent-validation/lab-assembly-guides/msi_z690.md
+      - 'Lab Setup':
+          - 'Dell OptiPlex 9010': transparent-validation/lab-assembly-guides/dell_optiplex.md
   - 'Ecosystem':
       - 'Overview': ecosystem/overview.md
     # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
