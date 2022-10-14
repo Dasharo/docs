@@ -83,3 +83,27 @@ and Internet, then follow the steps below:
     to `Restart now` or `Retry`, so click them if something hasn't been
     installed yet, something has gone wrong or a restart is just required.
     The entire process may take up to 30 minutes.
+
+## Suspend fix for SATA disks (Windows and Linux)
+
+Only affects laptops with M.2 SATA disks experiencing sleep issues (the power
+LED not blinking while the laptop is suspended).
+
+Windows and certain Linux distros such as Ubuntu do not enable the necessary
+power saving tweaks to enable sleep mode while a SATA disk is installed. To
+apply the fix, run the following scripts
+
+### Windows:
+
+- Download the script: [link](https://cloud.3mdeb.com/index.php/s/nNQwDEKryCHGJ5n)
+- Double click on the script to install the tweak
+
+### Linux
+
+- Download the script: [link](https://cloud.3mdeb.com/index.php/s/ms9Dd7NtcXTj8KL)
+- Execute as root:
+
+    ```bash
+    chmod +x install_dipm_service.sh
+    sudo ./install_dipm_service.sh
+    ```
