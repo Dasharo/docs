@@ -259,7 +259,7 @@ nav:
               - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
               - 'Firmware locally building and flashing': unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
               - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
-              - 'Firmware flashing using Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
+              - 'Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
               - 'Embedded controller flashing': unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
               - 'Docking station detect': unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
               - 'Docking station USB devices': unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
