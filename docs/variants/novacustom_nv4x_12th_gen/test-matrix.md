@@ -33,7 +33,7 @@ subjected from before the release of the new binary.
 | 22.  | [Docking station Audio][DAU]                      | DAU           | All                                  |
 | 23.  | [Docking station USB-C][DUC]                      | DUC           | All                                  |
 | 24.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
-| 25.  | [Firmware update using Dasharo Tools Suite][FDT]  | FDT           | All                                  |
+| 25.  | [Firmware update using Dasharo Tools Suite][DTS]  | DTS           | DTS006.001, DTS007.001               |
 | 26.  | [CPU status][CPU]                                 | CPU           | All                                  |
 | 27.  | [Embedded controller flashing][ECF]               | ECF           | All                                  |
 | 28.  | [Logo customization functionality][LCM]           | LCM           | All                                  |
@@ -64,7 +64,7 @@ subjected from before the release of the new binary.
 [DAU]: ../../unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
 [DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
-[FDT]: ../../unified-test-documentation/dasharo-compatibility/326-DTS-firmware-update.md
+[DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
 [ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
