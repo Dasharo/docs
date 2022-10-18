@@ -29,13 +29,14 @@ This test aims to verify that DTS is properly booting from USB.
 
 **Test steps**
 
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-
-TBD
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
 
 **Expected result**
 
-SCREEN - TBD
+After a while, the DTS menu should appear.
 
 ## DTS002.001 DTS option Creating Dasharo HCL report works correctly
 
@@ -55,8 +56,14 @@ properly creates the report.
 
 **Test steps**
 
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-1. Option `1)` - TBD
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
+1. Type in `1` and press `Enter`.
+1. Wait for the question `Do you want to support Dasharo development by sending`
+    `us logs with hardware configuration?`, type in `y` and press Enter
 
 **Expected result**
 
@@ -80,8 +87,12 @@ turns off the DUT.
 
 **Test steps**
 
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-1. Option `10)` - TBD
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
+1. Type in `10` and press `Enter`.
 
 **Expected result**
 
@@ -105,8 +116,12 @@ the DUT.
 
 **Test steps**
 
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-1. Option `11)` - TBD
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
+1. Type in `11` and press `Enter`.
 
 **Expected result**
 
@@ -129,8 +144,12 @@ This test aims to verify that the option `Shell` in the DTS menu opens Shell.
 
 **Test steps**
 
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-1. Option `9)` - TBD
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
+1. Type in `9` and press `Enter`.
 
 **Expected result**
 
