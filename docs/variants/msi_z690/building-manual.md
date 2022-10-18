@@ -7,7 +7,7 @@ compatible with MSI PRO Z690-A WIFI DDR4.
 
 ## Requirements
 
-* `Ubuntu 20.04/21.04` as a host OS was tested
+* `Ubuntu 20.04/21.04/22.04` as a host OS was tested
 * Internet connection
 * Docker installed
     - follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)

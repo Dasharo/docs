@@ -2,16 +2,19 @@
 
 Flashing coreboot can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and
-running flashrom on Ubuntu 21.04.
+running flashrom on Ubuntu 22.04.
 
 ## Build flashrom
 
 Currently, the latest flashrom release lacks support for Alder Lake S internal
 flashing. Because of this, we need to build flashrom from
-[3mdeb fork](https://github.com/3mdeb/flashrom/tree/alder_lake_s).
+[3mdeb fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
 The procedure is based on
-[Ubuntu 21.04 desktop amd64 ISO](http://www.releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso)
-burned on the USB stick.
+[Ubuntu 22.04 desktop amd64 ISO](https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso)
+burned on the USB stick. Ubuntu 22.04 or newer if preferred, as it contains the
+network drivers for Ethernet and WiFi. Older versions of Ubuntu would require
+a USB to Ethernet adapter or equivalent to get network connection and install
+required software packages.
 
 Boot the Ubuntu live image and select `Try ubuntu` option. Open a terminal and
 proceed with commands below.
@@ -19,6 +22,7 @@ proceed with commands below.
 Install build dependencies:
 
 ```bash
+sudo apt-get update
 sudo apt-get install git build-essential pkg-config libpci-dev udev
 ```
 
