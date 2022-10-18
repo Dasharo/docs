@@ -11,12 +11,12 @@ coreboot port on the Talos II platform.
 |--------------------------------|---------------------------------------------------------------|
 | **CPU**                        | IBM POWER9 “Sforza”                                           |
 |                                | CPU Cooler                                                    |
+| **SSD**                        | Micron 1100 256GB M.2                                         |
 | **RAM**                        | Crucial CT8G4RF88266                                          |
 | **Flash memory**               | Micron MT25QL512ABB8ESF-0SIT                                  |
 | **Network**                    | Local network wired connection                                |
 | **Attached devices**           | 1. SanDisk USB 3.2Gen1 16 GB                                  |
 |                                | 2. Logitech, Inc. Keyboard K120                               |
-|                                | 3. Micron 1100 256GB M.2 SATA3                                |
 | **Ethernet**                   | 2x Broadcom BCM5719                                           |
 | **Power Supply**               | Corsair TX550M                                                |
 | **Power Control**              | Sonoff S20 switch                                             |
