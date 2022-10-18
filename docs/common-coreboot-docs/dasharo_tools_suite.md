@@ -43,7 +43,7 @@ v1.0.0.
 * Added new vendor specific menu entry which is displayed only on supported
   platforms, for now NovaCustom menu was added for NV4x and NS50 70MU laptops
 * DTS version is now printed in the main menu
-* `ec_transition` script now supports NV4XMB,ME,MZ laptops and automaticaly
+* `ec_transition` script now supports NV4XMB,ME,MZ laptops and automatically
   download firmware used for transition both for NV4x and NS5x laptopts,
   [firmware transition](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition)
   documentation is updated
