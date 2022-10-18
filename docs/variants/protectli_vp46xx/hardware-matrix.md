@@ -57,7 +57,7 @@ coreboot port on the Protectli VP46XX firewall.
 |                        | 3. SanDisk USB 3.2Gen1 16 GB                             |
 |                        | 4. USB Type-C Hub Pro UCN3286                            |
 | **USB Keyboard**       | DELL KB216                                               |
-| **MMC drive**          | TBD                                                      |
+| **MMC drive**          | SAMSUNG KLM8G1GETF-B041 (on-board)                       |
 | **TPM**                | PC Engines TPM1A LPC TPM                                 |
 | **Power supply**       | Movano 12V 10A 120W                                      |
 
