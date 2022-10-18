@@ -1,9 +1,8 @@
-# Building manual
+# coreboot building
 
 ## Intro
 
-This document describes the procedure for compiling coreboot for NovaCustom
-NV4x
+This documents describes the procedure for compiling coreboot for NovaCustom NV4X.
 
 ## Requirements
 
@@ -12,9 +11,9 @@ NV4x
     + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 - Git
 
-## Procedure
+## Build Dasharo BIOS firmware
 
-The easiest way to build coreboot is to use the official Docker image.
+The easiest way to build Dasharo firmware is to use the official Docker image.
 
 1. Obtain the image:
 
@@ -25,33 +24,66 @@ The easiest way to build coreboot is to use the official Docker image.
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/Dasharo/coreboot.git
     ```
 
-1. Checkout to the desired Dasharo revision:
+    Navigate to the source code directory and checkout to the desired revision:
 
-    > Replace the REVISION with one of the:
-    > - `novacustom_nv4x/release` for the latest released version
-    > - `novacustom_nv4x_vVERSION` (e.g. `v1.0.0`) for the given release
+    > Replace the REVISION with:
+    >
+    > - `clevo/release` for the latest released version
+    > - `novacustom_nv4x_vVERSION` (e.g. `v1.3.0`) for the given release
 
     ```bash
     cd coreboot
-    git remote add dasharo https://github.com/dasharo/coreboot.git
+    git checkout REVISION
     git submodule update --init --recursive --checkout
-    git fetch dasharo
+    ```
+
+1. Start the coreboot-sdk Docker container:
+
+    ```bash
+    docker run --rm -it -u $UID \
+       -v $PWD:/home/coreboot/coreboot \
+       -w /home/coreboot/coreboot \
+       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+    ```
+
+1. Build the firmware:
+
+    ```bash
+    cp configs/config.novacustom_nv4x .config
+    make olddefconfig
+    make
+    ```
+
+The resulting coreboot image will be placed in
+`build/coreboot.rom`.
+
+## Build EC firmware
+
+1. Clone the ec repository:
+
+    ```bash
+    git clone https://github.com/Dasharo/ec.git
+    ```
+
+    Navigate to the source code directory and checkout to the desired revision:
+
+    > Replace the REVISION with:
+    >
+    > - `release` for the latest released version
+    > - `novacustom_nv4x_vVERSION` (e.g. `v1.3.0`) for the given release
+
+    ```bash
+    cd ec
     git checkout REVISION
     ```
 
 1. Build the firmware:
 
     ```bash
-    ./build.sh build
+    EC_BOARD_VENDOR=clevo EC_BOARD_MODEL=nv40mz ./build.sh
     ```
 
-    The resulting coreboot image will be placed in
-    `artifacts/dasharo_novacustom_nv4x_VERSION.rom`.
-
-**Warning:** Do not run `./build.``sh` as root. This command uses docker and
-should be executed as your current user. If you're having trouble running
-`build.sh` on your user account, follow the `Docker` instructions outlined in
-[Requirements](#requirements).
+The resulting image will be placed in: `clevo_nv40mz_ec.rom`
