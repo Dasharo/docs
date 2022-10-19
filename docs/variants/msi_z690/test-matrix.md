@@ -25,6 +25,7 @@ subjected from before the release of the new binary.
 | 14.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 15.  | [Custom logo][CLG]                                | CLG           | All                                  |
 | 16.  | [Custom boot menu key][CBK]                       | CBK           | All                                  |
+| 17.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -43,6 +44,7 @@ subjected from before the release of the new binary.
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
 [CLG]: ../../unified-test-documentation/dasharo-compatibility/304-custom-logo.md
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
+[DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 
 ## Module: Dasharo security
 
