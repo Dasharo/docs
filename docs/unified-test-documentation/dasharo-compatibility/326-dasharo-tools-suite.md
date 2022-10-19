@@ -137,7 +137,7 @@ the DUT.
 
 **Expected result**
 
-The DUT should be restarted.
+The DUT should be rebooted without any complications.
 
 ## DTS005.001 DTS drop-to-shell option works correctly
 
