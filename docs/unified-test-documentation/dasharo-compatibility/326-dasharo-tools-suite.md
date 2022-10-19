@@ -8,9 +8,9 @@
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Wired network connection.
 1. Disable Secure Boot.
-1. Prepare the [bootable USB stick](../../common-coreboot-docs/dasharo_tools_suite/#bootable-usb-stick)
+1. Prepare the [bootable USB stick](../../../common-coreboot-docs/dasharo_tools_suite/#bootable-usb-stick)
 1. Make yourself familiar with
-    [Dasharo Tools Suite](../../common-coreboot-docs/dasharo_tools_suite).
+    [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
 ## DTS001.001 Booting DTS from USB works correctly
 
@@ -62,12 +62,24 @@ properly creates the report.
 1. Select the USB stick with DTS using the arrow keys and press `Enter`.
 1. Wait for `Enter an option:`.
 1. Type in `1` and press `Enter`.
-1. Wait for the question `Do you want to support Dasharo development by sending`
-    `us logs with hardware configuration?`, type in `y` and press Enter
+1. Wait for the question: Do you want to support Dasharo development by sending
+    us logs with hardware configuration?
+1. Type in `y` and press Enter.
 
 **Expected result**
 
-TBD - output
+The report should be generated, the whole process may take a few minutes.
+
+Example summary output:
+
+```bash
+SUMMARY
+=======
+
+ > All Curl calls exited without errors
+ > Attempt to send completed > <report_name>.tar.gz
+Thanks you for supporting Dasharo!
+```
 
 ## DTS003.001 DTS option power-off DUT works correctly
 
@@ -153,9 +165,18 @@ This test aims to verify that the option `Shell` in the DTS menu opens Shell.
 
 **Expected result**
 
-TBD
+1. Information about entering the shell and how to exit should be displayed.
+1. Shell command input should be activated.
 
-## DTS006.001 Attempt to flash device from DTS shell by using flashrom works correctly
+Example output:
+
+```bash
+Entering shell, to leave type exit and press Enter or press LCtrl+D
+
+bash-5.1#
+```
+
+## DTS006.001 Flash device from DTS shell by using flashrom works correctly
 
 **Test description**
 
@@ -174,10 +195,11 @@ using flashrom in `DTS Shell`.
 
 **Test steps**
 
-TBD
-
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-1. Wait for `Enter an option`.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
 1. Type 9 and click `Enter` to launch Shell.
 1. Run the following command to obtain `coreboot.rom` binary:
 
@@ -187,15 +209,18 @@ TBD
 
     > This is not only way to obtain binary. For example you can use `scp`.
 
-1. Run the following command to flash firmware:
+1. Run the following command to flash the firmware:
 
     ```bash
     flashrom -p internal -w /tmp/coreboot.rom
     ```
 
+    > Additional parameters may be needed for the `flashrom` command depending
+    > on the DUT.
+
 1. Power off the DUT.
-1. Repeat steps 1-8.
-1. Run the following command to check firmware version:
+1. Repeat steps 2-6.
+1. Run the following command to check the firmware version:
 
     ```bash
     dmidecode -t 0
@@ -205,7 +230,7 @@ TBD
 
 **Expected result**
 
-The output of `dmidecode` command should contain information about current
+The output of `dmidecode` command should contain information about the current
 firmware. The current firmware version should be equal to the binary version,
 which you were flashing.
 
@@ -215,7 +240,7 @@ Example output:
 Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
 
-## DTS007.001 Attempt to update device firmware from DTS Shell by using fwupd works correctly
+## DTS007.001 Update device firmware from DTS Shell by using fwupd works correctly
 
 **Test description**
 
@@ -233,12 +258,13 @@ firmware by using fwupd in DTS.
 
 **Test steps**
 
-TBD
-
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-1. Wait for `Enter an option`.
-1. Type 9 and click `Enter` to launch into Shell.
-1. Run the following commands to update firmware to the latest version:
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
+1. Type in `9` and press `Enter`.
+1. Run the following commands to update the firmware to the latest version:
 
     ```bash
     fwupdmgr refresh
@@ -246,8 +272,8 @@ TBD
     ```
 
 1. Power off the DUT.
-1. Repeat steps 1-8.
-1. Run the following command to check firmware version:
+1. Repeat steps 2-6.
+1. Run the following command to check the firmware version:
 
     ```bash
     dmidecode -t 0
@@ -257,7 +283,7 @@ TBD
 
 **Expected result**
 
-The output of `dmidecode` command should contain information about current
+The output of `dmidecode` command should contain information about the current
 firmware. The current firmware version should be equal to the binary version,
 which you were flashing.
 
@@ -267,7 +293,7 @@ Example output:
 Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
 
-## DTS008.001 Attempt to flash device EC firmware by using DTS built-in script works correctly
+## DTS008.001 Flash device EC firmware by using DTS built-in script works correctly
 
 **Test description**
 
@@ -285,9 +311,51 @@ firmware by using the built-in script in DTS.
 
 **Test steps**
 
+1. Plug the USB stick with DTS into the USB slot on the DUT.
 1. Power on the DUT.
-1. TBD
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
+1. Proceed with
+    [Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
 
 **Expected result**
 
-TBD
+1. After the flashing procedure itself, the DUT should be able to boot.
+1. The EC firmware version, after checking the method described in the
+    above-mentioned [documentation](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition),
+    should correspond to the latest version.
+
+## DTS009.001 Update device EC firmware by using DTS works correctly
+
+**Test description**
+
+This test aims to verify whether there is the possibility to update the DUT EC
+firmware by using system76_ectool in DTS.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Plug the USB stick with DTS into the USB slot on the DUT.
+1. Power on the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the USB stick with DTS using the arrow keys and press `Enter`.
+1. Wait for `Enter an option:`.
+1. Type in `9` and press `Enter`.
+1. Proceed with
+    [Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-update).
+
+**Expected result**
+
+1. After the updating firmware procedure itself, the DUT should be able to boot.
+1. The EC firmware version, after checking the method described in the
+    above-mentioned [documentation](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-update),
+    should correspond to the binary version used.
