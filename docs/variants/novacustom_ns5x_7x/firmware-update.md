@@ -35,5 +35,11 @@ by following
 
 ### Update using fwupd
 
+> Firmware update v1.3.0 is currently not available through the fwupd/LVFS due
+> to the significant change of the EC firmware and the
+> [EC trainsition process](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition)
+> being required. The future updates are expected to go back to the fwupd/LVFS
+> channel.
+
 To update the firmware using fwupd follow
 [this documentation](../../common-coreboot-docs/fwupd_usage.md).

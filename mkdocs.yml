@@ -68,7 +68,7 @@ nav:
           - 'Recovery': variants/novacustom_nv4x/recovery.md
           - 'Hardware Configuration Matrix': variants/novacustom_nv4x/hardware-matrix.md
           - 'Test matrix': variants/novacustom_nv4x/test-matrix.md
-          - 'Post-installation setup': variants/novacustom_nv4x/post_install.md
+          - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
           - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
@@ -86,7 +86,7 @@ nav:
           - 'Recovery': variants/novacustom_ns5x_7x/recovery.md
           - 'Hardware Configuration Matrix': variants/novacustom_ns5x_7x/hardware-matrix.md
           - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
-          - 'Post-installation setup': variants/novacustom_ns5x_7x/post_install.md
+          - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
           - 'EC firmware revocery': variants/novacustom_ns5x_7x/ec_recovery.md

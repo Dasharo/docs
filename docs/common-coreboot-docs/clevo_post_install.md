@@ -1,32 +1,46 @@
 # Post-installation setup
 
 This document contains extra steps to perform after installing Dasharo in order
-to enable full functionality.
+to enable full functionality of your device.
 
-## Touchpad hotkey enablement (Linux)
+## Linux
+
+This section covers Linux post-install steps tested on Ubuntu 22.04. It is
+likely thas similar procedures would for others Linux distributions as well.
+
+### Touchpad hotkey enablement
 
 The touchpad hotkey needs extra setup to function correctly under Linux. To
 enable the touchpad hotkey to work under Linux, follow the steps below:
 
-1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
+1. Execute fixup script:
 
-   ```bash
-   evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4XMB,ME,MZ:*
-           KEYBOARD_KEY_f7=191
-           KEYBOARD_KEY_f8=191
-   ```
-
-1. Execute the following commands:
-
-   ```bash
-   sudo systemd-hwdb update
-   sudo udevadm trigger
-   ```
+```bash
+curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/touchpad-fixup | sudo sh
+```
 
 After executing these steps, it should be possible to enable and disable the
 touchpad using the touchpad hotkey (Fn+F1) on the keyboard when using GNOME.
 
-## Nvidia drivers (Ubuntu 22.04)
+### Touchpad multi-touch support
+
+On NS7x an additional fix is necessary to enable multi-touch on Linux. Create
+a file `/etc/modprobe.d/blacklist-psmouse.conf` with the following contents:
+
+```bash
+blacklist psmouse
+```
+
+and then run the following commands:
+
+```bash
+sudo depmod -a
+sudo update-initramfs -u
+```
+
+### Nvidia drivers
+
+> It is only necessary to follow this step if your device has Nvidia GPU
 
 For proper working of the sleep mode on Ubuntu 22.04, it is required to
 install additional Nvidia drivers.
@@ -44,7 +58,9 @@ install additional Nvidia drivers.
     sudo reboot
     ```
 
-## Installing updates and drivers (Windows 11)
+## Windows 11
+
+### Updates and drivers installation
 
 Several features on Windows 11 (i. e. suspending the device) may not work or
 work unexpectedly without installing all of the updates and drivers.
