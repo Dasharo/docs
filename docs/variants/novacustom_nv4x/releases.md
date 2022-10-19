@@ -9,10 +9,75 @@ For details about our release process please read
 [Subscribe to NovaCustom NV4X Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
+[newsletter]: https://newsletter.3mdeb.com/subscription/S5ze5u_qN
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
+
+## v1.3.0 - 2022-10-18
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
+
+### EC firmware transition
+
+Please note, that version 1.3.0 of `Dasharo BIOS firmware` works correctly
+**only** with the `Dasharo EC firmware`. This is the first release when this
+open-source EC firmware is used, so additional steps need to be taken when
+upgrading.
+
+Please refer to the [Firmware update](firmware-update.md) section for more
+details on upgrading your firmware.
+
+### Added
+
+- [Vboot recovery mode information popup](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
+- [Dasharo setup menu full screen mode support](https://github.com/Dasharo/dasharo-issues/issues/118)
+
+### Changed
+
+- [Rebased on upstream coreboot revision from 18 Aug 2022](https://github.com/Dasharo/coreboot/commits/1a8eb6c0)
+- [Support for open-source EC firmware (transition procedure is required)](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition)
+- [Disabled UEFI Secure Boot by default](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
+
+### Fixed
+
+- [Custom fan curve is not applied after suspend (Dasharo issue #45)](https://github.com/Dasharo/dasharo-issues/issues/45)
+- [The touchpad ON/OFF switch Fn key is not functional (Dasharo issue #38)](https://github.com/Dasharo/dasharo-issues/issues/38)
+- [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/19)
+- [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
+
+### Known issues
+
+- [Low level interfering crackling/popping of the speakers while playing no sound (Dasharo issue #224)](https://github.com/Dasharo/dasharo-issues/issues/224)
+- [Waking up from sleep on Ubuntu 22.04 is not 100% reliable (Dasharo issue #205)](https://github.com/Dasharo/dasharo-issues/issues/205)
+- [After emergency shutdown, keyboard doesn't work before OS (Dasharo issue #199)](https://github.com/Dasharo/dasharo-issues/issues/199)
+- [The power LED is not always blinking while in sleep mode on Windows 11 (Dasharo issue #182)](https://github.com/Dasharo/dasharo-issues/issues/182)
+- [The NVIDIA graphics power management isn't properly functional (Dasharo issue #145)](https://github.com/Dasharo/dasharo-issues/issues/145)
+
+### Binaries
+
+[novacustom_nv4x_ec_v1.3.0.rom][novacustom_nv4x_ec_v1.3.0.rom_file]{.md-button}
+[sha256][novacustom_nv4x_ec_v1.3.0.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_ec_v1.3.0.rom_sig]{.md-button}
+
+[novacustom_nv4x_v1.3.0.rom][novacustom_nv4x_v1.3.0.rom_file]{.md-button}
+[sha256][novacustom_nv4x_v1.3.0.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_v1.3.0.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/433461)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on bcc2fb719aaf2d466f9fb429b892f2d268bed5a7 revision a087c3e2](https://github.com/Dasharo/coreboot/tree/a087c3e2)
+- [Dasharo EDKII fork based on e0334c228ce4ba51f47ff79a118f214031d4650f revision abfdef40](https://github.com/Dasharo/edk2/tree/abfdef40)
+
+[novacustom_nv4x_ec_v1.3.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.3.0/novacustom_nv4x_ec_v1.3.0.rom
+[novacustom_nv4x_ec_v1.3.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.3.0/novacustom_nv4x_ec_v1.3.0.rom.sha256
+[novacustom_nv4x_ec_v1.3.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.3.0/novacustom_nv4x_ec_v1.3.0.rom.sha256.sig
+[novacustom_nv4x_v1.3.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.3.0/novacustom_nv4x_v1.3.0.rom
+[novacustom_nv4x_v1.3.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.3.0/novacustom_nv4x_v1.3.0.rom.sha256
+[novacustom_nv4x_v1.3.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.3.0/novacustom_nv4x_v1.3.0.rom.sha256.sig
 
 ## v1.2.1 - 2022-06-23
 
