@@ -1,9 +1,14 @@
 # Post-installation setup
 
 This document contains extra steps to perform after installing Dasharo in order
-to enable full functionality.
+to enable full functionality of your device.
 
-## Touchpad hotkey enablement (Linux)
+## Linux
+
+This section covers Linux post-install steps tested on Ubuntu 22.04. It is
+likely thas similar procedures would for others Linux distributions as well.
+
+### Touchpad hotkey enablement
 
 The touchpad hotkey needs extra setup to function correctly under Linux. To
 enable the touchpad hotkey to work under Linux, follow the steps below:
@@ -17,7 +22,7 @@ curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/tou
 After executing these steps, it should be possible to enable and disable the
 touchpad using the touchpad hotkey (Fn+F1) on the keyboard when using GNOME.
 
-## Touchpad multi-touch support (NS7x / 17-inch model, Linux)
+### Touchpad multi-touch support
 
 On NS7x an additional fix is necessary to enable multi-touch on Linux. Create
 a file `/etc/modprobe.d/blacklist-psmouse.conf` with the following contents:
@@ -33,14 +38,34 @@ sudo depmod -a
 sudo update-initramfs -u
 ```
 
-Now reboot your computer to apply the changes.
+### Nvidia drivers
 
-## Installing updates and drivers (Windows 11)
+> It is only necessary to follow this step if your device has Nvidia GPU
+
+For proper working of the sleep mode on Ubuntu 22.04, it is required to
+install additional Nvidia drivers.
+
+1. Install drivers by executing the following command in the terminal:
+
+    ```bash
+    sudo apt install nvidia-driver-515 nvidia-dkms-515
+    ```
+
+1. Reboot the device to apply changes by executing the following command in the
+    terminal:
+
+    ```bash
+    sudo reboot
+    ```
+
+## Windows 11
+
+### Updates and drivers installation
 
 Several features on Windows 11 (i. e. suspending the device) may not work or
 work unexpectedly without installing all of the updates and drivers.
 
-To install all of them, log into system, connect the device to the mains
+To install all of them, log into the system, connect the device to the mains
 and Internet, then follow the steps below:
 
 1. Press the `Windows` button on the keypad.
@@ -48,7 +73,7 @@ and Internet, then follow the steps below:
 1. Select the `Check for updates` bar to start installing available updates and
     drivers. During this process previously selected bar might be changed to
     `Restart now` or `Retry`, so click them if something hasn't been installed
-    yet, something has gone wrong or restart is just required. The entire
+    yet, something has gone wrong or a restart is just required. The entire
     process may take up to 30 minutes.
 1. Select the `Advanced options` option in the `Windows Update Settings` window.
 1. Locate the `Optional updates` option and click on it.
@@ -56,5 +81,5 @@ and Internet, then follow the steps below:
 1. Select the `Download & Install` bar to start installing additional updates
     and drivers. During this process previously selected bar might be changed
     to `Restart now` or `Retry`, so click them if something hasn't been
-    installed yet, something has gone wrong or restart is just required.
+    installed yet, something has gone wrong or a restart is just required.
     The entire process may take up to 30 minutes.
