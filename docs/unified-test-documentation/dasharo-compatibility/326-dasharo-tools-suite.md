@@ -62,13 +62,14 @@ properly creates the report.
 1. Select the USB stick with DTS using the arrow keys and press `Enter`.
 1. Wait for `Enter an option:`.
 1. Type in `1` and press `Enter`.
-1. Wait for the question: Do you want to support Dasharo development by sending
-    us logs with hardware configuration?
+1. Wait for the question: `Do you want to support Dasharo development by`
+    `sending us logs with hardware configuration`?
 1. Type in `y` and press Enter.
 
 **Expected result**
 
 The whole process may take a few minutes.
+
 1. The report should be generated.
 1. The report should be sent to the cloud.
 1. In the summary should be displayed information that all calls exited without
