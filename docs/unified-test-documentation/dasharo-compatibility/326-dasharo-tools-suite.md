@@ -69,10 +69,10 @@ properly creates the report.
 **Expected result**
 
 The whole process may take a few minutes.
-1. The report should be generated
+1. The report should be generated.
 1. The report should be sent to the cloud.
 1. In the summary should be displayed information that all calls exited without
-    errors
+    errors.
 
 Example summary output:
 
@@ -223,7 +223,7 @@ using flashrom in `DTS Shell`.
     > Additional parameters may be needed for the `flashrom` command depending
     > on the DUT. Documentation describing the exact command to flash the
     > specific platform is always available in localization:
-    > `Supported hardware` -> `Platform name` -> `Initial Deployment`
+    > `Supported hardware` -> `Platform name` -> `Initial Deployment`.
 
 1. Power off the DUT.
 1. Repeat steps 2-6.
