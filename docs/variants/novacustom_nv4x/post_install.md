@@ -8,20 +8,11 @@ to enable full functionality.
 The touchpad hotkey needs extra setup to function correctly under Linux. To
 enable the touchpad hotkey to work under Linux, follow the steps below:
 
-1. Create a file `/etc/udev/hwdb.d/60-keyboard.hwdb` with the following contents:
+1. Execute fixup script:
 
-   ```bash
-   evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4XMB,ME,MZ:*
-           KEYBOARD_KEY_f7=191
-           KEYBOARD_KEY_f8=191
-   ```
-
-1. Execute the following commands:
-
-   ```bash
-   sudo systemd-hwdb update
-   sudo udevadm trigger
-   ```
+```bash
+curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/touchpad-fixup | sudo sh
+```
 
 After executing these steps, it should be possible to enable and disable the
 touchpad using the touchpad hotkey (Fn+F1) on the keyboard when using GNOME.
