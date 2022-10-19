@@ -31,7 +31,7 @@ subjected before the release of the new binary.
 | 20.  | [Docking station Audio][DAU]                           | DAU           | All                                  |
 | 21.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
 | 22.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
-| 23.  | [Firmware update using Dasharo Tools Suite][DTS]       | DTS           | DTS006.001, DTS007.001               |
+| 23.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
 | 23.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
 | 24.  | [Network boot][PXE]                                    | PXE           | PXE007.001                           |
 | 25.  | [Logo customization functionality][LCM]                | LCM           | All                                  |

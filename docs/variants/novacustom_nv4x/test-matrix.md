@@ -36,7 +36,7 @@ subjected from before the release of the new binary.
 | 23.  | [Docking station Audio][DAU]                      | DAU           | All                                  |
 | 24.  | [Docking station USB-C][DUC]                      | DUC           | All                                  |
 | 25.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
-| 26.  | [Firmware update using Dasharo Tools Suite][DTS]  | DTS           | All                                  |
+| 26.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS006.001, DTS007.001               |
 | 27.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
 | 28.  | [Logo customization functionality][LCM]           | LCM           | All                                  |
 
@@ -113,7 +113,7 @@ subjected from before the release of the new binary.
 | 22.  | [Docking station Audio][DAU]                      | DAU           | All                                  |
 | 23.  | [Docking station USB-C][DUC]                      | DUC           | All                                  |
 | 24.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
-| 25.  | [Firmware update using Dasharo Tools Suite][DTS]  | DTS           | DTS006.001, DTS007.001               |
+| 25.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS006.001, DTS007.001               |
 | 26.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
 | 27.  | [Logo customization functionality][LCM]           | LCM           | All                                  |
 
