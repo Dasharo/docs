@@ -108,7 +108,7 @@ turns off the DUT.
 
 **Expected result**
 
-The DUT should be turned off.
+The DUT should be turned off without any complications.
 
 ## DTS004.001 DTS option reboot DUT works correctly
 
