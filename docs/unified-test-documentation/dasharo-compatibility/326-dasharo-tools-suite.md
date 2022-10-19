@@ -207,7 +207,7 @@ using flashrom in `DTS Shell`.
     wget https://3mdeb.com/open-source-firmware/{PATH} -O /tmp/coreboot.rom
     ```
 
-    > This is not only way to obtain binary. For example you can use `scp`.
+    > The above-described command is not the only way to obtain binary. For example, `scp` command might be used, too.
 
 1. Run the following command to flash the firmware:
 
