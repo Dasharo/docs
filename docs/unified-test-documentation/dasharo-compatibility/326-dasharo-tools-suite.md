@@ -68,7 +68,11 @@ properly creates the report.
 
 **Expected result**
 
-The report should be generated, the whole process may take a few minutes.
+The whole process may take a few minutes.
+1. The report should be generated
+1. The report should be sent to the cloud.
+1. In the summary should be displayed information that all calls exited without
+    errors
 
 Example summary output:
 
@@ -207,7 +211,8 @@ using flashrom in `DTS Shell`.
     wget https://3mdeb.com/open-source-firmware/{PATH} -O /tmp/coreboot.rom
     ```
 
-    > The above-described command is not the only way to obtain binary. For example, `scp` command might be used, too.
+    > The above-described command is not the only way to obtain binary. For
+    > example, `scp` command might be used, too.
 
 1. Run the following command to flash the firmware:
 
@@ -216,7 +221,9 @@ using flashrom in `DTS Shell`.
     ```
 
     > Additional parameters may be needed for the `flashrom` command depending
-    > on the DUT.
+    > on the DUT. Documentation describing the exact command to flash the
+    > specific platform is always available in localization:
+    > `Supported hardware` -> `Platform name` -> `Initial Deployment`
 
 1. Power off the DUT.
 1. Repeat steps 2-6.
