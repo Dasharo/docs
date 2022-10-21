@@ -90,6 +90,10 @@ working station.
 
     ![Slots](images/msi_z690_montage_slots.png)
 
+1. Connect the fan from the CPU cooler to the slot marked `I`.
+
+    ![CPU cooler connection](images/msi_z690_montage_cpu_cooler_connection.png)
+
 1. Connect the cables from the front panel to the appropriately marked places:
 
     ![Front Panel](images/msi_z690_montage_front_panel.png)
@@ -118,7 +122,6 @@ working station.
 
     ![Power Supply](images/msi_z690_montage_power_supply.png)
 
-1. Connect the fan from the CPU cooler to the slot marked `I`.
 1. Connect the fan built into the enclosure to the indicated place:
 
     ![Fan](images/msi_z690_montage_fan.jpg)
@@ -134,13 +137,13 @@ Section below describes the procedure of assembling the motherboard.
 To prepare the motherboard the following operations should be performed:
 
 1. Go through steps 1-8 from
-    [Full set assembling section](#motherboard-assembly-only).
-
+    [Full set assembling section](#full-set-assembly).
+1. Go through 13th step from [Full set assembling section](#full-set-assembly).
 1. Connect cable marked `D` to allows power on the device as described in
-    the 13th point of the
-    [Full set assembling section](#motherboard-assembly-only).
-1. Connect the power supply to the motherboard as described in the 16th point
-    of the [Full set assembling section](#motherboard-assembly-only).
+    the 14th point of the
+    [Full set assembling section](#full-set-assembly).
+1. Connect the power supply to the motherboard as described in the 17th point
+    of the [Full set assembling section](#full-set-assembly).
 
 ## Device validation
 
