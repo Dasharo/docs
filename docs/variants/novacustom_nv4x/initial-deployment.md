@@ -75,7 +75,7 @@ When flashing binaries with ME binary included, flashing of the whole chip is
 required. Additionally, the firmware has to be flashed externally using an
 external programmer like a `ch341a_spi`.
 
-![nv4x chips](../images/nv4x_board_chips.jpg)
+![nv4x chips](images/nv4x_board_chips.jpg)
 
 Steps for initial Dasharo installation:
 
