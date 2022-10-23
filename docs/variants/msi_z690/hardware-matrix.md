@@ -16,16 +16,19 @@ please check the [FAQ section](./faq.md).
 |                                | Slot 2: Kingston KF436C17BBK4/32            |
 |                                | Slot 3: Kingston KF436C17BBK4/32            |
 |                                | Slot 4: Kingston KF436C17BBK4/32            |
-| **SSD**                        | Intel 670p 512 GB M26472-201 NVME           |
 | **Flash memory**               | Macronix MX25U25673G                        |
-| **Network**                    | Local network wired connection              |
-| **Attached devices**           | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
+| **SSD**                        | Intel 670p 512 GB M26472-201 NVME           |
+| **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 |                                | 2. Kingston DataTraveler 3.1Gen1 16 GB      |
-|                                | 3. SanDisk Ultra microSD HC I 16 GB         |
-|                                | 4. Logitech, Inc. Keyboard K120             |
-|                                | 5. Dell Mouse MS116p                        |
-|                                | 6. 1-port USB Type-C                        |
+| **SD cards**                   | SanDisk Ultra microSD HC I 16 GB            |
+| **Attached devices**           | 1. Logitech, Inc. Keyboard K120             |
+|                                | 2. Dell Mouse MS116p                        |
+|                                | 3. 1-port USB Type-C                        |
+| **Network**                    | Local network wired connection              |
 | **Power Supply**               | SeaSonic FOCUS Plus Platinum                |
+| **Power Control**              | Sonoff S20 EU type E                        |
+| **Remote Testing Environment** | RTE v1.1.0                                  |
+| **KVM**                        | PiKVM based on Raspberry Pi 4               |
 
 ## MSI PRO Z690-A WiFi DDR4, SN: 07D2511 LA1E346864
 
@@ -37,17 +40,17 @@ please check the [FAQ section](./faq.md).
 |                                | Slot 2: Kingston KF436C17BBK4/32            |
 |                                | Slot 3: Kingston KF436C17BBK4/32            |
 |                                | Slot 4: Kingston KF436C17BBK4/32            |
-| **SSD**                        | Intel 670p 512 GB M26472-201 NVME           |
 | **Flash memory**               | Macronix MX25U25673G                        |
-| **Network**                    | Local network wired connection              |
-| **Attached devices**           | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
+| **SSD**                        | Intel 670p 512 GB M26472-201 NVME           |
+| **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 |                                | 2. Kingston DataTraveler 3.1Gen1 16 GB      |
-|                                | 3. SanDisk Ultra microSD HC I 16 GB         |
-|                                | 4. Logitech, Inc. Keyboard K120             |
-|                                | 5. Dell Mouse MS116p                        |
-|                                | 6. 1-port USB Type-C                        |
+| **SD cards**                   | SanDisk Ultra microSD HC I 16 GB            |
+| **Attached devices**           | 1. Logitech, Inc. Keyboard K120             |
+|                                | 2. Dell Mouse MS116p                        |
+|                                | 3. 1-port USB Type-C                        |
+| **Network**                    | Local network wired connection              |
 | **Power Supply**               | SeaSonic FOCUS Plus Platinum                |
-| **Power Control**              | Sonoff                                      |
+| **Power Control**              | Sonoff S20 EU type E                        |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 
 ## MSI PRO Z690-A DDR5, SN: 07D2511_LA1E360456
@@ -61,10 +64,12 @@ please check the [FAQ section](./faq.md).
 |                                | Slot 3: CRUCIAL CT8G48C40U5                 |
 |                                | Slot 4: CRUCIAL CT8G48C40U5                 |
 | **Flash memory**               | Macronix MX25U25635F                        |
+| **SSD**                        | Intel 670p 512 GB M26472-201 NVME           |
+| **USB pendrives**              | SanDisk Ultra  Flair USB 3.0 16 GB          |
+| **Attached devices**           | 1. Logitech, Inc. Keyboard K120             |
+|                                | 2. Dell Mouse MS116p                        |
 | **Network**                    | Local network wired connection              |
-| **Attached devices**           | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
-|                                | 2. Logitech, Inc. Keyboard K120             |
-|                                | 3. Dell Mouse MS116p                        |
 | **Power Supply**               | SeaSonic Focus PX-750                       |
-| **Power Control**              | Sonoff                                      |
+| **Power Control**              | Sonoff S20 EU type E                        |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
+| **KVM**                        | PiKVM based on Raspberry Pi 4               |
