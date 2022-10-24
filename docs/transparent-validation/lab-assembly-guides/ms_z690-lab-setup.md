@@ -23,7 +23,7 @@ point fully assembled platform prepared using
 
 1. Connect serial panel to RTE:
 
-    **IMPORTANT:** Cable colors on photos change due to insufficient lenght
+    **IMPORTANT:** Cable colors on photos change due to insufficient length
     (ORANGE -> GREEN). For full view see: [Complete Setup](#complete-setup)
 
     ![IMG](images/msi_z690_lab_serial_panel.jpg)
@@ -40,7 +40,7 @@ point fully assembled platform prepared using
     ![IMG](images/msi_z690_lab_chip_ground_RTE.jpg)
     ![IMG](images/msi_z690_lab_chip_power_connections.jpg)
 
-1. Make rest of neccesary SPI connections:
+1. Make rest of necessary SPI connections:
 
     ![IMG](images/msi_z690_spi.jpeg)
     ![IMG](images/msi_z690_lab_SPI_RTE.jpg)
@@ -58,7 +58,7 @@ When all steps are finished, final setup should look as below:
 
 ![Complete](images/msi_z690_lab_complete.jpg)
 
-### Usefull links for RTE theory of operation
+### Useful links for RTE theory of operation
 
 1. Power On/Off and reset the platform:
 
