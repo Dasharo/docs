@@ -5,7 +5,6 @@
 This document describes assembly of MSI PRO Z690-A DDR4 lab setup. At this
 point fully assembled platform prepared using
 [Presale Device Assembly](msi_z690.md) and RTE should be ready.
-
 - [Device under test assembly](msi_z690.md)
 - [RTE assembly](../rte/v1.1.0/getting-started.md#quick-start-guide)
 
