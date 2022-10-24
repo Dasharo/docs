@@ -2,8 +2,8 @@
 
 ## Introduction
 
-This document describes the assembly procedure of the MSI PRO Z690-A DDR4
-with specified components in [requirements](#requirements).
+This document describes the assembly procedure of the MSI PRO Z690-A DDR4 with
+specified components in [requirements](#requirements).
 
 ## Requirements
 
