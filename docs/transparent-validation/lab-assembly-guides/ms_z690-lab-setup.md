@@ -73,7 +73,7 @@ When all steps are finished, final setup should look as below:
     rte_ctrl poff
     ```
 
-    To reset the platfrom:
+    To reset the platform:
 
     ```bash
     rte_ctrl reset

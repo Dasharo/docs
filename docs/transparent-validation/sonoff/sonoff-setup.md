@@ -9,9 +9,8 @@ This document is based on
 
 1. Headers soldering  
     Make sure that headers are soldered.  
-    <img src="images/sonoff_without_header.jpg" width=400 heigth=400>
-    --->
-    <img src="images/sonoff_with_header.jpg" width=400 heigth=400>
+    <img src="images/sonoff_without_header.jpg" width=400 height=400>
+    <img src="images/sonoff_with_header.jpg" width=400 height=400>
 
 1. Connect the uart converter to usb
 
