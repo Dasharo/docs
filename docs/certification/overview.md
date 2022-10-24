@@ -1,8 +1,8 @@
 # Dasharo Certification Program
 
 Our commitment to long-term maintenance and transparent validation lead us to
-creation of Dasharo Certification Program (DCP). We would like to recognize
-that without strict project management, hardware integration and validation
+creation of Dasharo Certification Program. We would like to recognize that
+without strict project management, hardware integration and validation
 procedures maintaining significant number of hardware targets would be
 impossible.
 
