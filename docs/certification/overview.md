@@ -70,7 +70,6 @@ Certification Laboratory. Correct integration means:
 * provisioning and configuration of Dasharo Transparent Validation system that
   will execute test required for Dasharo Certification Program,
 
-Details of this proces are described for selected platforms in [Assembly Guides]().
 <!--
 ## Limitations
 
