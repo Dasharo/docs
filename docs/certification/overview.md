@@ -63,7 +63,6 @@ consist of structural approach to following activities:
 
 Every Dasharo Certification candidate have to be integrated in Dasharo
 Certification Laboratory. Correct integration means:
-
 * detailed analysis of Client's Infrastructure schematics and documentation,
 * setup of remote and automated environment for development, debugging and testing,
 * Client's Infrastructure preparation for manual testing procedures, if not all
@@ -80,23 +79,6 @@ liability company. Only OEMs and communities, which obtained Dasharo
 Certification are allowed to use Dasharo logo for open-source firmware
 promotion.
 -->
-
-## About DCP documentation sections
-
-### Lab Setup Guides
-
-Lab Setup Guides were created for individuals, organizations and Dasharo
-Validation Team members who would like to setup supported hardware platform as
-in Dasharo Certification Lab or in homelab. Documentation describe how RTE can
-be connected to Device Under Test to get rully automated developement,
-debugging and testing environment.
-
-### Pre-sale Device Assembly
-
-Pre-sale Device Assembly guides were created for Dasharo Sales Team members and
-partner organizations who would like to create Dasharo Cerified Configuration.
-We also offer most of explained configurations in [3mdeb
-shop](https://3mdeb.com/shop/).
 
 ## Naming conventions
 
