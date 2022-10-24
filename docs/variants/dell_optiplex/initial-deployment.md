@@ -67,33 +67,21 @@ active. Press F1 to proceed and boot to your Linux system.
 
     ![](../../images/service_mode_warn.jpg)
 
-## Initiali deployment
+## Initial deployment
 
-For simplicity, we are using Dasharo Tools Suite SE version booted from USB.
-Access to DTS SE is available for supporters using [multiple
+For simplicity, we are using Dasharo Tools Suite SE version 1.0.3 booted from
+USB. Access to DTS SE is available for supporters using [multiple
 methods](../../osf-trivia-list/dts/#how-to-get-dasharo-tools-suite-supporters-edition).
 
-* DTS SE v1.0.0 boots only in UEFI mode
+* After booting to Dasharo Tools Suite SE load Supporter keys (using option `4)`)
+* Next, run `Install Dasharo firmware` by selecting option `2)`
+    - it will prepare a Dasharo HCL report
+    - and execute Dasharo Blobs Transmission
 
-![](../../images/dell_optiplex_uefi_mode.jpg)
-
-* After booting to Dasharo Tools Suite SE load Supporter keys
-* Make sure to submit [Dasharo HCL
-  report](../../../common-coreboot-docs/dasharo_tools_suite#dasharo-hcl-report)
-* Enter shell using option `9)`
-* Deploy using:
-
-```shell
-deploy 2>&1 | tee deploy.log
-```
-
-**Note**: If you not saving Dasharo HCL report, please
-[backup your vendor BIOS](../../..//osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
-
-**Note2**: Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown
+**Note**: Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown
 license or questionable redistribution policy. To avoid potential issues,
-`deploy` script transfer non-redistributable components from your original BIOS
-to Dasharo compatible with Dell OptiPlex 7010/9010.
+`Install Dasharo firmware` option transfer non-redistributable components from
+your original BIOS to Dasharo compatible with Dell OptiPlex 7010/9010.
 
 ## Verification
 
