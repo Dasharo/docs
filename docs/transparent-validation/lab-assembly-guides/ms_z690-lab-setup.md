@@ -14,10 +14,8 @@ point fully assembled platform prepared using
 |:------------------|:----------------------------------------------------------:|:----------------------------------------:|
 | Device Under Test | MSI PRO Z-690A DDR4 - [Assembled](msi_z690.md)             |![Motherboard](images/motherboard.jpg)    |
 | RTE               | RTE - [Assembled](../rte/introduction.md#rte-introduction) |![RTE](images/rte_built.jpg)              |
-| Sonoff            | Sonoff - [Assembled](???)                                  |![Sonoff](images/sonoff_disconnected.jpg) |
+| Sonoff            | Sonoff - [Assembled](../sonoff/sonoff-setup.md)            |![Sonoff](images/sonoff_disconnected.jpg) |
 | cables            | standard female-female connection wire 2.56mm raster       |![cables](images/female_female_cables.jpg)|
-
-[comment]: <> (TODO: Create external Sonoff docs)
 
 ## Assembly
 
@@ -58,17 +56,54 @@ When all steps are finished, final setup should look as below:
 
 ![Complete](images/msi_z690_lab_complete.jpg)
 
-### Useful links for RTE theory of operation
+### Additional information
 
 1. Power On/Off and reset the platform:
 
-- [comment]: <> (TODO: create external power control docs)
+    RTE allows to control DUT by Sonoff and GPIOs. To turn on the power supply
+    use below commands in RTE OS:
 
-1. Control the power supply:
+    ```bash
+    rte_ctrl pon
+    ```
 
-- [comment]: <> (TODO: create external power control docs)
+    To turn the platform off:
+
+    ```bash
+    rte_ctrl poff
+    ```
+
+    To reset the platfrom:
+
+    ```bash
+    rte_ctrl reset
+    ```
+
+1. To control the power supply use below commands in RTE OS:
+
+    ```bash
+    ./sonoff.sh on
+    ```
+
+    To turn it off type:
+
+    ```bash
+    ./sonoff.sh off
+    ```
+
+    + [Sonoff relay control](../sonoff/sonoff-setup.md#controlling-the-relay-switch)
 
 1. External flash the BIOS chip:
+
+    To flash DUT firmware follow the steps shown below:
+
+    + Cut off DUT power supply using sonoff. IMPORTANT: you may cause hardware
+       damage to the board if the power is not cut off!
+    + Flash firmware using the provided script in root directory of RTE:
+
+        ```bash
+        ./flash.sh /tmp/coreboot.rom
+        ```
 
 - [Flashing guide](../rte/v1.1.0/getting-started.md#flashing-guide)
 
