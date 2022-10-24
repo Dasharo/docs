@@ -25,7 +25,7 @@ of your platform.
 * [PC Engines apu series](https://pcengines.github.io/)
 * [Protectli Vault series](https://protectli.com/kb/coreboot-on-the-vault/)
 * [Raptor Computing Systems Talos II](variants/talos_2/releases.md)
-* [MSI PRO Z690-A DDR4 WIFI](variants/msi_z690/releases.md)
+* [MSI PRO Z690-A](variants/msi_z690/releases.md)
 
 <!--
 TODO: explain how user, developer, customer may add to this list

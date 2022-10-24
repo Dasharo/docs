@@ -40,13 +40,13 @@ in the [release page](releases.md).
     validation procedure.
 - [Test matrix](test-matrix.md) - describes validation scope used during
     Dasharo firmware validation procedure.
-- [Post-installation setup](post_install.md) - describes the post installation
-    steps which should be performed to unlock the full functionality of the
-    product.
+- [Post-installation setup](/common-coreboot-docs/clevo_post_install/) -
+    describes the post installation steps which should be performed to unlock
+    the full functionality of the product.
 - [Updating firmware using fwupd](/common-coreboot-docs/fwupd_usage/) -
     describes the method of updating the Dasharo firmware by using fwupd daemon.
-- [Logo customization](/common-coreboot-docs/custom_logo.md) - describes the
-    method of customization the logo shown during system booting
+- [Logo customization](/common-coreboot-docs/custom_logo/) - describes the
+    method of customization the logo shown during system booting.
 - [Openness score](openness_analysis.md) - explains the method of counting
     firmware openness score and presents openness score for both Dasharo and
     Vendor firmware.

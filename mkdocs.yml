@@ -123,7 +123,7 @@ nav:
           - 'Recovery': variants/protectli_vp46xx/recovery.md
           - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
-      - 'MSI PRO Z690-A WIFI DDR4':
+      - 'MSI PRO Z690-A':
           - 'FAQ': variants/msi_z690/faq.md
           - 'Overview': variants/msi_z690/overview.md
           - 'Releases': variants/msi_z690/releases.md
