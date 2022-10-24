@@ -13,7 +13,7 @@ the DDR5 variant. **Do not try that**.
 ## Will this work on my `MSI PRO Z690-A DDR4` ?
 
 Yes, it will work on your platform. Working on MSI PRO Z690-A DDR have
-been confirmed during the test procedures
+been confirmed during the test procedures.
 
 ## Can I safely try this on my board?
 
