@@ -7,8 +7,8 @@ This document is based on
 
 1. Open the case
 
-1. Headers soldering  
-    Make sure that headers are soldered.  
+1. Headers soldering
+    Make sure that headers are soldered.
     <img src="images/sonoff_without_header.jpg" width=400 height=400>
     <img src="images/sonoff_with_header.jpg" width=400 height=400>
 
@@ -33,7 +33,7 @@ This document is based on
       name: XXXXXX
       platform: ESP8266
       board: esp01_1m
-    
+
     wifi:
       ssid: "XXXXXX"
       password: "XXXXXX"
@@ -45,26 +45,26 @@ This document is based on
       #   # The subnet of the network. 255.255.255.0 works for most home networks.
       #   subnet: 255.255.255.0
       power_save_mode: none
-    
-    
+
+
       # # Enable fallback hotspot (captive portal) in case wifi connection fails
       ap:
         ssid: "Sonoff1 Fallback Hotspot"
         password: "123456789"
-    
-    
+
+
     captive_portal:
-    
+
     # Enable logging
     logger:
-    
+
     # Enable Home Assistant API
     api:
-    
-    
+
+
     ota:
-    
-    
+
+
     binary_sensor:
     - platform: gpio
       pin:
@@ -76,25 +76,25 @@ This document is based on
         - switch.toggle: relay
     - platform: status
       name: "Sonoff S20 Status"
-    
-    
+
+
     switch:
     - platform: gpio
       name: "Sonoff S20 Relay"
       pin: GPIO12
       id: relay
-    
+
     output:
     - platform: esp8266_pwm
       id: s20_green_led
       pin: GPIO13
       inverted: True
-    
+
     light:
     - platform: monochromatic
       name: "Sonoff S20 Green LED"
       output: s20_green_led
-    
+
     web_server:
       port: 80
     ```
@@ -113,7 +113,7 @@ This document is based on
     - unplug the device
     - plug with the button pressed and hold 2sec
 
-1. Change the upload method from OTA to `/dev/ttyUSB0`  
+1. Change the upload method from OTA to `/dev/ttyUSB0`
     Now you should see new element with name that you specified in
     `esphome:name`
 1. Click upload - the program will be generated, compiled
@@ -131,7 +131,7 @@ This document is based on
 
 Useful links:
 
-- https://gitlab.com/3mdeb/mazetron/docs/-/blob/master/firmware-flashing.md#troubleshooting
+- <https://gitlab.com/3mdeb/mazetron/docs/-/blob/master/firmware-flashing.md#troubleshooting>
 
 ---
 
