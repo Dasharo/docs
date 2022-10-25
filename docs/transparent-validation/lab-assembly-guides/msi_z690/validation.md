@@ -7,12 +7,12 @@ point fully assembled platform and RTE should be ready.
 
 ## Requirements
 
-| Part              | Model Name                                                 | Image                                    |
-|:------------------|:----------------------------------------------------------:|:----------------------------------------:|
-| Device Under Test | MSI PRO Z-690A DDR4 - [Assembled](msi_z690.md)             |![Motherboard](images/motherboard.jpg)    |
-| RTE               | RTE - [Assembled](../rte/introduction.md#rte-introduction) |![RTE](images/rte_built.jpg)              |
-| Sonoff            | Sonoff - [Assembled](../sonoff/sonoff-setup.md)            |![Sonoff](images/sonoff_disconnected.jpg) |
-| cables            | standard female-female connection wire 2.56mm raster       |![cables](images/female_female_cables.jpg)|
+| Part              | Model Name                                                    | Image                                    |
+|:------------------|:-------------------------------------------------------------:|:----------------------------------------:|
+| Device Under Test | MSI PRO Z-690A DDR4 - [Assembled](assembly.md)                |![Motherboard](../images/motherboard.jpg)    |
+| RTE               | RTE - [Assembled](../../rte/introduction.md#rte-introduction) |![RTE](../images/rte_built.jpg)              |
+| Sonoff            | Sonoff - [Assembled](../../sonoff/sonoff-setup.md)            |![Sonoff](../images/sonoff_disconnected.jpg) |
+| cables            | standard female-female connection wire 2.56mm raster          |![cables](../images/female_female_cables.jpg)|
 
 ## Assembly
 

@@ -47,4 +47,4 @@ firmware from the official
 [3mdeb store](https://3mdeb.com/shop/).
 
 Device assembly and presale validation will be carried out in accordance
-with the [following procedure](../../transparent-validation/msi-z690/assembly-and-validation.md).
+with the [following procedure](../../transparent-validation/lab-assembly-guides/msi_z690/assembly.md).
