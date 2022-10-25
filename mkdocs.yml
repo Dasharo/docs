@@ -201,8 +201,8 @@ nav:
           - 'Overview': certification/lab-overview.md
       #   - 'Dell OptiPlex 9010': transparent-validation/dell_optiplex/assembly-and-validation.md
           - 'MSI PRO Z690-A WIFI DDR4':
-              - 'Hardware Assembly': transparent-validation/msi-z690/assembly.md
-              - 'Validation Setup': transparent-validation/msi-z690/validation.md
+              - 'Hardware Assembly': transparent-validation/lab-assembly-guides/msi_z690/assembly.md
+              - 'Validation Setup': transparent-validation/lab-assembly-guides/msi_z690/validation.md
   - 'Ecosystem':
       - 'Overview': ecosystem/overview.md
     # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
