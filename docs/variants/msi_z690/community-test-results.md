@@ -1,10 +1,10 @@
-# Community test results - MSI Z690-A WIFI DDR4
+# Community test results
 
-## About
+## Abouts
 
 The following document contains information about additional tests which were
-carried out on the MSI Z690-A WIFI DDR4 platform with Dasharo firmware by
-community members.
+carried out on the MSI Z690-A platform with Dasharo firmware by community
+members.
 
 The following list is created based on the information from the
 community - people which are currently using the platform with Dasharo

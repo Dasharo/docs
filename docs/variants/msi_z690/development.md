@@ -1,9 +1,9 @@
-# Dasharo compatible with MSI PRO Z690-A WIFI DDR4 - development
+# Dasharo compatible with MSI PRO Z690-A - development
 
 ## Intro
 
 This document gather various notes and documentation useful for development of
-Dasharo compatible with the MSI PRO Z690-A WIFI DDR4 platform.
+Dasharo compatible with the MSI PRO Z690-A platform.
 
 ## Hardware connection
 
