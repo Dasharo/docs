@@ -1,6 +1,6 @@
 # Community test results
 
-## Abouts
+## About
 
 The following document contains information about additional tests which were
 carried out on the MSI Z690-A platform with Dasharo firmware by community
