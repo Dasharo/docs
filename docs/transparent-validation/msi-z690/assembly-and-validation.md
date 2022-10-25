@@ -152,7 +152,7 @@ To prepare the motherboard the following operations should be performed:
 1. If all connections have been made correctly, the device should start and
     the boot logo should be shown.
 1. Install Dasharo firmware in accordance with
-    [Installation manual](../../variants/msi_z690/installation-manual.md) -
+    [Initial Deployment](../../variants/msi_z690/initial-deployment.md) -
     the `Migrating SMBIOS unique data` chapter can be skipped.
 1. Power on the device.
 1. Boot to Linux system (Ubuntu is recommended).
