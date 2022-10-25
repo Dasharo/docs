@@ -74,7 +74,8 @@ USB. Access to DTS SE is available for supporters using [multiple
 methods](../../osf-trivia-list/dts/#how-to-get-dasharo-tools-suite-supporters-edition).
 
 * After booting to Dasharo Tools Suite SE load Supporter keys (using option `4)`)
-* Next, run `Install Dasharo firmware` by selecting option `2)`
+* Next, run `Install Dasharo firmware` by selecting option `2)` and `p)` to
+  accept version
     - it will prepare a Dasharo HCL report
     - and execute Dasharo Blobs Transmission
 
