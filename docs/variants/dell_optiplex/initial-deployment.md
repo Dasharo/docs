@@ -71,15 +71,16 @@ active. Press F1 to proceed and boot to your Linux system.
 
 For simplicity, we are using Dasharo Tools Suite SE version 1.0.3 booted from
 USB. Access to DTS SE is available for supporters using [multiple
-methods](../../osf-trivia-list/dts/#how-to-get-dasharo-tools-suite-supporters-edition).
+methods](../../osf-trivia-list/dts.md#how-to-get-dasharo-tools-suite-supporters-edition)).
 
 * After booting to Dasharo Tools Suite SE load Supporter keys (using option `4)`)
 * Next, run `Install Dasharo firmware` by selecting option `2)` and `p)` to
   accept version
-    - it will prepare a Dasharo HCL report
-    - and execute Dasharo Blobs Transmission
 
-**Note**: Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown
+**Note1**: Running this option will also generate [Dasharo HCL
+report](../../glossary.md#dasharo-hardware-compatibility-list-report).
+
+**Note2**: Some Dell OptiPlex 7010/9010 SFF binary blobs have an unknown
 license or questionable redistribution policy. To avoid potential issues,
 `Install Dasharo firmware` option transfer non-redistributable components from
 your original BIOS to Dasharo compatible with Dell OptiPlex 7010/9010.
