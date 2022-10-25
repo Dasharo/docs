@@ -1,4 +1,4 @@
-# Installation manual
+# Initial Deployment
 
 Flashing coreboot can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and
@@ -13,11 +13,11 @@ The procedure is based on
 [Ubuntu 22.04 desktop amd64 ISO](https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso)
 burned on the USB stick. Ubuntu 22.04 or newer if preferred, as it contains the
 network drivers for Ethernet and WiFi. Older versions of Ubuntu would require
-a USB to Ethernet adapter or equivalent to get network connection and install
+a USB to Ethernet adapter or equivalent to get a network connection and install
 required software packages.
 
-Boot the Ubuntu live image and select `Try ubuntu` option. Open a terminal and
-proceed with commands below.
+Boot the Ubuntu live image and select the `Try Ubuntu` option. Open a terminal
+and proceed with the commands below.
 
 Install build dependencies:
 
@@ -58,14 +58,15 @@ sudo flashrom -p internal -r dump.rom
 **IMPORTANT!** You will need a second USB storage to keep the dumped firmware
 backup or alternatively upload it to some cloud or network drive (Ubuntu live
 has a Firefox browser installed). Ubuntu live image is volatile and has no
-persistent storage. All changes made in live image will be lost after reboot.
+persistent storage. All changes made in the live image will be lost after
+reboot.
 
 ### Migrating SMBIOS unique data
 
 To migrate the SMBIOS system UUID and board serial number follow the Linux
 instructions below before attempting to flash the binary. The procedure is
 supported on Dasharo version v1.0.0 and later and requires cbfstool built from
-coreboot tree. Follow the [Building Manual](building-manual.md) using v1.0.0
+coreboot tree. Follow the [Building Manual](building-manual.md) using the v1.0.0
 version or newer and then:
 
 ```bash
@@ -120,21 +121,21 @@ echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 
 Note you will need to resign the binary after adding the SMBIOS data. Please
 check [Vboot documentation](../../common-coreboot-docs/vboot_signing.md) how to
-resign the data. It is machine owner's responsibility to generate and use own
-keys during updates.
+resign the data. It is the machine owner's responsibility to generate and use
+own keys during updates.
 
 ### Flashing Dasharo
 
-**WARNING**: If you use and external/discrete GPU and migrate to Dasharo, be
-sure to unplug the dGPU first (when machine is powered off before proceeding
+**WARNING**: If you use an external/discrete GPU and migrate to Dasharo, be
+sure to unplug the dGPU first (when the machine is powered off before proceeding
 with flashing), as Dasharo firmware does not support all GPU cards properly yet
-(as of version v1.0.0). There is high risk for the graphical output to break in
-the firmware when dGPU is connected. Effectively it leaves the only option to
-boot in blind into previously installed OS (if the platform does not brick and
+(as of version v1.0.0). There is a high risk for the graphical output to break
+in the firmware when dGPU is connected. Effectively it leaves the only option to
+boot in blind into a previously installed OS (if the platform does not brick and
 if an OS is present on a disk). The first boot may take up to 2 minutes to
 fully train the memory, so be patient and wait for the Dasharo logo to appear,
 subsequent boots will take only seconds. MSI EZ debug leds are not supported by
-Dasharo and you may notice red led to be lit. If the platform boots with
+Dasharo and you may notice a red led to be lit. If the platform boots with an
 integrated GPU, you may try to plug the external GPU back and boot again.
 
 To flash Dasharo on the platform, execute the following command:
@@ -147,7 +148,7 @@ sudo flashrom -p internal -w msi_ms7d25_vVERSION.rom --ifd -i bios
 ```
 
 After the command succeeds, invoke `sudo poweroff` or click the power off in
-the GUI to shutdown the board. Press `ENTER` when prompted on the screen. Power
+the GUI to shut down the board. Press `ENTER` when prompted on the screen. Power
 on the board back. Reboot will not work as some memory settings are preserved
 after reboot and FSP fails to train the memory. Poweroff is required.
 
@@ -157,6 +158,6 @@ after reboot and FSP fails to train the memory. Poweroff is required.
 sudo flashrom -p internal -w dump.rom --ifd -i bios
 ```
 
-NOTE: Dasharo version v0.1.0 will not have network connection. Use a different
-USB storage or an USB to Ethernet/USB WiFi adapter to move the binary to the
-live system.
+NOTE: Dasharo version v0.1.0 will not have a network connection. Use a different
+USB storage or a USB to Ethernet/USB WiFi adapter to move the binary to the live
+system.
