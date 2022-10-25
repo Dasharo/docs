@@ -21,29 +21,29 @@ point fully assembled platform and RTE should be ready.
     **IMPORTANT:** Cable colors on photos change due to insufficient length
     (ORANGE -> GREEN). For full view see: [Complete Setup](#complete-setup)
 
-    ![IMG](images/msi_z690_lab_serial_panel.jpg)
-    ![IMG](images/msi_z690_lab_serial_RTE.jpg)
+    ![IMG](../images/msi_z690_lab_serial_panel.jpg)
+    ![IMG](../images/msi_z690_lab_serial_RTE.jpg)
 
 1. Weld cable to SPI chip and connect it to the RTE `CS` as shown below:
 
-    ![IMG](images/msi_z690_lab_chip_weld.jpg)
-    ![IMG](images/msi_z690_lab_SPI_RTE.jpg)
+    ![IMG](../images/msi_z690_lab_chip_weld.jpg)
+    ![IMG](../images/msi_z690_lab_SPI_RTE.jpg)
 
 1. Connect cables for SPI power menagment and grounding:
 
-    ![IMG](images/msi_z690_lab_chip_power_RTE.jpg)
-    ![IMG](images/msi_z690_lab_chip_ground_RTE.jpg)
-    ![IMG](images/msi_z690_lab_chip_power_connections.jpg)
+    ![IMG](../images/msi_z690_lab_chip_power_RTE.jpg)
+    ![IMG](../images/msi_z690_lab_chip_ground_RTE.jpg)
+    ![IMG](../images/msi_z690_lab_chip_power_connections.jpg)
 
 1. Make rest of necessary SPI connections:
 
-    ![IMG](images/msi_z690_spi.jpeg)
-    ![IMG](images/msi_z690_lab_SPI_RTE.jpg)
-    ![IMG](images/msi_z690_lab_SPI_RTE_2.jpg)
+    ![IMG](../images/msi_z690_spi.jpeg)
+    ![IMG](../images/msi_z690_lab_SPI_RTE.jpg)
+    ![IMG](../images/msi_z690_lab_SPI_RTE_2.jpg)
 
 1. Connect MSI PRO Z690 power source to Sonoff:
 
-    ![IMG](images/sonoff_connected.jpg)
+    ![IMG](../images/sonoff_connected.jpg)
 
 1. Connect RTE to power source using MicroUSB 5V/2A power supply.
 
@@ -51,7 +51,7 @@ point fully assembled platform and RTE should be ready.
 
 When all steps are finished, final setup should look as below:
 
-![Complete](images/msi_z690_lab_complete.jpg)
+![Complete](../images/msi_z690_lab_complete.jpg)
 
 ### Theory of operation
 
@@ -88,7 +88,7 @@ When all steps are finished, final setup should look as below:
     ./sonoff.sh off
     ```
 
-    + [Sonoff relay control](../sonoff/sonoff-setup.md#controlling-the-relay-switch)
+    + [Sonoff relay control](../../sonoff/sonoff-setup.md#controlling-the-relay-switch)
 
 1. External flash the BIOS chip:
 
@@ -102,10 +102,10 @@ When all steps are finished, final setup should look as below:
         ./flash.sh /tmp/coreboot.rom
         ```
 
-- [Flashing guide](../rte/v1.1.0/getting-started.md#flashing-guide)
+- [Flashing guide](../../rte/v1.1.0/getting-started.md#flashing-guide)
 
 1. Set the communication with the platform:
 
-- [Serial port connection guide](../rte/v1.1.0/getting-started.md#serial-port-connection-guide)
+- [Serial port connection guide](../../rte/v1.1.0/getting-started.md#serial-port-connection-guide)
 
 [comment]: <> (TODO: Verify links after merge)
