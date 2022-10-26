@@ -23,37 +23,43 @@ documentation._
     validation procedure.
 * [Test matrix](test-matrix.md) - describes the validation scope used during the
     Dasharo firmware validation procedure.
-* [Community test results](community-test-results.md) - aggregates the test
-    results performed by the community.
-* [Development](development.md) - aggregates helpful information dedicated
-    for Dasharo developers.
-* [Memory Compatibility](memory-hcl.md) - lists compatible memory modules
+* [Development](development.md) - describes information for Dasharo developers.
+* [Memory Compatibility](memory-hcl.md) - describes compatible memory modules
     tested by the community.
-* [CPU Compatibility](cpu-hcl.md) - lists compatible processors tested by
+* [CPU Compatibility](cpu-hcl.md) - describes compatible processors tested by
     the community.
-* [GPU Compatibility](gpu-hcl.md) - lists compatible graphics cards tested
+* [GPU Compatibility](gpu-hcl.md) - describes compatible graphics cards tested
     by the community.
+* [Community test results](community-test-results.md) - describes the test
+    results performed by the community.
 * [FAQ](faq.md) - answers for frequently asked questions.
 
 ## Useful documents
 
-* [MSI Z690-A PRO DDR4 WiFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
-* [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
+* [MSI Z690-A PRO DDR4 WiFI
+  site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
+* [Board
+  manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
 
 ## Press releases
 
 * [PC Gamer](https://www.pcgamer.com/coreboot-on-intel-motherboard/)
 * [Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Coreboot-Start-ADL-MSI-Dasharo)
-* [Tom's Hardware](https://www.tomshardware.com/news/msi-z690-a-pro-wifi-coreboot)
+* [Tom's
+  Hardware](https://www.tomshardware.com/news/msi-z690-a-pro-wifi-coreboot)
 * [Root.cz](https://www.root.cz/zpravicky/port-coreboot-na-intel-alder-lake-z690-od-msi/)
 * [GN24](https://game-news24.com/2022/04/13/open-source-coreboot-bios-is-ported-to-msi-z690-a-motherboard/)
 * [ITBusiness](https://itbusiness.com.ua/gamezone/113401-u-etogo-neubivaemogo-bios-s-otkrytym-ishodnym-kodom-ogromnyj-potenczial.html)
 
-## Buy MSI PRO Z690 with Dasharo firmware
+## Buy the MSI PRO Z-690A DDR4 with Dasharo firmware
 
-You could buy the working station with MSI PRO Z690 motherboard with Dasharo
-firmware from the official
-[3mdeb store](https://3mdeb.com/shop/).
+The Full PC Build with MSI PRO Z-690A DDR4 motherboard with Dasharo firmware is
+available at the official [3mdeb
+store](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1).
 
-Device assembly and presale validation will be carried out in accordance
-with the [following procedure](../../transparent-validation/msi-z690/assembly-and-validation.md).
+You can also buy the product by mailing us at:
+[shopping@3mdeb.com](mailto:shopping@3mdeb.com).
+
+Device assembly and presale validation will be carried out in accordance with
+the [following
+procedure](../../transparent-validation/msi-z690/assembly-and-validation.md).
