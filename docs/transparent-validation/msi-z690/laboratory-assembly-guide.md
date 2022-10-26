@@ -262,8 +262,6 @@ When all steps are finished, final setup should look as below:
         ./sonoff.sh off
         ```
 
-    + [Sonoff relay control](../../sonoff/sonoff-setup.md#controlling-the-relay-switch)
-
 1. External flash the BIOS chip:
 
     To flash DUT firmware follow the steps shown below:
@@ -282,8 +280,8 @@ When all steps are finished, final setup should look as below:
         ./flash.sh /tmp/coreboot.rom
         ```
 
-    + [Flashing guide](../../rte/v1.1.0/getting-started.md#flashing-guide)
+    + [Flashing guide](../rte/v1.1.0/getting-started.md#flashing-guide)
 
 1. Set the communication with the platform:
 
-    + [Serial port connection guide](../../rte/v1.1.0/getting-started.md#serial-port-connection-guide)
+    + [Serial port connection guide](../rte/v1.1.0/getting-started.md#serial-port-connection-guide)
