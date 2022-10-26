@@ -25,7 +25,8 @@ documentation._
     Dasharo firmware validation procedure.
 * [Community test results](community-test-results.md) - aggregates the test
     results performed by the community.
-* [Development](development.md) - aggregates helpful information dedicated for Dasharo developers.
+* [Development](development.md) - aggregates helpful information dedicated
+    for Dasharo developers.
 * [Memory Compatibility](memory-hcl.md) - lists compatible memory modules
     tested by the community.
 * [CPU Compatibility](cpu-hcl.md) - lists compatible processors tested by
