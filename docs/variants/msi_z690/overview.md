@@ -30,7 +30,7 @@ documentation._
     tested by the community.
 * [CPU Compatibility](cpu-hcl.md) - lists compatible processors tested by
     the community.
-* [GPU Compatibility](gpu-hcl.md) - describes compatible graphics cards tested
+* [GPU Compatibility](gpu-hcl.md) - lists compatible graphics cards tested
     by the community.
 * [FAQ](faq.md) - answers for frequently asked questions.
 
