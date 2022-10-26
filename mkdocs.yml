@@ -197,7 +197,7 @@ nav:
               - 'Getting started': transparent-validation/sd-wire/getting-started.md
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
-           - 'Sonoff':
+          - 'Sonoff':
               - 'Getting started': transparent-validation/sonoff/sonoff-setup.md
       - 'Lab Assembly Guides':
           - 'Overview': certification/lab-overview.md
