@@ -28,7 +28,7 @@ documentation._
 * [Development](development.md) - aggregates helpful information dedicated for Dasharo developers.
 * [Memory Compatibility](memory-hcl.md) - lists compatible memory modules
     tested by the community.
-* [CPU Compatibility](cpu-hcl.md) - describes compatible processors tested by
+* [CPU Compatibility](cpu-hcl.md) - lists compatible processors tested by
     the community.
 * [GPU Compatibility](gpu-hcl.md) - describes compatible graphics cards tested
     by the community.
