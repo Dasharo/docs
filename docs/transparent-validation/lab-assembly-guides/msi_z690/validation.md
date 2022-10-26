@@ -7,11 +7,11 @@ point fully assembled platform and RTE should be ready.
 
 ## Requirements
 
-| Part              | Model Name                                                    | Image                                    |
-|:------------------|:-------------------------------------------------------------:|:----------------------------------------:|
-| Device Under Test | MSI PRO Z-690A DDR4 - [Assembled](assembly.md)                |![Motherboard](../images/motherboard.jpg)    |
-| RTE               | RTE - [Assembled](../../rte/introduction.md#rte-introduction) |![RTE](../images/rte_built.jpg)              |
-| Sonoff            | Sonoff - [Assembled](../../sonoff/sonoff-setup.md)            |![Sonoff](../images/sonoff_disconnected.jpg) |
+| Part              | Model Name                                                     | Image                                    |
+|:------------------|:--------------------------------------------------------------:|:----------------------------------------:|
+| Device Under Test | MSI PRO Z-690A DDR4 - [Assembly](assembly.md)                 |![Motherboard](../images/motherboard.jpg)    |
+| RTE               | RTE - [Assembly](../../rte/introduction.md#rte-introduction)  |![RTE](../images/rte_built.jpg)              |
+| Sonoff            | Sonoff - [Assembly](../../sonoff/sonoff-setup.md)             |![Sonoff](../images/sonoff_disconnected.jpg) |
 | cables            | standard female-female connection wire 2.56mm raster          |![cables](../images/female_female_cables.jpg)|
 
 ## Assembly
@@ -94,8 +94,11 @@ When all steps are finished, final setup should look as below:
 
     To flash DUT firmware follow the steps shown below:
 
-    + Cut off DUT power supply using sonoff. IMPORTANT: you may cause hardware
-       damage to the board if the power is not cut off!
+    + Cut off DUT power supply using sonoff.
+
+        > **IMPORTANT:** you may cause hardware damage to the board if the power
+        > is not cut off!
+
     + Flash firmware using the provided script in root directory of RTE:
 
         ```bash
