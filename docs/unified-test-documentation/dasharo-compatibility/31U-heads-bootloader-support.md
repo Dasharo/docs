@@ -7,7 +7,7 @@
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 2. Make yourself familiar with
-    [Heads installation](../../../variants/talos_2/installation-manual/#heads-installation).
+    [Heads installation](../../../variants/talos_2/initial-deployment/#heads-installation).
 
 ## HDS001.001 Boot into Heads
 
@@ -28,7 +28,7 @@ bootloader.
 **Test steps**
 
 1. Flash bootkernel partition in accordance with the
-    [documentation](../../../variants/talos_2/installation-manual/#heads-installation).
+    [documentation](../../../variants/talos_2/initial-deployment/#heads-installation).
 1. Power on the DUT.
 1. Wait for the `Heads` to boot and note the result.
 
