@@ -5,7 +5,7 @@
 This document describes the assembly procedure dedicated for the MSI PRO Z690-A
 testing stand.
 
-## Prerequisities
+## Prerequisites
 
 The below table contains information about all elements which are needed to
 create the testing stand.
