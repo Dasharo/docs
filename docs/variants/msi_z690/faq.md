@@ -26,8 +26,8 @@ easier, and if that happens, we may change our recommendation here.
 ## Can I destroy my hardware by installing this firmware?
 
 We give no warranty, although it is highly unlikely, provided that you use the
-supported board model and follow the [installation
-manual](../installation-manual). In the worst scenario, you might "brick" the
+supported board model and follow the [Initial
+Deployment](../initial-deployment). In the worst scenario, you might "brick" the
 board, rendering it unbootable. It can be fixed by following the [recovery
 procedure](../recovery).
 
@@ -45,7 +45,7 @@ The most common reason would be the fact that you DDR memory modules are not
 initialized properly.
 
 The other reason might be improper or interrupted installation. Please make
-sure to follow the [Installation Manual](../installation-manual) correctly.
+sure to follow the [Initial Deployment Manual](../initial-deployment) correctly.
 
 ## How can I "unbrick" my board?
 
