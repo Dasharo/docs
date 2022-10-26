@@ -232,7 +232,7 @@ The MAC address is printed on a sticker placed on the 2x2 SATA connector:
 
 ### SMBIOS data migration
 
-For Dasharo simply follow the [Installation manual](installation-manual.md) how
+For Dasharo simply follow the [Initial Deployment](initial-deployment.md) how
 to migrate the data.
 
 For MSI firmware you will probably need an AMI DMI/SMBIOS editor to save those
