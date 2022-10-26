@@ -16,30 +16,22 @@ NS5xPU/NS7xPU.
 
 The easiest way to build coreboot is to use the official Docker image.
 
-1. Obtain the image:
+1. Clone the Dasharo coreboot repository:
 
     ```bash
-    docker pull coreboot/coreboot-sdk:2021-09-23_b0d87f753c
-    ```
-
-1. Clone the coreboot repository:
-
-    ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/dasharo/coreboot.git
     ```
 
 1. Checkout to the desired Dasharo revision:
 
     > Replace the REVISION with one of the:
-    > - `clevo/release-adl-p` for the latest released version
-    > - `novacustom_ns5xpu_ns7xpu_vVERSION` (e.g. `v1.0.0`) for the given release
+    > - `clevo/release` for the latest released version
+    > - `novacustom_ns5x_adl_vVERSION` (e.g. `v1.0.0`) for the given release
 
     ```bash
     cd coreboot
-    git remote add dasharo https://github.com/dasharo/coreboot.git
-    git submodule update --init --recursive --checkout
-    git fetch dasharo
     git checkout REVISION
+    git submodule update --init --recursive --checkout
     ```
 
 1. Run the coreboot-sdk container:
@@ -54,8 +46,8 @@ The easiest way to build coreboot is to use the official Docker image.
 1. Build the firmware:
 
     ```bash
-    cp configs.config.clevo_ns5xpu_ns7xpu .config
-    make oldddefconfig
+    cp configs/config.novacustom_ns5x_adl .config
+    make olddefconfig
     make
     ```
 
@@ -63,4 +55,4 @@ This will produce a Dasharo binary placed in `build/coreboot.rom`, which can be
 flashed in following ways, depending on your situation:
 
 - To flash Dasharo first time refer to [initial deployment manual](initial-deployment.md).
-- To update Dasharo refer [firmware update](firmware-update.md).
+- To update Dasharo refer to [firmware update](firmware-update.md).
