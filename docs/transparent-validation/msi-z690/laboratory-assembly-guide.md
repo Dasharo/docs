@@ -24,7 +24,8 @@ laboratory stand.
 ### MSI PRO Z690-A
 
 MSI PRO Z690-A platform should be prepared in accordance with the
-[Motherboard assembly](presale-assembly-and-validation.md#motherboard-assembly-only) documentation
+[Motherboard assembly](presale-assembly-and-validation.md#motherboard-assembly-only)
+documentation.
 
 ### RTE
 
@@ -163,8 +164,7 @@ The following section of the documentation based on the
 
 Useful links:
 
-- <https://gitlab.com/3mdeb/mazetron/docs/-/blob/master/firmware-flashing.md#troubleshooting>
-
+<https://gitlab.com/3mdeb/mazetron/docs/-/blob/master/firmware-flashing.md#troubleshooting>
 
 The device will host the website which can be used to switch the relay.
 
