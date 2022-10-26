@@ -23,7 +23,7 @@ documentation._
     validation procedure.
 * [Test matrix](test-matrix.md) - describes the validation scope used during the
     Dasharo firmware validation procedure.
-* [Community test results](community-test-results.md) - describes the test
+* [Community test results](community-test-results.md) - aggregates the test
     results performed by the community.
 * [Development](development.md) - describes information for Dasharo developers.
 * [Memory Compatibility](memory-hcl.md) - describes compatible memory modules
