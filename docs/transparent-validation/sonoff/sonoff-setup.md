@@ -1,8 +1,8 @@
-# Sonoff - preparation guide
+# Sonoff S20 - preparation guide
 
 ## Hardware prequisities
 
-- Sonoff,
+- Sonoff S20,
 - USB - UART converter.
 
 ## Flashing
