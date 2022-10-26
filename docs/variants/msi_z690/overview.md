@@ -9,6 +9,7 @@ documentation._
 
 -->
 
+<<<<<<< HEAD
 * [Releases](releases.md) - groups information about all releases.
 * [Building manual](building-manual.md) - describes how to build Dasharo for
     the MSI PRO Z690-A.
@@ -33,6 +34,25 @@ documentation._
 * [Community test results](community-test-results.md) - describes the test
     results performed by the community.
 * [FAQ](faq.md) - answers for frequently asked questions.
+=======
+* [FAQ](faq.md) - list of frequently asked questions
+* [Releases](releases.md) - list of all releases
+* [Building manual](building-manual.md) - how to build Dasharo compatible with
+  the MSI PRO Z690-A WiFi DDR4
+* [Installation manual](installation-manual.md) - how to install Dasharo
+  firmware on the MSI PRO Z690-A WiFi DDR4
+* [Recovery](recovery.md) - recovering bricked platform
+* [Hardware configuration matrix](hardware-matrix.md) - definition of hardware
+  configuration used during validation
+* [Test matrix](test-matrix.md) - validation scope for the MSI PRO Z690-A WiFi
+  DDR4
+* [Development](development.md) - information for Dasharo developers
+* [Memory Compatibility](memory-hcl.md) - memory modules tested by community
+* [CPU Compatibility](cpu-hcl.md) - processors tested by community
+* [GPU Compatibility](gpu-hcl.md) - graphics cards tested by community
+* [Community test results](community-test-results.md) - test results performed
+  by the community.
+>>>>>>> 4736741322e4d2a442221d4bf499b8ecec9b0364
 
 ## Useful documents
 
