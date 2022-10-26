@@ -78,6 +78,9 @@ When all steps are finished, final setup should look as below:
 
 1. To control the power supply use below commands in RTE OS:
 
+    + Acquire `sonoff.sh` script and put it in RTE home directory.
+        [Link](https://github.com/3mdeb/RteCtrl/blob/master/scripts/sonoff.sh)
+
     ```bash
     ./sonoff.sh on
     ```
@@ -93,6 +96,9 @@ When all steps are finished, final setup should look as below:
 1. External flash the BIOS chip:
 
     To flash DUT firmware follow the steps shown below:
+
+    + Obtain `./flash.sh` script from
+        [here](https://github.com/3mdeb/RteCtrl/blob/master/scripts/flash.sh).
 
     + Cut off DUT power supply using sonoff.
 
