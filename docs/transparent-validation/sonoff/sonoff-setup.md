@@ -5,14 +5,14 @@
 This document is based on
 [EPSHome documentation](https://esphome.io/devices/sonoff_s20.html)
 
-1. Open the case
+1. Open the case.
 
 1. Headers soldering
     Make sure that headers are soldered.
     <img src="images/sonoff_without_header.jpg" width=400 height=400>
     <img src="images/sonoff_with_header.jpg" width=400 height=400>
 
-1. Connect the uart converter to usb
+1. Connect the uart converter to usb.
 
     ![uart connection](images/sonoff-s20-uart.jpg)
 
@@ -108,26 +108,26 @@ This document is based on
 **In your browser:**
 
 1. Put the device in a flash mode as explained
-    [here](https://esphome.io/devices/sonoff_s20.html#step-4-uploading-firmware)
+    [here](https://esphome.io/devices/sonoff_s20.html#step-4-uploading-firmware).
 
     - unplug the device
     - plug with the button pressed and hold 2sec
 
 1. Change the upload method from OTA to `/dev/ttyUSB0`
     Now you should see new element with name that you specified in
-    `esphome:name`
+    `esphome:name`.
 1. Click upload - the program will be generated, compiled
-    and uploaded to the device
+    and uploaded to the device.
 
 1. After successful upload replug the device to the usb
     (**without** the button pressed)
-    to get out of the flashing mode
+    to get out of the flashing mode.
 
 1. Use minicom to inspect if the device is flashed properly and
-    if it can connect to the network
+    if it can connect to the network.
 
     Bear in mind that the antenna in this device is very poorly
-    performing - effective range is only few meters
+    performing - effective range is only few meters.
 
 Useful links:
 
