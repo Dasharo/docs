@@ -81,15 +81,27 @@ When all steps are finished, final setup should look as below:
     + Acquire `sonoff.sh` script and put it in RTE home directory.
         [Link](https://github.com/3mdeb/RteCtrl/blob/master/scripts/sonoff.sh)
 
-    ```bash
-    ./sonoff.sh on
-    ```
+    + Edit script with ip of the Sonoff eg:
 
-    To turn it off type:
+        ```bash
+        #!/bin/bash
+    
+        SONOFF_IP=192.169.1.13
+        ```
 
-    ```bash
-    ./sonoff.sh off
-    ```
+    + Usage:
+
+        To turn it on type:
+
+        ```bash
+        ./sonoff.sh on
+        ```
+
+        To turn it off type:
+
+        ```bash
+        ./sonoff.sh off
+        ```
 
     + [Sonoff relay control](../../sonoff/sonoff-setup.md#controlling-the-relay-switch)
 
