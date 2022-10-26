@@ -1,4 +1,9 @@
-# Sonoff s20 - preparation guide
+# Sonoff - preparation guide
+
+## Hardware prequisities
+
+- Sonoff,
+- USB - UART converter.
 
 ## Flashing
 
@@ -8,7 +13,7 @@ This document is based on
 1. Open the case.
 
 1. Headers soldering
-    Make sure that headers are soldered.
+    Make sure that headers are soldered - if not, it has to be done.
     <img src="images/sonoff_without_header.jpg" width=400 height=400>
     <img src="images/sonoff_with_header.jpg" width=400 height=400>
 
@@ -159,7 +164,7 @@ curl -X POST http://192.168.43.171/switch/sonoff_s20_relay/turn_on
 To check the state of the component use:
 
 ```sh
-# pawel @ pczaplewski in /home/pczaplewski/workspace/sonoff/docker [16:28:02] C:1
+# user@user in /home/user/workspace/sonoff/docker [16:28:02] C:1
 $ curl  http://192.168.43.171/switch/sonoff_s20_relay
 {"id":"switch-sonoff_s20_relay","state":"OFF","value":false}
 ```
