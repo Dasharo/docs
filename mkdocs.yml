@@ -189,8 +189,9 @@ nav:
         # - 'Overview': ecosystem/transparent-validation.md
         # - 'Testing Infrastructure': ecosystem/testing-infrastructure.md
         # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
-          - 'MSI Z690':
-              - 'Assembly and Validation': transparent-validation/msi-z690/assembly-and-validation.md
+          - 'MSI PRO Z690-A':
+              - 'Presale assembly and validation': transparent-validation/msi-z690/presale-assembly-and-validation.md
+              - 'Laboratory stand assembly guide': transparent-validation/msi-z690/laboratory-assembly-guide.md
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
               - 'Basic validation': transparent-validation/muxpi/basic-validation.md
@@ -208,6 +209,8 @@ nav:
               - 'Getting started': transparent-validation/sd-wire/getting-started.md
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
+          - 'Sonoff':
+              - 'Sonoff setup': transparent-validation/sonoff/sonoff-setup.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md
