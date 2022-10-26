@@ -14,14 +14,17 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
 
 ## Version v1.0.0 or newer
 
-Only the `RW_SECTION_A` partition of the flash needs to be updated. Flash it
-using the following command:
+Only the `RW_SECTION_A` and `RW_SECTION_B` partitions of the flash needs to be
+updated. Flash it using the following command:
 
 ```bash
-flashrom -p internal -w [path] --fmap -i RW_SECTION_A
+flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
 ```
 
-> This command also preserves Dasharo UEFI settings and the boot order.
+> To flash newer firmware the command described in the
+[section below](#version-older-than-v100) might be also used. But remember,
+in that case, all Dasharo UEFI settings will be lost. Also, the memory training
+procedure will have to be carried out again.
 
 ## Version older than v1.0.0
 
