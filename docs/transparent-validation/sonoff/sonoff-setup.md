@@ -115,8 +115,8 @@ This document is based on
 1. Put the device in a flash mode as explained
     [here](https://esphome.io/devices/sonoff_s20.html#step-4-uploading-firmware).
 
-    - unplug the device
-    - plug with the button pressed and hold 2sec
+    + unplug the device
+    + plug with the button pressed and hold 2sec
 
 1. Change the upload method from OTA to `/dev/ttyUSB0`
     Now you should see new element with name that you specified in

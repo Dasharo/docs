@@ -85,7 +85,7 @@ When all steps are finished, final setup should look as below:
 
         ```bash
         #!/bin/bash
-    
+
         SONOFF_IP=192.169.1.13
         ```
 
