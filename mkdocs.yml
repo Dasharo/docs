@@ -209,8 +209,6 @@ nav:
               - 'Getting started': transparent-validation/sd-wire/getting-started.md
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
-          - 'Sonoff':
-              - 'Sonoff setup': transparent-validation/sonoff/sonoff-setup.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md
