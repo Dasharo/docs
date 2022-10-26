@@ -42,8 +42,8 @@ The following section of the documentation based on the
 
 1. Make sure that headers are soldered - if not, it has to be done.
 
-    <img src="images/sonoff_without_header.jpg" width=400 height=400>
-    <img src="images/sonoff_with_header.jpg" width=400 height=400>
+    <img src="../images/sonoff_without_header.jpg" width=400 height=400>
+    <img src="../images/sonoff_with_header.jpg" width=400 height=400>
 
 1. Connect the uart converter to usb.
 
