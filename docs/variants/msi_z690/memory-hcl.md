@@ -91,6 +91,8 @@ Legend:
 > in the module specifications. This can vary based on the board design, CPU
 > and many other factors.
 
+**DDR4 Results:**
+
 | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
 |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
 | Kingston | [KF436C17BBK4/32][1] |8GB | JEDEC: DDR4-2400 CL17-17-17 1.2V | &#10004;/&#10004;/&#10004; |
@@ -101,6 +103,14 @@ Legend:
 | PNY      | [8GBF1X08QFHH38-135-K-HXR][4] |8GB | JEDEC: DDR4-2133 CL15-15-15 1.2V | -/&#10004;&sup1;/&#10004; |
 | Kingston | [KF436C18BBK2/64][5] |32GB | JEDEC: DDR4-2400 CL17-17-17-39 1.2V | &#10004;/&#10004;/- |
 
+**DDR5 Results:**
+> NOTE: Applies only to **DDR5** version.
+
+| DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
+|:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
+| Kingston    | [KF556C40BB/8][6] |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
+| Crucial     | [CT8G48C40U5.M4A1/8][7] |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
+
 1) Tested in 2x2 mixed configuration
 
 [1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
@@ -108,3 +118,5 @@ Legend:
 [3]: https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf
 [4]: https://www.pny.com/anarchy-x-ddr4-red?sku=MD16GK2D4320016AXR
 [5]: https://www.kingston.com/datasheets/KF436C18BBK2_64.pdf
+[6]: https://www.kingston.com/pl/memory/gaming/kingston-fury-beast-ddr5-memory
+[7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
