@@ -6,6 +6,8 @@ theme:
   custom_dir: overrides
   favicon: images/favicon.png
   logo: images/dasharo-logo.png
+  features:
+    - content.tabs.link
 extra_css:
   - stylesheets/extra.css
 google_analytics:
@@ -21,10 +23,15 @@ markdown_extensions:
       toc_depth: 2
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 nav:
   - 'Intro': index.md
   - 'Supported hardware':
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
+      - 'building [TEST]':
+        - 'Building': unified/novacustom/building-manual.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
