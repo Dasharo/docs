@@ -16,7 +16,7 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
 
 You should update to the [v1.0.0 version](../releases/TBD) first by flashing
 externally to overwrite ME region and install Dasharo, then update EC by
-following [this procedure](initial_deployment.md).
+following [this procedure](initial-deployment.md).
 
 ME region is provisioned for Boot Guard which must be disabled first. Also
 software flashing is not possible due to enabled BIOS Guard.

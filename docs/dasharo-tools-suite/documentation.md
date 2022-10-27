@@ -265,8 +265,8 @@ fwupdmgr update
 DTS allows to perform full Embedded Controller firmware transition from the
 proprietary vendor EC firmware, to the open-source Dasharo EC firmware.
 Currently, this functionality is supported on the
-[NovaCustom NS5x/NS7x](../variants/novacustom_ns5x_7x/overview.md)) and
-[NovaCustom NV4x](../variants/novacustom_nv4x/overview.md) only.
+[NovaCustom NS5x/NS7x](../variants/novacustom_ns5x_tgl/overview.md)) and
+[NovaCustom NV4x](../variants/novacustom_nv4x_tgl/overview.md) only.
 
 To perform EC transition, make sure you are
 [running DTS version v1.0.2 or higher](#running) and follow these steps:
