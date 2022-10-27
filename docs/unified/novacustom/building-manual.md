@@ -2,7 +2,11 @@
 
 ## Intro
 
-This guide shows how to build Dasharo firmware for NovaCustom devices.
+This guide shows how to build Dasharo firmware for NovaCustom devices. It
+contains two components:
+
+- BIOS firmware,
+- EC firmware.
 
 ## Requirements
 
@@ -22,40 +26,45 @@ Make sure that you have following packages installed:
 
 ## Build Dasharo BIOS firmware
 
-1. Export variables:
-
 1. Clone the Dasharo coreboot repository:
 
     ```bash
     git clone https://github.com/Dasharo/coreboot.git
+    ```
+
+1. Navigate to the source code directory and checkout to the desired revision:
+
+    ```bash
     cd coreboot
     ```
 
-1. Checkout to the latest version:
+    > Replace `X.Y.Z` with a valid version
 
-    === "NS5x ADL v1.3.0"
-
-        ```bash
-        git checkout novacustom_ns5x_adl_v1.3.0
-        ```
-
-    === "NV4x ADL v1.3.0"
+    === "NS5x ADL"
 
         ```bash
-        git checkout novacustom_nv4x_adl_v1.3.0
+        git checkout novacustom_ns5x_adl_vX.Y.Z
         ```
 
-    === "NS5x TGL v1.3.0"
+    === "NV4x ADL"
 
         ```bash
-        git checkout novacustom_ns5x_v1.3.0
+        git checkout novacustom_nv4x_adl_vX.Y.Z
         ```
 
-    === "NV4x TGL v1.3.0"
+    === "NS5x TGL"
 
         ```bash
-        git checkout novacustom_nv4x_v1.3.0
+        git checkout novacustom_ns5x_tgl_vX.Y.Z
         ```
+
+    === "NV4x TGL"
+
+        ```bash
+        git checkout novacustom_nv4x_tgl_vX.Y.Z
+        ```
+
+1. Checkout submodules:
 
     ```bash
     git submodule update --init --recursive --checkout
@@ -63,88 +72,77 @@ Make sure that you have following packages installed:
 
 1. Start docker container:
 
-    ```bash
-    docker run --rm -it -u $UID \
-       -v $PWD:/home/coreboot/coreboot \
-       -w /home/coreboot/coreboot \
-       coreboot-sdk:0ad5fbd48d /bin/bash
-    ```
+    === "NS5x ADL"
+
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+        ```
+
+    === "NV4x ADL"
+
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+        ```
+
+    === "NS5x TGL"
+
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+        ```
+
+    === "NV4x TGL"
+
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+        ```
 
 1. Inside of the container, configure the build process:
 
-    === "NS5x ADL v1.3.0"
+    === "NS5x ADL"
 
         ```bash
-        cp configs/config.novacustom_ns5x_adl .config
+        make distclean && cp configs/config.novacustom_ns5x_adl .config
         ```
 
-    === "NV4x ADL v1.3.0"
+    === "NV4x ADL"
 
         ```bash
-        cp configs/config.novacustom_nv4x_adl .config
+        make distclean && cp configs/config.novacustom_nv4x_adl .config
         ```
 
-    === "NS5x TGL v1.3.0"
+    === "NS5x TGL"
 
         ```bash
-        cp configs/config.novacustom_ns5x_tgl .config
+        make distclean && cp configs/config.novacustom_ns5x_tgl .config
         ```
 
-    === "NV4x TGL v1.3.0"
+    === "NV4x TGL"
 
         ```bash
-        cp configs/config.novacustom_nv4x_tgl .config
+        make distclean && cp configs/config.novacustom_nv4x_tgl .config
         ```
-
 
 1. Start the build process:
 
     ```bash
-    make olddefconfig
+    make olddefconfig && make
     ```
 
-    ```bash
-    make
-    ```
-
-This will produce a Dasharo binary placed in `build/coreboot.rom`, which can be
-flashed in following ways, depending on your situation:
-
-* To flash Dasharo for the first time, refer to the
-  [initial deployment guide](initial-deployment.md).
-* To update Dasharo, refer to the [firmware update guide](firmware-update.md).
+This will produce a Dasharo binary placed in `build/coreboot.rom`.
 
 ## Build Dasharo EC firmware
-
-1. Refer to the table below to set the `EC_BOARD_MODEL`, and `REVISION` based
-   on your device and preference:
-    - using `release ` branch will always result in the latest released version,
-    - using tag you can specify the exact version to build.
-
-| Device        | model    | tag format                 |
-|---------------|----------|----------------------------|
-| NV4X TGL      | nv4x_tgl | novacustom_nv4x_vX.Y.Z     |
-| NS5X/7X TGL   | ns5x_tgl | novacustom_ns5x_vX.Y.Z     |
-| NV4X ADL      | nv4x_tgl | novacustom_nv4x_adl_vX.Y.Z |
-| NS5X/NS7X ADL | ns5x_adl | novacustom_ns5x_adl_vX.Y.Z |
-
-1. Export variables:
-
-    ```bash
-    export EC_BOARD_MODEL="<MODEL>"
-    export REVISION="<REVISION>"
-    ```
-
-    For example, if you want to build `v1.3.0` firmware for the `NS5X ADL`, you
-    should set:
-
-    ```bash
-    export REVISION="novacustom_ns5x_adl_v1.3.0"
-    ```
-
-    ```bash
-    export EC_BOARD_MODEL="novacustom_ns5x_adl"
-    ```
 
 1. Clone the Dasharo ec repository:
 
@@ -158,18 +156,76 @@ flashed in following ways, depending on your situation:
     cd ec
     ```
 
+    > Replace `X.Y.Z` with a valid version
+
+    === "NS5x ADL"
+
+        ```bash
+        git checkout novacustom_ns5x_adl_vX.Y.Z
+        ```
+
+    === "NV4x ADL"
+
+        ```bash
+        git checkout novacustom_nv4x_adl_vX.Y.Z
+        ```
+
+    === "NS5x TGL"
+
+        ```bash
+        git checkout novacustom_ns5x_tgl_vX.Y.Z
+        ```
+
+    === "NV4x TGL"
+
+        ```bash
+        git checkout novacustom_nv4x_tgl_vX.Y.Z
+        ```
+
+1. Checkout submodules:
+
     ```bash
-    git checkout $REVISION
+    git submodule update --init --recursive --checkout
     ```
 
-1. Build the firmware:
+1. Build the EC firmware:
 
-    ```bash
-    EC_BOARD_VENDOR=novacustom ./build.sh
-    ```
+    === "NS5x ADL"
 
-The resulting image will be placed in: `novacustom_$EC_BOARD_MODEL.rom`, which
-can be flashed in following ways, depending on your situation:
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_adl ./build.sh
+        ```
+
+        The resulting image will be placed in: `novacustom_ns5x_adl_ec.rom`.
+
+    === "NV4x ADL"
+
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_adl ./build.sh
+        ```
+
+        The resulting image will be placed in: `novacustom_nv4x_adl_ec.rom`.
+
+    === "NS5x TGL"
+
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_tgl ./build.sh
+        ```
+
+        The resulting image will be placed in: `novacustom_ns5x_tgl_ec.rom`.
+
+    === "NV4x TGL"
+
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_tgl ./build.sh
+        ```
+
+        The resulting image will be placed in: `novacustom_nv4x_tgl_ec.rom`.
+
+## Install Dasharo firmware
+
+The Dasharo firmware can be flashed in following ways, depending on your
+situation:
 
 * To flash Dasharo for the first time, refer to the
   [initial deployment guide](initial-deployment.md).
