@@ -23,53 +23,39 @@ Make sure that you have following packages installed:
 ## Build Dasharo BIOS firmware
 
 1. Export variables:
-=== "NS5x ADL v1.3.0"
-
-    ```bash
-    export SDK="coreboot-sdk:0ad5fbd48d"
-    export REVISION="novacustom_ns5x_adl_v1.3.0"
-    export CONFIG="config.novacustom_ns5x_adl"
-    ```
-
-=== "NV4x ADL v1.3.0"
-
-    ```bash
-    export SDK="coreboot-sdk:0ad5fbd48d"
-    export REVISION="novacustom_nv4x_adl_v1.3.0"
-    export CONFIG="config.novacustom_nv4x_adl"
-    ```
-
-=== "NS5x TGL v1.3.0"
-
-    ```bash
-    export SDK="coreboot-sdk:0ad5fbd48d"
-    export REVISION="novacustom_ns5x_v1.3.0"
-    export CONFIG="config.novacustom_ns5x_tgl"
-    ```
-
-=== "NV4x TGL v1.3.0"
-
-    ```bash
-    export SDK="coreboot-sdk:0ad5fbd48d"
-    export REVISION="novacustom_nv4x_v1.3.0"
-    export CONFIG="config.novacustom_nv4x_tgl"
-    ```
 
 1. Clone the Dasharo coreboot repository:
 
     ```bash
     git clone https://github.com/Dasharo/coreboot.git
-    ```
-
-1. Navigate to the source code directory and checkout to the desired revision:
-
-    ```bash
     cd coreboot
     ```
 
-    ```bash
-    git checkout $REVISION
-    ```
+1. Checkout to the latest version:
+
+    === "NS5x ADL v1.3.0"
+
+        ```bash
+        git checkout novacustom_ns5x_adl_v1.3.0
+        ```
+
+    === "NV4x ADL v1.3.0"
+
+        ```bash
+        git checkout novacustom_nv4x_adl_v1.3.0
+        ```
+
+    === "NS5x TGL v1.3.0"
+
+        ```bash
+        git checkout novacustom_ns5x_v1.3.0
+        ```
+
+    === "NV4x TGL v1.3.0"
+
+        ```bash
+        git checkout novacustom_nv4x_v1.3.0
+        ```
 
     ```bash
     git submodule update --init --recursive --checkout
@@ -77,38 +63,38 @@ Make sure that you have following packages installed:
 
 1. Start docker container:
 
-
     ```bash
     docker run --rm -it -u $UID \
        -v $PWD:/home/coreboot/coreboot \
        -w /home/coreboot/coreboot \
-       $SDK /bin/bash
+       coreboot-sdk:0ad5fbd48d /bin/bash
     ```
 
 1. Inside of the container, configure the build process:
-=== "NS5x ADL v1.3.0"
 
-    ```bash
-    cp configs/config.novacustom_ns5x_adl .config
-    ```
+    === "NS5x ADL v1.3.0"
 
-=== "NV4x ADL v1.3.0"
+        ```bash
+        cp configs/config.novacustom_ns5x_adl .config
+        ```
 
-    ```bash
-    cp configs/config.novacustom_nv4x_adl .config
-    ```
+    === "NV4x ADL v1.3.0"
 
-=== "NS5x TGL v1.3.0"
+        ```bash
+        cp configs/config.novacustom_nv4x_adl .config
+        ```
 
-    ```bash
-    cp configs/config.novacustom_ns5x_tgl .config
-    ```
+    === "NS5x TGL v1.3.0"
 
-=== "NV4x TGL v1.3.0"
+        ```bash
+        cp configs/config.novacustom_ns5x_tgl .config
+        ```
 
-    ```bash
-    cp configs/config.novacustom_nv4x_tgl .config
-    ```
+    === "NV4x TGL v1.3.0"
+
+        ```bash
+        cp configs/config.novacustom_nv4x_tgl .config
+        ```
 
 
 1. Start the build process:
