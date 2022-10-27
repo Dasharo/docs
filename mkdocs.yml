@@ -58,40 +58,38 @@ nav:
           - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
-    #   - 'NovaCustom NV4x 11th gen':
-      - 'NovaCustom NV4x':
-          - 'Overview': variants/novacustom_nv4x/overview.md
-          - 'Releases': variants/novacustom_nv4x/releases.md
-          - 'Building manual': variants/novacustom_nv4x/building-manual.md
-          - 'Initial deployment': variants/novacustom_nv4x/initial-deployment.md
-          - 'Firmware update': variants/novacustom_nv4x/firmware-update.md
-          - 'Recovery': variants/novacustom_nv4x/recovery.md
-          - 'Hardware Configuration Matrix': variants/novacustom_nv4x/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_nv4x/test-matrix.md
+      - 'NovaCustom NV4x ADL (12th Gen)':
+          - 'Test matrix': variants/novacustom_nv4x_adl/test-matrix.md
+      - 'NovaCustom NV4x TGL (11th Gen)':
+          - 'Overview': variants/novacustom_nv4x_tgl/overview.md
+          - 'Releases': variants/novacustom_nv4x_tgl/releases.md
+          - 'Building manual': variants/novacustom_nv4x_tgl/building-manual.md
+          - 'Initial deployment': variants/novacustom_nv4x_tgl/initial-deployment.md
+          - 'Firmware update': variants/novacustom_nv4x_tgl/firmware-update.md
+          - 'Recovery': variants/novacustom_nv4x_tgl/recovery.md
+          - 'Hardware Configuration Matrix': variants/novacustom_nv4x_tgl/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_nv4x_tgl/test-matrix.md
           - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
           - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
-          - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
-          - 'Checbox results': variants/novacustom_nv4x/compatibility-check-results-ubuntu.md
-    #   - 'NovaCustom NV4x 12th gen':
-    #       - 'Test matrix': variants/novacustom_nv4x_12th_gen/test-matrix.md
-    #   - 'NovaCustom NS5x/7x 11th gen':
-      - 'NovaCustom NS5x/7x':
-          - 'Overview': variants/novacustom_ns5x_7x/overview.md
-          - 'Releases': variants/novacustom_ns5x_7x/releases.md
-          - 'Building manual': variants/novacustom_ns5x_7x/building-manual.md
-          - 'Initial deployment': variants/novacustom_ns5x_7x/initial-deployment.md
-          - 'Firmware update': variants/novacustom_ns5x_7x/firmware-update.md
-          - 'Recovery': variants/novacustom_ns5x_7x/recovery.md
-          - 'Hardware Configuration Matrix': variants/novacustom_ns5x_7x/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+          - 'Openness score': variants/novacustom_nv4x_tgl/openness_analysis.md
+          - 'LVFS report': variants/novacustom_nv4x_tgl/lvfs_report.md
+          - 'Checbox results': variants/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md
+      - 'NovaCustom NS5x/7x ADL (12th Gen)':
+          - 'Test matrix': variants/novacustom_ns5x_adl/test-matrix.md
+      - 'NovaCustom NS5x/7x TGL (11th Gen)':
+          - 'Overview': variants/novacustom_ns5x_tgl/overview.md
+          - 'Releases': variants/novacustom_ns5x_tgl/releases.md
+          - 'Building manual': variants/novacustom_ns5x_tgl/building-manual.md
+          - 'Initial deployment': variants/novacustom_ns5x_tgl/initial-deployment.md
+          - 'Firmware update': variants/novacustom_ns5x_tgl/firmware-update.md
+          - 'Recovery': variants/novacustom_ns5x_tgl/recovery.md
+          - 'Hardware Configuration Matrix': variants/novacustom_ns5x_tgl/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x_tgl/test-matrix.md
           - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
-          - 'EC firmware revocery': variants/novacustom_ns5x_7x/ec_recovery.md
-    #   - 'NovaCustom NS5x/7x 12th gen':
-    #       - 'Test matrix': variants/novacustom_ns5x_7x_12th_gen/test-matrix.md
+          - 'RGB keyboard': variants/novacustom_ns5x_tgl/rgb_keyboard.md
+          - 'EC firmware revocery': variants/novacustom_ns5x_tgl/ec_recovery.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
@@ -99,7 +97,7 @@ nav:
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+          - 'Test matrix': variants/novacustom_ns5x_tgl/test-matrix.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md
