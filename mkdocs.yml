@@ -9,6 +9,10 @@ theme:
   logo: images/dasharo-logo.png
   features:
     - content.tabs.link
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
 extra_css:
   - stylesheets/extra.css
 google_analytics:
