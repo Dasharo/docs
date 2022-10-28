@@ -215,4 +215,38 @@ will be rejected.
 
 **Expected result**
 
-The attempt to set the password should be rejected.
+1. The window with the information that requested password is not strong
+    enough should be displayed.
+1. The attempt to set the password should be rejected.
+
+## PSW008.001 Attempt to set old password
+
+**Test description**
+
+BIOS setup password feature has been equipped with an additional functionality
+that prevents re-setting one of the last 5 access passwords. This test aims to
+verify whether the attempt to set old password again will be rejected.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Press `SETUP_MENU_KEY` to enter the `Setup Menu`.
+1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
+1. Enter the `User Password Management` submenu using the arrow keys and Enter.
+1. Select the option `Change Admin Password` by using the arrow keys and Enter.
+1. Set the password identically as one of the 5 latest passwords.
+
+**Expected result**
+
+1. The window with the information that requested password has been found in
+    the passwords history should be displayed.
+1. The attempt to set the password should be rejected.
