@@ -301,7 +301,7 @@ Example output:
 Command Error Status: Access Denied
 ```
 
-## SBO006.001 Reset Secure Boot Keys option is available (firmware)
+## SBO006.001 Reset Secure Boot Keys option availability (firmware)
 
 **Test description**
 
@@ -437,7 +437,7 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
         Command Error Status: Access Denied
         ```
 
-## SBO008.001 Try to enroll the key in the incorrect format (firmware)
+## SBO008.001 Attempt to enroll the key in the incorrect format (firmware)
 
 **Test description**
 
