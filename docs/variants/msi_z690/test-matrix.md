@@ -30,6 +30,7 @@ Certification Procedure for both tested platforms:
 | 15.  | [Custom Boot Keys][CBK]                           | CBK           | All                                  |
 | 16.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 17.  | [CPU status][CPU]                                 | CPU           | All                                  |
+| 18.  | [BIOS Setup password][PSW]                        | PSW           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -50,6 +51,7 @@ Certification Procedure for both tested platforms:
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
+[PSW]: ../../unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
 
 ## Module: Dasharo security
 
