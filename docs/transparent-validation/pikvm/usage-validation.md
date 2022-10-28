@@ -88,4 +88,13 @@ To prevent any mix-up in libraries and dependencies process will include Docker.
 1. Install the image on the SD card using eg.
     [balenaEtcher](https://www.balena.io/etcher/).
 
+- wifi
+
 ### Completing Setup
+
+- welding
+- sd card
+- cables
+- blocking usb power from pc
+- wifi
+- 
