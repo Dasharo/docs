@@ -11,7 +11,7 @@
 
 **Test description**
 
-Check wether `User Password Management` option is avalible and default state.
+Check whether `User Password Management` option is available and default state.
 
 **Test configuration data**
 
@@ -34,14 +34,14 @@ Check wether `User Password Management` option is avalible and default state.
 
 **Expected result**
 
-1. All described options are avalible and navigating through menu doesn't cause
+1. All described options are available and navigating through menu doesn't cause
     any problems.
 
 ## PSW002.001 Check the mechanism of the password setting
 
 **Test description**
 
-Check wether the password changing mechanism works properly.
+Check whether the password changing mechanism works properly.
 
 **Test configuration data**
 
@@ -67,13 +67,13 @@ Check wether the password changing mechanism works properly.
 **Expected result**
 
 1. DUT after reboot and pressing `BOOT_MENU_KEY` demands password, and newly
-    setted one works properly.
+    set one works properly.
 
 ## PSW003.001 Attempt to log in with a correct password
 
 **Test description**
 
-Check wether proper password unlocks boot menu.
+Check whether proper password unlocks boot menu.
 
 **Test configuration data**
 
@@ -92,13 +92,13 @@ Check wether proper password unlocks boot menu.
 
 **Expected result**
 
-1. Menu unlocks properly and options are avalible.
+1. Menu unlocks properly and options are available.
 
 ## PSW004.001 Attempt to log in with an incorrect password
 
 **Test description**
 
-Check wether incorrect password is not unlocking boot menu.
+Check whether incorrect password is not unlocking boot menu.
 
 **Test configuration data**
 
