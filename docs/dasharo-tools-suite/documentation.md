@@ -1,122 +1,18 @@
-# Dasharo Tools Suite
+# Documentation
 
-![](../images/dts-logo.png)
+## Supported hardware
 
-## Introduction
+Dasharo Tools Suite was prepared to run on x86 platforms, but we can confirm
+that it boots on the following platforms:
 
-Dasharo Tools Suite (DTS) is a set of tools running in a minimal Linux
-environment, with a goal of deploying, updating and maintaining firmware on
-Dasharo supported devices. For example, it can be used to update the firmware
-on a device, even when no OS is currently installed.
-
-## Dasharo Tools Suite Editions
-
-There is a common base, but there might be multiple flavors of the DTS images.
-Currently, there are:
-
-* CE - Community Edition
-    - [Dasharo HCL
-      Report](../../glossary/#dasharo-hardware-compatibility-list-report)
-      generates a package with logs containing hardware information
-    - flashrom, fwupd, and many more useful tools
-    - can drop to shell to update the firmware manually
-* SE - Supporters Edition
-    - on top of CE features, SE provides tools for automatic firmware
-      deployment and rollback (switching to Dasharo back and forth)
-    - it includes [Dasharo Blobs Transmission](../../glossary/#dasharo-blobs-transmission)
-    - [how to get DTS SE](../../osf-trivia-list/dts/#how-to-get-dasharo-tools-suite-supporters-edition)
-
-## Releases
-
-This section provide links and changelogs of DTS CE version started from release
-v1.0.0.
-
-### v1.0.2
-
-#### Images
-
-* [USB bootable DTS CE v1.0.2 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz)
-* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256)
-* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256.sig)
-
-  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
-
-#### Changelog
-
-* Added new vendor specific menu entry which is displayed only on supported
-  platforms, for now NovaCustom menu was added for NV4x and NS50 70MU laptops
-* DTS version is now printed in the main menu
-* `ec_transition` script now supports NV4XMB,ME,MZ laptops and automatically
-  download firmware used for transition both for NV4x and NS5x laptopts,
-  [firmware transition](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition)
-  documentation is updated
-* Added kernel configuration to silence terminal logs by default (change loglevel
-  to 1)
-* Enabled GOOGLE_MEMCONSOLE_COREBOOT kernel configuration to ease getting
-  firmware logs
-
-### v1.0.1
-
-#### Images
-
-* [USB bootable DTS CE v1.0.1 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz)
-* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256)
-* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig)
-
-  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
-
-#### Changelog
-
-* Added system76_ectool to enable Embedded Controller [firmware updating](#dasharo-ec-update)
-* Added ec_transition script which helps with full Dasharo/Embedded Controller
-  [firmware transition](#dasharo-ec-transition) for NS50 70MU and NS70 laptops
-* First public release: [meta-dts-ce](https://github.com/Dasharo/meta-dts-ce)
-
-### v1.0.0
-
-#### Images
-
-* [USB bootable DTS CE v1.0.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz)
-* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz.sha256)
-
-  ```bash
-  # assuming all files have been downloaded to the same directory without
-  # changing names
-  sha256sum -c [sha256 file]
-  ```
-
-#### Changelog
-
-* Auto-login functionality
-* User menu
-* [Dasharo HCL Report](#dasharo-hcl-report) - the ability to automatically dump
-  device information and send it to 3mdeb servers
-* Possibility to manually [update the Dasharo firmware](#dasharo-firmware-update)
-* [Bootable via iPXE](#bootable-over-network)
-* [Bootable via USB](#bootable-usb-stick)
-* Tested on NovaCustom NV4x, Dell OptiPlex 7010/9010
-
-## Disabling Secure Boot
-
-Any procedure which affects the firmware flashing should be preceded by
-controlling the Secure Boot status and if it is turned on, turning it off. The
-enabled Secure Boot will not only prevent you from operating on the firmware,
-but you will also not be able to launch DTS.
-
-To check the Secure Boot state:
-
-1. Turn off the station, on which you want to test the Dasharo firmware.
-1. Turn the station on and go to the next step immediately.
-1. Hold the `BIOS SETUP KEY` to enter the `BIOS MENU`.
-1. Localize and enter the `Secure Boot` menu using the arrow keys and Enter.
-1. Verify that the `Secure Boot Status` field says `Disabled` - if not,
-  deselect the `Enforce Secure Boot` option using the arrow keys and Enter.
-1. Change the setting of Secure Boot to `Disabled` and press Enter.
-1. Press the `F10` key to open the dialog box.
-1. Press `Enter` to confirm changes and exit from the menu.
-
-After completing the steps described above, Secure Boot should be disabled.
-You could confirm that by repeating steps 3 - 5.
+* ASUS KGPE-D16
+* Dell OptiPlex 7010/9010
+* MSI PRO Z690-A DDR4 ([test
+  report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=0&range=A75))
+* NovaCustom NV4x ([test
+  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161))
+* NS50 70MU ([test
+  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174))
 
 ## Running
 
@@ -158,7 +54,7 @@ This section describes how to boot DTS using USB stick.
 * USB stick (at least 2GB)
 * Wired network connection
 * [Secure Boot disabled](#disabling-secure-boot)
-* Latest image from [releases](#releases) section
+* Latest image from [releases](./releases.md) section
 
 #### Launching DTS
 
@@ -179,26 +75,47 @@ sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 * boot from the USB stick,
 * the DTS menu will now appear.
 
-## DTS CE functionality
+## Disabling Secure Boot
 
-This section describes functionality of Dasharo Tools Suite in Community
-Edition. These are:
+Any procedure which affects the firmware flashing should be preceded by
+controlling the Secure Boot status and if it is turned on, turning it off. The
+enabled Secure Boot will not only prevent you from operating on the firmware,
+but you will also not be able to launch DTS.
 
-* Dasharo HCL Report,
-* Dasharo firmware update,
-* Dasharo EC Transition,
-* Dasharo EC update
+To check the Secure Boot state:
 
-## Dasharo HCL Report
+1. Turn off the station, on which you want to test the Dasharo firmware.
+1. Turn the station on and go to the next step immediately.
+1. Hold the `BIOS SETUP KEY` to enter the `BIOS MENU`.
+1. Localize and enter the `Secure Boot` menu using the arrow keys and Enter.
+1. Verify that the `Secure Boot Status` field says `Disabled` - if not,
+  deselect the `Enforce Secure Boot` option using the arrow keys and Enter.
+1. Change the setting of Secure Boot to `Disabled` and press Enter.
+1. Press the `F10` key to open the dialog box.
+1. Press `Enter` to confirm changes and exit from the menu.
+
+After completing the steps described above, Secure Boot should be disabled.
+You could confirm that by repeating steps 3 - 5.
+
+## DTS functionality
+
+This section describes functionality of Dasharo Tools Suite. These are:
+
+* HCL Report,
+* Firmware update,
+* EC Transition,
+* EC update.
+
+### HCL Report
 
 DTS allows to generate a package with logs containing hardware information. To
 create one, choose option number 1 and check out the disclaimer. If you would
 like to send the report to our servers, please remember about connecting the
 ethernet cable.
 
-![](../images/dts-hcl-run.png)
+![](./images/dts-hcl-run.png)
 
-## Dasharo firmware update
+### Firmware update
 
 Within DTS, you may use the `flashrom` and `fwupdmgr` utilities to update,
 downgrade, or reinstall your firmware.
@@ -211,7 +128,7 @@ fwupdmgr refresh
 fwupdmgr update
 ```
 
-## Dasharo EC Transition
+### EC Transition
 
 DTS allows to perform full Embedded Controller firmware transition from the
 proprietary vendor EC firmware, to the open-source Dasharo EC firmware.
@@ -332,7 +249,7 @@ To perform EC transition, make sure you are
   version: 2022-10-07_c662165
   ```
 
-## Dasharo EC update
+### EC update
 
 DTS allows to update open-source Embedded Controller firmware to the newer
 version. To properly update it, follow these steps:
@@ -395,10 +312,3 @@ version. To properly update it, follow these steps:
   board: clevo/ns50mu
   version: 2022-08-31_cbff21b
   ```
-
-## Reporting issues
-
-Thank you for using Dasharo Tools Suite Community Edition. If you have
-encountered any problems with this version, or would like to provide feedback
-for us - please open an issue on [Dasharo
-issues](https://github.com/Dasharo/dasharo-issues).
