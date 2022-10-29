@@ -13,11 +13,11 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-## MNE001.001 ME disable option is available and has the correct default state
+## MNE001.001 Intel ME mode option is available and has the correct default state
 
 **Test description**
 
-This test aims to verify that the DME HAP disable state after flashing the
+This test aims to verify that the `Intel ME mode` state after flashing the
 platform with the Dasharo firmware is correct.
 
 **Test configuration data**
@@ -35,19 +35,18 @@ platform with the Dasharo firmware is correct.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the `Dasharo Security Options` submenu.
-1. Verify the `DME HAP disable` field.
+1. Enter the `Intel Management Engine Options` submenu.
+1. Verify the `Intel ME mode` field.
 
 **Expected result**
 
-The `DME HAP disable` field should inform that the current state of DME HAP is
-`off`.
+The `Intel ME mode` field should inform that the current state is `Enabled`.
 
-## MNE002.001 ME disable option off works correctly (Ubuntu 22.04)
+## MNE002.001 Intel ME mode option Enabled works correctly (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that DME HAP disable option in state off works
+This test aims to verify that `Intel ME mode` option in state Enabled works
 correctly.
 
 **Test configuration data**
@@ -66,9 +65,9 @@ correctly.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the `Dasharo Security Options` submenu.
-1. Verify that the `DME HAP disable` option is state `off` - if not, using the
-    arrow keys and `Enter`, choose option `off`.
+1. Enter the `Intel Management Engine Options` submenu.
+1. Verify that the `Intel ME mode` option is state `Enabled` - if not, using the
+    arrow keys and `Enter`, choose option `Enabled`.
 1. Press `F10` to save the changes.
 1. If necessary - press `Y` to confirm saving the changes.
 1. Go back to the main menu using the `ESC` key.
@@ -94,12 +93,12 @@ Example output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE003.001 ME disable option soft disable works correctly (Ubuntu 22.04)
+## MNE003.001 Intel ME mode option Disable (Soft) works correctly (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that DME HAP disable option in state soft disable works
-correctly.
+This test aims to verify that `Intel ME mode` option in state Disable (Soft)
+works correctly.
 
 **Test configuration data**
 
@@ -117,9 +116,9 @@ correctly.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the `Dasharo Security Options` submenu.
-1. Verify that the `DME HAP disable` option is state `soft disable` - if not,
-    using the arrow keys and `Enter`, choose option `soft disable`.
+1. Enter the `Intel Management Engine Options` submenu.
+1. Verify that the `Intel ME mode` option is state `Disable (Soft)` - if not,
+    using the arrow keys and `Enter`, choose option `Disable (Soft)`.
 1. Press `F10` to save the changes.
 1. If necessary - press `Y` to confirm saving the changes.
 1. Go back to the main menu using the `ESC` key.
@@ -145,12 +144,12 @@ Example of unwanted output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE004.001 ME disable HAP bit option works correctly (Ubuntu 22.04)
+## MNE004.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that DME HAP disable option in state HAP bit works
-correctly.
+This test aims to verify that `Intel ME mode` option in state Disable (HAP)
+works correctly.
 
 **Test configuration data**
 
@@ -168,9 +167,9 @@ correctly.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the `Dasharo Security Options` submenu.
-1. Verify that the `DME HAP disable` option is state `HAP bit` - if not, using
-    the arrow keys and `Enter`, choose option `HAP bit`.
+1. Enter the `Intel Management Engine Options` submenu.
+1. Verify that the `Intel ME mode` option is state `Disable (HAP)` - if not,
+    using the arrow keys and `Enter`, choose option `Disable (HAP)`.
 1. Press `F10` to save the changes.
 1. If necessary - press `Y` to confirm saving the changes.
 1. Go back to the main menu using the `ESC` key.
