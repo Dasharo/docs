@@ -13,6 +13,7 @@ that it boots on the following platforms:
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161))
 * NS50 70MU ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174))
+* Protectli FW6/VP46xx
 
 ## Running
 
@@ -97,21 +98,42 @@ To check the Secure Boot state:
 After completing the steps described above, Secure Boot should be disabled.
 You could confirm that by repeating steps 3 - 5.
 
-## DTS functionality
+## Features
 
 This section describes functionality of Dasharo Tools Suite. These are:
 
+* Dasharo zero-touch initial deployment
 * HCL Report,
 * Firmware update,
 * EC Transition,
 * EC update.
+
+### Dasharo zero-touch initial deployment
+
+DTS can be use to flash Dasharo firmware on your hardware. To achieve this, boot
+DTS, choose option number `2`. After creating
+[report](../glossary.md#dasharo-hardware-compatibility-list-report) with
+firmware dump as backup, type `p` to confirm installation of Dasharo firmware.
+
+Procedure execution ends on automatically power off. After restarting the
+platform, you can enjoy the basic version of Dasharo which we provide for given
+hardware.
+
+This feature is supported on following platforms:
+
+* ASUS KGPE-D16,
+* Dell OptiPlex 7010/9010,
+* MSI PRO Z690-A DDR4,
+* NovaCustom NV4x,
+* NS50 70MU.
 
 ### HCL Report
 
 DTS allows to generate a package with logs containing hardware information. To
 create one, choose option number 1 and check out the disclaimer. If you would
 like to send the report to our servers, please remember about connecting the
-ethernet cable.
+ethernet cable. More information can be found in
+[glossary](../glossary.md#dasharo-hardware-compatibility-list-report).
 
 ![](./images/dts-hcl-run.png)
 
