@@ -393,11 +393,17 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 1. Press `ESC` until the setup menu.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
-1. Select the `Reset Secure Boot Keys` menu using the arrow keys and Enter.
+1. Select the `Reset Secure Boot Keys` option using the arrow keys and Enter.
 1. If necessary - press `Y` to confirm saving the changes.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option to apply the settings and reboot.
-1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Verify that the `Current Secure Boot State` field says `Enabled`.
+1. Press `ESC` until the setup menu.
+1. Select the `One Time Boot` menu using the arrow keys and Enter.
 1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
 1. In the shell open the `USB storage` by executing the following command:
 
@@ -436,6 +442,9 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
         ```bash
         Command Error Status: Access Denied
         ```
+
+1. After selecting the `Reset Secure Boot Keys` option, the Secure boot state
+    should be automatically enabled.
 
 ## SBO008.001 Attempt to enroll the key in the incorrect format (firmware)
 
