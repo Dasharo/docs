@@ -17,15 +17,24 @@ For details about our release process please read
 
 ### Images
 
-* [USB bootable DTS CE v1.1.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz-TBD)
-* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256-TBD)
-* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256.sig-TBD)
+* [USB bootable DTS v1.1.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz)
+* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256)
+* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256.sig)
 
-  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE-TBD)
+  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
 
 ### Changelog
 
-* TBD
+* Added [Dasharo zero-touch
+  initial deployment](./documentation.md#dasharo-zero-touch-initial-deployment)
+  for couple of supported platform
+* Added multiple HCL report improvements, e.g. dump informations about TPM, ME
+* Refactored Dasharo Tools Suite [documentation](./overview.md)
+* Added possibility to rollback using firmware dumped in HCL report
+* Added documentation about [building Dasharo Tools Suite
+  image](./documentation.md#building)
+* Deploying artifacts on [boot.dasharo.com](https://boot.dasharo.com/yocto/dts/)
+* Sharing build cache on [cache.dasharo.com](https://cache.dasharo.com/yocto/dts/)
 
 ## v1.0.2
 
