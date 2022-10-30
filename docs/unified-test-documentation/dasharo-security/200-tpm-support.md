@@ -1,5 +1,18 @@
 # Dasharo Security: TPM Support
 
+## Test cases common documentation
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
+
 ## TPM001.001 TPM Support (Ubuntu 22.04)
 
 **Test description**
@@ -15,13 +28,7 @@ be accessed from the operating system.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`.
 
 **Test steps**
@@ -30,36 +37,36 @@ be accessed from the operating system.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Check the version of installed tpm2-tools - execute the following command
-in the terminal:
+    in the terminal:
 
-```bash
-dpkg --list tpm2-tools
-```
-
-1. If your device is equipped with TPM2.0 and the version of `tpm2-tools`
-is 4.0 or higher - execute the following command in terminal:
-
-```bash
-tpm2_pcrread
-```
+    ```bash
+    dpkg --list tpm2-tools
+    ```
 
 1. If your device is equipped with TPM2.0 and the version of `tpm2-tools`
-is lower than 4.0 - execute the following command in terminal:
+    is 4.0 or higher - execute the following command in the terminal:
 
-```bash
-tpm2_pcrlist
-```
+    ```bash
+    tpm2_pcrread
+    ```
 
-1. If your device is equipped with TPM1.2 - execute the following command
-in terminal:
+1. If your device is equipped with TPM2.0 and the version of `tpm2-tools`
+    is lower than 4.0 - execute the following command in the terminal:
 
-```bash
-cat /sys/class/tpm/tpm0/pcrs
-```
+    ```bash
+    tpm2_pcrlist
+    ```
+
+1. If your device is equipped with TPM1.2 - execute the following command in the
+    terminal:
+
+    ```bash
+    cat /sys/class/tpm/tpm0/pcrs
+    ```
 
 **Expected result**
 
-1. The command should return a list of PCRs and their contents.
+The command should return a list of PCRs and their contents.
 
 Output example for TPM2.0:
 
@@ -160,32 +167,104 @@ be accessed from the operating system.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a PowerShell and execute following command:
+1. Open a PowerShell as administrator and run the following command:
 
-```PowerShell
-get-tpm
-```
+    ```PowerShell
+    get-tpm
+    ```
 
 **Expected result**
 
-1. The command should return information about TPM state: if the TPM is
-    present, ready and enabled:
+The command should return information about the TPM state: if the TPM is
+present, ready and enabled:
 
-```text
+```powershell
 TpmPresent     : True
 TpmReady       : True
 TpmEnabled     : True
+
+```
+
+## TPM002.001 Verify TPM version (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the TPM version is correctly recognized by the
+operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Check the version of installed tpm2-tools - execute the following command
+    in the terminal:
+
+    ```bash
+    dmesg | grep -i tpm
+    ```
+
+**Expected result**
+
+The command should return information about the TPM version.
+
+Example output:
+
+```bash
+tpm_tis 00:07: 1.2 TPM (device-id 0x0, rev-id 78)
+```
+
+## TPM002.002 Verify TPM version (Windows 11)
+
+**Test description**
+
+This test aims to verify that the TPM version is correctly recognized by the
+operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a PowerShell as administrator and run the following command:
+
+    ```PowerShell
+    wmic /namespace:\\root\cimv2\security\microsofttpm path win32_tpm get * /format:textvaluelist.xsl
+    ```
+
+**Expected result**
+
+The command should return information about the TPM version.
+
+Example output:
+
+```text
+SpecVersion=2.0
 ```
