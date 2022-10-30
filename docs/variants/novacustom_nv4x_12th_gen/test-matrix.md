@@ -72,13 +72,13 @@ subjected from before the release of the new binary.
 
 ## Module: Dasharo security
 
-| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                                | TPM           | All                                  |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
-| 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
-| 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+| No.  | Supported test suite                       | Test suite ID | Supported test cases                 |
+|:-----|:-------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [TPM Support][TPM]                         | TPM           | All                                  |
+| 2.   | [Verified Boot support][VBO]               | VBO           | Without VBO006.001 and VBO007.001    |
+| 3.   | [Measured Boot support][MBO]               | MBO           | All                                  |
+| 4.   | [Secure Boot support][SBO]                 | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
+| 5.   | [BIOS lock support][BLS]                   | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
