@@ -125,7 +125,7 @@ From `yocto` directory run:
 $ SHELL=/bin/bash kas-container build meta-dts-ce/kas.yml
 ```
 
-- Image build takes time, so be patient and after build's finish you should see
+* Image build takes time, so be patient and after build's finish you should see
 something similar to (the exact tasks numbers may differ):
 
 ```shell
@@ -138,7 +138,7 @@ NOTE: Tasks Summary: Attempted 2532 tasks of which 2524 didn't need to be rerun 
 Using cache is enabled in `kas/cache.yml` file and can be disabled by removing
 content of that file.
 
-```
+```bash
 $ cat kas/cache.yml
 header:
   version: 11
@@ -154,7 +154,7 @@ local_conf_header:
 
 ### Flash
 
-- Find out your device name:
+* Find out your device name:
 
 ```shell
 $ fdisk -l
@@ -173,7 +173,7 @@ in this case the device name is `/dev/sdx` **but be aware, in next steps
 replace `/dev/sdx` with right device name on your platform or else you can
 damage your system!.**
 
-- From where you ran image build type:
+* From where you ran image build type:
 
 ```shell
 $ cd build/tmp/deploy/images/genericx86-64
@@ -190,7 +190,7 @@ bmaptool: info: synchronizing '/dev/sdx'
 bmaptool: info: copying time: 33.2s, copying speed 31.9 MiB/sec
 ```
 
-- Boot the platform
+* Boot the platform
 
 ## Disabling Secure Boot
 
@@ -437,6 +437,9 @@ version. To properly update it, follow these steps:
 
   > Note: this is example output, versions may differ
 
+* Computer will shut down automatically.
+* Power on your computer. Booting process may take a while.
+* After boot, choose option number 9 to drop to Shell.
 * Retrieve information about your updated EC
 
   ```bash

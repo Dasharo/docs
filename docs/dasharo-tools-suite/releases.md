@@ -28,12 +28,12 @@ For details about our release process please read
 * Added [Dasharo zero-touch
   initial deployment](./documentation.md#dasharo-zero-touch-initial-deployment)
   for couple of supported platform
-* Added multiple HCL report improvements, e.g. dump informations about TPM, ME
+* Added multiple HCL report improvements, e.g. dump information about TPM, ME
 * Refactored Dasharo Tools Suite [documentation](./overview.md)
 * Added possibility to rollback using firmware dumped in HCL report
 * Added documentation about [building Dasharo Tools Suite
   image](./documentation.md#building)
-* Deploying artifacts on [boot.dasharo.com](https://boot.dasharo.com/yocto/dts/)
+* Deploying artifacts on [boot.dasharo.com](https://boot.dasharo.com/dts/)
 * Sharing build cache on [cache.dasharo.com](https://cache.dasharo.com/yocto/dts/)
 
 ## v1.0.2
