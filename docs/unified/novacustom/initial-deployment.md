@@ -2,44 +2,10 @@
 
 ## Intro
 
-Flashing coreboot can be done from Linux using flashrom with the internal
-programmer. This document describes the process of building, installing and
-running flashrom on Ubuntu 22.04.
-
-## Build flashrom
-
-Currently, the latest flashrom release lacks support for internal flashing
-on recent Intel processors. Because of this, we need to build flashrom from
-source.
-
-1. Install build dependencies:
-
-    ```bash
-    apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
-    ```
-
-1. Obtain source code:
-
-    ```bash
-    git clone https://review.coreboot.org/flashrom.git
-    cd flashrom
-    ```
-
-1. Build flashrom:
-
-    ```bash
-    make
-    sudo make install
-    ```
-
-## Reading flash contents
-
-To read from the flash and save them to a file (`dump.rom`), execute the
-following command:
-
-```bash
-flashrom -p internal -r dump.rom
-```
+This document is a guide for the initial installation of Dasharo on a supported
+device. It assumes some knowledge about external flashing and is primarily aimed
+at technicians performing initial installation and not for end users of the
+devices.
 
 ## Installing Dasharo
 
@@ -51,21 +17,34 @@ flashrom -p internal -r dump.rom
     Intel ME version (and configuration) on the device. Since vendor firmware
     has enabled Intel Boot Guard and BIOS Guard, it is not possible to do this
     from within the operating system and external flashing of the whole flash
-    chip using a programmer like the CH341a or RTE is required.
+    chip using a programmer like the CH341a or
+    [3mdeb RTE](http://docs.dasharo.com/transparent-validation/rte/introduction/)
+    is required.
 
     > Publicly released binaries do not contain ME binary. If you need an Intel ME
     > update for your device, contact us via already established commercial support
     > channel.
 
-    === "NS5x / NS7x"
-        ![ns5x chips](../../images/ns50mu_board_chips.jpg)
+    ### Preparation
 
-    === "NV4x"
-        ![nv4x chips](../../images/nv4x_board_chips.jpg)
+    Install flashrom:
+
+    ```bash
+    sudo apt -y install flashrom
+    ```
+
+    ### Installation
 
     Steps for initial Dasharo installation:
 
     1. Open the laptop.
+
+        === "NS5x / NS7x"
+            ![ns5x chips](../../images/ns50mu_board_chips.jpg)
+
+        === "NV4x"
+            ![nv4x chips](../../images/nv4x_board_chips.jpg)
+
     1. Disconnect the primary battery. (1)
     1. Disconnect the CMOS battery. (2)
     1. Attach a WSON-8 probe to the SPI flash chip. (3)
@@ -108,6 +87,49 @@ flashrom -p internal -r dump.rom
     [Bootable over network](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
     method which is less time-consuming and just easier than DTS on the USB Stick.
 
+    ### Preparation
+
+    Flashing coreboot can be done from Linux using flashrom with the internal
+    programmer. This document describes the process of building, installing and
+    running flashrom on Ubuntu 22.04.
+
+    ### Build flashrom
+
+    Currently, the latest flashrom release lacks support for internal flashing
+    on recent Intel processors. Because of this, we need to build flashrom from
+    source.
+
+    1. Install build dependencies:
+
+        ```bash
+        apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+        ```
+
+    1. Obtain source code:
+
+        ```bash
+        git clone https://review.coreboot.org/flashrom.git
+        cd flashrom
+        ```
+
+    1. Build flashrom:
+
+        ```bash
+        make
+        sudo make install
+        ```
+
+    ### Reading flash contents
+
+    To read from the flash and save them to a file (`dump.rom`), execute the
+    following command:
+
+    ```bash
+    flashrom -p internal -r dump.rom
+    ```
+
+    ### Flashing Dasharo
+
     During the initial installation of Dasharo, you should deploy the supported
     Intel ME version (and configuration) on the device.
 
@@ -120,14 +142,4 @@ flashrom -p internal -r dump.rom
 
     ```bash
     flashrom -p internal -w [path]
-    ```
-
-    ### Upgrading Dasharo
-
-    To upgrade Dasharo to the laptop, execute the following command - replace
-    [path] with the path to the Dasharo image you want to flash, e.g.
-    `build/coreboot.rom`.
-
-    ```bash
-    flashrom -p internal -w [path] --ifd -i bios
     ```
