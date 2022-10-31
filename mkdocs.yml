@@ -35,8 +35,9 @@ nav:
   - 'Intro': index.md
   - 'Supported hardware':
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
-      - 'building [TEST]':
+      - 'NovaCustom laptops':
         - 'Building': unified/novacustom/building-manual.md
+        - 'Initial deployment': unified/novacustom/initial-deployment.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
