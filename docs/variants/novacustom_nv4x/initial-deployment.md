@@ -1,12 +1,23 @@
 # Initial Deployment
 
-## Intro
+Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
+
+* using DTS v1.1.0,
+* manually.
+
+## Initial deployment using DTS
+
+Initial deployment for Dell OptiPlex 7010/9010 in supported in DTS since version
+v1.1.0. Please check [Dasharo zero-touch initial deployment
+section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
+
+## Initial deployment manually
 
 Flashing coreboot can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and
 running flashrom on Ubuntu 20.04.
 
-## Build flashrom
+### Build flashrom
 
 Currently, the latest flashrom release lacks support for Tiger Lake-U internal
 flashing. Because of this, we need to build flashrom from the source.
@@ -31,7 +42,7 @@ flashing. Because of this, we need to build flashrom from the source.
     sudo make install
     ```
 
-## Reading flash contents
+### Reading flash contents
 
 To read from the flash and save them to a file (`dump.rom`), execute the
 following command:
@@ -40,7 +51,7 @@ following command:
 flashrom -p internal -r dump.rom
 ```
 
-## Installing Dasharo
+### Installing Dasharo
 
 The following instructions describe how to flash Dasharo, but if you are
 interested in version v1.3.0 or higher, which is only compatible with Open EC
@@ -53,7 +64,7 @@ We recommend using DTS with the
 [Bootable over network](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
 method which is less time-consuming and just easier than DTS on the USB Stick.
 
-### Internal flashing Dasharo
+#### Internal flashing Dasharo
 
 To flash Dasharo to the laptop, execute the following command - replace [path]
 with the path to the Dasharo image you want to flash, e.g. `build/coreboot.rom`.
@@ -62,7 +73,7 @@ with the path to the Dasharo image you want to flash, e.g. `build/coreboot.rom`.
 flashrom -p internal -w [path] --ifd -i bios
 ```
 
-### Initial Installation
+#### Initial Installation
 
 During the initial installation of Dasharo, you should deploy the supported
 Intel ME version (and configuration) on the device.

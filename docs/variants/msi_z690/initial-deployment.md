@@ -1,10 +1,23 @@
 # Initial Deployment
 
+Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
+
+* using DTS v1.1.0,
+* manually.
+
+## Initial deployment using DTS
+
+Initial deployment for Dell OptiPlex 7010/9010 in supported in DTS since version
+v1.1.0. Please check [Dasharo zero-touch initial deployment
+section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
+
+## Initial deployment manually
+
 Flashing coreboot can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and
 running flashrom on Ubuntu 22.04.
 
-## Build flashrom
+### Build flashrom
 
 Currently, the latest flashrom release lacks support for Alder Lake S internal
 flashing. Because of this, we need to build flashrom from
@@ -39,13 +52,13 @@ Build and install flashrom:
 sudo make install
 ```
 
-## Flashing
+### Flashing
 
 All flash operations require UEFI Secure Boot to be disabled. You may download
 the binary using `scp` (need to install openssh-server package) or `wget`
 command. The binaries can be found on the [release page](releases.md).
 
-### Reading flash contents
+#### Reading flash contents
 
 Always prepare a backup of the current firmware image. To read the original
 firmware from the flash and save it to a file (`dump.rom`), execute the
@@ -61,7 +74,7 @@ has a Firefox browser installed). Ubuntu live image is volatile and has no
 persistent storage. All changes made in the live image will be lost after
 reboot.
 
-### Migrating SMBIOS unique data
+#### Migrating SMBIOS unique data
 
 To migrate the SMBIOS system UUID and board serial number follow the Linux
 instructions below before attempting to flash the binary. The procedure is
@@ -124,7 +137,7 @@ check [Vboot documentation](../../common-coreboot-docs/vboot_signing.md) how to
 resign the data. It is the machine owner's responsibility to generate and use
 own keys during updates.
 
-### Flashing Dasharo
+#### Flashing Dasharo
 
 **WARNING**: If you use an external/discrete GPU and migrate to Dasharo, be
 sure to unplug the dGPU first (when the machine is powered off before proceeding
@@ -152,7 +165,7 @@ the GUI to shut down the board. Press `ENTER` when prompted on the screen. Power
 on the board back. Reboot will not work as some memory settings are preserved
 after reboot and FSP fails to train the memory. Poweroff is required.
 
-### Flashing back vendor firmware
+#### Flashing back vendor firmware
 
 ```bash
 sudo flashrom -p internal -w dump.rom --ifd -i bios
