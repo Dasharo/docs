@@ -15,6 +15,7 @@ the device, but also as the presale validation procedure!
 * HDMI-HDMI cable,
 * USB A - micro USB cable (male, male),
 * Y-splitter cable.
+* (Optional) UART -> USB converter
 
 ### Building the OS
 
@@ -41,32 +42,22 @@ To prevent any mix-up in libraries and dependencies process will include Docker.
 1. Create `config.mk` file as follows:
 
     ```bash
-    [user@localhost os]$ cat config.mk
-    # rpi3 for Raspberry Pi 3; rpi2 for the version 2, zero2w for Zero2W
     BOARD = zero2w
 
-    # Hardware configuration
     PLATFORM = v2-hdmi
 
-    # Target hostname
     HOSTNAME = pikvm
 
-    # ru_RU, etc. UTF-8 only
     LOCALE = en_US
 
-    # See /usr/share/zoneinfo
     TIMEZONE = Europe/Warsaw
 
-    # For SSH root user
     ROOT_PASSWD = root
 
-    # Web UI credentials: user=admin, password=<this>
     WEBUI_ADMIN_PASSWD = admin
 
-    # IPMI credentials: user=admin, password=<this>
     IPMI_ADMIN_PASSWD = admin
 
-    # SD card device eg.: CARD = /dev/mmcblk0
     CARD = <SD_card_location>
     ```
 
@@ -88,13 +79,73 @@ To prevent any mix-up in libraries and dependencies process will include Docker.
 1. Install the image on the SD card using eg.
     [balenaEtcher](https://www.balena.io/etcher/).
 
-- wifi
+1. If you want to connect PiKVM to a Wi-Fi network, you need to tell the device
+    ESSID and password before first boot. To do this, mount the first partition
+    of the memory card (FAT32) and edit or make the `pikvm.txt` file there. Do
+    not remove line `FIRSTBOOT=1` or `FIRST_BOOT-1` for first time booting, just
+    add your wifi settings like this:
+
+    ```bash
+    FIRSTBOOT=1
+    WIFI_ESSID="name"
+    WIFI_PASSWD="password"
+    ```
+
+    There is a possibility that, in countries that support CH13, the device will
+    not connect. You will need to configure your router to disable channels
+    12-14 or disable Auto scan mode so it will connect.
 
 ### Completing Setup
 
-- welding
-- sd card
-- cables
-- blocking usb power from pc
-- wifi
-- 
+1. Connect SD card and HDMI to CSI-2 bridge with camera cable:
+
+    ![Connections](images/camera_cable_setup.jpg)
+
+1. Read IP:
+
+    - First option:
+        + From `os` repository run:
+
+            ```bash
+            make scan
+            ```
+
+        + Example output:
+
+            ```bash
+            .
+            .
+            .
+            ===== Toolbox image is ready =====
+            ===== Searching for Pis in the local network =====
+            docker run \
+            		--rm \
+            		--tty \
+            		--net host \
+            	pi-builder-arm-toolbox arp-scan --localnet | grep -Pi "\s(b8:27:eb:|dc:a6:32:)" || true
+            192.168.4.13	dc:a6:32:aa:aa:aa	Raspberry Pi Trading Ltd
+            ```
+
+    - Second option:
+        + Open the web interface of your router and find the list of issued IP
+            addresses there. It depends on the router model.
+
+    - Third option:
+        + Solder pins for serial output as on images below:
+
+            ![Pins](images/soldered_pins.jpg)
+            ![Schematics](images/pin_schem.jpg)
+
+        + Check Raspberry Pi Zero2W IP by booting to system and reading
+            information via serial (eg.) UART -> USB converter.
+
+1. Block USB power from device under test by preparing USB cable:
+
+    ![USB](images/usb_cable.jpg)
+
+1. Connect HDMI cable from devie under test to HDMI -> CSI-2 bridge
+1. Connect USB splitter to Raspberry Pi micro USB port.
+1. One side of the splitter connect to USB-A 5 V 3.1 A charger.
+1. Other side connect to device under test via USB cable with blocked power.
+1. From borwser connect to Raspberry Pi addres eg. `192.168.4.13`.
+1. Setup is now fully functional.
