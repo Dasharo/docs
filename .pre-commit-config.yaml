@@ -25,7 +25,7 @@ repos:
       - id: markdownlint-fix
 
   - repo: https://github.com/talos-systems/conform
-    rev: v0.1.0-alpha.26
+    rev: v0.1.0-alpha.27
     hooks:
       - id: conform
         stages:
