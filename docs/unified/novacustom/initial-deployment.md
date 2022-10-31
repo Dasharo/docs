@@ -11,7 +11,7 @@ devices.
 
 ### Initial Installation
 
-=== "12th Gen Laptops"
+=== "12th Gen (Alder Lake)"
 
     During the initial installation of Dasharo, you should deploy the supported
     Intel ME version (and configuration) on the device. Since vendor firmware
@@ -74,7 +74,7 @@ devices.
 
     Successful transition to Open EC finishes the initial deployment process.
 
-=== "11th Gen Laptops"
+=== "11th Gen (Tiger Lake)"
 
     The following instructions describe how to flash Dasharo, but if you are
     interested in version v1.3.0 or higher, which is only compatible with Open EC
