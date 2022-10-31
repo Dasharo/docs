@@ -21,7 +21,7 @@ For details about our release process please read
 * [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256)
 * [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256.sig)
 
-  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
+  See how to verify hash and signature on [this video.](https://youtu.be/I3rouLRm6dM)
 
 ### Changelog
 
@@ -33,6 +33,14 @@ For details about our release process please read
 * Added possibility to rollback using firmware dumped in HCL report
 * Added documentation about [building Dasharo Tools Suite
   image](./documentation.md#building)
+* Added Github Actions to automate new version building
+* Added new tools: cbfstool, cbmem, futil, intelmetool (all from [Dasharo
+  coreboot fork](https://github.com/Dasharo/coreboot/tree/coreboot-utils)),
+  [binwalk](https://github.com/ReFirmLabs/binwalk),
+  [uefi-firmware-parser](github.com/theopolis/uefi-firmware-parser),
+  [mei-amt-check](github.com/mjg59/mei-amt-check)
+* Updated flashrom to version
+  [dasharo-v1.2.2](https://github.com/Dasharo/flashrom/tree/dasharo-v1.2.2)
 * Deploying artifacts on [boot.dasharo.com](https://boot.dasharo.com/dts/)
 * Sharing build cache on [cache.dasharo.com](https://cache.dasharo.com/yocto/dts/)
 
