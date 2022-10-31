@@ -1,10 +1,23 @@
 # Initial deployment
 
+Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
+
+* using DTS v1.1.0,
+* manually.
+
+## Initial deployment using DTS
+
+Initial deployment for Dell OptiPlex 7010/9010 in supported in DTS since version
+v1.1.0. Please check [Dasharo zero-touch initial deployment
+section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
+
+## Initial deployment manually
+
 Initial flashing of Dasharo firmware can be done from Linux using flashrom with
 the internal programmer. This document describes the process of building,
 installing and running flashrom on Ubuntu 20.04.
 
-## Build flashrom
+### Build flashrom
 
 Currently, the latest flashrom release lacks support for Comet Lake U internal
 flashing. Because of this, we need to build flashrom from source.
@@ -29,7 +42,7 @@ make
 sudo make install
 ```
 
-## Reading flash contents
+### Reading flash contents
 
 Always prepare a backup of the current firmware image. To read from the flash
 and save it to a file (`backup.rom`), execute the following command:
@@ -38,7 +51,7 @@ and save it to a file (`backup.rom`), execute the following command:
 flashrom -p internal -r backup.rom
 ```
 
-## Flashing Dasharo
+### Flashing Dasharo
 
 To flash Dasharo on the platform, execute the following command - replace
 `[path]` with the path to the Dasharo image you want to flash, e.g.
