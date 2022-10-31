@@ -147,5 +147,5 @@ To prevent any mix-up in libraries and dependencies process will include Docker.
 1. Connect USB splitter to Raspberry Pi micro USB port.
 1. One side of the splitter connect to USB-A 5 V 3.1 A charger.
 1. Other side connect to device under test via USB cable with blocked power.
-1. From borwser connect to Raspberry Pi addres eg. `192.168.4.13`.
+1. From browser connect to Raspberry Pi address eg. `192.168.4.13`.
 1. Setup is now fully functional.
