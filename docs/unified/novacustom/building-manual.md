@@ -5,8 +5,8 @@
 This guide shows how to build Dasharo firmware for NovaCustom devices. It
 contains two components:
 
-- BIOS firmware,
-- EC firmware.
+- [BIOS firmware](#build-dasharo-bios-firmware)
+- [EC firmware](#build-dasharo-ec-firmware)
 
 ## Requirements
 
