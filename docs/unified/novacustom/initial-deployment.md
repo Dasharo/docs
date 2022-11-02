@@ -18,7 +18,7 @@ devices.
     has enabled Intel Boot Guard and BIOS Guard, it is not possible to do this
     from within the operating system and external flashing of the whole flash
     chip using a programmer like the CH341a or
-    [3mdeb RTE](http://docs.dasharo.com/transparent-validation/rte/introduction/)
+    [3mdeb RTE](https://docs.dasharo.com/transparent-validation/rte/v1.1.0/flashing-guide/#ns5x7x-12th-generation)
     is required.
 
     > Publicly released binaries do not contain ME binary. If you need an Intel ME
@@ -30,14 +30,16 @@ devices.
     Install flashrom:
 
     ```bash
+    apt update
+    apt upgrade
     sudo apt -y install flashrom
     ```
 
-    ### Installation
+    ### BIOS installation
 
-    Steps for initial Dasharo installation:
+    Steps for installing Dasharo BIOS:
 
-    1. Open the laptop.
+    1. Remove the bottom cover of the laptop.
 
         === "NS5x / NS7x"
             ![ns5x chips](../../images/ns50mu_board_chips.jpg)
@@ -49,7 +51,7 @@ devices.
     1. Disconnect the CMOS battery. (2)
     1. Attach a WSON-8 probe to the SPI flash chip. (3)
     1. Execute the following command, replacing [path] with the path to the firmware
-        image you want to flash, e.g. `novacustom_ns5xpu_ns7xpu_full_v1.0.0.rom`
+        image you want to flash, e.g. `novacustom_ns5x_adl_full_v1.4.0.rom`
 
         ```bash
         flashrom -p ch341a_spi -w [path]
@@ -59,26 +61,57 @@ devices.
     1. Connect the primary battery and reconnect the CMOS battery
     1. Power on the laptop. The laptop may shut down once after training the memory.
 
-    ### Transition to open EC
+    ### EC firmware installation
 
-    If you have deployed the Dasharo using external programmer, time to switch to
-    Open EC. This step is required to support all Dasharo features. To install Open
-    EC Firmware on NS5xPU/NS7xPU, follow this instruction:
-    [Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
+    Currently, the latest flashrom release lacks support for flashing ITE
+    embedded controllers such as the ones present in NovaCustom laptops. Because
+    of this, we need to build flashrom from source. Run the following commands
+    on the target laptop:
 
-    If this is your first experience with DTS, first read its
-    [documentation](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
-    We recommend using DTS with the
-    [Bootable over network](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
-    method which is less time-consuming and just easier than DTS on the USB Stick.
+    1. Install build dependencies:
 
-    Successful transition to Open EC finishes the initial deployment process.
+        ```bash
+        apt update
+        apt upgrade
+        apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+        ```
+
+    1. Obtain source code:
+
+        ```bash
+        git clone https://github.com/dasharo/flashrom.git
+        cd flashrom
+        ```
+
+    1. Build flashrom:
+
+        ```bash
+        make
+        sudo make install
+        ```
+
+    1. Install the EC firmware:
+
+        > Warning: After running this command, the internal keyboard and power
+        > button will stop responding until the device is power cycled (all
+        > power must be removed, including the internal battery). Be prepared
+        > to disconnect the battery after updating the EC.
+
+        Run the following command, replacing [path] with the path to the EC
+        firmware you want to flash, e.g. `novacustom_ns5x_adl_ec_v1.4.0.rom`
+
+        ```bash
+        flashrom -p ite_ec -w [path]
+        ```
+
+    Successful installation of Dasharo EC finishes the initial deployment
+    process.
 
 === "11th Gen (Tiger Lake)"
 
     The following instructions describe how to flash Dasharo, but if you are
-    interested in version v1.3.0 or higher, which is only compatible with Open EC
-    Firmware, follow this instruction:
+    interested in version v1.3.0 or higher, which is only compatible with
+    Dasharo EC Firmware, follow this instruction:
     [Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
 
     If this is your first experience with DTS, first read its
@@ -102,6 +135,8 @@ devices.
     1. Install build dependencies:
 
         ```bash
+        apt update
+        apt upgrade
         apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
         ```
 
