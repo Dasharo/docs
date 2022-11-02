@@ -40,6 +40,7 @@ nav:
         - 'Initial deployment': unified/novacustom/initial-deployment.md
         - 'Firmware update': unified/novacustom/firmware-update.md
         - 'Firmware recovery': unified/novacustom/recovery.md
+        - 'Logo customization': common-coreboot-docs/custom_logo.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
