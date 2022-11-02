@@ -1,6 +1,6 @@
 # Recovery
 
-## Prequisitions
+## Prerequisites
 
 To proceed with the recovery procedure the backup with the vendor firmware will
 be necessary eg. `bios_backup.rom`.
@@ -11,8 +11,7 @@ flash chip according to documentation in the
 section.
 
 > Restoring vendor BIOS requires restoring a compatible version of EC firmware.
-> There is currently no way to do this internally. Proceed with the
-> [External flashing](#external-flashing) section below.
+  There is currently no way to do this internally.
 
 ## External flashing
 
@@ -78,19 +77,6 @@ source $HOME/.cargo/env
 ```bash
 make BOARD=arduino/mega2560
 make BOARD=arduino/mega2560 flash
-```
-
-- Build the firmware for your laptop:
-
-```bash
-make BOARD=clevo/ns50mu
-```
-
-The firmware should now be built. The name of the generated binary
-is printed at the end of the log, e.g.:
-
-```bash
-makebin -s 65536 -p < build/clevo/ns50mu/2022-08-31_cbff21b-dirty/ec.ihx > build/clevo/ns50mu/2022-08-31_cbff21b-dirty/ec.rom
 ```
 
 #### Flashing
@@ -185,7 +171,7 @@ cargo build --manifest-path ecflash/Cargo.toml --example isp --release
 - Flash the firmware:
 
 ```bash
-sudo ecflash/target/release/examples/isp [path to fw]
+sudo ecflash/target/release/examples/isp [path to EC backup]
 ```
 
 The output will contain:
