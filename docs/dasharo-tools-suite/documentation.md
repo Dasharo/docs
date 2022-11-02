@@ -99,14 +99,14 @@ wget -O ~/bin/kas-container https://raw.githubusercontent.com/siemens/kas/3.0.2/
 chmod +x ~/bin/kas-container
 ```
 
-* `meta-dts-ce` repository cloned
+* `meta-dts` repository cloned
 
 ```bash
 mkdir yocto && cd yocto
 ```
 
 ```bash
-git clone https://github.com/Dasharo/meta-dts-ce.git meta-dts
+git clone https://github.com/Dasharo/meta-dts.git
 ```
 
 ### Build
@@ -180,9 +180,9 @@ sudo umount /dev/sdx*
 cd build/tmp/deploy/images/genericx86-64
 ```
 
-Here the file `dts-base-image-ce-genericx86-64.wic.gz` should be available which
+Here the file `dts-base-image-genericx86-64.wic.gz` should be available which
 is the image of DTS. To flash image you can use the same command as showed in
-[running section](#bootable-usb-stick), just change the file name.
+[running section](#launching-dts_1), just change the file name.
 
 * Boot the platform
 

@@ -41,7 +41,8 @@ For details about our release process please read
   [mei-amt-check](github.com/mjg59/mei-amt-check)
 * Updated flashrom to version
   [dasharo-v1.2.2](https://github.com/Dasharo/flashrom/tree/dasharo-v1.2.2)
-* Deploying artifacts on [boot.dasharo.com](https://boot.dasharo.com/dts/)
+* Deploying iPXE boot artifacts on
+  [boot.dasharo.com](https://boot.dasharo.com/dts/)
 * Sharing build cache on [cache.dasharo.com](https://cache.dasharo.com/yocto/dts/)
 
 ## v1.0.2
@@ -57,14 +58,15 @@ For details about our release process please read
 ### Changelog
 
 * Added new vendor specific menu entry which is displayed only on supported
-  platforms, for now NovaCustom menu was added for NV4x and NS50 70MU laptops
+  platforms, for now NovaCustom menu was added for NovaCustom NV4x and
+  NovaCustom NS5x/7x laptops
 * DTS version is now printed in the main menu
-* `ec_transition` script now supports NV4XMB,ME,MZ laptops and automatically
-  download firmware used for transition both for NV4x and NS5x laptopts,
-  [firmware transition](documentation.md#ec-transition)
-  documentation is updated
-* Added kernel configuration to silence terminal logs by default (change loglevel
-  to 1)
+* `ec_transition` script now supports NovaCustom NV4x laptops and automatically
+  download firmware used for transition both for NovaCustom NV4x NV4x and
+  NovaCustom NS5x/7x laptopts, [firmware
+  transition](documentation.md#ec-transition) documentation is updated
+* Added kernel configuration to silence terminal logs by default (change
+  loglevel to 1)
 * Enabled GOOGLE_MEMCONSOLE_COREBOOT kernel configuration to ease getting
   firmware logs
 
@@ -82,8 +84,7 @@ For details about our release process please read
 
 * Added system76_ectool to enable Embedded Controller [firmware updating](./documentation.md#ec-update)
 * Added ec_transition script which helps with full Dasharo/Embedded Controller
-  [firmware transition](./documentation.md#ec-transition) for NS50 70MU and NS70
-  laptops
+  [firmware transition](./documentation.md#ec-transition) for NovaCustom NS5x/7x
 * First public release: [meta-dts-ce](https://github.com/Dasharo/meta-dts-ce)
 
 ## v1.0.0
