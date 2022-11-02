@@ -36,7 +36,7 @@ subjected before the release of the new binary.
 | 25.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
 | 26.  | [CPU status][CPU]                                      | CPU           | All                                  |
 | 27.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
-| 28.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
+| 28.  | [Logo customization functionality][LCM]                | LCM           | LCM001.001                           |
 | 29.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
 | 30.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
 
