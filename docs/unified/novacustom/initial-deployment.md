@@ -50,8 +50,16 @@ devices.
     1. Disconnect the primary battery. (1)
     1. Disconnect the CMOS battery. (2)
     1. Attach a WSON-8 probe to the SPI flash chip. (3)
-    1. Execute the following command, replacing [path] with the path to the firmware
-        image you want to flash, e.g. `novacustom_ns5x_adl_full_v1.4.0.rom`
+    1. Backup the current firmware, in case you want to be able to restore it
+       at some point:
+
+        ```bash
+        flashrom -p ch341a_spi -r bios_backup.rom
+        ```
+
+
+    1. Install Dasharo BIOS, replacing `[path]` with the path to the firmware
+       image you want to flash, e.g. `novacustom_ns5x_adl_full_v1.4.0.rom`
 
         ```bash
         flashrom -p ch341a_spi -w [path]
@@ -90,6 +98,15 @@ devices.
         sudo make install
         ```
 
+    1. Make a backup of the EC firmware:
+
+        > Remember to store the backup on the separate device in case flashing
+        > fails.
+
+        ```bash
+        flashrom -p ite_ec -r ec_backup.rom
+        ```
+
     1. Install the EC firmware:
 
         > Warning: After running this command, the internal keyboard and power
@@ -97,7 +114,11 @@ devices.
         > power must be removed, including the internal battery). Be prepared
         > to disconnect the battery after updating the EC.
 
-        Run the following command, replacing [path] with the path to the EC
+        > Alternatively, you can boot up the laptop without the battery
+        > connected and power it from an AC adapter. Then, once the EC update
+        > is complete, disconnect the AC adapter to power off the laptop.
+
+        Run the following command, replacing `[path]` with the path to the EC
         firmware you want to flash, e.g. `novacustom_ns5x_adl_ec_v1.4.0.rom`
 
         ```bash
@@ -156,11 +177,11 @@ devices.
 
     ### Reading flash contents
 
-    To read from the flash and save them to a file (`dump.rom`), execute the
+    To read from the flash and save them to a file (`bios_backup.rom`), execute the
     following command:
 
     ```bash
-    flashrom -p internal -r dump.rom
+    flashrom -p internal -r bios_backup.rom
     ```
 
     ### Flashing Dasharo

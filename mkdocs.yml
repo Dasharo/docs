@@ -39,6 +39,7 @@ nav:
         - 'Building from source': unified/novacustom/building-manual.md
         - 'Initial deployment': unified/novacustom/initial-deployment.md
         - 'Firmware update': unified/novacustom/firmware-update.md
+        - 'Firmware recovery': unified/novacustom/recovery.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
