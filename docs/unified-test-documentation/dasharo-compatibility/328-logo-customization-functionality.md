@@ -41,21 +41,7 @@ will be shown properly.
 1. Log into the system by using the proper login and password.
 1. Based on the
     [dedicated documentation](../../common-coreboot-docs/custom_logo.md#replace-logo-in-an-existing-image)
-    replace the logo in an existing image.
-1. Flash the firmware by using the internal programmer and `flashrom` tool. If
-    DUT is already flashed with the Dasharo firmware, the following command
-    should be used:
-
-    ```bash
-    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
-    ```
-
-    Otherwise, the following command should be used:
-
-    ```bash
-    flashrom -p internal -w [path-to-binary] --ifd -i bios
-    ```
-
+    replace the logo in an existing image and flash the firmware.
 1. Reboot DUT.
 
 **Expected result**
