@@ -45,8 +45,7 @@ Choose your generation below:
     related to the EC mean that special care must be taken when updating to this
     version.
 
-    Update to the [v1.3.0 version](../releases/#v130-2022-09-01) first, by
-    following
+    Update to version v1.3.0 first, by following
     [this procedure](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
 
     ### Version v1.3.0 or newer
