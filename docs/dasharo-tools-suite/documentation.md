@@ -11,7 +11,7 @@ that it boots on the following platforms:
   report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=0&range=A75))
 * NovaCustom NV4x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161))
-* NS50 70MU ([test
+* NovaCustom NS5x/7x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174))
 * Protectli FW6/VP46xx
 
@@ -66,11 +66,11 @@ To access Dasharo Tools Suite:
     - you can also use `dd` to flash from command line
 
 ```bash
-gzip -cdk dts-base-image-ce-v1.0.0.wic.gz | \
+gzip -cdk dts-base-image-v1.1.0.wic.gz | \
 sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 ```
 
-> Note: this is an example for v1.0.0 image.
+> Note: this is an example for v1.1.0 image.
 
 * insert the USB stick to a USB in your device,
 * boot from the USB stick,
@@ -78,9 +78,11 @@ sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 
 ## Building
 
-DTS image can be built using publicly available sources. Thanks to publishing
-build cache on [cache.dasharo.com](https://cache.dasharo.com/yocto/dts/) time
-needed to finish the process should be significantly decreased.
+We choose [Yocto Project](https://www.yoctoproject.org/) to prepare Dasharo
+Tools Suite system. DTS image can be built using publicly available sources.
+Thanks to publishing build cache on
+[cache.dasharo.com](https://cache.dasharo.com/yocto/dts/) time needed to finish
+the process should be significantly decreased.
 
 ### Prerequisites
 
@@ -104,25 +106,15 @@ mkdir yocto && cd yocto
 ```
 
 ```bash
-git clone https://github.com/Dasharo/meta-dts-ce.git
+git clone https://github.com/Dasharo/meta-dts-ce.git meta-dts
 ```
-
-* [bmaptool](https://source.tizen.org/documentation/reference/bmaptool) installed
-
-```bash
-sudo apt install bmap-tools
-```
-
-> You can also use `bmap-tools`
-> [from github](https://github.com/intel/bmap-tools) if it is not available in
-> your distro.
 
 ### Build
 
 From `yocto` directory run:
 
 ```shell
-$ SHELL=/bin/bash kas-container build meta-dts-ce/kas.yml
+SHELL=/bin/bash kas-container build meta-dts/kas.yml
 ```
 
 * Image build takes time, so be patient and after build's finish you should see
@@ -139,7 +131,12 @@ Using cache is enabled in `kas/cache.yml` file and can be disabled by removing
 content of that file.
 
 ```bash
-$ cat kas/cache.yml
+cat kas/cache.yml
+```
+
+output:
+
+```bash
 header:
   version: 11
 
@@ -157,7 +154,7 @@ local_conf_header:
 * Find out your device name:
 
 ```shell
-$ fdisk -l
+fdisk -l
 ```
 
 output:
@@ -176,19 +173,16 @@ damage your system!.**
 * From where you ran image build type:
 
 ```shell
-$ cd build/tmp/deploy/images/genericx86-64
-$ sudo umount /dev/sdx*
-$ sudo bmaptool copy --nobmap dts-base-image-ce-genericx86-64.wic.gz /dev/sdx
+sudo umount /dev/sdx*
 ```
-
-and you should see output similar to this (the exact size number may differ):
 
 ```shell
-bmaptool: info: no bmap given, copy entire image to '/dev/sdx'
-/
-bmaptool: info: synchronizing '/dev/sdx'
-bmaptool: info: copying time: 33.2s, copying speed 31.9 MiB/sec
+cd build/tmp/deploy/images/genericx86-64
 ```
+
+Here the file `dts-base-image-ce-genericx86-64.wic.gz` should be available which
+is the image of DTS. To flash image you can use the same command as showed in
+[running section](#bootable-usb-stick), just change the file name.
 
 * Boot the platform
 
@@ -241,7 +235,7 @@ This feature is supported on following platforms:
 * Dell OptiPlex 7010/9010,
 * MSI PRO Z690-A DDR4,
 * NovaCustom NV4x,
-* NS50 70MU.
+* NovaCustom NS5x/7x.
 
 ### HCL Report
 
@@ -373,14 +367,14 @@ To perform EC transition, make sure you are
   The output of the above command should contain information about
   the version of flashed firmware:
 
-    - on `NovaCustom NS5x/NS7x`
+* on `NovaCustom NS5x/NS7x`
 
   ```bash
   board: clevo/ns50mu
   version: 2022-08-31_cbff21b
   ```
 
-    - on `NovaCustom NV4x`
+* on `NovaCustom NV4x`
 
   ```bash
   board: clevo/nv40mz

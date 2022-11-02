@@ -17,11 +17,11 @@ For details about our release process please read
 
 ### Images
 
-* [USB bootable DTS v1.1.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz)
-* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256)
-* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-ce-v1.1.0.wic.gz.sha256.sig)
+* [USB bootable DTS v1.1.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz)
+* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256)
+* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256.sig)
 
-  See how to verify hash and signature on [this video.](https://youtu.be/I3rouLRm6dM)
+  See how to verify hash and signature on [this video.](https://youtu.be/RF-NYcZM9JI)
 
 ### Changelog
 
@@ -48,7 +48,7 @@ For details about our release process please read
 
 ### Images
 
-* [USB bootable DTS CE v1.0.2 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz)
+* [USB bootable DTS v1.0.2 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz)
 * [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256)
 * [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256.sig)
 
@@ -72,7 +72,7 @@ For details about our release process please read
 
 ### Images
 
-* [USB bootable DTS CE v1.0.1 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz)
+* [USB bootable DTS v1.0.1 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz)
 * [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256)
 * [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig)
 
@@ -90,7 +90,7 @@ For details about our release process please read
 
 ### Images
 
-* [USB bootable DTS CE v1.0.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz)
+* [USB bootable DTS v1.0.0 image](https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz)
 * [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz.sha256)
 
   ```bash
