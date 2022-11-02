@@ -29,7 +29,11 @@ We give no warranty, although it is highly unlikely, provided that you use the
 supported board model and follow the [Initial
 Deployment](../initial-deployment). In the worst scenario, you might "brick" the
 board, rendering it unbootable. It can be fixed by following the [recovery
-procedure](../recovery).
+procedure](../recovery). In case of concerns, we invite you to buy the equipment
+directly in our [online
+store](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1) with a
+subscription service, under which we perform the Dasharo installation with the
+latest release, and offer full support through invite-only Matrix channel.
 
 ## How can I know if the board is "bricked"?
 
