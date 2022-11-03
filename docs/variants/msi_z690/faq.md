@@ -67,7 +67,7 @@ In practice, any Alder Lake-S Processor should work.
 12900KS is rather unknown at the moment, because it was released later and may
 require more recent microcode.
 
-## Which DDR4 memory modules are supported?
+## Which memory modules are supported?
 
 We can say the "supported" one is the one that have been tested during
 Validation Procedure or have been tested by the community.
