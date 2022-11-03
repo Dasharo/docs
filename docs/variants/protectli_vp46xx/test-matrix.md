@@ -22,16 +22,15 @@ for all platforms of the VP46XX family.
 | 10.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 11.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001, UTC004.001               |
 | 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | ALL                                  |
-| 13.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.001                           |
-| 14.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
-| 15.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-| 16.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
-| 17.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
-| 18.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
-| 19.  | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD001.002, AUD002.001, AUD002.002, AUD003.001, AUD003.002, AUD004.001, AUD004.002, AUD005.001, AUD005.002, AUD006.001, AUD006.002 |
-| 20.  | [UEFI Shell][USH]                                 | USH           | All                                  |
-| 21.  | [USB detection][UDT]                              | UDT           | All                                  |
-| 22.  | [USB booting][UBT]                                | UBT           | All                                  |
+| 13.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
+| 14.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+| 15.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
+| 16.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
+| 17.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
+| 18.  | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD001.002, AUD002.001, AUD002.002, AUD003.001, AUD003.002, AUD004.001, AUD004.002, AUD005.001, AUD005.002, AUD006.001, AUD006.002 |
+| 19.  | [UEFI Shell][USH]                                 | USH           | All                                  |
+| 20.  | [USB detection][UDT]                              | UDT           | All                                  |
+| 21.  | [USB booting][UBT]                                | UBT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -64,8 +63,7 @@ for all platforms of the VP46XX family.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | VBO006.002, VBO007.002, VBO008.001   |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME neuter support][MNE]                          | MNE           | MNE003.001                           |
-| 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md

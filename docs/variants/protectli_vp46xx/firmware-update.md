@@ -6,7 +6,15 @@ update.
 The process may be different, depending on the currently installed Dasharo
 firmware version.
 
-## Updating on Dasharo v1.0.16 or newer
+For simplicity we recommend using
+[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
+
+## Updating to Dasharo v1.0.18
+
+v1.0.18 is a refreshed release, rebased on more up-to-date revision of coreboot
+and it requires to flash whole image as described in [Initial Deployment](initial-deployment.md).
+
+## Updating on Dasharo v1.0.16 or v1.0.17
 
 Only the `RW_SECTION_A` partition of the flash needs to be updated. Flash it
 using the following command:
