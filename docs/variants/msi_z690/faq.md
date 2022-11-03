@@ -56,9 +56,11 @@ Please follow the [recovery procedure](../recovery).
 
 ## Which CPUs are supported?
 
-We can say the "supported" one is the one we have tested. It is the `Intel Core
-i5-12600K` and you can check that in the [Hardware Configuration
-Matrix](../hardware-matrix).
+We can say the "supported" one is the one that have been tested during
+Validation Procedure or have been tested by the community.
+
+The list of all supported CPUs is available in the
+[CPU HCL](../cpu-hcl) documentation.
 
 In practice, any Alder Lake-S Processor should work.
 
@@ -67,21 +69,11 @@ require more recent microcode.
 
 ## Which DDR4 memory modules are supported?
 
-We can say the "supported" one is the one we have tested. It is the `Kingston
-Fury Beast KF436C17BBK4/32` part populated in all 4 slots, and you can check
-that in the [Hardware Configuration Matrix](../hardware-matrix). At that point
-it was not extensively tested either, though. Once the memory initialization
-goes through (we can see firmware logo on the display, and then boot into OS),
-we assume it is good enough at this stage.
+We can say the "supported" one is the one that have been tested during
+Validation Procedure or have been tested by the community.
 
-No other memory modules or combination in slots were verified so far. This is on
-the roadmap for future releases.
-
-You **should not** refer to the [Memory
-Compatibility](https://www.msi.com/Motherboard/PRO-Z690-A-DDR4/support#mem) of
-the mainboard. It does not need to apply here due the difference on what memory
-initialization routines are used in the original MSI firmware and the ones in
-Dasharo firmware (provided by the [Intel FSP](https://www.intel.com/FSP)).
+The list of all supported memory modules is available in the
+[Memory HCL](../memory-hcl) documentation.
 
 ## What is the memory profile?
 
@@ -115,6 +107,14 @@ no certainty that `EFI Option ROM` is signed correctly.
 
 [msi_port_analysis]:
     https://www.reddit.com/r/intel/comments/subaro/how_many_people_are_interesed_in_seeing_coreboot/
+
+## Which GPUs are supported?
+
+We can say the "supported" one is the one that have been tested during
+Validation Procedure or have been tested by the community.
+
+The list of all supported memory modules is available in the
+[GPU HCL](../gpu-hcl) documentation.
 
 ## [Online shop](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1) Dasharo compatible with MSI PRO Z-690A DDR4
 
