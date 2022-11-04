@@ -17,9 +17,9 @@ section.
 
 ### BIOS recovery
 
-[Initial deployment](initial-deployment.md#initial-installation) section to
-perform the external flash. When running the flashrom commands use a backup file
-you've prepared previously, like `bios_backup.rom`.
+Follow the [Initial deployment](initial-deployment.md#initial-installation)
+section to perform the external flash. When running the flashrom commands use a
+backup file you've prepared previously, like `bios_backup.rom`.
 
 ### EC firmware recovery
 

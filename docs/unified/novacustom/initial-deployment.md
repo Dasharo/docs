@@ -17,9 +17,7 @@ devices.
     Intel ME version (and configuration) on the device. Since vendor firmware
     has enabled Intel Boot Guard and BIOS Guard, it is not possible to do this
     from within the operating system and external flashing of the whole flash
-    chip using a programmer like the CH341a or
-    [3mdeb RTE](https://docs.dasharo.com/transparent-validation/rte/v1.1.0/flashing-guide/#ns5x7x-12th-generation)
-    is required.
+    chip using a programmer like the CH341a is required.
 
     > Publicly released binaries do not contain ME binary. If you need an Intel ME
     > update for your device, contact us via already established commercial support
@@ -137,9 +135,9 @@ devices.
 
     If this is your first experience with DTS, first read its
     [documentation](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
-    We recommend using DTS with the
-    [Bootable over network](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-over-network)
-    method which is less time-consuming and just easier than DTS on the USB Stick.
+    For initial deployment, we recommend using DTS with the
+    [Bootable USB stick](https://docs.dasharo.com/dasharo-tools-suite/documentation/#bootable-usb-stick)
+    method.
 
     ### Preparation
 
