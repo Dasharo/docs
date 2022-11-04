@@ -38,3 +38,19 @@ coreboot port on the Protectli VP46XX firewall.
 <!--
 | **TPM**                | PC Engines TPM1A LPC TPM                                 |
 -->
+
+## VP4670
+
+| Component              | Description                                              |
+|------------------------|----------------------------------------------------------|
+| **CPU**                | Intel Core i7-10810U                                     |
+| **SSD**                | GOODRAM 240GB 2,5" SATA SSD CL100 gen.3                  |
+| **USB pendrives**      | SanDisk Ultra  Flair USB 3.0 16 GB                       |
+| **RAM**                | SAMSUNG M471A5143EB0-CPB                                 |
+| **Wireless card**      | Intel Wi-Fi 6 AX200                                      |
+| **Display**            | HDMI 1920x1080p, DP 1920x1080p                           |
+| **Ethernet**           | 6x intel i225 (on-board)                                 |
+| **Internal devices**   | Audio subsystem                                          |
+| **USB Keyboard**       | Logitech, Inc. Keyboard K120                             |
+| **MMC drive**          | SAMSUNG KLM8G1GETF-B041 (on-board)                       |
+| **Power supply**       | Movano 12V 10A 120W                                      |
