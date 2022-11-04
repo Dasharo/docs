@@ -40,17 +40,19 @@ nav:
           - 'Initial deployment': unified/novacustom/initial-deployment.md
           - 'Firmware update': unified/novacustom/firmware-update.md
           - 'Firmware recovery': unified/novacustom/recovery.md
-          - 'Logo customization': common-coreboot-docs/custom_logo.md
+          - 'Post-installation setup': unified/clevo/post-install.md
+          - 'RGB keyboard': unified/novacustom/rgb-keyboard.md
           - 'NV4x 12th Gen':
+              - 'Overview': unified/novacustom/models/novacustom_nv4x_adl/overview.md
+              - 'Releases': unified/novacustom/models/novacustom_nv4x_adl/releases.md
+              - 'Hardware Configuration Matrix': unified/novacustom/models/novacustom_nv4x_adl/hardware-matrix.md
               - 'Test matrix': unified/novacustom/models/novacustom_nv4x_adl/test-matrix.md
           - 'NV4x 11th Gen':
               - 'Overview': unified/novacustom/models/novacustom_nv4x_tgl/overview.md
               - 'Releases': unified/novacustom/models/novacustom_nv4x_tgl/releases.md
               - 'Hardware Configuration Matrix': unified/novacustom/models/novacustom_nv4x_tgl/hardware-matrix.md
               - 'Test matrix': unified/novacustom/models/novacustom_nv4x_tgl/test-matrix.md
-              - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
               - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
-              - 'Logo customization': common-coreboot-docs/custom_logo.md
               - 'Openness score': unified/novacustom/models/novacustom_nv4x_tgl/openness_analysis.md
               - 'LVFS report': unified/novacustom/models/novacustom_nv4x_tgl/lvfs_report.md
               - 'Checbox results': unified/novacustom/models/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md
@@ -61,9 +63,6 @@ nav:
               - 'Releases': unified/novacustom/models/novacustom_ns5x_tgl/releases.md
               - 'Hardware Configuration Matrix': unified/novacustom/models/novacustom_ns5x_tgl/hardware-matrix.md
               - 'Test matrix': unified/novacustom/models/novacustom_ns5x_tgl/test-matrix.md
-              - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
-              - 'Logo customization': common-coreboot-docs/custom_logo.md
-              - 'RGB keyboard': unified/novacustom/models/novacustom_ns5x_tgl/rgb_keyboard.md
               - 'EC firmware revocery': unified/novacustom/models/novacustom_ns5x_tgl/ec_recovery.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
@@ -102,7 +101,6 @@ nav:
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
           - 'Installation manual': variants/tuxedo_ibs15/installation.md
-          - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
           - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
@@ -147,6 +145,8 @@ nav:
           - 'FAQ': variants/msi_z690/faq.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
+  - 'Guides':
+     - 'Logo customization': guides/custom-logo.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
