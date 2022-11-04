@@ -212,11 +212,11 @@ You could confirm that by repeating steps 3 - 5.
 
 This section describes functionality of Dasharo Tools Suite. These are:
 
-* Dasharo zero-touch initial deployment
-* HCL Report,
-* Firmware update,
-* EC Transition,
-* EC update.
+* [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment)
+* [HCL Report](#hcl-report)
+* [Firmware update](#firmware-update)
+* [EC Transition](#ec-transition)
+* [EC update](#ec-update)
 
 ### Dasharo zero-touch initial deployment
 
