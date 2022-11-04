@@ -116,9 +116,7 @@ Validation Procedure or have been tested by the community.
 The list of all supported memory modules is available in the
 [GPU HCL](../gpu-hcl) documentation.
 
-## [Online shop](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1) Dasharo compatible with MSI PRO Z-690A DDR4
-
-### What does the obligatory Dasharo Subscripion includes?
+## What does the obligatory Dasharo Subscripion includes?
 
 The Dasharo Bronze Subscription includes:
 
@@ -138,7 +136,7 @@ The Dasharo Bronze Subscription includes:
 * By buying this product, you support open-source firmware and Dasharo
   distribution.
 
-### In the Disclaimer, you wrote that one of the warranty conditions is: "No signs of customer interference with the platform or firmware." How would a user modify firmware without losing the warranty? Being open source to be easy to modify, then saying "don't touch this" seems contradictory. How would you add an exception?
+## In the Disclaimer, you wrote that one of the warranty conditions is: "No signs of customer interference with the platform or firmware." How would a user modify firmware without losing the warranty? Being open source to be easy to modify, then saying "don't touch this" seems contradictory. How would you add an exception?
 
 Playing with firmware parameters can result in damaging the mainboard. Such
 action excludes the acceptance of the return. You can improve the Dasharo by
