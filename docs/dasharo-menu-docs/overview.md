@@ -10,7 +10,7 @@ subsections you will get to know:
 [Here](https://youtu.be/3tk0snFrZDY) you may watch a Dasharo menu walkthrough
 with commentary presenting Dasharo features.
 
-[Here](../variants/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md) you
+[Here](../unified/novacustom/models/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md) you
 can see checkbox results on Dasharo firmware.
 
 ## Dasharo menu guides

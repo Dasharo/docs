@@ -148,8 +148,8 @@ platform and sign it with the locally generated keys.
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Make yourself familiar with Building manual procedure dedicated for
     the relevant platform:
-    * [Novacustom NV4x](../../variants/novacustom_nv4x_tgl/building-manual.md),
-    * [Novacustom NS5x/7x](../../variants/novacustom_ns5x_tgl/building-manual.md).
+    * [Novacustom NV4x](../../unified/novacustom/models/novacustom_nv4x_tgl/building-manual.md),
+    * [Novacustom NS5x/7x](../../unified/novacustom/models/novacustom_ns5x_tgl/building-manual.md).
 
 **Test steps**
 

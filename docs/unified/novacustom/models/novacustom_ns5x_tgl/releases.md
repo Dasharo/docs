@@ -110,7 +110,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 ### Added
 
 - Support for NovaCustom NS7x
-- [Support for RGB Keyboard](https://docs.dasharo.com/variants/novacustom_ns5x/rgb_keyboard/)
+- [Support for RGB Keyboard](https://docs.dasharo.com/unified/novacustom/models/novacustom_ns5x/rgb_keyboard/)
 - [Persistent boot logo implementation](https://docs.dasharo.com/common-coreboot-docs/custom_logo/)
 
 ### Changed
