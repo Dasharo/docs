@@ -105,7 +105,7 @@ nav:
           - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
           - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
-          - 'Test matrix': unified/novacustom/models/tuxedo_ibs15/test-matrix.md
+          - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md
