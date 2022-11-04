@@ -16,6 +16,7 @@ and WWAN slots.
 * VP4670 - Intel Core i7-10810U
 
 For more information please refer to the references below.
+
 ## References
 
 * [VP4630 announcement](https://protectli.com/news/vp4630-launch/)
@@ -23,17 +24,17 @@ For more information please refer to the references below.
 
 ## Documentation sections
 
-- [Releases](releases.md) - groups information about all releases.
-- [Building manual](building-manual.md) - describes how to build Dasharo for
+* [Releases](releases.md) - groups information about all releases.
+* [Building manual](building-manual.md) - describes how to build Dasharo for
     NovaCustom NV4x.
-- [Initial deployment](initial-deployment.md) - describes initial Dasharo
+* [Initial deployment](initial-deployment.md) - describes initial Dasharo
     deployment methods (i. e. flashing new firmware) for Protectli VP46xx.
-- [Firmware update](firmware-update.md) - explains supported Dasharo
+* [Firmware update](firmware-update.md) - explains supported Dasharo
     open-source firmware update methods.
-- [Recovery](recovery.md) - gathers information on how to recover the platform
+* [Recovery](recovery.md) - gathers information on how to recover the platform
     from potential failure.
-- [Hardware configuration matrix](hardware-matrix.md) - describes the
+* [Hardware configuration matrix](hardware-matrix.md) - describes the
     platform's hardware configuration used during the Dasharo firmware
     validation procedure.
-- [Test matrix](test-matrix.md) - describes validation scope used during
+* [Test matrix](test-matrix.md) - describes validation scope used during
     Dasharo firmware validation procedure.

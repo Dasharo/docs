@@ -4,6 +4,7 @@
 
 This document describes the procedure for compiling coreboot for Protectli
 VP3630, VP4650 and VP4670.
+
 ## Requirements
 
 - Docker
