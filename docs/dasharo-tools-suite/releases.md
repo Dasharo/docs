@@ -27,7 +27,7 @@ For details about our release process please read
 
 * Added [Dasharo zero-touch
   initial deployment](./documentation.md#dasharo-zero-touch-initial-deployment)
-  for couple of supported platform
+  for couple of supported platforms
 * Added multiple HCL report improvements, e.g. dump information about TPM, ME
 * Refactored Dasharo Tools Suite [documentation](./overview.md)
 * Added possibility to rollback using firmware dumped in HCL report
