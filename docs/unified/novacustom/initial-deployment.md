@@ -134,7 +134,7 @@ devices.
     [Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
 
     If this is your first experience with DTS, first read its
-    [documentation](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
+    [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/).
     For initial deployment, we recommend using DTS with the
     [Bootable USB stick](https://docs.dasharo.com/dasharo-tools-suite/documentation/#bootable-usb-stick)
     method.
