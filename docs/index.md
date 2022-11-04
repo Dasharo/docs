@@ -21,7 +21,7 @@ of your platform.
 * [NovaCustom NV4X ADL (12th Gen)](unified/novacustom/models/novacustom_nv4x_tgl/releases.md)
 * [NovaCustom NV4X TGL (11th Gen)](unified/novacustom/models/novacustom_nv4x_tgl/releases.md)
 * [NovaCustom NS5X/7X ADL (12th Gen)](unified/novacustom/models/novacustom_ns5x_tgl/releases.md)
-* [NovaCustom NS6X/7X TGL (11th Gen)](unified/novacustom/models/novacustom_ns5x_tgl/releases.md)
+* [NovaCustom NS5X/7X TGL (11th Gen)](unified/novacustom/models/novacustom_ns5x_tgl/releases.md)
 * [TUXEDO InfinityBook S 15](variants/tuxedo_ibs15/releases.md)
 * [Dell OptiPlex 7010/9010](variants/dell_optiplex/overview.md)
 * [PC Engines apu series](https://pcengines.github.io/)
