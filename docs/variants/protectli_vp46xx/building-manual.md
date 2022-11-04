@@ -14,57 +14,29 @@ VP3630, VP4650 and VP4670.
 
 ## Build Dasharo BIOS firmware
 
-The easiest way to build coreboot is to use the official Docker image.
+Since version v1.0.18 VP4630 and VP4650 use different configuration file than
+VP4670. Versions v1.0.17 and older do not support VP4650 and VP4670 at all.
 
-1. Obtain the docker image:
+Build the firmware v1.0.18 or newer:
 
-    ```bash
-    docker pull coreboot/coreboot-sdk:2021-09-23_b0d87f753c
-    ```
-
-2. Clone the coreboot repository:
+- for VP3630 and VP4650
 
     ```bash
-    git clone https://github.com/Dasharo/coreboot.git
+    ./build.sh vp4630_vp4650
     ```
 
-    Navigate to the source code directory and checkout to the desired revision:
-
-    > Replace the REVISION with:
-    >
-    > - `protectli_vault_cml/release` for the latest released version
-    > - `protectli_vault_cml_vVERSION` (e.g. `v1.0.18`) for the given release
+- for VP4670
 
     ```bash
-    cd coreboot
-    git checkout REVISION
-    git submodule update --init --recursive --checkout
+    ./build.sh vp4670
     ```
 
-3. Start the coreboot-sdk Docker container:
+**NOTICE**: VP4630 and VP4650 binary will not work on VP4670 and vice versa.
+They use different FSP variants.
 
-    ```bash
-    docker run --rm -it -u $UID \
-       -v $PWD:/home/coreboot/coreboot \
-       -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
-    ```
 
-4. Since version v1.0.18 VP4630 and VP4650 use
-   `config.protectli_cml_vp4630_vp4650` file and run with the same binary.
-   VP4670 uses `config.protectli_cml_vp4670` file. Build the firmware:
-
-    ```bash
-    # for VP4630 and VP4650
-    cp configs/config.protectli_cml_vp4630_vp4650 .config
-    # OR for VP4670
-    cp configs/config.protectli_cml_vp4670 .config
-    make olddefconfig
-    make
-    ```
-
-    Versions v1.0.17 and earlier support only VP3630 and can be built using the
-    following command:
+Versions v1.0.17 and earlier support only VP3630 and can be built using the
+following command:
 
     ```bash
     ./build.sh vp46xx
@@ -72,5 +44,3 @@ The easiest way to build coreboot is to use the official Docker image.
 
 The resulting coreboot image will be placed in `build/coreboot.rom`.
 
-NOTICE: VP4630 and VP4650 binary will not work on VP4670 and vice versa. They
-use different FSP variants.
