@@ -133,7 +133,7 @@ echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 ```
 
 Note you will need to resign the binary after adding the SMBIOS data. Please
-check [Vboot documentation](../../common-coreboot-docs/vboot_signing.md) how to
+check [Vboot documentation](/guides/vboot-signing.md) how to
 resign the data. It is the machine owner's responsibility to generate and use
 own keys during updates.
 

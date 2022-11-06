@@ -68,5 +68,3 @@ Choose your generation below:
       ```bash
       system76_ectool flash [novacustom_model_version_ec.rom]
       ```
-
-
