@@ -76,14 +76,34 @@ To prevent any mix-up in libraries and dependencies process will include Docker.
     make image
     ```
 
-1. Install the image on the SD card using eg.
-    [balenaEtcher](https://www.balena.io/etcher/).
+1. Flash the SD card using `bmaptool` or `balenaEtcher`.
+    - to do this by `balenaEtcher` go to the [producer site](https://www.balena.io/etcher/)
+        and follow his procedure on how to download and flash an SD card.
+    - to do this by `bmaptool` reproduce the following steps:
+        + install `bmaptool` by opening the terminal and typing the following
+            command:
 
-1. If you want to connect PiKVM to a Wi-Fi network, you need to tell the device
-    ESSID and password before first boot. To do this, mount the first partition
-    of the memory card (FAT32) and edit or make the `pikvm.txt` file there. Do
-    not remove line `FIRSTBOOT=1` or `FIRST_BOOT-1` for first time booting, just
-    add your wifi settings like this:
+            ```bash
+            sudo apt install bmap-tools
+            ```
+
+        + create the bmap by typing the following command:
+
+            ```bash
+            bmaptool create /path/to/your/image > /path/where/you/want/bmap/file/saved/bmapfilename.bmap
+            ```
+
+        + flash image to the SD card by typing the following command:
+
+            ```bash
+            sudo bmaptool copy --bmap ~/path/where/your/bmap/file/is/located /path/where/your/image/is/located /path/to/memory/device
+            ```
+
+1. To connect PiKVM to a Wi-Fi network, you need to tell the device ESSID and
+    password before first boot. To do this, mount the first partition of the
+    memory card (FAT32) and edit or make the `pikvm.txt` file there. Do not
+    remove line `FIRSTBOOT=1` or `FIRST_BOOT-1` for first time booting, just add
+    your wifi settings like this:
 
     ```bash
     FIRSTBOOT=1
@@ -91,9 +111,9 @@ To prevent any mix-up in libraries and dependencies process will include Docker.
     WIFI_PASSWD="password"
     ```
 
-    There is a possibility that, in countries that support CH13, the device will
-    not connect. You will need to configure your router to disable channels
-    12-14 or disable Auto scan mode so it will connect.
+    > Note: There is a possibility that, in countries that support CH13, the
+    > device will not connect. You will need to configure your router to disable
+    > channels 12-14 or disable Auto scan mode so it will connect.
 
 ### Completing Setup
 
