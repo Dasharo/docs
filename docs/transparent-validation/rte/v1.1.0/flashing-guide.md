@@ -33,7 +33,7 @@ RTE.
 
 1. Connect the cables coming out from the WSON8 probe to the
     [SPI header](../v1.1.0/specification.md/#spi-header) according to the
-    picture and table below.
+    pictures and table below.
 
     - Top view of flash chip:
 
@@ -51,6 +51,10 @@ RTE.
         | SCLK           | SCLK       |
         | MOSI (SI)      | SI         |
         | NC             | IO3        |
+
+    - Example connection appearance:
+
+    ![](../../../images/rte-v1.1.0-WSON8-SPI-header.jpg)
 
 1. Put the flash script on RTE:
 
