@@ -59,8 +59,8 @@ Please follow the [recovery procedure](../recovery).
 We can say the "supported" one is the one that have been tested during
 Validation Procedure or have been tested by the community.
 
-The list of all supported CPUs is available in the
-[CPU HCL](../cpu-hcl) documentation.
+The list of all supported CPUs is available in the [CPU HCL](../cpu-hcl)
+documentation.
 
 In practice, any Alder Lake-S Processor should work.
 
@@ -105,8 +105,7 @@ graphics cards - UEFI standard appeared about 15 years ago.
 The problem might also be caused by an enabled `Secure boot` - because there is
 no certainty that `EFI Option ROM` is signed correctly.
 
-[msi_port_analysis]:
-    https://www.reddit.com/r/intel/comments/subaro/how_many_people_are_interesed_in_seeing_coreboot/
+[msi_port_analysis]: https://www.reddit.com/r/intel/comments/subaro/how_many_people_are_interesed_in_seeing_coreboot/
 
 ## Which GPUs are supported?
 
@@ -140,5 +139,5 @@ The Dasharo Bronze Subscription includes:
 
 Playing with firmware parameters can result in damaging the mainboard. Such
 action excludes the acceptance of the return. You can improve the Dasharo by
-contributing, so	we can pass Dasharo Certification Program and release it in
-the next version.
+contributing, so we can pass Dasharo Certification Program and release it in the
+next version.
