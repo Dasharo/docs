@@ -11,13 +11,13 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
-| 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002, DSP002.003 |
+| 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002 |
 | 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx      |
 | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot keys][CBK]                           | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][HID]                    | USB           | All                                  |
-| 9.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | All                                  |
+| 9.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT004.001, LBT004.002               |
 | 10.  | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 11.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
 | 12.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
@@ -27,7 +27,7 @@ subjected from before the release of the new binary.
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
 | 18.  | [Custom fan curve][FAN]                           | FAN           | FAN001.001                           |
-| 19.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001 |
+| 19.  | [SMBIOS][DMI]                                     | DMI           | Without DMI001.001                   |
 | 20.  | [Docking station detect][DUD]                     | DUD           | All                                  |
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
 | 22.  | [Docking station Audio][DAU]                      | DAU           | All                                  |
@@ -38,6 +38,7 @@ subjected from before the release of the new binary.
 | 27.  | [Embedded controller flashing][ECF]               | ECF           | All                                  |
 | 28.  | [Logo customization functionality][LCM]           | LCM           | LCM001.001                           |
 | 29.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
+| 30.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -69,6 +70,7 @@ subjected from before the release of the new binary.
 [ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
+[CBO]: ../../unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
 
 ## Module: Dasharo security
 
@@ -78,13 +80,11 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]               | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]               | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                 | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
-| 5.   | [BIOS lock support][BLS]                   | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
-[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 
 ## Module: Dasharo performance
 
