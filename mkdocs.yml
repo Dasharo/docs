@@ -144,8 +144,8 @@ nav:
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
-     - 'Logo customization': guides/logo-customization.md
-     - 'Firmware signing for vboot': guides/vboot-signing.md
+      - 'Logo customization': guides/logo-customization.md
+      - 'Firmware signing for vboot': guides/vboot-signing.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md

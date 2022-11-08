@@ -27,27 +27,27 @@ The procedure will be slightly different depending on the model of your laptop.
 
 === "NS5x / NS7x"
 
-	You will need:
+You will need:
 
-	- an Arduino Mega 2560
-	- a 24-pin FFC cable with a 1.0mm pitch, same-sided (connectors on the same side
-	  on both ends of the cable)
-	- a 24-pin FFC breakout board with a 1.0mm pitch FFC connector and a 2.54mm
-	  pitch pin header
-	- USB-A to USB-B cable to connect the Arduino to the host
-	- USB-C cable for grounding
+- an Arduino Mega 2560
+- a 24-pin FFC cable with a 1.0mm pitch, same-sided (connectors on the same side
+  on both ends of the cable)
+- a 24-pin FFC breakout board with a 1.0mm pitch FFC connector and a 2.54mm
+  pitch pin header
+- USB-A to USB-B cable to connect the Arduino to the host
+- USB-C cable for grounding
 
 === "NV4x"
 
-	You will need:
+You will need:
 
-	- an Arduino Mega 2560
-	- a 24-pin FFC cable with a 0.5mm pitch, same-sided (connectors on the same side
-	  on both ends of the cable)
-	- a 24-pin FFC breakout board with a 0.5mm pitch FFC connector and a 2.54mm
-	  pitch pin header
-	- USB-A to USB-B cable to connect the Arduino to the host
-	- USB-C cable for grounding
+- an Arduino Mega 2560
+- a 24-pin FFC cable with a 0.5mm pitch, same-sided (connectors on the same side
+  on both ends of the cable)
+- a 24-pin FFC breakout board with a 0.5mm pitch FFC connector and a 2.54mm
+  pitch pin header
+- USB-A to USB-B cable to connect the Arduino to the host
+- USB-C cable for grounding
 
 #### Preparation
 
@@ -85,11 +85,11 @@ make BOARD=arduino/mega2560 flash
 
 === "NS5x / NS7x"
 
-	![](/images/ns50mu_board_chips.jpg)
+![](/images/ns50mu_board_chips.jpg)
 
 === "NV4x"
 
-	![](/images/nv4x_board_chips.jpg)
+![](/images/nv4x_board_chips.jpg)
 
 - Disconnect the battery (1)
 
@@ -105,21 +105,21 @@ make BOARD=arduino/mega2560 flash
 
 === "NS5x / NS7x"
 
-	![](/images/nvc_ec_flash/ns5x_keyboard_connectors.jpg)
+![](/images/nvc_ec_flash/ns5x_keyboard_connectors.jpg)
 
 === "NV4x"
 
-	![](/images/nvc_ec_flash/nv4x_keyboard_connectors.jpg)
+![](/images/nvc_ec_flash/nv4x_keyboard_connectors.jpg)
 
 - Disconnect the keyboard from the laptop
 
 === "NS5x / NS7x"
 
-	![](/images/nvc_ec_flash/ns5x_keyboard_removed.jpg)
+![](/images/nvc_ec_flash/ns5x_keyboard_removed.jpg)
 
 === "NV4x"
 
-	![](/images/nvc_ec_flash/nv4x_keyboard_removed.jpg)
+![](/images/nvc_ec_flash/nv4x_keyboard_removed.jpg)
 
 - Connect the USB-C cable to the Thunderbolt port on the laptop and to the host
   computer. This will provide grounding
@@ -127,22 +127,22 @@ make BOARD=arduino/mega2560 flash
 
 === "NS5x / NS7x"
 
-	> Note: In the example below, the FFC connector on the breakout has the pins
-	> on the **bottom** side of the connector and is located on the **same**
-	> side as the pins connecting to the Arduino. If your breakout is different,
-	> you may need an FFC cable with connectors on the **opposite** sides.
+> Note: In the example below, the FFC connector on the breakout has the pins
+> on the **bottom** side of the connector and is located on the **same**
+> side as the pins connecting to the Arduino. If your breakout is different,
+> you may need an FFC cable with connectors on the **opposite** sides.
 
-	![](/images/nvc_ec_flash/ns5x_arduino_breakout.jpg)
+ ![](/images/nvc_ec_flash/ns5x_arduino_breakout.jpg)
 
 === "NV4x"
 
-	> Note: In the example below, the FFC connector on the breakout has the pins
-	> on the **upper** side of the connector and is located on the side
-	> **opposite** of the pins connecting to the Arduino. If your breakout
-	> is different, you may need an FFC cable with connectors on the
-	> **opposite** sides.
+> Note: In the example below, the FFC connector on the breakout has the pins
+> on the **upper** side of the connector and is located on the side
+> **opposite** of the pins connecting to the Arduino. If your breakout
+> is different, you may need an FFC cable with connectors on the
+> **opposite** sides.
 
-	![](/images/nvc_ec_flash/nv4x_arduino_breakout.jpg)
+ ![](/images/nvc_ec_flash/nv4x_arduino_breakout.jpg)
 
 - Insert the breakout into Arduino's digital pin header, pins 22-45, with the
   FFC connector facing outwards
@@ -155,11 +155,11 @@ make BOARD=arduino/mega2560 flash
 
 === "NS5x / NS7x"
 
-	![](/images/nvc_ec_flash/ns5x_arduino_connected.jpg)
+![](/images/nvc_ec_flash/ns5x_arduino_connected.jpg)
 
 === "NV4x"
 
-	![](/images/nvc_ec_flash/nv4x_arduino_connected.jpg)
+![](/images/nvc_ec_flash/nv4x_arduino_connected.jpg)
 
 - Connect the Arduino to the host using the USB-A to USB-B cable
 - Build the flashing utility:

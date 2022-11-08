@@ -77,7 +77,7 @@ Windows and certain Linux distros such as Ubuntu do not enable the necessary
 power saving tweaks to enable sleep mode while a SATA disk is installed. To
 apply the fix, run the following scripts
 
-### Windows:
+### Windows
 
 - Download the script: [link](https://cloud.3mdeb.com/index.php/s/nNQwDEKryCHGJ5n)
 - Double click on the script to install the tweak

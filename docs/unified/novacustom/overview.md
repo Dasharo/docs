@@ -4,41 +4,41 @@
 
 === "NS5x ADL"
 
-    The `NovaCustom NS5x/7x 12th Gen` section is related to the two physical
-    NovaCustom laptops based on the 12th generation Intel Core processor:
+   The `NovaCustom NS5x/7x 12th Gen` section is related to the two physical
+   NovaCustom laptops based on the 12th generation Intel Core processor:
 
-    - [NS51 series](https://configurelaptop.eu/ns51-series/)
-    - [NS70 series](https://configurelaptop.eu/ns70-series/)
+- [NS51 series](https://configurelaptop.eu/ns51-series/)
+- [NS70 series](https://configurelaptop.eu/ns70-series/)
 
-    ![](/images/NS51-front-1.png)
+   ![](/images/NS51-front-1.png)
 
 === "NV4x ADL"
 
-    The `NovaCustom NV4x 12th Gen` section is related to the one physical
-    NovaCustom laptops based on the 12th generation Intel Core processor:
+   The `NovaCustom NV4x 12th Gen` section is related to the one physical
+   NovaCustom laptops based on the 12th generation Intel Core processor:
 
-    - [NV41 series](https://configurelaptop.eu/nv41-series/)
+- [NV41 series](https://configurelaptop.eu/nv41-series/)
 
-    ![](/images/NV4x-front-1.png)
+   ![](/images/NV4x-front-1.png)
 
 === "NS5x TGL"
 
-    The `NovaCustom NS5x/7x 11th Gen` section is related to the two physical
-    NovaCustom laptops based on the 11th generation Intel Core processor:
+   The `NovaCustom NS5x/7x 11th Gen` section is related to the two physical
+   NovaCustom laptops based on the 11th generation Intel Core processor:
 
-    - [NS51 series](https://configurelaptop.eu/ns51-series/)
-    - [NS70 series](https://configurelaptop.eu/ns70-series/)
+- [NS51 series](https://configurelaptop.eu/ns51-series/)
+- [NS70 series](https://configurelaptop.eu/ns70-series/)
 
-    ![](/images/NS51-front-1.png)
+  ![](/images/NS51-front-1.png)
 
 === "NV4x TGL"
 
-    The `NovaCustom NV4x 11th Gen` section is related to the one physical
-    NovaCustom laptops based on the 11th generation Intel Core processor:
+   The `NovaCustom NV4x 11th Gen` section is related to the one physical
+   NovaCustom laptops based on the 11th generation Intel Core processor:
 
-    - [NV41 series](https://configurelaptop.eu/nv41-series/)
+- [NV41 series](https://configurelaptop.eu/nv41-series/)
 
-    ![](/images/NV4x-front-1.png)
+   ![](/images/NV4x-front-1.png)
 
 For more information on the hardware, please refer to the references in above
 links.
