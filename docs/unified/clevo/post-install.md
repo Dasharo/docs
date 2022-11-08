@@ -38,6 +38,20 @@ sudo depmod -a
 sudo update-initramfs -u
 ```
 
+### Updated kernel
+
+On Gen 12 (Alder Lake), it's recommended to install the ubuntu-oem kernel which
+is a newer version than the default Ubuntu kernel. This version contains
+additional fixes for newer hardware which helps with power management and
+suspend on Gen 12 laptops. To install the ubuntu-oem kernel, run the following
+command:
+
+```bash
+sudo apt install linux-oem-22.04a
+```
+
+and reboot to use the new kernel.
+
 ### Nvidia drivers
 
 > It is only necessary to follow this step if your device has Nvidia GPU
