@@ -39,28 +39,28 @@ Steps for installing Dasharo BIOS:
 
 1. Remove the bottom cover of the laptop.
 
-=== "NS5x / NS7x"
-    ![ns5x chips](../../images/ns50mu_board_chips.jpg)
+    === "NS5x / NS7x"
+        ![ns5x chips](../../images/ns50mu_board_chips.jpg)
 
-=== "NV4x"
-    ![nv4x chips](../../images/nv4x_board_chips.jpg)
+    === "NV4x"
+        ![nv4x chips](../../images/nv4x_board_chips.jpg)
 
 1. Disconnect the primary battery. (1)
 1. Disconnect the CMOS battery. (2)
 1. Attach a WSON-8 probe to the SPI flash chip. (3)
 1. Backup the current firmware, in case you want to be able to restore it
-at some point:
+    at some point:
 
-```bash
-flashrom -p ch341a_spi -r bios_backup.rom
-```
+    ```bash
+    flashrom -p ch341a_spi -r bios_backup.rom
+    ```
 
 1. Install Dasharo BIOS, replacing `[path]` with the path to the firmware
-image you want to flash, e.g. `novacustom_ns5x_adl_full_v1.4.0.rom`
+    image you want to flash, e.g. `novacustom_ns5x_adl_full_v1.4.0.rom`
 
-```bash
-flashrom -p ch341a_spi -w [path]
-```
+    ```bash
+    flashrom -p ch341a_spi -w [path]
+    ```
 
 1. Detach the WSON-8 probe.
 1. Connect the primary battery and reconnect the CMOS battery
@@ -75,52 +75,52 @@ on the target laptop:
 
 1. Install build dependencies:
 
-```bash
-apt update
-apt upgrade
-apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
-```
+    ```bash
+    apt update
+    apt upgrade
+    apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+    ```
 
 1. Obtain source code:
 
-```bash
-git clone https://github.com/dasharo/flashrom.git
-cd flashrom
-```
+    ```bash
+    git clone https://github.com/dasharo/flashrom.git
+    cd flashrom
+    ```
 
 1. Build flashrom:
 
-```bash
-make
-sudo make install
-```
+    ```bash
+    make
+    sudo make install
+    ```
 
 1. Make a backup of the EC firmware:
 
-> Remember to store the backup on the separate device in case flashing
-> fails.
+    > Remember to store the backup on the separate device in case flashing
+    > fails.
 
-```bash
-flashrom -p ite_ec -r ec_backup.rom
-```
+    ```bash
+    flashrom -p ite_ec -r ec_backup.rom
+    ```
 
 1. Install the EC firmware:
 
-> Warning: After running this command, the internal keyboard and power
-> button will stop responding until the device is power cycled (all
-> power must be removed, including the internal battery). Be prepared
-> to disconnect the battery after updating the EC.
->
-> Alternatively, you can boot up the laptop without the battery
-> connected and power it from an AC adapter. Then, once the EC update
-> is complete, disconnect the AC adapter to power off the laptop.
+    > Warning: After running this command, the internal keyboard and power
+    > button will stop responding until the device is power cycled (all
+    > power must be removed, including the internal battery). Be prepared
+    > to disconnect the battery after updating the EC.
+    >
+    > Alternatively, you can boot up the laptop without the battery
+    > connected and power it from an AC adapter. Then, once the EC update
+    > is complete, disconnect the AC adapter to power off the laptop.
 
-Run the following command, replacing `[path]` with the path to the EC
-firmware you want to flash, e.g. `novacustom_ns5x_adl_ec_v1.4.0.rom`
+    Run the following command, replacing `[path]` with the path to the EC
+    firmware you want to flash, e.g. `novacustom_ns5x_adl_ec_v1.4.0.rom`
 
-```bash
-flashrom -p ite_ec -w [path]
-```
+    ```bash
+    flashrom -p ite_ec -w [path]
+    ```
 
 Successful installation of Dasharo EC finishes the initial deployment
 process.

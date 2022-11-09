@@ -13,7 +13,7 @@ Choose your generation below:
 ### Update using flashrom
 
 * Boot into
-  [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite/#running)
+  [Dasharo Tools Suite](/dasharo-tools-suite/documentation/#running)
 
 * Update the BIOS using the following command:
 
@@ -46,14 +46,14 @@ Choose your generation below:
    version.
 
    Update to version v1.3.0 first, by following
-   [this procedure](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
+   [this procedure](/dasharo-tools-suite/documentation/#ec-transition).
 
 ### Version v1.3.0 or newer
 
 #### Update using flashrom
 
 * Boot into
-   [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite/#running)
+   [Dasharo Tools Suite](/dasharo-tools-suite/documentation/#running)
 
 * Update the BIOS using the following command:
 
