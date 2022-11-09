@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. Make yourself familiar with
-    [Logo customization procedure](/guides/custom-logo.md)
+    [Logo customization procedure](/guides/logo-customization)
 
 ## LCM001.001 Replace logo in existing image and flashing firmware
 
@@ -40,7 +40,7 @@ will be shown properly.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Based on the
-    [dedicated documentation](/guides/custom_logo.md#replace-logo-in-an-existing-image)
+    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
     replace the logo in an existing image.
 1. Flash the firmware by using the internal programmer and `flashrom` tool. If
     DUT is already flashed with the Dasharo firmware, the following command
@@ -87,7 +87,7 @@ will be shown properly.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Based on the
-    [dedicated documentation](/guides/custom-logo.md#build-image-with-custom-logo)
+    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
     build firmware with the custom logo.
 1. Flash the firmware by using the internal programmer and `flashrom` tool. If
     DUT is already flashed with the Dasharo firmware and only the logo should
@@ -140,9 +140,9 @@ logo.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Based on the
-    [dedicated documentation](/guides/custom-logo.md#build-image-with-custom-logo)
+    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
     build firmware with the logo, that that does not meet the
-    [Quality criteria](/guides/custom-logo.md#prerequisites).
+    [Quality criteria](/guides/logo-customization#prerequisites).
 1. Flash the firmware by using the internal programmer and `flashrom` tool. If
     DUT is already flashed with the Dasharo firmware and only the logo should
     be replaced, the following command should be used:
