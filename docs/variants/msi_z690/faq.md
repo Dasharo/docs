@@ -135,7 +135,14 @@ The Dasharo Bronze Subscription includes:
 * By buying this product, you support open-source firmware and Dasharo
   distribution.
 
-## In the Disclaimer, you wrote that one of the warranty conditions is: "No signs of customer interference with the platform or firmware." How would a user modify firmware without losing the warranty? Being open source to be easy to modify, then saying "don't touch this" seems contradictory. How would you add an exception?
+## What means in warranty conditions "No signs of customer interference..."?
+
+Full question:
+"In the Disclaimer, you wrote that one of the warranty
+conditions is: "No signs of customer interference with the platform or
+firmware." How would a user modify firmware without losing the warranty? Being
+open source to be easy to modify, then saying "don't touch this" seems
+contradictory. How would you add an exception?"
 
 Playing with firmware parameters can result in damaging the mainboard. Such
 action excludes the acceptance of the return. You can improve the Dasharo by
