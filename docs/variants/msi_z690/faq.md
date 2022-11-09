@@ -126,7 +126,7 @@ The Dasharo Bronze Subscription includes:
   donations](https://docs.dasharo.com/ways-you-can-help-us/#donate-money))
 * Priority support for Dasharo Subscribers through invite-only Matrix channel
 * Influence on Dasharo features roadmap – you can have a real impact on Dasharo
-  development by direct access wit the developers or premium voting on github.
+  development by direct access with the developers or premium voting on github.
   You will gain the access to the dedicated channels on the matrix communicator.
   If you wish to share your Github nickname with us, the votes cast for the
   features that you would like to have implemented in the future will be treated
