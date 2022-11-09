@@ -26,13 +26,14 @@ and `cbfstool`.
    source):
 
     ```bash
-    git clone https://review.coreboot.org/coreboot.git
+    git clone https://github.com/Dasharo/coreboot.git
     ```
 
 1. Build and install cbfstool:
 
     ```bash
     cd coreboot/util/cbfstool
+    git checkout 912a262b7bf7cb49544f90cdb5c632b658918893
     make
     sudo make install
     ```
