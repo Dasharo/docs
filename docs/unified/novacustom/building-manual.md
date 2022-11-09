@@ -41,28 +41,24 @@ Make sure that you have following packages installed:
     > Replace `X.Y.Z` with a valid version
 
     === "NS5x ADL"
-
-    ```bash
-    git checkout novacustom_ns5x_adl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_ns5x_adl_vX.Y.Z
+        ```
 
     === "NV4x ADL"
-
-    ```bash
-    git checkout novacustom_nv4x_adl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_nv4x_adl_vX.Y.Z
+        ```
 
     === "NS5x TGL"
-
-    ```bash
-    git checkout novacustom_ns5x_tgl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_ns5x_tgl_vX.Y.Z
+        ```
 
     === "NV4x TGL"
-
-    ```bash
-    git checkout novacustom_nv4x_tgl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_nv4x_tgl_vX.Y.Z
+        ```
 
 1. Checkout submodules:
 
@@ -73,66 +69,58 @@ Make sure that you have following packages installed:
 1. Start docker container:
 
     === "NS5x ADL"
-
-    ```bash
-    docker run --rm -it -u $UID \
-       -v $PWD:/home/coreboot/coreboot \
-       -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
-    ```
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+        ```
 
     === "NV4x ADL"
-
-    ```bash
-    docker run --rm -it -u $UID \
-       -v $PWD:/home/coreboot/coreboot \
-       -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
-    ```
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+        ```
 
     === "NS5x TGL"
-
-    ```bash
-    docker run --rm -it -u $UID \
-       -v $PWD:/home/coreboot/coreboot \
-       -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
-    ```
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+        ```
 
     === "NV4x TGL"
-
-    ```bash
-    docker run --rm -it -u $UID \
-       -v $PWD:/home/coreboot/coreboot \
-       -w /home/coreboot/coreboot \
-       coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
-    ```
+        ```bash
+        docker run --rm -it -u $UID \
+           -v $PWD:/home/coreboot/coreboot \
+           -w /home/coreboot/coreboot \
+           coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
+        ```
 
 1. Inside of the container, configure the build process:
 
     === "NS5x ADL"
-
-    ```bash
-    make distclean && cp configs/config.novacustom_ns5x_adl .config
-    ```
+        ```bash
+        make distclean && cp configs/config.novacustom_ns5x_adl .config
+        ```
 
     === "NV4x ADL"
-
-    ```bash
-    make distclean && cp configs/config.novacustom_nv4x_adl .config
-    ```
+        ```bash
+        make distclean && cp configs/config.novacustom_nv4x_adl .config
+        ```
 
     === "NS5x TGL"
-
-    ```bash
-    make distclean && cp configs/config.novacustom_ns5x_tgl .config
-    ```
+        ```bash
+        make distclean && cp configs/config.novacustom_ns5x_tgl .config
+        ```
 
     === "NV4x TGL"
-
-    ```bash
-    make distclean && cp configs/config.novacustom_nv4x_tgl .config
-    ```
+        ```bash
+        make distclean && cp configs/config.novacustom_nv4x_tgl .config
+        ```
 
 1. Start the build process:
 
@@ -159,28 +147,24 @@ This will produce a Dasharo binary placed in `build/coreboot.rom`.
     > Replace `X.Y.Z` with a valid version
 
     === "NS5x ADL"
-
-    ```bash
-    git checkout novacustom_ns5x_adl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_ns5x_adl_vX.Y.Z
+        ```
 
     === "NV4x ADL"
-
-    ```bash
-    git checkout novacustom_nv4x_adl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_nv4x_adl_vX.Y.Z
+        ```
 
     === "NS5x TGL"
-
-    ```bash
-    git checkout novacustom_ns5x_tgl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_ns5x_tgl_vX.Y.Z
+        ```
 
     === "NV4x TGL"
-
-    ```bash
-    git checkout novacustom_nv4x_tgl_vX.Y.Z
-    ```
+        ```bash
+        git checkout novacustom_nv4x_tgl_vX.Y.Z
+        ```
 
 1. Checkout submodules:
 
@@ -191,36 +175,32 @@ This will produce a Dasharo binary placed in `build/coreboot.rom`.
 1. Build the EC firmware:
 
     === "NS5x ADL"
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_adl ./build.sh
+        ```
 
-    ```bash
-    EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_adl ./build.sh
-    ```
-
-    The resulting image will be placed in: `novacustom_ns5x_adl_ec.rom`.
+        The resulting image will be placed in: `novacustom_ns5x_adl_ec.rom`.
 
     === "NV4x ADL"
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_adl ./build.sh
+        ```
 
-    ```bash
-    EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_adl ./build.sh
-    ```
-
-    The resulting image will be placed in: `novacustom_nv4x_adl_ec.rom`.
+        The resulting image will be placed in: `novacustom_nv4x_adl_ec.rom`.
 
     === "NS5x TGL"
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_tgl ./build.sh
+        ```
 
-    ```bash
-    EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_tgl ./build.sh
-    ```
-
-    The resulting image will be placed in: `novacustom_ns5x_tgl_ec.rom`.
+        The resulting image will be placed in: `novacustom_ns5x_tgl_ec.rom`.
 
     === "NV4x TGL"
+        ```bash
+        EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_tgl ./build.sh
+        ```
 
-    ```bash
-    EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_tgl ./build.sh
-    ```
-
-    The resulting image will be placed in: `novacustom_nv4x_tgl_ec.rom`.
+        The resulting image will be placed in: `novacustom_nv4x_tgl_ec.rom`.
 
 ## Install Dasharo firmware
 
