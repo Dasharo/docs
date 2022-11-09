@@ -27,7 +27,7 @@ render correctly as HTML in local preview.
 ```shell
 cd utils/blc
 docker build -t blc .
-docker run --rm -it --network host blc blc http://0.0.0.0:8000 -r | tee blc.txt
+docker run --rm --network host blc blc http://0.0.0.0:8000 -r | tee blc.txt
 ```
 
 Above will check all of the links in the whole documentation recursively and
