@@ -38,6 +38,20 @@ sudo depmod -a
 sudo update-initramfs -u
 ```
 
+### Updated kernel
+
+On Gen 12 (Alder Lake), it's recommended to install the ubuntu-oem kernel which
+is a newer version than the default Ubuntu kernel. This version contains
+additional fixes for newer hardware which helps with power management and
+suspend on Gen 12 laptops. To install the ubuntu-oem kernel, run the following
+command:
+
+```bash
+sudo apt install linux-oem-22.04a
+```
+
+and reboot to use the new kernel.
+
 ### Nvidia drivers
 
 > It is only necessary to follow this step if your device has Nvidia GPU
@@ -56,6 +70,20 @@ install additional Nvidia drivers.
 
     ```bash
     sudo reboot
+    ```
+
+### Suspend fix for SATA disks
+
+Only affects laptops with M.2 SATA disks experiencing sleep issues (the power
+LED not blinking while the laptop is suspended)
+
+Windows and certain Linux distros such as Ubuntu do not enable the necessary
+power saving tweaks to enable sleep mode while a SATA disk is installed.
+
+1. Execute fixup script:
+
+    ```bash
+    curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup | sudo sh
     ```
 
 ## Windows 11
@@ -83,3 +111,14 @@ and Internet, then follow the steps below:
     to `Restart now` or `Retry`, so click them if something hasn't been
     installed yet, something has gone wrong or a restart is just required.
     The entire process may take up to 30 minutes.
+
+### Suspend fix for SATA disks (Windows and Linux)
+
+Only affects laptops with M.2 SATA disks experiencing sleep issues (the power
+LED not blinking while the laptop is suspended).
+
+Windows and certain Linux distros such as Ubuntu do not enable the necessary
+power saving tweaks to enable sleep mode while a SATA disk is installed.
+
+1. Download the script: [link](https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup.bat)
+2. Double click on the script to install the tweak

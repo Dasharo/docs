@@ -1,4 +1,4 @@
-# coreboot vboot signing
+# Dasharo vboot signing
 
 ## Introduction
 

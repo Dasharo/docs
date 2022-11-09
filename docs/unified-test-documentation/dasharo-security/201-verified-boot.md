@@ -34,7 +34,7 @@ for signing the firmware.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Based on the dedicated documentation
-    [generate the keys](../../common-coreboot-docs/vboot_signing.md#prerequisites).
+    [generate the keys](/guides/vboot-signing.md#prerequisites).
 1. Check if the keys, after finishing the generating process, are available in
     the `keys` subdirectory.
 
@@ -66,7 +66,7 @@ image with generated keys without rebuilding.
 1. Log into the system by using the proper login and password.
 1. Localize the keys, which were generated in the `VBO001.001` test case.
 1. Based on the
-    [dedicated documentation](../../common-coreboot-docs/vboot_signing.md#signing-image-without-rebuilding)
+    [dedicated documentation](/guideds/vboot-signing.md#signing-image-without-rebuilding)
     sign the firmware image with the keys without rebuilding.
 1. Note the result.
 
@@ -148,8 +148,8 @@ platform and sign it with the locally generated keys.
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Make yourself familiar with Building manual procedure dedicated for
     the relevant platform:
-    * [Novacustom NV4x](../../variants/novacustom_nv4x/building-manual.md),
-    * [Novacustom NS5x/7x](../../variants/novacustom_ns5x_7x/building-manual.md).
+    * [Novacustom NV4x](/unified/novacustom/building-manual.md),
+    * [Novacustom NS5x/7x](/unified/novacustom/building-manual.md).
 
 **Test steps**
 
@@ -158,7 +158,7 @@ platform and sign it with the locally generated keys.
 1. Log into the system by using the proper login and password.
 1. Localize the keys, which were generated in the `VBO001.001` test case.
 1. Based on the
-    [dedicated documentation](../../common-coreboot-docs/vboot_signing.md#adding-keys-to-the-coreboot-config)
+    [dedicated documentation](/guides/vboot-signing.md#adding-keys-to-the-coreboot-config)
     add locally generated keys to the coreboot config.
 1. Based on the dedicated documentation build firmware.
 1. Check if the binary file, after finishing the building process, is available

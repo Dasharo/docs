@@ -58,16 +58,3 @@ and `cbfstool`.
     ```bash
     sudo flashrom -p internal --fmap -i BOOTSPLASH -w [path]
     ```
-
-## Build image with custom logo
-
-Preparation: Follow the steps specified in [the building instructions](../building)
-
-The script `build.sh` located in the coreboot directory can be used to replace
-the logo at build time. To replace the logo, run the following command:
-
-```bash
-./build.sh build -l path/to/logo.bmp
-```
-
-The command will output an updated coreboot image into the directory `artifacts`.

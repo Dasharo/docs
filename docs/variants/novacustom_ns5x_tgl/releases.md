@@ -1,4 +1,4 @@
-# Release Notes
+# NovaCustom NS5x/NS7x TGL (11th Gen) Dasharo Release Notes
 
 Following Release Notes describe the status of Open Source Firmware development
 for NovaCustom NS5x/7x.
@@ -23,8 +23,8 @@ Please note, that version 1.3.0 of `Dasharo BIOS firmware` works correctly
 open-source EC firmware is used, so additional steps need to be taken when
 upgrading.
 
-Please refer to the [Firmware update](firmware-update.md) section for more
-details on upgrading your firmware.
+Please refer to the [Firmware update](/unified/novacustom/firmware-update)
+section for more details on upgrading your firmware.
 
 ### Added
 
@@ -110,7 +110,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 ### Added
 
 - Support for NovaCustom NS7x
-- [Support for RGB Keyboard](https://docs.dasharo.com/variants/novacustom_ns5x/rgb_keyboard/)
+- [Support for RGB Keyboard](https://docs.dasharo.com/unified/novacustom/rgb-keyboard/)
 - [Persistent boot logo implementation](https://docs.dasharo.com/common-coreboot-docs/custom_logo/)
 
 ### Changed

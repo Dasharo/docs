@@ -1,11 +1,18 @@
 ---
 site_name: Dasharo Universe
 site_url: https://docs.dasharo.com/
+repo_url: https://github.com/dasharo/docs
 theme:
   name: material
   custom_dir: overrides
   favicon: images/favicon.png
   logo: images/dasharo-logo.png
+  features:
+    - content.tabs.link
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
 extra_css:
   - stylesheets/extra.css
 google_analytics:
@@ -21,10 +28,41 @@ markdown_extensions:
       toc_depth: 2
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 nav:
   - 'Intro': index.md
   - 'Supported hardware':
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
+      - 'NovaCustom laptops':
+          - 'Overview': unified/novacustom/overview.md
+          - 'Building manual': unified/novacustom/building-manual.md
+          - 'Initial deployment': unified/novacustom/initial-deployment.md
+          - 'Firmware update': unified/novacustom/firmware-update.md
+          - 'Recovery': unified/novacustom/recovery.md
+          - 'Post-installation setup': unified/clevo/post-install.md
+          - 'RGB keyboard': unified/novacustom/rgb-keyboard.md
+          - 'Firmware update using fwupd': unified/novacustom/fwupd-usage.md
+          - 'NV4x 12th Gen':
+              - 'Releases': variants/novacustom_nv4x_adl/releases.md
+              - 'Hardware Configuration Matrix': variants/novacustom_nv4x_adl/hardware-matrix.md
+              - 'Test matrix': variants/novacustom_nv4x_adl/test-matrix.md
+          - 'NV4x 11th Gen':
+              - 'Releases': variants/novacustom_nv4x_tgl/releases.md
+              - 'Hardware Configuration Matrix': variants/novacustom_nv4x_tgl/hardware-matrix.md
+              - 'Test matrix': variants/novacustom_nv4x_tgl/test-matrix.md
+              - 'Openness score': variants/novacustom_nv4x_tgl/openness_analysis.md
+              - 'LVFS report': variants/novacustom_nv4x_tgl/lvfs_report.md
+              - 'Checbox results': variants/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md
+          - 'NS5x/7x 12th Gen':
+              - 'Releases': variants/novacustom_ns5x_adl/releases.md
+              - 'Hardware Configuration Matrix': variants/novacustom_ns5x_adl/hardware-matrix.md
+              - 'Test matrix': variants/novacustom_ns5x_adl/test-matrix.md
+          - 'NS5x/7x 11th Gen':
+              - 'Releases': variants/novacustom_ns5x_tgl/releases.md
+              - 'Hardware Configuration Matrix': variants/novacustom_ns5x_tgl/hardware-matrix.md
+              - 'Test matrix': variants/novacustom_ns5x_tgl/test-matrix.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
@@ -58,48 +96,12 @@ nav:
           - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
-    #   - 'NovaCustom NV4x 11th gen':
-      - 'NovaCustom NV4x':
-          - 'Overview': variants/novacustom_nv4x/overview.md
-          - 'Releases': variants/novacustom_nv4x/releases.md
-          - 'Building manual': variants/novacustom_nv4x/building-manual.md
-          - 'Initial deployment': variants/novacustom_nv4x/initial-deployment.md
-          - 'Firmware update': variants/novacustom_nv4x/firmware-update.md
-          - 'Recovery': variants/novacustom_nv4x/recovery.md
-          - 'Hardware Configuration Matrix': variants/novacustom_nv4x/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_nv4x/test-matrix.md
-          - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
-          - 'Updating firmware using fwupd': common-coreboot-docs/fwupd_usage.md
-          - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'Openness score': variants/novacustom_nv4x/openness_analysis.md
-          - 'LVFS report': variants/novacustom_nv4x/lvfs_report.md
-          - 'Checbox results': variants/novacustom_nv4x/compatibility-check-results-ubuntu.md
-    #   - 'NovaCustom NV4x 12th gen':
-    #       - 'Test matrix': variants/novacustom_nv4x_12th_gen/test-matrix.md
-    #   - 'NovaCustom NS5x/7x 11th gen':
-      - 'NovaCustom NS5x/7x':
-          - 'Overview': variants/novacustom_ns5x_7x/overview.md
-          - 'Releases': variants/novacustom_ns5x_7x/releases.md
-          - 'Building manual': variants/novacustom_ns5x_7x/building-manual.md
-          - 'Initial deployment': variants/novacustom_ns5x_7x/initial-deployment.md
-          - 'Firmware update': variants/novacustom_ns5x_7x/firmware-update.md
-          - 'Recovery': variants/novacustom_ns5x_7x/recovery.md
-          - 'Hardware Configuration Matrix': variants/novacustom_ns5x_7x/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
-          - 'Post-installation setup': common-coreboot-docs/clevo_post_install.md
-          - 'Logo customization': common-coreboot-docs/custom_logo.md
-          - 'RGB keyboard': variants/novacustom_ns5x_7x/rgb_keyboard.md
-          - 'EC firmware revocery': variants/novacustom_ns5x_7x/ec_recovery.md
-    #   - 'NovaCustom NS5x/7x 12th gen':
-    #       - 'Test matrix': variants/novacustom_ns5x_7x_12th_gen/test-matrix.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
           - 'Installation manual': variants/tuxedo_ibs15/installation.md
-          - 'Post-installation steps': variants/tuxedo_ibs15/post_install.md
-          - 'Logo customization': common-coreboot-docs/custom_logo.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_ns5x_7x/test-matrix.md
+          - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
       - 'Protectli FW6':
           - 'Overview': variants/protectli_fw6/overview.md
           - 'Releases': variants/protectli_fw6/releases.md
@@ -141,6 +143,9 @@ nav:
           - 'FAQ': variants/msi_z690/faq.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
+  - 'Guides':
+      - 'Logo customization': guides/logo-customization.md
+      - 'Firmware signing for vboot': guides/vboot-signing.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
@@ -168,8 +173,7 @@ nav:
       - 'Releases': dasharo-tools-suite/releases.md
       - 'Documentation': dasharo-tools-suite/documentation.md
   - 'Knowledge base':
-      - 'Common coreboot documentation':
-          - 'Vboot signing': common-coreboot-docs/vboot_signing.md
+      - 'Glossary': glossary.md
       - 'Dasharo menu documentation':
           - 'Overview': dasharo-menu-docs/overview.md
       - 'Checkbox certification software usage': common-coreboot-docs/checkbox.md
@@ -287,18 +291,18 @@ nav:
               - 'Platform stability': unified-test-documentation/dasharo-performance/404-platform-stability.md
               - 'Fan control measure': unified-test-documentation/dasharo-performance/405-fan-control-measure.md
       - 'Roadmap': ecosystem/roadmap.md
-  - 'Quality Principles': quality-principles/introduction.md
-    # - 'Introduction':
-    # - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
-  - 'Value proposition':
-      - 'Overview': value-prop/overview.md
-      - 'Security': value-prop/security.md
-      - 'Compatibility': value-prop/compatibility.md
-    # - 'Performance': value-prop/performance.md
-      - 'Marketing': value-prop/marketing.md
-    # - 'Certification Program':
-    #     - 'Overview': value-prop/certification-program/overview.md
+      - 'Quality Principles': quality-principles/introduction.md
+        # - 'Introduction':
+        # - 'Dasharo Quality Criteria': quality-principles/dasharo-quality-criteria.md
+      - 'Value proposition':
+          - 'Overview': value-prop/overview.md
+          - 'Security': value-prop/security.md
+          - 'Compatibility': value-prop/compatibility.md
+        # - 'Performance': value-prop/performance.md
+          - 'Marketing': value-prop/marketing.md
+        # - 'Certification Program':
+        #     - 'Overview': value-prop/certification-program/overview.md
+        #
+      - 'Ways you can help us': ways-you-can-help-us.md
   - 'Projects':
       - 'TrenchBoot Anti Evil Maid': projects/trenchboot-aem.md
-  - 'Glossary': glossary.md
-  - 'Ways you can help us': ways-you-can-help-us.md
