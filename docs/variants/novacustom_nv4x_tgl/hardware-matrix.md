@@ -1,4 +1,4 @@
-# Hardware configuration matrix - NovaCustom NV4X
+# Hardware configuration matrix
 
 ## Introduction
 
