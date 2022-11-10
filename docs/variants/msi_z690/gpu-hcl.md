@@ -18,13 +18,14 @@ which is tested and verfied in 3mdeb laboratory - this information might be
 found in [Hardware Matrix](hardware-matrix.md) documentation.
 
 Legend:
-* GPU name - the full name of GPU including vendor and model name.
-* Memory size - total amount of GPU memory declared by vendor.
-* Memory type - GPU's type of memory.
-* Bandwidth - GPU's bandwidth.
-* PCI-E Architecture - declared by producer generation of PCI-E architecture.
-* Multi-Graphics Technology - information about support for Multi-Graphics
-  Technology.
+
+* GPU name: the full name of GPU including vendor and model name.
+* Memory size: total amount of GPU memory declared by vendor.
+* Memory type: GPU's type of memory.
+* Bandwidth: GPU's bandwidth.
+* PCI-E Architecture: declared by producer generation of PCI-E architecture.
+* Multi-Graphics Technology: information about support for Multi-Graphics
+    Technology.
 
 Information about GPU might be read from GPU package or documentation.
 
