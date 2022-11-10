@@ -11,7 +11,7 @@ coreboot port on the Talos II platform.
 |--------------------------------|---------------------------------------------------------------|
 | **CPU**                        | IBM POWER9 “Sforza”                                           |
 |                                | CPU Cooler                                                    |
-| **SSD**                        | Micron 1100 256GB M.2                                         |
+| **SSD**                        | Intel 670p 512 GB M26472-201 NVME                             |
 | **RAM**                        | Crucial CT8G4RF88266                                          |
 | **Flash memory**               | Micron MT25QL512ABB8ESF-0SIT                                  |
 | **Network**                    | Local network wired connection                                |
