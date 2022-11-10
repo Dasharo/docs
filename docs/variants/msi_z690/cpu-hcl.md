@@ -18,14 +18,15 @@ which is tested and verfied in 3mdeb laboratory - this information might be
 found in [Hardware Matrix](hardware-matrix.md) documentation.
 
 Legend:
-* Processor name - the full name of processor including vendor, brand and
+
+* Processor name: the full name of processor including vendor, brand and
     CPU number.
-* Core name - CPU core codename.
-* CPU base speed - based CPU speed.
-* CPU boost speed - boosted CPU speed.
-* Wattage - declared by producer processor wattage.
-* GPU - information about embedded graphics processing unit.
-* Results - link to measurement results.
+* Core name: CPU core codename.
+* CPU base speed: based CPU speed.
+* CPU boost speed: boosted CPU speed.
+* Wattage: declared by producer processor wattage.
+* GPU: information about embedded graphics processing unit.
+* Results: link to measurement results.
 
 Information about processor name, core name and speed might be read from OS
 (Linux systems - command `lscpu`, Windows systems - `System information` menu).

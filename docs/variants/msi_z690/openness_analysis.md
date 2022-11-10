@@ -154,7 +154,7 @@ Full BIOS region openness compared to AMI BIOS with data and free space:
 
 ![](/images/openness_msi_bios_full_ami.png)
 
-THat mean
+That mean
 
 Full image openness code only compared to AMI BIOS:
 
