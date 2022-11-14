@@ -17,6 +17,18 @@ the device, but also as the presale validation procedure!
 * Y-splitter cable.
 * (Optional) UART -> USB converter
 
+> There is also option to use Raspberry Pi4 instad of Raspberry Pi0. To do so,
+> replace:
+> * Raspberry Pi0
+> * USB A - microUSB cable
+> * Raspberry Pi zero Camera Cable
+>
+> with:
+> * Raspberry Pi 4
+> * USB A - USB C cable
+>
+> Connections for Raspberry Pi 4 will not be shown in this documentation.
+
 ### Building the OS
 
 To prevent any mix-up in libraries and dependencies process will include Docker.
