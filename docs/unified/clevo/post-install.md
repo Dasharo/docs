@@ -126,8 +126,11 @@ power saving tweaks to enable sleep mode while a SATA disk is installed.
 ### Headset jack fix for NV4x 12th Gen
 
 The headset jack in NV4x 12th Gen (Alder Lake) needs a fix that is available
-starting with kernel version v6.0. If you are using an older kernel, you need
-to add the fix manually:
+starting with kernel version v6.0 (patch
+[be561ffad708f0cee18aee4231f80ffafaf7a419](https://github.com/torvalds/linux/commit/be561ffad708f0cee18aee4231f80ffafaf7a419)).
+If you are using an older kernel, you need to add the fix manually:
+
+1. Execute fixup script:
 
     ```bash
     curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/nv4x-audio-fixup | sudo sh
