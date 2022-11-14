@@ -129,23 +129,8 @@ The headset jack in NV4x 12th Gen (Alder Lake) needs a fix that is available
 starting with kernel version v6.0. If you are using an older kernel, you need
 to add the fix manually:
 
-1. Create a file `/lib/firmware/hda-init.fw` with the following contents:
-
     ```bash
-    [codec]
-    0x10ec0256 0x15584041 0
-
-    [model]
-    headset-mode-no-hp-mic
-
-    [pincfg]
-    0x19 0x03a11120
-    ```
-
-1. Create a file `/etc/modprobe.d/audio-jack.conf` with the following contents:
-
-    ```bash
-    options snd_hda_intel patch=hda-init.fw
+    curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/nv4x-audio-fixup | sudo sh
     ```
 
 1. Reboot. The audio jack will now work correctly.
