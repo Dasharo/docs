@@ -7,13 +7,39 @@
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 2. Make yourself familiar with
-    [Heads installation](../../../variants/talos_2/initial-deployment/#heads-installation).
+    [Heads installation](/variants/talos_2/initial-deployment/#heads-installation).
 
-## HDS001.001 Boot into Heads
+## HDS001.001 Heads installation
 
 **Test description**
 
-This test verifies that the DUT during booting procedure reaches Heads
+This test aims to verify that Heads could be installed on the DUT.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Flash bootkernel partition with Heads in accordance with the
+    [documentation](/variants/talos_2/initial-deployment/#heads-installation).
+
+**Expected result**
+
+1. The output of the `pflash` command shouldn't contain any errors.
+1. The output of the `pflash` command should contain information
+    `Verifying... 100%`.
+
+## HDS002.001 Boot into Heads
+
+**Test description**
+
+This test aims to verify that the DUT during booting procedure reaches Heads
 bootloader.
 
 **Test configuration data**
@@ -27,8 +53,6 @@ bootloader.
 
 **Test steps**
 
-1. Flash bootkernel partition in accordance with the
-    [documentation](../../../variants/talos_2/initial-deployment/#heads-installation).
 1. Power on the DUT.
 1. Wait for the `Heads` to boot and note the result.
 
