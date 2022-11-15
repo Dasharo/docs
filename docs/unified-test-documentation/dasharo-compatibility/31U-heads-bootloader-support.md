@@ -32,8 +32,12 @@ This test aims to verify that Heads could be installed on the DUT.
 **Expected result**
 
 1. The output of the `pflash` command shouldn't contain any errors.
-1. The output of the `pflash` command should contain information
-    `Verifying... 100%`.
+1. The output of the `pflash` command should contain:
+
+    ```bash
+    Programming & Verifying...
+    [==================================================] 100% ETA:0s
+    ```
 
 ## HDS002.001 Boot into Heads
 
