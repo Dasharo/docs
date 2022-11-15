@@ -118,7 +118,7 @@ which is not equipped with an Ethernet port.
     might not connect to the WiFi. To prevent this, the router should be
     configured properly: channels 12-14 or Auto Scan mode should be disabled.
 
-### Read IP adress
+### Read IP address
 
 The section below describes the known methods of reading PiKVM IP.
 
@@ -149,12 +149,12 @@ The section below describes the known methods of reading PiKVM IP.
     router model.
 
 1. Third option:
-    * solder pins for serial output as on images below:
+    - solder pins for serial output as on images below:
 
         ![Pins](images/soldered_pins.jpg)
         ![Schematics](images/pin_schem.jpg)
 
-    * Check Raspberry Pi Zero2W IP by booting to system and reading
+    - Check Raspberry Pi Zero2W IP by booting to system and reading
         information via serial (eg.) UART -> USB converter.
 
 ## Device validation
