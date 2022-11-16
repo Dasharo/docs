@@ -29,7 +29,8 @@ Test results for this release can be found
 - Disabled Intel PTT (fTPM)
 - [Removed workaround for graphics power management as the issue no longer reproduces on newer revision of the hardware](https://github.com/Dasharo/dasharo-issues/issues/26)
 - Binaries are built with coreboot-sdk 2021-09-23_b0d87f753c (was 0ad5fbd48d)
-- Open-source graphics initialization with libgfxinit instead of proprietary and closed FSP GOP driver
+- Open-source graphics initialization with libgfxinit instead of proprietary and
+  closed FSP GOP driver
 
 ### Binaries
 

@@ -34,7 +34,6 @@ Build the firmware v1.0.18 or newer:
 **NOTICE**: VP4630 and VP4650 binary will not work on VP4670 and vice versa.
 They use different FSP variants.
 
-
 Versions v1.0.17 and earlier support only VP3630 and can be built using the
 following command:
 
@@ -43,4 +42,3 @@ following command:
     ```
 
 The resulting coreboot image will be placed in `build/coreboot.rom`.
-
