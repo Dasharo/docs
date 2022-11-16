@@ -29,32 +29,13 @@ documentation._
 * [Development](development.md) - describes information for Dasharo developers.
 * [FAQ](faq.md) - answers for frequently asked questions.
 
-## Useful documents
+<!--
 
-* [MSI Z690-A PRO DDR4 WiFI
-  site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
-* [Board
-  manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
+## Useful documents
 
 ## Press releases
 
-* [PC Gamer](https://www.pcgamer.com/coreboot-on-intel-motherboard/)
-* [Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Coreboot-Start-ADL-MSI-Dasharo)
-* [Tom's
-  Hardware](https://www.tomshardware.com/news/msi-z690-a-pro-wifi-coreboot)
-* [Root.cz](https://www.root.cz/zpravicky/port-coreboot-na-intel-alder-lake-z690-od-msi/)
-* [GN24](https://game-news24.com/2022/04/13/open-source-coreboot-bios-is-ported-to-msi-z690-a-motherboard/)
-* [ITBusiness](https://itbusiness.com.ua/gamezone/113401-u-etogo-neubivaemogo-bios-s-otkrytym-ishodnym-kodom-ogromnyj-potenczial.html)
+## Buy the Samsung Chromebook 3 with Dasharo firmware
 
-## Buy the MSI PRO Z-690A DDR4 with Dasharo firmware
+-->
 
-The Full PC Build with MSI PRO Z-690A DDR4 motherboard with Dasharo firmware is
-available at the official [3mdeb
-store](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1).
-
-You can also buy the product by mailing us at:
-[shopping@3mdeb.com](mailto:shopping@3mdeb.com).
-
-Device assembly and presale validation will be carried out in accordance with
-the [following
-procedure](../../transparent-validation/msi-z690/presale-assembly-and-validation.md).
