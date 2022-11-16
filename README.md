@@ -2,24 +2,56 @@
 
 This repository contains source code for the Dasharo documentation webpage
 
-# Local build
+## Contribution
+
+Please make sure to follow below steps before publishing your changes as a
+merge request.
+
+### Local build
 
 ```shell
 virtualenv -p $(which python3) venv
 source venv/bin/activate
 pip install -r requirements.txt
-mkdocs build
+mkdocs serve
 ```
 
-# Broken links checker
+By default, it will host a local copy od documentation at:
+`http://0.0.0.0:8000/`.
+
+It is very important at this point to verify that the pages you have changed
+render correctly as HTML in local preview.
+
+### Broken links checker
 
 ```shell
 cd utils/blc
 docker build -t blc .
-docker run --network host blc blc http://0.0.0.0:8000 -r|grep BROKEN
+docker run --rm --network host blc blc http://0.0.0.0:8000 -r | tee blc.txt
 ```
 
-# Make sure no TBD or TODO content is displayed
+Above will check all of the links in the whole documentation recursively and
+generate the `blc.txt`, which will provide information on which links are
+reachable, and which are not.
+
+Checking the whole documentation can be time-consuming task (around 15 minutes).
+
+It is a good practice to verify at least the document you have edited, before
+publishing them. You can check a single page for broken links as well, simply
+by providing it's url. For example:
+
+```shell
+docker run --rm -it --network host blc blc http://0.0.0.0:8000/unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key/  | tee blc.txt
+```
+
+Checking the whole documentation for broken links shall be done on each major
+documentation rework.
+
+You should then review the `blc.txt` file, looking for `BROKEN` keyword. Then,
+you can fix the broken links by checking where given links come from in the
+`blc.txt` file.
+
+### Make sure no TBD or TODO content is displayed
 
 Find all occurrences:
 
@@ -34,7 +66,7 @@ mkdocs.yml)
 
 There should be no TBD or TODO visible on the website.
 
-# pre-commit hooks
+### pre-commit hooks
 
 - [Install pre-commit](https://pre-commit.com/index.html#install), if you
   followed [local build](#local-build) procedure `pre-commit` should be
@@ -44,7 +76,7 @@ There should be no TBD or TODO visible on the website.
 
 - Install hooks into repo:
 
-```bash
+```shell
 pre-commit install --hook-type commit-msg
 ```
 
@@ -53,22 +85,22 @@ pre-commit install --hook-type commit-msg
 - (Optional) Run hooks on all files (for example, when adding new hooks or
   configuring existing ones):
 
-```bash
+```shell
 pre-commit run --all-files
 ```
 
-## To skip verification
+#### To skip verification
 
 In some cases, it may be needed to skip `pre-commit` tests. To do that, please
 use:
 
-```bash
+```shell
 git commit --no-verify
 ```
 
-# Navigation menu
+## Navigation menu
 
-## Supported hardware
+### Supported hardware
 
 Each subsection of supported hardware should look as follows - there should be
 no more sections:
