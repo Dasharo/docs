@@ -31,23 +31,37 @@ Test results for this platform can be found
 
 ### Binaries
 
-<!--
-[protectli_vault_glk_v1.0.15.rom][v1.0.15_rom]{.md-button}
+[protectli_VP2410_DF_v1.0.15.rom][v1.0.15_rom]{.md-button}
 [sha256][v1.0.15_hash]{.md-button}
 [sha256.sig][v1.0.15_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/388861)
--->
+How to verify signatures:
 
-The binaries will be published by Protectli on their webpage. As soon as they
-show up, Dasharo will link to them as well.
+```bash
+wget https://github.com/protectli-root/protectli-firmware-updater/raw/main/images/protectli_vp2410_DF_v1.0.15.rom -O protectli_vault_glk_v1.0.15.rom
+wget https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256
+wget https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256.sig
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc
+gpg --list-sigs "3mdeb Master Key" "3mdeb Dasharo Master Key" "Protectli Dasharo Firewall Release 1.0 Signing Key"
+sha256sum -c protectli_vault_glk_v1.0.15.rom.sha256
+gpg -v --verify protectli_vault_glk_v1.0.15.rom.sha256.sig protectli_vault_glk_v1.0.15.rom.sha256
+```
 
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on b77cf229 revision f59b1ec9](https://github.com/Dasharo/coreboot/tree/f59b1ec9)
 - [edk2 based on 7f90b9cd revision 90364638](https://github.com/Dasharo/edk2/tree/90364638)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- FSP: Custom version based on Intel GeminiLake FSP 2.2.1.3
+- Management Engine: Custom image based on CSE 4.0.30.1392
+- microcode:
+    + CPU signature: 0x0706A8, Date: 09.06.2020, Revision: 0x18
+    + CPU signature: 0x0706A0, Date: 12.07.2017, Revision: 0x26
+    + CPU signature: 0x0706A1, Date: 09.06.2020, Revision: 0x34
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
-[v1.0.15_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom
+[v1.0.15_rom]: https://github.com/protectli-root/protectli-firmware-updater/raw/main/images/protectli_vp2410_DF_v1.0.15.rom
 [v1.0.15_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256
 [v1.0.15_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256.sig

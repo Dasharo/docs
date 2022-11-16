@@ -48,6 +48,17 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 - [coreboot based on c6ee1509da revision ed9f6fe0](https://github.com/Dasharo/coreboot/tree/ed9f6fe0)
 - [edk2 based on 7f90b9cd revision e31b7a71](https://github.com/Dasharo/edk2/tree/e31b7a71)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- VP4670: [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake1)
+- VP4630 and VP4650: [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake1)
+- Intel i225 EFI driver version 0.10.4,
+  SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
+- Management Engine: Custom image based on ME 14.0.47.1558,
+  SHA256: 7fa37e108176c9a2d0df60c93b10b3ad9c7725f1f82b87197a2991208c4cffec
+- microcode:
+    + CPU signature: 0x0806EC, Date: 17.11.2021, Revision: 0xF0
+    + CPU signature: 0x0A0660, Date: 15.11.2021, Revision: 0xF0
+    + CPU signature: 0x0A0661, Date: 16.11.2021, Revision: 0xF0
 
 [protectli_vp4630_vp4650_v1.0.18.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4630_vp4650_v1.0.18.rom
 [protectli_vp4630_vp4650_v1.0.18.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4630_vp4650_v1.0.18.rom.sha256
@@ -88,6 +99,16 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 - [coreboot based on 4.16 revision d662831d](https://github.com/Dasharo/coreboot/tree/d662831d)
 - [edk2 based on 7f90b9cd revision 576aa6a4](https://github.com/Dasharo/edk2/tree/576aa6a4)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake1)
+- Intel i225 EFI driver version 0.10.4,
+  SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
+- Management Engine: Custom image based on ME 14.0.47.1558,
+  SHA256: 7fa37e108176c9a2d0df60c93b10b3ad9c7725f1f82b87197a2991208c4cffec
+- microcode:
+    + CPU signature: 0x0806EC, Date: 28.04.2021, Revision: 0xEC
+    + CPU signature: 0x0A0660, Date: 28.04.2021, Revision: 0xEA
+    + CPU signature: 0x0A0661, Date: 29.04.2021, Revision: 0xEC
 
 ## v1.0.16 - 2022-07-13
 
@@ -125,6 +146,16 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 - [coreboot based on 4.16 revision dfaaf44d](https://github.com/Dasharo/coreboot/tree/dfaaf44d)
 - [edk2 based on 7f90b9cd revision 5345a611](https://github.com/Dasharo/edk2/tree/5345a611)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake1)
+- Intel i225 EFI driver version 0.10.4,
+  SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
+- Management Engine: Custom image based on ME 14.0.47.1558,
+  SHA256: 7fa37e108176c9a2d0df60c93b10b3ad9c7725f1f82b87197a2991208c4cffec
+- microcode:
+    + CPU signature: 0x0806EC, Date: 28.04.2021, Revision: 0xEC
+    + CPU signature: 0x0A0660, Date: 28.04.2021, Revision: 0xEA
+    + CPU signature: 0x0A0661, Date: 29.04.2021, Revision: 0xEC
 
 ## v1.0.13 - 2022-03-22
 
@@ -157,6 +188,15 @@ See how to verify signatures on [asciinema](TBD)
 
 - [coreboot based on 4.16 revision 546e1c86](https://github.com/Dasharo/coreboot/tree/546e1c86)
 - [edk2 based on 7f90b9cd revision 7f90b9cd](https://github.com/Dasharo/edk2/tree/7f90b9cd)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [Cometlake1 FSP 9.0.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake1)
+- Intel i225 EFI driver version 0.9.03,
+  SHA256: 63e77b237dc9a8aacdd7465675ee88afc01dad3204156a91a0976a4ad1ed5b00
+- Management Engine: Custom image based on ME 14.0.47.1558,
+  SHA256: 7fa37e108176c9a2d0df60c93b10b3ad9c7725f1f82b87197a2991208c4cffec
+- microcode:
+    + CPU signature: 0x0806EC, Date: 28.04.2021, Revision: 0xEC
+    + CPU signature: 0x0A0660, Date: 28.04.2021, Revision: 0xEA
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
 [protectli_vault_cml_v1.0.17.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.17/protectli_vault_cml_v1.0.17.rom
