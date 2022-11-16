@@ -14,6 +14,47 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
 
+## v1.0.18 - 2022-11-16
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=1613384145).
+
+### Added
+
+- Support for VP4650 and VP4670 platforms
+- Platform will beep 12 times and blink HDD led on critical firmware errors
+
+### Changed
+
+- Disabled Intel PTT (fTPM)
+- [Removed workaround for graphics power management as the issue no longer reproduces on newer revision of the hardware](https://github.com/Dasharo/dasharo-issues/issues/26)
+- Binaries are built with coreboot-sdk 2021-09-23_b0d87f753c (was 0ad5fbd48d)
+- Open-source graphics initialization with libgfxinit instead of proprietary and closed FSP GOP driver
+
+### Binaries
+
+[protectli_vp4630_vp4650_v1.0.18.rom][protectli_vp4630_vp4650_v1.0.18.rom_file]{.md-button}
+[sha256][protectli_vp4630_vp4650_v1.0.18.rom_hash]{.md-button}
+[sha256.sig][protectli_vp4630_vp4650_v1.0.18.rom_sig]{.md-button}
+
+[protectli_vp4670_v1.0.18.rom][protectli_vp4670_v1.0.18.rom_file]{.md-button}
+[sha256][protectli_vp4670_v1.0.18.rom_hash]{.md-button}
+[sha256.sig][protectli_vp4670_v1.0.18.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/388861)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on c6ee1509da revision ed9f6fe0](https://github.com/Dasharo/coreboot/tree/ed9f6fe0)
+- [edk2 based on 7f90b9cd revision e31b7a71](https://github.com/Dasharo/edk2/tree/e31b7a71)
+
+[protectli_vp4630_vp4650_v1.0.18.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4630_vp4650_v1.0.18.rom
+[protectli_vp4630_vp4650_v1.0.18.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4630_vp4650_v1.0.18.rom.sha256
+[protectli_vp4630_vp4650_v1.0.18.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4630_vp4650_v1.0.18.rom.sha256.sig
+[protectli_vp4670_v1.0.18.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4670_v1.0.18.rom
+[protectli_vp4670_v1.0.18.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4670_v1.0.18.rom.sha256
+[protectli_vp4670_v1.0.18.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.18/protectli_vp4670_v1.0.18.rom.sha256.sig
+
 ## v1.0.17 - 2022-08-17
 
 Test results for this release can be found
