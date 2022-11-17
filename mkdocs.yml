@@ -19,6 +19,7 @@ google_analytics:
   - UA-39420295-13
   - auto
 markdown_extensions:
+  - footnotes
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
@@ -146,6 +147,7 @@ nav:
   - 'Guides':
       - 'Logo customization': guides/logo-customization.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
+      - 'Dasahro Reviewers Guide': guides/dasharo-reviewers-guide.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
