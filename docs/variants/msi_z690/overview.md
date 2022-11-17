@@ -51,9 +51,9 @@ documentation._
 * [GN24](https://game-news24.com/2022/04/13/open-source-coreboot-bios-is-ported-to-msi-z690-a-motherboard/)
 * [ITBusiness](https://itbusiness.com.ua/gamezone/113401-u-etogo-neubivaemogo-bios-s-otkrytym-ishodnym-kodom-ogromnyj-potenczial.html)
 
-## Buy the MSI PRO Z-690A DDR4 with Dasharo firmware
+## Buy the MSI PRO Z690-A DDR4 with Dasharo firmware
 
-The Full PC Build with MSI PRO Z-690A DDR4 motherboard with Dasharo firmware is
+The Full PC Build with MSI PRO Z690-A DDR4 motherboard with Dasharo firmware is
 available at the official [3mdeb
 store](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1).
 
