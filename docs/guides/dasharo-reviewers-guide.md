@@ -1,87 +1,85 @@
 # Dasharo Reviewers Guide
 
-Following Guide was based on reviews of Dasharo compatible with MSI Z690-A
-DDR4/DDR5, but in long run the same discoveries can be applicable to other
-Dasharo and open-source firmware solutions.
+Based on reviews of Dasharo compatible with MSI Z690-A DDR4/DDR5, we created
+the following guide to explain the performance gap between MSI proprietary and
+Dasharo open-source firmware, but in the long run, the same discoveries can
+apply to other Dasharo and open-source firmware solutions.
 
 ## Introduction
 
-One aspect that during the 23+ years of coreboot existence has never been
-in-depth tested, is how its performance compares against propietary firmware
-solutions that runs on the same hardware platform. This is because for most of
-the interesed parties, the selling point of coreboot was the transparency of
-being open-source, thus rarely did direct comparisons about other features or
-functionality.  Historically, most of what we could find about coreboot
-performance involves the lower POST times claims, but there is little
-information regarding its runtime performance as measured in benchmarks, which
-is a major point that end users are interesed in. Sadly, we don't have enough
-internal resources nor the required field experience to conduct such exhaustive
-benchmark testing. Several important findings came from third party benchmarks
-and community reports, which is enough to have a good idea about where we're
-currently standing. If anything, professional hardware reviewers should be
-better at performing benchmarks and analysing them than us.
+During the 23+ years of coreboot's existence, one aspect that has never been
+in-depth tested is how its performance compares against proprietary firmware
+solutions that run on the same hardware platform. The lack of performance
+testing is because, for most of the interested parties, the selling point of
+coreboot was the transparency of being open-source, and this rarely made direct
+comparisons about other features or functionality. Historically, most of what
+we could find about coreboot performance involves the lower POST times claims,
+but there needs to be more information regarding its runtime performance as
+measured in benchmarks, which is a significant point that end users are
+interested in. Sadly, we need more internal resources and the necessary field
+experience to conduct such exhaustive benchmark testing. Several significant
+findings came from third-party benchmarks and community reports, which is
+enough to know our current standing. Professional hardware reviewers should be
+better at performing and analyzing measures than we are.
 
 
 ## Why We Ask To Fine Tune Settings
 
-In general, what we found out in our limited benchmarking is that performance
-out-of-the-box with Dasharo is measurabily lower than performance with MSI
-propietary firmware, in the order of 6-8% on the benchmarked Core i5 12600K.
-This was quickly tracked down to MSI using by default certain processor
-operating parameters that are quite different from the values stated on the
-Intel datasheets, resulting in alterations of the processor behavior that
-allows it to sustain Turbo Boost with higher clock speeds and for longer time
+In general, we found out in our limited benchmarking that performance
+out-of-the-box with Dasharo is measurably lower than performance with MSI
+proprietary firmware, in the order of 6-8% on the benchmarked Core i5 12600K.
+Lower performance was quickly tracked down to MSI using, by default, certain
+processor operating parameters that are quite different from the values stated
+on the Intel datasheets, resulting in alterations of the processor behavior
+that allows it to sustain Turbo Boost with higher clock speeds and for longer
 periods than otherwise possible, and thus appear to perform better overall.
-After normalizing across both MSI proprietary firmware and Dasharo the values
-we found different, the benchmark difference was [reduced to around 2% (21:19-
-29:00)](https://vimeo.com/756437712).
+After normalizing across both MSI proprietary firmware and Dasharo, the values
+we found were different, and the benchmark difference was [reduced to around 2%
+(21:19- 29:00)](https://vimeo.com/756437712).
 
-We also found out that several hardware review websites already wrote articles
-and analysis about this matter, as it is common that Motherboard vendors uses
-by default values above those specified by Intel (technically overclocking) to
-produce better performance results in benchmarks ([AnandTech][anandtech],
-[TechSpot][techspot], [VideoCardz][videocardz], [Gamers Nexus abou
-cheating][gamersnexus1], [GamersNexus about MSI default
-settings][gamersnexus2], [GamersNexus Z490 YouTube Review][gamersnexus3],
-[TechPowerUp][techpowerup], [Tom's Hardware][tomshw]). Depending on who you ask,
-using aggressive values by default can be seen either as a convenience, since
-the end user gets more performance without having to know how to configure the
-firmware, or as a form of cheating, due to the end user usually having no idea
-about these changes and that they are overclocking out-of-the-box. As for the
-time being we're sticking to Intel specification default values, these
-motherboard vendors custom optimizations hurts us cause it makes the difference
-look much bigger than it really is.
+We also found several review websites that have already written articles and
+analyses about this matter. Motherboard vendors use default values above those
+specified by Intel (technically overclocking) to produce better performance
+results in benchmarks ([AnandTech][anandtech], [TechSpot][techspot],
+[VideoCardz][videocardz], [Gamers Nexus about cheating][gamersnexus1],
+[GamersNexus about MSI default settings][gamersnexus2], [GamersNexus Z490
+YouTube Review][gamersnexus3], [TechPowerUp][techpowerup], [Tom's
+Hardware][tomshw]). Depending on whom you ask, using aggressive values by
+default can be seen either as a convenience, since the end user gets more
+performance without having to know how to configure the firmware, or as a form
+of cheating, due to the end user usually having no idea about these changes and
+that they are overclocking out-of-the-box. As for the time being, we're
+sticking to Intel specification default values; these motherboard vendors'
+custom optimizations hurts us because it makes the difference look much bigger
+than it is.
 
 Since what we want to showcase is how Dasharo (for this MSI port, coreboot +
-EDKII UefiPayloadPkg) performance compares against the propietary firmware codebase,
-the only way to do so accurately is by making sure than the hardware operating
-values are the same in both Dasharo and the original firmware so that the
-performance differences are not due to higher processor clock speeds thanks to
-higher Power Limits, unlimited Turbo Boost times, or similar tricks. Note than
-we don't mind about out-of-the-box comparisons, but that wouldn't be directly
-comparing the performance of both firmware codebases, which is our point  Thus,
-to make it fair, hardware has to be tweaked to run with the same operating
-values on both. As you can't currently change values on Dasharo unless you're
-willing to recompile (or ask for a custom build with tweaked values), the
-easiest way to do this is by bringing down MSI firmware values down to
-Dasharo/Intel levels.
-
+EDKII UefiPayloadPkg) performance compares against the proprietary firmware
+codebase. The only way to do so accurately is by ensuring that the hardware
+operating values are the same in both Dasharo and the original firmware so that
+the performance differences are not due to higher processor clock speeds thanks
+to higher Power Limits, unlimited Turbo Boost times, or similar tricks. Note
+that we are okay with out-of-the-box comparisons, but that wouldn't be directly
+comparing the performance of both firmware codebases, which is our point. Thus,
+to make it fair, the hardware has to be tweaked to run with the same operating
+values on both. As you can't change values on Dasharo unless you're willing to
+recompile (or ask for a custom build with tweaked values), the easiest way is
+by bringing MSI firmware values down to Dasharo/Intel levels.
 
 ## Find Your Processor Intel Default Parameters
 
-So far, there are 6 Processor configurable parameters that greatly differs:
-PL1, PL2, PL1 Tau, ICCMAX, DC_LL and AC_LL. coreboot uses the values found on
-two sections of the Intel 12th Generation Intel Core Processors Datasheet
-(Volume 1 of 2). You will have to check the datasheet yourself to find the
-proper values for your processor so that you can manually input onto MSI
-firmware. In the case of MSI firmware default values, there is no public
-information we found, so we only know about how it autoconfigures the
-processors we tested.  Note that on the datasheet, Intel doesn't mention
-processor models by name/number but instead classifies them by amount of P+E
-cores and Base Power TDP, so first you have to check these two values from
-Intel Ark for your processor model, then check on the Datasheet tables what
-matches both classes to get the Intel default values for the configurable
-parameters.
+So far, 6 Processor configurable parameters significantly differ: PL1, PL2, PL1
+Tau, ICCMAX, DC_LL, and AC_LL. coreboot uses the values found on two sections
+of the Intel 12th Generation Intel Core Processors Datasheet (Volume 1 of 2).
+You will have to check the datasheet to find the proper values for your
+processor so that you can manually input them onto MSI firmware. In the case of
+MSI firmware default values, we found no public information, so we only know
+how it autoconfigures the processors we tested. Note that on the datasheet,
+Intel doesn't mention processor models by name/number but instead classifies
+them by amount of P+E cores and Base Power TDP, so first, you have to check
+these two values from Intel Ark for your processor model, then check on the
+Datasheet tables what matches both classes to get the Intel default values for
+the configurable parameters.
 
 Here are examples covering the 12400, 12600K, 12900K and 12900KS (`Processor
 Line Thermal and Power - Package Turbo Specifications (S / HX - Processor
@@ -109,8 +107,8 @@ section][intel_vcc] of datasheet:
 On S-Processor Line, AC_LL is the same as DC_LL.
 
 For reference, on a 12600K, the MSI 1.70 firmware on Auto with CPU Cooler
-Tuning set to Boxed Cooler (lowest values for auto configuration) uses the
-following values vs Dasharo/Intel defaults:
+Tuning set to Boxed Cooler (lowest values for auto-configuration) uses the
+following values vs. Dasharo/Intel defaults:
 
 * MSI BIOS 1.70 PL1 = 241W PL2 = 241W PL1 Tau = 56s ICCMAX = 250A DC_LL/AC_LL = 80
 * Dasharo 1.1.0 PL1 = 125W PL2 = 241W PL1 Tau = 56s ICCMAX = 175A DC_LL/AC_LL = 170
@@ -118,7 +116,7 @@ following values vs Dasharo/Intel defaults:
 ## Configure MSI Firmware With Intel Default Parameters
 
 After you have found your processor model values, you can input them on MSI
-firmware. Most likely you want to start from default settings.
+firmware. Most likely, you want to start from default settings.
 
 Enter MSI Firmware, and change the following:
 
@@ -146,73 +144,72 @@ values, then repeat Save Changes and Reboot:
 
 ## Miscellaneous Comments
 
-* Since you can software flash Dasharo and flash again MSI firmware on the same
-  system, it is likely you want to use the same computer for testing both
-  firmwares, so that there are no temperature or clock speeds difference that
-  could be attributed to different pressure on heatsink mounting or silicon
-  lottery.
-* MSI firmware bases its default (Auto) PL1, PL2 and ICCMAX values on the CPU
-  Cooler Tuning setting. When using Restore Defaults on a 12600K, this setting
-  actually defaults to Water Cooler, which allows for technically unlimited PL1
-  and PL2 (4095W). Even the Boxed Cooler setting configures the 12600K to 241W
-  PL1 and 241W PL2. Thus, for controlled results, the invidual values always
-  have to be manually set.
+* Since you can software flash Dasharo and flash MSI firmware again on the same
+  system, you likely want to use the same computer to test both firmware so
+  that no temperature or clock speeds difference could attribute to different
+  pressure on heatsink mounting or silicon lottery.
+* MSI firmware bases its default (Auto) PL1, PL2, and ICCMAX values on the CPU
+  Cooler Tuning set. When using Restore Defaults on a 12600K, this setting
+  defaults to Water Cooler, which allows for technically unlimited PL1 and PL2
+  (4095W). Even the Boxed Cooler setting configures the 12600K to 241W PL1 and
+  241W PL2. Thus, you must manually set the individual values for controlled
+  results.
 * So far, the setting that most affected benchmark scores are AC_LL and DC_LL.
-  PL1, PL2 and ICCMAX are limits, they are only meaningful if the processor
-  actually gets limited by them, which would depend on the processor model
-  (Some have more headroom than others. PL1 is 125W for both 6+4 12600K and 8+8
-  12900K, the latter would be severely more limited), whereas the other two
-  values are always in effect.
+  PL1, PL2 and ICCMAX are limiting. They are only meaningful if the processor
+  gets limited by them, which would depend on the processor model (some have more
+  headroom than others. PL1 is 125W for both 6+4 12600K and 8+8 12900K, the
+  latter would be severely more limited), whereas the other two values are always
+  in effect.
 
 On the tested 12600K, the effect of the significantly lower values of AC_LL on
 DC_LL that MSI uses is a rather massive difference of 20 Watts in power
 consumption (as reported by ThrottleStop and HWiNFO, and also by lower
 processor temperatures) when running Cinebench R23. Thus, with MSI values
 (whenever on MSI or a custom Dasharo build with those), the 12600K doesn't even
-reach PL1 limit, allowing it to maintain the highest Turbo Boost clock speeds
-infinitely, whereas on Dasharo (or MSI with Intel default values), the extra
-power consumption makes it to go beyond PL1, eventually throttling back to
-slower clocks to keep under PL1.
+reach the PL1 limit, allowing it to maintain the highest Turbo Boost clock
+speeds infinitely, whereas, on Dasharo (or MSI with Intel default values), the
+extra power consumption makes it to go beyond PL1, eventually throttling back
+to slower clocks to keep under PL1.
 
 * LCC (Loadline Calibration Control) is also present in another menu as CPU
-  Loadline Calibration Control, but we left it at Auto. We don't know if
-  changes in CPU Lite Load Control / CPU AC Loadline / CPU DC Loadline changes
-  it or if LCC operates the same regardless of changes to the previous options.
-* The most important performance related bug we found in Dasharo involves
+  Loadline Calibration Control, but we left it at Auto. We need to find out if
+  changes in CPU Lite Load Control / CPU AC Loadline / CPU DC Loadline change it
+  or if LCC operates the same regardless of changes to the previous options.
+* The most critical performance-related bug we found in Dasharo involves
   benchmarking Single Thread applications on Windows 11. With Dasharo, Windows
-  11 CPU Scheduler likes to move threads around between P and E Cores, whereas
-  with MSI firmware on the same scenario, it instead always favour P Cores.
-  This greatly affects the scores of Single Threaded benchmarks, and makes them
+  11 CPU Scheduler likes to move threads around between P and E cores, whereas
+  MSI firmware on the same scenario instead always favors P cores. Such behavior
+  significantly affects the scores of Single-Threaded benchmarks and makes them
   highly variable depending on which core type a thread spent most of its time.
-  We believe there may be MSRs (Model Specific Registers) related to Intel
-  Thread Director that we aren't aware of that manages this.  The only
-  workaround found is to set CPU Affinity manually, which can be performed
-  automatically with Process Lasso, with the added bonus of using Forced Mode
-  to continuously re-apply the CPU Affinity settings, as some applications,
-  including Cinebench, likes to change them when you start to run the
-  benchmark. Of course, this will not happen on P Core only models like 12400.
-  This was not tested on Linux.
-* Dasharo currently doesn't support to manually change the memory clock speeds,
-  it will simply default to the highest standard JEDEC profile supported by the
+  There may be MSRs (Model Specific Registers) related to Intel Thread Director
+  that we aren't aware of that manages this. The only workaround found is to set
+  CPU Affinity manually, which can be performed automatically with Process Lasso,
+  with the bonus of using Forced Mode to continuously re-apply the CPU Affinity
+  settings, as some applications, including Cinebench, like to change them when
+  you start to run the benchmark. Of course, this will not happen on P core, only
+  models like 12400. We did not test manual affinity tested on Linux.
+* Dasharo currently doesn't support manually changing the memory clock speeds,
+  and it will default to the highest standard JEDEC profile supported by the
   installed memory modules. MSI firmware also defaults to JEDEC profiles, so
-  out-of-the-box they're matched at memory configuration, thus not a problem.
-  Many enthusiast grade DDR4 modules that are rated for 3200 MHz (Maximum
-  supported by Alder Lake-S) or higher actually have that clock speed as a XMP
-  profile, whereas the standard JEDEC profile could be just 2133 or 2400 MHz.
-  This means that in most cases, a 3200 MHz DDR4 module will run at lower
-  speeds than expected. There are modules rated for JEDEC 3200 MHz 22-22-22 @
-  1.2V that should work in both Dasharo and MSI firmware, in case you're really
-  interesed in testing this. Is also possible to force Dasharo to use a XMP
-  profile if you're willing to recompile or use a custom build.
+  out-of-the-box, they're matched at memory configuration, thus not a problem.
+  Many enthusiast-grade DDR4 modules use 3200 MHz (maximum supported by Alder
+  Lake-S) or higher and have that clock speed as an XMP profile, whereas the
+  standard JEDEC profile could be just 2133 or 2400 MHz. In most cases, a 3200
+  MHz DDR4 module will run at lower speeds than expected. There are modules rated
+  for JEDEC 3200 MHz 22-22-22 @ 1.2V that should work in both Dasharo and MSI
+  firmware, in case you're interested in testing this. It is also possible to
+  force Dasharo to use an XMP profile if you're willing to recompile or use a
+  custom build.
 * There are a lot of other settings and MSRs (Model Specific Registers) that we
-  have yet to test. We track progress of that effort in [this][issue173] issue.
-  On the public [Alder Lake FSP Integration Guide][adl_fsp], it is documented
-  on how to set these settings On or Off but there aren't many details about
-  how they change the Processor behavior. Is expected than the remaining 2% or
-  so performance will come from matching all these settings.
+  have yet to test. We track the progress of that effort in [this][issue173]
+  issue. Public [Alder Lake FSP Integration Guide][adl_fsp] documents how to set
+  these settings On or Off, but there are few details about how they change the
+  Processor behavior. The remaining 2% of performance will come from matching all
+  these settings.
 
-[^1]: On public Datasheet there is no DC_LL for 8+8 150W class, only 8+8 125W,
-but can confirm from alternate sources than this is the correct value.
+[^1]: On the public datasheet, there is no DC_LL for the 8+8 150W class, only
+  8+8 125W, but we can confirm from alternate sources that this is the correct
+value.
 [anandtech]: https://www.anandtech.com/show/6214/multicore-enhancement-the-debate-about-free-mhz
 [techspot]: https://www.techspot.com/news/77313-do-need-re-review-core-i9-9900k.html
 [videocardz]: https://videocardz.com/newz/asus-asrock-and-msi-bring-overclocking-to-h470-b460-and-non-k-intel-core-cpus
