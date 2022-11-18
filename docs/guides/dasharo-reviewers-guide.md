@@ -68,7 +68,7 @@ by bringing MSI firmware values down to Dasharo/Intel levels.
 
 ## Find Your Processor Intel Default Parameters
 
-So far, 6 Processor configurable parameters significantly differ: PL1, PL2, PL1
+So far we've found six processor-configurable parameters that differ significantly: PL1, PL2, PL1
 Tau, ICCMAX, DC_LL, and AC_LL. coreboot uses the values found on two sections
 of the Intel 12th Generation Intel Core Processors Datasheet (Volume 1 of 2).
 You will have to check the datasheet to find the proper values for your
