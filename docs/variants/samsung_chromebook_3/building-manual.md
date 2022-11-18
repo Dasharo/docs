@@ -2,7 +2,7 @@
 
 ## Intro
 
-This guide shows how to build Dasharo firmware for Samsung Chromeboog 3
+This guide shows how to build Dasharo firmware for Samsung Chromebook 3
 devices.
 
 ## Requirements
