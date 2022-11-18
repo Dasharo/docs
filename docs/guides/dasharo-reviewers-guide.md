@@ -49,7 +49,7 @@ default can be seen either as a convenience, since the end user gets more
 performance without having to know how to configure the firmware, or as a form
 of cheating, due to the end user usually having no idea about these changes and
 that they are overclocking out-of-the-box. As for the time being, we're
-sticking to Intel specification default values; these motherboard vendors'
+sticking to Intel specification default values; these mainboard vendors'
 custom optimizations hurts us because it makes the difference look much bigger
 than it is.
 
