@@ -37,7 +37,7 @@ we found were different, and the benchmark difference was [reduced to around 2%
 (21:19- 29:00)](https://vimeo.com/756437712).
 
 We also found several review websites that have already written articles and
-analyses about this matter. Mainboard vendors use default values above those
+analysis about this matter. Mainboard vendors use default values above those
 specified by Intel (technically overclocking) to produce better performance
 results in benchmarks ([AnandTech][anandtech], [TechSpot][techspot],
 [VideoCardz][videocardz], [Gamers Nexus about cheating][gamersnexus1],
