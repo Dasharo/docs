@@ -53,7 +53,7 @@ sticking to Intel specification default values; these motherboard vendors'
 custom optimizations hurts us because it makes the difference look much bigger
 than it is.
 
-Since what we want to showcase is how Dasharo (for this MSI port, coreboot +
+What we want to showcase is how Dasharo (for this MSI port, coreboot +
 EDKII UefiPayloadPkg) performance compares against the proprietary firmware
 codebase. The only way to do so accurately is by ensuring that the hardware
 operating values are the same in both Dasharo and the original firmware so that
