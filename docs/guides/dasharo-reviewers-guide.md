@@ -67,18 +67,18 @@ by bringing MSI firmware values down to Dasharo/Intel levels.
 
 ## Find Your Processor Intel Default Parameters
 
-So far we've found six processor-configurable parameters that differ significantly: PL1, PL2, PL1
-Tau, ICCMAX, DC_LL, and AC_LL. coreboot uses the values found on two sections
-of the Intel 12th Generation Intel Core Processors Datasheet (Volume 1 of 2).
-You will have to check the datasheet to find the proper values for your
-processor so that you can manually input them onto MSI firmware. In the case of
-MSI firmware default values, we found no public information, so we only know
-how it autoconfigures the processors we tested. Note that on the datasheet,
-Intel doesn't mention processor models by name/number but instead classifies
-them by amount of P+E cores and Base Power TDP, so first, you have to check
-these two values from Intel Ark for your processor model, then check on the
-Datasheet tables what matches both classes to get the Intel default values for
-the configurable parameters.
+So far we've found six processor-configurable parameters that differ
+significantly: PL1, PL2, PL1 Tau, ICCMAX, DC_LL, and AC_LL. coreboot uses the
+values found on two sections of the Intel 12th Generation Intel Core Processors
+Datasheet (Volume 1 of 2).  You will have to check the datasheet to find the
+proper values for your processor so that you can manually input them onto MSI
+firmware. In the case of MSI firmware default values, we found no public
+information, so we only know how it autoconfigures the processors we tested.
+Note that on the datasheet, Intel doesn't mention processor models by
+name/number but instead classifies them by amount of P+E cores and Base Power
+TDP, so first, you have to check these two values from Intel Ark for your
+processor model, then check on the Datasheet tables what matches both classes
+to get the Intel default values for the configurable parameters.
 
 Here are examples covering the 12400, 12600K, 12900K and 12900KS (`Processor
 Line Thermal and Power - Package Turbo Specifications (S / HX - Processor
@@ -133,7 +133,8 @@ values, then repeat Save Changes and Reboot:
     - Long Duration Maintained(s): PL1 Tau
     - Short Duration Power Limit(W): PL2
     - CPU Current Limit (A): ICCMAX
-    - CPU Lite Load Control: Advanced (Required to input DC_LL and AC_LL as numbers instead of "Modes")
+    - CPU Lite Load Control: Advanced (Required to input DC_LL and AC_LL as
+      numbers instead of "Modes")
     - CPU AC Loadline: AC_LL
     - CPU DC Loadline: DC_LL
 
