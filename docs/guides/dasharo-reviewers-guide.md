@@ -52,18 +52,19 @@ sticking to Intel specification default values; these mainboard vendors'
 custom optimizations hurts us because it makes the difference look much bigger
 than it is.
 
-What we want to showcase is how Dasharo (for this MSI port, coreboot +
-EDKII UefiPayloadPkg) performance compares against the proprietary firmware
-codebase. The only way to do so accurately is by ensuring that the hardware
-operating values are the same in both Dasharo and the original firmware so that
-the performance differences are not due to higher processor clock speeds thanks
-to higher Power Limits, unlimited Turbo Boost times, or similar tricks. Note
-that we are okay with out-of-the-box comparisons, but that wouldn't be directly
-comparing the performance of both firmware codebases, which is our point. Thus,
-to make it fair, the hardware has to be tweaked to run with the same operating
-values on both. As you can't change values on Dasharo unless you're willing to
-recompile (or ask for a custom build with tweaked values), the easiest way is
-by bringing MSI firmware values down to Dasharo/Intel levels.
+What we want to showcase is how Dasharo (for this MSI port, coreboot + EDKII
+UefiPayloadPkg) performance compares against the proprietary firmware codebase.
+The only way to do so accurately is by ensuring that the hardware operating
+values are the same in both Dasharo and the original firmware so that the
+performance differences are not due to higher processor clock speeds thanks to
+higher Power Limits, unlimited Turbo Boost times, or similar tricks. Note that
+we are okay with out-of-the-box comparisons, but that wouldn't be directly an
+apples-to-apples comparison of the performance of both firmware codebases,
+which is our point. Thus, to make it fair, the hardware has to be tweaked to
+run with the same operating values on both. As you can't change values on
+Dasharo unless you're willing to recompile (or ask for a custom build with
+tweaked values), the easiest way is by bringing MSI firmware values down to
+Dasharo/Intel levels.
 
 ## Find Your Processor Intel Default Parameters
 
