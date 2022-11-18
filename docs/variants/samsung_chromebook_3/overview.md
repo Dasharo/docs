@@ -38,4 +38,3 @@ documentation._
 ## Buy the Samsung Chromebook 3 with Dasharo firmware
 
 -->
-

@@ -10,5 +10,3 @@ the devices.
 ## Installing Dasharo
 
 ### Initial Installation
-
-
