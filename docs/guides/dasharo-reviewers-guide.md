@@ -22,7 +22,6 @@ findings came from third-party benchmarks and community reports, which is
 enough to know our current standing. Professional hardware reviewers should be
 better at performing and analyzing measures than we are.
 
-
 ## Why We Ask To Fine Tune Settings
 
 In general, we found out in our limited benchmarking that performance
@@ -92,7 +91,6 @@ Lines) - S-Processor Line LGA`) from [this section][intel_pl] of datasheet:
 * 12900K 8+8 Core 125W PL1 = 125W PL2 = 241W PL1 Tau = 56s
 * 12900KS 8+8 Core 150W PL1 = 150W PL2 = 241W PL1 Tau = 56s
 
-
 `VCCCORE DC Specifications - Processor VCCCORE Active and Idle Mode DC Voltage
 and Current Specifications - Segment S-Processor Line`  from [this
 section][intel_vcc] of datasheet:
@@ -130,14 +128,14 @@ After the power off/on cycle, enter MSI firmware again, change the following
 values, then repeat Save Changes and Reboot:
 
 * OC Menu (Left Panel) -> Advanced CPU Configuration
-  * Enhanced Turbo: Disabled (This is MSI name for Multi Core Enhancement)
-  * Long Duration Power Limit(W): PL1
-  * Long Duration Maintained(s): PL1 Tau
-  * Short Duration Power Limit(W): PL2
-  * CPU Current Limit (A): ICCMAX
-  * CPU Lite Load Control: Advanced (Required to input DC_LL and AC_LL as numbers instead of "Modes")
-  * CPU AC Loadline: AC_LL
-  * CPU DC Loadline: DC_LL
+    - Enhanced Turbo: Disabled (This is MSI name for Multi Core Enhancement)
+    - Long Duration Power Limit(W): PL1
+    - Long Duration Maintained(s): PL1 Tau
+    - Short Duration Power Limit(W): PL2
+    - CPU Current Limit (A): ICCMAX
+    - CPU Lite Load Control: Advanced (Required to input DC_LL and AC_LL as numbers instead of "Modes")
+    - CPU AC Loadline: AC_LL
+    - CPU DC Loadline: DC_LL
 
 ![](images/msi_1-70__cpu-manual.png)
 ![](images/msi_1-70__cpu-save-and-exit.png)
@@ -210,14 +208,13 @@ to slower clocks to keep under PL1.
 [^1]: On the public datasheet, there is no DC_LL for the 8+8 150W class, only
   8+8 125W, but we can confirm from alternate sources that this is the correct
 value.
-[anandtech]: https://www.anandtech.com/show/6214/multicore-enhancement-the-debate-about-free-mhz
-[techspot]: https://www.techspot.com/news/77313-do-need-re-review-core-i9-9900k.html
-[videocardz]: https://videocardz.com/newz/asus-asrock-and-msi-bring-overclocking-to-h470-b460-and-non-k-intel-core-cpus
-[gamersnexus1]: https://www.gamersnexus.net/guides/3385-cheating-or-optimized-z390-motherboard-bclk-comparison
-[gamersnexus2]: https://www.gamersnexus.net/guides/3590-dont-run-z490-motherboards-with-default-settings-for-your-build
-[gamersnexus3]: https://www.youtube.com/watch?v=qQ_AETO7Fn4
-[techpowerup]: https://www.techpowerup.com/268260/hwinfos-power-reporting-deviation-sensor-reveals-how-motherboard-makers-are-cheating-ryzen-cpus
-[tomshw]: https://www.tomshardware.com/features/amd-ryzen-motherboard-power-cheat-testing
-[issue173]: https://github.com/Dasharo/dasharo-issues/issues/173#issuecomment-1213181583
-[adl_fsp]: https://github.com/intel/FSP/blob/master/AlderLakeFspBinPkg/Docs/AlderLake_FSP_Integration_Guide.pdf
-
+[anandtech]: <https://www.anandtech.com/show/6214/multicore-enhancement-the-debate-about-free-mhz>
+[techspot]: <https://www.techspot.com/news/77313-do-need-re-review-core-i9-9900k.html>
+[videocardz]: <https://videocardz.com/newz/asus-asrock-and-msi-bring-overclocking-to-h470-b460-and-non-k-intel-core-cpus>
+[gamersnexus1]: <https://www.gamersnexus.net/guides/3385-cheating-or-optimized-z390-motherboard-bclk-comparison>
+[gamersnexus2]: <https://www.gamersnexus.net/guides/3590-dont-run-z490-motherboards-with-default-settings-for-your-build>
+[gamersnexus3]: <https://www.youtube.com/watch?v=qQ_AETO7Fn4>
+[techpowerup]: <https://www.techpowerup.com/268260/hwinfos-power-reporting-deviation-sensor-reveals-how-motherboard-makers-are-cheating-ryzen-cpus>
+[tomshw]: <https://www.tomshardware.com/features/amd-ryzen-motherboard-power-cheat-testing>
+[issue173]: <https://github.com/Dasharo/dasharo-issues/issues/173#issuecomment-1213181583>
+[adl_fsp]: <https://github.com/intel/FSP/blob/master/AlderLakeFspBinPkg/Docs/AlderLake_FSP_Integration_Guide.pdf>
