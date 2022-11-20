@@ -14,6 +14,8 @@ Folloin
 	    - BIOS password
 	* UEFI Secure Boot configuration
 * Xubuntu Core
+  * Kickstart installation
+  * Get public key for OpenSK
   * U2F for most important services
 		- Gitlab
 	* U2F for disk password
@@ -21,6 +23,7 @@ Folloin
   * [systemd-cryptenroll](https://man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html)
 	* Salt for configuration
 		- install
+      - git
 			- firefox (consider tor browser)
 			- vim
 			- libpam-u2f
@@ -28,6 +31,8 @@ Folloin
 			- firefox to use duckduckgo as default
 	* Applications
 	  - messangers
+
+
 
 ## Measured boot values
 
@@ -147,3 +152,6 @@ What we will do in this chapter:
   Device programmed.
   ```
 
+## Xubuntu Core
+
+* Install git
