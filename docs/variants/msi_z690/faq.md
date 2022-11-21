@@ -1,19 +1,26 @@
 # FAQ
 
-## Why MSI Z690-A WIFI DDR4 was chosen for Dasharo ?
+## Why MSI Z690-A (WIFI) (DDR4) was chosen for Dasharo ?
 
 Please read [this extensive analysis][msi_port_analysis] contributed to Intel
 Reddit.
 
-## Will this work on my `MSI PRO Z690-A WIFI DDR5` or `MSI PRO Z690-A DDR5` ?
+## Will this work on my `MSI PRO Z690-A (WIFI) (DDR4)`?
 
-Not yet. The build is configured for the DDR4 only. But currently we work on the
-DDR5 variant. **Do not try that**.
+During test procedures the Dasharo firmware has been confirmed to work on the
+following platforms from the MSI PRO Z690-A family:
 
-## Will this work on my `MSI PRO Z690-A DDR4` ?
+* MSI PRO Z690-A,
+* MSI PRO Z690-A DDR4,
+* MSI PRO Z690-A WIFI DDR4.
 
-Yes, it will work on your platform. Working on MSI PRO Z690-A DDR have been
-confirmed during the test procedures.
+When analyzing the above list, it is important to consider the producer naming
+rules - `MSI PRO Z690-A` is the nomenclature used for naming the platform with
+DDR5 memory slots.
+
+Dasharo working correctness has not been tested on `MSI PRO Z690-A WIFI`.
+However, given its similarity to the other boards, there should be no problems
+using Dasharo on it as well.
 
 ## Can I safely try this on my board?
 
@@ -81,7 +88,7 @@ Currently, Dasharo firmware picks the highest standard SPD Profile, no support
 for XMP ones. This means that on the Kingston modules it is actually working at
 2400 MHz, but it is expected to work all the way to 3200 MHz.
 
-## Why my GPU doesn't work on `MSI PRO Z690-A DDR4` ?
+## Why my GPU doesn't work on `MSI PRO Z690-A (DDR4) (WIFI)`?
 
 Due to the fact, that there's no possibility to insert all available GPU drivers
 into the firmware, the solution in the form of the `Option ROM` is in use.
