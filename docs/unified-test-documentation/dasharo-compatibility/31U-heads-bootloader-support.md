@@ -69,7 +69,8 @@ The `Heads` bootloader screen should be displayed.
 **Test description**
 
 This test aims to verify that the `Boot from USB` option in the
-`Default boot menu` allows booting from USB.
+`Default boot menu` allows booting from USB. This option is displayed if there
+are no other booting options (i.e. NVME with bootable OS).
 
 **Test configuration data**
 
@@ -148,7 +149,7 @@ This test aims to verify that the `Exit to recovery shell` option in the
 
 **Expected result**
 
-After selecting `Exit to recovery shell`, the recovery shell should be launched.
+After selecting `Exit to recovery shell`, the recovery shell should be shown.
 
 Example output:
 
