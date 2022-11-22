@@ -1,18 +1,126 @@
 # Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
-MSI PRO Z690-A WIFI DDR4
+MSI PRO Z690-A (WIFI) DDR4 and MSI PRO Z690-A (WIFI).
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
-[Subscribe to Dasharo compatible with MSI PRO Z690-A WIFI DDR4 Newsletter]
+[Subscribe to Dasharo compatible with MSI PRO Z690-A Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+
+## v1.1.0 - 2022-11-22
+
+### Added
+
+- Vboot recovery popup informing that platform has booted in recovery mode
+- TCG2 TPM Physical Presence Interface support
+- [Support for DDR5 board variant](https://github.com/Dasharo/dasharo-issues/issues/226)
+- PS/2 Controller enable/disable option
+- [Chipset watchdog support during boot and watchdog configuration menu](https://www.github.com/dasharo/dasharo-issues/issues/221)
+- [Early boot DMA protection](https://www.github.com/dasharo/dasharo-issues/issues/222)
+- [Option to reset Secure Boot keys to defaults](https://www.github.com/dasharo/dasharo-issues/issues/119)
+- [Intel ME disable support and menu options](https://www.github.com/dasharo/dasharo-issues/issues/111)
+- [Firmware setup password](https://www.github.com/dasharo/dasharo-issues/issues/120)
+- [SED/OPAL disk password support](https://www.github.com/dasharo/dasharo-issues/issues/161)
+- SATA disk password
+- [Firmware performance reporting](https://github.com/Dasharo/dasharo-issues/issues/125)
+- [USB stack and mass storage enable/disable option](https://github.com/Dasharo/dasharo-issues/issues/223)
+- [Network Boot enable/disable option](https://github.com/Dasharo/dasharo-issues/issues/122)
+- SMM BIOS Write Protection support and enable/disable option
+- AcpiView command to UEFI Shell
+- Platform will beep 12 times and blink HDD led on critical firmware errors,
+  e.g. if memory training failed
+- PCIe 5.0 firmware caching in flash which allows to disable ME without losing
+  PCIe 5.0 port functionality
+- cbmem logging from UEFI Payload is now supported and one can check complete
+  firmware logs from OS using coreboot's cbmem utility
+- Added Intel default settings for missing Alder Lake S CPUs
+
+### Changed
+
+- Added new ACPI Platform driver that installs coreboot exposed ACPI tables and
+  all allows native EDK2 ACPI table protocol to install new tables, e.g.
+  Firmware Performance Data Table, BGRT (Boot Logo) of VFCT (AMD GPU ACPI
+  table)
+- Secure Boot is now disabled by default with all keys erased
+- iPXE is now built from source using coreboot-sdk and
+  [included externally into UEFI Payload](https://github.com/Dasharo/dasharo-issues/issues/198)
+- [Firmware setup is displayed on full screen now](https://github.com/Dasharo/dasharo-issues/issues/118)
+- Disabled PCIe ASPM and Clock PM for better PCIe device compatibility
+- Disabled GPIO programming by FSP, coreboot handles the GPIO completely. This
+  additionally fixes a bug in FSP which did not enable SATA DEVSLP properly.
+- Changed Super I/O pin for PECI mode to reflect vendor firmware setting
+- Switched from IOT FSP to public ADL Client FSP
+- Switched to include microcode from public Intel microcode repository
+- Disabled PCIe hotplug
+- Network boot disabled by default, now configurable via menu option
+
+### Fixed
+
+- Vboot recovery popup is displayed before logo, so that logo do not disappear
+  after popup is displayed
+- [Wrong Tau values from Turbo Boost](https://github.com/Dasharo/dasharo-issues/issues/256)
+- PCI Express OptionROM loading causing certain dGPU cards to not work during
+  POST
+- PS/2 keyboard detection and inclusion to platform Console Input
+  [causing long delays in Ventoy or lockups in USB enumeration](https://github.com/Dasharo/dasharo-issues/issues/160)
+- Incorrect USB2 PHY tuning values for USB-C ports causing hard USB controller
+  lockups during USB enumeration and resulting in firmware hangs as long as USB
+  Type-C devices were plugged or devices being unable to detect and enumerate
+  in OS
+- [Broken PCI resource parsing above 4G](https://github.com/Dasharo/dasharo-issues/issues/128)
+- Incorrect SMBIOS product name for non-WiFi variants
+- [USB storage devices disappear after reboot/power failure](https://github.com/Dasharo/dasharo-issues/issues/70)
+
+### Known issues
+
+- [MSI FLASHBIOS feature is not working](https://github.com/Dasharo/dasharo-issues/issues/131)
+- [MMIO resource allocation issues with two Video Cards](https://github.com/Dasharo/dasharo-issues/issues/245)
+- [Slow video performance with Radeon 5600XT](https://github.com/Dasharo/dasharo-issues/issues/181)
+
+### Binaries
+
+[msi_ms7d25_v1.1.0_ddr4.rom][msi_ms7d25_v1.1.0_ddr4.rom_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.0_ddr4.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.0_ddr4.rom_sig]{.md-button}
+
+[msi_ms7d25_v1.1.0_ddr5.rom][msi_ms7d25_v1.1.0_ddr5.rom_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.0_ddr5.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.0_ddr5.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
+
+Commands snippet:
+
+```shell
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
+gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc
+gpg --list-sigs "3mdeb Master Key" "3mdeb Dasharo Master Key" "Dasharo release 1.x compatible with MSI MS-7D25 signing key"
+# DDR4
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom.sha256
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom.sha256.sig
+sha256sum -c msi_ms7d25_v1.1.0_ddr4.rom.sha256
+gpg --verify msi_ms7d25_v1.1.0_ddr4.rom.sha256.sig msi_ms7d25_v1.1.0_ddr4.rom.sha256
+# DDR5
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr5.rom
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr5.rom.sha256
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr5.rom.sha256.sig
+sha256sum -c msi_ms7d25_v1.1.0_ddr5.rom.sha256
+gpg --verify msi_ms7d25_v1.1.0_ddr5.rom.sha256.sig msi_ms7d25_v1.1.0_ddr5.rom.sha256
+```
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 912a262b7bf revision b76a1467](https://github.com/Dasharo/coreboot/tree/b76a1467)
+- [Dasharo EDKII fork based on dd7523b5b1 revision 5738f9e8](https://github.com/Dasharo/edk2/tree/5738f9e8)
 
 ## v1.0.0 - 2022-05-27
 
@@ -238,18 +346,24 @@ gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 - [edk2 based on 4d2846ba revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/aKgTJjYEA
-[v0.1.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom
-[v0.1.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom.sha256
-[v0.1.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom.sha256.sig
-[v0.2.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.2.0/msi_ms7d25_v0.2.0.rom
-[v0.2.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.2.0/msi_ms7d25_v0.2.0.rom.sha256
-[v0.2.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.2.0/msi_ms7d25_v0.2.0.rom.sha256.sig
-[v0.3.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.3.0/msi_ms7d25_v0.3.0.rom
-[v0.3.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.3.0/msi_ms7d25_v0.3.0.rom.sha256
-[v0.3.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.3.0/msi_ms7d25_v0.3.0.rom.sha256.sig
-[v0.4.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom
-[v0.4.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom.sha256
-[v0.4.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom.sha256.sig
+[msi_ms7d25_v1.1.0_ddr4.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom
+[msi_ms7d25_v1.1.0_ddr4.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom.sha256
+[msi_ms7d25_v1.1.0_ddr4.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom.sha256.sig
+[msi_ms7d25_v1.1.0_ddr5.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr5.rom
+[msi_ms7d25_v1.1.0_ddr5.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr5.rom.sha256
+[msi_ms7d25_v1.1.0_ddr5.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr5.rom.sha256.sig
 [v1.0.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.0.0/msi_ms7d25_v1.0.0.rom
 [v1.0.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.0.0/msi_ms7d25_v1.0.0.rom.sha256
 [v1.0.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.0.0/msi_ms7d25_v1.0.0.rom.sha256.sig
+[v0.4.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom
+[v0.4.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom.sha256
+[v0.4.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.4.0/msi_ms7d25_v0.4.0.rom.sha256.sig
+[v0.3.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.3.0/msi_ms7d25_v0.3.0.rom
+[v0.3.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.3.0/msi_ms7d25_v0.3.0.rom.sha256
+[v0.3.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.3.0/msi_ms7d25_v0.3.0.rom.sha256.sig
+[v0.2.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.2.0/msi_ms7d25_v0.2.0.rom
+[v0.2.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.2.0/msi_ms7d25_v0.2.0.rom.sha256
+[v0.2.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v0.2.0/msi_ms7d25_v0.2.0.rom.sha256.sig
+[v0.1.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom
+[v0.1.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom.sha256
+[v0.1.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/msi_ms7d25_v0.1.0.rom.sha256.sig
