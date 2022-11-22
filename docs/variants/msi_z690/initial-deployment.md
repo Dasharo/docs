@@ -7,7 +7,7 @@ Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
 
 ## Initial deployment using DTS
 
-Initial deployment for MSI PRO Z690-A (WIFI) (DDR4) in supported in DTS since
+Initial deployment for MSI PRO Z690-A (WIFI) (DDR4) is supported in DTS since
 version v1.1.0. Please check [Dasharo zero-touch initial deployment
 section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
 
