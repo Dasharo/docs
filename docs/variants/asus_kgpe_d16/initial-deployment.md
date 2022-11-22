@@ -7,7 +7,7 @@ Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
 
 ## Initial deployment using DTS
 
-Initial deployment for Dell OptiPlex 7010/9010 in supported in DTS since version
+Initial deployment for ASUS KGPE-D16 in supported in DTS since version
 v1.1.0. Please check [Dasharo zero-touch initial deployment
 section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
 
