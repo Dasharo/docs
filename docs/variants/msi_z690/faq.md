@@ -5,25 +5,29 @@
 Please read [this extensive analysis][msi_port_analysis] contributed to Intel
 Reddit.
 
-## Will this work on my `MSI PRO Z690-A (WIFI) (DDR4)`?
+## Why do you use the nomenclature `MSI Z690-A (WIFI) (DDR4)`?
 
-During test procedures the Dasharo firmware has been confirmed to work on the
-following platforms from the MSI PRO Z690-A family:
-
-* MSI PRO Z690-A,
-* MSI PRO Z690-A DDR4,
-* MSI PRO Z690-A WIFI DDR4.
-
-When analyzing the above list, it is important to consider the producer naming
-rules - `MSI PRO Z690-A` is the nomenclature used for naming the platform with
+This nomenclature is the result of the naming used by the producer.
+`MSI PRO Z690-A` is the nomenclature used for naming the platform with
 DDR5 memory slots. If the platform is also equipped with the WiFi module, its
 naming nomenclature will additionally include the phrase `WIFI`. If instead of
 DDR5 memory slots, the platform is equipped with DDR4 memory slots, its naming
 nomenclature will additionally include the phrase `DDR4`.
 
+## Will this work on my `MSI PRO Z690-A` (model with DDR5 support)?
+
+Yes, during test procedures the Dasharo firmware work has been confirmed for
+the DDR5 platform without WIFI.
+
 Dasharo working correctness has not been tested on `MSI PRO Z690-A WIFI`.
 However, given its similarity to the other boards, there should be no problems
 using Dasharo on it as well.
+
+## Will this work on my `MSI PRO Z690-A DDR4`?
+
+Yes, during test procedures the Dasharo firmware work has been confirmed for
+the DDR4 WIFI platform. In turn, Dasharo working correctness on
+`MSI PRO Z690-A DDR4` has been confirmed by the community.
 
 ## Can I safely try this on my board?
 
