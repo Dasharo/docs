@@ -26,7 +26,7 @@ Test results for this platform can be found
 - [Early boot DMA protection](https://www.github.com/dasharo/dasharo-issues/issues/222)
 - [Option to reset Secure Boot keys to defaults](https://www.github.com/dasharo/dasharo-issues/issues/119)
 - [Intel ME disable support and menu options](https://www.github.com/dasharo/dasharo-issues/issues/111)
-- [Firmware setup password](https://www.github.com/dasharo/dasharo-issues/issues/120)
+- [Dasharo setup password](https://www.github.com/dasharo/dasharo-issues/issues/120)
 - [SED/OPAL disk password support](https://www.github.com/dasharo/dasharo-issues/issues/161)
 - SATA disk password
 - [Firmware performance reporting](https://github.com/Dasharo/dasharo-issues/issues/125)
@@ -51,7 +51,7 @@ Test results for this platform can be found
 - Secure Boot is now disabled by default with all keys erased
 - iPXE is now built from source using coreboot-sdk and
   [included externally into UEFI Payload](https://github.com/Dasharo/dasharo-issues/issues/198)
-- [Firmware setup is displayed on full screen now](https://github.com/Dasharo/dasharo-issues/issues/118)
+- [Dasharo setup menu full screen mode support](https://github.com/Dasharo/dasharo-issues/issues/118)
 - Disabled PCIe ASPM and Clock PM for better PCIe device compatibility
 - Disabled GPIO programming by FSP, coreboot handles the GPIO completely. This
   additionally fixes a bug in FSP which did not enable SATA DEVSLP properly.
