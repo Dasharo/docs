@@ -7,8 +7,8 @@ Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
 
 ## Initial deployment using DTS
 
-Initial deployment for Dell OptiPlex 7010/9010 in supported in DTS since version
-v1.1.0. Please check [Dasharo zero-touch initial deployment
+Initial deployment for MSI PRO Z690-A (WIFI) (DDR4) is supported in DTS since
+version v1.1.0. Please check [Dasharo zero-touch initial deployment
 section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
 
 ## Initial deployment manually
@@ -154,16 +154,27 @@ integrated GPU, you may try to plug the external GPU back and boot again.
 To flash Dasharo on the platform, execute the following command:
 
 > Replace the `VERSION` in firmware file name with the version you want to
-> flash. For example: `msi_ms7d25_v0.1.0.rom`.
+> flash. For example: `msi_ms7d25_v1.1.0_ddr4.rom`.
 
 ```bash
-sudo flashrom -p internal -w msi_ms7d25_vVERSION.rom --ifd -i bios
+sudo flashrom -p internal -w msi_ms7d25_vVERSION{_ddr4,_ddr5}.rom --ifd -i bios
 ```
 
-After the command succeeds, invoke `sudo poweroff` or click the power off in
-the GUI to shut down the board. Press `ENTER` when prompted on the screen. Power
-on the board back. Reboot will not work as some memory settings are preserved
-after reboot and FSP fails to train the memory. Poweroff is required.
+**IMPORTANT!** After the command succeeds, invoke `sudo reboot` or click the
+reboot/restart in the GUI to reboot the board. Press `ENTER` when prompted on
+the screen to remove the installation media (if Ubuntu live is used). DO NOT
+POWEROFF THE BOARD as SMI handlers of original MSI firmware may overwrite flash
+contents and cause a brick.
+
+After migration from MSI firmware to Dasharo and reboot, the firmware will fail
+the memory training. After reboot wait approximately 30 seconds and then power
+the board off by holding the power button pushed for 5 seconds. Dasharo v1.1.0
+or newer will signal the memory training failure with PC speaker beeps and
+blinking SATA LED. When it happens use the power button to power the board off
+(no need to wait 30 seconds in such case). Power on the board back. Now the
+memory training should not fail and after approximately 1 minute (can be nearly
+2 minutes for DDR5 memory), you should get a Dasharo splash screen on the
+monitor. Subsequent boots will take only a few seconds.
 
 #### Flashing back vendor firmware
 
