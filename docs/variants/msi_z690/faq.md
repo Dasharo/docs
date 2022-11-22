@@ -16,7 +16,10 @@ following platforms from the MSI PRO Z690-A family:
 
 When analyzing the above list, it is important to consider the producer naming
 rules - `MSI PRO Z690-A` is the nomenclature used for naming the platform with
-DDR5 memory slots.
+DDR5 memory slots. If the platform is also equipped with the WiFi module, its
+naming nomenclature will additionally include the phrase `WIFI`. If instead of
+DDR5 memory slots, the platform is equipped with DDR4 memory slots, its naming
+nomenclature will additionally include the phrase `DDR4`.
 
 Dasharo working correctness has not been tested on `MSI PRO Z690-A WIFI`.
 However, given its similarity to the other boards, there should be no problems
