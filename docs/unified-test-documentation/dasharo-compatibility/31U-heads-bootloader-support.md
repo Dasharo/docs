@@ -337,6 +337,9 @@ in the `HEADS Options` submenu is available and works correctly.
 1. Choose `<Continue>` in the displayed `OEM Factory Reset / Re-Ownership`
    window using the arrow keys and Enter.
 1. Go through the installation process by answering the questions.
+
+   > Answers don't affect GPG key generations
+
 1. Note the results.
 
 **Expected result**
