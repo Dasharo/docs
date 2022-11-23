@@ -9,7 +9,7 @@ subjected from before the release of the new binary.
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [Coreboot base port][CBP]                         | CBP           | CBP001.001, CBP002.001, CBP004.001   |
+| 1.   | [coreboot base port][CBP]                         | CBP           | CBP001.001, CBP002.001, CBP004.001   |
 | 2.   | [Petitboot payload support][PBT]                  | PBT           | All                                  |
 | 3.   | [Heads bootloader support][HDS]                   | HDS           | All                                  |
 | 4.   | [Device Tree][DVT]                                | DVT           | All                                  |
@@ -37,7 +37,7 @@ subjected from before the release of the new binary.
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [Coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
+| 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
 | 2.   | [CPU frequency measure][CPF]                      | CPF           | CPF001.001                           |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
