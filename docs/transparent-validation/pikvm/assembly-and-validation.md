@@ -162,3 +162,7 @@ The section below describes the known methods of reading PiKVM IP.
 1. Connect the device to the mains.
 1. Login to RTE via `ssh` (by using earlier obtained IP address) or
     `minicom` (by using USB-UART converter with 3 wire cables).
+
+## Where to buy?
+
+The PiKVM is available in our [online shop](https://3mdeb.com/shop/open-source-hardware/pikvm/).
