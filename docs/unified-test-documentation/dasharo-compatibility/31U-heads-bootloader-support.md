@@ -512,7 +512,7 @@ This test aims to verify that the `List GPG keys in your keyring` option in the
     --------------------
     pub   rsa3072 2022-11-22 [SC]
           AFA824E4660A265253BA1571B640E02380808C34
-    uid           [ultimate] OEM Key (OEM-generated key) <oem-20221122083831@example.co
+    uid          [ultimate] OEM Key (OEM-generated key) <oem-20221122083831@example.co
     sub   rsa3072 2022-11-22 [A]
     sub   rsa3072 2022-11-22 [E]
     ```
