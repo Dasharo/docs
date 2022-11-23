@@ -17,6 +17,9 @@ subjected from before the release of the new binary.
 | 6.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.002                           |
 | 8.   | [CPU status][CPU]                                 | CPU           | All                                  |
+| 9.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 10.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM001.002               |
+| 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.001, DSP004.003               |
 
 [CBP]: ../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
 [PBT]: ../../unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
@@ -26,6 +29,9 @@ subjected from before the release of the new binary.
 [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
+[USB]: ../../unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support/
+[NVM]: ../../unified-test-documentation/dasharo-compatibility/312-nvme-support/
+[DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd/
 
 ## Module: Dasharo performance
 
