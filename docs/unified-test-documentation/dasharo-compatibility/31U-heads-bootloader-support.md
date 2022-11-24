@@ -306,3 +306,329 @@ allows turning off the DUT.
 
 After selecting `Power Off`, the DUT should be turned off without any
 complications.
+
+## HDS010.001 OEM Factory Reset
+
+**Test description**
+
+This test aims to verify that the `OEM Factory Reset / Re-Ownership -->` option
+in the `HEADS Options` submenu is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `USB Security Dongle`
+1. Previously installed OS
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Plug the `USB Security Dongle` into DUT.
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `OEM Factory Reset / Re-Ownership -->` option in the
+   `HEADS Options` submenu.
+1. Choose `<Continue>` in the displayed `OEM Factory Reset / Re-Ownership`
+   window using the arrow keys and Enter.
+1. Go through the installation process by answering the questions.
+1. Note the results.
+
+**Expected result**
+
+1. The `Provisioned Security Components Secrets` should be displayed at the end
+   of the installation.
+1. The new GPG keys should be placed on the `USB Security Dongle`.
+
+## HDS011.001 Add GPG key to running BIOS and reflash
+
+**Test description**
+
+This test aims to verify that the `Add GPG key to running BIOS and reflash`
+option in the `GPG Management Menu` is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. Additional `USB storage` - at least 1GB, with GPG public key
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `Add GPG key to running BIOS and reflash` option in the
+   `GPG Management Menu`.
+1. Choose `<Yes>` in the displayed `GPG public key required` window using the
+   arrow keys and Enter.
+1. Choose GPG public key from the `USB storage` and press Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `List GPG keys in your keyring` option in the
+   `GPG Management Menu`.
+1. Note the results.
+
+**Expected result**
+
+The `GPG Keyring` window should contain information about the given GPG key.
+
+## HDS012.001 Add GPG key to standalone BIOS image and flash
+
+**Test description**
+
+This test aims to verify that the
+`Add GPG key to standalone BIOS image and flash` option in the
+`GPG Management Menu` is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. Additional `USB storage` - at least 1GB, with GPG public key and BIOS image
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `Add GPG key to standalone BIOS image and flash` option in the
+   `GPG Management Menu`.
+1. Choose `<Yes>` in the displayed `GPG public key required` window using the
+   arrow keys and Enter.
+1. Choose GPG public key from the `USB storage` and press Enter.
+1. Choose BIOS image(*.rom) from the `USB storage` and press Enter.
+1. Choose `<Yes>` in the displayed `Flash ROM?` window using the arrow keys and
+   Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `List GPG keys in your keyring` option in the
+   `GPG Management Menu`.
+1. Note the results.
+
+**Expected result**
+
+The `GPG Keyring` window should contain information about the given GPG key.
+
+## HDS013.001 Replace GPG key(s) in the current ROM and reflash
+
+**Test description**
+
+This test aims to verify that the
+`Replace GPG key(s) in the current ROM and reflash` option in the
+`GPG Management Menu` is available and replaces GPG keys correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. Additional `USB storage` - at least 1GB, with GPG public key
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `Replace GPG key(s) in the current ROM and reflash` option in the
+   `GPG Management Menu`.
+1. Choose `<Yes>` in the displayed `GPG public key required` window using the
+   arrow keys and Enter.
+1. Choose GPG public key from the `USB storage` and press Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `List GPG keys in your keyring` option in the
+   `GPG Management Menu`.
+1. Note the results.
+
+**Expected result**
+
+The `GPG Keyring` window should contain information about the given GPG key.
+
+## HDS014.001 List GPG keys in your keyring
+
+**Test description**
+
+This test aims to verify that the `List GPG keys in your keyring` option in the
+`GPG Management Menu` is available and listed GPG keys correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `List GPG keys in your keyring` option in the
+   `GPG Management Menu`.
+1. Note the results.
+
+**Expected result**
+
+1. The `GPG Keyring` window should contain information about the GPG key if any
+   was added.
+
+    Example information in the `GPG Keyring` window:
+
+    ```bash
+    //.gnupg/pubring.kbx
+    --------------------
+    pub   rsa3072 2022-11-22 [SC]
+          AFA824E4660A265253BA1571B640E02380808C34
+    uid          [ultimate] OEM Key (OEM-generated key) <oem-20221122083831@example.co
+    sub   rsa3072 2022-11-22 [A]
+    sub   rsa3072 2022-11-22 [E]
+    ```
+
+1. The `GPG Keyring` window should be empty if no key has been added.
+
+## HDS015.001 Export public GPG key to USB drive
+
+**Test description**
+
+This test aims to verify that the `Export public GPG key to USB drive` option in
+the `GPG Management Menu` is available and exports GPG keys correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. Additional `USB storage` - at least 1GB
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `Export public GPG key to USB drive` option in the
+   `GPG Management Menu`.
+1. Choose `<Yes>` in the displayed `Export Public Key(s) to USB drive?` window
+   using the arrow keys and Enter.
+1. Note the results.
+
+**Expected result**
+
+1. `The GPG Key Copied Successfully` window should be displayed.
+1. The `public-key.asc` file should be on `USB storage`.
+
+## HDS016.001 Generate GPG keys manually on a USB security token
+
+**Test description**
+
+This test aims to verify that the
+`Generate GPG keys manually on a USB security token` option in the
+`HEADS Options` submenu is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `USB Security Dongle`
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Plug the `USB Security Dongle` into DUT.
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `Generate GPG keys manually on a USB security token` option in the
+   `GPG Management Menu`.
+1. Confirm that the `USB Security Dongle` is inserted, type `Y` and press Enter.
+1. Wait for `gpg/card>` prompt is appeared.
+1. Type `admin` and press Enter.
+1. Type `generate` and press Enter.
+1. Answer `y` to question `Replace existing keys?`.
+1. Note the results.
+
+**Expected result**
+
+1. Information about the successful generation of GPG keys should be displayed.
+1. The new GPG keys are on the `USB Security Dongle`.
+
+## HDS017.001 Clear GPG key(s) and reset all user settings
+
+**Test description**
+
+This test aims to verify that the
+`Clear GPG key(s) and reset all user settings` option in the
+`Config Management Menu` is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `Change configuration settings -->` option in the `HEADS Options`
+   submenu.
+1. Select the `Clear GPG key(s) and reset all user settings` option in the
+   `Config Management Menu`.
+1. Choose `<Yes>` in the displayed `Reset Configuration?` window using the
+   arrow keys and Enter.
+1. Reboot the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `GPG Options -->` option in the `HEADS Options` submenu.
+1. Select the `List GPG keys in your keyring` option in the
+   `GPG Management Menu`.
+1. Note the results.
+
+**Expected result**
+
+The `GPG Keyring` window should be empty.
