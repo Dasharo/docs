@@ -103,7 +103,7 @@ TPM2 log entry 9:
     Event data: BOOTKERNEL
 ```
 
-## Addtional information
+## Additional information
 
 The Module is available at the official
 [3mdeb store](https://3mdeb.com/shop/modules/tpm-1-2-compatible-with-raptor-computing-systems-talos-ii-mainboard/).
