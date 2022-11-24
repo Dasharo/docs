@@ -16,6 +16,8 @@
     Dasharo firmware validation procedure.
 * [Conferences](conferences.md) - includes information from various conferences
     about POWER architecture support in coreboot.
+* [TPM connections and support](tpm-support.md) - describes the methods of
+    connecting dedicated TPM module to the board and how to validate it.
 
 ## Useful documents
 
