@@ -97,7 +97,7 @@ nav:
           - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
           - 'Test matrix': variants/talos_2/test-matrix.md
           - 'Conference materials': variants/talos_2/conferences.md
-          - 'TPM support': variants/talos_2/TPM_support.md
+          - 'TPM connection and support': variants/talos_2/tpm-support.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
