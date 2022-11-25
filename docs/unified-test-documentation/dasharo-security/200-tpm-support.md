@@ -192,6 +192,50 @@ TpmEnabled     : True
 
 ```
 
+## TPM001.003 TPM Support (Heads)
+
+**Test description**
+
+This test aims to verify that the TPM is initialized correctly and the PCRs can
+be accessed from the Heads.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Read coreboot loading logs.
+
+**Expected result**
+
+1. The logs should contain information about succeeded TPM setup:
+
+    ```bash
+    TPM: setup succeeded
+    ```
+
+1. The logs should contain information about correct measurements on PCRs.
+
+    Example output:
+
+    ```bash
+    STB: EV_SEPARATOR measured on pcr0 (tpm0, evType 0x4, evLogLen 917)
+    STB: EV_SEPARATOR measured on pcr1 (tpm0, evType 0x4, evLogLen 993)
+    STB: EV_SEPARATOR measured on pcr2 (tpm0, evType 0x4, evLogLen 1069)
+    STB: EV_SEPARATOR measured on pcr3 (tpm0, evType 0x4, evLogLen 1145)
+    STB: EV_SEPARATOR measured on pcr4 (tpm0, evType 0x4, evLogLen 1221)
+    STB: EV_SEPARATOR measured on pcr5 (tpm0, evType 0x4, evLogLen 1297)
+    STB: EV_SEPARATOR measured on pcr6 (tpm0, evType 0x4, evLogLen 1373)
+    STB: EV_SEPARATOR measured on pcr7 (tpm0, evType 0x4, evLogLen 1449)
+    ```
+
 ## TPM002.001 Verify TPM version (Ubuntu 22.04)
 
 **Test description**
@@ -268,3 +312,79 @@ Example output:
 ```text
 SpecVersion=2.0
 ```
+
+## TPM002.003 Verify TPM version (Heads)
+
+**Test description**
+
+This test aims to verify that the TPM version is correctly recognized by the
+Heads.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Exit to recovery shell` option using the arrow keys and Enter.
+1. Run the following command in the shell:
+
+    ```bash
+    cbmem -L
+    ```
+
+**Expected result**
+
+The output of the command should contain information about the TPM version.
+
+Example output:
+
+```bash
+TPM2 log:
+    Specification: 2.00
+```
+
+## TPM003.001 Reset TPM (Heads)
+
+**Test description**
+
+This test aims to verify that the `Reset TPM` option in the `Heads boot menu`
+is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `TPM/TOTP/HOTP Options -->` option in the `HEADS Options` submenu.
+1. Select the `Reset the TPM` option in the `TPM/TOTP/HOTP Options` submenu.
+1. Choose `<Yes>` in the displayed `Reset the TPM` window using the arrow keys
+   and Enter.
+1. Set the TPM owner password.
+1. Scan the QR code using a mobile application to add the new TOTP secret and
+   press Enter.
+1. Reboot the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+
+**Expected result**
+
+After selecting the `Continue to the main menu` option, should be prompted for
+the TPM owner password.
