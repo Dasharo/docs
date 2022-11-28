@@ -38,6 +38,18 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 - [seabios based on v1.0.6 revision 03bcdcaf](https://github.com/Dasharo/SeaBIOS/commits/03bcdcaf)
 - [ipxe based on 2019.3 stable revision ebf2eaf5](https://github.com/ipxe/ipxe/commits/ebf2eaf5)
 - [memtest based on v002 revision dd5b4ff2](https://review.coreboot.org/plugins/gitiles/memtest86plus/+/dd5b4ff2)
+- Management Engine: ME 11.8.50.3399,
+  SHA256: e1ce735139b6d9ebb81d7f6db288b0a896c39e4b1e606324b915bec949b6aca6
+- microcode:
+    + CPU signature: 0x0406E3, Date: 03.10.2019, Revision: 0xD6
+    + CPU signature: 0x0806E9, Date: 27.04.2020, Revision: 0xD6
+    + CPU signature: 0x0806E9, Date: 27.04.2020, Revision: 0xD6
+    + CPU signature: 0x0806EA, Date: 27.04.2020, Revision: 0xD6
+- VBIOS:
+    + VBIOS blob for FW6A/B/C,
+    SHA256: 470d3faefb09432bea00d637ec6b3ff51854e6cff0ee56627c0773acaffa4830
+    + VBIOS blob for FW6D/E,
+    SHA256: d1c746127e5288942efae65907739e18ff395fab70925b44dbafafd9e7b30cd7
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
 [v1.0.14_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom
