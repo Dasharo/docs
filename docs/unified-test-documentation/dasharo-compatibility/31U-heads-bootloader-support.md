@@ -307,7 +307,7 @@ allows turning off the DUT.
 After selecting `Power Off`, the DUT should be turned off without any
 complications.
 
-## HDS010.001 OEM Factory Reset
+## HDS010.001 OEM Factory Reset option is available and works correctly
 
 **Test description**
 
@@ -633,7 +633,7 @@ This test aims to verify that the
 
 The `GPG Keyring` window should be empty.
 
-## HDS018.001 Reset TPM
+## HDS018.001 Reset TPM option is available and works correctly
 
 **Test description**
 
