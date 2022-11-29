@@ -52,7 +52,7 @@ subjected from before the release of the new binary.
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                                | TPM           | TPM001.001                           |
+| 1.   | [TPM Support][TPM]                                | TPM           | TPM001.002                           |
 | 2.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md

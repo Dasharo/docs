@@ -33,6 +33,14 @@ subjected from before the release of the new binary.
 [NVM]: ../../unified-test-documentation/dasharo-compatibility/312-nvme-support/
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd/
 
+## Module: Dasharo security
+
+| No.  | Supported test suite                         | Test suite ID | Supported test cases                 |
+|:-----|:---------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [TPM Support][TPM]                           | TPM           | TPM001.001 and TPM002.001            |
+
+[TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
+
 ## Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
