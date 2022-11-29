@@ -192,12 +192,12 @@ TpmEnabled     : True
 
 ```
 
-## TPM001.003 TPM Support (Heads)
+## TPM001.003 TPM Support (firmware)
 
 **Test description**
 
 This test aims to verify that the TPM is initialized correctly and the PCRs can
-be accessed from the Heads.
+be accessed from the firmware.
 
 **Test configuration data**
 
@@ -211,30 +211,84 @@ be accessed from the Heads.
 **Test steps**
 
 1. Power on the DUT.
-1. Read coreboot loading logs.
+1. Boot into the BIOS.
+1. Enter the shell.
+1. Run the following command in the shell:
+
+    ```powershell
+    cbmem -L
+    ```
 
 **Expected result**
 
-1. The logs should contain information about succeeded TPM setup:
+The command should return information about the TPM log entries.
 
-    ```bash
-    TPM: setup succeeded
-    ```
+Example output:
 
-1. The logs should contain information about correct measurements on PCRs.
-
-    Example output:
-
-    ```bash
-    STB: EV_SEPARATOR measured on pcr0 (tpm0, evType 0x4, evLogLen 917)
-    STB: EV_SEPARATOR measured on pcr1 (tpm0, evType 0x4, evLogLen 993)
-    STB: EV_SEPARATOR measured on pcr2 (tpm0, evType 0x4, evLogLen 1069)
-    STB: EV_SEPARATOR measured on pcr3 (tpm0, evType 0x4, evLogLen 1145)
-    STB: EV_SEPARATOR measured on pcr4 (tpm0, evType 0x4, evLogLen 1221)
-    STB: EV_SEPARATOR measured on pcr5 (tpm0, evType 0x4, evLogLen 1297)
-    STB: EV_SEPARATOR measured on pcr6 (tpm0, evType 0x4, evLogLen 1373)
-    STB: EV_SEPARATOR measured on pcr7 (tpm0, evType 0x4, evLogLen 1449)
-    ```
+```bash
+TPM2 log:
+    Specification: 2.00
+    Platform class: PC Client
+    No vendor information provided
+TPM2 log entry 1:
+    PCR: 2
+    Event type: Action
+    Digests:
+         SHA1: f78a530fb5a70afcffdc86a98529abd24a90bac9
+    Event data: FMAP: FMAP
+TPM2 log entry 2:
+    PCR: 2
+    Event type: Action
+    Digests:
+         SHA1: 369155e6eab3b0a874140e591a4c0e992268b4b9
+    Event data: FMAP: BOOTBLOCK
+TPM2 log entry 3:
+    PCR: 2
+    Event type: Action
+    Digests:
+         SHA1: 5e785c080264aa6e169f70c80ac40b556066292b
+    Event data: FMAP: COREBOOT CBFS: fallback/romstage
+TPM2 log entry 4:
+    PCR: 2
+    Event type: Action
+    Digests:
+         SHA1: ba2a5af955811fbac58a5198545539596eb38c3e
+    Event data: FMAP: COREBOOT CBFS: fallback/ramstage
+TPM2 log entry 5:
+    PCR: 2
+    Event type: Action
+    Digests:
+         SHA1: ba35d4ce29d7b633b5644e2a3206c6069cf7f24d
+    Event data: FMAP: COREBOOT CBFS: fallback/payload
+TPM2 log entry 6:
+    PCR: 2
+    Event type: Action
+    Digests:
+         SHA1: 47b49026133377e05193f8440c9a7cad239e883c
+    Event data: FMAP: COREBOOT CBFS: 1-cpu.dtb
+TPM2 log entry 7:
+    PCR: 3
+    Event type: Action
+    Digests:
+         SHA256: 6e7b06693452d997ac534e823b1ea79e5bb8ed19ba8a7af878abf10199c3d515
+         SHA1: 6e7b06693452d997ac534e823b1ea79e5bb8ed19
+    Event data: VERSION
+TPM2 log entry 8:
+    PCR: 2
+    Event type: Action
+    Digests:
+         SHA256: de73053377e1ae5ba5d2b637a4f5bfaeb410137722f11ef135e7a1be524e3092
+         SHA1: de73053377e1ae5ba5d2b637a4f5bfaeb4101377
+    Event data: IMA_CATALOG
+TPM2 log entry 9:
+    PCR: 4
+    Event type: Action
+    Digests:
+         SHA256: ba427f9349b1f9e589f98909e26086b0cfd5ced78a7fbcb140a70a506c38a8e5
+         SHA1: ba427f9349b1f9e589f98909e26086b0cfd5ced7
+    Event data: BOOTKERNEL
+(...)
+```
 
 ## TPM002.001 Verify TPM version (Ubuntu 22.04)
 
@@ -313,12 +367,12 @@ Example output:
 SpecVersion=2.0
 ```
 
-## TPM002.003 Verify TPM version (Heads)
+## TPM002.003 Verify TPM version (firmware)
 
 **Test description**
 
 This test aims to verify that the TPM version is correctly recognized by the
-Heads.
+firmware.
 
 **Test configuration data**
 
@@ -332,11 +386,11 @@ Heads.
 **Test steps**
 
 1. Power on the DUT.
-1. Wait for the `Default boot menu` appears.
-1. Select the `Exit to recovery shell` option using the arrow keys and Enter.
+1. Boot into the BIOS.
+1. Enter the shell.
 1. Run the following command in the shell:
 
-    ```bash
+    ```powershell
     cbmem -L
     ```
 
@@ -350,41 +404,3 @@ Example output:
 TPM2 log:
     Specification: 2.00
 ```
-
-## TPM003.001 Reset TPM (Heads)
-
-**Test description**
-
-This test aims to verify that the `Reset TPM` option in the `Heads boot menu`
-is available and works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Wait for the `Default boot menu` appears.
-1. Select the `Continue to the main menu` option using the arrow keys and Enter.
-1. Select the `Options -->` option in the `Heads boot menu`.
-1. Select the `TPM/TOTP/HOTP Options -->` option in the `HEADS Options` submenu.
-1. Select the `Reset the TPM` option in the `TPM/TOTP/HOTP Options` submenu.
-1. Choose `<Yes>` in the displayed `Reset the TPM` window using the arrow keys
-   and Enter.
-1. Set the TPM owner password.
-1. Scan the QR code using a mobile application to add the new TOTP secret and
-   press Enter.
-1. Reboot the DUT.
-1. Wait for the `Default boot menu` appears.
-1. Select the `Continue to the main menu` option using the arrow keys and Enter.
-
-**Expected result**
-
-After selecting the `Continue to the main menu` option, should be prompted for
-the TPM owner password.
