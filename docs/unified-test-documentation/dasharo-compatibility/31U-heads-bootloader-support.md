@@ -633,7 +633,7 @@ This test aims to verify that the
 
 The `GPG Keyring` window should be empty.
 
-## TPM018.001 Reset TPM
+## HDS018.001 Reset TPM
 
 **Test description**
 
@@ -671,7 +671,7 @@ This test aims to verify that the `Reset TPM` option in the
 After selecting the `Continue to the main menu` option, should be prompted for
 the TPM owner password.
 
-## TPM019.001 Generate new TOTP/HOTP secret
+## HDS019.001 Generate new TOTP/HOTP secret
 
 **Test description**
 
