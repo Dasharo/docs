@@ -557,7 +557,7 @@ the `GPG Management Menu` is available and exports GPG keys correctly.
 
 This test aims to verify that the
 `Generate GPG keys manually on a USB security token` option in the
-`HEADS Options` submenu is available and works correctly.
+`GPG Management Menu` is available and works correctly.
 
 **Test configuration data**
 
@@ -632,3 +632,77 @@ This test aims to verify that the
 **Expected result**
 
 The `GPG Keyring` window should be empty.
+
+## TPM018.001 Reset TPM
+
+**Test description**
+
+This test aims to verify that the `Reset TPM` option in the
+`TPM/TOTP/HOTP Options` submenu is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `TPM/TOTP/HOTP Options -->` option in the `HEADS Options` submenu.
+1. Select the `Reset the TPM` option in the `TPM/TOTP/HOTP Options` submenu.
+1. Choose `<Yes>` in the displayed `Reset the TPM` window using the arrow keys
+   and Enter.
+1. Set the TPM owner password.
+1. Scan the QR code using a mobile application to add the new TOTP secret and
+   press Enter.
+1. Reboot the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+
+**Expected result**
+
+After selecting the `Continue to the main menu` option, should be prompted for
+the TPM owner password.
+
+## TPM019.001 Generate new TOTP/HOTP secret
+
+**Test description**
+
+This test aims to verify that the `Generate new TOTP/HOTP secret` option in the
+`TPM/TOTP/HOTP Options` submenu is available and works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+1. Select the `Options -->` option in the `Heads boot menu`.
+1. Select the `TPM/TOTP/HOTP Options -->` option in the `HEADS Options` submenu.
+1. Select the `Generate new TOTP/HOTP secret` option in the
+   `TPM/TOTP/HOTP Options` submenu.
+1. Scan the QR code using a mobile application to add the new TOTP secret and
+   press Enter.
+1. Reboot the DUT.
+1. Wait for the `Default boot menu` appears.
+1. Select the `Continue to the main menu` option using the arrow keys and Enter.
+
+**Expected result**
+
+After selecting the `Continue to the main menu` option, should be prompted for
+the TOTP password.
