@@ -5,7 +5,7 @@
 This document describes the hardware configuration used for validation of the
 coreboot port on the Protectli VP2410 firewall.
 
-## Protectli VP2410 Dasharo v1.0.15
+## Protectli VP2410
 
 | Component              | Description                                              |
 |------------------------|----------------------------------------------------------|
@@ -32,3 +32,5 @@ coreboot port on the Protectli VP2410 firewall.
 
 > Note, that in **RAM** section all used during verification procedure modules
 > have been listed. Device has only one RAM mounting slot.
+
+## Protectli VP2420
