@@ -1,4 +1,6 @@
-# Sonoff quick start guide
+# Sonoff documentation
+
+## Quick start guide
 
 The below documentation is based on the
 [EPSHome documentation](https://esphome.io/devices/sonoff_s20.html)
@@ -133,3 +135,26 @@ The below documentation is based on the
     > Note: The effective range for this device is only a few meters.
 
 1. Based on the minicom logs read the IP address assigned to the device.
+
+## Power supply controlling
+
+Power supply controlling (in this case: controlling the state of Sonoff)
+should be performed based on the `sonoff.sh` script implemented in `meta-rte`
+(OS image dedicated to the RTE platform).
+
+> Note, that before using the above-mentioned script, it should be modified and
+`SONOFF_IP` parameter should be set in accordance with obtained Sonoff IP address.
+
+To perform basic power operations use the below-described commands:
+
+1. Turn on the power supply:
+
+    ```bash
+    ./sonoff on
+    ```
+
+1. Turn off the power supply:
+
+    ```bash
+    ./sonoff on
+    ```

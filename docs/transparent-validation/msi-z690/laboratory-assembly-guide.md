@@ -38,8 +38,8 @@ to the device.
 ### Sonoff
 
 Sonoff should be prepared in accordance with
-[Quick start guide](../sonoff/quick-start-guide.md) documentation dedicated to
-the device.
+[Quick start guide](../sonoff/quick-start-guide.md#quick-start-guide)
+documentation dedicated to the device.
 
 ## Connections
 
@@ -148,22 +148,7 @@ Power supply controlling (in this case: controlling the state of Sonoff)
 should be performed based on the `sonoff.sh` script implemented in `meta-rte`
 (OS image dedicated to the RTE platform).
 
-> Note, that before using the above-mentioned script, it should be modified and
-`SONOFF_IP` parameter should be set in accordance with obtained Sonoff IP address.
-
-To perform basic power operations use the below-described commands:
-
-1. Turn on the power supply:
-
-    ```bash
-    ./sonoff on
-    ```
-
-1. Turn off the power supply:
-
-    ```bash
-    ./sonoff on
-    ```
+[Sonoff power supply controlling](../sonoff/quick-start-guide.md#power-supply-controlling)
 
 ### Basic power operations
 
