@@ -34,3 +34,19 @@ coreboot port on the Protectli VP2410 firewall.
 > have been listed. Device has only one RAM mounting slot.
 
 ## Protectli VP2420
+
+| Component              | Description                                              |
+|------------------------|----------------------------------------------------------|
+| **CPU**                | Intel(R) Celeron(R) J6412 @ 2.00GHz                      |
+| **SSD**                | SSD Samsung 860 EVO M.2 NZ-N6E250 250GB                  |
+| **RAM**                | Kingston KVR29S21S6/4                                    |
+| **Wireless card**      | Intel Wi-Fi 6 AX200                                      |
+| **Display**            | HDMI 1920x1080p, DP 1920x1080p                           |
+| **Ethernet**           | 4x intel i225 (on-board)                                 |
+| **Attached devices**   | 1. SanDisk USB 3.2Gen1 16 GB                             |
+| **USB Keyboard**       | DELL KB216                                               |
+| **MMC drive**          | SAMSUNG 8GTF4R (on-board)                                |
+| **Power supply**       | Channel Well Technology 12V, 5.0A 60W                    |
+
+> Note, that in **RAM** section all used during verification procedure modules
+> have been listed. Device has only one RAM mounting slot.
