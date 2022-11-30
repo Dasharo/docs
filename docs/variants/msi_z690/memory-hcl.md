@@ -112,6 +112,7 @@ Legend:
 |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
 | Kingston    | [KF556C40BB/8][6] |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
 | Crucial     | [CT8G48C40U5.M4A1/8][7] |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
+| ADATA       | [AD5U48008G-S][9] |8GB | 4800MT/s 40-40-40 1.1V | &#10004;/&#10004;/&#10004; |
 
 [1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
 [2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
@@ -121,3 +122,4 @@ Legend:
 [6]: https://www.kingston.com/memory/gaming/kingston-fury-beast-ddr5-memory
 [7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
 [8]: https://www.kingston.com/datasheets/HX426C16FRK4_64.pdf
+[9]: https://www.adata.com/us/consumer/dram-module-ddr5-4800-u-dimm
