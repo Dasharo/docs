@@ -72,3 +72,27 @@ common preparation of RTE without listed functions.
 1. Login into the device by using the default credentials:
     - Login: `root`
     - Password: `meta-rte`
+
+## Basic power operations
+
+Basic power operations should be performed based on the `rte_ctrl` script
+implemented in `meta-rte` (OS image dedicated to the RTE platform). To perform
+basic power operations use the below-described commands:
+
+1. Turn on the platform:
+
+    ```bash
+    rte_ctrl pon
+    ```
+
+1. Turn off the platform:
+
+    ```bash
+    rte_ctrl poff
+    ```
+
+1. Reset the platform:
+
+    ```bash
+    rte_ctrl reset
+    ```

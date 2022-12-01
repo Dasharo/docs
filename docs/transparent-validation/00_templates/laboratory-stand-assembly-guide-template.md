@@ -105,22 +105,7 @@ Power supply controlling (in this case: controlling the state of Sonoff)
 should be performed based on the `sonoff.sh` script implemented in `meta-rte`
 (OS image dedicated to the RTE platform).
 
-> Note, that before using the above-mentioned script, it should be modified and
-`SONOFF_IP` parameter should be set in accordance with obtained Sonoff IP address.
-
-To perform basic power operations use the below-described commands:
-
-1. Turn on the power supply:
-
-    ```bash
-    ./sonoff on
-    ```
-
-1. Turn off the power supply:
-
-    ```bash
-    ./sonoff on
-    ```
+[Sonoff power supply controlling](../sonoff/quick-start-guide.md#power-supply-controlling).
 
 ### [EG-for-RTE-ctrl]Basic power operations
 
@@ -128,23 +113,7 @@ Basic power operations should be performed based on the `rte_ctrl` script
 implemented in `meta-rte` (OS image dedicated to the RTE platform). To perform
 basic power operations use the below-described commands:
 
-1. Turn on the platform:
-
-    ```bash
-    rte_ctrl pon
-    ```
-
-1. Turn off the platform:
-
-    ```bash
-    rte_ctrl poff
-    ```
-
-1. Reset the platform:
-
-    ```bash
-    rte_ctrl reset
-    ```
+[RTE Basic power operations](../rte/v1.1.0/quick-start-guide.md#basic-power-operations).
 
 > Note, that in order for the above commands to work properly, the platform
 should be powered up: both Sonoff and the power supply must be turned on.
