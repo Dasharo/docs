@@ -143,12 +143,25 @@ nav:
           - 'GPU Compatibility': variants/msi_z690/gpu-hcl.md
           - 'Community Test Results': variants/msi_z690/community-test-results.md
           - 'FAQ': variants/msi_z690/faq.md
+      - 'Samsung Chromebook 3':
+          - 'Overview': variants/samsung_chromebook_3/overview.md
+          - 'Releases': variants/samsung_chromebook_3/releases.md
+          - 'Building manual': variants/samsung_chromebook_3/building-manual.md
+          - 'Initial deployment': variants/samsung_chromebook_3/initial-deployment.md
+          - 'Firmware update': variants/samsung_chromebook_3/firmware-update.md
+          - 'Recovery': variants/samsung_chromebook_3/recovery.md
+          - 'Hardware Configuration Matrix': variants/samsung_chromebook_3/hardware-matrix.md
+          - 'Test matrix': variants/samsung_chromebook_3/test-matrix.md
+          - 'Openness score': variants/samsung_chromebook_3/openness-score.md
+          - 'Development': variants/samsung_chromebook_3/development.md
+          - 'FAQ': variants/samsung_chromebook_3/faq.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
       - 'Logo customization': guides/logo-customization.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
+      - 'Disposable Chromebook': guides/disposable-chromebook.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
