@@ -36,7 +36,9 @@ subjected before the release of the new binary.
 | 24.  | [Network boot][PXE]                                    | PXE           | PXE007.001                           |
 | 25.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
 | 26.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
+| 27.  | [QubesOS support][QOS]                                 | QOS           | All                                  |
 
+[QOS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-stable-support.md
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
