@@ -15,22 +15,18 @@ coreboot port on the NovaCustom NV4X laptop.
 |                                | Slot 2: KVR29S21S6/8                             |
 | **SSD**                        | Samsung 980 PRO NVMe 500 GB                      |
 | **Flash memory**               | GigaDevice 25B127DSIG 16 MB                      |
+| **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
+| **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
+| **Wireless card**              | Intel Wi-Fi 6 AX201                              |
+| **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
 |                                | 2. Internal keyboard with LED backlight          |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | 1. SanDisk Ultra USB 3.0 64 GB                   |
-|                                | 2. SanDisk Ultra Flair USB 3.0 16 GB             |
-|                                | 3. Kingston DataTraveler 3.1Gen1 16 GB           |
-|                                | 4. SanDisk Ultra microSD HC I 16 GB + SD Adapter |
-|                                | 5. Logitech, Inc. Keyboard K120                  |
-|                                | 6. Pi-KVM virtual mouse and keyboard             |
-|                                | 7. Expansion Dock Type-C                         |
-| **Power Supply**               | Chicony 65 W                                     |
-| **Power Control**              | N/A                                              |
-| **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
+| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
 
 ## NV41MB
 
@@ -43,19 +39,15 @@ coreboot port on the NovaCustom NV4X laptop.
 |                                | Slot 2: KVR29S21D8/32                            |
 | **SSD**                        | Samsung 980 PRO NVMe 250 GB                      |
 | **Flash memory**               | GigaDevice 25B127DSIG 16 MB                      |
+| **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
+| **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
+| **Wireless card**              | Intel Wi-Fi 6 AX200                              |
+| **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
 |                                | 2. Internal keyboard with LED backlight          |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | 1. SanDisk Ultra USB 3.0 64 GB                   |
-|                                | 2. SanDisk Ultra Flair USB 3.0 16 GB             |
-|                                | 3. Kingston DataTraveler 3.1Gen1 16 GB           |
-|                                | 4. SanDisk Ultra microSD HC I 16 GB + SD Adapter |
-|                                | 5. Logitech, Inc. Keyboard K120                  |
-|                                | 6. Pi-KVM virtual mouse and keyboard             |
-|                                | 7. Expansion Dock Type-C                         |
-| **Power Supply**               | Chicony 90 W                                     |
-| **Power Control**              | N/A                                              |
-| **Remote Testing Environment** | OpenSSH_8.2p1 OpenSSL 1.1.1f                     |
+| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |

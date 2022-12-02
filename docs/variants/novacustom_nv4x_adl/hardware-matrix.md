@@ -25,5 +25,5 @@ coreboot port on the NovaCustom NV4X laptop.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Expansion Dock Type-C                            |
+| **Attached devices**           | Wavlink 100W PD Pro docking station              |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
