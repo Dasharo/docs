@@ -39,9 +39,8 @@ subjected from before the release of the new binary.
 | 26.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS006.001, DTS007.001               |
 | 27.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
 | 28.  | [Logo customization functionality][LCM]           | LCM           | All                                  |
-| 29.  | [QubesOS support][QOS]                            | QOS           | All                                  |
+| 29.  | [QubesOS support][QOS]                            | QBS           | All                                  |
 
-[QOS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-stable-support.md
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
@@ -70,6 +69,7 @@ subjected from before the release of the new binary.
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
+[QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-stable-support.md
 
 ### Module: Dasharo security
 
