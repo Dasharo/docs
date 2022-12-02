@@ -115,7 +115,7 @@ nav:
           - 'Overview': variants/protectli_vp24xx/overview.md
           - 'Releases': variants/protectli_vp24xx/releases.md
           - 'Building manual': variants/protectli_vp24xx/building-manual.md
-          - 'Installation manual': variants/protectli_vp24xx/installation-manual.md
+          - 'Initial deployment': variants/protectli_vp24xx/initial-deployment.md
           - 'Hardware Configuration Matrix': variants/protectli_vp24xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp24xx/test-matrix.md
       - 'Protectli VP46xx':
