@@ -56,7 +56,6 @@ will be shown properly.
     flashrom -p internal -w [path-to-binary] --ifd -i bios
     ```
 
->>>>>>> f42198d80ddf (novacustom rework)
 1. Reboot DUT.
 
 **Expected result**
