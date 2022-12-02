@@ -39,6 +39,7 @@ subjected from before the release of the new binary.
 | 28.  | [Logo customization functionality][LCM]           | LCM           | LCM001.001                           |
 | 29.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
 | 30.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
+| 31.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -71,6 +72,7 @@ subjected from before the release of the new binary.
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 [CBO]: ../../unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
+[QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
 
 ## Module: Dasharo security
 

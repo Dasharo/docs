@@ -36,6 +36,7 @@ subjected before the release of the new binary.
 | 24.  | [Network boot][PXE]                                    | PXE           | PXE007.001                           |
 | 25.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
 | 26.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
+| 27.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -64,6 +65,7 @@ subjected before the release of the new binary.
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
+[QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
 
 ## Module: Dasharo security
 
