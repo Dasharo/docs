@@ -111,13 +111,13 @@ nav:
           - 'Installation manual': variants/protectli_fw6/installation-manual.md
           - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
           - 'Test matrix': variants/protectli_fw6/test-matrix.md
-      - 'Protectli VP2410':
-          - 'Overview': variants/protectli_vp2410/overview.md
-          - 'Releases': variants/protectli_vp2410/releases.md
-          - 'Building manual': variants/protectli_vp2410/building-manual.md
-          - 'Installation manual': variants/protectli_vp2410/installation-manual.md
-          - 'Hardware Configuration Matrix': variants/protectli_vp2410/hardware-matrix.md
-          - 'Test matrix': variants/protectli_vp2410/test-matrix.md
+      - 'Protectli VP24xx':
+          - 'Overview': variants/protectli_vp24xx/overview.md
+          - 'Releases': variants/protectli_vp24xx/releases.md
+          - 'Building manual': variants/protectli_vp24xx/building-manual.md
+          - 'Initial deployment': variants/protectli_vp24xx/initial-deployment.md
+          - 'Hardware Configuration Matrix': variants/protectli_vp24xx/hardware-matrix.md
+          - 'Test matrix': variants/protectli_vp24xx/test-matrix.md
       - 'Protectli VP46xx':
           - 'Overview': variants/protectli_vp46xx/overview.md
           - 'Releases': variants/protectli_vp46xx/releases.md

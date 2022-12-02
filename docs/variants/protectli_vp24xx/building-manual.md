@@ -1,6 +1,18 @@
 # Building manual
 
-To build Dasharo firmware image, follow the steps below:
+## Intro
+
+This document describes the procedure for compiling coreboot for Protectli
+VP2410 and VP2420.
+
+## Requirements
+
+- Docker
+    + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+    + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
+- Git
+
+## Build Dasharo BIOS firmware
 
 1. Clone the coreboot repository:
 
@@ -21,3 +33,5 @@ To build Dasharo firmware image, follow the steps below:
     # you will need to put the ZIP with blobs and FSP at this point
     ./build.sh vp2410
     ```
+
+The resulting coreboot image will be placed in `build/coreboot.rom`.

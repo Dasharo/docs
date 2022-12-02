@@ -1,13 +1,13 @@
 # Release Notes
 
-Following Release Notes describe status of Open Source Firmware development for
-Protectli VP2410
+Following Release Notes describe status of open-source firmware development for
+Protectli VP24xx family.
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
-[Subscribe to Protectli VP2410 Dasharo Release Newsletter]
+[Subscribe to Protectli VP24xx Dasharo Release Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
