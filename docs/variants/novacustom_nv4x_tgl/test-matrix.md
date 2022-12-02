@@ -69,7 +69,7 @@ subjected from before the release of the new binary.
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
-[QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-stable-support.md
+[QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
 
 ### Module: Dasharo security
 
