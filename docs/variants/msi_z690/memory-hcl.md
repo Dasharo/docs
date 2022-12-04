@@ -103,6 +103,7 @@ Legend:
 | PNY      | [8GBF1X08QFHH38-135-K-HXR][4] |8GB | JEDEC: DDR4-2133 CL15-15-15 1.2V | -/&#10004;&sup1;/&#10004; |
 | Kingston | [KF436C18BBK2/64][5] |32GB | JEDEC: DDR4-2400 CL17-17-17-39 1.2V | &#10004;/&#10004;/- |
 | Kingston | [KHX2666C16/16G][8] |16GB | JEDEC: DDR4-2133 CL16-18-18-39 1.2V | &#10004;/&#10004;/&#10004; |
+| OLOy     | [MD4U323216DJDA][10] |32GB| JEDEC: DDR4-2133 CL15-15-15-36 1.2V | &#10004;/&#10004;/&#10004; |
 
 1) Tested in 2x2 mixed configuration
 
@@ -123,3 +124,4 @@ Legend:
 [7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
 [8]: https://www.kingston.com/datasheets/HX426C16FRK4_64.pdf
 [9]: https://www.adata.com/us/consumer/dram-module-ddr5-4800-u-dimm
+[10]: https://www.amazon.com/OLOy-Memory-288-Pin-Desktop-MD4U323216DJDA/dp/B0836NZHWR
