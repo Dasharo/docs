@@ -5,9 +5,9 @@
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary.
 
-## NV41MB
+## NV41MB test matrix
 
-## Module: Dasharo compatibility
+### Module: Dasharo compatibility
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
@@ -79,7 +79,7 @@ subjected from before the release of the new binary.
 [FED]: ../../unified-test-documentation/dasharo-compatibility/310-fedora-support.md
 [NVI]: ../../unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
 
-## Module: Dasharo security
+### Module: Dasharo security
 
 | No.  | Supported test suite                       | Test suite ID | Supported test cases                 |
 |:-----|:-------------------------------------------|:-------------:|:-------------------------------------|
@@ -93,7 +93,7 @@ subjected from before the release of the new binary.
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 
-## Module: Dasharo performance
+### Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
@@ -105,9 +105,9 @@ subjected from before the release of the new binary.
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
 
-## NV41MZ
+## NV41MZ test matrix
 
-## Module: Dasharo compatibility
+### Module: Dasharo compatibility
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
@@ -144,7 +144,7 @@ subjected from before the release of the new binary.
 | 31.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 | 32.  | [Fedora support][FED]                             | FED           | All                                  |
 
-## Module: Dasharo security
+### Module: Dasharo security
 
 | No.  | Supported test suite                       | Test suite ID | Supported test cases                 |
 |:-----|:-------------------------------------------|:-------------:|:-------------------------------------|
@@ -153,7 +153,7 @@ subjected from before the release of the new binary.
 | 3.   | [Measured Boot support][MBO]               | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                 | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
 
-## Module: Dasharo performance
+### Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
