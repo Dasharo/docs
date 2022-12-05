@@ -37,6 +37,7 @@ subjected before the release of the new binary.
 | 25.  | [Logo customization functionality][LCM]                | LCM           | All                                  |
 | 26.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
 | 27.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
+| 28.  | [Fedora support][FED]                                  | FED           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -66,6 +67,7 @@ subjected before the release of the new binary.
 [FLB]: ../../unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
 [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 [QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
+[FED]: ../../unified-test-documentation/dasharo-compatibility/310-fedora-support.md
 
 ## Module: Dasharo security
 
