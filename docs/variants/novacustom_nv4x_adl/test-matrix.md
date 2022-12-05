@@ -59,7 +59,6 @@ subjected from before the release of the new binary.
 [WLE]: ../../unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
 [CAM]: ../../unified-test-documentation/dasharo-compatibility/317-usb-camera.md
-[NVI]: ../../unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
 [FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-control.md
 [DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md
 [DUD]: ../../unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md

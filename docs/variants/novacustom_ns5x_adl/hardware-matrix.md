@@ -25,7 +25,7 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Expansion Dock Type-C                            |
+| **Attached devices**           | Wavlink 100W PD Pro docking station              |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
 
 ## NS7xPU
@@ -48,5 +48,5 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Expansion Dock Type-C                            |
+| **Attached devices**           | Wavlink 100W PD Pro docking station              |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
