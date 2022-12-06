@@ -10,7 +10,7 @@ in subscription model.
 ## Why 3mdeb created Dasharo?
 
 From our experience to be considered as serious player on firmware market there
-is need for recognized brand with proved history of successful integrations. We
+is a need for a recognized brand with a proved history of successful integrations. We
 were asked about that multiple times, by various parties over years of
 providing services related to open-source firmware. Finally we decided we have
 to make a move and create marketing vehicle under which we can deliver added
