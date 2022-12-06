@@ -103,7 +103,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-4. If using more than one display, switch the display mode between `Mirror` and
+1. If using more than one display, switch the display mode between `Mirror` and
    `Join Displays`.
 
 **Expected result**
