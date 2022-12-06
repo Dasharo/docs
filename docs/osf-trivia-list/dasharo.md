@@ -127,7 +127,7 @@ guarantees around release quality and do not provide binary distribution (for
 reference please check [coreboot project scope][coreboot-scope], we provide
 those in scope of validation we perform.
 * We provide seamless deployment - our documentation provide information about
-initial deployment, updates and recovery procedures. We working on commercial
+initial deployment, updates and recovery procedures. We working on a
 product called [Dasharo Tools Suite OS][dtsos], which will largely improve firmware
 deployment, hardware compatibility reporting and  binary blobs transmission
 wherever it is necessary, as well as recovery.
