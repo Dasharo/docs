@@ -88,7 +88,7 @@ which should be used consciously to ensure privacy and liberty.
 
 Dasharo is 3mdeb firmware distribution and all its components are open-source.
 We provide releases in binary form. As you know in most cases on x86 for
-firmware do be useful it has to cooperate with closed blobs. In all binary
+firmware to be useful it has to cooperate with closed blobs. In all binary
 releases we made we provide information where all components coming from.
 
 Dasharo works without blobs on platforms that allow that. When we saying
