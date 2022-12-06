@@ -49,8 +49,8 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 - [coreboot based on c6ee1509da revision ed9f6fe0](https://github.com/Dasharo/coreboot/tree/ed9f6fe0)
 - [edk2 based on 7f90b9cd revision e31b7a71](https://github.com/Dasharo/edk2/tree/e31b7a71)
 - [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
-- VP4670: [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake1)
-- VP4630 and VP4650: [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake1)
+- VP4670: [Cometlake1 FSP 9.0.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake1)
+- VP4630 and VP4650: [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake2)
 - Intel i225 EFI driver version 0.10.4,
   SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
 - Management Engine: Custom image based on ME 14.0.47.1558,
@@ -100,7 +100,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 - [coreboot based on 4.16 revision d662831d](https://github.com/Dasharo/coreboot/tree/d662831d)
 - [edk2 based on 7f90b9cd revision 576aa6a4](https://github.com/Dasharo/edk2/tree/576aa6a4)
 - [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
-- [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake1)
+- [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake2)
 - Intel i225 EFI driver version 0.10.4,
   SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
 - Management Engine: Custom image based on ME 14.0.47.1558,
@@ -147,7 +147,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 - [coreboot based on 4.16 revision dfaaf44d](https://github.com/Dasharo/coreboot/tree/dfaaf44d)
 - [edk2 based on 7f90b9cd revision 5345a611](https://github.com/Dasharo/edk2/tree/5345a611)
 - [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
-- [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake1)
+- [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake2)
 - Intel i225 EFI driver version 0.10.4,
   SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
 - Management Engine: Custom image based on ME 14.0.47.1558,
