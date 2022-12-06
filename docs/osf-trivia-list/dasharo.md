@@ -204,7 +204,7 @@ Because we are fully responsible for hardware that we enable in open-source
 firmware ecosystem our releases have to pass Dasharo Certification criteria.
 Whole effort is relatively expensive and in most cases not feasible for
 enabling one platform. That's why in most cases our customers are OEM/ODM,
-angel investors, or commuinities which want to enable reasonable quantities of
+angel investors, or communities which want to enable reasonable quantities of
 hardware (>200pcs).
 
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
