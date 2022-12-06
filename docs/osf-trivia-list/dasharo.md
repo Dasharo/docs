@@ -143,8 +143,8 @@ verification where firmware coming from.
 
 ## What are the differences between the official coreboot repository and the Dasharo repository ?
 
-The difference is support for [compatible
-hardware](https://docs.dasharo.com/#compatible-hardware). Dasharo repository
+The difference is support for [compatible hardware](https://docs.dasharo.com/#compatible-hardware). 
+Dasharo repository...
 contain release tags which are associated with Dasharo Certification Program
 providing certain quality criteria including test results. We always trying to
 minimize delta, but sometimes it can be up to 5k SLOC (or more I guess e.g.
