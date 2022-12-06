@@ -63,7 +63,12 @@ for all platforms of the VP46XX family.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | VBO006.002, VBO007.002, VBO008.001   |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+| 5.   | [ME neuter support][MNE]                          | MNE           | MNE003.001                           |
+| 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+
+> Note: in Dasharo compatible with Protectli VP46xx ME neuter support relies
+on the default blocking of this functionality - no additional option for ME
+neuter setting is available in the Setup Menu.
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
