@@ -41,6 +41,7 @@ subjected from before the release of the new binary.
 | 30.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
 | 31.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 | 32.  | [Fedora support][FED]                             | FED           | All                                  |
+| 33.  | [Docking station Display ports][DDP]              | DDP           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -74,6 +75,7 @@ subjected from before the release of the new binary.
 [CBO]: ../../unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
 [QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
 [FED]: ../../unified-test-documentation/dasharo-compatibility/310-fedora-support.md
+[DDP]: ../../unified-test-documentation/dasharo-compatibility/330-docking-station-display-ports.md
 
 ## Module: Dasharo security
 
