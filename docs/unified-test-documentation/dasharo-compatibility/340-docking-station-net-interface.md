@@ -58,6 +58,14 @@ Ethernet port can be obtained on Ubuntu 22.04.
     ...
     ```
 
+1. Log should not contain phrase information that host is unreachable.
+
+    Failed ping for Ubuntu 22.04:
+
+    ```bash
+    ping: connect: Network is unreachable
+    ```
+
 ## DET001.001 Ethernet connection (Windows 11)
 
 **Test description**
@@ -99,4 +107,12 @@ Ethernet port can be obtained on Windows 11.
     Reply from 178.32.205.96: bytes=32 time=50ms TTL=50
     Reply from 178.32.205.96: bytes=32 time=47ms TTL=50
     Reply from 178.32.205.96: bytes=32 time=46ms TTL=50
+    ```
+
+1. Log should not contain phrase information that host is unreachable.
+
+    Failed ping for Windows 11:
+
+    ```powershell
+    Ping request could not find host 3mdeb.com. Please check the name and try again.
     ```
