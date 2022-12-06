@@ -134,7 +134,7 @@ wherever it is necessary, as well as recovery.
 * Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and enable
 customers and community platforms, so they can get seamless firmware update in
 Linux.
-* Support  - Dasharo team is paid to provide support in community through
+* Support - Dasharo team is paid to provide support in community through
 [Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
 commercial products related to support to make business feasible, but some
 level of support always would be available to community.
