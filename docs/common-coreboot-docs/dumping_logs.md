@@ -7,7 +7,7 @@ a running system.
 
 ## System information
 
-One may use [Dasharo Tools Suite HCL report](/common-coreboot-docs/dasharo_tools_suite/#dasharo-hcl-report)
+One may use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation#hcl-report)
 or [fwdump-docker image](https://github.com/3mdeb/fwdump-docker) to
 gather all the hardware configuration information from a running system. The
 usage of the tools should result in an archive containing various logs from the
