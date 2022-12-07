@@ -119,7 +119,7 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Proceed with the
-    [Requirements for DTS](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#requirements).
+    [Requirements for DTS](../../../dasharo-tools-suite/documentation#running).
 
 **Test steps**
 

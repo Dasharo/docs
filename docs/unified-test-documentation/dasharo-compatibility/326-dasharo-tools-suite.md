@@ -8,9 +8,9 @@
     [Generic test setup: firmware](../../generic-test-setup/#firmware).
 1. Wired network connection.
 1. Disable Secure Boot.
-1. Prepare the [bootable USB stick](../../../common-coreboot-docs/dasharo_tools_suite/#bootable-usb-stick)
+1. Prepare the [bootable USB stick](../../../dasharo-tools-suite/documentation#bootable-usb-stick)
 1. Make yourself familiar with
-    [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
+    [Dasharo Tools Suite](../../../dasharo-tools-suite/overview).
 
 ## DTS001.001 Booting DTS from USB works correctly
 
@@ -325,13 +325,13 @@ firmware by using the built-in script in DTS.
 1. Select the USB stick with DTS using the arrow keys and press `Enter`.
 1. Wait for `Enter an option:`.
 1. Proceed with
-    [Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition).
+    [Dasharo EC Transition](../../../dasharo-tools-suite/documentation#ec-transition).
 
 **Expected result**
 
 1. After the flashing procedure itself, the DUT should be able to boot.
 1. The EC firmware version, after checking the method described in the
-    above-mentioned [documentation](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-transition),
+    above-mentioned [documentation](../../../dasharo-tools-suite/documentation#ec-transition),
     should correspond to the latest version.
 
 ## DTS009.001 Update device EC firmware by using DTS works correctly
@@ -359,11 +359,11 @@ firmware by using system76_ectool in DTS.
 1. Wait for `Enter an option:`.
 1. Type in `9` and press `Enter`.
 1. Proceed with
-    [Dasharo EC Transition](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-update).
+    [Dasharo EC Update](../../../dasharo-tools-suite/documentation#ec-update).
 
 **Expected result**
 
 1. After the updating firmware procedure itself, the DUT should be able to boot.
 1. The EC firmware version, after checking the method described in the
-    above-mentioned [documentation](../../../common-coreboot-docs/dasharo_tools_suite/#dasharo-ec-update),
+    above-mentioned [documentation](../../../dasharo-tools-suite/documentation#ec-update),
     should correspond to the binary version used.
