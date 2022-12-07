@@ -66,7 +66,7 @@ Ethernet port can be obtained on Ubuntu 22.04.
     ping: connect: Network is unreachable
     ```
 
-## DET001.001 Ethernet connection (Windows 11)
+## DET001.002 Ethernet connection (Windows 11)
 
 **Test description**
 
