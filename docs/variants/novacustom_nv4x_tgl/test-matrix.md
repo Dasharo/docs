@@ -34,17 +34,18 @@ subjected from before the release of the new binary.
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
 | 22.  | [Docking station Audio][DAU]                      | DAU           | All                                  |
 | 23.  | [Docking station USB-C][DUC]                      | DUC           | All                                  |
-| 24.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
-| 25.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS006.001, DTS007.001               |
-| 26.  | [CPU status][CPU]                                 | CPU           | All                                  |
-| 27.  | [Embedded controller flashing][ECF]               | ECF           | All                                  |
-| 28.  | [Logo customization functionality][LCM]           | LCM           | LCM001.001                           |
-| 29.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
-| 30.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
-| 31.  | [QubesOS support][QBS]                            | QBS           | All                                  |
-| 32.  | [NVIDIA Graphics support][NVI]                    | NVI           | All                                  |
-| 33.  | [Fedora support][FED]                             | FED           | All                                  |
-| 34.  | [Docking station Display ports][DDP]              | DDP           | All                                  |
+| 24.  | [Docking station Display ports][DDP]              | DDP           | All                                  |
+| 25.  | [Docking station NET interface][DET]              | DET           | All                                  |
+| 26.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
+| 27.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS006.001, DTS007.001               |
+| 28.  | [CPU status][CPU]                                 | CPU           | All                                  |
+| 29.  | [Embedded controller flashing][ECF]               | ECF           | All                                  |
+| 30.  | [Logo customization functionality][LCM]           | LCM           | LCM001.001                           |
+| 31.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
+| 32.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
+| 33.  | [QubesOS support][QBS]                            | QBS           | All                                  |
+| 34.  | [NVIDIA Graphics support][NVI]                    | NVI           | All                                  |
+| 35.  | [Fedora support][FED]                             | FED           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -80,6 +81,7 @@ subjected from before the release of the new binary.
 [FED]: ../../unified-test-documentation/dasharo-compatibility/310-fedora-support.md
 [NVI]: ../../unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
 [DDP]: ../../unified-test-documentation/dasharo-compatibility/330-docking-station-display-ports.md
+[DET]: ../../unified-test-documentation/dasharo-compatibility/340-docking-station-net-interface.md
 
 ### Module: Dasharo security
 
@@ -136,16 +138,17 @@ subjected from before the release of the new binary.
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
 | 22.  | [Docking station Audio][DAU]                      | DAU           | All                                  |
 | 23.  | [Docking station USB-C][DUC]                      | DUC           | All                                  |
-| 24.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
-| 25.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS006.001, DTS007.001               |
-| 26.  | [CPU status][CPU]                                 | CPU           | All                                  |
-| 27.  | [Embedded controller flashing][ECF]               | ECF           | All                                  |
-| 28.  | [Logo customization functionality][LCM]           | LCM           | LCM001.001                           |
-| 29.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
-| 30.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
-| 31.  | [QubesOS support][QBS]                            | QBS           | All                                  |
-| 32.  | [Fedora support][FED]                             | FED           | All                                  |
-| 33.  | [Docking station Display ports][DDP]              | DDP           | All                                  |
+| 24.  | [Docking station Display ports][DDP]              | DDP           | All                                  |
+| 25.  | [Docking station NET interface][DET]              | DET           | All                                  |
+| 26.  | [Firmware update using fwupd][FFW]                | FFW           | All                                  |
+| 27.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS006.001, DTS007.001               |
+| 28.  | [CPU status][CPU]                                 | CPU           | All                                  |
+| 29.  | [Embedded controller flashing][ECF]               | ECF           | All                                  |
+| 30.  | [Logo customization functionality][LCM]           | LCM           | LCM001.001                           |
+| 31.  | [Firmware locally building and flashing][FLB]     | FLB           | All                                  |
+| 32.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
+| 33.  | [QubesOS support][QBS]                            | QBS           | All                                  |
+| 34.  | [Fedora support][FED]                             | FED           | All                                  |
 
 ### Module: Dasharo security
 
