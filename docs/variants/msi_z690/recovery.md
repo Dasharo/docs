@@ -209,7 +209,7 @@ provides the system UUID in the SMBIOS system information structure.
 
 The problem with UUID is that it cannot be recovered if the backup binary or
 SMBIOS logs are lost. You can backup the SMBIOS information with our
-[Dasharo Tools Suite bootable stick](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/#bootable-usb-stick).
+[Dasharo Tools Suite bootable stick](../../../dasharo-tools-suite/documentation#bootable-usb-stick).
 The `dmidecode.log` will have all the necessary information. Things we know
 about MSI system UUID:
 

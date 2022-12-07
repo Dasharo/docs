@@ -138,7 +138,7 @@ tools that can simplify the operation for the user -->
 It is always a good idea to backup the original BIOS of your hardware, before
 switching to open-source firmware.
 
-* Boot [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite#bootable-usb-stick)
+* Boot [Dasharo Tools Suite](../../../dasharo-tools-suite/documentation#bootable-usb-stick)
 * Choose option 9) Shell.
 * Read content of SPI NOR flash:
 
