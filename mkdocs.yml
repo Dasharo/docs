@@ -286,7 +286,7 @@ nav:
               - 'Docking station audio': unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
               - 'Docking station USB-C': unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
               - 'Docking station Display ports': unified-test-documentation/dasharo-compatibility/330-docking-station-display-ports.md
-              - 'Docking station NET inteface': unified-test-documentation/dasharo-compatibility/340-docking-station-net-interface.md
+              - 'Docking station NET interface': unified-test-documentation/dasharo-compatibility/340-docking-station-net-interface.md
               - 'Logo customization': unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
               - 'BIOS Setup password': unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
           - 'Dasharo security':
