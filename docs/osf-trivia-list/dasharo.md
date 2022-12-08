@@ -3,9 +3,26 @@
 Dasharo is registered trademark and product developed by
 [3mdeb](https://3mdeb.com).
 
-Dasharo is open-source firmware distribution with optional features, like
-seamless initial deployment, firmware update and additional security, available
-in subscription model.
+
+Dasharo is open-source firmware distribution focusing on [clean and simple code](),
+[long-term maintenance](), [transparent validation](), [privacy-respecting
+implementation](), [liberty for the owners](), and [trustworthiness for all]().
+
+Dasharo consists of [productized services](), set of [open-source
+repositories](), and [quality control]() which help to provide scalable,
+modular, easy to combine open-source BIOS, UEFI, and firmware solutions. It
+offers the components that are needed to develop and maintain a high quality,
+and modular firmware, for the stability and security of your platform.
+
+Dasharo provide optional features in subscription model called [Supporters
+Entrance](). 
+
+<!--
+
+productized services:
+- custom development and engineering services
+- trainings through PET and OST2
+-->
 
 ## Why 3mdeb created Dasharo?
 
@@ -114,32 +131,46 @@ not enough in most cases for booting modern computer.
 
 ## What value Dasharo provide in comparison to coreboot?
 
-* Dasharo is open-source firmware distribution based on coreboot and other
-open-source firmware frameworks, you can think about Dasharo and coreboot
-relation in the same way as you think about Debian/Ubuntu/RedHat and Linux.
+* Dasharo is open-source firmware distribution based on
+  [coreboot](https://coreboot.org) and other open-source firmware frameworks
+  (e.g. [Tianocore EDKII](https://github.com/tianocore/edk2)), you can think
+  about Dasharo and coreboot relation in the same way as you think about
+  Debian/Ubuntu/RedHat and Linux. That means it can provide better
+  cost-effectiveness, security, transparency and customizability than
+  proprietary alternative.
+* There are six characterestics of Dasharo:
+  * [clean and simple code](),
+  * [long-term maintenance](#dasharo-long-term-maintenance), 
+  * [transparent validation](), 
+  * [privacy-respecting implementation](), 
+  * [liberty for the owners](),
+  * [trustworthiness for all]().
+
+### Dasharo Long Term Maintenance
+
 * We provide long term maintenance - coreboot community for various reasons, do
-not merge some patches, because understaffing, lack of reviewer some changes
-have long way to upstream, we maintain those patches and make them work
-before those will go upstream, if ever, we are committed to maintain platforms
-which are moved to branch in coreboot.
+  not merge some patches, because understaffing, lack of reviewer some changes
+  have long way to upstream, we maintain those patches and make them work
+  before those will go upstream, if ever, we are committed to maintain
+  platforms which are moved to branch in coreboot.
 * We provide transparent validation results - coreboot in itself provide no
-guarantees around release quality and do not provide binary distribution (for
-reference please check [coreboot project scope][coreboot-scope], we provide
-those in scope of validation we perform.
+  guarantees around release quality and do not provide binary distribution (for
+  reference please check [coreboot project scope][coreboot-scope], we provide
+  those in scope of validation we perform.
 * We provide seamless deployment - our documentation provide information about
-initial deployment, updates and recovery procedures. We working on a
-product called [Dasharo Tools Suite OS][dtsos], which will largely improve firmware
-deployment, hardware compatibility reporting and  binary blobs transmission
-wherever it is necessary, as well as recovery.
-* Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and enable
-customers and community platforms, so they can get seamless firmware update in
-Linux.
+  initial deployment, updates and recovery procedures. We working on a product
+  called [Dasharo Tools Suite OS][dtsos], which will largely improve firmware
+  deployment, hardware compatibility reporting and  binary blobs transmission
+  wherever it is necessary, as well as recovery.
+* Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and
+  enable customers and community platforms, so they can get seamless firmware
+  update in Linux.
 * Support - Dasharo team is paid to provide support in community through
-[Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
-commercial products related to support to make business feasible, but some
-level of support always would be available to community.
+  [Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
+  commercial products related to support to make business feasible, but some
+  level of support always would be available to community.
 * We provide ready to use binaries with GPG based signing scheme that improve
-verification where firmware coming from.
+  verification where firmware coming from.
 
 ## What are the differences between the official coreboot repository and the Dasharo repository ?
 
