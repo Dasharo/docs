@@ -89,19 +89,19 @@ We should not create documents that are not related to these modes.
 
 ## Useful tools
 
-- [grammarly.com](grammarly.com) - online writing assistant who can improve
-your grammar and make the document clear. A premium account is a very useful
-option, but it is not a must. Core functionalities are available for free.
-**It is highly recommended to use the Grammarly tool before committing
+- [grammarly.com](https://grammarly.com) - online writing assistant who can
+improve your grammar and make the document clear. A premium account is a very
+useful option, but it is not a must. Core functionalities are available for
+free. **It is highly recommended to use the Grammarly tool before committing
 changes.**
-- [hemingwayapp.com](hemingwayapp.com) - make your writing clear. Sometimes it
-catches things that are not detected by Grammarly.
-- [draw.io](draw.io) - we use that to prepare diagrams.
-- [paste.dasharo.com](paste.dasharo.com) - pastebin alternative hosted by
-Dasharo.
+- [hemingwayapp.com](https://hemingwayapp.com) - make your writing clear.
+Sometimes it catches things that are not detected by Grammarly.
+- [draw.io](https://draw.io) - we use that to prepare diagrams.
+- [paste.dasharo.com](https://paste.dasharo.com) - pastebin alternative hosted
+by Dasharo.
 - [asciinema.org](https://asciinema.org) - free and open-source solution for
-recording terminal sessions. Sometimes - especially in more complex cases, it
-is good to present command sequences in this way.
+recording terminal sessions. Sometimes - especially in more complex cases, it is
+good to present command sequences in this way.
 
 ## Formatting
 
