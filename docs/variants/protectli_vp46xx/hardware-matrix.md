@@ -23,7 +23,7 @@ coreboot port on the Protectli VP46XX firewall.
 |                                | Display 2: DP 1920x1080p                    |
 | **Ethernet controller**        | 6x intel i225 (on-board)                    |
 | **Internal devices**           | Audio subsystem                             |
-| **TPM**                        | PC Engines TPM1A LPC TPM                    |
+| **TPM**                        | Protectli TPM                               |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
@@ -46,6 +46,7 @@ coreboot port on the Protectli VP46XX firewall.
 |                                | Display 2: DP 1920x1080p                    |
 | **Ethernet controller**        | 6x intel i225 (on-board)                    |
 | **Internal devices**           | Audio subsystem                             |
+| **TPM**                        | Protectli TPM                               |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
@@ -68,6 +69,7 @@ coreboot port on the Protectli VP46XX firewall.
 |                                | Display 2: DP 1920x1080p                    |
 | **Ethernet controller**        | 6x intel i225 (on-board)                    |
 | **Internal devices**           | Audio subsystem                             |
+| **TPM**                        | Protectli TPM                               |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
