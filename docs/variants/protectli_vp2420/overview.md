@@ -6,7 +6,7 @@
 
 * [Releases](releases.md) - groups information about all releases.
 * [Building manual](building-manual.md) - describes how to build Dasharo for
-    Protecli 24XX.
+    Protecli 2420.
 * [Initial deployment](initial-deployment.md) - describes initial Dasharo
     deployment methods (i. e. flashing new firmware) for Protectli VP24xx.
 * [Hardware configuration matrix](hardware-matrix.md) - describes the
