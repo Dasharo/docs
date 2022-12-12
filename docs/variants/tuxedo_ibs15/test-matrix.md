@@ -26,7 +26,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
-| 19.  | [Custom fan curve][FAN]                           | FAN           | FAN001.001                           |
+| 19.  | [Fan speed][FAN]                                  | FAN           | FAN001.001                           |
 | 20.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001 |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -46,7 +46,7 @@ subjected from before the release of the new binary.
 [WLE]: ../../unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
 [CAM]: ../../unified-test-documentation/dasharo-compatibility/317-usb-camera.md
-[FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-control.md
+[FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-speed.md
 [DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md
 
 ## Module: Dasharo security

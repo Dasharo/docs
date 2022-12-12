@@ -28,7 +28,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
-| 18.  | [Custom fan curve][FAN]                           | FAN           | FAN001.001                           |
+| 18.  | [Fan speed][FAN]                                  | FAN           | FAN001.001                           |
 | 19.  | [SMBIOS][DMI]                                     | DMI           | Without DMI001.001                   |
 | 20.  | [Docking station detect][DUD]                     | DUD           | All                                  |
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
@@ -64,7 +64,7 @@ subjected from before the release of the new binary.
 [WLE]: ../../unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
 [CAM]: ../../unified-test-documentation/dasharo-compatibility/317-usb-camera.md
-[FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-control.md
+[FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-speed.md
 [DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md
 [DUD]: ../../unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
 [DUB]: ../../unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
@@ -132,7 +132,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
-| 18.  | [Custom fan curve][FAN]                           | FAN           | FAN001.001                           |
+| 18.  | [Fan speed][FAN]                                  | FAN           | FAN001.001                           |
 | 19.  | [SMBIOS][DMI]                                     | DMI           | Without DMI001.001                   |
 | 20.  | [Docking station detect][DUD]                     | DUD           | All                                  |
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
