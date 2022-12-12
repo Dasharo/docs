@@ -28,10 +28,9 @@ VP2420.
     git checkout protectli_vault_ehl_v1.0.0
     ```
 
-3. Start build process (note: it requires certain blobs to proceed):
+3. Start build process:
 
     ```bash
-    # you will need to put the ZIP with blobs and FSP at this point
     ./build.sh vp2420
     ```
 
