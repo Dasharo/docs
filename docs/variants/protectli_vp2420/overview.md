@@ -8,7 +8,7 @@
 * [Building manual](building-manual.md) - describes how to build Dasharo for
     Protecli 2420.
 * [Initial deployment](initial-deployment.md) - describes initial Dasharo
-    deployment methods (i. e. flashing new firmware) for Protectli VP24xx.
+    deployment methods (i. e. flashing new firmware) for Protectli VP2420.
 * [Hardware configuration matrix](hardware-matrix.md) - describes the
     platform's hardware configuration used during the Dasharo firmware
     validation procedure.
