@@ -41,6 +41,11 @@ This test aims to verify that the CPU fan RPM value is available to read.
     sensors | grep "CPU fan"
     ```
 
+    > If the command fails, make sure the `system76_acpi` driver is available on
+    > your system. You can install the appropriate kernel version with the
+    > command `sudo apt install linux-oem-22.04a`, which this driver definitely
+    > supports.
+
 1. Note the results.
 
 **Expected result**
