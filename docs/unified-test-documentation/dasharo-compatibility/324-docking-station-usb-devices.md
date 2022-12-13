@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. The docking station connected to the USB-C port.
-1. The `USB_STICK` connected to the docking station.
+1. The `USB storage` connected to the docking station.
 
 ## DUB001.001 USB devices recognition (firmware)
 
@@ -35,11 +35,11 @@ station are recognized correctly by the `FIRMWARE`.
 
 1. Power on the DUT.
 1. Hold the `BIOS_MENU_KEY` to enter the BIOS Menu.
-1. Check if the `USB_STICK` is available on the list.
+1. Check if the `USB storage` is available on the list.
 
 **Expected result**
 
-The `USB_STICK` is available which confirms successful recognition.
+The `USB storage` is available which confirms successful recognition.
 
 ## DUB001.002 USB devices recognition (Ubuntu 22.04)
 
@@ -111,8 +111,8 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 
 **Expected result**
 
-1. After executing the command, a list containing all USB devices should
-be displayed. The list should contain the `USB_STICK`, which is plug in.
+After executing the command, a list containing all USB devices should be
+displayed. The list should contain the `USB storage`, which is plug in.
 
     Example output:
 
@@ -156,7 +156,7 @@ according to their labels.
 
 **Expected result**
 
-1. All menus can be entered using the external USB keyboard.
+All menus can be entered using the external USB keyboard.
 
 ## DUB002.002 USB keyboard detection (Ubuntu 22.04)
 
@@ -260,3 +260,125 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 1. All standard keyboard keys generate correct characters
    or actions when pressed.
 1. Key combinations are detected correctly.
+
+## DUB003.001 Upload 1GB file on USB storage (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the 1GB file can be transferred from the
+`OPERATING_SYSTEM` to the `USB storage` connected to the docking station.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and run the following command to generate 1GB file:
+
+    ```bash
+    openssl rand -out test_file.txt -base64 $(( 2**30 * 3/4 ))
+    ```
+
+1. Read the path to the `USB storage` by running the following command:
+
+    ```bash
+    lsblk
+    ```
+
+1. Copy the generated file to the `USB storage` by running the following
+   command:
+
+    ```bash
+    cp test_file.txt {path_to_usb_storage}
+    ```
+
+1. Verify that the files are the same by running the following command:
+
+    ```bash
+    sha256sum test_file.txt {path_to_usb_storage}/test_file.txt
+    ```
+
+**Expected result**
+
+The output from the last command should contain 2 identical checksums:
+
+```bash
+f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  test_file.txt
+f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  {path_to_usb_storage}/test_file.txt
+```
+
+## DUB003.002 Upload 1GB file on USB storage (Windows 11)
+
+**Test description**
+
+This test aims to verify that the 1GB file can be transferred from the
+`OPERATING_SYSTEM` to the `USB storage` connected to the docking station.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open powershell as administrator and run the following command to generate
+   1GB file:
+
+    ```powershell
+    fsutil file createnew test_file.txt 1073741824
+    ```
+
+1. Read the drive letter assigned to the `USB storage` by running the following
+   command:
+
+    ```powershell
+    (Get-Volume | where drivetype -eq removable).driveletter
+    ```
+
+1. Copy the generated file to the `USB storage` by running the following
+   command:
+
+    ```powershell
+    Copy-Item -Path C:\Windows\system32\test_file.txt {drive_letter}:
+    ```
+
+1. Verify that the files are the same by running the following commands:
+
+    ```powershell
+    Get-FileHash test_file.txt
+    Get-FileHash {drive_letter}:\test_file.txt
+    ```
+
+**Expected result**
+
+The output from the last commands should have equal hash:
+
+```powershell
+Algorithm       Hash                                                              Path
+---------       ----                                                              ----
+SHA256          F46597C0C63A1EEFB200D40EDF654E52F10C3D5D21565886AD603FABAF8D39FB  C\Windows\system3...
+```
+
+```powershell
+Algorithm       Hash                                                              Path
+---------       ----                                                              ----
+SHA256          F46597C0C63A1EEFB200D40EDF654E52F10C3D5D21565886AD603FABAF8D39FB  E:\test_file.txt
+```
