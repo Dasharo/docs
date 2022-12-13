@@ -104,10 +104,12 @@ subjected from before the release of the new binary.
 | 1.   | [coreboot boot measure][CBMEM]                    | CBMEM         | All                                  |
 | 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
 | 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
+| 4.   | [Custom fan curve][CFC]                           | CFC           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
+[CFC]: ../../unified-test-documentation/dasharo-performance/406-custom-fan-curve.md
 
 ## NV41MZ test matrix
 
@@ -166,3 +168,4 @@ subjected from before the release of the new binary.
 | 1.   | [coreboot boot measure][CBMEM]                    | CBMEM         | All                                  |
 | 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
 | 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
+| 4.   | [Custom fan curve][CFC]                           | CFC           | All                                  |
