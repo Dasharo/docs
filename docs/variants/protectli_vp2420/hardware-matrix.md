@@ -16,7 +16,7 @@ coreboot port on the Protectli VP2420 firewall.
 |                        | SAMSUNG M471A5244BB0-CRC                                 |
 |                        | KINGSTON KVR24S17S8/8                                    |
 |                        | KINGSTON KVR26S19S8/16                                   |
-| **Flash memory**       |                                                          |
+| **Flash memory**       | Mactronix KH25L12835F                                    |
 | **SSD**                | SSD Samsung 860 EVO M.2 NZ-N6E250 250GB                  |
 | **MMC drive**          | SAMSUNG 8GTF4R (on-board)                                |
 | **USB pendrives**      | 1. SanDisk USB 3.2Gen1 16 GB                             |
