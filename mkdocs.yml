@@ -33,6 +33,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 plugins:
+  - search
   - redirects:
       redirect_maps:
         'common-coreboot-docs/dasharo_tools_suite.md': 'dasharo-tools-suite/overview.md'
