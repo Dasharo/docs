@@ -9,6 +9,8 @@
     Protecli 2410.
 * [Initial deployment](initial-deployment.md) - describes initial Dasharo
     deployment methods (i. e. flashing new firmware) for Protectli VP2410.
+* [Recovery](recovery.md) - gathers information on how to recover the platform
+    from potential failure.
 * [Hardware configuration matrix](hardware-matrix.md) - describes the
     platform's hardware configuration used during the Dasharo firmware
     validation procedure.
