@@ -35,6 +35,14 @@ non-public development, custom hardware handled by vendor
   source hardware and open instruction set architecture. Feel free to check the
   website about recent vPub plans or subscribe to newsletter.
 
+## Newcommers
+
+If you have no prior experience with coreboot, it's highly recommended to visit
+OpenSecurityTraining2 and finish
+[this course](https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Arch4031_x86-64_RV_coreboot+2021_v1/about).
+OpenSecurityTraining2 provides other great courses related to firmware, which
+are freely avialable [here](https://p.ost2.fyi/courses).
+
 <!--
 
 For now we deprecating this terminology. We will get back to it when we will
