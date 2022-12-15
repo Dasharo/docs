@@ -17,7 +17,7 @@
 
 **Test description**
 
-This test aims to verify that the CPU fan RPM value is available to read.
+This test aims to verify that the CPU fan works correctly.
 
 **Test configuration data**
 
@@ -28,6 +28,10 @@ This test aims to verify that the CPU fan RPM value is available to read.
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install `lm-sensors` on the DUT.
+1. If the command in the 4th step fails, make sure the `system76_acpi` driver is
+   available on your system. An appropriate kernel version could be installed
+   with the command `sudo apt install linux-oem-22.04a`, which version
+   definitely supports this driver.
 
 **Test steps**
 
@@ -40,11 +44,6 @@ This test aims to verify that the CPU fan RPM value is available to read.
     ```bash
     sensors | grep "CPU fan"
     ```
-
-    > If the command fails, make sure the `system76_acpi` driver is available on
-    > your system. You can install the appropriate kernel version with the
-    > command `sudo apt install linux-oem-22.04a`, which this driver definitely
-    > supports.
 
 1. Note the results.
 
