@@ -9,10 +9,11 @@ firmware version.
 For simplicity we recommend using
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
-## Updating to Dasharo v1.0.18
+## Updating to Dasharo v1.0.18 or newer versions
 
-v1.0.18 is a refreshed release, rebased on more up-to-date revision of coreboot
-and it requires to flash whole image as described in [Initial Deployment](initial-deployment.md).
+From v1.0.18 Dasharo firmware is rebased on the more up-to-date revision of
+coreboot. This results in a requirement to flash the whole image as described in
+[Initial Deployment](initial-deployment.md).
 
 ## Updating on Dasharo v1.0.16 or v1.0.17
 
