@@ -17,18 +17,28 @@ VP2420.
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://github.com/Dasharo/coreboot.git \
-    -b protectli_vault_glk/release
+    git clone https://github.com/Dasharo/coreboot
     ```
 
-2. Check out the desired version e.g. `v1.0.0`:
+2. Checkout the desired version, e.g. `v1.0.0`:
 
     ```bash
     cd coreboot
     git checkout protectli_vault_ehl_v1.0.0
     ```
 
-3. Start build process:
+3. Checkout submodules:
+
+    ```bash
+    git submodule update --init --checkout
+    ```
+
+4. Obtain the Protectli blobs package and extract it to
+   `3rdparty/blobs/mainboard` directory (or keep it as `protectli_blobs.zip`
+   file in the coreboot directory, the build script will extract it if needed
+   in step 5).
+
+5. Build the firmware v1.0.0 or newer:
 
     ```bash
     ./build.sh vp2420
