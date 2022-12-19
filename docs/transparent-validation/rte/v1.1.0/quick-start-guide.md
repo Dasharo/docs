@@ -79,6 +79,8 @@ Basic power operations should be performed based on the `rte_ctrl` script
 implemented in `meta-rte` (OS image dedicated to the RTE platform). To perform
 basic power operations use the below-described commands:
 
+>Note: Below commands are valid for OS `v1.1.0`
+
 1. Turn on the platform:
 
     ```bash

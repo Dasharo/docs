@@ -1,5 +1,11 @@
 # Sonoff documentation
 
+## Prequisities
+
+1. Sonoff s20
+1. Wi-Fi connection
+1. USB-UART converter
+
 ## Quick start guide
 
 The below documentation is based on the

@@ -1,4 +1,4 @@
-# Laboratory stand dedicated to MSI PRO Z690-A assembly guide
+# Laboratory stand dedicated to [DEVICE_NAME] assembly guide
 
 ## Introduction
 
@@ -44,24 +44,41 @@ The following sections describe how to enable all of the following features:
 * controlling power supply,
 * enabling basic power actions with the platform (power off/power on/reset),
 * external flashing with the RTE.
-* [optional-connections]
+* [optional-connections] eg:
+
+    - Sonoff connections,
+    - piKVM connections,
+    - can output/intput,
+    - ethernet connection.
 
 ### Serial connection
+
+<!--This section should contain neccesary connections to establish serial
+connections between the device and RTE-->
 
 1. ...
 1. ...
 
 ### Power supply controlling
 
+<!--This section should contain instruction to connecting power source to the
+device-->
+
 1. ...
 1. ...
 
 ### Basic power operations enabling
 
+<!--This section should contain information about controlling device's power
+states and connections using dedicated software/hardware-->
+
 1. ...
 1. ...
 
 ### External flashing enabling
+
+<!--This section should contain steps to make required connections to further
+proceed with external flashing-->
 
 1. ...
 1. ...
@@ -82,6 +99,9 @@ performed to enable all of the test stand features:
 1. [optional-step]
 
 Complete setup should looks as follows:
+
+<!--the `some-image.jpg` should be replaced and presenting photo of fully
+connected setup-->
 
 ![Complete](images/some-image.jpg)
 
