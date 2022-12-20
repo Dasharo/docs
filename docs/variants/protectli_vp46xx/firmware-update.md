@@ -14,7 +14,8 @@ For simplicity we recommend using
 From v1.0.18 Dasharo firmware is rebased on the more up-to-date revision of
 coreboot.
 
-If the current version of the firmware on the device is older than v1.0.18 the
+If the current version of the firmware on the device is older than v1.0.18 or
+you are migrating from proprietary firmawre the
 whole flash chip should be flashed as described in
 [Initial Deployment](initial-deployment.md).
 
