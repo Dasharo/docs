@@ -9,6 +9,18 @@ firmware version.
 For simplicity we recommend using
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
+Before starting the update procedure be sure to disable Dasahro BIOS Boot medium
+lock:
+
+1. Power on the device.
+1. While the device is booting, hold the `DELETE` key to enter the UEFI Setup
+    Menu.
+1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
+1. Enter the `Dasharo Security Options` submenu.
+1. Verify the state of the `Lock the BIOS boot medium` option - if the option
+    is chosen, press `Space` and then `F10` to save the changes.
+1. Reboot the device to properly apply the changes.
+
 ## Updating to Dasharo v1.0.18 or v1.0.19
 
 From v1.0.18 Dasharo firmware is rebased on the more up-to-date revision of
