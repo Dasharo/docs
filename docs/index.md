@@ -98,10 +98,13 @@ To create a patch:
 
 ### Dasharo Matrix Space
 
-[Matrix](https://matrix.org/) as a communicator used at Dasharo. If you want
+[Matrix](https://matrix.org/) is a communicator used at Dasharo. If you want
 quick answers it's best to join our matrix space and talk to us there.
 
-https://matrix.to/#/#dasharo:matrix.org
+[**Dasharo Matrix Space**](https://matrix.to/#/#dasharo:matrix.org)
+
+If you've never used Matrix before, you will first need to get a client.
+Avaliable clients are listed [here](https://matrix.org/clients/).
 
 <!--
 
