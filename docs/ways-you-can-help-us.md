@@ -35,6 +35,8 @@ link](https://g.page/r/CSNPB7CokyhpEAg/review).
 
 * Follow us on Twitter: [Dasharo](https://twitter.com/dasharo_com),
   [3mdeb](https://twitter.com/3mdeb_com)
+* Follow us on Mastodon: [Dasharo](https://fosstodon.org/@Dasharo),
+  [3mdeb](https://fosstodon.org/@3mdeb)
 * Follow us on LinkedIn: [3mdeb](https://www.linkedin.com/company/3mdeb)
 * Like us on Facebook: [3mdeb](https://www.facebook.com/3mdeb/)
 * Join Reddit communities: [Dasharo](https://www.reddit.com/r/Dasharo/),
