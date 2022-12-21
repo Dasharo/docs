@@ -46,6 +46,7 @@ If you have no prior experience with coreboot, it's highly recommended to visit
 OpenSecurityTraining2 and finish these courses:
 * [Arch4031](https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Arch4031_x86-64_RV_coreboot+2021_v1/about),
 * [Arch4021](https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+4021_Intro_UEFI+2022_v1/about)
+
 OpenSecurityTraining2 provides other great courses related to firmware, which
 are all freely avialable [here](https://p.ost2.fyi/courses).
 
@@ -71,11 +72,29 @@ When you have an account on GitHub go ahead and
 It's also highly recommended to configure a GPG key before contributing
 anything. Instructions to do that can be found
 [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account).
-With that your account should be ready to contribute to Dasharo. Here are some
-additional links to help:
-* [Dasharo code structure](https://docs.dasharo.com/dev-proc/source-code-structure/)
-* [Creating a pull pequest from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
-* [Pull request eviews](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+With that your account should be ready to contribute to Dasharo.
+
+Since Dasharo is based on coreboot and edk2, it's best to contribute [directly
+in the upstream](https://www.chromium.org/chromium-os/chromiumos-design-docs/upstream-first/)
+if possible. Refer to these documents:
+* [contributing to coreboot](https://doc.coreboot.org/contributing/index.html)
+* [contributing to edk2](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Development-Process)
+
+If for some reason you can't contribute your change in upstream repositories,
+then consider contributing directly to Dasharo. Before doing anything it's
+best to get familiar with [source code structure](https://docs.dasharo.com/dev-proc/source-code-structure/).
+To create a patch:
+1. [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
+   which you want to edit,
+1. in the forked reposirory: `git checkout <platform>/develop` (make sure to
+   start from the correct branch),
+1. create a new branch: `git checkout -b <platform>/<feature>`,
+1. commit your changes:
+    * make sure to sign your commits by using
+      `git commit -sm "<commit_message>"`,
+    * `<commit_message>` should be: `path/to/file: Change description`,
+    * one commit should be one logical change,
+1. [create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
 ### Dasharo Matrix Space
 
@@ -83,8 +102,6 @@ additional links to help:
 quick answers it's best to join our matrix space and talk to us there.
 
 https://matrix.to/#/#dasharo:matrix.org
-
-
 
 <!--
 
