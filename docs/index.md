@@ -35,12 +35,12 @@ non-public development, custom hardware handled by vendor
   source hardware and open instruction set architecture. Feel free to check the
   website about recent vPub plans or subscribe to newsletter.
 
-## Newcommers
+## Newcomers
 
 If you are new to Dasharo, this section it to help you get started using Dasharo
 firmware and possibly contributing to making it better.
 
-### Coreboot
+### coreboot
 
 If you have no prior experience with coreboot, it's highly recommended to visit
 OpenSecurityTraining2 and finish these courses:
@@ -51,7 +51,7 @@ are all freely avialable [here](https://p.ost2.fyi/courses).
 
 ### Docker
 
-Coreboot needs a specific toolchain to be built, hence why it is usually built
+coreboot needs a specific toolchain to be built, hence why it is usually built
 inside of a Docker. In case of Dasharo, all images are build using Docker, so
 you will make sure it works properly on your system.
 
@@ -59,7 +59,7 @@ Follow these two links:
 * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 * [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 
-### GitHub
+### Dasharo Contribution
 
 All code review and all issues related to Dasharo are resolved on
 [GitHub](https://github.com/). An account there is nessesary to contribute and
@@ -69,7 +69,7 @@ report issues. All Dasharo repositories can be found
 When you have an account on GitHub go ahead and
 [configure an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 It's also highly recommended to configure a GPG key before contributing
-antthing. Instructions to do that can be found
+anything. Instructions to do that can be found
 [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account).
 With that your account should be ready to contribute to Dasharo. Here are some
 additional links to help:
