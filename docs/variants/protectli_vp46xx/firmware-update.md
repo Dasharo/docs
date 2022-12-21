@@ -9,7 +9,7 @@ firmware version.
 For simplicity we recommend using
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
-Before starting the update procedure be sure to disable Dasahro BIOS Boot medium
+Before starting the update procedure be sure to disable Dasharo BIOS Boot medium
 lock:
 
 1. Power on the device.
