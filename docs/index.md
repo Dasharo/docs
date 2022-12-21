@@ -60,6 +60,42 @@ Follow these two links:
 * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 * [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 
+Once you have Docker set up on your machine, you can pull docker images from
+[coreboot/coreboot-sdk](https://hub.docker.com/r/coreboot/coreboot-sdk/tags) (keep in mind that some platforms require older docker images).
+
+To pull a Docker image, use:
+```shell
+docker pull coreboot/coreboot-sdk:<tag>
+```
+
+The typical procedure to build a coreboot image is as follows:
+```shell
+git clone https://github.com/Dasharo/coreboot.git
+```
+```shell
+cd coreboot
+```
+```shell
+git checkout <platform>/release
+```
+```shell
+docker run -u $UID --rm -it \
+-v $PWD:/home/coreboot/coreboot
+-w /home/coreboot/coreboot coreboot/coreboot-sdk:<tag>\
+bash
+```
+```shell
+cp configs/config.<platform> .config
+```
+```shell
+make olddefconfig
+```
+```shell
+make 
+```
+
+
+
 ### Dasharo Contribution
 
 All code review and all issues related to Dasharo are resolved on
