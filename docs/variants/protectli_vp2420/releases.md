@@ -48,8 +48,8 @@ gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/ke
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
 gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc
 gpg --list-sigs "3mdeb Master Key" "3mdeb Dasharo Master Key" "Protectli Dasharo Firewall Release 1.0 Signing Key"
-sha256sum -c protectli_vault_ehl_v1.0.0.rom.sha256
-gpg -v --verify protectli_vault_ehl_v1.0.0.rom.sha256.sig protectli_vault_ehl_v1.0.0.rom.sha256
+sha256sum -c protectli_vp2420_v1.0.0.rom.sha256
+gpg -v --verify protectli_vp2420_v1.0.0.rom.sha256.sig protectli_vp2420_v1.0.0.rom.sha256
 ```
 
 ### SBOM (Software Bill of Materials)
