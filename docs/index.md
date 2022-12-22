@@ -37,7 +37,7 @@ non-public development, custom hardware handled by vendor
 
 ## Newcomers
 
-If you are new to Dasharo, this section it to help you get started using Dasharo
+If you are new to Dasharo, this section is to help you get started using Dasharo
 firmware and possibly contributing to making it better.
 
 ### coreboot
