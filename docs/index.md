@@ -94,8 +94,6 @@ make olddefconfig
 make 
 ```
 
-
-
 ### Dasharo Contribution
 
 All code review and all issues related to Dasharo are resolved on
