@@ -14,15 +14,42 @@ submenus to appear:
 
 ## Dasharo Security Options
 
-This section is under construction...
+![](/images/menus/dasharo_sec_opts.jpeg)
+
+This menu offers security-sensitive options like:
+
+- `BIOS boot medium lock` - enabled/disables flash protection on the vboot
+  recovery firmware partition. Disable it if you need access to whole flash
+  with flashrom.
+- `Enable SMM BIOS write protection` - when enabled, allows only SMM code (the
+  privileged code installed by the firmware in the system memory) to write to
+  BIOS flash. Recommended to be enabled if [Firmware setup password](user-passwd-mgmt.md)
+  is set. Disable the protection if you need access to flash with flashrom.
 
 ## Networking Options
 
-This section is under construction...
+![](/images/menus/dasharo_net_opts.jpeg)
+
+- `Enable network boot` - the option controls if the network boot should be
+  enabled or not. This option is disabled by default on most Dasharo supported
+  devices. WHen disabled, it prevents loading network controller drivers and
+  unregisters iPXE as boot option (iPXE disappears from
+  [Boot Manager](overview.md#boot-manager-menu) and
+  [One Time Boot](overview.md#one-time-boot) menus)
 
 ## USB Configuration
 
-This section is under construction...
+![](/images/menus/dasharo_usb_opts.jpeg)
+
+- `Enable USB stack` - controls loading of UEFI USB drivers, when enabled all
+  USB drivers are loaded making USB keyboards and mass storage drives
+  functional in the firmware (to browse setup, press hotkeys or move around
+  bootloaders like GRUB). If disabled no USB device will work before OS is
+  loaded (firmware will not communicate with USB devices).
+- `Enable USB Mass Storage driver` - this option is blocked if USB stack is
+  disabled. If disabled, UEFI USB mass Storage driver is not loaded and one
+  cannot boot from USB drives. Essentially this option controls the USB boot
+  capability. It does not affect other devices, like USB keyboards.
 
 ## Intel Management Engine Options
 
@@ -67,4 +94,17 @@ clean the ME region with `me_cleaner` script permanently.
 
 ## Chipset Configuration
 
-This section is under construction...
+![](/images/menus/dasharo_chipset_opts.jpeg)
+
+The submenu contains general chipset options. Currently available options:
+
+- `Enable PS/2 controller` - enables/disables PS/2 controller on the platform.
+  When disabled PS/2 keyboards and mice will stop working in firmware and OS.
+  PS/2 controller will not be functional in OS. This option is not available on
+  laptops where PS/2 is used for the integrated keyboard and possibly touchpad.
+- `Enable watchdog` - controls the chipset watchdog functionality. If enabled
+  watchdog will be counting with the timeout specified below. The firmware
+  automatically kicks the watchdog periodically so even without OS support, the
+  platform will not reset itself when watchdog expires.
+- `Watchdog timeout value` - watchdog timeout in seconds. Allowed range is
+  60-1024 seconds. The Option is only visible if watchdog is set to enabled.
