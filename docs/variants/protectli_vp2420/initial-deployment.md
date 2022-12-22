@@ -79,7 +79,7 @@ with the path to the Dasharo image you want to flash, e.g. `protectli_vault_ehl_
 If stock firmware is currently installed:
 
 ```bash
-flashrom -p internal -w [path]
+flashrom -p internal -w [path] --ifd -i bios
 ```
 
 If Dasharo is currently installed, only the COREBOOT and IFWI partitions of the
