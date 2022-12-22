@@ -18,25 +18,19 @@ Test results for this platform can be found
 
 ### Added
 
-- description: Support for VP2420 platform
-- description: Vboot Verified Boot
-  url: https://docs.dasharo.com/common-coreboot-docs/vboot_signing/
-- description: TPM Measured Boot
-  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/
-- description: Vboot recovery notification in UEFI Payload
-  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/
-- description: UEFI Shell
-  url: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/
-- description: UEFI Secure Boot
-  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/
-- description: BIOS flash protection for Vboot recovery region
-  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/20J-bios-lock-support/
-- description: UEFI boot support
-- description: Intel i225 controller network boot support
-- description: Customized boot menu keys
-- description: Customized setup menu keys
-- description: Configurable boot order
-- description: Configurable boot options
+- Support for VP2420 platform
+- [Vboot Verified Boot](https://docs.dasharo.com/common-coreboot-docs/vboot_signing/)
+- [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
+- [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
+- [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
+- [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
+- [BIOS flash protection for Vboot recovery region](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20J-bios-lock-support/)
+- UEFI boot support
+- Intel i225 controller network boot support
+- Customized boot menu keys
+- Customized setup menu keys
+- Configurable boot order
+- Configurable boot options
 
 ### Binaries
 
