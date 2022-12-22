@@ -1,12 +1,14 @@
 # Firmware update
 
-Following documentation describes the  process of Dasharo open-source firmware
-update.
+The following documentation describes the  process of Dasharo open-source
+firmware update. If your device is currently flashed with the proprietary
+firmware please refer to [Initial deployment](initial-deployment.md)
+documentation.
 
-The process may be different, depending on the currently installed Dasharo
-firmware version.
+The update process may be different, depending on the currently installed
+Dasharo firmware version.
 
-For simplicity we recommend using
+For simplicity of the update process, we recommend using
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
 Before starting the update procedure be sure to disable Dasharo BIOS Boot medium
