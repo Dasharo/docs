@@ -21,21 +21,6 @@ Now you are ready to use Dasharo Tools Suite (DTS):
 1. Boot Dasharo Tools Suite.
 2. Perform Dasharo installation.
 
-This will flash the full image, including the Intel ME. The operation requires
-a hard reset of the platform. To perform a hard reset:
-
-1. Power off the platform. Note, it may not power off completely due to flashed
-   ME.
-2. Disconnect power supply from the board when OS finishes all tasks after
-   power off (the screen goes dark or black).
-3. Disconnect the RTC/CMOS battery OR clear the CMOS using the pin header
-   located near memory slots. Wait about 10 seconds and unshort the pins.
-4. Connect the power supply back.
-5. The platform should power on normally now. You can connect the battery back
-   if it was disconnected.
-
-This concludes Dasharo deployment process using DTS.
-
 ## Build flashrom
 
 Currently, the latest flashrom release lacks support for Comet Lake U internal
@@ -73,8 +58,9 @@ Keep the backup for later recovery if needed.
 
 ## Flashing Dasharo
 
-To flash Dasharo on the platform, execute the following command - replace `[path]`
-with the path to the Dasharo image you want to flash, e.g. `protectli_vault_ehl_v1.0.0.rom`.
+To flash Dasharo on the platform, execute the following command - replace
+`[path]` with the path to the Dasharo image you want to flash, e.g.
+`protectli_vault_ehl_v1.0.0.rom`.
 
 If stock firmware is currently installed:
 
@@ -82,11 +68,11 @@ If stock firmware is currently installed:
 flashrom -p internal -w [path] --ifd -i bios
 ```
 
-If Dasharo is currently installed, only the COREBOOT and IFWI partitions of the
+If Dasharo is currently installed, only the `RW_SECTION_A` partition of the
 flash needs to be updated. Flash it using the following command:
 
 ```bash
-flashrom -p internal -w protectli_vault_ehl_v1.0.0.rom --fmap -i COREBOOT -i IFWI
+flashrom -p internal -w protectli_vault_ehl_v1.x.y.rom --fmap -i RW_SECTION_A
 ```
 
 This command also preserves Dasharo UEFI settings and the boot order.
