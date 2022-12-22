@@ -28,7 +28,6 @@ coreboot port on the Protectli VP2420 firewall.
 | **Wireless card**      | Intel Wi-Fi 6 AX200                                      |
 | **Display**            | HDMI 1920x1080p, DP 1920x1080p                           |
 | **Ethernet**           | 4x intel i225 (on-board)                                 |
-| **TPM**                |                                                          |
 | **Power supply**       | Channel Well Technology 12V, 5.0A 60W                    |
 
 > Note, that in **RAM** section all used during verification procedure modules
