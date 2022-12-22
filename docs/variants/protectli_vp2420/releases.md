@@ -18,7 +18,25 @@ Test results for this platform can be found
 
 ### Added
 
-- Added support for vp2420
+- description: Support for VP2420 platform
+- description: Vboot Verified Boot
+  url: https://docs.dasharo.com/common-coreboot-docs/vboot_signing/
+- description: TPM Measured Boot
+  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/
+- description: Vboot recovery notification in UEFI Payload
+  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/
+- description: UEFI Shell
+  url: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/
+- description: UEFI Secure Boot
+  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/
+- description: BIOS flash protection for Vboot recovery region
+  url: https://docs.dasharo.com/unified-test-documentation/dasharo-security/20J-bios-lock-support/
+- description: UEFI boot support
+- description: Intel i225 controller network boot support
+- description: Customized boot menu keys
+- description: Customized setup menu keys
+- description: Configurable boot order
+- description: Configurable boot options
 
 ### Binaries
 
