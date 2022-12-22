@@ -48,12 +48,12 @@ OpenSecurityTraining2 and finish these courses:
 * [Arch4021](https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+4021_Intro_UEFI+2022_v1/about)
 
 OpenSecurityTraining2 provides other great courses related to firmware, which
-are all freely avialable [here](https://p.ost2.fyi/courses).
+are all freely available [here](https://p.ost2.fyi/courses).
 
 ### Docker
 
 coreboot needs a specific toolchain to be built, hence why it is usually built
-inside of a Docker. In case of Dasharo, all images are build using Docker, so
+inside of a Docker. In case of Dasharo, all images are built using Docker, so
 you will make sure it works properly on your system.
 
 Follow these two links:
@@ -61,43 +61,52 @@ Follow these two links:
 * [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 
 Once you have Docker set up on your machine, you can pull docker images from
-[coreboot/coreboot-sdk](https://hub.docker.com/r/coreboot/coreboot-sdk/tags) (keep in mind that some platforms require older docker images).
+[coreboot/coreboot-sdk](https://hub.docker.com/r/coreboot/coreboot-sdk/tags)
+(keep in mind that some platforms require older docker images).
 
 To pull a Docker image, use:
+
 ```shell
 docker pull coreboot/coreboot-sdk:<tag>
 ```
 
 The typical procedure to build a coreboot image is as follows:
+
 ```shell
 git clone https://github.com/Dasharo/coreboot.git
 ```
+
 ```shell
 cd coreboot
 ```
+
 ```shell
 git checkout <platform>/release
 ```
+
 ```shell
 docker run -u $UID --rm -it \
 -v $PWD:/home/coreboot/coreboot
 -w /home/coreboot/coreboot coreboot/coreboot-sdk:<tag>\
 bash
 ```
+
 ```shell
 cp configs/config.<platform> .config
 ```
+
 ```shell
 make olddefconfig
 ```
+
 ```shell
-make 
+make
 ```
 
 ### Dasharo Contribution
 
 All code review and all issues related to Dasharo are resolved on
-[GitHub](https://github.com/). An account there is nessesary to contribute and
+[GitHub](https://github.com/). An account there is necessary to contribute and
 report issues. All Dasharo repositories can be found
 [here](https://github.com/Dasharo).
 
@@ -120,14 +129,14 @@ best to get familiar with [source code structure](https://docs.dasharo.com/dev-p
 To create a patch:
 1. [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
    which you want to edit,
-1. in the forked reposirory: `git checkout <platform>/develop` (make sure to
+1. in the forked repository: `git checkout <platform>/develop` (make sure to
    start from the correct branch),
 1. create a new branch: `git checkout -b <platform>/<feature>`,
 1. commit your changes:
-    * make sure to sign your commits by using
+    - make sure to sign your commits by using
       `git commit -sm "<commit_message>"`,
-    * `<commit_message>` should be: `path/to/file: Change description`,
-    * one commit should be one logical change,
+    - `<commit_message>` should be: `path/to/file: Change description`,
+    - one commit should be one logical change,
 1. [create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
 ### Dasharo Matrix Space
@@ -138,7 +147,7 @@ quick answers it's best to join our matrix space and talk to us there.
 [**Dasharo Matrix Space**](https://matrix.to/#/#dasharo:matrix.org)
 
 If you've never used Matrix before, you will first need to get a client.
-Avaliable clients are listed [here](https://matrix.org/clients/).
+Available clients are listed [here](https://matrix.org/clients/).
 
 <!--
 
