@@ -82,7 +82,7 @@ Now take the breakout board with pin headers:
 
 ![](/images/ch341a_rec/pin_breakout.jpg)
 
-and plug it int other 1.8V adapter, be sure that numbers 1-4 on the breakout
+and plug it into the other 1.8V adapter, be sure that numbers 1-4 on the breakout
 match the numbers 1 and 4 on the adapter:
 
 ![](/images/ch341a_rec/adapter_shifter.jpg)
@@ -92,8 +92,7 @@ Numbers should be visible on the upper side after assembling:
 ![](/images/ch341a_rec/breakout_assemble.jpg)
 
 Next, take the WSON8 probe and locate the white dot on the needles side (it
-will indicate the first reference pin, although you may use any corner pin you
-want):
+will indicate the first reference pin, although you may use any other corner pin):
 
 ![](/images/ch341a_rec/wson8_probe2.jpg)
 
@@ -104,7 +103,7 @@ wires to the breakout board:
 ![](/images/ch341a_rec/wire_attach2.jpg)
 
 The wires should follow the same order of colors as on the probe (keep them
-straight, do not cross). Repeat with the other 4 wires on the other side of the
+straight, and do not cross). Repeat with the other 4 wires on the other side of the
 probe:
 
 ![](/images/ch341a_rec/wire_attach1.jpg)
@@ -147,7 +146,7 @@ Reading flash... done.
 ```
 
 You don't need to wait for the command completion and interrupt it with Ctrl+C
-shortcut, it just serves as a confirmation of good connection. If yo udecide to
+shortcut, it just serves as a confirmation of good connection. If you decide to
 interrupt it, reset the CH341A programmer by unpluging and repluging it to USB
 port. Now stabilize your hand holding the WSON8 probe on the flash chip and
 invoke the real flashing command (e.g. if your original/working firmware backup
@@ -179,11 +178,11 @@ Verifying flash... VERIFIED.
 [SMBIOS specification](https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.4.0.pdf)
 sections 7.2 and 7.3 defines two spaces for serial number: the system serial
 number and baseboard serial number. The original MSI PRO Z690-A firmware
-provides only baseboard serial number.
+provides only the baseboard serial number.
 
 In case you have lost your serial number in the process of flashing Dasharo or
 newer MSI firmware, there is a way to retrieve it. The board has a QR code
-imprinted between the chipset heatsink and dPGU PCIe slot:
+printed on the mainboard between the chipset heatsink and dPGU PCIe slot:
 
 ![](/images/msi_sn_qr.jpg)
 
