@@ -3,8 +3,7 @@
 ## About
 
 The test matrix is used to determine the scope of tests which the DUT is
-subjected from before the release of the new binary. The test scope is the same
-for all platforms of the VP2420 family.
+subjected from before the release of the new binary.
 
 ## Module: Dasharo compatibility
 
