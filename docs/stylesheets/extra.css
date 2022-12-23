@@ -9,3 +9,10 @@
 :root > * {
   --md-typeset-a-color:         #38d430;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
