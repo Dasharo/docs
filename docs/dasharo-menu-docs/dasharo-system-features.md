@@ -10,11 +10,11 @@ submenus to appear:
     + [Intel Management Engine Options](#intel-management-engine-options)
     + [Chipset Configuration](#chipset-configuration)
 
-![](/images/menus/dasharo_features.jpeg)
+![](/images/menus/dasharo_features.jpeg){ class="center" }
 
 ## Dasharo Security Options
 
-![](/images/menus/dasharo_sec_opts.jpeg)
+![](/images/menus/dasharo_sec_opts.jpeg){ class="center" }
 
 This menu offers security-sensitive options like:
 
@@ -23,12 +23,12 @@ This menu offers security-sensitive options like:
   with flashrom.
 - `Enable SMM BIOS write protection` - when enabled, allows only SMM code (the
   privileged code installed by the firmware in the system memory) to write to
-  BIOS flash. Recommended to be enabled if [Firmware setup password](user-passwd-mgmt.md)
+  BIOS flash. Recommended to be enabled if [Firmware setup password](overview.md#user-password-management)
   is set. Disable the protection if you need access to flash with flashrom.
 
 ## Networking Options
 
-![](/images/menus/dasharo_net_opts.jpeg)
+![](/images/menus/dasharo_net_opts.jpeg){ class="center" }
 
 - `Enable network boot` - the option controls if the network boot should be
   enabled or not. This option is disabled by default on most Dasharo supported
@@ -39,7 +39,7 @@ This menu offers security-sensitive options like:
 
 ## USB Configuration
 
-![](/images/menus/dasharo_usb_opts.jpeg)
+![](/images/menus/dasharo_usb_opts.jpeg){ class="center" }
 
 - `Enable USB stack` - controls loading of UEFI USB drivers, when enabled all
   USB drivers are loaded making USB keyboards and mass storage drives
@@ -57,12 +57,12 @@ This submenu is used to access Intel Management Engine related options.
 Currently the only option available is `Intel ME mode` which allows to enable
 or disable Management Engine:
 
-![](/images/menus/me_menu.jpeg)
+![](/images/menus/me_menu.jpeg){ class="center" }
 
 On the right side of the window there is a help section describing the option
-meaning. If the windows is too small, the help section may be divided. To
-scroll the help section use `D` or `d` keys to scroll down and `U` or `u` to
-scroll up.
+meaning. If the window is too small, the help section may be divided and not
+fully shown on the screen. To scroll the help section use `D` or `d` keys to
+scroll down and `U` or `u` to scroll up.
 
 Intel ME can be disabled in two ways:
 
@@ -74,7 +74,7 @@ Intel ME can be disabled in two ways:
   disabled. HAP method is much more efficient as it halts the ME firmware
   execution even earlier than Soft Disable described above
 
-![](/images/menus/me_menu2.jpeg)
+![](/images/menus/me_menu2.jpeg){ class="center" }
 
 When the mode is set to `Enabled`, Dasharo enables the Intel Management engine
 by either sending `ME_ENABLE` command via MEI/HECI or clearing the HAP bit in
@@ -94,7 +94,7 @@ clean the ME region with `me_cleaner` script permanently.
 
 ## Chipset Configuration
 
-![](/images/menus/dasharo_chipset_opts.jpeg)
+![](/images/menus/dasharo_chipset_opts.jpeg){ class="center" }
 
 The submenu contains general chipset options. Currently available options:
 
