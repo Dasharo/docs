@@ -187,7 +187,6 @@ nav:
       - 'Dasharo menu documentation':
           - 'Overview': dasharo-menu-docs/overview.md
           - 'Boot Maintenance Manager': dasharo-menu-docs/boot-maintenance-mgr.md
-          - 'User Password Management': dasharo-menu-docs/user-passwd-mgmt.md
           - 'Device Manager': dasharo-menu-docs/device-manager.md
           - 'Dasharo System Features': dasharo-menu-docs/dasharo-system-features.md
       - 'Checkbox certification software usage': common-coreboot-docs/checkbox.md
