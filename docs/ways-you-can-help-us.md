@@ -49,7 +49,7 @@ If you have a GitHub account, you can help us in multiple ways:
 * Follow out organizations: [Dasharo](https://github.com/Dasharo),
   [3mdeb](https://github.com/3mdeb)
 * Give a star to repositories you like
-* Fork repositories you would like to contribute to
+* If you want to contribute, refer to [dasharo contribution](index.md#dasharo-contribution)
 * Report issues, your test results, and feature ideas in
   [dasharo-issues](https://github.com/Dasharo/dasharo-issues)
 
