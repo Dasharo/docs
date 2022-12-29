@@ -87,12 +87,14 @@ subjected before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                 | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
+| 5.   | [ME neuter support][MNE]                     | MNE           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 
 ## Module: Dasharo performance
 
