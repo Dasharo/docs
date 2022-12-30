@@ -26,7 +26,7 @@ subjected before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
-| 18.  | [Custom fan curve][FAN]                                | FAN           | FAN001.001                           |
+| 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.001                           |
 | 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001.001                   |
 | 20.  | [Docking station detect][DUD]                          | DUD           | All                                  |
 | 21.  | [Docking station USB devices][DUB]                     | DUB           | All                                  |
@@ -60,7 +60,7 @@ subjected before the release of the new binary.
 [WLE]: ../../unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
 [SDC]: ../../unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
 [CAM]: ../../unified-test-documentation/dasharo-compatibility/317-usb-camera.md
-[FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-control.md
+[FAN]: ../../unified-test-documentation/dasharo-compatibility/S30-fan-speed.md
 [DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md
 [DUD]: ../../unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
 [DUB]: ../../unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
@@ -100,7 +100,9 @@ subjected before the release of the new binary.
 | 1.   | [coreboot boot measure][CBMEM]                    | CBMEM         | All                                  |
 | 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
 | 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
+| 4.   | [Custom fan curve][CFC]                           | CFC           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
+[CFC]: ../../unified-test-documentation/dasharo-performance/406-custom-fan-curve.md
