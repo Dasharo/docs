@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Fan speed
+# Dasharo Compatibility: Fan speed measure
 
 ## Test cases common documentation
 
@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## FAN001.001 CPU fan
+## FAN001.001 CPU fan speed measure
 
 **Test description**
 
@@ -57,7 +57,7 @@ Example output:
 CPU fan:     4347 RPM
 ```
 
-## FAN002.001 GPU fan
+## FAN002.001 GPU fan speed measure
 
 **Test description**
 
