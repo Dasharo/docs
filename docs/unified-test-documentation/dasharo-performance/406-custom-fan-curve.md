@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## CFC001.001 CPU fan
+## CFC001.001 Custom fan curve measure (Ubuntu 20.04)
 
 **Test description**
 
@@ -84,7 +84,10 @@ Divide the PWM value by 2.55 to get the percentage to compare.
 
 Example check for 30°C and 70 PWM values:
 
-expected_speed = ((30-25)/(65-0))*(30-0)+25 ≈ 27
-actual_speed = 70/2.55 ≈ 27
+    ```text
+    expected_speed = ((30-25)/(65-0))*(30-0)+25 ≈ 27
+    actual_speed = 70/2.55 ≈ 27
+    ```
 
-expected_speed ≈ actual_speed which is correct.
+Values `expected_speed` and `actual_speed` are strongly similar. This means
+that the fan control is set correctly.
