@@ -26,7 +26,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
-| 19.  | [Fan speed][FAN]                                  | FAN           | FAN001.001                           |
+| 19.  | [Fan speed measure][FAN]                          | FAN           | FAN001.001                           |
 | 20.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI005.001, DMI006.001, DMI007.001, DMI008.001 |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md

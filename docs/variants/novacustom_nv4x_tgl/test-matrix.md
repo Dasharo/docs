@@ -28,7 +28,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
-| 18.  | [Fan speed][FAN]                                  | FAN           | FAN001.001                           |
+| 18.  | [Fan speed measure][FAN]                          | FAN           | FAN001.001                           |
 | 19.  | [SMBIOS][DMI]                                     | DMI           | Without DMI001.001                   |
 | 20.  | [Docking station detect][DUD]                     | DUD           | All                                  |
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
@@ -134,7 +134,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                    | CAM           | All                                  |
-| 18.  | [Fan speed][FAN]                                  | FAN           | FAN001.001                           |
+| 18.  | [Fan speed measure][FAN]                          | FAN           | FAN001.001                           |
 | 19.  | [SMBIOS][DMI]                                     | DMI           | Without DMI001.001                   |
 | 20.  | [Docking station detect][DUD]                     | DUD           | All                                  |
 | 21.  | [Docking station USB devices][DUB]                | DUB           | All                                  |
