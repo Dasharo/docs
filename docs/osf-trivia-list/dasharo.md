@@ -4,9 +4,15 @@ Dasharo is registered trademark and product developed by
 [3mdeb](https://3mdeb.com).
 
 
-Dasharo is open-source firmware distribution focusing on [clean and simple code](),
-[long-term maintenance](), [transparent validation](), [privacy-respecting
-implementation](), [liberty for the owners](), and [trustworthiness for all]().
+Dasharo is open-source firmware distribution focusing on [seamless
+deployment](#dasharo-seamless-deployment), [clean and simple
+code](#dasharo-clean-and-simple-code), [long-term
+maintenance](#dasharo-long-term-maintenance), [professional support
+](#dasharo-support-package), [transparent
+validation](#dasharo-transparent-validation), [privacy-respecting
+implementation](#dashro-privacy-respecting-implementation), [liberty for the
+owners](#dasharo-liberty-for-the-owners) and [trustworthiness for
+all](#dasharo-trustworthiness-for-all).
 
 Dasharo consists of [productized services](), set of [open-source
 repositories](), and [quality control]() which help to provide scalable,
@@ -50,8 +56,11 @@ Computing Systems Talos II][raptor] family, [ASUS KGPE-D16][kgpe-d16] and other
 
 For every supported hardware Dasharo Team provides:
 
-* [Source code](https://github.com/dasharo)
-* Test results in
+* [Source code](https://github.com/dasharo) with building procedures.
+* Initial deployment, update and recovery procedures.
+* Test Plan
+* Hardware Configuration Matrix, which explain what hardware configuration we
+  use in our labs for testing.
 * [GPG keys](https://github.com/3mdeb/3mdeb-secpack/tree/master/dasharo)
 * Signed binaries in release section
 
@@ -138,13 +147,37 @@ not enough in most cases for booting modern computer.
   Debian/Ubuntu/RedHat and Linux. That means it can provide better
   cost-effectiveness, security, transparency and customizability than
   proprietary alternative.
-* There are six characterestics of Dasharo:
-  * [clean and simple code](),
+* There are seven characterestics of Dasharo:
+  * [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
+  * [clean and simple code](#dasharo-clean-and-simple-code),
   * [long-term maintenance](#dasharo-long-term-maintenance), 
-  * [transparent validation](), 
-  * [privacy-respecting implementation](), 
-  * [liberty for the owners](),
-  * [trustworthiness for all]().
+  * [professional support](#dasharo-support-package),
+  * [transparent validation](#dasharo-transparent-validation), 
+  * [privacy-respecting implementation](#dashro-privacy-respecting-implementation), 
+  * [liberty for the owners](#dasharo-liberty-for-the-owners),
+  * [trustworthiness for all](#dasharo-trustworthiness-for-all).
+
+### Dasharo Zero-Touch Initial Deployment
+
+Documentation supported hardware provide information about initial deployment,
+updates and recovery procedures. Developed by Dasharo Team [Dasharo Tools Suite
+(DTS)][dtsos] operating system support users by automating the deployment
+process, which help reducing errors and inconsistencies, and make sure the
+firmware can be further updated to new version without any problems. DTS also
+provide controlled and secure environment for initial deployment and update of
+firmware, reducing the risk of tampering or unauthorized changes.
+
+Dasharo Zero-Touch Initial Deployment is smooth, effortless and user-friendly
+process, which reduce user frustration and improve satisfaction.
+
+Use of DTS largely improve firmware adoption, hardware compatibility reporting
+and binary blobs transmission, as well as recovery.
+
+For more details about zero-touch initial deployment please read relevant
+Dasharo Tools Suite
+[documentation](../../dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment).
+
+### Dasharo Clean and Simple Code
 
 ### Dasharo Long Term Maintenance
 
@@ -153,22 +186,26 @@ not enough in most cases for booting modern computer.
   have long way to upstream, we maintain those patches and make them work
   before those will go upstream, if ever, we are committed to maintain
   platforms which are moved to branch in coreboot.
+* Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and
+  enable customers and community platforms, so they can get seamless firmware
+  update in Linux.
+
+### Dasharo Support Package
+
+* Support - Dasharo Team is paid to provide support in community through
+  [Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
+  commercial products related to support to make business feasible, but some
+  level of support always would be available to community.
+
+### Dasharo Transparent Validation
+
 * We provide transparent validation results - coreboot in itself provide no
   guarantees around release quality and do not provide binary distribution (for
   reference please check [coreboot project scope][coreboot-scope], we provide
   those in scope of validation we perform.
-* We provide seamless deployment - our documentation provide information about
-  initial deployment, updates and recovery procedures. We working on a product
-  called [Dasharo Tools Suite OS][dtsos], which will largely improve firmware
-  deployment, hardware compatibility reporting and  binary blobs transmission
-  wherever it is necessary, as well as recovery.
-* Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and
-  enable customers and community platforms, so they can get seamless firmware
-  update in Linux.
-* Support - Dasharo team is paid to provide support in community through
-  [Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
-  commercial products related to support to make business feasible, but some
-  level of support always would be available to community.
+
+### Dasharo Trustworthiness for All
+
 * We provide ready to use binaries with GPG based signing scheme that improve
   verification where firmware coming from.
 
@@ -239,7 +276,7 @@ angel investors, or communities which want to enable reasonable quantities of
 hardware (>200pcs).
 
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
-[dtsos]: https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue+is%3Aopen+label%3ADasharoToolsSuite
+[dtsos]: ../../dasharo-tools-suite/overview/
 [lvfs]: https://fwupd.org/lvfs/docs/consulting
 [gerrit-review]: https://review.coreboot.org/c/homepage/+/63402
 [cb-distro]: https://doc.coreboot.org/distributions.html
