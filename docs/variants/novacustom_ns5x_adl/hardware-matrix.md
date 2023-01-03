@@ -17,7 +17,7 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 | **Flash memory**               | GigaDevice 25B1256EYIG 32 MB                     |
 | **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
 | **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
-| **Wireless card**              | Intel Wi-Fi 6 AX200                              |
+| **Wireless card**              | Intel Wi-Fi 6 AX201                              |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
@@ -40,7 +40,7 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 | **Flash memory**               | GigaDevice 25B1256EYIG 32 MB                     |
 | **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
 | **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
-| **Wireless card**              | Intel Wi-Fi 6 AX200                              |
+| **Wireless card**              | Intel Wi-Fi 6 AX201                              |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
