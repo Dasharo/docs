@@ -10,10 +10,15 @@ distribution update.
 For simplicity we recommend using network booted
 [Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
 
-### Dasharo (coreboot+SeaBIOS) update
+### Dasharo (coreboot+SeaBIOS) and Dasharo (coreboot+UEFI) update
 
 * Make sure a wired network cable to the device's Ethernet port
-* Boot platform and from SeaBIOS menu choose Dasharo Network Boot Menu
+* Perform DTS network boot
+    - Dasharo (coreboot+SeaBIOS)
+        * While booting enter SeaBIOS menu using ++esc++
+        * Choose option `iPXE (PCI 00:19.0)`
+    - Dasharo (coreboot+UEFI)
+        * Press F7 and choose iPXE Network boot
 * In the Dasharo Network Boot Menu, select the `Dasharo Tools Suite` option
 * Enter shell using option `9)`
 * Download the Dell OptiPlex 7010/9010 Dasharo from

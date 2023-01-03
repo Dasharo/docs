@@ -111,16 +111,12 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
 
 ## Step 5: Prepare recovery binary
 
-1. Get v0.2-rc3 binary
+Following procedure assume that you use recovery binary created during [backup
+process](../../..//osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
+Backup has 12MB, so it have to be split
 
 ```bash
-wget https://cloud.3mdeb.com/index.php/s/8WNEHEFcBGFRK23/download -O dasharo_dell_optiplex_9010_v0.2-rc3.rom
-```
-
-1. It has 12MB, so it have to be split
-
-```bash
-split -b4M dasharo_dell_optiplex_9010_v0.2-rc3.rom
+split -b4M bios_backup_YYYYMMDD.bin
 ```
 
 ## Step 6: Flash 4MB (BIOS) part
