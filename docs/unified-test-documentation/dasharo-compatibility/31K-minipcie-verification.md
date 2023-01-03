@@ -43,14 +43,14 @@ lspci | grep Network controller
 
 **Expected result**
 
-The output of the command should contain the line:
+The output of the command should information about mounted on the board
+network controller.
+
+Example output:
 
 ```bash
-2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 1a)
 ```
-
-The exact name and revision may be different depending on hardware
-configuration.
 
 ## MWL001.002 Wireless card detection (Windows 11)
 
