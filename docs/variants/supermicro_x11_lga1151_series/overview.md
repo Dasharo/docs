@@ -11,7 +11,6 @@ workstations. Most notable examples of this are hardware are
 motherboard for NAS servers, with a PCIE x16 slot to potentially accommodate a
 graphics card.
 
-
 To learn more about our motivation for the coreboot port and Dasharo compatible
 with Supermicro X11 LGA1151 Series please check [references](#references) section.
 If you want to build, initially deploy, update or recover your setup please
@@ -25,13 +24,22 @@ project. To address the issue we organize virtual hackathon on Dasharo Matrix
 whenever we can. At this point two communinty members are engaged
 ([collector-ynh](https://matrix.to/#/@collector-ynh:matrix.org) with X11SSH-F and
 [pietrushnic](https://matrix.to/#/@pietrushnic:matrix.org) with X11SSH-TF). Feel free to reach them
-if you wan to talk about project status. If you are interested in this project,
-you can consider joining the community-dirven effort or [supporting us in other
+if you wan to talk about project status. 
+
+Please note that Dasharo compatilbe with Supermicro X11 LGA1151 Series may work
+with various boards from this family, at this stage only X11SSH-F and X11SSH-TF
+can be treated as tested. This state can change when we will enter more mature
+state with transparent validation results published in [release](../release)
+section and [hardware cofiguration matrix](../hardware-matrix) used for
+testing. We may also consider CPU, DRAM and GPU HCL sections in documentation.
+
+If you are interested in this project, please consider joining the
+community-dirven effort or [supporting us in other
 way](../../ways-you-can-help-us.md).
 
-The most advanced code is on [development branch](). This code supports only
+The most advanced code is on [development branch](https://github.com/Dasharo/coreboot/pull/281). This code supports only
 `Dasharo (coreboot+UEFI)`. Work in progress documentation can be found
-[here]().
+[here](https://github.com/Dasharo/docs/pull/426).
 
 ## References
 

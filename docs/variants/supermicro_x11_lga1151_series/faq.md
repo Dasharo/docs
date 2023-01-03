@@ -1,5 +1,7 @@
 # FAQ
 
+**Please read the [overview page](../overview) first!**
+
 ## How to identify my mainboard model?
 
 ```shell

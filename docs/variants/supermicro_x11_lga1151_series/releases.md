@@ -1,6 +1,6 @@
 # Dasharo compatible with Dell OptiPlex 7010/9010 SFF
 
-**Please read the [overview page](overview.md) first!**
+**Please read the [overview page](../overview) first!**
 
 Following Release Notes describe status of Open Source Firmware development for
 Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF, MT.

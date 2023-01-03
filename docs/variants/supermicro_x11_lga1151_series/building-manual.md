@@ -1,9 +1,9 @@
-# Dell OptiPlex 7010/9010 Dasharo - building manual
+# Supermicro X11 LGA1151 Series - building manual
 
-**Please read the [overview page](overview.md) first!**
+**Please read the [overview page](../overview) first!**
 
-To build Dasharo compatible with Dell OptiPlex 7010/9010, follow the steps
-below:
+To build Dasharo compatible with Supermicro X11 LGA1151 Series, follow the
+steps below:
 
 1. Clone the coreboot repository:
 
@@ -15,10 +15,16 @@ below:
     cd coreboot
     ```
 
+<!--
     Replace vX.Y.Z with valid version:
 
     ```bash
-    git checkout dell_optiplex_9010_vX.Y.Z
+    git checkout supermicro_x11_lga1151_series_vX.Y.Z
+    ```
+-->
+
+    ```bash
+    git checkout supermicro_x11-lga1151-series/develop
     ```
 
     Checkout submodules:
@@ -28,15 +34,6 @@ below:
     ```
 
 1. Start docker container:
-
-    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0`:
-
-     ```bash
-    	docker run --rm -it \
-    	   -v $PWD:/home/coreboot/coreboot \
-    	   -w /home/coreboot/coreboot \
-    	   coreboot/coreboot-sdk:2022-04-04_9a8d0a03db /bin/bash
-     ```
 
     * To build `Dasharo (coreboot+UEFI) v0.1.0`:
 
