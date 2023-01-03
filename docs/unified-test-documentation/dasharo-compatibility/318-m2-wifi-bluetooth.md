@@ -43,7 +43,7 @@ lspci | grep "Network Controller"
 
 **Expected result**
 
-The output of the command should information about mounted on the board
+The output of the command should contain information about mounted on the board
 network controller.
 
 Example output:
@@ -84,12 +84,12 @@ and can be detected from the operating system.
 
 **Expected result**
 
-The output of the command should contain the line with Wi-Fi device, which
-has been physically mounted in the device.
+The output of the command should contain information about mounted on the board
+network controller.
 
-Output example:
+Exapmle output:
 
-```PowerShell
+```bash
 Intel(R) Wi-Fi 6AX200 160MHz
 ```
 

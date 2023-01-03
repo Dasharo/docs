@@ -43,7 +43,7 @@ lspci | grep "Network controller"
 
 **Expected result**
 
-The output of the command should information about mounted on the board
+The output of the command should contain information about mounted on the board
 network controller.
 
 Example output:
@@ -84,22 +84,13 @@ Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
 
 **Expected result**
 
-The output of the command should contain a line:
+The output of the command should contain information about mounted on the board
+network controller.
 
-```bash
-"VENDOR" "EXPECTED_CONTROLLER"
-```
-
-Eg.:
+Exapmle output:
 
 ```bash
 Intel(R) Wi-Fi 6AX200 160MHz
-```
-
-or:
-
-```bash
-Intel(R) Wi-Fi 6AX201 160MHz
 ```
 
 ## MWL002.001 Wi-Fi scanning (Ubuntu 22.04)
