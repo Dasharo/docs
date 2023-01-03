@@ -38,19 +38,19 @@ and can be detected from the operating system.
 1. Open a terminal window and execute the following command:
 
 ```bash
-lspci | grep Network controller
+lspci | grep "Network controller"
 ```
 
 **Expected result**
 
-The output of the command should contain the line:
+The output of the command should contain information about mounted on the board
+network controller.
+
+Example output:
 
 ```bash
-2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 1a)
 ```
-
-The exact name and revision may be different depending on hardware
-configuration.
 
 ## MWL001.002 Wireless card detection (Windows 11)
 
@@ -84,16 +84,13 @@ Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
 
 **Expected result**
 
-The output of the command should contain a line starting with:
+The output of the command should contain information about mounted on the board
+network controller.
+
+Example output:
 
 ```bash
 Intel(R) Wi-Fi 6AX200 160MHz
-```
-
-or a line starting with:
-
-```bash
-Intel(R) Wi-Fi 6AX201 160MHz
 ```
 
 ## MWL002.001 Wi-Fi scanning (Ubuntu 22.04)

@@ -38,18 +38,19 @@ and can be detected from the operating system.
 1. Open a terminal window and execute the following command:
 
 ```bash
-lspci | grep AX20
+lspci | grep "Network Controller"
 ```
 
 **Expected result**
 
-The output of the command should contain the line:
+The output of the command should contain information about mounted on the board
+network controller.
+
+Example output:
 
 ```bash
-2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 1a)
 ```
-
-The exact name and revision may be different depending on hardware configuration.
 
 ## WLE001.002 Wireless card detection (Windows 11)
 
@@ -83,12 +84,12 @@ and can be detected from the operating system.
 
 **Expected result**
 
-The output of the command should contain the line with Wi-Fi device, which
-has been physically mounted in the device.
+The output of the command should contain information about mounted on the board
+network controller.
 
-Output example:
+Example output:
 
-```PowerShell
+```bash
 Intel(R) Wi-Fi 6AX200 160MHz
 ```
 
