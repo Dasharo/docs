@@ -38,7 +38,7 @@ and can be detected from the operating system.
 1. Open a terminal window and execute the following command:
 
 ```bash
-lspci | grep Network controller
+lspci | grep "Network controller"
 ```
 
 **Expected result**
