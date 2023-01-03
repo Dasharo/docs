@@ -1,8 +1,8 @@
 # Dasharo Certification Program
 
 Our commitment to long-term maintenance and transparent validation lead us to
-creation of Dasharo Certification Program. We would like to recognize that
-without strict project management, hardware integration and validation
+creation of Dasharo Certification Program (DCP). We would like to recognize
+that without strict project management, hardware integration and validation
 procedures maintaining significant number of hardware targets would be
 impossible.
 
@@ -63,6 +63,7 @@ consist of structural approach to following activities:
 
 Every Dasharo Certification candidate have to be integrated in Dasharo
 Certification Laboratory. Correct integration means:
+
 * detailed analysis of Client's Infrastructure schematics and documentation,
 * setup of remote and automated environment for development, debugging and testing,
 * Client's Infrastructure preparation for manual testing procedures, if not all
@@ -70,6 +71,7 @@ Certification Laboratory. Correct integration means:
 * provisioning and configuration of Dasharo Transparent Validation system that
   will execute test required for Dasharo Certification Program,
 
+Details of this proces are described for selected platforms in [Assembly Guides]().
 <!--
 ## Limitations
 
@@ -78,6 +80,23 @@ liability company. Only OEMs and communities, which obtained Dasharo
 Certification are allowed to use Dasharo logo for open-source firmware
 promotion.
 -->
+
+## About DCP documentation sections
+
+### Lab Setup Guides
+
+Lab Setup Guides were created for individuals, organizations and Dasharo
+Validation Team members who would like to setup supported hardware platform as
+in Dasharo Certification Lab or in homelab. Documentation describe how RTE can
+be connected to Device Under Test to get rully automated developement,
+debugging and testing environment.
+
+### Pre-sale Device Assembly
+
+Pre-sale Device Assembly guides were created for Dasharo Sales Team members and
+partner organizations who would like to create Dasharo Cerified Configuration.
+We also offer most of explained configurations in [3mdeb
+shop](https://3mdeb.com/shop/).
 
 ## Naming conventions
 

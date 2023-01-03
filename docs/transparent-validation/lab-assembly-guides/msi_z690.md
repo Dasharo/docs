@@ -1,9 +1,9 @@
-# Presale device assembly and validation
+# MSI PRO Z690-A WIFI DDR4 Pre-sale Device Assembly
 
 ## Introduction
 
-This document describes the assembly procedure of the MSI PRO Z690-A DDR4 with
-specified components in [requirements](#requirements).
+This document describes the assembly and validation procedure of the MSI PRO
+Z690-A DDR4 with specified components in [requirements](#requirements).
 
 ## Requirements
 
