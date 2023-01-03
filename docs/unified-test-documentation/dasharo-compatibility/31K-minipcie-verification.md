@@ -84,13 +84,19 @@ Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
 
 **Expected result**
 
-The output of the command should contain a line starting with:
+The output of the command should contain a line:
+
+```bash
+"VENDOR" "EXPECTED_CONTROLLER"
+```
+
+Eg.:
 
 ```bash
 Intel(R) Wi-Fi 6AX200 160MHz
 ```
 
-or a line starting with:
+or:
 
 ```bash
 Intel(R) Wi-Fi 6AX201 160MHz

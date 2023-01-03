@@ -38,7 +38,7 @@ and can be detected from the operating system.
 1. Open a terminal window and execute the following command:
 
 ```bash
-lspci | grep AX20
+lspci | grep "Network Controller"
 ```
 
 **Expected result**
@@ -46,7 +46,13 @@ lspci | grep AX20
 The output of the command should contain the line:
 
 ```bash
-2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+Network controller: "EXPECTED_CONTROLLER"
+```
+
+Eg.:
+
+```bash
+2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 1a)
 ```
 
 The exact name and revision may be different depending on hardware configuration.
