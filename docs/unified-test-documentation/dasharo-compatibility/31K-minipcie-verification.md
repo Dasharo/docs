@@ -87,7 +87,7 @@ Get-PnpDevice -PresentOnly | Select-String -Pattern "Wi-Fi"
 The output of the command should contain information about mounted on the board
 network controller.
 
-Exapmle output:
+Example output:
 
 ```bash
 Intel(R) Wi-Fi 6AX200 160MHz
