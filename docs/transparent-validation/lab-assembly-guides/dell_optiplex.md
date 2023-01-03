@@ -14,8 +14,7 @@ components in [requirements](#requirements).
 | Part         | Model Name                                                      | Image                                   |
 |:-------------|:---------------------------------------------------------------:|:---------------------------------------:|
 | Motherboard  | Dell OptiPlex 9010 SFF                                          |![Motherboard](images/motherboard.jpg)   |
-| CPU          | Intel Core i7-3770, 3.7G                                      |![CPU](images/cpu.jpg)                   |
-| Cooling      | Noctua CPU NH-U12S Redux (w/ Noctua NM-i17xx-MP78 Mounting Kit) |![Cooler](images/cpu-cooler.jpg)         |
+| CPU          | Intel Core i7-3770, 3.4GHz                                      |![CPU](images/cpu.jpg)                   |
 | RAM          | Kingston Fury Beast, DDR4, 4*8GB (32GB Total), 3600MHz, CL17    |![RAM](images/memory.jpg)                |
 | Power Supply | Seasonic Focus PX 750W 80 Plus Platinum                         |![Power Supply](images/power-supply.jpg) |
 | Storage      | SSD Intel 670p 512 GB M.2 2280 PCI-E x4 Gen3 NVMe               |![Storage](images/storage.jpg)           |
