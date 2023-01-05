@@ -1,22 +1,34 @@
 # Dasharo Compatibility: Platform suspend and resume
 
-## SUSP001.001 Platform suspend and resume
-
-**Test description**
-
-This test verifies whether the DUT might be put into suspend mode and then, by
-using the power button, might be properly resumed. This test case may be
-re-done several times to specify the platform stability.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Debian 11.0`
+## Test cases common documentation
 
 **Test setup**
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+1. Install the [Firmware test suite](https://wiki.ubuntu.com/FirmwareTestSuite)
+    package.
+
+## SUSP001.001 Platform suspend and resume (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the DUT platform suspend and resume
+functionallity works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -26,35 +38,44 @@ re-done several times to specify the platform stability.
 1. Open a terminal window and execute the following command:
 
     ```bash
-    date
+    sudo fwts s3 --results-output=stderr
     ```
 
-1. Write down the output of the above-mentioned command.
-1. Execute the following command in the terminal:
+    > Note: suspend test duration is set defaultly to 30 seconds. After
+    that time the device should be woken up automatically.
 
-    ```bash
-    systemctl suspend -i
-    ```
-
-1. Check the status of the platform.
-1. Press the power button once and note the result.
-1. Execute the following command in the terminal:
-
-    ```bash
-    journalctl | grep suspend
-    ```
+1. Log into system again.
+1. Note the results.
 
 **Expected result**
 
-1. After running suspend command the platform should enter the suspend mode.
-1. After pressing power button the platform should initiate the resume
-    procedure.
-1. Output of the last command should contains the line with the following
-    statement:
+The output of the command should contain information about test results
+(section `Test Failure Summary`).
 
-    ```bash
-    systemd-suspend.service: Succeeded
-    ```
+The test case passes only if the summary section shows that all minor
+tests included in `s3` test have been passed.
 
-1. Date of the above-described event should be later than date from
-    command `date` from the test steps' fourth point.
+Example output:
+
+```bash
+Test Failure Summary
+================================================================================
+
+Critical failures: NONE
+
+High failures: NONE
+
+Medium failures: NONE
+
+Low failures: NONE
+
+Other failures: NONE
+
+Test           |Pass |Fail |Abort|Warn |Skip |Info |
+---------------+-----+-----+-----+-----+-----+-----+
+s3             |    9|     |     |     |     |     |
+---------------+-----+-----+-----+-----+-----+-----+
+Total:         |    9|    0|    0|    0|    0|    0|
+---------------+-----+-----+-----+-----+-----+-----+
+```
+
