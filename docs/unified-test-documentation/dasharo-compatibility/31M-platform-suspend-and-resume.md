@@ -18,7 +18,7 @@
 **Test description**
 
 This test aims to verify that the DUT platform suspend and resume
-functionallity works correctly.
+functionality works correctly.
 
 **Test configuration data**
 
