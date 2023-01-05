@@ -404,3 +404,106 @@ Example output:
 ```text
 SpecVersion=2.0
 ```
+
+## TPM003.001 Check TPM Physical Presence Interface (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the TPM Physical Presence Interface is correctly
+recognized by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+2. `OPERATING_SYSTEM` = Ubuntu 22.04
+3. Platform with TPM module present.
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Check the version of TPM PPI ins sysfs:
+   `cat /sys/class/tpm/tpm0/ppi/version`
+
+**Expected result**
+
+The command should return information about the TPM PPI version (only 1.3 is
+valid). If PPI is not available the file will not be found and test fails.
+
+Example output:
+
+```bash
+$ cat /sys/class/tpm/tpm0/ppi/version
+1.3
+```
+
+## TPM003.002 Check TPM Physical Presence Interface (Windows 11)
+
+**Test description**
+
+This test aims to verify that the TPM Physical Presence Interface is correctly
+recognized by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+2. `OPERATING_SYSTEM` = Windows 11
+3. Platform with TPM module present.
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Open a PowerShell as administrator and run the following command:
+
+    ```PowerShell
+    tpmtool getdeviceinformation
+    ```
+
+**Expected result**
+
+The command should return information about the TPM PPI version (only 1.3 is
+valid). If PPI is not available on the list, test fails.
+
+Example output:
+
+```text
+tpmtool getdeviceinformation
+
+-TPM Present: True
+-TPM Version: 2.0
+-TPM Manufacturer ID: INTC
+-TPM Manufacturer Full Name: Intel
+-TPM Manufacturer Version: 600.18.0.0
+-PPI Version: 1.3
+-Is Initialized: True
+-Ready For Storage: True
+-Ready For Attestation: True
+-Is Capable For Attestation: True
+-Clear Needed To Recover: False
+-Clear Possible: True
+-TPM Has Vulnerable Firmware: False
+-Maintenance Task Complete: True
+-Bitlocker PCR7 Binding State: Binding Not Possible
+-TPM Spec Version: 1.38
+-TPM Errata Date: Wednesday, December 18, 2019
+-PC Client Version: 1.04
+-Lockout Information:
+	-Is Locked Out: False
+	-Lockout Counter: 0
+	-Max Auth Fail: 32
+	-Lockout Interval: 7200s
+	-Lockout Recovery: 86400s
+```
