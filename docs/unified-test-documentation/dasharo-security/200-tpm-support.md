@@ -428,8 +428,12 @@ recognized by the operating system.
 1. Power on the DUT.
 2. Boot into the system.
 3. Log into the system by using the proper login and password.
-4. Check the version of TPM PPI ins sysfs:
-   `cat /sys/class/tpm/tpm0/ppi/version`
+4. Open the terminal and run the following command to check the version of TPM
+   PPI in sysfs:
+
+    ```bash
+    cat /sys/class/tpm/tpm0/ppi/version
+    ```
 
 **Expected result**
 
@@ -479,7 +483,7 @@ valid). If PPI is not available on the list, test fails.
 
 Example output:
 
-```text
+```PowerShell
 tpmtool getdeviceinformation
 
 -TPM Present: True
