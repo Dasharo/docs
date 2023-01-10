@@ -240,7 +240,7 @@ mechanism is tested in this case.
 Below is shown an example output from the command `cat /var/log/pm-suspend.log`:
 
 ```bash
-Initial commandline parameters: 
+Initial commandline parameters:
 wto, 10 sty 2023, 14:32:00 CET: Running hooks for suspend.
 Running hook /usr/lib/pm-utils/sleep.d/000kernel-change suspend suspend:
 /usr/lib/pm-utils/sleep.d/000kernel-change suspend suspend: success.
