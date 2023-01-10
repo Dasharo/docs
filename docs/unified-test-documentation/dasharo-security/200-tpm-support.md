@@ -405,6 +405,7 @@ Example output:
 SpecVersion=2.0
 ```
 
+<<<<<<< HEAD
 ## TPM003.001 Check TPM Physical Presence Interface (firmware)
 
 **Test description**
@@ -631,6 +632,13 @@ Press ESC to reject this change request and continue
 This test aims to verify that CREATEPRIMARY function works as expected. This
 command is used to create a primary object under one of the hierarchies: Owner,
 Platform, Endorsement, NULL.
+=======
+## TPM003.001 PCRREAD function (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that PCRREAD function works properly
+>>>>>>> add tpm pcr operation tests
 
 **Test configuration data**
 
@@ -647,9 +655,13 @@ Platform, Endorsement, NULL.
     sudo apt-get install tpm2-tools
     ```
 
+<<<<<<< HEAD
     Alternativley, use:
     [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
     .
+=======
+    [Building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+>>>>>>> add tpm pcr operation tests
 
 **Test steps**
 
@@ -659,13 +671,18 @@ Platform, Endorsement, NULL.
 1. Execute command in the terminal:
 
     ```bash
+<<<<<<< HEAD
     sudo tpm2_createprimary -c primary.ctx --format=pem --output=public.pem
+=======
+    sudo tpm2_pcrread
+>>>>>>> add tpm pcr operation tests
     ```
 
 1. Note the result
 
 **Expected result**
 
+<<<<<<< HEAD
 1. Output should contain information abou created primary object, and look
     similar as below:
 
@@ -704,6 +721,68 @@ Platform, Endorsement, NULL.
 This test aims to verify that NVDEFINE and NVUNDEFINE functions are working as
 expected. Those functions are used to define and undefine a TPM Non-Volatile
 (NV) index.
+=======
+1. Output from the command shoul look like below:
+
+    ```bash
+    sha1:
+        0 : 0xC928CC5971F886160585BDD9F145CFC0172BCD82
+        1 : 0xBF1E05F70D069555A6605F004AE3409E5967A94D
+        2 : 0xB2A83B0EBF2F8374299A5B2BDFC31EA955AD7236
+        3 : 0xB2A83B0EBF2F8374299A5B2BDFC31EA955AD7236
+        4 : 0xA1A8B73554FD20FAA45FF03A7B5B19092321C614
+        5 : 0x7F3D0A896E99429093A2C92FAFDCAC5F79895719
+        6 : 0xB2A83B0EBF2F8374299A5B2BDFC31EA955AD7236
+        7 : 0x7679047866E616450760CE711EA91126EB45BEF6
+        8 : 0x8C126E92B82BCF9769A9EDA7CAE05FCB2A15A0EB
+        9 : 0xD0BCA06196EC06094307F435D8788E9426D37166
+        10: 0x881A056121204AAD298010A64011E97E8F63E31C
+        11: 0x0000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000
+        14: 0x77DB66D60AA0C2CD1CEA6C34FED4F2AA014BF285
+        15: 0x0000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x0000000000000000000000000000000000000000
+    sha256:
+        0 : 0x398991DE8A69685E63E5BC5846CA402CB2F4AE46E89AB977AE9DE6F25D28320F
+        1 : 0xE7F444390126872E822F9006423EBB22FD4A340A95BBA4E98EB354EEAC828BEF
+        2 : 0x884314F10588F807B343C2F23F292E6F748ED4F555FBB5004DBFBF2387E161AA
+        3 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        4 : 0x368F85B3013041DFE203FAAA364F00B07C5DA7B1E5F1DBF2EFB06FA6B9BD92DE
+        5 : 0xB33E1B199263B8FF8644BC166398CCAD03FB5F03FC15CF7A06C1DD73F7E87239
+        6 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        7 : 0xB926225AC488E9C50EF2FA815AA7104B385A06907093BFB1DC62EEB7ABECDDF1
+        8 : 0x7A9EBF0BE340214249EE6025BE1F6093AEDDCFC80A2DF75023B7758BF2E0EF31
+        9 : 0x696B6D9CFC3CCB1520592E1007C0B655EF3AA6C6151823AC944AB4BAFB91743C
+        10: 0x93CA5EEDAD309A46EE27BF7E11C962403B31CB3985B72EC9EAC6997F419F4692
+        11: 0x0000000000000000000000000000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000000000000000000000000000
+        14: 0xE3991B7DDD47BE7E92726A832D6874C5349B52B789FA0DB8B558C69FEA29574E
+        15: 0x0000000000000000000000000000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x0000000000000000000000000000000000000000000000000000000000000000
+    ```
+
+## TPM004.001 PCRALLOCATE function (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that `PCRALLOCATE` function works properly.
+>>>>>>> add tpm pcr operation tests
 
 **Test configuration data**
 
@@ -720,6 +799,7 @@ expected. Those functions are used to define and undefine a TPM Non-Volatile
     sudo apt-get install tpm2-tools
     ```
 
+<<<<<<< HEAD
     Alternativley, use:
     [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
     .
@@ -767,6 +847,9 @@ expected. Those functions are used to define and undefine a TPM Non-Volatile
     ERROR: Esys_TR_FromTPMPublic(0x18B) - tpm:handle(1):the handle is not correct for the use
     ERROR: Unable to run tpm2_nvread
     ```
+=======
+    [Building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+>>>>>>> add tpm pcr operation tests
 
 **Test steps**
 
@@ -776,13 +859,18 @@ expected. Those functions are used to define and undefine a TPM Non-Volatile
 1. Execute command in the terminal:
 
     ```bash
+<<<<<<< HEAD
     sudo tpm2_nvundefine 0x1500016
+=======
+    sudo tpm2_pcrallocate
+>>>>>>> add tpm pcr operation tests
     ```
 
 1. Note the result
 
 **Expected result**
 
+<<<<<<< HEAD
 1. Output should be empty. If region was undefined or error occurred output
     should look like this:
 
@@ -802,6 +890,21 @@ expected. Those functions are used to define and undefine a TPM Non-Volatile
 This test aims to verify that CREATE function works as expected. It will create
 an object using all the default values and store the TPM sealed private and
 public portions to the paths specified via `-u` and `-r` respectively.
+=======
+1. Output from the command shoul look like below:
+
+    ```bash
+    selected-pcrs:
+      - sha1: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+      - sha256: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+    ```
+
+## TPM005.001  (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that
+>>>>>>> add tpm pcr operation tests
 
 **Test configuration data**
 
@@ -818,9 +921,13 @@ public portions to the paths specified via `-u` and `-r` respectively.
     sudo apt-get install tpm2-tools
     ```
 
+<<<<<<< HEAD
     Alternativley, use:
     [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
     .
+=======
+    [Building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+>>>>>>> add tpm pcr operation tests
 
 **Test steps**
 
@@ -830,13 +937,18 @@ public portions to the paths specified via `-u` and `-r` respectively.
 1. Execute command in the terminal:
 
     ```bash
+<<<<<<< HEAD
     sudo tpm2_create -C primary.ctx -u obj.pub -r obj.priv
+=======
+    tpm2_
+>>>>>>> add tpm pcr operation tests
     ```
 
 1. Note the result
 
 **Expected result**
 
+<<<<<<< HEAD
 1. Output should contain information about newly created object, and look
 similar as below:
 
@@ -1071,3 +1183,6 @@ uses a hash function and a secret key.
 
 1. The output of the last command shouldn't display any warnings and errors.
 1. The `hmac.out` file should be correctly created and shouldn't be empty.
+=======
+1. rhsdth
+>>>>>>> add tpm pcr operation tests
