@@ -287,7 +287,6 @@ present, ready and enabled:
 TpmPresent     : True
 TpmReady       : True
 TpmEnabled     : True
-
 ```
 
 ## TPM002.001 Verify TPM version (firmware)
@@ -528,7 +527,6 @@ Example output:
 
 ```PowerShell
 tpmtool getdeviceinformation
-
 -TPM Present: True
 -TPM Version: 2.0
 -TPM Manufacturer ID: INTC
@@ -609,17 +607,217 @@ SHA256 to SHA1):
 ```txt
 A configuration change was requested to PCR bank(s) of this computer's TPM
 (Trusted Platform Module)
-
 WARNING: Changing the PCR bank(s) of the boot measurements may prevent the
 Operating System from properly processing the measurements. Please check if
 your Operating System supports the new PCR bank(s).
-
 WARNING: Secrets in the TPM that are bound to the boot state of your machine
 may become unusable.
-
 Current PCRBanks is 0x2. (SHA256)
 New PCRBanks is 0x1. (SHA1)
-
 Press F12 change the boot measurements to use PCR bank(s) of the TPM
 Press ESC to reject this change request and continue
 ```
+
+## TPM013.001 Signing the file (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the TPM supports file signing.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open the terminal and run the following command to clear TPM:
+
+    ```bash
+    sudo tpm2_clear
+    ```
+
+1. Run the following set of commands to generate the required keys and files:
+
+    ```bash
+    sudo tpm2_createprimary -c primary_key.ctx
+    sudo tpm2_create -u key.pub -r key.priv -C primary_key.ctx
+    sudo tpm2_load -C primary_key.ctx -u key.pub -r key.priv -c key.ctx
+    echo "my secret" > secret.data
+    ```
+
+1. Run the following command to sign the file:
+
+    ```bash
+    sudo tpm2_sign -c key.ctx -o sig.rssa secret.data
+    ```
+
+1. Run the following command to verify the signed file:
+
+    ```bash
+    sudo tpm2_verifysignature -c key.ctx -s sig.rssa -m secret.data
+    ```
+
+**Expected result**
+
+The output of the last command shouldn't display any warnings and errors.
+
+## TPM014.001 Encryption and Decryption of the file (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the TPM supports the encryption and decryption of
+the file.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open the terminal and run the following command to clear TPM:
+
+    ```bash
+    sudo tpm2_clear
+    ```
+
+1. Run the following set of commands to generate the required keys and files:
+
+    ```bash
+    sudo tpm2_createprimary -c primary_key.ctx
+    sudo tpm2_create -u key.pub -r key.priv -C primary_key.ctx
+    sudo tpm2_load -C primary_key.ctx -u key.pub -r key.priv -c key.ctx
+    echo "my secret" > secret.data
+    ```
+
+1. Run the following command to encrypt the file:
+
+    ```bash
+    sudo tpm2_encryptdecrypt -c key.ctx -o secret.enc secret.data
+    ```
+
+1. Run the following command to decrypt the file:
+
+    ```bash
+    sudo tpm2_encryptdecrypt -d -c key.ctx -o secret.dec secret.enc
+    ```
+
+1. Run the following command to check the file content:
+
+    ```bash
+    cat secret.dec
+    ```
+
+**Expected result**
+
+The output of the last command should display the content of the `secret.data`
+file, in this case, it should be `my secret`.
+
+## TPM015.001 Hashing the file (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the TPM supports file hashing.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open the terminal and run the following command to clear TPM:
+
+    ```bash
+    sudo tpm2_clear
+    ```
+
+1. Run the following set of commands to hash the file:
+
+    ```bash
+    echo "my secret" > secret.data
+    sudo tpm2_hash -o hash.out -t ticket.out secret.data
+    ```
+
+**Expected result**
+
+1. The output of the last command shouldn't display any warnings and errors.
+1. Files `hash.out` and `ticket.out` should be correctly created and shouldn't
+   be empty.
+
+## TPM016.001 Performing HMAC operation on the file (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the TPM supports HMAC operation. HMAC (Hash-based
+message authentication code) is a cryptographic authentication technique that
+uses a hash function and a secret key.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open the terminal and run the following command to clear TPM:
+
+    ```bash
+    sudo tpm2_clear
+    ```
+
+1. Run the following set of commands to generate the required keys and files:
+
+    ```bash
+    sudo tpm2_createprimary -c primary_key.ctx
+    sudo tpm2_create -G hmac -c hmac.key -C primary_key.ctx
+    echo "my secret" > secret.data
+    ```
+
+1. Run the following command to perform the HMAC operation:
+
+    ```bash
+    sudo tpm2_hmac -c hmac.key -o hmac.out secret.data
+    ```
+
+**Expected result**
+
+1. The output of the last command shouldn't display any warnings and errors.
+1. The `hmac.out` file should be correctly created and shouldn't be empty.
