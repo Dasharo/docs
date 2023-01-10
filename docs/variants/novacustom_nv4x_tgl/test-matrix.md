@@ -46,7 +46,7 @@ subjected from before the release of the new binary.
 | 33.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 | 34.  | [NVIDIA Graphics support][NVI]                    | NVI           | All                                  |
 | 35.  | [Fedora support][FED]                             | FED           | All                                  |
-| 36.  | [Platform suspend and resume][SUSP]                    | SUSP          | All                                  |
+| 36.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -155,7 +155,7 @@ subjected from before the release of the new binary.
 | 32.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
 | 33.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 | 34.  | [Fedora support][FED]                             | FED           | All                                  |
-| 35.  | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
+| 35.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
 
 ### Module: Dasharo security
 
