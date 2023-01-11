@@ -287,6 +287,7 @@ present, ready and enabled:
 TpmPresent     : True
 TpmReady       : True
 TpmEnabled     : True
+
 ```
 
 ## TPM002.001 Verify TPM version (firmware)
@@ -527,7 +528,6 @@ Example output:
 
 ```PowerShell
 tpmtool getdeviceinformation
-
 -TPM Present: True
 -TPM Version: 2.0
 -TPM Manufacturer ID: INTC
@@ -608,20 +608,260 @@ SHA256 to SHA1):
 ```txt
 A configuration change was requested to PCR bank(s) of this computer's TPM
 (Trusted Platform Module)
-
 WARNING: Changing the PCR bank(s) of the boot measurements may prevent the
 Operating System from properly processing the measurements. Please check if
 your Operating System supports the new PCR bank(s).
-
 WARNING: Secrets in the TPM that are bound to the boot state of your machine
 may become unusable.
-
 Current PCRBanks is 0x2. (SHA256)
 New PCRBanks is 0x1. (SHA1)
-
 Press F12 change the boot measurements to use PCR bank(s) of the TPM
 Press ESC to reject this change request and continue
 ```
+
+## TPM009.001 CREATEPRIMARY Function Verification (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that CREATEPRIMARY function works as expected. This
+command is used to create a primary object under one of the hierarchies: Owner,
+Platform, Endorsement, NULL.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_createprimary -c primary.ctx --format=pem --output=public.pem
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Output should contain information abou created primary object, and look
+    similar as below:
+
+    ```bash
+    name-alg:
+      value: sha256
+      raw: 0xb
+    attributes:
+      value: fixedtpm|fixedparent|sensitivedataorigin|userwithauth|restricted|decrypt
+      raw: 0x30072
+    type:
+      value: rsa
+      raw: 0x1
+    exponent: 65537
+    bits: 2048
+    scheme:
+      value: null
+      raw: 0x10
+    scheme-halg:
+      value: (null)
+      raw: 0x0
+    sym-alg:
+      value: aes
+      raw: 0x6
+    sym-mode:
+      value: cfb
+      raw: 0x43
+    sym-keybits: 128
+    rsa: b24f8e578d946a2157b1b442940fd5236bcc5041cfae37a56515eb28be8d7c06435d7356ce6c635c17cfc98031217fb462d94dc62821f0e0f2912012660305279a12a9359f23ba25cddb47f1e18d17b4af7bf8ef16d8daf65b9a5df8d669366ba2c9f7b187c64f59d6a79a3bb5b5f96e54529e69b3235311a87bf49c84b71cde1df5c6f82bf468653d9013c430044eb44ece988fecb59d4cfc37d4575d0dca1b68ad0893aa85eb8159c8c71dca0482e5915a28da456668a07a55dc5691e9c8863125e58d41de1cf7b6b97f35148a08c241a20571dfce16522b95f04a5be0fb5fff05c5075fb6d7921d87056169bb02adc31af257fbc512ebe0d95b18a3f94dad
+    ```
+
+## TPM010.001 NVDEFINE and NVUNDEFINE Functions Verification (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that NVDEFINE and NVUNDEFINE functions are working as
+expected. Those functions are used to define and undefine a TPM Non-Volatile
+(NV) index.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute commands in the terminal:
+
+    ```bash
+    sudo tpm2_nvdefine -C o -s 32 -a "ownerread|policywrite|ownerwrite" 1
+    echo "nvtest" > nv.dat
+    sudo tpm2_nvwrite -C o -i nv.dat 1
+    sudo tpm2_nvread -C o -s 32 1
+    ```
+
+1. Note the result
+1. Execute commands in the terminal:
+
+    ```bash
+    sudo tpm2_nvundefine -C o 1
+    tpm2_nvread -C o -s 32 1
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. First output should show newly created NV index contents and look similar as
+    below:
+
+    ```bash
+    nvtest
+    ```
+
+1. Second output should throw error indicating that object doesn't exist and it
+    should look similar as below:
+
+    ```bash
+    WARNING:esys:src/tss2-esys/api/Esys_NV_ReadPublic.c:309:Esys_NV_ReadPublic_Finish() Received TPM Error 
+    ERROR:esys:src/tss2-esys/esys_tr.c:209:Esys_TR_FromTPMPublic_Finish() Error NV_ReadPublic ErrorCode (0x0000018b) 
+    ERROR:esys:src/tss2-esys/esys_tr.c:320:Esys_TR_FromTPMPublic() Error TR FromTPMPublic ErrorCode (0x0000018b) 
+    ERROR: Esys_TR_FromTPMPublic(0x18B) - tpm:handle(1):the handle is not correct for the use
+    ERROR: Unable to run tpm2_nvread
+    ```
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_nvundefine 0x1500016
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Output should be empty. If region was undefined or error occured output
+    should look like this:
+
+    ```bash
+    WARNING:esys:src/tss2-esys/api/Esys_NV_ReadPublic.c:309:Esys_NV_ReadPublic_Finish() Received TPM Error 
+    ERROR:esys:src/tss2-esys/esys_tr.c:209:Esys_TR_FromTPMPublic_Finish() Error NV_ReadPublic ErrorCode (0x0000018b) 
+    ERROR:esys:src/tss2-esys/esys_tr.c:320:Esys_TR_FromTPMPublic() Error TR FromTPMPublic ErrorCode (0x0000018b) 
+    ERROR: Esys_TR_FromTPMPublic(0x18B) - tpm:handle(1):the handle is not correct for the use
+    ERROR: Failed to read the public part of NV index 0x1500016
+    ERROR: Unable to run tpm2_nvundefine
+    ```
+
+## TPM011.001 CREATE Function (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that CREATE function works as expected. It will create
+an object using all the default values and store the TPM sealed private and
+public portions to the paths specified via `-u` and `-r` respectively.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_create -C primary.ctx -u obj.pub -r obj.priv
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Output should contain information about newly created object, and look
+similar as below:
+
+    ```bash
+    name-alg:
+      value: sha256
+      raw: 0xb
+    attributes:
+      value: fixedtpm|fixedparent|sensitivedataorigin|userwithauth|decrypt|sign
+      raw: 0x60072
+    type:
+      value: rsa
+      raw: 0x1
+    exponent: 65537
+    bits: 2048
+    scheme:
+      value: null
+      raw: 0x10
+    scheme-halg:
+      value: (null)
+      raw: 0x0
+    sym-alg:
+      value: null
+      raw: 0x10
+    sym-mode:
+      value: (null)
+      raw: 0x0
+    sym-keybits: 0
+    rsa: ae99d4e1d6cebe30c3b26b891e63965af65d82ff10fe2e476b961e23df4a60f5b42472dae9abe4c8462b172c06b2017ec3883292b91078c488ce3c7ef6b5089b62120cb85eb4a36cf6573e09fbc4b06c27c37ea35044f71825ff6735da039d0d3d16325c11183194be2eb1ca3cf05e8fd96ae8086034650a21298c081cad51dfce7334e2fef70c4be0eff62c1eb1cef39433b90f93fd653d9ef5e2ad9769c303f4645579f12691fbd112260da3f9615f73af43edc8bf537748be1507e5f878f52eed2161986ac066cc35216e6ea1a6da0a8f192a341c9d383c420c5c2172805a45afb34a9ce3a6f262acb8ece5351206c9b520909a579ba221c4cdd587f9502f
+    ```
 
 ## TPM013.001 Signing the file (Ubuntu 22.04)
 
