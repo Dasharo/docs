@@ -51,6 +51,8 @@ flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
 
 #### Prerequisites
 
+The full set is now available at our [online shop](https://3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/).
+
 1. CH341A kit with 1.8V level-shifter. Can be bought on e.g. [Amazon](https://www.amazon.com/programmer-ch341a-Programmer-Adapter-Converter/dp/B07WP9FKZ2)
 
     ![](/images/ch341a_rec/ch341a_kit.jpg)
