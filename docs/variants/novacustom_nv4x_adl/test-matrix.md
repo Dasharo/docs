@@ -43,6 +43,7 @@ subjected from before the release of the new binary.
 | 32.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
 | 33.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 | 34.  | [Fedora support][FED]                             | FED           | All                                  |
+| 35.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -78,6 +79,7 @@ subjected from before the release of the new binary.
 [FED]: ../../unified-test-documentation/dasharo-compatibility/310-fedora-support.md
 [DDP]: ../../unified-test-documentation/dasharo-compatibility/330-docking-station-display-ports.md
 [DET]: ../../unified-test-documentation/dasharo-compatibility/340-docking-station-net-interface.md
+[SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
 
 ## Module: Dasharo security
 
