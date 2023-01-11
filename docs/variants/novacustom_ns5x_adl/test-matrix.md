@@ -106,10 +106,8 @@ subjected before the release of the new binary.
 | 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
 | 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
 | 4.   | [Custom fan curve][CFC]                           | CFC           | All                                  |
-| 5.   | [Cyclic platform suspend and resume][CPS]         | CPS           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
 [CFC]: ../../unified-test-documentation/dasharo-performance/406-custom-fan-curve.md
-[CPS]: ../../unified-test-documentation/dasharo-performance/407-cyclic-suspend-and-resume.md
