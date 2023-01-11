@@ -405,7 +405,6 @@ Example output:
 SpecVersion=2.0
 ```
 
-<<<<<<< HEAD
 ## TPM003.001 Check TPM Physical Presence Interface (firmware)
 
 **Test description**
@@ -625,20 +624,12 @@ Press F12 change the boot measurements to use PCR bank(s) of the TPM
 Press ESC to reject this change request and continue
 ```
 
-## TPM009.001 CREATEPRIMARY Function Verification (Ubuntu 22.04)
+## TPM004.001 PCRREAD Function Verification (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that CREATEPRIMARY function works as expected. This
-command is used to create a primary object under one of the hierarchies: Owner,
-Platform, Endorsement, NULL.
-=======
-## TPM003.001 PCRREAD function (Ubuntu 22.04)
-
-**Test description**
-
-This test aims to verify that PCRREAD function works properly
->>>>>>> add tpm pcr operation tests
+This test aims to verify that PCRREAD function works properly. Function reads
+contains of PCR banks and returns it to the terminal.
 
 **Test configuration data**
 
@@ -655,13 +646,9 @@ This test aims to verify that PCRREAD function works properly
     sudo apt-get install tpm2-tools
     ```
 
-<<<<<<< HEAD
     Alternativley, use:
     [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
     .
-=======
-    [Building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
->>>>>>> add tpm pcr operation tests
 
 **Test steps**
 
@@ -671,58 +658,15 @@ This test aims to verify that PCRREAD function works properly
 1. Execute command in the terminal:
 
     ```bash
-<<<<<<< HEAD
-    sudo tpm2_createprimary -c primary.ctx --format=pem --output=public.pem
-=======
     sudo tpm2_pcrread
->>>>>>> add tpm pcr operation tests
     ```
 
 1. Note the result
 
 **Expected result**
 
-<<<<<<< HEAD
-1. Output should contain information abou created primary object, and look
-    similar as below:
-
-    ```bash
-    name-alg:
-      value: sha256
-      raw: 0xb
-    attributes:
-      value: fixedtpm|fixedparent|sensitivedataorigin|userwithauth|restricted|decrypt
-      raw: 0x30072
-    type:
-      value: rsa
-      raw: 0x1
-    exponent: 65537
-    bits: 2048
-    scheme:
-      value: null
-      raw: 0x10
-    scheme-halg:
-      value: (null)
-      raw: 0x0
-    sym-alg:
-      value: aes
-      raw: 0x6
-    sym-mode:
-      value: cfb
-      raw: 0x43
-    sym-keybits: 128
-    rsa: b24f8e578d946a2157b1b442940fd5236bcc5041cfae37a56515eb28be8d7c06435d7356ce6c635c17cfc98031217fb462d94dc62821f0e0f2912012660305279a12a9359f23ba25cddb47f1e18d17b4af7bf8ef16d8daf65b9a5df8d669366ba2c9f7b187c64f59d6a79a3bb5b5f96e54529e69b3235311a87bf49c84b71cde1df5c6f82bf468653d9013c430044eb44ece988fecb59d4cfc37d4575d0dca1b68ad0893aa85eb8159c8c71dca0482e5915a28da456668a07a55dc5691e9c8863125e58d41de1cf7b6b97f35148a08c241a20571dfce16522b95f04a5be0fb5fff05c5075fb6d7921d87056169bb02adc31af257fbc512ebe0d95b18a3f94dad
-    ```
-
-## TPM010.001 NVDEFINE and NVUNDEFINE Functions Verification (Ubuntu 22.04)
-
-**Test description**
-
-This test aims to verify that NVDEFINE and NVUNDEFINE functions are working as
-expected. Those functions are used to define and undefine a TPM Non-Volatile
-(NV) index.
-=======
-1. Output from the command shoul look like below:
+1. Output from the command should show contents of DUT's PCR banks. Similar
+as shown below:
 
     ```bash
     sha1:
@@ -777,12 +721,12 @@ expected. Those functions are used to define and undefine a TPM Non-Volatile
         23: 0x0000000000000000000000000000000000000000000000000000000000000000
     ```
 
-## TPM004.001 PCRALLOCATE function (Ubuntu 22.04)
+## TPM005.001 PCRALLOCATE Function (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that `PCRALLOCATE` function works properly.
->>>>>>> add tpm pcr operation tests
+This test aims to verify that `PCRALLOCATE` function works properly. It allows
+the user to specify a PCR allocation for the TPM.
 
 **Test configuration data**
 
@@ -799,7 +743,367 @@ This test aims to verify that `PCRALLOCATE` function works properly.
     sudo apt-get install tpm2-tools
     ```
 
-<<<<<<< HEAD
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_pcrallocate
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Output from the command should show all non-empty PCR entries:
+
+    ```bash
+    selected-pcrs:
+      - sha1: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+      - sha256: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+    ```
+
+## TPM006.001 ENCRYPT And DECRYPT Functions (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that ENCRYPT and DECRYPT functions are working
+properly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute commands in the terminal:
+
+    ```bash
+    echo "my secret" > secret.dat
+    sudo tpm2_encryptdecrypt -c key.ctx -o secret.enc secret.dat
+    sudo tpm2_encryptdecrypt -d -c key.ctx -o secret.dec secret.enc
+    ```
+
+1. Read `secret.dec` contents:
+
+    ```bash
+    cat secret.dec
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Command should output:
+
+    ```bash
+    my secret
+    ```
+
+## TPM007.001 PCREVENT Function (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that PCREVENT function works properly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    echo "foo" > data
+    ```
+
+1. Then hash the `data` using:
+
+    ```bash
+    sudo tpm2_pcrevent data
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. If process succeeds, last command should give similar output:
+
+    ```bash
+    sha1: f1d2d2f924e986ac86fdf7b36c94bcdf32beec15
+    sha256: b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c
+    sha384: 8effdabfe14416214a250f935505250bd991f106065d899db6e19bdc8bf648f3ac0f1935c4f65fe8f798289b1a0d1e06
+    sm3_256: 2b14a1fc49869413b0beb707069cffc0c6b0a51f3fedb9ce072c80709652b3ae
+    ```
+
+## TPM008.001 PCREXTEND And PCRRESET Functions (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that PCREXTEND and PCRRESET functions are working
+properly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_pcrextend 23:sha256=b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c
+    ```
+
+1. Execute below command to verify PCR banks:
+
+    ```bash
+    sudo tpm2_pcrread
+    ```
+
+1. Reset the PCR's 23rd bank using:
+
+    ```bash
+    sudo tpm2_pcrreset 23
+    ```
+
+1. Execute below command to verify PCR banks:
+
+    ```bash
+    sudo tpm2_pcrread
+    ```
+
+1. Note the results
+
+**Expected result**
+
+1. Output from **1st** `pcrread` command should be similar:
+
+    ```bash
+      sha1:
+      sha256:
+        0 : 0x2FC7F44F7E383FF5D5B5A9FAEF540837CE18EE09475FDA609E8CF2417C7C9DC5
+        1 : 0xC7F38AA0EF7FF9E58BDB9162EFAF9A4FDC28AE8F8E6D757751D755E4BBBB8A87
+        2 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        3 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        4 : 0xEADC116BD5965D2E219CB51186A93E7C7EC06A588B6ABCB1FA40356A24F17AD6
+        5 : 0x19ED07631A649855E865AC8DEF685690416C8C6946327FE880418F674C48D061
+        6 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        7 : 0xDA487D18B6A844D01D0947C71DC000B92A13FE2C73C59A4FF5888CFCA5DECCEB
+        8 : 0x9710FC6EAAA91470C53190E9D8370AC50C06D66519B1C5A4690062C02D0E78E3
+        9 : 0x9C569695AF119F0E702207386523A2EB25540FBD468A2F289A813F95C2C0478A
+        10: 0x24F2CDDD21C733425EC7B65E15A0DD1EF8FB108529F9A167D672699C54736672
+        11: 0x0000000000000000000000000000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000000000000000000000000000
+        14: 0xE3991B7DDD47BE7E92726A832D6874C5349B52B789FA0DB8B558C69FEA29574E
+        15: 0x0000000000000000000000000000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x44F12027AB81DFB6E096018F5A9F19645F988D45529CDED3427159DC0032D921
+      sha384:
+      sm3_256:
+    ```
+
+1. Element `23` in `sha256` section should be exactly the same as input in
+    the first command.
+
+1. Output from **2nd** `pcrread` command should be similar:
+
+    ```bash
+      sha1:
+      sha256:
+        0 : 0x2FC7F44F7E383FF5D5B5A9FAEF540837CE18EE09475FDA609E8CF2417C7C9DC5
+        1 : 0xC7F38AA0EF7FF9E58BDB9162EFAF9A4FDC28AE8F8E6D757751D755E4BBBB8A87
+        2 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        3 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        4 : 0xEADC116BD5965D2E219CB51186A93E7C7EC06A588B6ABCB1FA40356A24F17AD6
+        5 : 0x19ED07631A649855E865AC8DEF685690416C8C6946327FE880418F674C48D061
+        6 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        7 : 0xDA487D18B6A844D01D0947C71DC000B92A13FE2C73C59A4FF5888CFCA5DECCEB
+        8 : 0x9710FC6EAAA91470C53190E9D8370AC50C06D66519B1C5A4690062C02D0E78E3
+        9 : 0x9C569695AF119F0E702207386523A2EB25540FBD468A2F289A813F95C2C0478A
+        10: 0x24F2CDDD21C733425EC7B65E15A0DD1EF8FB108529F9A167D672699C54736672
+        11: 0x0000000000000000000000000000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000000000000000000000000000
+        14: 0xE3991B7DDD47BE7E92726A832D6874C5349B52B789FA0DB8B558C69FEA29574E
+        15: 0x0000000000000000000000000000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x0000000000000000000000000000000000000000000000000000000000000000
+      sha384:
+      sm3_256:
+    ```
+
+## TPM009.001 CREATEPRIMARY Function Verification (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that CREATEPRIMARY function works as expected. This
+command is used to create a primary object under one of the hierarchies: Owner,
+Platform, Endorsement, NULL.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_createprimary -c primary.ctx --format=pem --output=public.pem
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Output should contain information abou created primary object, and look
+    similar as below:
+
+    ```bash
+    name-alg:
+      value: sha256
+      raw: 0xb
+    attributes:
+      value: fixedtpm|fixedparent|sensitivedataorigin|userwithauth|restricted|decrypt
+      raw: 0x30072
+    type:
+      value: rsa
+      raw: 0x1
+    exponent: 65537
+    bits: 2048
+    scheme:
+      value: null
+      raw: 0x10
+    scheme-halg:
+      value: (null)
+      raw: 0x0
+    sym-alg:
+      value: aes
+      raw: 0x6
+    sym-mode:
+      value: cfb
+      raw: 0x43
+    sym-keybits: 128
+    rsa: b24f8e578d946a2157b1b442940fd5236bcc5041cfae37a56515eb28be8d7c06435d7356ce6c635c17cfc98031217fb462d94dc62821f0e0f2912012660305279a12a9359f23ba25cddb47f1e18d17b4af7bf8ef16d8daf65b9a5df8d669366ba2c9f7b187c64f59d6a79a3bb5b5f96e54529e69b3235311a87bf49c84b71cde1df5c6f82bf468653d9013c430044eb44ece988fecb59d4cfc37d4575d0dca1b68ad0893aa85eb8159c8c71dca0482e5915a28da456668a07a55dc5691e9c8863125e58d41de1cf7b6b97f35148a08c241a20571dfce16522b95f04a5be0fb5fff05c5075fb6d7921d87056169bb02adc31af257fbc512ebe0d95b18a3f94dad
+    ```
+
+## TPM010.001 NVDEFINE and NVUNDEFINE Functions Verification (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that NVDEFINE and NVUNDEFINE functions are working as
+expected. Those functions are used to define and undefine a TPM Non-Volatile
+(NV) index.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
     Alternativley, use:
     [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
     .
@@ -847,9 +1151,6 @@ This test aims to verify that `PCRALLOCATE` function works properly.
     ERROR: Esys_TR_FromTPMPublic(0x18B) - tpm:handle(1):the handle is not correct for the use
     ERROR: Unable to run tpm2_nvread
     ```
-=======
-    [Building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
->>>>>>> add tpm pcr operation tests
 
 **Test steps**
 
@@ -859,18 +1160,13 @@ This test aims to verify that `PCRALLOCATE` function works properly.
 1. Execute command in the terminal:
 
     ```bash
-<<<<<<< HEAD
     sudo tpm2_nvundefine 0x1500016
-=======
-    sudo tpm2_pcrallocate
->>>>>>> add tpm pcr operation tests
     ```
 
 1. Note the result
 
 **Expected result**
 
-<<<<<<< HEAD
 1. Output should be empty. If region was undefined or error occurred output
     should look like this:
 
@@ -890,21 +1186,6 @@ This test aims to verify that `PCRALLOCATE` function works properly.
 This test aims to verify that CREATE function works as expected. It will create
 an object using all the default values and store the TPM sealed private and
 public portions to the paths specified via `-u` and `-r` respectively.
-=======
-1. Output from the command shoul look like below:
-
-    ```bash
-    selected-pcrs:
-      - sha1: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
-      - sha256: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
-    ```
-
-## TPM005.001  (Ubuntu 22.04)
-
-**Test description**
-
-This test aims to verify that
->>>>>>> add tpm pcr operation tests
 
 **Test configuration data**
 
@@ -921,13 +1202,9 @@ This test aims to verify that
     sudo apt-get install tpm2-tools
     ```
 
-<<<<<<< HEAD
     Alternativley, use:
     [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
     .
-=======
-    [Building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
->>>>>>> add tpm pcr operation tests
 
 **Test steps**
 
@@ -937,18 +1214,13 @@ This test aims to verify that
 1. Execute command in the terminal:
 
     ```bash
-<<<<<<< HEAD
     sudo tpm2_create -C primary.ctx -u obj.pub -r obj.priv
-=======
-    tpm2_
->>>>>>> add tpm pcr operation tests
     ```
 
 1. Note the result
 
 **Expected result**
 
-<<<<<<< HEAD
 1. Output should contain information about newly created object, and look
 similar as below:
 
@@ -1183,6 +1455,3 @@ uses a hash function and a secret key.
 
 1. The output of the last command shouldn't display any warnings and errors.
 1. The `hmac.out` file should be correctly created and shouldn't be empty.
-=======
-1. rhsdth
->>>>>>> add tpm pcr operation tests
