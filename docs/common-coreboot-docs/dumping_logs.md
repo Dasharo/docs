@@ -7,7 +7,7 @@ a running system.
 
 ## System information
 
-One may use [Dasharo Tools Suite HCL report](../dasharo-tools-suite/documentation#hcl-report)
+One may use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation#hcl-report)
 or [fwdump-docker image](https://github.com/3mdeb/fwdump-docker) to
 gather all the hardware configuration information from a running system. The
 usage of the tools should result in an archive containing various logs from the
@@ -24,7 +24,7 @@ with the firmware. This method requires Secure Boot to be disabled.
 Options to get `cbmem` utility:
 
 1. Download precompiled utility from [3mdeb cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd/download)
-2. Use [Dasharo Tools Suite](../dasharo-tools-suite/releases#v110) v1.1.0 or
+2. Use [Dasharo Tools Suite](../../dasharo-tools-suite/releases#v110) v1.1.0 or
    newer which has `cbmem` utility built in.
 3. Compile `cbmem utility`. See procedure below.
 
