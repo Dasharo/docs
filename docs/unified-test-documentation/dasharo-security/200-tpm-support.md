@@ -527,6 +527,7 @@ Example output:
 
 ```PowerShell
 tpmtool getdeviceinformation
+
 -TPM Present: True
 -TPM Version: 2.0
 -TPM Manufacturer ID: INTC
@@ -607,13 +608,17 @@ SHA256 to SHA1):
 ```txt
 A configuration change was requested to PCR bank(s) of this computer's TPM
 (Trusted Platform Module)
+
 WARNING: Changing the PCR bank(s) of the boot measurements may prevent the
 Operating System from properly processing the measurements. Please check if
 your Operating System supports the new PCR bank(s).
+
 WARNING: Secrets in the TPM that are bound to the boot state of your machine
 may become unusable.
+
 Current PCRBanks is 0x2. (SHA256)
 New PCRBanks is 0x1. (SHA1)
+
 Press F12 change the boot measurements to use PCR bank(s) of the TPM
 Press ESC to reject this change request and continue
 ```
