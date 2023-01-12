@@ -289,6 +289,7 @@ nav:
               - 'M.2 automatic SATA/NVMe switching support': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
               - 'miniPCIe slot verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
               - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
+              - 'SATA LED and PC speaker error indication': unified-test-documentation/dasharo-compatibility/31S-sata-led-and-pc-speaker-error-indication.md
               - 'Firmware locally building and flashing': unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
               - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
               - 'Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
