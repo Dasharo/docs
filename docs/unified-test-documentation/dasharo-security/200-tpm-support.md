@@ -404,3 +404,222 @@ Example output:
 ```text
 SpecVersion=2.0
 ```
+
+## TPM003.001 Check TPM Physical Presence Interface (firmware)
+
+**Test description**
+
+This test aims to verify that the TPM Physical Presence Interface is supported
+by the firmware.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+2. `OPERATING_SYSTEM` = Ubuntu 22.04
+3. Download `cbmem` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
+   to the DUT.
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Open the terminal and run the following command and note results:
+
+    ```bash
+    sudo cbmem -1 |grep PPI
+    ```
+
+**Expected result**
+
+The `cbmem.log` should contain the following lines (the hex numbers may be
+different per platform):
+
+```txt
+[DEBUG]  PPI: Pending OS request: 0x0 (0x0)
+[DEBUG]  PPI: OS response: CMD 0x39073907 = 0x0
+[DEBUG]    TPM PPI     8. 0x76ffe620 0x0000015a
+```
+
+If the above lines are present, the firmware supports TPM PPI.
+
+## TPM003.002 Check TPM Physical Presence Interface (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the TPM Physical Presence Interface is correctly
+recognized by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+2. `OPERATING_SYSTEM` = Ubuntu 22.04
+3. Platform with TPM 2.0 module present.
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Open the terminal and run the following command to check the version of TPM
+   PPI in sysfs:
+
+    ```bash
+    cat /sys/class/tpm/tpm0/ppi/version
+    ```
+
+**Expected result**
+
+The command should return information about the TPM PPI version (only 1.3 is
+valid). If PPI is not available the file will not be found and test fails.
+
+Example output:
+
+```bash
+$ cat /sys/class/tpm/tpm0/ppi/version
+1.3
+```
+
+## TPM003.003 Check TPM Physical Presence Interface (Windows 11)
+
+**Test description**
+
+This test aims to verify that the TPM Physical Presence Interface is correctly
+recognized by the operating system.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+2. `OPERATING_SYSTEM` = Windows 11
+3. Platform with TPM 2.0 module present.
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the system.
+3. Log into the system by using the proper login and password.
+4. Open a PowerShell as administrator and run the following command:
+
+    ```PowerShell
+    tpmtool getdeviceinformation
+    ```
+
+**Expected result**
+
+The command should return information about the TPM PPI version (only 1.3 is
+valid). If PPI is not available on the list, test fails.
+
+Example output:
+
+```PowerShell
+tpmtool getdeviceinformation
+
+-TPM Present: True
+-TPM Version: 2.0
+-TPM Manufacturer ID: INTC
+-TPM Manufacturer Full Name: Intel
+-TPM Manufacturer Version: 600.18.0.0
+-PPI Version: 1.3
+-Is Initialized: True
+-Ready For Storage: True
+-Ready For Attestation: True
+-Is Capable For Attestation: True
+-Clear Needed To Recover: False
+-Clear Possible: True
+-TPM Has Vulnerable Firmware: False
+-Maintenance Task Complete: True
+-Bitlocker PCR7 Binding State: Binding Not Possible
+-TPM Spec Version: 1.38
+-TPM Errata Date: Wednesday, December 18, 2019
+-PC Client Version: 1.04
+-Lockout Information:
+	-Is Locked Out: False
+	-Lockout Counter: 0
+	-Max Auth Fail: 32
+	-Lockout Interval: 7200s
+	-Lockout Recovery: 86400s
+```
+
+## TPM003.004 Change active PCR banks with TPM PPI (firmware)
+
+**Test description**
+
+This test aims to verify that the TPM Physical Presence Interface is working
+properly in the firmware by changing active TPM PCR banks.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+2. Platform with TPM 2.0 module present.
+3. `TPM003.001` indicating that TPM PPI is supported.
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+2. Boot into the firmware setup using the `BIOS_SETUP_KEY`.
+3. Enter the `Device Manager` -> `TCG2 Configuration`.
+4. Scroll down to the bottom of the page using arrow down key.
+5. Switch active PCR banks depending on the currently active banks.:
+   - if both SHA1 and SHA256 are active, deactivate SHA1
+   - if SHA1 only is active, activate SHA256 and deactivate SHA1
+   - if SHA256 only is active, activate SHA1 and deactivate SHA256
+6. Press `F10` to save and go back to the main setup page using `ESC` key.
+7. Use the `Reset` option on the main setup page to reboot the DUT.
+8. After reset a prompt should appear explaining a TPM state change request has
+   been made. Press `F12` as instructed to apply changes. The DUT will need to
+   reboot again.
+9. After the reboot enter the `Device Manager` -> `TCG2 Configuration` again.
+10. Scroll down to the bottom of the page using arrow down key.
+11. Verify the active PCR banks were changed according to the choice made in
+    step 5.
+
+NOTE: Certain TPMs like Intel PTT (fTPM) do not allow to set more than one
+active PCR bank at a given time, that is why the test case keeps only one bank
+active. Discrete TPMs may have multiple banks enabled simultaneously, but it is
+TPM module and TPM firmware dependent.
+
+**Expected result**
+
+1. The prompt appears at step 8.
+2. The requested changes are applied as verified in step 11.
+
+The prompt seen on the DUT screen has the following format (example change from
+SHA256 to SHA1):
+
+```txt
+A configuration change was requested to PCR bank(s) of this computer's TPM
+(Trusted Platform Module)
+
+WARNING: Changing the PCR bank(s) of the boot measurements may prevent the
+Operating System from properly processing the measurements. Please check if
+your Operating System supports the new PCR bank(s).
+
+WARNING: Secrets in the TPM that are bound to the boot state of your machine
+may become unusable.
+
+Current PCRBanks is 0x2. (SHA256)
+New PCRBanks is 0x1. (SHA1)
+
+Press F12 change the boot measurements to use PCR bank(s) of the TPM
+Press ESC to reject this change request and continue
+```
