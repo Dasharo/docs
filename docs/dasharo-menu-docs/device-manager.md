@@ -91,7 +91,20 @@ as there are missing keys and certificates in UEFI variables. In order to
 provision default keys embedded into firmware image, select the
 `Reset Secure Boot keys`. This will provision the default keys and unlock the
 `Attempt Secure Boot` (which will be selected by default when all keys are
-provisioned).
+provisioned). The keys which are embedded in the firmware image come from
+Microsoft:
+
+* [Microsoft KEK certificate](https://go.microsoft.com/fwlink/?LinkId=321185)
+* Microsoft Signature Database (db) consisting of:
+    - [Microsoft Windows Production PCA 2011](https://go.microsoft.com/fwlink/p/?linkid=321192)
+      to allow Windows OS Loader to load
+    - [Microsoft Corporation UEFI CA 2011](https://go.microsoft.com/fwlink/p/?linkid=321194)
+      to load OEM-approved UEFI drivers and applications (e.g. [shim](https://github.com/rhboot/shim))
+* Microsoft Forbidden Signature Database (dbx) published as
+ [UEFI Revocation List File on uefi.org](https://www.uefi.org/revocationlistfile)
+
+To learn more, please visit
+[Windows Secure Boot Key Creation and Management Guidance](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11)
 
 One may also choose `Custom Mode` in `Secure Boot Mode` and provision own keys
 and certificates:
