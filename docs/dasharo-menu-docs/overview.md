@@ -15,10 +15,10 @@ can see checkbox results on Dasharo firmware.
 
 ## Dasharo menu guides
 
-The main menu is entered by executing Setup application either through
-[Boot Manager Menu](#boot-manager-menu) or platform-specific hotkey. You may
-find the right key in the top-left corner when booting the platform (when logo
-shows up), for example `DEL`:
+The main menu is entered by selecting the Setup application in the
+[Boot Manager Menu](#boot-manager-menu) or by pressing the Setup hotkey
+while booting. The hotkey is shown in the top-left corner of the screen when
+the boot logo is displayed, for example `DEL`:
 
 ```txt
 DEL   to enter Setup
@@ -43,7 +43,7 @@ ENTER to boot directly
 
 The page is the main view of the firmware setup application. It contains the
 board model (`MS-7D25`), installed CPU and firmware version in the top-left
-corner. In the top-right corner the CPU frequency and system RAM amount is
+corner. In the top-right corner the CPU frequency and system RAM amount are
 shown.
 
 From the main page one may access all menus and submenus available in the
@@ -86,9 +86,9 @@ section on the right side of the menu page. If the password is too weak it will
 not be accepted. The page shows the current status of `Admin Password` if it
 was provisioned or not.
 
-TO disable the password, enter the `User Password Management` menu again and
+To disable the password, enter the `User Password Management` menu again and
 request to set new password. You will be asked to enter current password. When
-a windows to provide new password pops up, leave the field empty and confirm it
+a window to provide new password pops up, leave the field empty and confirm it
 twice with `ENTER`. The password installation status on the menu page should
 change to `Not Installed`.
 
@@ -133,5 +133,5 @@ After pressing the right hotkey for Boot Manager Menu, a window should pop up:
 
 ![](/images/menus/boot_manager.jpeg){ class="center" }
 
-On the bottom of the windows there are instruction how to move and select
+On the bottom of the window there are instructions for moving and selecting
 entries.

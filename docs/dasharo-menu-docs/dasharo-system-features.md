@@ -32,7 +32,7 @@ This menu offers security-sensitive options like:
 
 - `Enable network boot` - the option controls if the network boot should be
   enabled or not. This option is disabled by default on most Dasharo supported
-  devices. WHen disabled, it prevents loading network controller drivers and
+  devices. When disabled, it prevents loading network controller drivers and
   unregisters iPXE as boot option (iPXE disappears from
   [Boot Manager](overview.md#boot-manager-menu) and
   [One Time Boot](overview.md#one-time-boot) menus)
@@ -47,7 +47,7 @@ This menu offers security-sensitive options like:
   bootloaders like GRUB). If disabled no USB device will work before OS is
   loaded (firmware will not communicate with USB devices).
 - `Enable USB Mass Storage driver` - this option is blocked if USB stack is
-  disabled. If disabled, UEFI USB mass Storage driver is not loaded and one
+  disabled. If disabled, UEFI USB Mass Storage driver is not loaded and one
   cannot boot from USB drives. Essentially this option controls the USB boot
   capability. It does not affect other devices, like USB keyboards.
 
@@ -102,7 +102,7 @@ The submenu contains general chipset options. Currently available options:
   When disabled PS/2 keyboards and mice will stop working in firmware and OS.
   PS/2 controller will not be functional in OS. This option is not available on
   laptops where PS/2 is used for the integrated keyboard and possibly touchpad.
-- `Enable watchdog` - controls the chipset watchdog functionality. If enabled
+- `Enable watchdog` - controls the chipset watchdog functionality. If enabled,
   watchdog will be counting with the timeout specified below. The firmware
   automatically kicks the watchdog periodically so even without OS support, the
   platform will not reset itself when watchdog expires.

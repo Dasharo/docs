@@ -80,7 +80,7 @@ example.
 
 ## Secure Boot Configuration
 
-This submenu allows to configure UEFI Secure Boot functionality. By default
+This submenu allows configuring UEFI Secure Boot functionality. By default
 Dasharo firmware released after October 2022 has Secure Boot disabled by
 default with no keys and certificates provisioned.
 
@@ -114,7 +114,7 @@ and managing the module.
 
 ![](/images/menus/tcg2_config.jpeg){ class="center" }
 
-The basic information displayed are the TPM device family, interface but also
+The basic information displayed are the TPM device family, interface, but also
 information about supported hashing algorithms.
 
 ![](/images/menus/tcg2_config2.jpeg){ class="center" }
@@ -140,9 +140,8 @@ For more details about the TPM operations see
 
 ## HDD Security Configuration
 
-HDD Security Configuration allows one to set SATA disk password. Note not all
-SATA drives support the feature. ALl SATA driver will be listed on the submenu
-main page though:
+HDD Security Configuration allows one to set SATA disk password. Note that
+all SATA disks will be displayed, even these that don't support the feature.
 
 ![](/images/menus/hdd_passwd.jpeg){ class="center" }
 
