@@ -106,6 +106,10 @@ Microsoft:
 To learn more, please visit
 [Windows Secure Boot Key Creation and Management Guidance](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11)
 
+There is also a Dasharo PK certificate which is a certificate derived from a
+randomly generated key by Dasharo Team. End user is expected to replace the PK
+with their own key if UEFI driver or application signing is required.
+
 One may also choose `Custom Mode` in `Secure Boot Mode` and provision own keys
 and certificates:
 
