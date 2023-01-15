@@ -40,8 +40,8 @@ plugins:
         'variants/clevo_nv41/ec_update.md': 'dasharo-tools-suite/documentation.md'
 nav:
   - 'Intro':
-    - 'About Dasharo': index.md
-    - 'New? Start here': newcomers.md
+      - 'About Dasharo': index.md
+      - 'New? Start here': newcomers.md
   - 'Supported hardware':
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
       - 'NovaCustom laptops':

@@ -35,7 +35,6 @@ non-public development, custom hardware handled by vendor
   source hardware and open instruction set architecture. Feel free to check the
   website about recent vPub plans or subscribe to newsletter.
 
-
 <!--
 
 For now we deprecating this terminology. We will get back to it when we will

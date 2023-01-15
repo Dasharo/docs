@@ -176,8 +176,8 @@ MD042: true
 # MD046/code-block-style - Code block style
 # MD046: Rule temporarily disabled, it prevents new tabs from being formatted
 # correctly - eg. docs/unified/novacustom/overview.md:9
-  # Block style
-  # style: "fenced"
+# Block style
+# style: "fenced"
 
 # MD047/single-trailing-newline - Files should end with a single newline character
 MD047: true
