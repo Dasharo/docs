@@ -29,7 +29,6 @@ markdown_extensions:
       toc_depth: 2
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
 plugins:
