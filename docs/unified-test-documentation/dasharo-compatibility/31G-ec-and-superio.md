@@ -1563,6 +1563,325 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
+## ECR024.001 Permanent keyboard illumination after cold-boot (Firmware)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+
+## ECR024.002 Permanent keyboard illumination after cold-boot (Ubuntu)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+## ECR024.003 Permanent keyboard illumination after cold-boot (Windows 11)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+
+## ECR025.001 Permanent keyboard illumination after warm-boot (Firmware)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+
+## ECR025.002 Permanent keyboard illumination after warm-boot (Ubuntu)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+## ECR025.003 Permanent keyboard illumination after warm-boot (Windows 11)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+## ECR026.001 Permanent keyboard illumination after reboot (Firmware)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+
+## ECR026.002 Permanent keyboard illumination after reboot (Ubuntu)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+## ECR026.003 Permanent keyboard illumination after reboot (Windows 11)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+
+## ECR027.001 Permanent keyboard illumination after suspension (Firmware)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+
+## ECR027.002 Permanent keyboard illumination after suspension (Ubuntu)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+## ECR027.003 Permanent keyboard illumination after suspension (Windows 11)
+
+**Test description**
+
+---
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = ---
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. 
+
+**Expected result**
+
+
+
 ## SIO001.001 PS/2 mouse in OS - (Ubuntu 22.04)
 
 **Test description**
