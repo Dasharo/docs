@@ -29,7 +29,8 @@ is displayed.
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. Select the `iPXE Network boot` option using the ++arrow-up++ /
+   ++arrow-down++ / ++arrow-left++ / ++arrow-right++ and press ++enter++.
 
 **Expected result**
 
@@ -57,7 +58,8 @@ needed options which are in the correct order.
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. Select the `iPXE Network boot` option using the arrow keys and press
+   ++enter++.
 
 **Expected result**
 
@@ -91,8 +93,9 @@ This test aims to verify that the `Autoboot` option in
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
-1. Select the `Autoboot` option using the arrow keys, then press `Enter`.
+1. Select the `iPXE Network boot` option using the arrow keys and press
+   ++enter++.
+1. Select the `Autoboot` option using the arrow keys, then press ++enter++.
 
 **Expected result**
 
@@ -125,9 +128,10 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. Select the `iPXE Network boot` option using the arrow keys and press
+   ++enter++.
 1. Select the `Dasharo Tools Suite` option using the arrow keys, then press
-    `Enter`.
+    ++enter++.
 
 **Expected result**
 
@@ -154,8 +158,9 @@ This test aims to verify that the `OS installation` option in
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
-1. Select the `OS installation` option using the arrow keys and press `Enter`.
+1. Select the `iPXE Network boot` option using the arrow keys and press
+   ++enter++.
+1. Select the `OS installation` option using the arrow keys and press ++enter++.
 
 **Expected result**
 
@@ -182,8 +187,9 @@ This test aims to verify that the `iPXE Shell` option in
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the boot menu.
-1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
-1. Select the `iPXE Shell` option using the arrow keys and press `Enter`.
+1. Select the `iPXE Network boot` option using the arrow keys and press
+   ++enter++.
+1. Select the `iPXE Shell` option using the arrow keys and press ++enter++.
 1. Obtain an IP address by executing the following command:
 
     ```bash
@@ -221,13 +227,14 @@ server.
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
-1. Press `Ctrl+B` when prompted to stop iPXE from booting automatically.
+1. Select the `iPXE Network boot` option using the arrow keys and press
+   ++enter++.
+1. Press ++ctrl+b++ when prompted to stop iPXE from booting automatically.
 1. Type in `dhcp` to obtain an IP address.
 1. Type in `chain --autofree http://boot.netboot.xyz/` to load a boot menu
 1. Enter the "Live CDs" submenu using the arrow keys and Enter.
 1. Select `Debian` -> `Debian Live 11 (bullseye)` -> `Debian 11 Gnome` and
-    press Enter.
+    press ++enter++.
 
 **Expected result**
 
