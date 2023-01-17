@@ -3,13 +3,6 @@
 When entering the `Dasharo System Features` menu, one may see the following
 submenus to appear:
 
-- [Dasharo System Features](#dasharo-system-features)
-    + [Dasharo Security Options](#dasharo-security-options)
-    + [Networking Options](#networking-options)
-    + [USB Configuration](#usb-configuration)
-    + [Intel Management Engine Options](#intel-management-engine-options)
-    + [Chipset Configuration](#chipset-configuration)
-
 ![](/images/menus/dasharo_features.jpeg){ class="center" }
 
 ## Dasharo Security Options

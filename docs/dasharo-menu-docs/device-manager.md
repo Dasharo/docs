@@ -6,14 +6,6 @@ others.
 
 ![](/images/menus/dev_mgr.jpeg){ class="center" }
 
-* [Device Manager](#device-manager)
-    - [TCG Drive Management](#tcg-drive-management)
-    - [Driver Health Manager](#driver-health-manager)
-    - [Secure Boot Configuration](#secure-boot-configuration)
-    - [TCG2 Configuration](#tcg2-configuration)
-    - [HDD Security Configuration](#hdd-security-configuration)
-    - [Network Device List](#network-device-list)
-
 ## TCG Drive Management
 
 This menu allows one to set up TCG OPAL disk password and manage other TCG OPAL

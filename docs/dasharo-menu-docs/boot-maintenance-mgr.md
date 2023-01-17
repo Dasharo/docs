@@ -4,15 +4,6 @@ Boot Maintenance Manager is mainly used to manage boot options, boot timeout,
 next boot variable, console inputs and outputs. It also provides a way to add
 driver options, but it is rather rarely used.
 
-* [Boot Maintnenace Manager](#boot-maintenance-manager)
-    - [Boot Options](#boot-options)
-        + [Add Boot Option](#add-boot-option)
-        + [Delete Boot Option](#delete-boot-option)
-        + [Change Boot Order](#change-boot-order)
-    - [Driver Options](#driver-options)
-    - [Console Options](#console-options)
-    - [Boot From File](#boot-from-file)
-
 ![](/images/menus/boot_maint_mgr.jpeg){ class="center" }
 
 * `Boot Next Value` is used to set which boot options should be booted after a
