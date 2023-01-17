@@ -624,6 +624,390 @@ Press F12 change the boot measurements to use PCR bank(s) of the TPM
 Press ESC to reject this change request and continue
 ```
 
+## TPM004.001 PCRREAD Function Verification (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that PCRREAD function works properly. Function reads
+contains of PCR banks and returns it to the terminal.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_pcrread
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Output from the command should show contents of DUT's PCR banks. Similar
+as shown below:
+
+    ```bash
+    sha1:
+        0 : 0xC928CC5971F886160585BDD9F145CFC0172BCD82
+        1 : 0xBF1E05F70D069555A6605F004AE3409E5967A94D
+        2 : 0xB2A83B0EBF2F8374299A5B2BDFC31EA955AD7236
+        3 : 0xB2A83B0EBF2F8374299A5B2BDFC31EA955AD7236
+        4 : 0xA1A8B73554FD20FAA45FF03A7B5B19092321C614
+        5 : 0x7F3D0A896E99429093A2C92FAFDCAC5F79895719
+        6 : 0xB2A83B0EBF2F8374299A5B2BDFC31EA955AD7236
+        7 : 0x7679047866E616450760CE711EA91126EB45BEF6
+        8 : 0x8C126E92B82BCF9769A9EDA7CAE05FCB2A15A0EB
+        9 : 0xD0BCA06196EC06094307F435D8788E9426D37166
+        10: 0x881A056121204AAD298010A64011E97E8F63E31C
+        11: 0x0000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000
+        14: 0x77DB66D60AA0C2CD1CEA6C34FED4F2AA014BF285
+        15: 0x0000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x0000000000000000000000000000000000000000
+    sha256:
+        0 : 0x398991DE8A69685E63E5BC5846CA402CB2F4AE46E89AB977AE9DE6F25D28320F
+        1 : 0xE7F444390126872E822F9006423EBB22FD4A340A95BBA4E98EB354EEAC828BEF
+        2 : 0x884314F10588F807B343C2F23F292E6F748ED4F555FBB5004DBFBF2387E161AA
+        3 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        4 : 0x368F85B3013041DFE203FAAA364F00B07C5DA7B1E5F1DBF2EFB06FA6B9BD92DE
+        5 : 0xB33E1B199263B8FF8644BC166398CCAD03FB5F03FC15CF7A06C1DD73F7E87239
+        6 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        7 : 0xB926225AC488E9C50EF2FA815AA7104B385A06907093BFB1DC62EEB7ABECDDF1
+        8 : 0x7A9EBF0BE340214249EE6025BE1F6093AEDDCFC80A2DF75023B7758BF2E0EF31
+        9 : 0x696B6D9CFC3CCB1520592E1007C0B655EF3AA6C6151823AC944AB4BAFB91743C
+        10: 0x93CA5EEDAD309A46EE27BF7E11C962403B31CB3985B72EC9EAC6997F419F4692
+        11: 0x0000000000000000000000000000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000000000000000000000000000
+        14: 0xE3991B7DDD47BE7E92726A832D6874C5349B52B789FA0DB8B558C69FEA29574E
+        15: 0x0000000000000000000000000000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x0000000000000000000000000000000000000000000000000000000000000000
+    ```
+
+## TPM005.001 PCRALLOCATE Function (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that `PCRALLOCATE` function works properly. It allows
+the user to specify a PCR allocation for the TPM.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_pcrallocate
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Output from the command should show all non-empty PCR entries:
+
+    ```bash
+    selected-pcrs:
+      - sha1: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+      - sha256: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+    ```
+
+## TPM006.001 ENCRYPT And DECRYPT Functions (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that ENCRYPT and DECRYPT functions are working
+properly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute commands in the terminal:
+
+    ```bash
+    echo "my secret" > secret.dat
+    sudo tpm2_encryptdecrypt -c key.ctx -o secret.enc secret.dat
+    sudo tpm2_encryptdecrypt -d -c key.ctx -o secret.dec secret.enc
+    ```
+
+1. Read `secret.dec` contents:
+
+    ```bash
+    cat secret.dec
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. Command should output:
+
+    ```bash
+    my secret
+    ```
+
+## TPM007.001 PCREVENT Function (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that PCREVENT function works properly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    echo "foo" > data
+    ```
+
+1. Then hash the `data` using:
+
+    ```bash
+    sudo tpm2_pcrevent data
+    ```
+
+1. Note the result
+
+**Expected result**
+
+1. If process succeeds, last command should give similar output:
+
+    ```bash
+    sha1: f1d2d2f924e986ac86fdf7b36c94bcdf32beec15
+    sha256: b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c
+    sha384: 8effdabfe14416214a250f935505250bd991f106065d899db6e19bdc8bf648f3ac0f1935c4f65fe8f798289b1a0d1e06
+    sm3_256: 2b14a1fc49869413b0beb707069cffc0c6b0a51f3fedb9ce072c80709652b3ae
+    ```
+
+## TPM008.001 PCREXTEND And PCRRESET Functions (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that PCREXTEND and PCRRESET functions are working
+properly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Install `tpm2-tools` using:
+
+    ```bash
+    sudo apt-get install tpm2-tools
+    ```
+
+    Alternativley, use:
+    [building from source](https://tpm2-tools.readthedocs.io/en/latest/INSTALL/)
+    .
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute command in the terminal:
+
+    ```bash
+    sudo tpm2_pcrextend 23:sha256=b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c
+    ```
+
+1. Execute below command to verify PCR banks:
+
+    ```bash
+    sudo tpm2_pcrread
+    ```
+
+1. Reset the PCR's 23rd bank using:
+
+    ```bash
+    sudo tpm2_pcrreset 23
+    ```
+
+1. Execute below command to verify PCR banks:
+
+    ```bash
+    sudo tpm2_pcrread
+    ```
+
+1. Note the results
+
+**Expected result**
+
+1. Output from **1st** `pcrread` command should be similar:
+
+    ```bash
+      sha1:
+      sha256:
+        0 : 0x2FC7F44F7E383FF5D5B5A9FAEF540837CE18EE09475FDA609E8CF2417C7C9DC5
+        1 : 0xC7F38AA0EF7FF9E58BDB9162EFAF9A4FDC28AE8F8E6D757751D755E4BBBB8A87
+        2 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        3 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        4 : 0xEADC116BD5965D2E219CB51186A93E7C7EC06A588B6ABCB1FA40356A24F17AD6
+        5 : 0x19ED07631A649855E865AC8DEF685690416C8C6946327FE880418F674C48D061
+        6 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        7 : 0xDA487D18B6A844D01D0947C71DC000B92A13FE2C73C59A4FF5888CFCA5DECCEB
+        8 : 0x9710FC6EAAA91470C53190E9D8370AC50C06D66519B1C5A4690062C02D0E78E3
+        9 : 0x9C569695AF119F0E702207386523A2EB25540FBD468A2F289A813F95C2C0478A
+        10: 0x24F2CDDD21C733425EC7B65E15A0DD1EF8FB108529F9A167D672699C54736672
+        11: 0x0000000000000000000000000000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000000000000000000000000000
+        14: 0xE3991B7DDD47BE7E92726A832D6874C5349B52B789FA0DB8B558C69FEA29574E
+        15: 0x0000000000000000000000000000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x44F12027AB81DFB6E096018F5A9F19645F988D45529CDED3427159DC0032D921
+      sha384:
+      sm3_256:
+    ```
+
+1. Element `23` in `sha256` section should be exactly the same as input in
+    the first command.
+
+1. Output from **2nd** `pcrread` command should be similar:
+
+    ```bash
+      sha1:
+      sha256:
+        0 : 0x2FC7F44F7E383FF5D5B5A9FAEF540837CE18EE09475FDA609E8CF2417C7C9DC5
+        1 : 0xC7F38AA0EF7FF9E58BDB9162EFAF9A4FDC28AE8F8E6D757751D755E4BBBB8A87
+        2 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        3 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        4 : 0xEADC116BD5965D2E219CB51186A93E7C7EC06A588B6ABCB1FA40356A24F17AD6
+        5 : 0x19ED07631A649855E865AC8DEF685690416C8C6946327FE880418F674C48D061
+        6 : 0x3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969
+        7 : 0xDA487D18B6A844D01D0947C71DC000B92A13FE2C73C59A4FF5888CFCA5DECCEB
+        8 : 0x9710FC6EAAA91470C53190E9D8370AC50C06D66519B1C5A4690062C02D0E78E3
+        9 : 0x9C569695AF119F0E702207386523A2EB25540FBD468A2F289A813F95C2C0478A
+        10: 0x24F2CDDD21C733425EC7B65E15A0DD1EF8FB108529F9A167D672699C54736672
+        11: 0x0000000000000000000000000000000000000000000000000000000000000000
+        12: 0x0000000000000000000000000000000000000000000000000000000000000000
+        13: 0x0000000000000000000000000000000000000000000000000000000000000000
+        14: 0xE3991B7DDD47BE7E92726A832D6874C5349B52B789FA0DB8B558C69FEA29574E
+        15: 0x0000000000000000000000000000000000000000000000000000000000000000
+        16: 0x0000000000000000000000000000000000000000000000000000000000000000
+        17: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        18: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        19: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        20: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        21: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        22: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        23: 0x0000000000000000000000000000000000000000000000000000000000000000
+      sha384:
+      sm3_256:
+    ```
+
 ## TPM009.001 CREATEPRIMARY Function Verification (Ubuntu 22.04)
 
 **Test description**
