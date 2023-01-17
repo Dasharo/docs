@@ -10,9 +10,6 @@ subsections you will get to know:
 [Here](https://youtu.be/3tk0snFrZDY) you may watch a Dasharo menu walkthrough
 with commentary presenting Dasharo features.
 
-[Here](/variants/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md) you
-can see checkbox results on Dasharo firmware.
-
 ## Dasharo menu guides
 
 The main menu is entered by selecting the Setup application in the
