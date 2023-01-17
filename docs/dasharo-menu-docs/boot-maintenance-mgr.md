@@ -100,7 +100,7 @@ to use it.
 
 ![](/images/menus/console_opts.jpeg){ class="center" }
 
-Here one may enable/disable input and output devices. PLease note that most
+Here one may enable/disable input and output devices. Please note that most
 output and input devices devices are registered automatically during boot.
 Changes made here will only last till next reboot. To permanently disable
 certain inputs one may use different setup options:
