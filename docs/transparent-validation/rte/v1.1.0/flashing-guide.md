@@ -32,8 +32,8 @@ RTE.
     ![](../../../images/ch341a_rec/wson8_probe2.jpg)
 
 1. Connect the cables coming out from the WSON8 probe to the
-    [SPI header](../v1.1.0/specification.md/#spi-header) according to the
-    pictures and table below.
+    [SPI header](../specification/) according to the pictures and table
+    below.
 
     - Top view of flash chip:
 
@@ -46,11 +46,13 @@ RTE.
         | Vcc            | VCC        |
         | CS             | CS#        |
         | MISO (SO)      | SO (IO1)   |
-        | ISP            | IO2        |
         | GND            | VSS        |
         | SCLK           | SCLK       |
         | MOSI (SI)      | SI         |
-        | NC             | IO3        |
+
+        > Note: both the SPI header and the WSON8 probe have 8-pin headers.
+        Pins marked as NC on the RTE board and as IO2 and IO3 on the flash chip
+        do not require a connection.
 
     - Example connection appearance:
 
