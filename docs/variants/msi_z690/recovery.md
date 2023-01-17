@@ -32,7 +32,8 @@ here.
 * If you created a [firmware backup](../initial-deployment/#flashing)
 before flashing to Dasharo you will be using it for this recovery process.
 
-* Otherwise download the MSI official latest BIOS v1.90 (released 2022-11-09) from MSI:
+* Otherwise download the MSI official latest BIOS v1.90 (released 2022-11-09)
+directly from MSI:
 
 ```bash
 wget https://download.msi.com/bos_exe/mb/7D25v19.zip
