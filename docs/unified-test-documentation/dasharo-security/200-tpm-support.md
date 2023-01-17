@@ -528,6 +528,7 @@ Example output:
 
 ```PowerShell
 tpmtool getdeviceinformation
+
 -TPM Present: True
 -TPM Version: 2.0
 -TPM Manufacturer ID: INTC
@@ -608,6 +609,7 @@ SHA256 to SHA1):
 ```txt
 A configuration change was requested to PCR bank(s) of this computer's TPM
 (Trusted Platform Module)
+
 WARNING: Changing the PCR bank(s) of the boot measurements may prevent the
 Operating System from properly processing the measurements. Please check if
 your Operating System supports the new PCR bank(s).
@@ -615,6 +617,7 @@ WARNING: Secrets in the TPM that are bound to the boot state of your machine
 may become unusable.
 Current PCRBanks is 0x2. (SHA256)
 New PCRBanks is 0x1. (SHA1)
+
 Press F12 change the boot measurements to use PCR bank(s) of the TPM
 Press ESC to reject this change request and continue
 ```
@@ -756,9 +759,9 @@ expected. Those functions are used to define and undefine a TPM Non-Volatile
     should look similar as below:
 
     ```bash
-    WARNING:esys:src/tss2-esys/api/Esys_NV_ReadPublic.c:309:Esys_NV_ReadPublic_Finish() Received TPM Error 
-    ERROR:esys:src/tss2-esys/esys_tr.c:209:Esys_TR_FromTPMPublic_Finish() Error NV_ReadPublic ErrorCode (0x0000018b) 
-    ERROR:esys:src/tss2-esys/esys_tr.c:320:Esys_TR_FromTPMPublic() Error TR FromTPMPublic ErrorCode (0x0000018b) 
+    WARNING:esys:src/tss2-esys/api/Esys_NV_ReadPublic.c:309:Esys_NV_ReadPublic_Finish() Received TPM Error
+    ERROR:esys:src/tss2-esys/esys_tr.c:209:Esys_TR_FromTPMPublic_Finish() Error NV_ReadPublic ErrorCode (0x0000018b)
+    ERROR:esys:src/tss2-esys/esys_tr.c:320:Esys_TR_FromTPMPublic() Error TR FromTPMPublic ErrorCode (0x0000018b)
     ERROR: Esys_TR_FromTPMPublic(0x18B) - tpm:handle(1):the handle is not correct for the use
     ERROR: Unable to run tpm2_nvread
     ```
@@ -778,13 +781,13 @@ expected. Those functions are used to define and undefine a TPM Non-Volatile
 
 **Expected result**
 
-1. Output should be empty. If region was undefined or error occured output
+1. Output should be empty. If region was undefined or error occurred output
     should look like this:
 
     ```bash
-    WARNING:esys:src/tss2-esys/api/Esys_NV_ReadPublic.c:309:Esys_NV_ReadPublic_Finish() Received TPM Error 
-    ERROR:esys:src/tss2-esys/esys_tr.c:209:Esys_TR_FromTPMPublic_Finish() Error NV_ReadPublic ErrorCode (0x0000018b) 
-    ERROR:esys:src/tss2-esys/esys_tr.c:320:Esys_TR_FromTPMPublic() Error TR FromTPMPublic ErrorCode (0x0000018b) 
+    WARNING:esys:src/tss2-esys/api/Esys_NV_ReadPublic.c:309:Esys_NV_ReadPublic_Finish() Received TPM Error
+    ERROR:esys:src/tss2-esys/esys_tr.c:209:Esys_TR_FromTPMPublic_Finish() Error NV_ReadPublic ErrorCode (0x0000018b)
+    ERROR:esys:src/tss2-esys/esys_tr.c:320:Esys_TR_FromTPMPublic() Error TR FromTPMPublic ErrorCode (0x0000018b)
     ERROR: Esys_TR_FromTPMPublic(0x18B) - tpm:handle(1):the handle is not correct for the use
     ERROR: Failed to read the public part of NV index 0x1500016
     ERROR: Unable to run tpm2_nvundefine
