@@ -532,7 +532,7 @@ executed automatically after startup.
 
 Here is simple instruction on how to use that feature:
 
-- Run the HTTP server in the directory which contains DTS base image. If you
+* Run the HTTP server in the directory which contains DTS base image. If you
 build it by yourself, then it should be `meta-dts` subdirectory:
 `build/tmp/deploy/images/genericx86-64`
 
@@ -542,7 +542,7 @@ The easiest way to start an HTTP server is using `http.server` python module:
 $ python3 -m http.server 9000
 ```
 
-- Create `dts.ipxe` bootchain file in directory where you have a running HTTP
+* Create `dts.ipxe` bootchain file in directory where you have a running HTTP
 server. That file should have similar content (you need to enter IP of your
 host machine in a local network):
 
@@ -555,9 +555,9 @@ module http://<YOUR_IP>:9000/ipxe-commands /sbin/ipxe-commands mode=755
 boot
 ```
 
-- Copy your `ipxe-commands` script in this same directory
+* Copy your `ipxe-commands` script in this same directory
 
-- Enter the iPXE shell on your device and load `dts.ipxe` chainboot file:
+* Enter the iPXE shell on your device and load `dts.ipxe` chainboot file:
 
 ```bash
 iPXE> dhcp
