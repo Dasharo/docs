@@ -217,6 +217,7 @@ This section describes functionality of Dasharo Tools Suite. These are:
 * [Firmware update](#firmware-update)
 * [EC Transition](#ec-transition)
 * [EC update](#ec-update)
+* [Run commands from iPXE shell](#ipxe-commands)
 
 ### Dasharo zero-touch initial deployment
 
@@ -447,3 +448,53 @@ version. To properly update it, follow these steps:
   board: clevo/ns50mu
   version: 2022-08-31_cbff21b
   ```
+
+### Run commands from iPXE shell
+
+There is a possibility to execute the bash script after Linux startup by passing
+it from the iPXE shell. Every script placed in `/sbin/ipxe-commands` will be
+executed automatically after startup.
+
+Here is simple instruction on how to use that feature:
+
+- Run the HTTP server in the directory which contains DTS base image. If you
+build it by yourself, then it should be `meta-dts` subdirectory:
+`build/tmp/deploy/images/genericx86-64`
+
+The easiest way to start an HTTP server is using `http.server` python module:
+
+```bash
+$ python3 -m http.server 9000
+```
+
+- Create `dts.ipxe` bootchain file in directory where you have a running HTTP
+server. That file should have similar content (you need to enter IP of your
+host machine in a local network):
+
+```bash
+#!ipxe
+#
+kernel http://<YOUR_IP>:9000/bzImage root=/dev/nfs initrd=http://<YOUR_IP>:9000/dts-base-image-genericx86-64.cpio.gz
+initrd http://<YOUR_IP>:9000/dts-base-image-genericx86-64.cpio.gz
+module http://<YOUR_IP>:9000/ipxe-commands /sbin/ipxe-commands mode=755
+boot
+```
+
+- Copy your `ipxe-commands` script in this same directory
+
+- Enter the iPXE shell on your device and load `dts.ipxe` chainboot file:
+
+```bash
+iPXE> dhcp
+Configuring (net0 00:0d:b9:4b:49:60)...... ok
+iPXE> route
+net0: 192.168.4.126/255.255.255.0 gw 192.168.4.1
+iPXE> chain http://192.168.4.98:9001/dts.ipxe
+http://192.168.4.98:9001/dts.ipxe... ok
+http://192.168.4.98:9001/bzImage... ok
+http://192.168.4.98:9001/dts-base-image-genericx86-64.cpio.gz... ok
+http://192.168.4.98:9000/ipxe-commands... ok
+```
+
+Now your `ipxe-commands` script should be copied to DTS rootfs and will be
+executed after boot
