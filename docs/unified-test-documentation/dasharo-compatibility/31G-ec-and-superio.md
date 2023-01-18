@@ -220,7 +220,7 @@ and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `F2`
+1. `BIOS_SETUP_KEY` = `Esc`
 
 **Test setup**
 
@@ -246,7 +246,7 @@ system and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `F2`
+1. `BIOS_SETUP_KEY` = `Esc`
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -1563,16 +1563,234 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-## ECR024.001 Permanent keyboard illumination after cold-boot (Firmware)
+## ECR025.001 Permanent keyboard illumination after cold-boot (Firmware)
 
 **Test description**
 
----
+This test aims to verify that after enabling permament illumination of keyboard
+and performing cold-boot, keyboard still illuminates in firmware.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
+1. `BIOS_SETUP_KEY` = `Esc`
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../generic-test-setup/#firmware)
+
+**Test steps**
+
+1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Disconnect power source, and remove battery if present.
+1. Connect power and battery again.
+1. Power on the DUT again and press the `BIOS_SETUP_KEY` to enter the setup
+    menu.
+
+**Expected result**
+
+1. After cold-boot keyboard brightness and colors settings remain the same.
+
+## ECR025.002 Permanent keyboard illumination after cold-boot (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing cold-boot, keyboard still illuminates in Ubuntu 22.04.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Disconnect power source, and remove battery if present.
+1. Connect power and battery again.
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+
+**Expected result**
+
+1. After cold-boot keyboard brightness and colors settings remain the same.
+
+## ECR025.003 Permanent keyboard illumination after cold-boot (Windows 11)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing cold-boot, keyboard still illuminates in Windows 11.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Disconnect power source, and remove battery if present.
+1. Connect power and battery again.
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+
+**Expected result**
+
+1. After cold-boot keyboard brightness and colors settings remain the same.
+
+## ECR026.001 Permanent keyboard illumination after warm-boot (Firmware)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing warm-boot, keyboard still illuminates in firmware.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `BIOS_SETUP_KEY` = `Esc`
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../generic-test-setup/#firmware)
+
+**Test steps**
+
+1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Power off the DUT using power button.
+1. Power on the DUT again and press the `BIOS_SETUP_KEY` to enter the setup
+    menu.
+
+**Expected result**
+
+1. After warm-boot keyboard brightness and colors settings remain the same.
+
+## ECR026.002 Permanent keyboard illumination after warm-boot (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing warm-boot, keyboard still illuminates in Ubuntu 22.04.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Power off the DUT using power button.
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+
+**Expected result**
+
+1. After warm-boot keyboard brightness and colors settings remain the same.
+
+## ECR026.003 Permanent keyboard illumination after warm-boot (Windows 11)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing warm-boot, keyboard still illuminates in Windows 11.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Power off the DUT using power button.
+1. Power on the DUT.
+1. Boot into the `OPERATING_SYSTEM`.
+1. Log into the `OPERATING_SYSTEM` by using the proper login and password.
+
+**Expected result**
+
+1. After warm-boot keyboard brightness and colors settings remain the same.
+
+## ECR027.001 Permanent keyboard illumination after reboot (Firmware)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing reboot, keyboard still illuminates in firmware.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `BIOS_SETUP_KEY` = `Esc`
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../generic-test-setup/#firmware)
+
+**Test steps**
+
+1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Select `Reset` option from the bottom of the list.
+1. During boot press the `BIOS_SETUP_KEY` to enter the setup menu.
+
+**Expected result**
+
+1. After reboot keyboard brightness and colors settings remain the same.
+
+## ECR027.002 Permanent keyboard illumination after reboot (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing reboot, keyboard still illuminates in Ubuntu 22.04
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubunut 22.04
 
 **Test setup**
 
@@ -1584,22 +1802,28 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. 
+1. Set keyboard brightness and color to arbitrary settings.
+1. Reboot the device using:
+
+    ```bash
+    sudo reboot now
+    ```
 
 **Expected result**
 
+1. After reboot keyboard brightness and colors settings remain the same.
 
-
-## ECR024.002 Permanent keyboard illumination after cold-boot (Ubuntu)
+## ECR027.003 Permanent keyboard illumination after reboot (Windows 11)
 
 **Test description**
 
----
+This test aims to verify that after enabling permament illumination of keyboard
+and performing reboot, keyboard still illuminates in Windows 11.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
+1. `OPERATING_SYSTEM` = Windows 11
 
 **Test setup**
 
@@ -1611,21 +1835,58 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. 
+1. Set keyboard brightness and color to arbitrary settings.
+1. Reboot the device executing in PowerShell:
+
+    ```bash
+    Restart-Computer
+    ```
 
 **Expected result**
 
+1. After reboot keyboard brightness and colors settings remain the same.
 
-## ECR024.003 Permanent keyboard illumination after cold-boot (Windows 11)
+## ECR028.001 Permanent keyboard illumination after suspension (Firmware)
 
 **Test description**
 
----
+This test aims to verify that after enabling permament illumination of keyboard
+and performing suspension, keyboard still illuminates in firmware.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
+1. `BIOS_SETUP_KEY` = `Esc`
+1. `SUSPEND_KEY` = `Fn + F12`
+
+**Test setup**
+
+1. Proceed with the
+   [Generic test setup: firmware](../generic-test-setup/#firmware)
+
+**Test steps**
+
+1. Power on the DUT and press the `BIOS_SETUP_KEY` to enter the setup menu.
+1. Set keyboard brightness and color to arbitrary settings.
+1. Suspend the DUT using `SUSPEND_KEY`.
+1. Wake the device from suspend pressing any key on keyboard.
+
+**Expected result**
+
+1. After suspend keyboard brightness and colors settings remain the same.
+
+## ECR028.002 Permanent keyboard illumination after suspension (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that after enabling permament illumination of keyboard
+and performing suspension, keyboard still illuminates in Ubuntu 22.04
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `SUSPEND_KEY` = `Fn + F12`
 
 **Test setup**
 
@@ -1637,22 +1898,26 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. 
+1. Set keyboard brightness and color to arbitrary settings.
+1. Suspend the DUT using `SUSPEND_KEY`.
+1. Wake the device from suspend pressing any key on keyboard.
 
 **Expected result**
 
+1. After suspend keyboard brightness and colors settings remain the same.
 
-
-## ECR025.001 Permanent keyboard illumination after warm-boot (Firmware)
+## ECR028.003 Permanent keyboard illumination after suspension (Windows 11)
 
 **Test description**
 
----
+This test aims to verify that after enabling permament illumination of keyboard
+and performing suspension, keyboard still illuminates in Windows 11.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
+1. `OPERATING_SYSTEM` = Windows 11
+1. `SUSPEND_KEY` = `Fn + F12`
 
 **Test setup**
 
@@ -1664,223 +1929,13 @@ properly by the operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. 
+1. Set keyboard brightness and color to arbitrary settings.
+1. Suspend the DUT using `SUSPEND_KEY`.
+1. Wake the device from suspend pressing any key on keyboard.
 
 **Expected result**
 
-
-
-## ECR025.002 Permanent keyboard illumination after warm-boot (Ubuntu)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
-## ECR025.003 Permanent keyboard illumination after warm-boot (Windows 11)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
-## ECR026.001 Permanent keyboard illumination after reboot (Firmware)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
-
-## ECR026.002 Permanent keyboard illumination after reboot (Ubuntu)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
-## ECR026.003 Permanent keyboard illumination after reboot (Windows 11)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
-
-## ECR027.001 Permanent keyboard illumination after suspension (Firmware)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
-
-## ECR027.002 Permanent keyboard illumination after suspension (Ubuntu)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
-## ECR027.003 Permanent keyboard illumination after suspension (Windows 11)
-
-**Test description**
-
----
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = ---
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. 
-
-**Expected result**
-
-
+1. After suspend keyboard brightness and colors settings remain the same.
 
 ## SIO001.001 PS/2 mouse in OS - (Ubuntu 22.04)
 
@@ -1954,7 +2009,7 @@ and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `BIOS_SETUP_KEY` = `F2`
+2. `BIOS_SETUP_KEY` = `Esc`
 
 **Test setup**
 
@@ -1982,7 +2037,7 @@ system and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `BIOS_SETUP_KEY` = `F2`
+2. `BIOS_SETUP_KEY` = `Esc`
 3. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -2054,7 +2109,7 @@ system and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `BIOS_SETUP_KEY` = `F2`
+2. `BIOS_SETUP_KEY` = `Esc`
 3. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -2117,7 +2172,7 @@ and the menu can be traversed with serial console.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `BIOS_SETUP_KEY` = `F2`
+2. `BIOS_SETUP_KEY` = `Esc`
 
 **Test setup**
 
@@ -2146,7 +2201,7 @@ system and can be utilized as serial console.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `BIOS_SETUP_KEY` = `F2`
+2. `BIOS_SETUP_KEY` = `Esc`
 3. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
