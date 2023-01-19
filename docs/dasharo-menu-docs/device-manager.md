@@ -44,9 +44,9 @@ available for the disk:
 
 All below options require reset to apply changes.
 
-* `Update Diver Admin Password` - to update current admin password. Prompt
+* `Update Drive Admin Password` - to update current admin password. Prompt
   window appears after reset to enter current and new password
-* `Set Driver User Password` - is used to set an optional user password.
+* `Set Drive User Password` - is used to set an optional user password.
 * `Secure Erase User Data` - performs secure erase of the data after reset.
 * `Admin Revert to factory default and Disable` - disables the admin password
   (prompt will no longer appear during boot o unlock the drive) and the
@@ -107,7 +107,7 @@ and certificates:
 
 ![](/images/menus/secure_boot_custom.jpeg){ class="center" }
 
-If `Custom Mode` is elected an additional entry appears
+If `Custom Mode` is selected an additional entry appears
 `Custom Secure Boot Options`. It is an advanced menu to manipulate Secure Boot
 keys and certificates manually:
 

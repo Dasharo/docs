@@ -58,7 +58,7 @@ The currently available menus/submenus are as follows:
   features like: UEFI Secure Boot, TPM device, SATA and TCG OPAL password, etc.
   It may also contain informational menus like Driver Health Manager, Network
   Device List and others.
-* [Dasharo System Features](dasharo-system-features.md)- contains submenus for
+* [Dasharo System Features](dasharo-system-features.md) - contains submenus for
   features specific to Dasharo products and Dasharo supported platforms
 * [One Time Boot](#one-time-boot) - allows to choose which boot entry to
   execute. It simply lists all available boot options and allows to select one
