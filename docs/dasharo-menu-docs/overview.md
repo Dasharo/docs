@@ -80,8 +80,9 @@ User Password Management menu allows one to set firmware setup admin password:
 
 The password must be a strong one. The requirements are described on the help
 section on the right side of the menu page. If the password is too weak it will
-not be accepted. The page shows the current status of `Admin Password` if it
-was provisioned or not.
+not be accepted. Also the new password must be different from the last 5
+passwords that were used before. The page shows the current status of
+`Admin Password` if it is provisioned or not.
 
 To disable the password, enter the `User Password Management` menu again and
 request to set new password. You will be asked to enter current password. When
