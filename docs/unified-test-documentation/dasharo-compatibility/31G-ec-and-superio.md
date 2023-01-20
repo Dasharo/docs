@@ -1757,7 +1757,7 @@ illuminates in Windows 11.
 **Test description**
 
 This test aims to verify that after performing reboot, keyboard still
-iluminates in firmware.
+illuminates in firmware.
 
 **Test configuration data**
 
@@ -1818,7 +1818,7 @@ illuminates in Ubuntu 22.04
 **Test description**
 
 This test aims to verify that after performing reboot, keyboard still
-iluminates in Windows 11.
+illuminates in Windows 11.
 
 **Test configuration data**
 
