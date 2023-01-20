@@ -1756,8 +1756,8 @@ illuminates in Windows 11.
 
 **Test description**
 
-This test aims to verify that after performing reboot, keyboard still il
-uminates in firmware.
+This test aims to verify that after performing reboot, keyboard still
+iluminates in firmware.
 
 **Test configuration data**
 
@@ -1784,13 +1784,13 @@ uminates in firmware.
 
 **Test description**
 
-This test aims to verify that after performing reboot, keyboard still il
-uminates in Ubuntu 22.04
+This test aims to verify that after performing reboot, keyboard still
+illuminates in Ubuntu 22.04
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubunut 22.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -1817,8 +1817,8 @@ uminates in Ubuntu 22.04
 
 **Test description**
 
-This test aims to verify that after performing reboot, keyboard still il
-uminates in Windows 11.
+This test aims to verify that after performing reboot, keyboard still
+iluminates in Windows 11.
 
 **Test configuration data**
 
@@ -1850,8 +1850,8 @@ uminates in Windows 11.
 
 **Test description**
 
-This test aims to verify that after performing suspension, keyboard stil
- illuminates in firmware.
+This test aims to verify that after performing suspension, keyboard still
+illuminates in firmware.
 
 **Test configuration data**
 
@@ -1879,8 +1879,8 @@ This test aims to verify that after performing suspension, keyboard stil
 
 **Test description**
 
-This test aims to verify that after performing suspension, keyboard stil
- illuminates in Ubuntu 22.04
+This test aims to verify that after performing suspension, keyboard still
+illuminates in Ubuntu 22.04
 
 **Test configuration data**
 
@@ -1910,8 +1910,8 @@ This test aims to verify that after performing suspension, keyboard stil
 
 **Test description**
 
-This test aims to verify that after performing suspension, keyboard stil
- illuminates in Windows 11.
+This test aims to verify that after performing suspension, keyboard still
+illuminates in Windows 11.
 
 **Test configuration data**
 
