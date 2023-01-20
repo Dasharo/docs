@@ -220,7 +220,6 @@ and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `Esc`
 
 **Test setup**
 
@@ -246,7 +245,6 @@ system and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `Esc`
 1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
@@ -1573,7 +1571,6 @@ illuminates in firmware.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `Esc`
 
 **Test setup**
 
@@ -1669,7 +1666,6 @@ illuminates in firmware.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `Esc`
 
 **Test setup**
 
@@ -1762,7 +1758,6 @@ illuminates in firmware.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `Esc`
 
 **Test setup**
 
@@ -1856,7 +1851,6 @@ illuminates in firmware.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `BIOS_SETUP_KEY` = `Esc`
 1. `SUSPEND_KEY` = `Fn + F12`
 
 **Test setup**
