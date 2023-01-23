@@ -144,6 +144,12 @@ nav:
           - 'Recovery': variants/protectli_vp46xx/recovery.md
           - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
+      - 'QEMU Q35 Emulator':
+          - 'Overview': variants/qemu_q35/overview.md
+          - 'Releases': variants/qemu_q35/releases.md
+          - 'Building manual': variants/qemu_q35/building-manual.md
+          - 'Development': variants/qemu_q35/development.md
+          - 'Test matrix': variants/qemu_q35/test-matrix.md
       - 'MSI PRO Z690-A':
           - 'Overview': variants/msi_z690/overview.md
           - 'Releases': variants/msi_z690/releases.md
