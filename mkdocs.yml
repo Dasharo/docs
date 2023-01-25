@@ -161,6 +161,16 @@ nav:
           - 'GPU Compatibility': variants/msi_z690/gpu-hcl.md
           - 'Community Test Results': variants/msi_z690/community-test-results.md
           - 'FAQ': variants/msi_z690/faq.md
+      - 'Supermicro X11 LGA1151 Series':
+          - 'Overview': variants/supermicro_x11_lga1151_series/overview.md
+          - 'Releases': variants/supermicro_x11_lga1151_series/releases.md
+          - 'Building manual': variants/supermicro_x11_lga1151_series/building-manual.md
+          - 'Hardware Configuration Matrix': variants/supermicro_x11_lga1151_series/hardware-matrix.md
+          - 'Test matrix': variants/supermicro_x11_lga1151_series/test-matrix.md
+          - 'Initial deployment': variants/supermicro_x11_lga1151_series/initial-deployment.md
+          - 'Firmware update': variants/supermicro_x11_lga1151_series/firmware-update.md
+          - 'Recovery': variants/supermicro_x11_lga1151_series/recovery.md
+          - 'FAQ': variants/supermicro_x11_lga1151_series/faq.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
