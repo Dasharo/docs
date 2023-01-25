@@ -5,7 +5,7 @@
 </center>
 
 Supermicro X11 LGA1151 Series are mainboards dedicated for servers and
-workstations. Most notable examples of this are hardware are
+workstations. Most notable examples of this hardware are
 [X11SSH-TF](https://www.supermicro.com/en/products/motherboard/x11ssh-tf) and
 [X11SSH-F](https://www.supermicro.com/en/products/motherboard/X11SSH-F). Ideal
 motherboard for NAS servers, with a PCIE x16 slot to potentially accommodate a
@@ -19,12 +19,13 @@ check documentation sections on the left.
 ## Status
 
 Dasharo compatible with Supermicro X11 LGA1151 Series is a community-driven
-effort.  We work on this in our free time, since we have no sponsor for this
+effort. We work on this in our free time, since we have no sponsor for this
 project. To address the issue we organize virtual hackathon on Dasharo Matrix
 whenever we can. At this point two communinty members are engaged
-([collector-ynh](https://matrix.to/#/@collector-ynh:matrix.org) with X11SSH-F and
-[pietrushnic](https://matrix.to/#/@pietrushnic:matrix.org) with X11SSH-TF). Feel free to reach them
-if you wan to talk about project status. 
+([collector-ynh](https://matrix.to/#/@collector-ynh:matrix.org) with X11SSH-F
+and [pietrushnic](https://matrix.to/#/@pietrushnic:matrix.org) with X11SSH-TF,
+we also have X11SSH-TF in 3mdeb lab). Feel free to [conact
+us](mailto:contact@dasharo.com) if you wan to talk about project status. 
 
 Please note that Dasharo compatilbe with Supermicro X11 LGA1151 Series may work
 with various boards from this family, at this stage only X11SSH-F and X11SSH-TF
@@ -40,6 +41,10 @@ way](../../ways-you-can-help-us.md).
 The most advanced code is on [development branch](https://github.com/Dasharo/coreboot/pull/281). This code supports only
 `Dasharo (coreboot+UEFI)`. Work in progress documentation can be found
 [here](https://github.com/Dasharo/docs/pull/426).
+
+**NOTE**: We decided to follow divide and conquer strategy, every piece of
+contribution which was verified and reviewed will be merged even if that is
+just small part of bigger documentation . Otherwise we will never move forward.
 
 ## References
 
