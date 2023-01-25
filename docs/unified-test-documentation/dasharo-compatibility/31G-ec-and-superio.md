@@ -1931,6 +1931,67 @@ illuminates in Windows 11.
 
 1. After suspend keyboard brightness and colors settings remain the same.
 
+## ECR029.001 FnLock Hotkey (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that FnLock hotkey functionality works properly on
+Ubuntu 22.04.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `FN_LOCK_KEY` = `Fn + CapsLock`
+
+**Test setup**
+1. Read the [FnLock Hotkey Usage](../../unified/novacustom/fnlock-keyboard.md).
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Use `FN_LOCK_KEY` to activate FnLock.
+1. Test function keys `F1` - `F12` and note the results.
+
+**Expected result**
+
+1. The function keys `F1` - `F12` behave as if `Fn` key is pressed.
+
+## ECR029.002 FnLock Hotkey (Windows 11)
+
+**Test description**
+
+This test aims to verify that FnLock hotkey functionality works properly on
+Windows 11.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+1. `FN_LOCK_KEY` = `Fn + CapsLock`
+
+**Test setup**
+
+1. Read the [FnLock Hotkey Usage](../../unified/novacustom/fnlock-keyboard.md).
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Use `FN_LOCK_KEY` to activate FnLock.
+1. Test function keys `F1` - `F12` and note the results.
+
+**Expected result**
+
+1. The function keys `F1` - `F12` behave as if `Fn` key is pressed.
+
 ## SIO001.001 PS/2 mouse in OS - (Ubuntu 22.04)
 
 **Test description**
