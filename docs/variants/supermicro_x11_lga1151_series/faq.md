@@ -57,5 +57,3 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:ff:00.0
 ```
-
-

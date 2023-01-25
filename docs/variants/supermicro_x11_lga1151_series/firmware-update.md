@@ -5,6 +5,8 @@
 Following documentation describe process of Dasharo open-source firmware
 distribution update.
 
+<!-
+
 ## OS booting
 
 For simplicity we recommend using network booted
@@ -27,3 +29,4 @@ flashrom -p internal --ifd -i bios -w <dasharo_optiplex_9010_firmware>
 
 Please note that not using `-i bios` may lead to
 [this issue](faq.md#cpu-was-replaced-warm-reset-required-loop)
+-->

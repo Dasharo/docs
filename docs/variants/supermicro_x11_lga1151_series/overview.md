@@ -25,20 +25,21 @@ whenever we can. At this point two communinty members are engaged
 ([collector-ynh](https://matrix.to/#/@collector-ynh:matrix.org) with X11SSH-F
 and [pietrushnic](https://matrix.to/#/@pietrushnic:matrix.org) with X11SSH-TF,
 we also have X11SSH-TF in 3mdeb lab). Feel free to [conact
-us](mailto:contact@dasharo.com) if you wan to talk about project status. 
+us](mailto:contact@dasharo.com) if you wan to talk about project status.
 
 Please note that Dasharo compatilbe with Supermicro X11 LGA1151 Series may work
 with various boards from this family, at this stage only X11SSH-F and X11SSH-TF
 can be treated as tested. This state can change when we will enter more mature
 state with transparent validation results published in [release](../release)
-section and [hardware cofiguration matrix](../hardware-matrix) used for
+section and [hardware configuration matrix](../hardware-matrix) used for
 testing. We may also consider CPU, DRAM and GPU HCL sections in documentation.
 
 If you are interested in this project, please consider joining the
 community-dirven effort or [supporting us in other
 way](../../ways-you-can-help-us.md).
 
-The most advanced code is on [development branch](https://github.com/Dasharo/coreboot/pull/281). This code supports only
+The most advanced code is on [development
+branch](https://github.com/Dasharo/coreboot/pull/281). This code supports only
 `Dasharo (coreboot+UEFI)`. Work in progress documentation can be found
 [here](https://github.com/Dasharo/docs/pull/426).
 
@@ -52,4 +53,3 @@ just small part of bigger documentation . Otherwise we will never move forward.
 * [Green TekSolutions: The first motherboard for servers to use CoreBoot - X11SSH-TF](https://www.greenteksolutionsllc.com/blog/The_first_motherboard_for_servers_to_use_CoreBoot_-_X11SSH-TF)
 * [coreboot: X11 LGA1151 Series documentation](https://doc.coreboot.org/mainboard/supermicro/x11-lga1151-series/x11-lga1151-series.html)
 * [coreboot: Supermicro X11SSH-F/X11SSH-LN4F documentation](https://doc.coreboot.org/mainboard/supermicro/x11-lga1151-series/x11ssh-f/x11ssh-f.html)
-

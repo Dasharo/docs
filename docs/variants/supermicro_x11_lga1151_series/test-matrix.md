@@ -7,6 +7,7 @@
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary.
 
+<!--
 ## Module: Dasharo compatibility
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
@@ -69,3 +70,4 @@ subjected from before the release of the new binary.
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+-->

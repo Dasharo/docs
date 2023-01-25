@@ -2,6 +2,7 @@
 
 **Please read the [overview page](../overview) first!**
 
+<!--
 To build Dasharo compatible with Supermicro X11 LGA1151 Series, follow the
 steps below:
 
@@ -15,13 +16,11 @@ steps below:
     cd coreboot
     ```
 
-<!--
     Replace vX.Y.Z with valid version:
 
     ```bash
     git checkout supermicro_x11_lga1151_series_vX.Y.Z
     ```
--->
 
     ```bash
     git checkout supermicro_x11-lga1151-series/develop
@@ -95,3 +94,4 @@ flashed in following ways, depending on your situation:
 
 * To flash Dasharo first time refer to [initial deployment manual](initial-deployment.md).
 * To update Dashro refer [firmware update](firmware-update.md).
+-->

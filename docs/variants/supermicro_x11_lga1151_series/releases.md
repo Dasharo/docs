@@ -1,7 +1,8 @@
-# Dasharo compatible with Dell OptiPlex 7010/9010 SFF
+# Dasharo compatible with Supermicro X11 LGA1151 Series
 
 **Please read the [overview page](../overview) first!**
 
+<!--
 Following Release Notes describe status of Open Source Firmware development for
 Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF, MT.
 
@@ -10,7 +11,6 @@ For details about our release process please read
 
 [Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR)
 { .md-button .md-button--primary .center }
-<!--
 
 ## Unreleased
 
