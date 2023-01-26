@@ -3,7 +3,6 @@
 Following Release Notes describe status of Open Source Firmware development for
 QEMU Q35 (Emulator).
 
-
 ## v0.1.0 - 2023-01-20
 
 ### Added
