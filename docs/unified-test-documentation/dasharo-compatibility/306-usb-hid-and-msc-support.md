@@ -405,3 +405,142 @@ Algorithm       Hash                                                            
 ---------       ----                                                              ----
 SHA256          F46597C0C63A1EEFB200D40EDF654E52F10C3D5D21565886AD603FABAF8D39FB  E:\test_file.txt
 ```
+
+## USB004.001 Enable USB stack (Firmware)
+
+**Test description**
+
+This test aims to verify if USB stack can be enabled. USB stack controls loading
+of UEFI USB drivers.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Hover on checkbox next to `Enable USB stack` option, and make sure that `X`
+    sign is present between square brackets - `[X]`. Use `Spacebar to toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+
+**Expected result**
+
+1. `X` sign is present between square brackets next to `Enable USB stack` -
+    `[X]`.
+
+## USB005.001 Disable USB stack (Firmware)
+
+**Test description**
+
+This test aims to verify if USB stack can be disabled. USB stack controls
+loading of UEFI USB drivers.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Hover on checkbox next to `Enable USB stack` option, and make sure that `X`
+    sign is NOT present between square brackets - `[ ]`. Use `Spacebar to
+    toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+
+**Expected result**
+
+1. `X` sign is NOT present between square brackets next to `Enable USB stack` -
+    `[ ]`.
+
+## USB006.001 Enable USB Mass Storage (Firmware)
+
+**Test description**
+
+This test aims to verify if USB Mass Storage can be enabled. This option
+controls the USB boot capability.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Hover on checkbox next to `Enable USB Mass Storage` option, and make sure
+    that `X` sign is present between square brackets - `[X]`. Use `Spacebar to
+    toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+
+**Expected result**
+
+1. `X` sign is present between square brackets next to
+    `Enable USB Mass Storage` - `[X]`.
+
+## USB007.001 Disable USB Mass Storage (Firmware)
+
+**Test description**
+
+This test aims to verify if USB Mass Storage can be disabled. This option
+controls the USB boot capability.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Hover on checkbox next to `Enable USB Mass Storage` option, and make sure
+    that `X` sign is NOT present between square brackets - `[ ]`. Use `Spacebar
+    to toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+
+**Expected result**
+
+1. `X` sign is NOT present between square brackets next to
+    `Enable USB Mass Storage` - `[ ]`.
