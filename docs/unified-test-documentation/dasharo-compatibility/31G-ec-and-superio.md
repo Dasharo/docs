@@ -1985,7 +1985,7 @@ Windows 11.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Use `FN_LOCK_KEY` to activate FnLock.
+1. Use `FN_LOCK_KEY` to activate Fn lock functionality.
 1. Test function keys `F1` - `F12` and note the results.
 
 **Expected result**
