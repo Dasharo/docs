@@ -476,11 +476,11 @@ host machine in a local network):
 #
 kernel http://<YOUR_IP>:9000/bzImage root=/dev/nfs initrd=http://<YOUR_IP>:9000/dts-base-image-genericx86-64.cpio.gz
 initrd http://<YOUR_IP>:9000/dts-base-image-genericx86-64.cpio.gz
-module http://<YOUR_IP>:9000/ipxe-commands /sbin/ipxe-commands mode=755
+module http://<YOUR_IP>:9000/custom-script /sbin/ipxe-commands mode=755
 boot
 ```
 
-* Copy your `ipxe-commands` script in this same directory
+* Copy your `custom-script` script in this same directory
 
 * Enter the iPXE shell on your device and load `dts.ipxe` chainboot file:
 
@@ -489,12 +489,12 @@ iPXE> dhcp
 Configuring (net0 00:0d:b9:4b:49:60)...... ok
 iPXE> route
 net0: 192.168.4.126/255.255.255.0 gw 192.168.4.1
-iPXE> chain http://192.168.4.98:9001/dts.ipxe
-http://192.168.4.98:9001/dts.ipxe... ok
-http://192.168.4.98:9001/bzImage... ok
-http://192.168.4.98:9001/dts-base-image-genericx86-64.cpio.gz... ok
-http://192.168.4.98:9000/ipxe-commands... ok
+iPXE> chain http://192.168.4.98:9000/dts.ipxe
+http://192.168.4.98:9000/dts.ipxe... ok
+http://192.168.4.98:9000/bzImage... ok
+http://192.168.4.98:9000/dts-base-image-genericx86-64.cpio.gz... ok
+http://192.168.4.98:9000/custom-script... ok
 ```
 
-Now your `ipxe-commands` script should be copied to DTS rootfs and will be
-executed after boot
+Now your `custom-script` script should be copied to DTS rootfs as
+`ipxe-commands` and will be executed after boot.
