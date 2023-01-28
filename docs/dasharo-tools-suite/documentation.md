@@ -247,6 +247,73 @@ ethernet cable. More information can be found in
 
 ![](./images/dts-hcl-run.png)
 
+#### HCL Report correctness
+
+Please note DTS HCL Report assumes that your chipset is already supported by
+flashrom. There are also other false negative errors and unknowns, which we
+trying to fix to improve user experience.
+
+Always check `results` file to confirm quality of your HCL report. Sample
+content of such file may look as follows:
+
+```text
+[OK]    PCI configuration space and topology
+[UNKNOWN] USB devices and topology
+[OK]    Super I/O configuration
+[UNKNOWN] EC configuration
+[ERROR]   MSRs
+[OK]    SMBIOS tables
+[OK]    BIOS information
+[OK]    CMOS NVRAM
+[UNKNOWN] Intel configuration registers
+[OK]    GPIO configuration C header files
+[OK]    kernel dmesg
+[OK]    ACPI tables
+[UNKNOWN] Audio devices configuration
+[OK]    CPU info
+[OK]    I/O ports
+[OK]    Input bus types
+[OK]    Firmware image
+[OK]    I2C bus
+[UNKNOWN] ACPI tables
+[OK]    Touchpad information
+[OK]    DIMMs information
+[ERROR]   CBMEM table information
+[ERROR]   TPM information
+[ERROR]   AMT information
+[OK]    ME information
+Results of getting data:
+
+Legend:
+[OK]     Data get successfully
+[UNKNOWN]  Result is unknown
+[ERROR]    Error during getting data
+```
+
+Please report all errors exerienced while performing dump to
+[dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository.
+
+#### BIOS backup
+
+One of the key components of HCL Report is your BIOS backup. To prepare BIOS
+backup of your platform simply run HCL Report and decide if you would like to
+contribute information about your hardware configuration.
+
+Please consider following options depending on your situation:
+
+* **YES** - If you decided to contribute you can always [get back to
+  us](https://www.dasharo.com/pages/contact/) and ask about BIOS backup, which
+  we will provide after simple verification that you are the owner of the
+  hardware.
+* **NO (default)** - If you decided to not contribute your situation depends on
+  boot method you used to execute DTS:
+    - **Network Boot** - please note that Dasharo booted over iPXE assumes no storage
+      available, so report and your BIOS backup are stored in temporary memory
+      and will not be available after reboot. Please make sure to move HCL report
+      to not volatile storage. This can be done using option `9) Shell`
+    - **USB Boot** - HCL report and BIOS backup are saved to USB storage root
+      directory.
+
 ### Firmware update
 
 Within DTS, you may use the `flashrom` and `fwupdmgr` utilities to update,
