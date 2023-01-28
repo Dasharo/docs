@@ -4,6 +4,31 @@ Initial deployment for Supermicro X11SSH is supported in DTS since version
 [vTBD](#tbd). Please check [Dasharo zero-touch initial deployment
 section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
 
+We strongly recommend following these official instructions. The official guide
+has a lot of collaborative effort put into covering all of the edge cases and
+is regularly tested. Following these instructions to the letter without
+skipping, reordering or adding any steps will give you a proper Dasharo
+installation unless there's a hardware issue.  We strongly recommend against
+following unofficial guides deviating in any way from the official
+instructions.
+
+If you have trouble with the installation process, ask for help on the official
+[Dasharo chat channel](../../../#community). There are almost always people
+around willing to help with it. Before asking for help, make an attempt to
+follow the guide on your own and then ask for help with anything you get stuck
+on.
+
+## Hardware preparation
+
+Please use Supermicro Quick Reference Guide for you mainboard e.g.
+[X11SSH-TF](https://www.supermicro.com/QuickRefs/motherboard/C236/QRG-1783.pdf).
+Find JPME2 and change its state to position 2-3, which means ME Manufacturing
+Mode enabled.
+
+<center>
+![](../../images/x11_mfg_mode.jpg)
+</center>
+
 ## Booting DTS over network
 
 For seamless and storageless deployment one can use BMC virtual floppy
@@ -49,6 +74,11 @@ Dasharo Tools Suite
 OS installation (netboot.xyz official server)
 iPXE Shell
 ```
+
+## Vendor BIOS backup
+
+Please follow [DTS backup
+guide](../../../dasharo-tools-suite/documentation/#bios-backup).
 
 ## Installing Dasharo with DTS
 

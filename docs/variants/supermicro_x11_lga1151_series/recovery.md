@@ -24,7 +24,8 @@ Update](../firmawre-update).
 
 Without active license you can't use BIOS Update feature. License key can be
 generated using [kasuganosoras
-scripts](https://github.com/kasuganosoras/SuperMicro-IPMI-LicenseGenerator).
+scripts](https://github.com/kasuganosoras/SuperMicro-IPMI-LicenseGenerator) and
+entered through BMC web interface (`Miscellaneous->Activate License`).
 
 #### Up to date firmware
 
@@ -36,3 +37,14 @@ Please make sure you using firmware revision 01.60
 If not please follow `IPMI Firmware Update_NEW.pdf` instruction from package
 that you can download
 [here](https://www.supermicro.com/en/support/resources/downloadcenter/firmware/MBD-X11SSH-TF/BMC).
+
+Unfortunately most efficient way to interact with proprietary BMC is to use
+Supermicro proprietary closed source tools:
+
+* [Supermicro Update
+  Manager](https://www.supermicro.com/en/solutions/management-software/supermicro-update-manager)
+   please download and unpack archive.
+* [Backup](../../../dasharo-tools-suite/documentation/#bios-backup) or
+  [Supermicro BIOS
+  update](https://www.supermicro.com/en/support/resources/downloadcenter/firmware/MBD-X11SSH-TF/BIOS)
+   please download and unpack archive.
