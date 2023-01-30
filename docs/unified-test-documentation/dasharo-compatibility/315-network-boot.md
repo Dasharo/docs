@@ -8,6 +8,75 @@
     [Generic test setup: firmware](../../generic-test-setup#firmware).
 1. Device should be connected to the Internet by using an Ethernet cable.
 
+## PXE000.001 Enable Network Boot (Firmware)
+
+**Test description**
+
+This test aims to verify if Network Boot can be enabled.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Enter the `Networking Options` menu option.
+1. Hover on checkbox next to `Enable Network Boot` option, and make sure
+    that `X` sign is present between square brackets - `[X]`. Use `Spacebar`
+    to toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `One Time Boot` menu option.
+
+**Expected result**
+
+1. The `Network Boot` boot option is present.
+
+## PXE000.002 Disable Network Boot (Firmware)
+
+**Test description**
+
+This test aims to verify if Network Boot can be disabled. When disabled, it
+prevents loading network controller drivers and unregisters iPXE as boot option.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Enter the `Networking Options` menu option.
+1. Hover on checkbox next to `Enable Network Boot` option, and make sure
+    that `X` sign is NOT present between square brackets - `[ ]`. Use `Spacebar`
+    to toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `One Time Boot` menu option.
+
+**Expected result**
+
+1. The `Network Boot` boot option is not present.
+
 ## PXE001.001 Dasharo Network Boot is available
 
 **Test description**
@@ -234,72 +303,3 @@ server.
 1. The iPXE application boots successfully.
 1. iPXE obtains an IP address.
 1. iPXE boots an `Debian 11` from netboot.xyz.
-
-## USB008.001 Enable Network Boot (Firmware)
-
-**Test description**
-
-This test aims to verify if Network Boot can be enabled.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `SETUP_MENU_KEY` = F2
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Enter the `Networking Options` menu option.
-1. Hover on checkbox next to `Enable Network Boot` option, and make sure
-    that `X` sign is present between square brackets - `[X]`. Use `Spacebar`
-    to toggle.
-1. Save using `F10`, and exit using `Esc`.
-1. Reboot the device.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `One Time Boot` menu option.
-
-**Expected result**
-
-1.`Network Boot` or `iPXE` boot option is present.
-
-## USB009.001 Disable Network Boot (Firmware)
-
-**Test description**
-
-This test aims to verify if Network Boot can be disabled. When disabled, it
-prevents loading network controller drivers and unregisters iPXE as boot option.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `SETUP_MENU_KEY` = F2
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Enter the `Networking Options` menu option.
-1. Hover on checkbox next to `Enable Network Boot` option, and make sure
-    that `X` sign is NOT present between square brackets - `[ ]`. Use `Spacebar`
-    to toggle.
-1. Save using `F10`, and exit using `Esc`.
-1. Reboot the device.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `One Time Boot` menu option.
-
-**Expected result**
-
-1. Neither the `Network Boot` nor `iPXE` boot option is present.
