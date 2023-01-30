@@ -93,3 +93,71 @@ Pmr(1) disabled
 Indicate that VT-D engine 1 had PMR enabled earlier, which is expected.
 
 If all above conditions are met, test pass.
+
+## EDP002.001 Disable Early Boot DMA Protection (Firmware)
+
+**Test description**
+
+This test aims to verify if Early Boot DMA Protection can be disabled.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Enter the `-----------` menu option.
+1. Hover on checkbox next to `----------------` option, and make sure
+    that `X` sign is NOT present between square brackets - `[ ]`. Use `Spacebar`
+    to toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+<!-- 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `One Time Boot` menu option. -->
+
+**Expected result**
+
+--------------
+
+## EDP003.001 Enable Early Boot DMA Protection (Firmware)
+
+**Test description**
+
+This test aims to verify if Early Boot DMA Protection can be enabled.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `SETUP_MENU_KEY` = F2
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Dasharo System Features` menu option.
+1. Enter the `-----------` menu option.
+1. Hover on checkbox next to `----------------` option, and make sure
+    that `X` sign is present between square brackets - `[X]`. Use `Spacebar`
+    to toggle.
+1. Save using `F10`, and exit using `Esc`.
+1. Reboot the device.
+<!-- 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `One Time Boot` menu option. -->
+
+**Expected result**
+
+--------------
