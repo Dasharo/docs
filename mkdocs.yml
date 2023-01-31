@@ -34,6 +34,7 @@ markdown_extensions:
       alternate_style: true
 plugins:
   - search
+  - mkdocs-video
   - redirects:
       redirect_maps:
         'common-coreboot-docs/dasharo_tools_suite.md': 'dasharo-tools-suite/overview.md'
