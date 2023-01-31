@@ -349,4 +349,5 @@ nav:
         #
       - 'Ways you can help us': ways-you-can-help-us.md
   - 'Projects':
-      - 'TrenchBoot Anti Evil Maid': projects/trenchboot-aem.md
+      - 'TrenchBoot Anti Evil Maid (current plan - v2)': projects/trenchboot-aem-v2.md
+      - 'TrenchBoot Anti Evil Maid (previoius plan - v1)': projects/trenchboot-aem.md
