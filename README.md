@@ -98,6 +98,13 @@ use:
 git commit --no-verify
 ```
 
+### Embedding videos
+
+Embedding videos with in-line HTML `iframe` tag does not work.
+[mkdocs-video](https://github.com/soulless-viewer/mkdocs-video) plugin is used
+instead. To embed an video simply type the following in markdown:
+`![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)` (example).
+
 ## Navigation menu
 
 ### Supported hardware
