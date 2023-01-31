@@ -22,21 +22,20 @@ through integration with the [TrenchBoot Project][tb_org].
 
 The usage of DRT technologies like Intel Trusted Execution Technology (TXT) or
 AMD Secure Startup becomes more and more significant, for example, Dynamic Root
-of Trust for Measurement (DRTM) requirements of
-[Microsoft Secured Core PCs ][ms_sec_core].  In open-source projects, DRTM
-hasn't found its place yet, but that gradually changes. The demand on having
-firmware independent Roots of Trust is increasing and projects that satisfy
-this demand are growing, for instance, [TrenchBoot][tb_org].  TrenchBoot is a
-framework that allows individuals and projects to build security engines to
-perform launch integrity actions for their systems. The framework builds upon
-Boot Integrity Technologies (BITs) that establish one or more Roots of Trust
-(RoT) from which a degree of confidence that integrity actions were not
-subverted. The project has grown a lot thanks to the previous
-[NLnet NGI0 PET grant ][nlnet_open_drtm] and now it looks for further expansion
-into extensive use of the DRT technologies in open-source and security-oriented
-operating systems like [Qubes OS][qubes_os_rg].
-[Qubes OS Anti Evil Maid (AEM)][it_aem] software heavily depends on the
-availability of the DRTM technologies to prevent the
+of Trust for Measurement (DRTM) requirements of [Microsoft Secured Core
+PCs][ms_sec_core].  In open-source projects, DRTM hasn't found its place yet,
+but that gradually changes. The demand on having firmware independent Roots of
+Trust is increasing and projects that satisfy this demand are growing, for
+instance, [TrenchBoot][tb_org].  TrenchBoot is a framework that allows
+individuals and projects to build security engines to perform launch integrity
+actions for their systems. The framework builds upon Boot Integrity
+Technologies (BITs) that establish one or more Roots of Trust (RoT) from which
+a degree of confidence that integrity actions were not subverted. The project
+has grown a lot thanks to the previous [NLnet NGI0 PET grant][nlnet_open_drtm]
+and now it looks for further expansion into extensive use of the DRT
+technologies in open-source and security-oriented operating systems like
+[Qubes OS][qubes_os_rg]. [Qubes OS Anti Evil Maid (AEM)][it_aem] software
+heavily depends on the availability of the DRTM technologies to prevent the
 [Evil Maid attacks][em_attacks].  However, the project hasn't evolved much
 since the beginning of 2018 and froze on the support of TPM 1.2 with Intel TXT
 in legacy boot mode (BIOS). This effectively limits the usage of this security
@@ -76,10 +75,11 @@ of the PC Engines APU series platform for over 7-years. Delivering high-quality
 firmware releases each month and providing technical support on PC Engines and
 OPNSense forums. 3mdeb embedded systems developers are experienced engineers
 accustomed to operating systems development. Our developers have contributed to
-the [fwupd support for Qubes OS][qubes_fwupd]. 3mdeb is also regularly co-organizing
-mini-conference events with Qubes OS maintainer Marek Marczykowski-Górecki where
-various topics related to Qubes OS security are discussed. Among them, the Anti
-Evil Maid was frequently presented by 3mdeb engineers:
+the [fwupd support for Qubes OS][qubes_fwupd]. 3mdeb is also regularly
+co-organizing mini-conference events with Qubes OS maintainer Marek
+Marczykowski-Górecki where various topics related to Qubes OS security are
+discussed. Among them, the Anti Evil Maid was frequently presented by 3mdeb
+engineers:
 
 - [Anti Evil Maid for Intel coreboot-based platform][aem_intel]
 - [Anti Evil Maid for modern AMD UEFI-based platform][aem_amd]
@@ -91,9 +91,9 @@ available for community use. The result of this solution can be seen in the
 published blog post that concludes the first phase of integrating TrenchBoot
 Anti Evil Maid for Qubes OS. The numbering of the next phases of the project
 will commence with number 2 in order to maintain consistency with the work
-already completed [phase1_blog_post]. The following application describes the remaining work
-required to have production quality adoption in one of the most popular secure
-operating system on the market.
+already completed in [phase 1][phase1_blog_post]. The following application
+describes the remaining work required to have production quality adoption in
+one of the most popular secure operating system on the market.
 
 [qubes_fwupd]: https://blog.3mdeb.com/2020/2020-07-14-qubesos-fwupd-core/
 [aem_intel]: https://www.youtube.com/watch?v=YE2FbFlszI4
@@ -121,104 +121,106 @@ advantage of the QubesOS AEM feature, and TrenchBoot.
 
 1. Phase 2 - TPM 2.0 support in Qubes OS AEM (Intel hardware):
 
-    - Implement support for TPM 2.0 module in Xen
+    + Implement support for TPM 2.0 module in Xen
 
         Required to measure Dom0 kernel and initial ram disk before they are
         executed.
 
-    - Implement support for TPM 2.0 event log in Xen
+    + Implement support for TPM 2.0 event log in Xen
 
         Required to log the Dom0 kernel and initial ram disk hashes to the TPM
         event log. The event log could be used for future system attestation.
 
-    - Implement parallel CPU cores bring-up for DRTM launch
+    + Implement parallel CPU cores bring-up for DRTM launch
 
-        Currently the CPU cores are being woken up in parallel, but later they are
-        hacked to be waiting in a queue. If any interrupt would come at that time,
-        it could be a serious danger. It has to be fixed as soon as possible, as
-        required by Intel TXT specification.
+        Currently the CPU cores are being woken up in parallel, but later they
+        are hacked to be waiting in a queue. If any interrupt would come at
+        that time, it could be a serious danger. It has to be fixed as soon as
+        possible, as required by Intel TXT specification.
 
-    - Integrate TPM 2.0 software stack into Qubes OS Dom0
+    + Integrate TPM 2.0 software stack into Qubes OS Dom0
 
-    - Extend the AEM scripts to detect TPM version on the platform
+    + Extend the AEM scripts to detect TPM version on the platform
 
-        While AEM fully supports TPM 1.2 there is no support for TPM 2.0 at all.
-        When the TPM family is determined the script should use the appropriate
-        software stack for given TPM. The task implements the AEM TPM 1.2
-        equivalent functionalities using TPM 2.0 software stack and as a result
-        allowing the use of TPM 2.0 with Qubes OS AEM. It will require implementing
-        the access to TPM 2.0 NVRAM, sealing and unsealing the secret data and
-        generating TOTP.
+        While AEM fully supports TPM 1.2 there is no support for TPM 2.0 at
+        all. When the TPM family is determined the script should use the
+        appropriate software stack for given TPM. The task implements the AEM
+        TPM 1.2 equivalent functionalities using TPM 2.0 software stack and as
+        a result allowing the use of TPM 2.0 with Qubes OS AEM. It will require
+        implementing the access to TPM 2.0 NVRAM, sealing and unsealing the
+        secret data and generating TOTP.
 
-    - Extend the AEM scripts to use appropriate software stack for TPM 2.0
+    + Extend the AEM scripts to use appropriate software stack for TPM 2.0
 
-        Currently, only TPM 1.2 is supported in Qubes OS AEM service code.
-        The 3 items above will ensure the necessary software for TPM 2.0
-        is available and AEM scripts executed early from the initrd can
-        detect which TPM family is present on the platform and use
-        appropriate software stack and functions. TPM 1.2 and TPM 2.0
-        software stacks are not compatible so the scripts themselves must
-        use proper API for given TPM and its respective software stack.
+        Currently, only TPM 1.2 is supported in Qubes OS AEM service code. The
+        3 items above will ensure the necessary software for TPM 2.0 is
+        available and AEM scripts executed early from the initrd can detect
+        which TPM family is present on the platform and use appropriate
+        software stack and functions. TPM 1.2 and TPM 2.0 software stacks are
+        not compatible so the scripts themselves must use proper API for given
+        TPM and its respective software stack.
 
-    - Update Qubes OS AEM documentation
+    + Update Qubes OS AEM documentation
 
-    - Test the solution on Intel hardware with TPM 1.2 and 2.0 using legacy boot
-      mode
+    + Test the solution on Intel hardware with TPM 1.2 and 2.0 using legacy
+      boot mode
 
 2. Phase 3 - Update to the newest TrenchBoot boot protocol:
 
-    - Code rebase onto the most recent work implementing Secure Launch protocol
+    + Code rebase onto the most recent work implementing Secure Launch protocol
       being upstreamed to Linux and GRUB
 
         The current state of TrenchBoot support has diverged with what was
-        developed for QubesOS AEM for Intel hardware with TPM 1.2. The task aims to
-        update the work and align with the TrenchBoot boot protocol being
-        upstreamed to GRUB and Linux kernel. Xen shall take similar approach as
-        Linux kernel in terms of DRTM launch.
+        developed for QubesOS AEM for Intel hardware with TPM 1.2. The task
+        aims to update the work and align with the TrenchBoot boot protocol
+        being upstreamed to GRUB and Linux kernel. Xen shall take similar
+        approach as Linux kernel in terms of DRTM launch.
 
-    - Test the solution on Intel hardware with TPM 1.2 and TPM 2.0 using
+    + Test the solution on Intel hardware with TPM 1.2 and TPM 2.0 using
       legacy boot mode
 
 3. Phase 4 - AMD support for Qubes OS AEM with TrenchBoot:
 
-    - Update the Secure Kernel Loader (formerly LandingZone) package support
+    + Update the Secure Kernel Loader (formerly LandingZone) package support
       for QubesOS
 
-        Since the initial work done by 3mdeb engineers for AMD AEM in Qubes OS a
-        lot of time has passed and Secure Kernel Loader - SKL (formerly Landing
-        Zone) has improved a lot and added new features. SKL is an open-source
-        module written by TrenchBoot developers required by AMD Secure Startup
-        technology to perform DRTM launch. The task aims to refresh the previous
-        work and upate the SKL package for Qubes OS to the newest revision.
+        Since the initial work done by 3mdeb engineers for AMD AEM in Qubes OS
+        a lot of time has passed and Secure Kernel Loader - SKL (formerly
+        Landing Zone) has improved a lot and added new features. SKL is an
+        open-source module written by TrenchBoot developers required by AMD
+        Secure Startup technology to perform DRTM launch. The task aims to
+        refresh the previous work and update the SKL package for Qubes OS to
+        the newest revision.
 
-    - TrenchBoot Secure Kernel Loader (SKL) improvements for AMD server
+    + TrenchBoot Secure Kernel Loader (SKL) improvements for AMD server
       CPUs with multiple nodes
 
         While SKL was extensively tested on System on Chip and single CPU
-        platforms, it was not much tested on workstation/server segment CPUs which
-        are more complex. For example one server CPU package may contain two
-        independent CPUs inside called nodes. Each node will enable protection on
-        the SKL during DRTM execution. This protection has to be disabled on each
-        node when TrenchBoot DRTM tasks are done. The task implements the correct
-        support for server CPUs in TrenchBoot SKL.
+        platforms, it was not much tested on workstation/server segment CPUs
+        which are more complex. For example one server CPU package may contain
+        two independent CPUs inside called nodes. Each node will enable
+        protection on the SKL during DRTM execution. This protection has to be
+        disabled on each node when TrenchBoot DRTM tasks are done. The task
+        implements the correct support for server CPUs in TrenchBoot SKL.
 
-    - Update TrenchBoot boot protocol for AMD in GRUB2
+    + Update TrenchBoot boot protocol for AMD in GRUB2
 
-        Some work to implement TrenchBoot support for Qubes OS on AMD hardware has
-        been done. GRUB2 with TrenchBoot support has been added to Qubes building
-        system on 3mdeb fork:
-        https://github.com/Tren/qubes-grub2/tree/trenchboot_support The task aims to
-        update the work and align with the TrenchBoot boot protocol being upstreamed
-        to GRUB2 and Linux kernel.
-
-    - Update TrenchBoot boot protocol for AMD in Secure Kernel Loader
-
-        The task aims to update the TrenchBoot boot protocol for AMD platforms in
-        Secure Kernel Loader and align with the TrenchBoot boot protocol being
+        Some work to implement TrenchBoot support for Qubes OS on AMD hardware
+        has been done. GRUB2 with TrenchBoot support has been added to Qubes
+        building system on [3mdeb fork][qubes_grub2_fork]. The task aims to
+        update the work and align with the TrenchBoot boot protocol being
         upstreamed to GRUB2 and Linux kernel.
 
-    - Test the solution on AMD hardware with TPM 2.0 and TPM 1.2 with legacy boot
-      mode
+    + Update TrenchBoot boot protocol for AMD in Secure Kernel Loader
+
+        The task aims to update the TrenchBoot boot protocol for AMD platforms
+        in Secure Kernel Loader and align with the TrenchBoot boot protocol
+        being upstreamed to GRUB2 and Linux kernel.
+
+    + Test the solution on AMD hardware with TPM 2.0 and TPM 1.2 with legacy
+      boot mode
+
+[qubes_grub2_fork]: https://github.com/Tren/qubes-grub2/tree/trenchboot_support
 
 ## Projects or organizations relevant to this project before?
 
