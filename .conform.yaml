@@ -4,7 +4,7 @@ policies:
     spec:
       header:
         length: 80
-        imperative: true
+        imperative: false
         invalidLastCharacters: .
       body:
         required: false
