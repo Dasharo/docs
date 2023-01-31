@@ -24,9 +24,7 @@ open-source firmware. Following procedure is supported for following models
    procedure.
 2. Follow instruction in the video to remove heatsink:
 
-<center>
-![type:video](http://www.youtube.com/embed/TiUSTo-XwPo)
-</center>
+![type:video](https://www.youtube.com/embed/TiUSTo-XwPo)
 
 ## Step 2: Find SPI_1, SPI_2/SPI_3
 
