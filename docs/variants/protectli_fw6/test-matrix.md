@@ -11,7 +11,7 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.001, DSP002.003               |
-| 3.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002, USB003.001 |
+| 3.   | [USB HID and MSC Support][USB]                    | USB           | USB003.001, USB003.002, USB004.001, USB004.002 |
 | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
 | 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
 | 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
