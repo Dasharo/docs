@@ -34,7 +34,7 @@ a degree of confidence that integrity actions were not subverted. The project
 has grown a lot thanks to the previous [NLnet NGI0 PET grant][nlnet_open_drtm]
 and now it looks for further expansion into extensive use of the DRT
 technologies in open-source and security-oriented operating systems like
-[Qubes OS][qubes_os_rg]. [Qubes OS Anti Evil Maid (AEM)][it_aem] software
+[Qubes OS][qubes_os_org]. [Qubes OS Anti Evil Maid (AEM)][it_aem] software
 heavily depends on the availability of the DRTM technologies to prevent the
 [Evil Maid attacks][em_attacks].  However, the project hasn't evolved much
 since the beginning of 2018 and froze on the support of TPM 1.2 with Intel TXT
@@ -98,7 +98,7 @@ one of the most popular secure operating system on the market.
 [qubes_fwupd]: https://blog.3mdeb.com/2020/2020-07-14-qubesos-fwupd-core/
 [aem_intel]: https://www.youtube.com/watch?v=YE2FbFlszI4
 [aem_amd]: https://www.youtube.com/watch?v=rM0vRi6qABE
-[phase1_blog_post]: TBD blog post
+[phase1_blog_post]: https://blog.3mdeb.com/2023/2023-01-31-trenchboot-aem-for-qubesos/
 
 ## What are the significant technical challenges you expect to solve
 
