@@ -1945,7 +1945,7 @@ Ubuntu 22.04.
 1. `FN_LOCK_KEY` = `Fn + CapsLock`
 
 **Test setup**
-1. Read the [FnLock Hotkey Usage](../../unified/novacustom/fnlock-keyboard.md).
+
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 
@@ -1976,7 +1976,6 @@ Windows 11.
 
 **Test setup**
 
-1. Read the [FnLock Hotkey Usage](../../unified/novacustom/fnlock-keyboard.md).
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 
