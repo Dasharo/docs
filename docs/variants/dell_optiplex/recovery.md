@@ -20,14 +20,15 @@ open-source firmware. Following procedure is supported for following models
 
 ## Step 1: Prepare hardware
 
-1. To prepare hardware please follow
-[hardware preparation](../initial-deployment/#hardware-preparation) procedure.
-1. Follow instruction in the video to remove heatsink:
-  <center>
-  <iframe width="640" height="480"
-    src="http://www.youtube.com/embed/TiUSTo-XwPo">
-  </iframe>
-  </center>
+1. To prepare hardware please follow [hardware preparation](../initial-deployment/#hardware-preparation)
+   procedure.
+2. Follow instruction in the video to remove heatsink:
+
+<center>
+<iframe width="640" height="480" src="http://www.youtube.com/embed/TiUSTo-XwPo">
+</iframe>
+</center>
+
 ## Step 2: Find SPI_1, SPI_2/SPI_3
 
 <center>
