@@ -2,19 +2,17 @@
 
 ## Intro
 
-1. Please check your qemu setup and launch qemu using built OVMF firmware image.
+1. Please check your qemu setup and launch qemu outside
+docker instance (host machine) using built OVMF firmware image.
 
 + QEMU Installation:
     - [Install QEMU on your linux distro](<https://www.qemu.org/download/#linux>)
 
  ```bash
- qemu-system-x86_64 -drive if=pflash,format=raw,file=Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd -nographic -debugcon file:debug.log -global isa-debugcon.iobase=0x402 -global ICH9-LPC.disable_s3=1 -net none -machine q35,smm=on
+ qemu-system-x86_64 -drive if=pflash,format=raw,file=Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd -debugcon file:debug.log -global isa-debugcon.iobase=0x402 -global ICH9-LPC.disable_s3=1 -net none -machine q35,smm=on
  ```
 
 + `-drive` indicate device is pflash with firmware image of built OVMF.fd image.
-
-+ `-nographic` indicate to start qemu emulator without any graphical output.
-Useful while testing in docker.
 
 + `-debugcon file:debug.log -global isa-debugcon.iobase=0x402`
 default OVMF build writes debug messages to IO port **0x402**.
