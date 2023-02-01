@@ -103,7 +103,7 @@ is displayed.
 1. After selecting the `iPXE Network boot`, the `Dasharo Network Boot Menu`
     should be displayed.
 
-## PXE002.001 Dasharo network boot menu boot options order is correct
+## PXE003.001 Dasharo network boot menu boot options order is correct
 
 **Test description**
 
@@ -137,7 +137,7 @@ OS installation
 iPXE Shell
 ```
 
-## PXE003.001 Autoboot option is available and works correctly
+## PXE004.001 Autoboot option is available and works correctly
 
 **Test description**
 
@@ -169,7 +169,7 @@ If the server assigned to the `Autoboot` option isn't available in the local
 network, selecting this option will result in configuring the network interfaces
 and return to the `Setup Menu`.
 
-## PXE004.001 DTS option is available and works correctly
+## PXE005.001 DTS option is available and works correctly
 
 **Test description**
 
@@ -200,7 +200,7 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 After configuring the network interfaces, connecting to the server and booting,
 `Dasharo Tools Suite` menu should appear.
 
-## PXE005.001 OS installation option is available and works correctly
+## PXE006.001 OS installation option is available and works correctly
 
 **Test description**
 
@@ -228,7 +228,7 @@ This test aims to verify that the `OS installation` option in
 After configuring the network interfaces, connecting to the server and booting,
 `netboot.xyz` menu should appear.
 
-## PXE006.001 iPXE shell option is available and works correctly
+## PXE007.001 iPXE shell option is available and works correctly
 
 **Test description**
 
@@ -267,7 +267,7 @@ This test aims to verify that the `iPXE Shell` option in
 After configuring the network interfaces, connecting to the server and booting,
 `netboot.xyz` menu should appear.
 
-## PXE007.001 iPXE network boot
+## PXE008.001 iPXE network boot
 
 **Test description**
 
