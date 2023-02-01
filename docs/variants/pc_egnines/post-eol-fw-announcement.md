@@ -66,7 +66,7 @@ greatly appreciated.
 
 [5] [https://pcengines.github.io/apu2-documentation/](https://pcengines.github.io/apu2-documentation/)
 
-[6] [https://blog.3mdeb.com/2019/2019-02-14-enabling-cpb-on-pcengines-apu2](https://pcengines.github.io/apu2-documentation/)
+[6] [https://blog.3mdeb.com/2019/2019-02-14-enabling-cpb-on-pcengines-apu2](https://blog.3mdeb.com/2019/2019-02-14-enabling-cpb-on-pcengines-apu2)
 
 [7] [https://blog.3mdeb.com/2018/2018-10-16-enabling-ecc-on-pc-engines-apu2](https://blog.3mdeb.com/2018/2018-10-16-enabling-ecc-on-pc-engines-apu2)
 
