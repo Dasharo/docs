@@ -8,7 +8,7 @@
     [Generic test setup: firmware](../../generic-test-setup#firmware).
 1. Device should be connected to the Internet by using an Ethernet cable.
 
-## PXE000.001 Enable Network Boot (Firmware)
+## PXE001.001 Enable Network Boot (firmware)
 
 **Test description**
 
@@ -17,7 +17,6 @@ This test aims to verify if Network Boot can be enabled.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `SETUP_MENU_KEY` = F2
 
 **Test setup**
 
@@ -42,7 +41,7 @@ This test aims to verify if Network Boot can be enabled.
 
 1. The `Network Boot` boot option is present.
 
-## PXE000.002 Disable Network Boot (Firmware)
+## PXE001.002 Disable Network Boot (firmware)
 
 **Test description**
 
@@ -52,7 +51,6 @@ prevents loading network controller drivers and unregisters iPXE as boot option.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `SETUP_MENU_KEY` = F2
 
 **Test setup**
 
@@ -77,11 +75,11 @@ prevents loading network controller drivers and unregisters iPXE as boot option.
 
 1. The `Network Boot` boot option is not present.
 
-## PXE001.001 Dasharo Network Boot is available
+## PXE002.001 Dasharo Network Boot is bootable
 
 **Test description**
 
-This test aims to verify, that the `iPXE Network boot` is available in the boot
+This test aims to verify, that the `iPXE Network boot` is bootable in the boot
 menu and whether, after selecting this boot option, `Dasharo Network Boot Menu`
 is displayed.
 
@@ -102,7 +100,6 @@ is displayed.
 
 **Expected result**
 
-1. The `iPXE Network boot` option is available.
 1. After selecting the `iPXE Network boot`, the `Dasharo Network Boot Menu`
     should be displayed.
 
