@@ -29,6 +29,8 @@ subjected from before the release of the new binary.
 | 18.  | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 19.  | [USB detection][UDT]                              | UDT           | All                                  |
 | 20.  | [USB booting][UBT]                                | UBT           | All                                  |
+| 21.  | [pfSense support][PFS]                            | PFS           | All                                  |
+| 22.  | [OPNsense support][OPN]                           | OPN           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -52,6 +54,8 @@ subjected from before the release of the new binary.
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
 [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
 [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
+[PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
+[OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
 
 ## Module: Dasharo security
 
