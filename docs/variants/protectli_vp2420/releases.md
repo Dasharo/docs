@@ -23,7 +23,8 @@ Test results for this platform can be found
 
 ### Changed
 
-- Downgrade edk2 Secure Boot driver to achieve consistent user experience as on the VP46XX v1.0.19 release
+- Downgrade edk2 Secure Boot driver to achieve consistent user experience as on
+  the VP46XX v1.0.19 release
 
 ### Fixed
 
