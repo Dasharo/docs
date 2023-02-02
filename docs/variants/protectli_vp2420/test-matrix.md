@@ -61,7 +61,7 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.002 and TPM001.003            |
 | 2.   | [Verified Boot support][VBO]                      | VBO           | All                                  |
-| 4.   | [Secure Boot support][SBO]                        | SBO           | SBO001.001, SBO002.001, SBO002.002   |
+| 4.   | [Secure Boot support][SBO]                        | SBO           | Without SBO006.001 and SBO007.001    |
 | 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
@@ -76,7 +76,7 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
 | 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
-| 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
+| 3.   | [CPU frequency measure][CPF]                      | CPF           | Without CPU003.XXX and CPU005.XXX    |
 | 4.   | [Platform stability][STB]                         | STB           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
