@@ -11,6 +11,14 @@ Initial deployment for MSI PRO Z690-A (WIFI) (DDR4) is supported in DTS since
 version v1.1.0. Please check [Dasharo zero-touch initial deployment
 section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
 
+<span style="color:red">
+Please do not use DTS to deploy Dasharo on MSI PRO Z690-A (WIFI) DDR5;
+otherwise, you will brick your hardware. There are at least two bugs that have
+to be fixed before it is possible:
+
+* [Power off problem](https://github.com/Dasharo/dasharo-issues/issues/316)
+* [Unsupported mainboard flashing problem](https://github.com/Dasharo/dasharo-issues/issues/317).</span>
+
 ## Initial deployment manually
 
 Flashing coreboot can be done from Linux using flashrom with the internal
