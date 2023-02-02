@@ -59,7 +59,7 @@ is tested in this case.
 1. Execute the following command to get the results of resume process:
 
     ```bash
-    cat /var/log/pm-suspend.log | grep 'suspend resume: '
+    cat /var/log/pm-suspend.log | grep 'resume suspend: '
     ```
 
 1. Note the results.
@@ -157,7 +157,7 @@ on the keyboard is tested in this case.
 1. Execute the following command to get the results of resume process:
 
     ```bash
-    cat /var/log/pm-suspend.log | grep 'suspend resume: '
+    cat /var/log/pm-suspend.log | grep 'resume suspend: '
     ```
 
 1. Note the results.
@@ -254,7 +254,7 @@ power button is tested in this case.
 1. Execute the following command to get the results of resume process:
 
     ```bash
-    cat /var/log/pm-suspend.log | grep 'suspend resume: '
+    cat /var/log/pm-suspend.log | grep 'resume suspend: '
     ```
 
 1. Note the results.
@@ -368,7 +368,7 @@ mechanism is tested in this case.
 1. Execute the following command to get the results of resume process:
 
     ```bash
-    cat /var/log/pm-suspend.log | grep 'suspend resume: '
+    cat /var/log/pm-suspend.log | grep 'resume suspend: '
     ```
 
 1. Note the results.

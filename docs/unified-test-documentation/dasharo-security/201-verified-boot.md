@@ -157,7 +157,7 @@ platform and sign it with the locally generated keys.
 1. Log into the system by using the proper login and password.
 1. Localize the keys, which were generated in the `VBO001.001` test case.
 1. Based on the
-    [dedicated documentation](/guides/vboot-signing.md#adding-keys-to-the-coreboot-config)
+    [dedicated documentation](/guides/vboot-signing#adding-keys-to-the-coreboot-config)
     add locally generated keys to the coreboot config.
 1. Based on the dedicated documentation build firmware.
 1. Check if the binary file, after finishing the building process, is available
