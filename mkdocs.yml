@@ -134,6 +134,7 @@ nav:
           - 'Releases': variants/protectli_vp2420/releases.md
           - 'Building manual': variants/protectli_vp2420/building-manual.md
           - 'Initial deployment': variants/protectli_vp2420/initial-deployment.md
+          - 'Firmware update': variants/protectli_vp2420/firmware-update.md
           - 'Recovery': variants/protectli_vp2420/recovery.md
           - 'Hardware Configuration Matrix': variants/protectli_vp2420/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp2420/test-matrix.md
