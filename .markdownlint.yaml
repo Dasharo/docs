@@ -138,9 +138,10 @@ MD031:
   list_items: true
 
 # MD033/no-inline-html - Inline HTML
-MD033:
+# MD033:before uncomment, update docs/dasharo-tools-suite/documentation.md:18:1
+# and docs/variants/msi_z690/initial-deployment.md:14:1
   # Allowed elements
-  allowed_elements: ["br", "center", "img", "script", "form", "input", "iframe"]
+  # allowed_elements: ["br", "center", "img", "script", "form", "input", "iframe"]
 
 # MD034/no-bare-urls - Bare URL used
 MD034: true
