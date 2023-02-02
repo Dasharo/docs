@@ -16,7 +16,7 @@ subjected from before the release of the new binary.
 | 5.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
 | 6.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD004.001, AUD005.001, AUD006.001 |
 | 7.   | [NVMe support][NVM]&sup1;                         | NVM           | NVM001.001, NVM001.002               |
-| 8.   | [Network boot][PXE]                               | PXE           | All                                  |
+| 8.   | [Network boot][PXE]                               | PXE           | Without PXE001.001, PXE002.001 and PXE008.001    |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 10.  | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 11.  | [PCI Express ports support][PEX]                  | PEX           | PEX001.001                           |
