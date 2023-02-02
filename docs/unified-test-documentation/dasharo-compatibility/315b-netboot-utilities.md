@@ -74,26 +74,8 @@ available and its content is right.
 
 1. `OS Selection & Utilities` option should be present in the
     `Network Boot and Utilities` menu.
-1. After selecting the `OS Selection & Utilities` option the following
-    menu should appear:
-
-    ```bash
-     ____               __                  __    ___
-    /\  _`\            /\ \__              /\ \__/\_ \    __
-    \ \ \L\ \_ __   ___\ \ ,_\    __    ___\ \ ,_\//\ \  /\_\
-     \ \ ,__/\`'__\/ __`\ \ \/  /'__`\ /'___\ \ \/ \ \ \ \/\ \
-      \ \ \/\ \ \//\ \L\ \ \ \_/\  __//\ \__/\ \ \_ \_\ \_\ \ \
-       \ \_\ \ \_\\ \____/\ \__\ \____\ \____\\ \__\/\____\\ \_\
-        \/_/  \/_/ \/___/  \/__/\/____/\/____/ \/__/\/____/ \/_/
-
-    These tools are under construction.
-    Eventually, official Protectli tools and installers will be available here.
-
-    In the meantime, check out netboot.xyz.
-
-    Press any key to continue to netboot.xyz
-
-    ```
+1. After selecting the `OS Selection & Utilities` option iPXE menu should be
+   displayed.
 
 ## NBT003.001 iPXE boot is available
 
