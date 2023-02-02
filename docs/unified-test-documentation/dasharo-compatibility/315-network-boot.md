@@ -12,7 +12,9 @@
 
 **Test description**
 
-This test aims to verify if Network Boot can be enabled.
+This test aims to verify that the Network Boot option might be enabled. If this
+option is activated, an additional option in the Boot menu which allows to boot
+the system from iPXE servers will appear.
 
 **Test configuration data**
 
@@ -27,26 +29,26 @@ This test aims to verify if Network Boot can be enabled.
 
 1. Power on the DUT.
 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
 1. Enter the `Networking Options` menu option.
-1. Hover on checkbox next to `Enable Network Boot` option, and make sure
-    that `X` sign is present between square brackets - `[X]`. Use `Spacebar`
-    to toggle.
-1. Save using `F10`, and exit using `Esc`.
+1. Verify that the `Enable Network Boot` field is checked - if not, use
+    `Spacebar` to change option settings.
+1. Save using `F10`, and exit from the menu using `Esc`.
 1. Reboot the device.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `One Time Boot` menu option.
+1. While booting, press `BOOT_MENU_KEY` on the USB keyboard to enter Setup
+    Menu.
+1. Note the results.
 
 **Expected result**
 
-1. The `Network Boot` boot option is present.
+The `Network Boot` option in the `Boot menu` should be visible.
 
 ## PXE001.002 Disable Network Boot (firmware)
 
 **Test description**
 
-This test aims to verify if Network Boot can be disabled. When disabled, it
-prevents loading network controller drivers and unregisters iPXE as boot option.
+This test aims to verify that the Network Boot option might be disabled. If this
+option is deactivated, an additional option in the Boot menu which allows to
+boot the system from iPXE servers will be hidden.
 
 **Test configuration data**
 
@@ -61,19 +63,18 @@ prevents loading network controller drivers and unregisters iPXE as boot option.
 
 1. Power on the DUT.
 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
 1. Enter the `Networking Options` menu option.
-1. Hover on checkbox next to `Enable Network Boot` option, and make sure
-    that `X` sign is NOT present between square brackets - `[ ]`. Use `Spacebar`
-    to toggle.
-1. Save using `F10`, and exit using `Esc`.
+1. Verify that the `Enable Network Boot` field is checked - if so, use
+    `Spacebar` to change option settings.
+1. Save using `F10`, and exit from the menu using `Esc`.
 1. Reboot the device.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `One Time Boot` menu option.
+1. While booting, press `BOOT_MENU_KEY` on the USB keyboard to enter Setup
+    Menu.
+1. Note the results.
 
 **Expected result**
 
-1. The `Network Boot` boot option is not present.
+The `Network Boot` option in the `Boot menu` should not be visible.
 
 ## PXE002.001 Dasharo Network Boot is bootable
 
