@@ -11,12 +11,13 @@
 
 **Test description**
 
-This test aims to verify that PfSense serial could be installed on the DUT.
+This test aims to verify that PfSense stable (serial output) could be installed
+on the hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense 2.6.0
+1. `OPERATING_SYSTEM` = pfSense stable
 
 **Test setup**
 
@@ -32,16 +33,17 @@ This test aims to verify that PfSense serial could be installed on the DUT.
 
 The information about successful installation should be displayed.
 
-## PFS001.002 Boot pfSense serial
+## PFS001.002 Boot pfSense stable (serial output) from Hard Disk
 
 **Test description**
 
-This test aims to verify that pfSense serial could be booted on the DUT.
+This test aims to verify that pfSense stable (serial output) could be booted
+from the hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense 2.6.0
+1. `OPERATING_SYSTEM` = pfSense stable
 
 **Test setup**
 
@@ -60,16 +62,17 @@ This test aims to verify that pfSense serial could be booted on the DUT.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## PFS002.001 pfSense VGA installation
+## PFS002.001 pfSense stable (VGA output) installation on Hard Disk
 
 **Test description**
 
-This test aims to verify that pfSense VGA could be installed on the DUT.
+This test aims to verify that pfSense stable (VGA output) could be installed on
+the hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense 2.6.0
+1. `OPERATING_SYSTEM` = pfSense stable
 
 **Test setup**
 
@@ -85,16 +88,17 @@ This test aims to verify that pfSense VGA could be installed on the DUT.
 
 The information about successful installation should be displayed.
 
-## PFS002.002 Boot pfSense VGA
+## PFS002.002 Boot pfSense stable (VGA output) from Hard Disk
 
 **Test description**
 
-This test aims to verify that pfSense VGA could be booted on the DUT.
+This test aims to verify that pfSense stable (VGA output) could be booted from
+the hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense
+1. `OPERATING_SYSTEM` = pfSense stable
 
 **Test setup**
 

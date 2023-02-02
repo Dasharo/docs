@@ -7,16 +7,17 @@
 1. Proceed with the
    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-## OPN001.001 OPNsense serial installation
+## OPN001.001 OPNsense stable (serial output) installation on Hard Disk
 
 **Test description**
 
-This test aims to verify that OPNsense serial could be installed on the DUT.
+This test aims to verify that OPNsense stable (serial output) could be installed
+on the hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense 23.1
+1. `OPERATING_SYSTEM` = OPNsense stable
 
 **Test setup**
 
@@ -32,16 +33,17 @@ This test aims to verify that OPNsense serial could be installed on the DUT.
 
 The information about successful installation should be displayed.
 
-## OPN001.002 Boot OPNsense serial from hard disk
+## OPN001.002 Boot OPNsense stable (serial output) from Hard Disk
 
 **Test description**
 
-This test aims to verify that OPNsense serial could be booted on the DUT.
+This test aims to verify that OPNsense stable serial could be booted from the
+hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense 23.1
+1. `OPERATING_SYSTEM` = OPNsense stable
 
 **Test setup**
 
@@ -60,16 +62,17 @@ This test aims to verify that OPNsense serial could be booted on the DUT.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## OPN002.001 OPNsense VGA installation
+## OPN002.001 OPNsense stable (VGA output) installation on Hard Disk
 
 **Test description**
 
-This test aims to verify that OPNsense VGA could be installed on the DUT.
+This test aims to verify that OPNsense stable (VGA output) could be installed on
+the hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense 23.1
+1. `OPERATING_SYSTEM` = OPNsense stable
 
 **Test setup**
 
@@ -85,16 +88,17 @@ This test aims to verify that OPNsense VGA could be installed on the DUT.
 
 The information about successful installation should be displayed.
 
-## OPN002.002 Boot OPNsense VGA
+## OPN002.002 Boot OPNsense stable (VGA output) from Hard Disk
 
 **Test description**
 
-This test aims to verify that OPNsense VGA could be booted on the DUT.
+This test aims to verify that OPNsense stable (VGA output) could be booted from
+the hard disk on the DUT.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense 23.1
+1. `OPERATING_SYSTEM` = OPNsense stable
 
 **Test setup**
 
