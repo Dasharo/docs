@@ -15,7 +15,7 @@ subjected from before the release of the new binary.
 | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
 | 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
 | 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
-| 7.   | [Network boot][PXE]                               | PXE           | PXE007.001                           |
+| 7.   | [Network boot][PXE]                               | PXE           | PXE008.001                           |
 | 8.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 9.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 10.  | [FreeBSD support][BSD]                            | BSD           | All                                  |
