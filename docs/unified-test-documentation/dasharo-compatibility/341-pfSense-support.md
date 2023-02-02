@@ -7,7 +7,7 @@
 1. Proceed with the
    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-## PFS001.001 pfSense serial installation
+## PFS001.001 pfSense stable (serial output) installation on Hard Disk
 
 **Test description**
 
