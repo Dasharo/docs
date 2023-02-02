@@ -246,6 +246,7 @@ nav:
       - 'Features and bug fixes development process': dev-proc/feature-bug-fix-dev-process.md
       - 'Standard Release Process': dev-proc/standard-release-process.md
       - 'Documentation guidelines': dev-proc/documentation-guidelines.md
+      - 'HCL Maintainer documentation': dev-proc/hcl-maintainer.md
 # - 'Dasharo SKUs':
     # - 'Overview': variants/skus-overview.md
     # - 'Firewall': variants/firewall.md

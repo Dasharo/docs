@@ -2,13 +2,23 @@
 
 ## Contributing
 
-Feel free to test different processors and report your results via
-[email](mailto:contact@dasharo.com) or submit a Pull Request to
-[Dasharo documentation repository](https://github.com/Dasharo/docs) or by using
-[Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues).
+* Use [Dasharo Tools Suite HCL
+  report](../../../dasharo-tools-suite/documentation/#hcl-report) to upload
+  report automatically.
+* Create new issue in [Dasharo issues
+  repository](https://github.com/Dasharo/dasharo-issues/issues).
+* Create PR directly to [Dasharo documentation
+  repository](https://github.com/Dasharo/docs).
+* [email](mailto:contact@dasharo.com?subject=CPU HCL report) you
+  `/proc/cpuinfo` or relevant information using following template:
+
+  ```text
+  CPU model: 
+  Dasharo version: 
+  ```
 
 If you already have reported your results and you change some hardware
-configuration we would appreciate an additional HCL report.
+configuration we would appreciate an update.
 
 ## HCL list
 
@@ -19,24 +29,28 @@ found in [Hardware Matrix](hardware-matrix.md) documentation.
 
 Legend:
 
-* Processor name: the full name of processor including vendor, brand and
-    CPU number.
-* Core name: CPU core codename.
-* CPU base speed: based CPU speed.
-* CPU boost speed: boosted CPU speed.
-* Wattage: declared by producer processor wattage.
-* GPU: information about embedded graphics processing unit.
-* Results: link to measurement results.
+* CPU Model: Intel CPU Model name.
+* Dasharo version: Dasharo version on which report was created.
+* Source:
+  - Link to report if it is public.
+  - `Dasharo HCL report` if it was reported using DTS.
 
-Information about processor name, core name and speed might be read from OS
-(Linux systems - command `lscpu`, Windows systems - `System information` menu).
-Rest of the information might be read from CPU package or documentation.
+<center>
 
-| Processor name       | Core name   | CPU base speed | CPU boost speed | Wattage | GPU             | Results                |
-|:--------------------:|:-----------:|:--------------:|:---------------:|:-------:|:---------------:|:----------------------:|
-| Intel Core i9-12900K | Alder Lake  | 3.2 GHz        | 5.3 GHz         | 125     | UHDGraphics710  | [Qubes HCL reports][1] |
-| Intel Core i7-12700K | Alder Lake  | 3.6 GHz        | 5.0 GHz         | 125     | UHDGraphics770  | [Qubes HCL reports][2] |
-| Intel Core i5-12400F | Alder Lake  | 2.5 GHz        | 4.4 GHz         | 65      | -               |                        |
+| CPU Model | Dasharo version |  Source  |
+|:---------:|:----------------------:|:---------:|
+| 12th Gen Intel(R) Core(TM) i5-12500T | v1.1.0 | Dasharo HCL report |
+| 12th Gen Intel(R) Core(TM) i5-12600 | v1.1.0 | Dasharo HCL report |
+| 12th Gen Intel(R) Core(TM) i5-12600K | v1.0.0 | Dasharo HCL report |
+| 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.0 | Dasharo HCL report |
+| 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | Dasharo HCL report |
+| 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | [Qubes HCL reports][2] |
+| 12th Gen Intel(R) Core(TM) i9-12900K | v0.4.0 | [Qubes HCL reports][1] |
 
-[1]: <https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6>
-[2]: <https://www.qubes-os.org/hcl/#msi_ms-7d25_i7-12700k_alder-lake_integrated-graphics-uhd-770-geforce-gtx-1080-ti>
+</center>
+
+For details how to maintain this documentation please consult [Dasharo HCL
+Maintainer documentation](../../../dev-proc/hcl-maintainer).
+
+[1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
+[2]: https://groups.google.com/g/qubes-users/c/lGOjuApLD_o/m/TBZN0PsXEgAJ
