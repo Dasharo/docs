@@ -26,3 +26,6 @@ Current template for adding HCL report over Github issue is way too complex.
 Nobody will wast time doing that.
 -->
 
+### Github pull request
+
+Go through standard review process for Dasharo documentation.

@@ -31,6 +31,7 @@ Legend:
 
 * CPU Model: Intel CPU Model name.
 * Dasharo version: Dasharo version on which report was created.
+  - `-` if version was not reported
 * Source:
   - Link to report if it is public.
   - `Dasharo HCL report` if it was reported using DTS.
@@ -39,6 +40,7 @@ Legend:
 
 | CPU Model | Dasharo version |  Source  |
 |:---------:|:----------------------:|:---------:|
+| 12th Gen Intel(R) Core(TM) i5-12400F | - | [Github PR][3] |
 | 12th Gen Intel(R) Core(TM) i5-12500T | v1.1.0 | Dasharo HCL report |
 | 12th Gen Intel(R) Core(TM) i5-12600 | v1.1.0 | Dasharo HCL report |
 | 12th Gen Intel(R) Core(TM) i5-12600K | v1.0.0 | Dasharo HCL report |
@@ -54,3 +56,4 @@ Maintainer documentation](../../../dev-proc/hcl-maintainer).
 
 [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
 [2]: https://groups.google.com/g/qubes-users/c/lGOjuApLD_o/m/TBZN0PsXEgAJ
+[3]: https://github.com/Dasharo/docs/pull/329
