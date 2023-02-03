@@ -28,18 +28,18 @@ configuration we would appreciate an update.
     to work with Dasharo by community. The following list does not include CPU
     which is tested and verfied in 3mdeb laboratory - this information might be
     found in [Hardware Matrix](hardware-matrix.md) documentation.
-    
+
     Legend:
-    
+
     * CPU Model: Intel CPU Model name.
     * Dasharo version: Dasharo version on which report was created.
         - `-` if version was not reported
     * Source:
         - Link to report if it is public.
         - `Dasharo HCL report` if it was reported using DTS.
-    
+
     <center>
-    
+
     | CPU Model | Dasharo version |  Source  |
     |:---------:|:----------------------:|:---------:|
     | 12th Gen Intel(R) Core(TM) i5-12400F | - | [Github PR][3] |
@@ -50,14 +50,14 @@ configuration we would appreciate an update.
     | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | Dasharo HCL report |
     | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | [Qubes HCL reports][2] |
     | 12th Gen Intel(R) Core(TM) i9-12900K | v0.4.0 | [Qubes HCL reports][1] |
-    
+
     </center>
 
 === "Memory HCL"
 
     Memory hardware Compatibility List present the DIMM modules tested and verified
     to work with Dasharo in 3mdeb laboratory.
-    
+
     Memory Modules are tested in 1, 2 and 4 modules configurations. These follow
     the DIMM population procedures as stated in the Board Manual: 1 module in
     DIMMA2 Slot (Single Channel), 2 by adding another module in DIMMB2 (Dual
@@ -69,9 +69,9 @@ configuration we would appreciate an update.
     [Intel memory validation results](https://www.intel.com/content/www/us/en/platform-memory/platform-memory.html)
     page and see the results for DDR4 UDIMM testing. Maximum ratings for Alder Lake
     S CPUs is also available in the [CPU datasheet](https://edc.intel.com/content/www/us/en/design/ipla/software-development-platforms/client/platforms/alder-lake-desktop/12th-generation-intel-core-processors-datasheet-volume-1-of-2/001/processor-sku-support-matrix/).
-    
+
     Legend:
-    
+
     * Configuration 1/2/4 - means given memory module was tested in 1, 2 and 4
       DIMMs populated configuration, &#10004; means successfully tested, &#10006;
       means platform did not boot with Dasharo, e.g. &#10004;/&#10004;/&#10004;
@@ -84,13 +84,13 @@ configuration we would appreciate an update.
         - Timings: for example CL17-17-17 means CAS Latency 17, tRCD 17, tRP 17
         (numbers expressed in clock cycles) for given memory profile
         - Voltage: memory voltage in Volts for given memory profile
-    
+
     > NOTE: some XMP profiles may have lower speeds than other ones, but also have
     > smaller CAS latency. Also the memory frequency configured in the memory
     > controller and reported by DMI/SMBIOS may be slightly lower than advertised
     > in the module specifications. This can vary based on the board design, CPU
     > and many other factors.
-    
+
     ### HCL list - MSI PRO Z690-A DDR4
 
     | Manufacturer | Part Number | Size | Type | Speed | Configuration 1/2/4 | Dasharo version | Source |
@@ -100,7 +100,7 @@ configuration we would appreciate an update.
     | Kingston | KF3600C17D4/8GX      | 8192 MB | DDR4 SDRAM | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
     | Patriot Memory | 4400 C19 Series | 8192 MB | DDR4 SDRAM | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
     | Thermaltake Technology Co Ltd | RG26D408GX2-3600C18A | 8192 MB | DDR4 SDRAM | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
-    
+
     1) Tested in 2x2 mixed configuration
 
 ### HCL list - MSI PRO Z690-A DDR5
@@ -128,9 +128,9 @@ configuration we would appreciate an update.
     to work with Dasharo by community. The following list does not include GPU
     which is tested and verfied in 3mdeb laboratory - this information might be
     found in [Hardware Matrix](hardware-matrix.md) documentation.
-    
+
     Legend:
-    
+
     * GPU name: the full name of GPU including vendor and model name.
     * Memory size: total amount of GPU memory declared by vendor.
     * Memory type: GPU's type of memory.
@@ -138,9 +138,9 @@ configuration we would appreciate an update.
     * PCI-E Architecture: declared by producer generation of PCI-E architecture.
     * Multi-Graphics Technology: information about support for Multi-Graphics
         Technology.
-    
+
     Information about GPU might be read from GPU package or documentation.
-    
+
     | GPU name         | Memory size | Memory type  | Bandwidth | PCI-E Gen | Multi-Graphics Technology | Results                |
     |:----------------:|:-----------:|:------------:|:---------:|:---------:|:-------------------------:|:----------------------:|
     | Nvidia GeForce GTX 1060   | 3072 MB  | GDDR5  | 192GB/s   | Gen3      | 1                         | [Qubes HCL reports][1] |
