@@ -13,8 +13,8 @@
   `/proc/cpuinfo` or relevant information using following template:
 
   ```text
-  CPU model: 
-  Dasharo version: 
+  CPU model:
+  Dasharo version:
   ```
 
 If you already have reported your results and you change some hardware
@@ -31,10 +31,10 @@ Legend:
 
 * CPU Model: Intel CPU Model name.
 * Dasharo version: Dasharo version on which report was created.
-  - `-` if version was not reported
+    - `-` if version was not reported
 * Source:
-  - Link to report if it is public.
-  - `Dasharo HCL report` if it was reported using DTS.
+    - Link to report if it is public.
+    - `Dasharo HCL report` if it was reported using DTS.
 
 <center>
 
