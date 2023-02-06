@@ -2,10 +2,10 @@
 
 ## Intro
 
-The project is in early development phase. It may happen that on certain
-hardware configurations the Dasharo firmware will not boot correctly (i.e.
-we will have "bricked" platform). In such a case, recovery procedure can
-install back the original firmware from the board manufacturer.
+This project is in early development phase. On certain
+hardware configurations, the Dasharo firmware may not boot correctly (i.e.
+we will have "bricked" the platform). In such a case, the recovery procedure can
+reinstall the original firmware from the board manufacturer.
 
 ### MSI Flash BIOS Button
 
