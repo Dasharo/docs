@@ -1,6 +1,6 @@
 # Initial Deployment
 
-Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
+Initial deployment of Dasharo firmware on MSI PRO Z690-A can be done:
 
 * using DTS v1.1.0,
 * manually.
