@@ -55,7 +55,7 @@ loads the JEDEC standard profile and ignores the XMP ones.
 
 ## HCL list
 
-Memory hardware Compatibility List present the DIMM modules tested and verified
+The Memory Hardware Compatibility List presents the DIMM modules tested and verified
 to work with Dasharo in 3mdeb laboratory.
 
 Memory Modules are tested in 1, 2 and 4 modules configurations. These follow
