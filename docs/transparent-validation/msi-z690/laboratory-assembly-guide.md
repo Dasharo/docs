@@ -242,6 +242,12 @@ should be provided by direct soldering to the one of flash chip pins
 ![IMG](images/msi_z690_spi.jpeg)
 ![IMG](images/msi_z690_lab_SPI_RTE.jpg)
 
+### Reading power status
+
+Connect the RTE J1 header to the platform JFP1 header as shown on picture below:
+
+![IMG](images/reading_power_status.png)
+
 ### Complete Setup
 
 After preparing all of the connections also three activities should be
@@ -265,7 +271,8 @@ The following sections describe how to use all of the enabled features:
 * serial connection to the platform,
 * controlling power supply,
 * enabling basic power actions with the platform (power off/power on/reset),
-* external flashing with the RTE.
+* external flashing with the RTE,
+* reading power status.
 
 ### Serial connection
 
@@ -361,3 +368,16 @@ the below-described steps:
 
 1. If the reading was successful, the output from the command above should
     contain the phrase `Verifying flash... VERIFIED`.
+
+### Reading power status
+
+To read the current power status use the following command:
+
+```bash
+cat /sys/class/gpio/gpio12/value
+```
+
+Output meaning:
+
+`1` - means that the platform is turned on.
+`0` - means that the platform is turned off.
