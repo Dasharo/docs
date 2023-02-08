@@ -68,9 +68,9 @@ detected after hot-plug.
 1. Connect the disk to the SATA port.
 1. Check that the connected disk is detected by running the following command:
 
-   ```bash
-   sudo parted -l
-   ```
+    ```bash
+    sudo parted -l
+    ```
 
 1. Note the results.
 
@@ -117,9 +117,9 @@ detected after hot-plug.
 1. Connect the disk to the SATA port.
 1. Check that the connected disk is detected by running the following command:
 
-   ```powershell
-   Get-WMIObject -Class Win32_DiskDrive
-   ```
+    ```powershell
+    Get-WMIObject -Class Win32_DiskDrive
+    ```
 
 1. Note the results.
 

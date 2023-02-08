@@ -40,15 +40,15 @@ labels.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window in `dom0` and run the following command:
 
-   ```bash
-   sudo dmesg | grep -i PS/2
-   ```
+    ```bash
+    sudo dmesg | grep -i PS/2
+    ```
 
 1. Run the following command in the terminal:
 
-   ```bash
-   libinput debug-events --show-keycodes
-   ```
+    ```bash
+    libinput debug-events --show-keycodes
+    ```
 
 1. Test the alphanumeric keys and note the generated keycodes.
 1. Test non-alphanumeric keys and verify that they generate the correct

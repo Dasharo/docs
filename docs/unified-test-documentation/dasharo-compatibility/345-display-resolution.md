@@ -38,9 +38,9 @@ This test aims to verify that the display resolution could be changed in the
 1. Log into the system by using the proper login and password.
 1. Open a terminal window in `dom0` and run the following command:
 
-   ```bash
-   xrandr -s <display_resolution>
-   ```
+    ```bash
+    xrandr -s <display_resolution>
+    ```
 
 1. Note the results.
 
