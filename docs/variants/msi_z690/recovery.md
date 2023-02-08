@@ -7,45 +7,7 @@ hardware configurations, the Dasharo firmware may not boot correctly (i.e.
 we will have "bricked" the platform). In such a case, the recovery procedure can
 reinstall the original firmware from the board manufacturer.
 
-### MSI Flash BIOS Button
-
-The [MSI Flash BIOS Button](https://www.youtube.com/watch?v=iTkXunUAriE)
-would give us easy-to-use recovery method. We have tried that one to switch
-from Dasharo firmware to the original one, but it did not work, unfortunately.
-The details of how this process exactly works are unknown due to the closed
-nature of it's implementation. We can research this topic more in the future,
-so maybe it can be utilized later for deployment and/or recovery of the
-platform.
-
-### External flashing with programmer
-
-#### RTE
-
-In this case, using external programmer is necessary. We are using
-[RTE](https://3mdeb.com/open-source-hardware/#rte)
-here.
-
-* Connect programmer to the flash chip as shown in the
-  [Hardware connection / SPI](../development/#hardware-connection) section of
-  the `Development` documentation.
-
-* Download official BIOS from vendor's website (this is the newest version, you
-  may choose an older one too or in the best case use your firmware backup):
-
-```bash
-wget https://download.msi.com/bos_exe/mb/7D25v13.zip
-unzip 7D25v13.zip
-```
-
-* Flash via external programmer:
-
-> The command line will be different, depending on the programmer you use
-
-```bash
-flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
-```
-
-* First boot after the recovery process is significantly longer
+There are two documented recovery methods: using a CH341A programming kit or using an external programmar like an [RTE](https://3mdeb.com/open-source-hardware/#rte).
 
 ### CH341A
 
@@ -172,6 +134,46 @@ Reading old flash chip contents... done.
 Erasing and writing flash chip... Erase/write done.
 Verifying flash... VERIFIED.
 ```
+
+### External flashing with programmer
+
+#### RTE
+
+In this case, using external programmer is necessary. We are using
+[RTE](https://3mdeb.com/open-source-hardware/#rte)
+here.
+
+* Connect programmer to the flash chip as shown in the
+  [Hardware connection / SPI](../development/#hardware-connection) section of
+  the `Development` documentation.
+
+* Download official BIOS from vendor's website (this is the newest version, you
+  may choose an older one too or in the best case use your firmware backup):
+
+```bash
+wget https://download.msi.com/bos_exe/mb/7D25v13.zip
+unzip 7D25v13.zip
+```
+
+* Flash via external programmer:
+
+> The command line will be different, depending on the programmer you use
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
+```
+
+* First boot after the recovery process is significantly longer
+
+### MSI Flash BIOS Button
+
+The [MSI Flash BIOS Button](https://www.youtube.com/watch?v=iTkXunUAriE)
+would give us easy-to-use recovery method. We have tried that one to switch
+from Dasharo firmware to the original one, but it did not work, unfortunately.
+The details of how this process exactly works are unknown due to the closed
+nature of it's implementation. We can research this topic more in the future,
+so maybe it can be utilized later for deployment and/or recovery of the
+platform.
 
 ## SMBIOS unique data recovery
 
