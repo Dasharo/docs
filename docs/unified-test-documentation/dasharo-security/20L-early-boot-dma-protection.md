@@ -38,7 +38,8 @@ DMA transactions by configuring VT-D/IOMMU should be active.
 
 1. Power on the DUT.
 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Secure Boot Configuration` submenu.
+1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
+1. Enter the `Dasharo Security Options` submenu.
 1. Verify that the `Enable early DMA protection` field is checked - if not, use
     `Spacebar` to change option settings.
 1. Save the changes using `F10`, and exit from the menu using `Esc`.
@@ -130,7 +131,8 @@ PCIe devices DMA transactions by configuring VT-D/IOMMU should be non-active.
 
 1. Power on the DUT.
 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Secure Boot Configuration` submenu.
+1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
+1. Enter the `Dasharo Security Options` submenu.
 1. Verify that the `Enable early DMA protection` option is checked - if so, use
     `Spacebar` to change option settings.
 1. Save the changes using `F10`, and exit from the menu using `Esc`.
