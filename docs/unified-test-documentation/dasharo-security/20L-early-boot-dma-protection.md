@@ -1,12 +1,28 @@
 # Dasharo Security: Early Boot DMA Protection
 
-## EDP001.001 Early Boot DMA Protection support
+## Test cases common documentation
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../../generic-test-setup#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+1. Proceed with the
+    [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
+1. Disable Secure Boot.
+1. Download `cbmem` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
+   to the DUT.
+
+## EDP001.001 Enable early Boot DMA Protection support
 
 **Test description**
 
-Early Boot DMA protection feature enable Dasharo firmware to configure
-VT-D/IOMMU to protect against malicious PCIe devices DMA transactions.
-The test case verifies the DMA protection has been configured properly.
+This test aims to verify that the early boot DMA protection might be activated.
+If the functionality is enabled, the protection against malicious PCIe devices
+DMA transactions by configuring VT-D/IOMMU should be active.
 
 **Test configuration data**
 
@@ -16,29 +32,27 @@ The test case verifies the DMA protection has been configured properly.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Disable Secure Boot.
-1. Download `cbmem` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the system.
-3. Log into the system by using the proper login and password.
-4. Open a terminal window and execute the following command:
+1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Verify that the `Enable early DMA protection` field is checked - if not, use
+    `Spacebar` to change option settings.
+1. Save the changes using `F10`, and exit from the menu using `Esc`.
+1. Reboot the device.
+1. While booting, press `BOOT_MENU_KEY`  to enter Boot Menu.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and execute the following command:
 
    ```bash
    sudo ./cbmem -1
    ```
 
-5. Note the result.
+1. Note the result.
 
 **Expected result**
 
@@ -94,16 +108,18 @@ Indicate that VT-D engine 1 had PMR enabled earlier, which is expected.
 
 If all above conditions are met, test pass.
 
-## EDP002.001 Disable Early Boot DMA Protection (Firmware)
+## EDP002.001 Disable early Boot DMA Protection support
 
 **Test description**
 
-This test aims to verify if Early Boot DMA Protection can be disabled.
+This test aims to verify that the early boot DMA protection might be
+deactivated. If the functionality is disabled, the protection against malicious
+PCIe devices DMA transactions by configuring VT-D/IOMMU should be non-active.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `SETUP_MENU_KEY` = F2
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -114,50 +130,32 @@ This test aims to verify if Early Boot DMA Protection can be disabled.
 
 1. Power on the DUT.
 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Enter the `-----------` menu option.
-1. Hover on checkbox next to `----------------` option, and make sure
-    that `X` sign is NOT present between square brackets - `[ ]`. Use `Spacebar`
-    to toggle.
-1. Save using `F10`, and exit using `Esc`.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Verify that the `Enable early DMA protection` option is checked - if so, use
+    `Spacebar` to change option settings.
+1. Save the changes using `F10`, and exit from the menu using `Esc`.
 1. Reboot the device.
-<!-- 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `One Time Boot` menu option. -->
+1. While booting, press `BOOT_MENU_KEY`  to enter Boot Menu.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+   ```bash
+   sudo ./cbmem -1
+   ```
+
+1. Note the result.
 
 **Expected result**
 
---------------
+The output of the cbmem utility should not contain the information, that the
+DMA protection has been set up.
 
-## EDP003.001 Enable Early Boot DMA Protection (Firmware)
+Example output with unwanted results:
 
-**Test description**
-
-This test aims to verify if Early Boot DMA Protection can be enabled.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `SETUP_MENU_KEY` = F2
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Enter the `-----------` menu option.
-1. Hover on checkbox next to `----------------` option, and make sure
-    that `X` sign is present between square brackets - `[X]`. Use `Spacebar`
-    to toggle.
-1. Save using `F10`, and exit using `Esc`.
-1. Reboot the device.
-<!-- 1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `One Time Boot` menu option. -->
-
-**Expected result**
-
---------------
+```txt
+[DEBUG]  VT-d @ 0xfed91000, version 5.0
+[INFO ]  Setting DMA protection [0x0 - 0x46c00000]
+[INFO ]  Setting DMA protection [0x100000000 - 0x00000008afc00000]
+[INFO ]  Successfully enabled VT-d PMR DMA protection
+```
