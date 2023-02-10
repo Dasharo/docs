@@ -43,7 +43,7 @@ subjected before the release of the new binary.
 | 32.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
 | 33.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 | 34.  | [Fedora support][FED]                                  | FED           | All                                  |
-| 35.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001                  |
+| 35.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001 and SUSP006.001  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
