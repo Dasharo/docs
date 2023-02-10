@@ -8,7 +8,7 @@ we will have "bricked" the platform). In such a case, the recovery procedure can
 reinstall the original firmware from the board manufacturer.
 
 There are two documented recovery methods: using a CH341A programming kit or an
-RTE external programmer.
+RTE.
 
 ### MSI Flash BIOS Button
 
