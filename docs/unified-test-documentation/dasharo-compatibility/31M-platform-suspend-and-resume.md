@@ -492,3 +492,57 @@ s3             |    9|     |     |     |     |     |
 Total:         |    9|    0|    0|    0|    0|    0|
 ---------------+-----+-----+-----+-----+-----+-----+
 ```
+
+## SUSP006.001 Platform suspend and resume (QubesOS, push power button)
+
+**Test description**
+
+This test aims to verify that the DUT platform suspend and resume functionality
+works correctly. As a way to wake up the device, pushing the power button is
+tested in this case.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = QubesOS
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window in dom0 and execute the following command to enter the
+   DUT into sleep mode:
+
+    ```bash
+    sudo systemctl suspend
+    ```
+
+1. Wait 15 seconds.
+1. Push the power button to resume the system.
+1. Log into the system again.
+1. Execute the following command to get the results of process:
+
+    ```bash
+    journalctl | grep systemd-sleep
+    ```
+
+1. Note the results.
+
+**Expected result**
+
+1. After entering the first command the DUT should enter sleep mode.
+1. The output of the second command should contain information about performed
+   suspend and resume operations. Each suspend and resume of the system should
+   be reported in the output of this command with the correct date, an example
+   of reporting one suspend and resume operation:
+
+   ```bash
+   Feb 10 16:38:55 dom0 systemd-sleep[14729]: Suspending system...
+   Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
+   ```
