@@ -504,7 +504,7 @@ tested in this case.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = QubesOS
+1. `OPERATING_SYSTEM` = QubesOS stable
 
 **Test setup**
 
@@ -516,8 +516,8 @@ tested in this case.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open a terminal window in dom0 and execute the following command to enter the
-   DUT into sleep mode:
+1. Open a terminal window in `dom0` and execute the following command to enter
+   the DUT into sleep mode:
 
     ```bash
     sudo systemctl suspend
