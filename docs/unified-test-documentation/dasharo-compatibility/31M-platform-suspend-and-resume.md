@@ -542,7 +542,7 @@ tested in this case.
    be reported in the output of this command with the correct date, an example
    of reporting one suspend and resume operation:
 
-   ```bash
-   Feb 10 16:38:55 dom0 systemd-sleep[14729]: Suspending system...
-   Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
-   ```
+    ```bash
+    Feb 10 16:38:55 dom0 systemd-sleep[14729]: Suspending system...
+    Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
+    ```
