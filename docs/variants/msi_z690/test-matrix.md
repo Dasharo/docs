@@ -31,6 +31,11 @@ Certification Procedure for both tested platforms:
 | 16.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 17.  | [CPU status][CPU]                                 | CPU           | All                                  |
 | 18.  | [BIOS Setup password][PSW]                        | PSW           | All                                  |
+| 19.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
+| 20.  | [Port PS/2][PPS]                                  | PPS           | All                                  |
+| 21.  | [Power control operations][PPO]                   | PPO           | All                                  |
+| 22.  | [Display resolution][DSR]                         | DSR           | All                                  |
+| 23.  | [Hot-plug][HOT]                                   | HOT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -52,6 +57,11 @@ Certification Procedure for both tested platforms:
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
 [PSW]: ../../unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
+[SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+[PPS]: ../../unified-test-documentation/dasharo-compatibility/343-port-PS2.md
+[PPO]: ../../unified-test-documentation/dasharo-compatibility/344-power-operations.md
+[DSR]: ../../unified-test-documentation/dasharo-compatibility/345-display-resolution.md
+[HOT]: ../../unified-test-documentation/dasharo-compatibility/346-hotplug.md
 
 ## Module: Dasharo security
 
