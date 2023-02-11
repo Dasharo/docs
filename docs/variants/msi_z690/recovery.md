@@ -7,6 +7,9 @@ hardware configurations, the Dasharo firmware may not boot correctly (i.e.
 we will have "bricked" the platform). In such a case, the recovery procedure can
 reinstall the original firmware from the board manufacturer.
 
+There are two documented recovery methods: using a [CH341A programming kit](https://3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/)
+or an [RTE](https://3mdeb.com/shop/open-source-hardware/rte/).
+
 ### MSI Flash BIOS Button
 
 The [MSI Flash BIOS Button](https://www.youtube.com/watch?v=iTkXunUAriE)
