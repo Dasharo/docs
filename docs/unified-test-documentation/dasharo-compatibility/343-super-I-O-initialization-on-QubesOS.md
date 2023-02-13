@@ -1,4 +1,4 @@
-# Dasharo compatibility: Port PS/2
+# Dasharo compatibility: Super I/O initialization on QubesOS
 
 ## Test cases common documentation
 

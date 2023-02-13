@@ -1,4 +1,4 @@
-# Dasharo compatibility: Hot-plug
+# Dasharo compatibility: SATA hot-plug detection
 
 ## Test cases common documentation
 
@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## HOT001.001 SATA hot-plug detection (firmware)
+## SHT001.001 SATA hot-plug detection (firmware)
 
 **Test description**
 
@@ -28,6 +28,7 @@ detected after hot-plug.
 
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Any operating system should be installed on the SATA disk.
 
 **Test steps**
 
@@ -43,7 +44,7 @@ detected after hot-plug.
 The position with the name of the connected SATA disk should be displayed in the
 Boot Menu.
 
-## HOT001.002 SATA hot-plug detection (Ubuntu 22.04)
+## SHT001.002 SATA hot-plug detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -92,7 +93,7 @@ Number  Start   End     Size    File system  Name                  Flags
 (...)
 ```
 
-## HOT001.003 SATA hot-plug detection (Windows 11)
+## SHT001.003 SATA hot-plug detection (Windows 11)
 
 **Test description**
 
