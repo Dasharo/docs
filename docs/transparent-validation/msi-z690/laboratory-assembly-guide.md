@@ -178,7 +178,8 @@ The following sections describe how to enable all of the following features:
 * serial connection to the platform,
 * controlling power supply,
 * enabling basic power actions with the platform (power off/power on/reset),
-* external flashing with the RTE.
+* external flashing with the RTE,
+* reading power status.
 
 ### Serial connection
 
@@ -244,9 +245,13 @@ should be provided by direct soldering to the one of flash chip pins
 
 ### Reading power status
 
-Connect the RTE J1 header to the platform JFP1 header as shown on picture below:
+Connect the RTE J1 header to the platform JFP1 header as shown in the picture
+below:
 
 ![IMG](images/reading_power_status.png)
+
+The values ​​of `R1`, `R2`, `V1` and `V2` should meet the relationship according
+to the formula `R1/R2 = V2/V1`. `V1` cannot be greater than 3.3V (RTE property).
 
 ### Complete Setup
 
@@ -377,7 +382,7 @@ To read the current power status use the following command:
 cat /sys/class/gpio/gpio12/value
 ```
 
-Output meaning:
+Example output:
 
-`1` - means that the platform is turned on.
-`0` - means that the platform is turned off.
+* `1` means that the platform is turned on.
+* `0` means that the platform is turned off.
