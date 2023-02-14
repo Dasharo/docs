@@ -19,6 +19,16 @@ This menu offers security-sensitive options like:
   BIOS flash. Recommended to be enabled if [Firmware setup password](overview.md#user-password-management)
   is set. Disable the protection if you need access to flash with flashrom.
 
+- `Dma protection` - Early Boot DMA protection is a feature that utilizes the
+  IOMMU early in the boot process to prevent rogue DMA-capable devices such as
+  PCIe add-in cards and USB 3 devices from access to memory. This prevents a
+  class of DMA attacks that allow for exfiltration of secrets and installation
+  of malware early in the boot process. DMA protection can be enabled in two
+  ways:
+    + Enable IOMMU when transferring control to OS (ExitBootService in normal
+    boot)
+    + Enable IOMMU when transfer control at ReadyToBoot event
+
 ## Networking Options
 
 ![](/images/menus/dasharo_net_opts.jpeg){ class="center" }
