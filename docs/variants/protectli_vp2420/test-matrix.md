@@ -61,11 +61,18 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.002 and TPM001.003            |
 | 2.   | [Verified Boot support][VBO]                      | VBO           | All                                  |
-| 4.   | [Secure Boot support][SBO]                        | SBO           | Without SBO006.001 and SBO007.001    |
-| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+| 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
+| 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
+| 5.   | [ME neuter support][MNE]                          | MNE           | MNE003.001                           |
+| 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+
+> Note: in Dasharo compatible with Protectli VP46xx ME neuter support relies
+on the default blocking of this functionality - no additional option for ME
+neuter setting is available in the Setup Menu.
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
+[MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
