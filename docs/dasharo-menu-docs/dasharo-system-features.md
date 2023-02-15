@@ -25,9 +25,12 @@ This menu offers security-sensitive options like:
   class of DMA attacks that allow for exfiltration of secrets and installation
   of malware early in the boot process. DMA protection can be enabled in two
   ways:
-    + Enable IOMMU when transferring control to OS (ExitBootService in normal
-    boot)
-    + Enable IOMMU when transfer control at ReadyToBoot event
+- `IOMMU handoff at ExitBootServices` - this option is available when
+  `Dma protection` is enabled. It changes the moment when IOMMU is re-enabled.
+  If this option is selected, the it's re-enabled at ExitBootService when
+  transferring control to OS. If disabled, it's re-enebled eariler at
+  ReadyToBoot event, which happens at the start of Device Boot Selection in edk2
+  boot process.
 
 ## Networking Options
 
