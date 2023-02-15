@@ -1,4 +1,4 @@
-# Dasharo compatibility: Power control operations
+# Dasharo compatibility: Device power control operations
 
 ## Test cases common documentation
 
@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## PCO001.001 Reset button (QubesOS)
+## DPC001.001 Reset button (QubesOS)
 
 **Test description**
 
