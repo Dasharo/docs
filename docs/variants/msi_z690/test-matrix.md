@@ -32,9 +32,9 @@ Certification Procedure for both tested platforms:
 | 17.  | [CPU status][CPU]                                 | CPU           | All                                  |
 | 18.  | [BIOS Setup password][PSW]                        | PSW           | All                                  |
 | 19.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
-| 20.  | [Super I/O initialization on QubesOS][PPS]        | PPS           | All                                  |
-| 21.  | [Power control operations][PPO]                   | PPO           | All                                  |
-| 22.  | [Display resolution][DSR]                         | DSR           | All                                  |
+| 20.  | [Super I/O initialization - QubesOS][PPS]         | PPS           | All                                  |
+| 21.  | [Device power control operations][DPC]            | DPC           | All                                  |
+| 22.  | [Display resolution - QubesOS][DSR]               | DSR           | All                                  |
 | 23.  | [SATA hot-plug detection][SHT]                    | SHT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -59,7 +59,7 @@ Certification Procedure for both tested platforms:
 [PSW]: ../../unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
 [SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
 [PPS]: ../../unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
-[PPO]: ../../unified-test-documentation/dasharo-compatibility/344-power-operations.md
+[DPC]: ../../unified-test-documentation/dasharo-compatibility/344-power-operations.md
 [DSR]: ../../unified-test-documentation/dasharo-compatibility/345-display-resolution.md
 [SHT]: ../../unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
 
