@@ -1,4 +1,4 @@
-# Dasharo compatibility: SATA hot-plug detection
+# Dasharo compatibility: SATA hot plug
 
 ## Test cases common documentation
 
@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## SHT001.001 SATA hot-plug detection (firmware)
+## SHT001.001 SATA hot plug (firmware)
 
 **Test description**
 
@@ -34,17 +34,30 @@ detected after hot-plug.
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Connect the disk to the SATA port.
-1. Press `ESC` to go to Setup Menu.
-1. Select the `One Time Boot` position using arrows and click `Enter`.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. Execute the following command in the shell:
+
+    ```bash
+    map -t hd
+    ```
+
 1. Note the results.
+1. Connect the disk to the SATA port.
+1. Execute the following command in the shell:
+
+    ```bash
+    map -t hd -r
+    ```
 
 **Expected result**
 
-The position with the name of the connected SATA disk should be displayed in the
-Boot Menu.
+1. The output of the first command should contain mapping table for all hard
+    disks connected to the device.
+1. The output of the second command should contain refreshed mapping table for
+    all hard disks connected to the device.
+1. The refreshed list should contain additional item - mounted SATA disk.
 
-## SHT001.002 SATA hot-plug detection (Ubuntu 22.04)
+## SHT001.002 SATA hot plug (Ubuntu 22.04)
 
 **Test description**
 
@@ -93,7 +106,7 @@ Number  Start   End     Size    File system  Name                  Flags
 (...)
 ```
 
-## SHT001.003 SATA hot-plug detection (Windows 11)
+## SHT001.003 SATA hot plug (Windows 11)
 
 **Test description**
 
