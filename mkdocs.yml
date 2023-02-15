@@ -324,6 +324,10 @@ nav:
               - 'Docking station NET interface': unified-test-documentation/dasharo-compatibility/340-docking-station-net-interface.md
               - 'Logo customization': unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
               - 'BIOS Setup password': unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
+              - 'Super I/O initialization - QubesOS': unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
+              - 'Display Resolution - QubesOS': unified-test-documentation/dasharo-compatibility/345-display-resolution.md
+              - 'Device power control operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
+              - 'SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md

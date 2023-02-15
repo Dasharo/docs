@@ -31,6 +31,11 @@ Certification Procedure for both tested platforms:
 | 16.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 17.  | [CPU status][CPU]                                 | CPU           | All                                  |
 | 18.  | [BIOS Setup password][PSW]                        | PSW           | All                                  |
+| 19.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
+| 20.  | [Super I/O initialization - QubesOS][PPS]         | PPS           | All                                  |
+| 21.  | [Device power control operations][DPC]            | DPC           | All                                  |
+| 22.  | [Display resolution - QubesOS][DSR]               | DSR           | All                                  |
+| 23.  | [SATA hot-plug detection][SHT]                    | SHT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -52,6 +57,11 @@ Certification Procedure for both tested platforms:
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
 [PSW]: ../../unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
+[SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+[PPS]: ../../unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
+[DPC]: ../../unified-test-documentation/dasharo-compatibility/344-power-operations.md
+[DSR]: ../../unified-test-documentation/dasharo-compatibility/345-display-resolution.md
+[SHT]: ../../unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
 
 ## Module: Dasharo security
 
