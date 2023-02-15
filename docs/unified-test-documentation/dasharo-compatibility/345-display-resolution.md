@@ -1,4 +1,4 @@
-# Dasharo compatibility: Display resolution
+# Dasharo compatibility: Display resolution - QubesOS
 
 ## Test cases common documentation
 
@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## DSR001.001 Changing the display resolution (QubesOS)
+## DSR001.001 Changing the display resolution
 
 **Test description**
 
