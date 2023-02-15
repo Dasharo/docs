@@ -1,4 +1,4 @@
-# Dasharo compatibility: Super I/O initialization on QubesOS
+# Dasharo compatibility: Super I/O initialization - QubesOS
 
 ## Test cases common documentation
 
@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## PPS001.001 PS/2 keyboard detection (QubesOS)
+## PPS001.001 PS/2 keyboard detection
 
 **Test description**
 
