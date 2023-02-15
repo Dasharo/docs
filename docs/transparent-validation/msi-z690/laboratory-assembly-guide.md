@@ -179,7 +179,7 @@ The following sections describe how to enable all of the following features:
 * controlling power supply,
 * enabling basic power actions with the platform (power off/power on/reset),
 * external flashing with the RTE,
-* reading power status.
+* device power status readout.
 
 ### Serial connection
 
@@ -243,7 +243,7 @@ should be provided by direct soldering to the one of flash chip pins
 ![IMG](images/msi_z690_spi.jpeg)
 ![IMG](images/msi_z690_lab_SPI_RTE.jpg)
 
-### Reading power status
+### Device power status readout
 
 Connect the RTE J1 header to the platform JFP1 header as shown in the picture
 below:
@@ -277,7 +277,7 @@ The following sections describe how to use all of the enabled features:
 * controlling power supply,
 * enabling basic power actions with the platform (power off/power on/reset),
 * external flashing with the RTE,
-* reading power status.
+* device power status readout.
 
 ### Serial connection
 
@@ -374,7 +374,7 @@ the below-described steps:
 1. If the reading was successful, the output from the command above should
     contain the phrase `Verifying flash... VERIFIED`.
 
-### Reading power status
+### Device power status readout
 
 To read the current power status use the following command:
 
