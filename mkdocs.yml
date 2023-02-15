@@ -326,7 +326,7 @@ nav:
               - 'BIOS Setup password': unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
               - 'Super I/O initialization - QubesOS': unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
               - 'Display Resolution - QubesOS': unified-test-documentation/dasharo-compatibility/345-display-resolution.md
-              - 'Power operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
+              - 'Device power control operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
               - 'SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
