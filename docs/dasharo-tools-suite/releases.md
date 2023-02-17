@@ -13,7 +13,7 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
-## v1.1.1 - 2023-02-17
+## v1.1.1 - 2023-02-20
 
 ### Images
 
