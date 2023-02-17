@@ -29,7 +29,7 @@ Process](../dev-proc/standard-release-process.md).
 
 ### Changelog
 
-* Blocked Dasharo zero-touch initial deployment on MSI PRO Z690-A (WIFI) DDR5.
+* Fixed Dasharo zero-touch initial deployment on MSI PRO Z690-A (WIFI) DDR5.
 * Blocked Dasharo zero-touch initial deployment on platforms where Dasharo
   firmware was detected.
 * Added couple QoL improvements for Dasharo zero-touch initial deployment:
