@@ -231,7 +231,7 @@ This section describes functionality of Dasharo Tools Suite. These are:
 * [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 * [HCL Report](#hcl-report),
 * [Firmware update](#firmware-update),
-* [EC Transition](#ec-transition),
+* [EC transition](#ec-transition),
 * [EC update](#ec-update),
 * [additional features](#additional-features),
     - [run commands from iPXE shell](#run-commands-from-ipxe-shell),
@@ -309,7 +309,7 @@ Legend:
 [ERROR]    Error during getting data
 ```
 
-Please report all errors exerienced while performing dump to
+Please report all errors experienced while performing dump to
 [dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository.
 
 #### BIOS backup
@@ -346,13 +346,13 @@ fwupdmgr refresh
 fwupdmgr update
 ```
 
-### EC Transition
+### EC transition
 
 DTS allows to perform full Embedded Controller firmware transition from the
-proprietary vendor EC firmware, to the open-source Dasharo EC firmware.
-Currently, this functionality is supported on the
-[NovaCustom NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/)) and
-[NovaCustom NV4x](/variants/novacustom_nv4x_tgl/releases/) only.
+proprietary vendor EC firmware, to the Dasharo EC firmware. Currently, this
+functionality is supported on the [NovaCustom
+NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/)) and [NovaCustom
+NV4x](/variants/novacustom_nv4x_tgl/releases/) only.
 
 To perform EC transition, make sure you are
 [running DTS version v1.0.2 or higher](#running) and follow these steps:
