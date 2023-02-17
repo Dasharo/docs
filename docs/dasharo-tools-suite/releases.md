@@ -13,25 +13,36 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
-## v1.1.1
+## v1.1.1 - 2023-02-17
 
 ### Images
 
-* [USB bootable DTS v1.1.1 image](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz-TBD)
-* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256-TBD)
-* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256.sig-TBD)
-* [DTS v1.1.1 ISO image](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso-TBD)
-* [sha256 ISO](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256-TBD)
-* [sha256.sig ISO](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256.sig-TBD)
+* [USB bootable DTS v1.1.1 image](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz)
+* [sha256](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256)
+* [sha256.sig](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256.sig)
+* [DTS v1.1.1 ISO image](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso)
+* [sha256 ISO](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256)
+* [sha256.sig ISO](https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256.sig)
 
   See how to verify hash and signature on [this
   video](https://youtu.be/RF-NYcZM9JI). It works the same way with ISO image.
 
 ### Changelog
 
-* TBD
+* Blocked Dasharo zero-touch initial deployment on MSI PRO Z690-A (WIFI) DDR5.
+* Blocked Dasharo zero-touch initial deployment on platforms where Dasharo
+  firmware was detected.
+* Added couple QoL improvements for Dasharo zero-touch initial deployment:
+    - added platform verification step (show detected device information),
+    - added firmware verification step (show hash of using binary),
+    - added progress bar on first instructions,
+    - used reboot as default behavior after successful flashing.
+* Added improvements for HCL report.
+* Added DTS ISO format image, and documentation about
+  [VentoyOS](./documentation.md#run-dts-using-ventoyos) usage.
+* Improved `README` of the `meta-dts` repository.
 
-## v1.1.0
+## v1.1.0 - 2022-11-02
 
 ### Images
 
@@ -64,7 +75,7 @@ Process](../dev-proc/standard-release-process.md).
   [boot.dasharo.com](https://boot.dasharo.com/dts/).
 * Sharing build cache on [cache.dasharo.com](https://cache.dasharo.com/yocto/dts/).
 
-## v1.0.2
+## v1.0.2 - 2022-10-19
 
 ### Images
 
@@ -90,7 +101,7 @@ Process](../dev-proc/standard-release-process.md).
 * Enabled GOOGLE_MEMCONSOLE_COREBOOT kernel configuration to ease getting
   firmware logs.
 
-## v1.0.1
+## v1.0.1 - 2022-09-02
 
 ### Images
 
@@ -109,7 +120,7 @@ Process](../dev-proc/standard-release-process.md).
   NovaCustom NS5x/7x.
 * First public release: [meta-dts-ce](https://github.com/Dasharo/meta-dts-ce).
 
-## v1.0.0
+## v1.0.0 - 2022-08-09
 
 ### Images
 
@@ -122,7 +133,7 @@ Process](../dev-proc/standard-release-process.md).
   sha256sum -c [sha256 file]
   ```
 
-### Changelogsystem76_ectool
+### Changelog
 
 * Added auto-login functionality.
 * Added user menu.
