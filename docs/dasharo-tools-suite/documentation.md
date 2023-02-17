@@ -5,15 +5,15 @@
 Dasharo Tools Suite was prepared to run on x86 platforms, but we can confirm
 that it boots on the following platforms:
 
-* ASUS KGPE-D16
-* Dell OptiPlex 7010/9010
+* ASUS KGPE-D16,
+* Dell OptiPlex 7010/9010,
 * MSI PRO Z690-A DDR4 ([test
-  report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=0&range=A75))
+  report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=0&range=A75)),
 * NovaCustom NV4x ([test
-  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161))
+  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161)),
 * NovaCustom NS5x/7x ([test
-  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174))
-* Protectli FW6/VP46xx
+  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)),
+* Protectli FW6/VP46xx.
 
 <span style="color:red">
 Please do not use DTS to deploy Dasharo on MSI PRO Z690-A (WIFI) DDR5;
@@ -40,9 +40,12 @@ This section describes how to boot DTS using iPXE.
 
 #### Requirements
 
-* Dasharo device with DTS functionality integrated
-* Wired network connection
-* [Secure Boot disabled](#disabling-secure-boot)
+Below are the requirements that must be met to run DTS over network on the
+platform:
+
+* Dasharo device with DTS functionality integrated,
+* wired network connection,
+* [Secure Boot disabled](#disabling-secure-boot).
 
 #### Launching DTS
 
@@ -60,10 +63,13 @@ This section describes how to boot DTS using USB stick.
 
 #### Requirements
 
-* USB stick (at least 2GB)
-* Wired network connection
-* [Secure Boot disabled](#disabling-secure-boot)
-* Latest image from [releases](./releases.md) section
+Below are the requirements that must be met to run DTS from USB device on the
+platform:
+
+* USB stick (at least 2GB),
+* wired network connection,
+* [Secure Boot disabled](#disabling-secure-boot),
+* latest image from [releases](./releases.md) section.
 
 #### Launching DTS
 
@@ -94,10 +100,12 @@ the process should be significantly decreased.
 
 ### Prerequisites
 
-* Linux PC (tested on `Ubuntu 20.04 LTS`)
-* [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) installed
+The following must be met to build DTS:
+
+* Linux PC (tested on `Ubuntu 20.04 LTS`),
+* [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) installed,
 * [kas-container 3.0.2](https://raw.githubusercontent.com/siemens/kas/3.0.2/kas-container)
-  script downloaded and available in [PATH](https://en.wikipedia.org/wiki/PATH_(variable))
+  script downloaded and available in [PATH](https://en.wikipedia.org/wiki/PATH_(variable)),
 
 ```bash
 wget -O ~/bin/kas-container https://raw.githubusercontent.com/siemens/kas/3.0.2/kas-container
@@ -107,7 +115,7 @@ wget -O ~/bin/kas-container https://raw.githubusercontent.com/siemens/kas/3.0.2/
 chmod +x ~/bin/kas-container
 ```
 
-* `meta-dts` repository cloned
+* `meta-dts` repository cloned.
 
 ```bash
 mkdir yocto && cd yocto
@@ -125,7 +133,7 @@ From `yocto` directory run:
 SHELL=/bin/bash kas-container build meta-dts/kas.yml
 ```
 
-* Image build takes time, so be patient and after build's finish you should see
+Image build takes time, so be patient and after build's finish you should see
 something similar to (the exact tasks numbers may differ):
 
 ```shell
@@ -159,7 +167,7 @@ local_conf_header:
 
 ### Flash
 
-* Find out your device name:
+* Find out your device name.
 
 ```shell
 fdisk -l
@@ -178,7 +186,7 @@ in this case the device name is `/dev/sdx` **but be aware, in next steps
 replace `/dev/sdx` with right device name on your platform or else you can
 damage your system!.**
 
-* From where you ran image build type:
+* From where you ran image build type.
 
 ```shell
 sudo umount /dev/sdx*
@@ -192,7 +200,7 @@ Here the file `dts-base-image-genericx86-64.wic.gz` should be available which
 is the image of DTS. To flash image you can use the same command as showed in
 [running section](#launching-dts_1), just change the file name.
 
-* Boot the platform
+* Boot the platform.
 
 ## Disabling Secure Boot
 
@@ -220,12 +228,12 @@ You could confirm that by repeating steps 3 - 5.
 
 This section describes functionality of Dasharo Tools Suite. These are:
 
-* [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment)
-* [HCL Report](#hcl-report)
-* [Firmware update](#firmware-update)
-* [EC Transition](#ec-transition)
-* [EC update](#ec-update)
-* [Run commands from iPXE shell](#ipxe-commands)
+* [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
+* [HCL Report](#hcl-report),
+* [Firmware update](#firmware-update),
+* [EC Transition](#ec-transition),
+* [EC update](#ec-update),
+* [Run commands from iPXE shell](#ipxe-commands).
 
 ### Dasharo zero-touch initial deployment
 
@@ -347,10 +355,10 @@ Currently, this functionality is supported on the
 To perform EC transition, make sure you are
 [running DTS version v1.0.2 or higher](#running) and follow these steps:
 
-* After boot, choose option number 6 open custom vendor submenu
+* After boot, choose option number 6 open custom vendor submenu.
 * Plug in power supply (without it, flashing EC is not possible as losing power
-  may result in firmware corruption)
-* Choose option number 1 to perform full EC transition
+  may result in firmware corruption).
+* Choose option number 1 to perform full EC transition.
   > Note: below is an example output from Embedded Controller transition on
     NovaCustom NS50MU laptop.
 
@@ -434,7 +442,7 @@ To perform EC transition, make sure you are
 * Power on your computer. Booting process may take a while.
 * After boot, choose option number 9 to drop to Shell.
 * Your firmware is correctly installed. You can retrieve EC firmware information
-  using:
+  using `system76_ectool` utility.
 
   ```bash
   system76_ectool info
@@ -443,14 +451,14 @@ To perform EC transition, make sure you are
   The output of the above command should contain information about
   the version of flashed firmware:
 
-* on `NovaCustom NS5x/NS7x`
+* The following presents how it should look on `NovaCustom NS5x/NS7x`.
 
   ```bash
   board: clevo/ns50mu
   version: 2022-08-31_cbff21b
   ```
 
-* on `NovaCustom NV4x`
+* The following presents how it should look on  `NovaCustom NV4x`.
 
   ```bash
   board: clevo/nv40mz
@@ -460,9 +468,9 @@ To perform EC transition, make sure you are
 ### EC update
 
 DTS allows to update open-source Embedded Controller firmware to the newer
-version. To properly update it, follow these steps:
+version. This is how we can achieve that.
 
-* Retrieve information about your current EC
+* Retrieve information about your current EC.
 
   ```bash
   system76_ectool info
@@ -479,7 +487,7 @@ version. To properly update it, follow these steps:
 * Download the newest version of Embedded Controller firmware.
 * Plug in power supply, without it, flashing EC is not possible as losing power
   may cause in damaged firmware.
-* Flash Embedded Controller firmware internally:
+* Flash Embedded Controller firmware internally.
 
   ```bash
   system76_ectool flash ec_file.rom
@@ -510,7 +518,7 @@ version. To properly update it, follow these steps:
 * Computer will shut down automatically.
 * Power on your computer. Booting process may take a while.
 * After boot, choose option number 9 to drop to Shell.
-* Retrieve information about your updated EC
+* Retrieve information about your updated EC.
 
   ```bash
   system76_ectool info
@@ -530,13 +538,13 @@ There is a possibility to execute the bash script after Linux startup by passing
 it from the iPXE shell. Every script placed in `/sbin/ipxe-commands` will be
 executed automatically after startup.
 
-Here is simple instruction on how to use that feature:
+Here is simple instruction on how to use that feature.
 
 * Run the HTTP server in the directory which contains DTS base image. If you
 build it by yourself, then it should be `meta-dts` subdirectory:
-`build/tmp/deploy/images/genericx86-64`
+`build/tmp/deploy/images/genericx86-64`.
 
-The easiest way to start an HTTP server is using `http.server` python module:
+The easiest way to start an HTTP server is using `http.server` python module.
 
 ```bash
 $ python3 -m http.server 9000
@@ -544,7 +552,7 @@ $ python3 -m http.server 9000
 
 * Create `dts.ipxe` bootchain file in directory where you have a running HTTP
 server. That file should have similar content (you need to enter IP of your
-host machine in a local network):
+host machine in a local network).
 
 ```bash
 #!ipxe
@@ -555,9 +563,9 @@ module http://<YOUR_IP>:9000/custom-script /sbin/ipxe-commands mode=755
 boot
 ```
 
-* Copy your `custom-script` script in this same directory
+* Copy your `custom-script` script in this same directory.
 
-* Enter the iPXE shell on your device and load `dts.ipxe` chainboot file:
+* Enter the iPXE shell on your device and load `dts.ipxe` chainboot file.
 
 ```bash
 iPXE> dhcp
