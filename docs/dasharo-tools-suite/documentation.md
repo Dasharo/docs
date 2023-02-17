@@ -16,7 +16,7 @@ that it boots on the following platforms:
 * Protectli FW6/VP46xx.
 
 <span style="color:red">
-Please do not use DTS to deploy Dasharo on MSI PRO Z690-A (WIFI) DDR5;
+Please do not use DTS v1.1.0 to deploy Dasharo on MSI PRO Z690-A (WIFI) DDR5;
 otherwise, you will brick your hardware. There are at least two bugs that have
 to be fixed before it is possible:
 
