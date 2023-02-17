@@ -28,19 +28,19 @@ to be fixed before it is possible:
 The Dasharo Tools Suite can be started in various ways. Currently, there are
 two options:
 
-* bootable over network (iPXE),
+* bootable over a network (iPXE),
 * bootable USB stick image.
 
-The first one should be always preferred if possible, as it the easiest one to
-use.
+The first one should always be preferred if possible, as it is the easiest one
+to use.
 
-### Bootable over network
+### Bootable over a network
 
 This section describes how to boot DTS using iPXE.
 
 #### Requirements
 
-Below are the requirements that must be met to run DTS over network on the
+Below are the requirements that must be met to run DTS over a network on the
 platform:
 
 * Dasharo device with DTS functionality integrated,
@@ -59,11 +59,11 @@ To access Dasharo Tools Suite:
 
 ### Bootable USB stick
 
-This section describes how to boot DTS using USB stick.
+This section describes how to boot DTS using a USB stick.
 
 #### Requirements
 
-Below are the requirements that must be met to run DTS from USB device on the
+Below are the requirements that must be met to run DTS from a USB device on the
 platform:
 
 * USB stick (at least 2GB),
@@ -76,17 +76,17 @@ platform:
 To access Dasharo Tools Suite:
 
 * flash the downloaded image onto USB stick,
-    - you can use cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
-    - you can also use `dd` to flash from command line
+    - you can use a cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
+    - you can also use `dd` to flash from the command line
 
 ```bash
 gzip -cdk dts-base-image-v1.1.0.wic.gz | \
 sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 ```
 
-> Note: this is an example for v1.1.0 image.
+> Note: this is an example done on the v1.1.0 image.
 
-* insert the USB stick to a USB in your device,
+* insert the USB stick into a USB in your device,
 * boot from the USB stick,
 * the DTS menu will now appear.
 
@@ -94,9 +94,9 @@ sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 
 We choose [Yocto Project](https://www.yoctoproject.org/) to prepare Dasharo
 Tools Suite system. DTS image can be built using publicly available sources.
-Thanks to publishing build cache on
-[cache.dasharo.com](https://cache.dasharo.com/yocto/dts/) time needed to finish
-the process should be significantly decreased.
+Thanks to publishing the build cache on
+[cache.dasharo.com](https://cache.dasharo.com/yocto/dts/) the time needed to
+finish the process should be significantly decreased.
 
 ### Prerequisites
 
@@ -127,14 +127,14 @@ git clone https://github.com/Dasharo/meta-dts.git
 
 ### Build
 
-From `yocto` directory run:
+From `yocto` directory, run:
 
 ```shell
 SHELL=/bin/bash kas-container build meta-dts/kas.yml
 ```
 
-Image build takes time, so be patient and after build's finish you should see
-something similar to (the exact tasks numbers may differ):
+Image build takes time, so be patient, and the build's finished, you should see
+something similar to (tasks number may differ):
 
 ```shell
 Initialising tasks: 100% |###########################################################################################| Time: 0:00:01
@@ -143,8 +143,8 @@ NOTE: Executing Tasks
 NOTE: Tasks Summary: Attempted 2532 tasks of which 2524 didn't need to be rerun and all succeeded.
 ```
 
-Using cache is enabled in `kas/cache.yml` file and can be disabled by removing
-content of that file.
+Using the cache is enabled in `kas/cache.yml` file and can be disabled by
+removing content of that file.
 
 ```bash
 cat kas/cache.yml
@@ -182,9 +182,9 @@ Device     Boot  Start    End Sectors  Size Id Type
 /dev/sdx2       139264 186667   47404 23,2M 83 Linux
 ```
 
-in this case the device name is `/dev/sdx` **but be aware, in next steps
-replace `/dev/sdx` with right device name on your platform or else you can
-damage your system!.**
+In this case the device name is `/dev/sdx`, **but be aware, in the next steps,
+replace `/dev/sdx` with the right device name on your platform, or else you can
+damage your system!**
 
 * From where you ran image build type.
 
@@ -196,22 +196,22 @@ sudo umount /dev/sdx*
 cd build/tmp/deploy/images/genericx86-64
 ```
 
-Here the file `dts-base-image-genericx86-64.wic.gz` should be available which
-is the image of DTS. To flash image you can use the same command as showed in
-[running section](#launching-dts_1), just change the file name.
+Here the file `dts-base-image-genericx86-64.wic.gz` should be available, which
+is the image of DTS. To flash image, you can use the same command shown in
+[running section](#launching-dts_1). Just change the file name.
 
 * Boot the platform.
 
 ## Disabling Secure Boot
 
-Any procedure which affects the firmware flashing should be preceded by
-controlling the Secure Boot status and if it is turned on, turning it off. The
-enabled Secure Boot will not only prevent you from operating on the firmware,
-but you will also not be able to launch DTS.
+Any procedure affecting the firmware flashing should be preceded by controlling
+the Secure Boot status and if it is turned on, turning it off. The enabled
+Secure Boot will not only prevent you from operating on the firmware, but you
+will also not be able to launch DTS.
 
 To check the Secure Boot state:
 
-1. Turn off the station, on which you want to test the Dasharo firmware.
+1. Turn off the station on which you want to test the Dasharo firmware.
 1. Turn the station on and go to the next step immediately.
 1. Hold the `BIOS SETUP KEY` to enter the `BIOS MENU`.
 1. Localize and enter the `Secure Boot` menu using the arrow keys and Enter.
@@ -226,7 +226,7 @@ You could confirm that by repeating steps 3 - 5.
 
 ## Features
 
-This section describes functionality of Dasharo Tools Suite. These are:
+This section describes the functionality of the Dasharo Tools Suite. These are:
 
 * [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 * [HCL Report](#hcl-report),
@@ -239,16 +239,24 @@ This section describes functionality of Dasharo Tools Suite. These are:
 
 ### Dasharo zero-touch initial deployment
 
-DTS can be use to flash Dasharo firmware on your hardware. To achieve this, boot
-DTS, choose option number `2`. After creating
+DTS can be used to flash Dasharo firmware on your hardware. To achieve this,
+boot DTS, choose option number `2`. After creating
 [report](../glossary.md#dasharo-hardware-compatibility-list-report) with
-firmware dump as backup, type `p` to confirm installation of Dasharo firmware.
+firmware dump as backup, type `p` to confirm the installation of Dasharo
+firmware.
 
-Procedure execution ends on automatically power off. After restarting the
-platform, you can enjoy the basic version of Dasharo which we provide for given
-hardware.
+Next you will be asked two questions to confirm flashing. The first will be
+displayed with the detected information about the device you are using DTS on.
+The second will also provide the hash of Dasharo components which will then be
+used for flashing. You can compare them with the values listed in the supported
+hardware section on docs.dasharo.com. Both these questions can be accepted by
+typing `Y`.
 
-This feature is supported on following platforms:
+Procedure execution ends automatically on the reboot of the platform (unless it
+requires otherwise). After restarting the device, you can enjoy the basic
+version of Dasharo, which we provide for given hardware.
+
+This feature is supported on the following platforms:
 
 * ASUS KGPE-D16,
 * Dell OptiPlex 7010/9010,
@@ -258,10 +266,10 @@ This feature is supported on following platforms:
 
 ### HCL Report
 
-DTS allows to generate a package with logs containing hardware information. To
-create one, choose option number 1 and check out the disclaimer. If you would
-like to send the report to our servers, please remember about connecting the
-ethernet cable. More information can be found in
+DTS allows the generation of a package with logs containing hardware
+information. To create one, choose option number 1 and check out the disclaimer.
+If you would like to send the report to our servers, please remember about
+connecting the ethernet cable. More information can be found in
 [glossary](../glossary.md#dasharo-hardware-compatibility-list-report).
 
 ![](./images/dts-hcl-run.png)
@@ -272,7 +280,7 @@ Please note DTS HCL Report assumes that your chipset is already supported by
 flashrom. There are also other false negative errors and unknowns, which we
 trying to fix to improve user experience.
 
-Always check `results` file to confirm quality of your HCL report. Sample
+Always check `results` file to confirm the quality of your HCL report. Sample
 content of such file may look as follows:
 
 ```text
@@ -309,28 +317,29 @@ Legend:
 [ERROR]    Error during getting data
 ```
 
-Please report all errors experienced while performing dump to
+Please report all errors experienced while performing a dump to
 [dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository.
 
 #### BIOS backup
 
 One of the key components of HCL Report is your BIOS backup. To prepare BIOS
-backup of your platform simply run HCL Report and decide if you would like to
+backup of your platform, simply run HCL Report and decide if you would like to
 contribute information about your hardware configuration.
 
-Please consider following options depending on your situation:
+Please consider the following options depending on your situation:
 
-* **YES** - If you decided to contribute you can always [get back to
+* **YES** - If you decide to contribute, you can always [get back to
   us](https://www.dasharo.com/pages/contact/) and ask about BIOS backup, which
   we will provide after simple verification that you are the owner of the
   hardware.
-* **NO (default)** - If you decided to not contribute your situation depends on
-  boot method you used to execute DTS:
-    - **Network Boot** - please note that Dasharo booted over iPXE assumes no storage
-      available, so report and your BIOS backup are stored in temporary memory
-      and will not be available after reboot. Please make sure to move HCL report
-      to not volatile storage. This can be done using option `9) Shell`
-    - **USB Boot** - HCL report and BIOS backup are saved to USB storage root
+* **NO (default)** - If you decide to not contribute, your situation depends on
+  the boot method you used to execute DTS:
+    - **Network Boot** - please note that Dasharo booted over iPXE assumes no
+      storage available, so the report, and your BIOS backup are stored in
+      temporary memory and will not be available after reboot. Please make sure
+      to move HCL Report to not volatile storage. This can be done using option
+      `9) Shell`,
+    - **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
       directory.
 
 ### Firmware update
@@ -338,7 +347,7 @@ Please consider following options depending on your situation:
 Within DTS, you may use the `flashrom` and `fwupdmgr` utilities to update,
 downgrade, or reinstall your firmware.
 
-To update your firmware to the latest version first choose option number 9 to
+To update your firmware to the latest version, first choose option number 9 to
 drop to Shell and run:
 
 ```bash
@@ -348,8 +357,8 @@ fwupdmgr update
 
 ### EC transition
 
-DTS allows to perform full Embedded Controller firmware transition from the
-proprietary vendor EC firmware, to the Dasharo EC firmware. Currently, this
+DTS allows performing full Embedded Controller firmware transition from the
+proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
 functionality is supported on the [NovaCustom
 NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/)) and [NovaCustom
 NV4x](/variants/novacustom_nv4x_tgl/releases/) only.
@@ -537,20 +546,20 @@ version. This is how we can achieve that.
 ### Additional features
 
 The section below presents a list of functionalities added to DTS, which were
-developed at the request of the community, and which do not necessarily relate
+developed at the community's request and which do not necessarily relate
 strictly to Dasharo.
 
 #### Run commands from iPXE shell
 
-There is a possibility to execute the bash script after Linux startup by passing
-it from the iPXE shell. Every script placed in `/sbin/ipxe-commands` will be
-executed automatically after startup.
+It is possible to execute the bash script after Linux startup by passing it from
+the iPXE shell. Every script placed in `/sbin/ipxe-commands` will be executed
+automatically after startup.
 
-Here is simple instruction on how to use that feature.
+Here is a simple instruction on how to use that feature.
 
-* Run the HTTP server in the directory which contains DTS base image. If you
-build it by yourself, then it should be `meta-dts` subdirectory:
-`build/tmp/deploy/images/genericx86-64`.
+* Run the HTTP server in the directory which contains the DTS base image. If you
+  build it by yourself, then it should be the `meta-dts` subdirectory:
+  `build/tmp/deploy/images/genericx86-64`.
 
 The easiest way to start an HTTP server is using `http.server` python module.
 
@@ -558,9 +567,9 @@ The easiest way to start an HTTP server is using `http.server` python module.
 $ python3 -m http.server 9000
 ```
 
-* Create `dts.ipxe` bootchain file in directory where you have a running HTTP
-server. That file should have similar content (you need to enter IP of your
-host machine in a local network).
+* Create a `dts.ipxe` bootchain file in a directory where you have an HTTP
+  server. That file should have similar content (you need to enter the IP of
+  your host machine in a local network).
 
 ```bash
 #!ipxe
@@ -573,7 +582,7 @@ boot
 
 * Copy your `custom-script` script in this same directory.
 
-* Enter the iPXE shell on your device and load `dts.ipxe` chainboot file.
+* Enter the iPXE shell on your device and load `dts.ipxe` bootchain file.
 
 ```bash
 iPXE> dhcp
