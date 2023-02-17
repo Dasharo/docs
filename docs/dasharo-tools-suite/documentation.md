@@ -233,7 +233,9 @@ This section describes functionality of Dasharo Tools Suite. These are:
 * [Firmware update](#firmware-update),
 * [EC Transition](#ec-transition),
 * [EC update](#ec-update),
-* [Run commands from iPXE shell](#ipxe-commands).
+* [additional features](#additional-features),
+    - [run commands from iPXE shell](#run-commands-from-ipxe-shell),
+    - [run DTS using VentoyOS](#run-dts-using-ventoyos).
 
 ### Dasharo zero-touch initial deployment
 
@@ -532,7 +534,13 @@ version. This is how we can achieve that.
   version: 2022-08-31_cbff21b
   ```
 
-### Run commands from iPXE shell
+### Additional features
+
+The section below presents a list of functionalities added to DTS, which were
+developed at the request of the community, and which do not necessarily relate
+strictly to Dasharo.
+
+#### Run commands from iPXE shell
 
 There is a possibility to execute the bash script after Linux startup by passing
 it from the iPXE shell. Every script placed in `/sbin/ipxe-commands` will be
@@ -581,3 +589,17 @@ http://192.168.4.98:9000/custom-script... ok
 
 Now your `custom-script` script should be copied to DTS rootfs as
 `ipxe-commands` and will be executed after boot.
+
+#### Run DTS using VentoyOS
+
+Starting from version [v1.1.1](./releases.md#v111), we provide also an ISO
+formatted image. Thanks to that, it can be used with VentoyOS[1]. As for now the
+following limitations are known.
+
+* VentoyOS needs to be started in UEFI mode.
+* Nothing can be saved on root file system, as VentoyOS boots systems in
+  read-only mode.
+
+Please let us know if you started DTS using VentoyOS and have additional
+information for us. You can share them on [Dasharo Matrix
+Workspace](https://matrix.to/#/#dasharo:matrix.org).
