@@ -101,3 +101,13 @@ The submenu contains general chipset options. Currently available options:
   platform will not reset itself when watchdog expires.
 - `Watchdog timeout value` - watchdog timeout in seconds. Allowed range is
   60-1024 seconds. The Option is only visible if watchdog is set to enabled.
+
+## Power Management Options
+
+The submenu contains general power management options. Currently available
+options:
+
+- `Fan profile` - Sets of the fan operation modes (defaults to `Silent`):
+    + `Silent` - the fan will operate at lower speeds to reduce noise,
+    + `Performance` - the fan will operate at higher speeds, to allow for
+       increased performance.
