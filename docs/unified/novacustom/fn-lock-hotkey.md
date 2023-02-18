@@ -1,10 +1,16 @@
 # NovaCustom Fn lock hotkey
 
-The NovaCustom laptop features the Fn lock hotkey function. This function might
-be used to change the behavior (action blockade) of the function keys
-(`F1 - F12`).
+By default, the `Function Keys` (++f1++ - ++f12++) must be used with a
+combination of ++fn++ key to change display brightness, keyboard illumination,
+etc. The `Fn lock` capability provides a way of using these actions without the
+necessity of using the ++fn++ key.
 
 ## Usage
 
-To turn on the lock of hotkeys function use `Fn + CapsLock` combination. If the
-lock hotkeys functionality should be turned off, use the same combination.
+### Enabling
+
+Press the ++fn+caps-lock++ keys combination.
+
+### Disabling
+
+Press the ++fn+caps-lock++ keys combination again.
