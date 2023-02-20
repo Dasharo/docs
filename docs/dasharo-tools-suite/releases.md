@@ -20,16 +20,17 @@ Process](../dev-proc/standard-release-process.md).
 [USB bootable DTS v1.1.1 image][USB_DTS_v1.1.1]{ .md-button }
 [sha256][USB_DTS_sha_v1.1.1]{ .md-button }
 [sha256.sig][USB_DTS_sig_v1.1.1]{ .md-button }
+
 [DTS v1.1.1 ISO image][ISO_DTS_v1.1.1]{ .md-button }
 [sha256 ISO][ISO_DTS_sha_v1.1.1]{ .md-button }
 [sha256.sig ISO][ISO_DTS_sig_v1.1.1]{ .md-button }
 
-[USB_DTS_v1.1.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz)
-[USB_DTS_sha_v1.1.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256)
-[USB_DTS_sig_v1.1.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256.sig)
-[ISO_DTS_v1.1.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso)
-[ISO_DTS_sha_v1.1.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256)
-[ISO_DTS_sig_v1.1.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256.sig)
+[USB_DTS_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz
+[USB_DTS_sha_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256
+[USB_DTS_sig_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.wic.gz.sha256.sig
+[ISO_DTS_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso
+[ISO_DTS_sha_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256
+[ISO_DTS_sig_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256.sig
 
   See how to verify hash and signature on [this
   video](https://youtu.be/RF-NYcZM9JI). It works the same way with ISO image.
@@ -62,9 +63,9 @@ Process](../dev-proc/standard-release-process.md).
 [sha256][USB_DTS_sha_v1.1.0]{ .md-button }
 [sha256.sig][USB_DTS_sig_v1.1.0]{ .md-button }
 
-[USB_DTS_v1.1.0]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz)
-[USB_DTS_sha_v1.1.0]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256)
-[USB_DTS_sig_v1.1.0]: (https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256.sig)
+[USB_DTS_v1.1.0]: https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz
+[USB_DTS_sha_v1.1.0]: https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256
+[USB_DTS_sig_v1.1.0]: https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256.sig
 
 ### Changelog
 
@@ -96,9 +97,9 @@ Process](../dev-proc/standard-release-process.md).
 [sha256][USB_DTS_sha_v1.0.2]{ .md-button }
 [sha256.sig][USB_DTS_sig_v1.0.2]{ .md-button }
 
-[USB_DTS_v1.0.2]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz)
-[USB_DTS_sha_v1.0.2]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256)
-[USB_DTS_sig_v1.0.2]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256.sig)
+[USB_DTS_v1.0.2]: https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz
+[USB_DTS_sha_v1.0.2]: https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256
+[USB_DTS_sig_v1.0.2]: https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256.sig
 
   See how to verify hash and signature on [this
   video](https://youtu.be/oTx2iStxXOE).
@@ -126,9 +127,9 @@ Process](../dev-proc/standard-release-process.md).
 [sha256][USB_DTS_sha_v1.0.1]{ .md-button }
 [sha256.sig][USB_DTS_sig_v1.0.1]{ .md-button }
 
-[USB_DTS_v1.0.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz)
-[USB_DTS_sha_v1.0.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256)
-[USB_DTS_sig_v1.0.1]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig)
+[USB_DTS_v1.0.1]: https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz
+[USB_DTS_sha_v1.0.1]: https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256
+[USB_DTS_sig_v1.0.1]: https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig
 
   See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
 
@@ -148,8 +149,8 @@ Process](../dev-proc/standard-release-process.md).
 [USB bootable DTS v1.0.0 image][USB_DTS_v1.0.0]{ .md-button }
 [sha256][USB_DTS_sha_v1.0.0]{ .md-button }
 
-[USB_DTS_v1.0.0]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz)
-[USB_DTS_sha_v1.0.0]: (https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz.sha256)
+[USB_DTS_v1.0.0]: https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz
+[USB_DTS_sha_v1.0.0]: https://3mdeb.com/open-source-firmware/DTS/v1.0.0/dts-base-image-ce-v1.0.0.wic.gz.sha256
 
   ```bash
   # assuming all files have been downloaded to the same directory without
