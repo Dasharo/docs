@@ -24,4 +24,4 @@ Fan profiles are defined as follows:
 | 75               | 60            |
 | 100              | 100           |
 
-> Values inbetween curve points are interpolated linearly.
+> Values in-between curve points are interpolated linearly.
