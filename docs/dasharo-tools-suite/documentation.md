@@ -47,7 +47,8 @@ platform:
 
 * Dasharo device with DTS functionality integrated,
 * wired network connection,
-* [Secure Boot disabled](#disabling-secure-boot).
+* [Secure Boot disabled](#disabling-secure-boot),
+* disabled BIOS lock feature (if device is already flashed with Dasharo).
 
 #### Launching DTS
 
@@ -71,6 +72,7 @@ platform:
 * USB stick (at least 2GB),
 * wired network connection,
 * [Secure Boot disabled](#disabling-secure-boot),
+* disabled BIOS lock feature (if device is already flashed with Dasharo),
 * latest image from [releases](./releases.md) section.
 
 #### Launching DTS
