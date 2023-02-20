@@ -14,8 +14,7 @@ that it boots on the following platforms:
 * NovaCustom NV4x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161)),
 * NovaCustom NS5x/7x ([test
-  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)),
-* Protectli FW6/VP46xx.
+  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)).
 
 <span style="color:red">
 Please do not use DTS v1.1.0 to deploy Dasharo on MSI PRO Z690-A (WIFI) DDR5;
