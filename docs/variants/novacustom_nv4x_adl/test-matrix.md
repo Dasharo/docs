@@ -12,7 +12,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx      |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx, ECR25.001, ECR26.001, ECR27.001, ECR28.001 |
 | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot keys][CBK]                           | CBK           | All                                  |

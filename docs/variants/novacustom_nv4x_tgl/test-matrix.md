@@ -14,7 +14,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx      |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx, ECR25.001, ECR26.001, ECR27.001, ECR28.001 |
 | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
@@ -46,7 +46,7 @@ subjected from before the release of the new binary.
 | 33.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 | 34.  | [NVIDIA Graphics support][NVI]                    | NVI           | All                                  |
 | 35.  | [Fedora support][FED]                             | FED           | All                                  |
-| 36.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001 and SUSP006.001  |
+| 36.  | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001 |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -122,7 +122,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]              | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx      |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR] | ECR     | Without ECR021.xxx - ECR024.xxx, ECR25.001, ECR26.001, ECR27.001, ECR28.001 |
 | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
@@ -153,7 +153,7 @@ subjected from before the release of the new binary.
 | 32.  | [Custom Boot Order][CBO]                          | CBO           | CBO001.002                           |
 | 33.  | [QubesOS support][QBS]                            | QBS           | All                                  |
 | 34.  | [Fedora support][FED]                             | FED           | All                                  |
-| 35.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001 and SUSP006.001  |
+| 35.  | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001 |
 
 ### Module: Dasharo security
 
