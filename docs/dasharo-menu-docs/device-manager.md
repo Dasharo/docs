@@ -196,5 +196,3 @@ driver used and link status. Example view with MAC address blurred:
 ![](/images/menus/net_dev_list2.jpeg){ class="center" }
 
 ![](/images/menus/net_dev_list3.jpeg){ class="center" }
-
-![](/images/menus/net_dev_list4.jpeg){ class="center" }
