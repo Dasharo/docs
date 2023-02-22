@@ -1,7 +1,9 @@
 # NovaCustom NS5x/7x RGB keyboard
 
 The NS5x/7x laptop features an RGB backlight keyboard. Dasharo implements full
-driverless backlight control using only the hotkeys on the keyboard.
+driverless backlight control using only the hotkeys on the keyboard. The
+keyboard backlight configuration set in the operating system is saved when the
+system is shut down and restored just before next system boot.
 
 ## Usage
 

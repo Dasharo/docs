@@ -51,6 +51,10 @@ the DUT reset, it is seen from the OS.
     [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+1. Proceed with the
+   [Secure Boot Configuration](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+   to enable the `Attempt Secure Boot` option in the
+   `Secure Boot Configuration` menu.
 
 **Test steps**
 
@@ -101,6 +105,10 @@ the DUT reset, it is seen from the OS.
    [Generic test setup: OS installer](../../dasharo-compatibility/generic-test-setup/#os-installer).
 1. Proceed with the
    [Generic test setup: OS installation](../../dasharo-compatibility/generic-test-setup/#os-installation).
+1. Proceed with the
+   [Secure Boot Configuration](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+   to enable the `Attempt Secure Boot` option in the
+   `Secure Boot Configuration` menu.
 
 **Test steps**
 
