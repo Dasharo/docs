@@ -11,13 +11,15 @@ submenus to appear:
 
 This menu offers security-sensitive options like:
 
-- `BIOS boot medium lock` - enabled/disables flash protection on the vboot
+- `BIOS boot medium lock` - enables/disables flash protection on the vboot
   recovery firmware partition. Disable it if you need access to whole flash
   with flashrom.
 - `Enable SMM BIOS write protection` - when enabled, allows only SMM code (the
   privileged code installed by the firmware in the system memory) to write to
   BIOS flash. Recommended to be enabled if [Firmware setup password](overview.md#user-password-management)
   is set. Disable the protection if you need access to flash with flashrom.
+- `Boot menu enabled` - enables/disables presentation of one-time boot menu,
+  during the boot stage. 
 
 ## Networking Options
 
