@@ -1,3 +1,8 @@
+---
+template: overrides/home.html
+title: Dasharo
+---
+
 # <img src="images/logo/logo-bar.svg" width="1000" height="500">
 
 # About

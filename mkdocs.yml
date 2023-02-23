@@ -4,7 +4,7 @@ site_url: https://docs.dasharo.com/
 repo_url: https://github.com/dasharo/docs
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: material
   favicon: images/favicon.png
   logo: images/dasharo-logo.png
   features:

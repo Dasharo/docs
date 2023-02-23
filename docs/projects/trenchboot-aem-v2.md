@@ -1,5 +1,5 @@
 ---
-template: giscus.html
+template: overrides/giscus.html
 ---
 
 # Trenchboot as Anti Evil Maid
