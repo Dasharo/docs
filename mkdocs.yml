@@ -175,6 +175,7 @@ nav:
           - 'Recovery': variants/supermicro_x11_lga1151_series/recovery.md
           - 'FAQ': variants/supermicro_x11_lga1151_series/faq.md
       - 'PC Engines':
+          - 'Overview': variants/pc_engines/overview.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
