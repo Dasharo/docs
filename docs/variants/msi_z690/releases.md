@@ -14,6 +14,52 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
+## v1.1.1 - 2023-02-23
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+
+### Added
+
+- [Early boot DMA protection menu option](https://github.com/Dasharo/dasharo-issues/issues/275)
+- ACPI PCI interrupt routing for CPU PCIe Root Ports
+- OC Watchdog ACPI device as in MSI firmware
+
+### Changed
+
+- Updated SMMSTORE driver to upstream version in UEFI Payload
+- [Improved visual comfort in the boot manager](https://github.com/Dasharo/dasharo-issues/issues/286)
+
+### Fixed
+
+- [MSI PRO Z690-A WIFI DDR4 doesn't initialize IGP on certain Processors models](https://github.com/Dasharo/dasharo-issues/issues/274)
+- [MSI PRO Z690-A WIFI DDR4 with two Video Cards (2x Radeon 5600XT) has issues related to MMIO resource allocation](https://github.com/Dasharo/dasharo-issues/issues/245)
+- [Suspend doesn't work in Qubes OS with v1.1.0](https://github.com/Dasharo/dasharo-issues/issues/271)
+- [Intel XTU on Windows reports "The platform does not support overclocking" on the MSI PRO Z690-A WIFI DDR4 with a K-series Processor](https://github.com/Dasharo/dasharo-issues/issues/159)
+- [SATA ports malfunction or Hot-Plug function disabled](https://github.com/Dasharo/dasharo-issues/issues/315)
+- Platform sometimes automatically powers on after power off
+- GPIO controller ACPI device yellow bang in Windows device manager
+- Resource conflicts with chipset internal P2SB PCI device being incorrectly
+  defined and initialized in coreboot
+- Reset button hanging the platform for up to 2 minutes due to watchdog bug
+
+### Binaries
+
+[msi_ms7d25_v1.1.1_ddr4.rom][msi_ms7d25_v1.1.1_ddr4.rom_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.1_ddr4.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.1_ddr4.rom_sig]{.md-button}
+
+[msi_ms7d25_v1.1.1_ddr5.rom][msi_ms7d25_v1.1.1_ddr5.rom_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.1_ddr5.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.1_ddr5.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 912a262b7bf revision aa4701cd](https://github.com/Dasharo/coreboot/tree/aa4701cd)
+- [Dasharo EDKII fork based on dd7523b5b1 revision a913e338](https://github.com/Dasharo/edk2/tree/a913e338)
+
 ## v1.1.0 - 2022-11-22
 
 ### Added
@@ -346,6 +392,12 @@ gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 - [edk2 based on 4d2846ba revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/aKgTJjYEA
+[msi_ms7d25_v1.1.1_ddr4.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom
+[msi_ms7d25_v1.1.1_ddr4.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom.sha256
+[msi_ms7d25_v1.1.1_ddr4.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom.sha256.sig
+[msi_ms7d25_v1.1.1_ddr5.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr5.rom
+[msi_ms7d25_v1.1.1_ddr5.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr5.rom.sha256
+[msi_ms7d25_v1.1.1_ddr5.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr5.rom.sha256.sig
 [msi_ms7d25_v1.1.0_ddr4.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom
 [msi_ms7d25_v1.1.0_ddr4.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom.sha256
 [msi_ms7d25_v1.1.0_ddr4.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.0/msi_ms7d25_v1.1.0_ddr4.rom.sha256.sig
