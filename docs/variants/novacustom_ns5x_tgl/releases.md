@@ -14,6 +14,55 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
 
+## v1.4.0 - 2023-02-24
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
+
+### Added
+
+- [The same keyboard illumination setting is restored after suspend or poweroff](https://github.com/Dasharo/dasharo-issues/issues/339)
+- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/fan-profiles/)
+- [Fn lock hotkey feature](https://docs.dasharo.com/unified/novacustom/fn-lock-hotkey/)
+
+### Changed
+
+- [Keys must be provisioned prior enabling Secure Boot](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
+
+### Known issues
+
+- [Low level interfering crackling/popping of the speakers while playing no sound (Dasharo issue #224)](https://github.com/Dasharo/dasharo-issues/issues/224)
+- [Waking up from sleep on Ubuntu 22.04 is not 100% reliable (Dasharo issue #205)](https://github.com/Dasharo/dasharo-issues/issues/205)
+- [The power LED is not always blinking while in sleep mode on Windows 11 (Dasharo issue #182)](https://github.com/Dasharo/dasharo-issues/issues/182)
+- [Keyboard backlight turns on after resuming from sleep mode  (Dasharo issue #332)](https://github.com/Dasharo/dasharo-issues/issues/332)
+- [The screen brightness level gets stuck when key are held or pressed too fast (Dasharo issue #341)](https://github.com/Dasharo/dasharo-issues/issues/341)
+- [Connecting and immediately disconnecting the charger, sets the battery status in OS to 'charging' for about 2 minutes (Dasharo issue #350)](https://github.com/Dasharo/dasharo-issues/issues/350)
+
+### Binaries
+
+[novacustom_ns5x_tgl_ec_v1.4.0.rom][novacustom_ns5x_tgl_ec_v1.4.0.rom_file]{.md-button}
+[sha256][novacustom_ns5x_tgl_ec_v1.4.0.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_tgl_ec_v1.4.0.rom_sig]{.md-button}
+
+[novacustom_ns5x_tgl_v1.4.0.rom][novacustom_ns5x_tgl_v1.4.0.rom_file]{.md-button}
+[sha256][novacustom_ns5x_tgl_v1.4.0.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_tgl_v1.4.0.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/433461)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 1a8eb6c02103727431ac1ea23f4f507e49f3cde7 revision 636f432a](https://github.com/Dasharo/coreboot/tree/636f432a)
+- [EDK2 based on e0334c228ce4ba51f47ff79a118f214031d4650f revision 2c61576a](https://github.com/Dasharo/edk2/tree/2c61576a)
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/T61MyO2sP
+[novacustom_ns5x_tgl_ec_v1.4.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_ec_v1.4.0.rom
+[novacustom_ns5x_tgl_ec_v1.4.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_ec_v1.4.0.rom.sha256
+[novacustom_ns5x_tgl_ec_v1.4.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_ec_v1.4.0.rom.sha256.sig
+[novacustom_ns5x_tgl_v1.4.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0.rom
+[novacustom_ns5x_tgl_v1.4.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0.rom.sha256
+[novacustom_ns5x_tgl_v1.4.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0.rom.sha256.sig
+
 ## v1.3.0 - 2022-09-01
 
 ### EC firmware transition
