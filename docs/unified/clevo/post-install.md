@@ -72,6 +72,11 @@ install additional Nvidia drivers.
     sudo reboot
     ```
 
+1. (Optional) For power saving while the card is not in use, enable On-Demand
+   mode in NVIDIA Control Panel:
+
+![](/images/nv4x_nvidia_panel.png){ class="center" }
+
 ### Suspend fix for SATA disks
 
 Only affects laptops with M.2 SATA disks experiencing sleep issues (the power
