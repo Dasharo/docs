@@ -35,7 +35,7 @@ steps below:
     	docker run --rm -it \
     	   -v $PWD:/home/coreboot/coreboot \
     	   -w /home/coreboot/coreboot \
-    	   coreboot/coreboot-sdk:2022-12-18_3b32af950d /bin/bash
+    	   coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
      ```
 
      To understand difference between versions please read [FAQ](faq.md).
