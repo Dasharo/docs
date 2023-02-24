@@ -37,8 +37,8 @@ functionality to mount a floppy image containing iPXE.
 iPXE will allow to boot DTS over network without much effort. The image file
 can be downloaded from [3mdeb FTP
 server](https://3mdeb.com/open-source-firmware/boot/ipxe.img). If you wish to
-build the image, please follow instructions in [Building iPXE floppy
-image](#building-ipxe-floppy-image) section.
+build the image from source, please follow instructions in [Building iPXE
+floppy image](#building-ipxe-floppy-image) section.
 
 To boot from the iPXE image, please do the following:
 
