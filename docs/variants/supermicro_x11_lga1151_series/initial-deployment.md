@@ -80,9 +80,16 @@ iPXE Shell
 Please follow [DTS backup
 guide](../../../dasharo-tools-suite/documentation/#bios-backup).
 
-## Installing Dasharo with DTS
+## Prepare Dasharo image with DTS
 
-TBD
+DTS does not provide automatic blobs transmission for Supermicro yet ([GitHub
+issue](TBD)). Unfortunately some blobs are required to correctly boot platform:
+
+* Flash descriptor
+* ME
+
+Since Dasharo image needs binary blobs from vendor BIOS we will use tools
+available already in DTS to create final image.
 
 ### Building iPXE floppy image
 
@@ -95,7 +102,7 @@ will need a Linux OS with docker installed. Then follow steps below:
    and EFI image support and provide custom build ID command to ensure build
    reproducibility:
 
-    * Clone iPXE repository:
+    - Clone iPXE repository:
 
       ```bash
       git clone https://github.com/ipxe/ipxe.git
@@ -112,13 +119,13 @@ will need a Linux OS with docker installed. Then follow steps below:
       **NOTE**: As mentioned above this is sample revision since iPXE code is
       not tagged.
 
-    * Get Dasharo menu for network booting.
+    - Get Dasharo menu for network booting.
 
       ```bash
       wget https://raw.githubusercontent.com/Dasharo/dasharo-blobs/46cc16f6d8f0ed9d057fdd20f15bb89ce5b8d212/dasharo/dasharo.ipxe
       ```
 
-    * Modify iPXE build configuration through `general.h`
+    - Modify iPXE build configuration through `general.h`
 
       ```bash
       sed "s|//#define\s*IMAGE_SCRIPT.*|#define IMAGE_SCRIPT|" src/config/general.h > src/config/general.h.tmp
@@ -129,20 +136,20 @@ will need a Linux OS with docker installed. Then follow steps below:
       mv src/config/general.h.tmp src/config/general.h
       ```
 
-    * Use coreboot-sdk container to build iPXE binry:
+    - Use coreboot-sdk container to build iPXE binry:
 
       ```bash
       docker run --rm -it -v $PWD:/home/coreboot/ipxe -w /home/coreboot/ipxe \
                coreboot/coreboot-sdk:2022-12-18_3b32af950d /bin/bash
       ```
 
-    * Inside container: make sure you use correct cross-toolchain:
+    - Inside container: make sure you use correct cross-toolchain:
 
       ```bash
       export CROSS_COMPILE="x86_64-elf-"
       ```
 
-    * Inside container: start compailation:
+    - Inside container: start compailation:
 
       ```bash
       make -C src bin-x86_64-efi-sb/ipxe.efi EMBED=$PWD/dasharo.ipxe BUILD_ID_CMD="echo 0x1234567890" \

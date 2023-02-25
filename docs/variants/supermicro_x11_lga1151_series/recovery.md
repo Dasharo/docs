@@ -4,14 +4,19 @@
 
 ---
 
-## BIOS Update through BMC
+## BIOS Update (aka recovery) through BMC
 
 Following instruction was tested on:
 
-* X11SSH-TF v1.01
+* X11SSH-TF v1.01 with following BMC firmware:
+    - Firmware Revision: 01.60
+    - Firmware Build Time: 02/10/2020
+    - Redfish Version: 1.0.1
+    - CPLD Version: 02.b1.01
 
 For information how to identify your mainboard model pelase check
-[faq](../faq/#how-to-identify-my-mainboard-model).
+[faq](../faq/#how-to-identify-my-mainboard-model). BMC firmware can be easily
+verifed on System tab of BMC web interface.
 
 Following documentation describes the process of recovering hardware from brick
 state with through BMC BIOS Update feature. This feature can be used also for
@@ -41,10 +46,29 @@ that you can download
 Unfortunately most efficient way to interact with proprietary BMC is to use
 Supermicro proprietary closed source tools:
 
-* [Supermicro Update
-  Manager](https://www.supermicro.com/en/solutions/management-software/supermicro-update-manager)
-   please download and unpack archive.
-* [Backup](../../../dasharo-tools-suite/documentation/#bios-backup) or
-  [Supermicro BIOS
+* ME in Normal Mode (JPME2 in position 1-2). For details please check [hardware
+  preparation](../initial-deployment#hardware-preparation).
+* If you don't have access to hardware and ME is in Manufacturing Mode there is
+  a way to workaround recovery problem, but requires BMC firmware downgrade to
+  specific version. Please reach [community for support](/#community) in such
+  case.
+
+### Recover/update BIOS
+
+Please note that for recovery you can use:
+
+* [Vendor BIOS backup](../initial-deployment#vendor-bios-backup)
+* [Supermicro BIOS
   update](https://www.supermicro.com/en/support/resources/downloadcenter/firmware/MBD-X11SSH-TF/BIOS)
-   please download and unpack archive.
+  please make sure binary is correct for your mainboard model. Download and
+  unpack archive.
+
+<center>
+![](../../images/x11_bios_update_menu.png)
+</center>
+
+#### Invalid flash descriptor
+
+<center>
+![](../../images/x11_load_flash_descriptor_failed.png)
+</center>
