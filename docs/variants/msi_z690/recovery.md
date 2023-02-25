@@ -35,7 +35,7 @@ unzip 7D25v1A.zip
 > The command line will be different, depending on the programmer you use
 
 ```bash
-flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v1A/E7D25IMS.130
+flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v1A/E7D25IMS.1A0
 ```
 
 * First boot after the recovery process is significantly longer
