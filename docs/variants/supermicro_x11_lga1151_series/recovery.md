@@ -57,17 +57,49 @@ Supermicro proprietary closed source tools:
 
 Please note that for recovery you can use:
 
-* [Vendor BIOS backup](../initial-deployment#vendor-bios-backup)
+* `rom.bin` from [vendor BIOS backup](../initial-deployment#vendor-bios-backup)
 * [Supermicro BIOS
   update](https://www.supermicro.com/en/support/resources/downloadcenter/firmware/MBD-X11SSH-TF/BIOS)
   please make sure binary is correct for your mainboard model. Download and
   unpack archive.
 
-<center>
-![](../../images/x11_bios_update_menu.png)
-</center>
+1. Please use following steps to point BMC to BIOS binary:
+
+    <center>
+    ![](../../images/x11_bios_update_menu.png)
+    </center>
+
+1. BMC will try to load binary:
+
+    <center>
+    ![](../../images/x11_bios_update_in_progress.png)
+    </center>
+
+1. Eventually should display following page which show content of loaded image.
+   Typically we don't want to preserve ME and/or NVRAM when system was bricked.
+   Depending on your situation you may also want to recover SMBIOS data from
+   backup or vendor binary.
+
+    <center>
+    ![](../../images/x11_bios_update_details.png)
+    </center>
+
+1. Next BMC will perform update.
+
+    <center>
+    ![](../../images/x11_bios_update_progress.png)
+    </center>
+
+1. And ask for reboot.
+
+    <center>
+    ![](../../images/x11_bios_update_completed.png)
+    </center>
 
 #### Invalid flash descriptor
+
+If your Dasharo firmware binary is broken or you forgot to include flash
+descriptor BMC will throw following error:
 
 <center>
 ![](../../images/x11_load_flash_descriptor_failed.png)
