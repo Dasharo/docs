@@ -13,6 +13,11 @@ Following instruction was tested on:
     - Firmware Build Time: 02/10/2020
     - Redfish Version: 1.0.1
     - CPLD Version: 02.b1.01
+* X11SSH-TF v1.01 with following BMC firmware:
+    - Firmware Revision: 01.64
+    - Firmware Build Time: 10/26/2022
+    - Redfish Version: 1.0.1
+    - CPLD Version: 02.b1.01
 
 For information how to identify your mainboard model pelase check
 [faq](../faq/#how-to-identify-my-mainboard-model). BMC firmware can be easily
@@ -104,3 +109,19 @@ descriptor BMC will throw following error:
 <center>
 ![](../../images/x11_load_flash_descriptor_failed.png)
 </center>
+
+#### BMC can't reset ME to operational state
+
+Sometimes BMC soft locks up and can't reset ME operation state when using BMC
+GUI to update BIOS. An pop-up windows will appear with a message:
+
+<center>
+![](../../images/x11_me_reset_fail.png)
+</center>
+
+The BIOS update process will be aborted. Software methods to unlock from this
+state are not known. Recovering from this state requires power cord and CMOS
+battery removal to reset the entire server. Keep the CMOS battery removed for
+30 seconds, then plug it back and connect power cord afterwards. After that,
+retry the BIOS Update process from BMC GUI using BIOS binary (whether coreboot,
+Dasharo or official Supermicro firmware).
