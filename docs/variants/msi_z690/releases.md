@@ -43,6 +43,11 @@ Test results for this release can be found
   defined and initialized in coreboot
 - Reset button hanging the platform for up to 2 minutes due to watchdog bug
 
+### Known issues
+
+- [MSI FLASHBIOS feature is not working](https://github.com/Dasharo/dasharo-issues/issues/131)
+- [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
+
 ### Binaries
 
 [msi_ms7d25_v1.1.1_ddr4.rom][msi_ms7d25_v1.1.1_ddr4.rom_file]{.md-button}
@@ -129,6 +134,7 @@ See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
 - [MSI FLASHBIOS feature is not working](https://github.com/Dasharo/dasharo-issues/issues/131)
 - [MMIO resource allocation issues with two Video Cards](https://github.com/Dasharo/dasharo-issues/issues/245)
 - [Slow video performance with Radeon 5600XT](https://github.com/Dasharo/dasharo-issues/issues/181)
+- [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
 
 ### Binaries
 
