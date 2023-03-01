@@ -12,6 +12,46 @@ sudo dmidecode -t bios | grep Version
 
 Alternatively, it can be checked in the `BIOS Setup Menu`.
 
+## Prerequisites
+
+Before proceeding, ensure that the firmware protections are disabled in
+[Dasharo Security Options](../..//dasharo-menu-docs/dasharo-system-features.md).
+Both `BIOS boot medium lock` and `Enable SMM BIOS write protection` should be
+unchecked. [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration)
+must be disabled as well (uncheck `Attempt Secure Boot` if
+`Current Secure Boot State` does not say `Disabled`). To apply changes you will
+need to reboot.
+
+You can use [Dasharo Tools Suite (DTS)](../../dasharo-tools-suite/releases.md)
+or your own Linux distribution for firmware update. You will need a correct
+flashrom application for that purpose. Linux distributions may not yet have the
+support for the newesy chipsets in flashrom installed via package manager.
+Procedure for building the right flashrom is described in Build flashrom
+section in the [Initial deployment documentation](initial-deployment.md#initial-deployment-manually).
+DTS is already equipped with a correct flashrom build. You will need to
+download a firmware update binary. When you boot DTS enter the shell from the
+
+menu and invoke following commands for v1.1.1 for example (you can find the
+links in the [Releases section](releases.md)):
+
+```bash
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom
+```
+
+Or for DDR5 platform:
+
+```bash
+wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr5.rom
+```
+
+They will also work in any Linux terminal with wget installed. Then proceed
+with commands described below.
+
+## Migrating SMBIOS unique data
+
+Optionally before flashing you may migrate your serial number and UUID as
+described in [Initial deployment](initial-deployment.md#migrating-smbios-unique-data).
+
 ## Version v1.1.0 or newer
 
 > Version v1.1.0 had to change the flashmap layout and requires usage of the
