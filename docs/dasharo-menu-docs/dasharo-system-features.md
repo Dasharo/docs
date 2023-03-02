@@ -21,10 +21,10 @@ This menu offers security-sensitive options like:
 
 - `Early boot DMA Protection` - Enables IOMMU DMA protection early during POST.
   DMA protection is a feature that utilizes the IOMMU early in the boot process
-  to prevent rogue DMA-capable devices such as PCIe add-in cards and USB 3
-  devices from access to memory. This prevents a class of DMA attacks that allow
-  for exfiltration of secrets and installation of malware early in the boot
-  process.
+  to prevent rogue DMA-capable devices such as PCIe add-in cards,
+  USB4/thunderbolt devices from access to memory. This prevents a class of DMA
+  attacks that allow for exfiltration of secrets and installation of malware
+  early in the boot process.
 
 - `Keep IOMMU enabled when transfer control to OS` - (only available when
   `Early boot DMA Protection` is selected) Keeps IOMMU DMA protection enabled
