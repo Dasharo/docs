@@ -27,11 +27,19 @@ Please use one of the following environments to perform Dasharo update:
 * [Dasharo Tools Suite (DTS)](#dasharo-tools-suite)
 * [Linux distribution of your choice](#linux-distribution-of-your-choice)
 
+We recommend using the DTS.
+
 ### Dasharo Tools Suite
 
 DTS is already equipped with a correct flashrom build. Get
 [Dasharo Tools Suite (DTS)](../../dasharo-tools-suite/releases.md)
-ISO and burn it on a USB stick. You will need to download a firmware update
+ISO and burn it on a USB stick.
+
+Since DTS v1.1.2 you may simply choose the firmware update option from the menu
+as described [here](TBD) and DTS will carry out all necessary operations
+(RECOMMENDED).
+
+If you would like to do it manually you will need to download a firmware update
 binary. When you boot DTS from USB enter the shell from the menu and invoke
 following commands for v1.1.1 for example (you can find the links in the
 [Releases section](releases.md)):
@@ -47,7 +55,7 @@ wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25
 ```
 
 They will also work in any Linux terminal with wget installed. Then proceed
-with commands described in subsequent sections after .
+with commands described in subsequent sections after.
 
 ### Linux distribution of your choice
 
