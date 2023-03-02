@@ -179,7 +179,7 @@ number may differ):
 
 ```txt
 Warning: BIOS region SMM protection is enabled!
-Warning: Setting Bios COntrol at 0xdc from 0xaa to 0x89 failed.
+Warning: Setting Bios Control at 0xdc from 0xaa to 0x89 failed.
 New value is 0xaa.
 ```
 
