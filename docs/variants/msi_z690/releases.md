@@ -30,7 +30,7 @@ To get more details about the changes one may read the
 
 ### Changed
 
-- Updated SMMSTORE driver to upstream version in UEFI Payload
+- [Updated SMMSTORE driver to upstream version in UEFI Payload](https://github.com/Dasharo/dasharo-issues/issues/303)
 - [Improved visual comfort in the boot manager](https://github.com/Dasharo/dasharo-issues/issues/286)
 
 ### Fixed
