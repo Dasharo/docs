@@ -398,13 +398,6 @@ Below we provide an example of updating Dasharo firmware from version v1.0.0 to
 v1.1.1 on MSI PRO Z690-A DDR4.
 
 ```bash
-    ____             __                        ______            __        _____       _ __
-   / __ \____ ______/ /_  ____ __________     /_  __/___  ____  / /____   / ___/__  __(_) /____
-  / / / / __ `/ ___/ __ \/ __ `/ ___/ __ \     / / / __ \/ __ \/ / ___/   \__ \/ / / / / __/ _ \
- / /_/ / /_/ (__  ) / / / /_/ / /  / /_/ /    / / / /_/ / /_/ / (__  )   ___/ / /_/ / / /_/  __/
-/_____/\__,_/____/_/ /_/\__,_/_/   \____/    /_/  \____/\____/_/____/   /____/\__,_/_/\__/\___/
-
-
   DTS version v1.1.2-dev
 
   1) Dasharo HCL report - dump hardware information from this device
@@ -434,7 +427,7 @@ Does it match your actual specification? (Y|n)y
 
 Following firmware will be used to install Dasharo
 Dasharo BIOS firmware:
-  - link: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom
+  - link: https://3mdeb.com/(...)/msi_ms7d25_v1.1.1_ddr4.rom
   - hash: 3b438422338cf4c13abdb25823a9b2a2ad6e82fabbe0d9ed41a16a6eae1f15ff
 
 You can learn more about this release on: https://docs.dasharo.com/
@@ -446,7 +439,8 @@ Downloading Dasharo firmware update...
 Checking sha256sum...
 /tmp/biosupdate.rom: OK
 Updating Dasharo firmware...
-This will take around 3 minutes. Please be patient and do not reset your computer, or touch keyboard!
+This will take around 3 minutes. Please be patient and do not reset your
+computer, or touch keyboard!
 Successfully updated Dasharo firmware
 Syncing disks... Done.
 The computer will reboot automatically in 5 seconds
