@@ -47,6 +47,9 @@ devices.
     1. Disconnect the primary battery. (1)
     1. Disconnect the CMOS battery. (2)
     1. Attach a WSON-8 probe to the SPI flash chip. (3)
+
+        > For TGL devices use SOIC clip instead of WSON
+
     1. Backup the current firmware, in case you want to be able to restore it
         at some point:
 
