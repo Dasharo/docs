@@ -19,6 +19,9 @@ Test results for this platform can be found
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
+To get more details about the changes one may read the
+[Dasharo v1.1.1 release blog post](https://blog.3mdeb.com/2023/2023-03-02-msi_ms7d25_v1.1.1_release/)
+
 ### Added
 
 - [Early boot DMA protection menu option](https://github.com/Dasharo/dasharo-issues/issues/275)
