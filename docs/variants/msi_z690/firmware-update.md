@@ -25,7 +25,7 @@ need to reboot.
 You can use [Dasharo Tools Suite (DTS)](../../dasharo-tools-suite/releases.md)
 or your own Linux distribution for firmware update. You will need a correct
 flashrom application for that purpose. Linux distributions may not yet have the
-support for the newesy chipsets in flashrom installed via package manager.
+support for the newest chipsets in flashrom installed via package manager.
 Procedure for building the right flashrom is described in Build flashrom
 section in the [Initial deployment documentation](initial-deployment.md#initial-deployment-manually).
 DTS is already equipped with a correct flashrom build. You will need to
@@ -47,9 +47,9 @@ wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25
 They will also work in any Linux terminal with wget installed. Then proceed
 with commands described below.
 
-## Migrating SMBIOS unique data
+## Migrating SMBIOS unique data (optional)
 
-Optionally before flashing you may migrate your serial number and UUID as
+Before flashing you may migrate your serial number and UUID as
 described in [Initial deployment](initial-deployment.md#migrating-smbios-unique-data).
 
 ## Version v1.1.0 or newer
