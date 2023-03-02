@@ -36,8 +36,8 @@ DTS is already equipped with a correct flashrom build. Get
 ISO and burn it on a USB stick.
 
 Since DTS v1.1.2 you may simply choose the firmware update option from the menu
-as described [here](TBD) and DTS will carry out all necessary operations
-(RECOMMENDED).
+as described in [DTS Firmware Update section](../../dasharo-tools-suite/documentation.md#firmware-update)
+and DTS will carry out all necessary operations (RECOMMENDED).
 
 If you would like to do it manually you will need to download a firmware update
 binary. When you boot DTS from USB enter the shell from the menu and invoke
