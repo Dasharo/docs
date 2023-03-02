@@ -22,15 +22,19 @@ must be disabled as well (uncheck `Attempt Secure Boot` if
 `Current Secure Boot State` does not say `Disabled`). To apply changes you will
 need to reboot.
 
-You can use [Dasharo Tools Suite (DTS)](../../dasharo-tools-suite/releases.md)
-or Linux distribution of your choice for firmware update.
+Please use one of the following environments to perform Dasharo update:
+
+* [Dasharo Tools Suite (DTS)](#dasharo-tools-suite)
+* [Linux distribution of your choice](#linux-distribution-of-your-choice)
 
 ### Dasharo Tools Suite
 
-DTS is already equipped with a correct flashrom build. You will need to
-download a firmware update binary. When you boot DTS enter the shell from the
-menu and invoke following commands for v1.1.1 for example (you can find the
-links in the [Releases section](releases.md)):
+DTS is already equipped with a correct flashrom build. Get
+[Dasharo Tools Suite (DTS)](../../dasharo-tools-suite/releases.md)
+ISO and burn it on a USB stick. You will need to download a firmware update
+binary. When you boot DTS from USB enter the shell from the menu and invoke
+following commands for v1.1.1 for example (you can find the links in the
+[Releases section](releases.md)):
 
 ```bash
 wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom
