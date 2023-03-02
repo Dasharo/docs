@@ -27,6 +27,19 @@ Following sections explain how to deal with most common `flashrom` problem.
   sudo make install
   ```
 
+### Perform dry run to detect the problems early
+
+Most of the problems can be detected early and avoided without attempting to
+flash the firmware. You may check for most of the errors described here by
+doing a dry run (not passing any firmware binary):
+
+```bash
+sudo flashrom -p internal
+```
+
+In below sections there are example errors that you may find in the output of
+above command.
+
 ### `Could not get I/O privileges (Operation not permitted)`
 
 If you see a flashrom error like this:
@@ -128,6 +141,51 @@ documentation for supported hardware please go to [Hardware Compatibility
 List](../variants/hardware-compatibility-list.md).
 
 Please note we consider further mitigations in [Dasharo Roadmap](../ecosystem/roadmap.md).
+
+### `WARNING: No chipset found`
+
+If you see the following in the flashrom output:
+
+```txt
+WARNING: No chipset found. Flash detection will most likely fail.
+No EEPROM/flash device found.
+Note: flashrom can never write if the flash chip isn't found automatically.
+```
+
+that means your flashrom version is incorrect. Follow the procedure for
+building the right flashrom is described in `Build flashrom` section in the
+[Initial deployment documentation](initial-deployment.md#initial-deployment-manually).
+
+### Chip write protection enabled
+
+If you see anything like this in the flashrom output (or similar, the hex
+number may differ):
+
+```txt
+PR0: Warning: 0x001c0000-0x01ffffff is read-only.
+```
+
+That means you did not disable `BIOS boot medium lock` correctly. GO back to
+firmware setup and disable the option as described in
+[Prerequisites](#prerequisites). Flashrom update procedure containing
+`--ifd -i bios` parameters will fails if you do not disable the protection.
+The procedure using the `--fmap -i RW_SECTION_A -i RW_SECTION_B` parameters
+is not affected.
+
+### `Warning: BIOS region SMM protection is enabled!`
+
+If you see anything like this in the flashrom output (or similar, the hex
+number may differ):
+
+```txt
+Warning: BIOS region SMM protection is enabled!
+Warning: Setting Bios COntrol at 0xdc from 0xaa to 0x89 failed.
+New value is 0xaa.
+```
+
+Any attempt to flash the firmware will fail. That means you did not disable
+`Enable SMM BIOS write protection` option correctly. Go back to firmware setup
+and disable the option as described in [Prerequisites](#prerequisites).
 
 ## How to use flashrom to backup vendor BIOS?
 

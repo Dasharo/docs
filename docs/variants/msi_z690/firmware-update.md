@@ -165,53 +165,5 @@ flashrom -p internal -w [path] --ifd -i bios
 
 ## Troubleshooting
 
-### Chipset detection failure
-
-You may check if you fulfill all prerequisites by doing a dry run:
-
-```bash
-sudo flashrom -p internal
-```
-
-If you see the following in the output:
-
-```txt
-WARNING: No chipset found. Flash detection will most likely fail.
-No EEPROM/flash device found.
-Note: flashrom can never write if the flash chip isn't found automatically.
-```
-
-that means your flashrom version is incorrect. Follow the procedure for
-building the right flashrom is described in `Build flashrom` section in the
-[Initial deployment documentation](initial-deployment.md#initial-deployment-manually).
-
-### Chip write protection enabled
-
-If you see anything like this in the output (or similar, the hex number may
-differ):
-
-```txt
-PR0: Warning: 0x001c0000-0x01ffffff is read-only.
-```
-
-That means you did not disable `BIOS boot medium lock` correctly. GO back to
-firmware setup and disable the option as described in
-[Prerequisites](#prerequisites). Flashrom update procedure containing
-`--ifd -i bios` parameters will fails if you do not disable the protection.
-The procedure using the `--fmap -i RW_SECTION_A -i RW_SECTION_B` parameters
-is not affected.
-
-### SMM BIOS write protection enabled
-
-If you see anything like this in the output (or similar, the hex number may
-differ):
-
-```txt
-Warning: BIOS region SMM protection is enabled!
-Warning: Setting Bios COntrol at 0xdc from 0xaa to 0x89 failed.
-New value is 0xaa.
-```
-
-Any attempt to flash the firmware will fail. That means you did not disable
-`Enable SMM BIOS write protection` option correctly. Go back to firmware setup
-and disable the option as described in [Prerequisites](#prerequisites).
+Possible errors are described in the
+[Generic deployment problems with flashrom](../../osf-trivia-list/deployment.md#flashrom)
