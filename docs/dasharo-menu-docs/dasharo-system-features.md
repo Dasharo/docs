@@ -30,6 +30,7 @@ This menu offers security-sensitive options like:
   `Early boot DMA Protection` is selected) Keeps IOMMU DMA protection enabled
   during ExitBootServices when control is passed to the OS. If unsure or see any
   problems with DMA/IOMMU during OS boot, keep it disabled.
+  NOTE: Windows may not boot if the option is enabled.
 
 ## Networking Options
 
