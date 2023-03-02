@@ -14,7 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit?usp=sharing).
 
-## v1.4.0 - 2023-02-28
+## v1.4.0 - 2023-03-02
 
 ### Added
 
@@ -48,11 +48,7 @@ Test results for this platform can be found
 [sha256][novacustom_ns5x_tgl_v1.4.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_tgl_v1.4.0.rom_sig]{.md-button}
 
-[novacustom_ns5x_tgl_v1.4.0_full.rom][novacustom_ns5x_tgl_v1.4.0_full.rom_file]{.md-button}
-[sha256][novacustom_ns5x_tgl_v1.4.0_full.rom_hash]{.md-button}
-[sha256.sig][novacustom_ns5x_tgl_v1.4.0_full.rom_sig]{.md-button}
-
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+See how to verify signatures on [this video](https://asciinema.org/a/518379)
 
 ### SBOM (Software Bill of Materials)
 
@@ -66,9 +62,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 [novacustom_ns5x_tgl_v1.4.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0.rom
 [novacustom_ns5x_tgl_v1.4.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0.rom.sha256
 [novacustom_ns5x_tgl_v1.4.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0.rom.sha256.sig
-[novacustom_ns5x_tgl_v1.4.0_full.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0_full.rom
-[novacustom_ns5x_tgl_v1.4.0_full.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0_full.rom.sha256
-[novacustom_ns5x_tgl_v1.4.0_full.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.4.0/novacustom_ns5x_tgl_v1.4.0_full.rom.sha256.sig
 
 ## v1.3.0 - 2022-09-01
 
