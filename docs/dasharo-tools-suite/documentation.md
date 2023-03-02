@@ -377,15 +377,86 @@ Please consider the following options depending on your situation:
 
 ### Firmware update
 
-Within DTS, you may use the `flashrom` and `fwupdmgr` utilities to update,
-downgrade, or reinstall your firmware.
+> Note: described below functionality is now in testing, available in v1.1.2-dev
+  that can be booted via [iPXE](#bootable-over-a-network).
 
-To update your firmware to the latest version, first choose option number 9 to
-drop to Shell and run:
+DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
+with flashed Dasharo and choose option number `5`.
+
+Next you will be asked two questions to confirm flashing. The first will be
+displayed with the detected information about the device you are using DTS on.
+The second will also provide the hash of Dasharo components which will then be
+used for flashing. You can compare them with the values listed in the supported
+hardware section on docs.dasharo.com. Both these questions can be accepted by
+typing `Y`.
+
+Procedure execution ends automatically on the reboot of the platform (unless it
+requires otherwise). After restarting the device, you can enjoy the updated
+version of Dasharo, which we provide for given hardware.
+
+Below we provide an example of updating Dasharo firmware from version v1.0.0 to
+v1.1.1 on MSI PRO Z690-A DDR4.
 
 ```bash
-fwupdmgr refresh
-fwupdmgr update
+    ____             __                        ______            __        _____       _ __
+   / __ \____ ______/ /_  ____ __________     /_  __/___  ____  / /____   / ___/__  __(_) /____
+  / / / / __ `/ ___/ __ \/ __ `/ ___/ __ \     / / / __ \/ __ \/ / ___/   \__ \/ / / / / __/ _ \
+ / /_/ / /_/ (__  ) / / / /_/ / /  / /_/ /    / / / /_/ / /_/ / (__  )   ___/ / /_/ / / /_/  __/
+/_____/\__,_/____/_/ /_/\__,_/_/   \____/    /_/  \____/\____/_/____/   /____/\__,_/_/\__/\___/
+
+
+  DTS version v1.1.2-dev
+
+  1) Dasharo HCL report - dump hardware information from this device
+  3) Restore firmware from Dasharo HCL report
+  4) Load SE keys
+  5) Update Dasharo firmware
+  9) Shell
+  10) Power off system
+  11) Reboot system
+
+Enter an option: 5
+
+Gathering flash chip and chipset information...
+Flash information: vendor="Programmer" name="Opaque flash chip"
+Flash size: 32M
+Checking for the latest Dasharo update available...
+Current Dasharo version: 1.0.0
+Latest available Dasharo version: 1.1.1
+
+Please verify detected hardware!
+
+Board vendor: Micro-Star International Co., Ltd.
+System model: MS-7D25
+Board model: PRO Z690-A WIFI DDR4(MS-7D25)
+
+Does it match your actual specification? (Y|n)y
+
+Following firmware will be used to install Dasharo
+Dasharo BIOS firmware:
+  - link: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom
+  - hash: 3b438422338cf4c13abdb25823a9b2a2ad6e82fabbe0d9ed41a16a6eae1f15ff
+
+You can learn more about this release on: https://docs.dasharo.com/
+
+Do you want to update Dasharo firmware on your hardware? (Y|n) y
+
+Downloading Dasharo firmware update...
+########################################################################### 100.0%
+Checking sha256sum...
+/tmp/biosupdate.rom: OK
+Updating Dasharo firmware...
+This will take around 3 minutes. Please be patient and do not reset your computer, or touch keyboard!
+Successfully updated Dasharo firmware
+Syncing disks... Done.
+The computer will reboot automatically in 5 seconds
+Rebooting in 5s:
+5...
+4...
+3...
+2...
+1...
+Rebooting
 ```
 
 ### EC transition
