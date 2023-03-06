@@ -9,7 +9,7 @@ Dasharo is an open-source firmware distribution focusing on
 [professional support](#dasharo-support-package),
 [transparent validation](#dasharo-transparent-validation),
 [superior documentation](../index.md)
-[privacy-respecting implementation](#dashro-privacy-respecting-implementation),
+[privacy-respecting implementation](#dasharo-privacy-respecting-implementation),
 [liberty for the owners](#dasharo-liberty-for-the-owners) and
 [trustworthiness for all](#dasharo-trustworthiness-for-all).
 
@@ -49,7 +49,7 @@ and other (not so open), but also very new stuff like [MSI Z690A DDR4][msi-z690a
 
 For every supported hardware Dasharo Team provides:
 
-* [Source code](https://github.com/dasharo) with building procedures.
+* [Source code](https://github.com/Dasharo) with building procedures.
 * Initial deployment, update and recovery procedures.
 * Test Plan
 * Hardware Configuration Matrix, which explain what hardware configuration we
