@@ -79,3 +79,48 @@ So Dasharo's binary blob policy is as follows:
 Dasharo also works without blobs on platforms that allow that. For example,
 ASUS KGPE-D16 can run without any blobs (officially there is no PSP on that
 hardware, and Opteron 6200 series CPUs can run without microcode patches).
+
+## Why Dasharo?
+
+### Open-source firmware ecosystem problems
+
+Every open-source project has its own internal dynamics, history and politics.
+We are always looking for a solution that endorse non-aggression principle and
+peaceful coexistence, which hopefully will allow everyone to compete based on
+the same rules. We believe that market is big enough for all players and, if
+not we should make market bigger, not fight for every possible piece causing
+collateral damage.
+
+Eventually, in the community, we are all human beings, including all our good
+and bad features. In some cases, sympathy and antipathy cause unexpected
+dynamics. This impacts every community.
+
+We also should be aware that the open-source ecosystem is a place of
+[OPSEC](https://en.wikipedia.org/wiki/Operations_security) and
+[PSYWAR](https://en.wikipedia.org/wiki/Psychological_warfare) techniques use,
+which leads to redirecting energy and resources into directions that make
+open-source community activity less competitive.
+
+In our opinion, massive energy is wasted in the open-source firmware community
+because of incorrect focus, like religious flame wars about philosophical
+principles, security paranoia without having an idea of threat modeling, or
+revolutionary ideas and plans for how to overthrow multibillion-dollar industry
+overlords. Although we may enjoy discussion during
+[Dasharo open-source firmware vPubs][vpub] during everyday job would like to
+focus on delivering value to those who can vote by choosing open-source
+firmware/hardware/ISA based product to help change the computer industry.
+
+Overall there is no economy around open-source firmware, and nobody seems to
+care much about that. It impacts the upstreaming process, the number of
+contributors, and reviewers. There are huge players with their own interests,
+small open-source firmware vendors like 3mdeb and community members essentially
+working for free. Without middle-size companies standing behind open-source
+firmware-based products, not much will change. To fill the space between big
+players and small boutique dev companies, we have to have products with the
+volume on the market because the hardware market understands only sales
+volumes, nothing else.
+
+We want to work on changing the above paradigms or at least improve the
+state-of-the-art relation in the community to the level where threats will have
+a reasonably small impact. We believe that open-source firmware is a critical
+tool, which should be used consciously to ensure privacy and liberty.
