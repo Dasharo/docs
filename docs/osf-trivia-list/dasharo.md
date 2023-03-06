@@ -59,7 +59,7 @@ architecture.
 ## What Dasharo provides?
 
 Dasharo has 10 rules that govern the production and release of firmware within
-its ecosystem. Dasharo rules definte what we deliver with every release. These
+its ecosystem. Dasharo rules define what we deliver with every release. These
 rules are:
 
 1. Every release of firmware produced by Dasharo Ecosystem must contain [source
