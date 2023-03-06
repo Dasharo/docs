@@ -2,15 +2,14 @@
 
 # About
 
-Dasharo is open-source firmware distribution focusing on clean and simple code,
-long-term maintenance, transparent validation, privacy-respecting
-implementation, liberty for the owners, and trustworthiness for all.
+Dasharo is registered trademark and product developed by [3mdeb](https://3mdeb.com).
 
-Dasharo consists of productized services, open-core, and SaaS products which
-help to provide scalable, modular, easy to combine open-source BIOS, UEFI, and
-firmware solutions. It offers the components that are needed to develop and
-maintain a high quality, and modular firmware, for the stability and security
-of your platform.
+Dasharo is an open-source firmware distribution focusing on seamless
+deployment, clean and simple code, long-term maintenance, professional support,
+transparent validation, superior documentation, privacy-respecting
+implementation, liberty for the owners and trustworthiness for all.
+
+[More about Dasharo](osf-trivia-list/dasharo.md)
 
 [Dasharo homepage](https://dasharo.com/)
 
