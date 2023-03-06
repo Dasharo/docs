@@ -56,3 +56,15 @@ For every supported hardware Dasharo Team provides:
   use in our labs for testing.
 * [GPG keys](https://github.com/3mdeb/3mdeb-secpack/tree/master/dasharo)
 * Signed binaries in release section
+
+[coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
+[dtsos]: ../../dasharo-tools-suite/overview/
+[lvfs]: https://fwupd.org/lvfs/docs/consulting
+[gerrit-review]: https://review.coreboot.org/c/homepage/+/63402
+[cb-distro]: https://doc.coreboot.org/distributions.html
+[intel-quark]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/YRJQIPVK5WHACT64TH42CLGD4TXG3XTS/#PZUIFZZHRK7M3NLBNLI6VUBD4O52245B
+[legacy-smp]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/EEEBFATYHWIPRDXLCUEFNDZ4FYYVA4QM/#QHIYXYTVOGXENJXUOWOXUZOTLV5OS4LB
+[raptor]: ../../variants/talos_2/releases/
+[kgpe-d16]: ../../variants/asus_kgpe_d16/releases
+[msi-z690a]: ../../variants/msi_z690/overview/
+[vpub]: https://vpub.dasharo.com/
