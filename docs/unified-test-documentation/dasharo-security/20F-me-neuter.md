@@ -77,7 +77,7 @@ correctly.
 1. Open a terminal window and run the following command:
 
     ```bash
-    lspci | grep "Management Engine"
+    lspci | grep 00:16.0
     ```
 
 1. Note the results.
@@ -128,7 +128,7 @@ works correctly.
 1. Open a terminal window and run the following command:
 
     ```bash
-    lspci | grep "Management Engine"
+    lspci | grep 00:16.0
     ```
 
 1. Note the results.
@@ -179,7 +179,7 @@ works correctly.
 1. Open a terminal window and run the following command:
 
     ```bash
-    lspci | grep "Management Engine"
+    lspci | grep 00:16.0
     ```
 
 1. Note the results.
