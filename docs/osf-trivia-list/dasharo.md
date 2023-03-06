@@ -196,6 +196,15 @@ Dasharo Tools Suite
 
 ### Dasharo Clean and Simple Code
 
+* Each supported platform has its own branches in Dasharo's coreboot repository:
+    - `<board_name>/develop`, e.g. `msi_ms7d25/develop`, used for bug fixes and
+    development of new features.
+    - `<board_name>/release`, e.g. `msi_ms7d25/release`, contains only the
+    released and validated code. It is used to build the firmware binaries
+    distributed to the community through Dasharo releases.
+* Each supported platform has a build scripts included in Dasharo's coreboot
+  repository to simplify the complex build instructions
+
 ### Dasharo Long Term Maintenance
 
 * We provide long term maintenance - coreboot community for various reasons, do
