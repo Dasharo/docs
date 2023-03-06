@@ -267,3 +267,33 @@ We want to work on changing the above paradigms or at least improve the
 state-of-the-art relation in the community to the level where threats will have
 a reasonably small impact. We believe that open-source firmware is a critical
 tool, which should be used consciously to ensure privacy and liberty.
+
+## What is open-source firmware distribution?
+
+Dasharo is 3mdeb's firmware distribution and all its components are
+open-source. We provide releases in binary form. As you know in most cases on
+x86 for firmware to be useful it has to cooperate with closed blobs. In all
+binary releases we are making sure we provide information where all components
+are coming from.
+
+Dasharo works without blobs on platforms that allow that. When we saying
+Dasharo open-source firmware distribution we mean code that is delivered by
+3mdeb that is open-source. We have no influence on the code provided by 3rd
+parties (e.g. FSP, ME, GbE etc.).
+
+In coreboot community there was some controversy about calling Dasharo
+open-source firmware distribution (for details please check [gerrit review][gerrit-review].
+We respect coreboot community opinion, so we agreed that in case of coreboot
+documentation it would be better to use open-source based firmware
+distribution. It doesn't mean we agree with that decision:
+
+* Definitions and rules used in coreboot documentation review
+* Rules seem not to be applied equally to all contributors of
+  [coreboot distribution][cb-distro]
+
+## Why Dasharo is not called coreboot firmware distribution?
+
+Dasharo is not coreboot firmware distribution because we also may imagine
+Dasharo pure EDKII, oreboot or based on any other open-source firmware
+framework. Dasharo typically is based on coreboot and EDKII, plain coreboot is
+not enough in most cases for booting modern computer.
