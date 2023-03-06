@@ -461,3 +461,38 @@ that can lead to influencing Dasharo Community Supported roadmap.
 [cb-distro]: https://doc.coreboot.org/distributions.html
 [intel-quark]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/YRJQIPVK5WHACT64TH42CLGD4TXG3XTS/#PZUIFZZHRK7M3NLBNLI6VUBD4O52245B
 [vpub]: https://vpub.dasharo.com/
+
+## Can you port Dasharo to my mainboard?
+
+There are other versions of the same questions:
+
+* Dasharo supports mainboard X and I have mainboard Y (or X'). Can you teach me
+  how to port Dasharo to my mainboard?
+* Can you help me port Dasharo to my mainboard?
+
+**TL;DR: No, we can't.**
+
+The answer to that question requires understanding of many aspects of
+open-source firmware business, which we learned over the years. Key point is
+that we can't help to port arbitrary targets. Hardware have to be carefully
+selected to bring most benefits to open-source firmware community and improve
+sustainability of the ecosystem. Random hardware porting lead to unmaintainable
+stack of platforms which no one adapts in scale, what does not lead to market
+change.
+
+Dasharo Team tries to select platforms with long term availability potential.
+
+Because we are fully responsible for hardware that we enable in open-source
+firmware ecosystem our releases have to pass Dasharo Certification criteria.
+Whole effort is relatively expensive and in most cases not feasible for
+enabling one platform. That's why in most cases our customers are OEM/ODM,
+angel investors, or communities which want to enable reasonable quantities of
+hardware (>200pcs).
+
+If the board comes with variants with very small differences that are supported
+in open-source firmware stack, and one of the variants is already supported by
+Dasharo, there is a chance to enable Dasharo builds for that variant. However,
+the community member which requested support for such platform should also
+offer their help in validation of the firmware. We still haven't written down
+policies and requirements for enabling close variants of the board.
+
