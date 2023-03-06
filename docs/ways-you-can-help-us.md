@@ -88,7 +88,8 @@ As a Dasharo Supporter you will get:
   year, but Supporters are not limited to it. Number of updates depends on the
   number of Dasharo Subscriptions sold and the availability of other funding
   (e.g., NLNet, corporate sponsors, community donations).
-* Dasharo Primer Support through invite-only Matrix channel
+* Dasharo Primer Support through invite-only Matrix channel where we often
+  gather Supporters opinion and share exciting news about Dasharo direction
 * Insider's view and influence on Dasharo features roadmap – you can have a
   real impact on Dasharo development
 
