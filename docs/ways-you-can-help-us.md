@@ -84,9 +84,10 @@ Or buy the hardware including the subscriptions from us, e.g.:
 As a Dasharo Supporter you will get:
 
 * The latest Dasharo releases issued by Dasharo Team
-* Special Dasharo Updates for Supporters – number of updates depends on the
+* Special Dasharo Updates for Supporters –  Community receives one update per
+  year, but Supporters are not limited to it. Number of updates depends on the
   number of Dasharo Subscriptions sold and the availability of other funding
-  (e.g., NLNet, corporate sponsors, community donations)
+  (e.g., NLNet, corporate sponsors, community donations).
 * Dasharo Primer Support through invite-only Matrix channel
 * Insider's view and influence on Dasharo features roadmap – you can have a
   real impact on Dasharo development
