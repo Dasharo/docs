@@ -154,3 +154,74 @@ Dasharo is not coreboot firmware distribution because we also may imagine
 Dasharo pure EDKII, oreboot or based on any other open-source firmware
 framework. Dasharo typically is based on coreboot and EDKII, plain coreboot is
 not enough in most cases for booting modern computer.
+
+## What value Dasharo provide in comparison to coreboot?
+
+* Dasharo is open-source firmware distribution based on
+  [coreboot](https://coreboot.org) and other open-source firmware frameworks
+  (e.g. [Tianocore EDKII](https://github.com/tianocore/edk2)), you can think
+  about Dasharo and coreboot relation in the same way as you think about
+  Debian/Ubuntu/RedHat and Linux. That means it can provide better
+  cost-effectiveness, security, transparency and customizability than
+  proprietary alternative.
+* There are seven characterestics of Dasharo:
+    - [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
+    - [clean and simple code](#dasharo-clean-and-simple-code),
+    - [long-term maintenance](#dasharo-long-term-maintenance),
+    - [professional support](#dasharo-support-package),
+    - [transparent validation](#dasharo-transparent-validation),
+    - [privacy-respecting implementation](#dashro-privacy-respecting-implementation),
+    - [liberty for the owners](#dasharo-liberty-for-the-owners),
+    - [trustworthiness for all](#dasharo-trustworthiness-for-all).
+
+### Dasharo Zero-Touch Initial Deployment
+
+Documentation supported hardware provide information about initial deployment,
+updates and recovery procedures. Developed by Dasharo Team [Dasharo Tools Suite
+(DTS)][dtsos] operating system support users by automating the deployment
+process, which help reducing errors and inconsistencies, and make sure the
+firmware can be further updated to new version without any problems. DTS also
+provide controlled and secure environment for initial deployment and update of
+firmware, reducing the risk of tampering or unauthorized changes.
+
+Dasharo Zero-Touch Initial Deployment is smooth, effortless and user-friendly
+process, which reduce user frustration and improve satisfaction.
+
+Use of DTS largely improve firmware adoption, hardware compatibility reporting
+and binary blobs transmission, as well as recovery.
+
+For more details about zero-touch initial deployment please read relevant
+Dasharo Tools Suite
+[documentation](../../dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment).
+
+### Dasharo Clean and Simple Code
+
+### Dasharo Long Term Maintenance
+
+* We provide long term maintenance - coreboot community for various reasons, do
+  not merge some patches, because of understaffing, lack of reviewers. Some
+  changes have long way to upstream, we maintain those patches and make them
+  work before those will go upstrea. If ever, we are committed to maintain
+  platforms which are moved to branch in coreboot.
+* Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and
+  enable customers and community platforms, so they can get seamless firmware
+  update in Linux.
+
+### Dasharo Support Package
+
+* Support - Dasharo Team is paid to provide support in the community through
+  [Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
+  commercial products related to the support to make the business feasible, but
+  some level of support always would be available to the community.
+
+### Dasharo Transparent Validation
+
+* We provide transparent validation results - coreboot in itself provide no
+  guarantees around release quality and do not provide binary distribution (for
+  reference please check [coreboot project scope][coreboot-scope], we provide
+  those in scope of validation we perform.
+
+### Dasharo Trustworthiness for All
+
+* We provide ready to use binaries with GPG based signing scheme that improve
+  verification where firmware coming from.
