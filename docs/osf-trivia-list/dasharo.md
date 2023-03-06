@@ -235,6 +235,23 @@ Dasharo Tools Suite
 * We provide ready to use binaries with GPG based signing scheme that improve
   verification where firmware coming from.
 
+## What are the differences between the official coreboot repository and the Dasharo repository?
+
+The difference is support for [compatible hardware](https://docs.dasharo.com/#compatible-hardware).
+Dasharo repository contains release tags which are associated with Dasharo
+Certification Program providing certain quality criteria including test
+results. We always trying to minimize delta, but sometimes it can be up to 5k
+SLOC (or more I guess e.g. Talos II coreboot support).
+
+<!--
+## Why Dasharo Team is against moving code to branches in coreboot?
+
+## What is the difference between open-source firmware development in free time
+and open-source firmware development as a business?
+
+## What is Dasharo Certification Program?
+-->
+
 ## Why there is no AMD mainboard supported in Dasharo ?
 
 Unfortunately, from the perspective of a small open-source firmware vendor, it
