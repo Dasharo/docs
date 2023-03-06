@@ -16,7 +16,7 @@ section.
 ## Dasharo Supporters releases
 
 Dasharo Supporters receive firmware updates more frequently than the community.
-Number of updates per years depends on the number of Dasharo Subscriptions sold
+Number of updates per year depends on the number of Dasharo Subscriptions sold
 and the availability of other funding (e.g., NLNet, corporate sponsors,
 community donations) but is less than 2 updates per year. Dasharo Supporters
 updates are characterized by a changing patch version (`z`). Fixes and features
