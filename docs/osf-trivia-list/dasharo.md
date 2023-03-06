@@ -378,19 +378,77 @@ Dasharo Tools Suite
 
 ## What are the differences between the official coreboot repository and the Dasharo repository?
 
-The difference is support for [compatible hardware](https://docs.dasharo.com/#compatible-hardware).
+* Dasharo focus on specific platforms listed in  [supported
+  hardware](https://docs.dasharo.com/unified/novacustom/overview/) section of Dasharo
+  Universe documentation.
+
 Dasharo repository contains release tags which are associated with Dasharo
 Certification Program providing certain quality criteria including test
 results. We always trying to minimize delta, but sometimes it can be up to 5k
 SLOC (or more I guess e.g. Talos II coreboot support).
 
+## What is Dasharo Certification Program?
+
+Dasharo Certification Program (DCP) is a rigorous certification program that
+sets a high-quality bar for open-source firmware. It aims to provide stable,
+secure, and reliable firmware that meets the Dasharo values. The program
+encourages developers to create their forks of Dasharo or contribute back to
+the Dasharo project or coreboot upstream. By doing so, they can leverage the
+power of open-source development to create custom firmware tailored to their
+specific needs. The certification process ensures that the firmware binary
+meets the strict criteria by testing  3mdeb in the certification lab.
+
+The Dasharo-certified firmware provides long-term maintenance over ten years
+after the CPU microarchitecture release, which means that OEM, ODM, hardware
+vendors, and other companies can rely on the firmware for a long time without
+worrying about end-of-life issues. Moreover, DCP-approved firmware vendors must
+provide professional support channels to ensure that other business entities
+can rely on those channels for long-term support regarding firmware and
+software.
+
+The validation process for DCP firmware is transparent. Test results and bug
+reports are always publicly available, allowing the community to continually
+identify issues and improve the firmware. However, in case of a security
+embargo, the results can be kept under a strict but well-defined policy,
+ensuring the security of the firmware.
+
+DCP-approved firmware respects privacy by allowing the deactivation of
+potentially malicious components, like ME or PSP, to the level permitted by the
+current state of technology. This feature is essential, especially in
+increasing data privacy concerns. DCP-approved firmware also respects the
+liberty of hardware owners to repair and transfer ownership without risking any
+personally identifiable data.
+
+DCP-approved firmware should provide trustworthiness. It means that known good
+measurements of each boot phase are publicly available and stored in a
+tamper-resistant medium like TPM during the boot process. Based on publicly
+available reference measurements, firmware executed during the boot process can
+be attested.
+
+3mdeb supports and maintains DCP-approved firmware through Dasharo Support
+Package (DSP) and Dasharo Enterprise Package (DEP). These packages offer
+essential services like porting to new platforms, developing device drivers,
+debugging, and fixing bugs. Companies can rely on 3mdeb's expertise to ensure
+their systems remain secure, up-to-date, and reliable.
+
+In summary, DCP is an essential program for companies leveraging open-source
+firmware for their systems. It provides a high-quality bar for firmware that
+respects privacy, liberty, and trustworthiness. Moreover, 3mdeb offers support
+and maintenance to ensure that companies can rely on their systems for a long
+time.
+
 <!--
+## What is Dasharo Community Support?
+
+## What is Dasharo Support Package?
+
+## What is Dasharo Enterprise Support?
+
 ## Why Dasharo Team is against moving code to branches in coreboot?
 
 ## What is the difference between open-source firmware development in free time
 and open-source firmware development as a business?
 
-## What is Dasharo Certification Program?
 -->
 
 ## Why there is no AMD mainboard supported in Dasharo ?
