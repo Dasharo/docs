@@ -189,6 +189,7 @@ We want to work on changing the above paradigms or at least improve the
 state-of-the-art relation in the community to the level where threats will have
 a reasonably small impact. We believe that open-source firmware is a critical
 tool, which should be used consciously to ensure privacy and liberty.
+<<<<<<< HEAD
 
 ## What is open-source firmware distribution?
 
@@ -461,3 +462,5 @@ that can lead to influencing Dasharo Community Supported roadmap.
 [cb-distro]: https://doc.coreboot.org/distributions.html
 [intel-quark]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/YRJQIPVK5WHACT64TH42CLGD4TXG3XTS/#PZUIFZZHRK7M3NLBNLI6VUBD4O52245B
 [vpub]: https://vpub.dasharo.com/
+=======
+>>>>>>> b285ce83ae9d (docs/osf-trivia-list/dasharo.md: add OSF ecosystem problems)
