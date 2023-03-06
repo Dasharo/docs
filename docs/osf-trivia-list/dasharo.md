@@ -8,7 +8,7 @@ Dasharo is an open-source firmware distribution focusing on
 [long-term maintenance](#dasharo-long-term-maintenance),
 [professional support](#dasharo-support-package),
 [transparent validation](#dasharo-transparent-validation),
-[superior documentation](../index.md)
+[extensive and structured documentation](https://github.com/Dasharo/docs#navigation-menu),
 [privacy-respecting implementation](#dasharo-privacy-respecting-implementation),
 [liberty for the owners](#dasharo-liberty-for-the-owners) and
 [trustworthiness for all](#dasharo-trustworthiness-for-all).
