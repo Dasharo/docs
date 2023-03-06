@@ -13,6 +13,23 @@ notes. Link to Dasharo Release Notes for your hardware platform can be found in
 [Hardware Compatibility List](../variants/hardware-compatibility-list.md)
 section.
 
+## Dasharo Supporters releases
+
+Dasharo Supporters receive firmware updates more frequently than the community.
+Number of updates per years depends on the number of Dasharo Subscriptions sold
+and the availability of other funding (e.g., NLNet, corporate sponsors,
+community donations) but is less than 2 updates per year. Dasharo Supporters
+updates are characterized by a changing patch version (`z`). Fixes and features
+introduced in Dasharo Supporters releases will also be available later in
+community releases. In short, being a Dasharo Supporter gives an early access to
+the newest features and fixes.
+
+## Community releases
+
+Community releases are built and published once a year. Each community release
+has a zero patch version (`x.y.0`) and the only changing number is the minor
+version `y`.
+
 ## Signing keys
 
 In Dasharo we use following rules for keys:
