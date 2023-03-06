@@ -1,3 +1,5 @@
+# Frequenty Asked Questions about Dasharo
+
 ## What is Dasharo?
 
 Dasharo is registered trademark and product developed by [3mdeb](https://3mdeb.com).
@@ -68,27 +70,28 @@ cryptographic signature of that hash.
 1. Dasharo Universe contains structured documentation for key activities
 related to open-source firmware life-cycle: initial deployment, update and
 recovery.
-1. Cryptographic keys hierarchy should be followed: 
+1. Cryptographic keys hierarchy should be followed:
 
-    - [CEO/Founder](https://github.com/3mdeb/3mdeb-secpack/blob/master/keys/owner-key/piotr-krol-key.asc)
+    + [CEO/Founder](https://github.com/3mdeb/3mdeb-secpack/blob/master/keys/owner-key/piotr-krol-key.asc)
 (GPG fingerint: `E030 9B2D 85A6 7E84 6329  E34B B2EE 71E9 67AA 9E4C`) which
 signs
-    - [3mdeb Master
+    + [3mdeb Master
 Key](https://github.com/3mdeb/3mdeb-secpack/blob/master/keys/master-key/3mdeb-master-key.asc)
 (GPG fingerint: `1B57 85C2 965D 84CF 85D1  652B 4AFD 81D9 7BD3 7C54`) which
 signs
-    - [3mdeb Dasharo Master
+    + [3mdeb Dasharo Master
 Key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/3mdeb-dasharo-master-key.asc)
 (GPG fingerint: `0D5F 6F1D A800 329E B7C5  97A2 ABE1 D0BC 6627 8008`) which
 signs
-    - [Customer Open Source Firmware Release x.y Signing
+    + [Customer Open Source Firmware Release x.y Signing
 Key](https://github.com/3mdeb/3mdeb-secpack/tree/master/customer-keys) (e.g.
 Novacustom Open Source Firmware Release 1.0 Signing Key)
-    - or [dedicated 3mdeb
+    + or [dedicated 3mdeb
 keys](https://github.com/3mdeb/3mdeb-secpack/tree/master/dasharo) to given
 platform.
 
-    Keys can be found in [3mdeb-secpack](https://github.com/3mdeb/3mdeb-secpack) repository.
+    Keys can be found in
+    [3mdeb-secpack](https://github.com/3mdeb/3mdeb-secpack) repository.
 
 1. Every release of firmware produced by Dasharo Ecosystem must have an
 attached test report according to requirements. Every test should be described
