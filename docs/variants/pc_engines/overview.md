@@ -12,7 +12,7 @@ telecommunications, security applications, in-home automation, and other
 industrial applications.
 
 PC Engines is particularly well-known for its low-power, high-performance SBCs,
-including the APU (Advanced Processing Unit) series, which feature AMD G-series
+including the APU (Accelerated Processing Unit) series, which feature AMD G-series
 embedded processors, and the ALIX series, based on the AMD Geode processor.
 These SBCs are commonly used as firewalls, routers, and other network
 appliances.
