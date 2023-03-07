@@ -127,6 +127,8 @@ Addresses:
 
 * Bitcoin:
   [1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV](bitcoin:1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV?label=UOI-OFF&message=Donation%20to%20Open%20Firmware%20Fund)
+* Monero:
+  [89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ](monero:89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ)
 * PKT:
   [pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v](pkt:pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v)
 
