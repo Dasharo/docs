@@ -4,29 +4,27 @@
 
 Dasharo is registered trademark and product developed by [3mdeb](https://3mdeb.com).
 
-Dasharo is an open-source firmware distribution focusing on:
+Dasharo is an open-source firmware distribution focusing on
+[carefully selected hardware platforms](#can-you-port-dasharo-to-my-mainboard),
+[seamless deployment](#dasharo-seamless-deployment),
+[clean and simple code](#dasharo-clean-and-simple-code),
+[long-term maintenance](#dasharo-long-term-maintenance),
+[professional support](#dasharo-support-package),
+[transparent validation](#dasharo-transparent-validation),
+[extensive and structured documentation](https://github.com/Dasharo/docs#navigation-menu),
+[privacy-respecting implementation](#dasharo-privacy-respecting-implementation),
+[liberty for the owners](#dasharo-liberty-for-the-owners) and
+[trustworthiness for all](#dasharo-trustworthiness-for-all).
 
-- [seamless deployment](#dasharo-seamless-deployment),
-- [clean and simple code](#dasharo-clean-and-simple-code),
-- [long-term maintenance](#dasharo-long-term-maintenance),
-- [professional support](#dasharo-support-package),
-- [transparent validation](#dasharo-transparent-validation),
-- [extensive and structured documentation](#dasharo-documentation),
-- [privacy-respecting implementation](#dasharo-privacy-respecting-implementation),
-- [liberty for the owners](#dasharo-liberty-for-the-owners) and
-- [trustworthiness for all](#dasharo-trustworthiness-for-all).
+Dasharo consists of [productized services](TBD), set of
+[open-source repositories](https://github.com/orgs/Dasharo/repositories),
+and [quality control](TBD) which help to provide scalable, modular, easy to
+combine open-source BIOS, UEFI, and firmware solutions. It offers the
+components that are needed to develop and maintain a high quality, and modular
+firmware, for the stability and security of your platform.
 
-Dasharo consists of [commercial services](#productized-services) available for
-business customers, set of [open-source
-repositories](https://github.com/orgs/Dasharo/repositories), and [quality
-control](../../unified-test-documentation/overview/) which help to provide
-scalable, modular, easy to combine open-source BIOS, UEFI, and firmware
-solutions. It offers the components that are needed to develop and maintain a
-high quality, and modular firmware, for the stability and security of your
-platform.
-
-For individuals Dasharo provides optional features in subscription model called
-[Supporters Entrance](../dts/#how-to-get-dasharo-tools-suite-supporters-entrance).
+Dasharo provides optional features in subscription model called
+[Supporters Entrance](../ways-you-can-help-us.md#become-a-dasharo-supporter).
 
 ## Why 3mdeb created Dasharo?
 
@@ -402,32 +400,42 @@ hardware vendors.
 
 There are other versions of the same questions:
 
-* Dasharo supports mainboard X and I have mainboard Y (or X'). Can you teach me
+* Dasharo supports mainboard X; I have mainboard Y (or X'). Can you teach me
   how to port Dasharo to my mainboard?
 * Can you help me port Dasharo to my mainboard?
 
-**TL;DR: No, we can't.**
+**TL;DR: No, we can't. In Dasharo, we support only carefully selected targets.**
 
-The answer to that question requires understanding of many aspects of
-open-source firmware business, which we learned over the years. Key point is
-that we can't help to port arbitrary targets. Hardware have to be carefully
-selected to bring most benefits to open-source firmware community and improve
-sustainability of the ecosystem. Random hardware porting lead to unmaintainable
-stack of platforms which no one adapts in scale, what does not lead to market
-change.
+The answer to that question requires understanding many aspects of the
+open-source firmware business we learned over the years. The critical point is
+that we can't help to port arbitrary targets. Hardware has to be carefully
+selected to bring the most benefits to the open-source firmware community and
+improve the sustainability of the ecosystem. Random hardware porting lead to an
+unmaintainable stack of platforms that no one adapts in scale, which does not
+lead to market change in the correct direction. Lack of commercial adoption is
+part of coreboot problems as a project, and we would like to avoid this
+mistake.
 
-Dasharo Team tries to select platforms with long term availability potential.
+We have strict criteria based on various aspects explained in Dasharo Community
+Support section.
+
+Dasharo Team tries to select platforms with long-term availability potential.
 
 Because we are fully responsible for hardware that we enable in open-source
-firmware ecosystem our releases have to pass Dasharo Certification criteria.
-Whole effort is relatively expensive and in most cases not feasible for
-enabling one platform. That's why in most cases our customers are OEM/ODM,
-angel investors, or communities which want to enable reasonable quantities of
+firmware ecosystem, our releases have to pass the Dasharo Certification
+criteria.  The whole effort is relatively expensive and, in most cases, not
+feasible for enabling one platform. That's why in most cases, our customers are
+OEM/ODM, angel investors, or communities that need reasonable quantities of
 hardware (>200pcs).
 
-If the board comes with variants with very small differences that are supported
-in open-source firmware stack, and one of the variants is already supported by
-Dasharo, there is a chance to enable Dasharo builds for that variant. However,
-the community member which requested support for such platform should also
-offer their help in validation of the firmware. We still haven't written down
-policies and requirements for enabling close variants of the board.
+If the board comes with variants with minimal differences required for support
+in an open-source firmware stack, and one of the variants is part of the
+Dasharo Support Package, Dasharo Enterprise Package, or Dasharo Community
+Support, there is a chance to put that hardware on the relevant roadmap. In
+such a case, don't hesitate to contact us; we will see what we can do. However,
+the community member who requested support for the platform should also offer
+their help in validating the firmware and maintenance. That kind of request
+will be more than welcome from active community members. New members should
+consider [ways to help us](../../ways-you-can-help-us/) to gain a reputation
+that can lead to influencing Dasharo Community Supported roadmap.
+
