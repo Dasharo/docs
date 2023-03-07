@@ -298,4 +298,3 @@ their help in validating the firmware and maintenance. That kind of request
 will be more than welcome from active community members. New members should
 consider [ways to help us](../../ways-you-can-help-us/) to gain a reputation
 that can lead to influencing Dasharo Community Supported roadmap.
-
