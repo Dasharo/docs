@@ -66,6 +66,33 @@ open-source firmware mission. It is straightforward if you don't have time for
 other contributions, and there are multiple options - feel free to choose one
 that works for you.
 
+### Become a Dasharo Supporter
+
+Buy the Dasharo Supporters Entrance subscription if you own/use/buy a machine
+running Dasharo firmware:
+
+* [1-year subcription](https://3mdeb.com/shop/open-source-hardware/subscription-for-dasharo-compatible-with-msi-pro-z-690a-ddr4/)
+* [2-year subscription](https://3mdeb.com/shop/open-source-hardware/2-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
+* [3-year subscription](https://3mdeb.com/shop/open-source-hardware/3-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
+
+Or buy the hardware including the subscriptions from us, e.g.:
+
+* [MSI PRO Z690-A DDR4 motherboard with Dasharo Supporters Entrance](https://3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-motherboard/)
+* [MSI PRO Z690-A DDR4 with Dasharo Supporters Entrance – Full PC Build](https://3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-full-pc-build/)
+* or other platforms
+
+As a Dasharo Supporter you will get:
+
+* The latest Dasharo releases issued by Dasharo Team
+* Special Dasharo Updates for Supporters –  Community receives one update per
+  year, but Supporters are not limited to it. Number of updates depends on the
+  number of Dasharo Subscriptions sold and the availability of other funding
+  (e.g., NLNet, corporate sponsors, community donations).
+* Dasharo Primer Support through invite-only Matrix channel where we often
+  gather Supporters opinion and share exciting news about Dasharo direction
+* Insider's view and influence on Dasharo features roadmap – you can have a
+  real impact on Dasharo development
+
 ### PayPal
 
 <center>

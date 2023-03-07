@@ -2,10 +2,13 @@
 
 ## What is Dasharo Tools Suite Supporters Entrance
 
-Dasharo Tools Suite Supporters Entrance (DTS SE) is an access to Dasharo
-firmware updates for your hardware. Thanks to Dasharo Tools Suite you can
-execute initial deploy, with SE you could get updates or different build
-configurations.
+Dasharo Tools Suite Supporters Entrance (DTS SE) is an extended version of
+[DTS](../dasharo-tools-suite/overview.md) provided to Dasharo Supporters via
+the [Supporters Entrance subscription](../ways-you-can-help-us.md#become-a-dasharo-supporter).
+DTS is like a swiss army knife for Dasharo firmware: you can execute initial
+deployment, firmware update and even dump machine logs for debugging and
+development support. But with SE you could get updates for your own, customized
+build configurations.
 
 ## How to get Dasharo Tools Suite Supporters Entrance?
 
