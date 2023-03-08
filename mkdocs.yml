@@ -13,11 +13,12 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
+extra:
+  analytics:
+    provider: google
+    property: G-LH2JM6P96R
 extra_css:
   - stylesheets/extra.css
-google_analytics:
-  - UA-39420295-13
-  - auto
 markdown_extensions:
   - footnotes
   - pymdownx.highlight
