@@ -14,13 +14,13 @@ Following sections explain how to deal with most common `flashrom` problem.
 
 ### How to install Dasharo flashrom fork ?
 
-Following procedure is for advanced users who are familiar with
-source compilation and can resolve potential missing depenencies or
-other typical compilation problems. If you are not familar with
-compilation from source we recommend use of Dasharo Tools Suite,
-which is minimal Linux environment to deploy, update, and maintain
-firmware on Dasharo-supported devices. Please follow [DTS
-documentation](../../dasharo-tools-suite/overview). Otherwise please follow compilation procedure.
+Following procedure is for advanced users who are familiar with source
+compilation and can resolve potential missing dependencies or other typical
+compilation problems. If you are not familiar with compilation from source we
+recommend use of Dasharo Tools Suite, which is minimal Linux environment to
+deploy, update, and maintain firmware on Dasharo-supported devices. Please
+follow [DTS documentation](../../dasharo-tools-suite/overview). Otherwise
+please follow compilation procedure.
 
 Currently, the latest flashrom release lacks support for Alder Lake
 S and Comet Lake U internal flashing. Because of this, we need to
