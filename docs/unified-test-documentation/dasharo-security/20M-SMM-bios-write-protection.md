@@ -20,7 +20,7 @@
 
 SMM BIOS write protection is the method to prevent a specific region of the
 firmware from being flashed - when enabled allows only SMM code (the privileged
-code installed by the firmware in the system memory) to write to BIOS flash. 
+code installed by the firmware in the system memory) to write to BIOS flash.
 This test aims to verify that, the SMM BIOS protection option is available in
 the `Dasharo Security Options` and, if the mechanism works correctly - during
 the attempt of firmware flashing information about the SMM protection is
@@ -76,7 +76,7 @@ Enabling flash write... Warning: BIOS region SMM protection is enabled!
 
 SMM BIOS write protection is the method to prevent a specific region of the
 firmware from being flashed - when enabled allows only SMM code (the privileged
-code installed by the firmware in the system memory) to write to BIOS flash. 
+code installed by the firmware in the system memory) to write to BIOS flash.
 This test aims to verify that, after disabling the mechanism, information about
 SMM protection is not returned any more.
 
