@@ -25,7 +25,6 @@ by using flashrom tool.
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. Disable Secure Boot.
-1. Obtain any other binary (e.g. vendor firmware or older Dasharo firmware).
 
 **Test steps**
 
@@ -41,11 +40,11 @@ by using flashrom tool.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Try to flash the firmware by using the internal programmer and `flashrom`
-    tool. The following command should be used:
+1. Execute the following command in the terminal to check platform flashing
+    conditions:
 
     ```bash
-    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    flashrom -p internal
     ```
 
 1. Note the result.
@@ -105,11 +104,11 @@ the BIOS region overwriting operation is available again.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Try to flash the firmware by using the internal programmer and `flashrom`
-    tool. The following command should be used:
+1. Execute the following command in the terminal to check platform flashing
+    conditions:
 
     ```bash
-    flashrom -p internal -w [path-to-binary] --ifd -i bios
+    flashrom -p internal
     ```
 
 1. Note the result.
