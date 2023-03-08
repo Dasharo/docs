@@ -39,7 +39,7 @@ Dasharo ([major_framework]+[minor_framework]) v[version]
 - `version` means version according to official
   [Dasharo Versioning](../versioning) documentation.
 
-_For [TianoCore UEFIPayloadPkg](https://github.com/Dasharo/edk2/tree/workstation/master/UefiPayloadPkg),
+_For [TianoCore UEFIPayloadPkg](https://github.com/Dasharo/edk2/tree/dasharo/UefiPayloadPkg),
 we use the simpler and more recognizable UEFI name._
 
 Examples:

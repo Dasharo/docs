@@ -29,7 +29,7 @@ Test results for this release can be found
 - [Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [Vboot Recovery Popup](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/#vbo009001-recovery-boot-popup-firmware)
 - Fullscreen setup menu
-- [Open-source Embedded Controller Firmware](https://docs.dasharo.com/variants/novacustom_nv4x_7x/ec_recovery/)
+- [Open-source Embedded Controller Firmware](../../../unified/novacustom/recovery/#ec-firmware-recovery)
 
 ### Fixed
 

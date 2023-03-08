@@ -224,7 +224,7 @@ and all basic keys work according to their labels.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 
 **Test steps**
 

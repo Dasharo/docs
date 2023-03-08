@@ -20,7 +20,7 @@
 
 This test aims to verify that the serial number field is filled in correctly
 according to the
-[Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/).
+[Dasharo SMBIOS guidelines](../../../dev-proc/smbios-rules/).
 
 **Test configuration data**
 

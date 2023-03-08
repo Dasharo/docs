@@ -25,7 +25,7 @@ Test results for this release can be found
 - [Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [Vboot recovery mode information popup](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/#vbo009001-recovery-boot-popup-firmware)
 - [Dasharo setup menu full screen mode support](https://github.com/Dasharo/dasharo-issues/issues/118)
-- [Support for RGB backlit keyboard](https://docs.dasharo.com/variants/novacustom_ns5x_7x/rgb_keyboard/)
+- [Support for RGB backlit keyboard](../../../unified/novacustom/rgb-keyboard/)
 - [Support for open-source EC firmware](../../../dasharo-tools-suite/documentation#ec-transition)
 
 ### Known issues
@@ -43,10 +43,6 @@ Test results for this release can be found
 [sha256][novacustom_ns5x_adl_v1.4.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_adl_v1.4.0.rom_sig]{.md-button}
 
-[novacustom_ns5x_adl_v1.4.0_full.rom][novacustom_ns5x_adl_v1.4.0_full.rom_file]{.md-button}
-[sha256][novacustom_ns5x_adl_v1.4.0_full.rom_hash]{.md-button}
-[sha256.sig][novacustom_ns5x_adl_v1.4.0_full.rom_sig]{.md-button}
-
 See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 ### SBOM (Software Bill of Materials)
@@ -61,6 +57,3 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 [novacustom_ns5x_adl_v1.4.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.4.0/novacustom_ns5x_adl_v1.4.0.rom
 [novacustom_ns5x_adl_v1.4.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.4.0/novacustom_ns5x_adl_v1.4.0.rom.sha256
 [novacustom_ns5x_adl_v1.4.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.4.0/novacustom_ns5x_adl_v1.4.0.rom.sha256.sig
-[novacustom_ns5x_adl_v1.4.0_full.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.4.0/novacustom_ns5x_adl_v1.4.0_full.rom
-[novacustom_ns5x_adl_v1.4.0_full.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.4.0/novacustom_ns5x_adl_v1.4.0_full.rom.sha256
-[novacustom_ns5x_adl_v1.4.0_full.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.4.0/novacustom_ns5x_adl_v1.4.0_full.rom.sha256.sig

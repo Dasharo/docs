@@ -143,7 +143,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 ### Known issues
 
-- [Custom fan curve after suspend](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/45)
+- [Custom fan curve is not applied after suspend (Dasharo issue #45)](https://github.com/Dasharo/dasharo-issues/issues/45)
 - [UCM-UCSI ACPI device displays an error in Windows Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/19)
 - [USB4 Root Device Router device displays an error in Windows 11 Device Manager](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/18)
 - [Windows 10 SD card reader driver needs manual installation on NV41MB](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/16)

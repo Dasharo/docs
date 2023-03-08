@@ -32,7 +32,7 @@ documentation.
 ### RTE
 
 RTE (acronym: Remote Testing Environment) should be prepared in accordance with
-[Quick start guide](../rte/v1.1.0/quick-start-guide.md) documentation dedicated
+[Quick start guide](../../rte/v1.1.0/quick-start-guide.md) documentation dedicated
 to the device.
 
 ### Sonoff
@@ -282,7 +282,7 @@ The following sections describe how to use all of the enabled features:
 ### Serial connection
 
 The method of setting and using serial connection is described in the
-[Serial connection guide](../rte/v1.1.0/serial-port-connection-guide).
+[Serial connection guide](../../rte/v1.1.0/serial-port-connection-guide).
 
 ### Power supply controlling
 

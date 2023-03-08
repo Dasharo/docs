@@ -33,10 +33,10 @@ Engines decided to discontinue its sponsorship for open-source firmware.
 Dasharo Team working on creating a sustainable path forward for PC Engines'
 open-source firmware through a subscription and donation model. For more
 details please check [Post EOL firmware
-announcement](post-eol-fw-announcement), contact us
+announcement](../post-eol-fw-announcement), contact us
 [directly](mailto:contact@dasharo.com) or through [community
 chat](https://matrix.to/#/#dasharo:matrix.org).
 
 ## References
 
-* [Post-EOL firmware announcement](post-eol-fw-announcement)
+* [Post-EOL firmware announcement](../post-eol-fw-announcement)
