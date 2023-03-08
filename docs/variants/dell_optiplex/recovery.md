@@ -110,7 +110,7 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
 ## Step 5: Prepare recovery binary
 
 Following procedure assume that you use recovery binary created during [backup
-process](../../..//osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
+process](../../../osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
 Backup has 12MB, so it have to be split
 
 ```bash
