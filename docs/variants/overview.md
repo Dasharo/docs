@@ -48,4 +48,4 @@ open-source firmware distribution.
 
 * Following servers are supported under Dasharo Community Support
 
-      * [Supermicro X11 LGA1151 Series](../supermicro_x11_lga1151_series/overview)
+    - [Supermicro X11 LGA1151 Series](../supermicro_x11_lga1151_series/overview)
