@@ -103,7 +103,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Tools for resigning Vboot images with one RW partition](https://docs.dasharo.com/common-coreboot-docs/vboot_signing/)
+- [Tools for resigning Vboot images with one RW partition](../../../guides/vboot-signing/)
 
 ### Changed
 
@@ -146,7 +146,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Vboot Verified Boot](https://docs.dasharo.com/common-coreboot-docs/vboot_signing/)
+- [Vboot Verified Boot](../../../guides/vboot-signing/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
