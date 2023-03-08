@@ -73,7 +73,8 @@ Certification Procedure for both tested platforms:
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 | 5.   | [ME neuter support][MNE]                          | MNE           | All                                  |
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
-| 7.   | [Early boot DMA protection][EDP]                  | EDP           | All                                  |
+| 7.   | [SMM BIOS write protection][SMM]                  | SMM           | All                                  |
+| 8.   | [Early boot DMA protection][EDP]                  | EDP           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -81,6 +82,7 @@ Certification Procedure for both tested platforms:
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 [EDP]: ../../unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
 
 ### Module: Dasharo performance
