@@ -82,7 +82,7 @@ Certification Procedure for both tested platforms:
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
-[SMM]: ../../unified-test-documentation/dasharo-security/20M-SMM-bios-write-protection.md
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 [EDP]: ../../unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
 
 ### Module: Dasharo performance
