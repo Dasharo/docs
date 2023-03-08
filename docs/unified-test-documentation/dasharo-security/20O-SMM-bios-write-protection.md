@@ -50,11 +50,11 @@ returned.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Try to read the firmware by using the internal programmer and `flashrom`
-    tool. The following command should be used:
+1. Execute the following command in the terminal to check platform flashing
+    conditions:
 
     ```bash
-    flashrom -p internal -r /tmp/dummy.rom
+    flashrom -p internal
     ```
 
 1. Note the result.
@@ -104,11 +104,11 @@ SMM protection is not returned any more.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Try to read the firmware by using the internal programmer and `flashrom`
-    tool. The following command should be used:
+1. Execute the following command in the terminal to check platform flashing
+    conditions:
 
     ```bash
-    flashrom -p internal -r /tmp/dummy.rom
+    flashrom -p internal
     ```
 
 1. Note the result.
