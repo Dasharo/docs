@@ -12,20 +12,46 @@ Github](https://github.com/Dasharo/dasharo-issues).
 
 Following sections explain how to deal with most common `flashrom` problem.
 
-### How to install flashrom ?
+### How to install Dasharo flashrom fork ?
 
-* Install flashrom v1.1 or newer with your distribution's package manager if
-  you don't have it installed yet. If your distro doesn't provide flashrom or
-  provides an outdated one, you can build it yourself using
-  [this instruction](https://www.flashrom.org/Downloads).
-* Or compile recent version of flashrom:
+Following procedure is for advanced users who are familiar with
+source compilation and can resolve potential missing depenencies or
+other typical compilation problems. If you are not familar with
+compilation from source we recommend use of Dasharo Tools Suite,
+which is minimal Linux environment to deploy, update, and maintain
+firmware on Dasharo-supported devices. Please follow [DTS
+documentation](../../dasharo-tools-suite/overview). Otherwise please follow compilation procedure.
 
-  ``` console
-  sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
-  git clone https://github.com/flashrom/flashrom.git
-  cd flashrom
-  sudo make install
-  ```
+Currently, the latest flashrom release lacks support for Alder Lake
+S and Comet Lake U internal flashing. Because of this, we need to
+build flashrom from [Dashro
+fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
+The procedure was tested on [Ubuntu 22.04 desktop amd64
+ISO](https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso)
+burned on the USB stick. It may work on other Debian-based distributions.
+
+Boot the Ubuntu live image and select the `Try Ubuntu` option. Open a terminal
+and proceed with the commands below.
+
+Install build dependencies:
+
+```bash
+sudo apt-get update
+sudo apt-get install git build-essential pkg-config libpci-dev udev
+```
+
+Obtain source code:
+
+```bash
+git clone https://github.com/Dasharo/flashrom.git -b dasharo-release
+cd flashrom
+```
+
+Build and install flashrom:
+
+```bash
+sudo make install
+```
 
 ### Perform dry run to detect the problems early
 
@@ -152,9 +178,9 @@ No EEPROM/flash device found.
 Note: flashrom can never write if the flash chip isn't found automatically.
 ```
 
-that means your flashrom version is incorrect. Follow the procedure for
-building the right flashrom is described in `Build flashrom` section in the
-[Initial deployment documentation](../unified/msi/initial-deployment.md#initial-deployment-manually).
+that means your flashrom version is incorrect. Follow the procedure of
+[building flashrom](#how-to-install-dasharo-flashrom-fork) or use
+[DTS](../../dasharo-tools-suite/overview).
 
 ### Chip write protection enabled
 
