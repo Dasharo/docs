@@ -166,7 +166,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on e3e965b1 revision baada726](https://github.com/Dasharo/coreboot/tree/baada726)
 - [edk2 based on 2020.03.17 revision cad23725](https://github.com/Dasharo/edk2/tree/cad23725)
-- [Blobs based on v1.0 revision 5b0453b6](https://gitlab.com/novacustom/blobs/-/tree/5b0453b6)
 
 ## v1.2.0 - 2022-06-10
 
@@ -205,7 +204,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on e3e965b1 revision baada726](https://github.com/Dasharo/coreboot/tree/baada726)
 - [edk2 based on 2020.03.17 revision cad23725](https://github.com/Dasharo/edk2/tree/cad23725)
-- [Blobs based on v1.0 revision 5b0453b6](https://gitlab.com/novacustom/blobs/-/tree/5b0453b6)
 
 ## v1.1.0 - 2022-03-23
 
@@ -236,7 +234,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on ae9a8447 revision 0722fdf0](https://github.com/Dasharo/coreboot/tree/0722fdf0)
 - [edk2 based on 2020.03.17 revision ec6805c2](https://github.com/Dasharo/edk2/tree/ec6805c2)
-- [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
 
 ## v1.0.1 - 2022-03-01
 
@@ -281,7 +278,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on ae9a8447 revision 3a3808f9](https://github.com/Dasharo/coreboot/tree/3a3808f9)
 - [edk2 based on 2020.03.17 revision e0334c22](https://github.com/Dasharo/edk2/tree/e0334c22)
-- [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
 
 ## v1.0.0 - 2022-01-19
 
@@ -320,7 +316,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on ae9a8447 revision e995fc1c](https://github.com/Dasharo/coreboot/commit/e995fc1c)
 - [edk2 based on 2020.03.17 revision 59ae285f](https://github.com/Dasharo/edk2/tree/59ae285f)
-- [Blobs based on v1.0 revision 39d95913](https://gitlab.com/novacustom/blobs/-/tree/39d95913)
 
 ## v0.5.0 - 2021-11-19
 
@@ -361,7 +356,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on ae9a8447 revision 7d439573](https://gitlab.com/novacustom/coreboot/-/tree/7d439573)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
-- [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
 
 ## v0.4.0 - 2021-10-26
 
@@ -403,7 +397,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on ae9a8447 revision 03972293](https://gitlab.com/novacustom/coreboot/-/tree/03972293)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
-- [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
 
 ## v0.3.0 - 2021-10-11
 
@@ -438,7 +431,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on ae9a8447 revision v0.3.0](https://gitlab.com/novacustom/coreboot/-/tree/v0.3.0)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
-- [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
 
 ## v0.2.1 - 2021-9-29
 
@@ -474,7 +466,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on 4.14 revision 43c9604b](https://gitlab.com/novacustom/coreboot/-/tree/43c9604b)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
-- [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
 
 ## v0.2.0 - 2021-9-24
 
@@ -516,7 +507,6 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot based on 4.14 revision ff1c6572](https://gitlab.com/novacustom/coreboot/-/tree/ff1c6572)
 - [EDK2 based on 2020.03.17 revision bfd3d1a2](https://github.com/Dasharo/edk2/tree/bfd3d1a2)
-- [Blobs based on v1.0 revision 462f0c80](https://gitlab.com/novacustom/blobs/-/tree/462f0c80)
 
 ## v0.1.2 - 2021-08-31
 
@@ -547,7 +537,3 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [coreboot 4.14 (with additional commits for Clevo NV41MZ board support)](https://gitlab.com/novacustom/coreboot/-/compare/4.14...v0.1.1?from_project_id=29249618)
 - [EDK2](https://github.com/MrChromebox/edk2/commit/659ed4cb983a66ec241c05f42b69ad4d2e47b714)
-
-#### Binary blobs
-
-- [blobs extracted from the vendor firmware](https://gitlab.com/novacustom/blobs/-/tree/d56dacf5a06881c327e54b0632585402c4c3718d/mainboard/clevo/tgl-u/nv41mz)
