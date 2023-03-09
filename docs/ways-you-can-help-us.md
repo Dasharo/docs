@@ -171,6 +171,19 @@ You can [donate](https://opencollective.com/3mdeb_com/donate/profile) by using
 and financial tech platform that enables over 300 groups to raise and spend over
 $13 million dollars a year in full transparency.
 
+### Purchasing merchandise
+
+We're excited to offer a range of [Dasharo merchandise
+products](https://3mdeb.com/product-category/merchandise/) to help support our
+open-source firmware distribution project. By purchasing items such as t-shirts
+and mugs, you can support Dasharo and help us continue developing and improving
+the firmware.
+
+Our online shop makes browsing and ordering merchandise easy, and we offer fast
+shipping to get your items to you quickly. Whether you're looking for a new
+t-shirt to wear to events or a mug for your morning coffee, we have various
+products. Head over to our shop and browse our selection of Dasharo merchandise!
+
 ### Can't see your option?
 
 Contact us `contact@dasharo.com`
