@@ -32,7 +32,7 @@ documentation.
 ### RTE
 
 RTE (acronym: Remote Testing Environment) should be prepared in accordance with
-[Quick start guide](../../rte/v1.1.0/quick-start-guide.md) documentation dedicated
+[Quick start guide](../../rte/v1.1.0/quick-start-guide) documentation dedicated
 to the device.
 
 ### Sonoff

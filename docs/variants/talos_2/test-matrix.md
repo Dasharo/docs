@@ -21,17 +21,17 @@ subjected from before the release of the new binary.
 | 10.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM001.002               |
 | 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.001, DSP004.003               |
 
-[CBP]: ../../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
-[PBT]: ../../../unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
-[HDS]: ../../../unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
-[DVT]: ../../../unified-test-documentation/dasharo-compatibility/31W-device-tree.md
-[UDT]: ../../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
-[UBT]: ../../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
-[LBT]: ../../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
-[CPU]: ../../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
-[USB]: ../../../unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support/
-[NVM]: ../../../unified-test-documentation/dasharo-compatibility/312-nvme-support/
-[DSP]: ../../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd/
+[CBP]: ../../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port
+[PBT]: ../../../unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support
+[HDS]: ../../../unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support
+[DVT]: ../../../unified-test-documentation/dasharo-compatibility/31W-device-tree
+[UDT]: ../../../unified-test-documentation/dasharo-compatibility/31O-usb-detect
+[UBT]: ../../../unified-test-documentation/dasharo-compatibility/31N-usb-boot
+[LBT]: ../../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support
+[CPU]: ../../../unified-test-documentation/dasharo-compatibility/31T-cpu-status
+[USB]: ../../../unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support
+[NVM]: ../../../unified-test-documentation/dasharo-compatibility/312-nvme-support
+[DSP]: ../../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd
 
 ## Module: Dasharo security
 

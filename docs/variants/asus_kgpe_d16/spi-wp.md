@@ -367,7 +367,7 @@ So our WP range would be 2MB at 6MB offset
 setting the WP range, one may want to sign the firmware with own vboot keys.
 The Dasharo build come by default with Google vboot developer keys, so to take
 advantage of vboot, one should sign the binary before flashing and setting the
-WP range. Refer to [vboot signing](../../../guide/vboot_signing/).
+WP range. Refer to [vboot signing](../../../guides/vboot-signing/).
 Unfortunately the utilities support only 2 RW partitions for resiging.
 Otherwise a whole image must be rebuilt. After custo mkeys have been used to
 sign the ifmrware image and the image has been flashed proceed with enalbing
