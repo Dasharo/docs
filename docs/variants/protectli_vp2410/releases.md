@@ -53,7 +53,7 @@ gpg -v --verify protectli_vault_glk_v1.0.15.rom.sha256.sig protectli_vault_glk_v
 
 - [coreboot based on b77cf229 revision f59b1ec9](https://github.com/Dasharo/coreboot/tree/f59b1ec9)
 - [edk2 based on 7f90b9cd revision 90364638](https://github.com/Dasharo/edk2/tree/90364638)
-- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 - FSP: Custom version based on Intel GeminiLake FSP 2.2.1.3
 - Management Engine: Custom image based on CSE 4.0.30.1392
 - microcode:
