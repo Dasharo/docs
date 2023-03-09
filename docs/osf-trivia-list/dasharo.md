@@ -237,7 +237,7 @@ Dasharo Tools Suite
 
 ## What are the differences between the official coreboot repository and the Dasharo repository?
 
-* Dasharo focus on specific platforms listed in  [supported
+* Dasharo focuses on specific platforms listed in  [supported
   hardware](https://docs.dasharo.com/unified/novacustom/overview/) section of Dasharo
   Universe documentation.
 
