@@ -171,6 +171,15 @@ You can [donate](https://opencollective.com/3mdeb_com/donate/profile) by using
 and financial tech platform that enables over 300 groups to raise and spend over
 $13 million dollars a year in full transparency.
 
+### Purchasing merchandise
+
+You can also support us by buying [Dasharo merchandise
+products](https://3mdeb.com/product-category/merchandise/) at our online shop.
+We have a variety of Dasharo merchandise products available for purchase that
+help support our brand. Plus, with easy online ordering and fast shipping, it's
+never been easier to support Dasharo. Head over to our shop and browse our
+selection of Dasharo merchandise today!
+
 ### Can't see your option?
 
 Contact us `contact@dasharo.com`
