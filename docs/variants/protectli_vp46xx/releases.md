@@ -211,7 +211,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 [sha256][v1.0.13_hash]{.md-button}
 [sha256.sig][v1.0.13_sig]{.md-button}
 
-See how to verify signatures on [asciinema](TBD)
+See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 ### SBOM (Software Bill of Materials)
 
