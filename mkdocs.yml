@@ -1,6 +1,6 @@
 ---
 site_name: Dasharo Universe
-site_url: https://docs.dasharo.com/
+site_url: https://docs.dasharo.com
 repo_url: https://github.com/dasharo/docs
 theme:
   name: material

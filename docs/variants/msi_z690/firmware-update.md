@@ -15,7 +15,7 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
 ## Prerequisites
 
 Before proceeding, ensure that the firmware protections are disabled in
-[Dasharo Security Options](../..//dasharo-menu-docs/dasharo-system-features.md).
+[Dasharo Security Options](../../dasharo-menu-docs/dasharo-system-features.md).
 Both `BIOS boot medium lock` and `Enable SMM BIOS write protection` should be
 unchecked. [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration)
 must be disabled as well (uncheck `Attempt Secure Boot` if
