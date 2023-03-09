@@ -18,8 +18,10 @@ This menu offers security-sensitive options like:
   privileged code installed by the firmware in the system memory) to write to
   BIOS flash. Recommended to be enabled if [Firmware setup password](overview.md#user-password-management)
   is set. Disable the protection if you need access to flash with flashrom.
-- `Boot menu enabled` - enables/disables presentation of one-time boot menu,
-  during the boot stage. 
+- `Boot menu enabled` - ability to enter one-time boot menu.
+  After activating this option the user can perform booting chosen OS,
+  for next session, only. If this option remains unchecked the boot menu
+  will not appear and computer start with default OS.
 
 ## Networking Options
 
