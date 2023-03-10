@@ -249,14 +249,20 @@ SLOC (or more I guess e.g. Talos II coreboot support).
 
 ## What is Dasharo Certification Program?
 
-Dasharo Certification Program (DCP) is a rigorous certification program that
-sets a high-quality bar for open-source firmware. It aims to provide stable,
-secure, and reliable firmware that meets the Dasharo values. The program
-encourages developers to create their forks of Dasharo or contribute back to
-the Dasharo project or coreboot upstream. By doing so, they can leverage the
-power of open-source development to create custom firmware tailored to their
-specific needs. The certification process ensures that the firmware binary
-meets the strict criteria by testing  3mdeb in the certification lab.
+The Dasharo Certification Program (DCP) is a highly specialized certification
+program that benchmarks open-source firmware ecosystem deliverables. The
+program ensures that firmware is stable, secure, and dependable while aligning
+with the Dasharo values. DCP encourages developers to create their version of
+Dasharo or contribute to the Dasharo project or coreboot upstream, enabling
+them to leverage the power of open-source development to create custom firmware
+tailored to their specific needs based on years of Dasharo quality assurance
+results. The program's rigorous certification process entails comprehensive
+testing in the Dasharo Certification Lab, ensuring that the firmware binary
+meets the strict standards established by the program. By aligning with the
+Dasharo values, the certification program improves the overall posture of the
+open-source firmware ecosystem, making it long-term maintainable, sustainable,
+and trustworthy and providing specific service level agreements and warranties
+to commercial customers and the community.
 
 The Dasharo-certified firmware provides long-term maintenance over ten years
 after the CPU microarchitecture release, which means that OEM, ODM, hardware
