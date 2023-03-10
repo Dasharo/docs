@@ -264,6 +264,8 @@ open-source firmware ecosystem, making it long-term maintainable, sustainable,
 and trustworthy and providing specific service level agreements and warranties
 to commercial customers and the community.
 
+## What is DCP-approved firmware?
+
 The Dasharo-certified firmware provides long-term maintenance over ten years
 after the CPU microarchitecture release, which means that OEM, ODM, hardware
 vendors, and other companies can rely on the firmware for a long time without
@@ -296,12 +298,6 @@ Package (DSP) and Dasharo Enterprise Package (DEP). These packages offer
 essential services like porting to new platforms, developing device drivers,
 debugging, and fixing bugs. Companies can rely on 3mdeb's expertise to ensure
 their systems remain secure, up-to-date, and reliable.
-
-In summary, DCP is an essential program for companies leveraging open-source
-firmware for their systems. It provides a high-quality bar for firmware that
-respects privacy, liberty, and trustworthiness. Moreover, 3mdeb offers support
-and maintenance to ensure that companies can rely on their systems for a long
-time.
 
 <!--
 ## What is Dasharo Community Support?
