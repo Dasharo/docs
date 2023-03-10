@@ -23,19 +23,18 @@ Certification Procedure for both tested platforms:
 | 8.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 9.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD001.002, AUD004.001, AUD004.002 AUD005.001, AUD005.002 AUD006.001, AUD006.002 |
 | 10.  | [NVMe support][NVM]                               | NVM           | All                                  |
-| 11.  | [Network boot][PXE]                               | PXE           | Without PXE008.001                   |
+| 11.  | [Network boot][PXE]                               | PXE           | Without PXE007.001                   |
 | 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 13.  | [Windows booting][WBT]                            | WBT           | All                                  |
 | 14.  | [SD card support][SDC]                            | SDC           | All                                  |
 | 15.  | [Custom Boot Keys][CBK]                           | CBK           | All                                  |
 | 16.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 17.  | [CPU status][CPU]                                 | CPU           | All                                  |
-| 18.  | [BIOS Setup password][PSW]                        | PSW           | All                                  |
-| 19.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
-| 20.  | [Super I/O initialization - QubesOS][PPS]         | PPS           | All                                  |
-| 21.  | [Device power control operations][DPC]            | DPC           | All                                  |
-| 22.  | [Display resolution - QubesOS][DSR]               | DSR           | All                                  |
-| 23.  | [SATA hot-plug detection][SHT]                    | SHT           | All                                  |
+| 18.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
+| 19.  | [Super I/O initialization - QubesOS][PPS]         | PPS           | All                                  |
+| 20.  | [Device power control operations][DPC]            | DPC           | All                                  |
+| 21.  | [Display resolution - QubesOS][DSR]               | DSR           | All                                  |
+| 22.  | [SATA hot-plug detection][SHT]                    | SHT           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -56,7 +55,6 @@ Certification Procedure for both tested platforms:
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
-[PSW]: ../../unified-test-documentation/dasharo-compatibility/329-bios-setup-password.md
 [SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
 [PPS]: ../../unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
 [DPC]: ../../unified-test-documentation/dasharo-compatibility/344-power-operations.md
@@ -75,6 +73,9 @@ Certification Procedure for both tested platforms:
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 | 7.   | [SMM BIOS write protection][SMM]                  | SMM           | All                                  |
 | 8.   | [Early boot DMA protection][EDP]                  | EDP           | All                                  |
+| 9.   | [BIOS Setup password][PSW]                        | PSW           | All                                  |
+| 10.  | [Network Boot availability][NBA]                  | NBA           | All                                  |
+| 11.  | [USB stack][USS]                                  | USS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -84,6 +85,9 @@ Certification Procedure for both tested platforms:
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 [SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 [EDP]: ../../unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
+[PSW]: ../../unified-test-documentation/dasharo-security/20R-bios-setup-password.md
+[NBA]: ../../unified-test-documentation/dasharo-security/20T-network-boot-block.md
+[USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
 
 ### Module: Dasharo performance
 
