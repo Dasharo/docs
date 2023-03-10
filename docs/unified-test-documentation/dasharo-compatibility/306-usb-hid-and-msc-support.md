@@ -13,150 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## USB001.001 Enable USB stack (firmware)
-
-**Test description**
-
-This test aims to verify that the USB stack might be enabled. If the stack is
-activated, there will be an option to use USB bootable drives and USB keyboards
-on the firmware level.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Connect PS/2 keyboard to the device.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Verify that the `Enable USB stack` field is checked - if not, use `Spacebar`
-    to change option settings.
-1. Save using `F10`, and exit from the menu using `Esc`.
-1. Connect any USB with a bootable system and USB keyboard to the DUT.
-1. Reboot the device.
-1. While booting, press `BOOT_MENU_KEY` on the USB keyboard to enter Setup
-    Menu.
-1. Note the results.
-
-**Expected result**
-
-1. USB keyboard should be operable.
-1. USB installer should be visible as a bootable device.
-
-## USB001.002 Disable USB stack (firmware)
-
-**Test description**
-
-This test aims to verify that the USB stack might be disabled. If the stack is
-deactivated, there will be no option to use USB bootable drives and USB
-keyboards on the firmware level.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Connect PS/2 keyboard to the device.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Verify that the `Enable USB stack` field is not checked - if so, use
-    `Spacebar` to change option settings.
-1. Save using `F10`, and exit from the menu using `Esc`.
-1. Connect any USB with a bootable system and USB keyboard to the DUT.
-1. Reboot the device.
-1. While booting, press `BOOT_MENU_KEY` on the PS/2 keyboard to enter Setup
-    Menu.
-1. Try to navigate through the menu by using the USB keyboard.
-1. Note the results.
-
-**Expected result**
-
-1. USB keyboard should be non-operable.
-1. USB installer should not be visible as a bootable device.
-
-## USB002.001 Enable USB Mass Storage (firmware)
-
-**Test description**
-
-This test aims to verify that USB Mass Storage might be enabled. If the storage
-support is activated, there will be an option to use USB bootable drives on the
-firmware level.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Verify that the `Enable USB Mass Storage` field is checked - if not, use
-    `Spacebar` to change option settings.
-1. Save using `F10`, and exit from the menu using `Esc`.
-1. Connect any USB with a bootable system and USB keyboard to the DUT.
-1. Reboot the device.
-1. While booting, press `BOOT_MENU_KEY` to enter Setup Menu.
-1. Note the result.
-
-**Expected result**
-
-USB installer should be visible as a bootable device.
-
-## USB002.002 Disable USB Mass Storage (firmware)
-
-**Test description**
-
-This test aims to verify that USB Mass Storage might be disabled. If the storage
-support is deactivated, there will be no option to use USB bootable drives on
-the firmware level.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Dasharo System Features` menu option.
-1. Verify that the `Enable USB Mass Storage` field is not checked - if so, use
-    `Spacebar` to change option settings.
-1. Save using `F10`, and exit from the menu using `Esc`.
-1. Connect any USB with a bootable system and USB keyboard to the DUT.
-1. Reboot the device.
-1. While booting, press `BOOT_MENU_KEY` to enter Setup Menu.
-1. Note the result.
-
-**Expected result**
-
-USB installer should not be visible as a bootable device.
-
-## USB003.001 USB devices detection (firmware)
+## USB001.001 USB devices detection (firmware)
 
 **Test description**
 
@@ -185,7 +42,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 1. Flash drive entry is listed in the boot menu.
 
-## USB003.002 USB devices detection in OS (Ubuntu 22.04)
+## USB001.002 USB devices detection in OS (Ubuntu 22.04)
 
 **Test description**
 
@@ -221,7 +78,7 @@ labels.
 1. After each device is connected to the USB port, a new USB device entry
     in `lsusb` command output should appear.
 
-## USB003.003 USB devices detection in OS (Windows 11)
+## USB001.003 USB devices detection in OS (Windows 11)
 
 **Test description**
 
@@ -271,7 +128,7 @@ be displayed. All devices' status should be `OK`.
     OK         USB             USB Mass Storage Device
     ```
 
-## USB004.001 USB keyboard detection (firmware)
+## USB002.001 USB keyboard detection (firmware)
 
 **Test description**
 
@@ -298,7 +155,7 @@ by the firmware and all basic keys work according to their labels.
 
 1. All menus can be entered using the external USB keyboard.
 
-## USB004.002 USB keyboard detection (Ubuntu 22.04)
+## USB002.002 USB keyboard detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -347,7 +204,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    their labels.
 1. Key combinations are detected correctly.
 
-## USB004.003 USB keyboard detection (Windows 11)
+## USB002.003 USB keyboard detection (Windows 11)
 
 **Test description**
 
@@ -423,7 +280,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    or actions when pressed.
 1. Key combinations are detected correctly.
 
-## USB005.001 Upload 1GB file on USB storage (Ubuntu 22.04)
+## USB003.001 Upload 1GB file on USB storage (Ubuntu 22.04)
 
 **Test description**
 
@@ -481,7 +338,7 @@ f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  test_file.txt
 f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  {path_to_usb_storage}/test_file.txt
 ```
 
-## USB005.002 Upload 1GB file on USB storage (Windows 11)
+## USB003.002 Upload 1GB file on USB storage (Windows 11)
 
 **Test description**
 
