@@ -24,9 +24,11 @@ render correctly as HTML in local preview.
 
 ### Broken links checker
 
-Should be installed through `requirements.txt`. Following command output
-`linkchecker-out.txt`, feel free to adjust other parameters according to your
-needs.
+To check for broken links we use `linkchecker`.  It should be installed through
+[requirements.txt](#local-build). Following command produces
+`linkchecker-out.txt` file, which contains list of broken links, please make
+sure your proposed changes have no broken links reported. Feel free to adjust
+other parameters according to your needs.
 
 ```shell
 linkchecker -F text --check-extern http://0.0.0.0:8000
