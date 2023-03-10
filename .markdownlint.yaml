@@ -75,7 +75,7 @@ MD013:
   # Include tables
   tables: false
   # Include headings
-  headings: false
+  headings: true
   # Strict length checking (e.g. allow for longer URLs)
   strict: false
   # Stern length checking
