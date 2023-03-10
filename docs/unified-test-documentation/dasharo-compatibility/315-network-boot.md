@@ -6,77 +6,9 @@
 
 1. Proceed with the
     [Generic test setup: firmware](../../generic-test-setup#firmware).
-1. Device should be connected to the Internet by using an Ethernet cable.
+1. The DUT should be connected to the Internet by using an Ethernet cable.
 
-## PXE001.001 Enable Network Boot (firmware)
-
-**Test description**
-
-This test aims to verify that the Network Boot option might be enabled. If this
-option is activated, an additional option in the Boot menu which allows to boot
-the system from iPXE servers will appear.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Networking Options` menu option.
-1. Verify that the `Enable Network Boot` field is checked - if not, use
-    `Spacebar` to change option settings.
-1. Save using `F10`, and exit from the menu using `Esc`.
-1. Reboot the device.
-1. While booting, press `BOOT_MENU_KEY` on the USB keyboard to enter Setup
-    Menu.
-1. Note the results.
-
-**Expected result**
-
-The `Network Boot` option in the `Boot menu` should be visible.
-
-## PXE001.002 Disable Network Boot (firmware)
-
-**Test description**
-
-This test aims to verify that the Network Boot option might be disabled. If this
-option is deactivated, an additional option in the Boot menu which allows to
-boot the system from iPXE servers will be hidden.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While booting, press the `SETUP_MENU_KEY` to enter Setup Menu.
-1. Enter the `Networking Options` menu option.
-1. Verify that the `Enable Network Boot` field is checked - if so, use
-    `Spacebar` to change option settings.
-1. Save using `F10`, and exit from the menu using `Esc`.
-1. Reboot the device.
-1. While booting, press `BOOT_MENU_KEY` on the USB keyboard to enter Setup
-    Menu.
-1. Note the results.
-
-**Expected result**
-
-The `Network Boot` option in the `Boot menu` should not be visible.
-
-## PXE002.001 Dasharo Network Boot is bootable
+## PXE001.001 Dasharo Network Boot is bootable
 
 **Test description**
 
@@ -104,7 +36,7 @@ is displayed.
 1. After selecting the `iPXE Network boot`, the `Dasharo Network Boot Menu`
     should be displayed.
 
-## PXE003.001 Dasharo network boot menu boot options order is correct
+## PXE002.001 Dasharo network boot menu boot options order is correct
 
 **Test description**
 
@@ -138,7 +70,7 @@ OS installation
 iPXE Shell
 ```
 
-## PXE004.001 Autoboot option is available and works correctly
+## PXE003.001 Autoboot option is available and works correctly
 
 **Test description**
 
@@ -170,7 +102,7 @@ If the server assigned to the `Autoboot` option isn't available in the local
 network, selecting this option will result in configuring the network interfaces
 and return to the `Setup Menu`.
 
-## PXE005.001 DTS option is available and works correctly
+## PXE004.001 DTS option is available and works correctly
 
 **Test description**
 
@@ -201,7 +133,7 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 After configuring the network interfaces, connecting to the server and booting,
 `Dasharo Tools Suite` menu should appear.
 
-## PXE006.001 OS installation option is available and works correctly
+## PXE005.001 OS installation option is available and works correctly
 
 **Test description**
 
@@ -229,7 +161,7 @@ This test aims to verify that the `OS installation` option in
 After configuring the network interfaces, connecting to the server and booting,
 `netboot.xyz` menu should appear.
 
-## PXE007.001 iPXE shell option is available and works correctly
+## PXE006.001 iPXE shell option is available and works correctly
 
 **Test description**
 
@@ -268,7 +200,7 @@ This test aims to verify that the `iPXE Shell` option in
 After configuring the network interfaces, connecting to the server and booting,
 `netboot.xyz` menu should appear.
 
-## PXE008.001 iPXE network boot
+## PXE007.001 iPXE network boot
 
 **Test description**
 
