@@ -235,6 +235,7 @@ Dasharo Tools Suite
 * We provide ready to use binaries with GPG based signing scheme that improve
   verification where firmware coming from.
 
+<!-- markdownlint-disable-next-line MD013 -->
 ## What are the differences between the official coreboot repository and the Dasharo repository?
 
 * Dasharo focuses on specific platforms listed in  [supported
