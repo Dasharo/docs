@@ -1,4 +1,4 @@
-# Dasharo compatibility: BIOS Setup password
+# Dasharo Security: BIOS Setup password
 
 ## Test cases common documentation
 
