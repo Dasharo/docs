@@ -14,7 +14,7 @@ subjected from before the release of the new binary.
 | 3.   | [coreboot fan control][FAN]                       | FAN           | All                                  |
 | 4.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.001, LBT001.002, LBT002.001, LBT002.002|
-| 6.   | [Network boot][PXE]                               | PXE           | PXE006.001                           |
+| 6.   | [Network boot][PXE]                               | PXE           | PXE007.001                           |
 | 7.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 8.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 9.   | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.001                          |
