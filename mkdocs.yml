@@ -344,9 +344,9 @@ nav:
               - 'SMM BIOS write protection': unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
               - 'Early boot DMA protection': unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
               - 'Boot menu enable/disable': unified-test-documentation/dasharo-security/20P-boot-menu.md
-              - 'BIOS Setup password': unified-test-documentation/dasharo-security/20R-bios-setup-password.md
-              - 'USB stack': unified-test-documentation/dasharo-security/20S-usb-stack.md
-              - 'Network Boot availability': unified-test-documentation/dasharo-security/20T-network-boot-block.md
+              - 'UEFI Setup password': unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
+              - 'USB stack enable/disable': unified-test-documentation/dasharo-security/20S-usb-stack.md
+              - 'Network stack enable/disable': unified-test-documentation/dasharo-security/20T-network-boot.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
               - 'Device boot measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md

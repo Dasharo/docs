@@ -73,9 +73,9 @@ Certification Procedure for both tested platforms:
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 | 7.   | [SMM BIOS write protection][SMM]                  | SMM           | All                                  |
 | 8.   | [Early boot DMA protection][EDP]                  | EDP           | All                                  |
-| 9.   | [BIOS Setup password][PSW]                        | PSW           | All                                  |
-| 10.  | [Network Boot availability][NBA]                  | NBA           | All                                  |
-| 11.  | [USB stack][USS]                                  | USS           | All                                  |
+| 9.   | [UEFI Setup password][PSW]                        | PSW           | All                                  |
+| 10.  | [Network stack enable/disable][NBA]               | NBA           | All                                  |
+| 11.  | [USB stack enable/disable][USS]                   | USS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -85,8 +85,8 @@ Certification Procedure for both tested platforms:
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 [SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 [EDP]: ../../unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
-[PSW]: ../../unified-test-documentation/dasharo-security/20R-bios-setup-password.md
-[NBA]: ../../unified-test-documentation/dasharo-security/20T-network-boot-block.md
+[PSW]: ../../unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
+[NBA]: ../../unified-test-documentation/dasharo-security/20T-network-boot.md
 [USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
 
 ### Module: Dasharo performance
