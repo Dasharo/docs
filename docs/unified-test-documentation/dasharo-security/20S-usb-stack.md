@@ -1,4 +1,4 @@
-# Dasharo Security: USB stack
+# Dasharo Security: USB stack enable/disable
 
 ## Test cases common documentation
 
