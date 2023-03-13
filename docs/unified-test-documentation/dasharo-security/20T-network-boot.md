@@ -1,4 +1,4 @@
-# Dasharo Security: Network Boot availability
+# Dasharo Security: Network stack enable/disable
 
 ## Test cases common documentation
 
