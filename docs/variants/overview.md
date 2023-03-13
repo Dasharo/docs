@@ -28,7 +28,7 @@ open-source firmware distribution.
 
 * Following laptops are supported under Dasharo Community Support
 
-    - [Tuxeo IBS15](../tuxedo_ibs15/releases)
+    - [Tuxedo IBS15](../tuxedo_ibs15/releases)
 
 ## Desktop
 
