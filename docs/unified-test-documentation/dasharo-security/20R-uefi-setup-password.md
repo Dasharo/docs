@@ -1,4 +1,4 @@
-# Dasharo Security: BIOS Setup password
+# Dasharo Security: UEFI Setup password
 
 ## Test cases common documentation
 
@@ -223,7 +223,7 @@ will be rejected.
 
 **Test description**
 
-BIOS setup password feature has been equipped with an additional functionality
+UEFI Setup password feature has been equipped with an additional functionality
 that prevents re-setting one of the last 5 access passwords. This test aims to
 verify whether the attempt to set old password again will be rejected.
 
