@@ -38,7 +38,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 - [coreboot based on c6ee1509da revision 9034fb12](https://github.com/Dasharo/coreboot/tree/9034fb12)
 - [edk2 based on 7f90b9cd revision e31b7a71](https://github.com/Dasharo/edk2/tree/e31b7a71)
-- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 - VP4670: [Cometlake1 FSP 9.0.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake1)
 - VP4630 and VP4650: [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake2)
 - Intel i225 EFI driver version 0.10.4,
@@ -84,7 +84,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 - [coreboot based on c6ee1509da revision ed9f6fe0](https://github.com/Dasharo/coreboot/tree/ed9f6fe0)
 - [edk2 based on 7f90b9cd revision e31b7a71](https://github.com/Dasharo/edk2/tree/e31b7a71)
-- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 - VP4670: [Cometlake1 FSP 9.0.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake1)
 - VP4630 and VP4650: [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/12160fe64bc1caaba3c2d6be44da0cd8787a2561/CometLakeFspBinPkg/CometLake2)
 - Intel i225 EFI driver version 0.10.4,
@@ -103,7 +103,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Tools for resigning Vboot images with one RW partition](https://docs.dasharo.com/common-coreboot-docs/vboot_signing/)
+- [Tools for resigning Vboot images with one RW partition](../../../guides/vboot-signing/)
 
 ### Changed
 
@@ -128,7 +128,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 - [coreboot based on 4.16 revision d662831d](https://github.com/Dasharo/coreboot/tree/d662831d)
 - [edk2 based on 7f90b9cd revision 576aa6a4](https://github.com/Dasharo/edk2/tree/576aa6a4)
-- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 - [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake2)
 - Intel i225 EFI driver version 0.10.4,
   SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
@@ -146,7 +146,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Vboot Verified Boot](https://docs.dasharo.com/common-coreboot-docs/vboot_signing/)
+- [Vboot Verified Boot](../../../guides/vboot-signing/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
@@ -175,7 +175,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 - [coreboot based on 4.16 revision dfaaf44d](https://github.com/Dasharo/coreboot/tree/dfaaf44d)
 - [edk2 based on 7f90b9cd revision 5345a611](https://github.com/Dasharo/edk2/tree/5345a611)
-- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 - [Cometlake2 FSP 9.2.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake2)
 - Intel i225 EFI driver version 0.10.4,
   SHA256: 2d234ecf629fc10dc0c291a1390de3d27a05c6ecbd935628b6ff154f386d061e
@@ -211,13 +211,13 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 [sha256][v1.0.13_hash]{.md-button}
 [sha256.sig][v1.0.13_sig]{.md-button}
 
-See how to verify signatures on [asciinema](TBD)
+See how to verify signatures on [this video](https://asciinema.org/a/388861)
 
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.16 revision 546e1c86](https://github.com/Dasharo/coreboot/tree/546e1c86)
 - [edk2 based on 7f90b9cd revision 7f90b9cd](https://github.com/Dasharo/edk2/tree/7f90b9cd)
-- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2)
+- [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 - [Cometlake1 FSP 9.0.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake1)
 - Intel i225 EFI driver version 0.9.03,
   SHA256: 63e77b237dc9a8aacdd7465675ee88afc01dad3204156a91a0976a4ad1ed5b00

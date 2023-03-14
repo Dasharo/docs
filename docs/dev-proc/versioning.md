@@ -9,9 +9,8 @@ Dasharo Quality Criteria.
 
 The only way to map Dasharo Version to version of Open Source Firmware
 framework or other components included in Dasharo Release is through release
-notes. Link to Dasharo Release Notes for your hardware platform can be found in
-[Hardware Compatibility List](../variants/hardware-compatibility-list.md)
-section.
+notes. Link to Dasharo Release Notes for your hardware platform can be found
+in menu on the left side (Supported Hardware->Hardware Model->Releases).
 
 ## Signing keys
 

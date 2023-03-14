@@ -81,8 +81,8 @@ Process](../dev-proc/standard-release-process.md).
 * Added new tools: cbfstool, cbmem, futil, intelmetool (all from [Dasharo
   coreboot fork](https://github.com/Dasharo/coreboot/tree/coreboot-utils)),
   [binwalk](https://github.com/ReFirmLabs/binwalk),
-  [uefi-firmware-parser](github.com/theopolis/uefi-firmware-parser),
-  [mei-amt-check](github.com/mjg59/mei-amt-check).
+  [uefi-firmware-parser](https://github.com/theopolis/uefi-firmware-parser),
+  [mei-amt-check](https://github.com/mjg59/mei-amt-check).
 * Updated flashrom to version
   [dasharo-v1.2.2](https://github.com/Dasharo/flashrom/tree/dasharo-v1.2.2).
 * Deploying iPXE boot artifacts on

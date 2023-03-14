@@ -100,8 +100,8 @@ header! Using a spider web connection degrades the signal quality to the point
 where CPU cannot properly talk to TPM via LPC bus. Tested with
 [PC Engines TPM module](https://3mdeb.com/shop/modules/tpm-2-0/) and failed to
 succeed this way. Designing and producing proper TPM header and/or reliable
-adapter, could solve this problem. The [lpnTPM
-project](https://lpntpm.lpnplant.io/) could help here in the future.
+adapter, could solve this problem. The [TwPM
+project](https://twpm.dasharo.com/) could help here in the future.
 
 ![](/images/kgpe_tpm_header.png)
 

@@ -101,7 +101,7 @@ release notes directly to the customer and does not have to be publicly
 available.
 1. Every firmware produced by Dasharo Ecosystem use [Semantic Versioning
 2.0.0](https://semver.org/) compatible versioning scheme. For details please
-check [description](../dev-proc/versioning).
+check [description](../../dev-proc/versioning).
 1. Every firmware produced by Dasharo Ecosystem should use [Keep A Changelog
 1.0.0](https://keepachangelog.com/en/1.0.0/) compatible scheme as changelog
 format.

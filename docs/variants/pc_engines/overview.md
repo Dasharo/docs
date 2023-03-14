@@ -39,4 +39,4 @@ chat](https://matrix.to/#/#dasharo:matrix.org).
 
 ## References
 
-* [Post-EOL firmware announcement](post-eol-fw-announcement)
+* [Post-EOL firmware announcement](../post-eol-fw-announcement)

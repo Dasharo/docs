@@ -24,32 +24,15 @@ render correctly as HTML in local preview.
 
 ### Broken links checker
 
-```shell
-cd utils/blc
-docker build -t blc .
-docker run --rm --network host blc blc http://0.0.0.0:8000 -r | tee blc.txt
-```
-
-Above will check all of the links in the whole documentation recursively and
-generate the `blc.txt`, which will provide information on which links are
-reachable, and which are not.
-
-Checking the whole documentation can be time-consuming task (around 15 minutes).
-
-It is a good practice to verify at least the document you have edited, before
-publishing them. You can check a single page for broken links as well, simply
-by providing it's url. For example:
+To check for broken links we use `linkchecker`.  It should be installed through
+[requirements.txt](#local-build). Following command produces
+`linkchecker-out.txt` file, which contains list of broken links, please make
+sure your proposed changes have no broken links reported. Feel free to adjust
+other parameters according to your needs.
 
 ```shell
-docker run --rm -it --network host blc blc http://0.0.0.0:8000/unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key/  | tee blc.txt
+linkchecker -F text --check-extern http://0.0.0.0:8000
 ```
-
-Checking the whole documentation for broken links shall be done on each major
-documentation rework.
-
-You should then review the `blc.txt` file, looking for `BROKEN` keyword. Then,
-you can fix the broken links by checking where given links come from in the
-`blc.txt` file.
 
 ### Make sure no TBD or TODO content is displayed
 

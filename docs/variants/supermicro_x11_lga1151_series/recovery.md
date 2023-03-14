@@ -16,7 +16,7 @@ For information how to identify your mainboard model pelase check
 Following documentation describes the process of recovering hardware from brick
 state with through BMC BIOS Update feature. This feature can be used also for
 [initial deployment](../initial-deployment) and [Firmware
-Update](../firmawre-update).
+Update](../firmware-update).
 
 ### Requirements
 

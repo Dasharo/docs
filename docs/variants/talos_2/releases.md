@@ -117,7 +117,7 @@ used.
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision c92383f9](https://github.com/Dasharo/coreboot/tree/c92383f9)
-- [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/?id=98581863)
+- [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/?id=9858186353f2203fe477f316964e03609d12fd1d)
 
 ## v0.4.1 - 2022-01-10
 
@@ -169,7 +169,7 @@ used.
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision 13b58058](https://github.com/Dasharo/coreboot/commit/13b58058)
-- [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/98581863)
+- [skiboot based on 04-16-2019 revision 98581863](https://git.raptorcs.com/git/talos-skiboot/tree/?id=9858186353f2203fe477f316964e03609d12fd1d)
 - [heads based on 21e50681 revision 34c77951](https://git.raptorcs.com/git/talos-skiboot/commit/?id=9858186353f2203fe477f316964e03609d12fd1d)
 
 ## v0.4.0 - 2021-10-29

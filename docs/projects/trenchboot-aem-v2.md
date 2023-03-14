@@ -220,7 +220,7 @@ advantage of the QubesOS AEM feature, and TrenchBoot.
     + Test the solution on AMD hardware with TPM 2.0 and TPM 1.2 with legacy
       boot mode
 
-[qubes_grub2_fork]: https://github.com/Tren/qubes-grub2/tree/trenchboot_support
+[qubes_grub2_fork]: https://github.com/3mdeb/qubes-grub2/tree/trenchboot_support
 
 ## Projects or organizations relevant to this project before?
 

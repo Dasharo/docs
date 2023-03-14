@@ -224,7 +224,7 @@ and all basic keys work according to their labels.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 
 **Test steps**
 
@@ -1575,7 +1575,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 
 **Test steps**
 
@@ -1670,7 +1670,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 
 **Test steps**
 
@@ -1762,7 +1762,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 
 **Test steps**
 
@@ -1856,7 +1856,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 
 **Test steps**
 
@@ -2068,7 +2068,7 @@ and all basic keys work according to their labels.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 2. Connect PS/2 keyboard to the violet PS/2 port on the board or the PS/2
    splitter (if the board has a unified, black PS/2 connector)
 
@@ -2231,7 +2231,7 @@ and the menu can be traversed with serial console.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../generic-test-setup/#firmware)
+   [Generic test setup: firmware](../../generic-test-setup#firmware)
 2. Connect DB9 null modem cable to RS232/USB adapter and the onboard serial
    port connector.
 
