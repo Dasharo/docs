@@ -18,7 +18,7 @@ This menu offers security-sensitive options like:
   privileged code installed by the firmware in the system memory) to write to
   BIOS flash. Recommended to be enabled if [Firmware setup password](overview.md#user-password-management)
   is set. Disable the protection if you need access to flash with flashrom.
-- `Boot menu enabled` - enables/disables ability to enter one-time boot menu.
+- `Boot menu enabled` - enables/disables ability to enter boot manager menu.
   Enabled by default. Can be disabled, to prevent from booting from non-default
   boot media.
 
