@@ -80,18 +80,17 @@ chosen.
 1. If necessary - press `Y` to confirm saving the changes.
 1. Go back to the main menu using the `ESC` key.
 1. Select the `Reset` option to apply the settings and reboot.
-1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Boot
    Menu.
 
 **Expected result**
 
 1. While the DUT is booting, the prompt
-   `BOOT_MENU_KEY to enter Boot Manager Menu` should be displayed.
+   `BOOT_MENU_KEY to enter Boot Manager Menu` should not be displayed.
    Example of unwanted output:
 
     ```bash
     F11 to enter Boot Manager Menu
     ```
 
-1. After using the `BOOT MENU KEY` during boot, the boot menu should not be
-   displayed.
+1. Despite using the `BIOS_SETUP_KEY` boot menu should not be displayed.
