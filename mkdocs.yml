@@ -341,7 +341,7 @@ nav:
               - 'BIOS lock support': unified-test-documentation/dasharo-security/20J-bios-lock-support.md
               - 'SMM BIOS write protection': unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
               - 'Early boot DMA protection': unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
-              - 'Boot menu availability': unified-test-documentation/dasharo-security/20P-boot-menu.md
+              - 'Boot menu enable/disable': unified-test-documentation/dasharo-security/20P-boot-menu.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
               - 'Device boot measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md
