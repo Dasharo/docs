@@ -148,8 +148,12 @@ nav:
           - 'Overview': variants/qemu_q35/overview.md
           - 'Releases': variants/qemu_q35/releases.md
           - 'Building manual': variants/qemu_q35/building-manual.md
-          - 'Development': variants/qemu_q35/development.md
           - 'Test matrix': variants/qemu_q35/test-matrix.md
+          - 'Development': variants/qemu_q35/development.md
+          - 'Initial Deployment': variants/qemu_q35/initial-deployment.md
+          - 'Firmware update': variants/qemu_q35/firmware-update.md
+          - 'Recovery': variants/qemu_q35/recovery.md
+          - 'Hardware Configuration Matrix': variants/qemu_q35/hardware-matrix.md
       - 'MSI PRO Z690-A':
           - 'Overview': variants/msi_z690/overview.md
           - 'Releases': variants/msi_z690/releases.md

@@ -40,9 +40,5 @@ Certification Procedure for tested platform:
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 2.   | [ME neuter support][MNE]                          | MNE           | All                                  |
-| 3.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
-[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
-[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md

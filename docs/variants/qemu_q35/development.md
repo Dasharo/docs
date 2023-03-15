@@ -6,10 +6,10 @@
 docker instance (host machine) using built OVMF firmware image.
 
 + QEMU Installation:
-    - [Install QEMU on your linux distro](<https://www.qemu.org/download/#linux>)
+    - [Install QEMU on your linux distro](https://www.qemu.org/download/#linux)
 
  ```bash
- qemu-system-x86_64 -drive if=pflash,format=raw,file=Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd -debugcon file:debug.log -global isa-debugcon.iobase=0x402 -global ICH9-LPC.disable_s3=1 -net none -machine q35,smm=on
+ qemu-system-x86_64 -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd -debugcon file:debug.log -global ICH9-LPC.disable_s3=1 -net none -machine q35,smm=on
  ```
 
 + `-drive` indicate device is pflash with firmware image of built OVMF.fd image.
@@ -31,7 +31,7 @@ only Q35 machines are supported hence the machine type.
 1. After executing the above qemu command,
    qemu boots into UEFI built-in shell and to BIOS selection area.
 
-1. The features which are enabled in `OvmfPkgX64.dsc` can be verified at `BIOS menu`.
+1. The features which are enabled in `OvmfPkgX64.dsc` can be verified at `Setup menu`.
    At `Device Manager section` Dasharo features can
    be verified in `Dasharo System Features` section.
 
@@ -43,7 +43,7 @@ only Q35 machines are supported hence the machine type.
 rebuild the OVMF image with the following command.
 
 ```bash
-build -D DEBUG_ON_SERIAL_PORT -D BOOTLOADER=COREBOOT -a IA32 -a X64 -t GCC5 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc
+build -a IA32 -a X64 -t GCC5 -b RELEASE -p OvmfPkg/OvmfPkgX64.dsc
 ```
 
 1. By making some changes in the `OvmfPkgX64.dsc` file, one can add features like
@@ -74,7 +74,6 @@ DEFINE OPAL_PASSWORD_ENABLE    = TRUE
 TcgStorageCoreLib|SecurityPkg/Library/TcgStorageCoreLib/TcgStorageCoreLib.inf
 TcgStorageOpalLib|SecurityPkg/Library/TcgStorageOpalLib/TcgStorageOpalLib.inf
 !endif
-S3BootScriptLib|MdePkg/Library/BaseS3BootScriptLibNull/BaseS3BootScriptLibNull.inf
 #
 #
 ```
@@ -95,9 +94,10 @@ SecurityPkg/HddPassword/HddPasswordPei.inf
 
 ## Dasharo System Features
 
-1. The .FDF file tells about location of source file and options used for build process.
+1. The `.fdf` describes about source file location and variables used during
+build process.
 
-2. Below code snippet shows about the location of `SATA_PASSWORD` .inf file.
+2. Below code snippet shows about the location of `SATA disk password` `.inf` file.
 
 ```bash
 !if $(SATA_PASSWORD_ENABLE) == TRUE
@@ -105,8 +105,8 @@ INF SecurityPkg/HddPassword/HddPasswordDxe.inf
 !endif
 ```
 
-+ Include all necessary source file locations
-to point at source libraries in .FDF file.
++ Include all necessary source file locations to point at source libraries
+in .FDF file.
 
 + Below is the snippet of the SATA_PASSWORD support in `Device Manager`.
 

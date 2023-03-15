@@ -50,17 +50,12 @@ Following is an example of SMM feature enabled,
  Check the following build command:
 
 ```bash
-build -D DEBUG_ON_SERIAL_PORT -D BOOTLOADER=COREBOOT -a IA32 -a X64 -t GCC5 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc.
+build -a IA32 -a X64 -t GCC5 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc.
 ```
-
-- `DEBUG_ON_SERIAL_PORT` = The following flag must be given for the **DEBUG** build
-as the output is redirected to the I/O port **0x402** to qemu monitor.
-
-- Debug messages are visible on given I/O port.
-**0x402** will be later utilized for qemu invocation further in this documentation.
 
 - Once the build is completed, the OVMF firmware image can be found below given path:
 
 ```bash
-edk2/Build/Ovmf/DEBUG_GCC5/Ovmf.fd
+edk2/Build/Ovmf/DEBUG_GCC5/FV/OVMF_CODE.fd
+edk2/Build/Ovmf/DEBUG_GCC5/FV/OVMF_VARS.fd
 ```
