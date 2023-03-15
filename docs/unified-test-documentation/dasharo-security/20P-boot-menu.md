@@ -1,4 +1,4 @@
-# Dasharo Security: Boot menu availability
+# Dasharo Security: Boot menu enable/disable
 
 ## Test cases common documentation
 
@@ -6,12 +6,6 @@
 
 1. Proceed with the
    [Generic test setup: firmware](../../generic-test-setup#firmware).
-1. Proceed with the
-   [Generic test setup: OS installer](../../generic-test-setup#os-installer).
-1. Proceed with the
-   [Generic test setup: OS installation](../../generic-test-setup#os-installation).
-1. Proceed with the
-   [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
 ## BMA001.001 Boot menu enabling
 
@@ -41,22 +35,21 @@ This test aims to verify that, the boot menu is accessible when the
 1. If necessary - press `Y` to confirm saving the changes.
 1. Go back to the main menu using the `ESC` key.
 1. Select the `Reset` option to apply the settings and reboot.
-1. Boot into the system.
-1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the UEFI Boot
    Menu.
-1. Note the result.
 
 **Expected result**
 
 1. While the DUT is booting, the prompt
-   `BIOS_MENU_KEY to enter Boot Manager Menu` should be displayed.
+   `BOOT_MENU_KEY to enter Boot Manager Menu` should be displayed.
    Example output:
 
     ```bash
     F11 to enter Boot Manager Menu
     ```
 
-1. The `One Time Boot` option should be available in the UEFI Setup Menu.
+1. After using the `BOOT MENU KEY` during boot, the boot menu should be
+   displayed.
 
 ## BMA002.001 Boot menu disabling
 
@@ -89,16 +82,16 @@ chosen.
 1. Select the `Reset` option to apply the settings and reboot.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
    Menu.
-1. Note the result.
 
 **Expected result**
 
 1. While the DUT is booting, the prompt
-   `BIOS_MENU_KEY to enter Boot Manager Menu` should not be displayed.
+   `BOOT_MENU_KEY to enter Boot Manager Menu` should be displayed.
    Example of unwanted output:
 
     ```bash
     F11 to enter Boot Manager Menu
     ```
 
-1. The `One Time Boot` option should not be available in the UEFI Setup Menu.
+1. After using the `BOOT MENU KEY` during boot, the boot menu should not be
+   displayed.
