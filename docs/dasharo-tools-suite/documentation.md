@@ -649,6 +649,9 @@ strictly to Dasharo.
 
 #### Run commands from iPXE shell
 
+> Note: this functionality might not work, please see
+  [GitHub issue](https://github.com/Dasharo/dasharo-issues/issues/387).
+
 It is possible to execute the bash script after Linux startup by passing it from
 the iPXE shell. Every script placed in `/sbin/ipxe-commands` will be executed
 automatically after startup.
