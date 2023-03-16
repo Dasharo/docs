@@ -46,7 +46,7 @@ Navigate to the source code directory and start the build process:
 
 ```bash
 cd coreboot
-./build.sh dd4
+./build.sh ddr4
 ```
 
 The resulting Dasharo firmware image will be placed at `build/coreboot.rom`.
