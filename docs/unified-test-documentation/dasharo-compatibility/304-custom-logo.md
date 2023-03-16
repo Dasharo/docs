@@ -23,5 +23,14 @@ This test aims to verify that the DUT is configured to display the specified
 
 **Expected result**
 
-The logo that is displayed should be in accordance with [custom logo]
-documentation.
+The displayed logo should depend on the Dasharo variant:
+
+* if the Dasharo variant is NovaCustom - the NovaCustom logo should be displayed,
+* if the Dasharo variant is Protectli - the Protectli logo should be displayed,
+* if the Dasharo variant is Tuxedo - the Tuxedo logo should be displayed,
+* for all other variants Dasharo custom logo should be displayed.
+
+Keep in mind that the end-user's customized boot logo might also be displayed -
+if before the custom logo checking procedure described in the
+[Logo customization](../../guides/logo-customization.md)
+documentation has been performed.
