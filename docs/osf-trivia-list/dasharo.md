@@ -149,3 +149,6 @@ So Dasharo's binary blob policy is as follows:
 Dasharo also works without blobs on platforms that allow that. For example,
 ASUS KGPE-D16 can run without any blobs (officially there is no PSP on that
 hardware, and Opteron 6200 series CPUs can run without microcode patches).
+There is also a libre, POWER9-based server/workstation Talos II by Raptor
+Computing Systems, which also do not use any binary blobs, however it is more
+expensive than x86 platforms.
