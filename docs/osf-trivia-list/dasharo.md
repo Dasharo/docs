@@ -137,7 +137,7 @@ Those microcontrollers and IP blocks typically require firmware blobs as well.
 Some of the blobs are clearly visible, some may be obfuscated and hidden inside
 the silicon or other firmware blobs (e.g. Intel Management Engine region
 contains multiple other blobs besides the ME firmware -
-[more about Intel ME blob](me.md)).
+[more about Intel ME blob](../me)).
 
 So Dasharo's binary blob policy is as follows:
 
