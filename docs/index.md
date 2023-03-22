@@ -33,6 +33,8 @@ non-public development, custom hardware handled by vendor
   online party to discuss recent achievements in open-source firmware, open
   source hardware and open instruction set architecture. Feel free to check the
   website about recent vPub plans or subscribe to newsletter.
+* [Discord server](https://discord.gg/QseTVHum3w)
+* [Dasharo Twitter account](https://twitter.com/Dasharo_com)
 
 <!--
 
