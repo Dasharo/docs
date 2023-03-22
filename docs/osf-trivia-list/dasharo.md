@@ -126,3 +126,31 @@ applications.
 [cb-distro]: https://doc.coreboot.org/distributions.html
 [intel-quark]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/YRJQIPVK5WHACT64TH42CLGD4TXG3XTS/#PZUIFZZHRK7M3NLBNLI6VUBD4O52245B
 [vpub]: https://vpub.dasharo.com/
+
+## What is Dasharo binary blob policy?
+
+Modern x86 platforms' firmware requires closed source blobs to be integrated
+into the image to properly initialize the silicon. The ecosystem is shifting
+towards designs and technologies with a lot of small microcontrollers and
+intellectual property (IP) blocks specialized in a very thin range of tasks.
+Those microcontrollers and IP blocks typically require firmware blobs as well.
+Some of the blobs are clearly visible, some may be obfuscated and hidden inside
+the silicon or other firmware blobs (e.g. Intel Management Engine region
+contains multiple other blobs besides the ME firmware -
+[more about Intel ME blob](../me)).
+
+So Dasharo's binary blob policy is as follows:
+
+> Integrate only the necessary amount of blobs required for proper platform
+> operation and minimize the amount of blobs that are optional whenever
+> possible by providing open equivalent implementations or removing them if
+> there is no functional impact on the platform operation. Ultimately the blobs
+> should be attested and properly documented. Dasharo Team is trying to achieve
+> it by working on [firmware SBOMs](https://github.com/Dasharo/dasharo-issues/issues/129).
+
+Dasharo also works without blobs on platforms that allow that. For example,
+ASUS KGPE-D16 can run without any blobs (officially there is no PSP on that
+hardware, and Opteron 6200 series CPUs can run without microcode patches).
+There is also a libre, POWER9-based server/workstation Talos II by Raptor
+Computing Systems, which also do not use any binary blobs, however it is more
+expensive than x86 platforms.
