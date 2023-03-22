@@ -144,7 +144,9 @@ So Dasharo's binary blob policy is as follows:
 > Integrate only the necessary amount of blobs required for proper platform
 > operation and minimize the amount of blobs that are optional whenever
 > possible by providing open equivalent implementations or removing them if
-> there is no functional impact on the platform operation.
+> there is no functional impact on the platform operation. Ultimately the blobs
+> should be attested and properly documented. Dasharo Team is trying to achieve
+> it by working on [firmware SBOMs](https://github.com/Dasharo/dasharo-issues/issues/129).
 
 Dasharo also works without blobs on platforms that allow that. For example,
 ASUS KGPE-D16 can run without any blobs (officially there is no PSP on that
