@@ -420,24 +420,39 @@ identify issues and improve the firmware. However, in case of a security
 embargo, the results can be kept under a strict but well-defined policy,
 ensuring the security of the firmware.
 
-DCP-approved firmware respects privacy by allowing the deactivation of
-potentially malicious components, like ME or PSP, to the level permitted by the
-current state of technology. This feature is essential, especially in
-increasing data privacy concerns. DCP-approved firmware also respects the
-liberty of hardware owners to repair and transfer ownership without risking any
-personally identifiable data.
-
-DCP-approved firmware should provide trustworthiness. It means that known good
-measurements of each boot phase are publicly available and stored in a
-tamper-resistant medium like TPM during the boot process. Based on publicly
-available reference measurements, firmware executed during the boot process can
-be attested.
 
 3mdeb supports and maintains DCP-approved firmware through Dasharo Support
 Package (DSP) and Dasharo Enterprise Package (DEP). These packages offer
 essential services like porting to new platforms, developing device drivers,
 debugging, and fixing bugs. Companies can rely on 3mdeb's expertise to ensure
 their systems remain secure, up-to-date, and reliable.
+
+### Future work
+
+These future goals align with the values of privacy, liberty, and
+trustworthiness in the context of firmware development and the broader tech
+industry. We would like to implement following features as part of Dasharo
+Certification Program:
+
+* Privacy-respecting implementation: By working on solutions that allow users
+  to deactivate potentially malicious components, like ME or PSP, the firmware
+  will respect user privacy and help mitigate data privacy concerns. This
+  approach gives users more control over their devices and reduces the risk of
+  unauthorized access or surveillance. Discussion and more detail in dedicated
+  [issue](https://github.com/Dasharo/dasharo-issues/issues/392).
+* Liberty for the owners: Respecting the liberty of hardware owners to repair
+  and transfer ownership without risking the leak of personally identifiable
+  data is crucial. This approach supports the right-to-repair movement and
+  ensures that users maintain control over their personal information even when
+  they modify or pass on their devices. Discussion and more detail in dedicated
+  [issue](https://github.com/Dasharo/dasharo-issues/issues/393).
+* Trustworthiness for all: By publishing known good measurements for each boot
+  phase and storing those measurements in tamper-resistant mediums, such as
+  TPM, during the boot process will increase security and confidence in the
+  firmware. Users and other stakeholders can verify that the firmware executed
+  during the boot process is genuine and uncompromised by making reference
+  measurements publicly available. Discussion and more detail in dedicated
+  [issue](https://github.com/Dasharo/dasharo-issues/issues/394).
 
 <!--
 ## What is Dasharo Community Support?
