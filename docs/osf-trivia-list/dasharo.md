@@ -420,7 +420,6 @@ identify issues and improve the firmware. However, in case of a security
 embargo, the results can be kept under a strict but well-defined policy,
 ensuring the security of the firmware.
 
-
 3mdeb supports and maintains DCP-approved firmware through Dasharo Support
 Package (DSP) and Dasharo Enterprise Package (DEP). These packages offer
 essential services like porting to new platforms, developing device drivers,
