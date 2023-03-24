@@ -120,10 +120,21 @@ The submenu contains general chipset options. Currently available options:
 
 ## Power Management Options
 
-The submenu contains general power management options. Currently available
-options:
+The submenu contains general power management options.
+
+![](/images/menus/dasharo_power_opts.jpeg){ class="center" }
+
+Currently available options:
 
 - `Fan profile` - Sets of the fan operation modes (defaults to `Silent`):
     + `Silent` - the fan will operate at lower speeds to reduce noise,
     + `Performance` - the fan will operate at higher speeds, to allow for
        increased performance.
+- `Platform sleep type` - sets the active sleep mode to be available for OS
+    + `Suspend to Idle (S0ix)` (default) - also known as modern standby. Select
+      this option if using Windows. S3 sleep mode may not be working well with
+      Windows for machines newer than 11th generation Intel Core processors.
+      S0ix will not work properly if ME is disabled.
+    + `Suspend to RAM (S3)` - standard sleep mode that suspends the machine
+      state to RAM, supported on most operating systems (except Windows on 11th
+      generation Intel Core processors or newer).
