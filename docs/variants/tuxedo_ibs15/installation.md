@@ -44,12 +44,14 @@ flashrom -p internal -r dump.rom
 
 ### Initial Installation
 
-During initial installation of Dasharo, you should deploy supported Intel ME
-version (and configuration) on the device.
+During the initial installation of Dasharo, you will need the supported Intel
+ME version (and configuration) to be present in the Dasharo firmware image. If
+you already have a Dasharo compatible ME firmware installed, then proceed with
+[Updating Dasharo instructions](#updating-dasharo).
 
-> Publicly released binaries do not contain ME binary. If you need an Intel ME
-> update for your device, contact us via already established commercial support
-> channel.
+> Publicly released binaries do not contain ME binary. If you need a Dasharo
+> compatible Intel ME update for your device, contact us via already
+> established commercial support channel.
 
 When flashing binaries with ME binary included, flashing of the whole chip is
 required. Follow the steps below:
@@ -58,11 +60,12 @@ required. Follow the steps below:
 - While holding the Fn+M keys, power on the laptop - This unlocks the ME and
   allows for it to be overwritten. The fans will spin at 100% speed at this
   point
-- Execute the following command, replacing [path] with the path to the firmware
-  image you want to flash, e.g. `tuxedo_ibs15_full_v1.0.0.rom`
+- Execute the following command, replacing [path] with the path to the **full**
+  firmware image (containing ME firmware and flash descriptor) you want to
+  flash:
 
   ```bash
-  flashrom -p internal -w [path]
+  flashrom -p internal -w [full_image]
   ```
 
 - **Reboot** the laptop
@@ -78,5 +81,5 @@ If Dasharo is currently installed, only the BIOS region of the flash needs to
 be updated. Flash it using the following command:
 
 ```bash
-# flashrom -p internal -w [path] --ifd -i bios
+flashrom -p internal -w [path] --ifd -i bios
 ```
