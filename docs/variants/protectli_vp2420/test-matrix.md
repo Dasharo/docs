@@ -29,6 +29,8 @@ subjected from before the release of the new binary.
 | 20.  | [USB booting][UBT]                                | UBT           | All                                  |
 | 21.  | [pfSense support][PFS]                            | PFS           | All                                  |
 | 22.  | [OPNsense support][OPN]                           | OPN           | All                                  |
+| 23.  | [Proxmox support][PVE]                            | PVE           | All                                  |
+| 24.  | [Ubuntu Server support][USS]                      | USS           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -54,16 +56,18 @@ subjected from before the release of the new binary.
 [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
 [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
 [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+[PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
+[USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
 ## Module: Dasharo security
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.002 and TPM001.003            |
-| 2.   | [Verified Boot support][VBO]                      | VBO           | All                                  |
+| 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME neuter support][MNE]                          | MNE           | MNE003.001                           |
+| 5.   | [ME neuter support][MNE]                          | MNE           | MNE001.001                           |
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 > Note: in Dasharo compatible with Protectli VP2420 ME neuter support relies
