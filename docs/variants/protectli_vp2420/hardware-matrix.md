@@ -18,10 +18,10 @@ coreboot port on the Protectli VP2420 firewall.
 | **USB pendrives**      | 1. SanDisk USB 3.2Gen1 16 GB                             |
 |                        | 2. SanDisk USB 3.2Gen1 16 GB                             |
 |                        | 3. USB Type-C Hub Pro UCN3286                            |
+| **USB headers**        | USB Expander                                             |
 | **Attached devices**   | 1. Logitech, Inc. Keyboard K120                          |
 |                        | 2. Dell Mouse MS116p                                     |
 |                        | 3. USB Type-C Hub Pro UCN3286                            |
-|                        | 4. USB Expander                                          |
 | **Wireless card**      | Intel Wi-Fi 6 AX200                                      |
 | **Display**            | HDMI 1920x1080p, DP 1920x1080p                           |
 | **Ethernet**           | 4x intel i225 (on-board)                                 |
