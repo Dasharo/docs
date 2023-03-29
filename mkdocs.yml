@@ -334,6 +334,7 @@ nav:
               - 'Display Resolution - QubesOS': unified-test-documentation/dasharo-compatibility/345-display-resolution.md
               - 'Device power control operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
               - 'SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
+              - 'Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
