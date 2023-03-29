@@ -7,7 +7,7 @@
 1. Proceed with the
    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-## SOL001.001 Detection of Dasharo firmware and Dasharo EC firmware
+## SOL001.001 SOL string shows Dasharo firmware and EC version
 
 **Test description**
 
@@ -28,6 +28,7 @@ the boot phase.
 **Test steps**
 
 1. Power on the DUT.
+1. Wait for the Sign of life string.
 1. Note the results.
 
 **Expected result**
@@ -42,7 +43,7 @@ Firmware version: Dasahro (coreboot+UEFI) v1.5.0
 EC firmware version: 2023-03-20_c398446
 ```
 
-## SOL002.001 Detection of Dasharo firmware and proprietary EC firmware
+## SOL002.001 SOL string shows information about proprietary EC
 
 **Test description**
 
@@ -63,6 +64,7 @@ during the boot phase.
 **Test steps**
 
 1. Power on the DUT.
+1. Wait for the Sign of life string.
 1. Note the results.
 
 **Expected result**
