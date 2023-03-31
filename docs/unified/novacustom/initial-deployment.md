@@ -134,3 +134,15 @@ devices.
        deployment is available. Follow instructions over at
        [DTS documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment)
        to deploy Dasharo on your machine.
+
+If something went wrong or EC installation was not done, the firmware will
+print an error string during boot:
+
+![](/images/menus/sol_error1.jpg){ class="center" }
+
+OR
+
+![](/images/menus/sol_error2.jpg){ class="center" }
+
+In such case please follow the EC firmware update instructions for a specific
+board variant.

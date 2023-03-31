@@ -23,6 +23,30 @@ F11   to enter Boot Manager Menu
 ENTER to boot directly
 ```
 
+On certain devices like Novacustom laptops one will also be greeted with a
+firmware version printed on the screen (main firmware version and EC firmware
+version if applicable), for example:
+
+```txt
+Firmware version: Dasharo (coreboot+UEFI) v1.6.0
+EC firmware version: 2023-03-20_c398446
+F2    to enter Setup
+F7    to enter Boot Manager Menu
+ENTER to boot directly
+```
+
+If any error happens (firmware version is unknown, could not be read or any
+other error) you will get an red error string:
+
+![](/images/menus/sol_error1.jpg){ class="center" }
+
+OR
+
+![](/images/menus/sol_error2.jpg){ class="center" }
+
+In such case please follow the EC firmware update instructions for a specific
+board variant.
+
 * [Setup Main Page](#main-page)
     - [User Password Management](#user-password-management)
     - [Device Manager](device-manager.md)
