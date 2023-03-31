@@ -16,7 +16,7 @@ subjected before the release of the new binary.
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot keys][CBK]                                | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]                         | USB           | Without USB001.XXX and USB002.XXX    |
+| 8.   | [USB HID and MSC Support][USB]                         | USB           | All                                  |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | LBT004.001, LBT004.002               |
 | 10.  | [UEFI Shell][USH]                                      | USH           | All                                  |
 | 11.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |

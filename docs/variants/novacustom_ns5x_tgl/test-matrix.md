@@ -16,13 +16,13 @@ subjected before the release of the new binary.
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                            | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]                         | USB           | Without USB001.XXX and USB002.XXX    |
+| 8.   | [USB HID and MSC Support][USB]                         | USB           | All                                  |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | LBT004.001, LBT004.002               |
 | 10.  | [UEFI Shell][USH]                                      | USH           | All                                  |
 | 11.  | [Windows booting][WBT]                                 | WBT           | WBT001.001                           |
 | 12.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
 | 13.  | [USB-C/Thunderbolt][UTC]                               | UTC           | All                                  |
-| 14.  | [Network boot][PXE]                                    | PXE           | Without PXE001.001, PXE002.001 and PXE008.001   |
+| 14.  | [Network boot][PXE]                                    | PXE           | Without PXE007.001                   |
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |

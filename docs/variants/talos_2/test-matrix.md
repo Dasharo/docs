@@ -17,7 +17,7 @@ subjected from before the release of the new binary.
 | 6.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 7.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.002                           |
 | 8.   | [CPU status][CPU]                                 | CPU           | All                                  |
-| 9.   | [USB HID and MSC Support][USB]                    | USB           | USB003.001, USB003.002, USB004.001, USB004.002 |
+| 9.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
 | 10.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM001.002               |
 | 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.001, DSP004.003               |
 

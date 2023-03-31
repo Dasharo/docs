@@ -40,7 +40,7 @@ availability. This CPU should be available until 2024 according to AMD."
 We would like to continue support for PC Engines firmware through our Dasharo
 open-source firmware distribution. Further releases could include regular
 maintenance updates and new features such as UEFI compatibility, fwupd,
-Verified Boot, BIOS setup password, DMA protection, and more. For a complete
+Verified Boot, UEFI Setup password, DMA protection, and more. For a complete
 list of planned enhancements, please visit the [dasharo-issues repository][10]
 on GitHub.
 

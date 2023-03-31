@@ -11,12 +11,12 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP003.001, DSP003.003, DSP004.001, DSP004.003 |
-| 3.   | [USB HID and MSC Support][USB]                    | USB           | Without USB001.XXX and USB002.XXX    |
+| 3.   | [USB HID and MSC Support][USB]                    | USB           | All                                  |
 | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001|
 | 5.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
 | 6.   | [Audio subsystem][AUD]                            | AUD           | AUD001.001, AUD004.001, AUD005.001, AUD006.001 |
 | 7.   | [NVMe support][NVM]&sup1;                         | NVM           | NVM001.001, NVM001.002               |
-| 8.   | [Network boot][PXE]                               | PXE           | Without PXE001.001, PXE002.001 and PXE008.001    |
+| 8.   | [Network boot][PXE]                               | PXE           | Without PXE007.001                   |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 10.  | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 11.  | [PCI Express ports support][PEX]                  | PEX           | PEX001.001                           |

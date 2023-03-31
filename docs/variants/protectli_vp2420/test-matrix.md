@@ -15,7 +15,7 @@ subjected from before the release of the new binary.
 | 4.   | [Network boot utilities][NBT]                     | NBT           | All                                  |
 | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]                    | USB           | USB003.XXX and USB004.XXX            |
+| 8.   | [USB HID and MSC Support][USB]                    | USB           | USB001.XXX and USB002.XXX            |
 | 9.   | [FreeBSD support][BSD]                            | BSD           | All                                  |
 | 10.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 11.  | [USB-C/Thunderbolt][UTC]                          | UTC           | UTC004.001, UTC004.002               |
