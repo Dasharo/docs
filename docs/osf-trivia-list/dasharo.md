@@ -211,9 +211,9 @@ review][gerrit-review]). We respect coreboot community opinion, so we agreed
 that in case of coreboot documentation it would be better to use open-source
 based firmware distribution. It doesn't mean we agree with that decision:
 
-* Definitions and rules used in coreboot documentation review
+* Definitions and rules used in coreboot documentation review are not clear.
 * Rules seem not to be applied equally to all contributors of
-  [coreboot distribution][cb-distro]
+  [coreboot distribution][cb-distro].
 
 ## Why Dasharo is not called coreboot firmware distribution?
 
