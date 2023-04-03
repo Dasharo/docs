@@ -488,57 +488,6 @@ that can lead to influencing Dasharo Community Supported roadmap.
 [gerrit-review]: https://review.coreboot.org/c/homepage/+/63402
 [cb-distro]: https://doc.coreboot.org/distributions.html
 [intel-quark]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/YRJQIPVK5WHACT64TH42CLGD4TXG3XTS/#PZUIFZZHRK7M3NLBNLI6VUBD4O52245B
-[vpub]: https://vpub.dasharo.com/
-
-## Can you port Dasharo to my mainboard?
-
-There are other versions of the same questions:
-
-- Dasharo supports mainboard X; I have mainboard Y (or X'). Can you teach me
-  how to port Dasharo to my mainboard?
-- Can you help me port Dasharo to my mainboard?
-
-**TL;DR: No, we can't. In Dasharo, we support only carefully selected targets.**
-
-The answer to that question requires understanding many aspects of the
-open-source firmware business we learned over the years. The critical point is
-that we can't help to port arbitrary targets. Hardware has to be carefully
-selected to bring the most benefits to the open-source firmware community and
-improve the sustainability of the ecosystem. Random hardware porting lead to an
-unmaintainable stack of platforms that no one adapts in scale, which does not
-lead to market change in the correct direction. Lack of commercial adoption is
-part of coreboot problems as a project, and we would like to avoid this
-mistake.
-
-We have strict criteria based on various aspects explained in Dasharo Community
-Support section.
-
-Dasharo Team tries to select platforms with long-term availability potential.
-
-Because we are fully responsible for hardware that we enable in open-source
-firmware ecosystem, our releases have to pass the Dasharo Certification
-criteria.  The whole effort is relatively expensive and, in most cases, not
-feasible for enabling one platform. That's why in most cases, our customers are
-OEM/ODM, angel investors, or communities that need reasonable quantities of
-hardware (>200pcs).
-
-If the board comes with variants with minimal differences required for support
-in an open-source firmware stack, and one of the variants is part of the
-Dasharo Support Package, Dasharo Enterprise Package, or Dasharo Community
-Support, there is a chance to put that hardware on the relevant roadmap. In
-such a case, don't hesitate to contact us; we will see what we can do. However,
-the community member who requested support for the platform should also offer
-their help in validating the firmware and maintenance. That kind of request
-will be more than welcome from active community members. New members should
-consider [ways to help us](../../ways-you-can-help-us/) to gain a reputation
-that can lead to influencing Dasharo Community Supported roadmap.
-
-[coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
-[dtsos]: ../../dasharo-tools-suite/overview/
-[lvfs]: https://fwupd.org/lvfs/docs/consulting
-[gerrit-review]: https://review.coreboot.org/c/homepage/+/63402
-[cb-distro]: https://doc.coreboot.org/distributions.html
-[intel-quark]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/YRJQIPVK5WHACT64TH42CLGD4TXG3XTS/#PZUIFZZHRK7M3NLBNLI6VUBD4O52245B
 [legacy-smp]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/EEEBFATYHWIPRDXLCUEFNDZ4FYYVA4QM/#QHIYXYTVOGXENJXUOWOXUZOTLV5OS4LB
 [raptor]: ../../variants/talos_2/releases/
 [kgpe-d16]: ../../variants/asus_kgpe_d16/releases
