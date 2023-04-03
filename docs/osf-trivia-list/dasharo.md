@@ -247,20 +247,20 @@ not enough in most cases for booting modern computer.
 
 Documentation supported hardware provides information about initial deployment,
 updates and recovery procedures. Developed by Dasharo Team [Dasharo Tools Suite
-(DTS)][dtsos] operating system support users by automating the deployment
-process, which help reducing errors and inconsistencies, and make sure the
+(DTS)][dtsos] operating system supports users by automating the deployment
+process, which helps reducing errors and inconsistencies, and make sure the
 firmware can be further updated to new version without any problems. DTS also
-provide controlled and secure environment for initial deployment and update of
+provides controlled and secure environment for initial deployment and update of
 firmware, reducing the risk of tampering or unauthorized changes.
 
 Dasharo Zero-Touch Initial Deployment is smooth, effortless and user-friendly
-process, which reduce user frustration and improve satisfaction.
+process, which reduces user frustration and improves satisfaction.
 
-Use of DTS largely improve firmware adoption, hardware compatibility reporting
+Use of DTS largely improves firmware adoption, hardware compatibility reporting
 and binary blobs transmission, as well as recovery.
 
 For more details about zero-touch initial deployment please read relevant
-Dasharo Tools Suite
+DTS
 [documentation](../../dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment).
 
 ### Dasharo Clean and Simple Code
