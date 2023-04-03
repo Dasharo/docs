@@ -220,12 +220,31 @@ DTS
   enable customers and community platforms, so they can get seamless firmware
   update in Linux.
 
-### Dasharo Support Package
+### Dasharo Professional Support
 
-* Support - Dasharo Team is paid to provide support in the community through
-  [Dasharo Matrix Space][dasharo-matrix], of course we want to introduce some
-  commercial products related to the support to make the business feasible, but
-  some level of support always would be available to the community.
+Dasharo Support coming in form of three following packages:
+
+* Dasharo Community Support (DCP) - donation driven development.
+* Dasharo Support Package (DSP) - annual firmware support package.
+* Dasharo Enterprise Package (DEP) - custom SLA, corporate and open roadmap
+  alignment advisroy.
+
+The Dasharo Community Support Program is an open-source firmware support
+initiative that leverages the expertise of community members and developers to
+improve firmware solutions for a range of hardware models.
+
+Platforms in scope of the program should comply with Dasharo quality criteria,
+which we slowly gather in [Dasharo Certification
+Program](#what-is-dasharo-certification-program).
+
+3mdeb supports and maintains DCP-approved firmware through Dasharo Support
+Package (DSP) and Dasharo Enterprise Package (DEP). These packages offer
+essential services like porting to new platforms, developing device drivers,
+debugging, and fixing bugs. Companies can rely on 3mdeb's expertise to ensure
+their systems remain secure, up-to-date, and reliable.
+
+If you are interested in our services please contact us
+[here](https://3mdeb.com/contact/).
 
 ### Dasharo Transparent Validation
 
@@ -282,12 +301,6 @@ reports are always publicly available, allowing the community to continually
 identify issues and improve the firmware. However, in case of a security
 embargo, the results can be kept under a strict but well-defined policy,
 ensuring the security of the firmware.
-
-3mdeb supports and maintains DCP-approved firmware through Dasharo Support
-Package (DSP) and Dasharo Enterprise Package (DEP). These packages offer
-essential services like porting to new platforms, developing device drivers,
-debugging, and fixing bugs. Companies can rely on 3mdeb's expertise to ensure
-their systems remain secure, up-to-date, and reliable.
 
 ### Future work
 
