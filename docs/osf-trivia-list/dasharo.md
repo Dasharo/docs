@@ -306,14 +306,14 @@ not enough in most cases for booting modern computer.
   cost-effectiveness, security, transparency and customizability than
   proprietary alternative.
 * There are seven characterestics of Dasharo:
-    - [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
-    - [clean and simple code](#dasharo-clean-and-simple-code),
-    - [long-term maintenance](#dasharo-long-term-maintenance),
-    - [professional support](#dasharo-support-package),
-    - [transparent validation](#dasharo-transparent-validation),
-    - [privacy-respecting implementation](#dashro-privacy-respecting-implementation),
-    - [liberty for the owners](#dasharo-liberty-for-the-owners),
-    - [trustworthiness for all](#dasharo-trustworthiness-for-all).
+    + [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
+    + [clean and simple code](#dasharo-clean-and-simple-code),
+    + [long-term maintenance](#dasharo-long-term-maintenance),
+    + [professional support](#dasharo-support-package),
+    + [transparent validation](#dasharo-transparent-validation),
+    + [privacy-respecting implementation](#dashro-privacy-respecting-implementation),
+    + [liberty for the owners](#dasharo-liberty-for-the-owners),
+    + [trustworthiness for all](#dasharo-trustworthiness-for-all).
 
 ### Dasharo Zero-Touch Initial Deployment
 
@@ -338,9 +338,9 @@ Dasharo Tools Suite
 ### Dasharo Clean and Simple Code
 
 * Each supported platform has its own branches in Dasharo's coreboot repository:
-    - `<board_name>/develop`, e.g. `msi_ms7d25/develop`, used for bug fixes and
+    + `<board_name>/develop`, e.g. `msi_ms7d25/develop`, used for bug fixes and
     development of new features.
-    - `<board_name>/release`, e.g. `msi_ms7d25/release`, contains only the
+    + `<board_name>/release`, e.g. `msi_ms7d25/release`, contains only the
     released and validated code. It is used to build the firmware binaries
     distributed to the community through Dasharo releases.
 * Each supported platform has a build scripts included in Dasharo's coreboot
