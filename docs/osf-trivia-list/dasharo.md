@@ -200,7 +200,7 @@ x86 for firmware to be useful it has to cooperate with closed blobs. In all
 binary releases we are making sure we provide information where all components
 are coming from.
 
-Dasharo works without blobs on platforms that allow that. When we saying
+Dasharo works without blobs on platforms that allow that. When we are saying
 Dasharo open-source firmware distribution we mean code that is delivered by
 3mdeb that is open-source. We have no influence on the code provided by 3rd
 parties (e.g. FSP, ME, GbE etc.).
