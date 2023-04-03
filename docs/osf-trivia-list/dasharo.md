@@ -274,7 +274,7 @@ is the improvements made to fork maintenance, currently being tracked in [this
 issue](https://github.com/Dasharo/dasharo-issues/issues/310) on the Dasharo
 GitHub repository. The project also explores the concept of a bootstrapable
 toolchain, discussed in the [build process
-section](../../osf-trolling-list/build_process) of the project documentation. 
+section](../../osf-trolling-list/build_process) of the project documentation.
 
 ### Dasharo Long Term Maintenance
 
