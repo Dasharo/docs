@@ -156,7 +156,7 @@ Dasharo pure EDKII, oreboot or based on any other open-source firmware
 framework. Dasharo typically is based on coreboot and EDKII, plain coreboot is
 not enough in most cases for booting modern computer.
 
-## What value Dasharo provide in comparison to coreboot?
+## What value Dasharo provides in comparison to coreboot?
 
 * Dasharo is open-source firmware distribution based on
   [coreboot](https://coreboot.org) and other open-source firmware frameworks
