@@ -443,9 +443,9 @@ hardware vendors.
 
 There are other versions of the same questions:
 
-* Dasharo supports mainboard X; I have mainboard Y (or X'). Can you teach me
+- Dasharo supports mainboard X; I have mainboard Y (or X'). Can you teach me
   how to port Dasharo to my mainboard?
-* Can you help me port Dasharo to my mainboard?
+- Can you help me port Dasharo to my mainboard?
 
 **TL;DR: No, we can't. In Dasharo, we support only carefully selected targets.**
 
