@@ -177,7 +177,7 @@ not enough in most cases for booting modern computer.
 
 ### Dasharo Zero-Touch Initial Deployment
 
-Documentation supported hardware provide information about initial deployment,
+Documentation supported hardware provides information about initial deployment,
 updates and recovery procedures. Developed by Dasharo Team [Dasharo Tools Suite
 (DTS)][dtsos] operating system support users by automating the deployment
 process, which help reducing errors and inconsistencies, and make sure the
