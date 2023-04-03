@@ -211,8 +211,8 @@ review][gerrit-review]). We respect coreboot community opinion, so we agreed
 that in case of coreboot documentation it would be better to use open-source
 based firmware distribution. It doesn't mean we agree with that decision:
 
-* Definitions and rules used in coreboot documentation review are not clear.
-* Rules seem not to be applied equally to all contributors of
+- Definitions and rules used in coreboot documentation review are not clear.
+- Rules seem not to be applied equally to all contributors of
   [coreboot distribution][cb-distro].
 
 ## Why Dasharo is not called coreboot firmware distribution?
@@ -233,24 +233,24 @@ and we expect more flavors to appear in the future.
 
 ## What value Dasharo provides in comparison to coreboot?
 
-* Dasharo is open-source firmware distribution based on
+- Dasharo is open-source firmware distribution based on
   [coreboot](https://coreboot.org) and other open-source firmware frameworks
   (e.g. [Tianocore EDKII](https://github.com/tianocore/edk2)), you can think
   about Dasharo and coreboot relation in the same way as you think about
   Debian/Ubuntu/RedHat and Linux. That means it can provide better
   cost-effectiveness, security, transparency and customizability than
   proprietary alternative.
-* There are seven characterestics of Dasharo:
-    - [carefully selected hardware platforms](#can-you-port-dasharo-to-my-mainboard),
-    - [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
-    - [clean and simple code](#dasharo-clean-and-simple-code),
-    - [long-term maintenance](#dasharo-long-term-maintenance),
-    - [professional support](#dasharo-professional-support),
-    - [transparent validation](#dasharo-transparent-validation),
-    - [extensive and structured documentation](https://github.com/Dasharo/docs#navigation-menu),
-    - [privacy-respecting implementation](#future-work),
-    - [liberty for the owners](#future-work),
-    - [trustworthiness for all](#future-work).
+- There are seven characterestics of Dasharo:
+    + [carefully selected hardware platforms](#can-you-port-dasharo-to-my-mainboard),
+    + [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
+    + [clean and simple code](#dasharo-clean-and-simple-code),
+    + [long-term maintenance](#dasharo-long-term-maintenance),
+    + [professional support](#dasharo-professional-support),
+    + [transparent validation](#dasharo-transparent-validation),
+    + [extensive and structured documentation](https://github.com/Dasharo/docs#navigation-menu),
+    + [privacy-respecting implementation](#future-work),
+    + [liberty for the owners](#future-work),
+    + [trustworthiness for all](#future-work).
 
 ### Dasharo Zero-Touch Initial Deployment
 
@@ -287,12 +287,12 @@ section](../../osf-trolling-list/build_process) of the project documentation.
 
 ### Dasharo Long Term Maintenance
 
-* We provide long term maintenance - coreboot community for various reasons, do
+- We provide long term maintenance - coreboot community for various reasons, do
   not merge some patches, because of understaffing, lack of reviewers. Some
   changes have long way to upstream, we maintain those patches and make them
   work before those will go upstrea. If ever, we are committed to maintain
   platforms which are moved to branch in coreboot.
-* Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and
+- Firmware update - we are registered [consultants for fwupd/LVFS][lvfs] and
   enable customers and community platforms, so they can get seamless firmware
   update in Linux.
 
@@ -300,9 +300,9 @@ section](../../osf-trolling-list/build_process) of the project documentation.
 
 Dasharo Support coming in form of three following packages:
 
-* Dasharo Community Support (DCP) - donation driven development.
-* Dasharo Support Package (DSP) - annual firmware support package.
-* Dasharo Enterprise Package (DEP) - custom SLA, corporate and open roadmap
+- Dasharo Community Support (DCP) - donation driven development.
+- Dasharo Support Package (DSP) - annual firmware support package.
+- Dasharo Enterprise Package (DEP) - custom SLA, corporate and open roadmap
   alignment advisroy.
 
 The Dasharo Community Support Program is an open-source firmware support
@@ -324,14 +324,14 @@ If you are interested in our services please contact us
 
 ### Dasharo Transparent Validation
 
-* We provide transparent validation results - coreboot in itself provide no
+- We provide transparent validation results - coreboot in itself provide no
   guarantees around release quality and do not provide binary distribution (for
   reference please check [coreboot project scope][coreboot-scope], we provide
   those in scope of validation we perform.
 
 ### Dasharo Trustworthiness for All
 
-* We provide ready to use binaries with GPG based signing scheme that improve
+- We provide ready to use binaries with GPG based signing scheme that improve
   verification where firmware coming from.
 
 <!-- markdownlint-disable-next-line MD013 -->
@@ -385,19 +385,19 @@ trustworthiness in the context of firmware development and the broader tech
 industry. We would like to implement following features as part of Dasharo
 Certification Program:
 
-* **Privacy-respecting implementation**: By working on solutions that allow users
+- **Privacy-respecting implementation**: By working on solutions that allow users
   to deactivate potentially malicious components, like ME or PSP, the firmware
   will respect user privacy and help mitigate data privacy concerns. This
   approach gives users more control over their devices and reduces the risk of
   unauthorized access or surveillance. Discussion and more detail in dedicated
   [issue](https://github.com/Dasharo/dasharo-issues/issues/392).
-* **Liberty for the owners**: Respecting the liberty of hardware owners to repair
+- **Liberty for the owners**: Respecting the liberty of hardware owners to repair
   and transfer ownership without risking the leak of personally identifiable
   data is crucial. This approach supports the right-to-repair movement and
   ensures that users maintain control over their personal information even when
   they modify or pass on their devices. Discussion and more detail in dedicated
   [issue](https://github.com/Dasharo/dasharo-issues/issues/393).
-* **Trustworthiness for all**: By publishing known good measurements for each boot
+- **Trustworthiness for all**: By publishing known good measurements for each boot
   phase and storing those measurements in tamper-resistant mediums, such as
   TPM, during the boot process will increase security and confidence in the
   firmware. Users and other stakeholders can verify that the firmware executed
@@ -494,9 +494,9 @@ that can lead to influencing Dasharo Community Supported roadmap.
 
 There are other versions of the same questions:
 
-* Dasharo supports mainboard X; I have mainboard Y (or X'). Can you teach me
+- Dasharo supports mainboard X; I have mainboard Y (or X'). Can you teach me
   how to port Dasharo to my mainboard?
-* Can you help me port Dasharo to my mainboard?
+- Can you help me port Dasharo to my mainboard?
 
 **TL;DR: No, we can't. In Dasharo, we support only carefully selected targets.**
 
