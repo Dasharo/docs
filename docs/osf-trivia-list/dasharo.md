@@ -535,3 +535,4 @@ that can lead to influencing Dasharo Community Supported roadmap.
 [kgpe-d16]: ../../variants/asus_kgpe_d16/releases
 [msi-z690a]: ../../variants/msi_z690/overview/
 [vpub]: https://vpub.dasharo.com/
+[dasharo-matrix]: https://matrix.to/#/#dasharo:matrix.org
