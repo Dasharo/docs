@@ -10,18 +10,17 @@ Dasharo is an open-source firmware distribution focusing on:
 - [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 - [clean and simple code](#dasharo-clean-and-simple-code),
 - [long-term maintenance](#dasharo-long-term-maintenance),
-- [professional support](#dasharo-support-package),
+- [professional support](#dasharo-professional-support),
 - [transparent validation](#dasharo-transparent-validation),
 - [extensive and structured documentation](https://github.com/Dasharo/docs#navigation-menu),
-- [privacy-respecting implementation](#dasharo-privacy-respecting-implementation),
-- [liberty for the owners](#dasharo-liberty-for-the-owners) and
-- [trustworthiness for all](#dasharo-trustworthiness-for-all).
+- [privacy-respecting implementation](#future-work),
+- [liberty for the owners](#future-work) and
+- [trustworthiness for all](#future-work).
 
-Dasharo consists of [commercial services](#productized-services) available for
-business customers, set of [open-source
-repositories](https://github.com/orgs/Dasharo/repositories), and [quality
-control](../../unified-test-documentation/overview/) which help to provide
-scalable, modular, easy to combine open-source BIOS, UEFI, and firmware
+Dasharo consists of [productized services](#dasharo-professional-support), set
+of [open-source repositories](https://github.com/orgs/Dasharo/repositories),
+and [quality control](../../unified-test-documentation/overview/) which help to
+provide scalable, modular, easy to combine open-source BIOS, UEFI, and firmware
 solutions. It offers the components that are needed to develop and maintain a
 high quality, and modular firmware, for the stability and security of your
 platform.
@@ -233,14 +232,16 @@ not enough in most cases for booting modern computer.
   cost-effectiveness, security, transparency and customizability than
   proprietary alternative.
 * There are seven characterestics of Dasharo:
-    + [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
-    + [clean and simple code](#dasharo-clean-and-simple-code),
-    + [long-term maintenance](#dasharo-long-term-maintenance),
-    + [professional support](#dasharo-support-package),
-    + [transparent validation](#dasharo-transparent-validation),
-    + [privacy-respecting implementation](#dashro-privacy-respecting-implementation),
-    + [liberty for the owners](#dasharo-liberty-for-the-owners),
-    + [trustworthiness for all](#dasharo-trustworthiness-for-all).
+    - [carefully selected hardware platforms](#can-you-port-dasharo-to-my-mainboard),
+    - [zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
+    - [clean and simple code](#dasharo-clean-and-simple-code),
+    - [long-term maintenance](#dasharo-long-term-maintenance),
+    - [professional support](#dasharo-professional-support),
+    - [transparent validation](#dasharo-transparent-validation),
+    - [extensive and structured documentation](https://github.com/Dasharo/docs#navigation-menu),
+    - [privacy-respecting implementation](#future-work),
+    - [liberty for the owners](#future-work),
+    - [trustworthiness for all](#future-work).
 
 ### Dasharo Zero-Touch Initial Deployment
 
@@ -360,19 +361,19 @@ trustworthiness in the context of firmware development and the broader tech
 industry. We would like to implement following features as part of Dasharo
 Certification Program:
 
-* Privacy-respecting implementation: By working on solutions that allow users
+* **Privacy-respecting implementation**: By working on solutions that allow users
   to deactivate potentially malicious components, like ME or PSP, the firmware
   will respect user privacy and help mitigate data privacy concerns. This
   approach gives users more control over their devices and reduces the risk of
   unauthorized access or surveillance. Discussion and more detail in dedicated
   [issue](https://github.com/Dasharo/dasharo-issues/issues/392).
-* Liberty for the owners: Respecting the liberty of hardware owners to repair
+* **Liberty for the owners**: Respecting the liberty of hardware owners to repair
   and transfer ownership without risking the leak of personally identifiable
   data is crucial. This approach supports the right-to-repair movement and
   ensures that users maintain control over their personal information even when
   they modify or pass on their devices. Discussion and more detail in dedicated
   [issue](https://github.com/Dasharo/dasharo-issues/issues/393).
-* Trustworthiness for all: By publishing known good measurements for each boot
+* **Trustworthiness for all**: By publishing known good measurements for each boot
   phase and storing those measurements in tamper-resistant mediums, such as
   TPM, during the boot process will increase security and confidence in the
   firmware. Users and other stakeholders can verify that the firmware executed
