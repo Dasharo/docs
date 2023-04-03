@@ -206,10 +206,10 @@ Dasharo open-source firmware distribution we mean code that is delivered by
 parties (e.g. FSP, ME, GbE etc.).
 
 In coreboot community there was some controversy about calling Dasharo
-open-source firmware distribution (for details please check [gerrit review][gerrit-review].
-We respect coreboot community opinion, so we agreed that in case of coreboot
-documentation it would be better to use open-source based firmware
-distribution. It doesn't mean we agree with that decision:
+open-source firmware distribution (for details please check [gerrit
+review][gerrit-review]). We respect coreboot community opinion, so we agreed
+that in case of coreboot documentation it would be better to use open-source
+based firmware distribution. It doesn't mean we agree with that decision:
 
 * Definitions and rules used in coreboot documentation review
 * Rules seem not to be applied equally to all contributors of
