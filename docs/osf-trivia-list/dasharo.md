@@ -217,10 +217,19 @@ based firmware distribution. It doesn't mean we agree with that decision:
 
 ## Why Dasharo is not called coreboot firmware distribution?
 
-Dasharo is not coreboot firmware distribution because we also may imagine
-Dasharo pure EDKII, oreboot or based on any other open-source firmware
-framework. Dasharo typically is based on coreboot and EDKII, plain coreboot is
-not enough in most cases for booting modern computer.
+While the coreboot is now the default open-source framework for Dasharo, we do
+not want to limit Dasharo to one framework. We also expect another firmware
+frameworks to be a base for Dasharo, such as
+[U-Boot](https://u-boot.readthedocs.io/en/latest/),
+[oreboot](https://github.com/oreboot/oreboot),
+[Slim Bootloader](https://slimbootloader.github.io/), or pure
+[EDK II](https://github.com/tianocore/edk2).
+
+Moreover, coreboot is not enough in most cases for booting modern computer.
+Most Dasharo flavors are currently based on coreboot with EDK II payload, but
+we also have [coreboot with
+skiboot/heads](https://docs.dasharo.com/variants/talos_2/releases/) payload,
+and we expect more flavors to appear in the future.
 
 ## What value Dasharo provides in comparison to coreboot?
 
