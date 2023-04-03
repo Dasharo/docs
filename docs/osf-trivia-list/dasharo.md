@@ -265,14 +265,16 @@ DTS
 
 ### Dasharo Clean and Simple Code
 
-* Each supported platform has its own branches in Dasharo's coreboot repository:
-    + `<board_name>/develop`, e.g. `msi_ms7d25/develop`, used for bug fixes and
-    development of new features.
-    + `<board_name>/release`, e.g. `msi_ms7d25/release`, contains only the
-    released and validated code. It is used to build the firmware binaries
-    distributed to the community through Dasharo releases.
-* Each supported platform has a build scripts included in Dasharo's coreboot
-  repository to simplify the complex build instructions
+Dasharo is an open-source distribution project with a simple code structure
+described in detail [here](../../../dev-proc/source-code-structure). While the
+project benefits from the simplicity of the coreboot source code, it is
+continuously researching and improving its development process and tools to
+provide a superior experience for developers.  One example of this ongoing work
+is the improvements made to fork maintenance, currently being tracked in [this
+issue](https://github.com/Dasharo/dasharo-issues/issues/310) on the Dasharo
+GitHub repository. The project also explores the concept of a bootstrapable
+toolchain, discussed in the [build process
+section](../../osf-trolling-list/build_process) of the project documentation. 
 
 ### Dasharo Long Term Maintenance
 
