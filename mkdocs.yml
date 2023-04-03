@@ -45,6 +45,7 @@ nav:
       - 'About Dasharo': index.md
       - 'New? Start here': newcomers.md
   - 'Supported hardware':
+      - 'Overview': variants/overview.md
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
       - 'NovaCustom laptops':
           - 'Overview': unified/novacustom/overview.md
