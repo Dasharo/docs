@@ -14,44 +14,21 @@ Following sections explain how to deal with most common `flashrom` problem.
 
 ### How to install Dasharo flashrom fork ?
 
-Following procedure is for advanced users who are familiar with source
-compilation and can resolve potential missing dependencies or other typical
-compilation problems. If you are not familiar with compilation from source we
-recommend use of Dasharo Tools Suite, which is minimal Linux environment to
-deploy, update, and maintain firmware on Dasharo-supported devices. Please
-follow [DTS documentation](../../dasharo-tools-suite/overview). Otherwise
-please follow compilation procedure.
+The following procedure is for advanced users familiar with source compilation
+and can resolve potential missing dependencies or other typical compilation
+problems. If you are unfamiliar with compilation from source, we recommend
+using Dasharo Tools Suite, a minimal Linux environment to deploy, update, and
+maintain firmware on Dasharo-supported devices. Please follow [DTS
+documentation](../../dasharo-tools-suite/overview). Otherwise, please follow
+the compilation procedure.
 
-Currently, the latest flashrom release lacks support for Alder Lake
-S and Comet Lake U internal flashing. Because of this, we need to
-build flashrom from [Dashro
+If you need flashrom for Dasharo-supported hardware and for some reason you
+cannot use DTS, please consider the compilation of Dasharo [flashrom
 fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
-The procedure was tested on [Ubuntu 22.04 desktop amd64
-ISO](https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso)
-burned on the USB stick. It may work on other Debian-based distributions.
 
-Boot the Ubuntu live image and select the `Try Ubuntu` option. Open a terminal
-and proceed with the commands below.
-
-Install build dependencies:
-
-```bash
-sudo apt-get update
-sudo apt-get install git build-essential pkg-config libpci-dev udev
-```
-
-Obtain source code:
-
-```bash
-git clone https://github.com/Dasharo/flashrom.git -b dasharo-release
-cd flashrom
-```
-
-Build and install flashrom:
-
-```bash
-sudo make install
-```
+For compilation details and related issues, please check flashrom
+[documentation](https://review.coreboot.org/plugins/gitiles/flashrom/+/refs/heads/master/README)
+and [community](https://www.flashrom.org/Contact).
 
 ### Perform dry run to detect the problems early
 
