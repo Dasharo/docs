@@ -13,7 +13,7 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 |                                | Internal Cooling                                 |
 | **RAM**                        | Slot 1: KVR32S22S8/8                             |
 |                                | Slot 2: KVR32S22S8/8                             |
-| **SSD**                        | Samsung SSD 980 PRO 250 GB                       |
+| **SSD**                        | Samsung SSD 990 PRO 1 TB                         |
 | **Flash memory**               | GigaDevice 25B1256EYIG 32 MB                     |
 | **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
 | **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
