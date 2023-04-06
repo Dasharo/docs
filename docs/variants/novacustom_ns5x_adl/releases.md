@@ -25,7 +25,8 @@ Test results for this release can be found
 ### Changed
 
 - [Keys must be provisioned prior enabling Secure Boot](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
-- The function keys responsible for entering the setup and boot menu in BIOS have been changed from ESC/F12 to F2/F2
+- The function keys responsible for entering the setup and boot menu in BIOS
+  have been changed from ESC/F12 to F2/F2
 
 ### Fixed
 
