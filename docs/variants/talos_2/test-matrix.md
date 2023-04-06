@@ -20,6 +20,7 @@ subjected from before the release of the new binary.
 | 9.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
 | 10.  | [NVMe support][NVM]                               | NVM           | NVM001.001, NVM001.002               |
 | 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.001, DSP004.003               |
+| 12.  | [Heads bootloader support][HDS]                   | HDS           | All                                  |
 
 [CBP]: ../../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port
 [PBT]: ../../../unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support
@@ -32,6 +33,7 @@ subjected from before the release of the new binary.
 [USB]: ../../../unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support
 [NVM]: ../../../unified-test-documentation/dasharo-compatibility/312-nvme-support
 [DSP]: ../../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd
+[HDS]: ../../../unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support
 
 ## Module: Dasharo security
 
