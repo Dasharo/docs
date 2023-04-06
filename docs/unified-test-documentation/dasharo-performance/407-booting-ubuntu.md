@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting Ubuntu 22.04
+# Dasharo Performance: Booting Ubuntu
 
 ## Test cases common documentation
 
@@ -13,17 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BUB001.001 Boot Ubuntu 22.04 from Hard Disk after cold-boot
+## BUB001.001 Boot Ubuntu stable from Hard Disk after cold-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu 22.04 could be booted from the hard disk on
-the DUT after cold-boot. The test is performed in multiple iterations.
+This test aims to verify that Ubuntu stable could be booted from the hard disk
+on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu stable
 
 **Test setup**
 
@@ -43,17 +43,17 @@ the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUB002.001 Boot Ubuntu 22.04 from Hard Disk after warm-boot
+## BUB002.001 Boot Ubuntu stable from Hard Disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu 22.04 could be booted from the hard disk on
-the DUT after warm-boot. The test is performed in multiple iterations.
+This test aims to verify that Ubuntu stable could be booted from the hard disk
+on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu stable
 
 **Test setup**
 
@@ -72,17 +72,17 @@ the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUB003.001 Boot Ubuntu 22.04 from Hard Disk after reboot
+## BUB003.001 Boot Ubuntu stable from Hard Disk after reboot
 
 **Test description**
 
-This test aims to verify that Ubuntu 22.04 could be booted from the hard disk on
-the DUT after reboot. The test is performed in multiple iterations.
+This test aims to verify that Ubuntu stable could be booted from the hard disk
+on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu stable
 
 **Test setup**
 
