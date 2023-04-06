@@ -9,7 +9,7 @@ For details about our release process please read
 [Subscribe to NovaCustom NS5x/NS7x ADL (12th Gen) Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
-## v1.6.0 - 2023-04-06
+## v1.6.0 - 2023-04-07
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
@@ -26,7 +26,7 @@ Test results for this release can be found
 
 - [Keys must be provisioned prior enabling Secure Boot](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
 - The function keys responsible for entering the setup and boot menu in BIOS
-  have been changed from ESC/F12 to F2/F2
+  have been changed from ESC/F12 to F2/F7
 
 ### Fixed
 
