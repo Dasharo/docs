@@ -13,12 +13,12 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BUS001.001 Boot Ubuntu Server stable from Hard Disk after cold-boot
+## BUS001.001 Boot Ubuntu Server stable from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the hard
-disk on the DUT after cold-boot. The test is performed in multiple iterations.
+This test aims to verify that Ubuntu Server stable could be booted from the disk
+on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
@@ -35,7 +35,7 @@ disk on the DUT after cold-boot. The test is performed in multiple iterations.
 1. Cut the power off while DUT is turned on.
 1. Restore power and power on the DUT.
 1. Press `BOOT_MENU_KEY` to enter the boot menu.
-1. In the `Boot Menu`, select the hard disk on which the system was previously
+1. In the `Boot Menu`, select the disk on which the system was previously
    installed or boot entry with the name of `OPERATING_SYSTEM`.
 1. Wait for the `OPERATING_SYSTEM` to boot and note the result.
 
@@ -43,12 +43,12 @@ disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUS002.001 Boot Ubuntu Server stable from Hard Disk after warm-boot
+## BUS002.001 Boot Ubuntu Server stable from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the hard
-disk on the DUT after warm-boot. The test is performed in multiple iterations.
+This test aims to verify that Ubuntu Server stable could be booted from the disk
+on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
@@ -64,7 +64,7 @@ disk on the DUT after warm-boot. The test is performed in multiple iterations.
 
 1. Power on the DUT.
 1. Press `BOOT_MENU_KEY` to enter the boot menu.
-1. In the `Boot Menu`, select the hard disk on which the system was previously
+1. In the `Boot Menu`, select the disk on which the system was previously
    installed or boot entry with the name of `OPERATING_SYSTEM`.
 1. Wait for the `OPERATING_SYSTEM` to boot and note the result.
 
@@ -72,12 +72,12 @@ disk on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUS003.001 Boot Ubuntu Server stable from Hard Disk after reboot
+## BUS003.001 Boot Ubuntu Server stable from disk after reboot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the hard
-disk on the DUT after reboot. The test is performed in multiple iterations.
+This test aims to verify that Ubuntu Server stable could be booted from the disk
+on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
@@ -101,7 +101,7 @@ disk on the DUT after reboot. The test is performed in multiple iterations.
     ```
 
 1. Press `BOOT_MENU_KEY` to enter the boot menu.
-1. In the `Boot Menu`, select the hard disk on which the system was previously
+1. In the `Boot Menu`, select the disk on which the system was previously
    installed or boot entry with the name of `OPERATING_SYSTEM`.
 1. Wait for the `OPERATING_SYSTEM` to boot and note the result.
 
