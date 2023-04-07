@@ -80,6 +80,8 @@ See how to verify signatures on [this video](https://asciinema.org/a/518379)
 [novacustom_ns5x_adl_v1.6.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.6.0/novacustom_ns5x_adl_v1.6.0.rom.sha256
 [novacustom_ns5x_adl_v1.6.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.6.0/novacustom_ns5x_adl_v1.6.0.rom.sha256.sig
 
+## v1.5.0 - Non-public engineering release
+
 ## v1.4.0 - 2022-11-06
 
 Test results for this release can be found
