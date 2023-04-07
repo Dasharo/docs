@@ -14,19 +14,7 @@ Choose your generation below:
     * Boot into
       [Dasharo Tools Suite](/dasharo-tools-suite/documentation/#running)
 
-    * Update the BIOS using the following command:
-
-         ```bash
-         flashrom -p internal -w [novacustom_model_version.rom] --fmap -i RW_SECTION_A
-         ```
-
-         > This command also preserves UEFI settings and the boot order.
-
-    * Update the EC using the following command:
-
-         ```bash
-         system76_ectool flash [novacustom_model_version_ec.rom]
-         ```
+    * Choose option number 5 in DTS to perform update according to [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)
 
 === "11th Gen (Tiger Lake)"
     Check your currently installed firmware version:
