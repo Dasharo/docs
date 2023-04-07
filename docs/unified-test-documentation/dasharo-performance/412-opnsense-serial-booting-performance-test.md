@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting Ubuntu Server
+# Dasharo Performance: OPNsense (serial output) booting performance test
 
 ## Test cases common documentation
 
@@ -13,17 +13,18 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BUS001.001 Boot Ubuntu Server stable from Hard Disk after cold-boot
+## BOS001.001 Boot OPNsense (serial output) stable from Hard Disk after cold-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the hard
-disk on the DUT after cold-boot. The test is performed in multiple iterations.
+This test aims to verify that OPNsense (serial output) stable could be booted
+from the hard disk on the DUT after cold-boot. The test is performed in multiple
+iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server stable
+1. `OPERATING_SYSTEM` = OPNsense (serial output) stable
 
 **Test setup**
 
@@ -43,17 +44,18 @@ disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUS002.001 Boot Ubuntu Server stable from Hard Disk after warm-boot
+## BOS002.001 Boot OPNsense (serial output) stable from Hard Disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the hard
-disk on the DUT after warm-boot. The test is performed in multiple iterations.
+This test aims to verify that OPNsense (serial output) stable could be booted
+from the hard disk on the DUT after warm-boot. The test is performed in multiple
+iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server stable
+1. `OPERATING_SYSTEM` = OPNsense (serial output) stable
 
 **Test setup**
 
@@ -72,17 +74,18 @@ disk on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUS003.001 Boot Ubuntu Server stable from Hard Disk after reboot
+## BOS003.001 Boot OPNsense (serial output) stable from Hard Disk after reboot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the hard
-disk on the DUT after reboot. The test is performed in multiple iterations.
+This test aims to verify that OPNsense (serial output) stable could be booted
+from the hard disk on the DUT after reboot. The test is performed in multiple
+iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server stable
+1. `OPERATING_SYSTEM` = OPNsense (serial output) stable
 
 **Test setup**
 

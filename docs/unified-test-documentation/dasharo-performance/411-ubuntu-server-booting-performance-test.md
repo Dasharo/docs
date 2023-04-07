@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting pfSense (serial output)
+# Dasharo Performance: Ubuntu Server booting performance test
 
 ## Test cases common documentation
 
@@ -13,18 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BPS001.001 Boot pfSense (serial output) stable from Hard Disk after cold-boot
+## BUS001.001 Boot Ubuntu Server stable from Hard Disk after cold-boot
 
 **Test description**
 
-This test aims to verify that pfSense (serial output) stable could be booted
-from the hard disk on the DUT after cold-boot. The test is performed in multiple
-iterations.
+This test aims to verify that Ubuntu Server stable could be booted from the hard
+disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (serial output) stable
+1. `OPERATING_SYSTEM` = Ubuntu Server stable
 
 **Test setup**
 
@@ -44,18 +43,17 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPS002.001 Boot pfSense (serial output) stable from Hard Disk after warm-boot
+## BUS002.001 Boot Ubuntu Server stable from Hard Disk after warm-boot
 
 **Test description**
 
-This test aims to verify that pfSense (serial output) stable could be booted
-from the hard disk on the DUT after warm-boot. The test is performed in multiple
-iterations.
+This test aims to verify that Ubuntu Server stable could be booted from the hard
+disk on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (serial output) stable
+1. `OPERATING_SYSTEM` = Ubuntu Server stable
 
 **Test setup**
 
@@ -74,18 +72,17 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPS003.001 Boot pfSense (serial output) stable from Hard Disk after reboot
+## BUS003.001 Boot Ubuntu Server stable from Hard Disk after reboot
 
 **Test description**
 
-This test aims to verify that pfSense (serial output) stable could be booted
-from the hard disk on the DUT after reboot. The test is performed in multiple
-iterations.
+This test aims to verify that Ubuntu Server stable could be booted from the hard
+disk on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (serial output) stable
+1. `OPERATING_SYSTEM` = Ubuntu Server stable
 
 **Test setup**
 

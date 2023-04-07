@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting OPNsense (VGA output)
+# Dasharo Performance: OPNsense (VGA output) booting performance test
 
 ## Test cases common documentation
 

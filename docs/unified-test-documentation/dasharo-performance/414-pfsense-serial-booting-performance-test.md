@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting Windows
+# Dasharo Performance: pfSense (serial output) booting performance test
 
 ## Test cases common documentation
 
@@ -13,17 +13,18 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BWI001.001 Boot Windows stable from Hard Disk after cold-boot
+## BPS001.001 Boot pfSense (serial output) stable from Hard Disk after cold-boot
 
 **Test description**
 
-This test aims to verify that Windows stable could be booted from the hard disk
-on the DUT after cold-boot. The test is performed in multiple iterations.
+This test aims to verify that pfSense (serial output) stable could be booted
+from the hard disk on the DUT after cold-boot. The test is performed in multiple
+iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows stable
+1. `OPERATING_SYSTEM` = pfSense (serial output) stable
 
 **Test setup**
 
@@ -43,17 +44,18 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BWI002.001 Boot Windows stable from Hard Disk after warm-boot
+## BPS002.001 Boot pfSense (serial output) stable from Hard Disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Windows stable could be booted from the hard disk
-on the DUT after warm-boot. The test is performed in multiple iterations.
+This test aims to verify that pfSense (serial output) stable could be booted
+from the hard disk on the DUT after warm-boot. The test is performed in multiple
+iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows stable
+1. `OPERATING_SYSTEM` = pfSense (serial output) stable
 
 **Test setup**
 
@@ -72,17 +74,18 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BWI003.001 Boot Windows stable from Hard Disk after reboot
+## BPS003.001 Boot pfSense (serial output) stable from Hard Disk after reboot
 
 **Test description**
 
-This test aims to verify that Windows stable could be booted from the hard disk
-on the DUT after reboot. The test is performed in multiple iterations.
+This test aims to verify that pfSense (serial output) stable could be booted
+from the hard disk on the DUT after reboot. The test is performed in multiple
+iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows stable
+1. `OPERATING_SYSTEM` = pfSense (serial output) stable
 
 **Test setup**
 
@@ -94,10 +97,10 @@ on the DUT after reboot. The test is performed in multiple iterations.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Reboot the device executing in PowerShell:
+1. Open a terminal window and run the following command:
 
-    ```powershell
-    Restart-Computer
+    ```bash
+    sudo reboot
     ```
 
 1. Press `BOOT_MENU_KEY` to enter the boot menu.

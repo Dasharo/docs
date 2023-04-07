@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting pfSense (VGA output)
+# Dasharo Performance: Proxmox booting performance test
 
 ## Test cases common documentation
 
@@ -13,18 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BPV001.001 Boot pfSense (VGA output) stable from Hard Disk after cold-boot
+## BPM001.001 Boot Proxmox Virtual Environment stable from Hard Disk after cold-boot
 
 **Test description**
 
-This test aims to verify that pfSense (VGA output) stable could be booted
-from the hard disk on the DUT after cold-boot. The test is performed in multiple
-iterations.
+This test aims to verify that Proxmox VE stable could be booted from the hard
+disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
+1. `OPERATING_SYSTEM` = Proxmox VE stable
 
 **Test setup**
 
@@ -44,18 +43,17 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPV002.001 Boot pfSense (VGA output) stable from Hard Disk after warm-boot
+## BPM002.001 Boot Proxmox Virtual Environment stable from Hard Disk after warm-boot
 
 **Test description**
 
-This test aims to verify that pfSense (VGA output) stable could be booted
-from the hard disk on the DUT after warm-boot. The test is performed in multiple
-iterations.
+This test aims to verify that Proxmox VE stable could be booted from the hard
+disk on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
+1. `OPERATING_SYSTEM` = Proxmox VE stable
 
 **Test setup**
 
@@ -74,18 +72,17 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPV003.001 Boot pfSense (VGA output) stable from Hard Disk after reboot
+## BPM003.001 Boot Proxmox Virtual Environment stable from Hard Disk after reboot
 
 **Test description**
 
-This test aims to verify that pfSense (VGA output) stable could be booted
-from the hard disk on the DUT after reboot. The test is performed in multiple
-iterations.
+This test aims to verify that Proxmox VE stable could be booted from the hard
+disk on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
+1. `OPERATING_SYSTEM` = Proxmox VE stable
 
 **Test setup**
 

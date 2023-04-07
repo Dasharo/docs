@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting Ubuntu
+# Dasharo Performance: Ubuntu booting performance test
 
 ## Test cases common documentation
 

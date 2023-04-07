@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting OPNsense (serial output)
+# Dasharo Performance: pfSense (VGA output) booting performance test
 
 ## Test cases common documentation
 
@@ -13,18 +13,18 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BOS001.001 Boot OPNsense (serial output) stable from Hard Disk after cold-boot
+## BPV001.001 Boot pfSense (VGA output) stable from Hard Disk after cold-boot
 
 **Test description**
 
-This test aims to verify that OPNsense (serial output) stable could be booted
+This test aims to verify that pfSense (VGA output) stable could be booted
 from the hard disk on the DUT after cold-boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense (serial output) stable
+1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
 
 **Test setup**
 
@@ -44,18 +44,18 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOS002.001 Boot OPNsense (serial output) stable from Hard Disk after warm-boot
+## BPV002.001 Boot pfSense (VGA output) stable from Hard Disk after warm-boot
 
 **Test description**
 
-This test aims to verify that OPNsense (serial output) stable could be booted
+This test aims to verify that pfSense (VGA output) stable could be booted
 from the hard disk on the DUT after warm-boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense (serial output) stable
+1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
 
 **Test setup**
 
@@ -74,18 +74,18 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOS003.001 Boot OPNsense (serial output) stable from Hard Disk after reboot
+## BPV003.001 Boot pfSense (VGA output) stable from Hard Disk after reboot
 
 **Test description**
 
-This test aims to verify that OPNsense (serial output) stable could be booted
+This test aims to verify that pfSense (VGA output) stable could be booted
 from the hard disk on the DUT after reboot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense (serial output) stable
+1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
 
 **Test setup**
 

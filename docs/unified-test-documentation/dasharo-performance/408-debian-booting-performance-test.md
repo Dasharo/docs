@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting Debian
+# Dasharo Performance: Debian booting performance test
 
 ## Test cases common documentation
 

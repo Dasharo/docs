@@ -1,4 +1,4 @@
-# Dasharo Performance: Booting FreeBSD
+# Dasharo Performance: FreeBSD booting performance test
 
 ## Test cases common documentation
 
