@@ -14,7 +14,7 @@ Choose your generation below:
     * Boot into
       [Dasharo Tools Suite](/dasharo-tools-suite/documentation/#running)
 
-    * Choose option number 5 in DTS to perform update according to [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)
+    * Follow the procedure described in [DTS firmware update documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)
 
 === "11th Gen (Tiger Lake)"
     Check your currently installed firmware version:
