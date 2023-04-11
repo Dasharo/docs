@@ -67,7 +67,7 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME neuter support][MNE]                          | MNE           | MNE001.001                           |
+| 5.   | [ME neuter support][MNE]                          | MNE           | MNE004.001                           |
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 > Note: in Dasharo compatible with Protectli VP2420 ME neuter support relies

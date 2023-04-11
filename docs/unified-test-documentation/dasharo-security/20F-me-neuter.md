@@ -13,7 +13,54 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-## MNE001.001 Intel ME mode option is available and has the correct default state
+## MNE001.001 Check Intel ME version (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the `Intel ME version` might be read on the
+Operating System level. The read version should be the same as in the release
+notes.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and run the following command:
+
+    ```bash
+    cat /sys/class/mei/mei0/fw_ver
+    ```
+
+1. Note the results.
+
+**Expected result**
+
+The output of the command should contain information about the Management
+Engine Interface firmware version.
+
+Example output:
+
+```bash
+0:16.0.15.1735
+0:16.0.15.1735
+0:16.0.15.1723
+```
+
+Value from the first line, considering the numbers after the colon, should
+correspond to the value from the release notes
+
+## MNE002.001 Intel ME mode option is available and has the correct default state
 
 **Test description**
 
@@ -42,7 +89,7 @@ platform with the Dasharo firmware is correct.
 
 The `Intel ME mode` field should inform that the current state is `Enabled`.
 
-## MNE002.001 Intel ME mode option Enabled works correctly (Ubuntu 22.04)
+## MNE003.001 Intel ME mode option Enabled works correctly (Ubuntu 22.04)
 
 **Test description**
 
@@ -93,7 +140,7 @@ Example output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE003.001 Intel ME mode option Disable (Soft) works correctly (Ubuntu 22.04)
+## MNE004.001 Intel ME mode option Disable (Soft) works correctly (Ubuntu 22.04)
 
 **Test description**
 
@@ -144,7 +191,7 @@ Example of unwanted output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE004.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu 22.04)
+## MNE005.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu 22.04)
 
 **Test description**
 
@@ -195,7 +242,7 @@ Example of unwanted output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE005.001 PCI Express 5.0 port is functional when ME disabled (Ubuntu 22.04)
+## MNE006.001 PCI Express 5.0 port is functional when ME disabled (Ubuntu 22.04)
 
 **Test description**
 
