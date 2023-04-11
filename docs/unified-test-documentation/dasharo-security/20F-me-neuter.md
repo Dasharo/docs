@@ -17,8 +17,9 @@
 
 **Test description**
 
-This test aims to verify the Intel ME version, should be the same as in
-the release notes.
+This test aims to verify that the `Intel ME version` might be read on the
+Operating System level. The read version should be the same as in the release
+notes.
 
 **Test configuration data**
 
@@ -45,13 +46,10 @@ the release notes.
 
 **Expected result**
 
-input:
+The output of the command should contain information about the Management
+Engine Interface firmware version.
 
-```bash
-cat /sys/class/mei/mei0/fw_ver
-```
-
-output:
+Example output:
 
 ```bash
 0:16.0.15.1735
@@ -59,8 +57,8 @@ output:
 0:16.0.15.1723
 ```
 
-The first output line is the Intel ME version.
-The Intel ME version should be the same as in the release notes.
+Value from the first line, considering the numbers after the colon, should
+correspond to the value from the release notes
 
 ## MNE002.001 Intel ME mode option is available and has the correct default state
 
