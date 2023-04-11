@@ -63,7 +63,7 @@ for all platforms of the VP46XX family.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | All                                  |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME neuter support][MNE]                          | MNE           | MNE003.001                           |
+| 5.   | [ME neuter support][MNE]                          | MNE           | MNE004.001                           |
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
 > Note: in Dasharo compatible with Protectli VP46xx ME neuter support relies
