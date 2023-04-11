@@ -13,17 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BUS001.001 Boot Ubuntu Server stable from disk after cold-boot
+## BUS001.001 Boot Ubuntu Server LTS from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the disk
+This test aims to verify that Ubuntu Server LTS could be booted from the disk
 on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server stable
+1. `OPERATING_SYSTEM` = Ubuntu Server 22.04 LTS
 
 **Test setup**
 
@@ -43,17 +43,17 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUS002.001 Boot Ubuntu Server stable from disk after warm-boot
+## BUS002.001 Boot Ubuntu Server LTS from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the disk
+This test aims to verify that Ubuntu Server LTS could be booted from the disk
 on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server stable
+1. `OPERATING_SYSTEM` = Ubuntu Server 22.04 LTS
 
 **Test setup**
 
@@ -72,17 +72,17 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUS003.001 Boot Ubuntu Server stable from disk after reboot
+## BUS003.001 Boot Ubuntu Server LTS from disk after reboot
 
 **Test description**
 
-This test aims to verify that Ubuntu Server stable could be booted from the disk
+This test aims to verify that Ubuntu Server LTS could be booted from the disk
 on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server stable
+1. `OPERATING_SYSTEM` = Ubuntu Server 22.04 LTS
 
 **Test setup**
 

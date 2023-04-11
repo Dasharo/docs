@@ -13,18 +13,18 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BPS001.001 Boot pfSense (serial output) stable from disk after cold-boot
+## BPS001.001 Boot pfSense LTS CE (serial output) from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that pfSense (serial output) stable could be booted
+This test aims to verify that pfSense LTS CE (serial output) could be booted
 from the disk on the DUT after cold-boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (serial output) stable
+1. `OPERATING_SYSTEM` = pfSense CE serial 2.6.0
 
 **Test setup**
 
@@ -44,18 +44,18 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPS002.001 Boot pfSense (serial output) stable from disk after warm-boot
+## BPS002.001 Boot pfSense LTS CE (serial output) from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that pfSense (serial output) stable could be booted
+This test aims to verify that pfSense LTS CE (serial output) could be booted
 from the disk on the DUT after warm-boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (serial output) stable
+1. `OPERATING_SYSTEM` = pfSense CE serial 2.6.0
 
 **Test setup**
 
@@ -74,18 +74,18 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPS003.001 Boot pfSense (serial output) stable from disk after reboot
+## BPS003.001 Boot pfSense LTS CE (serial output) from disk after reboot
 
 **Test description**
 
-This test aims to verify that pfSense (serial output) stable could be booted
+This test aims to verify that pfSense LTS CE (serial output) could be booted
 from the disk on the DUT after reboot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (serial output) stable
+1. `OPERATING_SYSTEM` = pfSense CE serial 2.6.0
 
 **Test setup**
 

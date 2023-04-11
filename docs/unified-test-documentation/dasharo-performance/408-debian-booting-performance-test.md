@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BDE001.001 Boot Debian stable from disk after cold-boot
+## BDE001.001 Boot Debian LTS from disk after cold-boot
 
 **Test description**
 
@@ -23,7 +23,7 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian stable
+1. `OPERATING_SYSTEM` = Debian 11.6
 
 **Test setup**
 
@@ -53,7 +53,7 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian stable
+1. `OPERATING_SYSTEM` = Debian 11.6
 
 **Test setup**
 
@@ -82,7 +82,7 @@ on the DUT after reboot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian stable
+1. `OPERATING_SYSTEM` = Debian 11.6
 
 **Test setup**
 

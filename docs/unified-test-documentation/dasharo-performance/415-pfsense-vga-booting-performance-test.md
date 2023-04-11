@@ -13,18 +13,18 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BPV001.001 Boot pfSense (VGA output) stable from disk after cold-boot
+## BPV001.001 Boot pfSense LTS CE (VGA output) from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that pfSense (VGA output) stable could be booted
+This test aims to verify that pfSense LTS CE (VGA output) could be booted
 from the disk on the DUT after cold-boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
+1. `OPERATING_SYSTEM` = pfSense CE VGA 2.6.0
 
 **Test setup**
 
@@ -44,18 +44,18 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPV002.001 Boot pfSense (VGA output) stable from disk after warm-boot
+## BPV002.001 Boot pfSense LTS CE (VGA output) from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that pfSense (VGA output) stable could be booted
+This test aims to verify that pfSense LTS CE (VGA output) could be booted
 from the disk on the DUT after warm-boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
+1. `OPERATING_SYSTEM` = pfSense CE VGA 2.6.0
 
 **Test setup**
 
@@ -74,18 +74,18 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPV003.001 Boot pfSense (VGA output) stable from disk after reboot
+## BPV003.001 Boot pfSense LTS CE (VGA output) from disk after reboot
 
 **Test description**
 
-This test aims to verify that pfSense (VGA output) stable could be booted
+This test aims to verify that pfSense LTS CE (VGA output) could be booted
 from the disk on the DUT after reboot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense (VGA output) stable
+1. `OPERATING_SYSTEM` = pfSense CE VGA 2.6.0
 
 **Test setup**
 

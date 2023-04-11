@@ -13,17 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BPM001.001 Boot Proxmox Virtual Environment stable from disk after cold-boot
+## BPM001.001 Boot Proxmox Virtual Environment from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that Proxmox VE stable could be booted from the disk on
+This test aims to verify that Proxmox VE could be booted from the disk on
 the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Proxmox VE stable
+1. `OPERATING_SYSTEM` = Proxmox VE 7.4
 
 **Test setup**
 
@@ -43,17 +43,17 @@ the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPM002.001 Boot Proxmox Virtual Environment stable from disk after warm-boot
+## BPM002.001 Boot Proxmox Virtual Environment from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Proxmox VE stable could be booted from the disk on
+This test aims to verify that Proxmox VE could be booted from the disk on
 the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Proxmox VE stable
+1. `OPERATING_SYSTEM` = Proxmox VE 7.4
 
 **Test setup**
 
@@ -72,17 +72,17 @@ the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPM003.001 Boot Proxmox Virtual Environment stable from disk after reboot
+## BPM003.001 Boot Proxmox Virtual Environment from disk after reboot
 
 **Test description**
 
-This test aims to verify that Proxmox VE stable could be booted from the disk on
+This test aims to verify that Proxmox VE could be booted from the disk on
 the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Proxmox VE stable
+1. `OPERATING_SYSTEM` = Proxmox VE 7.4
 
 **Test setup**
 

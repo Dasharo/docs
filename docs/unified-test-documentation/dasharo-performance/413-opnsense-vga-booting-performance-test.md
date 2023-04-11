@@ -13,18 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BOV001.001 Boot OPNsense (VGA output) stable from disk after cold-boot
+## BOV001.001 Boot OPNsense (VGA output) from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that OPNsense (VGA output) stable could be booted
-from the disk on the DUT after cold-boot. The test is performed in multiple
-iterations.
+This test aims to verify that OPNsense (VGA output) could be booted from the
+disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense (VGA output) stable
+1. `OPERATING_SYSTEM` = OPNsense VGA 23.01
 
 **Test setup**
 
@@ -55,7 +54,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense (VGA output) stable
+1. `OPERATING_SYSTEM` = OPNsense VGA 23.01
 
 **Test setup**
 
@@ -85,7 +84,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense (VGA output) stable
+1. `OPERATING_SYSTEM` = OPNsense VGA 23.01
 
 **Test setup**
 

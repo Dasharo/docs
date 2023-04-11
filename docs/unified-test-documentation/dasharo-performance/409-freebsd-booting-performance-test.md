@@ -13,17 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BFB001.001 Boot FreeBSD stable from disk after cold-boot
+## BFB001.001 Boot FreeBSD-RELEASE from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that FreeBSD stable could be booted from the disk
+This test aims to verify that FreeBSD-RELEASE could be booted from the disk
 on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = FreeBSD stable
+1. `OPERATING_SYSTEM` = FreeBSD 13.2
 
 **Test setup**
 
@@ -43,17 +43,17 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BFB002.001 Boot FreeBSD stable from disk after warm-boot
+## BFB002.001 Boot FreeBSD-RELEASE from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that FreeBSD stable could be booted from the disk
+This test aims to verify that FreeBSD-RELEASE could be booted from the disk
 on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = FreeBSD stable
+1. `OPERATING_SYSTEM` = FreeBSD 13.2
 
 **Test setup**
 
@@ -72,17 +72,17 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BFB003.001 Boot FreeBSD stable from disk after reboot
+## BFB003.001 Boot FreeBSD-RELEASE from disk after reboot
 
 **Test description**
 
-This test aims to verify that FreeBSD stable could be booted from the disk
+This test aims to verify that FreeBSD-RELEASE could be booted from the disk
 on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = FreeBSD stable
+1. `OPERATING_SYSTEM` = FreeBSD 13.2
 
 **Test setup**
 
