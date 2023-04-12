@@ -43,16 +43,22 @@ from booting, but we cannot provide input to the platform at the same time.
 - For external flashing, connect `RTE` with motherboard according to the table
   below:
 
-| RTE SPI header      | Msi Z690                                             |
+| RTE SPI header      | MSI Z690-A                                           |
 |:-------------------:|:----------------------------------------------------:|
 | J7 pin 1 (Vcc)      | JTPM1 pin 1 (SPI Power)                              |
 | J7 pin 2 (GND)      | JTPM1 pin 7 (GND)                                    |
-| J7 pin 3 (CS)       | Pin soldered to SPI chip pin 1 (CS), see image below |
+| J7 pin 3 (CS)       | JTPM1 pin 5 (RESERVED / BIOS SPI CS pin)             |
 | J7 pin 4 (SCLK)     | JTPM1 pin 6 (SPI Clock)                              |
 | J7 pin 5 (MISO)     | JTPM1 pin 3 (MISO)                                   |
 | J7 pin 6 (MOSI)     | JTPM1 pin 4 (MOSI)                                   |
 
-![JTPM1](images/msi_z690_spi.jpeg)
+> JTPM1 is a 2mm pitch header, you will need 2mm to 2.54mm female-female dupont
+> wires to connect to RTE.
+
+The JTPM1 pin5 is actually BIOS SPI CS pin (marked as reserved in the board
+manual).
+
+![JTPM1](images/msi_z690_jtpm1.jpeg)
 
 - Example connection:
 
