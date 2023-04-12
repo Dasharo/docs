@@ -340,7 +340,7 @@ nav:
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
-              - 'ME neuter': unified-test-documentation/dasharo-security/20F-me-neuter.md
+              - 'ME neuter/disable': unified-test-documentation/dasharo-security/20F-me-neuter.md
               - 'BIOS lock support': unified-test-documentation/dasharo-security/20J-bios-lock-support.md
               - 'SMM BIOS write protection': unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
               - 'Early boot DMA protection': unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md

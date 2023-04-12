@@ -45,7 +45,7 @@ subjected before the release of the new binary.
 | 34.  | [Fedora support][FED]                                  | FED           | All                                  |
 | 35.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001 |
 | 36.  | [Sign of life][SOL]                                    | SOL           | All                                  |
-| 37.  | [ME neuter support][MNE]                               | MNE           | MNE001.001                           |
+| 37.  | [ME disable/neuter support][MNE]                       | MNE           | MNE001.001                           |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md

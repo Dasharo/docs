@@ -1,4 +1,4 @@
-# Dasharo Security: ME neuter
+# Dasharo Security: ME neuter/disable
 
 ## Test cases common documentation
 

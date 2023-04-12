@@ -67,12 +67,12 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME neuter support][MNE]                          | MNE           | MNE004.001                           |
+| 5.   | [ME disable/neuter support][MNE]                  | MNE           | MNE004.001                           |
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 
-> Note: in Dasharo compatible with Protectli VP2420 ME neuter support relies
-on the default blocking of this functionality - no additional option for ME
-neuter setting is available in the Setup Menu.
+> Note: in Dasharo compatible with Protectli VP2420 ME is soft-disabled by
+> default - no additional option for ME disabling is available in the Setup
+> Menu.
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md

@@ -81,7 +81,7 @@ acts as a kill-switch for the ME
 Leaves ME in a stopped state, lets it shut down gracefully instead of erroring
 out
 - This can help prevent issues with power management that may arise from
-  neutering the ME
+  disabling the ME
 - Supported by some OEMs
 
 ## 3mdeb official statement
