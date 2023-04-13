@@ -23,7 +23,7 @@ lock:
     is chosen, press `Space` and then `F10` to save the changes.
 1. Reboot the device to properly apply the changes.
 
-## Updating to Dasharo v1.0.18 or v1.0.19
+## Updating to Dasharo v1.0.18 or v1.0.19 or v1.1.0
 
 From v1.0.18 Dasharo firmware is rebased on the more up-to-date revision of
 coreboot.
@@ -33,8 +33,8 @@ you are migrating from proprietary firmware the whole flash chip should be
 flashed as described in [Initial Deployment](initial-deployment.md).
 
 If the current version of the firmware on the device is v1.0.18 and it should
-be updated to v1.0.19, only the `WP_RO` and `RW_SECTION_A` should be flashed.
-To do this the following command should be used:
+be updated to v1.0.19 or v1.1.0, only the `WP_RO` and `RW_SECTION_A` should be
+flashed. To do this the following command should be used:
 
 ```bash
 flashrom -p internal -w protectli_vault_cml_v1.0.19.rom --fmap -i WP_RO -i RW_SECTION_A
