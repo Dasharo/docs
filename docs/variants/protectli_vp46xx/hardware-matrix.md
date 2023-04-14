@@ -27,7 +27,7 @@ coreboot port on the Protectli VP46XX firewall.
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
-| **Power supply**               | Channel Well Technology 12V, 3.33A 40W      |
+| **Power supply**               | Channel Well Technology 12V, 5.0A 60W       |
 
 ## Protectli VP4650
 
@@ -50,7 +50,7 @@ coreboot port on the Protectli VP46XX firewall.
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
-| **Power supply**               | Channel Well Technology 12V, 5.0A 60W       |
+| **Power supply**               | Channel Well Technology 12V, 7.5A 90W       |
 
 ## Protectli VP4670
 
