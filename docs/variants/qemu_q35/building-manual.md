@@ -26,12 +26,20 @@ with git or downloading the source code from github.
 git clone https://github.com/Dasharo/edk2.git
 ```
 
+Start the instance of the docker image under the Dasharo/edk2 repository:
+
+```bash
+sudo docker run --rm -it -v $PWD:/home/coreboot/coreboot -w /home/coreboot/coreboot -u root coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+```
+
 1. Follow below instructions, to prepare your environment for building OVMF image.
 
 - Setup the environment variables with the following command -
 
 ```bash
-make -C BaseTools source edksetup.sh
+make -C BaseTools
+
+source edksetup.sh
 ```
 
 - Update the submodules in order get latest dependencies.
@@ -50,7 +58,7 @@ Following is an example of SMM feature enabled,
  Check the following build command:
 
 ```bash
-build -a IA32 -a X64 -t GCC5 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc.
+build -a IA32 -a X64 -t GCC5 -b RELEASE -p OvmfPkg/OvmfPkgX64.dsc
 ```
 
 - Once the build is completed, the OVMF firmware image can be found below given path:

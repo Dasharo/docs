@@ -8,9 +8,20 @@ docker instance (host machine) using built OVMF firmware image.
 + QEMU Installation:
     - [Install QEMU on your linux distro](https://www.qemu.org/download/#linux)
 
- ```bash
- qemu-system-x86_64 -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd -debugcon file:debug.log -global ICH9-LPC.disable_s3=1 -net none -machine q35,smm=on
- ```
+```bash
+ qemu-system-x86_64 -machine q35,smm=on \
+
+ -global driver=cfi.pflash01,property=secure,value=on \
+
+ -drive if=pflash,format=raw,unit=0,file=Build/OvmfX64/DEBUG_GCC5
+ /FV/OVMF_CODE.fd,readonly=on \
+
+ -drive if=pflash,format=raw,unit=1,file=Build/OvmfX64/DEBUG_GCC5/FV/OVMF_VARS.fd \
+
+ -debugcon file:debug.log -global isa-debugcon.iobase=0x402 \
+
+ -global ICH9-LPC.disable_s3=1 -net none
+```
 
 + `-drive` indicate device is pflash with firmware image of built OVMF.fd image.
 
@@ -37,7 +48,7 @@ only Q35 machines are supported hence the machine type.
 
 ## Useful Tips for modifying the changes in .DSC & .FDF
 
-### Follow below steps, to rebuild the firmware image and experiments with features
+### Follow the steps below to rebuild firmware image & experiment with the features
 
 + If any code is added to C file or any library functions are invoked in other files,
 rebuild the OVMF image with the following command.
@@ -94,7 +105,7 @@ SecurityPkg/HddPassword/HddPasswordPei.inf
 
 ## Dasharo System Features
 
-1. The `.fdf` describes about source file location and variables used during
+1. The `.fdf` describes the source files' location and variables used during the
 build process.
 
 2. Below code snippet shows about the location of `SATA disk password` `.inf` file.
