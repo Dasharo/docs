@@ -49,6 +49,12 @@ Choose your generation below:
 
          > This command also preserves UEFI settings and the boot order.
 
+    * Update the Management Engine firmware version using the following command:
+
+         ```bash
+         flashrom -p internal -w [novacustom_model_version.rom] --ifd -i me -i fd
+         ```
+
     * Update the EC using the following command:
 
          ```bash
