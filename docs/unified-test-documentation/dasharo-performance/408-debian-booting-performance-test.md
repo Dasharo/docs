@@ -17,7 +17,7 @@
 
 **Test description**
 
-This test aims to verify that Debian stable could be booted from the disk
+This test aims to verify that Debian LTS could be booted from the disk
 on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
@@ -43,11 +43,11 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BDE002.001 Boot Debian stable from disk after warm-boot
+## BDE002.001 Boot Debian LTS from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Debian stable could be booted from the disk
+This test aims to verify that Debian LTS could be booted from the disk
 on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
@@ -72,11 +72,11 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BDE003.001 Boot Debian stable from disk after reboot
+## BDE003.001 Boot Debian LTS from disk after reboot
 
 **Test description**
 
-This test aims to verify that Debian stable could be booted from the disk
+This test aims to verify that Debian LTS could be booted from the disk
 on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
