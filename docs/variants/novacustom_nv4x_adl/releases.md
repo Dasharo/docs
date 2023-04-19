@@ -14,7 +14,7 @@ For details about our release process please read
 </center>
 
 Test results for this platform can be found
-[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=479605222).
 
 ## v1.6.0 - 2023-04-19
 
