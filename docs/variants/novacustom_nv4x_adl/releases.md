@@ -16,7 +16,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1695997523).
 
-## v1.6.0 - 2023-04-18
+## v1.6.0 - 2023-04-19
 
 ### Added
 
@@ -34,29 +34,29 @@ Test results for this platform can be found
 
 ### Fixed
 
-- [The power LED is not always blinking while in sleep mode on Ubuntu 22.04 (Dasharo issue #260)](https://github.com/Dasharo/dasharo-issues/issues/260)
-- [Suspend mode not working under Qubes OS 4.1 (Dasharo issue #266)](https://github.com/Dasharo/dasharo-issues/issues/266)
-- [Docking station under Qubes OS (Dasharo issue #267)](https://github.com/Dasharo/dasharo-issues/issues/267)
-- [The Auto Boot time-out value is not respected (Dasharo issue #292)](https://github.com/Dasharo/dasharo-issues/issues/292)
-- [ACPI boot errors during booting Ubuntu 22.04 (Dasharo issue #293)](https://github.com/Dasharo/dasharo-issues/issues/293)
-- [Windows update KB5012170 cannot be installed (Dasharo issue #294)](https://github.com/Dasharo/dasharo-issues/issues/294)
-- [Internal keyboard sometimes does not work in firmware (Dasharo issue #295)](https://github.com/Dasharo/dasharo-issues/issues/295)
-- [Laptop hangs up after 20 cycles of the suspend procedure (Dasharo issue #305)](https://github.com/Dasharo/dasharo-issues/issues/305)
-- [Keyboard backlight not working after restart (Dasharo issue #349)](https://github.com/Dasharo/dasharo-issues/issues/349)
-- [Function key display on/off does not completely blank the screen  (Dasharo issue #354)](https://github.com/Dasharo/dasharo-issues/issues/354)
-- [Connecting the RJ45 cable to the Gigabit Ethernet port on the docking station does not result in obtaining an Internet connection (Dasharo issue #356)](https://github.com/Dasharo/dasharo-issues/issues/356)
-- [Unable to wake up from suspend (Dasharo issue #362)](https://github.com/Dasharo/dasharo-issues/issues/362)
+- [The power LED is not always blinking while in sleep mode on Ubuntu 22.04 (#260)](https://github.com/Dasharo/dasharo-issues/issues/260)
+- [Suspend mode not working under Qubes OS 4.1 (#266)](https://github.com/Dasharo/dasharo-issues/issues/266)
+- [Docking station under Qubes OS (#267)](https://github.com/Dasharo/dasharo-issues/issues/267)
+- [The Auto Boot time-out value is not respected (#292)](https://github.com/Dasharo/dasharo-issues/issues/292)
+- [ACPI boot errors during booting Ubuntu 22.04 (#293)](https://github.com/Dasharo/dasharo-issues/issues/293)
+- [Windows update KB5012170 cannot be installed (#294)](https://github.com/Dasharo/dasharo-issues/issues/294)
+- [Internal keyboard sometimes does not work in firmware (#295)](https://github.com/Dasharo/dasharo-issues/issues/295)
+- [Laptop hangs up after 20 cycles of the suspend procedure (#305)](https://github.com/Dasharo/dasharo-issues/issues/305)
+- [Keyboard backlight not working after restart (#349)](https://github.com/Dasharo/dasharo-issues/issues/349)
+- [Function key display on/off does not completely blank the screen (#354)](https://github.com/Dasharo/dasharo-issues/issues/354)
+- [Connecting the RJ45 cable to the Gigabit Ethernet port on the docking station does not result in obtaining an Internet connection (#356)](https://github.com/Dasharo/dasharo-issues/issues/356)
+- [Unable to wake up from suspend (#362)](https://github.com/Dasharo/dasharo-issues/issues/362)
 
 ### Known issues
 
-- [The power LED is not always blinking while in sleep mode on Windows 11 (Dasharo issue #182)](https://github.com/Dasharo/dasharo-issues/issues/182)
-- [Popup with information about recovery mode is displayed after flashing with a valid binary (Dasharo issue #269)](https://github.com/Dasharo/dasharo-issues/issues/269)
-- [Missing information about cache  (Dasharo issue #343)](https://github.com/Dasharo/dasharo-issues/issues/343)
-- [Connecting and immediately disconnecting the charger, sets the battery status in OS to charging for about 2 minutes  (Dasharo issue #350)](https://github.com/Dasharo/dasharo-issues/issues/350)
-- [Reset to defaults with F9 causes the wrong settings to be restored (Dasharo issue #355)](https://github.com/Dasharo/dasharo-issues/issues/355)
-- [Unwanted reset of BIOS settings (Dasharo issue #365)](https://github.com/Dasharo/dasharo-issues/issues/365)
-- [Laptop not suspending while connected to a USB-C docking station (Dasharo issue #368)](https://github.com/Dasharo/dasharo-issues/issues/368)
-- [The docking station is not detected after cold-boot and warm-boot (dasharo issue #404)](https://github.com/Dasharo/dasharo-issues/issues/404)
+- [The power LED is not always blinking while in sleep mode on Windows 11 (#182)](https://github.com/Dasharo/dasharo-issues/issues/182)
+- [Popup with information about recovery mode is displayed after flashing with a valid binary (#269)](https://github.com/Dasharo/dasharo-issues/issues/269)
+- [Missing information about cache (#343)](https://github.com/Dasharo/dasharo-issues/issues/343)
+- [Connecting and immediately disconnecting the charger, sets the battery status in OS to charging for about 2 minutes (#350)](https://github.com/Dasharo/dasharo-issues/issues/350)
+- [Reset to defaults with F9 causes the wrong settings to be restored (#355)](https://github.com/Dasharo/dasharo-issues/issues/355)
+- [Unwanted reset of BIOS settings (#365)](https://github.com/Dasharo/dasharo-issues/issues/365)
+- [Laptop not suspending while connected to a USB-C docking station (#368)](https://github.com/Dasharo/dasharo-issues/issues/368)
+- [The docking station is not detected after cold-boot and warm-boot (#404)](https://github.com/Dasharo/dasharo-issues/issues/404)
 
 ### Binaries
 
@@ -82,6 +82,8 @@ See how to verify signatures on [this video](https://asciinema.org/a/518379)
 [novacustom_nv4x_adl_v1.6.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.6.0/novacustom_nv4x_adl_v1.6.0.rom
 [novacustom_nv4x_adl_v1.6.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.6.0/novacustom_nv4x_adl_v1.6.0.rom.sha256
 [novacustom_nv4x_adl_v1.6.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.6.0/novacustom_nv4x_adl_v1.6.0.rom.sha256.sig
+
+## v1.5.0 - Non-public engineering release
 
 ## v1.4.0 - 2022-12-13
 
