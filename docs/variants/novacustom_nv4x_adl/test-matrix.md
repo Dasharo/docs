@@ -45,10 +45,6 @@ subjected from before the release of the new binary.
 | 34.  | [Fedora support][FED]                             | FED           | All                                  |
 | 35.  | [Platform suspend and resume][SUSP]               | SUSP          | Without SUSP004.001                  |
 
-<!-->
-| 36.  | [Sign of life][SOL]                               | SOL           
-| All                                  |
--->
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
