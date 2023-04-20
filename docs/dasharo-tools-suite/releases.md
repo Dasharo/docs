@@ -13,7 +13,7 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
-## v1.2.0 - 2023-04-03
+## v1.2.0 - 2023-04-20
 
 ### Images
 
@@ -38,7 +38,7 @@ Process](../dev-proc/standard-release-process.md).
 ### Changelog
 
 Please, refer to
-[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v120---2023-04-03)
+[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v120---2023-04-20)
 stored in `meta-dts` repository.
 
 ## v1.1.1 - 2023-02-20
