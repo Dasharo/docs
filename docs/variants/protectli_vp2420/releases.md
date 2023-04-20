@@ -18,14 +18,14 @@ Test results for this platform can be found
 
 ### Added
 
-- [USB stack and mass storage enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
-- [SMM BIOS write protection enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [USB stack and mass storage enable/disable option](../../../dasharo-menu-docs/dasharo-system-features/#usb-configuration)
+- [SMM BIOS write protection enable/disable option](../../../dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 
 ### Changed
 
-- [Updating from v1.0.x requires flashing the WP_RO recovery partition](https://docs.dasharo.com/variants/protectli_vp2420/firmware-update/#updating-minor-versions-v1xy)
+- [Updating from v1.0.x requires flashing the WP_RO recovery partition](../../protectli_vp2420/firmware-update/#updating-minor-versions-v1xy)
 - [Firmware version v1.1.x are signed with a new key](https://asciinema.org/a/577551)
-- [Keys must be provisioned prior enabling Secure Boot](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
+- [Keys must be provisioned prior enabling Secure Boot](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
 
 ### Fixed
 
