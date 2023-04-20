@@ -13,12 +13,13 @@ coreboot port on the Protectli VP46XX firewall.
 | **RAM**                        | Slot 1: Empty                               |
 |                                | Slot 2: SAMSUNG M471A4G43MB1-CTD            |
 | **Flash memory**               | Macronix KH25L12835F                        |
-| **SSD**                        | Samsung MZVLB256HBHQ-00000                  |
+| **SSD**                        | Kingston NV1 250GB SNVS/250G                |
 | **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
 | **Wireless card**              | Intel Wi-Fi 6 AX200                         |
+| **4G Modem**                   | AMIT MDG200-0T001                           |
 | **Display**                    | Display 1: HDMI 1920x1080p                  |
 |                                | Display 2: DP 1920x1080p                    |
 | **Ethernet controller**        | 6x intel i225 (on-board)                    |
@@ -41,7 +42,8 @@ coreboot port on the Protectli VP46XX firewall.
 | **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
-| **Wireless card**              | Intel Wi-Fi 6 AX200                         |
+| **Wireless card**              | JJPLUS JWW6051                              |
+| **4G Modem**                   | AMIT MDG200-0T001                           |
 | **Display**                    | Display 1: HDMI 1920x1080p                  |
 |                                | Display 2: DP 1920x1080p                    |
 | **Ethernet controller**        | 6x intel i225 (on-board)                    |
@@ -58,13 +60,14 @@ coreboot port on the Protectli VP46XX firewall.
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel Core i7-10810U                        |
 | **RAM**                        | Slot 1: Empty                               |
-|                                | Slot 2: SAMSUNG M471A5143EB0-CPB            |
+|                                | Slot 2: Crucial ct8g4sfra266.c8fe           |
 | **Flash memory**               | Macronix KH25L12835F                        |
-| **SSD**                        | GOODRAM 240GB 2,5" SATA SSD CL100 gen.3     |
+| **SSD**                        | Samsung 970 EVO Plus 2TB MZ-V7S2T0          |
 | **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
-| **Wireless card**              | Intel Wi-Fi 6 AX200                         |
+| **Wireless card**              | JJPLUS JWW6051                              |
+| **4G Modem**                   | AMIT MDG200-0T001                           |
 | **Display**                    | Display 1: HDMI 1920x1080p                  |
 |                                | Display 2: DP 1920x1080p                    |
 | **Ethernet controller**        | 6x intel i225 (on-board)                    |
