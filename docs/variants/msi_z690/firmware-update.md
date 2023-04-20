@@ -31,31 +31,15 @@ We recommend using the DTS.
 
 ### Dasharo Tools Suite
 
-DTS is already equipped with a correct flashrom build. Get
-[Dasharo Tools Suite (DTS)](../../dasharo-tools-suite/releases.md)
-ISO and burn it on a USB stick.
+The DTS allow to perform automatic firmware update process which is the
+recommended method. To update your firmware, follow below steps.
 
-Since DTS v1.1.2 you may simply choose the firmware update option from the menu
-as described in [DTS Firmware Update section](../../dasharo-tools-suite/documentation.md#firmware-update)
-and DTS will carry out all necessary operations (RECOMMENDED).
-
-If you would like to do it manually you will need to download a firmware update
-binary. When you boot DTS from USB enter the shell from the menu and invoke
-following commands for v1.1.1 for example (you can find the links in the
-[Releases section](releases.md)):
-
-```bash
-wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom
-```
-
-Or for DDR5 platform:
-
-```bash
-wget https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr5.rom
-```
-
-They will also work in any Linux terminal with wget installed. Then proceed
-with commands described in subsequent sections after.
+1. Boot [DTS using
+   iPXE](../../dasharo-tools-suite/documentation.md/#bootable-over-a-network) on
+   your platform.
+2. Follow [firmware
+   update](../../dasharo-tools-suite/documentation.md/#firmware-update)
+   procedure described in DTS documentation.
 
 ### Linux distribution of your choice
 
@@ -131,13 +115,13 @@ No operations were specified.
 
 That means you are good to go.
 
-## Migrating SMBIOS unique data (optional)
+#### Migrating SMBIOS unique data (optional)
 
 Before flashing you may migrate your serial number and UUID as
 described in [Initial deployment](initial-deployment.md#migrating-smbios-unique-data).
 Applicable to Dasharo v1.1.0 and later.
 
-## Version v1.1.0 or newer
+#### Version v1.1.0 or newer
 
 > Version v1.1.0 had to change the flashmap layout and requires usage of the
 > [procedure below](#version-older-than-v110) when migrating from v1.0.0 or
@@ -155,7 +139,7 @@ flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
 > will be lost. Also, the memory training procedure will have to be carried out
 > again.
 
-## Version older than v1.1.0
+#### Version older than v1.1.0
 
 In this case, the whole `bios` region must be updated.
 
@@ -163,7 +147,7 @@ In this case, the whole `bios` region must be updated.
 flashrom -p internal -w [path] --ifd -i bios
 ```
 
-## Troubleshooting
+#### Troubleshooting
 
 Possible errors are described in the
 [Generic deployment problems with flashrom](../../osf-trivia-list/deployment.md#flashrom)
