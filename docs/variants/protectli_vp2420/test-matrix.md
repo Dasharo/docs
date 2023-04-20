@@ -67,20 +67,14 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME disable/neuter support][MNE]                  | MNE           | MNE004.001                           |
-| 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
-| 7.   | [USB stack enable/disable][USS]                   | USS           | All                                  |
-| 8.   | [SMM BIOS write protection][SMM]                  | SMM           | All                                  |
-
-> Note: in Dasharo compatible with Protectli VP2420 ME is soft-disabled by
-> default - no additional option for ME disabling is available in the Setup
-> Menu.
+| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+| 6.   | [USB stack enable/disable][USS]                   | USS           | All                                  |
+| 7.   | [SMM BIOS write protection][SMM]                  | SMM           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
-[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 [USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
 [SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
