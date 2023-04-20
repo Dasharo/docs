@@ -12,7 +12,48 @@ For details about our release process please read
 </center>
 
 Test results for this platform can be found
-[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=975611333).
+[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=579117128).
+
+## v1.1.0 - 2023-04-20
+
+### Added
+
+- [USB stack and mass storage enable/disable option](../../../dasharo-menu-docs/dasharo-system-features/#usb-configuration)
+- [SMM BIOS write protection enable/disable option](../../../dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+
+### Changed
+
+- [Updating from v1.0.x requires flashing the WP_RO recovery partition](../../protectli_vp2420/firmware-update/#updating-minor-versions-v1xy)
+- [Firmware version v1.1.x are signed with a new key](https://asciinema.org/a/577551)
+- [Keys must be provisioned prior enabling Secure Boot](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+
+### Fixed
+
+- [VP2420 memory issues and incorrectly reported memory capacity](https://github.com/Dasharo/dasharo-issues/issues/397)
+- [Popup with information about recovery mode is still displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/320)
+
+### Known issues
+
+- [pfSense boot time](https://github.com/Dasharo/dasharo-issues/issues/318)
+- [Double characters in pfSense initial boot phase](https://github.com/Dasharo/dasharo-issues/issues/319)
+
+### Binaries
+
+[protectli_vp2420_v1.1.0.rom][protectli_vp2420_v1.1.0.rom_file]{.md-button}
+[sha256][protectli_vp2420_v1.1.0.rom_hash]{.md-button}
+[sha256.sig][protectli_vp2420_v1.1.0.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/577551)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on c86c926 revision e36a117d](https://github.com/Dasharo/coreboot/tree/e36a117d)
+- [edk2 based on 7f90b9cd revision 19bf14b4](https://github.com/Dasharo/edk2/tree/19bf14b4)
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[protectli_vp2420_v1.1.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.1.0/protectli_vp2420_v1.1.0.rom
+[protectli_vp2420_v1.1.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.1.0/protectli_vp2420_v1.1.0.rom.sha256
+[protectli_vp2420_v1.1.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.1.0/protectli_vp2420_v1.1.0.rom.sha256.sig
 
 ## v1.0.1 - 2023-02-02
 
