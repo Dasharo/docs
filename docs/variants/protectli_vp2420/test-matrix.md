@@ -67,30 +67,46 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME disable/neuter support][MNE]                  | MNE           | MNE004.001                           |
-| 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
-
-> Note: in Dasharo compatible with Protectli VP2420 ME is soft-disabled by
-> default - no additional option for ME disabling is available in the Setup
-> Menu.
+| 5.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
+| 6.   | [USB stack enable/disable][USS]                   | USS           | All                                  |
+| 7.   | [SMM BIOS write protection][SMM]                  | SMM           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
-[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+[USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 
 ## Module: Dasharo performance
 
-| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
-| 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
-| 3.   | [CPU frequency measure][CPF]                      | CPF           | Without CPU003.XXX and CPU005.XXX    |
-| 4.   | [Platform stability][STB]                         | STB           | All                                  |
+| No.  | Supported test suite                                     | Test suite ID | Supported test cases                 |
+|:-----|:---------------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [coreboot bring up time measurement][CBMEM]              | CBMEM         | All                                  |
+| 2.   | [CPU temperature measure][CPT]                           | CPT           | All                                  |
+| 3.   | [CPU frequency measure][CPF]                             | CPF           | Without CPU003.XXX and CPU005.XXX    |
+| 4.   | [Platform stability][STB]                                | STB           | All                                  |
+| 5.   | [Ubuntu booting performance test][BUB]                   | BUB           | All                                  |
+| 6.   | [Debian booting performance test][BDE]                   | BDE           | All                                  |
+| 7.   | [FreeBSD booting performance test][BFB]                  | BFB           | All                                  |
+| 8.   | [Proxmox booting performance test][BPM]                  | BPM           | All                                  |
+| 9.   | [Ubuntu Server booting performance test][BUS]            | BUS           | All                                  |
+| 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All                                  |
+| 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All                                  |
+| 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All                                  |
+| 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
 [STB]: ../../unified-test-documentation/dasharo-performance/404-platform-stability.md
+[BUB]: ../../unified-test-documentation/dasharo-performance/407-ubuntu-booting-performance-test.md
+[BDE]: ../../unified-test-documentation/dasharo-performance/408-debian-booting-performance-test.md
+[BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
+[BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
+[BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
+[BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
+[BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+[BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
+[BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
