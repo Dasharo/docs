@@ -59,10 +59,10 @@ coreboot port on the Protectli VP46XX firewall.
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel Core i7-10810U                        |
-| **RAM**                        | Slot 1: Empty                               |
-|                                | Slot 2: Crucial ct8g4sfra266.c8fe           |
+| **RAM**                        | Slot 1: Samsung 4GB 1Rx8 PC4-2133P-SA0-11   |
+|                                | Slot 2: Samsung 4GB 1Rx8 PC4-2133P-SA0-11   |
 | **Flash memory**               | Macronix KH25L12835F                        |
-| **SSD**                        | Samsung 970 EVO Plus 2TB MZ-V7S2T0          |
+| **SSD**                        | SKingston NV1 250GB SNVS/250G               |
 | **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
