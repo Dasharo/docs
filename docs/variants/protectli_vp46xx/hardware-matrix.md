@@ -62,7 +62,7 @@ coreboot port on the Protectli VP46XX firewall.
 | **RAM**                        | Slot 1: Samsung 4GB 1Rx8 PC4-2133P-SA0-11   |
 |                                | Slot 2: Samsung 4GB 1Rx8 PC4-2133P-SA0-11   |
 | **Flash memory**               | Macronix KH25L12835F                        |
-| **SSD**                        | SKingston NV1 250GB SNVS/250G               |
+| **SSD**                        | Kingston NV1 250GB SNVS/250G                |
 | **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
