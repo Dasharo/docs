@@ -110,7 +110,7 @@ Do not forget to check whether patch has been reviewed and changes to your
 contribution (PR) are needed. If so, remember about answering to each addressed
 thread with information about change in the commit
 
-* template: `Fixed: <link to commit?`
+* template: `Fixed: <link to commit>`
 * example: Fixed [0a2a4ee](https://github.com/Dasharo/docs/pull/450/commits/0a2a4eecf9dc5bce1b3cc2edfa25046245e41ee2)
 
 ### Dasharo Matrix Space
