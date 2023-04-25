@@ -144,7 +144,7 @@ supply connected to the Thunderbolt 4 port.
 
 **Test description**
 
-This test verifies that the laptop can output video to a display connected via
+This test verifies that DUT output video to a display connected via
 the Thunderbolt 4 USB Type-C port.
 
 **Test configuration data**
@@ -162,8 +162,8 @@ the Thunderbolt 4 USB Type-C port.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Connect a display to the Thunderbolt 4 USB Type-C port located on the left
-    side of the laptop using the USB Type-C hub.
+1. Connect a display to the Thunderbolt 4 USB Type-C port using
+    a USB Type-C hub
 1. Open the Settings application and select the Displays panel in the left menu.
 1. Verify that the attached external monitor can be selected.
 1. Select and enable the monitor.
@@ -177,7 +177,7 @@ the Thunderbolt 4 USB Type-C port.
 
 **Test description**
 
-This test verifies that the laptop can output video to a display connected via
+This test verifies that DUT output video to a display connected via
 the Thunderbolt 4 USB Type-C port.
 
 **Test configuration data**
@@ -195,8 +195,8 @@ the Thunderbolt 4 USB Type-C port.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Connect a display to the Thunderbolt 4 USB Type-C port located on the left.
-    side of the laptop using a USB Type-C hub.
+1. Connect a display to the Thunderbolt 4 USB Type-C port using
+    a USB Type-C hub.
 1. Right click on the desktop to open the desktop context menu.
 1. Select `Display Settings` to open the display settings window.
 1. Verify that the attached external monitor can be selected.
