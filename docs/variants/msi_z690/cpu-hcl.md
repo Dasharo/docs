@@ -31,7 +31,7 @@ configuration we would appreciate an update.
 
     Legend:
 
-    * CPU Model: Intel CPU Model name.
+    * CPU Model: CPU Model name.
     * Dasharo version: Dasharo version on which report was created.
         - `-` if version was not reported
     * Source:
