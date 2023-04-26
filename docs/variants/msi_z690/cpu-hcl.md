@@ -6,7 +6,7 @@
   report](../../../dasharo-tools-suite/documentation/#hcl-report) to upload
   report automatically.
 * Create new issue in [Dasharo issues
-  repository](https://github.com/Dasharo/dasharo-issues/issues).
+  repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
 * Create PR directly to [Dasharo documentation
   repository](https://github.com/Dasharo/docs).
 * [email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690) your
