@@ -36,7 +36,8 @@ configuration we would appreciate an update.
         - `-` if version was not reported
     * Source:
         - Link to report if it is public.
-        - `Dasharo HCL report` if it was reported using DTS.
+        - `Dasharo HCL report` if it was [reported using
+        DTS](../../../dasharo-tools-suite/documentation/#hcl-report).
 
     <center>
 
