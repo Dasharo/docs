@@ -31,7 +31,7 @@ sure your proposed changes have no broken links reported. Feel free to adjust
 other parameters according to your needs.
 
 ```shell
-linkchecker -F text --check-extern http://0.0.0.0:8000
+linkchecker -f linkcheckerrc http://0.0.0.0:8000
 ```
 
 ### Make sure no TBD or TODO content is displayed
