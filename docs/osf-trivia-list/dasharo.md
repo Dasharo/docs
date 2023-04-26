@@ -147,6 +147,26 @@ There is also a libre, POWER9-based server/workstation Talos II by Raptor
 Computing Systems, which also do not use any binary blobs, however it is more
 expensive than x86 platforms.
 
+## How open is Dasharo?
+<!-- This answer needs improvements
+
+Place to describe openess score
+
+-->
+
+We are strong believers in Freedom and Open Source Software (FOSS), but we also
+have to deal with reality. Silicon Vendors and other providers in the firmware
+supply chain try to monopolize the ecosystem by including NDA procedures and
+binary blobs. Because of that, Dasharo has to provide seamless integration of
+Intel FSP, AMD AGESA and other binary components. Dasharo is needed for
+liberating the firmware ecosystem, because it is the only product that
+transparently leverages the Open Source Firmware. Dasharo promotes best
+practices that can prove that a non-closed approach is financially feasible and
+can lead to an equally effective business model. Concluding, our mission is to
+make Dasharo product lines as open as possible under existing market
+circumstances and invest in liberating remaining pieces of the ecosystem. For
+the Dasharo ecosystem we always use OSS and OSHW.
+
 ## Why Dasharo?
 
 ### Open-source firmware ecosystem problems
