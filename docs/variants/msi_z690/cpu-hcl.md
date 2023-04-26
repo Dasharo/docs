@@ -56,7 +56,7 @@ configuration we would appreciate an update.
 
 === "Memory HCL"
 
-    Memory hardware Compatibility List present the DIMM modules tested and verified
+    Memory hardware Compatibility List presents the DIMM modules tested and verified
     to work with Dasharo in 3mdeb laboratory.
 
     Memory Modules are tested in 1, 2 and 4 modules configurations. These follow
