@@ -9,7 +9,7 @@
   repository](https://github.com/Dasharo/dasharo-issues/issues).
 * Create PR directly to [Dasharo documentation
   repository](https://github.com/Dasharo/docs).
-* [email](mailto:contact@dasharo.com?subject=CPU HCL report) you
+* [email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690) you
   `/proc/cpuinfo` or relevant information using following template:
 
   ```text
