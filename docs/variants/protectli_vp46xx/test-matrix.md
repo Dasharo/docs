@@ -67,7 +67,7 @@ for all platforms of the VP46XX family.
 
 | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                    | TPM           | Without TPM001.001 and TPM002.001    |
+| 1.   | [TPM Support][TPM]            | TPM           | Without TPM001.001,TPM002.001 and TPM003.001 |
 | 2.   | [Verified Boot support][VBO]          | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]          | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]            | SBO           | All                                  |
