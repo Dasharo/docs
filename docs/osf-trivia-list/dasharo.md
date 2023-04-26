@@ -482,6 +482,17 @@ will be more than welcome from active community members. New members should
 consider [ways to help us](../../ways-you-can-help-us/) to gain a reputation
 that can lead to influencing Dasharo Community Supported roadmap.
 
+## Can I request any demo?
+
+Yes. Some materials are already availabe in [supported hardware][supported-hw]
+section where we list publicly supported hardware platforms for given market
+segments. You can visit our [Dasharo Youtube
+channel](https://www.youtube.com/channel/UCTYvdwdFZ7NAtGK_XRvelaw), or if you
+need more information please [schedule a
+call](https://calendly.com/3mdeb/corebootmaintainershippackage) or contact us
+using [online form](https://3mdeb.com/contact/) and we would be glad to present
+more.
+
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
 [dtsos]: ../../dasharo-tools-suite/overview/
 [lvfs]: https://fwupd.org/lvfs/docs/consulting
@@ -494,3 +505,5 @@ that can lead to influencing Dasharo Community Supported roadmap.
 [msi-z690a]: ../../variants/msi_z690/overview/
 [vpub]: https://vpub.dasharo.com/
 [dasharo-matrix]: https://matrix.to/#/#dasharo:matrix.org
+[supported-hw]: ../../variants/overview
+
