@@ -9,7 +9,9 @@ coreboot port on the Talos II platform.
 
 | Component                      | Description                                                   |
 |--------------------------------|---------------------------------------------------------------|
-| **CPU**                        | IBM POWER9 “Sforza”                                           |
+| **1st CPU**                    | IBM POWER9 “Sforza”                                           |
+|                                | CPU Cooler                                                    |
+| **2nd CPU**                    | IBM POWER9 “Sforza”                                           |
 |                                | CPU Cooler                                                    |
 | **SSD**                        | Intel 670p 512 GB M26472-201 NVME                             |
 | **RAM**                        | Crucial CT8G4RF88266                                          |
@@ -21,6 +23,8 @@ coreboot port on the Talos II platform.
 | **Power Supply**               | Corsair TX550M                                                |
 | **Power Control**              | Sonoff S20 switch                                             |
 | **Remote Control**             | OpenBMC                                                       |
+
+> Note: for single CPU testing the 2nd CPU is dismantled.
 
 Following RAM configurations were tested and are proved to be properly
 initialized.
