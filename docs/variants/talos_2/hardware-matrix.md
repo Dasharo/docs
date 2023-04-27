@@ -9,7 +9,7 @@ coreboot port on the Talos II platform.
 
 | Component                      | Description                                                   |
 |--------------------------------|---------------------------------------------------------------|
-| **1st CPU**                    | IBM POWER9 “Sforza”                                           |
+| **1st CPU**                    | IBM POWER9 “Sforza” 02CY650                                   |
 |                                | CPU Cooler                                                    |
 | **2nd CPU**                    | IBM POWER9 “Sforza”                                           |
 |                                | CPU Cooler                                                    |
