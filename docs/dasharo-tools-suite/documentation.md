@@ -396,7 +396,7 @@ Below we provide an example of updating Dasharo firmware from version v1.0.0 to
 v1.1.1 on MSI PRO Z690-A DDR4.
 
 ```bash
-  DTS version v1.1.2-dev
+  DTS version v1.2.0
 
   1) Dasharo HCL report - dump hardware information from this device
   3) Restore firmware from Dasharo HCL report
