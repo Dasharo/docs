@@ -17,7 +17,7 @@ Not every one agree with that expansion of CRTM abbreviation. What do you think?
 
 <!--
 
-# `[OSFI0021]` Is AMD SKINIT implementatio a D-HRTM or D-CRTM?
+# `[OSFI0021]` Is AMD SKINIT implementation a D-HRTM or D-CRTM?
 
 TBD
 
