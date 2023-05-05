@@ -45,7 +45,7 @@ for some of the hardware initialization.
 - The partitions are individually signed
 - The offset and size of each partition are saved in each FPT entry
 
-![fpt](../images/fpt.png)
+![FPT](../images/fpt.png)
 
 Source: [Intel ME myths and reality, Igor Skochinsky & Nicola Corna](https://fahrplan.events.ccc.de/congress/2017/Fahrplan/system/event_attachments/attachments/000/003/391/original/Intel_ME_myths_and_reality.pdf)
 
