@@ -1,21 +1,26 @@
 # Recovery
 
+## Intro
+
 Following documentation describes the process of recovering hardware from brick
-state with [RTE](../../../transparent-validation/rte/introduction/) and Dasharo
+state with [RTE](../../transparent-validation/rte/introduction.md) and Dasharo
 open-source firmware.
-
-**This page is under construction**
-
-# Intro
 
 # Prerequisites
 
+* [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
+* Pomona clip
+
 # Connections
 
+* Power supply - TBD (photos + info)
+* SPI - TBD (photos + table)
+
 # Firmware flashing using flashrom
+
 To flash Protectli's firmware follow the steps shown below:
 
-
+1. Login to RTE via `ssh` or `minicom`.
 1. Turn on platform power supply by using the following command:
 
     ```bash
