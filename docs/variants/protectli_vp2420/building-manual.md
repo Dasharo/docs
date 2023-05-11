@@ -24,7 +24,6 @@ available to all users.
 
 1. Checkout the desired version, e.g. `v1.1.0`:
 
-
     ```bash
     cd coreboot
     git checkout protectli_vault_ehl_v1.1.0
