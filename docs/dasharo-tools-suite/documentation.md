@@ -16,14 +16,6 @@ that it boots on the following platforms:
 * NovaCustom NS5x/7x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)).
 
-<span style="color:red">
-Please do not use DTS v1.1.0 to deploy Dasharo on MSI PRO Z690-A (WIFI) DDR5;
-otherwise, you will brick your hardware. There are at least two bugs that have
-to be fixed before it is possible:
-
-* [Power off problem](https://github.com/Dasharo/dasharo-issues/issues/316)
-* [Unsupported mainboard flashing problem](https://github.com/Dasharo/dasharo-issues/issues/317).</span>
-
 ## Running
 
 The Dasharo Tools Suite can be started in various ways. Currently, there are
