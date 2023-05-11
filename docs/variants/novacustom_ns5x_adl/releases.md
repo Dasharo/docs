@@ -71,6 +71,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/518379)
 
 - [Dasharo coreboot fork based on 1a8eb6c02103727431ac1ea23f4f507e49f3cde7 revision ae10b20f](https://github.com/Dasharo/coreboot/tree/ae10b20f)
 - [Dasharo EDKII fork based on e0334c228ce4ba51f47ff79a118f214031d4650f revision bd421b40](https://github.com/Dasharo/edk2/tree/bd421b40)
+- Intel ME version 16.1.25.1865
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/RJrTXDhWR
 [novacustom_ns5x_adl_ec_v1.6.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.6.0/novacustom_ns5x_adl_ec_v1.6.0.rom
