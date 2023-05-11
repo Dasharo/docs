@@ -35,7 +35,7 @@ available to all users.
     git submodule update --init --checkout
     ```
 
-1. Obtain the Protectli blobs package by downloading the zip file from the 
+1. Obtain the Protectli blobs package by downloading the zip file from the
    [newest tag](https://github.com/Dasharo/protectli-blobs/tags).
 1. Extract it from coreboot repository to the `3rdparty/blobs/mainboard`
    directory and customize the folder name:
