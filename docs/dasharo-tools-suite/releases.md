@@ -13,7 +13,7 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
-## v1.2.0 - 2023-04-20
+## v1.2.0 - 2023-05-10
 
 ### Images
 
@@ -33,12 +33,12 @@ Process](../dev-proc/standard-release-process.md).
 [ISO_DTS_sig_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.iso.sha256.sig
 
   See how to verify hash and signature on [this
-  video](TBD-update!). It works the same way with ISO image.
+  video](https://youtu.be/Tr9mtqULWrY). It works the same way with ISO image.
 
 ### Changelog
 
 Please, refer to
-[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v120---2023-04-20)
+[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v120---2023-05-10)
 stored in `meta-dts` repository.
 
 ## v1.1.1 - 2023-02-20
