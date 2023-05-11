@@ -8,7 +8,7 @@ Dasharo open-source firmware.
 
 ## Prerequisites
 
-* [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide/)
+* [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
 * SOIC-8 Pomona clip
 * 6 wire cables
 
@@ -21,7 +21,7 @@ To prepare the stand for flashing follow the steps shown below:
     ![](../../images/protectli_recovery/pomona_clip.png)
     ![](../../images/protectli_recovery/pomona_clip_with_cables.png)
 
-1. Connect the Pomona clip to the [SPI header](../../transparent-validation/rte/v1.1.0/specification/)
+1. Connect the Pomona clip to the [SPI header](../../transparent-validation/rte/v1.1.0/specification.md)
    on RTE.
 
     | SPI header | Pomona clip  |
@@ -36,10 +36,13 @@ To prepare the stand for flashing follow the steps shown below:
     ![](../../images/protectli_recovery/pomona_clip_with_rte.png)
 
 1. Open the platform cover.
+
+    ![](../../images/protectli_recovery/vp46xx_location_of_flash_chip.png)
+
 1. Match pin 1(CS) on the Pomona clip with the first pin of the flash chip,
    marked with a small dot engraved on the chip.
 
-    ![](../../images/protectli_recovery/vp46xx_flash_chip.png)
+    ![](../../images/protectli_recovery/flash_chip.png)
     ![](../../images/protectli_recovery/pomona_clip_connected_to_flash_chip.png)
 
 ## Firmware flashing
@@ -71,11 +74,22 @@ To flash firmware follow the steps shown below:
     flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L12835F/MX25L12845E/MX25L12865E" -w [path_to_binary]
     ```
 
-    > Flashing with flashrom takes about 2 minutes.
+    > Flashing with flashrom takes about 1 minute.
+
+1. Change back the state of the SPI by using the following commands:
+
+    ```bash
+    echo 0 > /sys/class/gpio/gpio404/value
+    echo 0 > /sys/class/gpio/gpio406/value
+    ```
 
 1. Reset CMOS, this can be done by two methods:
     1. Disconnect the CMOS battery, wait at least 10 seconds and connect again.
-    1. Short the two pins from the CMOS header for about 10 seconds.
+    1. Short the two pins from the CMOS header for at least 10 seconds.
+
+        ![](../../images/protectli_recovery/vp46xx_location_of_CMOS_header.png)
+
+1. Turn on the platform by connecting the power supply.
 
 The first boot of the platform after proceeding with the above procedure can
 take much longer than standard.
