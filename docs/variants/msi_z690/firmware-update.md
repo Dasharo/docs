@@ -31,7 +31,7 @@ We recommend using the DTS.
 
 ### Dasharo Tools Suite
 
-The DTS allow to perform automatic firmware update process which is the
+The DTS allows performing automatic firmware update process, which is the
 recommended method. To update your firmware, follow below steps.
 
 1. Boot [DTS using
