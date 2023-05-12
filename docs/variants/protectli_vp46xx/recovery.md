@@ -10,7 +10,7 @@ Dasharo open-source firmware.
 
 * [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
 * SOIC-8 Pomona clip
-* 6 wire cables
+* 6x female-female wire cables
 
 ## Connections
 
@@ -47,7 +47,7 @@ To prepare the stand for flashing follow the steps described below:
 
 ## Firmware flashing
 
-To flash firmware follow the steps shown below:
+To flash firmware follow the steps described below:
 
 1. Login to RTE via `ssh` or `minicom`.
 1. Turn on the platform by connecting the power supply.
