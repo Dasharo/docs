@@ -61,6 +61,7 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 
 - [Dasharo coreboot fork based on 1a8eb6c02103727431ac1ea23f4f507e49f3cde7 revision 636f432a](https://github.com/Dasharo/coreboot/tree/636f432a)
 - [Dasharo EDKII fork based on e0334c228ce4ba51f47ff79a118f214031d4650f revision 2c61576a](https://github.com/Dasharo/edk2/tree/2c61576a)
+- Intel ME version 15.0.30.1776
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/S5ze5u_qN
 [novacustom_nv4x_tgl_ec_v1.4.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.4.0/novacustom_nv4x_tgl_ec_v1.4.0.rom
