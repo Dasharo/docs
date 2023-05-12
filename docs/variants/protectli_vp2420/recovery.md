@@ -10,11 +10,11 @@ Dasharo open-source firmware.
 
 * [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
 * SOIC-8 Pomona clip
-* 6 wire cables
+* 6x female-female wire cables
 
 ## Connections
 
-To prepare the stand for flashing follow the steps shown below:
+To prepare the stand for flashing follow the steps described below:
 
 1. Connect the wire cables to the Pomona clip.
 
