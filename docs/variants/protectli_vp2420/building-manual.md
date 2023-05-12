@@ -41,9 +41,11 @@ available to all users.
    directory and customize the folder name:
 
     ```bash
-    unzip protectli_blobs.zip -d 3rdparty/blobs/mainboard
-    mv 3rdparty/blobs/mainboard/protectli-blobs-1.0.18 3rdparty/blobs/mainboard/protectli
+    unzip protectli-blobs-x.y.z.zip -d 3rdparty/blobs/mainboard
+    mv 3rdparty/blobs/mainboard/protectli-blobs-x.y.z 3rdparty/blobs/mainboard/protectli
     ```
+
+    > Replace `x.y.z` in commands above with the version of the newest tag.
 
 1. Build the firmware v1.0.0 or newer:
 
