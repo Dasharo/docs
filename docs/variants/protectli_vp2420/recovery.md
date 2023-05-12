@@ -47,7 +47,7 @@ To prepare the stand for flashing follow the steps shown below:
 
 ## Firmware flashing
 
-To flash firmware follow the steps shown below:
+To flash firmware follow the steps described below:
 
 1. Login to RTE via `ssh` or `minicom`.
 1. Turn on the platform by connecting the power supply.
