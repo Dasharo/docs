@@ -14,7 +14,7 @@ Dasharo open-source firmware.
 
 ## Connections
 
-To prepare the stand for flashing follow the steps shown below:
+To prepare the stand for flashing follow the steps described below:
 
 1. Connect the wire cables to the Pomona clip.
 
