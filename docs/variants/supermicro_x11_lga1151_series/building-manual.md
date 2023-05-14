@@ -2,7 +2,6 @@
 
 **Please read the [overview page](../overview) first!**
 
-<!--
 To build Dasharo compatible with Supermicro X11 LGA1151 Series, follow the
 steps below:
 
@@ -20,10 +19,6 @@ steps below:
 
     ```bash
     git checkout supermicro_x11_lga1151_series_vX.Y.Z
-    ```
-
-    ```bash
-    git checkout supermicro_x11-lga1151-series/develop
     ```
 
     Checkout submodules:
@@ -45,53 +40,51 @@ steps below:
 
      To understand difference between versions please read [FAQ](faq.md).
 
-1. Inside of the container, configure and start the build process:
+1. Inside of the container, configure and start the build process.
 
-    ```bash
-    make distclean
-    ```
+    * Please choose correct config for your platform:
 
-    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0`
+        - `config.supermicro_x11ssh_t` for X11SSH-T mainboard model
+        - `config.supermicro_x11ssh_tf` for X11SSH-TF mainboard model
 
-     ```bash
-    	cp configs/config.dell_optiplex_9010 .config
-     ```
+        ```bash
+        export CONFIG_NAME=config.supermicro_x11ssh_<model>
+        ```
+
+    * Make sure build environment is clean:
+
+        ```bash
+        make distclean
+        ```
 
     * To build `Dasharo (coreboot+UEFI) v0.1.0`
 
-     ```bash
-    	cp configs/config.dell_optiplex_9010 .config
-     ```
-
-    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0` debug version (very verbose logging).
-
-     ```bash
-    	cp configs/config.dell_optiplex_9010.debug .config
-     ```
+        ```bash
+         cp configs/$CONFIG_NAME .config
+        ```
 
     * To build `Dasharo (coreboot+UEFI) v0.1.0` debug version (very verbose logging).
 
-     ```bash
-    	cp configs/config.dell_optiplex_9010.uefi.debug .config
-     ```
+        ```bash
+         cp configs/$CONFIG_NAME.debug .config
+        ```
 
-    ```bash
-    make olddefconfig
-    ```
+        ```bash
+        make olddefconfig
+        ```
 
-    ```bash
-    make
-    ```
+        ```bash
+        make
+        ```
 
-    or simply:
+        or simply:
 
-    ```bash
-    make distclean && cp configs/CONFIG_NAME .config && make olddefconfig && make
-    ```
+        ```bash
+        make distclean && cp configs/$CONFIG_NAME .config && make olddefconfig && make
+        ```
 
 This will produce a Dasharo binary placed in `build/coreboot.rom`, which can be
 flashed in following ways, depending on your situation:
 
 * To flash Dasharo first time refer to [initial deployment manual](initial-deployment.md).
 * To update Dashro refer [firmware update](firmware-update.md).
--->
