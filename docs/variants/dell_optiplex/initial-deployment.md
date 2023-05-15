@@ -70,9 +70,13 @@ active. Press F1 to proceed and boot to your Linux system.
 
 ## Initial deployment
 
-Initial deployment for Dell OptiPlex 7010/9010 in supported in DTS since version
-v1.1.0. Please check [Dasharo zero-touch initial deployment
-section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
+To ensure a smooth deployment process, it is recommended to use the latest
+version of DTS available from the [releases
+page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
+then proceed with following the [Dasharo zero-touch initial deployment
+section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+procedure. This will help you set up Dasharo effectively and without manual
+intervention.
 
 ## Verification
 
