@@ -1,9 +1,10 @@
 # Initial deployment
 
+<!---
 Initial deployment for Supermicro X11SSH is supported in DTS since version
 [vTBD](#tbd). Please check [Dasharo zero-touch initial deployment
 section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment).
-
+--->
 We strongly recommend following these official instructions. The official guide
 has a lot of collaborative effort put into covering all of the edge cases and
 is regularly tested. Following these instructions to the letter without
