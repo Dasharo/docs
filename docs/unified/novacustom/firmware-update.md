@@ -4,7 +4,6 @@
 
 This document describes the firmware update for NovaCustom laptops running
 Dasharo firmware to the latest version available.
-Choose your generation below:
 
 ### Update using Dasharo Tools Suite
 

@@ -13,6 +13,34 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
+## v1.2.0 - 2023-05-10
+
+### Images
+
+[USB bootable DTS v1.2.0 image][USB_DTS_v1.2.0]{ .md-button }
+[sha256][USB_DTS_sha_v1.2.0]{ .md-button }
+[sha256.sig][USB_DTS_sig_v1.2.0]{ .md-button }
+
+[DTS v1.2.0 ISO image][ISO_DTS_v1.2.0]{ .md-button }
+[sha256 ISO][ISO_DTS_sha_v1.2.0]{ .md-button }
+[sha256.sig ISO][ISO_DTS_sig_v1.2.0]{ .md-button }
+
+[USB_DTS_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.wic.gz
+[USB_DTS_sha_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.wic.gz.sha256
+[USB_DTS_sig_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.wic.gz.sha256.sig
+[ISO_DTS_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.iso
+[ISO_DTS_sha_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.iso.sha256
+[ISO_DTS_sig_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.iso.sha256.sig
+
+  See how to verify hash and signature on [this
+  video](https://youtu.be/Tr9mtqULWrY). It works the same way with ISO image.
+
+### Changelog
+
+Please, refer to
+[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v120---2023-05-10)
+stored in `meta-dts` repository.
+
 ## v1.1.1 - 2023-02-20
 
 ### Images
@@ -41,7 +69,7 @@ Process](../dev-proc/standard-release-process.md).
   target with dedicated firmware.
 * Blocked Dasharo zero-touch initial deployment on platforms where Dasharo
   firmware was detected.
-* Added couple QoL improvements for Dasharo zero-touch initial deployment:
+* Added couple UX improvements for Dasharo zero-touch initial deployment:
     - added platform verification step (show detected device information),
     - added firmware verification step (show hash of using binary),
     - added progress bar on first instructions,

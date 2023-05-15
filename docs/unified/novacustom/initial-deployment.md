@@ -128,12 +128,16 @@ devices.
     process.
 
 === "11th Gen (Tiger Lake)"
-    ### Automatic deployment
 
-       For 11th Gen Intel Core based models, Dasharo Tools Suite zero-touch initial
-       deployment is available. Follow instructions over at
-       [DTS documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment)
-       to deploy Dasharo on your machine.
+### Initial deployment
+
+To ensure a smooth deployment process, it is recommended to use the latest
+version of DTS available from the [releases
+page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
+then proceed with following the [Dasharo zero-touch initial deployment
+section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+procedure. This will help you set up Dasharo effectively and without manual
+intervention.
 
 If something went wrong or EC installation was not done, the firmware will
 print an error string during boot:

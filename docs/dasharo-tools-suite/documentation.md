@@ -16,14 +16,6 @@ that it boots on the following platforms:
 * NovaCustom NS5x/7x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)).
 
-<span style="color:red">
-Please do not use DTS v1.1.0 to deploy Dasharo on MSI PRO Z690-A (WIFI) DDR5;
-otherwise, you will brick your hardware. There are at least two bugs that have
-to be fixed before it is possible:
-
-* [Power off problem](https://github.com/Dasharo/dasharo-issues/issues/316)
-* [Unsupported mainboard flashing problem](https://github.com/Dasharo/dasharo-issues/issues/317).</span>
-
 ## Running
 
 The Dasharo Tools Suite can be started in various ways. Currently, there are
@@ -294,6 +286,7 @@ This feature is supported on the following platforms:
 * ASUS KGPE-D16,
 * Dell OptiPlex 7010/9010,
 * MSI PRO Z690-A DDR4,
+* MSI PRO Z690-A DDR5,
 * NovaCustom NV4x,
 * NovaCustom NS5x/7x.
 
@@ -377,9 +370,6 @@ Please consider the following options depending on your situation:
 
 ### Firmware update
 
-> Note: described below functionality is now in testing, available in v1.1.2-dev
-  that can be booted via [iPXE](#bootable-over-a-network).
-
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
 with flashed Dasharo and choose option number `5`.
 
@@ -398,7 +388,7 @@ Below we provide an example of updating Dasharo firmware from version v1.0.0 to
 v1.1.1 on MSI PRO Z690-A DDR4.
 
 ```bash
-  DTS version v1.1.2-dev
+  DTS version v1.2.0
 
   1) Dasharo HCL report - dump hardware information from this device
   3) Restore firmware from Dasharo HCL report
@@ -461,118 +451,9 @@ functionality is supported on the [NovaCustom
 NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/)) and [NovaCustom
 NV4x](/variants/novacustom_nv4x_tgl/releases/) only.
 
-To perform EC transition, make sure you are
-[running DTS version v1.0.2 or higher](#running) and follow these steps:
-
-* After boot, choose option number 6 open custom vendor submenu.
-* Plug in power supply (without it, flashing EC is not possible as losing power
-  may result in firmware corruption).
-* Choose option number 1 to perform full EC transition.
-  > Note: below is an example output from Embedded Controller transition on
-    NovaCustom NS50MU laptop.
-
-  ```bash
-  Attempting to perform full EC transition
-  Checking for opensource firmware
-  Waiting for network connection ...
-  --2022-09-20 14:00:50--
-  https://cloud.3mdeb.com/index.php/s/GK2KbXaYprkCCWM/download
-  Resolving cloud.3mdeb.com... 84.10.27.202
-  Connecting to cloud.3mdeb.com|84.10.27.202|:443... connected.
-  HTTP request sent, awaiting response... 200 OK
-  Length: 131072 (128K) [application/octet-stream]
-  Saving to: '/tmp/ecupdate.rom'
-
-  /tmp/ecupdate.rom      100%[========>] 128.00K  --.-KB/s    in 0.02s
-
-  2022-09-20 14:00:51 (6.00 MB/s) - '/tmp/ecupdate.rom'
-  saved [131072/131072]
-
-  --2022-09-20 14:00:51--
-  https://cloud.3mdeb.com/index.php/s/SKpqSNzfFNY7AbK/download
-  Resolving cloud.3mdeb.com... 84.10.27.202
-  Connecting to cloud.3mdeb.com|84.10.27.202|:443... connected.
-  HTTP request sent, awaiting response... 200 OK
-  Length: 16777216 (16M) [application/octet-stream]
-  Saving to: '/tmp/biosupdate.rom'
-
-  /tmp/biosupdate.rom      100%[========>]  16.00M  5.49MB/s    in 2.9s
-
-  2022-09-20 14:00:54 (5.49 MB/s) - '/tmp/biosupdate.rom'
-  saved [16777216/16777216]
-
-  Successfully downloaded EC and FW files.
-  /tmp/biosupdate.rom: OK
-  Found PCI subsystem match for device CLEVO NS50MU/NS51MU
-  EC version: 1.07.07 is not supported, update required
-  /tmp/ecupdate.rom: OK
-  Updating EC...
-  flashrom v1.2-575-g5618d82 on Linux 5.15.36-yocto-standard (x86_64)
-  flashrom is free software, get the source code at https://flashrom.org
-
-  Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-  Found PCI subsystem match for device CLEVO NS50MU/NS51MU
-  Mainboard EC Project: NS50MU
-  Mainboard EC Version: 1.07.07
-  Flash Part ID: ef 00 00
-  Found unknown Winbond flash chip
-  Found Programmer flash chip "Opaque flash chip" (128 kB,
-  Programmer-specific) on ite_ec.
-  Reading old flash chip contents... done.
-  Erasing and writing flash chip... Erase/write done.
-  Verifying flash... VERIFIED.
-  Successfully updated EC firmware
-  Installing Dasharo firmware...
-  flashrom v1.2-575-g5618d82 on Linux 5.15.36-yocto-standard (x86_64)
-  flashrom is free software, get the source code at https://flashrom.org
-
-  Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-  coreboot table found at 0x76a64000.
-  Found chipset "Intel Tiger Lake U Premium".
-  Enabling flash write...
-  Warning: Setting BIOS Control at 0xdc from 0x8b to 0x89 failed.
-  New value is 0x8b.
-  SPI Configuration is locked down.
-  OK.
-  Found Programmer flash chip "Opaque flash chip" (16384 kB,
-  Programmer-specific) mapped at physical address 0x0000000000000000.
-  Reading ich descriptor... done.
-  Using region: "bios".
-  Reading old flash chip contents... done.
-  Erasing and writing flash chip... Erase/write done.
-  Verifying flash... VERIFIED.
-  Successfully installed Dasharo firmware
-  Powering off
-  Syncing disks... Done.
-  The computer will shut down automatically in 5 seconds
-  ```
-
-* Computer will shut down automatically.
-* Power on your computer. Booting process may take a while.
-* After boot, choose option number 9 to drop to Shell.
-* Your firmware is correctly installed. You can retrieve EC firmware information
-  using `system76_ectool` utility.
-
-  ```bash
-  system76_ectool info
-  ```
-
-  The output of the above command should contain information about
-  the version of flashed firmware:
-
-* The following presents how it should look on `NovaCustom NS5x/NS7x`.
-
-  ```bash
-  board: clevo/ns50mu
-  version: 2022-08-31_cbff21b
-  ```
-
-* The following presents how it should look on  `NovaCustom NV4x`.
-
-  ```bash
-  board: clevo/nv40mz
-  version: 2022-10-07_c662165
-  ```
+Starting from DTS v1.2.0 to perform EC transition please run
+[firmware update](#firmware-update) on the platform with proprietary vendor EC
+firmware.
 
 ### EC update
 
