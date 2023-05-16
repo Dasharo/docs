@@ -348,6 +348,7 @@ nav:
               - 'UEFI Setup password': unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
               - 'USB stack enable/disable': unified-test-documentation/dasharo-security/20S-usb-stack.md
               - 'Network stack enable/disable': unified-test-documentation/dasharo-security/20T-network-boot.md
+              - 'Boot Guard support': unified-test-documentation/dasharo-security/207-boot-guard-support.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
               - 'Device boot measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md
