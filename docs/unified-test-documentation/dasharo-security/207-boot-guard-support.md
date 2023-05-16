@@ -38,7 +38,7 @@ to verify that the implemented Boot Guard mechanism works correctly.
     sudo ./cbmem -1 | grep CBnT
     ```
 
-1. Analize the output from the command.
+1. Analyze the output from the command.
 
 **Expected result**
 
