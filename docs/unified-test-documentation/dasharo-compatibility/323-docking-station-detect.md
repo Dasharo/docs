@@ -1,4 +1,4 @@
-# Dasharo compatibility: Docking station detect
+# Dasharo compatibility: USB-C docking station detect
 
 ## Test cases common documentation
 

@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Docking station NET interface
+# Dasharo Compatibility: USB-C docking station NET interface
 
 ## Test cases common documentation
 

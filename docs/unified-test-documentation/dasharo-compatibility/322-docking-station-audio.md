@@ -1,4 +1,4 @@
-# Dasharo Compatibility: Docking station audio
+# Dasharo Compatibility: USB-C docking station audio
 
 ## Test cases common documentation
 
