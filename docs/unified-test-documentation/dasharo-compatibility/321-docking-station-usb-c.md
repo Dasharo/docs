@@ -17,7 +17,7 @@
 
 **Test description**
 
-This test aims to verify whether the DUT can be charged using a PD power supply 
+This test aims to verify whether the DUT can be charged using a PD power supply
 connected to the docking station, which is connected to the USB-C port.
 
 **Test configuration data**
@@ -62,7 +62,7 @@ Charging
 
 **Test description**
 
-This test aims to verify whether the DUT can be charged using a PD power supply 
+This test aims to verify whether the DUT can be charged using a PD power supply
 connected to the docking station, which is connected to the USB-C port.
 
 **Test configuration data**
