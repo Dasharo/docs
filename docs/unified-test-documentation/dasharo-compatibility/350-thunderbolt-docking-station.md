@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-## DUC001.001 Thunderbolt laptop charging (Ubuntu 22.04)
+## TDS001.001 Thunderbolt laptop charging (Ubuntu 22.04)
 
 **Test description**
 
@@ -58,7 +58,7 @@ Example output:
 Charging
 ```
 
-## DUC001.002 Thunderbolt laptop charging (Windows 11)
+## TDS001.002 Thunderbolt laptop charging (Windows 11)
 
 **Test description**
 
