@@ -28,12 +28,12 @@ subjected before the release of the new binary.
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
 | 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.001                           |
 | 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001.001                   |
-| 20.  | [Docking station detect][DUD]                          | DUD           | All                                  |
-| 21.  | [Docking station USB devices][DUB]                     | DUB           | All                                  |
-| 22.  | [Docking station Audio][DAU]                           | DAU           | All                                  |
-| 23.  | [Docking station USB-C][DUC]                           | DUC           | All                                  |
-| 24.  | [Docking station Display ports][DDP]                   | DDP           | All                                  |
-| 25.  | [Docking station NET interface][DET]                   | DET           | All                                  |
+| 20.  | [USB-C docking station detect][DUD]                    | DUD           | All                                  |
+| 21.  | [USB-C docking station USB devices][DUB]               | DUB           | All                                  |
+| 22.  | [USB-C docking station Audio][DAU]                     | DAU           | All                                  |
+| 23.  | [USB-C docking station][DUC]                           | DUC           | All                                  |
+| 24.  | [USB-C docking station Display ports][DDP]             | DDP           | All                                  |
+| 25.  | [USB-C docking station NET interface][DET]             | DET           | All                                  |
 | 26.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 27.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
 | 28.  | [CPU status][CPU]                                      | CPU           | All                                  |
@@ -44,8 +44,14 @@ subjected before the release of the new binary.
 | 33.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 | 34.  | [Fedora support][FED]                                  | FED           | All                                  |
 | 35.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001 |
-| 36.  | [Sign of life][SOL]                                    | SOL           | All                                  |
-| 37.  | [ME disable/neuter support][MNE]                       | MNE           | MNE001.001                           |
+| 36.  | [Thunderbolt docking station detect][TDD]              | TDD           | All                                  |
+| 37.  | [Thunderbolt docking station USB devices][TDU]         | TDU           | All                                  |
+| 38.  | [Thunderbolt docking station Audio][TDA]               | TDA           | All                                  |
+| 39.  | [Thunderbolt docking station][TDS]                     | TDS           | All                                  |
+| 40.  | [Thunderbolt docking station Display ports][TDP]       | TDP           | All                                  |
+| 41.  | [Thunderbolt docking station NET interface][TDN]       | TDN           | All                                  |
+| 42.  | [Sign of life][SOL]                                    | SOL           | All                                  |
+| 43.  | [ME disable/neuter support][MNE]                       | MNE           | MNE001.001                           |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -82,6 +88,12 @@ subjected before the release of the new binary.
 [DDP]: ../../unified-test-documentation/dasharo-compatibility/330-docking-station-display-ports.md
 [DET]: ../../unified-test-documentation/dasharo-compatibility/340-docking-station-net-interface.md
 [SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+[TDD]: ../../unified-test-documentation/dasharo-compatibility/352-thunderbolt-docking-station-detect.md
+[TDU]: ../../unified-test-documentation/dasharo-compatibility/353-thunderbolt-docking-station-usb-devices.md
+[TDA]: ../../unified-test-documentation/dasharo-compatibility/351-thunderbolt-docking-station-audio.md
+[TDS]: ../../unified-test-documentation/dasharo-compatibility/350-thunderbolt-docking-station.md
+[TDP]: ../../unified-test-documentation/dasharo-compatibility/354-thunderbolt-docking-station-display-ports.md
+[TDN]: ../../unified-test-documentation/dasharo-compatibility/355-thunderbolt-docking-station-net-interface.md
 [SOL]: ../../unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 

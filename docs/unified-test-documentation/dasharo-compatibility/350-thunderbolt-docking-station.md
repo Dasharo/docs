@@ -1,4 +1,4 @@
-# Dasharo Compatibility: USB-C docking station
+# Dasharo Compatibility: Thunderbolt docking station
 
 ## Test cases common documentation
 
@@ -12,14 +12,14 @@
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
-1. The `USB-C docking station` connected to the USB-C port.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-## DUC001.001 USB Type-C laptop charging (Ubuntu 22.04)
+## TDS001.001 Thunderbolt laptop charging (Ubuntu 22.04)
 
 **Test description**
 
 This test aims to verify whether the DUT can be charged using a PD power supply
-connected to the docking station, which is connected to the USB-C port.
+connected to the docking station, which is connected to the Thunderbolt port.
 
 **Test configuration data**
 
@@ -57,12 +57,12 @@ Example output:
 Charging
 ```
 
-## DUC001.002 USB Type-C laptop charging (Windows 11)
+## TDS001.002 Thunderbolt laptop charging (Windows 11)
 
 **Test description**
 
 This test aims to verify whether the DUT can be charged using a PD power supply
-connected to the docking station, which is connected to the USB-C port.
+connected to the docking station, which is connected to the Thunderbolt port.
 
 **Test configuration data**
 

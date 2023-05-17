@@ -1,4 +1,4 @@
-# Dasharo Compatibility: USB-C docking station audio
+# Dasharo Compatibility: Thunderbolt docking station audio
 
 ## Test cases common documentation
 
@@ -12,9 +12,9 @@
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
-1. The `USB-C docking station` connected to the USB-C port.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-## DAU001.001 Audio recognition (Ubuntu 22.04)
+## TDA001.001 Audio recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -55,7 +55,7 @@ plugging in the 3.5 mm jack into the docking station.
 1. After disconnecting the external headset from the 3.5 mm jack, a headset
     entry in `lsusb` command output should disappear.
 
-## DAU001.002 Audio recognition (Windows 11)
+## TDA001.002 Audio recognition (Windows 11)
 
 **Test description**
 
@@ -96,7 +96,7 @@ after plugging in the 3.5 mm jack into the docking station.
    for connected headset should disappear from the `Output devices` and
    `Input devices` sections.
 
-## DAU002.001 Audio playback (Ubuntu 22.04)
+## TDA002.001 Audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -134,7 +134,7 @@ station.
 
 Sound should be played from the external speakers.
 
-## DAU002.002 Audio playback (Windows 11)
+## TDA002.002 Audio playback (Windows 11)
 
 **Test description**
 
@@ -168,7 +168,7 @@ station.
 
 Sound should be played from the external speakers.
 
-## DAU003.001 Audio capture (Ubuntu 22.04)
+## TDA003.001 Audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -210,7 +210,7 @@ from external headset connected to the docking station.
 
 The recorded audio clip is recorded correctly and played back.
 
-## DAU003.002 Audio capture (Windows 11)
+## TDA003.002 Audio capture (Windows 11)
 
 **Test description**
 

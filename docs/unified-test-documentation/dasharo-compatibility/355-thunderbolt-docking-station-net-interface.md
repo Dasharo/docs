@@ -1,4 +1,4 @@
-# Dasharo Compatibility: USB-C docking station NET interface
+# Dasharo Compatibility: Thunderbolt docking station NET interface
 
 ## Test cases common documentation
 
@@ -12,9 +12,9 @@
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
-1. The `USB-C docking station` connected to the USB-C port.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-## DET001.001 Ethernet connection (Ubuntu 22.04)
+## TDN001.001 Ethernet connection (Ubuntu 22.04)
 
 **Test description**
 
@@ -64,7 +64,7 @@ Ethernet port can be obtained on Ubuntu 22.04.
     ping: connect: Network is unreachable
     ```
 
-## DET001.002 Ethernet connection (Windows 11)
+## TDN001.002 Ethernet connection (Windows 11)
 
 **Test description**
 

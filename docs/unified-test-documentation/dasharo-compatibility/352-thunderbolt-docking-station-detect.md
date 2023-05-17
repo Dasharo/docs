@@ -1,4 +1,4 @@
-# Dasharo compatibility: USB-C docking station detect
+# Dasharo compatibility: Thunderbolt docking station detect
 
 ## Test cases common documentation
 
@@ -12,9 +12,9 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. The `USB-C docking station` connected to the USB-C port.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-## DUD001.001 Docking station detection after coldboot (Ubuntu 22.04)
+## TDD001.001 Docking station detection after coldboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -60,7 +60,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## DUD002.001 Docking station detection after warmboot (Ubuntu 22.04)
+## TDD002.001 Docking station detection after warmboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -104,7 +104,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## DUD003.001 Docking station detection after reboot (Ubuntu 22.04)
+## TDD003.001 Docking station detection after reboot (Ubuntu 22.04)
 
 **Test description**
 

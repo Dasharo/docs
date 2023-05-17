@@ -1,4 +1,4 @@
-# Dasharo Compatibility: USB-C docking station Display ports
+# Dasharo Compatibility: Thunderbolt docking station Display ports
 
 ## Test cases common documentation
 
@@ -12,13 +12,9 @@
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
-1. The `USB-C docking station` connected to the USB-C port.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-    > If the docking station is not directly connected to the DUT, but with a
-    > USB-C to USB-C cable, make sure it is full-featured cable (>=5Gbps) with
-    > 5A current capability.
-
-## DDP001.001 HDMI display (Ubuntu 22.04)
+## TDP001.001 HDMI display (Ubuntu 22.04)
 
 **Test description**
 
@@ -49,7 +45,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external HDMI-connected display in `Mirror`
 and `Join Displays` modes.
 
-## DDP001.002 HDMI display (Windows 11)
+## TDP001.002 HDMI display (Windows 11)
 
 **Test description**
 
@@ -80,7 +76,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external HDMI-connected display in
 `Duplicate` and `Extend` modes.
 
-## DDP002.001 DP display (Ubuntu 22.04)
+## TDP002.001 DP display (Ubuntu 22.04)
 
 **Test description**
 
@@ -111,7 +107,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external DisplayPort-connected display in
 `Mirror` and `Join Displays` modes.
 
-## DDP002.002 DP display (Windows 11)
+## TDP002.002 DP display (Windows 11)
 
 **Test description**
 
@@ -142,7 +138,7 @@ to the docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external DisplayPort-connected display in
 `Duplicate` and `Extend` modes.
 
-## DDP003.001 Triple display (Ubuntu 22.04)
+## TDP003.001 Triple display (Ubuntu 22.04)
 
 **Test description**
 
@@ -173,7 +169,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the three external displays in `Mirror` and
 `Join Displays` modes.
 
-## DDP003.002 Triple display (Windows 11)
+## TDP003.002 Triple display (Windows 11)
 
 **Test description**
 

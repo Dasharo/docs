@@ -1,4 +1,4 @@
-# Dasharo compatibility: USB-C docking station USB devices
+# Dasharo compatibility: Thunderbolt docking station USB devices
 
 ## Test cases common documentation
 
@@ -12,10 +12,10 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. The `USB-C docking station` connected to the USB-C port.
-1. The `USB storage` connected to the `USB-C docking station`.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
+1. The `USB storage` connected to the `Thunderbolt docking station`.
 
-## DUB001.001 USB devices recognition (firmware)
+## TDU001.001 USB devices recognition (firmware)
 
 **Test description**
 
@@ -41,7 +41,7 @@ station are recognized correctly by the `FIRMWARE`.
 
 The `USB storage` is available which confirms successful recognition.
 
-## DUB001.002 USB devices recognition (Ubuntu 22.04)
+## TDU001.002 USB devices recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -79,7 +79,7 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 1. After each device is disconnected from the USB port, a USB device entry
     in `lsusb` command output should disappear.
 
-## DUB001.003 USB devices recognition (Windows 11)
+## TDU001.003 USB devices recognition (Windows 11)
 
 **Test description**
 
@@ -130,7 +130,7 @@ displayed. The list should contain the `USB storage`, which is plug in.
         OK         USB             USB Mass Storage Device
     ```
 
-## DUB002.001 USB keyboard recognition (firmware)
+## TDU002.001 USB keyboard recognition (firmware)
 
 **Test description**
 
@@ -158,7 +158,7 @@ according to their labels.
 
 All menus can be entered using the external USB keyboard.
 
-## DUB002.002 USB keyboard detection (Ubuntu 22.04)
+## TDU002.002 USB keyboard detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -176,7 +176,7 @@ according to their labels.
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Install the `libinput-tools` package: `sudo apt install libinput-tools`.
-1. The external USB keyboard connected to the docking station.
+1. Connect the external USB keyboard using the USB port.
 
 **Test steps**
 
@@ -208,7 +208,7 @@ according to their labels.
    their labels.
 1. Key combinations are detected correctly.
 
-## DUB002.003 USB keyboard recognition (Windows 11)
+## TDU002.003 USB keyboard recognition (Windows 11)
 
 **Test description**
 
@@ -224,7 +224,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. The external USB keyboard connected to the docking station.
+1. Connect the external USB keyboard using the USB port.
 
 **Test steps**
 
@@ -261,7 +261,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    or actions when pressed.
 1. Key combinations are detected correctly.
 
-## DUB003.001 Upload 1GB file on USB storage (Ubuntu 22.04)
+## TDU003.001 Upload 1GB file on USB storage (Ubuntu 22.04)
 
 **Test description**
 
@@ -317,7 +317,7 @@ f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  test_file.txt
 f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  {path_to_usb_storage}/test_file.txt
 ```
 
-## DUB003.002 Upload 1GB file on USB storage (Windows 11)
+## TDU003.002 Upload 1GB file on USB storage (Windows 11)
 
 **Test description**
 
