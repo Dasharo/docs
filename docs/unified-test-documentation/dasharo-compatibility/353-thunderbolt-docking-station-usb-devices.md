@@ -12,8 +12,8 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. The docking station connected to the Thunderbolt port.
-1. The `USB storage` connected to the docking station.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
+1. The `USB storage` connected to the `Thunderbolt docking station`.
 
 ## TDU001.001 USB devices recognition (firmware)
 

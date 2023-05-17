@@ -12,7 +12,7 @@
     [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. The docking station connected to the Thunderbolt port.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
 ## TDD001.001 Docking station detection after coldboot (Ubuntu 22.04)
 

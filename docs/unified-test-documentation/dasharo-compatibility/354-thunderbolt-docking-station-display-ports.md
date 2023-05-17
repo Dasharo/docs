@@ -12,11 +12,7 @@
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
-1. The docking station is connected to the Thunderbolt port.
-
-    > If the docking station is not directly connected to the DUT, but with a
-    > USB-C to USB-C cable, make sure it is full-featured cable (>=5Gbps) with
-    > 5A current capability.
+1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
 ## TDP001.001 HDMI display (Ubuntu 22.04)
 

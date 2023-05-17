@@ -12,7 +12,7 @@
     [Generic test setup: OS installation](../../generic-test-setup#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
-1. The docking station is connected to the USB-C port.
+1. The `USB-C docking station` connected to the USB-C port.
 
     > If the docking station is not directly connected to the DUT, but with a
     > USB-C to USB-C cable, make sure it is full-featured cable (>=5Gbps) with
