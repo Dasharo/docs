@@ -81,23 +81,20 @@ after plugging in the 3.5 mm jack into the docking station.
 1. After the `Which device did you plug in` menu appearing, select what type
     of external device has been connected to the laptop (headset).
 1. Find the `Speakers` icon in the bottom right part of the screen and click
-    it using the right mouse button and then using the left mouse button
-    click `Open Sound Settings`.
-1. Locate `Input` section and click on the `Device properties` option.
-1. In `Device properties` window select option `Additional device properties`.
-1. Locate in `General` the section field named `Jack Information`.
-1. Close the window `Microphone properties`.
-1. Disconnect a headset from the laptop.
-1. Select again the `Addtional device properties` option and locate again
-    field named `Jack information`.
+    it using the right mouse button then using the left mouse button
+    click `Sound Settings`.
+1. Locate the `All sound device` bar and click on it.
+1. Connect(or Disconnect) external headset to the 3.5 mm jack on the docking
+    station and note the result.
 
 **Expected result**
 
-1. `Jack Information` field in the first case should show the position
-    `Front Panel 3.5 mm Jack`.
-1. After disconnecting a headset from the laptop and checking again
-    option `Addtional device properties` field `Jack Information` should not
-    contain the phrase `Front Panel 3.5 mm Jack`.
+1. After connecting the external headset to the 3.5 mm jack, new entries
+   regarding the connected headphones should appear in the `Output devices` and
+   `Input devices` sections.
+1. After disconnecting the external headset from the 3.5 mm jack, the entries
+   for connected headset should disappear from the `Output devices` and
+   `Input devices` sections.
 
 ## DAU002.001 Audio playback (Ubuntu 22.04)
 
