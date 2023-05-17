@@ -17,9 +17,8 @@
 
 **Test description**
 
-This test aims to verify whether the DUT can be charged using a USB Type-C PD
-power supply connected to the docking station, which is connected to the USB-C
-port.
+This test aims to verify whether the DUT can be charged using a PD power supply 
+connected to the docking station, which is connected to the USB-C port.
 
 **Test configuration data**
 
@@ -37,7 +36,7 @@ port.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Disconnect any charger from the DUT.
-1. Connect the docking station to the UBS-C port located on the casing of the
+1. Connect the docking station to the USB-C port located on the casing of the
    DUT.
 1. Connect the charger plug to the docking station.
 1. Open a terminal window and run the following command:
@@ -63,9 +62,8 @@ Charging
 
 **Test description**
 
-This test aims to verify whether the DUT can be charged using a USB Type-C PD
-power supply connected to the docking station, which is connected to the USB-C
-port.
+This test aims to verify whether the DUT can be charged using a PD power supply 
+connected to the docking station, which is connected to the USB-C port.
 
 **Test configuration data**
 
@@ -82,7 +80,7 @@ port.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Connect the docking station to the UBS-C port located on the casing of the
+1. Connect the docking station to the USB-C port located on the casing of the
    DUT.
 1. Connect the charger plug to the docking station.
 1. Open PowerShell and and run the following command:
