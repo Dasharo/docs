@@ -89,4 +89,4 @@ following:
     `verified boot` should have the value 1.
 1. If TPM is physically mounted on the platform, the `TPM type` field should
     contain information about the type of the mounted TPM; also, in that
-    situation, field `TPM success` should have the value 1. 
+    situation, field `TPM success` should have the value 1.
