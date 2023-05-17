@@ -36,8 +36,6 @@ Ethernet port can be obtained on Ubuntu 22.04.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Connect docking station to power source.
-1. Connect DUT and docking station with `USBc - USBc` cable.
 1. Plug in a Ethernet cable with internet connection to docking station.
 1. Wait for internet connection to initialize.
 1. Ping `3mdeb.com` using command in terminal:
@@ -88,8 +86,6 @@ Ethernet port can be obtained on Windows 11.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Connect docking station to power source.
-1. Connect DUT and docking station with `USBc - USBc` cable.
 1. Plug in a Ethernet cable with internet connection to docking station.
 1. Wait for internet connection to initialize.
 1. Ping `3mdeb.com` using command in PowerShell:
