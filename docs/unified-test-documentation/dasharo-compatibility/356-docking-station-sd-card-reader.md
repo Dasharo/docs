@@ -127,7 +127,7 @@ can be used from the operating system.
     ```
 
 1. Execute the following commands for generating, copying and comparing
-    generating file:
+    generated file:
 
     ```bash
     dd if=/dev/urandom of=/tmp/in.bin bs=4K count=100
