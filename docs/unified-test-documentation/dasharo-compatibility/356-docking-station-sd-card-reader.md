@@ -146,9 +146,9 @@ can be used from the operating system.
     Example output:
     
     ```bash
-    sda           8:0    1  29,5G  0 disk 
+    sda           8:0    1  29,5G  0 disk
     └─sda1        8:1    1  29,5G  0 part /media/user/DCB0-C7E8
-    sdb           8:16   1     0B  0 disk 
+    sdb           8:16   1     0B  0 disk
     ```
 
 1. The output from the last command should contain 2 identical checksums.
@@ -194,4 +194,4 @@ can be used from the operating system.
 
 **Expected result**
 
-The last command should return the following message:  `This is a test string.`
+The last command should return the following message: `This is a test string.`
