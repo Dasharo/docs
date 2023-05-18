@@ -59,8 +59,8 @@ coreboot port on the Protectli VP46XX firewall.
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel Core i7-10810U                        |
-| **RAM**                        | Slot 1: Empty                               |
-|                                | Slot 2: Kingston KVR26S19D8/32              |
+| **RAM**                        | Slot 1: CRUCIAL CT16G4SFRA32A               |
+|                                | Slot 2: CRUCIAL CT16G4SFRA32A               |
 | **Flash memory**               | Macronix KH25L12835F                        |
 | **SSD**                        | SAMSUNG 870 QVO SATA 2.5" SSD 1TB           |
 | **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
