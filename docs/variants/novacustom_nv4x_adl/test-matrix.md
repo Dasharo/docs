@@ -50,6 +50,7 @@ subjected from before the release of the new binary.
 | 39.  | [Thunderbolt docking station][TDS]                | TDS           | All                                  |
 | 40.  | [Thunderbolt docking station Display ports][TDP]  | TDP           | All                                  |
 | 41.  | [Thunderbolt docking station NET interface][TDN]  | TDN           | All                                  |
+| 42.  | [USB-C docking station SD card reader][DSD]       | DSD           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -93,6 +94,7 @@ subjected from before the release of the new binary.
 [TDP]: ../../unified-test-documentation/dasharo-compatibility/354-thunderbolt-docking-station-display-ports.md
 [TDN]: ../../unified-test-documentation/dasharo-compatibility/355-thunderbolt-docking-station-net-interface.md
 [SOL]: ../../unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
+[DSD]: ../../unified-test-documentation/dasharo-compatibility/356-docking-station-sd-card-reader.md
 
 ## Module: Dasharo security
 
