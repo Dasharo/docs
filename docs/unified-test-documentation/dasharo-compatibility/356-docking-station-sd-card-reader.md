@@ -60,7 +60,7 @@ Bus 002 Device 007: ID 067b:2733 Prolific Technology, Inc. USB SD Card Reader
 
 **Test description**
 
-This test aims to verify that the SD Card reader built into the docking station 
+This test aims to verify that the SD Card reader built into the docking station
 is enumerated correctly and can be detected by the operating system.
 
 **Test configuration data**
