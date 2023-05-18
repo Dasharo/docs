@@ -99,5 +99,5 @@ coreboot port on the Protectli VP46XX firewall.
 | **TPM**                        | Protectli TPM                               |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
-| **Power Control**              | Sonoff S26                                  |
+| **Power control**              | Sonoff S26                                  |
 | **Power supply**               | Channel Well Technology 12V, 7.5A 90W       |
