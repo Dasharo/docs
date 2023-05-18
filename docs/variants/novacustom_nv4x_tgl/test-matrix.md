@@ -55,6 +55,7 @@ subjected from before the release of the new binary.
 | 42.  | [Sign of life][SOL]                               | SOL           | All                                  |
 | 43.  | [ME disable/neuter support][MNE]                  | MNE           | MNE001.001                           |
 | 44.  | [NVIDIA Graphics support][NVI]                    | NVI           | All                                  |
+| 45.  | [USB-C docking station SD card reader][DSD]       | DSD           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -100,6 +101,7 @@ subjected from before the release of the new binary.
 [SOL]: ../../unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [NVI]: ../../unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
+[DSD]: ../../unified-test-documentation/dasharo-compatibility/356-docking-station-sd-card-reader.md
 
 ### Module: Dasharo security
 
@@ -179,6 +181,7 @@ subjected from before the release of the new binary.
 | 40.  | [Thunderbolt docking station Display ports][TDP]  | TDP           | All                                  |
 | 41.  | [Thunderbolt docking station NET interface][TDN]  | TDN           | All                                  |
 | 42.  | [Sign of life][SOL]                               | SOL           | All                                  |
+| 43.  | [USB-C docking station SD card reader][DSD]       | DSD           | All                                  |
 
 ### Module: Dasharo security
 
