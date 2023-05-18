@@ -5,7 +5,7 @@
 **Test description**
 
 Intel Boot Guard is a hardware-based technology intended to protect the device
-against executing non-genuine UEFI firmware, which could happen when a possible
+against executing non-genuine firmware, which could happen when a possible
 attacker has bypassed protection against modification of BIOS. This test aims
 to verify that the implemented Boot Guard mechanism works correctly.
 
