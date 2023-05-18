@@ -144,7 +144,7 @@ can be used from the operating system.
     return information about the SD card mounting location.
 
     Example output:
-    
+
     ```bash
     sda           8:0    1  29,5G  0 disk
     └─sda1        8:1    1  29,5G  0 part /media/user/DCB0-C7E8
