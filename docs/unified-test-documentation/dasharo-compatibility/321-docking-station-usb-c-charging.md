@@ -1,4 +1,4 @@
-# Dasharo Compatibility: USB-C docking station
+# Dasharo Compatibility: USB-C docking station charing
 
 ## Test cases common documentation
 
