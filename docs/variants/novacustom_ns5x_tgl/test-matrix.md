@@ -31,28 +31,27 @@ subjected before the release of the new binary.
 | 20.  | [USB-C docking station detect][DUD]                    | DUD           | All                                  |
 | 21.  | [USB-C docking station USB devices][DUB]               | DUB           | All                                  |
 | 22.  | [USB-C docking station Audio][DAU]                     | DAU           | All                                  |
-| 23.  | [USB-C docking station][DUC]                           | DUC           | All                                  |
-| 24.  | [USB-C docking station Display ports][DDP]             | DDP           | All                                  |
-| 25.  | [USB-C docking station NET interface][DET]             | DET           | All                                  |
-| 26.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
-| 27.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
-| 28.  | [CPU status][CPU]                                      | CPU           | All                                  |
-| 29.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
-| 30.  | [Logo customization functionality][LCM]                | LCM           | LCM001.001                           |
-| 31.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
-| 32.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
-| 33.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
-| 34.  | [Fedora support][FED]                                  | FED           | All                                  |
-| 35.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001 |
-| 36.  | [Thunderbolt docking station detect][TDD]              | TDD           | All                                  |
-| 37.  | [Thunderbolt docking station USB devices][TDU]         | TDU           | All                                  |
-| 38.  | [Thunderbolt docking station Audio][TDA]               | TDA           | All                                  |
-| 39.  | [Thunderbolt docking station][TDS]                     | TDS           | All                                  |
-| 40.  | [Thunderbolt docking station Display ports][TDP]       | TDP           | All                                  |
-| 41.  | [Thunderbolt docking station NET interface][TDN]       | TDN           | All                                  |
-| 42.  | [Sign of life][SOL]                                    | SOL           | All                                  |
-| 43.  | [ME disable/neuter support][MNE]                       | MNE           | MNE001.001                           |
-| 44.  | [USB-C docking station SD card reader][DSD]            | DSD           | All                                  |
+| 23.  | [USB-C docking station Display ports][DDP]             | DDP           | All                                  |
+| 24.  | [USB-C docking station NET interface][DET]             | DET           | All                                  |
+| 25.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
+| 26.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
+| 27.  | [CPU status][CPU]                                      | CPU           | All                                  |
+| 28.  | [Embedded controller flashing][ECF]                    | ECF           | All                                  |
+| 29.  | [Logo customization functionality][LCM]                | LCM           | LCM001.001                           |
+| 30.  | [Firmware locally building and flashing][FLB]          | FLB           | All                                  |
+| 31.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
+| 32.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
+| 33.  | [Fedora support][FED]                                  | FED           | All                                  |
+| 34.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001 |
+| 35.  | [Thunderbolt docking station detect][TDD]              | TDD           | All                                  |
+| 36.  | [Thunderbolt docking station USB devices][TDU]         | TDU           | All                                  |
+| 37.  | [Thunderbolt docking station Audio][TDA]               | TDA           | All                                  |
+| 38.  | [Thunderbolt docking station][TDS]                     | TDS           | All                                  |
+| 39.  | [Thunderbolt docking station Display ports][TDP]       | TDP           | All                                  |
+| 40.  | [Thunderbolt docking station NET interface][TDN]       | TDN           | All                                  |
+| 41.  | [Sign of life][SOL]                                    | SOL           | All                                  |
+| 42.  | [ME disable/neuter support][MNE]                       | MNE           | MNE001.001                           |
+| 43.  | [USB-C docking station SD card reader][DSD]            | DSD           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -75,7 +74,6 @@ subjected before the release of the new binary.
 [DUD]: ../../unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
 [DUB]: ../../unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
 [DAU]: ../../unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
-[DUC]: ../../unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
 [FFW]: ../../unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [ECF]: ../../unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md

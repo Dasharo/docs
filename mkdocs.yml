@@ -323,7 +323,7 @@ nav:
               - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
               - 'Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
               - 'Embedded controller flashing': unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
-              - 'USB-C docking station': unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c.md
+              - 'USB-C docking station charging': unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c-charging.md
               - 'USB-C docking station detect': unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
               - 'USB-C docking station USB devices': unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
               - 'USB-C docking station audio': unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
