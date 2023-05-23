@@ -14,25 +14,49 @@ VP2410.
 
 ## Build Dasharo BIOS firmware
 
+> This build procedure produces full firmware binary including blobs such as
+> FSP, and ME. Currently, access to them is restricted to the OEM (Protectli) via
+> a private repository.
+
 1. Clone the coreboot repository:
 
     ```bash
-    git clone https://github.com/Dasharo/coreboot.git \
-    -b protectli_vault_glk/release
+    git clone https://github.com/Dasharo/coreboot
     ```
 
-2. Check out the desired version e.g. `v1.0.10`:
+1. Checkout the desired version, e.g. `v1.0.15`:
 
     ```bash
     cd coreboot
-    git checkout protectli_vault_glk_v1.0.10
+    git checkout protectli_vault_glk_v1.0.15
     ```
 
-3. Start build process (note it requires certain blobs to proceed):
+1. Checkout submodules:
 
     ```bash
-    # you will need to put the ZIP with blobs and FSP at this point
+    git submodule update --init --checkout
+    ```
+
+1. Obtain the Protectli blobs package:
+
+    > Replace `<PROTECTLI_BLOBS_REPO>` with a a proper path to the repository
+    > in a form of: `git@repo-path.git`. You should checkout to the same tag as
+    > in case aof the coreboot repository.
+
+    ```bash
+    cd 3rdparty/blobs/mainboard/
+    git init
+    git remote add origin <PROTECTLI_BLOBS_REPO>
+    git fetch origin && git checkout protectli_vault_glk_v1.0.15
+    cd -
+    ln -s ../blobs/mainboard/protectli/vault_glk/GeminilakeFspBinPkg/ 3rdparty/fsp/GeminilakeFspBinPkg
+    ```
+
+1. Build the firmware v1.0.15 or newer:
+
+    ```bash
     ./build.sh vp2410
     ```
 
-The resulting coreboot image will be placed in `build/coreboot.rom`.
+The resulting coreboot image will be placed in the coreboot directory as
+`protectli_vp2410_<version>.rom`.
