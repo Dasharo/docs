@@ -27,7 +27,7 @@ Currently, the latest flashrom release lacks support for Alder Lake S internal
 flashing. Because of this, we need to build flashrom from
 [3mdeb fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
 The procedure is based on
-[Ubuntu 22.04 desktop amd64 ISO](https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso)
+[Ubuntu 22.04 desktop amd64 ISO](https://old-releases.ubuntu.com/releases/jammy/ubuntu-22.04.1-desktop-amd64.iso)
 burned on the USB stick. Ubuntu 22.04 or newer if preferred, as it contains the
 network drivers for Ethernet and WiFi. Older versions of Ubuntu would require
 a USB to Ethernet adapter or equivalent to get a network connection and install
