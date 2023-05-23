@@ -75,7 +75,7 @@ To flash firmware follow the steps described below:
 1. Flash the platform by using the following command:
 
     ```bash
-    flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L12835F/MX25L12845E/MX25L12865E" -w [path_to_binary]
+    flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25U6435E/F" -w [path_to_binary]
     ```
 
     > Flashing with flashrom takes about 1 minute.
