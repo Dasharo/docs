@@ -29,6 +29,8 @@ lock, SMM BIOS Write Protection and Secure boot:
    changes.
 1. Reboot the device to properly apply the changes.
 
+The settings of all the above options can be restored after a firmware update.
+
 ## Updating minor versions v1.x.y
 
 Both `WP_RO` and `RW_SECTION_A` partitions of the flash needs to be updated.

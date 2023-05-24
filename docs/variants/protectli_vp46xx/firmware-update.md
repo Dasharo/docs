@@ -31,6 +31,8 @@ lock and Secure Boot:
    changes.
 1. Reboot the device to properly apply the changes.
 
+The settings of all the above options can be restored after a firmware update.
+
 ## Updating to Dasharo v1.0.18 or v1.0.19 or v1.1.0
 
 From v1.0.18 Dasharo firmware is rebased on the more up-to-date revision of
