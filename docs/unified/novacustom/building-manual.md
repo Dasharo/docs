@@ -130,6 +130,25 @@ Make sure that you have following packages installed:
 
 This will produce a Dasharo binary placed in `build/coreboot.rom`.
 
+At the end of the build process, the following warning will be displayed:
+
+	** WARNING **
+    coreboot has been built without an Intel Firmware Descriptor.
+    Never write a complete coreboot.rom without an IFD to your
+    board's flash chip! You can use flashrom's IFD or layout
+    parameters to flash only to the BIOS region.
+
+This is expected, and something you have to pay attention to if you would like
+to flash your Dasharo binary. Make sure to only overwrite the BIOS region,
+leaving everything else untouched. Otherwise, expect that your device will no
+longer be able to boot unless fixed using an external programmer.
+
+The following `flashrom` command will only rewrite the BIOS region:
+
+```bash
+sudo flashrom -p internal --ifd -i bios -w [path/to/your/coreboot.rom]
+```
+
 ## Build Dasharo EC firmware
 
 1. Clone the Dasharo ec repository:
