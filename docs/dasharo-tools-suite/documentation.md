@@ -386,7 +386,7 @@ about it:
 
 ```text
 Warning: Setting BIOS Control at 0xdc from 0x8b to 0x89 failed.
-New vaule is 0x8b.
+New value is 0x8b.
 ```
 
 Procedure execution ends automatically on the reboot of the platform (unless it
@@ -455,16 +455,27 @@ Rebooting
 #### Local firmware update
 
 To flash a local BIOS image (e.g. mounted from a USB stick), you can drop to the
-shell (option 9) and use the `flashrom` binary provided inside DTS directly.
+shell (option `9`) and use the `flashrom` binary provided inside DTS directly.
+
+**DANGER**: Failure to use `flashrom` correctly **_may result in an unbootable
+device_**. For example, never flash an image that does not contain an Intel
+Firmware Descriptor (IFD) region and/or Management Engine (ME) region to the
+whole chip.
 
 You can use `flashrom -p internal` without additional parameters to double check
-if flashrom detects your chipset.
+if `flashrom` detects your chipset. This will not write anything.
 
-If flashrom outputs the following, you do not need to worry about it:
+The following `flashrom` command will only rewrite the BIOS region:
+
+```bash
+sudo flashrom -p internal --ifd -i bios -w [path/to/your/coreboot.rom]
+```
+
+If `flashrom` outputs the following, you do not need to worry about it:
 
 ```text
 Enabling flash write... Warning: Setting BIOS Control at 0xdc from 0x8b to 0x89 failed.
-New vaule is 0x8b.
+New value is 0x8b.
 SPI Configuration is locked down
 ```
 
