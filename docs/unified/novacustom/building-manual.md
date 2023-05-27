@@ -143,11 +143,8 @@ to flash your Dasharo binary. Make sure to only overwrite the BIOS region,
 leaving everything else untouched. Otherwise, expect that your device will no
 longer be able to boot unless fixed using an external programmer.
 
-The following `flashrom` command will only rewrite the BIOS region:
-
-```bash
-sudo flashrom -p internal --ifd -i bios -w [path/to/your/coreboot.rom]
-```
+The binary will not contain a boot splash logo. Refer to
+[logo customization](../../guides/logo-customization.md) for including one.
 
 ## Build Dasharo EC firmware
 
