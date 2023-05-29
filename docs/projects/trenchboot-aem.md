@@ -37,7 +37,7 @@ framework that allows individuals and projects to build security engines to
 perform launch integrity actions for their systems. The framework builds upon
 Boot Integrity Technologies (BITs) that establish one or more Roots of Trust
 (RoT) from which a degree of confidence that integrity actions were not
-subverted. The project has grown a lot thanks to the previous
+subverted is derived. The project has grown a lot thanks to the previous
 [NLnet NGI0 PET grant][nlnet_open_drtm] and now it looks for further expansion
 into extensive use of the DRT technologies in open-source and security-oriented
 operating systems like [Qubes OS][qubes_os_org].
