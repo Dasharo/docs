@@ -56,6 +56,7 @@ tag.
 
 Force-pushes to `<platform>/rel_vX.Y.Z`, `<platform>/develop` or
 `<platform>/<feature>` are forbidden with following exceptions:
+
 * rebasing - when some other PR is merged to target branch before our does, or
   when upstream's master introduces the same fixes that our branch would
 * squashing - to not produce unnecessary "fix indentation" or "add missing
