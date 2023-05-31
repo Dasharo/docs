@@ -47,7 +47,7 @@ source edksetup.sh
 - Update the submodules in order get latest dependencies.
 
 ```bash
-git submodules update --init
+git submodule update --init --checkout
 ```
 
 - Clone the edk2-platforms repository for additional packages
