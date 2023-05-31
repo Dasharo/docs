@@ -35,10 +35,10 @@ The DTS allows performing automatic firmware update process, which is the
 recommended method. To update your firmware, follow below steps.
 
 1. Boot [DTS using
-   iPXE](../../dasharo-tools-suite/documentation.md/#bootable-over-a-network) on
+   iPXE](../../dasharo-tools-suite/documentation.md#bootable-over-a-network) on
    your platform.
 2. Follow [firmware
-   update](../../dasharo-tools-suite/documentation.md/#firmware-update)
+   update](../../dasharo-tools-suite/documentation.md#firmware-update)
    procedure described in DTS documentation.
 
 ### Linux distribution of your choice
@@ -89,7 +89,7 @@ Note: flashrom can never write if the flash chip isn't found automatically.
 It means you cannot proceed with this flashrom version and you have to remove
 it using your package manager. Then follow the procedure for building the right
 flashrom is described in `Build flashrom` section in the
-[Initial deployment documentation](initial-deployment.md#initial-deployment-manually)
+[Initial deployment documentation](./initial-deployment.md#initial-deployment-manually)
 (note the procedure describes Ubuntu case only, your package manager and
 package names to install may be slightly different). We recommend to use
 [Dasharo Tools Suite](#dasharo-tools-suite).
@@ -118,7 +118,7 @@ That means you are good to go.
 #### Migrating SMBIOS unique data (optional)
 
 Before flashing you may migrate your serial number and UUID as
-described in [Initial deployment](initial-deployment.md#migrating-smbios-unique-data).
+described in [Initial deployment](./initial-deployment.md#migrating-smbios-unique-data).
 Applicable to Dasharo v1.1.0 and later.
 
 #### Version v1.1.0 or newer

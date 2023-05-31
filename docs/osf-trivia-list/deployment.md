@@ -154,7 +154,7 @@ Note: flashrom can never write if the flash chip isn't found automatically.
 
 that means your flashrom version is incorrect. Follow the procedure for
 building the right flashrom is described in `Build flashrom` section in the
-[Initial deployment documentation](initial-deployment.md#initial-deployment-manually).
+[Initial deployment documentation](../variants/msi_z690/initial-deployment.md#initial-deployment-manually).
 
 ### Chip write protection enabled
 

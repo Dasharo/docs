@@ -489,8 +489,8 @@ that can lead to influencing Dasharo Community Supported roadmap.
 [cb-distro]: https://doc.coreboot.org/distributions.html
 [intel-quark]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/YRJQIPVK5WHACT64TH42CLGD4TXG3XTS/#PZUIFZZHRK7M3NLBNLI6VUBD4O52245B
 [legacy-smp]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/EEEBFATYHWIPRDXLCUEFNDZ4FYYVA4QM/#QHIYXYTVOGXENJXUOWOXUZOTLV5OS4LB
-[raptor]: ../../variants/talos_2/releases/
-[kgpe-d16]: ../../variants/asus_kgpe_d16/releases
-[msi-z690a]: ../../variants/msi_z690/overview/
+[raptor]: ../variants/talos_2/releases.md
+[kgpe-d16]: ../variants/asus_kgpe_d16/releases.md
+[msi-z690a]: ../variants/msi_z690/overview.md
 [vpub]: https://vpub.dasharo.com/
 [dasharo-matrix]: https://matrix.to/#/#dasharo:matrix.org
