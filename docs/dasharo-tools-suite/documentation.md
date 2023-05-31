@@ -256,6 +256,7 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
 * [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 * [HCL Report](#hcl-report),
 * [Firmware update](#firmware-update),
+    - [Local firmware update](#local-firmware-update),
 * [EC transition](#ec-transition),
 * [EC update](#ec-update),
 * [additional features](#additional-features),
@@ -380,6 +381,14 @@ used for flashing. You can compare them with the values listed in the supported
 hardware section on docs.dasharo.com. Both these questions can be accepted by
 typing `Y`.
 
+If you see the following warning during the process, you do not need to worry
+about it:
+
+```text
+Warning: Setting BIOS Control at 0xdc from 0x8b to 0x89 failed.
+New value is 0x8b.
+```
+
 Procedure execution ends automatically on the reboot of the platform (unless it
 requires otherwise). After restarting the device, you can enjoy the updated
 version of Dasharo, which we provide for given hardware.
@@ -441,6 +450,33 @@ Rebooting in 5s:
 2...
 1...
 Rebooting
+```
+
+#### Local firmware update
+
+To flash a local BIOS image (e.g. mounted from a USB stick), you can drop to the
+shell (option `9`) and use the `flashrom` binary provided inside DTS directly.
+
+**DANGER**: Failure to use `flashrom` correctly **_may result in an unbootable
+device_**. For example, never flash an image that does not contain an Intel
+Firmware Descriptor (IFD) region and/or Management Engine (ME) region to the
+whole chip.
+
+You can use `flashrom -p internal` without additional parameters to double check
+if `flashrom` detects your chipset. This will not write anything.
+
+The following `flashrom` command will only rewrite the BIOS region:
+
+```bash
+sudo flashrom -p internal --ifd -i bios -w [path/to/your/coreboot.rom]
+```
+
+If `flashrom` outputs the following, you do not need to worry about it:
+
+```text
+Enabling flash write... Warning: Setting BIOS Control at 0xdc from 0x8b to 0x89 failed.
+New value is 0x8b.
+SPI Configuration is locked down
 ```
 
 ### EC transition
