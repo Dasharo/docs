@@ -1,6 +1,6 @@
 # RTE v.0.5.3 with ASUS KGPE-D16 connection
 
-![](/images/kgpe_overview.png)
+![](/images/kgpe_overview.jpg)
 
 ## Power supply
 
@@ -77,7 +77,7 @@ echo "0"  > /sys/class/gpio/gpio402/value
  2 (GPIO401)        | 4 (IO3_HOLD_PROG)
  3 (GPIO402)        | 5 (IO2_WP_PROG)
 
-![](/images/qspimux_pin_header.png)
+![](/images/qspimux_pin_header.jpg)
 
 ![](/images/qspimux_kgpe.jpeg)
 
@@ -88,7 +88,7 @@ echo "0"  > /sys/class/gpio/gpio402/value
 Asus KGPE-D16 has a DB9 serial connector for the debug UART. Connect it to the RTE
 via RS232 DB9 cable.
 
-![](/images/kgpe_rear_panel.png)
+![](/images/kgpe_rear_panel.jpg)
 
 ## TPM
 
@@ -103,7 +103,7 @@ succeed this way. Designing and producing proper TPM header and/or reliable
 adapter, could solve this problem. The [TwPM
 project](https://twpm.dasharo.com/) could help here in the future.
 
-![](/images/kgpe_tpm_header.png)
+![](/images/kgpe_tpm_header.jpg)
 
 TPM modules that were tested and verified to work in 3mdeb lab with coreboot:
 
@@ -114,7 +114,7 @@ TPM modules that were tested and verified to work in 3mdeb lab with coreboot:
 
 Asus KGPE-D16 provides a front panel pin header (PANEL1):
 
-![](/images/kgpe_front_panel.png)
+![](/images/kgpe_front_panel.jpg)
 
 | RTE header J11 pin     | Asus KGPE-D16             |
 |:----------------------:|:-------------------------:|
@@ -167,8 +167,8 @@ jumper to protect the flash. In order to assembly the adapter you will need
 
 The build shall look like this:
 
-![Flash](flash_chip_adapter/3D_model.png){: style="height:700px"}
-![Flash](flash_chip_adapter/3D_model_2.png){: style="height:515px"}
+![Flash](flash_chip_adapter/3D_model.jpg){: style="height:700px"}
+![Flash](flash_chip_adapter/3D_model_2.jpg){: style="height:515px"}
 ![Flash](flash_chip_adapter/flash_chip_adapter_1.jpg){: style="height:595px"}
 ![Flash](flash_chip_adapter/flash_chip_adapter_2.jpg){: style="height:595px"}
 

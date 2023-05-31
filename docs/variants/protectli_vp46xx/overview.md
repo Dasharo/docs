@@ -5,7 +5,7 @@ router, virtualization platform, a daily-driven personal computer, and more.
 The VP46XX is the second platform of the Vault Pro series with higher
 performance and newer technology than the original FW6 series.
 
-![](/images/VP4630_banner-1.png)
+![](/images/VP4630_banner-1.jpg)
 
 The VP46XX features an Intel 10th Generation CPU, 2x DDR4 DIMM modules, 6x
 Intel i225-V 2.5G Ethernet ports, PCIe x4/SATA NVMe storage, LPC TPM, M.2 WIFI

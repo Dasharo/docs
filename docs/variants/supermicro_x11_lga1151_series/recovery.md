@@ -31,7 +31,7 @@ entered through BMC web interface (`Miscellaneous->Activate License`).
 
 Please make sure you using firmware revision 01.60
 <center>
-![](../../images/supermicro_check_fw_rev.png)
+![](../../images/supermicro_check_fw_rev.jpg)
 </center>
 
 If not please follow `IPMI Firmware Update_NEW.pdf` instruction from package

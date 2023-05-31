@@ -299,7 +299,7 @@ If you would like to send the report to our servers, please remember about
 connecting the ethernet cable. More information can be found in
 [glossary](../glossary.md#dasharo-hardware-compatibility-list-report).
 
-![](./images/dts-hcl-run.png)
+![](./images/dts-hcl-run.jpg)
 
 #### HCL Report correctness
 

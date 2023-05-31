@@ -1,7 +1,7 @@
 # Overview
 
 <center>
-![](../../images/x11ssh-f.png){: style="height:400px"}
+![](../../images/x11ssh-f.jpg){: style="height:400px"}
 </center>
 
 Supermicro X11 LGA1151 Series are mainboards dedicated for servers and

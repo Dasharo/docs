@@ -123,7 +123,7 @@ Enter MSI Firmware, and change the following:
 * Restore Defaults (Confirm Yes)
 * Save Changes and Reboot (Confirm Yes)
 
-![](images/msi_1-70__cpu-defaults.png)
+![](images/msi_1-70__cpu-defaults.jpg)
 
 After the power off/on cycle, enter MSI firmware again, change the following
 values, then repeat Save Changes and Reboot:
@@ -139,8 +139,8 @@ values, then repeat Save Changes and Reboot:
     - CPU AC Loadline: AC_LL
     - CPU DC Loadline: DC_LL
 
-![](images/msi_1-70__cpu-manual.png)
-![](images/msi_1-70__cpu-save-and-exit.png)
+![](images/msi_1-70__cpu-manual.jpg)
+![](images/msi_1-70__cpu-save-and-exit.jpg)
 
 ## Miscellaneous Comments
 

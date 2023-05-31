@@ -2,7 +2,7 @@
 
 ## Block diagram
 
-![](../../images/muxPi-block-diagram.png)
+![](../../images/muxPi-block-diagram.jpg)
 
 ## muxPi setup
 
@@ -23,14 +23,14 @@ There are two methods to setup serial communication with muxPi:
 
 * with microUSB<->USB cable
 
-    ![](../../images/muxPi-board-bottom.png)
+    ![](../../images/muxPi-board-bottom.jpg)
 
 * with UART/USB converter
 
     Attach USB/UART converter to muxPi's left addon female header (`GND`,
      `DBG UART RX`, `DBG UART TX` on pinout image below):
 
-    ![](../../images/muxPi-addon-left.png)
+    ![](../../images/muxPi-addon-left.jpg)
 
     and plug USB connector to the computer. Next, open connection in PC
     terminal by typing:
@@ -43,7 +43,7 @@ There are two methods to setup serial communication with muxPi:
 
 #### Jumpers configuration
 
-![](../../images/muxpi1.4_jumpers.png)
+![](../../images/muxpi1.4_jumpers.jpg)
 
 * UART - pins `Vloc` & `VCC` - if jumped then internal voltage generator is
     used as voltage reference for data lines and powers up target device. If
@@ -74,7 +74,7 @@ To power on MuxPi with NanoPi attached, plug the 5V/2A DC 5.5/2.1mm power supply
 jack to the CON1 muxPi's connector. Power consumption of MuxPi should be less
 then 1A assuming no addons connected.
 
-![](../../images/muxPi-connectors.png)
+![](../../images/muxPi-connectors.jpg)
 
 #### IP address
 
@@ -337,13 +337,13 @@ sensor is bypassed with 3 0R resistors that can be populated if current sensor
 is not needed. These resistors must not be populated if current measurement is
 required.
 
-![](../../images/muxPi-power.png)
+![](../../images/muxPi-power.jpg)
 
 #### UART connections
 
-![muxpi-connectors](../../images/muxPi-pin-connectors.png)
+![muxpi-connectors](../../images/muxPi-pin-connectors.jpg)
 
-![muxpi-uart](../../images/muxPi-uart.png)
+![muxpi-uart](../../images/muxPi-uart.jpg)
 
 * `GND` - digital ground of MuxPi board
 * `N.C.` - not connected
@@ -381,7 +381,7 @@ Example configuration for OrangePi (DUT) uart connection:
 Add-ons headers are extensions for attaching new shields or simply using NanoPi
 and CortexM0 interfaces:
 
-![](../../images/muxPi-addon-left.png)
+![](../../images/muxPi-addon-left.jpg)
 
 * `5V` - power supply - not switchable - always present
 * `3V3` - switchable (controlled by NanoPi) 3.3V power supply
@@ -393,7 +393,7 @@ and CortexM0 interfaces:
 * `GND` - ground lines
 * `N.C`. - not connected
 
-![](../../images/muxPi-addon-right.png)
+![](../../images/muxPi-addon-right.jpg)
 
 * `SPI0 CLK` - SPI0 clock line connected to NanoPi
 * `SPI0 MOSI` - SPI0 "master output slave input" line connected to NanoPi
@@ -416,7 +416,7 @@ and CortexM0 interfaces:
 
 #### DyPers
 
-![](../../images/muxPi-dypers.png)
+![](../../images/muxPi-dypers.jpg)
 
 Dyper is a small, electromagnetic relay which is controllable by software. There
 are 2 dypers on MuxPi board. Each of them has two channels. Both channels are
@@ -431,14 +431,14 @@ Jumpers located at the rear side of double USB connector allow to disconnect
 this USB from ETH and connect to add-on connector. Details on this topic are
 covered in jumpers section.
 
-![](../../images/muxPi-eth.png)
+![](../../images/muxPi-eth.jpg)
 
 #### USB-M
 
 This is USB connector dedicated to mobile devices from Samsung company. This
 connector has controllable Vbus line and also controllable ID line.
 
-![](../../images/muxPi-usb-m.png)
+![](../../images/muxPi-usb-m.jpg)
 
 More information about this type of interface, it's capabilities and example of
 flashing smartphone can be found [here][usb-m].
@@ -447,7 +447,7 @@ flashing smartphone can be found [here][usb-m].
 
 This connector is used to connect microSD card, put into MuxPi, to a DUT.
 
-![](../../images/muxPi-sd.png)
+![](../../images/muxPi-sd.jpg)
 
 This connector requires IDC-uSD cable adapter:
 
@@ -496,7 +496,7 @@ User can simply open SSH connection by (password: `fa`):
 
 #### User interface
 
-![](../../images/muxPi-user-ui.png)
+![](../../images/muxPi-user-ui.jpg)
 
 Features operable directly via NanoPi GPIOs:
 

@@ -1,6 +1,6 @@
 # RTE elements
 
-![](../../../images/rte-v1.1.0-interface-desc.png)
+![](../../../images/rte-v1.1.0-interface-desc.jpg)
 
 * **UART0 header** - 1x3 Orange Pi Zero system debug output and console
   (pins: `RX`, `TX`, `GND`).
@@ -44,7 +44,7 @@
 
 ### RteCtrl: Web interface
 
-![](../../../images/rte-rest-api-interface.png)
+![](../../../images/rte-rest-api-interface.jpg)
 
 **RteCtrl** is a REST API controller used for RTE board. It comes with meta-rte
 operating system and starts automatically on port `8000` without the necessity

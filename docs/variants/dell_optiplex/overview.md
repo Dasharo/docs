@@ -10,7 +10,7 @@ documentation._
 -->
 
 <center>
-![](../../images/dell_optiplex_9010.png)
+![](../../images/dell_optiplex_9010.jpg)
 </center>
 
 Dell OptiPlex 7010/9010 SFF is small SOHO desktop computer sometimes used as

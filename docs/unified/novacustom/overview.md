@@ -9,7 +9,7 @@
     - [NS51 series](https://configurelaptop.eu/ns51-series/)
     - [NS70 series](https://configurelaptop.eu/ns70-series/)
 
-    ![](/images/NS51-front-1.png)
+    ![](/images/NS51-front-1.jpg)
 
 === "NV4x ADL"
     The `NovaCustom NV4x 12th Gen` section is related to the one physical
@@ -17,7 +17,7 @@
 
     - [NV41 series](https://configurelaptop.eu/nv41-series/)
 
-    ![](/images/NV4x-front-1.png)
+    ![](/images/NV4x-front-1.jpg)
 
 === "NS5x TGL"
     The `NovaCustom NS5x/7x 11th Gen` section is related to the two physical
@@ -26,7 +26,7 @@
     - [NS51 series](https://configurelaptop.eu/ns51-series/)
     - [NS70 series](https://configurelaptop.eu/ns70-series/)
 
-    ![](/images/NS51-front-1.png)
+    ![](/images/NS51-front-1.jpg)
 
 === "NV4x TGL"
     The `NovaCustom NV4x 11th Gen` section is related to the one physical
@@ -34,7 +34,7 @@
 
     - [NV41 series](https://configurelaptop.eu/nv41-series/)
 
-    ![](/images/NV4x-front-1.png)
+    ![](/images/NV4x-front-1.jpg)
 
 For more information on the hardware, please refer to the references in above
 links.

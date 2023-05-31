@@ -23,7 +23,7 @@ RTE.
 
 1. Localize the flash chip.
 
-    ![](../../../images/ns5x_7x_without_bottom_cover.png)
+    ![](../../../images/ns5x_7x_without_bottom_cover.jpg)
 
 1. Take the WSON8 probe and locate the white dot on the needles side. The dot
     indicates the first reference pin that should be connected to the pin on the
@@ -37,7 +37,7 @@ RTE.
 
     - Top view of flash chip:
 
-    ![](../../../images/rte-v1.1.0-flash_chip_NS50_70PU.png)
+    ![](../../../images/rte-v1.1.0-flash_chip_NS50_70PU.jpg)
 
     - Table with all required connections:
 
