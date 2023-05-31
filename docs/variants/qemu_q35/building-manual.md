@@ -96,7 +96,6 @@ edk2/Build/Ovmf/RELEASE_GCC5/FV/OVMF_CODE.fd
 edk2/Build/Ovmf/RELEASE_GCC5/FV/OVMF_VARS.fd
 ```
 
-
 For debug build use:
 
 ```bash
