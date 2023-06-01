@@ -20,6 +20,7 @@ Procedure for tested platform: `QEMU Q35 Machine`
 | 6.   | [Windows booting][WBT]                            | WBT           | All                                  |
 | 7.   | [Qubes OS Support][QBS]                           | QBS           | QBS001.001, QBS001.002               |
 | 8.   | [CPU status][CPU]                                 | CPU           | All                                  |
+| 9.   | [UEFI Setup password][PSW]                        | PSW           | All                                  |
 
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
@@ -28,6 +29,7 @@ Procedure for tested platform: `QEMU Q35 Machine`
 [WBT]: ../../unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
 [QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
+[PSW]: ../../unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
 
 ## Module: Dasharo security
