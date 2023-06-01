@@ -49,7 +49,7 @@ If you have a GitHub account, you can help us in multiple ways:
 * Follow out organizations: [Dasharo](https://github.com/Dasharo),
   [3mdeb](https://github.com/3mdeb)
 * Give a star to repositories you like
-* If you want to contribute, refer to [dasharo contribution](index.md#dasharo-contribution)
+* If you want to contribute, refer to [dasharo contribution](newcomers.md#dasharo-contribution)
 * Report issues, your test results, and feature ideas in
   [dasharo-issues](https://github.com/Dasharo/dasharo-issues)
 
@@ -71,14 +71,14 @@ that works for you.
 Buy the Dasharo Supporters Entrance subscription if you own/use/buy a machine
 running Dasharo firmware:
 
-* [1-year subcription](https://3mdeb.com/shop/open-source-hardware/subscription-for-dasharo-compatible-with-msi-pro-z-690a-ddr4/)
-* [2-year subscription](https://3mdeb.com/shop/open-source-hardware/2-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
-* [3-year subscription](https://3mdeb.com/shop/open-source-hardware/3-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
+* [1-year subcription](https://shop.3mdeb.com/shop/open-source-hardware/subscription-for-dasharo-compatible-with-msi-pro-z-690a-ddr4/)
+* [2-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/2-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
+* [3-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/3-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
 
 Or buy the hardware including the subscriptions from us, e.g.:
 
-* [MSI PRO Z690-A DDR4 motherboard with Dasharo Supporters Entrance](https://3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-motherboard/)
-* [MSI PRO Z690-A DDR4 with Dasharo Supporters Entrance – Full PC Build](https://3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-full-pc-build/)
+* [MSI PRO Z690-A DDR4 motherboard with Dasharo Supporters Entrance](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-motherboard/)
+* [MSI PRO Z690-A DDR4 with Dasharo Supporters Entrance – Full PC Build](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-full-pc-build/)
 * or other platforms
 
 As a Dasharo Supporter you will get:
@@ -172,10 +172,10 @@ $13 million dollars a year in full transparency.
 ### Purchasing merchandise
 
 We're excited to offer a range of [Dasharo merchandise
-products](https://3mdeb.com/product-category/merchandise/) to help support our
-open-source firmware distribution project. By purchasing items such as t-shirts
-and mugs, you can support Dasharo and help us continue developing and improving
-the firmware.
+products](https://shop.3mdeb.com/product-category/merchandise/) to help support
+our open-source firmware distribution project. By purchasing items such as
+t-shirts and mugs, you can support Dasharo and help us continue developing and
+improving the firmware.
 
 Our online shop makes browsing and ordering merchandise easy, and we offer fast
 shipping to get your items to you quickly. Whether you're looking for a new
