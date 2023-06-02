@@ -17,10 +17,10 @@ for all platforms of the VP46XX family.
 | 5.   | [NVMe support][NVM]                   | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                    | CLG           | All                                  |
 | 7.   | [Custom boot menu key][CBK]           | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]        | USB           | All                                  |
+| 8.   | [USB HID and MSC Support][USB]        | USB           | USB001.XXX and USB002.XXX            |
 | 9.   | [FreeBSD support][BSD]                | BSD           | All                                  |
 | 10.  | [Debian Stable and Ubuntu LTS support][LBT]  | LBT         | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-| 11.  | [USB-C/Thunderbolt][UTC]              | UTC           | UTC004.001, UTC004.001               |
+| 11.  | [USB-C/Thunderbolt][UTC]              | UTC           | UTC004.001, UTC004.002               |
 | 12.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | ALL                                  |
 | 13.  | [eMMC support][MMC]                   | MMC           | MMC001.001                           |
 | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
@@ -67,12 +67,14 @@ for all platforms of the VP46XX family.
 
 | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                    | TPM           | Without TPM001.001 and TPM002.001    |
+| 1.   | [TPM Support][TPM]            | TPM           | Without TPM001.001,TPM002.001 and TPM003.001 |
 | 2.   | [Verified Boot support][VBO]          | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]          | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]            | SBO           | All                                  |
 | 5.   | [ME disable/neuter support][MNE]      | MNE           | MNE004.001                           |
 | 6.   | [BIOS lock support][BLS]              | BLS           | All                                  |
+| 7.   | [USB stack enable/disable][USS]       | USS           | All                                  |
+| 8.   | [SMM BIOS write protection][SMM]      | SMM           | All                                  |
 
 > Note: in Dasharo compatible with Protectli VP46xx ME is soft-disabled by
 > default - no additional option for ME disabling is available in the Setup
@@ -84,6 +86,8 @@ for all platforms of the VP46XX family.
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+[USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 
 ## Module: Dasharo performance
 
@@ -91,7 +95,7 @@ for all platforms of the VP46XX family.
 |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM] | CBMEM         | All                            |
 | 2.   | [CPU temperature measure][CPT]        | CPT           | All                                  |
-| 3.   | [CPU frequency measure][CPF]          | CPF           | All                                  |
+| 3.   | [CPU frequency measure][CPF]          | CPF           | Without CPU003.XXX and CPU005.XXX    |
 | 4.   | [Platform stability][STB]             | STB           | All                                  |
 | 5.   | [Ubuntu booting performance test][BUB] | BUB           | All                                 |
 | 6.   | [Debian booting performance test][BDE] | BDE           | All                                 |
