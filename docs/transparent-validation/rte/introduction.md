@@ -20,7 +20,7 @@ applications are:
 
 ## Where to buy?
 
-**RTE** can be also bought in our [3mdeb shop](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/).
+**RTE** can be also bought in our [3mdeb shop](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/).
 
 Full Remote Testing Environment set includes:
 

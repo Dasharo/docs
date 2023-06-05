@@ -14,5 +14,5 @@ adapter][shop1], like in the [muxPi product][shop2].
 
 ![](./../../images/SD-Wire.png)
 
-[shop1]: https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/muxsd-adapter/
-[shop2]: https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/muxpi/
+[shop1]: https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/muxsd-adapter/
+[shop2]: https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/muxpi/

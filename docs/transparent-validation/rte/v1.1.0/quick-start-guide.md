@@ -8,7 +8,7 @@ common preparation of RTE without listed functions.
 
 ## Prerequisites
 
-* [RTE board](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
+* [RTE board](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
     (this document is based on v1.1.0)
 * Micro-USB 5V 2.5A power supply
 * Orange Pi

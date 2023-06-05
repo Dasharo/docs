@@ -98,7 +98,7 @@ option to connect a TPM, we use the header for that purpose.
 IMPORTANT: Use only TPM modules which match their pinout with the board's
 header! Using a spider web connection degrades the signal quality to the point
 where CPU cannot properly talk to TPM via LPC bus. Tested with
-[PC Engines TPM module](https://3mdeb.com/shop/modules/tpm-2-0/) and failed to
+[PC Engines TPM module](https://shop.3mdeb.com/shop/modules/tpm-2-0/) and failed to
 succeed this way. Designing and producing proper TPM header and/or reliable
 adapter, could solve this problem. The [TwPM
 project](https://twpm.dasharo.com/) could help here in the future.
@@ -262,4 +262,4 @@ to the [Dasharo Newsletter](https://newsletter.3mdeb.com/subscription/wwL90UkXP)
 ![](/images/kgpe_2.jpg)
 ![](/images/kgpe_3.jpg)
 
-[flashchip-adapter]: https://3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/
+[flashchip-adapter]: https://shop.3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/
