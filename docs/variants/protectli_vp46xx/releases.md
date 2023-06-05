@@ -25,7 +25,8 @@ Release version v1.1.0 is currently only available for the VP4670 platform.
 
 ### Changed
 
-- Reverted to use FSP GOP for graphics initialization as it caused problems with Windows 11 display on VP4670
+- Reverted to use FSP GOP for graphics initialization as it caused problems with
+  Windows 11 display on VP4670
 - Switched to use driver for IT8784E Super I/O, which is present on the boards
 - CPU power limits increased from baseline to performance
 - [Updating from v1.0.x requires flashing the WP_RO recovery partition](https://docs.dasharo.com/variants/protectli_vp46xx/firmware-update/#updating-to-dasharo-v1018-or-v1019-or-v110)
