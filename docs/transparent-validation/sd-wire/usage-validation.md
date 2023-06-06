@@ -22,7 +22,8 @@ To prepare the environment reproduce the following steps:
         ```bash
         # Ubuntu/Debian:
         dpkg -L libftdi1-dev
-
+        ```
+        ```bash
         # Fedora/Red Hat:
         dnf list installed | grep libftdi-devel
         ```
@@ -35,7 +36,8 @@ To prepare the environment reproduce the following steps:
         ```bash
         # Ubuntu/Debian:
         dpkg -L libpopt-dev
-
+        ```
+        ```bash
         # Fedora/Red Hat:
         dnf list installed | grep popt-devel
         ```
@@ -62,7 +64,8 @@ To prepare the environment reproduce the following steps:
         ```bash
         # Ubuntu/Debian:
         sudo apt-get install libftdi1-dev
-
+        ```
+        ```bash
         # Fedora/Red Hat:
         sudo dnf install libftdi-devel
         ```
@@ -73,7 +76,8 @@ To prepare the environment reproduce the following steps:
         ```bash
         # Ubuntu/Debian:
         sudo apt-get install libpopt-dev
-
+        ```
+        ```bash
         # Fedora/Red Hat:
         sudo dnf install popt-devel
         ```
@@ -84,7 +88,8 @@ To prepare the environment reproduce the following steps:
         ```bash
         # Ubuntu/Debian:
         sudo apt-get install cmake
-
+        ```
+        ```bash
         # Fedora/Red Hat:
         sudo dnf install cmake
         ```
