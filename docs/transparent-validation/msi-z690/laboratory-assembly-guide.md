@@ -128,6 +128,7 @@ The below section of the documentation is based on the
 
     web_server:
       port: 80
+      reboot_timeout: 0s
     ```
 
 1. Run the docker container in the folder containing created `.yaml`
