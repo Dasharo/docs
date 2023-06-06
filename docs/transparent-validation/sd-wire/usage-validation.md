@@ -15,104 +15,21 @@ To prepare the environment reproduce the following steps:
     git clone https://git.tizen.org/cgit/tools/testlab/sd-mux
     ```
 
-2. Check whether the installation requirements for sd-mux are met:
-    * libftdi1 1.4 development library is installed. To do this, open the
-       terminal and type the following command:
+1. Install all needed dependencies:
 
-        ```bash
-        # Ubuntu/Debian:
-        dpkg -L libftdi1-dev
-        ```
-        ```bash
-        # Fedora/Red Hat:
-        dnf list installed | grep libftdi-devel
-        ```
+    Ubuntu/Debian:
 
-        If the library is installed, after typing the above command you will see
-        information about the paths to the library components.
-    * popt development library is installed. To do this, open the terminal and
-       type the following command:
+    ```bash
+    sudo apt-get install libftdi1-dev libpopt-dev cmake
+    ```
 
-        ```bash
-        # Ubuntu/Debian:
-        dpkg -L libpopt-dev
-        ```
-        ```bash
-        # Fedora/Red Hat:
-        dnf list installed | grep popt-devel
-        ```
+    Fedora/Red Hat:
 
-        If the library is installed, after typing the above command you will see
-        information about the paths to the library components.
-    * cmake binary tool is installed. To do this, open the terminal and type
-       the following command:
+    ```bash
+    sudo dnf install libftdi-devel popt-devel cmake gcc gcc-c++
+    ```
 
-        ```bash
-        cmake --version
-        ```
-
-        If the tool is installed, after typing the above command you will see
-        information about the installed on your computer cmake version.
-
-    If any above-mentioned requirements are not met - go to point 3. If they are
-    met - go to point 4.
-
-3. Install missing libraries and/or tools:
-    * libftdi1 1.4 development library. To do this, open the terminal and type
-       the following command:
-
-        ```bash
-        # Ubuntu/Debian:
-        sudo apt-get install libftdi1-dev
-        ```
-        ```bash
-        # Fedora/Red Hat:
-        sudo dnf install libftdi-devel
-        ```
-
-    * popt development library. To do this, open the terminal and type the
-       following command:
-
-        ```bash
-        # Ubuntu/Debian:
-        sudo apt-get install libpopt-dev
-        ```
-        ```bash
-        # Fedora/Red Hat:
-        sudo dnf install popt-devel
-        ```
-
-    * cmake binary tool. To do this, open the terminal and type the following
-        command:
-
-        ```bash
-        # Ubuntu/Debian:
-        sudo apt-get install cmake
-        ```
-        ```bash
-        # Fedora/Red Hat:
-        sudo dnf install cmake
-        ```
-
-    * gcc GNU Compiler Collection. To do this, open the terminal and type
-        the following
-        command:
-
-        ```bash
-        # Fedora/Red Hat:
-        sudo dnf install gcc
-        ```
-
-    * gcc-c++ GNU Compiler Collection C++. To do this, open the terminal and
-        type the following
-        command:
-
-        ```bash
-        # Fedora/Red Hat:
-        sudo dnf install gcc-c++
-        ```
-
-4. Enter into sd-mux project directory and reproduce the following steps to
+1. Enter into sd-mux project directory and reproduce the following steps to
     build project:
     * open directory in terminal
     * create 'build' directory by the following command:
@@ -134,7 +51,7 @@ To prepare the environment reproduce the following steps:
         make
         ```
 
-5. In the above-described directory (`sd-mux/build`) run the following command to
+1. In the above-described directory (`sd-mux/build`) run the following command to
     build binary:
 
     ```bash
