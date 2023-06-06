@@ -43,7 +43,6 @@ Release version v1.1.0 is currently only available for the VP4670 platform.
 ### Known issues
 
 - [Popup with information about recovery mode is still displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/320)
-- [Unwanted reset of BIOS settings](https://github.com/Dasharo/dasharo-issues/issues/365)
 
 ### Binaries
 
