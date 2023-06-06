@@ -20,7 +20,11 @@ To prepare the environment reproduce the following steps:
        terminal and type the following command:
 
         ```bash
+        # Ubuntu/Debian:
         dpkg -L libftdi1-dev
+
+        # Fedora/Red Hat:
+        dnf list installed | grep libftdi-devel
         ```
 
         If the library is installed, after typing the above command you will see
@@ -29,7 +33,11 @@ To prepare the environment reproduce the following steps:
        type the following command:
 
         ```bash
+        # Ubuntu/Debian:
         dpkg -L libpopt-dev
+
+        # Fedora/Red Hat:
+        dnf list installed | grep popt-devel
         ```
 
         If the library is installed, after typing the above command you will see
@@ -52,21 +60,51 @@ To prepare the environment reproduce the following steps:
        the following command:
 
         ```bash
+        # Ubuntu/Debian:
         sudo apt-get install libftdi1-dev
+
+        # Fedora/Red Hat:
+        sudo dnf install libftdi-devel
         ```
 
     * popt development library. To do this, open the terminal and type the
        following command:
 
         ```bash
+        # Ubuntu/Debian:
         sudo apt-get install libpopt-dev
+
+        # Fedora/Red Hat:
+        sudo dnf install popt-devel
         ```
 
     * cmake binary tool. To do this, open the terminal and type the following
         command:
 
         ```bash
+        # Ubuntu/Debian:
         sudo apt-get install cmake
+
+        # Fedora/Red Hat:
+        sudo dnf install cmake
+        ```
+
+    * gcc GNU Compiler Collection. To do this, open the terminal and type
+        the following
+        command:
+
+        ```bash
+        # Fedora/Red Hat:
+        sudo dnf install gcc
+        ```
+
+    * gcc-c++ GNU Compiler Collection C++. To do this, open the terminal and
+        type the following
+        command:
+
+        ```bash
+        # Fedora/Red Hat:
+        sudo dnf install gcc-c++
         ```
 
 4. Enter into sd-mux project directory and reproduce the following steps to
