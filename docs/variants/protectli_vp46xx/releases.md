@@ -14,6 +14,55 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
 
+## v1.1.0 - 2023-06-05
+
+Release version v1.1.0 is currently only available for the VP4670 platform.
+
+### Added
+
+- [USB stack and mass storage enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
+- [SMM BIOS write protection enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+
+### Changed
+
+- Reverted to use FSP GOP for graphics initialization as it caused problems with
+  Windows 11 display on VP4670
+- Switched to use driver for IT8784E Super I/O, which is present on the boards
+- CPU power limits increased from baseline to performance
+- [Updating from v1.0.x requires flashing the WP_RO recovery partition](https://docs.dasharo.com/variants/protectli_vp46xx/firmware-update/#updating-to-dasharo-v1018-or-v1019-or-v110)
+- [Firmware version v1.1.x are signed with a new key](https://asciinema.org/a/577551)
+
+### Fixed
+
+- [Booting problems with Ubuntu 22.04](https://github.com/Dasharo/dasharo-issues/issues/370)
+- [Low CPU frequency values](https://github.com/Dasharo/dasharo-issues/issues/369)
+- Disabled C states deeper than C1 on VP4670 to fix Proxmox booting issue
+- [Protectli VP4670 - windows crashes after installing updates](https://github.com/Dasharo/dasharo-issues/issues/302)
+- [The inconvenience of using external headsets VP46XX](https://github.com/Dasharo/dasharo-issues/issues/167)
+
+### Known issues
+
+- [Popup with information about recovery mode is still displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/320)
+
+### Binaries
+
+[protectli_vp4670_v1.1.0.rom][protectli_vp4670_v1.1.0.rom_file]{.md-button}
+[sha256][protectli_vp4670_v1.1.0.rom_hash]{.md-button}
+[sha256.sig][protectli_vp4670_v1.1.0.rom_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/577551)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on c6ee1509da revision dcc5f2e2](https://github.com/Dasharo/coreboot/tree/dcc5f2e2)
+- [edk2 based on 7f90b9cd revision 19bf14b4](https://github.com/Dasharo/edk2/tree/19bf14b4)
+- [iPXE based on 6ba671ac revision 6ba671ac](https://github.com/ipxe/ipxe/tree/6ba671ac)
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[protectli_vp4670_v1.1.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom
+[protectli_vp4670_v1.1.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom.sha256
+[protectli_vp4670_v1.1.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom.sha256.sig
+
 ## v1.0.19 - 2022-12-08
 
 ### Changed
