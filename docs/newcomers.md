@@ -113,7 +113,7 @@ thread with information about change in the commit
 * template: `Fixed: <link to commit>`
 * example: Fixed [0a2a4ee](https://github.com/Dasharo/docs/pull/450/commits/0a2a4eecf9dc5bce1b3cc2edfa25046245e41ee2)
 
-### Dasharo Matrix Space
+## Dasharo Matrix Space
 
 [Matrix](https://matrix.org/) is a communicator used at Dasharo. If you want
 quick answers it's best to join our matrix space and talk to us there.
