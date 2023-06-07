@@ -16,7 +16,7 @@ applications are:
 * controlling GPIOs
 * power management for **Device Under Test**.
 
-![](../../images/rte-v1.1.0-trans.png)
+![](../../images/rte-v1.1.0-trans.jpg)
 
 ## Where to buy?
 

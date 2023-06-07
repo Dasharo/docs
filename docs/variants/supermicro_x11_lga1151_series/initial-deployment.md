@@ -49,13 +49,13 @@ To boot from the iPXE image, please do the following:
 1. Select the floppy image through Browse button:
 
     <center>
-    ![](../../images/ipxe_upload.png)
+    ![](../../images/ipxe_upload.jpg)
     </center>
 
 1. Upload image to the BMC in the Virtual Media panel, by clicking `Upload`:
 
     <center>
-    ![](../../images/ipxe_uploaded.png)
+    ![](../../images/ipxe_uploaded.jpg)
     </center>
 
 1. Go to `Remote Control -> iKVM/HTML5` and start `iKVM/HTML5` remote control

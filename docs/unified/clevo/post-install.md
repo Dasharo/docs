@@ -75,7 +75,7 @@ install additional Nvidia drivers.
 1. (Optional) For power saving while the card is not in use, enable On-Demand
    mode in NVIDIA Control Panel:
 
-![](/images/nv4x_nvidia_panel.png){ class="center" }
+![](/images/nv4x_nvidia_panel.jpg){ class="center" }
 
 ### Suspend fix for SATA disks
 

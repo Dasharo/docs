@@ -18,8 +18,8 @@ To prepare the stand for flashing follow the steps described below:
 
 1. Connect the wire cables to the Pomona clip.
 
-    ![](../../images/protectli_recovery/pomona_clip.png)
-    ![](../../images/protectli_recovery/pomona_clip_with_cables.png)
+    ![](../../images/protectli_recovery/pomona_clip.jpg)
+    ![](../../images/protectli_recovery/pomona_clip_with_cables.jpg)
 
 1. Connect the Pomona clip to the [SPI header](../../transparent-validation/rte/v1.1.0/specification.md)
    on RTE.
@@ -33,12 +33,12 @@ To prepare the stand for flashing follow the steps described below:
     | MISO       | pin 2 (MISO) |
     | MOSI       | pin 8 (MOSI) |
 
-    ![](../../images/protectli_recovery/pomona_clip_with_rte.png)
+    ![](../../images/protectli_recovery/pomona_clip_with_rte.jpg)
 
 1. Completely remove the motherboard from the platform cover.
 
-    ![](../../images/protectli_recovery/vp2410_disassembly.png)
-    ![](../../images/protectli_recovery/vp2410_location_of_flash_chip.png)
+    ![](../../images/protectli_recovery/vp2410_disassembly.jpg)
+    ![](../../images/protectli_recovery/vp2410_location_of_flash_chip.jpg)
 
     > If there is little thermal paste on the CPU, apply it before reassembling
     > the motherboard to the platform cover.
@@ -46,8 +46,8 @@ To prepare the stand for flashing follow the steps described below:
 1. Match pin 1(CS) on the Pomona clip with the first pin of the one of flash
    chip, marked with a small dot engraved on the chip.
 
-    ![](../../images/protectli_recovery/flash_chip.png)
-    ![](../../images/protectli_recovery/pomona_clip_connected_to_flash_chip.png)
+    ![](../../images/protectli_recovery/flash_chip.jpg)
+    ![](../../images/protectli_recovery/pomona_clip_connected_to_flash_chip.jpg)
 
 ## Firmware flashing
 
@@ -91,7 +91,7 @@ To flash firmware follow the steps described below:
     1. Disconnect the CMOS battery, wait at least 10 seconds and connect again.
     1. Short the two pins from the CMOS header for at least 10 seconds.
 
-        ![](../../images/protectli_recovery/vp2410_location_of_CMOS_header.png)
+        ![](../../images/protectli_recovery/vp2410_location_of_CMOS_header.jpg)
 
 1. Turn on the platform by connecting the power supply.
 

@@ -36,9 +36,9 @@ To add a new request using the web service:
 3. When you are ready to send the request, click Send. Your request is created
    and awaits our response.
 
-![](../images/jsm_add_request.png)
+![](../images/jsm_add_request.jpg)
 
-![](../images/jsm_view_requests.png)
+![](../images/jsm_view_requests.jpg)
 
 ### Raising requests using email
 
@@ -64,7 +64,7 @@ also receive information on which requests will be resolved in the next release.
 
 The diagram below presents what the workflow of JSM requests looks like.
 
-![](../images/jsm_workflow.png)
+![](../images/jsm_workflow.jpg)
 
 * `Open` - your request is created and visible for us, but we didn't start
 working on it yet.

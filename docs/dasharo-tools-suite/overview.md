@@ -1,6 +1,6 @@
 # Dasharo Tools Suite
 
-![](./images/dts-logo.png)
+![](./images/dts-logo.jpg)
 
 ## Overview
 

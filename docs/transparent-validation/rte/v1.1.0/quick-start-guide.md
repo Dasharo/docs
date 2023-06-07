@@ -4,7 +4,7 @@ The canonical example of RTE usage is hooking it to some hardware for SPI
 flashing, power control and serial logs gathering. This document describes the
 common preparation of RTE without listed functions.
 
-![](../../../images/rte-v1.1.0-basic-rte.png)
+![](../../../images/rte-v1.1.0-basic-rte.jpg)
 
 ## Prerequisites
 

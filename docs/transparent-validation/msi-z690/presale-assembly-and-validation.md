@@ -34,15 +34,15 @@ working station.
     the board so as not to damage it, e.g. during the installation of RAM
     modules.
 
-    ![Motherboard](images/msi_z690_montage_motherboard.png)
+    ![Motherboard](images/msi_z690_montage_motherboard.jpg)
 
 1. To install the CPU on the motherboard first, open the CPU socket:
 
-    ![Demontage CPU socket](images/msi_z690_montage_cpu_1.png)
+    ![Demontage CPU socket](images/msi_z690_montage_cpu_1.jpg)
 
 1. Insert the processor carefully and tighten it with the dedicated mechanism:
 
-    ![Install CPU](images/msi_z690_montage_cpu_2.png)
+    ![Install CPU](images/msi_z690_montage_cpu_2.jpg)
 
 1. To install the CPU cooler, the parts shown in the picture below are
     necessary:
@@ -88,15 +88,15 @@ working station.
     hard to connect when the motherboard is screwed. The photo below shows the
     slots that should be filled in the next steps.
 
-    ![Slots](images/msi_z690_montage_slots.png)
+    ![Slots](images/msi_z690_montage_slots.jpg)
 
 1. Connect the fan from the CPU cooler to the slot marked `I`.
 
-    ![CPU cooler connection](images/msi_z690_montage_cpu_cooler_connection.png)
+    ![CPU cooler connection](images/msi_z690_montage_cpu_cooler_connection.jpg)
 
 1. Connect the cables from the front panel to the appropriately marked places:
 
-    ![Front Panel](images/msi_z690_montage_front_panel.png)
+    ![Front Panel](images/msi_z690_montage_front_panel.jpg)
 
     A detailed description of the connection cable marked `D` can be found in
     the [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
@@ -105,10 +105,10 @@ working station.
     to the pictures below:
 
     Connection from the inside:
-    ![In_connection](images/msi_z690_montage_connection_from_inside.png)
+    ![In_connection](images/msi_z690_montage_connection_from_inside.jpg)
 
     Connection from the outside:
-    ![Out_connection](images/msi_z690_montage_connection_from_outside.png)
+    ![Out_connection](images/msi_z690_montage_connection_from_outside.jpg)
 
 1. Connect the speaker to the slot marked before `E`:
 
@@ -120,7 +120,7 @@ working station.
     connection to the `G` and `H` slots and the cable marked RJ21 to connect the
     `F` slots.
 
-    ![Power Supply](images/msi_z690_montage_power_supply.png)
+    ![Power Supply](images/msi_z690_montage_power_supply.jpg)
 
 1. Connect the fan built into the enclosure to the indicated place:
 

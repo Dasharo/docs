@@ -26,7 +26,7 @@
 
 ## muxPi setup
 
-![](../../images/muxpi1.4_connection.png)
+![](../../images/muxpi1.4_connection.jpg)
 
 1. Attach NanoPi to muxPi connectors.
 1. Plug ETH cable to RJ45 NanoPi port.
@@ -36,7 +36,7 @@
 
 1. Make sure that jumpers are correctly set according to image:
 
-    ![](../../images/muxpi1.4_jumpers.png)
+    ![](../../images/muxpi1.4_jumpers.jpg)
 
 1. Connect to NanoPi using terminal:
 
@@ -157,7 +157,7 @@ From now on, muxPi's LCD should light on and display:
 
 1. Connect IDC-uSD adapter to the muxPI board:
 
-    ![](../../images/muxPi-sd.png)
+    ![](../../images/muxPi-sd.jpg)
 
 1. Insert the microSD card to microSD card slot accessible on the bottom side of
    muxPi board.

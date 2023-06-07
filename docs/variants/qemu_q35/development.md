@@ -101,7 +101,7 @@ FDF file.
 
 Below is the screenshot of the SATA_PASSWORD support in `Device Manager`.
 
-![SATA_PASSWORD](images/q35-dasharo-device-manager.png)
+![SATA_PASSWORD](images/q35-dasharo-device-manager.jpg)
 
 By default the `Dasharo System Features` are enabled in the
 **DasharoSystemFeatures.dec**. It describes the configuration of the platform.
@@ -124,4 +124,4 @@ In the above PCD definitions, please check column after PCD definition to find
 System Features. The below image shows the Dasharo System Features enabled for
 the QEMU Q35 machine.
 
-![DasharoSystemFeatures](images/q35-dasharo-features.png)
+![DasharoSystemFeatures](images/q35-dasharo-features.jpg)

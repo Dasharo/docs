@@ -64,7 +64,7 @@ perform the following steps:
         it.
     - Restart your system for changes to take effect.
 
-![](../images/checkbox_aut_login.png)
+![](../images/checkbox_aut_login.jpg)
 
 ## Download and install Checkbox
 

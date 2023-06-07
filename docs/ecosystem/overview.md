@@ -5,7 +5,7 @@
 Dasharo ecosystem contain multiple components on various levels of
 organization. This section overview role of every component.
 
-![](../images/ecosystem_overview.png)
+![](../images/ecosystem_overview.jpg)
 
 * Open Source Firmware Community - semi-organised collections of contributors
   to projects related to embedded firmware. Dasharo project contributors are

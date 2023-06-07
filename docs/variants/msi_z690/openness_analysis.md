@@ -132,9 +132,9 @@ divided by
 
 Comparison of pure code open-source vs closed-source.
 
-![](/images/openness_msi_bios.png)
+![](/images/openness_msi_bios.jpg)
 
-![](/images/openness_msi_bios_ami.png)
+![](/images/openness_msi_bios_ami.jpg)
 
 This was rather expected result.
 
@@ -150,17 +150,17 @@ AMI BIOS region statistics:
 
 Full BIOS region openness compared to AMI BIOS with data and free space:
 
-![](/images/openness_msi_bios_full.png)
+![](/images/openness_msi_bios_full.jpg)
 
-![](/images/openness_msi_bios_full_ami.png)
+![](/images/openness_msi_bios_full_ami.jpg)
 
 That mean
 
 Full image openness code only compared to AMI BIOS:
 
-![](/images/openness_msi_full_code.png)
+![](/images/openness_msi_full_code.jpg)
 
-![](/images/openness_msi_full_code_ami.png)
+![](/images/openness_msi_full_code_ami.jpg)
 
 Few conclusions from the above charts:
 
@@ -190,9 +190,9 @@ for data which is less than 1MB. This reduces the single copy of firmware from
 TCB!** More over, given the 50% share in size of open-source code, **Dasharo
 liberates BIOS in 75%!**
 
-![](/images/openness_msi_full.png)
+![](/images/openness_msi_full.jpg)
 
-![](/images/openness_msi_full_ami.png)
+![](/images/openness_msi_full_ami.jpg)
 
 Few conclusions:
 
