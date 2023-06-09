@@ -67,7 +67,7 @@ configuration we would appreciate an update.
 
     </center>
 
-=== "Memory HCL"
+=== "Memory HCL (09 Jun 2023)"
 
     Memory hardware Compatibility List presents the DIMM modules tested and verified
     to work with Dasharo in 3mdeb laboratory.
@@ -90,7 +90,7 @@ configuration we would appreciate an update.
       DIMMs populated configuration, &#10004; means successfully tested, &#10006;
       means platform did not boot with Dasharo, e.g. &#10004;/&#10004;/&#10004;
       means all configurations work, `-` means not tested
-    * Size: DIMM capacity in GB
+    * Size: DIMM capacity in MB
     * SPD profile: can be one of JEDEC(Standard) / XMP Profile #1 / XMP Profile #2.
       Profile data:
         - Type/speed: for example DDR4-2400 means DDR4 module clocked at max 2400MHz
@@ -104,18 +104,31 @@ configuration we would appreciate an update.
     > controller and reported by DMI/SMBIOS may be slightly lower than advertised
     > in the module specifications. This can vary based on the board design, CPU
     > and many other factors.
-
+    
     ### HCL list - MSI PRO Z690-A DDR4
 
-    | Manufacturer | Part Number | Size | Type | Speed | Configuration 1/2/4 | Dasharo version | Source |
-    |:------------:|:-----------:|:----:|:----:|:-----:|:-------------------:|:---------------:|:------:|
-    | Crucial Technology | CT8G4DFS8266.C8FJ | 8192 MB | DDR4 SDRAM | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
-    | Kingston | KF3600C17D4/8GX      | 8192 MB | DDR4 SDRAM | 2400 MT/s (PC4-19200) | &#10004/-/&#10004 | v1.0.0 | Dasharo HCL report |
-    | Kingston | KF3600C17D4/8GX      | 8192 MB | DDR4 SDRAM | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
-    | Patriot Memory | 4400 C19 Series | 8192 MB | DDR4 SDRAM | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
-    | Thermaltake Technology Co Ltd | RG26D408GX2-3600C18A | 8192 MB | DDR4 SDRAM | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+    <center>
 
-    1) Tested in 2x2 mixed configuration
+    | Manufacturer | Part Number | Size | Speed | Configuration 1/2/4 | Dasharo version | Source |
+    |:------------:|:-----------:|:----:|:-----:|:-------------------:|:---------------:|:------:|
+    | Corsair | CMK32GX4M2E3200C16 | 16384 MB | 2133 MT/s (PC4-17000) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
+    | Corsair | CMK64GX4M2E3200C16 | 32768 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+    | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+    | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+    | Crucial Technology | CT8G4DFS8266.C8FJ | 8192 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+    | Kingston | KF3200C16D4/16GX | 16384 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+    | Kingston | KF3200C16D4/16GX | 16384 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
+    | Kingston | KF3200C16D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
+    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
+    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.0.0 | Dasharo HCL report |
+    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
+    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
+    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1-rc4 | Dasharo HCL report |
+    | Patriot Memory | 4400 C19 Series | 8192 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
+    | Thermaltake Technology Co Ltd | RG26D408GX2-3600C18A | 8192 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+
+    </center>
+
 
 ### HCL list - MSI PRO Z690-A DDR5
 
