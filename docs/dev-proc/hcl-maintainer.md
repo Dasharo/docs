@@ -17,7 +17,8 @@ Please always sort table before publishing.
 In vim:
 
 - ++shift+v++ - to enter visual mode and mark whole range of entries.
-- type `:` and `sort` to run vim sort function on marked range.
+- type `:` and `sort u` to run vim sort function on marked range and leave only
+  unique lines.
 
 ### Github report
 
