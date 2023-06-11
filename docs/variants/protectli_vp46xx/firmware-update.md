@@ -9,7 +9,7 @@ The update process may be different, depending on the currently installed
 Dasharo firmware version.
 
 For simplicity of the update process, we recommend using
-[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
+[Dasharo Tools Suite](../../../dasharo-tools-suite/overview).
 
 Before starting the update procedure be sure to disable Dasharo BIOS Boot medium
 lock and Secure Boot:

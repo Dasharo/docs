@@ -36,10 +36,6 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-video
-  - redirects:
-      redirect_maps:
-        'common-coreboot-docs/dasharo_tools_suite.md': 'dasharo-tools-suite/overview.md'
-        'variants/clevo_nv41/ec_update.md': 'dasharo-tools-suite/documentation.md'
 nav:
   - 'Intro':
       - 'About Dasharo': index.md

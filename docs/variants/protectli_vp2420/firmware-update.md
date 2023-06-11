@@ -6,7 +6,7 @@ firmware please refer to the [Initial deployment](initial-deployment.md)
 documentation.
 
 For simplicity of the update process, we recommend using
-[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
+[Dasharo Tools Suite](../../../dasharo-tools-suite/overview).
 
 Before starting the update procedure be sure to disable Dasharo BIOS Boot medium
 lock, SMM BIOS Write Protection and Secure boot:
