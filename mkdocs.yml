@@ -352,6 +352,7 @@ nav:
               - 'Device power control operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
               - 'SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
               - 'Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
+              - 'BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -366,7 +367,6 @@ nav:
               - 'USB stack enable/disable': unified-test-documentation/dasharo-security/20S-usb-stack.md
               - 'Network stack enable/disable': unified-test-documentation/dasharo-security/20T-network-boot.md
               - 'Boot Guard support': unified-test-documentation/dasharo-security/207-boot-guard-support.md
-              - 'Reset to Defaults option': unified-test-documentation/dasharo-security/208-reset-to-defaults.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
               - 'Device boot measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md

@@ -1,4 +1,4 @@
-# Dasharo Security: Reset to Defaults option
+# Dasharo Compatibility: BIOS menu function keys
 
 ## Test cases common documentation
 
@@ -7,12 +7,12 @@
 1. Proceed with the
    [Generic test setup: firmware](../../generic-test-setup/#firmware).
 
-## RTD001.001 Reset to Defaults option
+## BMF001.001 Reset to Defaults option
 
 **Test description**
 
-This test aims to verify that the `F9` key feature in Dasharo System Features
-properly resets settings in each submenu.
+This test aims to verify that the `F9` key feature properly reset to Defaults
+all Dasharo System Features settings.
 
 **Test configuration data**
 
@@ -45,5 +45,6 @@ properly resets settings in each submenu.
 
 1. The `F9=Reset to Defaults` entry is displayed in each submenu of Dasharo
    System Features.
-1. After using the `F9` key, all Dasharo System Feature options should be set to
-   default.
+1. After using the `F9` key, all `Dasharo System Features` options should be set
+   to default. All options covered by this functionality can be found
+   [here](../../../../dasharo-menu-docs/dasharo-system-features/).
