@@ -112,7 +112,6 @@ subjected from before the release of the new binary.
 | 5.   | [ME disable/neuter support][MNE]           | MNE           | Without MNE006.001                   |
 | 6.   | [Reset to Defaults option][RTD]            | RTD           | All                                  |
 
-
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
