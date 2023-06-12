@@ -102,6 +102,7 @@ subjected before the release of the new binary.
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
 | 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE006.001                   |
+| 6.   | [Reset to Defaults option][RTD]              | RTD           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -109,6 +110,7 @@ subjected before the release of the new binary.
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
+[RTD]: ../../unified-test-documentation/dasharo-security/208-reset-to-defaults.md
 
 ## Module: Dasharo performance
 
