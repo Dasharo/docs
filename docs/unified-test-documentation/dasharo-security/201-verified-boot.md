@@ -487,3 +487,57 @@ command:
 
 After pressing `ENTER` the DUT should immediately move to the next stages of
 booting.
+
+## VBO011.001 Booting after flashing with valid binary (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify whether after flashing the DUT with the valid binary,
+the DUT will boot correctly from the default slot and no recovery popup will be
+displayed.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
+   to the DUT.
+1. Disable Secure Boot.
+1. Slot A is flashed with an binary with wrong vboot keys as in test case
+   `VBO008.001`.
+1. Obtain the correct `coreboot binary` appropriate for the DUT.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Flash firmware with valid binary by executing the following command:
+
+    ```bash
+    flashrom -p internal --fmap -i RW_SECTION_A -w [coreboot binary]
+    ```
+
+1. Reboot the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and execute the following command:
+
+    ```bash
+    sudo ./cbmem -c | grep -i recovery
+    ```
+
+**Expected result**
+
+1. Popup with information about recovery mode should not be displayed.
+1. The logs should indicate that vboot hasn't chosen to boot from the recovery
+   slot. Example output:
+
+    ```bash
+    VB2:vb2_check_recovery() Recovery reason from previous boot: 0x0 / 0x0
+    ```
