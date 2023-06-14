@@ -51,6 +51,7 @@ subjected before the release of the new binary.
 | 40.  | [Thunderbolt docking station NET interface][TDN]       | TDN           | All                                  |
 | 41.  | [USB-C docking station SD card reader][DSD]            | DSD           | All                                  |
 | 42.  | [BIOS menu function keys][BMF]                         | BMF           | All                                  |
+| 43.  | [Suspend mechanism switching S0ix/S3][SMS]             | SMS           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -94,6 +95,7 @@ subjected before the release of the new binary.
 [TDN]: ../../unified-test-documentation/dasharo-compatibility/355-thunderbolt-docking-station-net-interface.md
 [DSD]: ../../unified-test-documentation/dasharo-compatibility/356-docking-station-sd-card-reader.md
 [BMF]: ../../unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
+[SMS]: ../../unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
 
 ## Module: Dasharo security
 
