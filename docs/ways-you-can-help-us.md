@@ -148,7 +148,7 @@ Our company does not currently support payment in cryptocurrencies.
 
 While we understand that cryptocurrencies have gained popularity and recognition
 in recent years, we have chosen to retain our focus on conventional payment
-channels. 
+channels.
 
 We believe that by adhering to established payment methods, we can ensure a
 consistent and reliable payment process for our customers. This allows us to
