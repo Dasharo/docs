@@ -144,23 +144,15 @@ SWIFT: BIGBPLPW
 
 ### BTC and other crypto coins
 
-If you are concerned about the privacy of your donation as well as the fact how
-we would spend the money, then please consider Technology Commons Trust [Open
-Firmware Fund](https://technologycommons.org/OFF/).
+Our company does not currently support payment in cryptocurrencies.
 
-Addresses:
+While we understand that cryptocurrencies have gained popularity and recognition
+in recent years, we have chosen to retain our focus on conventional payment
+channels. 
 
-* Bitcoin:
-  [1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV](bitcoin:1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV?label=UOI-OFF&message=Donation%20to%20Open%20Firmware%20Fund)
-* Monero:
-  [89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ](monero:89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ)
-* PKT:
-  [pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v](pkt:pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v)
-
-If you want to contribute to other cryptocurrencies, please visit
-[OFF](https://technologycommons.org/OFF/) website for details about contact
-information. We are pretty sure the Technology Commons Trust team will find the
-way.
+We believe that by adhering to established payment methods, we can ensure a
+consistent and reliable payment process for our customers. This allows us to
+maintain a high level of security, accountability, and regulatory compliance.
 
 ### Open Collective
 
