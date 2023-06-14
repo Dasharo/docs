@@ -2,7 +2,7 @@
 
 ## Remote power control using ipmitool
 
-To remote control supermicro you can use ipmitool. 
+To remote control supermicro you can use ipmitool.
 
 ```bash
 ipmitool -H [bmc_ip] -U [bmc_username] -P [bmc_password] chassis power off
