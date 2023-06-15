@@ -150,6 +150,15 @@ While we understand that cryptocurrencies have gained popularity and recognition
 in recent years, we have chosen to retain our focus on conventional payment
 channels.
 
+This is due to financial compliance and EU regulation, which we cannot and don't
+want to handle at the current stage of company development. Those uncertain
+regulations create substantial attack vectors, which may lead to fiscal audits
+slowing down 3mdeb operations and Dasharo development.
+
+We should not delete the reference to Technology Commons Trust but move that to
+the donations part. If one would like to donate a bigger amount of
+cryptocurrency, it is possible through Technology Commons Trust.
+
 We believe that by adhering to established payment methods, we can ensure a
 consistent and reliable payment process for our customers. This allows us to
 maintain a high level of security, accountability, and regulatory compliance.
