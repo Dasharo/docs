@@ -32,12 +32,12 @@ the BIOS firmware is correctly recognised in the OS.
 
 1. Power on the DUT.
 1. Enter the BIOS setup using `BIOS_SETUP_KEY`.
-1. Inside the BIOS setup, navigate to `Dasharo System Features` -> 
+1. Inside the BIOS setup, navigate to `Dasharo System Features` ->
     `Power Management Options` -> `Platform Sleep Type` and choose the option
     `Suspend to Idle (S0ix)`.
 1. Press `F10` and confirm with `y` key to save selected settings.
 1. Select `reset` option to reboot the system.
-1. After the system reboots, log into the system by using the proper login and 
+1. After the system reboots, log into the system by using the proper login and
     password.
 1. Open a terminal window and execute the following command to confirm that
     Suspend to Idle (S0ix) mode is enabled and properly recognised in the OS:
@@ -45,6 +45,7 @@ the BIOS firmware is correctly recognised in the OS.
     ```bash
     sudo cat /sys/power/mem_sleep
     ```
+
 1. Note the results.
 
 **Expected result**
@@ -80,12 +81,12 @@ the BIOS firmware is correctly recognised in the OS.
 
 1. Power on the DUT.
 1. Enter the BIOS setup using `BIOS_SETUP_KEY`.
-1. Inside the BIOS setup, navigate to `Dasharo System Features` -> 
+1. Inside the BIOS setup, navigate to `Dasharo System Features` ->
     `Power Management Options` -> `Platform Sleep Type` and choose the option
     `Suspend to RAM (S3)`.
 1. Press `F10` and confirm with `y` key to save selected settings.
 1. Select `reset` option to reboot the system.
-1. After the system reboots, log into the system by using the proper login and 
+1. After the system reboots, log into the system by using the proper login and
     password.
 1. Open a terminal window and execute the following command to confirm that
     Suspend to RAM (S3) mode is enabled and properly recognised in the OS:
@@ -93,6 +94,7 @@ the BIOS firmware is correctly recognised in the OS.
     ```bash
     sudo cat /sys/power/mem_sleep
     ```
+
 1. Note the results.
 
 **Expected result**
