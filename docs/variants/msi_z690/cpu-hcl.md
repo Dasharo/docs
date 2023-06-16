@@ -161,13 +161,14 @@ configuration we would appreciate an update.
     issue](https://github.com/Dasharo/dasharo-issues/issues/462) would be
     addresed we decided to not update GPU HCL ourselves. We will merge PRs to
     GPU HCL, if following criteria (kudos to Zir Blazer) would be addresed:
-		* Card has to be installed on main metal 16x slot, and there shouldn't be
+
+    * Card has to be installed on main metal 16x slot, and there shouldn't be
       any other GPU except Intel integrated one if non-F CPU.
-		* Confirmation than Dasharo splash screen and Firmware menues were working.
+    * Confirmation than Dasharo splash screen and Firmware menues were working.
     * Actual GPU chip (PCI Vendor ID / Device ID).
     * Video Card model (Subsystem Vendor ID / Device ID).
     * Option ROM version.
-		* Secure Boot status (Enabled/Disabled, in case than there are Option ROM
+    * Secure Boot status (Enabled/Disabled, in case than there are Option ROM
       signing issues. This also means than the VBIOS should NOT be modded, factory
       original versions only)
 
