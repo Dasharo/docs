@@ -156,7 +156,7 @@ configuration we would appreciate an update.
     which is tested and verfied in 3mdeb laboratory - this information might be
     found in [Hardware Matrix](hardware-matrix.md) documentation.
 
-    __NOTE__: since we cannot extend following list based on automatic Dashro
+    __NOTE__: Since we cannot extend following list based on automatic Dasharo
     HCL reports parsing until [this
     issue](https://github.com/Dasharo/dasharo-issues/issues/462) would be
     addresed we decided to not update GPU HCL ourselves. We will merge PRs to
