@@ -1,35 +1,16 @@
-# CPU HCL
+# Hardware Compatiblity Lists
 
-## Contributing
+Following compatibility list is compiled thanks to community contribution and
+Dasharo Team work. Please note there are other good sources of information
+about compatibility like:
 
-* Use [Dasharo Tools Suite HCL
-  report](../../../dasharo-tools-suite/documentation/#hcl-report) to upload
-  report automatically.
-* Create new issue in [Dasharo issues
-  repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
-* Create PR directly to [Dasharo documentation
-  repository](https://github.com/Dasharo/docs).
-* [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690) your
-  `/proc/cpuinfo` or relevant information using following template:
-  ```text
-  CPU model:
-  Dasharo version:
-  ```
+- [OpenBenchmarking.org](https://openbenchmarking.org)
+- [linux-hardware.org](https://linux-hardware.org)
+- [bsd-hardwre.info](https://bsd-hardware.info/)
 
-* [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
-  as attachments outputs of following command:
-  ```bash
-  decode-dimms > decode-dimms.log 2> decode-dimms.err.log
-  ```
-  In email please include Dasharo version.
-  ```text
-  Dasharo version:
-  ```
-
-If you already have reported your results and you change some hardware
-configuration we would appreciate an update.
-
-## HCL lists
+Feel free to refer to above sources or [contact
+community](https://docs.dasharo.com/#community), if you can't find your
+hardware.
 
 === "CPU HCL (09 Jun 2023)"
 
@@ -139,37 +120,32 @@ configuration we would appreciate an update.
     </center>
 
 
-### HCL list - MSI PRO Z690-A DDR5
-
-| DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
-|:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
-| Kingston    | [KF556C40BB/8][6] |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
-| Crucial     | [CT8G48C40U5.M4A1/8][7] |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
-| ADATA       | [AD5U48008G-S][9] |8GB | 4800MT/s 40-40-40 1.1V | &#10004;/&#10004;/&#10004; |
-
-[1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
-[2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
-[3]: https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf
-[4]: https://www.pny.com/anarchy-x-ddr4-red?sku=MD16GK2D4320016AXR
-[5]: https://www.kingston.com/datasheets/KF436C18BBK2_64.pdf
-[6]: https://www.kingston.com/memory/gaming/kingston-fury-beast-ddr5-memory
-[7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
-[8]: https://www.kingston.com/datasheets/HX426C16FRK4_64.pdf
-[9]: https://www.adata.com/us/consumer/dram-module-ddr5-4800-u-dimm
-[10]: https://www.amazon.com/OLOy-Memory-288-Pin-Desktop-MD4U323216DJDA/dp/B0836NZHWR
+    ### HCL list - MSI PRO Z690-A DDR5
+    
+    | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
+    |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
+    | Kingston    | [KF556C40BB/8][6] |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
+    | Crucial     | [CT8G48C40U5.M4A1/8][7] |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
+    | ADATA       | [AD5U48008G-S][9] |8GB | 4800MT/s 40-40-40 1.1V | &#10004;/&#10004;/&#10004; |
+    
+    [1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
+    [2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
+    [3]: https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf
+    [4]: https://www.pny.com/anarchy-x-ddr4-red?sku=MD16GK2D4320016AXR
+    [5]: https://www.kingston.com/datasheets/KF436C18BBK2_64.pdf
+    [6]: https://www.kingston.com/memory/gaming/kingston-fury-beast-ddr5-memory
+    [7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
+    [8]: https://www.kingston.com/datasheets/HX426C16FRK4_64.pdf
+    [9]: https://www.adata.com/us/consumer/dram-module-ddr5-4800-u-dimm
+    [10]: https://www.amazon.com/OLOy-Memory-288-Pin-Desktop-MD4U323216DJDA/dp/B0836NZHWR
 
 === "GPU HCL"
-
-    GPU Hardware Compatibility List presents the GPUs tested and verified
-    to work with Dasharo by community. The following list does not include GPU
-    which is tested and verfied in 3mdeb laboratory - this information might be
-    found in [Hardware Matrix](hardware-matrix.md) documentation.
 
     __NOTE__: Since we cannot extend following list based on automatic Dasharo
     HCL reports parsing until [this
     issue](https://github.com/Dasharo/dasharo-issues/issues/462) would be
     addresed we decided to not update GPU HCL ourselves. We will merge PRs to
-    GPU HCL, if following criteria (kudos to Zir Blazer) would be addresed:
+    GPU HCL, if following criteria would be addresed:
 
     * Card has to be installed on main metal 16x slot, and there shouldn't be
       any other GPU except Intel integrated one if non-F CPU.
@@ -180,6 +156,11 @@ configuration we would appreciate an update.
     * Secure Boot status (Enabled/Disabled, in case than there are Option ROM
       signing issues. This also means than the VBIOS should NOT be modded, factory
       original versions only)
+
+    GPU Hardware Compatibility List presents the GPUs tested and verified
+    to work with Dasharo by community. The following list does not include GPU
+    which is tested and verfied in 3mdeb laboratory - this information might be
+    found in [Hardware Matrix](hardware-matrix.md) documentation.
 
     Legend:
 
@@ -209,3 +190,33 @@ Maintainer documentation](../../../dev-proc/hcl-maintainer).
 [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
 [2]: https://groups.google.com/g/qubes-users/c/lGOjuApLD_o/m/TBZN0PsXEgAJ
 [3]: https://github.com/Dasharo/docs/pull/329
+
+## Contributing
+
+* Use [Dasharo Tools Suite HCL
+  report](../../../dasharo-tools-suite/documentation/#hcl-report) to upload
+  report automatically.
+* Create new issue in [Dasharo issues
+  repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
+* Create PR directly to [Dasharo documentation
+  repository](https://github.com/Dasharo/docs).
+* [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690) your
+  `/proc/cpuinfo` or relevant information using following template:
+  ```text
+  CPU model:
+  Dasharo version:
+  ```
+
+* [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
+  as attachments outputs of following command:
+  ```bash
+  decode-dimms > decode-dimms.log 2> decode-dimms.err.log
+  ```
+  In email please include Dasharo version.
+  ```text
+  Dasharo version:
+  ```
+
+If you already have reported your results and you change some hardware
+configuration we would appreciate an update.
+
