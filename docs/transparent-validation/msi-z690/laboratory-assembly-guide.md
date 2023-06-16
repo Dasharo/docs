@@ -1,8 +1,9 @@
-# Laboratory stand dedicated to MSI PRO Z690-A assembly guide
+# Laboratory stand dedicated to MSI PRO Z690-A and Z790-P assembly guide
 
 ## Introduction
 
-This document describes the assembly procedure dedicated to the MSI PRO Z690-A
+This document describes the assembly procedure dedicated to the MSI PRO Z690-A /
+Z790-P
 testing stand.
 
 ## Prerequisites
@@ -10,7 +11,7 @@ testing stand.
 The below table contains information about all elements which are needed to
 create the testing stand.
 
-* MSI PRO Z690-A platform
+* MSI PRO Z690-A / Z790-P platform
 * [RTE v1.1.0](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 * Sonoff S20 type E
 * 4x standard female-female connection wire 2.54 mm raster
@@ -23,9 +24,9 @@ create the testing stand.
 The following subsections describe the method of preparing all the
 components of the laboratory stand.
 
-### MSI PRO Z690-A
+### MSI PRO Z690-A / Z790-P
 
-MSI PRO Z690-A platform should be prepared in accordance with the
+MSI PRO Z690-A / Z790-P platform should be prepared in accordance with the
 [Motherboard assembly](presale-assembly-and-validation.md#motherboard-assembly-only)
 documentation.
 
@@ -193,7 +194,7 @@ The following sections describe how to enable all of the following features:
 1. Connect the RTE J18 header to the platform JBD1 header as described in the
     table:
 
-    | RTE             | MSI PRO Z690-A                            |
+    | RTE             | MSI PRO Z690-A / Z790-P                   |
     |:---------------:|:-----------------------------------------:|
     | J18 pin 1 (GND) | JBD1 pin 1 (pin closer to JBAT1)          |
     | J18 pin 2 (RX)  | JBD1 pin 2 (pin further from JBAT1)       |
@@ -213,7 +214,7 @@ Connect SeaSonic FOCUS Plus Platinum to Sonoff.
 Connect the RTE J11 header to the platform JFP1 header as described in the
 table:
 
-| RTE            | Msi Z690                    |
+| RTE            | Msi Z690-A / Z790-P         |
 |:--------------:|:---------------------------:|
 | J11 pin 9      | JFP1 pin 6 (PWR_ON)         |
 | J11 pin 8      | JFP1 pin 7 (RST)            |
@@ -227,7 +228,7 @@ table:
 
 Connect the RTE SPI header to the platform as described in the table:
 
-| RTE SPI header      | MSI Z690-A                                           |
+| RTE SPI header      | MSI Z690-A / Z790-P                                  |
 |:-------------------:|:----------------------------------------------------:|
 | J7 pin 1 (Vcc)      | JTPM1 pin 1 (SPI Power)                              |
 | J7 pin 2 (GND)      | JTPM1 pin 7 (GND)                                    |
