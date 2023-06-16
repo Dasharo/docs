@@ -9,11 +9,20 @@
   repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
 * Create PR directly to [Dasharo documentation
   repository](https://github.com/Dasharo/docs).
-* [email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690) your
+* [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690) your
   `/proc/cpuinfo` or relevant information using following template:
-
   ```text
   CPU model:
+  Dasharo version:
+  ```
+
+* [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
+  as attachments outputs of following command:
+  ```bash
+  decode-dimms > decode-dimms.log 2> decode-dimms.err.log
+  ```
+  In email please include Dasharo version.
+  ```text
   Dasharo version:
   ```
 
