@@ -116,6 +116,7 @@ and Internet, then follow the steps below:
     to `Restart now` or `Retry`, so click them if something hasn't been
     installed yet, something has gone wrong or a restart is just required.
     The entire process may take up to 30 minutes.
+1. Repeat all steps until all updates have been installed.
 
 ### Suspend fix for SATA disks (Windows and Linux)
 
