@@ -28,6 +28,13 @@ Follow the steps below to set up a serial connection via ssh:
     linux /vmlinuz ro console=ttyS1,115200n8 earlyprintk=serial,ttyS1,115200n8
     ```
 
+1. Add the following lines to the `/etc/ssh/ssh_config` file on your machine:
+
+    ```bash
+    HostKeyAlgorithms = +ssh-rsa
+    PubkeyAcceptedAlgorithms = +ssh-rsa
+    ```
+
 1. Connect with BMC via ssh:
 
     ```bash
