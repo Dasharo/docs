@@ -1122,8 +1122,6 @@ This test verifies that the sleep hotkey works correctly.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Press the sleep hotkey once and note the result.
-1. Look at the power LED located next to the AC adapter plug, towards the front
-   end of the laptop.
 
 **Expected result**
 
@@ -1154,9 +1152,8 @@ This test verifies that the sleep hotkey works correctly.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Wait 30 seconds for the system to load fully.
 1. Press the sleep hotkey once and note the result.
-1. Look at the power LED located next to the AC adapter plug, towards the front
-   end of the laptop.
 
 **Expected result**
 
@@ -1251,6 +1248,7 @@ mode.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Wait 30 seconds for the system to load fully.
 1. Press the power button once and note the result.
 
 **Expected result**
@@ -1324,6 +1322,7 @@ system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Wait 30 seconds for the system to load fully.
 1. Close the lid and note the effect on the power LED.
 
 **Expected result**
