@@ -11,8 +11,9 @@ coreboot port on the NovaCustom NV4X laptop.
 
 ![](/images/novacustom_nv_ports_left_view.png)
 
-The graphics used are from pages 17-18 of the official service manual for the
-NV41MZ platform.
+The graphics used are from pages 17-18 of the
+[official service manual](https://novacustom.stackstorage.com/s/6mFpzU01I9UR94sI/en_US)
+for the NV41 platforms.
 
 ## NV41MZ
 

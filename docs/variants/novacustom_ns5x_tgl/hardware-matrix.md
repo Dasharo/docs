@@ -11,8 +11,9 @@ coreboot port on the NovaCustom NS51/NS70 laptops.
 
 ![](/images/novacustom_ns_ports_left_view.png)
 
-The graphics used are from pages 17-18 of the official service manual for the
-NS50PU platform.
+The graphics used are from pages 17-18 of the
+[official service manual](https://novacustom.stackstorage.com/s/s2zVcQyd004hRQJ/en_US?dir=%2FNS51%2FService%20Manual&node-id=233996)
+for the NS51/70 platforms.
 
 ## NS51
 
