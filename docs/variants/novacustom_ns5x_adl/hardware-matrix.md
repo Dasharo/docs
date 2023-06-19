@@ -5,6 +5,15 @@
 This document describes the hardware configurations used for validation of the
 coreboot port on the NovaCustom NS5x/7x laptops.
 
+## Ports specification
+
+![](/images/novacustom_ns_ports_right_view.png)
+
+![](/images/novacustom_ns_ports_left_view.png)
+
+The graphics used are from pages 17-18 of the official service manual for the
+NS50PU platform.
+
 ## NS5xPU
 
 | Component                      | Description                                      |
@@ -25,7 +34,8 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
+|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
 
 ## NS7xPU
@@ -48,5 +58,6 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
+|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |

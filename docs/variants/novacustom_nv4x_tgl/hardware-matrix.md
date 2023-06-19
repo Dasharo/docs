@@ -5,6 +5,15 @@
 This document describes the hardware configurations used for validation of the
 coreboot port on the NovaCustom NV4X laptop.
 
+## Ports specification
+
+![](/images/novacustom_nv_ports_right_view.png)
+
+![](/images/novacustom_nv_ports_left_view.png)
+
+The graphics used are from pages 17-18 of the official service manual for the
+NV41MZ platform.
+
 ## NV41MZ
 
 | Component                      | Description                                      |
@@ -25,7 +34,8 @@ coreboot port on the NovaCustom NV4X laptop.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
+|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
 
 ## NV41MB
@@ -49,5 +59,6 @@ coreboot port on the NovaCustom NV4X laptop.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
+|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
