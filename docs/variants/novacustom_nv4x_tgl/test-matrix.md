@@ -199,3 +199,6 @@ subjected from before the release of the new binary.
 | 1.   | [USB Type-A devices detection][SUD]               | SUD           | All                                  |
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
+| 4.   | [NET interface after coldboot/warmboot/reboot/suspend][NET] | NET | All                                  |
+
+[NET]: ../../unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
