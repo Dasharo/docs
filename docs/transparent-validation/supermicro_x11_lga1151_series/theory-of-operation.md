@@ -28,6 +28,10 @@ Follow the steps below to set up a serial connection via ssh:
     linux /vmlinuz ro console=ttyS1,115200n8 earlyprintk=serial,ttyS1,115200n8
     ```
 
+    > NOTE: If your Linux-based OS is QubesOS you should additionaly remove the
+      `plymouth.ignore-serial-consoles` phase to enable password disk
+      authentication via SOL
+
 1. Add the following lines to the `/etc/ssh/ssh_config` file on your machine:
 
     ```bash
