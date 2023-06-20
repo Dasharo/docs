@@ -19,10 +19,11 @@ mkdocs serve
 By default, it will host a local copy od documentation at:
 `http://0.0.0.0:8000/`.
 
-If the following error occures `OSError: [Errno 98] Address already in use`, try
-using a different address by running the command `mkdocs serve -a localhost:12345` (the number is random).
+If the following error occurs `OSError: [Errno 98] Address already in use`, try
+using a different address by running the command `mkdocs serve -a
+localhost:12345` (the number is random).
 
-It is very important at this point to verify that the pages you have changed
+It is crucial at this point to verify that the pages you have changed
 render correctly as HTML in local preview.
 
 ### Broken links checker
