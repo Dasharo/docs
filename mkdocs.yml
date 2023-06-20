@@ -36,6 +36,10 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-video
+  # This parameter excludes the listed pages from being added to the sitemap.
+  # This solves the problem of orphaned pages (pages that are in the site map,
+  # but there are no internal links to them).
+  # Read more: https://ahrefs.com/blog/orphan-pages/#how-to-fix-orphan-pages
   - exclude:
       glob:
         - dev-env/nix-dev-env.md
