@@ -352,6 +352,8 @@ nav:
               - 'Device power control operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
               - 'SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
               - 'Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
+              - 'BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
+              - 'NET interface check after coldboot/warmboot/reboot/suspend': unified-test-documentation/dasharo-compatibility/359-net-controller-after-coldboot-warmboot-reboot-suspend.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md

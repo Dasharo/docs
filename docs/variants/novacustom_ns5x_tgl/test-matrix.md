@@ -52,6 +52,8 @@ subjected before the release of the new binary.
 | 41.  | [Sign of life][SOL]                                    | SOL           | All                                  |
 | 42.  | [ME disable/neuter support][MNE]                       | MNE           | MNE001.001                           |
 | 43.  | [USB-C docking station SD card reader][DSD]            | DSD           | All                                  |
+| 44.  | [BIOS menu function keys][BMF]                         | BMF           | All                                  |
+| 46.  | [NET interface after coldboot/warmboot/reboot/suspend][NET] | NET      | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -96,6 +98,8 @@ subjected before the release of the new binary.
 [SOL]: ../../unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [DSD]: ../../unified-test-documentation/dasharo-compatibility/356-docking-station-sd-card-reader.md
+[BMF]: ../../unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
+[NET]: ../../unified-test-documentation/dasharo-compatibility/359-net-controller-after-coldboot-warmboot-reboot-suspend.md
 
 ## Module: Dasharo security
 
@@ -105,11 +109,13 @@ subjected before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                 | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
+| 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE006.001                   |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
+[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 
 ## Module: Dasharo performance
 
