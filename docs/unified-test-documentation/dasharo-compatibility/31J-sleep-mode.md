@@ -86,6 +86,7 @@ the OS.
 1. Charge the battery fully (note: due to the manufacturer's settings the
     maximum battery charge level is limited to 90%; also, the battery charging
     process can only be started if the current battery level is less than 80%).
+1. Wait 30 seconds for the system to load fully.
 1. Disconnect the power supply.
 1. Close the lid.
 1. Wake up the DUT in the following timestamps and note the battery level:
