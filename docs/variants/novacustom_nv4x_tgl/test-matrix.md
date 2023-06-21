@@ -56,6 +56,7 @@ subjected from before the release of the new binary.
 | 43.  | [NVIDIA Graphics support][NVI]                    | NVI           | All                                  |
 | 44.  | [USB-C docking station SD card reader][DSD]       | DSD           | All                                  |
 | 45.  | [BIOS menu function keys][BMF]                    | BMF           | All                                  |
+| 46.  | [Suspend mechanism switching S0ix/S3][SMS]             | SMS           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -102,6 +103,7 @@ subjected from before the release of the new binary.
 [NVI]: ../../unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
 [DSD]: ../../unified-test-documentation/dasharo-compatibility/356-docking-station-sd-card-reader.md
 [BMF]: ../../unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
+[SMS]: ../../unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
 
 ### Module: Dasharo security
 
