@@ -117,6 +117,7 @@ after performing a reboot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
