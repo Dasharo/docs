@@ -187,7 +187,7 @@ after performing suspension. The test is performed in multiple iterations.
 1. Execute the following command to suspend the system and automatically wake it
    up after 10 seconds:
 
-    ```
+    ```bash
     sudo fwts s3 --s3-sleep-delay=10
     ```
 
