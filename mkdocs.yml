@@ -386,6 +386,8 @@ nav:
               - 'pfSense (serial output) booting performance test': unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
               - 'pfSense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
               - 'Windows booting performance test': unified-test-documentation/dasharo-performance/416-windows-booting-performance-test.md
+          - 'Dasharo stability':
+              - 'M.2 Wi-fi': unified-test-documentation/dasharo-stability/02-m2-wi-fi.md
       - 'Roadmap': ecosystem/roadmap.md
       - 'Quality Principles': quality-principles/introduction.md
         # - 'Introduction':
