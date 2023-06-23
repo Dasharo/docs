@@ -24,7 +24,8 @@ for all platforms of the PT family.
 | 12. | [USB detection][UDT]                  | UDT           | All                                  |
 | 13. | [USB booting][UBT]                    | UBT           | All                                  |
 
-<!-- | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
+<!--
+| No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:----:|:--------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                     | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
@@ -50,7 +51,8 @@ for all platforms of the PT family.
 | 22.  | [pfSense support][PFS]                | PFS           | All                                  |
 | 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
 | 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
-| 25.  | [Ubuntu Server support][USS]          | USS           | All                                  | -->
+| 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
+-->
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -79,7 +81,8 @@ for all platforms of the PT family.
 [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
 [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
-<!-- ## Module: Dasharo security
+<!--
+## Module: Dasharo security
 
 | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
@@ -103,7 +106,8 @@ for all platforms of the PT family.
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 [USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
-[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md -->
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
+-->
 
 ## Module: Dasharo performance
 
@@ -116,7 +120,8 @@ for all platforms of the PT family.
 | 5.   | [Ubuntu booting performance test][BUB] | BUB           | All                                 |
 | 6.   | [Debian booting performance test][BDE] | BDE           | All                                 |
 
-<!-- | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
+<!--
+| No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM] | CBMEM         | All                            |
 | 2.   | [CPU temperature measure][CPT]        | CPT           | All                                  |
@@ -130,7 +135,8 @@ for all platforms of the PT family.
 | 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All               |
 | 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All               |
 | 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All               |
-| 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               | -->
+| 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               |
+-->
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
