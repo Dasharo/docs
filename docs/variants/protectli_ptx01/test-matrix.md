@@ -24,36 +24,6 @@ for all platforms of the PT family.
 | 12. | [USB detection][UDT]                  | UDT           | All                                  |
 | 13. | [USB booting][UBT]                    | UBT           | All                                  |
 
-<!--
-| No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
-|:----:|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [Memory HCL][HCL]                     | HCL           | All                                  |
-| 2.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
-| 3.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
-| 4.   | [Network boot utilities][NBT]         | NBT           | All                                  |
-| 5.   | [NVMe support][NVM]                   | NVM           | All                                  |
-| 6.   | [Custom logo][CLG]                    | CLG           | All                                  |
-| 7.   | [Custom boot menu key][CBK]           | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]        | USB           | USB001.XXX and USB002.XXX            |
-| 9.   | [FreeBSD support][BSD]                | BSD           | All                                  |
-| 10.  | [Debian Stable and Ubuntu LTS support][LBT]  | LBT         | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-| 11.  | [USB-C/Thunderbolt][UTC]              | UTC           | UTC004.001, UTC004.002               |
-| 12.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | ALL                                  |
-| 13.  | [eMMC support][MMC]                   | MMC           | MMC001.001                           |
-| 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-| 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
-| 16.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
-| 17.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
-| 18.  | [Audio subsystem][AUD]                | AUD           | AUD001.001, AUD001.002, AUD002.001, AUD002.002, AUD003.001, AUD003.002, AUD004.001, AUD004.002, AUD005.001, AUD005.002, AUD006.001, AUD006.002 |
-| 19.  | [UEFI Shell][USH]                     | USH           | All                                  |
-| 20.  | [USB detection][UDT]                  | UDT           | All                                  |
-| 21.  | [USB booting][UBT]                    | UBT           | All                                  |
-| 22.  | [pfSense support][PFS]                | PFS           | All                                  |
-| 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
-| 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
-| 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
--->
-
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
@@ -81,34 +51,6 @@ for all platforms of the PT family.
 [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
 [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
-<!--
-## Module: Dasharo security
-
-| No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]            | TPM           | Without TPM001.001,TPM002.001 and TPM003.001 |
-| 2.   | [Verified Boot support][VBO]          | VBO           | Without VBO006.001 and VBO007.001    |
-| 3.   | [Measured Boot support][MBO]          | MBO           | All                                  |
-| 4.   | [Secure Boot support][SBO]            | SBO           | All                                  |
-| 5.   | [ME disable/neuter support][MNE]      | MNE           | MNE004.001                           |
-| 6.   | [BIOS lock support][BLS]              | BLS           | All                                  |
-| 7.   | [USB stack enable/disable][USS]       | USS           | All                                  |
-| 8.   | [SMM BIOS write protection][SMM]      | SMM           | All                                  |
-
-> Note: in Dasharo compatible with Protectli VP46xx ME is soft-disabled by
-> default - no additional option for ME disabling is available in the Setup
-> Menu.
-
-[TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
-[VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
-[MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
-[SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
-[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
-[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
-[USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
-[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
--->
-
 ## Module: Dasharo performance
 
 | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
@@ -119,24 +61,6 @@ for all platforms of the PT family.
 | 4.   | [Platform stability][STB]             | STB           | All                                  |
 | 5.   | [Ubuntu booting performance test][BUB] | BUB           | All                                 |
 | 6.   | [Debian booting performance test][BDE] | BDE           | All                                 |
-
-<!--
-| No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
-|:-----|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [coreboot bring up time measurement][CBMEM] | CBMEM         | All                            |
-| 2.   | [CPU temperature measure][CPT]        | CPT           | All                                  |
-| 3.   | [CPU frequency measure][CPF]          | CPF           | Without CPU003.XXX and CPU005.XXX    |
-| 4.   | [Platform stability][STB]             | STB           | All                                  |
-| 5.   | [Ubuntu booting performance test][BUB] | BUB           | All                                 |
-| 6.   | [Debian booting performance test][BDE] | BDE           | All                                 |
-| 7.   | [FreeBSD booting performance test][BFB] | BFB           | All                                |
-| 8.   | [Proxmox booting performance test][BPM] | BPM           | All                                |
-| 9.   | [Ubuntu Server booting performance test][BUS] | BUS           | All                          |
-| 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All               |
-| 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All               |
-| 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All               |
-| 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               |
--->
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
