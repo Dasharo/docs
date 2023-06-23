@@ -21,7 +21,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
-| **Power supply**               | TBD                                         |
+| **Power supply**               | Power Adapter GA-0481204000V                |
 
 ## Protectli PT401
 
@@ -39,7 +39,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
-| **Power supply**               | TBD                                         |
+| **Power supply**               | Power Adapter GA-0481204000V                |
 
 ## Protectli PT601
 
@@ -57,4 +57,4 @@ coreboot port on the Protectli PTx01 firewall.
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
-| **Power supply**               | TBD                                         |
+| **Power supply**               | Power Adapter GA-0481204000V                |
