@@ -24,7 +24,7 @@ Follow the steps below to set up a serial connection via ssh:
 
 1. Edit the `/etc/default/grub` on your Linux-based OS file by adding:
 
-    ```bash
+    ```text
     linux /vmlinuz ro console=ttyS1,115200n8 earlyprintk=serial,ttyS1,115200n8
     ```
 
