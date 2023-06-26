@@ -19,12 +19,12 @@
     apt-get install --assume-yes lm-sensors
     ```
 
-## FNM001.001 Fan does not stuck after coldboot (Ubuntu 22.04)
+## FNM001.001 Fan does not stuck after cold boot (Ubuntu 22.04)
 
 **Test description**
 
 This test aims to verify that the fan does not stuck on initial or any defined
-speed after coldboot.
+speed after cold boot.
 
 **Test configuration data**
 

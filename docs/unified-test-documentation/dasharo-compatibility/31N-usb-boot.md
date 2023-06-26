@@ -1,11 +1,11 @@
 # Dasharo Compatibility: USB Boot
 
-## UBT001.001 USB detect and boot after coldboot
+## UBT001.001 USB detect and boot after cold boot
 
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device and boots
-into the operating system after coldboot (reboot realized by power supply
+into the operating system after cold boot (reboot realized by power supply
 cutting off then restoring back). This test case may be re-done several times
 to specify the platform and connection stability.
 
@@ -32,7 +32,7 @@ to specify the platform and connection stability.
 **Expected result**
 
 The `Debian GNU/Linux` is visible and confirms successful boot into OS after
-coldboot.
+cold boot.
 
 ## UBT002.001 USB detect and boot after warmboot
 

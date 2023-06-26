@@ -14,12 +14,12 @@
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-## TDD001.001 Docking station detection after coldboot (Ubuntu 22.04)
+## TDD001.001 Docking station detection after cold boot (Ubuntu 22.04)
 
 **Test description**
 
 This test aims to verify that the DUT properly detects the docking station after
-coldboot (realized by power supply cutting off then restoring back).
+cold boot (realized by power supply cutting off then restoring back).
 This test case may be re-done several times to specify the platform and
 connection stability.
 
