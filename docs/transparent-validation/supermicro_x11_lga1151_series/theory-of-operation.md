@@ -57,4 +57,4 @@ Follow the steps below to set up a serial connection via ssh:
     start
     ```
 
-If you want to run the SOL console again, repeat points 3-5.
+If you want to run the SOL console again, repeat points 4-6.
