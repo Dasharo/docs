@@ -43,12 +43,12 @@ on the DUT after cold boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUS002.001 Boot Ubuntu Server LTS from disk after warm-boot
+## BUS002.001 Boot Ubuntu Server LTS from disk after warm boot
 
 **Test description**
 
 This test aims to verify that Ubuntu Server LTS could be booted from the disk
-on the DUT after warm-boot. The test is performed in multiple iterations.
+on the DUT after warm boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 

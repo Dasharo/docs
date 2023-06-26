@@ -43,12 +43,12 @@ on the DUT after cold boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BWI002.001 Boot Windows 11 from disk after warm-boot
+## BWI002.001 Boot Windows 11 from disk after warm boot
 
 **Test description**
 
 This test aims to verify that Windows 11 could be booted from the disk
-on the DUT after warm-boot. The test is performed in multiple iterations.
+on the DUT after warm boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 

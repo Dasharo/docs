@@ -43,12 +43,12 @@ DUT after cold boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUB002.001 Boot Ubuntu LTS from disk after warm-boot
+## BUB002.001 Boot Ubuntu LTS from disk after warm boot
 
 **Test description**
 
 This test aims to verify that Ubuntu LTS could be booted from the disk on the
-DUT after warm-boot. The test is performed in multiple iterations.
+DUT after warm boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 

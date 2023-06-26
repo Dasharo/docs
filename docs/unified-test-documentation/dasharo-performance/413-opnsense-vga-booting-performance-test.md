@@ -43,12 +43,12 @@ disk on the DUT after cold boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOV002.001 Boot OPNsense (VGA output) stable from disk after warm-boot
+## BOV002.001 Boot OPNsense (VGA output) stable from disk after warm boot
 
 **Test description**
 
 This test aims to verify that OPNsense (VGA output) stable could be booted
-from the disk on the DUT after warm-boot. The test is performed in multiple
+from the disk on the DUT after warm boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**

@@ -53,7 +53,7 @@ Test results for this release can be found
 - [Laptop not suspending while connected to a USB-C docking station (Dasharo issue #368)](https://github.com/Dasharo/dasharo-issues/issues/368)
 - [Keyboard backlight brightness is not properly restored after cold boot (Dasharo issue #402)](https://github.com/Dasharo/dasharo-issues/issues/402)
 - [After changing the Intel ME mode the Reset option in the setup menu turns off the device (Dasharo issue #403)](https://github.com/Dasharo/dasharo-issues/issues/403)
-- [The docking station is not detected after cold boot and warm-boot (Dasharo issue #404)](https://github.com/Dasharo/dasharo-issues/issues/404)
+- [The docking station is not detected after cold boot and warm boot (Dasharo issue #404)](https://github.com/Dasharo/dasharo-issues/issues/404)
 
 ### Binaries
 

@@ -43,12 +43,12 @@ disk on the DUT after cold boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOS002.001 Boot OPNsense (serial output) from disk after warm-boot
+## BOS002.001 Boot OPNsense (serial output) from disk after warm boot
 
 **Test description**
 
 This test aims to verify that OPNsense (serial output) could be booted from the
-disk on the DUT after warm-boot. The test is performed in multiple iterations.
+disk on the DUT after warm boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
