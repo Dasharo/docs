@@ -13,12 +13,12 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BFB001.001 Boot FreeBSD-RELEASE from disk after cold-boot
+## BFB001.001 Boot FreeBSD-RELEASE from disk after cold boot
 
 **Test description**
 
 This test aims to verify that FreeBSD-RELEASE could be booted from the disk
-on the DUT after cold-boot. The test is performed in multiple iterations.
+on the DUT after cold boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 

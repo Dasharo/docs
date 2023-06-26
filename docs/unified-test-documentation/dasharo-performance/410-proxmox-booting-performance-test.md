@@ -13,12 +13,12 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BPM001.001 Boot Proxmox Virtual Environment from disk after cold-boot
+## BPM001.001 Boot Proxmox Virtual Environment from disk after cold boot
 
 **Test description**
 
 This test aims to verify that Proxmox VE could be booted from the disk on
-the DUT after cold-boot. The test is performed in multiple iterations.
+the DUT after cold boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 

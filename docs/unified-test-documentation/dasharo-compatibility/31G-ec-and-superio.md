@@ -1560,11 +1560,11 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-## ECR025.001 Permanent keyboard illumination after cold-boot (Firmware)
+## ECR025.001 Permanent keyboard illumination after cold boot (Firmware)
 
 **Test description**
 
-This test aims to verify that after performing cold-boot, keyboard still
+This test aims to verify that after performing cold boot, keyboard still
 illuminates in firmware.
 
 **Test configuration data**
@@ -1587,13 +1587,13 @@ illuminates in firmware.
 
 **Expected result**
 
-1. After cold-boot keyboard brightness and colors settings remain the same.
+1. After cold boot keyboard brightness and colors settings remain the same.
 
-## ECR025.002 Permanent keyboard illumination after cold-boot (Ubuntu 22.04)
+## ECR025.002 Permanent keyboard illumination after cold boot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify that after performing cold-boot, keyboard still
+This test aims to verify that after performing cold boot, keyboard still
 illuminates in Ubuntu 22.04.
 
 **Test configuration data**
@@ -1620,13 +1620,13 @@ illuminates in Ubuntu 22.04.
 
 **Expected result**
 
-1. After cold-boot keyboard brightness and colors settings remain the same.
+1. After cold boot keyboard brightness and colors settings remain the same.
 
-## ECR025.003 Permanent keyboard illumination after cold-boot (Windows 11)
+## ECR025.003 Permanent keyboard illumination after cold boot (Windows 11)
 
 **Test description**
 
-This test aims to verify that after performing cold-boot, keyboard still
+This test aims to verify that after performing cold boot, keyboard still
 illuminates in Windows 11.
 
 **Test configuration data**
@@ -1653,7 +1653,7 @@ illuminates in Windows 11.
 
 **Expected result**
 
-1. After cold-boot keyboard brightness and colors settings remain the same.
+1. After cold boot keyboard brightness and colors settings remain the same.
 
 ## ECR026.001 Permanent keyboard illumination after warm-boot (Firmware)
 

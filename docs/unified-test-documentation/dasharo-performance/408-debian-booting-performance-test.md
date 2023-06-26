@@ -13,12 +13,12 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BDE001.001 Boot Debian LTS from disk after cold-boot
+## BDE001.001 Boot Debian LTS from disk after cold boot
 
 **Test description**
 
 This test aims to verify that Debian LTS could be booted from the disk
-on the DUT after cold-boot. The test is performed in multiple iterations.
+on the DUT after cold boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 

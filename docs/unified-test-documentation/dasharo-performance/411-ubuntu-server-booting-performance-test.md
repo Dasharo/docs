@@ -13,12 +13,12 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BUS001.001 Boot Ubuntu Server LTS from disk after cold-boot
+## BUS001.001 Boot Ubuntu Server LTS from disk after cold boot
 
 **Test description**
 
 This test aims to verify that Ubuntu Server LTS could be booted from the disk
-on the DUT after cold-boot. The test is performed in multiple iterations.
+on the DUT after cold boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
