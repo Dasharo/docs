@@ -64,12 +64,12 @@ Example output:
 fan1:        1131 RPM  (min =  329 RPM)
 ```
 
-## FNM002.001 Fan does not stuck after warmboot (Ubuntu 22.04)
+## FNM002.001 Fan does not stuck after warm boot (Ubuntu 22.04)
 
 **Test description**
 
 This test aims to verify that the fan does not stuck on initial or any defined
-speed after warmboot.
+speed after warm boot.
 
 **Test configuration data**
 

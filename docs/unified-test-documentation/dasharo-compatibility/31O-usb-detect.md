@@ -32,13 +32,14 @@ connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 cold boot.
 
-## UDT002.001 USB detection after warmboot
+## UDT002.001 USB detection after warm boot
 
 **Test description**
 
 This test aims to verify that the DUT properly detects USB device after
-warmboot (reboot realized by device turning off then turning on). This test case
-may be re-done several times to specify the platform and connection stability.
+warm boot (reboot realized by device turning off then turning on). This test
+case may be re-done several times to specify the platform and connection
+stability.
 
 **Test configuration data**
 
@@ -60,7 +61,7 @@ may be re-done several times to specify the platform and connection stability.
 **Expected result**
 
 The `USB_STICK` entry is visible which confirms successful detection after
-warmboot.
+warm boot.
 
 ## UDT003.001 USB detection after system reboot
 

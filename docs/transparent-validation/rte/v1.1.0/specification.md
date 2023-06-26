@@ -51,7 +51,7 @@ operating system and starts automatically on port `8000` without the necessity
 of additional configuration. REST API dashboard can be reached through the
 Internet browser and provides a possibility to:
 
-* control Device Under Test power supply (cold boot and warmboot)
+* control Device Under Test power supply (cold boot and warm boot)
 * reset Device Under Test platform
 * flash Device Under Test firmware
 More information can be found at [RteCtrl repository](https://github.com/3mdeb/RteCtrl)

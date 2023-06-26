@@ -60,12 +60,12 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## TDD002.001 Docking station detection after warmboot (Ubuntu 22.04)
+## TDD002.001 Docking station detection after warm boot (Ubuntu 22.04)
 
 **Test description**
 
 This test aims to verify that the DUT properly detects the docking station
-after warmboot (realized by device turning off then turning on). This test case
+after warm boot (realized by device turning off then turning on). This test case
 may be re-done several times to specify the platform and connection stability.
 
 **Test configuration data**
