@@ -32,11 +32,12 @@ Follow the steps below to set up a serial connection via ssh:
       `plymouth.ignore-serial-consoles` phase to enable password disk
       authentication via SOL
 
-1. Add the following lines to the `/etc/ssh/ssh_config` file on your machine:
+1. Add the following lines to the `~/.ssh/config` file on your machine:
 
-    ```bash
-    HostKeyAlgorithms = +ssh-rsa
-    PubkeyAcceptedAlgorithms = +ssh-rsa
+    ```text
+    Host <IP>
+    	HostKeyAlgorithms = +ssh-rsa
+    	PubkeyAcceptedAlgorithms = +ssh-rsa
     ```
 
 1. Connect with BMC via ssh:
