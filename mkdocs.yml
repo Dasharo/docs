@@ -176,6 +176,9 @@ nav:
           - 'GPU Compatibility': variants/msi_z690/gpu-hcl.md
           - 'Community Test Results': variants/msi_z690/community-test-results.md
           - 'FAQ': variants/msi_z690/faq.md
+      - 'MSI PRO Z790-P':
+          - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
+          - 'Test matrix': variants/msi_z790/test-matrix.md
       - 'Supermicro X11 LGA1151 Series':
           - 'Overview': variants/supermicro_x11_lga1151_series/overview.md
           - 'Releases': variants/supermicro_x11_lga1151_series/releases.md
@@ -353,7 +356,6 @@ nav:
               - 'SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
               - 'Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
               - 'BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
-              - 'Suspend Mechanism Switching S0ix/S3': unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -386,6 +388,8 @@ nav:
               - 'pfSense (serial output) booting performance test': unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
               - 'pfSense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
               - 'Windows booting performance test': unified-test-documentation/dasharo-performance/416-windows-booting-performance-test.md
+          - 'Dasharo stability':
+              - 'NET interface check after coldboot/warmboot/reboot/suspend': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
       - 'Roadmap': ecosystem/roadmap.md
       - 'Quality Principles': quality-principles/introduction.md
         # - 'Introduction':
