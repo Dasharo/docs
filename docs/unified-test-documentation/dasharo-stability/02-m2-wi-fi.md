@@ -269,7 +269,7 @@ after performing a reboot. The test should be performed in multiple iterations.
 **Test description**
 
 This test aims to verify that the Wi-Fi card is detected and working correctly
-after performing suspension. The test is performed in multiple iterations.
+after performing suspension. The test should be performed in multiple iterations.
 
 **Test configuration data**
 
