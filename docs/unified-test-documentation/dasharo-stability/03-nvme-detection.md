@@ -66,7 +66,7 @@ on the DUT NVMe disk. Example output:
 **Test description**
 
 This test aims to verify that the NVMe disk is correctly detected after
-performing a warm boot. The test is performed in multiple iterations.
+performing a warm boot. The test should be performed in multiple iterations.
 
 **Test configuration data**
 
