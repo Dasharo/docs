@@ -61,7 +61,7 @@ for all platforms of the PT family.
 
 | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]            | TPM           | Without TPM001.001,TPM002.001 and TPM003.001 |
+| 1.   | [TPM Support][TPM]                    | TPM           | TPM001.002,TPM002.002 and TPM003.002 |
 | 2.   | [Secure Boot support][SBO]            | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
