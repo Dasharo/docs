@@ -19,7 +19,8 @@
 **Test description**
 
 This test aims to verify that the external USB devices are detected correctly
-after performing a cold boot. The test is performed in multiple iterations.
+after performing a cold boot. The test should be performed in multiple
+iterations.
 
 **Test configuration data**
 
@@ -66,7 +67,8 @@ The output of each `lsusb` command should contain an entry of the connected
 **Test description**
 
 This test aims to verify that the external USB devices are detected correctly
-after performing a warm boot. The test is performed in multiple iterations.
+after performing a warm boot. The test should be performed in multiple
+iterations.
 
 **Test configuration data**
 
@@ -112,7 +114,7 @@ The output of each `lsusb` command should contain an entry of the connected
 **Test description**
 
 This test aims to verify that the external USB devices are detected correctly
-after performing a reboot. The test is performed in multiple iterations.
+after performing a reboot. The test should be performed in multiple iterations.
 
 **Test configuration data**
 
@@ -159,7 +161,8 @@ The output of each `lsusb` command should contain an entry of the connected
 **Test description**
 
 This test aims to verify that the external USB devices are detected correctly
-after performing suspension. The test is performed in multiple iterations.
+after performing suspension. The test should be performed in multiple
+iterations.
 
 **Test configuration data**
 
