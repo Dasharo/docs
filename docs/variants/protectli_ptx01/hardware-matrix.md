@@ -9,8 +9,8 @@ coreboot port on the Protectli PTx01 firewall.
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | TBD (Jasper Lake)                           |
-| **RAM**                        | TBD   |
+| **CPU**                        | Intel(R) Celeron(R) N5105 @ 2.00GHz         |
+| **RAM**                        | Micron MT53D512M64D4RQ-046                  |
 | **Flash memory**               | TBD                        |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
@@ -27,14 +27,14 @@ coreboot port on the Protectli PTx01 firewall.
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | TBD (Jasper Lake)                           |
-| **RAM**                        | TBD   |
+| **CPU**                        | Intel(R) Celeron(R) N5105 @ 2.00GHz         |
+| **RAM**                        | Micron MT53D512M64D4RQ-046                  |
 | **Flash memory**               | TBD                        |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 | **Display**                    | HDMI 1920x1080p                             |
-| **Ethernet controller**        | 4x intel i225 (on-board)                    |
+| **Ethernet controller**        | 4x intel i226 (on-board)                    |
 | **Internal devices**           | Audio subsystem                             |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
@@ -45,8 +45,8 @@ coreboot port on the Protectli PTx01 firewall.
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | TBD (Jasper Lake)                           |
-| **RAM**                        | TBD                                         |
+| **CPU**                        | Intel(R) Pentium(R) Silver N6005 @ 2.00GHz  |
+| **RAM**                        | Micron MT53D512M64D4RQ-046                  |
 | **Flash memory**               | TBD                                         |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
