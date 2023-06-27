@@ -42,7 +42,7 @@ subjected before the release of the new binary.
 | 31.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
 | 32.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 | 33.  | [Fedora support][FED]                                  | FED           | All                                  |
-| 34.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001 and SUSP006.001  |
+| 34.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001, SUSP005.001 |
 | 35.  | [Thunderbolt docking station detect][TDD]              | TDD           | All                                  |
 | 36.  | [Thunderbolt docking station USB devices][TDU]         | TDU           | All                                  |
 | 37.  | [Thunderbolt docking station Audio][TDA]               | TDA           | All                                  |
