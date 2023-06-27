@@ -18,7 +18,7 @@
 **Test description**
 
 This test aims to verify that the Wi-Fi card is detected and working correctly
-after performing a cold boot. The test is performed in multiple iterations.
+after performing a cold boot. The test should be performed in multiple iterations.
 
 **Test configuration data**
 
