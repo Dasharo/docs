@@ -11,7 +11,7 @@ coreboot port on the Protectli PTx01 firewall.
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Celeron(R) N5105 @ 2.00GHz         |
 | **RAM**                        | Micron MT53D512M64D4RQ-046                  |
-| **Flash memory**               | TBD                        |
+| **Flash memory**               | Winbond 25Q16JVSSIQ                         |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
@@ -29,7 +29,7 @@ coreboot port on the Protectli PTx01 firewall.
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Celeron(R) N5105 @ 2.00GHz         |
 | **RAM**                        | Micron MT53D512M64D4RQ-046                  |
-| **Flash memory**               | TBD                        |
+| **Flash memory**               | Winbond 25Q128JVSIQ                         |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
@@ -47,7 +47,7 @@ coreboot port on the Protectli PTx01 firewall.
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Pentium(R) Silver N6005 @ 2.00GHz  |
 | **RAM**                        | Micron MT53D512M64D4RQ-046                  |
-| **Flash memory**               | TBD                                         |
+| **Flash memory**               | Winbond 25Q128JVSIQ                         |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
