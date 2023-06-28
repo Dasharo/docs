@@ -226,5 +226,6 @@ subjected from before the release of the new binary.
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
 
+[SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
 [SNV]: ../../unified-test-documentation/dasharo-stability/C03-nvme-detection.md
