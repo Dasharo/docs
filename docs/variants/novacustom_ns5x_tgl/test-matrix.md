@@ -141,4 +141,4 @@ subjected before the release of the new binary.
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
-[SUD]: ../../unified-test-documentation/dasharo-stability/01-usb-type-a-devices-detection.md
+[SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
