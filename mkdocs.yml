@@ -36,6 +36,10 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-video
+  - redirects:
+      redirect_maps:
+        'common-coreboot-docs/dasharo_tools_suite.md': 'dasharo-tools-suite/overview.md'
+        'variants/clevo_nv41/ec_update.md': 'dasharo-tools-suite/documentation.md'
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
   # but there are no internal links to them).
