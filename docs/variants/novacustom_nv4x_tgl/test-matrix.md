@@ -143,7 +143,7 @@ subjected from before the release of the new binary.
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 
-[SMW]: ../../unified-test-documentation/dasharo-stability/02-m2-wi-fi.md
+[SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
 
 ## NV41MZ test matrix
 
