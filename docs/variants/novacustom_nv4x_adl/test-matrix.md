@@ -134,6 +134,8 @@ subjected from before the release of the new binary.
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
+| 1.   | [USB Type-A devices detection][SUD]               | SUD           | All                                  |
+| 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
+[SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
