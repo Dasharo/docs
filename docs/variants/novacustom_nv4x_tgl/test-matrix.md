@@ -137,6 +137,14 @@ subjected from before the release of the new binary.
 [CFC]: ../../unified-test-documentation/dasharo-performance/406-custom-fan-curve.md
 [STB]: ../../unified-test-documentation/dasharo-performance/404-platform-stability.md
 
+## Module: Dasharo stability
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
+
+[SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
+
 ## NV41MZ test matrix
 
 ### Module: Dasharo compatibility
@@ -206,3 +214,9 @@ subjected from before the release of the new binary.
 | 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  |
 | 4.   | [Custom fan curve][CFC]                           | CFC           | All                                  |
 | 5.   | [Platform stability][STB]                         | STB           | All                                  |
+
+## Module: Dasharo stability
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |

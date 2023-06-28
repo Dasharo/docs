@@ -132,3 +132,11 @@ subjected before the release of the new binary.
 [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
 [CFC]: ../../unified-test-documentation/dasharo-performance/406-custom-fan-curve.md
 [STB]: ../../unified-test-documentation/dasharo-performance/404-platform-stability.md
+
+## Module: Dasharo stability
+
+| No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
+|:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
+| 1.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
+
+[SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
