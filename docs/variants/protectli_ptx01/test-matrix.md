@@ -12,23 +12,24 @@ for all platforms of the PT family.
 |:----:|:--------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                     | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
-| 3.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.003               |
+| 3.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.002, DSP002.003   |
 | 4.   | [Network boot utilities][NBT]         | NBT           | All                                  |
-| 5.   | [NVMe support][NVM]                   | NVM           | NVM001.001, NVM001.002               |
+| 5.   | [NVMe support][NVM]                   | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                    | CLG           | All                                  |
 | 7.   | [Custom Boot Keys][CBK]               | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]        | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
+| 8.   | [USB HID and MSC Support][USB]        | USB           | USB001.xxx and USB002.xxx            |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]  | LBT    | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-| 10.  | [USB-C/Thunderbolt][UTC]              | UTC           | UTC004.001                           |
-| 11.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | WLE001.001, WLE002.001, WLE003.001   |
-| 12.  | [eMMC support][MMC]                   | MMC           | All                           |
+| 10.  | [USB-C/Thunderbolt][UTC]              | UTC           | UTC004.001, UTC004.002               |
+| 11.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | All                                  |
+| 12.  | [eMMC support][MMC]                   | MMC           | All                                  |
 | 13.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
 | 14.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
 | 15.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
-| 16.  | [Audio subsystem][AUD]                | AUD           | AUD007.001, AUD008.001               |
+| 16.  | [Audio subsystem][AUD]                | AUD           | AUD007.xxx, AUD008.xxx               |
 | 17.  | [UEFI Shell][USH]                     | USH           | All                                  |
 | 18.  | [USB detection][UDT]                  | UDT           | All                                  |
 | 19.  | [USB booting][UBT]                    | UBT           | All                                  |
+| 20.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -61,7 +62,7 @@ for all platforms of the PT family.
 
 | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                    | TPM           | TPM001.002,TPM002.002 and TPM003.002 |
+| 1.   | [TPM Support][TPM]                    | TPM           | TPM001.002, TPM001.003, TPM002.002, TPM002.003, TPM003.002, TPM003.003 |
 | 2.   | [Secure Boot support][SBO]            | SBO           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
