@@ -72,44 +72,44 @@ example.
 
 ## Secure Boot Configuration
 
-This submenu allows configuring UEFI Secure Boot functionality. By default
-Dasharo firmware released after October 2022 has Secure Boot disabled by
-default with no keys and certificates provisioned.
+This submenu allows configuring UEFI Secure Boot functionality.
 
 ![](/images/menus/secure_boot.jpeg){ class="center" }
 
-Option to enable Secure Boot (`Attempt Secure Boot`) will be grayed out as long
-as there are missing keys and certificates in UEFI variables. In order to
-provision default keys embedded into firmware image, select the
-`Reset Secure Boot keys`. This will provision the default keys and unlock the
-`Attempt Secure Boot` (which will be selected by default when all keys are
-provisioned). The keys which are embedded in the firmware image come from
-Microsoft:
+### Enabling Secure Boot
 
-* [Microsoft KEK certificate](https://go.microsoft.com/fwlink/?LinkId=321185)
+By default, Dasharo firmware doesn't have UEFI Secure Boot enabled.
+Additionally, keys for UEFI Secure Boot are not enrolled, as we do not make
+assumptions about which CA the user trusts. To enable Secure Boot for booting
+common OSes signed with Microsoft keys (Windows and Linux distros using the
+shim bootloader), select the `Reset Secure Boot keys` option. The `Attempt
+Secure Boot` option will now be available and selected, and Secure Boot will be
+used on next boot.
+
+### Custom mode and key management
+
+The following keys are enrolled by default when resetting Secure Boot keys:
+
+* [Microsoft KEK certificate](https://go.microsoft.com/fwlink/?LinkId=321185),
 * Microsoft Signature Database (db) consisting of:
     - [Microsoft Windows Production PCA 2011](https://go.microsoft.com/fwlink/p/?linkid=321192)
-      to allow Windows OS Loader to load
+      to allow Windows OS Loader to load,
     - [Microsoft Corporation UEFI CA 2011](https://go.microsoft.com/fwlink/p/?linkid=321194)
-      to load OEM-approved UEFI drivers and applications (e.g. [shim](https://github.com/rhboot/shim))
+      to load OEM-approved UEFI drivers and applications (e.g. [shim](https://github.com/rhboot/shim)),
 * Microsoft Forbidden Signature Database (dbx) published as
- [UEFI Revocation List File on uefi.org](https://www.uefi.org/revocationlistfile)
+ [UEFI Revocation List File on uefi.org](https://www.uefi.org/revocationlistfile),
+* Dasharo Platform Key (PK) certificate maintained by the Dasharo team. When
+ custom application and UEFI driver signing is desired, this key may be replaced
+ with the user's own PK.
 
-To learn more, please visit
-[Windows Secure Boot Key Creation and Management Guidance](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11)
+> To learn more, please visit
+> [Windows Secure Boot Key Creation and Management Guidance](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11).
 
-There is also a Dasharo PK certificate which is a certificate derived from a
-randomly generated key by Dasharo Team. End user is expected to replace the PK
-with their own key if UEFI driver or application signing is required.
-
-One may also choose `Custom Mode` in `Secure Boot Mode` and provision own keys
-and certificates:
+To use your own keys, choose `Custom Mode` in `Secure Boot Mode`:
 
 ![](/images/menus/secure_boot_custom.jpeg){ class="center" }
 
-If `Custom Mode` is selected an additional entry appears
-`Custom Secure Boot Options`. It is an advanced menu to manipulate Secure Boot
-keys and certificates manually:
+An additional entry appears below for configuring keys and certificates:
 
 ![](/images/menus/secure_boot_custom.jpeg){ class="center" }
 
