@@ -46,7 +46,7 @@ coreboot port on the Protectli PTx01 firewall.
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Pentium(R) Silver N6005 @ 2.00GHz  |
-| **RAM**                        | Micron MT53D512M64D4RQ-046                  |
+| **RAM**                        | Micron MT53E512M32D4NQ-053                  |
 | **Flash memory**               | Winbond 25Q128JVSIQ                         |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
