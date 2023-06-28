@@ -139,4 +139,4 @@ subjected from before the release of the new binary.
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
 
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
-[SNV]: ../../unified-test-documentation/dasharo-stability/03-nvme-detection.md
+[SNV]: ../../unified-test-documentation/dasharo-stability/C03-nvme-detection.md
