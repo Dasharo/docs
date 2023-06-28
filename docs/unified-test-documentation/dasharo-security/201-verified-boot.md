@@ -508,7 +508,7 @@ displayed.
 1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
    to the DUT.
 1. Disable Secure Boot.
-1. Slot A is flashed with an binary with wrong vboot keys.
+1. Slot A is flashed with an binary with wrong-signed vboot keys.
 1. Obtain the correct `coreboot binary` appropriate for the DUT.
 
 **Test steps**
