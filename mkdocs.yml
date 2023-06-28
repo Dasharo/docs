@@ -275,6 +275,8 @@ nav:
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
           - 'PiKVM':
               - 'Assembly and validation': transparent-validation/pikvm/assembly-and-validation.md
+          - 'MSI PRO Z790-P':
+              - 'Laboratory stand assembly guide': transparent-validation/msi-z790/laboratory-assembly-guide.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md
