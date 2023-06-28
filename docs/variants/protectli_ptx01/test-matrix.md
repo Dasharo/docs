@@ -24,12 +24,11 @@ for all platforms of the PT family.
 | 12.  | [eMMC support][MMC]                   | MMC           | All                                  |
 | 13.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
 | 14.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
-| 15.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
-| 16.  | [Audio subsystem][AUD]                | AUD           | AUD007.xxx, AUD008.xxx               |
-| 17.  | [UEFI Shell][USH]                     | USH           | All                                  |
-| 18.  | [USB detection][UDT]                  | UDT           | All                                  |
-| 19.  | [USB booting][UBT]                    | UBT           | All                                  |
-| 20.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
+| 15.  | [Audio subsystem][AUD]                | AUD           | AUD007.xxx, AUD008.xxx               |
+| 16.  | [UEFI Shell][USH]                     | USH           | All                                  |
+| 17.  | [USB detection][UDT]                  | UDT           | All                                  |
+| 18.  | [USB booting][UBT]                    | UBT           | All                                  |
+| 19.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
