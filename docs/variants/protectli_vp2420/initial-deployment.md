@@ -7,7 +7,7 @@ installing and running flashrom on Ubuntu 22.04.
 ## Deploy using Dasharo Tools Suite
 
 For simplicity we recommend using
-[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite) to
+[Dasharo Tools Suite](../../../dasharo-tools-suite/overview) to
 omit all compilation steps and deploy the Dasharo firmware seamlessly.
 Be sure to disable the BIOS lock in the AMI firmware setup utility:
 

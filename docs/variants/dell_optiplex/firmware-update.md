@@ -8,7 +8,7 @@ distribution update.
 ## OS booting
 
 For simplicity we recommend using network booted
-[Dasharo Tools Suite](../../../common-coreboot-docs/dasharo_tools_suite).
+[Dasharo Tools Suite](../../../dasharo-tools-suite/overview).
 
 ### Dasharo (coreboot+SeaBIOS) and Dasharo (coreboot+UEFI) update
 

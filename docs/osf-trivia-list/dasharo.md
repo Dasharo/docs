@@ -338,7 +338,7 @@ If you are interested in our services please contact us
 ## What are the differences between the official coreboot repository and the Dasharo repository?
 
 Dasharo focuses on specific platforms listed in [supported
-hardware](../variants/overview) section of Dasharo Universe documentation.
+hardware](../variants/overview.md) section of Dasharo Universe documentation.
 
 Dasharo repository contains release tags which are associated with Dasharo
 Certification Program providing certain quality criteria including test
