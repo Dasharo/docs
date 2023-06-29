@@ -16,7 +16,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 | **Display**                    | HDMI 1920x1080p                             |
-| **Ethernet controller**        | 2x intel i225 (on-board)                    |
+| **Ethernet controller**        | 2x intel i225/i226 (on-board)               |
 | **Internal devices**           | Audio subsystem                             |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
@@ -34,7 +34,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 | **Display**                    | HDMI 1920x1080p                             |
-| **Ethernet controller**        | 4x intel i226 (on-board)                    |
+| **Ethernet controller**        | 4x intel i225/i226 (on-board)               |
 | **Internal devices**           | Audio subsystem                             |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
@@ -52,7 +52,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 | **Display**                    | HDMI 1920x1080p                             |
-| **Ethernet controller**        | 6x intel i225 (on-board)                    |
+| **Ethernet controller**        | 6x intel i225/i226 (on-board)               |
 | **Internal devices**           | Audio subsystem                             |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
