@@ -31,14 +31,4 @@ Information about GPU might be read from GPU package or documentation.
 
 | GPU name         | Memory size | Memory type  | Bandwidth | PCI-E Gen | Multi-Graphics Technology | Results                |
 |:----------------:|:-----------:|:------------:|:---------:|:---------:|:-------------------------:|:----------------------:|
-| Nvidia GeForce GTX 1060   | 3072 MB  | GDDR5  | 192GB/s   | Gen3      | 1                         | [Qubes HCL reports][1] |
-| MSI Radeon RX 6950 XT     | 16 GB    | GDDR6  | 576GB/s   | Gen4      | 1                         | |
-| EVGA NVidia RTX 2080      | 8 GB     | GDDR6  | 448GB/s   | Gen3      | 1                         | |
-| PNY NVidia RTX A5000      | 24 GB    | GDDR6  | 768GB/s   | Gen4      | 1                         | |
-| Nvidia GeForce GTX 1080TI | 11264 MB | GDDR5X | x16       | Gen3      | 1                         | [Qubes HCL reports][2] |
-| MSI Radeon RX 6500 XT MECH 2X 4G OC | 4 GB     | GDDR6  | x4 (x16 connector) | Gen4      | 1                         | Works only on Dasharo v1.1.0 or newer |
-| MSI GeForce RTX 3060 GAMING Z TRIO LHR | 12 GB     | GDDR6  | x16   | Gen4      | 1                         | miczyg setup |
-| MSI GeForce RTX 4090 GAMING X TRIO | 24GB | GDDR6X | x16 | Gen4 | 1 | reported via email/matrix |
-
-[1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
-[2]: https://www.qubes-os.org/hcl/#msi_ms-7d25_i7-12700k_alder-lake_integrated-graphics-uhd-770-geforce-gtx-1080-ti
+|                  |             |              |           |           |                           |                        |

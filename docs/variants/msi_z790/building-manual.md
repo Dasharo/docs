@@ -3,7 +3,7 @@
 ## Intro
 
 This documents describes the procedure for compiling Dasharo firmware
-compatible with MSI PRO Z690-A WIFI DDR4.
+compatible with MSI PRO Z790-P WIFI DDR4.
 
 ## Requirements
 
@@ -31,12 +31,12 @@ sudo cp ./UEFIExtract /usr/local/bin
 
 ## Procedure
 
-Obtain Dasharo source code for MSI PRO Z690-A WIFI DDR4:
+Obtain Dasharo source code for MSI PRO Z790-P:
 
 > Replace the `REVISION` with one of the:
 >
 > * `msi_ms7d25/release` for the latest released version
-> * `msi_ms7d25_vVERSION` (e.g. `msi_ms7d25_v0.1.0`) for the given release
+> * `msi_ms7e06_vVERSION` (e.g. `msi_ms7e06_v0.9.0`) for the given release
 
 ```bash
 git clone https://github.com/Dasharo/coreboot.git -b REVISION
@@ -44,9 +44,18 @@ git clone https://github.com/Dasharo/coreboot.git -b REVISION
 
 Navigate to the source code directory and start the build process:
 
+* DDR4 variant
+
 ```bash
 cd coreboot
-./build.sh ddr4
+./build.sh z790_ddr4
+```
+
+* DDR5 variant
+
+```bash
+cd coreboot
+./build.sh z790_ddr5
 ```
 
 The resulting Dasharo firmware image will be placed at `build/coreboot.rom`.

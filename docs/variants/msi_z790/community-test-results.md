@@ -3,7 +3,7 @@
 ## About
 
 The following document contains information about additional tests which were
-carried out on the MSI Z690-A platform with Dasharo firmware by community
+carried out on the MSI Z790-P platform with Dasharo firmware by community
 members.
 
 The following list is created based on the information from the

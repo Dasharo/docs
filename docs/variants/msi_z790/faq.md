@@ -1,33 +1,33 @@
 # FAQ
 
-## Why MSI Z690-A (WIFI) (DDR4) was chosen for Dasharo ?
+## Why MSI Z790-P (WIFI) (DDR4) was chosen for Dasharo ?
 
 Please read [this extensive analysis][msi_port_analysis] contributed to Intel
 Reddit.
 
-## Why do you use the nomenclature `MSI Z690-A (WIFI) (DDR4)`?
+## Why do you use the nomenclature `MSI Z790-P (WIFI) (DDR4)`?
 
 This nomenclature is the result of the naming used by the producer.
-`MSI PRO Z690-A` is the nomenclature used for naming the platform with
+`MSI PRO Z790-P` is the nomenclature used for naming the platform with
 DDR5 memory slots. If the platform is also equipped with the WiFi module, its
 naming nomenclature will additionally include the phrase `WIFI`. If instead of
 DDR5 memory slots, the platform is equipped with DDR4 memory slots, its naming
 nomenclature will additionally include the phrase `DDR4`.
 
-## Will this work on my `MSI PRO Z690-A` (model with DDR5 support)?
+## Will this work on my `MSI PRO Z790-P` (model with DDR5 support)?
 
 Yes, during test procedures the Dasharo firmware work has been confirmed for
 the DDR5 platform without WIFI.
 
-Dasharo working correctness has not been tested on `MSI PRO Z690-A WIFI`.
+Dasharo working correctness has not been tested on `MSI PRO Z790-P WIFI`.
 However, given its similarity to the other boards, there should be no problems
 using Dasharo on it as well.
 
-## Will this work on my `MSI PRO Z690-A DDR4`?
+## Will this work on my `MSI PRO Z790-P DDR4`?
 
 Yes, during test procedures the Dasharo firmware work has been confirmed for
 the DDR4 WIFI platform. In turn, Dasharo working correctness on
-`MSI PRO Z690-A DDR4` has been confirmed by the community.
+`MSI PRO Z790-P DDR4` has been confirmed by the community.
 
 ## Can I safely try this on my board?
 
@@ -95,7 +95,7 @@ Currently, Dasharo firmware picks the highest standard SPD Profile, no support
 for XMP ones. This means that on the Kingston modules it is actually working at
 2400 MHz, but it is expected to work all the way to 3200 MHz.
 
-## Why my GPU doesn't work on `MSI PRO Z690-A (DDR4) (WIFI)`?
+## Why my GPU doesn't work on `MSI PRO Z790-P (DDR4) (WIFI)`?
 
 Due to the fact, that there's no possibility to insert all available GPU drivers
 into the firmware, the solution in the form of the `Option ROM` is in use.

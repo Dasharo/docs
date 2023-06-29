@@ -91,38 +91,8 @@ Legend:
 > in the module specifications. This can vary based on the board design, CPU
 > and many other factors.
 
-### HCL list - MSI PRO Z690-A DDR4
+### HCL list - MSI PRO Z790-P DDR5
 
 | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
 |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
-| Kingston | [KF436C17BBK4/32][1] |8GB | JEDEC: DDR4-2400 CL17-17-17 1.2V | &#10004;/&#10004;/&#10004; |
-| Kingston | [KF436C17BBK4/32][1] |8GB | XMP profile #1: DDR4-3600 CL17-21-21 1.35V | -/-/&#10004; |
-| Kingston | [KF436C17BBK4/32][1] |8GB | XMP profile #2: DDR4-3000 CL15-17-17 1.35V | -/-/&#10004; |
-| Corsair  | [CMK16GX4M2B3200C16][2] |8GB | XMP 2.0: DDR4-3200 PC4-25600 CL16-18-18-36 1.35 V | -/-/&#10004; |
-| Kingston | [KF432C16BB1/16][3] |16GB | JEDEC: DDR4-2400 CL17-17-17 1.2V | -/&#10004;&sup1;/&#10004; |
-| PNY      | [8GBF1X08QFHH38-135-K-HXR][4] |8GB | JEDEC: DDR4-2133 CL15-15-15 1.2V | -/&#10004;&sup1;/&#10004; |
-| Kingston | [KF436C18BBK2/64][5] |32GB | JEDEC: DDR4-2400 CL17-17-17-39 1.2V | &#10004;/&#10004;/- |
-| Kingston | [KHX2666C16/16G][8] |16GB | JEDEC: DDR4-2133 CL16-18-18-39 1.2V | &#10004;/&#10004;/&#10004; |
-| OLOy     | [MD4U323216DJDA][10] |32GB| JEDEC: DDR4-2133 CL15-15-15-36 1.2V | &#10004;/&#10004;/&#10004; |
-| Kingston | KF3600C16D4/16GX |16GB | JEDEC: DDR4-2400 CL17-17-17-39 1.2V | &#10004;/&#10004;/&#10004; |
-
-1) Tested in 2x2 mixed configuration
-
-### HCL list - MSI PRO Z690-A DDR5
-
-| DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
-|:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
-| Kingston    | [KF556C40BB/8][6] |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
-| Crucial     | [CT8G48C40U5.M4A1/8][7] |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
-| ADATA       | [AD5U48008G-S][9] |8GB | 4800MT/s 40-40-40 1.1V | &#10004;/&#10004;/&#10004; |
-
-[1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
-[2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
-[3]: https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf
-[4]: https://www.pny.com/anarchy-x-ddr4-red?sku=MD16GK2D4320016AXR
-[5]: https://www.kingston.com/datasheets/KF436C18BBK2_64.pdf
-[6]: https://www.kingston.com/memory/gaming/kingston-fury-beast-ddr5-memory
-[7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
-[8]: https://www.kingston.com/datasheets/HX426C16FRK4_64.pdf
-[9]: https://www.adata.com/us/consumer/dram-module-ddr5-4800-u-dimm
-[10]: https://www.amazon.com/OLOy-Memory-288-Pin-Desktop-MD4U323216DJDA/dp/B0836NZHWR
+|             |             |      |             |                     |

@@ -45,7 +45,7 @@ recommended method. To update your firmware, follow below steps.
 
 Linux distributions may not yet have the support for the newest chipsets in
 flashrom installed via package manager so building the flashrom from source may
-be inevitable. You may check if your flashrom supports the Z690 chipset by doing
+be inevitable. You may check if your flashrom supports the Z790 chipset by doing
 a dry run without firmware binary:
 
 ```bash
@@ -102,7 +102,7 @@ flashrom is free software, get the source code at https://flashrom.org
 
 Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
 No DMI table found.
-Found chipset "Intel Z690".
+Found chipset "Intel Z790".
 Enabling flash write... SPI Configuration is locked down.
 FREG0: Flash Descriptor region (0x00000000-0x00000fff) is read-write.
 FREG1: BIOS region (0x01000000-0x01ffffff) is read-write.
@@ -115,36 +115,13 @@ No operations were specified.
 
 That means you are good to go.
 
-#### Migrating SMBIOS unique data (optional)
-
-Before flashing you may migrate your serial number and UUID as
-described in [Initial deployment](./initial-deployment.md#migrating-smbios-unique-data).
-Applicable to Dasharo v1.1.0 and later.
-
-#### Version v1.1.0 or newer
-
-> Version v1.1.0 had to change the flashmap layout and requires usage of the
-> [procedure below](#version-older-than-v110) when migrating from v1.0.0 or
-> older.
+#### FIrmware update with flashrom
 
 Only the `RW_SECTION_A` and `RW_SECTION_B` partitions of the flash needs to be
 updated. Flash it using the following command:
 
 ```bash
 flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
-```
-
-> To flash newer firmware the command described in the [section below](#version-older-than-v110)
-> might be also used. But remember, in that case, all Dasharo UEFI settings
-> will be lost. Also, the memory training procedure will have to be carried out
-> again.
-
-#### Version older than v1.1.0
-
-In this case, the whole `bios` region must be updated.
-
-```bash
-flashrom -p internal -w [path] --ifd -i bios
 ```
 
 #### Troubleshooting
