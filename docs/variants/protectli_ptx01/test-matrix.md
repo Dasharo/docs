@@ -10,27 +10,25 @@ for all platforms of the PT family.
 
 | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:----:|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [Memory HCL][HCL]                     | HCL           | All                                  |
-| 2.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
-| 3.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.002, DSP002.003   |
-| 4.   | [Network boot utilities][NBT]         | NBT           | All                                  |
-| 5.   | [NVMe support][NVM]                   | NVM           | All                                  |
-| 6.   | [Custom logo][CLG]                    | CLG           | All                                  |
-| 7.   | [Custom Boot Keys][CBK]               | CBK           | All                                  |
-| 8.   | [USB HID and MSC Support][USB]        | USB           | USB001.xxx and USB002.xxx            |
-| 9.   | [Debian Stable and Ubuntu LTS support][LBT]  | LBT    | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-| 10.  | [USB-C/Thunderbolt][UTC]              | UTC           | UTC004.001, UTC004.002               |
-| 11.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | All                                  |
-| 12.  | [eMMC support][MMC]                   | MMC           | All                                  |
-| 13.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-| 14.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
-| 15.  | [Audio subsystem][AUD]                | AUD           | AUD007.xxx, AUD008.xxx               |
-| 16.  | [UEFI Shell][USH]                     | USH           | All                                  |
-| 17.  | [USB detection][UDT]                  | UDT           | All                                  |
-| 18.  | [USB booting][UBT]                    | UBT           | All                                  |
-| 19.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
+| 1.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
+| 2.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.002, DSP002.003   |
+| 3.   | [Network boot utilities][NBT]         | NBT           | All                                  |
+| 4.   | [NVMe support][NVM]                   | NVM           | All                                  |
+| 5.   | [Custom logo][CLG]                    | CLG           | All                                  |
+| 6.   | [Custom Boot Keys][CBK]               | CBK           | All                                  |
+| 7.   | [USB HID and MSC Support][USB]        | USB           | USB001.xxx and USB002.xxx            |
+| 8.   | [Debian Stable and Ubuntu LTS support][LBT]  | LBT    | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
+| 9.   | [miniPCIe LTE/WiFi/Bluetooth][MWL]    | MWL           | MWL004.001                           |
+| 10.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | All                                  |
+| 11.  | [eMMC support][MMC]                   | MMC           | All                                  |
+| 12.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+| 13.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
+| 14.  | [Audio subsystem][AUD]                | AUD           | AUD007.xxx, AUD008.xxx               |
+| 15.  | [UEFI Shell][USH]                     | USH           | All                                  |
+| 16.  | [USB detection][UDT]                  | UDT           | All                                  |
+| 17.  | [USB booting][UBT]                    | UBT           | All                                  |
+| 18.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
 
-[HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
 [NBT]: ../../unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
