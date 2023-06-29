@@ -3,7 +3,7 @@
 ## Introduction
 
 This document describes the hardware configuration used for validation of the
-coreboot port on the Protectli PTx01 firewall.
+coreboot port on the Protectli PT201/PT401/PT601 firewall.
 
 ## Protectli PT201
 
@@ -18,6 +18,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **Display**                    | HDMI 1920x1080p                             |
 | **Ethernet controller**        | 2x intel i225/i226 (on-board)               |
 | **Internal devices**           | Audio subsystem                             |
+| **4G Modem**                   | AMIT MDG200-0T001                           |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
@@ -36,6 +37,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **Display**                    | HDMI 1920x1080p                             |
 | **Ethernet controller**        | 4x intel i225/i226 (on-board)               |
 | **Internal devices**           | Audio subsystem                             |
+| **4G Modem**                   | AMIT MDG200-0T001                           |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
@@ -54,6 +56,7 @@ coreboot port on the Protectli PTx01 firewall.
 | **Display**                    | HDMI 1920x1080p                             |
 | **Ethernet controller**        | 6x intel i225/i226 (on-board)               |
 | **Internal devices**           | Audio subsystem                             |
+| **4G Modem**                   | AMIT MDG200-0T001                           |
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | RTE v1.1.0                                  |
