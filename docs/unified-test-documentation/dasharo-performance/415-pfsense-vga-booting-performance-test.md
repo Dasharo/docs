@@ -13,12 +13,12 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## BPV001.001 Boot pfSense LTS CE (VGA output) from disk after cold-boot
+## BPV001.001 Boot pfSense LTS CE (VGA output) from disk after cold boot
 
 **Test description**
 
 This test aims to verify that pfSense LTS CE (VGA output) could be booted
-from the disk on the DUT after cold-boot. The test is performed in multiple
+from the disk on the DUT after cold boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
@@ -44,12 +44,12 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPV002.001 Boot pfSense LTS CE (VGA output) from disk after warm-boot
+## BPV002.001 Boot pfSense LTS CE (VGA output) from disk after warm boot
 
 **Test description**
 
 This test aims to verify that pfSense LTS CE (VGA output) could be booted
-from the disk on the DUT after warm-boot. The test is performed in multiple
+from the disk on the DUT after warm boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**

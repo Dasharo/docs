@@ -56,7 +56,7 @@ Test results for this platform can be found
 - [Reset to defaults with F9 causes the wrong settings to be restored (#355)](https://github.com/Dasharo/dasharo-issues/issues/355)
 - [Unwanted reset of BIOS settings (#365)](https://github.com/Dasharo/dasharo-issues/issues/365)
 - [Laptop not suspending while connected to a USB-C docking station (#368)](https://github.com/Dasharo/dasharo-issues/issues/368)
-- [The docking station is not detected after cold-boot and warm-boot (#404)](https://github.com/Dasharo/dasharo-issues/issues/404)
+- [The docking station is not detected after cold boot and warm boot (#404)](https://github.com/Dasharo/dasharo-issues/issues/404)
 
 ### Binaries
 

@@ -51,9 +51,9 @@ Test results for this release can be found
 - [Connecting and immediately disconnecting the charger, sets the battery status in OS to charging for about 2 minutes  (Dasharo issue #350)](https://github.com/Dasharo/dasharo-issues/issues/350)
 - [Reset to defaults with F9 causes the wrong settings to be restored (Dasharo issue #355)](https://github.com/Dasharo/dasharo-issues/issues/355)
 - [Laptop not suspending while connected to a USB-C docking station (Dasharo issue #368)](https://github.com/Dasharo/dasharo-issues/issues/368)
-- [Keyboard backlight brightness is not properly restored after cold-boot (Dasharo issue #402)](https://github.com/Dasharo/dasharo-issues/issues/402)
+- [Keyboard backlight brightness is not properly restored after cold boot (Dasharo issue #402)](https://github.com/Dasharo/dasharo-issues/issues/402)
 - [After changing the Intel ME mode the Reset option in the setup menu turns off the device (Dasharo issue #403)](https://github.com/Dasharo/dasharo-issues/issues/403)
-- [The docking station is not detected after cold-boot and warm-boot (Dasharo issue #404)](https://github.com/Dasharo/dasharo-issues/issues/404)
+- [The docking station is not detected after cold boot and warm boot (Dasharo issue #404)](https://github.com/Dasharo/dasharo-issues/issues/404)
 
 ### Binaries
 

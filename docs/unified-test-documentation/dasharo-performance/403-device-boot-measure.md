@@ -13,11 +13,11 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
 
-## DBM001.001 Device boot measure after coldboot (Ubuntu 22.04)
+## DBM001.001 Device boot measure after cold boot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify whether the DUT boots after coldboot and how long this
+This test aims to verify whether the DUT boots after cold boot and how long this
 process takes. This test case may be re-done several times to to average the
 results and specify the platform stability.
 
@@ -50,11 +50,11 @@ results and specify the platform stability.
 The output of the command should contain the information about duration of
 all boot stages.
 
-## DBM002.001 Device boot measure after warmboot (Ubuntu 22.04)
+## DBM002.001 Device boot measure after warm boot (Ubuntu 22.04)
 
 **Test description**
 
-This test aims to verify whether the DUT boots after warmboot and how long this
+This test aims to verify whether the DUT boots after warm boot and how long this
 process takes. This test case may be re-done several times to to average the
 results and specify the platform stability.
 
