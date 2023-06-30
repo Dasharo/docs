@@ -437,6 +437,7 @@ nav:
               - 'M.2 Wi-fi': unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
               - 'NVMe detection': unified-test-documentation/dasharo-stability/C03-nvme-detection.md
               - 'NET interface check after coldboot/warmboot/reboot/suspend': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+              - 'TPM detection': unified-test-documentation/dasharo-stability/C07-tpm-detection.md
       - 'Roadmap': ecosystem/roadmap.md
       - 'Quality Principles': quality-principles/introduction.md
         # - 'Introduction':
