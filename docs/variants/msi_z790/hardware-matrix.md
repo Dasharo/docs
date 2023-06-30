@@ -11,15 +11,15 @@ please check the [FAQ section](./faq.md).
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel Core i5-13600K 3.5                    |
-|                                | Noctua NH-U12S CPU Cooler                   |
-| **RAM**                        | Slot 1: Kingston KF436C17BBK4/32            |
-|                                | Slot 2: Kingston KF436C17BBK4/32            |
-|                                | Slot 3: Kingston KF436C17BBK4/32            |
-|                                | Slot 4: Kingston KF436C17BBK4/32            |
-| **Flash memory**               | Macronix MX25U25673G                        |
+| **CPU cooler**                 | Noctua NH-U12S CPU Cooler                   |
+| **RAM**                        | Slot 1: Kingston KF556C40BB-8               |
+|                                | Slot 1: Kingston KF556C40BB-8               |
+|                                | Slot 1: Kingston KF556C40BB-8               |
+|                                | Slot 1: Kingston KF556C40BB-8               |
+| **Flash memory**               | Macronix MX25U25635F                        |
 | **SSD**                        | Intel 670p 512 GB M26472-201 NVME           |
-| **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
-|                                | 2. Kingston DataTraveler 3.1Gen1 16 GB      |
+| **USB pendrives**              | 1. Adata C008 USB 2.0 16 GB                 |
+|                                | 2. Kingston DataTraveler USB 3.2 16 GB      |
 | **SD cards**                   | SanDisk Ultra microSD HC I 16 GB            |
 | **Attached devices**           | 1. Logitech, Inc. Keyboard K120             |
 |                                | 2. Dell Mouse MS116p                        |
