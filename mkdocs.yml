@@ -344,7 +344,6 @@ nav:
               - 'Display ports and LCD': unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
               - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
               - 'USB-C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
-              - 'Thunderbolt support': unified-test-documentation/dasharo-compatibility/350-thunderbolt-support.md
               - 'Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
               - 'Windows booting': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
               - 'Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
