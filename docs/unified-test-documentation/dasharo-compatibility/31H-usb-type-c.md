@@ -1,4 +1,4 @@
-# Dasharo Compatibility: USB-C support
+# Dasharo Compatibility: USB-C/Thunderbolt support with charging and display
 
 ## Test cases common documentation
 
@@ -47,12 +47,12 @@ connected smartphone.
 1. The smartphone should indicate that it's charging when connected to either
     USB Type-A port.
 
-## UTC002.001 USB Type-C docking station laptop charging (Ubuntu 22.04)
+## UTC002.001 Thunderbolt 4 USB Type-C charging capability
 
 **Test description**
 
-This test aims to verify whether the DUT can be charged using a PD power supply
-connected to the docking station, which is connected to the USB-C port.
+This test verifies that the Thunderbolt 4 port is able to provide charging to
+a connected smartphone.
 
 **Test configuration data**
 
@@ -63,7 +63,36 @@ connected to the docking station, which is connected to the USB-C port.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. The `USB-C docking station` connected to the USB-C port.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Connect a phone to the Thunderbolt 4 USB Type-C port located on the left side
+    of the laptop using a USB cable.
+1. Note the charging status on the phone screen.
+
+**Expected result**
+
+1. The smartphone should indicate that it's charging.
+
+## UTC003.001 USB Type-C PD laptop charging (Ubuntu 22.04)
+
+**Test description**
+
+This test verifies that the laptop can be charged using a USB Type-C PD power
+supply connected to the Thunderbolt 4 port.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
 
 **Test steps**
 
@@ -78,25 +107,17 @@ connected to the docking station, which is connected to the USB-C port.
     cat /sys/class/power_supply/BAT0/status
     ```
 
-1. Note the results
-
 **Expected result**
 
 Output of the command should show one of this: `Charging` or `Full`. That means
 laptop is charged properly.
 
-Example output:
-
-```bash
-Charging
-```
-
-## UTC002.002 USB Type-C docking station laptop charging (Windows 11)
+## UTC003.002 USB Type-C PD laptop charging (Windows 11)
 
 **Test description**
 
-This test aims to verify whether the DUT can be charged using a PD power supply
-connected to the docking station, which is connected to the USB-C port.
+This test verifies that the laptop can be charged using a USB Type-C PD power
+supply connected to the Thunderbolt 4 port.
 
 **Test configuration data**
 
@@ -107,7 +128,6 @@ connected to the docking station, which is connected to the USB-C port.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. The `USB-C docking station` connected to the USB-C port.
 
 **Test steps**
 
@@ -122,8 +142,6 @@ connected to the docking station, which is connected to the USB-C port.
     Get-WmiObject win32_battery
     ```
 
-1. Note the results
-
 **Expected result**
 
 If `BatteryStatus` is equal 2, that means laptop is charged properly.
@@ -134,7 +152,74 @@ Example part of output:
 BatteryStatus               : 2
 ```
 
-## UTC003.001 USB Type-C docking station HDMI display (Ubuntu 22.04)
+## UTC004.001 USB Type-C Display output (Ubuntu 22.04)
+
+**Test description**
+
+This test verifies that DUT output video to a display connected via
+the Thunderbolt 4 USB Type-C port.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Connect a display to the Thunderbolt 4 USB Type-C port using
+    a USB Type-C hub
+1. Open the Settings application and select the Displays panel in the left menu.
+1. Verify that the attached external monitor can be selected.
+1. Select and enable the monitor.
+
+**Expected result**
+
+1. The monitor connected to the laptop via the Thunderbolt 4 port should power
+   on and display video from the laptop.
+
+## UTC004.002 USB Type-C Display output (Windows 11)
+
+**Test description**
+
+This test verifies that DUT output video to a display connected via
+the Thunderbolt 4 USB Type-C port.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Connect a display to the Thunderbolt 4 USB Type-C port using
+    a USB Type-C hub.
+1. Right click on the desktop to open the desktop context menu.
+1. Select `Display Settings` to open the display settings window.
+1. Verify that the attached external monitor can be selected.
+1. Select and enable the monitor.
+
+**Expected result**
+
+1. The monitor connected to the laptop via the Thunderbolt 4 port should power
+   on and display video from the laptop.
+
+## UTC005.001 USB Type-C docking station HDMI display (Ubuntu 22.04)
 
 **Test description**
 
@@ -170,7 +255,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external HDMI-connected display in `Mirror`
 and `Join Displays` modes.
 
-## UTC003.002 USB Type-C docking station HDMI display (Windows 11)
+## UTC005.002 USB Type-C docking station HDMI display (Windows 11)
 
 **Test description**
 
@@ -206,7 +291,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external HDMI-connected display in
 `Duplicate` and `Extend` modes.
 
-## UTC004.001 USB Type-C docking station DP display (Ubuntu 22.04)
+## UTC006.001 USB Type-C docking station DP display (Ubuntu 22.04)
 
 **Test description**
 
@@ -242,7 +327,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external DisplayPort-connected display in
 `Mirror` and `Join Displays` modes.
 
-## UTC004.002 USB Type-C docking station DP display (Windows 11)
+## UTC006.002 USB Type-C docking station DP display (Windows 11)
 
 **Test description**
 
@@ -278,7 +363,7 @@ to the docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external DisplayPort-connected display in
 `Duplicate` and `Extend` modes.
 
-## UTC005.001 USB Type-C docking station Triple display (Ubuntu 22.04)
+## UTC007.001 USB Type-C docking station Triple display (Ubuntu 22.04)
 
 **Test description**
 
@@ -314,7 +399,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the three external displays in `Mirror` and
 `Join Displays` modes.
 
-## UTC005.002 USB Type-C docking station Triple display (Windows 11)
+## UTC007.002 USB Type-C docking station Triple display (Windows 11)
 
 **Test description**
 
@@ -351,7 +436,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the three external displays in `Duplicate` and
 `Extend` modes.
 
-## UTC006.001 USB Type-C docking station detection after coldboot (Ubuntu 22.04)
+## UTC008.001 USB Type-C docking station detection after coldboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -398,7 +483,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## UTC007.001  USB Type-C docking station detection after warmboot (Ubuntu 22.04)
+## UTC009.001  USB Type-C docking station detection after warmboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -443,7 +528,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## UTC008.001 USB Type-C docking station detection after reboot (Ubuntu 22.04)
+## UTC010.001 USB Type-C docking station detection after reboot (Ubuntu 22.04)
 
 **Test description**
 
@@ -496,7 +581,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## UTC009.001 USB Type-C docking station USB devices recognition (firmware)
+## UTC011.001 USB Type-C docking station USB devices recognition (firmware)
 
 **Test description**
 
@@ -524,7 +609,7 @@ station are recognized correctly by the `FIRMWARE`.
 
 The `USB storage` is available which confirms successful recognition.
 
-## UTC009.002 USB Type-C docking station USB devices recognition (Ubuntu 22.04)
+## UTC011.002 USB Type-C docking station USB devices recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -564,7 +649,7 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 1. After each device is disconnected from the USB port, a USB device entry
     in `lsusb` command output should disappear.
 
-## UTC009.003 USB Type-C docking station USB devices recognition (Windows 11)
+## UTC011.003 USB Type-C docking station USB devices recognition (Windows 11)
 
 **Test description**
 
@@ -617,7 +702,7 @@ displayed. The list should contain the `USB storage`, which is plug in.
         OK         USB             USB Mass Storage Device
     ```
 
-## UTC010.001 USB Type-C docking station USB keyboard recognition (firmware)
+## UTC012.001 USB Type-C docking station USB keyboard (firmware)
 
 **Test description**
 
@@ -646,7 +731,7 @@ according to their labels.
 
 All menus can be entered using the external USB keyboard.
 
-## UTC010.002 USB Type-C docking station USB keyboard detection (Ubuntu 22.04)
+## UTC012.002 USB Type-C docking station USB keyboard (Ubuntu 22.04)
 
 **Test description**
 
@@ -697,7 +782,7 @@ according to their labels.
    their labels.
 1. Key combinations are detected correctly.
 
-## UTC010.003 USB Type-C docking station USB keyboard recognition (Windows 11)
+## UTC012.003 USB Type-C docking station USB keyboard (Windows 11)
 
 **Test description**
 
@@ -751,7 +836,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    or actions when pressed.
 1. Key combinations are detected correctly.
 
-## UTC011.001 USB Type-C docking station upload 1GB file on USB storage (Ubuntu 22.04)
+## UTC013.001 USB Type-C docking station upload 1GB file on USB storage (Ubuntu 22.04)
 
 **Test description**
 
@@ -809,7 +894,7 @@ f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  test_file.txt
 f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  {path_to_usb_storage}/test_file.txt
 ```
 
-## UTC011.002 USB Type-C docking station upload 1GB file on USB storage(Windows 11)
+## UTC013.002 USB Type-C docking station upload 1GB file on USB storage(Windows 11)
 
 **Test description**
 
@@ -877,7 +962,7 @@ Algorithm       Hash                                                            
 SHA256          F46597C0C63A1EEFB200D40EDF654E52F10C3D5D21565886AD603FABAF8D39FB  E:\test_file.txt
 ```
 
-## UTC012.001 USB Type-C docking station Ethernet connection (Ubuntu 22.04)
+## UTC014.001 USB Type-C docking station Ethernet connection (Ubuntu 22.04)
 
 **Test description**
 
@@ -928,7 +1013,7 @@ Ethernet port can be obtained on Ubuntu 22.04.
     ping: connect: Network is unreachable
     ```
 
-## UTC012.002 USB Type-C docking station Ethernet connection (Windows 11)
+## UTC014.002 USB Type-C docking station Ethernet connection (Windows 11)
 
 **Test description**
 
@@ -978,7 +1063,7 @@ Ethernet port can be obtained on Windows 11.
     Ping request could not find host 3mdeb.com. Please check the name and try again.
     ```
 
-## UTC013.001 USB Type-C docking station audio recognition (Ubuntu 22.04)
+## UTC015.001 USB Type-C docking station audio recognition (Ubuntu 22.04)
 
 **Test description**
 
@@ -1020,7 +1105,7 @@ plugging in the 3.5 mm jack into the docking station.
 1. After disconnecting the external headset from the 3.5 mm jack, a headset
     entry in `lsusb` command output should disappear.
 
-## UTC013.002 USB Type-C docking station audio recognition (Windows 11)
+## UTC015.002 USB Type-C docking station audio recognition (Windows 11)
 
 **Test description**
 
@@ -1062,7 +1147,7 @@ after plugging in the 3.5 mm jack into the docking station.
    for connected headset should disappear from the `Output devices` and
    `Input devices` sections.
 
-## UTC014.001 USB Type-C docking station audio playback (Ubuntu 22.04)
+## UTC016.001 USB Type-C docking station audio playback (Ubuntu 22.04)
 
 **Test description**
 
@@ -1101,7 +1186,7 @@ station.
 
 Sound should be played from the external speakers.
 
-## UTC014.002 USB Type-C docking station audio playback (Windows 11)
+## UTC016.002 USB Type-C docking station audio playback (Windows 11)
 
 **Test description**
 
@@ -1136,7 +1221,7 @@ station.
 
 Sound should be played from the external speakers.
 
-## UTC015.001 USB Type-C docking station audio capture (Ubuntu 22.04)
+## UTC017.001 USB Type-C docking station audio capture (Ubuntu 22.04)
 
 **Test description**
 
@@ -1179,7 +1264,7 @@ from external headset connected to the docking station.
 
 The recorded audio clip is recorded correctly and played back.
 
-## UTC015.002 USB Type-C docking station audio capture (Windows 11)
+## UTC017.002 USB Type-C docking station audio capture (Windows 11)
 
 **Test description**
 
@@ -1222,7 +1307,7 @@ from external headset connected to the docking station.
 1. The result of the test after clicking the `Stop Test` bar should be more than
     0% of the total volume.
 
-## UTC016.001 USB Type-C docking station SD Card reader detection (Ubuntu 22.04)
+## UTC018.001 USB Type-C docking station SD Card reader detection (Ubuntu 22.04)
 
 **Test description**
 
@@ -1265,7 +1350,7 @@ Example output:
 Bus 002 Device 007: ID 067b:2733 Prolific Technology, Inc. USB SD Card Reader
 ```
 
-## UTC016.002 USB Type-C docking station SD Card reader detection (Windows 11)
+## UTC018.002 USB Type-C docking station SD Card reader detection (Windows 11)
 
 **Test description**
 
@@ -1308,7 +1393,7 @@ Example output:
     OK         DiskDrive       SD Card Reader USB Device
 ```
 
-## UTC017.001 USB Type-C docking station SD Card read/write (Ubuntu 22.04)
+## UTC019.001 USB Type-C docking station SD Card read/write (Ubuntu 22.04)
 
 **Test description**
 
@@ -1373,7 +1458,7 @@ can be used from the operating system.
     2083776668ed0c8095a9ac42188153c02f360e116c14b36d2ef5c98665d75dcb  /tmp/out.bin
     ```
 
-## UTC017.002 USB Type-C docking station SD Card read/write (Windows 11)
+## UTC019.002 USB Type-C docking station SD Card read/write (Windows 11)
 
 **Test description**
 
