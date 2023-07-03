@@ -21,7 +21,7 @@ subjected from before the release of the new binary.
 | 10.  | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 11.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
 | 12.  | [Audio subsystem][AUD]                            | AUD           | All                                  |
-| 13.  | [USB-C/Thunderbolt][UTC]                          | UTC           | All                                  |
+| 13.  | [USB-C support][UTC]                              | UTC           | All                                  |
 | 14.  | [Network boot][PXE]                               | PXE           | PXE007.001                           |
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
 | 16.  | [SD card support][SDC]                            | SDC           | All                                  |

@@ -5,6 +5,40 @@
 This document describes the hardware configurations used for validation of the
 coreboot port on the NovaCustom NS51/NS70 laptops.
 
+## Ports specification
+
+### Right side view
+
+![](/images/novacustom_ns_ports_right_view.png)
+
+| No.  | Description                                      |
+|------|--------------------------------------------------|
+| 1.   | Speaker                                          |
+| 2.   | 2-In-1 Audio Jack (Headphone / Microphone)       |
+| 3.   | MicroSD Card Reader                              |
+| 4.   | USB 2.0 Port                                     |
+| 5.   | LED Indicator                                    |
+| 6.   | Power Button                                     |
+| 7.   | RJ-45 LAN Jack                                   |
+| 8.   | Security Lock Slot                               |
+
+### Left side view
+
+![](/images/novacustom_ns_ports_left_view.png)
+
+| No.  | Description                                      |
+|------|--------------------------------------------------|
+| 1.   | DC-In Jack                                       |
+| 2.   | HDMI-Out Port                                    |
+| 3.   | USB 3.2 Gen 2 Type-A Port                        |
+| 4.   | USB 3.2 Gen 2 Type-C Port                        |
+| 5.   | Thunderbolt 4 Port with Power Delivery (DC-IN)   |
+| 6.   | Speaker                                          |
+
+The graphics used are from pages 17-18 of the
+[official service manual](https://novacustom.stackstorage.com/s/s2zVcQyd004hRQJ/en_US?dir=%2FNS51%2FService%20Manual&node-id=233996)
+for the NS51/70 platforms.
+
 ## NS51
 
 | Component                      | Description                                      |
@@ -26,7 +60,8 @@ coreboot port on the NovaCustom NS51/NS70 laptops.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
+|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
 
 ## NS70
@@ -49,5 +84,6 @@ coreboot port on the NovaCustom NS51/NS70 laptops.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Wavlink 100W PD Pro docking station              |
+| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
+|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |

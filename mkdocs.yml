@@ -343,7 +343,7 @@ nav:
               - 'Wi-Fi and Bluetooth support': unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
               - 'Display ports and LCD': unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
               - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
-              - 'USB type C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
+              - 'USB-C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
               - 'Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
               - 'Windows booting': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
               - 'Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
@@ -374,19 +374,6 @@ nav:
               - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
               - 'Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
               - 'Embedded controller flashing': unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
-              - 'USB-C docking station charging': unified-test-documentation/dasharo-compatibility/321-docking-station-usb-c-charging.md
-              - 'USB-C docking station detect': unified-test-documentation/dasharo-compatibility/323-docking-station-detect.md
-              - 'USB-C docking station USB devices': unified-test-documentation/dasharo-compatibility/324-docking-station-usb-devices.md
-              - 'USB-C docking station audio': unified-test-documentation/dasharo-compatibility/322-docking-station-audio.md
-              - 'USB-C docking station Display ports': unified-test-documentation/dasharo-compatibility/330-docking-station-display-ports.md
-              - 'USB-C docking station NET interface': unified-test-documentation/dasharo-compatibility/340-docking-station-net-interface.md
-              - 'USB-C docking station SD Card Reader': unified-test-documentation/dasharo-compatibility/356-docking-station-sd-card-reader.md
-              - 'Thunderbolt docking station': unified-test-documentation/dasharo-compatibility/350-thunderbolt-docking-station.md
-              - 'Thunderbolt docking station detect': unified-test-documentation/dasharo-compatibility/352-thunderbolt-docking-station-detect.md
-              - 'Thunderbolt docking station USB devices': unified-test-documentation/dasharo-compatibility/353-thunderbolt-docking-station-usb-devices.md
-              - 'Thunderbolt docking station audio': unified-test-documentation/dasharo-compatibility/351-thunderbolt-docking-station-audio.md
-              - 'Thunderbolt docking station Display ports': unified-test-documentation/dasharo-compatibility/354-thunderbolt-docking-station-display-ports.md
-              - 'Thunderbolt docking station NET interface': unified-test-documentation/dasharo-compatibility/355-thunderbolt-docking-station-net-interface.md
               - 'Logo customization': unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
               - 'Super I/O initialization - QubesOS': unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
               - 'Display Resolution - QubesOS': unified-test-documentation/dasharo-compatibility/345-display-resolution.md
