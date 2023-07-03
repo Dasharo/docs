@@ -20,7 +20,7 @@ for all platforms of the VP46XX family.
 | 8.   | [USB HID and MSC Support][USB]        | USB           | USB001.XXX and USB002.XXX            |
 | 9.   | [FreeBSD support][BSD]                | BSD           | All                                  |
 | 10.  | [Debian Stable and Ubuntu LTS support][LBT]  | LBT         | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-| 11.  | [USB-C/Thunderbolt][UTC]              | UTC           | UTC004.001, UTC004.002               |
+| 11.  | [USB-C support][UTC]                  | UTC           | UTC004.001, UTC004.002               |
 | 12.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | ALL                                  |
 | 13.  | [eMMC support][MMC]                   | MMC           | MMC001.001                           |
 | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
