@@ -188,9 +188,9 @@ nav:
           - 'Recovery': variants/protectli_vp46xx/recovery.md
           - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
-      - 'Protectli PT201/PT401/PT601':
-          - 'Hardware Configuration Matrix': variants/protectli_ptx01/hardware-matrix.md
-          - 'Test matrix': variants/protectli_ptx01/test-matrix.md
+      # - 'Protectli PT201/PT401/PT601':
+      #     - 'Hardware Configuration Matrix': variants/protectli_ptx01/hardware-matrix.md
+      #     - 'Test matrix': variants/protectli_ptx01/test-matrix.md
       - 'QEMU Q35 Emulator':
           - 'Overview': variants/qemu_q35/overview.md
           - 'Releases': variants/qemu_q35/releases.md
