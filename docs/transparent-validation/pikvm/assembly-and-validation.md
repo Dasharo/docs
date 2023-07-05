@@ -142,9 +142,10 @@ the method mentioned above does not bring expected results.
     link/ether 74:e5:43:a1:ce:65 brd ff:ff:ff:ff:ff:ff
     ```
 
-    Look for the word "UP" inside the brackets in the first line of the output. 
+    Look for the word "UP" inside the brackets in the first line of the output.
 
-1. In the above example, wlan0 is not UP. Execute the following command to bring it up:
+1. In the above example, wlan0 is not UP. Execute the following command to bring
+    it up:
 
     ```bash
     ip link set wlan0 up
@@ -156,7 +157,7 @@ the method mentioned above does not bring expected results.
     /sbin/iw wlan0 scan
     ```
 
-    The command will output all avaliable wireless networks. Example output:
+    The command will output all available wireless networks. Example output:
 
     ```bash
     BSS 60:38:e0:d6:46:99(on wlp0s20f3) -- associated
@@ -169,7 +170,7 @@ the method mentioned above does not bring expected results.
 	last seen: 10532 ms ago
 	Information elements from Probe Response frame:
 	SSID: test_network
-	Supported rates: 1.0* 2.0* 5.5* 11.0* 22.0 6.0 9.0 12.0 
+	Supported rates: 1.0* 2.0* 5.5* 11.0* 22.0 6.0 9.0 12.0
 	DS Parameter set: channel 2
 	ERP: <no flags>
 	Extended supported rates: 18.0 24.0 36.0 48.0 54.0
@@ -249,7 +250,7 @@ the method mentioned above does not bring expected results.
     3: wlan0:  mtu 1500 qdisc mq state UP qlen 1000
     link/ether 74:e5:43:a1:ce:65 brd ff:ff:ff:ff:ff:ff
     inet 192.168.4.113/24 brd 192.168.1.255 scope global wlan0
-    inet6 fe80::76e5:43ff:fea1:ce65/64 scope link 
+    inet6 fe80::76e5:43ff:fea1:ce65/64 scope link
        valid_lft forever preferred_lft forever
     ```
 
@@ -258,7 +259,6 @@ the method mentioned above does not bring expected results.
     ```bash
     ro
     ```
-
 
 ### Read IP address
 
