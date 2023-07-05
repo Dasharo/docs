@@ -57,7 +57,7 @@ please check the [FAQ section](../../unified/msi/faq.md).
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | Intel Core i5-12600K 3.7                    |
+| **CPU**                        | Intel Core i5-13600K 3.5                    |
 |                                | Noctua NH-U12S CPU Cooler                   |
 | **RAM**                        | Slot 1: CRUCIAL CT8G48C40U5                 |
 |                                | Slot 2: CRUCIAL CT8G48C40U5                 |
