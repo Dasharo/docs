@@ -144,18 +144,35 @@ SWIFT: BIGBPLPW
 
 ### BTC and other crypto coins
 
+Our company does not currently support payment in cryptocurrencies.
+
+While we understand that cryptocurrencies have gained popularity and recognition
+in recent years, we have chosen to retain our focus on conventional payment
+channels.
+
+Firstly, we prioritize financial compliance and adhere to EU regulations.
+Managing cryptocurrencies would require extensive knowledge and resources to
+ensure compliance, which we are not equipped to handle at our current stage of
+development. Moreover, the uncertain and evolving nature of cryptocurrency
+regulations introduces significant risks and potential vulnerabilities. These
+factors could potentially lead to fiscal audits that could hamper the operations
+of 3mdeb and impede the progress of Dasharo development.
+
+We believe that by adhering to established payment methods, we can ensure a
+consistent and reliable payment process for our customers. This allows us to
+maintain a high level of security, accountability, and regulatory compliance.
+
+### Technology Commons Trust
+
 If you are concerned about the privacy of your donation as well as the fact how
 we would spend the money, then please consider Technology Commons Trust [Open
-Firmware Fund](https://technologycommons.org/OFF/).
+Firmware Fund.](https://technologycommons.org/OFF/)
 
 Addresses:
 
-* Bitcoin:
-  [1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV](bitcoin:1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV?label=UOI-OFF&message=Donation%20to%20Open%20Firmware%20Fund)
-* Monero:
-  [89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ](monero:89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ)
-* PKT:
-  [pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v](pkt:pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v)
+* Bitcoin: [1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV](1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV)
+* Monero: [89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ](89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ)
+* PKT: [pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v](pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v)
 
 If you want to contribute to other cryptocurrencies, please visit
 [OFF](https://technologycommons.org/OFF/) website for details about contact
