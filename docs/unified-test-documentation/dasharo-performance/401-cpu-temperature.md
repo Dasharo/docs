@@ -56,9 +56,8 @@ Example output:
     Core 3:        +33.0°C  (high = +100.0°C, crit = +100.0°C)
 ```
 
-Displayed temperature should be not higher than displayed high and
-critical temperatures. Also the temperature should be not higher than
-temperature declared by the DUT producer.
+Displayed temperature should be not higher than declared by the DUT
+specifications.
 
 ## CPT002.001 CPU temperature during stress test (Ubuntu 22.04)
 
