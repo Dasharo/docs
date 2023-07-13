@@ -10,7 +10,7 @@ please check the [FAQ section](./faq.md).
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | Intel Core i5-13600K 3.5                    |
+| **CPU**                        | Intel Core i5-13600K 3.5 GHz                |
 | **CPU cooler**                 | Noctua NH-U12S CPU Cooler                   |
 | **RAM**                        | Slot 1: Kingston KF556C40BB-8               |
 |                                | Slot 1: Kingston KF556C40BB-8               |
