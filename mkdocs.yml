@@ -217,6 +217,9 @@ nav:
           - 'GPU Compatibility': variants/msi_z690/gpu-hcl.md
           - 'Community Test Results': variants/msi_z690/community-test-results.md
           - 'FAQ': variants/msi_z690/faq.md
+      - 'MSI PRO Z790-P':
+          - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
+          - 'Test matrix': variants/msi_z790/test-matrix.md
       - 'Supermicro X11 LGA1151 Series':
           - 'Overview': variants/supermicro_x11_lga1151_series/overview.md
           - 'Releases': variants/supermicro_x11_lga1151_series/releases.md
@@ -294,6 +297,8 @@ nav:
           - 'MSI PRO Z690-A':
               - 'Presale assembly and validation': transparent-validation/msi-z690/presale-assembly-and-validation.md
               - 'Laboratory stand assembly guide': transparent-validation/msi-z690/laboratory-assembly-guide.md
+          - 'MSI PRO Z790-P':
+              - 'Laboratory stand assembly guide': transparent-validation/msi-z790/laboratory-assembly-guide.md
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
               - 'Basic validation': transparent-validation/muxpi/basic-validation.md
