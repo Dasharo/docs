@@ -39,17 +39,17 @@ To build coreboot image, follow the steps below:
 1. Clone the heads repository:
 
     ```bash
-    git clone https://github.com/Dasharo/heads.git -b raptor-cs_talos-2/release
+    git clone --depth=1 https://github.com/Dasharo/heads.git -b raptor-cs_talos-2/release
     ```
 
 1. Start docker container:
 
     ```bash
-    docker run --rm -it -v $PWD:$PWD -w $PWD 3mdeb/heads-docker:2.3.0 /bin/bash
+    docker run --rm -it -v $PWD:$PWD -w $PWD -u "$(id -u):$(id -g)" 3mdeb/heads-docker:2.4.0 /bin/bash
     ```
 
 1. Build:
 
     ```bash
-    make BOARD=talos-2_server
+    make BOARD=talos-2
     ```
