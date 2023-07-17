@@ -14,7 +14,10 @@ The image file must fulfill a number of requirements:
 - up to 577×432 resolution
 - indexed or 24bit RGB colors
 - uncompressed
-- preferably containing a simple logo on a black background with no additional padding.
+- preferably containing a simple logo on a black background with no additional
+padding.
+- make sure it is properly formatted. To be sure, use the command:
+`convert -background None custom_logo.bmp BMP3:logo.bmp`
 
 ## Replace logo in an existing image
 
