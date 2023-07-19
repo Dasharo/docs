@@ -2,8 +2,8 @@
 
 ## Why was the MSI Z790-P (WIFI) (DDR4) board chosen for Dasharo ?
 
-Please read [this extensive analysis][msi_port_analysis] contributed to Intel
-Reddit.
+Please read [this extensive analysis][msi_port_analysis] contributed to the r/Intel
+subreddit.
 
 ## Why do you call it the `MSI Z790-P (WIFI) (DDR4)`?
 
