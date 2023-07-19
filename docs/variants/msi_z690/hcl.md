@@ -1,4 +1,4 @@
-# Hardware Compatiblity Lists
+# Hardware Compatibility Lists
 
 Following compatibility list is compiled thanks to community contribution and
 Dasharo Team work. Please note there are other good sources of information
@@ -94,7 +94,7 @@ hardware.
     > controller and reported by DMI/SMBIOS may be slightly lower than advertised
     > in the module specifications. This can vary based on the board design, CPU
     > and many other factors.
-    
+
     ### HCL list - MSI PRO Z690-A DDR4
 
     <center>
@@ -121,13 +121,13 @@ hardware.
 
 
     ### HCL list - MSI PRO Z690-A DDR5
-    
+
     | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
     |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
     | Kingston    | [KF556C40BB/8][6] |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
     | Crucial     | [CT8G48C40U5.M4A1/8][7] |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
     | ADATA       | [AD5U48008G-S][9] |8GB | 4800MT/s 40-40-40 1.1V | &#10004;/&#10004;/&#10004; |
-    
+
     [1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
     [2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
     [3]: https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf
@@ -144,12 +144,12 @@ hardware.
     __NOTE__: Since we cannot extend following list based on automatic Dasharo
     HCL reports parsing until [this
     issue](https://github.com/Dasharo/dasharo-issues/issues/462) would be
-    addresed we decided to not update GPU HCL ourselves. We will merge PRs to
-    GPU HCL, if following criteria would be addresed:
+    addressed we decided to not update GPU HCL ourselves. We will merge PRs to
+    GPU HCL, if following criteria would be addressed:
 
     * Card has to be installed on main metal 16x slot, and there shouldn't be
       any other GPU except Intel integrated one if non-F CPU.
-    * Confirmation than Dasharo splash screen and Firmware menues were working.
+    * Confirmation than Dasharo splash screen and Firmware menus were working.
     * Actual GPU chip (PCI Vendor ID / Device ID).
     * Video Card model (Subsystem Vendor ID / Device ID).
     * Option ROM version.
@@ -193,30 +193,34 @@ Maintainer documentation](../../../dev-proc/hcl-maintainer).
 
 ## Contributing
 
-* Use [Dasharo Tools Suite HCL
+- Use [Dasharo Tools Suite HCL
   report](../../../dasharo-tools-suite/documentation/#hcl-report) to upload
   report automatically.
-* Create new issue in [Dasharo issues
+- Create new issue in [Dasharo issues
   repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
-* Create PR directly to [Dasharo documentation
+- Create PR directly to [Dasharo documentation
   repository](https://github.com/Dasharo/docs).
-* [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690) your
-  `/proc/cpuinfo` or relevant information using following template:
+
+- [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690)
+  your `/proc/cpuinfo` or relevant information using following template:
+
   ```text
   CPU model:
   Dasharo version:
   ```
 
-* [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
+- [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
   as attachments outputs of following command:
+
   ```bash
   decode-dimms > decode-dimms.log 2> decode-dimms.err.log
   ```
+
   In email please include Dasharo version.
+
   ```text
   Dasharo version:
   ```
 
 If you already have reported your results and you change some hardware
 configuration we would appreciate an update.
-
