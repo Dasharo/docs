@@ -18,6 +18,7 @@ The image file must fulfill a number of requirements:
 - preferably containing a simple logo on a black background with no additional
 padding.
 - make sure it is properly formatted. To be sure, use the command:
+
 ```bash
 convert -background None custom_logo.bmp BMP3:logo.bmp
 ```
