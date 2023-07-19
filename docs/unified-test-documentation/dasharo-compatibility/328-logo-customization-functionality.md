@@ -50,6 +50,7 @@ will be shown properly.
 1. Based on the
    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
    replace the logo in an existing image.
+1. Reboot the DUT and observe the boot logo.
 
 **Expected result**
 
