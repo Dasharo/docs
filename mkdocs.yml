@@ -212,9 +212,7 @@ nav:
           - 'Test matrix': variants/msi_z690/test-matrix.md
           - 'Openness score': variants/msi_z690/openness_analysis.md
           - 'Development': variants/msi_z690/development.md
-          - 'Memory Compatibility': variants/msi_z690/memory-hcl.md
-          - 'CPU Compatibility': variants/msi_z690/cpu-hcl.md
-          - 'GPU Compatibility': variants/msi_z690/gpu-hcl.md
+          - 'Hardware Compatibility': variants/msi_z690/hcl.md
           - 'Community Test Results': variants/msi_z690/community-test-results.md
           - 'FAQ': variants/msi_z690/faq.md
       - 'MSI PRO Z790-P':
@@ -246,6 +244,7 @@ nav:
       - 'Features and bug fixes development process': dev-proc/feature-bug-fix-dev-process.md
       - 'Standard Release Process': dev-proc/standard-release-process.md
       - 'Documentation guidelines': dev-proc/documentation-guidelines.md
+      - 'HCL Maintainer documentation': dev-proc/hcl-maintainer.md
 # - 'Dasharo SKUs':
     # - 'Overview': variants/skus-overview.md
     # - 'Firewall': variants/firewall.md
