@@ -1,7 +1,7 @@
 # Firmware update
 
-The following documentation describes the process of Dasharo open-source
-firmware update. The update process may be different, depending on which
+The following documentation describes the process of updating Dasharo
+open-source firmware. The update process may be different depending on which
 firmware version is currently installed on your device. The currently installed
 firmware version can be checked with the following command in a Linux
 environment:
@@ -27,7 +27,7 @@ Please use one of the following environments to perform Dasharo update:
 * [Dasharo Tools Suite (DTS)](#dasharo-tools-suite)
 * [Linux distribution of your choice](#linux-distribution-of-your-choice)
 
-We recommend using the DTS.
+We recommend using DTS.
 
 ### Dasharo Tools Suite
 

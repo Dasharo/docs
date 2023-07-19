@@ -2,7 +2,7 @@
 
 ## Intro
 
-This document gather various notes and documentation useful for development of
+This document gathers various notes and documentation useful for development of
 Dasharo compatible with the MSI PRO Z790-P platform.
 
 ## Hardware connection

@@ -15,7 +15,7 @@ section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-d
 procedure. This will help you set up Dasharo effectively and without manual
 intervention.
 
-## Initial deployment manually
+## Manual initial deployment
 
 Flashing coreboot can be done from Linux using flashrom with the internal
 programmer. This document describes the process of building, installing and

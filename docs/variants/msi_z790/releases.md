@@ -1,6 +1,6 @@
 # Release Notes
 
-Following Release Notes describe status of Open Source Firmware development for
+Following Release Notes describe the status of Open-Source Firmware development for
 MSI PRO Z790-P (WIFI) DDR4 and MSI PRO Z790-P (WIFI).
 
 For details about our release process please read

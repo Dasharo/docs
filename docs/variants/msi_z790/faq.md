@@ -1,11 +1,11 @@
 # FAQ
 
-## Why MSI Z790-P (WIFI) (DDR4) was chosen for Dasharo ?
+## Why was the MSI Z790-P (WIFI) (DDR4) board chosen for Dasharo ?
 
 Please read [this extensive analysis][msi_port_analysis] contributed to Intel
 Reddit.
 
-## Why do you use the nomenclature `MSI Z790-P (WIFI) (DDR4)`?
+## Why do you call it the `MSI Z790-P (WIFI) (DDR4)`?
 
 This nomenclature is the result of the naming used by the producer.
 `MSI PRO Z790-P` is the nomenclature used for naming the platform with
@@ -129,7 +129,7 @@ Validation Procedure or have been tested by the community.
 The list of all supported memory modules is available in the
 [GPU HCL](../gpu-hcl) documentation.
 
-## What does the obligatory Dasharo Subscripion includes?
+## What does the obligatory Dasharo Subscripion include?
 
 The Dasharo Bronze Subscription includes:
 
@@ -155,7 +155,7 @@ Full question:
 "In the Disclaimer, you wrote that one of the warranty
 conditions is: "No signs of customer interference with the platform or
 firmware." How would a user modify firmware without losing the warranty? Being
-open source to be easy to modify, then saying "don't touch this" seems
+open-source to be easy to modify, then saying "don't touch this" seems
 contradictory. How would you add an exception?"
 
 Playing with firmware parameters can result in damaging the mainboard. Such
