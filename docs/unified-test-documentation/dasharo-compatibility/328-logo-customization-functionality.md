@@ -5,58 +5,51 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
-1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
-1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
-1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
-1. Make yourself familiar with
-    [Logo customization procedure](/guides/logo-customization)
+   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+1. Get familiar with
+   [Logo customization procedure](/guides/logo-customization)
 
 ## LCM001.001 Replace logo in existing image and flashing firmware
 
 **Test description**
 
-This test aims to verify whether replacing the logo in the existing image is
+The test aims to verify whether replacing the logo in the existing image is
 possible and, whether after flashing the DUT with the new image, the new logo
 will be shown properly.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
 1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
+   [Test cases common documentation](#test-cases-common-documentation) section.
 1. Current Dasharo firmware dedicated for the platform.
 
 **Test steps**
 
 1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
+1. Hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `iPXE Network boot` option using the arrow keys and press `Enter`.
+1. Select the `iPXE Shell` option using the arrow keys and press `Enter`.
+1. Configure communication interface by using the following command:
+
+    ```bash
+    dhcp
+    ```
+
+1. Connect to the DTS ipxe menu by using the following command:
+
+    ```bash
+    chain http://boot.3mdeb.com/dts.ipxe
+    ```
+
+1. Wait for `Enter an option:`.
+1. Type in `9` and press `Enter`.
 1. Based on the
-    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
-    replace the logo in an existing image.
-1. Flash the firmware by using the internal programmer and `flashrom` tool. If
-    DUT is already flashed with the Dasharo firmware, the following command
-    should be used:
-
-    ```bash
-    flashrom -p internal -w [path-to-binary] --fmap -i RW_SECTION_A
-    ```
-
-    Otherwise, the following command should be used:
-
-    ```bash
-    flashrom -p internal -w [path-to-binary] --ifd -i bios
-    ```
-
-1. Reboot DUT.
+   [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
+   replace the logo in an existing image.
 
 **Expected result**
 
