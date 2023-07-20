@@ -10,8 +10,8 @@ keep content added by us minimalistic.
 ## Embedded Firmware
 
 We use definition explained in first chapter of
-["Embedded Firmware Solutions"](https://www.apress.com/gp/book/9781484200711) book
-by Jiming Sun, Marc Jones, Stefan Reinauer and Vincent Zimmer.
+["Embedded Firmware Solutions"](https://link.springer.com/book/10.1007/978-1-4842-0070-4)
+book by Jiming Sun, Marc Jones, Stefan Reinauer and Vincent Zimmer.
 
 Firmware is "layer of software between the hardware and the
 operating system (OS), with the main purpose to initialize and

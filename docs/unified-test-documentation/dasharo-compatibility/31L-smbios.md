@@ -5,13 +5,13 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
+    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. Install the `dmidecode` package: `sudo apt-get install dmidecode`.
 
 ## DMI001.001 Verify the serial number
@@ -20,7 +20,7 @@
 
 This test aims to verify that the serial number field is filled in correctly
 according to the
-[Dasharo SMBIOS guidelines](../../../dev-proc/smbios-rules/).
+[Dasharo SMBIOS guidelines](https://docs.dasharo.com/dev-proc/smbios-rules/).
 
 **Test configuration data**
 

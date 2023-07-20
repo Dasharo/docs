@@ -101,7 +101,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [Vboot Recovery Popup](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/#vbo009001-recovery-boot-popup-firmware)
 - Fullscreen setup menu
-- [Open-source Embedded Controller Firmware](../../../unified/novacustom/recovery/#ec-firmware-recovery)
+- [Open-source Embedded Controller Firmware](https://docs.dasharo.com/unified/novacustom/recovery/#ec-firmware-recovery)
 
 ### Fixed
 

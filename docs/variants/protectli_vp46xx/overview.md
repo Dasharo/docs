@@ -19,7 +19,6 @@ For more information please refer to the references below.
 
 ## References
 
-* [VP4630 announcement](https://protectli.com/news/vp4630-launch/)
 * [Buy VP4630 in Protectli shop](https://protectli.com/product/vp4630/)
 
 ## Documentation sections

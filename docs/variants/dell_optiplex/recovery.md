@@ -5,7 +5,7 @@
 ---
 
 Following documentation describes the process of recovering hardware from brick
-state with [RTE](../../../transparent-validation/rte/introduction/) and Dasharo
+state with [RTE](../../transparent-validation/rte/introduction.md) and Dasharo
 open-source firmware. Following procedure is supported for following models
 
 <center>
@@ -20,7 +20,8 @@ open-source firmware. Following procedure is supported for following models
 
 ## Step 1: Prepare hardware
 
-1. To prepare hardware please follow [hardware preparation](../initial-deployment/#hardware-preparation)
+1. To prepare hardware please follow
+   [hardware preparation](initial-deployment.md#hardware-preparation)
    procedure.
 2. Follow instruction in the video to remove heatsink:
 
@@ -110,7 +111,7 @@ pin of `SPI_1` chip, marked with a small dot engraved on the chip.
 ## Step 5: Prepare recovery binary
 
 Following procedure assume that you use recovery binary created during [backup
-process](../../../osf-trivia-list/deployment/#how-to-use-flashrom-to-backup-vendor-bios).
+process](../../osf-trivia-list/deployment.md#how-to-use-flashrom-to-backup-vendor-bios).
 Backup has 12MB, so it have to be split
 
 ```bash
@@ -142,9 +143,9 @@ flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX
 ## (Optional) Step 7: Flash 8MB (ME) part
 
 If a more serious problem occurs, like
-[broken ME](../faq/#cpu-was-replace-warm-reset-required-loop),
+[broken ME](faq.md#cpu-was-replace-warm-reset-required-loop),
 it may be necessary to use your
-[firmware backup](../initial-deployment/#bios-backup)
+[firmware backup](initial-deployment.md#bios-backup)
 and restore content of 8MB chip.
 
 ### Step 7a: Connect SOIC-16 Pomona clip between RTE and target

@@ -5,7 +5,7 @@
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 ## BMF001.001 Reset to Defaults option
 
@@ -47,4 +47,4 @@ all Dasharo System Features settings.
    System Features.
 1. After using the `F9` key, all `Dasharo System Features` options should be set
    to default. All options covered by this functionality can be found
-   [here](../../../../dasharo-menu-docs/dasharo-system-features/).
+   [here](https://docs.dasharo.com/../dasharo-menu-docs/dasharo-system-features/).

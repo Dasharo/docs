@@ -14,7 +14,7 @@ EC firmware externally using Arduino.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Make yourself familiar with
     [EC recovery documentation](/unified/novacustom/recovery/#ec-firmware-recovery).
 

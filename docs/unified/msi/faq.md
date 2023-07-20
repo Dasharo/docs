@@ -32,7 +32,7 @@ the DDR4 WIFI platform. In turn, Dasharo working correctness on
 ## Can I safely try this on my board?
 
 If you are afraid of bricking the board and have no means of [recovering from
-failed installation](../recovery), we **do not recommend** trying it out until
+failed installation](recovery.md), we **do not recommend** trying it out until
 at least the v1.0.0 is released. Recovery process is not suitable for
 inexperienced users right now. We will be trying to make it easier, and if that
 happens, we may change our recommendation here.
@@ -41,9 +41,9 @@ happens, we may change our recommendation here.
 
 We give no warranty, although it is highly unlikely, provided that you use the
 supported board model and follow the [Initial
-Deployment](../initial-deployment). In the worst scenario, you might "brick" the
+Deployment](initial-deployment.md). In the worst scenario, you might "brick" the
 board, rendering it unbootable. It can be fixed by following the [recovery
-procedure](../recovery). In case of concerns, we invite you to buy the equipment
+procedure](recovery.md). In case of concerns, we invite you to buy the equipment
 directly in our [online
 store](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1) with a
 subscription service, under which we perform the Dasharo installation with the
@@ -54,7 +54,7 @@ latest release, and offer full support through invite-only Matrix channel.
 In such a case, you would get stuck with black screen on the display. There will
 be no beeping sounds from the buzzer as well. The only way to get some
 information on what's going on in that state is to use the [Serial
-header](../development/#hardware-connection) to read out error information.
+header](development.md#hardware-connection) to read out error information.
 
 ## What can be the reason of board "bricking"?
 
@@ -62,18 +62,18 @@ The most common reason would be the fact that you DDR memory modules are not
 initialized properly.
 
 The other reason might be improper or interrupted installation. Please make sure
-to follow the [Initial Deployment Manual](../initial-deployment) correctly.
+to follow the [Initial Deployment Manual](initial-deployment.md) correctly.
 
 ## How can I "unbrick" my board?
 
-Please follow the [recovery procedure](../recovery).
+Please follow the [recovery procedure](recovery.md).
 
 ## Which CPUs are supported?
 
 We can say the "supported" one is the one that have been tested during
 Validation Procedure or have been tested by the community.
 
-The list of all supported CPUs is available in the [CPU HCL](../cpu-hcl)
+The list of all supported CPUs is available in the [CPU HCL](hcl.md)
 documentation.
 
 In practice, any Alder Lake-S Processor should work.
@@ -87,7 +87,7 @@ We can say the "supported" one is the one that have been tested during
 Validation Procedure or have been tested by the community.
 
 The list of all supported memory modules is available in the
-[Memory HCL](../memory-hcl) documentation.
+[Memory HCL](hcl.md) documentation.
 
 ## What is the memory profile?
 
@@ -127,7 +127,7 @@ We can say the "supported" one is the one that have been tested during
 Validation Procedure or have been tested by the community.
 
 The list of all supported memory modules is available in the
-[GPU HCL](../gpu-hcl) documentation.
+[GPU HCL](hcl.md) documentation.
 
 ## What does the obligatory Dasharo Subscripion includes?
 

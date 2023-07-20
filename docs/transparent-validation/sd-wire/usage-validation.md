@@ -281,6 +281,6 @@ References & Projects:
 * [SD Wire & 3d Printer Usage](https://github.com/arekm/OctoPrint-Sdwire)
 
 [tizen]: https://git.tizen.org/cgit/tools/testlab/sd-mux/
-[shop1]: https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/
+[shop1]: https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/
 [balena]: https://www.balena.io/etcher/
 [rpios]: https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/2021-05-07-raspios-buster-armhf.zip

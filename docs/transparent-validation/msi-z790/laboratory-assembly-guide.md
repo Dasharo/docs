@@ -11,7 +11,7 @@ The below table contains information about all elements which are needed to
 create the testing stand.
 
 * MSI PRO Z790-P platform
-* [RTE v1.1.0](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
+* [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 * Sonoff S20 type E
 * 4x standard female-female connection wire 2.54 mm raster
 * 7x standard female-female connection wire 2.54/2.00 mm raster
@@ -26,13 +26,13 @@ components of the laboratory stand.
 ### MSI PRO Z790-P
 
 MSI PRO Z790-P platform should be prepared in accordance with the
-[Motherboard assembly](presale-assembly-and-validation.md#motherboard-assembly-only)
+[Motherboard assembly](../msi-z690/presale-assembly-and-validation.md#motherboard-assembly-only)
 documentation.
 
 ### RTE
 
 RTE (acronym: Remote Testing Environment) should be prepared in accordance with
-[Quick start guide](../../rte/v1.1.0/quick-start-guide) documentation dedicated
+[Quick start guide](../rte/v1.1.0/quick-start-guide.md) documentation dedicated
 to the device.
 
 ### Sonoff
@@ -282,7 +282,7 @@ The following sections describe how to use all of the enabled features:
 ### Serial connection
 
 The method of setting and using serial connection is described in the
-[Serial connection guide](../../rte/v1.1.0/serial-port-connection-guide).
+[Serial connection guide](../rte/v1.1.0/serial-port-connection-guide.md).
 
 ### Power supply controlling
 

@@ -89,7 +89,7 @@ intervention.
 
    ![](../../images/dasharo-black.jpg)
 
-From that point you can use [firmware update](../firmware-update) methods to
+From that point you can use [firmware update](firmware-update.md) methods to
 update your firmware.
 
 ## Troubleshooting

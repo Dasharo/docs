@@ -125,7 +125,7 @@ vendor/Dasharo firmware is shown.
 ### Logs from tests
 
 Logs are available under this
-[link](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/novacustom/tat/logs-checkbox&fileid=480327).
+[link](https://cloud.3mdeb.com/index.php/s/rrERogJkmGe9N8a).
 
 ## Summary
 

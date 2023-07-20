@@ -5,13 +5,13 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup/#os-boot-from-disk).
+    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
 ## ECR001.001 Battery monitoring - charge level in OS (Ubuntu 22.04)
 
@@ -224,7 +224,7 @@ and all basic keys work according to their labels.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware)
+   [Generic test setup: firmware](../generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -1574,7 +1574,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware)
+   [Generic test setup: firmware](../generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -1669,7 +1669,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware)
+   [Generic test setup: firmware](../generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -1761,7 +1761,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware)
+   [Generic test setup: firmware](../generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -1855,7 +1855,7 @@ illuminates in firmware.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware)
+   [Generic test setup: firmware](../generic-test-setup.md#firmware)
 
 **Test steps**
 
@@ -2067,7 +2067,7 @@ and all basic keys work according to their labels.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware)
+   [Generic test setup: firmware](../generic-test-setup.md#firmware)
 2. Connect PS/2 keyboard to the violet PS/2 port on the board or the PS/2
    splitter (if the board has a unified, black PS/2 connector)
 
@@ -2230,7 +2230,7 @@ and the menu can be traversed with serial console.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware)
+   [Generic test setup: firmware](../generic-test-setup.md#firmware)
 2. Connect DB9 null modem cable to RS232/USB adapter and the onboard serial
    port connector.
 

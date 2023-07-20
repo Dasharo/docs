@@ -8,7 +8,7 @@ running flashrom on Ubuntu 20.04.
 
 ## Build flashrom
 
-Please follow generic guide for [Dasharo flashrom fork](../../../osf-trivia-list/deployment/#how-to-install-dasharo-flashrom-fork).
+Please follow generic guide for [Dasharo flashrom fork](../../osf-trivia-list/deployment.md#how-to-install-dasharo-flashrom-fork).
 
 ## Reading flash contents
 

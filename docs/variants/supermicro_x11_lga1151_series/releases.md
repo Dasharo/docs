@@ -1,6 +1,6 @@
 # Dasharo compatible with Supermicro X11 LGA1151 Series
 
-**Please read the [overview page](../overview) first!**
+**Please read the [overview page](../overview.md) first!**
 
 <!--
 Following Release Notes describe status of Open Source Firmware development for

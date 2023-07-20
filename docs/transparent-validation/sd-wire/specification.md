@@ -20,7 +20,7 @@ LED positions are showed in the image below.
 
 ![](./../../images/SD-wire_leds.jpg)
 
-<center>Source: [wiki.tizen.org](https://wiki.tizen.org/images/thumb/3/3f/SDWire-leds.jpg/300px-SDWire-leds.jpg)</center>
+<center>Source: [wiki.tizen.org](https://wiki.tizen.org/File:SDWire-leds.png)</center>
 
 ## PCB elements and scheme
 

@@ -5,7 +5,7 @@
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. The DUT should be connected to the Internet by using an Ethernet cable.
 
 ## NBA001.001 Enable Network Boot (firmware)

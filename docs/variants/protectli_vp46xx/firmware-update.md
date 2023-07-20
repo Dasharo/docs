@@ -9,7 +9,7 @@ The update process may be different, depending on the currently installed
 Dasharo firmware version.
 
 For simplicity of the update process, we recommend using
-[Dasharo Tools Suite](../../../dasharo-tools-suite/overview).
+[Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/overview).
 
 Before starting the update procedure be sure to disable Dasharo BIOS Boot medium
 lock and Secure Boot:
@@ -18,13 +18,13 @@ lock and Secure Boot:
 1. While the device is booting, hold the `DELETE` key to enter the UEFI Setup
    Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the [Dasharo Security Options](../../../dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+1. Enter the [Dasharo Security Options](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
    submenu.
 1. Verify the state of the `Lock the BIOS boot medium` option - if the option
    is chosen, press `Space` and then `F10` to save the changes.
 1. Go back to the main menu using the `ESC` key.
 1. Enter the `Device Manager` menu.
-1. Enter the [Secure Boot Configuration](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+1. Enter the [Secure Boot Configuration](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
    submenu.
 1. Verify that the `Current Secure Boot State` field says Disabled - if not,
    unselect the `Attempt Secure Boot` option below then press `F10` to save the

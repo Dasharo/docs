@@ -48,7 +48,8 @@ The procedure will be slightly different depending on the model of your laptop.
     - USB-A to USB-B cable to connect the Arduino to the host
     - USB-C cable for grounding
 
-The full set for EC firmware recovery is available at our [online shop](https://3mdeb.com/shop/open-source-hardware/ec-flashing-kit/).
+The full set for EC firmware recovery is available at our
+[online shop](https://shop.3mdeb.com/shop/open-source-hardware/ec-flashing-kit/).
 
 #### Preparation
 

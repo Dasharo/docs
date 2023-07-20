@@ -5,7 +5,7 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. The DUT should be connected to the Internet by using an Ethernet cable.
 
 ## PXE001.001 Dasharo Network Boot is bootable
@@ -118,7 +118,7 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Proceed with the
-    [Requirements for DTS](../../../dasharo-tools-suite/documentation#running).
+    [Requirements for DTS](https://docs.dasharo.com/dasharo-tools-suite/documentation#running).
 
 **Test steps**
 
@@ -214,7 +214,7 @@ server.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 

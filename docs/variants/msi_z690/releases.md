@@ -281,7 +281,7 @@ gpg --verify msi_ms7d25_v0.4.0.rom.sha256.sig msi_ms7d25_v0.4.0.rom.sha256
 - Mainboard-specific SMBIOS data for slots and ports
 - PCI Subsystem ID configuration
 - CPU VR and PCH FIVR configuration
-- [Memory HCL](https://docs.dasharo.com/variants/msi_z690/memory-hcl/)
+- [Memory HCL](https://docs.dasharo.com/unified/msi/hcl/)
 - [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
 - [TPM Support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/200-tpm-support/)
 - [Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)

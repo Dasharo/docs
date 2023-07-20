@@ -5,7 +5,7 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 ## QBS001.001 QubesOS installation
 
@@ -25,7 +25,7 @@ This test aims to verify that QubesOS Stable distribution could be installed.
 
 **Test steps**
 
-1. According to the [Documentation](../../generic-test-setup#os-installer)
+1. According to the [Documentation](../generic-test-setup.md#os-installer)
     perform the OS installation process.
 
 **Expected result**

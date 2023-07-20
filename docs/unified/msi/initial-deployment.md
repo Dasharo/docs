@@ -24,7 +24,7 @@ running flashrom on Ubuntu 22.04.
 
 ### Build flashrom
 
-Please follow generic guide for [Dasharo flashrom fork](../../../osf-trivia-list/deployment/#how-to-install-dasharo-flashrom-fork).
+Please follow generic guide for [Dasharo flashrom fork](../../osf-trivia-list/deployment.md#how-to-install-dasharo-flashrom-fork).
 
 ### Flashing
 
@@ -198,7 +198,7 @@ echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
     ```
 
 Note you will need to resign the binary after adding the SMBIOS data. Please
-check [Vboot documentation](../../../guides/vboot-signing) how to
+check [Vboot documentation](../../guides/vboot-signing.md) how to
 resign the data. It is the machine owner's responsibility to generate and use
 own keys during updates.
 

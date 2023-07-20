@@ -18,14 +18,14 @@ Test results for this platform can be found
 
 ### Added
 
-- [USB stack and mass storage enable/disable option](../../../dasharo-menu-docs/dasharo-system-features/#usb-configuration)
-- [SMM BIOS write protection enable/disable option](../../../dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [USB stack and mass storage enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
+- [SMM BIOS write protection enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 
 ### Changed
 
-- [Updating from v1.0.x requires flashing the WP_RO recovery partition](../../protectli_vp2420/firmware-update/#updating-minor-versions-v1xy)
+- [Updating from v1.0.x requires flashing the WP_RO recovery partition](../protectli_vp2420/firmware-update.md#updating-minor-versions-v1xy)
 - [Firmware version v1.1.x are signed with a new key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
-- [Keys must be provisioned prior enabling Secure Boot](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+- [Keys must be provisioned prior enabling Secure Boot](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
 
 ### Fixed
 
@@ -106,7 +106,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 ### Added
 
 - Support for VP2420 platform
-- [Vboot Verified Boot](../../../guides/vboot-signing/)
+- [Vboot Verified Boot](https://docs.dasharo.com/guides/vboot-signing/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)

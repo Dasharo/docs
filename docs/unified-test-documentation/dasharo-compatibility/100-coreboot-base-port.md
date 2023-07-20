@@ -5,7 +5,7 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Connect to the UART debug interface and open a serial console.
 
 ## CBP001.001 Boot into coreboot stage bootblock
