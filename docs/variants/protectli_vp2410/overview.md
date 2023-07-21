@@ -1,6 +1,32 @@
 # Overview
 
+The Vault is a small form network appliance built for use as a firewall
+/ router, virtualization platform, a daily-driven personal computer,
+and more. The VP2410 is based on a 4 network port design that leverages
+a low power, but versatile Intel Celeron J4125 CPU.
+
+![](/images/VP2410.png)
+
+The VP2410 can accommodate up to 16GB DDR4 RAM and 2TB m.2 SATA SSD
+storage drive. The built-in 8GB eMMC module can be used for booting a
+ light-weight OS for example, or for use as optional storage.
+
+VP2410 specification:
+
+* Intel Celeron® J4125 Quad Core at 2 GHz (Burst up to 2.7 GHz)
+* 4 Intel® Gigabit Ethernet NIC ports
+* 8GB eMMC module on board
+* Intel® AES-NI support
+* Fanless and Silent
+* Included 12v Power Supply, VESA mount kit, Serial Console Cable,
+SATA data and power cables for internal SSD, Quick Start Guide
+
+For more information please refer to the references below.
+
 ## References
+
+* [Protectli knowledge base](https://kb.protectli.com/)
+* [Buy VP2410 in Protectli shop](https://eu.protectli.com/product/vp2410)
 
 ## Documentation sections
 
