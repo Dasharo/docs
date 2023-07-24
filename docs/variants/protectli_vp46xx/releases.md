@@ -50,6 +50,10 @@ Release version v1.1.0 is currently only available for the VP4670 platform.
 [sha256][protectli_vp4670_v1.1.0.rom_hash]{.md-button}
 [sha256.sig][protectli_vp4670_v1.1.0.rom_sig]{.md-button}
 
+[protectli_vp4630_vp4650_v1.1.0.rom][protectli_vp4630_vp4650_v1.1.0.rom_file]{.md-button}
+[sha256][protectli_vp4630_vp4650_v1.1.0.rom_hash]{.md-button}
+[sha256.sig][protectli_vp4630_vp4650_v1.1.0.rom_sig]{.md-button}
+
 See how to verify signatures on [this video](https://asciinema.org/a/577551)
 
 ### SBOM (Software Bill of Materials)
@@ -62,6 +66,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/577551)
 [protectli_vp4670_v1.1.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom
 [protectli_vp4670_v1.1.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom.sha256
 [protectli_vp4670_v1.1.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom.sha256.sig
+[protectli_vp4630_vp4650_v1.1.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4630_vp4650_v1.1.0.rom
+[protectli_vp4630_vp4650_v1.1.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4630_vp4650_v1.1.0.rom.sha256
+[protectli_vp4630_vp4650_v1.1.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4630_vp4650_v1.1.0.rom.sha256.sig
 
 ## v1.0.19 - 2022-12-08
 
