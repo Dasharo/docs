@@ -109,6 +109,55 @@ Example output with unwanted results:
 2800.00000000000
 ```
 
+## CPF001.003 CPU not stuck on initial frequency (Heads+Debian)
+
+**Test description**
+
+This test aims to verify whether the mounted CPU does not stuck on the
+initial frequency after booting into the OS.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = `Debian 12`
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and run the following command:
+
+    ```bash
+    cat /proc/cpuinfo | grep -i mhz
+    ```
+
+1. Note the results.
+
+**Expected result**
+
+The output of the command should contain information about the current
+frequency of each CPU core. If the current frequency for each core is the
+same as initial frequency, the test should be considered as failed.
+
+Example output with unwanted results:
+
+```bash
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+cpu MHz		: 2800.000
+```
+
 ## CPF002.001 CPU runs on expected frequency (Ubuntu 22.04)
 
 **Test description**
