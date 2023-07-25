@@ -36,6 +36,19 @@ repos:
     hooks:
       - id: codespell
 
+  - repo: local
+    hooks:
+      - id: double_slashes_url_external
+        name: Check double slashes in external URLs
+        entry: https?:\/\/[^\s]*(?<!http:)((?<!https:)\/\/).*
+        language: pygrep
+        exclude: '^.*.(jpeg|jpg|png|pdf)$'
+      - id: double_slashes_url_markdown
+        name: Check double slashes in markdown URLs
+        entry: (\:\s|\()[^\s]*(?<!http:)((?<!https:)\/\/)
+        language: pygrep
+        exclude: '^.*.(jpeg|jpg|png|pdf)$'
+
 ci:
   autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
   autofix_prs: false
