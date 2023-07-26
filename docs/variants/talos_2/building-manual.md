@@ -30,13 +30,7 @@ To build coreboot image, follow the steps below:
 1. Inside of the container, configure and start the build process:
 
     ```bash
-    (docker)cat > .config <<EOF
-    CONFIG_VENDOR_RAPTOR_CS=y
-    CONFIG_TALOS_2_INFINEON_TPM_1=y
-    CONFIG_TPM_LOG_TPM2=y
-    CONFIG_PAYLOAD_SKIBOOT=y
-    CONFIG_LOCALVERSION="v0.7.0"
-    EOF
+    (docker)cp configs/config.raptor-cs-talos-2 .config
     (docker)make olddefconfig
     (docker)make
     ```
