@@ -18,6 +18,54 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1KpmuPEkWOj3SieophUbgf7CF6mydliMsEDLtOFOrKn0/edit?usp=sharing).
 
+## v0.7.0 - 2023-07-26
+
+### Fixed
+
+- [CPU appears to be stuck on initial frequency](https://github.com/Dasharo/dasharo-issues/issues/35)
+- [No flashrom support](https://github.com/Dasharo/dasharo-issues/issues/190)
+- [0.6 Release - Cannot boot if no TPM](https://github.com/Dasharo/dasharo-issues/issues/191)
+- [OS-level access to CBMEM](https://github.com/Dasharo/dasharo-issues/issues/69)
+- [TPM discovery and usage stability](https://github.com/Dasharo/dasharo-issues/issues/415)
+- [Dual CPU setup - Second fan at full speed](https://github.com/Dasharo/dasharo-issues/issues/416)
+
+### Known issues
+
+- [Missing parts of Device Tree describing specific unit (VPD, serial numbers)](https://github.com/Dasharo/dasharo-issues/issues/32)
+- [No DIMM temperatures reported](https://github.com/Dasharo/dasharo-issues/issues/446)
+
+### Binaries
+
+[raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc][raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc_file]{.md-button}
+[sha256][raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc_hash]{.md-button}
+[sha256.sig][raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc_sig]{.md-button}
+
+[raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc][raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc_file]{.md-button}
+[sha256][raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc_hash]{.md-button}
+[sha256.sig][raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc_sig]{.md-button}
+
+[raptor-cs_talos-2_zImage_v0.7.0.bundled][raptor-cs_talos-2_zImage_v0.7.0.bundled_file]{.md-button}
+[sha256][raptor-cs_talos-2_zImage_v0.7.0.bundled_hash]{.md-button}
+[sha256.sig][raptor-cs_talos-2_zImage_v0.7.0.bundled_sig]{.md-button}
+
+See how to verify signatures on [this video](https://asciinema.org/a/415457)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 4ed0a830b14d6e1841eae0dd3c2e6539a8dcf0a8 revision fc47236e](https://github.com/Dasharo/coreboot/tree/fc47236e)
+- [skiboot based on 9858186353f2203fe477f316964e03609d12fd1d revision 1b14dd0b](https://github.com/Dasharo/skiboot/tree/1b14dd0b)
+- [heads based on edf200e7913c62975a424cfb9dbd579747d0665c revision edf200e7913c62975a424cfb9dbd579747d0665c](https://github.com/osresearch/heads/tree/edf200e7913c62975a424cfb9dbd579747d0665c)
+
+[raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc
+[raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc.sha256
+[raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_bootblock_v0.7.0.signed.ecc.sha256.sig
+[raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc
+[raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc.sha256
+[raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_coreboot_v0.7.0.rom.signed.ecc.sha256.sig
+[raptor-cs_talos-2_zImage_v0.7.0.bundled_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_zImage_v0.7.0.bundled
+[raptor-cs_talos-2_zImage_v0.7.0.bundled_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_zImage_v0.7.0.bundled.sha256
+[raptor-cs_talos-2_zImage_v0.7.0.bundled_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.7.0/raptor-cs_talos-2_zImage_v0.7.0.bundled.sha256.sig
+
 ## v0.6.0 - 2022-08-26
 
 ### Added
