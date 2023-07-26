@@ -17,5 +17,11 @@ and should be maintained in that way.
 4. Fix all required issues and repeat point 3 until fixed - this doesn't mean
    all tests pass, this mean that approved set passed
 5. If results are accepted merge it to `<platform>/release` branch
-6. Add tag, which should trigger CI and publish binaries
+6. Add tag, which should trigger CI and publish binaries. Tag should be
+   annotated and signed. For example:
+
+    ```bash
+    git tag -a -s -m "<platform>_vX.Y.Z" <platform>_vX.Y.Z
+    ```
+
 7. Merge release branch to develop
