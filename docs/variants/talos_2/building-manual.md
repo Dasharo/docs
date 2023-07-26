@@ -52,6 +52,7 @@ To build coreboot image, follow the steps below:
 1. Start docker container:
 
     ```bash
+    cd heads
     docker run --rm -it -v $PWD:$PWD -w $PWD -u "$(id -u):$(id -g)" 3mdeb/heads-docker:2.4.0 /bin/bash
     ```
 
