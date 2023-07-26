@@ -22,7 +22,7 @@ jobs:
           args: --max-redirects 10 -a 403,500,503 .
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
-    name: Check orphan pages with SEO Spy
+    name: Check orphan pages
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -47,3 +47,31 @@ jobs:
         uses: 3mdeb/seo-spy-action@main
         with:
           domain: 'http://127.0.0.1:8000'
+  seo_spy_canonical_links:
+    runs-on: ubuntu-latest
+    name: Check canonical links
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Checkout SEO Spy
+        uses: actions/checkout@v3
+        with:
+          repository: 3mdeb/seo-spy
+          path: seo-spy
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r seo-spy/requirements.txt
+          pip install -r requirements.txt
+      - name: Serve site
+        run: |
+          mkdocs serve &
+          sleep 15
+      - name: Check canonical links
+        uses: 3mdeb/seo-spy-action@main
+        with:
+          domain: 'http://127.0.0.1:8000'
+          args: '-c'
