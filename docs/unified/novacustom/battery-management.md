@@ -4,7 +4,7 @@ NovaCustom laptops equipped with Dasharo firmware provide several battery
 management mechanisms to optimize user experience and further prolong the
 battery's lifespan.
 
-## Boot  block when the battery is low
+## Boot  blocking when the battery is low
 
 To prevent corruption of the bootloader, which may occur due to sudden power cut
 off during the OS boot process, booting the OS is blocked when the battery level
@@ -28,15 +28,14 @@ battery state, following error message will be displayed:
 
 ![](images/power_error.jpg)
 
-## Charging levels
+## Charge thresholds
 
-Dasharo firmware implements various battery charging level limits, which can
-vastly extend the lifespan of the battery:
+Dasharo firmware implements battery charge thresholds, which aim to extend the
+lifespan of the battery:
 
-- plugging in the charger when the battery level sits below 95%, will result in
-    charging the battery until 98% of capacity is reached. The battery status
-    will then change to `not charging`
+- charging will only start when the battery level is below 95%
 
-- plugging in the charger when the battery level sits between 95% and 98%, will
-    result in not activating the battery charging mechanism util the battery
-    level below 95% is reached.
+- charging will stop once the battery level reaches 98%
+
+Custom charge thresholds can be configured using the Dasharo setup menu or using
+third-party software like [tlp](https://linrunner.de/tlp/faq/battery.html).
