@@ -1,12 +1,11 @@
 # Overview
 
-The Vault is a small form network appliance built for use as a firewall
- / router, virtualization platform, a daily-driven personal computer,
- and more. The VP2420 is another addition to the Vault Pro series. It
- is a 4 x 2.5 G network port design that leverages a low power,
- but versatile Intel Celeron J6412 CPU.
+The Vault Pro is a small form network appliance built for use as a firewall
+/ router, virtualization platform, a daily-driven personal computer,
+and more. The VP2420 is based on a 4 x 2.5 G network port design that leverages
+a low power, but versatile Intel Celeron J6412 CPU.
 
-![](/images/VP2410.png)
+![](/images/VP2420.png)
 
 The VP2420 can accommodate up to 32 GB DDR4 RAM and 2 TB M.2 SATA SSD
 storage drive (Note: The VP2420 supports M.2 SATA drives, not NVMe

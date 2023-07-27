@@ -1,6 +1,6 @@
 # Overview
 
-The Vault is a small form network appliance built for use as a firewall
+The Vault Pro is a small form network appliance built for use as a firewall
 / router, virtualization platform, a daily-driven personal computer,
 and more. The VP2410 is based on a 4 network port design that leverages
 a low power, but versatile Intel Celeron J4125 CPU.
@@ -9,7 +9,7 @@ a low power, but versatile Intel Celeron J4125 CPU.
 
 The VP2410 can accommodate up to 16GB DDR4 RAM and 2TB m.2 SATA SSD
 storage drive. The built-in 8GB eMMC module can be used for booting a
- light-weight OS for example, or for use as optional storage.
+light-weight OS for example, or for use as optional storage.
 
 VP2410 specification:
 
