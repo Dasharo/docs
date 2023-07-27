@@ -10,6 +10,25 @@ reinstall the original firmware from the board manufacturer.
 There are two documented recovery methods: using a [CH341A programming kit](https://3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/)
 or an [RTE](https://3mdeb.com/shop/open-source-hardware/rte/).
 
+Since v1.1.2 release it is also possible to use MSI FlashBIOS button feature
+to recover using an image placed in the USB stick.
+
+## Using MSI FlashBIOS button
+
+1. Format an empty USB drive with FAT32 filesystem.
+2. Place Dasharo release binary or official MSI binary on the drive's root
+   directory and name it `MSI.ROM`.
+3. Put the drive in the rear USB 2.0 port marked as `FlashBIOS`.
+4. Be sure that your machine is powered off (ATX supply must be still
+   connected).
+5. Press the FlashBIOS button near the `FlashBIOS` port.
+6. After a few seconds the machine should power on the ATX supply and begin
+   flashing (the red diode will be blinking).
+7. Wait approximately 5 minutes for the process to finish. The board will
+   automatically restart and boot.
+
+Here is a [video showing the process](https://www.youtube.com/watch?v=iTkXunUAriE).
+
 ### External flashing with programmer
 
 #### RTE
