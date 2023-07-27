@@ -237,6 +237,7 @@ nav:
       - 'Logo customization': guides/logo-customization.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
+      - 'Release signature verification': guides/signature-verification.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
