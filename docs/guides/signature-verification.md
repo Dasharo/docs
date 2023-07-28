@@ -1,6 +1,6 @@
 # Dasharo release signature verification
 
-Each published Dasharo release s signed with a signing key corresponding to
+Each published Dasharo release is signed with a signing key corresponding to
 given platform and versions. The key infrastructure is stored in
 [3mdeb-secpack](https://github.com/3mdeb/3mdeb-secpack).
 
@@ -21,7 +21,7 @@ site, please follow the instructions below:
 
     - `<release signing key URL>` is provided in the release notes
     - `<release signing key file>` is the file name in the
-    - `<release signing key URL>`
+    `<release signing key URL>`
     - `<release signing key name>` will show up after importing the key via GPG.
 
 2. Download the binaries, SHA sums and their signature files
