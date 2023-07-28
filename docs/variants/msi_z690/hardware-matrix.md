@@ -4,7 +4,7 @@
 
 This document describes the hardware configuration used for validation of the
 coreboot port on the MSI PRO Z690-A workstation. For additional information,
-please check the [FAQ section](./faq.md).
+please check the [FAQ section](../../unified/msi/faq.md).
 
 ## MSI PRO Z690-A WiFi DDR4, SN: 07D2511_LA1E012608
 

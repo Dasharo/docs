@@ -17,7 +17,9 @@ hardware.
     CPU Hardware Compatibility List presents the CPUs tested and verified
     to work with Dasharo by community. The following list does not include CPU
     which is tested and verfied in 3mdeb laboratory - this information might be
-    found in [Hardware Matrix](hardware-matrix.md) documentation.
+    found in [MSI PRO Z690-A Hardware Matrix](../../variants/msi_z690/hardware-matrix.md)
+    and [MSI PRO Z790-P Hardware Matrix](../../variants/msi_z790/hardware-matrix.md)
+    documentation.
 
     Legend:
 
@@ -31,30 +33,49 @@ hardware.
 
     <center>
 
-    | CPU Model | Dasharo version |  Source  |
-    |:---------:|:----------------------:|:---------:|
-    | 12th Gen Intel(R) Core(TM) i5-12400F | - | [Github PR][3] |
-    | 12th Gen Intel(R) Core(TM) i5-12400F | v1.1.0 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i5-12500T | v1.1.0 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i5-12500T | v1.1.0 | Dasharo HCL report |
-    | 12th Gen Intel(R) Core(TM) i5-12600 | v1.1.0 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i5-12600 | v1.1.0 | Dasharo HCL report |
-    | 12th Gen Intel(R) Core(TM) i5-12600K | v1.0.0 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i5-12600K | v1.0.0 | Dasharo HCL report |
-    | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.0 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.0 | Dasharo HCL report |
-    | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.1 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.1-rc4 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | Dasharo HCL report |
-    | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | [Qubes HCL reports][2] |
-    | 12th Gen Intel(R) Core(TM) i7-12700K | v1.1.0 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i7-12700K | v1.1.1 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i9-12900K | v0.4.0 | [Qubes HCL reports][1] |
-    | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.0 | Dasharo HCL Report |
-		| 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.1 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i9-12900KS | v1.1.1 | Dasharo HCL Report |
-    | 12th Gen Intel(R) Core(TM) i9-12900T | v1.1.0 | Dasharo HCL Report |
+    === "PRO Z690-A (WIFI) DDR4"
+        | CPU Model | Dasharo version |  Source  |
+        |:---------:|:----------------------:|:---------:|
+        | 12th Gen Intel(R) Core(TM) i5-12400F | - | [Github PR][3] |
+        | 12th Gen Intel(R) Core(TM) i5-12400F | v1.1.0 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i5-12500T | v1.1.0 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i5-12500T | v1.1.0 | Dasharo HCL report |
+        | 12th Gen Intel(R) Core(TM) i5-12600 | v1.1.0 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i5-12600 | v1.1.0 | Dasharo HCL report |
+        | 12th Gen Intel(R) Core(TM) i5-12600K | v1.0.0 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i5-12600K | v1.0.0 | Dasharo HCL report |
+        | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.0 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.0 | Dasharo HCL report |
+        | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.1 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.1-rc4 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | Dasharo HCL report |
+        | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | [Qubes HCL reports][2] |
+        | 12th Gen Intel(R) Core(TM) i7-12700K | v1.1.0 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i7-12700K | v1.1.1 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i9-12900K | v0.4.0 | [Qubes HCL reports][1] |
+        | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.0 | Dasharo HCL Report |
+    		| 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.1 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i9-12900KS | v1.1.1 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i9-12900T | v1.1.0 | Dasharo HCL Report |
+
+        [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
+        [2]: https://groups.google.com/g/qubes-users/c/lGOjuApLD_o/m/TBZN0PsXEgAJ
+
+    === "PRO Z690-A (WIFI)"
+        | CPU Model | Dasharo version |  Source  |
+        |:---------:|:----------------------:|:---------:|
+        | | | |
+
+    === "PRO Z790-P (WIFI) DDR4"
+        | CPU Model | Dasharo version |  Source  |
+        |:---------:|:----------------------:|:---------:|
+        | | | |
+
+    === "PRO Z790-P (WIFI)"
+        | CPU Model | Dasharo version |  Source  |
+        |:---------:|:----------------------:|:---------:|
+        | | | |
 
     </center>
 
@@ -96,51 +117,48 @@ hardware.
     > in the module specifications. This can vary based on the board design, CPU
     > and many other factors.
 
-    ### HCL list - MSI PRO Z690-A DDR4
-
     <center>
 
-    | Manufacturer | Part Number | Size | Speed | Configuration 1/2/4 | Dasharo version | Source |
-    |:------------:|:-----------:|:----:|:-----:|:-------------------:|:---------------:|:------:|
-    | Corsair | CMK32GX4M2E3200C16 | 16384 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
-    | Corsair | CMK32GX4M2E3200C16 | 16384 MB | 2133 MT/s (PC4-17000) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
-    | Corsair | CMK64GX4M2E3200C16 | 32768 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
-    | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
-    | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
-    | Crucial Technology | CT8G4DFS8266.C8FJ | 8192 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
-    | Kingston | KF3200C16D4/16GX | 16384 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
-    | Kingston | KF3200C16D4/16GX | 16384 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
-    | Kingston | KF3200C16D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
-    | Kingston | KF3200C16D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
-    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
-    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.0.0 | Dasharo HCL report |
-    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
-    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
-    | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1-rc4 | Dasharo HCL report |
-    | Patriot Memory | 4400 C19 Series | 8192 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
-    | Thermaltake Technology Co Ltd | RG26D408GX2-3600C18A | 8192 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+    === "PRO Z690-A (WIFI) DDR4"
+        | Manufacturer | Part Number | Size | Speed | Configuration 1/2/4 | Dasharo version | Source |
+        |:------------:|:-----------:|:----:|:-----:|:-------------------:|:---------------:|:------:|
+        | Corsair | CMK16GX4M2B3200C16 | 16384 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+        | Corsair | CMK16GX4M2B3200C16 | 16384 MB | 2133 MT/s (PC4-17000) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
+        | Corsair | CMK16GX4M2B3200C16 | 32768 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+        | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+        | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+        | Crucial Technology | CT8G4DFS8266.C8FJ | 8192 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+        | Kingston | KF3200C16D4/16GX | 16384 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+        | Kingston | KF3200C16D4/16GX | 16384 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
+        | Kingston | KF3200C16D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
+        | Kingston | KF3200C16D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
+        | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
+        | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.0.0 | Dasharo HCL report |
+        | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
+        | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
+        | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1-rc4 | Dasharo HCL report |
+        | Patriot Memory | 4400 C19 Series | 8192 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.0.0 | Dasharo HCL report |
+        | Thermaltake Technology Co Ltd | RG26D408GX2-3600C18A | 8192 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
+
+    === "PRO Z690-A (WIFI)"
+
+        | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
+        |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
+        | Kingston    | KF556C40BB/8 |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
+        | Crucial     | CT8G48C40U5.M4A1/8 |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
+        | ADATA       | AD5U48008G-S |8GB | 4800MT/s 40-40-40 1.1V | &#10004;/&#10004;/&#10004; |
+
+    === "PRO Z790-P (WIFI) DDR4"
+        | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
+        |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
+        | | | | | |
+
+    === "PRO Z790-P (WIFI)"
+        | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
+        |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
+        | | | | | |
 
     </center>
-
-
-    ### HCL list - MSI PRO Z690-A DDR5
-
-    | DIMM vendor | Part Number | Size | SPD profile | Configuration 1/2/4 |
-    |:-----------:|:-----------:|:----:|:-----------:|:-------------------:|
-    | Kingston    | [KF556C40BB/8][6] |8GB | 5600MT/s 40-40-40 1.25V | &#10004;/&#10004;/&#10004; |
-    | Crucial     | [CT8G48C40U5.M4A1/8][7] |8GB | 4800MT/s 40-39-39 1.1V | &#10004;/&#10004;/&#10004; |
-    | ADATA       | [AD5U48008G-S][9] |8GB | 4800MT/s 40-40-40 1.1V | &#10004;/&#10004;/&#10004; |
-
-    [1]: https://www.kingston.com/dataSheets/KF436C17BBK4_32.pdf
-    [2]: https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16
-    [3]: https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf
-    [4]: https://www.pny.com/anarchy-x-ddr4-red?sku=MD16GK2D4320016AXR
-    [5]: https://www.kingston.com/datasheets/KF436C18BBK2_64.pdf
-    [6]: https://www.kingston.com/memory/gaming/kingston-fury-beast-ddr5-memory
-    [7]: https://www.crucial.com/memory/ddr5/ct2k16g48c40u5
-    [8]: https://www.kingston.com/datasheets/HX426C16FRK4_64.pdf
-    [9]: https://www.adata.com/us/consumer/dram-module-ddr5-4800-u-dimm
-    [10]: https://www.amazon.com/OLOy-Memory-288-Pin-Desktop-MD4U323216DJDA/dp/B0836NZHWR
 
 === "GPU HCL"
 
@@ -162,8 +180,10 @@ hardware.
 
     GPU Hardware Compatibility List presents the GPUs tested and verified
     to work with Dasharo by community. The following list does not include GPU
-    which is tested and verfied in 3mdeb laboratory - this information might be
-    found in [Hardware Matrix](hardware-matrix.md) documentation.
+    which is tested and verfied in 3mdeb laboratory - his information might be
+    found in [MSI PRO Z690-A Hardware Matrix](../../variants/msi_z690/hardware-matrix.md)
+    and [MSI PRO Z790-P Hardware Matrix](../../variants/msi_z790/hardware-matrix.md)
+    documentation.
 
     Legend:
 
@@ -196,34 +216,113 @@ Maintainer documentation](../../../dev-proc/hcl-maintainer).
 
 ## Contributing
 
-- Use [Dasharo Tools Suite HCL
-  report](../../../dasharo-tools-suite/documentation/#hcl-report) to upload
-  report automatically.
-- Create new issue in [Dasharo issues
-  repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
-- Create PR directly to [Dasharo documentation
-  repository](https://github.com/Dasharo/docs).
+=== "PRO Z690-A (WIFI) DDR4"
+    - Use [Dasharo Tools Suite HCL report](../../../dasharo-tools-suite/documentation/#hcl-report)
+      to upload report automatically.
+    - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
+    - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
 
-- [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690)
-  your `/proc/cpuinfo` or relevant information using following template:
+    - [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690)
+      your `/proc/cpuinfo` or relevant information using following template:
 
-  ```text
-  CPU model:
-  Dasharo version:
-  ```
+      ```text
+      CPU model:
+      Dasharo version:
+      ```
 
-- [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
-  as attachments outputs of following command:
+    - [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
+      as attachments outputs of following command:
 
-  ```bash
-  decode-dimms > decode-dimms.log 2> decode-dimms.err.log
-  ```
+      ```bash
+      decode-dimms > decode-dimms.log 2> decode-dimms.err.log
+      ```
 
-  In email please include Dasharo version.
+      In email please include Dasharo version.
 
-  ```text
-  Dasharo version:
-  ```
+      ```text
+      Dasharo version:
+      ```
+
+=== "PRO Z690-A (WIFI)"
+    - Use [Dasharo Tools Suite HCL report](../../../dasharo-tools-suite/documentation/#hcl-report)
+      to upload report automatically.
+    - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
+    - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
+
+    - [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z690)
+      your `/proc/cpuinfo` or relevant information using following template:
+
+      ```text
+      CPU model:
+      Dasharo version:
+      ```
+
+    - [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z690)
+      as attachments outputs of following command:
+
+      ```bash
+      decode-dimms > decode-dimms.log 2> decode-dimms.err.log
+      ```
+
+      In email please include Dasharo version.
+
+      ```text
+      Dasharo version:
+      ```
+
+=== "PRO Z790-P (WIFI) DDR4"
+    - Use [Dasharo Tools Suite HCL report](../../../dasharo-tools-suite/documentation/#hcl-report)
+      to upload report automatically.
+    - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z790).
+    - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
+
+    - [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z790)
+      your `/proc/cpuinfo` or relevant information using following template:
+
+      ```text
+      CPU model:
+      Dasharo version:
+      ```
+
+    - [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z790)
+      as attachments outputs of following command:
+
+      ```bash
+      decode-dimms > decode-dimms.log 2> decode-dimms.err.log
+      ```
+
+      In email please include Dasharo version.
+
+      ```text
+      Dasharo version:
+      ```
+
+=== "PRO Z790-P (WIFI)"
+    - Use [Dasharo Tools Suite HCL report](../../../dasharo-tools-suite/documentation/#hcl-report)
+      to upload report automatically.
+    - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z790).
+    - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
+
+    - [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_z790)
+      your `/proc/cpuinfo` or relevant information using following template:
+
+      ```text
+      CPU model:
+      Dasharo version:
+      ```
+
+    - [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z790)
+      as attachments outputs of following command:
+
+      ```bash
+      decode-dimms > decode-dimms.log 2> decode-dimms.err.log
+      ```
+
+      In email please include Dasharo version.
+
+      ```text
+      Dasharo version:
+      ```
 
 If you already have reported your results and you change some hardware
 configuration we would appreciate an update.

@@ -152,7 +152,7 @@ To prepare the motherboard the following operations should be performed:
 1. If all connections have been made correctly, the device should start and
     the boot logo should be shown.
 1. Install Dasharo firmware in accordance with
-    [Initial Deployment](../../variants/msi_z690/initial-deployment.md) -
+    [Initial Deployment](../../unified/msi/initial-deployment.md) -
     the `Migrating SMBIOS unique data` chapter can be skipped.
 1. Power on the device.
 1. Boot to Linux system (Ubuntu is recommended).
@@ -174,5 +174,5 @@ To prepare the motherboard the following operations should be performed:
 * [Board manual][Board] - documentation contains detailed information about
     the motherboard and its operations.
 
-[Build]: ../../variants/msi_z690/building-manual.md
+[Build]: ../../unified/msi/building-manual.md
 [Board]: https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf

@@ -4,7 +4,7 @@
 
 This document describes the hardware configuration used for validation of the
 coreboot port on the MSI PRO Z790-P workstation. For additional information,
-please check the [FAQ section](./faq.md).
+please check the [FAQ section](../../unified/msi/faq.md).
 
 ## MSI PRO Z790-P, SN: 601-7E06-030B2210001398
 

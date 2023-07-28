@@ -20,8 +20,8 @@ Yes, during test procedures the Dasharo firmware work has been confirmed for
 the DDR5 platform without WIFI.
 
 Dasharo working correctness has not been tested on `MSI PRO Z690-A WIFI`.
-However, given its similarity to the other boards, there should be no problems
-using Dasharo on it as well.
+However, given that the difference is only the WiFi module, there should be no
+problems using Dasharo on it as well.
 
 ## Will this work on my `MSI PRO Z690-A DDR4`?
 

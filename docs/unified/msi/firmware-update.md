@@ -34,19 +34,17 @@ We recommend using the DTS.
 The DTS allows performing automatic firmware update process, which is the
 recommended method. To update your firmware, follow below steps.
 
-1. Boot [DTS using
-   iPXE](../../dasharo-tools-suite/documentation.md#bootable-over-a-network) on
-   your platform.
-2. Follow [firmware
-   update](../../dasharo-tools-suite/documentation.md#firmware-update)
+1. Boot [DTS using iPXE](../../dasharo-tools-suite/documentation.md#bootable-over-a-network)
+   on your platform.
+2. Follow [firmware update](../../dasharo-tools-suite/documentation.md#firmware-update)
    procedure described in DTS documentation.
 
 ### Linux distribution of your choice
 
 Linux distributions may not yet have the support for the newest chipsets in
-flashrom installed via package manager so building the flashrom from source may
-be inevitable. You may check if your flashrom supports the Z690 chipset by doing
-a dry run without firmware binary:
+flashrom installed via package manager so building the flashrom from source
+may be inevitable. You may check if your flashrom supports the Z690 and Z790
+chipset by doing a dry run without firmware binary:
 
 ```bash
 sudo flashrom -p internal
@@ -119,33 +117,51 @@ That means you are good to go.
 
 Before flashing you may migrate your serial number and UUID as
 described in [Initial deployment](./initial-deployment.md#migrating-smbios-unique-data).
-Applicable to Dasharo v1.1.0 and later.
+Applicable to Dasharo v1.1.0 (PRO Z690-A) / v0.9.0 (PRO Z790-P) and later.
 
-#### Version v1.1.0 or newer
+#### Flashing using flashrom
 
-> Version v1.1.0 had to change the flashmap layout and requires usage of the
-> [procedure below](#version-older-than-v110) when migrating from v1.0.0 or
-> older.
+=== "PRO Z690-A boards"
 
-Only the `RW_SECTION_A` and `RW_SECTION_B` partitions of the flash needs to be
-updated. Flash it using the following command:
+    ##### Version v1.1.0 or newer
 
-```bash
-flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
-```
+    > Version v1.1.0 and v1.1.2 had to change the flashmap layout and requires
+    > usage of the [procedure below](#version-older-than-v110) when migrating from
+    > v1.0.0 or older.
 
-> To flash newer firmware the command described in the [section below](#version-older-than-v110)
-> might be also used. But remember, in that case, all Dasharo UEFI settings
-> will be lost. Also, the memory training procedure will have to be carried out
-> again.
+    Only the `RW_SECTION_A` and `RW_SECTION_B` partitions of the flash needs to be
+    updated. Flash it using the following command:
 
-#### Version older than v1.1.0
+    ```bash
+    flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
+    ```
 
-In this case, the whole `bios` region must be updated.
+    > To flash newer firmware the command described in the [section below](#version-older-than-v110)
+    > might be also used. But remember, in that case, all Dasharo UEFI settings
+    > will be lost. Also, the memory training procedure will have to be carried out
+    > again.
 
-```bash
-flashrom -p internal -w [path] --ifd -i bios
-```
+    ##### Version older than v1.1.0
+
+    In this case, the whole `bios` region must be updated.
+
+    ```bash
+    flashrom -p internal -w [path] --ifd -i bios
+    ```
+
+=== "PRO Z790-P boards"
+
+    There is only one version available for now. Please follow instructions
+    described in [Initial deployment](./initial-deployment.md) to deploy the
+    Dasharo.
+
+    If updating firmware using custom builds without changing the flashmap,
+    only the `RW_SECTION_A` and `RW_SECTION_B` partitions of the flash needs to be
+    updated. Flash it using the following command:
+
+    ```bash
+    flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
+    ```
 
 #### Troubleshooting
 

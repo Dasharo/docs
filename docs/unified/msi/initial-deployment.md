@@ -1,6 +1,7 @@
 # Initial Deployment
 
-Initial deployment of Dasharo firmware on MSI PRO Z690-A can be done:
+Initial deployment of Dasharo firmware on MSI PRO Z690-A and PRO Z790-P can be
+done:
 
 * using DTS,
 * manually.
@@ -60,7 +61,10 @@ sudo make install
 
 All flash operations require UEFI Secure Boot to be disabled. You may download
 the binary using `scp` (need to install openssh-server package) or `wget`
-command. The binaries can be found on the [release page](releases.md).
+command. The binaries can be found on the
+
+* [MSI PRO Z690-A release page](../../variants/msi_z690/releases.md)
+* [MSI PRO Z790-P release page](../../variants/msi_z790/releases.md).
 
 #### Reading flash contents
 
@@ -83,8 +87,8 @@ reboot.
 To migrate the SMBIOS system UUID and board serial number follow the Linux
 instructions below before attempting to flash the binary. The procedure is
 supported on Dasharo version v1.0.0 and later and requires cbfstool built from
-coreboot tree. Follow the [Building Manual](building-manual.md) using the v1.0.0
-version or newer and then:
+coreboot tree. Follow the [Building Manual](building-manual.md) using the
+Z690-A v1.0.0/Z790-P v0.9.0 version or newer and then:
 
 ```bash
 echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
@@ -108,33 +112,121 @@ echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
 ./build/cbfstool build/coreboot.rom truncate -r FW_MAIN_B
 ```
 
-One may use `msi_ms7d25_v1.0.0.rom` (or newer) binary directly and simply build
-the cbfstool only from coreboot repository:
+=== "PRO Z690-A (WIFI) DDR4"
+    One may use `msi_ms7d25_v1.1.1_ddr4.rom` (or newer) binary directly and
+    simply build the cbfstool only from coreboot repository:
 
-```bash
-git clone https://github.com/Dasharo/coreboot -b msi_ms7d25/release
-cd coreboot
-make -C util/cbfstool
-echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
-echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
-# assuming in coreboot root directory
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom expand -r FW_MAIN_A
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom expand -r FW_MAIN_B
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
-	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
-	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
-	-f serial_number.txt -n serial_number -t raw -r COREBOOT
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
-	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
-	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom add \
-	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom truncate -r FW_MAIN_A
-./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.0.0.rom truncate -r FW_MAIN_B
-```
+    ```bash
+    git clone https://github.com/Dasharo/coreboot -b msi_ms7d25/release
+    cd coreboot
+    make -C util/cbfstool
+    echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
+    echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
+    # assuming in coreboot root directory
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom expand -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom expand -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom truncate -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr4.rom truncate -r FW_MAIN_B
+    ```
+
+=== "PRO Z690-A (WIFI)"
+    One may use `msi_ms7d25_v1.1.1_ddr5.rom` (or newer) binary directly and
+    simply build the cbfstool only from coreboot repository:
+
+    ```bash
+    git clone https://github.com/Dasharo/coreboot -b msi_ms7d25/release
+    cd coreboot
+    make -C util/cbfstool
+    echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
+    echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
+    # assuming in coreboot root directory
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom expand -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom expand -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom truncate -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7d25_v1.1.1_ddr5.rom truncate -r FW_MAIN_B
+    ```
+
+=== "PRO Z790-P (WIFI) DDR4"
+    One may use `msi_ms7e06_v0.9.0_ddr4.rom` (or newer) binary directly and
+    simply build the cbfstool only from coreboot repository:
+
+    ```bash
+    git clone https://github.com/Dasharo/coreboot -b msi_ms7d25/release
+    cd coreboot
+    make -C util/cbfstool
+    echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
+    echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
+    # assuming in coreboot root directory
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom expand -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom expand -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom truncate -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr4.rom truncate -r FW_MAIN_B
+    ```
+
+=== "PRO Z790-P (WIFI)"
+    One may use `msi_ms7e06_v0.9.0_ddr5.rom` (or newer) binary directly and
+    simply build the cbfstool only from coreboot repository:
+
+    ```bash
+    git clone https://github.com/Dasharo/coreboot -b msi_ms7d25/release
+    cd coreboot
+    make -C util/cbfstool
+    echo -n `sudo dmidecode -s system-uuid` > system_uuid.txt
+    echo -n `sudo dmidecode -s baseboard-serial-number` > serial_number.txt
+    # assuming in coreboot root directory
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom expand -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom expand -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom add \
+    	-f serial_number.txt -n serial_number -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r FW_MAIN_B
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom add \
+    	-f system_uuid.txt -n system_uuid -t raw -r COREBOOT
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom truncate -r FW_MAIN_A
+    ./util/cbfstool/cbfstool /path/to/msi_ms7e06_v0.9.0_ddr5.rom truncate -r FW_MAIN_B
+    ```
 
 Note you will need to resign the binary after adding the SMBIOS data. Please
 check [Vboot documentation](../../../guides/vboot-signing) how to
@@ -157,12 +249,37 @@ integrated GPU, you may try to plug the external GPU back and boot again.
 
 To flash Dasharo on the platform, execute the following command:
 
-> Replace the `VERSION` in firmware file name with the version you want to
-> flash. For example: `msi_ms7d25_v1.1.0_ddr4.rom`.
+=== "PRO Z690-A (WIFI) DDR4"
+    > Replace the `VERSION` in firmware file name with the version you want to
+    > flash. For example: `msi_ms7d25_v1.1.1_ddr4.rom`.
 
-```bash
-sudo flashrom -p internal -w msi_ms7d25_vVERSION{_ddr4,_ddr5}.rom --ifd -i bios
-```
+    ```bash
+    sudo flashrom -p internal -w msi_ms7d25_vVERSION_ddr4.rom --ifd -i bios
+    ```
+
+=== "PRO Z690-A (WIFI)"
+    > Replace the `VERSION` in firmware file name with the version you want to
+    > flash. For example: `msi_ms7d25_v1.1.1_ddr5.rom`.
+
+    ```bash
+    sudo flashrom -p internal -w msi_ms7d25_vVERSION_ddr5.rom --ifd -i bios
+    ```
+
+=== "PRO Z790-P (WIFI) DDR4"
+    > Replace the `VERSION` in firmware file name with the version you want to
+    > flash. For example: `msi_ms7e06_v0.9.0_ddr4.rom`.
+
+    ```bash
+    sudo flashrom -p internal -w msi_ms7e06_vVERSION_ddr4.rom --ifd -i bios
+    ```
+
+=== "PRO Z790-P (WIFI)"
+    > Replace the `VERSION` in firmware file name with the version you want to
+    > flash. For example: `msi_ms7e06_v0.9.0_ddr5.rom`.
+
+    ```bash
+    sudo flashrom -p internal -w msi_ms7e06_vVERSION_ddr5.rom --ifd -i bios
+    ```
 
 **IMPORTANT!** After the command succeeds, invoke `sudo reboot` or click the
 reboot/restart in the GUI to reboot the board. Press `ENTER` when prompted on

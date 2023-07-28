@@ -202,23 +202,25 @@ nav:
           - 'Firmware update': variants/qemu_q35/firmware-update.md
           - 'Recovery': variants/qemu_q35/recovery.md
           - 'Hardware Configuration Matrix': variants/qemu_q35/hardware-matrix.md
-      - 'MSI PRO Z690-A':
-          - 'Overview': variants/msi_z690/overview.md
-          - 'Releases': variants/msi_z690/releases.md
-          - 'Building manual': variants/msi_z690/building-manual.md
-          - 'Initial deployment': variants/msi_z690/initial-deployment.md
-          - 'Firmware update': variants/msi_z690/firmware-update.md
-          - 'Recovery': variants/msi_z690/recovery.md
-          - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
-          - 'Test matrix': variants/msi_z690/test-matrix.md
-          - 'Openness score': variants/msi_z690/openness_analysis.md
-          - 'Development': variants/msi_z690/development.md
-          - 'Hardware Compatibility': variants/msi_z690/hcl.md
-          - 'Community Test Results': variants/msi_z690/community-test-results.md
-          - 'FAQ': variants/msi_z690/faq.md
-      - 'MSI PRO Z790-P':
-          - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
-          - 'Test matrix': variants/msi_z790/test-matrix.md
+      - 'MSI desktops':
+          - 'Overview': unified/msi/overview.md
+          - 'Building manual': unified/msi/building-manual.md
+          - 'Initial deployment': unified/msi/initial-deployment.md
+          - 'Firmware update': unified/msi/firmware-update.md
+          - 'Recovery': unified/msi/recovery.md
+          - 'Development': unified/msi/development.md
+          - 'FAQ': unified/msi/faq.md
+          - 'Hardware Compatibility': unified/msi/hcl.md
+          - 'Community Test Results': unified/msi/community-test-results.md
+          - 'MSI PRO Z690-A':
+              - 'Releases': variants/msi_z690/releases.md
+              - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
+              - 'Test matrix': variants/msi_z690/test-matrix.md
+              - 'Openness score': variants/msi_z690/openness_analysis.md
+          - 'MSI PRO Z790-P':
+              - 'Releases': variants/msi_z790/releases.md
+              - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
+              - 'Test matrix': variants/msi_z790/test-matrix.md
       - 'Supermicro X11 LGA1151 Series':
           - 'Overview': variants/supermicro_x11_lga1151_series/overview.md
           - 'Releases': variants/supermicro_x11_lga1151_series/releases.md

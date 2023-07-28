@@ -10,8 +10,9 @@ reinstall the original firmware from the board manufacturer.
 There are two documented recovery methods: using a [CH341A programming kit](https://3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/)
 or an [RTE](https://3mdeb.com/shop/open-source-hardware/rte/).
 
-Since v1.1.2 release it is also possible to use MSI FlashBIOS button feature
-to recover using an image placed in the USB stick.
+Since Dasharo v1.1.2 (PRO Z690-A) / v0.9.0 (PRO Z790-P) release it is also
+possible to use MSI FlashBIOS button feature to recover using an image placed
+in the USB stick.
 
 ## Using MSI FlashBIOS button
 
@@ -184,16 +185,6 @@ Reading old flash chip contents... done.
 Erasing and writing flash chip... Erase/write done.
 Verifying flash... VERIFIED.
 ```
-
-### MSI Flash BIOS Button
-
-The [MSI Flash BIOS Button](https://www.youtube.com/watch?v=iTkXunUAriE)
-would give us easy-to-use recovery method. We have tried that one to switch
-from Dasharo firmware to the original one, but it did not work, unfortunately.
-The details of how this process exactly works are unknown due to the closed
-nature of it's implementation. We can research this topic more in the future,
-so maybe it can be utilized later for deployment and/or recovery of the
-platform.
 
 ## SMBIOS unique data recovery
 
