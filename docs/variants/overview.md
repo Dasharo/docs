@@ -36,6 +36,7 @@ open-source firmware distribution.
 
     - [Dell OptiPlex](../dell_optiplex/overview)
     - [MSI PRO Z690-A](../msi_z690/overview)
+    - [MSI PRO Z790-P](../msi_z790/overview)
 
 ## Workstation
 

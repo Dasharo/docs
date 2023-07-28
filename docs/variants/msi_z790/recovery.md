@@ -10,7 +10,7 @@ reinstall the original firmware from the board manufacturer.
 There are two documented recovery methods: using a [CH341A programming kit](https://3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/)
 or an [RTE](https://3mdeb.com/shop/open-source-hardware/rte/).
 
-Since v1.1.2 release it is also possible to use MSI FlashBIOS button feature
+Since v0.9.0 release it is also possible to use MSI FlashBIOS button feature
 to recover using an image placed in the USB stick.
 
 ## Using MSI FlashBIOS button
@@ -45,8 +45,8 @@ here.
   may choose an older one too or in the best case use your firmware backup):
 
 ```bash
-wget https://download.msi.com/bos_exe/mb/7D25v13.zip
-unzip 7D25v13.zip
+wget https://download.msi.com/bos_exe/mb/7E06vA3.zip
+unzip 7E06vA3.zip
 ```
 
 * Flash via external programmer:
@@ -54,7 +54,7 @@ unzip 7D25v13.zip
 > The command line will be different, depending on the programmer you use
 
 ```bash
-flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
+flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7E06vA3/E7E06IMS.A30
 ```
 
 * First boot after the recovery process is significantly longer
@@ -128,7 +128,7 @@ Now the connection is ready. Time to locate the flash chip of the board.
 
 Connect the CH341A USB plug to the host machine which will be doing the
 flashing process (optionally use the USB extension cord for convenience).
-Locate the flash chip on the MSI PRO Z690-A DDR4 board:
+Locate the flash chip on the MSI PRO Z790-P DDR4 board:
 
 ![](/images/ch341a_rec/msi_z690a.jpg)
 
@@ -201,7 +201,7 @@ platform.
 
 [SMBIOS specification](https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.4.0.pdf)
 sections 7.2 and 7.3 defines two spaces for serial number: the system serial
-number and baseboard serial number. The original MSI PRO Z690-A firmware
+number and baseboard serial number. The original MSI PRO Z790-P firmware
 provides only the baseboard serial number.
 
 In case you have lost your serial number in the process of flashing Dasharo or
@@ -211,9 +211,9 @@ printed on the mainboard between the chipset heatsink and dPGU PCIe slot:
 ![](/images/msi_sn_qr.jpg)
 
 If you read the QR code with your smartphone you will get the full serial
-number. The serial number has the format `07D25xx_LyzEaaaaaa` where:
+number. The serial number has the format `07E06xx_LyzEaaaaaa` where:
 
-* `07D25` - is the board model, i.e. MS-7D25 for this particular board
+* `07E06` - is the board model, i.e. MS-7E06 for this particular board
 * `xx` is the mainboard revision which should match the revision imprinted
   between the M2_1 slot and dGPU slot. E.g. `xx=11` means VER:1.1
 * `yz` is the manufacturing date in hex, i.e. `y` is the month, `z` is the
