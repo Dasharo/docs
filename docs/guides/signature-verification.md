@@ -12,10 +12,14 @@ site, please follow the instructions below:
     ```bash
     wget https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc \
         -O - | gpg --import -
+    ```
 
+    ```bash
     wget https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc  \
         -O - | gpg --import -
+    ```
 
+    ```bash
     wget <release signing key URL> -O - | gpg --import -
     ```
 
@@ -31,7 +35,13 @@ site, please follow the instructions below:
 
     ```bash
     wget <binary>
+    ```
+
+    ```bash
     wget <binary>.sha256
+    ```
+
+    ```bash
     wget <binary>.sha256.sig
     ```
 
@@ -39,6 +49,9 @@ site, please follow the instructions below:
 
     ```bash
     gpg -v --verify <binary>.sha256.sig <binary>.sha256
+    ```
+    
+    ```bash
     sha256sum -c <binary>.sha256
     ```
 
