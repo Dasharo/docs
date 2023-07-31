@@ -5,14 +5,14 @@ open-source firmware distribution.
 
 ## Network appliance
 
-* Following network appliaces are supported under Dasharo Support Package:
+* Following network appliances are supported under Dasharo Support Package:
 
     - [Protectli FW6](../protectli_fw6/overview)
     - [Protectli VP2410](../protectli_vp2410/overview)
     - [Protectli VP2420](../protectli_vp2420/overview)
     - [Protectli VP46xx](../protectli_vp46xx/overview)
 
-* Following network appliaces are planned to be supported under Dasharo
+* Following network appliances are planned to be supported under Dasharo
   Community Support:
 
     - [PC Engines](../pc_engines/post-eol-fw-announcement)
