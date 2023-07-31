@@ -13,7 +13,7 @@ firmware.
 This document contains three main sections:
 - `Contributing` in which we are describing preferred of reporting the results.
 - `Testing method` in which we are describing our preferred testing method.
-- `Hardware Compatible List` in which in a labelled manner we show all
+- `Hardware Compatible List` in which in a labeled manner we show all
     tests carried out by the community.
 
 ## Contributing
