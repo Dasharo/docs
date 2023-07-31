@@ -1,5 +1,3 @@
-
-
 # Dasharo Compatibility: Battery boot block
 
 ## Test cases common documentation
