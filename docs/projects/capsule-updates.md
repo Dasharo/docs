@@ -1,6 +1,10 @@
-# Abstract
+---
+template: giscus.html
+---
 
-### Can you explain the whole project and its expected outcome(s)
+# UEFI Capsule Update for coreboot with EDK II
+
+## Abstract
 
 The project, UEFI Capsule Update for coreboot with EDK II, aims to improve the
 firmware update process by integrating UEFI capsule update methods into coreboot
@@ -19,9 +23,43 @@ enhanced firmware update capabilities, a simplified user experience, heightened
 security, and enhanced compatibility, all achieved by seamlessly integrating
 with fwupd, a popular firmware update management tool for Linux systems.
 
-### Explain what the requested budget will be used for?
+## Involvement with projects or organisations relevant to this project
 
-### Does the project have other funding sources, both past and present?
+Relevant projects:
+
+- coreboot [\[1\]][1]
+- Dasharo compatible with MSI PRO Z690-A DDR4 (and the subsequent port for the
+- DDR5 variant) [\[2\]][2]
+- Dasharo compatible with Dell Optiplex [\[3\]][3]
+- EDKII [\[4\]][4]
+- Fwupd (LVFS) [\[5\]][5]
+- U-Boot [\[6\]][6]
+
+3mdeb has been a licensed provider of quality coreboot consulting services
+since 2016. We are well-known in the open-source community for maintaining th
+firmware of the PC Engines APU series platform since 2016, delivering
+high-quality firmware releases each month and providing technical support on PC
+Engines and OPNSense forums. Our contribution to the coreboot project reaches
+(as of 26th of July 2023):
+
+**319** individual patches merged to the official coreboot repository
+**33481** lines of code added
+**41097** lines of code removed
+
+Moreover, we constantly develop Dasharo, which is an open-source firmware
+distribution focusing on clean and simple code, long-term maintenance,
+transparent validation, privacy-respecting implementation, liberty for the
+owners, and trustworthiness for all. More details can be found here [\[7\]][7].
+
+[1]: https://github.com/coreboot/coreboot
+[2]: https://docs.dasharo.com/variants/msi_z690/overview/
+[3]: https://docs.dasharo.com/variants/dell_optiplex/overview/
+[4]: https://github.com/tianocore/edk2
+[5]: https://github.com/fwupd/fwupd
+[6]: https://u-boot.readthedocs.io/
+[7]: https://docs.dasharo.com/
+
+## Project scope
 
 **Task 1. Enable Capsule Updates in coreboot**
 
@@ -186,7 +224,29 @@ The code implementing UEFI Capsule Update for coreboot with EDK II shall be
 upstreamed to the official EDK II repository at
 https://github.com/tianocore/edk2.
 
-### What are significant technical challenges you expect to solve during the project, if any?
+## Compare your own project with existing or historical efforts
+
+3mdeb's embedded systems developers are experienced engineers accustomed to
+firmware development on desktops. There are a few successfully enabled coreboot
+supported Dell machines that were enabled by 3mdeb and other platforms based on
+Intel FSP. By leveraging our knowledge and experience from the ESRT project,
+which plays a vital role within the operating system to initiate capsule updates
+at the system level, we bring valuable insights and advancements to the firmware
+update process. Through our contributions, we aim to promote open-source
+firmware adoption and facilitate a more robust and secure firmware update
+process, benefiting open-source firmware community and and ensuring a
+user-friendly and efficient firmware update experience for end-users.
+
+* MSI Z690-A PRO DDR4 / DDR5: <https://review.coreboot.org/c/coreboot/+/63463>
+* Dell OptiPlex 7010/9010 SFF: <https://review.coreboot.org/c/coreboot/+/40351>
+* Dell Precision T1650: <https://review.coreboot.org/c/coreboot/+/62212>
+* Libretrend LT1000: <https://review.coreboot.org/c/coreboot/+/30360>
+* Protectli FW2B/FW4B: <https://review.coreboot.org/c/coreboot/+/32076>
+* Protectli FW6: <https://review.coreboot.org/c/coreboot/+/33839>
+* Fwupd for BSD: <https://www.phoronix.com/news/FWUPD-To-The-BSDs>
+* EFI System Resource Table (ESRT): <https://reviews.freebsd.org/rG24f398e7a153a05a7e94ae8dd623e2b6d28d94eb>
+
+## Significant technical challenges you expect to solve during the project
 
 The coreboot and EDK II firmware frameworks need to be modified to support UEFI
 capsule update methods. This integration requires understanding and implementing
@@ -197,3 +257,20 @@ compatibility with the UEFI standard. Solving these challenges will involve
 significant code modifications, rigorous testing, and an active collaboration
 with the coreboot and EDK II communities to ensure successful integration and
 smooth functionality.
+
+## Ecosystem of the project
+
+Although 3mdeb will be responsible for the whole implementation and testing,
+anyone is also welcome to test, develop code, and report issues after the
+results will be published. For the project to be successful, the outcomes should
+be included in the upstream coreboot and edk2 projects for the benefit of the
+wider community. That is why we expect high level of engagement with communities
+of both of this projects at each stage of the project, to make sure the proposed
+solution can be accepted upstream.
+
+## Review
+
+Further reviews and suggestions are welcome. You can do it in two ways:
+
+- using Giscus on the bottom of this page
+- contributing to this repository directly via Pull Request
