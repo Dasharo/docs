@@ -40,7 +40,7 @@ site, please follow the instructions below:
 
     - `<release signing key URL>` is provided in the release notes
 
-2. CHeck the signatures on the keys:
+2. Check the signatures on the keys:
 
     ```bash
     gpg --check-signatures "Dasharo" "3mdeb"
