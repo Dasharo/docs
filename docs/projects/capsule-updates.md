@@ -121,7 +121,7 @@ Extract coreboot version information and incorporate it into the EFI System
 Resource Table (ESRT) within UEFI, to reflect the updated firmware and prevent
 rolling back to earlier versions.
 
-- Develop process for building capsules from coreboot.rom 
+- Develop process for building capsules from coreboot.rom
 
 Establish a streamlined workflow to generate capsules containing the
 coreboot.rom image and automate the process where possible.
