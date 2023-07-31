@@ -34,25 +34,25 @@ site, please follow the instructions below:
 3. Download the binaries, SHA sums and their signature files
 
     ```bash
-    wget <binary>
+    wget <binary url>
     ```
 
     ```bash
-    wget <binary>.sha256
+    wget <binary url>.sha256
     ```
 
     ```bash
-    wget <binary>.sha256.sig
+    wget <binary url>.sha256.sig
     ```
 
 4. Verify the signatures and binary integrity:
 
     ```bash
-    gpg -v --verify <binary>.sha256.sig <binary>.sha256
+    gpg -v --verify <binary file>.sha256.sig <binary file>.sha256
     ```
-    
+
     ```bash
-    sha256sum -c <binary>.sha256
+    sha256sum -c <binary file>.sha256
     ```
 
 Example verification of Dasharo release compatible with MSI PRO Z690-A DDR4:
