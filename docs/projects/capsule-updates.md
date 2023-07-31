@@ -1,6 +1,6 @@
-## Abstract
+# Abstract
 
-### Can you explain the whole project and its expected outcome(s).
+### Can you explain the whole project and its expected outcome(s)
 
 The project, UEFI Capsule Update for coreboot with EDK II, aims to improve the
 firmware update process by integrating UEFI capsule update methods into coreboot
@@ -20,8 +20,8 @@ security, and enhanced compatibility, all achieved by seamlessly integrating
 with fwupd, a popular firmware update management tool for Linux systems.
 
 ### Explain what the requested budget will be used for?
-### Does the project have other funding sources, both past and present?
 
+### Does the project have other funding sources, both past and present?
 
 **Task 1. Enable Capsule Updates in coreboot**
 
@@ -186,8 +186,7 @@ The code implementing UEFI Capsule Update for coreboot with EDK II shall be
 upstreamed to the official EDK II repository at
 https://github.com/tianocore/edk2.
 
-### What are significant technical challenges you expect to solve during the
-### project, if any?
+### What are significant technical challenges you expect to solve during the project, if any?
 
 The coreboot and EDK II firmware frameworks need to be modified to support UEFI
 capsule update methods. This integration requires understanding and implementing
