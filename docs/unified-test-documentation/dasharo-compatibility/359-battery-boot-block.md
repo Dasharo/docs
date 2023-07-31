@@ -1,3 +1,5 @@
+
+
 # Dasharo Compatibility: Battery boot block
 
 ## Test cases common documentation
@@ -19,7 +21,7 @@
 **Test description**
 
 This test aims to verify that booting into the OS is blocked when the battery
-leves sits below 5%.
+level sits below 5%.
 
 **Test configuration data**
 
