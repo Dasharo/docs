@@ -41,20 +41,31 @@ here.
   [Hardware connection / SPI](../development/#hardware-connection) section of
   the `Development` documentation.
 
-* Download official BIOS from vendor's website (this is the newest version, you
-  may choose an older one too or in the best case use your firmware backup):
+* If you created a [firmware backup](../initial-deployment/#flashing)
+before flashing to Dasharo you will be using it for this recovery process.
+
+* Otherwise download the MSI official latest BIOS v1.90 (released 2022-11-09)
+directly from MSI:
 
 ```bash
-wget https://download.msi.com/bos_exe/mb/7D25v13.zip
-unzip 7D25v13.zip
+wget https://download.msi.com/bos_exe/mb/7D25v19.zip
+unzip 7D25v19.zip
 ```
 
-* Flash via external programmer:
+You may also choose an older version from the [MSI website](https://us.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4/support#bios).
 
-> The command line will be different, depending on the programmer you use
+* Flash via external programmer:
+> Note: the command line will be different depending on the programmer you are
+using and how you named your backup folder and firmware file.
 
 ```bash
-flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
+flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w z690backup/dump.rom
+```
+
+or in case of using the official MSI BIOS release:
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v19/E7D25IMS.190
 ```
 
 * First boot after the recovery process is significantly longer
