@@ -36,6 +36,13 @@ level sits below 5%.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Open a terminal window and install `stress-ng` package by executing following
+    command:
+
+```bash
+sudo apt install stress-ng
+```
+
 1. Open a terminal window and run following bash script:
 
 ```bash
