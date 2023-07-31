@@ -66,29 +66,29 @@ owners, and trustworthiness for all. More details can be found here [\[7\]][7].
 This task aims to enhance the coreboot framework by adding support for UEFI
 Capsule Update.
 
-* Enable memory access above 4GB
+- Enable memory access above 4GB
 
 Modify coreboot to operate in 64-bit mode and enable access to memory above the
 4GB limit.
 
-* Parse capsule location from UEFI variables in coreboot
+- Parse capsule location from UEFI variables in coreboot
 
 Implement a mechanism for coreboot to identify the memory location of the
 capsule images from drivers to UEFI variables. This milestone ensures accurate
 retrieval of capsule images by coreboot.
 
-* Gather capsules into one region
+- Gather capsules into one region
 
 Rewrite the existing capsule coalescing logic to consolidate all firmware update
 capsules into a single memory region.
 
-* Reserve memory containing capsules and pass it to the payload
+- Reserve memory containing capsules and pass it to the payload
 
 Implement the necessary changes in coreboot to reserve the memory region
 containing the capsules. Pass this information to the UEFI payload using the
 Hand-Off Block (HOB) data structure.
 
-* Add SMI handler for flashing firmware updates
+- Add SMI handler for flashing firmware updates
 
 Implement a handler able of writing to SPI flash. Similar handler already
 exists, but it is limited to SMMSTORE region, used to implement secure UEFI
@@ -104,24 +104,24 @@ accurate tracking of system firmware updates. These integrations enhance
 firmware reliability, provide advanced update capabilities, and enable a
 seamless user experience.
 
-* Implement PlatformFlashAccessLib leveraging coreboot SMI handler
+- Implement PlatformFlashAccessLib leveraging coreboot SMI handler
 
 Create a library instance that enables flash access operations within the UEFI
 platform with the help of SMI handler implemented in coreboot.
 
-* Modify FDF/DSC files and capsule processing
+- Modify FDF/DSC files and capsule processing
 
 Update the Firmware Descriptor (FDF) and Device Scope Configuration (DSC) files.
 Enable boot mode selection and invoke ProcessCapsules() at the necessary stages
 during the firmware update process.
 
-* Parse version reported by coreboot for ESRT
+- Parse version reported by coreboot for ESRT
 
 Extract coreboot version information and incorporate it into the EFI System
 Resource Table (ESRT) within UEFI, to reflect the updated firmware and prevent
 rolling back to earlier versions.
 
-* Develop process for building capsules from coreboot.rom 
+- Develop process for building capsules from coreboot.rom 
 
 Establish a streamlined workflow to generate capsules containing the
 coreboot.rom image and automate the process where possible.
@@ -131,12 +131,12 @@ coreboot.rom image and automate the process where possible.
 In this task, the UEFI Capsule Update will be tested on the hardware to ensure
 its proper functionality and compatibility.
 
-* Verify feature using test signing keys
+- Verify feature using test signing keys
 
 Validate the CAPSULE_ENABLE feature using test signing keys before using
 product-specific signing keys.
 
-* OS block booting verification
+- OS block booting verification
 
 Test a mechanism that prevents the operating system from booting until a reboot
 occurs after the firmware update process. The primary objective is to ensure
@@ -149,18 +149,18 @@ ensure the integrity and authenticity of firmware updates. The use of OpenSSL
 utilities for generating signing keys enhances security, while the developed
 binary compilation procedure simplifies the signing process for end-users.
 
-* Generate signing keys using OpenSSL utilities
+- Generate signing keys using OpenSSL utilities
 
 Utilize OpenSSL command line utilities to generate the necessary signing keys
 for the capsule update process.
 
-* Develop binary compilation without using a private key
+- Develop binary compilation without using a private key
 
 This milestone involves creating a comprehensive procedure for users, outlining
 the process of signing binaries without the use of a private key, ensuring a
 consistent and efficient signing process.
 
-* End-user documentation
+- End-user documentation
 
 Create comprehensive documentation for end-users, including detailed
 instructions on how to perform firmware updates and utilize the provided
@@ -173,12 +173,12 @@ update process. The incorporation of the vboot A/B scheme will provide a
 reliable fallback in case of problematic updates, while the automated execution
 of the UX capsule will enhance the end-user experience during firmware updates.
 
-* Add support for the vboot A/B scheme
+- Add support for the vboot A/B scheme
 
 Enhance the firmware update mechanism to support the vboot A/B scheme, providing
 a fallback option in case of unstable updates.
 
-* Automate the creation and execution of the UX capsule
+- Automate the creation and execution of the UX capsule
 
 Use UX capsule to convey message to the user that the update is in progress.
 Because update takes significantly more time than normal boot, impatient user
@@ -192,12 +192,12 @@ and MSI PRO Z690-A DDR4/DDR5 platforms. The primary focus is to verify the
 successful update process, ensuring system stability and security after applying
 the new firmware update method.
 
-* Test and publish release for MSI PRO Z790-P
+- Test and publish release for MSI PRO Z790-P
 
 Verify the successful update process and ensure system stability and security
 after applying the new firmware update method.
 
-* Test and publish release for MSI PRO Z690-A DDR4/DDR5
+- Test and publish release for MSI PRO Z690-A DDR4/DDR5
 
 Verify the successful update process and ensure system stability and security
 after applying the new firmware update method.
@@ -237,14 +237,14 @@ firmware adoption and facilitate a more robust and secure firmware update
 process, benefiting open-source firmware community and and ensuring a
 user-friendly and efficient firmware update experience for end-users.
 
-* MSI Z690-A PRO DDR4 / DDR5: <https://review.coreboot.org/c/coreboot/+/63463>
-* Dell OptiPlex 7010/9010 SFF: <https://review.coreboot.org/c/coreboot/+/40351>
-* Dell Precision T1650: <https://review.coreboot.org/c/coreboot/+/62212>
-* Libretrend LT1000: <https://review.coreboot.org/c/coreboot/+/30360>
-* Protectli FW2B/FW4B: <https://review.coreboot.org/c/coreboot/+/32076>
-* Protectli FW6: <https://review.coreboot.org/c/coreboot/+/33839>
-* Fwupd for BSD: <https://www.phoronix.com/news/FWUPD-To-The-BSDs>
-* EFI System Resource Table (ESRT): <https://reviews.freebsd.org/rG24f398e7a153a05a7e94ae8dd623e2b6d28d94eb>
+- MSI Z690-A PRO DDR4 / DDR5: <https://review.coreboot.org/c/coreboot/+/63463>
+- Dell OptiPlex 7010/9010 SFF: <https://review.coreboot.org/c/coreboot/+/40351>
+- Dell Precision T1650: <https://review.coreboot.org/c/coreboot/+/62212>
+- Libretrend LT1000: <https://review.coreboot.org/c/coreboot/+/30360>
+- Protectli FW2B/FW4B: <https://review.coreboot.org/c/coreboot/+/32076>
+- Protectli FW6: <https://review.coreboot.org/c/coreboot/+/33839>
+- Fwupd for BSD: <https://www.phoronix.com/news/FWUPD-To-The-BSDs>
+- EFI System Resource Table (ESRT): <https://reviews.freebsd.org/rG24f398e7a153a05a7e94ae8dd623e2b6d28d94eb>
 
 ## Significant technical challenges you expect to solve during the project
 
