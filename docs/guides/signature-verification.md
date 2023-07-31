@@ -1,8 +1,23 @@
 # Dasharo release signature verification
 
+Dasharo uses digital signatures to guarantee the authenticity and integrity of
+certain important assets. This page explains how to verify those signatures.
+It is extremely important for your security to understand and apply these
+practices.
+
+## Why one should verify the signatures?
+
+Please refer to Qubes OS signature verification page:
+[What digital signatures can and cannot prove](https://www.qubes-os.org/security/verifying-signatures/#what-digital-signatures-can-and-cannot-prove).
+
+## Signature verification prcocedure
+
 Each published Dasharo release is signed with a signing key corresponding to
 given platform and versions. The key infrastructure is stored in
 [3mdeb-secpack](https://github.com/3mdeb/3mdeb-secpack).
+
+For the signature verification we use the
+[OpenPGP software like Qubes OS](https://www.qubes-os.org/security/verifying-signatures/#openpgp-software).
 
 To verify the integrity of the binaries published in release notes on this
 site, please follow the instructions below:
