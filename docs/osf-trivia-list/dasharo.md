@@ -491,6 +491,6 @@ that can lead to influencing Dasharo Community Supported roadmap.
 [legacy-smp]: https://mail.coreboot.org/hyperkitty/list/coreboot@coreboot.org/thread/EEEBFATYHWIPRDXLCUEFNDZ4FYYVA4QM/#QHIYXYTVOGXENJXUOWOXUZOTLV5OS4LB
 [raptor]: ../variants/talos_2/releases.md
 [kgpe-d16]: ../variants/asus_kgpe_d16/releases.md
-[msi-z690a]: ../variants/msi_z690/overview.md
+[msi-z690a]: ../unified/msi/overview.md
 [vpub]: https://vpub.dasharo.com/
 [dasharo-matrix]: https://matrix.to/#/#dasharo:matrix.org

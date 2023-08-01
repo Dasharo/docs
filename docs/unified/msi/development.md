@@ -1,15 +1,17 @@
-# Dasharo compatible with MSI PRO Z790-P - development
+# Dasharo compatible with MSI PRO Z690-A and PRO Z790-P - development
 
 ## Intro
 
-This document gathers various notes and documentation useful for development of
-Dasharo compatible with the MSI PRO Z790-P platform.
+This document gather various notes and documentation useful for development of
+Dasharo compatible with the MSI PRO Z690-A and PRO Z790-P platform.
 
 ## Hardware connection
 
 ### Requirements
 
-- peripherals listed in the [Hardware Configuration Matrix](hardware-matrix.md)
+- peripherals listed in the:
+    + [PRO Z690-A Hardware Configuration Matrix](../../variants/msi_z690/hardware-matrix.md)
+    + [PRO Z790-P Hardware Configuration Matrix](../../variants/msi_z790/hardware-matrix.md)
 - [RTE](https://3mdeb.com/open-source-hardware/#rte)
 - [Sonoff S20 Smart Plug](https://wiki.iteadstudio.com/S20_Smart_Socket)
    with [custom firmware](https://esphome.io/devices/sonoff_s20.html)
@@ -25,7 +27,7 @@ Dasharo compatible with the MSI PRO Z790-P platform.
 
 - Connect signals from the `J18` header to serial receiver:
 
-| RTE             | Msi Z790                                  |
+| RTE             | Msi Z690                                  |
 |:---------------:|:-----------------------------------------:|
 | J18 pin 1 (GND) | JBD1 pin 1 (pin closer to JBAT1)          |
 | J18 pin 2 (RX)  | JBD1 pin 2 (pin further from JBAT1)       |
@@ -36,14 +38,14 @@ Dasharo compatible with the MSI PRO Z790-P platform.
 Please also note that this is uni-directional communication. We can gether logs
 from booting, but we cannot provide input to the platform at the same time.
 
-![JBD1](../msi_z690/images/msi_z690_serial_panel.jpg)
+![JBD1](images/msi_z690_serial_panel.jpg)
 
 ### SPI
 
 - For external flashing, connect `RTE` with motherboard according to the table
   below:
 
-| RTE SPI header      | MSI Z790-P                                           |
+| RTE SPI header      | MSI Z690-A/Z790-P                                    |
 |:-------------------:|:----------------------------------------------------:|
 | J7 pin 1 (Vcc)      | JTPM1 pin 1 (SPI Power)                              |
 | J7 pin 2 (GND)      | JTPM1 pin 7 (GND)                                    |
@@ -58,13 +60,13 @@ from booting, but we cannot provide input to the platform at the same time.
 The JTPM1 pin5 is actually BIOS SPI CS pin (marked as reserved in the board
 manual).
 
-![JTPM1](../msi_z690/images/msi_z690_jtpm1.jpeg)
+![JTPM1](images/msi_z690_jtpm1.jpeg)
 
 - Example connection:
 
-![RTE](../msi_z690/images/msi_z690_connected_rte.jpg)
+![RTE](images/msi_z690_connected_rte.jpg)
 
-![All connections](../msi_z690/images/msi_z690_all_connections.jpeg)
+![All connections](images/msi_z690_all_connections.jpeg)
 
 ### Power control
 
@@ -76,7 +78,7 @@ manual).
 
 > JFP1 is located in the corner of the mainbaord, near SATA interface ports
 
-| RTE            | Msi Z790                    |
+| RTE            | MSI Z690-A/Z790-P           |
 |:--------------:|:---------------------------:|
 | J11 pin 9      | JFP1 pin 6 (PWR_ON)         |
 | J11 pin 8      | JFP1 pin 7 (RST)            |
