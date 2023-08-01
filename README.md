@@ -28,14 +28,28 @@ render correctly as HTML in local preview.
 
 ### Broken links checker
 
-To check for broken links we use `linkchecker`.  It should be installed through
-[requirements.txt](#local-build). Following command produces
-`linkchecker-out.txt` file, which contains list of broken links, please make
-sure your proposed changes have no broken links reported. Feel free to adjust
-other parameters according to your needs.
+Currently we are using [lychee](https://github.com/lycheeverse/lychee) a fast,
+async, stream-based link checker written in Rust. The automatic check is
+triggered on each push to master PR.
 
-```shell
-linkchecker -f linkcheckerrc http://0.0.0.0:8000
+You can also run it locally using a docker image:
+
+```bash
+$ docker run --init -it --rm -w $(pwd) -v $(pwd):$(pwd) lycheeverse/lychee
+    --max-redirects 10 -a 403,429,500,502,503,999 .
+```
+
+### Relative links
+
+Please avoid using URL-related links like:
+
+```md
+[MSI PRO Z790-P](../../unified/msi/overview)
+```
+Instead, use relative links within the repository:
+
+```md
+[MSI PRO Z790-P](../unified/msi/overview.md)
 ```
 
 ### Make sure no TBD or TODO content is displayed
