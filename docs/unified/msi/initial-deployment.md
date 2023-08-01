@@ -24,38 +24,7 @@ running flashrom on Ubuntu 22.04.
 
 ### Build flashrom
 
-Currently, the latest flashrom release lacks support for Alder Lake S internal
-flashing. Because of this, we need to build flashrom from
-[3mdeb fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
-The procedure is based on
-[Ubuntu 22.04 desktop amd64 ISO](https://old-releases.ubuntu.com/releases/jammy/ubuntu-22.04.1-desktop-amd64.iso)
-burned on the USB stick. Ubuntu 22.04 or newer if preferred, as it contains the
-network drivers for Ethernet and WiFi. Older versions of Ubuntu would require
-a USB to Ethernet adapter or equivalent to get a network connection and install
-required software packages.
-
-Boot the Ubuntu live image and select the `Try Ubuntu` option. Open a terminal
-and proceed with the commands below.
-
-Install build dependencies:
-
-```bash
-sudo apt-get update
-sudo apt-get install git build-essential pkg-config libpci-dev udev
-```
-
-Obtain source code:
-
-```bash
-git clone https://github.com/Dasharo/flashrom.git -b dasharo-release
-cd flashrom
-```
-
-Build and install flashrom:
-
-```bash
-sudo make install
-```
+Please follow generic guide for [Dasharo flashrom fork](../../../osf-trivia-list/deployment/#how-to-install-dasharo-flashrom-fork).
 
 ### Flashing
 
