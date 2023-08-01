@@ -180,7 +180,7 @@ hardware.
 
     GPU Hardware Compatibility List presents the GPUs tested and verified
     to work with Dasharo by community. The following list does not include GPU
-    which is tested and verfied in 3mdeb laboratory - his information might be
+    which is tested and verfied in 3mdeb laboratory - this information might be
     found in [MSI PRO Z690-A Hardware Matrix](../../variants/msi_z690/hardware-matrix.md)
     and [MSI PRO Z790-P Hardware Matrix](../../variants/msi_z790/hardware-matrix.md)
     documentation.
@@ -190,7 +190,7 @@ hardware.
     * GPU name: the full name of GPU including vendor and model name.
     * Memory size: total amount of GPU memory declared by vendor.
     * Memory type: GPU's type of memory.
-    * Bandwidth: GPU's bandwidth.
+    * Bandwidth: GPU's memory bandwidth.
     * PCI-E Architecture: declared by producer generation of PCI-E architecture.
     * Multi-Graphics Technology: information about support for Multi-Graphics
         Technology.
@@ -204,8 +204,8 @@ hardware.
     | EVGA NVidia RTX 2080      | 8 GB     | GDDR6  | 448GB/s   | Gen3      | 1                         | |
     | PNY NVidia RTX A5000      | 24 GB    | GDDR6  | 768GB/s   | Gen4      | 1                         | |
     | Nvidia GeForce GTX 1080TI | 11264 MB | GDDR5X | x16       | Gen3      | 1                         | [Qubes HCL reports][2] |
-    | MSI Radeon RX 6500 XT MECH 2X 4G OC | 4 GB     | GDDR6  | x4 (x16 connector) | Gen4      | 1                         | Works only on Dasharo v1.1.0 or newer |
-    | MSI GeForce RTX 3060 GAMING Z TRIO LHR | 12 GB     | GDDR6  | x16   | Gen4      | 1                         | |
+    | MSI Radeon RX 6500 XT MECH 2X 4G OC | 4 GB     | GDDR6  | 180GB/s   | Gen4      | 1                         | Works only on Dasharo v1.1.0 or newer |
+    | MSI GeForce RTX 3060 GAMING Z TRIO LHR | 12 GB     | GDDR6  | 358GB/s   | Gen4      | 1                         | |
 
 For details how to maintain this documentation please consult [Dasharo HCL
 Maintainer documentation](../../../dev-proc/hcl-maintainer).
