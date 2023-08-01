@@ -138,3 +138,8 @@ Currently available options:
     + `Suspend to RAM (S3)` - standard sleep mode that suspends the machine
       state to RAM, supported on most operating systems (except Windows on 11th
       generation Intel Core processors or newer).
+
+## Additional information
+
+NOTE: Pressing F9 to reset to defaults resets **all settings**, not only the one
+that is currently selected.
