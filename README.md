@@ -46,6 +46,7 @@ Please avoid using URL-related links like:
 ```md
 [MSI PRO Z790-P](../../unified/msi/overview)
 ```
+
 Instead, use relative links within the repository:
 
 ```md
