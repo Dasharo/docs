@@ -38,28 +38,7 @@ This concludes Dasharo deployment process using DTS.
 
 ## Build flashrom
 
-Currently, the latest flashrom release lacks support for Comet Lake U internal
-flashing. Because of this, we need to build flashrom from source.
-
-Install build dependencies:
-
-```bash
-apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
-```
-
-Obtain source code:
-
-```bash
-git clone https://review.coreboot.org/flashrom.git
-cd flashrom
-```
-
-Build flashrom:
-
-```bash
-make
-sudo make install
-```
+Please follow generic guide for [Dasharo flashrom fork](../../../osf-trivia-list/deployment/#how-to-install-dasharo-flashrom-fork).
 
 ## Reading flash contents
 

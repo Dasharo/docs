@@ -12,20 +12,23 @@ Github](https://github.com/Dasharo/dasharo-issues).
 
 Following sections explain how to deal with most common `flashrom` problem.
 
-### How to install flashrom ?
+### How to install Dasharo flashrom fork ?
 
-* Install flashrom v1.1 or newer with your distribution's package manager if
-  you don't have it installed yet. If your distro doesn't provide flashrom or
-  provides an outdated one, you can build it yourself using
-  [this instruction](https://www.flashrom.org/Downloads).
-* Or compile recent version of flashrom:
+The following procedure is for advanced users familiar with source compilation
+and can resolve potential missing dependencies or other typical compilation
+problems. If you are unfamiliar with compilation from source, we recommend
+using Dasharo Tools Suite, a minimal Linux environment to deploy, update, and
+maintain firmware on Dasharo-supported devices. Please follow [DTS
+documentation](../../dasharo-tools-suite/overview). Otherwise, please follow
+the compilation procedure.
 
-  ``` console
-  sudo apt install libpci-dev libftdi-dev libusb-1.0-0-dev
-  git clone https://github.com/flashrom/flashrom.git
-  cd flashrom
-  sudo make install
-  ```
+If you need flashrom for Dasharo-supported hardware and for some reason you
+cannot use DTS, please consider the compilation of Dasharo [flashrom
+fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
+
+For compilation details and related issues, please check flashrom
+[documentation](https://review.coreboot.org/plugins/gitiles/flashrom/+/refs/heads/master/README)
+and [community](https://www.flashrom.org/Contact).
 
 ### Perform dry run to detect the problems early
 
@@ -152,9 +155,9 @@ No EEPROM/flash device found.
 Note: flashrom can never write if the flash chip isn't found automatically.
 ```
 
-that means your flashrom version is incorrect. Follow the procedure for
-building the right flashrom is described in `Build flashrom` section in the
-[Initial deployment documentation](../unified/msi/initial-deployment.md#initial-deployment-manually).
+that means your flashrom version is incorrect. Follow the procedure of
+[building flashrom](#how-to-install-dasharo-flashrom-fork) or use
+[DTS](../../dasharo-tools-suite/overview).
 
 ### Chip write protection enabled
 
