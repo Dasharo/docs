@@ -30,7 +30,7 @@ Release version v1.1.0 is currently only available for the VP4670 platform.
 - Switched to use driver for IT8784E Super I/O, which is present on the boards
 - CPU power limits increased from baseline to performance
 - [Updating from v1.0.x requires flashing the WP_RO recovery partition](https://docs.dasharo.com/variants/protectli_vp46xx/firmware-update/#updating-to-dasharo-v1018-or-v1019-or-v110)
-- [Firmware version v1.1.x are signed with a new key](https://asciinema.org/a/577551)
+- [Firmware version v1.1.x are signed with a new key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
 
 ### Fixed
 
@@ -50,7 +50,9 @@ Release version v1.1.0 is currently only available for the VP4670 platform.
 [sha256][protectli_vp4670_v1.1.0.rom_hash]{.md-button}
 [sha256.sig][protectli_vp4670_v1.1.0.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/577551)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -81,7 +83,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/577551)
 [sha256][protectli_vp4670_v1.0.19.rom_hash]{.md-button}
 [sha256.sig][protectli_vp4670_v1.0.19.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/388861)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -127,7 +131,9 @@ Test results for this release can be found
 [sha256][protectli_vp4670_v1.0.18.rom_hash]{.md-button}
 [sha256.sig][protectli_vp4670_v1.0.18.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/388861)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -171,7 +177,9 @@ Test results for this release can be found
 [protectli_vault_cml_v1.0.17.rom_hash][protectli_vault_cml_v1.0.17.rom_hash]{.md-button}
 [protectli_vault_cml_v1.0.17.rom_sig][protectli_vault_cml_v1.0.17.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/388861)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -218,7 +226,9 @@ Test results for this release can be found
 [sha256][v1.0.16_hash]{.md-button}
 [sha256.sig][v1.0.16_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/388861)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -260,7 +270,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/388861)
 [sha256][v1.0.13_hash]{.md-button}
 [sha256.sig][v1.0.13_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/388861)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

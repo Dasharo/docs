@@ -48,7 +48,9 @@ Test results for this platform can be found
 [sha256][raptor-cs_talos-2_zImage_v0.7.0.bundled_hash]{.md-button}
 [sha256.sig][raptor-cs_talos-2_zImage_v0.7.0.bundled_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/415457)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/insurgo/release-keys/insurgo-dasharo-trustworthy-computing-release-0.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -100,7 +102,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/415457)
 [sha256][bb_v0.6.0_hash]{ .md-button }
 [sha256.sig][bb_v0.6.0_sig]{ .md-button }
 
-See how to verify signatures on [this video](https://asciinema.org/a/415457)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/insurgo/release-keys/insurgo-dasharo-trustworthy-computing-release-0.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -162,6 +166,10 @@ See how to verify signatures on [this video](https://asciinema.org/a/415457)
 Heads was not modified in this release, its binary from previous releases can be
 used.
 
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/insurgo/release-keys/insurgo-dasharo-trustworthy-computing-release-0.x-key.asc)
+
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision c92383f9](https://github.com/Dasharo/coreboot/tree/c92383f9)
@@ -214,6 +222,10 @@ used.
 [v0.4.1_bundled_sha]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256
 [v0.4.1_bundled_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/dasharo_talos_2_zImage_v0.4.1.bundled.sha256.sig
 
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/insurgo/release-keys/insurgo-dasharo-trustworthy-computing-release-0.x-key.asc)
+
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 5621a1e revision 13b58058](https://github.com/Dasharo/coreboot/commit/13b58058)
@@ -262,6 +274,10 @@ used.
 [v0.4.0_bundled_rom]: https://cloud.3mdeb.com/index.php/s/o5RE7oj4r9kFXS2
 [v0.4.0_bundled_sha]: https://cloud.3mdeb.com/index.php/s/FgeHfa4LzcZK6Pj
 [v0.4.0_bundled_sig]: https://cloud.3mdeb.com/index.php/s/awNSefJrN4d2tAD
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/insurgo/release-keys/insurgo-dasharo-trustworthy-computing-release-0.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

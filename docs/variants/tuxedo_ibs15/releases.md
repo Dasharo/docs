@@ -42,6 +42,10 @@ Test results for this platform can be found
 [sha256.sig](https://3mdeb.com/open-source-firmware/Dasharo/tuxedo_ibs15/tuxedo_ibs15_v1.0.0.rom.sha256.sig
 ){ .md-button }
 
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/tuxedo/tuxedo-open-source-firmware-release-1.x-key.asc)
+
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.16 revision cf13d6c7](https://github.com/Dasharo/coreboot/commit/cf13d6c7)

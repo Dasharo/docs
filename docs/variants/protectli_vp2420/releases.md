@@ -24,7 +24,7 @@ Test results for this platform can be found
 ### Changed
 
 - [Updating from v1.0.x requires flashing the WP_RO recovery partition](../../protectli_vp2420/firmware-update/#updating-minor-versions-v1xy)
-- [Firmware version v1.1.x are signed with a new key](https://asciinema.org/a/577551)
+- [Firmware version v1.1.x are signed with a new key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
 - [Keys must be provisioned prior enabling Secure Boot](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
 
 ### Fixed
@@ -43,7 +43,9 @@ Test results for this platform can be found
 [sha256][protectli_vp2420_v1.1.0.rom_hash]{.md-button}
 [sha256.sig][protectli_vp2420_v1.1.0.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/577551)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -85,7 +87,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/577551)
 [sha256][protectli_vp2420_v1.0.1.rom_hash]{.md-button}
 [sha256.sig][protectli_vp2420_v1.0.1.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/388861)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

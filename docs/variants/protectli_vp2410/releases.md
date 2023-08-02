@@ -35,19 +35,9 @@ Test results for this platform can be found
 [sha256][v1.0.15_hash]{.md-button}
 [sha256.sig][v1.0.15_sig]{.md-button}
 
-How to verify signatures:
-
-```bash
-wget https://github.com/protectli-root/protectli-firmware-updater/raw/main/images/protectli_vp2410_DF_v1.0.15.rom -O protectli_vault_glk_v1.0.15.rom
-wget https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256
-wget https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256.sig
-gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/keys/master-key/3mdeb-master-key.asc
-gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/3mdeb-dasharo-master-key.asc
-gpg --fetch-keys https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc
-gpg --list-sigs "3mdeb Master Key" "3mdeb Dasharo Master Key" "Protectli Dasharo Firewall Release 1.0 Signing Key"
-sha256sum -c protectli_vault_glk_v1.0.15.rom.sha256
-gpg -v --verify protectli_vault_glk_v1.0.15.rom.sha256.sig protectli_vault_glk_v1.0.15.rom.sha256
-```
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

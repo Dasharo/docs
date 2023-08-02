@@ -48,7 +48,9 @@ Test results for this platform can be found
 [sha256][novacustom_ns5x_tgl_v1.4.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_tgl_v1.4.0.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/518379)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -112,7 +114,9 @@ section for more details on upgrading your firmware.
 [sha_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256
 [sig_ec_v1.3.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.3.0/novacustom_ns5x_v1.3.0_ec.rom.sha256.sig
 
-See how to verify signatures on [this video](https://asciinema.org/a/518379)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -148,7 +152,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/518379)
 [sha_v1.2.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.2.0/novacustom_ns5x_v1.2.0.rom.sha256
 [sig_v1.2.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.2.0/novacustom_ns5x_v1.2.0.rom.sha256.sig
 
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -184,7 +190,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 [sha_v1.1.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.1.0/novacustom_ns5x_v1.1.0.rom.sha256
 [sig_v1.1.0]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x/v1.1.0/novacustom_ns5x_v1.1.0.rom.sha256.sig
 
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

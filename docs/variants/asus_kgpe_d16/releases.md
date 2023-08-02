@@ -82,7 +82,9 @@ Test results for this release can be found
 [sha256][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_hash]{.md-button}
 [sha256.sig][asus_kgpe-d16_v0.4.0_vboot_tpm2.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/448247)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/asus_kgpe-d16/asus-kgpe-d16-dasharo-release-v0.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -166,6 +168,10 @@ See how to verify signatures on [this video](https://asciinema.org/a/448247)
 [v0.3.0_16m_tpm20_sha]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM2.0.rom.sha256
 [v0.3.0_16m_tpm20_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.3.0_16M_vboot_TPM2.0.rom.sha256.sig
 
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/asus_kgpe-d16/asus-kgpe-d16-dasharo-release-v0.x-key.asc)
+
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.14 revision 67190bf](https://github.com/Dasharo/coreboot/commit/67190bf)
@@ -216,6 +222,10 @@ See how to verify signatures on [this video](https://asciinema.org/a/448247)
 [v0.2.0_16m_sha]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_16M.rom.sha256
 [v0.2.0_16m_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.2.0_16M.rom.sha256.sig
 
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/asus_kgpe-d16/asus-kgpe-d16-dasharo-release-v0.x-key.asc)
+
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.14 revision 63b7cbc1](https://github.com/Dasharo/coreboot/commit/63b7cbc1)
@@ -244,6 +254,10 @@ See how to verify signatures on [this video](https://asciinema.org/a/448247)
 [v0.1.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.1.0.rom
 [v0.1.0_sha]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.1.0.rom.sha256
 [v0.1.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/asus_kgpe-d16_v0.1.0.rom.sha256.sig
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/asus_kgpe-d16/asus-kgpe-d16-dasharo-release-v0.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

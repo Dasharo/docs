@@ -55,7 +55,9 @@ Test results for this release can be found
 [sha256][novacustom_nv4x_tgl_v1.4.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_tgl_v1.4.0.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -122,7 +124,9 @@ section for more details on upgrading your firmware.
 [sha256][novacustom_nv4x_v1.3.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_v1.3.0.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -157,7 +161,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 [sha256][v1.2.1_sha]{ .md-button }
 [sha256.sig][v1.2.1_sig]{ .md-button }
 
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 [v1.2.1_rom]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.1/novacustom_nv4x_v1.2.1.rom
 [v1.2.1_sha]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.1/novacustom_nv4x_v1.2.1.rom.sha256
@@ -199,7 +205,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/433461)
 [v1.2.0_sha]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.0/novacustom_nv4x_v1.2.0.rom.sha256
 [v1.2.0_sig]:https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x/v1.2.0/novacustom_nv4x_v1.2.0.rom.sha256.sig
 
-See how to verify signatures on [this video](https://asciinema.org/a/433461)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

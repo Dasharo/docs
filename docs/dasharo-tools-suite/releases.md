@@ -32,8 +32,9 @@ Process](../dev-proc/standard-release-process.md).
 [ISO_DTS_sha_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.iso.sha256
 [ISO_DTS_sig_v1.2.0]: https://3mdeb.com/open-source-firmware/DTS/v1.2.0/dts-base-image-v1.2.0.iso.sha256.sig
 
-  See how to verify hash and signature on [this
-  video](https://youtu.be/Tr9mtqULWrY). It works the same way with ISO image.
+  To verify binary integrity with hash and signature please follow the
+  instructions in [Dasharo release signature verification](/guides/signature-verification)
+  using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.2.x-signing-key-pub.asc)
 
 ### Changelog
 
@@ -60,8 +61,9 @@ stored in `meta-dts` repository.
 [ISO_DTS_sha_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256
 [ISO_DTS_sig_v1.1.1]: https://3mdeb.com/open-source-firmware/DTS/v1.1.1/dts-base-image-v1.1.1.iso.sha256.sig
 
-  See how to verify hash and signature on [this
-  video](https://youtu.be/RF-NYcZM9JI). It works the same way with ISO image.
+  To verify binary integrity with hash and signature please follow the
+  instructions in [Dasharo release signature verification](/guides/signature-verification)
+  using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.1.x-signing-key-pub.asc)
 
 ### Changelog
 
@@ -94,6 +96,10 @@ stored in `meta-dts` repository.
 [USB_DTS_v1.1.0]: https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz
 [USB_DTS_sha_v1.1.0]: https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256
 [USB_DTS_sig_v1.1.0]: https://3mdeb.com/open-source-firmware/DTS/v1.1.0/dts-base-image-v1.1.0.wic.gz.sha256.sig
+
+  To verify binary integrity with hash and signature please follow the
+  instructions in [Dasharo release signature verification](/guides/signature-verification)
+  using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.1.x-signing-key-pub.asc)
 
 ### Changelog
 
@@ -129,8 +135,9 @@ stored in `meta-dts` repository.
 [USB_DTS_sha_v1.0.2]: https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256
 [USB_DTS_sig_v1.0.2]: https://3mdeb.com/open-source-firmware/DTS/v1.0.2/dts-base-image-ce-v1.0.2.wic.gz.sha256.sig
 
-  See how to verify hash and signature on [this
-  video](https://youtu.be/oTx2iStxXOE).
+  To verify binary integrity with hash and signature please follow the
+  instructions in [Dasharo release signature verification](/guides/signature-verification)
+  using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.0.x-signing-key.asc)
 
 ### Changelog
 
@@ -159,7 +166,9 @@ stored in `meta-dts` repository.
 [USB_DTS_sha_v1.0.1]: https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256
 [USB_DTS_sig_v1.0.1]: https://3mdeb.com/open-source-firmware/DTS/v1.0.1/dts-base-image-ce-v1.0.1.wic.gz.sha256.sig
 
-  See how to verify hash and signature on [this video.](https://youtu.be/oTx2iStxXOE)
+  To verify binary integrity with hash and signature please follow the
+  instructions in [Dasharo release signature verification](/guides/signature-verification)
+  using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.0.x-signing-key.asc)
 
 ### Changelog
 

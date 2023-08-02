@@ -68,7 +68,9 @@ Test results for this platform can be found
 [sha256][novacustom_nv4x_adl_v1.6.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_adl_v1.6.0.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/518379)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -124,7 +126,9 @@ See how to verify signatures on [this video](https://asciinema.org/a/518379)
 [sha256][novacustom_nv4x_adl_v1.4.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_adl_v1.4.0.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://asciinema.org/a/518379)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
 

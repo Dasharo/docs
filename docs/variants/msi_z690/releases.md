@@ -61,7 +61,9 @@ To get more details about the changes one may read the
 [sha256][msi_ms7d25_v1.1.1_ddr5.rom_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.1_ddr5.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
@@ -149,7 +151,9 @@ See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
 [sha256][msi_ms7d25_v1.1.0_ddr5.rom_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.0_ddr5.rom_sig]{.md-button}
 
-See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
 
@@ -203,7 +207,9 @@ gpg --verify msi_ms7d25_v1.1.0_ddr5.rom.sha256.sig msi_ms7d25_v1.1.0_ddr5.rom.sh
 [sha256][v1.0.0_hash]{.md-button}
 [sha256.sig][v1.0.0_sig]{.md-button}
 
-See how to verify signatures on [this video](https://youtu.be/-fmiOxjEBec)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
 
@@ -245,7 +251,9 @@ gpg --verify msi_ms7d25_v1.0.0.rom.sha256.sig msi_ms7d25_v1.0.0.rom.sha256
 [sha256][v0.4.0_hash]{.md-button}
 [sha256.sig][v0.4.0_sig]{.md-button}
 
-See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
 
@@ -291,7 +299,9 @@ gpg --verify msi_ms7d25_v0.4.0.rom.sha256.sig msi_ms7d25_v0.4.0.rom.sha256
 [sha256][v0.3.0_hash]{.md-button}
 [sha256.sig][v0.3.0_sig]{.md-button}
 
-See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
 
@@ -335,7 +345,9 @@ gpg --verify msi_ms7d25_v0.3.0.rom.sha256.sig msi_ms7d25_v0.3.0.rom.sha256
 [sha256][v0.2.0_hash]{.md-button}
 [sha256.sig][v0.2.0_sig]{.md-button}
 
-See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
 
@@ -379,7 +391,9 @@ gpg --verify msi_ms7d25_v0.2.0.rom.sha256.sig msi_ms7d25_v0.2.0.rom.sha256
 [sha256][v0.1.0_hash]{.md-button}
 [sha256.sig][v0.1.0_sig]{.md-button}
 
-See how to verify signatures on [this video](https://youtu.be/741UtuZE8fA)
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
 
