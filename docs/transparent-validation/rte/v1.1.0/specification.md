@@ -1,6 +1,6 @@
 # RTE elements
 
-![](../../../images/rte-v1.1.0-interface-desc.jpg)
+![img](../../../images/rte-v1.1.0-interface-desc.png)
 
 * **UART0 header** - 1x3 Orange Pi Zero system debug output and console
   (pins: `RX`, `TX`, `GND`).

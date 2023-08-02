@@ -24,10 +24,10 @@ LED positions are showed in the image below.
 
 ## PCB elements and scheme
 
-![](./../../images/SD-wire_PCB_elements_1.jpg)
+![](./../../images/SD-wire_PCB_elements_1.png)
 
-![](./../../images/SD-wire_PCB_elements_2.jpg)
+![](./../../images/SD-wire_PCB_elements_2.png)
 
-![](./../../images/SD-wire_scheme-1.jpg)
+![](./../../images/SD-wire_scheme-1.png)
 
 <center>Source: [wiki.tizen.org](https://wiki.tizen.org/images/c/cb/SDWire-v1.4-sch.pdf)</center>
