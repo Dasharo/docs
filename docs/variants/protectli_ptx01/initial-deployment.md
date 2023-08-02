@@ -43,4 +43,3 @@ flashrom -p internal -w protectli_vault_pt201_v0.9.0.rom --ifd -i bios
 
 This will flash the BIOS region only. After the operation is successful,
 reboot the platform.
-
