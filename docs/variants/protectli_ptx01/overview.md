@@ -2,9 +2,10 @@
 
 The Vault is a small form network appliance built for use as a firewall /
 router, virtualization platform, a daily-driven personal computer, and more.
-The PTx01 features an Intel jasper Lake CPU, soldered down LPDDR4X memory,
+The PTx01 features an Intel Jasper Lake CPU, soldered down LPDDR4X memory,
 Intel i225-V/i226-V 2.5G Ethernet ports, 4x USB-A 3.x ports, eMMC, PCIe NVMe
-storage, M.2 WIFI and WWAN slots, serial console over USB-C, firmware TPM.
+storage, M.2 WIFI and WWAN slots, serial console over USB-C and a firmware
+TPM.
 
 * PT201 - Intel® Celeron® N5105, 2x i225/i226, 4GB LPDDR4X
 * PT401 - Intel® Celeron® N5105, 4x i225/i226, 8GB LPDDR4X
@@ -14,7 +15,7 @@ storage, M.2 WIFI and WWAN slots, serial console over USB-C, firmware TPM.
 
 * [Releases](releases.md) - groups information about all releases.
 * [Building manual](building-manual.md) - describes how to build Dasharo for
-  NovaCustom NV4x.
+  Protectli PT201/PT401/PT601.
 * [Initial deployment](initial-deployment.md) - describes initial Dasharo
   deployment methods (i. e. flashing new firmware) for Protectli PTx01.
 * [Firmware update](firmware-update.md) - explains supported Dasharo
