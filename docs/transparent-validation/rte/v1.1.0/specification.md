@@ -44,7 +44,7 @@
 
 ### RteCtrl: Web interface
 
-![](../../../images/rte-rest-api-interface.jpg)
+![](../../../images/rte-rest-api-interface.png)
 
 **RteCtrl** is a REST API controller used for RTE board. It comes with meta-rte
 operating system and starts automatically on port `8000` without the necessity

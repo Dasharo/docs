@@ -248,7 +248,7 @@ Connect the RTE SPI header to the platform as described in the table:
 Connect the RTE J1 header to the platform JFP1 header as shown in the picture
 below:
 
-![IMG](images/reading_power_status.jpg)
+![IMG](images/reading_power_status.png)
 
 The values ​​of `R1`, `R2`, `V1` and `V2` should meet the relationship according
 to the formula `R1/R2 = V2/V1`. `V1` cannot be greater than 3.3V (RTE property).
