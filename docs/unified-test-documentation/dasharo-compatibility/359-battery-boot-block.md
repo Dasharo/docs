@@ -13,8 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-## BBB001.001 Blocking the boot process when battery level is low
-## (charger disconnected) (Ubuntu 22.04)
+## BBB001.001 Blocking the boot process when battery level is low (charger disconnected) (Ubuntu 22.04)
 
 **Test description**
 
