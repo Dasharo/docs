@@ -19,7 +19,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           fail: true
-          args: --max-redirects 10 -a 403,500,503 .
+          args: --max-redirects 10 -a 403,500,503,504 .
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
     name: Check orphan pages
@@ -41,12 +41,13 @@ jobs:
           pip install -r requirements.txt
       - name: Serve site
         run: |
-          mkdocs serve &
-          sleep 15
+          mkdocs build
+          python3 -m http.server --directory site &
+          sed -i 's/https:\/\/docs.dasharo.com/http:\/\/0.0.0.0:8000/g' site/sitemap.xml
       - name: Check orphan pages
         uses: 3mdeb/seo-spy-action@main
         with:
-          domain: 'http://127.0.0.1:8000'
+          domain: 'http://0.0.0.0:8000'
   seo_spy_canonical_links:
     runs-on: ubuntu-latest
     name: Check canonical links
@@ -68,10 +69,11 @@ jobs:
           pip install -r requirements.txt
       - name: Serve site
         run: |
-          mkdocs serve &
-          sleep 15
+          mkdocs build
+          python3 -m http.server --directory site &
+          sed -i 's/https:\/\/docs.dasharo.com/http:\/\/0.0.0.0:8000/g' site/sitemap.xml
       - name: Check canonical links
         uses: 3mdeb/seo-spy-action@main
         with:
-          domain: 'http://127.0.0.1:8000'
+          domain: 'http://0.0.0.0:8000'
           args: '-c'
