@@ -12,6 +12,6 @@ For details about our release process please read
 </center>
 
 Test results for this platform can be found
-[here](TBD).
+[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=1316498194).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
