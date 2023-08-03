@@ -80,6 +80,63 @@ stress-ng: info:  [25309] dispatching hogs: 16 cpu
 
     ![boot_block](/docs/images/battery_block_popup.jpg)
 
+## BBB001.002 Blocking the boot process when battery level is low (charger connected) (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that booting is not blocked when the battery
+level is below 5% with charger connected to the DUT.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Make sure the charger is not plugged into the DUT.
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a terminal window and install `stress-ng` package by executing following
+    command:
+
+```bash
+sudo apt install stress-ng
+```
+
+1. Open a terminal window and run following bash script:
+
+```bash
+get_battery_level() {
+    battery_level=$(cat /sys/class/power_supply/BAT0/capacity)
+    echo "$battery_level"
+}
+target_battery_level=3
+while true; do
+    current_battery_level=$(get_battery_level)
+    echo "Current battery level: $current_battery_level%"
+    if [ "$current_battery_level" -le "$target_battery_level" ]; then
+        echo "Battery level reached 3%. Stopping stress-ng."
+        break
+    fi
+    stress-ng --cpu 0 --timeout 10s
+done
+```
+
+1. After the script finished working, plug the charger into the DUT.
+1. Reboot the DUT.
+
+**Expected Result**
+
+1. After reboot, the warning message should not appear and the DUT should boot
+    normally.
+
 ## BBB002.001 Battery not connected warning (Firmware)
 
 **Test description**
