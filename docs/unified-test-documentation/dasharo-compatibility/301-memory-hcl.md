@@ -16,11 +16,11 @@ module combinations specified in the HCL.
 
 1. Prepare the memory modules specified in the HCL.
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 
 **Test steps**
 

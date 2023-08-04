@@ -14,21 +14,19 @@ Following sections explain how to deal with most common `flashrom` problem.
 
 ### How to install Dasharo flashrom fork ?
 
-The following procedure is for advanced users familiar with source compilation
-and can resolve potential missing dependencies or other typical compilation
-problems. If you are unfamiliar with compilation from source, we recommend
-using Dasharo Tools Suite, a minimal Linux environment to deploy, update, and
-maintain firmware on Dasharo-supported devices. Please follow [DTS
-documentation](../../dasharo-tools-suite/overview). Otherwise, please follow
-the compilation procedure.
+* Install flashrom v1.1 or newer with your distribution's package manager if
+  you don't have it installed yet. If your distro doesn't provide flashrom or
+  provides an outdated one, you can build it yourself using
+  [this instruction](https://www.flashrom.org/dev_guide/building_from_source.html).
+* Or compile recent version of flashrom:
 
 If you need flashrom for Dasharo-supported hardware and for some reason you
 cannot use DTS, please consider the compilation of Dasharo [flashrom
 fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
 
 For compilation details and related issues, please check flashrom
-[documentation](https://review.coreboot.org/plugins/gitiles/flashrom/+/refs/heads/master/README)
-and [community](https://www.flashrom.org/Contact).
+[documentation](https://review.coreboot.org/plugins/gitiles/flashrom/+/refs/heads/master/README.rst)
+and [community](https://www.flashrom.org/contact.html).
 
 ### Perform dry run to detect the problems early
 
@@ -157,7 +155,7 @@ Note: flashrom can never write if the flash chip isn't found automatically.
 
 that means your flashrom version is incorrect. Follow the procedure of
 [building flashrom](#how-to-install-dasharo-flashrom-fork) or use
-[DTS](../../dasharo-tools-suite/overview).
+[DTS](../dasharo-tools-suite/overview.md).
 
 ### Chip write protection enabled
 
@@ -199,7 +197,7 @@ tools that can simplify the operation for the user -->
 It is always a good idea to backup the original BIOS of your hardware, before
 switching to open-source firmware.
 
-* Boot [Dasharo Tools Suite](../../../dasharo-tools-suite/documentation#bootable-usb-stick)
+* Boot [Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation#bootable-usb-stick)
 * Choose option 9) Shell.
 * Read content of SPI NOR flash:
 

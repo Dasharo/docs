@@ -18,7 +18,7 @@ another device.
 ## Setting serial connection
 
 1. Put the two jumpers on
-    [RTE J16 Header](../specification/#uart-output-select-header):
+    [RTE J16 Header](./specification.md#uart-output-select-header):
 
     1. For the RS232 port, they join COM and RS232 rows both on RX and TX
         columns.

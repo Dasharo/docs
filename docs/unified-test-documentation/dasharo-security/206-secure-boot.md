@@ -15,7 +15,7 @@ flashing the platform with the Dasharo firmware is correct.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -46,13 +46,13 @@ the DUT reset, it is seen from the OS.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-   [Secure Boot Configuration](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+   [Secure Boot Configuration](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
    to enable the `Attempt Secure Boot` option in the
    `Secure Boot Configuration` menu.
 
@@ -100,13 +100,13 @@ the DUT reset, it is seen from the OS.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../../generic-test-setup/#os-installer).
+   [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../../generic-test-setup/#os-installation).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-   [Secure Boot Configuration](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+   [Secure Boot Configuration](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
    to enable the `Attempt Secure Boot` option in the
    `Secure Boot Configuration` menu.
 
@@ -155,7 +155,7 @@ key.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -220,7 +220,7 @@ This test verifies that Secure Boot blocks booting a file without a key.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -272,7 +272,7 @@ key.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -323,7 +323,7 @@ after flashing the platform with the Dasharo firmware.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -353,7 +353,7 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -468,7 +468,7 @@ incorrect format.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Additional `USB storage` - at least 1GB - for keeping files for booting
 
 **Test steps**

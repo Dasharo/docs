@@ -37,7 +37,7 @@ Dasharo ([major_framework]+[minor_framework]) v[version]
   primary framework, e.g. a coreboot payload. May not always be used, e.g. if
   `edk2` is used as the primary framework.
 - `version` means version according to official
-  [Dasharo Versioning](../versioning) documentation.
+  [Dasharo Versioning](versioning.md) documentation.
 
 _For [TianoCore UEFIPayloadPkg](https://github.com/Dasharo/edk2/tree/dasharo/UefiPayloadPkg),
 we use the simpler and more recognizable UEFI name._

@@ -5,9 +5,9 @@
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: Firmware](../../generic-test-setup#firmware).
+   [Generic test setup: Firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-   [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 
 ## WBT001.001 Windows 11 installation and boot
 

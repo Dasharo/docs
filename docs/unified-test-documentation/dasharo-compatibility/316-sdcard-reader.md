@@ -5,13 +5,13 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../../generic-test-setup#os-installer).
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
-    [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
+    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. Insert an SD card into the SD Card reader.
 
 ## SDC001.001 SD Card reader detection (Ubuntu 22.04)

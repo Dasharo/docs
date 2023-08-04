@@ -11,7 +11,7 @@ The below table contains information about all elements which are needed to
 create the testing stand.
 
 * MSI PRO Z690-A platform
-* [RTE v1.1.0](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
+* [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 * Sonoff S20 type E
 * 4x standard female-female connection wire 2.54 mm raster
 * 7x standard female-female connection wire 2.54/2.00 mm raster
@@ -32,7 +32,7 @@ documentation.
 ### RTE
 
 RTE (acronym: Remote Testing Environment) should be prepared in accordance with
-[Quick start guide](../../rte/v1.1.0/quick-start-guide) documentation dedicated
+[Quick start guide](../rte/v1.1.0/quick-start-guide.md) documentation dedicated
 to the device.
 
 ### Sonoff
@@ -248,7 +248,7 @@ Connect the RTE SPI header to the platform as described in the table:
 Connect the RTE J1 header to the platform JFP1 header as shown in the picture
 below:
 
-![IMG](images/reading_power_status.jpg)
+![IMG](images/reading_power_status.png)
 
 The values ​​of `R1`, `R2`, `V1` and `V2` should meet the relationship according
 to the formula `R1/R2 = V2/V1`. `V1` cannot be greater than 3.3V (RTE property).
@@ -282,7 +282,7 @@ The following sections describe how to use all of the enabled features:
 ### Serial connection
 
 The method of setting and using serial connection is described in the
-[Serial connection guide](../../rte/v1.1.0/serial-port-connection-guide).
+[Serial connection guide](../rte/v1.1.0/serial-port-connection-guide.md).
 
 ### Power supply controlling
 

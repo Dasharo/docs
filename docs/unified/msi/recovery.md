@@ -7,8 +7,8 @@ hardware configurations, the Dasharo firmware may not boot correctly (i.e.
 we will have "bricked" the platform). In such a case, the recovery procedure can
 reinstall the original firmware from the board manufacturer.
 
-There are two documented recovery methods: using a [CH341A programming kit](https://3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/)
-or an [RTE](https://3mdeb.com/shop/open-source-hardware/rte/).
+There are two documented recovery methods: using a [CH341A programming kit](https://shop.3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/)
+or an [RTE](https://shop.3mdeb.com/shop/open-source-hardware/rte/).
 
 Since Dasharo v1.1.2 (PRO Z690-A) / v0.9.0 (PRO Z790-P) release it is also
 possible to use MSI FlashBIOS button feature to recover using an image placed
@@ -39,7 +39,7 @@ In this case, using external programmer is necessary. We are using
 here.
 
 * Connect programmer to the flash chip as shown in the
-  [Hardware connection / SPI](../development/#hardware-connection) section of
+  [Hardware connection / SPI](development.md#hardware-connection) section of
   the `Development` documentation.
 
 * Download official BIOS from vendor's website (this is the newest version, you
@@ -64,7 +64,7 @@ flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
 
 #### Prerequisites
 
-The full set is now available at our [online shop](https://3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/).
+The full set is now available at our [online shop](https://shop.3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/).
 
 1. CH341A kit with 1.8V level-shifter. Can be bought on e.g. [Amazon](https://www.amazon.com/programmer-ch341a-Programmer-Adapter-Converter/dp/B07WP9FKZ2)
 
@@ -223,7 +223,7 @@ provides the system UUID in the SMBIOS system information structure.
 
 The problem with UUID is that it cannot be recovered if the backup binary or
 SMBIOS logs are lost. You can backup the SMBIOS information with our
-[Dasharo Tools Suite bootable stick](../../../dasharo-tools-suite/documentation#bootable-usb-stick).
+[Dasharo Tools Suite bootablestick](https://docs.dasharo.com/dasharo-tools-suite/documentation#bootable-usb-stick).
 The `dmidecode.log` will have all the necessary information. Things we know
 about MSI system UUID:
 

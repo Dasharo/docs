@@ -9,7 +9,7 @@ The update process may be different, depending on the currently installed
 Dasharo firmware version.
 
 For simplicity of the update process, we recommend using
-[Dasharo Tools Suite](../../../dasharo-tools-suite/overview).
+[Dasharo Tools Suite](../../dasharo-tools-suite/overview.md).
 
 Before starting the update procedure be sure to disable Secure Boot:
 
@@ -17,7 +17,7 @@ Before starting the update procedure be sure to disable Secure Boot:
 2. While the device is booting, hold the `DELETE` key to enter the UEFI Setup
    Menu.
 3. Enter the `Device Manager` menu.
-4. Enter the [Secure Boot Configuration](../../../dasharo-menu-docs/device-manager/#secure-boot-configuration)
+4. Enter the [Secure Boot Configuration](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration)
    submenu.
 5. Verify that the `Current Secure Boot State` field says Disabled - if not,
    unselect the `Attempt Secure Boot` option below then press `F10` to save

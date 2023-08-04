@@ -8,7 +8,7 @@ common preparation of RTE without listed functions.
 
 ## Prerequisites
 
-* [RTE board](https://3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
+* [RTE board](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
     (this document is based on v1.1.0)
 * Micro-USB 5V 2.5A power supply
 * Orange Pi
@@ -48,8 +48,8 @@ common preparation of RTE without listed functions.
 1. Insert SD card into Orange Pi.
 1. Connect the ethernet cable to Orange Pi.
 1. Plug the USB-UART converter into your computer and connect its pins with
-    [RTE J2 Header](../specification/#uart0-header). (you may need a
-    USB extension cable)
+    [RTE J2 Header](specification.md#uart0-header).
+    (you may need a USB extension cable)
 
     |UART Converter | RTE J2 Header|
     |:-------------:|:------------:|

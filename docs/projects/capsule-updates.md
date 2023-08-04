@@ -52,7 +52,7 @@ transparent validation, privacy-respecting implementation, liberty for the
 owners, and trustworthiness for all. More details can be found here [\[7\]][7].
 
 [1]: https://github.com/coreboot/coreboot
-[2]: https://docs.dasharo.com/variants/msi_z690/overview/
+[2]: https://docs.dasharo.com/unified/msi/overview/
 [3]: https://docs.dasharo.com/variants/dell_optiplex/overview/
 [4]: https://github.com/tianocore/edk2
 [5]: https://github.com/fwupd/fwupd

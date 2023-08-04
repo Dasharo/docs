@@ -96,7 +96,7 @@ section for more details on upgrading your firmware.
 ### Changed
 
 - [Rebased on upstream coreboot revision from 18 Aug 2022](https://github.com/Dasharo/coreboot/commits/1a8eb6c0)
-- [Support for open-source EC firmware (transition procedure is required)](../../../dasharo-tools-suite/documentation#ec-transition)
+- [Support for open-source EC firmware (transition procedure is required)](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-transition)
 - [Disabled UEFI Secure Boot by default](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
 
 ### Fixed

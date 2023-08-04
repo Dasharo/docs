@@ -17,7 +17,7 @@ connection stability.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -48,7 +48,7 @@ may be re-done several times to specify the platform and connection stability.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -78,7 +78,7 @@ several times to specify the platform and connection stability.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 

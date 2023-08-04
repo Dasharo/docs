@@ -5,7 +5,7 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 ## LBT001.001 Debian Stable installation on USB storage
 
@@ -26,7 +26,7 @@ on USB storage attached to the DUT.
 
 **Test steps**
 
-1. According to the [Documentation](../../generic-test-setup#os-installer)
+1. According to the [Documentation](../generic-test-setup.md#os-installer)
     perform the OS installation process. As disk choose the USB stick.
 
 **Expected result**
@@ -81,7 +81,7 @@ installed on USB storage attached to the DUT.
 
 **Test steps**
 
-1. According to the [Documentation](../../generic-test-setup#os-installer)
+1. According to the [Documentation](../generic-test-setup.md#os-installer)
     perform the OS installation process. As disk choose the USB stick.
 
 **Expected result**
@@ -136,7 +136,7 @@ on the hard disk on the DUT.
 
 **Test steps**
 
-1. According to the [Documentation](../../generic-test-setup#os-installer)
+1. According to the [Documentation](../generic-test-setup.md#os-installer)
     perform the OS installation process. As disk choose the mounted in the
     DUT Hard Disk.
 
@@ -192,7 +192,7 @@ installed on the hard disk on the DUT.
 
 **Test steps**
 
-1. According to the [Documentation](../../generic-test-setup#os-installer)
+1. According to the [Documentation](../generic-test-setup.md#os-installer)
     perform the OS installation process. As disk choose the mounted in the
     DUT Hard Disk.
 

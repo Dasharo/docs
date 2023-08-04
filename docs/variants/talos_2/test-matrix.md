@@ -13,9 +13,17 @@ subjected from before the release of the new binary.
 | 2.   | [Heads bootloader support][HDS]                   | HDS           | HDS001.001, HDS001.002               |
 | 3.   | [Device Tree][DVT]                                | DVT           | DVT001.001, DVT002.001               |
 
-[CBP]: ../../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port
-[HDS]: ../../../unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support
-[DVT]: ../../../unified-test-documentation/dasharo-compatibility/31W-device-tree
+[CBP]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/100-coreboot-base-port
+[PBT]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support
+[HDS]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support
+[DVT]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31W-device-tree
+[UDT]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31O-usb-detect
+[UBT]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31N-usb-boot
+[LBT]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support
+[CPU]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31T-cpu-status
+[USB]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support
+[NVM]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/312-nvme-support
+[DSP]: https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd
 
 ## Module: Dasharo security
 

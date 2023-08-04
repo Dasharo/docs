@@ -203,4 +203,4 @@ display with 1920x1080 resolution.
 
 ## Where to buy?
 
-The PiKVM is available in our [online shop](https://3mdeb.com/shop/open-source-hardware/pikvm/).
+The PiKVM is available in our [online shop](https://shop.3mdeb.com/shop/open-source-hardware/pikvm/).

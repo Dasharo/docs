@@ -14,7 +14,7 @@ This test aims to verify that the DUT is configured to display the specified
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 

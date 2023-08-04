@@ -5,13 +5,13 @@
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-   [Generic test setup: OS installer](../../generic-test-setup#os-installer).
+   [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
-   [Generic test setup: OS installation](../../generic-test-setup#os-installation).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-   [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
+   [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
 ## DSP001.001 Internal LCD in firmware
 
@@ -27,7 +27,7 @@ during firmware execution phase.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 **Test steps**
 
@@ -167,7 +167,7 @@ during firmware execution phase.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 2. Connect an HDMI cable to the DUT and a display.
 
 **Test steps**
@@ -254,7 +254,7 @@ display during firmware execution phase.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 2. Connect a Display Port cable to the DUT and a display.
 
 **Test steps**
@@ -340,7 +340,7 @@ execution phase.
 **Test setup**
 
 1. Proceed with the
-   [Generic test setup: firmware](../../generic-test-setup/#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 2. Connect a video input connector to the VGA and a display.
 
 **Test steps**

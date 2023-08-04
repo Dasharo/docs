@@ -106,7 +106,7 @@ TPM2 log entry 9:
 ## Additional information
 
 The Module is available at the official
-[3mdeb store](https://3mdeb.com/shop/modules/tpm-1-2-compatible-with-raptor-computing-systems-talos-ii-mainboard/).
+[3mdeb store](https://shop.3mdeb.com/shop/modules/tpm-1-2-compatible-with-raptor-computing-systems-talos-ii-mainboard/).
 
 You can also buy the product by mailing us at:
 [shopping@3mdeb.com](mailto:shopping@3mdeb.com).

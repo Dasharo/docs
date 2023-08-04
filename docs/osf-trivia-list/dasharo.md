@@ -19,14 +19,14 @@ Dasharo is an open-source firmware distribution focusing on:
 
 Dasharo consists of [productized services](#dasharo-professional-support), set
 of [open-source repositories](https://github.com/orgs/Dasharo/repositories),
-and [quality control](../../unified-test-documentation/overview/) which help to
-provide scalable, modular, easy to combine open-source BIOS, UEFI, and firmware
-solutions. It offers the components that are needed to develop and maintain a
-high quality, and modular firmware, for the stability and security of your
-platform.
+and [quality control](https://docs.dasharo.com/unified-test-documentation/overview/)
+which help to provide scalable, modular, easy to combine open-source BIOS, UEFI,
+and firmware solutions. It offers the components that are needed to develop
+and maintain a high quality, and modular firmware, for the stability and
+security of your platform.
 
 For individuals Dasharo provides optional features in subscription model called
-[Supporters Entrance](../dts/#how-to-get-dasharo-tools-suite-supporters-entrance).
+[Supporters Entrance](dts.md#how-to-get-dasharo-tools-suite-supporters-entrance).
 
 ## Why 3mdeb created Dasharo?
 
@@ -101,7 +101,7 @@ release notes directly to the customer and does not have to be publicly
 available.
 1. Every firmware produced by Dasharo Ecosystem use [Semantic Versioning
 2.0.0](https://semver.org/) compatible versioning scheme. For details please
-check [description](../../dev-proc/versioning).
+check [description](https://docs.dasharo.com/dev-proc/versioning).
 1. Every firmware produced by Dasharo Ecosystem should use [Keep A Changelog
 1.0.0](https://keepachangelog.com/en/1.0.0/) compatible scheme as changelog
 format.
@@ -129,7 +129,7 @@ Those microcontrollers and IP blocks typically require firmware blobs as well.
 Some of the blobs are clearly visible, some may be obfuscated and hidden inside
 the silicon or other firmware blobs (e.g. Intel Management Engine region
 contains multiple other blobs besides the ME firmware -
-[more about Intel ME blob](../me)).
+[more about Intel ME blob](me.md)).
 
 So Dasharo's binary blob policy is as follows:
 
@@ -270,12 +270,13 @@ and binary blobs transmission, as well as recovery.
 
 For more details about zero-touch initial deployment please read relevant
 DTS
-[documentation](../../dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment).
+[documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment).
 
 ### Dasharo Clean and Simple Code
 
 Dasharo is an open-source distribution project with a simple code structure
-described in detail [here](../../../dev-proc/source-code-structure). While the
+described in detail
+[here](https://docs.dasharo.com/dev-proc/source-code-structure). While the
 project benefits from the simplicity of the coreboot source code, it is
 continuously researching and improving its development process and tools to
 provide a superior experience for developers.  One example of this ongoing work
@@ -283,7 +284,8 @@ is the improvements made to fork maintenance, currently being tracked in [this
 issue](https://github.com/Dasharo/dasharo-issues/issues/310) on the Dasharo
 GitHub repository. The project also explores the concept of a bootstrapable
 toolchain, discussed in the [build process
-section](../../osf-trolling-list/build_process) of the project documentation.
+section](https://docs.dasharo.com/osf-trolling-list/build_process)
+of the project documentation.
 
 ### Dasharo Long Term Maintenance
 
@@ -479,11 +481,12 @@ such a case, don't hesitate to contact us; we will see what we can do. However,
 the community member who requested support for the platform should also offer
 their help in validating the firmware and maintenance. That kind of request
 will be more than welcome from active community members. New members should
-consider [ways to help us](../../ways-you-can-help-us/) to gain a reputation
-that can lead to influencing Dasharo Community Supported roadmap.
+consider [ways to help us](https://docs.dasharo.com/ways-you-can-help-us/)
+to gain a reputation that can lead to influencing Dasharo Community Supported
+roadmap.
 
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
-[dtsos]: ../../dasharo-tools-suite/overview/
+[dtsos]: ../dasharo-tools-suite/overview.md
 [lvfs]: https://fwupd.org/lvfs/docs/consulting
 [gerrit-review]: https://review.coreboot.org/c/homepage/+/63402
 [cb-distro]: https://doc.coreboot.org/distributions.html

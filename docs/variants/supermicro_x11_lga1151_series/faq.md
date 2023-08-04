@@ -1,6 +1,6 @@
 # FAQ
 
-**Please read the [overview page](../overview) first!**
+**Please read the [overview page](../overview.md) first!**
 
 ## How to identify my mainboard model?
 

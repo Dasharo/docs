@@ -32,7 +32,7 @@ RTE.
     ![](../../../images/ch341a_rec/wson8_probe2.jpg)
 
 1. Connect the cables coming out from the WSON8 probe to the
-    [SPI header](../specification/) according to the pictures and table
+    [SPI header](specification.md) according to the pictures and table
     below.
 
     - Top view of flash chip:

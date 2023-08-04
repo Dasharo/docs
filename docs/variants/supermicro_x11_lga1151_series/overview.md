@@ -30,8 +30,8 @@ us](mailto:contact@dasharo.com) if you wan to talk about project status.
 Please note that Dasharo compatilbe with Supermicro X11 LGA1151 Series may work
 with various boards from this family, at this stage only X11SSH-F and X11SSH-TF
 can be treated as tested. This state can change when we will enter more mature
-state with transparent validation results published in [Releases](../releases)
-section and [hardware configuration matrix](../hardware-matrix) used for
+state with transparent validation results published in [Releases](releases.md)
+section and [hardware configuration matrix](hardware-matrix.md) used for
 testing. We may also consider CPU, DRAM and GPU HCL sections in documentation.
 
 If you are interested in this project, please consider joining the

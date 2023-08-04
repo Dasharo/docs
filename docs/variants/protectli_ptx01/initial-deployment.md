@@ -7,7 +7,7 @@ installing and running flashrom on Ubuntu 22.04.
 ## Deploy using Dasharo Tools Suite
 
 For simplicity we recommend using
-[Dasharo Tools Suite](../../../dasharo-tools-suite/overview) to
+[Dasharo Tools Suite](../../dasharo-tools-suite/overview.md) to
 omit all compilation steps and deploy the Dasharo firmware seamlessly.
 
 1. Boot Dasharo Tools Suite.
@@ -20,7 +20,7 @@ This concludes Dasharo deployment process using DTS.
 
 ## Build flashrom
 
-Please follow generic guide for [Dasharo flashrom fork](../../../osf-trivia-list/deployment/#how-to-install-dasharo-flashrom-fork).
+Please follow generic guide for [Dasharo flashrom fork](../../osf-trivia-list/deployment.md#how-to-install-dasharo-flashrom-fork).
 
 ## Reading flash contents
 

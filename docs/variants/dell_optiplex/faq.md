@@ -3,8 +3,7 @@
 ## I see orange LED blinking, but no output, is my board broken?
 
 It means ME is broken and backup firmware would be required to recover it.
-Please follow
-[additional recovery step](../recovery/#optional-step-7-flash-8mb-me-part)
+Please follow [additional recovery step](./recovery.md#optional-step-7-flash-8mb-me-part)
 to fix that problem.
 
 ## I see white LED, but no output, is my board broken?
@@ -16,7 +15,8 @@ stuck at some point or maybe platform booting normally but all output is
 disabled.
 
 Debugging that requires rebuilding with `CONFIG_DEFAULT_CONSOLE_LOGLEVEL_8=y`.
-Instruction for that can be found [here](../building-manual/#debug-build).
+Instruction for that can be found
+[here](./building-manual.md#debug-build).
 
 ## Is it safe to work without heatsink?
 
@@ -50,8 +50,8 @@ If serial console logs contain:
 ```
 
 It means ME is broken and backup firmware would be required to recover it.
-Please follow
-[additional recovery step](../recovery/#optional-step-7-flash-8mb-me-part)
+Please follow [additional recovery
+step](recovery.md#optional-step-7-flash-8mb-me-part)
 to fix that problem.
 
 This may happen accidentally when you flash whole 12MB BIOS binary without

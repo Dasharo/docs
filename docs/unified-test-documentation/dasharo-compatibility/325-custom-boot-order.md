@@ -5,7 +5,7 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
 ## CBO001.001 Custom boot order (SeaBIOS)
 

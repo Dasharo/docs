@@ -14,10 +14,10 @@ following unofficial guides deviating in any way from the official
 instructions.
 
 If you have trouble with the installation process, ask for help on the official
-[Dasharo chat channel](../../../#community). There are almost always people
-around willing to help with it. Before asking for help, make an attempt to
-follow the guide on your own and then ask for help with anything you get stuck
-on.
+[Dasharo chat channel](https://docs.dasharo.com/#community). There are almost
+always people around willing to help with it. Before asking for help, make an
+attempt to follow the guide on your own and then ask for help with anything you
+get stuck on.
 
 ## Hardware preparation
 
@@ -79,7 +79,7 @@ iPXE Shell
 ## Vendor BIOS backup
 
 Please follow [DTS backup
-guide](../../../dasharo-tools-suite/documentation/#bios-backup).
+guide](https://docs.dasharo.com/dasharo-tools-suite/documentation/#bios-backup).
 
 ## Installing Dasharo with DTS
 

@@ -1,6 +1,6 @@
 # Recovery
 
-**Please read the [overview page](../overview) first!**
+**Please read the [overview page](../overview.md) first!**
 
 ---
 
@@ -11,12 +11,12 @@ Following instruction was tested on:
 * X11SSH-TF v1.01
 
 For information how to identify your mainboard model pelase check
-[faq](../faq/#how-to-identify-my-mainboard-model).
+[faq](faq.md#how-to-identify-my-mainboard-model).
 
 Following documentation describes the process of recovering hardware from brick
 state with through BMC BIOS Update feature. This feature can be used also for
-[initial deployment](../initial-deployment) and [Firmware
-Update](../firmware-update).
+[initial deployment](initial-deployment.md) and [Firmware
+Update](firmware-update.md).
 
 ### Requirements
 
@@ -44,7 +44,7 @@ Supermicro proprietary closed source tools:
 * [Supermicro Update
   Manager](https://www.supermicro.com/en/solutions/management-software/supermicro-update-manager)
    please download and unpack archive.
-* [Backup](../../../dasharo-tools-suite/documentation/#bios-backup) or
+* [Backup](../../dasharo-tools-suite/documentation.md#bios-backup) or
   [Supermicro BIOS
   update](https://www.supermicro.com/en/support/resources/downloadcenter/firmware/MBD-X11SSH-TF/BIOS)
    please download and unpack archive.

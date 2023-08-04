@@ -1,6 +1,6 @@
 # Firmware update
 
-**Please read the [overview page](../overview) first!**
+**Please read the [overview page](../overview.md) first!**
 
 Following documentation describe process of Dasharo open-source firmware
 distribution update.
@@ -10,7 +10,7 @@ distribution update.
 ## OS booting
 
 For simplicity we recommend using network booted
-[Dasharo Tools Suite](../../../dasharo-tools-suite/overview).
+[Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/overview).
 
 ### Dasharo (coreboot+SeaBIOS) update
 

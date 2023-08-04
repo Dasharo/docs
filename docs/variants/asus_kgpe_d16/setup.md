@@ -98,8 +98,8 @@ option to connect a TPM, we use the header for that purpose.
 IMPORTANT: Use only TPM modules which match their pinout with the board's
 header! Using a spider web connection degrades the signal quality to the point
 where CPU cannot properly talk to TPM via LPC bus. Tested with
-[PC Engines TPM module](https://3mdeb.com/shop/modules/tpm-2-0/) and failed to
-succeed this way. Designing and producing proper TPM header and/or reliable
+[PC Engines TPM module](https://shop.3mdeb.com/shop/modules/tpm-2-0/) and failed
+to succeed this way. Designing and producing proper TPM header and/or reliable
 adapter, could solve this problem. The [TwPM
 project](https://twpm.dasharo.com/) could help here in the future.
 
@@ -162,7 +162,7 @@ jumper to protect the flash. In order to assembly the adapter you will need
 (16MB)),
 * male pin headers 2.54 mm pitch (6 pins)
 * male long pin headers 2.54 mm pitch (2 pins) for the WP jumper
-* [SOIC-8 to DIP-8 adapter](https://pl.farnell.com/en-PL/aries/lcqt-soic8-8/ic-adaptor-8-soic-to-dip-2-54mm/dp/2476033?ost=lcqt-soic8-8)
+* [SOIC-8 to DIP-8 adapter](https://www.digikey.com/en/products/detail/aries-electronics/LCQT-SOIC8-8/4754588)
 * soldering station and the solder
 
 The build shall look like this:
@@ -262,4 +262,4 @@ to the [Dasharo Newsletter](https://newsletter.3mdeb.com/subscription/wwL90UkXP)
 ![](/images/kgpe_2.jpg)
 ![](/images/kgpe_3.jpg)
 
-[flashchip-adapter]: https://3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/
+[flashchip-adapter]: https://shop.3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/

@@ -1,0 +1,79 @@
+---
+name: SEO CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          fail: true
+          args: --max-redirects 10 -a 403,500,503,504 .
+  seo_spy_orphan_pages:
+    runs-on: ubuntu-latest
+    name: Check orphan pages
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Checkout SEO Spy
+        uses: actions/checkout@v3
+        with:
+          repository: 3mdeb/seo-spy
+          path: seo-spy
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r seo-spy/requirements.txt
+          pip install -r requirements.txt
+      - name: Serve site
+        run: |
+          mkdocs build
+          python3 -m http.server --directory site &
+          sed -i 's/https:\/\/docs.dasharo.com/http:\/\/0.0.0.0:8000/g' site/sitemap.xml
+      - name: Check orphan pages
+        uses: 3mdeb/seo-spy-action@main
+        with:
+          domain: 'http://0.0.0.0:8000'
+  seo_spy_canonical_links:
+    runs-on: ubuntu-latest
+    name: Check canonical links
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Checkout SEO Spy
+        uses: actions/checkout@v3
+        with:
+          repository: 3mdeb/seo-spy
+          path: seo-spy
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r seo-spy/requirements.txt
+          pip install -r requirements.txt
+      - name: Serve site
+        run: |
+          mkdocs build
+          python3 -m http.server --directory site &
+          sed -i 's/https:\/\/docs.dasharo.com/http:\/\/0.0.0.0:8000/g' site/sitemap.xml
+      - name: Check canonical links
+        uses: 3mdeb/seo-spy-action@main
+        with:
+          domain: 'http://0.0.0.0:8000'
+          args: '-c'

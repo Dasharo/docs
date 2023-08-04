@@ -90,7 +90,7 @@ section for more details on upgrading your firmware.
 
 - Rebased on upstream coreboot revision 1a8eb6c0
 
-- [Support for Open EC Firmware](../../../dasharo-tools-suite/documentation#ec-transition)
+- [Support for Open EC Firmware](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-transition)
 
 - [Disabled UEFI Secure Boot by default](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
 
@@ -167,7 +167,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - Support for NovaCustom NS7x
 - [Support for RGB Keyboard](https://docs.dasharo.com/unified/novacustom/rgb-keyboard/)
-- [Persistent boot logo implementation](../../../guides/logo-customization)
+- [Persistent boot logo implementation](https://docs.dasharo.com/guides/logo-customization)
 
 ### Changed
 

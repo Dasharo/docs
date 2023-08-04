@@ -24,18 +24,18 @@ Please help us develop Dasharo influence on open-source firmware market and
 spread the word about it. There are multiple ways to do that:
 
 * [Join Dasharo Matrix
-  Community](../../ways-you-can-help-us/#join-dasharo-matrix-community) and
+  Community](../ways-you-can-help-us.md#join-dasharo-matrix-community) and
   support other members of community
 * [Join Dasharo open-source firmware
-  vPub](../../ways-you-can-help-us/#join-dasharo-open-source-firmware-vpub) or
+  vPub](../ways-you-can-help-us.md#join-dasharo-open-source-firmware-vpub) or
   other related event organized by 3mdeb or Dasharo Team.
-* [Write a Google review](../../ways-you-can-help-us/#write-a-google-review)
+* [Write a Google review](../ways-you-can-help-us.md#write-a-google-review)
 * [Follow us on social
-  media](../../ways-you-can-help-us/#follow-us-on-social-media) and help
+  media](../ways-you-can-help-us.md#follow-us-on-social-media) and help
   spreading the word about Dasharo.
-* [Contribute](../../ways-you-can-help-us/#contribute-through-github)
+* [Contribute](../ways-you-can-help-us.md#contribute-through-github)
   documentation, test results, [Dasharo Hardware Compatibility List
-  Reports](../../../dasharo-tools-suite/documentation/#hcl-report)
+  Reports](https://docs.dasharo.com/dasharo-tools-suite/documentation/#hcl-report)
 
 To get access to DTS SE you should [contact 3mdeb](mailto:leads@3mdeb.com) or
 [Dasharo Team](mailto:contact@dasharo.com) and prove your contribution
@@ -44,7 +44,7 @@ would be glad to give you access to DTS SE for a year.
 
 ### I have more time than money and I can't code
 
-Please [contribute](../../ways-you-can-help-us/#contribute-through-github)
+Please [contribute](../ways-you-can-help-us.md#contribute-through-github)
 ideas for new features, review documentation and help testing bug fixes.
 
 If you would like to pursue that path please contact us on [Dasharo -
@@ -57,7 +57,7 @@ SE updates.
 
 ### I have more money than time
 
-Please [donate](../../ways-you-can-help-us/#donate-money) using one of
+Please [donate](../ways-you-can-help-us.md#donate-money) using one of
 available methods and contact [3mdeb](mailto:leads@3mdeb.com) or [Dasharo
 Team](mailto:contact@dasharo.com) to let us know about your donation. Minimal
 donating to access DTS SE with one year update support is 60EUR.

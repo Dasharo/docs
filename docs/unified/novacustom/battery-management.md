@@ -4,14 +4,14 @@ NovaCustom laptops equipped with Dasharo firmware provide several battery
 management mechanisms to optimize user experience and further prolong the
 battery's lifespan.
 
-## Boot  blocking when the battery is low
+## Boot blocking when the battery is low
 
 To prevent corruption of the bootloader, which may occur due to sudden power cut
 off during the OS boot process, booting the OS is blocked when the battery level
 sits below 5%. When trying to boot the OS with the battery level below the
 defined threshold, following message will be displayed on screen:
 
-![](images/boot_block_popup.jpg)
+![boot_block_popup](../../images/battery_block_popup.jpg)
 
 ## Disconnected battery warning
 
@@ -19,14 +19,14 @@ When the firmware encounters problems with detecting the battery, following
 message will appear suggesting checking the physical connection between the
 battery and mainboard:
 
-![](images/battery_connection.jpg)
+![battery_connection](../../images/battery_connection.jpg)
 
 ## Power information error
 
 When the firmware encounters problems with retrieving information about AC and
 battery state, following error message will be displayed:
 
-![](images/power_error.jpg)
+![power_error](../../images/power_error.jpg)
 
 ## Charge thresholds
 
