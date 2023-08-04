@@ -76,8 +76,6 @@ plugins:
         - variants/secure-firewall.md
         - variants/custom.md
         - variants/server.md
-        - variants/protectli_ptx01/hardware-matrix.md
-        - variants/protectli_ptx01/test-matrix.md
 nav:
   - 'Intro':
       - 'About Dasharo': index.md

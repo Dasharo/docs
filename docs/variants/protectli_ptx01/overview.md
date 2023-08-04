@@ -22,5 +22,8 @@ TPM.
   open-source firmware update methods.
 * [Recovery](recovery.md) - gathers information on how to recover the platform
   from potential failure.
-* [Test matrix](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=1316498194)
-  \- describes validation scope used during Dasharo firmware validation procedure.
+* [Hardware configuration matrix](hardware-matrix.md) - describes the
+  platform's hardware configuration used during the Dasharo firmware
+  validation procedure.
+* [Test matrix](test-matrix.md) - describes validation scope used during
+  Dasharo firmware validation procedure.
