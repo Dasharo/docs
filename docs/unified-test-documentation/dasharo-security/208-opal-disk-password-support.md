@@ -29,9 +29,9 @@ it is required to type in the password at every boot. The test password used is
 1. Type in the new password
 1. Confirm the password
 1. Restart to test if password is set
-1. Type in the password - it should be successfull
+1. Type in the password - it should be successful
 
-** Removing the password **
+**Removing the password**
 
 1. Open `Device manager`
 1. Open `TCG Drive Management`
