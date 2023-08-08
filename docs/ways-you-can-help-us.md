@@ -71,7 +71,7 @@ that works for you.
 Buy the Dasharo Supporters Entrance subscription if you own/use/buy a machine
 running Dasharo firmware:
 
-* [1-year subcription](https://shop.3mdeb.com/shop/open-source-hardware/subscription-for-dasharo-compatible-with-msi-pro-z-690a-ddr4/)
+* [1-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/subscription-for-dasharo-compatible-with-msi-pro-z-690a-ddr4/)
 * [2-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/2-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
 * [3-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/3-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
 
