@@ -15,7 +15,7 @@ it is required to type in the password at every boot. The test password used is
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../../generic-test-setup/#firmware).
+    [Generic test setup: firmware](../generic-test-setup.md).
 
 **Test steps**
 
