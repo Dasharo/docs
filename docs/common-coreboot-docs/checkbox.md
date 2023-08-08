@@ -192,7 +192,7 @@ any results. Example of running one test plan:
     ```
 
 For more details about these (and others) commands visit
-[checkbox-cli](https://checkbox.readthedocs.io/en/latest/using.html#).
+[checkbox-cli](https://checkbox.readthedocs.io/en/latest/how-to/index.html).
 
 ## Troubleshooting
 
