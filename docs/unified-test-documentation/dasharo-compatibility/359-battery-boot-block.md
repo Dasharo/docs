@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../../generic-test-setup#os-boot-from-disk).
 
-## BBB001.001 Blocking the boot process when battery level is low (charger disconnected) (Ubuntu 22.04)
+## BBB001.001 Boot blocking (charger disconnected) (Ubuntu 22.04)
 
 **Test description**
 
@@ -80,7 +80,7 @@ stress-ng: info:  [25309] dispatching hogs: 16 cpu
 
     ![boot_block](/docs/images/battery_block_popup.jpg)
 
-## BBB001.002 Blocking the boot process when battery level is low (charger connected) (Ubuntu 22.04)
+## BBB001.002 Boot blocking (charger connected) (Ubuntu 22.04)
 
 **Test description**
 
@@ -163,7 +163,7 @@ disconnected from the DUT.
 
     ![battery_connector](/docs/images/nvc_ec_flash/ns5x_battery_unplugged.jpg)
 
-1. Reatach the bottom cover and flip the DUT over.
+1. Reattach the bottom cover and flip the DUT over.
 1. Plug the charger into the DUT.
 1. Power on the DUT.
 
