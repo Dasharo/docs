@@ -3,7 +3,7 @@
 ## Intro
 
 This document describes the procedure for compiling coreboot for Protectli
-PT201, PT401 and PT601.
+V1210, V1410 and V1610.
 
 ## Requirements
 
@@ -53,24 +53,24 @@ PT201, PT401 and PT601.
 
 5. Build the firmware v1.0.19 or newer:
 
-    + for PT201
+    + for V1210
 
         ```bash
-        ./build.sh pt201
+        ./build.sh V1210
         ```
 
-    + for PT401
+    + for V1410
 
         ```bash
-        ./build.sh pt401
+        ./build.sh V1410
         ```
 
-    + for PT601
+    + for V1610
 
         ```bash
-        ./build.sh pt601
+        ./build.sh V1610
         ```
 
 The resulting coreboot image will be placed in the coreboot directory as
-`protectli_pt201.rom`, `protectli_pt401.rom` or `protectli_pt601.rom`
+`protectli_V1210.rom`, `protectli_V1410.rom` or `protectli_V1610.rom`
 respectvely.

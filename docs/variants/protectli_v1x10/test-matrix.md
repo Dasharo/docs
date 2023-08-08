@@ -4,7 +4,7 @@
 
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary. The test scope is the same
-for all platforms of the PT family.
+for all platforms of the V1210/V1410/V1610 family.
 
 ## Module: Dasharo compatibility
 

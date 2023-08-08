@@ -35,10 +35,10 @@ flashrom -p internal -r dump.rom
 
 To flash Dasharo on the platform, execute the following command - replace
 `[path]` with the path to the Dasharo image you want to flash, e.g.
-`protectli_vault_pt201_v0.9.0.rom`.
+`protectli_vault_V1210_v0.9.0.rom`.
 
 ```bash
-flashrom -p internal -w protectli_vault_pt201_v0.9.0.rom --ifd -i bios
+flashrom -p internal -w protectli_vault_V1210_v0.9.0.rom --ifd -i bios
 ```
 
 This will flash the BIOS region only. After the operation is successful,

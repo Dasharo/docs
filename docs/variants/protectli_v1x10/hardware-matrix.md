@@ -3,9 +3,9 @@
 ## Introduction
 
 This document describes the hardware configuration used for validation of the
-coreboot port on the Protectli PT201/PT401/PT601 firewall.
+coreboot port on the Protectli V1210/V1410/V1610 firewall.
 
-## Protectli PT201
+## Protectli V1210
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
@@ -24,7 +24,7 @@ coreboot port on the Protectli PT201/PT401/PT601 firewall.
 | **Power Control**              | RTE v1.1.0                                  |
 | **Power supply**               | Power Adapter GA-0481204000V                |
 
-## Protectli PT401
+## Protectli V1410
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
@@ -43,7 +43,7 @@ coreboot port on the Protectli PT201/PT401/PT601 firewall.
 | **Power Control**              | RTE v1.1.0                                  |
 | **Power supply**               | Power Adapter GA-0481204000V                |
 
-## Protectli PT601
+## Protectli V1610
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
