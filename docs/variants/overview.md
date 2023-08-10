@@ -35,7 +35,7 @@ open-source firmware distribution.
 * Following desktops are supported under Dasharo Community Support
 
     - [Dell OptiPlex](dell_optiplex/overview.md)
-    - [MSI PRO Z790-P](../unified/msi/overview.md)
+    - [MSI PRO Z690-A](../unified/msi/overview.md)
     - [MSI PRO Z790-P](../unified/msi/overview.md)
 
 ## Workstation
