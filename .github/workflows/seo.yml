@@ -19,7 +19,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           fail: true
-          args: --max-redirects 10 -a 403,500,503,504 .
+          args: --timeout 60 --max-redirects 10 -a 403,500,503,504 .
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
     name: Check orphan pages
