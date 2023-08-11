@@ -170,9 +170,9 @@ Firmware Fund.](https://technologycommons.org/OFF/)
 
 Addresses:
 
-* Bitcoin: [1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV](1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV)
-* Monero: [89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ](89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ)
-* PKT: [pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v](pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v)
+* Bitcoin: [1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV](bitcoincash:1GUm6FF7Fon6Umrt5CSi3AxxYg8dM2NKvV)
+* Monero: [89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ](monerocash:89eBqUwoCpnPoUKD367kJm3Gsw639EUSdG3xwUyQmDroKHWHPyhYmJ63uP41ArHfPsBihNFTYjASpRUGaeSyp3JS9BmtjpQ)
+* PKT: [pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v](ptkcash:pkt1qyv4gmnvvg2vfyj89e63thzj68jf2y9k7ssee7v)
 
 If you want to contribute to other cryptocurrencies, please visit
 [OFF](https://technologycommons.org/OFF/) website for details about contact
