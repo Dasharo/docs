@@ -1,20 +1,23 @@
 # Dasharo Tools Suite
 
-## What is Dasharo Tools Suite Supporters Entrance
+## What is Dasharo Tools Suite?
 
-Dasharo Tools Suite Supporters Entrance (DTS SE) is an extended version of
-[DTS](../dasharo-tools-suite/overview.md) provided to Dasharo Supporters via
-the [Supporters Entrance subscription](../ways-you-can-help-us.md#become-a-dasharo-supporter).
-DTS is like a swiss army knife for Dasharo firmware: you can execute initial
-deployment, firmware update and even dump machine logs for debugging and
-development support. But with SE you could get updates for your own, customized
-build configurations.
+Dasharo Tools Suite (DTS) is like a swiss army knife for Dasharo firmware: you
+can execute initial deployment, firmware update and even dump machine logs for
+debugging and development support.
 
-## How to get Dasharo Tools Suite Supporters Entrance?
+Also refer to [DTS Overview](../dasharo-tools-suite/overview.md).
 
-DTS SE is available only to Dasharo Supporters for personal use. Commercial
-use of DTS SE should be discussed directly with [3mdeb](mailto:leads@3mdeb.com)
-or [Dasharo Team](mailto:contact@dasharo.com).
+## How to get Dasharo Entry Subscription releases using Dasharo Tools Suite?
+
+Dasharo Entry Subscription releases can be used to perform firmware updates
+with DTS by providing Dasharo Supporters credentials obtained after buying a
+[subscription](../ways-you-can-help-us.md#become-a-dasharo-supporter).
+
+Commercial use of DTS should be discussed directly with
+[3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com).
+
+## How to support us?
 
 In general there are three ways to support us:
 

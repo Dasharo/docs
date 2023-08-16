@@ -21,6 +21,5 @@ on [Dasharo
 issues](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aopen+is%3Aissue+label%3ADasharoToolsSuite).
 
 And if you have already used this system and would be interested in supporting
-the project, please check how to get [Supporters
-Entrance](https://docs.dasharo.com/osf-trivia-list/dts/#what-is-dasharo-tools-suite-supporters-entrance),
-which ensures delivery of Dasharo firmware updates.
+the project, please check [How to support us?](../osf-trivia-list/dts.md#how-to-support-us)
+section.
