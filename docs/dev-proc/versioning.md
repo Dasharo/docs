@@ -14,17 +14,17 @@ in menu on the left side (Supported Hardware->Hardware Model->Releases).
 
 ## Dasharo Entry Subscription releases
 
-Dasharo Supporters receive firmware updates more frequently than the
-community. Number of updates per year depends on the number of Dasharo
+Dasharo Entry Subscribers receive firmware updates more frequently than the
+community. The number of updates per year depends on the number of Dasharo Entry
 Subscriptions sold and the availability of other funding (e.g., NLNet,
 corporate sponsors, community donations) but is less than 2 updates per year.
 Dasharo Entry Subscription releases are characterized by a changing patch
 version (`z`). Fixes and features introduced in Dasharo Entry Subscription
-releases will also be available later as community releases with public
+releases will also be available later as Dasharo Community Releases with public
 pre-built binaries in the respective release pages. In short, being a Dasharo
-Supporter gives an early access to the newest features and fixes.
+Subscriber gives early access to the newest features and fixes.
 
-[How to become Dasharo Supporter?](../ways-you-can-help-us.md#become-a-dasharo-supporter)
+[How to become Dasharo Entry Subscriber?](../ways-you-can-help-us.md#become-a-dasharo-supporter)
 
 ## Community releases
 
