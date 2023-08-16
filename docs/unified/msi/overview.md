@@ -45,11 +45,11 @@ documentation._
 ## Useful documents
 
 === "PRO Z690-A (WIFI) (DDR4)"
-    *[MSI Z690-A PRO DDR4 WiFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
+    * [MSI Z690-A PRO DDR4 WiFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
     * [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
 
 === "PRO Z790-P (WIFI) (DDR4)"
-    *[MSI Z790-P PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI)
+    * [MSI Z790-P PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI)
     * [Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ790-P_PROZ790-PWIFI.pdf)
 
 ## Press releases
