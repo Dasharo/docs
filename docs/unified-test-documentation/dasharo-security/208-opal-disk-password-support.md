@@ -28,11 +28,13 @@ it is required to type in the password at every boot. The test password used is
 1. Save and restart
 1. Type in the new password
 1. Confirm the password
+1. Enter Setup Menu Tianocore
 1. Restart to test if password is set
 1. Type in the password - it should be successful
 
 **Removing the password**
 
+1. Enter Setup Menu Tianocore
 1. Open `Device manager`
 1. Open `TCG Drive Management`
 1. Select the disk
@@ -40,6 +42,9 @@ it is required to type in the password at every boot. The test password used is
 1. Save and restart
 1. Type in the password to unlock
 1. Type in the password to remove it
+1. Enter Setup Menu Tianocore
+1. Reset
+1. Confirm the password prompt do not appear
 
 **Expected result**
 
@@ -47,4 +52,4 @@ Password prompt should show up:
 
 * after setting up the password option
 * after reboot
-* after removing the password
+* as removal confirmation and only once after removing the password
