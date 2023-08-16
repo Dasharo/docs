@@ -52,4 +52,4 @@ Password prompt should show up:
 
 * after setting up the password option
 * after reboot
-* as removal confirmation and only once after removing the password
+* only once as password removal confirmation
