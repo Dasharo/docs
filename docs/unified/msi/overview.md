@@ -45,16 +45,16 @@ documentation._
 ## Useful documents
 
 === "PRO Z690-A (WIFI) (DDR4)"
-    * [MSI Z690-A PRO DDR4 WIFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
-    * [MSI Z690-A PRO DDR4 Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
-    * [MSI Z690-A PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI)
-    * [MSI Z690-A PRO WIFI Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFI_PROZ690-A100x150.pdf)
+    - [MSI Z690-A PRO DDR4 WIFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI-DDR4)
+    - [MSI Z690-A PRO DDR4 Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFIDDR4_PROZ690-ADDR4100x150.pdf)
+    - [MSI Z690-A PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z690-A-WIFI)
+    - [MSI Z690-A PRO WIFI Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ690-AWIFI_PROZ690-A100x150.pdf)
 
 === "PRO Z790-P (WIFI) (DDR4)"
-    * [MSI Z790-P PRO DDR4 WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI-DDR4)
-    * [MSI Z790-P PRO DDR4 Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ790-PDDR4_PROZ790-PWIFIDDR4.pdf)
-    * [MSI Z790-P PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI)
-    * [MSI Z790-P PRO WIFI Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ790-P_PROZ790-PWIFI.pdf)
+    - [MSI Z790-P PRO DDR4 WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI-DDR4)
+    - [MSI Z790-P PRO DDR4 Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ790-PDDR4_PROZ790-PWIFIDDR4.pdf)
+    - [MSI Z790-P PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI)
+    - [MSI Z790-P PRO WIFI Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ790-P_PROZ790-PWIFI.pdf)
 
 ## Press releases
 
