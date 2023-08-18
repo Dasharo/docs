@@ -47,12 +47,12 @@ connected smartphone.
 1. The smartphone should indicate that it's charging when connected to either
     USB Type-A port.
 
-## UTC002.001 Thunderbolt 4 USB Type-C charging capability
+## UTC002.001 Thunderbolt 4 USB Type-C power output
 
 **Test description**
 
-This test verifies that the Thunderbolt 4 port is able to provide charging to
-a connected smartphone.
+This test verifies that the Thunderbolt 4 port is able to provide charging to a
+USB Type-C accessory.
 
 **Test configuration data**
 
@@ -77,12 +77,12 @@ a connected smartphone.
 
 1. The smartphone should indicate that it's charging.
 
-## UTC003.001 USB Type-C PD laptop charging (Ubuntu 22.04)
+## UTC003.001 USB Type-C PD power input (Ubuntu 22.04)
 
 **Test description**
 
-This test verifies that the laptop can be charged using a USB Type-C PD power
-supply connected to the Thunderbolt 4 port.
+This test verifies that the device can sink power from a USB-PD power supply
+connected to the Thunderbolt 4 port.
 
 **Test configuration data**
 
@@ -112,12 +112,12 @@ supply connected to the Thunderbolt 4 port.
 Output of the command should show one of this: `Charging` or `Full`. That means
 laptop is charged properly.
 
-## UTC003.002 USB Type-C PD laptop charging (Windows 11)
+## UTC003.002 USB Type-C PD power input (Windows 11)
 
 **Test description**
 
-This test verifies that the laptop can be charged using a USB Type-C PD power
-supply connected to the Thunderbolt 4 port.
+This test verifies that the device can sink power from a USB-PD power supply
+connected to the Thunderbolt 4 port.
 
 **Test configuration data**
 
