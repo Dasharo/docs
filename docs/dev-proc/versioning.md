@@ -12,25 +12,35 @@ framework or other components included in Dasharo Release is through release
 notes. Link to Dasharo Release Notes for your hardware platform can be found
 in menu on the left side (Supported Hardware->Hardware Model->Releases).
 
-## Dasharo Entry Subscription releases
+Dasharo Releases can be divided into two categories:
 
-Dasharo Entry Subscribers receive firmware updates more frequently than the
-community. The number of updates per year depends on the number of Dasharo Entry
-Subscriptions sold and the availability of other funding (e.g., NLNet,
-corporate sponsors, community donations) but is less than 2 updates per year.
-Dasharo Entry Subscription releases are characterized by a changing patch
-version (`z`). Fixes and features introduced in Dasharo Entry Subscription
-releases will also be available later as Dasharo Community Releases with public
-pre-built binaries in the respective release pages. In short, being a Dasharo
-Subscriber gives early access to the newest features and fixes.
+* Dasharo Entry Subscription Releases (previous Dasharo Supporters Release for
+  Dasharo Support Entrance Subscribers)
+* Dasharo Community Releases
 
-[How to become Dasharo Entry Subscriber?](../ways-you-can-help-us.md#become-a-dasharo-supporter)
+## Dasharo Entry Subscription Releases
 
-## Community releases
+Dasharo Entry Subscription subscribers receive firmware updates more
+frequently than the community. The number of updates per year depends on the
+number of Dasharo Entry Subscriptions sold and the availability of other
+funding (e.g., NLNet, corporate sponsors, community donations) but is less
+than 2 updates per year. Dasharo Entry Subscription Releases are characterized
+by a changing patch version (`z`). Fixes and features introduced in Dasharo
+Entry Subscription Releases will also be available later as Dasharo Community
+Releases with public pre-built binaries in the respective release pages. In
+short, being a Dasharo Subscriber gives early access to the newest features
+and fixes.
 
-Community releases are built and published once a year. Each community release
-has a zero patch version (`x.y.0`) and the only changing number is the minor
-version `y`.
+[How to become Dasharo Entry Subscription subscriber?](../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber)
+
+## Dasharo Community Releases
+
+Dasharo Community Releases are built and published once a year. Each Dasharo
+Community Release has a zero patch version (`x.y.0`) and the only changing
+number is the minor version `y`. To be up-to-date with latest Dasharo
+Community Release updates, one can subscribed to free of charge mailing list
+for given hardware platform, for which the link can be found in menu on the
+left side (Supported Hardware->Hardware Model->Releases).
 
 ## Signing keys
 

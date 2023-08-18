@@ -8,11 +8,11 @@ debugging and development support.
 
 Also refer to [DTS Overview](../dasharo-tools-suite/overview.md).
 
-## How to get Dasharo Entry Subscription releases using Dasharo Tools Suite?
+## How to get Dasharo Entry Subscription Releases using Dasharo Tools Suite?
 
-Dasharo Entry Subscription releases can be used to perform firmware updates
-with DTS by providing Dasharo Entry Subscribers credentials obtained after buying a
-[subscription](../ways-you-can-help-us.md#become-a-dasharo-supporter).
+Dasharo Entry Subscription Releases can be used to perform firmware updates
+with DTS by providing Dasharo Entry Subscription credentials obtained after
+buying a [Dasharo Entry Subscription](../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
 
 Commercial use of DTS should be discussed directly with
 [3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com).
