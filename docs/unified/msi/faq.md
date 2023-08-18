@@ -131,9 +131,9 @@ The list of all supported memory modules is available in the
 
 ## What does the obligatory Dasharo Subscripion includes?
 
-The Dasharo Bronze Subscription includes:
+The Dasharo Subscription includes:
 
-* The latest Dasharo release installed by Dasharo Team
+* The latest Dasharo Entry Subscription release installed by Dasharo Team
 * Dasharo Updates – number of updates depends on the number of Dasharo
   Subscriptions sold and the availability of other funding (e.g., NLNet,
   corporate sponsors, [community

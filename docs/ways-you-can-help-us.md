@@ -66,32 +66,39 @@ open-source firmware mission. It is straightforward if you don't have time for
 other contributions, and there are multiple options - feel free to choose one
 that works for you.
 
-### Become a Dasharo Supporter
+### Become a Dasharo Entry Subscription subscriber
 
-Buy the Dasharo Supporters Entrance subscription if you own/use/buy a machine
-running Dasharo firmware:
+Buy the Dasharo Entry Subscription for Desktop if you own/use/buy a machine running
+Dasharo firmware:
 
-* [1-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/subscription-for-dasharo-compatible-with-msi-pro-z-690a-ddr4/)
-* [2-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/2-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
-* [3-year subscription](https://shop.3mdeb.com/shop/open-source-hardware/3-year-dasharo-supporters-entrance-for-msi-pro-z690-a-ddr4/)
+* [1-year subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1year-desktop/)
+* [2-year subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/2year-desktop/)
+* [3-year subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/3year-desktop/)
 
-Or buy the hardware including the subscriptions from us, e.g.:
+[Link to all available subscriptions](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/)
 
-* [MSI PRO Z690-A DDR4 motherboard with Dasharo Supporters Entrance](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-motherboard/)
-* [MSI PRO Z690-A DDR4 with Dasharo Supporters Entrance – Full PC Build](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-full-pc-build/)
+Or buy the hardware including the Dasharo Entry Subscription from us, e.g.:
+
+* [MSI PRO Z690-A DDR4 motherboard with Dasharo Entry Subscription](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-motherboard/)
+* [MSI PRO Z690-A DDR4 with Dasharo Entry Subscription – Full PC Build](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-full-pc-build/)
 * or other platforms
 
-As a Dasharo Supporter you will get:
+As a Dasharo Entry Subscription subscriber you will get:
 
-* The latest Dasharo releases issued by Dasharo Team
-* Special Dasharo Updates for Supporters –  Community receives one update per
-  year, but Supporters are not limited to it. Number of updates depends on the
-  number of Dasharo Subscriptions sold and the availability of other funding
+* The latest Dasharo Entry Subscription Releases issued by Dasharo Team
+* Special Dasharo Updates for Dasharo Entry Subscription subscribers –
+  Community receives one update per year, but Dasharo Entry Subscription
+  subscribers are not limited to it. Number of updates depends on the number
+  of Dasharo Entry Subscriptions sold and the availability of other funding
   (e.g., NLNet, corporate sponsors, community donations).
 * Dasharo Primer Support through invite-only Matrix channel where we often
-  gather Supporters opinion and share exciting news about Dasharo direction
+  gather Dasharo Entry Subscription subscribers' opinion and share exciting
+  news about Dasharo direction
 * Insider's view and influence on Dasharo features roadmap – you can have a
   real impact on Dasharo development
+
+If you are interested in other market segments than Desktop, please get in
+touch with us with the specific hardware model you have in mind
 
 ### PayPal
 
