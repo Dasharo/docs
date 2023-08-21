@@ -1,4 +1,4 @@
-# Release Notes
+# MSI PRO Z690-A (WIFI) (DDR4) Dasharo Release Notes
 
 Following Release Notes describe status of Open Source Firmware development for
 MSI PRO Z690-A (WIFI) DDR4 and MSI PRO Z690-A (WIFI).
@@ -13,6 +13,57 @@ For details about our release process please read
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+
+## v1.1.2 - 2023-08-21
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+
+### Added
+
+- [MSI FLASHBIOS recovery support](https://docs.dasharo.com/unified/msi/recovery/#using-msi-flashbios-button)
+- [Raptor Lake-S CPU support](https://github.com/Dasharo/dasharo-issues/issues/130)
+- [MSI ACPI device that triggers automatic driver and utility installation manager](https://www.youtube.com/watch?v=K-v-veV_jvI)
+- [Support for logo customization](https://docs.dasharo.com/guides/logo-customization/)
+- UEFI 2.8 errata C compliance in EDKII fork
+
+### Changed
+
+- [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [Updated microcode to newer version, refer to SBOM](https://github.com/coreboot/intel-microcode/commit/390edfb411ba7de8559ad40597c7acb6c6a1ea96)
+- [Updated ME to newer version, refer to SBOM](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7d25)
+
+### Fixed
+
+- [Nvidia RTX 3060 does not spawn HD Audio device in Device Manager](https://github.com/Dasharo/dasharo-issues/issues/364)
+- [MSI FLASHBIOS feature is not working](https://github.com/Dasharo/dasharo-issues/issues/131)
+- [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
+- [Popup with information about recovery mode is displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/269)
+- Too low watchdog timeout value causing reset loops on DDR5 boards with
+  bigger amount of RAM
+- Missing ACPI objects errors in Linux dmesg
+- Missing Setup Password option
+
+### Binaries
+
+This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
+binaries you will have to
+[become the Dasharo Entry Subscription subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+You will get the access to all of the firmware updates for the duration of the
+subscription via Dasharo Entry Subscription newsletter.
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 4.18 revision f53b09af](https://github.com/Dasharo/coreboot/tree/f53b09af)
+- [Dasharo EDKII fork based on edk2-stable202002 revision 5a96616f](https://github.com/Dasharo/edk2/tree/5a96616f)
+- [iPXE based on 6ba671acd9 revision 6ba671ac](https://github.com/ipxe/ipxe/tree/6ba671ac)
+- [vboot based on b76cd8c806 revision b76cd8c8](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/b76cd8c8/)
+- [Intel Management Engine based on v16.1.30.2255 revision 2a8875ec](https://github.com/Dasharo/dasharo-blobs/blob/2a8875ec/msi/ms7d25/me.bin)
+- [Intel Flash Descriptor based on v1.0 revision 2a8875ec](https://github.com/Dasharo/dasharo-blobs/blob/2a8875ec/msi/ms7d25/descriptor.bin)
+- [Intel Firmware Support Package based on ADL-S C.0.75.10 revision 2fea9a2f](https://github.com/intel/FSP/tree/2fea9a2f/AlderLakeFspBinPkg/Client/AlderLakeS)
+- [Intel microcode based on ADL C0 0x0000002c revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-97-02)
+- [Intel microcode based on ADL H0 0x0000002c revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-97-05)
+- [Intel microcode based on RPL B0 0x00000113 revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-b7-01)
 
 ## v1.1.1 - 2023-02-23
 
