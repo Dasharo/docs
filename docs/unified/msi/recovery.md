@@ -70,7 +70,7 @@ The full set is now available at our [online shop](https://shop.3mdeb.com/shop/m
 
     ![](/images/ch341a_rec/ch341a_kit.jpg)
 
-2. WSON8 probe. Can be bought from China on Aliexpress or eBay.
+2. WSON8 probe, 8x6mm. Can be bought from China on Aliexpress or eBay.
 
     ![](/images/ch341a_rec/wson8_probe.jpg)
 
