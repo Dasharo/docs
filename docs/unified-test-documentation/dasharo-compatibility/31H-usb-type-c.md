@@ -1495,3 +1495,73 @@ can be used from the operating system.
 **Expected result**
 
 The last command should return the following message: `This is a test string.`
+
+## UTC020.001 USB Type-C PD current limiting (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify that the power draw from a USB-C PD power supply does
+not exceed the limits defined by the contract negotiated with the charger.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test steps**
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Attach a 65W USB-C power supply, with the power meter between the power
+    supply and the laptop's Thunderbolt 4 port.
+1. Open a terminal window and run the following command, while observing the
+    power meter's display:
+
+    ```bash
+    stress-ng -c 20 -t 5
+    ```
+
+1. Repeat the step above 5 times, noting the maximum power draw shown on the
+    power meter each time.
+
+**Expected result**
+
+The power draw does not exceed more than 105% of the power supply's nominal
+power. The power meter's display stays lit all the time, indicating that the
+power supply's over-current protection was not triggered.
+
+## UTC020.002 USB Type-C PD current limiting (Windows 11)
+
+**Test description**
+
+This test aims to verify that the power draw from a USB-C PD power supply does
+not exceed the limits defined by the contract negotiated with the charger.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test steps**
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Download and install [ThrottleStop](https://www.techpowerup.com/download/techpowerup-throttlestop/)
+1. Attach a 65W USB-C power supply, with the power meter between the power
+    supply and the laptop's Thunderbolt 4 port.
+1. Open ThrottleStop.
+1. Click the `Limits` button to open a window displaying current throttle status
+    and reasons.
+1. Click the `TS Bench` button to open the benchmark window.
+1. Start a benchmark with the default parameters (Normal, 16 threads, 120M,
+    Fixed MHz), while observing the power meter's display.
+1. Repeat the step above 5 times, noting the maximum power draw shown on the
+    power meter each time.
+
+**Expected result**
+
+The power draw does not exceed more than 105% of the power supply's nominal
+power. The power meter's display stays lit all the time, indicating that the
+power supply's over-current protection was not triggered. When the power draw
+approaches or exceeds 100% of the AC adapter's rating (65W), the field
+`EDP Other` in the ThrottleStop Limit Reasons window is colored red.
