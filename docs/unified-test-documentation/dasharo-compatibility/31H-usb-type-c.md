@@ -1501,7 +1501,7 @@ The last command should return the following message: `This is a test string.`
 **Test description**
 
 This test aims to verify that the power draw from a USB-C PD power supply does
-not exceed the limits defined by the contract negotiated with the charger.
+not exceed the limits of the power supply's specifications.
 
 **Test configuration data**
 
@@ -1535,7 +1535,7 @@ power supply's over-current protection was not triggered.
 **Test description**
 
 This test aims to verify that the power draw from a USB-C PD power supply does
-not exceed the limits defined by the contract negotiated with the charger.
+not exceed the limits of the power supply's specifications.
 
 **Test configuration data**
 
