@@ -23,9 +23,8 @@ Beta/preview release
 <!--
 [sha256][USB_DTS_sha_v1.2.6]{ .md-button }
 [sha256.sig][USB_DTS_sig_v1.2.6]{ .md-button }
--->
+
 [DTS v1.2.6 ISO image][ISO_DTS_v1.2.6]{ .md-button }
-<!--
 [sha256 ISO][ISO_DTS_sha_v1.2.6]{ .md-button }
 [sha256.sig ISO][ISO_DTS_sig_v1.2.6]{ .md-button }
 -->
