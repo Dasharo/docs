@@ -13,6 +13,29 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
+## v1.2.6 - 2023-08-31
+
+Beta/preview release
+
+### Images
+
+[USB bootable DTS v1.2.6 image][USB_DTS_v1.2.6]{ .md-button }
+[sha256][USB_DTS_sha_v1.2.6]{ .md-button }
+[sha256.sig][USB_DTS_sig_v1.2.6]{ .md-button }
+
+[DTS v1.2.6 ISO image][ISO_DTS_v1.2.6]{ .md-button }
+[sha256 ISO][ISO_DTS_sha_v1.2.6]{ .md-button }
+[sha256.sig ISO][ISO_DTS_sig_v1.2.6]{ .md-button }
+
+[USB_DTS_v1.2.6]: https://3mdeb.com/open-source-firmware/DTS/dts-base-image-v1.2.6.wic.gz
+[ISO_DTS_v1.2.6]: https://3mdeb.com/open-source-firmware/DTS/dts-base-image-v1.2.6.iso
+
+### Changelog
+
+Please, refer to
+[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v120---2023-05-10)
+stored in `meta-dts` repository.
+
 ## v1.2.0 - 2023-05-10
 
 ### Images
