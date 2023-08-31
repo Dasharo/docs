@@ -21,19 +21,22 @@ This menu offers security-sensitive options like:
 - `Boot menu enabled` - enables/disables ability to enter boot manager menu.
   Enabled by default. Can be disabled, to prevent from booting from non-default
   boot media.
-
 - `Early boot DMA Protection` - Enables IOMMU DMA protection early during POST.
   DMA protection is a feature that utilizes the IOMMU early in the boot process
   to prevent rogue DMA-capable devices such as PCIe add-in cards,
   USB4/thunderbolt devices from access to memory. This prevents a class of DMA
   attacks that allow for exfiltration of secrets and installation of malware
   early in the boot process.
-
 - `Keep IOMMU enabled when transfer control to OS` - (only available when
   `Early boot DMA Protection` is selected) Keeps IOMMU DMA protection enabled
   during ExitBootServices when control is passed to the OS. If unsure or see any
   problems with DMA/IOMMU during OS boot, keep it disabled.
   NOTE: Windows may not boot if the option is enabled.
+- `Enter Firmware Update Mode` - when selected, causes the platform to reset
+  and disable all firmware protections, including UEFI Secure Boot, for the
+  duration of one boot. The goal of the option is to simplify the update
+  process for the end user. Unsetting multiple security options and then
+  setting them back can be tiresome.
 
 ## Networking Options
 
