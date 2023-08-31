@@ -20,12 +20,15 @@ Beta/preview release
 ### Images
 
 [USB bootable DTS v1.2.6 image][USB_DTS_v1.2.6]{ .md-button }
+<!--
 [sha256][USB_DTS_sha_v1.2.6]{ .md-button }
 [sha256.sig][USB_DTS_sig_v1.2.6]{ .md-button }
-
+-->
 [DTS v1.2.6 ISO image][ISO_DTS_v1.2.6]{ .md-button }
+<!--
 [sha256 ISO][ISO_DTS_sha_v1.2.6]{ .md-button }
 [sha256.sig ISO][ISO_DTS_sig_v1.2.6]{ .md-button }
+-->
 
 [USB_DTS_v1.2.6]: https://3mdeb.com/open-source-firmware/DTS/dts-base-image-v1.2.6.wic.gz
 [ISO_DTS_v1.2.6]: https://3mdeb.com/open-source-firmware/DTS/dts-base-image-v1.2.6.iso
