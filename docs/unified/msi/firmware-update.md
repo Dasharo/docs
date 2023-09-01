@@ -14,20 +14,35 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
 
 ## Prerequisites
 
-Before proceeding, ensure that the firmware protections are disabled in
-[Dasharo Security Options](../../dasharo-menu-docs/dasharo-system-features.md).
-Both `BIOS boot medium lock` and `Enable SMM BIOS write protection` should be
-unchecked. [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration)
-must be disabled as well (uncheck `Attempt Secure Boot` if
-`Current Secure Boot State` does not say `Disabled`). To apply changes you will
-need to reboot.
+Depending on firmware version (1) there may be manual steps required to ensure that
+the firmware can be updated.
+{ .annotate }
+
+1. v0.9.0 for Z790-P and v1.1.2 for Z690-A introduced support for Firmware
+   Update Mode
+
+=== "Firmware Update Mode"
+    Recent Dasharo releases come with Firmware Update Mode, an option in the
+    setup menu that disables all firmware protections for the duration of one
+    boot, during which firmware can be updated. To enter Firmware Update Mode,
+    open the [Dasharo Security Options](../../dasharo-menu-docs/dasharo-system-features.md)
+    menu and select the `Firmware Update Mode` option.
+
+=== "Manual"
+    Ensure that the firmware protections are disabled in
+    [Dasharo Security Options](../../dasharo-menu-docs/dasharo-system-features.md).
+    Both `BIOS boot medium lock` and `Enable SMM BIOS write protection` should
+    be unchecked. [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration)
+    must be disabled as well (uncheck `Attempt Secure Boot` if
+    `Current Secure Boot State` does not say `Disabled`). To apply changes you
+    will need to reboot.
 
 Please use one of the following environments to perform Dasharo update:
 
 * [Dasharo Tools Suite (DTS)](#dasharo-tools-suite)
 * [Linux distribution of your choice](#linux-distribution-of-your-choice)
 
-We recommend using the DTS.
+We recommend using DTS for updating firmware.
 
 ### Dasharo Tools Suite
 
