@@ -37,8 +37,6 @@ the firmware can be updated.
     `Current Secure Boot State` does not say `Disabled`). To apply changes you
     will need to reboot.
 
-### OS selection
-
 Please use one of the following environments to perform Dasharo update:
 
 * [Dasharo Tools Suite (DTS)](#dasharo-tools-suite)
@@ -46,7 +44,7 @@ Please use one of the following environments to perform Dasharo update:
 
 We recommend using DTS for updating firmware.
 
-#### Dasharo Tools Suite
+### Dasharo Tools Suite
 
 The DTS allows performing automatic firmware update process, which is the
 recommended method. To update your firmware, follow below steps.
@@ -56,7 +54,7 @@ recommended method. To update your firmware, follow below steps.
 2. Follow [firmware update](../../dasharo-tools-suite/documentation.md#firmware-update)
    procedure described in DTS documentation.
 
-#### Linux distribution of your choice
+### Linux distribution of your choice
 
 Linux distributions may not yet have the support for the newest chipsets in
 flashrom installed via package manager so building the flashrom from source
