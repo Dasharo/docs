@@ -91,9 +91,10 @@ performing a cold boot. The test should be performed in multiple iterations.
 
     - PCR2 value should not be equal zero; it contains firmware
         measurements,
-    - PCR8, PCR9 and PCR14 values should not be equal zero; they contains GRUB
+    - PCR8, PCR9 values should not be equal zero; they contains GRUB
         measurements,
-    - PCR10 value should not be equal zero.
+    - PCR10 value should not be equal zero,
+    - PCR14 value should not be equal zero; it is used by MOK.
 
 1. Between subsequent boots above mentioned PCRs values should remain unchanged.
 
