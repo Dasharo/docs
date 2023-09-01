@@ -89,7 +89,7 @@ performing a cold boot. The test should be performed in multiple iterations.
 
 1. PCRs should be subject to the following regularities:
 
-    - PCR0 - PCR7 values should not be equal zero; they contains firmware
+    - PCR2 value should not be equal zero; it contains firmware
         measurements,
     - PCR8, PCR9 and PCR14 values should not be equal zero; they contains GRUB
         measurements,
