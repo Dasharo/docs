@@ -1,4 +1,4 @@
-# Dasharo Stability: NVMe detection
+# Dasharo Stability: TPM detection
 
 ## Test cases common documentation
 
