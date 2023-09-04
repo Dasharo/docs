@@ -49,6 +49,7 @@ Certification Procedure for `MSI PRO Z790-P` platform.
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
 [SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+
 ## Module: Dasharo security
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
@@ -77,14 +78,10 @@ Certification Procedure for `MSI PRO Z790-P` platform.
 [NBA]: ../../unified-test-documentation/dasharo-security/20T-network-boot.md
 [USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
 
-### Module: Dasharo performance
+## Module: Dasharo performance
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
-<!-- | 2.   | [CPU temperature measure][CPT]                    | CPT           | All                                  |
-| 3.   | [CPU frequency measure][CPF]                      | CPF           | All                                  | -->
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
-<!-- [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
-[CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md -->
