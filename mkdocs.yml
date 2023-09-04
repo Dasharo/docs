@@ -26,6 +26,7 @@ markdown_extensions:
   - pymdownx.keys
   - attr_list
   - meta
+  - md_in_html
   - toc:
       toc_depth: 2
   - pymdownx.tasklist:
