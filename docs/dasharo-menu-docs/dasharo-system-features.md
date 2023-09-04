@@ -37,10 +37,59 @@ This menu offers security-sensitive options like:
   duration of one boot. The goal of the option is to simplify the update
   process for the end user. Unsetting multiple security options and then
   setting them back can be tiresome.
-
 - `Enable Wi-Fi + BT radios` - (applicable to laptops) - Enables or disables
   radios for Wi-Fi and Bluetooth. When disabled, the slot is unconfigured and
   power to the wireless module is disconnected.
+
+### Firmware Update Mode
+
+```mermaid
+flowchart TD
+    power_on[Power on] --> setup
+    subgraph setup [Setup UI]
+    setup1[Enter Dasharo Setup]
+    setup2[Go to Dasharo System Features]
+    setup3[Go to Dasharo Security Options]
+    setup4[Choose Firmware Update Mode]
+    setup5[Press ENTER to continue]
+    setup1 --> setup2 --> setup3 --> setup4 --> setup5
+    end
+    setup --> reboot[Reboot]
+    reboot --> coreboot
+    subgraph coreboot
+    cb1{{Firmware Update Mode EFI variable found?}}
+    cb1 -- False --> cb2[Enable firmware lockdown]
+    cb1 -- True --> cb3{{Firmware Update Mode EFI variable value?}}
+    cb3 -- False --> cb2
+    cb3 -- True --> cb4[Skip firmware lockdown]
+    cb2 --> cb5{{Boot payload}}
+    cb4 --> cb5
+    end
+
+    coreboot --> securitypkg
+    subgraph securitypkg [SecurityPkg]
+    sec1{{Firmware Update Mode EFI variable found?}}
+    sec1 -- False --> sec2[Enable Secure Boot]
+    sec1 -- True --> sec3[Skip enabling Secure Boot]
+    sec2 --> sec4[Continue booting]
+    sec3 --> sec4
+    end
+
+    securitypkg --> bootmanager
+    subgraph bootmanager [PlatformBootManagerLib]
+    bm1{{Firmware Update Mode EFI variable found?}}
+    bm1 -- False --> bm2[Continue booting]
+    bm1 -- True --> bm3[Remove Firmware Update Mode EFI variable]
+    bm3 --> bm4[Display Firmware Update Mode warning dialog]
+    bm4 --> bm5[Confirm user presence]
+    bm5 --> bm2
+    end
+
+    bootmanager --> userpresence{{User presence confirmed?}}
+    userpresence -- True --> boot2[Boot OS]
+    userpresence -- False --> reboot2[Reboot]
+
+```
 
 ## Networking Options
 
