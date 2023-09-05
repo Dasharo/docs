@@ -45,9 +45,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.superfences:
       custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
 plugins:
@@ -261,6 +261,7 @@ nav:
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
+      - 'Firmware update': guides/firmware-update.md
       - 'Logo customization': guides/logo-customization.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
