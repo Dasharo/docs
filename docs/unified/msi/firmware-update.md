@@ -25,7 +25,7 @@ the firmware can be updated.
 
 If the currently installed Dasharo version supports Firmware Update Mode, follow
 the steps outlined in
-[generic Firmware Update documentation](../../../guides/firmware-update#firmware-update-mode).
+[generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
 
 ### Manual
 
