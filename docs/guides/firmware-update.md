@@ -21,7 +21,7 @@ the following:
   access to the SPI flash controller from the OS
 
 If you are interested, see the
-[Dasharo System Features](../../dasharo-menu-docs/dasharo-system-features)
+[Dasharo System Features](../dasharo-menu-docs/dasharo-system-features.md)
 article for more details.
 
 To allow updating firmware by the end user, these protections must be disabled
@@ -32,13 +32,13 @@ boot.
 To enter Firmware Update Mode:
 
 1. Enter the Setup Menu:
-![](../images/setup_menu_dsf.png)
+![](./images/setup_menu_dsf.png)
 1. Navigate to `Dasharo System Features`:
-![](../images/setup_menu_dsc.png)
+![](./images/setup_menu_dsc.png)
 1. Navigate to `Dasharo Security Options`:
-![](../images/setup_menu_lbm.png)
+![](./images/setup_menu_lbm.png)
 1. Select the `Enter Firmware Update Mode` option:
-![](../images/setup_menu_fum.png)
+![](./images/setup_menu_fum.png)
 1. When prompted, press Enter to accept. The device will reboot in Firmware
   Update Mode.
 1. When prompted, press the indicated key on the keyboard. Alternatively, to
