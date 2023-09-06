@@ -11,6 +11,8 @@ that it boots on the following platforms:
   report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=0&range=A75)),
 * MSI PRO Z690-A DDR5 ([test
   report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=777478871&range=A81)),
+* MSI PRO Z790-A DDR5 ([test
+  report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=1609693601&range=A92)),
 * NovaCustom NV4x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161)),
 * NovaCustom NS5x/7x ([test
@@ -268,8 +270,11 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
 DTS can be used to flash Dasharo firmware on your hardware. To achieve this,
 boot DTS, choose option number `2`. After creating
 [report](../glossary.md#dasharo-hardware-compatibility-list-report) with
-firmware dump as backup, type `p` to confirm the installation of Dasharo
-firmware.
+firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
+firmware. Option `c` stands for community release which is available for anyone
+using Dasharo Tools Suite, option `d` stands for
+[DES](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+release and it is only available for Dasharo Entry Subscription holders.
 
 Next you will be asked two questions to confirm flashing. The first will be
 displayed with the detected information about the device you are using DTS on.
@@ -288,6 +293,7 @@ This feature is supported on the following platforms:
 * Dell OptiPlex 7010/9010,
 * MSI PRO Z690-A DDR4,
 * MSI PRO Z690-A DDR5,
+* MSI PRO Z790-A DDR5,
 * NovaCustom NV4x,
 * NovaCustom NS5x/7x.
 
@@ -372,7 +378,10 @@ Please consider the following options depending on your situation:
 ### Firmware update
 
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
-with flashed Dasharo and choose option number `5`.
+with flashed Dasharo and choose option number `5`. You may see additional
+information about available updates if you are not [Dasharo Entry
+Subscription](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+holder
 
 Next you will be asked two questions to confirm flashing. The first will be
 displayed with the detected information about the device you are using DTS on.
