@@ -7,9 +7,8 @@ deployment, clean and simple code, long-term maintenance, professional support,
 transparent validation, superior documentation, privacy-respecting
 implementation, liberty for the owners and trustworthiness for all.
 
-[More about Dasharo](osf-trivia-list/dasharo.md)
-
-[Dasharo homepage](https://dasharo.com/)
+* [Learn more](osf-trivia-list/dasharo.md)
+* [Dasharo homepage](https://dasharo.com/)
 
 Dasharo is registered trademark and product developed by [3mdeb](https://3mdeb.com).
 
@@ -17,24 +16,38 @@ Dasharo is registered trademark and product developed by [3mdeb](https://3mdeb.c
 
 Refer to the [Supported hardware section.](/unified/novacustom/overview/)
 
-<!--
-TODO: explain how user, developer, customer may add to this list
-TODO: introduce status like officially supported by vendor or nor officially
-supported by vendor
-TODO: explain that not all hardware may be listed here, because of embargo,
-non-public development, custom hardware handled by vendor
--->
+## Commercial inquiries
+
+If you have questions regarding commercial use of Dasharo please feel free to
+[contact us](https://www.dasharo.com/pages/contact/).
 
 ## Community
 
 * [Dasharo Matrix Workspace](https://matrix.to/#/#dasharo:matrix.org) - general
   Dasharo discussion, support and other open-source firmware related work.
-* [Dasharo OSF vPub](https://vpub.dasharo.com/) - 3-4 times a year we organize
-  online party to discuss recent achievements in open-source firmware, open
-  source hardware and open instruction set architecture. Feel free to check the
-  website about recent vPub plans or subscribe to newsletter.
-* [Discord server](https://discord.gg/QseTVHum3w)
-* [Dasharo Twitter account](https://twitter.com/Dasharo_com)
+* Quarterly [Dasharo Events](https://vpub.dasharo.com/)
+    - **The Dasharo User Group (DUG)** is an important forum for users of Dasharo
+      to come together, share their knowledge, and stay informed about the latest
+      developments in the Dasharo ecosystem. The DUG is a platform for users to
+      connect and learn about new features and updates that are coming to
+      Dasharo. The first DUG event will take place in early March and will
+      include a variety of discussions on different topics related to Dasharo.
+      The event will be a great opportunity for Dasharo users to meet other
+      users, learn new things, and share their knowledge and experience with
+      others.
+    - **The Dasharo Developers vPub** is a virtual event with goal for gathering
+      developers and enthusiasts in the technology industry to engage in
+      discussions and conversations related to open-source firmware and other
+      related topics. The vPub is designed to be a less structured, more relaxed
+      environment where participants can share knowledge and ideas, connect with
+      others in the industry, and learn about the latest developments in the
+      field. The conversations can range from technical challenges faced by
+      developers, off-topic discussions, to new features or improvements. These
+      events have brought together experts and enthusiasts from all over the
+      world, providing valuable opportunities for learning, collaboration, and
+      networking. Everything in casual atmosphere with beverage of your choice in
+      your hand.
+* Other social media channels for which links you can find on bottom left.
 
 <!--
 
