@@ -14,10 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
-## v1.1.2 - 2023-08-21
-
-Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+## v1.1.2 - 2023-09-06
 
 ### Added
 
@@ -26,6 +23,7 @@ Test results for this release can be found
 - [MSI ACPI device that triggers automatic driver and utility installation manager](https://www.youtube.com/watch?v=K-v-veV_jvI)
 - [Support for logo customization](https://docs.dasharo.com/guides/logo-customization/)
 - UEFI 2.8 errata C compliance in EDKII fork
+- [Firmware Update Mode feature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 
 ### Changed
 
@@ -41,8 +39,15 @@ Test results for this release can be found
 - [Popup with information about recovery mode is displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/269)
 - Too low watchdog timeout value causing reset loops on DDR5 boards with
   bigger amount of RAM
+- [Chipset Watchdog timeout value does not change actual watchdog trigger time](https://github.com/Dasharo/dasharo-issues/issues/413)
 - Missing ACPI objects errors in Linux dmesg
 - Missing Setup Password option
+
+### Known issues
+
+- [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
+- [No audio playback via headset](https://github.com/Dasharo/daswith haro-issues/issues/483)
+- [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
 
 ### Binaries
 
@@ -54,8 +59,8 @@ subscription via Dasharo Entry Subscription newsletter.
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.18 revision f53b09af](https://github.com/Dasharo/coreboot/tree/f53b09af)
-- [Dasharo EDKII fork based on edk2-stable202002 revision 5a96616f](https://github.com/Dasharo/edk2/tree/5a96616f)
+- [Dasharo coreboot fork based on 4.18 revision 197229de](https://github.com/Dasharo/coreboot/tree/197229de)
+- [Dasharo EDKII fork based on edk2-stable202002 revision 94f562a7](https://github.com/Dasharo/edk2/tree/94f562a7)
 - [iPXE based on 6ba671acd9 revision 6ba671ac](https://github.com/ipxe/ipxe/tree/6ba671ac)
 - [vboot based on b76cd8c806 revision b76cd8c8](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/b76cd8c8/)
 - [Intel Management Engine based on v16.1.30.2255 revision 2a8875ec](https://github.com/Dasharo/dasharo-blobs/blob/2a8875ec/msi/ms7d25/me.bin)
