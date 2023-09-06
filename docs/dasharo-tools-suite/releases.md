@@ -3,9 +3,11 @@
 Following Release Notes describe the status of Open Source Software development
 for Dasharo Tools Suite.
 
+<!--
+TBD: provide release process for DTS
 For details about our release process, please read [Dasharo Standard Release
 Process](../dev-proc/standard-release-process.md).
-
+-->
 <center>
 [Subscribe to Dasharo Tools Suite Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
