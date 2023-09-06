@@ -10,8 +10,8 @@ please check the [FAQ section](../../unified/msi/faq.md).
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | Intel Core i5-12600K 3.7                    |
-|                                | Noctua NH-U12S CPU Cooler                   |
+| **CPU**                        | Intel Core i5-12600K 3.7 GHz                |
+| **CPU Cooler**                 | Noctua NH-U12S                              |
 | **RAM**                        | Slot 1: Kingston KF436C17BBK4/32            |
 |                                | Slot 2: Kingston KF436C17BBK4/32            |
 |                                | Slot 3: Kingston KF436C17BBK4/32            |
@@ -28,14 +28,14 @@ please check the [FAQ section](../../unified/msi/faq.md).
 | **Power Supply**               | SeaSonic FOCUS Plus Platinum                |
 | **Power Control**              | Sonoff S20 EU type E                        |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
-| **KVM**                        | PiKVM based on Raspberry Pi 4               |
+| **KVM**                        | PiKVM based on Raspberry Pi Zero 2w         |
 
 ## MSI PRO Z690-A WiFi DDR4, SN: 07D2511 LA1E346864
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | Intel Core i5-12600K 3.7                    |
-|                                | Noctua NH-U12S CPU Cooler                   |
+| **CPU**                        | Intel Core i5-12600K 3.7 GHz                |
+| **CPU Cooler**                 | Noctua NH-U12S                              |
 | **RAM**                        | Slot 1: Kingston KF436C17BBK4/32            |
 |                                | Slot 2: Kingston KF436C17BBK4/32            |
 |                                | Slot 3: Kingston KF436C17BBK4/32            |
@@ -57,8 +57,8 @@ please check the [FAQ section](../../unified/msi/faq.md).
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
-| **CPU**                        | Intel Core i5-12600K 3.7                    |
-|                                | Noctua NH-U12S CPU Cooler                   |
+| **CPU**                        | Intel Core i5-13600K 3.5 GHz                |
+| **CPU Cooler**                 | Noctua NH-U12S                              |
 | **RAM**                        | Slot 1: CRUCIAL CT8G48C40U5                 |
 |                                | Slot 2: CRUCIAL CT8G48C40U5                 |
 |                                | Slot 3: CRUCIAL CT8G48C40U5                 |
@@ -72,4 +72,4 @@ please check the [FAQ section](../../unified/msi/faq.md).
 | **Power Supply**               | SeaSonic Focus PX-750                       |
 | **Power Control**              | Sonoff S20 EU type E                        |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
-| **KVM**                        | PiKVM based on Raspberry Pi 4               |
+| **KVM**                        | PiKVM based on Raspberry Pi Zero 2w         |
