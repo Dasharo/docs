@@ -11,8 +11,8 @@ that it boots on the following platforms:
   report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=0&range=A75)),
 * MSI PRO Z690-A DDR5 ([test
   report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=777478871&range=A81)),
-* MSI PRO Z790-A DDR4,
-* MSI PRO Z790-A DDR5 ([test
+* MSI PRO Z790-P DDR4,
+* MSI PRO Z790-P DDR5 ([test
   report](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit#gid=1609693601&range=A92)),
 * NovaCustom NV4x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161)),
@@ -275,7 +275,7 @@ firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
 [DES](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
-release and it is only available for Dasharo Entry Subscription subscribers.
+release and it is only available to Dasharo Entry Subscription subscribers.
 
 Next you will be asked two questions to confirm flashing. The first will be
 displayed with the detected information about the device you are using DTS on.
@@ -294,8 +294,8 @@ This feature is supported on the following platforms:
 * Dell OptiPlex 7010/9010,
 * MSI PRO Z690-A DDR4,
 * MSI PRO Z690-A DDR5,
-* MSI PRO Z790-A DDR4,
-* MSI PRO Z790-A DDR5,
+* MSI PRO Z790-P DDR4,
+* MSI PRO Z790-P DDR5,
 * NovaCustom NV4x,
 * NovaCustom NS5x/7x.
 
