@@ -22,7 +22,7 @@ the following:
 
 If you are interested, see the
 [Dasharo System Features](../dasharo-menu-docs/dasharo-system-features.md)
-article for more details.
+section for more details.
 
 To allow updating firmware by the end user, these protections must be disabled
 first. To facilitate this, Dasharo has a Firmware Update Mode option that
@@ -41,9 +41,9 @@ To enter Firmware Update Mode:
 ![](./images/setup_menu_fum.png)
 1. When prompted, press Enter to accept. The device will reboot in Firmware
   Update Mode.
-1. When prompted, press the indicated key on the keyboard. Alternatively, to
-  abort Firmware Update Mode, press Enter instead or simply wait for the timeout
-  to expire.
+1. After reboot, when prompted, press the indicated key on the keyboard.
+  Alternatively, to abort Firmware Update Mode, press Enter instead or simply
+  wait for the timeout to expire.
 
 Once in Firmware Update Mode, proceed with the firmware update steps outlined
 in device-specific documentation.
@@ -64,18 +64,16 @@ flowchart TD
     setup --> reboot[Reboot]
     reboot --> coreboot
     subgraph coreboot
-    cb1{{Firmware Update Mode EFI variable found?}}
+    cb1{{Firmware Update Mode EFI variable found and set?}}
     cb1 -- False --> cb2[Enable firmware lockdown]
-    cb1 -- True --> cb3{{Firmware Update Mode EFI variable value?}}
-    cb3 -- False --> cb2
-    cb3 -- True --> cb4[Skip firmware lockdown]
-    cb2 --> cb5{{Boot payload}}
-    cb4 --> cb5
+    cb1 -- True --> cb3[Skip firmware lockdown]
+    cb2 --> cb4{{Boot payload}}
+    cb3 --> cb4
     end
 
     coreboot --> securitypkg
     subgraph securitypkg [SecurityPkg]
-    sec1{{Firmware Update Mode EFI variable found?}}
+    sec1{{Firmware Update Mode EFI variable found and set?}}
     sec1 -- False --> sec2[Enable Secure Boot]
     sec1 -- True --> sec3[Skip enabling Secure Boot]
     sec2 --> sec4[Continue booting]
@@ -84,15 +82,13 @@ flowchart TD
 
     securitypkg --> bootmanager
     subgraph bootmanager [PlatformBootManagerLib]
-    bm1{{Firmware Update Mode EFI variable found?}}
-    bm1 -- False --> bm2[Continue booting]
+    bm1{{Firmware Update Mode EFI variable found and set?}}
     bm1 -- True --> bm3[Remove Firmware Update Mode EFI variable]
     bm3 --> bm4[Display Firmware Update Mode warning dialog]
     bm4 --> bm5[Confirm user presence]
-    bm5 --> bm2
+    bm5 --> bm6{{User presence confirmed?}}
+    bm5 -- True --> bm7[Boot to OS]
+    bm6 -- False --> bm8[Reboot]
+    bm1 -- False --> bm7
     end
-
-    bootmanager --> userpresence{{User presence confirmed?}}
-    userpresence -- True --> boot2[Boot OS]
-    userpresence -- False --> reboot2[Reboot]
 ```
