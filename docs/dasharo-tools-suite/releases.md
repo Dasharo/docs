@@ -3,15 +3,46 @@
 Following Release Notes describe the status of Open Source Software development
 for Dasharo Tools Suite.
 
+<!--
+TBD: provide release process for DTS
 For details about our release process, please read [Dasharo Standard Release
 Process](../dev-proc/standard-release-process.md).
-
+-->
 <center>
 [Subscribe to Dasharo Tools Suite Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
+
+## v1.2.8 - 2023-09-06
+
+### Images
+
+[USB bootable DTS v1.2.8 image][USB_DTS_v1.2.8]{ .md-button }
+[sha256][USB_DTS_sha_v1.2.8]{ .md-button }
+[sha256.sig][USB_DTS_sig_v1.2.8]{ .md-button }
+
+[DTS v1.2.8 ISO image][ISO_DTS_v1.2.8]{ .md-button }
+[sha256 ISO][ISO_DTS_sha_v1.2.8]{ .md-button }
+[sha256.sig ISO][ISO_DTS_sig_v1.2.8]{ .md-button }
+
+[USB_DTS_v1.2.8]: https://3mdeb.com/open-source-firmware/DTS/v1.2.8/dts-base-image-v1.2.8.wic.gz
+[USB_DTS_sha_v1.2.8]: https://3mdeb.com/open-source-firmware/DTS/v1.2.8/dts-base-image-v1.2.8.wic.gz.sha256
+[USB_DTS_sig_v1.2.8]: https://3mdeb.com/open-source-firmware/DTS/v1.2.8/dts-base-image-v1.2.8.wic.gz.sha256.sig
+[ISO_DTS_v1.2.8]: https://3mdeb.com/open-source-firmware/DTS/v1.2.8/dts-base-image-v1.2.8.iso
+[ISO_DTS_sha_v1.2.8]: https://3mdeb.com/open-source-firmware/DTS/v1.2.8/dts-base-image-v1.2.8.iso.sha256
+[ISO_DTS_sig_v1.2.8]: https://3mdeb.com/open-source-firmware/DTS/v1.2.8/dts-base-image-v1.2.8.iso.sha256.sig
+
+  To verify binary integrity with hash and signature please follow the
+  instructions in [Dasharo release signature verification](/guides/signature-verification)
+  using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.2.x-signing-key-pub.asc)
+
+### Changelog
+
+Please, refer to
+[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v128---2023-09-06)
+stored in `meta-dts` repository.
 
 ## v1.2.6 - 2023-08-31
 
