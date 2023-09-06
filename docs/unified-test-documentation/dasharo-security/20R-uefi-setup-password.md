@@ -27,7 +27,6 @@ available and, whether all options in the submenu have correct default state.
 
 1. Power on the DUT.
 1. Press `SETUP_MENU_KEY` to enter the `Setup Menu`.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `User Password Management` submenu using the arrow keys and Enter.
 1. Verify the `Admin Password Status` field.
 1. Verify the `Change Admin Password` field.
@@ -61,11 +60,12 @@ a window to enter the password will be displayed.
 
 1. Power on the DUT.
 1. Press `SETUP_MENU_KEY` to enter the `Setup Menu`.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `User Password Management` submenu using the arrow keys and Enter.
 1. Select the option `Change Admin Password` by using the arrow keys and Enter.
 1. Set the password in accordance with the password minimum terms and
-    conditions.
+    conditions. Make sure the new password is not the same as the last 5
+    passwords - to be sure, you can set the password 5 times and then
+    set the actual password.
 1. Restart the DUT.
 1. Press `SETUP_MENU_KEY` to enter the `Setup Menu`.
 1. Verify if the password window will be displayed.
@@ -174,7 +174,6 @@ Password functionality by entering empty password.
 
 1. Power on the DUT.
 1. Press `SETUP_MENU_KEY` to enter the `Setup Menu`.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `User Password Management` submenu using the arrow keys and Enter.
 1. Select the option `Change Admin Password` by using the arrow keys and Enter.
 1. Set the empty password.
@@ -207,7 +206,6 @@ will be rejected.
 
 1. Power on the DUT.
 1. Press `SETUP_MENU_KEY` to enter the `Setup Menu`.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `User Password Management` submenu using the arrow keys and Enter.
 1. Select the option `Change Admin Password` by using the arrow keys and Enter.
 1. Set the password in non-accordance with the password minimum terms and
@@ -240,7 +238,6 @@ verify whether the attempt to set old password again will be rejected.
 
 1. Power on the DUT.
 1. Press `SETUP_MENU_KEY` to enter the `Setup Menu`.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `User Password Management` submenu using the arrow keys and Enter.
 1. Select the option `Change Admin Password` by using the arrow keys and Enter.
 1. Set the password identically as one of the 5 latest passwords.
