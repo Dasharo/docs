@@ -46,7 +46,7 @@ Test results for this platform can be found
 ### Known issues
 
 - [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
-- [No audio playback via headset](https://github.com/Dasharo/daswith haro-issues/issues/483)
+- [No audio playback via headset](https://github.com/Dasharo/dasharo-issues/issues/483)
 - [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
 
 ### Binaries
