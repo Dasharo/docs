@@ -17,6 +17,17 @@ extra:
   analytics:
     provider: google
     property: G-LH2JM6P96R
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dasharo
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@Dasharo
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/dasharo_com
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/Dasharo
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/QseTVHum3w
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:

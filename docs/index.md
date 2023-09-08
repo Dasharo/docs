@@ -1,64 +1,115 @@
-# <img src="images/logo/logo-bar.svg" width="1000" height="500">
+# ![Dasharo Logo](images/logo/logo-bar.png)
 
-# About
+Dasharo is an open-source firmware distribution crafted with an emphasis on
+trustworthiness, privacy, and liberty. Our mission is to empower users with a
+firmware they can trust. Here's what makes Dasharo the go-to choice for secure
+firmware:
 
-Dasharo is an open-source firmware distribution focusing on seamless
-deployment, clean and simple code, long-term maintenance, professional support,
-transparent validation, superior documentation, privacy-respecting
-implementation, liberty for the owners and trustworthiness for all.
+## Key Features
 
-[More about Dasharo](osf-trivia-list/dasharo.md)
+- **Seamless Deployment**: Start your journey with Dasharo effortlessly. [Learn
+  how
+  →](/dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment)
+- **Clean & Simple Code**: Our code is readable and maintainable, designed with
+  developers in mind. [Explore our GitHub →](https://github.com/dasharo)
+- **Long-term Maintenance**: We are committed to supporting Dasharo for years
+  to come. [Read about our vision
+  →](/osf-trivia-list/dasharo/#dasharo-long-term-maintenance)
+- **Professional Support**: Our team of experts is here to help you at every
+  step. [Get support →](/osf-trivia-list/dasharo/#dasharo-professional-support)
+- **Transparent Validation**: We believe in a transparent process with no black
+  boxes. [See our validation process
+  →](https://blog.3mdeb.com/tags/validation/)
+- **Superior Documentation**: Detailed documentation to help you understand
+  every facet of Dasharo. [Visit our docs →](/dasharo-menu-docs/overview)
+- **Privacy-Respecting Implementation**: We prioritize your privacy, ensuring
+  your data remains yours. [Learn more →](/osf-trivia-list/dasharo/#future-work)
+- **Liberty for Owners**: Dasharo gives you complete control over your
+  firmware. [Discover the freedom →](/osf-trivia-list/dasharo/#future-work)
 
-[Dasharo homepage](https://dasharo.com/)
+<center>
+[**Learn More**](/osf-trivia-list/dasharo.md) | [**Visit Dasharo's
+Homepage**](https://dasharo.com/)
+</center>
 
-Dasharo is registered trademark and product developed by [3mdeb](https://3mdeb.com).
+> Dasharo is a registered trademark and product developed by
+> [3mdeb](https://3mdeb.com).
 
-## Compatible hardware
+## 🖥️ Compatible Hardware
 
-Refer to the [Supported hardware section.](/unified/novacustom/overview/)
+Find the perfect hardware match for Dasharo in our comprehensive [Supported
+Hardware Section](/variants/overview/).
+
+## 💼 Commercial Inquiries
+
+Looking to integrate Dasharo into your business? [Reach out to
+us](https://www.dasharo.com/pages/contact/) for commercial inquiries and
+collaborations.
+
+## 🌍 Community
+
+Become a part of the vibrant Dasharo community:
+
+- **Chat with Us**: Join the conversation in the [Dasharo Matrix
+  Workspace](https://matrix.to/#/#dasharo:matrix.org).
+- **Stay Updated**: Don't miss our quarterly [Dasharo
+  Events](https://vpub.dasharo.com/) featuring:
+    + **Dasharo User Group (DUG)**: A forum for Dasharo users to connect, share
+      experiences, and stay informed.
+    + **Dasharo Developers vPub**: A relaxed virtual meetup for developers and
+      enthusiasts to discuss, share, and connect.
+
+> Find us on other social platforms using the icons at the bottom right.
 
 <!--
-TODO: explain how user, developer, customer may add to this list
-TODO: introduce status like officially supported by vendor or nor officially
-supported by vendor
-TODO: explain that not all hardware may be listed here, because of embargo,
-non-public development, custom hardware handled by vendor
+
+## 📢 Testimonials
+
+Hear from our satisfied users and clients:
+
+> "Dasharo provided us with the secure firmware solution we were looking for."
+> - **Client A**
+> "An open-source firmware that truly respects user freedom." - **User B**
+
+[Share your testimonial →](#)
+
 -->
 
-## Community
+## 📅 Events Calendar
 
-* [Dasharo Matrix Workspace](https://matrix.to/#/#dasharo:matrix.org) - general
-  Dasharo discussion, support and other open-source firmware related work.
-* [Dasharo OSF vPub](https://vpub.dasharo.com/) - 3-4 times a year we organize
-  online party to discuss recent achievements in open-source firmware, open
-  source hardware and open instruction set architecture. Feel free to check the
-  website about recent vPub plans or subscribe to newsletter.
-* [Discord server](https://discord.gg/QseTVHum3w)
-* [Dasharo Twitter account](https://twitter.com/Dasharo_com)
+Stay tuned for our upcoming events:
 
-<!--
+- **September 28, 2023**: [Dasharo User Group #3 and Dasharo Developers vPub
+  0x8](https://vpub.dasharo.com/e/8/dasharo-user-group-3)
+- **October 6-8, 2023**: [Qubes OS Summit
+  2023](https://cfp.3mdeb.com/qubes-os-summit-2023/cfp)
 
-For now we deprecating this terminology. We will get back to it when we will
-support enough platforms to justify and explain our strategy for given market
-segment.
+[View full calendar →](https://vpub.dasharo.com)
 
-## Stock Keeping Units (SKUs)
+## 📚 Resources
 
-Also called variants or flavours. In essence Dasharo SKUs are set of Open
-Source Firmware releases produced for given market segment with awareness of
-features that given segment requires. Each market segment includes two types of
-platforms: Reference Platform (RP) and Hardware Compatibility List Platforms
-(HCLP).
+Dive deeper with our rich library of resources:
 
-What SKUs we support:
+- [Guides](/guides/logo-customization)
+- [Knowledge Base](/glossary)
 
-* [Dasharo Workstation](variants/workstation.md)
-* [Dasharo Firewall](variants/firewall.md)
-* [Dasharo Secure Firewall](variants/secure-firewall.md)
-* [Dasharo Trustworthy Server CE](variants/trustworthy-server.md)
-* [Dasharo Trustworthy Computing](variants/trustworthy-computing.md)
-* [Dasharo Server](variants/server.md)
-* [Dasharo Safety-Critical](variants/safety-critical.md)
+## 📰 Blog
 
-Dasharo SKUs roadmap is available on [SKUs Overview](variants/skus-overview.md) page.
--->
+Catch up on the latest in the Dasharo world:
+
+- [Dasharo compatible with MSI PRO Z690-A release v1.1.1](https://blog.3mdeb.com/2023/2023-03-02-msi_ms7d25_v1.1.1_release/)
+- [ASUS KGPE-D16 Dasharo testing update](https://blog.3mdeb.com/2022/2022-03-23-kgpe-d16-testing-update/)
+- [KGPE-D16 open-source firmware status](https://blog.3mdeb.com/2022/2022-02-03-kgpe_d16_status/)
+- [Dasharo for Dell OptiPlex 7010 / 9010Tips for Dasharo Deployment](https://blog.3mdeb.com/2021/2021-11-26-optiplex-dasharo/)
+
+[Visit our blog →](https://blog.3mdeb.com)
+
+## 🔍 Quick Links
+
+- [FAQ](/osf-trivia-list/introduction)
+- [Contact Us](https://www.dasharo.com/pages/contact/)
+- [Newsletter Subscription](https://www.dasharo.com/#newsletter)
+
+  > Connect with us on [Twitter](https://twitter.com/dasharo_com),
+  > [LinkedIn](https://www.linkedin.com/company/10157825),
+  > [GitHub](https://github.com/dasharo), and more.
