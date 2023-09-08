@@ -9,7 +9,7 @@ firmware:
 
 - **Seamless Deployment**: Start your journey with Dasharo effortlessly. [Learn
   how
-  →](dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment)
+  →](/dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment)
 - **Clean & Simple Code**: Our code is readable and maintainable, designed with
   developers in mind. [Explore our GitHub →](https://github.com/dasharo)
 - **Long-term Maintenance**: We are committed to supporting Dasharo for years
@@ -90,8 +90,8 @@ Stay tuned for our upcoming events:
 
 Dive deeper with our rich library of resources:
 
-- [Guides](guides/logo-customization)
-- [Knowledge Base](glossary)
+- [Guides](/guides/logo-customization)
+- [Knowledge Base](/glossary)
 
 ## 📰 Blog
 
@@ -106,7 +106,7 @@ Catch up on the latest in the Dasharo world:
 
 ## 🔍 Quick Links
 
-- [FAQ](osf-trivia-list/introduction)
+- [FAQ](/osf-trivia-list/introduction)
 - [Contact Us](https://www.dasharo.com/pages/contact/)
 - [Newsletter Subscription](https://www.dasharo.com/#newsletter)
 
