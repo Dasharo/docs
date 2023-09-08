@@ -14,21 +14,21 @@ firmware:
   developers in mind. [Explore our GitHub →](https://github.com/dasharo)
 - **Long-term Maintenance**: We are committed to supporting Dasharo for years
   to come. [Read about our vision
-  →](osf-trivia-list/dasharo/#dasharo-long-term-maintenance)
+  →](/osf-trivia-list/dasharo/#dasharo-long-term-maintenance)
 - **Professional Support**: Our team of experts is here to help you at every
-  step. [Get support →](osf-trivia-list/dasharo/#dasharo-professional-support)
+  step. [Get support →](/osf-trivia-list/dasharo/#dasharo-professional-support)
 - **Transparent Validation**: We believe in a transparent process with no black
   boxes. [See our validation process
   →](https://blog.3mdeb.com/tags/validation/)
 - **Superior Documentation**: Detailed documentation to help you understand
-  every facet of Dasharo. [Visit our docs →](dasharo-menu-docs/overview)
+  every facet of Dasharo. [Visit our docs →](/dasharo-menu-docs/overview)
 - **Privacy-Respecting Implementation**: We prioritize your privacy, ensuring
-  your data remains yours. [Learn more →](osf-trivia-list/dasharo/#future-work)
+  your data remains yours. [Learn more →](/osf-trivia-list/dasharo/#future-work)
 - **Liberty for Owners**: Dasharo gives you complete control over your
-  firmware. [Discover the freedom →](osf-trivia-list/dasharo/#future-work)
+  firmware. [Discover the freedom →](/osf-trivia-list/dasharo/#future-work)
 
 <center>
-[**Learn More**](osf-trivia-list/dasharo.md) | [**Visit Dasharo's
+[**Learn More**](/osf-trivia-list/dasharo.md) | [**Visit Dasharo's
 Homepage**](https://dasharo.com/)
 </center>
 
@@ -110,6 +110,6 @@ Catch up on the latest in the Dasharo world:
 - [Contact Us](https://www.dasharo.com/pages/contact/)
 - [Newsletter Subscription](https://www.dasharo.com/#newsletter)
 
-  > Connect with us on [Twitter](https://x.com/dasharo_com),
+  > Connect with us on [Twitter](https://twitter.com/dasharo_com),
   > [LinkedIn](https://www.linkedin.com/company/10157825),
   > [GitHub](https://github.com/dasharo), and more.
