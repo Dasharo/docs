@@ -67,8 +67,9 @@ documentation._
 
 ## Buy the MSI PRO Z690-A DDR4 with Dasharo firmware
 
-The Full PC Build with MSI PRO Z690-A DDR4 motherboard with Dasharo firmware is
-available at the official [3mdeb store](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1).
+The Full PC Build with MSI PRO Z690-A/Z790-P DDR4/DDR5 motherboard with Dasharo
+firmware is available at the official [3mdeb
+store](https://shop.3mdeb.com/product-category/dasharo-supported-hardware/).
 
 You can also buy the product by mailing us at:
 [shopping@3mdeb.com](mailto:shopping@3mdeb.com).

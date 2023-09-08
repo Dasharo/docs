@@ -45,7 +45,7 @@ Deployment](initial-deployment.md). In the worst scenario, you might "brick" the
 board, rendering it unbootable. It can be fixed by following the [recovery
 procedure](recovery.md). In case of concerns, we invite you to buy the equipment
 directly in our [online
-store](https://3mdeb.com/?s=msi&post_type=product&dgwt_wcas=1) with a
+store](https://shop.3mdeb.com/product-category/dasharo-supported-hardware/) with a
 subscription service, under which we perform the Dasharo installation with the
 latest release, and offer full support through invite-only Matrix channel.
 
