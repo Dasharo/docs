@@ -1,5 +1,8 @@
-# See https://pre-commit.com/hooks.html for more hooks
 ---
+default_stages: [pre-commit]
+
+default_install_hook_types: [pre-commit, commit-msg]
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
