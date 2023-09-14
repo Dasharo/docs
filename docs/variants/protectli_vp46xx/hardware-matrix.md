@@ -30,7 +30,7 @@ coreboot port on the Protectli VP46XX firewall.
 | **Power Control**              | RTE v1.1.0                                  |
 | **Power supply**               | Channel Well Technology 12V, 5.0A 60W       |
 
-## Protectli VP4650
+## Protectli VP4650 ver1
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
@@ -39,6 +39,30 @@ coreboot port on the Protectli VP46XX firewall.
 |                                | Slot 2: Kingston KVR26S19S8/16              |
 | **Flash memory**               | Macronix KH25L12835F                        |
 | **SSD**                        | Samsung 980 PRO NVMe 250 GB                 |
+| **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
+| **USB Keyboard**               | DELL KB216                                  |
+| **USB Mouse**                  | DELL MS116p                                 |
+| **Wireless card**              | JJPLUS JWW6051                              |
+| **4G Modem**                   | AMIT MDG200-0T001                           |
+| **Display**                    | Display 1: HDMI 1920x1080p                  |
+|                                | Display 2: DP 1920x1080p                    |
+| **Ethernet controller**        | 6x intel i225 (on-board)                    |
+| **Internal devices**           | Audio subsystem                             |
+| **TPM**                        | Protectli TPM                               |
+| **Network**                    | Local network wired connection              |
+| **Remote Testing Environment** | RTE v1.1.0                                  |
+| **Power Control**              | RTE v1.1.0                                  |
+| **Power supply**               | Channel Well Technology 12V, 7.5A 90W       |
+
+## Protectli VP4650 ver2
+
+| Component                      | Description                                 |
+|--------------------------------|---------------------------------------------|
+| **CPU**                        | Intel Core i5-10210U                        |
+| **RAM**                        | Slot 1: Kingston 99U5624-013.A00G 8GB       |
+|                                | Slot 2: Kingston 99U5624-013.A00G 8GB       |
+| **Flash memory**               | Macronix KH25L12835F                        |
+| **SSD**                        | KINGSTON SNVS250G NVMe 250 GB               |
 | **MMC drive**                  | SAMSUNG KLM8G1GETF-B041 (on-board)          |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
