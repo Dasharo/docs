@@ -70,6 +70,68 @@ This test verifies whether the battery charge level is reported in the OS.
 1. The battery status indicator should show the current charge level (percentage
     left).
 
+## ECR001.003 Battery start charge threshold
+
+**Test description**
+
+The setup menu allows you to set your own battery thresholds, setting the
+minimum and maximum battery charge levels. The purpose of this test is to check
+that this feature works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Enter Dasharo Setup Menu
+1. Enter **Dasharo System Features**
+1. Enter **Power Management Options**
+1. Set **Battery Start Threshold** to desired value
+1. Wait for the DUT to discharge its battery to the previously set level.
+
+**Expected result**
+
+The DUT should power down and, after rebooting, report that the battery is is
+critically low.
+
+## ECR001.004 Battery stop charge threshold
+
+**Test description**
+
+The setup menu allows you to set your own battery thresholds, setting the
+minimum and maximum battery charge levels. The purpose of this test is to check
+that this feature works correctly.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Enter Dasharo Setup Menu
+1. Enter **Dasharo System Features**
+1. Enter **Power Management Options**
+1. Set **Battery Stop Threshold** to desired value
+1. Boot into operating system
+1. Wait until the battery is fully charged
+
+**Expected result**
+
+The battery should stop charging at previously set level.
+
 ## ECR002.001 Battery monitoring - charging state in OS (Ubuntu 22.04)
 
 **Test description**
