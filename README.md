@@ -79,7 +79,7 @@ There should be no TBD or TODO visible on the website.
 - Install hooks into repo:
 
 ```shell
-pre-commit install --hook-type commit-msg
+pre-commit install
 ```
 
 - Enjoy automatic checks on each `git commit` action!
