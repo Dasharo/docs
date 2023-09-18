@@ -29,8 +29,8 @@ is displayed.
 
 1. Power on the DUT.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
-1. Select the `iPXE Network boot` option using the ++arrow-up++ /
-   ++arrow-down++ / ++arrow-left++ / ++arrow-right++ and press ++enter++.
+1. Select the `iPXE Network boot` option using the arrow keys and press
+   ++enter++.
 
 **Expected result**
 
