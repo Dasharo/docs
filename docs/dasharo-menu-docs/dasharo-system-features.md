@@ -35,9 +35,9 @@ This menu offers security-sensitive options like:
   problems with DMA/IOMMU during OS boot, keep it disabled.
   NOTE: Windows may not boot if the option is enabled.
 
-- `Enable Wi-Fi + BT radios` - (applicable to devices with Wi-Fi and Bluetooth
-  cards) - Enables or disables radios for Wi-Fi and Bluetooth. When disabled,
-  the slot is unconfigured and power to the wireless module is disconnected.
+- `Enable Wi-Fi + BT radios` - (applicable to laptops) - Enables or disables
+  radios for Wi-Fi and Bluetooth. When disabled, the slot is unconfigured and
+  power to the wireless module is disconnected.
 
 ## Networking Options
 
