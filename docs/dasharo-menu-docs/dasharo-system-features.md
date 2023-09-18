@@ -38,6 +38,10 @@ This menu offers security-sensitive options like:
   process for the end user. Unsetting multiple security options and then
   setting them back can be tiresome.
 
+- `Enable Wi-Fi + BT radios` - (applicable to laptops) - Enables or disables
+  radios for Wi-Fi and Bluetooth. When disabled, the slot is unconfigured and
+  power to the wireless module is disconnected.
+
 ## Networking Options
 
 ![](/images/menus/dasharo_net_opts.jpeg){ class="center" }
