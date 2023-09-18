@@ -70,10 +70,7 @@ The full set is now available at our [online shop](https://shop.3mdeb.com/shop/m
 
     ![](/images/ch341a_rec/ch341a_kit.jpg)
 
-2. WSON8 probe, 8x6mm. Can be bought from China on Aliexpress or eBay.
-
-    ![](/images/ch341a_rec/wson8_probe.jpg)
-
+2. Female-female 2.54mm to 2mm dupont wires.
 3. USB2.0 Female-Male extension cord 0.5m or longer (optional)
 
     ![](/images/ch341a_rec/usb_ext.jpg)
@@ -97,8 +94,8 @@ Now take the breakout board with pin headers:
 
 ![](/images/ch341a_rec/pin_breakout.jpg)
 
-and plug it into the other 1.8V adapter, be sure that numbers 1-4 on the breakout
-match the numbers 1 and 4 on the adapter:
+and plug it into the other 1.8V adapter, be sure that numbers 1-4 on the
+breakout board match the numbers 1 and 4 on the adapter:
 
 ![](/images/ch341a_rec/adapter_shifter.jpg)
 
@@ -106,47 +103,29 @@ Numbers should be visible on the upper side after assembling:
 
 ![](/images/ch341a_rec/breakout_assemble.jpg)
 
-Next, take the WSON8 probe and locate the white dot on the needles side (it
-will indicate the first reference pin, although you may use any other corner pin):
+Next, take the dupont wires and connect them to the brekaout board and
+mainboard's JTPM1 header. The JTPM1 pin5 is actually BIOS SPI CS pin (marked
+as reserved in the board manual).
 
-![](/images/ch341a_rec/wson8_probe2.jpg)
+![JTPM1](images/msi_z690_jtpm1.jpeg)
 
-Check which wire is connecting to this pin (the connection should be 1 to 1).
-In my case it is white wire and it will be used as reference to connect the
-wires to the breakout board:
+| CH341a breakout board | MSI Z690-A/Z790-P                                    |
+|:---------------------:|:----------------------------------------------------:|
+| pin 1 (CS)            | JTPM1 pin 5 (RESERVED / BIOS SPI CS pin)             |
+| pin 2 (MISO)          | JTPM1 pin 3 (MISO)                                   |
+| pin 4 (GND)           | JTPM1 pin 7 (GND)                                    |
+| pin 5 (MOSI)          | JTPM1 pin 4 (MOSI)                                   |
+| pin 6 (SCLK)          | JTPM1 pin 6 (SPI Clock)                              |
+| pin 8 (Vcc)           | JTPM1 pin 1 (SPI Power)                              |
 
-![](/images/ch341a_rec/wire_attach2.jpg)
-
-The wires should follow the same order of colors as on the probe (keep them
-straight, and do not cross). Repeat with the other 4 wires on the other side of the
-probe:
-
-![](/images/ch341a_rec/wire_attach1.jpg)
-
-Now the connection is ready. Time to locate the flash chip of the board.
+Now the connection is ready. Time to probe for the flash chip with flashrom.
 
 #### Flashing
 
-Connect the CH341A USB plug to the host machine which will be doing the
-flashing process (optionally use the USB extension cord for convenience).
-Locate the flash chip on the MSI PRO Z690-A DDR4 board:
-
-![](/images/ch341a_rec/msi_z690a.jpg)
-
-Locate the first pin on the flash chip (marked with a circle on the flash chip
-package and indicated by number 1 printed on the board - red circle):
-
-![](/images/ch341a_rec/msi_flash.jpg)
-
-Attach the WSON8 probe matching the first pin of the probe (white wire) and
-first pin of the flash chip:
-
-![](/images/ch341a_rec/probe_attach.jpg)
-
-Now on the Linux machine check if the flash is detected using a sample command
+Now on the Linux machine check if the flash is detected using a sample command:
 
 ```bash
-sudo flashrom -p ch341a_spi -r firmware.bin
+sudo flashrom -p ch341a_spi
 ```
 
 You should see something like this:
@@ -157,15 +136,12 @@ flashrom is free software, get the source code at https://flashrom.org
 
 Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
 Found Winbond flash chip "W25Q256.W" (32768 kB, SPI) on ch341a_spi.
-Reading flash... done.
+No operations were specified.
 ```
 
-You don't need to wait for the command completion and interrupt it with Ctrl+C
-shortcut, it just serves as a confirmation of good connection. If you decide to
-interrupt it, reset the CH341A programmer by unpluging and repluging it to USB
-port. Now stabilize your hand holding the WSON8 probe on the flash chip and
-invoke the real flashing command (e.g. if your original/working firmware backup
-is saved as `firmware_backup.bin`):
+If the flash is detected as above invoke the real flashing command
+(e.g. if your original/working firmware backup is saved as
+`firmware_backup.bin`):
 
 ```bash
 sudo flashrom -p ch341a_spi -w firmware_backup.bin
