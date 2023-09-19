@@ -93,13 +93,12 @@ that this feature works correctly.
 1. Enter Dasharo Setup Menu
 1. Enter **Dasharo System Features**
 1. Enter **Power Management Options**
-1. Set **Battery Start Threshold** to desired value
+1. Set **Battery Start Charge Threshold** to desired value
 1. Wait for the DUT to discharge its battery to the previously set level.
 
 **Expected result**
 
-The DUT should power down and, after rebooting, report that the battery is is
-critically low.
+When the battery reaches the start charge threshold, the DUT should power down.
 
 ## ECR001.004 Battery stop charge threshold
 
@@ -124,13 +123,13 @@ that this feature works correctly.
 1. Enter Dasharo Setup Menu
 1. Enter **Dasharo System Features**
 1. Enter **Power Management Options**
-1. Set **Battery Stop Threshold** to desired value
+1. Set **Battery Stop Charge Threshold** to desired value
 1. Boot into operating system
-1. Wait until the battery is fully charged
+1. Wait until the battery is charged to the stop threshold.
 
 **Expected result**
 
-The battery should stop charging at previously set level.
+The battery should stop charging at stop threshold.
 
 ## ECR002.001 Battery monitoring - charging state in OS (Ubuntu 22.04)
 
