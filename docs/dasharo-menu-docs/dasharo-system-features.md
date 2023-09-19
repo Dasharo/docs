@@ -145,6 +145,16 @@ Currently available options:
     + `Suspend to RAM (S3)` - standard sleep mode that suspends the machine
       state to RAM, supported on most operating systems (except Windows on 11th
       generation Intel Core processors or newer).
+- `Battery Start Treshold` - the value set by this option represents the
+percentage of battery power that the device will never fall below - it will
+power off.
+- `Battery Stop Treshold` - the value set by this option represents the
+percentage of battery power that the device will never exceed - it will
+stop charging.
+
+Flow chart for the two settings mentioned above:
+
+![](/images/battery_threshold_flowchart.png){class="center"}
 
 ## Additional information
 
