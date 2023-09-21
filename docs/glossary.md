@@ -50,3 +50,18 @@ binary blobs in the firmware. Some binary blobs have no EULA or any other
 license discussing redistributability. To avoid issues, Dasharo Blobs
 Transmission scripts extract blobs from SPI NOR flash backup and patch Dasharo
 open-source firmware distribution before initial deployment.
+
+## Dasharo Openness Score
+
+[Dasharo Openness Score](https://github.com/Dasharo/Openness-Score) is an
+utility, which parses the firmware images to calculate the amount of bytes
+produced from open-source code. It is able to parse both Dasharo/coreboot
+images and proprietary UEFI images. That said, it can be used to compare how
+open the Dasharo images are versus the proprietary versions.
+
+Dasharo Openness Score may also refer to the report produced by the Dasharo
+Openness Score utility. Such reports are being published in the [platform
+directories](https://docs.dasharo.com/variants/overview/) in this repository.
+If you are interested in Dasharo Openness Score for you boards, please [reach
+us](mailto:leads@3mdeb.com). Example Dasharo Openness Score report can be
+found [here](https://github.com/Dasharo/Openness-Score/blob/cab83fe1104c345fd22fb9541c738aca66b392da/examples/msi_ms7d25_v1.1.1_ddr4.rom_openness_score.md)
