@@ -145,9 +145,10 @@ Currently available options:
     + `Suspend to RAM (S3)` - standard sleep mode that suspends the machine
       state to RAM, supported on most operating systems (except Windows on 11th
       generation Intel Core processors or newer).
-- `Battery Start Treshold` - the value set by this option represents the
-percentage of battery power that the device will never fall below - it will
-power off.
+- `Battery Start Treshold` - The value set by this option represents the
+percentage of battery power; if it is above this value, the DUT won't start
+charging. If the DUT has started charging before this level, it will not stop
+until the battery stop threshold is reached.
 - `Battery Stop Treshold` - the value set by this option represents the
 percentage of battery power that the device will never exceed - it will
 stop charging.
