@@ -74,9 +74,9 @@ This test verifies whether the battery charge level is reported in the OS.
 
 **Test description**
 
-The setup menu allows you to set your own battery thresholds, setting the
-minimum and maximum battery charge levels. The purpose of this test is to check
-that this feature works correctly.
+The setup menu allows you to set your own threshold for the start of battery
+charging, which defines the level above which the battery will not start to
+charge. The aim of this test is to check that functionality.
 
 **Test configuration data**
 
@@ -93,20 +93,22 @@ that this feature works correctly.
 1. Enter Dasharo Setup Menu
 1. Enter **Dasharo System Features**
 1. Enter **Power Management Options**
-1. Set **Battery Start Charge Threshold** to desired value
-1. Wait for the DUT to discharge its battery to the previously set level.
+1. Set **Battery Start Charge Threshold** to e.g. 60%
+1. Discharge the battery below the previously set level
+1. Charge battery above the previously set level
+1. Reconnect charging cable
 
 **Expected result**
 
-When the battery reaches the start charge threshold, the DUT should power down.
+After reconnecting the charging cable, the battery should not start charging.
 
 ## ECR001.004 Battery stop charge threshold
 
 **Test description**
 
-The setup menu allows you to set your own battery thresholds, setting the
-minimum and maximum battery charge levels. The purpose of this test is to check
-that this feature works correctly.
+The setup menu allows you to set your own threshold for the stop of battery
+charging, which defines the level above which the battery will stop charging.
+The aim of this test is to check that functionality.
 
 **Test configuration data**
 
@@ -124,7 +126,6 @@ that this feature works correctly.
 1. Enter **Dasharo System Features**
 1. Enter **Power Management Options**
 1. Set **Battery Stop Charge Threshold** to desired value
-1. Boot into operating system
 1. Wait until the battery is charged to the stop threshold.
 
 **Expected result**
