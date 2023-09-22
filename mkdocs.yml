@@ -9,6 +9,7 @@ theme:
   logo: images/dasharo-logo.png
   features:
     - content.tabs.link
+    - content.code.copy
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
