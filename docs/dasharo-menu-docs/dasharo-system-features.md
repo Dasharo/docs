@@ -157,6 +157,22 @@ Flow chart for the two settings mentioned above:
 
 ![](/images/battery_threshold_flowchart.png){class="center"}
 
+## PCI/PCIe Configuration
+
+The submenu currently contains options:
+
+- `Enable PCIe Resizeable BARs` - This option enables allocation of resizeable
+BARs for devices that request them. Enabling this option can cause conflicts
+with GPU virtualization. Requested size might exceed maximum BAR size of the
+firmware in which case performance might be reduced.
+- `OptionROM Execution Policy` - This option allows control over which
+OptionROMs get loaded. Possible options:
+    + `Disable all OptionROMs loading`
+    + `Enable all OptionROMs loading`
+    + `Enable OptionROM loading only on GPUs`
+
+![](/images/optionrom_flow.png){class="center"}
+
 ## Additional information
 
 NOTE: Pressing F9 to reset to defaults resets **all settings**, not only the one
