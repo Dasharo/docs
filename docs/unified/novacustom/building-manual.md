@@ -104,28 +104,32 @@ Make sure that you have following packages installed:
 
     === "NS5x ADL"
         ```bash
-        make distclean && cp configs/config.novacustom_ns5x_adl .config
+        make distclean
+        ./util/kconfig/merge_config.sh configs/config.novacustom_ns5x_adl configs/fragments/config.novacustom_release_build
         ```
 
     === "NV4x ADL"
         ```bash
         make distclean && cp configs/config.novacustom_nv4x_adl .config
+        ./util/kconfig/merge_config.sh configs/config.novacustom_nv4x_adl configs/fragments/config.novacustom_release_build
         ```
 
     === "NS5x TGL"
         ```bash
         make distclean && cp configs/config.novacustom_ns5x_tgl .config
+        ./util/kconfig/merge_config.sh configs/config.novacustom_ns5x_tgl configs/fragments/config.novacustom_release_build
         ```
 
     === "NV4x TGL"
         ```bash
         make distclean && cp configs/config.novacustom_nv4x_tgl .config
+        ./util/kconfig/merge_config.sh configs/config.novacustom_nv4x_tgl configs/fragments/config.novacustom_release_build
         ```
 
 1. Start the build process:
 
     ```bash
-    make olddefconfig && make
+    make
     ```
 
 This will produce a Dasharo binary placed in `build/coreboot.rom`.
