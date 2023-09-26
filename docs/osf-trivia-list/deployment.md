@@ -25,7 +25,7 @@ cannot use DTS, please consider the compilation of Dasharo [flashrom
 fork](https://github.com/Dasharo/flashrom/tree/dasharo-release).
 
 For compilation details and related issues, please check flashrom
-[documentation](https://review.coreboot.org/plugins/gitiles/flashrom/+/refs/heads/master/README.rst)
+[documentation](https://review.coreboot.org/plugins/gitiles/flashrom/+/refs/heads/main/README.rst)
 and [community](https://www.flashrom.org/contact.html).
 
 ### Perform dry run to detect the problems early
