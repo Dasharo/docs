@@ -40,36 +40,31 @@ partition PlatformBootManagerLib {
 switch (__Firmware Update Mode EFI variable__ found and set?)
 case (False)
   :Do nothing;
+  :Boot;
+  stop
 case (True)
   :Remove __Firmware Update Mode__ EFI variable__;
   :Create volatile __Firmware Update Mode variable__;
   :Display Firmware Update Mode warning dialog;
   :Confirm user presence;
-  :Set boot entry to iPXE;
+  switch (User presence confirmed?)
+    case (True)
+      :Set boot entry to iPXE;
+    case (False)
+      :Reboot;
+      stop
+    endswitch
 endswitch
 }
-
-repeat while (User presence check failed?) is (True)
-->False;
 
 :Boot;
 
 partition iPXE {
-switch (__Firmware Update Mode EFI variable__ found and set?)
-case (False)
-  :Present boot menu;
-case (True)
-  :Boot directly to DTS;
-endswitch
+  :Boot DTS via iPXE;
 }
 
 partition DTS {
-switch (__Firmware Update Mode EFI variable__ found and set?)
-case (False)
-  :Present menu with options;
-case (True)
   :Start Firmware Update;
-endswitch
 }
 
 stop
