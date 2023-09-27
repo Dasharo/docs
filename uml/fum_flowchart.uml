@@ -6,8 +6,6 @@ title "__Firmware Update Mode__ setting flow and behavior"
 
 start
 
-repeat :Power on
-
 partition Setup UI {
 :Enter Dasharo Setup;
 :Go to __Dasharo System Features__;
