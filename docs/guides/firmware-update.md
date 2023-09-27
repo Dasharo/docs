@@ -31,16 +31,15 @@ boot.
 
 To enter Firmware Update Mode:
 
-1. Enter the Setup Menu:
+1. Enter the Setup Menu and navigate to Dasharo System Features:
 ![](./images/setup_menu_dsf.png)
-1. Navigate to `Dasharo System Features`:
-![](./images/setup_menu_dsc.png)
 1. Navigate to `Dasharo Security Options`:
+![](./images/setup_menu_dsc.png)
+1. Select `Firmware Update Mode`:
 ![](./images/setup_menu_fum.png)
-1. Select the `Enter Firmware Update Mode` option:
-![](./images/setup_menu_fum_confirmation.png)
 1. When prompted, press Enter to accept. The device will reboot in Firmware
   Update Mode.
+![](./images/setup_menu_fum_confirmation.png)
 1. After reboot, when prompted, press the indicated key on the keyboard.
   Alternatively, to abort Firmware Update Mode, press Enter instead or simply
   wait for the timeout to expire.
