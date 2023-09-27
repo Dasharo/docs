@@ -1,0 +1,76 @@
+@startuml
+
+skin rose
+
+title "__Firmware Update Mode__ setting flow and behavior"
+
+start
+
+repeat :Power on
+
+partition Setup UI {
+:Enter Dasharo Setup;
+:Go to __Dasharo System Features__;
+:Go to __Dasharo Security Options__;
+:Choose __Firmware Update Mode__;
+:Press ENTER to continue;
+}
+
+:Reboot;
+
+partition coreboot {
+switch (__Firmware Update Mode EFI variable__ found and set?)
+case (False)
+  :Enable firmware lockdown;
+case (True)
+  :Skip firmware lockdown;
+endswitch
+}
+
+partition SecurityPkg {
+switch (__Firmware Update Mode EFI variable__ found and set?)
+case (False)
+  :Enable Secure Boot;
+case (True)
+  :Skip enabling Secure Boot;
+endswitch
+}
+
+partition PlatformBootManagerLib {
+switch (__Firmware Update Mode EFI variable__ found and set?)
+case (False)
+  :Do nothing;
+case (True)
+  :Remove __Firmware Update Mode__ EFI variable__;
+  :Create volatile __Firmware Update Mode variable__;
+  :Display Firmware Update Mode warning dialog;
+  :Confirm user presence;
+  :Set boot entry to iPXE;
+endswitch
+}
+
+repeat while (User presence check failed?) is (True)
+->False;
+
+:Boot;
+
+partition iPXE {
+switch (__Firmware Update Mode EFI variable__ found and set?)
+case (False)
+  :Present boot menu;
+case (True)
+  :Boot directly to DTS;
+endswitch
+}
+
+partition DTS {
+switch (__Firmware Update Mode EFI variable__ found and set?)
+case (False)
+  :Present menu with options;
+case (True)
+  :Start Firmware Update;
+endswitch
+}
+
+stop
+@enduml
