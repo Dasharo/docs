@@ -155,7 +155,7 @@ stop charging.
 
 Flow chart for the two settings mentioned above:
 
-![](/images/battery_threshold_flowchart.png){class="center"}
+![](/images/uml/battery_threshold_flowchart.png){class="center"}
 
 ## PCI/PCIe Configuration
 
@@ -166,7 +166,7 @@ BARs for devices that request them. Enabling this option can cause conflicts
 with GPU virtualization. Requested size might exceed maximum BAR size of the
 firmware in which case performance might be reduced.
 
-![](/images/rebar_flow.png){class="center"}
+![](/images/uml/rebar_flow.png){class="center"}
 
 - `OptionROM Execution Policy` - This option allows control over which
 OptionROMs get loaded. Possible options:
@@ -174,7 +174,7 @@ OptionROMs get loaded. Possible options:
     + `Enable all OptionROMs loading`
     + `Enable OptionROM loading only on GPUs`
 
-![](/images/optionrom_flow.png){class="center"}
+![](/images/uml/optionrom_flow.png){class="center"}
 
 ## Additional information
 
