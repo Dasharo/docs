@@ -165,6 +165,9 @@ The submenu currently contains options:
 BARs for devices that request them. Enabling this option can cause conflicts
 with GPU virtualization. Requested size might exceed maximum BAR size of the
 firmware in which case performance might be reduced.
+
+![](/images/rebar_flow.png){class="center"}
+
 - `OptionROM Execution Policy` - This option allows control over which
 OptionROMs get loaded. Possible options:
     + `Disable all OptionROMs loading`
