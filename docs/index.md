@@ -2,7 +2,9 @@
 
 Dasharo is an open-source firmware distribution crafted with an emphasis on
 trustworthiness, privacy, and liberty. Our mission is to empower users with a
-firmware they can trust. Here's what makes Dasharo the go-to choice for secure
+firmware they can trust. We believe in open development, firmware
+resilience, platform security transparency, right to repair and digital
+sovereignty. Here's what makes Dasharo the go-to choice for secure
 firmware:
 
 ## Key Features
@@ -82,7 +84,7 @@ Stay tuned for our upcoming events:
 - **September 28, 2023**: [Dasharo User Group #3 and Dasharo Developers vPub
   0x8](https://vpub.dasharo.com/e/8/dasharo-user-group-3)
 - **October 6-8, 2023**: [Qubes OS Summit
-  2023](https://cfp.3mdeb.com/qubes-os-summit-2023/cfp)
+  2023](https://qubesos.3mdeb.com)
 
 [View full calendar →](https://vpub.dasharo.com)
 
@@ -97,6 +99,7 @@ Dive deeper with our rich library of resources:
 
 Catch up on the latest in the Dasharo world:
 
+- [Dasharo Compatible with MSI PRO Z690-A Release v1.1.2](https://blog.3mdeb.com/2023/2023-09-08-msi_z690-a_v1.1.2_release/)
 - [Dasharo compatible with MSI PRO Z690-A release v1.1.1](https://blog.3mdeb.com/2023/2023-03-02-msi_ms7d25_v1.1.1_release/)
 - [ASUS KGPE-D16 Dasharo testing update](https://blog.3mdeb.com/2022/2022-03-23-kgpe-d16-testing-update/)
 - [KGPE-D16 open-source firmware status](https://blog.3mdeb.com/2022/2022-02-03-kgpe_d16_status/)
