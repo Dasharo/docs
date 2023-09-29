@@ -156,6 +156,54 @@ Flow chart for the two settings mentioned above:
 
 ![](/images/battery_threshold_flowchart.png){class="center"}
 
+- `Power state after power failure` - controls what power state the platform
+  should switch to when the main AC power is restored. Default value is
+  platform-dependent.
+
+![](/images/menus/pwf_fail_opt.jpeg){ class="center" }
+
+## PCI/PCIe Configuration
+
+The submenu contains options related to PCI and PCI Express devices and
+subsystem.
+
+![](/images/menus/dasharo_pci_opts.jpeg){ class="center" }
+
+- `Enable PCIe Resizable BARs` - enables/disables the PCIe Resizable BARs
+  during PCI enumeration process. If enabled, the PCI Express devices
+  advertising more suitable memory resources, will be configured to use those
+  resources (that typically means bigger memory resources assigned to the
+  device). By default this option is disabled for compatibility reasons.
+
+![](/images/menus/rebar_default_flow.png){ class="center" }
+
+![](/images/menus/rebar_flow.png){ class="center" }
+
+- `OptionROM Execution Policy` - controls which OptionROMs are allowed to be
+  loaded and run. Default value may depend on platform (either `Disable all`
+  or `Enable All`)
+
+![](/images/menus/optionrom_default_flow.png){ class="center" }
+
+![](/images/menus/optionrom_flow.png){ class="center" }
+
+## Memory Configuration
+
+The submenu contains options related to RAM memory configuration.
+
+![](/images/menus/dasharo_mem_opts1.jpeg){ class="center" }
+![](/images/menus/dasharo_mem_opts2.jpeg){ class="center" }
+
+- `Memory SPD profile` - chooses the memory overclocking profile to use when
+  training the memory. Custom profiles are not yet supported. Currently, there
+  is no detection between DDR4 and DDR5 memory, so `XMP#3` profile is only
+  eligible for DDR5.
+
+**WARNING**: Changing this value may brick your system. Be sure to have a
+recovery method before modifying this setting. You have been warned.
+
+![](/images/menus/spd_profile_flow.png){ class="center" }
+
 ## Additional information
 
 NOTE: Pressing F9 to reset to defaults resets **all settings**, not only the one
