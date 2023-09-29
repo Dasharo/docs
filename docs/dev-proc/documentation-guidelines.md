@@ -11,6 +11,7 @@ in Dasharo repositories.
 - [Document type](#document-type)
 - [Useful tools](#useful-tools)
 - [Formatting](#formatting)
+- [Diagrams](#diagrams)
 
 ## General rules
 
@@ -119,3 +120,35 @@ with editors configs used by our community. Feel free to create PR with your
 configuration - you can give your proposition to improve existing settings or
 create configs for editors that don't exist yet in our repository.
 A properly configurated editor simplifies correct formatting.
+
+## Diagrams
+
+We use PlantUML for creating diagrams. To install PlantUML, run the following
+command in your terminal:
+
+```bash
+sudo dnf install plantuml
+```
+
+Now, install the PlantUML plugin in Visual Studio Code. You can do this in VS
+Code by pressing `Ctrl` + `p` and type in `ext install plantuml`.
+
+Create new files in the `/uml` folder of the docs repository. Remember to
+commit them along with other files when making changes.
+
+To show a preview of a `.uml` file, open it in the editor and press `Alt` + `D`
+to open a preview to the side. The preview will be automatically updated when
+you save the `.uml` file.
+
+To export a diagram to a `.png` file, when you're done making changes, press
+`Ctrl` + `Shift` + `P` and type in `plantuml export current diagram`. As you
+type, the option to export will be autocompleted for you. Press Enter and
+select `png` - or any other file format you may need. Exported files are saved
+to `out/` directory.
+
+For more information on the UML language and PlantUML, see the following links:
+
+- https://holub.com/uml/
+- https://modeling-languages.com/best-uml-cheatsheets-and-reference-guides/
+- https://plantuml.com/
+- https://open-vsx.org/extension/jebbs/plantuml
