@@ -379,9 +379,34 @@ Please consider the following options depending on your situation:
 
 ### Firmware update
 
-DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
-with flashed Dasharo and choose option number `5`. You may see additional
-information about available updates if you are not [Dasharo Entry
+DTS can be used to update Dasharo firmware. It can be achieved in tree different
+ways:
+
+* [using Firmware Update Mode](#firmware-update-mode-based-update),
+* [using DTS menu](#dts-menu-based-update),
+* [flashing locally stored firmware files](#local-firmware-update).
+
+#### Firmware Update Mode based update
+
+> Note: This option is not available for [Dasharo Entry
+  Subscription](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+  subscribers.
+
+Starting with v1.2.9, DTS has efivars support to simplify the Dasharo firmware
+update process by detecting Firmware Update Mode(FUM). When this happens, DTS
+will automatically start the update process to the latest available version
+instead of booting to the standard menu. For more information, please look at
+the [Firmware Update Mode
+flowchart](../guides/firmware-update.md#firmware-update-mode-flowchart).
+
+#### DTS menu based update
+
+Updating Dasharo firmware using menu needs access to whole flash with flashrom,
+so to perform an update, please visit [Dasharo Security Options
+section](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+and make sure every locks are disabled. Next, boot DTS on platform with flashed
+Dasharo and choose option number `5`. You may see additional information about
+available updates if you are not [Dasharo Entry
 Subscription](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
 subscriber.
 
