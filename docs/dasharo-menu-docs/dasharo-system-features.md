@@ -164,7 +164,7 @@ Flow chart for the two settings mentioned above:
 
 ## PCI/PCIe Configuration
 
-The submenu contains options related to PCI and PCI Express devices and
+The submenu contains options related to the PCI and PCI Express devices and
 subsystem.
 
 ![](/images/menus/dasharo_pci_opts.jpeg){ class="center" }
@@ -189,7 +189,7 @@ subsystem.
 
 ## Memory Configuration
 
-The submenu contains options related to RAM memory configuration.
+The submenu contains options related to the RAM memory configuration.
 
 ![](/images/menus/dasharo_mem_opts1.jpeg){ class="center" }
 ![](/images/menus/dasharo_mem_opts2.jpeg){ class="center" }
@@ -203,6 +203,21 @@ The submenu contains options related to RAM memory configuration.
 recovery method before modifying this setting. You have been warned.
 
 ![](/images/menus/spd_profile_flow.png){ class="center" }
+
+## Serial Port Configuration
+
+The submenu contains options related to the serial port configuration.
+
+![](/images/menus/serial_opts.jpeg){ class="center" }
+
+- `Enable Serial Port Console Redirection` - when enabled, the firmware will
+  output also on the serial port specific to the platform. Default value is
+  platform-dependent.
+
+NOTE: If Serial Port Console Redirection is enabled, the setup application and
+strings printed on the screen will not be stretched to the full screen size.
+It is due to the serial console working in 80x25 mode. Thus the console
+splitter must choose the highest resolution supported by all consoles.
 
 ## Additional information
 
