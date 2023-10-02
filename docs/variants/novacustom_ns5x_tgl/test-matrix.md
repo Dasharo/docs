@@ -84,12 +84,20 @@ subjected before the release of the new binary.
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
 | 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE006.001                   |
+| 6.   | [Network Stack][NBA]                         | NBA           | All                                  |
+| 7.   | [Early Boot Dma Protection][EDP]             | EDP           | All                                  |
+| 8.   | [BIOS Lock][BLS]                             | BLS           | All                                  |
+| 9.   | [SMM BIOS write protection][SMM]             | SMM           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
+[NBA]: ../../unified-test-documentation/dasharo-security/20T-network-boot.md
+[EDP]: ../../unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
+[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 
 ## Module: Dasharo performance
 
