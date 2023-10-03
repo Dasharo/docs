@@ -23,9 +23,9 @@ To set the mode in UEFI:
 - Select `One Time Boot`
 - Select `UEFI Shell`
 - Type in `mode 80 25` and press Enter to switch mode
-- Type in `exit` to go back to boot menu
+- Type in `exit` to go back to setup menu
 
-You can now enter the setup menu to take your screenshots.
+You can browse the setup menu to take your screenshots now.
 
 ## Taking screenshots
 
