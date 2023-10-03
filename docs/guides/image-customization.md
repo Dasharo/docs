@@ -98,4 +98,4 @@ is saved. Alternatively you make install `cbfstool` to your system:
 `TOOLLDFLAGS=-static sudo make -C util/cbfstool install`.
 
 <!--Empty pixel to avoid orphaned pages when overview is hidden-->
-[![empty-pixel](../../images/empty_pixel.png)](logo-customization.md)
+[![empty-pixel](../images/empty_pixel.png)](logo-customization.md)
