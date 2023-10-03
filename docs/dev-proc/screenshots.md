@@ -47,6 +47,20 @@ the EFI System Partition. You can mount the ESP in Dasharo Tools Suite, e.g.:
 
 and then copy the files from there, or just `scp` them to your workstation.
 
+## PiKVM
+
+If a platform has PiKVM connected and configured, you can use it to take
+screenshots instead. This makes it easier to save taken screenshots to your
+workstation.
+
+To take a screenshot in PiKVM, simply click on the `System` menu in the
+top-right corner of the page and click on `Screenshot`:
+
+![](./images/pikvm_screenshot.png)
+
+This will open the screenshot in a new tab. From there you can `right-click` ->
+`Save image as...`, or simply press `Ctrl` + `S` to save the image.
+
 ## Cropping
 
 If you changed the mode prior to taking the screenshot, you'll notice that the
