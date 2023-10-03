@@ -19,7 +19,8 @@ is easier to read than this:
 
 To set the mode in UEFI:
 
-- Enter the boot menu
+- Enter the UEFI Setup Menu
+- Select `One Time Boot`
 - Select `UEFI Shell`
 - Type in `mode 80 25` and press Enter to switch mode
 - Type in `exit` to go back to boot menu
