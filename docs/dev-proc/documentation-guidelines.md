@@ -148,7 +148,7 @@ to `out/` directory.
 
 For more information on the UML language and PlantUML, see the following links:
 
-- https://holub.com/uml/
-- https://modeling-languages.com/best-uml-cheatsheets-and-reference-guides/
-- https://plantuml.com/
-- https://open-vsx.org/extension/jebbs/plantuml
+- [https://holub.com/uml/](https://holub.com/uml/)
+- [https://modeling-languages.com/best-uml-cheatsheets-and-reference-guides/](https://modeling-languages.com/best-uml-cheatsheets-and-reference-guides/)
+- [https://plantuml.com/](https://plantuml.com/)
+- [https://open-vsx.org/extension/jebbs/plantuml](https://open-vsx.org/extension/jebbs/plantuml)
