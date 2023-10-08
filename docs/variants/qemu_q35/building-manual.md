@@ -94,8 +94,8 @@ Once the build is completed, the OVMF firmware image can be found below given
 path:
 
 ```bash
-edk2/Build/Ovmf/RELEASE_GCC5/FV/OVMF_CODE.fd
-edk2/Build/Ovmf/RELEASE_GCC5/FV/OVMF_VARS.fd
+edk2/Build/Ovmfx64/RELEASE_GCC5/FV/OVMF_CODE.fd
+edk2/Build/Ovmfx64/RELEASE_GCC5/FV/OVMF_VARS.fd
 ```
 
 For debug build use:
@@ -107,6 +107,6 @@ build -a IA32 -a X64 -t GCC5 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc
 Then the resulting files will be placed in:
 
 ```bash
-edk2/Build/Ovmf/DEBUG_GCC5/FV/OVMF_CODE.fd
-edk2/Build/Ovmf/DEBUG_GCC5/FV/OVMF_VARS.fd
+edk2/Build/Ovmfx64/DEBUG_GCC5/FV/OVMF_CODE.fd
+edk2/Build/Ovmfx64/DEBUG_GCC5/FV/OVMF_VARS.fd
 ```
