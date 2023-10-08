@@ -53,8 +53,10 @@ git submodule update --init --checkout
 - Clone the edk2-platforms repository for additional packages
 
 ```bash
-git clone https://github.com/Dasharo/edk2-platforms.git \
-    -b 3323ed481d35096fb6a7eae7b49f35eff00f86cf
+git clone https://github.com/Dasharo/edk2-platforms.git && \
+cd edk2-platforms && \
+git checkout 3323ed481d35096fb6a7eae7b49f35eff00f86cf && \
+cd -
 ```
 
 - Update the PACKAGES_PATH variable
