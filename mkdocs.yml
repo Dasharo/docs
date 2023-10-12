@@ -421,6 +421,7 @@ nav:
               - 'Suspend Mechanism Switching S0ix/S3': unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
               - 'Block boot when battery is low': unified-test-documentation/dasharo-compatibility/359-battery-boot-block.md
               - 'Power State after Power Fail': unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
+              - 'ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
