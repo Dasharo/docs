@@ -14,7 +14,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                      | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                       | EFI           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR010.001, ECR010.002, ECR25.001, ECR26.001, ECR27.001, ECR28.001 |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR021.001, ECR021.002, ECR022.001, ECR022.002, ECR023.001, ECR023.002, ECR024.001, ECR024.002 |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot keys][CBK]                                | CBK           | All                                  |
@@ -42,7 +42,7 @@ subjected from before the release of the new binary.
 | 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001 and SUSP006.001  |
 | 30.  | [Boot blocking][BBB]                                   | BBB           | All                                  |
 | 31.  | [Reset to defaults][RTD]                               | RTD           | All                                  |
-| 32.  | [Suspend mechanism switchcing (S0ix/S3)][SMS]           | SMS           | All                                 |
+| 32.  | [Suspend mechanism switchcing (S0ix/S3)][SMS]          | SMS           | All                                  |
 | 33.  | [Platform hibernation and resume][HBN]                 | HBN           | All                                  |
 | 34.  | [Sign of life][SOL]                                    | SOL           | All                                  |
 | 35.  | [NVIDIA Graphics support][NVI]                         | NVI           | All                                  |
