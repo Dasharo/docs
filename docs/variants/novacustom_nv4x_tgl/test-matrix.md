@@ -46,6 +46,7 @@ subjected from before the release of the new binary.
 | 33.  | [Platform hibernation and resume][HBN]                 | HBN           | All                                  |
 | 34.  | [Sign of life][SOL]                                    | SOL           | All                                  |
 | 35.  | [NVIDIA Graphics support][NVI]                         | NVI           | All                                  |
+| 36.  | [Power after fail][PSF]                                | PSF           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -96,6 +97,8 @@ subjected from before the release of the new binary.
 | 9.   | [Early boot DMA protection][EDP]             | EDP           | All                                  |
 | 10.  | [SMM BIOS write protection][SMM]             | SMM           | All                                  |
 | 11.  | [UEFI Setup password][PSW]                   | PSW           | All                                  |
+| 12.  | [Wi-Fi / Bluetooth switch][WBS]              | WBS           | All                                  |
+| 13.  | [Camera switch][CHS]                         | CHS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
