@@ -3,15 +3,39 @@
 Following Release Notes describe status of Open Source Firmware development for
 QEMU Q35 (Emulator).
 
-## v0.1.0 - 2023-01-20
+## v0.1.0 - 2023-10-13
 
 ### Added
 
-- Enabled TPM Support.
-- Secure Boot Support for Q35 machine.
-- Option to reset Secure Boot keys to defaults.
-- Dasharo System Features.
-- Dasharo setup password.
-- OPAL disk password support.
-- SATA disk password support.
-- SMM Feature enabled.
+- Configurable boot order
+- Configurable boot options
+- [Custom boot menu keys](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key/)
+- [UEFI shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
+- [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
+- [TPM Support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/200-tpm-support/)
+- [PS/2 Controller enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
+- [Watchdog configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
+- [Early boot DMA protection menu option](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20L-early-boot-dma-protection/)
+- [Intel ME disable support and menu options](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20F-me-neuter/)
+- [Dasharo setup password](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20R-uefi-setup-password/)
+- [SED/OPAL disk password support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/208-opal-disk-password-support/)
+- [SATA disk password support](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#hdd-security-configuration)
+- SMM BIOS Write Protection support and enable/disable option
+- [USB stack and mass storage enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
+- [Firmware Update Mode feature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/fan-profiles/)
+- [Setup menu option for switching between S0ix and S3 suspend mode](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+- Serial Port Configuration menu
+- [Wi-Fi / Bluetooth module disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [Built-in webcam disable option in setup menu](https://docs.dasharo.com/unified/novacustom/camera-switch/)
+- [Battery threshold options in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+- [PCIe Configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#pcipcie-configuration)
+- [Memory configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#memory-configuration)
+
+### Binaries
+
+https://github.com/Dasharo/edk2/releases
+
+### SBOM
+
+- [Dasharo EDKII fork based on dd7523b5b1 revision TBD](https://github.com/Dasharo/edk2/tree/TBD)
