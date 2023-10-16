@@ -151,7 +151,8 @@ firmware." How would a user modify firmware without losing the warranty? Being
 open source to be easy to modify, then saying "don't touch this" seems
 contradictory. How would you add an exception?"
 
-Playing with firmware parameters can result in damaging the mainboard. Such
-action excludes the acceptance of the return. You can improve the Dasharo by
-contributing, so we can pass the Dasharo Certification Program and release it in the
-next version.
+Playing with firmware parameters can result in damaging the mainboard. 
+Such action excludes the acceptance of the return.
+
+You can improve Dasharo by contributing, and when it can pass the 
+Dasharo Certification Program, can we release it in the next version.
