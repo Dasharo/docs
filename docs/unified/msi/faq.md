@@ -154,5 +154,5 @@ contradictory. How would you add an exception?"
 Playing with firmware parameters can result in damaging the mainboard. 
 Such action excludes the acceptance of the return.
 
-You can improve Dasharo by contributing, and when it can pass the 
+You can improve Dasharo by contributing, and when it passes the 
 Dasharo Certification Program, can we release it in the next version.
