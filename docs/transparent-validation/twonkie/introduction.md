@@ -49,20 +49,25 @@ Steps to flash firmware to the Twonkie:
 1. While holding the SW1 button on the Twonkie, connect it to your computer using
    a USB micro-B cable
 1. Verify in `lsusb` that the device has booted in DFU mode:
+
    ```bash
    $ lsusb | grep 0483:df11
    Bus 003 Device 083: ID 0483:df11 STMicroelectronics STM Device in DFU Mode
    ```
+
 1. Navigate to the location where you downloaded the firmware
 1. Flash the firmware:
+
    ```bash
    $ sudo dfu-util -a 0 -s 0x08000000 -D ~/Downloads/twonkiev2-20230611.bin
    ```
+
    > The command may take a long time to complete. Do not be alarmed if progress
    > appears to stop.
 1. Disconnect and reconnect the newly flashed Twonkie to reboot it into the
    firmware
 1. Verify in `lsusb` that the device has booted into firmware:
+
    ```bash
    $ lsusb | grep 18d1:500a
    Bus 003 Device 084: ID 18d1:500a Google Inc. Twinkie
@@ -73,9 +78,11 @@ Steps to flash firmware to the Twonkie:
 Sniffing a PD negotiation:
 
 1. Open minicom on Twonkie's console:
+
    ```bash
    $ sudo minicom -D /dev/ttyUSB0
    ```
+
 1. Type in `tw trace on` to start logging
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power sink
 1. Verify that the device is charging and logs appear on the screen
@@ -83,18 +90,23 @@ Sniffing a PD negotiation:
 Measuring voltage and current:
 
 1. Open minicom on Twonkie's console:
+
    ```bash
    $ sudo minicom -D /dev/ttyUSB0
    ```
+
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power sink
 1. Type in `tw vbus` to display the voltage and current measurement
 
 Power sink:
 
 1. Open minicom on Twonkie's console:
+
    ```bash
+
    $ sudo minicom -D /dev/ttyUSB0
    ```
+
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power meter
 1. Type in `tw sink` to enable sink mode - the firmware will reboot at this
    point
