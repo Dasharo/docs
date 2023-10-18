@@ -70,7 +70,7 @@ Steps to flash firmware to the Twonkie:
 
 ### Testing
 
-Sniffing:
+Sniffing a PD negotiation:
 
 1. Open minicom on Twonkie's console:
    ```bash
@@ -80,7 +80,7 @@ Sniffing:
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power sink
 1. Verify that the device is charging and logs appear on the screen
 
-Voltage and current measuring:
+Measuring voltage and current:
 
 1. Open minicom on Twonkie's console:
    ```bash
