@@ -349,6 +349,8 @@ nav:
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
           - 'PiKVM':
               - 'Assembly and validation': transparent-validation/pikvm/assembly-and-validation.md
+          - 'Twonkie':
+              - 'Introduction': transparent-validation/twonkie/introduction.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md
