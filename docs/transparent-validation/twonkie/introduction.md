@@ -24,16 +24,19 @@ For flashing and using the Twonkie, you will need to install `dfu-util` and
 `minicom`. You can find them in your Linux distro's repositories:
 
 === "Ubuntu / Debian"
+
     ```bash
     $ sudo apt install dfu-util minicom
     ```
 
 === "Fedora"
+
     ```bash
     $ sudo dnf install dfu-util minicom
     ```
 
 === "Arch"
+
     ```bash
     $ sudo pacman -S dfu-util minicom
     ```
@@ -98,4 +101,3 @@ Power sink:
 1. Type in `pd 0 dev 20` to set voltage limit to 20V
 1. Verify that the power meter turns on and displays 20V measured at the USB-C
    plug.
-
