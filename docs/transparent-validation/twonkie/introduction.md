@@ -9,7 +9,7 @@ tool, created by Joachim "dojoe" Fenkes, based on Google's Twinkie. It can:
 - Pass through signals at full speed (20Gb/s lanes are verified to work)
 - Send USB-PD packets
 
-Twonkie can be bought in [3mdeb shop](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/).
+Twonkie can be bought in [3mdeb shop](https://shop.3mdeb.com/shop/open-source-hardware/twonkie-usb-c-sniffer/).
 
 Links:
 
