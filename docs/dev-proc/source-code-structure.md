@@ -3,12 +3,12 @@
 Every repository forked and maintained by Dasharo Release Team has following
 branch structure:
 
-* `master` - follows upstream project master branch
+* `master` or `main` - follows upstream project master or main branch
 * `dasharo` - contains all code releases for supported platforms, the list of
    supported platforms is in
   [Hardware Compatibility List](../variants/hardware-compatibility-list.md)
   section
-* `<platform>_rel_vX.Y.Z` - release branch for version X.Y.Z
+* `<platform>/rel_vX.Y.Z` - release branch for version X.Y.Z
 * `<feature>` - tracks development of feature
 
 `<platform> = <coreboot_mainboard_vendor>_<coreboot_mainboard_model>` if
@@ -39,36 +39,28 @@ Dasharo Release tags in git repository use format: `<platform>_vX.Y.Z`
 
 ## New platform support
 
-Branch for new platform should be created from the most recent commit on the
-`dasharo` branch. If there is justified need to create support for new board at
-arbitrary non-tagged commit developer should mark this commit with
-`<platform>_v0.0.0` tag.
+Support for new platforms is submitted via PRs to the `dasharo` branch. All
+mainboards supported by Dasharo live in this branch.
 
 ## Force-pushes rules
 
-Force-pushes to `<platform>_rel_vX.Y.Z` of `<feature>` are forbidden with the
+Force-pushes to `dasharo` and `master` / `main` are forbidden with the
 following exceptions:
 
-* rebasing - when some other PR is merged to target branch before our does, or
-  when upstream's master introduces the same fixes that our branch would
-* squashing - to not produce unnecessary "fix indentation" or "add missing
-  braces" commits to the history
+* rebasing the `dasharo` branch on new coreboot versions
 * (re-)signing commits (both -S and -s) - shouldn't happen, but if it does
   happen it would be better to have it fixed by original author than the person
   that tries to upstream it some time later.
 
-Force-pushes to  `dasharo` branches are allowed only for rebasing on new
-coreboot releases, according to the guidelines outlined in the next step.
-
 ## Rebasing process
 
-1. Update master/main branch to the recent coreboot upstream tag
+1. Update `master` / `main` branch to the recent coreboot upstream tag
    (and fetch tags as well)
 
     ```bash
-    git checkout master
+    git checkout main
     git fetch upstream
-    git pull upstream `git describe --tags upstream/master --abbrev=0`
+    git pull upstream `git describe --tags upstream/main --abbrev=0`
     ```
 
 1. Backup the old `dasharo` branch, for example:
@@ -76,9 +68,10 @@ coreboot releases, according to the guidelines outlined in the next step.
     ```bash
     git checkout dasharo
     git checkout -b common-base-4.21
+    git push -u origin common-base-4.21
     ```
 
-1. rebase the current `dasharo` branch on the latest tag, for example:
+1. Rebase the current `dasharo` branch on the latest tag, for example:
 
     ```bash
     git checkout dasharo
@@ -92,13 +85,12 @@ coreboot releases, according to the guidelines outlined in the next step.
     git checkout -b common-base-4.22
     # resolve issues
     git branch -d dasharo
-    bit branch -M dasharo
+    git branch -M dasharo
     ```
 
-1. Push the new `dasharo` branch and a backup of the old branch:
+1. Push the new `dasharo` branch:
 
     ```bash
-    git push origin common-base-4.21
     git push -f origin dasharo
     ```
 
@@ -139,12 +131,12 @@ The procedure of merging is as follows:
    is not properly rebased on top of the target (in this case: `dasharo`)
    branch. In such a case, one must rebase the source branch first:
 
-   ```bash
-   git checkout origin/<feature>
-   git checkout -b <feature>
-   git rebase origin/dasharo
-   git push -f origin <feature>
-   ```
+    ```bash
+    git checkout origin/<feature>
+    git checkout -b <feature>
+    git rebase origin/dasharo
+    git push -f origin <feature>
+    ```
 
 > Remember to push the rebased branch _before_ merging it to `dasharo`.
 > Otherwise GitHub will not properly detect the merge and won't close the PR
