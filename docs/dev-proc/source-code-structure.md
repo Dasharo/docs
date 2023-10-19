@@ -4,14 +4,12 @@ Every repository forked and maintained by Dasharo Release Team has following
 branch structure:
 
 * `master` - follows upstream project master branch
-* `dasharo/release` - contains all code releases for supported platforms, the
-  list of supported platforms is in
+* `dasharo` - contains all code releases for supported platforms, the list of
+   supported platforms is in
   [Hardware Compatibility List](../variants/hardware-compatibility-list.md)
   section
-* `dasharo/<platform>_rel_vX.Y.Z` - release branch for version X.Y.Z
-* `dasharo/develop` - contains most recent development and is periodically
-  synced with tagged releases from the `master` branch.
-* `<platform>/<feature>` - tracks development of platform specific feature
+* `<platform>_rel_vX.Y.Z` - release branch for version X.Y.Z
+* `<feature>` - tracks development of feature
 
 `<platform> = <coreboot_mainboard_vendor>_<coreboot_mainboard_model>` if
 platform is supported by coreboot, otherwise we use common sense and available
@@ -32,6 +30,7 @@ Clone the repository and submodules using the following commands:
 git clone git@github.com:Dasharo/coreboot.git
 cd coreboot
 git submodule update --init --checkout
+git remote add upstream https://review.coreboot.org/coreboot.git
 ```
 
 ## Tags
@@ -41,14 +40,14 @@ Dasharo Release tags in git repository use format: `<platform>_vX.Y.Z`
 ## New platform support
 
 Branch for new platform should be created from the most recent commit on the
-`dasharo/develop` branch. If there is justified need to create support for new
-board at arbitrary non-tagged commit developer should mark this commit with
+`dasharo` branch. If there is justified need to create support for new board at
+arbitrary non-tagged commit developer should mark this commit with
 `<platform>_v0.0.0` tag.
 
 ## Force-pushes rules
 
-Force-pushes to `dasharo/<platform>_rel_vX.Y.Z`, `dasharo/develop`,
-or `<platform>/<feature>` are forbidden with following exceptions:
+Force-pushes to `<platform>_rel_vX.Y.Z` of `<feature>` are forbidden with the
+following exceptions:
 
 * rebasing - when some other PR is merged to target branch before our does, or
   when upstream's master introduces the same fixes that our branch would
@@ -58,7 +57,51 @@ or `<platform>/<feature>` are forbidden with following exceptions:
   happen it would be better to have it fixed by original author than the person
   that tries to upstream it some time later.
 
-Force-pushes to  `<platform>/release` branches are unconditionally forbidden.
+Force-pushes to  `dasharo` branches are allowed only for rebasing on new
+coreboot releases, according to the guidelines outlined in the next step.
+
+## Rebasing process
+
+1. Update master/main branch to the recent coreboot upstream tag
+   (and fetch tags as well)
+
+    ```bash
+    git checkout master
+    git fetch upstream
+    git pull upstream `git describe --tags upstream/master --abbrev=0`
+    ```
+
+1. Backup the old `dasharo` branch, for example:
+
+    ```bash
+    git checkout dasharo
+    git checkout -b common-base-4.21
+    ```
+
+1. rebase the current `dasharo` branch on the latest tag, for example:
+
+    ```bash
+    git checkout dasharo
+    git rebase 4.22
+    ```
+
+    If there are problems with rebase, you may create a different branch, e.g.
+    `common-base-4.22` and work until all issues are resolved, then rename the
+    branch back to dasharo
+    ```bash
+    git checkout -b common-base-4.22
+    # resolve issues
+    git branch -d dasharo
+    bit branch -M dasharo
+    ```
+
+1. Push the new `dasharo` branch and a backup of the old branch:
+
+    ```bash
+    git push origin common-base-4.21
+    git push -f origin dasharo
+    ```
+
 
 ## Merging guidelines
 
@@ -80,29 +123,29 @@ The procedure of merging is as follows:
 1. Make sure to receive at least one `Approve` in the review process.
 1. Make sure that **all** change requests are resolved.
 1. Merge the branch using git CLI. In case of merging the `feature` branch into
-   `develop` branch it may look as follows:
+   `dasharo` branch it may look as follows:
 
     ```bash
     git fetch dasharo
-    git checkout origin/dasharo/develop -b dasharo/develop
-    git merge --ff-only origin/<platform>/<feature>
-    git push origin dasharo/develop
+    git checkout origin/dasharo -b dasharo
+    git merge --ff-only origin/<feature>
+    git push origin dasharo
     ```
 
 1. This should automatically trigger closing the MR and deleting the merged
    branch on GitHub.
 
 1. Note that the merging may fail if the source (in this case: `feature`) branch
-   is not properly rebased on top of the target (in this case: `develop`)
+   is not properly rebased on top of the target (in this case: `dasharo`)
    branch. In such a case, one must rebase the source branch first:
 
    ```bash
-   git checkout origin/<platform>/<feature>
-   git checkout -b <platform>/<feature>
-   git rebase origin/dasharo/develop
-   git push -f origin <platform>/<feature>
+   git checkout origin/<feature>
+   git checkout -b <feature>
+   git rebase origin/dasharo
+   git push -f origin <feature>
    ```
 
-> Remember to push the rebased branch _before_ merging it to `dasharo/develop`.
+> Remember to push the rebased branch _before_ merging it to `dasharo`.
 > Otherwise GitHub will not properly detect the merge and won't close the PR
 > and delete the source branch.
