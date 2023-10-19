@@ -45,14 +45,9 @@ mainboards supported by Dasharo live in this branch.
 ## Force-pushes rules
 
 Force-pushes to `dasharo` and `master` / `main` are forbidden with the
-following exceptions:
+exception of rebasing the `dasharo` branch on new coreboot versions.
 
-* rebasing the `dasharo` branch on new coreboot versions
-* (re-)signing commits (both -S and -s) - shouldn't happen, but if it does
-  happen it would be better to have it fixed by original author than the person
-  that tries to upstream it some time later.
-
-## Rebasing process
+## Rebase process
 
 1. Update `master` / `main` branch to the recent coreboot upstream tag
    (and fetch tags as well)
