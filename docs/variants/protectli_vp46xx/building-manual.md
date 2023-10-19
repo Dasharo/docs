@@ -18,20 +18,17 @@ VP4630, VP4650 and VP4670.
 > FSP, and ME. Currently, access to them is restricted to the OEM (Protectli) via
 > a private repository.
 
-Since version v1.0.18 VP4630 and VP4650 use different configuration file than
-VP4670. Versions v1.0.17 and older do not support VP4650 and VP4670 at all.
-
 1. Clone the coreboot repository:
 
     ```bash
     git clone https://github.com/Dasharo/coreboot
     ```
 
-1. Checkout the desired version, e.g. `v1.0.19`:
+1. Checkout the desired version, e.g. `v1.1.0`:
 
     ```bash
     cd coreboot
-    git checkout protectli_vault_cml_v1.0.19
+    git checkout protectli_vault_cml_v1.1.0
     ```
 
 1. Checkout submodules:
@@ -50,24 +47,15 @@ VP4670. Versions v1.0.17 and older do not support VP4650 and VP4670 at all.
     cd 3rdparty/blobs/mainboard/
     git init
     git remote add origin <PROTECTLI_BLOBS_REPO>
-    git fetch origin && git checkout protectli_vault_cml_v1.0.19
+    git fetch origin && git checkout protectli_vault_cml_v1.1.0
     cd -
     ```
 
-1. Build the firmware v1.0.19 or newer:
+1. Build the firmware v1.1.0 or newer:
 
-    + for VP4630 and VP4650
-
-        ```bash
-        ./build.sh vp4630_vp4650
-        ```
-
-    + for VP4670
-
-        ```bash
-        ./build.sh vp4670
-        ```
+    ```bash
+    ./build.sh vp46xx
+    ```
 
 The resulting coreboot image will be placed in the coreboot directory as
-`protectli_vault_cml_<version>_vp4630_vp4650.rom` or
-`protectli_vault_cml_<version>_vp4670.rom` respectvely.
+`protectli_vault_cml_<version>_vp46xx.rom`.
