@@ -81,6 +81,7 @@ following exceptions:
     If there are problems with rebase, you may create a different branch, e.g.
     `common-base-4.22` and work until all issues are resolved, then rename the
     branch back to dasharo
+
     ```bash
     git checkout -b common-base-4.22
     # resolve issues
@@ -93,7 +94,6 @@ following exceptions:
     ```bash
     git push -f origin dasharo
     ```
-
 
 ## Merging guidelines
 
