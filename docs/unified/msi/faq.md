@@ -29,6 +29,16 @@ Yes, during test procedures the Dasharo firmware work has been confirmed for
 the DDR4 WIFI platform. In turn, Dasharo working correctness on
 `MSI PRO Z690-A DDR4` has been confirmed by the community.
 
+## Can I safely test this on my board?
+
+Thanks to the introduction of FlashBIOS, it's now safe to experiment with this
+on your board. If any issues arise, you can effortlessly revert to the stock
+firmware without requiring special equipment. However, if you're unfamiliar
+with [recovery processes](recovery.md) and feel apprehensive, please [contact
+the Dasharo Matrix Community](https://matrix.to/#/#dasharo:matrix.org) for
+assistance. We're continuously working to simplify the recovery process, and
+our recommendations may be updated accordingly.
+
 ## Can I destroy my hardware by installing this firmware?
 
 We give no warranty, although it is highly unlikely, provided that you use the
