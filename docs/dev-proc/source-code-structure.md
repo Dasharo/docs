@@ -140,4 +140,5 @@ The procedure of merging is as follows:
 
 > Remember to push the rebased branch _before_ merging it to `dasharo`.
 > Otherwise GitHub will not properly detect the merge and won't close the PR
-> and delete the source branch.
+> and delete the source branch. You should also wait for CI to pass without
+> errors before merging, in rare cases where a rebase breaks something.
