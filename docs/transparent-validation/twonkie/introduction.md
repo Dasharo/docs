@@ -1,4 +1,4 @@
-# Introduction
+# Twonkie Introduction
 
 Twonkie is an open source USB Power Delivery protocol sniffer and debugging
 tool, created by Joachim "dojoe" Fenkes, based on Google's Twinkie. It can:
@@ -75,7 +75,7 @@ Steps to flash firmware to the Twonkie:
 
 ### Testing
 
-Sniffing a PD negotiation:
+#### Sniffing a PD negotiation:
 
 1. Open minicom on Twonkie's console:
 
@@ -87,7 +87,7 @@ Sniffing a PD negotiation:
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power sink
 1. Verify that the device is charging and logs appear on the screen
 
-Measuring voltage and current:
+#### Measuring voltage and current:
 
 1. Open minicom on Twonkie's console:
 
@@ -98,7 +98,7 @@ Measuring voltage and current:
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power sink
 1. Type in `tw vbus` to display the voltage and current measurement
 
-Power sink:
+#### Power sink:
 
 1. Open minicom on Twonkie's console:
 
