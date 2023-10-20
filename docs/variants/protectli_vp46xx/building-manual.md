@@ -51,11 +51,35 @@ VP4630, VP4650 and VP4670.
     cd -
     ```
 
-1. Build the firmware v1.1.0 or newer:
+1. Build the firmware v1.1.1 or newer:
 
-    ```bash
-    ./build.sh vp46xx
-    ```
+    === "v1.1.1 or newer"
 
-The resulting coreboot image will be placed in the coreboot directory as
-`protectli_vault_cml_<version>_vp46xx.rom`.
+        ```bash
+        ./build.sh vp46xx
+        ```
+
+        The resulting coreboot image will be placed in the coreboot directory as
+        `protectli_vault_cml_<version>_vp46xx.rom`.
+
+
+    === "V1.1.0 or older"
+
+        === "VP4630 and VP4650"
+
+            ```bash
+            ./build.sh vp4630_vp4650
+            ```
+
+            The resulting coreboot image will be placed in the coreboot
+            directory as `protectli_vault_cml_<version>_vp4630_vp4650.rom`.
+
+        === "VP4670"
+
+            ```bash
+            ./build.sh vp4670
+            ```
+
+            The resulting coreboot image will be placed in the coreboot
+            directory as `protectli_vault_cml_<version>_vp4670.rom`.
+
