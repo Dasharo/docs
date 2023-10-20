@@ -67,7 +67,6 @@ Versions v1.1.1 and newer support all variants with a single binary.
         The resulting coreboot image will be placed in the coreboot directory as
         `protectli_vault_cml_<version>_vp46xx.rom`.
 
-
     === "V1.1.0 or older"
 
         === "VP4630 and VP4650"
@@ -87,4 +86,3 @@ Versions v1.1.1 and newer support all variants with a single binary.
 
             The resulting coreboot image will be placed in the coreboot
             directory as `protectli_vault_cml_<version>_vp4670.rom`.
-
