@@ -51,7 +51,8 @@ for the NV41 platforms.
 | **Flash memory**               | GigaDevice 25B127DSIG 16 MB                      |
 | **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
 | **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
-| **Wireless card**              | Intel Wi-Fi 6 AX201                              |
+| **Wireless card 1**            | Intel Wi-Fi 6 AX201                              |
+| **Wireless card 2**            | Atheros QCNFA222                                 |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
