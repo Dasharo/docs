@@ -18,6 +18,11 @@ VP4630, VP4650 and VP4670.
 > FSP, and ME. Currently, access to them is restricted to the OEM (Protectli) via
 > a private repository.
 
+Since version v1.0.18 VP4630 and VP4650 use different configuration file than
+VP4670. Versions v1.0.17 and older do not support VP4650 and VP4670 at all.
+
+Versions v1.1.1 and newer support all variants with a single binary.
+
 1. Clone the coreboot repository:
 
     ```bash
