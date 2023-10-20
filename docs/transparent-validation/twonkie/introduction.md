@@ -77,7 +77,6 @@ Steps to flash firmware to the Twonkie:
 
 #### Sniffing a PD negotiation
 
-
 1. Open minicom on Twonkie's console:
 
     ```bash
@@ -91,7 +90,7 @@ Steps to flash firmware to the Twonkie:
 
 Example output:
 
-```
+```bash
 > tw trace on
 33.754913 SRC/0 [41a1]SRCCAP 5000mV/3000mA 9000mV/3000mA 15000mV/3000mA 20000mV/3250mA
 33.906189 SRC/0 [41a1]SRCCAP 5000mV/3000mA 9000mV/3000mA 15000mV/3000mA 20000mV/3250mA
@@ -126,7 +125,7 @@ Example output:
 
 Example output:
 
-```
+```bash
 > tw vbus
 VBUS = 20112 mV ; -1274 mA
 ```
