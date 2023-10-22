@@ -53,8 +53,10 @@ git submodule update --init --checkout
 - Clone the edk2-platforms repository for additional packages
 
 ```bash
-git clone https://github.com/Dasharo/edk2-platforms.git \
-    -b 3323ed481d35096fb6a7eae7b49f35eff00f86cf
+git clone https://github.com/Dasharo/edk2-platforms.git && \
+cd edk2-platforms && \
+git checkout 3323ed481d35096fb6a7eae7b49f35eff00f86cf && \
+cd -
 ```
 
 - Update the PACKAGES_PATH variable
@@ -92,8 +94,8 @@ Once the build is completed, the OVMF firmware image can be found below given
 path:
 
 ```bash
-edk2/Build/Ovmf/RELEASE_GCC5/FV/OVMF_CODE.fd
-edk2/Build/Ovmf/RELEASE_GCC5/FV/OVMF_VARS.fd
+edk2/Build/Ovmfx64/RELEASE_GCC5/FV/OVMF_CODE.fd
+edk2/Build/Ovmfx64/RELEASE_GCC5/FV/OVMF_VARS.fd
 ```
 
 For debug build use:
@@ -105,6 +107,6 @@ build -a IA32 -a X64 -t GCC5 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc
 Then the resulting files will be placed in:
 
 ```bash
-edk2/Build/Ovmf/DEBUG_GCC5/FV/OVMF_CODE.fd
-edk2/Build/Ovmf/DEBUG_GCC5/FV/OVMF_VARS.fd
+edk2/Build/Ovmfx64/DEBUG_GCC5/FV/OVMF_CODE.fd
+edk2/Build/Ovmfx64/DEBUG_GCC5/FV/OVMF_VARS.fd
 ```
