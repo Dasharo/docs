@@ -24,12 +24,11 @@ Obtain Dasharo source code:
 
 > Replace the `REVISION` with one of the:
 >
-> - `qemu_q35_vVERSION` (e.g. `qemu_q35_v0.1.0`) for the given release
-> - `qemu_q35_vVERSION-rcN` (e.g. `qemu_q35_v0.1.0-rc1`) for the given release
+> * `qemu_q35_vVERSION` (e.g. `qemu_q35_v0.1.0`) for the given release
+> * `qemu_q35_vVERSION-rcN` (e.g. `qemu_q35_v0.1.0-rc1`) for the given release
 >   candidate
 
 Clone Dasharo EDK II fork:
-
 
 ```bash
 git clone https://github.com/Dasharo/edk2.git -b REVISION
@@ -104,7 +103,7 @@ build -a IA32 -a X64 -t GCC5 -b RELEASE -p OvmfPkg/OvmfPkgX64.dsc
 
 Once the build is completed you should see output as follows:
 
-```
+```text
 GUID cross reference file can be found at /home/coreboot/edk2/Build/OvmfX64/RELEASE_GCC5/FV/Guid.xref
 
 FV Space Information
