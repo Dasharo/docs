@@ -178,7 +178,7 @@ docker run --rm -it -v $PWD/../edk2:/home/coreboot/edk2 \
     /bin/bash
 ```
 
-Export corss compiler prefix:
+Export cross compiler prefix:
 
 ```bash
 export CROSS_COMPILE="x86_64-elf-"

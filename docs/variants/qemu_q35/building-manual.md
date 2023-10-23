@@ -129,4 +129,5 @@ The Dasharo firmware image can be found below given path:
 Now you can proceed with initial deployment scenario according to you needs:
 
 * Dasharo validation - if you want to use binaries for validation purposes.
-* [Dasharo development](../development) - if you want to use binaries in development environment
+* [Dasharo development](../development) - if you want to use binaries in
+  development environment
