@@ -1,6 +1,6 @@
 # Firmware Update
 
-The update process of Dasharo OVMF firmware on QEMU Q35 does not need any
+The update process of Dasharo (UEFI) firmware on QEMU Q35 does not need any
 special actions. QEMU Q35 is an emulated platform, not real hardware.
 
 Updating the Dasharo OVMF firmware is as simple as invoking a QEMU command
