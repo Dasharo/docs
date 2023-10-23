@@ -13,3 +13,11 @@ qemu-system-x86_64 -machine q35,smm=on \
 	-debugcon file:debug.log -global isa-debugcon.iobase=0x402 \
 	-global ICH9-LPC.disable_s3=1
 ```
+
+If you use system without graphical output you may faces following issues:
+
+```text
+gtk initialization failed
+```
+
+In such case add `-nographic` at the end of your command.
