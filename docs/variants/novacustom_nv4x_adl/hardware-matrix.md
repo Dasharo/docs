@@ -51,7 +51,8 @@ for the NV41 platforms.
 | **Flash memory**               | Macronix MX25L25673GZ4I-08G                      |
 | **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
 | **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
-| **Wireless card**              | Intel Wi-Fi 6 AX201                              |
+| **Wireless card 1**            | Intel Wi-Fi 6 AX201                              |
+| **Wireless card 2**            | Atheros QCNFA222                                 |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
 | **Internal devices**           | 1. 1920x1080 14 inch screen                      |
@@ -62,3 +63,5 @@ for the NV41 platforms.
 | **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
 |                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
+| **Power Control**              | SonOff S26                                       |
+| **KVM**                        | PiKVM based on Raspberry Pi 4                    |

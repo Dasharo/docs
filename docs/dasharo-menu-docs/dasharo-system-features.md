@@ -40,6 +40,9 @@ This menu offers security-sensitive options like:
 - `Enable Wi-Fi + BT radios` - (applicable to laptops) - Enables or disables
   radios for Wi-Fi and Bluetooth. When disabled, the slot is unconfigured and
   power to the wireless module is disconnected.
+- `Enable Camera` - (applicable to laptops) - Enables or disables the integrated
+  camera. When disabled, power to the camera is disconnected and the camera can
+  not be enabled using the keyboard camera hotkey from the OS.
 
 ## Networking Options
 

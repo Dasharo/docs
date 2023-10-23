@@ -112,7 +112,6 @@ nav:
           - 'Fn lock hotkey': unified/novacustom/fn-lock-hotkey.md
           - 'Battery management': unified/novacustom/battery-management.md
           - 'Fan profiles': unified/novacustom/fan-profiles.md
-          - 'Camera switch': unified/novacustom/camera-switch.md
           - 'Firmware update using fwupd': unified/novacustom/fwupd-usage.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
@@ -350,6 +349,8 @@ nav:
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
           - 'PiKVM':
               - 'Assembly and validation': transparent-validation/pikvm/assembly-and-validation.md
+          - 'Twonkie':
+              - 'Introduction': transparent-validation/twonkie/introduction.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md

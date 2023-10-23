@@ -12,10 +12,10 @@ subjected before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                      | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                       | EFI           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.001, DSP002.002 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR010.001, ECR010.002, ECR25.001, ECR26.001, ECR27.001, ECR28.001 |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | All                                  |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
-| 7.   | [Custom boot menu key][CBK]                            | CBK           | All                                  |
+| 7.   | [Custom boot keys][CBK]                                | CBK           | All                                  |
 | 8.   | [USB HID and MSC Support][USB]                         | USB           | All                                  |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]            | LBT           | LBT004.001, LBT004.002               |
 | 10.  | [UEFI Shell][USH]                                      | USH           | All                                  |
@@ -37,9 +37,13 @@ subjected before the release of the new binary.
 | 26.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
 | 27.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 | 28.  | [Fedora support][FED]                                  | FED           | All                                  |
-| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001 |
-| 30.  | [Sign of life][SOL]                                    | SOL           | All                                  |
-| 31.  | [BIOS menu function keys][BMF]                         | BMF           | All                                  |
+| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001 and SUSP006.001  |
+| 30.  | [Boot blocking][BBB]                                   | BBB           | All                                  |
+| 31.  | [Reset to defaults][RTD]                               | RTD           | All                                  |
+| 32.  | [Suspend mechanism switchcing (S0ix/S3)][SMS]          | SMS           | All                                 |
+| 33.  | [Platform hibernation and resume][HBN]                 | HBN           | All                                  |
+| 34.  | [Sign of life][SOL]                                    | SOL           | All                                  |
+| 35.  | [Power after fail][PSF]                                | PSF           | All                                  |
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -70,10 +74,9 @@ subjected before the release of the new binary.
 [QBS]: ../../unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
 [FED]: ../../unified-test-documentation/dasharo-compatibility/310-fedora-support.md
 [SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
-[SOL]: ../../unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
-[MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
-[BMF]: ../../unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
+[BBB]: ../../unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
 [SMS]: ../../unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
+[SOL]: ../../unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
 
 ## Module: Dasharo security
 
@@ -84,12 +87,27 @@ subjected before the release of the new binary.
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
 | 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE006.001                   |
+| 6.   | [USB stack][USS]                             | USS           | All                                  |
+| 7.   | [Network boot availability][PXE]             | PXE           | All                                  |
+| 8.   | [BIOS lock support][BLS]                     | BLS           | All                                  |
+| 9.   | [Early boot DMA protection][EDP]             | EDP           | All                                  |
+| 10.  | [SMM BIOS write protection][SMM]             | SMM           | All                                  |
+| 11.  | [UEFI Setup password][PSW]                   | PSW           | All                                  |
+| 12.  | [Wi-Fi / Bluetooth switch][WBS]              | WBS           | All                                  |
+| 13.  | [Camera switch][CHS]                         | CHS           | All                                  |
 
 [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
 [MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
+[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 [MNE]: ../../unified-test-documentation/dasharo-security/20F-me-neuter.md
+[USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
+[PXE]: ../../unified-test-documentation/dasharo-security/20T-network-boot.md
+[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+[EDP]: ../../unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
+[PSW]: ../../unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
 
 ## Module: Dasharo performance
 
@@ -114,7 +132,8 @@ subjected before the release of the new binary.
 | 1.   | [USB Type-A devices detection][SUD]               | SUD           | All                                  |
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
-| 4.   | [NET interface after coldboot/warmboot/reboot/suspend][NET] | NET | All                                  |
+| 4.   | [NET interface detection][NET]                    | NET           | All                                  |
+| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.001, TPD004.001               |
 
 [SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
