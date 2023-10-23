@@ -123,3 +123,10 @@ The Dasharo firmware image can be found below given path:
 /home/coreboot/edk2/Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd
 /home/coreboot/edk2/Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd
 ```
+
+## Initial Deployment
+
+Now you can proceed with initial deployment scenario according to you needs:
+
+* Dasharo validation - if you want to use binaries for validation purposes.
+* [Dasharo development](../development) - if you want to use binaries in development environment
