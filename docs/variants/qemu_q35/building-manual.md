@@ -37,7 +37,7 @@ git clone https://github.com/Dasharo/edk2.git -b REVISION
 Clone Dasharo EDK II Platforms fork:
 
 ```bash
-git clone https://github.com/Dasharo/edk2-platforms.git -b REVISION
+git clone https://github.com/Dasharo/edk2-platforms.git -b v0.9.0
 ```
 
 Initialize submodules:
