@@ -279,6 +279,8 @@ References & Projects:
 * [https://wiki.tizen.org/SDWire](https://wiki.tizen.org/SDWire)
 * [Ethernet camera module build – Automated flashing](https://www.kurokesu.com/main/2022/08/02/ethernet-camera-module-build-log-5-automated-flashing/)
 * [SD Wire & 3d Printer Usage](https://github.com/arekm/OctoPrint-Sdwire)
+* [sd-mux-ctrl in Debian](https://perezmeyer.com.ar/blog/2023/09/28/sd-mux-ctrl_in_debian/)
+by Lisandro Damián Nicanor Pérez Meyer
 
 [tizen]: https://git.tizen.org/cgit/tools/testlab/sd-mux/
 [shop1]: https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/
