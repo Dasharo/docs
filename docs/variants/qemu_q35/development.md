@@ -174,7 +174,7 @@ Start the instance of the docker image under the Dasharo/edk2 repository:
 docker run --rm -it -v $PWD/../edk2:/home/coreboot/edk2 \
     -v $PWD/../edk2-platforms:/home/coreboot/edk2-platforms \
     -v $PWD:/home/coreboot/ipxe \
-    -w /home/coreboot/ipxe coreboot/coreboot-sdk:2022-12-18_3b32af950d \
+    -w /home/coreboot/ipxe coreboot/coreboot-sdk:2021-09-23_b0d87f753c \
     /bin/bash
 ```
 
