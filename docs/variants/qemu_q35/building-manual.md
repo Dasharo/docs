@@ -34,13 +34,7 @@ Clone Dasharo EDK II fork:
 git clone https://github.com/Dasharo/edk2.git -b REVISION
 ```
 
-Clone Dasharo EDK II Platforms fork:
-
-```bash
-git clone https://github.com/Dasharo/edk2-platforms.git -b v0.9.0
-```
-
-Initialize submodules:
+Change directory:
 
 ```bash
 cd edk2
@@ -52,19 +46,89 @@ Update the submodules in order get latest dependencies.
 git submodule update --init --checkout --recursive
 ```
 
-Obtain the docker image:
+Change directory:
 
 ```bash
-docker pull coreboot/coreboot-sdk:2021-09-23_b0d87f753c
+cd ..
 ```
+
+Clone Dasharo EDK II Platforms fork:
+
+```bash
+git clone https://github.com/Dasharo/edk2-platforms.git -b v0.9.0
+```
+
+Clone iPXE:
+
+```bash
+git clone https://git.ipxe.org/ipxe.git
+```
+
+### Build iPXE
+
+Change directory:
+
+```bash
+cd ipxe
+```
+
+Checkout stable commit (2023.8 used by coreboot)
+
+```bash
+git checkout 4bffe0f0d9d0e1496ae5cfb7579e813277c29b0f
+```
+
+#### Enabled Dasharo script
+
+```bash
+sed -i 's|//#define\s*IMAGE_SCRIPT.*|#define IMAGE_SCRIPT|' "src/config/general.h"
+```
+
+Get the script:
+
+```bash
+wget https://raw.githubusercontent.com/Dasharo/dasharo-blobs/main/dasharo/dasharo.ipxe
+```
+
+#### Enabled HTTPS
+
+```bash
+sed -i 's|.*DOWNLOAD_PROTO_HTTPS|#define DOWNLOAD_PROTO_HTTPS|g'  "src/config/general.h"
+```
+
+#### Compile
 
 Start the instance of the docker image under the Dasharo/edk2 repository:
 
 ```bash
-docker run --rm -it -v $PWD:/home/coreboot/edk2 \
+docker run --rm -it -v $PWD/../edk2:/home/coreboot/edk2 \
     -v $PWD/../edk2-platforms:/home/coreboot/edk2-platforms \
-    -w /home/coreboot/edk2 coreboot/coreboot-sdk:2021-09-23_b0d87f753c \
+    -v $PWD:/home/coreboot/ipxe \
+    -w /home/coreboot/ipxe coreboot/coreboot-sdk:2021-09-23_b0d87f753c \
     /bin/bash
+```
+
+Export cross compiler prefix:
+
+```bash
+export CROSS_COMPILE="x86_64-elf-"
+```
+
+Compile:
+
+```bash
+make -C src bin-x86_64-efi-sb/ipxe.efi EMBED=$PWD/dasharo.ipxe BUILD_ID_CMD="echo 0x1234567890" \
+    EXTRA_CFLAGS="-Wno-address-of-packed-member  -m64  -fuse-ld=bfd \
+    -Wl,--build-id=none -fno-delete-null-pointer-checks -Wlogical-op -march=nocona \
+    -malign-data=abi -mcmodel=large -mno-red-zone -fno-pic"
+```
+
+#### Build EDK II
+
+Change directory:
+
+```bash
+cd ../edk2
 ```
 
 Setup the environment variables with the following command
@@ -84,6 +148,7 @@ Update the PACKAGES_PATH variable:
 ```bash
 export EDK2_PLATFORMS_PATH="$HOME/edk2-platforms"
 export PACKAGES_PATH="$WORKSPACE:\
+$HOME/ipxe/src/bin-x86_64-efi-sb/:\
 $EDK2_PLATFORMS_PATH/Platform/Intel:\
 $EDK2_PLATFORMS_PATH/Silicon/Intel:\
 $EDK2_PLATFORMS_PATH/Features/Intel:\
