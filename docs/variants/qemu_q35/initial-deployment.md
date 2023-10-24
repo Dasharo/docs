@@ -14,7 +14,7 @@ qemu-system-x86_64 -machine q35,smm=on \
 	-global ICH9-LPC.disable_s3=1
 ```
 
-If you use system without graphical output you may faces following issues:
+If you use system without graphical output you may face following issues:
 
 ```text
 gtk initialization failed
