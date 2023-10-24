@@ -218,6 +218,7 @@ Update the PACKAGES_PATH variable
 ```bash
 export EDK2_PLATFORMS_PATH="$HOME/edk2-platforms"
 export PACKAGES_PATH="$WORKSPACE:\
+$HOME/ipxe/src/bin-x86_64-efi-sb/:\
 $EDK2_PLATFORMS_PATH/Platform/Intel:\
 $EDK2_PLATFORMS_PATH/Silicon/Intel:\
 $EDK2_PLATFORMS_PATH/Features/Intel:\
