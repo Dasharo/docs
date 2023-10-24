@@ -163,7 +163,7 @@ $EDK2_PLATFORMS_PATH/Features/Intel/UserInterface"
 To build the image simply invoke the following command
 
 ```bash
-build -a IA32 -a X64 -t GCC5 -b RELEASE -p OvmfPkg/OvmfPkgX64.dsc
+build -a IA32 -a X64 -t GCC5 -b RELEASE -p OvmfPkg/OvmfPkgX64.dsc --pcd gUefiPayloadPkgTokenSpaceGuid.PcdiPXEOptionName=L"iPXE Network Boot"
 ```
 
 Once the build is completed you should see output as follows:
