@@ -11,7 +11,7 @@ This nomenclature is the result of the naming used by the producer.
 `MSI PRO Z690-A` is the nomenclature used for naming the platform with
 DDR5 memory slots. If the platform is also equipped with the WiFi module, its
 naming nomenclature will additionally include the phrase `WIFI`. If instead of
-DDR5 memory slots, the platform is equipped with DDR4 memory slots, its naming
+DDR5 memory slots, the platform is equipped with DDR4 memory slots, and its naming
 nomenclature will additionally include the phrase `DDR4`.
 
 ## Will this work on my `MSI PRO Z690-A` (model with DDR5 support)?
@@ -19,23 +19,21 @@ nomenclature will additionally include the phrase `DDR4`.
 Yes, during test procedures the Dasharo firmware work has been confirmed for
 the DDR5 platform without WIFI.
 
-Dasharo working correctness has not been tested on `MSI PRO Z690-A WIFI`.
-However, given that the difference is only the WiFi module, there should be no
-problems using Dasharo on it as well.
-
 ## Will this work on my `MSI PRO Z690-A DDR4`?
 
 Yes, during test procedures the Dasharo firmware work has been confirmed for
 the DDR4 WIFI platform. In turn, Dasharo working correctness on
 `MSI PRO Z690-A DDR4` has been confirmed by the community.
 
-## Can I safely try this on my board?
+## Can I safely test this on my board?
 
-If you are afraid of bricking the board and have no means of [recovering from
-failed installation](recovery.md), we **do not recommend** trying it out until
-at least the v1.0.0 is released. Recovery process is not suitable for
-inexperienced users right now. We will be trying to make it easier, and if that
-happens, we may change our recommendation here.
+Thanks to the introduction of FlashBIOS, it's now safe to experiment with this
+on your board. If any issues arise, you can effortlessly revert to the stock
+firmware without requiring special equipment. However, if you're unfamiliar
+with [recovery processes](recovery.md) and feel apprehensive, please [contact
+the Dasharo Matrix Community](https://matrix.to/#/#dasharo:matrix.org) for
+assistance. We're continuously working to simplify the recovery process, and
+our recommendations may be updated accordingly.
 
 ## Can I destroy my hardware by installing this firmware?
 
@@ -52,14 +50,14 @@ channel.
 
 ## How can I know if the board is "bricked"?
 
-In such a case, you would get stuck with black screen on the display. There will
+In such a case, you would get stuck with a black screen on the display. There will
 be no beeping sounds from the buzzer as well. The only way to get some
 information on what's going on in that state is to use the [Serial
 header](development.md#hardware-connection) to read out error information.
 
-## What can be the reason of board "bricking"?
+## What can be the reason for a board "bricking"?
 
-The most common reason would be the fact that you DDR memory modules are not
+The most common reason would be the fact that your DDR memory modules are not
 initialized properly.
 
 The other reason might be improper or interrupted installation. Please make sure
@@ -71,7 +69,7 @@ Please follow the [recovery procedure](recovery.md).
 
 ## Which CPUs are supported?
 
-We can say the "supported" one is the one that have been tested during
+We can say the "supported" one is the one that has been tested during
 Validation Procedure or have been tested by the community.
 
 The list of all supported CPUs is available in the [CPU HCL](hcl.md)
@@ -79,12 +77,9 @@ documentation.
 
 In practice, any Alder Lake-S Processor should work.
 
-12900KS is rather unknown at the moment, because it was released later and may
-require more recent microcode.
-
 ## Which memory modules are supported?
 
-We can say the "supported" one is the one that have been tested during
+We can say the "supported" one is the one that has been tested during
 Validation Procedure or have been tested by the community.
 
 The list of all supported memory modules is available in the
@@ -92,16 +87,16 @@ The list of all supported memory modules is available in the
 
 ## What is the memory profile?
 
-Currently, Dasharo firmware picks the highest standard SPD Profile, no support
-for XMP ones. This means that on the Kingston modules it is actually working at
+Dasharo firmware currently picks the highest standard SPD Profile, with no support
+for XMP ones. This means that the Kingston modules, it is actually working at
 2400 MHz, but it is expected to work all the way to 3200 MHz.
 
 ## Why my GPU doesn't work on `MSI PRO Z690-A (DDR4) (WIFI)`?
 
 Due to the fact, that there's no possibility to insert all available GPU drivers
 into the firmware, the solution in the form of the `Option ROM` is in use.
-`Option ROMs` are the drivers flashed in the GPUs non-volatile memory. These
-types of drivers can be divided into `Legacy Option ROMs` and `EFI Option ROMs`.
+`Option ROMs` are the drivers flashed in the GPUs' non-volatile memory. These
+drivers can be divided into `Legacy Option ROMs` and `EFI Option ROMs`.
 
 `Legacy Option ROMs` are only supported on legacy BIOS, such as SeaBIOS. Legacy
 BIOS checks the availability of `Option ROM` and if its signature matches, it
@@ -111,7 +106,7 @@ implemented.
 
 `EFI Option ROMs` are nothing more than EFI drivers which have the same form as
 the UEFI files (PE format). UEFI firmware scans the `Option ROM` space of the
-graphics card and if it finds a potential `EFI Option ROM` with PE signature, it
+graphics card and if it finds a potential `EFI Option ROM` with a PE signature, it
 executes the file. This option ROM initializes the graphics.
 
 Considering the above, the firmware might have a problem with initializing older
@@ -124,33 +119,33 @@ no certainty that `EFI Option ROM` is signed correctly.
 
 ## Which GPUs are supported?
 
-We can say the "supported" one is the one that have been tested during
+We can say the "supported" one is the one that has been tested during
 Validation Procedure or have been tested by the community.
 
 The list of all supported memory modules is available in the
 [GPU HCL](hcl.md) documentation.
 
-## What does the obligatory Dasharo Subscripion includes?
+## What does the obligatory Dasharo Subscription include?
 
 The Dasharo Subscription includes:
 
-* The latest Dasharo Entry Subscription release installed by Dasharo Team
-* Dasharo Updates – number of updates depends on the number of Dasharo
+* The latest Dasharo Entry Subscription release installed by the Dasharo Team
+* Dasharo Updates – The number of updates depends on the number of Dasharo
   Subscriptions sold and the availability of other funding (e.g., NLNet,
   corporate sponsors, [community
   donations](https://docs.dasharo.com/ways-you-can-help-us/#donate-money))
 * Priority support for Dasharo Subscribers through invite-only Matrix channel
 * Influence on Dasharo features roadmap – you can have a real impact on Dasharo
-  development by direct access with the developers or premium voting on github.
-  You will gain the access to the dedicated channels on the matrix communicator.
-  If you wish to share your Github nickname with us, the votes cast for the
+  development by direct access with the developers or premium voting on GitHub.
+  You will gain access to the dedicated channels on the matrix communicator.
+  If you wish to share your GitHub nickname with us, the votes cast for the
   features that you would like to have implemented in the future will be treated
   with priority, i.e. they will have a higher priority than the votes of
   non-subscribers.
 * By buying this product, you support open-source firmware and Dasharo
   distribution.
 
-## What means in warranty conditions "No signs of customer interference..."?
+## What does the warranty condition "No signs of customer interference..." mean?
 
 Full question:
 "In the Disclaimer, you wrote that one of the warranty
@@ -159,7 +154,8 @@ firmware." How would a user modify firmware without losing the warranty? Being
 open source to be easy to modify, then saying "don't touch this" seems
 contradictory. How would you add an exception?"
 
-Playing with firmware parameters can result in damaging the mainboard. Such
-action excludes the acceptance of the return. You can improve the Dasharo by
-contributing, so we can pass Dasharo Certification Program and release it in the
-next version.
+Playing with firmware parameters can result in damaging the mainboard.
+Such action excludes the acceptance of the return.
+
+You can improve Dasharo by contributing, and when it passes the
+Dasharo Certification Program, can we release it in the next version.
