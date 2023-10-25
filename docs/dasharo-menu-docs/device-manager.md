@@ -74,47 +74,66 @@ example.
 
 This submenu allows configuring UEFI Secure Boot functionality.
 
-![](/images/menus/secure_boot.jpeg){ class="center" }
+![](/images/menus/secure_boot_main1.png){ class="center" }
+
+By default, Dasharo firmware boots with the default keys/certificates enrolled
+(see [Custom mode and key management](#custom-mode-and-key-management)) and
+default UEFI Secure Boot state depending on platform (in most cases disabled).
 
 ### Enabling Secure Boot
 
-By default, Dasharo firmware doesn't have UEFI Secure Boot enabled.
-Additionally, keys for UEFI Secure Boot are not enrolled, as we do not make
-assumptions about which CA the user trusts. To enable Secure Boot for booting
-common OSes signed with Microsoft keys (Windows and Linux distros using the
-shim bootloader), select the `Reset Secure Boot keys` option. The `Attempt
-Secure Boot` option will now be available and selected, and Secure Boot will be
-used on next boot.
+Switching the `Enable Secure Boot` option will enable or disable Secure Boot
+on next boot.
+
+![](/images/menus/secure_boot_main2.png){ class="center" }
+
+The `Enable Secure Boot` option will be available (not grayed out) only if the
+keys/certificates are provisioned. You may see below image if you erase your
+Secure Boot keys/certificates or don't have PK enrolled:
+
+![](/images/menus/secure_boot_main3.png){ class="center" }
 
 ### Custom mode and key management
 
-The following keys are enrolled by default when resetting Secure Boot keys:
+The basic menu allows only enabling or disabling Secure Boot. For advanced
+options, switch the `Secure Boot Mode` from `Standard Mode` to `Custom Mode`,
+which will cause the `Advanced Secure Boot Keys Management` submenu to appear.
 
-* [Microsoft KEK certificate](https://go.microsoft.com/fwlink/?LinkId=321185),
-* Microsoft Signature Database (db) consisting of:
-    - [Microsoft Windows Production PCA 2011](https://go.microsoft.com/fwlink/p/?linkid=321192)
-      to allow Windows OS Loader to load,
-    - [Microsoft Corporation UEFI CA 2011](https://go.microsoft.com/fwlink/p/?linkid=321194)
-      to load OEM-approved UEFI drivers and applications (e.g. [shim](https://github.com/rhboot/shim)),
-* Microsoft Forbidden Signature Database (dbx) published as
- [UEFI Revocation List File on uefi.org](https://www.uefi.org/revocationlistfile),
-* Dasharo Platform Key (PK) certificate maintained by the Dasharo team. When
- custom application and UEFI driver signing is desired, this key may be replaced
- with the user's own PK.
+![](/images/menus/secure_boot_main4.png){ class="center" }
 
-> To learn more, please visit
-> [Windows Secure Boot Key Creation and Management Guidance](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11).
+`Advanced Secure Boot Keys Management` menu content looks as follows:
 
-To use your own keys, choose `Custom Mode` in `Secure Boot Mode`:
+![](/images/menus/secure_boot_advanced1.png){ class="center" }
 
-![](/images/menus/secure_boot_custom.jpeg){ class="center" }
+* `Reset to default Secure Boot Keys` will cause the following keys/certificates
+  to be enrolled:
+    - [Microsoft KEK certificate](https://go.microsoft.com/fwlink/?LinkId=321185),
+    - Microsoft Signature Database (db) consisting of:
+        + [Microsoft Windows Production PCA 2011](https://go.microsoft.com/fwlink/p/?linkid=321192)
+          to allow Windows OS Loader to load,
+        + [Microsoft Corporation UEFI CA 2011](https://go.microsoft.com/fwlink/p/?linkid=321194)
+          to load OEM-approved UEFI drivers and applications (e.g. [shim](https://github.com/rhboot/shim)),
+    - Microsoft Forbidden Signature Database (dbx) published as
+     [UEFI Revocation List File on uefi.org](https://www.uefi.org/revocationlistfile),
+    - Dasharo Platform Key (PK) certificate maintained by the Dasharo team. When
+      custom application and UEFI driver signing is desired, this key may be replaced
+      with the user's own PK.
 
-An additional entry appears below for configuring keys and certificates:
+    > To learn more about those certificates, please visit
+    > [Windows Secure Boot Key Creation and Management Guidance](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11).
 
-![](/images/menus/secure_boot_custom.jpeg){ class="center" }
+    ![](/images/menus/secure_boot_advanced2.png){ class="center" }
 
-Here one may delete and enroll particular keys, certificates and database
-signatures.
+* `Erase to default Secure Boot Keys` will erase all Secure Boot keys and certificates
+  currently provisioned:
+
+    ![](/images/menus/secure_boot_advanced3.png){ class="center" }
+
+    ![](/images/menus/secure_boot_advanced4.png){ class="center" }
+
+One may also delete and enroll individual keys, certificates and database
+signatures via `PK/KEK/DB/DBX/DBT Options` (scroll the menu down if `DBT
+Options` are not visible).
 
 ## TCG2 Configuration
 
