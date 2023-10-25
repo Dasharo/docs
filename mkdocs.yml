@@ -407,6 +407,7 @@ nav:
               - 'M.2 automatic SATA/NVMe switching support': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
               - 'miniPCIe slot verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
               - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
+              - 'PCI Express ports': unified-test-documentation/dasharo-compatibility/31R-pcie-ports.md
               - 'SATA LED and PC speaker error indication': unified-test-documentation/dasharo-compatibility/31S-sata-led-and-pc-speaker-error-indication.md
               - 'Firmware locally building and flashing': unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
               - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
@@ -420,7 +421,7 @@ nav:
               - 'Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
               - 'BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
               - 'Suspend Mechanism Switching S0ix/S3': unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
-              - 'Block boot when battery is low': unified-test-documentation/dasharo-compatibility/359-battery-boot-block.md
+              - 'Block boot when battery is low': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
               - 'Power State after Power Fail': unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
               - 'ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
           - 'Dasharo security':
