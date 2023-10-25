@@ -163,7 +163,7 @@ Flow chart for the two settings mentioned above:
   should switch to when the main AC power is restored. Default value is
   platform-dependent.
 
-![](/images/menus/pwf_fail_opt.jpeg){ class="center" }
+![](/images/menus/pwr_fail_opt.jpeg){ class="center" }
 
 ## PCI/PCIe Configuration
 
