@@ -245,6 +245,7 @@ nav:
               - 'Releases': variants/msi_z790/releases.md
               - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
               - 'Test matrix': variants/msi_z790/test-matrix.md
+              - 'Openness score': variants/msi_z790/openness_score.md
       - 'Supermicro X11 LGA1151 Series':
           - 'Overview': variants/supermicro_x11_lga1151_series/overview.md
           - 'Releases': variants/supermicro_x11_lga1151_series/releases.md
