@@ -117,22 +117,24 @@ nav:
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_adl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_nv4x_adl/test-matrix.md
+              - 'Openness score': variants/novacustom_nv4x_adl/openness-score.md
           - 'NV4x 11th Gen':
               - 'Releases': variants/novacustom_nv4x_tgl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_tgl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_nv4x_tgl/test-matrix.md
-              - 'Openness score': variants/novacustom_nv4x_tgl/openness_analysis.md
+              - 'Openness score': variants/novacustom_nv4x_tgl/openness-score.md
               - 'LVFS report': variants/novacustom_nv4x_tgl/lvfs_report.md
               - 'Checbox results': variants/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md
           - 'NS5x/7x 12th Gen':
               - 'Releases': variants/novacustom_ns5x_adl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_ns5x_adl/hardware-matrix.md
-              - 'Post-installation setup': variants/novacustom_ns5x_adl/post_install.md
               - 'Test matrix': variants/novacustom_ns5x_adl/test-matrix.md
+              - 'Openness score': variants/novacustom_ns5x_adl/openness-score.md
           - 'NS5x/7x 11th Gen':
               - 'Releases': variants/novacustom_ns5x_tgl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_ns5x_tgl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_ns5x_tgl/test-matrix.md
+              - 'Openness score': variants/novacustom_ns5x_tgl/openness-score.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
