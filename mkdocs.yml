@@ -422,7 +422,7 @@ nav:
               - 'Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
               - 'BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
               - 'Suspend Mechanism Switching S0ix/S3': unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
-              - 'Block boot when battery is low': unified-test-documentation/dasharo-compatibility/359-battery-boot-block.md
+              - 'Block boot when battery is low': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
               - 'Power State after Power Fail': unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
               - 'ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
           - 'Dasharo security':
