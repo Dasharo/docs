@@ -8,7 +8,7 @@ Fan profiles are defined as follows:
 
 ## Silent fan profile
 
-# Releases newer than v1.4.0 TGL and v1.6.0 ADL
+# Releases newer than v1.4.0 11th Gen and v1.6.0 12th Gen
 
 | Temperature [°C] | Fan speed [%] |
 |------------------|---------------|
@@ -17,7 +17,7 @@ Fan profiles are defined as follows:
 | 75               | 35            |
 | 85               | 100           |
 
-# Releases v1.4.0 TGL and v1.6.0 ADL or older
+# Releases v1.4.0 11th Gen and v1.6.0 12th Gen or older
 
 | Temperature [°C] | Fan speed [%] |
 |------------------|---------------|
@@ -28,7 +28,7 @@ Fan profiles are defined as follows:
 
 ## Performance fan profile
 
-# Releases newer than v1.4.0 TGL and v1.6.0 ADL
+# Releases newer than v1.4.0 11th Gen and v1.6.0 12th Gen
 
 | Temperature [°C] | Fan speed [%] |
 |------------------|---------------|
@@ -37,7 +37,7 @@ Fan profiles are defined as follows:
 | 75               | 60            |
 | 85               | 100           |
 
-# Releases v1.4.0 TGL and v1.6.0 ADL or older
+# Releases v1.4.0 11th Gen and v1.6.0 12th Gen or older
 
 | Temperature [°C] | Fan speed [%] |
 |------------------|---------------|

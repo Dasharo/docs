@@ -40,22 +40,22 @@ Make sure that you have following packages installed:
 
     > Replace `X.Y.Z` with a valid version
 
-    === "NS5x ADL"
+    === "NS5x/7x 12th Gen"
         ```bash
         git checkout novacustom_ns5x_adl_vX.Y.Z
         ```
 
-    === "NV4x ADL"
+    === "NV4x 12th Gen"
         ```bash
         git checkout novacustom_nv4x_adl_vX.Y.Z
         ```
 
-    === "NS5x TGL"
+    === "NX5x/7x 11th Gen"
         ```bash
         git checkout novacustom_ns5x_tgl_vX.Y.Z
         ```
 
-    === "NV4x TGL"
+    === "NV4x 11th Gen"
         ```bash
         git checkout novacustom_nv4x_tgl_vX.Y.Z
         ```
@@ -68,7 +68,7 @@ Make sure that you have following packages installed:
 
 1. Start docker container:
 
-    === "NS5x ADL"
+    === "NS5x/7x 12th Gen"
         ```bash
         docker run --rm -it -u $UID \
            -v $PWD:/home/coreboot/coreboot \
@@ -76,7 +76,7 @@ Make sure that you have following packages installed:
            coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
         ```
 
-    === "NV4x ADL"
+    === "NV4x 12th Gen"
         ```bash
         docker run --rm -it -u $UID \
            -v $PWD:/home/coreboot/coreboot \
@@ -84,7 +84,7 @@ Make sure that you have following packages installed:
            coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
         ```
 
-    === "NS5x TGL"
+    === "NX5x/7x 11th Gen"
         ```bash
         docker run --rm -it -u $UID \
            -v $PWD:/home/coreboot/coreboot \
@@ -92,7 +92,7 @@ Make sure that you have following packages installed:
            coreboot/coreboot-sdk:0ad5fbd48d /bin/bash
         ```
 
-    === "NV4x TGL"
+    === "NV4x 11th Gen"
         ```bash
         docker run --rm -it -u $UID \
            -v $PWD:/home/coreboot/coreboot \
@@ -102,22 +102,22 @@ Make sure that you have following packages installed:
 
 1. Inside of the container, configure the build process:
 
-    === "NS5x ADL"
+    === "NS5x/7x 12th Gen"
         ```bash
         make distclean && cp configs/config.novacustom_ns5x_adl .config
         ```
 
-    === "NV4x ADL"
+    === "NV4x 12th Gen"
         ```bash
         make distclean && cp configs/config.novacustom_nv4x_adl .config
         ```
 
-    === "NS5x TGL"
+    === "NX5x/7x 11th Gen"
         ```bash
         make distclean && cp configs/config.novacustom_ns5x_tgl .config
         ```
 
-    === "NV4x TGL"
+    === "NV4x 11th Gen"
         ```bash
         make distclean && cp configs/config.novacustom_nv4x_tgl .config
         ```
@@ -162,22 +162,22 @@ The binary will not contain a boot splash logo. Refer to
 
     > Replace `X.Y.Z` with a valid version
 
-    === "NS5x ADL"
+    === "NS5x/7x 12th Gen"
         ```bash
         git checkout novacustom_ns5x_adl_vX.Y.Z
         ```
 
-    === "NV4x ADL"
+    === "NV4x 12th Gen"
         ```bash
         git checkout novacustom_nv4x_adl_vX.Y.Z
         ```
 
-    === "NS5x TGL"
+    === "NX5x/7x 11th Gen"
         ```bash
         git checkout novacustom_ns5x_tgl_vX.Y.Z
         ```
 
-    === "NV4x TGL"
+    === "NV4x 11th Gen"
         ```bash
         git checkout novacustom_nv4x_tgl_vX.Y.Z
         ```
@@ -190,28 +190,28 @@ The binary will not contain a boot splash logo. Refer to
 
 1. Build the EC firmware:
 
-    === "NS5x ADL"
+    === "NS5x/7x 12th Gen"
         ```bash
         EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_adl ./build.sh
         ```
 
         The resulting image will be placed in: `novacustom_ns5x_adl_ec.rom`.
 
-    === "NV4x ADL"
+    === "NV4x 12th Gen"
         ```bash
         EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_adl ./build.sh
         ```
 
         The resulting image will be placed in: `novacustom_nv4x_adl_ec.rom`.
 
-    === "NS5x TGL"
+    === "NX5x/7x 11th Gen"
         ```bash
         EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_tgl ./build.sh
         ```
 
         The resulting image will be placed in: `novacustom_ns5x_tgl_ec.rom`.
 
-    === "NV4x TGL"
+    === "NV4x 11th Gen"
         ```bash
         EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_tgl ./build.sh
         ```
