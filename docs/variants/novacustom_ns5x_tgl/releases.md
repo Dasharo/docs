@@ -89,10 +89,6 @@ Test results for this release can be found
 [sha256][novacustom_ns5x_tgl_v1.5.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_tgl_v1.5.0.rom_sig]{.md-button}
 
-[novacustom_ns5x_tgl_v1.5.0_full.rom][novacustom_ns5x_tgl_v1.5.0_full.rom_file]{.md-button}
-[sha256][novacustom_ns5x_tgl_v1.5.0_full.rom_hash]{.md-button}
-[sha256.sig][novacustom_ns5x_tgl_v1.5.0_full.rom_sig]{.md-button}
-
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
@@ -108,9 +104,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_ns5x_tgl_v1.5.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.0/novacustom_ns5x_tgl_v1.5.0.rom
 [novacustom_ns5x_tgl_v1.5.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.0/novacustom_ns5x_tgl_v1.5.0.rom.sha256
 [novacustom_ns5x_tgl_v1.5.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.0/novacustom_ns5x_tgl_v1.5.0.rom.sha256.sig
-[novacustom_ns5x_tgl_v1.5.0_full.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.0/novacustom_ns5x_tgl_v1.5.0_full.rom
-[novacustom_ns5x_tgl_v1.5.0_full.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.0/novacustom_ns5x_tgl_v1.5.0_full.rom.sha256
-[novacustom_ns5x_tgl_v1.5.0_full.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.0/novacustom_ns5x_tgl_v1.5.0_full.rom.sha256.sig
 
 ## v1.4.0 - 2023-03-02
 
