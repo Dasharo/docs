@@ -67,6 +67,10 @@ Test results for this release can be found
 [sha256][novacustom_ns5x_adl_v1.7.2.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_adl_v1.7.2.rom_sig]{.md-button}
 
+[novacustom_ns5x_adl_v1.7.2_dev_signed.rom][novacustom_ns5x_adl_v1.7.2_dev_signed.rom_file]{.md-button}
+[sha256][novacustom_ns5x_adl_v1.7.2_dev_signed.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_adl_v1.7.2_dev_signed.rom_sig]{.md-button}
+
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
@@ -83,6 +87,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_ns5x_adl_v1.7.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.2/novacustom_ns5x_adl_v1.7.2.rom
 [novacustom_ns5x_adl_v1.7.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.2/novacustom_ns5x_adl_v1.7.2.rom.sha256
 [novacustom_ns5x_adl_v1.7.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.2/novacustom_ns5x_adl_v1.7.2.rom.sha256.sig
+[novacustom_ns5x_adl_v1.7.2_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.2/novacustom_ns5x_adl_v1.7.2_dev_signed.rom
+[novacustom_ns5x_adl_v1.7.2_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.2/novacustom_ns5x_adl_v1.7.2_dev_signed.rom.sha256
+[novacustom_ns5x_adl_v1.7.2_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.2/novacustom_ns5x_adl_v1.7.2_dev_signed.rom.sha256.sig
 
 ## v1.7.1 - 2023-11-06
 
@@ -162,6 +169,10 @@ Test results for this release can be found
 [sha256][novacustom_ns5x_adl_v1.7.1.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_adl_v1.7.1.rom_sig]{.md-button}
 
+[novacustom_ns5x_adl_v1.7.1_dev_signed.rom][novacustom_ns5x_adl_v1.7.1_dev_signed.rom_file]{.md-button}
+[sha256][novacustom_ns5x_adl_v1.7.1_dev_signed.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_adl_v1.7.1_dev_signed.rom_sig]{.md-button}
+
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
@@ -178,6 +189,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_ns5x_adl_v1.7.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom
 [novacustom_ns5x_adl_v1.7.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom.sha256
 [novacustom_ns5x_adl_v1.7.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom.sha256.sig
+[novacustom_ns5x_adl_v1.7.1_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1_dev_signed.rom
+[novacustom_ns5x_adl_v1.7.1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1_dev_signed.rom.sha256
+[novacustom_ns5x_adl_v1.7.1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1_dev_signed.rom.sha256.sig
 
 ## v1.7.0 - Non-public engineering release
 

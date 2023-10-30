@@ -72,6 +72,10 @@ Test results for this release can be found
 [sha256][novacustom_nv4x_tgl_v1.5.2.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_tgl_v1.5.2.rom_sig]{.md-button}
 
+[novacustom_nv4x_tgl_v1.5.2_dev_signed.rom][novacustom_nv4x_tgl_v1.5.2_dev_signed.rom_file]{.md-button}
+[sha256][novacustom_nv4x_tgl_v1.5.2_dev_signed.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_tgl_v1.5.2_dev_signed.rom_sig]{.md-button}
+
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
@@ -87,6 +91,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_nv4x_tgl_v1.5.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.2/novacustom_nv4x_tgl_v1.5.2.rom
 [novacustom_nv4x_tgl_v1.5.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.2/novacustom_nv4x_tgl_v1.5.2.rom.sha256
 [novacustom_nv4x_tgl_v1.5.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.2/novacustom_nv4x_tgl_v1.5.2.rom.sha256.sig
+[novacustom_nv4x_tgl_v1.5.2_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.2/novacustom_nv4x_tgl_v1.5.2_dev_signed.rom
+[novacustom_nv4x_tgl_v1.5.2_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.2/novacustom_nv4x_tgl_v1.5.2_dev_signed.rom.sha256
+[novacustom_nv4x_tgl_v1.5.2_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.2/novacustom_nv4x_tgl_v1.5.2_dev_signed.rom.sha256.sig
 
 ## v1.5.1 - 2023-11-06
 
@@ -167,6 +174,10 @@ Test results for this release can be found
 [sha256][novacustom_nv4x_tgl_v1.5.1.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_tgl_v1.5.1.rom_sig]{.md-button}
 
+[novacustom_nv4x_tgl_v1.5.1_dev_signed.rom][novacustom_nv4x_tgl_v1.5.1_dev_signed.rom_file]{.md-button}
+[sha256][novacustom_nv4x_tgl_v1.5.1_dev_signed.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_tgl_v1.5.1_dev_signed.rom_sig]{.md-button}
+
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
@@ -182,6 +193,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_nv4x_tgl_v1.5.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1.rom
 [novacustom_nv4x_tgl_v1.5.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1.rom.sha256
 [novacustom_nv4x_tgl_v1.5.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1.rom.sha256.sig
+[novacustom_nv4x_tgl_v1.5.1_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1_dev_signed.rom
+[novacustom_nv4x_tgl_v1.5.1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1_dev_signed.rom.sha256
+[novacustom_nv4x_tgl_v1.5.1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1_dev_signed.rom.sha256.sig
 
 ## v1.5.0 - Non-public engineering release
 
