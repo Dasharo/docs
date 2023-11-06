@@ -13,7 +13,7 @@ For details about our release process please read
 
 </center>
 
-## v1.7.0 - 2023-10-30
+## v1.7.1 - 2023-11-06
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=799846462).
@@ -48,6 +48,7 @@ Test results for this release can be found
 
 ### Fixed
 
+- [Low performance when booting on battery power only](https://github.com/Dasharo/dasharo-issues/issues/555)
 - [Firmware defaults to maximum CD clock, preventing flicker-free booting](https://github.com/Dasharo/dasharo-issues/issues/493)
 - [Power delivery compatibility](https://github.com/Dasharo/dasharo-issues/issues/236)
 - [Better support for USB-PD power supplies](https://github.com/Dasharo/dasharo-issues/issues/431)
@@ -71,22 +72,24 @@ Test results for this release can be found
 - [No USB-C display output on Windows 11](https://github.com/Dasharo/dasharo-issues/issues/509)
 - [Keyboard backlight is disabled after suspend (Windows 11)](https://github.com/Dasharo/dasharo-issues/issues/507)
 - [Reset by F9 sets battery thresholds to 0](https://github.com/Dasharo/dasharo-issues/issues/499)
+- [The docking station is not detected after cold-boot, warm-boot and reboot](https://github.com/Dasharo/dasharo-issues/issues/404)
 
 ### Known issues
 
+- [Docking station may fail to be initialized if connected before booting and connected to multiple monitors](https://github.com/Dasharo/dasharo-issues/issues/560)
 - [Connecting and immediately disconnecting the charger, sets the battery status in OS to 'charging' for about 2 minutes](https://github.com/Dasharo/dasharo-issues/issues/350)
 - [Power state after power failure option does not work as intended](https://github.com/Dasharo/dasharo-issues/issues/524)
 - [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
 
 ### Binaries
 
-[novacustom_ns5x_adl_ec_v1.7.0.rom][novacustom_ns5x_adl_ec_v1.7.0.rom_file]{.md-button}
-[sha256][novacustom_ns5x_adl_ec_v1.7.0.rom_hash]{.md-button}
-[sha256.sig][novacustom_ns5x_adl_ec_v1.7.0.rom_sig]{.md-button}
+[novacustom_ns5x_adl_ec_v1.7.1.rom][novacustom_ns5x_adl_ec_v1.7.1.rom_file]{.md-button}
+[sha256][novacustom_ns5x_adl_ec_v1.7.1.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_adl_ec_v1.7.1.rom_sig]{.md-button}
 
-[novacustom_ns5x_adl_v1.7.0.rom][novacustom_ns5x_adl_v1.7.0.rom_file]{.md-button}
-[sha256][novacustom_ns5x_adl_v1.7.0.rom_hash]{.md-button}
-[sha256.sig][novacustom_ns5x_adl_v1.7.0.rom_sig]{.md-button}
+[novacustom_ns5x_adl_v1.7.1.rom][novacustom_ns5x_adl_v1.7.1.rom_file]{.md-button}
+[sha256][novacustom_ns5x_adl_v1.7.1.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_adl_v1.7.1.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
@@ -98,12 +101,12 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Dasharo EDKII fork based on edk2-stable202002 revision b68e46b0](https://github.com/Dasharo/edk2/tree/b68e46b0)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/RJrTXDhWR
-[novacustom_ns5x_adl_ec_v1.7.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.0/novacustom_ns5x_adl_ec_v1.7.0.rom
-[novacustom_ns5x_adl_ec_v1.7.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.0/novacustom_ns5x_adl_ec_v1.7.0.rom.sha256
-[novacustom_ns5x_adl_ec_v1.7.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.0/novacustom_ns5x_adl_ec_v1.7.0.rom.sha256.sig
-[novacustom_ns5x_adl_v1.7.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.0/novacustom_ns5x_adl_v1.7.0.rom
-[novacustom_ns5x_adl_v1.7.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.0/novacustom_ns5x_adl_v1.7.0.rom.sha256
-[novacustom_ns5x_adl_v1.7.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.0/novacustom_ns5x_adl_v1.7.0.rom.sha256.sig
+[novacustom_ns5x_adl_ec_v1.7.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_ec_v1.7.1.rom
+[novacustom_ns5x_adl_ec_v1.7.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_ec_v1.7.1.rom.sha256
+[novacustom_ns5x_adl_ec_v1.7.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_ec_v1.7.1.rom.sha256.sig
+[novacustom_ns5x_adl_v1.7.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom
+[novacustom_ns5x_adl_v1.7.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom.sha256
+[novacustom_ns5x_adl_v1.7.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom.sha256.sig
 
 ## v1.6.0 - 2023-04-07
 
