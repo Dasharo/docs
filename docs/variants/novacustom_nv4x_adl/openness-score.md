@@ -1,6 +1,6 @@
 # Dasharo Openness Score
 
-Openness Score for novacustom_nv4x_adl_v1.7.0_full.rom
+Openness Score for novacustom_nv4x_adl_v1.7.1_full.rom
 
 Open-source code percentage: **34.9%**
 Closed-source code percentage: **65.1%**
@@ -8,14 +8,14 @@ Closed-source code percentage: **65.1%**
 * Image size: 33554432 (0x2000000)
 * Number of regions: 27
 * Number of CBFSes: 3
-* Total open-source code size: 4559084 (0x4590ec)
+* Total open-source code size: 4558876 (0x45901c)
 * Total closed-source code size: 8497434 (0x81a91a)
-* Total data size: 686435 (0xa7963)
-* Total empty size: 19811479 (0x12e4c97)
+* Total data size: 686483 (0xa7993)
+* Total empty size: 19811639 (0x12e4d37)
 
-![](novacustom_nv4x_adl_v1.7.0_full.rom_openness_chart.png)
+![](openness_chart.png)
 
-![](novacustom_nv4x_adl_v1.7.0_full.rom_openness_chart_full_image.png)
+![](openness_chart_full_image.png)
 
 > Numbers given above already include the calculations from CBFS regions
 > presented below
@@ -63,10 +63,10 @@ Closed-source code percentage: **65.1%**
 
 * CBFS size: 10903488
 * Number of files: 13
-* Open-source files size: 2229782 (0x220616)
+* Open-source files size: 2229678 (0x2205ae)
 * Closed-source files size: 1629325 (0x18dc8d)
-* Data size: 8690 (0x21f2)
-* Empty size: 7035691 (0x6b5b2b)
+* Data size: 8698 (0x21fa)
+* Empty size: 7035787 (0x6b5b8b)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -75,10 +75,10 @@ Closed-source code percentage: **65.1%**
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------ | ------------- | ---- | ----------- | -------- |
 | fallback/romstage | stage | 95160 | none | open-source |
-| fallback/ramstage | stage | 152847 | LZMA | open-source |
+| fallback/ramstage | stage | 152839 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 22894 | none | open-source |
 | fallback/postcar | stage | 42408 | none | open-source |
-| fallback/payload | simple elf | 1916473 | none | open-source |
+| fallback/payload | simple elf | 1916377 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 546816 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 296077 | LZ4 | closed-source |
@@ -92,10 +92,10 @@ Closed-source code percentage: **65.1%**
 
 * CBFS size: 4161536
 * Number of files: 18
-* Open-source files size: 2329302 (0x238ad6)
+* Open-source files size: 2329198 (0x238a6e)
 * Closed-source files size: 1629325 (0x18dc8d)
-* Data size: 10005 (0x2715)
-* Empty size: 192904 (0x2f188)
+* Data size: 10045 (0x273d)
+* Empty size: 192968 (0x2f1c8)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -104,10 +104,10 @@ Closed-source code percentage: **65.1%**
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------ | ------------- | ---- | ----------- | -------- |
 | fallback/romstage | stage | 95160 | none | open-source |
-| fallback/ramstage | stage | 152847 | LZMA | open-source |
+| fallback/ramstage | stage | 152839 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 22894 | none | open-source |
 | fallback/postcar | stage | 42408 | none | open-source |
-| fallback/payload | simple elf | 1916473 | none | open-source |
+| fallback/payload | simple elf | 1916377 | none | open-source |
 | bootblock | bootblock | 99520 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 546816 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
@@ -120,4 +120,4 @@ Closed-source code percentage: **65.1%**
 | vbt.bin | raw | 1290 | LZMA | data |
 | cmos_layout.bin | cmos_layout | 800 | none | data |
 | (empty) | null | 36 | none | empty |
-| (empty) | null | 192868 | none | empty |
+| (empty) | null | 192932 | none | empty |
