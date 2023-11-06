@@ -214,7 +214,7 @@ value.
 [techspot]: <https://www.techspot.com/news/77313-do-need-re-review-core-i9-9900k.html>
 [videocardz]: <https://videocardz.com/newz/asus-asrock-and-msi-bring-overclocking-to-h470-b460-and-non-k-intel-core-cpus>
 [gamersnexus1]: <https://www.gamersnexus.net/guides/3385-cheating-or-optimized-z390-motherboard-bclk-comparison>
-[gamersnexus2]: <https://www.gamersnexus.net/guides/3590-dont-run-z490-motherboards-with-default-settings-for-your-build>
+[gamersnexus2]: <http://web.archive.org/web/20230827074944/https://gamersnexus.net/guides/3590-dont-run-z490-motherboards-with-default-settings-for-your-build>
 [gamersnexus3]: <https://www.youtube.com/watch?v=qQ_AETO7Fn4>
 [techpowerup]: <https://www.techpowerup.com/268260/hwinfos-power-reporting-deviation-sensor-reveals-how-motherboard-makers-are-cheating-ryzen-cpus>
 [tomshw]: <https://www.tomshardware.com/features/amd-ryzen-motherboard-power-cheat-testing>
