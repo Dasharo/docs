@@ -24,7 +24,7 @@ project. To address the issue we organize virtual hackathon on Dasharo Matrix
 whenever we can. At this point two communinty members are engaged
 ([collector-ynh](https://matrix.to/#/@collector-ynh:matrix.org) with X11SSH-F
 and [pietrushnic](https://matrix.to/#/@pietrushnic:matrix.org) with X11SSH-TF,
-we also have X11SSH-TF in 3mdeb lab). Feel free to [conact
+we also have X11SSH-TF in 3mdeb lab). Feel free to [contact
 us](mailto:contact@dasharo.com) if you wan to talk about project status.
 
 Please note that Dasharo compatilbe with Supermicro X11 LGA1151 Series may work
