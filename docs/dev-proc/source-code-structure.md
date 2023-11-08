@@ -137,3 +137,15 @@ The procedure of merging is as follows:
 > Otherwise GitHub will not properly detect the merge and won't close the PR
 > and delete the source branch. You should also wait for CI to pass without
 > errors before merging, in rare cases where a rebase breaks something.
+
+## Hotfixes
+
+For fixes for important issues discovered after release, create a new branch
+from the release tag, called `<platform>/rel_vx_y_z`, where the version number
+matches the release version. Commit fixes into this branch and when finished,
+bump the `z` (patch version) component of the version number.
+
+Fixes from this branch should be merged later back into `dasharo`. Branching
+from the previous release tag helps avoind introducing breaking changes that may
+have been merged to `dasharo` in the time after the affected release has been
+published.
