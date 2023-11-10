@@ -11,12 +11,12 @@ coreboot port on the Protectli V1210/V1410/V1610 firewall.
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Celeron(R) N5105 @ 2.00GHz         |
 | **RAM**                        | Micron MT53D512M64D4RQ-046                  |
-| **Flash memory**               | Winbond 25Q16JVSSIQ                         |
+| **Flash memory**               | Winbond W25Q128.V                           |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 | **Display**                    | HDMI 1920x1080p                             |
-| **Ethernet controller**        | 2x intel i225/i226 (on-board)               |
+| **Ethernet controller**        | 2x intel i226 (on-board)                    |
 | **Internal devices**           | Audio subsystem                             |
 | **4G Modem**                   | AMIT MDG200-0T001                           |
 | **Network**                    | Local network wired connection              |
