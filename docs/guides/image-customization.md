@@ -4,7 +4,7 @@
 
 Sometimes it is necessary to customize the image by changing the logo
 displayed on boot or to set a unique UUID or Serial Number for SMBIOS.
-[coreboot_customizer](https://github.com/Dasharo/meta-dts/blob/3da0807f10b46f496e23fff97c61ed49861cb475/meta-dts-distro/recipes-dts/dts/dts/coreboot_customizer)
+[Dasharo Configuration Utility](https://github.com/Dasharo/dcu)
 is a simple script that help with these tasks.
 
 ## Prerequisites
@@ -29,7 +29,7 @@ fails, the script will exit with an error.
 ## Usage
 
 ```txt
-Usage: coreboot_customizer OPTIONS coreboot.rom
+Usage: dcu OPTIONS coreboot.rom
 
   coreboot.rom  - Dasharo coreboot file to modify
 
@@ -39,16 +39,16 @@ Usage: coreboot_customizer OPTIONS coreboot.rom
     -l | --logo <LOGO>              - Custom logo in BMP/PNG/JPG/SVG format to be displayed on boot
 
   Examples:
-    ./coreboot_customizer -u 96bcfa1a-42b4-6717-a44c-d8bbc18cbea4 -s D07229051 -l ~/logo.svg coreboot.rom
+    ./dcu -u 96bcfa1a-42b4-6717-a44c-d8bbc18cbea4 -s D07229051 -l ~/logo.svg coreboot.rom
 
-    ./coreboot_customizer -u `dmidecode -s system-uuid` -s `dmidecode -s baseboard-serial-number` coreboot.rom
+    ./dcu -u `dmidecode -s system-uuid` -s `dmidecode -s baseboard-serial-number` coreboot.rom
       Above command will obtain the current SMBIOS UUID and Serial Number
       from the system and patch the coreboot binary.
 ```
 
-`coreboot_customizer` can be used as a standalone script (paired with
-cbfstool) and is also available in [Dasharo Tools
-Suite](../dasharo-tools-suite/overview.md).
+`dcu` can be used as a standalone script (paired with
+cbfstool) and is also available in
+[Dasharo Tools Suite](../dasharo-tools-suite/overview.md).
 
 The script will save the UUID and Serial Number to the COREBOOT region and the
 logo to BOOTSPLASH region.
@@ -93,7 +93,7 @@ TOOLLDFLAGS=-static make -C util/cbfstool
 strip --strip-unneeded util/cbfstool/cbfstool
 ```
 
-Copy the `util/cbfstool/cbfstool` to the directory where `coreboot_customizer`
+Copy the `util/cbfstool/cbfstool` to the directory where `dcu`
 is saved. Alternatively you make install `cbfstool` to your system:
 `TOOLLDFLAGS=-static sudo make -C util/cbfstool install`.
 
