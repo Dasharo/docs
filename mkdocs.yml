@@ -9,6 +9,8 @@ theme:
   favicon: images/favicon.png
   logo: images/dasharo-logo.png
   features:
+    - content.action.edit
+    - content.action.view
     - content.tabs.link
     - content.code.copy
     - navigation.instant
