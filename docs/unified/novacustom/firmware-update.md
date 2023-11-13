@@ -63,6 +63,7 @@ must be disabled as well (uncheck `Attempt Secure Boot` if
 `Current Secure Boot State` does not say `Disabled`). To apply changes, you
 will need to reboot.
 { .annotate }
+
 1. These options were introduced in v1.5.0 for TGL models and v1.7.0 for ADL models. You can skip these steps if you are using an older firmware version.
 
 * Follow the manual update procedure described in [DTS firmware update documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#local-firmware-update).
