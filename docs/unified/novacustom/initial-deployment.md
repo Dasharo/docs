@@ -65,7 +65,7 @@ devices.
         ```
 
     1. Detach the WSON-8 probe.
-    1. Connect the primary battery and reconnect the CMOS battery
+    1. Connect the primary battery and reconnect the CMOS battery.
     1. Power on the laptop. The laptop may shut down once after training the memory.
 
     ### EC firmware installation
@@ -129,24 +129,24 @@ devices.
 
 === "11th Gen (Tiger Lake)"
 
-### Initial deployment
+    ### Initial deployment
 
-To ensure a smooth deployment process, it is recommended to use the latest
-version of DTS available from the [releases
-page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
-then proceed with following the [Dasharo zero-touch initial deployment
-section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
-procedure. This will help you set up Dasharo effectively and without manual
-intervention.
+    To ensure a smooth deployment process, it is recommended to use the latest
+    version of DTS available from the [releases
+    page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
+    then proceed with following the [Dasharo zero-touch initial deployment
+    section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+    procedure. This will help you set up Dasharo effectively and without manual
+    intervention.
 
-If something went wrong or EC installation was not done, the firmware will
-print an error string during boot:
+    If something went wrong or EC installation was not done, the firmware will
+    print an error string during boot:
 
-![](/images/menus/sol_error1.jpg){ class="center" }
+    ![](/images/menus/sol_error1.jpg){ class="center" }
 
-OR
+    OR
 
-![](/images/menus/sol_error2.jpg){ class="center" }
+    ![](/images/menus/sol_error2.jpg){ class="center" }
 
-In such case please follow the EC firmware update instructions for a specific
-board variant.
+    In such case please follow the EC firmware update instructions for a specific
+    board variant.
