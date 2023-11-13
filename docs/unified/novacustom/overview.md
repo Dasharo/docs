@@ -48,8 +48,8 @@ Each firmware release contains of two parts:
   firmware.
 
 They both interact with each other tightly, so keeping their compatible versions
-in in sync is important. Information on compatibility should be always explained
-in the release pages:
+in sync is important. Information on compatibility should always be explained
+on the release pages:
 
 - [NV4x 12th Gen](/variants/novacustom_nv4x_adl/releases/)
 - [NV4x 11th Gen](/variants/novacustom_nv4x_tgl/releases/)
