@@ -266,7 +266,6 @@ nav:
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
       - 'Firmware update': guides/firmware-update.md
-      - 'Image customization': guides/image-customization.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
       - 'Verifying signatures': guides/signature-verification.md
