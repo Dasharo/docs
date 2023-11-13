@@ -2,11 +2,11 @@
 
 ## Prerequisites
 
-To proceed with the recovery procedure the backup with the vendor firmware or
+To proceed with the recovery procedure, the backup with the vendor firmware or
 vendor EC firmware will be necessary eg. `bios_backup.rom`, `ec_backup.rom`.
 
 The backup file should be generated before making any changes in the device
-flash chip according to documentation:
+flash chip according to the following documentation sections:
 
 - [Firmware backup](initial-deployment.md#bios-installation)
 - [EC firmware backup](initial-deployment.md#ec-firmware-installation)
@@ -19,7 +19,7 @@ flash chip according to documentation:
 ### BIOS recovery
 
 Follow the [Initial deployment](initial-deployment.md#initial-installation)
-section to perform the external flash. When running the flashrom commands use a
+section to perform the external flash. When running the flashrom commands, use a
 backup file you've prepared previously, like `bios_backup.rom`.
 
 ### EC firmware recovery
@@ -98,10 +98,9 @@ make BOARD=arduino/mega2560 flash
   ![](/images/nvc_ec_flash/ns5x_battery_unplugged.jpg)
 
 - Reattach the bottom cover (without screwing it in) and flip the laptop over
-- Using a prying tool like a credit card, pull up the keyboard from the laptop
+- Put the laptop on its side, while the screen is in an opened state. By using a little screw driver, carefully push in the screw holes of the keyboard and take the keyboard out. Please check out [this video](https://www.youtube.com/watch?v=A66cLJcMLbI) for a demonstration.
 
-> Start prying at the top of the keyboard. Be extra careful when removing the
-> keyboard to avoid damaging the keyboard cable, which is extremely fragile
+> Be extra careful when removing the keyboard to avoid damaging the keyboard cable, which is extremely fragile
 
 === "NS5x / NS7x"
     ![](/images/nvc_ec_flash/ns5x_keyboard_connectors.jpg)
