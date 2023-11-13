@@ -6,8 +6,8 @@
     The `NovaCustom NS5x/7x 12th Gen` section is related to the two physical
     NovaCustom laptops based on the 12th generation Intel Core processor:
 
-    - [NS51 series](https://configurelaptop.eu/ns51-series/)
-    - [NS70 series](https://configurelaptop.eu/ns70-series/)
+    - [NS51 Series](https://configurelaptop.eu/ns51-series/)
+    - [NS70 Series](https://configurelaptop.eu/ns70-series/)
 
     ![](/images/NS51-front-1.png)
 
@@ -15,7 +15,7 @@
     The `NovaCustom NV4x 12th Gen` section is related to the one physical
     NovaCustom laptops based on the 12th generation Intel Core processor:
 
-    - [NV41 series](https://configurelaptop.eu/nv41-series/)
+    - [NV41 Series](https://configurelaptop.eu/nv41-series/)
 
     ![](/images/NV4x-front-1.png)
 
@@ -23,8 +23,8 @@
     The `NovaCustom NS5x/7x 11th Gen` section is related to the two physical
     NovaCustom laptops based on the 11th generation Intel Core processor:
 
-    - [NS51 series](https://configurelaptop.eu/ns51-series/)
-    - [NS70 series](https://configurelaptop.eu/ns70-series/)
+    - [NS51 Series](https://configurelaptop.eu/ns51-series/)
+    - [NS70 Series](https://configurelaptop.eu/ns70-series/)
 
     ![](/images/NS51-front-1.png)
 
@@ -32,10 +32,12 @@
     The `NovaCustom NV4x 11th Gen` section is related to the one physical
     NovaCustom laptops based on the 11th generation Intel Core processor:
 
-    - [NV41 series](https://configurelaptop.eu/nv40-series/)
+    - [NV40 Series](https://configurelaptop.eu/nv40-series/)
 
-    ![](/images/NV4x-front-1.png) // Photo should be updated
+    ![](/images/NV4x-front-1.png)
 
+     <!--Photo should be updated with dark blue chassis-->
+    
 For more information on the hardware, please refer to the references in above
 links.
 
