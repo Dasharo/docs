@@ -32,9 +32,9 @@
     The `NovaCustom NV4x 11th Gen` section is related to the one physical
     NovaCustom laptops based on the 11th generation Intel Core processor:
 
-    - [NV41 series](https://configurelaptop.eu/nv41-series/)
+    - [NV41 series](https://configurelaptop.eu/nv40-series/)
 
-    ![](/images/NV4x-front-1.png)
+    ![](/images/NV4x-front-1.png) // Photo should be updated
 
 For more information on the hardware, please refer to the references in above
 links.
