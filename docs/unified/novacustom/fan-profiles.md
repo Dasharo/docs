@@ -2,7 +2,7 @@
 
 There are two fan profiles implemented. The profiles can be selected via the
 [Power Management Options](/dasharo-menu-docs/dasharo-system-features/#power-management-options)
-menu in Setup Menu.
+menu in the Setup Menu.
 
 Fan profiles are defined as follows:
 
