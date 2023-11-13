@@ -66,6 +66,6 @@ will need to reboot.
 
 1. These options were introduced in v1.5.0 for TGL models and v1.7.0 for ADL models. You can skip these steps if you are using an older firmware version.
 
-* Follow the manual update procedure described in [DTS firmware update documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#local-firmware-update).
+* Follow the manual update procedure described in the [DTS firmware update documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#local-firmware-update).
 
 > Please make sure you that you update the BIOS firmware and the EC firmware respectively.
