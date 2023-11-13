@@ -3,6 +3,8 @@
 This document describes the process of installing firmware updates from LVFS
 using fwupd.
 
+> Warning: this documentation is [temporarily depreciated](https://github.com/Dasharo/dasharo-issues/issues/96#issuecomment-1807920611). Since the use of open EC firmware, we can no longer offer fwupd/LVFS support. Currently, updating is only possible by following the [firmware update guide](./firmware-update.md).
+
 ## Installing fwupd
 
 ### Using binary packages
