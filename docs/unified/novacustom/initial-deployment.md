@@ -4,7 +4,7 @@
 
 This document is a guide for the initial installation of Dasharo on a supported
 device. It assumes some knowledge about external flashing and is primarily aimed
-at technicians performing initial installation and not for end users of the
+at technicians performing the initial installation and not for end users of the
 devices.
 
 ## Installing Dasharo
@@ -18,8 +18,8 @@ devices.
     from within the operating system and external flashing of the whole flash
     chip using a programmer like the CH341a is required.
 
-    > Publicly released binaries do not contain ME binary. If you need an Intel ME
-    > update for your device, contact us via already established commercial support
+    > Publicly released binaries do not contain the ME binary. If you need an Intel ME
+    > update for your device, contact us via an already established commercial support
     > channel.
 
     ### Preparation
@@ -44,29 +44,29 @@ devices.
         === "NV4x"
             ![nv4x chips](../../images/nv4x_board_chips.jpg)
 
-    1. Disconnect the primary battery. (1)
-    1. Disconnect the CMOS battery. (2)
-    1. Attach a WSON-8 probe to the SPI flash chip. (3)
+    2. Disconnect the primary battery. (1)
+    3. Disconnect the CMOS battery. (2)
+    4. Attach a WSON-8 probe to the SPI flash chip. (3)
 
         > For TGL devices use SOIC clip instead of WSON
 
-    1. Backup the current firmware, in case you want to be able to restore it
+    5. Backup the current firmware, in case you want to be able to restore it
         at some point:
 
         ```bash
         flashrom -p ch341a_spi -r bios_backup.rom
         ```
 
-    1. Install Dasharo BIOS, replacing `[path]` with the path to the firmware
+    6. Install Dasharo BIOS, replacing `[path]` with the path to the firmware
         image you want to flash, e.g. `novacustom_ns5x_adl_full_v1.4.0.rom`
 
         ```bash
         flashrom -p ch341a_spi -w [path]
         ```
 
-    1. Detach the WSON-8 probe.
-    1. Connect the primary battery and reconnect the CMOS battery
-    1. Power on the laptop. The laptop may shut down once after training the memory.
+    7. Detach the WSON-8 probe.
+    8. Connect the primary battery and reconnect the CMOS battery.
+    9. Power on the laptop. The laptop may shut down once after training the memory.
 
     ### EC firmware installation
 
@@ -83,21 +83,21 @@ devices.
         apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
         ```
 
-    1. Obtain source code:
+    2. Obtain source code:
 
         ```bash
         git clone https://github.com/dasharo/flashrom.git
         cd flashrom
         ```
 
-    1. Build flashrom:
+    3. Build flashrom:
 
         ```bash
         make
         sudo make install
         ```
 
-    1. Make a backup of the EC firmware:
+    4. Make a backup of the EC firmware:
 
         > Remember to store the backup on the separate device in case flashing
         > fails.
@@ -106,7 +106,7 @@ devices.
         flashrom -p ite_ec -r ec_backup.rom
         ```
 
-    1. Install the EC firmware:
+    5. Install the EC firmware:
 
         > Warning: After running this command, the internal keyboard and power
         > button will stop responding until the device is power cycled (all
@@ -129,24 +129,24 @@ devices.
 
 === "11th Gen (Tiger Lake)"
 
-### Initial deployment
+    ### Initial deployment
 
-To ensure a smooth deployment process, it is recommended to use the latest
-version of DTS available from the [releases
-page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
-then proceed with following the [Dasharo zero-touch initial deployment
-section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
-procedure. This will help you set up Dasharo effectively and without manual
-intervention.
+    To ensure a smooth deployment process, it is recommended to use the latest
+    version of DTS available from the [releases
+    page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
+    then proceed with following the [Dasharo zero-touch initial deployment
+    section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+    procedure. This will help you set up Dasharo effectively and without manual
+    intervention.
 
-If something went wrong or EC installation was not done, the firmware will
-print an error string during boot:
+    If something went wrong or EC installation was not done, the firmware will
+    print an error string during boot:
 
-![](/images/menus/sol_error1.jpg){ class="center" }
+    ![](/images/menus/sol_error1.jpg){ class="center" }
 
-OR
+    OR
 
-![](/images/menus/sol_error2.jpg){ class="center" }
+    ![](/images/menus/sol_error2.jpg){ class="center" }
 
-In such case please follow the EC firmware update instructions for a specific
-board variant.
+    In such case please follow the EC firmware update instructions for a specific
+    board variant.
