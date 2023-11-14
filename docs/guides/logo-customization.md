@@ -8,9 +8,9 @@ replacing the logo.
 
 ## Procedure
 
-Use the [Dasharo Configuration Utility](image-customization.md)
+Use the [Dasharo Configuration Utility](https://github.com/Dasharo/dcu#usage)
 to put custom logo into a Dasharo coreboot image.
 
 ```bash
-./dcu -l <logo_file> <dasharo_image>
+./dcu logo <dasharo_image> -l <logo_file>
 ```
