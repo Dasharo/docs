@@ -58,6 +58,33 @@ board variant.
   used for setup application. Lists all bootable options and allows one to
   override the boot path.
 
+### Hotkeys
+
+#### F9: Reset to Defaults
+
+* The `F9` hotkey is a **global reset option**.
+* Pressing `F9` will reset all BIOS settings across all menus to their default
+values. The only exception are the secure boot keys.
+* This action is immediate and applies to all configurable options within the
+BIOS.
+* Changes will be physically saved and effective on the platform after a reset.
+
+#### F10: Save Changes
+
+* The `F10` hotkey serves as a **global save option.**
+* Pressing `F10` will save all changes made in any menu within the BIOS.
+* Changes will be physically saved and effective on the platform after a reset.
+
+#### Important Notes
+
+* **Caution:** Using the `F9` reset option will overwrite all custom
+configurations. Ensure you have noted any specific settings before resetting.
+* **Confirmation:** Both `F9` and `F10` actions require confirmation to prevent
+ accidental changes.
+* **Reset Requirement:** After saving changes with `F10` or reverting to
+defaults with `F9`, a platform reset is necessary for any changes to take
+effect.
+
 ### Main Page
 
 ![](/images/menus/main_page.jpeg){ class="center" }
