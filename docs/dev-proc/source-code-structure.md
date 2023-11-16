@@ -11,9 +11,9 @@ branch structure:
 * `<platform>/rel_vX.Y.Z` - release branch for version X.Y.Z
 * `<feature>` - tracks development of feature
 
-`<platform> = <coreboot_mainboard_vendor>_<coreboot_mainboard_model>` if
-platform is supported by coreboot, otherwise we use common sense and available
-information about hardware.
+> `<platform> = <coreboot_mainboard_vendor>_<coreboot_mainboard_model>` if
+> platform is supported by coreboot, otherwise we use common sense and available
+> information about hardware.
 
 ## Remotes
 
@@ -35,7 +35,12 @@ git remote add upstream https://review.coreboot.org/coreboot.git
 
 ## Tags
 
-Dasharo Release tags in git repository use format: `<platform>_vX.Y.Z`
+Tags for Dasharo releases across repositories in the Dasharo GitHub organization
+use the following format: `<platform>_vX.Y.Z`.
+
+> `<platform> = <coreboot_mainboard_vendor>_<coreboot_mainboard_model>` if
+> platform is supported by coreboot, otherwise we use common sense and available
+> information about hardware.
 
 ## New platform support
 
