@@ -146,6 +146,6 @@ matches the release version. Commit fixes into this branch and when finished,
 bump the `z` (patch version) component of the version number.
 
 Fixes from this branch should be merged later back into `dasharo`. Branching
-from the previous release tag helps avoind introducing breaking changes that may
+from the previous release tag helps avoid introducing breaking changes that may
 have been merged to `dasharo` in the time after the affected release has been
 published.
