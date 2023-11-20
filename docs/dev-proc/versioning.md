@@ -4,6 +4,17 @@ Dasharo Releases are versioned using [Semantic Versioning](https://semver.org/)
 and [Keep A Changelog](https://keepachangelog.com/en/1.0.0/) to document
 changes introduced in new releases.
 
+We apply following guidelines for incrementing the Dasharo Release version:
+
+* MAJOR version
+    - relevant change in firmware update method (e.g. we require to flash the
+      whole `BIOS` region when flashing this release, while for previous
+      releases, we only required the `RW_SECTION` to be flashed)
+* MINOR version
+    - release contains at least one new feature
+* PATCH version
+    - release contains only fixes, not a single new feature
+
 Major version zero (0.y.z) is for initial development or first release issued
 and may not support all Dasharo Quality Criteria.
 
