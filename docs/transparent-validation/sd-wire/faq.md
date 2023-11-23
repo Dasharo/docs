@@ -1,18 +1,18 @@
 # SDWire Frequently asked questions (FAQ)
 
-## Will the SDWire be compatible with the Odroid-XU4?
+## How can I ensure that SDWire is compatible with my system?
 
 The SDWire has been tested on the RTE (Remote Testing Environment) platform with
-Orange Pi Zero and GoodRam MicroSDHC 32 GB Class 10 UHS-I/U1.
+Orange Pi Zero and GoodRam MicroSDHC 32 GB Class 10 UHS-I/U1. You can learn more
+about the RTE platform [here](https://shop.3mdeb.com/shop/open-source-hardware/rte/).
 
-For usage documentation, please visit SDWire [usage validation](https://docs.dasharo.com/transparent-validation/sd-wire/usage-validation/) 
-section.
+For usage documentation, please visit SDWire [usage validation](https://docs.dasharo.com/transparent-validation/sd-wire/usage-validation/)
+section. Please note that the "First use" has already been completed during the
+pre-sale validation of the SDWire.
 
-Please note that the "First use" has already been completed during the pre-sale
-validation of the SDWire. However, we haven't conducted compatibility tests on
-the Odroid-XU4, so we cannot provide specific details regarding compatibility
-with those devices. You can learn more about the RTE platform
-[here](https://shop.3mdeb.com/shop/open-source-hardware/rte/).
+We haven't conducted specific compatibility tests on other platforms, so we
+cannot provide detailed information regarding its compatibility with other
+devices.
 
 ## Can I use SDWire to download photos from a DSLR camera remotely?
 
@@ -33,3 +33,6 @@ most of the product for your specific needs.
 We conducted a simple test involving multiple attempts to flash an SD card
 inserted into SD Wire. The data transfer rates for these successive attempts
 ranged between 12 MB/s and 21 MB/s.
+
+You can locate the hardware list used for testing by visiting the following
+[link](#how-can-i-ensure-that-sdwire-is-compatible-with-my-system).
