@@ -28,7 +28,7 @@ For additional details please refer to the official documentation:
 These resources will provide you with comprehensive guidance on how to make the
 most of the product for your specific needs.
 
-## What are the speed limitations, specifically the maximum speed for reading and writing to an SD card?
+## What is the maximum SD card read and write speed limit?
 
 We conducted a simple test involving multiple attempts to flash an SD card
 inserted into SD Wire. The data transfer rates for these successive attempts
