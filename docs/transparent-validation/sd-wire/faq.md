@@ -14,7 +14,7 @@ the Odroid-XU4, so we cannot provide specific details regarding compatibility
 with those devices. You can learn more about the RTE platform
 [here](https://shop.3mdeb.com/shop/open-source-hardware/rte/).
 
-## Can I use this product to remotely download photos from a DSLR camera? I'm concerned about speed.
+## Can I use SDWire to download photos from a DSLR camera remotely?
 
 Yes, the product is designed to facilitate remote access and data management for
 SD cards, which should work well for your purpose of retrieving photos from a
