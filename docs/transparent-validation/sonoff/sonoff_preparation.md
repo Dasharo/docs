@@ -4,6 +4,10 @@
 The below section of the documentation is based on the
 [EPSHome documentation](https://esphome.io/devices/sonoff_s20.html)
 
+> The following procedure is for Sonoff S20. It has also been tested on
+  **Sonoff S26 Release 2**, however, the connection method for flashing is
+  different and is described [here](https://tasmota.github.io/docs/devices/Sonoff-S26-Smart-Socket/#s26-release-2).
+
 1. Open the Sonoff case.
 
 1. Check if the headers are soldered to the board. If not - 4 pin header
@@ -135,3 +139,33 @@ The below section of the documentation is based on the
     > Note: The effective range for this device is only a few meters.
 
 1. Based on the minicom logs read the IP address assigned to the device.
+
+1. The device should have a statically assigned IP address based on its MAC
+    address - this will make it easy to find it on the network.
+
+The device will host the website which can be used to switch the relay.
+
+Bear in mind that the antenna in this device is very poorly
+performing - effective range is only few meters
+
+---
+
+## Controlling the relay switch
+
+To switch the relay the following bash commands may be used:
+
+> `192.168.43.171` should be replaced with assigned IP.
+
+```sh
+curl -X POST http://192.168.43.171/switch/sonoff_s20_relay/toggle
+curl -X POST http://192.168.43.171/switch/sonoff_s20_relay/turn_off
+curl -X POST http://192.168.43.171/switch/sonoff_s20_relay/turn_on
+```
+
+To check the state of the component use:
+
+```sh
+# name @ name in /home/name/workspace/sonoff/docker [16:28:02] C:1
+$ curl  http://192.168.43.171/switch/sonoff_s20_relay
+{"id":"switch-sonoff_s20_relay","state":"OFF","value":false}
+```
