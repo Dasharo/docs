@@ -11,40 +11,31 @@ stand.
 The below table contains information about all elements which are needed to
 create the testing stand.
 
+* [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
+* RTE power supply 5V 2A Micro-USB
+* 6x standard female-female connection wire 2.54 mm raster
+* 6x standard female-female connection wire 2.54/2.00 mm raster
+* 2x RJ45 cable: 1 for RTE and 1 for the platform
+
 === "VP2410"
 
     * VP2410 platform
-    * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
-    * RTE power supply 5V 2A Micro-USB
-    * 6x standard female-female connection wire 2.54 mm raster
-    * 6x standard female-female connection wire 2.54/2.00 mm raster
     * Power supply for the platform: 12V 5A
-    * 2x RJ45 cable: 1 for RTE and 1 for the platform
     * Micro-USB to USB-A male-male cable for console
 
 === "VP2420"
 
     * VP2420 platform
-    * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
-    * RTE power supply 5V 2A Micro-USB
-    * 6x standard female-female connection wire 2.54 mm raster
-    * 6x standard female-female connection wire 2.54/2.00 mm raster
     * Power supply for the platform: 12V 5A
-    * 2x RJ45 cable: 1 for RTE and 1 for the platform
     * Micro-USB to USB-A male-male cable for console
 
 === "VP4630/VP4650/VP4670"
 
     * VP4630/VP4650/VP4670 platform
-    * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
-    * RTE power supply 5V 2A Micro-USB
     * Sonoff S20 type E (relay unused due to disruptions in power during high CPU load)
-    * 6x standard female-female connection wire 2.54 mm raster
-    * 6x standard female-female connection wire 2.54/2.00 mm raster
     * USB-UART converter with 4-wire cable
     * 4-pin header 2.54 mm raster
     * Pomona SOIC8 clip
-    * 2x RJ45 cable: 1 for RTE and 1 for the platform
     * Micro-USB to USB-A male-male cable for console
     * Power supply for the platform:
         - VP4630: 12V 5A
@@ -53,13 +44,8 @@ create the testing stand.
 === "V1210/V1410/V1610"
 
     * V1210/V1410/V1610 platform
-    * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
-    * RTE power supply 5V 2A Micro-USB
-    * 6x standard female-female connection wire 2.54 mm raster
-    * 6x standard female-female connection wire 2.54/2.00 mm raster
     * Power supply for the platform: 12V 4A
     * USB-C to USB-A male-male cable for console
-    * 2x RJ45 cable: 1 for RTE and 1 for the platform
 
 ## Pre-setup activities
 
