@@ -331,6 +331,8 @@ nav:
               - 'Laboratory stand assembly guide': transparent-validation/msi-z690/laboratory-assembly-guide.md
           - 'MSI PRO Z790-P':
               - 'Laboratory stand assembly guide': transparent-validation/msi-z790/laboratory-assembly-guide.md
+          - 'Protectli platforms':
+              - 'Laboratory stand assembly guide': transparent-validation/protectli/laboratory-assembly-guide.md
           - 'Supermicro X11 LGA1151 Series':
               - 'Theory of Operation': transparent-validation/supermicro_x11_lga1151_series/theory-of-operation.md
           - 'muxPi':
@@ -351,6 +353,8 @@ nav:
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
               - 'FAQ': transparent-validation/sd-wire/faq.md
+          - 'Sonoff':
+              - 'Sonoff preparation': transparent-validation/sonoff/sonoff_preparation.md
           - 'PiKVM':
               - 'Assembly and validation': transparent-validation/pikvm/assembly-and-validation.md
           - 'Twonkie':
