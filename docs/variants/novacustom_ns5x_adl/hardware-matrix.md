@@ -54,7 +54,7 @@ for the NS51/70 platforms.
 | **Wireless card**              | Intel Wi-Fi 6 AX201                              |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
-| **Internal devices**           | 1. 1920x1080 14 inch screen                      |
+| **Internal devices**           | 1. 1920x1080 15.6 inch screen                    |
 |                                | 2. Internal keyboard with LED backlight          |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
@@ -80,7 +80,7 @@ for the NS51/70 platforms.
 | **Wireless card**              | Intel Wi-Fi 6 AX201                              |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
-| **Internal devices**           | 1. 1920x1080 14 inch screen                      |
+| **Internal devices**           | 1. 1920x1080 17 inch screen                      |
 |                                | 2. Internal keyboard with LED backlight          |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |

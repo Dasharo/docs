@@ -39,7 +39,7 @@ The graphics used are from pages 17-18 of the
 [official service manual](https://novacustom.stackstorage.com/s/s2zVcQyd004hRQJ/en_US?dir=%2FNS51%2FService%20Manual&node-id=233996)
 for the NS51/70 platforms.
 
-## NS51
+## NS51MU
 
 | Component                      | Description                                      |
 |--------------------------------|--------------------------------------------------|
@@ -55,7 +55,7 @@ for the NS51/70 platforms.
 | **Wireless card**              | Intel Wi-Fi 6 AX201                              |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
-| **Internal devices**           | 1. 1920x1080 14 inch screen                      |
+| **Internal devices**           | 1. 1920x1080 15.6 inch screen                    |
 |                                | 2. Internal keyboard with LED backlight          |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
@@ -66,7 +66,7 @@ for the NS51/70 platforms.
 | **Power Control**              | SonOff S26                                       |
 | **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
-## NS70
+## NS70MU
 
 | Component                      | Description                                      |
 |--------------------------------|--------------------------------------------------|
@@ -81,7 +81,7 @@ for the NS51/70 platforms.
 | **Wireless card**              | Intel Wi-Fi 6 AX201                              |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
-| **Internal devices**           | 1. 1920x1080 14 inch screen                      |
+| **Internal devices**           | 1. 1920x1080 17 inch screen                      |
 |                                | 2. Internal keyboard with LED backlight          |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
