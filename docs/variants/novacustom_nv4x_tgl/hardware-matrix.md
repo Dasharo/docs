@@ -63,6 +63,8 @@ for the NV41 platforms.
 | **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
 |                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
+| **Power Control**              | SonOff S26                                       |
+| **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
 ## NV41MB
 
@@ -88,3 +90,5 @@ for the NV41 platforms.
 | **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
 |                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
+| **Power Control**              | SonOff S26                                       |
+| **KVM**                        | PiKVM based on Raspberry Pi 4                    |
