@@ -115,6 +115,8 @@ nav:
           - 'Battery management': unified/novacustom/battery-management.md
           - 'Fan profiles': unified/novacustom/fan-profiles.md
           - 'Firmware update using fwupd': unified/novacustom/fwupd-usage.md
+          - 'Hardware Compatibility List': unified/novacustom/hw-compatibility.md
+          - 'Community Test Results': unified/novacustom/community-test-results.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_adl/hardware-matrix.md
