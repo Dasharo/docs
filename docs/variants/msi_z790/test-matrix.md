@@ -5,8 +5,14 @@
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary.
 
-Note, that the below-described test scope is used during Dasharo
-Certification Procedure for `MSI PRO Z790-P` platform.
+An up-to date test matrix used since release v0.9.1 is available
+[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1753841105)
+
+Note that the test scope is used during Dasharo Certification Procedure for for
+`MSI PRO Z790-P` platform.
+
+> Following portion of the document contains the test matrix for releases older
+> than v0.9.1 and is preserved for historical purposes.
 
 ## Module: Dasharo compatibility
 

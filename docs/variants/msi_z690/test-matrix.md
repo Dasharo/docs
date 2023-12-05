@@ -5,9 +5,14 @@
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary.
 
-Note, that the below-described test scope is used during Dasharo
-Certification Procedure for both tested platforms:
-`MSI PRO Z690-A WiFi DDR4` and `MSI PRO Z690-A DDR5`.
+An up-to date test matrix used since release v1.1.3 is available
+[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1143764851)
+
+Note that the test scope is used during Dasharo Certification Procedure for both
+tested platforms: `MSI PRO Z690-A WiFi DDR4` and `MSI PRO Z690-A DDR5`.
+
+> Following portion of the document contains the test matrix for releases older
+> than v1.1.3 and is preserved for historical purposes.
 
 ## Module: Dasharo compatibility
 
