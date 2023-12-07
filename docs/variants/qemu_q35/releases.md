@@ -11,6 +11,7 @@ Tests reports and logs can be found
 ### Added
 
 Following features can be fully used:
+
 - Configurable boot order
 - Configurable boot options
 - [Custom boot menu keys](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key/)
@@ -24,6 +25,7 @@ Following features can be fully used:
 
 Following features are visible in setup menu and can be used for testing the menus,
 but have no actual backend hooked up:
+
 - [PS/2 Controller enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
 - [Watchdog configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
 - [Early boot DMA protection menu option](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20L-early-boot-dma-protection/)
