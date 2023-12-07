@@ -195,14 +195,14 @@ Connect the RTE J11 header to the platform FP1/F_PANEL1 header using 2.54mm to
     Connect the RTE SPI header to the platform using the 2.54mm female-female
     wires as described in the table:
 
-    | RTE SPI header      | 6pin flash header                      |
-    |:-------------------:|:--------------------------------------:|
-    | J7 pin 1 (Vcc)      | <TBD marking> pin 1 (SPI Power)        |
-    | J7 pin 2 (GND)      | <TBD marking> pin 2 (GND)              |
-    | J7 pin 3 (CS)       | <TBD marking> pin 4 (BIOS SPI CS pin)  |
-    | J7 pin 4 (SCLK)     | <TBD marking> pin 6 (SPI Clock)        |
-    | J7 pin 5 (MISO)     | <TBD marking> pin 5 (MISO)             |
-    | J7 pin 6 (MOSI)     | <TBD marking> pin 3 (MOSI)             |
+    | RTE SPI header      | FP_6PIN1 SPI header              |
+    |:-------------------:|:--------------------------------:|
+    | J7 pin 1 (Vcc)      | FP_6PIN1 pin 1 (SPI Power)       |
+    | J7 pin 2 (GND)      | FP_6PIN1 pin 2 (GND)             |
+    | J7 pin 3 (CS)       | FP_6PIN1 pin 4 (BIOS SPI CS pin) |
+    | J7 pin 4 (SCLK)     | FP_6PIN1 pin 6 (SPI Clock)       |
+    | J7 pin 5 (MISO)     | FP_6PIN1 pin 5 (MISO)            |
+    | J7 pin 6 (MOSI)     | FP_6PIN1 pin 3 (MOSI)            |
 
 ### CMOS reset circuit
 
