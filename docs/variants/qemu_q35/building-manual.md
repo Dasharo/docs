@@ -198,5 +198,5 @@ Now you can proceed with initial deployment scenario according to you needs:
 
 * [Dasharo validation](https://github.com/Dasharo/open-source-firmware-validation#qemu-workflow)
   if you want to use binaries for validation purposes
-* [Dasharo development](../development) if you want to use binaries in
+* [Dasharo development](development.md) if you want to use binaries in
   development environment
