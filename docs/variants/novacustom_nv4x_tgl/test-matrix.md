@@ -25,7 +25,7 @@ subjected from before the release of the new binary.
 | 12.  | [Audio subsystem][AUD]                                 | AUD           | All                                  |
 | 13.  | [USB-C support][UTC]                                   | UTC           | All                                  |
 | 14.  | [Network boot][PXE]                                    | PXE           | Without PXE007.001                   |
-| 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All                                  |
+| 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All - NOTE: Needs to be carried out for both the default network card and the Atheros QCNFA222.                                  |
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
 | 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.001                           |
