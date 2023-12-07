@@ -72,11 +72,14 @@ Change directory:
 cd ipxe
 ```
 
-Checkout stable commit (2023.8 used by coreboot)
+Checkout:
 
 ```bash
-git checkout 4bffe0f0d9d0e1496ae5cfb7579e813277c29b0f
+git checkout 77b07ea4fdc259d7253c6f9df2beda6e6c7a9d85
 ```
+
+> NOTE: This commit was chosen by chainloading netboot.xyz 10x. There was zero
+> failures, where other commits lead to even 50% timeuts.
 
 #### Enabled Dasharo script
 
