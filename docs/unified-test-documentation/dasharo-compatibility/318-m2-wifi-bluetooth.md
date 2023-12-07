@@ -2,6 +2,12 @@
 
 ## Test cases common documentation
 
+**Important notice**
+
+If both are technically supported, as is the case for NovaCustom NV4x, the
+test should be carried out separately for both the default Intel network card
+and the Atheros one.
+
 **Test setup**
 
 1. Proceed with the
