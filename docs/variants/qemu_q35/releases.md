@@ -6,7 +6,7 @@ QEMU Q35 (Emulator).
 ## v0.1.0 - 2023-12-06
 
 Tests reports and logs can be found
-[here](https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/).
+[here](https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu/q35/v0.1.0/).
 
 ### Added
 
