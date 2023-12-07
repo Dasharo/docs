@@ -3,7 +3,10 @@
 Following Release Notes describe status of Open Source Firmware development for
 QEMU Q35 (Emulator).
 
-## v0.1.0 - 2023-10-13
+## v0.1.0 - 2023-12-06
+
+Tests reports and logs can be found
+[here](https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/).
 
 ### Added
 
@@ -41,8 +44,10 @@ but have no actual backend hooked up:
 
 ### Binaries
 
-https://github.com/Dasharo/edk2/releases
+Binaries can be found in
+[GitHub release](https://github.com/Dasharo/edk2/releases/tag/qemu_q35_v0.1.0).
 
 ### SBOM
 
-- [Dasharo EDKII fork based on dd7523b5b1 revision TBD](https://github.com/Dasharo/edk2/tree/TBD)
+- [Dasharo EDKII fork based on dd7523b5b1 revision 11746340](https://github.com/Dasharo/edk2/tree/11746340)
+- [iPXE revision 77b07ea4](https://github.com/ipxe/ipxe/tree/77b07ea4)
