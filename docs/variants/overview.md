@@ -3,6 +3,12 @@
 Following is up to date list of hardware platforms supported by Dasharo
 open-source firmware distribution.
 
+## Emulation
+
+* Following emulation targets are supported under Dasharo Community Support:
+
+    - [QEMU Q35](qemu_q35/overview.md)
+
 ## Network appliance
 
 * Following network appliances are supported under Dasharo Support Package:

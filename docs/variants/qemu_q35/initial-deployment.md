@@ -1,9 +1,9 @@
 # Initial Deployment
 
-Initial deployment of Dasharo OVMF firmware on QEMU Q35 does not need any
+Initial deployment of Dasharo (UEFI) firmware on QEMU Q35 does not need any
 special actions. QEMU Q35 is an emulated platform, not real hardware.
 
-Running the Dasharo OVMF is as simple as invoking a QEMU command:
+Running the Dasharo (UEFI) is as simple as invoking a QEMU command:
 
 ```bash
 qemu-system-x86_64 -machine q35,smm=on \
@@ -13,3 +13,11 @@ qemu-system-x86_64 -machine q35,smm=on \
 	-debugcon file:debug.log -global isa-debugcon.iobase=0x402 \
 	-global ICH9-LPC.disable_s3=1
 ```
+
+If you use system without graphical output you may face following issues:
+
+```text
+gtk initialization failed
+```
+
+In such case add `-nographic` at the end of your command.
