@@ -436,7 +436,7 @@ nav:
               - 'Block boot when battery is low': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
               - 'Power State after Power Fail': unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
               - 'ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
-              - 'Dasharo Configuration Utility': unified-test-documentation/dasharo-compatibility/362-coreboot-customizer.md
+              - 'Dasharo Configuration Utility': unified-test-documentation/dasharo-compatibility/362-dcu.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
