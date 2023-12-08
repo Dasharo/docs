@@ -162,3 +162,37 @@ logo.
 **Expected result**
 
 During the DUT booting process, the default logo should appear on the screen.
+
+## LCM004.001 Custom logo persists after firmware update
+
+**Test description**
+
+This test aims to verify whether after updating the platform's firmware with
+the `fwupd` command, the custom added logo remains unaffected and continues to
+display.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot `Dasharo Tools Suite`
+1. Type in `9` to gain shell access.
+1. Basing on the
+   [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
+   replace the logo in an existing image.
+1. Run `dasharo-deploy update`
+1. Reboot the DUT and observe the boot logo.
+
+**Expected result**
+
+During the DUT booting process, the custom logo replacement should be
+displayed.
