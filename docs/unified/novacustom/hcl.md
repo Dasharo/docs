@@ -79,7 +79,7 @@ issue from which the report is sourced.
 
         | Manufacturer | Model | Dasharo version | Notes | Source |
         |---|---|---|---|---|
-        | Wavlink | UG69PD2 (1) | v1.7.2 | DisplayLink (2) | Official support |
+        | Wavlink | UG69PD2 (1) | v1.5.2 | DisplayLink (2) | Official support |
 
         </div>
 
@@ -90,8 +90,8 @@ issue from which the report is sourced.
 
         | Manufacturer | Model | Dasharo version | Notes | Source |
         |---|---|---|---|---|
-        | Levin | 7-in-1 Type-C Hub Pro | v1.7.2 | No issues | Official support |
-        | Generic | 8-in-1 Type-C Hub | v1.7.2 | One video output usable at a time | Official support |
+        | Levin | 7-in-1 Type-C Hub Pro | v1.5.2 | No issues | Official support |
+        | Generic | 8-in-1 Type-C Hub | v1.5.2 | One video output usable at a time | Official support |
 
     === "NV4x 11th Gen"
         <div class="annotate" markdown>
@@ -100,7 +100,7 @@ issue from which the report is sourced.
 
         | Manufacturer | Model | Dasharo version | Notes | Source |
         |---|---|---|---|---|
-        | Wavlink | UG69PD2 (1) | v1.7.2 | DisplayLink (2) | Official support |
+        | Wavlink | UG69PD2 (1) | v1.5.2 | DisplayLink (2) | Official support |
 
         </div>
 
@@ -111,8 +111,8 @@ issue from which the report is sourced.
 
         | Manufacturer | Model | Dasharo version | Notes | Source |
         |---|---|---|---|---|
-        | Levin | 7-in-1 Type-C Hub Pro | v1.7.2 | No issues | Official support |
-        | Generic | 8-in-1 Type-C Hub | v1.7.2 | One video output usable at a time | Official support |
+        | Levin | 7-in-1 Type-C Hub Pro | v1.5.2 | No issues | Official support |
+        | Generic | 8-in-1 Type-C Hub | v1.5.2 | One video output usable at a time | Official support |
 
     > **Note on DisplayLink compatibility:** DisplayLink requires a driver to
     > function correctly. On Windows, the driver should install automatically if
