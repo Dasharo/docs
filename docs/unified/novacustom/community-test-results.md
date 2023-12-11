@@ -13,12 +13,35 @@ Feel free to perform different tests and report your results via
 [Dasharo documentation repository](https://github.com/Dasharo/docs) or by using
 [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues).
 
-## Docking station compatibility list
+## Testing method
 
-This is a list of USB-C docking stations and hubs tested to work:
+You can follow the tests in
+[Dasharo Test Specification](../../unified-test-documentation/overview.md) to
+verify functionality. If you used another testing method, please describe the
+test steps in the report.
 
-| Dock / Hub | Part number | Laptop | Firmware version | Notes |
-| --- | --- | --- | --- | --- |
-| Lenovo USB-C Dock Gen2 | 40AS | NV4x 12th Gen | v0.9.0 | <ul><li>Can overdraw power from the dock, fixed in Dasharo v1.7.2</li><li>Power button not supported</li> |
-| Lenovo Universal USB-C Dock | 40AY | NV4x 12th Gen | v0.9.0 | <ul><li> Need 130W power supply option to not overdraw, fixed in Dasharo v1.7.2</li><li>Power button not supported</li> |
-| CableMatters Triple Display Travel Hub | 201431-BLK | NV4x 12th Gen | v0.9.0 | No issues |
+## Test results
+
+=== "USB-C Accessories"
+
+    This section is for USB Type-C accessories: docks, hubs, power supplies and
+    other types of peripherals.
+
+    === "NS5x/7x 12th Gen"
+        | Device | Firmware version | Notes |
+        | --- | --- | --- |
+
+    === "NV4x 12th Gen"
+        | Device | Firmware version | Notes |
+        | --- | --- | --- |
+        | Lenovo USB-C Dock Gen2 |  v0.9.0 | <ul><li>Can overdraw power from the dock, fixed in v1.7.2</li><li>Power button not supported</li> |
+        | Lenovo Universal USB-C Dock | v0.9.0 | <ul><li> Need 130W power supply option to not overdraw, fixed in v1.7.2</li><li>Power button not supported</li> |
+        | CableMatters Triple Display Travel Hub (201431-BLK) | v0.9.0 | No issues |
+
+    === "NS5x/7x 11th Gen"
+        | Device | Firmware version | Notes |
+        | --- | --- | --- |
+
+    === "NV4x 11th Gen"
+        | Device | Firmware version | Notes |
+        | --- | --- | --- |
