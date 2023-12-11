@@ -4,7 +4,7 @@ The following compatibility list contains officially supported devices and
 accessories.
 
 For unofficial test results contributed by the community, check out the
-[Community Test Results](../community-test-results) section.
+[Community Test Results](./community-test-results.md) section.
 
 === "USB-C HCL (11 Dec 2023)"
 
