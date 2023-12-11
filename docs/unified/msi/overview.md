@@ -38,7 +38,6 @@ documentation._
 * [Development](development.md) - describes information for Dasharo developers.
 * [Hardware Compatibility List](hcl.md) - describes compatible memory modules,
     processors and graphics cards tested by the community.
-* [Community test results](community-test-results.md) - describes the test
     results performed by the community.
 * [FAQ](faq.md) - answers for frequently asked questions.
 
