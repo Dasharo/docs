@@ -3,7 +3,6 @@
 We moved the page to [MSI Desktops -> Overview](../../unified/msi/overview.md)
 
 [![empty-pixel](../../images/empty_pixel.png)](building-manual.md)
-[![empty-pixel](../../images/empty_pixel.png)](community-test-results.md)
 [![empty-pixel](../../images/empty_pixel.png)](cpu-hcl.md)
 [![empty-pixel](../../images/empty_pixel.png)](gpu-hcl.md)
 [![empty-pixel](../../images/empty_pixel.png)](memory-hcl.md)
