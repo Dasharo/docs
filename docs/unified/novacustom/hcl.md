@@ -83,8 +83,8 @@ issue from which the report is sourced.
 
         </div>
 
-        3. Rev.A1
-        4. Up to 2x 5K60 supported. OS driver required.
+        1. Rev.A1
+        2. Up to 2x 5K60 supported. OS driver required.
 
         ### Hubs
 
