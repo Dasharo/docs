@@ -116,7 +116,6 @@ nav:
           - 'Fan profiles': unified/novacustom/fan-profiles.md
           - 'Firmware update using fwupd': unified/novacustom/fwupd-usage.md
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
-          - 'Community Test Results': unified/novacustom/community-test-results.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_adl/hardware-matrix.md
@@ -241,7 +240,6 @@ nav:
           - 'Development': unified/msi/development.md
           - 'FAQ': unified/msi/faq.md
           - 'Hardware Compatibility': unified/msi/hcl.md
-          - 'Community Test Results': unified/msi/community-test-results.md
           - 'MSI PRO Z690-A':
               - 'Releases': variants/msi_z690/releases.md
               - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
