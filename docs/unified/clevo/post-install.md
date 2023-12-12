@@ -91,6 +91,21 @@ power saving tweaks to enable sleep mode while a SATA disk is installed.
     curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup | sudo sh
     ```
 
+### Headset jack fix for NV4x 12th Gen
+
+The headset jack in NV4x 12th Gen (Alder Lake) needs a fix that is available
+starting with kernel version v6.0 (patch
+[be561ffad708f0cee18aee4231f80ffafaf7a419](https://github.com/torvalds/linux/commit/be561ffad708f0cee18aee4231f80ffafaf7a419)).
+If you are using an older kernel, you need to add the fix manually:
+
+1. Execute fixup script:
+
+    ```bash
+    curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/nv4x-audio-fixup | sudo sh
+    ```
+
+1. Reboot. The audio jack will now work correctly.
+
 ## Windows 11
 
 ### Updates and drivers installation
@@ -118,10 +133,10 @@ and Internet, then follow the steps below:
     The entire process may take up to 30 minutes.
 1. Repeat all steps until all updates have been installed.
 
-### Suspend fix for SATA disks (Windows and Linux)
+### Suspend fix for SATA disks
 
 Only affects laptops with M.2 SATA disks experiencing sleep issues (the power
-LED not blinking while the laptop is suspended).
+LED not blinking while the laptop is suspended)
 
 Windows and certain Linux distros such as Ubuntu do not enable the necessary
 power saving tweaks to enable sleep mode while a SATA disk is installed.
@@ -129,17 +144,14 @@ power saving tweaks to enable sleep mode while a SATA disk is installed.
 1. Download the script: [link](https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup.bat)
 2. Double click on the script to install the tweak
 
-### Headset jack fix for NV4x 12th Gen
+### Unrecognized USB Controller device in device manager
 
-The headset jack in NV4x 12th Gen (Alder Lake) needs a fix that is available
-starting with kernel version v6.0 (patch
-[be561ffad708f0cee18aee4231f80ffafaf7a419](https://github.com/torvalds/linux/commit/be561ffad708f0cee18aee4231f80ffafaf7a419)).
-If you are using an older kernel, you need to add the fix manually:
+Windows Update may sometimes fail to automatically install drivers for the
+Thunderbolt DMA controller device. The driver may be installed manually from
+the Windows Update Catalog:
 
-1. Execute fixup script:
+1. Download the update cabinet: [Windows Update link](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2023/10/12081e68-169e-483b-9180-87f40ecc6904_8aa1088bc7bd88105d5c4e4a504bfb9bdcd01078.cab)
+2. Right-click on the cabinet and select `Install` to install the driver
 
-    ```bash
-    curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/nv4x-audio-fixup | sudo sh
-    ```
-
-1. Reboot. The audio jack will now work correctly.
+After the update, Thunderbolt Control Center will become available and the
+warning in device manager will disappear.
