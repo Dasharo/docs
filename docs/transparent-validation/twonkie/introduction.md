@@ -20,25 +20,29 @@ Links:
 
 ### Preparation
 
+- USB Micro-B cable
+- Twonkie v2.0
+- USB-PD power meter
+
 For flashing and using the Twonkie, you will need to install `dfu-util` and
 `minicom`. You can find them in your Linux distro's repositories:
 
 === "Ubuntu / Debian"
 
     ```bash
-    $ sudo apt install dfu-util minicom
+    sudo apt install dfu-util minicom
     ```
 
 === "Fedora"
 
     ```bash
-    $ sudo dnf install dfu-util minicom
+    sudo dnf install dfu-util minicom
     ```
 
 === "Arch"
 
     ```bash
-    $ sudo pacman -S dfu-util minicom
+    sudo pacman -S dfu-util minicom
     ```
 
 ### Flashing
@@ -46,30 +50,40 @@ For flashing and using the Twonkie, you will need to install `dfu-util` and
 Steps to flash firmware to the Twonkie:
 
 1. Download the latest firmware from [the project's release page](https://github.com/dojoe/Twonkie/releases)
-1. While holding the SW1 button on the Twonkie, connect it to your computer using
-   a USB micro-B cable
+   In our case, for Twonkie v2.0
+1. While **holding the SW1 button** on the Twonkie, connect it to your computer
+   using a USB micro-B cable
 1. Verify in `lsusb` that the device has booted in DFU mode:
 
     ```bash
-    $ lsusb | grep 0483:df11
+    lsusb | grep 0483:df11
     Bus 003 Device 083: ID 0483:df11 STMicroelectronics STM Device in DFU Mode
     ```
+
+    > If not detected, the button was probably not pressed.
 
 1. Navigate to the location where you downloaded the firmware
 1. Flash the firmware:
 
+    > The command may take a long time to complete (~30 minutes). Do not be
+    > alarmed if progress appears to stop. The percentage counting should
+    > start after ~5 minutes.
+
     ```bash
-    $ sudo dfu-util -a 0 -s 0x08000000 -D ~/Downloads/twonkiev2-20230611.bin
+    sudo dfu-util -a 0 -s 0x08000000 -D ~/Downloads/twonkiev2-20230611.bin
     ```
 
-    > The command may take a long time to complete. Do not be alarmed if progress
-    > appears to stop.
+    > If you see ```DFU state(10) = dfuERROR, status(10) = Device's firmware is```
+    ```corrupt. It cannot return to run-time (non-DFU) operations```
+    > this is a status message from STM describing why DFU mode was entered.
+    > Flashing is probably working properly
+
 1. Disconnect and reconnect the newly flashed Twonkie to reboot it into the
    firmware
 1. Verify in `lsusb` that the device has booted into firmware:
 
     ```bash
-    $ lsusb | grep 18d1:500a
+    lsusb | grep 18d1:500a
     Bus 003 Device 084: ID 18d1:500a Google Inc. Twinkie
     ```
 
@@ -80,10 +94,13 @@ Steps to flash firmware to the Twonkie:
 1. Open minicom on Twonkie's console:
 
     ```bash
-    $ sudo minicom -D /dev/ttyUSB0
+    sudo minicom -D /dev/ttyUSB0
     ```
 
 1. Type in `tw trace on` to start logging
+
+   > LEDs stops lighting
+
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power sink
 ![Twonkie connected between a laptop and PD charger](./../../images/twonkie_sniffing.jpg)
 1. Verify that the device is charging and logs appear on the screen
@@ -116,7 +133,7 @@ Example output:
 1. Open minicom on Twonkie's console:
 
     ```bash
-    $ sudo minicom -D /dev/ttyUSB0
+    sudo minicom -D /dev/ttyUSB0
     ```
 
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power sink
@@ -135,7 +152,7 @@ VBUS = 20112 mV ; -1274 mA
 1. Open minicom on Twonkie's console:
 
     ```bash
-    $ sudo minicom -D /dev/ttyUSB0
+    sudo minicom -D /dev/ttyUSB0
     ```
 
 1. Connect a twonkie between a USB-PD power supply and a USB-PD power meter
@@ -145,6 +162,10 @@ VBUS = 20112 mV ; -1274 mA
 1. Verify that the power meter turns on and displays 20V measured at the USB-C
    plug
 1. Verify that the RGB LED has changed its color to red
+
+    > - For the 5V limit the LEDs are GREEN.
+    > - For the 9V, 12V, 15V limit the LEDs are BLUE.
+    > - For the 20V limit the LEDs are RED.
 
 Example of a successful test:
 
