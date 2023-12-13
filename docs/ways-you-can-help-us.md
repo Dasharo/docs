@@ -15,6 +15,21 @@ Here is invitation [link](https://matrix.to/#/#dasharo:matrix.org).
 Inside you will find multiple rooms. The main discussion happens in "Dasharo -
 General".
 
+## Join Dasharo Beta Testing Group
+
+Dasharo Beta Testing Group is a group of users who help make Dasharo better. They
+are willing to flash their devicies with Release Candidates (RC) firmware binaries
+and provide test results by reporting issues or confirming fixes.
+
+Members of this community will have access to invite-only Dasharo Space channel,
+where calls for testing for the particular, RC versions of firmwares will be
+announced.
+
+If you want to join the community, please send an
+[e-mail](mailto:contact@dasharo.com?subject=DasharoBeta) with following information:
+1. Matrix nickname
+2. Which Dasharo supported device(s) you are willing to test
+
 ## Join Dasharo open-source firmware vPub
 
 We encourage you to join us at our vPub parties, which we hold 3-4x / year in
