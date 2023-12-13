@@ -35,6 +35,9 @@ If you want to use a browser for a live preview while you keep making changes,
 consider adding `--dirty` flag to `mkdocs serve` command. It limits automatic
 regeneration to only changed files and makes browser updates much faster.
 
+If you need to update the environment (for example, if `requirements.txt` was
+updated), just run `rm -r venv` and re-run the steps above.
+
 ### Broken links checker
 
 Currently we are using [lychee](https://github.com/lycheeverse/lychee) a fast,
