@@ -60,8 +60,7 @@ for the NV41 platforms.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
-|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
+| **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
 | **Power Control**              | SonOff S26                                       |
 | **KVM**                        | PiKVM based on Raspberry Pi 4                    |
@@ -87,8 +86,9 @@ for the NV41 platforms.
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
-| **Attached devices**           | Thunderbolt 4 Port: Wavlink 100W PD Pro docking station |
-|                                | USB Type-C Port: Adapter USB-C-RJ45 with connected Ethernet cable |
+| **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
 | **Power Control**              | SonOff S26                                       |
 | **KVM**                        | PiKVM based on Raspberry Pi 4                    |
+
+[HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#nv4x-11th-gen
