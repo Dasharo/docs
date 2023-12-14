@@ -27,6 +27,7 @@ announced.
 
 If you want to join the community, please send an
 [e-mail](mailto:contact@dasharo.com?subject=DasharoBeta) with following information:
+
 1. Matrix nickname
 2. Which Dasharo supported device(s) you are willing to test
 
