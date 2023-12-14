@@ -15,6 +15,35 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
+## v1.2.9 - 2023-09-29
+
+### Images
+
+[USB bootable DTS v1.2.9 image][USB_DTS_v1.2.9]{ .md-button }
+[sha256][USB_DTS_sha_v1.2.9]{ .md-button }
+[sha256.sig][USB_DTS_sig_v1.2.9]{ .md-button }
+
+[DTS v1.2.8 ISO image][ISO_DTS_v1.2.9]{ .md-button }
+[sha256 ISO][ISO_DTS_sha_v1.2.9]{ .md-button }
+[sha256.sig ISO][ISO_DTS_sig_v1.2.9]{ .md-button }
+
+[USB_DTS_v1.2.9]: https://3mdeb.com/open-source-firmware/DTS/v1.2.9/dts-base-image-v1.2.9.wic.gz-TBD
+[USB_DTS_sha_v1.2.9]: https://3mdeb.com/open-source-firmware/DTS/v1.2.9/dts-base-image-v1.2.9.wic.gz.sha256-TBD
+[USB_DTS_sig_v1.2.9]: https://3mdeb.com/open-source-firmware/DTS/v1.2.9/dts-base-image-v1.2.9.wic.gz.sha256.sig-TBD
+[ISO_DTS_v1.2.9]: https://3mdeb.com/open-source-firmware/DTS/v1.2.9/dts-base-image-v1.2.9.iso-TBD
+[ISO_DTS_sha_v1.2.9]: https://3mdeb.com/open-source-firmware/DTS/v1.2.9/dts-base-image-v1.2.9.iso.sha256-TBD
+[ISO_DTS_sig_v1.2.9]: https://3mdeb.com/open-source-firmware/DTS/v1.2.9/dts-base-image-v1.2.9.iso.sha256.sig-TBD
+
+  To verify binary integrity with hash and signature please follow the
+  instructions in [Dasharo release signature verification](/guides/signature-verification)
+  using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.2.x-signing-key-pub.asc)
+
+### Changelog
+
+Please, refer to
+[changelog](https://github.com/Dasharo/meta-dts/blob/main/CHANGELOG.md#v129---2023-09-29)
+stored in `meta-dts` repository.
+
 ## v1.2.8 - 2023-09-06
 
 ### Images
