@@ -30,7 +30,7 @@ firmware:
   firmware. [Discover the freedom →](/osf-trivia-list/dasharo/#future-work)
 
 <center>
-[**Learn More**](/osf-trivia-list/dasharo.md) | [**Visit Dasharo's
+[**Learn More**](osf-trivia-list/dasharo.md) | [**Visit Dasharo's
 Homepage**](https://dasharo.com/)
 </center>
 
