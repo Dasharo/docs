@@ -324,3 +324,155 @@ Sleep mode should be entered correctly on each attempt.
 
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
+
+## SPM005.001 2x warmboot cycle (Battery) (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify the stability of the warmboot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Perform warmboot.
+1. Ensure the S5 has been entered (i.e. power LED is off or
+   or is orange, depending on platform)
+1. Wait at least 60 seconds
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Verify basic functionality remains functional
+1. Repeat steps 4-10.
+
+**Expected result**
+
+Sleep mode should be entered correctly on each attempt.
+
+Waking up should proceed without issues on each attempt. All basic functionality
+(i.e. builtin keyboard, touchpad, display etc) should keep working.
+
+## SPM005.002 2x warmboot cycle (Battery) (Windows 11)
+
+**Test description**
+
+This test aims to verify the stability of the warmboot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Perform warmboot.
+1. Ensure the S5 has been entered (i.e. power LED is off or
+   or is orange, depending on platform)
+1. Wait at least 60 seconds
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Verify basic functionality remains functional
+1. Repeat steps 4-10.
+
+**Expected result**
+
+Sleep mode should be entered correctly on each attempt.
+
+Waking up should proceed without issues on each attempt. All basic functionality
+(i.e. builtin keyboard, touchpad, display etc) should keep working.
+
+## SPM006.001 2x warmboot cycle (AC) (Ubuntu 22.04)
+
+**Test description**
+
+This test aims to verify the stability of the warmboot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Perform warmboot.
+1. Ensure the S5 has been entered (i.e. power LED is off or
+   or is orange, depending on platform)
+1. Wait at least 60 seconds
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Verify basic functionality remains functional
+1. Repeat steps 4-10.
+
+**Expected result**
+
+Sleep mode should be entered correctly on each attempt.
+
+Waking up should proceed without issues on each attempt. All basic functionality
+(i.e. builtin keyboard, touchpad, display etc) should keep working.
+
+## SPM006.002 2x warmboot cycle (AC) (Windows 11)
+
+**Test description**
+
+This test aims to verify the stability of the warmboot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows 11
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Perform warmboot.
+1. Ensure the S5 has been entered (i.e. power LED is off or
+   or is orange, depending on platform)
+1. Wait at least 60 seconds
+1. Power on the DUT.
+1. Boot into OS.
+1. Log into the system.
+1. Verify basic functionality remains functional
+1. Repeat steps 4-10.
+
+**Expected result**
+
+Sleep mode should be entered correctly on each attempt.
+
+Waking up should proceed without issues on each attempt. All basic functionality
+(i.e. builtin keyboard, touchpad, display etc) should keep working
