@@ -34,6 +34,39 @@ to use.
 
 This section describes how to boot DTS using iPXE.
 
+#### Temporary Suspension of Network Booting for DTS
+
+We wish to inform you of an important security concern that has been identified
+in the Dasharo Tools Suite (DTS). As detailed in [Issue
+450](https://github.com/Dasharo/dasharo-issues/issues/450) on our GitHub
+repository, it has come to our attention that the DTS is currently being
+downloaded via HTTP when booting through iPXE. This method, unfortunately,
+exposes users to potential man-in-the-middle attacks due to the lack of
+encryption and security features inherent in HTTP.
+
+##### What This Means for You
+
+* The use of HTTP instead of HTTPS for downloading DTS poses a significant
+  security risk, potentially allowing unauthorized access or alteration of the
+  DTS during download.
+* As a precaution, we strongly advise against using the network boot feature
+  for DTS until this issue is resolved.
+
+##### Our Immediate Actions
+
+* We are actively working on resolving this issue by implementing HTTPS for DTS
+  downloads. Our team is committed to ensuring the security and integrity of
+  our software.
+* Until a fix is deployed, we recommend users to manually download the DTS
+  image and use alternative methods such as booting from a USB drive.
+
+##### Your Security is Our Priority
+
+* We understand the importance of security in your operations and apologize for
+  any inconvenience this may cause.
+* We are dedicated to resolving this issue promptly and will provide updates as
+  soon as a solution is available.
+
 #### Requirements
 
 Below are the requirements that must be met to run DTS over a network on the
