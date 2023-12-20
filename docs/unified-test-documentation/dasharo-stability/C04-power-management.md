@@ -43,8 +43,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
@@ -83,8 +82,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
@@ -123,8 +121,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
@@ -163,8 +160,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
@@ -177,7 +173,7 @@ Waking up should proceed without issues on each attempt. All basic functionality
 
 **Test description**
 
-This test aims to verify the stability of the S0ix / Modern Standby sleep state.
+This test aims to verify the stability of the S3 / sleep-to-ram state.
 
 **Test configuration data**
 
@@ -203,8 +199,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
@@ -217,7 +212,7 @@ Waking up should proceed without issues on each attempt. All basic functionality
 
 **Test description**
 
-This test aims to verify the stability of the S0ix / Modern Standby sleep state.
+This test aims to verify the stability of the S3 / sleep-to-ram state.
 
 **Test configuration data**
 
@@ -243,8 +238,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
@@ -257,7 +251,7 @@ Waking up should proceed without issues on each attempt. All basic functionality
 
 **Test description**
 
-This test aims to verify the stability of the S0ix / Modern Standby sleep state.
+This test aims to verify the stability of the S3 / sleep-to-ram state.
 
 **Test configuration data**
 
@@ -283,8 +277,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
@@ -297,7 +290,7 @@ Waking up should proceed without issues on each attempt. All basic functionality
 
 **Test description**
 
-This test aims to verify the stability of the S0ix / Modern Standby sleep state.
+This test aims to verify the stability of the S3 / sleep-to-ram state.
 
 **Test configuration data**
 
@@ -323,8 +316,7 @@ This test aims to verify the stability of the S0ix / Modern Standby sleep state.
 1. Wait at least 60 seconds
 1. Wake up the DUT
 1. Verify basic functionality remains functional
-1. Put the DUT to sleep again
-1. Wake up the DUT
+1. Repeat steps 7-11.
 
 **Expected result**
 
