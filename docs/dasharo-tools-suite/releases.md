@@ -15,6 +15,9 @@ Process](../dev-proc/standard-release-process.md).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
 
+Versions after `v1.2.11` are published on `meta-dts` GitHub repository, inside
+[Releases](https://github.com/Dasharo/meta-dts/releases) tab.
+
 ## v1.2.11 - 2023-11-03
 
 ### Images
