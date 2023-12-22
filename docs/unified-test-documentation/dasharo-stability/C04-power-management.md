@@ -346,10 +346,10 @@ This test aims to verify the stability of the warmboot.
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
-1. Perform warmboot.
-1. Ensure the S5 has been entered (i.e. power LED is off or
-   or is orange, depending on platform)
-1. Wait at least 60 seconds
+1. Shut down the DUT via the OS's UI.
+1. Ensure DUT has shut down completely (i.e. Power LED turns off or changes
+   color)
+1. Wait least 60 seconds
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
@@ -358,10 +358,11 @@ This test aims to verify the stability of the warmboot.
 
 **Expected result**
 
-Sleep mode should be entered correctly on each attempt.
+Shutdown should proceed correctly on each attempt.
 
-Waking up should proceed without issues on each attempt. All basic functionality
-(i.e. builtin keyboard, touchpad, display etc) should keep working.
+Powering on should proceed without issues on each attempt. All basic
+functionality (i.e. builtin keyboard, touchpad, display etc) should keep
+working.
 
 ## SPM005.002 2x warmboot cycle (Battery) (Windows 11)
 
@@ -384,10 +385,10 @@ This test aims to verify the stability of the warmboot.
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
-1. Perform warmboot.
-1. Ensure the S5 has been entered (i.e. power LED is off or
-   or is orange, depending on platform)
-1. Wait at least 60 seconds
+1. Shut down the DUT via the OS's UI.
+1. Ensure DUT has shut down completely (i.e. Power LED turns off or changes
+   color)
+1. Wait least 60 seconds
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
@@ -396,10 +397,11 @@ This test aims to verify the stability of the warmboot.
 
 **Expected result**
 
-Sleep mode should be entered correctly on each attempt.
+Shutdown should proceed correctly on each attempt.
 
-Waking up should proceed without issues on each attempt. All basic functionality
-(i.e. builtin keyboard, touchpad, display etc) should keep working.
+Powering on should proceed without issues on each attempt. All basic
+functionality (i.e. builtin keyboard, touchpad, display etc) should keep
+working.
 
 ## SPM006.001 2x warmboot cycle (AC) (Ubuntu 22.04)
 
@@ -422,10 +424,10 @@ This test aims to verify the stability of the warmboot.
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
-1. Perform warmboot.
-1. Ensure the S5 has been entered (i.e. power LED is off or
-   or is orange, depending on platform)
-1. Wait at least 60 seconds
+1. Shut down the DUT via the OS's UI.
+1. Ensure DUT has shut down completely (i.e. Power LED turns off or changes
+   color)
+1. Wait least 60 seconds
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
@@ -434,10 +436,11 @@ This test aims to verify the stability of the warmboot.
 
 **Expected result**
 
-Sleep mode should be entered correctly on each attempt.
+Shutdown should proceed correctly on each attempt.
 
-Waking up should proceed without issues on each attempt. All basic functionality
-(i.e. builtin keyboard, touchpad, display etc) should keep working.
+Powering on should proceed without issues on each attempt. All basic
+functionality (i.e. builtin keyboard, touchpad, display etc) should keep
+working.
 
 ## SPM006.002 2x warmboot cycle (AC) (Windows 11)
 
@@ -460,10 +463,10 @@ This test aims to verify the stability of the warmboot.
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
-1. Perform warmboot.
-1. Ensure the S5 has been entered (i.e. power LED is off or
-   or is orange, depending on platform)
-1. Wait at least 60 seconds
+1. Shut down the DUT via the OS's UI.
+1. Ensure DUT has shut down completely (i.e. Power LED turns off or changes
+   color)
+1. Wait least 60 seconds
 1. Power on the DUT.
 1. Boot into OS.
 1. Log into the system.
@@ -472,7 +475,8 @@ This test aims to verify the stability of the warmboot.
 
 **Expected result**
 
-Sleep mode should be entered correctly on each attempt.
+Shutdown should proceed correctly on each attempt.
 
-Waking up should proceed without issues on each attempt. All basic functionality
-(i.e. builtin keyboard, touchpad, display etc) should keep working
+Powering on should proceed without issues on each attempt. All basic
+functionality (i.e. builtin keyboard, touchpad, display etc) should keep
+working.
