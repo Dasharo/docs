@@ -1,17 +1,17 @@
 # Dasharo Openness Score
 
-Openness Score for novacustom_nv4x_adl_v1.7.1_full.rom
+Openness Score for novacustom_nv4x_adl_v1.7.2_full.rom
 
-Open-source code percentage: **34.9%**
-Closed-source code percentage: **65.1%**
+Open-source code percentage: **35.1%**
+Closed-source code percentage: **64.9%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 27
 * Number of CBFSes: 3
-* Total open-source code size: 4558876 (0x45901c)
+* Total open-source code size: 4587012 (0x45fe04)
 * Total closed-source code size: 8497434 (0x81a91a)
-* Total data size: 686483 (0xa7993)
-* Total empty size: 19811639 (0x12e4d37)
+* Total data size: 686541 (0xa79cd)
+* Total empty size: 19783445 (0x12ddf15)
 
 ![](openness_chart.png)
 
@@ -56,68 +56,68 @@ Closed-source code percentage: **65.1%**
  > which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
-| ------------ | ------------- | ---- | ----------- | -------- |
+| ------------- | ------------- | ---- | ----------- | -------- |
 | (empty) | null | 1048548 | none | empty |
 
 ## CBFS FW_MAIN_A
 
 * CBFS size: 10903488
 * Number of files: 13
-* Open-source files size: 2229678 (0x2205ae)
+* Open-source files size: 2243746 (0x223ca2)
 * Closed-source files size: 1629325 (0x18dc8d)
-* Data size: 8698 (0x21fa)
-* Empty size: 7035787 (0x6b5b8b)
+* Data size: 8744 (0x2228)
+* Empty size: 7021673 (0x6b2469)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
  > which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
-| ------------ | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 95160 | none | open-source |
-| fallback/ramstage | stage | 152839 | LZMA | open-source |
-| fallback/dsdt.aml | raw | 22894 | none | open-source |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/romstage | stage | 95456 | none | open-source |
+| fallback/ramstage | stage | 152955 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 22564 | none | open-source |
 | fallback/postcar | stage | 42408 | none | open-source |
-| fallback/payload | simple elf | 1916377 | none | open-source |
+| fallback/payload | simple elf | 1930363 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 546816 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 296077 | LZ4 | closed-source |
-| config | raw | 5475 | LZMA | data |
+| config | raw | 5485 | LZMA | data |
 | revision | raw | 856 | none | data |
 | build_info | raw | 98 | none | data |
 | vbt.bin | raw | 1290 | LZMA | data |
-| (empty) | null | 1188 | none | empty |
+| (empty) | null | 1060 | none | empty |
 
 ## CBFS COREBOOT
 
 * CBFS size: 4161536
 * Number of files: 18
-* Open-source files size: 2329198 (0x238a6e)
+* Open-source files size: 2343266 (0x23c162)
 * Closed-source files size: 1629325 (0x18dc8d)
-* Data size: 10045 (0x273d)
-* Empty size: 192968 (0x2f1c8)
+* Data size: 10057 (0x2749)
+* Empty size: 178888 (0x2bac8)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
  > which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
-| ------------ | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 95160 | none | open-source |
-| fallback/ramstage | stage | 152839 | LZMA | open-source |
-| fallback/dsdt.aml | raw | 22894 | none | open-source |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/romstage | stage | 95456 | none | open-source |
+| fallback/ramstage | stage | 152955 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 22564 | none | open-source |
 | fallback/postcar | stage | 42408 | none | open-source |
-| fallback/payload | simple elf | 1916377 | none | open-source |
+| fallback/payload | simple elf | 1930363 | none | open-source |
 | bootblock | bootblock | 99520 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 546816 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 296077 | LZ4 | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| config | raw | 5475 | LZMA | data |
+| config | raw | 5485 | LZMA | data |
 | revision | raw | 856 | none | data |
 | build_info | raw | 98 | none | data |
 | vbt.bin | raw | 1290 | LZMA | data |
 | cmos_layout.bin | cmos_layout | 800 | none | data |
-| (empty) | null | 36 | none | empty |
-| (empty) | null | 192932 | none | empty |
+| (empty) | null | 804 | none | empty |
+| (empty) | null | 178084 | none | empty |
