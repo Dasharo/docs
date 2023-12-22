@@ -60,6 +60,7 @@ Test results for this release can be found
 - [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
 - [Turning wifi/bt off inside BIOS leads to an ACPI error message while system start on Gentoo Linux](https://github.com/Dasharo/dasharo-issues/issues/638)
 - [The laptop does not automatically wake up from hibernation using rtcwake](https://github.com/Dasharo/dasharo-issues/issues/485)
+- [Power state after power failure option does not work as intended](https://github.com/Dasharo/dasharo-issues/issues/524)
 
 ### Binaries
 
