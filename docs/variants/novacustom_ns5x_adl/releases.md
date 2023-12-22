@@ -48,6 +48,7 @@ Test results for this release can be found
 - [Thunderbolt may not work after wakeup from sleep](https://github.com/Dasharo/dasharo-issues/issues/629)
 - [Unnecessary security warning after firmware update](https://github.com/Dasharo/dasharo-issues/issues/556)
 - [Early boot DMA protection setting in UEFI does not work correctly](https://github.com/Dasharo/dasharo-issues/issues/630)
+- [Power state after power failure option does not work as intended](https://github.com/Dasharo/dasharo-issues/issues/524)
 
 ### Known issues
 
