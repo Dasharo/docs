@@ -16,7 +16,7 @@ For details about our release process please read
 ## v1.7.2 - 2023-12-22
 
 Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=799846462).
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=1371018314).
 
 ### Added
 
