@@ -67,7 +67,8 @@ platform:
 * wired network connection,
 * [Secure Boot disabled](#disabling-secure-boot),
 * disabled BIOS lock feature (if device is already flashed with Dasharo),
-* latest image from [releases](./releases.md) section.
+* latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
+  section.
 
 #### Launching DTS
 
@@ -630,9 +631,9 @@ Now your `custom-script` script should be copied to DTS rootfs as
 
 #### Run DTS using VentoyOS
 
-Starting from version [v1.1.1](./releases.md#v111), we provide also an ISO
-formatted image. Thanks to that, it can be used with VentoyOS[1]. As for now the
-following limitations are known.
+Starting from version v1.1.1, we provide also an ISO formatted image. Thanks to
+that, it can be used with VentoyOS[1]. As for now the following limitations are
+known.
 
 * VentoyOS needs to be started in UEFI mode.
 * Nothing can be saved on root file system, as VentoyOS boots systems in
