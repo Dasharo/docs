@@ -1,26 +1,33 @@
 # Dasharo Openness Score
 
+This page contains the [Dasharo Openness
+Score](../../glossary.md#dasharo-openness-score) for NovaCustom NV4XPZ Dasharo
+releases. The content of the page is generated with [Dasharo Openness Score
+utility](https://github.com/Dasharo/Openness-Score).
+
+## v1.7.2
+
 Openness Score for novacustom_nv4x_adl_v1.7.2_full.rom
 
-Open-source code percentage: **35.1%**
-Closed-source code percentage: **64.9%**
+Open-source code percentage: **33.1%**
+Closed-source code percentage: **66.9%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 27
 * Number of CBFSes: 3
-* Total open-source code size: 4587012 (0x45fe04)
-* Total closed-source code size: 8497434 (0x81a91a)
+* Total open-source code size: 4326844 (0x4205bc)
+* Total closed-source code size: 8757602 (0x85a162)
 * Total data size: 686541 (0xa79cd)
 * Total empty size: 19783445 (0x12ddf15)
 
-![](openness_chart.png)
+![](novacustom_nv4x_adl_v1.7.2_full.rom_openness_chart.png)
 
-![](openness_chart_full_image.png)
+![](novacustom_nv4x_adl_v1.7.2_full.rom_openness_chart_full_image.png)
 
 > Numbers given above already include the calculations from CBFS regions
 > presented below
 
-## FMAP regions
+### FMAP regions
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
@@ -42,7 +49,7 @@ Closed-source code percentage: **64.9%**
 | GBB | 0x1c05000 | 0x3000 | data |
 | UNUSED | 0x500000 | 0xb00000 | empty |
 
-## CBFS BOOTSPLASH
+### CBFS BOOTSPLASH
 
 * CBFS size: 1048576
 * Number of files: 1
@@ -53,24 +60,24 @@ Closed-source code percentage: **64.9%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
 | (empty) | null | 1048548 | none | empty |
 
-## CBFS FW_MAIN_A
+### CBFS FW_MAIN_A
 
 * CBFS size: 10903488
 * Number of files: 13
-* Open-source files size: 2243746 (0x223ca2)
-* Closed-source files size: 1629325 (0x18dc8d)
+* Open-source files size: 2113662 (0x20407e)
+* Closed-source files size: 1759409 (0x1ad8b1)
 * Data size: 8744 (0x2228)
 * Empty size: 7021673 (0x6b2469)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -88,18 +95,18 @@ Closed-source code percentage: **64.9%**
 | vbt.bin | raw | 1290 | LZMA | data |
 | (empty) | null | 1060 | none | empty |
 
-## CBFS COREBOOT
+### CBFS COREBOOT
 
 * CBFS size: 4161536
 * Number of files: 18
-* Open-source files size: 2343266 (0x23c162)
-* Closed-source files size: 1629325 (0x18dc8d)
+* Open-source files size: 2213182 (0x21c53e)
+* Closed-source files size: 1759409 (0x1ad8b1)
 * Data size: 10057 (0x2749)
 * Empty size: 178888 (0x2bac8)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
