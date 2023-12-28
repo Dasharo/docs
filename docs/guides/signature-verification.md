@@ -46,7 +46,89 @@ site, please follow the instructions below:
     gpg --check-signatures "Dasharo" "3mdeb"
     ```
 
-3. Download the binaries, SHA sums and their signature files
+3. Optionally set the trust level on the imported keys (if you have not done
+   so yet), for example `Dasharo Master Key`:
+
+    ```bash
+    gpg --edit-key 0D5F6F1DA800329EB7C597A2ABE1D0BC66278008
+    gpg (GnuPG) 2.4.3; Copyright (C) 2023 g10 Code GmbH
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+
+    pub  rsa4096/ABE1D0BC66278008
+        created: 2021-02-03  expires: 2026-02-02  usage: SC
+        trust: undefined     validity: undefined
+    sub  rsa4096/EF3E219237E312A8
+        created: 2021-02-03  expires: 2026-02-02  usage: E
+    [  undef ] (1). 3mdeb Dasharo Master Key
+
+    gpg> trust
+    pub  rsa4096/ABE1D0BC66278008
+        created: 2021-02-03  expires: 2026-02-02  usage: SC
+        trust: undefined     validity: undefined
+    sub  rsa4096/EF3E219237E312A8
+        created: 2021-02-03  expires: 2026-02-02  usage: E
+    [  undef ] (1). 3mdeb Dasharo Master Key
+
+    Please decide how far you trust this user to correctly verify other users' keys
+    (by looking at passports, checking fingerprints from different sources, etc.)
+
+        1 = I don't know or won't say
+        2 = I do NOT trust
+        3 = I trust marginally
+        4 = I trust fully
+        5 = I trust ultimately
+        m = back to the main menu
+
+    Your decision? 5
+    Do you really want to set this key to ultimate trust? (y/N) y
+
+    pub  rsa4096/ABE1D0BC66278008
+        created: 2021-02-03  expires: 2026-02-02  usage: SC
+        trust: ultimate      validity: undefined
+    sub  rsa4096/EF3E219237E312A8
+        created: 2021-02-03  expires: 2026-02-02  usage: E
+    [  undef ] (1). 3mdeb Dasharo Master Key
+    Please note that the shown key validity is not necessarily correct
+    unless you restart the program.
+    ```
+
+    Setting the trust level of master key to ultimate will imply the full trust
+    of the release signing keys. With full trust in the release signing keys,
+    the warning:
+
+    ```bash
+    gpg: WARNING: This key is not certified with a trusted signature!
+    gpg:          There is no indication that the signature belongs to the owner.
+    ```
+
+    will not appear (full trust or stronger). Set the trust level based on how
+    you trust the keys (if you have validated them properly, obtained from
+    legitimate source, etc.). After exiting the gpg program and editing the key
+    again the trust level will be updated:
+
+    ```bash
+    gpg --edit-key 0D5F6F1DA800329EB7C597A2ABE1D0BC66278008
+    gpg (GnuPG) 2.4.3; Copyright (C) 2023 g10 Code GmbH
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+
+    gpg: checking the trustdb
+    gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+    gpg: depth: 0  valid:   4  signed:  10  trust: 0-, 0q, 0n, 0m, 0f, 4u
+    gpg: depth: 1  valid:  10  signed:   0  trust: 10-, 0q, 0n, 0m, 0f, 0u
+    gpg: next trustdb check due at 2024-03-24
+    pub  rsa4096/ABE1D0BC66278008
+        created: 2021-02-03  expires: 2026-02-02  usage: SC
+        trust: ultimate      validity: ultimate
+    sub  rsa4096/EF3E219237E312A8
+        created: 2021-02-03  expires: 2026-02-02  usage: E
+    [ultimate] (1). 3mdeb Dasharo Master Key
+    ```
+
+4. Download the binaries, SHA sums and their signature files
 
     ```bash
     export BIN_URL=https://3mdeb.com/open-source-firmware/Dasharo/...
@@ -56,7 +138,7 @@ site, please follow the instructions below:
     wget ${BIN_URL} ${BIN_URL}.sha256 ${BIN_URL}.sha256.sig
     ```
 
-4. Verify the signatures and binary integrity:
+5. Verify the signatures and binary integrity:
 
     ```bash
     gpg -v --verify `basename $BIN_URL`.sha256.sig `basename $BIN_URL`.sha256
