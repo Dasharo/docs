@@ -51,6 +51,18 @@ encryption and security features inherent in HTTP.
   DTS during download.
 * As a precaution, we strongly advise against using the network boot feature
   for DTS until this issue is resolved.
+* To perform firmware updates with DTS, we strongly recommend booting DTS from
+  an USB drive. This implies the flash locks have to be disabled manually via
+  Dasharo setup - see [Requirements](#requirements-1). [Firmware Update
+  Mode](../guides/firmware-update.md#firmware-update-mode) cannot be used for
+  that purpose due to the usage of network booted DTS in Firmware Update Mode
+  flow.
+* Booting DTS over network via HTTPS can be safely used when running the
+  following releases:
+    - NovaCustom 12th Gen 1.7.2 and newer,
+    - NovaCustom 11th Gen 1.5.2 and newer,
+    - MSI PRO Z690-A 1.1.3 and newer,
+    - MSI PRO Z790-P 0.9.1 and newer.
 
 ##### Our Immediate Actions
 
@@ -75,7 +87,9 @@ platform:
 * Dasharo device with DTS functionality integrated,
 * wired network connection,
 * [Secure Boot disabled](#disabling-secure-boot),
-* disabled BIOS lock feature (if device is already flashed with Dasharo).
+* disabled BIOS lock feature (if device is already flashed with Dasharo),
+* disabled SMM BIOS write protection feature (if device is already flashed
+  with Dasharo).
 
 #### Launching DTS
 
@@ -102,6 +116,8 @@ platform:
 * disabled BIOS lock feature (if device is already flashed with Dasharo),
 * latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
   section.
+* disabled SMM BIOS write protection feature (if device is already flashed
+  with Dasharo).
 
 #### Launching DTS
 
