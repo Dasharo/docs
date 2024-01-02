@@ -107,11 +107,14 @@ which will cause the `Advanced Secure Boot Keys Management` submenu to appear.
 
 * `Reset to default Secure Boot Keys` will cause the following keys/certificates
   to be enrolled:
-    - [Microsoft KEK certificate](https://go.microsoft.com/fwlink/?LinkId=321185),
+    - [Microsoft Corporation KEK CA 2011](https://go.microsoft.com/fwlink/?LinkId=321185),
+    - [Microsoft Corporation KEK 2K CA 2023](https://go.microsoft.com/fwlink/p/?linkid=2239775),
     - Microsoft Signature Database (db) consisting of:
         + [Microsoft Windows Production PCA 2011](https://go.microsoft.com/fwlink/p/?linkid=321192)
+          and [Windows UEFI CA 2023](https://go.microsoft.com/fwlink/p/?linkid=2239776)
           to allow Windows OS Loader to load,
         + [Microsoft Corporation UEFI CA 2011](https://go.microsoft.com/fwlink/p/?linkid=321194)
+          and [Microsoft UEFI CA 2023](https://go.microsoft.com/fwlink/?linkid=2239872)
           to load OEM-approved UEFI drivers and applications (e.g. [shim](https://github.com/rhboot/shim)),
     - Microsoft Forbidden Signature Database (dbx) published as
      [UEFI Revocation List File on uefi.org](https://www.uefi.org/revocationlistfile),
