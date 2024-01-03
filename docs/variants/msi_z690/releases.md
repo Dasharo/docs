@@ -14,7 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
-## v1.1.3 - 2023-11-27
+## v1.1.3 - 2024-01-03
 
 ### Added
 
@@ -46,6 +46,7 @@ Test results for this platform can be found
 - Enroll default UEFI Secure Boot keys on the first boot
 - [Improved UEFI Secure Boot menu user experience](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
 - Scope of reset to default hotkey to global in firmware setup
+- Booting DTS over iPXE via HTTPS
 
 ### Fixed
 
@@ -81,12 +82,12 @@ subscription via Dasharo Entry Subscription newsletter.
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.21 revision b9890a5c](https://github.com/Dasharo/coreboot/tree/b9890a5c)
+- [Dasharo coreboot fork based on 4.21 revision e704a403](https://github.com/Dasharo/coreboot/tree/e704a403)
 - [Dasharo EDKII fork based on edk2-stable202002 revision 11746340](https://github.com/Dasharo/edk2/tree/11746340)
 - [iPXE based on 2023.8 revision 9e99a55b](https://github.com/ipxe/ipxe/tree/9e99a55b)
 - [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
-- [Intel Management Engine based on v16.1.30.2307 revision ce7d26a1](https://github.com/Dasharo/dasharo-blobs/blob/ce7d26a1/msi/ms7d25/me.bin)
-- [Intel Flash Descriptor based on v1.0 revision ce7d26a1](https://github.com/Dasharo/dasharo-blobs/blob/ce7d26a1/msi/ms7d25/descriptor.bin)
+- [Intel Management Engine based on v16.1.30.2307 revision d4e4dca1](https://github.com/Dasharo/dasharo-blobs/blob/d4e4dca1/msi/ms7d25/me.bin)
+- [Intel Flash Descriptor based on v1.0 revision d4e4dca1](https://github.com/Dasharo/dasharo-blobs/blob/d4e4dca1/msi/ms7d25/descriptor.bin)
 - [Intel Firmware Support Package based on RPL-S C.0.BD.40 revision 481ea7cf](https://github.com/intel/FSP/tree/481ea7cf/RaptorLakeFspBinPkg/Client/RaptorLakeS)
 - [Intel microcode based on ADL/RPL C0/H0 0x0000002e revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-97-05)
 - [Intel microcode based on RPL B0 0x00000119 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-b7-01)
