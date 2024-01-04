@@ -3,20 +3,11 @@
 Following Release Notes describe the status of Open Source Software development
 for Dasharo Tools Suite.
 
-<!--
-TBD: provide release process for DTS
-For details about our release process, please read [Dasharo Standard Release
-Process](../dev-proc/standard-release-process.md).
--->
-<center>
-[Subscribe to Dasharo Tools Suite Newsletter]
-[newsletter]{.md-button .md-button--primary .center}
-</center>
-
-[newsletter]: https://newsletter.3mdeb.com/subscription/ttzqCq9fy
+## Latest release
 
 Versions after `v1.2.11` are published on `meta-dts` GitHub repository, inside
-[Releases](https://github.com/Dasharo/meta-dts/releases) tab.
+[Releases](https://github.com/Dasharo/meta-dts/releases) tab so latest image can
+be downloaded from there.
 
 ## v1.2.11 - 2023-11-03
 
