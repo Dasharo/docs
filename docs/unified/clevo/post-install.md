@@ -77,6 +77,14 @@ install additional Nvidia drivers.
 
 ![](/images/nv4x_nvidia_panel.jpg){ class="center" }
 
+1. If for some reason dynamic power management for the GPU is not working
+   (causing high power draw, poor sleep time or high temperatures), you may
+   need to run this command, and then reboot the laptop:
+
+    ```bash
+    echo options nvidia "NVreg_DynamicPowerManagement=0x02" | sudo tee /etc/modprobe.d/nvidia_rtd3.conf
+    ```
+
 ### Suspend fix for SATA disks
 
 Only affects laptops with M.2 SATA disks experiencing sleep issues (the power
