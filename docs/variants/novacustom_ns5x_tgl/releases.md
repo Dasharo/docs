@@ -323,4 +323,4 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [coreboot based on 4.16 revision ecf1e9b8](https://github.com/Dasharo/coreboot/tree/ecf1e9b8)
 - [tianocore based on e0334c228ce4ba51f47ff79a118f214031d4650f revision ec6805c2](https://github.com/Dasharo/edk2/tree/ec6805c2)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/RJrTXDhWR
+[newsletter]: https://newsletter.3mdeb.com/subscription/4X0c3e5Y6
