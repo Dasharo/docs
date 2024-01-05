@@ -62,7 +62,7 @@ install additional Nvidia drivers.
 1. Install drivers by executing the following command in the terminal:
 
     ```bash
-    sudo apt install nvidia-driver-515 nvidia-dkms-515
+    sudo apt install nvidia-driver-535 nvidia-dkms-535
     ```
 
 1. Reboot the device to apply changes by executing the following command in the
