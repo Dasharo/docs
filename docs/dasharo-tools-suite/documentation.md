@@ -134,7 +134,7 @@ sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
 
 > Notes:
 > * this is an example done on the v1.1.0 image.
-> * replace "sdX" with the letter of your USB disk device. For example: sda, 
+> * replace "sdX" with the letter of your USB disk device. For example: sda,
 >   sdb, sdc. It should not be partition number (for example, not sda1
 >   or sda2).
 
