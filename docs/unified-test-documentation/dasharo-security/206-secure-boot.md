@@ -63,6 +63,13 @@ the DUT reset, it is seen from the OS.
     Menu.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
+1. If a message `To enable Secure Boot, set Secure Boot Mode to Custom and
+   enroll the keys/PK first` appears:
+    1. Set `Secure Boot Mode` to `Custom Mode`
+    1. Enter `Advanced Secure Boot Keys Management` submenu
+    1. Select `Reset to default Secure Boot Keys`
+    1. If a pop-up appears to confirm the selection, select `Yes`
+    1. Press `Esc` to go back
 1. Verify that the `Current Secure Boot State` field says `Enabled` - if not,
     select the `Attempt Secure Boot` option below.
 1. Go back to the main menu using the `ESC` key.
@@ -332,12 +339,13 @@ after flashing the platform with the Dasharo firmware.
     Menu.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
-1. Verify the `Reset Secure Boot Keys` field.
+1. Set `Advanced Secure Boot Keys Management` submenu.
+1. Verify the `Reset to default Secure Boot Keys` field.
 
 **Expected result**
 
-The `Reset Secure Boot Keys` option should be listed after entering the
-`Secure Boot Configuration` submenu.
+The `Reset Secure Boot Keys` option should be listed after entering the key
+management submenu.
 
 ## SBO007.001 Attempt to boot the file after restoring keys to default (firmware)
 
@@ -369,7 +377,7 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
-1. Select options in the given order: `Custom Secure Boot Options` ->
+1. Select options in the given order: `Advanced Secure Boot Keys Management` ->
     `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
 1. Select the certificate from the `USB storage`.
 1. Select the `Commit Changes and Exit` option.
@@ -401,7 +409,9 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 1. Press `ESC` until the setup menu.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
-1. Select the `Reset Secure Boot Keys` option using the arrow keys and Enter.
+1. Enter the `Advanced Secure Boot Keys Management` submenu.
+1. Select the `Reset to default Secure Boot keys` option using the arrow keys
+   and Enter.
 1. If necessary - press `Y` to confirm saving the changes.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option to apply the settings and reboot.
@@ -481,7 +491,7 @@ incorrect format.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
-1. Select options in the given order: `Custom Secure Boot Options` ->
+1. Select options in the given order: `Advanced Secure Boot Keys Management` ->
     `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
 1. Select the file with the `.txt` extension from the `USB storage`.
 1. Select the `Commit Changes and Exit` option.
