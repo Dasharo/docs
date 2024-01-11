@@ -60,6 +60,11 @@ Test results for this release can be found
 - [Turning wifi/bt off inside BIOS leads to an ACPI error message while system start on Gentoo Linux](https://github.com/Dasharo/dasharo-issues/issues/638)
 - [The laptop does not automatically wake up from hibernation using rtcwake](https://github.com/Dasharo/dasharo-issues/issues/485)
 - [Power state after power failure option does not work as intended](https://github.com/Dasharo/dasharo-issues/issues/524)
+- [OS fails to resume from S3 on some board revisions](https://github.com/Dasharo/dasharo-issues/issues/523)
+- [Windows 11 fails to resume from hibernation](https://github.com/Dasharo/dasharo-issues/issues/529)
+- [No HDMI output in firmware](https://github.com/Dasharo/dasharo-issues/issues/533)
+- [Connecting and immediately disconnecting the charger, sets the battery status in OS to "charging" for about 2 minutes](https://github.com/Dasharo/dasharo-issues/issues/350)
+- [Platform fails to resume from S3 suspend](https://github.com/Dasharo/dasharo-issues/issues/554)
 
 ### Binaries
 
