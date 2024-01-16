@@ -13,6 +13,85 @@ For details about our release process please read
 
 </center>
 
+## v1.5.2 - 2024-01-16
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675).
+
+### Added
+
+- [Added Microsoft 2023 keys for UEFI Secure Boot and DBX from 2023.05.9](https://github.com/Dasharo/edk2/commit/b7274c98697e972e772236caf830c0780ec498bd)
+
+### Changed
+
+- [Changed throttling temperature to 80 degrees](https://github.com/Dasharo/dasharo-issues/issues/596)
+- [Enabled HTTPS for Dasharo Tools Suite network boot option](https://github.com/Dasharo/dasharo-issues/issues/450)
+
+### Fixed
+
+- [Low performance when booting on battery power only](https://github.com/Dasharo/dasharo-issues/issues/555)
+- [Regression charging via dell usb-c dock](https://github.com/Dasharo/dasharo-issues/issues/587)
+- [Video on USB-C docks sometimes fails to initialize](https://github.com/Dasharo/dasharo-issues/issues/560)
+- [USB-C chargers may be overloaded in certain scenarios](https://github.com/Dasharo/dasharo-issues/issues/619)
+- [Hybrid Power Boost mode of battery charger is not functional](https://github.com/Dasharo/dasharo-issues/issues/620)
+- [Laptop may shut down when disconnecting power supply](https://github.com/Dasharo/dasharo-issues/issues/621)
+- [Input current limits are set too high](https://github.com/Dasharo/dasharo-issues/issues/622)
+- [Keyboard backlight does not turn off immediately when going to sleep](https://github.com/Dasharo/dasharo-issues/issues/623)
+- [Power LED blinks erratically in HPB mode](https://github.com/Dasharo/dasharo-issues/issues/624)
+- [EC applying power limits may sometimes fail](https://github.com/Dasharo/dasharo-issues/issues/625)
+- [Wrong power limits are applied on AC attach / detach](https://github.com/Dasharo/dasharo-issues/issues/626)
+- [USB-PD controller may hang in glitched state on shutdown](https://github.com/Dasharo/dasharo-issues/issues/627)
+- [Yellow bangs in device manager](https://docs.dasharo.com/unified/clevo/post-install/#unrecognized-usb-controller-device-in-device-manager)
+- [Random freezes in Windows 11](https://github.com/Dasharo/dasharo-issues/issues/628)
+- [Low level interfering crackling/popping of the speakers while playing no sound](https://github.com/Dasharo/dasharo-issues/issues/224)
+- [ACPI error during boot (system76_acpi::kbd_backlight)](https://github.com/Dasharo/dasharo-issues/issues/559)
+- [Thunderbolt may not work after wakeup from sleep](https://github.com/Dasharo/dasharo-issues/issues/629)
+- [Unnecessary security warning after firmware update](https://github.com/Dasharo/dasharo-issues/issues/556)
+- [Early boot DMA protection setting in UEFI does not work correctly](https://github.com/Dasharo/dasharo-issues/issues/630)
+
+### Known issues
+
+- [Poor Package C-state residency at idle after first s2idle cycle](https://github.com/Dasharo/dasharo-issues/issues/631)
+- [Some commands in dasharo_ectool fail](https://github.com/Dasharo/dasharo-issues/issues/648)
+- [Incomplete serial console output](https://github.com/Dasharo/dasharo-issues/issues/614)
+- [Some devices on dock are not detected after warmboot or reboot](https://github.com/Dasharo/dasharo-issues/issues/632)
+- [Function Lock setting is not saved after cold boot](https://github.com/Dasharo/dasharo-issues/issues/458)
+- [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
+- [Turning wifi/bt off inside BIOS leads to an ACPI error message while system start on Gentoo Linux](https://github.com/Dasharo/dasharo-issues/issues/638)
+- [The laptop does not automatically wake up from hibernation using rtcwake](https://github.com/Dasharo/dasharo-issues/issues/485)
+- [Power state after power failure option does not work as intended](https://github.com/Dasharo/dasharo-issues/issues/524)
+- [OS fails to resume from S3 on some board revisions](https://github.com/Dasharo/dasharo-issues/issues/523)
+- [Windows 11 fails to resume from hibernation](https://github.com/Dasharo/dasharo-issues/issues/529)
+- [No HDMI output in firmware](https://github.com/Dasharo/dasharo-issues/issues/533)
+- [Connecting and immediately disconnecting the charger, sets the battery status in OS to "charging" for about 2 minutes](https://github.com/Dasharo/dasharo-issues/issues/350)
+- [Platform fails to resume from S3 suspend](https://github.com/Dasharo/dasharo-issues/issues/554)
+
+### Binaries
+
+[novacustom_ns5x_tgl_ec_v1.5.2.rom][novacustom_ns5x_tgl_ec_v1.5.2.rom_file]{.md-button}
+[sha256][novacustom_ns5x_tgl_ec_v1.5.2.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_tgl_ec_v1.5.2.rom_sig]{.md-button}
+
+[novacustom_ns5x_tgl_v1.5.2.rom][novacustom_ns5x_tgl_v1.5.2.rom_file]{.md-button}
+[sha256][novacustom_ns5x_tgl_v1.5.2.rom_hash]{.md-button}
+[sha256.sig][novacustom_ns5x_tgl_v1.5.2.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 4.21 revision cb6ef1b9](https://github.com/Dasharo/coreboot/tree/cb6ef1b9)
+- [Dasharo EDKII fork based on edk2-stable202002 revision b7274c98](https://github.com/Dasharo/edk2/tree/b7274c98)
+
+[novacustom_ns5x_tgl_ec_v1.5.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.2/novacustom_ns5x_tgl_ec_v1.5.2.rom
+[novacustom_ns5x_tgl_ec_v1.5.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.2/novacustom_ns5x_tgl_ec_v1.5.2.rom.sha256
+[novacustom_ns5x_tgl_ec_v1.5.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.2/novacustom_ns5x_tgl_ec_v1.5.2.rom.sha256.sig
+[novacustom_ns5x_tgl_v1.5.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.2/novacustom_ns5x_tgl_v1.5.2.rom
+[novacustom_ns5x_tgl_v1.5.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.2/novacustom_ns5x_tgl_v1.5.2.rom.sha256
+[novacustom_ns5x_tgl_v1.5.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.2/novacustom_ns5x_tgl_v1.5.2.rom.sha256.sig
+
 ## v1.5.1 - 2023-11-06
 
 Test results for this release can be found
