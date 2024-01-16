@@ -59,8 +59,8 @@ Qubes OS AEM implementation. Furthermore, the project grant would be used to
 implement the missing pieces in the Qubes OS AEM software to cover the AMD and
 Intel support for both TPM 1.2 and TPM 2.0.
 
-[ms_sec_core]: https://trenchboot.org/
-[tb_org]: https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure#what-makes-a-secured-core-pc
+[ms_sec_core]: https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure#what-makes-a-secured-core-pc
+[tb_org]: https://trenchboot.org/
 [nlnet_open_drtm]: https://nlnet.nl/project/OpenDRTM/
 [qubes_os_org]: https://www.qubes-os.org/
 [it_aem]: https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html
