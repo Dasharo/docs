@@ -11,10 +11,10 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
-Test results for this platform can be found
-[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+## v1.1.3 - 2024-01-17
 
-## v1.1.3 - 2024-01-03
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1143764851).
 
 ### Added
 
@@ -26,11 +26,11 @@ Test results for this platform can be found
 - [Serial Console Redirection option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#serial-port-configuration)
 - [Power state after power fail option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
 - [Option for Resizable BARs enabling](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#pcipcie-configuration)
-- [ESP partition scanning in look for grubx64.efi or shimx64.efi or Windows
-  bootmgr](https://github.com/Dasharo/dasharo-issues/issues/94)
+- [ESP partition scanning in look for grubx64.efi or shimx64.efi or Windows bootmgr](https://github.com/Dasharo/dasharo-issues/issues/94)
 - Memory speed is displayed in the firmware setup main page
 - [Support for taking screenshots in the firmware](https://docs.dasharo.com/dev-proc/screenshots/#taking-screenshots)
 - Microsoft and Windows 2023 UEFI Secure Boot certificates
+- Disabling ME and unlocking descriptor with HMRFPO command on FUM flow
 
 ### Changed
 
@@ -47,18 +47,21 @@ Test results for this platform can be found
 - [Improved UEFI Secure Boot menu user experience](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
 - Scope of reset to default hotkey to global in firmware setup
 - Booting DTS over iPXE via HTTPS
+- Removed the i225/i226 EFI driver from the builds in favor of native iPXE
+  driver
+- Switched iPXE repository to Dasharo fork for the native iPXE driver for
+  i225/i226
 
 ### Fixed
 
 - [No audio playback via headset](https://github.com/Dasharo/dasharo-issues/issues/483)
 - [Auto Boot Time-out is reset to 0 when F9 is pressed](https://github.com/Dasharo/dasharo-issues/issues/513)
-- [Some RPL-S CPUs ( 0xB06F2 (RPL-S C0) or 0xB06F5 (RPL-S H0)) have a problem
-  with booting on v1.1.2](https://github.com/Dasharo/dasharo-issues/issues/496)
+- [Some RPL-S CPUs ( 0xB06F2 (RPL-S C0) or 0xB06F5 (RPL-S H0)) have a problem with booting on v1.1.2](https://github.com/Dasharo/dasharo-issues/issues/496)
 - [Change boot order menu is confusing](https://github.com/Dasharo/dasharo-issues/issues/422)
-- [The setup menu does not issue a reset, resulting in saved but unapplied
-  settings](https://github.com/Dasharo/dasharo-issues/issues/398)
-- [PCI Express Resizable BAR programming](https://github.com/Dasharo/dasharo-issues/)
+- [The setup menu does not issue a reset, resulting in saved but unapplied settings](https://github.com/Dasharo/dasharo-issues/issues/398)
+- [PCI Express Resizable BAR programming](https://github.com/Dasharo/dasharo-issues/issues/565)
 - [PCI Express resource allocation for Intel ARC A750](https://github.com/Dasharo/dasharo-issues/issues/584)
+- [CPU frequency not displayed on setup front page](https://github.com/Dasharo/dasharo-issues/issues/662)
 - P2SB BAR not properly reserved in ACPI
 - Power LED not blinking during S3 sleep
 - PS/2 controller not enabled at first boot after flashing
@@ -69,10 +72,26 @@ Test results for this platform can be found
 
 - [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
 - [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
-- [Windows 11 VBS (Virtualization-based Security) appears Not enabled on
-  System Information](https://github.com/Dasharo/dasharo-issues/issues/539)
+- [Windows 11 VBS (Virtualization-based Security) appears Not enabled on System Information](https://github.com/Dasharo/dasharo-issues/issues/539)
+- [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
 
 ### Binaries
+
+[sha256][msi_ms7d25_v1.1.3_ddr4.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.3_ddr4.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.3_ddr4)
+
+[sha256][msi_ms7d25_v1.1.3_ddr4_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.3_ddr4_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.3_ddr4_dev_signed)
+
+[sha256][msi_ms7d25_v1.1.3_ddr5.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.3_ddr5.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.3_ddr5)
+
+[sha256][msi_ms7d25_v1.1.3_ddr5_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.3_ddr5_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.3_ddr5_dev_signed)
 
 This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
 binaries you will have to
@@ -80,19 +99,26 @@ binaries you will have to
 You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Entry Subscription newsletter.
 
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
+
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.21 revision e704a403](https://github.com/Dasharo/coreboot/tree/e704a403)
+- [Dasharo coreboot fork based on 4.21 revision 2c5426c3](https://github.com/Dasharo/coreboot/tree/2c5426c3)
 - [Dasharo EDKII fork based on edk2-stable202002 revision 11746340](https://github.com/Dasharo/edk2/tree/11746340)
-- [iPXE based on 2023.8 revision 9e99a55b](https://github.com/ipxe/ipxe/tree/9e99a55b)
+- [iPXE based on 2023.12 revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
 - [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
-- [Intel Management Engine based on v16.1.30.2307 revision d4e4dca1](https://github.com/Dasharo/dasharo-blobs/blob/d4e4dca1/msi/ms7d25/me.bin)
-- [Intel Flash Descriptor based on v1.0 revision d4e4dca1](https://github.com/Dasharo/dasharo-blobs/blob/d4e4dca1/msi/ms7d25/descriptor.bin)
+- [Intel Management Engine based on v16.1.30.2307 revision 18aab76c](https://github.com/Dasharo/dasharo-blobs/blob/18aab76c/msi/ms7d25/me.bin)
+- [Intel Flash Descriptor based on v1.0 revision 18aab76c](https://github.com/Dasharo/dasharo-blobs/blob/18aab76c/msi/ms7d25/descriptor.bin)
 - [Intel Firmware Support Package based on RPL-S C.0.BD.40 revision 481ea7cf](https://github.com/intel/FSP/tree/481ea7cf/RaptorLakeFspBinPkg/Client/RaptorLakeS)
 - [Intel microcode based on ADL/RPL C0/H0 0x0000002e revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-97-05)
 - [Intel microcode based on RPL B0 0x00000119 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-b7-01)
 
 ## v1.1.2 - 2023-09-06
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
 ### Added
 
@@ -205,6 +231,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Dasharo EDKII fork based on dd7523b5b1 revision a913e338](https://github.com/Dasharo/edk2/tree/a913e338)
 
 ## v1.1.0 - 2022-11-22
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
 ### Added
 
@@ -366,6 +395,9 @@ gpg --verify msi_ms7d25_v1.0.0.rom.sha256.sig msi_ms7d25_v1.0.0.rom.sha256
 
 ## v0.4.0 - 2022-05-13
 
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+
 ### Added
 
 - [Verified boot support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
@@ -409,6 +441,9 @@ gpg --verify msi_ms7d25_v0.4.0.rom.sha256.sig msi_ms7d25_v0.4.0.rom.sha256
 - [edk2 based on 4d2846ba revision 5494c8e2](https://github.com/Dasharo/edk2/tree/5494c8e2)
 
 ## v0.3.0 - 2022-05-05
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
 
 ### Added
 
@@ -458,6 +493,9 @@ gpg --verify msi_ms7d25_v0.3.0.rom.sha256.sig msi_ms7d25_v0.3.0.rom.sha256
 
 ## v0.2.0 - 2022-04-22
 
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+
 ### Added
 
 - Configurable boot order
@@ -504,6 +542,9 @@ gpg --verify msi_ms7d25_v0.2.0.rom.sha256.sig msi_ms7d25_v0.2.0.rom.sha256
 
 ## v0.1.0 - 2022-04-13
 
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/16wokQYhtS7XA1DQC3Om7FY-IImG6SZisGK7NnzyRGVY/edit?usp=sharing).
+
 ### Added
 
 - Initial support for the MSI PRO Z690-A WIFI DDR4 platform
@@ -549,6 +590,14 @@ gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 - [edk2 based on 4d2846ba revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/aKgTJjYEA
+[msi_ms7d25_v1.1.3_ddr4.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr4.rom.sha256
+[msi_ms7d25_v1.1.3_ddr4.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr4.rom.sha256.sig
+[msi_ms7d25_v1.1.3_ddr4_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr4_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.3_ddr4_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr4_dev_signed.rom.sha256.sig
+[msi_ms7d25_v1.1.3_ddr5.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr5.rom.sha256
+[msi_ms7d25_v1.1.3_ddr5.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr5.rom.sha256.sig
+[msi_ms7d25_v1.1.3_ddr5_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr5_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.3_ddr5_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.3/msi_ms7d25_v1.1.3_ddr5_dev_signed.rom.sha256.sig
 [msi_ms7d25_v1.1.1_ddr4.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom
 [msi_ms7d25_v1.1.1_ddr4.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom.sha256
 [msi_ms7d25_v1.1.1_ddr4.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.1/msi_ms7d25_v1.1.1_ddr4.rom.sha256.sig

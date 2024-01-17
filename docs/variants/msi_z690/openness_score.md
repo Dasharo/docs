@@ -13,16 +13,16 @@ is available [here](openness_analysis.md).
 
 Openness Score for msi_ms7d25_v1.1.3_ddr5.rom
 
-Open-source code percentage: **41.9%**
-Closed-source code percentage: **58.1%**
+Open-source code percentage: **43.0%**
+Closed-source code percentage: **57.0%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 37
 * Number of CBFSes: 4
-* Total open-source code size: 6928948 (0x69ba34)
-* Total closed-source code size: 9608432 (0x929cf0)
-* Total data size: 948290 (0xe7842)
-* Total empty size: 16068762 (0xf5309a)
+* Total open-source code size: 6949213 (0x6a095d)
+* Total closed-source code size: 9218180 (0x8ca884)
+* Total data size: 948357 (0xe7885)
+* Total empty size: 16438682 (0xfad59a)
 
 ![](msi_ms7d25_v1.1.3_ddr5.rom_openness_chart.png)
 
@@ -79,10 +79,10 @@ Closed-source code percentage: **58.1%**
 
 * CBFS size: 4816640
 * Number of files: 13
-* Open-source files size: 2279932 (0x22c9fc)
-* Closed-source files size: 1631312 (0x18e450)
-* Data size: 8573 (0x217d)
-* Empty size: 896823 (0xdaf37)
+* Open-source files size: 2286687 (0x22e45f)
+* Closed-source files size: 1501228 (0x16e82c)
+* Data size: 8606 (0x219e)
+* Empty size: 1020119 (0xf90d7)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -91,27 +91,27 @@ Closed-source code percentage: **58.1%**
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
 | fallback/romstage | stage | 103280 | none | open-source |
-| fallback/ramstage | stage | 149355 | LZMA | open-source |
+| fallback/ramstage | stage | 149834 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 11264 | none | open-source |
 | fallback/postcar | stage | 34328 | none | open-source |
-| fallback/payload | simple elf | 2111789 | none | open-source |
+| fallback/payload | simple elf | 1987981 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 431104 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 283692 | LZ4 | closed-source |
-| config | raw | 5401 | LZMA | data |
+| config | raw | 5395 | LZMA | data |
 | revision | raw | 850 | none | data |
 | build_info | raw | 138 | none | data |
 | vbt.bin | raw | 1257 | LZMA | data |
-| (empty) | null | 1124 | none | empty |
+| (empty) | null | 612 | none | empty |
 
 ### CBFS FW_MAIN_B
 
 * CBFS size: 4259584
 * Number of files: 13
-* Open-source files size: 2279932 (0x22c9fc)
-* Closed-source files size: 1631312 (0x18e450)
-* Data size: 8573 (0x217d)
-* Empty size: 339767 (0x52f37)
+* Open-source files size: 2286687 (0x22e45f)
+* Closed-source files size: 1501228 (0x16e82c)
+* Data size: 8606 (0x219e)
+* Empty size: 463063 (0x710d7)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -120,27 +120,27 @@ Closed-source code percentage: **58.1%**
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
 | fallback/romstage | stage | 103280 | none | open-source |
-| fallback/ramstage | stage | 149355 | LZMA | open-source |
+| fallback/ramstage | stage | 149834 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 11264 | none | open-source |
 | fallback/postcar | stage | 34328 | none | open-source |
-| fallback/payload | simple elf | 2111789 | none | open-source |
+| fallback/payload | simple elf | 1987981 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 431104 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 283692 | LZ4 | closed-source |
-| config | raw | 5401 | LZMA | data |
+| config | raw | 5395 | LZMA | data |
 | revision | raw | 850 | none | data |
 | build_info | raw | 138 | none | data |
 | vbt.bin | raw | 1257 | LZMA | data |
-| (empty) | null | 1124 | none | empty |
+| (empty) | null | 612 | none | empty |
 
 ### CBFS COREBOOT
 
 * CBFS size: 4161536
 * Number of files: 17
-* Open-source files size: 2369084 (0x24263c)
-* Closed-source files size: 1631312 (0x18e450)
-* Data size: 9004 (0x232c)
-* Empty size: 152136 (0x25248)
+* Open-source files size: 2375839 (0x24409f)
+* Closed-source files size: 1501228 (0x16e82c)
+* Data size: 9005 (0x232d)
+* Empty size: 275464 (0x43408)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -149,19 +149,19 @@ Closed-source code percentage: **58.1%**
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
 | fallback/romstage | stage | 103280 | none | open-source |
-| fallback/ramstage | stage | 149355 | LZMA | open-source |
+| fallback/ramstage | stage | 149834 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 11264 | none | open-source |
 | fallback/postcar | stage | 34328 | none | open-source |
-| fallback/payload | simple elf | 2111789 | none | open-source |
+| fallback/payload | simple elf | 1987981 | none | open-source |
 | bootblock | bootblock | 89152 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 431104 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 283692 | LZ4 | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| config | raw | 5401 | LZMA | data |
+| config | raw | 5395 | LZMA | data |
 | revision | raw | 850 | none | data |
 | build_info | raw | 138 | none | data |
 | vbt.bin | raw | 1257 | LZMA | data |
-| (empty) | null | 868 | none | empty |
-| (empty) | null | 151268 | none | empty |
+| (empty) | null | 356 | none | empty |
+| (empty) | null | 275108 | none | empty |
