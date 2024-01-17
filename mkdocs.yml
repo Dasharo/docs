@@ -577,7 +577,7 @@ nav:
               - '[MSS] M.2 slot support with automatic switching between SATA and NVMea': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
               - '[MWL] miniPCIe verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
               - '[NBT] Network boot utilities': unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
-              - '[NVI] Nvidia Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
+              - '[NVI] NVIDIA Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
               - '[NVM] NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
               - '[OPN] OPNsense support': unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
               - '[PBT] Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md

@@ -83,7 +83,7 @@ Get-WmiObject -Class Win32_VideoController | Select Description, Name, Status
 
 **Expected result**
 
-1. The output should contain the information about installed Nvidia Graphics
+1. The output should contain the information about installed NVIDIA Graphics
     card.
 
     Example output:
