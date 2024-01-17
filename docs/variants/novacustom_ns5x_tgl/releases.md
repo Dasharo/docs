@@ -13,7 +13,7 @@ For details about our release process please read
 
 </center>
 
-## v1.5.2 - 2024-01-16
+## v1.5.2 - 2024-01-17
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675).
