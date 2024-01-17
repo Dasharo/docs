@@ -47,7 +47,6 @@ Test results for this release can be found
 - [ACPI error during boot (system76_acpi::kbd_backlight)](https://github.com/Dasharo/dasharo-issues/issues/559)
 - [Thunderbolt may not work after wakeup from sleep](https://github.com/Dasharo/dasharo-issues/issues/629)
 - [Unnecessary security warning after firmware update](https://github.com/Dasharo/dasharo-issues/issues/556)
-- [Early boot DMA protection setting in UEFI does not work correctly](https://github.com/Dasharo/dasharo-issues/issues/630)
 
 ### Known issues
 
@@ -65,6 +64,7 @@ Test results for this release can be found
 - [No HDMI output in firmware](https://github.com/Dasharo/dasharo-issues/issues/533)
 - [Connecting and immediately disconnecting the charger, sets the battery status in OS to "charging" for about 2 minutes](https://github.com/Dasharo/dasharo-issues/issues/350)
 - [Platform fails to resume from S3 suspend](https://github.com/Dasharo/dasharo-issues/issues/554)
+- [Early boot DMA protection setting in UEFI does not work correctly](https://github.com/Dasharo/dasharo-issues/issues/630)
 
 ### Binaries
 
