@@ -547,7 +547,7 @@ nav:
               - '[CAM] USB Camera Verification': unified-test-documentation/dasharo-compatibility/317-usb-camera.md
               - '[CBK] Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - '[CBO] Custom Boot Order': unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
-              - '[CBP] Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
+              - '[CBP] coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - '[CLG] Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
               - '[CNB] Custom Network Boot entries': unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
               - '[CPU] CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
