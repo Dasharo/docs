@@ -243,7 +243,7 @@ Test results for this release can be found
 
 ### Fixed
 
-- [Nvidia RTX 3060 does not spawn HD Audio device in Device Manager](https://github.com/Dasharo/dasharo-issues/issues/364)
+- [NVIDIA RTX 3060 does not spawn HD Audio device in Device Manager](https://github.com/Dasharo/dasharo-issues/issues/364)
 - [MSI FLASHBIOS feature is not working](https://github.com/Dasharo/dasharo-issues/issues/131)
 - [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
 - [Popup with information about recovery mode is displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/269)
