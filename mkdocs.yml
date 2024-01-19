@@ -452,6 +452,7 @@ nav:
               - 'Network stack enable/disable': unified-test-documentation/dasharo-security/20T-network-boot.md
               - 'Boot Guard support': unified-test-documentation/dasharo-security/207-boot-guard-support.md
               - 'TCG OPAL disk password support': unified-test-documentation/dasharo-security/208-opal-disk-password-support.md
+              - 'Memory Profiles': unified-test-documentation/dasharo-compatibility/363-xmp.md
           - 'Dasharo performance':
               - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
               - 'Device boot measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md
