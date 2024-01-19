@@ -367,3 +367,66 @@ firmware by using system76_ectool in DTS.
 1. The EC firmware version, after checking the method described in the
     above-mentioned [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-update),
     should correspond to the binary version used.
+
+## DTS010.001 Test firmware update in pre-release DTS over iPXE
+
+**Test description**
+
+This test verifies that DTS is able to correctly update device firmware from
+the previous to the currently tested version.
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Test cases common documentation](#test-cases-common-documentation) section.
+1. Ensure that the **previous** firmware version (the one before the one you're
+   currently testing) is flashed to the DUT.
+1. If custom boot logo functionality is supported, ensure that a custom logo
+   is installed. Follow the steps outlined
+   [here](https://docs.dasharo.com/guides/logo-customization/).
+1. Ensure that the DUT is connected to a wired network.
+
+    > Use an Ethernet cable plugged into the DUT's onboard NIC. USB networking
+    > adapters may not work correctly, and wireless (Wi-Fi) connection is not
+    > supported.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the `SETUP_MENU_KEY` to enter the Dasharo setup menu.
+1. In the setup menu, navigate to `Dasharo System Features` -> `Networking
+   Options` and ensure that the option `Enable Network Boot` is enabled.
+    1. If you changed the setting, press `F10` to save changes.
+1. Exit to the setup menu front page by pressing the `Esc` key.
+1. Select `Reset` to reboot the DUT.
+1. Hold the `BOOT_MENU_KEY` to enter the boot device selection menu.
+1. Select `iPXE Network Boot` to enter the iPXE menu.
+
+    > The option may have a different name on some platforms.
+
+1. Select `iPXE Shell` to drop to shell.
+1. Type in the following commands:
+
+    ```ipxe
+    dhcp
+    chain https://boot.dasharo.com/dts/dts-rc.ipxe
+    ```
+
+1. Press the `Enter` key to begin downloading DTS.
+1. If required, enter the appropriate credentials in the DTS menu.
+1. Select the `Update Dasharo Firmware` option to check for update.
+1. When asked for confirmation, confirm to allow the update process to continue.
+1. When the update is completed, reboot the DUT.
+1. Hold down the `SETUP_MENU_KEY` to enter the setup menu again.
+
+**Expected result**
+
+1. A DTS release candidate is correctly booted over the network.
+1. A firmware update is available and installed to the DUT without errors.
+1. The device is able to boot after the update is applied.
+1. If custom boot logo functionality is supported, the logo is displayed after
+   the update.
+1. After the update, in the setup menu, the expected firmware version is
+   displayed.
