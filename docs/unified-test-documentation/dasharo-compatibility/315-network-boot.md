@@ -243,3 +243,38 @@ server.
 1. The iPXE application boots successfully.
 1. iPXE obtains an IP address.
 1. iPXE boots an `Debian 11` from netboot.xyz.
+
+## PXE008.001 Firmware Update Mode
+
+**Test description**
+
+This test aims to verify that the DUT is capable of network booting Dasharo
+Tools Suite over the network using Firmware Update Mode.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Ensure network cable is connected to the DUT.
+1. Hold the `SETUP_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the `Dasharo System Features` option using the arrow keys and press
+   ++enter++.
+1. Select the `Dasharo Security Options` option using the arrow keys and press
+   ++enter++.
+1. Select the `Firmware Update Mode` option using the arrow keys and press
+   ++enter++.
+1. Press ++enter++ when prompted. The DUT will reboot at this point.
+1. Press the requested number on the keyboard when prompted.
+
+**Expected result**
+
+1. DTS is booted automatically when Firmware Update Mode is entered.
+1. DTS automatically begins to check for a firmware update.
