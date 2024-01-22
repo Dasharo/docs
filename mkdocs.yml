@@ -248,7 +248,7 @@ nav:
               - 'Releases': variants/msi_z690/releases.md
               - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
               - 'Test matrix': variants/msi_z690/test-matrix.md
-              - 'Openness score': variants/msi_z690/openness_analysis.md
+              - 'Openness score': variants/msi_z690/openness_score.md
           - 'MSI PRO Z790-P':
               - 'Releases': variants/msi_z790/releases.md
               - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
