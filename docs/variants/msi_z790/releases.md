@@ -13,7 +13,7 @@ For details about our release process please read
 
 </center>
 
-## v0.9.1 - 2024-01-17
+## v0.9.1 - 2024-01-22
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1753841105).
@@ -74,6 +74,7 @@ Test results for this release can be found
 
 ### Known issues
 
+- [XMP1 profile does not boot in combination with some DDR5 configurations](https://github.com/Dasharo/dasharo-issues/issues/683)
 - [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
 - [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
 - [Windows 11 VBS (Virtualization-based Security) appears Not enabled on System Information](https://github.com/Dasharo/dasharo-issues/issues/539)
