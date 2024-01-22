@@ -3,6 +3,11 @@
 Following Release Notes describe status of Open Source Firmware development for
 MSI PRO Z690-A (WIFI) DDR4 and MSI PRO Z690-A (WIFI).
 
+For detailed information on our validation setup, please refer to the
+[Hardware Configuration Matrix](hardware-matrix.md). To gain a deeper
+understanding of the nomenclature reasons behind the Z690/Z790 boards, we
+recommend seeing our [FAQ](../../unified/msi/faq.md).
+
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 

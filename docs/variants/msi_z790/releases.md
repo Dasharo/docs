@@ -6,6 +6,11 @@ MSI PRO Z790-P (WIFI) (DDR4)
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
+For detailed information on our validation setup, please refer to the
+[Hardware Configuration Matrix](hardware-matrix.md). To gain a deeper
+understanding of the nomenclature reasons behind the Z690/Z790 boards, we
+recommend seeing our [FAQ](../../unified/msi/faq.md).
+
 <center>
 
 [Subscribe to MSI PRO Z790-P (WIFI) (DDR4) Dasharo Release Newsletter]
