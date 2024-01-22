@@ -110,7 +110,7 @@ and return to the `Setup Menu`.
 **Test description**
 
 This test aims to verify that the `Dasharo Tools Suite` option in
-`Dasharo Network Boot Menu` allows booting into DTS.
+`Dasharo Network Boot Menu` allows booting into DTS over HTTPS.
 
 **Test configuration data**
 
@@ -131,11 +131,14 @@ This test aims to verify that the `Dasharo Tools Suite` option in
    ++enter++.
 1. Select the `Dasharo Tools Suite` option using the arrow keys, then press
     ++enter++.
+1. Take note of the output from iPXE while DTS is loading.
 
 **Expected result**
 
-After configuring the network interfaces, connecting to the server and booting,
-`Dasharo Tools Suite` menu should appear.
+1. After configuring the network interfaces, connecting to the server and
+   booting, `Dasharo Tools Suite` menu should appear.
+1. While downloading DTS, the URL pointing to `dts.ipxe` printed to the console
+   should begin with HTTPS.
 
 ## PXE005.001 OS installation option is available and works correctly
 
