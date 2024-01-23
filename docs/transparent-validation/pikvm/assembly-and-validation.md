@@ -57,6 +57,13 @@ RPI Zero 2W.
 1. Connect one side of the splitter to USB-A 5 V 3.1 A charger.
 1. Connect other side to device under test via USB cable with blocked power.
 
+**NOTE:** When setting up PiKVM for an **MSI platform**, remember to avoid the
+**Flash BIOS** USB port, as it can generate problems with the flashing
+procedure. Always refer to the mainboard's manual for the port's location,
+as in the example below.
+
+![Flash BIOS](images/flashbios.jpg)
+
 ### Set based on RPi 4 preparation
 
 To build PiKVM on RPi 4, use the
