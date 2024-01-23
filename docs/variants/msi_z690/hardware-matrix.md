@@ -21,6 +21,7 @@ please check the [FAQ section](../../unified/msi/faq.md).
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 |                                | 2. Kingston DataTraveler 3.1Gen1 16 GB      |
 | **SD cards**                   | SanDisk Ultra microSD HC I 16 GB            |
+| **Wireless card**              | Intel Wi-Fi 6 AX210                         |
 | **Attached devices**           | 1. Logitech, Inc. Keyboard K120             |
 |                                | 2. Dell Mouse MS116p                        |
 |                                | 3. 1-port USB Type-C                        |
@@ -45,6 +46,7 @@ please check the [FAQ section](../../unified/msi/faq.md).
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB       |
 |                                | 2. Kingston DataTraveler 3.1Gen1 16 GB      |
 | **SD cards**                   | SanDisk Ultra microSD HC I 16 GB            |
+| **Wireless card**              | Intel Wi-Fi 6 AX210                         |
 | **Attached devices**           | 1. Logitech, Inc. Keyboard K120             |
 |                                | 2. Dell Mouse MS116p                        |
 |                                | 3. 1-port USB Type-C                        |
