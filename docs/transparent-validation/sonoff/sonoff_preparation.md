@@ -1,26 +1,102 @@
 
 # Sonoff preparation
 
-The below section of the documentation is based on the
-[EPSHome documentation](https://esphome.io/devices/sonoff_s20.html)
+The following page is based on the
+[EPSHome](https://esphome.io/devices/sonoff_s20.html)
+and [Tasmota](https://tasmota.github.io/docs/devices/Sonoff-S26-Smart-Socket)
+documentations.
 
-> The following procedure is for Sonoff S20. It has also been tested on
-  **Sonoff S26 Release 2**, however, the connection method for flashing is
-  different and is described [here](https://tasmota.github.io/docs/devices/Sonoff-S26-Smart-Socket/#s26-release-2).
+## Firmware setup
 
-1. Open the Sonoff case.
+### Connecting the programmer
 
-1. Check if the headers are soldered to the board. If not - 4 pin header
-    raster 2.54 mm should be soldered to the board in accordance with the below
-    images.
+As for choosing the programming device, we have found that both ch341a in UART
+mode and a generic USB-UART adapter work seamlessly.
 
-    ![sonoff_without_header](images/sonoff_without_header.jpg)
+=== "Sonoff S20"
 
-    ![sonoff_with_header](images/sonoff_with_header.jpg)
+    1. Open the Sonoff case.
 
-1. Connect the USB-UART converter to the USB port.
+    1. Check if the headers are soldered to the board. If not - 4 pin header
+        raster 2.54 mm should be soldered to the board in accordance with the below
+        images.
 
-    ![uart connection](images/sonoff-s20-uart.jpg)
+        ![sonoff_without_header](images/sonoff_without_header.jpg)
+
+        ![sonoff_with_header](images/sonoff_with_header.jpg)
+
+    1. Connect the USB-UART converter to the USB port.
+
+        ![uart connection](images/sonoff-s20-uart.jpg)
+
+=== "Sonoff S26 R2"
+
+    Please attach the programmer wires as specified in
+    [this step](https://tasmota.github.io/docs/devices/Sonoff-S26-Smart-Socket/#s26-release-2)
+    of Tasmota documentation.
+
+After connecting the wires, remember to plug in the programmer while holding
+down the Sonoff power button to get into flash mode:
+
+* Disconnect the programmer from your PC
+* Hold down the Sonoff power button
+* Plug the programmer into the PC
+* Release the power button
+
+### Installation and initial configuration of the firmware
+
+We strongly advise using the more popular
+[Tasmota](https://tasmota.github.io/docs/),
+which has demonstrated higher stability in our office, over
+[ESPhome](https://esphome.io/index.html).
+However, in case you have reasons to choose the latter, our guide provides
+instructions for both.
+
+#### Tasmota
+
+The most lightweight and versatile way to go about flashing Tasmota is using
+`esptool.py`. You can install it for your copy of [Python](https://www.python.org/)
+by running
+
+```sh
+pip install esptool
+```
+
+1. Figure out what is the device name of the programmer - run `dmesg | tail`
+and see what is the most recently attached `/dev/ttyUSB`, e.g. `/dev/ttyUSB0`.
+You will need to substitute DEVICE with the correct name as you follow along
+this guide.
+
+1. Backup the vendor firmware by running
+
+    ```sh
+    esptool.py --port DEVICE read_flash 0x00000 0x100000 backup.bin
+    ```
+
+1. Erase firmware
+
+    ```sh
+    esptool.py --port DEVICE erase_flash
+    ```
+
+1. Download a copy of [tasmota.bin](http://ota.tasmota.com/tasmota/release/)
+    and place it in your working directory
+
+1. Flash Sonoff with `tasmota.bin`
+
+    ```sh
+    esptool.py write_flash -fm dout 0x0 tasmota.bin
+    ```
+
+1. After the flashing has been completed, unplug the programmer from your PC
+and detach all wires from the Sonoff. Reassemble the Sonoff and plug it into
+a socket.
+
+1. Connect to Sonoff's temporary WiFi hotspot named after Tasmota,
+visit `http://192.168.4.1` and follow on-screen instructions to connect
+the Sonoff to your network of choice.
+
+#### ESPhome
 
 1. Create a Sonoff configuration file. The file extension should be `.yaml` and
     it should contain the device configuration.
@@ -29,25 +105,25 @@ The below section of the documentation is based on the
 
     ```yml
     esphome:
-      name: XXXXXX
-      platform: ESP8266
-      board: esp01_1m
+    name: XXXXXX
+    platform: ESP8266
+    board: esp01_1m
 
     wifi:
-      ssid: "XXXXXX"
-      password: "XXXXXX"
-      # manual_ip:
-      #   # Set this to the IP of the ESP
-      #   static_ip: 192.168.4.187
-      #   # Set this to the IP address of the router. Often ends with .1
-      #   gateway: 192.168.4.1
-      #   # The subnet of the network. 255.255.255.0 works for most home networks.
-      #   subnet: 255.255.255.0
-      power_save_mode: none
+    ssid: "XXXXXX"
+    password: "XXXXXX"
+    # manual_ip:
+    #   # Set this to the IP of the ESP
+    #   static_ip: 192.168.4.187
+    #   # Set this to the IP address of the router. Often ends with .1
+    #   gateway: 192.168.4.1
+    #   # The subnet of the network. 255.255.255.0 works for most home networks.
+    #   subnet: 255.255.255.0
+    power_save_mode: none
 
 
-      # # Enable fallback hotspot (captive portal) in case wifi connection fails
-      ap:
+    # # Enable fallback hotspot (captive portal) in case wifi connection fails
+    ap:
         ssid: "Sonoff1 Fallback Hotspot"
         password: "123456789"
 
@@ -66,37 +142,37 @@ The below section of the documentation is based on the
 
     binary_sensor:
     - platform: gpio
-      pin:
+    pin:
         number: GPIO0
         mode: INPUT_PULLUP
         inverted: True
-      name: "Sonoff S20 Button"
-      on_press:
+    name: "Sonoff S20 Button"
+    on_press:
         - switch.toggle: relay
     - platform: status
-      name: "Sonoff S20 Status"
+    name: "Sonoff S20 Status"
 
 
     switch:
     - platform: gpio
-      name: "Sonoff S20 Relay"
-      pin: GPIO12
-      id: relay
+    name: "Sonoff S20 Relay"
+    pin: GPIO12
+    id: relay
 
     output:
     - platform: esp8266_pwm
-      id: s20_green_led
-      pin: GPIO13
-      inverted: True
+    id: s20_green_led
+    pin: GPIO13
+    inverted: True
 
     light:
     - platform: monochromatic
-      name: "Sonoff S20 Green LED"
-      output: s20_green_led
+    name: "Sonoff S20 Green LED"
+    output: s20_green_led
 
     web_server:
-      port: 80
-      reboot_timeout: 0s
+    port: 80
+    reboot_timeout: 0s
     ```
 
 1. Run the docker container in the folder containing created `.yaml`
@@ -155,6 +231,18 @@ performing - effective range is only few meters
 To switch the relay the following bash commands may be used:
 
 > `192.168.43.171` should be replaced with assigned IP.
+
+### Tasmota
+
+```sh
+curl -X POST http://192.168.43.171/cm?cmnd=Power%20TOGGLE
+curl -X POST http://192.168.43.171/cm?cmnd=Power%20On
+curl -X POST http://192.168.43.171/cm?cmnd=Power%20off
+```
+
+Full list of commands provided [here](https://tasmota.github.io/docs/Commands/#control)
+
+### ESPhome
 
 ```sh
 curl -X POST http://192.168.43.171/switch/sonoff_s20_relay/toggle
