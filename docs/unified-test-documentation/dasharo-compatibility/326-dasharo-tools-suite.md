@@ -416,6 +416,10 @@ the previous to the currently tested version.
 
 1. Press the `Enter` key to begin downloading DTS.
 1. If required, enter the appropriate credentials in the DTS menu.
+
+> Credential for DES releases are not publicly available. If you need DES
+> credentials for testing DTS, consult your TL.
+
 1. Select the `Update Dasharo Firmware` option to check for update.
 1. When asked for confirmation, confirm to allow the update process to continue.
 1. When the update is completed, reboot the DUT.
