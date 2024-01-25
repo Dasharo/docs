@@ -6,7 +6,10 @@ This document describes the hardware configuration used for validation of the
 coreboot port on the MSI PRO Z690-A workstation. For additional information,
 please check the [FAQ section](../../unified/msi/faq.md).
 
-## MSI PRO Z690-A WiFi DDR4, SN: 07D2511_LA1E012608
+## MSI PRO Z690-A WiFi DDR4 #1
+
+* Serial Number: 07D2511_LA1E012608
+* Revision: v1.1
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
@@ -31,7 +34,10 @@ please check the [FAQ section](../../unified/msi/faq.md).
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **KVM**                        | PiKVM based on Raspberry Pi Zero 2w         |
 
-## MSI PRO Z690-A WiFi DDR4, SN: 07D2511 LA1E346864
+## MSI PRO Z690-A WiFi DDR4 #2
+
+* Serial Number: 07D2511_LA1E346864
+* Revision: v1.1
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
@@ -55,7 +61,10 @@ please check the [FAQ section](../../unified/msi/faq.md).
 | **Power Control**              | Sonoff S20 EU type E                        |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 
-## MSI PRO Z690-A DDR5, SN: 07D2511_LA1E360456
+## MSI PRO Z690-A DDR5
+
+* Serial Number: 07D2511_LA1E360456
+* Revision: v2.1
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
