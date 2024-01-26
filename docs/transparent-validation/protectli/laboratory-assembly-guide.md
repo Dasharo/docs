@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This document describes the assembly procedure dedicated to the Protectli
-platforms (VP2410, VP2420, VP4630/VP4650/VP4670, V1210/V1410/V1610) testing
-stand.
+This document describes platform-specific details for assembling Protectli
+VP2410, VP2420, VP4630/VP4650/VP4670, V1210/V1410/V1610 testing stands.
+Use this document as reference while going through process EX021.
 
 ## Prerequisites
 
-The below table contains information about all elements which are needed to
-create the testing stand.
+The below table contains platform-specific information about all elements which
+are needed to create testing stands for Protectli machines.
 
 * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 * RTE power supply 5V 2A Micro-USB
@@ -46,131 +46,6 @@ create the testing stand.
     * V1210/V1410/V1610 platform
     * Power supply for the platform: 12V 4A
     * USB-C to USB-A male-male cable for console
-
-## Pre-setup activities
-
-The following subsections describe the method of preparing all the
-components of the laboratory stand.
-
-### Platform
-
-The bottom cover has to be removed to connect wires and clips to the platform.
-
-### RTE
-
-RTE (acronym: Remote Testing Environment) should be prepared in accordance with
-[Quick start guide](../rte/v1.1.0/quick-start-guide.md) documentation dedicated
-to the device.
-
-### Sonoff
-
-Prepare Sonoff according to [Sonoff preparation
-instructions](../sonoff/sonoff_preparation.md) for platforms that require
-Sonoff for power control (see [Prerequisites](#prerequisites)).
-
-## Connections
-
-The following sections describe how to enable all of the following features:
-
-* serial connection to the platform,
-* controlling power supply,
-* enabling basic power actions with the platform (power off/power on/reset),
-* external flashing with the RTE,
-* CMOS reset circuit.
-
-### Serial connection
-
-Depending on platform connect the USB-C or MicroUSB to the platform console
-port and the USB-A end to one of the RTE USB-A ports.
-
-### Power supply controlling
-
-=== "VP2410"
-
-    Connect 12V power supply to RTE J13 connector, then RTE J12 connector to
-    DC connector. Do not use any DC jack adapters as these seem to introduce
-    power losses and noises, making the power connection unstable.
-
-    Picture of the improper cable:
-
-    ![](images/bad_cable.jpg)
-
-    Picture of the proper cable:
-
-    ![](images/good_cable.jpg)
-
-    One has to solder the good cable with the half of bad cable to form a full
-    cable. Cut the bad cable in half and strip the isolation. Take the red wire
-    and solder it to the proper cables' white striped wire, this is the hot
-    wire with positive voltage. Isolate the connection with a tape. Take the
-    second black wire from the improper cable and solder it to the unstriped
-    wire of the proper cable. Use tape to isolate and strengthen the whole
-    connection. The cable is ready. Be sure to use plugs in the following way:
-
-    ![](images/cable_connectors.jpg)
-
-=== "VP2420"
-
-    Connect 12V power supply to RTE J13 connector, then RTE J12 connector to
-    DC connector. Do not use any DC jack adapters as these seem to introduce
-    power losses and noises, making the power connection unstable.
-
-    Picture of the improper cable:
-
-    ![](images/bad_cable.jpg)
-
-    Picture of the proper cable:
-
-    ![](images/good_cable.jpg)
-
-    One has to solder the good cable with the half of bad cable to form a full
-    cable. Cut the bad cable in half and strip the isolation. Take the red wire
-    and solder it to the proper cables' white striped wire, this is the hot
-    wire with positive voltage. Isolate the connection with a tape. Take the
-    second black wire from the improper cable and solder it to the unstriped
-    wire of the proper cable. Use tape to isolate and strengthen the whole
-    connection. The cable is ready. Be sure to use plugs in the following way:
-
-    ![](images/cable_connectors.jpg)
-
-=== "VP4630/VP4650/VP4670"
-
-    Connect platform power supply EU plug to Sonoff.
-
-=== "V1210/V1410/V1610"
-
-    Connect 12V power supply to RTE J13 connector, then RTE J12 connector to
-    DC connector. Do not use any DC jack adapters as these seem to introduce
-    power losses and noises, making the power connection unstable.
-
-    Picture of the improper cable:
-
-    ![](images/bad_cable.jpg)
-
-    Picture of the proper cable:
-
-    ![](images/good_cable.jpg)
-
-    One has to solder the good cable with the half of bad cable to form a full
-    cable. Cut the bad cable in half and strip the isolation. Take the red wire
-    and solder it to the proper cables' white striped wire, this is the hot
-    wire with positive voltage. Isolate the connection with a tape. Take the
-    second black wire from the improper cable and solder it to the unstriped
-    wire of the proper cable. Use tape to isolate and strengthen the whole
-    connection. The cable is ready. Be sure to use plugs in the following way:
-
-    ![](images/cable_connectors.jpg)
-
-### Basic power operations enabling
-
-Connect the RTE J11 header to the platform FP1/F_PANEL1 header using 2.54mm to
-2mm wires as described in the table:
-
-| RTE       | Protectli                     |
-|:---------:|:-----------------------------:|
-| J11 pin 5 | FP1/F_PANEL1 pin 6 (PWR_ON#)  |
-| J11 pin 6 | FP1/F_PANEL1 pin 7 (RST#)     |
-| J15 pin 1 | FP1/F_PANEL1 pin 9 (GND)      |
 
 ### External flashing enabling
 
@@ -253,16 +128,6 @@ Connect the RTE J11 header to the platform FP1/F_PANEL1 header using 2.54mm to
     | Any GND   | CLR_CMOS1 pin 3 (GND)      |
 
     Resetting CMOS is required for proper external flashing.
-
-### Complete Setup
-
-After preparing all of the connections also three activities should be
-performed to enable all of the test stand features:
-
-1. Connect Sonoff to the mains (VP4630/VP4650/VP4670 only). For other
-   platforms, connect the platform power supply to the mains.
-2. Connect the RTE to the Internet by using the Ethernet cable.
-3. Connect the RTE to the mains by using the microUSB 5 V/2 A power supply.
 
 ## Theory of operation
 

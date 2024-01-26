@@ -2,8 +2,9 @@
 
 ## Introduction
 
-This document describes the assembly procedure dedicated to the MSI PRO Z690-A
-testing stand.
+This document describes platform-specific details for assembling an MSI PRO
+Z690-A testing stand. Use this document as reference while going through
+process EX021.
 
 ## Prerequisites
 
@@ -18,26 +19,11 @@ create the testing stand.
 * USB-UART converter with 4-wire cable
 * 4-pin header 2.54 mm raster
 
-## Pre-setup activities
-
-The following subsections describe the method of preparing all the
-components of the laboratory stand.
-
 ### MSI PRO Z690-A
 
 MSI PRO Z690-A platform should be prepared in accordance with the
 [Motherboard assembly](presale-assembly-and-validation.md#motherboard-assembly-only)
 documentation.
-
-### RTE
-
-RTE (acronym: Remote Testing Environment) should be prepared in accordance with
-[Quick start guide](../rte/v1.1.0/quick-start-guide.md) documentation dedicated
-to the device.
-
-### Sonoff
-
-Prepare Sonoff according to [Sonoff preparation instructions](../sonoff/sonoff_preparation.md)
 
 ## Connections
 
