@@ -16,7 +16,7 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-By default, it will host a local copy od documentation at:
+By default, it will host a local copy of documentation at:
 `http://0.0.0.0:8000/`.
 
 If the following error occurs `OSError: [Errno 98] Address already in use`, try
