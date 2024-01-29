@@ -125,6 +125,7 @@ nav:
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_adl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_nv4x_adl/test-matrix.md
               - 'Openness score': variants/novacustom_nv4x_adl/openness-score.md
+              - 'Heads firmware variant': variants/novacustom_nv4x_adl/heads.md
           - 'NV4x 11th Gen':
               - 'Releases': variants/novacustom_nv4x_tgl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_tgl/hardware-matrix.md
