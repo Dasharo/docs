@@ -37,7 +37,7 @@ VP2420.
     git submodule update --init --checkout
     ```
 
-1. Obtain the Protectli blobs package:
+1. Obtain the Protectli blobs package (only v1.1.0 or older):
 
     > Replace `<PROTECTLI_BLOBS_REPO>` with a a proper path to the repository
     > in a form of: `git@repo-path.git`. You should checkout to the same tag as
@@ -51,7 +51,7 @@ VP2420.
     cd -
     ```
 
-1. Build the firmware v1.1.0 or newer:
+1. Build the firmware:
 
     ```bash
     ./build.sh vp2420

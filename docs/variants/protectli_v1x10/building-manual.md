@@ -24,11 +24,11 @@ V1210, V1410 and V1610.
     git clone https://github.com/Dasharo/coreboot
     ```
 
-2. Checkout the desired version, e.g. `v0.9.0`:
+2. Checkout the desired version, e.g. `v0.9.2`:
 
     ```bash
     cd coreboot
-    git checkout protectli_vault_jsl_v0.9.0
+    git checkout protectli_vault_jsl_v0.9.2
     ```
 
 3. Checkout submodules:
@@ -37,7 +37,7 @@ V1210, V1410 and V1610.
     git submodule update --init --checkout
     ```
 
-4. Obtain the Protectli blobs package:
+4. Obtain the Protectli blobs package (only for versions v0.9.0 and v0.9.1):
 
     > Replace `<PROTECTLI_BLOBS_REPO>` with a a proper path to the repository
     > in a form of: `git@repo-path.git`. You should checkout to the same tag as
@@ -51,7 +51,7 @@ V1210, V1410 and V1610.
     cd -
     ```
 
-5. Build the firmware v1.0.19 or newer:
+5. Build the firmware:
 
     + for V1210
 
