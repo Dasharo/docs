@@ -42,7 +42,7 @@ Versions v1.1.1 and newer support all variants with a single binary.
     git submodule update --init --checkout
     ```
 
-1. Obtain the Protectli blobs package:
+1. Obtain the Protectli blobs package (only for version v1.1.0 and older):
 
     > Replace `<PROTECTLI_BLOBS_REPO>` with a a proper path to the repository
     > in a form of: `git@repo-path.git`. You should checkout to the same tag as
@@ -56,7 +56,7 @@ Versions v1.1.1 and newer support all variants with a single binary.
     cd -
     ```
 
-1. Build the firmware v1.1.1 or newer:
+1. Build the firmware:
 
     === "v1.1.1 or newer"
 
