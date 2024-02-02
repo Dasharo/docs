@@ -13,9 +13,15 @@ tab. The button below will take you there there.
 
 [Latest]: https://github.com/Dasharo/meta-dts/releases
 
-Using the latest release is recommended.
+**Using the latest release is strongly recommended.**
 
-<!--
+---
+
+# Older releases
+
+In this section you can find old releases, that are not available on the
+Github [Releases](https://github.com/Dasharo/meta-dts/releases) page.
+
 ## v1.2.11 - 2023-11-03
 
 ### Images
@@ -81,12 +87,14 @@ Beta/preview release
 ### Images
 
 [USB bootable DTS v1.2.6 image][USB_DTS_v1.2.6]{ .md-button }
+<!--
 [sha256][USB_DTS_sha_v1.2.6]{ .md-button }
 [sha256.sig][USB_DTS_sig_v1.2.6]{ .md-button }
 
 [DTS v1.2.6 ISO image][ISO_DTS_v1.2.6]{ .md-button }
 [sha256 ISO][ISO_DTS_sha_v1.2.6]{ .md-button }
 [sha256.sig ISO][ISO_DTS_sig_v1.2.6]{ .md-button }
+-->
 
 [USB_DTS_v1.2.6]: https://3mdeb.com/open-source-firmware/DTS/dts-base-image-v1.2.6.wic.gz
 [ISO_DTS_v1.2.6]: https://3mdeb.com/open-source-firmware/DTS/dts-base-image-v1.2.6.iso
@@ -292,4 +300,3 @@ stored in `meta-dts` repository.
 * [Bootable via iPXE](./documentation.md#bootable-over-a-network).
 * [Bootable via USB](./documentation.md#bootable-usb-stick).
 * Tested on NovaCustom NV4x, Dell OptiPlex 7010/9010.
--->
