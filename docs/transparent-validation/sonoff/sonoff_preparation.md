@@ -64,19 +64,20 @@ instructions for both.
 
     1. Figure out what is the device name of the programmer - run `dmesg | tail`
     and see what is the most recently attached `/dev/ttyUSB`, e.g. `/dev/ttyUSB0`.
-    You will need to substitute DEVICE with the correct name as you follow along
-    this guide.
 
     1. Backup the vendor firmware by running
 
         ```sh
-        esptool.py --port DEVICE read_flash 0x00000 0x100000 backup.bin
+        esptool.py --port /dev/ttyUSB0 read_flash 0x00000 0x100000 backup.bin
         ```
+
+        > Note: `/dev/ttyUSB0` is example device - check whether `USB0` is the
+        correct one.
 
     1. Erase firmware
 
         ```sh
-        esptool.py --port DEVICE erase_flash
+        esptool.py --port /dev/ttyUSB0 erase_flash
         ```
 
     1. Download a copy of [tasmota.bin](http://ota.tasmota.com/tasmota/release/)
@@ -93,8 +94,19 @@ instructions for both.
     a socket.
 
     1. Connect to Sonoff's temporary WiFi hotspot named after Tasmota,
-    visit `http://192.168.4.1` and follow on-screen instructions to connect
+    visit `http://192.168.4.1/in` and make a note of the MAC address to be able
+    to assign an IP to the MAC address.
+
+        > Note: Use a normal browser so that when you log on to the new network,
+        Sonoff shows which IP has been assigned. If you use the system pop-up with
+        the Wi-Fi login page, it will close immediately after connecting to a new
+        network and you will not see the new IP.
+
+    1. Visit `http://192.168.4.1` and follow on-screen instructions to connect
     the Sonoff to your network of choice.
+
+    1. The new IP address will be displayed and an attempt will be made to
+    connect to it. Make a note of this IP and assign it to a MAC address.
 
 === "ESPhome"
 
@@ -231,6 +243,7 @@ instructions for both.
 To switch the relay the following bash commands may be used:
 
 > `192.168.43.171` should be replaced with assigned IP.
+> Note: You can only connect to Sonoff via an unsecured connection `http://`
 
 === "Tasmota"
 
@@ -250,10 +263,10 @@ To switch the relay the following bash commands may be used:
     curl -X POST http://192.168.43.171/switch/sonoff_s20_relay/turn_on
     ```
 
-To check the state of the component use:
+    To check the state of the component use:
 
-```sh
-# name @ name in /home/name/workspace/sonoff/docker [16:28:02] C:1
-$ curl  http://192.168.43.171/switch/sonoff_s20_relay
-{"id":"switch-sonoff_s20_relay","state":"OFF","value":false}
-```
+    ```sh
+    # name @ name in /home/name/workspace/sonoff/docker [16:28:02] C:1
+    $ curl  http://192.168.43.171/switch/sonoff_s20_relay
+    {"id":"switch-sonoff_s20_relay","state":"OFF","value":false}
+    ```
