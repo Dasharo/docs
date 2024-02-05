@@ -5,9 +5,13 @@ for Dasharo Tools Suite.
 
 ## Latest release
 
-Versions after `v1.2.11` are published on `meta-dts` GitHub repository, inside
-[Releases](https://github.com/Dasharo/meta-dts/releases) tab so latest image can
-be downloaded from there.
+**Versions newer than `v1.2.11` are not published here.**{ .md-banner--warning }
+Instead, they can be found on `meta-dts` GitHub repository, inside `Releases`
+tab. The button below will take you there there.
+
+[Latest release][Latest]{ .md-button .center .md-feedback }
+
+[Latest]: https://github.com/Dasharo/meta-dts/releases
 
 ## v1.2.11 - 2023-11-03
 
