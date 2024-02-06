@@ -52,7 +52,14 @@ unzip 7D25v13.zip
 
 * Flash via external programmer:
 
-> The command line will be different, depending on the programmer you use
+The MS7D25 is known to have one of two different flash chips:
+Winbond W25Q256JWEIQ (Markings: 25Q256JWEQ) and Macronix MX25U25673GZ4I40.
+The W25Q256JWEIQ is only supported since flashrom upstream v1.3 or the dasharo
+fork since v1.2. The Macronix chip has been supported for much longer, albeit
+under a different name.
+
+> The command line will be different, depending on the programmer you use.
+See the flashrom documentation for more details.
 
 ```bash
 flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w 7D25v13/E7D25IMS.130
