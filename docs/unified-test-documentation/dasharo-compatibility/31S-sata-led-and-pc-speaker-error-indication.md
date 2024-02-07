@@ -33,3 +33,28 @@ error and the platform can not proceed with booting. Error indication path will
 be triggered causing the platform to beep and blink the SATA LED. There should
 be only 12 beeps, but the SATA LED should blink endlessly (until DUT is powered
 off or reset).
+
+## ERR002.001 PC speaker beep during boot (firmware)
+
+**Test description**
+
+This test aims to verify if PC speaker beeps during the boot process.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+2. DUT with PC speaker
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+2. Listen for a single beep until the bootsplash logo appears.
+
+**Expected result**
+
+The DUT should make a single beep shortly before the bootsplash logo appears.
