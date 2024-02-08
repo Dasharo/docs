@@ -1,11 +1,11 @@
-# Dasharo (coreboot + heads) firmware variant
+# Dasharo (coreboot + Heads) firmware variant
 
-For the NovaCustom NV4x 12th Gen, heads-based variant of Dasharo firmware is
+For the NovaCustom NV4x 12th Gen, Heads-based variant of Dasharo firmware is
 offered as a Technology Preview Release.
 
 ## Releases
 
-Following Release Notes describe status of Dasharo (coreboot + heads)firmware
+Following Release Notes describe status of Dasharo (coreboot + Heads) firmware
 development for NovaCustom NV4x 12th Gen.
 
 ### v0.9.0
@@ -15,11 +15,11 @@ TBD
 ## Hardware Configuration Matrix
 
 Generally, the same [hardware configuration](hardware-matrix.md) as for the
-UEFI varuant applies.
+UEFI variant applies.
 
 A notable addition is usage of the
-[Nitrokey 3A](https://shop.nitrokey.com/shop/nk3an-nitrokey-3a-nfc-14)
-USB device, which is required for heads installation and usage.
+[Nitrokey 3A Mini](https://novacustom.com/product/nitrokey-3a-mini/)
+USB device, which is required for Heads installation and usage.
 
 ## Test Matrix
 
@@ -27,9 +27,9 @@ Please refer to the [tests results spreadsheet](TBD).
 
 ## Building manual
 
-This sectino presents the crucial steps required to build the Dasharo heads
+This sectino presents the crucial steps required to build the Dasharo Heads
 firmware. For more information, you may also refer to the official
-[heads building documentation](https://osresearch.net/general-building/).
+[Heads building documentation](https://osresearch.net/general-building/).
 
 ### Requirements
 
@@ -47,7 +47,7 @@ Make sure that you have following packages installed:
     sudo apt -y install git
     ```
 
-* 1. Clone Dasharo heads repository
+* 1. Clone Dasharo Heads repository
 
    ```bash
     git clone https://github.com/Dasharo/heads.git
@@ -76,7 +76,7 @@ Make sure that you have following packages installed:
 This will produce a Dasharo binary placed in
 `build/x86/nitropad-nv41/dasharo-nitropad-nv41-*.rom`.
 
-## Transition from Dasharo UEFI to heads variant
+## Transition from Dasharo UEFI to Heads variant
 
 TBD
 
@@ -91,9 +91,9 @@ supported as of now. You would need to replace the
 
 The supported method is to follow the
 [initial deployment](/unified/novacustom/initial-deployment.md), and then the
-[Transition from Dasharo UEFI to heads variant](#transition-from-dasharo-uefi-to-heads-variant).
+[Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads-variant).
 
 ## Firmware update
 
-[Build](#building-manual) or download Dasharo heads firmware, and proceed with
-the official [heads update documentation](https://osresearch.net/Updating).
+[Build](#building-manual) or download Dasharo Heads firmware, and proceed with
+the official [Heads update documentation](https://osresearch.net/Updating).
