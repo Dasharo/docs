@@ -1,2 +1,4 @@
     Partition Table: msdos
   linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed
+dout
+doubt

@@ -1,3 +1,3 @@
 [codespell]
 exclude-file = .codespellx
-ignore-words-list = "FPT,FTP,fpt,ftp"
+ignore-words-list = "FPT,FTP,fpt,ftp,dout,doubt"
