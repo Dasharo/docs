@@ -410,6 +410,7 @@ nav:
       - 'Dasharo Test Specification':
           - 'Overview': unified-test-documentation/overview.md
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
+          - 'Generic Testing Stand Setup': unified-test-documentation/generic-testing-stand-setup.md
           - 'Dasharo compatibility':
               - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
               - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md

@@ -8,7 +8,8 @@ Dasharo open-source firmware.
 
 ## Connections
 
-Set up the connections required for external flashing as described in EX021.
+Set up the connections required for external flashing as described in
+[Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 Protectli VP2410 are flashed using the Pomona clip connection variant. Use
 the pictures below to easily locate essential components on the mainboard.
 
@@ -28,7 +29,9 @@ Completely remove the motherboard from the platform cover.
 
 ## Firmware flashing
 
-To flash firmware, follow the steps described in EX021, noting that:
+To flash firmware, follow the steps described in
+[Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
+, noting that:
 * The chip voltage for this platform is **1.8V**
 * The proper flashrom parameters for this platform are:
 

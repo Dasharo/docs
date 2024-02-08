@@ -9,7 +9,8 @@ and Dasharo open-source firmware.
 
 ## Connections
 
-Set up the connections required for external flashing as described in EX021.
+Set up the connections required for external flashing as described in
+[Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md).
 Protectli VP46XX are flashed using the Pomona clip connection variant. Use
 the pictures below to easily locate essential components on the mainboard.
 
@@ -23,7 +24,9 @@ the pictures below to easily locate essential components on the mainboard.
 
 ## Firmware flashing
 
-To flash firmware, follow the steps described in EX021, noting that:
+To flash firmware, follow the steps described in
+[Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
+, noting that:
 * The chip voltage for this platform is **3.3V**
 * The proper flashrom parameters for this platform are:
 

@@ -4,7 +4,7 @@
 
 This document describes platform-specific details for assembling an MSI PRO
 Z690-A testing stand. Use this document as reference while going through
-process EX021.
+[Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 
 ## Prerequisites
 

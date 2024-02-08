@@ -4,7 +4,8 @@
 
 This document describes platform-specific details for assembling Protectli
 VP2410, VP2420, VP4630/VP4650/VP4670, V1210/V1410/V1610 testing stands.
-Use this document as reference while going through process EX021.
+Use this document as reference while going through
+[Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 
 ## Prerequisites
 
