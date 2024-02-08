@@ -251,6 +251,7 @@ To switch the relay the following bash commands may be used:
     curl -X POST http://192.168.43.171/cm?cmnd=Power%20TOGGLE
     curl -X POST http://192.168.43.171/cm?cmnd=Power%20On
     curl -X POST http://192.168.43.171/cm?cmnd=Power%20off
+    curl -X POST http://192.168.43.171/cm?cmnd=State/POWER
     ```
 
     Full list of commands provided [here](https://tasmota.github.io/docs/Commands/#control)
