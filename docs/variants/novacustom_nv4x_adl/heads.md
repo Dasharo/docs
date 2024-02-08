@@ -3,6 +3,13 @@
 For the NovaCustom NV4x 12th Gen, Heads-based variant of Dasharo firmware is
 offered as a Technology Preview Release.
 
+Please consider to support the project financially by purchasing the
+[Dasharo Entry Subscription](https://novacustom.com/product/dasharo-entry-subscription/).
+With this subscription, you will get access to the
+[Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads-variant)
+feature in Dasharo Tools Suite and support from Dasharo directly via Matrix.
+The subscription is not automatically renewed.
+
 ## Releases
 
 Following Release Notes describe status of Dasharo (coreboot + Heads) firmware
