@@ -1,6 +1,8 @@
 # Hardware design
 
-Design of this board is based on [SD MUX](https://wiki.tizen.org/SD_MUX). SDWire
+Design of this board is based on
+[SD MUX](http://web.archive.org/web/20220812002642/https://wiki.tizen.org/SD_MUX)
+. SDWire
 does not have power switch or USB switch but has built in USB SD card reader. SD
 card multiplexer itself is exactly the same in both devices.
 
@@ -20,7 +22,7 @@ LED positions are showed in the image below.
 
 ![](./../../images/SD-wire_leds.jpg)
 
-<center>Source: [wiki.tizen.org](https://wiki.tizen.org/File:SDWire-leds.png)</center>
+<center>Source: [wiki.tizen.org](http://web.archive.org/web/20210831025540/https://wiki.tizen.org/File:SDWire-leds.png)</center>
 
 ## PCB elements and scheme
 
@@ -30,4 +32,4 @@ LED positions are showed in the image below.
 
 ![](./../../images/SD-wire_scheme-1.png)
 
-<center>Source: [wiki.tizen.org](https://wiki.tizen.org/images/c/cb/SDWire-v1.4-sch.pdf)</center>
+<center>Source: [wiki.tizen.org](http://web.archive.org/web/20210831025540/https://wiki.tizen.org/images/c/cb/SDWire-v1.4-sch.pdf)</center>

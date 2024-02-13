@@ -63,7 +63,7 @@ documentation when in doubt.
 
 #### Prerequisites
 
-* [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
+* [Prepared RTE](../transparent-validation/rte/v1.1.0/quick-start-guide.md)
 * SOIC-8 Pomona clip (if applicable)
 * 6x female-female wire cables
 
@@ -79,7 +79,7 @@ for setting up a Pomona clip connection:
     ![](../images/pomona_clip.jpg)
     ![](../images/pomona_clip_with_cables.jpg)
 
-1. Connect the Pomona clip to the [SPI header](../../transparent-validation/rte/v1.1.0/specification.md)
+1. Connect the Pomona clip to the [SPI header](../transparent-validation/rte/v1.1.0/specification.md)
    on RTE.
 
     | SPI header | Pomona clip  |

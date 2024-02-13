@@ -276,7 +276,7 @@ Using SDWire there is no need to disconnect SD card from DUT.
 
 References & Projects:
 
-* [https://wiki.tizen.org/SDWire](https://wiki.tizen.org/SDWire)
+* [Tizen Wiki](http://web.archive.org/web/20240121081917/https://wiki.tizen.org/SDWire)
 * [Ethernet camera module build – Automated flashing](https://www.kurokesu.com/main/2022/08/02/ethernet-camera-module-build-log-5-automated-flashing/)
 * [SD Wire & 3d Printer Usage](https://github.com/arekm/OctoPrint-Sdwire)
 

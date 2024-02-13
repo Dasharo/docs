@@ -565,10 +565,10 @@ uart --- Get current value of UART voltage or set if new value is given [in mill
 
 ---
 
-_Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)_
+_Images source: [Wiki Tizen](http://web.archive.org/web/20230702190152/https://wiki.tizen.org/MuxPi)_
 
 [nanopi-image]: https://cloud.3mdeb.com/index.php/s/MENgScifExeeo6P/download
 [nanopi-image2]: https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download
 [cortex-binary]: https://cloud.3mdeb.com/index.php/s/adnEZLgo2diXkdw/download
 [etcher]: https://www.balena.io/etcher/
-[usb-m]: https://wiki.tizen.org/MuxPi#USB-M
+[usb-m]: http://web.archive.org/web/20230702190152/https://wiki.tizen.org/MuxPi#USB-M

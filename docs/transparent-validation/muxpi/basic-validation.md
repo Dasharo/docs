@@ -250,4 +250,4 @@ Minicom quick guide:
 
 ---
 
-_Images source: [Wiki Tizen](https://wiki.tizen.org/MuxPi)_
+_Images source: [Wiki Tizen](http://web.archive.org/web/20230702190152/https://wiki.tizen.org/MuxPi)_

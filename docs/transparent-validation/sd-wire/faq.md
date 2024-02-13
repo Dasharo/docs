@@ -23,7 +23,7 @@ remote DSLR camera.
 For additional details please refer to the official documentation:
 
 * [Dasharo Universe](https://docs.dasharo.com/transparent-validation/sd-wire/getting-started/)
-* [Tizen Wiki](https://wiki.tizen.org/SDWire)
+* [Tizen Wiki](http://web.archive.org/web/20240121081917/https://wiki.tizen.org/SDWire)
 
 These resources will provide you with comprehensive guidance on how to make the
 most of the product for your specific needs.
