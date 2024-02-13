@@ -520,8 +520,8 @@ executed.
 **Test steps**
 
 1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img/wrapper.sh`
-    to generate `INTERMIDIATE.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/INTERMIDIATE.img`
+    to generate `INTERMEDIATE.img`.
+1. Place `open-source-firmware-validation/scripts/secure-boot/images/INTERMEDIATE.img`
     on the `USB storage`.
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
@@ -1049,8 +1049,9 @@ inside.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
-1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot Options` ->
-    `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot Keys`
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`
 1. Press `F10` to save changes.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option.
@@ -1146,8 +1147,9 @@ on DUT.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
-1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot Options` ->
-    `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot Keys`.
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`.
 1. Press `F10` to save changes.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option.
@@ -1209,8 +1211,9 @@ automatic certificate provisioning is attached and can be booted on DUT.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
-1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot Options` ->
-    `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot Keys`.
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`.
 1. Press `F10` to save changes.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option.
@@ -1288,8 +1291,9 @@ can be enrolled from the operating system using `sbctl`.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
-1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot Options` ->
-    `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot Keys`
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`
 1. Press `F10` to save changes.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option.
@@ -1363,8 +1367,9 @@ format from the operating system while using `sbctl`.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
-1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot Options` ->
-    `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot Keys`
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`
 1. Press `F10` to save changes.
 1. Press `ESC` until the setup menu.
 1. Select the `Reset` option.
