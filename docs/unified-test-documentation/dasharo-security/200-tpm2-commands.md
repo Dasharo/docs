@@ -12,7 +12,12 @@
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 4. Proceed with th  e
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
-5. Install the `tpm2-tools` package: `sudo apt install tpm2-tools`.
+5. Install the `tpm2-tools` package:
+
+   ```bash
+   sudo apt install tpm2-tools
+   ```
+
 6. Check if SHA1 and SHA256 banks are enabled: `tpm2_getcap pcrs`
     Output should contain:
 
@@ -22,6 +27,23 @@
     ```
 
     If not, run `tpm2_pcrallocate` and reboot the system.
+
+<!--
+## TPMCMD001.001 Check if both SHA1 and SHA256 PCRs are enabled (Ubuntu 22.04)
+## TPMCMD002.001 PCRREAD Function Verification (Ubuntu 22.04)
+## TPMCMD003.001 PCREXTEND And PCRRESET Functions (Ubuntu 22.04)
+## TPMCMD003.002 PCREXTEND And PCRRESET Functions - locality protections (Ubuntu
+22.04)
+## TPMCMD004.001 PCREVENT Function (Ubuntu 22.04)
+## TPMCMD005.001 CREATEPRIMARY Function Verification (Ubuntu 22.04)
+## TPMCMD006.001 NVDEFINE and NVUNDEFINE Functions Verification (Ubuntu 22.04)
+## TPMCMD007.001 CREATE Function (Ubuntu 22.04)
+## TPMCMD007.002 CREATELOADED Function (Ubuntu 22.04)
+## TPMCMD008.001 Signing the file (Ubuntu 22.04)
+## TPMCMD009.001 Encryption and Decryption of the file (Ubuntu 22.04)
+## TPMCMD010.001 Hashing the file (Ubuntu 22.04)
+##TPMCMD011.001 Performing HMAC operation on the file (Ubuntu 22.04)
+-->
 
 ## TPMCMD012.001 Sealing and Unsealing the file without Policy (Ubuntu 22.04)
 

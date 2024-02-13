@@ -480,6 +480,7 @@ nav:
               - 'Dasharo Configuration Utility': unified-test-documentation/dasharo-compatibility/362-dcu.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
+              - "TPM2 Commands": unified-test-documentation/dasharo-security/200-tpm2-commands.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
