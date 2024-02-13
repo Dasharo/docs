@@ -110,7 +110,7 @@ and return to the `Setup Menu`.
 **Test description**
 
 This test aims to verify that the `Dasharo Tools Suite` option in
-`Dasharo Network Boot Menu` allows booting into DTS.
+`Dasharo Network Boot Menu` allows booting into DTS over HTTPS.
 
 **Test configuration data**
 
@@ -131,11 +131,14 @@ This test aims to verify that the `Dasharo Tools Suite` option in
    ++enter++.
 1. Select the `Dasharo Tools Suite` option using the arrow keys, then press
     ++enter++.
+1. Take note of the output from iPXE while DTS is loading.
 
 **Expected result**
 
-After configuring the network interfaces, connecting to the server and booting,
-`Dasharo Tools Suite` menu should appear.
+1. After configuring the network interfaces, connecting to the server and
+   booting, `Dasharo Tools Suite` menu should appear.
+1. While downloading DTS, the URL pointing to `dts.ipxe` printed to the console
+   should begin with HTTPS.
 
 ## PXE005.001 OS installation option is available and works correctly
 
@@ -240,3 +243,38 @@ server.
 1. The iPXE application boots successfully.
 1. iPXE obtains an IP address.
 1. iPXE boots an `Debian 11` from netboot.xyz.
+
+## PXE008.001 Firmware Update Mode
+
+**Test description**
+
+This test aims to verify that the DUT is capable of network booting Dasharo
+Tools Suite over the network using Firmware Update Mode.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Ensure network cable is connected to the DUT.
+1. Hold the `SETUP_MENU_KEY` to enter the UEFI Boot Menu.
+1. Select the `Dasharo System Features` option using the arrow keys and press
+   ++enter++.
+1. Select the `Dasharo Security Options` option using the arrow keys and press
+   ++enter++.
+1. Select the `Firmware Update Mode` option using the arrow keys and press
+   ++enter++.
+1. Press ++enter++ when prompted. The DUT will reboot at this point.
+1. Press the requested number on the keyboard when prompted.
+
+**Expected result**
+
+1. DTS is booted automatically when Firmware Update Mode is entered.
+1. DTS automatically begins to check for a firmware update.
