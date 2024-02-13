@@ -242,7 +242,7 @@ UEFI Secure Boot into DTS using
 image allow to prepare a PoC version with [uses sample
 keys](https://github.com/jiazhang0/meta-secure-core/tree/master/meta-efi-secure-boot#sample-keys)
 which by no mean should used in production. For user keys the script
-[create-user-key-store.sh](https://github.com/jiazhang0/meta-secure-core/blob/master/meta-signing-key/scripts/create-user-key-store.sh
+[create-user-key-store.sh](https://github.com/jiazhang0/meta-secure-core/blob/master/meta-signing-key/scripts/create-user-key-store.sh)
 can be used but it was not tested yet. Quick start with instructions on how to
 use image are described in
 [meta-efi-secure-boot](https://github.com/jiazhang0/meta-secure-core/tree/master/meta-efi-secure-boot#quick-start-for-the-first-boot).
