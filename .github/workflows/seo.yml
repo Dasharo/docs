@@ -12,14 +12,12 @@ jobs:
   linkChecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4.1.1
 
-      - name: Link Checker
-        id: lychee
-        uses: lycheeverse/lychee-action@v1.8.0
-        with:
-          fail: true
-          args: --timeout 60 --max-redirects 10 -a 403,406,429,500,502,503,522,999 .
+      - name: Test links
+        uses: 3mdeb/lychee-log-action@main
+
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
     name: Check orphan pages
