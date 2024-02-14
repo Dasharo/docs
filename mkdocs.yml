@@ -282,11 +282,13 @@ nav:
           - 'Hardware Compatibility': unified/msi/hcl.md
           - 'MSI PRO Z690-A':
               - 'Releases': variants/msi_z690/releases.md
+              - 'Heads firmware variant': variants/msi_z690/heads.md
               - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
               - 'Test matrix': variants/msi_z690/test-matrix.md
               - 'Openness score': variants/msi_z690/openness_score.md
           - 'MSI PRO Z790-P':
               - 'Releases': variants/msi_z790/releases.md
+              - 'Heads firmware variant': variants/msi_z790/heads.md
               - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
               - 'Test matrix': variants/msi_z790/test-matrix.md
               - 'Openness score': variants/msi_z790/openness_score.md
