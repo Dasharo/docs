@@ -28,6 +28,7 @@ be accessed from the firmware.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Disable Secure Boot.
 
 **Test steps**
 
@@ -305,6 +306,7 @@ firmware.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Disable Secure Boot.
 
 **Test steps**
 
@@ -416,13 +418,14 @@ by the firmware.
 
 1. `FIRMWARE` = Dasharo
 2. `OPERATING_SYSTEM` = Ubuntu 22.04
-3. Download `cbmem` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
 
 **Test setup**
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 

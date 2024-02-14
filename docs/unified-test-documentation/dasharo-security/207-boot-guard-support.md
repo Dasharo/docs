@@ -26,6 +26,7 @@ to verify that the implemented Boot Guard mechanism works correctly.
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. Download `cbmem` from the
     [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 
