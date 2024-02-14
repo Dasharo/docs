@@ -205,7 +205,7 @@ stored in `meta-dts` repository.
   image](./documentation.md#building).
 * Added Github Actions to automate new version building.
 * Added new tools: cbfstool, cbmem, futil, intelmetool (all from [Dasharo
-  coreboot fork](https://github.com/Dasharo/coreboot/tree/coreboot-utils)),
+  coreboot fork](https://github.com/Dasharo/coreboot/tree/coreboot-utils-v2)),
   [binwalk](https://github.com/ReFirmLabs/binwalk),
   [uefi-firmware-parser](https://github.com/theopolis/uefi-firmware-parser),
   [mei-amt-check](https://github.com/mjg59/mei-amt-check).
