@@ -261,6 +261,9 @@ of PCIe 5.0 firmware by Dasharo works.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 

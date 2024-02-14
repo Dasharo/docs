@@ -12,9 +12,9 @@
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
 1. Disable Secure Boot.
-1. Download `cbmem` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
 
 ## EDP001.001 Enable early Boot DMA Protection support
 
@@ -33,6 +33,9 @@ DMA transactions by configuring VT-D/IOMMU should be active.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 
@@ -126,6 +129,9 @@ PCIe devices DMA transactions by configuring VT-D/IOMMU should be non-active.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 

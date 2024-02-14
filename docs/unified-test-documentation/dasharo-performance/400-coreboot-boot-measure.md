@@ -10,8 +10,9 @@
     [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
-1. Download `cbmem` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-    to the DUT.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 ## CBMEM001.001 coreboot booting time measure after coldboot (Ubuntu 22.04)
 
@@ -30,6 +31,9 @@ results and specify the platform stability.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 
@@ -61,6 +65,9 @@ results and specify the platform stability.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 
@@ -92,6 +99,9 @@ the results and specify the platform stability.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Disable Secure Boot.
 
 **Test steps**
 
