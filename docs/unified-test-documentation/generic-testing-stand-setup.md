@@ -224,60 +224,42 @@ Platform external flashing is needed for two reasons:
 * it enables the process of unbricking the platform.
 
 The flashing operation usually consists of several commands, involving crucial
-power management, so it is advisable to prepare a script that automates the
-process. This is a crucial function, so if in doubt, ask your supervisor.
+power management, so it is advisable to use our
+[osfv-cli tool](https://github.com/Dasharo/osfv-scripts/blob/main/osfv_cli/README.md)
+, providing support for most of Dasharo platforms.
 
-> NOTE: On some platforms, the flash chip supply voltage is 1.8V, not 3.3V.
-  The supply voltage should be determined before making any connections, based
-  on our platform-specific documentation or the flash chip datasheet.
+**Example use:**
 
-Example script template:
-
-```bash
-#!/bin/bash
-
-# Platform power control, example commands:
-./sonoff.sh off
-rte_ctrl poff
-echo 0 > /sys/class/gpio/gpio199/value
-
-# Set appropriate GPIO states
-echo "set SPI Vcc to 3.3V"
-echo 1 > /sys/class/gpio/gpio405/value
-sleep 2
-echo  "SPI Vcc ON"
-echo 1 > /sys/class/gpio/gpio406/value
-sleep 2
-echo "SPI lines ON"
-echo 1 > /sys/class/gpio/gpio404/value
-sleep 2
-
-# dry flash command
-echo "start flash command"
-flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000
-
-# Set back GPIO states
-echo "Turn SPI off"
-echo 0 > /sys/class/gpio/gpio404/value
-echo 0 > /sys/class/gpio/gpio406/value
-
-
-# Platform power control, example commands:
-./sonoff.sh on
-echo 1 > /sys/class/gpio/gpio199/value
-rte_ctrl poff
-```
-
-The output should resemble the following:
-
-```bash
-(...)
+```sh
+λ osfv_cli rte --rte_ip 192.168.10.244 flash probe
+DUT model retrieved from snipeit: VP4630
+Probing flash...
+Executing command: flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c MX25L12835F/MX25L12845E/MX25L12865E
 flashrom v1.2 on Linux 5.4.69 (armv7l)
 flashrom is free software, get the source code at https://flashrom.org
 
 Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
-Found Macronix flash chip "MX25U25635F" (32768 kB, SPI) on linux_spi.
-(...)
+Found Macronix flash chip "MX25L12835F/MX25L12845E/MX25L12865E" (16384 kB, SPI) on linux_spi.
+
+No operations were specified.
+```
+
+```sh
+λ osfv_cli rte --rte_ip 192.168.10.244 flash read --rom vp4630-read.rom
+DUT model retrieved from snipeit: VP4630
+Reading from flash...
+Executing command: flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c MX25L12835F/MX25L12845E/MX25L12865E -r /tmp/read.rom
+flashrom v1.2 on Linux 5.4.69 (armv7l)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+
+Found Macronix flash chip "MX25L12835F/MX25L12845E/MX25L12865E" (16384 kB, SPI) on linux_spi.
+
+Reading flash...
+done.
+
+Read flash content saved to vp4630-read.rom
 ```
 
 > Flashing with flashrom takes about 1 minute.
@@ -303,25 +285,20 @@ every position:
    properly:
 
     ```sh
-    rte_ctrl rel
+    osfv_cli rte --rte_ip 192.168.10.244 rel tgl
     ```
 
     ```sh
-    rte_ctrl pon
+    osfv_cli rte --rte_ip 192.168.10.244 pwr on
     ```
 
     ```sh
-    rte_ctrl poff
+    osfv_cli rte --rte_ip 192.168.10.244 pwr off
     ```
 
     ```sh
-    rte_ctrl reset
+    osfv_cli rte --rte_ip 192.168.10.244 pwr reset
     ```
-
-    > NOTE: On different versions of the RTE software, the invocation of the
-      controller may vary slightly. If the command format mentioned above does
-      not work, try changing `rte_ctrl` to `./rte_ctrl`, `RteCtrl`, or
-      `Rte_Ctrl`.
 
 1. Check the flashing connections using a prepared flashing script.
 1. Check for additional connections.
