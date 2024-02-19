@@ -101,8 +101,22 @@ Sometimes it catches things that are not detected by Grammarly.
 - [paste.dasharo.com](https://paste.dasharo.com) - pastebin alternative hosted
 by Dasharo.
 - [asciinema.org](https://asciinema.org) - free and open-source solution for
-recording terminal sessions. Sometimes - especially in more complex cases, it is
-good to present command sequences in this way.
+  recording terminal sessions. Sometimes - especially in more complex cases, it is
+  good to present command sequences in this way.
+
+### AI usage
+
+Please read [this article][faq01] to understand generally accepted usage models
+of AI during writing. TL;DR Yes, you can, but for error, logic, and grammar
+improvements, not for text generation. Whatever text AI generates for you
+should be carefully reviewed by you. Delivering BLIP (_Bot Low Integrity
+Prose_) disrespects readers who invest time and energy in understanding what
+was written.
+
+In extreme situations, such practice may lead to DDoS of organization members,
+which is essentially an open attack that cannot stay without response.
+
+[faq01]: https://ia.net/topics/writing-with-ai
 
 ## Formatting
 
