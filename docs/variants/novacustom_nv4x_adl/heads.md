@@ -77,7 +77,7 @@ Make sure that you have following packages installed:
 This will produce a Dasharo binary placed in
 `build/x86/nitropad-nv41/dasharo-nitropad-nv41-*.rom`.
 
-## Transition from Dasharo UEFI to Heads variant
+## Switching from Dasharo UEFI to Heads
 
 To change firmware branches from UEFI to Heads, because of how different the two
 firmware types are, it's required to disable some security measures before
@@ -101,6 +101,25 @@ back on to boot into your new Heads installation!
 > On the first boot, you will be shown a warning about TOTP secrets. This is
 > normal and expected on the first boot. Run `OEM Factory Reset / Re-Ownership`
 > to finish deploying Heads.
+
+## Switching from Dasharo Heads back to UEFI
+
+To revert back to UEFI, you will need to boot into DTS from a USB stick.
+
+TBD: Prepare docs for Heads-bootable DTS
+
+* In the DTS main menu, select `Update Dasharo firmware` to check for available
+  updates.
+* When prompted to revert back to UEFI, press `Y`
+* Proceed with the firmware update process as usual.
+
+Once finished, your laptop will shut down automatically. Power it back on to
+boot into your UEFI firmware.
+
+> When reverting to UEFI, it's not possible to restore EFI boot manager entries
+> that were added before installing Heads. Therefore, you may need to re-create
+> your boot entries manually, or find your boot loader using `Boot From File`
+> option in the UEFI setup menu.
 
 ## Logo customization
 
