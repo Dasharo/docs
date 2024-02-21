@@ -67,17 +67,11 @@ Make sure that you have following packages installed:
     git checkout novacustom_nv4x_adl_v0.9.0
     ```
 
-1. Start docker container:
+1. Start the build inside the docker container:
 
     ```bash
     docker run --rm -it -v $PWD:$PWD -w $PWD \
-      3mdeb/heads-docker:3.0.0 /bin/bash
-    ```
-
-1. Inside of the container, start the build process:
-
-    ```bash
-    BOARD=nitropad-nv41 make
+      3mdeb/heads-docker:3.0.1 make BOARD=nitropad-nv41
     ```
 
 This will produce a Dasharo binary placed in
