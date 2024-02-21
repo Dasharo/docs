@@ -34,7 +34,7 @@ Please refer to the [tests results spreadsheet](TBD).
 
 ## Building manual
 
-This sectino presents the crucial steps required to build the Dasharo Heads
+This Section presents the crucial steps required to build the Dasharo Heads
 firmware. For more information, you may also refer to the official
 [Heads building documentation](https://osresearch.net/general-building/).
 
@@ -96,7 +96,7 @@ firmware installation:
     - BIOS boot medium lock
     - Intel Management Engine
 * [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
-* Enter your DES credentials in DTS
+* Enter your DES subscription credentials
 * Select `Update Dasharo firmware` to check for updates
 * When asked to switch to Heads firmware, press `Y`
 * Proceed with the update steps as usual
