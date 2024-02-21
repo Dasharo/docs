@@ -15,7 +15,7 @@ The subscription is not automatically renewed.
 Following Release Notes describe status of development of Dasharo (coreboot +
 Heads) firmware for NovaCustom NV4x 12th Gen.
 
-### v0.9.1
+### v0.9.0
 
 TBD
 
@@ -34,7 +34,7 @@ Please refer to the [tests results spreadsheet](TBD).
 
 ## Building manual
 
-This Section presents the crucial steps required to build the Dasharo Heads
+This section presents the crucial steps required to build the Dasharo Heads
 firmware. For more information, you may also refer to the official
 [Heads building documentation](https://osresearch.net/general-building/).
 
@@ -64,7 +64,7 @@ Make sure that you have following packages installed:
 
     ```bash
     cd heads
-    git checkout novacustom_nv4x_adl_v0.9.1
+    git checkout novacustom_nv4x_adl_v0.9.0
     ```
 
 1. Start docker container:
