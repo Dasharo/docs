@@ -104,6 +104,10 @@ firmware installation:
 When the update is finished, your laptop with shut down automatically. Power it
 back on to boot into your new Heads installation!
 
+> On the first boot, you will be shown a warning about TOTP secrets. This is
+> normal and expected on the first boot. Run `OEM Factory Reset / Re-Ownership`
+> to finish deploying Heads.
+
 ## Logo customization
 
 To replace the logo, one must rebuild the firmware. Other methods are not
