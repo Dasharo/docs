@@ -12,10 +12,10 @@ The subscription is not automatically renewed.
 
 ## Releases
 
-Following Release Notes describe status of Dasharo (coreboot + Heads) firmware
-development for NovaCustom NV4x 12th Gen.
+Following Release Notes describe status of development of Dasharo (coreboot +
+Heads) firmware for NovaCustom NV4x 12th Gen.
 
-### v0.9.0
+### v0.9.1
 
 TBD
 
@@ -64,7 +64,7 @@ Make sure that you have following packages installed:
 
     ```bash
     cd heads
-    git checkout novacustom_nv4x_adl_v0.9.0-rc1
+    git checkout novacustom_nv4x_adl_v0.9.1
     ```
 
 1. Start docker container:
@@ -85,7 +85,24 @@ This will produce a Dasharo binary placed in
 
 ## Transition from Dasharo UEFI to Heads variant
 
-TBD
+To change firmware branches from UEFI to Heads, because of how different the two
+firmware types are, it's required to disable some security measures before
+flashing. Follow the steps below to install Heads from an existing Dasharo UEFI
+firmware installation:
+
+* Enter UEFI Setup Menu and disable:
+    - UEFI Secure Boot
+    - SMM BIOS Write Protection
+    - BIOS boot medium lock
+    - Intel Management Engine
+* [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
+* Enter your DES credentials in DTS
+* Select `Update Dasharo firmware` to check for updates
+* When asked to switch to Heads firmware, press `Y`
+* Proceed with the update steps as usual
+
+When the update is finished, your laptop with shut down automatically. Power it
+back on to boot into your new Heads installation!
 
 ## Logo customization
 
