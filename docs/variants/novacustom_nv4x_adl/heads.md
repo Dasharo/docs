@@ -10,14 +10,27 @@ With this subscription, you will get access to the
 feature in Dasharo Tools Suite and support from Dasharo directly via Matrix.
 The subscription is not automatically renewed.
 
-## Releases
-
 Following Release Notes describe status of development of Dasharo (coreboot +
 Heads) firmware for NovaCustom NV4x 12th Gen.
 
-### v0.9.0
+## v0.9.0
 
-TBD
+### Added
+
+* Initial release supporting Heads payload
+* coreboot revision [3a9aa3a4](https://github.com/Dasharo/coreboot/commits/3a9aa3a4692f3dd49732f5b4e3ec54be385f0969/)
+  based on upstream version [v4.21](https://doc.coreboot.org/releases/coreboot-4.21-relnotes.html)
+
+### Known issues
+
+* [Power button does not work in Qubes](https://github.com/Dasharo/dasharo-issues/issues/710)
+* [Heads shuts down instead of rebooting](https://github.com/Dasharo/dasharo-issues/issues/711)
+* [Existing Qubes installation is not bootable after transition back to EDK2](https://github.com/Dasharo/dasharo-issues/issues/713)
+
+### SBOM (Software Bill of Materials)
+
+* [Dasharo coreboot fork rev 3a9aa3a4 based on upstream version 4.21](https://github.com/Dasharo/coreboot/tree/3a9aa3a4)
+* [Dasharo Heads fork rev ccf49703 based on upstream rev 25066e5f](https://github.com/Dasharo/heads/tree/ccf49703)
 
 ## Hardware Configuration Matrix
 
@@ -30,7 +43,7 @@ USB device, which is required for Heads installation and usage.
 
 ## Test Matrix
 
-Please refer to the [tests results spreadsheet](TBD).
+Please refer to the [tests results spreadsheet](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ).
 
 ## Building manual
 
@@ -132,7 +145,7 @@ supported as of now. You would need to replace the
 
 The supported method is to follow the
 [initial deployment](/unified/novacustom/initial-deployment.md), and then the
-[Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads-variant).
+[Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads).
 
 ## Firmware update
 
