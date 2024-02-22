@@ -114,6 +114,28 @@ issue from which the report is sourced.
         | Levin | 7-in-1 Type-C Hub Pro | v1.5.2 | No issues | Official support |
         | Generic | 8-in-1 Type-C Hub | v1.5.2 | One video output usable at a time | Official support |
 
+    === "NV4x 12th Gen __(Heads)__"
+        <div class="annotate" markdown>
+
+        ### Docks
+
+        | Manufacturer | Model | Dasharo version | Notes | Source |
+        |---|---|---|---|---|
+        | Wavlink | UMD05 Pro (1) | v1.7.2 | No issues (2) | Official support |
+
+        </div>
+
+        1. Rev.C1 and Rev.E
+        2. DP Alt mode: Synaptics VMM5310 DP MST hub, two upstream DP 1.4 lanes,
+           DSC 1.2 decompression, up to 2x 4K60 + 1x 4K30 depending on source.
+
+        ### Hubs
+
+        | Manufacturer | Model | Dasharo version | Notes | Source |
+        |---|---|---|---|---|
+        | Levin | 7-in-1 Type-C Hub Pro | v1.7.2 | No issues | Official support |
+        | Generic | 8-in-1 Type-C Hub | v1.7.2 | One video output usable at a time | Official support |
+
     > **Note on DisplayLink compatibility:** DisplayLink requires a driver to
     > function correctly. On Windows, the driver should install automatically if
     > network is connected and Windows Update is enabled. On Linux, consult your
