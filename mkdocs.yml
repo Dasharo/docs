@@ -62,13 +62,15 @@ extra:
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
-  - footnotes
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.keys
+  - admonition
   - attr_list
-  - meta
+  - footnotes
   - md_in_html
+  - meta
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.superfences
   - toc:
       toc_depth: 2
   - pymdownx.tasklist:
