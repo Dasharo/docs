@@ -3,9 +3,9 @@
 For the NovaCustom NV4x 12th Gen, Heads-based variant of Dasharo firmware is
 offered as a Technology Preview Release.
 
-Please consider to support the project financially by purchasing the
+Please consider supporting the project financially by purchasing the
 [Dasharo Entry Subscription](https://novacustom.com/product/dasharo-entry-subscription/).
-With this subscription, you will get access to the
+With this subscription, you get access to the
 [Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads-variant)
 feature in Dasharo Tools Suite and support from Dasharo directly via Matrix.
 The subscription is not automatically renewed.
@@ -67,11 +67,13 @@ Make sure that you have following packages installed:
     sudo apt -y install git
     ```
 
-* 1. Clone Dasharo Heads repository
+### Building
 
-   ```bash
+1. Clone Dasharo Heads repository:
+
+    ```bash
     git clone https://github.com/Dasharo/heads.git
-   ```
+    ```
 
 1. Navigate to the source code directory and checkout to the desired revision:
 
@@ -111,9 +113,18 @@ firmware installation:
 When the update is finished, your laptop with shut down automatically. Power it
 back on to boot into your new Heads installation!
 
-> On the first boot, you will be shown a warning about TOTP secrets. This is
-> normal and expected on the first boot. Run `OEM Factory Reset / Re-Ownership`
-> to finish deploying Heads.
+!!! warning "TOTP secrets warning"
+
+    On the first boot, you will be shown a warning about TOTP secrets. This is
+    normal and expected on the first boot. Run `OEM Factory Reset /
+    Re-Ownership` to finish deploying Heads.
+
+!!! note "Note for Qubes OS users"
+
+    After installing Qubes while Heads is installed, you will need to select
+    `Reset TPM` in the Heads menu to finish the installation.
+
+    Users upgrading to Heads while Qubes is already installed are not affected.
 
 ## Switching from Dasharo Heads back to UEFI
 
