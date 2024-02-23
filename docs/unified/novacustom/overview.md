@@ -1,8 +1,8 @@
 # Overview
 
-Select your firmware flavor:
+Select your Dasharo firmware flavor:
 
-=== "coreboot + UEFI"
+=== "Dasharo (coreboot + UEFI)"
     NovaCustom laptops come with this firmware variant out of the box.
 
     ## Hardware
@@ -76,7 +76,7 @@ Select your firmware flavor:
     - [NS5x/7x 12th Gen](/variants/novacustom_ns5x_adl/releases/)
     - [NS5x/7x 11th Gen](/variants/novacustom_ns5x_tgl/releases/)
 
-=== "coreboot + Heads"
+=== "Dasharo (coreboot + Heads)"
     Heads-based firmware is offered as a Dasharo Entry Subscription option.
 
     !!! note
