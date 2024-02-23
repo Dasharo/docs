@@ -99,7 +99,9 @@ firmware types are, it's required to disable some security measures before
 flashing. Follow the steps below to install Heads from an existing Dasharo UEFI
 firmware installation:
 
-* Enter UEFI Setup Menu and disable:
+* Hold down the ++f2++ key and press the ++power++ button to enter the UEFI
+  Setup Menu
+* Disable the following settings:
     - UEFI Secure Boot
     - SMM BIOS Write Protection
     - BIOS boot medium lock
@@ -119,10 +121,16 @@ back on to boot into your new Heads installation!
     normal and expected on the first boot. Run `OEM Factory Reset /
     Re-Ownership` to finish deploying Heads.
 
+    Check out [Heads documentation](https://osresearch.net/Configuring-Keys/#oem-factory-resetre-ownership)
+    for a detailed factory reset guide.
+
 !!! note "Note for Qubes OS users"
 
     After installing Qubes while Heads is installed, you will need to select
     `Reset TPM` in the Heads menu to finish the installation.
+
+    From the main menu, enter `Options` -> `TPM/TOTP/HOTP Options` and select
+    `Reset the TPM`.
 
     Users upgrading to Heads while Qubes is already installed are not affected.
 
@@ -130,8 +138,8 @@ back on to boot into your new Heads installation!
 
 To revert back to UEFI, you will need to boot into DTS from a USB stick.
 
-TBD: Prepare docs for Heads-bootable DTS
-
+* Follow the [Dasharo Tools Suite documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
+  to boot DTS from a USB stick
 * In the DTS main menu, select `Update Dasharo firmware` to check for available
   updates.
 * When prompted to revert back to UEFI, press `Y`
@@ -156,7 +164,7 @@ supported as of now. You would need to replace the
 
 The supported method is to follow the
 [initial deployment](/unified/novacustom/initial-deployment.md), and then the
-[Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads).
+[Transition from Dasharo UEFI to Heads variant](#switching-from-dasharo-uefi-to-heads).
 
 ## Firmware update
 
