@@ -101,11 +101,18 @@ firmware installation:
 
 * Hold down the ++f2++ key and press the ++power++ button to enter the UEFI
   Setup Menu
-* Disable the following settings:
-    - UEFI Secure Boot
+* Enter the `Device Manager` submenu and disable `Secure Boot`
+* Enter the `Dasharo System Features` submenu
+* In the `Dasharo Security Options` submenu, disable:
     - SMM BIOS Write Protection
     - BIOS boot medium lock
-    - Intel Management Engine
+* In the `Intel Management Engine Options` submenu disable the Management Engine
+
+!!! tip
+
+    For a more detailed guide on the UEFI Setup Menu options, check out the
+    [Dasharo menu documentation](https://docs.dasharo.com/dasharo-menu-docs/).
+
 * [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
 * Enter your DES subscription credentials
 * Select `Update Dasharo firmware` to check for updates
