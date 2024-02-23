@@ -83,7 +83,7 @@ Select your firmware flavor:
 
         This section applies to users of the Heads-based firmware version. If
         you are unsure which firmware version you're using, select
-        `coreboot + edk2` instead.
+        `coreboot + UEFI` instead.
 
     ## Hardware
 
