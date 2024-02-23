@@ -112,7 +112,7 @@ firmware installation:
 * When asked to switch to Heads firmware, press `Y`
 * Proceed with the update steps as usual
 
-When the update is finished, your laptop with shut down automatically. Power it
+When the update is finished, your laptop will shut down automatically. Power it
 back on to boot into your new Heads installation!
 
 !!! warning "TOTP secrets warning"
