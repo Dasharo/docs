@@ -117,7 +117,8 @@ firmware installation:
 * Enter your DES subscription credentials
 * Select `Update Dasharo firmware` to check for updates
 * When asked to switch to Heads firmware, press `Y`
-* Proceed with the update steps as usual
+* Proceed with [DTS firmware update](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)
+  as usual
 
 When the update is finished, your laptop will shut down automatically. Power it
 back on to boot into your new Heads installation!
@@ -150,7 +151,8 @@ To revert back to UEFI, you will need to boot into DTS from a USB stick.
 * In the DTS main menu, select `Update Dasharo firmware` to check for available
   updates.
 * When prompted to revert back to UEFI, press `Y`
-* Proceed with the firmware update process as usual.
+* Proceed with [DTS firmware update](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)
+  as usual
 
 Once finished, your laptop will shut down automatically. Power it back on to
 boot into your UEFI firmware.
