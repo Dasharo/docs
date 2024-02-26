@@ -2,7 +2,7 @@
 # Sonoff preparation
 
 The following page is based on the
-[EPSHome](https://esphome.io/devices/sonoff_s20.html)
+[EPSHome](http://web.archive.org/web/20240221030444/https://esphome.io/devices/sonoff_s20.html)
 and [Tasmota](https://tasmota.github.io/docs/devices/Sonoff-S26-Smart-Socket)
 documentations.
 

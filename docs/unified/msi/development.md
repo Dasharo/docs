@@ -14,7 +14,7 @@ Dasharo compatible with the MSI PRO Z690-A and PRO Z790-P platform.
     + [PRO Z790-P Hardware Configuration Matrix](../../variants/msi_z790/hardware-matrix.md)
 - [RTE](https://3mdeb.com/open-source-hardware/#rte)
 - [Sonoff S20 Smart Plug](https://wiki.iteadstudio.com/S20_Smart_Socket)
-   with [custom firmware](https://esphome.io/devices/sonoff_s20.html)
+   with [custom firmware](http://web.archive.org/web/20240221030444/https://esphome.io/devices/sonoff_s20.html)
 
 ### Serial debug
 
