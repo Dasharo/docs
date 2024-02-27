@@ -15,9 +15,7 @@ The subscription is not automatically renewed.
 Following Release Notes describe status of Dasharo (coreboot + Heads) firmware
 development compatible with MSI PRO Z690-A boards.
 
-### v0.9.0
-
-TBD
+COMING SOON
 
 ## Hardware Configuration Matrix
 
