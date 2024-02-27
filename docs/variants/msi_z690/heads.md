@@ -4,7 +4,7 @@ Heads-based variant of Dasharo firmware compatible with MSI PRO Z690-A boards
 is offered as a Technology Preview Release.
 
 Please consider to support the project financially by purchasing the
-[Dasharo Entry Subscription](https://novacustom.com/product/dasharo-entry-subscription/).
+[Dasharo Entry Subscription for Desktop](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/).
 With this subscription, you will get access to the
 [Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads-variant)
 feature in Dasharo Tools Suite and support from Dasharo directly via Matrix.
@@ -25,7 +25,7 @@ Generally, the same [hardware configuration](hardware-matrix.md) as for the
 UEFI variant applies.
 
 A notable addition is usage of the
-[Nitrokey 3A Mini](https://novacustom.com/product/nitrokey-3a-mini/)
+[Nitrokey 3A Mini](https://shop.nitrokey.com/shop/nk3am-nitrokey-3a-mini-149)
 USB device, which is required for Heads installation and usage.
 
 ## Test Matrix
@@ -123,7 +123,7 @@ proceed with the [Building manual](#building-manual).
 ## Initial deployment
 
 The supported method is to follow the
-[initial deployment](/unified/novacustom/initial-deployment.md), and then the
+[initial deployment](/unified/msi/initial-deployment.md), and then the
 [Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads-variant).
 
 ## Firmware update
