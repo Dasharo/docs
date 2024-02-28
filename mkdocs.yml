@@ -347,6 +347,7 @@ nav:
           - 'Boot Maintenance Manager': dasharo-menu-docs/boot-maintenance-mgr.md
           - 'Device Manager': dasharo-menu-docs/device-manager.md
           - 'Dasharo System Features': dasharo-menu-docs/dasharo-system-features.md
+          - 'Dasharo APU Configuration': dasharo-menu-docs/dasharo-apu-configuration.md
       - 'Checkbox certification software usage': common-coreboot-docs/checkbox.md
       - 'Dumping logs': common-coreboot-docs/dumping_logs.md
     # - 'Trolling Topics List':

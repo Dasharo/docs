@@ -48,6 +48,8 @@ In such case please follow the EC firmware update instructions for a specific
 board variant.
 
 * [Setup Main Page](#main-page)
+    - [Dasharo APU Configuration](dasharo-apu-configuration.md) (PC Engines
+      APUs only)
     - [User Password Management](#user-password-management)
     - [Device Manager](device-manager.md)
     - [Dasharo System Features](dasharo-system-features.md)
