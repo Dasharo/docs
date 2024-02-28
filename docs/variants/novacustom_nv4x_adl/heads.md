@@ -15,6 +15,9 @@ Heads) firmware for NovaCustom NV4x 12th Gen.
 
 ## v0.9.0 - 2024-02-28
 
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
+
 ### Changed
 
 - [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
