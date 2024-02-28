@@ -298,7 +298,7 @@ To check the Secure Boot state:
 1. Hold the `BIOS SETUP KEY` to enter the `BIOS MENU`.
 1. Localize and enter the `Secure Boot` menu using the arrow keys and Enter.
 1. Verify that the `Secure Boot Status` field says `Disabled` - if not,
-  deselect the `Enforce Secure Boot` option using the arrow keys and Enter.
+   deselect the `Enforce Secure Boot` option using the arrow keys and Enter.
 1. Change the setting of Secure Boot to `Disabled` and press Enter.
 1. Press the `F10` key to open the dialog box.
 1. Press `Enter` to confirm changes and exit from the menu.
@@ -629,58 +629,66 @@ The section below presents a list of functionalities added to DTS, which were
 developed at the community's request and which do not necessarily relate
 strictly to Dasharo.
 
-#### Run commands from iPXE shell
+#### Run commands from iPXE shell automatically
 
-> Note: this functionality might not work, please see
-  [GitHub issue](https://github.com/Dasharo/dasharo-issues/issues/387).
+It is possible to automatically execute your chosen commands after iPXE boot.
+You can use the
+[local-ipxe-server.sh](https://github.com/Dasharo/meta-dts/blob/main/scripts/local-ipxe-server.sh)
+script for that. What it does is:
 
-It is possible to execute the bash script after Linux startup by passing it from
-the iPXE shell. Every script placed in `/sbin/ipxe-commands` will be executed
-automatically after startup.
+* automatically download the latest version of DTS artifacts needed for iPXE
+  boot,
+* creates a `dts.ipxe` bootchain file, which will boot DTS and also run your
+  custom script,
+* creates a simple, python-based HTTP server, from which you will be able to
+  boot DTS.
 
-Here is a simple instruction on how to use that feature.
+> Note: This functionality is available from version 1.2.19.
 
-* Run the HTTP server in the directory which contains the DTS base image. If you
-  build it by yourself, then it should be the `meta-dts` subdirectory:
-  `build/tmp/deploy/images/genericx86-64`.
+To use this functionality, please follow the steps presented below.
 
-The easiest way to start an HTTP server is using `http.server` python module.
-
-```bash
-$ python3 -m http.server 9000
-```
-
-* Create a `dts.ipxe` bootchain file in a directory where you have an HTTP
-  server. That file should have similar content (you need to enter the IP of
-  your host machine in a local network).
+Firstly, please clone [meta-dts](https://github.com/Dasharo/meta-dts/)
+repository.
 
 ```bash
-#!ipxe
-#
-kernel http://<YOUR_IP>:9000/bzImage root=/dev/nfs initrd=http://<YOUR_IP>:9000/dts-base-image-genericx86-64.cpio.gz
-initrd http://<YOUR_IP>:9000/dts-base-image-genericx86-64.cpio.gz
-module http://<YOUR_IP>:9000/custom-script /sbin/ipxe-commands mode=755
-boot
+git clone https://github.com/Dasharo/meta-dts.git && cd meta-dts
 ```
 
-* Copy your `custom-script` script in this same directory.
-
-* Enter the iPXE shell on your device and load `dts.ipxe` bootchain file.
+Then, start the script with the following command.
 
 ```bash
-iPXE> dhcp
-Configuring (net0 00:0d:b9:4b:49:60)...... ok
-iPXE> route
-net0: 192.168.4.126/255.255.255.0 gw 192.168.4.1
-iPXE> chain http://192.168.4.98:9000/dts.ipxe
-http://192.168.4.98:9000/dts.ipxe... ok
-http://192.168.4.98:9000/bzImage... ok
-http://192.168.4.98:9000/dts-base-image-genericx86-64.cpio.gz... ok
-http://192.168.4.98:9000/custom-script... ok
+./scripts/local-ipxe-server.sh
 ```
 
-Now your `custom-script` script should be copied to DTS rootfs as
-`ipxe-commands` and will be executed after boot.
+Once you run the script, you will be prompted for the port of the server, like
+this.
+
+```bash
+--------------------------------------------------------------------------------
+This script by default sets the server up on port 9000. If you want to use a
+different port, for example 9001, then run the script like this:
+    ./meta-dts/scripts/ipxe-dts.sh 9001
+Do you want to continue? [y/n]
+```
+
+If you proceed, at the end the script will tell you how you can boot DTS through
+iPXE.
+
+```bash
+--------------------------------------------------------------------------------
+you can now boot dts v1.2.18 through iPXE on another machine by running:
+    dhcp
+    chain http://192.168.4.158:9000/dts.ipxe
+on that machine in the iPXE shell. It will also execute a simple "commands.sh"
+script after booting. If you want to change its contents, just change the
+"scripts/commands.sh" file, and rerun this script.
+
+This script by default sets the server up on port 9000. If you want to use a
+different port, for example 9001, then run the script like this:
+    ./meta-dts/scripts/ipxe-dts.sh 9001
+--------------------------------------------------------------------------------
+Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
+```
 
 #### Run DTS using VentoyOS
 
