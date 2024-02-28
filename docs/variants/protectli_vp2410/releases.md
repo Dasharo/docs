@@ -14,7 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=975611333).
 
-## v1.1.0 - 2024-02-27
+## v1.1.0 - 2024-02-28
 
 ### Added
 
@@ -69,7 +69,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
 - [Intel Management Engine/Trusted Execution Engine based on v4.0.50.2083 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/protectli/vault_glk/ifwi.bin)
 - [Intel Flash Descriptor based on v1.0 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/protectli/vault_glk/descriptor.bin)
-- [Intel Firmware Support Package based on GLK v2.2.1.3.2 revision 481ea7cf](https://github.com/Dasharo/dasharo-blobs/blob/481ea7cf/protectli/vault_glk/protectli/vault_glk/GeminilakeFspBinPkg)
+- [Intel Firmware Support Package based on GLK v2.2.1.3.2 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/protectli/vault_glk/GeminilakeFspBinPkg)
 - [Intel microcode based on GLK B0 0x0000003e revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-7a-01)
 - [Intel microcode based on GLK R0 0x00000022 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-7a-08)
 
