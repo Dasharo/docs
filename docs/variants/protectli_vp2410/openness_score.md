@@ -5,9 +5,6 @@ Score](../../glossary.md#dasharo-openness-score) for Protectli VP2410 Dasharo
 releases. The content of the page is generated with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
-The very first historical attempt to measure the openness of an firmware image
-is available [here](openness_analysis.md).
-
 ## v1.1.0
 
 Openness Score for protectli_vp2410_v1.1.0.rom
