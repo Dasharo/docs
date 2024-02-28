@@ -2,7 +2,7 @@
 # Sonoff preparation
 
 The following page is based on the
-[EPSHome](https://esphome.io/devices/sonoff_s20.html)
+[EPSHome](http://web.archive.org/web/20240221030444/https://esphome.io/devices/sonoff_s20.html)
 and [Tasmota](https://tasmota.github.io/docs/devices/Sonoff-S26-Smart-Socket)
 documentations.
 
@@ -48,7 +48,7 @@ down the Sonoff power button to get into flash mode:
 We strongly advise using the more popular
 [Tasmota](https://tasmota.github.io/docs/),
 which has demonstrated higher stability in our office, over
-[ESPhome](https://esphome.io/index.html).
+[ESPhome](http://web.archive.org/web/20240221030444/https://esphome.io/index.html).
 However, in case you have reasons to choose the latter, our guide provides
 instructions for both.
 
@@ -202,7 +202,7 @@ instructions for both.
 
     1. Put the device in flash mode. Putting the device in this mode should be done
         in accordance with the
-        [documentation](https://esphome.io/devices/sonoff_s20.html#step-4-uploading-firmware).
+        [documentation](http://web.archive.org/web/20240221030444/https://esphome.io/devices/sonoff_s20.html#step-4-uploading-firmware).
     1. Change the upload method from OTA to `/dev/ttyUSB0`. After this operation,
         the new element with the name specified in `esphome:name` should be
         displayed.
