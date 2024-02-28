@@ -62,13 +62,18 @@ extra:
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
-  - footnotes
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.keys
+  - admonition
   - attr_list
-  - meta
+  - footnotes
   - md_in_html
+  - meta
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       toc_depth: 2
   - pymdownx.tasklist:
@@ -152,6 +157,7 @@ nav:
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_adl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_nv4x_adl/test-matrix.md
               - 'Openness score': variants/novacustom_nv4x_adl/openness-score.md
+              - 'Heads firmware variant': variants/novacustom_nv4x_adl/heads.md
           - 'NV4x 11th Gen':
               - 'Releases': variants/novacustom_nv4x_tgl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_tgl/hardware-matrix.md

@@ -1,57 +1,117 @@
 # Overview
 
-## Hardware
+Select your Dasharo firmware flavor:
 
-=== "NS5x/7x 12th Gen"
-    The `NovaCustom NS5x/7x 12th Gen` section is related to the two physical
-    NovaCustom laptops based on the 12th generation Intel Core processor:
+=== "Dasharo (coreboot + UEFI)"
+    NovaCustom laptops come with this firmware variant out of the box.
 
-    - [NS51 Series](https://configurelaptop.eu/ns51-series/)
-    - [NS70 Series](https://configurelaptop.eu/ns70-series/)
+    ## Hardware
 
-    ![](/images/NS51-front-1.png)
+    === "NS5x/7x 12th Gen"
+        __NovaCustom NS5x/7x 12th Gen__ are 15 and 17 inch laptops based on 12th
+        generation Intel Core processor (Alder Lake):
 
-=== "NV4x 12th Gen"
-    The `NovaCustom NV4x 12th Gen` section is related to the one physical
-    NovaCustom laptops based on the 12th generation Intel Core processor:
+        ![](/images/NS51-front-1.png){ align=right width=50% }
 
-    - [NV41 Series](https://configurelaptop.eu/nv41-series/)
+        <div class="grid cards" markdown>
 
-    ![](/images/NV4x-front-1.png)
+        - [NS51 Series](https://configurelaptop.eu/ns51-series/)
+        - [NS70 Series](https://configurelaptop.eu/ns70-series/)
 
-=== "NS5x/7x 11th Gen"
-    The `NovaCustom NS5x/7x 11th Gen` section is related to the two physical
-    NovaCustom laptops based on the 11th generation Intel Core processor:
+        </div>
 
-    - [NS51 Series](https://configurelaptop.eu/ns51-series/)
-    - [NS70 Series](https://configurelaptop.eu/ns70-series/)
+    === "NV4x 12th Gen"
+        __NovaCustom NV4x 12th Gen__ is a 14 inch laptop based on 12th
+        generation Intel Core processor (Alder Lake):
 
-    ![](/images/NS51-front-1.png)
+        ![](/images/NV4x-front-1.png){ align=right width=50% }
 
-=== "NV4x 11th Gen"
-    The `NovaCustom NV4x 11th Gen` section is related to the one physical
-    NovaCustom laptops based on the 11th generation Intel Core processor:
+        <div class="grid cards" markdown>
 
-    - [NV40 Series](https://configurelaptop.eu/nv40-series/)
+        - [NV41 Series](https://configurelaptop.eu/nv41-series/)
 
-    ![](/images/NV40-front-1.png)
+        </div>
 
-For more information on the hardware, please refer to the references in above
-links.
+    === "NS5x/7x 11th Gen"
+        __NovaCustom NS5x/7x 11th Gen__ are 15 and 17 inch laptops based on 11th
+        generation Intel Core processor (Tiger Lake):
 
-## Firmware
+        ![](/images/NS51-front-1.png){ align=right width=50% }
 
-Each firmware release contains of two parts:
+        <div class="grid cards" markdown>
 
-- [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware,
-- [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
-  firmware.
+        - [NS51 Series](https://configurelaptop.eu/ns51-series/)
+        - [NS70 Series](https://configurelaptop.eu/ns70-series/)
 
-They both interact with each other tightly, so keeping their compatible versions
-in sync is important. Information on compatibility should always be explained
-on the release pages:
+        </div>
 
-- [NV4x 12th Gen](/variants/novacustom_nv4x_adl/releases/)
-- [NV4x 11th Gen](/variants/novacustom_nv4x_tgl/releases/)
-- [NS5x/7x 12th Gen](/variants/novacustom_ns5x_adl/releases/)
-- [NS5x/7x 11th Gen](/variants/novacustom_ns5x_tgl/releases/)
+    === "NV4x 11th Gen"
+        __NovaCustom NV4x 11th Gen__ is a 14 inch laptop based on 11th
+        generation Intel Core processor (Tiger Lake):
+
+        ![](/images/NV40-front-1.png){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [NV41 Series](https://configurelaptop.eu/nv41-series/)
+
+        </div>
+
+    For more information on the hardware, please refer to the links above.
+
+    ## Firmware
+
+    Each firmware release contains of two parts:
+
+    - [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware,
+    - [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
+      firmware.
+
+    They both interact with each other tightly, so keeping their compatible versions
+    in sync is important. Information on compatibility should always be explained
+    on the release pages:
+
+    - [NV4x 12th Gen](/variants/novacustom_nv4x_adl/releases/)
+    - [NV4x 11th Gen](/variants/novacustom_nv4x_tgl/releases/)
+    - [NS5x/7x 12th Gen](/variants/novacustom_ns5x_adl/releases/)
+    - [NS5x/7x 11th Gen](/variants/novacustom_ns5x_tgl/releases/)
+
+=== "Dasharo (coreboot + Heads)"
+    Heads-based firmware is offered as a Dasharo Entry Subscription option.
+
+    !!! note
+
+        This section applies to users of the Heads-based firmware version. If
+        you are unsure which firmware version you're using, select
+        `coreboot + UEFI` instead.
+
+    ## Hardware
+
+    === "NV4x 12th Gen"
+        __NovaCustom NV4x 12th Gen__ is a 14 inch laptop based on 12th
+        generation Intel Core processor (Alder Lake):
+
+        ![](/images/NV4x-front-1.png){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [NV41 Series](https://configurelaptop.eu/nv41-series/)
+
+        </div>
+
+    For more information on the hardware, please refer to the references in above
+    links.
+
+    ## Firmware
+
+    Each firmware release contains of two parts:
+
+    - [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware,
+    - [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
+      firmware.
+
+    They both interact with each other tightly, so keeping their compatible versions
+    in sync is important. Information on compatibility should always be explained
+    on the release pages:
+
+    - [NV4x 12th Gen](/variants/novacustom_nv4x_adl/heads/)
