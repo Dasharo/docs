@@ -204,5 +204,5 @@ The supported method is to follow the
 the official [Heads update documentation](https://osresearch.net/Updating).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/RJrTXDhWR
-[novacustom_nv4x_adl_v0.9.0_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v0.9.0/novacustom_nv4x_adl_v0.9.0_heads.rom.sha256
-[novacustom_nv4x_adl_v0.9.0_heads.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v0.9.0/novacustom_nv4x_adl_v0.9.0_heads.rom.sha256.sig
+[novacustom_nv4x_adl_v0.9.0_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.0/novacustom_nv4x_adl_v0.9.0_heads.rom.sha256
+[novacustom_nv4x_adl_v0.9.0_heads.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.0/novacustom_nv4x_adl_v0.9.0_heads.rom.sha256.sig
