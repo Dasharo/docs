@@ -317,7 +317,7 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
 * [EC transition](#ec-transition),
 * [EC update](#ec-update),
 * [additional features](#additional-features),
-    - [run commands from iPXE shell](#run-commands-from-ipxe-shell),
+    - [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
     - [run DTS using VentoyOS](#run-dts-using-ventoyos).
 
 ### Dasharo zero-touch initial deployment
