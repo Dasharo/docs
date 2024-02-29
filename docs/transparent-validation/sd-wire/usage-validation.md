@@ -3,7 +3,7 @@
 ## Environment preparation
 
 SDWire has dedicated software which is a simple tool meant to control the
-hardware. Source code of the tool is published on [tizen git][tizen] server.
+hardware. Source code of the tool is published on [our github][sd-mux].
 This is simple to use, command-line utility software written in C and based on
 open-source libFTDI library.
 
@@ -12,7 +12,7 @@ To prepare the environment reproduce the following steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://git.tizen.org/cgit/tools/testlab/sd-mux
+    git clone https://github.com/3mdeb/sd-mux
     ```
 
 1. Install all needed dependencies:
@@ -280,7 +280,7 @@ References & Projects:
 * [Ethernet camera module build – Automated flashing](https://www.kurokesu.com/main/2022/08/02/ethernet-camera-module-build-log-5-automated-flashing/)
 * [SD Wire & 3d Printer Usage](https://github.com/arekm/OctoPrint-Sdwire)
 
-[tizen]: https://git.tizen.org/cgit/tools/testlab/sd-mux/
+[sd-mux]: https://github.com/3mdeb/sd-mux
 [shop1]: https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/
 [balena]: https://www.balena.io/etcher/
 [rpios]: https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/2021-05-07-raspios-buster-armhf.zip
