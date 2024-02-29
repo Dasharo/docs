@@ -13,7 +13,7 @@ The subscription is not automatically renewed.
 Following Release Notes describe status of development of Dasharo (coreboot +
 Heads) firmware for NovaCustom NV4x 12th Gen.
 
-## v0.9.0 - 2024-02-28
+## v0.9.0 - 2024-02-29
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
