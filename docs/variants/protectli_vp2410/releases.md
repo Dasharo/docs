@@ -14,7 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=975611333).
 
-## v1.1.0 - 2024-02-28
+## v1.1.0 - 2024-02-29
 
 ### Added
 
@@ -44,6 +44,7 @@ Test results for this platform can be found
 - [Auto Boot Time-out is reset to 0 when F9 is pressed](https://github.com/Dasharo/dasharo-issues/issues/513)
 - [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
 - RAM memory capacity not reported in firmware Setup Menu
+- [RTC time and date resetting to the coreboot build date on 29th February](https://review.coreboot.org/c/coreboot/+/80790)
 
 ### Known issues
 
@@ -63,7 +64,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.21 revision 2d7c4789](https://github.com/Dasharo/coreboot/tree/2d7c4789)
+- [Dasharo coreboot fork based on 4.21 revision 264108e8](https://github.com/Dasharo/coreboot/tree/264108e8)
 - [Dasharo EDKII fork based on edk2-stable202002 revision c18d9277](https://github.com/Dasharo/edk2/tree/c18d9277)
 - [iPXE based on 2023.12 revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
 - [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
