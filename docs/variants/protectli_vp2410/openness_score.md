@@ -15,10 +15,10 @@ Closed-source code percentage: **68.3%**
 * Image size: 8388608 (0x800000)
 * Number of regions: 17
 * Number of CBFSes: 2
-* Total open-source code size: 2314517 (0x235115)
+* Total open-source code size: 2314297 (0x235039)
 * Total closed-source code size: 4983646 (0x4c0b5e)
-* Total data size: 409605 (0x64005)
-* Total empty size: 680840 (0xa6388)
+* Total data size: 409505 (0x63fa1)
+* Total empty size: 681160 (0xa64c8)
 
 ![](protectli_vp2410_v1.1.0.rom_openness_chart.png)
 
@@ -59,10 +59,10 @@ Closed-source code percentage: **68.3%**
 
 * CBFS size: 3002368
 * Number of files: 17
-* Open-source files size: 2314517 (0x235115)
+* Open-source files size: 2314297 (0x235039)
 * Closed-source files size: 523102 (0x7fb5e)
-* Data size: 8169 (0x1fe9)
-* Empty size: 156580 (0x263a4)
+* Data size: 8069 (0x1f85)
+* Empty size: 156900 (0x264e4)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -70,20 +70,20 @@ Closed-source code percentage: **68.3%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 47218 | LZ4 | open-source |
-| fallback/ramstage | stage | 126198 | LZMA | open-source |
+| fallback/romstage | stage | 47192 | LZ4 | open-source |
+| fallback/ramstage | stage | 126124 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 7126 | none | open-source |
 | pt | raw | 20480 | none | open-source |
 | pdpt | raw | 32 | none | open-source |
-| fallback/postcar | stage | 32084 | none | open-source |
-| fallback/payload | simple elf | 2081379 | none | open-source |
+| fallback/postcar | stage | 32020 | none | open-source |
+| fallback/payload | simple elf | 2081323 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 152576 | none | closed-source |
 | fspm.bin | fsp | 178014 | LZ4 | closed-source |
 | fsps.bin | fsp | 192512 | none | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
-| config | raw | 4490 | LZMA | data |
-| revision | raw | 876 | none | data |
-| build_info | raw | 120 | none | data |
+| config | raw | 4467 | LZMA | data |
+| revision | raw | 859 | none | data |
+| build_info | raw | 103 | none | data |
 | vbt.bin | raw | 1271 | LZMA | data |
 | header_pointer | cbfs header | 4 | none | data |
-| (empty) | null | 156580 | none | empty |
+| (empty) | null | 156900 | none | empty |
