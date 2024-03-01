@@ -21,20 +21,20 @@ extra:
   analytics:
     provider: google
     property: G-LH2JM6P96R
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/thumb-up-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/thumb-down-outline
-          name: This page was not helpful
-          data: 0
-          note: >-
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+      # feedback:
+      #   title: Was this page helpful?
+      #   ratings:
+      #     - icon: material/thumb-up-outline
+      #       name: This page was helpful
+      #       data: 1
+      #       note: >-
+      #         Thanks for your feedback!
+      #     - icon: material/thumb-down-outline
+      #       name: This page was not helpful
+      #       data: 0
+      #       note: >-
+      #         Thanks for your feedback! Help us improve this page by
+      #         using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   consent:
     title: Cookie consent
     description: >-
