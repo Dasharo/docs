@@ -20,7 +20,6 @@ Test results for this platform can be found
 
 - [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [Setup menu password configuration](https://docs.dasharo.com/dasharo-menu-docs/overview/#dasharo-menu-guides)
-- [USB stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
 - [Serial port console redirection option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#serial-port-configuration)
 - [Chipset watchdog support during boot and watchdog configuration menu](https://www.github.com/dasharo/dasharo-issues/issues/221)
 - [Customizable Serial Number and UUID via CBFS support](https://github.com/Dasharo/dcu)
