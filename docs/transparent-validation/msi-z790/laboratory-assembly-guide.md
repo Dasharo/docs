@@ -92,6 +92,8 @@ table:
 
 ### External flashing enabling
 
+#### Without discrete TPM
+
 Connect the RTE SPI header to the platform as described in the table:
 
 | RTE SPI header      | MSI Z790-P                                           |
@@ -109,6 +111,69 @@ Connect the RTE SPI header to the platform as described in the table:
 
 ![IMG](../msi-z690/images/msi_z690_spi.jpeg)
 ![IMG](../msi-z690/images/msi_z690_lab_SPI_RTE.jpg)
+
+#### With discrete TPM
+
+Alternative connection with TPM and external flashing requires some
+preparation before a TPM can flashing wires can be connected. You will need:
+
+* flat screwdriver
+* pliers
+* MSI SPI TPM 2.0
+* [6x test hook clips](https://www.amazon.ca/Dupont-Jumper-Electrical-Testing-Colors/dp/B0CK5MT1CG)
+* [a 2mm pitch header 2x6 pin with long through pins](https://www.mouser.pl/ProductDetail/Samtec/ESQT-106-02-F-D-785?qs=0ekZTeX6RYyA%252Bo3ZUhzipw%3D%3D)
+
+![IMG](../msi-z690/images/tpm/msi_tpm_items.jpg)
+
+1. Push down the black stopper down. You may help yourself with a small flat
+   screwdriver by creafully pushing it in the points 1, 2 and 3 shown in the
+   picture below:
+
+    ![IMG](../msi-z690/images/tpm/tpm_header_prep1.jpg)
+
+2. Repeat pushing it down until the TPM goes fully in, leaving a small gap
+   between TPM connector and the header's black shield:
+
+    ![IMG](../msi-z690/images/tpm/tpm_header_prep2.jpg)
+
+3. MSI TPM header has one "no-pin". Locate it on the TPM module and mark the
+   pin on the header to be removed:
+
+    ![IMG](../msi-z690/images/tpm/tpm_header_prep3.jpg)
+
+4. Bend the marked pin to be removed:
+
+    ![IMG](../msi-z690/images/tpm/tpm_header_prep4.jpg)
+
+5. Carefully keep bending the marked pin forwards and backwards until it
+   breaks:
+
+    ![IMG](../msi-z690/images/tpm/tpm_header_prep5.jpg)
+
+6. Put the TPM onto the header and push the black shield up so that the gap is
+   removed:
+
+    ![IMG](../msi-z690/images/tpm/tpm_header_prepared.jpg)
+
+7. Connect the test hook clips to the header's legs so that it matches the
+   JTPM1's SPI power, GND, BIOS SPI CS, SPI clock, MISO, MOSI:
+
+    ![IMG](../msi-z690/images/tpm/msi_tpm_wires.jpg)
+    ![IMG](/unified/msi/images/msi_z690_jtpm1.jpeg)
+
+8. Connect such "spider" to the mainboard's JTPM1 header (remember to match
+   the "no-pin: location).
+
+9. Connect the femal pin side of the test hook clips to the RTE:
+
+    | RTE SPI header      | MSI Z690-A                               |
+    |:-------------------:|:----------------------------------------:|
+    | J7 pin 1 (Vcc)      | JTPM1 pin 1 (SPI Power)                  |
+    | J7 pin 2 (GND)      | JTPM1 pin 7 (GND)                        |
+    | J7 pin 3 (CS)       | JTPM1 pin 5 (RESERVED / BIOS SPI CS pin) |
+    | J7 pin 4 (SCLK)     | JTPM1 pin 6 (SPI Clock)                  |
+    | J7 pin 5 (MISO)     | JTPM1 pin 3 (MISO)                       |
+    | J7 pin 6 (MOSI)     | JTPM1 pin 4 (MOSI)                       |
 
 ### Device power status readout
 
