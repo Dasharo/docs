@@ -175,7 +175,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 ### SBOM (Software Bill of Materials)
 
 - [coreboot based on 4.14 revision 67190bf](https://github.com/Dasharo/coreboot/commit/67190bf)
-- [SeaBIOS based on rel-1.14.0 revision 155821a1](https://review.coreboot.org/plugins/gitiles/seabios/+/155821a1)
+- [SeaBIOS based on rel-1.14.0 revision 155821a1](https://github.com/coreboot/seabios/releases/tag/rel-1.14.0)
 - [iPXE based on 2019.3 revision ebf2eaf5](https://github.com/ipxe/ipxe/commit/ebf2eaf5)
 - [nvramcui based on 4.14 revision f1d1309f](https://github.com/Dasharo/coreboot/blob/f1d1309f/payloads/nvramcui/nvramcui.c)
 
