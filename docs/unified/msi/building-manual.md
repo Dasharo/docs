@@ -9,7 +9,7 @@ compatible with MSI PRO Z690-A and MSI PRO Z790-P.
 
 * `Ubuntu 20.04/21.04/22.04` as a host OS was tested
 * Internet connection
-* Docker installed
+* Docker installed - you will need Docker packages from Docker's own repository
     - follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
     - follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 * Git, wget, unzip installed

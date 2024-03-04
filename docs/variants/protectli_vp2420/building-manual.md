@@ -7,7 +7,7 @@ VP2420.
 
 ## Requirements
 
-- Docker
+- Docker - you will need Docker packages from Docker's own repository
     + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
     + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 - Git
