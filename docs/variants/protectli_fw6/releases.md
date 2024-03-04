@@ -39,7 +39,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [coreboot based on 87f9fc85 revision e04b0ac8](https://github.com/Dasharo/coreboot/commits/e04b0ac8)
 - [seabios based on v1.0.6 revision 03bcdcaf](https://github.com/Dasharo/SeaBIOS/commits/03bcdcaf)
 - [ipxe based on 2019.3 stable revision ebf2eaf5](https://github.com/ipxe/ipxe/commits/ebf2eaf5)
-- [memtest based on v002 revision dd5b4ff2](https://review.coreboot.org/plugins/gitiles/memtest86plus/+/dd5b4ff2)
+- [memtest based on v002 revision dd5b4ff2](https://review.coreboot.org/c/memtest86plus/+/37060)
 - Management Engine: ME 11.8.50.3399,
   SHA256: e1ce735139b6d9ebb81d7f6db288b0a896c39e4b1e606324b915bec949b6aca6
 - microcode:

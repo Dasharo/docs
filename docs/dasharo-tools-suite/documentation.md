@@ -156,6 +156,7 @@ The following must be met to build DTS:
 
 * Linux PC (tested on `Ubuntu 20.04 LTS`),
 * [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) installed,
+you will need Docker packages from Docker's own repository,
 * [kas-container 3.0.2](https://raw.githubusercontent.com/siemens/kas/3.0.2/kas-container)
   script downloaded and available in [PATH](https://en.wikipedia.org/wiki/PATH_(variable)),
 

@@ -70,7 +70,7 @@ Software BOM:
 
 - [coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
   config and CI YAML)](https://github.com/Dasharo/coreboot/compare/dell_optiplex_9010_v0.0.0...dell_optiplex_9010_v0.0.0)
-- [SeaBIOS 1.13.0](https://review.coreboot.org/plugins/gitiles/seabios/+/refs/tags/rel-1.13.0)
+- [SeaBIOS 1.13.0](https://github.com/coreboot/seabios/releases/tag/rel-1.13.0)
 
 #### Binary blobs
 

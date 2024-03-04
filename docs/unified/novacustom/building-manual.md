@@ -15,7 +15,7 @@ with [Docker](https://www.docker.com/) support should be enough to complete it.
 
 Make sure that you have following packages installed:
 
-- Docker
+- Docker - you will need Docker packages from Docker's own repository
     + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
     + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 - Git
