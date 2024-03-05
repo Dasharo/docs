@@ -4,7 +4,7 @@ Following procedure is generic description of release process of firmware for
 supported hardware platforms. Precise steps and any difference from standard
 process are described in platform specific documentation.
 
-Description here is, intentionally, Open Source Firmware framework agnostic and
+Description here is, intentionally, open-source firmware framework agnostic and
 should be maintained in that way.
 
 ## Process steps
