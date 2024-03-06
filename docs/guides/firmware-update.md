@@ -2,32 +2,18 @@
 
 ## Introduction
 
-This document describes the process for updating firmware on devices running
-Dasharo firmware. Some steps specific to each device will be described in their
-respective documentation, but the generic process outlined here will apply to
-all devices.
+This document is a guide for updating firmware on your Dasharo-powered device.
 
 ## Firmware Update Mode
 
-For enhanced firmware security, Dasharo uses a number of security mechanisms to
-prevent overwriting firmware. Depending on device, these may be some or all of
-the following:
+Newer Dasharo releases support Firmware Update Mode, which performs updates
+automatically over the network.
 
-- SPI flash write-protection - prevents overwriting the initial bootblock and
-  Verified Boot code
-- SMM BIOS write protection - prevents all writes to BIOS flash memory outside
-  of privileged code running in System Management Mode
-- UEFI Secure Boot - in combination with Linux Kernel Lockdown, prevents direct
-  access to the SPI flash controller from the OS
+!!! question "Does my device support Firmware Update Mode?"
 
-If you are interested, see the
-[Dasharo System Features](../dasharo-menu-docs/dasharo-system-features.md)
-section for more details.
-
-To allow updating firmware by the end user, these protections must be disabled
-first. To facilitate this, Dasharo has a Firmware Update Mode option that
-**temporarily** disables firmware security measures for the duration of one
-boot.
+    Not sure if your device supports Firmware Update Mode? Check out the
+    [compatibility table](/kb/firmware-update-mode#supported-devices) in the
+    Knowledge Base section.
 
 To enter Firmware Update Mode:
 
@@ -47,6 +33,13 @@ To enter Firmware Update Mode:
 Once in Firmware Update Mode, proceed with the firmware update steps outlined
 in device-specific documentation.
 
-## Firmware Update Mode flowchart
+!!! tip
 
-![](./images/fum_flowchart.png)
+    Check out a more detailed explanation and rationale for Firmware Update Mode
+    in the [Knowledge Base](/kb/firmware-update-mode) section.
+
+## Manual update
+
+Firmware versions without support for Firmware Update Mode have various update
+procedures. Check out your device's Firmware Update documentation for more
+information.
