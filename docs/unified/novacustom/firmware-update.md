@@ -4,36 +4,11 @@ The following documentation describes the process of Dasharo open-source
 firmware update. The update process may be different, depending on which
 firmware version is currently installed on your device.
 
-You can check your current firmware version with the following Linux command.
-
-```bash
-sudo dmidecode -t bios | grep Version
-```
-
-Alternatively, it can be checked in the
-[Dasharo Setup Menu](/dasharo-menu-docs/overview/#dasharo-menu-guides)
-when booting the device.
+Your firmware version can be checked by entering the
+[Dasharo Setup Menu](/dasharo-menu-docs/overview/#dasharo-menu-guides) using the
+++f2++ key while booting.
 
 ## Prerequisites
-
-First, determine your device version with the following Linux command.
-
-```bash
-sudo dmidecode -t system | grep "Product Name"
-```
-
-Alternatively, it can be checked in the
-[Dasharo Setup Menu](/dasharo-menu-docs/overview/#dasharo-menu-guides)
-as well.
-
-Note the `Device name` based on the previous output and the following table.
-
-| Product Name output |  Device name      |
-|---------------------|-------------------|
-| NV4XMB,ME,MZ        | NV4x 11th Gen     |
-| NS50_70MU           | NS5x/7x 11th Gen  |
-| NV41PZ              | NV4x 12th Gen     |
-| NS50_70PU           | NS5x/7x 12th Gen  |
 
 Depending on the firmware version, there may be manual steps required to ensure
 that the firmware can be updated. `11th Gen` devices starting from version v1.5.0
