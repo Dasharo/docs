@@ -14,7 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=579117128).
 
-## v1.2.0 - 2024-03-01
+## v1.2.0 - 2024-03-06
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=579117128).
@@ -39,6 +39,7 @@ Test results for this release can be found
 - Scope of reset to defaults hotkey to global in firmware setup
 - Updated microcode to the newer version; refer to SBOM section below
 - Updated ME to the newer version; refer to SBOM section below
+- ME soft disabled by default
 
 ### Fixed
 
@@ -62,7 +63,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.21 revision f055ff23](https://github.com/Dasharo/coreboot/tree/f055ff23)
+- [Dasharo coreboot fork based on 4.21 revision 92d8b460](https://github.com/Dasharo/coreboot/tree/92d8b460)
 - [Dasharo EDKII fork based on edk2-stable202002 revision c18d9277](https://github.com/Dasharo/edk2/tree/c18d9277)
 - [iPXE based on 2023.12 revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
 - [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
