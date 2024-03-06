@@ -37,7 +37,6 @@ driver for Linux) and keep reloading it to avoid resets.
 ### PCI Express power management features
 
 When enabled, the firmware will attempt to enable Clock Power Management, ASPM
-L0s and L1 on PCI Express ports. Enabling these options may result in [PCI
-Express device performance
-reduction](https://github.com/pcengines/coreboot/issues/387) at the cost of
-better power savings.
+L0s and L1 on PCI Express ports. Enabling these options may result in
+power savings at the cost of [PCI Express device performance reduction]
+(https://github.com/pcengines/coreboot/issues/387).
