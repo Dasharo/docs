@@ -55,6 +55,7 @@ issue from which the report is sourced.
         | Wavlink | UG69PD2 (3) | v1.7.2 | DisplayLink (4) | Official support |
         | Lenovo | USB-C Dock Gen2 |  v0.9.0 | <ul><li>Can overdraw power from the dock, fixed in v1.7.2</li><li>Power button not supported</li> | Internal testing |
         | Lenovo | Universal USB-C Dock | v0.9.0 | <ul><li> Need 130W power supply option to not overdraw, fixed in v1.7.2</li><li>Power button not supported</li> | Internal testing |
+        | Belkin | USB-C 11-in-1 Multiport Dock | v0.9.0 | No issues | Internal testing |
 
         </div>
 
@@ -113,6 +114,7 @@ issue from which the report is sourced.
         |---|---|---|---|---|
         | Levin | 7-in-1 Type-C Hub Pro | v1.5.2 | No issues | Official support |
         | Generic | 8-in-1 Type-C Hub | v1.5.2 | One video output usable at a time | Official support |
+        | Belkin | USB-C 11-in-1 Multiport Dock | v0.9.0 | No issues | Internal testing |
 
     === "NV4x 12th Gen __(Heads)__"
         <div class="annotate" markdown>
