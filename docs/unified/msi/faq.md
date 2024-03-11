@@ -159,3 +159,20 @@ Such action excludes the acceptance of the return.
 
 You can improve Dasharo by contributing, and when it passes the
 Dasharo Certification Program, can we release it in the next version.
+
+## How should I inspect the package for any signs of potential damage upon delivery?
+
+Inspecting Your Shipment: Before the shipment we take pictures of both the
+hardware and packaging. After it leaves our office we do not have any control
+over it. It is the consignee’s responsibility to inspect their shipment for
+damages before the Freight driver leaves the delivery location.
+
+Should the packaging display any signs of damage, open it immediately to check
+the contents, requesting the driver's presence to inspect together. If your
+shipment has been damaged, document the damages on the delivery receipt in
+detail and have it signed by the driver. If possible, please take pictures of
+the damages to the box and the damages to the item.
+
+Please notify us immediately so that we can initiate a damage claim with
+Freight. Failure to inspect for damages at the time of delivery could result in
+Freight voiding any subsequent damage claims.
