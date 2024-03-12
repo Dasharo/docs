@@ -315,9 +315,9 @@ This test aims to verify that the TPM is initialized correctly.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the BIOS.
-3. Enter Device Manager.
-4. Enter TCG2 Configuration
+1. Boot into the BIOS.
+1. Enter Device Manager.
+1. Enter TCG2 Configuration
 
 **Expected result**
 
@@ -410,7 +410,7 @@ by the firmware.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -418,14 +418,16 @@ by the firmware.
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download `cbmem` from the
     [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Make sure the package is executable:
+    `sudo chmod +x /usr/local/bin/cbmem`.
 1. Disable Secure Boot.
 
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the system.
-3. Log into the system by using the proper login and password.
-4. Open the terminal and run the following command and note results:
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open the terminal and run the following command and note results:
 
     ```bash
     sudo cbmem -1 |grep PPI
@@ -454,8 +456,8 @@ recognized by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
-3. Platform with TPM 2.0 module present.
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. Platform with TPM 2.0 module present.
 
 **Test setup**
 
@@ -465,9 +467,9 @@ recognized by the operating system.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the system.
-3. Log into the system by using the proper login and password.
-4. Open the terminal and run the following command to check the version of TPM
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open the terminal and run the following command to check the version of TPM
    PPI in sysfs:
 
     ```bash
@@ -482,7 +484,7 @@ valid). If PPI is not available the file will not be found and test fails.
 Example output:
 
 ```bash
-$ cat /sys/class/tpm/tpm0/ppi/version
+cat /sys/class/tpm/tpm0/ppi/version
 1.3
 ```
 
@@ -496,8 +498,8 @@ recognized by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Windows 11
-3. Platform with TPM 2.0 module present.
+1. `OPERATING_SYSTEM` = Windows 11
+1. Platform with TPM 2.0 module present.
 
 **Test setup**
 
@@ -507,9 +509,9 @@ recognized by the operating system.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the system.
-3. Log into the system by using the proper login and password.
-4. Open a PowerShell as administrator and run the following command:
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open a PowerShell as administrator and run the following command:
 
     ```PowerShell
     tpmtool getdeviceinformation
@@ -561,7 +563,7 @@ with running TPM Clear procedure to ensure correct state of ownership.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -572,9 +574,16 @@ with running TPM Clear procedure to ensure correct state of ownership.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the system.
-3. Log into the system by using the proper login and password.
-4. Open the terminal and run the following commands to take ownership over TPM2:
+1. Boot into the BIOS.
+1. Enter Device Manager.
+1. Enter TCG2 Configuration.
+1. Scroll down to TPM2 Operation and press Enter.
+1. Choose `TPM2 ClearControl(NO) + Clear`.
+1. Save and Reboot.
+1. When prompted, press F12 to clear the TPM.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Open the terminal and run the following commands to take ownership over TPM2:
 
     ```bash
     tpm2_changeauth --quiet -c owner pass
@@ -584,33 +593,33 @@ with running TPM Clear procedure to ensure correct state of ownership.
     rm /tmp/test
     ```
 
-5. Execute the following commands to check that the ownership is taken:
+1. Execute the following commands to check that the ownership is taken:
 
     ```bash
     ! tpm2_changeauth --quiet -c owner 2>/dev/null
     echo $?
     ```
 
-6. Reboot the DUT and enter BIOS.
-7. Enter Device Manager.
-8. Enter TCG2 Configuration.
-9. Scroll down to TPM2 Operation and press Enter.
-10. Choose `TPM2 ClearControl(NO) + Clear`.
-11. Save and Reboot.
-12. When prompted, press F12 to clear the TPM.
-13. Boot into the system and log in.
-14. Execute the commands from step 5.
+1. Reboot the DUT and enter BIOS.
+1. Enter Device Manager.
+1. Enter TCG2 Configuration.
+1. Scroll down to TPM2 Operation and press Enter.
+1. Choose `TPM2 ClearControl(NO) + Clear`.
+1. Save and Reboot.
+1. When prompted, press F12 to clear the TPM.
+1. Boot into the system and log in.
+1. Execute the commands from step 11.
 
 **Expected result**
 
-1. The output in step 5 should be equal 1.
-2. The output in step 14 should be 0.
+1. The output in step 11 should be equal 1.
+1. The output in step 21 should be 0.
 
 ## TPM005.01 Check TPM Hash Algorithm Support SHA1 (Firmware)
 
 **Test description**
 
-This test aims to verify that the TPM supports needed hash algorithms.
+This test aims to verify that the TPM supports needed hash algorithm (SHA1).
 
 **Test configuration data**
 
@@ -624,10 +633,10 @@ This test aims to verify that the TPM supports needed hash algorithms.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the BIOS.
-3. Enter Device Manager.
-4. Enter TCG2 Configuration
-5. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
+1. Boot into the BIOS.
+1. Enter Device Manager.
+1. Enter TCG2 Configuration
+1. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
 
 **Expected result**
 
@@ -637,7 +646,7 @@ The entry should contain `SHA1`.
 
 **Test description**
 
-This test aims to verify that the TPM supports needed hash algorithms.
+This test aims to verify that the TPM supports needed hash algorithm (SHA256).
 
 **Test configuration data**
 
@@ -651,10 +660,10 @@ This test aims to verify that the TPM supports needed hash algorithms.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the BIOS.
-3. Enter Device Manager.
-4. Enter TCG2 Configuration
-5. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
+1. Boot into the BIOS.
+1. Enter Device Manager.
+1. Enter TCG2 Configuration
+1. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
 
 **Expected result**
 
@@ -664,7 +673,7 @@ The entry should contain `SHA256`.
 
 **Test description**
 
-This test aims to verify that the TPM supports needed hash algorithms.
+This test aims to verify that the TPM supports needed hash algorithm (SHA384).
 
 **Test configuration data**
 
@@ -678,10 +687,10 @@ This test aims to verify that the TPM supports needed hash algorithms.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the BIOS.
-3. Enter Device Manager.
-4. Enter TCG2 Configuration
-5. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
+1. Boot into the BIOS.
+1. Enter Device Manager.
+1. Enter TCG2 Configuration
+1. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
 
 **Expected result**
 
@@ -691,7 +700,7 @@ The entry should contain `SHA384`.
 
 **Test description**
 
-This test aims to verify that the TPM supports needed hash algorithms.
+This test aims to verify that the TPM supports needed hash algorithm (SHA512).
 
 **Test configuration data**
 
@@ -705,10 +714,10 @@ This test aims to verify that the TPM supports needed hash algorithms.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the BIOS.
-3. Enter Device Manager.
-4. Enter TCG2 Configuration
-5. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
+1. Boot into the BIOS.
+1. Enter Device Manager.
+1. Enter TCG2 Configuration
+1. Scroll down to `TPM2 Hardware Supported Hash Algorithm`
 
 **Expected result**
 
@@ -723,7 +732,7 @@ Test encrypting and decrypting non-rootfs partition using TPM.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
@@ -733,9 +742,9 @@ Test encrypting and decrypting non-rootfs partition using TPM.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the system.
-3. Log into the system by using the proper login and password.
-4. Create the sealing object by executing the following commands:
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Create the sealing object by executing the following commands:
 
     ```bash
     tpm2_createprimary -Q -C o -c prim.ctx
@@ -745,7 +754,7 @@ Test encrypting and decrypting non-rootfs partition using TPM.
     tpm2_unseal -Q -c 0x81010001 > key
     ```
 
-5. Check a file stored on the partition by executing the following commands:
+1. Check a file stored on the partition by executing the following commands:
 
     ```bash
     cryptsetup luksOpen ./test-partition --key-file=key test-partition
@@ -753,7 +762,7 @@ Test encrypting and decrypting non-rootfs partition using TPM.
     ls /mnt | grep hello-world
     ```
 
-6. Clean up by executing the following commands:
+1. Clean up by executing the following commands:
 
     ```bash
     umount /mnt
@@ -775,17 +784,17 @@ Test encrypting and decrypting rootfs partition using TPM.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-2. This test assumes that there is another Ubuntu with encrypted
+1. This test assumes that there is another Ubuntu with encrypted
     rootfs connected to the system, so it can be booted and two partitions
     with specific labels: EFI partition with label `ubuntu-enc` and rootfs
     with label `encrypted-rootfs`.
-3. Install the following packages on Ubuntu with encrypted rootfs:
+1. Install the following packages on Ubuntu with encrypted rootfs:
     - `tpm2-tools`
     - `clevis`
     - `clevis-luks`
@@ -795,29 +804,30 @@ Test encrypting and decrypting rootfs partition using TPM.
 **Test steps**
 
 1. Power on the DUT.
-2. Boot into the BIOS.
-3. Enter the Boot Maintenance Manager.
-4. Enter Boot Options.
-5. Enter Add Boot Option.
-6. Enter the `ubuntu-enc` volume.
-7. Go to `<EFI>/<ubuntu>` and select `shimx64.efi`.
-8. Go to `Input the description` and enter `ubuntu-enc-rootfs`.
-9. Go to `Commit Changes and Exit` and press Enter.
-10. Save the changes and reset.
-11. Enter the boot menu and choose the newly added option.
-12. Unlock the rootfs with your password.
-13. Log into the system by using the proper login and password.
-14. Bind clevis by executing the following command:
+1. Boot into the BIOS.
+1. Enter the Boot Maintenance Manager.
+1. Enter Boot Options.
+1. Enter Add Boot Option.
+1. Enter the `ubuntu-enc` volume.
+1. Go to `<EFI>/<ubuntu>` and select `shimx64.efi`.
+1. Go to `Input the description` and enter `ubuntu-enc-rootfs`.
+1. Go to `Commit Changes and Exit` and press Enter.
+1. Save the changes and reset.
+1. Enter the boot menu and choose the newly added option.
+1. Unlock the rootfs with your password.
+1. Log into the system by using the proper login and password.
+1. Bind clevis by executing the following command:
 
     ```bash
     echo ${UBUNTU_PASSWORD} | clevis luks bind -d /dev/disk/by-label/encrypted-rootfs tpm2 '{"pcr_ids":"0,1,2,3,7"}' -s 1
     ```
 
     where `${UBUNTU_PASSWORD}` is your password.
-15. Reboot the system.
-16. Wait for the partition to be unlocked.
-17. Log into the system.
-18. Clean up by executing the following command:
+
+1. Reboot the system.
+1. Wait for the partition to be unlocked.
+1. Log into the system.
+1. Clean up by executing the following command:
 
     ```bash
     clevis luks unbind -d /dev/vda3 -f -s 1
@@ -826,4 +836,4 @@ Test encrypting and decrypting rootfs partition using TPM.
 **Expected result**
 
 1. In step 12 you should be prompted to unlock the rootfs.
-2. In step 16 the partition should the unlocked automatically.
+1. In step 16 the partition should the unlocked automatically.
