@@ -13,32 +13,37 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## TPM001.001 TPM Support (firmware)
+## TPM001.001 TPM Support (TPM events)
 
 **Test description**
 
-This test aims to verify that the TPM is initialized correctly and the PCRs can
-be accessed from the firmware.
+This test aims to verify that the TPM is initialized correctly and the TPM event
+logs can be accessed from the operating system.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
 
 **Test setup**
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
+1. Download `cbmem` from the
+    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Make sure the package is executable:
+    `sudo chmod +x /usr/local/bin/cbmem`.
 1. Disable Secure Boot.
 
 **Test steps**
 
 1. Power on the DUT.
-1. Boot into the BIOS.
-1. Enter the shell.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
 1. Run the following command in the shell:
 
-    ```powershell
-    cbmem -L
+    ```bash
+    sudo cbmem -L
     ```
 
 **Expected result**
