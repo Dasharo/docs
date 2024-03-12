@@ -323,45 +323,7 @@ This test aims to verify that the TPM is initialized correctly.
 
 `Current TPM Device` should contain `TPM 2.0` or `TPM 1.2`.
 
-## TPM002.001 Verify TPM version (firmware)
-
-**Test description**
-
-This test aims to verify that the TPM version is correctly recognized by the
-firmware.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the BIOS.
-1. Enter the shell.
-1. Run the following command in the shell:
-
-    ```powershell
-    cbmem -L
-    ```
-
-**Expected result**
-
-The output of the command should contain information about the TPM version.
-
-Example output:
-
-```bash
-TPM2 log:
-    Specification: 2.00
-```
-
-## TPM002.002 Verify TPM version (Ubuntu 22.04)
+## TPM002.001 Verify TPM version (Ubuntu 22.04)
 
 **Test description**
 
@@ -383,8 +345,8 @@ operating system.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Check the version of installed tpm2-tools - execute the following command
-    in the terminal:
+1. Check the version of used TPM - execute the following command in the
+    terminal:
 
     ```bash
     cat /sys/class/tpm/tpm0/tpm_version_major
@@ -400,7 +362,7 @@ Example output:
 2
 ```
 
-## TPM002.003 Verify TPM version (Windows 11)
+## TPM002.002 Verify TPM version (Windows 11)
 
 **Test description**
 
