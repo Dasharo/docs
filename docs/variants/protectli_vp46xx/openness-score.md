@@ -15,10 +15,10 @@ Closed-source code percentage: **67.7%**
 * Image size: 16777216 (0x1000000)
 * Number of regions: 25
 * Number of CBFSes: 3
-* Total open-source code size: 4752356 (0x4883e4)
+* Total open-source code size: 4751528 (0x4880a8)
 * Total closed-source code size: 9978470 (0x984266)
-* Total data size: 497501 (0x7975d)
-* Total empty size: 1548889 (0x17a259)
+* Total data size: 497394 (0x796f2)
+* Total empty size: 1549824 (0x17a600)
 
 ![](protectli_vp46xx_v1.2.0.rom_openness_chart.png)
 
@@ -68,10 +68,10 @@ Closed-source code percentage: **67.7%**
 
 * CBFS size: 4800256
 * Number of files: 16
-* Open-source files size: 2326070 (0x237e36)
+* Open-source files size: 2325656 (0x237c98)
 * Closed-source files size: 1845555 (0x1c2933)
-* Data size: 8334 (0x208e)
-* Empty size: 620297 (0x97709)
+* Data size: 8261 (0x2045)
+* Empty size: 620784 (0x978f0)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -79,31 +79,31 @@ Closed-source code percentage: **67.7%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 71392 | none | open-source |
-| fallback/ramstage | stage | 132724 | LZMA | open-source |
+| fallback/romstage | stage | 71104 | none | open-source |
+| fallback/ramstage | stage | 132189 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 8831 | none | open-source |
 | fallback/postcar | stage | 31588 | none | open-source |
-| fallback/payload | simple elf | 2081535 | none | open-source |
+| fallback/payload | simple elf | 2081944 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 300032 | none | closed-source |
 | fspm.bin | fsp | 581632 | none | closed-source |
 | fspm_2.bin | fsp | 581632 | none | closed-source |
 | fsps.bin | fsp | 191132 | LZMA | closed-source |
 | fsps_2.bin | fsp | 191127 | LZMA | closed-source |
-| config | raw | 4991 | LZMA | data |
+| config | raw | 4993 | LZMA | data |
 | revision | raw | 859 | none | data |
 | build_info | raw | 103 | none | data |
 | vbt.bin | raw | 1183 | LZMA | data |
-| (empty) | null | 548 | none | empty |
-| (empty) | null | 2724 | none | empty |
+| (empty) | null | 164 | none | empty |
+| (empty) | null | 4004 | none | empty |
 
 ### CBFS COREBOOT
 
 * CBFS size: 4685824
 * Number of files: 22
-* Open-source files size: 2426286 (0x2505ae)
+* Open-source files size: 2425872 (0x250410)
 * Closed-source files size: 1845555 (0x1c2933)
-* Data size: 9651 (0x25b3)
-* Empty size: 404332 (0x62b6c)
+* Data size: 9617 (0x2591)
+* Empty size: 404780 (0x62d2c)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -111,11 +111,11 @@ Closed-source code percentage: **67.7%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 71392 | none | open-source |
-| fallback/ramstage | stage | 132724 | LZMA | open-source |
+| fallback/romstage | stage | 71104 | none | open-source |
+| fallback/ramstage | stage | 132189 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 8831 | none | open-source |
 | fallback/postcar | stage | 31588 | none | open-source |
-| fallback/payload | simple elf | 2081535 | none | open-source |
+| fallback/payload | simple elf | 2081944 | none | open-source |
 | fallback/verstage | stage | 61752 | none | open-source |
 | bootblock | bootblock | 38464 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 300032 | none | closed-source |
@@ -125,11 +125,11 @@ Closed-source code percentage: **67.7%**
 | fsps_2.bin | fsp | 191127 | LZMA | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| config | raw | 4991 | LZMA | data |
+| config | raw | 4993 | LZMA | data |
 | revision | raw | 859 | none | data |
 | build_info | raw | 103 | none | data |
-| vbt.bin | raw | 1183 | LZMA | data |
 | cmos_layout.bin | cmos_layout | 708 | none | data |
-| (empty) | null | 292 | none | empty |
-| (empty) | null | 1956 | none | empty |
-| (empty) | null | 402084 | none | empty |
+| vbt.bin | raw | 1183 | LZMA | data |
+| (empty) | null | 420 | none | empty |
+| (empty) | null | 2724 | none | empty |
+| (empty) | null | 401636 | none | empty |

@@ -14,17 +14,19 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
 
-## v1.2.0 - 2024-03-01
+## v1.2.0 - 2024-03-13
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=1613384145).
 
 ### Added
 
-- [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [Setup menu password configuration](https://docs.dasharo.com/dasharo-menu-docs/overview/#dasharo-menu-guides)
 - [Serial port console redirection option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#serial-port-configuration)
-- [Chipset watchdog support during boot and watchdog configuration menu](https://www.github.com/dasharo/dasharo-issues/issues/221)
 - [Customizable Serial Number and UUID via CBFS support](https://github.com/Dasharo/dcu)
 - [Customizable boot logo support](https://github.com/Dasharo/dcu)
 - [Support for taking screenshots in the firmware](https://docs.dasharo.com/dev-proc/screenshots/#taking-screenshots)
+- [ESP partition scanning in look for grubx64.efi or shimx64.efi or Windows bootmgr](https://github.com/Dasharo/dasharo-issues/issues/94)
 - Microsoft and Windows 2023 UEFI Secure Boot certificates
 - UEFI 2.8 errata C compliance in EDKII fork
 
@@ -61,8 +63,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.21 revision e5580929](https://github.com/Dasharo/coreboot/tree/e5580929)
-- [Dasharo EDKII fork based on edk2-stable202002 revision c18d9277](https://github.com/Dasharo/edk2/tree/c18d9277)
+- [Dasharo coreboot fork based on 4.21 revision add9d720](https://github.com/Dasharo/coreboot/tree/add9d720)
+- [Dasharo EDKII fork based on edk2-stable202002 revision 2a15268b](https://github.com/Dasharo/edk2/tree/2a15268b)
 - [iPXE based on 2023.12 revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
 - [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
 - [Intel Management Engine based on v14.0.47.1558 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/protectli/vault_cml/me.bin)
