@@ -79,7 +79,7 @@ the DUT reset, it is seen from the OS.
 1. Open a terminal window and run the following command:
 
     ```bash
-    sudo dmesg | grep secureboot
+    sudo dmesg | grep "Secure boot"
     ```
 
 1. Note the results.
@@ -166,11 +166,16 @@ key.
 
 **Test steps**
 
-1. Download the signed with the correct key file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/rAK4qfFeGnSnryD).
-1. Download the certificate from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/sHRH2GeZcbgtpzF).
-1. Place the certificate and the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `GOOD_KEYS.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/GOOD_KEYS.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -198,16 +203,13 @@ key.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-valid-keys.efi
+    signed-hello.efi
     ```
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -231,9 +233,16 @@ This test verifies that Secure Boot blocks booting a file without a key.
 
 **Test steps**
 
-1. Download the not signed file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/iCHCE695FgqZpRF).
-1. Place the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `NOT_SIGNED.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/NOT_SIGNED.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
@@ -256,9 +265,7 @@ This test verifies that Secure Boot blocks booting a file without a key.
 **Expected result**
 
 The output of the command doesn't show file content and information about access
-denied is displayed.
-
-Example output:
+denied is displayed. Example output:
 
 ```bash
 Command Error Status: Access Denied
@@ -283,9 +290,16 @@ key.
 
 **Test steps**
 
-1. Download the signed with the incorrect key file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/rEWZp85ondabxE4).
-1. Place the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `BAD_KEYS.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/BAD_KEYS.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
@@ -302,15 +316,13 @@ key.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-bad-keys.efi
+    signed-hello.efi
     ```
 
 **Expected result**
 
 The output of the command doesn't show file content and information about access
-denied is displayed.
-
-Example output:
+denied is displayed. Example output:
 
 ```bash
 Command Error Status: Access Denied
@@ -365,11 +377,16 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 
 **Test steps**
 
-1. Download the signed with the correct key file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/rAK4qfFeGnSnryD).
-1. Download the certificate from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/sHRH2GeZcbgtpzF).
-1. Place the certificate and the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `GOOD_KEYS.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/GOOD_KEYS.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -397,7 +414,7 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-valid-keys.efi
+    signed-hello.efi
     ```
 
 1. Exit the shell by executing the following command:
@@ -435,34 +452,28 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-valid-keys.efi
+    signed-hello.efi
     ```
 
 **Expected result**
 
-1. The first attempt to run the `hello-valid-keys.efi` script:
-    1. File boots correctly (no information:
-        `Command Error Status: Access Denied` on the output).
-    1. The output of the command shows file content.
+The first attempt to run the `signed-hello.efi` file will results with file
+boots correctly (no information: `Command Error Status: Access Denied` on the
+output). The output of the command shows file content. Example output:
 
-        Example output:
+```bash
+Hello, world!
+```
 
-        ```bash
-        Hello, world!
-        ```
+The second attempt to run the `signed-hello.efi` file will ends with information
+about access denied displayed. Example output:
 
-1. The second attempt to run the `hello-valid-keys.efi` script:
-    1. The output of the command doesn't show file content and information about
-        access denied is displayed.
+```bash
+Command Error Status: Access Denied
+```
 
-        Example output:
-
-        ```bash
-        Command Error Status: Access Denied
-        ```
-
-1. After selecting the `Reset Secure Boot Keys` option, the Secure boot state
-    should be automatically enabled.
+After selecting the `Reset Secure Boot Keys` option, the Secure boot state
+should be automatically enabled.
 
 ## SBO008.001 Attempt to enroll the key in the incorrect format (firmware)
 
@@ -483,7 +494,16 @@ incorrect format.
 
 **Test steps**
 
-1. Place the file with the `.txt` extension on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate certificate in wrong format.
+1. Flash generated `BAD_FORMAT.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/BAD_FORMAT.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -493,9 +513,958 @@ incorrect format.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
 1. Select options in the given order: `Advanced Secure Boot Keys Management` ->
     `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
-1. Select the file with the `.txt` extension from the `USB storage`.
+1. Select the file with the `.der` extension from the `USB storage`.
 1. Select the `Commit Changes and Exit` option.
 
 **Expected result**
 
 The popup with information about `ERROR: Unsupported file type!` should appear.
+
+## SBO009.001 Attempt to boot file signed for intermediate certificate
+
+**Test description**
+
+This test verifies that a file signed with an intermediate certificate can be
+executed.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `INTERMEDIATE.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/INTERMEDIATE.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`.
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
+
+```bash
+Hello, world!
+```
+
+## SBO010.001 Check support for rsa2k signed certificates
+
+**Test description**
+
+This test verifies that a file can be booted via Secure Boot using an RSA2048
+signed certificate.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `RSA2048.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/RSA2048.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
+
+```bash
+Hello, world!
+```
+
+## SBO010.002 Check support for rsa3k signed certificates
+
+**Test description**
+
+This test verifies that a file can be booted via Secure Boot using an RSA3072
+signed certificate.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `RSA3072.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/RSA3072.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
+
+```bash
+Hello, world!
+```
+
+## SBO010.003 Check support for rsa4k signed certificates
+
+**Test description**
+
+This test verifies that a file can be booted via Secure Boot using an RSA4096
+signed certificate.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `RSA4096.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/RSA4096.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
+
+```bash
+Hello, world!
+```
+
+## SBO010.004 Check support for ecdsa256 signed certificates
+
+**Test description**
+
+This test verifies that a file can be booted via Secure Boot using an ESCDA256
+signed certificate.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+[Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `ECDSA256.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/ECDSA256.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
+
+```bash
+Hello, world!
+```
+
+## SBO010.005 Check support for ecdsa384 signed certificates
+
+**Test description**
+
+This test verifies that a file can be booted via Secure Boot using an ESCDA384
+signed certificate.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `ECDSA384.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/ECDSA384.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
+
+```bash
+Hello, world!
+```
+
+## SBO010.006 Check support for ecdsa521 signed certificates
+
+**Test description**
+
+This test verifies that a file can be booted via Secure Boot using an ESCDA521
+signed certificate.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `ECDSA521.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/ECDSA521.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
+
+```bash
+Hello, world!
+```
+
+## SBO011.001 Attempt to enroll expired certificate and boot signed image
+
+**Test description**
+
+This test verifies that an expired certificate cannot be used to verify a booted
+image.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. Additional `USB storage` - at least 1GB - for keeping files for booting.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+
+**Test steps**
+
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `EXPIRED.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/EXPIRED.img of=/dev/sdx
+    ```
+
+1. Plug the `USB storage` into DUT.
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Select options in the given order: `Custom Secure Boot Options` ->
+    `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
+1. Select the certificate from the `USB storage`.
+1. Select the `Commit Changes and Exit` option.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Select the `UEFI Shell` option using the arrow keys and press `Enter`.
+1. In the shell open the `USB storage` by executing the following command:
+
+    ```bash
+    FS0:
+    ```
+
+    > One of the filesystems in the FS list will be the USB storage - typically
+    > `FS0:`
+
+1. Boot the previously prepared file by typing its full name:
+
+    ```bash
+    signed-hello.efi
+    ```
+
+**Expected result**
+
+File does not boot correctly: `Command Error Status: Access Denied`.
+
+## SBO012.001 Boot OS Signed And Enrolled From Inside System (Ubuntu 22.04)
+
+**Test description**
+
+This test verifies that OS boots after enrolling keys and signing system from
+inside.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Install the `sbctl` package through git by following [installation
+    guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
+
+**Test steps**
+
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. The DUT will now attempt to boot `OPERATING_SYSTEM`.
+1. Login to `OPERATING_SYSTEM`.
+1. Remove Old Secure Boot keys:
+
+    ```bash
+    rm -rf /usr/share/secureboot
+    ```
+
+    > Note: `root` right might be needed.
+
+1. Generate new Secure Boot keys:
+
+    ```bash
+    sbctl create-keys
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Enroll generated Secure Boot keys:
+
+    ```bash
+    sbctl enroll-keys --yes-this-might-brick-my-machine
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Sign all components in `OPERATING_SYSTEM`:
+
+    ```bash
+    sbctl verify | awk -F ' ' '{print $2}' | tail -n+2 | xargs -I "#" sbctl sign "#"
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Reboot `OPERATING_SYSTEM`.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. The DUT will now attempt to boot `OPERATING_SYSTEM`.
+1. Login to `OPERATING_SYSTEM`.
+1. Check if Secure Boot is enabled:
+
+    ```bash
+    dmesg | grep secureboot
+    ```
+
+    > Note: `root` rights might be needed.
+
+**Expected result**
+
+In `dmesg` output should be a line informing that Secure Boot is enabled.
+
+## SBO013.001 Check automatic certificate provisioning
+
+**Test description**
+
+This test verifies that the automatic certificate provisioning will install
+custom keys which will make Ubuntu unbootable. Before launching test, make sure
+that DTS with automatic certificate provisioning is attached and can be booted
+on DUT.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+1. Additional `USB storage`for keeping Dasharo Tools Suite.
+1. Dasharo Tools Suite with UEFI secure boot support.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Proceed with the [DTS: Build image with UEFI Secure Boot
+    support](../../dasharo-tools-suite/documentation.md#build-image-with-uefi-secure-boot-support).
+
+**Test steps**
+
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`.
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Boot Dasharo Tools Suite from `USB Storage`.
+1. Wait until Dasharo Tools Suite enrolls keys and resets the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. Verify by booting signed Dasharo Tools Suite:
+    1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+    1. Boot Dasharo Tools Suite from `USB Storage`.
+1. Reboot the DUT.
+1. Verify by booting unsigned Ubuntu:
+    1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+    1. Boot `OPERATING_SYSTEM`.
+
+**Expected result**
+
+Dasharo Tools Suite system signed with custom keys should boot while Ubuntu
+should not boot as it is signed with Microsoft keys.
+
+## SBO013.002 Check automatic certificate provisioning KEK certificate
+
+**Test description**
+
+This test verifies that the automatic certificate provisioning installs the
+expected KEK certificate. Before launching test, make sure that DTS with
+automatic certificate provisioning is attached and can be booted on DUT.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. `OPERATING_SYSTEM` = Dasharo Tools Suite.
+1. Additional `USB storage`for keeping Dasharo Tools Suite.
+1. Dasharo Tools Suite with UEFI secure boot support.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Proceed with the [DTS: Build image with UEFI Secure Boot
+    support](../../dasharo-tools-suite/documentation.md#build-image-with-uefi-secure-boot-support).
+
+**Test steps**
+
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`.
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Boot Dasharo Tools Suite from `USB Storage`.
+1. Wait until Dasharo Tools Suite enrolls keys and resets the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
+1. Boot Dasharo Tools Suite from `USB Storage`.
+1. Enter shell in Dasharo Tools Suite by pressing `9`.
+1. Compare the current KEK certificate with the certificate that should be
+    enrolled:
+    1. Download the sample certificate:
+
+        ```bash
+        wget https://cloud.3mdeb.com/index.php/s/FGdaGq2QqnGWQew/download/KEK.crt -O /tmp/first_certificate.crt
+        ```
+
+    1. Convert the sample certificate:
+
+        ```bash
+        openssl x509 -in /tmp/first_certificate.crt -noout -text > /tmp/first_certificate.crt
+        ```
+
+    1. Export already enrolled certificate:
+
+        ```bash
+        mokutil --kek > /tmp/second_certificate.crt
+        ```
+
+    1. Compare the certificates:
+
+        ```bash
+        diff /tpm/first_certificate.crt /tmp/second_certificate.crt
+        ```
+
+**Expected result**
+
+The data provided by both certificates should be equal, the form of the compared
+data might differ.
+
+## SBO014.001 Enroll certificates using sbctl
+
+**Test description**
+
+This test erases Secure Boot keys from the BIOS menu and verifies if new keys
+can be enrolled from the operating system using `sbctl`.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Install the `sbctl` package through git by following [installation
+    guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
+
+**Test steps**
+
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. The DUT will now attempt to boot `OPERATING_SYSTEM`.
+1. Login to `OPERATING_SYSTEM`.
+1. Remove old Secure Boot keys:
+
+    ```bash
+    rm -rf /usr/share/secureboot
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Generate new Secure Boot keys:
+
+    ```bash
+    sbctl create-keys
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Enroll generated Secure Boot keys:
+
+    ```bash
+    sbctl enroll-keys --yes-this-might-brick-my-machine
+    ```
+
+    < Note: `root` rights might be needed.
+
+1. Restart the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Current Secure Boot State` field to `Enabled`.
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+
+**Expected result**
+
+You should not be able to boot the system after enrolling the keys and enabling
+Secure Boot.
+
+## SBO015.001 Attempt to enroll the key in the incorrect format (OS)
+
+**Test description**
+
+This test verifies that it is impossible to load a certificate in the wrong file
+format from the operating system while using `sbctl`.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo.
+1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+
+**Test setup**
+
+1. Proceed with the
+    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+1. Proceed with the
+    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+1. Proceed with the
+    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Install the `sbctl` package through git by following [installation
+    guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
+
+**Test steps**
+
+1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
+    menu.
+1. Enter the `Device Manager` menu using the arrow keys and Enter.
+1. Enter the `Secure Boot Configuration` submenu.
+1. Set the `Secure Boot Mode` field to `Custom Mode`.
+1. Erase Secure Boot keys select options in the given order: `Custom Secure Boot
+    Options` -> `DB Options` -> `Enroll Signature` -> `Erase all Secure Boot
+    Keys`
+1. Press `F10` to save changes.
+1. Press `ESC` until the setup menu.
+1. Select the `Reset` option.
+1. The DUT will now attempt to boot `OPERATING_SYSTEM`.
+1. Login to `OPERATING_SYSTEM`.
+1. Remove Old Secure Boot keys:
+
+    ```bash
+    rm -rf /usr/share/secureboot
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Generate new Secure Boot keys:
+
+    ```bash
+    sbctl create-keys
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Generate wrong format keys and move them to the appropriate locations:
+
+    ```bash
+    openssl ecparam -genkey -name secp384r1 -out db.key && openssl req -new -x509 -key db.key -out db.pem -days 365 -subj "/CN=3mdeb_test"
+    openssl ecparam -genkey -name secp384r1 -out PK.key && openssl req -new -x509 -key PK.key -out PK.pem -days 365 -subj "/CN=3mdeb_test"
+    openssl ecparam -genkey -name secp384r1 -out KEK.key && openssl req -new -x509 -key KEK.key -out KEK.pem -days 365 -subj "/CN=3mdeb_test"
+    mv db.key /usr/share/secureboot/keys/db/
+    mv PK.key /usr/share/secureboot/keys/PK/
+    mv KEK.key /usr/share/secureboot/keys/KEK/
+    ```
+
+    > Note: `root` rights might be needed.
+
+1. Attempt to enroll generated Secure Boot keys:
+
+    ```bash
+    sbctl enroll-keys --yes-this-might-brick-my-machine
+    ```
+
+    > Note: `root` rights might be needed.
+
+**Expected result**
+
+Utility `sbctl` should fail while enrolling keys.
