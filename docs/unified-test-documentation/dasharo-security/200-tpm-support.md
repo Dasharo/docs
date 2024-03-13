@@ -744,6 +744,21 @@ Test encrypting and decrypting non-rootfs partition using TPM.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Create ext4 formatted LUKS partition with `hello-world` named file on it
+    using following commands:
+
+    ```bash
+    fallocate -l 20MB test-partition
+    dd if=/dev/urandom bs=1 count=32 status=none > key
+    cryptsetup luksFormat -q --key-file=key test-partition
+    cryptsetup luksOpen --key-file=key test-partition test-partition
+    mkfs.ext4 /dev/mapper/test-partition
+    mount /dev/mapper/test-partition /mnt
+    touch /mnt/hello-world
+    umount /dev/mapper/test-partition
+    cryptsetup luksClose test-partition
+    ```
+
 1. Create the sealing object by executing the following commands:
 
     ```bash
@@ -794,12 +809,8 @@ Test encrypting and decrypting rootfs partition using TPM.
     rootfs connected to the system, so it can be booted and two partitions
     with specific labels: EFI partition with label `ubuntu-enc` and rootfs
     with label `encrypted-rootfs`.
-1. Install the following packages on Ubuntu with encrypted rootfs:
-    - `tpm2-tools`
-    - `clevis`
-    - `clevis-luks`
-    - `clevis-tpm2`
-    - `clevis-initramfs`
+1. Install needed packages: `sudo apt install tpm2-tools clevis clevis-luks
+    clevis-tpm2 clevis-initramfs`
 
 **Test steps**
 
