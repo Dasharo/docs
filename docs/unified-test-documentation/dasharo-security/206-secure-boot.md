@@ -79,7 +79,7 @@ the DUT reset, it is seen from the OS.
 1. Open a terminal window and run the following command:
 
     ```bash
-    sudo dmesg | grep secureboot
+    sudo dmesg | grep "Secure boot"
     ```
 
 1. Note the results.
@@ -166,11 +166,16 @@ key.
 
 **Test steps**
 
-1. Download the signed with the correct key file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/rAK4qfFeGnSnryD).
-1. Download the certificate from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/sHRH2GeZcbgtpzF).
-1. Place the certificate and the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `GOOD_KEYS.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/GOOD_KEYS.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -198,16 +203,13 @@ key.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-valid-keys.efi
+    signed-hello.efi
     ```
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -231,9 +233,16 @@ This test verifies that Secure Boot blocks booting a file without a key.
 
 **Test steps**
 
-1. Download the not signed file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/iCHCE695FgqZpRF).
-1. Place the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `NOT_SIGNED.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/NOT_SIGNED.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
@@ -256,9 +265,7 @@ This test verifies that Secure Boot blocks booting a file without a key.
 **Expected result**
 
 The output of the command doesn't show file content and information about access
-denied is displayed.
-
-Example output:
+denied is displayed. Example output:
 
 ```bash
 Command Error Status: Access Denied
@@ -283,9 +290,16 @@ key.
 
 **Test steps**
 
-1. Download the signed with the incorrect key file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/rEWZp85ondabxE4).
-1. Place the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `BAD_KEYS.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/BAD_KEYS.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BOOT_MENU_KEY` to enter the boot menu.
@@ -302,15 +316,13 @@ key.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-bad-keys.efi
+    signed-hello.efi
     ```
 
 **Expected result**
 
 The output of the command doesn't show file content and information about access
-denied is displayed.
-
-Example output:
+denied is displayed. Example output:
 
 ```bash
 Command Error Status: Access Denied
@@ -365,11 +377,16 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 
 **Test steps**
 
-1. Download the signed with the correct key file from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/rAK4qfFeGnSnryD).
-1. Download the certificate from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/sHRH2GeZcbgtpzF).
-1. Place the certificate and the file on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `GOOD_KEYS.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/GOOD_KEYS.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -397,7 +414,7 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-valid-keys.efi
+    signed-hello.efi
     ```
 
 1. Exit the shell by executing the following command:
@@ -435,34 +452,28 @@ This test verifies that the `Reset Secure Boot Keys` option works correctly.
 1. Boot the previously prepared file by typing its full name:
 
     ```bash
-    hello-valid-keys.efi
+    signed-hello.efi
     ```
 
 **Expected result**
 
-1. The first attempt to run the `hello-valid-keys.efi` script:
-    1. File boots correctly (no information:
-        `Command Error Status: Access Denied` on the output).
-    1. The output of the command shows file content.
+The first attempt to run the `signed-hello.efi` file will results with file
+boots correctly (no information: `Command Error Status: Access Denied` on the
+output). The output of the command shows file content. Example output:
 
-        Example output:
+```bash
+Hello, world!
+```
 
-        ```bash
-        Hello, world!
-        ```
+The second attempt to run the `signed-hello.efi` file will ends with information
+about access denied displayed. Example output:
 
-1. The second attempt to run the `hello-valid-keys.efi` script:
-    1. The output of the command doesn't show file content and information about
-        access denied is displayed.
+```bash
+Command Error Status: Access Denied
+```
 
-        Example output:
-
-        ```bash
-        Command Error Status: Access Denied
-        ```
-
-1. After selecting the `Reset Secure Boot Keys` option, the Secure boot state
-    should be automatically enabled.
+After selecting the `Reset Secure Boot Keys` option, the Secure boot state
+should be automatically enabled.
 
 ## SBO008.001 Attempt to enroll the key in the incorrect format (firmware)
 
@@ -483,7 +494,16 @@ incorrect format.
 
 **Test steps**
 
-1. Place the file with the `.txt` extension on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate certificate in wrong format.
+1. Flash generated `BAD_FORMAT.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/BAD_FORMAT.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -493,7 +513,7 @@ incorrect format.
 1. Set the `Secure Boot Mode` field to `Custom Mode`.
 1. Select options in the given order: `Advanced Secure Boot Keys Management` ->
     `DB Options` -> `Enroll Signature` -> `Enroll Signature Using File`
-1. Select the file with the `.txt` extension from the `USB storage`.
+1. Select the file with the `.der` extension from the `USB storage`.
 1. Select the `Commit Changes and Exit` option.
 
 **Expected result**
@@ -519,10 +539,16 @@ executed.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img/wrapper.sh`
-    to generate `INTERMEDIATE.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/INTERMEDIATE.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `INTERMEDIATE.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/INTERMEDIATE.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -556,11 +582,8 @@ executed.
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -585,10 +608,16 @@ signed certificate.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img-wrapper.sh`
-    to generate `RSA2048.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/RSA2048.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `RSA2048.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/RSA2048.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -622,11 +651,8 @@ signed certificate.
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -651,10 +677,16 @@ signed certificate.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img-wrapper.sh`
-    to generate `RSA3072.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/RSA3072.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `RSA3072.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/RSA3072.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -688,11 +720,8 @@ signed certificate.
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -717,10 +746,16 @@ signed certificate.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img-wrapper.sh`
-    to generate `RSA4096.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/RSA4096.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `RSA4096.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/RSA4096.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -754,11 +789,8 @@ signed certificate.
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -783,10 +815,16 @@ signed certificate.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img-wrapper.sh`
-    to generate `ECDSA256.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/ECDSA256.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `ECDSA256.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/ECDSA256.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -820,11 +858,8 @@ signed certificate.
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -849,10 +884,16 @@ signed certificate.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img-wrapper.sh`
-    to generate `ECDSA384.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/ECDSA384.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `ECDSA384.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/ECDSA384.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -886,11 +927,8 @@ signed certificate.
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -915,10 +953,16 @@ signed certificate.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img-wrapper.sh`
-    to generate `ECDSA521.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/ECDSA521.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `ECDSA521.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/ECDSA521.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -952,11 +996,8 @@ signed certificate.
 
 **Expected result**
 
-1. File boots correctly (no information: `Command Error Status: Access Denied`
-    on the output).
-1. The output of the command shows file content.
-
-Example output:
+File boots correctly (no information: `Command Error Status: Access Denied` on
+the output) and the output of the command shows file content. Example output:
 
 ```bash
 Hello, world!
@@ -981,10 +1022,16 @@ image.
 
 **Test steps**
 
-1. Run script `open-source-firmware-validation/scripts/secure-boot/generate-images/sb-img-wrapper.sh`
-    to generate `EXPIRED.img`.
-1. Place `open-source-firmware-validation/scripts/secure-boot/images/EXPIRED.img`
-    on the `USB storage`.
+1. Run
+    [sb-img-wrapper.sh](https://github.com/Dasharo/open-source-firmware-validation/blob/encrypted-rootfs-release-rebase/scripts/secure-boot/generate-images/sb-img-wrapper.sh)
+    script to generate keys and sign efi file.
+1. Flash generated `EXPIRED.img` into `USB storage` using the following
+    command:
+
+    ```bash
+    sudo dd if=path/to/EXPIRED.img of=/dev/sdx
+    ```
+
 1. Plug the `USB storage` into DUT.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
@@ -1018,7 +1065,7 @@ image.
 
 **Expected result**
 
-1. Files do not boot correctly: `Command Error Status: Access Denied`.
+File does not boot correctly: `Command Error Status: Access Denied`.
 
 ## SBO012.001 Boot OS Signed And Enrolled From Inside System (Ubuntu 22.04)
 
@@ -1040,6 +1087,8 @@ inside.
     [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Install the `sbctl` package through git by following [installation
+    guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
 
 **Test steps**
 
@@ -1110,7 +1159,7 @@ inside.
 
 **Expected result**
 
-1. In `dmesg` output should be a line informing that Secure Boot is enabled.
+In `dmesg` output should be a line informing that Secure Boot is enabled.
 
 ## SBO013.001 Check automatic certificate provisioning
 
@@ -1174,8 +1223,8 @@ on DUT.
 
 **Expected result**
 
-1. Signed Dasharo Tools Suite should boot.
-1. Unsigned Ubuntu should not boot.
+Dasharo Tools Suite system signed with custom keys should boot while Ubuntu
+should not boot as it is signed with Microsoft keys.
 
 ## SBO013.002 Check automatic certificate provisioning KEK certificate
 
@@ -1259,8 +1308,8 @@ automatic certificate provisioning is attached and can be booted on DUT.
 
 **Expected result**
 
-1. The data provided by both certificates should be equal, the form of the
-compared data might differ.
+The data provided by both certificates should be equal, the form of the compared
+data might differ.
 
 ## SBO014.001 Enroll certificates using sbctl
 
@@ -1282,6 +1331,8 @@ can be enrolled from the operating system using `sbctl`.
     [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Install the `sbctl` package through git by following [installation
+    guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
 
 **Test steps**
 
@@ -1325,7 +1376,7 @@ can be enrolled from the operating system using `sbctl`.
 
 1. Restart the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
-menu.
+    menu.
 1. Enter the `Device Manager` menu using the arrow keys and Enter.
 1. Enter the `Secure Boot Configuration` submenu.
 1. Set the `Current Secure Boot State` field to `Enabled`.
@@ -1335,8 +1386,8 @@ menu.
 
 **Expected result**
 
-1. You should not be able to boot the system after enrolling the keys and
-enabling Secure Boot.
+You should not be able to boot the system after enrolling the keys and enabling
+Secure Boot.
 
 ## SBO015.001 Attempt to enroll the key in the incorrect format (OS)
 
@@ -1358,6 +1409,8 @@ format from the operating system while using `sbctl`.
     [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+1. Install the `sbctl` package through git by following [installation
+    guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
 
 **Test steps**
 
@@ -1391,7 +1444,7 @@ format from the operating system while using `sbctl`.
 
     > Note: `root` rights might be needed.
 
-1. Generate wrong format keys and move them to the appropriate locations::
+1. Generate wrong format keys and move them to the appropriate locations:
 
     ```bash
     openssl ecparam -genkey -name secp384r1 -out db.key && openssl req -new -x509 -key db.key -out db.pem -days 365 -subj "/CN=3mdeb_test"
@@ -1414,4 +1467,4 @@ format from the operating system while using `sbctl`.
 
 **Expected result**
 
-1. `sbctl` should fail while enrolling keys.
+Utility `sbctl` should fail while enrolling keys.
