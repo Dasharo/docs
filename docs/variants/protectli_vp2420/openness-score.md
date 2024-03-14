@@ -15,10 +15,10 @@ Closed-source code percentage: **64.7%**
 * Image size: 16777216 (0x1000000)
 * Number of regions: 26
 * Number of CBFSes: 3
-* Total open-source code size: 4809610 (0x49638a)
+* Total open-source code size: 4804606 (0x494ffe)
 * Total closed-source code size: 8800924 (0x864a9c)
-* Total data size: 628074 (0x9956a)
-* Total empty size: 2538608 (0x26bc70)
+* Total data size: 627958 (0x994f6)
+* Total empty size: 2543728 (0x26d070)
 
 ![](protectli_vp2420_v1.2.0.rom_openness_chart.png)
 
@@ -69,10 +69,10 @@ Closed-source code percentage: **64.7%**
 
 * CBFS size: 3620608
 * Number of files: 14
-* Open-source files size: 2366821 (0x241d65)
+* Open-source files size: 2364319 (0x24139f)
 * Closed-source files size: 732494 (0xb2d4e)
-* Data size: 8585 (0x2189)
-* Empty size: 512708 (0x7d2c4)
+* Data size: 8527 (0x214f)
+* Empty size: 515268 (0x7dcc4)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -80,29 +80,29 @@ Closed-source code percentage: **64.7%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 85904 | none | open-source |
-| fallback/ramstage | stage | 129602 | LZMA | open-source |
+| fallback/romstage | stage | 85648 | none | open-source |
+| fallback/ramstage | stage | 129196 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 9759 | none | open-source |
 | fallback/postcar | stage | 59620 | none | open-source |
-| fallback/payload | simple elf | 2081936 | none | open-source |
+| fallback/payload | simple elf | 2080096 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 20480 | none | closed-source |
 | fspm.bin | fsp | 495616 | none | closed-source |
 | fsps.bin | fsp | 216398 | LZ4 | closed-source |
-| config | raw | 4799 | LZMA | data |
+| config | raw | 4806 | LZMA | data |
 | revision | raw | 859 | none | data |
 | build_info | raw | 103 | none | data |
 | vbt.bin | raw | 1200 | LZMA | data |
-| (empty) | null | 36 | none | empty |
-| (empty) | null | 512672 | none | empty |
+| (empty) | null | 740 | none | empty |
+| (empty) | null | 514528 | none | empty |
 
 ### CBFS COREBOOT
 
 * CBFS size: 4161536
 * Number of files: 17
-* Open-source files size: 2442789 (0x254625)
+* Open-source files size: 2440287 (0x253c5f)
 * Closed-source files size: 732494 (0xb2d4e)
-* Data size: 8901 (0x22c5)
-* Empty size: 977352 (0xee9c8)
+* Data size: 8843 (0x228b)
+* Empty size: 979912 (0xef3c8)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -110,20 +110,20 @@ Closed-source code percentage: **64.7%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 85904 | none | open-source |
-| fallback/ramstage | stage | 129602 | LZMA | open-source |
+| fallback/romstage | stage | 85648 | none | open-source |
+| fallback/ramstage | stage | 129196 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 9759 | none | open-source |
 | fallback/postcar | stage | 59620 | none | open-source |
-| fallback/payload | simple elf | 2081936 | none | open-source |
+| fallback/payload | simple elf | 2080096 | none | open-source |
 | bootblock | bootblock | 75968 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 20480 | none | closed-source |
 | fspm.bin | fsp | 495616 | none | closed-source |
 | fsps.bin | fsp | 216398 | LZ4 | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| config | raw | 4799 | LZMA | data |
+| config | raw | 4806 | LZMA | data |
 | revision | raw | 859 | none | data |
 | build_info | raw | 103 | none | data |
 | vbt.bin | raw | 1200 | LZMA | data |
-| (empty) | null | 1124 | none | empty |
-| (empty) | null | 976228 | none | empty |
+| (empty) | null | 484 | none | empty |
+| (empty) | null | 979428 | none | empty |
