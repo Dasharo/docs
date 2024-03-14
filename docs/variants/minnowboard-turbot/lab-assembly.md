@@ -1,4 +1,4 @@
-# Dasharo compatible with MinnowBoard Turbot - development
+# Dasharo compatible with MinnowBoard Turbot - lab assembly guide
 
 ## Intro
 
@@ -63,4 +63,35 @@ echo 1 > /sys/class/gpio/gpio199/value
 
 ```bash
 echo 0 > /sys/class/gpio/gpio199/value
+```
+
+- Example setup:
+![setup](./images/minnow-setup.png)
+
+## Flashing firmware
+
+You can flash firmware with the
+[osfv_cli](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli)
+tool. Before trying to flash make sure that SPI is connected properly.
+
+```bash
+osfv_cli rte --rte_ip <rte_ip> --model minnowmax flash write --rom <path_to_binary>
+```
+
+Note that if multiple chips are found, you may be asked to specify which one you
+would like to flash.
+
+```bash
+Found Winbond flash chip "W25Q64BV/W25Q64CV/W25Q64FV" (8192 kB, SPI) on linux_spi.
+
+Found Winbond flash chip "W25Q64JV-.Q" (8192 kB, SPI) on linux_spi.
+Multiple flash chip definitions match the detected chip(s): "W25Q64BV/W25Q64CV/W25Q64FV", "W25Q64JV-.Q"
+Please specify which chip definition to use with the -c <chipname> option.
+```
+
+In that case, you need to modify line 295 of the `rte.py` script by appending
+the `-c <chipname>` option to the arguments:
+
+```python
+args = self.flash_create_args(f"-w {self.FW_PATH_WRITE} -c W25Q64BV/W25Q64CV/W25Q64FV")
 ```
