@@ -6,6 +6,76 @@ compatible with MSI PRO Z790-P boards. The content of the page is generated
 with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
+## v0.9.0 heads
+
+Openness Score for msi_ms7e06_v0.9.0_ddr5_heads.rom
+
+Open-source code percentage: **61.4%**
+Closed-source code percentage: **38.6%**
+
+* Image size: 33554432 (0x2000000)
+* Number of regions: 6
+* Number of CBFSes: 1
+* Total open-source code size: 9099411 (0x8ad893)
+* Total closed-source code size: 5716309 (0x573955)
+* Total data size: 105628 (0x19c9c)
+* Total empty size: 18440572 (0x119617c)
+
+![](msi_ms7e06_v0.9.0_ddr5_heads.rom_openness_chart.png)
+
+![](msi_ms7e06_v0.9.0_ddr5_heads.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x1000 | 0x3d8000 | closed-source |
+| SI_DESC | 0x0 | 0x1000 | data |
+| RW_MRC_CACHE | 0x400000 | 0x10000 | data |
+| FMAP | 0x418000 | 0x200 | data |
+
+### CBFS COREBOOT
+
+* CBFS size: 29261312
+* Number of files: 25
+* Open-source files size: 9099411 (0x8ad893)
+* Closed-source files size: 1685845 (0x19b955)
+* Data size: 35484 (0x8a9c)
+* Empty size: 18440572 (0x119617c)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+ > which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/romstage | stage | 95448 | none | open-source |
+| fallback/ramstage | stage | 141314 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 11268 | none | open-source |
+| fallback/postcar | stage | 31288 | none | open-source |
+| fallback/payload | simple elf | 8782653 | none | open-source |
+| bootblock | bootblock | 37440 | none | open-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 283692 | LZ4 | closed-source |
+| cpu_microcode_blob.bin | microcode | 431104 | none | closed-source |
+| cbfs_master_header | cbfs header | 28 | none | data |
+| config | raw | 4520 | LZMA | data |
+| revision | raw | 867 | none | data |
+| bootsplash.jpg | bootsplash | 26784 | none | data |
+| vbt.bin | raw | 1258 | LZMA | data |
+| build_info | raw | 141 | none | data |
+| intel_fit | intel_fit | 80 | none | data |
+| (empty) | null | 1060 | none | empty |
+| (empty) | null | 2316324 | none | empty |
+| (empty) | null | 523940 | none | empty |
+| (empty) | null | 7536548 | none | empty |
+| (empty) | null | 142948 | none | empty |
+| (empty) | null | 7695268 | none | empty |
+| (empty) | null | 224484 | none | empty |
+
 ## v0.9.1
 
 Openness Score for msi_ms7e06_v0.9.1_ddr5.rom
