@@ -58,7 +58,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 ### SBOM (Software Bill of Materials)
 
 - [Dasharo heads fork based on v0.2.0 revision 2429359d](https://github.com/Dasharo/heads/tree/2429359d)
-- [Dasharo coreboot fork based on 4.21 revision 3a9aa3a4](https://github.com/Dasharo/edk2/tree/3a9aa3a4)
+- [Dasharo coreboot fork based on 4.21 revision 3a9aa3a4](https://github.com/Dasharo/coreboot/tree/3a9aa3a4)
 - [Intel Management Engine based on v16.1.30.2307 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/msi/ms7e06/me.bin)
 - [Intel Flash Descriptor based on v1.2 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/msi/ms7e06/descriptor.bin)
 - [Intel Firmware Support Package based on RPL-S C.0.BD.40 revision 481ea7cf](https://github.com/intel/FSP/tree/481ea7cf/RaptorLakeFspBinPkg/Client/RaptorLakeS)
