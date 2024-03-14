@@ -16,9 +16,9 @@ coreboot port on the Protectli VP2410 firewall.
 |                        | SAMSUNG M471A5244BB0-CRC                                 |
 |                        | KINGSTON KVR24S17S8/8                                    |
 |                        | KINGSTON KVR26S19S8/16                                   |
+|                        | KINGSTON KVR26S21S6/8                                    |
 | **Flash memory**       | Macronix MX25U6473F                                      |
-| **SSD**                | M.2 SSD SATA: Hoodisk SSL032GTTC7-S9A-2S                 |
-|                        | external SATA 2.5 inch: Goodram SSDPR-CL100-240-G2 240GB |
+| **SSD**                | CRUCIAL CT500MX500SSD1                                   |
 | **MMC drive**          | SAMSUNG 8GTF4R (on-board)                                |
 | **USB pendrives**      | 1. SanDisk USB 3.2Gen1 16 GB                             |
 |                        | 2. SanDisk USB 3.2Gen1 16 GB                             |
