@@ -267,6 +267,8 @@ nav:
       - 'PC Engines':
           - 'Overview': variants/pc_engines/overview.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
+      - 'MinnowBoard Turbot':
+          - 'Lab assembly guide': variants/minnowboard-turbot/lab-assembly.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
