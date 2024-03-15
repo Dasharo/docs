@@ -65,7 +65,23 @@ echo 1 > /sys/class/gpio/gpio199/value
 echo 0 > /sys/class/gpio/gpio199/value
 ```
 
+- Power switch can also be controlled from the RTE. Connect the power control
+pins according to the following table:
+
+| RTE       | MinnowBoard |
+|:---------:|:-----------:|
+| J11 Pin 6 | J5 Pin 1    |
+| J15 GND   | J5 Pin 2    |
+
+The power state can be controlled with the `rte_ctrl` script:
+
+```bash
+/usr/bin rte_ctrl pon
+/usr/bin rte_ctrl poff
+```
+
 - Example setup:
+
 ![setup](./images/minnow-setup.png)
 
 ## Flashing firmware
