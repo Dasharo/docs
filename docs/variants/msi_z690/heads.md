@@ -110,9 +110,9 @@ Make sure that you have following packages installed:
 
 1. Clone Dasharo Heads repository
 
-   ```bash
-    git clone https://github.com/Dasharo/heads.git
-   ```
+    ```bash
+     git clone https://github.com/Dasharo/heads.git
+    ```
 
 2. Navigate to the source code directory and checkout to the desired revision:
 
