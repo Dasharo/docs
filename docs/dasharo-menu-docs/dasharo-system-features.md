@@ -120,12 +120,19 @@ The submenu contains general chipset options. Currently available options:
   When disabled PS/2 keyboards and mice will stop working in firmware and OS.
   PS/2 controller will not be functional in OS. This option is not available on
   laptops where PS/2 is used for the integrated keyboard and possibly touchpad.
-- `Enable watchdog` - controls the chipset watchdog functionality. If enabled,
-  watchdog will be counting with the timeout specified below. The firmware
-  automatically kicks the watchdog periodically so even without OS support, the
-  platform will not reset itself when watchdog expires.
+- `Enable watchdog` - controls the chipset watchdog functionality. The watchdog
+  is useful when a platform hangs and needs to be reset automatically, which
+  will happen if watchdog timer expires. Minimum timeout is 5 minutes to let the
+  OS take control over the watchdog (e.g. wdat_wdt watchdog driver for Linux)
+  and keep reloading it to avoid resets.
+
+  > Earlier firmware versions kick the watchdog automatically. Releases after
+  > 15.03.2024 expose the watchdog to the OS to update it instead.
+
 - `Watchdog timeout value` - watchdog timeout in seconds. Allowed range is
-  60-1024 seconds. The Option is only visible if watchdog is set to enabled.
+  300-1024 seconds. Once the OS takes control of the watchdog, the timeout can
+  be configured as low as 1 second. The option is only visible if watchdog is
+  set to enabled.
 
 ## Power Management Options
 
