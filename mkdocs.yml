@@ -307,7 +307,8 @@ nav:
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
-      - 'Firmware update': guides/firmware-update.md
+      - 'Updating your firmware': guides/firmware-update.md
+      - 'Flashing custom firmware': guides/firmware-reflash.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
       - 'Verifying signatures': guides/signature-verification.md
