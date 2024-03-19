@@ -171,6 +171,20 @@ flashrom -p internal -w <heads_fw_file>
 
 !!! warning "ME has to be disabled to flash full file."
 
+## Transition from Dasharo Heads back to UEFI
+
+At the moment, Dasharo Tools Suite does not support switching from Heads back to
+UEFI-based firmware. Use [FlashBIOS](../../unified/msi/recovery.md#using-msi-flashbios-button)
+to restore a saved backup, stock, or Dasharo UEFI firmware.
+
+!!! warning "Warning for Qubes OS users"
+
+    If you installed Qubes OS under Heads, it has been installed in legacy BIOS
+    boot mode and will not be bootable under UEFI. You will likely need to
+    install Qubes OS again.
+
+    Users who installed Qubes OS *before* switching to Heads are not affected.
+
 ## Logo customization
 
 To replace the logo, one must rebuild the firmware. Other methods are not
