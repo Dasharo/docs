@@ -46,23 +46,12 @@ MinnowBoard exposes a pin header with debug UART on `J4`.
 - Connect RTE `J13` connector to MinnowBoard `J9` connector with a DC Jack - DC
   Jack wire
 
-There are two ways to control the power supply.
-
-- You can toggle power supply using the `rte_ctrl` located in `/usr/bin/`:
-
-```bash
-/usr/bin rte_ctrl rel
-```
-
-- You can control power supply by directly setting the state of GPIO 199. Turn
-on power by setting it to `1` and turn it off by setting it to `0`:
+You can control the power supply using the
+[osfv_cli](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli)
+tool:
 
 ```bash
-echo 1 > /sys/class/gpio/gpio199/value
-```
-
-```bash
-echo 0 > /sys/class/gpio/gpio199/value
+osfv_cli rte --rte_ip <rte-ip> --model minnowmax rel tgl
 ```
 
 - Power switch can also be controlled from the RTE. Connect the power control
@@ -73,11 +62,11 @@ pins according to the following table:
 | J11 Pin 6 | J5 Pin 1    |
 | J15 GND   | J5 Pin 2    |
 
-The power state can be controlled with the `rte_ctrl` script:
+The power state can be controlled with the `osfv_cli` script:
 
 ```bash
-/usr/bin rte_ctrl pon
-/usr/bin rte_ctrl poff
+osfv_cli rte --rte_ip <rte-ip> --model minnowmax pwr on
+osfv_cli rte --rte_ip <rte-ip> --model minnowmax pwr off
 ```
 
 - Example setup:
@@ -86,28 +75,9 @@ The power state can be controlled with the `rte_ctrl` script:
 
 ## Flashing firmware
 
-You can flash firmware with the
-[osfv_cli](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli)
-tool. Before trying to flash make sure that SPI is connected properly.
+You can flash firmware with the `osfv_cli` tool. Before trying to flash make
+sure that SPI is connected properly.
 
 ```bash
 osfv_cli rte --rte_ip <rte_ip> --model minnowmax flash write --rom <path_to_binary>
-```
-
-Note that if multiple chips are found, you may be asked to specify which one you
-would like to flash.
-
-```bash
-Found Winbond flash chip "W25Q64BV/W25Q64CV/W25Q64FV" (8192 kB, SPI) on linux_spi.
-
-Found Winbond flash chip "W25Q64JV-.Q" (8192 kB, SPI) on linux_spi.
-Multiple flash chip definitions match the detected chip(s): "W25Q64BV/W25Q64CV/W25Q64FV", "W25Q64JV-.Q"
-Please specify which chip definition to use with the -c <chipname> option.
-```
-
-In that case, you need to modify line 295 of the `rte.py` script by appending
-the `-c <chipname>` option to the arguments:
-
-```python
-args = self.flash_create_args(f"-w {self.FW_PATH_WRITE} -c W25Q64BV/W25Q64CV/W25Q64FV")
 ```
