@@ -19,10 +19,10 @@ Closed-source code percentage: **38.6%**
 * Image size: 33554432 (0x2000000)
 * Number of regions: 6
 * Number of CBFSes: 1
-* Total open-source code size: 9098389 (0x8ad495)
+* Total open-source code size: 9101448 (0x8ae088)
 * Total closed-source code size: 5716309 (0x573955)
-* Total data size: 105626 (0x19c9a)
-* Total empty size: 18441596 (0x119657c)
+* Total data size: 105639 (0x19ca7)
+* Total empty size: 18438524 (0x119597c)
 
 ![](msi_ms7d25_v0.9.0_ddr5_heads.rom_openness_chart.png)
 
@@ -44,10 +44,10 @@ Closed-source code percentage: **38.6%**
 
 * CBFS size: 29261312
 * Number of files: 25
-* Open-source files size: 9098389 (0x8ad495)
+* Open-source files size: 9101448 (0x8ae088)
 * Closed-source files size: 1685845 (0x19b955)
-* Data size: 35482 (0x8a9a)
-* Empty size: 18441596 (0x119657c)
+* Data size: 35495 (0x8aa7)
+* Empty size: 18438524 (0x119597c)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -55,11 +55,11 @@ Closed-source code percentage: **38.6%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 8784701 | none | open-source |
 | fallback/romstage | stage | 95448 | none | open-source |
-| fallback/ramstage | stage | 141316 | LZMA | open-source |
+| fallback/ramstage | stage | 141303 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 11268 | none | open-source |
 | fallback/postcar | stage | 31288 | none | open-source |
-| fallback/payload | simple elf | 8781629 | none | open-source |
 | bootblock | bootblock | 37440 | none | open-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 283692 | LZ4 | closed-source |
@@ -71,8 +71,8 @@ Closed-source code percentage: **38.6%**
 | vbt.bin | raw | 1257 | LZMA | data |
 | build_info | raw | 141 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| (empty) | null | 1060 | none | empty |
-| (empty) | null | 2317348 | none | empty |
+| (empty) | null | 868 | none | empty |
+| (empty) | null | 2314468 | none | empty |
 | (empty) | null | 523940 | none | empty |
 | (empty) | null | 7536548 | none | empty |
 | (empty) | null | 142948 | none | empty |

@@ -15,7 +15,7 @@ The subscription is not automatically renewed.
 Following Release Notes describe status of Dasharo (coreboot + Heads) firmware
 development compatible with MSI PRO Z690-A boards.
 
-## v0.9.0 - 2024-03-14
+## v0.9.0 - 2024-03-21
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=5649308).
@@ -57,8 +57,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo heads fork based on v0.2.0 revision 2429359d](https://github.com/Dasharo/heads/tree/2429359d)
-- [Dasharo coreboot fork based on 4.21 revision 3a9aa3a4](https://github.com/Dasharo/coreboot/tree/3a9aa3a4)
+- [Dasharo heads fork based on v0.2.0 revision 13aa08ce](https://github.com/Dasharo/heads/tree/13aa08ce)
+- [Dasharo coreboot fork based on 4.21 revision 38215f5a](https://github.com/Dasharo/coreboot/tree/38215f5a)
 - [Intel Management Engine based on v16.1.30.2307 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/msi/ms7d25/me.bin)
 - [Intel Flash Descriptor based on v1.2 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/msi/ms7d25/descriptor.bin)
 - [Intel Firmware Support Package based on RPL-S C.0.BD.40 revision 481ea7cf](https://github.com/intel/FSP/tree/481ea7cf/RaptorLakeFspBinPkg/Client/RaptorLakeS)
