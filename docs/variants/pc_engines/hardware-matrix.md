@@ -26,11 +26,11 @@ coreboot port on the PC Engines apu2 family of mainboards.
     |--------------------------------|--------------------------------------------------|
     | **CPU**                        | AMD GX-412TC SOC                                 |
     |                                | Passive cooling to enclosure                     |
-    | **RAM**                        | 4 GB DDR3 non-ECC (soldered)                     |
-    | **SSD**                        | Apacer ST170 60GB                                |
+    | **RAM**                        | 2 GB DDR3 non-ECC (soldered)                     |
+    | **SSD**                        | Seagate ST500LM012 HN-M5
     | **Flash memory**               | Winbond W25Q64JV                                 |
-    | **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
-    | **Wireless card**              | Compex WLE900VX                                  |
+    | **USB pendrives**              | SanDisk 3.2Gen1
+    | **Wireless card**              | Qualcomm Atheros AR928X
     | **Network**                    | 3x i211AT Gigabit Ethernet                       |
     | **TPM**                        | PC Engines TPM.4A module                         |
     | **Power Supply**               | 12V power supply                                 |
