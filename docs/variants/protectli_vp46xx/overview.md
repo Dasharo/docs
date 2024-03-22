@@ -37,4 +37,4 @@ For more information please refer to the references below.
     validation procedure.
 * [Test matrix](test-matrix.md) - describes validation scope used during
     Dasharo firmware validation procedure.
-* [Post-installation setup](post-install.md) -
+* [Post-installation setup](post-install.md)
