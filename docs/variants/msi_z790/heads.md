@@ -4,7 +4,7 @@ Heads-based variant of Dasharo firmware compatible with MSI PRO Z790-P boards
 is offered as a Technology Preview Release.
 
 Please consider to support the project financially by purchasing the
-[Dasharo Entry Subscription for Desktop](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/).
+`Dasharo Heads Subscription for Desktop`.
 With this subscription, you will get access to the
 [Transition from Dasharo UEFI to Heads variant](#transition-from-dasharo-uefi-to-heads-variant)
 feature in Dasharo Tools Suite and support from Dasharo directly via Matrix.
