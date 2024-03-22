@@ -692,14 +692,10 @@ Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
 
 #### Run DTS using VentoyOS
 
-Starting from version v1.1.1, we provide also an ISO formatted image. Thanks to
-that, it can be used with VentoyOS[1]. As for now the following limitations are
-known.
-
-* VentoyOS needs to be started in UEFI mode.
-* Nothing can be saved on root file system, as VentoyOS boots systems in
-  read-only mode.
-
-Please let us know if you started DTS using VentoyOS and have additional
-information for us. You can share them on [Dasharo Matrix
-Workspace](https://matrix.to/#/#dasharo:matrix.org).
+The functionality of DTS is closely linked to the capability of writing files to
+the root file system. However, utilizing VentoyOS for booting enables read-only
+operating systems. Consequently, we have stopped including ISO images in DTS
+releases since v1.2.20, pending resolution of this issue. We will reintroduce
+them once we determine the appropriate course of action to address this
+dependency. Progress on this matter is being monitored through issue
+[288](https://github.com/Dasharo/dasharo-issues/issues/288).
