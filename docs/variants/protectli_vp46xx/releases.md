@@ -14,6 +14,81 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
 
+## v1.2.0 - 2024-03-25
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=2016830329).
+
+### Added
+
+- [Setup menu password configuration](https://docs.dasharo.com/dasharo-menu-docs/overview/#dasharo-menu-guides)
+- [Serial port console redirection option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#serial-port-configuration)
+- [Customizable Serial Number and UUID via CBFS support](https://github.com/Dasharo/dcu)
+- [Customizable boot logo support](https://github.com/Dasharo/dcu)
+- [Support for taking screenshots in the firmware](https://docs.dasharo.com/dev-proc/screenshots/#taking-screenshots)
+- [ESP partition scanning in look for grubx64.efi or shimx64.efi or Windows bootmgr](https://github.com/Dasharo/dasharo-issues/issues/94)
+- Microsoft and Windows 2023 UEFI Secure Boot certificates
+- UEFI 2.8 errata C compliance in EDKII fork
+
+### Changed
+
+- Rebased to coreboot 4.21
+- Enroll default UEFI Secure Boot keys on the first boot
+- [Improved UEFI Secure Boot menu user experience](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
+- Scope of reset to defaults hotkey to global in firmware setup
+- Updated microcode to the newer version; refer to SBOM section below
+- Updated ME to the newer version; refer to SBOM section below
+- Prepared unified support for v1 and v2 CPUs resulting in a single binary for
+  all 3 board variants
+
+### Fixed
+
+- [Auto Boot Time-out is reset to 0 when F9 is pressed](https://github.com/Dasharo/dasharo-issues/issues/513)
+- [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
+- [RTC time and date resetting to the coreboot build date on 29th February](https://review.coreboot.org/c/coreboot/+/80790)
+
+### Known issues
+
+- [Unexpected errors in dmesg on VP4670 v2 with 1.2.0](https://github.com/Dasharo/dasharo-issues/issues/746)
+- [Maximum reported frequency is base frequency, not turbo frequency (Windows 11)](https://github.com/Dasharo/dasharo-issues/issues/522)
+- [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
+- [DisplayPort output does not work with 16:10 (1920x1200) monitors](https://github.com/Dasharo/dasharo-issues/issues/531)
+
+### Binaries
+
+[protectli_vp46xx_v1.2.0.rom][protectli_vp46xx_v1.2.0.rom_file]{.md-button}
+[sha256][protectli_vp46xx_v1.2.0.rom_hash]{.md-button}
+[sha256.sig][protectli_vp46xx_v1.2.0.rom_sig]{.md-button}
+
+[protectli_vp46xx_v1.2.0_dev_signed.rom][protectli_vp46xx_v1.2.0_dev_signed.rom_file]{.md-button}
+[sha256][protectli_vp46xx_v1.2.0_dev_signed.rom_hash]{.md-button}
+[sha256.sig][protectli_vp46xx_v1.2.0_dev_signed.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.2.x-for-protectli-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 4.21 revision add9d720](https://github.com/Dasharo/coreboot/tree/add9d720)
+- [Dasharo EDKII fork based on edk2-stable202002 revision 2a15268b](https://github.com/Dasharo/edk2/tree/2a15268b)
+- [iPXE based on 2023.12 revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
+- [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
+- [Intel Management Engine based on v14.0.47.1558 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/protectli/vault_cml/me.bin)
+- [Intel Flash Descriptor based on v1.0 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/protectli/vault_cml/descriptor.bin)
+- [Intel Firmware Support Package based on CometLake1 9.0.7B.20 revision 481ea7cf](https://github.com/intel/FSP/tree/481ea7cf/CometLakeFspBinPkg/CometLake1)
+- [Intel Firmware Support Package based on CometLake2 9.2.7B.20 revision 481ea7cf](https://github.com/intel/FSP/tree/481ea7cf/CometLakeFspBinPkg/CometLake2)
+- [Intel microcode based on CML-U42 V0 0x000000f8 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-8e-0c)
+- [Intel microcode based on CML-U62 V1 A0 0x000000f8 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-a6-00)
+- [Intel microcode based on CML-U62 V2 K1 0x000000f8 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-a6-01)
+
+[protectli_vp46xx_v1.2.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.2.0/protectli_vp46xx_v1.2.0.rom
+[protectli_vp46xx_v1.2.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.2.0/protectli_vp46xx_v1.2.0.rom.sha256
+[protectli_vp46xx_v1.2.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.2.0/protectli_vp46xx_v1.2.0.rom.sha256.sig
+[protectli_vp46xx_v1.2.0_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.2.0/protectli_vp46xx_v1.2.0_dev_signed.rom
+[protectli_vp46xx_v1.2.0_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.2.0/protectli_vp46xx_v1.2.0_dev_signed.rom.sha256
+[protectli_vp46xx_v1.2.0_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.2.0/protectli_vp46xx_v1.2.0_dev_signed.rom.sha256.sig
+
 ## v1.1.0 - 2023-06-05
 
 Release version v1.1.0 is currently only available for the VP4670 platform.
