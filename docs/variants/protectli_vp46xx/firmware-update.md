@@ -33,6 +33,15 @@ lock and Secure Boot:
 
 The settings of all the above options can be restored after a firmware update.
 
+## Updating to Dasharo v1.2.0
+
+Due to the major changes, such as ME update, and firmware layout adjustments
+(to store the boot logo), flashing of the whole firmware is required:
+
+```shell
+flashrom -p internal -w protectli_vp46xx_v1.2.0.rom
+```
+
 ## Updating to Dasharo v1.0.18 or v1.0.19 or v1.1.0
 
 From v1.0.18 Dasharo firmware is rebased on the more up-to-date revision of
