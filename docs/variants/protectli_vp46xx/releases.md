@@ -14,10 +14,10 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
 
-## v1.2.0 - 2024-03-13
+## v1.2.0 - 2024-03-25
 
 Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=1613384145).
+[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=2016830329).
 
 ### Added
 
@@ -46,6 +46,13 @@ Test results for this release can be found
 - [Auto Boot Time-out is reset to 0 when F9 is pressed](https://github.com/Dasharo/dasharo-issues/issues/513)
 - [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
 - [RTC time and date resetting to the coreboot build date on 29th February](https://review.coreboot.org/c/coreboot/+/80790)
+
+### Known issues
+
+- [Unexpected errors in dmesg on VP4670 v2 with 1.2.0](https://github.com/Dasharo/dasharo-issues/issues/746)
+- [Maximum reported frequency is base frequency, not turbo frequency (Windows 11)](https://github.com/Dasharo/dasharo-issues/issues/522)
+- [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
+- [DisplayPort output does not work with 16:10 (1920x1200) monitors](https://github.com/Dasharo/dasharo-issues/issues/531)
 
 ### Binaries
 
