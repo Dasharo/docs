@@ -39,4 +39,22 @@ chat](https://matrix.to/#/#dasharo:matrix.org).
 
 ## References
 
+* [Releases UEFI](releases_uefi.md) - groups information about all UEFI firmware
+  variant releases.
+* [Releases SeaBIOS](releases_seabios.md) - groups information about all SeaBIOS
+  firmware variant releases.
+* [Building manual](building-manual.md) - describes how to build Dasharo for
+  PC Engines apu2 series platform.
+* [Initial deployment](initial-deployment.md) - describes initial Dasharo
+  deployment methods (i. e. flashing new firmware) for PC Engines apu2 series
+  platform.
+* [Firmware update](firmware-update.md) - explains supported Dasharo
+  open-source firmware update methods.
+* [Recovery](recovery.md) - gathers information on how to recover the platform
+  from potential failure.
+* [Hardware configuration matrix](hardware-matrix.md) - describes the
+  platform's hardware configuration used during the Dasharo firmware
+  validation procedure.
+* [Test matrix](test-matrix.md) - describes validation scope used during
+  Dasharo firmware validation procedure.
 * [Post-EOL firmware announcement](post-eol-fw-announcement.md)
