@@ -8,13 +8,13 @@ documentation.
 The update process may be different, depending on the currently installed
 Dasharo firmware version.
 
-For simplicity of the update process, we recommend using
-[Dasharo Tools Suite](../../dasharo-tools-suite/overview.md).
+We recommend [Dasharo Tools Suite](../../dasharo-tools-suite/overview.md), but
+if you really want to do this manually please follow guide below.
 
-Before updating, ensure the SPI flash WP pin is not active (BIOS write protect
-pin jumper on J3).
+Before updating, ensure the SPI flash WP pin is not active - BIOS write
+protect pin jumper on J2 (apu2) or J3 (apu3/4/6).
 
-=== "UEFI firmware"
+=== "(coreboot+UEFI) firmware"
 
     Additionally, before starting the update procedure be sure to disable Secure Boot:
 
@@ -31,7 +31,7 @@ pin jumper on J3).
 
     The settings of all the above options can be restored after a firmware update.
 
-=== "SeaBIOS firmware"
+=== "(coreboot+SeaBIOS) firmware"
 
     No additional steps required.
 
