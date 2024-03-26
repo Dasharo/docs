@@ -9,9 +9,9 @@ coreboot port on the Protectli VP2420 firewall.
 
 | Component              | Description                                              |
 |------------------------|----------------------------------------------------------|
-| **CPU**                | Intel(R) Celeron(R) J6412 @ 2.60GHz                      |
-| **RAM**                | KINGSTON KVR29S21S8/16                                   |
-| **Flash memory**       | Macronix KH25L12835F                                     |
+| **CPU**                | Intel(R) Celeron(R) J6412 @ 2.00GHz                      |
+| **RAM**                | KINGSTON KVR29S21S6/8                                    |
+| **Flash memory**       | Macronix MX25U6435E/F                                    |
 | **SSD**                | 1. SSD Samsung 860 EVO M.2 NZ-N6E250 250GB               |
 |                        | 2. SSDPR-CL100-240-g2                                    |
 | **MMC drive**          | SAMSUNG 8GTF4R (on-board)                                |
