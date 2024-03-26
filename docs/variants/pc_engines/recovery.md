@@ -25,8 +25,35 @@ To prepare the stand for flashing follow the steps described below:
    [SPI header](../../transparent-validation/rte/v1.1.0/specification.md)
    on RTE.
 
+=== "apu2"
+
+    | SPI header | J6 pin header |
+    |:----------:|:-------------:|
+    | Vcc        | pin 1 (Vcc)   |
+    | GND        | pin 2 (GND)   |
+    | CS         | pin 3 (CS)    |
+    | SCLK       | pin 4 (CLK)   |
+    | MISO       | pin 5 (MISO)  |
+    | MOSI       | pin 6 (MOSI)  |
+
+    ```txt
+                    J6
+                  ______
+              >  |      |
+     Vcc 3.3V  ----1  2----  GND
+                 |      |
+           CS  ----3  4----  CLK
+                 |      |
+         MISO  ----5  6----  MOSI
+                 |      |
+            X  ----7  8----  X
+                 |______|
+    ```
+
+=== "apu3/4"
+
     | SPI header | J9 pin header |
-    |:----------:|:- -----------:|
+    |:----------:|:-------------:|
     | Vcc        | pin 1 (Vcc)   |
     | GND        | pin 2 (GND)   |
     | CS         | pin 3 (CS)    |
@@ -40,9 +67,36 @@ To prepare the stand for flashing follow the steps described below:
               >  |      |
      Vcc 3.3V  ----1  2----  GND
                  |      |
-         CS  ----3    4----  CLK
+           CS  ----3  4----  CLK
                  |      |
          MISO  ----5  6----  MOSI
+                 |      |
+            X  ----7  8----  X
+                 |______|
+    ```
+
+=== "apu6"
+
+    | SPI header | J10 pin header |
+    |:----------:|:--------------:|
+    | Vcc        | pin 1 (Vcc)    |
+    | GND        | pin 2 (GND)    |
+    | CS         | pin 3 (CS)     |
+    | SCLK       | pin 4 (CLK)    |
+    | MISO       | pin 5 (MISO)   |
+    | MOSI       | pin 6 (MOSI)   |
+
+    ```txt
+                   J10
+                  ______
+              >  |      |
+     Vcc 3.3V  ----1  2----  GND
+                 |      |
+           CS  ----3  4----  CLK
+                 |      |
+         MISO  ----5  6----  MOSI
+                 |      |
+            X  ----7  8----  X
                  |______|
     ```
 
@@ -92,8 +146,9 @@ take much longer than standard.
 ## Recovery with spi1a dongle
 
 1. Power off the platform.
-2. Plug the spi1a into J9 header on apu, so that the thick white line on the
-   dongle matches the thick line printed on board near J9 header.
+2. Plug the spi1a into J6 (apu2) / J9 (apu3/4) / J10 (apu6) header, so that
+   the thick white line on the dongle matches the thick line printed on board
+   near J6 (apu2) / J9 (apu3/4) / J10 (apu6) header.
 3. Power on the platform.
 4. Boot to operating system, e.g. Dasharo Tools Suite.
 5. Remove the dongle.
