@@ -304,7 +304,14 @@ nav:
           - 'FAQ': variants/supermicro_x11_lga1151_series/faq.md
       - 'PC Engines':
           - 'Overview': variants/pc_engines/overview.md
-          - 'Hardware Matrix': variants/pc_engines/hardware-matrix.md
+          - 'Releases (coreboot+UEFI)': variants/pc_engines/releases_uefi.md
+          - 'Releases (coreboot+SeaBIOS)': variants/pc_engines/releases_seabios.md
+          - 'Building manual': variants/pc_engines/building-manual.md
+          - 'Initial deployment': variants/pc_engines/initial-deployment.md
+          - 'Firmware update': variants/pc_engines/firmware-update.md
+          - 'Recovery': variants/pc_engines/recovery.md
+          - 'Hardware Configuration Matrix': variants/pc_engines/hardware-matrix.md
+          - 'Test matrix': variants/pc_engines/test-matrix.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
