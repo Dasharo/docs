@@ -14,7 +14,7 @@ apu2 series platform.
 
 ## Build Dasharo firmware
 
-=== "UEFI firmware"
+=== "(coreboot+UEFI) firmware"
 
     1. Clone the coreboot repository:
 
@@ -51,6 +51,6 @@ apu2 series platform.
     `pcengines_apuX_v0.9.rom`, `protectli_V1410.rom` or `protectli_V1610.rom`
     respectvely.
 
-=== "SeaBIOS firmware"
+=== "(coreboot+SeaBIOS) firmware"
 
-    Work in progress
+    [Work in progress](https://github.com/Dasharo/dasharo-issues/milestone/28)
