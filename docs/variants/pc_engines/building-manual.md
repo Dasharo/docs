@@ -3,7 +3,7 @@
 ## Intro
 
 This document describes the procedure for compiling Dasharo for PC Engines
-apu2 series platform.
+apu2/3/4/6 platform.
 
 ## Requirements
 
