@@ -1,7 +1,7 @@
 # Release Notes
 
-Following Release Notes describe status of Dasharo UEFI variant of open-source
-firmware development for PC Engines apu2/3/4/6 platform.
+Following Release Notes describe status of Dasharo (coreboot+UEFI) variant of
+open-source firmware development for PC Engines apu2/3/4/6 platform.
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
