@@ -14,7 +14,8 @@ Twonkie can be bought in [3mdeb shop](https://shop.3mdeb.com/shop/open-source-ha
 Links:
 
 - [Project page](https://github.com/dojoe/Twonkie)
-- [Original Twinkie documentation](https://www.chromium.org/chromium-os/twinkie/)
+- [Original Twinkie
+  documentation](https://web.archive.org/web/20231229025710/https://www.chromium.org/chromium-os/twinkie/)
 
 ## Setup
 
