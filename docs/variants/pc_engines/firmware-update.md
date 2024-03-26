@@ -11,7 +11,7 @@ Dasharo firmware version.
 For simplicity of the update process, we recommend using
 [Dasharo Tools Suite](../../dasharo-tools-suite/overview.md).
 
-Before updating, ensure the SPI flash WP pin is not active (BISO write protect
+Before updating, ensure the SPI flash WP pin is not active (BIOS write protect
 pin jumper on J3).
 
 === "UEFI firmware"
