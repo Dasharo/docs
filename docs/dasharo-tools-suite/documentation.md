@@ -692,10 +692,12 @@ Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
 
 #### Run DTS using VentoyOS
 
-The functionality of DTS is closely linked to the capability of writing files to
-the root file system. However, utilizing VentoyOS for booting enables read-only
-operating systems. Consequently, we have stopped including ISO images in DTS
-releases since v1.2.20, pending resolution of this issue. We will reintroduce
-them once we determine the appropriate course of action to address this
-dependency. Progress on this matter is being monitored through issue
+VentoyOS allows operating systems to be booted from ISO files. Unfortunately,
+the ISO-formatted DTS image we've provided so far mounted the main file system
+in read-only mode, which, combined with the fact that most of DTS' functionality
+is strictly tied to the ability to write files there, made the system unusable.
+Consequently, we have stopped including ISO images in DTS releases since
+v1.2.20, pending the resolution of this issue. We will reintroduce them once we
+determine the appropriate action to address this dependency. Progress on this
+matter is being monitored through issue
 [288](https://github.com/Dasharo/dasharo-issues/issues/288).
