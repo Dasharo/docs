@@ -44,9 +44,9 @@ chat](https://matrix.to/#/#dasharo:matrix.org).
 * [Releases SeaBIOS](releases_seabios.md) - groups information about all SeaBIOS
   firmware variant releases.
 * [Building manual](building-manual.md) - describes how to build Dasharo for
-  PC Engines apu2 series platform.
+  PC Engines apu2/3/4/6 platform.
 * [Initial deployment](initial-deployment.md) - describes initial Dasharo
-  deployment methods (i. e. flashing new firmware) for PC Engines apu2 series
+  deployment methods (i. e. flashing new firmware) for PC Engines apu2/3/4/6
   platform.
 * [Firmware update](firmware-update.md) - explains supported Dasharo
   open-source firmware update methods.
