@@ -544,6 +544,32 @@ New value is 0x8b.
 SPI Configuration is locked down
 ```
 
+#### Update issues
+
+If you see the following pop-ups during the first boot after the update:
+
+![error-0x03](./images/error-0x03.png)
+![error-0x13](./images/error-0x13.png)
+
+You probably performed an update using a deprecated version of Dasharo Tools
+Suite and have not disabled BIOS lock. Do not worry, nothing bad has happened.
+If you backed up your old firmware, do the following steps:
+
+1. Reboot your device and turn off BIOS lock (you can find this option in
+[Dasharo Security
+Options](../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
+as `BIOS boot medium lock`).
+1. Boot the DTS you backed up your old firmware with and choose option 3, which
+will restore it.
+1. After restoring the firmware, perform another update, but make sure you are
+using the [latest Dasharo Tools Suite
+version](https://github.com/Dasharo/meta-dts/releases/latest) (new DTS has tools
+to protect you from such issues).
+
+If you used `flashrom` as described in [Local firmware
+update](#local-firmware-update), flash the firmware again, but make sure the
+BIOS lock is turned off this time.
+
 ### EC transition
 
 DTS allows performing full Embedded Controller firmware transition from the
