@@ -24,7 +24,21 @@ Thank you for using Dasharo Tools Suite. If you have encountered any problems
 with this system or would like to provide feedback for us - please open an issue
 on [Dasharo
 issues](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aopen+is%3Aissue+label%3ADasharoToolsSuite).
+Dasharo Tools Suite has its own label: `DasharoToolsSuite` and [issue
+template](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml)
+for bugs. Other types of issues in the repository are generic and can be used
+with the `DasharoToolsSuite` label.
 
 And if you have already used this system and would be interested in supporting
 the project, please check the
 [How to support us?](../osf-trivia-list/dts.md#how-to-support-us) section.
+
+### Gathering additional information and providing logs
+
+It is not always possible to copy/paste logs from DTS. In such cases, photos or
+screenshots are also acceptable. Just imagine you are a professional
+photographer trying to capture another natural miracle in the best quality
+possible.
+
+But remember that your privacy is on the first place. Do not share sensitive
+information.
