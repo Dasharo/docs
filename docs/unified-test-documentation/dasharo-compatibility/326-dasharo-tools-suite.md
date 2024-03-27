@@ -339,7 +339,7 @@ firmware by using the built-in script in DTS.
 **Test description**
 
 This test aims to verify whether there is the possibility to update the DUT EC
-firmware by using system76_ectool in DTS.
+firmware by using dasharo_ectool in DTS.
 
 **Test configuration data**
 

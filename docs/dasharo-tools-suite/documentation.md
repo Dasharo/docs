@@ -564,7 +564,7 @@ version. This is how we can achieve that.
 * Retrieve information about your current EC.
 
   ```bash
-  system76_ectool info
+  dasharo_ectool info
   ```
 
   The output of the above-described command should contain information about
@@ -581,7 +581,7 @@ version. This is how we can achieve that.
 * Flash Embedded Controller firmware internally.
 
   ```bash
-  system76_ectool flash ec_file.rom
+  dasharo_ectool flash ec_file.rom
   ```
 
   The output of the above-described command should look as follows:
@@ -612,7 +612,7 @@ version. This is how we can achieve that.
 * Retrieve information about your updated EC.
 
   ```bash
-  system76_ectool info
+  dasharo_ectool info
   ```
 
   The output of the above-described command should contain information about
