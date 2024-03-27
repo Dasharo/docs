@@ -59,7 +59,7 @@ pins according to the following table:
 
 | RTE       | MinnowBoard |
 |:---------:|:-----------:|
-| J11 Pin 6 | J5 Pin 1    |
+| J11 Pin 9 | J5 Pin 1    |
 | J15 GND   | J5 Pin 2    |
 
 The power state can be controlled with the `osfv_cli` script:
