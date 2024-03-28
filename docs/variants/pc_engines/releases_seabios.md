@@ -11,8 +11,10 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
+<!--
 Test results for this platform can be found
 [here](TBD).
+-->
 
 COMING SOON
 
