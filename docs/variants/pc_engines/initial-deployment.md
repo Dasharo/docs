@@ -10,7 +10,9 @@ Switching from BIOS to UEFI-based firmware might cause compatibility issues if
 you already had an operating system installed on your platform. Some OSs can
 handle the switch without any issues, while others may need to be reinstalled.
 We have tested the update on several operating systems. The results are
-presented in the table below:
+available in the [test results
+spreadsheet](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1670191276)
+and in the table below:
 
 | OS | Can be booted from UEFI  |
 |----|------------------------- |
@@ -31,9 +33,8 @@ to omit all compilation steps and deploy the Dasharo firmware seamlessly.
 ## Build flashrom
 
 Please follow generic guide for [flashrom
-building](https://www.flashrom.org/dev_guide/building_from_source.html).
-
-Or install it from the OS' package manager (minim supported version is v1.0).
+building](https://www.flashrom.org/dev_guide/building_from_source.html), or
+install it from the OS' package manager (minimum supported version is v1.0).
 
 ## Reading flash contents
 
