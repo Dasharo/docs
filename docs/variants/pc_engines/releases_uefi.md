@@ -33,7 +33,7 @@ Test results for this platform can be found
 
 ### Known issues
 
-- [TPMCMD007.002 CREATELOADED Function (Ubuntu 22.04) don't work](https://github.com/Dasharo/open-source-firmware-validation/issues/217)
+- [TPMCMD007.002 CREATELOADED Function (Ubuntu 22.04) doesn't work](https://github.com/Dasharo/open-source-firmware-validation/issues/217)
 - [Firmware boot time reported by systemd-analyze is too high](https://github.com/Dasharo/dasharo-issues/issues/761)
 
 ### Binaries
