@@ -315,6 +315,7 @@ nav:
           - 'Test matrix': variants/pc_engines/test-matrix.md
           - 'Openness score': variants/pc_engines/openness_score.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
+          - 'Firmware write protection': variants/pc_engines/bios-lock.md
       - 'MinnowBoard Turbot':
           - 'Lab assembly guide': variants/minnowboard-turbot/lab-assembly.md
 # - 'Development Environment':
