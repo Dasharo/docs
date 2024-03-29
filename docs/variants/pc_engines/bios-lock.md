@@ -1,6 +1,6 @@
 # BIOS Lock
 
-This document describes the firmware write-protect functionality integrated
+This document describes the firmware write protect functionality integrated
 into Dasharo (coreboot + UEFI) firmware for PC Engines platforms.
 
 ## Implementation
@@ -9,7 +9,7 @@ The option `Lock the BIOS Boot Medium` controls the flash protection feature
 of the BIOS boot flash. If enabled, pins 1-2 on header J2 (apu2) / J3 (apu3,4,6)
 can be shorted to prevent writes to the BIOS bootblock and recovery regions.
 
-When the option is enabled and the WP header is set, firmware write-protection
+When the option is enabled and the WP header is set, firmware write protection
 **cannot** be disabled until the header is physically unshorted, even by
 disabling the lock in the UEFI setup menu.
 
@@ -29,7 +29,7 @@ To enable BIOS write protection:
 - Power off the platform
 - Bridge pins 1 and 2 on header J2 (apu2) / J3 (apu3,4,6)
 
-The firmware is now write-protected. Protection is guaranteed as long as the
+The firmware is now write protected. Protection is guaranteed as long as the
 jumper is set.
 
 ## Disabling BIOS Write Protection
