@@ -312,7 +312,6 @@ nav:
           - 'Firmware update': variants/pc_engines/firmware-update.md
           - 'Recovery': variants/pc_engines/recovery.md
           - 'Hardware Configuration Matrix': variants/pc_engines/hardware-matrix.md
-          - 'Test matrix': variants/pc_engines/test-matrix.md
           - 'Openness score': variants/pc_engines/openness_score.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
           - 'Firmware write protection': variants/pc_engines/bios-lock.md
