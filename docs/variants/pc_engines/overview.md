@@ -53,8 +53,7 @@ chat](https://matrix.to/#/#dasharo:matrix.org).
 * [Recovery](recovery.md) - gathers information on how to recover the platform
   from potential failure.
 * [Hardware configuration matrix](hardware-matrix.md) - describes the
-  platform's hardware configuration used during the Dasharo firmware
-  validation procedure.
-* [Test matrix](test-matrix.md) - describes validation scope used during
-  Dasharo firmware validation procedure.
+  hardware configuration of platforms used during validation.
+* [Test matrix](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1670191276)
+  \- describes the scope of firmware validation.
 * [Post-EOL firmware announcement](post-eol-fw-announcement.md)
