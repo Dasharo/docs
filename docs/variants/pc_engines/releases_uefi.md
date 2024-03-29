@@ -35,6 +35,8 @@ Test results for this platform can be found
 
 - [TPMCMD007.002 CREATELOADED Function (Ubuntu 22.04) doesn't work](https://github.com/Dasharo/open-source-firmware-validation/issues/217)
 - [Firmware boot time reported by systemd-analyze is too high](https://github.com/Dasharo/dasharo-issues/issues/761)
+- [BIOS Lock does not work as expected](https://github.com/Dasharo/dasharo-issues/issues/754)
+- [CBMEM buffer too small to fill full boot log](https://github.com/Dasharo/dasharo-issues/issues/753)
 
 ### Binaries
 
