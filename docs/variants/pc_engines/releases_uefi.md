@@ -48,27 +48,27 @@ Test results for this platform can be found
 
 [sha256][pcengines_apu3_v0.9.0.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu3_v0.9.0.rom_sig]{.md-button}
-(pcengines_apu2_v0.9.0.rom)
+(pcengines_apu3_v0.9.0.rom)
 
 [sha256][pcengines_apu3_v0.9.0_dev_signed.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu3_v0.9.0_dev_signed.rom_sig]{.md-button}
-(pcengines_apu2_v0.9.0_dev_signed.rom)
+(pcengines_apu3_v0.9.0_dev_signed.rom)
 
 [sha256][pcengines_apu4_v0.9.0.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu4_v0.9.0.rom_sig]{.md-button}
-(pcengines_apu2_v0.9.0.rom)
+(pcengines_apu4_v0.9.0.rom)
 
 [sha256][pcengines_apu4_v0.9.0_dev_signed.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu4_v0.9.0_dev_signed.rom_sig]{.md-button}
-(pcengines_apu2_v0.9.0_dev_signed.rom)
+(pcengines_apu4_v0.9.0_dev_signed.rom)
 
 [sha256][pcengines_apu6_v0.9.0.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu6_v0.9.0.rom_sig]{.md-button}
-(pcengines_apu2_v0.9.0.rom)
+(pcengines_apu6_v0.9.0.rom)
 
 [sha256][pcengines_apu6_v0.9.0_dev_signed.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu6_v0.9.0_dev_signed.rom_sig]{.md-button}
-(pcengines_apu2_v0.9.0_dev_signed.rom)
+(pcengines_apu6_v0.9.0_dev_signed.rom)
 
 This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
 binaries you will have to
