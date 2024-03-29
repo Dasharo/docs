@@ -14,7 +14,7 @@ presented in the table below:
 
 | OS | Can be booted from UEFI  |
 |----|------------------------- |
-| Ubuntu | :heavy_check_mark:   |
+| Ubuntu | :x:   |
 | OPNSense | :heavy_check_mark: |
 | pfSense | :x:                 |
 | OpenWrt | Depends[^1]         |
