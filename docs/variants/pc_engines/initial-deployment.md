@@ -28,15 +28,31 @@ with the internal programmer.
 
 For simplicity we recommend using [Dasharo Tools
 Suite](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
-to omit all compilation steps and deploy the Dasharo firmware seamlessly.
+to omit all manual compilation and flashing steps, and deploy Dasharo
+seamlessly.
 
-## Build flashrom
+- Ensure [Firmware Write Protection](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bios-wp-option)
+  is disabled in sortbootorder
+- [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
+- Enter your DES subscription credentials
+- Select `Install Dasharo firmware` to check for updates
+- When asked to select your firmware branch, select DES
+
+When the deployment is finished, your apu will reboot into Dasharo
+automatically.
+
+## Manual installation
+
+The steps below describe the process of manual installation of Dasharo on your
+apu.
+
+### Build flashrom
 
 Please follow generic guide for [flashrom
 building](https://www.flashrom.org/dev_guide/building_from_source.html), or
 install it from the OS' package manager (minimum supported version is v1.0).
 
-## Reading flash contents
+### Reading flash contents
 
 Always prepare a backup of the current firmware image. If you are using DTS,
 the backup will be made automatically with [HCL
@@ -48,7 +64,7 @@ the following command:
 flashrom -p internal -r dump.rom
 ```
 
-## Flashing Dasharo
+### Flashing Dasharo
 
 To flash Dasharo on the platform, execute the following command - replace
 `<variant>` with the APU variant (2, 3, 4 or 6) and `<version>` with the
