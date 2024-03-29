@@ -314,6 +314,7 @@ nav:
           - 'Test matrix': variants/pc_engines/test-matrix.md
           - 'Openness score': variants/pc_engines/openness_score.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
+          - 'Firmware write protection': variants/pc_engines/bios-lock.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
