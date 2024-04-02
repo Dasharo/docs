@@ -199,15 +199,19 @@ micro USB-USB converter is used to connect the DUT with RTE.
     [  164.136255] usb 8-1: f81232 converter now attached to ttyUSB0
     ```
 
-1. Then use vim to modify settings in `/etc/ser2net.conf` according to the port
+1. Then use vim to modify settings in `/etc/ser2net.yaml` according to the port
    received from the `dmesg -w` command, in this case(`ttyUSB0`):
 
     ```sh
-    13541:telnet:1200:/dev/ttyUSB0:115200 8DATABITS NONE 1STOPBIT
+    connection: &con1
+        accepter: telnet, tcp, 13541
+        connector: serialdev, /dev/ttyUSB0, 115200n81, local
     ```
 
     ```sh
-    13542:telnet:1200:/dev/debug_uart_converter:115200 8DATABITS NONE 1STOPBIT
+    connection: &con2
+        accepter: telnet, tcp, 13542
+        connector: serialdev, /dev/debug_uart_converter, 115200n81, local
     ```
 
 1. Check access to the DUT using the `telnet <IP> <port>` command.
