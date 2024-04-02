@@ -216,6 +216,28 @@ micro USB-USB converter is used to connect the DUT with RTE.
 
 1. Check access to the DUT using the `telnet <IP> <port>` command.
 
+In case you have multiple ttyUSB devices, you may want to assign persistent
+names to them. In that case you need to define udev rules that will create the
+device nodes. Create them in `/etc/udev/rules.d/51-usb-converters.rules`:
+
+```sh
+SUBSYSTEM=="tty" ACTION=="add", ATTRS{idVendor}==<vid>, ATTRS{idProduct}==<pid>, SYMLINK+="debug_uart_converter_<name>"
+```
+
+Replace `<vid>` and `<pid>` with the converter's vendor ID and product ID.
+
+Then, specify the name in `ser2net` config:
+
+```yaml
+connection: &con3
+  accepter: telnet, tcp, <port>
+  connector: serialdev, /dev/debug_uart_converter_<name>, 115200n81, local
+```
+
+You may need to change `&con3` to another number, if 3 is already taken.
+
+After making the changes you should reboot the platform.
+
 In case it is not possible to read the device via serial, set up PiKVM and
 properly connect to the platform. PiKVM setup documentation can be found
 [here](https://docs.dasharo.com/transparent-validation/pikvm/assembly-and-validation/).
