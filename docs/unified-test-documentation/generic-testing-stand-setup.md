@@ -199,18 +199,49 @@ micro USB-USB converter is used to connect the DUT with RTE.
     [  164.136255] usb 8-1: f81232 converter now attached to ttyUSB0
     ```
 
-1. Then use vim to modify settings in `/etc/ser2net.conf` according to the port
+1. Then use vim to modify settings in `/etc/ser2net.yaml` according to the port
    received from the `dmesg -w` command, in this case(`ttyUSB0`):
 
     ```sh
-    13541:telnet:1200:/dev/ttyUSB0:115200 8DATABITS NONE 1STOPBIT
+    connection: &con1
+        accepter: telnet, tcp, 13541
+        connector: serialdev, /dev/ttyUSB0, 115200n81, local
     ```
 
     ```sh
-    13542:telnet:1200:/dev/debug_uart_converter:115200 8DATABITS NONE 1STOPBIT
+    connection: &con2
+        accepter: telnet, tcp, 13542
+        connector: serialdev, /dev/debug_uart_converter, 115200n81, local
     ```
 
 1. Check access to the DUT using the `telnet <IP> <port>` command.
+
+In case you have multiple ttyUSB devices, you may want to assign persistent
+names to them. In that case you need to define udev rules that will create the
+device nodes. Create them in `/etc/udev/rules.d/51-usb-converters.rules`:
+
+```sh
+SUBSYSTEM=="tty" ACTION=="add", ATTRS{idVendor}==<vid>, ATTRS{idProduct}==<pid>, SYMLINK+="debug_uart_converter_<name>"
+```
+
+Replace `<vid>` and `<pid>` with the converter's vendor ID and product ID.
+
+Then, specify the name in `ser2net` config:
+
+```yaml
+connection: &con3
+  accepter: telnet, tcp, <port>
+  connector: serialdev, /dev/debug_uart_converter_<name>, 115200n81, local
+```
+
+You may need to change `&con3` to another number, if 3 is already taken.
+
+After making the changes you should reload udev rules and restart the `ser2net`
+service:
+
+```bash
+udevadm control --reload-rules && udevadm trigger && systemctl restart ser2net
+```
 
 In case it is not possible to read the device via serial, set up PiKVM and
 properly connect to the platform. PiKVM setup documentation can be found
