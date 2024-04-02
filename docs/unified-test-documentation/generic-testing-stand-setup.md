@@ -236,7 +236,12 @@ connection: &con3
 
 You may need to change `&con3` to another number, if 3 is already taken.
 
-After making the changes you should reboot the platform.
+After making the changes you should reload udev rules and restart the `ser2net`
+service:
+
+```bash
+udevadm control --reload-rules && udevadm trigger && systemctl restart ser2net
+```
 
 In case it is not possible to read the device via serial, set up PiKVM and
 properly connect to the platform. PiKVM setup documentation can be found
