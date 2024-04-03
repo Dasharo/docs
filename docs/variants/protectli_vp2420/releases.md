@@ -14,7 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=579117128).
 
-## v1.2.0 - 2024-03-14
+## v1.2.0 - 2024-04-03
 
 ### Added
 
@@ -58,8 +58,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.21 revision add9d720](https://github.com/Dasharo/coreboot/tree/add9d720)
-- [Dasharo EDKII fork based on edk2-stable202002 revision 2a15268b](https://github.com/Dasharo/edk2/tree/2a15268b)
+- [Dasharo coreboot fork based on 4.21 revision 7c2c79e8](https://github.com/Dasharo/coreboot/tree/7c2c79e8)
+- [Dasharo EDKII fork based on edk2-stable202002 revision ae0ce3e2](https://github.com/Dasharo/edk2/tree/ae0ce3e2)
 - [iPXE based on 2023.12 revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
 - [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
 - [Intel Management Engine based on v15.40.32.2910 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/protectli/vault_ehl/me.bin)

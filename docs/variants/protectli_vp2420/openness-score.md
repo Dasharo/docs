@@ -15,10 +15,10 @@ Closed-source code percentage: **64.7%**
 * Image size: 16777216 (0x1000000)
 * Number of regions: 26
 * Number of CBFSes: 3
-* Total open-source code size: 4804606 (0x494ffe)
+* Total open-source code size: 4806882 (0x4958e2)
 * Total closed-source code size: 8800924 (0x864a9c)
 * Total data size: 627958 (0x994f6)
-* Total empty size: 2543728 (0x26d070)
+* Total empty size: 2541452 (0x26c78c)
 
 ![](protectli_vp2420_v1.2.0.rom_openness_chart.png)
 
@@ -68,11 +68,11 @@ Closed-source code percentage: **64.7%**
 ### CBFS FW_MAIN_A
 
 * CBFS size: 3620608
-* Number of files: 14
-* Open-source files size: 2364319 (0x24139f)
+* Number of files: 13
+* Open-source files size: 2365521 (0x241851)
 * Closed-source files size: 732494 (0xb2d4e)
-* Data size: 8527 (0x214f)
-* Empty size: 515268 (0x7dcc4)
+* Data size: 8513 (0x2141)
+* Empty size: 514080 (0x7d820)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -80,29 +80,28 @@ Closed-source code percentage: **64.7%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 85648 | none | open-source |
-| fallback/ramstage | stage | 129196 | LZMA | open-source |
+| fallback/payload | simple elf | 2081638 | none | open-source |
+| fallback/romstage | stage | 85520 | none | open-source |
+| fallback/ramstage | stage | 129116 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 9759 | none | open-source |
-| fallback/postcar | stage | 59620 | none | open-source |
-| fallback/payload | simple elf | 2080096 | none | open-source |
+| fallback/postcar | stage | 59488 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 20480 | none | closed-source |
 | fspm.bin | fsp | 495616 | none | closed-source |
 | fsps.bin | fsp | 216398 | LZ4 | closed-source |
-| config | raw | 4806 | LZMA | data |
+| config | raw | 4815 | LZMA | data |
 | revision | raw | 859 | none | data |
 | build_info | raw | 103 | none | data |
 | vbt.bin | raw | 1200 | LZMA | data |
-| (empty) | null | 740 | none | empty |
-| (empty) | null | 514528 | none | empty |
+| (empty) | null | 514080 | none | empty |
 
 ### CBFS COREBOOT
 
 * CBFS size: 4161536
 * Number of files: 17
-* Open-source files size: 2440287 (0x253c5f)
+* Open-source files size: 2441361 (0x254091)
 * Closed-source files size: 732494 (0xb2d4e)
-* Data size: 8843 (0x228b)
-* Empty size: 979912 (0xef3c8)
+* Data size: 8857 (0x2299)
+* Empty size: 978824 (0xeef88)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -110,20 +109,20 @@ Closed-source code percentage: **64.7%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/romstage | stage | 85648 | none | open-source |
-| fallback/ramstage | stage | 129196 | LZMA | open-source |
+| fallback/payload | simple elf | 2081638 | none | open-source |
+| fallback/romstage | stage | 85520 | none | open-source |
+| fallback/ramstage | stage | 129116 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 9759 | none | open-source |
-| fallback/postcar | stage | 59620 | none | open-source |
-| fallback/payload | simple elf | 2080096 | none | open-source |
-| bootblock | bootblock | 75968 | none | open-source |
+| fallback/postcar | stage | 59488 | none | open-source |
+| bootblock | bootblock | 75840 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 20480 | none | closed-source |
 | fspm.bin | fsp | 495616 | none | closed-source |
 | fsps.bin | fsp | 216398 | LZ4 | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| config | raw | 4806 | LZMA | data |
+| config | raw | 4815 | LZMA | data |
 | revision | raw | 859 | none | data |
 | build_info | raw | 103 | none | data |
 | vbt.bin | raw | 1200 | LZMA | data |
-| (empty) | null | 484 | none | empty |
-| (empty) | null | 979428 | none | empty |
+| (empty) | null | 1060 | none | empty |
+| (empty) | null | 977764 | none | empty |
