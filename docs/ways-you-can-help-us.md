@@ -95,8 +95,8 @@ Dasharo firmware:
 
 Or buy the hardware including the Dasharo Entry Subscription from us, e.g.:
 
-* [MSI PRO Z690-A DDR4 motherboard with Dasharo Entry Subscription](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-motherboard/)
-* [MSI PRO Z690-A DDR4 with Dasharo Entry Subscription – Full PC Build](https://shop.3mdeb.com/shop/open-source-hardware/dasharo-compatible-with-msi-pro-z-690a-ddr4-full-pc-build/)
+* [MSI PRO Z790-P WiFi DDR5 motherboard with Dasharo Entry Subscription](https://shop.3mdeb.com/shop/dasharo-supported-hardware/msi-pro-z790-p-wifi-ddr5-motherboard-with-dasharo-entry-subscription/)
+* [MSI PRO Z790-P WiFi DDR5 with Dasharo Entry Subscription – Full PC Build](https://shop.3mdeb.com/shop/dasharo-supported-hardware/msi-pro-z790-p-wifi-ddr5-with-dasharo-entry-subscription-full-pc-build/)
 * or other platforms
 
 As a Dasharo Entry Subscription subscriber you will get:

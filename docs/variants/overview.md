@@ -23,6 +23,11 @@ open-source firmware distribution.
 
     - [PC Engines](pc_engines/post-eol-fw-announcement.md)
 
+* Available at the 3mdeb online store:
+
+    - [Dasharo Entry Subscription for Network Appliance (coreboot+UEFI)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/)
+    - [Dasharo Entry Subscription for Network Appliance Legacy (coreboot+SeaBIOS)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-legacy/)
+
 ## Laptops
 
 * Following laptops are supported under Dasharo Support Package
@@ -36,6 +41,11 @@ open-source firmware distribution.
 
     - [Tuxedo IBS15](tuxedo_ibs15/releases.md)
 
+* Available at the 3mdeb online store:
+
+    - [Dasharo Entry Subscription for Laptops (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-laptops-corebootheads/)
+    - [Dasharo Entry Subscription upgrade to coreboot+Heads for Laptops Users](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-entry-subscription-upgrade-to-corebootheads-for-desktop-and-laptops/)
+
 ## Desktop
 
 * Following desktops are supported under Dasharo Community Support
@@ -43,6 +53,12 @@ open-source firmware distribution.
     - [Dell OptiPlex](dell_optiplex/overview.md)
     - [MSI PRO Z690-A](../unified/msi/overview.md)
     - [MSI PRO Z790-P](../unified/msi/overview.md)
+
+* Available at the 3mdeb online store:
+
+    - [Dasharo Entry Subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1year-desktop/)
+    - [Dasharo Entry Subscription for Desktop MSI (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-msi-corebootheads/)
+    - [Dasharo Entry Subscription upgrade to coreboot+Heads for Desktop Users](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-entry-subscription-upgrade-to-corebootheads-for-desktop-and-laptops/)
 
 ## Workstation
 
