@@ -77,6 +77,13 @@ documentation.
 
 In practice, any Alder Lake-S Processor should work.
 
+## Is overclocking possible?
+
+With Dasharo, overclocking via BIOS setup is not possible. Overclocking
+capabilities are essentially limited to what Intel XTU can achieve on Windows.
+Additionally, RAM XMP may pose challenges, as FSP lacks the flexibility to
+properly tune the RAM training parameters.
+
 ## Which memory modules are supported?
 
 We can say the "supported" one is the one that has been tested during
