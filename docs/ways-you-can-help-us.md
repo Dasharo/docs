@@ -84,14 +84,8 @@ that works for you.
 
 ### Become a Dasharo Entry Subscription subscriber
 
-Buy the Dasharo Entry Subscription for Desktop if you own/use/buy a machine running
-Dasharo firmware:
-
-* [Dasharo (coreboot+UEFI) Entry Subscription for Desktop – 1 year](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1year-desktop/)
-* [Dasharo (coreboot+UEFI) Entry Subscription for Desktop – 2 year](https://shop.3mdeb.com/shop/dasharo-entry-subscription/2year-desktop/)
-* [Dasharo (coreboot+UEFI) Entry Subscription for Desktop – 3 year](https://shop.3mdeb.com/shop/dasharo-entry-subscription/3year-desktop/)
-
-[Link to all available subscriptions](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/)
+Buy the [Dasharo Entry Subscription](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/)
+if you own/use/buy a machine running Dasharo firmware.
 
 As a Dasharo Entry Subscription subscriber you will get:
 
@@ -106,9 +100,6 @@ As a Dasharo Entry Subscription subscriber you will get:
   news about Dasharo direction
 * Insider's view and influence on Dasharo features roadmap – you can have a
   real impact on Dasharo development
-
-If you are interested in other market segments than Desktop, please get in
-touch with us with the specific hardware model you have in mind
 
 ### PayPal
 
