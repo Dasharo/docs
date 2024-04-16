@@ -23,8 +23,9 @@ Neutralizing ME: removing non-essential portions of the ME's firmware
 - Also called "neutering"
 - Not initially designed by Intel
 
-Method discovered by Nicola Corna of the me_cleaner project
-Removes all modules other than those required for platform init
+Method discovered by Trammel Hudson and implemented by Nicola Corna in
+me_cleaner project removes all modules other than those required for platform
+init
 
 - Modules left in ME 6.0 - 10.x: `ROMP`, `BUP`
 - Modules left in ME >= 11.x: `rbe`, `kernel`, `syslib`, `bup`, sometimes
