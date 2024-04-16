@@ -41,6 +41,10 @@ seamlessly.
 When the deployment is finished, your apu will reboot into Dasharo
 automatically.
 
+The demo below shows the process of deploying Dasharo using DTS.
+
+[![asciicast](https://asciinema.org/a/654251.svg)](https://asciinema.org/a/654251)
+
 ## Manual installation
 
 The steps below describe the process of manual installation of Dasharo on your
