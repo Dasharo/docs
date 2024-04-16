@@ -25,8 +25,8 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo Entry Subscription for Network Appliance (coreboot+UEFI)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/)
-    - [Dasharo Entry Subscription for Network Appliance Legacy (coreboot+SeaBIOS)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-legacy/)
+    - [Dasharo (coreboot+UEFI) Entry Subscription for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/)
+    - [Dasharo (coreboot+SeaBIOS) Entry Subscription for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-legacy/)
 
 ## Laptops
 
@@ -43,8 +43,8 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo Entry Subscription for Laptops (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-laptops-corebootheads/)
-    - [Dasharo Entry Subscription upgrade to coreboot+Heads for Laptops Users](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-entry-subscription-upgrade-to-corebootheads-for-desktop-and-laptops/)
+    - [Dasharo (coreboot+Heads) Entry Subscription for Laptops](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-laptops-corebootheads/)
+    - [Dasharo (coreboot+UEFI) Entry Subscription for Laptops Upgrade to (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
 
 ## Desktop
 
@@ -56,9 +56,9 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo Entry Subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1year-desktop/)
-    - [Dasharo Entry Subscription for Desktop MSI (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-msi-corebootheads/)
-    - [Dasharo Entry Subscription upgrade to coreboot+Heads for Desktop Users](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-entry-subscription-upgrade-to-corebootheads-for-desktop-and-laptops/)
+    - [Dasharo (coreboot+UEFI) Entry Subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1year-desktop/)
+    - [Dasharo (coreboot+Heads) Entry Subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-msi-corebootheads/)
+    - [Dasharo (coreboot+UEFI) Entry Subscription for Desktop Upgrade to (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-entry-subscription-upgrade-to-corebootheads-for-desktop-and-laptops/)
 
 ## Workstation
 
