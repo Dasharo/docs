@@ -41,7 +41,7 @@ VP2410.
 
     > Replace `<PROTECTLI_BLOBS_REPO>` with a a proper path to the repository
     > in a form of: `git@repo-path.git`. You should checkout to the same tag as
-    > in case aof the coreboot repository.
+    > in case of the coreboot repository.
 
     ```bash
     cd 3rdparty/blobs/mainboard/
