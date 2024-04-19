@@ -275,3 +275,9 @@ sudo flashrom -p internal -w dump.rom --ifd -i bios
 NOTE: Dasharo version v0.1.0 will not have a network connection. Use a different
 USB storage or a USB to Ethernet/USB WiFi adapter to move the binary to the live
 system.
+
+## coreboot + Heads
+
+The supported method is to follow
+[initial deployment](#initial-deployment), and then the
+[Transition from Dasharo UEFI to Heads variant](/unified/msi/firmware-transition#transition-from-dasharo-uefi-to-heads-variant).
