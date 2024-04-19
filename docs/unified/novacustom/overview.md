@@ -15,8 +15,8 @@ Select your Dasharo firmware flavor:
 
         <div class="grid cards" markdown>
 
-        - [NS51 Series](https://configurelaptop.eu/ns51-series/)
-        - [NS70 Series](https://configurelaptop.eu/ns70-series/)
+        - [NS51 Series](https://configurelaptop.eu/product/ns51-series/)
+        - [NS70 Series](https://configurelaptop.eu/product/ns70-series/)
 
         </div>
 
@@ -28,7 +28,7 @@ Select your Dasharo firmware flavor:
 
         <div class="grid cards" markdown>
 
-        - [NV41 Series](https://configurelaptop.eu/nv41-series/)
+        - [NV41 Series](https://configurelaptop.eu/product/nv41-series/)
 
         </div>
 
@@ -40,8 +40,8 @@ Select your Dasharo firmware flavor:
 
         <div class="grid cards" markdown>
 
-        - [NS51 Series](https://configurelaptop.eu/ns51-series/)
-        - [NS70 Series](https://configurelaptop.eu/ns70-series/)
+        - [NS51 Series](https://configurelaptop.eu/product/ns51-series/)
+        - [NS70 Series](https://configurelaptop.eu/product/ns70-series/)
 
         </div>
 
@@ -53,7 +53,7 @@ Select your Dasharo firmware flavor:
 
         <div class="grid cards" markdown>
 
-        - [NV41 Series](https://configurelaptop.eu/nv41-series/)
+        - [NV40 Series](https://novacustom.com/product/nv40-series/)
 
         </div>
 
