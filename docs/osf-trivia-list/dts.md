@@ -32,6 +32,8 @@ our server. If successful, the message `Verification of the Dasharo DES was
 successful. They are valid and will be used.` will be displayed. Below is a
 short video that present loading DES keys.
 
+![IMG](img/des-creds.gif)
+
 ## How to support us?
 
 In general there are three ways to support us:
