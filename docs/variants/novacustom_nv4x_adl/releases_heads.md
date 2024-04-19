@@ -1,0 +1,49 @@
+# NovaCustom NV4x 12th Gen Dasharo (coreboot + heads) Release Notes
+
+Following Release Notes describe status of development of Dasharo (coreboot +
+Heads) firmware for NovaCustom NV4x 12th Gen.
+
+## v0.9.0 - 2024-02-29
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
+
+### Changed
+
+- [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- Heads Linux is used as a payload
+
+### Known issues
+
+- [Power button does not work in Qubes](https://github.com/Dasharo/dasharo-issues/issues/710)
+- [Heads shuts down instead of rebooting](https://github.com/Dasharo/dasharo-issues/issues/711)
+- [Existing Qubes installation is not found as bootable after transition back to EDK2](https://github.com/Dasharo/dasharo-issues/issues/713)
+- [Builds are not fully reproducible](https://github.com/linuxboot/heads/issues/1616)
+
+### Binaries
+
+[sha256][novacustom_nv4x_adl_v0.9.0_heads.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_adl_v0.9.0_heads.rom_sig]{.md-button}
+
+This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
+binaries you will have to
+[become the Dasharo Entry Subscription subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+You will get the access to all of the firmware updates for the duration of the
+subscription via Dasharo Entry Subscription newsletter.
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo heads fork based on v0.2.0 revision ccf49703](https://github.com/Dasharo/heads/tree/ccf49703)
+- [Dasharo coreboot fork based on 4.21 revision 3a9aa3a4](https://github.com/Dasharo/coreboot/tree/3a9aa3a4)
+- [Intel Management Engine based on v16.1.30.2307 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/novacustom/nv4x_adl/me.bin)
+- [Intel Flash Descriptor based on v1.0 revision d0b63476](https://github.com/Dasharo/dasharo-blobs/blob/d0b63476/novacustom/nv4x_adl/descriptor.bin)
+- [Intel Firmware Support Package based on ADL-P C.1.75.10 revision 481ea7cf](https://github.com/intel/FSP/tree/481ea7cf/AlderLakeFspBinPkg/Client/AlderLakeP)
+- [Intel microcode based on ADL L0/R0 0x0000042c revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-9a-04)
+- [Intel microcode based on RPL J0/Q0 0x00004119 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-ba-02)
+
+[novacustom_nv4x_adl_v0.9.0_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.0/novacustom_nv4x_adl_v0.9.0_heads.rom.sha256
+[novacustom_nv4x_adl_v0.9.0_heads.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.0/novacustom_nv4x_adl_v0.9.0_heads.rom.sha256.sig

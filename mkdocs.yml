@@ -142,8 +142,10 @@ nav:
           - 'Post-installation setup': unified/clevo/post-install.md
           - 'Features': unified/novacustom/features.md
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
+          - 'Firmare transition': unified/novacustom/firmware-transition.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
+              - 'Heads releases': variants/novacustom_nv4x_adl/releases_heads.md
               - 'Hardware Configuration Matrix': variants/novacustom_nv4x_adl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_nv4x_adl/test-matrix.md
               - 'Openness score': variants/novacustom_nv4x_adl/openness-score.md

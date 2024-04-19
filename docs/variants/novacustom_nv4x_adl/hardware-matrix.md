@@ -66,3 +66,12 @@ for the NV41 platforms.
 | **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
 [HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#nv4x-12th-gen
+
+## coreboot + heads
+
+Generally, the same hardware configuration as for the
+UEFI variant applies.
+
+A notable addition is usage of the
+[Nitrokey 3A Mini](https://novacustom.com/product/nitrokey-3a-mini/)
+USB device, which is required for Heads installation and usage.
