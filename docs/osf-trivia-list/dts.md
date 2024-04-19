@@ -19,6 +19,8 @@ Commercial use of DTS should be discussed directly with
 
 ### How can I use my Dasharo Entry Subscription credentials
 
+<!-- Need to be replaced in case the menu changed. -->
+
 After purchasing the Dasharo Entry Subscription, you should receive an email
 with keys to use with [Dasharo Tools Suite](../dasharo-tools-suite/overview.md).
 This section describes how to do it. As also mentioned in the email, the
