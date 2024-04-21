@@ -2230,6 +2230,39 @@ coreboot does not attempt to update the EC while an AC adapter is not connected.
    not proceed correctly, and asking them to reboot with an AC adapter
    connected.
 
+## ECR033.001 EC power button watchdog
+
+**Test description**
+
+This test verifies that the EC power switch watchdog feature is functional and
+can reset the EC.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+1. Attach EC debug probe to the I2C debug interface.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Hold the power button pressed for at least 10 seconds
+1. Note any messages appearing on the EC debug interface.
+
+**Expected result**
+
+1. The debug logs should contain a message indicating that the EC was reset due
+   to watchdog timeout reset, e.g.:
+
+    ```text
+    Last reset caused by PWRSW WDT Timeout!
+    ```
+
 ## SIO001.001 PS/2 mouse in OS - (Ubuntu 22.04)
 
 **Test description**
