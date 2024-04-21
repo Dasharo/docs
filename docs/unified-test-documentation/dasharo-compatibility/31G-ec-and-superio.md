@@ -2158,6 +2158,78 @@ in the charger into the DUT when the battery level sits between 95% and 98%.
     not charging
     ```
 
+## ECR031.001 EC firmware sync in coreboot
+
+**Test description**
+
+This test verifies the automatic EC firmware update / sync feature in coreboot.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+1. Downgrade to the previous firmware version (both EC and coreboot must be
+   downgraded).
+1. Keep AC adapter or USB-PD power supply connected for the duration of the
+   test.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Proceed with the firmware update steps [as documented in the firmware update
+   guide](/guides/firmware-update).
+1. Reboot the DUT after updating firmware.
+1. Wait until the DUT updates the EC (indicated by the fans spinning at full
+   speed) and powers off.
+1. Power on the DUT.
+1. Note the EC firmware version displayed on the Dasharo boot screen.
+
+**Expected result**
+
+1. The EC version displayed on the boot screen should match the expected version
+   number.
+1. There should not be a pop-up indicating that the EC update failed for any
+   reason.
+
+## ECR032.001 EC firmware sync in coreboot blocked when AC not connected
+
+**Test description**
+
+This test verifies that the automatic EC firmware update / sync feature in
+coreboot does not attempt to update the EC while an AC adapter is not connected.
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu 22.04
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+1. Downgrade to the previous firmware version (both EC and coreboot must be
+   downgraded).
+
+**Test steps**
+
+1. Power on the DUT.
+1. Proceed with the firmware update steps [as documented in the firmware update
+   guide](/guides/firmware-update).
+1. Disconnect the AC adapter, if connected.
+1. Reboot the DUT.
+1. Note the contents of the popup displayed on the Dasharo boot screen.
+
+**Expected result**
+
+1. A warning message should appear, informing the user that the EC update did
+   not proceed correctly, and asking them to reboot with an AC adapter
+   connected.
+
 ## SIO001.001 PS/2 mouse in OS - (Ubuntu 22.04)
 
 **Test description**
