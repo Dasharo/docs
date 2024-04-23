@@ -393,6 +393,8 @@ nav:
               - 'Laboratory stand assembly guide': transparent-validation/protectli/laboratory-assembly-guide.md
           - 'Supermicro X11 LGA1151 Series':
               - 'Theory of Operation': transparent-validation/supermicro_x11_lga1151_series/theory-of-operation.md
+          - 'NovaCustom laptops':
+              - 'Laboratory assembly guide': transparent-validation/novacustom/laboratory-assembly-guide.md
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
               - 'Basic validation': transparent-validation/muxpi/basic-validation.md
