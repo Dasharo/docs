@@ -140,10 +140,7 @@ nav:
           - 'Firmware update': unified/novacustom/firmware-update.md
           - 'Recovery': unified/novacustom/recovery.md
           - 'Post-installation setup': unified/clevo/post-install.md
-          - 'RGB keyboard': unified/novacustom/rgb-keyboard.md
-          - 'Fn lock hotkey': unified/novacustom/fn-lock-hotkey.md
-          - 'Battery management': unified/novacustom/battery-management.md
-          - 'Fan profiles': unified/novacustom/fan-profiles.md
+          - 'Features': unified/novacustom/features.md
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
