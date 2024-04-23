@@ -33,6 +33,10 @@ To enter Firmware Update Mode:
 Once in Firmware Update Mode, proceed with the firmware update steps outlined
 in device-specific documentation.
 
+After the firmware update is finished, the device will reboot automatically. If
+the update includes an Embedded Controller firmware update, it will be applied
+automatically after reboot and the device will reboot again.
+
 !!! tip
 
     Check out a more detailed explanation and rationale for Firmware Update Mode
