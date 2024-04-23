@@ -144,7 +144,6 @@ nav:
           - 'Fn lock hotkey': unified/novacustom/fn-lock-hotkey.md
           - 'Battery management': unified/novacustom/battery-management.md
           - 'Fan profiles': unified/novacustom/fan-profiles.md
-          - 'Firmware update using fwupd': unified/novacustom/fwupd-usage.md
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
