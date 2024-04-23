@@ -23,6 +23,10 @@ VP2410 specification:
 * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
 SATA data and power cables for internal SSD, Quick Start Guide
 
+> Starting with Dasharo [v1.2.0](releases.md#v120-2024-05-16), Intel ME
+> (Management Engine) is [soft-disabled](../../osf-trivia-list/me.md#soft-disabling-me)
+> by default.
+
 For more information please refer to the references below.
 
 ## References

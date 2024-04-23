@@ -144,7 +144,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### Changed
 
-- ME is now disabled by default (ME soft-disable)
+- ME is now disabled by default ([ME soft-disable]((../../osf-trivia-list/me.md#soft-disabling-me)))
 - vboot is now run as separate verstage (previously was run inside bootblock)
 - increased pre-RAM console buffer to fit more early cbmem logs
 
