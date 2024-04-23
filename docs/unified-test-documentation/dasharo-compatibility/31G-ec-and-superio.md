@@ -2246,7 +2246,8 @@ can reset the EC.
 
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Attach EC debug probe to the I2C debug interface.
+1. Attach [EC debugger](../../transparent-validation/ec-debugger/uart-relay.md)
+   to the DUT.
 
 **Test steps**
 
