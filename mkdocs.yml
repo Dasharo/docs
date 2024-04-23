@@ -417,6 +417,8 @@ nav:
               - 'Assembly and validation': transparent-validation/pikvm/assembly-and-validation.md
           - 'Twonkie':
               - 'Introduction': transparent-validation/twonkie/introduction.md
+          - 'EC Debugger':
+              - 'I2C to UART relay': transparent-validation/ec-debugger/uart-relay.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md
