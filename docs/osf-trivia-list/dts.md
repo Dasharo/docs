@@ -23,16 +23,24 @@ Commercial use of DTS should be discussed directly with
 
 After purchasing the Dasharo Entry Subscription, you should receive an email
 with keys to use with [Dasharo Tools Suite](../dasharo-tools-suite/overview.md).
-This section describes how to do it. As mentioned in the email, the easiest way
-to run the DTS is from a USB flash drive. Documentation on this is included
-included [here](../dasharo-tools-suite/documentation.md#bootable-usb-stick).
-After booting, you will see a text menu. Of interest here is option number 4,
-`Load your DES keys`. After selecting it, rewrite the credentials received in
-the following order: `logs key`, `firmware download key`, and `password`. After
-entering these credentials, they will be verified by attempting to connect to
-our server. If successful, the message `Verification of the Dasharo DES was
-successful. They are valid and will be used.` will be displayed. Below is a
-short video that present loading DES keys.
+This section describes how to do it.
+
+* Firstly, run DTS from a USB flash drive, documentation on this is included
+  [here](../dasharo-tools-suite/documentation.md#bootable-usb-stick).
+
+* After booting, you will see a text menu, choose option number 4,
+  `Load your DES keys`, by pressing `4` and `Enter`.
+
+* Next, rewrite the credentials received in the following order:
+    - `logs key`,
+    - `firmware download key`,
+    - `password`.
+
+* Credentials will be verified by DTS attempting to connect to our server. If
+  successful, the message `Verification of the Dasharo DES was successful. They
+  are valid and will be used.` will be displayed.
+
+Below is a short video that present loading DES keys.
 
 ![IMG](img/des-creds.gif)
 
