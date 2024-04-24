@@ -6,21 +6,21 @@ laptops.
 ## Battery charge management
 
 NovaCustom laptops equipped with Dasharo firmware provide several battery
-management mechanisms to optimize user experience and further prolong the
-battery's lifespan.
+management mechanisms to optimize the user experience and prolong the battery's
+lifespan.
 
 ### Low battery boot prevention
 
 To prevent corruption of the bootloader, which may occur due to a sudden power
 loss during the OS boot process, booting the OS is blocked when the battery
 level is below 5%. When trying to boot the OS with the battery level below the
-defined threshold, following message will be displayed on screen:
+defined threshold, the following message will be shown on the screen:
 
 ![boot_block_popup](../../images/battery_block_popup.jpg)
 
 ### Disconnected battery warning
 
-When the firmware encounters problems with detecting the battery, following
+When the firmware encounters problems with detecting the battery, the following
 message will appear suggesting checking the physical connection between the
 battery and mainboard:
 
@@ -29,7 +29,7 @@ battery and mainboard:
 ### Power information error
 
 When the firmware encounters problems with retrieving information about AC and
-battery state, following error message will be displayed:
+battery state, the following error message will be displayed:
 
 ![power_error](../../images/power_error.jpg)
 
@@ -46,12 +46,12 @@ Custom charge thresholds can be configured using the Dasharo setup menu.
 
 ## RGB keyboard
 
-Some models featuree an RGB backlit keyboard. Dasharo implements full driverless
+Some models feature an RGB backlit keyboard. Dasharo implements driverless
 backlight control using only the hotkeys on the keyboard.
 
 ### Usage
 
-The backlight can be operated using the hotkeys on the numpad:
+The backlight can be controlled using the hotkeys on the numeric keypad:
 
 - `Fn` + `/` - Next color
 - `Fn` + `*` - Toggle On / Off
@@ -135,6 +135,6 @@ Fan profiles are defined as follows:
 
 ## Power switch watchdog
 
-In the rare event the Embedded Controller experiences a crash or gets stuck,
-the EC can be forcefully reset by simply holding the power button for more than
-10 seconds.
+In the rare events where the Embedded Controller experiences a crash or gets
+stuck, the EC can be forcefully reset by simply holding the power button for
+more than 10 seconds.
