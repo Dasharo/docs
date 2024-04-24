@@ -40,16 +40,16 @@ example:
   According to the schematics, we can solder the S2 terminal of the power
   button:
 
-    ![](../images/generic_power_button.png)
+    ![A power button schematic image](images/generic_power_button.png)
 
     Let's find that terminal on the board:
 
-    ![](../images/clevo_usw1.jpg)
+    ![Photo of power button on laptop's PCB](images/clevo_usw1.jpg)
 
     Solder a jumper wire to it. Secure the solder joint using hot glue, to prevent
     the cable from falling off when pulled:
 
-    ![](../images/clevo_glue.jpg)
+    ![Power button with cable soldered in and secured with glue](images/clevo_glue.jpg)
 
     Route the cable to the outside of the laptop chassis. In this case, we'll
     route the cable under the audio board out via the fan exhaust vent:
@@ -57,29 +57,29 @@ example:
     > While there, let's also disconnect the lid switch FFC cable to prevent the
     > laptop from going to sleep automatically (visible in the top left corner)
 
-    ![](../images/clevo_cable_routing.jpg)
+    ![Routing of power button wire](images/clevo_cable_routing.jpg)
 
 * Now for the other signals, find the battery connector in the schematic:
 
-    ![](../images/generic_battery_connector.png)
+    ![Battery connector schematic](images/generic_battery_connector.png)
 
     We can see that we can take the groud signal from pins 7,8 or 9, `SMD_BAT`
     (SMBus Data) from pin 5 and `SMC_BAT` (SMBus Clock) from pin 6. Now solder the
     wires and secure them using hot glue as before:
 
-    ![](../images/clevo_smbus_routing.jpg)
+    ![Routing of SMBus wires](images/clevo_smbus_routing.jpg)
 
     We'll also need to disconnect the eDP cable that connects the internal display
     to the mainboard. This will allow us to see the firmware on a PiKVM instead of
     the internal display. Gently disconnect it and route it outside via the
     exhaust vent:
 
-    ![](../images/clevo_edp.jpg)
+    ![Disconnected eDP cable routed outside of the laptop](images/clevo_edp.jpg)
 
     Now, to be able to close the bottom cover on the laptop, you may also need to
     make modifications to the chassis:
 
-    ![](../images/clevo_chassis_cuts.jpg)
+    ![Cuts in the chassis to let wires through](images/clevo_chassis_cuts.jpg)
 
 ### Connections
 
