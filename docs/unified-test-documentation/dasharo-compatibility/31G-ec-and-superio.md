@@ -2174,7 +2174,7 @@ This test verifies the automatic EC firmware update / sync feature in coreboot.
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Downgrade to the previous firmware version (both EC and coreboot must be
-   downgraded).
+   downgraded) if needed.
 1. Keep AC adapter or USB-PD power supply connected for the duration of the
    test.
 
@@ -2213,7 +2213,7 @@ coreboot does not attempt to update the EC while an AC adapter is not connected.
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
 1. Downgrade to the previous firmware version (both EC and coreboot must be
-   downgraded).
+   downgraded) if needed.
 
 **Test steps**
 
