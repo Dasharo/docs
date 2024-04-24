@@ -17,6 +17,33 @@ buying a [Dasharo Entry Subscription](../ways-you-can-help-us.md#become-a-dashar
 Commercial use of DTS should be discussed directly with
 [3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com).
 
+### How can I use my Dasharo Entry Subscription credentials
+
+<!-- Need to be replaced in case the menu changed. -->
+
+After purchasing the Dasharo Entry Subscription, you should receive an email
+with keys to use with [Dasharo Tools Suite](../dasharo-tools-suite/overview.md).
+This section describes how to do it.
+
+* Firstly, run DTS from a USB flash drive, documentation on this is included
+  [here](../dasharo-tools-suite/documentation.md#bootable-usb-stick).
+
+* After booting, you will see a text menu, choose option number 4,
+  `Load your DES keys`, by pressing `4` and `Enter`.
+
+* Next, rewrite the credentials received in the following order:
+    - `logs key`,
+    - `firmware download key`,
+    - `password`.
+
+* Credentials will be verified by DTS attempting to connect to our server. If
+  successful, the message `Verification of the Dasharo DES was successful. They
+  are valid and will be used.` will be displayed.
+
+Below is a short video that present loading DES keys.
+
+![IMG](img/des-creds.gif)
+
 ## How to support us?
 
 In general there are three ways to support us:
