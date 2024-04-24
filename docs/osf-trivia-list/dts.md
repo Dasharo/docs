@@ -23,8 +23,8 @@ Commercial use of DTS should be discussed directly with
 
 After purchasing the Dasharo Entry Subscription, you should receive an email
 with keys to use with [Dasharo Tools Suite](../dasharo-tools-suite/overview.md).
-This section describes how to do it. As also mentioned in the email, the
-easiest way is to run DTS from a USB flash drive. Documentation on this is
+This section describes how to do it. As mentioned in the email, the easiest way
+to run the DTS is from a USB flash drive. Documentation on this is included
 included [here](../dasharo-tools-suite/documentation.md#bootable-usb-stick).
 After booting, you will see a text menu. Of interest here is option number 4,
 `Load your DES keys`. After selecting it, rewrite the credentials received in
