@@ -11,9 +11,9 @@ battery's lifespan.
 
 ### Low battery boot prevention
 
-To prevent corruption of the bootloader, which may occur due to sudden power cut
-off during the OS boot process, booting the OS is blocked when the battery level
-sits below 5%. When trying to boot the OS with the battery level below the
+To prevent corruption of the bootloader, which may occur due to a sudden power
+loss during the OS boot process, booting the OS is blocked when the battery
+level is below 5%. When trying to boot the OS with the battery level below the
 defined threshold, following message will be displayed on screen:
 
 ![boot_block_popup](../../images/battery_block_popup.jpg)
