@@ -30,7 +30,7 @@ for a demonstration of Firmware Update Mode.
 
 ### Updating older versions
 
-1. First, ensure that [UEFI Secure Boot](../../dasharo-tools-suite/documentation.md#disabling-secure-boot)
+1. First, ensure that [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration)
    has been disabled.
 
 1. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation.md#bootable-over-a-network).
