@@ -1,5 +1,5 @@
 # FAQ
-
+<!-- markdownlint-disable-next-line MD013 -->
 ## What BIOS Version can I install with my Dasharo (coreboot+SeaBIOS) Subscription on an apu2/3/4/6 motherboard?
 
 When you subscribe to a Dasharo (coreboot+SeaBIOS) Entry Subscription for
