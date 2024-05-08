@@ -25,3 +25,15 @@ Detailed information about the release, including the scope and enhancements,
 will be communicated through our release newsletter. Additionally, all release
 notes and relevant updates will be made available on the Dasharo documentation
 site at [Dasharo Release Documentation](https://docs.dasharo.com/variants/pc_engines/releases_seabios/).
+<!-- markdownlint-disable-next-line MD013 -->
+## How much would it cost me to switch my subscription for Network Appliance from already purchased (coreboot+UEFI) to (coreboot+SeaBIOS)?
+
+We can switch your subscription from [Dasharo (coreboot+UEFI) Entry Subscription
+for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/)
+to the [Dasharo (coreboot+SeaBIOS) Entry Subscription for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
+at no extra cost. This change can be made until the end of May, but only if the
+purchase was made before the official [(coreboot+UEFI) release](https://docs.dasharo.com/variants/pc_engines/releases_uefi/)
+which occurred on 2024-04-02.
+
+If you are interested, please contact us at shopping@3mdeb.com and provide your
+order number.
