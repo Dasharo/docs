@@ -219,4 +219,4 @@ value.
 [techpowerup]: <https://www.techpowerup.com/268260/hwinfos-power-reporting-deviation-sensor-reveals-how-motherboard-makers-are-cheating-ryzen-cpus>
 [tomshw]: <https://www.tomshardware.com/features/amd-ryzen-motherboard-power-cheat-testing>
 [issue173]: <https://github.com/Dasharo/dasharo-issues/issues/173#issuecomment-1213181583>
-[adl_fsp]: <https://github.com/intel/FSP/blob/master/AlderLakeFspBinPkg/Docs/AlderLake_FSP_Integration_Guide.pdf>
+[adl_fsp]: <https://github.com/intel/FSP/blob/master/RaptorLakeFspBinPkg/Docs/AlderLake_FSP_Integration_Guide.pdf>

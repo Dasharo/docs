@@ -313,6 +313,7 @@ nav:
           - 'Recovery': variants/pc_engines/recovery.md
           - 'Hardware Configuration Matrix': variants/pc_engines/hardware-matrix.md
           - 'Openness score': variants/pc_engines/openness_score.md
+          - 'FAQ': variants/pc_engines/faq.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
           - 'Firmware write protection': variants/pc_engines/bios-lock.md
       - 'MinnowBoard Turbot':
