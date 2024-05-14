@@ -158,7 +158,7 @@ nav:
               - 'Test matrix': variants/novacustom_nv4x_tgl/test-matrix.md
               - 'Openness score': variants/novacustom_nv4x_tgl/openness-score.md
               - 'LVFS report': variants/novacustom_nv4x_tgl/lvfs_report.md
-              - 'Checbox results': variants/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md
+              - 'Checkbox results': variants/novacustom_nv4x_tgl/compatibility-check-results-ubuntu.md
           - 'NS5x/7x 12th Gen':
               - 'Releases': variants/novacustom_ns5x_adl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_ns5x_adl/hardware-matrix.md
@@ -371,6 +371,7 @@ nav:
   - 'FAQ':
       - 'Introduction': osf-trivia-list/introduction.md
       - 'Dasharo': osf-trivia-list/dasharo.md
+      - 'Dasharo Entry Subscription': osf-trivia-list/dasharo-entry-subscription.md
       - 'Dasharo Tools Suite': osf-trivia-list/dts.md
       - 'Deployment': osf-trivia-list/deployment.md
       - 'Firmware build process': osf-trolling-list/build_process.md
