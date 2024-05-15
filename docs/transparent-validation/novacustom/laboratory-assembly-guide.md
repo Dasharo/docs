@@ -103,3 +103,8 @@ they have to also wear an ESD strap.
 platform, RTE and any other components are disconnected from power. This
 precautionary measure reduces the risk of electrical accidents and protects both
 the equipment and you.
+
+### USB devices
+
+Since some issues with USB controllers may only happen on select USB ports,
+it's important to plug in USB devices to both USB ports of the board.

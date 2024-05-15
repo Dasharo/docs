@@ -286,3 +286,8 @@ echo 1 > /sys/class/gpio/gpio412/value
 sleep 10
 echo 0 > /sys/class/gpio/gpio412/value
 ```
+
+### USB devices
+
+Since some issues with USB controllers may only happen on select USB ports,
+it's important to plug in USB devices to all 4 USB ports of the board.
