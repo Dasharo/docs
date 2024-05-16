@@ -12,7 +12,7 @@ For details about our release process please read
 </center>
 
 Test results for this platform can be found
-[here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit#gid=579117128).
+[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=270990532).
 
 ## v1.2.0 - 2024-05-16
 
