@@ -52,6 +52,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + CPU signature: 0x0706A1, Date: 09.06.2020, Revision: 0x34
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
-[v1.0.15_rom]: https://github.com/protectli-root/protectli-firmware-updater/raw/main/images/protectli_vp2410_DF_v1.0.15.rom
+[v1.0.15_rom]: https:/3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom
 [v1.0.15_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256
 [v1.0.15_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256.sig
