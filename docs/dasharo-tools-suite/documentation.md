@@ -587,7 +587,7 @@ firmware.
 !!! note
 
     This section only applies to NovaCustom releases earlier than v2.0.0 and is
-    obesoleted by the new automatic EC firmware sync feature.
+    replaced by the new automatic EC firmware sync feature.
 
 DTS allows to update open-source Embedded Controller firmware to the newer
 version. This is how we can achieve that.
