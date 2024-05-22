@@ -43,7 +43,6 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo (coreboot+Heads) Entry Subscription for Laptops](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-laptops-corebootheads/)
     - [Dasharo (coreboot+UEFI) Entry Subscription for Laptops Upgrade to (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
 
 ## Desktop
