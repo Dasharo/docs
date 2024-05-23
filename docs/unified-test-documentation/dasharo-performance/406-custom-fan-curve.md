@@ -74,7 +74,7 @@ up and down according to the defined values.
 
 **Expected result**
 
-[Silent fan profile](https://docs.dasharo.com/unified/novacustom/fan-profiles/#silent-fan-profile)
+[Silent fan profile](https://docs.dasharo.com/unified/novacustom/features/#silent)
 
 Keep in mind that the EC firmware is smoothing, i.e. the fans will enter the
 target speed with a delay.
@@ -166,7 +166,7 @@ fan spins up and down according to the defined values.
 
 **Expected result**
 
-[Performance fan profile](https://docs.dasharo.com/unified/novacustom/fan-profiles/#performance-fan-profile)
+[Performance fan profile](https://docs.dasharo.com/unified/novacustom/features/#performance)
 
 Keep in mind that the EC firmware is smoothing, i.e. the fans will enter the
 target speed with a delay.
