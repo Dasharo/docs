@@ -275,7 +275,7 @@ Test results for this release can be found
 - [Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [Vboot recovery mode information popup](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/#vbo009001-recovery-boot-popup-firmware)
 - [Dasharo setup menu full screen mode support](https://github.com/Dasharo/dasharo-issues/issues/118)
-- [Support for RGB backlit keyboard](https://docs.dasharo.com/unified/novacustom/rgb-keyboard/)
+- [Support for RGB backlit keyboard](https://docs.dasharo.com/unified/novacustom/features/#rgb-keyboard)
 - [Support for open-source EC firmware](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-transition)
 
 ### Known issues

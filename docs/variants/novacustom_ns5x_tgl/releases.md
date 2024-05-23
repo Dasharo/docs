@@ -338,7 +338,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 ### Added
 
 - Support for NovaCustom NS7x
-- [Support for RGB Keyboard](https://docs.dasharo.com/unified/novacustom/rgb-keyboard/)
+- [Support for RGB Keyboard](https://docs.dasharo.com/unified/novacustom/features/#rgb-keyboard)
 - [Persistent boot logo implementation](https://docs.dasharo.com/guides/logo-customization)
 
 ### Changed
