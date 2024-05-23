@@ -57,6 +57,29 @@ Select your Dasharo firmware flavor:
 
         </div>
 
+     === "V540TND"
+        __NovaCustom V540TND is a 14 inch laptop based on 15th
+        generation Intel Core processor (Meteor Lake):
+
+        ![](/images/V540TND-front-1.jpg){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [V540TND Series](https://configurelaptop.eu/v540tnd-series/)
+
+        </div>
+
+     === "V560TND"
+        __NovaCustom V560TND is a 16 inch laptop based on 15th
+        generation Intel Core processor (Meteor Lake):
+
+        ![](/images/V560TND-front-1.jpg){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [V560TND Series](https://configurelaptop.eu/v560tnd-series/)
+
+        </div>
     For more information on the hardware, please refer to the links above.
 
     ## Firmware
