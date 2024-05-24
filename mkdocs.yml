@@ -147,9 +147,11 @@ nav:
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
           - 'Firmware transition': unified/novacustom/firmware-transition.md
           - 'V54 Series':
+              - 'Releases': variants/novacustom_v540tu/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
               - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
           - 'V56 Series':
+              - 'Releases': variants/novacustom_v560tu/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_v560tu/hardware-matrix.md
               - 'Test matrix': variants/novacustom_v560tu/test-matrix.md
           - 'NV4x 12th Gen':
