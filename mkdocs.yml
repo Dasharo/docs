@@ -145,7 +145,13 @@ nav:
           - 'Post-installation setup': unified/clevo/post-install.md
           - 'Features': unified/novacustom/features.md
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
-          - 'Firmare transition': unified/novacustom/firmware-transition.md
+          - 'Firmware transition': unified/novacustom/firmware-transition.md
+          - 'V54 Series':
+              - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
+              - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
+          - 'V56 Series':
+              - 'Hardware Configuration Matrix': variants/novacustom_v560tu/hardware-matrix.md
+              - 'Test matrix': variants/novacustom_v560tu/test-matrix.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
               - 'Heads releases': variants/novacustom_nv4x_adl/releases_heads.md
