@@ -307,4 +307,4 @@ Example output:
 ### USB devices
 
 Since some issues with USB controllers may only happen on select USB ports,
-it's important to plug in USB devices to all 20 USB ports of the board.
+it's important to plug in USB devices to all 25 USB ports of the board.
