@@ -5,7 +5,31 @@ Select your Dasharo firmware flavor:
 === "Dasharo (coreboot + UEFI)"
     NovaCustom laptops come with this firmware variant out of the box.
 
-    ## Hardware
+    ## Models
+
+    === "V540TU"
+        __NovaCustom V540TU__ are 14 inch laptops based on 14th Generation Intel
+        Core Ultra processors (Meteor Lake):
+
+        ![](/images/v540tu-front.png){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [V54 Series](https://configurelaptop.eu/v54-series/)
+
+        </div>
+
+    === "V560TU"
+        __NovaCustom V560TU__ are 16 inch laptops based on 14th Generation Intel
+        Core Ultra processors (Meteor Lake):
+
+        ![](/images/v560tu-front.png){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [V56 Series](https://configurelaptop.eu/v56-series/)
+
+        </div>
 
     === "NS5x/7x 12th Gen"
         __NovaCustom NS5x/7x 12th Gen__ are 15 and 17 inch laptops based on 12th
@@ -71,6 +95,8 @@ Select your Dasharo firmware flavor:
     in sync is important. Information on compatibility should always be explained
     on the release pages:
 
+    - [V540TU](/variants/novacustom_v540tu/releases/)
+    - [V560TU](/variants/novacustom_v560tu/releases/)
     - [NV4x 12th Gen](/variants/novacustom_nv4x_adl/releases/)
     - [NV4x 11th Gen](/variants/novacustom_nv4x_tgl/releases/)
     - [NS5x/7x 12th Gen](/variants/novacustom_ns5x_adl/releases/)
@@ -85,7 +111,7 @@ Select your Dasharo firmware flavor:
         you are unsure which firmware version you're using, select
         `coreboot + UEFI` instead.
 
-    ## Hardware
+    ## Models
 
     === "NV4x 12th Gen"
         __NovaCustom NV4x 12th Gen__ is a 14 inch laptop based on 12th
