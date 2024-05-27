@@ -275,6 +275,6 @@
 The Dasharo firmware can be flashed in following ways, depending on your
 situation:
 
-    - To flash Dasharo for the first time, refer to the
+- To flash Dasharo for the first time, refer to the
       [initial deployment guide](initial-deployment.md).
-    - To update Dasharo, refer to the [firmware update guide](firmware-update.md).
+- To update Dasharo, refer to the [firmware update guide](firmware-update.md).
