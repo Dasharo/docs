@@ -8,9 +8,9 @@ replacing the logo. It is part of the
 [Dasharo Configuration Utility](https://github.com/Dasharo/dcu) - a tool
 designed to configure Dasharo binary images.
 
-=== "Dasharo"
+## Procedure
 
-    ## Procedure
+=== "Dasharo"
 
     Use the [Dasharo Configuration Utility](https://github.com/Dasharo/dcu#usage)
     to put custom logo into a Dasharo coreboot image.
@@ -20,8 +20,6 @@ designed to configure Dasharo binary images.
     ```
 
 === "Dasharo (coreboot + Heads)"
-
-    ## Procedure
 
     Logo customization is not supported as of now. To replace the logo,
     you must rebuild the firmware. You need to replace the
