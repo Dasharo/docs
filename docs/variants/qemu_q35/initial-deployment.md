@@ -1,18 +1,19 @@
 # Initial Deployment
 
-Initial deployment of Dasharo (UEFI) firmware on QEMU Q35 does not need any
-special actions. QEMU Q35 is an emulated platform, not real hardware.
+Initial deployment of Dasharo (coreboot+UEFI) firmware on QEMU Q35 does not need
+any special actions. QEMU Q35 is an emulated platform, not real hardware.
 
-Running the Dasharo (UEFI) is as simple as invoking a QEMU command:
+Running the Dasharo (coreboot+UEFI) is as simple as invoking a QEMU command:
 
 ```bash
 qemu-system-x86_64 -machine q35,smm=on \
-	-global driver=cfi.pflash01,property=secure,value=on \
-	-drive if=pflash,format=raw,unit=0,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd,readonly=on \
-	-drive if=pflash,format=raw,unit=1,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd \
-	-debugcon file:debug.log -global isa-debugcon.iobase=0x402 \
-	-global ICH9-LPC.disable_s3=1
+	-drive if=pflash,format=raw,file=build/coreboot.rom
 ```
+
+This is the minimal set of parameters that are always required, but you may add
+more to e.g. connect additional devices or redirect serial output to a file.
+Refer to [QEMU documentation](https://qemu-project.gitlab.io/qemu/system/invocation.html)
+for list of possible options.
 
 If you use system without graphical output you may face following issues:
 
