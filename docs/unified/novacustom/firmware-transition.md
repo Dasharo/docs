@@ -74,13 +74,3 @@ boot into your UEFI firmware.
 > that were added before installing Heads. Therefore, you may need to re-create
 > your boot entries manually, or find your boot loader using `Boot From File`
 > option in the UEFI setup menu.
-
-## Logo customization
-
-Normally, the logo can be replaced using the
-[Dasharo Configuration Utility](https://github.com/Dasharo/dcu?tab=readme-ov-file#dcu---dasharo-configuration-utility)
-– a tool designed to modify Dasharo binary images. However, logo customization is
-not supported as of now. To replace the logo, one must rebuild the firmware. You
-would need to replace the `branding/Dasharo/bootsplash.jpg` with your own, and
-proceed with the
-[Building manual](/unified/novacustom/building-manual/#dasharo-coreboot--heads).

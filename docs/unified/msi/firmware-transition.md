@@ -46,13 +46,3 @@ to restore a saved backup, stock, or Dasharo UEFI firmware.
     install Qubes OS again.
 
     Users who installed Qubes OS *before* switching to Heads are not affected.
-
-## Logo customization
-
-Normally, the logo can be replaced using the
-[Dasharo Configuration Utility](https://github.com/Dasharo/dcu?tab=readme-ov-file#dcu---dasharo-configuration-utility)
-– a tool designed to modify Dasharo binary images. However, logo customization is
-not supported as of now. To replace the logo, one must rebuild the firmware. You
-would need to replace the `branding/Dasharo/bootsplash.jpg` with your own, and
-proceed with the
-[Building manual](/unified/novacustom/building-manual/#dasharo-coreboot--heads).
