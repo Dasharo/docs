@@ -266,7 +266,6 @@ nav:
           - 'Releases': variants/qemu_q35/releases.md
           - 'Building manual': variants/qemu_q35/building-manual.md
           - 'Test matrix': variants/qemu_q35/test-matrix.md
-          - 'Development': variants/qemu_q35/development.md
           - 'Initial Deployment': variants/qemu_q35/initial-deployment.md
           - 'Firmware update': variants/qemu_q35/firmware-update.md
           - 'Recovery': variants/qemu_q35/recovery.md
