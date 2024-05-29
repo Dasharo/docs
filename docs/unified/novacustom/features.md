@@ -3,6 +3,18 @@
 This document describes special firmware features specific to NovaCustom
 laptops.
 
+## CPU throttling threshold
+
+The user can set a custom temperature (in °C), above which the CPU will start
+throttling itself. By default, the threshold is set to 80°C.
+
+The available values range from TjMax - 63 to TjMax, where TjMax is the maximum
+allowed temperature for a particular CPU. That is, for instance, 100°C for TGL
+and ADL, and 110°C for MTL.
+
+The option can be set in EDK2, under `Dasharo System Features >
+Power Management Options > CPU Throttling Threshold`.
+
 ## Battery charge management
 
 NovaCustom laptops equipped with Dasharo firmware provide several battery
