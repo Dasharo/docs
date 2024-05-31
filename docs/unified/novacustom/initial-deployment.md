@@ -11,16 +11,102 @@ devices.
 
 ### Initial Installation
 
+=== "14th Gen (Meteor Lake)"
+    Due to flash protection and Intel ME configuration present in vendor
+    firmware, initial deployment must be performed externally (using a chip
+    programmer like CH341a).
+
+    ### Preparation
+
+    On your host computer, install flashrom from sources:
+
+    !!! note
+
+        Building from source is required, because the latest flashrom release
+        as of the time of writing does not have support for the flash chip model
+        present in these devices.
+
+    1. Install build dependencies (on Ubuntu and derivatives):
+
+        ```bash
+        apt update
+        apt upgrade
+        apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+        ```
+
+    1. Clone the flashrom repository:
+
+        ```bash
+        git clone https://review.coreboot.org/flashrom.git
+        ```
+
+    1. Build and install flashrom:
+
+        ```bash
+        cd flashrom
+        meson build
+        ninja -C build
+        sudo ninja -C build install
+        ```
+
+    ### EC installation
+
+    Steps for installing Dasharo Embedded Controller Firmware:
+
+    1. On the target laptop,
+       [boot into Dasharo Tools Suite from a USB stick](/dasharo-tools-suite/documentation/#bootable-usb-stick)
+
+    1. Press `S` to drop to shell
+
+    1. Download the EC firmware from the Releases page for your device with
+       `wget`
+
+    1. Install the EC firmware:
+
+        ```bash
+        flashrom -p ite_ec:boardmismatch=force,romsize=256K -w path/to/ec.rom
+        ```
+
+    ### BIOS installation
+
+    Steps for installing Dasharo BIOS:
+
+    1. Remove the bottom cover of the laptop.
+    2. Disconnect the primary battery.
+    3. Disconnect the CMOS battery.
+    4. Attach a WSON-8 probe to the SPI flash chip.
+    5. Backup the current firmware, in case you want to be able to restore it
+        at some point:
+
+        ```bash
+        flashrom -p ch341a_spi -r bios_backup.rom
+        ```
+
+    6. Install Dasharo BIOS, replacing `[path]` with the path to the firmware
+        image you want to flash, e.g. `novacustom_v540tu_v0.9.0.rom`:
+
+        - Step 1: Flash descriptor:
+
+            ```bash
+            flashrom -p ch341a_spi -w [path] --ifd -i fd
+            ```
+
+        - Step 2: BIOS and CSME:
+
+            ```bash
+            flashrom -p ch341a_spi -w [path] --ifd -i me -i bios
+            ```
+
+    7. Detach the WSON-8 probe.
+    8. Connect the primary battery and reconnect the CMOS battery.
+    9. Power on the laptop. The laptop may shut down once after training the memory.
+
 === "12th Gen (Alder Lake)"
     During the initial installation of Dasharo, you should deploy the supported
     Intel ME version (and configuration) on the device. Since vendor firmware
     has enabled Intel Boot Guard and BIOS Guard, it is not possible to do this
     from within the operating system and external flashing of the whole flash
     chip using a programmer like the CH341a is required.
-
-    > Publicly released binaries do not contain the ME binary. If you need an Intel ME
-    > update for your device, contact us via an already established commercial support
-    > channel.
 
     ### Preparation
 
