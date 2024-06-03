@@ -76,7 +76,14 @@ exception of rebasing the `dasharo` branch on new coreboot versions.
     ```bash
     git checkout -b dasharo-4.22
     git rebase 4.22
-    # resolve issues
+    ```
+
+1. Resolve conflicts, build issues and run tests.
+
+1. When issues are resolved and testing is completed, rename the branch to
+    `dasharo`:
+
+    ```bash
     git branch -d dasharo
     git branch -M dasharo
     ```
