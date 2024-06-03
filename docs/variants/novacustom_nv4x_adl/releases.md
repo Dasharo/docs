@@ -195,8 +195,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [Intel Management Engine Disable](https://github.com/Dasharo/dasharo-issues/issues/111)
 - [The same keyboard illumination setting is restored after suspend or poweroff](https://github.com/Dasharo/dasharo-issues/issues/339)
-- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/fan-profiles/)
-- [Fn lock hotkey feature](https://docs.dasharo.com/unified/novacustom/fn-lock-hotkey/)
+- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/features/)
+- [Fn lock hotkey feature](https://docs.dasharo.com/unified/novacustom/features/)
 - [Setup menu option for switching between S0ix and S3 suspend mode](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
 
 ### Changed

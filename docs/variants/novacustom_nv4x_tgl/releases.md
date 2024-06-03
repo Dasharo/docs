@@ -195,8 +195,8 @@ Test results for this release can be found
 ### Added
 
 - [The same keyboard illumination setting is restored after suspend or poweroff](https://github.com/Dasharo/dasharo-issues/issues/339)
-- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/fan-profiles/)
-- [Fn lock hotkey feature](https://docs.dasharo.com/unified/novacustom/fn-lock-hotkey/)
+- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/features/)
+- [Fn lock hotkey feature](https://docs.dasharo.com/unified/novacustom/features/)
 
 ### Changed
 

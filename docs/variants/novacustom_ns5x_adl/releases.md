@@ -192,8 +192,8 @@ Test results for this release can be found
 
 - [Intel Management Engine Disable](https://github.com/Dasharo/dasharo-issues/issues/111)
 - [The same keyboard illumination setting is restored after suspend or poweroff](https://github.com/Dasharo/dasharo-issues/issues/339)
-- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/fan-profiles/)
-- [Fn lock hotkey feature](https://docs.dasharo.com/unified/novacustom/fn-lock-hotkey/)
+- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/features/)
+- [Fn lock hotkey feature](https://docs.dasharo.com/unified/novacustom/features/)
 - [Setup menu option for switching between S0ix and S3 suspend mode](https://github.com/Dasharo/dasharo-issues/issues/300)
 
 ### Changed
@@ -275,7 +275,7 @@ Test results for this release can be found
 - [Vboot Verified Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [Vboot recovery mode information popup](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/#vbo009001-recovery-boot-popup-firmware)
 - [Dasharo setup menu full screen mode support](https://github.com/Dasharo/dasharo-issues/issues/118)
-- [Support for RGB backlit keyboard](https://docs.dasharo.com/unified/novacustom/rgb-keyboard/)
+- [Support for RGB backlit keyboard](https://docs.dasharo.com/unified/novacustom/features/)
 - [Support for open-source EC firmware](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-transition)
 
 ### Known issues
