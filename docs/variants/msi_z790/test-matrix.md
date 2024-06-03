@@ -91,3 +91,7 @@ Note that the test scope is used during Dasharo Certification Procedure for for
 | 1.   | [coreboot bring up time measurement][CBMEM]       | CBMEM         | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+
+## coreboot + Heads
+
+Please refer to the [tests results spreadsheet](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=5649308).

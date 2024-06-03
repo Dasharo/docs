@@ -150,3 +150,9 @@ devices.
 
     In such case please follow the EC firmware update instructions for a specific
     board variant.
+
+## coreboot + Heads
+
+The supported method for initial deployment of the coreboot + Heads variant is
+to follow [installing Dasharo](#installing-dasharo), and then
+[transition from Dasharo UEFI to Heads variant](/unified/novacustom/firmware-transition#switching-from-dasharo-uefi-to-heads).

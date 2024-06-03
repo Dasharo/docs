@@ -84,3 +84,12 @@ please check the [FAQ section](../../unified/msi/faq.md).
 | **Power Control**              | Sonoff S20 EU type E                        |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **KVM**                        | PiKVM based on Raspberry Pi Zero 2w         |
+
+## coreboot + Heads
+
+Generally, the same hardware configuration as for the
+UEFI variant applies.
+
+A notable addition is usage of the
+[Nitrokey 3A Mini](https://shop.nitrokey.com/shop/nk3am-nitrokey-3a-mini-149)
+USB device, which is required for Heads installation and usage.

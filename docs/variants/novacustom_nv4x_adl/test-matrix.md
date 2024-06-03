@@ -139,3 +139,7 @@ subjected from before the release of the new binary.
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
 [SNV]: ../../unified-test-documentation/dasharo-stability/C03-nvme-detection.md
 [NET]: ../../unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+
+## coreboot + heads
+
+Please refer to the [tests results spreadsheet](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ).
