@@ -306,5 +306,6 @@ Example output:
 
 ### USB devices
 
-Since some issues with USB controllers may only happen on select USB ports,
-it's important to plug in USB devices to all 25 USB ports of the board.
+USB 3.x (blue) ports in the 4 port column of rear I/O have an issue where if
+they are populated during boot, the boot process will slow to a crawl. Do not
+populate these ports on boards installed in the lab.
