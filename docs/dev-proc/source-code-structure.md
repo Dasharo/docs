@@ -67,29 +67,26 @@ exception of rebasing the `dasharo` branch on new coreboot versions.
 
     ```bash
     git checkout dasharo
-    git checkout -b common-base-4.21
-    git push -u origin common-base-4.21
+    git checkout -b dasharo-4.21
+    git push -u origin dasharo-4.21
     ```
 
 1. Rebase the current `dasharo` branch on the latest tag, for example:
 
     ```bash
-    git checkout dasharo
+    git checkout -b dasharo-4.22
     git rebase 4.22
-    ```
-
-    If there are problems with rebase, you may create a different branch, e.g.
-    `common-base-4.22` and work until all issues are resolved, then rename the
-    branch back to dasharo
-
-    ```bash
-    git checkout -b common-base-4.22
     # resolve issues
     git branch -d dasharo
     git branch -M dasharo
     ```
 
 1. Push the new `dasharo` branch:
+
+    !!! info
+
+        Only repository admin can force-push to protected branches. Contact your
+        TL to finish this step.
 
     ```bash
     git push -f origin dasharo
