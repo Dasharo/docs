@@ -122,3 +122,58 @@ quick answers it's best to join our matrix space and talk to us there.
 
 If you've never used Matrix before, you will first need to get a client.
 Available clients are listed [here](https://matrix.org/clients/).
+
+## Dasharo lab user guide
+
+[**Test enviroment overview**](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#test-environment-overview)
+
+To get information about available platforms it's or it's RTE's IP address, use
+the platform reservation tool: [SnipeIT](https://192.168.4.202/)
+
+[OSFV_CLI](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli) is a script,
+which allows to interact with devices setup in Dasharo OSFV lab.
+
+If the DUT has connected RTE you can refer to: [RTE
+commands](https://github.com/Dasharo/osfv-scripts/blob/main/osfv_cli/README.md#rte-command),
+also you may connect to the RTE by using web browser by typing:
+`http://<rte_ip_address>:8000`. For more please refer to: [RTE Quick Start
+Guide](https://docs.dasharo.com/transparent-validation/rte/v1.1.0/quick-start-guide/).
+
+Default RTE login: `root`, password: `meta-rte`
+
+If the DUT uses PiKVM you may use: `https://<PiKVM_ip_address>`, for more info
+refer to:
+[PiKVM](https://docs.dasharo.com/transparent-validation/pikvm/assembly-and-validation/).
+
+Default PiKVM login: `admin`, password: `admin`
+
+Firmware source: [Dasharo
+Universe](https://docs.dasharo.com/variants/protectli_vp2410/releases/) or
+[Cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/dasharo/releases&fileid=297139)
+(only for logged in users), alternatively newest builds can be found at [Github](https://github.com/Dasharo/coreboot/).
+
+## Troubleshooting
+
+**Connecting to RTE serial output: `Connection refused`**
+
+Most probably a telnet connection hasn't been closed correctly. To terminate
+this connection restart RTE by logging to it by ssh and reboot it:
+
+`ssh root@rte_ip_address`
+
+password: meta-rte
+
+`systemctl restart ser2net` and then `logout`
+
+**DUT won't power on**
+
+1. Use the [OSFV CLI](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli).
+Check if Sonoff state is set to ON `osfv_cli sonoff --sonoff_ip
+<sonoff_ip_address> on` and power on the DUT `osfv_cli rte --rte_ip
+<rte_ip_address> pwr on`
+
+2. Check if a proper BIOS/firmware is flashed. If not a proper firmware can be
+   flashed with use of [OSFV
+   CLI](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli) by running
+   `osfv_cli rte --rte_ip <rte_ip_address> flash write --rom <path_to_fw_file>`
+   command.
