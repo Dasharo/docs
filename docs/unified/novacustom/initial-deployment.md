@@ -56,6 +56,8 @@ devices.
     1. On the target laptop,
        [boot into Dasharo Tools Suite from a USB stick](/dasharo-tools-suite/documentation/#bootable-usb-stick)
 
+    1. Ensure power adapter is plugged into the laptop
+
     1. Press `S` to drop to shell
 
     1. Download the EC firmware from the Releases page for your device with
