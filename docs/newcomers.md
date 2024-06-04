@@ -125,7 +125,7 @@ Available clients are listed [here](https://matrix.org/clients/).
 
 ## Dasharo lab user guide
 
-[**Test enviroment overview**](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#test-environment-overview)
+[**Test environment overview**](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#test-environment-overview)
 
 To get information about available platforms it's or it's RTE's IP address, use
 the platform reservation tool: [SnipeIT](https://192.168.4.202/)
