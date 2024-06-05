@@ -36,7 +36,6 @@ market_segment
 - `payload` (optional): Details the additional software loaded by the firmware.
   Available options:
 
-    + `none` - Dasharo build using only firmware framework without payload.
     + `UEFI` - [Dasharo downstream](https://github.com/Dasharo/edk2) of
     [Tianocore EDK II](https://github.com/tianocore/edk2) reference
     implementation of the UEFI Specification.
