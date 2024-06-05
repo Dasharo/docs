@@ -5,7 +5,7 @@ Following documentation is results of [RFC](https://github.com/Dasharo/dasharo-i
 ## Synopsis
 
 ```plain
-Dasharo (firmware_framework[+payload]) Entry Package [customer_type] for
+Dasharo (firmware_framework[+payload]) [customer_type] Package for
 market_segment
 ```
 
@@ -20,7 +20,7 @@ segments, and customer categories.
 Components of the naming scheme:
 
 ```plain
-Dasharo (firmware_framework[+payload]) Entry Package [customer_type] for
+Dasharo (firmware_framework[+payload]) [customer_type] Package for
 market_segment
 ```
 
@@ -64,14 +64,14 @@ of understanding across Dasharo's firmware offerings.
 ## Examples
 
 ```plain
-Dasharo (coreboot+Heads) Entry Package Pro for Laptop
+Dasharo (coreboot+Heads) Pro Package for Laptop
 ```
 
 A package aimed at professional retail customers with laptops, incorporating
 coreboot with the Heads payload.
 
 ```plain
-Dasharo (UEFI) Entry Package Enterprise for Desktop
+Dasharo (UEFI) Enterprise Package for Desktop
 ```
 
 A package for enterprise business customers for desktops, employing UEFI with
