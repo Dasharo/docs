@@ -18,13 +18,37 @@ flash chip according to the following documentation sections:
 
 ### BIOS recovery
 
+The procedure will be slightly different depending on the model of your laptop.
+
+=== "14th Gen models"
+    You will need:
+
+    - a CH341a programmer with 1.8V support
+    - a WSON-8 probe
+
+=== "12th Gen models"
+    You will need:
+
+    - a CH341a programmer with 3.3V support
+    - a WSON-8 probe
+
+=== "11th Gen models"
+    You will need:
+
+    - a CH341a programmer with 3.3V support
+    - a SOIC-8 (Pomona) clip
+
+A complete set containing everything you need is available from
+[our shop](https://shop.3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/).
+
 Follow the [Initial deployment](initial-deployment.md#initial-installation)
 section to perform the external flash. When running the flashrom commands, use a
 backup file you've prepared previously, like `bios_backup.rom`.
 
 ### EC firmware recovery
 
-The procedure will be slightly different depending on the model of your laptop.
+Once again, the procedure will be slightly different depending on the model of
+your laptop.
 
 === "NS5x / NS7x"
     You will need:

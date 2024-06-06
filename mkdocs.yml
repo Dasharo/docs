@@ -161,6 +161,7 @@ nav:
               - 'Hardware Configuration Matrix': variants/novacustom_ns5x_adl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_ns5x_adl/test-matrix.md
               - 'Openness score': variants/novacustom_ns5x_adl/openness-score.md
+              - 'Recovery': variants/novacustom_ns5x_adl/recovery.md
           - 'NS5x/7x 11th Gen':
               - 'Releases': variants/novacustom_ns5x_tgl/releases.md
               - 'Hardware Configuration Matrix': variants/novacustom_ns5x_tgl/hardware-matrix.md
