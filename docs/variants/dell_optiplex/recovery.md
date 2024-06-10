@@ -53,7 +53,7 @@ Connect SOIC-8 Pomona according to
  | CS                                     | pin 1 (upside)    |
  | MISO                                   | pin 2 (upside)    |
  | GND                                    | pin 4 (upside)    |
- | VCC                                    | pin 5 (downside)  |
+ | VCC (3.3V)                             | pin 5 (downside)  |
  | SCLK                                   | pin 7 (downside)  |
  | MOSI                                   | pin 8 (downside)  |
 
@@ -165,7 +165,7 @@ Connect SOIC-16 Pomona according to
 
  | RTE J7                                 | Pomona SOIC clip  |
  |:--------------------------------------:|:-----------------:|
- | VCC                                    | pin 2 (upside)    |
+ | VCC (3.3V)                             | pin 2 (upside)    |
  | CS                                     | pin 7 (upside)    |
  | MISO                                   | pin 8 (upside)    |
  | SCLK                                   | pin 16 (downside) |
