@@ -231,6 +231,31 @@ strings printed on the screen will not be stretched to the full screen size.
 It is due to the serial console working in 80x25 mode. Thus the console
 splitter must choose the highest resolution supported by all consoles.
 
+## CPU Configuration
+
+The submenu contains options related to the CPU.
+
+![](/images/menus/cpu_config1.jpg){ class="center" }
+
+- `Number of active P-cores` - sets the number of active Performance cores on
+  a hybrid CPU architecture system, such as 12th generation Intel Core or
+  later. By specifying a lower number of cores, the cores are getting
+  disabled. By default all cores are active, and there always must be one
+  P-core active in the system, unless the CPU has no P-cores.
+- `Number of active E-cores` - sets the number of active Efficient cores on a
+  hybrid CPU architecture system, such as 12th generation Intel Core or later.
+  By specifying a lower number of cores, the cores are getting disabled. By
+  default all cores are active, and there always must be one E-core active in
+  the system if the CPU has no P-cores, otherwise all E-cores may be disabled.
+- `Hyper-Threading` - enables/disables Hyper-Threading feature. By default
+  Hyper-Threading is enabled. Unchecking the option will cause all the
+  secondary threads on hyper-threading supported cores to be disabled. On
+  hybrid CPU architecture, only P-cores support Hyper-Threading.
+
+![](/images/menus/cpu_config2.jpg){ class="center" }
+
+![](/images/menus/cpu_config3.jpg){ class="center" }
+
 ## Additional information
 
 NOTE: Pressing F9 to reset to defaults resets **all settings**, not only the one
