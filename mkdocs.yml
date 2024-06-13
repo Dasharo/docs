@@ -359,6 +359,7 @@ nav:
       - 'Documentation': dasharo-tools-suite/documentation.md
   - 'Knowledge base':
       - 'Glossary': glossary.md
+      - 'Dasharo Cooperation Models': kb/dasharo-cooperation-models.md
       - 'Dasharo menu documentation':
           - 'Overview': dasharo-menu-docs/overview.md
           - 'Boot Maintenance Manager': dasharo-menu-docs/boot-maintenance-mgr.md
