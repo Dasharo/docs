@@ -26,6 +26,9 @@ localhost:12345` (the number is random).
 It is crucial at this point to verify that the pages you have changed
 render correctly as HTML in local preview.
 
+If you need to update the environment (for example, if `requirements.txt` was
+updated), just run `rm -r venv` and re-run the steps above.
+
 ### Broken links checker
 
 Currently we are using [lychee](https://github.com/lycheeverse/lychee) a fast,
