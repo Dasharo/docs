@@ -81,10 +81,10 @@ Hear from our satisfied users and clients:
 
 Stay tuned for our upcoming events:
 
-- **September 28, 2023**: [Dasharo User Group #3 and Dasharo Developers vPub
-  0x8](https://vpub.dasharo.com/e/8/dasharo-user-group-3)
-- **October 6-8, 2023**: [Qubes OS Summit
-  2023](https://qubesos.3mdeb.com)
+- **June 13, 2024**: [Dasharo User Group #6 and Dasharo Developers vPub
+  0xB](https://vpub.dasharo.com/e/13/dasharo-user-group-6)
+- **September 20-22, 2024**: [Qubes OS Summit
+  2024](https://vpub.dasharo.com/e/16/qubes-os-summit-2024)
 
 [View full calendar →](https://vpub.dasharo.com)
 
@@ -99,11 +99,11 @@ Dive deeper with our rich library of resources:
 
 Catch up on the latest in the Dasharo world:
 
-- [Dasharo Compatible with MSI PRO Z690-A Release v1.1.2](https://blog.3mdeb.com/2023/2023-09-08-msi_z690-a_v1.1.2_release/)
-- [Dasharo compatible with MSI PRO Z690-A release v1.1.1](https://blog.3mdeb.com/2023/2023-03-02-msi_ms7d25_v1.1.1_release/)
+- [Dasharo Compatible with MSI PRO Z690-A Release v1.1.3](https://blog.3mdeb.com/2024/2024-02-13-msi_z690-a_v1.1.3_release/)
+- [Optimizing Firmware Updates: Dasharo Firmware Update Mode for NovaCustom Laptops](https://blog.3mdeb.com/2023/2023-11-07-simplifying-firmware-update/)
 - [ASUS KGPE-D16 Dasharo testing update](https://blog.3mdeb.com/2022/2022-03-23-kgpe-d16-testing-update/)
-- [KGPE-D16 open-source firmware status](https://blog.3mdeb.com/2022/2022-02-03-kgpe_d16_status/)
-- [Dasharo for Dell OptiPlex 7010 / 9010Tips for Dasharo Deployment](https://blog.3mdeb.com/2021/2021-11-26-optiplex-dasharo/)
+- [A new source of trust for your platform - Dasharo with Intel TXT support](https://blog.3mdeb.com/2022/2022-03-17-optiplex-txt/)
+- [Dasharo for Dell OptiPlex 7010 / 9010](https://blog.3mdeb.com/2021/2021-11-26-optiplex-dasharo/)
 
 [Visit our blog →](https://blog.3mdeb.com)
 
