@@ -13,7 +13,7 @@
 4. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## PEX001.001 PCI Express card detection (Ubuntu 22.04)
+## PEX001.001 PCI Express card detection (Ubuntu)
 
 **Test description**
 
@@ -23,7 +23,7 @@ correctly and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
+2. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -52,7 +52,7 @@ The output of the command should contain the plugged device name:
 
 The exact name and revision may be different depending on hardware configuration.
 
-## PEX001.002 PCI Express card detection (Windows 11)
+## PEX001.002 PCI Express card detection (Windows)
 
 **Test description**
 
@@ -62,7 +62,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Windows 11
+2. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

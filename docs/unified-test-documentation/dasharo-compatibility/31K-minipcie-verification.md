@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## MWL001.001 Wireless card detection (Ubuntu 22.04)
+## MWL001.001 Wireless card detection (Ubuntu)
 
 **Test description**
 
@@ -23,7 +23,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -52,7 +52,7 @@ Example output:
 2f:00.0 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 1a)
 ```
 
-## MWL001.002 Wireless card detection (Windows 11)
+## MWL001.002 Wireless card detection (Windows)
 
 **Test description**
 
@@ -62,7 +62,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -93,7 +93,7 @@ Example output:
 Intel(R) Wi-Fi 6AX200 160MHz
 ```
 
-## MWL002.001 Wi-Fi scanning (Ubuntu 22.04)
+## MWL002.001 Wi-Fi scanning (Ubuntu)
 
 **Test description**
 
@@ -103,7 +103,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -145,7 +145,7 @@ IN-USE  BSSID              SSID                    MODE   CHAN  RATE        SIGN
         XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
 ```
 
-## MWL002.002 Wi-Fi scanning (Windows 11)
+## MWL002.002 Wi-Fi scanning (Windows)
 
 **Test description**
 
@@ -155,7 +155,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -208,7 +208,7 @@ SSID 5 : DIRECT-KRM288x Series
     Encryption              : CCMP
 ```
 
-## MWL003.001 Bluetooth scanning (Ubuntu 22.04)
+## MWL003.001 Bluetooth scanning (Ubuntu)
 
 **Test description**
 
@@ -218,7 +218,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -261,7 +261,7 @@ Device XX:XX:XX:XX:XX:XX Device 5
 Device XX:XX:XX:XX:XX:XX Device 6
 ```
 
-## MWL003.002 Bluetooth scanning (Windows 11)
+## MWL003.002 Bluetooth scanning (Windows)
 
 **Test description**
 
@@ -271,7 +271,7 @@ correctly and can be used from within the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -296,7 +296,7 @@ correctly and can be used from within the operating system.
 
 Available Bluetooth devices should appear in the `Add a device` window.
 
-## MWL004.001 LTE card detection (Ubuntu 22.04)
+## MWL004.001 LTE card detection (Ubuntu)
 
 **Test description**
 
@@ -306,7 +306,7 @@ operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
+2. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

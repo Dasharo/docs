@@ -31,7 +31,7 @@ flashing the platform with the Dasharo firmware is correct.
 The `Secure Boot State` field should inform that the current state of
 Secure Boot is `Disabled`.
 
-## SBO002.001 UEFI Secure Boot (Ubuntu 22.04)
+## SBO002.001 UEFI Secure Boot (Ubuntu)
 
 **Test description**
 
@@ -41,7 +41,7 @@ the DUT reset, it is seen from the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -92,7 +92,7 @@ The output of the command should contain the line:
 secureboot: Secure boot enabled
 ```
 
-## SBO002.002 UEFI Secure Boot (Windows 11)
+## SBO002.002 UEFI Secure Boot (Windows)
 
 **Test description**
 
@@ -102,7 +102,7 @@ the DUT reset, it is seen from the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -1067,7 +1067,7 @@ image.
 
 File does not boot correctly: `Command Error Status: Access Denied`.
 
-## SBO012.001 Boot OS Signed And Enrolled From Inside System (Ubuntu 22.04)
+## SBO012.001 Boot OS Signed And Enrolled From Inside System (Ubuntu)
 
 **Test description**
 
@@ -1077,7 +1077,7 @@ inside.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo.
-1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+1. `OPERATING_SYSTEM` = Ubuntu.
 
 **Test setup**
 
@@ -1173,7 +1173,7 @@ on DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo.
-1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+1. `OPERATING_SYSTEM` = Ubuntu.
 1. Additional `USB storage`for keeping Dasharo Tools Suite.
 1. Dasharo Tools Suite with UEFI secure boot support.
 
@@ -1321,7 +1321,7 @@ can be enrolled from the operating system using `sbctl`.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo.
-1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+1. `OPERATING_SYSTEM` = Ubuntu.
 
 **Test setup**
 
@@ -1399,7 +1399,7 @@ format from the operating system while using `sbctl`.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo.
-1. `OPERATING_SYSTEM` = Ubuntu 22.04.
+1. `OPERATING_SYSTEM` = Ubuntu.
 
 **Test setup**
 

@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## BBB001.001 Boot blocking (charger disconnected) (Ubuntu 22.04)
+## BBB001.001 Boot blocking (charger disconnected) (Ubuntu)
 
 **Test description**
 
@@ -23,7 +23,7 @@ level is below 5% with charger disconnected from the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -80,7 +80,7 @@ stress-ng: info:  [25309] dispatching hogs: 16 cpu
 
     ![boot_block](/images/battery_block_popup.jpg)
 
-## BBB001.002 Boot blocking (charger connected) (Ubuntu 22.04)
+## BBB001.002 Boot blocking (charger connected) (Ubuntu)
 
 **Test description**
 
@@ -90,7 +90,7 @@ level is below 5% with charger connected to the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

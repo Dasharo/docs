@@ -23,7 +23,7 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server 22.04 LTS
+1. `OPERATING_SYSTEM` = Ubuntu Server
 
 **Test setup**
 
@@ -53,7 +53,7 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server 22.04 LTS
+1. `OPERATING_SYSTEM` = Ubuntu Server
 
 **Test setup**
 
@@ -82,7 +82,7 @@ on the DUT after reboot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu Server 22.04 LTS
+1. `OPERATING_SYSTEM` = Ubuntu Server
 
 **Test setup**
 

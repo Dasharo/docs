@@ -42,7 +42,7 @@ correctly by the firmware and all basic keys work according to their labels.
 
 1. Flash drive entry is listed in the boot menu.
 
-## USB001.002 USB devices detection in OS (Ubuntu 22.04)
+## USB001.002 USB devices detection in OS (Ubuntu)
 
 **Test description**
 
@@ -53,7 +53,7 @@ labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -78,7 +78,7 @@ labels.
 1. After each device is connected to the USB port, a new USB device entry
     in `lsusb` command output should appear.
 
-## USB001.003 USB devices detection in OS (Windows 11)
+## USB001.003 USB devices detection in OS (Windows)
 
 **Test description**
 
@@ -88,7 +88,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -155,7 +155,7 @@ by the firmware and all basic keys work according to their labels.
 
 1. All menus can be entered using the external USB keyboard.
 
-## USB002.002 USB keyboard detection (Ubuntu 22.04)
+## USB002.002 USB keyboard detection (Ubuntu)
 
 **Test description**
 
@@ -165,7 +165,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -204,7 +204,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    their labels.
 1. Key combinations are detected correctly.
 
-## USB002.003 USB keyboard detection (Windows 11)
+## USB002.003 USB keyboard detection (Windows)
 
 **Test description**
 
@@ -214,7 +214,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -280,7 +280,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    or actions when pressed.
 1. Key combinations are detected correctly.
 
-## USB003.001 Upload 1GB file on USB storage (Ubuntu 22.04)
+## USB003.001 Upload 1GB file on USB storage (Ubuntu)
 
 **Test description**
 
@@ -290,7 +290,7 @@ This test aims to verify that the 1GB file can be transferred from the
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 1. `USB storage` - at least 1GB of free space
 
 **Test setup**
@@ -338,7 +338,7 @@ f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  test_file.txt
 f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  {path_to_usb_storage}/test_file.txt
 ```
 
-## USB003.002 Upload 1GB file on USB storage (Windows 11)
+## USB003.002 Upload 1GB file on USB storage (Windows)
 
 **Test description**
 
@@ -348,7 +348,7 @@ This test aims to verify that the 1GB file can be transferred from the
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 1. `USB storage` - at least 1GB of free space
 
 **Test setup**

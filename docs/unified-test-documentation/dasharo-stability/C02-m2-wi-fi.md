@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## SMW0001.001 Wi-fi connection after cold boot (Ubuntu 22.04)
+## SMW0001.001 Wi-fi connection after cold boot (Ubuntu)
 
 **Test description**
 
@@ -23,7 +23,7 @@ after performing a cold boot. The test should be performed in multiple iteration
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -97,7 +97,7 @@ after performing a cold boot. The test should be performed in multiple iteration
             XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
     ```
 
-## SMW0002.001 Wi-fi connection after warm boot (Ubuntu 22.04)
+## SMW0002.001 Wi-fi connection after warm boot (Ubuntu)
 
 **Test description**
 
@@ -107,7 +107,7 @@ after performing a warm boot. The test should be performed in multiple iteration
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -180,7 +180,7 @@ after performing a warm boot. The test should be performed in multiple iteration
             XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
     ```
 
-## SMW0003.001 Wi-fi connection after reboot (Ubuntu 22.04)
+## SMW0003.001 Wi-fi connection after reboot (Ubuntu)
 
 **Test description**
 
@@ -190,7 +190,7 @@ after performing a reboot. The test should be performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -264,7 +264,7 @@ after performing a reboot. The test should be performed in multiple iterations.
             XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
     ```
 
-## SMW0004.001 Wi-fi connection after suspension (Ubuntu 22.04)
+## SMW0004.001 Wi-fi connection after suspension (Ubuntu)
 
 **Test description**
 
@@ -274,7 +274,7 @@ after performing suspension. The test should be performed in multiple iterations
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

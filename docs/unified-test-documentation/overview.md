@@ -39,3 +39,18 @@ be distinguished:
     security and supporting security modules.
 * `Dasharo Performance` which contains test suites related to the platform
     booting performance.
+
+## Supported Operating Systems*
+
+* Windows 11
+* Ubuntu 22.04
+* Ubuntu Server 22.04 LTS
+* Debian 11.0
+* Fedora 37
+* FreeBSD 13.2
+* Proxmox VE 7.4
+* OPNsense 23.01
+* pfSense CE 2.6.0
+
+`* Unless specified otherwise in the test`
+(as of 17 June 2024)

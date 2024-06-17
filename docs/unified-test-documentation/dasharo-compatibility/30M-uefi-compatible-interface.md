@@ -1,6 +1,6 @@
 # Dasharo Compatibility: UEFI compatible interface
 
-## EFI001.001 Boot into UEFI OS (Ubuntu 22.04)
+## EFI001.001 Boot into UEFI OS (Ubuntu)
 
 **Test description**
 
@@ -10,7 +10,7 @@ UEFI-aware Operating System.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -36,7 +36,7 @@ UEFI-aware Operating System.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
    internal LCD.
 
-## EFI001.002 Boot into UEFI OS (Windows 11)
+## EFI001.002 Boot into UEFI OS (Windows)
 
 **Test description**
 
@@ -46,7 +46,7 @@ UEFI-aware Operating System.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

@@ -14,7 +14,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## NVI001.001 NVIDIA Graphics detect (Ubuntu 22.04)
+## NVI001.001 NVIDIA Graphics detect (Ubuntu)
 
 **Test description**
 
@@ -24,7 +24,7 @@ initialized and can be detected by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -48,7 +48,7 @@ initialized and can be detected by the operating system.
     2d:00.0 3D controller: NVIDIA Corporation TU117M (rev a1)
     ```
 
-## NVI001.002 NVIDIA Graphics detect (Windows 11)
+## NVI001.002 NVIDIA Graphics detect (Windows)
 
 **Test description**
 
@@ -58,7 +58,7 @@ initialized and can be detected by the operating system
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -89,7 +89,7 @@ Get-WmiObject -Class Win32_VideoController | Select Description, Name, Status
     NVIDIA GeForce GTX 1650      NVIDIA GeForce GTX 1650      OK
     ```
 
-## NVI002.001 NVIDIA Graphics power management (Ubuntu 22.04)
+## NVI002.001 NVIDIA Graphics power management (Ubuntu)
 
 **Test description**
 
@@ -99,7 +99,7 @@ and the card powers on only while it's used.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -147,7 +147,7 @@ and the card powers on only while it's used.
 1. The output from the second command should be the word `active`.
 1. The output from the third command should be the word `suspended`.
 
-## NVI002.002 NVIDIA Graphics power management (Windows 11)
+## NVI002.002 NVIDIA Graphics power management (Windows)
 
 **Test description**
 
@@ -157,7 +157,7 @@ and the card powers on only while it's used.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

@@ -23,7 +23,7 @@ logs can be accessed from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -117,7 +117,7 @@ TPM2 log entry 9:
 (...)
 ```
 
-## TPM001.002 TPM Support (Ubuntu 22.04)
+## TPM001.002 TPM Support (Ubuntu)
 
 **Test description**
 
@@ -127,7 +127,7 @@ be accessed from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -256,7 +256,7 @@ PCR-22: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 PCR-23: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 ```
 
-## TPM001.003 TPM Support (Windows 11)
+## TPM001.003 TPM Support (Windows)
 
 **Test description**
 
@@ -266,7 +266,7 @@ be accessed from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -323,7 +323,7 @@ This test aims to verify that the TPM is initialized correctly.
 
 `Current TPM Device` should contain `TPM 2.0` or `TPM 1.2`.
 
-## TPM002.001 Verify TPM version (Ubuntu 22.04)
+## TPM002.001 Verify TPM version (Ubuntu)
 
 **Test description**
 
@@ -333,7 +333,7 @@ operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -362,7 +362,7 @@ Example output:
 2
 ```
 
-## TPM002.002 Verify TPM version (Windows 11)
+## TPM002.002 Verify TPM version (Windows)
 
 **Test description**
 
@@ -372,7 +372,7 @@ operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -410,7 +410,7 @@ by the firmware.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -446,7 +446,7 @@ different per platform):
 
 If the above lines are present, the firmware supports TPM PPI.
 
-## TPM003.002 Check TPM Physical Presence Interface (Ubuntu 22.04)
+## TPM003.002 Check TPM Physical Presence Interface (Ubuntu)
 
 **Test description**
 
@@ -456,7 +456,7 @@ recognized by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 1. Platform with TPM 2.0 module present.
 
 **Test setup**
@@ -488,7 +488,7 @@ cat /sys/class/tpm/tpm0/ppi/version
 1.3
 ```
 
-## TPM003.003 Check TPM Physical Presence Interface (Windows 11)
+## TPM003.003 Check TPM Physical Presence Interface (Windows)
 
 **Test description**
 
@@ -498,7 +498,7 @@ recognized by the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 1. Platform with TPM 2.0 module present.
 
 **Test setup**
@@ -563,7 +563,7 @@ with running TPM Clear procedure to ensure correct state of ownership.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -723,7 +723,7 @@ This test aims to verify that the TPM supports needed hash algorithm (SHA512).
 
 The entry should contain `SHA512`.
 
-## TPM006.001 Encrypt and Decrypt non-rootfs partition (Ubuntu 22.04)
+## TPM006.001 Encrypt and Decrypt non-rootfs partition (Ubuntu)
 
 **Test description**
 
@@ -732,7 +732,7 @@ Test encrypting and decrypting non-rootfs partition using TPM.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -790,7 +790,7 @@ Test encrypting and decrypting non-rootfs partition using TPM.
 
 The output in step 5 should contain `hello-world`.
 
-## TPM007.001 Encrypt and Decrypt rootfs partition (Ubuntu 22.04)
+## TPM007.001 Encrypt and Decrypt rootfs partition (Ubuntu)
 
 **Test description**
 
@@ -799,7 +799,7 @@ Test encrypting and decrypting rootfs partition using TPM.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

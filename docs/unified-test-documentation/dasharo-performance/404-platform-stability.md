@@ -42,7 +42,7 @@ read the same menu is repeated.
 
 The platform should remain in the setup menu in every testing iteration.
 
-## STB001.002 Verify if no reboot occurs in the OS (Ubuntu 22.04)
+## STB001.002 Verify if no reboot occurs in the OS (Ubuntu)
 
 **Test description**
 
@@ -58,7 +58,7 @@ For testing purposes, additional stability criteria are adopted:
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -111,7 +111,7 @@ For testing purposes, additional stability criteria are adopted:
     If the device is connected to the Internet, a `UP` status should appear
     for at least one physical interface.
 
-## STB001.003 Verify if no reboot occurs in the OS (Windows 11)
+## STB001.003 Verify if no reboot occurs in the OS (Windows)
 
 **Test description**
 
@@ -127,7 +127,7 @@ For testing purposes, additional stability criteria are adopted:
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

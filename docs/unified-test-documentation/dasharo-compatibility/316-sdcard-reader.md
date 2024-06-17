@@ -14,7 +14,7 @@
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. Insert an SD card into the SD Card reader.
 
-## SDC001.001 SD Card reader detection (Ubuntu 22.04)
+## SDC001.001 SD Card reader detection (Ubuntu)
 
 **Test description**
 
@@ -24,7 +24,7 @@ can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -50,7 +50,7 @@ The output from the command should contain the line:
 2d:00.0 Unassigned class [ff00]: Realtek Semiconductor Co., Ltd. RTS522A PCI Express Card Reader (rev 01)
 ```
 
-## SDC001.002 SD Card reader detection (Windows 11)
+## SDC001.002 SD Card reader detection (Windows)
 
 **Test description**
 
@@ -60,7 +60,7 @@ can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -92,7 +92,7 @@ Status     Class           FriendlyName
 OK         MTD             Realtek PCIE CardReader
 ```
 
-## SDC002.001 SD Card read/write (Ubuntu 22.04)
+## SDC002.001 SD Card read/write (Ubuntu)
 
 **Test description**
 
@@ -102,7 +102,7 @@ can be used from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -132,7 +132,7 @@ The output from the last command should contain 2 identical checksums:
 2083776668ed0c8095a9ac42188153c02f360e116c14b36d2ef5c98665d75dcb  /tmp/out.bin
 ```
 
-## SDC002.002 SD Card read/write (Windows 11)
+## SDC002.002 SD Card read/write (Windows)
 
 **Test description**
 
@@ -142,7 +142,7 @@ can be used from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

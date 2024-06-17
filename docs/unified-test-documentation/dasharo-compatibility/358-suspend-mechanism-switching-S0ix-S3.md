@@ -11,7 +11,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 
-## SMS001.001 Suspend to Idle (S0ix) check (Ubuntu 22.04)
+## SMS001.001 Suspend to Idle (S0ix) check (Ubuntu)
 
 **Test description**
 
@@ -21,7 +21,7 @@ the BIOS firmware is correctly recognised in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -60,7 +60,7 @@ Example output:
 [s2idle] shallow
 ```
 
-## SMS001.002 Suspend to RAM (S3) check (Ubuntu 22.04)
+## SMS001.002 Suspend to RAM (S3) check (Ubuntu)
 
 **Test description**
 
@@ -70,7 +70,7 @@ the BIOS firmware is correctly recognised in the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
