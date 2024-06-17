@@ -13,15 +13,14 @@ should be maintained in that way.
    to understand versioning scheme please read [Versioning](versioning.md)
    section
 2. Merge current platform development branches to `<platform>_rel_vX.Y.Z`
-3. Run platform regression test suite
-4. Fix all required issues and repeat point 3 until fixed - this doesn't mean
-   all tests pass, this mean that approved set passed
-5. If results are accepted merge it to `dasharo` branch
-6. Add tag, which should trigger CI and publish binaries. Tag should be
+3. (Optional) Create a release candidate by tagging `<platform>_vX.Y.Z-rcN`
+4. Run platform regression test suite
+5. Fix all required issues and repeat from point 3 until fixed - this doesn't
+   mean all tests pass, this mean that approved set passed
+6. If results are accepted merge it to `dasharo` branch
+7. Add tag, which should trigger CI and publish binaries. Tag should be
    annotated and signed. For example:
 
     ```bash
     git tag -a -s -m "<platform>_vX.Y.Z" <platform>_vX.Y.Z
     ```
-
-7. Merge release branch to develop
