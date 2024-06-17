@@ -1,6 +1,6 @@
 # Dasharo compatibility: Memory HCL
 
-## HCL001.001 Memory HCL - boot into OS (Ubuntu 22.04)
+## HCL001.001 Memory HCL - boot into OS (Ubuntu)
 
 **Test description**
 
@@ -10,7 +10,7 @@ module combinations specified in the HCL.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

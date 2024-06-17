@@ -14,7 +14,7 @@
     [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
 1. Disable Secure Boot.
 
-## CBMEM001.001 coreboot booting time measure after coldboot (Ubuntu 22.04)
+## CBMEM001.001 coreboot booting time measure after coldboot (Ubuntu)
 
 **Test description**
 
@@ -25,7 +25,7 @@ results and specify the platform stability.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -48,7 +48,7 @@ sudo ./cbmem -T
 The output of the command should contain the information about duration of
 all boot stages.
 
-## CBMEM002.001 coreboot booting time measure after warmboot (Ubuntu 22.04)
+## CBMEM002.001 coreboot booting time measure after warmboot (Ubuntu)
 
 **Test description**
 
@@ -59,7 +59,7 @@ results and specify the platform stability.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -82,7 +82,7 @@ sudo ./cbmem -T
 The output of the command should contain the information about duration of
 all boot stages.
 
-## CBMEM003.001 coreboot booting time measure after system reboot (Ubuntu 22.04)
+## CBMEM003.001 coreboot booting time measure after system reboot (Ubuntu)
 
 **Test description**
 
@@ -93,7 +93,7 @@ the results and specify the platform stability.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 

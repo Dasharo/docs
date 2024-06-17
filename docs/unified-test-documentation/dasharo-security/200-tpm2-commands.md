@@ -28,7 +28,7 @@
 
     If not, run `tpm2_pcrallocate` and reboot the system.
 
-## TPMCMD001.001 Check if both SHA1 and SHA256 PCRs are enabled (Ubuntu 22.04)
+## TPMCMD001.001 Check if both SHA1 and SHA256 PCRs are enabled (Ubuntu)
 
 **Test description**
 
@@ -38,7 +38,7 @@ the user to specify a PCR allocation for the TPM.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -68,7 +68,7 @@ selected-pcrs:
   - sha512: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
 ```
 
-## TPMCMD002.001 PCRREAD Function Verification (Ubuntu 22.04)
+## TPMCMD002.001 PCRREAD Function Verification (Ubuntu)
 
 **Test description**
 
@@ -78,7 +78,7 @@ reads PCR banks and returns them to the terminal.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -129,7 +129,7 @@ The output should contain values of various PCR registers, example:
 (...)
 ```
 
-## TPMCMD003.001 PCREXTEND And PCRRESET Functions (Ubuntu 22.04)
+## TPMCMD003.001 PCREXTEND And PCRRESET Functions (Ubuntu)
 
 **Test description**
 
@@ -139,7 +139,7 @@ properly.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -197,7 +197,7 @@ accordingly.
 
 <!-- markdownlint-disable MD013 -->
 
-## TPMCMD003.002 PCREXTEND And PCRRESET Functions - locality protections (Ubuntu22.04)
+## TPMCMD003.002 PCREXTEND And PCRRESET Functions - locality protections (Ubuntu)
 
 <!-- markdownlint-enable MD013 -->
 
@@ -209,7 +209,7 @@ properly when trying to modify protected PCRs.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -247,7 +247,7 @@ Warning should appear after the first step and second step, the eighteenth bank
 should contain `0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF` after the third
 step.
 
-## TPMCMD004.001 PCREVENT Function (Ubuntu 22.04)
+## TPMCMD004.001 PCREVENT Function (Ubuntu)
 
 **Test description**
 
@@ -256,7 +256,7 @@ This test aims to verify that the PCREVENT function is working properly.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -311,7 +311,7 @@ This test aims to verify that the PCREVENT function is working properly.
 
 Hashes calculated manually should match those calculated by `tpm2_event`.
 
-## TPMCMD005.001 CREATEPRIMARY Function Verification (Ubuntu 22.04)
+## TPMCMD005.001 CREATEPRIMARY Function Verification (Ubuntu)
 
 **Test description**
 
@@ -322,7 +322,7 @@ Platform, Endorsement, NULL.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -375,7 +375,7 @@ rsa: a463fa1da7b5515481ad7171cad9402d1a4a0864cb918035733dc9095daa9798279cbf82fac
 289c9af6d3d319f049b60e3ae1f7e6b66d5c4371cc409b1a49f837dbad80f6184b7ab37c7c8118d12de502bbb3c4a38fdfad5a12a03d496079d3b97d25d0bb05bc0b00a6b4c34df02d02ba31861e68aa188e0394df57bb84a0a1fb46b41d53ec008f40e272d50b16ec5f7cbd8f8a92a72bcff7a2f17d6e122c6539b62f51c8b4881f412c4de814362725895
 ```
 
-## TPMCMD006.001 NVDEFINE and NVUNDEFINE Functions Verification (Ubuntu 22.04)
+## TPMCMD006.001 NVDEFINE and NVUNDEFINE Functions Verification (Ubuntu)
 
 **Test description**
 
@@ -386,7 +386,7 @@ Platform, Endorsement, NULL.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -436,7 +436,7 @@ The data should be successfully written and read using TPM Non-Volatile index
 but it also should not be read successfully after the TPM Non-Volatile index has
 been undefined.
 
-## TPMCMD007.001 CREATE Function (Ubuntu 22.04)
+## TPMCMD007.001 CREATE Function (Ubuntu)
 
 **Test description**
 
@@ -447,7 +447,7 @@ and public portions to the paths specified via `-u` and `-r` respectively.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -475,7 +475,7 @@ and public portions to the paths specified via `-u` and `-r` respectively.
 
 The public and secret portions should be sealed without any issues.
 
-## TPMCMD007.002 CREATELOADED Function (Ubuntu 22.04)
+## TPMCMD007.002 CREATELOADED Function (Ubuntu)
 
 **Test description**
 
@@ -486,7 +486,7 @@ path specified via `-c`.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -514,7 +514,7 @@ path specified via `-c`.
 
 The key should be stored in TPM without any issues.
 
-## TPMCMD008.001 Signing the file (Ubuntu 22.04)
+## TPMCMD008.001 Signing the file (Ubuntu)
 
 **Test description**
 
@@ -523,7 +523,7 @@ Check whether the TPM supports file signing.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -570,7 +570,7 @@ Check whether the TPM supports file signing.
 
 The file should be signed successfully.
 
-## TPMCMD009.001 Encryption and Decryption of the file (Ubuntu 22.04)
+## TPMCMD009.001 Encryption and Decryption of the file (Ubuntu)
 
 **Test description**
 
@@ -579,7 +579,7 @@ Check whether the TPM supports the encryption and decryption of the file.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -625,7 +625,7 @@ Check whether the TPM supports the encryption and decryption of the file.
 The file should be encrypted and then decrypted successfully. Content of
 `secret.data` and `secret.dec` should be the same.
 
-## TPMCMD010.001 Hashing the file (Ubuntu 22.04)
+## TPMCMD010.001 Hashing the file (Ubuntu)
 
 **Test description**
 
@@ -634,7 +634,7 @@ Check whether the TPM supports file hashing.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -659,7 +659,7 @@ Check whether the TPM supports file hashing.
 
 The hashes should be created successfully.
 
-## TPMCMD011.001 Performing HMAC operation on the file (Ubuntu 22.04)
+## TPMCMD011.001 Performing HMAC operation on the file (Ubuntu)
 
 **Test description**
 
@@ -668,7 +668,7 @@ Check whether the TPM supports HMAC operation.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -712,7 +712,7 @@ Check whether the TPM supports HMAC operation.
 
 Verify that HMAC operation ended successfully.
 
-## TPMCMD012.001 Sealing and Unsealing the file without Policy (Ubuntu 22.04)
+## TPMCMD012.001 Sealing and Unsealing the file without Policy (Ubuntu)
 
 **Test description**
 
@@ -721,7 +721,7 @@ This test verifies TPM sealing functionality.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -758,7 +758,7 @@ This test verifies TPM sealing functionality.
 
 The output in step 6 should be the equal to the content of `seal.dat`.
 
-## TPMCMD013.001 Sealing and Unsealing with Policy - Password Only (Ubuntu 22.04)
+## TPMCMD013.001 Sealing and Unsealing with Policy - Password Only (Ubuntu)
 
 **Test description**
 
@@ -767,7 +767,7 @@ Check whether the TPM supports sealing and unsealing using password policy.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -807,7 +807,7 @@ Check whether the TPM supports sealing and unsealing using password policy.
 
 The output in step 6 should be the equal to the content of `seal.dat`.
 
-## TPMCMD013.002 Sealing and Unsealing with Policy - PCR Only (Ubuntu 22.04)
+## TPMCMD013.002 Sealing and Unsealing with Policy - PCR Only (Ubuntu)
 
 **Test description**
 
@@ -816,7 +816,7 @@ Check whether the TPM supports sealing and unsealing using PCR policy.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -856,7 +856,7 @@ Check whether the TPM supports sealing and unsealing using PCR policy.
 
 The output in step 6 should be the equal to the content of `seal.dat`.
 
-## TPMCMD013.003 Sealing and unsealing with Policy - Password and PCR (Ubuntu 22.04)
+## TPMCMD013.003 Sealing and unsealing with Policy - Password and PCR (Ubuntu)
 
 **Test description**
 
@@ -866,7 +866,7 @@ policy at the same time.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

@@ -1,6 +1,6 @@
 # Dasharo Security: BIOS lock support
 
-## BLS001.001 BIOS lock support (Ubuntu 22.04)
+## BLS001.001 BIOS lock support (Ubuntu)
 
 **Test description**
 
@@ -12,7 +12,7 @@ by using flashrom tool.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -64,7 +64,7 @@ you should use a flash layout and include only writable regions. See
 manpage for more details.
 ```
 
-## BLS002.001 BIOS lock support deactivation (Ubuntu 22.04)
+## BLS002.001 BIOS lock support deactivation (Ubuntu)
 
 **Test description**
 
@@ -75,7 +75,7 @@ the BIOS region overwriting operation is available again.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

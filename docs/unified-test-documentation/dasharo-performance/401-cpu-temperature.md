@@ -12,7 +12,7 @@
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Install `lm-sensors` package: `sudo apt install lm-sensors`.
 
-## CPT001.001 CPU temperature without load (Ubuntu 22.04)
+## CPT001.001 CPU temperature without load (Ubuntu)
 
 **Test description**
 
@@ -22,7 +22,7 @@ booting is not higher than the maximum allowed temperature.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -59,7 +59,7 @@ Example output:
 Displayed temperature should be not higher than declared by the DUT
 specifications.
 
-## CPT002.001 CPU temperature during stress test (Ubuntu 22.04)
+## CPT002.001 CPU temperature during stress test (Ubuntu)
 
 **Test description**
 
@@ -69,7 +69,7 @@ than the maximum allowed temperature during stress test.
 **Test configuration data**
 
 1. `FIRMWARE` = coreboot
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 

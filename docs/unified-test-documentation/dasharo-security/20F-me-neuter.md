@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## MNE001.001 Check Intel ME version (Ubuntu 22.04)
+## MNE001.001 Check Intel ME version (Ubuntu)
 
 **Test description**
 
@@ -24,7 +24,7 @@ notes.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -89,7 +89,7 @@ platform with the Dasharo firmware is correct.
 
 The `Intel ME mode` field should inform that the current state is `Enabled`.
 
-## MNE003.001 Intel ME mode option Enabled works correctly (Ubuntu 22.04)
+## MNE003.001 Intel ME mode option Enabled works correctly (Ubuntu)
 
 **Test description**
 
@@ -99,7 +99,7 @@ correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -140,7 +140,7 @@ Example output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE004.001 Intel ME mode option Disable (Soft) works correctly (Ubuntu 22.04)
+## MNE004.001 Intel ME mode option Disable (Soft) works correctly (Ubuntu)
 
 **Test description**
 
@@ -150,7 +150,7 @@ works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -191,7 +191,7 @@ Example of unwanted output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE005.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu 22.04)
+## MNE005.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu)
 
 **Test description**
 
@@ -201,7 +201,7 @@ works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -242,7 +242,7 @@ Example of unwanted output:
 Intel Corporation Comet Lake Management Engine Interface
 ```
 
-## MNE006.001 PCI Express 5.0 port is functional when ME disabled (Ubuntu 22.04)
+## MNE006.001 PCI Express 5.0 port is functional when ME disabled (Ubuntu)
 
 **Test description**
 
@@ -253,7 +253,7 @@ of PCIe 5.0 firmware by Dasharo works.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Ubuntu 22.04
+2. `OPERATING_SYSTEM` = Ubuntu
 3. DUT (Alder Lake or newer) with PCIe 5.0 port and a PCIe device plugged to
    the port.
 

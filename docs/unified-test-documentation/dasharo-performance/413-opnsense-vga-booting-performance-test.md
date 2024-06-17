@@ -23,7 +23,7 @@ disk on the DUT after cold-boot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense VGA 23.01
+1. `OPERATING_SYSTEM` = OPNsense VGA
 
 **Test setup**
 
@@ -54,7 +54,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense VGA 23.01
+1. `OPERATING_SYSTEM` = OPNsense VGA
 
 **Test setup**
 
@@ -84,7 +84,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense VGA 23.01
+1. `OPERATING_SYSTEM` = OPNsense VGA
 
 **Test setup**
 

@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## CPU001.001 CPU works (Ubuntu 22.04)
+## CPU001.001 CPU works (Ubuntu)
 
 **Test description**
 
@@ -22,7 +22,7 @@ Check whether the mounted on the DUT CPU works.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -38,7 +38,7 @@ Check whether the mounted on the DUT CPU works.
 
 The `OPERATING_SYSTEM` screen should be displayed.
 
-## CPU001.002 CPU works (Windows 11)
+## CPU001.002 CPU works (Windows)
 
 **Test description**
 
@@ -47,7 +47,7 @@ Check whether the mounted on the DUT CPU works.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -63,7 +63,7 @@ Check whether the mounted on the DUT CPU works.
 
 The `OPERATING_SYSTEM` screen should be displayed.
 
-## CPU002.001 CPU cache enabled (Ubuntu 22.04)
+## CPU002.001 CPU cache enabled (Ubuntu)
 
 **Test description**
 
@@ -72,7 +72,7 @@ Check whether all declared for the DUT cache levels are enabled.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -114,7 +114,7 @@ LEVEL4_CACHE_ASSOC                 0
 LEVEL4_CACHE_LINESIZE              0
 ```
 
-## CPU002.002 CPU cache enabled (Windows 11)
+## CPU002.002 CPU cache enabled (Windows)
 
 **Test description**
 
@@ -123,7 +123,7 @@ Check whether all declared for the DUT cache levels are enabled.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -165,7 +165,7 @@ CacheType     : 5
 InstalledSize : 8192
 ```
 
-## CPU003.001 Multiple CPU support (Ubuntu 22.04)
+## CPU003.001 Multiple CPU support (Ubuntu)
 
 **Test description**
 
@@ -174,7 +174,7 @@ Check whether the DUT has multiple CPU support.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -210,7 +210,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ```
 
-## CPU003.002 Multiple CPU support (Windows 11)
+## CPU003.002 Multiple CPU support (Windows)
 
 **Test description**
 
@@ -219,7 +219,7 @@ Check whether the DUT has multiple CPU support.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -248,7 +248,7 @@ NumberOfCores
 4
 ```
 
-## CPU004.001 Multiple-core support (Ubuntu 22.04)
+## CPU004.001 Multiple-core support (Ubuntu)
 
 **Test description**
 
@@ -257,7 +257,7 @@ Check whether the DUT has multi-core support.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -293,7 +293,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ```
 
-## CPU004.002 Multiple-core support (Windows 11)
+## CPU004.002 Multiple-core support (Windows)
 
 **Test description**
 
@@ -302,7 +302,7 @@ Check whether the DUT has multi-core support.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

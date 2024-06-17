@@ -14,7 +14,7 @@
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. Disable Secure Boot.
 
-## SMM001.001 SMM BIOS write protection enabling (Ubuntu 22.04)
+## SMM001.001 SMM BIOS write protection enabling (Ubuntu)
 
 **Test description**
 
@@ -29,7 +29,7 @@ returned.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -70,7 +70,7 @@ Example output:
 Enabling flash write... Warning: BIOS region SMM protection is enabled!
 ```
 
-## SMM002.001 SMM BIOS write protection disabling (Ubuntu 22.04)
+## SMM002.001 SMM BIOS write protection disabling (Ubuntu)
 
 **Test description**
 
@@ -83,7 +83,7 @@ SMM protection is not returned any more.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

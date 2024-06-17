@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## SNV0001.001 NVMe detection after cold boot (Ubuntu 22.04)
+## SNV0001.001 NVMe detection after cold boot (Ubuntu)
 
 **Test description**
 
@@ -23,7 +23,7 @@ performing a cold boot. The test should be performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -61,7 +61,7 @@ on the DUT NVMe disk. Example output:
 01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller 980
 ```
 
-## SNV0001.001 NVMe detection after warm boot (Ubuntu 22.04)
+## SNV0001.001 NVMe detection after warm boot (Ubuntu)
 
 **Test description**
 
@@ -71,7 +71,7 @@ performing a warm boot. The test should be performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -108,7 +108,7 @@ on the DUT NVMe disk. Example output:
 01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller 980
 ```
 
-## SNV0003.001 NVMe detection after reboot (Ubuntu 22.04)
+## SNV0003.001 NVMe detection after reboot (Ubuntu)
 
 **Test description**
 
@@ -118,7 +118,7 @@ performing a reboot. The test should be performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -156,7 +156,7 @@ on the DUT NVMe disk. Example output:
 01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller 980
 ```
 
-## SNV0004.001 NVMe detection after suspension (Ubuntu 22.04)
+## SNV0004.001 NVMe detection after suspension (Ubuntu)
 
 **Test description**
 
@@ -166,7 +166,7 @@ performing suspension. The test should be performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

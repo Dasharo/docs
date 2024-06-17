@@ -24,7 +24,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense CE serial 2.6.0
+1. `OPERATING_SYSTEM` = pfSense CE serial
 
 **Test setup**
 
@@ -55,7 +55,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense CE serial 2.6.0
+1. `OPERATING_SYSTEM` = pfSense CE serial
 
 **Test setup**
 
@@ -85,7 +85,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = pfSense CE serial 2.6.0
+1. `OPERATING_SYSTEM` = pfSense CE serial
 
 **Test setup**
 

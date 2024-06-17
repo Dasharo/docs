@@ -57,7 +57,7 @@ detected after hot-plug.
     all hard disks connected to the device.
 1. The refreshed list should contain additional item - mounted SATA disk.
 
-## SHT001.002 SATA hot plug (Ubuntu 22.04)
+## SHT001.002 SATA hot plug (Ubuntu)
 
 **Test description**
 
@@ -67,7 +67,7 @@ detected after hot-plug.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -106,7 +106,7 @@ Number  Start   End     Size    File system  Name                  Flags
 (...)
 ```
 
-## SHT001.003 SATA hot plug (Windows 11)
+## SHT001.003 SATA hot plug (Windows)
 
 **Test description**
 
@@ -116,7 +116,7 @@ detected after hot-plug.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## CFC001.001 Custom fan curve silent profile measure (Ubuntu 22.04)
+## CFC001.001 Custom fan curve silent profile measure (Ubuntu)
 
 **Test description**
 
@@ -105,7 +105,7 @@ Example check for 30°C and 70 PWM values:
 Values `expected_speed` and `actual_speed` are strongly similar. This means
 that the fan control is set correctly.
 
-## CFC002.001 Custom fan curve performance profile measure (Ubuntu 22.04)
+## CFC002.001 Custom fan curve performance profile measure (Ubuntu)
 
 **Test description**
 
