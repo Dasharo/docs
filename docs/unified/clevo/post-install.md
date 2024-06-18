@@ -40,14 +40,19 @@ sudo update-initramfs -u
 
 ### Updated kernel
 
-On Gen 12 (Alder Lake), it's recommended to install the ubuntu-oem kernel which
-is a newer version than the default Ubuntu kernel. This version contains
+On Gen 14 (Meteor Lake), it's recommended to install the Ubuntu mainline kernel,
+which is a newer version than the default Ubuntu kernel. This version contains
 additional fixes for newer hardware which helps with power management and
-suspend on Gen 12 laptops. To install the ubuntu-oem kernel, run the following
-command:
+suspend on Gen 14 laptops. To install the mainline kernel, run the following
+commands:
 
 ```bash
-sudo apt install linux-oem-22.04a
+wget https://kernel.ubuntu.com/mainline/v6.9/amd64/linux-headers-6.9.0-060900_6.9.0-060900.202405122134_all.deb \
+	https://kernel.ubuntu.com/mainline/v6.9/amd64/linux-image-unsigned-6.9.0-060900-generic_6.9.0-060900.202405122134_amd64.deb \
+	https://kernel.ubuntu.com/mainline/v6.9/amd64/linux-modules-6.9.0-060900-generic_6.9.0-060900.202405122134_amd64.deb
+sudo apt install ./linux-headers-6.9.0-060900_6.9.0-060900.202405122134_all.deb \
+	./linux-image-unsigned-6.9.0-060900-generic_6.9.0-060900.202405122134_amd64.deb \
+	./linux-modules-6.9.0-060900-generic_6.9.0-060900.202405122134_amd64.deb
 ```
 
 and reboot to use the new kernel.
