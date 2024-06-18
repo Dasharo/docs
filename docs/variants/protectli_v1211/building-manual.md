@@ -3,7 +3,7 @@
 ## Intro
 
 This document describes the procedure for compiling coreboot for Protectli
-V1210, V1410 and V1610.
+V1211.
 
 ## Requirements
 
@@ -56,21 +56,9 @@ V1210, V1410 and V1610.
     + for V1210
 
         ```bash
-        ./build.sh V1210
-        ```
-
-    + for V1410
-
-        ```bash
-        ./build.sh V1410
-        ```
-
-    + for V1610
-
-        ```bash
-        ./build.sh V1610
+        ./build.sh V1211
         ```
 
 The resulting coreboot image will be placed in the coreboot directory as
-`protectli_V1210.rom`, `protectli_V1410.rom` or `protectli_V1610.rom`
+`protectli_V1211.rom`
 respectvely.
