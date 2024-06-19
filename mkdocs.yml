@@ -253,15 +253,16 @@ nav:
       #     - 'Recovery': variants/protectli_vp66xx/recovery.md
       #     - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
       #     - 'Test matrix': variants/protectli_vp66xx/test-matrix.md
-      # - 'Protectli V1210/V1410/V1610':
-      #     - 'Overview': variants/protectli_v1x10/overview.md
-      #     - 'Releases': variants/protectli_v1x10/releases.md
-      #     - 'Building manual': variants/protectli_v1x10/building-manual.md
-      #     - 'Initial deployment': variants/protectli_v1x10/initial-deployment.md
-      #     - 'Firmware update': variants/protectli_v1x10/firmware-update.md
-      #     - 'Recovery': variants/protectli_v1x10/recovery.md
-      #     - 'Hardware Configuration Matrix': variants/protectli_v1x10/hardware-matrix.md
-      #     - 'Test matrix': variants/protectli_v1x10/test-matrix.md
+      - 'Protectli V1000 series':
+          - 'Overview': variants/protectli_v1x10/overview.md
+          - 'Releases': variants/protectli_v1x10/releases.md
+          - 'Building manual': variants/protectli_v1x10/building-manual.md
+          - 'Initial deployment': variants/protectli_v1x10/initial-deployment.md
+          - 'Firmware update': variants/protectli_v1x10/firmware-update.md
+          - 'Recovery': variants/protectli_v1x10/recovery.md
+          - 'Hardware Configuration Matrix': variants/protectli_v1x10/hardware-matrix.md
+          - 'Test matrix': variants/protectli_v1x10/test-matrix.md
+          - 'Openness score': variants/protectli_v1x10/openness-score.md
       - 'QEMU Q35 Emulator':
           - 'Overview': variants/qemu_q35/overview.md
           - 'Releases': variants/qemu_q35/releases.md
