@@ -54,7 +54,7 @@ can be detected from the operating system.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep "Thread(s) per core: "
     ```
 
@@ -99,7 +99,7 @@ can be detected from the operating system.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep "Thread(s) per core: "
     ```
 
@@ -136,7 +136,7 @@ For disabled Hyper-Threading expected value is 2.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -173,7 +173,7 @@ We should get the number of logical P-cores.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -210,7 +210,7 @@ We should get the number of all logical cores.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -247,7 +247,7 @@ We should get the number of all physical P-cores.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -284,7 +284,7 @@ We should get the number of all physical cores.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -321,7 +321,7 @@ We should get the number of all physical E-cores + 2.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -358,7 +358,7 @@ We should get the number of all logical cores.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -395,7 +395,7 @@ We should get the number of all physical E-cores + 1.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -405,7 +405,7 @@ We should get the number of all physical E-cores + 1.
 
 We should get the number of all physical cores.
 
-## CCC004.001 CPU P-cores only one active, CPU E-cores disabled, Hyper-Threading disabled (Ubuntu)
+## CCC004.001 P-cores only one active, E-cores disabled, HT disabled (Ubuntu)
 
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -441,7 +441,7 @@ We should get the number of all physical cores.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -451,7 +451,7 @@ We should get the number of all physical cores.
 
 We should get a number 1.
 
-## CCC004.002 CPU P-cores only one active, CPU E-cores disabled, Hyper-Threading enabled (Ubuntu)
+## CCC004.002 P-cores only one active, E-cores disabled, HT enabled (Ubuntu)
 
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -487,7 +487,7 @@ We should get a number 1.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
@@ -497,7 +497,7 @@ We should get a number 1.
 
 We should get a number 2.
 
-## CCC005.001 CPU P-cores all active, CPU E-cores all active, Hyper-Threading enabled (Ubuntu)
+## CCC005.001 P-cores all active, E-cores all active, HT enabled (Ubuntu)
 
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
@@ -533,7 +533,7 @@ We should get a number 2.
 1. Execute the following command in the terminal to check platform core count
     conditions:
 
-    ```
+    ```bash
     lscpu | grep -v "NUMA" | grep "CPU(s):"
     ```
 
