@@ -1,9 +1,9 @@
 # Firmware update
 
 The following documentation describes the process of Dasharo open-source
-firmware update. If your device is currently flashed with the proprietary
-firmware please refer to the [Initial deployment](initial-deployment.md)
-documentation.
+firmware update. If your device is currently flashed with the original PC
+Engines firmware firmware please refer to the [Initial
+deployment](initial-deployment.md) documentation.
 
 The update process may be different, depending on the currently installed
 Dasharo firmware version.
@@ -31,12 +31,12 @@ protect pin jumper on J2 (apu2) or J3 (apu3/4/6).
 
     The settings of all the above options can be restored after a firmware update.
 
+    ## Updating Dasharo
+
+    ```bash
+    flashrom -p internal -w pcengines_apu<variant>_v<version>.rom --fmap -i WP_RO -i RW_SECTION_A
+    ```
+
 === "(coreboot+SeaBIOS) firmware"
 
-    No additional steps required.
-
-## Updating Dasharo
-
-```bash
-flashrom -p internal -w pcengines_apu<variant>_v<version>.rom --fmap -i WP_RO -i RW_SECTION_A
-```
+    1. Power on the device.

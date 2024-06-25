@@ -2,7 +2,14 @@
 
 This document describes the process of updating
 [PC Engines coreboot firmware](https://pcengines.github.io/) to Dasharo firmware
-based on EDK II.
+based on EDK II (aka Dasharo (coreboot+UEFI)).
+
+!!! note
+
+    If you looking for initial deployment procedure which will transition from
+    [original PC Engines firmware](https://pcengines.github.io/) to Dasharo
+    (coreboot+SeaBIOS) you can simply use [Firmware Update](firmware-update.md#corebootseabios-firmware)
+    guide.
 
 ## OS compatibility
 
