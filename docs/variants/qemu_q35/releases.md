@@ -3,6 +3,59 @@
 Following Release Notes describe status of Open Source Firmware development for
 QEMU Q35 (Emulator).
 
+## v0.2.0 - 2024-21-06
+
+Tests reports and logs can be found
+[here](https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu/q35/v0.2.0/).
+This release is the first `Dasharo (coreboot+UEFI)` image, contrary to
+`Dasharo (UEFI)` used previously. This makes QEMU Q35 more similar to other
+platforms, which hopefully will make testing on it more viable.
+
+### Added
+
+- Two different variants available, one with only functional menus, and another
+  with all Dasharo System Features menus enabled
+- Both variants can be created with `build.sh`, both are built by CI
+- Full image has the same menus enabled as previous release, but their contents
+  are limited by coreboot (e.g. if an option is specific to SoC).
+
+### Changed
+
+- Firmware image now contains coreboot, in addition to edk2. This changes the
+  way some things work:
+    + UEFI variables are saved in SMMSTORE, as in other platforms supported by
+      Dasharo.
+    + Availability of some menu options is controlled by coreboot, and may
+      differ based on the way QEMU is started. Examples of this are CPU
+      Configuration menu (its content depends on `-smp` parameter) and lack of
+      flash protection mechanisms.
+    + OVMF package isn't used, instead a common DasharoPlatformPkg is. This
+      makes this release more in line with the rest of Dasharo platforms.
+- Debug output is printed on serial output, instead of dedicated `debugcon`.
+  This makes it easier to synchronize output from coreboot, edk2 and OS.
+
+### Known issues
+
+- Build fails if [Watchdog configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
+  is enabled. This option has been disabled in full variant.
+- Virtio drivers are not available in the firmware. It is possible to install OS
+  on disk mounted with `if=virtio`, however, it won't be visible by UEFI and
+  won't be bootable because of that.
+- S3 doesn't work.
+- [Booting is slow](https://github.com/Dasharo/dasharo-issues/issues/898).
+- [`Reset to Defaults` doesn't work as it should](https://github.com/Dasharo/dasharo-issues/issues/887).
+
+### Binaries
+
+Binaries can be found in
+[GitHub release](https://github.com/Dasharo/coreboot/releases/tag/qemu_q35_v0.2.0).
+
+### SBOM
+
+- [Dasharo coreboot fork based on 0a280ff7 revision 26c5df90](https://github.com/Dasharo/coreboot/tree/26c5df90)
+- [Dasharo EDK II fork based on edc66812 revision 11b26796](https://github.com/Dasharo/edk2/tree/11b26796)
+- [Dasharo iPXE fork based on fa622132 revision 838611b3](https://github.com/Dasharo/ipxe/commit/838611b3)
+
 ## v0.1.0 - 2023-12-06
 
 Tests reports and logs can be found
@@ -23,8 +76,8 @@ Following features can be fully used:
 - [iPXE network boot](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/315-network-boot/)
 - [ESP partition scanning in look for grubx64.efi or shimx64.efi or Windows bootmgr](https://github.com/Dasharo/dasharo-issues/issues/94)
 
-Following features are visible in setup menu and can be used for testing the menus,
-but have no actual backend hooked up:
+Following features are visible in setup menu and can be used for testing the
+menus, but have no actual backend hooked up:
 
 - [PS/2 Controller enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
 - [Watchdog configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
