@@ -45,6 +45,30 @@ Release updates, one can subscribed to free of charge mailing list for given
 hardware platform, for which the link can be found in menu on the left side
 (Supported Hardware->Hardware Model->Releases).
 
+## PC Engines releases and its exceptional versioning scheme
+
+Dasharo (coreboot+SeaBIOS) for PC Engines does not adhere to the typical
+versioning scheme used by Dasharo, which is semantic versioning. This is due to
+a couple of reasons:
+
+- We want to convey that this series of releases is a direct continuation of
+  past efforts sponsored by PC Engines and published
+  [here](https://pcengines.github.io/). By sticking to that versioning scheme, we
+  do not deviate from the agreed pattern and what users are accustomed to.
+- We have utilized the same infrastructure, and maintaining versioning
+  according to the pattern used by us since 2017 has helped us minimize changes.
+
+The general rule for versioning pattern is as follows: `<coreboot_rel_ver>{.00.}<dasharo_rel_num>`
+
+- `<coreboot_rel_ver>` - changed in February 2024, from x.y.z to YY.MM{.FF},
+  where `YY` represents the year, `MM` represents the month, and optional `{.FF}`
+  represents the patch number if any hotfix for the given release is created.
+- `{.00.}` - if no hotfix exists for the given coreboot release, we add `.00.`
+  to reserve space for a potential hotfix on that version.
+- `<dasharo_rel_num>` - indicates the number of versions released by the
+  Dasharo Team on top of the given coreboot release, starting from `01`, where
+  version `00` means no changes were applied on top of the coreboot release.
+
 ## Signing keys
 
 In Dasharo we use following rules for keys:
