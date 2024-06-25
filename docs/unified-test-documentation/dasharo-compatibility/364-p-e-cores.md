@@ -114,6 +114,10 @@ For disabled Hyper-Threading expected value is 2.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `CPU Configuration` submenu.
 1. Verify that the `Hyper-Threading` option is chosen - if
@@ -137,7 +141,7 @@ For disabled Hyper-Threading expected value is 2.
     conditions:
 
     ```bash
-    lscpu | grep -v "NUMA" | grep "CPU(s):"
+    lscpu | grep -v "NUMA" | grep "Core(s) per socket:
     ```
 
 1. Compare the number with expected value.
@@ -149,6 +153,10 @@ We should get the number of logical P-cores.
 ## CCC002.002 CPU E-cores all active, Hyper-Threading enabled (Ubuntu)
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
@@ -188,6 +196,10 @@ We should get the number of all logical cores.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `CPU Configuration` submenu.
 1. Verify that the `Hyper-Threading` option is not chosen - if
@@ -211,7 +223,7 @@ We should get the number of all logical cores.
     conditions:
 
     ```bash
-    lscpu | grep -v "NUMA" | grep "CPU(s):"
+    lscpu | grep -v "NUMA" | grep "Core(s) per socket:"  
     ```
 
 1. Compare the number with expected value.
@@ -223,6 +235,10 @@ We should get the number of all physical P-cores.
 ## CCC002.004 CPU E-cores all active, Hyper-Threading disabled (Ubuntu)
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
@@ -248,7 +264,7 @@ We should get the number of all physical P-cores.
     conditions:
 
     ```bash
-    lscpu | grep -v "NUMA" | grep "CPU(s):"
+    lscpu | grep -v "NUMA" | grep "Core(s) per socket:"
     ```
 
 1. Compare the number with expected value.
@@ -260,6 +276,10 @@ We should get the number of all physical cores.
 ## CCC003.001 CPU P-cores only one active, Hyper-Threading enabled (Ubuntu)
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
@@ -285,7 +305,7 @@ We should get the number of all physical cores.
     conditions:
 
     ```bash
-    lscpu | grep -v "NUMA" | grep "CPU(s):"
+    lscpu | grep -v "NUMA" | grep "Core(s) per socket:"
     ```
 
 1. Compare the number with expected value.
@@ -297,6 +317,10 @@ We should get the number of all physical E-cores + 2.
 ## CCC003.002 CPU P-cores all active, Hyper-Threading enabled (Ubuntu)
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
@@ -336,6 +360,10 @@ We should get the number of all logical cores.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `CPU Configuration` submenu.
 1. Verify that the `Hyper-Threading` option is not chosen - if
@@ -359,7 +387,7 @@ We should get the number of all logical cores.
     conditions:
 
     ```bash
-    lscpu | grep -v "NUMA" | grep "CPU(s):"
+    lscpu | grep -v "NUMA" | grep "Core(s) per socket:"
     ```
 
 1. Compare the number with expected value.
@@ -373,6 +401,10 @@ We should get the number of all physical E-cores + 1.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `CPU Configuration` submenu.
 1. Verify that the `Hyper-Threading` option is not chosen - if
@@ -396,7 +428,7 @@ We should get the number of all physical E-cores + 1.
     conditions:
 
     ```bash
-    lscpu | grep -v "NUMA" | grep "CPU(s):"
+    lscpu | grep -v "NUMA" | grep "Core(s) per socket:"
     ```
 
 1. Compare the number with expected value.
@@ -408,6 +440,10 @@ We should get the number of all physical cores.
 ## CCC004.001 P-cores only one active, E-cores disabled, HT disabled (Ubuntu)
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
@@ -456,6 +492,10 @@ We should get a number 1.
 1. Power on the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `CPU Configuration` submenu.
 1. Verify that the `Hyper-Threading` option is chosen - if
@@ -500,6 +540,10 @@ We should get a number 2.
 ## CCC005.001 P-cores all active, E-cores all active, HT enabled (Ubuntu)
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
+    Menu.
+1. Press `F9` to reset settings to default values and press `Y` to accept.
+1. Restart the system
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
     Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
