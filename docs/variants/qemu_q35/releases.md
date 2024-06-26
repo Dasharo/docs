@@ -3,7 +3,7 @@
 Following Release Notes describe status of Open Source Firmware development for
 QEMU Q35 (Emulator).
 
-## v0.2.0 - 2024-21-06
+## v0.2.0 - 2024-26-06
 
 Tests reports and logs can be found
 [here](https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu/q35/v0.2.0/).
@@ -36,14 +36,16 @@ platforms, which hopefully will make testing on it more viable.
 
 ### Known issues
 
-- Build fails if [Watchdog configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
-  is enabled. This option has been disabled in full variant.
-- Virtio drivers are not available in the firmware. It is possible to install OS
-  on disk mounted with `if=virtio`, however, it won't be visible by UEFI and
-  won't be bootable because of that.
-- S3 doesn't work.
+- [Virtio drivers are not available in the firmware](https://github.com/Dasharo/dasharo-issues/issues/901).
+  It is possible to install OS on disk mounted with `if=virtio`, however, it
+  won't be detected by UEFI and won't be bootable because of that.
+- [S3 doesn't work](https://github.com/Dasharo/dasharo-issues/issues/902).
 - [Booting is slow](https://github.com/Dasharo/dasharo-issues/issues/898).
 - [`Reset to Defaults` doesn't work as it should](https://github.com/Dasharo/dasharo-issues/issues/887).
+    + Another manifestation of the same issue is that build fails if [Watchdog
+      configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
+      is enabled. This option has been disabled even in full variant until
+      resolved.
 
 ### Binaries
 
