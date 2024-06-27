@@ -59,8 +59,16 @@ To access Dasharo Tools Suite:
 
     ```bash
     dhcp net0
-    chain http://boot.dasharo.com/dts/dts.ipxe
+    chain https://boot.dasharo.com/dts/dts.ipxe
     ```
+
+    !!! warning
+
+        Because of misconfigured iPXE on some firmware releases, booting over
+        HTTPS is impossible, and the above command will fail. In that case, we
+        recommend downloading the DTS image to USB. If you feel there is no
+        risk of an MITM attack, you can proceed with
+        `http://boot.dasharo.com/dts/dts.ipxe` at your own risk.
 
 * the DTS menu will now appear.
 
