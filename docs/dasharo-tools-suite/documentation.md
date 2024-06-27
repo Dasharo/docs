@@ -42,9 +42,9 @@ platform:
 * Dasharo device with DTS functionality integrated,
 * wired network connection,
 * [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* disabled BIOS lock feature (if device is already flashed with Dasharo),
-* disabled SMM BIOS write protection feature (if device is already flashed
-  with Dasharo).
+* If device if flashed with Dasharo and support following functionality
+    + disabled BIOS lock feature,
+    + disabled SMM BIOS write protection feature.
 
 #### Launching DTS
 
@@ -53,7 +53,14 @@ To access Dasharo Tools Suite:
 * attach a wired network cable to the device's Ethernet port,
 * power on the device, holding down the Boot Menu entry key,
 * in the Boot Menu, select the `iPXE Network Boot` option,
-* in the Network Boot menu, select the `Dasharo Tools Suite` option,
+* in the Network Boot menu, select the `Dasharo Tools Suite` option, or enter
+  iPXE shell and type by hand:
+
+    ```bash
+    dhcp net0
+    chain https://boot.3mdeb.com/dts.ipxe
+    ```
+
 * the DTS menu will now appear.
 
 ### Bootable USB stick
@@ -66,13 +73,14 @@ Below are the requirements that must be met to run DTS from a USB device on the
 platform:
 
 * USB stick (at least 2GB),
-* wired network connection,
-* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* disabled BIOS lock feature (if device is already flashed with Dasharo),
-* latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
+* Latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
   section.
-* disabled SMM BIOS write protection feature (if device is already flashed
   with Dasharo).
+* Wired network connection,
+* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
+* If device if flashed with Dasharo and support following functionality
+    + disabled BIOS lock feature,
+    + disabled SMM BIOS write protection feature.
 
 #### Launching DTS
 
