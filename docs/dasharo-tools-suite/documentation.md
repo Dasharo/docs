@@ -59,7 +59,7 @@ To access Dasharo Tools Suite:
 
     ```bash
     dhcp net0
-    chain https://boot.3mdeb.com/dts.ipxe
+    chain http://boot.dasharo.com/dts/dts.ipxe
     ```
 
 * the DTS menu will now appear.
