@@ -87,8 +87,8 @@ platform:
 To access Dasharo Tools Suite:
 
 * flash the downloaded image onto USB stick,
-    - you can use a cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
-    - you can also use `dd` to flash from the command line
+    + you can use a cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
+    + you can also use `dd` to flash from the command line
 
 ```bash
 gzip -cdk dts-base-image-v1.1.0.wic.gz | \
@@ -254,12 +254,12 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
 * [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 * [HCL Report](#hcl-report),
 * [Firmware update](#firmware-update),
-    - [Local firmware update](#local-firmware-update),
+    + [Local firmware update](#local-firmware-update),
 * [EC transition](#ec-transition),
 * [EC update](#ec-update),
 * [additional features](#additional-features),
-    - [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
-    - [run DTS using VentoyOS](#run-dts-using-ventoyos).
+    + [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
+    + [run DTS using VentoyOS](#run-dts-using-ventoyos).
 
 ### Dasharo zero-touch initial deployment
 
@@ -364,12 +364,12 @@ Please consider the following options depending on your situation:
   hardware.
 * **NO (default)** - If you decide to not contribute, your situation depends on
   the boot method you used to execute DTS:
-    - **Network Boot** - please note that Dasharo booted over iPXE assumes no
+    + **Network Boot** - please note that Dasharo booted over iPXE assumes no
       storage available, so the report, and your BIOS backup are stored in
       temporary memory and will not be available after reboot. Please make sure
       to move HCL Report to not volatile storage. This can be done using option
       `9) Shell`,
-    - **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
+    + **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
       directory.
 
 ### Firmware update
