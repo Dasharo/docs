@@ -1,10 +1,10 @@
 # Initial deployment
 
-This document describes the process of updating
-[PC Engines coreboot firmware](https://pcengines.github.io/) to Dasharo firmware
-based on EDK II.
+This document describes the process of updating [PC Engines coreboot
+firmware](https://pcengines.github.io/) to Dasharo firmware based on EDK II
+(aka Dasharo (coreboot+UEFI)) or Dasharo (coreboot+SeaBIOS).
 
-## OS compatibility
+## OS compatibility for Dasharo (coreboot+UEFI)
 
 Switching from BIOS to UEFI-based firmware might cause compatibility issues if
 you already had an operating system installed on your platform. Some OSs can
@@ -38,7 +38,7 @@ seamlessly.
 - Select `Install Dasharo firmware` to check for updates
 - When asked to select your firmware branch, select DES
 
-When the deployment is finished, your apu will reboot into Dasharo
+When the deployment is finished, your device will reboot into Dasharo
 automatically.
 
 The demo below shows the process of deploying Dasharo using DTS.

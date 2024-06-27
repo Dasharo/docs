@@ -7,15 +7,13 @@ For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
-[Subscribe to Dasharo Entry Subscription for Network Appliance Legacy Newsletter]
+[Subscribe to Dasharo for PC Engines Release Notification Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
-<!--
 Test results for this platform can be found
-[here](TBD).
--->
+[here](https://docs.google.com/spreadsheets/d/1_uRhVo9eYeZONnelymonYp444zYHT_Q_qmJEJ8_XqJc/edit?usp=sharing).
 
 COMING SOON
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/1Qv9VNbo7
+[newsletter]: https://newsletter.3mdeb.com/subscription/ReBpt3IZY

@@ -17,7 +17,8 @@ that it boots on the following platforms:
 * NovaCustom NV4x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161)),
 * NovaCustom NS5x/7x ([test
-  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)).
+  report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)),
+* PC Engines apu2/3/4/6.
 
 ## Running
 
@@ -34,51 +35,6 @@ to use.
 
 This section describes how to boot DTS using iPXE.
 
-#### Temporary Suspension of Network Booting for DTS
-
-We wish to inform you of an important security concern that has been identified
-in the Dasharo Tools Suite (DTS). As detailed in [Issue
-450](https://github.com/Dasharo/dasharo-issues/issues/450) on our GitHub
-repository, it has come to our attention that the DTS is currently being
-downloaded via HTTP when booting through iPXE. This method, unfortunately,
-exposes users to potential man-in-the-middle attacks due to the lack of
-encryption and security features inherent in HTTP.
-
-##### What This Means for You
-
-* The use of HTTP instead of HTTPS for downloading DTS poses a significant
-  security risk, potentially allowing unauthorized access or alteration of the
-  DTS during download.
-* As a precaution, we strongly advise against using the network boot feature
-  for DTS until this issue is resolved.
-* To perform firmware updates with DTS, we strongly recommend booting DTS from
-  an USB drive. This implies the flash locks have to be disabled manually via
-  Dasharo setup - see [Requirements](#requirements-1). [Firmware Update
-  Mode](../guides/firmware-update.md#firmware-update-mode) cannot be used for
-  that purpose due to the usage of network booted DTS in Firmware Update Mode
-  flow.
-* Booting DTS over network via HTTPS can be safely used when running the
-  following releases:
-    - NovaCustom 12th Gen 1.7.2 and newer,
-    - NovaCustom 11th Gen 1.5.2 and newer,
-    - MSI PRO Z690-A 1.1.3 and newer,
-    - MSI PRO Z790-P 0.9.1 and newer.
-
-##### Our Immediate Actions
-
-* We are actively working on resolving this issue by implementing HTTPS for DTS
-  downloads. Our team is committed to ensuring the security and integrity of
-  our software.
-* Until a fix is deployed, we recommend users to manually download the DTS
-  image and use alternative methods such as booting from a USB drive.
-
-##### Your Security is Our Priority
-
-* We understand the importance of security in your operations and apologize for
-  any inconvenience this may cause.
-* We are dedicated to resolving this issue promptly and will provide updates as
-  soon as a solution is available.
-
 #### Requirements
 
 Below are the requirements that must be met to run DTS over a network on the
@@ -87,9 +43,9 @@ platform:
 * Dasharo device with DTS functionality integrated,
 * wired network connection,
 * [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* disabled BIOS lock feature (if device is already flashed with Dasharo),
-* disabled SMM BIOS write protection feature (if device is already flashed
-  with Dasharo).
+* If device if flashed with Dasharo and support following functionality
+    + disabled BIOS lock feature,
+    + disabled SMM BIOS write protection feature.
 
 #### Launching DTS
 
@@ -98,7 +54,22 @@ To access Dasharo Tools Suite:
 * attach a wired network cable to the device's Ethernet port,
 * power on the device, holding down the Boot Menu entry key,
 * in the Boot Menu, select the `iPXE Network Boot` option,
-* in the Network Boot menu, select the `Dasharo Tools Suite` option,
+* in the Network Boot menu, select the `Dasharo Tools Suite` option, or enter
+  iPXE shell and type by hand:
+
+    ```bash
+    dhcp net0
+    chain https://boot.dasharo.com/dts/dts.ipxe
+    ```
+
+    !!! warning
+
+        Because of misconfigured iPXE on some firmware releases, booting over
+        HTTPS is impossible, and the above command will fail. In that case, we
+        recommend downloading the DTS image to USB. If you feel there is no
+        risk of an MITM attack, you can proceed with
+        `http://boot.dasharo.com/dts/dts.ipxe` at your own risk.
+
 * the DTS menu will now appear.
 
 ### Bootable USB stick
@@ -111,21 +82,22 @@ Below are the requirements that must be met to run DTS from a USB device on the
 platform:
 
 * USB stick (at least 2GB),
-* wired network connection,
-* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* disabled BIOS lock feature (if device is already flashed with Dasharo),
-* latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
+* Latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
   section.
-* disabled SMM BIOS write protection feature (if device is already flashed
   with Dasharo).
+* Wired network connection,
+* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
+* If device if flashed with Dasharo and support following functionality
+    + disabled BIOS lock feature,
+    + disabled SMM BIOS write protection feature.
 
 #### Launching DTS
 
 To access Dasharo Tools Suite:
 
 * flash the downloaded image onto USB stick,
-    - you can use a cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
-    - you can also use `dd` to flash from the command line
+    + you can use a cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
+    + you can also use `dd` to flash from the command line
 
 ```bash
 gzip -cdk dts-base-image-v1.1.0.wic.gz | \
@@ -291,12 +263,12 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
 * [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 * [HCL Report](#hcl-report),
 * [Firmware update](#firmware-update),
-    - [Local firmware update](#local-firmware-update),
+    + [Local firmware update](#local-firmware-update),
 * [EC transition](#ec-transition),
 * [EC update](#ec-update),
 * [additional features](#additional-features),
-    - [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
-    - [run DTS using VentoyOS](#run-dts-using-ventoyos).
+    + [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
+    + [run DTS using VentoyOS](#run-dts-using-ventoyos).
 
 ### Dasharo zero-touch initial deployment
 
@@ -401,12 +373,12 @@ Please consider the following options depending on your situation:
   hardware.
 * **NO (default)** - If you decide to not contribute, your situation depends on
   the boot method you used to execute DTS:
-    - **Network Boot** - please note that Dasharo booted over iPXE assumes no
+    + **Network Boot** - please note that Dasharo booted over iPXE assumes no
       storage available, so the report, and your BIOS backup are stored in
       temporary memory and will not be available after reboot. Please make sure
       to move HCL Report to not volatile storage. This can be done using option
       `9) Shell`,
-    - **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
+    + **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
       directory.
 
 ### Firmware update

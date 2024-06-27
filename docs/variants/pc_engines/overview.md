@@ -26,16 +26,22 @@ topics regarding apu platforms.
 
 ## Status
 
-In 2016 PC Engines contracted 3mdeb to take over the maintenance of open-source
-firmware for PC Engines products. Development happened in [PC Engines Github
-organization](https://github.com/pcengines) until September 2022, when PC
-Engines decided to discontinue its sponsorship for open-source firmware.
-Dasharo Team working on creating a sustainable path forward for PC Engines'
-open-source firmware through a subscription and donation model. For more
-details please check [Post EOL firmware
+In 2016, PC Engines contracted 3mdeb to take over the maintenance of
+open-source firmware for PC Engines products. Development happened in [PC
+Engines Github organization](https://github.com/pcengines) until September
+2022, when PC Engines decided to discontinue its sponsorship for open-source
+firmware. Dasharo Team is working on creating a sustainable path forward for PC
+Engines.' open-source firmware through a subscription and donation model. For
+more details, please check [Post EOL firmware
 announcement](post-eol-fw-announcement.md), contact us
 [directly](mailto:contact@dasharo.com) or through [community
-chat](https://matrix.to/#/#dasharo:matrix.org).
+chat](https://matrix.to/#/#dasharo:matrix.org). In 2024, the 3mdeb Dasharo Team
+was able to bring back PC Engines firmware in the form of Dasharo
+Pro/Enterprise Package (formerly known as Dasharo Entry Subscription) in two
+flavors [Dasharo
+(coreboot+SeaBIOS)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
+and [Dasharo
+(coreboot+UEFI)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/).
 
 ## References
 

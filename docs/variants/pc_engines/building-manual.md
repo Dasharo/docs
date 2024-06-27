@@ -53,4 +53,9 @@ apu2/3/4/6 platform.
 
 === "(coreboot+SeaBIOS) firmware"
 
-    [Work in progress](https://github.com/Dasharo/dasharo-issues/milestone/28)
+    This release is built using the Dasharo Patchqueue Initiative, which is a proof
+    of concept of a new approach to Dasharo coreboot downstream maintenance. Please
+    follow the [dasharo-pq](https://github.com/Dasharo/dasharo-pq/) and
+    [pce-fw-builder](https://github.com/pcengines/pce-fw-builder) documentation to
+    build the release version of Dasharo (coreboot+SeaBIOS) for PC Engines
+    apu2/3/4/6.
