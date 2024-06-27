@@ -39,4 +39,20 @@ protect pin jumper on J2 (apu2) or J3 (apu3/4/6).
 
 === "(coreboot+SeaBIOS) firmware"
 
+    ## Updating automatically using DTS
+
+    Not supported yet ([#915](https://github.com/Dasharo/dasharo-issues/issues/915)).
+
+    ## Updating Dasharo manually
+
     1. Power on the device.
+    1. While the device is booting, hold the `F10` key to enter the sortbootorder
+       menu.
+    1. Ensure [Firmware Write Protection](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bios-wp-option)
+    1. [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
+    1. Enter Shell by choosing `9`
+    1. Use following command:
+
+    ```bash
+    flashrom -p internal -w pcengines_apu<variant>_v<version>.rom --fmap -i COREBOOT
+    ```
