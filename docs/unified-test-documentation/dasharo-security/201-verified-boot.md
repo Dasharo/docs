@@ -21,7 +21,7 @@ for signing the firmware.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -52,7 +52,7 @@ image with generated keys without rebuilding.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -96,7 +96,7 @@ signed firmware to the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -140,7 +140,7 @@ platform and sign it with the locally generated keys.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -178,7 +178,7 @@ firmware image.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -238,7 +238,7 @@ The logs should indicate that vboot is enabled and verstage has been entered:
 VBOOT: Loading verstage.
 ```
 
-## VBO006.002 Verified boot support (Ubuntu 22.04)
+## VBO006.002 Verified boot support (Ubuntu)
 
 **Test description**
 
@@ -249,7 +249,7 @@ functional.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -310,7 +310,7 @@ The logs should indicate that vboot has chosen to boot from slot A:
 Slot A is selected
 ```
 
-## VBO007.002 Verified boot: Booting from Slot A (Ubuntu 22.04)
+## VBO007.002 Verified boot: Booting from Slot A (Ubuntu)
 
 **Test description**
 
@@ -320,7 +320,7 @@ proceed to boot from Slot A.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -350,7 +350,7 @@ slot A:
 Slot A is selected
 ```
 
-## VBO008.001 Verified boot: Booting from Recovery (Ubuntu 22.04)
+## VBO008.001 Verified boot: Booting from Recovery (Ubuntu)
 
 **Test description**
 
@@ -360,7 +360,7 @@ should revert to booting from the recovery slot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -420,7 +420,7 @@ the wrong vboot keys.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -458,7 +458,7 @@ allows to proceed to the next booting stages.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -488,7 +488,7 @@ command:
 After pressing `ENTER` the DUT should immediately move to the next stages of
 booting.
 
-## VBO011.001 Booting after flashing with valid binary (Ubuntu 22.04)
+## VBO011.001 Booting after flashing with valid binary (Ubuntu)
 
 **Test description**
 
@@ -499,7 +499,7 @@ displayed.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

@@ -11,7 +11,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 
-## CPF001.001 CPU not stuck on initial frequency (Ubuntu 22.04)
+## CPF001.001 CPU not stuck on initial frequency (Ubuntu)
 
 **Test description**
 
@@ -21,7 +21,7 @@ initial frequency after booting into the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -60,7 +60,7 @@ cpu MHz		: 2800.000
 cpu MHz		: 2800.000
 ```
 
-## CPF001.002 CPU not stuck on initial frequency (Windows 11)
+## CPF001.002 CPU not stuck on initial frequency (Windows)
 
 **Test description**
 
@@ -70,7 +70,7 @@ initial frequency after booting into the OS.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Windows 11`
+1. `OPERATING_SYSTEM` = `Windows`
 
 **Test setup**
 
@@ -158,7 +158,7 @@ cpu MHz		: 2800.000
 cpu MHz		: 2800.000
 ```
 
-## CPF002.001 CPU runs on expected frequency (Ubuntu 22.04)
+## CPF002.001 CPU runs on expected frequency (Ubuntu)
 
 **Test description**
 
@@ -168,7 +168,7 @@ expected frequency.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -228,7 +228,7 @@ expected frequency.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
-## CPF002.002 CPU runs on expected frequency (Windows 11)
+## CPF002.002 CPU runs on expected frequency (Windows)
 
 **Test description**
 
@@ -238,7 +238,7 @@ expected frequency.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Windows 11`
+1. `OPERATING_SYSTEM` = `Windows`
 
 **Test setup**
 
@@ -293,7 +293,7 @@ while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\
     1206.27777992278
     ```
 
-## CPF003.001 CPU runs on expected frequency (Ubuntu 22.04, battery)
+## CPF003.001 CPU runs on expected frequency (Ubuntu, battery)
 
 **Test description**
 
@@ -303,7 +303,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -363,7 +363,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
-## CPF003.002 CPU runs on expected frequency (Windows 11, battery)
+## CPF003.002 CPU runs on expected frequency (Windows, battery)
 
 **Test description**
 
@@ -373,7 +373,7 @@ frequency when charger is disconnected. The DUT during test works on battery.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Windows 11`
+1. `OPERATING_SYSTEM` = `Windows`
 
 **Test setup**
 
@@ -428,7 +428,7 @@ while(1){(Get-CimInstance CIM_Processor).MaxClockSpeed*((Get-Counter -Counter "\
     1206.27777992278
     ```
 
-## CPF004.001 CPU with load runs on expected frequency (Ubuntu 22.04)
+## CPF004.001 CPU with load runs on expected frequency (Ubuntu)
 
 **Test description**
 
@@ -438,7 +438,7 @@ frequency during the stress test.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -507,7 +507,7 @@ frequency during the stress test.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
-## CPF004.002 CPU with load runs on expected frequency (Windows 11)
+## CPF004.002 CPU with load runs on expected frequency (Windows)
 
 **Test description**
 
@@ -517,7 +517,7 @@ expected frequency during the stress test.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Windows 11`
+1. `OPERATING_SYSTEM` = `Windows`
 
 **Test setup**
 
@@ -574,7 +574,7 @@ expected frequency during the stress test.
     1206.27777992278
     ```
 
-## CPF005.001 CPU with load runs on expected frequency (Ubuntu 22.04, battery)
+## CPF005.001 CPU with load runs on expected frequency (Ubuntu, battery)
 
 **Test description**
 
@@ -584,7 +584,7 @@ frequency during the stress test. The DUT during test works on battery.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -653,7 +653,7 @@ frequency during the stress test. The DUT during test works on battery.
 1. None of CPU core frequencies should be higher than maximum frequency or
     lower than minimum frequency.
 
-## CPF005.002 CPU with load runs on expected frequency (Windows 11, battery)
+## CPF005.002 CPU with load runs on expected frequency (Windows, battery)
 
 **Test description**
 
@@ -663,7 +663,7 @@ expected frequency during the stress test.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Windows 11`
+1. `OPERATING_SYSTEM` = `Windows`
 
 **Test setup**
 

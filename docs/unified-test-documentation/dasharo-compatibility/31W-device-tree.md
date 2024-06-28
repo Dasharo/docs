@@ -23,7 +23,7 @@ Tree.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian 11.0
+1. `OPERATING_SYSTEM` = Debian
 
 **Test setup**
 
@@ -52,7 +52,7 @@ dedicated for coreboot. Example output:
 00000000: 636f 7265 626f 6f74 00                   coreboot
 ```
 
-## DVT002.001 Memory for coreboot is reserved (Ubuntu 22.04)
+## DVT002.001 Memory for coreboot is reserved (Ubuntu)
 
 **Test description**
 
@@ -62,7 +62,7 @@ coreboot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian 11.0
+1. `OPERATING_SYSTEM` = Debian
 
 **Test setup**
 

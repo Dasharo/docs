@@ -13,17 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## BWI001.001 Boot Windows 11 from disk after cold-boot
+## BWI001.001 Boot Windows from disk after cold-boot
 
 **Test description**
 
-This test aims to verify that Windows 11 could be booted from the disk
+This test aims to verify that Windows could be booted from the disk
 on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -43,17 +43,17 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BWI002.001 Boot Windows 11 from disk after warm-boot
+## BWI002.001 Boot Windows from disk after warm-boot
 
 **Test description**
 
-This test aims to verify that Windows 11 could be booted from the disk
+This test aims to verify that Windows could be booted from the disk
 on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -72,17 +72,17 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BWI003.001 Boot Windows 11 from disk after reboot
+## BWI003.001 Boot Windows from disk after reboot
 
 **Test description**
 
-This test aims to verify that Windows 11 could be booted from the disk
+This test aims to verify that Windows could be booted from the disk
 on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

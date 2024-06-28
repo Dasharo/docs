@@ -14,7 +14,7 @@
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-## NET001.001 NET controller after coldboot (Ubuntu 22.04)
+## NET001.001 NET controller after coldboot (Ubuntu)
 
 **Test description**
 
@@ -24,7 +24,7 @@ is able to connect to the network after coldboot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -91,7 +91,7 @@ is able to connect to the network after coldboot.
     up
     ```
 
-## NET002.001 NET controller after warmboot (Ubuntu 22.04)
+## NET002.001 NET controller after warmboot (Ubuntu)
 
 **Test description**
 
@@ -101,7 +101,7 @@ is able to connect to the network after warmboot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -168,7 +168,7 @@ is able to connect to the network after warmboot.
     up
     ```
 
-## NET003.001 NET controller after reboot (Ubuntu 22.04)
+## NET003.001 NET controller after reboot (Ubuntu)
 
 **Test description**
 
@@ -178,7 +178,7 @@ is able to connect to the network after coldboot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -245,7 +245,7 @@ is able to connect to the network after coldboot.
     up
     ```
 
-## NET004.001 NET controller after suspend (Ubuntu 22.04)
+## NET004.001 NET controller after suspend (Ubuntu)
 
 **Test description**
 
@@ -255,7 +255,7 @@ is able to connect to the network after suspend.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 

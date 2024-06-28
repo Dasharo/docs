@@ -11,7 +11,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 
-## SUSP001.001 Platform suspend and resume (Ubuntu 22.04, wakeup flag)
+## SUSP001.001 Platform suspend and resume (Ubuntu, wakeup flag)
 
 **Test description**
 
@@ -22,7 +22,7 @@ is tested in this case.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -174,7 +174,7 @@ this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP002.001 Platform suspend and resume (Ubuntu 22.04, press key)
+## SUSP002.001 Platform suspend and resume (Ubuntu, press key)
 
 **Test description**
 
@@ -185,7 +185,7 @@ on the keyboard is tested in this case.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -325,7 +325,7 @@ keyboard is tested in this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP003.001 Platform suspend and resume (Ubuntu 22.04, push power button)
+## SUSP003.001 Platform suspend and resume (Ubuntu, push power button)
 
 **Test description**
 
@@ -336,7 +336,7 @@ power button is tested in this case.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -476,7 +476,7 @@ tested in this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP004.001 Platform suspend and resume (Ubuntu 22.04, Wake-on-LAN)
+## SUSP004.001 Platform suspend and resume (Ubuntu, Wake-on-LAN)
 
 **Test description**
 
@@ -487,7 +487,7 @@ mechanism is tested in this case.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -590,7 +590,7 @@ mechanism is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP005.001 Cyclic platform suspend and resume (Ubuntu 22.04)
+## SUSP005.001 Cyclic platform suspend and resume (Ubuntu)
 
 **Test description**
 
@@ -600,7 +600,7 @@ performed cyclically works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 

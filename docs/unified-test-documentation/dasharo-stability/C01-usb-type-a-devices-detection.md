@@ -14,7 +14,7 @@
    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. Connect the `USB device` to the USB Type-A port.
 
-## SUD0001.001 USB devices detection after cold boot (Ubuntu 22.04)
+## SUD0001.001 USB devices detection after cold boot (Ubuntu)
 
 **Test description**
 
@@ -25,7 +25,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -62,7 +62,7 @@ iterations.
 The output of each `lsusb` command should contain an entry of the connected
 `USB device`.
 
-## SUD0002.001 USB devices detection after warm boot (Ubuntu 22.04)
+## SUD0002.001 USB devices detection after warm boot (Ubuntu)
 
 **Test description**
 
@@ -73,7 +73,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -109,7 +109,7 @@ iterations.
 The output of each `lsusb` command should contain an entry of the connected
 `USB device`.
 
-## SUD0003.001 USB devices detection after reboot (Ubuntu 22.04)
+## SUD0003.001 USB devices detection after reboot (Ubuntu)
 
 **Test description**
 
@@ -119,7 +119,7 @@ after performing a reboot. The test should be performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -156,7 +156,7 @@ after performing a reboot. The test should be performed in multiple iterations.
 The output of each `lsusb` command should contain an entry of the connected
 `USB device`.
 
-## SUD0004.001 USB devices detection after suspension (Ubuntu 22.04)
+## SUD0004.001 USB devices detection after suspension (Ubuntu)
 
 **Test description**
 
@@ -167,7 +167,7 @@ iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

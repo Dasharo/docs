@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## AUD001.001 Audio subsystem detection (Ubuntu 22.04)
+## AUD001.001 Audio subsystem detection (Ubuntu)
 
 **Test description**
 
@@ -23,7 +23,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -53,7 +53,7 @@ ALC293
 Tigerlake HDMI
 ```
 
-## AUD001.002 Audio subsystem detection (Windows 11)
+## AUD001.002 Audio subsystem detection (Windows)
 
 **Test description**
 
@@ -63,7 +63,7 @@ and can be detected from the operating system.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -102,7 +102,7 @@ Index Default Type      Name
     2    True Recording Microphone (Realtek(R) Audio)
 ```
 
-## AUD002.001 Audio playback (Ubuntu 22.04)
+## AUD002.001 Audio playback (Ubuntu)
 
 **Test description**
 
@@ -112,7 +112,7 @@ recordings.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -138,7 +138,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-## AUD002.002 Audio playback (Windows 11)
+## AUD002.002 Audio playback (Windows)
 
 **Test description**
 
@@ -148,7 +148,7 @@ recordings.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -168,7 +168,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-## AUD003.001 Audio capture (Ubuntu 22.04)
+## AUD003.001 Audio capture (Ubuntu)
 
 **Test description**
 
@@ -177,7 +177,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -208,7 +208,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 The recorded audio clip is recorded correctly and played back.
 
-## AUD003.002 Audio capture (Windows 11)
+## AUD003.002 Audio capture (Windows)
 
 **Test description**
 
@@ -217,7 +217,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -246,7 +246,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 1. The result of the test after clicking the `Stop Test` bar should be more than
     0% of the total volume.
 
-## AUD004.001 External headset recognition (Ubuntu 22.04)
+## AUD004.001 External headset recognition (Ubuntu)
 
 **Test description**
 
@@ -256,7 +256,7 @@ after plugging the 3.5 mm jack into the slot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -301,7 +301,7 @@ after plugging the 3.5 mm jack into the slot.
     : values=off
     ```
 
-## AUD004.002 External headset recognition (Windows 11)
+## AUD004.002 External headset recognition (Windows)
 
 **Test description**
 
@@ -311,7 +311,7 @@ after plugging the 3.5 mm jack into the slot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -345,7 +345,7 @@ after plugging the 3.5 mm jack into the slot.
 1. After disconnecting a headset from the laptop and checking again field
     `Jack Information` should not contain the phrase `Front Panel 3.5 mm Jack`.
 
-## AUD005.001 External headset audio playback (Ubuntu 22.04)
+## AUD005.001 External headset audio playback (Ubuntu)
 
 **Test description**
 
@@ -355,7 +355,7 @@ recordings by using the external headset speakers.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -383,7 +383,7 @@ recordings by using the external headset speakers.
 
 Sound should be played from external speakers.
 
-## AUD005.002 External headset audio playback (Windows 11)
+## AUD005.002 External headset audio playback (Windows)
 
 **Test description**
 
@@ -393,7 +393,7 @@ recordings by using the external headset speakers.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -415,7 +415,7 @@ recordings by using the external headset speakers.
 
 Sound should be played from external speakers.
 
-## AUD006.001 External headset audio capture (Ubuntu 22.04)
+## AUD006.001 External headset audio capture (Ubuntu)
 
 **Test description**
 
@@ -425,7 +425,7 @@ an external headset.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -475,7 +475,7 @@ an external headset.
 1. During playback of the second recording, all noise that was made for DUT
     should be quiet or not heard.
 
-## AUD006.002 External headset audio capture (Windows 11)
+## AUD006.002 External headset audio capture (Windows)
 
 **Test description**
 
@@ -485,7 +485,7 @@ an external headset.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -520,7 +520,7 @@ an external headset.
 1. The result of the test after clicking the `Stop Test` bar should be more than
     0% of the total volume.
 
-## AUD007.001 HDMI Audio recognition (Ubuntu 22.04)
+## AUD007.001 HDMI Audio recognition (Ubuntu)
 
 **Test description**
 
@@ -530,7 +530,7 @@ connecting the external display using the HDMI cable.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -572,7 +572,7 @@ connecting the external display using the HDMI cable.
     : values=off
     ```
 
-## AUD007.002 HDMI Audio recognition (Windows 11)
+## AUD007.002 HDMI Audio recognition (Windows)
 
 **Test description**
 
@@ -582,7 +582,7 @@ connecting the external display using the HDMI cable.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 
@@ -606,7 +606,7 @@ connecting the external display using the HDMI cable.
 The connected display should appear in the `Output devices` and `Input devices`
 section.
 
-## AUD008.001 HDMI audio playback (Ubuntu 22.04)
+## AUD008.001 HDMI audio playback (Ubuntu)
 
 **Test description**
 
@@ -616,7 +616,7 @@ recordings by using the external display connected to the HDMI slot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -645,7 +645,7 @@ recordings by using the external display connected to the HDMI slot.
 
 Sound should be played from the external display.
 
-## AUD008.002 HDMI audio playback (Windows 11)
+## AUD008.002 HDMI audio playback (Windows)
 
 **Test description**
 
@@ -655,7 +655,7 @@ recordings by using the external display connected to the HDMI slot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows 11
+1. `OPERATING_SYSTEM` = Windows
 
 **Test setup**
 

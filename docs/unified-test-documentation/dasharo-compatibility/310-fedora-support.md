@@ -16,7 +16,7 @@ This test aims to verify that Fedora Stable distribution could be installed.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Fedora 37
+1. `OPERATING_SYSTEM` = Fedora
 
 **Test setup**
 
@@ -41,7 +41,7 @@ This test aims to verify that Fedora Stable distribution could be booted.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Fedora 37
+1. `OPERATING_SYSTEM` = Fedora
 
 **Test setup**
 

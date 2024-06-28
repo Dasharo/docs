@@ -19,7 +19,7 @@
     apt-get install --assume-yes lm-sensors
     ```
 
-## FNM001.001 Fan does not stuck after coldboot (Ubuntu 22.04)
+## FNM001.001 Fan does not stuck after coldboot (Ubuntu)
 
 **Test description**
 
@@ -29,7 +29,7 @@ speed after coldboot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -64,7 +64,7 @@ Example output:
 fan1:        1131 RPM  (min =  329 RPM)
 ```
 
-## FNM002.001 Fan does not stuck after warmboot (Ubuntu 22.04)
+## FNM002.001 Fan does not stuck after warmboot (Ubuntu)
 
 **Test description**
 
@@ -74,7 +74,7 @@ speed after warmboot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 
@@ -108,7 +108,7 @@ Example output:
 fan1:        1131 RPM  (min =  329 RPM)
 ```
 
-## FNM003.001 Fan does not stuck after reboot (Ubuntu 22.04)
+## FNM003.001 Fan does not stuck after reboot (Ubuntu)
 
 **Test description**
 
@@ -118,7 +118,7 @@ speed after reboot.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu 22.04`
+1. `OPERATING_SYSTEM` = `Ubuntu`
 
 **Test setup**
 

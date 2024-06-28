@@ -23,7 +23,7 @@ the DUT after cold-boot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Proxmox VE 7.4
+1. `OPERATING_SYSTEM` = Proxmox VE
 
 **Test setup**
 
@@ -53,7 +53,7 @@ the DUT after warm-boot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Proxmox VE 7.4
+1. `OPERATING_SYSTEM` = Proxmox VE
 
 **Test setup**
 
@@ -82,7 +82,7 @@ the DUT after reboot. The test is performed in multiple iterations.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Proxmox VE 7.4
+1. `OPERATING_SYSTEM` = Proxmox VE
 
 **Test setup**
 

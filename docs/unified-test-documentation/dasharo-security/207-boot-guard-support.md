@@ -1,6 +1,6 @@
 # Dasharo Security: Boot Guard support
 
-## BGS001.001 Boot Guard support (Ubuntu 22.04)
+## BGS001.001 Boot Guard support (Ubuntu)
 
 **Test description**
 
@@ -12,7 +12,7 @@ to verify that the implemented Boot Guard mechanism works correctly.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 

@@ -23,7 +23,7 @@ mechanism.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Debian 11.0`
+1. `OPERATING_SYSTEM` = `Debian`
 
 **Test setup**
 
@@ -97,7 +97,7 @@ hardware write protection on the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Debian 11.0`
+1. `OPERATING_SYSTEM` = `Debian`
 
 **Test setup**
 

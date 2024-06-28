@@ -17,7 +17,7 @@ on USB storage attached to the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian 11
+1. `OPERATING_SYSTEM` = Debian
 
 **Test setup**
 
@@ -43,7 +43,7 @@ from USB storage attached to the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian 11
+1. `OPERATING_SYSTEM` = Debian
 
 **Test setup**
 
@@ -72,7 +72,7 @@ installed on USB storage attached to the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -98,7 +98,7 @@ from USB storage attached to the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -127,7 +127,7 @@ on the hard disk on the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian 11
+1. `OPERATING_SYSTEM` = Debian
 
 **Test setup**
 
@@ -154,7 +154,7 @@ the hard disk on the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Debian 11
+1. `OPERATING_SYSTEM` = Debian
 
 **Test setup**
 
@@ -183,7 +183,7 @@ installed on the hard disk on the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
@@ -210,7 +210,7 @@ from the hard disk on the DUT.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu 22.04
+1. `OPERATING_SYSTEM` = Ubuntu
 
 **Test setup**
 
