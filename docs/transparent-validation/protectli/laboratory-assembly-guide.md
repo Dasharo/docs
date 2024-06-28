@@ -17,6 +17,9 @@ are needed to create testing stands for Protectli machines.
 * 6x standard female-female connection wire 2.54 mm raster
 * 6x standard female-female connection wire 2.54/2.00 mm raster
 * 2x RJ45 cable: 1 for RTE and 1 for the platform
+> [!NOTE]
+> When there are 4 or more Ethernet ports on the platform,
+> connect ports 3 and 4 with an additional RJ45 cable.
 
 === "VP2410"
 
