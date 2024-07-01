@@ -3,7 +3,7 @@
 ## Intro
 
 This document describes the procedure for compiling coreboot for Protectli
-V1210, V1410 and V1610.
+V1000 series platform.
 
 ## Requirements
 
@@ -16,7 +16,7 @@ V1210, V1410 and V1610.
 
 > This build procedure produces full firmware binary including blobs such as
 > FSP, and ME. Currently, access to them is restricted to the OEM (Protectli) via
-> a private repository.
+> a private repository for version earlier than v0.9.2.
 
 1. Clone the coreboot repository:
 
@@ -59,6 +59,12 @@ V1210, V1410 and V1610.
         ./build.sh V1210
         ```
 
+    + for V1211
+
+        ```bash
+        ./build.sh V1211
+        ```
+
     + for V1410
 
         ```bash
@@ -72,5 +78,5 @@ V1210, V1410 and V1610.
         ```
 
 The resulting coreboot image will be placed in the coreboot directory as
-`protectli_V1210.rom`, `protectli_V1410.rom` or `protectli_V1610.rom`
-respectvely.
+`protectli_V1210.rom`, `protectli_V1211.rom`, `protectli_V1410.rom` or
+`protectli_V1610.rom` respectvely.
