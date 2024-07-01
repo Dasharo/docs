@@ -3,6 +3,15 @@
 Following Release Notes describe status of Dasharo (coreboot + Heads) firmware
 development compatible with MSI PRO Z790-P boards.
 
+Please note that in order for the Heads to work correctly with the MSI
+motherboard, two additional components are required:
+
+1. TPM 2.0 MSI MS-4462, available at our [store](https://shop.3mdeb.com/shop/modules/tpm-2-0-msi-ms-4462/).
+1. Nitrokey 3A Mini, also available for purchase at our [store](https://shop.3mdeb.com/shop/adapters/nitrokey-3a-mini/).
+
+The Heads currently supports only integrated graphics (a non-F CPU). Discrete
+graphics is NOT supported by the standard build.
+
 ## v0.9.0 - 2024-03-21
 
 Test results for this release can be found
