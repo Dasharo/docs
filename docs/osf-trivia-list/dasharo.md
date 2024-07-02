@@ -302,10 +302,10 @@ of the project documentation.
 
 Dasharo Support coming in form of three following packages:
 
-- Dasharo Community Support (DCP) - donation driven development.
+- Dasharo Community Support (DCP) - donation-driven development.
 - Dasharo Support Package (DSP) - annual firmware support package.
-- Dasharo Enterprise Package (DEP) - custom SLA, corporate and open roadmap
-  alignment advisroy.
+- Dasharo Enterprise Package (DEP) - custom SLA, corporate, and open roadmap
+  alignment advisory.
 
 The Dasharo Community Support Program is an open-source firmware support
 initiative that leverages the expertise of community members and developers to
