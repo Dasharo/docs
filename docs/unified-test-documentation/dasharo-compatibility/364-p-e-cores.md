@@ -223,7 +223,7 @@ We should get the number of all logical cores.
     conditions:
 
     ```bash
-    lscpu | grep -v "NUMA" | grep "Core(s) per socket:"  
+    lscpu | grep -v "NUMA" | grep "Core(s) per socket:"
     ```
 
 1. Compare the number with expected value.
