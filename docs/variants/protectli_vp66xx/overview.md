@@ -12,6 +12,9 @@ TPM, 2 CPU fans.
 * VP6650 - Intel® Core™ i5 -1235U
 * VP6670 - Intel® Core™ i7 -1255U
 
+> On VP66xx Intel ME (Management Engine) is disabled by using the
+> [HAP bit](../../osf-trivia-list/me.md#hap-altmedisable-bit-aka-disabling-me).
+
 ## Documentation sections
 
 * [Releases](releases.md) - groups information about all releases.
