@@ -186,7 +186,7 @@ Select Model:
         firmware validation procedure.
     * [Test matrix](../../variants/protectli_vp2420/test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
-        
+
 <!---
 === "vp66xx"
     The Vault is a small form network appliance built for use as a firewall /
