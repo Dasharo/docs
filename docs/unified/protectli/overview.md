@@ -14,6 +14,7 @@ Select Model:
     * [Test matrix](../../variants/protectli_fw6/test-matrix.md) - validation
         scope for the Protectli FW6
 -
+
 === "v1x11"
     # Overview
 
@@ -45,7 +46,6 @@ Select Model:
     validation procedure.
     * [Test matrix](../../variants/protectli_v1x1x/test-matrix.md) - describes validation scope used during
     Dasharo firmware validation procedure.
-
 
 === "vp46xx"
     The Vault is a small form network appliance built for use as a firewall /
