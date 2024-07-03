@@ -2,21 +2,7 @@
 
 Initial flashing of Dasharo firmware can be done from Linux using flashrom with
 the internal programmer. This document describes the process of building,
-installing and running flashrom on Ubuntu 22.04.
-
-## Deploy using Dasharo Tools Suite
-
-For simplicity we recommend using
-[Dasharo Tools Suite](../../dasharo-tools-suite/overview.md) to
-omit all compilation steps and deploy the Dasharo firmware seamlessly.
-
-1. Boot Dasharo Tools Suite.
-2. Perform Dasharo installation.
-
-This will flash the BIOS region only. After the successful operation, DTS will
-reboot the platform.
-
-This concludes Dasharo deployment process using DTS.
+installing and running flashrom on Ubuntu 22.04.s
 
 ## Build flashrom
 

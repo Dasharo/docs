@@ -4,23 +4,6 @@ Initial flashing of Dasharo firmware can be done from Linux using flashrom with
 the internal programmer. This document describes the process of building,
 installing and running flashrom on Ubuntu 22.04.
 
-## Deploy using Dasharo Tools Suite
-
-For simplicity we recommend using
-[Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/overview) to
-omit all compilation steps and deploy the Dasharo firmware seamlessly.
-Be sure to disable the BIOS lock in the AMI firmware setup utility:
-
-1. Go to `Chipset` tab
-2. Enter `PCH IO Configuration`
-3. Disable `BIOS Lock`.
-4. Save changes and reset.
-
-Now you are ready to use Dasharo Tools Suite (DTS):
-
-1. Boot Dasharo Tools Suite.
-2. Perform Dasharo installation.
-
 ## Build flashrom
 
 Please follow generic guide for [Dasharo flashrom fork](../../osf-trivia-list/deployment.md#how-to-install-dasharo-flashrom-fork).
