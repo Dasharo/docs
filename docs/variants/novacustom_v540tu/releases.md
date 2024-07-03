@@ -10,4 +10,3 @@ For details about our release process please read
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCustom/V54x_MTL/results.csv).
-
