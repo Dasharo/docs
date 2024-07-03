@@ -84,7 +84,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### Changed
 
-- [Updating from v1.0.x requires flashing the WP_RO recovery partition](../protectli_vp2420/firmware-update.md#updating-minor-versions-v1xy)
+- [Updating from v1.0.x requires flashing the WP_RO recovery partition](../../unified/protectli/firmware-update.md#vp2420)
 - [Firmware version v1.1.x are signed with a new key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
 - [Keys must be provisioned prior enabling Secure Boot](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
 

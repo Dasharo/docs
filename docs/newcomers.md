@@ -197,7 +197,7 @@ Check if Sonoff state is set to ON `osfv_cli sonoff --sonoff_ip
 
 **Ubuntu won't download and create image**
 
-1. Download image from: [Ubuntu](https://ubuntu.task.gda.pl/ubuntu-releases/22.04.4/ubuntu-22.04.4-desktop-amd64.iso),
+1. Download image from: [Ubuntu](https://ubuntu.task.gda.pl/ubuntu-releases/22.04.4/ubuntu-22.04.5-desktop-amd64.iso),
 and use the script:
 
 ```./ubuntu/create_image.sh -i ~/Downloads/ubuntu-22.04.4-desktop-amd64.iso```
