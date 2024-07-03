@@ -2,7 +2,7 @@
 
 Select Model:
 === "FW6"
-    * [Releases](../../variants/protectli_fw6/releases.md) - list of all releases
+    *[Releases](../../variants/protectli_fw6/releases.md) - list of all releases
     * [Building manual](../../variants/protectli_fw6/building-manual.md) - how
         to build Dasharo for Protectli FW6
     *[Installation manual](../../variants/protectli_fw6/installation-manual.md) -
@@ -17,10 +17,10 @@ Select Model:
 === "v1x10"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
-    The V1210/V1410/V1610 feature an Intel Jasper Lake CPU, soldered down LPDDR4X
-    memory, Intel i225-V/i226-V 2.5G Ethernet ports, 4x USB-A 3.x ports, eMMC,
-    PCIe NVMe storage, M.2 WIFI and WWAN slots, serial console over USB-C and
-    a firmware TPM.
+    The V1210/V1410/V1610 feature an Intel Jasper Lake CPU, soldered down
+    LPDDR4X memory, Intel i225-V/i226-V 2.5G Ethernet ports, 4x USB-A 3.x ports,
+    eMMC, PCIe NVMe storage, M.2 WIFI and WWAN slots, serial console over USB-C
+    and a firmware TPM.
 
     * V1210 - Intel® Celeron® N5105, 2x i225/i226, 4GB LPDDR4X
     * V1410 - Intel® Celeron® N5105, 4x i225/i226, 8GB LPDDR4X
@@ -57,8 +57,8 @@ Select Model:
     ![](/images/VP4630_banner-1.jpg)
 
     The VP46XX features an Intel 10th Generation CPU, 2x DDR4 DIMM modules, 6x
-    Intel i225-V 2.5G Ethernet ports, PCIe x4/SATA NVMe storage, LPC TPM, M.2 WIFI
-    and WWAN slots.
+    Intel i225-V 2.5G Ethernet ports, PCIe x4/SATA NVMe storage, LPC TPM, M.2
+    WIFI and WWAN slots.
 
     * VP4630 - Intel Core i3-10110U
     * VP4650 - Intel Core i5-10210U
