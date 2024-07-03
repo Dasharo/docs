@@ -93,6 +93,41 @@ plugins:
         'unified/novacustom/fan-profiles.md': 'unified/novacustom/features.md'
         'unified/novacustom/fn-lock-hotkey.md': 'unified/novacustom/features.md'
         'unified/novacustom/rgb-keyboard.md': 'unified/novacustom/features.md'
+        'variants/protectli_fw6/overview.md': 'unified/protectli/overview.md#fw6'
+        'variants/protectli_vp1x1x/overview.md': 'unified/protectli/overview.md#v1000-series'
+        'variants/protectli_vp46xx/overview.md': 'unified/protectli/overview.md#vp46xx'
+        'variants/protectli_vp66xx/overview.md': 'unified/protectli/overview.md#vp66xx'
+        'variants/protectli_vp2410/overview.md': 'unified/protectli/overview.md#vp2410'
+        'variants/protectli_vp2420/overview.md': 'unified/protectli/overview.md#vp2420'
+
+        'variants/protectli_fw6/releases.md': 'unified/protectli/releases.md#fw6'
+        'variants/protectli_vp1x1x/releases.md': 'unified/protectli/releases.md#v1000-series'
+        'variants/protectli_vp46xx/releases.md': 'unified/protectli/releases.md#vp46xx'
+        'variants/protectli_vp66xx/releases.md': 'unified/protectli/releases.md#vp66xx'
+        'variants/protectli_vp2410/releases.md': 'unified/protectli/releases.md#vp2410'
+        'variants/protectli_vp2420/releases.md': 'unified/protectli/releases.md#vp2420'
+
+        'variants/protectli_fw6/building_manual.md': 'unified/protectli/building_manual.md#fw6'
+        'variants/protectli_vp1x1x/building_manual.md': 'unified/protectli/building_manual.md#v1000-series'
+        'variants/protectli_vp46xx/building_manual.md': 'unified/protectli/building_manual.md#vp46xx'
+        'variants/protectli_vp66xx/building_manual.md': 'unified/protectli/building_manual.md#vp66xx'
+        'variants/protectli_vp2410/building_manual.md': 'unified/protectli/building_manual.md#vp2410'
+        'variants/protectli_vp2420/building_manual.md': 'unified/protectli/building_manual.md#vp2420'
+
+        'variants/protectli_fw6/firmware_update.md': 'unified/protectli/firmware_update.md#fw6'
+        'variants/protectli_vp1x1x/firmware_update.md': 'unified/protectli/firmware_update.md#v1000-series'
+        'variants/protectli_vp46xx/firmware_update.md': 'unified/protectli/firmware_update.md#vp46xx'
+        'variants/protectli_vp66xx/firmware_update.md': 'unified/protectli/firmware_update.md#vp66xx'
+        'variants/protectli_vp2410/firmware_update.md': 'unified/protectli/firmware_update.md#vp2410'
+        'variants/protectli_vp2420/firmware_update.md': 'unified/protectli/firmware_update.md#vp2420'
+
+        'variants/protectli_fw6/recovery.md': 'unified/protectli/recovery.md#fw6'
+        'variants/protectli_vp1x1x/recovery.md': 'unified/protectli/recovery.md#v1000-series'
+        'variants/protectli_vp46xx/recovery.md': 'unified/protectli/recovery.md#vp46xx'
+        'variants/protectli_vp66xx/recovery.md': 'unified/protectli/recovery.md#vp66xx'
+        'variants/protectli_vp2410/recovery.md': 'unified/protectli/recovery.md#vp2410'
+        'variants/protectli_vp2420/recovery.md': 'unified/protectli/recovery.md#vp2420'
+
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
   # but there are no internal links to them).
@@ -229,63 +264,36 @@ nav:
           - 'Post-installation setup': variants/tuxedo_ibs15/post_install.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
           - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
-      - 'Protectli FW6':
-          - 'Overview': variants/protectli_fw6/overview.md
-          - 'Releases': variants/protectli_fw6/releases.md
-          - 'Building manual': variants/protectli_fw6/building-manual.md
-          - 'Installation manual': variants/protectli_fw6/installation-manual.md
-          - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
-          - 'Test matrix': variants/protectli_fw6/test-matrix.md
-      - 'Protectli VP2410':
-          - 'Overview': variants/protectli_vp2410/overview.md
-          - 'Releases': variants/protectli_vp2410/releases.md
-          - 'Building manual': variants/protectli_vp2410/building-manual.md
-          - 'Initial deployment': variants/protectli_vp2410/initial-deployment.md
-          - 'Firmware update': variants/protectli_vp2410/firmware-update.md
-          - 'Recovery': variants/protectli_vp2410/recovery.md
-          - 'Hardware Configuration Matrix': variants/protectli_vp2410/hardware-matrix.md
-          - 'Test matrix': variants/protectli_vp2410/test-matrix.md
-          - 'Openness score': variants/protectli_vp2410/openness-score.md
-      - 'Protectli VP2420':
-          - 'Overview': variants/protectli_vp2420/overview.md
-          - 'Releases': variants/protectli_vp2420/releases.md
-          - 'Building manual': variants/protectli_vp2420/building-manual.md
-          - 'Initial deployment': variants/protectli_vp2420/initial-deployment.md
-          - 'Firmware update': variants/protectli_vp2420/firmware-update.md
-          - 'Recovery': variants/protectli_vp2420/recovery.md
-          - 'Hardware Configuration Matrix': variants/protectli_vp2420/hardware-matrix.md
-          - 'Test matrix': variants/protectli_vp2420/test-matrix.md
-          - 'Openness score': variants/protectli_vp2420/openness-score.md
-      - 'Protectli VP46xx':
-          - 'Overview': variants/protectli_vp46xx/overview.md
-          - 'Releases': variants/protectli_vp46xx/releases.md
-          - 'Building manual': variants/protectli_vp46xx/building-manual.md
-          - 'Initial deployment': variants/protectli_vp46xx/initial-deployment.md
-          - 'Firmware update': variants/protectli_vp46xx/firmware-update.md
-          - 'Recovery': variants/protectli_vp46xx/recovery.md
-          - 'Post-installation setup': variants/protectli-post-install.md
-          - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
-          - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
-          - 'Openness score': variants/protectli_vp46xx/openness_score.md
-      - 'Protectli VP66xx':
-          - 'Overview': variants/protectli_vp66xx/overview.md
-          - 'Releases': variants/protectli_vp66xx/releases.md
-          - 'Building manual': variants/protectli_vp66xx/building-manual.md
-          - 'Initial deployment': variants/protectli_vp66xx/initial-deployment.md
-          - 'Firmware update': variants/protectli_vp66xx/firmware-update.md
-          - 'Recovery': variants/protectli_vp66xx/recovery.md
-          - 'Post-installation setup': variants/protectli-post-install.md
-          - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
-          - 'Test matrix': variants/protectli_vp66xx/test-matrix.md
-      # - 'Protectli V1210/V1410/V1610':
-      #     - 'Overview': variants/protectli_v1x10/overview.md
-      #     - 'Releases': variants/protectli_v1x10/releases.md
-      #     - 'Building manual': variants/protectli_v1x10/building-manual.md
-      #     - 'Initial deployment': variants/protectli_v1x10/initial-deployment.md
-      #     - 'Firmware update': variants/protectli_v1x10/firmware-update.md
-      #     - 'Recovery': variants/protectli_v1x10/recovery.md
-      #     - 'Hardware Configuration Matrix': variants/protectli_v1x10/hardware-matrix.md
-      #     - 'Test matrix': variants/protectli_v1x10/test-matrix.md
+      - 'Protectli':
+          - 'Overview': unified/protectli/overview.md
+          - 'Building manual': unified/protectli/building-manual.md
+          - 'Initial deployment': unified/protectli/initial-deployment.md
+          - 'Post-installation setup': unified/protectli/post-install.md
+          - 'Firmware update': unified/protectli/firmware-update.md
+          - 'Recovery': unified/protectli/recovery.md
+          - 'Test matrix': unified/protectli/test-matrix.md
+          - 'Protectli FW6':
+              - 'Releases': variants/protectli_fw6/releases.md
+              - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
+          - 'Protectli V1000 series':
+              - 'Releases': variants/protectli_v1000-series/releases.md
+              - 'Hardware Configuration Matrix': variants/protectli_v1000-series/hardware-matrix.md
+              - 'Openness score': variants/protectli_v1000-series/openness_score.md
+          - 'Protectli VP2410':
+              - 'Releases': variants/protectli_vp2410/releases.md
+              - 'Hardware Configuration Matrix': variants/protectli_vp2410/hardware-matrix.md
+              - 'Openness score': variants/protectli_vp2410/openness-score.md
+          - 'Protectli VP2420':
+              - 'Releases': variants/protectli_vp2420/releases.md
+              - 'Hardware Configuration Matrix': variants/protectli_vp2420/hardware-matrix.md
+              - 'Openness score': variants/protectli_vp2420/openness-score.md
+          - 'Protectli VP46xx':
+              - 'Releases': variants/protectli_vp46xx/releases.md
+              - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
+              - 'Openness score': variants/protectli_vp46xx/openness_score.md
+          - 'Protectli VP66xx':
+              - 'Releases': variants/protectli_vp66xx/releases.md
+              - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
       - 'QEMU Q35 Emulator':
           - 'Overview': variants/qemu_q35/overview.md
           - 'Releases': variants/qemu_q35/releases.md
@@ -527,7 +535,7 @@ nav:
               - 'Dasharo Configuration Utility': unified-test-documentation/dasharo-compatibility/362-dcu.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
-              - "TPM2 Commands": unified-test-documentation/dasharo-security/200-tpm2-commands.md
+              - 'TPM2 Commands': unified-test-documentation/dasharo-security/200-tpm2-commands.md
               - 'Verified Boot': unified-test-documentation/dasharo-security/201-verified-boot.md
               - 'Measured Boot': unified-test-documentation/dasharo-security/203-measured-boot.md
               - 'Secure Boot': unified-test-documentation/dasharo-security/206-secure-boot.md
