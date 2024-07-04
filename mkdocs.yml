@@ -129,6 +129,13 @@ plugins:
         'variants/protectli_vp2410/recovery.md': 'unified/protectli/recovery.md#vp2410'
         'variants/protectli_vp2420/recovery.md': 'unified/protectli/recovery.md#vp2420'
 
+        'variants/protectli_fw6/hardware-matrix.md': 'unified/protectli/hardware-matrix.md#fw6'
+        'variants/protectli_vp1x1x/hardware-matrix.md': 'unified/protectli/hardware-matrix.md#v1x1x'
+        'variants/protectli_vp46xx/hardware-matrix.md': 'unified/protectli/hardware-matrix.md#vp46xx'
+        'variants/protectli_vp66xx/hardware-matrix.md': 'unified/protectli/hardware-matrix.md#vp66xx'
+        'variants/protectli_vp2410/hardware-matrix.md': 'unified/protectli/hardware-matrix.md#vp2410'
+        'variants/protectli_vp2420/hardware-matrix.md': 'unified/protectli/hardware-matrix.md#vp2420'
+
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
   # but there are no internal links to them).
