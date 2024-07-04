@@ -220,14 +220,14 @@ nav:
           - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
       - 'Protectli':
           - 'Overview': unified/protectli/overview.md
-          - 'Releases': unified/protectli/releases.md
-          - 'Building manual': unified/protectli/building-manual.md
-          - 'Initial deployment': unified/protectli/initial-deployment.md
-          - 'Firmware update': unified/protectli/firmware-update.md
-          - 'Recovery': unified/protectli/recovery.md
-          - 'Hardware Configuration Matrix': unified/protectli/hardware-matrix.md
-          - 'Test matrix': unified/protectli/test-matrix.md
-          - 'Openness score': unified/protectli/openness-score.md
+        #   - 'Releases': unified/protectli/releases.md
+        #   - 'Building manual': unified/protectli/building-manual.md
+        #   - 'Initial deployment': unified/protectli/initial-deployment.md
+        #   - 'Firmware update': unified/protectli/firmware-update.md
+        #   - 'Recovery': unified/protectli/recovery.md
+        #   - 'Hardware Configuration Matrix': unified/protectli/hardware-matrix.md
+        #   - 'Test matrix': unified/protectli/test-matrix.md
+        #   - 'Openness score': unified/protectli/openness-score.md
           - 'Protectli FW6':
               # - 'Overview': variants/protectli_fw6/overview.md
               - 'Releases': variants/protectli_fw6/releases.md
