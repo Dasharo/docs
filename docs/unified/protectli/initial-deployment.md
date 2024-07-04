@@ -45,7 +45,6 @@ flashrom -p internal -r dump.rom
 
     After successful operation reboot the platform.
 
-
 === "v1x1x"
 
     To flash Dasharo on the platform, execute the following command - replace
