@@ -3,7 +3,7 @@
 Select Model:
 
 === "FW6"
-    *[Releases](../../variants/protectli_fw6/releases.md) - list of all releases
+    * [Releases](../../variants/protectli_fw6/releases.md) - list of all releases
     * [Building manual](../../variants/protectli_fw6/building-manual.md) - how
         to build Dasharo for Protectli FW6
     *[Installation manual](../../variants/protectli_fw6/installation-manual.md) -
