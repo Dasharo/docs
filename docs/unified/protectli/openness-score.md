@@ -22,9 +22,9 @@ utility](https://github.com/Dasharo/Openness-Score).
     * Total data size: 497394 (0x796f2)
     * Total empty size: 1549824 (0x17a600)
 
-    ![](protectli_vp46xx_v1.2.0.rom_openness_chart.png)
+    ![](images/protectli_vp46xx_v1.2.0.rom_openness_chart.png)
 
-    ![](protectli_vp46xx_v1.2.0.rom_openness_chart_full_image.png)
+    ![](images/protectli_vp46xx_v1.2.0.rom_openness_chart_full_image.png)
 
     > Numbers given above already include the calculations from CBFS regions
     > presented below
@@ -153,9 +153,9 @@ utility](https://github.com/Dasharo/Openness-Score).
     * Total data size: 409627 (0x6401b)
     * Total empty size: 681992 (0xa6808)
 
-    ![](protectli_vp2410_v1.1.0.rom_openness_chart.png)
+    ![](images/protectli_vp2410_v1.1.0.rom_openness_chart.png)
 
-    ![](protectli_vp2410_v1.1.0.rom_openness_chart_full_image.png)
+    ![](images/protectli_vp2410_v1.1.0.rom_openness_chart_full_image.png)
 
     > Numbers given above already include the calculations from CBFS regions
     > presented below
@@ -238,9 +238,9 @@ utility](https://github.com/Dasharo/Openness-Score).
     * Total data size: 627958 (0x994f6)
     * Total empty size: 2541452 (0x26c78c)
 
-    ![](protectli_vp2420_v1.2.0.rom_openness_chart.png)
+    ![](images/protectli_vp2420_v1.2.0.rom_openness_chart.png)
 
-    ![](protectli_vp2420_v1.2.0.rom_openness_chart_full_image.png)
+    ![](images/protectli_vp2420_v1.2.0.rom_openness_chart_full_image.png)
 
     > Numbers given above already include the calculations from CBFS regions
     > presented below
