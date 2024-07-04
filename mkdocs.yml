@@ -143,6 +143,14 @@ plugins:
         'variants/protectli_vp2410/test-matrix.md': 'unified/protectli/test-matrix.md#vp2410'
         'variants/protectli_vp2420/test-matrix.md': 'unified/protectli/test-matrix.md#vp2420'
 
+        'variants/protectli_fw6/openness-score.md': 'unified/protectli/openness-score.md#fw6'
+        'variants/protectli_vp1x1x/openness-score.md': 'unified/protectli/openness-score.md#v1x1x'
+        'variants/protectli_vp46xx/openness-score.md': 'unified/protectli/openness-score.md#vp46xx'
+        'variants/protectli_vp66xx/openness-score.md': 'unified/protectli/openness-score.md#vp66xx'
+        'variants/protectli_vp2410/openness-score.md': 'unified/protectli/openness-score.md#vp2410'
+        'variants/protectli_vp2420/openness-score.md': 'unified/protectli/openness-score.md#vp2420'
+
+
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
   # but there are no internal links to them).
