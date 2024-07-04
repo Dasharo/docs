@@ -235,7 +235,7 @@ nav:
               - 'Installation manual': variants/protectli_fw6/installation-manual.md
               - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
               - 'Test matrix': variants/protectli_fw6/test-matrix.md
-          - 'Protectli V1x11':
+          - 'Protectli V1x1x':
               # - 'Overview': variants/protectli_v1x1x/overview.md
               - 'Releases': variants/protectli_v1x1x/releases.md
               - 'Building manual': variants/protectli_v1x1x/building-manual.md
