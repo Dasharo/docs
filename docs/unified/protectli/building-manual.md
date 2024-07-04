@@ -1,6 +1,7 @@
 # Building manual
 
 === "fw6"
+
     ## Requirements
 
     - Docker
@@ -33,6 +34,7 @@
         ```
 
 === "v1x1x"
+
     ## Intro
 
     This document describes the procedure for compiling coreboot for Protectli
@@ -109,6 +111,7 @@
     respectvely.
 
 === "vp46xx"
+
     ## Intro
 
     This document describes the procedure for compiling coreboot for Protectli
@@ -197,6 +200,7 @@
                 directory as `protectli_vault_cml_<version>_vp4670.rom`.
 
 === "vp66xx"
+
     ## Intro
 
     This document describes the procedure for compiling coreboot for Protectli
@@ -244,6 +248,7 @@
     `protectli_vp66xx.rom`.
 
 === "vp2410"
+
     ## Intro
 
     This document describes the procedure for compiling coreboot for Protectli
@@ -306,6 +311,7 @@
     `protectli_vp2410_<version>.rom`.
 
 === "vp2420"
+
     ## Intro
 
     This document describes the procedure for compiling coreboot for Protectli
