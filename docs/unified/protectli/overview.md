@@ -15,7 +15,7 @@ Select Model:
     * [Test matrix](../../variants/protectli_fw6/test-matrix.md) - validation
         scope for the Protectli FW6
 
-=== "v1x11"
+=== "v1x1x"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
     The V1210/V1410/V1610 feature an Intel Jasper Lake CPU, soldered down LPDDR4X
