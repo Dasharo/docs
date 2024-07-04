@@ -138,8 +138,6 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 === "vp2410"
 
-# Dasharo Openness Score
-
     ## v1.1.0
 
     Openness Score for protectli_vp2410_v1.1.0.rom
