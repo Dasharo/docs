@@ -19,6 +19,33 @@ flashrom -p internal -r dump.rom
 
 ## Flashing Dasharo
 
+=== "fw6"
+
+    ## Reading flash contents
+
+    Always prepare a backup of the current firmware image. To read from the flash
+    and save them to a file (`dump.rom`), execute the following command:
+
+    ```bash
+    sudo flashrom -p internal -r dump.rom
+    ```
+
+    ## Flashing Dasharo
+
+    ```bash
+    flashrom -p internal -w [path] --ifd -i bios
+    ```
+
+    To flash Dasharo on the platform, execute the following command - replace `[path]`
+    with the path to the Dasharo image you want to flash, e.g. `protectli_fw6_DF_v1.0.14.rom`.
+
+    ```bash
+    sudo flashrom -p internal -w protectli_fw6_DF_v1.0.14.rom --ifd -i bios
+    ```
+
+    After successful operation reboot the platform.
+
+
 === "v1x1x"
 
     To flash Dasharo on the platform, execute the following command - replace
