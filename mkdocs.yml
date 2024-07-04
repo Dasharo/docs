@@ -247,16 +247,16 @@ nav:
           - 'Initial deployment': unified/protectli/initial-deployment.md
           - 'Firmware update': unified/protectli/firmware-update.md
           # - 'Recovery': unified/protectli/recovery.md
-          # - 'Hardware Configuration Matrix': unified/protectli/hardware-matrix.md
-          # - 'Test matrix': unified/protectli/test-matrix.md
+          - 'Hardware Configuration Matrix': unified/protectli/hardware-matrix.md
+          - 'Test matrix': unified/protectli/test-matrix.md
           # - 'Openness score': unified/protectli/openness-score.md
           - 'Protectli FW6':
               # - 'Overview': variants/protectli_fw6/overview.md
               # - 'Releases': variants/protectli_fw6/releases.md
               # - 'Building manual': variants/protectli_fw6/building-manual.md
               - 'Installation manual': variants/protectli_fw6/installation-manual.md
-              - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
-              - 'Test matrix': variants/protectli_fw6/test-matrix.md
+            #   - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
+            #  - 'Test matrix': variants/protectli_fw6/test-matrix.md
           - 'Protectli V1x1x':
               # - 'Overview': variants/protectli_v1x1x/overview.md
               # - 'Releases': variants/protectli_v1x1x/releases.md
@@ -265,7 +265,7 @@ nav:
               # - 'Firmware update': variants/protectli_v1x1x/firmware-update.md
               - 'Recovery': variants/protectli_v1x1x/recovery.md
               - 'Hardware Configuration Matrix': variants/protectli_v1x1x/hardware-matrix.md
-              - 'Test matrix': variants/protectli_v1x1x/test-matrix.md
+            #   - 'Test matrix': variants/protectli_v1x1x/test-matrix.md
               - 'Openness score': variants/protectli_v1x1x/openness_score.md
           - 'Protectli VP2410':
               # - 'Overview': variants/protectli_vp2410/overview.md
@@ -274,8 +274,8 @@ nav:
               # - 'Initial deployment': variants/protectli_vp2410/initial-deployment.md
               # - 'Firmware update': variants/protectli_vp2410/firmware-update.md
               - 'Recovery': variants/protectli_vp2410/recovery.md
-              - 'Hardware Configuration Matrix': variants/protectli_vp2410/hardware-matrix.md
-              - 'Test matrix': variants/protectli_vp2410/test-matrix.md
+            #   - 'Hardware Configuration Matrix': variants/protectli_vp2410/hardware-matrix.md
+            #   - 'Test matrix': variants/protectli_vp2410/test-matrix.md
               - 'Openness score': variants/protectli_vp2410/openness-score.md
           - 'Protectli VP2420':
               # - 'Overview': variants/protectli_vp2420/overview.md
@@ -284,8 +284,8 @@ nav:
               # - 'Initial deployment': variants/protectli_vp2420/initial-deployment.md
               # - 'Firmware update': variants/protectli_vp2420/firmware-update.md
               - 'Recovery': variants/protectli_vp2420/recovery.md
-              - 'Hardware Configuration Matrix': variants/protectli_vp2420/hardware-matrix.md
-              - 'Test matrix': variants/protectli_vp2420/test-matrix.md
+            #   - 'Hardware Configuration Matrix': variants/protectli_vp2420/hardware-matrix.md
+            #   - 'Test matrix': variants/protectli_vp2420/test-matrix.md
               - 'Openness score': variants/protectli_vp2420/openness-score.md
           - 'Protectli VP46xx':
               # - 'Overview': variants/protectli_vp46xx/overview.md
@@ -294,18 +294,18 @@ nav:
               # - 'Initial deployment': variants/protectli_vp46xx/initial-deployment.md
               # - 'Firmware update': variants/protectli_vp46xx/firmware-update.md
               - 'Recovery': variants/protectli_vp46xx/recovery.md
-              - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
-              - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
+            #   - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
+            #   - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
               - 'Openness score': variants/protectli_vp46xx/openness_score.md
-          # - 'Protectli VP66xx':
-          #     - 'Overview': variants/protectli_vp66xx/overview.md
-          #     - 'Releases': variants/protectli_vp66xx/releases.md
-          #     - 'Building manual': variants/protectli_vp66xx/building-manual.md
-          #     - 'Initial deployment': variants/protectli_vp66xx/initial-deployment.md
-          #     - 'Firmware update': variants/protectli_vp66xx/firmware-update.md
-          #     - 'Recovery': variants/protectli_vp66xx/recovery.md
-          #     - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
-          #     - 'Test matrix': variants/protectli_vp66xx/test-matrix.md
+          - 'Protectli VP66xx':
+            #   - 'Overview': variants/protectli_vp66xx/overview.md
+            #   - 'Releases': variants/protectli_vp66xx/releases.md
+            #   - 'Building manual': variants/protectli_vp66xx/building-manual.md
+            #   - 'Initial deployment': variants/protectli_vp66xx/initial-deployment.md
+            #   - 'Firmware update': variants/protectli_vp66xx/firmware-update.md
+              - 'Recovery': variants/protectli_vp66xx/recovery.md
+            #   - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
+            #   - 'Test matrix': variants/protectli_vp66xx/test-matrix.md
           # - 'Protectli V1210/V1410/V1610':
           #     - 'Overview': variants/protectli_v1x10/overview.md
           #     - 'Releases': variants/protectli_v1x10/releases.md
