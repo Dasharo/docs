@@ -17,64 +17,62 @@ and save it to a file (`dump.rom`), execute the following command:
 flashrom -p internal -r dump.rom
 ```
 
+## Flashing Dasharo
 
 === "v1x1x"
-    ## Flashing Dasharo
 
     To flash Dasharo on the platform, execute the following command - replace
     `[path]` with the path to the Dasharo image you want to flash, e.g.
     `protectli_vault_V1210_v0.9.0.rom`.
 
     ```bash
-    flashrom -p internal -w protectli_vault_V1210_v0.9.0.rom --ifd -i bios
+    flashrom -p internal -w [path] --ifd -i bios
     ```
 
     This will flash the BIOS region only. After the operation is successful,
     reboot the platform.
 
 === "vp46xx"
-    ## Flashing Dasharo
 
-    To flash Dasharo on the platform, execute the following command - replace
-    `[path]` with the path to the Dasharo image you want to flash, e.g.
+    To flash Dasharo on the platform, execute the following command -
+    replace `[path]` with the path to the Dasharo image you want to flash, e.g.
     `protectli_vault_cml_v1.0.13.rom`.
 
     ```bash
-    flashrom -p internal -w protectli_vault_cml_v1.0.13.rom
+    flashrom -p internal -w [path]
     ```
 
-    This will flash the full image, including the Intel ME. The operation requires
-    a hard reset of the platform. To perform a hard reset:
+    This will flash the full image, including the Intel ME. The operation
+    requires a hard reset of the platform. To perform a hard reset:
 
-    1. Power off the platform. Note, it may not power off completely due to flashed
-    ME.
+    1. Power off the platform. Note, it may not power off completely due to
+        flashed ME.
     2. Disconnect power supply from the board when OS finishes all tasks after
-    power off (the screen goes dark or black).
+        power off (the screen goes dark or black).
     3. Disconnect the RTC/CMOS battery OR clear the CMOS using the pin header
-    located near memory slots. Wait about half a minute (unshort the pins).
+        located near memory slots. Wait about half a minute (unshort the pins).
     4. Connect the power supply back.
-    5. The platform should power on normally now. You can connect the battery back
-    if it was disconnected.
+    5. The platform should power on normally now. You can connect the battery
+    6. back if it was disconnected.
 
 === "v66xx"
-    ## Flashing Dasharo
 
     To flash Dasharo on the platform, execute the following command - replace
     `[path]` with the path to the Dasharo image you want to flash, e.g.
     `protectli_vp66xx_v0.9.0.rom`.
 
     ```bash
-    flashrom -p internal -w protectli_vp66xx_v0.9.0.rom --ifd -i bios
+    flashrom -p internal -w [path] --ifd -i bios
     ```
 
     This will flash the BIOS region only. After the operation is successful,
     reboot the platform.
 
 === "vp2410"
-    ## Flashing Dasharo
 
-    To flash Dasharo on the platform, execute the following command - replace `[path]`
-    with the path to the Dasharo image you want to flash, e.g. `protectli_vault_glk_v1.0.15.rom`.
+    To flash Dasharo on the platform, execute the following command -
+    replace `[path]` with the path to the Dasharo image you want to flash,
+    e.g. `protectli_vault_glk_v1.0.15.rom`.
 
     If stock firmware is currently installed:
 
@@ -82,8 +80,8 @@ flashrom -p internal -r dump.rom
     flashrom -p internal -w [path]
     ```
 
-    If Dasharo is currently installed, only the COREBOOT and IFWI partitions of the
-    flash needs to be updated. Flash it using the following command:
+    If Dasharo is currently installed, only the COREBOOT and IFWI partitions
+    of the flash needs to be updated. Flash it using the following command:
 
     ```bash
     flashrom -p internal -w protectli_vault_glk_v1.0.15.rom --fmap -i COREBOOT -i IFWI
@@ -92,7 +90,6 @@ flashrom -p internal -r dump.rom
     This command also preserves Dasharo UEFI settings and the boot order.
 
 === "vp2420"
-    ## Flashing Dasharo
 
     To flash Dasharo on the platform, execute the following command - replace
     `[path]` with the path to the Dasharo image you want to flash, e.g.
@@ -112,4 +109,3 @@ flashrom -p internal -r dump.rom
     ```
 
     This command also preserves Dasharo UEFI settings and the boot order.
-
