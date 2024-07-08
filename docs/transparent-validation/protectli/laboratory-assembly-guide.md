@@ -60,7 +60,6 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     * Pomona SOIC8 clip
     * Micro-USB to USB-A male-male cable for console
     * Power supply for the platform: 12V 10A
-    
 
 ### External flashing enabling
 
@@ -95,7 +94,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     | J7 pin 6 (MOSI)     | <TBD marking> pin 3 (MOSI)             |
 
 === "VP66xx"
-    
+
     Connect the J1 and J2 flash headers to the SPI header on RTE.
 
     | RTE SPI header      | J2 flash header                        |
@@ -105,11 +104,10 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     | J7 pin 6 (MOSI)     | pin 4 (MOSI)                           |
 
     | RTE SPI header      | J1 flash header                        |
-    |:-------------------:|:--------------------------------------:|   
+    |:-------------------:|:--------------------------------------:|
     | J7 pin 2 (GND)      | pin 4 (GND)                            |
     | J7 pin 3 (CS)       | pin 1 (CS)                             |
     | J7 pin 5 (MISO)     | pin 2 (MISO)                           |
-
 
 ### CMOS reset circuit
 
@@ -172,7 +170,6 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     | Any GND   | JCMOS1 pin 1 (GND)         |
 
     Resetting CMOS is required for proper external flashing.
-
 
 ## Theory of operation
 
@@ -252,7 +249,6 @@ The method of setting and using serial connection is described in the
         ```bash
         rte_ctrl rel
         ```
-
 
 === "VP66xx"
 
