@@ -152,6 +152,23 @@ Universe](https://docs.dasharo.com/variants/protectli_vp2410/releases/) or
 [Cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/dasharo/releases&fileid=297139)
 (only for logged in users), alternatively newest builds can be found at [Github](https://github.com/Dasharo/coreboot/).
 
+Running tests: [Open Source Firmware Remote Test Environment](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#getting-started)
+It is strongly suggested to run your first test on [QEMU](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#qemu-workflow).
+To prepare Ubuntu OS image for QEMU refer to: [Ubuntu OS](https://github.com/Dasharo/preseeds?tab=readme-ov-file#ubuntu),
+after downloading and creating image copy ```ubuntu.iso```
+to ```.../open-source-firmware-validation/qemu-data/```
+also create a drive onto which the os is going to be installed by running
+
+```qemu-img create -f qcow2 qemu-data/hdd.qcow2 20G```
+
+run QEMU with:
+
+```./scripts/ci/qemu-run.sh graphic os_install```
+
+To start QEMU so that it boots to os run:
+
+```./scripts/ci/qemu-run.sh graphic os```
+
 ## Troubleshooting
 
 **Connecting to RTE serial output: `Connection refused`**
@@ -177,3 +194,10 @@ Check if Sonoff state is set to ON `osfv_cli sonoff --sonoff_ip
    CLI](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli) by running
    `osfv_cli rte --rte_ip <rte_ip_address> flash write --rom <path_to_fw_file>`
    command.
+
+**Ubuntu won't download and create image**
+
+1. Download image from: [Ubuntu](https://ubuntu.task.gda.pl/ubuntu-releases/22.04.4/ubuntu-22.04.4-desktop-amd64.iso),
+and use the script:
+
+```./ubuntu/create_image.sh -i ~/Downloads/ubuntu-22.04.4-desktop-amd64.iso```
