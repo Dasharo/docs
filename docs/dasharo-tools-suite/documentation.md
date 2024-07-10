@@ -18,6 +18,7 @@ that it boots on the following platforms:
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161)),
 * NovaCustom NS5x/7x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)),
+* NovaCustom V54x/56x
 * PC Engines apu2/3/4/6.
 
 ## Running
@@ -301,7 +302,8 @@ This feature is supported on the following platforms:
 * MSI PRO Z790-P DDR4,
 * MSI PRO Z790-P DDR5,
 * NovaCustom NV4x,
-* NovaCustom NS5x/7x.
+* NovaCustom NS5x/7x,
+* NovaCustom V54x/56x.
 
 ### HCL Report
 
@@ -311,7 +313,7 @@ If you would like to send the report to our servers, please remember about
 connecting the ethernet cable. More information can be found in
 [glossary](../glossary.md#dasharo-hardware-compatibility-list-report).
 
-![](./images/dts-hcl-run.jpg)
+![](./images/dts-hcl-run.png)
 
 #### HCL Report correctness
 
@@ -377,7 +379,7 @@ Please consider the following options depending on your situation:
       storage available, so the report, and your BIOS backup are stored in
       temporary memory and will not be available after reboot. Please make sure
       to move HCL Report to not volatile storage. This can be done using option
-      `9) Shell`,
+      `S to enter shell`,
     + **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
       directory.
 
@@ -470,7 +472,7 @@ Rebooting
 #### Local firmware update
 
 To flash a local BIOS image (e.g. mounted from a USB stick), you can drop to the
-shell (option `9`) and use the `flashrom` binary provided inside DTS directly.
+shell (option `S`) and use the `flashrom` binary provided inside DTS directly.
 
 **DANGER**: Failure to use `flashrom` correctly **_may result in an unbootable
 device_**. For example, never flash an image that does not contain an Intel
@@ -525,8 +527,10 @@ BIOS lock is turned off this time.
 DTS allows performing full Embedded Controller firmware transition from the
 proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
 functionality is supported on the [NovaCustom
-NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/)) and [NovaCustom
-NV4x](/variants/novacustom_nv4x_tgl/releases/) only.
+NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/)), [NovaCustom
+NV4x](/variants/novacustom_nv4x_tgl/releases/),
+[NovaCustom V54x](/variants/novacustom_v540tu/releases/) and
+[NovaCustom V56x](/variants/novacustom_v560tu/releases/) only.
 
 Starting from DTS v1.2.0 to perform EC transition please run
 [firmware update](#firmware-update) on the platform with proprietary vendor EC
