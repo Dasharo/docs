@@ -178,6 +178,7 @@ cat kas/cache.yml
 output:
 
 ```bash
+---
 header:
   version: 11
 
@@ -302,7 +303,10 @@ This feature is supported on the following platforms:
 * MSI PRO Z790-P DDR4,
 * MSI PRO Z790-P DDR5,
 * NovaCustom NV4x,
-* NovaCustom NS5x/7x,
+* NovaCustom NS5x/7x.
+
+And partially (only EC firmware flashing) on:
+
 * NovaCustom V54x/56x.
 
 ### HCL Report
@@ -386,7 +390,7 @@ Please consider the following options depending on your situation:
 ### Firmware update
 
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
-with flashed Dasharo and choose option number `5`. You may see additional
+with flashed Dasharo and choose option number `2`. You may see additional
 information about available updates if you are not [Dasharo Entry
 Subscription](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
 subscriber.
@@ -410,28 +414,54 @@ Procedure execution ends automatically on the reboot of the platform (unless it
 requires otherwise). After restarting the device, you can enjoy the updated
 version of Dasharo, which we provide for given hardware.
 
-Below we provide an example of updating Dasharo firmware from version v1.0.0 to
+Below we provide an example of updating Dasharo firmware from version v1.1.0 to
 v1.1.1 on MSI PRO Z690-A DDR4.
 
 ```bash
-  DTS version v1.2.0
+ Dasharo Tools Suite Script 2.0.0-rc1
+ (c) Dasharo <contact@dasharo.com>
+ Report issues at: https://github.com/Dasharo/dasharo-issues
+*********************************************************
+**                HARDWARE INFORMATION
+*********************************************************
+**    System Inf.: Micro-Star International Co., Ltd. MS-7D25
+** Baseboard Inf.: Micro-Star International Co., Ltd. PRO Z690-A WIFI DDR4(MS-7D25)
+**       CPU Inf.: 12th Gen Intel(R) Core(TM) i5-12600K
+**    RAM Channel-0-DIMM-0: KF3600C17D4/8GX
+**    RAM Channel-0-DIMM-1: KF3600C17D4/8GX
+**    RAM Channel-0-DIMM-0: KF3600C17D4/8GX
+**    RAM Channel-0-DIMM-1: KF3600C17D4/8GX
+*********************************************************
+**                FIRMWARE INFORMATION
+*********************************************************
+**      BIOS Inf.: 3mdeb Dasharo (coreboot+UEFI) v1.1.0
+*********************************************************
+**     1) Dasharo HCL report
+**     2) Update Dasharo Firmware
+**     3) Restore firmware from Dasharo HCL report
+**     4) Load your DES keys
+*********************************************************
+Select a menu option or
+R to reboot  P to poweroff  S to enter shell
+K to launch SSH server
+2
 
-  1) Dasharo HCL report - dump hardware information from this device
-  3) Restore firmware from Dasharo HCL report
-  4) Load SE keys
-  5) Update Dasharo firmware
-  9) Shell
-  10) Power off system
-  11) Reboot system
-
-Enter an option: 5
-
+Waiting for network connection ...
+Network connection established.
+Checking if board is Dasharo compatible.
 Gathering flash chip and chipset information...
 Flash information: vendor="Programmer" name="Opaque flash chip"
 Flash size: 32M
+Getting platform specific GPG key... Done
+Waiting for system clock to be synced ...
 Checking for the latest Dasharo update available...
-Current Dasharo version: 1.0.0
+
+Current Dasharo version: 1.1.0
 Latest available Dasharo version: 1.1.1
+
+Are you sure you want to proceed with update? (Y|n) y
+
+Downloading Dasharo firmware...Done
 
 Please verify detected hardware!
 
@@ -439,7 +469,7 @@ Board vendor: Micro-Star International Co., Ltd.
 System model: MS-7D25
 Board model: PRO Z690-A WIFI DDR4(MS-7D25)
 
-Does it match your actual specification? (Y|n)y
+Does it match your actual specification? (Y|n) y
 
 Following firmware will be used to install Dasharo
 Dasharo BIOS firmware:
@@ -450,13 +480,16 @@ You can learn more about this release on: https://docs.dasharo.com/
 
 Do you want to update Dasharo firmware on your hardware? (Y|n) y
 
-Downloading Dasharo firmware update...
-########################################################################### 100.0%
-Checking sha256sum...
-/tmp/biosupdate.rom: OK
+Checking Dasharo firmware checksum... Verified.
+Checking Dasharo firmware signature... Verified.
+
+Backing up firmware configuration... Done.
+Found file config at 0xc24c0, type raw, compressed 5418, size 19725
+Checking flash layout.
+Checking vboot keys.
 Updating Dasharo firmware...
-This will take around 3 minutes. Please be patient and do not reset your
-computer, or touch keyboard!
+This may take several minutes. Please be patient and do not power off your
+computer or touch the keyboard!
 Successfully updated Dasharo firmware
 Syncing disks... Done.
 The computer will reboot automatically in 5 seconds
@@ -527,7 +560,7 @@ BIOS lock is turned off this time.
 DTS allows performing full Embedded Controller firmware transition from the
 proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
 functionality is supported on the [NovaCustom
-NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/)), [NovaCustom
+NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/), [NovaCustom
 NV4x](/variants/novacustom_nv4x_tgl/releases/),
 [NovaCustom V54x](/variants/novacustom_v540tu/releases/) and
 [NovaCustom V56x](/variants/novacustom_v560tu/releases/) only.
