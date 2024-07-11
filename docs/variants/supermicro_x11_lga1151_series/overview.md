@@ -50,6 +50,6 @@ just small part of bigger documentation . Otherwise we will never move forward.
 ## References
 
 * [Mullvad: Open-source firmware is the future](https://mullvad.net/en/blog/2019/8/7/open-source-firmware-future/)
-* [Green TekSolutions: The first motherboard for servers to use CoreBoot - X11SSH-TF](https://www.greenteksolutionsllc.com/blog/The_first_motherboard_for_servers_to_use_CoreBoot_-_X11SSH-TF)
+* [Green TekSolutions: The first motherboard for servers to use CoreBoot - X11SSH-TF](https://web.archive.org/web/20210904001119/https://www.greenteksolutionsllc.com/blog/The_first_motherboard_for_servers_to_use_CoreBoot_-_X11SSH-TF)
 * [coreboot: X11 LGA1151 Series documentation](https://doc.coreboot.org/mainboard/supermicro/x11-lga1151-series/x11-lga1151-series.html)
 * [coreboot: Supermicro X11SSH-F/X11SSH-LN4F documentation](https://doc.coreboot.org/mainboard/supermicro/x11-lga1151-series/x11ssh-f/x11ssh-f.html)
