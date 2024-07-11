@@ -28,11 +28,11 @@ This procedure can be used to restore both Dasharo and previous Insyde firmware.
 
 === "BIOS"
 
-    === "14th Gen models"
+    === "11th Gen models"
         You will need:
 
-        - a CH341a programmer with 1.8V support
-        - a WSON-8 probe
+        - a CH341a programmer with 3.3V support
+        - a SOIC-8 (Pomona) clip
 
     === "12th Gen models"
         You will need:
@@ -40,11 +40,11 @@ This procedure can be used to restore both Dasharo and previous Insyde firmware.
         - a CH341a programmer with 3.3V support
         - a WSON-8 probe
 
-    === "11th Gen models"
+    === "14th Gen models"
         You will need:
 
-        - a CH341a programmer with 3.3V support
-        - a SOIC-8 (Pomona) clip
+        - a CH341a programmer with 1.8V support
+        - a WSON-8 probe
 
     A complete set containing everything you need is available from
     [our shop](https://shop.3mdeb.com/shop/modules/ch341a-flash-bios-usb-programmer-kit-soic8-sop8/).
@@ -64,7 +64,7 @@ This procedure can be used to restore both Dasharo and previous Insyde firmware.
         - a 24-pin FFC breakout board with a 1.0mm pitch FFC connector and a 2.54mm
              pitch pin header
         - USB-A to USB-B cable to connect the Arduino to the host
-        - USB-C cable for grounding
+        - USB-C cable for grounding with power blocker
 
     === "NV4x"
         You will need:
@@ -75,7 +75,29 @@ This procedure can be used to restore both Dasharo and previous Insyde firmware.
         - a 24-pin FFC breakout board with a 0.5mm pitch FFC connector and a 2.54mm
           pitch pin header
         - USB-A to USB-B cable to connect the Arduino to the host
-        - USB-C cable for grounding
+        - USB-C cable for grounding with power blocker
+
+    === "V540"
+        You will need:
+
+        - an Arduino Mega 2560
+        - a 24-pin FFC cable with a 0.5mm pitch, same-sided (connectors on the same side
+          on both ends of the cable)
+        - a 24-pin FFC breakout board with a 0.5mm pitch FFC connector and a 2.54mm
+          pitch pin header
+        - USB-A to USB-B cable to connect the Arduino to the host
+        - USB-C cable for grounding with power blocker
+
+    === "V560"
+        You will need:
+
+        - an Arduino Mega 2560
+        - a 24-pin FFC cable with a 1.0mm pitch, same-sided (connectors on the same side
+          on both ends of the cable)
+        - a 24-pin FFC breakout board with a 1.0mm pitch FFC connector and a 2.54mm
+          pitch pin header
+        - USB-A to USB-B cable to connect the Arduino to the host
+        - USB-C cable for grounding with power blocker
 
     The full set for EC firmware recovery is available at our
     [online shop](https://shop.3mdeb.com/shop/open-source-hardware/ec-flashing-kit/).
@@ -121,6 +143,20 @@ make BOARD=arduino/mega2560 flash
 
 ### Recovery steps
 
+=== "everything else"
+
+=== "V560"
+
+    1. For the V560 laptops you will need to remove two stripes that are
+       holding keyboard in place.
+
+        ![](/images/v560tape1.webp)
+
+    1. Second stripe is located under the heat sink.
+
+        ![](/images/v560heatsink.webp)
+        ![](/images/v560tape2.webp)
+
 1. Remove the two screws holding the keyboard in place. They are indicated on the
    bottom cover with a keyboard symbol:
 
@@ -162,7 +198,7 @@ make BOARD=arduino/mega2560 flash
 
 1. Connect the Arduino to the host using the USB-A to USB-B cable
 1. Connect the USB-C cable together with power blocker from your host
-   computer to any of the USB-C ports on the laptop.
+   computer to the laptop.
 
     !!! warning
 
@@ -271,7 +307,6 @@ Components Necessary to perform BIOS Recovery:
 
         ![](/images/CH341A-V2)
 
-
     1. Plug the programmer into your host computer.
 
     1. Remove bottom cover from the laptop.
@@ -285,9 +320,6 @@ Components Necessary to perform BIOS Recovery:
         ![](/images/NV412th1.webp)
 
     1. Unplug the battery (1)
-
-    1. Remove memory module from RAM1 slot. This will make it easier to place the
-       WSON probe correctly.
 
     1. Place the WSON probe on the BIOS chip, taking care to align the dot on the
        WSON probe with the white dot on the BIOS chip:
@@ -326,30 +358,29 @@ Components Necessary to perform BIOS Recovery:
 
         ![](/images/CH341A-V.webp)
 
-
     1. Plug the programmer into your host computer.
 
     1. Remove bottom cover from the laptop.
 
     === "V540TND 14th Gen"
 
-        ![](/images/ns5x_7x_adl_without_bottom_cover.webp)
+        ![](/images/540TND.webp)
 
     === "V540TU 14th Gen"
 
-        456
+        ![](/images/540TU.webp)
 
     === "V560TND 14th Gen"
 
-        qwe
+        ![](/images/560TND.webp)
 
     === "V560TU 14th Gen"
 
-        ewq
+        ![](/images/560TU.webp)
 
     === "V560TNE 14th Gen"
 
-        why?
+        ![](/images/560TNE.webp)
 
     1. Unplug the battery (1)
 
@@ -361,24 +392,28 @@ Components Necessary to perform BIOS Recovery:
 
     === "V540TND 14th Gen"
 
-        ![](/images/ch341a_rec/wson_probe_alignment.jpg)
-        ![](/images/ch341a_rec/wson_probe_onchip.jpg)
+        ![](/images/540TNDwson1.webp)
+        ![](/images/540TNDwson2.webp)
 
     === "V540TU 14th Gen"
 
-        456
+        ![](/images/540TUwson1.webp)
+        ![](/images/540TUwson2.webp)
 
     === "V560TND 14th Gen"
 
-        qwe
+        ![](/images/560TNDwson1.webp)
+        ![](/images/560TNDwson2.webp)
 
     === "V560TU 14th Gen"
 
-        ewq
+        ![](/images/560TUwson1.webp)
+        ![](/images/560TUwson2.webp)
 
     === "V560TNE 14th Gen"
 
-        why?
+        ![](/images/560TNEwson1.webp)
+        ![](/images/560TNEwson2.webp)
 
     1. Hold down the WSON probe firmly in place and execute the following command
        on your host computer:
