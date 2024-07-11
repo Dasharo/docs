@@ -66,13 +66,13 @@ owners, and trustworthiness for all. More details can be found here [\[7\]][7].
   progress](https://github.com/Dasharo/dasharo-issues/milestone/31)
 
 This task enhances coreboot by enabling support for UEFI Capsule Update. It
-modifies coreboot to be able to
-access beyond 4GB, and implements mechanisms for identifying capsule image
-locations. Capsule coalescing logic is ported to coreboot to consolidate firmware update
-capsules into a single memory region. coreboot is adjusted to reserve this
-memory region and pass the information to the UEFI payload. Additionally, a new
-SMI handler is implemented to write to SPI flash, enabling full BIOS image overwrite
-only when a valid capsule update is present.
+modifies coreboot to be able to access beyond 4GB, and implements mechanisms for
+identifying capsule image locations. Capsule coalescing logic is ported to
+coreboot to consolidate firmware update capsules into a single memory region.
+coreboot is adjusted to reserve this memory region and pass the information to
+the UEFI payload. Additionally, a new SMI handler is implemented to write to SPI
+flash, enabling full BIOS image overwrite only when a valid capsule update is
+present.
 
 - Enable memory access above 4GB
 - Parse capsule location from UEFI variables in coreboot
