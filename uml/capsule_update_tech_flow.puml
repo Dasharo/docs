@@ -28,18 +28,18 @@ data <-- OS: Store (possibly scattered) Capsule image in RAM
 vars <-- OS: Save information about Capsules
 end opt
 
-OS -> coreboot --++: Reboot
+OS -> coreboot --++: Warm reset
 
 coreboot <-- vars: Check for Capsule presence
 
 opt
 coreboot <-- data: Read scattered Capsules from RAM
-note over coreboot: Coalesce\nCapsule(s)
+note over coreboot: Coalesce\nCapsules
 data <-- coreboot: Write coalesced Capsules to RAM
-data <-- coreboot: Create Capsule CBMEM entry
-note over coreboot: Install SMI\nhandler
+data <-- coreboot: Create a CBMEM entry per capsule
 end opt
 
+note over coreboot: Configure\nSMI handler
 note over coreboot: Obtain\nversion\nnumber
 data <-- coreboot: Create version CBMEM entry
 
@@ -82,7 +82,6 @@ note right: Write FW\nimage to flash
 
 FMP -> DXE --: Return
 
-DXE -> coreboot --: Reboot
+DXE -> coreboot --: Cold reset
 end opt
-
 @enduml
