@@ -18,7 +18,8 @@ that it boots on the following platforms:
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=536764189&range=A161)),
 * NovaCustom NS5x/7x ([test
   report](https://docs.google.com/spreadsheets/d/1LOXY9HCu-fMitkYwX08iLsQdSNenzyU0LnMdVbZB5Do/edit#gid=38447675&range=A174)),
-* NovaCustom V54x/56x
+* NovaCustom V54x/56x ([test
+  report](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit?gid=382389731#gid=382389731))
 * PC Engines apu2/3/4/6.
 
 ## Running
@@ -559,9 +560,9 @@ BIOS lock is turned off this time.
 
 DTS allows performing full Embedded Controller firmware transition from the
 proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
-functionality is supported on the [NovaCustom
-NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/), [NovaCustom
-NV4x](/variants/novacustom_nv4x_tgl/releases/),
+functionality is supported on the
+[NovaCustom NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/),
+[NovaCustom NV4x](/variants/novacustom_nv4x_tgl/releases/),
 [NovaCustom V54x](/variants/novacustom_v540tu/releases/) and
 [NovaCustom V56x](/variants/novacustom_v560tu/releases/) only.
 
