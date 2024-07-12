@@ -132,7 +132,7 @@ User Password Management menu allows one to set firmware setup admin password:
 ![](/images/menus/password_mgr.jpeg){ class="center" }
 
 The password requirements are compliant to 
-[modern standards](https://pages.nist.gov/800-63-3/sp800-63b.html). 
+modern standards. See `Appendix A` at [pages.nist.gov](https://pages.nist.gov/800-63-3/sp800-63b.html). 
 The password doesn't need to contain anything more than lowercase letters
 to allow for using passphrases. Choosing a strong password is recommended,
 but not mandatory. Also the new password must be different from the last 5
