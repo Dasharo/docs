@@ -1,5 +1,7 @@
 # Test matrix
 
+https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit?gid=270990532#gid=270990532
+
 ## About
 
 The test matrix is used to determine the scope of tests which the DUT is
