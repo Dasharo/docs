@@ -21,7 +21,7 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 ## v0.9.1 - 2024-01-22
 
 Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCumsistom/ms7e06/results.csv).
+[here](https://github.com/Dasharo/osfv-results/tree/main/boards/msi/ms7e06/results.csv).
 
 ### Added
 
