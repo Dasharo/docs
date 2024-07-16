@@ -257,7 +257,7 @@ Components Necessary to perform BIOS Recovery:
             If your CH341a programmer has a voltage switch, make sure it's at 3.3V.
             Improper voltage selection may result in hardware damage.
 
-        ![](/images/CH341A-V2)
+        ![](/images/CH341A-V2.webp)
 
     1. Plug the programmer into your host computer.
 
@@ -305,7 +305,7 @@ Components Necessary to perform BIOS Recovery:
             If your CH341a programmer has a voltage switch, make sure it's at 3.3V.
             Improper voltage selection may result in hardware damage.
 
-        ![](/images/CH341A-V2)
+        ![](/images/CH341A-V2.webp)
 
     1. Plug the programmer into your host computer.
 
