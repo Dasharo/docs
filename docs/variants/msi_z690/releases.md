@@ -19,7 +19,7 @@ For details about our release process please read
 ## v1.1.3 - 2024-01-22
 
 Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCumsistom/ms7d25/results.csv).
+[here](https://github.com/Dasharo/osfv-results/tree/main/boards/msi/ms7d25/results.csv).
 
 ### Added
 
