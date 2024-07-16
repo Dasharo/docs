@@ -143,19 +143,19 @@ make BOARD=arduino/mega2560 flash
 
 ### Recovery steps
 
-=== "everything else"
+#### V560
 
-=== "V560"
+1. For the V560 laptops you will need to remove two stretch-release pull tabs
+   that are holding keyboard in place.
 
-    1. For the V560 laptops you will need to remove two stripes that are
-       holding keyboard in place.
+    ![](/images/v560tape1.webp)
 
-        ![](/images/v560tape1.webp)
+1. Second pull tab is located under the heat sink.
 
-    1. Second stripe is located under the heat sink.
+    ![](/images/v560heatsink.webp)
+    ![](/images/v560tape2.webp)
 
-        ![](/images/v560heatsink.webp)
-        ![](/images/v560tape2.webp)
+#### Other models
 
 1. Remove the two screws holding the keyboard in place. They are indicated on the
    bottom cover with a keyboard symbol:
@@ -257,7 +257,7 @@ Components Necessary to perform BIOS Recovery:
             If your CH341a programmer has a voltage switch, make sure it's at 3.3V.
             Improper voltage selection may result in hardware damage.
 
-    ![](/images/CH341A-V2)
+        ![](/images/CH341A-V2)
 
     1. Plug the programmer into your host computer.
 
@@ -311,28 +311,28 @@ Components Necessary to perform BIOS Recovery:
 
     1. Remove bottom cover from the laptop.
 
-    === "NS5x/7x 12th Gen"
+        === "NS5x/7x 12th Gen"
 
-        ![](/images/ns5x_7x_adl_without_bottom_cover.webp)
+            ![](/images/ns5x_7x_adl_without_bottom_cover.webp)
 
-    === "NV4x 12th Gen"
+        === "NV4x 12th Gen"
 
-        ![](/images/NV412th1.webp)
+            ![](/images/NV412th1.webp)
 
     1. Unplug the battery (1)
 
     1. Place the WSON probe on the BIOS chip, taking care to align the dot on the
        WSON probe with the white dot on the BIOS chip:
 
-    === "NS5x/7x 12th Gen"
+        === "NS5x/7x 12th Gen"
 
-        ![](/images/ch341a_rec/wson_probe_alignment.jpg)
-        ![](/images/ch341a_rec/wson_probe_onchip.jpg)
+            ![](/images/ch341a_rec/wson_probe_alignment.jpg)
+            ![](/images/ch341a_rec/wson_probe_onchip.jpg)
 
-    === "NV4x 12th Gen"
+        === "NV4x 12th Gen"
 
-        ![](/images/NV412th2.webp)
-        ![](/images/NV412th21.webp)
+            ![](/images/NV412th2.webp)
+            ![](/images/NV412th21.webp)
 
     1. Hold down the WSON probe firmly in place and execute the following command
        on your host computer:
@@ -362,66 +362,62 @@ Components Necessary to perform BIOS Recovery:
 
     1. Remove bottom cover from the laptop.
 
-    === "V540TND 14th Gen"
+        === "V540TND 14th Gen"
 
-        ![](/images/540TND.webp)
+            ![](/images/540TND.webp)
 
-    === "V540TU 14th Gen"
+        === "V540TU 14th Gen"
 
-        ![](/images/540TU.webp)
+            ![](/images/540TU.webp)
 
-    === "V560TND 14th Gen"
+        === "V560TND 14th Gen"
 
-        ![](/images/560TND.webp)
+            ![](/images/560TND.webp)
 
-    === "V560TU 14th Gen"
+        === "V560TU 14th Gen"
 
-        ![](/images/560TU.webp)
+            ![](/images/560TU.webp)
 
-    === "V560TNE 14th Gen"
+        === "V560TNE 14th Gen"
 
-        ![](/images/560TNE.webp)
+            ![](/images/560TNE.webp)
 
     1. Unplug the battery (1)
-
-    1. Remove memory module from RAM1 slot. This will make it easier to place the
-       WSON probe correctly.
 
     1. Place the WSON probe on the BIOS chip, taking care to align the dot on the
        WSON probe with the white dot on the BIOS chip:
 
-    === "V540TND 14th Gen"
+        === "V540TND 14th Gen"
 
-        ![](/images/540TNDwson1.webp)
-        ![](/images/540TNDwson2.webp)
+            ![](/images/540TNDwson1.webp)
+            ![](/images/540TNDwson2.webp)
 
-    === "V540TU 14th Gen"
+        === "V540TUPlug the programmer  14th Gen"
 
-        ![](/images/540TUwson1.webp)
-        ![](/images/540TUwson2.webp)
+            ![](/images/540TUwson1.webp)
+            ![](/images/540TUwson2.webp)
 
-    === "V560TND 14th Gen"
+        === "V560TND 14th Gen"
 
-        ![](/images/560TNDwson1.webp)
-        ![](/images/560TNDwson2.webp)
+            ![](/images/560TNDwson1.webp)
+            ![](/images/560TNDwson2.webp)
 
-    === "V560TU 14th Gen"
+        === "V560TU 14th Gen"
 
-        ![](/images/560TUwson1.webp)
-        ![](/images/560TUwson2.webp)
+            ![](/images/560TUwson1.webp)
+            ![](/images/560TUwson2.webp)
 
-    === "V560TNE 14th Gen"
+        === "V560TNE 14th Gen"
 
-        ![](/images/560TNEwson1.webp)
-        ![](/images/560TNEwson2.webp)
+            ![](/images/560TNEwson1.webp)
+            ![](/images/560TNEwson2.webp)
 
-    1. Hold down the WSON probe firmly in place and execute the following command
-       on your host computer:
+    3. Hold down the WSON probe firmly in place and execute the following command
+        on your host computer:
 
         ```bash
         sudo flashrom -p ch341a_spi --ifd -i fd -i me -i bios -w [backup.bin]
-
         ```
 
     1. Power on the laptop to verify the recovery passed. First boot may take a
-       while, so be patient.
+        while, so be patient.
