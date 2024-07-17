@@ -58,7 +58,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     * USB-UART converter with 4-wire cable
     * 4-pin header 2.54 mm raster
     * Pomona SOIC8 clip
-    * Micro-USB to USB-A male-male cable for console
+    * USB-C to USB-A male-male cable for console
     * Power supply for the platform: 12V 10A
 
 ### External flashing enabling
