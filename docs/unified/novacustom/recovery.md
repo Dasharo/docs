@@ -111,6 +111,10 @@ The procedure will be slightly different depending on the model of your laptop.
     Ensure you choose the correct FFC cable, as they can be easily damaged.
     [Needed components](https://docs.dasharo.com/unified/novacustom/recovery/#ns5x--ns7x)
 
+!!! important
+
+    Make sure your battery is connected for this process.
+
 ### Prerequisites
 
 - Clone the EC repository:
@@ -118,6 +122,7 @@ The procedure will be slightly different depending on the model of your laptop.
 ```bash
 git clone https://github.com/Dasharo/ec.git
 cd ec
+git submodule update --init --checkout
 ```
 
 - Install dependencies:
