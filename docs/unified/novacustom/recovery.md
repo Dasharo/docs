@@ -143,6 +143,8 @@ make BOARD=arduino/mega2560 flash
 
 ### Recovery steps
 
+> For other models scroll down
+
 #### V560
 
 1. For the V560 laptops you will need to remove two stretch-release pull tabs
@@ -257,6 +259,7 @@ Components Necessary to perform BIOS Recovery:
             If your CH341a programmer has a voltage switch, make sure it's at 3.3V.
             Improper voltage selection may result in hardware damage.
 
+        ![](/images/CH341A-V.webp)
         ![](/images/CH341A-V2.webp)
 
     1. Plug the programmer into your host computer.
@@ -305,6 +308,7 @@ Components Necessary to perform BIOS Recovery:
             If your CH341a programmer has a voltage switch, make sure it's at 3.3V.
             Improper voltage selection may result in hardware damage.
 
+        ![](/images/CH341A-V.webp)
         ![](/images/CH341A-V2.webp)
 
     1. Plug the programmer into your host computer.
@@ -357,6 +361,7 @@ Components Necessary to perform BIOS Recovery:
             Improper voltage selection may result in hardware damage.
 
         ![](/images/CH341A-V.webp)
+        ![](/images/CH341A-V1.webp)
 
     1. Plug the programmer into your host computer.
 
