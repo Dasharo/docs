@@ -3,7 +3,7 @@
 ## Introduction
 
 This document describes platform-specific details for assembling Protectli
-VP2410, VP2420, VP4630/VP4650/VP4670, V1210/V1410/V1610 testing stands.
+VP2410, VP2420, VP4630/VP4650/VP4670, V1210/V1211/V1410/V1610 testing stands.
 Use this document as reference while going through
 [Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 
@@ -69,7 +69,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     Flash chip is socketed. One has to desolder the socket, solder the flash
     chip in place of the socket and connect the Pomona SOIC8 clip.
 
-=== "V1210/V1410/V1610"
+=== "V1210/V1211/V1410/V1610"
 
     Connect the RTE SPI header to the platform using the 2.54mm female-female
     wires as described in the table:
@@ -121,7 +121,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
 
     Resetting CMOS is required for proper external flashing.
 
-=== "V1210/V1410/V1610"
+=== "V1210/V1211/V1410/V1610"
 
     Connect the RTE J11 header to the platform CLR_CMOS1 header using 2.54mm to 2mm
     wires as described in the table:
@@ -199,7 +199,7 @@ The method of setting and using serial connection is described in the
         ./sonoff on
         ```
 
-=== "V1210/V1410/V1610"
+=== "V1210/V1211/V1410/V1610"
 
     Power supply controlling is performed with the relay module on RTE
     connected to one of RTE GPIOs. Power operation should be performed using
