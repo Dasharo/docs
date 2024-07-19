@@ -628,7 +628,7 @@ version. This is how we can achieve that.
 
 * Computer will shut down automatically.
 * Power on your computer. Booting process may take a while.
-* After boot, choose option number 9 to drop to Shell.
+* After boot, choose option `S` to drop to Shell.
 * Retrieve information about your updated EC.
 
   ```bash
