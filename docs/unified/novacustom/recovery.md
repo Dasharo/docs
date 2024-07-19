@@ -2,10 +2,9 @@
 
 ## Introduction
 
-This document describes the recovery procedure of laptops flashed with bad
-firmware (e.g. "bricked" devices), as well as external flashing in general,
-which can sometimes be needed when switching between different firmware vendors.
-
+The following documentation describes the process of recovering NovaCustom
+platforms from the brick state. This procedure can be used to restore both
+Dasharo and previous Insyde firmware.
 This procedure can be used to restore both Dasharo and previous Insyde firmware.
 
 ## Prerequisites
@@ -15,7 +14,7 @@ This procedure can be used to restore both Dasharo and previous Insyde firmware.
     To proceed with the recovery procedure, the backup with the vendor firmware or
     vendor EC firmware will be necessary eg. `bios_backup.rom`, `ec_backup.rom`.
 
-    The backup file should be generated before making any changes in the device
+    The backup file should be generated before making any changes to the device
     flash chip according to the following documentation sections:
 
     - [Firmware backup](initial-deployment.md#bios-installation)
