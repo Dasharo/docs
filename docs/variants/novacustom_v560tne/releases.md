@@ -8,7 +8,7 @@ For details about our release process please read
 
 <center>
 
-[Subscribe to NovaCustom V560TNE 15th Gen Dasharo Release Newsletter]
+[Subscribe to NovaCustom V560TNE 14th Gen Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
 </center>
