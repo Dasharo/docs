@@ -6,6 +6,13 @@ NovaCustom V540TU
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
+<center>
+
+[Subscribe to NovaCustom NV4x 11th Gen Dasharo Release Newsletter]
+[newsletter]{ .md-button .md-button--primary .center }
+
+</center>
+
 ## v0.9.0 - 2024-07-18
 
 Test results for this release can be found
