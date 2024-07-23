@@ -8,7 +8,7 @@ For details about our release process please read
 
 <center>
 
-[Subscribe to NovaCustom NV4x 11th Gen Dasharo Release Newsletter]
+[Subscribe to NovaCustom V540TU 14th Gen Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
 </center>
