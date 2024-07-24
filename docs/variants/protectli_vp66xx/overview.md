@@ -29,4 +29,4 @@ TPM, 2 CPU fans.
   validation procedure.
 * [Test matrix](test-matrix.md) - describes validation scope used during
   Dasharo firmware validation procedure.
-* [Post-installation setup](post-install.md)
+* [Post-installation setup](../protectli-post-install.md)
