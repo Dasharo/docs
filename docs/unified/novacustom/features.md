@@ -67,8 +67,8 @@ active only if the device is not connected to a power adapter.
 - Charging Mode - when the device is connected to a proper power adapter
 it is powered directly from the adapter. The battery will start charging only
 when the current charge falls below the lower charge threshold. When the upper
-threshold is achieved the battery is physically disconnected from the system
-and does not experience any excessive wear. If you are using the device like a
+threshold is achieved, the battery stops charging and no current is flowing
+through it, preventing excessive wear. If you are using the device like a
 desktop computer, having it constantly connected to the power adapter, consider
 lowering the charge thresholds to about 70-80%. By keeping the battery at a
 lower charge level the battery wear overtime can be reduced.
