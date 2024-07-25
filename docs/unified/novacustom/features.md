@@ -50,11 +50,33 @@ battery state, the following error message will be displayed:
 Dasharo firmware implements battery charge thresholds, which aim to extend the
 lifespan of the battery:
 
-- charging will only start when the battery level is below 95%
+- charging will only start when the battery level is below the lower threshold
+(default: 95%)
 
-- charging will stop once the battery level reaches 98%
+- charging will stop once the battery level reaches the upper threshold
+(default: 98%)
 
 Custom charge thresholds can be configured using the Dasharo setup menu.
+
+### Battery bypass mode
+
+The device can be powered in three modes:
+
+- Battery Mode - the device is powered using the battery only. This mode is
+active only if the device is not connected to a power adapter.
+- Charging Mode - when the device is connected to a proper power adapter
+it is powered directly from the adapter. The battery will start charging only
+when the current charge falls below the lower charge threshold. When the upper
+threshold is achieved, the battery stops charging and no current is flowing
+through it, preventing excessive wear. If you are using the device like a
+desktop computer, having it constantly connected to the power adapter, consider
+lowering the charge thresholds to about 70-80%. By keeping the battery at a
+lower charge level the battery wear overtime can be reduced.
+- Hybrid Power Boost mode - the device is powered from the battery and the
+power adapter at the same time. This mode activates only when the power
+adapter can't provide enough power to the system. The battery will start
+charging only if the current charge falls below the lower charge threshold
+and stop once the upper threshold is achieved.
 
 ## RGB keyboard
 
