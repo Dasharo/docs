@@ -62,20 +62,21 @@ Custom charge thresholds can be configured using the Dasharo setup menu.
 
 The device can be powered in three modes:
 
-- Battery mode - the device is powered using the battery only. This mode is
+- Battery Mode - the device is powered using the battery only. This mode is
 active only if the device is not connected to a power adapter.
-- Battery bypass mode - when the device is connected to a proper power adapter
+- Charging Mode - when the device is connected to a proper power adapter
 it is powered directly from the adapter. The battery will start charging only
 when the current charge falls below the lower charge threshold. When the upper
-threshold is achieved the battery is physically disconnected from the systemand
+threshold is achieved the battery is physically disconnected from the system
 and does not experience any excessive wear. If you are using the device like a
 desktop computer, having it constantly connected to the power adapter, consider
 lowering the charge thresholds to about 70-80%. By keeping the battery at a
 lower charge level the battery wear overtime can be reduced.
-- Hybrid mode - the device is powered from the battery and the power adapter
-at the same time. This mode activates only when the power adapter can't provide
-enough power to the system. The battery will start charging only if the current charge
-falls below the lower charge threshold and stop once the upper threshold is achieved.
+- Hybrid Power Boost mode - the device is powered from the battery and the
+power adapter at the same time. This mode activates only when the power
+adapter can't provide enough power to the system. The battery will start
+charging only if the current charge falls below the lower charge threshold
+and stop once the upper threshold is achieved.
 
 ## RGB keyboard
 
