@@ -23,7 +23,7 @@ create the testing stand.
 ### MSI PRO Z790-P
 
 MSI PRO Z790-P platform should be prepared in accordance with the
-[Motherboard assembly](../msi-z690/presale-assembly-and-validation.md#motherboard-assembly-only)
+[Motherboard assembly](../../transparent-validation/msi-z690/presale-assembly-and-validation.md#motherboard-assembly-only)
 documentation.
 
 ## Connections
@@ -200,7 +200,7 @@ The following sections describe how to use all of the enabled features:
 ### Serial connection
 
 The method of setting and using serial connection is described in the
-[Serial connection guide](../rte/v1.1.0/serial-port-connection-guide.md).
+[Serial connection guide](../../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 
 ### Power supply controlling
 
