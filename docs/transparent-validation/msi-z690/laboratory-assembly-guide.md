@@ -57,6 +57,10 @@ The following sections describe how to enable all of the following features:
     ![IMG](images/msi_z690_lab_serial_panel.jpg)
     ![IMG](images/msi_z690_lab_serial_RTE.jpg)
 
+1. Remember to enable console redirection in bios settings.
+
+    > Dasharo System Features > Serial Port Configuration
+
 ### Power supply controlling
 
 Connect SeaSonic FOCUS Plus Platinum to Sonoff.
