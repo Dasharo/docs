@@ -146,20 +146,22 @@ nav:
           - 'Features': unified/novacustom/features.md
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
           - 'Firmware transition': unified/novacustom/firmware-transition.md
-          - 'V540TU 14th Gen':
-              - 'Releases': variants/novacustom_v540tu/releases.md
-              - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
-              - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
-              - 'Openness score': variants/novacustom_v540tu/openness-score.md
-          - 'V540ND 14th Gen':
-              - 'Releases': variants/novacustom_v540nd/releases.md
-          - 'V560TU 14th Gen':
-              - 'Releases': variants/novacustom_v560tu/releases.md
-              - 'Hardware Configuration Matrix': variants/novacustom_v560tu/hardware-matrix.md
-              - 'Test matrix': variants/novacustom_v560tu/test-matrix.md
-              - 'Openness score': variants/novacustom_v560tu/openness-score.md
-          - 'V560TNE 14th Gen':
-              - 'Releases': variants/novacustom_v560tne/releases.md
+          - 'V54 14th Gen':
+              - 'V540TU':
+                  - 'Releases': variants/novacustom_v540tu/releases.md
+                  - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
+                  - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
+                  - 'Openness score': variants/novacustom_v540tu/openness-score.md
+              - 'V540ND':
+                  - 'Releases': variants/novacustom_v540nd/releases.md
+          - 'V56 14th Gen':
+              - 'V560TU':
+                  - 'Releases': variants/novacustom_v560tu/releases.md
+                  - 'Hardware Configuration Matrix': variants/novacustom_v560tu/hardware-matrix.md
+                  - 'Test matrix': variants/novacustom_v560tu/test-matrix.md
+                  - 'Openness score': variants/novacustom_v560tu/openness-score.md
+              - 'V560TNE':
+                  - 'Releases': variants/novacustom_v560tne/releases.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
               - 'Heads releases': variants/novacustom_nv4x_adl/releases_heads.md
