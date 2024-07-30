@@ -152,16 +152,16 @@ nav:
                   - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
                   - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
                   - 'Openness score': variants/novacustom_v540tu/openness-score.md
-              - 'V540ND':
-                  - 'Releases': variants/novacustom_v540nd/releases.md
+              - 'V540TNx':
+                  - 'Releases': variants/novacustom_v540tnx/releases.md
           - 'V56 14th Gen':
               - 'V560TU':
                   - 'Releases': variants/novacustom_v560tu/releases.md
                   - 'Hardware Configuration Matrix': variants/novacustom_v560tu/hardware-matrix.md
                   - 'Test matrix': variants/novacustom_v560tu/test-matrix.md
                   - 'Openness score': variants/novacustom_v560tu/openness-score.md
-              - 'V560TNE':
-                  - 'Releases': variants/novacustom_v560tne/releases.md
+              - 'V560TNx':
+                  - 'Releases': variants/novacustom_v560tnx/releases.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
               - 'Heads releases': variants/novacustom_nv4x_adl/releases_heads.md
