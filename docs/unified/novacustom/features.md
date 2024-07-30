@@ -65,13 +65,15 @@ The device can be powered in three modes:
 - Battery Mode - the device is powered using the battery only. This mode is
 active only if the device is not connected to a power adapter.
 - Charging Mode - when the device is connected to a proper power adapter
-it is powered directly from the adapter. The battery will start charging only
-when the current charge falls below the lower charge threshold. When the upper
-threshold is achieved, the battery stops charging and no current is flowing
-through it, preventing excessive wear. If you are using the device like a
-desktop computer, having it constantly connected to the power adapter, consider
-lowering the charge thresholds to about 70-80%. By keeping the battery at a
-lower charge level the battery wear overtime can be reduced.
+it is powered directly from the adapter and the battery is not used.
+Only if the current charge level is below the lower charge threshold
+will the battery start being charged. When the upper threshold
+is achieved, the battery stops charging and again no current
+is flowing through it, preventing excessive wear.
+    + If you are using the device like a desktop computer, having it
+constantly connected to the power adapter, consider lowering the
+charge thresholds to about 70-80%. By keeping the battery at a lower
+charge level the battery wear overtime can be reduced.
 - Hybrid Power Boost mode - the device is powered from the battery and the
 power adapter at the same time. This mode activates only when the power
 adapter can't provide enough power to the system. The battery will start
