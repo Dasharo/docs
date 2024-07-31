@@ -19,6 +19,13 @@ need to execute the setup actions before each independent case.
     carried out in accordance with the guidelines in `Flashing` document
     dedicated for platform which is in use.
 
+Note: For platforms utilising PiKVM it is required to prepare firmware before
+flashing to enable serial output. This is an example for Protectli VP46xx
+platform. Edit to fit your DUT.
+
+```./dcu variable ./test/data/protectli_vault_cml_v1.2.0-rc1_vp46xx.rom --set
+SerialRedirection --value Enabled```
+
 #### OS installer
 
 1. Download `OPERATING_SYSTEM` installer image.
