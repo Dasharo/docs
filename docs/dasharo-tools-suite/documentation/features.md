@@ -66,8 +66,8 @@ This feature is supported on the following platforms:
 * MSI PRO Z690-A DDR5,
 * MSI PRO Z790-P DDR4,
 * MSI PRO Z790-P DDR5,
-* NovaCustom NV4x,
-* NovaCustom NS5x/7x,
+* NovaCustom NV4x (only 11th Gen (Tiger Lake)),
+* NovaCustom NS5x/7x (only 11th Gen (Tiger Lake)),
 * ODROID-H4+.
 
 And partially (only EC firmware flashing) on:
