@@ -13,27 +13,48 @@ documentation._
 ![](../../images/dell_optiplex_9010.jpg)
 </center>
 
-Dell OptiPlex 7010/9010 SFF is small SOHO desktop computer sometimes used as
+## Dell OptiPlex 7010/9010 SFF
+
+Dell OptiPlex 7010/9010 SFF is a small SOHO desktop computer, sometimes used
+as a
 [firewall or NAS](https://www.reddit.com/r/homelabsales/comments/uzspg3/comment/iadcyb6/?utm_source=share&utm_medium=web2x&context=3).
-To learn more about our motivation for the coreboot port and Dasharo compatible
-with Dell OptiPlex 7010/9010 SFF please check [references](#references) section.
-If you want to build, initially deploy, update or recover your setup please
-check documentation sections on the left.
 
-## Status
+If you wish to build, perform initial deployment, update or recover your setup,
+please refer to [documentation](#documentation) sections.
 
-Dasharo compatible with Dell OptiPlex 7010/9010 is a community-driven effort.
-We work on this in our free time, since we have no sponsor for this project. To
-address the issue we organize virtual hackathon called [OptiPlex
-Tuesday](https://3mdeb.com/events/) on Dasharo Matrix almost every Tuesday. If
-you are interested in this project, you can consider joining the event or
-[supporting us in other way](../../ways-you-can-help-us.md).
+To learn more about our process and motivation for the coreboot port and
+Dasharo support, see [references](#references) section.
 
-The most advanced code is on [rel_v0.1.0
-branch](https://github.com/Dasharo/coreboot/pull/202) and the most advanced
-documentation related to `rel_v0.1.0` branch is already available from menu on
-the left. This code supports only `Dasharo (coreboot+SeaBIOS)`, so legacy boot.
-UEFI is also quite ready, but we need to release `v0.1.0` properly first.
+## History
+
+Dasharo compatible with Dell OptiPlex 7010/9010 used to be a community-driven
+effort. We would work on this in our free time, since we had no sponsor for
+this project. To address the issue we used to host a virtual hackathon called
+[OptiPlex Tuesday](https://3mdeb.com/events/) on Dasharo Matrix, almost every
+Tuesday.
+
+With the release of Dasharo firmware for this platform, the event series is
+concluded. We would like to thank all participants, and we hope we'll meet
+again at future events.
+
+## Documentation
+
+* [Releases](releases.md) - groups information about all releases.
+* [Building manual](building-manual.md) - describes how to build Dasharo
+  compatible with Dell OptiPlex 7010/9010.
+* [Initial deployment](initial-deployment.md) - describes initial Dasharo
+  deployment methods (i. e. flashing new firmware) compatible with Dell
+  OptiPlex 7010/9010.
+* [Firmware update](firmware-update.md) - explains supported Dasharo
+  open-source firmware update methods.
+* [Recovery](recovery.md) - gathers information on how to recover the platform
+  from potential failure.
+* [Hardware configuration matrix](hardware-matrix.md) - describes the
+  platform's hardware configuration used during the Dasharo firmware
+  validation procedure.
+* [Test matrix](test-matrix.md) - describes validation scope used during
+  Dasharo firmware validation procedure.
+* [FAQ](faq.md) - answers to frequently asked questions.
 
 ## References
 
