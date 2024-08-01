@@ -70,7 +70,7 @@ V540TNx platforms.
 | **Wireless card 2**            | Intel Wi-Fi 7 BE200                              |
 | **Display**                    | Display 1: HDMI 1920x1080p                       |
 | **Network**                    | Local network wired connection                   |
-| **Internal devices**           | 1. 1920x1080 16 inch screen                      |
+| **Internal devices**           | 1. 1920x1200 16 inch screen                      |
 |                                | 2. Internal ISO keyboard                         |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
