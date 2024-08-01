@@ -134,5 +134,4 @@ V540TNx platforms.
 | **Power Control**              | SonOff S26                                       |
 | **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
-
-[HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#v56-series                                                                   
+[HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#v56-series
