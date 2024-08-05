@@ -20,8 +20,8 @@ If your choice is to enable TXT support, be advised that there are proprietary
 [ACM blobs](https://doc.coreboot.org/security/intel/acm.html) required for the
 firmware to work properly. They are non-redistributable for the platform in
 question, which means you will need to obtain/extract them yourself and patch
-the result binary using `cbfstool`. The methods will not be covered in this
-guide.
+the result binary using `cbfstool`. The methods are covered later on in the
+[initial deployment guide](initial-deployment.md#firmware-preparation)
 
     If in doubt, it is recommended to proceed with the non-TXT scenario.
 
