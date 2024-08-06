@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## UTC001.001 USB Type-A charging capability
+## TMD001.001 USB Type-A charging capability with ME disabled
 
 **Test description**
 
@@ -33,6 +33,16 @@ connected smartphone.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+ Disable (Soft) - if not, using the arrow keys and Enter, choose option
+ Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Connect a phone to the USB Type-A port located on the left side of the laptop
@@ -47,7 +57,7 @@ connected smartphone.
 1. The smartphone should indicate that it's charging when connected to either
     USB Type-A port.
 
-## UTC002.001 Thunderbolt 4 USB Type-C power output
+## TMD002.001 Thunderbolt 4 USB Type-C power output with ME disabled
 
 **Test description**
 
@@ -67,6 +77,16 @@ USB Type-C accessory.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Connect a phone to the Thunderbolt 4 USB Type-C port located on the left side
@@ -77,7 +97,7 @@ USB Type-C accessory.
 
 1. The smartphone should indicate that it's charging.
 
-## UTC003.001 USB Type-C PD power input (Ubuntu)
+## TMD003.001 USB Type-C PD power input with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -97,6 +117,16 @@ connected to the Thunderbolt 4 port.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Disconnect any charger from the DUT.
@@ -112,7 +142,7 @@ connected to the Thunderbolt 4 port.
 Output of the command should show one of this: `Charging` or `Full`. That means
 laptop is charged properly.
 
-## UTC003.002 USB Type-C PD power input (Windows)
+## TMD003.002 USB Type-C PD power input with ME disabled(Windows)
 
 **Test description**
 
@@ -132,6 +162,16 @@ connected to the Thunderbolt 4 port.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Disconnect any charger from the DUT.
@@ -152,7 +192,7 @@ Example part of output:
 BatteryStatus               : 2
 ```
 
-## UTC004.001 USB Type-C Display output (Ubuntu)
+## TMD004.001 USB Type-C Display output with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -172,6 +212,16 @@ the Thunderbolt 4 USB Type-C port.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Connect a display to the Thunderbolt 4 USB Type-C port using
@@ -185,7 +235,7 @@ the Thunderbolt 4 USB Type-C port.
 1. The monitor connected to the laptop via the Thunderbolt 4 port should power
    on and display video from the laptop.
 
-## UTC004.002 USB Type-C Display output (Windows)
+## TMD004.002 USB Type-C Display output with ME disabled(Windows)
 
 **Test description**
 
@@ -205,6 +255,16 @@ the Thunderbolt 4 USB Type-C port.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Connect a display to the Thunderbolt 4 USB Type-C port using
@@ -219,7 +279,7 @@ the Thunderbolt 4 USB Type-C port.
 1. The monitor connected to the laptop via the Thunderbolt 4 port should power
    on and display video from the laptop.
 
-## UTC005.001 USB Type-C docking station HDMI display (Ubuntu)
+## TMD005.001 USB Type-C docking station HDMI display with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -245,6 +305,16 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Mirror` and
@@ -255,7 +325,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external HDMI-connected display in `Mirror`
 and `Join Displays` modes.
 
-## UTC005.002 USB Type-C docking station HDMI display (Windows)
+## TMD005.002 USB Type-C docking station HDMI display with ME disabled(Windows)
 
 **Test description**
 
@@ -281,6 +351,16 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
@@ -291,7 +371,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external HDMI-connected display in
 `Duplicate` and `Extend` modes.
 
-## UTC006.001 USB Type-C docking station DP display (Ubuntu)
+## TMD006.001 USB Type-C docking station DP display with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -317,6 +397,16 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Mirror` and
@@ -327,7 +417,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external DisplayPort-connected display in
 `Mirror` and `Join Displays` modes.
 
-## UTC006.002 USB Type-C docking station DP display (Windows)
+## TMD006.002 USB Type-C docking station DP display with ME disabled(Windows)
 
 **Test description**
 
@@ -353,6 +443,16 @@ to the docking station is correctly recognized by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
@@ -363,7 +463,7 @@ to the docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the external DisplayPort-connected display in
 `Duplicate` and `Extend` modes.
 
-## UTC007.001 USB Type-C docking station Triple display (Ubuntu)
+## TMD007.001 USB Type-C docking station Triple display with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -390,6 +490,16 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Switch the display mode between `Mirror` and `Join Displays`.
@@ -399,7 +509,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the three external displays in `Mirror` and
 `Join Displays` modes.
 
-## UTC007.002 USB Type-C docking station Triple display (Windows)
+## TMD007.002 USB Type-C docking station Triple display with ME disabled(Windows)
 
 **Test description**
 
@@ -426,6 +536,16 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. If using more than one display, switch the display mode between `Duplicate`
@@ -436,7 +556,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the three external displays in `Duplicate` and
 `Extend` modes.
 
-## UTC008.001 USB Type-C docking station detection after coldboot (Ubuntu)
+## TMD008.001 USB Type-C docking station detection after coldboot with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -457,7 +577,19 @@ connection stability.
 1. The `USB-C docking station` connected to the USB-C port.
 
 **Test steps**
-
+1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
 1. Cut the power off while DUT is turned on.
 1. Restore power and power on the DUT.
 1. Boot into the system.
@@ -483,7 +615,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## UTC009.001  USB Type-C docking station detection after warmboot (Ubuntu)
+## TMD009.001  USB Type-C docking station detection after warmboot with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -505,6 +637,16 @@ may be re-done several times to specify the platform and connection stability.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the following command:
@@ -528,7 +670,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## UTC010.001 USB Type-C docking station detection after reboot (Ubuntu)
+# TMD010.001 USB Type-C docking station detection after reboot ME disabled (Ubuntu)
 
 **Test description**
 
@@ -550,6 +692,16 @@ re-done several times to specify the platform and connection stability.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option D
+isable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the following command:
@@ -581,7 +733,7 @@ Bus 002 Device 009: Prolific Technology, Inc. USB SD Card Reader
 Bus 002 Device 008: VIA Labs, Inc. USB3.0 Hub
 ```
 
-## UTC011.001 USB Type-C docking station USB devices recognition (firmware)
+## TMD011.001 USB Type-C docking station USB devices recognition ME disabled (firmware)
 
 **Test description**
 
@@ -602,6 +754,16 @@ station are recognized correctly by the `FIRMWARE`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Hold the `BIOS_MENU_KEY` to enter the BIOS Menu.
 1. Check if the `USB storage` is available on the list.
 
@@ -609,7 +771,7 @@ station are recognized correctly by the `FIRMWARE`.
 
 The `USB storage` is available which confirms successful recognition.
 
-## UTC011.002 USB Type-C docking station USB devices recognition (Ubuntu)
+## TMD011.002 USB Type-C docking station USB devices recognition with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -631,6 +793,16 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the following command:
@@ -649,7 +821,7 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 1. After each device is disconnected from the USB port, a USB device entry
     in `lsusb` command output should disappear.
 
-## UTC011.003 USB Type-C docking station USB devices recognition (Windows)
+## TMD011.003 USB Type-C docking station USB devices recognition with ME disabled(Windows)
 
 **Test description**
 
@@ -671,6 +843,16 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and and run the following command:
@@ -702,7 +884,7 @@ displayed. The list should contain the `USB storage`, which is plug in.
         OK         USB             USB Mass Storage Device
     ```
 
-## UTC012.001 USB Type-C docking station USB keyboard (firmware)
+## TMD012.001 USB Type-C docking station USB keyboard with ME disabled(firmware)
 
 **Test description**
 
@@ -723,15 +905,25 @@ according to their labels.
 
 **Test steps**
 
-1. Power on the DUT
-1. Hold the `BIOS_MENU_KEY` to enter the Bios Menu.
+1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
+1. While the DUT is booting, hold the `BIOS_MENU_KEY` to enter the Bios Menu.
 1. Use the arrow keys, Esc key and the Enter key to navigate the menus.
 
 **Expected result**
 
 All menus can be entered using the external USB keyboard.
 
-## UTC012.002 USB Type-C docking station USB keyboard (Ubuntu)
+## TMD012.002 USB Type-C docking station USB keyboard with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -755,6 +947,16 @@ according to their labels.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the following command:
@@ -782,7 +984,7 @@ according to their labels.
    their labels.
 1. Key combinations are detected correctly.
 
-## UTC012.003 USB Type-C docking station USB keyboard (Windows)
+## TMD012.003 USB Type-C docking station USB keyboard with ME disabled(Windows)
 
 **Test description**
 
@@ -804,6 +1006,16 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and and run the following command:
@@ -836,7 +1048,7 @@ by the `OPERATING_SYSTEM` and all basic keys work according to their labels.
    or actions when pressed.
 1. Key combinations are detected correctly.
 
-## UTC013.001 USB Type-C docking station upload 1GB file on USB storage (Ubuntu)
+## TMD013.001 USB Type-C docking station upload 1GB file on USB storage with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -858,6 +1070,16 @@ This test aims to verify that the 1GB file can be transferred from the
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and run the following command to generate 1GB file:
@@ -894,7 +1116,7 @@ f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  test_file.txt
 f46597c0c63a1eefb200d40edf654e52f10c3d5d21565886ad603fabaf8d39fb  {path_to_usb_storage}/test_file.txt
 ```
 
-## UTC013.002 USB Type-C docking station upload 1GB file on USB storage(Windows)
+## TMD013.002 USB Type-C docking station upload 1GB file on USB storage with ME disabled(Windows)
 
 **Test description**
 
@@ -916,6 +1138,16 @@ This test aims to verify that the 1GB file can be transferred from the
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open powershell as administrator and run the following command to generate
@@ -962,7 +1194,7 @@ Algorithm       Hash                                                            
 SHA256          F46597C0C63A1EEFB200D40EDF654E52F10C3D5D21565886AD603FABAF8D39FB  E:\test_file.txt
 ```
 
-## UTC014.001 USB Type-C docking station Ethernet connection (Ubuntu)
+## TMD014.001 USB Type-C docking station Ethernet connection with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -983,6 +1215,16 @@ Ethernet port can be obtained on Ubuntu.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a Ethernet cable with internet connection to docking station.
@@ -1013,7 +1255,7 @@ Ethernet port can be obtained on Ubuntu.
     ping: connect: Network is unreachable
     ```
 
-## UTC014.002 USB Type-C docking station Ethernet connection (Windows)
+## TMD014.002 USB Type-C docking station Ethernet connection with ME disabled(Windows)
 
 **Test description**
 
@@ -1034,6 +1276,16 @@ Ethernet port can be obtained on Windows.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a Ethernet cable with internet connection to docking station.
@@ -1063,7 +1315,7 @@ Ethernet port can be obtained on Windows.
     Ping request could not find host 3mdeb.com. Please check the name and try again.
     ```
 
-## UTC015.001 USB Type-C docking station audio recognition (Ubuntu)
+## TMD015.001 USB Type-C docking station audio recognition with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -1084,6 +1336,16 @@ plugging in the 3.5 mm jack into the docking station.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into the docking station.
@@ -1105,7 +1367,7 @@ plugging in the 3.5 mm jack into the docking station.
 1. After disconnecting the external headset from the 3.5 mm jack, a headset
     entry in `lsusb` command output should disappear.
 
-## UTC015.002 USB Type-C docking station audio recognition (Windows)
+## TMD015.002 USB Type-C docking station audio recognition with ME disabled(Windows)
 
 **Test description**
 
@@ -1126,6 +1388,16 @@ after plugging in the 3.5 mm jack into the docking station.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into the docking station
@@ -1147,7 +1419,7 @@ after plugging in the 3.5 mm jack into the docking station.
    for connected headset should disappear from the `Output devices` and
    `Input devices` sections.
 
-## UTC016.001 USB Type-C docking station audio playback (Ubuntu)
+## TMD016.001 USB Type-C docking station audio playback with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -1169,6 +1441,16 @@ station.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into the docking station.
@@ -1186,7 +1468,7 @@ station.
 
 Sound should be played from the external speakers.
 
-## UTC016.002 USB Type-C docking station audio playback (Windows)
+## TMD016.002 USB Type-C docking station audio playback with ME disabled(Windows)
 
 **Test description**
 
@@ -1208,6 +1490,16 @@ station.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into the docking station.
@@ -1221,7 +1513,7 @@ station.
 
 Sound should be played from the external speakers.
 
-## UTC017.001 USB Type-C docking station audio capture (Ubuntu)
+## TMD017.001 USB Type-C docking station audio capture with ME disabled(Ubuntu)
 
 **Test description**
 
@@ -1242,6 +1534,16 @@ from external headset connected to the docking station.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into the docking station.
@@ -1264,7 +1566,7 @@ from external headset connected to the docking station.
 
 The recorded audio clip is recorded correctly and played back.
 
-## UTC017.002 USB Type-C docking station audio capture (Windows)
+## TMD017.002 USB Type-C docking station audio capture with ME disabled(Windows)
 
 **Test description**
 
@@ -1285,6 +1587,16 @@ from external headset connected to the docking station.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Plug in a headset jack into the docking station.
@@ -1307,7 +1619,7 @@ from external headset connected to the docking station.
 1. The result of the test after clicking the `Stop Test` bar should be more than
     0% of the total volume.
 
-## UTC018.001 USB Type-C docking station SD Card reader detection (Ubuntu)
+## TMD018.001 USB Type-C docking station SD Card reader detection ME disabled (Ubuntu)
 
 **Test description**
 
@@ -1329,6 +1641,16 @@ is enumerated correctly and might be detected by the operating system.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following command:
@@ -1350,7 +1672,7 @@ Example output:
 Bus 002 Device 007: ID 067b:2733 Prolific Technology, Inc. USB SD Card Reader
 ```
 
-## UTC018.002 USB Type-C docking station SD Card reader detection (Windows)
+## TMD018.002 USB Type-C docking station SD Card reader detection ME disabled (Windows)
 
 **Test description**
 
@@ -1372,6 +1694,16 @@ is enumerated correctly and can be detected by the operating system.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open PowerShell and execute the following command:
@@ -1393,7 +1725,7 @@ Example output:
     OK         DiskDrive       SD Card Reader USB Device
 ```
 
-## UTC019.001 USB Type-C docking station SD Card read/write (Ubuntu)
+## TMD019.001 USB Type-C docking station SD Card read/write with ME disabled (Ubuntu)
 
 **Test description**
 
@@ -1415,6 +1747,16 @@ can be used from the operating system.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Open a terminal window and execute the following commands to identify the SD
@@ -1458,7 +1800,7 @@ can be used from the operating system.
     2083776668ed0c8095a9ac42188153c02f360e116c14b36d2ef5c98665d75dcb  /tmp/out.bin
     ```
 
-## UTC019.002 USB Type-C docking station SD Card read/write (Windows)
+## TMD019.002 USB Type-C docking station SD Card read/write with ME disabled (Windows)
 
 **Test description**
 
@@ -1480,6 +1822,16 @@ can be used from the operating system.
 **Test steps**
 
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Determine the localization of the mounted SD card.
@@ -1496,7 +1848,7 @@ can be used from the operating system.
 
 The last command should return the following message: `This is a test string.`
 
-## UTC020.001 USB Type-C PD current limiting (Ubuntu)
+## TMD020.001 USB Type-C PD current limiting with ME disabled (Ubuntu)
 
 **Test description**
 
@@ -1510,6 +1862,16 @@ not exceed the limits of the power supply's specifications.
 
 **Test steps**
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Attach a 65W USB-C power supply, with the power meter between the power
@@ -1530,7 +1892,7 @@ The power draw does not exceed more than 105% of the power supply's nominal
 power. The power meter's display stays lit all the time, indicating that the
 power supply's over-current protection was not triggered.
 
-## UTC020.002 USB Type-C PD current limiting (Windows)
+## TMD020.002 USB Type-C PD current limiting with ME disabled (Windows)
 
 **Test description**
 
@@ -1544,6 +1906,16 @@ not exceed the limits of the power supply's specifications.
 
 **Test steps**
 1. Power on the DUT.
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
+Disable (Soft) - if not, using the arrow keys and Enter, choose option
+Disable (HAP) or Disable (Soft).
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Download and install [ThrottleStop](https://www.techpowerup.com/download/techpowerup-throttlestop/)
