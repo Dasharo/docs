@@ -339,6 +339,15 @@ nav:
           - 'FAQ': variants/pc_engines/faq.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
           - 'Firmware write protection': variants/pc_engines/bios-lock.md
+      - 'MinnowBoard Turbot':
+          - 'Overview': variants/minnowboard-turbot/overview.md
+          - 'Releases': variants/minnowboard-turbot/releases.md
+          - 'Building manual': variants/minnowboard-turbot/building-manual.md
+          - 'Test matrix': variants/minnowboard-turbot/test-matrix.md
+          - 'Initial Deployment': variants/minnowboard-turbot/initial-deployment.md
+          - 'Firmware update': variants/minnowboard-turbot/firmware-update.md
+          - 'Recovery': variants/minnowboard-turbot/recovery.md
+          - 'Hardware Configuration Matrix': variants/minnowboard-turbot/hardware-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
