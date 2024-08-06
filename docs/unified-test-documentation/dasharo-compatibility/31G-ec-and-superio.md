@@ -2264,6 +2264,68 @@ can reset the EC.
     Last reset caused by PWRSW WDT Timeout!
     ```
 
+## ECR034.001 Soft Switch Microphone Key (Ubuntu)
+
+**Test description**
+
+This test verifies that Fn+4 key combination for microphone soft switch works
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Ubuntu
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Go to 'Settings -> Sound
+1. Observe the bar above the Input Device option
+1. Press the `Fn+4` combination at will
+
+**Expected result**
+
+1. The Fn+4 should toggle the mic ON and OFF and it should be seen on the
+ aforementioned bar which state is currently active as noise made will
+ make the bar go back and forth if ON and completely still if OFF
+
+## ECR034.002 Soft Switch Microphone Key (Windows)
+
+**Test description**
+
+This test verifies that Fn+4 key combination for microphone soft switch works
+
+**Test configuration data**
+
+1. `FIRMWARE` = Dasharo
+1. `OPERATING_SYSTEM` = Windows
+
+**Test setup**
+
+1. Proceed with the
+   [Test cases common documentation](#test-cases-common-documentation) section.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Go to 'Settings -> System -> Sound
+1. Observe the bar located on the mic volume slider
+1. Press the `Fn+4` combination at will
+
+**Expected result**
+
+1. The Fn+4 should toggle the mic ON and OFF and it should be seen on the
+ aforementioned bar which state is currently active as the noise made will
+ make the bar go back and forth if ON and completely still if OFF
+
 ## SIO001.001 PS/2 mouse in OS - (Ubuntu)
 
 **Test description**
