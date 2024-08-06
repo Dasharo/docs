@@ -339,8 +339,6 @@ nav:
           - 'FAQ': variants/pc_engines/faq.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
           - 'Firmware write protection': variants/pc_engines/bios-lock.md
-      - 'MinnowBoard Turbot':
-          - 'Lab assembly guide': variants/minnowboard-turbot/lab-assembly.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
@@ -350,6 +348,11 @@ nav:
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
       - 'Verifying signatures': guides/signature-verification.md
       - 'Boot logo replacement': guides/logo-customization.md
+      - 'Lab Assembly':
+          - 'MinnowBoard Turbot': guides/lab-assembly/minnowboard-turbot.md
+          - 'MSI PRO Z690-A and Z790-P': guides/lab-assembly/msi-zx90.md
+          - 'Protectli': guides/lab-assembly/protectli.md
+
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
@@ -414,11 +417,6 @@ nav:
         # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
           - 'MSI PRO Z690-A':
               - 'Presale assembly and validation': transparent-validation/msi-z690/presale-assembly-and-validation.md
-              - 'Laboratory stand assembly guide': transparent-validation/msi-z690/laboratory-assembly-guide.md
-          - 'MSI PRO Z790-P':
-              - 'Laboratory stand assembly guide': transparent-validation/msi-z790/laboratory-assembly-guide.md
-          - 'Protectli platforms':
-              - 'Laboratory stand assembly guide': transparent-validation/protectli/laboratory-assembly-guide.md
           - 'Supermicro X11 LGA1151 Series':
               - 'Theory of Operation': transparent-validation/supermicro_x11_lga1151_series/theory-of-operation.md
           - 'muxPi':

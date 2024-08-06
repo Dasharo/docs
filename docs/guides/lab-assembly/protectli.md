@@ -184,7 +184,7 @@ The following sections describe how to use all of the enabled features:
 ### Serial connection
 
 The method of setting and using serial connection is described in the
-[Serial connection guide](../rte/v1.1.0/serial-port-connection-guide.md).
+[Serial connection guide](../../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 
 ### Power supply controlling
 
