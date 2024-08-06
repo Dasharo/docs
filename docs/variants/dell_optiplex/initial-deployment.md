@@ -96,8 +96,8 @@ obtaining 3 firmware blobs necessary for a full-feature deployment on the
 OptiPlex platform:
 
 * `sch5545_ecfw.bin` - EC firmware
-* `IVB_BIOSAC_PRODUCTION.bin` - Ivy Bridge BIOS ACM - **TXT support only**
-* `SNB_IVB_SINIT_20190708_PW.bin` - Ivy Bridge SINIT ACM - **TXT support only**
+* `txt_bios_acm.bin` - Ivy Bridge BIOS ACM - **TXT support only**
+* `txt_sinit_acm.bin` - Ivy Bridge SINIT ACM - **TXT support only**
 
 It is recommended you perform this process booted into the Dasharo Tools Suite,
 unless you are willing to install all of the reqiuired utilities yourself.
@@ -114,7 +114,7 @@ is [this](https://dl.dell.com/FOLDER05066036M/1/O7010A29.exe).
 Then, extract all of the components using `binwalk`:
 
 ```bash
-sudo binwalk -e "BIOS_UPDATE_FILENAME -C ."
+binwalk -e O7010A29.exe -C .
 ```
 
 Assuming the extraction process was successful, you should now have an
@@ -123,20 +123,23 @@ extracted UEFI image file, hidden under an unassuming name such as
 blobs from this image using `uefi-firmware-parser`:
 
 ```bash
- uefi-firmware-parser -e "UEFI_IMAGE_FILE" -O
+ uefi-firmware-parser -e "_O7010A29.exe.extracted/65C10" -O
 ```
 
-Congratulations, you should now have access to the BIOSAC and EC firmware
-files. Now, only to find them. The expected paths to each file are as follows:
+Congratulations, you should now have access to the BIOS ACM and EC firmware
+files. Now, let's copy them with more readable names for future reference:
 
 * EC firmware -
-  `_O7010A29.exe.extracted/65C10_output/pfsobject/section-7ec6c2b0-3fe3-42a0-
-  a316-22dd0517c1e8/volume-0x50000/file-d386beb8-4b54-4e69-94f5-06091f67e0d3/
-  section0.raw`
+
+`cp _O7010A29.exe.extracted/65C10_output/pfsobject/section-7ec6c2b0-3fe3-
+42a0-a316-22dd0517c1e8/volume-0x50000/file-d386beb8-4b54-4e69-94f5-
+06091f67e0d3/section0.raw sch5545_ecfw.bin`
+
 * BIOS ACM file -
-  `_O7010A29.exe.extracted/65C10_output/pfsobject/section-7ec6c2b0-3fe3-42a0-
-  a316-22dd0517c1e8/volume-0x500000/file-2d27c618-7dcd-41f5-bb10-21166be7e143/
-  object-0.raw`
+
+`cp _O7010A29.exe.extracted/65C10_output/pfsobject/section-7ec6c2b0-3fe3-
+42a0-a316-22dd0517c1e8/volume-0x500000/file-2d27c618-7dcd-41f5-bb10-
+21166be7e143/object-0.raw IVB_BIOSAC_PRODUCTION.bin`
 
 The SINIT file is fortunately available for download directly from Intel at
 [this url](https://cdrdv2.intel.com/v1/dl/getContent/630744).
@@ -144,7 +147,8 @@ The SINIT file is fortunately available for download directly from Intel at
 ### Patching the binary
 
 Now having prepared all of the ingredients, we can proceed with patching the
-raw binary, to which I will refer as `coreboot.rom`.
+raw binary, to which I will refer as `coreboot.rom`. It is assumed that the
+.rom is copied into the same directory as the extracted blobs.
 
 If you didn't enable TXT support in your build, you only need to run
 
