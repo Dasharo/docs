@@ -26,7 +26,6 @@ Test results for this release can be found
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
 - [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
-- [Automatic Embedded Controller update](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31G-ec-and-superio/#ecr031001-ec-firmware-sync-in-coreboot)
 - [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
