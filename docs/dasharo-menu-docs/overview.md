@@ -129,11 +129,13 @@ possible feature extension of your platform.
 
 User Password Management menu allows one to set firmware setup admin password:
 
-![](/images/menus/password_mgr.jpeg){ class=center" }
+![](/images/menus/password_mgr.jpeg){ class="center" }
 
-The password must be a strong one. The requirements are described on the help
-section on the right side of the menu page. If the password is too weak it will
-not be accepted. Also the new password must be different from the last 5
+The password requirements are compliant to
+modern standards. See `Appendix A` at [pages.nist.gov](https://pages.nist.gov/800-63-3/sp800-63b.html).
+The password doesn't need to contain anything more than lowercase letters
+to allow for using passphrases. Choosing a strong password is recommended,
+but not mandatory. Also the new password must be different from the last 5
 passwords that were used before. The page shows the current status of
 `Admin Password` if it is provisioned or not.
 

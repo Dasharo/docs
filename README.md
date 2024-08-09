@@ -26,6 +26,10 @@ localhost:12345` (the number is random).
 It is crucial at this point to verify that the pages you have changed
 render correctly as HTML in local preview.
 
+If you want to use a browser for a live preview while you keep making changes,
+consider adding `--dirty` flag to `mkdocs serve` command. It limits automatic
+regeneration to only changed files and makes browser updates much faster.
+
 ### Broken links checker
 
 Currently we are using [lychee](https://github.com/lycheeverse/lychee) a fast,

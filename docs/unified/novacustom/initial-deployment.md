@@ -66,7 +66,7 @@ devices.
     1. Install the EC firmware:
 
         ```bash
-        flashrom -p ite_ec:boardmismatch=force,romsize=256K -w path/to/ec.rom
+        flashrom -p ite_ec:boardmismatch=force,romsize=128K -w path/to/ec.rom
         ```
 
     ### BIOS installation

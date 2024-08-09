@@ -147,13 +147,23 @@ nav:
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
           - 'Firmware transition': unified/novacustom/firmware-transition.md
           - 'V54 14th Gen':
-              - 'Releases': variants/novacustom_v540tu/releases.md
-              - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
-              - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
+              - 'V540TU':
+                  - 'Releases': variants/novacustom_v540tu/releases.md
+                  - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
+                  - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
+                  - 'Openness score': variants/novacustom_v540tu/openness-score.md
+              - 'V540TNx':
+                  - 'Releases': variants/novacustom_v540tnx/releases.md
+                  - 'Hardware Configuration Matrix': variants/novacustom_v540tnx/hardware-matrix.md
           - 'V56 14th Gen':
-              - 'Releases': variants/novacustom_v560tu/releases.md
-              - 'Hardware Configuration Matrix': variants/novacustom_v560tu/hardware-matrix.md
-              - 'Test matrix': variants/novacustom_v560tu/test-matrix.md
+              - 'V560TU':
+                  - 'Releases': variants/novacustom_v560tu/releases.md
+                  - 'Hardware Configuration Matrix': variants/novacustom_v560tu/hardware-matrix.md
+                  - 'Test matrix': variants/novacustom_v560tu/test-matrix.md
+                  - 'Openness score': variants/novacustom_v560tu/openness-score.md
+              - 'V560TNx':
+                  - 'Releases': variants/novacustom_v560tnx/releases.md
+                  - 'Hardware Configuration Matrix': variants/novacustom_v560tnx/hardware-matrix.md
           - 'NV4x 12th Gen':
               - 'Releases': variants/novacustom_nv4x_adl/releases.md
               - 'Heads releases': variants/novacustom_nv4x_adl/releases_heads.md
@@ -186,6 +196,7 @@ nav:
           - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
           - 'Firmware update': variants/dell_optiplex/firmware-update.md
           - 'Recovery': variants/dell_optiplex/recovery.md
+          - 'Openness score': variants/dell_optiplex/openness-score.md
           - 'FAQ': variants/dell_optiplex/faq.md
       - 'Asus KGPE-D16':
           - 'Overview': variants/asus_kgpe_d16/overview.md
@@ -252,20 +263,22 @@ nav:
           - 'Initial deployment': variants/protectli_vp46xx/initial-deployment.md
           - 'Firmware update': variants/protectli_vp46xx/firmware-update.md
           - 'Recovery': variants/protectli_vp46xx/recovery.md
+          - 'Post-installation setup': variants/protectli-post-install.md
           - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
           - 'Openness score': variants/protectli_vp46xx/openness_score.md
       - 'Odroid H4':
           - 'Assembly guide': variants/odroid_h4/odroid-assembly-guide.md
-      # - 'Protectli VP66xx':
-      #     - 'Overview': variants/protectli_vp66xx/overview.md
-      #     - 'Releases': variants/protectli_vp66xx/releases.md
-      #     - 'Building manual': variants/protectli_vp66xx/building-manual.md
-      #     - 'Initial deployment': variants/protectli_vp66xx/initial-deployment.md
-      #     - 'Firmware update': variants/protectli_vp66xx/firmware-update.md
-      #     - 'Recovery': variants/protectli_vp66xx/recovery.md
-      #     - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
-      #     - 'Test matrix': variants/protectli_vp66xx/test-matrix.md
+      - 'Protectli VP66xx':
+          - 'Overview': variants/protectli_vp66xx/overview.md
+          - 'Releases': variants/protectli_vp66xx/releases.md
+          - 'Building manual': variants/protectli_vp66xx/building-manual.md
+          - 'Initial deployment': variants/protectli_vp66xx/initial-deployment.md
+          - 'Firmware update': variants/protectli_vp66xx/firmware-update.md
+          - 'Recovery': variants/protectli_vp66xx/recovery.md
+          - 'Post-installation setup': variants/protectli-post-install.md
+          - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
+          - 'Test matrix': variants/protectli_vp66xx/test-matrix.md
       # - 'Protectli V1210/V1410/V1610':
       #     - 'Overview': variants/protectli_v1x10/overview.md
       #     - 'Releases': variants/protectli_v1x10/releases.md
@@ -329,8 +342,6 @@ nav:
           - 'FAQ': variants/pc_engines/faq.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
           - 'Firmware write protection': variants/pc_engines/bios-lock.md
-      - 'MinnowBoard Turbot':
-          - 'Lab assembly guide': variants/minnowboard-turbot/lab-assembly.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
@@ -340,6 +351,11 @@ nav:
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
       - 'Verifying signatures': guides/signature-verification.md
       - 'Boot logo replacement': guides/logo-customization.md
+      - 'Lab Assembly':
+          - 'MinnowBoard Turbot': guides/lab-assembly/minnowboard-turbot.md
+          - 'MSI PRO Z690-A and Z790-P': guides/lab-assembly/msi-zx90.md
+          - 'Protectli': guides/lab-assembly/protectli.md
+
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
@@ -380,6 +396,8 @@ nav:
       - 'Checkbox certification software usage': common-coreboot-docs/checkbox.md
       - 'Dumping logs': common-coreboot-docs/dumping_logs.md
       - 'Firmware Update Mode': kb/firmware-update-mode.md
+      - 'EDK2 UEFI Capsule Updates': kb/edk2-capsule-updates.md
+      - 'PCR Measurements': kb/pcr-measurements.md
     # - 'Trolling Topics List':
     #     - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
   - 'FAQ':
@@ -402,15 +420,8 @@ nav:
         # - 'Hardware Laboratory': ecosystem/hardware-infrastructure.md
           - 'MSI PRO Z690-A':
               - 'Presale assembly and validation': transparent-validation/msi-z690/presale-assembly-and-validation.md
-              - 'Laboratory stand assembly guide': transparent-validation/msi-z690/laboratory-assembly-guide.md
-          - 'MSI PRO Z790-P':
-              - 'Laboratory stand assembly guide': transparent-validation/msi-z790/laboratory-assembly-guide.md
-          - 'Protectli platforms':
-              - 'Laboratory stand assembly guide': transparent-validation/protectli/laboratory-assembly-guide.md
           - 'Supermicro X11 LGA1151 Series':
               - 'Theory of Operation': transparent-validation/supermicro_x11_lga1151_series/theory-of-operation.md
-          - 'NovaCustom laptops':
-              - 'Laboratory assembly guide': transparent-validation/novacustom/laboratory-assembly-guide.md
           - 'muxPi':
               - 'Theory of Operations': transparent-validation/muxpi/theory-of-operations.md
               - 'Basic validation': transparent-validation/muxpi/basic-validation.md

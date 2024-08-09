@@ -6,13 +6,13 @@ template: giscus.html
 
 ## Abstract
 
-The project, UEFI Capsule Update for coreboot with EDK II, aims to improve the
-firmware update process by integrating UEFI capsule update methods into coreboot
-with EDK II open-source firmware frameworks. UEFI capsule update is an
+The project integrates UEFI capsule update methods into coreboot with EDK II
+firmware frameworks to streamline firmware updates. UEFI capsule update is an
 industry-standard approach widely supported by hardware vendors, providing a
-secure and reliable method for delivering firmware updates. By adopting UEFI
-capsule update methods, the project aims to simplify the update process and
-enhance the user experience, providing a more secure and reliable approach
+secure method for delivering firmware updates.
+
+By adopting UEFI capsule update methods, the project aims to simplify the update
+process and enhance the user experience, providing a more reliable approach
 compared to complex flashrom-based updates, which are still common in the
 open-source firmware distributions based on coreboot. Due to security measures,
 OS-level access to firmware is intentionally restricted, which in turn makes it
@@ -20,8 +20,7 @@ increasingly challenging to apply firmware updates from the operating system.
 This limitation poses difficulties in utilizing traditional flashrom-based
 methods for firmware updates. The expected outcomes of the project include
 enhanced firmware update capabilities, a simplified user experience, heightened
-security, and enhanced compatibility, all achieved by seamlessly integrating
-with fwupd, a popular firmware update management tool for Linux systems.
+security, and enhanced compatibility.
 
 ## Involvement with projects or organisations relevant to this project
 
@@ -63,166 +62,152 @@ owners, and trustworthiness for all. More details can be found here [\[7\]][7].
 
 **Task 1. Enable Capsule Updates in coreboot**
 
-This task aims to enhance the coreboot framework by adding support for UEFI
-Capsule Update.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/31)
+
+This task enhances coreboot by enabling support for UEFI Capsule Update. It
+modifies coreboot to be able to access beyond 4GB, and implements mechanisms for
+identifying capsule image locations. Capsule coalescing logic is ported to
+coreboot to consolidate firmware update capsules into a single memory region.
+coreboot is adjusted to reserve this memory region and pass the information to
+the UEFI payload. Additionally, a new SMI handler is implemented to write to SPI
+flash, enabling full BIOS image overwrite only when a valid capsule update is
+present.
 
 - Enable memory access above 4GB
-
-Modify coreboot to operate in 64-bit mode and enable access to memory above the
-4GB limit.
-
 - Parse capsule location from UEFI variables in coreboot
-
-Implement a mechanism for coreboot to identify the memory location of the
-capsule images from drivers to UEFI variables. This milestone ensures accurate
-retrieval of capsule images by coreboot.
-
 - Gather capsules into one region
-
-Rewrite the existing capsule coalescing logic to consolidate all firmware update
-capsules into a single memory region.
-
 - Reserve memory containing capsules and pass it to the payload
-
-Implement the necessary changes in coreboot to reserve the memory region
-containing the capsules. Pass this information to the UEFI payload using the
-Hand-Off Block (HOB) data structure.
-
 - Add SMI handler for flashing firmware updates
-
-Implement a handler able of writing to SPI flash. Similar handler already
-exists, but it is limited to SMMSTORE region, used to implement secure UEFI
-variables. New handler would allow to overwrite whole BIOS image, so it must not
-be enabled unless a valid capsule update is present.
 
 **Task 2. Enable capsule updates in coreboot EDK II UEFI Payload**
 
-The UEFI payload integration task involves integrating the enhanced coreboot
-firmware with the UEFI system. Additionally, parsing the version reported by
-coreboot and incorporating it into the EFI System Resource Table (ESRT) ensures
-accurate tracking of system firmware updates. These integrations enhance
-firmware reliability, provide advanced update capabilities, and enable a
-seamless user experience.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/32)
+
+The UEFI payload integration phase integrates enhanced coreboot firmware with
+the UEFI system, ensuring accurate tracking of firmware updates via the EFI
+System Resource Table (ESRT). A library instance facilitates flash access
+operations within UEFI, supported by an SMI handler in coreboot.
+
+Updates to Firmware Descriptor (FDF) and Device Scope Configuration (DSC) files
+are made, enabling boot mode selection and invoking ProcessCapsules() during
+firmware updates. coreboot version information is extracted and incorporated
+into the ESRT to prevent rollback. The workflow is streamlined to generate
+capsules containing coreboot.rom images, with automation where feasible.
 
 - Implement PlatformFlashAccessLib leveraging coreboot SMI handler
-
-Create a library instance that enables flash access operations within the UEFI
-platform with the help of SMI handler implemented in coreboot.
-
 - Modify FDF/DSC files and capsule processing
-
-Update the Firmware Descriptor (FDF) and Device Scope Configuration (DSC) files.
-Enable boot mode selection and invoke ProcessCapsules() at the necessary stages
-during the firmware update process.
-
 - Parse version reported by coreboot for ESRT
-
-Extract coreboot version information and incorporate it into the EFI System
-Resource Table (ESRT) within UEFI, to reflect the updated firmware and prevent
-rolling back to earlier versions.
-
 - Develop process for building capsules from coreboot.rom
-
-Establish a streamlined workflow to generate capsules containing the
-coreboot.rom image and automate the process where possible.
 
 **Task 3. Test the solution on a hardware**
 
-In this task, the UEFI Capsule Update will be tested on the hardware to ensure
-its proper functionality and compatibility.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/33)
+
+This task will involve testing the UEFI Capsule Update on hardware to ensure its
+proper functionality and compatibility. The CAPSULE_ENABLE feature will be
+validated using test signing keys before transitioning to product-specific ones.
+Furthermore, a mechanism will be tested to prevent the operating system from
+booting until a reboot occurs following the firmware update process. The primary
+objective is to ensure that the system remains secure and stable after firmware
+updates are applied.
 
 - Verify feature using test signing keys
-
-Validate the CAPSULE_ENABLE feature using test signing keys before using
-product-specific signing keys.
-
 - OS block booting verification
-
-Test a mechanism that prevents the operating system from booting until a reboot
-occurs after the firmware update process. The primary objective is to ensure
-that the system remains secure and stable after firmware updates are applied.
 
 **Task 4. Secure Firmware Signing**
 
-In this task the focus is on implementing secure firmware signing processes to
-ensure the integrity and authenticity of firmware updates. The use of OpenSSL
-utilities for generating signing keys enhances security, while the developed
-binary compilation procedure simplifies the signing process for end-users.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/34)
+
+This task focuses on implementing secure firmware signing processes for update
+integrity and authenticity. OpenSSL utilities are used for generating signing
+keys, enhancing security. A streamlined binary compilation procedure simplifies
+the signing process for end-users. OpenSSL command line utilities are utilized
+to generate necessary signing keys. The milestone includes creating a
+user-friendly procedure for binary signing without embedding private keys into
+build system, ensuring consistency and efficiency. Comprehensive documentation
+for end-users will be provided, detailing firmware update procedures and feature
+utilization.
 
 - Generate signing keys using OpenSSL utilities
-
-Utilize OpenSSL command line utilities to generate the necessary signing keys
-for the capsule update process.
-
 - Develop binary compilation without using a private key
-
-This milestone involves creating a comprehensive procedure for users, outlining
-the process of signing binaries without the use of a private key, ensuring a
-consistent and efficient signing process.
-
 - End-user documentation
-
-Create comprehensive documentation for end-users, including detailed
-instructions on how to perform firmware updates and utilize the provided
-features effectively.
 
 **Task 5. Enhanced Boot Process with vboot A/B Support**
 
-This task aims to establish a more secure, stable, and user-friendly firmware
-update process. The incorporation of the vboot A/B scheme will provide a
-reliable fallback in case of problematic updates, while the automated execution
-of the UX capsule will enhance the end-user experience during firmware updates.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/35)
+
+This task improves the firmware update process for security, stability, and
+user-friendliness. Integrating the vboot A/B scheme ensures a reliable fallback
+for problematic updates, while automated execution of the UX capsule enhances
+the user experience. Enhancements will support the vboot A/B scheme for
+fallbacks and use the UX capsule to inform users of update progress. This
+prevents user impatience during longer update times, reducing the risk of
+platform malfunction due to premature reboot attempts.
 
 - Add support for the vboot A/B scheme
-
-Enhance the firmware update mechanism to support the vboot A/B scheme, providing
-a fallback option in case of unstable updates.
-
 - Automate the creation and execution of the UX capsule
-
-Use UX capsule to convey message to the user that the update is in progress.
-Because update takes significantly more time than normal boot, impatient user
-may think that the boot process is stuck and try to force a platform reboot,
-which in turn may end up with non-working platform.
 
 **Task 6. Test and release UEFI Capsule Update for coreboot and EDK II**
 
-Task 6 involves testing and release of firmware updates for both MSI PRO Z790-P
-and MSI PRO Z690-A DDR4/DDR5 platforms. The primary focus is to verify the
-successful update process, ensuring system stability and security after applying
-the new firmware update method.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/36)
+
+This task involves the testing and release of firmware updates for MSI
+platforms. The main objective is to thoroughly verify the successful update
+process and ensure system stability and security after implementing the new
+firmware update method. This entails rigorous testing to guarantee the
+reliability and integrity of the updated firmware on both platforms.
 
 - Test and publish release for MSI PRO Z790-P
-
-Verify the successful update process and ensure system stability and security
-after applying the new firmware update method.
-
 - Test and publish release for MSI PRO Z690-A DDR4/DDR5
-
-Verify the successful update process and ensure system stability and security
-after applying the new firmware update method.
 
 **Task 7. Upstream of the UEFI Capsule Update for coreboot with EDK II in
 coreboot**
 
-The primary objective is to merge the UEFI Capsule Update functionality directly
-into the coreboot codebase, ensuring its availability as part of the coreboot
-project and expanding the firmware update capabilities for coreboot-supported
-systems.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/37)
 
-The code implementing UEFI Capsule Update for coreboot with EDK II shall be
-upstreamed to the official coreboot repository at https://review.coreboot.org/.
+The primary objective is to upstream the UEFI Capsule Update functionality
+directly into the coreboot codebase, ensuring its availability as part of the
+coreboot project and expanding the firmware update capabilities for
+coreboot-supported systems. The code implementing UEFI Capsule Update for
+coreboot with EDK II shall be upstreamed to the official coreboot repository at
+[review.coreboot.org](https://review.coreboot.org/).
 
 **Task 8. Upstream of the UEFI Capsule Update for coreboot with EDK II in EDK
 II**
 
-The goal is to ensure that the UEFI Capsule Update implementation becomes a part
-of the official codebase, contributing to the wider EDK II ecosystem and
-enhancing the firmware update capabilities for coreboot-supported systems.
+- [GitHub Milestone for tracking
+  progress](https://github.com/Dasharo/dasharo-issues/milestone/38)
 
-The code implementing UEFI Capsule Update for coreboot with EDK II shall be
-upstreamed to the official EDK II repository at
-https://github.com/tianocore/edk2.
+The objective is to integrate the UEFI Capsule Update implementation into the
+official codebase, contributing to the EDK II ecosystem and improving firmware
+update capabilities for coreboot-supported systems. The code implementing UEFI
+Capsule Update for coreboot with EDK II will be upstreamed to the official EDK
+II repository at
+[github.com/tianocore/edk2](https://github.com/tianocore/edk2).
+
+## Expected flow of update process
+
+This represents technical flow of update process. Note that this may not
+represent the final state of the project, as some implementation details may be
+revised before the project is finalized.
+
+![](/images/capsule_update_tech_flow.svg){ class="center" }
+
+- Solid arrows represent transition of execution flow.
+- Dotted arrows represent data transfer (read, write).
+- The diagram shows only features added for this project, without the usual
+  initialization steps performed by coreboot or edk2.
+- Actions in `opt` boxes are taken only when capsules are present, others are
+  executed unconditionally.
+- In the future, capsule updates will be initialized from OS instead of UEFI
+  application started manually from UEFI Shell.
 
 ## Compare your own project with existing or historical efforts
 
@@ -232,10 +217,12 @@ supported Dell machines that were enabled by 3mdeb and other platforms based on
 Intel FSP. By leveraging our knowledge and experience from the ESRT project,
 which plays a vital role within the operating system to initiate capsule updates
 at the system level, we bring valuable insights and advancements to the firmware
-update process. Through our contributions, we aim to promote open-source
-firmware adoption and facilitate a more robust and secure firmware update
-process, benefiting open-source firmware community and and ensuring a
-user-friendly and efficient firmware update experience for end-users.
+update process.
+
+Through our contributions, we aim to promote open-source firmware adoption and
+facilitate a more robust and secure firmware update process, benefiting
+open-source firmware community and and ensuring a user-friendly and efficient
+firmware update experience for end-users.
 
 - MSI Z690-A PRO DDR4 / DDR5: <https://review.coreboot.org/c/coreboot/+/63463>
 - Dell OptiPlex 7010/9010 SFF: <https://review.coreboot.org/c/coreboot/+/40351>
@@ -251,12 +238,13 @@ user-friendly and efficient firmware update experience for end-users.
 The coreboot and EDK II firmware frameworks need to be modified to support UEFI
 capsule update methods. This integration requires understanding and implementing
 the UEFI specification, especially the EFI_FIRMWARE_MANAGEMENT_PROTOCOL, FMP
-capsule format, and EFI System Resource Table (ESRT). Adapting coreboot and EDK
-II to support these mechanisms will involve extensive code changes and ensuring
-compatibility with the UEFI standard. Solving these challenges will involve
-significant code modifications, rigorous testing, and an active collaboration
-with the coreboot and EDK II communities to ensure successful integration and
-smooth functionality.
+capsule format, and EFI System Resource Table (ESRT).
+
+Adapting coreboot and EDK II to support these mechanisms will involve extensive
+code changes and ensuring compatibility with the UEFI standard. Solving these
+challenges will involve significant code modifications, rigorous testing, and an
+active collaboration with the coreboot and EDK II communities to ensure
+successful integration and smooth functionality.
 
 ## Ecosystem of the project
 
@@ -268,9 +256,50 @@ wider community. That is why we expect high level of engagement with communities
 of both of this projects at each stage of the project, to make sure the proposed
 solution can be accepted upstream.
 
+There are members of the open-source community interested in this outcome:
+
+- Richard Hughes - *This proposal is an important step forward for coreboot
+moving towards the industry standard UpdateCapsule update method. With this
+functionality we can use the existing generic capsule plugin rather than having
+to configure each board with flashrom. From a security point of view, updating
+using flashrom means the SPI device cannot be locked at runtime, and moving to
+UpdateCapsule allows the vendor to secure the platform significantly. This
+proposal is an important step forward for coreboot.*
+
+- Wessel klein Snakenborg (NovaCustom) - *As a leading provider of customizable
+and privacy-focused laptops, NovaCustom is committed to offering our customers
+the most secure and seamless user experience. We are dedicated to providing our
+valued customers with the best possible user experience. The project, UEFI
+Capsule Update for coreboot with EDK II, perfectly aligns with this commitment.
+By integrating the widely supported UEFI capsule update methods into our
+open-source firmware frameworks, we aim to highly improve the firmware update
+process for our users. With this implementation, updating firmware becomes a
+breeze, as our customers can seamlessly utilize the popular firmware update
+management tool for Linux systems: fwupd. This user-friendly approach ensures
+that our customers can easily and securely keep their laptops up-to-date with
+the latest features and security enhancements. Increasing the accessibility of
+the firmware update procedure encourages people to perform firmware updates more
+promptly, thereby enhancing the overall security of coreboot+EDK-II.*
+
 ## Review
 
 Further reviews and suggestions are welcome. You can do it in two ways:
 
 - using Giscus on the bottom of this page
 - contributing to this repository directly via Pull Request
+
+## Funding
+
+This project is partially funded through
+[NGI0 Entrust](https://nlnet.nl/entrust), a fund established by
+[NLnet](https://nlnet.nl) with financial support from the European Commission's
+[Next Generation Internet](https://ngi.eu) program. Learn more at the
+[NLnet project page](https://nlnet.nl/project/UEFICapsuleUpdate/).
+
+<div style="display: flex; justify-content: center;">
+    <a href="https://nlnet.nl"><img src="https://nlnet.nl/logo/banner.png"
+    alt="NLnet foundation logo" height="40" /></a>
+    <a href="https://nlnet.nl/entrust"><img
+    src="https://nlnet.nl/image/logos/NGI0_tag.svg" alt="NGI Zero logo"
+    height="40" /></a>
+</div>

@@ -7,8 +7,8 @@ Select your Dasharo firmware flavor:
 
     ## Models
 
-    === "V540TU"
-        __NovaCustom V540TU__ are 14 inch laptops based on 14th Generation Intel
+    === "V54 Series"
+        __NovaCustom V540TNx__ are 14 inch laptops based on 14th Generation Intel
         Core Ultra processors (Meteor Lake):
 
         ![](/images/v540tu-front.png){ align=right width=50% }
@@ -19,8 +19,8 @@ Select your Dasharo firmware flavor:
 
         </div>
 
-    === "V560TU"
-        __NovaCustom V560TU__ are 16 inch laptops based on 14th Generation Intel
+    === "V56 Series"
+        __NovaCustom V560TNx__ are 16 inch laptops based on 14th Generation Intel
         Core Ultra processors (Meteor Lake):
 
         ![](/images/v560tu-front.png){ align=right width=50% }

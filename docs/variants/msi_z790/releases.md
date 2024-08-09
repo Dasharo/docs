@@ -21,7 +21,7 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 ## v0.9.1 - 2024-01-22
 
 Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1753841105).
+[here](https://github.com/Dasharo/osfv-results/tree/main/boards/msi/ms7e06/results.csv).
 
 ### Added
 

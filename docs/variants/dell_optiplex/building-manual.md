@@ -2,23 +2,42 @@
 
 **Please read the [overview page](overview.md) first!**
 
-To build Dasharo compatible with Dell OptiPlex 7010/9010, follow the steps
-below:
+## Available variants
+
+To build Dasharo compatible with Dell OptiPlex 7010/9010, you need to decide
+what is your desired configuration. The available options are as follows:
+
+- Dasharo (coreboot + SeaBIOS)
+- Dasharo (coreboot + edk2)
+- Dasharo (coreboot + SeaBIOS) with
+  [Intel TXT](https://doc.coreboot.org/security/intel/txt.html) support
+- Dasharo (coreboot + edk2) with
+  [Intel TXT](https://doc.coreboot.org/security/intel/txt.html) support
+
+### Intel TXT
+
+If your choice is to enable TXT support, be advised that there are proprietary
+[ACM blobs](https://doc.coreboot.org/security/intel/acm.html) required for the
+firmware to work properly. They are non-redistributable for the platform in
+question, which means you will need to obtain/extract them yourself and patch
+the result binary using `cbfstool`. The methods are covered later on in the
+[initial deployment guide](initial-deployment.md#firmware-preparation)
+
+    If in doubt, it is recommended to proceed with the non-TXT scenario.
+
+## Building steps
 
 1. Clone the coreboot repository:
 
     ```bash
     git clone https://github.com/dasharo/coreboot.git
-    ```
-
-    ```bash
     cd coreboot
     ```
 
-    Replace vX.Y.Z with valid version:
+    Replace `vX.Y.Z` with a valid version, eg. `v0.1.0`:
 
     ```bash
-    git checkout dell_optiplex_9010_vX.Y.Z
+    git checkout optiplex_7010_9010_vX.Y.Z
     ```
 
     Checkout submodules:
@@ -27,27 +46,14 @@ below:
     git submodule update --init --recursive --checkout
     ```
 
-1. Start docker container:
-
-    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0`:
+1. Start a docker container:
 
      ```bash
     	docker run --rm -it \
     	   -v $PWD:/home/coreboot/coreboot \
     	   -w /home/coreboot/coreboot \
-    	   coreboot/coreboot-sdk:2022-04-04_9a8d0a03db /bin/bash
+    	   coreboot/coreboot-sdk:2023-11-24_2731fa619 /bin/bash
      ```
-
-    * To build `Dasharo (coreboot+UEFI) v0.1.0`:
-
-     ```bash
-    	docker run --rm -it \
-    	   -v $PWD:/home/coreboot/coreboot \
-    	   -w /home/coreboot/coreboot \
-    	   coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
-     ```
-
-     To understand difference between versions please read [FAQ](faq.md).
 
 1. Inside of the container, configure and start the build process:
 
@@ -55,35 +61,34 @@ below:
     make distclean
     ```
 
-    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0`
+    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0`:
 
      ```bash
-    	cp configs/config.dell_optiplex_9010 .config
+    	cp configs/config.dell_optiplex_9010_sff .config
      ```
 
-    * To build `Dasharo (coreboot+UEFI) v0.1.0`
+    * To build `Dasharo (coreboot+UEFI) v0.1.0`:
 
      ```bash
-    	cp configs/config.dell_optiplex_9010 .config
+    	cp configs/config.dell_optiplex_9010_sff_uefi .config
      ```
 
-    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0` debug version (very verbose logging).
+    * To build `Dasharo (coreboot+SeaBIOS) v0.1.0` **with TXT support**:
 
      ```bash
-    	cp configs/config.dell_optiplex_9010.debug .config
+    	cp configs/config.dell_optiplex_9010_sff_txt .config
      ```
 
-    * To build `Dasharo (coreboot+UEFI) v0.1.0` debug version (very verbose logging).
+    * To build `Dasharo (coreboot+UEFI) v0.1.0` **with TXT support**:
 
      ```bash
-    	cp configs/config.dell_optiplex_9010.uefi.debug .config
+    	cp configs/config.dell_optiplex_9010_sff_uefi_txt .config
      ```
+
+    Finally, run:
 
     ```bash
     make olddefconfig
-    ```
-
-    ```bash
     make
     ```
 
@@ -96,5 +101,5 @@ below:
 This will produce a Dasharo binary placed in `build/coreboot.rom`, which can be
 flashed in following ways, depending on your situation:
 
-* To flash Dasharo first time refer to [initial deployment manual](initial-deployment.md).
-* To update Dashro refer [firmware update](firmware-update.md).
+- To flash Dasharo first time refer to [initial deployment manual](initial-deployment.md).
+- To update Dashro refer to [firmware update](firmware-update.md).
