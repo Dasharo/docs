@@ -7,20 +7,20 @@ environment for Dell OptiPlex workstations available in 3mdeb testing laboratory
 
 ## OptiPlex 7010
 
-| Component                      | Description                              |
-|--------------------------------|------------------------------------------|
-| **CPU**                        | Intel Core iTBD                          |
-|                                | CPU Cooler                               |
-| **GPU**                        | N/A                                      |
-| **RAM**                        | TBD                                      |
-| **HDD**                        | TBD                                      |
-| **SSD**                        | TBD                                      |
-| **Flash memory**               | TBD                                      |
-| **Network**                    | Local network wired connection           |
-| **Attached devices**           | 1. TBD USB stick                         |
-| **Power Supply**               | TBD                                      |
-| **Power Control**              | 1. Sonoff TBD                            |
-| **Remote Testing Environment** | 1. RTE TBD                               |
+| Component                      | Description                                             |
+|--------------------------------|---------------------------------------------------------|
+| **CPU**                        | Intel Core i5-3470                                      |
+|                                | Stock Dell CPU Cooler                                   |
+| **GPU**                        | Integrated Intel HD Graphics                            |
+| **RAM**                        | 4x 8GB HMT351U6CFR8C-PB                                 |
+| **HDD**                        | N/A                                                     |
+| **SSD**                        | Silicon Power 120GB 2,5" SATA SSD S55                   |
+| **Flash memory**               | 12MB (8+4) dual SPI flash                               |
+| **Network**                    | Local network wired connection                          |
+| **Attached devices**           | 1. SanDisk Ultra USB 3.0                                |
+| **Power Supply**               | Stock Dell PSU                                          |
+| **Power Control**              | 1. Sonoff Web Server                                    |
+| **Remote Testing Environment** | 1. RTE `v1.1.0` (firmware `v0.7.5`) connected via RS232 |
 
 ## OptiPlex 9010
 
@@ -36,8 +36,8 @@ environment for Dell OptiPlex workstations available in 3mdeb testing laboratory
 | **Network**                    | Local network wired connection                          |
 | **Attached devices**           | 1. TBD USB stick                                        |
 | **Power Supply**               | TBD                                                     |
-| **Power Control**              | 1. Sonoff Web Server                                    |
-| **Remote Testing Environment** | 1. RTE `v1.0.0` (firmware `v0.5.3`) connected via RS232 |
+| **Power Control**              | 1. Sonoff TBD                                           |
+| **Remote Testing Environment** | 1. RTE TBD                                              |
 
 ## OptiPlex 9010 full (miczyg)
 
