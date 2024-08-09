@@ -14,6 +14,7 @@ open-source firmware distribution.
 * Following network appliances are supported under Dasharo Support Package:
 
     - [Protectli FW6](protectli_fw6/overview.md)
+    - [Protectli v1000-series](protectli_v1000-series/overview.md)
     - [Protectli VP2410](protectli_vp2410/overview.md)
     - [Protectli VP2420](protectli_vp2420/overview.md)
     - [Protectli VP46xx](protectli_vp46xx/overview.md)
