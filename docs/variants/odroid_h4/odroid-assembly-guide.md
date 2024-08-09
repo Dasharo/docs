@@ -91,12 +91,12 @@ implemented on the RTE platform. To perform the flashing operation reproduce,
 the below-described steps:
 
 !!! Danger "Important"
-    it is recommended to detect the chip with the DC jack power cable
-    disconnected from the Odroid. If the chip is surequiresccessfully detected,
+    It is recommended to detect the chip with the DC jack power cable
+    disconnected from the Odroid. If the chip is successfully detected,
     you can reconnect the DC power jack and proceed with your task. If the
     chip fails to detect after reconnecting the power, you may need to attach
     an additional grounding cable to the RTE. This additional grounding is not
-    always necessary, but it can resolve detection issues if they ARISE.
+    always necessary, but it can resolve detection issues if they arise.
 
 1. First run the flashrom command on RTE to check if the flash is detected by
     following the first three steps from [this guide](https://docs.dasharo.com/transparent-validation/rte/v1.1.0/specification/#how-to-set-gpio-states-to-flash-spi)
