@@ -27,7 +27,7 @@ to the flash chip on the bottom of your platform:
 ### Serial connection
 
 The method of setting and using serial connection is described in the
-[Serial connection guide](../rte/v1.1.0/serial-port-connection-guide.md).
+[Serial connection guide](../../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 In this case, you will need to enable UART port and connect it to the pins 6,
 8 and 10 of Odroid's Peripheral Expansion Header using 2.54 mm female-female
 wires.
