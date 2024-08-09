@@ -255,6 +255,8 @@ nav:
           - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp46xx/test-matrix.md
           - 'Openness score': variants/protectli_vp46xx/openness_score.md
+      - 'Odroid H4':
+          - 'Assembly guide': variants/odroid_h4/odroid-assembly-guide.md
       # - 'Protectli VP66xx':
       #     - 'Overview': variants/protectli_vp66xx/overview.md
       #     - 'Releases': variants/protectli_vp66xx/releases.md
