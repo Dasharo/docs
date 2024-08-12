@@ -424,6 +424,7 @@ nav:
       - 'Trusted Computing': osf-trolling-list/trusted_computing.md
       - 'Jira Service Management': osf-trolling-list/jsm_documentation.md
       - 'Intel ME/CSME': osf-trivia-list/me.md
+      - 'Capsule Update': osf-trivia-list/capsule-update.md
   - 'Ecosystem':
       - 'Overview': ecosystem/overview.md
     # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
