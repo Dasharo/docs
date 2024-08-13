@@ -279,7 +279,7 @@ firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
 [DPP](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
-release and it is only available to Dasharo Entry Subscription subscribers.
+release and it is only available to Dasharo Pro Package subscribers.
 If you have DPP subscription then do steps in
 [How can I use my Dasharo Pro Package credentials](
 ../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
