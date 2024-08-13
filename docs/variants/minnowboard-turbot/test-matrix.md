@@ -54,7 +54,6 @@ MinnowBoard Turbot.
 | 5.  | [Network stack enable/disable][NBA]   | NBA           | All                                  |
 | 6.  | [USB stack enable/disable][USS]       | USS           | All                                  |
 
-[TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
 [SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
 [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
 [SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
