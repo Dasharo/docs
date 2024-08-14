@@ -286,6 +286,44 @@ Certificates can be omitted for `--decode`.  In this case signatures won't be
 verified but created files should be identical except for corresponding fields
 of the output JSON file.
 
+## Capsule authentication
+
+The verification of capsules is performed via
+[public-key cryptography][wiki-pkc] (the concepts most relevant here: key pairs
+and subkeys).  This security mechanism uses a root key pair like this:
+
+1. Public key is embedded into the firmware at build time.
+2. Private key is used to (indirectly, via a subkey) sign capsules.
+3. Signature embedded in the capsule is validated against the public key when
+   an update is attempted to decide whether the perform the update.
+
+Things to note:
+
+- public root key is well-known
+- private root key is stored in a safe place and nobody but the owner should
+  know it, otherwise there is no security and whoever has access to the key can
+  compromise the firmware (which might as well be considered insecure if the key
+  is no longer private)
+- root key pair can be changed only through a firmware update (not necessarily
+  via an update capsule)
+- signature of a capsule is a feature of the capsule, but not of a firmware
+  image that it carries
+
+The last two points are relevant when one wants to transition from one root key
+pair to another.  This is possible to do via a capsule update as long as
+there is an ability to sign a capsule with the root key embedded into current
+firmware (the key itself or any key signed by it (subkey) should do if the
+signature includes all certificates necessary to validate it).  This works
+because while current firmware validates the capsule, contents of the capsule
+is free of any restrictions: it can have a different root key pair, it can even
+be a completely different firmware.  In other words, capsule authentication
+applies only to a single firmware update process.  That said, successive updates
+typically will share the same root key such that the whole series of firmware
+versions will be compatible with one another (unless `LowestSupportedVersion`
+interferes).
+
+[wiki-pkc]: https://en.wikipedia.org/wiki/Public-key_cryptography
+
 ## Alternatives
 
 It's also possible to generate capsules via EDK's build system by configuring it
