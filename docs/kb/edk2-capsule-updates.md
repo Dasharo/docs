@@ -292,10 +292,11 @@ The verification of capsules is performed via
 [public-key cryptography][wiki-pkc] (the concepts most relevant here: key pairs
 and subkeys).  This security mechanism uses a root key pair like this:
 
-1. Public key is embedded into the firmware at build time.
+1. Public key is embedded into the firmware at build time (one key is enough,
+   but using multiple keys is also supported).
 2. Private key is used to (indirectly, via a subkey) sign capsules.
 3. Signature embedded in the capsule is validated against the public key when
-   an update is attempted to decide whether the perform the update.
+   an update is attempted to decide whether to perform the update.
 
 Things to note:
 
@@ -323,6 +324,57 @@ versions will be compatible with one another (unless `LowestSupportedVersion`
 interferes).
 
 [wiki-pkc]: https://en.wikipedia.org/wiki/Public-key_cryptography
+
+## `capsule.sh` script
+
+### Building a capsule
+
+As a convenience, there is a `capsule.sh` script which can be used to ease
+capsule creation by automating some of the steps.  Once a firmware has been
+built, an update capsule for it can be created by running the following from
+coreboot's root directory:
+
+```bash
+./capsule.sh make -t keys/TestRoot.pub.pem \
+                  -o keys/TestSub.pub.pem \
+                  -s keys/TestCert.pem
+```
+
+(The command assumes that signing keys from `BaseTools/Source/Python/Pkcs7Sign/`
+in EDK have been copied to `keys/`.)
+
+JSON file will be automatically generated based on the contents of coreboot's
+`.config` file which contains all the necessary information when the capsule
+support is enabled (and the script aborts if it's not the case).
+
+Output file name is generated based on coreboot options like
+`CONFIG_MAINBOARD_DIR` and `CONFIG_LOCALVERSION`, for example:
+
+- `emulation-qemu-q35-v0.2.0.cap`
+- `msi-ms7d25-ddr4-v1.1.9.cap`
+
+### Generating test signing keys
+
+In order to test capsules signed with unsupported keys, one needs to generate a
+suitable set of keys which can be done like this:
+
+```bash
+./capsule.sh keygen my-test-keys
+```
+
+At the end the script prints a command to use the keys:
+
+```bash
+./capsule.sh make -t my-test-keys/root.pub.pem \
+                  -o my-test-keys/sub.pub.pem \
+                  -s my-test-keys/sign.p12
+```
+
+!!! warning
+
+    The generated keys are for testing only, field values are hard-coded and no
+    additional encryption is employed to achieve a convenient non-interactive
+    key creation.
 
 ## Alternatives
 
