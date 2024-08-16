@@ -89,17 +89,19 @@ if you own/use/buy a machine running Dasharo firmware.
 
 As a Dasharo Pro Package subscriber you will get:
 
-* The latest Dasharo Pro Package Releases issued by Dasharo Team
-* Special Dasharo Updates for Dasharo Pro Package subscribers –
-  Community receives one update per year, but Dasharo Pro Package
-  subscribers are not limited to it. Number of updates depends on the number
-  of Dasharo Pro Packages sold and the availability of other funding
-  (e.g., NLNet, corporate sponsors, community donations).
-* Dasharo Primer Support through invite-only Matrix channel where we often
-  gather Dasharo Pro Package subscribers' opinion and share exciting
-  news about Dasharo direction
-* Insider's view and influence on Dasharo features roadmap – you can have a
-  real impact on Dasharo development
+* Accesses to the latest binary releases of Dasharo open-source firmware
+distribution for supported Desktop platforms.
+* Exclusive newsletter.
+* Special updates, including early access to updates enhancing privacy,
+security, performance, and compatibility.
+* Early access to new binary releases for Dasharo open-source firmware
+distribution for newly supported Desktop platforms (please check our roadmap).
+* Access to the Dasharo Premier Support invite-only live chat channel in Matrix
+network, facilitating direct engagement with the Dasharo Team and fellow
+subscribers with personalized and priority assistance.
+* Insider’s view and influence on Dasharo features roadmap – you can have
+a real impact on Dasharo development.
+* Dasharo Tools Suite Pro Package (former Entry Subscription) keys.
 
 ### PayPal
 
