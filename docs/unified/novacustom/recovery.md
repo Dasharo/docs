@@ -204,10 +204,9 @@ make BOARD=arduino/mega2560 flash
    laptop, taking care to align pin 1 of the FFC cable to pin 1 (leftmost) pin
    of the connector
 
-
     ![FFC cable with a 1mm pitch](/images/nvc_ec_flash/ns5x_arduino_connected.jpg)
     *FFC cable with a 1mm pitch*
-    
+
     ![FFC cable with a 0.5mm pitch](/images/nvc_ec_flash/v54_arduino_connected.jpg)
     *FFC cable with a 0.5mm pitch*
 
