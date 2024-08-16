@@ -90,12 +90,12 @@ if you own/use/buy a machine running Dasharo firmware.
 As a Dasharo Pro Package subscriber you will get:
 
 * Accesses to the latest binary releases of Dasharo open-source firmware
-distribution for supported Desktop platforms.
+distribution for supported platforms.
 * Exclusive newsletter.
 * Special updates, including early access to updates enhancing privacy,
 security, performance, and compatibility.
 * Early access to new binary releases for Dasharo open-source firmware
-distribution for newly supported Desktop platforms (please check our roadmap).
+distribution for newly supported platforms (please check our roadmap).
 * Access to the Dasharo Premier Support invite-only live chat channel in Matrix
 network, facilitating direct engagement with the Dasharo Team and fellow
 subscribers with personalized and priority assistance.
