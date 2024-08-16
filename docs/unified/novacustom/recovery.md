@@ -147,29 +147,33 @@ make BOARD=arduino/mega2560 flash
 
 ### Recovery steps
 
-> For other models scroll down
+#### Removing Screws
 
-#### V560
+=== "V560"
 
-1. For the V560 laptops you will need to remove two stretch-release pull tabs
-   that are holding keyboard in place.
+    1. For the V560 laptops you will need to remove two stretch-release pull tabs
+    that are holding keyboard in place.
 
-    ![](/images/v560tape1.webp)
+        ![](/images/v560tape1.webp)
 
-1. Second pull tab is located under the heat sink.
+    1. Second pull tab is located under the heat sink.
 
-    ![](/images/v560heatsink.webp)
+        ![](/images/v560heatsink.webp)
     ![](/images/v560tape2.webp)
 
-#### Other models
+=== "Other models"
 
-1. Remove the two screws holding the keyboard in place. They are indicated on the
-   bottom cover with a keyboard symbol:
+    1. Remove the two screws holding the keyboard in place. They are indicated on the
+    bottom cover with a keyboard symbol:
 
-    ![](/images/ch341a_rec/ns5x_kbscrew.jpg)
+        ![](/images/ch341a_rec/ns5x_kbscrew.jpg)
+
+#### Connecting
 
 1. Pry the keyboard away from the laptop. Use a plastic spudger to release the
    tabs holding it in place, starting from the top.
+
+    ![](/images/nvc_ec_flash/v54_lifted_keyboard.jpg)
 
     !!! warning
 
@@ -194,17 +198,27 @@ make BOARD=arduino/mega2560 flash
 1. Insert the breakout into Arduino's digital pin header, pins 22-45, with the
    FFC connector facing outwards
 
-    ![](/images/nvc_ec_flash/ns5x_arduino_breakout_attached.jpg)
+    ![](/images/nvc_ec_flash/arduino_breakout_attached_2.jpg)
 
 1. Connect the other end of the FFC cable to the keyboard connector on the
    laptop, taking care to align pin 1 of the FFC cable to pin 1 (leftmost) pin
    of the connector
 
-    ![](/images/nvc_ec_flash/ns5x_arduino_connected.jpg)
+
+    ![FFC cable with a 1mm pitch](/images/nvc_ec_flash/ns5x_arduino_connected.jpg)
+    *FFC cable with a 1mm pitch*
+    
+    ![FFC cable with a 0.5mm pitch](/images/nvc_ec_flash/v54_arduino_connected.jpg)
+    *FFC cable with a 0.5mm pitch*
 
 1. Connect the Arduino to the host using the USB-A to USB-B cable
+
 1. Connect the USB-C cable together with power blocker from your host
    computer to the laptop.
+
+    ![](/images/nvc_ec_flash/usb-c-ground-connection-pc.jpg)
+
+    ![](/images/nvc_ec_flash/usb-c-ground-connection-laptop.jpg)
 
     !!! warning
 
@@ -213,6 +227,8 @@ make BOARD=arduino/mega2560 flash
         [Power Blocker](https://shop.3mdeb.com/shop/adapters/usb-power-blocker/)
         Ensure the power pin on the cable is taped over to
         prevent the Embedded Controller chip from getting powered.
+
+#### Flashing
 
 1. Build the flashing utility:
 
@@ -223,7 +239,7 @@ make BOARD=arduino/mega2560 flash
 1. Flash the firmware:
 
     ```bash
-    sudo ecflash/target/release/examples/isp [path to EC backup]
+    sudo ecflash/target/release/examples/isp [path to EC binary]
     ```
 
     The output will contain:
