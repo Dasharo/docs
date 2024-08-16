@@ -34,9 +34,9 @@ wires.
 
 | RTE J18             | Odroid H4 EXPANSION HEADER             |
 |:--------------------|:---------------------------------------|
-| J18 pin 1 (TX)      | <TBD marking> pin 6  APU_UART_RXD_BUF  |
-| J18 pin 2 (RX)      | <TBD marking> pin 8  APU_UART_TXD_BUF  |
-| J18 pin 3 (GND)     | <TBD marking> pin 10 GND               |
+| J18 pin 1 (TX)      | pin 6  APU_UART_RXD_BUF  |
+| J18 pin 2 (RX)      | pin 8  APU_UART_TXD_BUF  |
+| J18 pin 3 (GND)     | pin 10 GND               |
 
 ![](../../images/odroid_exthead.png)
 
@@ -125,15 +125,21 @@ the below-described steps:
 1. Read the flash chip by executing the following command on RTE:
 
     ```bash
-    ./flash.sh read tmp/dump.rom
+    flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -r /tmp/dump.rom
     ```
 
 1. If the reading was successful, the output from the command above should
     contain the phrase `Verifying flash... VERIFIED`.
+1. To be completely sure, verify the `sha256sum` of multiple dumps.
+
+    ```bash
+    sha256sum /tmp/dump*.bin
+    ```
+
 1. Write the flash chip by executing the following command on RTE:
 
     ```bash
-    ./flash.sh write /tmp/coreboot.rom
+    flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w /tmp/coreboot.rom
     ```
 
     > Do not interrupt the flashing procedure in any way (especially by
@@ -144,5 +150,5 @@ the below-described steps:
 
 ### USB devices
 
-Since some issues with USB controllers may only happen on select USB ports,
+Since some issues with USB controllers may only happen on selected USB ports,
 it's important to plug in USB devices to all 4 USB ports of the board.
