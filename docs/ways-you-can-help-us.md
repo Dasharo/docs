@@ -82,21 +82,21 @@ open-source firmware mission. It is straightforward if you don't have time for
 other contributions, and there are multiple options - feel free to choose one
 that works for you.
 
-### Become a Dasharo Entry Subscription subscriber
+### Become a Dasharo Pro Package subscriber
 
-Buy the [Dasharo Entry Subscription](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/)
+Buy the [Dasharo Pro Package](https://shop.3mdeb.com/product-category/dasharo-pro-package/)
 if you own/use/buy a machine running Dasharo firmware.
 
-As a Dasharo Entry Subscription subscriber you will get:
+As a Dasharo Pro Package subscriber you will get:
 
-* The latest Dasharo Entry Subscription Releases issued by Dasharo Team
-* Special Dasharo Updates for Dasharo Entry Subscription subscribers –
-  Community receives one update per year, but Dasharo Entry Subscription
+* The latest Dasharo Pro Package Releases issued by Dasharo Team
+* Special Dasharo Updates for Dasharo Pro Package subscribers –
+  Community receives one update per year, but Dasharo Pro Package
   subscribers are not limited to it. Number of updates depends on the number
-  of Dasharo Entry Subscriptions sold and the availability of other funding
+  of Dasharo Pro Packages sold and the availability of other funding
   (e.g., NLNet, corporate sponsors, community donations).
 * Dasharo Primer Support through invite-only Matrix channel where we often
-  gather Dasharo Entry Subscription subscribers' opinion and share exciting
+  gather Dasharo Pro Package subscribers' opinion and share exciting
   news about Dasharo direction
 * Insider's view and influence on Dasharo features roadmap – you can have a
   real impact on Dasharo development
