@@ -82,9 +82,9 @@ open-source firmware mission. It is straightforward if you don't have time for
 other contributions, and there are multiple options - feel free to choose one
 that works for you.
 
-### Become a Dasharo Entry Subscription subscriber
+### Become a Dasharo Pro Package subscriber
 
-Buy the [Dasharo Entry Subscription](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/)
+Buy the [Dasharo Pro Subsription](https://shop.3mdeb.com/product-category/dasharo-pro-package/)
 if you own/use/buy a machine running Dasharo firmware.
 
 As a Dasharo Entry Subscription subscriber you will get:
