@@ -14,7 +14,7 @@ and WWAN slots.
 * VP4630 - Intel Core i3-10110U
 * VP4650 - Intel Core i5-10210U
 * VP4670 - Intel Core i7-10810U (both v1 and v2 versions, see the
-  [Intel FSP repo for details](https://github.com/intel/FSP/tree/master/CometLakeFspBinPkg#differentiating-cometlake1-and-cometlake2)))
+  [Intel FSP repo for details](https://github.com/intel/FSP/tree/master/CometLakeFspBinPkg#differentiating-cometlake1-and-cometlake2))
 
 > Starting with Dasharo [v1.0.19](releases.md#v1019-2022-12-08) Intel ME
 > (Management Engine) is
