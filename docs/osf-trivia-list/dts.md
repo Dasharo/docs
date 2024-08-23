@@ -93,3 +93,19 @@ Please [donate](../ways-you-can-help-us.md#donate-money) using one of
 available methods and contact [3mdeb](mailto:leads@3mdeb.com) or [Dasharo
 Team](mailto:contact@dasharo.com) to let us know about your donation. Minimal
 donating to access DTS SE with one year update support is 60EUR.
+
+## How can I help the support team diagnose my problem faster?
+
+Make sure to provide logs that show the failing feature. Provide information
+that will help reproduce the issue - the machine model, Dasharo/DTS version,
+etc.
+
+If you are having issues with functionalities provided by the DTS start menu,
+you can help by running it in verbose mode and providing logs. To do that,
+follow the instructions below:
+
+1. Boot DTS.
+2. In the DTS menu enable verbose mode by typing `V` and pressing `Enter`.
+3. Enable sending logs by typing `L` and pressing `Enter`.
+4. Reproduce the problem.
+5. The logs will be sent automatically after exiting from the menu.
