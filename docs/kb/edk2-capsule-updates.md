@@ -90,7 +90,10 @@ Signing takes three keys (root, its subkey and subkey's subkey for signing):
 This structure of signing keys is presupposed by `GenerateCapsule` and
 `Pkcs7Sign` but it seems to be a design decision of the tooling rather than a
 strict requirement on the length of a signing key chain by UEFI or cryptographic
-implementation in EDK2.
+implementation in EDK2.  In particular, a chain of length 2 (without a subkey)
+can be used by specifying any certificate in place of the subkey (root, signing
+certificate or literally any other; it won't be used by the code but still needs
+to be a valid certificate so the tools don't complain).
 
 ### Optional payload metadata
 
