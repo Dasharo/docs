@@ -328,6 +328,170 @@ interferes).
 
 [wiki-pkc]: https://en.wikipedia.org/wiki/Public-key_cryptography
 
+## Generating signing keys with OpenSSL
+
+The process involves creation of 3 certificates, a local certificate
+authority (CA) in a directory and 14 files.  This warrants some overview of
+what's going to be done.
+
+Keys making up the chain will assume the following roles:
+
+- _root_ — self-signed certificate acting as the basis of a CA
+- _sub_ — second-level CA signed by _root_ key
+- _sign_ — a signing key (not a CA) that is signed by _sub_ key
+
+A digital signature algorithm (DSA) consists of a private key (PK) algorithm and
+a digest algorithm.  Keys in a chain don't have to use the same DSA.  Also, most
+DSAs allow use of an arbitrary digest (not Ed25519 or Ed448 which prescribe the
+use of SHA-512 and SHAKE-256 respectively).
+
+Keys exist independently of the chains in which they appear.  When stored,
+private keys are often encrypted.
+
+### Key generation by example
+
+It will be easier to go into finer details while looking at the actual commands.
+The entire process can be broken into several stages:
+
+1. Creation of 3 certificates
+2. Construction of a CA
+3. Preparation of _root_ certificate for inclusion into EDK
+4. Preparation of _sign_ certificate for signing
+
+#### Make certificates
+
+Using 4096-bit RSA keys as an example:
+
+```bash
+openssl genrsa -aes256 -out root.p8e 4096
+openssl genrsa -aes256 -out sub.p8e 4096
+openssl genrsa -aes256 -out sign.p8e 4096
+```
+
+Each of them is encrypted with AES-256.  The password is queried interactively
+for creation and each time the certificate is used to sign something.  Drop
+`-aes256` to not use encryption (for a test or if you consider access to the
+files a complete compromise of the security).
+
+`.p8e` extension is for PKCS #8 format carrying an encrypted private key.
+
+#### Make a CA
+
+By default, directory for a CA is called `demoCA`, although it can be different
+depending on the OS.  It can be looked up in `/etc/ssl/openssl.cnf` as
+`dir = ...` in `[ CA_default ]` section (and that section is in turn referenced
+by `default_ca` in `[ ca ]` section).  The directory needs to be set up prior
+to using `openssl ca`:
+
+```bash
+mkdir -p demoCA/newcerts
+touch demoCA/index.txt
+echo 01 > demoCA/serial
+```
+
+Initialize it with self-signed root certificate (will ask for a password
+and certificate fields; country, state and organization fields must match _root_
+certificate, common name must be a unique non-empty value):
+
+```bash
+openssl req -new -x509 -days 3650 -key root.p8e -out root.pub.pem
+```
+
+Create certificate signing requests (CSRs) (don't bother with
+entering a challenge for CSRs, you won't be asked for it):
+
+```bash
+openssl req -new -key sub.p8e -out sub.csr
+openssl req -new -key sign.p8e -out sign.csr
+```
+
+Perform the signing (there will be password and confirmation prompts):
+
+```bash
+openssl ca -extensions v3_ca \
+           -in sub.csr \
+           -days 3650 \
+           -cert root.pub.pem \
+           -keyfile root.p8e \
+           -notext \
+           -out sub.pub.pem
+openssl ca -in sign.csr \
+           -days 3650 \
+           -cert sub.pub.pem \
+           -keyfile sub.p8e \
+           -notext \
+           -out sign.crt
+```
+
+The `-days 3650` is something to be adjusted and is provided as an example that
+certificate properties are set in a different command for _root_ compared to
+other certificates.
+
+`-notext` avoids dumping certificate details in text form to the output file
+thus making all certificates look consistent.  The details are easy to obtain
+by running `openssl x509 -in {cert-file} -text -noout` when needed.
+
+`*.csr` files aren't necessary after successful signing and can be removed.
+
+`.pub.pem` and `.crt` files contain essentially the same X.509 certificates, but
+the former is used for CAs.  There is little consistency or sense in extension
+for these types of files in general, so don't read too much meaning into them.
+
+#### Prepare _root_ for EDK build system
+
+EDK gets _root_ certificate(s) in a PCD.  The PCD name differ and support one
+or many certificates, in this case it's
+`gFmpDevicePkgTokenSpaceGuid.PcdFmpDevicePkcs7CertBufferXdr` which expects one
+or more certificates in DER (binary) form combined via XDR (simple format where
+big-endian 32-bit length is followed by that number of bytes).
+
+EDK provides `BinToPcd.py` that can generate a file for inclusion via `!include`
+in some DSC-file of an EDK package.
+
+```bash
+openssl x509 -in root.pub.pem -out root.cer -outform DER
+python payloads/external/edk2/workspace/Dasharo/BaseTools/Scripts/BinToPcd.py \
+    -p gFmpDevicePkgTokenSpaceGuid.PcdFmpDevicePkcs7CertBufferXdr \
+    -i root.cer \
+    -x \
+    -o CapsuleRootKey.inc
+```
+
+`root.cer` can be removed afterward.
+
+#### Prepare _sign_ certificate
+
+`GenerateCapsule` and EDK will only ever need public parts of _root_ and _sub_
+certificates, but _sign_ certificate will have to be provided in combination
+with the corresponding private key.  This is achieved by packing the two parts
+via PKCS #12 which is an archive file format.
+
+`openssl pkcs12` either creates a PKCS #12 file or converts it, thus requiring
+two invocations for obtaining the result in PEM format.
+
+First, create binary PKCS #12 (certificate and corresponding private key):
+
+```bash
+openssl pkcs12 -export -inkey sign.p8e -in sign.crt -out sign.pfx
+```
+
+Add `-passout pass:` to perform export (creation, that is) without encryption.
+
+Now convert binary PKCS #12 into PEM form:
+
+```bash
+openssl pkcs12 -in sign.pfx -out sign.p12
+```
+
+`-passin pass:` can be added if `sign.pfx` was created without a password to
+skip the prompt.
+
+`-noenc` (`-nodec` is deprecated in OpenSSL v3) can be added to avoid
+encrypting `sign.p12`.  Without this option, there will be a password prompt
+during the conversion and whenever a capsule is signed.
+
+`sign.pfx` can now be removed.
+
 ## `capsule.sh` script
 
 ### Building a capsule
@@ -365,12 +529,17 @@ suitable set of keys which can be done like this:
 ./capsule.sh keygen my-test-keys
 ```
 
-At the end the script prints a command to use the keys:
+At the end the script prints commands to use the keys (wrapped manually here):
 
 ```bash
-./capsule.sh make -t my-test-keys/root.pub.pem \
-                  -o my-test-keys/sub.pub.pem \
-                  -s my-test-keys/sign.p12
+Installing root certificate (before build):
+  cp my-test-keys/CapsuleRootKey.inc \
+     payloads/external/edk2/workspace/Dasharo/DasharoPayloadPkg/
+
+Signing a capsule (after build):
+  ./capsule.sh make -t my-test-keys/root.pub.pem \
+                    -o my-test-keys/sub.pub.pem \
+                    -s my-test-keys/sign.p12
 ```
 
 !!! warning
