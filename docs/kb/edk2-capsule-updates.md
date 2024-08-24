@@ -384,7 +384,7 @@ the EDK2-way of doing things via `SignedCapsulePkg` ([PDF][edk2-capsules]) but
 it appears to be less flexible due to relying on the build system of EDK2 which
 is quite rigid for a large firmware variance that can be found in Dasharo.
 
-Because `GenerateCapsules` is in Python and at least part of the functionality
+Because `GenerateCapsule` is in Python and at least part of the functionality
 is abstracted in form of modules, it's also possible to build custom tools on
 top of that.
 
