@@ -283,7 +283,7 @@ firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
 [DES](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
-release and it is only available to Dasharo Entry Subscription subscribers.
+release and it is only available to Dasharo Pro Package subscribers.
 
 Next you will be asked two questions to confirm flashing. The first will be
 displayed with the detected information about the device you are using DTS on.
@@ -393,8 +393,7 @@ Please consider the following options depending on your situation:
 
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
 with flashed Dasharo and choose option number `2`. You may see additional
-information about available updates if you are not [Dasharo Entry
-Subscription](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+information about available updates if you are not [Dasharo Pro Package](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
 subscriber.
 
 Next you will be asked two questions to confirm flashing. The first will be

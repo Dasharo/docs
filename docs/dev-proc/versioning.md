@@ -14,24 +14,24 @@ in menu on the left side (Supported Hardware->Hardware Model->Releases).
 
 Dasharo Releases can be divided into two categories:
 
-* Dasharo Entry Subscription Releases (previous Dasharo Supporters Release for
+* Dasharo Pro Package Releases (previous Dasharo Supporters Release for
   Dasharo Support Entrance Subscribers)
 * Dasharo Community Releases
 
-## Dasharo Entry Subscription Releases
+## Dasharo Pro Package Releases
 
-Dasharo Entry Subscription subscribers receive firmware updates more
+Dasharo Pro Package subscribers receive firmware updates more
 frequently than the community. The number of updates per year depends on the
-number of Dasharo Entry Subscriptions sold and the availability of other
+number of Dasharo Pro Package sold and the availability of other
 funding (e.g., NLNet, corporate sponsors, community donations) but is less
-than 2 updates per year. Dasharo Entry Subscription Releases are characterized
+than 2 updates per year. Dasharo Pro Package Releases are characterized
 by a changing patch version (`z`). Fixes and features introduced in Dasharo
-Entry Subscription Releases will also be available later as Dasharo Community
+Pro Package Releases will also be available later as Dasharo Community
 Releases with public pre-built binaries in the respective release pages. In
 short, being a Dasharo Subscriber gives early access to the newest features
 and fixes.
 
-[How to become Dasharo Entry Subscription subscriber?](../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber)
+[How to become Dasharo Pro Package subscriber?](../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber)
 
 ## Dasharo Community Releases
 

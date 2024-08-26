@@ -28,9 +28,9 @@ site at [Dasharo Release Documentation](https://docs.dasharo.com/variants/pc_eng
 <!-- markdownlint-disable-next-line MD013 -->
 ## How much would it cost me to switch my subscription for Network Appliance from already purchased (coreboot+UEFI) to (coreboot+SeaBIOS)?
 
-We can switch your subscription from [Dasharo (coreboot+UEFI) Entry Subscription
+We can switch your subscription from [Dasharo (coreboot+UEFI) Pro Package
 for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/)
-to the [Dasharo (coreboot+SeaBIOS) Entry Subscription for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
+to the [Dasharo (coreboot+SeaBIOS) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
 at no extra cost. This change can be made until the end of May 2024, but only if
 the purchase was made before the official [(coreboot+UEFI) release](https://docs.dasharo.com/variants/pc_engines/releases_uefi/)
 which occurred on 2024-04-02.

@@ -25,8 +25,8 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo (coreboot+UEFI) Entry Subscription for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/)
-    - [Dasharo (coreboot+SeaBIOS) Entry Subscription for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
+    - [Dasharo (coreboot+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance/)
+    - [Dasharo (coreboot+SeaBIOS) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
 
 ## Laptops
 
@@ -43,7 +43,7 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo (coreboot+UEFI) Entry Subscription for Laptops Upgrade to (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
+    - [Dasharo (coreboot+UEFI) Pro Package for Laptops Upgrade to (coreboot+Heads)](https://shop.3mdeb.com/shop/dasharo-entry-subscription/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
 
 ## Desktop
 
@@ -55,7 +55,7 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo (coreboot+UEFI) Entry Subscription for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1year-desktop/)
+    - [Dasharo (coreboot+UEFI) Pro Package for Desktop](https://shop.3mdeb.com/shop/dasharo-entry-subscription/1year-desktop/)
 
 ## Workstation
 
