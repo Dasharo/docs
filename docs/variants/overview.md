@@ -34,6 +34,8 @@ open-source firmware distribution.
 
 * Following laptops are supported under Dasharo Support Package
 
+    - [NovaCustom V54 14th Gen](../unified/novacustom/overview.md)
+    - [NovaCustom V56 14th Gen](../unified/novacustom/overview.md)
     - [NovaCustom NV4x 12th Gen](../unified/novacustom/overview.md)
     - [NovaCustom NS5x/7x 12th Gen](../unified/novacustom/overview.md)
     - [NovaCustom NV4x 11th Gen](../unified/novacustom/overview.md)
@@ -49,9 +51,12 @@ open-source firmware distribution.
 
 ## Desktop
 
-* Following desktops are supported under Dasharo Community Support
+* Following desktops are supported under Dasharo Support Package
 
     - [Dell OptiPlex](dell_optiplex/overview.md)
+
+* Following desktops are supported under Dasharo Community Support
+
     - [MSI PRO Z690-A](../unified/msi/overview.md)
     - [MSI PRO Z790-P](../unified/msi/overview.md)
 
