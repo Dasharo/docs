@@ -82,24 +82,26 @@ open-source firmware mission. It is straightforward if you don't have time for
 other contributions, and there are multiple options - feel free to choose one
 that works for you.
 
-### Become a Dasharo Entry Subscription subscriber
+### Become a Dasharo Pro Package subscriber
 
-Buy the [Dasharo Entry Subscription](https://shop.3mdeb.com/product-category/dasharo-entry-subscription/)
+Buy the [Dasharo Pro Package](https://shop.3mdeb.com/product-category/dasharo-pro-package/)
 if you own/use/buy a machine running Dasharo firmware.
 
-As a Dasharo Entry Subscription subscriber you will get:
+As a Dasharo Pro Package subscriber you will get:
 
-* The latest Dasharo Entry Subscription Releases issued by Dasharo Team
-* Special Dasharo Updates for Dasharo Entry Subscription subscribers –
-  Community receives one update per year, but Dasharo Entry Subscription
-  subscribers are not limited to it. Number of updates depends on the number
-  of Dasharo Entry Subscriptions sold and the availability of other funding
-  (e.g., NLNet, corporate sponsors, community donations).
-* Dasharo Primer Support through invite-only Matrix channel where we often
-  gather Dasharo Entry Subscription subscribers' opinion and share exciting
-  news about Dasharo direction
-* Insider's view and influence on Dasharo features roadmap – you can have a
-  real impact on Dasharo development
+* Accesses to the latest binary releases of Dasharo open-source firmware
+distribution for supported platforms.
+* Exclusive newsletter.
+* Special updates, including early access to updates enhancing privacy,
+security, performance, and compatibility.
+* Early access to new binary releases for Dasharo open-source firmware
+distribution for newly supported platforms (please check our roadmap).
+* Access to the Dasharo Premier Support invite-only live chat channel in Matrix
+network, facilitating direct engagement with the Dasharo Team and fellow
+subscribers with personalized and priority assistance.
+* Insider’s view and influence on Dasharo features roadmap – you can have
+a real impact on Dasharo development.
+* Dasharo Tools Suite Pro Package (former Entry Subscription) keys.
 
 ### PayPal
 
