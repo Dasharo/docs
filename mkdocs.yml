@@ -135,6 +135,7 @@ nav:
       - 'New? Start here': newcomers.md
   - 'Supported hardware':
       - 'Overview': variants/overview.md
+      - 'Version matrix': variants/versions.md
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
       - 'NovaCustom laptops':
           - 'Overview': unified/novacustom/overview.md
