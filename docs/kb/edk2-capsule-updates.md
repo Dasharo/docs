@@ -189,12 +189,15 @@ EDK2 payload:
 cd payloads/external/edk2/workspace/Dasharo/
 BaseTools/BinWrappers/PosixLike/GenerateCapsule --encode \
                                                 --capflag PersistAcrossReset \
-                                                --capflag InitiateReset \
                                                 --json-file dasharo.json \
                                                 --output dasharo.cap
 ```
 
-Values from multiple `--capflag` options are combined together.
+In case more than one flag needs to be specified, values from multiple
+`--capflag` options are combined together.  There is no `InitiateReset` because
+Linux rejects capsules with this flag and requires a manual soft reset for
+persistent capsules (`CapsuleApp.efi` does reset for persistent capsules by
+default, so no difference in behaviour for it).
 
 ## Capsule introspection
 
