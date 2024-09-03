@@ -277,6 +277,7 @@ nav:
           - 'Post-installation setup': variants/protectli-post-install.md
           - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
           - 'Test matrix': variants/protectli_vp66xx/test-matrix.md
+          - 'Openness score': variants/protectli_vp66xx/openness_score.md
       # - 'Protectli V1210/V1410/V1610':
       #     - 'Overview': variants/protectli_v1x10/overview.md
       #     - 'Releases': variants/protectli_v1x10/releases.md
