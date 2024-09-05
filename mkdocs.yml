@@ -344,6 +344,7 @@ nav:
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
       - 'Updating your firmware': guides/firmware-update.md
+      - 'Capsule updates': guides/capsule-update.md
       - 'Flashing custom firmware': guides/firmware-reflash.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
