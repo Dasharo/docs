@@ -4,6 +4,13 @@
 
 This document is a guide for updating firmware on your Dasharo-powered device.
 
+!!! tip
+
+    If your current firmware supports UEFI Update Capsules, there is a dedicated
+    [guide on their usage](../guides/capsule-update.md).  If unsure, check out
+    [the compatibility table](../guides/capsule-update.md#supported-devices)
+    there.
+
 ## Firmware Update Mode
 
 Newer Dasharo releases support Firmware Update Mode, which performs updates
