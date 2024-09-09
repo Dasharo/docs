@@ -1,24 +1,17 @@
 # Dasharo Openness Score
 
-This page contains the [Dasharo Openness
-Score](../../glossary.md#dasharo-openness-score) for Protectli VP66XX Dasharo
-releases. The content of the page is generated with [Dasharo Openness Score
-utility](https://github.com/Dasharo/Openness-Score).
-
-## v0.9.0
-
 Openness Score for protectli_vp66xx_v0.9.0.rom
 
-Open-source code percentage: **36.7%**
-Closed-source code percentage: **63.3%**
+Open-source code percentage: **36.6%**
+Closed-source code percentage: **63.4%**
 
 * Image size: 16777216 (0x1000000)
-* Number of regions: 24
+* Number of regions: 25
 * Number of CBFSes: 3
 * Total open-source code size: 4830854 (0x49b686)
-* Total closed-source code size: 8332326 (0x7f2426)
+* Total closed-source code size: 8365094 (0x7fa426)
 * Total data size: 677420 (0xa562c)
-* Total empty size: 2121512 (0x205f28)
+* Total empty size: 2903848 (0x2c4f28)
 
 ![](protectli_vp66xx_v0.9.0.rom_openness_chart.png)
 
@@ -45,6 +38,7 @@ Closed-source code percentage: **63.3%**
 | RO_FRID | 0xb04800 | 0x100 | data |
 | RO_FRID_PAD | 0xb04900 | 0x700 | data |
 | GBB | 0xb05000 | 0x3000 | data |
+| SI_DEVICEEXT2 | 0x4c1000 | 0xbf000 | empty |
 
 ## CBFS BOOTSPLASH
 
