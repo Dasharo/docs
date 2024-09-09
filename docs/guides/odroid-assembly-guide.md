@@ -122,17 +122,10 @@ the below-described steps:
     - `RTE_IP` - IP address of the connected RTE.
 
 1. Login to RTE via `ssh` or `minicom`.
-1. Read the flash chip by executing the following command on RTE:
+1. To be sure, verify the `sha256sum` of multiple dumps.
 
     ```bash
     flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -r /tmp/dump.rom
-    ```
-
-1. If the reading was successful, the output from the command above should
-    contain the phrase `Verifying flash... VERIFIED`.
-1. To be completely sure, verify the `sha256sum` of multiple dumps.
-
-    ```bash
     sha256sum /tmp/dump*.bin
     ```
 
@@ -145,7 +138,7 @@ the below-described steps:
     > Do not interrupt the flashing procedure in any way (especially by
     changing connections). It may cause hardware damage!
 
-1. If the reading was successful, the output from the command above should
+1. If the writing was successful, the output from the command above should
     contain the phrase `Verifying flash... VERIFIED`.
 
 ### USB devices
