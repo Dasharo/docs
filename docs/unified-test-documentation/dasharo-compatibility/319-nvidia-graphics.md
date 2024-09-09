@@ -41,11 +41,17 @@ initialized and can be detected by the operating system.
 
 **Expected result**
 
-1. The command should return one line containing the name of the graphics
+1. The command should return the name of the graphics
    card, e.g:
 
     ```bash
     2d:00.0 3D controller: NVIDIA Corporation TU117M (rev a1)
+    ```
+
+    or
+
+    ```bash
+    01:00.1 VGA compatible controller: NVIDIA Corporation AD106M [GeForce RTX 4070 Max-Q / Mobile] (rev a1)
     ```
 
 ## NVI001.002 NVIDIA Graphics detect (Windows)

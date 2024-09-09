@@ -21,6 +21,9 @@ VP2410 specification:
 * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
 SATA data and power cables for internal SSD, Quick Start Guide
 
+> On VP2410 Intel ME (Management Engine) is not supported by coreboot causing
+> Intel ME to enter recovery mode giving similar results to disabled ME.
+
 For more information please refer to the references below.
 
 ## References

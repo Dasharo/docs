@@ -52,7 +52,7 @@ the result binary using `cbfstool`. The methods are covered later on in the
     	docker run --rm -it \
     	   -v $PWD:/home/coreboot/coreboot \
     	   -w /home/coreboot/coreboot \
-    	   coreboot/coreboot-sdk:2023-11-24_2731fa619 /bin/bash
+    	   coreboot/coreboot-sdk:2023-11-24_2731fa619b /bin/bash
      ```
 
 1. Inside of the container, configure and start the build process:
