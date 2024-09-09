@@ -21,7 +21,7 @@ To build Dasharo firmware image, first clone the coreboot repository:
     ```
 then follow the steps below:
 
-=== "fw6"
+=== "FW6"
 
     1. Checkout to the device's branch:
         ```bash
@@ -42,7 +42,7 @@ then follow the steps below:
         ./build.sh fw6
         ```
 
-=== "v1000-series"
+=== "V1000 series"
 
     1. Checkout the desired version, e.g. `v0.9.2`:
 
@@ -101,7 +101,7 @@ then follow the steps below:
     `protectli_V1210.rom`, `protectli_V1410.rom` or `protectli_V1610.rom`
     respectvely.
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
 
     Since version v1.0.18 VP4630 and VP4650 use different configuration file than
     VP4670. Versions v1.0.17 and older do not support VP4650 and VP4670 at all.
@@ -166,7 +166,7 @@ then follow the steps below:
                 The resulting coreboot image will be placed in the coreboot
                 directory as `protectli_vault_cml_<version>_vp4670.rom`.
 
-=== "vp66xx"
+=== "VP6630/VP6650/VP6670"
 
     1. Checkout the desired version, e.g. `v0.9.0`:
 
@@ -190,7 +190,7 @@ then follow the steps below:
     The resulting coreboot image will be placed in the coreboot directory as
     `protectli_vp66xx.rom`.
 
-=== "vp2410"
+=== "VP2410"
 
     1. Checkout the desired version, e.g. `v1.0.15`:
 
@@ -229,7 +229,7 @@ then follow the steps below:
     The resulting coreboot image will be placed in the coreboot directory as
     `protectli_vp2410_<version>.rom`.
 
-=== "vp2420"
+=== "VP2420"
 
     1. Checkout the desired version, e.g. `v1.1.0`:
 

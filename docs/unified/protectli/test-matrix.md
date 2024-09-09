@@ -5,7 +5,7 @@
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary.
 
-=== "fw6"
+=== "FW6"
 
     ## Module: Dasharo compatibility
 
@@ -45,7 +45,7 @@ subjected from before the release of the new binary.
 
     [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
 
-=== "v1000-series"
+=== "V1000 series"
 
     ## Module: Dasharo compatibility
 
@@ -129,7 +129,7 @@ subjected from before the release of the new binary.
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
 
     ## Module: Dasharo compatibility
 
@@ -246,7 +246,7 @@ subjected from before the release of the new binary.
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
-=== "vp66xx"
+=== "VP6630/VP6650/VP6670"
 
     ## Module: Dasharo compatibility
 
@@ -359,7 +359,7 @@ subjected from before the release of the new binary.
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
-=== "vp2410"
+=== "VP2410"
 
     ## Module: Dasharo compatibility
 
@@ -441,7 +441,7 @@ subjected from before the release of the new binary.
     [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
     [STB]: ../../unified-test-documentation/dasharo-performance/404-platform-stability.md
 
-=== "vp2420"
+=== "VP2420"
 
     ## Module: Dasharo compatibility
 

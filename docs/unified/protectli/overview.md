@@ -21,7 +21,7 @@ Select Model:
         ../../variants/protectli_fw6/test-matrix.md) - validation
         scope for the Protectli FW6
 
-=== "v1000-series"
+=== "V1000 series"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
     The V1000 series feature an Intel Jasper Lake CPU, soldered down LPDDR4X
@@ -62,11 +62,11 @@ Select Model:
         - describes validation scope used during
         Dasharo firmware validation procedure.
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
-    The VP46XX is the second platform of the Vault Pro series with higher
-    performance and newer technology than the original FW6 series.
+    The VP4630/VP4650/VP4670 is the second platform of the Vault Pro series with
+    higher performance and newer technology than the original FW6 series.
 
     ![](/images/VP4630_banner-1.jpg)
 
@@ -114,7 +114,7 @@ Select Model:
         Dasharo firmware validation procedure.
     * [Post-installation setup](../../variants/protectli_vp46xx/post-install.md)
 
-=== "vp2410"
+=== "VP2410"
     The Vault Pro is a small form network appliance built for use as a firewall
     / router, virtualization platform, a daily-driven personal computer,
     and more. The VP2410 is based on a 4 network port design that leverages
@@ -162,7 +162,7 @@ Select Model:
     * [Test matrix](../../variants/protectli_vp2410/test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
 
-=== "vp2420"
+=== "VP2420"
     The Vault Pro is a small form network appliance built for use as a firewall
     / router, virtualization platform, a daily-driven personal computer,
     and more. The VP2420 is based on a 4 x 2.5 G network port design that
@@ -212,7 +212,7 @@ Select Model:
     * [Test matrix](../../variants/protectli_vp2420/test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
 
-=== "vp66xx"
+=== "VP6630/VP6650/VP6670"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
     The VP6630/VP6650/VP6670 feature an Intel Alder Lake-P CPU, 2x DDR5 SODIMM

@@ -19,7 +19,7 @@ flashrom -p internal -r dump.rom
 
 ## Flashing Dasharo
 
-=== "fw6"
+=== "FW6"
 
     To flash Dasharo on the platform, execute the following command - replace `[path]`
     with the path to the Dasharo image you want to flash, e.g. `protectli_fw6_DF_v1.0.14.rom`.
@@ -30,7 +30,7 @@ flashrom -p internal -r dump.rom
 
     After successful operation reboot the platform.
 
-=== "v1000-series"
+=== "V1000 series"
 
     To flash Dasharo on the platform, execute the following command - replace
     `[path]` with the path to the Dasharo image you want to flash, e.g.
@@ -43,7 +43,7 @@ flashrom -p internal -r dump.rom
     This will flash the BIOS region only. After the operation is successful,
     reboot the platform.
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
 
     To flash Dasharo on the platform, execute the following command -
     replace `[path]` with the path to the Dasharo image you want to flash, e.g.
@@ -66,7 +66,7 @@ flashrom -p internal -r dump.rom
     5. The platform should power on normally now. You can connect the battery
         back if it was disconnected.
 
-=== "v66xx"
+=== "VP6630/VP6650/VP6670"
 
     To flash Dasharo on the platform, execute the following command - replace
     `[path]` with the path to the Dasharo image you want to flash, e.g.
@@ -79,7 +79,7 @@ flashrom -p internal -r dump.rom
     This will flash the BIOS region only. After the operation is successful,
     reboot the platform.
 
-=== "vp2410"
+=== "VP2410"
 
     To flash Dasharo on the platform, execute the following command -
     replace `[path]` with the path to the Dasharo image you want to flash,
@@ -100,7 +100,7 @@ flashrom -p internal -r dump.rom
 
     This command also preserves Dasharo UEFI settings and the boot order.
 
-=== "vp2420"
+=== "VP2420"
 
     To flash Dasharo on the platform, execute the following command - replace
     `[path]` with the path to the Dasharo image you want to flash, e.g.

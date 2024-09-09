@@ -6,7 +6,7 @@ The following documentation describes the process of recovering hardware from
 the brick state using an [RTE](../../transparent-validation/rte/introduction.md)
 and Dasharo open-source firmware.
 
-=== "v1000-series"
+=== "V1000 series"
 
     ## Prerequisites
 
@@ -85,13 +85,13 @@ and Dasharo open-source firmware.
     The first boot of the platform after proceeding with the above procedure can
     take much longer than standard.
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
 
     ## Connections
 
     Set up the connections required for external flashing as described in
     [Generic Testing Stand Setup](../../unified-test-documentation/generic-testing-stand-setup.md).
-    Protectli VP46XX are flashed using the Pomona clip connection variant. Use
+    Protectli VP4630/VP4650/VP4670 are flashed using the Pomona clip connection variant. Use
     the pictures below to easily locate essential components on the mainboard.
 
     ### SPI flash chip location
@@ -114,7 +114,7 @@ and Dasharo open-source firmware.
         flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L12835F/MX25L12845E/MX25L12865E" -w [path_to_binary]
         ```
 
-=== "vp66xx"
+=== "VP6630/VP6650/VP6670"
 
     ## Prerequisites
 
@@ -185,7 +185,7 @@ and Dasharo open-source firmware.
     The first boot of the platform after proceeding with the above procedure can
     take much longer than standard.
 
-=== "vp2410"
+=== "VP2410"
 
     ## Connections
 
@@ -220,7 +220,7 @@ and Dasharo open-source firmware.
         flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25U6435E/F" -w [path_to_binary]
         ```
 
-=== "vp2420"
+=== "VP2420"
 
     ## Prerequisites
 

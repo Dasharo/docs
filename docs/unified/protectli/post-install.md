@@ -3,7 +3,7 @@
 This document contains extra steps to perform after installing Dasharo in order
 to enable full functionality.
 
-=== "VPx6xx"
+=== "VP4630/VP4650/VP4670/VP6630/VP6650/VP6670"
     ## Windows
 
     This section covers Windows post-install steps tested on Windows 11.
