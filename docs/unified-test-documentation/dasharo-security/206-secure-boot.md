@@ -1372,7 +1372,7 @@ can be enrolled from the operating system using `sbctl`.
     sbctl enroll-keys --yes-this-might-brick-my-machine
     ```
 
-    < Note: `root` rights might be needed.
+    > Note: `root` rights might be needed.
 
 1. Restart the DUT.
 1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI setup
