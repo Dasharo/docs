@@ -122,13 +122,6 @@ the below-described steps:
     - `RTE_IP` - IP address of the connected RTE.
 
 1. Login to RTE via `ssh` or `minicom`.
-1. To be sure, verify the `sha256sum` of multiple dumps.
-
-    ```bash
-    flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -r /tmp/dump.rom
-    sha256sum /tmp/dump*.bin
-    ```
-
 1. Write the flash chip by executing the following command on RTE:
 
     ```bash
