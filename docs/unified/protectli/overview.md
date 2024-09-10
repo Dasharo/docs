@@ -8,17 +8,17 @@ Select Model:
         ../../variants/
         protectli_fw6/releases.md) - list of all releases
     * [Building manual](
-        ../../variants/protectli_fw6/building-manual.md) - how
+        ./building-manual.md) - how
         to build Dasharo for Protectli FW6
     * [Installation manual](
-        ../../variants/protectli_fw6/installation-\manual.md) -
+        ./installation-\manual.md) -
         how to install Dasharo for Protectli FW6
     * [Hardware configuration matrix](
         ../../variants/protectli_fw6/hardware-matrix.md) -
         definition of hardware
         configuration used during validation
     * [Test matrix](
-        ../../variants/protectli_fw6/test-matrix.md) - validation
+        ./test-matrix.md) - validation
         scope for the Protectli FW6
 
 === "V1000 series"
@@ -40,17 +40,17 @@ Select Model:
         ../../variants/protectli_v1000-series/releases.md)
       - groups information about all releases.
     * [Building manual](
-        ../../variants/protectli_v1000-series/building-manual.md)
+        ./building-manual.md)
         - describes how to build Dasharo for Protectli V1000 series.
     * [Initial deployment](
-        ../../variants/protectli_v1000-series/initial-deployment.md)
+        ./initial-deployment.md)
         - describes initial Dasharo deployment methods
         (i. e. flashing new firmware) for Protectli V1000 series.
     * [Firmware update](
-        ../../variants/protectli_v1000-series/firmware-update.md)
+        ./firmware-update.md)
         - explains supported Dasharo open-source firmware update methods.
     * [Recovery](
-        ../../variants/protectli_v1000-series/recovery.md)
+        ./recovery.md)
         - gathers information on how to recover the platform from
         potential failure.
     * [Hardware configuration matrix](
@@ -58,7 +58,7 @@ Select Model:
         - describes the platform's hardware configuration used during the
         Dasharo firmware validation procedure.
     * [Test matrix](
-        ../../variants/protectli_v1000-series/test-matrix.md)
+        ./test-matrix.md)
         - describes validation scope used during
         Dasharo firmware validation procedure.
 
@@ -91,17 +91,17 @@ Select Model:
 
     * [Releases](../../variants/protectli_vp46xx/releases.md) - groups
         information about all releases.
-    * [Building manual](../../variants/protectli_vp46xx/building-manual.md) -
+    * [Building manual](./building-manual.md) -
         describes how to build Dasharo for
         NovaCustom NV4x.
     * [Initial deployment](
-        ../../variants/protectli_vp46xx/initial-deployment.md) -
+        ./initial-deployment.md) -
         describes initial Dasharo
         deployment methods (i. e. flashing new firmware) for Protectli VP46xx.
-    * [Firmware update](../../variants/protectli_vp46xx/firmware-update.md) -
+    * [Firmware update](./firmware-update.md) -
         explains supported Dasharo
         open-source firmware update methods.
-    * [Recovery](../../variants/protectli_vp46xx/recovery.md) - gathers
+    * [Recovery](./recovery.md) - gathers
         information on how to recover the platform
         from potential failure.
     * [Hardware configuration matrix](
@@ -109,10 +109,10 @@ Select Model:
         describes the
         platform's hardware configuration used during the Dasharo firmware
         validation procedure.
-    * [Test matrix](../../variants/protectli_vp46xx/test-matrix.md) - describes
+    * [Test matrix](./test-matrix.md) - describes
         validation scope used during
         Dasharo firmware validation procedure.
-    * [Post-installation setup](../../variants/protectli_vp46xx/post-install.md)
+    * [Post-installation setup](./post-install.md)
 
 === "VP2410"
     The Vault Pro is a small form network appliance built for use as a firewall
@@ -147,19 +147,19 @@ Select Model:
 
     * [Releases](../../variants/protectli_vp2410/releases.md) - groups
         information about all releases.
-    * [Building manual](../../variants/protectli_vp2410/building-manual.md) -
+    * [Building manual](./building-manual.md) -
         describes how to build Dasharo for Protecli 2410.
     * [Initial deployment](
-        ../../variants/protectli_vp2410/initial-deployment.md) -
+        ./initial-deployment.md) -
         describes initial Dasharo deployment methods (i. e. flashing new
         firmware) for Protectli VP2410.
-    * [Recovery](../../variants/protectli_vp2410/recovery.md) - gathers
+    * [Recovery](./recovery.md) - gathers
         information on how to recover the platform from potential failure.
     * [Hardware configuration matrix](
         ../../variants/protectli_vp2410/hardware-matrix.md) -
         describes the platform's hardware configuration used during the Dasharo
         firmware validation procedure.
-    * [Test matrix](../../variants/protectli_vp2410/test-matrix.md) - describes
+    * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
 
 === "VP2420"
@@ -197,19 +197,19 @@ Select Model:
 
     * [Releases](../../variants/protectli_vp2420/releases.md) - groups
         information about all releases.
-    * [Building manual](../../variants/protectli_vp2420/building-manual.md) -
+    * [Building manual](./building-manual.md) -
         describes how to build Dasharo for Protecli 2420.
     * [Initial deployment](
-        ../../variants/protectli_vp2420/initial-deployment.md) -
+        ./initial-deployment.md) -
         describes initial Dasharo deployment methods (i. e. flashing new
         firmware) for Protectli VP2420.
-    * [Recovery](../../variants/protectli_vp2420/recovery.md) - gathers
+    * [Recovery](./recovery.md) - gathers
         information on how to recover the platform from potential failure.
     * [Hardware configuration matrix](
         ../../variants/protectli_vp2420/hardware-matrix.md) -
         describes the platform's hardware configuration used during the Dasharo
         firmware validation procedure.
-    * [Test matrix](../../variants/protectli_vp2420/test-matrix.md) - describes
+    * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
 
 === "VP6630/VP6650/VP6670"
@@ -229,20 +229,20 @@ Select Model:
 
     * [Releases](../../variants/protectli_vp66xx/releases.md) - groups
         information about all releases.
-    * [Building manual](../../variants/protectli_vp66xx/building-manual.md) -
+    * [Building manual](./building-manual.md) -
         describes how to build Dasharo for Protectli VP6630/VP6650/VP6670.
     * [Initial deployment](
-        ../../variants/protectli_vp66xx/initial-deployment.md) -
+        ./initial-deployment.md) -
         describes initial Dasharo deployment methods (i. e. flashing new
         firmware) for Protectli VP6630/VP6650/VP6670.
-    * [Firmware update](../../variants/protectli_vp66xx/firmware-update.md) -
+    * [Firmware update](./firmware-update.md) -
         explains supported Dasharo open-source firmware update methods.
-    * [Recovery](../../variants/protectli_vp66xx/recovery.md) - gathers
+    * [Recovery](./recovery.md) - gathers
         information on how to recover the platform from potential failure.
     * [Hardware configuration matrix](
         ../../variants/protectli_vp66xx/hardware-matrix.md) -
         describes the platform's hardware configuration used during the Dasharo
         firmwarevalidation procedure.
-    * [Test matrix](../../variants/protectli_vp66xx/test-matrix.md) - describes
+    * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
-    * [Post-installation setup](../../variants/protectli_vp66xx/post-install.md)
+    * [Post-installation setup](./post-install.md)

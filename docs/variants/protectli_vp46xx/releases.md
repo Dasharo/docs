@@ -104,7 +104,7 @@ Release version v1.1.0 is currently only available for the VP4670 platform.
   Windows 11 display on VP4670
 - Switched to use driver for IT8784E Super I/O, which is present on the boards
 - CPU power limits increased from baseline to performance
-- [Updating from v1.0.x requires flashing the WP_RO recovery partition](https://docs.dasharo.com/variants/protectli_vp46xx/firmware-update/#updating-to-dasharo-v1018-or-v1019-or-v110)
+- [Updating from v1.0.x requires flashing the WP_RO recovery partition](../../../unified/protectli/firmware-update/#updating-to-dasharo-v1018-or-v1019-or-v110)
 - [Firmware version v1.1.x are signed with a new key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
 
 ### Fixed
