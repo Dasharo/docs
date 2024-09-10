@@ -138,7 +138,7 @@ issue from which the report is sourced.
 
         | Manufacturer | Model | Dasharo version | Notes | Source |
         |---|---|---|---|---|
-        | NovaCustom | Echo 11 Thunderbolt 4 ECHO-DK11-T4  | v0.9.0 | No issues | Official support |
+        | Sonnet | Echo 11 Thunderbolt 4 ECHO-DK11-T4  | v0.9.0 | No issues | Official support |
 
         </div>
 
