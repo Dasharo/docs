@@ -8,6 +8,31 @@ Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF, MT.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
+## v0.1.0
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Dell/OptiPlex_7010_9010/results.csv).
+
+### Added
+
+- Support for Dell OptiPlex 7010/9010
+- [UEFI Boot Support](../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md)
+- [Configurable boot order](../../unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md)
+- Configurable boot options
+- [UEFI Secure Boot support](../../unified-test-documentation/dasharo-security/206-secure-boot.md)
+- [Custom boot logo](../../unified-test-documentation/dasharo-compatibility/304-custom-logo.md)
+- [Dasharo setup menu full screen mode support](https://github.com/Dasharo/dasharo-issues/issues/118)
+- [SMM BIOS write protection](../../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
+- [Firmware update mode](../../guides/firmware-update.md#firmware-update-mode)
+- [Setup menu password configuration](../../dasharo-menu-docs/overview.md#dasharo-menu-guides)
+- [USB stack disable option in setup menu](../../dasharo-menu-docs/dasharo-system-features.md#usb-configuration)
+- [Network stack disable option in setup menu](../../dasharo-menu-docs/dasharo-system-features.md#networking-options)
+- [Serial Console Redirection option](../../dasharo-menu-docs/dasharo-system-features.md#serial-port-configuration)
+
+### Known issues
+
+- [No ability to set SMM BIOS write protection](https://github.com/Dasharo/dasharo-issues/issues/971)
+
 [Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR)
 { .md-button .md-button--primary .center }
 <!--
