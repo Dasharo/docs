@@ -2,3 +2,7 @@
   linux /boot/vmlinuz-4.15.0-115-generic ro quiet iomem=relaxed
 dout
 doubt
+HDA
+HAD
+hda
+had
