@@ -3,7 +3,7 @@
 Following Release Notes describe status of Open Source Firmware development for
 QEMU Q35 (Emulator).
 
-## v0.2.0 - 2024-26-06
+## v0.2.0 - 2024-06-26
 
 Tests reports and logs can be found
 [here](https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu/q35/v0.2.0/).
