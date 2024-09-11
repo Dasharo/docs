@@ -26,18 +26,18 @@ environment for Dell OptiPlex workstations available in 3mdeb testing laboratory
 
 | Component                      | Description                                             |
 |--------------------------------|---------------------------------------------------------|
-| **CPU**                        | Intel Core iTBD                                         |
+| **CPU**                        | Intel Core i7-3770 3,4GHz                               |
 |                                | CPU Cooler                                              |
-| **GPU**                        | N/A                                                     |
-| **RAM**                        | TBD                                                     |
-| **HDD**                        | TBD                                                     |
-| **SSD**                        | TBD                                                     |
-| **Flash memory**               | TBD                                                     |
+| **GPU**                        | Integrated Intel HD Graphics                            |
+| **RAM**                        | RAMAXEL 4GB RMR1870EC58E9F-1333                         |
+| **HDD**                        | N/A                                                     |
+| **SSD**                        | Goodram SSDPR-CX400-256-G2 256GB 2.5'' : SATA III       |
+| **Flash memory**               | 12MB (8+4) dual SPI flash                               |
 | **Network**                    | Local network wired connection                          |
 | **Attached devices**           | 1. TBD USB stick                                        |
-| **Power Supply**               | TBD                                                     |
-| **Power Control**              | 1. Sonoff TBD                                           |
-| **Remote Testing Environment** | 1. RTE TBD                                              |
+| **Power Supply**               | Stock Dell PSU                                          |
+| **Power Control**              | 1. Manual                                               |
+| **Remote Testing Environment** | 1. RTE not set up                                       |
 
 ## OptiPlex 9010 full (miczyg)
 
