@@ -1,5 +1,13 @@
 # Dasharo Openness Score
 
+This page contains the [Dasharo Openness
+Score](../../glossary.md#dasharo-openness-score) for Protectli
+VP6630/VP6650/VP6670 Dasharo releases. The content of the page is generated
+with [Dasharo Openness Score
+utility](https://github.com/Dasharo/Openness-Score).
+
+## v0.9.0
+
 Openness Score for protectli_vp66xx_v0.9.0.rom
 
 Open-source code percentage: **36.6%**
@@ -20,7 +28,7 @@ Closed-source code percentage: **63.4%**
 > Numbers given above already include the calculations from CBFS regions
 > presented below
 
-## FMAP regions
+### FMAP regions
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
@@ -40,7 +48,7 @@ Closed-source code percentage: **63.4%**
 | GBB | 0xb05000 | 0x3000 | data |
 | SI_DEVICEEXT2 | 0x4c1000 | 0xbf000 | empty |
 
-## CBFS BOOTSPLASH
+### CBFS BOOTSPLASH
 
 * CBFS size: 524288
 * Number of files: 1
@@ -57,7 +65,7 @@ Closed-source code percentage: **63.4%**
 | ------------- | ------------- | ---- | ----------- | -------- |
 | (empty) | null | 524260 | none | empty |
 
-## CBFS FW_MAIN_A
+### CBFS FW_MAIN_A
 
 * CBFS size: 4587264
 * Number of files: 13
@@ -86,7 +94,7 @@ Closed-source code percentage: **63.4%**
 | vbt.bin | raw | 1277 | LZMA | data |
 | (empty) | null | 36 | none | empty |
 
-## CBFS COREBOOT
+### CBFS COREBOOT
 
 * CBFS size: 5210112
 * Number of files: 17
