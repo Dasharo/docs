@@ -1,79 +1,50 @@
-# Dasharo compatible with Dell OptiPlex 7010/9010 SFF
+# Dell OptiPlex 7010/9010 Dasharo Release Notes
 
-**Please read the [overview page](overview.md) first!**
-
-Following Release Notes describe status of Open Source Firmware development for
-Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF, MT.
+Following Release Notes describe status of open-source firmware development for
+Dell OptiPlex 7010/9010
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR)
-{ .md-button .md-button--primary .center }
-<!--
+<center>
 
-## Unreleased
+[Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter]
+[newsletter]{ .md-button .md-button--primary .center }
 
-Software BOM:
+</center>
 
-- coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
-  config and CI YAML)
-- EDKII
+## v0.1.0 - 2024-09-12
 
-### Added
-
-- UEFI boot support
-- Discrete graphics support
-- SATA password
-- TCG OPAL password
-- configurable boot order
-- configurable boot options
-- UEFI iPXE for EFI network boot support
-- UEFI Secure Boot
-- Internal UEFI Shell
-- One-time boot feature
-
-### Removed
-
-- Legacy boot support
-
-### Binaries
-
-## v0.1.0 - 2021-01-18
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Dell/OptiPlex_7010_9010/v0.1.0-results.csv).
 
 ### Added
 
-- Dell OptiPlex 7010 and 9010 platforms supported
-- Dasharo bootsplash
-- Legacy boot support
-- USB, SATA, and NVMe boot supported
-- Measured boot with TPM 1.2
-- ME neutralized with me_cleaner
-- Environmental Controller fan control
-- Environmental Controller firmware update support (the DELL EC firmware is
-  included in the image, the firmware update process is open-source, but the EC
-  firmware code is in binary form only and we have no control over what is
-  executed on EC)
-- Integrated graphics initialization with open-source libgfxinit library for
-  both VGA and 2 DP ports
-- Onboard serial port supported
+- Support for Dell OptiPlex 7010/9010
+- [UEFI Boot Support](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface/)
+- [Configurable boot order](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/325-custom-boot-order/)
+- Configurable boot options
+- [UEFI Secure Boot support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
+- [Custom boot logo](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/304-custom-logo/)
+- [Dasharo setup menu full screen mode support](https://github.com/Dasharo/dasharo-issues/issues/118)
+- [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
+- [Setup menu password configuration](https://docs.dasharo.com/dasharo-menu-docs/overview/#dasharo-menu-guides)
+- [USB stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
+- [Network stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)
+- [Serial Console Redirection option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#serial-port-configuration)
 
-### Binaries
+### Known issues
 
-[Dell OptiPlex 7010/9010 Dasharo](TBD){ .md-button }
-[SHA256](TBD){ .md-button }
-[SHA256.sig](TBD){ .md-button }
-
-[All in one zip](TBD){ .md-button }
+- [Network Boot enabled by default](https://github.com/Dasharo/dasharo-issues/issues/979)
+- [Wake by USB keyboard not working](https://github.com/Dasharo/dasharo-issues/issues/1044)
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot 4.12-1428-g20cf396c96 (with additional commits for custom platform
-  config and CI YAML)](https://github.com/Dasharo/coreboot/compare/dell_optiplex_9010_v0.0.0...dell_optiplex_9010_v0.0.0)
-- [SeaBIOS 1.13.0](https://web.archive.org/web/20230415000000*/https://review.coreboot.org/plugins/gitiles/seabios/+/refs/tags/rel-1.13.0)
+- [Dasharo coreboot fork based on 24.02 revision 83c8b094](https://github.com/Dasharo/coreboot/tree/83c8b094)
+- [Dasharo EDKII fork based on edk2-stable202405 revision ae0ecedb](https://github.com/Dasharo/edk2/tree/ae0ecedb)
+- [Dasharo iPXE fork based on 838611b34e revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
+- [Intel microcode based on IVB E1/L1 0x00000021 revision microcode-20240531](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-3a-09)
+- [Intel microcode based on SNB D2/G1/Q0 0x0000002f revision microcode-20240531](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-2a-07)
 
-#### Binary blobs
-
-TBD
-
--->
+[newsletter]: https://newsletter.3mdeb.com/subscription/MY3m7fLpz
