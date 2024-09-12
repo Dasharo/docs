@@ -34,7 +34,7 @@ environment for Dell OptiPlex workstations available in 3mdeb testing laboratory
 | **SSD**                        | Goodram SSDPR-CX400-256-G2 256GB 2.5'' : SATA III       |
 | **Flash memory**               | 12MB (8+4) dual SPI flash                               |
 | **Network**                    | Local network wired connection                          |
-| **Attached devices**           | 1. TBD USB stick                                        |
+| **Attached devices**           | None                                                    |
 | **Power Supply**               | Stock Dell PSU                                          |
 | **Power Control**              | 1. Manual                                               |
 | **Remote Testing Environment** | 1. RTE not set up                                       |
