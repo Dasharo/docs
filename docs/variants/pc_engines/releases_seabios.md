@@ -85,7 +85,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Dasharo Patchqueue Initiative based on 24.05.00.01 revision c86db36f](https://github.com/Dasharo/dasharo-pq/tree/c86db36f)
 - [sortbootorder based on v24.05.00.01 revision a7c8b665](https://github.com/pcengines/sortbootorder/tree/a7c8b665)
 - [iPXE based on 2024.05 revision e965f179](https://github.com/ipxe/ipxe/tree/e965f179)
-- [Memtest86+ based on v002 revision 0bd34c22](https://review.coreboot.org/plugins/gitiles/memtest86plus/+/0bd34c22)
+- [Memtest86+ based on v002 revision 0bd34c22](https://review.coreboot.org/c/memtest86plus/+/29185)
 - [AMD AGESA Binary Platform Initialization based on MullinsPI 1.0.0.A revision a8db7dfe](https://github.com/coreboot/blobs/tree/a8db7dfe/pi/amd/00730F01/FT3b)
 - [AMD Platform Security Processor bootloader based on D.1.1.4D revision a8db7dfe](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/PspBootLoader.Bypass.sbin)
 - [AMD Platform Security Processor firmware public key based on v1.0 revision a8db7dfe](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/AmdPubKey.bin)
