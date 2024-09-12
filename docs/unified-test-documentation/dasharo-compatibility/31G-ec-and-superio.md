@@ -2285,7 +2285,7 @@ This test verifies that Fn+4 key combination for microphone soft switch works
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Go to 'Settings -> Sound
+1. Go to `Settings` -> `Sound`
 1. Observe the bar above the Input Device option
 1. Press the `Fn+4` combination at will
 
@@ -2316,7 +2316,7 @@ This test verifies that Fn+4 key combination for microphone soft switch works
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Go to 'Settings -> System -> Sound
+1. Go to `Settings` -> `System` -> `Sound`
 1. Observe the bar located on the mic volume slider
 1. Press the `Fn+4` combination at will
 
