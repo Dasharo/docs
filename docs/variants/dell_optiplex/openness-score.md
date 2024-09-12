@@ -1,6 +1,8 @@
 # Dasharo Openness Score
 
-## Openness Score for dell_optiplex_7010_9010_v0.1.0.rom
+## v0.1.0
+
+Openness Score for dell_optiplex_7010_9010_v0.1.0.rom
 
 Open-source code percentage: **21.4%**
 Closed-source code percentage: **78.6%**
