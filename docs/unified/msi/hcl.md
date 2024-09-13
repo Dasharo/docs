@@ -36,7 +36,6 @@ hardware.
     === "PRO Z690-A (WIFI) (DDR4)"
         | CPU Model | Dasharo version |  Source  |
         |:---------:|:----------------------:|:---------:|
-        | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.1 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i3-12100 | v1.1.1 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i3-12100T | v1.1.1 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i5-12400 | v1.0.0 | Dasharo HCL Report |
