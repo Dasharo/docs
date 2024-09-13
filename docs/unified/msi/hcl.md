@@ -255,7 +255,7 @@ hardware.
     * Model: GPU model.
     * PCI VendorID:ModelID: PCI Vendor ID and Model ID reported by `lspci`.
     * Multi-Graphics Config: If card was detected in multi-GPU configuration.
-    Please note it doesn't mean heterogeous or homogenous configuration, it just
+    Please note it doesn't mean heterogeous or homogeneous configuration, it just
     mean there were many VGA controllers detected in given report.
 
     | Vendor Name      | GPU Code Name | Model | PCI VendorID:ModelID  | Multi-Graphics Config | Results |
@@ -281,7 +281,6 @@ hardware.
     | NVIDIA Corporation | TU104GL | Quadro RTX 4000 | 10de:1eb1 | Yes (2) | Dasharo HCL report |
     | NVIDIA Corporation | TU116 | GeForce GTX 1650 SUPER | 10de:2187 | No | Dasharo HCL report |
     | NVIDIA Corporation | TU117GLM | Quadro T1000 Mobile | 10de:1fb0 | No | Dasharo HCL report |
-
 
 For details how to maintain this documentation please consult [Dasharo HCL
 Maintainer documentation](../../dev-proc/hcl-maintainer.md).
