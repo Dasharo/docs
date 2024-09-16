@@ -30,7 +30,8 @@ coreboot port on the Protectli VP6630/VP6650/VP6670.
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Core(TM) i5-1235U @ 1.30GHz        |
-| **RAM**                        | TBD                                         |
+| **RAM**                        | Slot 1: GSkill Ripjaws DDR5 16GB Kit        |
+|                                | Slot 1: GSkill Ripjaws DDR5 16GB Kit        |
 | **Flash memory**               | Macronix KH25L12835F                        |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
@@ -43,14 +44,15 @@ coreboot port on the Protectli VP6630/VP6650/VP6670.
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | Sonoff                                      |
-| **Power supply**               | TBD                                         |
+| **Power supply**               | Channel Well Technology 2ABU120F 12V 10A    |
 
 ## Protectli VP6670
 
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Core(TM) i7-1255U @ 1.70GHz        |
-| **RAM**                        | TBD                                         |
+| **RAM**                        | Slot 1: KF548S38IBK2-32 16GB Kit (1/2)      |
+|                                | Slot 2: KF548S38IBK2-32 16GB Kit (2/2)      |
 | **Flash memory**               | Macronix KH25L12835F                        |
 | **USB Keyboard**               | DELL KB216                                  |
 | **USB Mouse**                  | DELL MS116p                                 |
@@ -63,4 +65,4 @@ coreboot port on the Protectli VP6630/VP6650/VP6670.
 | **Network**                    | Local network wired connection              |
 | **Remote Testing Environment** | RTE v1.1.0                                  |
 | **Power Control**              | Sonoff                                      |
-| **Power supply**               | TBD                                         |
+| **Power supply**               | Channel Well Technology 2ABU120F 12V 10A    |
