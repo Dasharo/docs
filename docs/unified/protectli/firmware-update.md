@@ -34,7 +34,7 @@ medium lock and Secure Boot:
 The settings of all the above options can be restored after a firmware
 update.
 
-=== "v1000-series"
+=== "V1000-series"
 
     ## Updating Dasharo
 
@@ -42,7 +42,7 @@ update.
     flashrom -p internal -w protectli_<variant>_v<version>.rom --fmap -i COREBOOT
     ```
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
 
     ## Updating to Dasharo v1.2.0
 
@@ -89,7 +89,7 @@ update.
     flashrom -p internal -w protectli_vault_cml_v1.0.13.rom --ifd -i bios
     ```
 
-=== "vp66xx"
+=== "VP6630/VP6650/VP6670"
 
     ## Updating Dasharo
 
@@ -97,7 +97,7 @@ update.
     flashrom -p internal -w protectli_vp66xx_v<version>.rom --fmap -i RW_SECTION_A
     ```
 
-=== "vp2410"
+=== "VP2410"
 
     ## Updating minor versions v1.x.y (e.g. from v1.0.x to v1.1.0)
 
@@ -118,7 +118,7 @@ update.
 
     This command also preserves Dasharo UEFI settings and the boot order.
 
-=== "vp2420"
+=== "VP2420"
 
     ## Updating minor versions v1.x.y
 

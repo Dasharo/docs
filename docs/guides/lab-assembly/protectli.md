@@ -33,9 +33,9 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     * Power supply for the platform: 12V 5A
     * Micro-USB to USB-A male-male cable for console
 
-=== "VP46XX"
+=== "VP4630/VP4650/VP4670"
 
-    * VP46XX platform
+    * VP4630/VP4650/VP4670 platform
     * Sonoff S20 type E (relay unused due to disruptions in power during high CPU load)
     * USB-UART converter with 4-wire cable
     * 4-pin header 2.54 mm raster
@@ -51,9 +51,9 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     * Power supply for the platform: 12V 4A
     * USB-C to USB-A male-male cable for console
 
-=== "VP66XX"
+=== "VP6630/VP6650/VP6670"
 
-    * VP66XX platform
+    * VP6630/VP6650/VP6670 platform
     * Sonoff S20 type E (relay unused due to disruptions in power during high CPU load)
     * USB-UART converter with 4-wire cable
     * 4-pin header 2.54 mm raster
@@ -74,7 +74,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     External flashing not possible with Pomona clip, the flash chip lies under
     the SODIMM module.
 
-=== "VP46XX"
+=== "VP4630/VP4650/VP4670"
 
     Flash chip is socketed. One has to desolder the socket, solder the flash
     chip in place of the socket and connect the Pomona SOIC8 clip.
@@ -93,7 +93,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     | J7 pin 5 (MISO)     | <TBD marking> pin 5 (MISO)             |
     | J7 pin 6 (MOSI)     | <TBD marking> pin 3 (MOSI)             |
 
-=== "VP66XX"
+=== "VP6630/VP6650/VP6670"
 
     Connect the J1 and J2 flash headers to the SPI header on RTE.
 
@@ -135,7 +135,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
 
     Resetting CMOS is required for proper external flashing.
 
-=== "VP46XX"
+=== "VP4630/VP4650/VP4670"
 
     Connect the RTE J11 header to the platform JCMOS1 header using 2.54mm to 2mm
     wires as described in the table:
@@ -159,7 +159,7 @@ connect ports 3 and 4 together with an additional RJ45 cable.
 
     Resetting CMOS is required for proper external flashing.
 
-=== "VP66XX"
+=== "VP6630/VP6650/VP6670"
 
     Connect the RTE J11 header to the platform JCMOS1 header using 2.54mm to 2mm
     wires as described in the table:
@@ -214,7 +214,7 @@ The method of setting and using serial connection is described in the
         rte_ctrl rel
         ```
 
-=== "VP46XX"
+=== "VP4630/VP4650/VP4670"
 
     Power supply controlling (in this case: controlling the state of Sonoff)
     should be performed based on the `sonoff.sh` script implemented in
@@ -250,7 +250,7 @@ The method of setting and using serial connection is described in the
         rte_ctrl rel
         ```
 
-=== "VP66XX"
+=== "VP6630/VP6650/VP6670"
 
     Power supply controlling (in this case: controlling the state of Sonoff)
     should be performed based on the `sonoff.sh` script implemented in

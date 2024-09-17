@@ -1,14 +1,14 @@
-# Protectli VP66xx Dasharo Release Notes
+# Protectli VP6630/VP6650/VP6670 Dasharo Release Notes
 
-Following Release Notes describe status of open-source firmware development for
-Protectli VP66xx
+Following Release Notes describe status of open-source firmware development
+for Protectli VP6630/VP6650/VP6670
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
 
-[Subscribe to Protectli VP66xx Dasharo Release Newsletter]
+[Subscribe to Protectli Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
 </center>
@@ -20,7 +20,7 @@ Test results for this release can be found
 
 ### Added
 
-- Initial support for Protectli Alder Lake devices VP66xx
+- Initial support for Protectli Alder Lake devices VP66XX
 - [UEFI compatible interface](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface/)
 - [Support for discrete TPM](https://docs.dasharo.com/unified-test-documentation/dasharo-security/200-tpm-support/)
 - [UEFI Secure Boot support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)

@@ -288,11 +288,11 @@ nav:
               - 'Releases': variants/protectli_vp2420/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_vp2420/hardware-matrix.md
               - 'Openness score': variants/protectli_vp2420/openness-score.md
-          - 'Protectli VP46xx':
+          - 'Protectli VP46XX':
               - 'Releases': variants/protectli_vp46xx/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
               - 'Openness score': variants/protectli_vp46xx/openness_score.md
-          - 'Protectli VP66xx':
+          - 'Protectli VP66XX':
               - 'Releases': variants/protectli_vp66xx/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_vp66xx/hardware-matrix.md
               - 'Openness score': variants/protectli_vp66xx/openness_score.md

@@ -1,13 +1,13 @@
-# Release Notes
+# Protectli FW6 Dasharo Release Notes
 
-Following Release Notes describe status of Open Source Firmware development for
-Protectli FW6.
+Following Release Notes describe status of Open Source Firmware development
+for Protectli FW6.
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
-[Subscribe to Protectli FW6 Dasharo Release Newsletter]
+[Subscribe to Protectli Dasharo Release Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 

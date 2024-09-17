@@ -17,8 +17,8 @@ open-source firmware distribution.
     - [Protectli v1000-series](../unified/protectli/overview.md#v1000-series)
     - [Protectli VP2410](../unified/protectli/overview.md#vp2410)
     - [Protectli VP2420](../unified/protectli/overview.md#vp2420)
-    - [Protectli VP46xx](../unified/protectli/overview.md#vp46xx)
-    - [Protectli VP66xx](../unified/protectli/overview.md#vp66xx)
+    - [Protectli VP46XX](../unified/protectli/overview.md#vp46xx)
+    - [Protectli VP66XX](../unified/protectli/overview.md#vp66xx)
 
 * Following network appliances are planned to be supported under Dasharo
   Community Support:
