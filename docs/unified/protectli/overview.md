@@ -81,6 +81,10 @@ Select Model:
         https://github.com/intel/FSP/tree/master/
         CometLakeFspBinPkg#differentiating-cometlake1-and-cometlake2))
 
+    > Starting with Dasharo [v1.0.19](releases.md#v1019-2022-12-08) Intel ME
+    > (Management Engine) is
+    > [soft-disabled](../../osf-trivia-list/me.md#soft-disabling-me).
+
     For more information please refer to the references below.
 
     ## References
@@ -134,7 +138,11 @@ Select Model:
     * Intel® AES-NI support
     * Fanless and Silent
     * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
-    SATA data and power cables for internal SSD, Quick Start Guide
+      SATA data and power cables for internal SSD, Quick Start Guide
+
+    > On VP2410 Intel ME (Management Engine) is not supported by coreboot
+    > causing Intel ME to enter recovery mode giving similar results to
+    > disabled ME.
 
     For more information please refer to the references below.
 
@@ -184,7 +192,12 @@ Select Model:
     * Intel® AES-NI support
     * Fanless and Silent
     * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
-    SATA data and power cables for internal SSD, Quick Start Guide
+      SATA data and power cables for internal SSD, Quick Start Guide
+
+    > Starting with Dasharo [v1.2.0](releases.md#v120-2024-05-16), Intel ME
+    > (Management Engine) is
+    > [soft-disabled](../../osf-trivia-list/me.md#soft-disabling-me) by
+    > default.
 
     For more information please refer to the references below.`
 
@@ -224,6 +237,9 @@ Select Model:
     * VP6630 - Intel® Core™ i3 -1215U
     * VP6650 - Intel® Core™ i5 -1235U
     * VP6670 - Intel® Core™ i7 -1255U
+
+    > On VP66xx Intel ME (Management Engine) is disabled by using the
+    > [HAP bit](../../osf-trivia-list/me.md#hap-altmedisable-bit-aka-disabling-me).
 
     ## Documentation sections
 
