@@ -6,7 +6,7 @@ The following documentation describes the process of recovering hardware from
 the brick state using an [RTE](../../transparent-validation/rte/introduction.md)
 and Dasharo open-source firmware.
 
-=== "v1000-series"
+=== "V1000-series"
 
     ## Prerequisites
 
@@ -85,7 +85,7 @@ and Dasharo open-source firmware.
     The first boot of the platform after proceeding with the above procedure can
     take much longer than standard.
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
 
     ## Connections
 
@@ -114,7 +114,7 @@ and Dasharo open-source firmware.
         flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L12835F/MX25L12845E/MX25L12865E" -w [path_to_binary]
         ```
 
-=== "vp66xx"
+=== "VP6630/VP6650/VP6670"
 
     ## Prerequisites
 
@@ -129,13 +129,13 @@ and Dasharo open-source firmware.
     2. Connect the J1 and J2 flash headers to the [SPI
     header](../../transparent-validation/rte/v1.1.0/specification.md) on RTE.
 
-        | SPI header | VP66xx J2    |
+        | SPI header | VP66XX J2    |
         |:----------:|:------------:|
         | Vcc        | pin 1 (Vcc)  |
         | SCLK       | pin 3 (CLK)  |
         | MOSI       | pin 4 (MOSI) |
 
-        | SPI header | VP66xx J1    |
+        | SPI header | VP66XX J1    |
         |:----------:|:------------:|
         | GND        | pin 4 (GND)  |
         | CS         | pin 1 (CS)   |
@@ -185,7 +185,7 @@ and Dasharo open-source firmware.
     The first boot of the platform after proceeding with the above procedure can
     take much longer than standard.
 
-=== "vp2410"
+=== "VP2410"
 
     ## Connections
 
@@ -220,7 +220,7 @@ and Dasharo open-source firmware.
         flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25U6435E/F" -w [path_to_binary]
         ```
 
-=== "vp2420"
+=== "VP2420"
 
     ## Prerequisites
 

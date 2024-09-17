@@ -21,7 +21,7 @@ Select Model:
         ./test-matrix.md) - validation
         scope for the Protectli FW6
 
-=== "v1000-series"
+=== "V1000-series"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
     The V1000 series feature an Intel Jasper Lake CPU, soldered down LPDDR4X
@@ -62,7 +62,7 @@ Select Model:
         - describes validation scope used during
         Dasharo firmware validation procedure.
 
-=== "vp46xx"
+=== "VP4630/VP4650/VP4670"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
     The VP46XX is the second platform of the Vault Pro series with higher
@@ -101,7 +101,7 @@ Select Model:
     * [Initial deployment](
         ./initial-deployment.md) -
         describes initial Dasharo
-        deployment methods (i. e. flashing new firmware) for Protectli VP46xx.
+        deployment methods (i. e. flashing new firmware) for Protectli VP46XX.
     * [Firmware update](./firmware-update.md) -
         explains supported Dasharo
         open-source firmware update methods.
@@ -118,7 +118,7 @@ Select Model:
         Dasharo firmware validation procedure.
     * [Post-installation setup](./post-install.md)
 
-=== "vp2410"
+=== "VP2410"
     The Vault Pro is a small form network appliance built for use as a firewall
     / router, virtualization platform, a daily-driven personal computer,
     and more. The VP2410 is based on a 4 network port design that leverages
@@ -170,7 +170,7 @@ Select Model:
     * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
 
-=== "vp2420"
+=== "VP2420"
     The Vault Pro is a small form network appliance built for use as a firewall
     / router, virtualization platform, a daily-driven personal computer,
     and more. The VP2420 is based on a 4 x 2.5 G network port design that
@@ -225,7 +225,7 @@ Select Model:
     * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
 
-=== "vp66xx"
+=== "VP6630/VP6650/VP6670"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
     The VP6630/VP6650/VP6670 feature an Intel Alder Lake-P CPU, 2x DDR5 SODIMM
@@ -238,7 +238,7 @@ Select Model:
     * VP6650 - Intel® Core™ i5 -1235U
     * VP6670 - Intel® Core™ i7 -1255U
 
-    > On VP66xx Intel ME (Management Engine) is disabled by using the
+    > On VP66XX Intel ME (Management Engine) is disabled by using the
     > [HAP bit](../../osf-trivia-list/me.md#hap-altmedisable-bit-aka-disabling-me).
 
     ## Documentation sections

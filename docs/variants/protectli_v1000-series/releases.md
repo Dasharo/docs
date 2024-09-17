@@ -1,13 +1,13 @@
-# Release Notes
+# Protectli V1000 series Dasharo Release Notes
 
 Following Release Notes describe status of Open Source Firmware development
-for Protectli V1000 series
+for Protectli V1000 series.
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
-[Subscribe to Protectli V1000 series Dasharo Release Newsletter]
+[Subscribe to Protectli Dasharo Release Newsletter]
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
