@@ -9,17 +9,18 @@ For details about our release process please read
 [Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
-## v0.1.0 - 2024-09-12
+## v0.1.0 - 2024-09-16
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/Dell/OptiPlex_7010_9010/v0.1.0-results.csv).
 
-    This release is compatible with both the Dell OptiPlex 7010 and 9010
-    platforms, as they're essentially identical from a hardware standpoint.
-    However, we have only tested the release on a 7010 unit. We cannot formally
-    guarantee that the same scope of features will be functional on a 9010 unit,
-    therefore we encourage all recipients to test the release personally, if they
-    have a 9010 platform, and report any potential issues.
+!!! note
+
+    This release is compatible with both the **Dell OptiPlex 7010 and 9010**,
+    as they are essentially identical.
+    However, we have only tested it on a 7010 and cannot guarantee full
+    functionality on a 9010. It is recommended to test the release on the 9010
+    and [report any issues](https://github.com/Dasharo/dasharo-issues/issues).
 
 ### Added
 
@@ -55,7 +56,7 @@ subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
-using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell_optiplex_9010/dasharo-release-0.x-compatible-with-dell-optiplex-x010-signing-key.asc)
+using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell_optiplex_9010/dasharo-release-0.x-compatible-with-dell-optiplex-x010-signing-key.asc).
 
 ### SBOM (Software Bill of Materials)
 
