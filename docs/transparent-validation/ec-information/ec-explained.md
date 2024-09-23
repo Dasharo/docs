@@ -1,21 +1,23 @@
-# EC power states in NovaCustom laptops
+# EC power states brief explanation
 
-## Way the EC works right now
+## Power states
 
-### Turning off the computer while charger is plugged in
+This section describes the logic used by the EC to control platform power states
+depending on AC adapter presence.
+
+### Shutdown, with AC connected
 
 The machine switches to system power state S5, using little to no
 power. As a result pressing the power button to turn it on, will result in
 a warmboot. (S0 → S5 → S0)
 
-### Cutting off power feed while in S5
+### AC detach while turned off
 
 EC disables all power planes, and the platform is set to G3 power state.
 Therefore, in that case pressing the power button results in a coldboot.
 (S0 → S5 → G3 → S0)
 
-### Turning the computer off while not plugged in
+### Shutdown, with AC disconnected
 
-The machine actually enters S5 briefly and immediately after, it switches
-to G3 like intended. Like mentioned before, turning the computer from G3
-results in a coldboot. (S0 → S5 → G3 → S0 )
+The machine actually enters S5 and proceeds to G3 soon after. Pressing the
+power button will result a coldboot. (S0 → S5 → G3 → S0 )
