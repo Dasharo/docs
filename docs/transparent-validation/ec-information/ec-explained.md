@@ -1,4 +1,4 @@
-# EC power states- brief explanation
+# NovaCustom EC test documentation
 
 ## Power states
 
