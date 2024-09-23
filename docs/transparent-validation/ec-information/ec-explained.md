@@ -1,4 +1,4 @@
-# EC power states brief explanation
+# EC power states- brief explanation
 
 ## Power states
 
