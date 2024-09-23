@@ -462,6 +462,8 @@ nav:
               - 'Introduction': transparent-validation/twonkie/introduction.md
           - 'EC Debugger':
               - 'I2C to UART relay': transparent-validation/ec-debugger/uart-relay.md
+          - 'EC-Explained':
+              - 'EC- Power Modes': transparent-validation/ec-information/ec-explained.md
     # - 'Secure Storage': ecosystem/secure-storage.md
     # - 'Signing Server': ecosystem/signing-server.md
     # - 'Attestation Server': ecosystem/attestation-server.md
