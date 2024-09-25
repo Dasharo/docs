@@ -48,3 +48,27 @@ you can download them:
 Following these steps, you can access and download your Dasharo Entry
 Subscription binaries without issues. If you encounter any problems, don't
 hesitate to contact the Dasharo support team for further assistance.
+
+## Does the Pro Package keys have any bearing on the hardware or BIOS?
+
+The keys/credentials are used by the Dasharo Tools Suite only (a compact
+Linux distributions developed for the purpose of simplifying Dasharo
+firmware deployment and updates) to:
+
+- determine your subscription type (heads or UEFI flavor of the firmware),
+- determine your subscription validity (whether the subscription is
+valid for the platform you try to install Dasharo on),
+- download the firmware binaries to install or update Dasharo for the
+platform (binaries are not unique, Dasharo Tools Suite downloads the
+same binaries for every subscriber for given platform and subscription
+type),
+- locate HCL report for your specific platform, that was made
+during initial deployment of Dasharo firmware in a scenario where you
+would like to install back the original firmware (HCL reports contains a
+dup of the previous firmware and is used to flash it back on the
+platform). Not all platform support restoring the original firmware,
+i.e. NovaCustom laptops are shipped only with Dasharo firmware and can't
+be flashed with proprietary firmware using this method.
+
+The keys/credentials have no other usages outside Dasharo Tools Suite
+and have no impact on other components of the system.
