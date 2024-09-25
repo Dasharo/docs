@@ -441,7 +441,7 @@ v1.1.1 on MSI PRO Z690-A DDR4.
 **     1) Dasharo HCL report
 **     2) Update Dasharo Firmware
 **     3) Restore firmware from Dasharo HCL report
-**     4) Load your DES keys
+**     4) Load your DPP keys
 *********************************************************
 Select a menu option or
 R to reboot  P to poweroff  S to enter shell
