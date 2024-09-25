@@ -55,14 +55,14 @@ The keys/credentials are used by the Dasharo Tools Suite only (a compact
 Linux distributions developed for the purpose of simplifying Dasharo
 firmware deployment and updates) to:
 
-* determine your subscription type (heads or UEFI flavor of the firmware),
-* determine your subscription validity (whether the subscription is
+- determine your subscription type (heads or UEFI flavor of the firmware),
+- determine your subscription validity (whether the subscription is
 valid for the platform you try to install Dasharo on),
-* download the firmware binaries to install or update Dasharo for the
+- download the firmware binaries to install or update Dasharo for the
 platform (binaries are not unique, Dasharo Tools Suite downloads the
 same binaries for every subscriber for given platform and subscription
 type),
-* locate HCL report for your specific platform, that was made
+- locate HCL report for your specific platform, that was made
 during initial deployment of Dasharo firmware in a scenario where you
 would like to install back the original firmware (HCL reports contains a
 dup of the previous firmware and is used to flash it back on the
