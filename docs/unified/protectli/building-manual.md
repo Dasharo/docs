@@ -13,6 +13,9 @@ devices.
 - Git
     + `sudo apt-get install git`
 
+Alternatively Fedora can be used instead of Ubuntu by following the same steps except:
+[Install Docker Engine on Fedora](https://docs.docker.com/engine/install/fedora/)
+
 ## Building
 
 To build Dasharo firmware image, first clone the coreboot repository:

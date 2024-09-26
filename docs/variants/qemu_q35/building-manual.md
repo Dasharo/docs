@@ -14,6 +14,9 @@ for QEMU Q35.
     - follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
 * Git, wget, unzip installed
 
+Alternatively Fedora can be used instead of Ubuntu by following the same steps except:
+[Install Docker Engine on Fedora](https://docs.docker.com/engine/install/fedora/)
+
 ```bash
 sudo apt install git unzip wget
 ```
