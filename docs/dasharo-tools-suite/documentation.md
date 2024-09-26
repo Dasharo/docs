@@ -285,6 +285,10 @@ firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
 [DES](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
 release and it is only available to Dasharo Entry Subscription subscribers.
+If you have DPP subscription then do steps in
+[How can I use my Dasharo Entry Subscription credentials](
+../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials)
+section first.
 
 Next you will be asked two questions to confirm flashing. The first will be
 displayed with the detected information about the device you are using DTS on.
@@ -397,7 +401,10 @@ DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
 with flashed Dasharo and choose option number `2`. You may see additional
 information about available updates if you are not [Dasharo Entry
 Subscription](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
-subscriber.
+subscriber. If you have DPP subscription then do steps in
+[How can I use my Dasharo Entry Subscription credentials](
+../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials)
+section first.
 
 Next you will be asked two questions to confirm flashing. The first will be
 displayed with the detected information about the device you are using DTS on.
