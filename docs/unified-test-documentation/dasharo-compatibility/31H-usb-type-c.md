@@ -2621,7 +2621,7 @@ station.
    it using the left mouse button to open volume menu.
 1. After the `Which device did you plug in` menu appearing, select what type
     of external device has been connected to the laptop (headset).
-1. In the volume menu, click the rightmost part of it and note the reult.
+1. In the volume menu, click the rightmost part of it and note the result.
 
 **Expected result**
 
@@ -2715,7 +2715,7 @@ Disable (HAP) or Disable (Soft).
    it using the left mouse button to open volume menu.
 1. After the `Which device did you plug in` menu appearing, select what type
     of external device has been connected to the laptop (headset).
-1. In the volume menu, click the rightmost part of it and note the reult.
+1. In the volume menu, click the rightmost part of it and note the result.
 
 **Expected result**
 

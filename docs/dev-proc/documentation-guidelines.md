@@ -133,7 +133,7 @@ We also maintain the repository
 with editors configs used by our community. Feel free to create PR with your
 configuration - you can give your proposition to improve existing settings or
 create configs for editors that don't exist yet in our repository.
-A properly configurated editor simplifies correct formatting.
+A properly configured editor simplifies correct formatting.
 
 ## Diagrams
 

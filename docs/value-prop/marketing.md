@@ -16,7 +16,7 @@ features, which is way easier then designing new hardware.
 
 ### Low quality release notes
 
-TODO: continue moving content from internal presenations
+TODO: continue moving content from internal presentations
 
 -->
 

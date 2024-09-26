@@ -36,7 +36,7 @@ corner of the screen. The colors indicate:
 - Yellow - no writable FS found, screenshot is not taken
 - Blue - current GOP is pitch black, screenshot is not taken
 - Red - something went wrong, screenshot is not taken
-- Green - screnshot taken and saved to PNG file
+- Green - screenshot taken and saved to PNG file
 
 PNG files are saved to the first writable partition, which will in most cases be
 the EFI System Partition. You can mount the ESP in Dasharo Tools Suite, e.g.:

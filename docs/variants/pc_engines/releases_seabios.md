@@ -35,7 +35,7 @@ Test results for this release can be found
 ### Changed
 
 - [Code base was moved to Dasharo Patchqueue Initiative](https://github.com/Dasharo/dasharo-pq?tab=readme-ov-file#background)
-- [Sign of Life date changed to 19700101 due to making Dasharo Patchquque Inititive based build reproducible](https://github.com/Dasharo/dasharo-issues/issues/889)
+- [Sign of Life date changed to 19700101 due to making Dasharo Patchqueue Initiative based build reproducible](https://github.com/Dasharo/dasharo-issues/issues/889)
 - toolchain updates GCC 13.2.0, CMake 3.27.7
 - ACPI 6.4 specification compliance
 - sortbootorder update to v24.05.00.01
