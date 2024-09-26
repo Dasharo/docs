@@ -21,6 +21,7 @@ that it boots on the following platforms:
 * NovaCustom V54x/56x ([test
   report](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit?gid=382389731#gid=382389731))
 * PC Engines apu2/3/4/6.
+* ODROID-H4+
 
 ## Running
 
@@ -305,7 +306,8 @@ This feature is supported on the following platforms:
 * MSI PRO Z790-P DDR4,
 * MSI PRO Z790-P DDR5,
 * NovaCustom NV4x,
-* NovaCustom NS5x/7x.
+* NovaCustom NS5x/7x,
+* ODROID-H4+.
 
 And partially (only EC firmware flashing) on:
 
