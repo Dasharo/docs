@@ -559,12 +559,12 @@ DTS allows performing full Embedded Controller firmware transition from the
 proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
 functionality is supported on:
 
-* [NovaCustom NS5x/NS7x](/variants/novacustom_ns5x_tgl/releases/),
-* [NovaCustom NV4x](/variants/novacustom_nv4x_tgl/releases/),
-* [NovaCustom V540TU](/variants/novacustom_v540tu/releases/),
-* [NovaCustom V540TNx](/variants/novacustom_v540tnx/releases/),
-* [NovaCustom V560TU](/variants/novacustom_v560tu/releases/)
-* [NovaCustom V560TNx](/variants/novacustom_v560tnx/releases/).
+* [NovaCustom NS5x/NS7x](../variants/novacustom_ns5x_tgl/releases.md),
+* [NovaCustom NV4x](../variants/novacustom_nv4x_tgl/releases.md),
+* [NovaCustom V540TU](../variants/novacustom_v540tu/releases.md),
+* [NovaCustom V540TNx](../variants/novacustom_v540tnx/releases.md),
+* [NovaCustom V560TU](../variants/novacustom_v560tu/releases.md)
+* [NovaCustom V560TNx](../variants/novacustom_v560tnx/releases.md).
 
 Starting from DTS v1.2.0 to perform EC transition please run
 [firmware update](#firmware-update) on the platform with proprietary vendor EC
