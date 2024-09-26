@@ -16,7 +16,7 @@ hardware.
 
     CPU Hardware Compatibility List presents the CPUs tested and verified
     to work with Dasharo by community. The following list does not include CPU
-    which is tested and verfied in 3mdeb laboratory - this information might be
+    which is tested and verified in 3mdeb laboratory - this information might be
     found in [MSI PRO Z690-A Hardware Matrix](../../variants/msi_z690/hardware-matrix.md)
     and [MSI PRO Z790-P Hardware Matrix](../../variants/msi_z790/hardware-matrix.md)
     documentation.
@@ -216,7 +216,7 @@ hardware.
 
     GPU Hardware Compatibility List presents the GPUs tested and verified
     to work with Dasharo by community. The following list does not include GPU
-    which is tested and verfied in 3mdeb laboratory - this information might be
+    which is tested and verified in 3mdeb laboratory - this information might be
     found in [MSI PRO Z690-A Hardware Matrix](../../variants/msi_z690/hardware-matrix.md)
     and [MSI PRO Z790-P Hardware Matrix](../../variants/msi_z790/hardware-matrix.md)
     documentation.

@@ -145,7 +145,7 @@ bootblock                      0xffcac0   bootblock       13056 none
 The bootblock is taking slightly more than 12KB of space on the bottom of the
 flash. Converting 12KB to hex would be equal to `0x3000` but we must cover a
 little bit more than that. Let's see what protection ranges are available for
-the chip (running from the tagret machine to be protected):
+the chip (running from the target machine to be protected):
 
 ```bash
 ./flashrom -p internal --wp-list
@@ -234,14 +234,14 @@ Copy the range base and length and invoke:
 
 ### Setting SPI status register protection
 
-Flashrom should report `Sucessfully set the requested protection range.`. Now
+Flashrom should report `Successfully set the requested protection range.`. Now
 set the status register protection so the range protection cannot be changed:
 
 ```shell
 ./flashrom -p internal --wp-enable
 ```
 
-Flashrom should report `Sucessfully set the requested mode.`.
+Flashrom should report `Successfully set the requested mode.`.
 
 ### Verifying SPI write protection
 
@@ -280,7 +280,7 @@ jumper and invoke:
 ./flashrom -p internal --wp-disable
 ```
 
-Now you should get `Sucessfully set the requested mode.` now. Check the WP
+Now you should get `Successfully set the requested mode.` now. Check the WP
 status:
 
 ```shell
