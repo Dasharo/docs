@@ -282,7 +282,7 @@ boot DTS, choose option number `2`. After creating
 firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
-[DPP](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber)
+[DPP](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
 release and it is only available to Dasharo Entry Subscription subscribers.
 
 Next you will be asked two questions to confirm flashing. The first will be
