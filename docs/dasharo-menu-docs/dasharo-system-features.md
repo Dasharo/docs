@@ -168,7 +168,7 @@ Flow chart for the two settings mentioned above:
 
 ![](/images/battery_threshold_flowchart.png){class="center"}
 
-- `Power state when connecting power supply after power failure` - controls
+- `Power state after power/AC loss` - controls
  what power state the platform
   should switch to when the main AC power is restored. Default value is
   platform-dependent.
