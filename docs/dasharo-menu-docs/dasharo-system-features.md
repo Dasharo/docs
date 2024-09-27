@@ -168,11 +168,12 @@ Flow chart for the two settings mentioned above:
 
 ![](/images/battery_threshold_flowchart.png){class="center"}
 
-- `Power state after power failure` - controls what power state the platform
+- `Power state when connecting power supply after power failure` - controls
+ what power state the platform
   should switch to when the main AC power is restored. Default value is
   platform-dependent.
 
-![](/images/menus/pwr_fail_opt.jpeg){ class="center" }
+![](/images/menus/pwr_fail_opt.png){ class="center" }
 
 ## PCI/PCIe Configuration
 
