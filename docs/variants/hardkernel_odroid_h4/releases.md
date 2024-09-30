@@ -13,5 +13,8 @@ For details about our release process please read
 
 </center>
 
+
+Coming soon.
+
 <!-- TODO -->
 [newsletter]: https://newsletter.3mdeb.com/subscription/pULA4K0Eo
