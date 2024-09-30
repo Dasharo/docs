@@ -886,7 +886,7 @@ docking station is correctly recognized by the `OPERATING_SYSTEM`.
 The image should be displayed on the three external displays in `Duplicate` and
 `Extend` modes.
 
-## TMD007.001 USB Type-C docking station Triple display with ME disabled(Ubuntu)
+## UTC007.005 USB Type-C docking station Triple display with ME disabled(Ubuntu)
 
 **Test description**
 
