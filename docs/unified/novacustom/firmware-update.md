@@ -4,6 +4,14 @@ The following documentation describes the process of Dasharo open-source
 firmware update. The update process may be different, depending on which
 firmware version is currently installed on your device.
 
+This process can be performed using the Dasharo Tools Suite available in the
+Dasharo Pro Package (formerly Dasharo Entry Subscription) instead. For
+instructions on how to use the DTS instead check
+
+This process can be performed using the Dasharo Tools Suite included in the Dasharo
+Pro Package subscription (formerly Dasharo Entry Subscription) instead. For
+instructions on how to use the DTS see the [DTS documentation](../../dasharo-tools-suite/documentation.md#firmware-update)
+
 Your firmware version can be checked by entering the
 [Dasharo Setup Menu](/dasharo-menu-docs/overview/#dasharo-menu-guides) using the
 ++f2++ key while booting.
