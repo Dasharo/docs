@@ -58,10 +58,6 @@ should have this feature enabled.
     corresponding menu][me-menu] or switch it to that state before performing
     an update.
 
-!!! warning
-
-    Updating firmware resets firmware settings to their defaults.
-
 1. Copy `CapsuleApp.efi` and `firmware.cap` files to a partition (the shorter
    the path from the root, the easier it will be to find in the UEFI Shell).
 
