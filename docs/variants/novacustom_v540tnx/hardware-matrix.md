@@ -75,8 +75,6 @@ V540TNx platforms.
 |                                | 4. Camera                                        |
 |                                | 5. Audio subsystem                               |
 | **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
-| **Power Supply**               | Chicony 20V, 9A, 180 W                         |
-| **Power Control**              | SonOff S26                                       |
-| **KVM**                        | PiKVM based on Raspberry Pi 4                    |
+| **Power Supply**               | Chicony 20V, 9A, 180 W                           |
 
 [HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#v54-series

@@ -62,8 +62,6 @@ for the NV41 platforms.
 |                                | 5. Audio subsystem                               |
 | **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
-| **Power Control**              | SonOff S26                                       |
-| **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
 ## NV41MB
 
@@ -88,7 +86,5 @@ for the NV41 platforms.
 |                                | 5. Audio subsystem                               |
 | **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
-| **Power Control**              | SonOff S26                                       |
-| **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
 [HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#nv4x-11th-gen

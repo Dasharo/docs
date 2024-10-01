@@ -62,8 +62,6 @@ for the NS51/70 platforms.
 |                                | 5. Audio subsystem                               |
 | **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
-| **Power Control**              | SonOff S26                                       |
-| **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
 ## NS70MU
 
@@ -87,7 +85,5 @@ for the NS51/70 platforms.
 |                                | 5. Audio subsystem                               |
 | **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
 | **Power Supply**               | Chicony 19V, 3.42A, 65 W                         |
-| **Power Control**              | SonOff S26                                       |
-| **KVM**                        | PiKVM based on Raspberry Pi 4                    |
 
 [HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#ns5x7x-11th-gen
