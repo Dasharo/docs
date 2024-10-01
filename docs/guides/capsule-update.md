@@ -119,8 +119,13 @@ Preservation is done as a best effort. However some
 
     Don't reboot or power off the device until the process is completed!
 
-After a successful update, you should have an updated firmware with default
-settings.
+After either a successful or failed update, the machine should reboot
+ automatically. After that if everything succeeded you should have an
+ updated firmware with migrated data from the previous version.
+
+!!! note
+
+      Since the settings were preserved, remember to re-enable Intel Management Engine after the update.
 
 [me-menu]: ../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options
 [bmm]: ../dasharo-menu-docs/overview.md#boot-manager-menu
