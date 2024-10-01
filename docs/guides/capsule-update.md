@@ -41,6 +41,21 @@ should have this feature enabled.
 * _Firmware capsule_<br>
   The firmware update capsule file itself.  Should have `.cap` file extension.
 
+## List of items preserved after performing an update
+
+| Type         | Notes                                  |
+| ---          | ---                                    |
+| SMMSTORE     | holds UEFI Variables                   |
+| ROMHOLE      | only on MSI                            |
+| SMBIOS       | unique data like serial number or UUID |
+| boot logo    | set by the user                        |
+
+Preservation is done as a best effort. However some
+ firmware changes are expected (e.g., current custom
+ logo is too large for the new firmware), thus a
+ failure to move data in some cases won’t necessarily
+ abort an update.
+
 ## How to use UEFI Update Capsules
 
 !!! note
