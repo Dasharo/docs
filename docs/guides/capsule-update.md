@@ -45,7 +45,7 @@ should have this feature enabled.
 
 | Type         | Notes                                      |
 | ---          | ---                                        |
-| SMMSTORE     | holds UEFI Variables                       |
+| SMMSTORE     | holds UEFI Variables such as [settings](../dasharo-menu-docs/dasharo-system-features.md) or [boot order](../dasharo-menu-docs/boot-maintenance-mgr.md)                  |
 | ROMHOLE      | only on MSI                                |
 | SMBIOS       | unique data like serial number or UUID     |
 | boot logo    | [set by the user](logo-customization.md)   |
