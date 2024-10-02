@@ -41,6 +41,21 @@ should have this feature enabled.
 * _Firmware capsule_<br>
   The firmware update capsule file itself.  Should have `.cap` file extension.
 
+## What's preserved by an update
+
+| Type         | Notes                                      |
+| ---          | ---                                        |
+| SMMSTORE     | holds UEFI Variables such as [settings](../dasharo-menu-docs/dasharo-system-features.md) or [boot order](../dasharo-menu-docs/boot-maintenance-mgr.md)                  |
+| ROMHOLE      | only on MSI                                |
+| SMBIOS       | unique data like serial number or UUID     |
+| boot logo    | [set by the user](logo-customization.md)   |
+
+Preservation is done as a best effort. However some
+ firmware changes are expected (e.g., current custom
+ logo can be too large for the new firmware), thus a
+ failure to move data in some cases won’t necessarily
+ abort an update.
+
 ## How to use UEFI Update Capsules
 
 !!! note
@@ -57,10 +72,6 @@ should have this feature enabled.
     Then double-check that Intel ME is in `Disabled (HAP)` state in [the
     corresponding menu][me-menu] or switch it to that state before performing
     an update.
-
-!!! warning
-
-    Updating firmware resets firmware settings to their defaults.
 
 1. Copy `CapsuleApp.efi` and `firmware.cap` files to a partition (the shorter
    the path from the root, the easier it will be to find in the UEFI Shell).
@@ -108,8 +119,13 @@ should have this feature enabled.
 
     Don't reboot or power off the device until the process is completed!
 
-After a successful update, you should have an updated firmware with default
-settings.
+After either a successful or failed update, the machine should reboot
+ automatically. After that, if everything succeeded, you should have an
+ updated firmware with data migrated from the previous version.
+
+!!! note
+
+      Since the settings were preserved, remember to re-enable Intel Management Engine after the update.
 
 [me-menu]: ../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options
 [bmm]: ../dasharo-menu-docs/overview.md#boot-manager-menu
