@@ -168,6 +168,7 @@ nav:
   - 'Intro':
       - 'About Dasharo': index.md
       - 'New? Start here': newcomers.md
+      - 'Security': security.md
   - 'Supported hardware':
       - 'Overview': variants/overview.md
       - 'Version matrix': variants/versions.md
