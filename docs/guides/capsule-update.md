@@ -43,12 +43,12 @@ should have this feature enabled.
 
 ## List of items preserved after performing an update
 
-| Type         | Notes                                  |
-| ---          | ---                                    |
-| SMMSTORE     | holds UEFI Variables                   |
-| ROMHOLE      | only on MSI                            |
-| SMBIOS       | unique data like serial number or UUID |
-| boot logo    | set by the user                        |
+| Type         | Notes                                      |
+| ---          | ---                                        |
+| SMMSTORE     | holds UEFI Variables                       |
+| ROMHOLE      | only on MSI                                |
+| SMBIOS       | unique data like serial number or UUID     |
+| boot logo    | [set by the user](logo-customization.md)   |
 
 Preservation is done as a best effort. However some
  firmware changes are expected (e.g., current custom
