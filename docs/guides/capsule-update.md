@@ -41,7 +41,7 @@ should have this feature enabled.
 * _Firmware capsule_<br>
   The firmware update capsule file itself.  Should have `.cap` file extension.
 
-## List of items preserved after performing an update
+## What's preserved by an update
 
 | Type         | Notes                                      |
 | ---          | ---                                        |
@@ -52,7 +52,7 @@ should have this feature enabled.
 
 Preservation is done as a best effort. However some
  firmware changes are expected (e.g., current custom
- logo is too large for the new firmware), thus a
+ logo can be too large for the new firmware), thus a
  failure to move data in some cases won’t necessarily
  abort an update.
 
@@ -120,8 +120,8 @@ Preservation is done as a best effort. However some
     Don't reboot or power off the device until the process is completed!
 
 After either a successful or failed update, the machine should reboot
- automatically. After that if everything succeeded you should have an
- updated firmware with migrated data from the previous version.
+ automatically. After that, if everything succeeded, you should have an
+ updated firmware with data migrated from the previous version.
 
 !!! note
 
