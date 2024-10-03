@@ -13,8 +13,7 @@ For details about our release process please read
 
 </center>
 
-
-Coming soon.
+Coming soon in the [Dasharo Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/).
 
 <!-- TODO -->
 [newsletter]: https://newsletter.3mdeb.com/subscription/pULA4K0Eo
