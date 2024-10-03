@@ -10,7 +10,7 @@ Dasharo on the Hardkernel ODROID H4.
 | Component                      | Description                                 |
 |--------------------------------|---------------------------------------------|
 | **CPU**                        | Intel(R) Processor N97                      |
-| **RAM**                        | DDR5 SODIMM up to 4800MHz                   |
+| **RAM**                        | Samsung M425R1GB4BB0-CWMOD                  |
 | **SSD**                        | Samsung SSD PRO 900 1TB                     |
 | **Flash memory**               | Winbond W25Q128JV                           |
 | **USB Keyboard**               | DELL KB216                                  |
