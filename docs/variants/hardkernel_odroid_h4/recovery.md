@@ -16,9 +16,9 @@ selected using the flash selector jumper.
 *First bios chip selected using the flash selector*
 
 1. Move the flash selector jumper to select the backup flash chip. If the
-   device does not boot from any of the flash chips, an external recovery
-   needs to be performed. In that case continue with the recovery instructions
-   for the ODROID H4 model.
+   device does not boot from any of the flash chips, an external flashing
+   needs to be performed. In that case continue with the
+   [External flashing](#external-flashing) section.
 2. If the device boots, boot to an OS.
 3. Move the flash selector jumper back to it's original position selecting the
    previous flash chip, from which the device does not boot.
