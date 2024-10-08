@@ -74,58 +74,54 @@ Hardkernel devices.
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
 [BMM]: ../../dasharo-menu-docs/boot-maintenance-mgr.md#boot-maintenance-manager
 
+## Module: Dasharo Security
+
+| No. | Supported test suite                  | Test suite ID | Supported test cases                 |
+|:---:|:--------------------------------------|:-------------:|:-------------------------------------|
+| 1.  | [TPM Support][TPM]                    | TPM           | TPM001.002,TPM002.001,TPM002.002,TPM003.001,TPM003.002,TPM003.004, |
+| 2.  | [Verified Boot Integration][VBO]      | VBO           | All                                  |
+| 3.  | [BIOS lock support][BLS]              | BLS           | All                                  |
+| 4.  | [Measured boot integration][MBO]      | MBO           | All                                  |
+| 5.  | [UEFI Secure Boot integration][SBO]   | SBO           | All                                  |
+| 6.  | [UEFI Setup password][PSW]            | PSW           | All                                  |
+| 7.  | [Early Boot DMA Protection][EDP]      | EDP           | All                                  |
+| 8.  | [USB stack enable/disable][USS]       | USS           | All                                  |
+| 9.  | [Network stack enable/disable][NBA]   | NBA           | All                                  |
+| 10. | [SMM BIOS write protection][SMM]      | SMM           | All                                  |
+| 11. | [TPM2 Commands][TPMCMD]               | TPMCMD        | All                                  |
+
+[TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
+[VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
+[BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+[MBO]: ../../unified-test-documentation/dasharo-security/203-measured-boot.md
+[SBO]: ../../unified-test-documentation/dasharo-security/206-secure-boot.md
+[PSW]: ../../unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
+[EDP]: ../../unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
+[USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
+[NBA]: ../../unified-test-documentation/dasharo-security/20T-network-boot.md
+[SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
+[TPMCMD]: ../../unified-test-documentation/dasharo-security/200-tpm2-commands.md
+
 <!--
-    Test cases copied from spreadsheet using a script, may be a good reference
-    but need refactoring, adding links and manual check
+## Module: Dasharo Stability
+
+| No. | Supported test suite                  | Test suite ID | Supported test cases                 |
+|:---:|:--------------------------------------|:-------------:|:-------------------------------------|
+| 1. | [TPM Support][TPD] | TPD | TPD003.001,TPD004.001,TPD003.001,TPD004.001, |
+| 2. | [USB support][] |  | SUD0001.001,SUD0002.001,SUD0003.001,SUD0004.001, |
+
+## Module: Dasharo Performance
+
+| No. | Supported test suite                  | Test suite ID | Supported test cases                 |
+|:---:|:--------------------------------------|:-------------:|:-------------------------------------|
+| 1. | [Serial Boot Measure][CBMEM] | CBMEM | CBMEM001.001,CBMEM002.001,CBMEM003.001, |
+| 2. | [CPU][CPT] | CPT | CPT001.001,CPT002.001, |
+| 3. | [CPU][CPF] | CPF | CPF001.001,CPF002.001,CPF004.001, |
+| 4. | [Platform stability][STB] | STB | STB001.001,STB001.002,STB002.001, |
+| 5. | [Ubuntu booting performance test][BUB] | BUB | BUB001.001,BUB002.001,BUB003.001, |
 -->
-<!--
-    ## Module: Dasharo Security
-
-    | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
-    |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-    | 1.  | [TPM Support][TPM]                    | TPM           | TPM001.002,TPM002.001,TPM002.002,TPM003.001,TPM003.002,TPM003.004, |
-    | 2.  | [Verified Boot Integration][VBO]      | VBO           | All                                  |
-    | 3.  | [BIOS lock support][BLS]              | BLS           | BLS001.001,BLS002.001,               |
-    | 4.  | [Measured boot integration][MBO] | MBO | MBO001.001, |
-    | 5.  | [UEFI Secure Boot integration][SBO] | SBO | SBO001.001,SBO002.001,SBO003.001,SBO004.001,SBO005.001,SBO006.001,SBO007.001,SBO008.001, |
-    | 6.  | [UEFI Setup password][PSW] | PSW | PSW001.001,PSW002.001,PSW003.001,PSW004.001,PSW005.001,PSW006.001,PSW007.001,PSW008.001, |
-    | 7.  | [Early Boot DMA Protection][EDP] | EDP | EDP001.001,EDP002.001, |
-    | 8.  | [USB stack enable/disable][USS] | USS | USS001.001,USS002.001,USS003.001,USS004.001, |
-    | 9.  | [Network stack enable/disable][NBA] | NBA | NBA001.001,NBA002.001, |
-    | 10. | [SMM BIOS write protection][SMM] | SMM | SMM001.001,SMM002.001, |
-    | 11. | [TPM2 Commands][TPMCMD] | TPMCMD | TPMCMD001.001,TPMCMD002.001,TPMCMD003.001,TPMCMD003.002,TPMCMD004.001,TPMCMD005.001,TPMCMD006.001,TPMCMD007.001,TPMCMD007.002,TPMCMD008.001,TPMCMD009.001,TPMCMD010.001,TPMCMD011.001, |
-
-    ## Module: Dasharo Stability
-
-    | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
-    |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-    | 1. | [TPM Support][TPD] | TPD | TPD003.001,TPD004.001,TPD003.001,TPD004.001, |
-    | 2. | [USB support][] |  | SUD0001.001,SUD0002.001,SUD0003.001,SUD0004.001, |
-
-    ## Module: Dasharo Performance
-
-    | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
-    |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-    | 1. | [Serial Boot Measure][CBMEM] | CBMEM | CBMEM001.001,CBMEM002.001,CBMEM003.001, |
-    | 2. | [CPU][CPT] | CPT | CPT001.001,CPT002.001, |
-    | 3. | [CPU][CPF] | CPF | CPF001.001,CPF002.001,CPF004.001, |
-    | 4. | [Platform stability][STB] | STB | STB001.001,STB001.002,STB002.001, |
-    | 5. | [Ubuntu booting performance test][BUB] | BUB | BUB001.001,BUB002.001,BUB003.001, |
--->
-
 <!-- turbot test matrix, reference -->
 <!--
-    ## Module: Dasharo security
-
-    | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
-    |:----|:--------------------------------------|:-------------:|:-------------------------------------|
-    | 1.  | [Secure Boot support][SBO]            | SBO           | All                                  |
-    | 2.  | [BIOS lock support][BLS]              | BLS           | All                                  |
-    | 3.  | [SMM BIOS write protection][SMM]      | SMM           | All                                  |
-    | 4.  | [UEFI Setup password][PSW]            | PSW           | All                                  |
-    | 5.  | [Network stack enable/disable][NBA]   | NBA           | All                                  |
-    | 6.  | [USB stack enable/disable][USS]       | USS           | All                                  |
-
     ## Module: Dasharo performance
 
     | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
