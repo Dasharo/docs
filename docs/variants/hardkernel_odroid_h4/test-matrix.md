@@ -113,32 +113,19 @@ Hardkernel devices.
 <!--[TPD]: .-->
 [SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
 [SNV]: ../../unified-test-documentation/dasharo-stability/C03-nvme-detection.md
-<!--
+
 ## Module: Dasharo Performance
 
 | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1. | [Serial Boot Measure][CBMEM] | CBMEM | CBMEM001.001,CBMEM002.001,CBMEM003.001, |
-| 2. | [CPU][CPT] | CPT | CPT001.001,CPT002.001, |
-| 3. | [CPU][CPF] | CPF | CPF001.001,CPF002.001,CPF004.001, |
-| 4. | [Platform stability][STB] | STB | STB001.001,STB001.002,STB002.001, |
-| 5. | [Ubuntu booting performance test][BUB] | BUB | BUB001.001,BUB002.001,BUB003.001, |
--->
-<!-- turbot test matrix, reference -->
-<!--
-    ## Module: Dasharo performance
+| 1. | [Serial Boot Measure][CBMEM] | CBMEM | All |
+| 2. | [CPU][CPT] | CPT | CPT001.001,CPT002.001 |
+| 3. | [CPU][CPF] | CPF | CPF001.001,CPF002.001,CPF004.001 |
+| 4. | [Platform stability][STB] | STB | STB001.001,STB001.002,STB002.001 |
+| 5. | [Ubuntu booting performance test][BUB] | BUB | All |
 
-    | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
-    |:----|:--------------------------------------|:-------------:|:-------------------------------------|
-    | 1.  | [coreboot bring up time measurement][CBMEM] | CBMEM         | All                            |
-    | 2.  | [CPU temperature measure][CPT]        | CPT           | All                                  |
-    | 3.  | [CPU frequency measure][CPF]          | CPF           | Without CPU003.XXX and CPU005.XXX    |
-    | 4.  | [Platform stability][STB]             | STB           | All                                  |
-
-    [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
-    [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
-    [CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
-    [STB]: ../../unified-test-documentation/dasharo-performance/404-platform-stability.md
-    [BUB]: ../../unified-test-documentation/dasharo-performance/407-ubuntu-booting-performance-test.md
-    [BDE]: ../../unified-test-documentation/dasharo-performance/408-debian-booting-performance-test.md
--->
+[CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+[CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
+[CPF]: ../../unified-test-documentation/dasharo-performance/402-cpu-frequency.md
+[STB]: ../../unified-test-documentation/dasharo-performance/404-platform-stability.md
+[BUB]: ../../unified-test-documentation/dasharo-performance/407-ubuntu-booting-performance-test.md
