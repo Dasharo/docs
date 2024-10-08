@@ -40,6 +40,8 @@ This section describes how to do it.
   successful, the message `A Dasharo Firmware binary has been found for
   your platform!` will be displayed.
 
+  In case of wrong credentials DTS will print an error.
+
 Below is a short video that present loading DPP keys.
 
 ![IMG](img/dpp-creds.gif)
