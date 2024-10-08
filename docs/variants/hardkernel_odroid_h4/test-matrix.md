@@ -23,21 +23,21 @@ Hardkernel devices.
 | 11. | [Audio subsystem][AUD]                | AUD           | AUD007.001, AUD008.001               |
 | 12. | [Sleep mode][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001, SUSP005.001|
 | 13. | [SMBIOS verification][DMI]            | DMI           | All                                  |
-| 14. | [eMMC support][MMC]                  | MMC           | All                                  |
-| 15. | <!--[SATA support][SATA]--> Sata support           |               | All                                  |
+| 14. | [eMMC support][MMC]                   | MMC           | All                                  |
+| 15. | <!--[SATA support][SATA]--> Sata support| SATA        | All                                  |
 | 16. | [Sign of life][SOL]                   | SOL           | All                                  |
 | 17. | [Persistent Boot Splash][LCM]         | LCM           | All                                  |
 | 18. | [Debian Stable and Ubuntu LTS support][LBT] | LBT     | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-| 19. | [Power state after power fail][PSF]    | PSF           | All                                  |
+| 19. | [Power state after power fail][PSF]   | PSF           | All                                  |
 | 20. | [Dasharo Tools Suite][DTS]            | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 21. | [Reset to defaults][RTD]              | RTD           | RTD001.001, RTD002.001, RTD003.001, RTD004.001, RTD006.001 |
 | 22. | [Ethernet interface][NET]             | NET           | All                                  |
 | 23. | [Dasharo Configuration Utility][NET]  | DCU           | DCU001.001, DCU002.001, DCU003.001   |
 | 24. | [ESP scanning][ESP]                   | ESP           | All                                  |
-| 25. | [Network Boot Utilities][NBT]          | NBT           | All                                  |
+| 25. | [Network Boot Utilities][NBT]         | NBT           | All                                  |
 | 26. | [USB detection][UDT]                  | UDT           | All                                  |
 | 27. | [USB booting][UBT]                    | UBT           | All                                  |
-| 28. | <!--[Setup Menu information][SET]-->  Setup Menu information        | SET           | All                                  |
+| 28. | <!--[Setup Menu information][SET]-->  Setup Menu information | SET | All                     |
 | 29. | [Ubuntu booting performance test][BUB]| BUB           | All                                  |
 | 30. | [CPU status][CPU]                     | CPU           | CPU001.001, CPU002.001, CPU003.001, CPU004.001|
 | 31. | [Auto boot time-out][BMM]             | BMM           | All                                  |
@@ -106,9 +106,9 @@ Hardkernel devices.
 
 | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1. | <!--[TPM Support][TPD]-->TPM Support | TPD | TPD003.001,TPD004.001 |
-| 2. | [USB Devices Detection][SUD] | SUD | All |
-| 3. | [NVMe detection][SNV] | SNV | All |
+| 1. | <!--[TPM Support][TPD]-->TPM Support   | TPD           | TPD003.001,TPD004.001                |
+| 2. | [USB Devices Detection][SUD]           | SUD           | All                                  |
+| 3. | [NVMe detection][SNV]                  | SNV           | All                                  |
 
 <!--[TPD]: .-->
 [SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
@@ -118,11 +118,11 @@ Hardkernel devices.
 
 | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1. | [Serial Boot Measure][CBMEM] | CBMEM | All |
-| 2. | [CPU][CPT] | CPT | CPT001.001,CPT002.001 |
-| 3. | [CPU][CPF] | CPF | CPF001.001,CPF002.001,CPF004.001 |
-| 4. | [Platform stability][STB] | STB | STB001.001,STB001.002,STB002.001 |
-| 5. | [Ubuntu booting performance test][BUB] | BUB | All |
+| 1. | [Serial Boot Measure][CBMEM]           | CBMEM         | All                                  |
+| 2. | [CPU][CPT]                             | CPT           | CPT001.001,CPT002.001                |
+| 3. | [CPU][CPF]                             | CPF           | CPF001.001,CPF002.001,CPF004.001     |
+| 4. | [Platform stability][STB]              | STB           | STB001.001,STB001.002,STB002.001     |
+| 5. | [Ubuntu booting performance test][BUB] | BUB           | All                                  |
 
 [CBMEM]: ../../unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
 [CPT]: ../../unified-test-documentation/dasharo-performance/401-cpu-temperature.md
