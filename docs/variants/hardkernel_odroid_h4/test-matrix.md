@@ -102,14 +102,18 @@ Hardkernel devices.
 [SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
 [TPMCMD]: ../../unified-test-documentation/dasharo-security/200-tpm2-commands.md
 
-<!--
 ## Module: Dasharo Stability
 
 | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1. | [TPM Support][TPD] | TPD | TPD003.001,TPD004.001,TPD003.001,TPD004.001, |
-| 2. | [USB support][] |  | SUD0001.001,SUD0002.001,SUD0003.001,SUD0004.001, |
+| 1. | <!--[TPM Support][TPD]-->TPM Support | TPD | TPD003.001,TPD004.001 |
+| 2. | [USB Devices Detection][SUD] | SUD | All |
+| 3. | [NVMe detection][SNV] | SNV | All |
 
+<!--[TPD]: .-->
+[SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
+[SNV]: ../../unified-test-documentation/dasharo-stability/C03-nvme-detection.md
+<!--
 ## Module: Dasharo Performance
 
 | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
