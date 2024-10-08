@@ -37,8 +37,8 @@ This section describes how to do it.
     - `password`.
 
 * Credentials will be verified by DTS attempting to connect to our server. If
-  successful, the message `Verification of the Dasharo DES was successful. They
-  are valid and will be used.` will be displayed.
+  successful, the message `A Dasharo Firmware binary has been found for
+  your platform!` will be displayed.
 
 Below is a short video that present loading DPP keys.
 
