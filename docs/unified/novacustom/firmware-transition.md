@@ -27,7 +27,7 @@ firmware installation:
     [Dasharo menu documentation](https://docs.dasharo.com/dasharo-menu-docs/).
 
 - [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
-- Enter your DES subscription credentials
+- Enter your DPP subscription credentials
 - Select `Update Dasharo firmware` to check for updates
 - When asked to switch to Heads firmware, press `Y`
 - Proceed with [DTS firmware update](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)

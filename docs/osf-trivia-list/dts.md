@@ -8,20 +8,20 @@ debugging and development support.
 
 Also refer to [DTS Overview](../dasharo-tools-suite/overview.md).
 
-## How to get Dasharo Entry Subscription Releases using Dasharo Tools Suite?
+## How to get Dasharo Pro Package Releases using Dasharo Tools Suite?
 
-Dasharo Entry Subscription Releases can be used to perform firmware updates
-with DTS by providing Dasharo Entry Subscription credentials obtained after
-buying a [Dasharo Entry Subscription](../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+Dasharo Pro Package Releases can be used to perform firmware updates
+with DTS by providing Dasharo Pro Package credentials obtained after
+buying a [Dasharo Pro Package](../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
 
 Commercial use of DTS should be discussed directly with
 [3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com).
 
-### How can I use my Dasharo Entry Subscription credentials
+### How can I use my Dasharo Pro Package credentials
 
 <!-- Need to be replaced in case the menu changed. -->
 
-After purchasing the Dasharo Entry Subscription, you should receive an email
+After purchasing the Dasharo Pro Package, you should receive an email
 with keys to use with [Dasharo Tools Suite](../dasharo-tools-suite/overview.md).
 This section describes how to do it.
 
@@ -37,12 +37,10 @@ This section describes how to do it.
     - `password`.
 
 * Credentials will be verified by DTS attempting to connect to our server. If
-  successful, the message `A Dasharo Firmware binary has been found for
-  your platform!` will be displayed.
+  successful, the message `Verification of the Dasharo DPP was successful. They
+  are valid and will be used.` will be displayed.
 
-  In case of wrong credentials DTS will print an error.
-
-Below is a short video that present loading DPP keys.
+Below is a short video that presents loading of the DPP keys.
 
 ![IMG](img/dpp-creds.gif)
 

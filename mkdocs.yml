@@ -427,7 +427,7 @@ nav:
   - 'FAQ':
       - 'Introduction': osf-trivia-list/introduction.md
       - 'Dasharo': osf-trivia-list/dasharo.md
-      - 'Dasharo Entry Subscription': osf-trivia-list/dasharo-entry-subscription.md
+      - 'Dasharo Pro Package': osf-trivia-list/dasharo-entry-subscription.md
       - 'Dasharo Tools Suite': osf-trivia-list/dts.md
       - 'Deployment': osf-trivia-list/deployment.md
       - 'Firmware build process': osf-trolling-list/build_process.md

@@ -72,11 +72,11 @@ Test results for this platform can be found
 [sha256.sig][pcengines_apu6_v0.9.0_dev_signed.rom_sig]{.md-button}
 (pcengines_apu6_v0.9.0_dev_signed.rom)
 
-This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Entry Subscription subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
 You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Entry Subscription newsletter.
+subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)

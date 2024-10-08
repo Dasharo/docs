@@ -26,7 +26,7 @@ and maintain a high quality, and modular firmware, for the stability and
 security of your platform.
 
 For individuals Dasharo provides optional features in subscription model called
-[Dasharo Entry Subscription](../dev-proc/versioning.md#dasharo-entry-subscription-releases).
+[Dasharo Pro Package](../dev-proc/versioning.md#dasharo-entry-subscription-releases).
 
 ## Why 3mdeb created Dasharo?
 
