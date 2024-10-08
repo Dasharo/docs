@@ -17,7 +17,7 @@ Heads subscription credentials to transition to Heads.
 Use [FlashBIOS](../../unified/msi/recovery.md#using-msi-flashbios-button)
 method (recommended) or flash with flashrom in OS. To use FlashBIOS we
 recommend to switch back to MSI UEFI firmware (if you don't have the desktop
-Dasharo Entry Subscription or not running Dasharo v1.1.3) and then use
+Dasharo Pro Package or not running Dasharo v1.1.3) and then use
 FlashBIOS with heads binary.
 
 To transition to heads firmware with flashrom, whole binary has to be flashed:

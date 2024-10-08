@@ -41,7 +41,7 @@ Test results for this release can be found
 
 ### Changed
 
-- [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
 - [Updated microcode to the newer version; refer to SBOM section below](https://github.com/coreboot/intel-microcode/commit/6788bb07eb5f9e9b83c31ea1364150fe898f450a)
 - [Updated ME to the newer version; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7e06)
 - [Updated Flash Descriptor to unlock regions; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7e06)
@@ -103,11 +103,11 @@ Test results for this release can be found
 [sha256.sig][msi_ms7e06_v0.9.1_ddr5_dev_signed.rom_sig]{.md-button}
 (msi_ms7e06_v0.9.1_ddr5_dev_signed)
 
-This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Entry Subscription subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
 You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Entry Subscription newsletter.
+subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
@@ -142,7 +142,7 @@ Test results for this release can be found
 
 ### Changed
 
-- [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
 - [Updated microcode to newer version, refer to SBOM](https://github.com/coreboot/intel-microcode/commit/390edfb411ba7de8559ad40597c7acb6c6a1ea96)
 - [Updated ME to newer version, refer to SBOM](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7e06)
 
@@ -160,11 +160,11 @@ Test results for this release can be found
 
 ### Binaries
 
-This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Entry Subscription subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
 You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Entry Subscription newsletter.
+subscription via Dasharo Pro Package newsletter.
 
 ### SBOM (Software Bill of Materials)
 

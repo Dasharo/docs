@@ -136,7 +136,7 @@ The list of all supported memory modules is available in the
 
 The Dasharo Subscription includes:
 
-* The latest Dasharo Entry Subscription release installed by the Dasharo Team
+* The latest Dasharo Pro Package release installed by the Dasharo Team
 * Dasharo Updates – The number of updates depends on the number of Dasharo
   Subscriptions sold and the availability of other funding (e.g., NLNet,
   corporate sponsors, [community
