@@ -34,9 +34,9 @@ seamlessly.
 - Ensure [Firmware Write Protection](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bios-wp-option)
   is disabled in sortbootorder
 - [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
-- Enter your DES subscription credentials
+- Enter your DPP subscription credentials
 - Select `Install Dasharo firmware` to check for updates
-- When asked to select your firmware branch, select DES
+- When asked to select your firmware branch, select DPP
 
 When the deployment is finished, your device will reboot into Dasharo
 automatically.

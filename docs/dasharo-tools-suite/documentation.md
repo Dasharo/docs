@@ -278,10 +278,10 @@ boot DTS, choose option number `2`. After creating
 firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
-[DES](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
-release and it is only available to Dasharo Entry Subscription subscribers.
+[DPP](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+release and it is only available to Dasharo Pro Package subscribers.
 If you have DPP subscription then do steps in
-[How can I use my Dasharo Entry Subscription credentials](
+[How can I use my Dasharo Pro Package credentials](
 ../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials)
 section first.
 
@@ -395,10 +395,9 @@ Please consider the following options depending on your situation:
 
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
 with flashed Dasharo and choose option number `2`. You may see additional
-information about available updates if you are not [Dasharo Entry
-Subscription](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+information about available updates if you are not [Dasharo Pro Package](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
 subscriber. If you have DPP subscription then do steps in
-[How can I use my Dasharo Entry Subscription credentials](
+[How can I use my Dasharo Pro Package credentials](
 ../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials)
 section first.
 
@@ -446,7 +445,7 @@ v1.1.1 on MSI PRO Z690-A DDR4.
 **     1) Dasharo HCL report
 **     2) Update Dasharo Firmware
 **     3) Restore firmware from Dasharo HCL report
-**     4) Load your DES keys
+**     4) Load your DPP keys
 *********************************************************
 Select a menu option or
 R to reboot  P to poweroff  S to enter shell

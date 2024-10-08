@@ -1,8 +1,8 @@
-# Frequenty Asked Questions about Dasharo Entry Subscription
+# Frequently Asked Questions about Dasharo Pro Package
 
-## How can I download the Dasharo Entry Subscription binaries?
+## How can I download the Dasharo Pro Package binaries?
 
-If you've purchased the Dasharo Entry Subscription, you should have received an
+If you've purchased the Dasharo Pro Package, you should have received an
 email containing all the necessary details to access your binaries. Here's how
 you can download them:
 
@@ -45,8 +45,8 @@ you can download them:
 - If you have not received your email or cannot find it, check your spam folder
   or contact Dasharo support for assistance.
 
-Following these steps, you can access and download your Dasharo Entry
-Subscription binaries without issues. If you encounter any problems, don't
+Following these steps, you can access and download your Dasharo Pro Package
+binaries without issues. If you encounter any problems, don't
 hesitate to contact the Dasharo support team for further assistance.
 
 ## Does the Pro Package keys have any bearing on the hardware or BIOS?
