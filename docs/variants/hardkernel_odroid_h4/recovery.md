@@ -29,6 +29,14 @@ selected using the flash selector jumper.
     flashrom -p internal -w [path_to_binary]
     ```
 
+5. After the flashing finishes reboot the device. If the platform does not boot
+a CMOS reset and boot from G3 state may be needed:
+
+    1. Unplug the CMOS battery and the power supply
+    2. Wait for 10 seconds
+    3. Plug the CMOS battery and power supply back in
+    4. Press the power button
+
 ## External flashing
 
 === "RTE"
