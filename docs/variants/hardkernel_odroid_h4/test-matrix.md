@@ -24,7 +24,7 @@ Hardkernel devices.
 | 12. | [Sleep mode][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001, SUSP005.001|
 | 13. | [SMBIOS verification][DMI]            | DMI           | All                                  |
 | 14. | [eMMC support][MMC]                  | MMC           | All                                  |
-| 15. | [SATA support][SATA]                  |               | All                                  |
+| 15. | <!--[SATA support][SATA]--> Sata support           |               | All                                  |
 | 16. | [Sign of life][SOL]                   | SOL           | All                                  |
 | 17. | [Persistent Boot Splash][LCM]         | LCM           | All                                  |
 | 18. | [Debian Stable and Ubuntu LTS support][LBT] | LBT     | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
@@ -37,42 +37,42 @@ Hardkernel devices.
 | 25. | [Network Boot Utilities][NBT]          | NBT           | All                                  |
 | 26. | [USB detection][UDT]                  | UDT           | All                                  |
 | 27. | [USB booting][UBT]                    | UBT           | All                                  |
-| 28. | [Setup Menu information][SET]         | SET           | All                                  |
+| 28. | <!--[Setup Menu information][SET]-->  Setup Menu information        | SET           | All                                  |
 | 29. | [Ubuntu booting performance test][BUB]| BUB           | All                                  |
 | 30. | [CPU status][CPU]                     | CPU           | CPU001.001, CPU002.001, CPU003.001, CPU004.001|
 | 31. | [Auto boot time-out][BMM]             | BMM           | All                                  |
 
-[CBO]: .
+[CBO]: ../../unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
 [CLG]: ../../unified-test-documentation/dasharo-compatibility/304-custom-logo.md
 [USB]: ../../unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
 [CNB]: ../../unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
-[NVM]: .
+[NVM]: ../../unified-test-documentation/dasharo-compatibility/312-nvme-support.md
 [PXE]: ../../unified-test-documentation/dasharo-compatibility/315-network-boot.md
 [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
 [AUD]: ../../unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
-[SUSP]: .
+[SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
 [DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md
-[MMC]: .
-[SATA]: .
-[SOL]: .
-[LCM]: .
+[MMC]: ../../unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
+<!--[SATA]: .-->
+[SOL]: ../../unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
+[LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 [LBT]: ../../unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
-[PSF]: .
+[PSF]: ../../unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
 [DTS]: ../../unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
-[RTD]: .
-[NET]: .
-[DCU]: .
-[ESP]: .
+[RTD]: ../../dasharo-menu-docs/overview.md#f9-reset-to-defaults
+[NET]: ../../unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+[DCU]: ../../unified-test-documentation/dasharo-compatibility/362-dcu.md
+[ESP]: ../../unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
 [NBT]: ../../unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
 [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
 [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
-[SET]: .
-[BUB]: .
+<!--[SET]:-->
+[BUB]: ../../unified-test-documentation/dasharo-performance/407-ubuntu-booting-performance-test.md
 [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
-[BMM]: .
+[BMM]: ../../dasharo-menu-docs/boot-maintenance-mgr.md#boot-maintenance-manager
 
 <!--
     Test cases copied from spreadsheet using a script, may be a good reference
