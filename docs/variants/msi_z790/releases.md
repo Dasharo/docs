@@ -1,7 +1,7 @@
-# MSI PRO Z790-P (WIFI) (DDR4) Dasharo Release Notes
+# MSI PRO Z790-P (WIFI) (DDR5) Dasharo Release Notes
 
 Following Release Notes describe status of open-source firmware development for
-MSI PRO Z790-P (WIFI) (DDR4)
+MSI PRO Z790-P (WIFI) (DDR5)
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
@@ -13,7 +13,7 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 
 <center>
 
-[Subscribe to MSI PRO Z790-P (WIFI) (DDR4) Dasharo Release Newsletter]
+[Subscribe to MSI PRO Z790-P (WIFI) (DDR5) Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
 </center>
