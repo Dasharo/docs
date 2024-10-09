@@ -577,6 +577,7 @@ nav:
           - 'Dasharo stability':
               - 'USB Type-A devices detection': unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
               - 'M.2 Wi-fi': unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
+              - 'Capsule Update': unified-test-documentation/dasharo-stability/capsule-update.md
               - 'NVMe detection': unified-test-documentation/dasharo-stability/C03-nvme-detection.md
               - 'Power management': unified-test-documentation/dasharo-stability/C04-power-management.md
               - 'NET interface check after coldboot/warmboot/reboot/suspend': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
