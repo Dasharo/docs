@@ -20,6 +20,10 @@
 This test aims to verify that the Device Under Test (DUT) rejects flashing a
 capsule that is signed with an invalid certificate.
 
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
+
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
@@ -32,51 +36,20 @@ capsule that is signed with an invalid certificate.
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into UEFI Shell.
-1. Obtain the current BIOS version by executing the following command:
-
-    ```bash
-    CapsuleApp.efi -V
-    ```
-
-    Save the BIOS version as `${original_bios_version}`.
-1. Perform a capsule update using an invalid certificate file by executing:
-
-    ```bash
-    CapsuleApp.efi -U wrong_cert.cap
-    ```
-
+1. Obtain and save the current BIOS version as `${original_bios_version}`.
+1. Perform a capsule update using an invalid certificate file
 1. Reboot the system and select the UEFI Shell boot option.
-1. After the system boots, verify the BIOS version by running the following
-   command:
-
-    ```bash
-    CapsuleApp.efi -V
-    ```
-
-    Save the BIOS version as `${updated_bios_version}`.
+1. After the system boots, verify the BIOS version and save it as
+   `${updated_bios_version}`.
 1. Check that the BIOS version has not changed by verifying that
    `${original_bios_version}` is equal to `${updated_bios_version}`.
-1. Enter the Capsule Testing folder and execute the following command to check
-   the status:
-
-    ```bash
-    CapsuleApp.efi -S
-    ```
-
-1. Verify that the output contains the following:
-
-    ```bash
-    Capsule Status: Security Violation
-    ```
+1. Verify that there is a status note about a security violation.
 
 **Expected result**
 
 1. The BIOS version should not change after attempting the capsule update.
-1. The output of the command `CapsuleApp.efi -S` should contain `Capsule
-   Status: Security Violation`, indicating that the update was rejected due to
-   the invalid certificate.
+1. The status should contain a note indicating that the update was rejected due
+   to the invalid certificate.
 
 ---
 
@@ -87,6 +60,10 @@ capsule that is signed with an invalid certificate.
 This test aims to verify that the Device Under Test (DUT) rejects flashing a
 capsule with an invalid GUID.
 
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
+
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
@@ -99,50 +76,20 @@ capsule with an invalid GUID.
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into UEFI Shell.
-1. Obtain the current BIOS version by executing the following command:
-
-    ```bash
-    CapsuleApp.efi -V
-    ```
-
-    Save the BIOS version as `${original_bios_version}`.
-1. Perform a capsule update using an invalid GUID file by executing:
-
-    ```bash
-    CapsuleApp.efi -U invalid_guid.cap
-    ```
-
+1. Obtain and save the BIOS version as `${original_bios_version}`.
+1. Perform a capsule update using an invalid GUID file.
 1. Reboot the system and select the UEFI Shell boot option.
-1. After the system boots, verify the BIOS version by running the following
-   command:
-
-    ```bash
-    CapsuleApp.efi -V
-    ```
-
-    Save the BIOS version as `${updated_bios_version}`.
+1. After the system boots, verify and save the BIOS version as
+   `${updated_bios_version}`.
 1. Check that the BIOS version has not changed by verifying that
    `${original_bios_version}` is equal to `${updated_bios_version}`.
-1. Enter the Capsule Testing folder and execute the following command to check
-   the status:
-
-    ```bash
-    CapsuleApp.efi -S
-    ```
-
-1. Verify that the output contains the following:
-
-    ```bash
-    Capsule Status: Not Ready
-    ```
+1. Verify that the status contains a `Not Ready` indication.
 
 **Expected result**
 
 1. The BIOS version should not change after attempting the capsule update.
-1. The output of the command `CapsuleApp.efi -S` should contain `Capsule Status:
-   Not Ready`, indicating that the update was rejected due to the invalid GUID.
+1. The status should contain a note indicating that the update was rejected due
+   to the invalid GUID.
 
 ---
 
@@ -151,6 +98,10 @@ capsule with an invalid GUID.
 **Test description**
 
 This test aims to verify that BIOS settings persist after a Capsule Update.
+
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
 
 **Test configuration data**
 
@@ -171,11 +122,7 @@ This test aims to verify that BIOS settings persist after a Capsule Update.
 1. Enable the "Network Boot" option.
 1. Save the settings and reboot the system.
 1. Boot into UEFI Shell.
-1. Perform a capsule update using the following command:
-
-    ```bash
-    CapsuleApp.efi -U max_fw_ver.cap
-    ```
+1. Perform a capsule update using a valid capsule.
 
 **Expected result**
 
@@ -191,6 +138,10 @@ This test aims to verify that BIOS settings persist after a Capsule Update.
 This test verifies a successful capsule update and ensures the correct user
 experience (UX) during the update.
 
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
+
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
@@ -204,46 +155,19 @@ experience (UX) during the update.
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into UEFI Shell.
-1. Obtain the current BIOS version by executing the following command:
-
-    ```bash
-    CapsuleApp.efi -V
-    ```
-
-    Save the BIOS version as `${original_bios_version}`.
-1. Perform a capsule update using the following command:
-
-    ```bash
-    CapsuleApp.efi -U valid_capsule.cap
-    ```
-
+1. Obtain and save the BIOS version as `${original_bios_version}`.
+1. Perform a capsule update using a valid capsule.
 1. Reboot the system and select the UEFI Shell boot option.
-1. After the system boots, verify the BIOS version by running the following
-   command:
-
-    ```bash
-    CapsuleApp.efi -V
-    ```
-
-    Save the BIOS version as `${updated_bios_version}`.
+1. After the system boots, verify the BIOS version and save it as
+   `${updated_bios_version}`.
 1. Ensure that the BIOS version has changed.
-1. Enter the Capsule Testing folder and execute the following command to check
-   the status:
-
-    ```bash
-    CapsuleApp.efi -S
-    ```
-
-1. Verify that the output contains `CapsuleMax` and does not contain
+1. Verify that the status contains `CapsuleMax` and does not contain
    `CapsuleLast`.
 
 **Expected result**
 
 1. The BIOS version should change after the update.
-1. The output of `CapsuleApp.efi -S` should contain `CapsuleMax` and should not
-   contain `CapsuleLast`.
+1. The status should contain `CapsuleMax` and should not contain `CapsuleLast`.
 
 ---
 
@@ -253,6 +177,10 @@ experience (UX) during the update.
 
 This test aims to verify the persistence of BIOS settings after a capsule
 update.
+
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
 
 **Test configuration data**
 
@@ -283,6 +211,10 @@ update.
 
 This test checks if the UUID persists after a capsule update.
 
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
+
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
@@ -297,12 +229,7 @@ This test checks if the UUID persists after a capsule update.
 
 1. Log in to Ubuntu.
 1. Check the current UUID.
-1. Perform the capsule update using the following command:
-
-    ```bash
-    fwupdmgr install max_fw_ver.cap
-    ```
-
+1. Perform the capsule update using a valid capsule.
 1. After the update, verify the UUID.
 
 **Expected result**
@@ -316,6 +243,10 @@ This test checks if the UUID persists after a capsule update.
 **Test description**
 
 This test checks if the serial number persists after a capsule update.
+
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
 
 **Test configuration data**
 
@@ -331,12 +262,7 @@ This test checks if the serial number persists after a capsule update.
 
 1. Log in to Ubuntu.
 1. Check the current serial number.
-1. Perform the capsule update using the following command:
-
-    ```bash
-    fwupdmgr install max_fw_ver.cap
-    ```
-
+1. Perform a capsule update using a valid capsule.
 1. After the update, verify the serial number.
 
 **Expected result**
@@ -350,6 +276,10 @@ This test checks if the serial number persists after a capsule update.
 **Test description**
 
 This test checks if the custom logo persists after a capsule update.
+
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
 
 **Test configuration data**
 
@@ -367,12 +297,7 @@ This test checks if the custom logo persists after a capsule update.
 
 1. Log in to Ubuntu.
 1. Check the current custom logo's SHA-256 hash.
-1. Perform the capsule update using the following command:
-
-    ```bash
-    fwupdmgr install max_fw_ver.cap
-    ```
-
+1. Perform a capsule update using a valid capsule.
 1. After the update, verify the custom logo's SHA-256 hash.
 
 **Expected result**
@@ -388,6 +313,10 @@ This test checks if the custom logo persists after a capsule update.
 This test verifies that the Capsule Update screen displays the correct user
 experience (UX) when using a default logo, including the progress bar.
 
+Each step in this test case should be executed in accordance with the
+instructions given in our
+[Capsule Update documentation](../../guides/capsule-update.md).
+
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
@@ -401,14 +330,7 @@ experience (UX) when using a default logo, including the progress bar.
 
 **Test steps**
 
-1. Power on the DUT.
-1. Boot into UEFI Shell.
-1. Perform a capsule update using the following command:
-
-    ```bash
-    CapsuleApp.efi -U valid_capsule.cap
-    ```
-
+1. Perform a capsule update using a valid capsule.
 1. Observe the Capsule Update screen during the update to ensure the progress
    bar scales properly with the default logo.
 
