@@ -29,7 +29,7 @@ This section describes how to do it.
   [here](../dasharo-tools-suite/documentation.md#bootable-usb-stick).
 
 * After booting, you will see a text menu, choose option number 4,
-  `Load your DES keys`, by pressing `4` and `Enter`.
+  `Load your DPP keys`, by pressing `4` and `Enter`.
 
 * Next, rewrite the credentials received in the following order:
     - `logs key`,
@@ -37,12 +37,14 @@ This section describes how to do it.
     - `password`.
 
 * Credentials will be verified by DTS attempting to connect to our server. If
-  successful, the message `Verification of the Dasharo DES was successful. They
-  are valid and will be used.` will be displayed.
+  successful, the message `A Dasharo Firmware binary has been found for
+  your platform!` will be displayed.
 
-Below is a short video that present loading DES keys.
+  In case of wrong credentials DTS will print an error.
 
-![IMG](img/des-creds.gif)
+Below is a short video that present loading DPP keys.
+
+![IMG](img/dpp-creds.gif)
 
 ## How to support us?
 

@@ -278,7 +278,7 @@ boot DTS, choose option number `2`. After creating
 firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
-[DES](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+[DPP](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
 release and it is only available to Dasharo Entry Subscription subscribers.
 If you have DPP subscription then do steps in
 [How can I use my Dasharo Entry Subscription credentials](
@@ -446,7 +446,7 @@ v1.1.1 on MSI PRO Z690-A DDR4.
 **     1) Dasharo HCL report
 **     2) Update Dasharo Firmware
 **     3) Restore firmware from Dasharo HCL report
-**     4) Load your DES keys
+**     4) Load your DPP keys
 *********************************************************
 Select a menu option or
 R to reboot  P to poweroff  S to enter shell
