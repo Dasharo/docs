@@ -12,6 +12,10 @@
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
+1. Boot into Ubuntu and note down the original
+    - UUID (via `dmidecode`)
+    - Serial number (also via `dmidecode`)
+    - BGRT bootsplash logo hash (located in `/sys/firmware/acpi/bgrt`)
 
 ## CUP001.001 Capsule Update With Wrong Keys (UEFI Shell)
 
@@ -117,17 +121,14 @@ instructions given in our
 
 1. Power on the DUT.
 1. Enter the Setup Menu.
-1. Navigate to the "Dasharo System Features" menu.
-1. Enter the "Networking Options" submenu.
-1. Enable the "Network Boot" option.
+1. Navigate to Boot Maintenance Manager.
+1. Change the Auto Boot Time-out value to an arbitrary custom one, such as
+   32123
 1. Save the settings and reboot the system.
-1. Boot into UEFI Shell.
-1. Perform a capsule update using a valid capsule.
 
 **Expected result**
 
-1. The network boot option should remain enabled after the system reboots and
-   the capsule update is applied.
+1. The custom Auto Boot Time-out value should remain set after the reboot.
 
 ---
 
@@ -157,6 +158,7 @@ instructions given in our
 
 1. Obtain and save the BIOS version as `${original_bios_version}`.
 1. Perform a capsule update using a valid capsule.
+1. Verify that the update screen looks as expected.
 1. Reboot the system and select the UEFI Shell boot option.
 1. After the system boots, verify the BIOS version and save it as
    `${updated_bios_version}`.
@@ -166,6 +168,8 @@ instructions given in our
 
 **Expected result**
 
+1. The update screen should look exactly as presented in the
+   [Capsule Update documentation](../../guides/capsule-update.md).
 1. The BIOS version should change after the update.
 1. The status should contain `CapsuleMax` and should not contain `CapsuleLast`.
 
@@ -228,9 +232,7 @@ instructions given in our
 **Test steps**
 
 1. Log in to Ubuntu.
-1. Check the current UUID.
-1. Perform the capsule update using a valid capsule.
-1. After the update, verify the UUID.
+1. Check the UUID after the update.
 
 **Expected result**
 
@@ -261,9 +263,7 @@ instructions given in our
 **Test steps**
 
 1. Log in to Ubuntu.
-1. Check the current serial number.
-1. Perform a capsule update using a valid capsule.
-1. After the update, verify the serial number.
+1. Check the serial number after the update.
 
 **Expected result**
 
@@ -296,8 +296,6 @@ instructions given in our
 **Test steps**
 
 1. Log in to Ubuntu.
-1. Check the current custom logo's SHA-256 hash.
-1. Perform a capsule update using a valid capsule.
 1. After the update, verify the custom logo's SHA-256 hash.
 
 **Expected result**
@@ -331,10 +329,9 @@ instructions given in our
 **Test steps**
 
 1. Perform a capsule update using a valid capsule.
-1. Observe the Capsule Update screen during the update to ensure the progress
-   bar scales properly with the default logo.
+1. Verify that the update screen looks as expected.
 
 **Expected result**
 
-1. The Capsule Update screen should display the progress bar correctly, and the
-   default logo should appear without scaling issues.
+1. The update screen should look exactly as presented in the
+   [Capsule Update documentation](../../guides/capsule-update.md).
