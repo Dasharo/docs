@@ -159,9 +159,8 @@ instructions given in our
 1. Obtain and save the BIOS version as `${original_bios_version}`.
 1. Perform a capsule update using a valid capsule.
 1. Verify that the update screen looks as expected.
-1. Reboot the system and select the UEFI Shell boot option.
-1. After the system boots, verify the BIOS version and save it as
-   `${updated_bios_version}`.
+1. After the system boots, select the UEFI shell boot option.
+1. Verify the BIOS version and save it as `${updated_bios_version}`.
 1. Ensure that the BIOS version has changed.
 1. Verify that the status contains `CapsuleMax` and does not contain
    `CapsuleLast`.
