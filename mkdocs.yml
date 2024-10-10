@@ -580,6 +580,7 @@ nav:
               - 'NVMe detection': unified-test-documentation/dasharo-stability/C03-nvme-detection.md
               - 'Power management': unified-test-documentation/dasharo-stability/C04-power-management.md
               - 'NET interface check after coldboot/warmboot/reboot/suspend': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+              - 'TPM detection': unified-test-documentation/dasharo-stability/C07-tpm-detection.md
       - 'Roadmap': ecosystem/roadmap.md
       - 'Quality Principles': quality-principles/introduction.md
         # - 'Introduction':
