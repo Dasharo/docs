@@ -2,7 +2,7 @@
 template: giscus.html
 ---
 
-# Trenchboot as Anti Evil Maid
+# TrenchBoot as Anti Evil Maid
 
 ## Abstract
 
