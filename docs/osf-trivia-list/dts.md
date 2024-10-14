@@ -12,7 +12,7 @@ Also refer to [DTS Overview](../dasharo-tools-suite/overview.md).
 
 Dasharo Pro Package Releases can be used to perform firmware updates
 with DTS by providing Dasharo Pro Package credentials obtained after
-buying a [Dasharo Pro Package](../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+buying a [Dasharo Pro Package](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 
 Commercial use of DTS should be discussed directly with
 [3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com).
