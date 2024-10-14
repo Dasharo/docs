@@ -374,6 +374,7 @@ nav:
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
       - 'Verifying signatures': guides/signature-verification.md
+      - 'Verifying reproducible builds': guides/reproducible-build-verification.md
       - 'Boot logo replacement': guides/logo-customization.md
       - 'Lab Assembly':
           - 'MinnowBoard Turbot': guides/lab-assembly/minnowboard-turbot.md
