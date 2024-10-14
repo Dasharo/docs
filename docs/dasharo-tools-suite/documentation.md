@@ -281,7 +281,7 @@ using Dasharo Tools Suite, option `d` stands for
 [DPP](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
 If you have DPP subscription then do steps in
 [How can I use my Dasharo Pro Package credentials](
-../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials)
+../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
 section first.
 
 Next you will be asked two questions to confirm flashing. The first will be
@@ -394,10 +394,10 @@ Please consider the following options depending on your situation:
 
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
 with flashed Dasharo and choose option number `2`. You may see additional
-information about available updates if you are not [Dasharo Pro Package](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-entry-subscription-subscriber)
+information about available updates if you are not [Dasharo Pro Package](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber)
 subscriber. If you have DPP subscription then do steps in
 [How can I use my Dasharo Pro Package credentials](
-../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials)
+../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
 section first.
 
 Next you will be asked two questions to confirm flashing. The first will be

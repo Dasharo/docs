@@ -39,7 +39,7 @@ Test results for this release can be found
 
 ### Changed
 
-- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
 - [Updated microcode to the newer version; refer to SBOM section below](https://github.com/coreboot/intel-microcode/commit/6788bb07eb5f9e9b83c31ea1364150fe898f450a)
 - [Updated ME to the newer version; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7d25)
 - [Switched to the Raptor Lake-S Client FSP; refer to SBOM section below](https://github.com/intel/FSP/tree/481ea7cf0bae0107c3e14aa746e52657647142f3/RaptorLakeFspBinPkg/Client/RaptorLakeS)
@@ -101,7 +101,7 @@ Test results for this release can be found
 
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
@@ -137,7 +137,7 @@ Test results for this release can be found
 
 ### Changed
 
-- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
 - [Updated microcode to newer version, refer to SBOM](https://github.com/coreboot/intel-microcode/commit/390edfb411ba7de8559ad40597c7acb6c6a1ea96)
 - [Updated ME to newer version, refer to SBOM](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7d25)
 
@@ -163,7 +163,7 @@ Test results for this release can be found
 
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 

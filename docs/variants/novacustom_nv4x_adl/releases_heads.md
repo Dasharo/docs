@@ -28,7 +28,7 @@ Test results for this release can be found
 
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
@@ -53,7 +53,7 @@ Test results for this release can be found
 
 ### Changed
 
-- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
 - Heads Linux is used as a payload
 
 ### Known issues
@@ -70,7 +70,7 @@ Test results for this release can be found
 
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 

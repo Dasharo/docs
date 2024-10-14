@@ -74,7 +74,7 @@ Test results for this platform can be found
 
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
