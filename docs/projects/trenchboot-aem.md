@@ -2,7 +2,7 @@
 template: giscus.html
 ---
 
-# Trenchboot as Anti Evil Maid
+# TrenchBoot as Anti Evil Maid
 
 **This is out of date and left here as a reference. Please use the [current
 version of the plan](trenchboot-aem-v2.md) for up-to-date information**
