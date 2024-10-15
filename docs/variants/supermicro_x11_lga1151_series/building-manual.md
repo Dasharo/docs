@@ -1,6 +1,6 @@
 # Supermicro X11 LGA1151 Series - building manual
 
-**Please read the [overview page](../overview.md) first!**
+**Please read the [overview page](overview.md) first!**
 
 <!--
 To build Dasharo compatible with Supermicro X11 LGA1151 Series, follow the

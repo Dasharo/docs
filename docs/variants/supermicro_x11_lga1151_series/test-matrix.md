@@ -1,6 +1,6 @@
 # Test matrix - MSI Z690-A WIFI DDR4
 
-**Please read the [overview page](../overview.md) first!**
+**Please read the [overview page](overview.md) first!**
 
 ## About
 
