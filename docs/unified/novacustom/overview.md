@@ -103,7 +103,7 @@ Select your Dasharo firmware flavor:
     - [NS5x/7x 11th Gen](/variants/novacustom_ns5x_tgl/releases/)
 
 === "Dasharo (coreboot + Heads)"
-    Heads-based firmware is offered as a Dasharo Entry Subscription option.
+    Heads-based firmware is offered as a Dasharo Pro Package option.
 
     !!! note
 
