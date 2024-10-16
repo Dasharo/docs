@@ -1,6 +1,6 @@
 # Hardware configuration matrix
 
-**Please read the [overview page](../overview.md) first!**
+**Please read the [overview page](overview.md) first!**
 
 The tables below contain information about current components of the testing
 environment for Supermicro X11 LGA1151 Series available in 3mdeb testing
