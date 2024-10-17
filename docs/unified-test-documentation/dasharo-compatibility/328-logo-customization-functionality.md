@@ -46,7 +46,7 @@ will be shown properly.
     ```
 
 1. Wait for `Enter an option:`.
-1. Type in `9` and press `Enter`.
+1. Type in `S` and press `Enter`.
 1. Based on the
    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
    replace the logo in an existing image.
