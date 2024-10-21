@@ -154,26 +154,26 @@ make BOARD=arduino/mega2560 flash
     1. For the V560 laptops you will need to remove two stretch-release pull tabs
     that are holding keyboard in place.
 
-        ![](/images/v560tape1.webp)
+        ![](../../images/v560tape1.webp)
 
     1. Second pull tab is located under the heat sink.
 
-        ![](/images/v560heatsink.webp)
-    ![](/images/v560tape2.webp)
+        ![](../../images/v560heatsink.webp)
+    ![](../../images/v560tape2.webp)
 
 === "Other models"
 
     1. Remove the two screws holding the keyboard in place. They are indicated on the
     bottom cover with a keyboard symbol:
 
-        ![](/images/ch341a_rec/ns5x_kbscrew.jpg)
+        ![](../../images/ch341a_rec/ns5x_kbscrew.jpg)
 
 #### Connecting
 
 1. Pry the keyboard away from the laptop. Use a plastic spudger to release the
    tabs holding it in place, starting from the top.
 
-    ![](/images/nvc_ec_flash/v54_lifted_keyboard.jpg)
+    ![](../../images/nvc_ec_flash/v54_lifted_keyboard.jpg)
 
     !!! warning
 
@@ -182,11 +182,11 @@ make BOARD=arduino/mega2560 flash
 
 1. Unplug the keyboard connector by lifting up the tab holding it in place:
 
-    ![](/images/nvc_ec_flash/ns5x_keyboard_connectors.jpg)
+    ![](../../images/nvc_ec_flash/ns5x_keyboard_connectors.jpg)
 
 1. Connect the FFC cable to the FFC breakout board
 
-    ![](/images/nvc_ec_flash/ns5x_arduino_breakout.jpg)
+    ![](../../images/nvc_ec_flash/ns5x_arduino_breakout.jpg)
 
     !!! warning
 
@@ -198,16 +198,16 @@ make BOARD=arduino/mega2560 flash
 1. Insert the breakout into Arduino's digital pin header, pins 22-45, with the
    FFC connector facing outwards
 
-    ![](/images/nvc_ec_flash/arduino_breakout_attached_2.jpg)
+    ![](../../images/nvc_ec_flash/arduino_breakout_attached_2.jpg)
 
 1. Connect the other end of the FFC cable to the keyboard connector on the
    laptop, taking care to align pin 1 of the FFC cable to pin 1 (leftmost) pin
    of the connector
 
-    ![FFC cable with a 1mm pitch](/images/nvc_ec_flash/ns5x_arduino_connected.jpg)
+    ![FFC cable with a 1mm pitch](../../images/nvc_ec_flash/ns5x_arduino_connected.jpg)
     *FFC cable with a 1mm pitch*
 
-    ![FFC cable with a 0.5mm pitch](/images/nvc_ec_flash/v54_arduino_connected.jpg)
+    ![FFC cable with a 0.5mm pitch](../../images/nvc_ec_flash/v54_arduino_connected.jpg)
     *FFC cable with a 0.5mm pitch*
 
 1. Connect the Arduino to the host using the USB-A to USB-B cable
@@ -215,9 +215,9 @@ make BOARD=arduino/mega2560 flash
 1. Connect the USB-C cable together with power blocker from your host
    computer to the laptop.
 
-    ![](/images/nvc_ec_flash/usb-c-ground-connection-pc.jpg)
+    ![](../../images/nvc_ec_flash/usb-c-ground-connection-pc.jpg)
 
-    ![](/images/nvc_ec_flash/usb-c-ground-connection-laptop.jpg)
+    ![](../../images/nvc_ec_flash/usb-c-ground-connection-laptop.jpg)
 
     !!! warning
 
@@ -271,25 +271,25 @@ Components Necessary to perform BIOS Recovery:
     1. Attach the SOIC-8 Pomona clip to the programmer. Take care to align CS pin
        with pin 1 on the programmer:
 
-        ![](/images/ch341a_rec/ch341a_v17_with_breakout.webp)
+        ![](../../images/ch341a_rec/ch341a_v17_with_breakout.webp)
 
         !!! danger
 
             If your CH341a programmer has a voltage switch, make sure it's at 3.3V.
             Improper voltage selection may result in hardware damage.
 
-        ![](/images/CH341A-V.webp)
-        ![](/images/CH341A-V2.webp)
+        ![](../../images/CH341A-V.webp)
+        ![](../../images/CH341A-V2.webp)
 
     1. Plug the programmer into your host computer.
 
     1. Remove bottom cover from the laptop.
 
         === "NS5x/7x 11th Gen"
-            ![](/images/ns50mu_board_chips.jpg)
+            ![](../../images/ns50mu_board_chips.jpg)
 
         === "NV4x 11th Gen"
-            ![](/images/NV411th1.webp)
+            ![](../../images/NV411th1.webp)
 
     1. Unplug the battery (1)
 
@@ -297,13 +297,13 @@ Components Necessary to perform BIOS Recovery:
        white dot on the BIOS chip:
 
         === "NS5x/7x 11th Gen"
-            ![](/images/NS50x/BIOS-NS5x-11th.jpg)
-            ![](/images/NS50x/SOIC-8-Pomona-Clip-NS5x-BIOS-11th.jpg)
+            ![](../../images/NS50x/BIOS-NS5x-11th.jpg)
+            ![](../../images/NS50x/SOIC-8-Pomona-Clip-NS5x-BIOS-11th.jpg)
 
         === "NV4x 11th Gen"
 
-            ![](/images/NV411th2.webp)
-            ![](/images/NV411th21.webp)
+            ![](../../images/NV411th2.webp)
+            ![](../../images/NV411th21.webp)
 
     1. Attach the SOIC-8 Pomona clip firmly in place and execute the following command
        on your host computer:
@@ -320,15 +320,15 @@ Components Necessary to perform BIOS Recovery:
     1. Attach the WSON probe to the programmer. Take care to align pin 1 indicated
        on the probe's breakout board with pin 1 on the programmer:
 
-        ![](/images/ch341a_rec/ch341a_v17_with_breakout.webp)
+        ![](../../images/ch341a_rec/ch341a_v17_with_breakout.webp)
 
         !!! danger
 
             If your CH341a programmer has a voltage switch, make sure it's at 3.3V.
             Improper voltage selection may result in hardware damage.
 
-        ![](/images/CH341A-V.webp)
-        ![](/images/CH341A-V2.webp)
+        ![](../../images/CH341A-V.webp)
+        ![](../../images/CH341A-V2.webp)
 
     1. Plug the programmer into your host computer.
 
@@ -336,11 +336,11 @@ Components Necessary to perform BIOS Recovery:
 
         === "NS5x/7x 12th Gen"
 
-            ![](/images/ns5x_7x_adl_without_bottom_cover.webp)
+            ![](../../images/ns5x_7x_adl_without_bottom_cover.webp)
 
         === "NV4x 12th Gen"
 
-            ![](/images/NV412th1.webp)
+            ![](../../images/NV412th1.webp)
 
     1. Unplug the battery (1)
 
@@ -349,13 +349,13 @@ Components Necessary to perform BIOS Recovery:
 
         === "NS5x/7x 12th Gen"
 
-            ![](/images/ch341a_rec/wson_probe_alignment.jpg)
-            ![](/images/ch341a_rec/wson_probe_onchip.jpg)
+            ![](../../images/ch341a_rec/wson_probe_alignment.jpg)
+            ![](../../images/ch341a_rec/wson_probe_onchip.jpg)
 
         === "NV4x 12th Gen"
 
-            ![](/images/NV412th2.webp)
-            ![](/images/NV412th21.webp)
+            ![](../../images/NV412th2.webp)
+            ![](../../images/NV412th21.webp)
 
     1. Hold down the WSON probe firmly in place and execute the following command
        on your host computer:
@@ -372,15 +372,15 @@ Components Necessary to perform BIOS Recovery:
     1. Attach the WSON probe to the programmer. Take care to align pin 1 indicated
        on the probe's breakout board with pin 1 on the programmer:
 
-        ![](/images/ch341a_rec/ch341a_v17_with_breakout.webp)
+        ![](../../images/ch341a_rec/ch341a_v17_with_breakout.webp)
 
         !!! danger
 
             If your CH341a programmer has a voltage switch, make sure it's at 1.8V.
             Improper voltage selection may result in hardware damage.
 
-        ![](/images/CH341A-V.webp)
-        ![](/images/CH341A-V1.webp)
+        ![](../../images/CH341A-V.webp)
+        ![](../../images/CH341A-V1.webp)
 
     1. Plug the programmer into your host computer.
 
@@ -388,23 +388,23 @@ Components Necessary to perform BIOS Recovery:
 
         === "V540TND 14th Gen"
 
-            ![](/images/540TND.webp)
+            ![](../../images/540TND.webp)
 
         === "V540TU 14th Gen"
 
-            ![](/images/540TU.webp)
+            ![](../../images/540TU.webp)
 
         === "V560TND 14th Gen"
 
-            ![](/images/560TND.webp)
+            ![](../../images/560TND.webp)
 
         === "V560TU 14th Gen"
 
-            ![](/images/560TU.webp)
+            ![](../../images/560TU.webp)
 
         === "V560TNE 14th Gen"
 
-            ![](/images/560TNE.webp)
+            ![](../../images/560TNE.webp)
 
     1. Unplug the battery (1)
 
@@ -413,28 +413,28 @@ Components Necessary to perform BIOS Recovery:
 
         === "V540TND 14th Gen"
 
-            ![](/images/540TNDwson1.webp)
-            ![](/images/540TNDwson2.webp)
+            ![](../../images/540TNDwson1.webp)
+            ![](../../images/540TNDwson2.webp)
 
         === "V540TUPlug the programmer  14th Gen"
 
-            ![](/images/540TUwson1.webp)
-            ![](/images/540TUwson2.webp)
+            ![](../../images/540TUwson1.webp)
+            ![](../../images/540TUwson2.webp)
 
         === "V560TND 14th Gen"
 
-            ![](/images/560TNDwson1.webp)
-            ![](/images/560TNDwson2.webp)
+            ![](../../images/560TNDwson1.webp)
+            ![](../../images/560TNDwson2.webp)
 
         === "V560TU 14th Gen"
 
-            ![](/images/560TUwson1.webp)
-            ![](/images/560TUwson2.webp)
+            ![](../../images/560TUwson1.webp)
+            ![](../../images/560TUwson2.webp)
 
         === "V560TNE 14th Gen"
 
-            ![](/images/560TNEwson1.webp)
-            ![](/images/560TNEwson2.webp)
+            ![](../../images/560TNEwson1.webp)
+            ![](../../images/560TNEwson2.webp)
 
     3. Hold down the WSON probe firmly in place and execute the following command
         on your host computer:

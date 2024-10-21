@@ -146,7 +146,7 @@ preparation before a TPM can flashing wires can be connected. You will need:
    JTPM1's SPI power, GND, BIOS SPI CS, SPI clock, MISO, MOSI:
 
     ![msi_tpm_wires](images/tpm/msi_tpm_wires.jpg)
-    ![msi_z690_jtpm1](/unified/msi/images/msi_z690_jtpm1.jpeg)
+    ![msi_z690_jtpm1](../../unified/msi/images/msi_z690_jtpm1.jpeg)
 
 8. Connect such "spider" to the mainboard's JTPM1 header (remember to match
    the "no-pin: location).

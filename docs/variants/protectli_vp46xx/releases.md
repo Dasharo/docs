@@ -65,7 +65,7 @@ Test results for this release can be found
 [sha256.sig][protectli_vp46xx_v1.2.0_dev_signed.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.2.x-for-protectli-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -126,7 +126,7 @@ Release version v1.1.0 is currently only available for the VP4670 platform.
 [sha256.sig][protectli_vp4670_v1.1.0.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -159,7 +159,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256.sig][protectli_vp4670_v1.0.19.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -207,7 +207,7 @@ Test results for this release can be found
 [sha256.sig][protectli_vp4670_v1.0.18.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -233,7 +233,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Tools for resigning Vboot images with one RW partition](https://docs.dasharo.com/guides/vboot-signing/)
+- [Tools for resigning Vboot images with one RW partition](https://docs.dasharo.com../../guides/vboot-signing/)
 
 ### Changed
 
@@ -253,7 +253,7 @@ Test results for this release can be found
 [protectli_vault_cml_v1.0.17.rom_sig][protectli_vault_cml_v1.0.17.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -278,7 +278,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Vboot Verified Boot](https://docs.dasharo.com/guides/vboot-signing/)
+- [Vboot Verified Boot](https://docs.dasharo.com../../guides/vboot-signing/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
@@ -302,7 +302,7 @@ Test results for this release can be found
 [sha256.sig][v1.0.16_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -346,7 +346,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256.sig][v1.0.13_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/protectli-dasharo-firewall-release-1.0-key.asc)
 
 ### SBOM (Software Bill of Materials)

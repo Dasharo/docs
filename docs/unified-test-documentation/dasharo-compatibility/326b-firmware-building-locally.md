@@ -12,7 +12,7 @@
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Make yourself familiar with Building manual procedure dedicated for
     the relevant platform:
-    * [NovaCustom laptops](/unified/novacustom/building-manual)
+    * [NovaCustom laptops](../../unified/novacustom/building-manual.md)
 
 ## FLB001.001 Firmware locally build
 

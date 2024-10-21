@@ -54,7 +54,7 @@ devices.
     Steps for installing Dasharo Embedded Controller Firmware:
 
     1. On the target laptop,
-       [boot into Dasharo Tools Suite from a USB stick](/dasharo-tools-suite/documentation/#bootable-usb-stick)
+       [boot into Dasharo Tools Suite from a USB stick](../../dasharo-tools-suite/documentation.md#bootable-usb-stick)
 
     1. Ensure power adapter is plugged into the laptop
 
@@ -230,11 +230,11 @@ devices.
     If something went wrong or EC installation was not done, the firmware will
     print an error string during boot:
 
-    ![](/images/menus/sol_error1.jpg){ class="center" }
+    ![](../../images/menus/sol_error1.jpg){ class="center" }
 
     OR
 
-    ![](/images/menus/sol_error2.jpg){ class="center" }
+    ![](../../images/menus/sol_error2.jpg){ class="center" }
 
     In such case please follow the EC firmware update instructions for a specific
     board variant.
@@ -243,4 +243,4 @@ devices.
 
 The supported method for initial deployment of the coreboot + Heads variant is
 to follow [installing Dasharo](#installing-dasharo), and then
-[transition from Dasharo UEFI to Heads variant](/unified/novacustom/firmware-transition#switching-from-dasharo-uefi-to-heads).
+[transition from Dasharo UEFI to Heads variant](firmware-transition.md#switching-from-dasharo-uefi-to-heads).

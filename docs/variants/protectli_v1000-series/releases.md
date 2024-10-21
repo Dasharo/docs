@@ -67,7 +67,7 @@ Test results for this release can be found here:
 [sha256.sig][protectli_v1410_v0.9.3.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://github.com/3mdeb/3mdeb-secpack/raw/master/customer-keys/protectli/release-keys/dasharo-release-0.9.x-for-protectli-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
