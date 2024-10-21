@@ -38,11 +38,11 @@ ENTER to boot directly
 If any error happens (firmware version is unknown, could not be read or any
 other error) you will get an red error string:
 
-![](/images/menus/sol_error1.jpg){ class="center" }
+![](../images/menus/sol_error1.jpg){ class="center" }
 
 OR
 
-![](/images/menus/sol_error2.jpg){ class="center" }
+![](../images/menus/sol_error2.jpg){ class="center" }
 
 In such case please follow the EC firmware update instructions for a specific
 board variant.
@@ -89,7 +89,7 @@ effect.
 
 ### Main Page
 
-![](/images/menus/main_page.jpeg){ class="center" }
+![](../images/menus/main_page.jpeg){ class="center" }
 
 The page is the main view of the firmware setup application. It contains the
 board model (`MS-7D25`), installed CPU and firmware version in the top-left
@@ -129,7 +129,7 @@ possible feature extension of your platform.
 
 User Password Management menu allows one to set firmware setup admin password:
 
-![](/images/menus/password_mgr.jpeg){ class="center" }
+![](../images/menus/password_mgr.jpeg){ class="center" }
 
 The password requirements are compliant to
 modern standards. See `Appendix A` at [pages.nist.gov](https://pages.nist.gov/800-63-3/sp800-63b.html).
@@ -153,15 +153,15 @@ permanently). The usage principles are the same as for [Boot Manager Menu](#boot
 
 Example view of `One Time Boot` submenu:
 
-![](/images/menus/one_time_boot.jpeg){ class="center" }
+![](../images/menus/one_time_boot.jpeg){ class="center" }
 
 On the right side of the menu window, there is a `DevicePath` which is a
 UEFI-compliant path to the device or file being executed. Depending on the
 file/device type, these paths may be different:
 
-![](/images/menus/one_time_boot.jpeg){ class="center" }
+![](../images/menus/one_time_boot.jpeg){ class="center" }
 
-![](/images/menus/one_time_boot3.jpeg){ class="center" }
+![](../images/menus/one_time_boot3.jpeg){ class="center" }
 
 `DevicePaths` are defined in [UEFI Specification](https://uefi.org/specifications).
 If you are interested in decoding those, read through the specification
@@ -184,7 +184,7 @@ ENTER to boot directly
 
 After pressing the right hotkey for Boot Manager Menu, a window should pop up:
 
-![](/images/menus/boot_manager.jpeg){ class="center" }
+![](../images/menus/boot_manager.jpeg){ class="center" }
 
 On the bottom of the window there are instructions for moving and selecting
 entries.

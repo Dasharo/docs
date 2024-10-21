@@ -12,7 +12,7 @@ capabilities as [PC Engines sortbootorder](https://github.com/pcengines/sortboot
 When entering the `Dasharo APU Configuration` menu, one may see the
 following options to appear:
 
-![](/images/menus/apu_config.jpeg){ class="center" }
+![](../images/menus/apu_config.jpeg){ class="center" }
 
 ### Core Performance Boost
 

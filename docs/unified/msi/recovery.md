@@ -75,12 +75,12 @@ The full set is now available at our [online shop](https://shop.3mdeb.com/shop/m
 
 1. CH341A kit with 1.8V level-shifter. Can be bought on e.g. [Amazon](https://www.amazon.com/programmer-ch341a-Programmer-Adapter-Converter/dp/B07WP9FKZ2)
 
-    ![](/images/ch341a_rec/ch341a_kit.jpg)
+    ![](../../images/ch341a_rec/ch341a_kit.jpg)
 
 2. Female-female 2.54mm to 2mm dupont wires.
 3. USB2.0 Female-Male extension cord 0.5m or longer (optional)
 
-    ![](/images/ch341a_rec/usb_ext.jpg)
+    ![](../../images/ch341a_rec/usb_ext.jpg)
 
 4. Machine with Linux and flashrom.
 
@@ -90,25 +90,25 @@ First start with assembling the CH341A and the 1.8V adapter. Pay attention to
 which holes you attach the adapter. You should use the holes marked as 25XX
 (closer to the USB plug):
 
-![](/images/ch341a_rec/ch341a.jpg)
+![](../../images/ch341a_rec/ch341a.jpg)
 
 Place the 1.8V adapter in the holes and lock it with the lever. Be sure that
 the arrow on the adapter is facing the black lever (opposite side of USB plug):
 
-![](/images/ch341a_rec/adapter_assemble.jpg)
+![](../../images/ch341a_rec/adapter_assemble.jpg)
 
 Now take the breakout board with pin headers:
 
-![](/images/ch341a_rec/pin_breakout.jpg)
+![](../../images/ch341a_rec/pin_breakout.jpg)
 
 and plug it into the other 1.8V adapter, be sure that numbers 1-4 on the
 breakout board match the numbers 1 and 4 on the adapter:
 
-![](/images/ch341a_rec/adapter_shifter.jpg)
+![](../../images/ch341a_rec/adapter_shifter.jpg)
 
 Numbers should be visible on the upper side after assembling:
 
-![](/images/ch341a_rec/breakout_assemble.jpg)
+![](../../images/ch341a_rec/breakout_assemble.jpg)
 
 Next, take the dupont wires and connect them to the brekaout board and
 mainboard's JTPM1 header. The JTPM1 pin5 is actually BIOS SPI CS pin (marked
@@ -182,7 +182,7 @@ In case you have lost your serial number in the process of flashing Dasharo or
 newer MSI firmware, there is a way to retrieve it. The board has a QR code
 printed on the mainboard between the chipset heatsink and dPGU PCIe slot:
 
-![](/images/msi_sn_qr.jpg)
+![](../../images/msi_sn_qr.jpg)
 
 If you read the QR code with your smartphone you will get the full serial
 number. The serial number has the format `07D25xx_LyzEaaaaaa` where:
@@ -225,7 +225,7 @@ about MSI system UUID:
 
 The MAC address is printed on a sticker placed on the 2x2 SATA connector:
 
-![](/images/msi_mac.jpg)
+![](../../images/msi_mac.jpg)
 
 ### SMBIOS data migration
 

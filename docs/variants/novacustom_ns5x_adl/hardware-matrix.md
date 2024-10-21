@@ -9,7 +9,7 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 
 ### Right side view
 
-![](/images/novacustom_ns_ports_right_view.png)
+![](../../images/novacustom_ns_ports_right_view.png)
 
 | No.  | Description                                      |
 |------|--------------------------------------------------|
@@ -24,7 +24,7 @@ coreboot port on the NovaCustom NS5x/7x laptops.
 
 ### Left side view
 
-![](/images/novacustom_ns_ports_left_view.png)
+![](../../images/novacustom_ns_ports_left_view.png)
 
 | No.  | Description                                      |
 |------|--------------------------------------------------|

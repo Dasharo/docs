@@ -5,7 +5,7 @@ firmware update. The update process may be different, depending on which
 firmware version is currently installed on your device.
 
 Your firmware version can be checked by entering the
-[Dasharo Setup Menu](/dasharo-menu-docs/overview/#dasharo-menu-guides) using the
+[Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md) using the
 ++f2++ key while booting.
 
 === "Dasharo (UEFI)"
@@ -64,19 +64,19 @@ Your firmware version can be checked by entering the
        models. You can skip these steps if you are using an older firmware version.
 
     Follow the manual update procedure described in the [DTS firmware update
-    documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#local-firmware-update).
+    documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation.md#local-firmware-update).
 
     > Please make sure you that you update the BIOS firmware and the EC firmware
     > respectively, as the laptop will power off after the EC firmware flash.
     >
     > Please also note that
-    > [network boot must be enabled](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)
+    > [network boot must be enabled](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features.md#networking-options)
     > if you want to boot to the Dasharo Tools Suite over a network connection.
 
 === "Dasharo (coreboot + Heads)"
 
     ## Firmware update
 
-    [Build](/unified/novacustom/building-manual/#dasharo-coreboot--head) or
+    [Build](building-manual.md#dasharo-coreboot--head) or
     download Dasharo Heads firmware, and proceed with
     the official [Heads update documentation](https://osresearch.net/Updating).

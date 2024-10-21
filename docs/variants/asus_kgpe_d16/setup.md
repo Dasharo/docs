@@ -1,6 +1,6 @@
 # RTE v.0.5.3 with ASUS KGPE-D16 connection
 
-![](/images/kgpe_overview.jpg)
+![](../../images/kgpe_overview.jpg)
 
 ## Power supply
 
@@ -77,9 +77,9 @@ echo "0"  > /sys/class/gpio/gpio402/value
  2 (GPIO401)        | 4 (IO3_HOLD_PROG)
  3 (GPIO402)        | 5 (IO2_WP_PROG)
 
-![](/images/qspimux_pin_header.jpg)
+![](../../images/qspimux_pin_header.jpg)
 
-![](/images/qspimux_kgpe.jpeg)
+![](../../images/qspimux_kgpe.jpeg)
 
 > qspimux schematic is available [here](https://github.com/felixheld/qspimux/blob/master/qspimux/qspimux.pdf)
 
@@ -88,7 +88,7 @@ echo "0"  > /sys/class/gpio/gpio402/value
 Asus KGPE-D16 has a DB9 serial connector for the debug UART. Connect it to the RTE
 via RS232 DB9 cable.
 
-![](/images/kgpe_rear_panel.jpg)
+![](../../images/kgpe_rear_panel.jpg)
 
 ## TPM
 
@@ -103,7 +103,7 @@ to succeed this way. Designing and producing proper TPM header and/or reliable
 adapter, could solve this problem. The [TwPM
 project](https://twpm.dasharo.com/) could help here in the future.
 
-![](/images/kgpe_tpm_header.jpg)
+![](../../images/kgpe_tpm_header.jpg)
 
 TPM modules that were tested and verified to work in 3mdeb lab with coreboot:
 
@@ -114,7 +114,7 @@ TPM modules that were tested and verified to work in 3mdeb lab with coreboot:
 
 Asus KGPE-D16 provides a front panel pin header (PANEL1):
 
-![](/images/kgpe_front_panel.jpg)
+![](../../images/kgpe_front_panel.jpg)
 
 | RTE header J11 pin     | Asus KGPE-D16             |
 |:----------------------:|:-------------------------:|
@@ -258,8 +258,8 @@ to the [Dasharo Newsletter](https://newsletter.3mdeb.com/subscription/wwL90UkXP)
 
 ## Gallery
 
-![](/images/kgpe_1.jpg)
-![](/images/kgpe_2.jpg)
-![](/images/kgpe_3.jpg)
+![](../../images/kgpe_1.jpg)
+![](../../images/kgpe_2.jpg)
+![](../../images/kgpe_3.jpg)
 
 [flashchip-adapter]: https://shop.3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/

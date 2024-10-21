@@ -198,7 +198,7 @@ This represents technical flow of update process. Note that this may not
 represent the final state of the project, as some implementation details may be
 revised before the project is finalized.
 
-![](/images/capsule_update_tech_flow.svg){ class="center" }
+![](../images/capsule_update_tech_flow.svg){ class="center" }
 
 - Solid arrows represent transition of execution flow.
 - Dotted arrows represent data transfer (read, write).

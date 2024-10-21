@@ -43,7 +43,7 @@ Test results for this platform can be found
 ){ .md-button }
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/tuxedo/tuxedo-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)

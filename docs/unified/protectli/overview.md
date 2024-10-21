@@ -50,7 +50,7 @@
     The VP46XX is the second platform of the Vault Pro series with higher
     performance and newer technology than the original FW6 series.
 
-    ![](/images/VP4630_banner-1.jpg)
+    ![](../../images/VP4630_banner-1.jpg)
 
     The VP46XX features an Intel 10th Generation CPU, 2x DDR4 DIMM modules, 6x
     Intel i225-V 2.5G Ethernet ports, PCIe x4/SATA NVMe storage, LPC TPM, M.2
@@ -89,7 +89,7 @@
     and more. The VP2410 is based on a 4 network port design that leverages
     a low power, but versatile Intel Celeron J4125 CPU.
 
-    ![](/images/VP2410.png)
+    ![](../../images/VP2410.png)
 
     The VP2410 can accommodate up to 16GB DDR4 RAM and 2TB m.2 SATA SSD
     storage drive. The built-in 8GB eMMC module can be used for booting a
@@ -131,7 +131,7 @@
     and more. The VP2420 is based on a 4 x 2.5 G network port design that
     leverages a low power, but versatile Intel Celeron J6412 CPU.
 
-    ![](/images/VP2420.png)
+    ![](../../images/VP2420.png)
 
     The VP2420 can accommodate up to 32 GB DDR4 RAM and 2 TB M.2 SATA SSD
     storage drive (Note: The VP2420 supports M.2 SATA drives, not NVMe

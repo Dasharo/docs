@@ -4,19 +4,19 @@ The Device Manager is a EDKII standard submenu which collects various device
 setups like TPM, UEFI Secure Boot, TCG OPAL Drive Password, SATA Password and
 others.
 
-![](/images/menus/dev_mgr.jpeg){ class="center" }
+![](../images/menus/dev_mgr.jpeg){ class="center" }
 
 ## TCG Drive Management
 
 This menu allows one to set up TCG OPAL disk password and manage other TCG OPAL
 feature settings. The main view of the submenu looks as follows:
 
-![](/images/menus/tcg_opal.jpeg){ class="center" }
+![](../images/menus/tcg_opal.jpeg){ class="center" }
 
 The submenu will list all the TCG OPAL capable disks. Selecting one of them
 with `ENTER` will cause entering the disk specific submenu:
 
-![](/images/menus/tcg_opal2.jpeg){ class="center" }
+![](../images/menus/tcg_opal2.jpeg){ class="center" }
 
 Here one can enable the TCG OPAL security feature or restore factory default
 with the PSID (Physical Security ID). Physical Security ID is a drive specific
@@ -26,7 +26,7 @@ found on the sticker present on the disk.
 Besides the feature enablement and factory restore options there is an action
 interactive entry on the main TCG Drive Management page:
 
-![](/images/menus/tcg_opal3.jpeg){ class="center" }
+![](../images/menus/tcg_opal3.jpeg){ class="center" }
 
 It is used to perform TCG OPAL specific operations when the security feature is
 enabled. Enable/disable BlockSID will set/unset "freeze locking" of the drive
@@ -40,7 +40,7 @@ TCG OPAL. Reset is required to apply changes. After reset you will be prompted
 to set admin password. When the admin password is set, more options become
 available for the disk:
 
-![](/images/menus/tcg_opal3.jpeg){ class="center" }
+![](../images/menus/tcg_opal3.jpeg){ class="center" }
 
 All below options require reset to apply changes.
 
@@ -68,13 +68,13 @@ install UEFI driver health protocol. Typically it is installed by 3rdparty
 applications such as OptionROMs on graphics devices or network controllers for
 example.
 
-![](/images/menus/health_mgr.jpeg){ class="center" }
+![](../images/menus/health_mgr.jpeg){ class="center" }
 
 ## Secure Boot Configuration
 
 This submenu allows configuring UEFI Secure Boot functionality.
 
-![](/images/menus/secure_boot_main1.png){ class="center" }
+![](../images/menus/secure_boot_main1.png){ class="center" }
 
 By default, Dasharo firmware boots with the default keys/certificates enrolled
 (see [Custom mode and key management](#custom-mode-and-key-management)) and
@@ -85,13 +85,13 @@ default UEFI Secure Boot state depending on platform (in most cases disabled).
 Switching the `Enable Secure Boot` option will enable or disable Secure Boot
 on next boot.
 
-![](/images/menus/secure_boot_main2.png){ class="center" }
+![](../images/menus/secure_boot_main2.png){ class="center" }
 
 The `Enable Secure Boot` option will be available (not grayed out) only if the
 keys/certificates are provisioned. You may see below image if you erase your
 Secure Boot keys/certificates or don't have PK enrolled:
 
-![](/images/menus/secure_boot_main3.png){ class="center" }
+![](../images/menus/secure_boot_main3.png){ class="center" }
 
 ### Custom mode and key management
 
@@ -99,11 +99,11 @@ The basic menu allows only enabling or disabling Secure Boot. For advanced
 options, switch the `Secure Boot Mode` from `Standard Mode` to `Custom Mode`,
 which will cause the `Advanced Secure Boot Keys Management` submenu to appear.
 
-![](/images/menus/secure_boot_main4.png){ class="center" }
+![](../images/menus/secure_boot_main4.png){ class="center" }
 
 `Advanced Secure Boot Keys Management` menu content looks as follows:
 
-![](/images/menus/secure_boot_advanced1.png){ class="center" }
+![](../images/menus/secure_boot_advanced1.png){ class="center" }
 
 * `Reset to default Secure Boot Keys` will cause the following keys/certificates
   to be enrolled:
@@ -125,14 +125,14 @@ which will cause the `Advanced Secure Boot Keys Management` submenu to appear.
     > To learn more about those certificates, please visit
     > [Windows Secure Boot Key Creation and Management Guidance](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11).
 
-    ![](/images/menus/secure_boot_advanced2.png){ class="center" }
+    ![](../images/menus/secure_boot_advanced2.png){ class="center" }
 
 * `Erase to default Secure Boot Keys` will erase all Secure Boot keys and certificates
   currently provisioned:
 
-    ![](/images/menus/secure_boot_advanced3.png){ class="center" }
+    ![](../images/menus/secure_boot_advanced3.png){ class="center" }
 
-    ![](/images/menus/secure_boot_advanced4.png){ class="center" }
+    ![](../images/menus/secure_boot_advanced4.png){ class="center" }
 
 One may also delete and enroll individual keys, certificates and database
 signatures via `PK/KEK/DB/DBX/DBT Options` (scroll the menu down if `DBT
@@ -143,19 +143,19 @@ Options` are not visible).
 TCG2 Configuration submenu is responsible for displaying TPM 2.0 information
 and managing the module.
 
-![](/images/menus/tcg2_config.jpeg){ class="center" }
+![](../images/menus/tcg2_config.jpeg){ class="center" }
 
 The basic information displayed are the TPM device family, interface, but also
 information about supported hashing algorithms.
 
-![](/images/menus/tcg2_config2.jpeg){ class="center" }
+![](../images/menus/tcg2_config2.jpeg){ class="center" }
 
-![](/images/menus/tcg2_config3.jpeg){ class="center" }
+![](../images/menus/tcg2_config3.jpeg){ class="center" }
 
 It is also possible to perform various TPM2 physical presence operations
 (`TPM2 Operation`) and enable or disable PCR banks.
 
-![](/images/menus/tcg2_actions.jpeg){ class="center" }
+![](../images/menus/tcg2_actions.jpeg){ class="center" }
 
 The supported TPM2 operations are:
 
@@ -174,19 +174,19 @@ For more details about the TPM operations see
 HDD Security Configuration allows one to set SATA disk password. Note that
 all SATA disks will be displayed, even these that don't support the feature.
 
-![](/images/menus/hdd_passwd.jpeg){ class="center" }
+![](../images/menus/hdd_passwd.jpeg){ class="center" }
 
 To check if the disk supports password feature, enter the specific disk submenu
 to see if `Security Supported` displays `Yes`:
 
-![](/images/menus/hdd_passwd2.jpeg){ class="center" }
+![](../images/menus/hdd_passwd2.jpeg){ class="center" }
 
 If one scrolls down a bit, more information is displayed about current state of
 the disk password feature:
 
-![](/images/menus/hdd_passwd3.jpeg){ class="center" }
+![](../images/menus/hdd_passwd3.jpeg){ class="center" }
 
-![](/images/menus/hdd_passwd4.jpeg){ class="center" }
+![](../images/menus/hdd_passwd4.jpeg){ class="center" }
 
 At the bottom of the page there are two checkboxes:
 
@@ -213,8 +213,8 @@ protocols. The menu lists the network devices with the UEFI protocol installed.
 One may check out the network controller information, like MAC address,
 driver used and link status. Example view with MAC address blurred:
 
-![](/images/menus/net_dev_list.jpeg){ class="center" }
+![](../images/menus/net_dev_list.jpeg){ class="center" }
 
-![](/images/menus/net_dev_list2.jpeg){ class="center" }
+![](../images/menus/net_dev_list2.jpeg){ class="center" }
 
-![](/images/menus/net_dev_list3.jpeg){ class="center" }
+![](../images/menus/net_dev_list3.jpeg){ class="center" }
