@@ -5,8 +5,8 @@ firmware update. The update process may be different, depending on which
 firmware version is currently installed on your device.
 
 Your firmware version can be checked by entering the
-[Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md) using the
-++f2++ key while booting.
+[Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md)
+using the ++f2++ key while booting.
 
 === "Dasharo (UEFI)"
 
