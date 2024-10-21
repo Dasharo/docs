@@ -26,6 +26,11 @@ localhost:12345` (the number is random).
 It is crucial at this point to verify that the pages you have changed
 render correctly as HTML in local preview.
 
+It is also important to read through the console output after running `mkdocs
+serve`. You should definitely eliminate any `WARNING`s related to your
+contribution before submitting it for review, and you should consider applying
+suggestions marked as `INFO`.
+
 If you want to use a browser for a live preview while you keep making changes,
 consider adding `--dirty` flag to `mkdocs serve` command. It limits automatic
 regeneration to only changed files and makes browser updates much faster.
