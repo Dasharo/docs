@@ -78,7 +78,7 @@ stress-ng: info:  [25309] dispatching hogs: 16 cpu
 1. After reboot, booting into the OS should be blocked and following warning
     message should appear:
 
-    ![boot_block](/images/battery_block_popup.jpg)
+    ![boot_block](../../images/battery_block_popup.jpg)
 
 ## BBB001.002 Boot blocking (charger connected) (Ubuntu)
 
@@ -157,11 +157,11 @@ disconnected from the DUT.
 
 1. Unscrew the bottom cover from the DUT.
 
-    ![laptop_without_cover](/images/nv4x_board_chips.jpg)
+    ![laptop_without_cover](../../images/nv4x_board_chips.jpg)
 
 1. Disconnect the battery (1)
 
-    ![battery_connector](/images/ns5x_battery_unplugged.jpg)
+    ![battery_connector](../../images/ns5x_battery_unplugged.jpg)
 
 1. Reattach the bottom cover and flip the DUT over.
 1. Plug the charger into the DUT.
@@ -171,6 +171,6 @@ disconnected from the DUT.
 
 1. After powering on the DUT, following warning message should appear:
 
-    ![battery_connection_warning](/images/battery_connection.jpg)
+    ![battery_connection_warning](../../images/battery_connection.jpg)
 
 1. After pressing enter or passing the timeout, the DUT should continue booting.

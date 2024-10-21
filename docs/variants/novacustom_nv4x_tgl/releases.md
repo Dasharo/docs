@@ -257,7 +257,7 @@ Please note, that version 1.3.0 of `Dasharo BIOS firmware` works correctly
 open-source EC firmware is used, so additional steps need to be taken when
 upgrading.
 
-Please refer to the [Firmware update](/unified/novacustom/firmware-update)
+Please refer to the [Firmware update](../../unified/novacustom/firmware-update.md)
 section for more details on upgrading your firmware.
 
 ### Added

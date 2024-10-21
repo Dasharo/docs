@@ -385,7 +385,7 @@ the previous to the currently tested version.
    currently testing) is flashed to the DUT.
 1. If custom boot logo functionality is supported, ensure that a custom logo
    is installed. Follow the steps outlined
-   [here](https://docs.dasharo.com/guides/logo-customization/).
+   [here](https://docs.dasharo.com/guides/logo-customization.md).
 1. Ensure that the DUT is connected to a wired network.
 
     > Use an Ethernet cable plugged into the DUT's onboard NIC. USB networking
