@@ -41,7 +41,7 @@ You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

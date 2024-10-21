@@ -4,7 +4,7 @@ Boot Maintenance Manager is mainly used to manage boot options, boot timeout,
 next boot variable, console inputs and outputs. It also provides a way to add
 driver options, but it is rather rarely used.
 
-![](/images/menus/boot_maint_mgr.jpeg){ class="center" }
+![](../images/menus/boot_maint_mgr.jpeg){ class="center" }
 
 * `Boot Next Value` is used to set which boot options should be booted after a
   reboot. This setting is not permanent and works only after the first reboot,
@@ -18,7 +18,7 @@ driver options, but it is rather rarely used.
 
 This submenu allows to manipulate the boot order and boot options in general:
 
-![](/images/menus/boot_opts.jpeg){ class="center" }
+![](../images/menus/boot_opts.jpeg){ class="center" }
 
 ## Add Boot Option
 
@@ -26,16 +26,16 @@ When selecting to add a boot option, file explorer appears where one has to
 navigate to the desired disk, partition and file which shall be executed if the
 boot options is selected:
 
-![](/images/menus/add_boot_opt.jpeg){ class="center" }
+![](../images/menus/add_boot_opt.jpeg){ class="center" }
 
 NOTE: only EFI files may be used. If the file is already selected a window to
 set the boot option name appears:
 
-![](/images/menus/add_boot_opt2.jpeg){ class="center" }
+![](../images/menus/add_boot_opt2.jpeg){ class="center" }
 
 To set the name press `ENTER` to activate the prompt:
 
-![](/images/menus/add_boot_opt3.jpeg){ class="center" }
+![](../images/menus/add_boot_opt3.jpeg){ class="center" }
 
 Confirm the name (it must not be too short) with `ENTER` and then
 `Commit Changes and Exit`. From now on the boot options should appear on the
@@ -46,7 +46,7 @@ and [One Time Boot](overview.md#one-time-boot) menu.
 
 To delete boot options, enter `Delete Boot Option` submenu.
 
-![](/images/menus/del_boot_opt.jpeg){ class="center" }
+![](../images/menus/del_boot_opt.jpeg){ class="center" }
 
 Select the checkboxes which options should be removed and then
 `Commit Changes and Exit`. From now on the deleted boot options should not
@@ -64,13 +64,13 @@ PLease note that the boot order may be changed only for currently detected and
 registered boot options and devices. Dasharo does not yet provide fixed boot
 order options per interface, e.g. prioritize USB over NVMe or SATA, etc.
 
-![](/images/menus/boot_order.jpeg){ class="center" }
+![](../images/menus/boot_order.jpeg){ class="center" }
 
 To move the boot options priority, press `ENTER` when selecting the boot
 options list. A popup windows with the entries should show up. Use `+` and `-`
 on the hovered item to move it up and down, use arrows to change hovered item.
 
-![](/images/menus/boot_order2.jpeg){ class="center" }
+![](../images/menus/boot_order2.jpeg){ class="center" }
 
 If you are satisfied with the order you set, press `ENTER` to confirm it and
 then `Commit Changes and Exit`. The boot order should be immediately applied,
@@ -82,14 +82,14 @@ and [One Time Boot](overview.md#one-time-boot) menu.
 This menu is used to load additional drivers. It is used very rarely so it is
 not described in detail.
 
-![](/images/menus/driver_opts.jpeg){ class="center" }
+![](../images/menus/driver_opts.jpeg){ class="center" }
 
 ## Console Options
 
 This menu is used to manipulate EFI console variable. Typically there is no need
 to use it.
 
-![](/images/menus/console_opts.jpeg){ class="center" }
+![](../images/menus/console_opts.jpeg){ class="center" }
 
 Here one may enable/disable input and output devices. Please note that most
 output and input devices devices are registered automatically during boot.

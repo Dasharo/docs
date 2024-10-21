@@ -19,7 +19,7 @@ automatically over the network.
 !!! question "Does my device support Firmware Update Mode?"
 
     Not sure if your device supports Firmware Update Mode? Check out the
-    [compatibility table](/kb/firmware-update-mode#supported-devices) in the
+    [compatibility table](../kb/firmware-update-mode.md#supported-devices) in the
     Knowledge Base section.
 
 To enter Firmware Update Mode:
@@ -47,7 +47,7 @@ automatically after reboot and the device will reboot again.
 !!! tip
 
     Check out a more detailed explanation and rationale for Firmware Update Mode
-    in the [Knowledge Base](/kb/firmware-update-mode) section.
+    in the [Knowledge Base](../kb/firmware-update-mode.md) section.
 
 ## Manual update
 
