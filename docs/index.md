@@ -111,7 +111,7 @@ Catch up on the latest in the Dasharo world:
 
 - [FAQ](osf-trivia-list/introduction.md)
 - [Contact Us](https://www.dasharo.com/pages/contact/)
-- [Newsletter Subscription](https://www.dasharo.com/newsletter)
+- [Newsletter Subscription](https://www.dasharo.com/#newsletter)
 
   > Connect with us on [Twitter](https://twitter.com/dasharo_com),
   > [LinkedIn](https://www.linkedin.com/company/10157825),
