@@ -67,13 +67,12 @@ Test results for this release can be found
 [sha256][pcengines_apu6_seabios_v24.05.00.01.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu6_seabios_v24.05.00.01.rom_sig]{.md-button}
 
-This is a Dasharo Pro/Enterprise Package (formerly Dasharo Entry Subscription)
+This is a Dasharo Pro/Enterprise Package (formerly Dasharo Pro Package)
 Release. To obtain access to the pre-built binaries you will have to [get the
-Dasharo Pro/Enterprise Package (formerly Dasharo Entry
-Subscription)](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+Dasharo Pro/Enterprise Package (formerly Dasharo Pro Package)](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Pro/Enterprise Package (formerly Dasharo Entry
-Subscription) newsletter.
+subscription via Dasharo Pro/Enterprise Package (formerly Dasharo Pro Package
+) newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)

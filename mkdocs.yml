@@ -138,6 +138,10 @@ plugins:
         'variants/protectli_vp66xx/test-matrix.md': 'unified/protectli/test-matrix.md#vp6630vp6650vp6670'
         'variants/protectli_vp2410/test-matrix.md': 'unified/protectli/test-matrix.md#vp2410'
         'variants/protectli_vp2420/test-matrix.md': 'unified/protectli/test-matrix.md#vp2420'
+        'osf-trivia-list/dasharo-entry-subscription.md': 'osf-trivia-list/dasharo-pro-package.md'
+        'dev-proc/versioning.md#dasharo-entry-subscription-releases': 'dev-proc/versioning.md#dasharo-pro-package-releases'
+        'osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials': 'osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials'
+        'ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber': 'ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber'
 
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
@@ -427,7 +431,7 @@ nav:
   - 'FAQ':
       - 'Introduction': osf-trivia-list/introduction.md
       - 'Dasharo': osf-trivia-list/dasharo.md
-      - 'Dasharo Entry Subscription': osf-trivia-list/dasharo-entry-subscription.md
+      - 'Dasharo Pro Package': osf-trivia-list/dasharo-pro-package.md
       - 'Dasharo Tools Suite': osf-trivia-list/dts.md
       - 'Deployment': osf-trivia-list/deployment.md
       - 'Firmware build process': osf-trolling-list/build_process.md
