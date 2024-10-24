@@ -84,6 +84,22 @@ markdown_extensions:
           case: lower
 
 plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
   - search
   - mkdocs-video
   - redirects:
@@ -374,6 +390,7 @@ nav:
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
       - 'Verifying signatures': guides/signature-verification.md
+      - 'Verifying reproducible builds': guides/reproducible-build-verification.md
       - 'Boot logo replacement': guides/logo-customization.md
       - 'Lab Assembly':
           - 'MinnowBoard Turbot': guides/lab-assembly/minnowboard-turbot.md
