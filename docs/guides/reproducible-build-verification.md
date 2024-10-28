@@ -7,15 +7,15 @@ code. This ensures that no tampering, such as inserting malicious code during
 the build process, has occurred.
 
 The most obvious and undisputable way of verifying build reproduction is
-comparing `sha256` or `md5` hashes of two given binaries. There are, however,
-corner cases where this is not an ideal approach - such as when the same
-binary is signed with a different key.
+comparing the hashes of two given binaries. There are, however, corner cases
+where this is not an ideal approach - such as when the same binary is signed
+with a different key.
 
 ## Romscope
 
-To provide a more comprehensive way of comparing two Dasharo binaries which
-are supposed to have been built from the same source, we have developed
-[romscope](https://github.com/Dasharo/romscope).
+To compare two binaries that were built from the same source but contain
+[embedded signatures](https://reproducible-builds.org/docs/embedded-signatures/)
+, we have developed [romscope](https://github.com/Dasharo/romscope).
 
 ### Basic verification
 
