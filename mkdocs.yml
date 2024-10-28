@@ -588,6 +588,7 @@ nav:
               - 'Power State after Power Fail': unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
               - 'ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
               - 'Dasharo Configuration Utility': unified-test-documentation/dasharo-compatibility/362-dcu.md
+              - 'Build on a fresh OS Installation': unified-test-documentation/dasharo-compatibility/build-on-new-os.md
           - 'Dasharo security':
               - 'TPM support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - 'TPM2 Commands': unified-test-documentation/dasharo-security/200-tpm2-commands.md
