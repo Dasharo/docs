@@ -11,22 +11,31 @@ need to execute the setup actions before each independent case.
 #### Firmware
 
 1. Obtain `FIRMWARE` binary:
-    1. you can download it from `release` document dedicated for platform which
-        is used by you.
-    1. or you can build one yourself as shown in the `building` document
+    1. you can download it from `Releases` page dedicated for your platform
+    1. or you can build one yourself as shown in the `Building manual` page
         dedicated for platform which is used by you.
-1. Flash `FIRMWARE` binary to the DUT. Device flashing procedure should be
-    carried out in accordance with the guidelines in `Flashing` document
-    dedicated for platform which is in use.
+1. Flash `FIRMWARE` binary to the DUT according to the instructions in [docs.dasharo](../../docs/variants/overview.md)
+for your device.
+    1. If the device already has Dasharo, see the `Firmware update` page
+    1. If the device has a diffrent firmware installed, see the
+    `Firmware transition` page
+    1. If the device is bricked, see the `Recovery` page.
 
-#### OS installer
 
-1. Download `OPERATING_SYSTEM` installer image.
+
+#### OS installation
+
+In case the 'OPERATING_SYSTEM' is supported by [Dasharo Preseeds](https://github.com/dasharo/preseeds)
+use the instructions from there. Otherwise continue with the steps below:
+
+##### OS installer
+
+1. Download an `OPERATING_SYSTEM` installer image
 1. Attach USB stick to the PC.
 1. Flash `OPERATING_SYSTEM` image to the USB stick.
 1. Attach the USB stick to the `DUT`.
 
-#### OS installation
+##### Installing the OS
 
 1. Power on the DUT
 1. Enter the boot menu using the `BIOS_SETUP_KEY`.
@@ -39,16 +48,107 @@ need to execute the setup actions before each independent case.
 1. Power off the DUT.
 1. Remove the installation media (USB stick with installer).
 
-#### NVIDIA drivers - Ubuntu 22.04
+#### OS Preparation
+##### Windows
+1.(Windows 11) Run PowerShell as an Administrator.
+1. Install the OpenSSH Client
+
+    ```powershell
+    Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+    ```
+
+2. Install the OpenSSH Server
+    
+    ```powershell
+    Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+    ```
+
+3. Start the sshd service
+
+    ```powershell
+    Start-Service sshd
+    ```
+
+4. Make the sshd service start automatically on startup:
+    
+    ```powershell
+    Set-Service -Name sshd -StartupType 'Automatic'
+    ```
+
+5. Confirm the Firewall rule is configured. It should be created automatically
+by setup. Run the following to verify
+
+    ```powershell
+    if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyContinue | Select-Object Name, Enabled)) {
+        Write-Output "Firewall Rule 'OpenSSH-Server-In-TCP' does not exist, creating it..."
+        New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+    } else {
+        Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
+    }
+    ```
+
+6. If during connection via SSH you want to run `PowerShell.exe` instead of
+`cmd.exe` use below command:
+
+    ```powershell
+    New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell \
+        -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" \
+        -PropertyType String -Force
+    ```
+
+7. Sets the PowerShell execution policies for Windows computers.
+
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    ```
+
+8. Use powercfg.exe to control power plans to prevent sleep.
+
+    ```powershell
+    Powercfg /Change standby-timeout-ac 0
+    Powercfg /Change standby-timeout-dc 0
+    ```
+
+##### Linux
+1. Open the terminal.
+1. Disable the shutdown confirmation dialogues
+
+    ```bash
+    sudo gsettings set org.gnome.SessionManager logout-prompt false
+    ```
+2. Set up a serial terminal:
+    ```bash
+    sudo nano /etc/default/grub
+    ```
+3. Edit the file `/etc/default/grub` by adding
+`console=tty0 console=ttyS0,115200` in variable `GRUB_CMDLINE_LINUX_DEFAULT`.
+4. Update grub 
+    ```bash
+    sudo update-grub
+    ```
+5. Configure SSH: 
+    ```bash
+    sudo apt install openssh-server
+    systemctl start sshd
+    ```
+
+#### NVIDIA drivers - Ubuntu 20.04
 
 1. Power on the DUT.
 1. Wait until the `OPERATING_SYSTEM` boots from disk.
 1. Login into the `OPERATING_SYSTEM`.
-1. Open a terminal window and execute the following commands:
+1. Open a terminal window.
+1. Search for the newest driver version
 
 ```bash
 sudo apt update
-sudo apt install nvidia-driver-470
+sudo apt search nvidia-driver --names-only
+```
+
+1. Install the newest driver (you might find a version higher than 560)
+
+```bash
+sudo apt install nvidia-driver-560
 ```
 
 1. A password prompt for secure boot configuration will appear. Choose a
@@ -69,3 +169,8 @@ sudo apt install nvidia-driver-470
 1. Power on the DUT.
 1. Wait until the `OPERATING_SYSTEM` boots from disk.
 1. Login into the `OPERATING_SYSTEM`.
+
+
+### Special cases
+
+Special cases are documented in [Open Source Firmware Validation repo](https://github.com/Dasharo/open-source-firmware-validation/tree/develop/docs)
