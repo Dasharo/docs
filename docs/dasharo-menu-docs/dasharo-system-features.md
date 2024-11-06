@@ -3,11 +3,11 @@
 When entering the `Dasharo System Features` menu, one may see the following
 submenus to appear:
 
-![](/images/menus/dasharo_features.jpeg){ class="center" }
+![](../images/menus/dasharo_features.jpeg){ class="center" }
 
 ## Dasharo Security Options
 
-![](/images/menus/dasharo_sec_opts.jpeg){ class="center" }
+![](../images/menus/dasharo_sec_opts.jpeg){ class="center" }
 
 This menu offers security-sensitive options like:
 
@@ -46,7 +46,7 @@ This menu offers security-sensitive options like:
 
 ## Networking Options
 
-![](/images/menus/dasharo_net_opts.jpeg){ class="center" }
+![](../images/menus/dasharo_net_opts.jpeg){ class="center" }
 
 - `Enable network boot` - the option controls if the network boot should be
   enabled or not. This option is disabled by default on most Dasharo supported
@@ -57,7 +57,7 @@ This menu offers security-sensitive options like:
 
 ## USB Configuration
 
-![](/images/menus/dasharo_usb_opts.jpeg){ class="center" }
+![](../images/menus/dasharo_usb_opts.jpeg){ class="center" }
 
 - `Enable USB stack` - controls loading of UEFI USB drivers, when enabled all
   USB drivers are loaded making USB keyboards and mass storage drives
@@ -75,7 +75,7 @@ This submenu is used to access Intel Management Engine related options.
 Currently the only option available is `Intel ME mode` which allows to enable
 or disable Management Engine:
 
-![](/images/menus/me_menu.jpeg){ class="center" }
+![](../images/menus/me_menu.jpeg){ class="center" }
 
 On the right side of the window there is a help section describing the option
 meaning. If the window is too small, the help section may be divided and not
@@ -92,7 +92,7 @@ Intel ME can be disabled in two ways:
   disabled. HAP method is much more efficient as it halts the ME firmware
   execution even earlier than Soft Disable described above
 
-![](/images/menus/me_menu2.jpeg){ class="center" }
+![](../images/menus/me_menu2.jpeg){ class="center" }
 
 When the mode is set to `Enabled`, Dasharo enables the Intel Management engine
 by either sending `ME_ENABLE` command via MEI/HECI or clearing the HAP bit in
@@ -112,7 +112,7 @@ clean the ME region with `me_cleaner` script permanently.
 
 ## Chipset Configuration
 
-![](/images/menus/dasharo_chipset_opts.jpeg){ class="center" }
+![](../images/menus/dasharo_chipset_opts.jpeg){ class="center" }
 
 The submenu contains general chipset options. Currently available options:
 
@@ -138,7 +138,7 @@ The submenu contains general chipset options. Currently available options:
 
 The submenu contains general power management options.
 
-![](/images/menus/dasharo_power_opts.jpeg){ class="center" }
+![](../images/menus/dasharo_power_opts.jpeg){ class="center" }
 
 Currently available options:
 
@@ -166,21 +166,21 @@ stop charging.
 
 Flow chart for the two settings mentioned above:
 
-![](/images/battery_threshold_flowchart.png){class="center"}
+![](../images/battery_threshold_flowchart.png){class="center"}
 
 - `Power state after power/AC loss` - controls
  what power state the platform
   should switch to when the main AC power is restored. Default value is
   platform-dependent.
 
-![](/images/menus/pwr_fail_opt.png){ class="center" }
+![](../images/menus/pwr_fail_opt.png){ class="center" }
 
 ## PCI/PCIe Configuration
 
 The submenu contains options related to the PCI and PCI Express devices and
 subsystem.
 
-![](/images/menus/dasharo_pci_opts.jpeg){ class="center" }
+![](../images/menus/dasharo_pci_opts.jpeg){ class="center" }
 
 - `Enable PCIe Resizable BARs` - enables/disables the PCIe Resizable BARs
   during PCI enumeration process. If enabled, the PCI Express devices
@@ -188,24 +188,24 @@ subsystem.
   resources (that typically means bigger memory resources assigned to the
   device). By default this option is disabled for compatibility reasons.
 
-![](/images/menus/rebar_default_flow.png){ class="center" }
+![](../images/menus/rebar_default_flow.png){ class="center" }
 
-![](/images/menus/rebar_flow.png){ class="center" }
+![](../images/menus/rebar_flow.png){ class="center" }
 
 - `OptionROM Execution Policy` - controls which OptionROMs are allowed to be
   loaded and run. Default value may depend on platform (either `Disable all`
   or `Enable All`)
 
-![](/images/menus/optionrom_default_flow.png){ class="center" }
+![](../images/menus/optionrom_default_flow.png){ class="center" }
 
-![](/images/menus/optionrom_flow.png){ class="center" }
+![](../images/menus/optionrom_flow.png){ class="center" }
 
 ## Memory Configuration
 
 The submenu contains options related to the RAM memory configuration.
 
-![](/images/menus/dasharo_mem_opts1.jpeg){ class="center" }
-![](/images/menus/dasharo_mem_opts2.jpeg){ class="center" }
+![](../images/menus/dasharo_mem_opts1.jpeg){ class="center" }
+![](../images/menus/dasharo_mem_opts2.jpeg){ class="center" }
 
 - `Memory SPD profile` - chooses the memory overclocking profile to use when
   training the memory. Custom profiles are not yet supported. Currently, there
@@ -215,13 +215,13 @@ The submenu contains options related to the RAM memory configuration.
 **WARNING**: Changing this value may brick your system. Be sure to have a
 recovery method before modifying this setting. You have been warned.
 
-![](/images/menus/spd_profile_flow.png){ class="center" }
+![](../images/menus/spd_profile_flow.png){ class="center" }
 
 ## Serial Port Configuration
 
 The submenu contains options related to the serial port configuration.
 
-![](/images/menus/serial_opts.jpeg){ class="center" }
+![](../images/menus/serial_opts.jpeg){ class="center" }
 
 - `Enable Serial Port Console Redirection` - when enabled, the firmware will
   output also on the serial port specific to the platform. Default value is
@@ -236,7 +236,7 @@ splitter must choose the highest resolution supported by all consoles.
 
 The submenu contains options related to the CPU.
 
-![](/images/menus/cpu_config1.jpg){ class="center" }
+![](../images/menus/cpu_config1.jpg){ class="center" }
 
 - `Number of active P-cores` - sets the number of active Performance cores on
   a hybrid CPU architecture system, such as 12th generation Intel Core or
@@ -253,9 +253,9 @@ The submenu contains options related to the CPU.
   secondary threads on hyper-threading supported cores to be disabled. On
   hybrid CPU architecture, only P-cores support Hyper-Threading.
 
-![](/images/menus/cpu_config2.jpg){ class="center" }
+![](../images/menus/cpu_config2.jpg){ class="center" }
 
-![](/images/menus/cpu_config3.jpg){ class="center" }
+![](../images/menus/cpu_config3.jpg){ class="center" }
 
 ## Additional information
 

@@ -6,9 +6,6 @@ compatible with MSI PRO Z690-A boards. The content of the page is generated
 with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
-The very first historical attempt to measure the openness of an firmware image
-is available [here](openness_analysis.md).
-
 ## v0.9.0 heads
 
 Openness Score for msi_ms7d25_v0.9.0_ddr5_heads.rom

@@ -7,7 +7,7 @@ This document describes the operation and rationale for Firmware Update Mode.
 !!! tip
 
     If you are a user looking for a guide for updating firmware, check out the
-    [Guides](/guides/firmware-update) section instead.
+    [Guides](../guides/firmware-update.md) section instead.
 
 ## Firmware Update Mode
 

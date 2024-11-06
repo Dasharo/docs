@@ -9,7 +9,7 @@ coreboot port on the NovaCustom V540TU laptop.
 
 ### Front & Rear Views
 
-![](/images/novacustom_v540tu_ports_front_rear_view.png)
+![](../../images/novacustom_v540tu_ports_front_rear_view.png)
 
 | No.  | Description                                      |
 |------|--------------------------------------------------|
@@ -20,7 +20,7 @@ coreboot port on the NovaCustom V540TU laptop.
 
 ### Left side view
 
-![](/images/novacustom_v540tu_ports_left_view.png)
+![](../../images/novacustom_v540tu_ports_left_view.png)
 
 | No.  | Description                                      |
 |------|--------------------------------------------------|
@@ -32,7 +32,7 @@ coreboot port on the NovaCustom V540TU laptop.
 
 ### Right side view
 
-![](/images/novacustom_v540tu_ports_right_view.png)
+![](../../images/novacustom_v540tu_ports_right_view.png)
 
 | No.  | Description                                                  |
 |------|--------------------------------------------------------------|

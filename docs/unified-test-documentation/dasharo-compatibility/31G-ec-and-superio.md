@@ -1206,7 +1206,7 @@ This test verifies that the sleep hotkey works correctly.
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Proceed with the
-    [Installing updates and drivers](/unified/clevo/post-install/#windows-11)
+    [Installing updates and drivers](../../unified/clevo/post-install.md#windows-11)
     section.
 
 **Test steps**
@@ -1302,7 +1302,7 @@ mode.
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Proceed with the
-    [Installing updates and drivers](/unified/clevo/post-install/#windows-11)
+    [Installing updates and drivers](../../unified/clevo/post-install.md#windows-11)
     section.
 
 **Test steps**
@@ -1376,7 +1376,7 @@ system.
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Proceed with the
-    [Installing updates and drivers](/unified/clevo/post-install/#windows-11)
+    [Installing updates and drivers](../../unified/clevo/post-install.md#windows-11)
     section.
 
 **Test steps**
@@ -2182,7 +2182,7 @@ This test verifies the automatic EC firmware update / sync feature in coreboot.
 
 1. Power on the DUT.
 1. Proceed with the firmware update steps [as documented in the firmware update
-   guide](/guides/firmware-update).
+   guide](../../guides/firmware-update.md).
 1. Reboot the DUT after updating firmware.
 1. Wait until the DUT updates the EC (indicated by the fans spinning at full
    speed) and powers off.
@@ -2219,7 +2219,7 @@ coreboot does not attempt to update the EC while an AC adapter is not connected.
 
 1. Power on the DUT.
 1. Proceed with the firmware update steps [as documented in the firmware update
-   guide](/guides/firmware-update).
+   guide](../../guides/firmware-update.md).
 1. Disconnect the AC adapter, if connected.
 1. Reboot the DUT.
 1. Note the contents of the popup displayed on the Dasharo boot screen.

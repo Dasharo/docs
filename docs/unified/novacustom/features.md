@@ -122,7 +122,7 @@ Press the ++fn+caps-lock++ keys combination again.
 ## Fan profiles
 
 There are two fan profiles implemented. The profiles can be selected via the
-[Power Management Options](/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+[Power Management Options](../../dasharo-menu-docs/dasharo-system-features.md#power-management-options)
 menu in the Setup Menu.
 
 Fan profiles are defined as follows:

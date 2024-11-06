@@ -315,7 +315,7 @@ vboot checks the signature and decides whether read-write partition is safe to
 boot, otherwise it proceeds with execution of recovery firmware. The boot flow
 is shown on the diagram below:
 
-![vboot boot flow](/images/vboot_bootflow.jpg)
+![vboot boot flow](../../images/vboot_bootflow.jpg)
 
 In order to properly protect the firmware, one has to lock whole `WP_RO` region
 define by flashmap in coreboot. To locate the region offset and size one has to

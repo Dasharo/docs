@@ -280,4 +280,4 @@ system.
 
 The supported method is to follow
 [initial deployment](#initial-deployment), and then the
-[Transition from Dasharo UEFI to Heads variant](/unified/msi/firmware-transition#transition-from-dasharo-uefi-to-heads-variant).
+[Transition from Dasharo UEFI to Heads variant](firmware-transition.md#transition-from-dasharo-uefi-to-heads-variant).

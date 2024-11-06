@@ -25,7 +25,7 @@ This test aims to verify that Heads could be installed on the DUT.
 **Test steps**
 
 1. Flash bootkernel partition with Heads in accordance with the
-    [documentation](/variants/talos_2/initial-deployment/#heads-installation).
+    [documentation](../../variants/talos_2/initial-deployment.md#heads-installation).
 
 **Expected result**
 

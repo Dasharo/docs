@@ -7,7 +7,7 @@
 1. Proceed with the
    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Get familiar with
-   [Logo customization procedure](/guides/logo-customization)
+   [Logo customization procedure](../../guides/logo-customization.md)
 
 ## LCM001.001 Replace logo in existing image and flashing firmware
 
@@ -48,7 +48,7 @@ will be shown properly.
 1. Wait for `Enter an option:`.
 1. Type in `S` and press `Enter`.
 1. Based on the
-   [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
+   [dedicated documentation](../../guides/logo-customization.md#build-image-with-custom-logo)
    replace the logo in an existing image.
 1. Reboot the DUT and observe the boot logo.
 
@@ -80,7 +80,7 @@ will be shown properly.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Based on the
-    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
+    [dedicated documentation](../../guides/logo-customization.md#build-image-with-custom-logo)
     build firmware with the custom logo.
 1. Flash the firmware by using the internal programmer and `flashrom` tool. If
     DUT is already flashed with the Dasharo firmware and only the logo should
@@ -133,9 +133,9 @@ logo.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
 1. Based on the
-    [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
+    [dedicated documentation](../../guides/logo-customization.md#build-image-with-custom-logo)
     build firmware with the logo, that that does not meet the
-    [Quality criteria](/guides/logo-customization#prerequisites).
+    [Quality criteria](../../guides/logo-customization.md#prerequisites).
 1. Flash the firmware by using the internal programmer and `flashrom` tool. If
     DUT is already flashed with the Dasharo firmware and only the logo should
     be replaced, the following command should be used:
@@ -187,7 +187,7 @@ display.
 1. Boot `Dasharo Tools Suite`
 1. Type in `9` to gain shell access.
 1. Basing on the
-   [dedicated documentation](/guides/logo-customization#build-image-with-custom-logo)
+   [dedicated documentation](../../guides/logo-customization.md#build-image-with-custom-logo)
    replace the logo in an existing image.
 1. Run `dasharo-deploy update`
 1. Reboot the DUT and observe the boot logo.

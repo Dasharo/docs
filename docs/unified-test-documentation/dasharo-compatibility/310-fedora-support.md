@@ -25,7 +25,7 @@ This test aims to verify that Fedora Stable distribution could be installed.
 
 **Test steps**
 
-1. According to the [Documentation](/unified-test-documentation/generic-test-setup#os-installation)
+1. According to the [Documentation](../generic-test-setup.md#os-installation)
     perform the OS installation process.
 
 **Expected result**

@@ -75,7 +75,7 @@ subscription via Dasharo Pro/Enterprise Package (formerly Dasharo Pro Package
 ) newsletter.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/pcengines_apu2/dasharo-release-24.05.00.x-for-pc-engines-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

@@ -106,7 +106,7 @@ You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -131,7 +131,7 @@ Test results for this release can be found
 - [MSI FLASHBIOS recovery support](https://docs.dasharo.com/unified/msi/recovery/#using-msi-flashbios-button)
 - [Raptor Lake-S CPU support](https://github.com/Dasharo/dasharo-issues/issues/130)
 - [MSI ACPI device that triggers automatic driver and utility installation manager](https://www.youtube.com/watch?v=K-v-veV_jvI)
-- [Support for logo customization](https://docs.dasharo.com/guides/logo-customization/)
+- [Support for logo customization](https://docs.dasharo.com../../guides/logo-customization/)
 - UEFI 2.8 errata C compliance in EDKII fork
 - [Firmware Update Mode feature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 
@@ -228,7 +228,7 @@ To get more details about the changes one may read the
 [sha256.sig][msi_ms7d25_v1.1.1_ddr5.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -321,7 +321,7 @@ Test results for this release can be found
 [sha256.sig][msi_ms7d25_v1.1.0_ddr5.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
@@ -377,7 +377,7 @@ gpg --verify msi_ms7d25_v1.1.0_ddr5.rom.sha256.sig msi_ms7d25_v1.1.0_ddr5.rom.sh
 [sha256.sig][v1.0.0_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
@@ -424,7 +424,7 @@ Test results for this release can be found
 [sha256.sig][v0.4.0_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
@@ -475,7 +475,7 @@ Test results for this release can be found
 [sha256.sig][v0.3.0_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
@@ -524,7 +524,7 @@ Test results for this release can be found
 [sha256.sig][v0.2.0_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:
@@ -573,7 +573,7 @@ Test results for this release can be found
 [sha256.sig][v0.1.0_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-0.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 Commands snippet:

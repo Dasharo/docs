@@ -21,12 +21,12 @@ Test results for this release can be found
 ### Added
 
 - Support for NovaCustom Meteor Lake platform (integrated graphics)
-- [Vboot Verified Boot](https://docs.dasharo.com/guides/vboot-signing/)
+- [Vboot Verified Boot](https://docs.dasharo.com../../guides/vboot-signing/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
 - [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
-- [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
+- [Firmware update mode](https://docs.dasharo.com../../guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [Early boot DMA protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
@@ -69,7 +69,7 @@ Test results for this release can be found
 [sha256.sig][novacustom_v54x_mtl_v0.9.0_dev_signed.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

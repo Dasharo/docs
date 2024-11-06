@@ -11,7 +11,7 @@ Select your Dasharo firmware flavor:
         __NovaCustom V540TNx__ are 14 inch laptops based on 14th Generation Intel
         Core Ultra processors (Meteor Lake):
 
-        ![](/images/v540tu-front.png){ align=right width=50% }
+        ![](../../images/v540tu-front.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
@@ -23,7 +23,7 @@ Select your Dasharo firmware flavor:
         __NovaCustom V560TNx__ are 16 inch laptops based on 14th Generation Intel
         Core Ultra processors (Meteor Lake):
 
-        ![](/images/v560tu-front.png){ align=right width=50% }
+        ![](../../images/v560tu-front.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
@@ -35,7 +35,7 @@ Select your Dasharo firmware flavor:
         __NovaCustom NS5x/7x 12th Gen__ are 15 and 17 inch laptops based on 12th
         generation Intel Core processor (Alder Lake):
 
-        ![](/images/NS51-front-1.png){ align=right width=50% }
+        ![](../../images/NS51-front-1.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
@@ -48,7 +48,7 @@ Select your Dasharo firmware flavor:
         __NovaCustom NV4x 12th Gen__ is a 14 inch laptop based on 12th
         generation Intel Core processor (Alder Lake):
 
-        ![](/images/NV4x-front-1.png){ align=right width=50% }
+        ![](../../images/NV4x-front-1.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
@@ -60,7 +60,7 @@ Select your Dasharo firmware flavor:
         __NovaCustom NS5x/7x 11th Gen__ are 15 and 17 inch laptops based on 11th
         generation Intel Core processor (Tiger Lake):
 
-        ![](/images/NS51-front-1.png){ align=right width=50% }
+        ![](../../images/NS51-front-1.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
@@ -73,7 +73,7 @@ Select your Dasharo firmware flavor:
         __NovaCustom NV4x 11th Gen__ is a 14 inch laptop based on 11th
         generation Intel Core processor (Tiger Lake):
 
-        ![](/images/NV40-front-1.png){ align=right width=50% }
+        ![](../../images/NV40-front-1.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
@@ -95,12 +95,12 @@ Select your Dasharo firmware flavor:
     in sync is important. Information on compatibility should always be explained
     on the release pages:
 
-    - [V540TU](/variants/novacustom_v540tu/releases/)
-    - [V560TU](/variants/novacustom_v560tu/releases/)
-    - [NV4x 12th Gen](/variants/novacustom_nv4x_adl/releases/)
-    - [NV4x 11th Gen](/variants/novacustom_nv4x_tgl/releases/)
-    - [NS5x/7x 12th Gen](/variants/novacustom_ns5x_adl/releases/)
-    - [NS5x/7x 11th Gen](/variants/novacustom_ns5x_tgl/releases/)
+    - [V540TU](../../variants/novacustom_v540tu/releases.md)
+    - [V560TU](../../variants/novacustom_v560tu/releases.md)
+    - [NV4x 12th Gen](../../variants/novacustom_nv4x_adl/releases.md)
+    - [NV4x 11th Gen](../../variants/novacustom_nv4x_tgl/releases.md)
+    - [NS5x/7x 12th Gen](../../variants/novacustom_ns5x_adl/releases.md)
+    - [NS5x/7x 11th Gen](../../variants/novacustom_ns5x_tgl/releases.md)
 
 === "Dasharo (coreboot + Heads)"
     Heads-based firmware is offered as a Dasharo Pro Package option.
@@ -117,7 +117,7 @@ Select your Dasharo firmware flavor:
         __NovaCustom NV4x 12th Gen__ is a 14 inch laptop based on 12th
         generation Intel Core processor (Alder Lake):
 
-        ![](/images/NV4x-front-1.png){ align=right width=50% }
+        ![](../../images/NV4x-front-1.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
@@ -140,4 +140,4 @@ Select your Dasharo firmware flavor:
     in sync is important. Information on compatibility should always be explained
     on the release pages:
 
-    - [NV4x 12th Gen](/variants/novacustom_nv4x_adl/heads/)
+    - [NV4x 12th Gen](../../variants/novacustom_nv4x_adl/releases_heads.md)

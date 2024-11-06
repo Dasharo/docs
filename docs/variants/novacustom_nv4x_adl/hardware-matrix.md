@@ -9,7 +9,7 @@ coreboot port on the NovaCustom NV4X laptop.
 
 ### Right side view
 
-![](/images/novacustom_nv_ports_right_view.png)
+![](../../images/novacustom_nv_ports_right_view.png)
 
 | No.  | Description                                      |
 |------|--------------------------------------------------|
@@ -24,7 +24,7 @@ coreboot port on the NovaCustom NV4X laptop.
 
 ### Left side view
 
-![](/images/novacustom_nv_ports_left_view.png)
+![](../../images/novacustom_nv_ports_left_view.png)
 
 | No.  | Description                                      |
 |------|--------------------------------------------------|
