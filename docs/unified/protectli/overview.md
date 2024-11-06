@@ -156,7 +156,7 @@ Select Model:
     * [Releases](../../variants/protectli_vp2410/releases.md) - groups
         information about all releases.
     * [Building manual](./building-manual.md) -
-        describes how to build Dasharo for Protecli 2410.
+        describes how to build Dasharo for Protecli VP2410.
     * [Initial deployment](
         ./initial-deployment.md) -
         describes initial Dasharo deployment methods (i. e. flashing new
@@ -183,7 +183,7 @@ Select Model:
     drives). The built-in 8 GB eMMC module can be used for booting a
     light-weight OS for example, or for use as optional storage.
 
-    VP2410 specification:
+    VP2420 specification:
 
     * Intel Celeron® J6412 Quad Core at 2 GHz (Burst up to 2.6 GHz)
     * 4 Intel® 2.5 Gigabit Ethernet NIC ports
@@ -211,7 +211,7 @@ Select Model:
     * [Releases](../../variants/protectli_vp2420/releases.md) - groups
         information about all releases.
     * [Building manual](./building-manual.md) -
-        describes how to build Dasharo for Protecli 2420.
+        describes how to build Dasharo for Protecli VP2420.
     * [Initial deployment](
         ./initial-deployment.md) -
         describes initial Dasharo deployment methods (i. e. flashing new
