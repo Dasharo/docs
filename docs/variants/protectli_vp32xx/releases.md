@@ -12,6 +12,6 @@ For details about our release process please read
 </center>
 
 Test results for this platform can be found
-[here](https://github.com/Dasharo/osfv-results/tree/main/boards/Protectli/VP32xx).
+[here](https://github.com/Dasharo/osfv-results/tree/main/boards/Protectli).
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
