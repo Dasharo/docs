@@ -155,9 +155,6 @@ plugins:
         'variants/protectli_vp2410/test-matrix.md': 'unified/protectli/test-matrix.md#vp2410'
         'variants/protectli_vp2420/test-matrix.md': 'unified/protectli/test-matrix.md#vp2420'
         'osf-trivia-list/dasharo-entry-subscription.md': 'osf-trivia-list/dasharo-pro-package.md'
-        'dev-proc/versioning.md#dasharo-entry-subscription-releases': 'dev-proc/versioning.md#dasharo-pro-package-releases'
-        'osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials': 'osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials'
-        'ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber': 'ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber'
 
         'variants/hardware-compatibility-list.md': 'variants/overview.md'
         'variants/msi_z690/building-manual.md': 'unified/msi/building-manual.md'
