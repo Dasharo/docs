@@ -13,8 +13,6 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. Install the `dmidecode` package: `sudo apt install dmidecode`.
-1. Make yourself familiar with
-    [Updating firmware using fwupd](/unified/novacustom/fwupd-usage)
 
 ## FFW001.001 Firmware update by using fwupd
 
@@ -39,8 +37,6 @@ using fwupd demon.
 1. Power on the DUT.
 1. Boot into the system.
 1. Log into the  system by using the proper login and password.
-1. Configure environment in accordance with the
-    [documentation](/unified/novacustom/fwupd-usage)
 1. Start firmware updating procedure by executing the following command in
     the terminal:
 

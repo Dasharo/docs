@@ -75,6 +75,3 @@ You can also buy the product by mailing us at:
 
 Device assembly and presale validation will be carried out in accordance with
 the [following procedure](../../transparent-validation/msi-z690/presale-assembly-and-validation.md).
-
-<!--Empty pixel to avoid orphaned pages when overview is hidden-->
-[![empty-pixel](../../images/empty_pixel.png)](../../variants/msi_z690/overview.md)

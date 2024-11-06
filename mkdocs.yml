@@ -159,6 +159,19 @@ plugins:
         'osf-trivia-list/dts.md#how-can-i-use-my-dasharo-entry-subscription-credentials': 'osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials'
         'ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber': 'ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber'
 
+        'variants/hardware-compatibility-list.md': 'variants/overview.md'
+        'variants/msi_z690/building-manual.md': 'unified/msi/building-manual.md'
+        'variants/msi_z690/cpu-hcl.md': 'unified/msi/hcl.md'
+        'variants/msi_z690/overview.md': 'unified/msi/overview.md'
+        'variants/msi_z690/development.md': 'unified/msi/development.md'
+        'variants/msi_z690/faq.md': 'unified/msi/faq.md'
+        'variants/msi_z690/firmware-update.md': 'unified/msi/firmware-update.md'
+        'variants/msi_z690/gpu-hcl.md': 'unified/msi/hcl.md'
+        'variants/msi_z690/initial-deployment.md': 'unified/msi/initial-deployment.md'
+        'variants/msi_z690/memory-hcl.md': 'unified/msi/hcl.md'
+        'variants/msi_z690/openness-analysis.md': 'variants/msi_z690/openness_score.md'
+        'variants/msi_z690/recovery.md': 'unified/msi/recovery.md'
+
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
   # but there are no internal links to them).

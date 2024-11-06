@@ -6,7 +6,7 @@ branch structure:
 * `master` or `main` - follows upstream project master or main branch
 * `dasharo` - contains all code releases for supported platforms, the list of
    supported platforms is in
-  [Hardware Compatibility List](../variants/hardware-compatibility-list.md)
+  [Hardware Compatibility List](../variants/overview.md)
   section
 * `<platform>/rel_vX.Y.Z` - release branch for version X.Y.Z
 * `<feature>` - tracks development of feature

@@ -139,7 +139,7 @@ of the method to mitigate the issues is to put ME in Manufacturing Mode. Such
 operation depends on ME version, SPI flash layout and platform design. Detail
 information you should find in sections dedicated to given hardware. To access
 documentation for supported hardware please go to [Hardware Compatibility
-List](../variants/hardware-compatibility-list.md).
+List](../variants/overview.md).
 
 Please note we consider further mitigations in [Dasharo Roadmap](../ecosystem/roadmap.md).
 
