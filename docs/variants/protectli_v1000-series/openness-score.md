@@ -7,9 +7,9 @@ Score utility](https://github.com/Dasharo/Openness-Score).
 
 ## v0.9.3
 
-> V1410 is very similar to V1210, thus the Openness Score for V1410 is not
-> generated, as is considered to be either identical or contain neglectable
-> differences compared to V1210.
+> V1410 and V1610 is very similar to V1210, thus the Openness Score for V1410
+> and V1610 is not generated, as is considered to be either identical or
+> contain neglectable differences compared to V1210.
 
 Openness Score for protectli_v1210_v0.9.3.rom
 
