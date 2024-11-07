@@ -120,3 +120,24 @@ flashrom -p internal -r dump.rom
     ```
 
     This command also preserves Dasharo UEFI settings and the boot order.
+
+=== "VP2430"
+
+    To flash Dasharo on the platform, execute the following command - replace
+    `[path]` with the path to the Dasharo image you want to flash, e.g.
+    `protectli_vp2430_v0.9.0.rom`.
+
+    If stock firmware is currently installed:
+
+    ```bash
+    flashrom -p internal -w [path] --ifd -i bios
+    ```
+
+    If Dasharo is currently installed, only the `RW_SECTION_A` partition of the
+    flash needs to be updated. Flash it using the following command:
+
+    ```bash
+    flashrom -p internal -w protectli_vp2430_v0.9.0.rom --fmap -i RW_SECTION_A
+    ```
+
+    This command also preserves Dasharo UEFI settings and the boot order.
