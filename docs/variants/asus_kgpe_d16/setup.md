@@ -143,6 +143,10 @@ W25Q64FV 8MB). The flash chip is attached to the qspimux with an adapter
 available with qspimux. Flashing may be done via the commands shown earlier or
 the flash script which is present in the root directory of the RTE:
 
+> Note: the `flash.sh` script, used in this chapter, is available only in 0.8.1
+> or newer RTE OS releases, check [meta-rte](https://github.com/3mdeb/meta-rte)
+> for more inf..
+
 ```shell
 ./flash.sh coreboot.rom
 ```
