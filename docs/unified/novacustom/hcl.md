@@ -138,10 +138,16 @@ issue from which the report is sourced.
 
         | Manufacturer | Model | Dasharo version | Notes | Source |
         |---|---|---|---|---|
-        | Sonnet | Echo 11 Thunderbolt 4 ECHO-DK11-T4  | v0.9.0 | No issues | Official support |
+        | Wavlink | UMD05 Pro (1) | v0.9.0 | No issues (2) | Official support |
+        | Sonnet | Echo 11 Thunderbolt 4 ECHO-DK11-T4  | v0.9.0 | Some issues (3) | Official support |
 
         </div>
 
+        1. Rev.C1 and Rev.E
+        2. DP Alt mode: Synaptics VMM5310 DP MST hub, two upstream DP 1.4 lanes,
+           DSC 1.2 decompression, up to 2x 4K60 + 1x 4K30 depending on source.
+        3. [Processor performance reduction](https://github.com/Dasharo/dasharo-issues/issues/980),
+           [Intermittent USB 3.0 device dropouts](https://github.com/Dasharo/dasharo-issues/issues/1081)
 
     > **Note on DisplayLink compatibility:** DisplayLink requires a driver to
     > function correctly. On Windows, the driver should install automatically if
