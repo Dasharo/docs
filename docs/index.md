@@ -81,10 +81,10 @@ Hear from our satisfied users and clients:
 
 Stay tuned for our upcoming events:
 
-- **June 13, 2024**: [Dasharo User Group #6 and Dasharo Developers vPub
-  0xB](https://vpub.dasharo.com/e/13/dasharo-user-group-6)
-- **September 20-22, 2024**: [Qubes OS Summit
-  2024](https://vpub.dasharo.com/e/16/qubes-os-summit-2024)
+- **December 12, 2024**: [Dasharo User Group #8 and Dasharo Developers vPub
+  0xD](https://vpub.dasharo.com/e/15/dasharo-user-group-8)
+- **January 30-31, 2025**: [Xen Project Winter Meetup](https://campaign.vates.tech/xen-project-winter-meetup)
+- **February 01-02, 2025**: [FOSDEM 2025](https://fosdem.org/2025/)
 
 [View full calendar →](https://vpub.dasharo.com)
 
@@ -99,11 +99,11 @@ Dive deeper with our rich library of resources:
 
 Catch up on the latest in the Dasharo world:
 
+- [New Dasharo v0.9.0 Meteor Lake releases](https://blog.3mdeb.com/2024/2024-08-07-new-mtl-releases/)
+- [Getting started with Hardkernel ODROID H4+](https://blog.3mdeb.com/2024/2024-07-25-odroid-h4-getting-started/)
+- [TrenchBoot Anti Evil Maid - Phase 4](https://blog.3mdeb.com/2024/2024-04-11-aem_phase4/)
+- [Implementing UEFI Secure Boot on MPL PIP4x](https://blog.3mdeb.com/2024/2024-04-18-uefi-sb-implementation-mpl/)
 - [Dasharo Compatible with MSI PRO Z690-A Release v1.1.3](https://blog.3mdeb.com/2024/2024-02-13-msi_z690-a_v1.1.3_release/)
-- [Optimizing Firmware Updates: Dasharo Firmware Update Mode for NovaCustom Laptops](https://blog.3mdeb.com/2023/2023-11-07-simplifying-firmware-update/)
-- [ASUS KGPE-D16 Dasharo testing update](https://blog.3mdeb.com/2022/2022-03-23-kgpe-d16-testing-update/)
-- [A new source of trust for your platform - Dasharo with Intel TXT support](https://blog.3mdeb.com/2022/2022-03-17-optiplex-txt/)
-- [Dasharo for Dell OptiPlex 7010 / 9010](https://blog.3mdeb.com/2021/2021-11-26-optiplex-dasharo/)
 
 [Visit our blog →](https://blog.3mdeb.com)
 
