@@ -3,6 +3,9 @@
 If you are new to Dasharo, this section is to help you get started using Dasharo
 firmware and possibly contributing to making it better.
 
+[cool link](https://that.goes.nowhere.com/bebebebe)
+[cooler link](https://docs.dasharo.com/bebebebe)
+
 ## coreboot
 
 If you have no prior experience with coreboot, it's highly recommended to visit
