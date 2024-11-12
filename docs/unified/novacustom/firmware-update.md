@@ -64,13 +64,13 @@ using the ++f2++ key while booting.
        models. You can skip these steps if you are using an older firmware version.
 
     Follow the manual update procedure described in the [DTS firmware update
-    documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation.md#local-firmware-update).
+    documentation](../../dasharo-tools-suite/documentation.md#local-firmware-update).
 
     > Please make sure you that you update the BIOS firmware and the EC firmware
     > respectively, as the laptop will power off after the EC firmware flash.
     >
     > Please also note that
-    > [network boot must be enabled](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features.md#networking-options)
+    > [network boot must be enabled](../../dasharo-menu-docs/dasharo-system-features.md#networking-options)
     > if you want to boot to the Dasharo Tools Suite over a network connection.
 
 === "Dasharo (coreboot + Heads)"
