@@ -18,7 +18,7 @@ For details about our release process please read
 ## v0.9.1 - 2024-11-07
 
 Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/blob/main/boards/NovaCustom/MTL_14th_Gen/V560TNX/v0.9.0-results.csv).
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/NovaCustom/MTL_14th_Gen/V560TNX/v0.9.1-results.csv).
 
 ### Added
 
