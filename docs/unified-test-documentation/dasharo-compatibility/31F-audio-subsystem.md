@@ -548,14 +548,14 @@ connecting the external display using the HDMI cable.
 1. Open a terminal window and execute the following command:
 
     ```bash
-    amixer -c 0 contents | grep -A 2 'HDMI/DP,pcm=3'
+    pactl list cards | grep "hdmi-output" | grep -v "not available
     ```
 
 1. Disconnect the headset from the laptop.
 1. Execute the following command again:
 
     ```bash
-    amixer -c 0 contents | grep -A 2 'HDMI/DP,pcm=3'
+    pactl list cards | grep "hdmi-output" | grep -v "not available
     ```
 
 **Expected result**
@@ -563,14 +563,11 @@ connecting the external display using the HDMI cable.
 1. The output of the first command should not be empty and contains the line:
 
     ```text
-    : values=on
+    : hdmi-output-0: HDMI / DisplayPort (type: HDMI, priority: 5900, latency
+     offset: 0 usec, availability group: Legacy 4, available)
     ```
 
-1. The output of the second command should not be empty and contains the line:
-
-    ```text
-    : values=off
-    ```
+1. The output of the second command should be empty
 
 ## AUD007.002 HDMI Audio recognition (Windows)
 
