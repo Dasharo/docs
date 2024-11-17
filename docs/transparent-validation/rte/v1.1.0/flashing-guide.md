@@ -14,6 +14,10 @@ RTE.
 
 ### Flashing
 
+> Note: the `flash.sh` script, used in this chapter, is available only in 0.8.1
+> or newer RTE OS releases, check [meta-rte](https://github.com/3mdeb/meta-rte)
+> for more inf..
+
 1. Unscrew the bottom cover of the laptop.
 1. Disconnect the battery
 
@@ -57,25 +61,6 @@ RTE.
     - Example connection appearance:
 
     ![](../../../images/rte-v1.1.0-WSON8-SPI-header.jpg)
-
-1. Put the flash script on RTE:
-
-    > The next steps require the device with Linux OS, it is possible to do this
-    > on e.g. Windows, but the procedure will be different.
-
-    1. Open the terminal and run the following commands:
-
-        ```bash
-        git clone https://github.com/3mdeb/RteCtrl.git
-        cd RteCtrl/scripts/
-        ```
-
-    1. Use `scp` to transfer flash script, in places marked with `XX` enter the
-        RTE IP address, which you can check with the command `ip a`:
-
-        ```bash
-        scp flash.sh root@XX.XX.XX.XX:/home/root/
-        ```
 
 1. Login to RTE via `ssh` or `minicom`.
 1. Connect and hold the WSON8 probe to the flash chip.

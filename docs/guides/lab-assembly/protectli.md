@@ -306,6 +306,10 @@ The external flashing procedure should be performed based on the scripts
 implemented on the RTE platform. To perform the flashing operation reproduce,
 the below-described steps:
 
+> Note: the `flash.sh` script, used in this chapter, is available only in 0.8.1
+> or newer RTE OS releases, check [meta-rte](https://github.com/3mdeb/meta-rte)
+> for more inf..
+
 1. By using `scp` put the requested Dasharo file to the RTE:
 
     ```bash
