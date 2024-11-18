@@ -59,29 +59,6 @@ and reboot to use the new kernel.
 
 ### Nvidia drivers
 
-> It is only necessary to follow this step if your device has Nvidia GPU
-
-For proper working of the sleep mode on Ubuntu 22.04, it is required to
-install additional Nvidia drivers.
-
-1. Install drivers by executing the following command in the terminal:
-
-    ```bash
-    sudo apt install nvidia-driver-535 nvidia-dkms-535
-    ```
-
-1. Reboot the device to apply changes by executing the following command in the
-    terminal:
-
-    ```bash
-    sudo reboot
-    ```
-
-1. (Optional) For power saving while the card is not in use, enable On-Demand
-   mode in NVIDIA Control Panel:
-
-![](../../images/nv4x_nvidia_panel.jpg){ class="center" }
-
 1. If for some reason dynamic power management for the GPU is not working
    (causing high power draw, poor sleep time or high temperatures), you may
    need to run this command, and then reboot the laptop:

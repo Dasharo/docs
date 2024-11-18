@@ -134,6 +134,8 @@ by setup. Run the following to verify
 
 #### NVIDIA drivers - Ubuntu 20.04
 
+> Only necessary if the device has an Nvidia GPU
+
 1. Power on the DUT.
 1. Wait until the `OPERATING_SYSTEM` boots from disk.
 1. Login into the `OPERATING_SYSTEM`.
