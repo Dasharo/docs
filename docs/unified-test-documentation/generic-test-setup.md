@@ -17,14 +17,13 @@ need to execute the setup actions before each independent case.
 1. Flash `FIRMWARE` binary to the DUT according to the instructions in [docs.dasharo](../../docs/variants/overview.md)
 for your device.
     1. If the device already has Dasharo, see the `Firmware update` page
-    1. If the device has a diffrent firmware installed, see the
+    1. If the device has a different firmware installed, see the
     `Firmware transition` page
     1. If the device is bricked, see the `Recovery` page.
 
-
-
 #### OS installation
 
+Install all the supported operating systems.
 In case the 'OPERATING_SYSTEM' is supported by [Dasharo Preseeds](https://github.com/dasharo/preseeds)
 use the instructions from there. Otherwise continue with the steps below:
 
@@ -49,7 +48,9 @@ use the instructions from there. Otherwise continue with the steps below:
 1. Remove the installation media (USB stick with installer).
 
 #### OS Preparation
+
 ##### Windows
+
 1.(Windows 11) Run PowerShell as an Administrator.
 1. Install the OpenSSH Client
 
@@ -58,7 +59,7 @@ use the instructions from there. Otherwise continue with the steps below:
     ```
 
 2. Install the OpenSSH Server
-    
+
     ```powershell
     Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
     ```
@@ -70,7 +71,7 @@ use the instructions from there. Otherwise continue with the steps below:
     ```
 
 4. Make the sshd service start automatically on startup:
-    
+
     ```powershell
     Set-Service -Name sshd -StartupType 'Automatic'
     ```
@@ -110,29 +111,36 @@ by setup. Run the following to verify
     ```
 
 ##### Linux
+
 1. Open the terminal.
 1. Disable the shutdown confirmation dialogues
 
     ```bash
     sudo gsettings set org.gnome.SessionManager logout-prompt false
     ```
-2. Set up a serial terminal:
+
+1. Set up a serial terminal:
+
     ```bash
     sudo nano /etc/default/grub
     ```
-3. Edit the file `/etc/default/grub` by adding
+
+1. Edit the file `/etc/default/grub` by adding
 `console=tty0 console=ttyS0,115200` in variable `GRUB_CMDLINE_LINUX_DEFAULT`.
-4. Update grub 
+1. Update grub
+
     ```bash
     sudo update-grub
     ```
-5. Configure SSH: 
+
+1. Configure SSH:
+
     ```bash
     sudo apt install openssh-server
     systemctl start sshd
     ```
 
-#### NVIDIA drivers - Ubuntu 20.04
+#### NVIDIA drivers - Ubuntu
 
 > Only necessary if the device has an Nvidia GPU
 
