@@ -74,7 +74,7 @@ first release.
 
 We understand that it can be expensive for individual customers, so we are
 always open to providing discounts for those who contribute to the project
-meaningfully. There are the following tiers eligible for discounts up to 100%:
+meaningfully. The following tiers are eligible for discounts of up to 100%:
 
 * [Beta
 Testers](https://docs.dasharo.com/ways-you-can-help-us/#join-dasharo-beta-testing-group)
