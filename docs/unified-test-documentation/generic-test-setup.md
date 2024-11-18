@@ -49,6 +49,15 @@ use the instructions from there. Otherwise continue with the steps below:
 
 #### OS Preparation
 
+##### Logging in
+
+If the OS was installed using the [Dasharo Preseeds](https://github.com/dasharo/preseeds)
+the hostname, username and password will be the same as in the
+[OSFV repository](https://github.com/Dasharo/open-source-firmware-validation/tree/develop/os-config).
+Make sure that the hostname, username and password are the same as
+in the OSFV repository in order for the automatic tests to run properly if the
+device already had the OS installed.
+
 ##### Windows
 
 1.(Windows 11) Run PowerShell as an Administrator.
