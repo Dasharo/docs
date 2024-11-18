@@ -164,13 +164,14 @@ sudo apt install nvidia-driver-560
 1. Select `NVIDIA On-demand` and apply.
 1. Enter the `OPERATING_SYSTEM` password when prompted.
 
-#### OS boot from disk
+![](/images/nv4x_nvidia_panel.jpg){ class="center" }
 
-1. Power on the DUT.
-1. Wait until the `OPERATING_SYSTEM` boots from disk.
-1. Login into the `OPERATING_SYSTEM`.
+#### Post installation
 
+1. Look for an optional `Post-Installation Setup` document in the device's documentation
+at the [Supported Hardware documentation](https://docs.dasharo.com/variants/overview/)
+and perform the instructions in it.
 
 ### Special cases
 
-Special cases are documented in [Open Source Firmware Validation repo](https://github.com/Dasharo/open-source-firmware-validation/tree/develop/docs)
+Special cases are documented in [Open Source Firmware Validation repo docs](https://github.com/Dasharo/open-source-firmware-validation/tree/develop/docs)
