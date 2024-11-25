@@ -9,10 +9,10 @@ For details about our release process please read
 [Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
-## v0.1.0 - 2024-09-16
+## v0.1.1 - 2024-12-17
 
 Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Dell/OptiPlex_7010_9010/v0.1.0-results.csv).
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Dell/OptiPlex_7010_9010/v0.1.1-results.csv).
 
 !!! note
 
@@ -38,34 +38,34 @@ Test results for this release can be found
 - [Network stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)
 - [Serial Console Redirection option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#serial-port-configuration)
 
-### Known issues
-
-- [Network Boot enabled by default](https://github.com/Dasharo/dasharo-issues/issues/979)
-- [Wake by USB keyboard not working](https://github.com/Dasharo/dasharo-issues/issues/1044)
-
 ### Binaries
 
-[sha256][dell_optiplex_7010_9010_v0.1.0.rom_hash]{.md-button}
-[sha256.sig][dell_optiplex_7010_9010_v0.1.0.rom_sig]{.md-button}
+[sha256][dell_optiplex_7010_9010_v0.1.1.rom_hash]{.md-button}
+[sha256.sig][dell_optiplex_7010_9010_v0.1.1.rom_sig]{.md-button}
 
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
-using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell_optiplex_9010/dasharo-release-0.x-compatible-with-dell-optiplex-x010-signing-key.asc).
+using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell_optiplex_9010/dasharo-release-0.x-compatible-with-dell-optiplex-x010-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 24.02 revision 83c8b094](https://github.com/Dasharo/coreboot/tree/83c8b094)
-- [Dasharo EDKII fork based on edk2-stable202405 revision ae0ecedb](https://github.com/Dasharo/edk2/tree/ae0ecedb)
-- [Dasharo iPXE fork based on 838611b34e revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
+- [Dasharo coreboot fork based on 24.02 revision 4631e23c](https://github.com/Dasharo/coreboot/tree/4631e23c)
+    + [License](https://github.com/Dasharo/coreboot/blob/4631e23c/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202405 revision f3e18c6c](https://github.com/Dasharo/edk2/tree/f3e18c6c)
+    + [License](https://github.com/Dasharo/edk2/blob/f3e18c6c/License.txt)
+- [Dasharo iPXE fork based on 838611b34e revision 35d84756](https://github.com/Dasharo/ipxe/tree/35d84756)
+    + [License](https://github.com/Dasharo/ipxe/blob/35d84756/COPYING.GPLv2)
 - [Intel microcode based on IVB E1/L1 0x00000021 revision microcode-20240531](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-3a-09)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
 - [Intel microcode based on SNB D2/G1/Q0 0x0000002f revision microcode-20240531](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-2a-07)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/8dp1vv5mR
-[dell_optiplex_7010_9010_v0.1.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.0/dell_optiplex_7010_9010_v0.1.0.rom.sha256
-[dell_optiplex_7010_9010_v0.1.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.0/dell_optiplex_7010_9010_v0.1.0.rom.sha256.sig
+[dell_optiplex_7010_9010_v0.1.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.1/dell_optiplex_7010_9010_v0.1.1.rom.sha256
+[dell_optiplex_7010_9010_v0.1.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.1/dell_optiplex_7010_9010_v0.1.1.rom.sha256.sig
