@@ -9,8 +9,8 @@ should be maintained in that way.
 
 ## Process steps
 
-1. Checkout new branch `<platform>_rel_vX.Y.Z` from recent commit on `dasharo` -
-   to understand versioning scheme please read [Versioning](versioning.md)
+1. Checkout new branch `<platform>_rel_vX.Y.Z` from recent commit on `dasharo`
+   branch - to understand versioning scheme please read [Versioning](versioning.md)
    section
 2. Merge current platform development branches to `<platform>_rel_vX.Y.Z`
 3. (Optional) Create a release candidate by tagging `<platform>_vX.Y.Z-rcN`
