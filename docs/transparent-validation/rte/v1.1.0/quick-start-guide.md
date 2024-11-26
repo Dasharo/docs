@@ -61,7 +61,7 @@ common preparation of RTE without listed functions.
     USB-UART converter by executing the following command:
 
     ```bash
-    sudo minicom -D /dev/ttyUSB<x>
+    sudo minicom -D /dev/ttyUSB<x> -b 115200
     ```
 
     > Substitute `<x>` with the device number corresponding to your USB-UART
