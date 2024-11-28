@@ -52,8 +52,9 @@ The value looks like `0xMMmmpprr`, where:
 - pp - the PATCH version
 - rr - optional Release Candidate number
 
-For release versions the Release Candidate number is set to `FF` (255 decimal)
-to make sure the version number is higher than any release candidate.
+For release versions the Release Candidate number is generally set to `80`
+(128 decimal) to make sure the version number is higher than any release
+candidate but still leave some headroom for increasing just in case.
 
 Examples:
 
