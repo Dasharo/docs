@@ -68,4 +68,4 @@ with coreboot:
 
 To see in fine detail which are required for your platform of interest,
 please refer to
-[this coreboot wiki page](https://www.coreboot.org/Binary_situation).
+[this coreboot wiki page](http://web.archive.org/web/20240903193137/https://www.coreboot.org/Binary_situation).
