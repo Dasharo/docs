@@ -16,7 +16,7 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
-## v1.1.4 - 2024-11-22
+## v1.1.4 - 2024-11-26
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7d25/v1.1.4-results.csv).
@@ -27,20 +27,25 @@ Test results for this release can be found
 - [Preserve user data during a capsule update](https://github.com/Dasharo/dasharo-issues/issues/809)
 - [CPU configuration menu](https://github.com/Dasharo/dasharo-issues/issues/134)
 - [Update to a much newer EDKII revision](https://github.com/Dasharo/dasharo-issues/issues/432)
-- [Dual TPM feature in coreboot. When ME is disabled, fTPM becomes inactive as well and chipset will route the TPM traffic to SPI bus. coreboot will now probe for all possible TPMs and initialize the one that is currently active.](https://github.com/Dasharo/dasharo-issues/issues/113)
+- [Dual TPM feature in coreboot. When ME is disabled, fTPM becomes inactive as
+  well and chipset will route the TPM traffic to SPI bus. coreboot will now
+  probe for all possible TPMs and initialize the one that is currently
+  active.](https://github.com/Dasharo/dasharo-issues/issues/113)
 - [Expose ESRT entry for firmware updates](https://github.com/Dasharo/dasharo-issues/issues/802)
 
 ### Changed
 
 - Use a constant value for major BIOS version number in ROMHOLES (used by FlashBIOS)
-- Updated Intel CPU microcode to 0x129 version
+- Updated Intel CPU microcode to 0x12B version
 - Raptor Lake FSP is used instead of deprecated Alder Lake FSP
 - [Updated Flash Descriptor to enlarge BIOS region; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/pull/16)
 
 ### Fixed
 
 - [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
-- [Fix the problem where a disk with a meaningful name would appear as Non-Block Boot Device in the created OS boot options from ESP](https://github.com/Dasharo/edk2/pull/122)
+- [Fix the problem where a disk with a meaningful name would appear as
+  Non-Block Boot Device in the created OS boot options from
+  ESP](https://github.com/Dasharo/edk2/pull/122)
 - [Improve resource detection above 4 GiB](https://github.com/Dasharo/edk2/pull/161)
 
 ### Known issues
@@ -57,13 +62,13 @@ Test results for this release can be found
 [sha256.sig][msi_ms7d25_v1.1.4_ddr4.cap_sig]{.md-button}
 (msi_ms7d25_v1.1.4_ddr4.cap)
 
-[sha256][msi_ms7d25_v1.1.4_ddr4_dev_signed.cap_hash]{.md-button}
-[sha256.sig][msi_ms7d25_v1.1.4_ddr4_dev_signed.cap_sig]{.md-button}
-(msi_ms7d25_v1.1.4_ddr4_dev_signed.cap)
-
 [sha256][msi_ms7d25_v1.1.4_ddr4.rom_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.4_ddr4.rom_sig]{.md-button}
 (msi_ms7d25_v1.1.4_ddr4.rom)
+
+[sha256][msi_ms7d25_v1.1.4_ddr4_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.4_ddr4_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.4_ddr4_dev_signed.cap)
 
 [sha256][msi_ms7d25_v1.1.4_ddr4_dev_signed.rom_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.4_ddr4_dev_signed.rom_sig]{.md-button}
@@ -73,13 +78,13 @@ Test results for this release can be found
 [sha256.sig][msi_ms7d25_v1.1.4_ddr5.cap_sig]{.md-button}
 (msi_ms7d25_v1.1.4_ddr5.cap)
 
-[sha256][msi_ms7d25_v1.1.4_ddr5_dev_signed.cap_hash]{.md-button}
-[sha256.sig][msi_ms7d25_v1.1.4_ddr5_dev_signed.cap_sig]{.md-button}
-(msi_ms7d25_v1.1.4_ddr5_dev_signed.cap)
-
 [sha256][msi_ms7d25_v1.1.4_ddr5.rom_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.4_ddr5.rom_sig]{.md-button}
 (msi_ms7d25_v1.1.4_ddr5.rom)
+
+[sha256][msi_ms7d25_v1.1.4_ddr5_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.4_ddr5_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.4_ddr5_dev_signed.cap)
 
 [sha256][msi_ms7d25_v1.1.4_ddr5_dev_signed.rom_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.4_ddr5_dev_signed.rom_sig]{.md-button}
@@ -92,7 +97,7 @@ You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
+instructions in [Dasharo release signature verification](/guides/signature-verification)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
