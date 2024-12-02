@@ -18,105 +18,6 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 
 </center>
 
-## v0.9.2 - 2024-11-22
-
-Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7e06/v0.9.2-results.csv).
-
-### Added
-
-- [Introduce updates via UEFI capsules (from this firmware onward)](https://github.com/Dasharo/dasharo-issues/issues/423)
-- [Preserve user data during a capsule update](https://github.com/Dasharo/dasharo-issues/issues/809)
-- [CPU configuration menu](https://github.com/Dasharo/dasharo-issues/issues/134)
-- [Update to a much newer EDKII revision](https://github.com/Dasharo/dasharo-issues/issues/432)
-- [Dual TPM feature in coreboot. When ME is disabled, fTPM becomes inactive as well and chipset will route the TPM traffic to SPI bus. coreboot will now probe for all possible TPMs and initialize the one that is currently active.](https://github.com/Dasharo/dasharo-issues/issues/113)
-- [Expose ESRT entry for firmware updates](https://github.com/Dasharo/dasharo-issues/issues/802)
-
-### Changed
-
-- Use a constant value for major BIOS version number in ROMHOLES (used by FlashBIOS)
-- Updated Intel CPU microcode to 0x129 version
-- [Updated Flash Descriptor to enlarge BIOS region; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/pull/16)
-
-### Fixed
-
-- [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
-- [Fix the problem where a disk with a meaningful name would appear as Non-Block Boot Device in the created OS boot options from ESP](https://github.com/Dasharo/edk2/pull/122)
-- [Improve resource detection above 4 GiB](https://github.com/Dasharo/edk2/pull/161)
-
-### Known issues
-
-- [XMP1 profile does not boot in combination with some DDR5 configurations](https://github.com/Dasharo/dasharo-issues/issues/683)
-- [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
-- [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
-- [Windows 11 VBS (Virtualization-based Security) appears Not enabled on System Information](https://github.com/Dasharo/dasharo-issues/issues/539)
-- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
-
-### Binaries
-
-[sha256][msi_ms7e06_v0.9.2_ddr4.cap_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr4.cap_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr4.cap)
-
-[sha256][msi_ms7e06_v0.9.2_ddr4_dev_signed.cap_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr4_dev_signed.cap_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr4_dev_signed.cap)
-
-[sha256][msi_ms7e06_v0.9.2_ddr4.rom_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr4.rom_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr4.rom)
-
-[sha256][msi_ms7e06_v0.9.2_ddr4_dev_signed.rom_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr4_dev_signed.rom_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr4_dev_signed.rom)
-
-[sha256][msi_ms7e06_v0.9.2_ddr5.cap_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr5.cap_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr5.cap)
-
-[sha256][msi_ms7e06_v0.9.2_ddr5_dev_signed.cap_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr5_dev_signed.cap_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr5_dev_signed.cap)
-
-[sha256][msi_ms7e06_v0.9.2_ddr5.rom_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr5.rom_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr5.rom)
-
-[sha256][msi_ms7e06_v0.9.2_ddr5_dev_signed.rom_hash]{.md-button}
-[sha256.sig][msi_ms7e06_v0.9.2_ddr5_dev_signed.rom_sig]{.md-button}
-(msi_ms7e06_v0.9.2_ddr5_dev_signed.rom)
-
-This is a Dasharo Pro Package Release. To obtain access to the pre-built
-binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Pro Package newsletter.
-
-To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
-using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7e06/dasharo-release-0.x-compatible-with-msi-ms-7e06-signing-key.asc)
-
-### SBOM (Software Bill of Materials)
-
-- [Dasharo coreboot fork based on 24.02.01 revision b9d6d8c7](https://github.com/Dasharo/coreboot/tree/b9d6d8c7)
-    + [License](https://github.com/Dasharo/coreboot/blob/b9d6d8c7/COPYING)
-- [Dasharo EDKII fork based on edk2-stable202402 revision 5b3658c0](https://github.com/Dasharo/edk2/tree/5b3658c0)
-    + [License](https://github.com/Dasharo/edk2/blob/5b3658c0/License.txt)
-- [Dasharo EDK2-platforms fork based on v0.9.0 revision 3323ed48](https://github.com/Dasharo/edk2-platforms/tree/3323ed48)
-    + [License](https://github.com/Dasharo/edk2-platforms/blob/3323ed48/License.txt)
-- [iPXE based on 2023.12 revision 35d84756](https://github.com/Dasharo/ipxe/tree/35d84756)
-    + [License](https://github.com/Dasharo/ipxe/blob/35d84756/COPYING.GPLv2)
-- [vboot based on 3d37d2aafe revision 3d37d2aa](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/)
-    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/LICENSE)
-- [Intel Management Engine based on v16.1.30.2307 revision 4f6e917d](https://github.com/Dasharo/dasharo-blobs/blob/4f6e917d/msi/ms7e06/me.bin)
-    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel Flash Descriptor based on v1.2 revision 4f6e917d](https://github.com/Dasharo/dasharo-blobs/blob/4f6e917d/msi/ms7e06/descriptor.bin)
-    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel Firmware Support Package based on RPL-S C.1.C8.50 revision 3819544e](https://github.com/intel/FSP/tree/3819544e/RaptorLakeFspBinPkg/Client/RaptorLakeS)
-    + [License](https://github.com/intel/FSP/blob/3819544e/FSP_License.pdf)
-- [Intel microcode based on 0x36 (for CPUIDs 00090672, 00090675, 000b06f2, 000b06f5), 0x12B (for CPUID 000b0671) revision 4f6e917d](https://github.com/Dasharo/dasharo-blobs/blob/4f6e917d/msi/ms7d25/microcode.bin)
-    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/INTEL_FSP_SIC_LICENSE.txt)
-
 ## v0.9.1 - 2024-01-22
 
 Test results for this release can be found
@@ -279,22 +180,6 @@ subscription via Dasharo Pro Package newsletter.
 - [Intel microcode based on RPL B0 0x00000113 revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-b7-01)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/KgJ7V_mmJ
-[msi_ms7e06_v0.9.2_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.cap.sha256
-[msi_ms7e06_v0.9.2_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.cap.sha256.sig
-[msi_ms7e06_v0.9.2_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4_dev_signed.cap.sha256
-[msi_ms7e06_v0.9.2_ddr4_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4_dev_signed.cap.sha256.sig
-[msi_ms7e06_v0.9.2_ddr4.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.rom.sha256
-[msi_ms7e06_v0.9.2_ddr4.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.rom.sha256.sig
-[msi_ms7e06_v0.9.2_ddr4_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4_dev_signed.rom.sha256
-[msi_ms7e06_v0.9.2_ddr4_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4_dev_signed.rom.sha256.sig
-[msi_ms7e06_v0.9.2_ddr5.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5.cap.sha256
-[msi_ms7e06_v0.9.2_ddr5.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5.cap.sha256.sig
-[msi_ms7e06_v0.9.2_ddr5_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5_dev_signed.cap.sha256
-[msi_ms7e06_v0.9.2_ddr5_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5_dev_signed.cap.sha256.sig
-[msi_ms7e06_v0.9.2_ddr5.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5.rom.sha256
-[msi_ms7e06_v0.9.2_ddr5.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5.rom.sha256.sig
-[msi_ms7e06_v0.9.2_ddr5_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5_dev_signed.rom.sha256
-[msi_ms7e06_v0.9.2_ddr5_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr5_dev_signed.rom.sha256.sig
 [msi_ms7e06_v0.9.1_ddr4.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.1/msi_ms7e06_v0.9.1_ddr4.rom.sha256
 [msi_ms7e06_v0.9.1_ddr4.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.1/msi_ms7e06_v0.9.1_ddr4.rom.sha256.sig
 [msi_ms7e06_v0.9.1_ddr4_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.1/msi_ms7e06_v0.9.1_ddr4_dev_signed.rom.sha256
