@@ -18,7 +18,7 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 
 </center>
 
-## v0.9.2 - 2024-11-22
+## v0.9.2 - 2024-11-26
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7e06/v0.9.2-results.csv).
@@ -29,19 +29,24 @@ Test results for this release can be found
 - [Preserve user data during a capsule update](https://github.com/Dasharo/dasharo-issues/issues/809)
 - [CPU configuration menu](https://github.com/Dasharo/dasharo-issues/issues/134)
 - [Update to a much newer EDKII revision](https://github.com/Dasharo/dasharo-issues/issues/432)
-- [Dual TPM feature in coreboot. When ME is disabled, fTPM becomes inactive as well and chipset will route the TPM traffic to SPI bus. coreboot will now probe for all possible TPMs and initialize the one that is currently active.](https://github.com/Dasharo/dasharo-issues/issues/113)
+- [Dual TPM feature in coreboot. When ME is disabled, fTPM becomes inactive as
+  well and chipset will route the TPM traffic to SPI bus. coreboot will now
+  probe for all possible TPMs and initialize the one that is currently
+  active.](https://github.com/Dasharo/dasharo-issues/issues/113)
 - [Expose ESRT entry for firmware updates](https://github.com/Dasharo/dasharo-issues/issues/802)
 
 ### Changed
 
 - Use a constant value for major BIOS version number in ROMHOLES (used by FlashBIOS)
-- Updated Intel CPU microcode to 0x129 version
+- Updated Intel CPU microcode to 0x12B version
 - [Updated Flash Descriptor to enlarge BIOS region; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/pull/16)
 
 ### Fixed
 
 - [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
-- [Fix the problem where a disk with a meaningful name would appear as Non-Block Boot Device in the created OS boot options from ESP](https://github.com/Dasharo/edk2/pull/122)
+- [Fix the problem where a disk with a meaningful name would appear as
+  Non-Block Boot Device in the created OS boot options from
+  ESP](https://github.com/Dasharo/edk2/pull/122)
 - [Improve resource detection above 4 GiB](https://github.com/Dasharo/edk2/pull/161)
 
 ### Known issues
