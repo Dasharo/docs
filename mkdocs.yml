@@ -617,12 +617,12 @@ nav:
               - 'pfSense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
               - 'Windows booting performance test': unified-test-documentation/dasharo-performance/416-windows-booting-performance-test.md
           - 'Dasharo stability':
-              - 'USB Type-A devices detection': unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
-              - 'M.2 Wi-fi': unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
-              - 'Capsule Update': unified-test-documentation/dasharo-stability/capsule-update.md
-              - 'NVMe detection': unified-test-documentation/dasharo-stability/C03-nvme-detection.md
-              - 'Power management': unified-test-documentation/dasharo-stability/C04-power-management.md
-              - 'NET interface check after coldboot/warmboot/reboot/suspend': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+              - '[SUD] USB Devices Detection': unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
+              - '[SMW] M.2 Wi-fi Detection': unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
+              - '[CUP] Capsule Update': unified-test-documentation/dasharo-stability/capsule-update.md
+              - '[SNV] NVMe detection': unified-test-documentation/dasharo-stability/C03-nvme-detection.md
+              - '[SPM] Power management': unified-test-documentation/dasharo-stability/C04-power-management.md
+              - '[NET] NET controller': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
       - 'Roadmap': ecosystem/roadmap.md
       - 'Quality Principles': quality-principles/introduction.md
         # - 'Introduction':
