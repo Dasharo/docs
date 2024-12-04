@@ -138,7 +138,7 @@
     drives). The built-in 8 GB eMMC module can be used for booting a
     light-weight OS for example, or for use as optional storage.
 
-    VP2410 specification:
+    VP2420 specification:
 
     * Intel Celeron® J6412 Quad Core at 2 GHz (Burst up to 2.6 GHz)
     * 4 Intel® 2.5 Gigabit Ethernet NIC ports
@@ -169,6 +169,53 @@
         ../../variants/protectli_vp2420/hardware-matrix.md) -
         describes the platform's hardware configuration used during the Dasharo
         firmware validation procedure.
+
+=== "VP2430"
+    The VP2430 is a small form network appliance built for use as a firewall
+    / router, virtualization platform, a daily-driven personal computer,
+    and more. A major difference setting it apart from its predecessors is the
+    CPU. While the 2410 and 2420 models both utilize a J-series Intel Celeron,
+    the VP2430 comes equipped with a more recent Alder Lake N-series CPU. This
+    means a significant improvement in performance, at a comparable power
+    consumption level. It also features 4 x 2.5G i226 ethernet ports.
+
+    ![](/images/VP2430.png)
+
+    The VP2430 can accommodate up to 16 GB DDR5 RAM and and a M.2 NVMe SSD
+    storage drive. The built-in 32 GB eMMC module can be used for booting a
+    light-weight OS for example, or for use as optional storage.
+
+    VP2430 specification:
+
+    * Intel® Processor N100 Quad Core, 6M Cache, up to 3.4 GHz
+    * 4 Intel® 2.5 Gigabit Ethernet NIC ports
+    * M.2 NVMe SSD Slot
+    * 32 GB eMMC module on board
+    * Fanless and Silent
+    * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
+      SATA data and power cables for internal SSD, Quick Start Guide
+
+    * [Protectli knowledge base](https://kb.protectli.com/)
+    * [Buy VP2430 in Protectli shop](https://eu.protectli.com/product/vp2430/)
+
+    ## Documentation sections
+
+    * [Releases](../../variants/protectli_vp2430/releases.md) - groups
+        information about all releases.
+    * [Building manual](./building-manual.md) -
+        describes how to build Dasharo for Protectli 2430.
+    * [Initial deployment](
+        ./initial-deployment.md) -
+        describes initial Dasharo deployment methods (i. e. flashing new
+        firmware) for Protectli VP2430.
+    * [Recovery](./recovery.md) - gathers
+        information on how to recover the platform from potential failure.
+    * [Hardware configuration matrix](
+        ../../variants/protectli_vp2430/hardware-matrix.md) -
+        describes the platform's hardware configuration used during the Dasharo
+        firmware validation procedure.
+    * [Test matrix](./test-matrix.md) - describes
+        validation scope used during Dasharo firmware validation procedure.
 
 === "VP6630/VP6650/VP6670"
     The Vault is a small form network appliance built for use as a firewall /

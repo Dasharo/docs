@@ -110,19 +110,21 @@ plugins:
         'unified/novacustom/fn-lock-hotkey.md': 'unified/novacustom/features.md'
         'unified/novacustom/rgb-keyboard.md': 'unified/novacustom/features.md'
 
-        'variants/protectli_fw6/building_manual.md': 'unified/protectli/building-manual.md#fw6'
-        'variants/protectli_vp1x1x/building_manual.md': 'unified/protectli/building-manual.md#v1000-series'
-        'variants/protectli_vp46xx/building_manual.md': 'unified/protectli/building-manual.md#vp4630vp4650vp4670'
-        'variants/protectli_vp66xx/building_manual.md': 'unified/protectli/building-manual.md#vp6630vp6650vp6670'
-        'variants/protectli_vp2410/building_manual.md': 'unified/protectli/building-manual.md#vp2410'
-        'variants/protectli_vp2420/building_manual.md': 'unified/protectli/building-manual.md#vp2420'
+        'variants/protectli_fw6/building_manual.md': 'unified/protectli/building_manual.md#fw6'
+        'variants/protectli_vp1x1x/building_manual.md': 'unified/protectli/building_manual.md#v1000-series'
+        'variants/protectli_vp46xx/building_manual.md': 'unified/protectli/building_manual.md#vp4630vp4650vp4670'
+        'variants/protectli_vp66xx/building_manual.md': 'unified/protectli/building_manual.md#vp6630vp6650vp6670'
+        'variants/protectli_vp2410/building_manual.md': 'unified/protectli/building_manual.md#vp2410'
+        'variants/protectli_vp2420/building_manual.md': 'unified/protectli/building_manual.md#vp2420'
+        'variants/protectli_vp2430/building_manual.md': 'unified/protectli/building_manual.md#vp2430'
 
-        'variants/protectli_fw6/firmware_update.md': 'unified/protectli/firmware-update.md#fw6'
-        'variants/protectli_vp1x1x/firmware_update.md': 'unified/protectli/firmware-update.md#v1000-series'
-        'variants/protectli_vp46xx/firmware_update.md': 'unified/protectli/firmware-update.md#vp4630vp4650vp4670'
-        'variants/protectli_vp66xx/firmware_update.md': 'unified/protectli/firmware-update.md#vp6630vp6650vp6670'
-        'variants/protectli_vp2410/firmware_update.md': 'unified/protectli/firmware-update.md#vp2410'
-        'variants/protectli_vp2420/firmware_update.md': 'unified/protectli/firmware-update.md#vp2420'
+        'variants/protectli_fw6/firmware_update.md': 'unified/protectli/firmware_update.md#fw6'
+        'variants/protectli_vp1x1x/firmware_update.md': 'unified/protectli/firmware_update.md#v1000-series'
+        'variants/protectli_vp46xx/firmware_update.md': 'unified/protectli/firmware_update.md#vp4630vp4650vp4670'
+        'variants/protectli_vp66xx/firmware_update.md': 'unified/protectli/firmware_update.md#vp6630vp6650vp6670'
+        'variants/protectli_vp2410/firmware_update.md': 'unified/protectli/firmware_update.md#vp2410'
+        'variants/protectli_vp2420/firmware_update.md': 'unified/protectli/firmware_update.md#vp2420'
+        'variants/protectli_vp2430/firmware_update.md': 'unified/protectli/firmware_update.md#vp2430'
 
         'variants/protectli_fw6/initial-deployment.md': 'unified/protectli/initial-deployment.md#fw6'
         'variants/protectli_vp1x1x/initial-deployment.md': 'unified/protectli/initial-deployment.md#v1000-series'
@@ -130,6 +132,7 @@ plugins:
         'variants/protectli_vp66xx/initial-deployment.md': 'unified/protectli/initial-deployment.md#vp6630vp6650vp6670'
         'variants/protectli_vp2410/initial-deployment.md': 'unified/protectli/initial-deployment.md#vp2410'
         'variants/protectli_vp2420/initial-deployment.md': 'unified/protectli/initial-deployment.md#vp2420'
+        'variants/protectli_vp2430/initial-deployment.md': 'unified/protectli/initial-deployment.md#vp2430'
 
         'variants/protectli_fw6/overview.md': 'unified/protectli/overview.md#fw6'
         'variants/protectli_vp1x1x/overview.md': 'unified/protectli/overview.md#v1000-series'
@@ -137,6 +140,7 @@ plugins:
         'variants/protectli_vp66xx/overview.md': 'unified/protectli/overview.md#vp6630vp6650vp6670'
         'variants/protectli_vp2410/overview.md': 'unified/protectli/overview.md#vp2410'
         'variants/protectli_vp2420/overview.md': 'unified/protectli/overview.md#vp2420'
+        'variants/protectli_vp2430/overview.md': 'unified/protectli/overview.md#vp2430'
 
         'variants/protectli_vp46xx/post-install.md': 'unified/protectli/post-install.md#vp4630vp4650vp4670vp6630vp6650vp6670'
         'variants/protectli_vp66xx/post-install.md': 'unified/protectli/post-install.md#vp4630vp4650vp4670vp6630vp6650vp6670'
@@ -147,6 +151,7 @@ plugins:
         'variants/protectli_vp66xx/recovery.md': 'unified/protectli/recovery.md#vp6630vp6650vp6670'
         'variants/protectli_vp2410/recovery.md': 'unified/protectli/recovery.md#vp2410'
         'variants/protectli_vp2420/recovery.md': 'unified/protectli/recovery.md#vp2420'
+        'variants/protectli_vp2430/recovery.md': 'unified/protectli/recovery.md#vp2430'
 
         'variants/protectli_fw6/test-matrix.md': 'unified/protectli/test-matrix.md#fw6'
         'variants/protectli_vp1x1x/test-matrix.md': 'unified/protectli/test-matrix.md#v1000-series'
@@ -154,6 +159,7 @@ plugins:
         'variants/protectli_vp66xx/test-matrix.md': 'unified/protectli/test-matrix.md#vp6630vp6650vp6670'
         'variants/protectli_vp2410/test-matrix.md': 'unified/protectli/test-matrix.md#vp2410'
         'variants/protectli_vp2420/test-matrix.md': 'unified/protectli/test-matrix.md#vp2420'
+        'variants/protectli_vp2430/test-matrix.md': 'unified/protectli/test-matrix.md#vp2430'
         'osf-trivia-list/dasharo-entry-subscription.md': 'osf-trivia-list/dasharo-pro-package.md'
 
         'variants/hardware-compatibility-list.md': 'variants/overview.md'
@@ -331,6 +337,10 @@ nav:
               - 'Releases': variants/protectli_vp2420/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_vp2420/hardware-matrix.md
               - 'Openness score': variants/protectli_vp2420/openness-score.md
+          - 'Protectli VP2430':
+              - 'Releases': variants/protectli_vp2430/releases.md
+              - 'Hardware Configuration Matrix': variants/protectli_vp2430/hardware-matrix.md
+              - 'Openness score': variants/protectli_vp2430/openness-score.md
           - 'Protectli VP46XX':
               - 'Releases': variants/protectli_vp46xx/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_vp46xx/hardware-matrix.md
