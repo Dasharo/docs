@@ -525,112 +525,120 @@ nav:
           - 'Generic Test Setup': unified-test-documentation/generic-test-setup.md
           - 'Generic Testing Stand Setup': unified-test-documentation/generic-testing-stand-setup.md
           - 'Dasharo compatibility':
-              - 'Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
-              - 'Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
-              - 'Custom Boot Keys': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
-              - 'Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
-              - 'Custom Boot Order': unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
-              - 'Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
-              - 'Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
-              - 'SMBIOS': unified-test-documentation/dasharo-compatibility/31L-smbios.md
-              - 'Device Tree': unified-test-documentation/dasharo-compatibility/31W-device-tree.md
-              - 'USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
-              - 'CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
-              - 'NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
-              - 'Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
-              - 'Network boot utilities': unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
-              - 'SD card reader': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
-              - 'USB camera': unified-test-documentation/dasharo-compatibility/317-usb-camera.md
-              - 'Wi-Fi and Bluetooth support': unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
-              - 'Display ports and LCD': unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
-              - 'Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
-              - 'USB-C support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
-              - 'Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
-              - 'Windows booting': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
-              - 'Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
-              - 'UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
-              - 'UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
-              - 'Platform suspend and resume': unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
-              - 'FreeBSD support': unified-test-documentation/dasharo-compatibility/307-freebsd-support.md
-              - 'Debian Stable and Ubuntu LTS support': unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
-              - 'QubesOS support': unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
-              - 'Fedora support': unified-test-documentation/dasharo-compatibility/310-fedora-support.md
-              - 'pfSense support': unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-              - 'OPNsense support': unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
-              - 'Proxmox support': unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
-              - 'Ubuntu Server support': unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
-              - 'USB detection': unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
-              - 'USB booting': unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
-              # - 'coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
-              - 'Fan speed': unified-test-documentation/dasharo-compatibility/S30-fan-speed.md
-              - 'Embedded Controller and Super I/O initialization ': unified-test-documentation/dasharo-compatibility/31G-ec-and-superio.md
-              - 'Nvidia Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
-              - 'Flash write protection': unified-test-documentation/dasharo-compatibility/31P-flash-write-protection.md
-              - 'Custom Network Boot entries': unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
-              - 'M.2 automatic SATA/NVMe switching support': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
-              - 'miniPCIe slot verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
-              - 'eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
-              - 'PCI Express ports': unified-test-documentation/dasharo-compatibility/31R-pcie-ports.md
-              - 'SATA LED and PC speaker error indication': unified-test-documentation/dasharo-compatibility/31S-sata-led-and-pc-speaker-error-indication.md
-              - 'Firmware locally building and flashing': unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
-              - 'Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
-              - 'Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
-              - 'Embedded controller flashing': unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
-              - 'Logo customization': unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
-              - 'Super I/O initialization - QubesOS': unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
-              - 'Display Resolution - QubesOS': unified-test-documentation/dasharo-compatibility/345-display-resolution.md
-              - 'Device power control operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
-              - 'SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
-              - 'Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
-              - 'BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
-              - 'Suspend Mechanism Switching S0ix/S3': unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
-              - 'Block boot when battery is low': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
-              - 'Power State after Power Fail': unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
-              - 'ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
-              - 'Dasharo Configuration Utility': unified-test-documentation/dasharo-compatibility/362-dcu.md
-              - 'Build on a fresh OS Installation': unified-test-documentation/dasharo-compatibility/build-on-new-os.md
+              #pre-commit-sort-start
+              - '[AUD] Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
+              - '[BBB] Boot block on low battery': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
+              - '[BNO] Build on a fresh OS Installation': unified-test-documentation/dasharo-compatibility/build-on-new-os.md
+              - '[BMF] BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
+              - '[BSD] FreeBSD support': unified-test-documentation/dasharo-compatibility/307-freebsd-support.md
+              - '[CAM] USB Camera Verification': unified-test-documentation/dasharo-compatibility/317-usb-camera.md
+              - '[CBK] Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
+              - '[CBO] Custom Boot Order': unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
+              - '[CBP] Coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
+              - '[CLG] Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
+              - '[CNB] Custom Network Boot entries': unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
+              - '[CPU] CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
+              - '[DCU] Dasharo Configuration Utility': unified-test-documentation/dasharo-compatibility/362-dcu.md
+              - '[DMI] SMBIOS verification': unified-test-documentation/dasharo-compatibility/31L-smbios.md
+              - '[DPC] Device power control operations': unified-test-documentation/dasharo-compatibility/344-power-operations.md
+              - '[DSP] Display ports and LCD support': unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
+              - '[DSR] Display Resolution - QubesOS': unified-test-documentation/dasharo-compatibility/345-display-resolution.md
+              - '[DTS] Dasharo Tools Suite': unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite.md
+              - '[DVT] Device Tree': unified-test-documentation/dasharo-compatibility/31W-device-tree.md
+              - '[ECF] Embedded controller flashing': unified-test-documentation/dasharo-compatibility/327-embedded_controller_flashing.md
+              - '[ECR] Embedded Controller and Super I/O initialization ': unified-test-documentation/dasharo-compatibility/31G-ec-and-superio.md
+              - '[EFI] UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
+              - '[ERR] SATA LED and PC speaker error indication': unified-test-documentation/dasharo-compatibility/31S-sata-led-and-pc-speaker-error-indication.md
+              - '[ESP] ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
+              - '[FAN] Fan speed': unified-test-documentation/dasharo-compatibility/S30-fan-speed.md
+              # - '[FAN] coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
+              - '[FED] Fedora support': unified-test-documentation/dasharo-compatibility/310-fedora-support.md
+              - '[FFW] Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
+              - '[FLB] Firmware locally building and flashing': unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
+              - '[HCL] Memory HCL': unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
+              - '[HDS] Heads bootloader support': unified-test-documentation/dasharo-compatibility/31U-heads-bootloader-support.md
+              - '[HWP] Flash write protection': unified-test-documentation/dasharo-compatibility/31P-flash-write-protection.md
+              - '[LBT] Debian Stable and Ubuntu LTS support': unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
+              - '[LCM] Logo customization': unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
+              - '[MEM] Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
+              - '[MMC] eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
+              - '[MSS] M.2 slot support with automatic switching between SATA and NVMea': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
+              - '[MWL] miniPCIe verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
+              - '[NBT] Network boot utilities': unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
+              - '[NVI] Nvidia Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
+              - '[NVM] NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
+              - '[OPN] OPNsense support': unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+              - '[PBT] Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
+              - '[PEX] PCI Express ports support': unified-test-documentation/dasharo-compatibility/31R-pcie-ports.md
+              - '[PFS] pfSense support': unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
+              - '[PPS] Super I/O initialization - QubesOS': unified-test-documentation/dasharo-compatibility/343-super-I-O-initialization-on-QubesOS.md
+              - '[PSF] Power State after Power Fail ': unified-test-documentation/dasharo-compatibility/360-power-after-fail.md
+              - '[PVE] Proxmox support': unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
+              - '[PXE] Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
+              - '[QBS] Qubes OS support': unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
+              - '[SDC] SD card support': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
+              - '[SHT] SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
+              - '[SLM] Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
+              - '[SMS] Suspend Mechanism Switching': unified-test-documentation/dasharo-compatibility/358-suspend-mechanism-switching-S0ix-S3.md
+              - '[SOL] Sign of life': unified-test-documentation/dasharo-compatibility/347-sign-of-life.md
+              - '[SUSP] Sleep mode': unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+              - '[UBT] USB Boot': unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
+              - '[UDT] USB Detection': unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
+              - '[USB] USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
+              - '[USH] UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
+              - '[USS] Ubuntu Server support': unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
+              - '[UTC] USB-C docking station support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
+              - '[WBT] Windows 11 Support': unified-test-documentation/dasharo-compatibility/31A-windows-booting.md
+              - '[WLE] M.2 WiFi/Bluetooth verification': unified-test-documentation/dasharo-compatibility/318-m2-wifi-bluetooth.md
+              #pre-commit-sort-end
           - 'Dasharo security':
+              #pre-commit-sort-start
+              - '[BGS] Intel Boot Guard integration': unified-test-documentation/dasharo-security/207-boot-guard-support.md
+              - '[BLS] BIOS lock support': unified-test-documentation/dasharo-security/20J-bios-lock-support.md
+              - '[BMA] Boot menu enable/disable': unified-test-documentation/dasharo-security/20P-boot-menu.md
+              - '[DMP] TCG OPAL password': unified-test-documentation/dasharo-security/208-opal-disk-password-support.md
+              - '[EDP] Early Boot DMA Protection': unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
+              - '[MBO] Measured Boot integration': unified-test-documentation/dasharo-security/203-measured-boot.md
+              - '[MNE] ME neuter/disable': unified-test-documentation/dasharo-security/20F-me-neuter.md
+              - '[MPS] XMP memory profile': unified-test-documentation/dasharo-compatibility/363-xmp.md
+              - '[NBA] Network stack enable/disable': unified-test-documentation/dasharo-security/20T-network-boot.md
+              - '[PSW] UEFI Setup password': unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
+              - '[SBO] UEFI Secure Boot integration': unified-test-documentation/dasharo-security/206-secure-boot.md
+              - '[SMM] SMM BIOS write protection': unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
               - '[TPM, TPD] TPM Support': unified-test-documentation/dasharo-security/200-tpm-support.md
               - '[TPMCMD] TPM2 Commands': unified-test-documentation/dasharo-security/200-tpm2-commands.md
-              - '[VBO] Verified Boot Integration': unified-test-documentation/dasharo-security/201-verified-boot.md
-              - '[MBO] Measured Boot integration': unified-test-documentation/dasharo-security/203-measured-boot.md
-              - '[SBO] UEFI Secure Boot integration': unified-test-documentation/dasharo-security/206-secure-boot.md
-              - '[MNE] ME neuter/disable': unified-test-documentation/dasharo-security/20F-me-neuter.md
-              - '[BLS] BIOS lock support': unified-test-documentation/dasharo-security/20J-bios-lock-support.md
-              - '[SMM] SMM BIOS write protection': unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
-              - '[EDP] Early Boot DMA Protection': unified-test-documentation/dasharo-security/20L-early-boot-dma-protection.md
-              - '[BMA] Boot menu enable/disable': unified-test-documentation/dasharo-security/20P-boot-menu.md
-              - '[PSW] UEFI Setup password': unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
               - '[USS] USB stack enable/disable': unified-test-documentation/dasharo-security/20S-usb-stack.md
-              - '[NBA] Network stack enable/disable': unified-test-documentation/dasharo-security/20T-network-boot.md
-              - '[BGS] Intel Boot Guard integration': unified-test-documentation/dasharo-security/207-boot-guard-support.md
-              - '[DMP] TCG OPAL password': unified-test-documentation/dasharo-security/208-opal-disk-password-support.md
-              - '[MPS] XMP memory profile': unified-test-documentation/dasharo-compatibility/363-xmp.md
+              - '[VBO] Verified Boot Integration': unified-test-documentation/dasharo-security/201-verified-boot.md
+              #pre-commit-sort-end
           - 'Dasharo performance':
-              - 'Coreboot boot measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
-              - 'Device boot measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md
-              - 'CPU temperature measure': unified-test-documentation/dasharo-performance/401-cpu-temperature.md
-              - 'CPU frequency measure': unified-test-documentation/dasharo-performance/402-cpu-frequency.md
-              - 'Platform stability': unified-test-documentation/dasharo-performance/404-platform-stability.md
-              - 'Fan control measure': unified-test-documentation/dasharo-performance/405-fan-control-measure.md
-              - 'Custom fan curve': unified-test-documentation/dasharo-performance/406-custom-fan-curve.md
-              - 'Ubuntu booting performance test': unified-test-documentation/dasharo-performance/407-ubuntu-booting-performance-test.md
-              - 'Debian booting performance test': unified-test-documentation/dasharo-performance/408-debian-booting-performance-test.md
-              - 'FreeBSD booting performance test': unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
-              - 'Proxmox booting performance test': unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
-              - 'Ubuntu Server booting performance test': unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-              - 'OPNsense (serial output) booting performance test': unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-              - 'OPNsense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
-              - 'pfSense (serial output) booting performance test': unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
-              - 'pfSense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
-              - 'Windows booting performance test': unified-test-documentation/dasharo-performance/416-windows-booting-performance-test.md
+              #pre-commit-sort-start
+              - '[BDE] Debian booting performance test': unified-test-documentation/dasharo-performance/408-debian-booting-performance-test.md
+              - '[BFB] FreeBSD booting performance test': unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
+              - '[BOS] OPNsense (serial output) booting performance test': unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
+              - '[BOV] OPNsense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+              - '[BPM] Proxmox booting performance test': unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
+              - '[BPS] pfSense (serial output) booting performance test': unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
+              - '[BPV] pfSense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
+              - '[BUB] Ubuntu booting performance test': unified-test-documentation/dasharo-performance/407-ubuntu-booting-performance-test.md
+              - '[BUS] Ubuntu Server booting performance test': unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
+              - '[BWI] Windows booting performance test': unified-test-documentation/dasharo-performance/416-windows-booting-performance-test.md
+              - '[CBMEM] Serial Boot Measure': unified-test-documentation/dasharo-performance/400-coreboot-boot-measure.md
+              - '[CFC] Custom fan curve profiles': unified-test-documentation/dasharo-performance/406-custom-fan-curve.md
+              - '[CPF] CPU frequency measure': unified-test-documentation/dasharo-performance/402-cpu-frequency.md
+              - '[CPT] CPU temperature': unified-test-documentation/dasharo-performance/401-cpu-temperature.md
+              - '[DBM] Device Boot Measure': unified-test-documentation/dasharo-performance/403-device-boot-measure.md
+              - '[FNM] Fan control measure': unified-test-documentation/dasharo-performance/405-fan-control-measure.md
+              - '[STB] Platform stability': unified-test-documentation/dasharo-performance/404-platform-stability.md
+              #pre-commit-sort-end
           - 'Dasharo stability':
-              - '[SUD] USB Devices Detection': unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
-              - '[SMW] M.2 Wi-fi Detection': unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
+              #pre-commit-sort-start
               - '[CUP] Capsule Update': unified-test-documentation/dasharo-stability/capsule-update.md
+              - '[NET] NET controller': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+              - '[SMW] M.2 Wi-fi Detection': unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
               - '[SNV] NVMe detection': unified-test-documentation/dasharo-stability/C03-nvme-detection.md
               - '[SPM] Power management': unified-test-documentation/dasharo-stability/C04-power-management.md
-              - '[NET] NET controller': unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+              - '[SUD] USB Devices Detection': unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
+              #pre-commit-sort-end
       - 'Roadmap': ecosystem/roadmap.md
       - 'Quality Principles': quality-principles/introduction.md
         # - 'Introduction':
