@@ -64,15 +64,20 @@ def main():
     check_sections_overlap(sections_to_sort)
 
     # Sorting
+    changed = False
     for start_idx, end_idx in zip(start_lines, end_lines):
         to_sort = lines[start_idx + 1 : end_idx]
         to_sort.sort()
+        if lines[start_idx + 1 : end_idx] != to_sort:
+            changed = True
         lines[start_idx + 1 : end_idx] = to_sort
 
     # Write changes
-    with open(file_path, "w") as file:
-        file.writelines([line + "\n" for line in lines])
-
+    if changed:
+        with open(file_path, "w") as file:
+            file.writelines([line + "\n" for line in lines])
+        exit(1)
+    exit(0)
 
 if __name__ == "__main__":
     main()
