@@ -52,6 +52,15 @@ repos:
         language: pygrep
         exclude: '^.*.(webp|jpeg|jpg|png|pdf)$'
 
+  - repo: local
+    hooks:
+      - id: sort-mkdocs
+        name: Sort mkdocs nav entries
+        entry: ./sort-mkdocs.py
+        language: system
+        files: "mkdocs.yml"
+
+
 ci:
   autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
   autofix_prs: false
