@@ -143,8 +143,8 @@ flashrom -w xac -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L3205D/MX
 ## (Optional) Step 7: Flash 8MB (ME) part
 
 If a more serious problem occurs, like
-[broken ME](faq.md#cpu-was-replace-warm-reset-required-loop),
-it may be necessary to use your
+[broken ME](faq.md#cpu-was-replace-warm-reset-required-loop), or if you would
+like to restore Dell firmware, it may be necessary to use your
 [firmware backup](initial-deployment.md#bios-backup)
 and restore content of 8MB chip.
 
