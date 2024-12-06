@@ -217,6 +217,14 @@
            coreboot/coreboot-sdk:2023-11-24_2731fa619b /bin/bash
         ```
 
+        - If the build commands ahead fail, try using an older container
+            ```bash
+            docker run --rm -it -u $UID \
+                -v $PWD:/home/coreboot/coreboot \
+                -w /home/coreboot/coreboot \
+                coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+            ```
+
     1. Inside of the container, configure the build process:
 
         === "V540TU"
