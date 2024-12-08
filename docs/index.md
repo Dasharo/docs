@@ -53,7 +53,7 @@ collaborations.
 Become a part of the vibrant Dasharo community:
 
 - **Chat with Us**: Join the conversation in the [Dasharo Matrix
-  Workspace](https://matrix.to/#dasharo:matrix.org).
+  Workspace](https://matrix.to/#/#dasharo:matrix.org).
 - **Stay Updated**: Don't miss our quarterly [Dasharo
   Events](https://vpub.dasharo.com/) featuring:
     + **Dasharo User Group (DUG)**: A forum for Dasharo users to connect, share
