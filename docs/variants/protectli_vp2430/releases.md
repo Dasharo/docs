@@ -11,9 +11,6 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
-Test results for this platform can be found
-[here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=270990532).
-
-## v0.9.0 - 2024-11-xx
-
 > Coming soon!
+
+[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL

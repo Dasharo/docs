@@ -310,7 +310,9 @@ and Dasharo open-source firmware.
     1. Flash the platform by using the following command:
 
         ```bash
-        flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w [path_to_binary]
+        flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 \
+            -c "MX25L12833F/MX25L12835F/MX25L12845E/MX25L12865E/MX25L12873F" \
+            -w [path_to_binary]
         ```
 
         > Flashing with flashrom takes about 1 minute.
