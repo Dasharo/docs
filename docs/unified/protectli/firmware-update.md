@@ -141,3 +141,27 @@ update.
     ```
 
     This command also preserves Dasharo UEFI settings and the boot order.
+
+=== "VP2430"
+
+    ## Updating minor versions v1.x.y
+
+    Both `WP_RO` and `RW_SECTION_A` partitions of the flash needs to be updated.
+    Flash it using the following command:
+
+    ```bash
+    flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i WP_RO
+    ```
+
+    This command also preserves current Dasharo UEFI settings and the boot order.
+
+    ## Updating patch version v1.0.x
+
+    Only the `RW_SECTION_A` partition of the flash needs to be updated. Flash it
+    using the following command:
+
+    ```bash
+    flashrom -p internal -w [path] --fmap -i RW_SECTION_A
+    ```
+
+    This command also preserves Dasharo UEFI settings and the boot order.
