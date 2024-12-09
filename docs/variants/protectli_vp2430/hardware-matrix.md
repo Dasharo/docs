@@ -9,7 +9,7 @@ coreboot port on the Protectli VP2430 firewall.
 
 | Component              | Description                                              |
 |------------------------|----------------------------------------------------------|
-| **CPU**                | Intel(R) N100 @ 3.40GHz                                  |
+| **CPU**                | Intel(R) N150 @ 3.40GHz                                  |
 | **RAM**                | Corsair CMSX32GX5M2A4800C40                              |
 | **Flash memory**       | Macronix KH25L12835F
 | **SSD**                | 1. SSD Goodram PX700 M.2 NVMe 1TB                        |

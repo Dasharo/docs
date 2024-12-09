@@ -178,7 +178,7 @@
     means a significant improvement in performance, at a comparable power
     consumption level. It also features 4 x 2.5G i226 ethernet ports.
 
-    ![](/images/VP2430.png)
+    ![](../../images/VP2430.png)
 
     The VP2430 can accommodate up to 16 GB DDR5 RAM and and a M.2 NVMe SSD
     storage drive. The built-in 32 GB eMMC module can be used for booting a
@@ -186,7 +186,7 @@
 
     VP2430 specification:
 
-    * Intel® Processor N100 Quad Core, 6M Cache, up to 3.4 GHz
+    * Intel® Processor N150 Quad Core, 6M Cache, up to 3.4 GHz
     * 4 Intel® 2.5 Gigabit Ethernet NIC ports
     * M.2 NVMe SSD Slot
     * 32 GB eMMC module on board
