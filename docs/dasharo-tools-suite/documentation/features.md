@@ -2,6 +2,7 @@
 
 This section describes the functionality of the Dasharo Tools Suite. These are:
 
+* [DTS available commands](#available-commands)
 * [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 * [HCL Report](#hcl-report),
 * [Firmware update](#firmware-update),
@@ -11,6 +12,25 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
 * [additional features](#additional-features),
     + [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
     + [run DTS using VentoyOS](#run-dts-using-ventoyos).
+
+### Available Commands
+
+When DTS is started, it has following options for the user to choose from:
+
+- **(1)** Dasharo HCL Report:
+  
+  Generate HCL report on the current machine.
+  Read more: [HCLReport](#hcl-report)
+
+- **(2)** Update Dasharo Firmware
+- **(3)** Restore Firmware from Dasharo HCL Report
+- **(4)** Load your DPP keys
+- **(R)** Reboot
+- **(P)** Poweroff
+- **(S)** Enter shell
+- **(K)** Launch SSH Server
+- **(L)** Enable sending DTS logs
+- **(V)** Enable verbose mode
 
 ### Dasharo zero-touch initial deployment
 
