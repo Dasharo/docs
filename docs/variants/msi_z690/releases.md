@@ -16,7 +16,7 @@ For details about our release process please read
 [newsletter]{.md-button .md-button--primary .center}
 </center>
 
-## v1.1.4 - 2024-11-22
+## v1.1.4 - 2024-12-10
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7d25/v1.1.4-results.csv).
@@ -33,7 +33,7 @@ Test results for this release can be found
 ### Changed
 
 - Use a constant value for major BIOS version number in ROMHOLES (used by FlashBIOS)
-- Updated Intel CPU microcode to 0x129 version
+- Updated Intel CPU microcode to 0x12B version
 - Raptor Lake FSP is used instead of deprecated Alder Lake FSP
 - [Updated Flash Descriptor to enlarge BIOS region; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/pull/16)
 

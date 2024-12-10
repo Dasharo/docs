@@ -18,7 +18,7 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 
 </center>
 
-## v0.9.2 - 2024-11-22
+## v0.9.2 - 2024-12-10
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7e06/v0.9.2-results.csv).
@@ -35,7 +35,7 @@ Test results for this release can be found
 ### Changed
 
 - Use a constant value for major BIOS version number in ROMHOLES (used by FlashBIOS)
-- Updated Intel CPU microcode to 0x129 version
+- Updated Intel CPU microcode to 0x12B version
 - [Updated Flash Descriptor to enlarge BIOS region; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/pull/16)
 
 ### Fixed
