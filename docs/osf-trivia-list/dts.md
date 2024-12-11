@@ -103,7 +103,7 @@ you can help by running it in verbose mode and providing logs. To do that,
 follow the instructions below:
 
 1. Boot DTS.
-2. In the DTS menu enable verbose mode by typing `V` and pressing `Enter`.
-3. Enable sending logs by typing `L` and pressing `Enter`.
+2. In the DTS menu enable verbose mode by pressing `V`.
+3. Enable sending logs by pressing `L`.
 4. Reproduce the problem.
 5. The logs will be sent automatically after exiting from the menu.
