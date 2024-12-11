@@ -1,4 +1,4 @@
-## Features
+# Features
 
 This section describes the functionality of the Dasharo Tools Suite. These are:
 
@@ -13,7 +13,7 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
     + [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
     + [run DTS using VentoyOS](#run-dts-using-ventoyos).
 
-### Available Commands
+## Available Commands
 
 When DTS is started, it has following options for the user to choose from:
 
@@ -36,7 +36,7 @@ When DTS is started, it has following options for the user to choose from:
 * **(L)** Enable sending DTS logs
 * **(V)** Enable verbose mode
 
-### Dasharo zero-touch initial deployment
+## Dasharo zero-touch initial deployment
 
 DTS can be used to flash Dasharo firmware on your hardware. To achieve this,
 boot DTS, choose option number `2`. After creating
@@ -79,7 +79,7 @@ And partially (only EC firmware flashing) on:
 * NovaCustom V540TU/TNx,
 * NovaCustom V560TU/TNx.
 
-### HCL Report
+## HCL Report
 
 DTS allows the generation of a package with logs containing hardware
 information. To create one, choose option number 1 and check out the disclaimer.
@@ -89,7 +89,7 @@ connecting the ethernet cable. More information can be found in
 
 ![](./images/dts-hcl-run.png)
 
-#### HCL Report correctness
+### HCL Report correctness
 
 Please note DTS HCL Report assumes that your chipset is already supported by
 flashrom. There are also other false negative errors and unknowns, which we
@@ -135,7 +135,7 @@ Legend:
 Please report all errors experienced while performing a dump to
 [dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository.
 
-#### BIOS backup
+### BIOS backup
 
 One of the key components of HCL Report is your BIOS backup. To prepare BIOS
 backup of your platform, simply run HCL Report and decide if you would like to
@@ -157,7 +157,7 @@ Please consider the following options depending on your situation:
     + **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
       directory.
 
-### Firmware update
+## Firmware update
 
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
 with flashed Dasharo and choose option number `2`. You may see additional
@@ -274,7 +274,7 @@ Rebooting in 5s:
 Rebooting
 ```
 
-#### Local firmware update
+### Local firmware update
 
 To flash a local BIOS image (e.g. mounted from a USB stick), you can drop to the
 shell (option `S`) and use the `flashrom` binary provided inside DTS directly.
@@ -301,7 +301,7 @@ New value is 0x8b.
 SPI Configuration is locked down
 ```
 
-#### Update issues
+### Update issues
 
 If you see the following pop-ups during the first boot after the update:
 
@@ -327,7 +327,7 @@ If you used `flashrom` as described in [Local firmware
 update](#local-firmware-update), flash the firmware again, but make sure the
 BIOS lock is turned off this time.
 
-### EC transition
+## EC transition
 
 DTS allows performing full Embedded Controller firmware transition from the
 proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
@@ -344,7 +344,7 @@ Starting from DTS v1.2.0 to perform EC transition please run
 [firmware update](#firmware-update) on the platform with proprietary vendor EC
 firmware.
 
-### EC update
+## EC update
 
 !!! note
 
@@ -416,13 +416,13 @@ version. This is how we can achieve that.
   version: 2022-08-31_cbff21b
   ```
 
-### Additional features
+## Additional features
 
 The section below presents a list of functionalities added to DTS, which were
 developed at the community's request and which do not necessarily relate
 strictly to Dasharo.
 
-#### Run commands from iPXE shell automatically
+### Run commands from iPXE shell automatically
 
 It is possible to automatically execute your chosen commands after iPXE boot.
 You can use the
@@ -483,7 +483,7 @@ different port, for example 9001, then run the script like this:
 Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
 ```
 
-#### Run DTS using VentoyOS
+### Run DTS using VentoyOS
 
 VentoyOS allows operating systems to be booted from ISO files. Unfortunately,
 the ISO-formatted DTS image we've provided so far mounted the main file system

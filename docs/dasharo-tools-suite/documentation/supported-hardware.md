@@ -1,4 +1,4 @@
-## Supported hardware
+# Supported hardware
 
 Dasharo Tools Suite was prepared to run on x86 platforms, but we can confirm
 that it boots on the following platforms:

@@ -1,4 +1,4 @@
-## Building
+# Building
 
 We choose [Yocto Project](https://www.yoctoproject.org/) to prepare Dasharo
 Tools Suite system. DTS image can be built using publicly available sources.
@@ -6,7 +6,7 @@ Thanks to publishing the build cache on
 [cache.dasharo.com](https://cache.dasharo.com/yocto/dts/) the time needed to
 finish the process should be significantly decreased.
 
-### Prerequisites
+## Prerequisites
 
 The following must be met to build DTS:
 
@@ -33,7 +33,7 @@ mkdir yocto && cd yocto
 git clone https://github.com/Dasharo/meta-dts.git
 ```
 
-### Build
+## Build
 
 From `yocto` directory, run:
 
@@ -74,7 +74,7 @@ local_conf_header:
     PROJECT_NAME ?= "yocto/dts"
 ```
 
-#### Build image with UEFI Secure Boot support
+### Build image with UEFI Secure Boot support
 
 From `yocto` directory run:
 
@@ -104,7 +104,7 @@ can be used but it was not tested yet. Quick start with instructions on how to
 use image are described in
 [meta-efi-secure-boot](https://github.com/jiazhang0/meta-secure-core/tree/master/meta-efi-secure-boot#quick-start-for-the-first-boot).
 
-### Flash
+## Flash
 
 * Find out your device name.
 

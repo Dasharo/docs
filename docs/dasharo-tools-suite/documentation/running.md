@@ -1,4 +1,4 @@
-## Running
+# Running
 
 The Dasharo Tools Suite can be started in various ways. Currently, there are
 two options:
@@ -9,11 +9,11 @@ two options:
 The first one should always be preferred if possible, as it is the easiest one
 to use.
 
-### Bootable over a network
+## Bootable over a network
 
 This section describes how to boot DTS using iPXE.
 
-#### Requirements
+### Requirements
 
 Below are the requirements that must be met to run DTS over a network on the
 platform:
@@ -25,7 +25,7 @@ platform:
     + disabled BIOS lock feature,
     + disabled SMM BIOS write protection feature.
 
-#### Launching DTS
+### Launching DTS
 
 To access Dasharo Tools Suite:
 
@@ -50,11 +50,11 @@ To access Dasharo Tools Suite:
 
 * the DTS menu will now appear.
 
-### Bootable USB stick
+## Bootable USB stick
 
 This section describes how to boot DTS using a USB stick.
 
-#### Requirements
+### Requirements
 
 Below are the requirements that must be met to run DTS from a USB device on the
 platform:
@@ -69,7 +69,7 @@ platform:
     + disabled BIOS lock feature,
     + disabled SMM BIOS write protection feature.
 
-#### Launching DTS
+### Launching DTS
 
 To access Dasharo Tools Suite:
 
