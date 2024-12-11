@@ -107,3 +107,9 @@ follow the instructions below:
 3. Enable sending logs by pressing `L`.
 4. Reproduce the problem.
 5. The logs will be sent automatically after exiting from the menu.
+
+**Warning**
+
+There have been issues with sending logs. If the automatic log submission does
+not work, you can view and copy the logs manually from `/tmp/dts.log`,
+`/var/local/dts-err.log` and `/var/local/flashrom.log`.
