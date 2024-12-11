@@ -17,7 +17,8 @@ the initial deployment, even when no OS is currently installed.
 
 * [Building](documentation/building.md) - describes how to build DTS.
 * [Running](documentation/running.md) - describes how to run DTS.
-* [Supported Hardware](documentation/running.md) - lists which hardware is supported by DTS.
+* [Supported Hardware](documentation/running.md) - lists which hardware is
+  supported by DTS.
 * [Features](documentation/features.md) - provides more details about DTS features.
 
 ## Reporting issues
