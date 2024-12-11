@@ -106,7 +106,8 @@ follow the instructions below:
 2. In the DTS menu enable verbose mode by pressing `V`.
 3. Enable sending logs by pressing `L`.
 4. Reproduce the problem.
-5. The logs will be sent automatically after exiting from the menu.
+5. The logs will be sent automatically after exiting from the menu (entering
+   shell, powering off the system or rebooting using the options in DTS menu).
 
 !!! tip
 
