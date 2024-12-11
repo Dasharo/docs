@@ -108,8 +108,9 @@ follow the instructions below:
 4. Reproduce the problem.
 5. The logs will be sent automatically after exiting from the menu.
 
-**Warning**
+!!! tip
 
-There have been issues with sending logs. If the automatic log submission does
-not work, you can view and copy the logs manually from `/tmp/dts.log`,
-`/var/local/dts-err.log` and `/var/local/flashrom.log`.
+    If the automatic log submission does not work in your case, you can view and
+    copy the logs manually from `/tmp/dts.log`, `/var/local/dts-err.log` and
+    `/var/local/flashrom.log`. Then, you should provide the logs by email or
+    via "Dasharo Premiere Support" Matrix channel.
