@@ -26,10 +26,11 @@ Package (formerly Dasharo Entry Subscription) sold and the availability of
 other funding (e.g., NLNet, corporate sponsors, community donations) but one or
 more per year. Dasharo Pro/Enterprise Package (formerly Dasharo Entry
 Subscription) Releases are characterized by a changing patch version (`z`).
-Fixes and features introduced in Dasharo Entry Subscription Releases will also
-be available later as Dasharo Community Releases with public pre-built binaries
-in the respective release pages. In short, being a Dasharo Subscriber gives
-early access to the newest features and fixes.
+Fixes and features introduced in Dasharo Pro/Enterprise Package (formerly
+Dasharo Entry Subscription) Releases will also be available later as Dasharo
+Community Releases with public pre-built binaries in the respective release
+pages. In short, being a Dasharo Subscriber gives early access to the newest
+features and fixes.
 
 [How to become Dasharo Pro Package subscriber?](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
 
