@@ -14,7 +14,7 @@ need to execute the setup actions before each independent case.
     1. you can download it from `Releases` page dedicated for your platform
     1. or you can build one yourself as shown in the `Building manual` page
         dedicated for platform which is used by you.
-1. Flash `FIRMWARE` binary to the DUT according to the instructions in [docs.dasharo](../../docs/variants/overview.md)
+1. Flash `FIRMWARE` binary to the DUT according to the instructions in [docs.dasharo](../variants/overview.md)
 for your device.
     1. If the device already has Dasharo, see the `Firmware update` page
     1. If the device has a different firmware installed, see the
@@ -183,7 +183,7 @@ sudo apt install nvidia-driver-560
 1. Select `NVIDIA On-demand` and apply.
 1. Enter the `OPERATING_SYSTEM` password when prompted.
 
-![](/images/nv4x_nvidia_panel.jpg){ class="center" }
+![](../images/nv4x_nvidia_panel.jpg){ class="center" }
 
 #### Post installation
 

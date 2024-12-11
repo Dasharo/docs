@@ -26,8 +26,8 @@ When DTS is started, it has following options for the user to choose from:
 * **(3)** Restore Firmware from Dasharo HCL Report
 * **(4)** Load your DPP keys
 
-  Load your Dasharo Pro Package (DPP) keys. Read mode:
-  [How can I use my Dasharo Pro Package credentials](../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
+Load your Dasharo Pro Package (DPP) keys. Read more:
+[How can I use my Dasharo Pro Package credentials](../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
 
 * **(R)** Reboot
 * **(P)** Poweroff
@@ -40,15 +40,15 @@ When DTS is started, it has following options for the user to choose from:
 
 DTS can be used to flash Dasharo firmware on your hardware. To achieve this,
 boot DTS, choose option number `2`. After creating
-[report](../glossary.md#dasharo-hardware-compatibility-list-report) with
+[report](../../glossary.md#dasharo-hardware-compatibility-list-report) with
 firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
-[DPP](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
+[DPP](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
 release and it is only available to Dasharo Entry Subscription subscribers.
 If you have DPP subscription then do steps in
 [How can I use my Dasharo Pro Package credentials](
-../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
+../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
 section first.
 
 Next you will be asked two questions to confirm flashing. The first will be
@@ -85,9 +85,9 @@ DTS allows the generation of a package with logs containing hardware
 information. To create one, choose option number 1 and check out the disclaimer.
 If you would like to send the report to our servers, please remember about
 connecting the ethernet cable. More information can be found in
-[glossary](../glossary.md#dasharo-hardware-compatibility-list-report).
+[glossary](../../glossary.md#dasharo-hardware-compatibility-list-report).
 
-![](./images/dts-hcl-run.png)
+![](../images/dts-hcl-run.png)
 
 ### HCL Report correctness
 
@@ -164,7 +164,7 @@ with flashed Dasharo and choose option number `2`. You may see additional
 information about available updates if you are not [Dasharo Pro Package](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber)
 subscriber. If you have DPP subscription then do steps in
 [How can I use my Dasharo Pro Package credentials](
-../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
+../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
 section first.
 
 Next you will be asked two questions to confirm flashing. The first will be
@@ -305,8 +305,8 @@ SPI Configuration is locked down
 
 If you see the following pop-ups during the first boot after the update:
 
-![error-0x03](./images/error-0x03.png)
-![error-0x13](./images/error-0x13.png)
+![error-0x03](../images/error-0x03.png)
+![error-0x13](../images/error-0x13.png)
 
 You probably performed an update using a deprecated version of Dasharo Tools
 Suite and have not disabled BIOS lock. Do not worry, nothing bad has happened.
@@ -314,7 +314,7 @@ If you backed up your old firmware, do the following steps:
 
 1. Reboot your device and turn off BIOS lock (you can find this option in
 [Dasharo Security
-Options](../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
+Options](../../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
 as `BIOS boot medium lock`).
 1. Boot the DTS you backed up your old firmware with and choose option 3, which
 will restore it.
@@ -333,12 +333,12 @@ DTS allows performing full Embedded Controller firmware transition from the
 proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
 functionality is supported on:
 
-* [NovaCustom NS5x/NS7x](../variants/novacustom_ns5x_tgl/releases.md),
-* [NovaCustom NV4x](../variants/novacustom_nv4x_tgl/releases.md),
-* [NovaCustom V540TU](../variants/novacustom_v540tu/releases.md),
-* [NovaCustom V540TNx](../variants/novacustom_v540tnx/releases.md),
-* [NovaCustom V560TU](../variants/novacustom_v560tu/releases.md)
-* [NovaCustom V560TNx](../variants/novacustom_v560tnx/releases.md).
+* [NovaCustom NS5x/NS7x](../../variants/novacustom_ns5x_tgl/releases.md),
+* [NovaCustom NV4x](../../variants/novacustom_nv4x_tgl/releases.md),
+* [NovaCustom V540TU](../../variants/novacustom_v540tu/releases.md),
+* [NovaCustom V540TNx](../../variants/novacustom_v540tnx/releases.md),
+* [NovaCustom V560TU](../../variants/novacustom_v560tu/releases.md)
+* [NovaCustom V560TNx](../../variants/novacustom_v560tnx/releases.md).
 
 Starting from DTS v1.2.0 to perform EC transition please run
 [firmware update](#firmware-update) on the platform with proprietary vendor EC

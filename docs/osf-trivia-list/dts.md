@@ -26,7 +26,7 @@ with keys to use with [Dasharo Tools Suite](../dasharo-tools-suite/overview.md).
 This section describes how to do it.
 
 * Firstly, run DTS from a USB flash drive, documentation on this is included
-  [here](../dasharo-tools-suite/documentation.md#bootable-usb-stick).
+  [here](../dasharo-tools-suite/documentation/running.md#bootable-usb-stick).
 
 * After booting, you will see a text menu, choose option number 4,
   `Load your DPP keys`, by pressing `4` and `Enter`.

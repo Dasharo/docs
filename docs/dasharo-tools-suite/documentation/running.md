@@ -20,7 +20,7 @@ platform:
 
 * Dasharo device with DTS functionality integrated,
 * wired network connection,
-* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
+* [Secure Boot disabled](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
 * If device if flashed with Dasharo and support following functionality
     + disabled BIOS lock feature,
     + disabled SMM BIOS write protection feature.
@@ -64,7 +64,7 @@ platform:
   section.
   with Dasharo).
 * Wired network connection,
-* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
+* [Secure Boot disabled](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
 * If device if flashed with Dasharo and support following functionality
     + disabled BIOS lock feature,
     + disabled SMM BIOS write protection feature.

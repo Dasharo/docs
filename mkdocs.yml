@@ -105,7 +105,7 @@ plugins:
   - redirects:
       redirect_maps:
         'common-coreboot-docs/dasharo_tools_suite.md': 'dasharo-tools-suite/overview.md'
-        'variants/clevo_nv41/ec_update.md': 'dasharo-tools-suite/documentation.md'
+        'variants/clevo_nv41/ec_update.md': 'dasharo-tools-suite/documentation/features.md'
         'unified/novacustom/fan-profiles.md': 'unified/novacustom/features.md'
         'unified/novacustom/fn-lock-hotkey.md': 'unified/novacustom/features.md'
         'unified/novacustom/rgb-keyboard.md': 'unified/novacustom/features.md'

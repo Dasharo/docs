@@ -27,7 +27,7 @@ with the internal programmer.
 ## Deploy using Dasharo Tools Suite
 
 For simplicity we recommend using [Dasharo Tools
-Suite](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+Suite](../../dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
 to omit all manual compilation and flashing steps, and deploy Dasharo
 seamlessly.
 
@@ -60,7 +60,7 @@ install it from the OS' package manager (minimum supported version is v1.0).
 
 Always prepare a backup of the current firmware image. If you are using DTS,
 the backup will be made automatically with [HCL
-report](../../dasharo-tools-suite/documentation.md#hcl-report). When deploying
+report](../../dasharo-tools-suite/documentation/features.md#hcl-report). When deploying
 manually, to read from the flash and save it to a file (`dump.rom`), execute
 the following command:
 

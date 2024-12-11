@@ -15,8 +15,10 @@ the initial deployment, even when no OS is currently installed.
   latest release and follow the instructions in [Dasharo release signature
   verification](../guides/signature-verification.md) using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.2.x-signing-key-pub.asc)
 
-* [Documentation](documentation.md) - describes DTS functionality and
-  information on how to run it.
+* [Building](documentation/building.md) - describes how to build DTS.
+* [Running](documentation/running.md) - describes how to run DTS.
+* [Supported Hardware](documentation/running.md) - lists which hardware is supported by DTS.
+* [Features](documentation/features.md) - provides more details about DTS features.
 
 ## Reporting issues
 

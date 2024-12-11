@@ -51,9 +51,9 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
     The DTS allows performing automatic firmware update process, which is the
     recommended method. To update your firmware, follow below steps.
 
-    1. Boot [DTS using iPXE](../../dasharo-tools-suite/documentation.md#bootable-over-a-network)
+    1. Boot [DTS using iPXE](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network)
        on your platform.
-    2. Follow [firmware update](../../dasharo-tools-suite/documentation.md#firmware-update)
+    2. Follow [firmware update](../../dasharo-tools-suite/documentation/features.md#firmware-update)
        procedure described in DTS documentation.
 
     ### Linux distribution of your choice

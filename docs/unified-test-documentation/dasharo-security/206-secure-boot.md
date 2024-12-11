@@ -1186,7 +1186,7 @@ on DUT.
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the [DTS: Build image with UEFI Secure Boot
-    support](../../dasharo-tools-suite/documentation.md#build-image-with-uefi-secure-boot-support).
+    support](../../dasharo-tools-suite/documentation/building.md#build-image-with-uefi-secure-boot-support).
 
 **Test steps**
 
@@ -1249,8 +1249,7 @@ automatic certificate provisioning is attached and can be booted on DUT.
     [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
-1. Proceed with the [DTS: Build image with UEFI Secure Boot
-    support](../../dasharo-tools-suite/documentation.md#build-image-with-uefi-secure-boot-support).
+1. Proceed with the [DTS: Build image with UEFI Secure Boot support](../../dasharo-tools-suite/documentation/building.md#build-image-with-uefi-secure-boot-support).
 
 **Test steps**
 

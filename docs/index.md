@@ -11,7 +11,7 @@ firmware:
 
 - **Seamless Deployment**: Start your journey with Dasharo effortlessly. [Learn
   how
-  →](dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+  →](dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
 - **Clean & Simple Code**: Our code is readable and maintainable, designed with
   developers in mind. [Explore our GitHub →](https://github.com/dasharo)
 - **Long-term Maintenance**: We are committed to supporting Dasharo for years

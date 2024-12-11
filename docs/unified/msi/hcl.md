@@ -29,7 +29,7 @@ hardware.
     * Source:
         - Link to report if it is public.
         - `Dasharo HCL report` if it was [reported using
-        DTS](../../dasharo-tools-suite/documentation.md#hcl-report).
+        DTS](../../dasharo-tools-suite/documentation/features.md#hcl-report).
 
     <center>
 
@@ -293,7 +293,7 @@ Maintainer documentation](../../dev-proc/hcl-maintainer.md).
 ## Contributing
 
 === "PRO Z690-A (WIFI) DDR4"
-    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation.md#hcl-report)
+    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation/features.md#hcl-report)
       to upload report automatically.
     - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
     - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
@@ -320,7 +320,7 @@ Maintainer documentation](../../dev-proc/hcl-maintainer.md).
       ```
 
 === "PRO Z690-A (WIFI)"
-    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation.md#hcl-report)
+    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation/features.md#hcl-report)
       to upload report automatically.
     - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z690).
     - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
@@ -347,7 +347,7 @@ Maintainer documentation](../../dev-proc/hcl-maintainer.md).
       ```
 
 === "PRO Z790-P (WIFI) DDR4"
-    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation.md#hcl-report)
+    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation/features.md#hcl-report)
       to upload report automatically.
     - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z790).
     - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
@@ -374,7 +374,7 @@ Maintainer documentation](../../dev-proc/hcl-maintainer.md).
       ```
 
 === "PRO Z790-P (WIFI)"
-    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation.md#hcl-report)
+    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation/features.md#hcl-report)
       to upload report automatically.
     - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_z790).
     - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).

@@ -74,7 +74,7 @@ To ensure a smooth deployment process, it is recommended to use the latest
 version of DTS available from the [releases
 page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
 then proceed with following the [Dasharo zero-touch initial deployment
-section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+section](../../dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
 procedure. This will help you set up Dasharo effectively and without manual
 intervention. However, if you wish to flash firmware you have built yourself,
 you will need take an alternate route and go through firmware preparation.

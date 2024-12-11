@@ -44,7 +44,7 @@ Supermicro proprietary closed source tools:
 * [Supermicro Update
   Manager](https://www.supermicro.com/en/solutions/management-software/supermicro-update-manager)
    please download and unpack archive.
-* [Backup](../../dasharo-tools-suite/documentation.md#bios-backup) or
+* [Backup](../../dasharo-tools-suite/documentation/features.md#bios-backup) or
   [Supermicro BIOS
   update](https://www.supermicro.com/en/support/resources/downloadcenter/firmware/MBD-X11SSH-TF/BIOS)
    please download and unpack archive.
