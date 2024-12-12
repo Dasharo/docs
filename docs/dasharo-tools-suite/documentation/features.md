@@ -17,24 +17,22 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
 
 When DTS is started, it has following options for the user to choose from:
 
-* **1** Dasharo HCL Report:
-
-  Generate HCL report on the current machine.
-  Read more: [HCLReport](#hcl-report)
-
-* **2** Update Dasharo Firmware
-* **3** Restore Firmware from Dasharo HCL Report
-* **4** Load your DPP keys
-
-Load your Dasharo Pro Package (DPP) keys. Read more:
-[How can I use my Dasharo Pro Package credentials](../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
-
+* **1)** [Dasharo HCL Report](#hcl-report) - generate Hardware
+  Compatibility List Report
+* **2)** [Update Dasharo Firmware](#firmware-update) or [Install Dasharo
+  Firmware](#dasharo-zero-touch-initial-deployment)
+* **3)** [Restore Firmware from Dasharo HCL Report](#update-issues)
+* **4)** [Load your DPP
+    keys](../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
+    \- Load your Dasharo Pro Package (DPP) keys
 * **R** Reboot
 * **P** Poweroff
 * **S** Enter shell
 * **K** Launch SSH Server
-* **L** Enable sending DTS logs
-* **V** Enable verbose mode
+* **L** [Enable sending DTS
+  logs](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
+* **V** [Enable verbose
+  mode](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
 
 ## Dasharo zero-touch initial deployment
 
