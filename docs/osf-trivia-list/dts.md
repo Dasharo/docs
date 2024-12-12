@@ -94,13 +94,17 @@ donating to access DTS SE with one year update support is 60EUR.
 
 ## How can I help the support team diagnose my problem faster?
 
-Make sure to provide logs that show the failing feature. Provide information
-that will help reproduce the issue - the machine model, Dasharo/DTS version,
-etc.
-
 If you are having issues with functionalities provided by the DTS start menu,
-you can help by running it in verbose mode and providing logs. To do that,
-follow the instructions below:
+you can help by running it in verbose mode and providing logs.
+
+!!! info
+
+    Verbose mode prints a lot of information on screen that starts with `+`
+    sign. </br>
+    If you can't reproduce the problem in this mode then you can also send us
+    logs with verbose mode disabled.
+
+To do that, follow the instructions below:
 
 1. Boot DTS.
 2. In the DTS menu enable verbose mode by pressing `V`.
@@ -113,5 +117,14 @@ follow the instructions below:
 
     If the automatic log submission does not work in your case, you can view and
     copy the logs manually from `/tmp/dts.log`, `/var/local/dts-err.log` and
-    `/var/local/flashrom.log`. Then, you should provide the logs by email or
-    via "Dasharo Premier Support" Matrix channel.
+    `/var/local/flashrom.log`.
+
+After collecting or automatically submitting logs, please report the problem by
+creating an issue on GitHub and/or "Dasharo Premier Support" Matrix channel. If
+the logs contain sensitive information, such as credentials, please report the
+issue via email instead.
+
+Make sure to provide details that will help us reproduce the issue, such as the
+machine model, Dasharo and DTS version, etc., in accordance with the sections of
+the provided
+[template](https://github.com/Dasharo/dasharo-issues/issues/new/choose).
