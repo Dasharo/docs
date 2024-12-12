@@ -354,65 +354,65 @@ version. This is how we can achieve that.
 
 * Retrieve information about your current EC.
 
-```bash
-dasharo_ectool info
-```
+  ```bash
+  dasharo_ectool info
+  ```
 
-The output of the above-described command should contain information about
-the version of flashed firmware:
+  The output of the above-described command should contain information about
+  the version of flashed firmware:
 
-```bash
-board: clevo/ns50mu
-version: 2022-08-16_c12ff1a
-```
+  ```bash
+  board: clevo/ns50mu
+  version: 2022-08-16_c12ff1a
+  ```
 
 * Download the newest version of Embedded Controller firmware.
 * Plug in power supply, without it, flashing EC is not possible as losing power
   may cause in damaged firmware.
 * Flash Embedded Controller firmware internally.
 
-```bash
-dasharo_ectool flash ec_file.rom
-```
+  ```bash
+  dasharo_ectool flash ec_file.rom
+  ```
 
-The output of the above-described command should look as follows:
+  The output of the above-described command should look as follows:
 
-```bash
-file board: Ok("clevo/ns50mu")
-file version: Ok("2022-08-16_c12ff1a")
-ec board: Ok("clevo/ns50mu")
-ec version: Ok("2022-08-31_cbff21b")
-Waiting 5 seconds for all keys to be released
-Sync
-SPI Read 128K
-Saving ROM to backup.rom
-SPI Write 128K
-SPI Read 128K
-Successfully programmed SPI ROM
-Result: Ok(())
-Sync
-System will shut off in 5 seconds
-Sync
-```
+  ```bash
+  file board: Ok("clevo/ns50mu")
+  file version: Ok("2022-08-16_c12ff1a")
+  ec board: Ok("clevo/ns50mu")
+  ec version: Ok("2022-08-31_cbff21b")
+  Waiting 5 seconds for all keys to be released
+  Sync
+  SPI Read 128K
+  Saving ROM to backup.rom
+  SPI Write 128K
+  SPI Read 128K
+  Successfully programmed SPI ROM
+  Result: Ok(())
+  Sync
+  System will shut off in 5 seconds
+  Sync
+  ```
 
-> Note: this is example output, versions may differ
+  > Note: this is example output, versions may differ
 
 * Computer will shut down automatically.
 * Power on your computer. Booting process may take a while.
 * After boot, choose option `S` to drop to Shell.
 * Retrieve information about your updated EC.
 
-```bash
-dasharo_ectool info
-```
+  ```bash
+  dasharo_ectool info
+  ```
 
-The output of the above-described command should contain information about
-the version of flashed firmware:
+  The output of the above-described command should contain information about
+  the version of flashed firmware:
 
-```bash
-board: clevo/ns50mu
-version: 2022-08-31_cbff21b
-```
+  ```bash
+  board: clevo/ns50mu
+  version: 2022-08-31_cbff21b
+  ```
 
 ## Additional features
 
