@@ -62,7 +62,6 @@ platform:
 * USB stick (at least 2GB),
 * Latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
   section.
-  with Dasharo).
 * Wired network connection,
 * [Secure Boot disabled](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
 * If device if flashed with Dasharo and support following functionality
