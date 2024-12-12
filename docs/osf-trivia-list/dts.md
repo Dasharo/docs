@@ -115,3 +115,10 @@ follow the instructions below:
     copy the logs manually from `/tmp/dts.log`, `/var/local/dts-err.log` and
     `/var/local/flashrom.log`. Then, you should provide the logs by email or
     via "Dasharo Premier Support" Matrix channel.
+
+!!! tip
+
+    Verbose mode prints a lot of information on screen that starts with `+`
+    sign. </br>
+    If you can't reproduce the problem in this mode then you can also send us
+    logs with verbose mode disabled.
