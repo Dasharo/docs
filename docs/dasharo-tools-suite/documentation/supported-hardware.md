@@ -3,7 +3,6 @@
 Dasharo Tools Suite was prepared to run on x86 platforms, but we can confirm
 that it boots on the following platforms:
 
-* ASUS KGPE-D16,
 * Dell OptiPlex 7010/9010,
 * MSI PRO Z690-A DDR4,
 * MSI PRO Z690-A DDR5,
