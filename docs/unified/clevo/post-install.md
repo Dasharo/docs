@@ -80,7 +80,7 @@ install additional Nvidia drivers.
 1. (Optional) For power saving while the card is not in use, enable On-Demand
    mode in NVIDIA Control Panel:
 
-![](/images/nv4x_nvidia_panel.jpg){ class="center" }
+![](../../images/nv4x_nvidia_panel.jpg){ class="center" }
 
 1. If for some reason dynamic power management for the GPU is not working
    (causing high power draw, poor sleep time or high temperatures), you may

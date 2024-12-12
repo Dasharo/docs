@@ -32,10 +32,10 @@ using the ++f2++ key while booting.
 
     ### Updating older versions
 
-    1. First, ensure that [UEFI Secure Boot](../../dasharo-tools-suite/documentation.md#disabling-secure-boot)
+    1. First, ensure that [UEFI Secure Boot](../../dasharo-tools-suite/documentation/features.md#disabling-secure-boot)
        has been disabled.
 
-    1. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation.md#bootable-over-a-network).
+    1. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
        We recommend the network boot option.
 
     1. In the main menu of Dasharo Tools Suite, select option `5` to proceed with
@@ -43,7 +43,7 @@ using the ++f2++ key while booting.
 
     1. In case you want to know more about the firmware update option in Dasharo
        Tools Suite, please check out the
-       [features section](../../dasharo-tools-suite/documentation.md#firmware-update)
+       [features section](../../dasharo-tools-suite/documentation/features.md#firmware-update)
        of the dedicated Dasharo Tools Suite documentation page.
 
     ### Manual update
@@ -64,7 +64,7 @@ using the ++f2++ key while booting.
        models. You can skip these steps if you are using an older firmware version.
 
     Follow the manual update procedure described in the [DTS firmware update
-    documentation](../../dasharo-tools-suite/documentation.md#local-firmware-update).
+    documentation](../../dasharo-tools-suite/documentation/features.md#local-firmware-update).
 
     > Please make sure you that you update the BIOS firmware and the EC firmware
     > respectively, as the laptop will power off after the EC firmware flash.

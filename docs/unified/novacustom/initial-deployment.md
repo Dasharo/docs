@@ -54,7 +54,7 @@ devices.
     Steps for installing Dasharo Embedded Controller Firmware:
 
     1. On the target laptop,
-       [boot into Dasharo Tools Suite from a USB stick](../../dasharo-tools-suite/documentation.md#bootable-usb-stick)
+       [boot into Dasharo Tools Suite from a USB stick](../../dasharo-tools-suite/documentation/running.md#bootable-usb-stick)
 
     1. Ensure power adapter is plugged into the laptop
 
@@ -223,7 +223,7 @@ devices.
     version of DTS available from the [releases
     page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
     then proceed with following the [Dasharo zero-touch initial deployment
-    section](../../dasharo-tools-suite/documentation.md#dasharo-zero-touch-initial-deployment)
+    section](../../dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
     procedure. This will help you set up Dasharo effectively and without manual
     intervention.
 

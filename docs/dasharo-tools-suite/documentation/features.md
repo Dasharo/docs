@@ -1,265 +1,8 @@
-# Documentation
-
-## Supported hardware
-
-Dasharo Tools Suite was prepared to run on x86 platforms, but we can confirm
-that it boots on the following platforms:
-
-* ASUS KGPE-D16,
-* Dell OptiPlex 7010/9010,
-* MSI PRO Z690-A DDR4,
-* MSI PRO Z690-A DDR5,
-* MSI PRO Z790-P DDR4,
-* MSI PRO Z790-P DDR5,
-* NovaCustom NV4x
-* NovaCustom NS5x/7x,
-* NovaCustom V540TU/TND,
-* NovaCustom V560TU/TND/TNE,
-* PC Engines apu2/3/4/6.
-* ODROID-H4+
-
-## Running
-
-The Dasharo Tools Suite can be started in various ways. Currently, there are
-two options:
-
-* bootable over a network (iPXE),
-* bootable USB stick image.
-
-The first one should always be preferred if possible, as it is the easiest one
-to use.
-
-### Bootable over a network
-
-This section describes how to boot DTS using iPXE.
-
-#### Requirements
-
-Below are the requirements that must be met to run DTS over a network on the
-platform:
-
-* Dasharo device with DTS functionality integrated,
-* wired network connection,
-* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* If device if flashed with Dasharo and support following functionality
-    + disabled BIOS lock feature,
-    + disabled SMM BIOS write protection feature.
-
-#### Launching DTS
-
-To access Dasharo Tools Suite:
-
-* attach a wired network cable to the device's Ethernet port,
-* power on the device, holding down the Boot Menu entry key,
-* in the Boot Menu, select the `iPXE Network Boot` option,
-* in the Network Boot menu, select the `Dasharo Tools Suite` option, or enter
-  iPXE shell and type by hand:
-
-    ```bash
-    dhcp net0
-    chain https://boot.dasharo.com/dts/dts.ipxe
-    ```
-
-    !!! warning
-
-        Because of misconfigured iPXE on some firmware releases, booting over
-        HTTPS is impossible, and the above command will fail. In that case, we
-        recommend downloading the DTS image to USB. If you feel there is no
-        risk of an MITM attack, you can proceed with
-        `http://boot.dasharo.com/dts/dts.ipxe` at your own risk.
-
-* the DTS menu will now appear.
-
-### Bootable USB stick
-
-This section describes how to boot DTS using a USB stick.
-
-#### Requirements
-
-Below are the requirements that must be met to run DTS from a USB device on the
-platform:
-
-* USB stick (at least 2GB),
-* Latest image from [releases](https://github.com/Dasharo/meta-dts/releases)
-  section.
-  with Dasharo).
-* Wired network connection,
-* [Secure Boot disabled](../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* If device if flashed with Dasharo and support following functionality
-    + disabled BIOS lock feature,
-    + disabled SMM BIOS write protection feature.
-
-#### Launching DTS
-
-To access Dasharo Tools Suite:
-
-* flash the downloaded image onto USB stick,
-    + you can use a cross-platform GUI installer - [Etcher](https://www.balena.io/etcher/)
-    + you can also use `dd` to flash from the command line
-
-```bash
-gzip -cdk dts-base-image-v1.1.0.wic.gz | \
-sudo dd of=/dev/sdX bs=16M status=progress conv=fdatasync
-```
-
-!!! note "Notes"
-
-    * this is an example done on the v1.1.0 image.
-    * replace "sdX" with the letter of your USB disk device. For example: sda,
-      sdb, sdc. It should not be partition number (for example, not sda1
-      or sda2).
-
-* insert the USB stick into a USB in your device,
-* boot from the USB stick,
-* the DTS menu will now appear.
-
-## Building
-
-We choose [Yocto Project](https://www.yoctoproject.org/) to prepare Dasharo
-Tools Suite system. DTS image can be built using publicly available sources.
-Thanks to publishing the build cache on
-[cache.dasharo.com](https://cache.dasharo.com/yocto/dts/) the time needed to
-finish the process should be significantly decreased.
-
-### Prerequisites
-
-The following must be met to build DTS:
-
-* Linux PC (tested on `Ubuntu 20.04 LTS`),
-* [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) installed,
-* [kas-container 3.0.2](https://raw.githubusercontent.com/siemens/kas/3.0.2/kas-container)
-  script downloaded and available in [PATH](https://en.wikipedia.org/wiki/PATH_(variable)),
-
-```bash
-wget -O ~/bin/kas-container https://raw.githubusercontent.com/siemens/kas/3.0.2/kas-container
-```
-
-```bash
-chmod +x ~/bin/kas-container
-```
-
-* `meta-dts` repository cloned.
-
-```bash
-mkdir yocto && cd yocto
-```
-
-```bash
-git clone https://github.com/Dasharo/meta-dts.git
-```
-
-### Build
-
-From `yocto` directory, run:
-
-```shell
-SHELL=/bin/bash kas-container build meta-dts/kas.yml
-```
-
-Image build takes time, so be patient, and the build's finished, you should see
-something similar to (tasks number may differ):
-
-```shell
-Initialising tasks: 100% |###########################################################################################| Time: 0:00:01
-Sstate summary: Wanted 2 Found 0 Missed 2 Current 931 (0% match, 99% complete)
-NOTE: Executing Tasks
-NOTE: Tasks Summary: Attempted 2532 tasks of which 2524 didn't need to be rerun and all succeeded.
-```
-
-Using the cache is enabled in `kas/cache.yml` file and can be disabled by
-removing content of that file.
-
-```bash
-cat kas/cache.yml
-```
-
-output:
-
-```bash
----
-header:
-  version: 11
-
-local_conf_header:
-  yocto-cache: |
-    SSTATE_MIRRORS ?= "file://.* http://${LOCAL_PREMIRROR_SERVER}/${PROJECT_NAME}/sstate-cache/PATH"
-    SOURCE_MIRROR_URL ?= "http://${LOCAL_PREMIRROR_SERVER}/${PROJECT_NAME}/downloads"
-    INHERIT += "own-mirrors"
-    LOCAL_PREMIRROR_SERVER ?= "cache.dasharo.com"
-    PROJECT_NAME ?= "yocto/dts"
-```
-
-#### Build image with UEFI Secure Boot support
-
-From `yocto` directory run:
-
-```shell
-SHELL=/bin/bash kas-container build meta-dts/kas-uefi-sb.yml
-```
-
-Image build takes time, so be patient and after build's finish you should see
-something similar to (the exact tasks numbers may differ):
-
-```shell
-Initialising tasks: 100% |###########################################################################################| Time: 0:00:04
-Checking sstate mirror object availability: 100% |###################################################################| Time: 0:00:03
-Sstate summary: Wanted 892 Local 672 Mirrors 212 Missed 8 Current 1560 (99% match, 99% complete)
-NOTE: Executing Tasks
-NOTE: Tasks Summary: Attempted 5860 tasks of which 5841 didn't need to be rerun and all succeeded.
-```
-
-Image created with `kas-uefi-sb.yml` configuration file enable integration of
-UEFI Secure Boot into DTS using
-[meta-secure-core](https://github.com/jiazhang0/meta-secure-core/). Building the
-image allow to prepare a PoC version with [uses sample
-keys](https://github.com/jiazhang0/meta-secure-core/tree/master/meta-efi-secure-boot#sample-keys)
-which by no mean should used in production. For user keys the script
-[create-user-key-store.sh](https://github.com/jiazhang0/meta-secure-core/blob/master/meta-signing-key/scripts/create-user-key-store.sh)
-can be used but it was not tested yet. Quick start with instructions on how to
-use image are described in
-[meta-efi-secure-boot](https://github.com/jiazhang0/meta-secure-core/tree/master/meta-efi-secure-boot#quick-start-for-the-first-boot).
-
-### Flash
-
-* Find out your device name.
-
-```shell
-fdisk -l
-```
-
-output:
-
-```shell
-(...)
-Device     Boot  Start    End Sectors  Size Id Type
-/dev/sdx1  *      8192 131433  123242 60,2M  c W95 FAT32 (LBA)
-/dev/sdx2       139264 186667   47404 23,2M 83 Linux
-```
-
-In this case the device name is `/dev/sdx`, **but be aware, in the next steps,
-replace `/dev/sdx` with the right device name on your platform, or else you can
-damage your system!**
-
-* From where you ran image build type.
-
-```shell
-sudo umount /dev/sdx*
-```
-
-```shell
-cd build/tmp/deploy/images/genericx86-64
-```
-
-Here the file `dts-base-image-genericx86-64.wic.gz` should be available, which
-is the image of DTS. To flash image, you can use the same command shown in
-[running section](#launching-dts_1). Just change the file name.
-
-* Boot the platform.
-
-## Features
+# Features
 
 This section describes the functionality of the Dasharo Tools Suite. These are:
 
+* [DTS available commands](#available-commands)
 * [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
 * [HCL Report](#hcl-report),
 * [Firmware update](#firmware-update),
@@ -270,19 +13,40 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
     + [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
     + [run DTS using VentoyOS](#run-dts-using-ventoyos).
 
-### Dasharo zero-touch initial deployment
+## Available Commands
+
+When DTS is started, it has following options for the user to choose from:
+
+* **1)** [Dasharo HCL Report](#hcl-report) - generate Hardware
+  Compatibility List Report
+* **2)** [Update Dasharo Firmware](#firmware-update) or [Install Dasharo
+  Firmware](#dasharo-zero-touch-initial-deployment)
+* **3)** [Restore Firmware from Dasharo HCL Report](#update-issues)
+* **4)** [Load your DPP
+    keys](../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
+    \- Load your Dasharo Pro Package (DPP) keys
+* **R** Reboot
+* **P** Poweroff
+* **S** Enter shell
+* **K** Launch SSH Server
+* **L** [Enable sending DTS
+  logs](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
+* **V** [Enable verbose
+  mode](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
+
+## Dasharo zero-touch initial deployment
 
 DTS can be used to flash Dasharo firmware on your hardware. To achieve this,
 boot DTS, choose option number `2`. After creating
-[report](../glossary.md#dasharo-hardware-compatibility-list-report) with
+[report](../../glossary.md#dasharo-hardware-compatibility-list-report) with
 firmware dump as backup, type `d` or `c` to confirm the installation of Dasharo
 firmware. Option `c` stands for community release which is available for anyone
 using Dasharo Tools Suite, option `d` stands for
-[DPP](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
-release and it is only available to Dasharo Pro Package subscribers.
+[DPP](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
+release and it is only available to Dasharo Entry Subscription subscribers.
 If you have DPP subscription then do steps in
 [How can I use my Dasharo Pro Package credentials](
-../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
+../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
 section first.
 
 Next you will be asked two questions to confirm flashing. The first will be
@@ -313,17 +77,17 @@ And partially (only EC firmware flashing) on:
 * NovaCustom V540TU/TNx,
 * NovaCustom V560TU/TNx.
 
-### HCL Report
+## HCL Report
 
 DTS allows the generation of a package with logs containing hardware
 information. To create one, choose option number 1 and check out the disclaimer.
 If you would like to send the report to our servers, please remember about
 connecting the ethernet cable. More information can be found in
-[glossary](../glossary.md#dasharo-hardware-compatibility-list-report).
+[glossary](../../glossary.md#dasharo-hardware-compatibility-list-report).
 
-![](./images/dts-hcl-run.png)
+![](../images/dts-hcl-run.png)
 
-#### HCL Report correctness
+### HCL Report correctness
 
 Please note DTS HCL Report assumes that your chipset is already supported by
 flashrom. There are also other false negative errors and unknowns, which we
@@ -369,7 +133,7 @@ Legend:
 Please report all errors experienced while performing a dump to
 [dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository.
 
-#### BIOS backup
+### BIOS backup
 
 One of the key components of HCL Report is your BIOS backup. To prepare BIOS
 backup of your platform, simply run HCL Report and decide if you would like to
@@ -391,14 +155,14 @@ Please consider the following options depending on your situation:
     + **USB Boot** - HCL Report and BIOS backup are saved to USB storage root
       directory.
 
-### Firmware update
+## Firmware update
 
 DTS can be used to update Dasharo firmware. To achieve this, boot it on platform
 with flashed Dasharo and choose option number `2`. You may see additional
 information about available updates if you are not [Dasharo Pro Package](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber)
 subscriber. If you have DPP subscription then do steps in
 [How can I use my Dasharo Pro Package credentials](
-../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
+../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
 section first.
 
 Next you will be asked two questions to confirm flashing. The first will be
@@ -508,7 +272,7 @@ Rebooting in 5s:
 Rebooting
 ```
 
-#### Local firmware update
+### Local firmware update
 
 To flash a local BIOS image (e.g. mounted from a USB stick), you can drop to the
 shell (option `S`) and use the `flashrom` binary provided inside DTS directly.
@@ -535,12 +299,12 @@ New value is 0x8b.
 SPI Configuration is locked down
 ```
 
-#### Update issues
+### Update issues
 
 If you see the following pop-ups during the first boot after the update:
 
-![error-0x03](./images/error-0x03.png)
-![error-0x13](./images/error-0x13.png)
+![error-0x03](../images/error-0x03.png)
+![error-0x13](../images/error-0x13.png)
 
 You probably performed an update using a deprecated version of Dasharo Tools
 Suite and have not disabled BIOS lock. Do not worry, nothing bad has happened.
@@ -548,7 +312,7 @@ If you backed up your old firmware, do the following steps:
 
 1. Reboot your device and turn off BIOS lock (you can find this option in
 [Dasharo Security
-Options](../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
+Options](../../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
 as `BIOS boot medium lock`).
 1. Boot the DTS you backed up your old firmware with and choose option 3, which
 will restore it.
@@ -561,24 +325,18 @@ If you used `flashrom` as described in [Local firmware
 update](#local-firmware-update), flash the firmware again, but make sure the
 BIOS lock is turned off this time.
 
-### EC transition
+## EC transition
 
 DTS allows performing full Embedded Controller firmware transition from the
 proprietary vendor EC firmware to the Dasharo EC firmware. Currently, this
-functionality is supported on:
-
-* [NovaCustom NS5x/NS7x](../variants/novacustom_ns5x_tgl/releases.md),
-* [NovaCustom NV4x](../variants/novacustom_nv4x_tgl/releases.md),
-* [NovaCustom V540TU](../variants/novacustom_v540tu/releases.md),
-* [NovaCustom V540TNx](../variants/novacustom_v540tnx/releases.md),
-* [NovaCustom V560TU](../variants/novacustom_v560tu/releases.md)
-* [NovaCustom V560TNx](../variants/novacustom_v560tnx/releases.md).
+functionality is supported on [this
+hardware](./supported-hardware.md#supported-hardware-for-firmware-transition-to-dasharo)
 
 Starting from DTS v1.2.0 to perform EC transition please run
 [firmware update](#firmware-update) on the platform with proprietary vendor EC
 firmware.
 
-### EC update
+## EC update
 
 !!! note
 
@@ -590,46 +348,46 @@ version. This is how we can achieve that.
 
 * Retrieve information about your current EC.
 
-  ```bash
-  dasharo_ectool info
-  ```
+    ```bash
+    dasharo_ectool info
+    ```
 
-  The output of the above-described command should contain information about
-  the version of flashed firmware:
+    The output of the above-described command should contain information about
+    the version of flashed firmware:
 
-  ```bash
-  board: clevo/ns50mu
-  version: 2022-08-16_c12ff1a
-  ```
+    ```bash
+    board: clevo/ns50mu
+    version: 2022-08-16_c12ff1a
+    ```
 
 * Download the newest version of Embedded Controller firmware.
 * Plug in power supply, without it, flashing EC is not possible as losing power
   may cause in damaged firmware.
 * Flash Embedded Controller firmware internally.
 
-  ```bash
-  dasharo_ectool flash ec_file.rom
-  ```
+    ```bash
+    dasharo_ectool flash ec_file.rom
+    ```
 
-  The output of the above-described command should look as follows:
+    The output of the above-described command should look as follows:
 
-  ```bash
-  file board: Ok("clevo/ns50mu")
-  file version: Ok("2022-08-16_c12ff1a")
-  ec board: Ok("clevo/ns50mu")
-  ec version: Ok("2022-08-31_cbff21b")
-  Waiting 5 seconds for all keys to be released
-  Sync
-  SPI Read 128K
-  Saving ROM to backup.rom
-  SPI Write 128K
-  SPI Read 128K
-  Successfully programmed SPI ROM
-  Result: Ok(())
-  Sync
-  System will shut off in 5 seconds
-  Sync
-  ```
+    ```bash
+    file board: Ok("clevo/ns50mu")
+    file version: Ok("2022-08-16_c12ff1a")
+    ec board: Ok("clevo/ns50mu")
+    ec version: Ok("2022-08-31_cbff21b")
+    Waiting 5 seconds for all keys to be released
+    Sync
+    SPI Read 128K
+    Saving ROM to backup.rom
+    SPI Write 128K
+    SPI Read 128K
+    Successfully programmed SPI ROM
+    Result: Ok(())
+    Sync
+    System will shut off in 5 seconds
+    Sync
+    ```
 
   > Note: this is example output, versions may differ
 
@@ -638,25 +396,25 @@ version. This is how we can achieve that.
 * After boot, choose option `S` to drop to Shell.
 * Retrieve information about your updated EC.
 
-  ```bash
-  dasharo_ectool info
-  ```
+    ```bash
+    dasharo_ectool info
+    ```
 
-  The output of the above-described command should contain information about
-  the version of flashed firmware:
+    The output of the above-described command should contain information about
+    the version of flashed firmware:
 
-  ```bash
-  board: clevo/ns50mu
-  version: 2022-08-31_cbff21b
-  ```
+    ```bash
+    board: clevo/ns50mu
+    version: 2022-08-31_cbff21b
+    ```
 
-### Additional features
+## Additional features
 
 The section below presents a list of functionalities added to DTS, which were
 developed at the community's request and which do not necessarily relate
 strictly to Dasharo.
 
-#### Run commands from iPXE shell automatically
+### Run commands from iPXE shell automatically
 
 It is possible to automatically execute your chosen commands after iPXE boot.
 You can use the
@@ -717,7 +475,7 @@ different port, for example 9001, then run the script like this:
 Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
 ```
 
-#### Run DTS using VentoyOS
+### Run DTS using VentoyOS
 
 VentoyOS allows operating systems to be booted from ISO files. Unfortunately,
 the ISO-formatted DTS image we've provided so far mounted the main file system
