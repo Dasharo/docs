@@ -205,8 +205,9 @@ number called UUID (Universally Unique IDentifier). UUID is specified by
 provides the system UUID in the SMBIOS system information structure.
 
 The problem with UUID is that it cannot be recovered if the backup binary or
-SMBIOS logs are lost. You can backup the SMBIOS information with our
-[Dasharo Tools Suite bootablestick](https://docs.dasharo.com/dasharo-tools-suite/documentation#bootable-usb-stick).
+SMBIOS logs are lost. You can backup the SMBIOS information with our [Dasharo
+Tools Suite
+bootablestick](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/#bootable-usb-stick).
 The `dmidecode.log` will have all the necessary information. Things we know
 about MSI system UUID:
 

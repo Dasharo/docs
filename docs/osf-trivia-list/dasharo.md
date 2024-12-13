@@ -268,9 +268,8 @@ process, which reduces user frustration and improves satisfaction.
 Use of DTS largely improves firmware adoption, hardware compatibility reporting
 and binary blobs transmission, as well as recovery.
 
-For more details about zero-touch initial deployment please read relevant
-DTS
-[documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment).
+For more details about zero-touch initial deployment please read relevant DTS
+[documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#dasharo-zero-touch-initial-deployment).
 
 ### Dasharo Clean and Simple Code
 

@@ -8,7 +8,8 @@
     [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Wired network connection.
 1. Disable Secure Boot.
-1. Prepare the [bootable USB stick](https://docs.dasharo.com/dasharo-tools-suite/documentation#bootable-usb-stick)
+1. Prepare the [bootable USB
+   stick](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/#bootable-usb-stick)
 1. Make yourself familiar with
     [Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/overview).
 
@@ -324,14 +325,15 @@ firmware by using the built-in script in DTS.
 1. Hold the `BOOT_MENU_KEY` to enter the UEFI Boot Menu.
 1. Select the USB stick with DTS using the arrow keys and press `Enter`.
 1. Wait for `Enter an option:`.
-1. Proceed with
-    [Dasharo EC Transition](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-transition).
+1. Proceed with [Dasharo EC
+    Transition](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-transition).
 
 **Expected result**
 
 1. After the flashing procedure itself, the DUT should be able to boot.
 1. The EC firmware version, after checking the method described in the
-    above-mentioned [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-transition),
+    above-mentioned
+    [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-transition),
     should correspond to the latest version.
 
 ## DTS009.001 Update device EC firmware by using DTS works correctly
@@ -358,14 +360,15 @@ firmware by using dasharo_ectool in DTS.
 1. Select the USB stick with DTS using the arrow keys and press `Enter`.
 1. Wait for `Enter an option:`.
 1. Type in `9` and press `Enter`.
-1. Proceed with
-    [Dasharo EC Update](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-update).
+1. Proceed with [Dasharo EC
+    Update](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update).
 
 **Expected result**
 
 1. After the updating firmware procedure itself, the DUT should be able to boot.
 1. The EC firmware version, after checking the method described in the
-    above-mentioned [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation#ec-update),
+    above-mentioned
+    [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update),
     should correspond to the binary version used.
 
 ## DTS010.001 Test firmware update in pre-release DTS over iPXE

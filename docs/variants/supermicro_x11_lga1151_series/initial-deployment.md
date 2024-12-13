@@ -79,7 +79,7 @@ iPXE Shell
 ## Vendor BIOS backup
 
 Please follow [DTS backup
-guide](https://docs.dasharo.com/dasharo-tools-suite/documentation/#bios-backup).
+guide](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#bios-backup).
 
 ## Installing Dasharo with DTS
 

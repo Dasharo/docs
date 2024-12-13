@@ -33,7 +33,8 @@ seamlessly.
 
 - Ensure [Firmware Write Protection](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bios-wp-option)
   is disabled in sortbootorder
-- [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
+- [Boot into Dasharo Tools
+  Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/)
 - Enter your DPP subscription credentials
 - Select `Install Dasharo firmware` to check for updates
 - When asked to select your firmware branch, select DPP
