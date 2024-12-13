@@ -26,11 +26,13 @@ firmware installation:
     For a more detailed guide on the UEFI Setup Menu options, check out the
     [Dasharo menu documentation](https://docs.dasharo.com/dasharo-menu-docs/).
 
-- [Boot into Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
+- [Boot into Dasharo Tools
+  Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/)
 - Enter your DPP subscription credentials
 - Select `Update Dasharo firmware` to check for updates
 - When asked to switch to Heads firmware, press `Y`
-- Proceed with [DTS firmware update](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)
+- Proceed with [DTS firmware
+  update](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#firmware-update)
   as usual
 
 When the update is finished, your laptop will shut down automatically. Power it
@@ -59,12 +61,14 @@ back on to boot into your new Heads installation!
 
 To revert back to UEFI, you will need to boot into DTS from a USB stick.
 
-- Follow the [Dasharo Tools Suite documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/#running)
+- Follow the [Dasharo Tools Suite
+  documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/)
   to boot DTS from a USB stick
 - In the DTS main menu, select `Update Dasharo firmware` to check for available
   updates.
 - When prompted to revert back to UEFI, press `Y`
-- Proceed with [DTS firmware update](https://docs.dasharo.com/dasharo-tools-suite/documentation/#firmware-update)
+- Proceed with [DTS firmware
+  update](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#firmware-update)
   as usual
 
 Once finished, your laptop will shut down automatically. Power it back on to

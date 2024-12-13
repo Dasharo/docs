@@ -120,8 +120,8 @@ This test aims to verify that the `Dasharo Tools Suite` option in
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Proceed with the
-    [Requirements for DTS](https://docs.dasharo.com/dasharo-tools-suite/documentation#running).
+1. Proceed with the [Requirements for
+    DTS](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/).
 
 **Test steps**
 
