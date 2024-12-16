@@ -17,7 +17,7 @@ Dasharo Releases can be divided into two categories:
 - Dasharo Pro/Enterprise Package (formerly Dasharo Entry Subscription) Releases
 - Dasharo Community Releases
 
-## Dasharo Pro/Enterprise Package Releases
+## Dasharo Pro Package Releases
 
 Dasharo Pro/Enterprise Package (formerly Dasharo Entry Subscription)
 subscribers receive firmware updates more frequently than the community. The
@@ -31,6 +31,9 @@ Dasharo Entry Subscription) Releases will also be available later as Dasharo
 Community Releases with public pre-built binaries in the respective release
 pages. In short, being a Dasharo Subscriber gives early access to the newest
 features and fixes.
+
+For details about the naming convention, please check
+[here](../dasharo-naming-convention.md).
 
 [How to become Dasharo Pro Package subscriber?](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
 
@@ -80,9 +83,6 @@ In Dasharo we use following rules for keys:
     + Software:
         * Real Name: `<name> open-source software release <version> signing key`
         * Signing key: `3mdeb Open Source Software Master Key <contact@3mdeb.com>`
-    + Firmware:
-        * Real Name: `<name> open-source firmware release <version> signing key`
-        * Signing key: `3mdeb Dasharo Master Key`
     + PC Engines (firmware exception):
         * Real Name: `PC Engines open-source firmware release <version> signing key`
         * Signing key: `3mdeb Open Source Firmware Master Key <contact@3mdeb.com>`
