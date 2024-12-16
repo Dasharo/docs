@@ -59,7 +59,7 @@ candidate but still leave some headroom for increasing just in case.
 Examples:
 
 - Release Candidate v1.5.2-rc3 - `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION="0x01050203"`
-- Release v0.9.1 - `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION="0x000901FF"`
+- Release v0.9.1 - `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION="0x00090180"`
 
 ### CONFIG_DRIVERS_EFI_MAIN_FW_LSV
 
@@ -71,4 +71,4 @@ takes the same format as `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`
 
 Examples:
 
-- Forbid changing the version to anything below release v0.1.0 - `CONFIG_DRIVERS_EFI_MAIN_FW_LSV="0x000100FF"`
+- Forbid changing the version to anything below release v0.1.0 - `CONFIG_DRIVERS_EFI_MAIN_FW_LSV="0x00010080"`
