@@ -12,7 +12,7 @@ Feel free to refer to above sources or [contact
 community](https://docs.dasharo.com/#community), if you can't find your
 hardware.
 
-=== "CPU HCL (12 Sep 2024)"
+=== "CPU HCL (16 Dec 2024)"
 
     CPU Hardware Compatibility List presents the CPUs tested and verified
     to work with Dasharo by community. The following list does not include CPU
