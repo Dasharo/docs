@@ -83,6 +83,10 @@ In Dasharo we use following rules for keys:
     + Software:
         * Real Name: `<name> open-source software release <version> signing key`
         * Signing key: `3mdeb Open Source Software Master Key <contact@3mdeb.com>`
+    + Firmware (deprecated):
+        * Real Name: `<name> open-source firmware release <version> signing key`
+        * or Real Name: `<name> Open Source Firmware Release <version> Signing Key`
+        * Signing key: `3mdeb Dasharo Master Key`
     + PC Engines (firmware exception):
         * Real Name: `PC Engines open-source firmware release <version> signing key`
         * Signing key: `3mdeb Open Source Firmware Master Key <contact@3mdeb.com>`
