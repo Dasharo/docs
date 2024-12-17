@@ -9,6 +9,12 @@ open-source firmware distribution.
 
     - [QEMU Q35](qemu_q35/overview.md)
 
+## Embedded
+
+* Following embedded targets are supported under Dasharo Community Support:
+
+    - [MinnowBoard Turbot](minnowboard-turbot/overview.md)
+
 ## Network appliance
 
 * Following network appliances are supported under Dasharo Support Package:
