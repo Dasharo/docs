@@ -17,10 +17,12 @@ Test results for this release can be found
 !!! note
 
     This release is compatible with both the **Dell OptiPlex 7010 and 9010**,
-    as they are essentially identical.
-    However, we have only tested it on a 7010 and cannot guarantee full
-    functionality on a 9010. It is recommended to test the release on the 9010
-    and [report any issues](https://github.com/Dasharo/dasharo-issues/issues).
+    SFF variants as they are essentially identical.
+    However, we have only tested it on a 7010 SFF and cannot guarantee full
+    functionality on a 9010 SFF. It is recommended to test the release on the
+    9010 and [report any issues](https://github.com/Dasharo/dasharo-issues/issues).
+    On MT and DT variants limited functionality of PCI/PCIe and SATA ports can be
+    observed. See [this issue](https://github.com/Dasharo/dasharo-issues/issues/1182).
 
 ### Added
 
