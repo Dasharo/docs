@@ -52,7 +52,6 @@ hardware.
         | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.2 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i5-12600K | v1.1.3 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | [Qubes HCL reports][2] |
-        | 12th Gen Intel(R) Core(TM) i7-12700K | v1.0.0 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i7-12700K | v1.1.0 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i7-12700K | v1.1.1 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i7-12700K | v1.1.3 | Dasharo HCL Report |
@@ -67,7 +66,6 @@ hardware.
         | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.0 | Dasharo HCL Report |
         | 13th Gen Intel(R) Core(TM) i5-13600K | v1.1.2 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i7-14700K | v0.9.0 | Dasharo HCL Report |
-        | Intel(R) Core(TM) i7-14700K | v0.9.0 | Dasharo HCL Report |
 
         [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
         [2]: https://groups.google.com/g/qubes-users/c/lGOjuApLD_o/m/TBZN0PsXEgAJ
@@ -84,13 +82,10 @@ hardware.
         | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.0 | Dasharo HCL Report |
         | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.1 | Dasharo HCL Report |
         | 13th Gen Intel(R) Core(TM) i9-13900K | v0.9.0 | Dasharo HCL Report |
+        | 14th Gen Intel(R) Core(TM) i9-14900K | v0.9.0 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i9-14900K | v0.9.1 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i9-14900KF | v0.9.0 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i9-14900KS | v0.9.1 | Dasharo HCL Report |
-        | Intel(R) Core(TM) i9-14900K | v0.9.0 | Dasharo HCL Report |
-        | Intel(R) Core(TM) i9-14900K | v0.9.1 | Dasharo HCL Report |
-        | Intel(R) Core(TM) i9-14900KF | v0.9.0 | Dasharo HCL Report |
-        | Intel(R) Core(TM) i9-14900KS | v0.9.1 | Dasharo HCL Report |
 
     </center>
 
