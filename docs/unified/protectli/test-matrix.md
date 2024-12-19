@@ -548,6 +548,8 @@ subjected from before the release of the new binary.
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
+<!--- Coming soon...
+
 === "VP2430"
 
     ## Module: Dasharo compatibility
@@ -656,3 +658,5 @@ subjected from before the release of the new binary.
     [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
+
+-->
