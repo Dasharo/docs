@@ -169,6 +169,8 @@
         describes the platform's hardware configuration used during the Dasharo
         firmware validation procedure.
 
+<!--- Coming soon...
+
 === "VP2430"
     The VP2430 is a small form network appliance built for use as a firewall
     / router, virtualization platform, a daily-driven personal computer,
@@ -215,6 +217,8 @@
         firmware validation procedure.
     * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
+
+-->
 
 === "VP6630/VP6650/VP6670"
     The Vault is a small form network appliance built for use as a firewall /

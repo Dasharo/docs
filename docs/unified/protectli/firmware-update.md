@@ -142,6 +142,8 @@ update.
 
     This command also preserves Dasharo UEFI settings and the boot order.
 
+<!--- Coming soon...
+
 === "VP2430"
 
     ## Updating minor versions v1.x.y
@@ -165,3 +167,5 @@ update.
     ```
 
     This command also preserves Dasharo UEFI settings and the boot order.
+
+-->

@@ -270,6 +270,8 @@ then follow the steps below:
     The resulting coreboot image will be placed in the coreboot directory as
     `protectli_vp2420_<version>.rom`.
 
+<!--- Coming soon...
+
 === "VP2430"
 
     1. Checkout the desired version, e.g. `v0.9.0`:
@@ -293,3 +295,4 @@ then follow the steps below:
 
     The resulting coreboot image will be placed in the coreboot directory as
     `protectli_vp2430_<version>.rom`.
+-->
