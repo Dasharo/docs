@@ -125,6 +125,7 @@ wires:
 1. Locate **CMOS headers** and wire them to GPIO pins on the RTE. You usually
 need to reset the CMOS after flashing for a successful firmware update.
 ![](../images/vp46xx_location_of_CMOS_header.jpg)
+
     | RTE       | DUT                        |
     |:---------:|:--------------------------:|
     | J11 pin 8 | CLR_CMOS                   |
@@ -186,7 +187,7 @@ including connections with various cables can be found
 [here](https://docs.dasharo.com/transparent-validation/rte/v1.1.0/serial-port-connection-guide/).
 
 Follow the steps below to configure `ser2net` on RTE, which will allow you to
-access the DUT via serial using the telent console. In this example scenario, a
+access the DUT via serial using the telnet console. In this example scenario, a
 micro USB-USB converter is used to connect the DUT with RTE.
 
 1. Connect to RTE via ssh.
