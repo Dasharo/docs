@@ -120,7 +120,7 @@ binwalk -e O7010A29.exe -C .
 Assuming the extraction process was successful, you should now have an
 extracted UEFI image file, hidden under an unassuming name such as
 `65C10`. Deeper down the rabbit hole, you will now have to extract the
-blobs from this image using the `uefi-firmware` Python package, a set of scripts 
+blobs from this image using the `uefi-firmware` Python package, a set of scripts
 for parsing, extracting, and recreating UEFI firmware volumes. To install:
 
 ```bash
