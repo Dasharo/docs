@@ -142,17 +142,22 @@ files. Now, let's copy them with more readable names for future reference:
 * EC firmware -
 
 ```bash
-cp _O7010A29.exe.extracted/65C10_output/pfsobject/section-7ec6c2b0-3fe3-42a0-a316-22dd0517c1e8/volume-0x50000/file-d386beb8-4b54-4e69-94f5-06091f67e0d3/section0.raw sch5545_ecfw.bin
+cp _O7010A29.exe.extracted/65C10_output/pfsobject/\
+    section-7ec6c2b0-3fe3-42a0-a316-22dd0517c1e8/volume-0x50000/\
+    file-d386beb8-4b54-4e69-94f5-06091f67e0d3/section0.raw sch5545_ecfw.bin
 ```
 
 * BIOS ACM file (only necessary for TXT support) -
 
 ```bash
-cp _O7010A29.exe.extracted/65C10_output/pfsobject/section-7ec6c2b0-3fe3-42a0-a316-22dd0517c1e8/volume-0x500000/file-2d27c618-7dcd-41f5-bb10-21166be7e143/object-0.raw IVB_BIOSAC_PRODUCTION.bin
+cp _O7010A29.exe.extracted/65C10_output/pfsobject/\
+    section-7ec6c2b0-3fe3-42a0-a316-22dd0517c1e8/volume-0x500000/\
+    file-2d27c618-7dcd-41f5-bb10-21166be7e143/object-0.raw IVB_BIOSAC_PRODUCTION.bin
 ```
 
 The SINIT file is fortunately available for download directly from Intel at
-[this url](https://cdrdv2.intel.com/v1/dl/getContent/630744) (again, only necessary for TXT support).
+[this url](https://cdrdv2.intel.com/v1/dl/getContent/630744)
+(again, only necessary for TXT support).
 
 ### Patching the binary
 
