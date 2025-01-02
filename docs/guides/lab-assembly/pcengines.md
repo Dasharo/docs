@@ -163,6 +163,20 @@ echo 0 > /sys/class/gpio/gpio412/value
 
 -->
 
+### S1 button
+
+S1 button is used to re-enable disabled serial console. More information about
+this feature can be found in:
+
+* [S1 switch button properties](https://pcengines.github.io/apu2-documentation/gpios/#s1-switch-button)
+* [Disable serial console and enable with S1 button](https://pcengines.github.io/apu2-documentation/theory-of-operation/#pc-engines-apu-firmware-features)
+
+To expose this feature to OSFV we have add wire between:
+
+| RTE J11 pin | PC Engines J5 pin  |
+|:-----------------:|:-------------------:|
+| 7            | 5 (MODESW#)       |
+
 ### USB devices
 
 Since some issues with USB controllers may only happen on select USB ports,
