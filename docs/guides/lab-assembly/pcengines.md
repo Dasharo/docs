@@ -181,3 +181,17 @@ To expose this feature to OSFV we have add wire between:
 
 Since some issues with USB controllers may only happen on select USB ports,
 it's important to plug in USB devices to all 2 USB ports of the board.
+
+### SD card
+
+Insert at least 16GB SD card into platform SD card socket.
+
+### BIOS WP
+
+BIOS WP (aka SPIWP#) pin can be used to enable or disable write protection.
+Feature was described in [sortbootorder
+documentation](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bios-wp-option).
+
+| RTE J11 pin | PC Engines J5 pin  |
+|:-----------------:|:-------------------:|
+| 9            | 1 (SPIWP#)       |
