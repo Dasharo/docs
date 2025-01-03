@@ -35,8 +35,12 @@ stand, and then what equipment we need to be able to do it. When we put the
 device in a rack, we want to have remote access to it. Mainly used devices,
 depending on the functionalities needed:
 
-* RTE - if we need low voltage control, switching on or off the platform,
-  connection via serial and external flashing.
+* [Prepared RTE](../transparent-validation/rte/v1.1.0/quick-start-guide.md) -
+  if we need low voltage control, switching on or off the platform, serial
+  connection and external flashing.
+    - SOIC-8 Pomona clip (if applicable, i.e. if there are no SPI flashing
+      headers)
+    - 6x female-female wire cables
 * Sonoff - if we need line voltage control.
 * PiKVM - if it is not possible to read the device via serial or it is limited,
   it is possible to simulate the keyboard and read the image from HDMI.
@@ -74,11 +78,8 @@ available platforms, however there are unique exceptions - for example
 JTPM headers and a FlashBIOS button. Here, we will use Protectli VP46XX as a
 general example.
 
-#### Prerequisites
-
-* [Prepared RTE](../transparent-validation/rte/v1.1.0/quick-start-guide.md)
-* SOIC-8 Pomona clip (if applicable)
-* 6x female-female wire cables
+Before you proceed, make sure your RTE is prepared in accordance with
+[this guide](../transparent-validation/rte/v1.1.0/quick-start-guide.md).
 
 #### Connections
 
