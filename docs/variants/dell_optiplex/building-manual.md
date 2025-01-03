@@ -34,9 +34,10 @@ the result binary using `cbfstool`. The methods are covered later on in the
     cd coreboot
     ```
 
-    Replace `vX.Y.Z` with a valid version, eg. `v0.1.0`:
+    Replace `vX.Y.Z` with a valid version, eg. `v0.1.1`:
 
     ```bash
+    git fetch --tags
     git checkout optiplex_7010_9010_vX.Y.Z
     ```
 
