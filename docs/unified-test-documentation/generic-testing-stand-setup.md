@@ -18,14 +18,14 @@ recovery documentation, for example:
 
 **Note** that this list is subject to change and extension. You can find all of
 our supported platforms and their respective sections on the
-[Supported hardware](https://docs.dasharo.com/variants/overview/) page.
+[Supported hardware](../variants/overview.md) page.
 
 ## Detailed description of the process
 
 If you are dealing with a new platform, you might want to first dump logs
 from it for future reference. We suggest using the dedicated functionality
 of
-[DTS](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
+[DTS](../dasharo-tools-suite/overview.md).
 
 ### Compiling a list of peripherals
 
@@ -69,12 +69,12 @@ Pomona connection for stability reasons.
 
 For exact chip/header locations, see the platform-specific recovery guides in
 the corresponding
-[Supported Hardware](https://docs.dasharo.com/variants/overview/) subsections,
+[Supported Hardware](../variants/overview.md) subsections,
 as mentioned in the [introduction](#introduction) above.
 
 This guide should cover for most of
 available platforms, however there are unique exceptions - for example
-[MSI boards](https://docs.dasharo.com/unified/msi/recovery/) where we use the
+[MSI boards](../unified/msi/recovery.md) where we use the
 JTPM headers and a FlashBIOS button. Here, we will use Protectli VP46XX as a
 general example.
 
@@ -185,12 +185,12 @@ connection. The cable is ready. Be sure to use plugs in the following way:
 
 ### Sonoff setup
 
-If you require line voltage control, follow our guide for [Sonoff preparation](https://docs.dasharo.com/transparent-validation/sonoff/sonoff_preparation/).
+If you require line voltage control, follow our guide for [Sonoff preparation](../transparent-validation/sonoff/sonoff_preparation.md).
 
 ### PiKVM setup
 
 If serial connection to the DUT is known to be problematic, follow our guide
-for [PiKVM preparation](https://docs.dasharo.com/transparent-validation/pikvm/assembly-and-validation/).
+for [PiKVM preparation](../transparent-validation/pikvm/assembly-and-validation.md).
 
 ### Access to the DUT
 
@@ -198,7 +198,7 @@ Access to the DUT should be realized by connecting the serial port on the DUT
 to the serial port on RTE. The location of the serial port should be determined
 based on the platform's documentation. Documentation describing this process and
 including connections with various cables can be found
-[here](https://docs.dasharo.com/transparent-validation/rte/v1.1.0/serial-port-connection-guide/).
+[here](../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 
 Follow the steps below to configure `ser2net` on RTE, which will allow you to
 access the DUT via serial using the telnet console. In this example scenario, a
@@ -260,7 +260,7 @@ udevadm control --reload-rules && udevadm trigger && systemctl restart ser2net
 
 In case it is not possible to read the device via serial, set up PiKVM and
 properly connect to the platform. PiKVM setup documentation can be found
-[here](https://docs.dasharo.com/transparent-validation/pikvm/assembly-and-validation/).
+[here](../transparent-validation/pikvm/assembly-and-validation.md).
 
 #### Platform external flashing
 
