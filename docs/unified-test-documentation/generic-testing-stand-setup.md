@@ -4,15 +4,28 @@
 
 This document aims to provide a comprehensive, generic guide to setting up a
 Remote Testing Environment for Dasharo platforms. As you follow along, please
-cross-examine with our platform-specific documentation or motherboard
-datasheets.
+cross-examine with the motherboard's datasheets and our platform-specific
+recovery documentation, for example:
+
+* [Novacustom laptops recovery](../unified/novacustom/recovery.md)
+* [Dell OptiPlex recovery](../variants/dell_optiplex/recovery.md)
+* [Asus KGPE-D16 recovery](../variants/asus_kgpe_d16/recovery.md)
+* [Raptor CS Talos II recovery](../variants/talos_2/recovery.md)
+* [Protectli platforms recovery](../unified/protectli/recovery.md)
+* [MSI desktops recovery](../unified/msi/recovery.md)
+* [Supermicro X11 recovery](../variants/supermicro_x11_lga1151_series/recovery.md)
+* [PC engines platforms recovery](../variants/pc_engines/recovery.md)
+
+**Note** that this list is subject to change and extension. You can find all of
+our supported platforms and their respective sections on the
+[Supported hardware](../variants/overview.md) page.
 
 ## Detailed description of the process
 
 If you are dealing with a new platform, you might want to first dump logs
 from it for future reference. We suggest using the dedicated functionality
 of
-[DTS](https://docs.dasharo.com/common-coreboot-docs/dasharo_tools_suite/).
+[DTS](../dasharo-tools-suite/overview.md).
 
 ### Compiling a list of peripherals
 
@@ -22,8 +35,12 @@ stand, and then what equipment we need to be able to do it. When we put the
 device in a rack, we want to have remote access to it. Mainly used devices,
 depending on the functionalities needed:
 
-* RTE - if we need low voltage control, switching on or off the platform,
-  connection via serial and external flashing.
+* [Prepared RTE](../transparent-validation/rte/v1.1.0/quick-start-guide.md) -
+  if we need low voltage control, switching on or off the platform, serial
+  connection and external flashing.
+    - SOIC-8 Pomona clip (if applicable, i.e. if there are no SPI flashing
+      headers)
+    - 6x female-female wire cables
 * Sonoff - if we need line voltage control.
 * PiKVM - if it is not possible to read the device via serial or it is limited,
   it is possible to simulate the keyboard and read the image from HDMI.
@@ -50,22 +67,19 @@ whether it has dedicated **SPI headers**, or will you have to use a Pomona clip
 to connect to the flash chip. If headers are present, they are preferred over
 Pomona connection for stability reasons.
 
-For exact chip/header locations, see
-platform-specific recovery guides in respective
-[Supported Hardware](https://docs.dasharo.com/variants/overview/)
-subsections. This guide will use Protectli VP46XX as a general example.
+For exact chip/header locations, see the platform-specific recovery guides in
+the corresponding
+[Supported Hardware](../variants/overview.md) subsections,
+as mentioned in the [introduction](#introduction) above.
 
 This guide should cover for most of
 available platforms, however there are unique exceptions - for example
-[MSI boards](https://docs.dasharo.com/unified/msi/recovery/) where we use the
-JTPM headers and a FlashBIOS button. Refer to our platform-specific
-documentation when in doubt.
+[MSI boards](../unified/msi/recovery.md) where we use the
+JTPM headers and a FlashBIOS button. Here, we will use Protectli VP46XX as a
+general example.
 
-#### Prerequisites
-
-* [Prepared RTE](../transparent-validation/rte/v1.1.0/quick-start-guide.md)
-* SOIC-8 Pomona clip (if applicable)
-* 6x female-female wire cables
+Before you proceed, make sure your RTE is prepared in accordance with
+[this guide](../transparent-validation/rte/v1.1.0/quick-start-guide.md).
 
 #### Connections
 
@@ -171,12 +185,12 @@ connection. The cable is ready. Be sure to use plugs in the following way:
 
 ### Sonoff setup
 
-If you require line voltage control, follow our guide for [Sonoff preparation](https://docs.dasharo.com/transparent-validation/sonoff/sonoff_preparation/).
+If you require line voltage control, follow our guide for [Sonoff preparation](../transparent-validation/sonoff/sonoff_preparation.md).
 
 ### PiKVM setup
 
 If serial connection to the DUT is known to be problematic, follow our guide
-for [PiKVM preparation](https://docs.dasharo.com/transparent-validation/pikvm/assembly-and-validation/).
+for [PiKVM preparation](../transparent-validation/pikvm/assembly-and-validation.md).
 
 ### Access to the DUT
 
@@ -184,7 +198,7 @@ Access to the DUT should be realized by connecting the serial port on the DUT
 to the serial port on RTE. The location of the serial port should be determined
 based on the platform's documentation. Documentation describing this process and
 including connections with various cables can be found
-[here](https://docs.dasharo.com/transparent-validation/rte/v1.1.0/serial-port-connection-guide/).
+[here](../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 
 Follow the steps below to configure `ser2net` on RTE, which will allow you to
 access the DUT via serial using the telnet console. In this example scenario, a
@@ -246,7 +260,7 @@ udevadm control --reload-rules && udevadm trigger && systemctl restart ser2net
 
 In case it is not possible to read the device via serial, set up PiKVM and
 properly connect to the platform. PiKVM setup documentation can be found
-[here](https://docs.dasharo.com/transparent-validation/pikvm/assembly-and-validation/).
+[here](../transparent-validation/pikvm/assembly-and-validation.md).
 
 #### Platform external flashing
 
