@@ -4,8 +4,21 @@
 
 This document aims to provide a comprehensive, generic guide to setting up a
 Remote Testing Environment for Dasharo platforms. As you follow along, please
-cross-examine with our platform-specific documentation or motherboard
-datasheets.
+cross-examine with the motherboard's datasheets and our platform-specific
+recovery documentation, for example:
+
+* [Novacustom laptops recovery](../unified/novacustom/recovery.md)
+* [Dell OptiPlex recovery](../variants/dell_optiplex/recovery.md)
+* [Asus KGPE-D16 recovery](../variants/asus_kgpe_d16/recovery.md)
+* [Raptor CS Talos II recovery](../variants/talos_2/recovery.md)
+* [Protectli platforms recovery](../unified/protectli/recovery.md)
+* [MSI desktops recovery](../unified/msi/recovery.md)
+* [Supermicro X11 recovery](../variants/supermicro_x11_lga1151_series/recovery.md)
+* [PC engines platforms recovery](../variants/pc_engines/recovery.md)
+
+**Note** that this list is subject to change and extension. You can find all of
+our supported platforms and their respective sections on the
+[Supported hardware](https://docs.dasharo.com/variants/overview/) page.
 
 ## Detailed description of the process
 
@@ -50,16 +63,16 @@ whether it has dedicated **SPI headers**, or will you have to use a Pomona clip
 to connect to the flash chip. If headers are present, they are preferred over
 Pomona connection for stability reasons.
 
-For exact chip/header locations, see
-platform-specific recovery guides in respective
-[Supported Hardware](https://docs.dasharo.com/variants/overview/)
-subsections. This guide will use Protectli VP46XX as a general example.
+For exact chip/header locations, see the platform-specific recovery guides in
+the corresponding
+[Supported Hardware](https://docs.dasharo.com/variants/overview/) subsections,
+as mentioned in the [introduction](#introduction) above.
 
 This guide should cover for most of
 available platforms, however there are unique exceptions - for example
 [MSI boards](https://docs.dasharo.com/unified/msi/recovery/) where we use the
-JTPM headers and a FlashBIOS button. Refer to our platform-specific
-documentation when in doubt.
+JTPM headers and a FlashBIOS button. Here, we will use Protectli VP46XX as a
+general example.
 
 #### Prerequisites
 
