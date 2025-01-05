@@ -10,19 +10,19 @@ you can download them:
    subscription. Look for an email from Dasharo that includes your subscription
    data. This email will contain several vital pieces of information:
 
-   - **Logs Key:** A key you might need for other operations or support.
-   - **Download Key:** A unique string that allows you to access the download area.
-   - **Password:** The password you'll need to access the files.
-   - **Expiration Date:** The date until your subscription is valid.
+    - **Logs Key:** A key you might need for other operations or support.
+    - **Download Key:** A unique string that allows you to access the download area.
+    - **Password:** The password you'll need to access the files.
+    - **Expiration Date:** The date until your subscription is valid.
 
 2. **Access the Download Page:** Open your web browser and navigate to the
    following URL:
 
-   ```txt
-   https://cloud.3mdeb.com/index.php/s/{download_key}
-   ```
+    ```txt
+    https://cloud.3mdeb.com/index.php/s/{download_key}
+    ```
 
-   Replace `{download_key}` with the download key provided in your email.
+    Replace `{download_key}` with the download key provided in your email.
 
 3. **Enter Your Password:** Once you visit the above link, you'll be prompted
    to enter a password. Use the password from your subscription email.
