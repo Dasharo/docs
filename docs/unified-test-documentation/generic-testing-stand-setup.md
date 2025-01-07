@@ -38,6 +38,12 @@ depending on the functionalities needed:
 * [Prepared RTE](../transparent-validation/rte/v1.1.0/quick-start-guide.md) -
   if we need low voltage control, switching on or off the platform, serial
   connection and external flashing.
+  > NOTE: this documentation is based on
+  RTE v1.1, which introduced
+  [significant changes](../transparent-validation/rte/revision-history.md) over
+  previous revisions. Using an earlier revision is not recommended, and may be
+  problematic if not impossible with some platforms (e.g, **if their flash chip
+  requires 1.8V VCC!**)
     - SOIC-8 Pomona clip (if applicable, i.e. if there are no SPI flashing
       headers)
     - 6x female-female wire cables
@@ -105,6 +111,10 @@ for setting up a Pomona clip connection:
     | MISO       | pin 2 (MISO) |
     | MOSI       | pin 8 (MOSI) |
 
+    > NOTE: In earlier RTE revisions, the VCC pin of the SPI header was not
+      connected. In such case, you need to use a different 3.3V pin on the RTE
+      instead.
+
     ![](../images/pomona_clip_with_rte.jpg)
 
 1. Open the platform cover and locate the **SPI flash chip**.
@@ -134,6 +144,10 @@ wires:
 | MI**SO**   | MI**SO**     |
 | MO**SI**   | MO**SI**     |
 
+> NOTE: In earlier RTE revisions, the VCC pin of the SPI header was not
+  connected. In such case, you need to use a different 3.3V pin on the RTE
+  instead.
+
 ##### Remaining pins
 
 1. Locate **CMOS headers** and wire them to GPIO pins on the RTE. You usually
@@ -155,6 +169,13 @@ clips to grab pins of soldered-in power and reset buttons.
     | J11 pin 5 | PWR_ON#                       |
     | J11 pin 6 | RST#                          |
     | J15 pin 1 | GND                           |
+
+Reference schematic:
+[RTE v1.1.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.1.0/rte.pdf)
+
+> NOTE: In RTE v1.0, pins 8 and 9 are used for RST and PWR respectively.
+  Reference schematic:
+  [RTE v1.0.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.0.0/rte.pdf)
 
 #### DC voltage supply control
 
