@@ -8,8 +8,8 @@ Select your Dasharo firmware flavor:
     ## Models
 
     === "V54 Series"
-        __NovaCustom V540TNx__ are 14 inch laptops based on 14th Generation Intel
-        Core Ultra processors (Meteor Lake):
+        __NovaCustom V54__ is a series of 14 inch laptops based on 14th
+        Generation Intel Core Ultra processors (Meteor Lake):
 
         ![](../../images/v540tu-front.png){ align=right width=50% }
 
@@ -20,8 +20,8 @@ Select your Dasharo firmware flavor:
         </div>
 
     === "V56 Series"
-        __NovaCustom V560TNx__ are 16 inch laptops based on 14th Generation Intel
-        Core Ultra processors (Meteor Lake):
+        __NovaCustom V56__ is a series of 16 inch laptops based on 14th
+        Generation Intel Core Ultra processors (Meteor Lake):
 
         ![](../../images/v560tu-front.png){ align=right width=50% }
 
@@ -95,12 +95,25 @@ Select your Dasharo firmware flavor:
     in sync is important. Information on compatibility should always be explained
     on the release pages:
 
-    - [V540TU](../../variants/novacustom_v540tu/releases.md)
-    - [V560TU](../../variants/novacustom_v560tu/releases.md)
+    <div class="annotate" markdown>
+
+    - V54 Series
+        * [V540TU](../../variants/novacustom_v540tu/releases.md) (1)
+        * [V540TNx](../../variants/novacustom_v540tnx/releases.md) (2)
+    - V56 Series
+        * [V560TU](../../variants/novacustom_v560tu/releases.md) (3)
+        * [V560TNx](../../variants/novacustom_v560tnx/releases.md) (4)
     - [NV4x 12th Gen](../../variants/novacustom_nv4x_adl/releases.md)
     - [NV4x 11th Gen](../../variants/novacustom_nv4x_tgl/releases.md)
     - [NS5x/7x 12th Gen](../../variants/novacustom_ns5x_adl/releases.md)
     - [NS5x/7x 11th Gen](../../variants/novacustom_ns5x_tgl/releases.md)
+
+    </div>
+
+    1. 14 inch, Integrated graphics
+    2. 14 inch, Discrete NVIDIA graphics
+    3. 16 inch, Integrated graphics
+    4. 16 inch, Discrete NVIDIA graphics
 
 === "Dasharo (coreboot + Heads)"
     Heads-based firmware is offered as a Dasharo Pro Package option.
@@ -152,5 +165,12 @@ Select your Dasharo firmware flavor:
     in sync is important. Information on compatibility should always be explained
     on the release pages:
 
+    <div class="annotate" markdown>
+
+    - V56 Series
+        * [V560TU](../../variants/novacustom_v560tu/releases_heads.md) (1)
     - [NV4x 12th Gen](../../variants/novacustom_nv4x_adl/releases_heads.md)
-    - [V560TU](../../variants/novacustom_v560tu/releases_heads.md)
+
+    </div>
+
+    1. 16 inch, Integrated graphics
