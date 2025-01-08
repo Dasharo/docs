@@ -113,6 +113,18 @@ Select your Dasharo firmware flavor:
 
     ## Models
 
+    === "V56 Series"
+        __NovaCustom V56 serues__ are 16 inch laptops based on 14th Generation
+        Intel Core Ultra processors (Meteor Lake):
+
+        ![](../../images/v560tu-front.png){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [V56 Series](https://configurelaptop.eu/v56-series/)
+
+        </div>
+
     === "NV4x 12th Gen"
         __NovaCustom NV4x 12th Gen__ is a 14 inch laptop based on 12th
         generation Intel Core processor (Alder Lake):
@@ -141,3 +153,4 @@ Select your Dasharo firmware flavor:
     on the release pages:
 
     - [NV4x 12th Gen](../../variants/novacustom_nv4x_adl/releases_heads.md)
+    - [V560TU](../../variants/novacustom_v560tu/releases_heads.md)
