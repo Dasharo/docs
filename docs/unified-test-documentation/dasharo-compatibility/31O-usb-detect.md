@@ -32,7 +32,7 @@ connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 coldboot.
 
-## UDT002.001 USB detection after warmboot
+## UDT001.002 USB detection after warmboot
 
 **Test description**
 
@@ -62,7 +62,7 @@ may be re-done several times to specify the platform and connection stability.
 The `USB_STICK` entry is visible which confirms successful detection after
 warmboot.
 
-## UDT003.001 USB detection after system reboot
+## UDT001.003 USB detection after system reboot
 
 **Test description**
 
