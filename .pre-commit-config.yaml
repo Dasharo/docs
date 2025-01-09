@@ -39,6 +39,12 @@ repos:
     hooks:
       - id: codespell
 
+  - repo: https://github.com/3mdeb/hooks
+    rev: v0.1.5
+    hooks:
+      - id: sort-mkdocs
+        files: "mkdocs.yml"
+
   - repo: local
     hooks:
       - id: double_slashes_url_external
