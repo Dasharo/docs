@@ -526,10 +526,11 @@ nav:
           - 'Generic Testing Stand Setup': unified-test-documentation/generic-testing-stand-setup.md
           - 'Dasharo compatibility':
               #pre-commit-sort-start
+              # - '[FAN] coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - '[AUD] Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
               - '[BBB] Boot block on low battery': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
-              - '[BNO] Build on a fresh OS Installation': unified-test-documentation/dasharo-compatibility/build-on-new-os.md
               - '[BMF] BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
+              - '[BNO] Build on a fresh OS Installation': unified-test-documentation/dasharo-compatibility/build-on-new-os.md
               - '[BSD] FreeBSD support': unified-test-documentation/dasharo-compatibility/307-freebsd-support.md
               - '[CAM] USB Camera Verification': unified-test-documentation/dasharo-compatibility/317-usb-camera.md
               - '[CBK] Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
@@ -551,7 +552,6 @@ nav:
               - '[ERR] SATA LED and PC speaker error indication': unified-test-documentation/dasharo-compatibility/31S-sata-led-and-pc-speaker-error-indication.md
               - '[ESP] ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
               - '[FAN] Fan speed': unified-test-documentation/dasharo-compatibility/S30-fan-speed.md
-              # - '[FAN] coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - '[FED] Fedora support': unified-test-documentation/dasharo-compatibility/310-fedora-support.md
               - '[FFW] Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
               - '[FLB] Firmware locally building and flashing': unified-test-documentation/dasharo-compatibility/326b-firmware-building-locally.md
