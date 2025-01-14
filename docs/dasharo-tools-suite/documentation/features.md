@@ -31,6 +31,8 @@ When DTS is started, it has following options for the user to choose from:
 * **K** Launch SSH Server
 * **L** [Enable sending DTS
   logs](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
+* **V** [Enable verbose
+  mode](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
 
 ## Dasharo zero-touch initial deployment
 
