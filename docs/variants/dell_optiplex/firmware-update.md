@@ -20,7 +20,7 @@ For simplicity we recommend using network booted
     - Dasharo (coreboot+UEFI)
         * Press F7 and choose iPXE Network boot
 * In the Dasharo Network Boot Menu, select the `Dasharo Tools Suite` option
-* Enter shell using option `9)`
+* Enter shell using option `S) to enter shell`
 * Download the Dell OptiPlex 7010/9010 Dasharo from
   [release section](releases.md#binaries) or
   [build from source](building-manual.md).

@@ -199,7 +199,7 @@ switching to open-source firmware.
 
 * Boot [Dasharo Tools
   Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/#bootable-usb-stick)
-* Choose option 9) Shell.
+* Choose option `S) to enter shell`.
 * Read content of SPI NOR flash:
 
   ``` console

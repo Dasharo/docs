@@ -17,7 +17,7 @@ For simplicity we recommend using network booted
 * Make sure a wired network cable to the device's Ethernet port
 * Boot platform and from SeaBIOS menu choose Dasharo Network Boot Menu
 * In the Dasharo Network Boot Menu, select the `Dasharo Tools Suite` option
-* Enter shell using option `9)`
+* Enter shell using option `S) to enter shell`
 * Download the Dell OptiPlex 7010/9010 Dasharo from
   [release section](releases.md#binaries) or
   [build from source](building-manual.md).
