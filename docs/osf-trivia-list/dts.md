@@ -95,29 +95,35 @@ donating to access DTS SE with one year update support is 60EUR.
 ## How can I help the support team diagnose my problem faster?
 
 If you are having issues with functionalities provided by the DTS start menu,
-you can help by running it in verbose mode and providing logs.
-
-!!! info
-
-    Verbose mode prints a lot of information on screen that starts with `+`
-    sign. </br>
-    If you can't reproduce the problem in this mode then you can also send us
-    logs with verbose mode disabled.
+you can help by providing logs.
 
 To do that, follow the instructions below:
 
 1. Boot DTS.
-2. In the DTS menu enable verbose mode by pressing `V`.
-3. Enable sending logs by pressing `L`.
-4. Reproduce the problem.
-5. The logs will be sent automatically after exiting from the menu (entering
-   shell, powering off the system or rebooting using the options in DTS menu).
+2. Enable sending logs by pressing `L`.
+3. Reproduce the problem.
+4. The logs will be sent automatically after exiting from the menu (entering
+   shell, powering off the system or rebooting using the options in DTS menu) or
+   after successful or failed update/install or failed firmware restore.
+
+If you haven't enabled sending logs, then in case of failed
+update/install/restore you will be asked if you want to send them to 3mdeb:
+
+```text
+Do you want to send console logs to 3mdeb? [n/y]: y
+```
 
 !!! tip
 
     If the automatic log submission does not work in your case, you can view and
-    copy the logs manually from `/tmp/dts.log`, `/var/local/dts-err.log` and
-    `/var/local/flashrom.log`.
+    copy the logs manually from `/tmp/logs/dts*.log`, `/var/local/dts-err*.log`
+    and `/var/local/flashrom.log`. Depending on your platform configuration and
+    connection method there might be different amount of files e.g.
+
+    ```sh
+    bash-5.2# ls /tmp/logs/
+    dts-verbose_tty1.log  dts-verbose_ttyS0.log  dts_tty1.log  dts_ttyS0.log
+    ```
 
 After collecting or automatically submitting logs, please report the problem by
 creating an issue on GitHub and/or "Dasharo Premier Support" Matrix channel. If
@@ -127,4 +133,6 @@ issue via email instead.
 Make sure to provide details that will help us reproduce the issue, such as the
 machine model, Dasharo and DTS version, etc., in accordance with the sections of
 the provided
-[template](https://github.com/Dasharo/dasharo-issues/issues/new/choose).
+[template](https://github.com/Dasharo/dasharo-issues/issues/new/choose) and in
+case of automatically submitted logs please also include time and date when
+those logs were sent.
