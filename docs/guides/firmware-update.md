@@ -54,3 +54,50 @@ automatically after reboot and the device will reboot again.
 Firmware versions without support for Firmware Update Mode have various update
 procedures. Check out your device's Firmware Update documentation for more
 information.
+
+## Known issues
+
+### Problem
+
+Platform: `MSI`
+
+The following warnings appear when updating Dasharo:
+
+```bash
+The firmware binary to be flashed contains Flash Descriptor (FD), but FD is not writable!
+The firmware binary contains Management Engine (ME), but ME is not disabled!
+```
+
+### Solution
+
+The locked Flash Descriptor makes it impossible to unlock and flash the
+Management Engine. The problem is not critical and you may continue with the
+update process. Your firmware will contain old ME. However, we advise to perform
+additional steps to flash it, as the old ME may cause some issues in the future.
+To do that, you will have to flash firmware with FD and ME externally using
+FlashBIOS. This will bypass the locks on those regions. If you wish to proceed
+with this approach, please follow the steps in the
+[recovery guide][recovery-msi]. Keep in mind that the memory will need to be
+trained again, and firmware settings will be reset.
+
+### Problem
+
+Platform: `MSI Z790-P DDR4`
+
+Dasharo version: Before `v0.9.2`
+
+FlashBIOS does not work
+
+### Solution
+
+The problem is likely caused by the fact that we changed the versioning scheme
+of firmware. Due to this mismatch, FlashBIOS only works for `Z790-P DDR4` since
+`v0.9.2`. If you wish to update to that version, you will first need to flash
+the BIOS region with `v0.9.2` firmware and then use FlashBIOS to flash
+everything, including ME. You can flash BIOS with the following command:
+
+```bash
+flashrom -p internal --noverify-all --ifd -i bios -w <firmware_file>
+```
+
+[recovery-msi]: ../unified/msi/recovery.md
