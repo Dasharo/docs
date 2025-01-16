@@ -294,28 +294,43 @@
 
     ## Building
 
-    1. Clone Dasharo Heads repository:
+    1. Clone and navigate to the Dasharo Heads repository:
 
         ```bash
         git clone https://github.com/Dasharo/heads.git
-        ```
-
-    1. Navigate to the source code directory and checkout to the desired revision:
-
-        ```bash
         cd heads
-        git checkout novacustom_nv4x_adl_v0.9.0
         ```
+
+    1. Checkout to the desired revision:
+
+        === "V560TU"
+            ```bash
+            git checkout novacustom_v56x_mtl_v0.9.0
+            ```
+
+        === "NV4x 12th Gen"
+            ```bash
+            git checkout novacustom_nv4x_adl_v0.9.0
+            ```
 
     1. Start the build inside the docker container:
 
-        ```bash
-        docker run --rm -it -v $PWD:$PWD -w $PWD \
-          3mdeb/heads-docker:3.0.1 make BOARD=nitropad-nv41
-        ```
+        === "V560TU"
+            ```bash
+            /docker_repro.sh make BOARD=novacustom-v560tu
+            ```
 
-    This will produce a Dasharo binary placed in
-    `build/x86/nitropad-nv41/dasharo-nitropad-nv41-*.rom`.
+            This will produce a Dasharo binary placed in
+            `build/x86/novacustom-v560tu/dasharo-novacustom-v560tu-*.rom`.
+
+        === "NV4x 12th Gen"
+            ```bash
+            docker run --rm -it -v $PWD:$PWD -w $PWD \
+              3mdeb/heads-docker:3.0.1 make BOARD=nitropad-nv41
+            ```
+
+            This will produce a Dasharo binary placed in
+            `build/x86/nitropad-nv41/dasharo-nitropad-nv41-*.rom`.
 
 ## Install Dasharo firmware
 
