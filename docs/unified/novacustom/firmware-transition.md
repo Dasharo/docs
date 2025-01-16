@@ -68,14 +68,14 @@ tool:
         FAT, exFAT or ext4 filesystem is recommended
 
 - Insert the USB stick into the laptop
-- Enter Heads main menu -> Options -> Flash/Update the BIOS
-- Select `Flash the firmware with a new ROM, erase settings`
+- Enter Heads main menu -> ++"Options"++ -> ++"Flash/Update the BIOS"++
+- Select ++"Flash the firmware with a new ROM, erase settings"++
 - Confirm that you have inserted the USB stick
 - Select your downloaded firmware binary on the USB stick
 - (Optional) Compare sha256 checksum with the official, signed digests available
   on the `Releases` page for your device on docs.dasharo.com
-- Select `Yes` to begin flashing
-- When the update is done, press Enter to reboot your device.
+- Select ++"Yes"++ to begin flashing
+- When the update is done, press ++enter++ to reboot your device.
 
 Your device should reboot into UEFI firmware.
 
