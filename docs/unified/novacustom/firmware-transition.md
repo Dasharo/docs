@@ -59,20 +59,25 @@ back on to boot into your new Heads installation!
 
 ## Switching from Dasharo Heads back to UEFI
 
-To revert back to UEFI, you will need to boot into DTS from a USB stick.
+To revert back to UEFI, you will need to use Heads' built-in firmware update
+tool:
 
-- Follow the [Dasharo Tools Suite
-  documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/)
-  to boot DTS from a USB stick
-- In the DTS main menu, select `Update Dasharo firmware` to check for available
-  updates.
-- When prompted to revert back to UEFI, press `Y`
-- Proceed with [DTS firmware
-  update](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#firmware-update)
-  as usual
+- Prepare USB stick with UEFI firmware binary
 
-Once finished, your laptop will shut down automatically. Power it back on to
-boot into your UEFI firmware.
+    !!! note "Supported filesystems"
+        FAT, exFAT or ext4 filesystem is recommended
+
+- Insert the USB stick into the laptop
+- Enter Heads main menu -> Options -> Flash/Update the BIOS
+- Select `Flash the firmware with a new ROM, erase settings`
+- Confirm that you have inserted the USB stick
+- Select your downloaded firmware binary on the USB stick
+- (Optional) Compare sha256 checksum with the official, signed digests available
+  on the `Releases` page for your device on docs.dasharo.com
+- Select `Yes` to begin flashing
+- When the update is done, press Enter to reboot your device.
+
+Your device should reboot into UEFI firmware.
 
 > When reverting to UEFI, it's not possible to restore EFI boot manager entries
 > that were added before installing Heads. Therefore, you may need to re-create
