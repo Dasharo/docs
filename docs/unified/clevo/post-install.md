@@ -75,6 +75,50 @@ Select your operating system to view applicable instructions:
     curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup | sudo sh
     ```
 
+=== "Qubes OS"
+    ### Touchpad hotkey enablement
+
+    The touchpad hotkey may need extra setup to function correctly under Qubes.
+    If the key isn't working, follow the steps below:
+
+    1. Open dom0 terminal window
+
+    1. Open /etc/udev/hwdb.d/60-keyboard.hwdb in your preferred text editor,
+       e.g. nano:
+
+        ```bash
+        sudo nano /etc/udev/hwdb.d/60-keyboard.hwdb
+        ```
+
+    1. Type the following into the file:
+
+        !!! note
+            The following applies only to NV4x 12th Gen and V560TU, which are
+            currently the only officially Qubes-certified models. If you use
+            Qubes on any other model, you may need to adjust the SMBIOS product
+            name in the section below.
+
+        ```
+        evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4xPZ:*
+        evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnnovacustom-v560tu:*
+         KEYBOARD_KEY_f7=touchpad_toggle
+         KEYBOARD_KEY_f8=touchpad_toggle
+         KEYBOARD_KEY_81=micmute
+        ```
+
+    1. Execute the following command:
+
+        ```bash
+        sudo systemd-hwdb update
+        sudo udevadm trigger
+        ```
+
+    1. Reboot to apply changes
+
+    After executing these steps, the hotkey should generate the correct keycode.
+    You may need to map it to the correct action in Xfce settings to ensure it
+    disables the touchpad.
+
 === "Windows 11"
     ### Updates and drivers installation
 
