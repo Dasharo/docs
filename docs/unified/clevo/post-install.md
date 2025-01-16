@@ -38,10 +38,8 @@ Select your operating system to view applicable instructions:
 
     ### Nvidia drivers
 
-    > It is only necessary to follow this step if your device has Nvidia GPU
-
-    For proper working of the sleep mode on Ubuntu 22.04, it is required to
-    install additional Nvidia drivers.
+    If your device comes with NVIDIA graphics, proprietary NVIDIA drivers are
+    recommended for optimal performance and battery life.
 
     1. Install drivers according to
        [instructions provided by Ubuntu](https://ubuntu.com/server/docs/nvidia-drivers-installation)
@@ -54,8 +52,8 @@ Select your operating system to view applicable instructions:
 
        ![](../../images/nv4x_nvidia_panel.jpg){ class="center" }
 
-    1. (Optional) If dynamic power management for the GPU is still not working
-       run the following command, and then reboot the laptop:
+    1. (Optional) If the GPU is still not powering down, run the following
+       command, and then reboot the laptop:
 
         ```bash
         echo options nvidia "NVreg_DynamicPowerManagement=0x02" | sudo tee /etc/modprobe.d/nvidia_rtd3.conf
