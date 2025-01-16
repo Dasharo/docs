@@ -5,7 +5,7 @@ to enable full functionality of your device.
 
 Select your operating system to view applicable instructions:
 
-=== "Ubuntu GNU/Linux"
+=== "Ubuntu"
     ### Touchpad hotkey enablement
 
     The touchpad hotkey may need extra setup to function correctly under Linux.
