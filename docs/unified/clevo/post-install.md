@@ -98,7 +98,7 @@ Select your operating system to view applicable instructions:
 
         ```
         evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnNV4xPZ:*
-        evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnnovacustom-v560tu:*
+        evdev:atkbd:dmi:bvn*:bvr*:svnNotebook:pnV54x_6x_TU:*
          KEYBOARD_KEY_f7=touchpad_toggle
          KEYBOARD_KEY_f8=touchpad_toggle
          KEYBOARD_KEY_81=micmute
