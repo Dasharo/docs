@@ -4,10 +4,6 @@ The following documentation describes the process of Dasharo open-source
 firmware update. The update process may be different, depending on which
 firmware version is currently installed on your device.
 
-Your firmware version can be checked by entering the
-[Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md)
-using the ++f2++ key while booting.
-
 === "Dasharo (UEFI)"
 
     ## Prerequisites
@@ -17,6 +13,10 @@ using the ++f2++ key while booting.
     and `12th Gen` devices starting from version v1.7.0 have support for [Firmware
     Update Mode](#firmware-update-mode). For older versions, please continue with
     the [Updating older versions](#updating-older-versions) section.
+
+    Your firmware version can be checked by entering the
+    [Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md)
+    using the ++f2++ key while booting.
 
     > Advanced users can also [build](./building-manual.md) and/or flash the
     > binaries themselves by following the steps under the [Manual
