@@ -4,6 +4,15 @@ The following documentation describes the process of Dasharo open-source
 firmware update. The update process may be different, depending on which
 firmware version is currently installed on your device.
 
+!!! question "Boot time after update"
+    The first boot after updating firmware may take a longer time than usual,
+    due to memory being re-trained. Generally, first boot time increases
+    according to the amount of installed RAM in the system. A system with 96 GB
+    of RAM may take over 2 minutes to boot.
+
+    After first boot, memory training settings are cached, and subsequent boot
+    times should be much lower.
+
 === "Dasharo (UEFI)"
 
     ## Prerequisites
