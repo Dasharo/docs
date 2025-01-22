@@ -303,7 +303,7 @@
 
     1. Checkout to the desired revision:
 
-        === "V560TU"
+        === "V560TU 14th Gen"
             ```bash
             git checkout novacustom_v56x_mtl_v0.9.0
             ```
@@ -315,7 +315,7 @@
 
     1. Start the build inside the docker container:
 
-        === "V560TU"
+        === "V560TU 14th Gen"
             ```bash
             /docker_repro.sh make BOARD=novacustom-v560tu
             ```
