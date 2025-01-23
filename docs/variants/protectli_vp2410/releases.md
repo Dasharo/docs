@@ -17,7 +17,7 @@ Test results for this platform can be found
 ## v1.1.1 - 2025-01-23
 
 Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP2410/v1.1.1-results.csv).
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP2410/VP2410_v1.1.1_results.csv).
 
 ### Added
 
