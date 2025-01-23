@@ -5,6 +5,89 @@ Score](../../glossary.md#dasharo-openness-score) for Protectli VP2410 Dasharo
 releases. The content of the page is generated with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
+## v1.1.1
+
+Openness Score for protectli_vp2410_v1.1.1.rom
+
+Open-source code percentage: **29.5%**
+Closed-source code percentage: **70.5%**
+
+* Image size: 8388608 (0x800000)
+* Number of regions: 17
+* Number of CBFSes: 2
+* Total open-source code size: 2086013 (0x1fd47d)
+* Total closed-source code size: 4984670 (0x4c0f5e)
+* Total data size: 409629 (0x6401d)
+* Total empty size: 908296 (0xddc08)
+
+![](protectli_vp2410_v1.1.1.rom_openness_chart.png)
+
+![](protectli_vp2410_v1.1.1.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| IFWI | 0x1000 | 0x2ff000 | closed-source |
+| SI_DESC | 0x0 | 0x1000 | data |
+| RECOVERY_MRC_CACHE | 0x300000 | 0x10000 | data |
+| RW_MRC_CACHE | 0x310000 | 0x10000 | data |
+| FMAP | 0x3a1000 | 0x1000 | data |
+| SMMSTORE | 0x67f000 | 0x40000 | data |
+
+### CBFS BOOTSPLASH
+
+* CBFS size: 524288
+* Number of files: 1
+* Open-source files size: 0 (0x0)
+* Closed-source files size: 0 (0x0)
+* Data size: 28 (0x1c)
+* Empty size: 524260 (0x7ffe4)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| (empty) | null | 524260 | none | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 3002368
+* Number of files: 17
+* Open-source files size: 2086013 (0x1fd47d)
+* Closed-source files size: 524126 (0x7ff5e)
+* Data size: 8193 (0x2001)
+* Empty size: 384036 (0x5dc24)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1848895 | none | open-source |
+| fallback/romstage | stage | 48672 | LZ4 | open-source |
+| fallback/ramstage | stage | 125050 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 7244 | none | open-source |
+| pt | raw | 20480 | none | open-source |
+| pdpt | raw | 32 | none | open-source |
+| fallback/postcar | stage | 35640 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 153600 | none | closed-source |
+| fspm.bin | fsp | 178014 | LZ4 | closed-source |
+| fsps.bin | fsp | 192512 | none | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| config | raw | 4661 | LZMA | data |
+| revision | raw | 859 | none | data |
+| build_info | raw | 103 | none | data |
+| vbt.bin | raw | 1271 | LZMA | data |
+| header_pointer | cbfs header | 4 | none | data |
+| (empty) | null | 384036 | none | empty |
+
 ## v1.1.0
 
 Openness Score for protectli_vp2410_v1.1.0.rom
