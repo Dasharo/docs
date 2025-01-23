@@ -14,6 +14,58 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1033426620).
 
+## v1.1.1 - 2025-01-23
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP2410/v1.1.1-results.csv).
+
+### Added
+
+- [CPU throttling option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+- [Power state after AC loss option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+
+### Changed
+
+- Rebased coreboot to 24.02
+- Rebased edk2 to edk2-stable202405
+
+### Known issues
+
+- [VP2410 does not power on after shutting down with power button 4s override](https://github.com/Dasharo/dasharo-issues/issues/643)
+- [USB 2.0 sticks not detected on VP2410](https://github.com/Dasharo/dasharo-issues/issues/99)
+- [S3 resume does not work in Geminilake FSP](https://github.com/Dasharo/dasharo-issues/issues/27)
+
+### Binaries
+
+[protectli_vp2410_v1.1.1.rom][protectli_vp2410_v1.1.1.rom_file]{.md-button}
+[sha256][protectli_vp2410_v1.1.1.rom_hash]{.md-button}
+[sha256.sig][protectli_vp2410_v1.1.1.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.1.x-for-protectli-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 24.02 revision 001d6f77](https://github.com/Dasharo/coreboot/tree/001d6f77)
+    + [License](https://github.com/Dasharo/coreboot/blob/001d6f77/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202405 revision 8a9fd05f](https://github.com/Dasharo/edk2/tree/8a9fd05f)
+    + [License](https://github.com/Dasharo/edk2/blob/8a9fd05f/License.txt)
+- [iPXE based on 2023.12 revision 35d84756](https://github.com/Dasharo/ipxe/tree/35d84756)
+    + [License](https://github.com/Dasharo/ipxe/blob/35d84756/COPYING.GPLv2)
+- [vboot based on 3d37d2aafe revision 3d37d2aa](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/LICENSE)
+- [Intel Management Engine/Trusted Execution Engine version v4.0.50.2083](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/protectli/vault_glk/ifwi.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/protectli/vault_glk/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version GLK v2.2.1.3.2](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/protectli/vault_glk/GeminilakeFspBinPkg)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/licenses/INTEL_FSP_SIC_LICENSE.txt)
+- [Intel microcode version GLK B0 0x42 19/04/2024](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-7a-01)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
+- [Intel microcode version GLK R0 0x24 25/08/2023](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-7a-08)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
+
 ## v1.1.0 - 2024-05-16
 
 ### Added
@@ -74,11 +126,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Intel microcode based on GLK B0 0x0000003e revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-7a-01)
 - [Intel microcode based on GLK R0 0x00000022 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-7a-08)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
-[protectli_vp2410_v1.1.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.0/protectli_vp2410_v1.1.0.rom
-[protectli_vp2410_v1.1.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.0/protectli_vp2410_v1.1.0.rom.sha256
-[protectli_vp2410_v1.1.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.0/protectli_vp2410_v1.1.0.rom.sha256.sig
-
 ## v1.0.15 - 2022-05-31
 
 ### Changed
@@ -117,6 +164,12 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + CPU signature: 0x0706A1, Date: 09.06.2020, Revision: 0x34
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[protectli_vp2410_v1.1.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom
+[protectli_vp2410_v1.1.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom.sha256
+[protectli_vp2410_v1.1.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom.sha256.sig
+[protectli_vp2410_v1.1.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.0/protectli_vp2410_v1.1.0.rom
+[protectli_vp2410_v1.1.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.0/protectli_vp2410_v1.1.0.rom.sha256
+[protectli_vp2410_v1.1.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.0/protectli_vp2410_v1.1.0.rom.sha256.sig
 [v1.0.15_rom]: https:/3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom
 [v1.0.15_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256
 [v1.0.15_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256.sig
