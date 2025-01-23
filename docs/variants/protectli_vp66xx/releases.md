@@ -13,6 +13,69 @@ For details about our release process please read
 
 </center>
 
+## v0.9.1 - 2025-01-23
+
+Test results for this release can be found for [VP6650](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP66xx/VP6650_v0.9.1_results.csv)
+and [VP6670](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP66xx/VP6670_v0.9.1_results.csv).
+
+### Added
+
+- [CPU throttling option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+- [Power state after AC loss option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+- [Fan control option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+
+### Changed
+
+- Rebased coreboot to 24.02
+- Rebased edk2 to edk2-stable202405
+- Updated Intel ME and Flash Descriptor (refer to SBOM section)
+
+### Fixed
+
+- [TPM Physical Presence interface not working in TPM2 setup menu](https://github.com/Dasharo/dasharo-issues/issues/521)
+- Platform is power cycling instead of resetting during reboot or reset from
+  setup menu
+
+### Known issues
+
+- [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
+- [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
+
+### Binaries
+
+[protectli_vp66xx_v0.9.1.rom][protectli_vp66xx_v0.9.1.rom_file]{.md-button}
+[sha256][protectli_vp66xx_v0.9.1.rom_hash]{.md-button}
+[sha256.sig][protectli_vp66xx_v0.9.1.rom_sig]{.md-button}
+
+[protectli_vp66xx_v0.9.1_dev_signed.rom][protectli_vp66xx_v0.9.1_dev_signed.rom_file]{.md-button}
+[sha256][protectli_vp66xx_v0.9.1_dev_signed.rom_hash]{.md-button}
+[sha256.sig][protectli_vp66xx_v0.9.1_dev_signed.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo-open-source-firmware-engineering-release-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 24.02 revision 225d907a](https://github.com/Dasharo/coreboot/tree/225d907a)
+    + [License](https://github.com/Dasharo/coreboot/blob/225d907a/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202405 revision 8a9fd05f](https://github.com/Dasharo/edk2/tree/8a9fd05f)
+    + [License](https://github.com/Dasharo/edk2/blob/8a9fd05f/License.txt)
+- [Dasharo iPXE fork based on 2023.12 revision 35d84756](https://github.com/Dasharo/ipxe/tree/35d84756)
+    + [License](https://github.com/Dasharo/ipxe/blob/35d84756/COPYING.GPLv2)
+- [vboot based on 3d37d2aafe revision 3d37d2aa](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/LICENSE)
+- [Intel Management Engine version v16.1.25.1865-v0.1](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/protectli/vault_adl_p/)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.2](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/protectli/vault_adl_p/)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version IoT RPL-P MR1 (4445_03)](https://github.com/intel/FSP/commits/3819544e/RaptorLakeFspBinPkg/IoT/RaptorLakeP)
+    + [License](https://github.com/intel/FSP/blob/3819544e/FSP_License.pdf)
+- [Intel microcode version ADL R0 0x433 05/12/2023](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-9a-04)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
+- [Intel microcode version RPL-H/P/PX 6+8 J0 0x4121 07/12/2023](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-ba-02)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
+
 ## v0.9.0 - 2024-09-11
 
 Test results for this release can be found
@@ -44,7 +107,7 @@ Test results for this release can be found
 
 ### Known issues
 
-- [Display Port has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
+- [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
 - [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
 
 ### Binaries
@@ -73,6 +136,12 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Intel microcode based on RPL-H/P/PX 6+8 J0 0x4121 revision microcode-20240312](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240312/intel-ucode/06-ba-02)
 
 [newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[protectli_vp66xx_v0.9.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1.rom
+[protectli_vp66xx_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1.rom.sha256
+[protectli_vp66xx_v0.9.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1.rom.sha256.sig
+[protectli_vp66xx_v0.9.1_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1_dev_signed.rom
+[protectli_vp66xx_v0.9.1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1_dev_signed.rom.sha256
+[protectli_vp66xx_v0.9.1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1_dev_signed.rom.sha256.sig
 [protectli_vp66xx_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.0/protectli_vp66xx_v0.9.0.rom
 [protectli_vp66xx_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.0/protectli_vp66xx_v0.9.0.rom.sha256
 [protectli_vp66xx_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.0/protectli_vp66xx_v0.9.0.rom.sha256.sig
