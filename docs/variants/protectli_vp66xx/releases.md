@@ -37,7 +37,7 @@ Test results for this release can be found for [VP6650](https://github.com/Dasha
 
 ### Known issues
 
-- [Display Port has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
+- [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
 - [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
 
 ### Binaries
@@ -106,7 +106,7 @@ Test results for this release can be found
 
 ### Known issues
 
-- [Display Port has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
+- [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
 - [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
 
 ### Binaries
