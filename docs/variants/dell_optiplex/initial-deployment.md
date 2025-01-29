@@ -133,7 +133,7 @@ pip install uefi-firmware==1.9
 To extract the blobs (you may have to run the command twice):
 
 ```bash
- uefi-firmware-parser -e "_O7010A29.exe.extracted/65C10" -O
+uefi-firmware-parser -e "_O7010A29.exe.extracted/65C10" -O
 ```
 
 Congratulations, you should now have access to the BIOS ACM and EC firmware
@@ -168,14 +168,14 @@ raw binary, to which I will refer as `coreboot.rom`. It is assumed that the
 If you didn't enable TXT support in your build, you only need to run
 
 ```bash
- cbfstool coreboot.rom add -f sch5545_ecfw.bin -n sch5545_ecfw.bin -t raw
+cbfstool coreboot.rom add -f sch5545_ecfw.bin -n sch5545_ecfw.bin -t raw
 ```
 
 If you are using TXT, run
 
 ```bash
 cbfstool coreboot.rom add -f IVB_BIOSAC_PRODUCTION.bin -n txt_bios_acm.bin -t raw
-cbfstool coreboot.rom add -f SNB_IVB_SINIT_20190708_PW.bin -n txt_bios_acm.bin -t raw
+cbfstool coreboot.rom add -f SNB_IVB_SINIT_20190708_PW.bin -n txt_sinit_acm.bin -t raw
 ```
 
 ### Flashing
