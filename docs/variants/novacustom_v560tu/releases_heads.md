@@ -23,6 +23,10 @@ Test results for this release can be found
 - [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
 - Heads Linux is used as a payload
 
+### Known issues
+
+- [Some unexpected errors in dmesg](https://github.com/Dasharo/dasharo-issues/issues/1201)
+
 ### Binaries
 
 [sha256][novacustom_v56x_mtl_ec_v0.9.0.rom_hash]{.md-button}
