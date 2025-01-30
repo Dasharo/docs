@@ -139,3 +139,11 @@ Open-source firmware development and build environment SHOULD have:
 
 I'm not tracking all activity in the community, so some claims may be plain
 wrong. Please let me know what I miss when I'm wrong.
+
+## [OSFI0012] Difference between regular release binaries and `dev_signed` binaries
+
+We publish two types of binaries. Regular release binaries which are signed
+with release key and `dev_signed` binaries which are signed with the
+developer key used by Dasharo build system. The purpose of the latter
+binaries is for users who build Dasharo from source to be able to verify
+if their binary is the same as the one we build (binary is reproducible).
