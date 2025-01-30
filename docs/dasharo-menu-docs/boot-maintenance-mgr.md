@@ -13,6 +13,30 @@ driver options, but it is rather rarely used.
   firmware should wait for hotkey to enter setup menu or [Boot Manager Menu](overview.md#boot-manager-menu)
   before booting the first priority according to boot order or
   `Boot Next Value` (if it was set before reset)
+* `Quiet Boot` - suppresses the boot prompt and progress bar from being
+  printed on the screen resulting in a smooth graphical experience during boot
+  by displaying the logo only.
+* `Fast Boot` - limits the hardware initialization to necessary minimum to
+  improve the boot time performance. Input consoles become available only on
+  demand (e.g. when entering setup or OS bootloader or any EFI application
+  which attempts to read key strokes), meaning it will not be possible to
+  enter setup or boot manager menu using hotkeys. The auto boot timeout
+  becomes 0 seconds. Only VGA OptionROMs are being executed (if OptionROMs are
+  enabled). Only FAT filesystem driver is available. Making screenshots is not
+  possible. Also behaves like quiet boot. The only ways to disable fast boot
+  are:
+    - changing the fast boot EFI variable from OS to 0/false (on Linux using
+      `efivarfs` or PowerShell on Windows with [3rd party PowerShell
+      modules](https://www.powershellgallery.com/packages/UEFIv2))
+    - requesting to enter the Setup from OS
+        * Linux: using `UEFI Firmware Settings` entry in GRUB menu, or setting
+         `Boot Next` to enter Setup on next boot using `efibootmgr`, then
+         disabling the option in the setup
+        * Windows: through [Windows Recovery
+          Environment](https://support.microsoft.com/en-us/windows/windows-recovery-environment-0eb14733-6301-41cb-8d26-06a12b42770b)
+          -> `Troubleshooting` -> `UEFI Firmware Settings` or Windows Power
+          Shell command `shutdown /r /fw` as admin, then disabling the
+          option in the setup
 
 ## Boot Options
 
