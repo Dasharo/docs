@@ -1,3 +1,12 @@
+# Dasharo Openness Score
+
+This page contains the [Dasharo Openness
+Score](../../glossary.md#dasharo-openness-score) for Hardkernel ODROID H4
+Dasharo releases. The content of the page is generated with [Dasharo Openness
+Score utility](https://github.com/Dasharo/Openness-Score).
+
+## v0.9.0
+
 Openness Score for hardkernel_odroid_h4_v0.9.0.rom
 
 Open-source code percentage: **38.3%**
