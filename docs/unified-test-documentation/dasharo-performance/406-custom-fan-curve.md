@@ -259,5 +259,4 @@ on the CPU:
 
 **Expected result**
 
-The fan PWM should be equal to `0` or be low and don't increase with temperature
-, for example ~`250` RPM. This depends on the model of the fan used.
+The fan RPM value should be constant and equal to `0` or oscillate around a low RPM value (the minimal RPM value depends on the fan characteristic and may even reach `250` RPM) regardless of the CPU temperature.
