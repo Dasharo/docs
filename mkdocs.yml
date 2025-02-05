@@ -403,7 +403,6 @@ nav:
           - 'Recovery': variants/hardkernel_odroid_h4/recovery.md
           - 'Hardware Configuration Matrix': variants/hardkernel_odroid_h4/hardware-matrix.md
           - 'Test matrix': variants/hardkernel_odroid_h4/test-matrix.md
-          - 'Openness score': variants/hardkernel_odroid_h4/openness_score.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
