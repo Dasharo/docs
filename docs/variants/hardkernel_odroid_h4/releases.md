@@ -63,7 +63,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot based on 24.02 revision 93eb5819](https://github.com/Dasharo/coreboot/tree/93eb5819)
+- [Dasharo coreboot fork based on 24.02 revision 93eb5819](https://github.com/Dasharo/coreboot/tree/93eb5819)
     + [License](https://github.com/Dasharo/coreboot/blob/93eb5819/COPYING)
 - [Dasharo EDKII fork based on edk2-stable202402 revision 7dbfe58b](https://github.com/Dasharo/edk2/tree/7dbfe58b)
     + [License](https://github.com/Dasharo/edk2/blob/7dbfe58b/License.txt)
