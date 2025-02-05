@@ -17,9 +17,8 @@
 
 **Test description**
 
-The fan has been configured to follow a custom curve. This test aims to verify
-that the fan curve is configured correctly in silent profile and the fan spins
-up and down according to the defined values.
+This test aims to verify that the fan curve is configured correctly in silent
+profile and the fan spins up and down according to the defined values.
 
 **Test configuration data**
 
@@ -52,66 +51,22 @@ up and down according to the defined values.
     stress-ng --cpu 16 --timeout 30m
     ```
 
-1. Open the terminal window and run the following command to get the
-   temperature:
-
-    ```bash
-    cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/temp1_input
-    ```
-
-    > The last three digits of the output are the value of the number after the
-      decimal point. Example output `47000` means 47°C.
-
-1. In the terminal window run the following command to get the PWM value of the
-   CPU fan:
-
-    ```bash
-    cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/pwm1
-    ```
-
-1. Repeat steps 13-14 a couple of times.
+1. Make a couple of measurements of the temperature and fan speeds
+   in a [device specific way](#measuring-the-temperature-and-fan-speeds)
 1. Note the results.
 
 **Expected result**
-
-[Silent fan profile](https://docs.dasharo.com/unified/novacustom/features/)
-
-Keep in mind that the EC firmware is smoothing, i.e. the fans will enter the
-target speed with a delay.
-
-The algorithm by which the EC calculates the speed is as follows:
-
-* If the temperature is below the first one defined in the curve, set the speed
-  to 0.
-* If the temperature is above the last defined curve, set the maximum speed.
-* If the temperature is equal to one of the temperatures of the points on the
-  curve, set the speed from that point on the curve
-* If the temperature is between points on the curve:
-
-    ```bash
-    slope = (right_point_speed - left_point_speed)/right_point_temperature - left_point_temperature)
-    speed = slope*(temperature - left_point_temperature) + left_point_speed
-    ```
-
-Divide the PWM value by 2.55 to get the percentage to compare.
-
-Example check for 30°C and 70 PWM values:
-
-    ```text
-    expected_speed = ((30-25)/(65-0))*(30-0)+25 ≈ 27
-    actual_speed = 70/2.55 ≈ 27
-    ```
-
-Values `expected_speed` and `actual_speed` are strongly similar. This means
-that the fan control is set correctly.
+The values of CPU temperature and fan speeds should match the
+[device specific instructions](#verifying-the-temperature-and-fan-speeds)
+on verifying the `Silent` fan curve.
 
 ## CFC002.001 Custom fan curve performance profile measure (Ubuntu)
 
 **Test description**
 
-The fan has been configured to follow a custom curve. This test aims to verify
-that the fan curve is configured correctly in the performance profile and the
-fan spins up and down according to the defined values.
+This test aims to verify that the fan curve is configured correctly in the
+performance profile and the fan spins up and down according to the defined
+values.
 
 **Test configuration data**
 
@@ -144,69 +99,22 @@ fan spins up and down according to the defined values.
     stress-ng --cpu 16 --timeout 30m
     ```
 
-1. Open the terminal window and run the following command to get the
-   temperature:
-
-    ```bash
-    cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/temp1_input
-    ```
-
-    > The last three digits of the output are the value of the number after the
-      decimal point. Example output `47000` means 47°C.
-
-1. In the terminal window run the following command to get the PWM value of the
-   CPU fan:
-
-    ```bash
-    cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/pwm1
-    ```
-
-1. Repeat steps 13-14 a couple of times.
+1. Make a couple of measurements of the temperature and fan speeds
+   in a [device specific way](#measuring-the-temperature-and-fan-speeds)
 1. Note the results.
 
 **Expected result**
-
-[Performance fan profile](https://docs.dasharo.com/unified/novacustom/features/)
-
-Keep in mind that the EC firmware is smoothing, i.e. the fans will enter the
-target speed with a delay.
-
-The algorithm by which the EC calculates the speed is as follows:
-
-* If the temperature is below the first one defined in the curve, set the speed
-  to 0.
-* If the temperature is above the last defined curve, set the maximum speed.
-* If the temperature is equal to one of the temperatures of the points on the
-  curve, set the speed from that point on the curve
-* If the temperature is between points on the curve:
-
-    ```bash
-    slope = (right_point_speed - left_point_speed)/right_point_temperature - left_point_temperature)
-    speed = slope*(temperature - left_point_temperature) + left_point_speed
-    ```
-
-Divide the PWM value by 2.55 to get the percentage to compare.
-
-Example check for 30°C and 79 PWM values:
-
-    ```text
-    expected_speed = ((35-25)/(55-0))*(35-0)+25 ≈ 31
-    actual_speed = 79/2.55 ≈ 31
-    ```
-
-Values `expected_speed` and `actual_speed` are strongly similar. This means
-that the fan control is set correctly.
+The values of CPU temperature and fan speeds should match the
+[device specific instructions](#verifying-the-temperature-and-fan-speeds)
+on verifying the `Performance` fan curve.
 
 ## CFC003.001 Custom fan curve OFF profile measure (Ubuntu)
 
 **Test description**
 
-The fan has been configured to follow a custom curve. This test aims to verify
-that the fan curve is configured correctly in the OFF profile and the
-fan does not spin, or barely spins, which depends on the type of the fan.
-
-The test requires the device to use have the IT87 EC. For example Protectli
-VP66xx, VP32xx and VP2420.
+This test aims to verify that the fan curve is configured correctly in the OFF
+profile and the fan does not spin, or barely spins, which depends on the type
+of the fan.
 
 **Test configuration data**
 
@@ -226,37 +134,153 @@ VP66xx, VP32xx and VP2420.
    Menu.
 1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
 1. Enter the `Power Management Options` submenu.
-1. Verify that the `Fan profile` field is set to `OFF` - if not, using
-   the arrow keys and `Enter`, choose the `Performance` option.
+1. Verify that the `Fan profile` field is set to `Off` - if not, using
+   the arrow keys and `Enter`, choose the `Off` option.
 1. Press `F10` to save the changes.
 1. If necessary - press `Y` to confirm saving the changes.
 1. Go back to the main menu using the `ESC` key.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
-1. Open the terminal window and run the following command to load the EC sensor
-kernel module:
-
-    ```bash
-    sudo modprobe it87 force_id=0x8786
-    ```
-
-1. Open the terminal window and run the following command to run a stress test
-on the CPU:
+1. Open the terminal window and run the following command:
 
     ```bash
     stress-ng --cpu 16 --timeout 30m
     ```
 
-1. Open the terminal window and run the following command to get the
-   temperature and fans' RPM:
-
-    ```bash
-    watch -n1 "sensors it8786-isa-0a20 | grep -E 'fan|temp1'"
-    ```
-
+1. Make a couple of measurements of the temperature and fan speeds
+   in a [device specific way](#measuring-the-temperature-and-fan-speeds)
 1. Note the results.
 
 **Expected result**
+The values of CPU temperature and fan speeds should match the
+[device specific instructions](#verifying-the-temperature-and-fan-speeds)
+on verifying the `Off` fan curve.
 
-The fan RPM value should be constant and equal to `0` or oscillate around a low RPM value (the minimal RPM value depends on the fan characteristic and may even reach `250` RPM) regardless of the CPU temperature.
+## Measuring the temperature and fan speeds
+
+=== "Protectli"
+    === "VP66xx & VP32xx"
+        1. Run the following command to load the kernel module required for
+           measuring the fan RPM
+           ```bash
+           sudo modprobe it87 force_id=0x8786
+           ```
+        1. Run the following command to detect available sensors
+           ```bash
+           sudo sensors-detect
+           ```
+        1. Run the following command to read the temperature and RPM
+           ```bash
+           watch -n1 "sensors it8786-isa* | grep -E 'fan|temp1'"
+           ```
+
+<!--
+=== "Novacustom"
+    1. Open the terminal window and run the following command to get the
+       temperature:
+
+       ```bash
+       cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/temp1_input
+       ```
+
+       > The last three digits of the output are the value of the number after the
+          decimal point. Example output `47000` means 47°C.
+
+    1. In the terminal window run the following command to get the PWM value of the
+       CPU fan:
+
+       ```bash
+       cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/pwm1
+       ```
+-->
+## Verifying the temperature and fan speeds
+
+=== "Protectli"
+    === "VP66xx"
+        The fans have a minimal RPM of `~200 RPM`, and a maximum up to `~3200 RPM`.
+        When in `off` state they still spin at `~200 RPM`.
+
+        === "Silent"
+            The fans:
+
+            - Leave the `off` state and start spinning up at `50°C`, if were in `off` state
+            - Enter the `off` state at `40°C`, if not in `off` state before
+            - Reach the maximum speed at `85°C`
+            - Spin at RPM directly proportional to the temperature
+              at temperature between `50°C` and `85°C`
+
+        === "Performance"
+            The fans:
+
+            - Leave the `off` state and start spinning up at `40°C`, if were in `off` state
+            - Enter the `off` state at `30°C`, if not in `off` state before
+            - Reach the maximum speed at `75°C`
+            - Spin at RPM directly proportional to the temperature
+              at temperature between `40°C` and `75°C`
+
+        === "Off"
+            The fan RPM value should be constant and oscillate around the minimum
+            of `~200 RPM` regardless of the CPU temperature.
+
+    === "VP32xx"
+        The fan from the modular extension bay have a minimal RPM of `0 RPM`,
+        and a maximum up to `~2100 RPM`.
+        When in `off` state they stop spinning and remain at constant `0 RPM`.
+
+        === "Silent"
+            The fans:
+
+            - Leave the `off` state and start spinning up at `50°C`, if were in `off` state
+            - Enter the `off` state at `40°C`, if not in `off` state before
+            - Reach the maximum speed at `85°C`
+            - Spin at RPM directly proportional to the temperature
+              at temperature between `50°C` and `85°C`
+
+        === "Performance"
+            The fans:
+
+            - Leave the `off` state and start spinning up at `40°C`, if were in `off` state
+            - Enter the `off` state at `30°C`, if not in `off` state before
+            - Reach the maximum speed at `75°C`
+            - Spin at RPM directly proportional to the temperature
+              at temperature between `40°C` and `75°C`
+
+        === "Off"
+            The fan RPM value should be constant at the minimum of `0 RPM`
+            regardless of the CPU temperature.
+
+<!--
+=== "Novacustom"
+    [Silent fan profile](https://docs.dasharo.com/unified/novacustom/features/)
+    [Performance fan profile](https://docs.dasharo.com/unified/novacustom/features/)
+
+    Keep in mind that the EC firmware is smoothing, i.e. the fans will enter the
+    target speed with a delay.
+
+    The algorithm by which the EC calculates the speed is as follows:
+
+    * If the temperature is below the first one defined in the curve, set the speed
+    to 0.
+    * If the temperature is above the last defined curve, set the maximum speed.
+    * If the temperature is equal to one of the temperatures of the points on the
+    curve, set the speed from that point on the curve
+    * If the temperature is between points on the curve:
+
+       ```bash
+       slope = (right_point_speed - left_point_speed)/right_point_temperature - left_point_temperature)
+       speed = slope*(temperature - left_point_temperature) + left_point_speed
+       ```
+
+    Divide the PWM value by 2.55 to get the percentage to compare.
+
+    Example check for 30°C and 79 PWM values using the Performance Curve:
+
+       ```text
+       expected_speed = ((35-25)/(55-0))*(35-0)+25 ≈ 31
+       actual_speed = 79/2.55 ≈ 31
+       ```
+
+    Values `expected_speed` and `actual_speed` are strongly similar. This means
+    that the fan control is set correctly.
+-->
