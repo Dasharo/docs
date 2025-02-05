@@ -1,14 +1,14 @@
-# Hardkernel Odroid H4 Dasharo Release Notes
+# Hardkernel ODROID H4 Dasharo Release Notes
 
 Following Release Notes describe status of open-source firmware development for
-Hardkernel Odroid H4
+Hardkernel ODROID H4
 
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 <center>
 
-[Subscribe to Hardkernel Odroid H4 Dasharo Release Newsletter]
+[Subscribe to Hardkernel ODROID H4 Dasharo Release Newsletter]
 [newsletter]{ .md-button .md-button--primary .center }
 
 </center>
@@ -20,7 +20,7 @@ Test results for this release can be found
 
 ### Added
 
-- Initial support for the Hardkernel Odroid H4 device, based on Intel Alder
+- Initial support for the Hardkernel ODROID H4 device, based on Intel Alder
   Lake N
 - [UEFI compatible interface](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface/)
 - [Support for discrete TPM](https://docs.dasharo.com/unified-test-documentation/dasharo-security/200-tpm-support/)
@@ -44,7 +44,7 @@ Test results for this release can be found
 
 ### Known issues
 
-- [S3 sleep too short on Odroid H4 Plus](https://github.com/Dasharo/dasharo-issues/issues/1213)
+- [S3 sleep too short on ODROID H4 Plus](https://github.com/Dasharo/dasharo-issues/issues/1213)
 
 ### Binaries
 
