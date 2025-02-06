@@ -102,6 +102,11 @@ Installer images can be downloaded from the official
 Official documentation can be found
 [here](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-installation-and-setup-7-0/installing-and-setting-up-esxi-install/installing-esxi-install/installing-esxi-interactively-install/install-esxi-interactivelly-install.html).
 
+!!! note "Installation using only serial port"
+
+    Current versions of ESXI (8.0.3) do not support installing using
+    only serial console.
+
 ### Installation images
 
 Guide on how to download the installer image can be found on Brodacom's
