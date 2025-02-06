@@ -172,7 +172,7 @@ on verifying the `Off` fan curve.
            ```
         1. Run the following command to read the temperature and RPM
            ```bash
-           watch -n1 "sensors it8786-isa* | grep -E 'fan|temp1'"
+           watch -n1 "sensors it8786-isa-* | grep -E 'fan|temp1'"
            ```
 
 <!--
