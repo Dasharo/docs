@@ -94,3 +94,15 @@ Official documentation can be found
 
 Installer images can be downloaded from the official
 [website](https://updates.xcp-ng.org/isos/).
+
+## ESXI
+
+### Installation documentation
+
+Official documentation can be found
+[here](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-installation-and-setup-7-0/installing-and-setting-up-esxi-install/installing-esxi-install/installing-esxi-interactively-install/install-esxi-interactivelly-install.html).
+
+### Installation images
+
+Guide on how to download the installer image can be found on Brodacom's
+[website](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/download-the-esxi-installer.html).
