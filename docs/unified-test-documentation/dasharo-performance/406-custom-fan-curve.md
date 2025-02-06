@@ -198,26 +198,24 @@ on verifying the `Off` fan curve.
 
 === "Protectli"
     === "VP66xx"
-        The fans have a minimal RPM of `~200 RPM`, and a maximum up to `~3200 RPM`.
-        When in `off` state they still spin at `~200 RPM`.
+        The fans have a minimal RPM of `~200 RPM`, and a maximum of up to
+        `~3200 RPM`. When in `off` state they still spin at `~200 RPM`.
 
         === "Silent"
             The fans:
 
-            - Leave the `off` state and start spinning up at `50°C`, if were in `off` state
-            - Enter the `off` state at `40°C`, if not in `off` state before
-            - Reach the maximum speed at `85°C`
-            - Spin at RPM directly proportional to the temperature
-              at temperature between `50°C` and `85°C`
+            - start spinning up from the minimal RPM at 50 degrees
+              and slow down to the minimal RPM at 40 degrees (hysteresis)
+            - spin up proportionally to the CPU temperature, reaching the
+              maximum RPM at 85 degrees
 
         === "Performance"
             The fans:
 
-            - Leave the `off` state and start spinning up at `40°C`, if were in `off` state
-            - Enter the `off` state at `30°C`, if not in `off` state before
-            - Reach the maximum speed at `75°C`
-            - Spin at RPM directly proportional to the temperature
-              at temperature between `40°C` and `75°C`
+            - start spinning up from the minimal RPM at 40 degrees
+              and slow down to the minimal RPM at 30 degrees (hysteresis)
+            - spin up proportionally to the CPU temperature, reaching the
+              maximum RPM at 75 degrees
 
         === "Off"
             The fan RPM value should be constant and oscillate around the minimum
@@ -231,20 +229,18 @@ on verifying the `Off` fan curve.
         === "Silent"
             The fans:
 
-            - Leave the `off` state and start spinning up at `50°C`, if were in `off` state
-            - Enter the `off` state at `40°C`, if not in `off` state before
-            - Reach the maximum speed at `85°C`
-            - Spin at RPM directly proportional to the temperature
-              at temperature between `50°C` and `85°C`
+            - start spinning at 50 degrees and stop spinning at 40 degrees
+              (hysteresis)
+            - spin up proportionally to the CPU temperature, reaching the
+              maximum RPM at 85 degrees
 
         === "Performance"
             The fans:
 
-            - Leave the `off` state and start spinning up at `40°C`, if were in `off` state
-            - Enter the `off` state at `30°C`, if not in `off` state before
-            - Reach the maximum speed at `75°C`
-            - Spin at RPM directly proportional to the temperature
-              at temperature between `40°C` and `75°C`
+            - start spinning at 40 degrees and stop spinning at 30 degrees
+              (hysteresis)
+            - spin up proportionally to the CPU temperature, reaching the
+              maximum RPM at 75 degrees
 
         === "Off"
             The fan RPM value should be constant at the minimum of `0 RPM`
