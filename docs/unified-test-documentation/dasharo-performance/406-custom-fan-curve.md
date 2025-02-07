@@ -48,7 +48,7 @@ profile and the fan spins up and down according to the defined values.
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu 16 --timeout 30m
+    stress-ng --cpu $(nproc --all) --timeout 1m
     ```
 
 1. Make a couple of measurements of the temperature and fan speeds
@@ -96,7 +96,7 @@ values.
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu 16 --timeout 30m
+    stress-ng --cpu $(nproc --all) --timeout 1m
     ```
 
 1. Make a couple of measurements of the temperature and fan speeds
@@ -145,7 +145,7 @@ of the fan.
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu 16 --timeout 30m
+    stress-ng --cpu $(nproc --all) --timeout 1m
     ```
 
 1. Make a couple of measurements of the temperature and fan speeds
