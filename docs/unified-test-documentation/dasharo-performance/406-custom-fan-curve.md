@@ -45,14 +45,23 @@ profile and the fan spins up and down according to the defined values.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Open the terminal window and run the following command to check the amount
+   of cores in the DUT:
+
+   ```bash
+   nproc --all
+   ```
+
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu 16 --timeout 30m
+    stress-ng --cpu 1 --timeout 1m
     ```
 
-1. Make a couple of measurements of the temperature and fan speeds
+1. Make a measurement of the temperature and fan speeds
    in a [device specific way](#measuring-the-temperature-and-fan-speeds)
+1. Repeat steps 13-14 a couple times, increasing the `--cpu` parameter in
+   `stress-ng` up to the total number of cores from step 12.
 1. Note the results.
 
 **Expected result**
@@ -93,14 +102,23 @@ values.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Open the terminal window and run the following command to check the amount
+   of cores in the DUT:
+
+   ```bash
+   nproc --all
+   ```
+
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu 16 --timeout 30m
+    stress-ng --cpu 1 --timeout 1m
     ```
 
-1. Make a couple of measurements of the temperature and fan speeds
+1. Make a measurement of the temperature and fan speeds
    in a [device specific way](#measuring-the-temperature-and-fan-speeds)
+1. Repeat steps 13-14 a couple times, increasing the `--cpu` parameter in
+   `stress-ng` up to the total number of cores from step 12.
 1. Note the results.
 
 **Expected result**
@@ -142,14 +160,23 @@ of the fan.
 1. Select the `Reset` option to apply the settings and reboot.
 1. Boot into the system.
 1. Log into the system by using the proper login and password.
+1. Open the terminal window and run the following command to check the amount
+   of cores in the DUT:
+
+   ```bash
+   nproc --all
+   ```
+
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu 16 --timeout 30m
+    stress-ng --cpu 1 --timeout 1m
     ```
 
-1. Make a couple of measurements of the temperature and fan speeds
+1. Make a measurement of the temperature and fan speeds
    in a [device specific way](#measuring-the-temperature-and-fan-speeds)
+1. Repeat steps 13-14 a couple times, increasing the `--cpu` parameter in
+   `stress-ng` up to the total number of cores from step 12.
 1. Note the results.
 
 **Expected result**
