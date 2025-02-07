@@ -175,25 +175,6 @@ on verifying the `Off` fan curve.
            watch -n1 "sensors it8786-isa-* | grep -E 'fan|temp1'"
            ```
 
-<!--
-=== "Novacustom"
-    1. Open the terminal window and run the following command to get the
-       temperature:
-
-       ```bash
-       cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/temp1_input
-       ```
-
-       > The last three digits of the output are the value of the number after the
-          decimal point. Example output `47000` means 47°C.
-
-    1. In the terminal window run the following command to get the PWM value of the
-       CPU fan:
-
-       ```bash
-       cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/17761776:00/hwmon/hwmon3/pwm1
-       ```
--->
 ## Verifying the temperature and fan speeds
 
 === "Protectli"
@@ -245,38 +226,3 @@ on verifying the `Off` fan curve.
         === "Off"
             The fan RPM value should be constant at the minimum of `0 RPM`
             regardless of the CPU temperature.
-
-<!--
-=== "Novacustom"
-    [Silent fan profile](https://docs.dasharo.com/unified/novacustom/features/)
-    [Performance fan profile](https://docs.dasharo.com/unified/novacustom/features/)
-
-    Keep in mind that the EC firmware is smoothing, i.e. the fans will enter the
-    target speed with a delay.
-
-    The algorithm by which the EC calculates the speed is as follows:
-
-    * If the temperature is below the first one defined in the curve, set the speed
-    to 0.
-    * If the temperature is above the last defined curve, set the maximum speed.
-    * If the temperature is equal to one of the temperatures of the points on the
-    curve, set the speed from that point on the curve
-    * If the temperature is between points on the curve:
-
-       ```bash
-       slope = (right_point_speed - left_point_speed)/right_point_temperature - left_point_temperature)
-       speed = slope*(temperature - left_point_temperature) + left_point_speed
-       ```
-
-    Divide the PWM value by 2.55 to get the percentage to compare.
-
-    Example check for 30°C and 79 PWM values using the Performance Curve:
-
-       ```text
-       expected_speed = ((35-25)/(55-0))*(35-0)+25 ≈ 31
-       actual_speed = 79/2.55 ≈ 31
-       ```
-
-    Values `expected_speed` and `actual_speed` are strongly similar. This means
-    that the fan control is set correctly.
--->
