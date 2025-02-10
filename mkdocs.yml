@@ -317,6 +317,7 @@ nav:
           - 'Firmware update': unified/protectli/firmware-update.md
           - 'Recovery': unified/protectli/recovery.md
           - 'Test matrix': unified/protectli/test-matrix.md
+          - 'OS installation': unified/protectli/os-installation.md
           - 'Protectli FW6':
               - 'Releases': variants/protectli_fw6/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
