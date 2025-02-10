@@ -1,5 +1,9 @@
 # OS installation
 
+The following document contains information about supported operating systems
+installation process on Protectli hardware. This includes official
+resources from the OS vendor and some tips that we found during testing.
+
 ## FreeBSD
 
 ### Installation documentation
