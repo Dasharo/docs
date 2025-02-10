@@ -79,12 +79,14 @@ Hear from our satisfied users and clients:
 
 ## 📅 Events Calendar
 
-Stay tuned for our upcoming events:
+Stay up to date with our latest events by visiting our [3mdeb Events
+Page](https://3mdeb.com/events/), where you'll find the most current schedule of
+upcoming activities.
 
-- **January 30-31, 2025**: [Xen Project Winter Meetup](https://campaign.vates.tech/xen-project-winter-meetup)
-- **February 01-02, 2025**: [FOSDEM 2025](https://fosdem.org/2025/)
-- **March 20, 2025**: [Dasharo User Group #9 and Dasharo Developers vPub
-  0xE](https://vpub.dasharo.com/e/17/dasharo-user-group-9)
+For more details on our events roadmap, you can also check the latest [Dasharo
+Community
+Status](https://www.youtube.com/results?search_query=%22Dasharo+Community+Status%22&sp=CAI%253D)
+or view presentation [slides](https://dl.3mdeb.com/dasharo/dug/).
 
 [View full calendar →](https://vpub.dasharo.com)
 
