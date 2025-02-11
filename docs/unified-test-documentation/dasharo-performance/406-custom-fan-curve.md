@@ -199,7 +199,6 @@ on verifying the `Off` fan curve.
             ```vegalite
             {
                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-               "description": "The \"Silent\" fan curve for Protectli VP66xx",
                "title": "The \"Silent\" fan curve for Protectli VP66xx",
                "data": {
                      "values": [
@@ -230,7 +229,6 @@ on verifying the `Off` fan curve.
             ```vegalite
             {
                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-               "description": "The \"Performance\" fan curve for Protectli VP66xx",
                "title": "The \"Performance\" fan curve for Protectli VP66xx",
                "data": {
                      "values": [
@@ -257,7 +255,6 @@ on verifying the `Off` fan curve.
             ```vegalite
             {
                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-               "description": "The \"Off\" fan curve for Protectli VP66xx",
                "title": "The \"Off\" fan curve for Protectli VP66xx",
 
                "data": {
@@ -295,7 +292,6 @@ on verifying the `Off` fan curve.
             ```vegalite
             {
                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-               "description": "The \"Silent\" fan curve for Protectli VP66xx",
                "title": "The \"Silent\" fan curve for Protectli VP66xx",
                "data": {
                      "values": [
@@ -331,7 +327,6 @@ on verifying the `Off` fan curve.
             ```vegalite
             {
                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-               "description": "The \"Performance\" fan curve for Protectli VP66xx",
                "title": "The \"Performance\" fan curve for Protectli VP66xx",
                "data": {
                      "values": [
@@ -363,7 +358,6 @@ on verifying the `Off` fan curve.
             ```vegalite
             {
                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-               "description": "The \"Off\" fan curve for Protectli VP66xx",
                "title": "The \"Off\" fan curve for Protectli VP66xx",
 
                "data": {
