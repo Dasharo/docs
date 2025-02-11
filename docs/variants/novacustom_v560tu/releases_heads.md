@@ -18,14 +18,15 @@ For details about our release process please read
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCustom/MTL_14th_Gen/V560TU/Heads/v0.9.0-results.csv).
 
-### Changed
+### Added
 
-- [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [This is a Dasharo Pro Package Release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
 - Heads Linux is used as a payload
 
 ### Known issues
 
 - [Some unexpected errors in dmesg](https://github.com/Dasharo/dasharo-issues/issues/1201)
+- [Performance increase for -TU Series](https://github.com/Dasharo/dasharo-issues/issues/1216)
 
 ### Binaries
 
@@ -35,7 +36,7 @@ Test results for this release can be found
 [sha256][novacustom_v56x_mtl_v0.9.0_heads.rom_hash]{.md-button}
 [sha256.sig][novacustom_v56x_mtl_v0.9.0_heads.rom_sig]{.md-button}
 
-This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
 [become the Dasharo Entry Subscription subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
 You will get the access to all of the firmware updates for the duration of the
