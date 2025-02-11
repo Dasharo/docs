@@ -68,4 +68,26 @@ V546TU platforms.
 | **Attached devices**           | The platform is tested with every docking station/hub listed [in HCL][HCL] |
 | **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
 
+## V540TU F-HD+
+
+| Component                      | Description                                      |
+|--------------------------------|--------------------------------------------------|
+| **CPU**                        | Intel(R) Core(TM) Ultra 7 155H                   |
+|                                | Internal Cooling                                 |
+| **RAM**                        | Slot 1: W-NM56S508G                              |
+| **SSD**                        | Goodram PX600 250GB                              |
+| **Flash memory**               | GigaDevice 25LB256FYIG                           |
+| **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
+| **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
+| **Wireless card 1**            | Intel Wi-Fi 6E AX211                             |
+| **Display**                    | eDP: 1920x1200p                                  |
+| **Network**                    | Local network wired connection                   |
+| **Internal devices**           | 1. 2880x1800 14 inch screen                      |
+|                                | 2. Internal ISO keyboard                         |
+|                                | 3. Touchpad                                      |
+|                                | 4. Camera                                        |
+|                                | 5. Audio subsystem                               |
+| **Attached devices**           |       |
+| **Power Supply**               | Chicony 19V, 4.74A, 90 W                         |
+
 [HCL]: https://docs.dasharo.com/unified/novacustom/hcl/#v54-series
