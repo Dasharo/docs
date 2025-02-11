@@ -196,6 +196,29 @@ on verifying the `Off` fan curve.
             - spin up proportionally to the CPU temperature, reaching the
               maximum RPM at 85 degrees
 
+            ```vegalite
+            {
+               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+               "description": "The \"Silent\" fan curve for Protectli VP66xx",
+               "title": "The \"Silent\" fan curve for Protectli VP66xx",
+               "data": {
+                     "values": [
+                     {"t1": 0, "r": 200, "h": 0}, {"t1": 40, "r": 200, "h": 0},
+                     {"t1": 85, "r": 3200, "h": 0}, {"t1": 100, "r": 3200, "h": 0},
+
+                     {"t1": 0, "r": 200, "h": 1}, {"t1": 50, "r": 200, "h": 1},
+                     {"t1": 85, "r": 3200, "h": 1}, {"t1": 100, "r": 3200, "h": 1}
+                     ]
+               },
+               "mark": {"type": "line", "tooltip": true},
+               "encoding": {
+                     "x": {"field": "t1", "type": "quantitative", "title": "CPU Temperature [°C]"},
+                     "y": {"field": "r", "type": "quantitative", "title": "Fan speed [RPM]"},
+                     "color": {"field": "h", "type": "nominal", "legend": null}
+               }
+            }
+            ```
+
         === "Performance"
             The fans:
 
@@ -204,9 +227,57 @@ on verifying the `Off` fan curve.
             - spin up proportionally to the CPU temperature, reaching the
               maximum RPM at 75 degrees
 
+            ```vegalite
+            {
+               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+               "description": "The \"Performance\" fan curve for Protectli VP66xx",
+               "title": "The \"Performance\" fan curve for Protectli VP66xx",
+               "data": {
+                     "values": [
+                     {"t1": 0, "r": 200, "h": 0}, {"t1": 30, "r": 200, "h": 0},
+                     {"t1": 75, "r": 3200, "h": 0}, {"t1": 100, "r": 3200, "h": 0},
+
+                     {"t1": 0, "r": 200, "h": 1}, {"t1": 40, "r": 200, "h": 1},
+                     {"t1": 75, "r": 3200, "h": 1}, {"t1": 100, "r": 3200, "h": 1}
+                     ]
+               },
+               "mark": {"type": "line", "tooltip": true},
+               "encoding": {
+                     "x": {"field": "t1", "type": "quantitative", "title": "CPU Temperature [°C]"},
+                     "y": {"field": "r", "type": "quantitative", "title": "Fan speed [RPM]"},
+                     "color": {"field": "h", "type": "nominal", "legend": null}
+               }
+            }
+            ```
+
         === "Off"
             The fan RPM value should be constant and oscillate around the minimum
             of `~200 RPM` regardless of the CPU temperature.
+
+            ```vegalite
+            {
+               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+               "description": "The \"Off\" fan curve for Protectli VP66xx",
+               "title": "The \"Off\" fan curve for Protectli VP66xx",
+
+               "data": {
+                     "values": [
+                        {"t1": 0, "r": 200, "h": 0}, {"t1": 100, "r": 200, "h": 0}
+                     ]
+               },
+               "mark": {"type": "line", "tooltip": true},
+               "encoding": {
+                     "x": {"field": "t1", "type": "quantitative", "title": "CPU Temperature [°C]"},
+                     "y": {
+                        "field": "r",
+                        "type": "quantitative",
+                        "title": "Fan speed [RPM]",
+                        "scale": {"domain": [0, 300]}
+                     },
+                     "color": {"field": "h", "type": "nominal", "legend": null}
+               }
+            }
+            ```
 
     === "VP32xx"
         The fan from the modular extension bay have a minimal RPM of `0 RPM`,
