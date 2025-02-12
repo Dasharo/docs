@@ -212,7 +212,9 @@ plugins:
         - variants/secure-firewall.md
         - variants/custom.md
         - variants/server.md
-  - charts
+  - charts:
+      vega_theme_light: default
+      vega_theme_dark: default
 nav:
   - 'Intro':
       - 'About Dasharo': index.md
