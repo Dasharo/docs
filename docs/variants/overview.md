@@ -47,8 +47,8 @@ open-source firmware distribution.
 
 * Available at the 3mdeb online store:
 
-    - [Dasharo (coreboot+UEFI) Pro Package for Laptops Upgrade to (coreboot+Heads) for NV41PZ](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
-    - [Dasharo (coreboot+UEFI) Pro Package for Laptops Upgrade to (coreboot+Heads) for V560TU](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-transition-to-corebootheads-for-v560tu-laptops/)
+    - [Dasharo (coreboot+UEFI) transition to (coreboot+Heads) for NV41PZ Laptops](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
+    - [Dasharo (coreboot+UEFI) transition to (coreboot+Heads) for V560TU Laptops](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-transition-to-corebootheads-for-v560tu-laptops/)
 
 ## Desktop
 
