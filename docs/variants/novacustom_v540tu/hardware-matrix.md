@@ -80,9 +80,9 @@ V546TU platforms.
 | **USB pendrives**              | SanDisk Ultra USB 3.0 32 GB                      |
 | **USB Keyboard**               | Logitech, Inc. Keyboard K120                     |
 | **Wireless card 1**            | Intel Wi-Fi 6E AX211                             |
-| **Display**                    | eDP: 1920x1200p                                  |
+| **Display**                    | eDP: 1920x1080p                                  |
 | **Network**                    | Local network wired connection                   |
-| **Internal devices**           | 1. 2880x1800 14 inch screen                      |
+| **Internal devices**           | 1. 1920x1200 14 inch screen                      |
 |                                | 2. Internal ISO keyboard                         |
 |                                | 3. Touchpad                                      |
 |                                | 4. Camera                                        |
