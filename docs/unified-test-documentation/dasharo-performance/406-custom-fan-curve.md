@@ -48,11 +48,13 @@ profile and the fan spins up and down according to the defined values.
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu $(nproc --all) --timeout 1m
+    stress-ng --cpu $(nproc --all) --cpu-load 100 --timeout 1m
     ```
 
 1. Make a couple of measurements of the temperature and fan speeds
-   in a [device specific way](#measuring-the-temperature-and-fan-speeds)
+   in a [device specific way](#measuring-the-temperature-and-fan-speeds).
+   The `--cpu-load` parameter specifies the approximate percentage usage of
+   the cpu and can be changed for more precise measurements.
 1. Note the results.
 
 **Expected result**
@@ -96,11 +98,13 @@ values.
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu $(nproc --all) --timeout 1m
+    stress-ng --cpu $(nproc --all) --cpu-load 100 --timeout 1m
     ```
 
 1. Make a couple of measurements of the temperature and fan speeds
-   in a [device specific way](#measuring-the-temperature-and-fan-speeds)
+   in a [device specific way](#measuring-the-temperature-and-fan-speeds).
+   The `--cpu-load` parameter specifies the approximate percentage usage of
+   the cpu and can be changed for more precise measurements.
 1. Note the results.
 
 **Expected result**
@@ -145,11 +149,13 @@ of the fan.
 1. Open the terminal window and run the following command:
 
     ```bash
-    stress-ng --cpu $(nproc --all) --timeout 1m
+    stress-ng --cpu $(nproc --all) --cpu-load 100 --timeout 1m
     ```
 
 1. Make a couple of measurements of the temperature and fan speeds
-   in a [device specific way](#measuring-the-temperature-and-fan-speeds)
+   in a [device specific way](#measuring-the-temperature-and-fan-speeds).
+   The `--cpu-load` parameter specifies the approximate percentage usage of
+   the cpu and can be changed for more precise measurements.
 1. Note the results.
 
 **Expected result**
