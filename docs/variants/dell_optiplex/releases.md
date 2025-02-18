@@ -52,7 +52,7 @@ You will get the access to all of the firmware updates for the duration of the
 subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell_optiplex_9010/dasharo-release-0.x-compatible-with-dell-optiplex-x010-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
