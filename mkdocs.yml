@@ -55,6 +55,10 @@ extra:
       link: https://discord.gg/QseTVHum3w
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
 markdown_extensions:
   - admonition
   - attr_list
@@ -77,6 +81,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
   - pymdownx.tabbed:
       alternate_style: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify
@@ -205,6 +212,9 @@ plugins:
         - variants/secure-firewall.md
         - variants/custom.md
         - variants/server.md
+  - charts:
+      vega_theme_light: default
+      vega_theme_dark: default
 nav:
   - 'Intro':
       - 'About Dasharo': index.md
