@@ -36,7 +36,7 @@ Select your operating system to view applicable instructions:
 
     and reboot to use the new kernel.
 
-    ### Nvidia drivers
+    ### NVIDIA drivers
 
     If your device comes with NVIDIA graphics, proprietary NVIDIA drivers are
     recommended for optimal performance and battery life.
