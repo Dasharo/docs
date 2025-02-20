@@ -13,7 +13,7 @@ For details about our release process please read
 
 </center>
 
-## v0.9.0 - 2025-02-13
+## v0.9.0 - 2025-02-20
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/Hardkernel/Odroid_H4/v0.9.0_results.csv).
