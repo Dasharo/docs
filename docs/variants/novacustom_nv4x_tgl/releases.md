@@ -516,7 +516,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 ### Fixed
 
 - [Performance drop when the power adaptor is disconnected](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/5)
-- [High Nvidia GPU energy draw at idle in Windows](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/6)
+- [High NVIDIA GPU energy draw at idle in Windows](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/6)
 
 ### Known issues
 
@@ -561,7 +561,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [Unable to download the system by using iPXE](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/8)
 - [Laptop cannot output video via the Tunderbolt 4 USB Type-C port](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/7)
-- [High Nvidia GPU energy draw at idle in Windows](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/6)
+- [High NVIDIA GPU energy draw at idle in Windows](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/6)
 - [Performance drop when the power adaptor is disconnected](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/5)
 - [The touchpad ON/OFF switch Fn key is not functional](https://gitlab.com/novacustom/dasharo-compatibility/-/issues/1)
 
