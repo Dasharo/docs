@@ -1,101 +1,178 @@
-# Revision history
+# RTE Board changelog
 
-## v1.1.0
+This is a changelog for the
+[RTE Board](https://3mdeb.com/open-source-hardware/#rte).
 
-* added `Open hardware` logo
-* added `SW1` reset button
-* added `D5` relay state LED indicator
-* added `J16` 2x3pin UART OUTPUT SELECT header
-* added `J18` 1x2pin UART1 header
-* added 1.8V stabilizer
-* populated SPI `Vcc` pin
-* modified capacitors near MAX3232 SOIC
-* reduced OC buffers GPIO header (J11) from 12 to 9 pin
-* eliminated issue with J6 USB port (unreliable detection of USB devices)
+For the source/schematics, check out
+[Repository](https://github.com/3mdeb/rte-schematics)
 
-## v1.0.0
+## v. 1.1.0
 
-* added RoHS logo
-* added Crossed Wheelie Bin logo
-* modified footprints of the pin headers
+Added:
 
-## v0.5.3
+- 3.3V voltage stabilizer
+- 1.8V voltage stabilizer
+- A SPI logic level converter
+- A Voltage selector based on a relay
+- An Open Hardware logo
+- An UART header selector
+- A `MAX3232` enable jumper
+- A relay state diode
+- A circuit for cut-off the current flow
+- A `.gitignore` file
 
-* enlarged added holes
+Modified:
 
-## v0.5.2
+- OC header (from now on, there are only 9 open-collector pins free to use)
+- Resistors and capacitors footprints
 
-* modified I2C GPIO expander outputs connections (now 4 of them are connected to
-  the dedicated header)
-* modified version number on board
-* removed SPI header for APU recovery with output pin role information labels
-* removed 7 and 8 pin of SPI header with GPIO expander connection
+Removed:
 
-## v0.5.1
+- ARK joint for relay module
+- Header for relay module control
 
-* added micro USB connector for power supply
-* added 5 V power supply pins
-* added SPI connector for APU SPI recovery
-* added fiducials on the bottom layer
-* added pins information labels
-* modified relay control system elements placement
-* modified SPI connector for APU paths placement
-* modified project text descriptions
-* removed 2 pin GPIO expander connector
+## v. 1.0.0
 
-## v0.5
+Added:
 
-* added 5 V power supply signal diode (red) + limiting current resistor
-* added 3.3 V power supply signal diode (orange) + limiting current resistor
-* relay NO/NC connection switched to the previous configuration
-* switched `SPI1_MISO`with `SPI1_MOSI` output
-* mirrored `RS232` socket pads
-* removed I2C pull-up resistors
+- RoHS logo
+- Crossed Wheelie Bin logo
 
-## v0.3.6
+Modified:
 
-* relay NO/NC connection switched
+- footprints of the pin headers
 
-## v0.3.5
+## v. 0.5.3
 
-* enlarged the hole diameter by 0.1 mm
+Modified:
 
-## v0.3.4
+- enlarged added holes
 
-* added 3mdeb logo and board name on PCB
-* modified elements marks placing
+## v. 0.5.2
 
-## v0.3.3
+Modified:
 
-* added SPI output IO pins connection with GPIO
-* added PCB mechanical schematic
-* added I2C INT pins connection
-* added mounting holes
-* added fiducials
-* modified MOSFET transistor pinout numeration
-* modified USB footprint from horizontal to vertical
-* modified I2C GPIO expander with OC buffers connection
+- I2C GPIO expander outputs connections (now 4 of them are connected to the
+  dedicated header)
+- version number on board
 
-## v0.3.2
+Removed:
 
-* added mounting holes
-* modified relay pinout
-* removed I2C to GND connection
+- SPI header for APU recovery with output pin role information labels
+- 7 and 8 pin of SPI header with GPIO expander connection
 
-## v0.3.1
+## v. 0.5.1
 
-* modified power supply from 5V to 3V3 for I2C bus `MCP23017`, and `MAX3232`
-* removed capacitors connected to the I2C bus
+Added:
 
-## v0.3
+- microUSB connector for power supply
+- 5 V power supply pins
+- SPI connector for APU SPI recovery
+- fiducials on bottom layer
+- pins information labels
 
-* added I2C bus with output header
-* added `MCP23017` I2C GPIO expander
-* added second `SN74LS06` OC buffer
-* added relay with required neighboring items
-* added `MAX3232` RS232 electrical level changer
-* added RS232 socket
-* added GPIO output header for pins unused to OC buffer control
-* modified some of input pins connection
-* removed ARK joint for the relay module
-* removed header for relay module control
+Modified:
+
+- relay control system elements placement
+- SPI connector for APU paths placement
+- project text descriptions
+
+Removed:
+
+- 2 pin GPIO expander connector
+
+## v. 0.5
+
+Added:
+
+- 5 V power supply signal diode (red) + limiting current resistor
+- 3.3 V power supply signal diode (orange) + limiting current resistor
+
+Modified:
+
+- relay NO/NC connection switched to previous configuration
+- switched `SPI1_MISO`with `SPI1_MOSI` output
+- mirrored `RS232` socket pads
+
+Removed:
+
+- I2C pull-up resistors
+
+## v. 0.3.6
+
+Modified:
+
+- relay NO/NC connection switched
+
+## v. 0.3.5
+
+Modified:
+
+- enlarge the hole diameter by 0.1 mm
+
+## v. 0.3.4
+
+Added:
+
+- 3mdeb logo and board name on PCB
+
+Modified:
+
+- elements marks placing
+
+## v. 0.3.3
+
+Added:
+
+- SPI output IO pins connection with GPIO
+- PCB mechanical schematic
+- I2C INT pins connection
+- mounting holes
+- fiducials
+
+Modified:
+
+- mosfet transistor pinout numeration
+- USB footprint from horizontal to vertical
+- I2C GPIO expander with OC buffers connection
+
+## v. 0.3.2
+
+Added:
+
+- mounting holes
+
+Modified:
+
+- relay pinout
+
+Removed:
+
+- I2C to GND connection
+
+## v. 0.3.1
+
+Modified:
+
+- power supply from 5V to 3V3 for I2C bus `MCP23017`, and `MAX3232`
+
+Removed:
+
+- capacitors connected to I2C bus
+
+## v. 0.3
+
+Added:
+
+- I2C bus with output header
+- `MCP23017` I2C GPIO expander
+- second `SN74LS06` OC buffer
+- relay with required neighboring items
+- `MAX3232` RS232 electrical level changer
+- RS232 socket
+- GPIO output header for pins unused to OC buffer control
+
+Modified:
+
+- Some of input pins connection
+- footprints of the pin headers
