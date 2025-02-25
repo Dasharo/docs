@@ -51,6 +51,9 @@ Test results for this release can be found
 [sha256][hardkernel_odroid_h4_v0.9.0.rom_hash]{.md-button}
 [sha256.sig][hardkernel_odroid_h4_v0.9.0.rom_sig]{.md-button}
 
+[sha256][hardkernel_odroid_h4_v0.9.0_dev_signed.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.0_dev_signed.rom_sig]{.md-button}
+
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
 [become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
@@ -83,3 +86,5 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 [newsletter]: https://newsletter.3mdeb.com/subscription/pULA4K0Eo
 [hardkernel_odroid_h4_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/v0.9.0/hardkernel_odroid_h4_v0.9.0.rom.sha256
 [hardkernel_odroid_h4_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/v0.9.0/hardkernel_odroid_h4_v0.9.0.rom.sha256.sig
+[hardkernel_odroid_h4_v0.9.0_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/v0.9.0/hardkernel_odroid_h4_v0.9.0_dev_signed.rom.sha256
+[hardkernel_odroid_h4_v0.9.0_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/v0.9.0/hardkernel_odroid_h4_v0.9.0_dev_signed.rom.sha256.sig
