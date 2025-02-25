@@ -54,7 +54,8 @@ profile and the fan spins up and down according to the defined values.
 1. Make a couple of measurements of the temperature and fan speeds
    in a [device specific way](#measuring-the-temperature-and-fan-speeds).
    The `--cpu-load` parameter specifies the approximate percentage usage of
-   the cpu and can be changed for more precise measurements.
+   the cpu. Change it to values in range \[1, 100\] to measure the fan speeds
+   in all the working points of the fan curve.
 1. Note the results.
 
 **Expected result**
@@ -104,7 +105,8 @@ values.
 1. Make a couple of measurements of the temperature and fan speeds
    in a [device specific way](#measuring-the-temperature-and-fan-speeds).
    The `--cpu-load` parameter specifies the approximate percentage usage of
-   the cpu and can be changed for more precise measurements.
+   the cpu. Change it to values in range \[1, 100\] to measure the fan speeds
+   in all the working points of the fan curve.
 1. Note the results.
 
 **Expected result**
@@ -155,7 +157,8 @@ of the fan.
 1. Make a couple of measurements of the temperature and fan speeds
    in a [device specific way](#measuring-the-temperature-and-fan-speeds).
    The `--cpu-load` parameter specifies the approximate percentage usage of
-   the cpu and can be changed for more precise measurements.
+   the cpu. Change it to values in range \[1, 100\] to measure the fan speeds
+   in all the working points of the fan curve.
 1. Note the results.
 
 **Expected result**
