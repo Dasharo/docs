@@ -26,7 +26,7 @@ Test results for this release can be found
 ### Known issues
 
 - [Some unexpected errors in dmesg](https://github.com/Dasharo/dasharo-issues/issues/1201)
-- [Performance increase for -TU Series](https://github.com/Dasharo/dasharo-issues/issues/1216)
+- [Performance increase for -TU Series (comparison with NVIDIA variants) - coreboot issue](https://github.com/Dasharo/dasharo-issues/issues/1216)
 
 ### Binaries
 
