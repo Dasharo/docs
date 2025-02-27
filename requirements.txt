@@ -43,3 +43,4 @@ soupsieve==2.6
 urllib3==2.2.2
 virtualenv==20.26.3
 watchdog==4.0.2
+markdown-grid-tables==0.4.0
