@@ -14,6 +14,11 @@ bricking the device a breeze.
 
 The device is described in detail on [blog.3mdeb.com](https://blog.3mdeb.com/2024/2024-07-25-odroid-h4-getting-started/)
 
+The Hardkernel ODROID-H4 PLUS is available as part of the [Dasharo Pro Package](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/).
+Subscribe to the Dasharo Pro Package to access exclusive pre-built binaries.
+For added convenience, you can also purchase a [platform with a subscription](https://shop.3mdeb.com/shop/dasharo-supported-hardware/odroid-h4-plus-with-dasharo-corebootuefi-pro-package-for-network-appliance/)
+directly from our shop.
+
 ## Documentation
 
 - [Releases](./releases.md) - Groups information about all releases.
