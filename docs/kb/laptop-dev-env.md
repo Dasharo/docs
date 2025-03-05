@@ -141,6 +141,8 @@ make BOARD=your/board
     | V540TNx   | novacustom/v540tnx  |
     | V560TNx   | novacustom/v560tnx  |
 
+1. Disconnect power from the target.
+
 1. Flash the firmware to the target:
 
     ```bash
@@ -154,6 +156,8 @@ make BOARD=your/board
     ```bash
     make BOARD=your/board console_external
     ```
+
+1. Connect power to the target.
 
 1. Power on the target and observe the console for logs.
 
