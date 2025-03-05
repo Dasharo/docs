@@ -18,19 +18,24 @@ open-source debugging tools and software also developed by System76.
 This section outlines the parts and software needed to perform external flashing
 of the Embedded Controller.
 
-+------------+----------------------------+----------------------------+
-|    Size    |       14 inch models       |       16 inch models       |
-+============+============================+============================+
-| Programmer | Arduino Mega 2560          | Arduino Mega 2560          |
-+------------+----------------------------+----------------------------+
-| Cables     | **FFC 0.5mm pitch 24 pin** | **FFC 1.0mm pitch 24 pin** |
-|            |                            |                            |
-|            | USB-A to USB-B             | USB-A to USB-B             |
-|            |                            |                            |
-|            | USB-C to USB-C             | USB-C to USB-C             |
-+------------+----------------------------+----------------------------+
-| Software   | ecflash                    | ecflash                    |
-+------------+----------------------------+----------------------------+
+<!-- markdownlint-disable MD013 -->
+<!-- Need to have full-size grid table for the renderer to pick it up -->
++------------+-----------------------------------------+---------------------------------------+
+|    Size    |             14 inch models              |         15 and 16 inch models         |
++============+=========================================+=======================================+
+| Programmer | Arduino Mega 2560                       | Arduino Mega 2560                     |
++------------+-----------------------------------------+---------------------------------------+
+| Adapter    | 2x12 pin 2.54mm to 24 pin **0.5mm** FFC | 2x12 pin 2.54mm to 24 pin **1mm** FFC |
++------------+-----------------------------------------+---------------------------------------+
+| Cables     | **FFC 0.5mm pitch 24 pin**              | **FFC 1.0mm pitch 24 pin**            |
+|            |                                         |                                       |
+|            | USB-A to USB-B                          | USB-A to USB-B                        |
+|            |                                         |                                       |
+|            | USB-C to USB-C                          | USB-C to USB-C                        |
++------------+-----------------------------------------+---------------------------------------+
+| Software   | ecflash                                 | ecflash                               |
++------------+-----------------------------------------+---------------------------------------+
+<!-- markdownlint-enable MD013 -->
 
 #### Preparation
 
