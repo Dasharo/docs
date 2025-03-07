@@ -14,6 +14,75 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=270990532).
 
+## v1.2.1 - 2025-03-07
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP2420/v1.2.1-results.csv).
+
+### Added
+
+- [Power State after AC loss feature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+- [Configurable CPU throttling temperature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
+- [Human-readable certificate names in UEFI Secure Boot menu](https://github.com/Dasharo/dasharo-issues/issues/645)
+
+### Changed
+
+- Updated coreboot base to 24.02. Please refer to SBOM section for details
+- Updated UEFI payload base to edk2-stable202402. Please refer to SBOM section
+  for details
+- Updated microcode blob. Please refer to SBOM section for details
+- Updated FSP blob. Please refer to SBOM section for details
+- [Removed UEFI Shell](https://github.com/Dasharo/dasharo-issues/issues/1218)
+- Removed the autoboot timeout in the iPXE menu
+- ME PCI device hidden to match the behavior of other Protectli devices with
+  ME disabled
+- Updated UEFI Secure Boot DBX to 2025-02-24
+- [Simplified setup password policy](https://github.com/Dasharo/dasharo-issues/issues/646)
+
+### Known issues
+
+- [Certain PCIe WiFi cards may cause AER error](https://github.com/Dasharo/dasharo-issues/issues/1214)
+
+### Binaries
+
+[protectli_vp2420_v1.2.1.rom][protectli_vp2420_v1.2.1.rom_file]{.md-button}
+[sha256][protectli_vp2420_v1.2.1.rom_hash]{.md-button}
+[sha256.sig][protectli_vp2420_v1.2.1.rom_sig]{.md-button}
+
+[protectli_vp2420_v1.2.1_dev_signed.rom][protectli_vp2420_v1.2.1_dev_signed.rom_file]{.md-button}
+[sha256][protectli_vp2420_v1.2.1_dev_signed.rom_hash]{.md-button}
+[sha256.sig][protectli_vp2420_v1.2.1_dev_signed.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/refs/heads/master/customer-keys/protectli/release-keys/dasharo-release-1.2.x-for-protectli-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 24.02 revision 832c6333](https://github.com/Dasharo/coreboot/tree/832c6333)
+    + [License](https://github.com/Dasharo/coreboot/blob/832c6333/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202402 revision 8d06fe48](https://github.com/Dasharo/edk2/tree/8d06fe48)
+    + [License](https://github.com/Dasharo/edk2/blob/8d06fe48/License.txt)
+- [Dasharo iPXE fork based on 2024.05 revision 63ed3e35](https://github.com/Dasharo/ipxe/tree/63ed3e35)
+    + [License](https://github.com/Dasharo/ipxe/blob/63ed3e35/COPYING.GPLv2)
+- [vboot based on 3d37d2aafe revision 3d37d2aa](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/LICENSE)
+- [Intel Management Engine version v15.40.32.2910](https://github.com/Dasharo/dasharo-blobs/blob/5e9a8713/protectli/vault_ehl/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/5e9a8713/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/5e9a8713/protectli/vault_ehl/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/5e9a8713/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version Elkhart Lake IPU2024.2](https://github.com/intel/FSP/tree/3819544e/ElkhartLakeFspBinPkg/)
+    + [License](https://github.com/intel/FSP/blob/3819544e/FSP_License.pdf)
+- [Intel microcode version EHL B1 0x1a 05/04/2024](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250211/intel-ucode/06-96-01)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250211/license)
+
+[protectli_vp2420_v1.2.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.2.1/protectli_vp2420_v1.2.1.rom
+[protectli_vp2420_v1.2.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.2.1/protectli_vp2420_v1.2.1.rom.sha256
+[protectli_vp2420_v1.2.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.2.1/protectli_vp2420_v1.2.1.rom.sha256.sig
+[protectli_vp2420_v1.2.1_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.2.1/protectli_vp2420_v1.2.1_dev_signed.rom
+[protectli_vp2420_v1.2.1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.2.1/protectli_vp2420_v1.2.1_dev_signed.rom.sha256
+[protectli_vp2420_v1.2.1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.2.1/protectli_vp2420_v1.2.1_dev_signed.rom.sha256.sig
+
 ## v1.2.0 - 2024-05-16
 
 ### Added
