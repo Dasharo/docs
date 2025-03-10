@@ -175,6 +175,12 @@ Flow chart for the two settings mentioned above:
 
 ![](../images/menus/pwr_fail_opt.png){ class="center" }
 
+- `CPU Throttling Temperature Offset` - The temperature offset from TjMax
+  (maximum CPU temperature) above which the CPU will start throttling itself.
+  Also known the TCC offset. The current absolute throttling threshold
+  temperature is displayed in `Current CPU Throttling Threshold Temperature`
+  checkbox.
+
 ## PCI/PCIe Configuration
 
 The submenu contains options related to the PCI and PCI Express devices and
