@@ -26,14 +26,16 @@ coreboot port on the NovaCustom NS51/NS70 laptops.
 
 ![](../../images/novacustom_ns_ports_left_view.png)
 
-| No.  | Description                                      |
-|------|--------------------------------------------------|
-| 1.   | DC-In Jack                                       |
-| 2.   | HDMI-Out Port                                    |
-| 3.   | USB 3.2 Gen 2 Type-A Port                        |
-| 4.   | USB 3.2 Gen 2 Type-C Port                        |
-| 5.   | Thunderbolt 4 Port with Power Delivery (DC-IN)   |
-| 6.   | Speaker                                          |
+| No. |                     Description                     |
+| --- | --------------------------------------------------- |
+| 1.  | DC-In Jack                                          |
+| 2.  | HDMI-Out Port                                       |
+| 3.  | USB 3.2 Gen 2 Type-A Port                           |
+| 4.  | USB 3.2 Gen 2 Type-A Port with [Always On USB][aou] |
+| 5.  | Thunderbolt 4 Port with Power Delivery (DC-IN)      |
+| 6.  | Speaker                                             |
+
+[aou]: ../../dasharo-menu-docs/dasharo-system-features.md#power-management-options
 
 The graphics used are from pages 17-18 of the
 [official service manual](https://novacustom.stackstorage.com/s/s2zVcQyd004hRQJ/en_US?dir=%2FNS51%2FService%20Manual&node-id=233996)
