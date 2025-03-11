@@ -12,8 +12,8 @@ coreboot port on the Protectli VP2420 firewall.
 | **CPU**                | Intel(R) Celeron(R) J6412 @ 2.00GHz                      |
 | **RAM**                | KINGSTON KVR29S21S6/8                                    |
 | **Flash memory**       | Macronix MX25U6435E/F                                    |
-| **SSD**                | 1. goodram SSDPR-CX400-256                               |
-|                        | 2. goodram SSDPR-CL100-240-g2                            |
+| **SSD**                | 1. Goodram SSDPR-CX400-256                               |
+|                        | 2. Goodram SSDPR-CL100-240-g2                            |
 | **MMC drive**          | SAMSUNG 8GTF4R (on-board)                                |
 | **USB pendrives**      | 1. SanDisk USB 3.2Gen1 16 GB                             |
 |                        | 2. SanDisk USB 3.2Gen1 32 GB                             |
