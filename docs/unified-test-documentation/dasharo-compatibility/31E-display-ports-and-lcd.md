@@ -95,7 +95,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
     internal LCD.
 
-## DSP002.001 External HDMI display in OS (Ubuntu)
+## DSP002.201 External HDMI display in OS (Ubuntu)
 
 **Test description**
 
@@ -125,7 +125,7 @@ This test aims to verify initialization of the external HDMI display in the OS.
 1. The image should be displayed on the external HDMI display in `Mirror` and
     `Join Displays` modes.
 
-## DSP002.002 External HDMI display in OS (Windows)
+## DSP002.301 External HDMI display in OS (Windows)
 
 **Test description**
 

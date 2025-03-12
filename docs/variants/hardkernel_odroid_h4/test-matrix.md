@@ -19,7 +19,7 @@ Hardkernel devices.
 | 7.  | [UEFI Shell][USH]                     | USH           | All                                  |
 | 8.  | [NVMe support][NVM]                   | NVM           | NVM001.001, NVM001.002               |
 | 9.  | [Network boot][PXE]                   | PXE           | All                                  |
-| 10. | [Display ports][DSP]                  | DSP           | DSP002.001, DSP003.001               |
+| 10. | [Display ports][DSP]                  | DSP           | DSP002.201, DSP003.001               |
 | 11. | [Audio subsystem][AUD]                | AUD           | AUD007.001, AUD008.001               |
 | 12. | [Sleep mode][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001, SUSP005.001|
 | 13. | [SMBIOS verification][DMI]            | DMI           | All                                  |
