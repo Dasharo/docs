@@ -601,8 +601,7 @@ connecting the external display using the HDMI cable.
 
 **Expected result**
 
-The connected display should appear in the `Output devices` and `Input devices`
-section.
+The connected display should appear in the `Output devices` section.
 
 ## AUD008.001 HDMI audio playback (Ubuntu)
 
