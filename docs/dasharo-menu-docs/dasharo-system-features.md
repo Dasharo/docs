@@ -187,8 +187,9 @@ Flow chart for the two settings mentioned above:
     + `Always On` - The USB ports will remain powered even while the device is
       turned off. This may cause a reduction in standby battery life in battery
       powered devices. Availability of ports that are powered in this mode
-      depends on your specific device, check your mainboard's Hardware
-      Configuration Matrix on docs.dasharo.com for a detailed specification.
+      depends on your specific device, for a detailed specification, check your
+      mainboard's Hardware Configuration Matrix in the appropriate model
+      documentation in the [Supported Hardware section](../variants/overview.md).
 
 ## PCI/PCIe Configuration
 
