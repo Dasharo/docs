@@ -14,7 +14,7 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=270990532).
 
-## v1.2.1 - 2025-03-07
+## v1.2.1 - 2025-03-12
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP2420/v1.2.1-results.csv).
@@ -42,6 +42,7 @@ Test results for this release can be found
 ### Known issues
 
 - [Certain PCIe WiFi cards may cause AER error](https://github.com/Dasharo/dasharo-issues/issues/1214)
+- [STB002.001 encounters unlisted error](https://github.com/Dasharo/dasharo-issues/issues/1013)
 
 ### Binaries
 
