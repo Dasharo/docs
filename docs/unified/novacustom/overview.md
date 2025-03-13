@@ -125,6 +125,18 @@ Select your Dasharo firmware flavor:
         `coreboot + UEFI` instead.
 
     ## Models
+    === "V54 Series"
+        __NovaCustom V54 serues__ are 14 inch laptops based on 14th Generation
+        Intel Core Ultra processors (Meteor Lake):
+
+        ![](../../images/v560tu-front.png){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [V56 Series](https://configurelaptop.eu/v56-series/)
+
+        </div>
+
 
     === "V56 Series"
         __NovaCustom V56 serues__ are 16 inch laptops based on 14th Generation
@@ -169,6 +181,8 @@ Select your Dasharo firmware flavor:
 
     - V56 Series
         * [V560TU](../../variants/novacustom_v560tu/releases_heads.md) (1)
+    - V54 Series
+        * [V540TU](../../variants/novacustom_v540tu/releases_heads.md)
     - [NV4x 12th Gen](../../variants/novacustom_nv4x_adl/releases_heads.md)
 
     </div>

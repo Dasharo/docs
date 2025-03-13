@@ -308,6 +308,11 @@
             git checkout novacustom_v56x_mtl_v0.9.0
             ```
 
+        === "V560TU 14th Gen"
+            ```bash
+            git checkout novacustom_v56x_mtl_v0.9.0
+            ```
+
         === "NV4x 12th Gen"
             ```bash
             git checkout novacustom_nv4x_adl_v0.9.0
@@ -322,6 +327,14 @@
 
             This will produce a Dasharo binary placed in
             `build/x86/novacustom-v560tu/dasharo-novacustom-v560tu-*.rom`.
+
+        === "V540TU 14th Gen"
+            ```bash
+            /docker_repro.sh make BOARD=novacustom-v540tu
+            ```
+
+            This will produce a Dasharo binary placed in
+            `build/x86/novacustom-v540tu/dasharo-novacustom-v540tu-*.rom`.
 
         === "NV4x 12th Gen"
             ```bash
