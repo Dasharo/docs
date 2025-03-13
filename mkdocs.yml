@@ -237,6 +237,7 @@ nav:
           - 'V54 14th Gen':
               - 'V540TU':
                   - 'Releases': variants/novacustom_v540tu/releases.md
+                  - 'Heads releases': variants/novacustom_v540tu/releases_heads.md
                   - 'Hardware Configuration Matrix': variants/novacustom_v540tu/hardware-matrix.md
                   - 'Test matrix': variants/novacustom_v540tu/test-matrix.md
                   - 'Openness score': variants/novacustom_v540tu/openness-score.md
