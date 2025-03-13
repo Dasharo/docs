@@ -89,7 +89,7 @@ flash, the platform will be fully operational - but due to lack of EC firmware,
 the fans will always spin at full speed, which can be a nuisance.
 
 However, if you have build the firmware with TXT support, without patching the
-.rom with proprietary blobs the platform will simply refuse to boot.
+.rom with proprietary ACM blobs the platform might simply refuse to boot.
 
 This brings us to patching the binary. This guide covers the process of
 obtaining 3 firmware blobs necessary for a full-feature deployment on the
