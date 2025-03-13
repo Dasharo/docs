@@ -180,6 +180,16 @@ Flow chart for the two settings mentioned above:
   Also known the TCC offset. The current absolute throttling threshold
   temperature is displayed in `Current CPU Throttling Threshold Temperature`
   checkbox.
+- `USB ports power and charging` - Controls whether power is supplied to USB
+  ports while the platform is off. The available options are:
+    + `While System Is On` - The USB ports will be powered only while the device
+      is turned on or in sleep mode.
+    + `Always On` - The USB ports will remain powered even while the device is
+      turned off. This may cause a reduction in standby battery life in battery
+      powered devices. Availability of ports that are powered in this mode
+      depends on your specific device, for a detailed specification, check your
+      mainboard's Hardware Configuration Matrix in the appropriate model
+      documentation in the [Supported Hardware section](../variants/overview.md).
 
 ## PCI/PCIe Configuration
 

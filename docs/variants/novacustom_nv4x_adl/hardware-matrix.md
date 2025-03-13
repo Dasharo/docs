@@ -11,16 +11,18 @@ coreboot port on the NovaCustom NV4X laptop.
 
 ![](../../images/novacustom_nv_ports_right_view.png)
 
-| No.  | Description                                      |
-|------|--------------------------------------------------|
-| 1.   | Speaker                                          |
-| 2.   | 2-In-1 Audio Jack (Headphone / Microphone)       |
-| 3.   | USB 3.2 Gen 2 Type-C Port                        |
-| 4.   | USB 3.2 Gen 2 Type-A Port                        |
-| 5.   | HDMI-Out Port                                    |
-| 6.   | Power Button                                     |
-| 7.   | DC-In Jack                                       |
-| 8.   | Led Indicator                                    |
+| No. |                     Description                     |
+| --- | --------------------------------------------------- |
+| 1.  | Speaker                                             |
+| 2.  | 2-In-1 Audio Jack (Headphone / Microphone)          |
+| 3.  | USB 3.2 Gen 2 Type-C Port                           |
+| 4.  | USB 3.2 Gen 2 Type-A Port with [Always On USB][aou] |
+| 5.  | HDMI-Out Port                                       |
+| 6.  | Power Button                                        |
+| 7.  | DC-In Jack                                          |
+| 8.  | Led Indicator                                       |
+
+[aou]: ../../dasharo-menu-docs/dasharo-system-features.md#power-management-options
 
 ### Left side view
 

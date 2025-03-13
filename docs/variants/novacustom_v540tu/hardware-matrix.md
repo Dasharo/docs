@@ -34,13 +34,15 @@ coreboot port on the NovaCustom V540TU laptop.
 
 ![](../../images/novacustom_v540tu_ports_right_view.png)
 
-| No.  | Description                                                  |
-|------|--------------------------------------------------------------|
-| 1.   | Speaker                                                      |
-| 2.   | USB 3.2 Gen 2 Port with Power Delivery DC-In (Type C)        |
-| 3.   | Thunderbolt™ 4 Combo Port with Power Delivery DC-In (Type C) |
-| 4.   | USB 3.2 Gen 2 Port (Type A) with AC/DC Powered Function      |
-| 5.   | DC-In Jack                                                   |
+| No. |                            Description                             |
+| --- | ------------------------------------------------------------------ |
+| 1.  | Speaker                                                            |
+| 2.  | USB 3.2 Gen 2 Port (Type C) with PD DC-in and [Always On USB][aou] |
+| 3.  | Thunderbolt™ 4 (Type C) with PD DC-in and [Always On USB][aou]     |
+| 4.  | USB 3.2 Gen 2 Port (Type A) with [Always On USB][aou]              |
+| 5.  | DC-In Jack                                                         |
+
+[aou]: ../../dasharo-menu-docs/dasharo-system-features.md#power-management-options
 
 The graphics used are from pages 43-47 of the official end user manual for the
 V546TU platforms.

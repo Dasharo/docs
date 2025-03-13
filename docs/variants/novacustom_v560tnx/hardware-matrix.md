@@ -42,13 +42,15 @@ coreboot port on the NovaCustom V560TNx laptop.
 
 ![](../../images/novacustom_v560tnx_right_view.png)
 
-| No.  | Description                                                  |
-|------|--------------------------------------------------------------|
-| 1.   | Speaker                                                      |
-| 2.   | Display Port 1.4 over USB 3.2 Gen 2 Type-C Port              |
-| 3.   | Thunderbolt  4 Combo Port with Power Delivery DC-In          |
-| 4.   | Powered USB 3.2 Gen 2 Type-A Port                            |
-| 5.   | DC-In Jack                                                   |
+| No. |                                Description                                 |
+| --- | -------------------------------------------------------------------------- |
+| 1.  | Speaker                                                                    |
+| 2.  | USB 3.2 Gen 2 Port (Type C) with DP 1.4, PD DC-in and [Always On USB][aou] |
+| 3.  | Thunderbolt™ 4 (Type C) with PD DC-in and [Always On USB][aou]             |
+| 4.  | USB 3.2 Gen 2 Port (Type A) with [Always On USB][aou]                      |
+| 5.  | DC-In Jack                                                                 |
+
+[aou]: ../../dasharo-menu-docs/dasharo-system-features.md#power-management-options
 
 The graphics used are from pages 16-19 of the official end user manual for the
 V540TNx platforms.
