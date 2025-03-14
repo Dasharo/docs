@@ -126,14 +126,14 @@ Select your Dasharo firmware flavor:
 
     ## Models
     === "V54 Series"
-        __NovaCustom V54 serues__ are 14 inch laptops based on 14th Generation
+        __NovaCustom V54 series__ are 14 inch laptops based on 14th Generation
         Intel Core Ultra processors (Meteor Lake):
 
         ![](../../images/v560tu-front.png){ align=right width=50% }
 
         <div class="grid cards" markdown>
 
-        - [V56 Series](https://configurelaptop.eu/v56-series/)
+        - [V54 Series](https://configurelaptop.eu/v54-series/)
 
         </div>
 

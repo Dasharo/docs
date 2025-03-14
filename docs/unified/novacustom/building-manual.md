@@ -303,9 +303,9 @@
 
     1. Checkout to the desired revision:
 
-        === "V560TU 14th Gen"
+        === "V540TU 14th Gen"
             ```bash
-            git checkout novacustom_v56x_mtl_v0.9.0
+            git checkout novacustom_v54x_mtl_v0.9.0
             ```
 
         === "V560TU 14th Gen"
