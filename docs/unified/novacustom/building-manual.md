@@ -320,14 +320,6 @@
 
     1. Start the build inside the docker container:
 
-        === "V560TU 14th Gen"
-            ```bash
-            ./docker_repro.sh make BOARD=novacustom-v560tu
-            ```
-
-            This will produce a Dasharo binary placed in
-            `build/x86/novacustom-v560tu/dasharo-novacustom-v560tu-*.rom`.
-
         === "V540TU 14th Gen"
             ```bash
             /docker_repro.sh make BOARD=novacustom-v540tu
@@ -335,6 +327,14 @@
 
             This will produce a Dasharo binary placed in
             `build/x86/novacustom-v540tu/dasharo-novacustom-v540tu-*.rom`.
+
+        === "V560TU 14th Gen"
+            ```bash
+            ./docker_repro.sh make BOARD=novacustom-v560tu
+            ```
+
+            This will produce a Dasharo binary placed in
+            `build/x86/novacustom-v560tu/dasharo-novacustom-v560tu-*.rom`.
 
         === "NV4x 12th Gen"
             ```bash
