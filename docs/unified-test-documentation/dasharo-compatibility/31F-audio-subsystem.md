@@ -12,6 +12,7 @@
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
+1. For the audio tests you need to connect monitor with speakers via HDMI.
 
 ## AUD001.001 Audio subsystem detection (Ubuntu)
 
@@ -548,14 +549,14 @@ connecting the external display using the HDMI cable.
 1. Open a terminal window and execute the following command:
 
     ```bash
-    pactl list cards | grep "hdmi-output" | grep -v "not available
+    pactl list cards | grep "hdmi-output" | grep -v "not available"
     ```
 
 1. Disconnect the headset from the laptop.
 1. Execute the following command again:
 
     ```bash
-    pactl list cards | grep "hdmi-output" | grep -v "not available
+    pactl list cards | grep "hdmi-output" | grep -v "not available"
     ```
 
 **Expected result**
@@ -600,8 +601,7 @@ connecting the external display using the HDMI cable.
 
 **Expected result**
 
-The connected display should appear in the `Output devices` and `Input devices`
-section.
+The connected display should appear in the `Output devices` section.
 
 ## AUD008.001 HDMI audio playback (Ubuntu)
 

@@ -12,7 +12,7 @@ subjected from before the release of the new binary.
     | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
     |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
     | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
-    | 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.001, DSP002.003               |
+    | 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.201, DSP002.003               |
     | 3.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
     | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
     | 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
@@ -52,7 +52,7 @@ subjected from before the release of the new binary.
     | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
     |:----:|:--------------------------------------|:-------------:|:-------------------------------------|
     | 1.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
-    | 2.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.002, DSP002.003   |
+    | 2.   | [Display ports][DSP]                  | DSP           | DSP002.201, DSP002.301, DSP002.003   |
     | 3.   | [Network boot utilities][NBT]         | NBT           | All                                  |
     | 4.   | [NVMe support][NVM]                   | NVM           | All                                  |
     | 5.   | [Custom logo][CLG]                    | CLG           | All                                  |
@@ -137,7 +137,7 @@ subjected from before the release of the new binary.
     |:----:|:--------------------------------------|:-------------:|:-------------------------------------|
     | 1.   | [Memory HCL][HCL]                     | HCL           | All                                  |
     | 2.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
-    | 3.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
+    | 3.   | [Display ports][DSP]                  | DSP           | DSP002.201, DSP002.301, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
     | 4.   | [Network boot utilities][NBT]         | NBT           | All                                  |
     | 5.   | [NVMe support][NVM]                   | NVM           | All                                  |
     | 6.   | [Custom logo][CLG]                    | CLG           | All                                  |
@@ -254,7 +254,7 @@ subjected from before the release of the new binary.
     |:----:|:--------------------------------------|:-------------:|:-------------------------------------|
     | 1.   | [Memory HCL][HCL]                     | HCL           | All                                  |
     | 2.   | [UEFI compatible interface][EFI]      | EFI           | All                                  |
-    | 3.   | [Display ports][DSP]                  | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
+    | 3.   | [Display ports][DSP]                  | DSP           | DSP002.201, DSP002.301, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
     | 4.   | [Network boot utilities][NBT]         | NBT           | All                                  |
     | 5.   | [NVMe support][NVM]                   | NVM           | All                                  |
     | 6.   | [Custom logo][CLG]                    | CLG           | All                                  |
@@ -366,7 +366,7 @@ subjected from before the release of the new binary.
     |:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
     | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
     | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
-    | 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
+    | 3.   | [Display ports][DSP]                              | DSP           | DSP002.201, DSP002.301, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
     | 4.   | [Network boot utilities][NBT]                     | NBT           | All                                  |
     | 5.   | [NVMe support][NVM]                               | NVM           | All                                  |
     | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
@@ -448,7 +448,7 @@ subjected from before the release of the new binary.
     |:----:|:--------------------------------------------------|:-------------:|:-------------------------------------|
     | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
     | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
-    | 3.   | [Display ports][DSP]                              | DSP           | DSP002.001, DSP002.002, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
+    | 3.   | [Display ports][DSP]                              | DSP           | DSP002.201, DSP002.301, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
     | 4.   | [Network boot utilities][NBT]                     | NBT           | All                                  |
     | 6.   | [Custom logo][CLG]                                | CLG           | All                                  |
     | 7.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
