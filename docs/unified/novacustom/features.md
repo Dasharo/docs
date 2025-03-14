@@ -252,4 +252,5 @@ This setup provides **the highest possible performance**, making it
 ideal for **demanding environments** such as video games and other
 graphics-intensive applications. Additionally, it offers **better
 compatibility with Linux**, as it eliminates issues related to GPU
-switching.
+switching. At the expense of the highest power consumption across all
+modes.
