@@ -183,6 +183,16 @@ more than 10 seconds.
 **Hybrid Graphics**, allowing users to optimize for performance,
 battery life, or a balance of both.
 
+### NVIDIA Optimus (iGPU & dGPU)
+
+A **hybrid mode** that dynamically switches between the iGPU and dGPU
+for **a balance of performance and efficiency**. Best for general use
+with external display support.
+- Automatic switching optimizes power and performance.
+- Full external display support.
+- Shorter battery life than iGPU Only.
+- Possible performance inconsistencies and Linux compatibility issues.
+
 ### iGPU Only
 
 Designed for **maximum battery life**, this mode uses only the
@@ -198,13 +208,3 @@ the internal display directly to the dedicated GPU, ensuring
 **consistent maximum performance**.
 - Delivers the highest performance.
 - Increased power consumption.
-
-### NVIDIA Optimus (iGPU & dGPU)
-
-A **hybrid mode** that dynamically switches between the iGPU and dGPU
-for **a balance of performance and efficiency**. Best for general use
-with external display support.
-- Automatic switching optimizes power and performance.
-- Full external display support.
-- Shorter battery life than iGPU Only.
-- Possible performance inconsistencies and Linux compatibility issues.
