@@ -171,6 +171,40 @@ Fan profiles are defined as follows:
 
 ## Power switch watchdog
 
-In the rare events where the Embedded Controller experiences a crash or gets
-stuck, the EC can be forcefully reset by simply holding the power button for
+In the rare events where the Embedded Controller experiences a crash
+or gets
+stuck, the EC can be forcefully reset by simply holding the power
+button for
 more than 10 seconds.
+
+## Graphics Card Modes
+
+**V5xxTNX** models offer multiple graphics modes, accessible via
+**Hybrid Graphics**, allowing users to optimize for performance,
+battery life, or a balance of both.
+
+### NVIDIA Optimus (iGPU & dGPU)
+
+A **hybrid mode** that dynamically switches between the iGPU and dGPU
+for **a balance of performance and efficiency**. Best for general use
+with external display support.
+- Automatic switching optimizes power and performance.
+- Full external display support.
+- Shorter battery life than iGPU Only.
+- Possible performance inconsistencies and Linux compatibility issues.
+
+### iGPU Only
+
+Designed for **maximum battery life**, this mode uses only the
+integrated GPU. It significantly reduces power consumption but comes
+with limitations.
+- Maximizes battery life (up to **100%** longer than dGPU mode).
+- No access to HDMI or second USB-C DisplayPort.
+
+### dGPU Only
+
+Ideal for **gaming and high-performance tasks**, this mode connects
+the internal display directly to the dedicated GPU, ensuring
+**consistent maximum performance**.
+- Delivers the highest performance.
+- Increased power consumption.
