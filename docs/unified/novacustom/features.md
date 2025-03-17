@@ -171,86 +171,40 @@ Fan profiles are defined as follows:
 
 ## Power switch watchdog
 
-In the rare events where the Embedded Controller experiences a crash or gets
-stuck, the EC can be forcefully reset by simply holding the power button for
+In the rare events where the Embedded Controller experiences a crash
+or gets
+stuck, the EC can be forcefully reset by simply holding the power
+button for
 more than 10 seconds.
 
 ## Graphics Card Modes
 
-The **V5xxTNX** models come equipped with multiple graphics modes,
-allowing for specialized configurations tailored to different use
-cases. These modes can be accessed through the `Hybrid Graphics`
-setting, enabling users to optimize their system for either maximum
-battery life, peak performance, or a balance between the two.
-
-### NVIDIA Optimus (iGPU & dGPU Enabled)
-
-**NVIDIA Optimus** is a hybrid mode that dynamically switches between
-the integrated GPU (**iGPU**) and the dedicated GPU (**dGPU**)
-depending on workload requirements. This allows the system to balance
-**performance and power efficiency** by using the iGPU for less
-demanding tasks and activating the dGPU when higher graphics
-performance is needed.
-
-#### **Benefits**
-
-- **Convenience** – automatic switching between GPUs provides a
-seamless experience without manual intervention.
-- **Better battery life than dGPU Only mode** – the system primarily
-relies on the iGPU for everyday tasks, reducing power consumption.
-- **Full access to external ports** – unlike iGPU Only mode, HDMI and
-the second USB-C DisplayPort remain functional.
-
-#### **Limitations**
-
-- **Increased power consumption compared to iGPU Only** – as the dGPU
-still activates when needed, battery life is shorter than in iGPU Only
-mode.
-- **Potential performance inconsistencies** – automatic GPU switching
-may introduce occasional stutters or latency in certain applications.
-- **Linux compatibility issues** – Optimus can cause problems in Linux
-due to driver and GPU switching limitations.
-
-This mode is best suited for users who need **a balance between
-battery life and performance** while maintaining full external display
-functionality.
+**V5xxTNX** models offer multiple graphics modes, accessible via
+**Hybrid Graphics**, allowing users to optimize for performance,
+battery life, or a balance of both.
 
 ### iGPU Only
 
-This mode is primarily designed to maximize battery life by utilizing
-only the integrated GPU (iGPU), significantly reducing power
-consumption.
-
-While **NVIDIA Optimus** provides an all-in-one solution, it has
-certain drawbacks, particularly affecting laptop performance when
-running on battery.
-
-When using **iGPU Only** mode, be aware of both its benefits and
-limitations:
-
-#### **Benefits**
-
-- Extends battery life by up to **100%** compared to dGPU mode.
-
-#### **Limitations**
-
-- **No access to the HDMI port** – connecting an external display via
-HDMI will not be possible.
-- **Limited functionality of the second USB-C DisplayPort** – this
-port will also be unavailable in this mode.
-
-Choosing this mode requires balancing between extended battery life
-and the full functionality of external ports.
+Designed for **maximum battery life**, this mode uses only the
+integrated GPU. It significantly reduces power consumption but comes
+with limitations.
+- Maximizes battery life (up to **100%** longer than dGPU mode).
+- No access to HDMI or second USB-C DisplayPort.
 
 ### dGPU Only
 
-In **dGPU Only** mode, the internal LCD screen is directly connected
-to the dedicated GPU (dGPU), ensuring that it never switches back to
-the integrated GPU (iGPU).
+Ideal for **gaming and high-performance tasks**, this mode connects
+the internal display directly to the dedicated GPU, ensuring
+**consistent maximum performance**.
+- Delivers the highest performance.
+- Increased power consumption.
 
-This setup provides **the highest possible performance**, making it
-ideal for **demanding environments** such as video games and other
-graphics-intensive applications. Additionally, it offers **better
-compatibility with Linux**, as it eliminates issues related to GPU
-switching. At the expense of the highest power consumption across all
-modes.
+### NVIDIA Optimus (iGPU & dGPU)
+
+A **hybrid mode** that dynamically switches between the iGPU and dGPU
+for **a balance of performance and efficiency**. Best for general use
+with external display support.
+- Automatic switching optimizes power and performance.
+- Full external display support.
+- Shorter battery life than iGPU Only.
+- Possible performance inconsistencies and Linux compatibility issues.
