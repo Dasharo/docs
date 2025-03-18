@@ -12,7 +12,7 @@ Feel free to refer to above sources or [contact
 community](https://docs.dasharo.com/#community), if you can't find your
 hardware.
 
-=== "CPU HCL (16 Dec 2024)"
+=== "CPU HCL (18 Mar 2025)"
 
     CPU Hardware Compatibility List presents the CPUs tested and verified
     to work with Dasharo by community. The following list does not include CPU
@@ -77,13 +77,16 @@ hardware.
         | 12th Gen Intel(R) Core(TM) i5-12500 | v0.9.1 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i5-12600K | v0.9.0 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i5-12600K | v0.9.1 | Dasharo HCL Report |
+        | 12th Gen Intel(R) Core(TM) i5-12600K | v0.9.2 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i7-12700K | v0.9.0 | Dasharo HCL Report |
         | 12th Gen Intel(R) Core(TM) i7-12700K | v0.9.1 | Dasharo HCL Report |
         | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.0 | Dasharo HCL Report |
         | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.1 | Dasharo HCL Report |
+        | 13th Gen Intel(R) Core(TM) i5-13700K | v0.9.1 | Dasharo HCL Report |
         | 13th Gen Intel(R) Core(TM) i9-13900K | v0.9.0 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i9-14900K | v0.9.0 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i9-14900K | v0.9.1 | Dasharo HCL Report |
+        | 14th Gen Intel(R) Core(TM) i9-14900K | v0.9.2 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i9-14900KF | v0.9.0 | Dasharo HCL Report |
         | 14th Gen Intel(R) Core(TM) i9-14900KS | v0.9.1 | Dasharo HCL Report |
 
