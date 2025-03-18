@@ -257,8 +257,6 @@ and Dasharo open-source firmware.
         flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L12835F/MX25L12845E/MX25L12865E" -w [path_to_binary]
         ```
 
-<!--- Coming soon...
-
 === "VP2430"
 
     ## Prerequisites
@@ -330,5 +328,3 @@ and Dasharo open-source firmware.
 
     The first boot of the platform after proceeding with the above procedure can
     take much longer than standard.
-
--->
