@@ -121,8 +121,6 @@ flashrom -p internal -r dump.rom
 
     This command also preserves Dasharo UEFI settings and the boot order.
 
-<!--- Coming soon...
-
 === "VP2430"
 
     To flash Dasharo on the platform, execute the following command - replace
@@ -143,5 +141,3 @@ flashrom -p internal -r dump.rom
     ```
 
     This command also preserves Dasharo UEFI settings and the boot order.
-
--->
