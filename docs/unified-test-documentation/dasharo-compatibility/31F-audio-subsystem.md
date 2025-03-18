@@ -233,7 +233,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button then using the left mouse button
     click `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Select the `Microphone` position in the `Input devices` section.
 1. Click on the `Start Test` bar in the `Input settings` section.
 1. Create some noise for the DUT to capture and note the result.
@@ -503,7 +503,7 @@ an external headset.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button then using the left mouse button click
     `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Select the `Microphone` position in the `Input devices` section.
 1. Click on the `Start Test` bar in the `Input settings` section.
 1. Create some noise for the headset to capture and note the result.
@@ -595,7 +595,7 @@ connecting the external display using the HDMI cable.
 1. Find the `Speakers` icon in the bottom right part of the screen and click it
     using the right mouse button then using the left mouse button click
     `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Locate the `Output devices` and `Input devices` section.
 1. Connect the external display to the HDMI slot.
 
@@ -668,7 +668,7 @@ recordings by using the external display connected to the HDMI slot.
 1. Find the `Speakers` icon in the bottom right part of the screen and click it
     using the right mouse button then using the left mouse button click
     `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Select the external display position in the `Output devices` section.
 1. Click on the `Test` bar in the `Output settings` section.
 
