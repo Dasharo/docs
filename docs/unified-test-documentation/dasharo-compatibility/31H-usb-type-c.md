@@ -2436,7 +2436,7 @@ after plugging in the 3.5 mm jack into the docking station.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button then using the left mouse button
     click `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Connect(or Disconnect) external headset to the 3.5 mm jack on the docking
     station and note the result.
 
@@ -2540,7 +2540,7 @@ Disable (HAP) or Disable (Soft).
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button then using the left mouse button
     click `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Connect(or Disconnect) external headset to the 3.5 mm jack on the docking
     station and note the result.
 
@@ -2793,7 +2793,7 @@ from external headset connected to the docking station.
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button then using the left mouse button
     click `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Select the `Microphone` position in the `Input devices` section.
 1. Click on the `Start Test` bar in the `Input settings` section.
 1. Create some noise for the DUT to capture and note the result.
@@ -2899,7 +2899,7 @@ Disable (HAP) or Disable (Soft).
 1. Find the `Speakers` icon in the bottom right part of the screen and click
     it using the right mouse button then using the left mouse button
     click `Sound Settings`.
-1. Locate the `All sound device` bar and click on it.
+1. Locate the `All sound devices` bar and click on it.
 1. Select the `Microphone` position in the `Input devices` section.
 1. Click on the `Start Test` bar in the `Input settings` section.
 1. Create some noise for the DUT to capture and note the result.
