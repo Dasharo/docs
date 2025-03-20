@@ -5,6 +5,72 @@ Score](../../glossary.md#dasharo-openness-score) for NovaCustom V540TU Dasharo
 releases. The content of the page is generated with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
+## v0.9.0 Heads
+
+Openness Score for novacustom_v54x_mtl_v0.9.0_heads.rom
+
+Open-source code percentage: **35.2%**
+Closed-source code percentage: **64.8%**
+
+* Image size: 33554432 (0x2000000)
+* Number of regions: 7
+* Number of CBFSes: 1
+* Total open-source code size: 9731311 (0x947cef)
+* Total closed-source code size: 17946033 (0x111d5b1)
+* Total data size: 118808 (0x1d018)
+* Total empty size: 5758280 (0x57dd48)
+
+![](novacustom_v54x_mtl_v0.9.0_heads.rom_openness_chart.png)
+
+![](novacustom_v54x_mtl_v0.9.0_heads.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x6000 | 0x885000 | closed-source |
+| SI_DESC | 0x0 | 0x4000 | data |
+| RW_MRC_CACHE | 0x1000000 | 0x10000 | data |
+| FMAP | 0x1010000 | 0x200 | data |
+
+### CBFS COREBOOT
+
+* CBFS size: 16711168
+* Number of files: 19
+* Open-source files size: 9731311 (0x947cef)
+* Closed-source files size: 1185201 (0x1215b1)
+* Data size: 36376 (0x8e18)
+* Empty size: 5758280 (0x57dd48)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 9387706 | none | open-source |
+| fallback/romstage | stage | 90376 | none | open-source |
+| fallback/ramstage | stage | 165976 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 21829 | none | open-source |
+| fallback/postcar | stage | 34384 | none | open-source |
+| bootblock | bootblock | 31040 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 136192 | none | closed-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 262577 | LZ4 | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| intel_fit | intel_fit | 80 | none | data |
+| config | raw | 4883 | LZMA | data |
+| revision | raw | 867 | none | data |
+| build_info | raw | 97 | none | data |
+| bootsplash.jpg | bootsplash | 26784 | none | data |
+| vbt.bin | raw | 1269 | LZMA | data |
+| cmos_layout.bin | cmos_layout | 800 | none | data |
+| (empty) | null | 804 | none | empty |
+| (empty) | null | 5757476 | none | empty |
+
 ## v0.9.0
 
 Openness Score for novacustom_v54x_mtl_v0.9.0.rom

@@ -114,4 +114,4 @@ Official documentation can be found
 ### Installation images
 
 Guide on how to download the installer image can be found on Brodacom's
-[website](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/download-the-esxi-installer.html).
+[website](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/esxi-installation-and-setup-6-7/installing-and-setting-up-esxi-install/before-you-install-esxi-install/download-the-esxi-installer-install.html).
