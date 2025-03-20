@@ -20,15 +20,33 @@ For details about our release process please read
 
 </center>
 
-## v0.9.0 - 2025-03-17
+## v0.9.0 - 2025-03-20
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCustom/MTL_14th_Gen/V540TU/Heads/v0.9.0-results.csv).
 
-### Changed
+### Added
 
-- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
-- Heads Linux is used as a payload
+- [Introduced Quiet Mode for reduced technical output in logs](https://github.com/linuxboot/heads/pull/1875)
+- [Added TPM extend operations logging while maintaining quiet mode](https://github.com/linuxboot/heads/pull/1875)
+- [Added support for GPG Admin/User PIN output grabbing for Nitrokey HOTP verification](https://github.com/Nitrokey/nitrokey-hotp-verification/issues/38)
+- [Integrated EFF Diceware short wordlist v2 for easier passphrase generation](https://www.eff.org/dice)
+- [Introduced automatic Secrets App reset logic for Nitrokey 3](https://github.com/Nitrokey/nitrokey-hotp-verification/pull/43)
+- [Unified and enhanced passphrase generation logic in recovery shell](https://github.com/linuxboot/heads/pull/1875)
+- Support for Novacustom V54 (v540tu)
+- Quiet Mode now logs all technical details to /tmp/debug.log instead of
+  showing them in the console
+- Improved TPM2 primary handle debugging and error handling
+- Refactored the OEM Factory Reset process to clarify mode-based security implications
+- Improved kexec boot configuration handling with enhanced security warnings
+- [Transitioned from `ash` shell to `bash` for improved scripting consistency](https://github.com/linuxboot/heads/pull/1875)
+- Suppressed unnecessary grep errors for missing `/etc/config.user`
+- Resolved logging inconsistencies when performing TPM resets
+- [Fixed Secure App PIN handling during Nitrokey 3
+re-ownership](https://github.com/Nitrokey/nitrokey-hotp-verification/pull/43)
+- Corrected Diceware dictionary parsing and selection method for unbiased
+passphrase generation
+- Eliminated redundant USB Security dongle detection messages
 
 ### Known issues
 
@@ -42,11 +60,11 @@ Test results for this release can be found
 [sha256][novacustom_v54x_mtl_v0.9.0_heads.rom_hash]{.md-button}
 [sha256.sig][novacustom_v54x_mtl_v0.9.0_heads.rom_sig]{.md-button}
 
-This is a Dasharo Entry Subscription Release. To obtain access to the pre-built
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
-[become the Dasharo Entry Subscription subscriber](../../ways-you-can-help-us.md#become-a-dasharo-entry-subscription-subscriber).
+[become a Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Entry Subscription newsletter.
+subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
