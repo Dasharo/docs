@@ -39,6 +39,16 @@ Test results for this release can be found
 
 ### Added
 
+- [Configured correct clock for GbE on Clevo/MTL-H](https://github.com/Dasharo/coreboot/commit/8554fcaac3e1b9790298ef658ec8ba03c5f9b497)
+- [Fixed touchpad IRQ pin assignment on Clevo/MTL-H](https://github.com/Dasharo/coreboot/commit/5a28a0b82c13e41e147d082ab47ce287fa11ffda)
+- [Adjusted ACPI configuration to fix missing CNVi pinmux](https://github.com/Dasharo/coreboot/commit/41de74e14e802aec65ea4e8538577a27b4269882)
+- [Meteor Lake graphics operations integrated into SoC](https://github.com/Dasharo/coreboot/commit/ea0d2ab2daea6f17506c3da87aae4783db7df53d)
+- [Clevo/MTL-H PCIe root port flags added](https://github.com/Dasharo/coreboot/commit/6757a4679e2d4a1ebffbcf8d404fb85b5cf2154d)
+- [Windows BSOD caused by missing ACPI device names](https://github.com/Dasharo/coreboot/commit/160fa32c8493e88f67e5167abdc08b2870d366f2)
+- [RTC failure workaround for MRC fastboot](https://github.com/Dasharo/coreboot/commit/d7eb079076fc5213d525468425e4def12bf6c204)
+- [SPD size correctly set for Clevo/MTL-H](https://github.com/Dasharo/coreboot/commit/041ef28b686417204cd3850731ea4a9ab1c8a7a7)
+- [Corrected temperature control offsets in Meteor Lake](https://github.com/Dasharo/coreboot/commit/c835072d2fa67be113631efb53ad85a68c24889d)
+- [Fixed duplicate temperature symbol in Kconfig](https://github.com/Dasharo/coreboot/commit/c835072d2fa67be113631efb53ad85a68c24889d)
 - [Introduced Quiet Mode for reduced technical output in logs](https://github.com/linuxboot/heads/pull/1875)
 - [Added TPM extend operations logging while maintaining quiet mode](https://github.com/linuxboot/heads/pull/1875)
 - [Added support for GPG Admin/User PIN output grabbing for Nitrokey HOTP verification](https://github.com/Nitrokey/nitrokey-hotp-verification/issues/38)
