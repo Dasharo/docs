@@ -10,6 +10,15 @@ Tests were conducted only on the
 Test matrix and results will be published
 [here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCustom/MTL_14th_Gen/V540TU).
 
+This is a Dasharo Pro Package Release. To access the pre-built binaries, you
+need to subscribe to the Dasharo Pro Package subscriber. You can do this by
+purchasing a Dasharo Pro Package product from our shop. As a subscriber, you
+will receive access to all firmware updates for the duration of your
+subscription via the Dasharo Pro Package newsletter, and gain entry to the
+Dasharo Premier Support invite-only live chat on the Matrix network, enabling
+direct engagement with the Dasharo Team and fellow subscribers for personalized
+, priority assistance.
+
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
