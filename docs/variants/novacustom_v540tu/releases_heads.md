@@ -27,7 +27,7 @@ Test results for this release can be found
 
 ### Changed
 
-- [This is a Dasharo Entry Subscription release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
+- [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-entry-subscription-releases)
 - Heads Linux is used as a payload
 
 ### Known issues
