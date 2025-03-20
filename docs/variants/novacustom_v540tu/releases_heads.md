@@ -51,6 +51,7 @@ passphrase generation
 ### Known issues
 
 - [Some unexpected errors in dmesg](https://github.com/Dasharo/dasharo-issues/issues/1201)
+- [Lesser performance in comparison with NVIDIA variants](https://github.com/Dasharo/dasharo-issues/issues/1216)
 
 ### Binaries
 
