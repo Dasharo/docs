@@ -23,10 +23,10 @@ open-source firmware distribution.
 * Following network appliances are supported under **Dasharo Pro Package**:
 
     - [Dasharo (coreboot+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/)
-        - [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_uefi.md)
-        - [Hardkernel Odroid H4+](../variants/hardkernel_odroid_h4/overview.md)
+        + [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_uefi.md)
+        + [Hardkernel Odroid H4+](../variants/hardkernel_odroid_h4/overview.md)
     - [Dasharo (coreboot+SeaBIOS) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
-        - [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_seabios.md)
+        + [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_seabios.md)
 
 ## Laptops
 
@@ -42,9 +42,9 @@ open-source firmware distribution.
 * Following laptops are supported under **Dasharo Pro Package**:
 
     - [Dasharo (coreboot+UEFI) transition to (coreboot+Heads) for Laptops](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
-        - [NovaCustom V540TU 14th Gen](https://docs.dasharo.com/variants/novacustom_v540tu/releases_heads/)
-        - [NovaCustom V560TU 14th Gen](https://docs.dasharo.com/variants/novacustom_v560tu/releases_heads/)
-        - [NovaCustom NV4x 12th Gen](https://docs.dasharo.com/variants/novacustom_nv4x_adl/releases_heads/)
+        + [NovaCustom V540TU 14th Gen](https://docs.dasharo.com/variants/novacustom_v540tu/releases_heads/)
+        + [NovaCustom V560TU 14th Gen](https://docs.dasharo.com/variants/novacustom_v560tu/releases_heads/)
+        + [NovaCustom NV4x 12th Gen](https://docs.dasharo.com/variants/novacustom_nv4x_adl/releases_heads/)
 
 * Following laptops are supported under **Dasharo Community Support**:
 
@@ -55,9 +55,9 @@ open-source firmware distribution.
 * Following desktops are supported under **Dasharo Pro Package**:
 
     - [Dasharo (coreboot+UEFI) Pro Package for Desktop](https://shop.3mdeb.com/shop/dasharo-pro-package/1year-desktop/)
-        - [Dell OptiPlex](dell_optiplex/overview.md)
-        - [MSI PRO Z690-A](../unified/msi/overview.md)
-        - [MSI PRO Z790-P](../unified/msi/overview.md)
+        + [Dell OptiPlex](dell_optiplex/overview.md)
+        + [MSI PRO Z690-A](../unified/msi/overview.md)
+        + [MSI PRO Z790-P](../unified/msi/overview.md)
 
 * Following desktops are supported under **Dasharo Community Support**:
 
