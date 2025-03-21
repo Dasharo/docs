@@ -19,7 +19,7 @@
     Make sure that you have following packages installed:
 
     - Docker
-        + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+        + follow [Install Docker Engine for Linux](https://docs.docker.com/engine/install/)
         + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
     - Git
 
@@ -284,7 +284,7 @@
     Make sure that you have following packages installed:
 
     - Docker
-        + follow [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+        + follow [Install Docker Engine on Linux](https://docs.docker.com/engine/install/)
         + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
     - Git
 
