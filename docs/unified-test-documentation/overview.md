@@ -46,7 +46,7 @@ be distinguished:
 * Ubuntu 22.04
 * Ubuntu Server 22.04 LTS
 * Debian 11.0
-* Fedora 37
+* Fedora 41
 * FreeBSD 13.2
 * Proxmox VE 7.4
 * OPNsense 23.01
