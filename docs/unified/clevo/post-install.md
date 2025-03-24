@@ -86,6 +86,24 @@ Select your operating system to view applicable instructions:
     After executing these steps, it should be possible to enable and disable the
     touchpad using the touchpad hotkey (Fn+F1) on the keyboard when using GNOME.
 
+    ### Touchpad multi-touch support
+
+    On NS7x an additional fix is necessary to enable multi-touch on Linux. Create
+    a file `/etc/modprobe.d/blacklist-psmouse.conf` with the following contents:
+
+    ```bash
+    blacklist psmouse
+    ```
+
+    and then run the following commands:
+
+    ```bash
+    sudo depmod -a
+    sudo update-initramfs -u
+    ```
+
+    and reboot to use the new kernel.
+
     ### NVIDIA drivers
 
     If your device comes with NVIDIA graphics, proprietary NVIDIA drivers are
