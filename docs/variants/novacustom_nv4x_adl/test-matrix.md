@@ -26,7 +26,7 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All - NOTE: Needs to be carried out for both the default network card and the Atheros QCNFA222.                                  |
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
-| 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.201, FAN001.202                           |
+| 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.001                         |
 | 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001                       |
 | 20.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 21.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
@@ -37,7 +37,7 @@ subjected from before the release of the new binary.
 | 26.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
 | 27.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 | 28.  | [Fedora support][FED]                                  | FED           | All                                  |
-| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.201, SUSP001.202, SUSP001.203, SUSP002.201, SUSP002.202, SUSP002.203, SUSP003.201, SUSP003.202, SUSP003.203, SUSP005.201, SUSP005.202         |
+| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004 and SUSP006          |
 | 30.  | [Boot blocking][BBB]                                   | BBB           | All                                  |
 | 31.  | [Reset to defaults][RTD]                               | RTD           | All                                  |
 | 32.  | [Suspend mechanism switchcing (S0ix/S3)][SMS]          | SMS           | All                                  |
