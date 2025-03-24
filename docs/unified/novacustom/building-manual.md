@@ -23,9 +23,17 @@
         + follow [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/)
     - Git
 
-        ```bash
-        sudo apt -y install git
-        ```
+        === "APT package manager"
+
+            ```bash
+            sudo apt -y install git
+            ```
+
+        === "DNF package manager"
+
+            ```bash
+            sudo dnf -y install git
+            ```
 
     ## Build Dasharo EC firmware
 
