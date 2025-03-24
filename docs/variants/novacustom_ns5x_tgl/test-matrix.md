@@ -133,7 +133,7 @@ subjected before the release of the new binary.
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
 | 4.   | [NET interface detection][NET]                    | NET           | All                                  |
-| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.001, TPD004.001               |
+| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.201, TPD003.202, TPD004.201, TPD004.202 |
 
 [SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md

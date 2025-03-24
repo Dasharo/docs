@@ -27,7 +27,7 @@ subjected from before the release of the new binary.
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
 | 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.001                         |
-| 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001                       |
+| 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001.001                   |
 | 20.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 21.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
 | 22.  | [CPU status][CPU]                                      | CPU           | All                                  |
@@ -86,7 +86,7 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                 | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
-| 5.   | [ME disable/neuter support][MNE]             | MNE           | MNE001.001, MNE002.201, MNE002.202, MNE003.201, MNE003.202, MNE004.201, MNE004.202, MNE005.001, MNE005.002               |
+| 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE006.001                   |
 | 6.   | [USB stack][USS]                             | USS           | All                                  |
 | 7.   | [Network boot availability][PXE]             | PXE           | All                                  |
 | 8.   | [BIOS lock support][BLS]                     | BLS           | All                                  |
@@ -133,7 +133,7 @@ subjected from before the release of the new binary.
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
 | 4.   | [NET interface detection][NET]                    | NET           | All                                  |
-| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.201, TPD003.202, TPD004.201, TPD004.202               |
+| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.201, TPD003.202, TPD004.201, TPD004.202 |
 
 [SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
