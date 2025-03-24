@@ -37,10 +37,10 @@ subjected before the release of the new binary.
 | 26.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
 | 27.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 | 28.  | [Fedora support][FED]                                  | FED           | All                                  |
-| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001 and SUSP006.001  |
+| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004 and SUSP006          |
 | 30.  | [Boot blocking][BBB]                                   | BBB           | All                                  |
 | 31.  | [Reset to defaults][RTD]                               | RTD           | All                                  |
-| 32.  | [Suspend mechanism switchcing (S0ix/S3)][SMS]          | SMS           | All                                 |
+| 32.  | [Suspend mechanism switching (S0ix/S3)][SMS]           | SMS           | All                                  |
 | 33.  | [Platform hibernation and resume][HBN]                 | HBN           | All                                  |
 | 34.  | [Sign of life][SOL]                                    | SOL           | All                                  |
 | 35.  | [Power after fail][PSF]                                | PSF           | All                                  |
@@ -133,7 +133,7 @@ subjected before the release of the new binary.
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
 | 4.   | [NET interface detection][NET]                    | NET           | All                                  |
-| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.001, TPD004.001               |
+| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.201, TPD003.202, TPD004.201, TPD004.202 |
 
 [SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md

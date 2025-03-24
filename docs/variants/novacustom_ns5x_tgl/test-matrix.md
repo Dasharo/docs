@@ -11,7 +11,7 @@ subjected before the release of the new binary.
 |:----:|:-------------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                      | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                       | EFI           | All                                  |
-| 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.201, DSP002.301 |
+| 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.201, DSP001.202, DSP001.301, DSP002.201, DSP002.202, DSP002.301 |
 | 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | All                                  |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
@@ -40,7 +40,7 @@ subjected before the release of the new binary.
 | 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001 and SUSP006.001  |
 | 30.  | [Boot blocking][BBB]                                   | BBB           | All                                  |
 | 31.  | [Reset to defaults][RTD]                               | RTD           | All                                  |
-| 32.  | [Suspend mechanism switchcing (S0ix/S3)][SMS]          | SMS           | All                                 |
+| 32.  | [Suspend mechanism switching (S0ix/S3)][SMS]           | SMS           | All                                 |
 | 33.  | [Platform hibernation and resume][HBN]                 | HBN           | All                                  |
 | 34.  | [Sign of life][SOL]                                    | SOL           | All                                  |
 | 35.  | [Power after fail][PSF]                                | PSF           | All                                  |
