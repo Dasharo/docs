@@ -26,12 +26,20 @@ devices.
         as of the time of writing does not have support for the flash chip model
         present in these devices.
 
-    1. Install build dependencies (on Ubuntu and derivatives):
+    1. Install build dependencies
+
+    === "APT package manager"
 
         ```bash
         apt update
         apt upgrade
         apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+        ```
+    === "DNF package manager"
+
+        ```bash
+        dnf group install c-development development-tools
+        dnf install git debhelper pkgconf-pkg-config pciutils-devel libusb-compat-0.1-devel libftdi-devel meson
         ```
 
     1. Clone the flashrom repository:
@@ -114,11 +122,20 @@ devices.
 
     Install flashrom:
 
-    ```bash
-    apt update
-    apt upgrade
-    sudo apt -y install flashrom
-    ```
+    === "APT package manager"
+
+        ```bash
+        apt update
+        apt upgrade
+        sudo apt -y install flashrom
+        ```
+
+    === "DNF package manager"
+
+        ```bash
+        dnf install flashrom
+        ```
+
 
     ### BIOS installation
 
@@ -165,11 +182,20 @@ devices.
 
     1. Install build dependencies:
 
-        ```bash
-        apt update
-        apt upgrade
-        apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
-        ```
+        === "APT package manager"
+
+            ```bash
+            apt update
+            apt upgrade
+            apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+            ```
+
+        === "DNF package manager"
+
+            ```bash
+            dnf group install c-development development-tools
+            dnf install git debhelper pkgconf-pkg-config pciutils-devel libusb-compat-0.1-devel libftdi-devel meson
+            ```
 
     2. Obtain source code:
 
