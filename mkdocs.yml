@@ -610,6 +610,7 @@ nav:
               - '[UBT] USB Boot': unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
               - '[UDT] USB Detection': unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
               - '[USB] USB HID and MSC support': unified-test-documentation/dasharo-compatibility/306-usb-hid-and-msc-support.md
+              - '[USC] USB A and C Always On ports': unified-test-documentation/dasharo-compatibility/350-usb-a-and-c-always-on-ports.md
               - '[USH] UEFI Shell': unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md
               - '[USS] Ubuntu Server support': unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
               - '[UTC] USB-C docking station support': unified-test-documentation/dasharo-compatibility/31H-usb-type-c.md
