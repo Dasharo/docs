@@ -11,8 +11,8 @@ subjected from before the release of the new binary.
 |:----:|:-------------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [Memory HCL][HCL]                                      | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                       | EFI           | All                                  |
-| 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.002, DSP001.003, DSP002.201, DSP002.301 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR021.001, ECR021.002, ECR022.001, ECR022.002, ECR023.001, ECR023.002, ECR024.001, ECR024.002 |
+| 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.201, DSP001.202, DSP001.301, DSP002.201, DSP002.202, DSP002.301 |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | ECR021.201, ECR021.202, ECR021.301, ECR022.201, ECR022.202, ECR022.301, ECR023.201, ECR023.202, ECR023.301, ECR024.201, ECR024.202, ECR024.301 |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot keys][CBK]                                | CBK           | All                                  |
@@ -26,8 +26,8 @@ subjected from before the release of the new binary.
 | 15.  | [M.2 WiFi/Bluetooth][WLE]                              | WLE           | All - NOTE: Needs to be carried out for both the default network card and the Atheros QCNFA222.                                  |
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
-| 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.001                           |
-| 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001.001                   |
+| 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.201, FAN001.202                           |
+| 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001                       |
 | 20.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 21.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
 | 22.  | [CPU status][CPU]                                      | CPU           | All                                  |
@@ -37,7 +37,7 @@ subjected from before the release of the new binary.
 | 26.  | [Custom Boot Order][CBO]                               | CBO           | CBO001.002                           |
 | 27.  | [QubesOS support][QBS]                                 | QBS           | All                                  |
 | 28.  | [Fedora support][FED]                                  | FED           | All                                  |
-| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | Without SUSP004.001 and SUSP006.001  |
+| 29.  | [Platform suspend and resume][SUSP]                    | SUSP          | SUSP001.201, SUSP001.202, SUSP001.203, SUSP002.201, SUSP002.202, SUSP002.203, SUSP003.201, SUSP003.202, SUSP003.203, SUSP005.201, SUSP005.202         |
 | 30.  | [Boot blocking][BBB]                                   | BBB           | All                                  |
 | 31.  | [Reset to defaults][RTD]                               | RTD           | All                                  |
 | 32.  | [Suspend mechanism switchcing (S0ix/S3)][SMS]          | SMS           | All                                  |
@@ -86,7 +86,7 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                 | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
-| 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE006.001                   |
+| 5.   | [ME disable/neuter support][MNE]             | MNE           | MNE001.001, MNE002.201, MNE002.202, MNE003.201, MNE003.202, MNE004.201, MNE004.202, MNE005.001, MNE005.002               |
 | 6.   | [USB stack][USS]                             | USS           | All                                  |
 | 7.   | [Network boot availability][PXE]             | PXE           | All                                  |
 | 8.   | [BIOS lock support][BLS]                     | BLS           | All                                  |
@@ -133,7 +133,7 @@ subjected from before the release of the new binary.
 | 2.   | [M.2 Wi-fi][SMW]                                  | SMW           | All                                  |
 | 3.   | [NVMe detection][SNV]                             | SNV           | All                                  |
 | 4.   | [NET interface detection][NET]                    | NET           | All                                  |
-| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.001, TPD004.001               |
+| 5.   | [TPM detection][TPD]                              | TPD           | TPD003.201, TPD003.202, TPD004.201, TPD004.202               |
 
 [SUD]: ../../unified-test-documentation/dasharo-stability/C01-usb-type-a-devices-detection.md
 [SMW]: ../../unified-test-documentation/dasharo-stability/C02-m2-wi-fi.md
