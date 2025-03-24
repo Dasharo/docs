@@ -73,6 +73,56 @@ Select your operating system to view applicable instructions:
     curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup | sudo sh
     ```
 
+=== "Fedora"
+    ### Touchpad hotkey enablement
+
+    The touchpad hotkey may need extra setup to function correctly under Linux.
+    If the key isn't working, execute the following command to apply a fix:
+
+    ```bash
+    curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/touchpad-fixup | sudo sh
+    ```
+
+    After executing these steps, it should be possible to enable and disable the
+    touchpad using the touchpad hotkey (Fn+F1) on the keyboard when using GNOME.
+
+    ### NVIDIA drivers
+
+    If your device comes with NVIDIA graphics, proprietary NVIDIA drivers are
+    recommended for optimal performance and battery life.
+
+    1. Install drivers according to
+       [instructions by RPM fusion](https://rpmfusion.org/Howto/NVIDIA#Current_GeForce.2FQuadro.2FTesla)
+
+    1. Reboot the device to apply changes
+
+    1. (Optional) If you're suffering from poor battery life caused by the GPU
+       not turning off, ensure On-Demand mode is enabled in NVIDIA Control
+       Panel:
+
+       ![](../../images/nv4x_nvidia_panel.jpg){ class="center" }
+
+    1. (Optional) If the GPU is still not powering down, run the following
+       command, and then reboot the laptop:
+
+        ```bash
+        echo options nvidia "NVreg_DynamicPowerManagement=0x02" | sudo tee /etc/modprobe.d/nvidia_rtd3.conf
+        ```
+
+    ### Suspend fix for SATA disks
+
+    Only affects laptops with M.2 SATA disks experiencing sleep issues (the power
+    LED not blinking while the laptop is suspended)
+
+    Windows and certain Linux distros such as Ubuntu do not enable the necessary
+    power saving tweaks to enable sleep mode while a SATA disk is installed.
+
+    Execute fixup script:
+
+    ```bash
+    curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup | sudo sh
+    ```
+
 === "Qubes OS"
     ### Touchpad hotkey enablement
 
