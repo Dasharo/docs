@@ -62,7 +62,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Intel microcode based on ADL/RPL C0/H0 0x0000002e revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-97-05)
 - [Intel microcode based on RPL B0 0x00000119 revision microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230808/intel-ucode/06-b7-01)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/D7dQvGx6k
 [msi_ms7e06_v0.9.0_ddr4_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/heads/v0.9.0/msi_ms7e06_v0.9.0_ddr4_heads.rom.sha256
 [msi_ms7e06_v0.9.0_ddr4_heads.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/heads/v0.9.0/msi_ms7e06_v0.9.0_ddr4_heads.rom.sha256.sig
 [msi_ms7e06_v0.9.0_ddr5_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/heads/v0.9.0/msi_ms7e06_v0.9.0_ddr5_heads.rom.sha256

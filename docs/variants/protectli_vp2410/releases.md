@@ -163,7 +163,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + CPU signature: 0x0706A0, Date: 12.07.2017, Revision: 0x26
     + CPU signature: 0x0706A1, Date: 09.06.2020, Revision: 0x34
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [protectli_vp2410_v1.1.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom
 [protectli_vp2410_v1.1.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom.sha256
 [protectli_vp2410_v1.1.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom.sha256.sig

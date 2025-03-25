@@ -110,7 +110,7 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-key
 - [Intel Firmware Support Package for Meteor Lake-H version 2024/04/30 v4122_12](https://github.com/Dasharo/dasharo-blobs/tree/32cffee4/novacustom/v5x0tu/MeteorLakeFspBinPkg)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/4yriJD4GX
+[newsletter]: https://3mdeb.com/subscribe/nc_v540tu_14th.html
 [novacustom_v54x_mtl_ec_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl/heads/v0.9.0/novacustom_v54x_mtl_ec_v0.9.0.rom.sha256
 [novacustom_v54x_mtl_ec_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl/heads/v0.9.0/novacustom_v54x_mtl_ec_v0.9.0.rom.sha256.sig
 [novacustom_v54x_mtl_v0.9.0_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl/heads/v0.9.0/novacustom_v54x_mtl_v0.9.0_heads.rom.sha256

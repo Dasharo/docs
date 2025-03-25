@@ -278,7 +278,7 @@ subscription via Dasharo Pro Package newsletter.
 - [Intel microcode based on ADL H0 0x0000002c revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-97-05)
 - [Intel microcode based on RPL B0 0x00000113 revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-b7-01)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/KgJ7V_mmJ
+[newsletter]: https://3mdeb.com/subscribe/msi_z790_p_uefi.html
 [msi_ms7e06_v0.9.2_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.cap.sha256
 [msi_ms7e06_v0.9.2_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.cap.sha256.sig
 [msi_ms7e06_v0.9.2_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4_dev_signed.cap.sha256
