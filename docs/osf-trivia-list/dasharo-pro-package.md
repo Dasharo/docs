@@ -27,6 +27,8 @@ you can download them:
 4. **Download the Binaries:** After entering the password, you can access the
    bucket containing the binaries. You can now download them as needed.
 
+![](../images/minio-buckets.png)
+
 **Notes:**
 
 - Ensure you enter the password exactly as it appears in your email, as it is
