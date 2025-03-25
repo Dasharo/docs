@@ -94,7 +94,7 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/raw/master/customer-keys
 - [Intel microcode based on JSL A0 0x24000026 revision microcode-20240312](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240312/intel-ucode/06-9c-00)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240312/license)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [protectli_v1210_v0.9.3.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_jsl/v0.9.3/protectli_v1210_v0.9.3.rom
 [protectli_v1210_v0.9.3.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_jsl/v0.9.3/protectli_v1210_v0.9.3.rom.sha256
 [protectli_v1210_v0.9.3.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_jsl/v0.9.3/protectli_v1210_v0.9.3.rom.sha256.sig

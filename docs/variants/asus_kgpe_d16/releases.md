@@ -6,15 +6,6 @@ ASUS KGPE-D16.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to Release Newsletter][newsletter]
-{ .md-button .md-button--primary .center }
-
-[newsletter]: https://newsletter.3mdeb.com/subscription/ozes4Jxuo
-
-</center>
-
 Feel free to contact us on our [Matrix Dasharo space](https://matrix.to/#/#dasharo:matrix.org).
 
 Test results for this platform can be found
@@ -263,7 +254,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 
 - [coreboot based on 03aef28 revision e6af2206](https://github.com/Dasharo/coreboot/tree/e6af2206)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/ozes4Jxuo
 [asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom
 [asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom.sha256
 [asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/asus_kgpe-d16/v0.4.0/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom.sha256.sig

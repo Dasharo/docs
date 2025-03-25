@@ -92,7 +92,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [AMD System Management Unit - Software Configuration Settings binary based on 1433 revision a8db7dfe](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/SmuScs.bin)
 - [AMD Hudson xHCI firmware based on 1.1.0.0068 revision a8db7dfe](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/xhci.bin)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/ReBpt3IZY
+[newsletter]: https://3mdeb.com/subscribe/pcengines_seabios.html
 [pcengines_apu2_seabios_v24.05.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.05.00.01/pcengines_apu2_seabios_v24.05.00.01.rom.sha256
 [pcengines_apu2_seabios_v24.05.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.05.00.01/pcengines_apu2_seabios_v24.05.00.01.rom.sha256.sig
 [pcengines_apu3_seabios_v24.05.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.05.00.01/pcengines_apu3_seabios_v24.05.00.01.rom.sha256

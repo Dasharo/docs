@@ -720,4 +720,4 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [coreboot 4.14 (with additional commits for Clevo NV41MZ board support)](https://gitlab.com/novacustom/coreboot/-/compare/4.14...v0.1.1?from_project_id=29249618)
 - [EDK2](https://github.com/MrChromebox/edk2/commit/659ed4cb983a66ec241c05f42b69ad4d2e47b714)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/S5ze5u_qN
+[newsletter]: https://3mdeb.com/subscribe/nc_nv4x_11th.html

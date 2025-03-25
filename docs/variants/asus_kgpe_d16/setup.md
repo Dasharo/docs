@@ -255,10 +255,8 @@ email to [leads@3mdeb.com](mailto:leads@3mdeb.com) with a request.
 
 ## Newsletter
 
-If you are interested in this project, you can subscribe to the
-[Dasharo KGPE-D16 Newsletter](https://newsletter.3mdeb.com/subscription/ozes4Jxuo).
-If you are interested in the Dasharo in general, you are welcome to subscribe
-to the [Dasharo Newsletter](https://newsletter.3mdeb.com/subscription/wwL90UkXP).
+If you are interested in the Dasharo, you are welcome to subscribe
+to the [Dasharo Newsletter](https://3mdeb.com/subscribe/dasharo_newsletter.html).
 
 ## Gallery
 
