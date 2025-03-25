@@ -104,7 +104,7 @@ Installer images can be downloaded from the official
 ### Installation documentation
 
 Official documentation can be found
-[here](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-installation-and-setup-7-0/installing-and-setting-up-esxi-install/installing-esxi-install/installing-esxi-interactively-install/install-esxi-interactivelly-install.html).
+[here](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-installation-and-setup-7-0/installing-and-setting-up-esxi/installing-esxi/installing-esxi-interactively/install-esxi-interactivelly.html)
 
 !!! note "Installation using only serial port"
 
