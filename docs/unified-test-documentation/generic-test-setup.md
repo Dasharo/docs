@@ -58,96 +58,132 @@ Make sure that the hostname, username and password are the same as
 in the OSFV repository in order for the automatic tests to run properly if the
 device already had the OS installed.
 
-##### Windows
+=== "Windows"
 
-1.(Windows 11) Run PowerShell as an Administrator.
-1. Install the OpenSSH Client
+    1. Run PowerShell as an Administrator.
+    1. Install the OpenSSH Client
 
-    ```powershell
-    Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
-    ```
+        ```powershell
+        Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+        ```
 
-2. Install the OpenSSH Server
+    2. Install the OpenSSH Server
 
-    ```powershell
-    Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
-    ```
+        ```powershell
+        Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+        ```
 
-3. Start the sshd service
+    3. Start the sshd service
 
-    ```powershell
-    Start-Service sshd
-    ```
+        ```powershell
+        Start-Service sshd
+        ```
 
-4. Make the sshd service start automatically on startup:
+    4. Make the sshd service start automatically on startup:
 
-    ```powershell
-    Set-Service -Name sshd -StartupType 'Automatic'
-    ```
+        ```powershell
+        Set-Service -Name sshd -StartupType 'Automatic'
+        ```
 
-5. Confirm the Firewall rule is configured. It should be created automatically
-by setup. Run the following to verify
+    5. Confirm the Firewall rule is configured. It should be created automatically
+    by setup. Run the following to verify
 
-    ```powershell
-    if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyContinue | Select-Object Name, Enabled)) {
-        Write-Output "Firewall Rule 'OpenSSH-Server-In-TCP' does not exist, creating it..."
-        New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
-    } else {
-        Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
-    }
-    ```
+        ```powershell
+        if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyContinue | Select-Object Name, Enabled)) {
+            Write-Output "Firewall Rule 'OpenSSH-Server-In-TCP' does not exist, creating it..."
+            New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+        } else {
+            Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
+        }
+        ```
 
-6. If during connection via SSH you want to run `PowerShell.exe` instead of
-`cmd.exe` use below command:
+    6. If during connection via SSH you want to run `PowerShell.exe` instead of
+    `cmd.exe` use below command:
 
-    ```powershell
-    New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell \
-        -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" \
-        -PropertyType String -Force
-    ```
+        ```powershell
+        New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell \
+            -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" \
+            -PropertyType String -Force
+        ```
 
-7. Sets the PowerShell execution policies for Windows computers.
+    7. Sets the PowerShell execution policies for Windows computers.
 
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
+        ```powershell
+        Set-ExecutionPolicy RemoteSigned
+        ```
 
-8. Use powercfg.exe to control power plans to prevent sleep.
+    8. Use powercfg.exe to control power plans to prevent sleep.
 
-    ```powershell
-    Powercfg /Change standby-timeout-ac 0
-    Powercfg /Change standby-timeout-dc 0
-    ```
+        ```powershell
+        Powercfg /Change standby-timeout-ac 0
+        Powercfg /Change standby-timeout-dc 0
+        ```
 
-##### Linux
+=== "Ubuntu"
 
-1. Open the terminal.
-1. Disable the shutdown confirmation dialogues
+    1. Open the terminal.
+    1. Disable the shutdown confirmation dialogues
 
-    ```bash
-    sudo gsettings set org.gnome.SessionManager logout-prompt false
-    ```
+        ```bash
+        sudo gsettings set org.gnome.SessionManager logout-prompt false
+        ```
 
-1. Set up a serial terminal:
+    1. Set up a serial terminal:
 
-    ```bash
-    sudo nano /etc/default/grub
-    ```
+        ```bash
+        sudo nano /etc/default/grub
+        ```
 
-1. Edit the file `/etc/default/grub` by adding
-`console=tty0 console=ttyS0,115200` in variable `GRUB_CMDLINE_LINUX_DEFAULT`.
-1. Update grub
+    1. Edit the file `/etc/default/grub` by adding
+    `console=tty0 console=ttyS0,115200` in variable `GRUB_CMDLINE_LINUX_DEFAULT`.
+    1. Update grub
 
-    ```bash
-    sudo update-grub
-    ```
+        ```bash
+        sudo update-grub
+        ```
 
-1. Configure SSH:
+    1. Configure SSH:
 
-    ```bash
-    sudo apt install openssh-server
-    systemctl start sshd
-    ```
+        ```bash
+        sudo apt install openssh-server
+        systemctl start sshd
+        ```
+
+=== "Fedora"
+
+    1. Open the terminal.
+    1. Disable the shutdown confirmation dialogues
+
+        ```bash
+        sudo gsettings set org.gnome.SessionManager logout-prompt false
+        ```
+
+    1. Set up a serial terminal:
+
+        ```bash
+        sudo nano /etc/default/grub
+        ```
+
+    1. Add the following at the end of`/etc/default/grub`:
+
+        ```
+        GRUB_CMDLINE_LINUX='console=tty0 console=ttyS0,115200n8'
+        GRUB_TERMINAL='serial'
+        GRUB_SERIAL_COMMAND='serial --speed=115200 --unit=0 --word=8 --parity=no --stop=1'
+        ```
+
+    1. Update grub
+
+        ```bash
+        sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+        ```
+
+    1. Configure SSH:
+
+        ```bash
+        sudo dnf install openssh-server
+        systemctl enable --now sshd
+        ```
 
 #### NVIDIA drivers - Ubuntu
 
