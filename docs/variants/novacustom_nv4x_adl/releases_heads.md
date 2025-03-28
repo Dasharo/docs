@@ -1,5 +1,11 @@
 # NovaCustom NV4x 12th Gen Dasharo (coreboot + heads) Release Notes
 
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
+binaries you will have to
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/).
+As a subscriber, you will receive access to all firmware updates for the duration of your subscription via the Dasharo Pro Package newsletter, and gain entry to the Dasharo Premier Support invite-only live chat on the Matrix network, enabling direct engagement with the Dasharo Team and fellow subscribers for personalized, priority assistance.
+
 Following Release Notes describe status of development of Dasharo (coreboot +
 Heads) firmware for NovaCustom NV4x 12th Gen.
 
@@ -25,12 +31,6 @@ Test results for this release can be found
 
 [sha256][novacustom_nv4x_adl_v0.9.1_heads.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_adl_v0.9.1_heads.rom_sig]{.md-button}
-
-This is a Dasharo Pro Package Release. To obtain access to the pre-built
-binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/).
-As a subscriber, you will receive access to all firmware updates for the duration of your subscription via the Dasharo Pro Package newsletter, and gain entry to the Dasharo Premier Support invite-only live chat on the Matrix network, enabling direct engagement with the Dasharo Team and fellow subscribers for personalized, priority assistance.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
