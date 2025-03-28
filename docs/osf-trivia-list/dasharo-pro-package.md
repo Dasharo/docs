@@ -72,3 +72,19 @@ be flashed with proprietary firmware using this method.
 
 The keys/credentials have no other usages outside Dasharo Tools Suite
 and have no impact on other components of the system.
+
+## How can I unsubscribe from a DPP newsletter
+
+Emails sent from DPP newsletters have an `Unsubscribe` link at the bottom, which
+will take you to Listmonk's unsubscribe form.
+
+If you choose to `Unsubscribe from all future e-mails`, you will be blocklisted
+from every list in 3mdeb Listmonk's instance. It is currently impossible to
+unsubscribe from only one private list - see [related issue][listmonk-issue].
+
+!!! warning
+
+    Choosing `Wipe your data` will remove you from Listmonk and revoke your DPP
+    access. Please refrain from using this option.
+
+[listmonk-issue]: https://github.com/knadh/listmonk/issues/2382
