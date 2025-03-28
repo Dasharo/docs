@@ -182,7 +182,8 @@ more than 10 seconds.
 The ACPI Driver is a Linux kernel module that utilizes the hwmon
 interface to monitor the hardware. This interface is based on the sysfs
 file system, enabling reading of the real-time data about the hardware
-status.\
+status.
+
 The driver provides support for sensors that report values
 of temperature, fan speeds and fan PWM for CPU and GPU
 (if supported by the platform).
