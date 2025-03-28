@@ -695,7 +695,7 @@ gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 - [coreboot based on a552cfc9 revision 53948cd8](https://github.com/Dasharo/coreboot/commit/53948cd8)
 - [edk2 based on 4d2846ba revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/aKgTJjYEA
+[newsletter]: https://3mdeb.com/subscribe/msi_z690_a_uefi.html
 [msi_ms7d25_v1.1.4_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.4/msi_ms7d25_v1.1.4_ddr4.cap.sha256
 [msi_ms7d25_v1.1.4_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.4/msi_ms7d25_v1.1.4_ddr4.cap.sha256.sig
 [msi_ms7d25_v1.1.4_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.4/msi_ms7d25_v1.1.4_ddr4_dev_signed.cap.sha256

@@ -13,8 +13,6 @@ For details about our release process please read
 
 </center>
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/CcLgb48NQ
-
 ## v0.9.1 - 2024-11-07
 
 Test results for this release can be found
@@ -98,7 +96,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Intel processor microcode based on MTL C0 0x0000001c revision microcode-20240531](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-aa-04)
     * [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/sB4G9eq9h
+[newsletter]: https://3mdeb.com/subscribe/nc_v560tnx_14th.html
 [novacustom_v56x_mtl_ec_v0.9.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v56x_mtl/v0.9.1/novacustom_v56x_mtl_ec_v0.9.1.rom
 [novacustom_v56x_mtl_ec_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v56x_mtl/v0.9.1/novacustom_v56x_mtl_ec_v0.9.1.rom.sha256
 [novacustom_v56x_mtl_ec_v0.9.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v56x_mtl/v0.9.1/novacustom_v56x_mtl_ec_v0.9.1.rom.sha256.sig

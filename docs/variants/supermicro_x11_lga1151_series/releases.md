@@ -9,9 +9,6 @@ Dell OptiPlex 7010 SFF, DT and Dell OptiPlex 9010 SFF, MT.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter](https://newsletter.3mdeb.com/subscription/8dp1vv5mR)
-{ .md-button .md-button--primary .center }
-
 ## Unreleased
 
 Software BOM:
