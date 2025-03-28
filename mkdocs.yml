@@ -18,30 +18,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
 extra:
-  analytics:
-    provider: google
-    property: G-LH2JM6P96R
-      # feedback:
-      #   title: Was this page helpful?
-      #   ratings:
-      #     - icon: material/thumb-up-outline
-      #       name: This page was helpful
-      #       data: 1
-      #       note: >-
-      #         Thanks for your feedback!
-      #     - icon: material/thumb-down-outline
-      #       name: This page was not helpful
-      #       data: 0
-      #       note: >-
-      #         Thanks for your feedback! Help us improve this page by
-      #         using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dasharo
