@@ -123,12 +123,12 @@ quick answers it's best to join our matrix space and talk to us there.
 If you've never used Matrix before, you will first need to get a client.
 Available clients are listed [here](https://matrix.org/clients/).
 
-## Dasharo lab user guide
+## Dasharo Certification Lab User Guide
 
 [**Test environment overview**](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#test-environment-overview)
 
 To get information about available platforms it's or it's RTE's IP address, use
-the platform reservation tool: [SnipeIT](https://192.168.4.202/)
+3mdeb's the platform reservation tool available from internal network.
 
 [OSFV_CLI](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli) is a script,
 which allows to interact with devices setup in Dasharo OSFV lab.
