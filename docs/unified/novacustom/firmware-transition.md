@@ -24,7 +24,7 @@ firmware installation:
 !!! tip
 
     For a more detailed guide on the UEFI Setup Menu options, check out the
-    [Dasharo menu documentation](https://docs.dasharo.com/dasharo-menu-docs/).
+    [Dasharo menu documentation](https://docs.dasharo.com/dasharo-menu-docs/overview).
 
 - [Boot into Dasharo Tools
   Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/)
