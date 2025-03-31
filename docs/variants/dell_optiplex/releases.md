@@ -1,5 +1,15 @@
 # Dell OptiPlex 7010/9010 Dasharo Release Notes
 
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
+binaries you will have to
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1year-desktop/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter,
+and gain entry to the Dasharo Premier Support invite-only live chat
+on the Matrix network, enabling direct engagement with the Dasharo Team
+and fellow subscribers for personalized, priority assistance.
+
 Following Release Notes describe status of open-source firmware development for
 Dell OptiPlex 7010/9010
 
@@ -44,12 +54,6 @@ Test results for this release can be found
 
 [sha256][dell_optiplex_7010_9010_v0.1.1.rom_hash]{.md-button}
 [sha256.sig][dell_optiplex_7010_9010_v0.1.1.rom_sig]{.md-button}
-
-This is a Dasharo Pro Package Release. To obtain access to the pre-built
-binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1year-desktop/).
-As a subscriber, you will receive access to all firmware updates for the duration of your subscription via the Dasharo Pro Package newsletter, and gain entry to the Dasharo Premier Support invite-only live chat on the Matrix network, enabling direct engagement with the Dasharo Team and fellow subscribers for personalized, priority assistance.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
