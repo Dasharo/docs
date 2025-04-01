@@ -72,12 +72,6 @@ Test results for this release can be found
 [sha256][novacustom_nv4x_adl_v0.9.0_heads.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_adl_v0.9.0_heads.rom_sig]{.md-button}
 
-This is a Dasharo Pro Package Release. To obtain access to the pre-built
-binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Pro Package newsletter.
-
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
