@@ -10,8 +10,6 @@ you can download them:
    subscription. Look for an email from Dasharo that includes your subscription
    data. This email will contain several vital pieces of information:
 
-    - **Logs Key:** A key you might need for other operations or support.
-    - **Download Key:** A unique string that allows you to access the download area.
     - **Password:** The password you'll need to access the files.
     - **Expiration Date:** The date until your subscription is valid.
 
@@ -19,29 +17,22 @@ you can download them:
    following URL:
 
     ```txt
-    https://cloud.3mdeb.com/index.php/s/{download_key}
+    https://dl.dasharo.com
     ```
 
-    Replace `{download_key}` with the download key provided in your email.
-
 3. **Enter Your Password:** Once you visit the above link, you'll be prompted
-   to enter a password. Use the password from your subscription email.
+   to enter a username and password. Use the password from your subscription
+   email. The username is your email address.
 
 4. **Download the Binaries:** After entering the password, you can access the
-   cloud folder containing the binaries. You can now download them as needed.
+   bucket containing the binaries. You can now download them as needed.
 
-**Example:**
-
-- Suppose your download key is `abc123` and your password is
-  `securepassword123`.
-- You can visit `https://cloud.3mdeb.com/index.php/s/abc123`.
-- When prompted, you would enter `securepassword123` as the password.
-- After authentication, you can download your subscribed binaries.
+![](../images/minio-buckets.png)
 
 **Notes:**
 
-- Ensure you enter the download key and password exactly as they appear in your
-  email, as they are case-sensitive.
+- Ensure you enter the password exactly as it appears in your email, as it is
+  case-sensitive.
 - If you have not received your email or cannot find it, check your spam folder
   or contact Dasharo support for assistance.
 
