@@ -53,7 +53,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + VBIOS blob for FW6D/E,
     SHA256: d1c746127e5288942efae65907739e18ff395fab70925b44dbafafd9e7b30cd7
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [v1.0.14_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom
 [v1.0.14_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256
 [v1.0.14_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256.sig

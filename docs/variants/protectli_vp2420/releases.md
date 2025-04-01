@@ -183,7 +183,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [coreboot based on c86c926 revision e36a117d](https://github.com/Dasharo/coreboot/tree/e36a117d)
 - [edk2 based on 7f90b9cd revision 19bf14b4](https://github.com/Dasharo/edk2/tree/19bf14b4)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
 [protectli_vp2420_v1.1.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.1.0/protectli_vp2420_v1.1.0.rom
 [protectli_vp2420_v1.1.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.1.0/protectli_vp2420_v1.1.0.rom.sha256
 [protectli_vp2420_v1.1.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.1.0/protectli_vp2420_v1.1.0.rom.sha256.sig
@@ -227,7 +226,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [coreboot based on c86c926 revision 54cbbc5b](https://github.com/Dasharo/coreboot/tree/54cbbc5b)
 - [edk2 based on 7f90b9cd revision e31b7a71](https://github.com/Dasharo/edk2/tree/e31b7a71)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
 [protectli_vp2420_v1.0.1.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.0.1/protectli_vp2420_v1.0.1.rom
 [protectli_vp2420_v1.0.1.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.0.1/protectli_vp2420_v1.0.1.rom.sha256
 [protectli_vp2420_v1.0.1.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.0.1/protectli_vp2420_v1.0.1.rom.sha256.sig
@@ -276,7 +274,7 @@ gpg -v --verify protectli_vp2420_v1.0.0.rom.sha256.sig protectli_vp2420_v1.0.0.r
 - [edk2 based on e461f08 revision 7948a20](https://github.com/Dasharo/edk2/tree/7948a20)
 - [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
+[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [v1.0.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.0.0/protectli_vp2420_v1.0.0.rom
 [v1.0.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.0.0/protectli_vp2420_v1.0.0.rom.sha256
 [v1.0.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.0.0/protectli_vp2420_v1.0.0.rom.sha256.sig

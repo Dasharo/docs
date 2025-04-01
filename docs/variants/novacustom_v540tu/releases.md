@@ -77,7 +77,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Dasharo coreboot fork based on 24.02 revision 316f964c](https://github.com/Dasharo/coreboot/tree/316f964c)
 - [Dasharo EDKII fork based on edk2-stable202402 revision cc2be228](https://github.com/Dasharo/edk2/tree/cc2be228)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/4yriJD4GX
+[newsletter]: https://3mdeb.com/subscribe/nc_v540tu_14th.html
 [novacustom_v54x_mtl_ec_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl/v0.9.0/novacustom_v54x_mtl_ec_v0.9.0.rom
 [novacustom_v54x_mtl_ec_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl/v0.9.0/novacustom_v54x_mtl_ec_v0.9.0.rom.sha256
 [novacustom_v54x_mtl_ec_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl/v0.9.0/novacustom_v54x_mtl_ec_v0.9.0.rom.sha256.sig
