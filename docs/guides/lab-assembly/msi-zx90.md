@@ -107,7 +107,7 @@ preparation before a TPM can flashing wires can be connected. You will need:
 * flat screwdriver
 * pliers
 * MSI SPI TPM 2.0
-* [6x test hook clips](https://www.amazon.ca/Dupont-Jumper-Electrical-Testing-Colors/dp/B0CK5MT1CG)
+* 6x test hook clips
 * [a 2mm pitch header 2x6 pin with long through pins](https://www.mouser.pl/ProductDetail/Samtec/ESQT-106-02-F-D-785?qs=0ekZTeX6RYyA%252Bo3ZUhzipw%3D%3D)
 
 ![msi_tpm_items](images/tpm/msi_tpm_items.jpg)
