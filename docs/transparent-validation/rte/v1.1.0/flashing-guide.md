@@ -13,7 +13,8 @@ To prepare the stand for flashing follow the steps described below:
 
 1. Open the platform cover.
 
-2. Connect the 6-pin flash header to the SPI header on RTE.
+2. Connect the 6-pin from the flashing device (WSON8, Pomona clip, jumper wires)
+   to the SPI header on RTE.
 
 ```text
     SPI header 	6 pin header
