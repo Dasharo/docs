@@ -57,6 +57,11 @@ repos:
         entry: (\:\s|\()[^\s]*(?<!http:)((?<!https:)\/\/)
         language: pygrep
         exclude: '^.*.(webp|jpeg|jpg|png|pdf)$'
+      - id: internal_links
+        name: Check internal markdown links (http://192.168.x.x or http://10.x.x.x)
+        entry: \]\(https?:\/\/(192\.168\.[0-9]+\.[0-9]+|10\.[0-9]+\.[0-9]+\.[0-9]+)[^)]*\)
+        language: pygrep
+        types: [text]
 
 ci:
   autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
