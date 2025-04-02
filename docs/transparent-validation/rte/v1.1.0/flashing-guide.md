@@ -3,86 +3,66 @@
 This document describes how to set up external flashing for the devices using
 RTE.
 
-## NS5x/7x 12th Generation
-
-### Prerequisites
+## Prerequisites
 
 * [Prepared RTE](../v1.1.0/quick-start-guide.md)
-* WSON8 probe
 
-    ![](../../../images/ch341a_rec/wson8_probe.jpg)
+## Connection to SPI header
 
-### Flashing
+To prepare the stand for flashing follow the steps described below:
 
-> Note: the `flash.sh` script, used in this chapter, is available only in 0.8.1
-> or newer RTE OS releases, check [meta-rte](https://github.com/3mdeb/meta-rte)
-> for more inf..
+1. Open the platform cover.
 
-1. Unscrew the bottom cover of the laptop.
-1. Disconnect the battery
+2. Connect the 6-pin flash header to the SPI header on RTE.
 
-    > All power must be removed from the laptop during flashing.
+```text
+    SPI header 	6 pin header
+    Vcc 	pin 1 (Vcc)
+    GND 	pin 2 (GND)
+    CS 	pin 4 (CS)
+    SCLK 	pin 6 (CLK)
+    MISO 	pin 5 (MISO)
+    MOSI 	pin 3 (MOSI)
+```
 
-    ![](../../../images/ns5x_7x_battery_unplugged.jpg)
+```text
+            ______
+        >  |      |
+Vcc 3.3V  ----1  2----  GND
+            |      |
+    MOSI  ----3  4----  CS
+            |      |
+    MISO  ----5  6----  CLK
+            |______|
+```
 
-1. Localize the flash chip.
+## Platform-specific steps
 
-    ![](../../../images/ns5x_7x_without_bottom_cover.jpg)
+To find more specific information, regarding recovery of a given platform,
+navigate to a recovery section in the documentation for a specific platform:
 
-1. Take the WSON8 probe and locate the white dot on the needles side. The dot
-    indicates the first reference pin that should be connected to the pin on the
-    flash chip also marked with a dot.
+1. [Supported hardware](https://docs.dasharo.com/variants/overview/)
+2. Choose a vendor. For example, `Protectli`
+3. Navigate to the `Recovery` section
 
-    ![](../../../images/ch341a_rec/wson8_probe2.jpg)
+For example:
 
-1. Connect the cables coming out from the WSON8 probe to the
-    [SPI header](specification.md) according to the pictures and table
-    below.
+* [Protectli recovery
+  guide](https://docs.dasharo.com/unified/protectli/recovery/)
+* [NovaCustom recovery
+  guide](https://docs.dasharo.com/unified/novacustom/recovery/)
 
-    - Top view of flash chip:
+## Remote flashing
 
-    ![](../../../images/rte-v1.1.0-flash_chip_NS50_70PU.jpg)
+To remotely initiate flashing via RTE, use the `osfv_cli` tool.
 
-    - Table with all required connections:
+Example flashing command:
 
-        | RTE SPI header | Flash Chip |
-        |:--------------:|:----------:|
-        | Vcc            | VCC        |
-        | CS             | CS#        |
-        | MISO (SO)      | SO (IO1)   |
-        | GND            | VSS        |
-        | SCLK           | SCLK       |
-        | MOSI (SI)      | SI         |
+`osfv_cli rte --rte_ip=<RTE_IP> flash write --rom <PATH_TO_ROM_FILE>`
 
-        > Note: both the SPI header and the WSON8 probe have 8-pin headers.
-        Pins marked as NC on the RTE board and as IO2 and IO3 on the flash chip
-        do not require a connection.
+More information about `osfv_cli`:
 
-    - Example connection appearance:
+* [osfv-scripts repository](https://github.com/Dasharo/osfv-scripts/)
 
-    ![](../../../images/rte-v1.1.0-WSON8-SPI-header.jpg)
-
-1. Login to RTE via `ssh` or `minicom`.
-1. Connect and hold the WSON8 probe to the flash chip.
-1. Read the flash chip by executing the following command on RTE:
-
-    ```bash
-    ./flash.sh read dump.rom
-    ```
-
-1. If the reading was successful, the output from the command above should
-    contain the phrase `Verifying flash... VERIFIED.`. Only after the entire
-    script has been executed, the WSON8 probe can be disconnected.
-1. Connect and hold again the WSON8 probe to the flash chip.
-1. Write the flash chip by executing the following command on RTE:
-
-    ```bash
-    ./flash.sh write coreboot.rom
-    ```
-
-1. If the writing was successful, the output from the command above should
-    contain the phrase `Verifying flash... VERIFIED.`. Only after the entire
-    script has been executed, the WSON8 probe can be disconnected.
-1. Reconnect the battery and screw in the bottom cover.
-1. Power on the device. If the platform is booting up and basic functionalities
-    are working, the entire procedure was successful.
+* [osfv_cli
+  documentation](https://github.com/Dasharo/osfv-scripts/blob/main/osfv_cli/README.md)
