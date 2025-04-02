@@ -17,6 +17,7 @@ jobs:
 
       - name: Test links
         uses: 3mdeb/lychee-log-action@main
+        continue-on-error: false
 
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
