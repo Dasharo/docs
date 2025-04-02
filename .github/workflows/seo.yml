@@ -16,7 +16,9 @@ jobs:
         uses: actions/checkout@v4.1.1
 
       - name: Test links
-        uses: 3mdeb/lychee-log-action@main
+        uses: EduKav1813/lychee-log-action@fix-branch
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
