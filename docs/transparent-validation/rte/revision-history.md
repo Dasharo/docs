@@ -1,5 +1,12 @@
 # Revision history
 
+## v1.1.1
+
+* Footprint of Q5 adapted to the recommended footprint of
+  [Si9435bdy](https://www.vishay.com/docs/72245/si9435bd.pdf)
+* Refactored the USB data lines routes to have more equal length
+* Changed board version to v1.1.1 on PCB and the schematics
+
 ## v1.1.0
 
 * added `Open hardware` logo
