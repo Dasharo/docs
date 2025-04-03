@@ -19,11 +19,14 @@ Test results for this release can be found
 
 ### Added
 
+- MSI PRO Z790-P board support with the same feature set as PRO Z690-A
+- [MSI FLASHBIOS recovery support](https://docs.dasharo.com/unified/msi/recovery/#using-msi-flashbios-button)
+- [Raptor Lake-S CPU support](https://github.com/Dasharo/dasharo-issues/issues/130)
 - [Dual TPM feature in coreboot. When ME is disabled, fTPM becomes inactive as well and chipset will route the TPM traffic to SPI bus. coreboot will now probe for all possible TPMs and initialize the one that is currently active.](https://github.com/Dasharo/dasharo-issues/issues/113)
-
-### Changed
-
 - [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
+- [Updated microcode to newer version, refer to SBOM](https://github.com/coreboot/intel-microcode/commit/390edfb411ba7de8559ad40597c7acb6c6a1ea96)
+- [Updated ME to newer version, refer to SBOM](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7e06)
+- [Make NVIDIA RTX 3060 spawn HD Audio device in Device Manager](https://github.com/Dasharo/dasharo-issues/issues/364)
 - Heads Linux is used as a payload
 - [Updated Flash Descriptor to enlarge BIOS region; refer to SBOM section below](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7e06)
 - ME hardcoded to be HAP disabled for heads builds. Discrete SPI TPM in JTPM1
