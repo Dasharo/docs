@@ -126,18 +126,18 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ## v1.0.15 - 2022-05-31
 
-### Changed
+### Added
 
+- Initial support for the Protectli VP2410 platform
+- TPM2 support
+- [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
+- [UEFI compatibility](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface/)
+- [Protectli boot logo](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/304-custom-logo/)
+- [UEFI shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
 - Customized Network boot menu and strings
-
-### Fixed
-
-- SMBIOS memory information showing 0 MB DRAM in setup
-
-### Known issues
-
-- [USB 2.0 sticks not detected on VP2410](https://github.com/Dasharo/dasharo-issues/issues/99)
-- [S3 resume does not work in Geminilake FSP](https://github.com/Dasharo/dasharo-issues/issues/27)
+- [Dasharo SMBIOS compatibility](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31L-smbios/)
+- [USB 2.0 sticks support](https://github.com/Dasharo/dasharo-issues/issues/99)
+- [S3 resume ](https://github.com/Dasharo/dasharo-issues/issues/27)
 
 ### Binaries
 
