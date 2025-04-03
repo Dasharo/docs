@@ -14,8 +14,12 @@ Test results for this platform can be found
 
 ## v1.0.14 - 2022-05-13
 
-### Changed
+### Added
 
+- Initial support for the Protectli FW6 platform
+- SeaBIOS/legacy boot support
+- iPXE Network Boot support
+- [Protectli boot logo](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/304-custom-logo/)
 - Throttling temperature to 75 Celsius degrees
 
 ### Known issues
