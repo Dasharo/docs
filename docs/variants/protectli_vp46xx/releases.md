@@ -328,10 +328,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - Customized setup menu keys
 - Configurable boot order
 - Configurable boot options
-
-### Changed
-
-- ME version to 14.0.47.1558
+- ME version 14.0.47.1558
 
 ### Known issues
 
