@@ -234,24 +234,17 @@ Test results for this release can be found
 - [Support for logo customization](https://docs.dasharo.com../../guides/logo-customization/)
 - UEFI 2.8 errata C compliance in EDKII fork
 - [Firmware Update Mode feature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
-
-### Changed
-
 - [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
 - [Updated microcode to newer version, refer to SBOM](https://github.com/coreboot/intel-microcode/commit/390edfb411ba7de8559ad40597c7acb6c6a1ea96)
 - [Updated ME to newer version, refer to SBOM](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7e06)
-
-### Fixed
-
-- [NVIDIA RTX 3060 does not spawn HD Audio device in Device Manager](https://github.com/Dasharo/dasharo-issues/issues/364)
-- [MSI FLASHBIOS feature is not working](https://github.com/Dasharo/dasharo-issues/issues/131)
-- [Reset to defaults with F9 causes the wrong settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
-- [Popup with information about recovery mode is displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/269)
-- Too low watchdog timeout value causing reset loops on DDR5 boards with
-  bigger amount of RAM
-- [Chipset Watchdog timeout value does not change actual watchdog trigger time](https://github.com/Dasharo/dasharo-issues/issues/413)
-- Missing ACPI objects errors in Linux dmesg
-- Missing Setup Password option
+- [Make NVIDIA RTX 3060 spawn HD Audio device in Device Manager](https://github.com/Dasharo/dasharo-issues/issues/364)
+- [Reset to defaults with F9 causes the right settings to be restored](https://github.com/Dasharo/dasharo-issues/issues/355)
+- [Popup with information about recovery mode is no longer displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/269)
+- Too low watchdog timeout value no longer causing reset loops on DDR5 boards
+  with bigger amount of RAM
+- [Chipset Watchdog timeout value changes actual watchdog trigger time](https://github.com/Dasharo/dasharo-issues/issues/413)
+- No missing ACPI objects errors in Linux dmesg
+- Setup Password option
 
 ### Binaries
 
