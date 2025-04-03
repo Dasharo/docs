@@ -137,7 +137,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - Customized Network boot menu and strings
 - [Dasharo SMBIOS compatibility](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31L-smbios/)
 - [USB 2.0 sticks support](https://github.com/Dasharo/dasharo-issues/issues/99)
-- [S3 resume ](https://github.com/Dasharo/dasharo-issues/issues/27)
+- [S3 resume](https://github.com/Dasharo/dasharo-issues/issues/27)
 
 ### Binaries
 

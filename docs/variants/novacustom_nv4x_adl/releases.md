@@ -288,7 +288,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Open-source Embedded Controller Firmware](https://docs.dasharo.com/unified/novacustom/recovery/#ec-firmware-recovery)
 - [The external headset connected to the jack slot works properly](https://github.com/Dasharo/dasharo-issues/issues/254)
 - [ISO keyboard works with non-US layouts NV4xMx](https://github.com/Dasharo/dasharo-issues/issues/259)
-- [Sleep working consistently ](https://github.com/Dasharo/dasharo-issues/issues/261)
+- [Sleep working consistently](https://github.com/Dasharo/dasharo-issues/issues/261)
 - [The connected RJ45 cable to the Ethernet socket working properly in Windows 11](https://github.com/Dasharo/dasharo-issues/issues/264)
 - [Functional touchpad ON/OFF switch Fn key](https://github.com/Dasharo/dasharo-issues/issues/38)
 
