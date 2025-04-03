@@ -57,7 +57,7 @@ Test results for this release can be found
 - [Open-source Embedded Controller Firmware](https://docs.dasharo.com/unified/novacustom/recovery/#ec-firmware-recovery)
 - [The external headset connected to the jack slot works properly](https://github.com/Dasharo/dasharo-issues/issues/254)
 - [ISO keyboard works with non-US layouts NV4xMx](https://github.com/Dasharo/dasharo-issues/issues/259)
-- [Sleep working consistently ](https://github.com/Dasharo/dasharo-issues/issues/261)
+- [Sleep working consistently](https://github.com/Dasharo/dasharo-issues/issues/261)
 - [Functional touchpad ON/OFF switch Fn key](https://github.com/Dasharo/dasharo-issues/issues/38)
 - [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
 - Heads Linux is used as a payload
