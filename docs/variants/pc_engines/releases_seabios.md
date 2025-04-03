@@ -16,6 +16,7 @@ Test results for this release can be found
 
 ### Added
 
+- [apu2, apu3, apu4 and apu6 support added](https://github.com/Dasharo/dasharo-issues/issues/909)
 - Rebased with official coreboot repository commit 5a0207e (tag 24.05)
 - [coreboot 24.05: security/tpm: support compiling in multiple TPM drivers](https://doc.coreboot.org/releases/coreboot-24.05-relnotes.html#security-tpm-support-compiling-in-multiple-tpm-drivers)
 - [coreboot 24.02 and 24.02.01: lib/rtc: Fix off-by-one error in February day count in leap year](https://doc.coreboot.org/releases/coreboot-24.02-relnotes.html#lib-rtc-fix-off-by-one-error-in-february-day-count-in-leap-year)
@@ -27,18 +28,11 @@ Test results for this release can be found
 - [coreboot 4.21: soc/amd: read domain resource window configuration from hardware](https://doc.coreboot.org/releases/coreboot-4.21-relnotes.html#soc-amd-read-domain-resource-window-configuration-from-hardware)
 - [coreboot 4.20.1: cpu/x86/smm: Add PCI resource store functionality](https://doc.coreboot.org/releases/coreboot-4.20.1-relnotes.html#cpu-x86-smm-add-pci-resource-store-functionality)
 - [coreboot 4.20.1: drivers/usb/acpi: Add USB _DSM method to enable/disable USB LPM per port](https://doc.coreboot.org/releases/coreboot-4.20.1-relnotes.html#drivers-usb-acpi-add-usb-dsm-method-to-enable-disable-usb-lpm-per-port)
-
-### Changed
-
 - [Code base was moved to Dasharo Patchqueue Initiative](https://github.com/Dasharo/dasharo-pq?tab=readme-ov-file#background)
 - [Sign of Life date changed to 19700101 due to making Dasharo Patchqueue Initiative based build reproducible](https://github.com/Dasharo/dasharo-issues/issues/889)
 - toolchain updates GCC 13.2.0, CMake 3.27.7
 - ACPI 6.4 specification compliance
 - sortbootorder update to v24.05.00.01
-
-### Removed
-
-- [apu1, apu5 and apu7 support removed](https://github.com/Dasharo/dasharo-issues/issues/909)
 
 ### Known issues
 
