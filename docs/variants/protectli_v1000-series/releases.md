@@ -31,9 +31,6 @@ Test results for this release can be found here:
 - SMBIOS fields and strings to reduce differences in SMBIOS between
   proprietary FW and Dasharo
 - Intel-specific HDA verbs, for proper audio functionality
-
-### Changed
-
 - Disabled audio DSP
 - Disabled SATA due to lack of HW support
 - Rebased on official coreboot 4.21
@@ -48,14 +45,11 @@ Test results for this release can be found here:
 - Scope of reset to default hotkey to global in firmware setup
 - Disabled Intel HWP feature causing a decreased network bandwidth due to too
   aggressive CPU power savings, thus not reaching the required performance.
-
-### Fixed
-
-- Auto-boot timeout default value in setup not restored to proper value by F9 key
-- Not all Secure Boot settings required a reset
-- Errors related to WiFi L0 showing up in dmesg
-- Not all Dasharo variables were measured at boot
-- Windows default drivers not probing successfully due to SSID programming
+- Auto-boot timeout default value in setup gets restored to proper value by F9 key
+- All Secure Boot settings require a reset
+- No errors related to WiFi L0 showing up in dmesg
+- All Dasharo variables get measured at boot
+- Windows default drivers probe successfully
 
 #### Binaries
 
