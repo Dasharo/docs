@@ -51,8 +51,14 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-key
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
 
-### Changed
+### Added
 
+- Support for NovaCustom NV4x 12th Gen
+- [Open-source Embedded Controller Firmware](https://docs.dasharo.com/unified/novacustom/recovery/#ec-firmware-recovery)
+- [The external headset connected to the jack slot works properly](https://github.com/Dasharo/dasharo-issues/issues/254)
+- [ISO keyboard works with non-US layouts NV4xMx](https://github.com/Dasharo/dasharo-issues/issues/259)
+- [Sleep working consistently ](https://github.com/Dasharo/dasharo-issues/issues/261)
+- [Functional touchpad ON/OFF switch Fn key](https://github.com/Dasharo/dasharo-issues/issues/38)
 - [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
 - Heads Linux is used as a payload
 
