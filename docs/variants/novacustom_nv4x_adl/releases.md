@@ -286,14 +286,11 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Vboot Recovery Popup](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/#vbo009001-recovery-boot-popup-firmware)
 - Fullscreen setup menu
 - [Open-source Embedded Controller Firmware](https://docs.dasharo.com/unified/novacustom/recovery/#ec-firmware-recovery)
-
-### Fixed
-
-- [The external headset connected to the jack slot doesn't work](https://github.com/Dasharo/dasharo-issues/issues/254)
-- [ISO keyboard issue for non-US layouts NV4xMx](https://github.com/Dasharo/dasharo-issues/issues/259)
-- [Sleep sometimes not working](https://github.com/Dasharo/dasharo-issues/issues/261)
-- [The connected RJ45 cable to the Ethernet socket causes a hardware error on Windows 11](https://github.com/Dasharo/dasharo-issues/issues/264)
-- [The touchpad ON/OFF switch Fn key is not functional](https://github.com/Dasharo/dasharo-issues/issues/38)
+- [The external headset connected to the jack slot works properly](https://github.com/Dasharo/dasharo-issues/issues/254)
+- [ISO keyboard works with non-US layouts NV4xMx](https://github.com/Dasharo/dasharo-issues/issues/259)
+- [Sleep working consistently ](https://github.com/Dasharo/dasharo-issues/issues/261)
+- [The connected RJ45 cable to the Ethernet socket working properly in Windows 11](https://github.com/Dasharo/dasharo-issues/issues/264)
+- [Functional touchpad ON/OFF switch Fn key](https://github.com/Dasharo/dasharo-issues/issues/38)
 
 ### Known issues
 
