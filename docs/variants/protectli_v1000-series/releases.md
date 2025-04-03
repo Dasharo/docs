@@ -99,3 +99,5 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/raw/master/customer-keys
 [protectli_v1610_v0.9.3.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_jsl/v0.9.3/protectli_v1610_v0.9.3.rom
 [protectli_v1610_v0.9.3.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_jsl/v0.9.3/protectli_v1610_v0.9.3.rom.sha256
 [protectli_v1610_v0.9.3.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_jsl/v0.9.3/protectli_v1610_v0.9.3.rom.sha256.sig
+
+## v0.9.0 .. v0.9.2 - Non-public engineering releases

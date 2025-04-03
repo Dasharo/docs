@@ -183,6 +183,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_nv4x_tgl_v1.5.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1.rom.sha256
 [novacustom_nv4x_tgl_v1.5.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v1.5.1/novacustom_nv4x_tgl_v1.5.1.rom.sha256.sig
 
+## v1.5.0 - Non-public engineering release
+
 ## v1.4.0 - 2023-02-24
 
 Test results for this release can be found
@@ -715,3 +717,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [coreboot 4.14 (with additional commits for Clevo NV41MZ board support)](https://gitlab.com/novacustom/coreboot/-/compare/4.14...v0.1.1?from_project_id=29249618)
 - [EDK2](https://github.com/MrChromebox/edk2/commit/659ed4cb983a66ec241c05f42b69ad4d2e47b714)
+
+[newsletter]: https://3mdeb.com/subscribe/nc_nv4x_11th.html
+
+## v0.1.0 .. v0.1.1: Non-public engineering releases

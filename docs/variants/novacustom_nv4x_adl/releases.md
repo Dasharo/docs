@@ -201,6 +201,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_nv4x_adl_v1.7.1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.1/novacustom_nv4x_adl_v1.7.1_dev_signed.rom.sha256
 [novacustom_nv4x_adl_v1.7.1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.1/novacustom_nv4x_adl_v1.7.1_dev_signed.rom.sha256.sig
 
+## v1.7.0 - Non-public engineering release
+
 ## v1.6.0 - 2023-04-19
 
 ### Added

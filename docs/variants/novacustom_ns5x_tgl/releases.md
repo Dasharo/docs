@@ -183,6 +183,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_ns5x_tgl_v1.5.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.1/novacustom_ns5x_tgl_v1.5.1.rom.sha256
 [novacustom_ns5x_tgl_v1.5.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_tgl/v1.5.1/novacustom_ns5x_tgl_v1.5.1.rom.sha256.sig
 
+## v1.5.0 - Non-public engineering release
+
 ## v1.4.0 - 2023-03-02
 
 ### Added

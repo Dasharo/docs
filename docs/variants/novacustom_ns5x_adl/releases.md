@@ -179,6 +179,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_ns5x_adl_v1.7.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom.sha256
 [novacustom_ns5x_adl_v1.7.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/v1.7.1/novacustom_ns5x_adl_v1.7.1.rom.sha256.sig
 
+## v1.7.0 - Non-public engineering release
+
 ## v1.6.0 - 2023-04-07
 
 Test results for this release can be found
