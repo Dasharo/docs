@@ -16,8 +16,12 @@ Test results for this platform can be found
 
 ## v1.0.14 - 2022-05-13
 
-### Changed
+### Added
 
+- Initial support for the Protectli FW6 platform
+- SeaBIOS/legacy boot support
+- iPXE Network Boot support
+- [Protectli boot logo](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/304-custom-logo/)
 - Throttling temperature to 75 Celsius degrees
 
 ### Known issues
@@ -57,3 +61,5 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [v1.0.14_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom
 [v1.0.14_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256
 [v1.0.14_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256.sig
+
+## v1.0.0 .. v1.0.13: Non-public engineering releases
