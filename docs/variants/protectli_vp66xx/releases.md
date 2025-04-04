@@ -6,12 +6,8 @@ for Protectli VP6630/VP6650/VP6670
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to Protectli Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
+"Subscribe to Protectli Dasharo Release Newsletter") }}
 
 ## v0.9.1 - 2025-01-23
 
@@ -135,7 +131,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Intel microcode based on ADL R0 0x432 revision microcode-20240312](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240312/intel-ucode/06-9a-04)
 - [Intel microcode based on RPL-H/P/PX 6+8 J0 0x4121 revision microcode-20240312](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240312/intel-ucode/06-ba-02)
 
-[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [protectli_vp66xx_v0.9.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1.rom
 [protectli_vp66xx_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1.rom.sha256
 [protectli_vp66xx_v0.9.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.1/protectli_vp66xx_v0.9.1.rom.sha256.sig

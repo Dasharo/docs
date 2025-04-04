@@ -11,12 +11,8 @@ For detailed information on our validation setup, please refer to the
 understanding of the nomenclature reasons behind the Z690/Z790 boards, we
 recommend seeing our [FAQ](../../unified/msi/faq.md).
 
-<center>
-
-[Subscribe to MSI PRO Z790-P (WIFI) (DDR5) Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("b7d54f08-baae-4762-9ce2-c1df12bdca58",
+"Subscribe to MSI PRO Z790-P (WIFI) (DDR5) Dasharo Release Newsletter") }}
 
 ## v0.9.2 - 2024-12-10
 
@@ -278,7 +274,6 @@ subscription via Dasharo Pro Package newsletter.
 - [Intel microcode based on ADL H0 0x0000002c revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-97-05)
 - [Intel microcode based on RPL B0 0x00000113 revision microcode-20230613](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20230613/intel-ucode/06-b7-01)
 
-[newsletter]: https://3mdeb.com/subscribe/msi_z790_p_uefi.html
 [msi_ms7e06_v0.9.2_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.cap.sha256
 [msi_ms7e06_v0.9.2_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4.cap.sha256.sig
 [msi_ms7e06_v0.9.2_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/v0.9.2/msi_ms7e06_v0.9.2_ddr4_dev_signed.cap.sha256

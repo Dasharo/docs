@@ -85,6 +85,7 @@ plugins:
       shadow: true
       manual: false
   - search
+  - macros
   - mkdocs-video
   - redirects:
       redirect_maps:

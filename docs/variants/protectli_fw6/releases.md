@@ -6,10 +6,8 @@ for Protectli FW6.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-[Subscribe to Protectli Dasharo Release Newsletter]
-[newsletter]{.md-button .md-button--primary .center}
-</center>
+{{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
+"Subscribe to Protectli Dasharo Release Newsletter") }}
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
@@ -53,7 +51,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + VBIOS blob for FW6D/E,
     SHA256: d1c746127e5288942efae65907739e18ff395fab70925b44dbafafd9e7b30cd7
 
-[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [v1.0.14_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom
 [v1.0.14_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256
 [v1.0.14_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_kbl/v1.0.14/protectli_vault_kbl_v1.0.14.rom.sha256.sig

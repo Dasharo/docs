@@ -6,12 +6,8 @@ NovaCustom V560TU
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to NovaCustom V560TU 14th Gen Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("d8319dd2-9108-48c5-86bf-318bb2ae94d2",
+"Subscribe to NovaCustom V560TU 14th Gen Dasharo Release Newsletter") }}
 
 ## v1.0.0 - coming soon
 
@@ -84,7 +80,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Dasharo coreboot fork based on 24.02 revision 316f964c](https://github.com/Dasharo/coreboot/tree/316f964c)
 - [Dasharo EDKII fork based on edk2-stable202402 revision cc2be228](https://github.com/Dasharo/edk2/tree/cc2be228)
 
-[newsletter]: https://3mdeb.com/subscribe/nc_v560tu_14th.html
 [novacustom_v56x_mtl_ec_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v56x_mtl/v0.9.0/novacustom_v56x_mtl_ec_v0.9.0.rom
 [novacustom_v56x_mtl_ec_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v56x_mtl/v0.9.0/novacustom_v56x_mtl_ec_v0.9.0.rom.sha256
 [novacustom_v56x_mtl_ec_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v56x_mtl/v0.9.0/novacustom_v56x_mtl_ec_v0.9.0.rom.sha256.sig
