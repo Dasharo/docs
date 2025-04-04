@@ -44,4 +44,4 @@ urllib3==2.2.2
 virtualenv==20.26.3
 watchdog==4.0.2
 markdown-grid-tables==0.4.0
-mkdocs-macros-plugin
+mkdocs-macros-plugin==1.3.7
