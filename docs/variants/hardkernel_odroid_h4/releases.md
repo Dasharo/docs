@@ -16,12 +16,8 @@ Hardkernel ODROID H4
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to Hardkernel ODROID H4 Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("d4b31e80-7663-4f6b-8fcb-f5ff551eb1d6",
+"Subscribe to Hardkernel ODROID H4 Dasharo Release Newsletter") }}
 
 ## v0.9.0 - 2025-02-20
 
@@ -92,7 +88,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Intel microcode version ADL-N N0 0x17 07/12/2023](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-be-00)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
 
-[newsletter]: https://3mdeb.com/subscribe/odroid_h4_plus_uefi.html
 [hardkernel_odroid_h4_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/v0.9.0/hardkernel_odroid_h4_v0.9.0.rom.sha256
 [hardkernel_odroid_h4_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/v0.9.0/hardkernel_odroid_h4_v0.9.0.rom.sha256.sig
 [hardkernel_odroid_h4_v0.9.0_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/v0.9.0/hardkernel_odroid_h4_v0.9.0_dev_signed.rom.sha256

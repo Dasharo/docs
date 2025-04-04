@@ -6,12 +6,8 @@ NovaCustom NS5x/7x 11th Gen
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to NovaCustom NS5x/7x 11th Gen Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("8f2fb839-a6ce-40b8-a26d-8d1fa4de12f7",
+"Subscribe to NovaCustom NS5x/7x 11th Gen Dasharo Release Newsletter") }}
 
 ## v1.5.2 - 2024-01-17
 
@@ -402,5 +398,3 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [coreboot based on 4.16 revision ecf1e9b8](https://github.com/Dasharo/coreboot/tree/ecf1e9b8)
 - [tianocore based on e0334c228ce4ba51f47ff79a118f214031d4650f revision ec6805c2](https://github.com/Dasharo/edk2/tree/ec6805c2)
-
-[newsletter]: https://3mdeb.com/subscribe/nc_ns5x_7x_11th.html

@@ -6,10 +6,8 @@ open-source firmware development for PC Engines apu2/3/4/6 platform.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-[Subscribe to Dasharo for PC Engines Release Notification Newsletter]
-[newsletter]{.md-button .md-button--primary .center}
-</center>
+{{ subscribe_form("667a3af1-424e-439e-9144-57bfcf921ca4",
+"Subscribe to Dasharo for PC Engines Release Notification Newsletter") }}
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1670191276).
@@ -95,7 +93,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [AMD System Management Unit - Software Configuration Settings binary based on 1433 revision a8db7dfe](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/SmuScs.bin)
 - [AMD Hudson xHCI firmware based on 1.1.0.0068 revision a8db7dfe](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/xhci.bin)
 
-[newsletter]: https://3mdeb.com/subscribe/pcengines_seabios.html
 [pcengines_apu2_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v0.9.0/pcengines_apu2_v0.9.0.rom.sha256
 [pcengines_apu2_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v0.9.0/pcengines_apu2_v0.9.0.rom.sha256.sig
 [pcengines_apu2_v0.9.0_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v0.9.0/pcengines_apu2_v0.9.0_dev_signed.rom.sha256

@@ -6,12 +6,8 @@ Raptor Computing Systems Talos II
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to Release Newsletter][newsletter]
-{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("0f9f6d56-cc30-4caf-8087-bec92f1b9360",
+"Subscribe to Release Newsletter") }}
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1KpmuPEkWOj3SieophUbgf7CF6mydliMsEDLtOFOrKn0/edit?usp=sharing).
@@ -110,7 +106,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [skiboot based on 7f90b9cd revision fa060c2c](https://github.com/Dasharo/skiboot/tree/fa060c2c)
 - [heads based on fdbd9b2 revision 66f0fce0870b729d](https://github.com/osresearch/heads/tree/66f0fce0870b729d)
 
-[newsletter]: https://3mdeb.com/subscribe/raptor_cs_talos_2_heads.html
 [zImage_v0.6.0_file]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_zImage_v0.6.0.bundled
 [zImage_v0.6.0_hash]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_zImage_v0.6.0.bundled.sha256
 [zImage_v0.6.0_sig]: https://3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.6.0/raptor-cs_talos-2_zImage_v0.6.0.bundled.sha256.sig

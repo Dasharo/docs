@@ -6,10 +6,8 @@ for Protectli VP2410.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-[Subscribe to Protectli Dasharo Release Newsletter]
-[newsletter]{.md-button .md-button--primary .center}
-</center>
+{{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
+"Subscribe to Protectli Dasharo Release Newsletter") }}
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1033426620).
@@ -163,7 +161,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + CPU signature: 0x0706A0, Date: 12.07.2017, Revision: 0x26
     + CPU signature: 0x0706A1, Date: 09.06.2020, Revision: 0x34
 
-[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [protectli_vp2410_v1.1.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom
 [protectli_vp2410_v1.1.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom.sha256
 [protectli_vp2410_v1.1.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.1.1/protectli_vp2410_v1.1.1.rom.sha256.sig

@@ -6,8 +6,8 @@ Dell OptiPlex 7010/9010
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-[Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
+{{ subscribe_form("8c26dbbd-7a0e-4a58-b888-d46feea41896",
+"Subscribe to Dell OptiPlex 7010/9010 Dasharo Release Newsletter") }}
 
 ## v0.1.1 - 2024-12-17
 
@@ -68,6 +68,5 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell
 - [Intel microcode based on SNB D2/G1/Q0 0x0000002f revision microcode-20240531](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-2a-07)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
 
-[newsletter]: https://3mdeb.com/subscribe/optiplex_7010_9010_uefi.html
 [dell_optiplex_7010_9010_v0.1.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.1/dell_optiplex_7010_9010_v0.1.1.rom.sha256
 [dell_optiplex_7010_9010_v0.1.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.1/dell_optiplex_7010_9010_v0.1.1.rom.sha256.sig

@@ -11,10 +11,8 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-[Subscribe to Dasharo compatible with MSI PRO Z690-A Newsletter]
-[newsletter]{.md-button .md-button--primary .center}
-</center>
+{{ subscribe_form("bae1674f-bd25-4a12-b6b5-c2099739cd93",
+"Subscribe to Dasharo compatible with MSI PRO Z690-A Newsletter") }}
 
 ## v1.1.4 - 2024-12-10
 
@@ -695,7 +693,6 @@ gpg --verify msi_ms7d25_v0.1.0.rom.sha256.sig msi_ms7d25_v0.1.0.rom.sha256
 - [coreboot based on a552cfc9 revision 53948cd8](https://github.com/Dasharo/coreboot/commit/53948cd8)
 - [edk2 based on 4d2846ba revision 4d2846ba](https://github.com/Dasharo/edk2/tree/4d2846ba)
 
-[newsletter]: https://3mdeb.com/subscribe/msi_z690_a_uefi.html
 [msi_ms7d25_v1.1.4_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.4/msi_ms7d25_v1.1.4_ddr4.cap.sha256
 [msi_ms7d25_v1.1.4_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.4/msi_ms7d25_v1.1.4_ddr4.cap.sha256.sig
 [msi_ms7d25_v1.1.4_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/v1.1.4/msi_ms7d25_v1.1.4_ddr4_dev_signed.cap.sha256
