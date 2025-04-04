@@ -15,9 +15,10 @@ For details about our release process please read
 
 ## v1.0.0 - coming soon
 
-Note: Due to [issue 1142](https://github.com/Dasharo/dasharo-issues/issues/1142)
-this update must be installed by following the process described in
-[Firmware Update - Manual Steps](https://docs.dasharo.com/unified/novacustom/firmware-update/#prerequisites)\
+!!! warning
+    Note: Due to [issue 1142](https://github.com/Dasharo/dasharo-issues/issues/1142),
+    this update must be installed by following the process described in
+    [Firmware Update - Manual Steps](https://docs.dasharo.com/unified/novacustom/firmware-update/#prerequisites)
 
 ## v0.9.0 - 2024-07-18
 
