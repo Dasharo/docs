@@ -33,6 +33,34 @@ git submodule update --init --checkout
 git remote add upstream https://review.coreboot.org/coreboot.git
 ```
 
+## Commit message guidelines
+
+### Commit quality
+
+We keep patches for many repositories, but mainly for
+[coreboot](https://github.com/Dasharo/coreboot/) and [edk2](https://github.com/Dasharo/edk2).
+Even when creating commits in our forks, we should follow the guidelines
+of the respective upstream projects, so the future upstream process is easier.
+
+In general, we want ensure that commits getting merged are of a similar quality
+as required by upstream projects
+([guidelines for coreboot](https://doc.coreboot.org/contributing/gerrit_guidelines.html)).
+
+We want to stress specifically on the following aspects:
+* each commit can be built,
+* each commit has body message, providing more context, and explaining **why**
+the given change was necessary,
+* before merging a PR, we squash the changes if necessary, to achieve a similar
+granularity as if we would be sending the patch for upstream review.
+
+### Upstream-Status
+
+This is an extra tag in git commit body inspired by how patches are maintained
+in the [Yocto Project](https://docs.yoctoproject.org/contributor-guide/recipe-style-guide.html#patch-upstream-status).
+
+The goal is to keep track of which patches should (eventually) be upstreamed,
+and which patches are Dasharo-specific.
+
 ## Tags
 
 Tags for Dasharo releases across repositories in the Dasharo GitHub organization
