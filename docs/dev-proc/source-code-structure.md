@@ -61,6 +61,39 @@ in the [Yocto Project](https://docs.yoctoproject.org/contributor-guide/recipe-st
 The goal is to keep track of which patches should (eventually) be upstreamed,
 and which patches are Dasharo-specific.
 
+Currently, following `Upstream-Status` tags are available to choose from:
+
+**`Backport [revision]`**
+
+Patch has been backported from upstream. We should provide unique
+identification of the original source of the patch. Possible values for
+`revision`:
+
+* `CB:ID` - for coreboot gerrit ID, such as `CB:86758`, translating to:
+[CB:86750](https://review.coreboot.org/c/coreboot/+/86750)
+* git revision of the upstream project
+* link to the mailing message, where the path has been submitted
+
+**`Inappropriate [reason]`**
+
+We believe that patch is not applicable for the upstream project, and provide
+some reasining for it. Possible values for `reason`:
+
+* `Dasharo downstream` - patch specific to Dasharo distribution
+* other explanation - although we should try to avoid it
+
+**`Pending`**
+
+Patch classified as one for sending upstream, but not yet submitted.
+
+**`Submitted [where]`**
+
+Submitted to upstream. Possible value for `where`:
+
+* `CB:ID` - for coreboot gerrit ID, such as `CB:86758`, translating to:
+[CB:86750](https://review.coreboot.org/c/coreboot/+/86750)
+* for other cases, link to the review system should be provided
+
 ## Tags
 
 Tags for Dasharo releases across repositories in the Dasharo GitHub organization
