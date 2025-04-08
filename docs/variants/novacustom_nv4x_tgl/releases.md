@@ -6,12 +6,8 @@ NovaCustom NV4x 11th Gen
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to NovaCustom NV4x 11th Gen Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("68d08070-7966-476d-a2f0-212dda0e2723",
+"Subscribe to NovaCustom NV4x 11th Gen Dasharo Release Newsletter") }}
 
 ## v1.5.2 - 2024-01-11
 
@@ -719,5 +715,3 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [coreboot 4.14 (with additional commits for Clevo NV41MZ board support)](https://gitlab.com/novacustom/coreboot/-/compare/4.14...v0.1.1?from_project_id=29249618)
 - [EDK2](https://github.com/MrChromebox/edk2/commit/659ed4cb983a66ec241c05f42b69ad4d2e47b714)
-
-[newsletter]: https://3mdeb.com/subscribe/nc_nv4x_11th.html

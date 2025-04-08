@@ -6,10 +6,8 @@ for Protectli VP4630/VP4650/VP4670
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-[Subscribe to Protectli Dasharo Release Newsletter]
-[newsletter]{.md-button .md-button--primary .center}
-</center>
+{{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
+"Subscribe to Protectli Dasharo Release Newsletter") }}
 
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
@@ -363,7 +361,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + CPU signature: 0x0806EC, Date: 28.04.2021, Revision: 0xEC
     + CPU signature: 0x0A0660, Date: 28.04.2021, Revision: 0xEA
 
-[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [protectli_vp4630_vp4650_v1.0.19.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.19/protectli_vp4630_vp4650_v1.0.19.rom
 [protectli_vp4630_vp4650_v1.0.19.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.19/protectli_vp4630_vp4650_v1.0.19.rom.sha256
 [protectli_vp4630_vp4650_v1.0.19.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.19/protectli_vp4630_vp4650_v1.0.19.rom.sha256.sig

@@ -6,12 +6,8 @@ NovaCustom NV4x 12th Gen
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to NovaCustom NV4x 12th Gen Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("310eac18-d302-478f-a617-5f5d65e8e0ac",
+"Subscribe to NovaCustom NV4x 12th Gen Dasharo Release Newsletter") }}
 
 ## v1.7.2 - 2024-01-03
 
@@ -307,7 +303,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Dasharo coreboot fork based on 1a8eb6c02103727431ac1ea23f4f507e49f3cde7 revision cd975d74](https://github.com/Dasharo/coreboot/tree/cd975d74)
 - [Dasharo EDKII fork based on e0334c228ce4ba51f47ff79a118f214031d4650f revision abfdef40](https://github.com/Dasharo/edk2/tree/abfdef40)
 
-[newsletter]: https://3mdeb.com/subscribe/nc_nv4x_12th.html
 [novacustom_nv4x_adl_ec_v1.4.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.4.0/novacustom_nv4x_adl_ec_v1.4.0.rom
 [novacustom_nv4x_adl_ec_v1.4.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.4.0/novacustom_nv4x_adl_ec_v1.4.0.rom.sha256
 [novacustom_nv4x_adl_ec_v1.4.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.4.0/novacustom_nv4x_adl_ec_v1.4.0.rom.sha256.sig
