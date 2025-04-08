@@ -1,6 +1,6 @@
 def define_env(env):
     """ Define macros for MkDocs """
-    
+
     @env.macro
     def subscribe_form(list_id, btn_text):
         return (
