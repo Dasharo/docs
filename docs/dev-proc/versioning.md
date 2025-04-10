@@ -109,3 +109,18 @@ e.g. PC Engines. Examples:
 
 Most recent status should be reflected in
 [3mdeb-secpack](https://github.com/3mdeb/3mdeb-secpack) repository.
+
+## Promotion to production-level versioning (v1.0.0 and up)
+
+A release may be promoted to v1.0.0 once it meets the following criteria:
+
+- Historical Foundation: There have been at least two releases targeting this
+  platform or one of its variants, targeting diverse user bases, over a span of
+  no fewer than five months.
+- Sales Validation: Internal metrics confirm that a significant volume of
+  hardware devices were sold over the stated period.
+- Testing Metrics: A minimum of 800 tests executed and a minimum pass rate of
+  98%.
+
+A release not meeting these criteria may only use a version number with 0 as its
+major component.
