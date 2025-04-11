@@ -1,5 +1,14 @@
 # MSI PRO Z690-A (WIFI) (DDR4) Dasharo Release Notes
 
+This is a Dasharo Pro Package Release. o obtain access to the pre-built binaries,
+you need to [subscribe to the Dasharo Pro Package subscriber](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1year-desktop/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter,
+and gain entry to the Dasharo Premier Support invite-only live chat
+on the Matrix network, enabling direct engagement with the Dasharo Team
+and fellow subscribers for personalized, priority assistance.
+
 Following Release Notes describe status of Open Source Firmware development for
 MSI PRO Z690-A (WIFI) DDR4 and MSI PRO Z690-A (WIFI).
 
@@ -82,12 +91,6 @@ Test results for this release can be found
 [sha256][msi_ms7d25_v1.1.4_ddr5_dev_signed.rom_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.4_ddr5_dev_signed.rom_sig]{.md-button}
 (msi_ms7d25_v1.1.4_ddr5_dev_signed.rom)
-
-This is a Dasharo Pro Package Release. To obtain access to the pre-built
-binaries you will have to
-[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Pro Package newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
