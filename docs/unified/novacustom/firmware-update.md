@@ -17,12 +17,6 @@ firmware version is currently installed on your device.
 
     ## Prerequisites
 
-    Depending on the firmware version, there may be manual steps required to ensure
-    that the firmware can be updated. `11th Gen` devices starting from version v1.5.0
-    and `12th Gen` devices starting from version v1.7.0 have support for [Firmware
-    Update Mode](#firmware-update-mode). For older versions, please continue with
-    the [Updating older versions](#updating-older-versions) section.
-
     Your firmware version can be checked by entering the
     [Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md)
     using the ++f2++ key while booting.
@@ -31,10 +25,42 @@ firmware version is currently installed on your device.
     > binaries themselves by following the steps under the [Manual
     > update](#manual-update) section.
 
+    ### Capsule Update via fwupd
+
+    fwupd and Capsule Update are available starting with the following versions:
+
+    | Generation | Version |
+    | ---------- | ------- |
+    | 11th       | 1.6.0   |
+    | 12th       | 1.8.0   |
+    | 14th       | 1.0.0   |
+
+    !!! note
+        Make sure Intel ME is disabled before attempting Capsule Update or
+        updating via fwupd. See [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
+        for more details.
+
+    To update your firmware, run the following commands:
+
+    ```bash
+    $ sudo fwupdtool refresh
+    $ sudo fwupdtool update
+    ```
+
+    or use any other fwupd front-end of your choice, like GNOME Firmware Update.
+
     ### Firmware Update Mode
 
-    If the currently installed Dasharo version supports Firmware Update Mode, follow
-    the steps outlined in the [generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
+    Firmware Update Mode is available starting with the following versions:
+
+    | Generation | Version |
+    | ---------- | ------- |
+    | 11th       | 1.5.0   |
+    | 12th       | 1.7.0   |
+    | 14th       | Any     |
+
+    To update using Firmware Update Mode, follow the
+    [generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
 
     Check out our [YouTube video](https://www.youtube.com/watch?v=muWjhrQ7bQk)
     for a demonstration of Firmware Update Mode.
