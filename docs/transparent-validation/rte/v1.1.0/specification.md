@@ -82,46 +82,53 @@ Maximum voltage for all data signals: 3.3 V.
 
 ### GPIO header (2)
 
-Second GPIO header (`J10`) is a 1x4 pin header straight type 2.54mm pitch. It is
-derived from GPIO expander on RTE board. They are accessible for general use. By
-default, these GPIOs are set to `INPUT` mode.
+Second GPIO header (`J10`) is a 1x4 pin header straight type 2.54mm pitch. It
+is derived from GPIO expander on RTE board. They are accessible for general
+use. By default, these GPIOs are set to `INPUT` mode. Some of them may have a
+fixed purpose by convention used in
+[OSFV](https://github.com/Dasharo/osfv-scripts). It is recommended to keep
+the connections to DUT consistent with the purpose of the pins.
 
 Maximum voltage for all data signals: 3.3 V.
 Expander GPIO: 25 mA maximum output current.
 
 <center>
 
-| Description | Pin # |
-|:-----------:|:-----:|
-| GPIO400     | 1     |
-| GPIO401     | 2     |
-| GPIO402     | 3     |
-| GPIO403     | 4     |
+| Description | Pin # | Usage |
+|:-----------:|:-----:|:-----:|
+| GPIO400     | 1     | Power LED |
+| GPIO401     | 2     | Free  |
+| GPIO402     | 3     | Free  |
+| GPIO403     | 4     | Free  |
 
 </center>
 
 ### GPIO header (3)
 
-Third GPIO header (`J11`) is a 1x9 pin header straight type 2.54mm pitch. It is
-derived from GPIO expander on RTE board with an additional connection to OC
+Third GPIO header (`J11`) is a 1x9 pin header straight type 2.54mm pitch. It
+is derived from GPIO expander on RTE board with an additional connection to OC
 (Open Collector) buffers. By default, these GPIOs are set to `OUTPUT` mode.
+Some of them have a fixed purpose by design (some of the pins are named on the
+schematics) and convention used in
+[OSFV](https://github.com/Dasharo/osfv-scripts). It is recommended to keep
+the connections to DUT consistent with the purpose of the pins.
 
 Maximum voltage for all data signals: 3.3 V.
 OC buffers: 40 mA maximum output current.
 
 <center>
 
-| Description | Pin # |
-|:-----------:|:-----:|
-| GPIO407     | 1     |
-| GPIO415     | 2     |
-| GPIO414     | 3     |
-| GPIO408     | 4     |
-| GPIO409     | 5     |
-| GPIO410     | 6     |
-| GPIO411     | 7     |
-| GPIO412     | 8     |
-| GPIO413     | 9     |
+| Description | Pin # | Usage |
+|:-----------:|:-----:|:-----:|
+| GPIO407     | 1     | Free  |
+| GPIO415     | 2     | Free  |
+| GPIO414     | 3     | Free  |
+| GPIO408     | 4     | Watchdog (PC Engines APU2 specific) |
+| GPIO409     | 5     | Reset button |
+| GPIO410     | 6     | Power button |
+| GPIO411     | 7     | Mode switch (PC Engines APU2 specific) |
+| GPIO412     | 8     | CMOS clear |
+| GPIO413     | 9     | SPI Write Protect |
 
 </center>
 
