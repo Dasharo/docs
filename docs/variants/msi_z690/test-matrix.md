@@ -33,7 +33,7 @@ tested platforms: `MSI PRO Z690-A WiFi DDR4` and `MSI PRO Z690-A DDR5`.
 | 13.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
 | 14.  | [Custom Boot Keys][CBK]                           | CBK           | All                                  |
 | 15.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
-| 16.  | [CPU status][CPU]                                 | CPU           | CPU001.001, CPU001.002               |
+| 16.  | [CPU status][CPU]                                 | CPU           | CNB001.201, CNB001.301               |
 | 17.  | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
 | 18.  | [Device power control operations][DPC]            | DPC           | All                                  |
 

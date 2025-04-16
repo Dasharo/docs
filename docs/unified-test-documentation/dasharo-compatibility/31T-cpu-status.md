@@ -13,7 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## CPU001.001 CPU works (Ubuntu)
+## CPU001.201 CPU works (Ubuntu)
 
 **Test description**
 
@@ -38,7 +38,7 @@ Check whether the mounted on the DUT CPU works.
 
 The `OPERATING_SYSTEM` screen should be displayed.
 
-## CPU001.002 CPU works (Windows)
+## CPU001.301 CPU works (Windows)
 
 **Test description**
 
@@ -63,7 +63,7 @@ Check whether the mounted on the DUT CPU works.
 
 The `OPERATING_SYSTEM` screen should be displayed.
 
-## CPU002.001 CPU cache enabled (Ubuntu)
+## CPU002.201 CPU cache enabled (Ubuntu)
 
 **Test description**
 
@@ -114,7 +114,7 @@ LEVEL4_CACHE_ASSOC                 0
 LEVEL4_CACHE_LINESIZE              0
 ```
 
-## CPU002.002 CPU cache enabled (Windows)
+## CPU002.301 CPU cache enabled (Windows)
 
 **Test description**
 
@@ -165,7 +165,7 @@ CacheType     : 5
 InstalledSize : 8192
 ```
 
-## CPU003.001 Multiple CPU support (Ubuntu)
+## CPU003.201 Multiple CPU support (Ubuntu)
 
 **Test description**
 
@@ -210,7 +210,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ```
 
-## CPU003.002 Multiple CPU support (Windows)
+## CPU003.301 Multiple CPU support (Windows)
 
 **Test description**
 
@@ -248,7 +248,7 @@ NumberOfCores
 4
 ```
 
-## CPU004.001 Multiple-core support (Ubuntu)
+## CPU004.201 Multiple-core support (Ubuntu)
 
 **Test description**
 
@@ -293,7 +293,7 @@ Socket(s):                       2
 NUMA node(s):                    2
 ```
 
-## CPU004.002 Multiple-core support (Windows)
+## CPU004.301 Multiple-core support (Windows)
 
 **Test description**
 

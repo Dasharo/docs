@@ -38,7 +38,7 @@ Hardkernel devices.
 | 26. | [USB booting][UBT]                    | UBT           | All                                  |
 | 27. | <!--[Setup Menu information][SET]-->  Setup Menu information | SET | All                     |
 | 28. | [Ubuntu booting performance test][BUB]| BUB           | All                                  |
-| 29. | [CPU status][CPU]                     | CPU           | CPU001.001, CPU002.001, CPU003.001, CPU004.001|
+| 29. | [CPU status][CPU]                     | CPU           | CNB001.201, CPU002.001, CPU003.001, CPU004.001|
 | 30. | [Auto boot time-out][BMM]             | BMM           | All                                  |
 
 [CBO]: ../../unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
