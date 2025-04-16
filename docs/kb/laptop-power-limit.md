@@ -13,7 +13,7 @@ on how much power it can provide.
 - Battery: Depends on the maximum discharge rate specified by the manufacturer
   and on charge level
 
-The embedded controller must observe what sources of power are present and
+The Embedded Controller must observe what sources of power are present and
 adjust platform power limits accordingly.
 
 To limit power, the CPU is throttled using the Psys power limit mechanism. This
