@@ -31,14 +31,14 @@ Hardkernel devices.
 | 19. | [Dasharo Tools Suite][DTS]            | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 20. | [Reset to defaults][RTD]              | RTD           | RTD001.001, RTD002.001, RTD003.001, RTD004.001, RTD006.001 |
 | 21. | [Ethernet interface][NET]             | NET           | All                                  |
-| 22. | [Dasharo Configuration Utility][NET]  | DCU           | DCU001.001, DCU002.001, DCU003.001   |
+| 22. | [Dasharo Configuration Utility][NET]  | DCU           | DCU001.201, DCU002.201, DCU003.201   |
 | 23. | [ESP scanning][ESP]                   | ESP           | All                                  |
 | 24. | [Network Boot Utilities][NBT]         | NBT           | All                                  |
 | 25. | [USB detection][UDT]                  | UDT           | All                                  |
 | 26. | [USB booting][UBT]                    | UBT           | All                                  |
 | 27. | <!--[Setup Menu information][SET]-->  Setup Menu information | SET | All                     |
 | 28. | [Ubuntu booting performance test][BUB]| BUB           | All                                  |
-| 29. | [CPU status][CPU]                     | CPU           | CNB001.201, CPU002.001, CPU003.001, CPU004.001|
+| 29. | [CPU status][CPU]                     | CPU           | CPU001.201, CPU002.201, CPU003.201, CPU004.201|
 | 30. | [Auto boot time-out][BMM]             | BMM           | All                                  |
 
 [CBO]: ../../unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md

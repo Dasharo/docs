@@ -12,7 +12,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
 | 3.   | [UEFI Shell][USH]                                 | USH           | All                                  |
-| 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP003.001, DSP003.003, DSP004.001, DSP004.003 |
+| 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP003.201, DSP003.003, DSP004.201, DSP004.003 |
 | 3.   | [USB HID and MSC Support][USB]                    | USB           | All                                  |
 | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001|
 | 5.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
@@ -24,7 +24,7 @@ subjected from before the release of the new binary.
 | 10.  | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 15.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 11.  | [PCI Express ports support][PEX]                  | PEX           | PEX001.001                           |
-| 16.  | [CPU status][CPU]                                 | CPU           | CNB001.201, CNB001.301               |
+| 16.  | [CPU status][CPU]                                 | CPU           | CPU001.201, CPU001.301               |
 | 17.  | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
 | 12.  | [EC and Super I/O initialization][ECR]            | SIO           | SIO001.001, SIO002.001, SIO002.002, SIO003.001, SIO004.001, SIO004.002|
 | 13.  | [Fan control][FAN]                                | FAN           | FAN001.002&sup2;                     |

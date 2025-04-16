@@ -19,7 +19,7 @@ subjected from before the release of the new binary.
 | 8.   | [USB booting][UBT]                                | UBT           | All                                  |
 | 9.   | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.001                          |
 | 10.  | [Flash write protection][HWP]                     | HWP           | All                                  |
-| 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.001, DSP004.002               |
+| 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.201, DSP004.301               |
 
 [CBP]: ../../unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
 [DMI]: ../../unified-test-documentation/dasharo-compatibility/31L-smbios.md

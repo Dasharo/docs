@@ -21,7 +21,7 @@ tested platforms: `MSI PRO Z690-A WiFi DDR4` and `MSI PRO Z690-A DDR5`.
 | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
 | 3.   | [UEFI Shell][USH]                                 | USH           | All                                  |
-| 4.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.201, DSP002.301, DSP002.003, DSP003.001, DSP003.002, DSP003.003 |
+| 4.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.201, DSP002.301, DSP002.003, DSP003.201, DSP003.301, DSP003.003 |
 | 5.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB001.003, USB002.001, USB002.002 USB002.003 |
 | 6.   | [SMBIOS][DMI]                                     | DMI           | All                                  |
 | 7.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
@@ -33,7 +33,7 @@ tested platforms: `MSI PRO Z690-A WiFi DDR4` and `MSI PRO Z690-A DDR5`.
 | 13.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
 | 14.  | [Custom Boot Keys][CBK]                           | CBK           | All                                  |
 | 15.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
-| 16.  | [CPU status][CPU]                                 | CPU           | CNB001.201, CNB001.301               |
+| 16.  | [CPU status][CPU]                                 | CPU           | CPU001.201, CPU001.301               |
 | 17.  | [Platform suspend and resume][SUSP]               | SUSP          | All                                  |
 | 18.  | [Device power control operations][DPC]            | DPC           | All                                  |
 

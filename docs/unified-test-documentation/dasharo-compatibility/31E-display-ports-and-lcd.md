@@ -39,7 +39,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-## DSP001.002 Internal LCD in OS (Ubuntu)
+## DSP001.201 Internal LCD in OS (Ubuntu)
 
 **Test description**
 
@@ -67,7 +67,7 @@ This test aims to verify initialization of the laptop's embedded LCD in the OS.
 1. Either the login screen or the `OPERATING_SYSTEM` installer appears on the
     internal LCD.
 
-## DSP001.003 Internal LCD in OS (Windows)
+## DSP001.301 Internal LCD in OS (Windows)
 
 **Test description**
 
@@ -180,7 +180,7 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-## DSP003.001 External DP display in OS (Ubuntu)
+## DSP003.201 External DP display in OS (Ubuntu)
 
 **Test description**
 
@@ -211,7 +211,7 @@ in the OS.
 1. The image should be displayed on the external Display Port connected display
     in `Mirror` and `Join Displays` modes.
 
-## DSP003.002 External DP display in OS (Windows)
+## DSP003.301 External DP display in OS (Windows)
 
 **Test description**
 
@@ -268,7 +268,7 @@ display during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-## DSP004.001 External VGA display in OS (Ubuntu)
+## DSP004.201 External VGA display in OS (Ubuntu)
 
 **Test description**
 
@@ -298,7 +298,7 @@ This test aims to verify initialization of the external VGA in the OS.
 1. The image should be displayed on the external VGA connected display in
     `Mirror` and `Join Displays` modes.
 
-## DSP004.002 External VGA display in OS (Windows)
+## DSP004.301 External VGA display in OS (Windows)
 
 **Test description**
 
