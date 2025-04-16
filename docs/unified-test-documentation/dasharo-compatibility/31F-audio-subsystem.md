@@ -14,7 +14,7 @@
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 1. For the audio tests you need to connect monitor with speakers via HDMI.
 
-## AUD001.001 Audio subsystem detection (Ubuntu)
+## AUD001.201 Audio subsystem detection (Ubuntu)
 
 **Test description**
 
@@ -54,7 +54,7 @@ ALC293
 Tigerlake HDMI
 ```
 
-## AUD001.002 Audio subsystem detection (Windows)
+## AUD001.301 Audio subsystem detection (Windows)
 
 **Test description**
 
@@ -103,7 +103,7 @@ Index Default Type      Name
     2    True Recording Microphone (Realtek(R) Audio)
 ```
 
-## AUD002.001 Audio playback (Ubuntu)
+## AUD002.201 Audio playback (Ubuntu)
 
 **Test description**
 
@@ -139,7 +139,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-## AUD002.002 Audio playback (Windows)
+## AUD002.301 Audio playback (Windows)
 
 **Test description**
 
@@ -169,7 +169,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-## AUD003.001 Audio capture (Ubuntu)
+## AUD003.201 Audio capture (Ubuntu)
 
 **Test description**
 
@@ -209,7 +209,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 The recorded audio clip is recorded correctly and played back.
 
-## AUD003.002 Audio capture (Windows)
+## AUD003.301 Audio capture (Windows)
 
 **Test description**
 
@@ -247,7 +247,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 1. The result of the test after clicking the `Stop Test` bar should be more than
     0% of the total volume.
 
-## AUD004.001 External headset recognition (Ubuntu)
+## AUD004.201 External headset recognition (Ubuntu)
 
 **Test description**
 
@@ -302,7 +302,7 @@ after plugging the 3.5 mm jack into the slot.
     : values=off
     ```
 
-## AUD004.002 External headset recognition (Windows)
+## AUD004.301 External headset recognition (Windows)
 
 **Test description**
 
