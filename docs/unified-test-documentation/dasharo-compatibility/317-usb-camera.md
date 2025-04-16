@@ -1,6 +1,6 @@
 # Dasharo Compatibility: USB Camera
 
-## CAM001.001 USB Camera (Ubuntu)
+## CAM001.201 USB Camera (Ubuntu)
 
 **Test description**
 
@@ -52,7 +52,7 @@ ffprobe /dev/video2
         Stream #0:0: Video: rawvideo (Y800 / 0x30303859), gray, 640x360, 55296 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc
     ```
 
-## CAM001.002 USB Camera (Windows)
+## CAM001.301 USB Camera (Windows)
 
 **Test description**
 
