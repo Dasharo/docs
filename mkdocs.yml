@@ -421,6 +421,7 @@ nav:
       - 'Documentation guidelines': dev-proc/documentation-guidelines.md
       - 'HCL Maintainer documentation': dev-proc/hcl-maintainer.md
       - 'Taking firmware screenshots': dev-proc/screenshots.md
+      - 'fwupd and LVFS': dev-proc/fwupd.md
 # - 'Dasharo SKUs':
     # - 'Overview': variants/skus-overview.md
     # - 'Firewall': variants/firewall.md
