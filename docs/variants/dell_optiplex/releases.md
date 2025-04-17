@@ -70,3 +70,5 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell
 
 [dell_optiplex_7010_9010_v0.1.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.1/dell_optiplex_7010_9010_v0.1.1.rom.sha256
 [dell_optiplex_7010_9010_v0.1.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/dell_optiplex_7010_9010/v0.1.1/dell_optiplex_7010_9010_v0.1.1.rom.sha256.sig
+
+## v0.1.0 - Non-public engineering release

@@ -328,10 +328,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - Customized setup menu keys
 - Configurable boot order
 - Configurable boot options
-
-### Changed
-
-- ME version to 14.0.47.1558
+- ME version 14.0.47.1558
 
 ### Known issues
 
@@ -382,3 +379,5 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [v1.0.13_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom
 [v1.0.13_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256
 [v1.0.13_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256.sig
+
+## v1.0.0 .. v1.0.12: Non-public engineering releases
