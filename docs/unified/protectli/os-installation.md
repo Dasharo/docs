@@ -101,17 +101,36 @@ Installer images can be downloaded from the official
 
 ## ESXI
 
-### Installation documentation
+### Installation documentation (8.0U3e)
 
-Official documentation can be found
-[here](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esxi-installation-and-setup-7-0/installing-and-setting-up-esxi/installing-esxi/installing-esxi-interactively/install-esxi-interactivelly.html)
+Follow the steps described
+[here](https://www.servethehome.com/broadcom-vmware-esxi-8-0u3e-now-has-a-free-version/)
+and install the free 8.0U3e version.
+
+It is **important to know** that the ESXi installer won't offer an option to
+partition a drive, or install alongside an existing OS. To avoid wiping away
+other OSes, it is best to plug in an additional drive.
 
 !!! note "Installation using only serial port"
 
-    Current versions of ESXI (8.0.3) do not support installing using
+    Current versions of ESXI (8.0U3e) do not support installing using
     only serial console.
 
 ### Installation images
 
-Guide on how to download the installer image can be found on Brodacom's
-[website](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/esxi-installation-and-setup-6-7/installing-and-setting-up-esxi-install/before-you-install-esxi-install/download-the-esxi-installer-install.html).
+The official installer image can be found on Brodacom's
+[website](https://support.broadcom.com/group/ecx/free-downloads).
+
+### Setting up SSH
+
+To enable easy headless access, enable SSH server setup on startup, following
+[this guide.](https://phoenixnap.com/kb/esxi-enable-ssh). The instructions are
+the same, save for minor cosmetic UI differences in the screenshots. To sum it
+up:
+
+* Log in to the Web UI hosted on your platform's IP
+* Click on the gear icon to the left, dubbed as `Manage`
+* Click on services
+* Search for SSH
+* Right click on the status and set the policy to `Start and stop with the
+  host`
