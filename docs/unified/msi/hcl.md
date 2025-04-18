@@ -35,14 +35,14 @@ hardware.
 
     === "PRO Z690-A (WIFI) (DDR4)"
         {%
-            include-markdown "unified/resources/hcl/cpu/pro-z690-a-wifi-ddr4.md"
+            include-markdown "../../resources/hcl/cpu/pro-z690-a-wifi-ddr4.md"
             start="<!--start-->"
             end="<!--end-->"
         %}
 
     === "PRO Z790-P (WIFI) (DDR4)"
         {%
-            include-markdown "unified/resources/hcl/cpu/pro-z790-p-wifi-ddr4.md"
+            include-markdown "../../resources/hcl/cpu/pro-z790-p-wifi-ddr4.md"
             start="<!--start-->"
             end="<!--end-->"
         %}
@@ -91,7 +91,7 @@ hardware.
 
     === "PRO Z690-A (WIFI) DDR4"
         {%
-            include-markdown "unified/resources/hcl/memory/pro-z690-a-wifi-ddr4.md"
+            include-markdown "../../resources/hcl/memory/pro-z690-a-wifi-ddr4.md"
             start="<!--start-->"
             end="<!--end-->"
         %}
@@ -99,7 +99,7 @@ hardware.
 
     === "PRO Z690-A (WIFI)"
         {%
-            include-markdown "unified/resources/hcl/memory/pro-z690-a-wifi.md"
+            include-markdown "../../resources/hcl/memory/pro-z690-a-wifi.md"
             start="<!--start-->"
             end="<!--end-->"
         %}
@@ -107,14 +107,14 @@ hardware.
 
     === "PRO Z790-P (WIFI) DDR4"
         {%
-            include-markdown "unified/resources/hcl/memory/pro-z790-p-wifi-ddr4.md"
+            include-markdown "../../resources/hcl/memory/pro-z790-p-wifi-ddr4.md"
             start="<!--start-->"
             end="<!--end-->"
         %}
 
     === "PRO Z790-P (WIFI)"
         {%
-            include-markdown "unified/resources/hcl/memory/pro-z790-p-wifi.md"
+            include-markdown "../../resources/hcl/memory/pro-z790-p-wifi.md"
             start="<!--start-->"
             end="<!--end-->"
         %}
@@ -159,7 +159,7 @@ hardware.
     Information about GPU might be read from GPU package or documentation.
 
     {%
-        include-markdown "unified/resources/hcl/gpu/manual.md"
+        include-markdown "../../resources/hcl/gpu/manual.md"
         start="<!--start-->"
         end="<!--end-->"
     %}
@@ -179,7 +179,7 @@ hardware.
     mean there were many VGA controllers detected in given report.
 
     {%
-        include-markdown "unified/resources/hcl/gpu/z690-a-automatic.md"
+        include-markdown "../../resources/hcl/gpu/z690-a-automatic.md"
         start="<!--start-->"
         end="<!--end-->"
     %}
@@ -189,8 +189,8 @@ Maintainer documentation](../../dev-proc/hcl-maintainer.md).
 
 [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
 [2]: https://groups.google.com/g/qubes-users/c/lGOjuApLD_o/m/TBZN0PsXEgAJ
-[3]: https://github.com/Dasharo/docs/pull/329
-[4]: https://github.com/Dasharo/docs/pull/693
+[3]: https://github.com/Dasharo/../../pull/329
+[4]: https://github.com/Dasharo/../../pull/693
 
 ## Contributing
 
