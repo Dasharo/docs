@@ -14,6 +14,7 @@ For details about our release process please read
 Test results for this release can be found here:
 
 - [V1210](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/JSL_v1000/JSL_V1210/v0.9.3_results.csv)
+- [V1211](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/JSL_v1000/JSL_V1210/v0.9.3_results.csv)
 - [V1410](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/JSL_v1000/JSL_V1410/v0.9.3_results.csv)
 - [V1610](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/JSL_v1000/JSL_V1610/v0.9.3_results.csv)
 
