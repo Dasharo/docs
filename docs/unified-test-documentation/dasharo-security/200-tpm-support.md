@@ -25,6 +25,55 @@ The test suite is fully automated. Refer to https://github.com/Dasharo/open-sour
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
+## TPM001.010 TPM Support (XCP-NG)
+
+**Test setup**
+
+1. Enable CentOS 7 repository, follow this
+[guide](https://blog.guillaumea.fr/post/enabling-centos7-sources-on-xcp-ng-after-eol).
+1. Install the `tpm2-tools` package:
+`yum install tpm2-tools.x86_64 --enablerepo=base,updates`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Start tpm communication broker by executing the following command:
+
+```bash
+systemctl start tpm2-abrmd
+```
+
+1. Execute the following command in the terminal:
+
+```bash
+tpm2_pcrlist
+```
+
+**Expected result**
+
+The command should return a list of PCRs and their contents.
+
+Output example for TPM2.0:
+
+```text
+sha1 :
+  0  : 3a3f780f11a4b49969fcaa80cd6e3957c33b2275
+  1  : 8a074fdf65a11e5dbf02d25e7f26b00c26c98b41
+  2  : c36c2509d636c9cfa075d6d0a03b7a37bec14ee9
+  3  : 3a3f780f11a4b49969fcaa80cd6e3957c33b2275
+  4  : 2d247bb671ec17ded623ca45967df5482517291b
+(...)
+sha256 :
+  0  : d27cc12614b5f4ff85ed109495e320fb1e5495eb28d507e952d51091e7ae2a72
+  1  : b29a64bd6895966b777eb803f45e6bbffade81cc1b996a34f7cbd26f1d04028b
+  2  : 3122422e43b9fbfc0cb70eb467b55e99ec61462370e6b15c515484f821e1d4d9
+  3  : 909e4261938378c0556a4c335c38718d1c313bd151fdf222df674aabb7aeee97
+  4  : 984763b42633ee11e5167e2f67c2e6879bd6efac683f1df1ef16d7ce96d4b49b
+(...)
+```
+
 ## TPM001.004 TPM Support (BIOS)
 
 **Test description**
@@ -60,6 +109,45 @@ The test suite is fully automated. Refer to https://github.com/Dasharo/open-sour
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
+## TPM002.010 Verify TPM version (XCP-NG)
+
+**Test setup**
+
+1. Enable CentOS 7 repository, follow this
+[guide](https://blog.guillaumea.fr/post/enabling-centos7-sources-on-xcp-ng-after-eol).
+1. Install the `tpm2-tools` package:
+`yum install tpm2-tools.x86_64 --enablerepo=base,updates`.
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Start tpm communication broker by executing the following command:
+
+```bash
+systemctl start tpm2-abrmd
+```
+
+1. Check the version of used TPM - execute the following command in the
+    terminal:
+
+```bash
+tpm2_getcap -c properties-fixed | grep -A 2  TPM_PT_FAMILY_INDICATOR
+```
+
+**Expected result**
+
+The command should return the TPM version.
+
+Example output:
+
+```bash
+TPM_PT_FAMILY_INDICATOR:
+  as UINT32:                0x08322e3000
+  as string:                "2.0"
+```
+
 ## TPM003.001 Check TPM Physical Presence Interface (firmware)
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
@@ -71,6 +159,31 @@ The test suite is fully automated. Refer to https://github.com/Dasharo/open-sour
 ## TPM003.301 Check TPM Physical Presence Interface (Windows)
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM003.010 Check TPM Physical Presence Interface (XCP-NG)
+
+**Test steps**
+
+1. Power on the DUT.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Execute the following command to check the version of TPM
+   PPI in sysfs:
+
+```bash
+cat /sys/class/tpm/tpm0/ppi/version
+```
+
+**Expected result**
+
+The command should return information about the TPM PPI version (only 1.3 is
+valid). If PPI is not available the file will not be found and test fails.
+
+Example output:
+
+```bash
+1.3
+```
 
 ## TPM004.001 Check TPM Clear procedure
 
