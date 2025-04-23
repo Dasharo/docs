@@ -13,64 +13,15 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## ECR001.001 Battery monitoring - charge level in OS (Ubuntu)
+## ECR001.201 Battery monitoring - charge level in OS (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test verifies whether the battery charge level is reported in the OS.
+## ECR001.301 Battery monitoring - charge level in OS (Windows)
 
-**Test configuration data**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Locate the power menu in the upper right corner of the screen.
-1. Open the power menu and locate the battery status indicator.
-
-**Expected result**
-
-1. The battery status indicator should show the current charge level (percentage
-    left).
-
-## ECR001.002 Battery monitoring - charge level in OS (Windows)
-
-**Test description**
-
-This test verifies whether the battery charge level is reported in the OS.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Locate the power menu in the lower right corner of the screen.
-
-**Expected result**
-
-1. The battery status indicator should show the current charge level (percentage
-    left).
-
-## ECR001.003 Battery start charge threshold
+## ECR002.003 Battery start charge threshold
 
 **Test description**
 
@@ -132,145 +83,21 @@ The aim of this test is to check that functionality.
 
 The battery should stop charging at stop threshold.
 
-## ECR002.001 Battery monitoring - charging state in OS (Ubuntu)
+## ECR002.201 Battery monitoring - charging state in OS (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test verifies that the power supply state is detected correctly in the OS.
+## ECR002.301 Battery monitoring - charging state in OS (Windows)
 
-**Test configuration data**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
+## ECR003.201 Touchpad in OS - (Ubuntu)
 
-**Test setup**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
+## ECR003.301 Touchpad in OS - (Windows)
 
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Locate the power menu in the upper right corner of the screen.
-1. Open the power menu and locate the battery status indicator.
-1. Note the current state.
-1. Unplug the power supply and wait for the battery charge state to change to
-    `Discharging`.
-1. Plug in the power supply and wait for the battery charge state to change to
-    `Charging`.
-
-**Expected result**
-
-1. The battery charge indicator should correctly show whether the power supply
-    is plugged in or not.
-1. The battery charge indicator should detect the AC adapter state change
-    within seconds of the adapter being plugged in/out.
-
-## ECR002.002 Battery monitoring - charging state in OS (Windows)
-
-**Test description**
-
-This test verifies that the power supply state is detected correctly in the OS.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Locate the power menu in the lower right corner of the screen.
-1. Open the power menu and locate the battery status indicator.
-1. Note the current state.
-1. Unplug the power supply and wait for the battery charge state to change to
-    `on battery`.
-1. Plug in the power supply and wait for the battery charge state to change to
-    `plugged in`.
-
-**Expected result**
-
-1. The battery charge indicator should correctly show whether the power supply
-   is plugged in or not.
-1. The battery charge indicator should detect the AC adapter state change
-   within seconds of the adapter being plugged in / out.
-
-## ECR003.001 Touchpad in OS - (Ubuntu)
-
-**Test description**
-
-This test verifies that the touchpad is initialized correctly and is detected
-by the operating system.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Install `libinput-tools` on the DUT.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Verify that the cursor can be moved with the touchpad and that clicking works
-    (test both clicking and tapping).
-1. Run `sudo libinput debug-events` in the terminal:
-    1. Verify that scrolling with 2 fingers generates a `POINTER_AXIS` event,
-    1. Verify that pinching with 2 fingers generates a `GESTURE_PINCH_UPDATE` event.
-1. Press `Ctrl + C` to terminate the `libinput` program.
-
-**Expected result**
-
-1. Moving the cursor, clicking, zooming and scrolling are detected correctly by
-   the operating system.
-
-## ECR003.002 Touchpad in OS - (Windows)
-
-**Test description**
-
-This test verifies that the touchpad is initialized correctly and is detected
-by the operating system.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Verify that the cursor can be moved with the touchpad and that clicking
-    works (test both clicking and tapping).
-1. Open `C:\Windows` in `Windows Explorer`
-    1. Verify that scrolling with 2 fingers moves the content of the window,
-    1. Verify that pinching with 2 fingers zooms in and zooms out the content.
-
-**Expected result**
-
-1. Moving the cursor, clicking, zooming and scrolling are detected correctly by
-   the operating system.
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
 ## ECR004.001 Keyboard (standard keypad) in firmware
 
@@ -297,7 +124,7 @@ and all basic keys work according to their labels.
 
 1. All menus can be entered using the internal keyboard.
 
-## ECR004.002 Keyboard (standard keypad) in OS (Ubuntu)
+## ECR004.201 Keyboard (standard keypad) in OS (Ubuntu)
 
 **Test description**
 
@@ -329,7 +156,7 @@ system and all basic keys work according to their labels.
     their labels.
 1. Key combinations are detected correctly.
 
-## ECR004.003 Keyboard (standard keypad) in OS (Windows)
+## ECR004.301 Keyboard (standard keypad) in OS (Windows)
 
 **Test description**
 
@@ -365,7 +192,7 @@ system and all basic keys work according to their labels.
    or actions when pressed.
 1. Key combinations are detected correctly.
 
-## ECR005.001 Keyboard (function key: play/pause) in OS (Ubuntu)
+## ECR005.201 Keyboard (function key: play/pause) in OS (Ubuntu)
 
 **Test description**
 
@@ -394,7 +221,7 @@ This test verifies that the play/pause hotkey works correctly.
 
 1. Pressing the play/pause hotkey generates a `KEY_PLAYPAUSE` event.
 
-## ECR005.002 Keyboard (function key: play/pause) in OS (Windows)
+## ECR005.301 Keyboard (function key: play/pause) in OS (Windows)
 
 **Test description**
 
@@ -423,7 +250,7 @@ This test verifies that the play/pause hotkey works correctly.
 
 1. Pressing the play/pause hotkey is properly detected by the OS
 
-## ECR006.001 Keyboard (function key: cooling mode) in OS (Ubuntu)
+## ECR006.201 Keyboard (function key: cooling mode) in OS (Ubuntu)
 
 **Test description**
 
@@ -454,7 +281,7 @@ This test verifies that the cooling mode hotkey works correctly.
 1. Pressing the hotkey again should deactivate the cooling mode (fans should
    return to normal).
 
-## ECR006.002 Keyboard (function key: cooling mode) in OS (Windows)
+## ECR006.301 Keyboard (function key: cooling mode) in OS (Windows)
 
 **Test description**
 
@@ -485,7 +312,7 @@ This test verifies that the cooling mode hotkey works correctly.
 1. Pressing the hotkey again should deactivate the cooling mode (fans should
    return to normal).
 
-## ECR007.001 Keyboard (function key: touchpad on/off) in OS (Ubuntu)
+## ECR007.201 Keyboard (function key: touchpad on/off) in OS (Ubuntu)
 
 **Test description**
 
@@ -529,7 +356,7 @@ sudo udevadm trigger
    completely inoperable).
 1. Pressing the hotkey again should reactivate the touchpad.
 
-## ECR007.002 Keyboard (function key: touchpad on/off) in OS (Windows)
+## ECR007.301 Keyboard (function key: touchpad on/off) in OS (Windows)
 
 **Test description**
 
@@ -559,7 +386,7 @@ This test verifies that the touchpad on/off hotkey works correctly.
    completely inoperable).
 1. Pressing the hotkey again should reactivate the touchpad.
 
-## ECR008.001 Keyboard (function key: display on/off) in OS (Ubuntu)
+## ECR008.201 Keyboard (function key: display on/off) in OS (Ubuntu)
 
 **Test description**
 
@@ -588,7 +415,7 @@ This test verifies that the display on/off hotkey works correctly.
 1. Pressing the hotkey once should turn the internal LCD panel off.
 1. Pressing any key on the keyboard should power the internal LCD panel back on.
 
-## ECR008.002 Keyboard (function key: display on/off) in OS (Windows)
+## ECR008.301 Keyboard (function key: display on/off) in OS (Windows)
 
 **Test description**
 
@@ -618,7 +445,7 @@ This test verifies that the display on/off hotkey works correctly.
 1. Pressing any key on the keyboard should power the internal LCD panel
     back on.
 
-## ECR009.001 Keyboard (function key: mute) in OS (Ubuntu)
+## ECR009.201 Keyboard (function key: mute) in OS (Ubuntu)
 
 **Test description**
 
@@ -647,7 +474,7 @@ This test verifies that the volume mute hotkey works correctly.
 1. Each keypress should cause a mute/unmute notification to appear in the middle
    of the screen.
 
-## ECR009.002 Keyboard (function key: mute) in OS (Windows)
+## ECR009.301 Keyboard (function key: mute) in OS (Windows)
 
 **Test description**
 
@@ -677,7 +504,7 @@ This test verifies that the mute hotkey works correctly.
 1. Pressing the hotkey once should mute the device
 1. Pressing the hotkey again should re-enable the sound
 
-## ECR010.001 Keyboard (function key: keyboard backlight) in OS (Ubuntu)
+## ECR010.201 Keyboard (function key: keyboard backlight) in OS (Ubuntu)
 
 **Test description**
 
@@ -707,7 +534,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
    set the keyboard to the next mode, with the last mode wrapping back around
    to the first.
 
-## ECR010.002 Keyboard (function key: keyboard backlight) in OS (Windows)
+## ECR010.301 Keyboard (function key: keyboard backlight) in OS (Windows)
 
 **Test description**
 
@@ -737,7 +564,7 @@ This test verifies that the keyboard backlight hotkey works correctly.
    set the keyboard to the next mode, with the last mode wrapping back around
    to the first.
 
-## ECR011.001 Keyboard (function key: volume down) in OS (Ubuntu)
+## ECR011.201 Keyboard (function key: volume down) in OS (Ubuntu)
 
 **Test description**
 
@@ -767,7 +594,7 @@ This test verifies that the volume down hotkey works correctly.
 1. Each key press should cause a volume down notification to appear in the
    middle of the screen.
 
-## ECR011.002 Keyboard (function key: volume down) in OS (Windows)
+## ECR011.301 Keyboard (function key: volume down) in OS (Windows)
 
 **Test description**
 
@@ -797,7 +624,7 @@ This test verifies that the volume down hotkey works correctly.
 1. Each key press should cause a volume down notification to appear in the upper
    left part of the screen.
 
-## ECR012.001 Keyboard (function key: volume up) in OS (Ubuntu)
+## ECR012.201 Keyboard (function key: volume up) in OS (Ubuntu)
 
 **Test description**
 
@@ -827,7 +654,7 @@ This test verifies that the volume up hotkey works correctly.
 1. Each key press should cause a volume up notification to appear in the middle
    of the screen.
 
-## ECR012.002 Keyboard (function key: volume up) in OS (Windows)
+## ECR012.301 Keyboard (function key: volume up) in OS (Windows)
 
 **Test description**
 
@@ -857,7 +684,7 @@ This test verifies that the volume up hotkey works correctly.
 1. Each key press should cause a volume up notification to appear in the upper
    left part of the screen.
 
-## ECR013.001 Keyboard (function key: display switch) in OS (Ubuntu)
+## ECR013.201 Keyboard (function key: display switch) in OS (Ubuntu)
 
 **Test description**
 
@@ -893,7 +720,7 @@ This test verifies that the display switch hotkey works correctly.
      event3   KEYBOARD_KEY     +0.015s	KEY_LEFTMETA (125) released
     ```
 
-## ECR013.002 Keyboard (function key: display switch) in OS (Windows)
+## ECR013.301 Keyboard (function key: display switch) in OS (Windows)
 
 **Test description**
 
@@ -921,32 +748,11 @@ This test verifies that the display switch hotkey works correctly.
 1. Pressing the hotkey should cause the display settings bar to appear
     on the right part of the screen.
 
-## ECR014.001 Keyboard (function key: brightness down) in OS (Ubuntu)
+## ECR014.201 Keyboard (function key: brightness down) in OS (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test verifies that the brightness down hotkey works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test steps**
-
-1. Press the brightness down hotkey once and note the effects.
-
-**Expected result**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Pressing the hotkey should decrease the brightness of the internal LCD
-   display.
-1. Each key press should cause a brightness down notification to appear in the
-   middle of the screen.
-
-## ECR014.002 Keyboard (function key: brightness down) in OS (Windows)
+## ECR014.301 Keyboard (function key: brightness down) in OS (Windows)
 
 **Test description**
 
@@ -976,37 +782,11 @@ This test verifies that the brightness down hotkey works correctly.
 1. Each key press should cause a brightness down notification to appear in the
    top left of the screen.
 
-## ECR015.001 Keyboard (function key: brightness up) in OS (Ubuntu)
+## ECR015.201 Keyboard (function key: brightness up) in OS (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test verifies that the brightness up hotkey works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Press the brightness up hotkey once and note the effects.
-
-**Expected result**
-
-1. Pressing the hotkey should increase the brightness of the internal LCD
-   display.
-1. Each key press should cause a brightness up notification to appear in the
-   middle of the screen.
-
-## ECR015.002 Keyboard (function key: brightness up) in OS (Windows)
+## ECR015.301 Keyboard (function key: brightness up) in OS (Windows)
 
 **Test description**
 
@@ -1036,39 +816,11 @@ This test verifies that the brightness down hotkey works correctly.
 1. Each key press should cause a brightness up notification to appear in the
    top left of the screen.
 
-## ECR016.001 Keyboard (function key: camera on/off) in OS (Ubuntu)
+## ECR016.201 Keyboard (function key: camera on/off) in OS (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test verifies that the camera on/off hotkey works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open the terminal and run the command: `watch -n1 lsusb`.
-1. Press the camera on/off hotkey twice and note the effect after each
-    keypress.
-
-**Expected result**
-
-1. Pressing the hotkey once should make the
-    `Chicony Electronics Co., Ltd Chicony USB2.0 Camera` device disappear
-    from the output of `lsusb`.
-1. Pressing the hotkey again should make the USB device reappear.
-
-## ECR016.002 Keyboard (function key: camera on/off) in OS (Windows)
+## ECR016.301 Keyboard (function key: camera on/off) in OS (Windows)
 
 **Test description**
 
@@ -1099,38 +851,11 @@ This test verifies that the camera on/off hotkey works correctly.
 1. Pressing the hotkey again should make the camera image appear again
    after a few seconds.
 
-## ECR017.001 Keyboard (function key: flight mode) in OS (Ubuntu)
+## ECR017.201 Keyboard (function key: flight mode) in OS (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test verifies that the flight mode hotkey works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Locate and open the power menu in the upper right corner of the screen.
-1. Enter Settings and navigate to the Wi-Fi panel.
-1. Note the current state of the Airplane Mode switch.
-1. Press the flight mode hotkey twice and note the result of each keypress.
-
-**Expected result**
-
-1. Pressing the hotkey once should enable airplane mode.
-1. Pressing the hotkey again should disable airplane mode.
-
-## ECR017.002 Keyboard (function key: flight mode) in OS (Windows)
+## ECR017.301 Keyboard (function key: flight mode) in OS (Windows)
 
 **Test description**
 
@@ -1162,7 +887,7 @@ This test verifies that the flight mode hotkey works correctly.
    `airplane mode off` notification to appear in the top right
    part of the screen.
 
-## ECR018.001 Keyboard (function key: sleep) in OS (Ubuntu)
+## ECR018.201 Keyboard (function key: sleep) in OS (Ubuntu)
 
 **Test description**
 
@@ -1190,7 +915,7 @@ This test verifies that the sleep hotkey works correctly.
 1. The laptop should go to sleep within seconds of the hotkey being pressed.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-## ECR018.002 Keyboard (function key: sleep) in OS (Windows)
+## ECR018.301 Keyboard (function key: sleep) in OS (Windows)
 
 **Test description**
 
@@ -1222,69 +947,11 @@ This test verifies that the sleep hotkey works correctly.
 1. The laptop should go to sleep within seconds of the hotkey being pressed.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-## ECR019.001 Buttons (button: power) in OS (Ubuntu)
+## ECR019.201 Buttons (button: power) in OS (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test verifies that the power button is detected correctly by the operating
-system. In Ubuntu 22.04 OS the default function assigned to this key is suspend
-mode.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open the terminal and run the following command to check the power button
-    action:
-
-    ```bash
-    gsettings get org.gnome.settings-daemon.plugins.power power-button-action
-    ```
-
-1. If the status is other than `suspend` run the following command to change
-   the power button action:
-
-    ```bash
-    gsettings set org.gnome.settings-daemon.plugins.power power-button-action "suspend"
-    ```
-
-1. Check the power button action again by running the following command:
-
-    ```bash
-    gsettings get org.gnome.settings-daemon.plugins.power power-button-action
-    ```
-
-1. Press the power button once and note the result.
-1. Press `Enter` and note the result.
-1. Run the following command to check last finished operation:
-
-    ```bash
-    journalctl | grep systemd-logind | tail -1
-    ```
-
-**Expected result**
-
-1. Pressing the button once should make laptop enter sleep mode.
-1. The power LED should be blinking green, indicating the laptop is sleeping.
-1. After completing the 5th step device should wake up.
-1. The output of the last command should contain the line:
-
-    ```bash
-    Operation 'sleep' finished
-    ```
-
-## ECR019.002 Buttons (button: power) in OS (Windows)
+## ECR019.301 Buttons (button: power) in OS (Windows)
 
 **Test description**
 
@@ -1318,7 +985,7 @@ mode.
 1. Pressing the button once should make laptop enter sleep mode.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-## ECR020.001 Buttons (button: lid switch) in OS (Ubuntu)
+## ECR020.201 Buttons (button: lid switch) in OS (Ubuntu)
 
 **Test description**
 
@@ -1359,7 +1026,7 @@ system.
 1. The output of the second command should report that the lid is closed.
 1. The output of the third command should report that the lid is open.
 
-## ECR020.002 Buttons (button: lid switch) in OS (Windows)
+## ECR020.301 Buttons (button: lid switch) in OS (Windows)
 
 **Test description**
 
@@ -1392,7 +1059,7 @@ system.
 1. Pressing the button once should make laptop enter sleep mode.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-## ECR021.001 Keyboard (function key: RGB keyboard toggle) in OS (Ubuntu)
+## ECR021.201 Keyboard (function key: RGB keyboard toggle) in OS (Ubuntu)
 
 **Test description**
 
@@ -1421,7 +1088,7 @@ the operating system.
 1. Pressing the button once should disable the keyboard backlight.
 1. Pressing the button again should re-enable the keyboard backlight.
 
-## ECR021.002 Keyboard (function key: RGB keyboard toggle) in OS (Windows)
+## ECR021.301 Keyboard (function key: RGB keyboard toggle) in OS (Windows)
 
 **Test description**
 
@@ -1450,7 +1117,7 @@ the operating system.
 1. Pressing the button once should disable the keyboard backlight.
 1. Pressing the button again should re-enable the keyboard backlight.
 
-## ECR022.001 RGB keyboard next color FN key in OS (Ubuntu)
+## ECR022.201 RGB keyboard next color FN key in OS (Ubuntu)
 
 **Test description**
 
@@ -1480,7 +1147,7 @@ by the operating system.
 1. Pressing the button once should switch the keyboard color.
 1. All color modes according to product documentation should be accessible.
 
-## ECR022.002 RGB keyboard next color FN key in OS (Windows)
+## ECR022.301 RGB keyboard next color FN key in OS (Windows)
 
 **Test description**
 
@@ -1510,7 +1177,7 @@ by the operating system.
 1. Pressing the button once should switch the keyboard color.
 1. All color modes according to product documentation should be accessible.
 
-## ECR023.001 RGB keyboard brightness down FN key in OS (Ubuntu)
+## ECR023.201 RGB keyboard brightness down FN key in OS (Ubuntu)
 
 **Test description**
 
@@ -1538,7 +1205,7 @@ properly by the operating system.
 
 1. Pressing the button once should lower the keyboard backlight
 
-## ECR023.002 RGB keyboard brightness down FN key in OS (Windows)
+## ECR023.301 RGB keyboard brightness down FN key in OS (Windows)
 
 **Test description**
 
@@ -1566,7 +1233,7 @@ properly by the operating system.
 
 1. Pressing the button once should lower the keyboard backlight.
 
-## ECR024.001 RGB keyboard brightness up FN key in OS (Ubuntu)
+## ECR024.201 RGB keyboard brightness up FN key in OS (Ubuntu)
 
 **Test description**
 
@@ -1594,7 +1261,7 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-## ECR024.002 RGB keyboard brightness up FN key in OS (Windows)
+## ECR024.301 RGB keyboard brightness up FN key in OS (Windows)
 
 **Test description**
 
@@ -1622,7 +1289,7 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-## ECR025.001 Permanent keyboard illumination after cold-boot (Firmware)
+## ECR025.201 Permanent keyboard illumination after cold-boot (Firmware)
 
 **Test description**
 
@@ -1651,7 +1318,7 @@ illuminates in firmware.
 
 1. After cold-boot keyboard brightness and colors settings remain the same.
 
-## ECR025.002 Permanent keyboard illumination after cold-boot (Ubuntu)
+## ECR025.201 Permanent keyboard illumination after cold-boot (Ubuntu)
 
 **Test description**
 
@@ -1684,7 +1351,7 @@ illuminates in Ubuntu.
 
 1. After cold-boot keyboard brightness and colors settings remain the same.
 
-## ECR025.003 Permanent keyboard illumination after cold-boot (Windows)
+## ECR025.301 Permanent keyboard illumination after cold-boot (Windows)
 
 **Test description**
 
@@ -1717,7 +1384,7 @@ illuminates in Windows.
 
 1. After cold-boot keyboard brightness and colors settings remain the same.
 
-## ECR026.001 Permanent keyboard illumination after warm-boot (Firmware)
+## ECR026.201 Permanent keyboard illumination after warm-boot (Firmware)
 
 **Test description**
 
@@ -1745,7 +1412,7 @@ illuminates in firmware.
 
 1. After warm-boot keyboard brightness and colors settings remain the same.
 
-## ECR026.002 Permanent keyboard illumination after warm-boot (Ubuntu)
+## ECR026.201 Permanent keyboard illumination after warm-boot (Ubuntu)
 
 **Test description**
 
@@ -1777,7 +1444,7 @@ illuminates in Ubuntu.
 
 1. After warm-boot keyboard brightness and colors settings remain the same.
 
-## ECR026.003 Permanent keyboard illumination after warm-boot (Windows)
+## ECR026.301 Permanent keyboard illumination after warm-boot (Windows)
 
 **Test description**
 
@@ -1809,7 +1476,7 @@ illuminates in Windows.
 
 1. After warm-boot keyboard brightness and colors settings remain the same.
 
-## ECR027.001 Permanent keyboard illumination after reboot (Firmware)
+## ECR027.201 Permanent keyboard illumination after reboot (Firmware)
 
 **Test description**
 
@@ -1836,7 +1503,7 @@ illuminates in firmware.
 
 1. After reboot keyboard brightness and colors settings remain the same.
 
-## ECR027.002 Permanent keyboard illumination after reboot (Ubuntu)
+## ECR027.201 Permanent keyboard illumination after reboot (Ubuntu)
 
 **Test description**
 
@@ -1869,7 +1536,7 @@ illuminates in Ubuntu
 
 1. After reboot keyboard brightness and colors settings remain the same.
 
-## ECR027.003 Permanent keyboard illumination after reboot (Windows)
+## ECR027.301 Permanent keyboard illumination after reboot (Windows)
 
 **Test description**
 
@@ -1902,7 +1569,7 @@ illuminates in Windows 11.
 
 1. After reboot keyboard brightness and colors settings remain the same.
 
-## ECR028.001 Permanent keyboard illumination after suspension (Firmware)
+## ECR028.201 Permanent keyboard illumination after suspension (Firmware)
 
 **Test description**
 
@@ -1930,7 +1597,7 @@ illuminates in firmware.
 
 1. After suspend keyboard brightness and colors settings remain the same.
 
-## ECR028.002 Permanent keyboard illumination after suspension (Ubuntu)
+## ECR028.201 Permanent keyboard illumination after suspension (Ubuntu)
 
 **Test description**
 
@@ -1961,7 +1628,7 @@ illuminates in Ubuntu
 
 1. After suspend keyboard brightness and colors settings remain the same.
 
-## ECR028.003 Permanent keyboard illumination after suspension (Windows)
+## ECR028.301 Permanent keyboard illumination after suspension (Windows)
 
 **Test description**
 
@@ -1992,7 +1659,7 @@ illuminates in Windows.
 
 1. After suspend keyboard brightness and colors settings remain the same.
 
-## ECR029.001 FnLock Hotkey (Ubuntu)
+## ECR029.201 FnLock Hotkey (Ubuntu)
 
 **Test description**
 
@@ -2022,7 +1689,7 @@ Ubuntu.
 
 1. The function keys `F1` - `F12` behave as if `Fn` key is pressed.
 
-## ECR029.002 FnLock Hotkey (Windows)
+## ECR029.301 FnLock Hotkey (Windows)
 
 **Test description**
 
@@ -2052,113 +1719,15 @@ Windows.
 
 1. The function keys `F1` - `F12` behave as if `Fn` key is pressed.
 
-## ECR030.001 Charging until 98% battery level (Ubuntu)
+## ECR030.201 Charging until 98% battery level (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test aims to verify if charging the battery stops when the battery level
-reaches 98% mark.
+## ECR031.201 Not charging between 95% and 98% levels (Ubuntu)
 
-**Test configuration data**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-   [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and execute following command to check current battery
-    charge level percentage:
-
-    ```bash
-    cat /sys/class/power_supply/BAT0/capacity
-    ```
-
-1. Note the results.
-1. If the battery level sits below 95% mark, plug the charger into the DUT.
-1. If the battery level sits above 95% mark, wait until the DUT's battery
-    discharges to below 95% level and then plug the charger into the DUT.
-1. Wait until the DUT's battery charge level reaches 98%.
-1. Open a terminal window and execute following command to confirm that the
-    battery charging stops at 98% mark:
-
-    ```bash
-    cat /sys/class/power_supply/BAT0/status
-    ```
-
-1. Note the results.
-
-**Expected result**
-
-1. The output of the `cat /sys/class/power_supply/BAT0/capacity` command should
-    contain information about the current battery charge level.
-1. The output of the `cat /sys/class/power_supply/BAT0/status` command should
-    contain information about the current battery charging status.
-    Example output:
-
-    ```bash
-    not charging
-    ```
-
-## ECR030.001 Not charging between 95% and 98% levels (Ubuntu)
-
-**Test description**
-
-This test aims to verify if charging the battery does not start after plugging
-in the charger into the DUT when the battery level sits between 95% and 98%.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-   [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and execute following command to check current battery
-    charge level percentage:
-
-    ```bash
-    cat /sys/class/power_supply/BAT0/capacity
-    ```
-
-1. Note the results.
-1. If the battery level sits between 95% and 98%, plug the charger into the DUT.
-1. If the battery level sits below 95%, plug the charger into the DUT, wait
-    until the battery reaches the level between 95% and 98% and then unplug the
-    charger and plug it back in into the DUT.
-1. Open a terminal window and execute following command to confirm that the
-    battery does not start charging:
-
-    ```bash
-    cat /sys/class/power_supply/BAT0/status
-    ```
-
-1. The output of the `cat /sys/class/power_supply/BAT0/capacity` command should
-    contain information about the current battery charge level.
-1. The output of the `cat /sys/class/power_supply/BAT0/status` command should
-    contain information about the current battery charging status.
-    Example output:
-
-    ```bash
-    not charging
-    ```
-
-## ECR031.001 EC firmware sync in coreboot
+## ECR032.001 EC firmware sync in coreboot
 
 **Test description**
 
@@ -2196,7 +1765,7 @@ This test verifies the automatic EC firmware update / sync feature in coreboot.
 1. There should not be a pop-up indicating that the EC update failed for any
    reason.
 
-## ECR032.001 EC firmware sync in coreboot blocked when AC not connected
+## ECR033.001 EC firmware sync in coreboot blocked when AC not connected
 
 **Test description**
 
@@ -2230,7 +1799,7 @@ coreboot does not attempt to update the EC while an AC adapter is not connected.
    not proceed correctly, and asking them to reboot with an AC adapter
    connected.
 
-## ECR033.001 EC power button watchdog
+## ECR034.001 EC power button watchdog
 
 **Test description**
 
@@ -2264,7 +1833,7 @@ can reset the EC.
     Last reset caused by PWRSW WDT Timeout!
     ```
 
-## ECR034.001 Soft Switch Microphone Key (Ubuntu)
+## ECR035.201 Soft Switch Microphone Key (Ubuntu)
 
 **Test description**
 
@@ -2295,7 +1864,7 @@ This test verifies that Fn+4 key combination for microphone soft switch works
  aforementioned bar which state is currently active as noise made will
  make the bar go back and forth if ON and completely still if OFF
 
-## ECR034.002 Soft Switch Microphone Key (Windows)
+## ECR034.301 Soft Switch Microphone Key (Windows)
 
 **Test description**
 
@@ -2326,7 +1895,7 @@ This test verifies that Fn+4 key combination for microphone soft switch works
  aforementioned bar which state is currently active as the noise made will
  make the bar go back and forth if ON and completely still if OFF
 
-## SIO001.001 PS/2 mouse in OS - (Ubuntu)
+## SIO001.201 PS/2 mouse in OS - (Ubuntu)
 
 **Test description**
 
@@ -2357,7 +1926,7 @@ by the operating system.
 
 1. Moving the cursor and clicking working correctly in the operating system.
 
-## SIO001.002 PS/2 mouse in OS - (Windows)
+## SIO001.301 PS/2 mouse in OS - (Windows)
 
 **Test description**
 
@@ -2416,7 +1985,7 @@ and all basic keys work according to their labels.
 
 1. All menus can be entered using the PS/2 keyboard.
 
-## SIO002.002 PS/2 keyboard in OS (Ubuntu)
+## SIO002.201 PS/2 keyboard in OS (Ubuntu)
 
 **Test description**
 
@@ -2450,7 +2019,7 @@ system and all basic keys work according to their labels.
    their labels.
 2. Key combinations are detected correctly.
 
-## SIO002.003 PS/2 keyboard in OS (Windows)
+## SIO002.301 PS/2 keyboard in OS (Windows)
 
 **Test description**
 
@@ -2488,7 +2057,7 @@ system and all basic keys work according to their labels.
    or actions when pressed.
 2. Key combinations are detected correctly.
 
-## SIO003.001 PS/2 keyboard wake in OS (Ubuntu)
+## SIO003.201 PS/2 keyboard wake in OS (Ubuntu)
 
 **Test description**
 
@@ -2520,7 +2089,7 @@ system and all basic keys work according to their labels.
 
 1. Platform is resuming to the OS from sleep after pressing the key.
 
-## SIO003.002 PS/2 keyboard wake in OS (Windows)
+## SIO003.301 PS/2 keyboard wake in OS (Windows)
 
 **Test description**
 
@@ -2580,7 +2149,7 @@ and the menu can be traversed with serial console.
 
 1. All menus can be entered using the serial console.
 
-## SIO004.002 Serial port in OS (Ubuntu)
+## SIO004.201 Serial port in OS (Ubuntu)
 
 **Test description**
 
