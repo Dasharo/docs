@@ -56,52 +56,7 @@ Tigerlake HDMI
 
 ## AUD001.301 Audio subsystem detection (Windows)
 
-**Test description**
-
-This test aims to verify that the audio subsystem is initialized correctly
-and can be detected from the operating system.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Install package `AudioDeviceCmdlets`:
-
-    ```powershell
-    Install-PackageProvider -Name NuGet -Force
-    ```
-
-    ```powershell
-    Install-Module -Name AudioDeviceCmdlets -Force
-    ```
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Run PowerShell as administrator and execute the following command:
-
-    ```powershell
-    Get-AudioDevice -list  | ft Index, Default, Type, Name
-    ```
-
-**Expected result**
-
-`Microphone (Realtek(R) Audio)` and `Speakers (Realtek(R) Audio)` should be
-listed in the output:
-
-```powershell
-Index Default Type      Name
------ ------- ----      ----
-    1    True Playback  Speakers (Realtek(R) Audio)
-    2    True Recording Microphone (Realtek(R) Audio)
-```
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
 ## AUD002.201 Audio playback (Ubuntu)
 
@@ -249,104 +204,13 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 ## AUD004.201 External headset recognition (Ubuntu)
 
-**Test description**
-
-This test aims to verify that the external headset is properly recognized
-after plugging the 3.5 mm jack into the slot.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Install the `alsa-utils` package:
-    `sudo apt install alsa-utils`.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Plug a headset jack into a micro jack slot located on the right side of
-    the laptop.
-1. When the `Select Audio Device` menu appears, select what type of external
-    device has been connected to the laptop (headset).
-1. Open a terminal window and execute the following command:
-
-    ```bash
-    amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
-    ```
-
-1. Disconnect the headset from the laptop.
-1. Execute the following command again:
-
-    ```bash
-    amixer -c 0 contents | grep -A 2 'Front Headphone Jack'
-    ```
-
-**Expected result**
-
-1. The output of the first command should not be empty and contains the line:
-
-    ```text
-    : values=on
-    ```
-
-1. The output of the second command should not be empty and contains the line:
-
-    ```text
-    : values=off
-    ```
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
 ## AUD004.301 External headset recognition (Windows)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test aims to verify that the external headset is properly recognized
-after plugging the 3.5 mm jack into the slot.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Plug a headset jack into a micro jack slot located on the right side of
-    the laptop.
-1. After the `Which device did you plug` in menu appears, select what type of
-    external device has been connected to the laptop (headset).
-1. Find the `Speakers` icon in the bottom right part of the screen and click it
-    using the right mouse button then using the left mouse button click
-    `Sound Settings`.
-1. Locate the `More sound settings` bar and click on it.
-1. Click on the `Speakers` bar using the right mouse button then using the left
-    mouse button click `Properties`.
-1. Locate in `General` the section field named `Jack Information`.
-1. Close the windows `Speakers Properties` and `Sound`.
-1. Disconnect a headset from the laptop.
-1. Repeat steps 7-9.
-
-**Expected result**
-
-1. `Jack Information` field in the first case should show the position
-    `Front Panel 3.5 mm Jack`.
-1. After disconnecting a headset from the laptop and checking again field
-    `Jack Information` should not contain the phrase `Front Panel 3.5 mm Jack`.
-
-## AUD005.001 External headset audio playback (Ubuntu)
+## AUD005.201 External headset audio playback (Ubuntu)
 
 **Test description**
 
@@ -384,7 +248,7 @@ recordings by using the external headset speakers.
 
 Sound should be played from external speakers.
 
-## AUD005.002 External headset audio playback (Windows)
+## AUD005.301 External headset audio playback (Windows)
 
 **Test description**
 
@@ -416,7 +280,7 @@ recordings by using the external headset speakers.
 
 Sound should be played from external speakers.
 
-## AUD006.001 External headset audio capture (Ubuntu)
+## AUD006.201 External headset audio capture (Ubuntu)
 
 **Test description**
 
@@ -476,7 +340,7 @@ an external headset.
 1. During playback of the second recording, all noise that was made for DUT
     should be quiet or not heard.
 
-## AUD006.002 External headset audio capture (Windows)
+## AUD006.301 External headset audio capture (Windows)
 
 **Test description**
 
@@ -521,56 +385,13 @@ an external headset.
 1. The result of the test after clicking the `Stop Test` bar should be more than
     0% of the total volume.
 
-## AUD007.001 HDMI Audio recognition (Ubuntu)
+## AUD007.201 HDMI Audio recognition (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test aims to verify that the output audio is properly assigned after
-connecting the external display using the HDMI cable.
+## AUD007.301 HDMI Audio recognition (Windows)
 
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Install the `alsa-utils` package:
-    `sudo apt install alsa-utils`.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Connect the external display to the HDMI slot.
-1. Open a terminal window and execute the following command:
-
-    ```bash
-    pactl list cards | grep "hdmi-output" | grep -v "not available"
-    ```
-
-1. Disconnect the headset from the laptop.
-1. Execute the following command again:
-
-    ```bash
-    pactl list cards | grep "hdmi-output" | grep -v "not available"
-    ```
-
-**Expected result**
-
-1. The output of the first command should not be empty and contains the line:
-
-    ```text
-    : hdmi-output-0: HDMI / DisplayPort (type: HDMI, priority: 5900, latency
-     offset: 0 usec, availability group: Legacy 4, available)
-    ```
-
-1. The output of the second command should be empty
-
-## AUD007.002 HDMI Audio recognition (Windows)
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
 **Test description**
 
