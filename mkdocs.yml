@@ -422,6 +422,7 @@ nav:
           - 'MSI PRO Z690-A and Z790-P': guides/lab-assembly/msi-zx90.md
           - 'Protectli': guides/lab-assembly/protectli.md
           - 'Odroid H4': guides/lab-assembly/odroid-assembly-guide.md
+          - 'NovaCustom laptops': guides/lab-assembly/novacustom.md
 
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
