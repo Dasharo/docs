@@ -26,7 +26,7 @@ tested platforms: `MSI PRO Z690-A WiFi DDR4` and `MSI PRO Z690-A DDR5`.
 | 6.   | [SMBIOS][DMI]                                     | DMI           | All                                  |
 | 7.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
 | 8.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
-| 9.   | [Audio subsystem][AUD]                            | AUD           | AUD001.201, AUD001.301, AUD004.201, AUD004.301 AUD005.001, AUD005.002 AUD006.001, AUD006.002 |
+| 9.   | [Audio subsystem][AUD]                            | AUD           | AUD001.201, AUD001.301, AUD004.201, AUD004.301 AUD005.201, AUD005.301 AUD006.201, AUD006.301 |
 | 10.  | [NVMe support][NVM]                               | NVM           | All                                  |
 | 11.  | [Network boot][PXE]                               | PXE           | Without PXE007.001                   |
 | 12.  | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT004.001, LBT004.002               |

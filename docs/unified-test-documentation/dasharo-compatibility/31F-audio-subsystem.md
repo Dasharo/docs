@@ -603,7 +603,7 @@ connecting the external display using the HDMI cable.
 
 The connected display should appear in the `Output devices` section.
 
-## AUD008.001 HDMI audio playback (Ubuntu)
+## AUD008.201 HDMI audio playback (Ubuntu)
 
 **Test description**
 
@@ -642,7 +642,7 @@ recordings by using the external display connected to the HDMI slot.
 
 Sound should be played from the external display.
 
-## AUD008.002 HDMI audio playback (Windows)
+## AUD008.301 HDMI audio playback (Windows)
 
 **Test description**
 
