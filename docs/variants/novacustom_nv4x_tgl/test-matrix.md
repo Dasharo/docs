@@ -14,7 +14,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                      | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                       | EFI           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.201, DSP001.301, DSP002.201, DSP002.301 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR021.001, ECR021.002, ECR022.001, ECR022.002, ECR023.001, ECR023.002, ECR024.001, ECR024.002 |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR021.201, ECR021.301, ECR022.201, ECR022.301, ECR023.201, ECR023.301, ECR024.201, ECR024.301 |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot keys][CBK]                                | CBK           | All                                  |
@@ -151,7 +151,7 @@ subjected from before the release of the new binary.
 | 1.   | [Memory HCL][HCL]                                      | HCL           | All                                  |
 | 2.   | [UEFI compatible interface][EFI]                       | EFI           | All                                  |
 | 3.   | [Display ports and LCD support][DSP]                   | DSP           | DSP001.001, DSP001.201, DSP001.301, DSP002.201, DSP002.301 |
-| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR021.001, ECR021.002, ECR022.001, ECR022.002, ECR023.001, ECR023.002, ECR024.001, ECR024.002 |
+| 4.   | [Embedded Controller and Super I/O initialization][ECR]| ECR           | Without ECR021.201, ECR021.301, ECR022.201, ECR022.301, ECR023.201, ECR023.301, ECR024.201, ECR024.301 |
 | 5.   | [NVMe support][NVM]                                    | NVM           | All                                  |
 | 6.   | [Custom logo][CLG]                                     | CLG           | All                                  |
 | 7.   | [Custom boot keys][CBK]                                | CBK           | All                                  |
