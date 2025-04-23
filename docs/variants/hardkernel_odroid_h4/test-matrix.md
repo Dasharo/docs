@@ -14,8 +14,8 @@ Hardkernel devices.
 | 2.  | [Custom Boot Keys][CBK]               | CBK           | All                                  |
 | 3.  | [Custom logo][CLG]                    | CLG           | All                                  |
 | 4.  | [USB HID and MSC Support][USB]        | USB           | USB001.0001, USB001.002, USB002.001, USB002.002|
-| 5.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
-| 6.  | [UEFI compatible interface][EFI]      | EFI           | EFI001.001                           |
+| 5.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
+| 6.  | [UEFI compatible interface][EFI]      | EFI           | EFI001.201                           |
 | 7.  | [UEFI Shell][USH]                     | USH           | All                                  |
 | 8.  | [NVMe support][NVM]                   | NVM           | NVM001.001, NVM001.002               |
 | 9.  | [Network boot][PXE]                   | PXE           | All                                  |

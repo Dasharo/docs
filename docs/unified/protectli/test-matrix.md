@@ -22,7 +22,7 @@ subjected from before the release of the new binary.
     | 9.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
     | 10.  | [FreeBSD support][BSD]                            | BSD           | All                                  |
     | 11.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.001                           |
-    | 12.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
+    | 12.  | [Custom network boot entries][CNB]                | CNB           | CNB001.201                           |
 
     [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
     [DSP]: ../../unified-test-documentation/dasharo-compatibility/31E-display-ports-and-lcd.md
@@ -63,7 +63,7 @@ subjected from before the release of the new binary.
     | 10.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | All                                  |
     | 11.  | [eMMC support][MMC]                   | MMC           | All                                  |
     | 12.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-    | 13.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
+    | 13.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
     | 14.  | [Audio subsystem][AUD]                | AUD           | AUD007.xxx, AUD008.xxx               |
     | 15.  | [UEFI Shell][USH]                     | USH           | All                                  |
     | 16.  | [USB detection][UDT]                  | UDT           | All                                  |
@@ -149,7 +149,7 @@ subjected from before the release of the new binary.
     | 12.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | ALL                                  |
     | 13.  | [eMMC support][MMC]                   | MMC           | MMC001.001                           |
     | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-    | 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
+    | 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
     | 16.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
     | 17.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
     | 18.  | [Audio subsystem][AUD]                | AUD           | AUD001.201, AUD001.301, AUD002.201, AUD002.301, AUD003.201, AUD003.301, AUD004.201, AUD004.301, AUD005.201, AUD005.301, AUD006.201, AUD006.301 |
@@ -265,7 +265,7 @@ subjected from before the release of the new binary.
     | 11.  | [USB-C support][UTC]                  | UTC           | UTC004.001, UTC004.002               |
     | 12.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | ALL                                  |
     | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-    | 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
+    | 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
     | 17.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
     | 18.  | [Audio subsystem][AUD]                | AUD           | AUD001.201, AUD001.301, AUD002.201, AUD002.301, AUD003.201, AUD003.301, AUD004.201, AUD004.301, AUD005.201, AUD005.301, AUD006.201, AUD006.301 |
     | 19.  | [UEFI Shell][USH]                     | USH           | All                                  |
@@ -378,7 +378,7 @@ subjected from before the release of the new binary.
     | 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | ALL                                  |
     | 13.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
     | 14.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-    | 15.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
+    | 15.  | [Custom network boot entries][CNB]                | CNB           | CNB001.201                           |
     | 16.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
     | 17.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
     | 18.  | [Audio subsystem][AUD]                            | AUD           | AUD001.201, AUD001.301, AUD002.201, AUD002.301, AUD003.201, AUD003.301, AUD004.201, AUD004.301, AUD005.201, AUD005.301, AUD006.201, AUD006.301 |
@@ -459,7 +459,7 @@ subjected from before the release of the new binary.
     | 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | ALL                                  |
     | 13.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
     | 14.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-    | 15.  | [Custom network boot entries][CNB]                | CNB           | CNB001.002                           |
+    | 15.  | [Custom network boot entries][CNB]                | CNB           | CNB001.201                           |
     | 17.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
     | 18.  | [UEFI Shell][USH]                                 | USH           | All                                  |
     | 19.  | [USB detection][UDT]                              | UDT           | All                                  |
