@@ -57,9 +57,14 @@ connect ports 3 and 4 together with an additional RJ45 cable.
     * Sonoff S20 type E (relay unused due to disruptions in power during high CPU load)
     * USB-UART converter with 4-wire cable
     * 4-pin header 2.54 mm raster
-    * Pomona SOIC8 clip
     * USB-C to USB-A male-male cable for console
     * Power supply for the platform: 12V 10A
+
+=== "VP2430/VP2440"
+
+    * VP2430/VP2440 platform
+    * USB-C to USB-A male-male cable for console
+    * Power supply for the platform: 12V 5A
 
 ### External flashing enabling
 
@@ -95,7 +100,25 @@ connect ports 3 and 4 together with an additional RJ45 cable.
 
 === "VP6630/VP6650/VP6670"
 
-    Connect the J1 and J2 flash headers to the SPI header on RTE.
+    Connect the J1 and J2 flash headers to the SPI header on RTE using 2.54mm
+    to 2mm wires as described in the table:
+
+    | RTE SPI header      | J2 flash header                        |
+    |:-------------------:|:--------------------------------------:|
+    | J7 pin 1 (Vcc)      | pin 1 (Vcc)                            |
+    | J7 pin 4 (SCLK)     | pin 3 (CLK)                            |
+    | J7 pin 6 (MOSI)     | pin 4 (MOSI)                           |
+
+    | RTE SPI header      | J1 flash header                        |
+    |:-------------------:|:--------------------------------------:|
+    | J7 pin 2 (GND)      | pin 4 (GND)                            |
+    | J7 pin 3 (CS)       | pin 1 (CS)                             |
+    | J7 pin 5 (MISO)     | pin 2 (MISO)                           |
+
+=== "VP2430/VP2440"
+
+    Connect the J1 and J2 flash headers to the SPI header on RTE using 2.54mm
+    to 2mm wires as described in the table:
 
     | RTE SPI header      | J2 flash header                        |
     |:-------------------:|:--------------------------------------:|
@@ -162,6 +185,18 @@ connect ports 3 and 4 together with an additional RJ45 cable.
 === "VP6630/VP6650/VP6670"
 
     Connect the RTE J11 header to the platform JCMOS1 header using 2.54mm to 2mm
+    wires as described in the table:
+
+    | RTE       | Protectli                  |
+    |:---------:|:--------------------------:|
+    | J11 pin 8 | JCMOS1 pin 2 (CLR_CMOS)    |
+    | Any GND   | JCMOS1 pin 1 (GND)         |
+
+    Resetting CMOS is required for proper external flashing.
+
+=== "VP2430/VP2440"
+
+    Connect the RTE J11 header to the platform JCMOS1 header using 2.54mm to 2.54mm
     wires as described in the table:
 
     | RTE       | Protectli                  |
@@ -271,6 +306,19 @@ The method of setting and using serial connection is described in the
 
         ```bash
         osfv_cli sonoff --sonoff_ip <sonoff_ip_address> off
+        ```
+
+=== "VP2430/VP2440"
+
+    Power supply controlling is performed with the relay module on RTE
+    connected to one of RTE GPIOs. Power operation should be performed using
+    the `rte_ctrl` script implemented in `meta-rte` (OS image dedicated to the
+    RTE platform).
+
+    To toggle the power supply use the below command:
+
+        ```bash
+        rte_ctrl rel
         ```
 
 ### Basic power operations
