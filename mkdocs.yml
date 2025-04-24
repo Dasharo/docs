@@ -475,6 +475,7 @@ nav:
           - 'Capsule Update Configs': kb/capsule-updates-configs.md
       - 'PCR Measurements': kb/pcr-measurements.md
       - 'NovaCustom dev setup': kb/laptop-dev-env.md
+      - 'Flash Regions': kb/flashregions.md
     # - 'Trolling Topics List':
     #     - 'Introduction': osf-trolling-list/osf_issues_taxonomy.md
   - 'FAQ':
