@@ -18,13 +18,13 @@ The following table describes which devices support Update Capsules
 and since which firmware release, if applicable.  If a particular device isn't
 mentioned, it means that it doesn't support this update method.
 
-| Manufacturer | Device     | Starting with FW version |
-| ---          | ---        | ---                      |
-| MSI          | Z690-A PRO | TBD                      |
-| MSI          | Z790-P PRO | TBD                      |
-
-`TBD` (to be delivered) is used as a placeholder for upcoming releases which
-should have this feature enabled.
+| Manufacturer |     Device      | Starting with FW version |
+| ------------ | --------------- | ------------------------ |
+| MSI          | Z690-A PRO      | v1.1.4                   |
+| MSI          | Z790-P PRO      | v0.9.2                   |
+| NovaCustom   | 11th Gen series | v1.6.0                   |
+| NovaCustom   | 12th Gen series | v1.8.0                   |
+| NovaCustom   | 14th Gen series | v1.0.0                   |
 
 ## Prerequisites
 
@@ -49,6 +49,7 @@ should have this feature enabled.
 | ROMHOLE      | only on MSI                                |
 | SMBIOS       | unique data like serial number or UUID     |
 | boot logo    | [set by the user](logo-customization.md)   |
+| GbE          | unique Gigabit Ethernet configuration (MAC address)  |
 
 Preservation is done as a best effort. However some
  firmware changes are expected (e.g., current custom
@@ -57,6 +58,11 @@ Preservation is done as a best effort. However some
  abort an update.
 
 ## How to use UEFI Update Capsules
+
+!!! question
+    This page describes the manual steps for capsule update. fwupd automates
+    all of the steps described here, so you should only need to follow this
+    guide if fwupd is unsupported for your device.
 
 !!! note
 
@@ -107,10 +113,6 @@ Preservation is done as a best effort. However some
    if in doubt about current location) via `CapsuleApp.efi
    firmware.cap` (substitute `firmware.cap` with an actual file name):
    ![Initiating a capsule update](../images/uefi-shell-capsule-app-posting.png)
-   A sign of success is an immediate reboot followed by a dialog of [Firmware
-   Update Mode](../kb/firmware-update-mode.md):
-   ![Firmware Update Mode warning](../images/fum-warning.png)
-   Read the text and press the key it asks you to press if you want to proceed.
 
 8. An ongoing firmware update looks like this:
    ![Ongoing capsule update](../images/uefi-capsule-update.png)
