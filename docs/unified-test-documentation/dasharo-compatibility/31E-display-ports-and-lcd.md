@@ -40,6 +40,7 @@ during firmware execution phase.
 1. Logo appears on the screen during firmware execution phase.
 
 ## DSP001.0XX Internal LCD in OS (Linux generic)
+
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
@@ -69,7 +70,6 @@ The test is fully automated. Refer to https://github.com/Dasharo/open-source-fir
 ## DSP001.301 Internal LCD in OS (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
 
 ## DSP002.2XX External HDMI display in OS (Linux generic)
 
@@ -171,7 +171,6 @@ during firmware execution phase.
 
 1. The image should be displayed on the external Display Port connected display
     in `Mirror` and `Join Displays` modes.
-
 
 ## DSP003.201 External DP display in OS (Ubuntu)
 

@@ -167,7 +167,6 @@ Follows the [generic USB002.0XX Linux-based test case](#usb0020xx-usb-keyboard-d
 
 Follows the [generic USB002.0XX Linux-based test case](#usb0020xx-usb-keyboard-detection-linux-generic)
 
-
 ## USB002.301 USB keyboard detection (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
