@@ -87,6 +87,17 @@ plugins:
   - search
   - macros
   - mkdocs-video
+  - include-markdown:
+      encoding: ascii
+      preserve_includer_indent: true
+      dedent: true
+      trailing_newlines: true
+      comments: true
+      rewrite_relative_urls: true
+      heading_offset: 0
+      recursive: true
+      start: <!--start-->
+      end: <!--end-->
   - redirects:
       redirect_maps:
         'common-coreboot-docs/dasharo_tools_suite.md': 'dasharo-tools-suite/overview.md'
