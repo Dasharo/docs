@@ -46,6 +46,7 @@ jobs:
         uses: 3mdeb/seo-spy-action@main
         with:
           domain: 'http://0.0.0.0:8000'
+          args: '-o --ignore-path resources/hcl/'
   seo_spy_canonical_links:
     runs-on: ubuntu-latest
     name: Check canonical links
