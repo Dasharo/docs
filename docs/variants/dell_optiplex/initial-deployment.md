@@ -174,8 +174,8 @@ cbfstool coreboot.rom add -f sch5545_ecfw.bin -n sch5545_ecfw.bin -t raw
 If you are using TXT, run
 
 ```bash
-cbfstool coreboot.rom add -f IVB_BIOSAC_PRODUCTION.bin -n txt_bios_acm.bin -t raw
-cbfstool coreboot.rom add -f SNB_IVB_SINIT_20190708_PW.bin -n txt_sinit_acm.bin -t raw
+cbfstool coreboot.rom add -f IVB_BIOSAC_PRODUCTION.bin -n txt_bios_acm.bin -t raw -a 0x20000
+cbfstool coreboot.rom add -f SNB_IVB_SINIT_20190708_PW.bin -n txt_sinit_acm.bin -t raw -c lzma
 ```
 
 ### Flashing
