@@ -12,6 +12,10 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wI0qBSLdaluayYsm_lIa9iJ9LnPnCOZ9eNOyrKSc-j4/edit?usp=sharing).
 
+> The missing versions before v1.0.16 were assigned to different platforms
+> interchangeably. See [Protectli FW6 releases](../protectli_fw6/releases.md)
+> and [Protectli VP2410 releases](../protectli_vp2410/releases.md).
+
 ## v1.2.0 - 2024-03-25
 
 Test results for this release can be found
@@ -358,6 +362,26 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + CPU signature: 0x0806EC, Date: 28.04.2021, Revision: 0xEC
     + CPU signature: 0x0A0660, Date: 28.04.2021, Revision: 0xEA
 
+## v1.0.5
+
+### Added
+
+- Initial support for FW6 Cometlake platform
+
+### Known issues
+
+- [FW6 Comet Lake graphics crashes in Linux](https://github.com/Dasharo/dasharo-issues/issues/26)
+  The system may crash and reset itself on kernels (< 5.2) which do not have
+  support for Cometlake graphics in i915 DRM driver in situations when the
+  screen goes idle (locked screen or longer inactivity of the system).
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 4.13 revision a4cd9117](https://github.com/Dasharo/coreboot/compare/a4cd9117...protectli-firewall-1.0.5)
+- [SeaBIOS v1.0.8 based on rel-1.12.1 revision 171fc897](https://github.com/Dasharo/SeaBIOS/compare/171fc897...v1.0.8)
+- [iPXE 2019.3 stable revision ebf2eaf5](https://github.com/ipxe/ipxe/commits/ebf2eaf5)
+- [MemTest86+ revision dd5b4ff2](https://review.coreboot.org/admin/repos/memtest86plus,general)
+
 [protectli_vp4630_vp4650_v1.0.19.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.19/protectli_vp4630_vp4650_v1.0.19.rom
 [protectli_vp4630_vp4650_v1.0.19.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.19/protectli_vp4630_vp4650_v1.0.19.rom.sha256
 [protectli_vp4630_vp4650_v1.0.19.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.0.19/protectli_vp4630_vp4650_v1.0.19.rom.sha256.sig
@@ -379,5 +403,3 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [v1.0.13_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom
 [v1.0.13_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256
 [v1.0.13_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/protectli_vault_cml_v1.0.13.rom.sha256.sig
-
-## v1.0.0 .. v1.0.12: Non-public engineering releases

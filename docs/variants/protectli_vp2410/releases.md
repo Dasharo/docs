@@ -12,6 +12,10 @@ For details about our release process please read
 Test results for this platform can be found
 [here](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=1033426620).
 
+> The missing versions before v1.0.15 were assigned to different platforms
+> interchangeably. See [Protectli FW6 releases](../protectli_fw6/releases.md)
+> and [Protectli VP46XX releases](../protectli_vp46xx/releases.md).
+
 ## v1.1.1 - 2025-01-23
 
 Test results for this release can be found
@@ -171,4 +175,103 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [v1.0.15_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256
 [v1.0.15_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_glk/v1.0.15/protectli_vault_glk_v1.0.15.rom.sha256.sig
 
-## v1.0.0 .. v1.0.14: Non-public engineering releases
+## v1.0.10 - 2021-09-29
+
+### Changed
+
+- Update ME image to fix VR issues
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 4.13 revision a4cd9117](https://github.com/Dasharo/coreboot/compare/a4cd9117...protectli_vault_glk_v1.0.10)
+- [Dasharo UEFI based on TianoCore EDK2 edk2-stable202011](https://github.com/Dasharo/edk2/compare/dd7523b5b123de6f0730f2f2abb207f2a5c1ccd4...615f9f4b67876df08dcf872d311dd73884a449e3)
+- [EFI iPXE 1.20.1+ (g9b25)](https://github.com/ipxe/ipxe/commit/9b25f6e5cf517f426de80ede618398ef01e385f9)
+
+## v1.0.9 - 2021-07-20
+
+### Changed
+
+- SMBIOS Product name to VP2410
+- UEFI Setup key changed to DEL
+
+### Fixed
+
+- USB detection issues
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 4.13 revision a4cd9117](https://github.com/Dasharo/coreboot/compare/a4cd9117...protectli_vault_glk_v1.0.9)
+- [Dasharo UEFI based on TianoCore EDK2 edk2-stable202011](https://github.com/Dasharo/edk2/compare/dd7523b5b123de6f0730f2f2abb207f2a5c1ccd4...615f9f4b67876df08dcf872d311dd73884a449e3)
+- [EFI iPXE 1.20.1+ (g9b25)](https://github.com/ipxe/ipxe/commit/9b25f6e5cf517f426de80ede618398ef01e385f9)
+
+## v1.0.8 - 2021-05-28
+
+### Added
+
+- UEFI compatible interface
+- iPXE network boot
+- UEFI Shell
+- TPM2 menu
+- UEFI Measured Boot
+- Persistent boot options
+
+### Fixed
+
+- [The VGA text mode console does not work in SeaBIOS.](https://github.com/Dasharo/dasharo-issues/issues/13)
+  UEFI graphics works well.
+- [VT-d (IOMMU) is not being correctly configured by FSP.](https://github.com/Dasharo/dasharo-issues/issues/14)
+- Flashrom did not support Geminilake chipset. The upstream support is already there.
+- [Fastboot is not yet working.](https://github.com/Dasharo/dasharo-issues/issues/15)
+  FSP fastboot has been fixed to work with coreboot
+- [Display does not work in FreeBSD and other BSD systems](https://github.com/Dasharo/dasharo-issues/issues/16)
+  UEFI graphics works in FreeBSD.
+- [Linux reports non-working TPM interrupt.](https://github.com/Dasharo/dasharo-issues/issues/12)
+
+### Known issues
+
+- USB keyboard cannot wake platform from S3 suspend. This s a limitation of the
+  hardware design which routes only 5V power supply available in full powered
+  state. Waking the platform from S3 state is only possible with power button
+  and Wake-on-LAN.
+- [S3 resume does not work in FSP](https://github.com/Dasharo/dasharo-issues/issues/27).
+  For power saving it is recommended to use modern S0 idle states, aka s2idle
+  as explained in the [Linux kernel documentation](https://www.kernel.org/doc/html/v5.0/admin-guide/pm/sleep-states.html).
+  S0 idle is known to be more efficient in saving power. Additionally the
+  keyboard can wake the platform from s2idle state since the power is not cut
+  off from USB devices in this state.
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 4.13 revision a4cd9117](https://github.com/Dasharo/coreboot/compare/a4cd9117...protectli-firewall-1.0.8)
+- [Dasharo UEFI based on TianoCore EDK2 edk2-stable202011](https://github.com/Dasharo/edk2/compare/dd7523b5b123de6f0730f2f2abb207f2a5c1ccd4...615f9f4b67876df08dcf872d311dd73884a449e3)
+- [EFI iPXE 1.20.1+ (g9b25)](https://github.com/ipxe/ipxe/commit/9b25f6e5cf517f426de80ede618398ef01e385f9)
+
+## 1.0.3-rc1 - 2021-03-19 (Engineering release)
+
+### Added
+
+- Initial support for Protectli Vault FW4 Geminilake platform
+
+### Fixed
+
+- SeaBIOS: change handling the CBFS pointer to correctly detect CBFS location
+  on Apollolake and Geminilake platforms
+
+### Known issues
+
+- [The VGA text mode console does not work in SeaBIOS.](https://github.com/Dasharo/dasharo-issues/issues/13)
+  SeaBIOS does not print boot menu prompt and boot options. Only serial console
+  redirection and graphical logo works.
+- [VT-d (IOMMU) is not being correctly configured by FSP.](https://github.com/Dasharo/dasharo-issues/issues/14)
+- Flashrom does not support Geminilake chipset.
+- [Fastboot is not yet working.](https://github.com/Dasharo/dasharo-issues/issues/15)
+  It makes the boot process longer due to full memory training on each boot.
+- [Since VGA text mode console doesn't yet work.](https://github.com/Dasharo/dasharo-issues/issues/16)
+  FreeBSD can only be accessed on serial console.
+- [Linux reports non-working TPM interrupt.](https://github.com/Dasharo/dasharo-issues/issues/12)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 4.13 revision a4cd9117](https://github.com/Dasharo/coreboot/compare/a4cd9117...protectli-firewall-1.0.3-rc1)
+- [SeaBIOS v1.0.8 based on rel-1.12.1 revision 171fc897](https://github.com/Dasharo/SeaBIOS/compare/171fc897...v1.0.8)
+- [iPXE 2019.3 stable revision ebf2eaf5](https://github.com/ipxe/ipxe/commits/ebf2eaf5)
