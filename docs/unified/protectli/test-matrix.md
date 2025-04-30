@@ -16,7 +16,7 @@ subjected from before the release of the new binary.
     | 3.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.201, USB002.201, USB002.002 |
     | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
-    | 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
+    | 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.201, WLE002.201, WLE003.201   |
     | 7.   | [Network boot][PXE]                               | PXE           | PXE007.001                           |
     | 8.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
     | 9.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
