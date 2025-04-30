@@ -21,7 +21,7 @@ subjected from before the release of the new binary.
     | 8.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
     | 9.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
     | 10.  | [FreeBSD support][BSD]                            | BSD           | All                                  |
-    | 11.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.001                           |
+    | 11.  | [miniPCIe LTE/WiFi/Bluetooth][MWL]                | MWL           | MWL004.201                           |
     | 12.  | [Custom network boot entries][CNB]                | CNB           | CNB001.201                           |
 
     [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
@@ -59,7 +59,7 @@ subjected from before the release of the new binary.
     | 6.   | [Custom Boot Keys][CBK]               | CBK           | All                                  |
     | 7.   | [USB HID and MSC Support][USB]        | USB           | USB001.xxx and USB002.xxx            |
     | 8.   | [Debian Stable and Ubuntu LTS support][LBT]  | LBT    | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
-    | 9.   | [miniPCIe LTE/WiFi/Bluetooth][MWL]    | MWL           | MWL004.001                           |
+    | 9.   | [miniPCIe LTE/WiFi/Bluetooth][MWL]    | MWL           | MWL004.201                           |
     | 10.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | All                                  |
     | 11.  | [eMMC support][MMC]                   | MMC           | All                                  |
     | 12.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
