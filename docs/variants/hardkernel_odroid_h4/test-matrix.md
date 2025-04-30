@@ -118,7 +118,7 @@ Hardkernel devices.
 |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
 | 1. | [Serial Boot Measure][CBMEM]           | CBMEM         | All                                  |
 | 2. | [CPU][CPT]                             | CPT           | CPT001.201,CPT002.201                |
-| 3. | [CPU][CPF]                             | CPF           | CPF001.001,CPF002.001,CPF004.001     |
+| 3. | [CPU][CPF]                             | CPF           | CPF001.201,CPF002.201,CPF004.201     |
 | 4. | [Platform stability][STB]              | STB           | STB001.001,STB001.002,STB002.001     |
 | 5. | [Ubuntu booting performance test][BUB] | BUB           | All                                  |
 
