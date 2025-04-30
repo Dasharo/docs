@@ -35,7 +35,7 @@ and [VP6670](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/
 ### Known issues
 
 - [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
-- [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
+- [STB002.201 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
 
 ### Binaries
 
@@ -104,7 +104,7 @@ Test results for this release can be found
 ### Known issues
 
 - [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
-- [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
+- [STB002.201 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
 
 ### Binaries
 
