@@ -34,7 +34,7 @@ Note that the test scope is used during Dasharo Certification Procedure for for
 | 14.  | [Custom Boot Keys][CBK]                           | CBK           | All                                  |
 | 15.  | [Dasharo Tools Suite][DTS]                        | DTS           | DTS001.001, DTS002.001, DTS003.001, DTS004.001, DTS005.001, DTS006.001 |
 | 16.  | [CPU status][CPU]                                 | CPU           | CPU001.201, CPU001.301               |
-| 17.  | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001, SUSP005.001|
+| 17.  | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.201, SUSP002.201, SUSP003.201, SUSP005.201|
 
 [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
 [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md

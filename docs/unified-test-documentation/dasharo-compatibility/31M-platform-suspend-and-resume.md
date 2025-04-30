@@ -11,7 +11,7 @@
 1. Proceed with the
     [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 
-## SUSP001.001 Platform suspend and resume (Ubuntu, wakeup flag)
+## SUSP001.201 Platform suspend and resume (Ubuntu, wakeup flag)
 
 **Test description**
 
@@ -114,7 +114,7 @@ is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP001.003 Platform suspend and resume (QubesOS, wakeup flag)
+## SUSP001.203 Platform suspend and resume (QubesOS, wakeup flag)
 
 **Test description**
 
@@ -174,7 +174,7 @@ this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP002.001 Platform suspend and resume (Ubuntu, press key)
+## SUSP002.201 Platform suspend and resume (Ubuntu, press key)
 
 **Test description**
 
@@ -271,7 +271,7 @@ on the keyboard is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP002.003 Platform suspend and resume (QubesOS, press key)
+## SUSP002.203 Platform suspend and resume (QubesOS, press key)
 
 **Test description**
 
@@ -325,7 +325,7 @@ keyboard is tested in this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP003.001 Platform suspend and resume (Ubuntu, push power button)
+## SUSP003.201 Platform suspend and resume (Ubuntu, push power button)
 
 **Test description**
 
@@ -422,7 +422,7 @@ power button is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP003.003 Platform suspend and resume (QubesOS, push power button)
+## SUSP003.203 Platform suspend and resume (QubesOS, push power button)
 
 **Test description**
 
@@ -476,7 +476,7 @@ tested in this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP004.001 Platform suspend and resume (Ubuntu, Wake-on-LAN)
+## SUSP004.201 Platform suspend and resume (Ubuntu, Wake-on-LAN)
 
 **Test description**
 
@@ -590,73 +590,6 @@ mechanism is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP005.001 Cyclic platform suspend and resume (Ubuntu)
+## SUSP005.201 Cyclic platform suspend and resume (Ubuntu)
 
-**Test description**
-
-This test aims to verify that the DUT platform suspend and resume procedure
-performed cyclically works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = `Ubuntu`
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Install the [Firmware test suite](https://wiki.ubuntu.com/FirmwareTestSuite)
-    package.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and execute the following command:
-
-    ```bash
-    sudo fwts s3 --results-output=stderr
-    ```
-
-    > Note: suspend test duration is set defaultly to 30 seconds. After
-    that time the device should be woken up automatically.
-
-1. Log into the system again.
-1. Note the results.
-1. Repeat steps 4-6 to determine the stability of suspend and resume procedure.
-
-**Expected result**
-
-Each time, the suspend and resume procedure is performed, the output of the
-command should contain information about test results (section
-`Test Failure Summary`).
-
-The test case passes only if after every iteration of the suspend and resume
-procedure the summary section shows that all minor tests included in `s3` test
-have been passed.
-
-Example output for one iteration:
-
-```bash
-Test Failure Summary
-================================================================================
-
-Critical failures: NONE
-
-High failures: NONE
-
-Medium failures: NONE
-
-Low failures: NONE
-
-Other failures: NONE
-
-Test           |Pass |Fail |Abort|Warn |Skip |Info |
----------------+-----+-----+-----+-----+-----+-----+
-s3             |    9|     |     |     |     |     |
----------------+-----+-----+-----+-----+-----+-----+
-Total:         |    9|    0|    0|    0|    0|    0|
----------------+-----+-----+-----+-----+-----+-----+
-```
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

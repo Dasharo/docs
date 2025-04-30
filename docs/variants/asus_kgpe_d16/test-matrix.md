@@ -17,7 +17,7 @@ subjected from before the release of the new binary.
 | 6.   | [Network boot][PXE]                               | PXE           | PXE007.001                           |
 | 7.   | [USB detection][UDT]                              | UDT           | All                                  |
 | 8.   | [USB booting][UBT]                                | UBT           | All                                  |
-| 9.   | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.001                          |
+| 9.   | [Platform suspend and resume][SUSP]               | SUSP          | SUSP001.201                          |
 | 10.  | [Flash write protection][HWP]                     | HWP           | All                                  |
 | 11.  | [Display ports and LCD support][DSP]              | DSP           | DSP004.201, DSP004.301               |
 

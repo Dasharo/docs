@@ -21,7 +21,7 @@ Hardkernel devices.
 | 9.  | [Network boot][PXE]                   | PXE           | All                                  |
 | 10. | [Display ports][DSP]                  | DSP           | DSP002.201, DSP003.201               |
 | 11. | [Audio subsystem][AUD]                | AUD           | AUD007.201, AUD008.201               |
-| 12. | [Sleep mode][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001, SUSP005.001|
+| 12. | [Sleep mode][SUSP]                    | SUSP          | SUSP001.201, SUSP002.201, SUSP003.201, SUSP005.201|
 | 13. | [SMBIOS verification][DMI]            | DMI           | All                                  |
 | 14. | [eMMC support][MMC]                   | MMC           | All                                  |
 | 15. | [Sign of life][SOL]                   | SOL           | All                                  |
