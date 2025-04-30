@@ -66,7 +66,7 @@ tested platforms: `MSI PRO Z690-A WiFi DDR4` and `MSI PRO Z690-A DDR5`.
 | 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001, VBO007.001       |
 | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
-| 5.   | [ME disable/neuter support][MNE]                  | MNE           | without MNE005.001                   |
+| 5.   | [ME disable/neuter support][MNE]                  | MNE           | without MNE004.201                   |
 | 6.   | [BIOS lock support][BLS]                          | BLS           | All                                  |
 | 7.   | [SMM BIOS write protection][SMM]                  | SMM           | All                                  |
 | 8.   | [Early boot DMA protection][EDP]                  | EDP           | All                                  |

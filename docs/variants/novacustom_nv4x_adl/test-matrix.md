@@ -86,7 +86,7 @@ subjected from before the release of the new binary.
 | 2.   | [Verified Boot support][VBO]                 | VBO           | Without VBO006.001 and VBO007.001    |
 | 3.   | [Measured Boot support][MBO]                 | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                   | SBO           | Without SBO006.001, SBO007.001 and SBO008.001 |
-| 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE006.001                   |
+| 5.   | [ME disable/neuter support][MNE]             | MNE           | Without MNE005.201                   |
 | 6.   | [USB stack][USS]                             | USS           | All                                  |
 | 7.   | [Network boot availability][PXE]             | PXE           | All                                  |
 | 8.   | [BIOS lock support][BLS]                     | BLS           | All                                  |

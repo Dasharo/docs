@@ -13,10 +13,10 @@ subjected from before the release of the new binary.
     |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
     | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
     | 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.201, DSP002.003               |
-    | 3.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.201, USB002.201, USB002.002 |
+    | 3.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
     | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
-    | 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.201, WLE002.201, WLE003.201   |
+    | 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
     | 7.   | [Network boot][PXE]                               | PXE           | PXE007.001                           |
     | 8.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
     | 9.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
@@ -196,7 +196,7 @@ subjected from before the release of the new binary.
     | 2.   | [Verified Boot support][VBO]          | VBO           | Without VBO006.001 and VBO007.001    |
     | 3.   | [Measured Boot support][MBO]          | MBO           | All                                  |
     | 4.   | [Secure Boot support][SBO]            | SBO           | All                                  |
-    | 5.   | [ME disable/neuter support][MNE]      | MNE           | MNE004.001                           |
+    | 5.   | [ME disable/neuter support][MNE]      | MNE           | MNE006.201                           |
     | 6.   | [BIOS lock support][BLS]              | BLS           | All                                  |
     | 7.   | [USB stack enable/disable][USS]       | USS           | All                                  |
     | 8.   | [SMM BIOS write protection][SMM]      | SMM           | All                                  |
@@ -309,7 +309,7 @@ subjected from before the release of the new binary.
     | 2.   | [Verified Boot support][VBO]          | VBO           | Without VBO006.001 and VBO007.001    |
     | 3.   | [Measured Boot support][MBO]          | MBO           | All                                  |
     | 4.   | [Secure Boot support][SBO]            | SBO           | All                                  |
-    | 5.   | [ME disable/neuter support][MNE]      | MNE           | MNE004.001                           |
+    | 5.   | [ME disable/neuter support][MNE]      | MNE           | MNE006.201                           |
     | 6.   | [BIOS lock support][BLS]              | BLS           | All                                  |
     | 7.   | [USB stack enable/disable][USS]       | USS           | All                                  |
     | 8.   | [SMM BIOS write protection][SMM]      | SMM           | All                                  |

@@ -13,54 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## MNE001.001 Check Intel ME version (Ubuntu)
-
-**Test description**
-
-This test aims to verify that the `Intel ME version` might be read on the
-Operating System level. The read version should be the same as in the release
-notes.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the following command:
-
-    ```bash
-    cat /sys/class/mei/mei0/fw_ver
-    ```
-
-1. Note the results.
-
-**Expected result**
-
-The output of the command should contain information about the Management
-Engine Interface firmware version.
-
-Example output:
-
-```bash
-0:16.0.15.1735
-0:16.0.15.1735
-0:16.0.15.1723
-```
-
-Value from the first line, considering the numbers after the colon, should
-correspond to the value from the release notes
-
-## MNE002.001 Intel ME mode option is available and has the correct default state
+## MNE001.001 Intel ME mode option is available and has the correct default state
 
 **Test description**
 
@@ -89,160 +42,15 @@ platform with the Dasharo firmware is correct.
 
 The `Intel ME mode` field should inform that the current state is `Enabled`.
 
-## MNE003.001 Intel ME mode option Enabled works correctly (Ubuntu)
+## MNE002.201 Intel ME mode option Enabled works correctly (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test aims to verify that `Intel ME mode` option in state Enabled works
-correctly.
+## MNE004.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu)
 
-**Test configuration data**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
-    Menu.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the `Intel Management Engine Options` submenu.
-1. Verify that the `Intel ME mode` option is state `Enabled` - if not, using the
-    arrow keys and `Enter`, choose option `Enabled`.
-1. Press `F10` to save the changes.
-1. If necessary - press `Y` to confirm saving the changes.
-1. Go back to the main menu using the `ESC` key.
-1. Select the `Reset` option to apply the settings and reboot.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the following command:
-
-    ```bash
-    lspci | grep 00:16.0
-    ```
-
-1. Note the results.
-
-**Expected result**
-
-The output of the command should contain the information about Management Engine
-Interface.
-
-Example output:
-
-```bash
-Intel Corporation Comet Lake Management Engine Interface
-```
-
-## MNE004.001 Intel ME mode option Disable (Soft) works correctly (Ubuntu)
-
-**Test description**
-
-This test aims to verify that `Intel ME mode` option in state Disable (Soft)
-works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
-    Menu.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the `Intel Management Engine Options` submenu.
-1. Verify that the `Intel ME mode` option is state `Disable (Soft)` - if not,
-    using the arrow keys and `Enter`, choose option `Disable (Soft)`.
-1. Press `F10` to save the changes.
-1. If necessary - press `Y` to confirm saving the changes.
-1. Go back to the main menu using the `ESC` key.
-1. Select the `Reset` option to apply the settings and reboot.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the following command:
-
-    ```bash
-    lspci | grep 00:16.0
-    ```
-
-1. Note the results.
-
-**Expected result**
-
-The output of the command shouldn't contain the information about Management
-Engine Interface.
-
-Example of unwanted output:
-
-```bash
-Intel Corporation Comet Lake Management Engine Interface
-```
-
-## MNE005.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu)
-
-**Test description**
-
-This test aims to verify that `Intel ME mode` option in state Disable (HAP)
-works correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-
-**Test steps**
-
-1. Power on the DUT.
-1. While the DUT is booting, hold the `BIOS_SETUP_KEY` to enter the UEFI Setup
-    Menu.
-1. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-1. Enter the `Intel Management Engine Options` submenu.
-1. Verify that the `Intel ME mode` option is state `Disable (HAP)` - if not,
-    using the arrow keys and `Enter`, choose option `Disable (HAP)`.
-1. Press `F10` to save the changes.
-1. If necessary - press `Y` to confirm saving the changes.
-1. Go back to the main menu using the `ESC` key.
-1. Select the `Reset` option to apply the settings and reboot.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and run the following command:
-
-    ```bash
-    lspci | grep 00:16.0
-    ```
-
-1. Note the results.
-
-**Expected result**
-
-The output of the command shouldn't contain the information about Management
-Engine Interface.
-
-Example of unwanted output:
-
-```bash
-Intel Corporation Comet Lake Management Engine Interface
-```
-
-## MNE006.001 PCI Express 5.0 port is functional when ME disabled (Ubuntu)
+## MNE005.201 PCI Express 5.0 port is functional when ME disabled (Ubuntu)
 
 **Test description**
 
@@ -373,3 +181,7 @@ the following string:
 ```
 
 If there are no errors printed nearby concerning the HSPHY, test pass.
+
+## MNE006.201 Check Intel ME version (Ubuntu)
+
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
