@@ -13,7 +13,7 @@ Hardkernel devices.
 | 1.  | [Custom boot order][CBO]              | CBO           | CBO001.002                           |
 | 2.  | [Custom Boot Keys][CBK]               | CBK           | All                                  |
 | 3.  | [Custom logo][CLG]                    | CLG           | All                                  |
-| 4.  | [USB HID and MSC Support][USB]        | USB           | USB001.0001, USB001.002, USB002.001, USB002.002|
+| 4.  | [USB HID and MSC Support][USB]        | USB           | USB001.0001, USB001.201, USB002.201, USB002.002|
 | 5.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
 | 6.  | [UEFI compatible interface][EFI]      | EFI           | EFI001.201                           |
 | 7.  | [UEFI Shell][USH]                     | USH           | All                                  |

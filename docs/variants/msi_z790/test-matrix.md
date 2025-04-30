@@ -22,7 +22,7 @@ Note that the test scope is used during Dasharo Certification Procedure for for
 | 2.   | [UEFI compatible interface][EFI]                  | EFI           | All                                  |
 | 3.   | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 4.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.201, DSP002.301, DSP002.003, DSP003.201, DSP003.301, DSP003.003 |
-| 5.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB001.003, USB002.001, USB002.002 USB002.003 |
+| 5.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.201, USB001.301, USB002.201, USB002.002 USB002.301 |
 | 6.   | [SMBIOS][DMI]                                     | DMI           | All                                  |
 | 7.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
 | 8.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | All                                  |
