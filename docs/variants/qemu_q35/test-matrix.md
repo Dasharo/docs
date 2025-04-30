@@ -15,7 +15,7 @@ Procedure for tested platform: `QEMU Q35 Machine`
 | 1.   | [Custom Boot Keys][CBK]                           | CBK           | All                                  |
 | 2.   | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 3.   | [Network boot][PXE]                               | PXE           | Without PXE004.001                   |
-| 4.   | [SMBIOS][DMI]                                     | DMI           | Without DMI001.001 and DMI007.001    |
+| 4.   | [SMBIOS][DMI]                                     | DMI           | Without DMI001.201 and DMI007.001    |
 
 [CBK]: ../../unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
 [USH]: ../../unified-test-documentation/dasharo-compatibility/30P-uefi-shell.md

@@ -27,7 +27,7 @@ subjected from before the release of the new binary.
 | 16.  | [SD card support][SDC]                                 | SDC           | All                                  |
 | 17.  | [USB Camera verification][CAM]                         | CAM           | All                                  |
 | 18.  | [Fan speed measure][FAN]                               | FAN           | FAN001.001                         |
-| 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001.001                   |
+| 19.  | [SMBIOS][DMI]                                          | DMI           | Without DMI001.201                   |
 | 20.  | [Firmware update using fwupd][FFW]                     | FFW           | All                                  |
 | 21.  | [Dasharo Tools Suite][DTS]                             | DTS           | DTS006.001, DTS007.001               |
 | 22.  | [CPU status][CPU]                                      | CPU           | All                                  |

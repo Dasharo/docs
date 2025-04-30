@@ -14,7 +14,7 @@ subjected from before the release of the new binary.
 | 3.   | [UEFI Shell][USH]                                 | USH           | All                                  |
 | 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP003.201, DSP003.003, DSP004.201, DSP004.003 |
 | 3.   | [USB HID and MSC Support][USB]                    | USB           | All                                  |
-| 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001|
+| 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001|
 | 5.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
 | 6.   | [Audio subsystem][AUD]                            | AUD           | AUD001.201, AUD004.201, AUD005.201, AUD006.201 |
 | 7.   | [NVMe support][NVM]&sup1;                         | NVM           | NVM001.001, NVM001.002               |

@@ -14,8 +14,8 @@ subjected from before the release of the new binary.
     | 1.   | [Memory HCL][HCL]                                 | HCL           | All                                  |
     | 2.   | [Display ports and LCD support][DSP]              | DSP           | DSP002.201, DSP002.003               |
     | 3.   | [USB HID and MSC Support][USB]                    | USB           | USB001.001, USB001.002, USB002.001, USB002.002 |
-    | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
-    | 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+    | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
+    | 5.   | [Custom boot logo][CLG]                           | CLG           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 6.   | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | WLE001.001, WLE002.001, WLE003.001   |
     | 7.   | [Network boot][PXE]                               | PXE           | PXE007.001                           |
     | 8.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
@@ -62,7 +62,7 @@ subjected from before the release of the new binary.
     | 9.   | [miniPCIe LTE/WiFi/Bluetooth][MWL]    | MWL           | MWL004.201                           |
     | 10.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | All                                  |
     | 11.  | [eMMC support][MMC]                   | MMC           | All                                  |
-    | 12.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+    | 12.  | [SMBIOS][DMI]                         | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 13.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
     | 14.  | [Audio subsystem][AUD]                | AUD           | AUD007.xxx, AUD008.xxx               |
     | 15.  | [UEFI Shell][USH]                     | USH           | All                                  |
@@ -148,7 +148,7 @@ subjected from before the release of the new binary.
     | 11.  | [USB-C support][UTC]                  | UTC           | UTC004.001, UTC004.002               |
     | 12.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | ALL                                  |
     | 13.  | [eMMC support][MMC]                   | MMC           | MMC001.001                           |
-    | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+    | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
     | 16.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
     | 17.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
@@ -264,7 +264,7 @@ subjected from before the release of the new binary.
     | 10.  | [Debian Stable and Ubuntu LTS support][LBT]  | LBT         | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
     | 11.  | [USB-C support][UTC]                  | UTC           | UTC004.001, UTC004.002               |
     | 12.  | [M.2 WiFi/Bluetooth][WLE]             | WLE           | ALL                                  |
-    | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+    | 14.  | [SMBIOS][DMI]                         | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
     | 17.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
     | 18.  | [Audio subsystem][AUD]                | AUD           | AUD001.201, AUD001.301, AUD002.201, AUD002.301, AUD003.201, AUD003.301, AUD004.201, AUD004.301, AUD005.201, AUD005.301, AUD006.201, AUD006.301 |
@@ -377,7 +377,7 @@ subjected from before the release of the new binary.
     | 11.  | [USB-C support][UTC]                              | UTC           | UTC004.001, UTC004.001               |
     | 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | ALL                                  |
     | 13.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
-    | 14.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+    | 14.  | [SMBIOS][DMI]                                     | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 15.  | [Custom network boot entries][CNB]                | CNB           | CNB001.201                           |
     | 16.  | [M.2 automatic SATA/NVMe switching support][MSS]  | MSS           | MSS001.001                           |
     | 17.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
@@ -458,7 +458,7 @@ subjected from before the release of the new binary.
     | 11.  | [USB-C support][UTC]                              | UTC           | UTC004.001, UTC004.002               |
     | 12.  | [M.2 WiFi/Bluetooth][WLE]                         | WLE           | ALL                                  |
     | 13.  | [eMMC support][MMC]                               | MMC           | MMC001.001                           |
-    | 14.  | [SMBIOS][DMI]                                     | DMI           | DMI002.001, DMI003.001, DMI004.001, DMI005.001, DMI006.001 |
+    | 14.  | [SMBIOS][DMI]                                     | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001 |
     | 15.  | [Custom network boot entries][CNB]                | CNB           | CNB001.201                           |
     | 17.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |
     | 18.  | [UEFI Shell][USH]                                 | USH           | All                                  |

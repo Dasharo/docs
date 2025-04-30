@@ -10,7 +10,7 @@ subjected from before the release of the new binary.
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
 | 1.   | [coreboot base port][CBP]                         | CBP           | All                                  |
-| 2.   | [SMBIOS][DMI]                                     | DMI           | DMI001.001, DMI002.001, DMI003.001, DMI004.001|
+| 2.   | [SMBIOS][DMI]                                     | DMI           | DMI001.201, DMI002.201, DMI003.201, DMI004.201|
 | 3.   | [coreboot fan control][FAN]                       | FAN           | All                                  |
 | 4.   | [Custom boot menu key][CBK]                       | CBK           | All                                  |
 | 5.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT001.001, LBT001.002, LBT002.001, LBT002.002|
