@@ -17,7 +17,7 @@ Hardkernel devices.
 | 5.  | [Custom network boot entries][CNB]    | CNB           | CNB001.201                           |
 | 6.  | [UEFI compatible interface][EFI]      | EFI           | EFI001.201                           |
 | 7.  | [UEFI Shell][USH]                     | USH           | All                                  |
-| 8.  | [NVMe support][NVM]                   | NVM           | NVM001.001, NVM001.002               |
+| 8.  | [NVMe support][NVM]                   | NVM           | NVM001.001, NVM001.201               |
 | 9.  | [Network boot][PXE]                   | PXE           | All                                  |
 | 10. | [Display ports][DSP]                  | DSP           | DSP002.201, DSP003.201               |
 | 11. | [Audio subsystem][AUD]                | AUD           | AUD007.201, AUD008.201               |

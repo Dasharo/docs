@@ -17,7 +17,7 @@ subjected from before the release of the new binary.
 | 4.   | [SMBIOS][DMI]                                     | DMI           | DMI002.201, DMI003.201, DMI004.201, DMI005.001, DMI006.001|
 | 5.   | [Custom boot logo][CLG]                           | CLG           | All                                  |
 | 6.   | [Audio subsystem][AUD]                            | AUD           | AUD001.201, AUD004.201, AUD005.201, AUD006.201 |
-| 7.   | [NVMe support][NVM]&sup1;                         | NVM           | NVM001.001, NVM001.002               |
+| 7.   | [NVMe support][NVM]&sup1;                         | NVM           | NVM001.001, NVM001.201               |
 | 8.   | [Network boot][PXE]                               | PXE           | Without PXE007.001                   |
 | 9.   | [Debian Stable and Ubuntu LTS support][LBT]       | LBT           | LBT003.001, LBT003.002, LBT004.001, LBT004.002|
 | 13.  | [Windows booting][WBT]                            | WBT           | WBT001.001                           |

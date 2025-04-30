@@ -27,86 +27,10 @@ detect NVMe disk in the M.2 slot.
 
 1. The NVMe disk should be listed on the bootable devices list.
 
-## NVM001.002 NVMe support (Ubuntu)
+## NVM001.201 NVMe support (Ubuntu)
 
-**Test description**
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-This test aims to verify booting the Operating System from NVMe disk in
-the M.2 slot.
+## NVM001.301 NVMe support in OS (Windows)
 
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Ubuntu
-
-**Test setup**
-
-1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
-1. Insert a NVMe disk into the M.2 slot on the DUT.
-1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open a terminal window and execute the following command:
-
-```bash
-sudo mount | grep 'on / '
-```
-
-**Expected result**
-
-1. The `OPERATING_SYSTEM` has been booted from the NVMe disk correctly.
-1. Output in Terminal indicates that system partition is installed on the NVMe
-    disk:
-
-```bash
-/dev/nvme* on / tpe ext4 (rw,relatime,errors=remount-ro)
-```
-
-## NVM001.003 NVMe support in OS (Windows)
-
-**Test description**
-
-This test aims to verify booting the Operating System from NVMe disk in the
-M.2 slot.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = Windows
-
-**Test setup**
-
-1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
-1. Insert a NVMe disk into the M.2 slot on the DUT.
-1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the system.
-1. Log into the system by using the proper login and password.
-1. Open PowerShell as administrator.
-1. Run below command and note the result:
-
-    ```powershell
-    Get-PnpDevice -Status "OK" | where { $_.InstanceId -like "SCSI\DISK&VEN_NVME&*"}
-    ```
-
-**Expected result**
-
-1. The `OPERATING_SYSTEM` booting from the NVMe disk
-1. Command should output at least one NVMe drive. Similar as below:
-
-    ```powershell
-    Status     Class           FriendlyName
-    ------     -----           ------------
-    OK         DiskDrive       Samsung SSD 980 PRO 500GB
-    ```
+The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
