@@ -61,7 +61,7 @@ subjected from before the release of the new binary.
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
 |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-| 1.   | [TPM Support][TPM]                                | TPM           | TPM001.002                           |
+| 1.   | [TPM Support][TPM]                                | TPM           | TPM001.201                           |
 | 2.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
 | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |
 | 9.   | [UEFI Setup password][PSW]                        | PSW           | All                                  |

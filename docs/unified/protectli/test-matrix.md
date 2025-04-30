@@ -100,7 +100,7 @@ subjected from before the release of the new binary.
 
     | No.  | Supported test suite                  | Test suite ID | Supported test cases                 |
     |:-----|:--------------------------------------|:-------------:|:-------------------------------------|
-    | 1.   | [TPM Support][TPM]                    | TPM           | TPM001.002, TPM001.003, TPM002.002, TPM002.003, TPM003.002, TPM003.003 |
+    | 1.   | [TPM Support][TPM]                    | TPM           | TPM001.201, TPM001.301, TPM002.201, TPM002.301, TPM003.201, TPM003.301 |
     | 2.   | [Secure Boot support][SBO]            | SBO           | All                                  |
 
     [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
@@ -500,7 +500,7 @@ subjected from before the release of the new binary.
 
     | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
     |:-----|:--------------------------------------------------|:-------------:|:-------------------------------------|
-    | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.002 and TPM001.003            |
+    | 1.   | [TPM Support][TPM]                                | TPM           | TPM001.201 and TPM001.301            |
     | 2.   | [Verified Boot support][VBO]                      | VBO           | Without VBO006.001 and VBO007.001    |
     | 3.   | [Measured Boot support][MBO]                      | MBO           | All                                  |
     | 4.   | [Secure Boot support][SBO]                        | SBO           | All                                  |

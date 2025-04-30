@@ -77,7 +77,7 @@ Hardkernel devices.
 
 | No. | Supported test suite                  | Test suite ID | Supported test cases                 |
 |:---:|:--------------------------------------|:-------------:|:-------------------------------------|
-| 1.  | [TPM Support][TPM]                    | TPM           | TPM001.002,TPM002.001,TPM002.002,TPM003.001,TPM003.002,TPM003.004, |
+| 1.  | [TPM Support][TPM]                    | TPM           | TPM001.201,TPM002.001,TPM002.201,TPM003.001,TPM003.201,TPM003.004, |
 | 2.  | [Verified Boot Integration][VBO]      | VBO           | All                                  |
 | 3.  | [BIOS lock support][BLS]              | BLS           | All                                  |
 | 4.  | [Measured boot integration][MBO]      | MBO           | All                                  |
