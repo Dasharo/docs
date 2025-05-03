@@ -1047,6 +1047,7 @@ connection stability.
 1. The `USB-C docking station` connected to the USB-C port.
 
 **Test steps**
+
 1. Power on the DUT.
 1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
 1. Enter the Dasharo System Features menu using the arrow keys and Enter.
@@ -1406,21 +1407,21 @@ station are recognized correctly by the `OPERATING_SYSTEM`.
 After executing the command, a list containing all USB devices should be
 displayed. The list should contain the `USB storage`, which is plug in.
 
-    Example output:
+Example output:
 
-    ```bash
-        Status     Class           FriendlyName
-        ------     -----           ------------
-        OK         DiskDrive       Mass Storage Device USB Device
-        OK         USB             Generic USB Hub
-        OK         HIDClass        USB Input Device
-        OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
-        OK         DiskDrive       USB SanDisk 3.2Gen1 USB Device
-        OK         USB             USB Root Hub (USB 3.0)
-        OK         Net             TP-LINK Gigabit Ethernet USB Adapter
-        OK         USB             Generic USB Hub
-        OK         USB             USB Mass Storage Device
-    ```
+```bash
+    Status     Class           FriendlyName
+    ------     -----           ------------
+    OK         DiskDrive       Mass Storage Device USB Device
+    OK         USB             Generic USB Hub
+    OK         HIDClass        USB Input Device
+    OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
+    OK         DiskDrive       USB SanDisk 3.2Gen1 USB Device
+    OK         USB             USB Root Hub (USB 3.0)
+    OK         Net             TP-LINK Gigabit Ethernet USB Adapter
+    OK         USB             Generic USB Hub
+    OK         USB             USB Mass Storage Device
+```
 
 ## UTC011.004 USB Type-C docking station USB devices recognition ME disabled (firmware)
 
@@ -1557,21 +1558,21 @@ Disable (HAP) or Disable (Soft).
 After executing the command, a list containing all USB devices should be
 displayed. The list should contain the `USB storage`, which is plug in.
 
-    Example output:
+Example output:
 
-    ```bash
-        Status     Class           FriendlyName
-        ------     -----           ------------
-        OK         DiskDrive       Mass Storage Device USB Device
-        OK         USB             Generic USB Hub
-        OK         HIDClass        USB Input Device
-        OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
-        OK         DiskDrive       USB SanDisk 3.2Gen1 USB Device
-        OK         USB             USB Root Hub (USB 3.0)
-        OK         Net             TP-LINK Gigabit Ethernet USB Adapter
-        OK         USB             Generic USB Hub
-        OK         USB             USB Mass Storage Device
-    ```
+```bash
+    Status     Class           FriendlyName
+    ------     -----           ------------
+    OK         DiskDrive       Mass Storage Device USB Device
+    OK         USB             Generic USB Hub
+    OK         HIDClass        USB Input Device
+    OK         Bluetooth       Intel(R) Wireless Bluetooth(R)
+    OK         DiskDrive       USB SanDisk 3.2Gen1 USB Device
+    OK         USB             USB Root Hub (USB 3.0)
+    OK         Net             TP-LINK Gigabit Ethernet USB Adapter
+    OK         USB             Generic USB Hub
+    OK         USB             USB Mass Storage Device
+```
 
 ## UTC012.001 USB Type-C docking station USB keyboard (firmware)
 
@@ -3352,9 +3353,9 @@ not exceed the limits of the power supply's specifications.
 1. Open a terminal window and run the following command, while observing the
     power meter's display:
 
-    ```bash
-    stress-ng -c 20 -t 5
-    ```
+```bash
+stress-ng -c 20 -t 5
+```
 
 1. Repeat the step above 5 times, noting the maximum power draw shown on the
     power meter each time.
@@ -3432,9 +3433,9 @@ Disable (HAP) or Disable (Soft).
 1. Open a terminal window and run the following command, while observing the
     power meter's display:
 
-    ```bash
-    stress-ng -c 20 -t 5
-    ```
+```bash
+stress-ng -c 20 -t 5
+```
 
 1. Repeat the step above 5 times, noting the maximum power draw shown on the
     power meter each time.
