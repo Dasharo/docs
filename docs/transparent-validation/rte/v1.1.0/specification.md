@@ -341,9 +341,9 @@ Reset button (`SW1`) located near relay is used for resetting the RTE itself.
 
 1. Set proper SPI Vcc Voltage:
 
-    Adequate Vcc voltege is necessary for successful flash procedure. If it will
-    be to low chip will not recognize any signals, if too high chip will be
-    damaged.
+    Adequate Vcc voltage is necessary for a successful flash procedure. If it is
+    too low the chip will not recognize any signals, if too high the chip will
+    be damaged.
 
     ```bash
     echo 0 > /sys/class/gpio/gpio405/value
