@@ -2,20 +2,29 @@
 
 ## Intro
 
-The following documentation describes the process of recovering the NovaCustom NUC BOX-155H platform from a brick state using Dasharo open-source firmware and one of two methods:
+The following documentation describes the process of recovering the NovaCustom
+NUC BOX-155H platform from a brick state using Dasharo open-source firmware and
+one of two methods:
 
 - **WSON8 chip flashing using a CH341A and socket adapter**
-- **Remote/automated flashing via [qspimux](https://github.com/felixheld/qspimux) and [RTE](../../transparent-validation/rte/introduction.md)**
+- **Remote/automated flashing via
+    [qspimux](https://github.com/felixheld/qspimux) and
+    [RTE](../../transparent-validation/rte/introduction.md)**
 
-The default BIOS flash chip is a **WSON8 package**, mounted in a socket — meaning **there are no exposed pins** for clip-on programmers. This makes traditional flashing using Pomona clips impossible.
+The default BIOS flash chip is a **WSON8 package**, mounted in a socket —
+meaning **there are no exposed pins** for clip-on programmers. This makes
+traditional flashing using Pomona clips impossible.
 
-> ⚠️ Important: Repeated mechanical re-seating of the WSON8 chip may degrade the socket or damage the chip. This method is **not suited for remote or automated workflows**.
+> ⚠️ Important: Repeated mechanical re-seating of the WSON8 chip may degrade
+the socket or damage the chip. This method is **not suited for remote or
+automated workflows**.
 
 ## External flashing
 
 ### CH341A with WSON8 socket adapter
 
-This method involves manually extracting the BIOS chip and flashing it outside the board using a CH341A programmer.
+This method involves manually extracting the BIOS chip and flashing it outside
+the board using a CH341A programmer.
 
 #### Prerequisites
 
@@ -37,22 +46,30 @@ This method involves manually extracting the BIOS chip and flashing it outside t
     flashrom -p ch341a_spi -w [path_to_binary]
     ```
 
-7. Once completed, remove the chip from the adapter and reinsert it into the board’s socket.
+7. Once completed, remove the chip from the adapter and reinsert it into the
+  board’s socket.
 8. Power on the platform.
 
-> ⚠️ Note: This process is manual, not scalable, and fragile. It is **not recommended for repetitive tasks** or automated CI setups.
+> ⚠️ Note: This process is manual, not scalable, and fragile. It is **not
+recommended for repetitive tasks** or automated CI setups.
 
 ---
 
 ### qspimux with RTE (recommended for automation)
 
-The [qspimux](https://github.com/felixheld/qspimux) setup enables **remote firmware flashing** without manually removing the flash chip. It supports SPI muxing between the host board and an external flasher like the RTE.
+The [qspimux](https://github.com/felixheld/qspimux) setup enables **remote
+firmware flashing** without manually removing the flash chip. It supports SPI
+muxing between the host board and an external flasher like the RTE.
 
-> ⚠️ This method requires **hardware modifications**. The factory-mounted WSON8 socket must be desoldered and replaced with a 9-pin qspimux header. This involves **fine-pitch SMD soldering** and should only be done by experienced individuals. Proceed at your own risk.
+> ⚠️ This method requires **hardware modifications**. The factory-mounted
+WSON8 socket must be desoldered and replaced with a 9-pin qspimux header.
+This involves **fine-pitch SMD soldering** and should only be done by
+experienced individuals. Proceed at your own risk.
 
 #### Benefits
 
-- Fully automated flashing possible via [RTE](../../transparent-validation/rte/introduction.md)
+- Fully automated flashing possible via
+  [RTE](../../transparent-validation/rte/introduction.md)
 - No physical chip handling after initial setup
 - Safer and repeatable in lab/validation environments
 
@@ -118,10 +135,12 @@ The [qspimux](https://github.com/felixheld/qspimux) setup enables **remote firmw
     echo "0" > /sys/class/gpio/gpio402/value
     ```
 
-> ⚠️ First boot after flashing may take longer. Always confirm stable power before flashing.
+> ⚠️ First boot after flashing may take longer. Always confirm stable power
+before flashing.
 
 ![](../../images/qspimux_pin_header.jpg)
 
 ![](../../images/qspimux_nucbox.jpeg)
 
-More details and schematics: [qspimux.pdf](https://github.com/felixheld/qspimux/blob/master/qspimux/qspimux.pdf)   .
+More details and schematics:
+[qspimux.pdf](https://github.com/felixheld/qspimux/blob/master/qspimux/qspimux.pdf).
