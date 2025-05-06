@@ -12,7 +12,7 @@ automatic HCL report parsing.
 
 Reports can be sourced from:
 - 3mdeb Cloud
-- Minio
+- DPP download page
 
 ## Extending list
 
