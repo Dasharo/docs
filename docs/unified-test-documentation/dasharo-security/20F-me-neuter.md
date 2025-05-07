@@ -46,7 +46,7 @@ The `Intel ME mode` field should inform that the current state is `Enabled`.
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## MNE004.001 Intel ME mode option Disable (HAP) works correctly (Ubuntu)
+## MNE004.201 Intel ME mode option Disable (HAP) works correctly (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
