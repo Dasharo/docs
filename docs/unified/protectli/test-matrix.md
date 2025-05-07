@@ -570,13 +570,19 @@ subjected from before the release of the new binary.
     | 15.  | [Custom network boot entries][CNB]    | CNB           | CNB001.002                           |
     | 17.  | [Windows booting][WBT]                | WBT           | WBT001.001                           |
     | 18.  | [Audio subsystem][AUD]                | AUD           | AUD001.001, AUD001.002, AUD002.001, AUD002.002, AUD003.001, AUD003.002, AUD004.001, AUD004.002, AUD005.001, AUD005.002, AUD006.001, AUD006.002 |
-    | 19.  | [UEFI Shell][USH]                     | USH           | All                                  |
     | 20.  | [USB detection][UDT]                  | UDT           | All                                  |
     | 21.  | [USB booting][UBT]                    | UBT           | All                                  |
     | 22.  | [pfSense support][PFS]                | PFS           | All                                  |
     | 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
     | 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
     | 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
+    | 26. | [Auto boot time-out][BMM]             | BMM           | All                                  |
+    | 27. | [CPU status][CPU]                     | CPU           | CPU001.001, CPU002.001, CPU003.001, CPU004.001|
+    | 28. | [ESP scanning][ESP]                   | ESP           | All                                  |
+    | 29. | [Reset to defaults][RTD]              | RTD           | RTD001.001, RTD002.001, RTD003.001, RTD004.001, RTD006.001 |
+    | 30. | [Ethernet interface][NET]             | NET           | All                                  |
+    | 31. | [Dasharo Configuration Utility][NET]  | DCU           | DCU001.001, DCU002.001, DCU003.001   |
+    | 33. | [Sleep mode][SUSP]                    | SUSP          | SUSP001.001, SUSP002.001, SUSP003.001, SUSP005.001|
 
     [HCL]: ../../unified-test-documentation/dasharo-compatibility/301-memory-hcl.md
     [EFI]: ../../unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
@@ -602,6 +608,14 @@ subjected from before the release of the new binary.
     [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
+    [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
+    [BMM]: ../../dasharo-menu-docs/boot-maintenance-mgr.md#boot-maintenance-manager
+    [ESP]: ../../unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
+    [RTD]: ../../dasharo-menu-docs/overview.md#f9-reset-to-defaults
+    [NET]: ../../unified-test-documentation/dasharo-stability/01-net-controller-after-coldboot-warmboot-reboot-suspend.md
+    [DCU]: ../../unified-test-documentation/dasharo-compatibility/362-dcu.md
+    [SUSP]: ../../unified-test-documentation/dasharo-compatibility/31M-platform-suspend-and-resume.md
+    [LCM]: ../../unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
 
     ## Module: Dasharo security
 
@@ -615,6 +629,8 @@ subjected from before the release of the new binary.
     | 6.   | [BIOS lock support][BLS]              | BLS           | All                                  |
     | 7.   | [USB stack enable/disable][USS]       | USS           | All                                  |
     | 8.   | [SMM BIOS write protection][SMM]      | SMM           | All                                  |
+    | 9.  | [UEFI Setup password][PSW]            | PSW           | All                                  |
+    | 10. | [TPM2 Commands][TPMCMD]               | TPMCMD        | All                                  |
 
     [TPM]: ../../unified-test-documentation/dasharo-security/200-tpm-support.md
     [VBO]: ../../unified-test-documentation/dasharo-security/201-verified-boot.md
@@ -624,6 +640,8 @@ subjected from before the release of the new binary.
     [BLS]: ../../unified-test-documentation/dasharo-security/20J-bios-lock-support.md
     [USS]: ../../unified-test-documentation/dasharo-security/20S-usb-stack.md
     [SMM]: ../../unified-test-documentation/dasharo-security/20O-SMM-bios-write-protection.md
+    [PSW]: ../../unified-test-documentation/dasharo-security/20R-uefi-setup-password.md
+    [TPMCMD]: ../../unified-test-documentation/dasharo-security/200-tpm2-commands.md
 
     ## Module: Dasharo performance
 
