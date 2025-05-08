@@ -34,5 +34,5 @@ If you experience ath10k_pci failing to load with error in dmesg similar to:
 [   11.177711] ath10k_pci 0000:07:00.0: could not probe fw (-110)
 ```
 
-follow the [Protectli guide](https://kb.protectli.com/kb/wifi-on-the-vault/)
-(Firmware Fix section) to fix the problem.
+follow the [Protectli guide](https://kb.protectli.com/kb/wifi-modules-for-protectli-vaults/)
+(Section "Fix for M.2/mPCIe WiFi Card not Being Recognized") to fix the problem.
