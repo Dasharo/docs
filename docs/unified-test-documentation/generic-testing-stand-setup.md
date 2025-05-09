@@ -104,7 +104,7 @@ for setting up a Pomona clip connection:
     ![](../images/pomona_clip.jpg)
     ![](../images/pomona_clip_with_cables.jpg)
 
-1. Connect the Pomona clip to the [SPI header](../transparent-validation/rte/v1.1.0/specification.md)
+1. Connect the Pomona clip to the [SPI header](../transparent-validation/rte/v1.1.0/specification.md#spi-header)
    on RTE.
 
     | SPI header | Pomona clip  |
@@ -157,19 +157,23 @@ wires:
 
 ##### Remaining pins
 
-1. Locate **CMOS headers** and wire them to GPIO pins on the RTE. You usually
-need to reset the CMOS after flashing for a successful firmware update.
-![](../images/vp46xx_location_of_CMOS_header.jpg)
+1. Locate **CMOS headers** and wire them to GPIO pins on the RTE according to
+   the
+   [specification](../transparent-validation/rte/v1.1.0/specification.md#gpio-header-3).
+   You usually need to reset the CMOS after flashing for a successful firmware
+   update.
+
+    ![](../images/vp46xx_location_of_CMOS_header.jpg)
 
     | RTE       | DUT                        |
     |:---------:|:--------------------------:|
     | J11 pin 8 | CLR_CMOS                   |
     | Any GND   | GND                        |
 
-1. Locate the power and reset button pins. A motherboard will usually have a
-dedicated set of headers where the power and reset button wires are connected.
-Connect them to proper pins on the RTE. In extreme cases you might need to use
-clips to grab pins of soldered-in power and reset buttons.
+2. Locate the power and reset button pins. A motherboard will usually have a
+   dedicated set of headers where the power and reset button wires are
+   connected. Connect them to proper pins on the RTE according to
+   [specification](../transparent-validation/rte/v1.1.0/specification.md#gpio-header-3).
 
     | RTE       | DUT                           |
     |:---------:|:-----------------------------:|
@@ -182,9 +186,26 @@ Reference schematic:
 
 !!! Note
 
-    In RTE v1.0, pins 8 and 9 are used for RST and PWR respectively.
+    In RTE v1.0.0 or older, pins 8 and 9 are used for RST and PWR respectively.
     Reference schematic:
     [RTE v1.0.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.0.0/rte.pdf)
+    In extreme cases you might need to use clips to grab pins of soldered-in power
+    and reset buttons.
+
+3. Locate Power LED pin. A motherboard will usually have a dedicated set of
+   headers where the power LED is connected, typically on the same header as
+   power button  and reset button wires are located. Connect the power LED to
+   proper pin on the RTE according to
+   [specification](../transparent-validation/rte/v1.1.0/specification.md#gpio-header-2).
+
+    | RTE       | DUT                           |
+    |:---------:|:-----------------------------:|
+    | J10 pin 1 | PWR_LED                       |
+
+    On the schematics there might be no PWR_LED (or alike) signal. It is
+    sufficient to connect `+V3.3S` signal in that case (if available). Do not
+    connect `+V5S` as it may damage the RTE. Not all mainboards expose PWR_LED
+    or `+V3.3S`, in such cases the connection must be omitted.
 
 #### DC voltage supply control
 
