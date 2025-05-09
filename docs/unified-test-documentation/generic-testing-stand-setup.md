@@ -142,8 +142,8 @@ wires:
 
     | RTE       | DUT                           |
     |:---------:|:-----------------------------:|
-    | J11 pin 5 | PWR_ON#                       |
-    | J11 pin 6 | RST#                          |
+    | J11 pin 5 | RST#                          |
+    | J11 pin 6 | PWR_ON#                       |
     | J15 pin 1 | GND                           |
 
     In extreme cases you might need to use clips to grab pins of soldered-in power
