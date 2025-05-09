@@ -572,6 +572,7 @@ nav:
               - '[EFI] UEFI compatible interface': unified-test-documentation/dasharo-compatibility/30M-uefi-compatible-interface.md
               - '[ERR] SATA LED and PC speaker error indication': unified-test-documentation/dasharo-compatibility/31S-sata-led-and-pc-speaker-error-indication.md
               - '[ESP] ESP scanning': unified-test-documentation/dasharo-compatibility/361-esp-scanning.md
+              - '[ETH] Ethernet Port Detection': unified-test-documentation/dasharo-compatibility/364-ethernet-port-detection.md
               - '[FAN] Fan speed': unified-test-documentation/dasharo-compatibility/S30-fan-speed.md
               - '[FED] Fedora support': unified-test-documentation/dasharo-compatibility/310-fedora-support.md
               - '[FFW] Firmware update using fwupd': unified-test-documentation/dasharo-compatibility/320-fwupd-firmware-update.md
@@ -582,6 +583,7 @@ nav:
               - '[LBT] Debian Stable and Ubuntu LTS support': unified-test-documentation/dasharo-compatibility/308-debian-stable-and-ubuntu-lts-support.md
               - '[LCM] Logo customization': unified-test-documentation/dasharo-compatibility/328-logo-customization-functionality.md
               - '[MEM] Memtest payload support': unified-test-documentation/dasharo-compatibility/30L-memtest-payload-support.md
+              - '[MEM] RAM Detection': unified-test-documentation/dasharo-compatibility/365-ram-detection.md
               - '[MMC] eMMC support': unified-test-documentation/dasharo-compatibility/31M-emmc-support.md
               - '[MSS] M.2 slot support with automatic switching between SATA and NVMea': unified-test-documentation/dasharo-compatibility/31I-nvme-switching.md
               - '[MWL] miniPCIe verification': unified-test-documentation/dasharo-compatibility/31K-minipcie-verification.md
@@ -597,6 +599,7 @@ nav:
               - '[PVE] Proxmox support': unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
               - '[PXE] Network boot': unified-test-documentation/dasharo-compatibility/315-network-boot.md
               - '[QBS] Qubes OS support': unified-test-documentation/dasharo-compatibility/309-qubesos-support.md
+              - '[SAT] SATA support': unified-test-documentation/dasharo-compatibility/313-sata-support.md
               - '[SDC] SD card support': unified-test-documentation/dasharo-compatibility/316-sdcard-reader.md
               - '[SHT] SATA hot plug': unified-test-documentation/dasharo-compatibility/346-SATA-hotplug-detection.md
               - '[SLM] Sleep mode': unified-test-documentation/dasharo-compatibility/31J-sleep-mode.md
