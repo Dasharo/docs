@@ -7,18 +7,31 @@ Compatibility List for CPUs, memory, mainboards and GPU.
 
 ### Dasharo HCL report parsing
 
-For reports uploaded to 3mdeb cloud please use [dedicated
-script](https://github.com/Dasharo/dts-hw-conf-gen) readme.
+Use [dts-hw-conf-gen](https://github.com/Dasharo/dts-hw-conf-gen) tool for
+automatic HCL report parsing.
+
+Reports can be sourced from:
+- 3mdeb Cloud
+- DPP download page
 
 ## Extending list
 
-Please always sort table before publishing.
+The list can be updated via manual or automatic means.
 
-In vim:
+The HCL tables are located in the [Dasharo docs
+repository](https://github.com/Dasharo/docs/tree/master/docs/resources/hcl), and
+which can be updated via creating a pull request.
 
-- ++shift+v++ - to enter visual mode and mark whole range of entries.
-- type `:` and `sort u` to run vim sort function on marked range and leave only
-  unique lines.
+Follow [README.md](https://github.com/Dasharo/dts-hw-conf-gen) for more details.
+
+### Automatic table extension
+
+Automatic table extension is currently supported for `memory` reports only. The
+script would insert new, unique lines and automatically sort the table.
+
+This feature is available from
+[v1.0.0](https://github.com/Dasharo/dts-hw-conf-gen/releases/tag/v1.0.0) of
+dts-hw-conf-gen.
 
 ### Github report
 
