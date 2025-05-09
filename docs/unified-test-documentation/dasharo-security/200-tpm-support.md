@@ -13,19 +13,7 @@
 1. Proceed with the
     [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
 
-## TPM001.001 TPM Support (TPM events)
-
-The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## TPM001.201 TPM Support (Ubuntu)
-
-The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## TPM001.301 TPM Support (Windows)
-
-The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## TPM001.010 TPM Support (XCP-NG)
+## TPM001.0XX TPM Support (Linux generic)
 
 **Test setup**
 
@@ -74,6 +62,22 @@ sha256 :
 (...)
 ```
 
+## TPM001.001 TPM Support (TPM events)
+
+The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM001.201 TPM Support (Ubuntu)
+
+The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM001.301 TPM Support (Windows)
+
+The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM001.010 TPM Support (XCP-NG)
+
+Follows the [generic TPM001.0XX Linux-based test case](#tpm0010xx-tpm-support-linux-generic)
+
 ## TPM001.004 TPM Support (BIOS)
 
 **Test description**
@@ -101,15 +105,7 @@ This test aims to verify that the TPM is initialized correctly.
 
 `Current TPM Device` should contain `TPM 2.0` or `TPM 1.2`.
 
-## TPM002.201 Verify TPM version (Ubuntu)
-
-The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## TPM002.301 Verify TPM version (Windows)
-
-The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## TPM002.010 Verify TPM version (XCP-NG)
+## TPM002.0XX Verify TPM version (Linux generic)
 
 **Test setup**
 
@@ -148,19 +144,23 @@ TPM_PT_FAMILY_INDICATOR:
   as string:                "2.0"
 ```
 
+## TPM002.201 Verify TPM version (Ubuntu)
+
+The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM002.301 Verify TPM version (Windows)
+
+The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM002.010 Verify TPM version (XCP-NG)
+
+Follows the [generic TPM002.0XX Linux-based test case](#tpm0020xx-verify-tpm-version-linux-generic)
+
 ## TPM003.001 Check TPM Physical Presence Interface (firmware)
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## TPM003.201 Check TPM Physical Presence Interface (Ubuntu)
-
-The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## TPM003.301 Check TPM Physical Presence Interface (Windows)
-
-The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## TPM003.010 Check TPM Physical Presence Interface (XCP-NG)
+## TPM003.0XX Check TPM Physical Presence Interface (Linux generic)
 
 **Test steps**
 
@@ -184,6 +184,18 @@ Example output:
 ```bash
 1.3
 ```
+
+## TPM003.201 Check TPM Physical Presence Interface (Ubuntu)
+
+The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM003.301 Check TPM Physical Presence Interface (Windows)
+
+The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+## TPM003.010 Check TPM Physical Presence Interface (XCP-NG)
+
+Follows the [generic TPM003.0XX Linux-based test case](#tpm0030xx-check-tpm-physical-presence-interface-linux-generic)
 
 ## TPM004.001 Check TPM Clear procedure
 
