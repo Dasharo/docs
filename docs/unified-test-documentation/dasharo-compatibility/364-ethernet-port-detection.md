@@ -31,6 +31,8 @@ controllers are correctly detected by the operating system.
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Know in advance how many and which Ethernet controllers are expected on the
 DUT.
+1. Make sure the DUT has reliable network connection for querying the PCI
+database.
 
 **Test steps**
 
@@ -40,7 +42,7 @@ DUT.
 1. Run the following command:
 
     ```bash
-    lspci | grep -i ethernet
+    lspci -QQ | grep -i ethernet
     ```
 
 1. Compare the output with the expected Ethernet controller list for the DUT.
@@ -122,6 +124,8 @@ correctly detected by the operating system.
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Know in advance how many and which SFP controllers are expected on the DUT.
+1. Make sure the DUT has reliable network connection for querying the PCI
+database.
 
 **Test steps**
 
@@ -131,7 +135,7 @@ correctly detected by the operating system.
 1. Run the following command:
 
     ```bash
-    lspci | grep -i SFP
+    lspci -QQ | grep -i SFP
     ```
 
 1. Compare the output with the expected SFP controller list for the DUT.
