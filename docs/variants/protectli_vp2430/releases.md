@@ -41,6 +41,10 @@ Test results for this release can be found
 - [USB stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
 - [Network stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)
 
+### Known issues
+
+- [Unexpected error in dmesg](https://github.com/Dasharo/dasharo-issues/issues/1187)
+
 ### Binaries
 
 [protectli_vp2430_v0.9.0.rom][protectli_vp2430_v0.9.0.rom_file]{.md-button}
