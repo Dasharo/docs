@@ -13,7 +13,7 @@ For details about our release process please read
 
 </center>
 
-## v0.9.0 - 2025-05-08
+## v0.9.0 - 2025-05-13
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP2430/v0.9.0-results.csv).
