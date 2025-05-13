@@ -6,12 +6,8 @@ Protectli VP2430.
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-<center>
-
-[Subscribe to Protectli VP2430 Dasharo Release Newsletter]
-[newsletter]{ .md-button .md-button--primary .center }
-
-</center>
+{{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
+"Subscribe to NovaCustom NS5x/7x 12th Gen Dasharo Release Newsletter") }}
 
 ## v0.9.0 - 2025-05-13
 
@@ -76,7 +72,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Intel microcode version ADL N0 0x15](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240312/intel-ucode/06-be-00)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240312/license)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
 [protectli_vp2430_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vp2430/v0.9.0/protectli_vp2430_v0.9.0.rom
 [protectli_vp2430_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vp2430/v0.9.0/protectli_vp2430_v0.9.0.rom.sha256
 [protectli_vp2430_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vp2430/v0.9.0/protectli_vp2430_v0.9.0.rom.sha256.sig
