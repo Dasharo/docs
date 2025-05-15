@@ -108,7 +108,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
 - [Intel Flash Descriptor based on v1.2 revision 4f6e917d](https://github.com/Dasharo/dasharo-blobs/blob/4f6e917d/msi/ms7e06/descriptor.bin)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel Firmware Support Package based on RPL-S C.1.C8.50 revision 3819544e](https://github.com/intel/FSP/tree/3819544e/RaptorLakeFspBinPkg/Client/RaptorLakeS)
+- [Intel Firmware Support Package based on RPL-S C.0.C8.50 revision 3819544e](https://github.com/intel/FSP/tree/3819544e/RaptorLakeFspBinPkg/Client/RaptorLakeS)
     + [License](https://github.com/intel/FSP/blob/3819544e/FSP_License.pdf)
 - [Intel microcode based on 0x36 (for CPUIDs 00090672, 00090675, 000b06f2, 000b06f5), 0x12B (for CPUID 000b0671) revision 4f6e917d](https://github.com/Dasharo/dasharo-blobs/blob/4f6e917d/msi/ms7d25/microcode.bin)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/INTEL_FSP_SIC_LICENSE.txt)
