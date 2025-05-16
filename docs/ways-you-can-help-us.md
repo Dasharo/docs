@@ -18,7 +18,7 @@ General".
 ## Join Dasharo Beta Testing Group
 
 Dasharo Beta Testing Group is a group of users who help make Dasharo better. They
-are willing to flash their devicies with Release Candidates (RC) firmware binaries
+are willing to flash their devices with Release Candidates (RC) firmware binaries
 and provide test results by reporting issues or confirming fixes.
 
 Members of this community will have access to invite-only Dasharo Space channel,
