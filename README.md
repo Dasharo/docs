@@ -125,10 +125,11 @@ lists. To do that, paste the custom macro content in the target markdown file:
 {{ subscribe_form("FORM-ID",
 "Button text") }}
 ```
+
 where:
 
-* `FORM-ID` - target mailing list form ID that can be found [here][lm-forms].
-* `Button text` - text to be shown on the button.
+- `FORM-ID` - target mailing list form ID that can be found [here][lm-forms].
+- `Button text` - text to be shown on the button.
 
 Example for ODROID H4 subpage: [example code][h4-example]
 
