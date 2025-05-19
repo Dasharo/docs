@@ -3,6 +3,29 @@
 Following Release Notes describe status of Open Source Firmware development for
 QEMU Q35 (Emulator).
 
+<!--TODO-->
+## v0.2.1 - 2025-05-xx
+
+Tests reports and logs can be found
+[here](https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu/q35/v0.2.1/).
+The release makes Dasharo boot significantly quicker on QEMU Q35.
+
+### Changed
+
+- The Local APIC timer is used instead of the HPET
+- The time in the firmware flows at a correct pace now
+
+### Binaries
+
+Binaries can be found in
+[GitHub release](https://github.com/Dasharo/coreboot/releases/tag/qemu_q35_v0.2.1).
+
+### SBOM
+<!-- TODO verify the revisions once everything is merged -->
+- [Dasharo coreboot fork based on ... revision ff97787](https://github.com/Dasharo/coreboot/tree/ff97787)
+- [Dasharo EDK II fork based on ... revision e8cd185](https://github.com/Dasharo/edk2/tree/e8cd185)
+- [Dasharo iPXE fork based on ... revision ...](https://github.com/Dasharo/ipxe/commit/...)
+
 ## v0.2.0 - 2024-06-26
 
 Tests reports and logs can be found
