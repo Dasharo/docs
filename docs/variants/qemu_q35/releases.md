@@ -1,7 +1,45 @@
-# Release Notes
+# emulation qemu_q35 Dasharo Release Notes
 
-Following Release Notes describe status of Open Source Firmware development for
+Following Release Notes describe status of open-source firmware development for
 QEMU Q35 (Emulator).
+
+For details about our release process please read
+[Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
+
+## v0.2.1 - 2025-05-23
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/QEMU/Q35/v0.2.1_results.csv).
+
+### Changed
+
+- The Local APIC timer is now used instead of the HPET
+
+### Fixed
+
+- The time in the firmware flows at a correct pace now resulting in much
+  quicker boot times.
+
+### Known issues
+
+- [Measured Boot PCR values don't match the TPM measurement log](https://github.com/Dasharo/dasharo-issues/issues/1354)
+
+### Binaries
+
+[qemu_q35_v0.2.1.rom][qemu_q35_v0.2.1.rom_file]{.md-button}
+[sha256][qemu_q35_v0.2.1.rom_hash]{.md-button}
+[sha256.sig][qemu_q35_v0.2.1.rom_sig]{.md-button}
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 4.18 revision b8e6b3eb](https://github.com/Dasharo/coreboot/tree/b8e6b3eb)
+    + [License](https://github.com/Dasharo/coreboot/blob/b8e6b3eb/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202002 revision e8cd1856](https://github.com/Dasharo/edk2/tree/e8cd1856)
+    + [License](https://github.com/Dasharo/edk2/blob/e8cd1856/License.txt)
+
+[qemu_q35_v0.2.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/v0.2.1/qemu_q35_v0.2.1.rom
+[qemu_q35_v0.2.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/v0.2.1/qemu_q35_v0.2.1.rom.sha256
+[qemu_q35_v0.2.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/v0.2.1/qemu_q35_v0.2.1.rom.sha256.sig
 
 ## v0.2.0 - 2024-06-26
 
