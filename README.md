@@ -116,6 +116,26 @@ Embedding videos with in-line HTML `iframe` tag does not work.
 instead. To embed an video simply type the following in markdown:
 `![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)` (example).
 
+### Embedding subscribe forms
+
+It is possible to embed subscribe form for the selfhosted Listmonk mailing
+lists. To do that, paste the custom macro content in the target markdown file:
+
+```md
+{{ subscribe_form("FORM-ID",
+"Button text") }}
+```
+
+where:
+
+- `FORM-ID` - target mailing list form ID that can be found [here][lm-forms].
+- `Button text` - text to be shown on the button.
+
+Example for ODROID H4 subpage: [example code][h4-example]
+
+[lm-forms]: https://github.com/3mdeb/3mdeb-website/tree/main/static/subscribe
+[h4-example]: https://github.com/Dasharo/docs/blob/38e0bbfa156575d2e4dda5d33bce00488f493fcf/docs/variants/hardkernel_odroid_h4/releases.md?plain=1#L19
+
 ## Navigation menu
 
 ### Supported hardware
