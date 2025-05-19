@@ -7,7 +7,7 @@ For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 {{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
-"Subscribe to NovaCustom NS5x/7x 12th Gen Dasharo Release Newsletter") }}
+"Subscribe to Protectli Dasharo Release Newsletter") }}
 
 ## v0.9.0 - 2025-05-13
 
