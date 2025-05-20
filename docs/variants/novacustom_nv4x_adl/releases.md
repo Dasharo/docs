@@ -64,6 +64,19 @@ Test results for this release can be found
 [sha256][novacustom_nv4x_adl_ec_v1.7.2.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_adl_ec_v1.7.2.rom_sig]{.md-button}
 
+[novacustom_nv4x_adl_v1.7.2_full.rom][novacustom_nv4x_adl_v1.7.2_full.rom_file]{.md-button}
+[sha256][novacustom_nv4x_adl_v1.7.2_full.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_adl_v1.7.2_full.rom_sig]{.md-button}
+
+!!! warning
+
+    Please use the _full binaries instead of the ones listed below. The below
+    binaries are preserved for historical purposes.
+
+    Full binaries above contain all necessary blobs for platform operation. The
+    binaries below don't have them and flashing them incorrectly may result in
+    a brick.
+
 [novacustom_nv4x_adl_v1.7.2.rom][novacustom_nv4x_adl_v1.7.2.rom_file]{.md-button}
 [sha256][novacustom_nv4x_adl_v1.7.2.rom_hash]{.md-button}
 [sha256.sig][novacustom_nv4x_adl_v1.7.2.rom_sig]{.md-button}
@@ -81,6 +94,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_nv4x_adl_ec_v1.7.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_ec_v1.7.2.rom
 [novacustom_nv4x_adl_ec_v1.7.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_ec_v1.7.2.rom.sha256
 [novacustom_nv4x_adl_ec_v1.7.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_ec_v1.7.2.rom.sha256.sig
+[novacustom_nv4x_adl_v1.7.2_full.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_v1.7.2_full.rom
+[novacustom_nv4x_adl_v1.7.2_full.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_v1.7.2_full.rom.sha256
+[novacustom_nv4x_adl_v1.7.2_full.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_v1.7.2_full.rom.sha256.sig
 [novacustom_nv4x_adl_v1.7.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_v1.7.2.rom
 [novacustom_nv4x_adl_v1.7.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_v1.7.2.rom.sha256
 [novacustom_nv4x_adl_v1.7.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_v1.7.2.rom.sha256.sig
