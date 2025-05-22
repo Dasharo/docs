@@ -3455,7 +3455,7 @@ not exceed the limits of the power supply's specifications.
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-2. `OPERATING_SYSTEM` = Windows
+1. `OPERATING_SYSTEM` = Windows
 
 **Test steps**
 1. Power on the DUT.
