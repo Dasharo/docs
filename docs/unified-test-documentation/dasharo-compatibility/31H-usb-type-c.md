@@ -3459,28 +3459,28 @@ not exceed the limits of the power supply's specifications.
 
 **Test steps**
 1. Power on the DUT.
-2. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
-3. Enter the Dasharo System Features menu using the arrow keys and Enter.
-4. Enter the Intel Management Engine Options submenu.
-5. Verify that the Intel ME mode option is in state Disable (HAP) or
+1. While the DUT is booting, hold the BIOS_SETUP_KEY to enter the UEFI Setup Menu.
+1. Enter the Dasharo System Features menu using the arrow keys and Enter.
+1. Enter the Intel Management Engine Options submenu.
+1. Verify that the Intel ME mode option is in state Disable (HAP) or
 Disable (Soft) - if not, using the arrow keys and Enter, choose option
 Disable (HAP) or Disable (Soft).
-6. Press F10 to save the changes.
-7. If necessary - press Y to confirm saving the changes.
-8. Go back to the main menu using the ESC key.
-9. Select the Reset option to apply the settings and reboot.
-10. Boot into the system.
-11. Log into the system by using the proper login and password.
-12. Download and install [ThrottleStop](https://www.techpowerup.com/download/techpowerup-throttlestop/)
-13. Attach a 65W USB-C power supply, with the power meter between the power
+1. Press F10 to save the changes.
+1. If necessary - press Y to confirm saving the changes.
+1. Go back to the main menu using the ESC key.
+1. Select the Reset option to apply the settings and reboot.
+1. Boot into the system.
+1. Log into the system by using the proper login and password.
+1. Download and install [ThrottleStop](https://www.techpowerup.com/download/techpowerup-throttlestop/)
+1. Attach a 65W USB-C power supply, with the power meter between the power
     supply and the laptop's Thunderbolt 4 port.
-14. Open ThrottleStop.
-15. Click the `Limits` button to open a window displaying current throttle status
+1. Open ThrottleStop.
+1. Click the `Limits` button to open a window displaying current throttle status
     and reasons.
-16. Click the `TS Bench` button to open the benchmark window.
-17. Start a benchmark with the default parameters (Normal, 16 threads, 120M,
+1. Click the `TS Bench` button to open the benchmark window.
+1. Start a benchmark with the default parameters (Normal, 16 threads, 120M,
     Fixed MHz), while observing the power meter's display.
-18. Repeat the step above 5 times, noting the maximum power draw shown on the
+1. Repeat the step above 5 times, noting the maximum power draw shown on the
     power meter each time.
 
 **Expected result**
