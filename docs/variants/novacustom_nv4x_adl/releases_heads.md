@@ -41,6 +41,11 @@ Test results for this release can be found
 - [Add missing TPM PIRQ route for NV41](https://github.com/Dasharo/coreboot/commit/6cd77aa95a7ab46771874b72c7dba6b3600d9b29)
 - [Integrate downcoring and hyper-threading options in Alder Lake SoC](https://github.com/Dasharo/coreboot/commit/95f8459de5b432e69cceb3735d36bca9973e6321)
 
+### Known issues
+
+- [Hotkeys (e.g KEY_PLAYPAUSE) are not implemented in Qubes OS](https://github.com/QubesOS/qubes-issues/issues/9698)
+- [Existing Qubes installation is not found as bootable after transition back to EDK2](https://github.com/Dasharo/dasharo-issues/issues/713)
+
 ### Binaries
 
 [sha256][novacustom_nv4x_adl_v0.9.2_heads.rom_hash]{.md-button}
