@@ -216,6 +216,27 @@
     * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
 
+=== "VP2440"
+
+    ## Documentation sections
+
+    * [Releases](../../variants/protectli_vp2440/releases.md) - groups
+        information about all releases.
+    * [Building manual](./building-manual.md) -
+        describes how to build Dasharo for Protectli 2440.
+    * [Initial deployment](
+        ./initial-deployment.md) -
+        describes initial Dasharo deployment methods (i. e. flashing new
+        firmware) for Protectli VP2440.
+    * [Recovery](./recovery.md) - gathers
+        information on how to recover the platform from potential failure.
+    * [Hardware configuration matrix](
+        ../../variants/protectli_vp2430/hardware-matrix.md) -
+        describes the platform's hardware configuration used during the Dasharo
+        firmware validation procedure.
+    * [Test matrix](./test-matrix.md) - describes
+        validation scope used during Dasharo firmware validation procedure.
+
 === "VP6630/VP6650/VP6670"
     The Vault is a small form network appliance built for use as a firewall /
     router, virtualization platform, a daily-driven personal computer, and more.
