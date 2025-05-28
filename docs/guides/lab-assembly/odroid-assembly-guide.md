@@ -34,9 +34,9 @@ wires.
 
 | RTE J18             | Odroid H4 EXPANSION HEADER             |
 |:--------------------|:---------------------------------------|
-| J18 pin 1 (TX)      | pin 6  APU_UART_RXD_BUF  |
-| J18 pin 2 (RX)      | pin 8  APU_UART_TXD_BUF  |
-| J18 pin 3 (GND)     | pin 10 GND               |
+| J18 pin 1 (TX)      | pin 8  APU_UART_RXD_BUF  |
+| J18 pin 2 (RX)      | pin 10 APU_UART_TXD_BUF  |
+| J18 pin 3 (GND)     | pin 6  GND               |
 
 ![](../../images/odroid_exthead.png)
 
