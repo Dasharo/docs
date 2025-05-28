@@ -26,20 +26,17 @@ Test results for this release can be found
 
 ### Binaries
 
-[qemu_q35_v0.2.1.rom][qemu_q35_v0.2.1.rom_file]{.md-button}
-[sha256][qemu_q35_v0.2.1.rom_hash]{.md-button}
-[sha256.sig][qemu_q35_v0.2.1.rom_sig]{.md-button}
+Binaries can be found in
+[GitHub release](https://github.com/Dasharo/coreboot/releases/tag/qemu_q35_v0.2.1).
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 4.18 revision b8e6b3eb](https://github.com/Dasharo/coreboot/tree/b8e6b3eb)
+- [Dasharo coreboot fork based on 25.03 revision b8e6b3eb](https://github.com/Dasharo/coreboot/tree/b8e6b3eb)
     + [License](https://github.com/Dasharo/coreboot/blob/b8e6b3eb/COPYING)
-- [Dasharo EDKII fork based on edk2-stable202002 revision e8cd1856](https://github.com/Dasharo/edk2/tree/e8cd1856)
+- [Dasharo EDKII fork based on edk2-stable202502 revision e8cd1856](https://github.com/Dasharo/edk2/tree/e8cd1856)
     + [License](https://github.com/Dasharo/edk2/blob/e8cd1856/License.txt)
-
-[qemu_q35_v0.2.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/v0.2.1/qemu_q35_v0.2.1.rom
-[qemu_q35_v0.2.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/v0.2.1/qemu_q35_v0.2.1.rom.sha256
-[qemu_q35_v0.2.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/v0.2.1/qemu_q35_v0.2.1.rom.sha256.sig
+- [Dasharo iPXE fork based on 2024.07 revision 63ed3e35](https://github.com/Dasharo/ipxe/tree/63ed3e35)
+    + [License](https://github.com/Dasharo/ipxe/blob/63ed3e35/COPYING.GPLv2)
 
 ## v0.2.0 - 2024-06-26
 
