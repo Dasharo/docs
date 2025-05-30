@@ -1,7 +1,42 @@
-# Release Notes
+# emulation qemu_q35 Dasharo Release Notes
 
-Following Release Notes describe status of Open Source Firmware development for
+Following Release Notes describe status of open-source firmware development for
 QEMU Q35 (Emulator).
+
+For details about our release process please read
+[Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
+
+## v0.2.1 - 2025-05-23
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/QEMU/Q35/v0.2.1_results.csv).
+
+### Changed
+
+- The Local APIC timer is now used instead of the HPET
+
+### Fixed
+
+- The time in the firmware flows at a correct pace now resulting in much
+  quicker boot times.
+
+### Known issues
+
+- [Measured Boot PCR values don't match the TPM measurement log](https://github.com/Dasharo/dasharo-issues/issues/1354)
+
+### Binaries
+
+Binaries can be found in
+[GitHub release](https://github.com/Dasharo/coreboot/releases/tag/qemu_q35_v0.2.1).
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 25.03 revision b8e6b3eb](https://github.com/Dasharo/coreboot/tree/b8e6b3eb)
+    + [License](https://github.com/Dasharo/coreboot/blob/b8e6b3eb/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202502 revision e8cd1856](https://github.com/Dasharo/edk2/tree/e8cd1856)
+    + [License](https://github.com/Dasharo/edk2/blob/e8cd1856/License.txt)
+- [Dasharo iPXE fork based on 2024.07 revision 63ed3e35](https://github.com/Dasharo/ipxe/tree/63ed3e35)
+    + [License](https://github.com/Dasharo/ipxe/blob/63ed3e35/COPYING.GPLv2)
 
 ## v0.2.0 - 2024-06-26
 
