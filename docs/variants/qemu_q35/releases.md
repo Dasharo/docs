@@ -6,7 +6,7 @@ QEMU Q35 (Emulator).
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
-## v0.2.1 - 2025-05-23
+## v0.2.1 - 2025-05-30
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/QEMU/Q35/v0.2.1_results.csv).
