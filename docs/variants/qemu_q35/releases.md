@@ -17,8 +17,7 @@ Test results for this release can be found
 
 ### Fixed
 
-- The time in the firmware flows at a correct pace now resulting in much
-  quicker boot times.
+- [Booting is slow in QEMU](https://github.com/Dasharo/dasharo-issues/issues/898)
 
 ### Known issues
 
