@@ -231,7 +231,7 @@
     * [Recovery](./recovery.md) - gathers
         information on how to recover the platform from potential failure.
     * [Hardware configuration matrix](
-        ../../variants/protectli_vp2430/hardware-matrix.md) -
+        ../../variants/protectli_vp2440/hardware-matrix.md) -
         describes the platform's hardware configuration used during the Dasharo
         firmware validation procedure.
     * [Test matrix](./test-matrix.md) - describes
