@@ -218,6 +218,17 @@
 
 === "VP2440"
 
+    VP2430 specification:
+
+    * Intel® Processor N150 Quad Core, 6M Cache, up to 3.4 GHz
+    * 2 Intel® 2.5 Gigabit Ethernet NIC ports
+    * 2 Intel® Ethernet X710 10GbE SFP+ ports
+    * M.2 NVMe SSD Slot
+    * 32 GB eMMC module on board
+    * Fanless and Silent
+    * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
+      SATA data and power cables for internal SSD, Quick Start Guide
+
     ## Documentation sections
 
     * [Releases](../../variants/protectli_vp2440/releases.md) - groups
