@@ -19,7 +19,7 @@ For details about our release process please read
 {{ subscribe_form("310eac18-d302-478f-a617-5f5d65e8e0ac",
 "Subscribe to NovaCustom NV4x 12th Gen Dasharo Release Newsletter") }}
 
-## v0.9.2 - 2025-05-21
+## v0.9.2 - 2025-06-03
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
@@ -46,6 +46,11 @@ Test results for this release can be found
 - Eliminated redundant USB Security dongle detection messages
 - [Add missing TPM PIRQ route for NV41](https://github.com/Dasharo/coreboot/commit/6cd77aa95a7ab46771874b72c7dba6b3600d9b29)
 - [Integrate downcoring and hyper-threading options in Alder Lake SoC](https://github.com/Dasharo/coreboot/commit/95f8459de5b432e69cceb3735d36bca9973e6321)
+
+### Fixed
+
+- [Power button doesn't work in Qubes](https://github.com/Dasharo/dasharo-issues/issues/710)
+- [Reproducibility problems with libcrypto and libtss2](https://github.com/linuxboot/heads/issues/1616)
 
 ### Known issues
 
