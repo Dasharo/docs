@@ -13,11 +13,11 @@ Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 The below table contains platform-specific information about all elements which
 are needed to create testing stands for Protectli machines.
 
-!!! warningpcengines
-    Please note that using RTE v1.0.0 change way how [OSFV
+!!! warning
+    Please note that using RTE v1.0.0 or older change way how [OSFV
     cli](https://github.com/Dasharo/osfv-scripts/blob/main/osfv_cli/src/osfv/libs/rte.py#L284)
-    works. On v1.0.0 there is no need for additional step of enabling SPI GPIO,
-    on v1.1.0 there is. If it would not be reflected in [model
+    works. On v1.0.0 and older there is no need for additional step of enabling SPI GPIO,
+    it is required only from v1.1.0 onwards. If it would not be reflected in [model
     file](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli/src/osfv/models)
     it may lead to issues. For more details please check
     [here](https://github.com/Dasharo/osfv-scripts/issues/86).
