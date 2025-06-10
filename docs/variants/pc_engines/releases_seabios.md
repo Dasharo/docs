@@ -57,8 +57,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot based on 24.08 revision fadbc031](https://github.com/coreboot/coreboot/tree/fadbc031)
-    + [License](https://github.com/coreboot/coreboot/blob/fadbc031/COPYING)
+- [coreboot based on 24.08 revision fadbc031](https://github.com/coreboot/coreboot/tree/24.08)
+    + [License](https://github.com/coreboot/coreboot/blob/24.08/COPYING)
 - [Dasharo Patchqueue Initiative based on 24.08.00.01 revision d944bc39](https://github.com/Dasharo/dasharo-pq/tree/d944bc39)
     + [License](https://github.com/Dasharo/dasharo-pq/blob/d944bc39/LICENSE)
 - [SeaBIOS based on rel-1.16.3.1 revision ac9eb800](https://github.com/pcengines/seabios/tree/ac9eb800)
@@ -82,14 +82,14 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [AMD Hudson xHCI firmware version 1.1.0.0068](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/xhci.bin)
     + [License](https://github.com/coreboot/blobs/blob/a8db7dfe/southbridge/amd/avalon/license.txt)
 
-[pcengines_apu2_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu2_seabios_v24.08.00.01.rom.sha256
-[pcengines_apu2_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu2_seabios_v24.08.00.01.rom.sha256.sig
-[pcengines_apu3_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu3_seabios_v24.08.00.01.rom.sha256
-[pcengines_apu3_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu3_seabios_v24.08.00.01.rom.sha256.sig
-[pcengines_apu4_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu4_seabios_v24.08.00.01.rom.sha256
-[pcengines_apu4_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu4_seabios_v24.08.00.01.rom.sha256.sig
-[pcengines_apu6_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu6_seabios_v24.08.00.01.rom.sha256
-[pcengines_apu6_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/v24.08.00.01/pcengines_apu6_seabios_v24.08.00.01.rom.sha256.sig
+[pcengines_apu2_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu2_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu2_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu2_seabios_v24.08.00.01.rom.sha256.sig
+[pcengines_apu3_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu3_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu3_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu3_seabios_v24.08.00.01.rom.sha256.sig
+[pcengines_apu4_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu4_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu4_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu4_seabios_v24.08.00.01.rom.sha256.sig
+[pcengines_apu6_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu6_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu6_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu6_seabios_v24.08.00.01.rom.sha256.sig
 
 ## v24.05.00.01 - 2024-06-28
 
