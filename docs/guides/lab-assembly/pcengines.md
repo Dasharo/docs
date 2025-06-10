@@ -163,7 +163,7 @@ this feature can be found in:
 * [S1 switch button properties](https://pcengines.github.io/apu2-documentation/gpios/#s1-switch-button)
 * [Disable serial console and enable with S1 button](https://pcengines.github.io/apu2-documentation/theory-of-operation/#pc-engines-apu-firmware-features)
 
-To expose this feature to OSFV we have add additional wire between:
+To expose this feature to OSFV we have to add additional wire between:
 
 | RTE J11 pin       | PC Engines J5 pin   |
 |:-----------------:|:-------------------:|
