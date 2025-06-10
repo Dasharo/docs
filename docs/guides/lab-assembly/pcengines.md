@@ -13,7 +13,7 @@ Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 The below table contains platform-specific information about all elements which
 are needed to create testing stands for Protectli machines.
 
-!!! warning
+!!! warningpcengines
     Please note that using RTE v1.0.0 change way how [OSFV
     cli](https://github.com/Dasharo/osfv-scripts/blob/main/osfv_cli/src/osfv/libs/rte.py#L284)
     works. On v1.0.0 there is no need for additional step of enabling SPI GPIO,
@@ -26,7 +26,7 @@ are needed to create testing stands for Protectli machines.
 v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 or RTE v1.0.0
 * RTE power supply 5V 2A Micro-USB
-* 8x standard female-female connection wire 2.54 mm raster
+* 10x standard female-female connection wire 2.54 mm raster
 * 2x RJ45 cable: 1 for RTE and 3 for the platform
 
 * [apu2/3/4/6](https://www.pcengines.ch/apu2.htm)
@@ -36,9 +36,9 @@ or RTE v1.0.0
 
 ### External flashing enabling
 
-| RTE J7 pin | PC Engines J6 pin  |
+| RTE J7 pin        | PC Engines SPI pin  |
 |:-----------------:|:-------------------:|
-| 1 (NC)            | Not connected       |
+| 1 (VCC)           | 1 (VCC)             |
 | 2 (GND)           | 2 (GND)             |
 | 3 (CS)            | 3 (SPICS#)          |
 | 4 (SCLK)          | 4 (SPICLK)          |
@@ -50,21 +50,26 @@ or RTE v1.0.0
 SPI connection can be realized with IDC 8 pin wire, but 7th and 8th wires
 have to be opened.
 
-<!--
+### Power and Reset switch connection
 
-This is something to be confirmed:
+Connect the RTE J11 header to the platform J3 header using 2.54mm
+wires as described in the table:
+
+| RTE       | PC Engines             |
+|:---------:|:----------------------:|
+| J11 pin 9 | J3 pin 3 (PWR)         |
+| J11 pin 8 | J3 pin 5 (RST)         |
 
 ### CMOS reset circuit
 
-Connect the RTE J11 header to the platform J10 header using 2.54mm to 2mm
+Connect the RTE J11 header to the platform J10 header using 2.54mm
 wires as described in the table:
 
-| RTE       | PC Engines                  |
-|:---------:|:--------------------------:|
-| J11 pin 8 | J10 pin 1 (RTC clr)    |
-| Any GND   | J10 pin 2 (GND)         |
+| RTE        | PC Engines             |
+|:----------:|:----------------------:|
+| J11 pin 11 | J10 pin 1 (RTC clr)    |
+| Any GND    | J10 pin 2 (GND)        |
 
--->
 
 ## Theory of operation
 
@@ -74,14 +79,7 @@ The following sections describe how to use all of the enabled features:
 * controlling power supply,
 * enabling basic power actions with the platform (power off/power on/reset),
 * external flashing with the RTE,
-
-<!--
-
-To be confirmed:
-
 * CMOS reset.
-
--->
 
 ### Serial connection
 
@@ -146,10 +144,6 @@ osfv_cli rte --model=<APU2/3/4/6> --rte_ip <ip_address> pwr off
 osfv_cli rte --model=<APU2/3/4/6> --rte_ip <ip_address> pwr reset
 ```
 
-<!--
-
-To be verified.
-
 ### CMOS clear
 
 To clear the CMOS, turn off the power with Sonoff or relay and use the
@@ -161,8 +155,6 @@ sleep 10
 echo 0 > /sys/class/gpio/gpio412/value
 ```
 
--->
-
 ### S1 button
 
 S1 button is used to re-enable disabled serial console. More information about
@@ -171,11 +163,11 @@ this feature can be found in:
 * [S1 switch button properties](https://pcengines.github.io/apu2-documentation/gpios/#s1-switch-button)
 * [Disable serial console and enable with S1 button](https://pcengines.github.io/apu2-documentation/theory-of-operation/#pc-engines-apu-firmware-features)
 
-To expose this feature to OSFV we have add wire between:
+To expose this feature to OSFV we have add additional wire between:
 
-| RTE J11 pin | PC Engines J5 pin  |
+| RTE J11 pin       | PC Engines J5 pin   |
 |:-----------------:|:-------------------:|
-| 7            | 5 (MODESW#)       |
+| 7                 | 5 (MODESW#)         |
 
 ### USB devices
 
@@ -192,6 +184,6 @@ BIOS WP (aka SPIWP#) pin can be used to enable or disable write protection.
 Feature was described in [sortbootorder
 documentation](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bios-wp-option).
 
-| RTE J11 pin | PC Engines J5 pin  |
+| RTE J11 pin       | PC Engines J5 pin   |
 |:-----------------:|:-------------------:|
-| 9            | 1 (SPIWP#)       |
+| 9                 | 1 (SPIWP#)          |
