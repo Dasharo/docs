@@ -9,6 +9,88 @@ For details about our release process please read
 {{ subscribe_form("667a3af1-424e-439e-9144-57bfcf921ca4",
 "Subscribe to Dasharo for PC Engines Release Notification Newsletter") }}
 
+## v24.08.00.01 - 2025-06-10
+
+Test results for this release can be found
+[here](https://docs.google.com/spreadsheets/d/1_uRhVo9eYeZONnelymonYp444zYHT_Q_qmJEJ8_XqJc/edit?usp=sharing).
+
+### Added
+
+- [Rebased with official coreboot repository commit 2ccbcc5 (tag 24.08)](https://doc.coreboot.org/releases/coreboot-24.08-relnotes.html)
+
+### Changed
+
+- [SeaBIOS update to rel-1.16.3.1](https://github.com/pcengines/seabios/compare/rel-1.16.0.1...rel-1.16.3.1)
+- [sortbootorder update to v24.08.00.01](https://github.com/pcengines/sortbootorder/compare/v24.05.00.01...v24.08.00.01)
+
+### Known issues
+
+- [apuled driver doesn't work in FreeBSD. Check the GPIOs document for workaround.](https://github.com/pcengines/coreboot/issues/329)
+- [Some PCIe cards are not detected on certain OSes and/or in certain mPCIe slots. Check the mPCIe modules document for solution/workaround.](https://github.com/pcengines/apu2-documentation/issues/115)
+- [Booting with 2 USB 3.x sticks plugged in apu4 sometimes results in detecting only 1 stick](https://github.com/pcengines/seabios/issues/30)
+- [Certain USB 3.x sticks happen to not appear in boot menu](https://github.com/pcengines/seabios/issues/29)
+- [Booting Xen 4.8 is unstable](https://github.com/pcengines/apu2-documentation/issues/109)
+
+### Binaries
+
+[sha256][pcengines_apu2_seabios_v24.08.00.01.rom_hash]{.md-button}
+[sha256.sig][pcengines_apu2_seabios_v24.08.00.01.rom_sig]{.md-button}
+
+[sha256][pcengines_apu3_seabios_v24.08.00.01.rom_hash]{.md-button}
+[sha256.sig][pcengines_apu3_seabios_v24.08.00.01.rom_sig]{.md-button}
+
+[sha256][pcengines_apu4_seabios_v24.08.00.01.rom_hash]{.md-button}
+[sha256.sig][pcengines_apu4_seabios_v24.08.00.01.rom_sig]{.md-button}
+
+[sha256][pcengines_apu6_seabios_v24.08.00.01.rom_hash]{.md-button}
+[sha256.sig][pcengines_apu6_seabios_v24.08.00.01.rom_sig]{.md-button}
+
+This is a Dasharo Pro Package Release. To obtain access to the pre-built
+binaries you will have to
+[become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You will get the access to all of the firmware updates for the duration of the
+subscription via Dasharo Pro Package newsletter.
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/pcengines_apu2/dasharo-release-24.08.00.x-for-pc-engines-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 24.08 revision fadbc031](https://github.com/coreboot/coreboot/tree/24.08)
+    + [License](https://github.com/coreboot/coreboot/blob/24.08/COPYING)
+- [Dasharo Patchqueue Initiative based on 24.08.00.01 revision d944bc39](https://github.com/Dasharo/dasharo-pq/tree/d944bc39)
+    + [License](https://github.com/Dasharo/dasharo-pq/blob/d944bc39/LICENSE)
+- [SeaBIOS based on rel-1.16.3.1 revision ac9eb800](https://github.com/pcengines/seabios/tree/ac9eb800)
+    + [License](https://github.com/pcengines/seabios/blob/ac9eb800/COPYING)
+- [sortbootorder based on v24.08.00.01 revision 6188b4f4](https://github.com/pcengines/sortbootorder/tree/6188b4f4)
+    + [License](https://github.com/pcengines/sortbootorder/blob/6188b4f4/LICENSE)
+- [iPXE based on 2024.08 revision 301644ab](https://github.com/ipxe/ipxe/tree/301644ab)
+    + [License](https://github.com/ipxe/ipxe/blob/301644ab/COPYING.GPLv2)
+- [Memtest86+ based on v002 revision 0bd34c22](https://review.coreboot.org/admin/repos/memtest86plus,general)
+    + [License](https://review.coreboot.org/admin/repos/memtest86plus,general)
+- [AMD AGESA Binary Platform Initialization version MullinsPI 1.0.0.A](https://github.com/coreboot/blobs/tree/a8db7dfe/pi/amd/00730F01/FT3b)
+    + [License](https://github.com/coreboot/blobs/tree/a8db7dfe/pi/amd/00730F01/FT3b/license.txt)
+- [AMD Platform Security Processor bootloader version D.1.1.4D](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/PspBootLoader.Bypass.sbin)
+    + [License](https://github.com/coreboot/blobs/blob/a8db7dfe/southbridge/amd/avalon/PSP/license.txt)
+- [AMD Platform Security Processor firmware public key version v1.0](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/AmdPubKey.bin)
+    + [License](https://github.com/coreboot/blobs/blob/a8db7dfe/southbridge/amd/avalon/PSP/license.txt)
+- [AMD System Management Unit firmware version 1433](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/SmuFirmware.sbin)
+    + [License](https://github.com/coreboot/blobs/blob/a8db7dfe/southbridge/amd/avalon/PSP/license.txt)
+- [AMD System Management Unit - Software Configuration Settings binary version 1433](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/PSP/SmuScs.bin)
+    + [License](https://github.com/coreboot/blobs/blob/a8db7dfe/southbridge/amd/avalon/PSP/license.txt)
+- [AMD Hudson xHCI firmware version 1.1.0.0068](https://github.com/coreboot/blobs/tree/a8db7dfe/southbridge/amd/avalon/xhci.bin)
+    + [License](https://github.com/coreboot/blobs/blob/a8db7dfe/southbridge/amd/avalon/license.txt)
+
+[pcengines_apu2_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu2_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu2_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu2_seabios_v24.08.00.01.rom.sha256.sig
+[pcengines_apu3_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu3_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu3_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu3_seabios_v24.08.00.01.rom.sha256.sig
+[pcengines_apu4_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu4_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu4_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu4_seabios_v24.08.00.01.rom.sha256.sig
+[pcengines_apu6_seabios_v24.08.00.01.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu6_seabios_v24.08.00.01.rom.sha256
+[pcengines_apu6_seabios_v24.08.00.01.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/pcengines_apu2/seabios/v24.08.00.01/pcengines_apu6_seabios_v24.08.00.01.rom.sha256.sig
+
 ## v24.05.00.01 - 2024-06-28
 
 Test results for this release can be found
