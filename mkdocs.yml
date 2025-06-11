@@ -462,6 +462,7 @@ nav:
           - "Building": dasharo-tools-suite/documentation/building.md
           - "Running": dasharo-tools-suite/documentation/running.md
           - "Features": dasharo-tools-suite/documentation/features.md
+          - "Dasharo Transition": dasharo-tools-suite/documentation/dasharo-transition.md
   - 'Knowledge base':
       - 'Glossary': glossary.md
       - 'Dasharo Product Naming Convention': dasharo-naming-convention.md

@@ -36,15 +36,7 @@ seamlessly.
 - [Boot into Dasharo Tools
   Suite](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/)
 - Enter your DPP subscription credentials
-- Select `Install Dasharo firmware` to check for updates
-- When asked to select your firmware branch, select DPP
-
-When the deployment is finished, your device will reboot into Dasharo
-automatically.
-
-The demo below shows the process of deploying Dasharo using DTS.
-
-[![asciicast](https://asciinema.org/a/654251.svg)](https://asciinema.org/a/654251)
+- Follow the instructions from [Dasharo Transition documentation](../../dasharo-tools-suite/documentation/dasharo-transition.md)
 
 ## Manual installation
 

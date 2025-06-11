@@ -41,7 +41,8 @@ protect pin jumper on J2 (apu2) or J3 (apu3/4/6).
 
     ## Updating automatically using DTS
 
-    Not supported yet ([#915](https://github.com/Dasharo/dasharo-issues/issues/915)).
+    Check DTS documentation for [firmware
+    update](../../dasharo-tools-suite/documentation/features.md#firmware-update).
 
     ## Updating Dasharo manually
 
