@@ -110,6 +110,12 @@ platforms! If a platform supports [me_cleaner](https://github.com/corna/me_clean
 (i.e. ME version is lower or equal 11.x) it is recommended to set HAP bit and
 clean the ME region with `me_cleaner` script permanently.
 
+The Management Engine menu may also contain information related to Intel Boot
+Guard and its registers. Each register is parsed and displayed in human-readable
+form. This information is mostly intended for debugging and support purposes:
+
+![](../images/menus/btg_status.png){ class="center" }
+
 ## Chipset Configuration
 
 ![](../images/menus/dasharo_chipset_opts.jpeg){ class="center" }
