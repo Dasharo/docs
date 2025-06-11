@@ -1,9 +1,8 @@
 # Dasharo firmware transition
 
-This document describes Dasharo Firmware transition via DTS. The transition can
-only be done from a specific firmware to a specific firmware only for a limited
-set of platforms. For supported platforms and firmwares check [this
-page](./supported-hardware-workflows.md).
+This document describes the Dasharo Firmware transition via DTS. The transition can
+only be performed from a specific firmware to a specific firmware and is only
+supported for a limited set of platforms.
 
 Currently supported platforms and transitions:
 
@@ -14,28 +13,28 @@ Currently supported platforms and transitions:
 ## The workflow
 
 Firstly, boot to DTS as described in [running DTS documentation](./running.md).
-Then, if your paltform and firmware support the transition - you should see
-`6) Transition Dasharo Firmware` option. After presssing `6` you should see DTS
-transition process. After the transition your paltform will reboot
+Then, if your platform and firmware support the transition - you should see
+`6) Transition Dasharo Firmware` option. After pressing `6`, you should see DTS
+transition process. Your platform will reboot after the transition
 automatically. Here is an example:
 
 ```bash
- Dasharo Tools Suite Script 2.5.0 
- (c) Dasharo <contact@dasharo.com> 
- Report issues at: https://github.com/Dasharo/dasharo-issues 
+ Dasharo Tools Suite Script 2.5.0
+ (c) Dasharo <contact@dasharo.com>
+ Report issues at: https://github.com/Dasharo/dasharo-issues
 *********************************************************
-**                HARDWARE INFORMATION 
+**                HARDWARE INFORMATION
 *********************************************************
 **    System Inf.: PC Engines apu3
 ** Baseboard Inf.: PC Engines apu3
-**       CPU Inf.: AMD GX-412TC SOC                               
+**       CPU Inf.: AMD GX-412TC SOC
 **    RAM DIMM 0: Not Specified
 *********************************************************
-**                FIRMWARE INFORMATION 
+**                FIRMWARE INFORMATION
 *********************************************************
 ** BIOS Inf.: coreboot v24.08.00.01
 *********************************************************
-**                DPP credentials 
+**                DPP credentials
 *********************************************************
 **      Email: ***************
 **   Password: ***************
@@ -46,9 +45,9 @@ automatically. Here is an example:
 **     4) Edit your DPP keys
 **     6) Transition Dasharo Firmware
 *********************************************************
-R to reboot  P to poweroff  S to enter shell  
-K to launch SSH server  L to disable sending DTS logs 
-C to display DPP credentials 
+R to reboot  P to poweroff  S to enter shell
+K to launch SSH server  L to disable sending DTS logs
+C to display DPP credentials
 
 Enter an option:
 6
