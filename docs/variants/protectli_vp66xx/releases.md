@@ -9,6 +9,32 @@ For details about our release process please read
 {{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
 "Subscribe to Protectli Dasharo Release Newsletter") }}
 
+## v0.9.2 - 2025-06-11
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP66xx/).
+
+### Changed
+
+- Rebased coreboot to 25.03
+- Rebased edk2 to edk2-stable202502
+
+### Fixed
+
+- [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
+- [ESXI installer fails to boot on VP66xx](https://github.com/Dasharo/dasharo-issues/issues/1232)
+
+### Known issues
+
+- [UEFI Shell sourced from Dasharo FW image in VP6650](https://github.com/Dasharo/dasharo-issues/issues/1362)
+- [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
+
+### Binaries
+
+[protectli_vp66xx_v0.9.2.rom][protectli_vp66xx_v0.9.2.rom_file]{.md-button}
+[sha256][protectli_vp66xx_v0.9.2.rom_hash]{.md-button}
+[sha256.sig][protectli_vp66xx_v0.9.2.rom_sig]{.md-button}
+
 ## v0.9.1 - 2025-01-23
 
 Test results for this release can be found for [VP6650](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP66xx/VP6650_v0.9.1_results.csv)
