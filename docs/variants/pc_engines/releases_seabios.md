@@ -1,5 +1,14 @@
 # Release Notes
 
+This is a Dasharo Pro Package Release. o obtain access to the pre-built binaries,
+you need to [subscribe to the Dasharo Pro Package subscriber](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter,
+and gain entry to the Dasharo Premier Support invite-only live chat
+on the Matrix network, enabling direct engagement with the Dasharo Team
+and fellow subscribers for personalized, priority assistance.
+
 Following Release Notes describe status of Dasharo (coreboot+SeaBIOS) variant
 of open-source firmware development for PC Engines apu2/3/4/6 platform.
 
@@ -138,13 +147,6 @@ Test results for this release can be found
 
 [sha256][pcengines_apu6_seabios_v24.05.00.01.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu6_seabios_v24.05.00.01.rom_sig]{.md-button}
-
-This is a Dasharo Pro/Enterprise Package (formerly Dasharo Pro Package)
-Release. To obtain access to the pre-built binaries you will have to [get the
-Dasharo Pro/Enterprise Package (formerly Dasharo Pro Package)](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Pro/Enterprise Package (formerly Dasharo Pro Package
-) newsletter.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
