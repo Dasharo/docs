@@ -19,7 +19,7 @@ For details about our release process please read
 {{ subscribe_form("310eac18-d302-478f-a617-5f5d65e8e0ac",
 "Subscribe to NovaCustom NV4x 12th Gen Dasharo Release Newsletter") }}
 
-## v0.9.2 - 2025-06-03
+## v0.9.2 - 2025-06-12
 
 Test results for this release can be found
 [here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
