@@ -2,7 +2,8 @@
 
 This is a Dasharo Pro Package Release. To access the pre-built binaries,
 you need to [subscribe to the Dasharo Pro Package subscriber](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
-You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/).
+You can do this by purchasing a Dasharo Pro Package product from our
+[shop]( https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/).
 
 As a subscriber, you will receive access to all firmware updates for the
 duration of your subscription via the Dasharo Pro Package newsletter,
@@ -22,7 +23,7 @@ For details about our release process please read
 ## v0.9.2 - 2025-06-12
 
 Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/NovaCustom/ADL_12th_Gen/NV41PZ/heads/v0.9.2-rc2-results.csv).
 
 ### Added
 
@@ -94,7 +95,8 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-key
 ## v0.9.1 - 2024-06-27
 
 Test results for this release can be found
-[here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457).
+[here](https://docs.google.com/spreadsheets/d/1yWZ--zFPIsQhXZByf7nJIrasQYuRSf1yCi60lY_RGsQ/edit#gid=2042954457)
+.
 
 ### Fixed
 
