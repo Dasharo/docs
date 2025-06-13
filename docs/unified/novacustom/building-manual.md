@@ -323,7 +323,7 @@
 
         === "NV4x 12th Gen"
             ```bash
-            git checkout novacustom_nv4x_adl_v0.9.0
+            git checkout novacustom_nv4x_adl_v0.9.2
             ```
 
     1. Start the build inside the docker container:
@@ -346,12 +346,11 @@
 
         === "NV4x 12th Gen"
             ```bash
-            docker run --rm -it -v $PWD:$PWD -w $PWD \
-              3mdeb/heads-docker:3.0.1 make BOARD=nitropad-nv41
+            ./docker_repro.sh make BOARD=novacustom-nv4x_adl
             ```
 
             This will produce a Dasharo binary placed in
-            `build/x86/nitropad-nv41/dasharo-nitropad-nv41-*.rom`.
+            `build/x86/novacustom-nv4x_adl/dasharo-novacustom-nv4x_adl-novacustom_nv4x_adl_v0.9.2.rom`.
 
 ## Install Dasharo firmware
 
