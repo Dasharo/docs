@@ -84,9 +84,10 @@ devices.
     1. Remove the bottom cover of the laptop.
     2. Disconnect the primary battery.
     3. Disconnect the CMOS battery.
+
         !!! warning
 
-        Disconnecting the CMOS battery will result in the internal date being reset.
+            Disconnecting the CMOS battery will result in the internal date being reset.
 
     4. Attach a WSON-8 probe to the SPI flash chip.
     5. Backup the current firmware, in case you want to be able to restore it
