@@ -410,6 +410,16 @@ nav:
           - 'Hardware Configuration Matrix': variants/hardkernel_odroid_h4/hardware-matrix.md
           - 'Test matrix': variants/hardkernel_odroid_h4/test-matrix.md
           - 'Openness score': variants/hardkernel_odroid_h4/openness_score.md
+      - 'NovaCustom NUC BOX':
+          - 'Overview': variants/novacustom_nuc_box/overview.md
+          - 'Releases': variants/novacustom_nuc_box/releases.md
+          - 'Building manual': variants/novacustom_nuc_box/building-manual.md
+          - 'Initial deployment': variants/novacustom_nuc_box/initial-deployment.md
+          - 'Firmware update': variants/novacustom_nuc_box/firmware-update.md
+          - 'Recovery': variants/novacustom_nuc_box/recovery.md
+          - 'Hardware Configuration Matrix': variants/novacustom_nuc_box/hardware-matrix.md
+          - 'Test matrix': variants/novacustom_nuc_box/test-matrix.md
+          - 'Openness score': variants/novacustom_nuc_box/openness_score.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
