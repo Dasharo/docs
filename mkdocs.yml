@@ -165,6 +165,12 @@ plugins:
         'variants/msi_z690/openness-analysis.md': 'variants/msi_z690/openness_score.md'
         'variants/msi_z690/recovery.md': 'unified/msi/recovery.md'
 
+        'variants/novacustom_nuc_box/overview.md': 'unified/novacustom/overview.md'
+        'variants/novacustom_nuc_box/building-manual.md': 'unified/novacustom/building-manual.md'
+        'variants/novacustom_nuc_box/initial-deployment.md': 'unified/novacustom/initial-deployment.md'
+        'variants/novacustom_nuc_box/firmware-update.md': 'unified/novacustom/firmware-update.md'
+        'variants/novacustom_nuc_box/recovery.md': 'unified/novacustom/recovery.md'
+
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
   # but there are no internal links to them).
@@ -213,7 +219,7 @@ nav:
       - 'Overview': variants/overview.md
       - 'Version matrix': variants/versions.md
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
-      - 'NovaCustom laptops':
+      - 'NovaCustom':
           - 'Overview': unified/novacustom/overview.md
           - 'Building manual': unified/novacustom/building-manual.md
           - 'Initial deployment': unified/novacustom/initial-deployment.md
@@ -223,6 +229,11 @@ nav:
           - 'Features': unified/novacustom/features.md
           - 'Hardware Compatibility List': unified/novacustom/hcl.md
           - 'Firmware transition': unified/novacustom/firmware-transition.md
+          - 'NUC BOX':
+              - 'Releases': variants/novacustom_nuc_box/releases.md
+              - 'Hardware Configuration Matrix': variants/novacustom_nuc_box/hardware-matrix.md
+              - 'Test matrix': variants/novacustom_nuc_box/test-matrix.md
+              - 'Openness score': variants/novacustom_nuc_box/openness_score.md
           - 'V54 14th Gen':
               - 'V540TU':
                   - 'Releases': variants/novacustom_v540tu/releases.md
@@ -418,16 +429,6 @@ nav:
           - 'Hardware Configuration Matrix': variants/hardkernel_odroid_h4/hardware-matrix.md
           - 'Test matrix': variants/hardkernel_odroid_h4/test-matrix.md
           - 'Openness score': variants/hardkernel_odroid_h4/openness_score.md
-      - 'NovaCustom NUC BOX':
-          - 'Overview': variants/novacustom_nuc_box/overview.md
-          - 'Releases': variants/novacustom_nuc_box/releases.md
-          - 'Building manual': variants/novacustom_nuc_box/building-manual.md
-          - 'Initial deployment': variants/novacustom_nuc_box/initial-deployment.md
-          - 'Firmware update': variants/novacustom_nuc_box/firmware-update.md
-          - 'Recovery': variants/novacustom_nuc_box/recovery.md
-          - 'Hardware Configuration Matrix': variants/novacustom_nuc_box/hardware-matrix.md
-          - 'Test matrix': variants/novacustom_nuc_box/test-matrix.md
-          - 'Openness score': variants/novacustom_nuc_box/openness_score.md
       - 'Gigabyte MZ33-AR1':
           - 'Overview': variants/gigabyte_mz33-ar1/overview.md
           - 'Releases': variants/gigabyte_mz33-ar1/releases.md
