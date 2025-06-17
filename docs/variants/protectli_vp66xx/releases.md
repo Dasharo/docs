@@ -9,6 +9,56 @@ For details about our release process please read
 {{ subscribe_form("49abc4a2-0807-4720-aef2-b150ef701b30",
 "Subscribe to Protectli Dasharo Release Newsletter") }}
 
+## v0.9.2 - 2025-06-17
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP66xx/).
+
+### Fixed
+
+- [DisplayPort has trouble working with certain monitors](https://github.com/Dasharo/dasharo-issues/issues/1015)
+- [ESXI installer fails to boot on VP66xx](https://github.com/Dasharo/dasharo-issues/issues/1232)
+
+### Known issues
+
+- [UEFI Shell sourced from Dasharo FW image in VP6650](https://github.com/Dasharo/dasharo-issues/issues/1362)
+- [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
+
+### Binaries
+
+[protectli_vp66xx_v0.9.2.rom][protectli_vp66xx_v0.9.2.rom_file]{.md-button}
+[sha256][protectli_vp66xx_v0.9.2.rom_hash]{.md-button}
+[sha256.sig][protectli_vp66xx_v0.9.2.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-keys/protectli/release-keys/dasharo-release-0.9.x-for-protectli-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [coreboot based on 24.02 revision 824b40cd](https://github.com/Dasharo/coreboot/tree/824b40cd)
+    + [License](https://github.com/Dasharo/coreboot/blob/824b40cd/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202405 revision 787234d5](https://github.com/Dasharo/edk2/tree/787234d5)
+    + [License](https://github.com/Dasharo/edk2/blob/787234d5/License.txt)
+- [Dasharo iPXE fork based on 2023.12 revision 35d84756](https://github.com/Dasharo/ipxe/tree/35d84756)
+    + [License](https://github.com/Dasharo/ipxe/blob/35d84756/COPYING.GPLv2)
+- [vboot based on 3d37d2aafe revision 3d37d2aa](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3d37d2aa/LICENSE)
+- [Intel Management Engine version v16.1.25.1865-v0.1](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/protectli/vault_adl_p/)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.2](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/protectli/vault_adl_p/)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/cc9465c1/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version IoT RPL-P MR1 (4445_03)](https://github.com/intel/FSP/commits/3819544e/RaptorLakeFspBinPkg/IoT/RaptorLakeP)
+    + [License](https://github.com/intel/FSP/blob/3819544e/FSP_License.pdf)
+- [Intel microcode version ADL R0 0x433 05/12/2023](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-9a-04)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
+- [Intel microcode version RPL-H/P/PX 6+8 J0 0x4121 07/12/2023](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-ba-02)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
+
+[protectli_vp66xx_v0.9.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.2/protectli_vp66xx_v0.9.2.rom
+[protectli_vp66xx_v0.9.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.2/protectli_vp66xx_v0.9.2.rom.sha256
+[protectli_vp66xx_v0.9.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.2/protectli_vp66xx_v0.9.2.rom.sha256.sig
+
 ## v0.9.1 - 2025-01-23
 
 Test results for this release can be found for [VP6650](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/VP66xx/VP6650_v0.9.1_results.csv)
