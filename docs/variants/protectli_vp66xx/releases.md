@@ -55,9 +55,9 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-key
 - [Intel microcode version RPL-H/P/PX 6+8 J0 0x4121 07/12/2023](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240531/intel-ucode/06-ba-02)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240531/license)
 
-[protectli_vp66xx_v0.9.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.2/protectli_vp66xx_v0.9.2.rom
-[protectli_vp66xx_v0.9.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.2/protectli_vp66xx_v0.9.2.rom.sha256
-[protectli_vp66xx_v0.9.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/v0.9.2/protectli_vp66xx_v0.9.2.rom.sha256.sig
+[protectli_vp66xx_v0.9.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/uefi/v0.9.2/protectli_vp66xx_v0.9.2.rom
+[protectli_vp66xx_v0.9.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/uefi/v0.9.2/protectli_vp66xx_v0.9.2.rom.sha256
+[protectli_vp66xx_v0.9.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adl/uefi/v0.9.2/protectli_vp66xx_v0.9.2.rom.sha256.sig
 
 ## v0.9.1 - 2025-01-23
 
