@@ -21,7 +21,7 @@ Test results for this release can be found
 
 ### Known issues
 
-- [UEFI Shell sourced from Dasharo FW image in VP6650](https://github.com/Dasharo/dasharo-issues/issues/1362)
+- [Missing tag string in VP66XX binary](https://github.com/Dasharo/dasharo-issues/issues/1391)
 - [STB002.001 encounters unlisted errors](https://github.com/Dasharo/dasharo-issues/issues/1013)
 
 ### Binaries
@@ -29,6 +29,11 @@ Test results for this release can be found
 [protectli_vp66xx_v0.9.2.rom][protectli_vp66xx_v0.9.2.rom_file]{.md-button}
 [sha256][protectli_vp66xx_v0.9.2.rom_hash]{.md-button}
 [sha256.sig][protectli_vp66xx_v0.9.2.rom_sig]{.md-button}
+
+> NOTE: We have ran into a strange bug/corner case with our github-actions CI
+  when building this release binary. There's an extra step to verifying the
+  integrity and reproducibility in this release. Please see the issue:
+  [Missing tag string in VP66XX binary](https://github.com/Dasharo/dasharo-issues/issues/1391)
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
