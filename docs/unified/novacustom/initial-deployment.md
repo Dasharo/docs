@@ -84,6 +84,11 @@ devices.
     1. Remove the bottom cover of the laptop.
     2. Disconnect the primary battery.
     3. Disconnect the CMOS battery.
+
+        !!! warning
+
+            Disconnecting the CMOS battery will result in the internal date being reset.
+
     4. Attach a WSON-8 probe to the SPI flash chip.
     5. Backup the current firmware, in case you want to be able to restore it
         at some point:
@@ -151,6 +156,11 @@ devices.
 
     2. Disconnect the primary battery. (1)
     3. Disconnect the CMOS battery. (2)
+
+        !!! warning
+
+            Disconnecting the CMOS battery will result in the internal date being reset.
+
     4. Attach a WSON-8 probe to the SPI flash chip. (3)
 
         > For TGL devices use SOIC clip instead of WSON

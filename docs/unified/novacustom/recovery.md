@@ -293,6 +293,10 @@ Components Necessary to perform BIOS Recovery:
 
     1. Unplug the battery (1)
 
+        !!! warning
+
+            Disconnecting the CMOS battery will result in the internal date being reset.
+
     1. Place the SOIC-8 Pomona clip on the BIOS chip, taking care to align the CS pin with the
        white dot on the BIOS chip:
 
@@ -343,6 +347,10 @@ Components Necessary to perform BIOS Recovery:
             ![](../../images/NV412th1.webp)
 
     1. Unplug the battery (1)
+
+        !!! warning
+
+            Disconnecting the CMOS battery will result in the internal date being reset.
 
     1. Place the WSON probe on the BIOS chip, taking care to align the dot on the
        WSON probe with the white dot on the BIOS chip:
@@ -407,6 +415,10 @@ Components Necessary to perform BIOS Recovery:
             ![](../../images/560TNE.webp)
 
     1. Unplug the battery (1)
+
+        !!! warning
+
+            Disconnecting the CMOS battery will result in the internal date being reset.
 
     1. Place the WSON probe on the BIOS chip, taking care to align the dot on the
        WSON probe with the white dot on the BIOS chip:
