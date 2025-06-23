@@ -27,7 +27,7 @@ v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3m
 or RTE v1.0.0
 * RTE power supply 5V 2A Micro-USB
 * 10x standard female-female connection wire 2.54 mm raster
-* 2x RJ45 cable: 1 for RTE and 3 for the platform
+* 4x RJ45 cable: 1 for RTE and 3 for the platform
 
 * [apu2/3/4/6](https://www.pcengines.ch/apu2.htm)
 
@@ -52,23 +52,43 @@ have to be opened.
 
 ### Power and Reset switch connection
 
-Connect the RTE J11 header to the platform J3 header using 2.54mm
+Connect the RTE J11 header to the platform front panel header using 2.54mm
 wires as described in the table:
+
+=== "APU2/APU4"
 
 | RTE       | PC Engines             |
 |:---------:|:----------------------:|
-| J11 pin 9 | J3 pin 3 (PWR)         |
-| J11 pin 8 | J3 pin 5 (RST)         |
+| J11 pin 6 | J2 pin 3 (PWR)         |
+| J11 pin 5 | J2 pin 5 (RST)         |
 
-### CMOS reset circuit
+=== "APU3/APU6"
 
-Connect the RTE J11 header to the platform J10 header using 2.54mm
+| RTE       | PC Engines             |
+|:---------:|:----------------------:|
+| J11 pin 6 | J3 pin 3 (PWR)         |
+| J11 pin 5 | J3 pin 5 (RST)         |
+
+### Device power status readout
+
+Connect the RTE J1 header to the platform front panel header using 2.54mm
 wires as described in the table:
 
-| RTE        | PC Engines             |
-|:----------:|:----------------------:|
-| J11 pin 11 | J10 pin 1 (RTC clr)    |
-| Any GND    | J10 pin 2 (GND)        |
+=== "APU2"
+
+| RTE                             | PC Engines             |
+|:-------------------------------:|:----------------------:|
+| J1 pin 1(Closer to J7 header)   | J4 pin 8 (APU_LED1)    |
+| J1 pin 2                        | J4 pin 7 (APU_LED2)    |
+| J1 pin 3                        | J4 pin 6 (APU_LED3)    |
+
+=== "APU3/APU4/APU6"
+
+| RTE                             | PC Engines             |
+|:-------------------------------:|:----------------------:|
+| J1 pin 1(Closer to J7 header)   | J5 pin 8 (APU_LED1)    |
+| J1 pin 2                        | J5 pin 7 (APU_LED2)    |
+| J1 pin 3                        | J5 pin 6 (APU_LED3)    |
 
 
 ## Theory of operation
@@ -165,6 +185,14 @@ this feature can be found in:
 
 To expose this feature to OSFV we have to add additional wire between:
 
+=== "APU2"
+
+| RTE J11 pin       | PC Engines J4 pin   |
+|:-----------------:|:-------------------:|
+| 7                 | 5 (MODESW#)         |
+
+=== "APU3/APU4/APU6"
+
 | RTE J11 pin       | PC Engines J5 pin   |
 |:-----------------:|:-------------------:|
 | 7                 | 5 (MODESW#)         |
@@ -172,7 +200,7 @@ To expose this feature to OSFV we have to add additional wire between:
 ### USB devices
 
 Since some issues with USB controllers may only happen on select USB ports,
-it's important to plug in USB devices to all 2 USB ports of the board.
+it's important to plug in USB devices to all external USB ports of the board.
 
 ### SD card
 
@@ -184,6 +212,14 @@ BIOS WP (aka SPIWP#) pin can be used to enable or disable write protection.
 Feature was described in [sortbootorder
 documentation](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bios-wp-option).
 
-| RTE J11 pin       | PC Engines J5 pin   |
+=== "APU2"
+
+| RTE J11 pin       | PC Engines J2 pin   |
+|:-----------------:|:-------------------:|
+| 9                 | 1 (SPIWP#)          |
+
+=== "APU3/APU4/APU6"
+
+| RTE J11 pin       | PC Engines J3 pin   |
 |:-----------------:|:-------------------:|
 | 9                 | 1 (SPIWP#)          |
