@@ -16,11 +16,10 @@ are needed to create testing stands for Protectli machines.
 !!! warning
     Please note that using RTE v1.0.0 or older change way how [OSFV
     cli](https://github.com/Dasharo/osfv-scripts/blob/main/osfv_cli/src/osfv/libs/rte.py#L284)
-    works. On v1.0.0 and older there is no need for additional step of enabling SPI GPIO,
-    it is required only from v1.1.0 onwards. If it would not be reflected in [model
-    file](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli/src/osfv/models)
-    it may lead to issues. For more details please check
-    [here](https://github.com/Dasharo/osfv-scripts/issues/86).
+    works. On v1.0.0 and older there is no need for additional step of enabling
+    SPI GPIO, it is required only from v1.1.0 onwards. If it would not be
+    reflected in [model file](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli/src/osfv/models)
+    it may lead to issues. For more details please check [here](https://github.com/Dasharo/osfv-scripts/issues/86).
 
 * [RTE
 v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
@@ -28,7 +27,7 @@ or RTE v1.0.0
 * RTE power supply 5V 2A Micro-USB
 * 10x standard female-female connection wire 2.54 mm raster
 * 4x RJ45 cable: 1 for RTE and 3 for the platform OR
-  * 5x RJ45 cable for apu4: 1 for RTE and 4 for the platform
+    - 5x RJ45 cable for apu4: 1 for RTE and 4 for the platform
 
 * [apu2/3/4/6](https://www.pcengines.ch/apu2.htm)
 
@@ -58,17 +57,17 @@ wires as described in the table:
 
 === "APU2/APU4"
 
-| RTE       | PC Engines             |
-|:---------:|:----------------------:|
-| J11 pin 6 | J2 pin 3 (PWR)         |
-| J11 pin 5 | J2 pin 5 (RST)         |
+    | RTE       | PC Engines             |
+    |:---------:|:----------------------:|
+    | J11 pin 6 | J2 pin 3 (PWR)         |
+    | J11 pin 5 | J2 pin 5 (RST)         |
 
 === "APU3/APU6"
 
-| RTE       | PC Engines             |
-|:---------:|:----------------------:|
-| J11 pin 6 | J3 pin 3 (PWR)         |
-| J11 pin 5 | J3 pin 5 (RST)         |
+    | RTE       | PC Engines             |
+    |:---------:|:----------------------:|
+    | J11 pin 6 | J3 pin 3 (PWR)         |
+    | J11 pin 5 | J3 pin 5 (RST)         |
 
 ### Device power status readout
 
@@ -77,20 +76,19 @@ wires as described in the table:
 
 === "APU2"
 
-| RTE                             | PC Engines             |
-|:-------------------------------:|:----------------------:|
-| J1 pin 1(Closer to J7 header)   | J4 pin 8 (APU_LED1)    |
-| J1 pin 2                        | J4 pin 7 (APU_LED2)    |
-| J1 pin 3                        | J4 pin 6 (APU_LED3)    |
+    | RTE                             | PC Engines             |
+    |:-------------------------------:|:----------------------:|
+    | J1 pin 1(Closer to J7 header)   | J4 pin 8 (APU_LED1)    |
+    | J1 pin 2                        | J4 pin 7 (APU_LED2)    |
+    | J1 pin 3                        | J4 pin 6 (APU_LED3)    |
 
 === "APU3/APU4/APU6"
 
-| RTE                             | PC Engines             |
-|:-------------------------------:|:----------------------:|
-| J1 pin 1(Closer to J7 header)   | J5 pin 8 (APU_LED1)    |
-| J1 pin 2                        | J5 pin 7 (APU_LED2)    |
-| J1 pin 3                        | J5 pin 6 (APU_LED3)    |
-
+    | RTE                             | PC Engines             |
+    |:-------------------------------:|:----------------------:|
+    | J1 pin 1(Closer to J7 header)   | J5 pin 8 (APU_LED1)    |
+    | J1 pin 2                        | J5 pin 7 (APU_LED2)    |
+    | J1 pin 3                        | J5 pin 6 (APU_LED3)    |
 
 ## Theory of operation
 
@@ -188,15 +186,15 @@ To expose this feature to OSFV we have to add additional wire between:
 
 === "APU2"
 
-| RTE J11 pin       | PC Engines J4 pin   |
-|:-----------------:|:-------------------:|
-| 7                 | 5 (MODESW#)         |
+    | RTE J11 pin       | PC Engines J4 pin   |
+    |:-----------------:|:-------------------:|
+    | 7                 | 5 (MODESW#)         |
 
 === "APU3/APU4/APU6"
 
-| RTE J11 pin       | PC Engines J5 pin   |
-|:-----------------:|:-------------------:|
-| 7                 | 5 (MODESW#)         |
+    | RTE J11 pin       | PC Engines J5 pin   |
+    |:-----------------:|:-------------------:|
+    | 7                 | 5 (MODESW#)         |
 
 ### USB devices
 
@@ -215,12 +213,12 @@ documentation](https://github.com/pcengines/sortbootorder?tab=readme-ov-file#bio
 
 === "APU2"
 
-| RTE J11 pin       | PC Engines J2 pin   |
-|:-----------------:|:-------------------:|
-| 9                 | 1 (SPIWP#)          |
+    | RTE J11 pin       | PC Engines J2 pin   |
+    |:-----------------:|:-------------------:|
+    | 9                 | 1 (SPIWP#)          |
 
 === "APU3/APU4/APU6"
 
-| RTE J11 pin       | PC Engines J3 pin   |
-|:-----------------:|:-------------------:|
-| 9                 | 1 (SPIWP#)          |
+    | RTE J11 pin       | PC Engines J3 pin   |
+    |:-----------------:|:-------------------:|
+    | 9                 | 1 (SPIWP#)          |
