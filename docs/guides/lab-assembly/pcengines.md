@@ -27,7 +27,8 @@ v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3m
 or RTE v1.0.0
 * RTE power supply 5V 2A Micro-USB
 * 10x standard female-female connection wire 2.54 mm raster
-* 4x RJ45 cable: 1 for RTE and 3 for the platform
+* 4x RJ45 cable: 1 for RTE and 3 for the platform OR
+  * 5x RJ45 cable for apu4: 1 for RTE and 4 for the platform
 
 * [apu2/3/4/6](https://www.pcengines.ch/apu2.htm)
 
