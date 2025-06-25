@@ -454,7 +454,7 @@ nav:
           - 'Gigabyte MZ33-AR1': guides/lab-assembly/gigabyte_mz33_ar1.md
           - 'Protectli': guides/lab-assembly/protectli.md
           - 'Odroid H4': guides/lab-assembly/odroid-assembly-guide.md
-          - 'NovaCustom laptops': guides/lab-assembly/novacustom.md
+          - 'NovaCustom': guides/lab-assembly/novacustom.md
           - 'PC Engines': guides/lab-assembly/pcengines.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
