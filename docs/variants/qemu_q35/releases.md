@@ -22,6 +22,7 @@ Test results for this release can be found
 ### Known issues
 
 - [Measured Boot PCR values don't match the TPM measurement log](https://github.com/Dasharo/dasharo-issues/issues/1354)
+- [The firmware local number was not updated and shows `v0.2.1-rc1`](https://github.com/Dasharo/dasharo-issues/issues/1369)
 
 ### Binaries
 
