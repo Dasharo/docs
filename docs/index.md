@@ -60,6 +60,8 @@ Become a part of the vibrant Dasharo community:
       experiences, and stay informed.
     + **Dasharo Developers vPub**: A relaxed virtual meetup for developers and
       enthusiasts to discuss, share, and connect.
+- **Get involved** via the
+  [Bug Bounty](https://github.com/Dasharo/dasharo-issues?tab=readme-ov-file#bug-bounty).
 
 > Find us on other social platforms using the icons at the bottom right.
 
