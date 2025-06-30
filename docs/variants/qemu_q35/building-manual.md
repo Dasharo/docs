@@ -52,6 +52,13 @@ Compile:
 The resulting coreboot image will be placed in the current directory as
 `qemu_q35_<version>.rom`.
 
+> To build a QEMU image with all features and menus enabled, invoke:
+>
+> `./build.sh qemu_full`
+>
+> These builds are mainly for testing purposes and not all features have a
+> working implementation under emulated environment.
+
 ## Initial Deployment
 
 Now you can proceed with initial deployment scenario according to your needs:
