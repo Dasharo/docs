@@ -689,3 +689,4 @@ nav:
       - 'TrenchBoot Anti Evil Maid (current plan - v2)': projects/trenchboot-aem-v2.md
       - 'TrenchBoot Anti Evil Maid (previoius plan - v1)': projects/trenchboot-aem.md
       - 'UEFI Capsule Update for coreboot with EDK II': projects/capsule-updates.md
+      - 'Sovereign Boot Provisioning Wizard': projects/sovereign-boot-wizard.md
