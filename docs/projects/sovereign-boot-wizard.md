@@ -21,6 +21,17 @@ Wizard
 Specification](https://github.com/3mdeb/verified-boot/blob/55df31bf0645767e18c4dac7e19bf62d788e9df8/verified_boot_app_spec.md#sovereign-boot-provisioning-wizard)
 (current revision v0.1.0).
 
+## Credits
+
+This research has been supported by [Power Up
+Privacy](https://powerupprivacy.com/), a privacy advocacy group that seeks to
+supercharge privacy projects with resources so they can complete their mission
+of making our world a better place.
+
+Author of the idea and motivation: [Patrick Schleizer](https://github.com/adrelanos).
+
+Design and technical support: [Aaron Rainbolt](https://github.com/ArrayBolt3).
+
 ## Releases
 
 ### RC1 - 2025-06-30
@@ -39,24 +50,24 @@ Specification](https://github.com/3mdeb/verified-boot/blob/55df31bf0645767e18c4d
     + wizard can be manually invoked from the UEFI Secure Boot Configuration menu
     + disabling the wizard causes to reset the UEFI Secure Boot keys to defaults
 
-### Binaries
+#### Binaries
 
 [qemu_q35.rom](https://cloud.3mdeb.com/index.php/s/5ttD8Fd5TjWcqfa/download){.md-button}
 [sha256](https://cloud.3mdeb.com/index.php/s/7x3HpsCBJFgmbQM/download){.md-button}
 
-### SBOM
+#### SBOM
 
 - [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc1](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc1)
     + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc1/COPYING)
 - [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc1](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc1)
     + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc1/License.txt)
 
-### Building
+#### Building
 
 Follow the [instructions for
 QEMU](../variants/qemu_q35/building-manual.md#procedure) (`qemu_full` target).
 
-### Testing
+#### Testing
 
 Currently implemented set of functionalities can be validated using
 [OSFV](https://github.com/Dasharo/open-source-firmware-validation).
