@@ -32,19 +32,34 @@ Author of the idea and motivation: [Patrick Schleizer](https://github.com/adrela
 
 Design and technical support: [Aaron Rainbolt](https://github.com/ArrayBolt3).
 
+## Contribution
+
+One may contribute to the project in many ways:
+
+* request features and changes, report issues via
+  [GitHub](https://github.com/Dasharo/dasharo-issues/issues/new/choose) (use
+  [SovereignBoot
+  label](https://github.com/Dasharo/dasharo-issues/labels/SovereignBoot))
+* open Pull Requests to [Dasharo EDK2](https://github.com/Dasharo/edk2)
+  (application code is under
+  `DasharoModulePkg/Application/SovereignBootWizard`)
+* open Pull Requests to [verified-boot
+  repository](https://github.com/3mdeb/verified-boot) to suggest changes to
+  the specification
+
 ## Releases
 
 ### RC1 - 2025-06-30
 
 #### Added
 
-- First engineering release of the Sovereign Boot Provisioning Wizard
-- Basic parsing of boot options: displaying description, hardware path and file path
-- Integration of the Sovereign Boot Provisioning Wizard into UEFI Boot Manager:
+* First engineering release of the Sovereign Boot Provisioning Wizard
+* Basic parsing of boot options: displaying description, hardware path and file path
+* Integration of the Sovereign Boot Provisioning Wizard into UEFI Boot Manager:
     + wizard is invoked during boot when system is unprovisioned
     + wizard is invoked when system is provisioned and the boot option does not
       pass the UEFI Secure Boot verification
-- Integration of the Sovereign Boot Provisioning Wizard into UEFI firmware
+* Integration of the Sovereign Boot Provisioning Wizard into UEFI firmware
   setup:
     + wizard can be disabled/enabled in the UEFI Secure Boot Configuration menu
     + wizard can be manually invoked from the UEFI Secure Boot Configuration menu
@@ -57,9 +72,9 @@ Design and technical support: [Aaron Rainbolt](https://github.com/ArrayBolt3).
 
 #### SBOM
 
-- [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc1](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc1)
+* [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc1](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc1)
     + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc1/COPYING)
-- [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc1](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc1)
+* [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc1](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc1)
     + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc1/License.txt)
 
 #### Building
