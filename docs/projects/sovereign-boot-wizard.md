@@ -21,42 +21,68 @@ Wizard
 Specification](https://github.com/3mdeb/verified-boot/blob/55df31bf0645767e18c4dac7e19bf62d788e9df8/verified_boot_app_spec.md#sovereign-boot-provisioning-wizard)
 (current revision v0.1.0).
 
+## Credits
+
+This research has been supported by [Power Up
+Privacy](https://powerupprivacy.com/), a privacy advocacy group that seeks to
+supercharge privacy projects with resources so they can complete their mission
+of making our world a better place.
+
+Author of the idea and motivation: [Patrick Schleizer](https://github.com/adrelanos).
+
+Design and technical support: [Aaron Rainbolt](https://github.com/ArrayBolt3).
+
+## Contribution
+
+One may contribute to the project in many ways:
+
+* request features and changes, report issues via
+  [GitHub](https://github.com/Dasharo/dasharo-issues/issues/new/choose) (use
+  [SovereignBoot
+  label](https://github.com/Dasharo/dasharo-issues/labels/SovereignBoot))
+* open Pull Requests to [Dasharo EDK2](https://github.com/Dasharo/edk2)
+  (application code is under
+  `DasharoModulePkg/Application/SovereignBootWizard`)
+* open Pull Requests to [verified-boot
+  repository](https://github.com/3mdeb/verified-boot) to suggest changes to
+  the specification
+
 ## Releases
 
 ### RC1 - 2025-06-30
 
 #### Added
 
-- First engineering release of the Sovereign Boot Provisioning Wizard
-- Basic parsing of boot options: displaying description, hardware path and file path
-- Integration of the Sovereign Boot Provisioning Wizard into UEFI Boot Manager:
+* First engineering release of the Sovereign Boot Provisioning Wizard
+* Basic parsing of boot options: displaying description, hardware path and file path
+* Integration of the Sovereign Boot Provisioning Wizard into UEFI Boot Manager:
     + wizard is invoked during boot when system is unprovisioned
     + wizard is invoked when system is provisioned and the boot option does not
       pass the UEFI Secure Boot verification
-- Integration of the Sovereign Boot Provisioning Wizard into UEFI firmware
+* Integration of the Sovereign Boot Provisioning Wizard into UEFI firmware
   setup:
     + wizard can be disabled/enabled in the UEFI Secure Boot Configuration menu
     + wizard can be manually invoked from the UEFI Secure Boot Configuration menu
     + disabling the wizard causes to reset the UEFI Secure Boot keys to defaults
 
-### Binaries
+#### Binaries
 
 [qemu_q35.rom](https://cloud.3mdeb.com/index.php/s/5ttD8Fd5TjWcqfa/download){.md-button}
 [sha256](https://cloud.3mdeb.com/index.php/s/7x3HpsCBJFgmbQM/download){.md-button}
 
-### SBOM
+#### SBOM
 
-- [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc1](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc1)
+* [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc1](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc1)
     + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc1/COPYING)
-- [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc1](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc1)
+* [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc1](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc1)
     + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc1/License.txt)
 
-### Building
+#### Building
 
 Follow the [instructions for
 QEMU](../variants/qemu_q35/building-manual.md#procedure) (`qemu_full` target).
 
-### Testing
+#### Testing
 
 Currently implemented set of functionalities can be validated using
 [OSFV](https://github.com/Dasharo/open-source-firmware-validation).
