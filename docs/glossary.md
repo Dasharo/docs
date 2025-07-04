@@ -65,3 +65,8 @@ directories](https://docs.dasharo.com/variants/overview/) in this repository.
 If you are interested in Dasharo Openness Score for you boards, please [reach
 us](mailto:leads@3mdeb.com). Example Dasharo Openness Score report can be
 found [here](https://github.com/Dasharo/Openness-Score/blob/cab83fe1104c345fd22fb9541c738aca66b392da/examples/msi_ms7d25_v1.1.1_ddr4.rom_openness_score.md)
+
+You can also find an Openness Score comparison table in the
+[Supported hardware overview](./variants/overview.md#openness-comparison)
+section. It shows the comparison of binary openness between Dasharo and
+proprietary firmware.
