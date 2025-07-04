@@ -38,7 +38,7 @@ need an external boot device, such as a USB drive containing the UEFI Shell.
   ESP (EFI System Partition, where `EFI/` directory is located) is a good choice
   because it should be always readable by UEFI.
   If you're running the UEFI Shell from a USB drive, this step is already
-  covered- you can simply continue using the same USB drive.
+  covered - you can simply continue using the same USB drive.
 * _`CapsuleApp.efi`_<br>
   This is a UEFI application which passes a capsule file to firmware to perform
   an update.
