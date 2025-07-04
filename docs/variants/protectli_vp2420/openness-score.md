@@ -7,6 +7,8 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 ## v1.2.1
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for protectli_vp2420_v1.2.1.rom
 
 Open-source code percentage: **30.0%**
@@ -31,8 +33,6 @@ Closed-source code percentage: **70.0%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x1000 | 0x6ff000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | RECOVERY_MRC_CACHE | 0x700000 | 0x10000 | data |
 | RW_MRC_CACHE | 0x710000 | 0x10000 | data |
 | SMMSTORE | 0x720000 | 0x40000 | data |
@@ -47,6 +47,13 @@ Closed-source code percentage: **70.0%**
 | RO_FRID | 0xc04800 | 0x100 | data |
 | RO_FRID_PAD | 0xc04900 | 0x700 | data |
 | GBB | 0xc05000 | 0x3000 | data |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00001000 | 0x006fffff | 0x6ff000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
 
 ### CBFS BOOTSPLASH
 
@@ -129,6 +136,8 @@ Closed-source code percentage: **70.0%**
 
 ## v1.2.0
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for protectli_vp2420_v1.2.0.rom
 
 Open-source code percentage: **35.3%**
@@ -153,8 +162,6 @@ Closed-source code percentage: **64.7%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x1000 | 0x6ff000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | RECOVERY_MRC_CACHE | 0x700000 | 0x10000 | data |
 | RW_MRC_CACHE | 0x710000 | 0x10000 | data |
 | SMMSTORE | 0x720000 | 0x40000 | data |
@@ -170,6 +177,13 @@ Closed-source code percentage: **64.7%**
 | RO_FRID_PAD | 0xc04900 | 0x700 | data |
 | GBB | 0xc05000 | 0x3000 | data |
 
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00001000 | 0x006fffff | 0x6ff000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
+
 ### CBFS BOOTSPLASH
 
 * CBFS size: 1048576
@@ -181,7 +195,7 @@ Closed-source code percentage: **64.7%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -198,7 +212,7 @@ Closed-source code percentage: **64.7%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -227,7 +241,7 @@ Closed-source code percentage: **64.7%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |

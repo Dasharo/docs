@@ -7,18 +7,20 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 ## v1.1.1
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for protectli_vp2410_v1.1.1.rom
 
-Open-source code percentage: **29.5%**
-Closed-source code percentage: **70.5%**
+Open-source code percentage: **30.7%**
+Closed-source code percentage: **69.3%**
 
 * Image size: 8388608 (0x800000)
 * Number of regions: 17
 * Number of CBFSes: 2
 * Total open-source code size: 2086013 (0x1fd47d)
-* Total closed-source code size: 4984670 (0x4c0f5e)
-* Total data size: 409629 (0x6401d)
-* Total empty size: 908296 (0xddc08)
+* Total closed-source code size: 4714334 (0x47ef5e)
+* Total data size: 413725 (0x6501d)
+* Total empty size: 2227208 (0x21fc08)
 
 ![](protectli_vp2410_v1.1.1.rom_openness_chart.png)
 
@@ -32,11 +34,20 @@ Closed-source code percentage: **70.5%**
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
 | IFWI | 0x1000 | 0x2ff000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | RECOVERY_MRC_CACHE | 0x300000 | 0x10000 | data |
 | RW_MRC_CACHE | 0x310000 | 0x10000 | data |
+| RW_VAR_MRC_CACHE | 0x320000 | 0x1000 | data |
 | FMAP | 0x3a1000 | 0x1000 | data |
 | SMMSTORE | 0x67f000 | 0x40000 | data |
+| BIOS_UNUSABLE | 0x6bf000 | 0x40000 | empty |
+| UNUSED_HOLE | 0x7ff000 | 0x1000 | empty |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
+| Device Exp1 | 0x006ff000 | 0x007fffff | 0x101000 | empty |
 
 ### CBFS BOOTSPLASH
 
@@ -90,18 +101,20 @@ Closed-source code percentage: **70.5%**
 
 ## v1.1.0
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for protectli_vp2410_v1.1.0.rom
 
-Open-source code percentage: **31.7%**
-Closed-source code percentage: **68.3%**
+Open-source code percentage: **32.9%**
+Closed-source code percentage: **67.1%**
 
 * Image size: 8388608 (0x800000)
 * Number of regions: 17
 * Number of CBFSes: 2
 * Total open-source code size: 2313343 (0x234c7f)
-* Total closed-source code size: 4983646 (0x4c0b5e)
-* Total data size: 409627 (0x6401b)
-* Total empty size: 681992 (0xa6808)
+* Total closed-source code size: 4713310 (0x47eb5e)
+* Total data size: 413723 (0x6501b)
+* Total empty size: 2000904 (0x1e8808)
 
 ![](protectli_vp2410_v1.1.0.rom_openness_chart.png)
 
@@ -115,11 +128,20 @@ Closed-source code percentage: **68.3%**
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
 | IFWI | 0x1000 | 0x2ff000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | RECOVERY_MRC_CACHE | 0x300000 | 0x10000 | data |
 | RW_MRC_CACHE | 0x310000 | 0x10000 | data |
+| RW_VAR_MRC_CACHE | 0x320000 | 0x1000 | data |
 | FMAP | 0x3a1000 | 0x1000 | data |
 | SMMSTORE | 0x67f000 | 0x40000 | data |
+| BIOS_UNUSABLE | 0x6bf000 | 0x40000 | empty |
+| UNUSED_HOLE | 0x7ff000 | 0x1000 | empty |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
+| Device Exp1 | 0x006ff000 | 0x007fffff | 0x101000 | empty |
 
 ### CBFS BOOTSPLASH
 
@@ -132,7 +154,7 @@ Closed-source code percentage: **68.3%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -149,7 +171,7 @@ Closed-source code percentage: **68.3%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |

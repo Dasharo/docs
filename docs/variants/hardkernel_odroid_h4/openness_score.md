@@ -7,6 +7,8 @@ Score utility](https://github.com/Dasharo/Openness-Score).
 
 ## v0.9.0
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for hardkernel_odroid_h4_v0.9.0.rom
 
 Open-source code percentage: **38.3%**
@@ -31,8 +33,6 @@ Closed-source code percentage: **61.7%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x1000 | 0x413000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | SMMSTORE | 0x600000 | 0x40000 | data |
 | RECOVERY_MRC_CACHE | 0x640000 | 0x20000 | data |
 | RW_MRC_CACHE | 0x660000 | 0x20000 | data |
@@ -43,7 +43,14 @@ Closed-source code percentage: **61.7%**
 | RO_FRID | 0xb00800 | 0x100 | data |
 | RO_FRID_PAD | 0xb00900 | 0x700 | data |
 | GBB | 0xb01000 | 0x3000 | data |
-| SI_DEVICEEXT2 | 0x414000 | 0x1ec000 | empty |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00001000 | 0x00413fff | 0x413000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
+| Device Exp2 | 0x00414000 | 0x005fffff | 0x1ec000 | empty |
 
 ### CBFS BOOTSPLASH
 

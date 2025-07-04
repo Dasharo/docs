@@ -7,17 +7,19 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 ## v0.9.1
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for novacustom_v54x_mtl_v0.9.1.rom
 
-Open-source code percentage: **31.8%**
-Closed-source code percentage: **68.2%**
+Open-source code percentage: **32.6%**
+Closed-source code percentage: **67.4%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 31
 * Number of CBFSes: 4
 * Total open-source code size: 6341709 (0x60c44d)
-* Total closed-source code size: 13584595 (0xcf48d3)
-* Total data size: 544812 (0x8502c)
+* Total closed-source code size: 13088979 (0xc7b8d3)
+* Total data size: 553004 (0x8702c)
 * Total empty size: 13083316 (0xc7a2b4)
 
 ![](novacustom_v54x_mtl_v0.9.1.rom_openness_chart.png)
@@ -31,8 +33,6 @@ Closed-source code percentage: **68.2%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x4000 | 0x8fc000 | closed-source |
-| SI_DESC | 0x0 | 0x4000 | data |
 | VBLOCK_A | 0x900000 | 0x2000 | data |
 | RW_FWID_A | 0xffffc0 | 0x40 | data |
 | RECOVERY_MRC_CACHE | 0x1000000 | 0x10000 | data |
@@ -45,9 +45,17 @@ Closed-source code percentage: **68.2%**
 | VBLOCK_B | 0x1200000 | 0x2000 | data |
 | RW_FWID_B | 0x18fffc0 | 0x40 | data |
 | RO_VPD | 0x1900000 | 0x4000 | data |
+| RO_GSCVD | 0x1904000 | 0x2000 | data |
 | FMAP | 0x1906000 | 0x800 | data |
 | RO_FRID | 0x1906800 | 0x40 | data |
 | GBB | 0x1907000 | 0x3000 | data |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00004000 | 0x00888fff | 0x885000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00003fff | 0x4000 | data |
 
 ### CBFS FW_MAIN_A
 
