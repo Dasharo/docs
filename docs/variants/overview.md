@@ -76,3 +76,48 @@ open-source firmware distribution.
 * Following servers are supported under **Dasharo Community Support**:
 
     - [Supermicro X11 LGA1151 Series](supermicro_x11_lga1151_series/overview.md)
+
+## Openness comparison
+
+The following table shows the comparison of binary openness between Dasharo and
+proprietary firmware. It was generated using the 
+[Dasharo Openness Score tool](../glossary.md/#dasharo-openness-score).
+
+The table contains the following metrics:
+
+- `Closed-source diff` (the higher negative percentage the better, ideally
+  -100% is fully FOSS)
+- `Data size diff` - (the amount of data stored in the firmware varies,
+  no preference here)
+- `Empty space diff` - (the higher positive percentage the better, more free
+  space means smaller TCB)
+
+Each metric is calculated using the formula:
+
+```txt
+(Dasharo <type> size - Proprietary <type> size) * 100 / Proprietary <type> size
+```
+
+`<type>` is replaced by `closed-source`, `data` or `empty space` accordingly.
+
+| Platform | Dasharo Firmware file | Proprietary Firmware file |Δ Closed-source diff [%] | Δ Data size diff [%] | Δ Empty space diff [%] |
+| --- | --- | --- | --- | --- | --- |
+| MSI MS-7D25 DDR4 | msi_ms7d25_v1.1.4_ddr4.rom | E7D25IMS.1L0 | -30.4 | -88.9 | **117.4** |
+| MSI MS-7D25 DDR5 | msi_ms7d25_v1.1.4_ddr5.rom | E7D25IMS.AL0 | -30.5 | -88.9 | **117.6** |
+| MSI MS-7E06 DDR4 | msi_ms7e06_v0.9.2_ddr4.rom | E7E06IMS.1F0 | -30.1 | -88.9 | **115.9** |
+| MSI MS-7E06 DDR5 | msi_ms7e06_v0.9.2_ddr4.rom | E7E06IMS.AH0 | -30.2 | -88.9 | **116.3** |
+| Protectli FW6 | protectli_all_fw6_vault_kbl_v1.0.14.rom | fw6_all_YKR6LV30.bin | -48.0 | 35.2 | **155.5** |
+| Protectli V1210 | protectli_v1210_v0.9.3.rom | v1210_JPL.2LAN.S4G.PCIE.6W.013.bin | -29.4 | **73.4** | 37.7 |
+| Protectli V1211 | protectli_v1211_v0.9.3.rom | v1211_JPL.2LAN.D8G.PCIE.6W.009.bin | -29.4 | **73.4** | 37.8 |
+| Protectli V1410 | protectli_v1410_v0.9.3.rom | v1410_JPL.4LAN.S8GB.PCIE.6W.007B.bin | -29.5 | **73.4** | 37.8 |
+| Protectli V1610 | protectli_v1610_v0.9.3.rom | v1610_JPL.6LAN.D16G.PCIE.007.bin | -29.5 | **73.4** | 37.8 |
+| Protectli VP2430 | protectli_vp2430_v0.9.0.rom | vp2430_PRALNDZ4L10.bin | -30.8 | **-57.1** | 31.4 |
+| Protectli VP46XX | protectli_vp4600_v1.2.0.rom | vp4630_v2_YW6L2318.bin | -11.2 | **81.2** | -70.6 |
+| Protectli VP66XX | protectli_vp6600_v0.9.2.rom | vp6630_ADZ6L314.bin | -31.5 | **-58.8** | 13.9 |
+| Odroid H4 | hardkernel_odroid_h4_v0.9.0.rom | ADLN-H4_B1.07.bin | -36.6 | **-79.9** | 72.4 |
+| Novacustom V540TU | novacustom_v54x_mtl_v0.9.0.rom | V5xxTU(32M).09 | -20.5 | **-92.8** | 53.9 |
+| Novacustom V560TU | novacustom_v56x_mtl_v0.9.0.rom | V5xxTU(32M).09 | -20.5 | **-92.8** | 53.9 |
+| Novacustom NV4xPZ | novacustom_nv4x_adl_v1.7.2_full.rom | NV4xPZ(32M).03 | -26.0 | -96.1 | **346.1** |
+| Novacustom NV4xME_MB | novacustom_nv4x_tgl_v1.5.2.rom | NV4XBX.05 | -31.3 | **-78.7** | 41.6 |
+| Novacustom NSxxPU | novacustom_ns5x_adl_v1.7.2.rom | NSx0PU(32M).09 | -27.3 | -96.1 | **368.6** |
+| Novacustom NS5xMU | novacustom_ns5x_tgl_v1.5.2.rom | NS50_70MU.16N | -31.8 | **-77.6** | 38.3 |
