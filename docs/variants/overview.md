@@ -100,24 +100,25 @@ Each metric is calculated using the formula:
 
 `<type>` is replaced by `closed-source`, `data` or `empty space` accordingly.
 
-| Platform | Dasharo Firmware file | Proprietary Firmware file |Δ Closed-source diff [%] | Δ Data size diff [%] | Δ Empty space diff [%] |
+| Platform | Dasharo Firmware file | Proprietary Firmware file | Closed-source diff [%] | Data size diff [%] | Empty space diff [%] |
 | --- | --- | --- | --- | --- | --- |
-| MSI MS-7D25 DDR4 | msi_ms7d25_v1.1.4_ddr4.rom | E7D25IMS.1L0 | -30.4 | -88.9 | **117.4** |
-| MSI MS-7D25 DDR5 | msi_ms7d25_v1.1.4_ddr5.rom | E7D25IMS.AL0 | -30.5 | -88.9 | **117.6** |
-| MSI MS-7E06 DDR4 | msi_ms7e06_v0.9.2_ddr4.rom | E7E06IMS.1F0 | -30.1 | -88.9 | **115.9** |
-| MSI MS-7E06 DDR5 | msi_ms7e06_v0.9.2_ddr4.rom | E7E06IMS.AH0 | -30.2 | -88.9 | **116.3** |
-| Protectli FW6 | protectli_all_fw6_vault_kbl_v1.0.14.rom | fw6_all_YKR6LV30.bin | -48.0 | 35.2 | **155.5** |
-| Protectli V1210 | protectli_v1210_v0.9.3.rom | v1210_JPL.2LAN.S4G.PCIE.6W.013.bin | -29.4 | **73.4** | 37.7 |
-| Protectli V1211 | protectli_v1211_v0.9.3.rom | v1211_JPL.2LAN.D8G.PCIE.6W.009.bin | -29.4 | **73.4** | 37.8 |
-| Protectli V1410 | protectli_v1410_v0.9.3.rom | v1410_JPL.4LAN.S8GB.PCIE.6W.007B.bin | -29.5 | **73.4** | 37.8 |
-| Protectli V1610 | protectli_v1610_v0.9.3.rom | v1610_JPL.6LAN.D16G.PCIE.007.bin | -29.5 | **73.4** | 37.8 |
-| Protectli VP2430 | protectli_vp2430_v0.9.0.rom | vp2430_PRALNDZ4L10.bin | -30.8 | **-57.1** | 31.4 |
-| Protectli VP46XX | protectli_vp4600_v1.2.0.rom | vp4630_v2_YW6L2318.bin | -11.2 | **81.2** | -70.6 |
-| Protectli VP66XX | protectli_vp6600_v0.9.2.rom | vp6630_ADZ6L314.bin | -31.5 | **-58.8** | 13.9 |
-| Odroid H4 | hardkernel_odroid_h4_v0.9.0.rom | ADLN-H4_B1.07.bin | -36.6 | **-79.9** | 72.4 |
-| Novacustom V540TU | novacustom_v54x_mtl_v0.9.0.rom | V5xxTU(32M).09 | -20.5 | **-92.8** | 53.9 |
-| Novacustom V560TU | novacustom_v56x_mtl_v0.9.0.rom | V5xxTU(32M).09 | -20.5 | **-92.8** | 53.9 |
-| Novacustom NV4xPZ | novacustom_nv4x_adl_v1.7.2_full.rom | NV4xPZ(32M).03 | -26.0 | -96.1 | **346.1** |
-| Novacustom NV4xME_MB | novacustom_nv4x_tgl_v1.5.2.rom | NV4XBX.05 | -31.3 | **-78.7** | 41.6 |
-| Novacustom NSxxPU | novacustom_ns5x_adl_v1.7.2.rom | NSx0PU(32M).09 | -27.3 | -96.1 | **368.6** |
-| Novacustom NS5xMU | novacustom_ns5x_tgl_v1.5.2.rom | NS50_70MU.16N | -31.8 | **-77.6** | 38.3 |
+| MSI MS-7D25 DDR4 | msi_ms7d25_v1.1.4_ddr4.rom | E7D25IMS.1L0 | -27.7 | 153.5 | -18.8 |
+| MSI MS-7D25 DDR5 | msi_ms7d25_v1.1.4_ddr5.rom | E7D25IMS.AL0 | -27.8 | 153.4 | -18.8 |
+| MSI MS-7E06 DDR4 | msi_ms7e06_v0.9.2_ddr4.rom | E7E06IMS.1F0 | -27.4 | 153.4 | -19.0 |
+| MSI MS-7E06 DDR5 | msi_ms7e06_v0.9.2_ddr4.rom | E7E06IMS.AH0 | -27.4 | 149.9 | -19.0 |
+| Protectli FW6 | protectli_all_fw6_vault_kbl_v1.0.14.rom | fw6_all_YKR6LV30.bin | -47.0 | 2163.8 | 116.8 |
+| Protectli V1210 | protectli_v1210_v0.9.3.rom | v1210_JPL.2LAN.S4G.PCIE.6W.013.bin | -28.4 | 3595.6 | 21.9 |
+| Protectli V1211 | protectli_v1211_v0.9.3.rom | v1211_JPL.2LAN.D8G.PCIE.6W.009.bin | -28.4 | 3595.6 | 21.9 |
+| Protectli V1410 | protectli_v1410_v0.9.3.rom | v1410_JPL.4LAN.S8GB.PCIE.6W.007B.bin | -28.4 | 3595.6 | 22.0 |
+| Protectli V1610 | protectli_v1610_v0.9.3.rom | v1610_JPL.6LAN.D16G.PCIE.007.bin | -28.4 | 3595.7 | 21.9 |
+| Protectli VP2420 | protectli_vp2420_v1.2.1.rom | vp2420_YELD4L13P.bin | -25.4 | 4805.6 | -28.0 |
+| Protectli VP2430 | protectli_vp2430_v0.9.0.rom | vp2430_PRALNDZ4L10.bin | -39.6 | 17376.5 | 2.1 |
+| Protectli VP46XX | protectli_vp4600_v1.2.0.rom | vp4630_v2_YW6L2318.bin | -9.7 | 3790.8 | -72.9 |
+| Protectli VP66XX | protectli_vp6600_v0.9.2.rom | vp6630_ADZ6L314.bin | -30.8 | 5152.2 | -28.9 |
+| Odroid H4 | hardkernel_odroid_h4_v0.9.0.rom | ADLN-H4_B1.07.bin | -35.5 | 198.4 | -14.3 |
+| Novacustom V540TU | novacustom_v54x_mtl_v0.9.0.rom | V5xxTU(32M).09 | -21.9 | -35.4 | -17.0 |
+| Novacustom V560TU | novacustom_v56x_mtl_v0.9.0.rom | V5xxTU(32M).09 | -21.9 | -35.4 | -17.0 |
+| Novacustom NV4xPZ | novacustom_nv4x_adl_v1.7.2_full.rom | NV4xPZ(32M).03 | -27.6 | -0.8 | 46.8 |
+| Novacustom NV4xME_MB | novacustom_nv4x_tgl_v1.5.2.rom | NV4XBX.05 | -30.1 | 3.0 | -24.4 |
+| Novacustom NSxxPU | novacustom_ns5x_adl_v1.7.2.rom | NSx0PU(32M).09 | -26.3 | -0.8 | -7.2 |
+| Novacustom NS5xMU | novacustom_ns5x_tgl_v1.5.2.rom | NS50_70MU.16N | -30.6 | 2.9 | -23.4 |
