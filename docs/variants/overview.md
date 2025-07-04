@@ -80,16 +80,16 @@ open-source firmware distribution.
 ## Openness comparison
 
 The following table shows the comparison of binary openness between Dasharo and
-proprietary firmware. It was generated using the 
+proprietary firmware. It was generated using the
 [Dasharo Openness Score tool](../glossary.md/#dasharo-openness-score).
 
 The table contains the following metrics:
 
-- `Closed-source diff` (the higher negative percentage the better, ideally
+* `Closed-source diff` (the higher negative percentage the better, ideally
   -100% is fully FOSS)
-- `Data size diff` - (the amount of data stored in the firmware varies,
+* `Data size diff` - (the amount of data stored in the firmware varies,
   no preference here)
-- `Empty space diff` - (the higher positive percentage the better, more free
+* `Empty space diff` - (the higher positive percentage the better, more free
   space means smaller TCB)
 
 Each metric is calculated using the formula:
