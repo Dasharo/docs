@@ -7,6 +7,8 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 ## v0.9.0 Heads
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for novacustom_v54x_mtl_v0.9.0_heads.rom
 
 Open-source code percentage: **35.2%**
@@ -16,8 +18,8 @@ Closed-source code percentage: **64.8%**
 * Number of regions: 7
 * Number of CBFSes: 1
 * Total open-source code size: 9731311 (0x947cef)
-* Total closed-source code size: 17946033 (0x111d5b1)
-* Total data size: 118808 (0x1d018)
+* Total closed-source code size: 17937841 (0x111b5b1)
+* Total data size: 127000 (0x1f018)
 * Total empty size: 5758280 (0x57dd48)
 
 ![](novacustom_v54x_mtl_v0.9.0_heads.rom_openness_chart.png)
@@ -31,10 +33,16 @@ Closed-source code percentage: **64.8%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x6000 | 0x885000 | closed-source |
-| SI_DESC | 0x0 | 0x4000 | data |
 | RW_MRC_CACHE | 0x1000000 | 0x10000 | data |
 | FMAP | 0x1010000 | 0x200 | data |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00006000 | 0x0088afff | 0x885000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00003fff | 0x4000 | data |
+| GbE | 0x00004000 | 0x00005fff | 0x2000 | data |
 
 ### CBFS COREBOOT
 
@@ -73,18 +81,20 @@ Closed-source code percentage: **64.8%**
 
 ## v0.9.0
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for novacustom_v54x_mtl_v0.9.0.rom
 
-Open-source code percentage: **31.9%**
-Closed-source code percentage: **68.1%**
+Open-source code percentage: **32.0%**
+Closed-source code percentage: **68.0%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 32
 * Number of CBFSes: 4
-* Total open-source code size: 6178929 (0x5e4871)
-* Total closed-source code size: 13188259 (0xc93ca3)
-* Total data size: 544952 (0x850b8)
-* Total empty size: 13042292 (0xc70274)
+* Total open-source code size: 6225423 (0x5efe0f)
+* Total closed-source code size: 13246149 (0xca1ec5)
+* Total data size: 553144 (0x870b8)
+* Total empty size: 13050484 (0xc72274)
 
 ![](novacustom_v54x_mtl_v0.9.0.rom_openness_chart.png)
 
@@ -97,8 +107,6 @@ Closed-source code percentage: **68.1%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x6000 | 0x8fa000 | closed-source |
-| SI_DESC | 0x0 | 0x4000 | data |
 | VBLOCK_A | 0x900000 | 0x2000 | data |
 | RW_FWID_A | 0xffffc0 | 0x40 | data |
 | RECOVERY_MRC_CACHE | 0x1000000 | 0x10000 | data |
@@ -111,22 +119,31 @@ Closed-source code percentage: **68.1%**
 | VBLOCK_B | 0x1200000 | 0x2000 | data |
 | RW_FWID_B | 0x18fffc0 | 0x40 | data |
 | RO_VPD | 0x1900000 | 0x4000 | data |
+| RO_GSCVD | 0x1904000 | 0x2000 | data |
 | FMAP | 0x1906000 | 0x800 | data |
 | RO_FRID | 0x1906800 | 0x40 | data |
 | GBB | 0x1907000 | 0x3000 | data |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00006000 | 0x0088afff | 0x885000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00003fff | 0x4000 | data |
+| GbE | 0x00004000 | 0x00005fff | 0x2000 | empty |
 
 ### CBFS FW_MAIN_A
 
 * CBFS size: 7331776
 * Number of files: 15
-* Open-source files size: 2021099 (0x1ed6eb)
-* Closed-source files size: 1253089 (0x131ee1)
+* Open-source files size: 2036597 (0x1f1375)
+* Closed-source files size: 1237591 (0x12e257)
 * Data size: 9776 (0x2630)
 * Empty size: 4047812 (0x3dc3c4)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -134,6 +151,7 @@ Closed-source code percentage: **68.1%**
 | fallback/romstage | stage | 96280 | none | open-source |
 | fallback/ramstage | stage | 153503 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 21837 | none | open-source |
+| ec.rom | raw | 15498 | LZMA | open-source |
 | fallback/postcar | stage | 44748 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 136192 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
@@ -156,7 +174,7 @@ Closed-source code percentage: **68.1%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -166,14 +184,14 @@ Closed-source code percentage: **68.1%**
 
 * CBFS size: 7331776
 * Number of files: 15
-* Open-source files size: 2021099 (0x1ed6eb)
-* Closed-source files size: 1253089 (0x131ee1)
+* Open-source files size: 2036597 (0x1f1375)
+* Closed-source files size: 1237591 (0x12e257)
 * Data size: 9776 (0x2630)
 * Empty size: 4047812 (0x3dc3c4)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -181,6 +199,7 @@ Closed-source code percentage: **68.1%**
 | fallback/romstage | stage | 96280 | none | open-source |
 | fallback/ramstage | stage | 153503 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 21837 | none | open-source |
+| ec.rom | raw | 15498 | LZMA | open-source |
 | fallback/postcar | stage | 44748 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 136192 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
@@ -196,14 +215,14 @@ Closed-source code percentage: **68.1%**
 
 * CBFS size: 7299072
 * Number of files: 20
-* Open-source files size: 2136731 (0x209a9b)
-* Closed-source files size: 1253089 (0x131ee1)
+* Open-source files size: 2152229 (0x20d725)
+* Closed-source files size: 1237591 (0x12e257)
 * Data size: 11132 (0x2b7c)
 * Empty size: 3898120 (0x3b7b08)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -211,6 +230,7 @@ Closed-source code percentage: **68.1%**
 | fallback/romstage | stage | 96280 | none | open-source |
 | fallback/ramstage | stage | 153503 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 21837 | none | open-source |
+| ec.rom | raw | 15498 | LZMA | open-source |
 | fallback/postcar | stage | 44748 | none | open-source |
 | fallback/verstage | stage | 78320 | none | open-source |
 | bootblock | bootblock | 37312 | none | open-source |

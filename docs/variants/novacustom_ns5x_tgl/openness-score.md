@@ -7,7 +7,9 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 ## v1.5.2
 
-Openness Score for novacustom_ns5x_tgl_v1.5.2_full.rom
+Report has been generated with Openness Score utility version v0.2
+
+Openness Score for novacustom_ns5x_tgl_v1.5.2.rom
 
 Open-source code percentage: **37.7%**
 Closed-source code percentage: **62.3%**
@@ -17,12 +19,12 @@ Closed-source code percentage: **62.3%**
 * Number of CBFSes: 3
 * Total open-source code size: 4540304 (0x454790)
 * Total closed-source code size: 7509228 (0x7294ec)
-* Total data size: 628714 (0x997ea)
-* Total empty size: 4098970 (0x3e8b9a)
+* Total data size: 628586 (0x9976a)
+* Total empty size: 4099098 (0x3e8c1a)
 
-![](novacustom_ns5x_tgl_v1.5.2_full.rom_openness_chart.png)
+![](novacustom_ns5x_tgl_v1.5.2.rom_openness_chart.png)
 
-![](novacustom_ns5x_tgl_v1.5.2_full.rom_openness_chart_full_image.png)
+![](novacustom_ns5x_tgl_v1.5.2.rom_openness_chart_full_image.png)
 
 > Numbers given above already include the calculations from CBFS regions
 > presented below
@@ -59,7 +61,7 @@ Closed-source code percentage: **62.3%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -71,12 +73,12 @@ Closed-source code percentage: **62.3%**
 * Number of files: 13
 * Open-source files size: 2223496 (0x21ed88)
 * Closed-source files size: 1135222 (0x115276)
-* Data size: 8468 (0x2114)
-* Empty size: 2350766 (0x23deae)
+* Data size: 8404 (0x20d4)
+* Empty size: 2350830 (0x23deee)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -88,11 +90,11 @@ Closed-source code percentage: **62.3%**
 | cpu_microcode_blob.bin | microcode | 207872 | none | closed-source |
 | fspm.bin | fsp | 651264 | none | closed-source |
 | fsps.bin | fsp | 276086 | LZ4 | closed-source |
-| config | raw | 5207 | LZMA | data |
+| config | raw | 5145 | LZMA | data |
 | revision | raw | 856 | none | data |
 | build_info | raw | 98 | none | data |
 | vbt.bin | raw | 1308 | LZMA | data |
-| (empty) | null | 2532 | none | empty |
+| (empty) | null | 2596 | none | empty |
 
 ### CBFS COREBOOT
 
@@ -100,12 +102,12 @@ Closed-source code percentage: **62.3%**
 * Number of files: 19
 * Open-source files size: 2316808 (0x235a08)
 * Closed-source files size: 1135222 (0x115276)
-* Data size: 9850 (0x267a)
-* Empty size: 699656 (0xaad08)
+* Data size: 9786 (0x263a)
+* Empty size: 699720 (0xaad48)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -120,11 +122,11 @@ Closed-source code percentage: **62.3%**
 | fsps.bin | fsp | 276086 | LZ4 | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| config | raw | 5207 | LZMA | data |
+| config | raw | 5145 | LZMA | data |
 | revision | raw | 856 | none | data |
 | build_info | raw | 98 | none | data |
 | vbt.bin | raw | 1308 | LZMA | data |
 | cmos_layout.bin | cmos_layout | 852 | none | data |
 | etc/ps2-keyboard-spinup | raw | 8 | none | data |
-| (empty) | null | 1316 | none | empty |
+| (empty) | null | 1380 | none | empty |
 | (empty) | null | 698340 | none | empty |

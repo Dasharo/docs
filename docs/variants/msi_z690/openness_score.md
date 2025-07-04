@@ -8,18 +8,20 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 ## v0.9.0 heads
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for msi_ms7d25_v0.9.0_ddr5_heads.rom
 
-Open-source code percentage: **61.4%**
-Closed-source code percentage: **38.6%**
+Open-source code percentage: **61.3%**
+Closed-source code percentage: **38.7%**
 
 * Image size: 33554432 (0x2000000)
-* Number of regions: 6
+* Number of regions: 7
 * Number of CBFSes: 1
 * Total open-source code size: 9101448 (0x8ae088)
-* Total closed-source code size: 5716309 (0x573955)
+* Total closed-source code size: 5749077 (0x57b955)
 * Total data size: 105639 (0x19ca7)
-* Total empty size: 18438524 (0x119597c)
+* Total empty size: 18598268 (0x11bc97c)
 
 ![](msi_ms7d25_v0.9.0_ddr5_heads.rom_openness_chart.png)
 
@@ -32,10 +34,16 @@ Closed-source code percentage: **38.6%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x1000 | 0x3d8000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | RW_MRC_CACHE | 0x400000 | 0x10000 | data |
 | FMAP | 0x418000 | 0x200 | data |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00001000 | 0x003d8fff | 0x3d8000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
+| Device Exp2 | 0x003d9000 | 0x003fffff | 0x27000 | empty |
 
 ### CBFS COREBOOT
 
@@ -48,7 +56,7 @@ Closed-source code percentage: **38.6%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -78,18 +86,20 @@ Closed-source code percentage: **38.6%**
 
 ## v1.1.3
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for msi_ms7d25_v1.1.3_ddr5.rom
 
-Open-source code percentage: **43.0%**
-Closed-source code percentage: **57.0%**
+Open-source code percentage: **44.9%**
+Closed-source code percentage: **55.1%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 37
 * Number of CBFSes: 4
 * Total open-source code size: 6949213 (0x6a095d)
-* Total closed-source code size: 9218180 (0x8ca884)
-* Total data size: 948357 (0xe7885)
-* Total empty size: 16438682 (0xfad59a)
+* Total closed-source code size: 8534148 (0x823884)
+* Total data size: 1472645 (0x167885)
+* Total empty size: 29181338 (0x1bd459a)
 
 ![](msi_ms7d25_v1.1.3_ddr5.rom_openness_chart.png)
 
@@ -102,9 +112,9 @@ Closed-source code percentage: **57.0%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x1000 | 0x3ff000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | SMMSTORE | 0x1000000 | 0x40000 | data |
+| RESERVED | 0x1040000 | 0x40000 | data |
+| BPA | 0x1080000 | 0x20000 | data |
 | RECOVERY_MRC_CACHE | 0x10a0000 | 0x20000 | data |
 | RW_MRC_CACHE | 0x10c0000 | 0x20000 | data |
 | RW_ELOG | 0x10e0000 | 0x4000 | data |
@@ -116,6 +126,7 @@ Closed-source code percentage: **57.0%**
 | HSPHY_FW | 0x1110000 | 0x8000 | data |
 | VBLOCK_A | 0x1318000 | 0x10000 | data |
 | RW_FWID_A | 0x17bff00 | 0x100 | data |
+| ROMHOLE | 0x17c0000 | 0x20000 | data |
 | VBLOCK_B | 0x17e0000 | 0x10000 | data |
 | RW_FWID_B | 0x1bfff00 | 0x100 | data |
 | RO_VPD | 0x1c00000 | 0x4000 | data |
@@ -124,6 +135,14 @@ Closed-source code percentage: **57.0%**
 | RO_FRID_PAD | 0x1c04900 | 0x700 | data |
 | GBB | 0x1c05000 | 0x3000 | data |
 | UNUSED | 0x400000 | 0xc00000 | empty |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00001000 | 0x003d8fff | 0x3d8000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
+| Device Exp2 | 0x003d9000 | 0x00ffffff | 0xc27000 | empty |
 
 ### CBFS BOOTSPLASH
 
@@ -136,7 +155,7 @@ Closed-source code percentage: **57.0%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -153,7 +172,7 @@ Closed-source code percentage: **57.0%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -182,7 +201,7 @@ Closed-source code percentage: **57.0%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -211,7 +230,7 @@ Closed-source code percentage: **57.0%**
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
- > which are not visible in the table below)
+> which are not visible in the table below)
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
@@ -235,18 +254,20 @@ Closed-source code percentage: **57.0%**
 
 ## v1.1.4
 
+Report has been generated with Openness Score utility version v0.2
+
 Openness Score for msi_ms7d25_v1.1.4_ddr5.rom
 
-Open-source code percentage: **40.8%**
-Closed-source code percentage: **59.2%**
+Open-source code percentage: **42.7%**
+Closed-source code percentage: **57.3%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 37
 * Number of CBFSes: 4
 * Total open-source code size: 6370750 (0x6135be)
-* Total closed-source code size: 9233747 (0x8ce553)
-* Total data size: 948795 (0xe7a3b)
-* Total empty size: 17001140 (0x1036ab4)
+* Total closed-source code size: 8549715 (0x827553)
+* Total data size: 1473083 (0x167a3b)
+* Total empty size: 17160884 (0x105dab4)
 
 ![](msi_ms7d25_v1.1.4_ddr5.rom_openness_chart.png)
 
@@ -259,9 +280,9 @@ Closed-source code percentage: **59.2%**
 
 | FMAP region | Offset | Size | Category |
 | ----------- | ------ | ---- | -------- |
-| SI_ME | 0x1000 | 0x3ff000 | closed-source |
-| SI_DESC | 0x0 | 0x1000 | data |
 | SMMSTORE | 0x1000000 | 0x40000 | data |
+| RESERVED | 0x1040000 | 0x40000 | data |
+| BPA | 0x1080000 | 0x20000 | data |
 | RECOVERY_MRC_CACHE | 0x10a0000 | 0x20000 | data |
 | RW_MRC_CACHE | 0x10c0000 | 0x20000 | data |
 | RW_ELOG | 0x10e0000 | 0x4000 | data |
@@ -273,6 +294,7 @@ Closed-source code percentage: **59.2%**
 | HSPHY_FW | 0x1110000 | 0x8000 | data |
 | VBLOCK_A | 0x1318000 | 0x10000 | data |
 | RW_FWID_A | 0x17bff00 | 0x100 | data |
+| ROMHOLE | 0x17c0000 | 0x20000 | data |
 | VBLOCK_B | 0x17e0000 | 0x10000 | data |
 | RW_FWID_B | 0x1bfff00 | 0x100 | data |
 | RO_VPD | 0x1c00000 | 0x4000 | data |
@@ -281,6 +303,14 @@ Closed-source code percentage: **59.2%**
 | RO_FRID_PAD | 0x1c04900 | 0x700 | data |
 | GBB | 0x1c05000 | 0x3000 | data |
 | UNUSED | 0x400000 | 0xc00000 | empty |
+
+### IFD regions
+
+| IFD region | Start | End | Size | Category |
+| -------------- | ----- | --- | ---- | -------- |
+| Intel ME | 0x00001000 | 0x003d8fff | 0x3d8000 | closed-source |
+| Flash Descriptor | 0x00000000 | 0x00000fff | 0x1000 | data |
+| Device Exp2 | 0x003d9000 | 0x003fffff | 0x27000 | empty |
 
 ### CBFS BOOTSPLASH
 

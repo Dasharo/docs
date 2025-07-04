@@ -7,22 +7,24 @@ Score utility](https://github.com/Dasharo/Openness-Score).
 
 ## v1.7.2
 
-Openness Score for novacustom_ns5x_adl_v1.7.2_full.rom
+Report has been generated with Openness Score utility version v0.2
 
-Open-source code percentage: **33.1%**
-Closed-source code percentage: **66.9%**
+Openness Score for novacustom_ns5x_adl_v1.7.2.rom
+
+Open-source code percentage: **35.1%**
+Closed-source code percentage: **64.9%**
 
 * Image size: 33554432 (0x2000000)
 * Number of regions: 27
 * Number of CBFSes: 3
-* Total open-source code size: 4328350 (0x420b9e)
-* Total closed-source code size: 8757602 (0x85a162)
-* Total data size: 686438 (0xa7966)
-* Total empty size: 19782042 (0x12dd99a)
+* Total open-source code size: 4588518 (0x4603e6)
+* Total closed-source code size: 8497434 (0x81a91a)
+* Total data size: 686310 (0xa78e6)
+* Total empty size: 19782170 (0x12dda1a)
 
-![](novacustom_ns5x_adl_v1.7.2_full.rom_openness_chart.png)
+![](novacustom_ns5x_adl_v1.7.2.rom_openness_chart.png)
 
-![](novacustom_ns5x_adl_v1.7.2_full.rom_openness_chart_full_image.png)
+![](novacustom_ns5x_adl_v1.7.2.rom_openness_chart_full_image.png)
 
 > Numbers given above already include the calculations from CBFS regions
 > presented below
@@ -70,10 +72,10 @@ Closed-source code percentage: **66.9%**
 
 * CBFS size: 10903488
 * Number of files: 13
-* Open-source files size: 2114287 (0x2042ef)
-* Closed-source files size: 1759409 (0x1ad8b1)
-* Data size: 8690 (0x21f2)
-* Empty size: 7021102 (0x6b222e)
+* Open-source files size: 2244371 (0x223f13)
+* Closed-source files size: 1629325 (0x18dc8d)
+* Data size: 8626 (0x21b2)
+* Empty size: 7021166 (0x6b226e)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -89,20 +91,20 @@ Closed-source code percentage: **66.9%**
 | cpu_microcode_blob.bin | microcode | 546816 | none | closed-source |
 | fspm.bin | fsp | 786432 | none | closed-source |
 | fsps.bin | fsp | 296077 | LZ4 | closed-source |
-| config | raw | 5544 | LZMA | data |
+| config | raw | 5482 | LZMA | data |
 | revision | raw | 856 | none | data |
 | build_info | raw | 98 | none | data |
 | vbt.bin | raw | 1290 | LZMA | data |
-| (empty) | null | 804 | none | empty |
+| (empty) | null | 868 | none | empty |
 
 ### CBFS COREBOOT
 
 * CBFS size: 4161536
 * Number of files: 18
-* Open-source files size: 2214063 (0x21c8af)
-* Closed-source files size: 1759409 (0x1ad8b1)
-* Data size: 10008 (0x2718)
-* Empty size: 178056 (0x2b788)
+* Open-source files size: 2344147 (0x23c4d3)
+* Closed-source files size: 1629325 (0x18dc8d)
+* Data size: 9944 (0x26d8)
+* Empty size: 178120 (0x2b7c8)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -121,10 +123,10 @@ Closed-source code percentage: **66.9%**
 | fsps.bin | fsp | 296077 | LZ4 | closed-source |
 | cbfs_master_header | cbfs header | 28 | none | data |
 | intel_fit | intel_fit | 80 | none | data |
-| config | raw | 5544 | LZMA | data |
+| config | raw | 5482 | LZMA | data |
 | revision | raw | 856 | none | data |
 | build_info | raw | 98 | none | data |
 | vbt.bin | raw | 1290 | LZMA | data |
 | cmos_layout.bin | cmos_layout | 800 | none | data |
-| (empty) | null | 548 | none | empty |
+| (empty) | null | 612 | none | empty |
 | (empty) | null | 177508 | none | empty |
