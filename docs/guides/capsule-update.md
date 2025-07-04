@@ -25,16 +25,20 @@ mentioned, it means that it doesn't support this update method.
 | NovaCustom   | 11th Gen series | v1.6.0                   |
 | NovaCustom   | 12th Gen series | v1.8.0                   |
 | NovaCustom   | 14th Gen series | v1.0.0                   |
+| Protectli    | Vault VP66xx    | v0.9.3                   |
 
 ## Prerequisites
 
 * _UEFI Shell_<br>
-  UEFI Dasharo firmware has this, but won't hurt to call it out explicitly.
+If your Dasharo firmware does not include the UEFI Shell as a boot option, you will
+need an external boot device, such as a USB drive containing the UEFI Shell.
 * _Storage device available from UEFI Shell_<br>
   Not all file-systems are available to UEFI, so not all storage devices and
   partition on them will be usable for the purpose of capsule updates.  An
   ESP (EFI System Partition, where `EFI/` directory is located) is a good choice
   because it should be always readable by UEFI.
+  If you're running the UEFI Shell from a USB drive, this step is already
+  covered - you can simply continue using the same USB drive.
 * _`CapsuleApp.efi`_<br>
   This is a UEFI application which passes a capsule file to firmware to perform
   an update.
