@@ -51,7 +51,7 @@ One may contribute to the project in many ways:
 
 Watch a short demonstration of Sovereign Boot Wizard in action:
 
-[Sovereign Boot Wizard RC1 Demo ](https://www.youtube.com/watch?v=sCohCVvcp7E)
+[Sovereign Boot Wizard RC1 Demo](https://www.youtube.com/watch?v=sCohCVvcp7E)
 
 This video covers basic usage of the Sovereign Boot Wizard and complements the
 documentation below.
