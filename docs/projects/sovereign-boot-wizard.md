@@ -114,3 +114,22 @@ Currently implemented set of functionalities can be validated using
         -v snipeit:no -v config:qemu \
         dasharo-security/sovereign-boot.robot
     ```
+
+#### Video demonstration
+
+Watch a short demonstration of Sovereign Boot Wizard in action. This video
+covers basic usage of the Sovereign Boot Wizard and complements the
+documentation.
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/sCohCVvcp7E?si=bgJkdJwGFHY0u_9I"
+    title="Sovereign Boot Wizard RC1 Demo"
+    frameborder="0"
+    allow="accelerometer; autoplay;
+      clipboard-write; encrypted-media;
+      gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
