@@ -117,9 +117,19 @@ Currently implemented set of functionalities can be validated using
 
 #### Video demonstration
 
-Watch a short demonstration of Sovereign Boot Wizard in action:
+Watch a short demonstration of Sovereign Boot Wizard in action. This video
+covers basic usage of the Sovereign Boot Wizard and complements the
+documentation.
 
-[Sovereign Boot Wizard RC1 Demo](https://www.youtube.com/watch?v=sCohCVvcp7E)
-
-This video covers basic usage of the Sovereign Boot Wizard and complements the
-documentation below.
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/sCohCVvcp7E?si=bgJkdJwGFHY0u_9I"
+    title="Sovereign Boot Wizard RC1 Demo"
+    frameborder="0"
+    allow="accelerometer; autoplay;
+      clipboard-write; encrypted-media;
+      gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
