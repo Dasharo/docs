@@ -47,6 +47,15 @@ One may contribute to the project in many ways:
   repository](https://github.com/3mdeb/verified-boot) to suggest changes to
   the specification
 
+## Video demonstration
+
+Watch a short demonstration of Sovereign Boot Wizard in action:
+
+[Sovereign Boot Wizard RC1 Demo ](https://www.youtube.com/watch?v=sCohCVvcp7E)
+
+This video covers basic usage of the Sovereign Boot Wizard and complements the
+documentation below.
+
 ## Releases
 
 ### RC1 - 2025-06-30
