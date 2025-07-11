@@ -184,13 +184,14 @@ device already had the OS installed.
         sudo dnf install openssh-server
         systemctl enable --now sshd
         ```
+
     1. Additionally for Using serial via FTDI USB converter
+
         ```
         sudo systemctl enable serial-getty@ttyUSB0.service
         sudo systemctl start serial-getty@ttyUSB0.service
         sudo setenforce 0
         ```
-    
 
 #### NVIDIA drivers - Ubuntu
 
