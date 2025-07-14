@@ -141,3 +141,13 @@ flashrom -p internal -r dump.rom
     ```
 
     This command also preserves Dasharo UEFI settings and the boot order.
+
+=== "VP3210/VP3230"
+
+    To flash Dasharo on the platform, execute the following command -
+    replace `[path]` with the path to the Dasharo image you want to flash,
+    e.g. `protectli_vp32xx_v0.9.0.rom`:
+
+    ```bash
+    flashrom -p internal -w protectli_vp32xx_v0.9.0.rom
+    ```

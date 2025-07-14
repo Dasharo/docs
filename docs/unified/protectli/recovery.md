@@ -328,3 +328,74 @@ and Dasharo open-source firmware.
 
     The first boot of the platform after proceeding with the above procedure can
     take much longer than standard.
+
+=== "VP3210/VP3230"
+
+    ## Prerequisites
+
+    * [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
+    * 6x female-female wire cables
+
+    ## Connections
+
+    To prepare the stand for flashing follow the steps described below:
+
+    1. Open the platform cover.
+    2. Connect the J1 and J2 flash headers to the [SPI
+    header](../../transparent-validation/rte/v1.1.0/specification.md) on RTE.
+
+        | SPI header | VP32XX J1    |
+        |:----------:|:------------:|
+        | Vcc        | pin 1 (Vcc)  |
+        | SCLK       | pin 3 (CLK)  |
+        | MOSI       | pin 4 (MOSI) |
+
+        | SPI header | VP32XX J2    |
+        |:----------:|:------------:|
+        | GND        | pin 4 (GND)  |
+        | CS         | pin 1 (CS)   |
+        | MISO       | pin 2 (MISO) |
+
+    ## Firmware flashing
+
+    To flash firmware follow the steps described below:
+
+    3. Login to RTE via `ssh` or `minicom`.
+    4. Turn on the platform by connecting the power supply.
+    5. Wait at least 5 seconds.
+    6. Turn off the platform by using the power button.
+    7. Wait at least 3 seconds.
+    8. Set the proper state of the SPI by using the following commands on RTE:
+
+        ```bash
+        # set SPI Vcc to 3.3V
+        echo 1 > /sys/class/gpio/gpio405/value
+        # SPI Vcc on
+        echo 1 > /sys/class/gpio/gpio406/value
+        # SPI lines ON
+        echo 1 > /sys/class/gpio/gpio404/value
+        ```
+
+    9. Wait at least 2 seconds.
+    10. Disconnect the power supply from the platform.
+    11. Wait at least 2 seconds.
+    12. Flash the platform by using the following command:
+
+        ```bash
+        flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -w [path_to_binary]
+        ```
+
+        > Flashing with flashrom takes about 1 minute.
+
+    13. Change back the state of the SPI by using the following commands:
+
+        ```bash
+        echo 0 > /sys/class/gpio/gpio404/value
+        echo 0 > /sys/class/gpio/gpio406/value
+        ```
+
+    14. Reset the CMOS battery (short JCMOS header for a couple of seconds).
+    15. Turn on the platform by connecting the power supply.
+
+    The first boot of the platform after proceeding with the above procedure can
+    take much longer than standard.

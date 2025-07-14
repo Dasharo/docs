@@ -293,3 +293,27 @@ then follow the steps below:
 
     The resulting coreboot image will be placed in the coreboot directory as
     `protectli_vp2430_<version>.rom`.
+
+=== "VP3210/VP3230"
+
+    1. Checkout the desired version, e.g. `v0.9.0`:
+
+        ```bash
+        cd coreboot
+        git checkout protectli_vault_adln_v0.9.0
+        ```
+
+    2. Checkout submodules:
+
+        ```bash
+        git submodule update --init --checkout
+        ```
+
+    3. Build the firmware:
+
+        ```bash
+        ./build.sh vp32xx
+        ```
+
+    The resulting coreboot image will be placed in the coreboot directory as
+    `protectli_vp32xx_<version>.rom`.
