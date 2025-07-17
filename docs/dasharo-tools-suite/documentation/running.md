@@ -50,6 +50,38 @@ To access Dasharo Tools Suite:
 
 * the DTS menu will now appear.
 
+### Launching DTS nightly builds
+
+!!! warning
+
+    Nightly builds are for developers and for those who want to use the latest
+    DTS without waiting for release. Hence, nightly builds are not tested and
+    should be launched at your own risk!
+
+The DTS nightly builds are updated automatically every Saturday. The builds use
+the latest commit from the [`meta-dts`
+repository](https://github.com/Dasharo/meta-dts) `develop` branch and the
+[`dts-scripts` repository](https://github.com/Dasharo/dts-scripts) `main`
+branch. The used commits could be checked in [`nightly.ipxe`
+file](http://boot.dasharo.com/dts/nightly.ipxe).
+
+To access Dasharo Tools Suite nightly build, use the following commands in the
+iPXE shell, instead of  the commands described in [the chapter
+above](#launching-dts):
+
+```ipxe
+dhcp
+chain https://boot.dasharo.com/dts/nightly.ipxe
+```
+
+!!! warning
+
+    Because of misconfigured iPXE on some firmware releases, booting over
+    HTTPS is impossible, and the above command will fail. In that case, we
+    recommend downloading the DTS image to USB. If you feel there is no
+    risk of an MITM attack, you can proceed with
+    `http://boot.dasharo.com/dts/nightly.ipxe` at your own risk.
+
 ## Bootable USB stick
 
 This section describes how to boot DTS using a USB stick.
