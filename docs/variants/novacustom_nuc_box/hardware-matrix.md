@@ -12,7 +12,7 @@ Dasharo on the NovaCustom NUC BOX-155H.
 | **CPU**                        | Intel® Core™ Ultra 7 155H (6P + 8E)         |
 | **RAM**                        | Slot 1: W-NM56S516G                              |
 | **SSD**                        | Goodram PX700 1TB                                |
-| **Flash memory**               | Socketed WSON8 SPI (W25Q256JV) |
+| **Flash memory**               | Socketed WSON8 SPI (25Q256JWEQ) |
 | **USB Keyboard**               |  DELL KB216                               |
 | **USB pendrives**              | 1. SanDisk Ultra  Flair USB 3.0 16 GB   |
 | **Display**                    | HDMI 2.1 / DP 2.1 / DP 1.4a (Quad-display capable) |
