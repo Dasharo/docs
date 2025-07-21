@@ -240,3 +240,59 @@
         ../../variants/protectli_vp66xx/hardware-matrix.md) -
         describes the platform's hardware configuration used during the Dasharo
         firmwarevalidation procedure.
+
+=== "VP3210/VP3230"
+    The Vault Pro is a small form network appliance built for use as a firewall
+    / router, virtualization platform, a daily-driven personal computer,
+    and more. The VP3210/VP3230 is based on a 2 x 2.5 G network port
+    design that leverages a low power, but versatile Alder Lake-N SoCs.
+
+    ![](/images/VP3210.png)
+
+    The VP3210/VP3230 can accommodate up to 48 GB DDR5 RAM and 4 TB M.2
+    NVMe SSD storage drive. The built-in 32 GB eMMC module can be used for
+    booting a light-weight OS for example, or for use as optional storage.
+
+    VP3210/VP3230 specification:
+
+    * VP3210: Intel® N100 4 Core / 4 Thread (up to 3.4Ghz)
+    * VP3230: Intel® i3-N305 8 Core / 8 Thread (up to 3.8Ghz)
+    * 2 Intel® 2.5 Gigabit Ethernet NIC ports
+    * 2x M.2 NVMe SSD Slot (one with x4 link and second with x1 link)
+    * 32 GB eMMC module on board
+    * Intel® AES-NI support
+    * Fanless and Silent
+    * 4x 2.5″ SSD connectors and mounts
+    * Included 12V/90W (VP3230) or 12V/60W (VP3210) Power Supply, Serial
+      Console Cable, USB-C Cable, SATA data and power cables for internal SSDs,
+      Quick Start Guide
+
+    > Intel ME (Management Engine) is
+    > [soft-disabled](../../osf-trivia-list/me.md#soft-disabling-me) by default.
+
+    For more information please refer to the references below.
+
+    ## References
+
+    * [Protectli knowledge base](https://kb.protectli.com/)
+    * [Buy VP3210 in Protectli shop](https://eu.protectli.com/product/vp3210/)
+    * [Buy VP3230 in Protectli shop](https://eu.protectli.com/product/vp3230/)
+
+    ## Documentation sections
+
+    * [Releases](../../variants/protectli_vp32xx/releases.md) - groups
+        information about all releases.
+    * [Building manual](./building-manual.md) -
+        describes how to build Dasharo for Protecli VP3210/VP3230.
+    * [Initial deployment](
+        ./initial-deployment.md) -
+        describes initial Dasharo deployment methods (i. e. flashing new
+        firmware) for Protectli VP3210/VP3230.
+    * [Recovery](./recovery.md) - gathers
+        information on how to recover the platform from potential failure.
+    * [Hardware configuration matrix](
+        ../../variants/protectli_vp32xx/hardware-matrix.md) -
+        describes the platform's hardware configuration used during the Dasharo
+        firmware validation procedure.
+    * [Test matrix](./test-matrix.md) - describes
+        validation scope used during Dasharo firmware validation procedure.

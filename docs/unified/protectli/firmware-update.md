@@ -165,3 +165,13 @@ update.
     ```
 
     This command also preserves Dasharo UEFI settings and the boot order.
+
+=== "VP3210/VP3230"
+
+    ## Updating Dasharo
+
+    ```bash
+    flashrom -p internal -w protectli_vp32xx_v<version>.rom --fmap -i RW_SECTION_A
+    ```
+
+    This command also preserves Dasharo UEFI settings and the boot order.
