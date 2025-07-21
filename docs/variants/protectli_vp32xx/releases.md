@@ -78,10 +78,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Intel microcode version ADL N0 0x15](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20240312/intel-ucode/06-be-00)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20240312/license)
 
-[newsletter]: https://newsletter.3mdeb.com/subscription/n2EpSxtqL
-[protectli_vp32xx_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln/v0.9.0/protectli_vp32xx_v0.9.0.rom
-[protectli_vp32xx_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln/v0.9.0/protectli_vp32xx_v0.9.0.rom.sha256
-[protectli_vp32xx_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln/v0.9.0/protectli_vp32xx_v0.9.0.rom.sha256.sig
-[protectli_vp32xx_v0.9.0_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln/v0.9.0/protectli_vp32xx_v0.9.0_dev_signed.rom
-[protectli_vp32xx_v0.9.0_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln/v0.9.0/protectli_vp32xx_v0.9.0_dev_signed.rom.sha256
-[protectli_vp32xx_v0.9.0_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln/v0.9.0/protectli_vp32xx_v0.9.0_dev_signed.rom.sha256.sig
+[protectli_vp32xx_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp32xx/uefi/v0.9.0/protectli_vp32xx_v0.9.0.rom
+[protectli_vp32xx_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp32xx/uefi/v0.9.0/protectli_vp32xx_v0.9.0.rom.sha256
+[protectli_vp32xx_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp32xx/uefi/v0.9.0/protectli_vp32xx_v0.9.0.rom.sha256.sig
+[protectli_vp32xx_v0.9.0_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp32xx/uefi/v0.9.0/protectli_vp32xx_v0.9.0_dev_signed.rom
+[protectli_vp32xx_v0.9.0_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp32xx/uefi/v0.9.0/protectli_vp32xx_v0.9.0_dev_signed.rom.sha256
+[protectli_vp32xx_v0.9.0_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp32xx/uefi/v0.9.0/protectli_vp32xx_v0.9.0_dev_signed.rom.sha256.sig
