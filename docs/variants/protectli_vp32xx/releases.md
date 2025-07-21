@@ -40,6 +40,13 @@ Test results for this release can be found
 - [USB stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
 - [Network stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)
 
+### Known issues
+
+- [M2T4SAT-AS1 M.2 Mini SAS SFF-8087 adapter increases FW boot time by aprox. 20 seconds](https://github.com/Dasharo/dasharo-issues/issues/1286)
+- [ESXI TPM driver fails to load on VP3210](https://github.com/Dasharo/dasharo-issues/issues/1231)
+- [Unexpected error in dmesg on VP3210](https://github.com/Dasharo/dasharo-issues/issues/1187)
+- [STB002.001 encounters unlisted error](https://github.com/Dasharo/dasharo-issues/issues/1013)
+
 ### Binaries
 
 [protectli_vp32xx_v0.9.0.rom][protectli_vp32xx_v0.9.0.rom_file]{.md-button}
