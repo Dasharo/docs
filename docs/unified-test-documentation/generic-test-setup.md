@@ -135,7 +135,8 @@ device already had the OS installed.
         ```
 
     1. Edit the file `/etc/default/grub` by adding
-    `console=tty0 console=ttyS0,115200` in variable `GRUB_CMDLINE_LINUX_DEFAULT`.
+    `console=tty0 console=ttyS0,115200 console=ttyUSB0,115200n8` in variable
+    `GRUB_CMDLINE_LINUX_DEFAULT`.
     1. Update grub
 
         ```bash
