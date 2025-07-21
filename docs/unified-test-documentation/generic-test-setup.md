@@ -135,7 +135,8 @@ device already had the OS installed.
         ```
 
     1. Edit the file `/etc/default/grub` by adding
-    `console=tty0 console=ttyS0,115200` in variable `GRUB_CMDLINE_LINUX_DEFAULT`.
+    `console=tty0 console=ttyS0,115200 console=ttyUSB0,115200n8` in variable
+    `GRUB_CMDLINE_LINUX_DEFAULT`.
     1. Update grub
 
         ```bash
@@ -167,8 +168,8 @@ device already had the OS installed.
     1. Add the following at the end of`/etc/default/grub`:
 
         ```
-        GRUB_CMDLINE_LINUX='console=tty0 console=ttyS0,115200n8'
-        GRUB_TERMINAL='serial'
+        GRUB_CMDLINE_LINUX='rhgb quiet console=tty0 console=ttyS0,115200 console=ttyUSB0,115200'
+        GRUB_TERMINAL='serial gfxterm'
         GRUB_SERIAL_COMMAND='serial --speed=115200 --unit=0 --word=8 --parity=no --stop=1'
         ```
 
@@ -183,6 +184,14 @@ device already had the OS installed.
         ```bash
         sudo dnf install openssh-server
         systemctl enable --now sshd
+        ```
+
+    1. Additionally for Using serial via FTDI USB converter
+
+        ```
+        sudo systemctl enable serial-getty@ttyUSB0.service
+        sudo systemctl start serial-getty@ttyUSB0.service
+        sudo setenforce 0
         ```
 
 #### NVIDIA drivers - Ubuntu
