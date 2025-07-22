@@ -296,3 +296,37 @@
         firmware validation procedure.
     * [Test matrix](./test-matrix.md) - describes
         validation scope used during Dasharo firmware validation procedure.
+
+=== "VP2440"
+
+    VP2440 specification:
+
+    * Intel® Processor N150 Quad Core, 6M Cache, up to 3.4 GHz
+    * 2 Intel® 2.5 Gigabit Ethernet NIC ports
+    * 2 Intel® Ethernet X710 10GbE SFP+ ports
+    * M.2 NVMe SSD Slot
+    * 32 GB eMMC module on board
+    * Fanless and Silent
+    * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
+      SATA data and power cables for internal SSD, Quick Start Guide
+
+    ![](../../images/VP2440.png)
+
+    ## Documentation sections
+
+    * [Releases](../../variants/protectli_vp2440/releases.md) - groups
+        information about all releases.
+    * [Building manual](./building-manual.md) -
+        describes how to build Dasharo for Protectli 2440.
+    * [Initial deployment](
+        ./initial-deployment.md) -
+        describes initial Dasharo deployment methods (i. e. flashing new
+        firmware) for Protectli VP2440.
+    * [Recovery](./recovery.md) - gathers
+        information on how to recover the platform from potential failure.
+    * [Hardware configuration matrix](
+        ../../variants/protectli_vp2440/hardware-matrix.md) -
+        describes the platform's hardware configuration used during the Dasharo
+        firmware validation procedure.
+    * [Test matrix](./test-matrix.md) - describes
+        validation scope used during Dasharo firmware validation procedure.
