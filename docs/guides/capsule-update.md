@@ -76,6 +76,7 @@ Preservation is done as a best effort. However some
     getting this error:
 
     ```
+    [FIRMWARE WARNING] Capsule updates are only supported while Intel ME is in HAP mode!
     CapsuleApp: failed to query capsule capability - Unsupported
     ```
 
