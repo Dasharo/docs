@@ -136,3 +136,16 @@ the provided
 [template](https://github.com/Dasharo/dasharo-issues/issues/new/choose) and in
 case of automatically submitted logs please also include time and date when
 those logs were sent.
+
+## How can I verify DPP credentials logged in DTS?
+
+After providing credentials and pressing "Enter", select the `s` option to enter
+the console. Type the command:
+
+```sh
+cat /etc/cloud-pass
+```
+
+This command will print two lines. The first line will be the email, and the
+second will be the password you provided. Verify the lines to ensure they match
+your credentials.
