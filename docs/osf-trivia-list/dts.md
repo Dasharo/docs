@@ -140,7 +140,7 @@ those logs were sent.
 ## How can I verify DPP credentials logged in DTS?
 
 After providing credentials and pressing "Enter", select the `s` option to enter
-the console. Type the command: 
+the console. Type the command:
 
 ```sh
 cat /etc/cloud-pass
