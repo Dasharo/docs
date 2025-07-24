@@ -7,6 +7,18 @@ Select your Dasharo firmware flavor:
 
     ## Models
 
+    === "NUC BOX"
+        __NovaCustom NUC BOX__ is a compact, high-performance small form factor
+         PC based on Intel® Core™ Ultra (Meteor Lake-H) processors.
+
+        ![](../../images/nuc_box.png){ align=right width=50% }
+
+        <div class="grid cards" markdown>
+
+        - [NUC BOX 155H](https://download.asrock.com/IPC/Download/e-catalog/NUC%20BOX-155H.pdf)
+
+        </div>
+
     === "V54 Series"
         __NovaCustom V54__ is a series of 14 inch laptops based on 14th
         Generation Intel Core Ultra processors (Meteor Lake):
@@ -85,11 +97,11 @@ Select your Dasharo firmware flavor:
 
     ## Firmware
 
-    Each firmware release contains of two parts:
-
-    - [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware,
-    - [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
-      firmware.
+    A complete Dasharo firmware release consists of the
+    [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware, and in the case of
+    laptops, also the
+    [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
+    firmware.
 
     They both interact with each other tightly, so keeping their compatible versions
     in sync is important. Information on compatibility should always be explained
@@ -97,6 +109,7 @@ Select your Dasharo firmware flavor:
 
     <div class="annotate" markdown>
 
+    - [NUC BOX](../../variants/novacustom_nuc_box/releases.md)
     - V54 Series
         * [V540TU](../../variants/novacustom_v540tu/releases.md) (1)
         * [V540TNx](../../variants/novacustom_v540tnx/releases.md) (2)
@@ -167,11 +180,11 @@ Select your Dasharo firmware flavor:
 
     ## Firmware
 
-    Each firmware release contains of two parts:
-
-    - [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware,
-    - [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
-      firmware.
+    Each firmware release contains the
+    [BIOS](https://en.wikipedia.org/wiki/BIOS) firmware. Laptop releases
+    additionally contain the
+    [EC (Embedded Controller)](https://en.wikipedia.org/wiki/Embedded_controller)
+    firmware.
 
     They both interact with each other tightly, so keeping their compatible versions
     in sync is important. Information on compatibility should always be explained
