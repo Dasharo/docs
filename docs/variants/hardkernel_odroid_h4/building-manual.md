@@ -82,21 +82,18 @@ then follow the steps below:
     git submodule update --init --checkout --recursive
     ```
 
-3. Copy vendor image to this repository. IDF and ME regions will be taken from
-   this image when stitching loader
+3. We need vendor image from which IDF and ME regions will be used when
+    stitching loader. You can use official Dasharo release binary if you have
+    access to it or you can download AMI BIOS from
+    <https://dn.odroid.com/ODROID-H4/bios/>. After downloading ZIP make sure to
+    extract needed binary to slimbootloader repository under `image.rom` name:
 
     ```sh
-    cp /path/to/ADLN-H4_B1.08/ADLN-H4_B1.08.bin image.rom
+    unzip /path/to/ADLN-H4_B1.08.zip ADLN-H4_B1.08.bin
+    mv ADLN-H4_B1.08.bin image.rom
     ```
 
-    or
-
-    ```sh
-    cp /path/to/hardkernel_odroid_h4_v0.9.0.rom image.rom
-    ```
-
-    You can skip this step and pass path to this image via `INPUT_IMAGE` variable
-    instead
+    In above commands replace `1.08` with BIOS version you downloaded.
 
 4. Build UEFI Payload and Slim BootLoader
 
