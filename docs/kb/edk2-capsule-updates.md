@@ -283,10 +283,8 @@ Created files:
    even truncate an existing file)
 - `decoded.EmbeddedDriver.1.efi` — embedded driver whose name is lost
 - `decoded.Payload.1.bin` — first payload, similarly without original name
-- `decoded.json` — reconstructed JSON file, although not without troubles (more
-   bugs of `GenerateCapsule`):
-    + `EmbeddedDrivers` is missing
-    + `Dependencies` is set to `None` which won't be parsed correctly
+- `decoded.json` — reconstructed JSON file (some fields can be missing and some
+   others can be added with default values)
 
 Certificates can be omitted for `--decode`.  In this case signatures won't be
 verified but created files should be identical except for corresponding fields
