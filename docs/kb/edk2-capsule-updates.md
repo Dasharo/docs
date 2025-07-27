@@ -674,6 +674,9 @@ coreboot's root directory:
 (The command assumes that signing keys from `BaseTools/Source/Python/Pkcs7Sign/`
 in EDK have been copied to `keys/`.)
 
+Add `-b` flag if the firmware targets a laptop, this will add a DXE for checking
+battery status.
+
 JSON file will be automatically generated based on the contents of coreboot's
 `.config` file which contains all the necessary information when the capsule
 support is enabled (and the script aborts if it's not the case).
