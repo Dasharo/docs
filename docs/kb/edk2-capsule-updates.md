@@ -715,6 +715,18 @@ Signing a capsule (after build):
     additional encryption is employed to achieve a convenient non-interactive
     key creation.
 
+### Extracting standalone GenerateCapsule
+
+To enable operations on capsules without full EDK's sources run:
+
+```bash
+./capsule.sh box
+```
+
+This produces `gepcap` directory with a relevant part of EDK.  The directory
+also includes a shell wrapper `GenerateCapsule` along with the test keys in
+`keys` subdirectory.
+
 ## Alternatives
 
 It's also possible to generate capsules via EDK's build system by configuring it
