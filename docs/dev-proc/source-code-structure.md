@@ -90,7 +90,7 @@ Patch classified as one for sending upstream, but not yet submitted.
 
 Submitted to upstream. Possible value for `where`:
 
-* `CB:ID` - for coreboot gerrit ID, such as `CB:86758`, translating to:
+* `CB:ID` - for coreboot gerrit ID, such as `CB:86750`, translating to:
 [CB:86750](https://review.coreboot.org/c/coreboot/+/86750)
 * for other cases, link to the review system should be provided
 
