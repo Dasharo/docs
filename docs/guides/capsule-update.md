@@ -25,6 +25,7 @@ mentioned, it means that it doesn't support this update method.
 | NovaCustom   | 11th Gen series | v1.6.0                   |
 | NovaCustom   | 12th Gen series | v1.8.0                   |
 | NovaCustom   | 14th Gen series | v1.0.0                   |
+| NovaCustom   | NUC BOX         | v0.9.0                   |
 | Protectli    | Vault VP66xx    | v0.9.3                   |
 
 ## Prerequisites
