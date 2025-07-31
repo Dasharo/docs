@@ -66,7 +66,7 @@ branch. The used commits could be checked in [`nightly.ipxe`
 file](http://boot.dasharo.com/dts/nightly.ipxe).
 
 To access Dasharo Tools Suite nightly build, use the following commands in the
-iPXE shell, instead of  the commands described in [the chapter
+iPXE shell, instead of the commands described in [the chapter
 above](#launching-dts):
 
 ```ipxe
@@ -76,10 +76,10 @@ chain https://boot.dasharo.com/dts/nightly.ipxe
 
 !!! warning
 
-    Because of misconfigured iPXE on some firmware releases, booting over
-    HTTPS is impossible, and the above command will fail. In that case, we
-    recommend downloading the DTS image to USB. If you feel there is no
-    risk of an MITM attack, you can proceed with
+    On some firmware releases, booting over HTTPS is not possible because of
+    misconfigured iPXE, and the above command will fail. In that case, we
+    recommend downloading the DTS image to USB. If you feel there is no risk of
+    an MITM attack, you can proceed with
     `http://boot.dasharo.com/dts/nightly.ipxe` at your own risk.
 
 ## Bootable USB stick
