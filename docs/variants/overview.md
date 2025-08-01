@@ -24,9 +24,11 @@ open-source firmware distribution.
 
     - [Dasharo (coreboot+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/)
         + [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_uefi.md)
-        + [Hardkernel Odroid H4+](../variants/hardkernel_odroid_h4/overview.md)
+        + [Hardkernel Odroid H4+](../variants/hardkernel_odroid_h4/releases_uefi.md)
     - [Dasharo (coreboot+SeaBIOS) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
         + [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_seabios.md)
+    - [Dasharo (Slim Bootloader+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/)
+        + [Hardkernel Odroid H4+](../variants/hardkernel_odroid_h4/releases_slim_bootloader_uefi.md)
 
 ## Laptops
 
