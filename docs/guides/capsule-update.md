@@ -31,8 +31,9 @@ mentioned, it means that it doesn't support this update method.
 ## Prerequisites
 
 * _UEFI Shell_<br>
-If your Dasharo firmware does not include the UEFI Shell as a boot option, you will
-need an external boot device, such as a USB drive containing the UEFI Shell.
+  If your Dasharo firmware does not include the UEFI Shell as a boot option, you
+  will need an external boot device, such as a USB drive containing the UEFI
+  Shell.
 * _Storage device available from UEFI Shell_<br>
   Not all file-systems are available to UEFI, so not all storage devices and
   partition on them will be usable for the purpose of capsule updates.  An
@@ -48,23 +49,25 @@ need an external boot device, such as a USB drive containing the UEFI Shell.
 
 ## What's preserved by an update
 
-| Type         | Notes                                      |
-| ---          | ---                                        |
-| SMMSTORE     | holds UEFI Variables such as [settings](../dasharo-menu-docs/dasharo-system-features.md) or [boot order](../dasharo-menu-docs/boot-maintenance-mgr.md)                  |
-| ROMHOLE      | only on MSI                                |
-| SMBIOS       | unique data like serial number or UUID     |
-| boot logo    | [set by the user](logo-customization.md)   |
-| GbE          | unique Gigabit Ethernet configuration (MAC address)  |
+| Type         | Notes                                                   |
+| ----         | -----                                                   |
+| SMMSTORE     | holds UEFI Variables such as [settings] or [boot order] |
+| ROMHOLE      | only on MSI                                             |
+| SMBIOS       | unique data like serial number or UUID                  |
+| boot logo    | [set by the user](logo-customization.md)                |
+| GbE          | unique Gigabit Ethernet configuration (MAC address)     |
 
-Preservation is done as a best effort. However some
- firmware changes are expected (e.g., current custom
- logo can be too large for the new firmware), thus a
- failure to move data in some cases won’t necessarily
- abort an update.
+Preservation is done as a best effort. However some firmware changes are
+expected (e.g., current custom logo can be too large for the new firmware),
+thus a failure to move data in some cases won’t necessarily abort an update.
+
+[settings]: ../dasharo-menu-docs/dasharo-system-features.md
+[boot order]: ../dasharo-menu-docs/boot-maintenance-mgr.md
 
 ## How to use UEFI Update Capsules
 
 !!! question
+
     This page describes the manual steps for capsule update. fwupd automates
     all of the steps described here, so you should only need to follow this
     guide if fwupd is unsupported for your device.
@@ -123,17 +126,18 @@ Preservation is done as a best effort. However some
 8. An ongoing firmware update looks like this:
    ![Ongoing capsule update](../images/uefi-capsule-update.png)
 
-!!! warning
+    !!! warning
 
-    Don't reboot or power off the device until the process is completed!
+        Don't reboot or power off the device until the process is completed!
 
 After either a successful or failed update, the machine should reboot
- automatically. After that, if everything succeeded, you should have an
- updated firmware with data migrated from the previous version.
+automatically.  After that, if everything succeeded, you should have an updated
+firmware with data migrated from the previous version.
 
 !!! note
 
-      Since the settings were preserved, remember to re-enable Intel Management Engine after the update.
+    Since the settings were preserved, remember to re-enable Intel Management
+    Engine after the update.
 
 [me-menu]: ../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options
 [bmm]: ../dasharo-menu-docs/overview.md#boot-manager-menu
