@@ -123,8 +123,12 @@ thus a failure to move data in some cases won’t necessarily abort an update.
    firmware.cap` (substitute `firmware.cap` with an actual file name):
    ![Initiating a capsule update](../images/uefi-shell-capsule-app-posting.png)
 
-8. An ongoing firmware update looks like this:
+8. An ongoing firmware update with graphical progress bar looks like this:
    ![Ongoing capsule update](../images/uefi-capsule-update.png)
+
+    !!! note
+
+        Protectli devices have a textual progress bar.
 
     !!! warning
 
