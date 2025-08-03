@@ -20,6 +20,7 @@ mentioned, it means that it doesn't support this update method.
 
 | Manufacturer |     Device      | Starting with FW version |
 | ------------ | --------------- | ------------------------ |
+| Hardkernel   | Odroid H4+      | v0.9.1                   |
 | MSI          | Z690-A PRO      | v1.1.4                   |
 | MSI          | Z790-P PRO      | v0.9.2                   |
 | NovaCustom   | 11th Gen series | v1.6.0                   |
