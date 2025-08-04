@@ -10,7 +10,7 @@ firmware:
 ## Key Features
 
 - **Seamless Deployment**: Start your journey with Dasharo effortlessly. [Learn
-  how
+  how 
   →](dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
 - **Clean & Simple Code**: Our code is readable and maintainable, designed with
   developers in mind. [Explore our GitHub →](https://github.com/dasharo)
