@@ -10,6 +10,7 @@
 | 12th Gen Intel(R) Core(TM) i7-12700K | v0.9.0 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i7-12700K | v0.9.1 | Dasharo HCL Report |
 | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.0 | Dasharo HCL Report |
+| 13th Gen Intel(R) Core(TM) i7-13700K | v0.9.1 | Dasharo HCL Report |
 | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.1 | Dasharo HCL Report |
 | 13th Gen Intel(R) Core(TM) i5-13700K | v0.9.1 | Dasharo HCL Report |
 | 13th Gen Intel(R) Core(TM) i9-13900K | v0.9.0 | Dasharo HCL Report |
