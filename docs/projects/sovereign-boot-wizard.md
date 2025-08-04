@@ -164,11 +164,6 @@ documentation.
     + wizard can be manually invoked from the UEFI Secure Boot Configuration menu
     + disabling the wizard causes to reset the UEFI Secure Boot keys to defaults
 
-#### Binaries
-
-[qemu_q35.rom](https://cloud.3mdeb.com/index.php/s/5ttD8Fd5TjWcqfa/download){.md-button}
-[sha256](https://cloud.3mdeb.com/index.php/s/7x3HpsCBJFgmbQM/download){.md-button}
-
 #### SBOM
 
 * [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc1](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc1)
