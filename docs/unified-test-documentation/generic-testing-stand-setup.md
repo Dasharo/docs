@@ -173,8 +173,8 @@ clips to grab pins of soldered-in power and reset buttons.
 
     | RTE       | DUT                           |
     |:---------:|:-----------------------------:|
-    | J11 pin 5 | PWR_ON#                       |
-    | J11 pin 6 | RST#                          |
+    | J11 pin 6 | PWR_BTN#                      |
+    | J11 pin 5 | RST#                          |
     | J15 pin 1 | GND                           |
 
 Reference schematic:
