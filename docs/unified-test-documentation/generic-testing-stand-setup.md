@@ -16,15 +16,16 @@ recovery documentation, for example:
 * [Supermicro X11 recovery](../variants/supermicro_x11_lga1151_series/recovery.md)
 * [PC engines platforms recovery](../variants/pc_engines/recovery.md)
 
-**Note** that this list is subject to change and extension. You can find all of
-our supported platforms and their respective sections on the
-[Supported hardware](../variants/overview.md) page.
+!!! Note
+
+    This list is subject to change and extension. You can find all of
+    our supported platforms and their respective sections on the
+    [Supported hardware](../variants/overview.md) page.
 
 ## Detailed description of the process
 
-If you are dealing with a new platform, you might want to first dump logs
-from it for future reference. We suggest using the dedicated functionality
-of
+If you are dealing with a new platform, you might want to first dump logs from
+it for future reference. We suggest using the dedicated functionality of
 [DTS](../dasharo-tools-suite/overview.md).
 
 ### Compiling a list of peripherals
@@ -35,15 +36,17 @@ stand, and then what equipment we need to be able to do it. When we put the
 device in a rack, we want to have remote access to it. Mainly used devices,
 depending on the functionalities needed:
 
+!!! Note
+
+    This documentation is based on RTE v1.1, which introduced
+    [significant changes](../transparent-validation/rte/revision-history.md)
+    over previous revisions. Using an earlier revision is not recommended, and
+    may be problematic if not impossible with some platforms (e.g, **if their
+    flash chip requires 1.8V VCC!**)
+
 * [Prepared RTE](../transparent-validation/rte/v1.1.0/quick-start-guide.md) -
   if we need low voltage control, switching on or off the platform, serial
   connection and external flashing.
-  > NOTE: this documentation is based on
-  RTE v1.1, which introduced
-  [significant changes](../transparent-validation/rte/revision-history.md) over
-  previous revisions. Using an earlier revision is not recommended, and may be
-  problematic if not impossible with some platforms (e.g, **if their flash chip
-  requires 1.8V VCC!**)
     - SOIC-8 Pomona clip (if applicable, i.e. if there are no SPI flashing
       headers)
     - 6x female-female wire cables
@@ -53,18 +56,20 @@ depending on the functionalities needed:
 
 Once we've collected everything, we can move on to setting up the equipment.
 
-Remember about two important rules while making connections and placing stand
-in the rack:
+!!! Remember
 
-> **Use ESD Strap**: When assembling and connecting equipment in the lab, it is
-  essential to use ESD straps. These straps help to prevent electrostatic
-  discharge and protect sensitive electronic components from damage. Make sure you
-  wear a strap every time you make a connection, and if someone is helping you,
-  they have to also wear an ESD strap.
-> **Cut off the power supply**: Before making any connections and ensure that the
-  platform, RTE and any other components are disconnected from power. This
-  precautionary measure reduces the risk of electrical accidents and protects both
-  the equipment and you.
+    Two important rules while making connections and placing stand
+    in the rack:
+
+    * **Use ESD Strap**: When assembling and connecting equipment in the lab,
+      it is essential to use ESD straps. These straps help to prevent
+      electrostatic discharge and protect sensitive electronic components from
+      damage. Make sure you wear a strap every time you make a connection, and
+      if someone is helping you, they have to also wear an ESD strap.
+    * **Cut off the power supply**: Before making any connections and ensure
+      that the platform, RTE and any other components are disconnected from
+      power. This precautionary measure reduces the risk of electrical
+      accidents and protects both the equipment and you.
 
 ### RTE setup
 
@@ -111,11 +116,12 @@ for setting up a Pomona clip connection:
     | MISO       | pin 2 (MISO) |
     | MOSI       | pin 8 (MOSI) |
 
-    > NOTE: In earlier RTE revisions, the VCC pin of the SPI header was not
-      connected. In such case, you need to use a different 3.3V pin on the RTE
-      instead.
-
     ![](../images/pomona_clip_with_rte.jpg)
+
+!!! Note
+
+    In earlier RTE revisions, the VCC pin of the SPI header was not connected.
+    In such case, you need to use a different 3.3V pin on the RTE instead.
 
 1. Open the platform cover and locate the **SPI flash chip**.
 
@@ -144,9 +150,10 @@ wires:
 | MI**SO**   | MI**SO**     |
 | MO**SI**   | MO**SI**     |
 
-> NOTE: In earlier RTE revisions, the VCC pin of the SPI header was not
-  connected. In such case, you need to use a different 3.3V pin on the RTE
-  instead.
+!!! Note
+
+    In earlier RTE revisions, the VCC pin of the SPI header was not connected.
+    In such case, you need to use a different 3.3V pin on the RTE instead.
 
 ##### Remaining pins
 
@@ -173,9 +180,11 @@ clips to grab pins of soldered-in power and reset buttons.
 Reference schematic:
 [RTE v1.1.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.1.0/rte.pdf)
 
-> NOTE: In RTE v1.0, pins 8 and 9 are used for RST and PWR respectively.
-  Reference schematic:
-  [RTE v1.0.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.0.0/rte.pdf)
+!!! Note
+
+    In RTE v1.0, pins 8 and 9 are used for RST and PWR respectively.
+    Reference schematic:
+    [RTE v1.0.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.0.0/rte.pdf)
 
 #### DC voltage supply control
 
