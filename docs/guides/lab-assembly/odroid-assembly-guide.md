@@ -13,9 +13,23 @@ are needed to create testing stands for Odroid H4.
 
 * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 * RTE power supply 5V 2A Micro-USB
-* 10x standard female-female connection wire 2.54 mm raster
+* 11x standard female-female connection wire 2.54 mm raster
 * Pomona 8-pin SOIC clip
 * 2x RJ45 cable: 1 for RTE and 1 for the platform
+* NVMe disk
+* eMMC module for ODROID
+
+For netcard setup additionally:
+
+* 1x female 2.54 mm raster connection wire with a probe hook
+* 2x RJ45 cable: short patchcords for the netcard ports
+* SATA SSD 2.5'' instead of NVMe disk
+* SSD disk adapter to SATA+power connector
+
+> If you have a proper SATA cable and power cable for the dedicated connectors
+> on ODROID, use them instead.
+
+  ![SATA_power_adapter](images/sata_power_adapter.jpg)
 
 ### External flashing enabling
 
@@ -29,7 +43,7 @@ to the flash chip on the bottom of your platform:
 The method of setting and using serial connection is described in the
 [Serial connection guide](../../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 In this case, you will need to enable UART port and connect it to the pins 6,
-8 and 10 of Odroid's Peripheral Expansion Header using 2.54 mm female-female
+8 and 10 of ODROID's Peripheral Expansion Header using 2.54 mm female-female
 wires.
 
 | RTE J18             | Odroid H4 EXPANSION HEADER             |
@@ -39,6 +53,58 @@ wires.
 | J18 pin 3 (GND)     | pin 6  GND               |
 
 ![](../../images/odroid_exthead.png)
+
+### Netcard specific setup
+
+When assembling a netcard in the M.2 NVMe slot, ensure the standoffs are
+mounted first before mounting the netcard into ODROID. Then use a screw to
+secure the netcard connection:
+
+  ![ODROID netcard](images/odroid_netcard.jpg)
+
+After assembling the netcard, connect 2x RJ45 short patchcords to ports 1-2
+and 3-4.  The automated validatio nwill use that connection to verify that
+Ethernet ports are functional and meet performance criteria.
+
+  ![ODROID netcard patchcords](images/odroid_netcard_rj45.jpg)
+
+When a netcard is present in the M.2 NVMe slot, it is not possible to have an
+NVMe disk anymore. Thus one needs to connect an SATA disk. ODROID H4+ and H4
+Ultra have 4 SATA slots, which can be used as an alternative storage. Connect
+the SATA cable to one of the SATA connectors. Connect the black-red wire pair
+for SATA power to the pins 1 and 2 of ODROID's Peripheral Expansion Header.
+note that the red-black wire pair has to be isolated at the end, because the
+exposes metal surfaces on the connector may touch the neighboring pins of the
+ODROID's Peripheral Expansion Header.
+
+> If you have a proper SATA cable and power cable for the dedicated connectors
+> on ODROID, use them instead.
+
+  ![SATA_power_isolation](images/sata_power_isolation.jpg)
+
+| SATA power cable | Odroid H4 EXPANSION HEADER |
+|:-----------------|:---------------------------|
+| black            | pin 1 GND                  |
+| read             | pin 2 +5V_RUN_H            |
+
+### Power LED connection
+
+The power LED indication is used often in the validation suites to check the
+power state of the platform. Connect RTE J10 pin 1 with the pins 4 of ODROID's
+Peripheral Expansion Header using 2.54 mm female-female wire. It allows the
+RTE to read the power LED state.
+
+| RTE J10   | Odroid H4 EXPANSION HEADER |
+|:----------|:---------------------------|
+| J18 pin 1 | pin 4 +3.3V_RUN_H          |
+
+For netcard setup use the wire with probe hook, because the SATA power cable
+has a thick connector, which prevents standard 2.54mm wire to be connected:
+
+> If you have a proper SATA cable and power cable for the dedicated connectors
+> on ODROID, use regular 2.54mm wire instead.
+
+  ![ODROID LED hook](images/odroid_power_led_hook.jpg)
 
 ## Theory of operation
 
@@ -138,3 +204,16 @@ the below-described steps:
 
 Since some issues with USB controllers may only happen on selected USB ports,
 it's important to plug in USB devices to all 4 USB ports of the board.
+
+### NVMe disk
+
+Connect NVMe disk to the bottom M.2 slot for SSD. The disk will serve as main
+storage for operating systems.
+
+### eMMC module
+
+Plug ODROID eMMC module to the eMMC connector on board. eMMC is optional
+storage for operating systems but may be used in automated testing to validate
+eMMC functionality.
+
+  ![ODROID eMMC](images/odroid_emmc.jpg)
