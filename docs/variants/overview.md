@@ -73,6 +73,10 @@ open-source firmware distribution.
 
 ## Servers
 
+* Following servers are supported under **Dasharo Pro Package**:
+
+    - [Gigabyte MZ33-AR1](gigabyte_mz33-ar1/overview.md)
+
 * Following servers are supported under **Dasharo Community Support**:
 
     - [Supermicro X11 LGA1151 Series](supermicro_x11_lga1151_series/overview.md)
