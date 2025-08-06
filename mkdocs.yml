@@ -410,6 +410,7 @@ nav:
       - 'Hardkernel ODROID H4':
           - 'Overview': variants/hardkernel_odroid_h4/overview.md
           - 'Releases': variants/hardkernel_odroid_h4/releases.md
+          - 'Slim Bootloader releases': variants/hardkernel_odroid_h4/releases_sbl.md
           - 'Building manual': variants/hardkernel_odroid_h4/building-manual.md
           - 'Initial deployment': variants/hardkernel_odroid_h4/initial-deployment.md
           - 'Firmware update': variants/hardkernel_odroid_h4/firmware-update.md
