@@ -28,11 +28,20 @@ your own backup should be the last resort.
 
 ## Flashing Dasharo
 
-To flash Dasharo on the platform, execute the following command - replace `[path]`
-with the path to the Dasharo image you want to flash, e.g. `hardkernel_odroid_h4_v0.9.0.rom`.
+To flash Dasharo on the platform, execute the following command - replace
+`[path]` with the path to the Dasharo image you want to flash, e.g.
+`hardkernel_odroid_h4_v0.9.0.rom`.
 
 ```bash
 sudo flashrom -p internal -w [path] --ifd -i bios
+```
+
+For Slim Bootloader flavor the flash descriptor has to be updated as well to
+match Slim Bootloader requirements for Top Swap size:
+
+```bash
+sudo flashrom -p internal --ifd -i bios -i fd \
+    -w hardkernel_odroid_h4_v0.9.0_slim_bootloader_uefi.rom
 ```
 
 After successful operation reboot the platform.
