@@ -13,7 +13,7 @@ the initial deployment, even when no OS is currently installed.
   repository pages now collects all versions of `DTS` image on `Releases` tab.
   To verify binary integrity with hash and signature please go there, grab
   latest release and follow the instructions in [Dasharo release signature
-  verification](../guides/signature-verification.md) using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-1.2.x-signing-key-pub.asc)
+  verification](../guides/signature-verification.md) using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/8fbbaa4461c75c932a1bbc905a8692518331b415/dasharo/dasharo_tools_suite/dasharo-tools-suite-open-source-software-release-2.6.x-signing-key-pub.asc)
 
 * [Building](documentation/building.md) - describes how to build DTS.
 * [Running](documentation/running.md) - describes how to run DTS.
