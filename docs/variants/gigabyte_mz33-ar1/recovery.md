@@ -59,7 +59,7 @@ vector.
         echo 1 > /sys/class/gpio/gpio404/value
         ```
 
-        > Starting with RTE v0.8.x the GPIOS are 517, 518, 516.
+        > Starting with RTE distro v0.8.x the GPIOS are 517, 518, 516.
 
     7. Wait at least 2 seconds.
     8. Disconnect the power supply from the platform.
@@ -82,9 +82,12 @@ vector.
         > but write often fail. When PSU is off, the voltage on SPI chip is
         > 2.5V-2.6V only from RTE. Sometimes it happens to go smoothly, but most
         > of the time not. Using CH341A is more reliable, but leaves VCC always
-        > connected to the board, which tends to put the baord in a limbo state.
-        > Recovering from such limbo requires diconencting all power sources
-        > from the board (both PSU and CH341A).
+        > connected to the board, which tends to put the board in a limbo state.
+        > Recovering from such limbo requires disconnecting all power sources
+        > from the board (both PSU and CH341A). However, with
+        > [OSFV cli](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli)
+        > the writes are somehow reliable, so it is recommended to use the
+        > utility.
 
     12. Change back the state of the SPI by using the following commands:
 
@@ -94,18 +97,19 @@ vector.
         echo 0 > /sys/class/gpio/gpio406/value
         ```
 
-        > Starting with RTE v0.8.x the GPIOS are 516, 517, 518.
+        > Starting with RTE distro v0.8.x the GPIOS are 516, 517, 518.
 
     13. Turn on the platform by connecting the power supply.
 
-    The first boot of the platform after proceeding with the above procedure can
-    take much longer than normal.
+    The AMD board take longer to boot due to memory training happening on PSP
+    side. Thus the first signs of life from open-source firmware may appear
+    even after a couple of minutes (depends on amount of populated RAM).
 
 === "CH341A"
 
     ### Prerequisites
 
-    * [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
+    * CH341a USB to SPI programmer
     * 6x female-female wire cables
     * pomona SOIC8 clip
 
@@ -118,20 +122,24 @@ vector.
 
     To flash firmware follow the steps described below:
 
-    1. Disconnect the power supply from the platform.
-    2. Wait at least 2 seconds.
-    3. Check if the flash chip is connected properly
+    3. Disconnect the power supply from the platform.
+    4. Wait at least 2 seconds.
+    5. Check if the flash chip is connected properly
 
         ```bash
         flashrom -p ch341a_spi
         ```
 
-    4.  Flash the platform by using the following command:
+    6.  Flash the platform by using the following command:
 
         ```bash
         flashrom -p ch341a_spi -w [path_to_binary] \
             --layout layout_file -i bios -N
         ```
 
-    5. Take off the pomona clip from the chip.
-    6. Turn on the platform by connecting the power supply.
+    7. Take off the pomona clip from the chip.
+    8. Turn on the platform by connecting the power supply.
+
+    The AMD board take longer to boot due to memory training happening on PSP
+    side. Thus the first signs of life from open-source firmware may appear
+    even after a couple of minutes (depends on amount of populated RAM).
