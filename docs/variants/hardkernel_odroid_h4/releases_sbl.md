@@ -69,11 +69,11 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/cbfff4d0/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
 - [Intel Firmware Support Package version IoT ADL-N IPU25.3 (6114_00)](https://github.com/intel/FSP/commits/15848ee4934acbd94069454f369e9869bb0f1295/AlderLakeFspBinPkg/IoT/AlderLakeN)
     + [License](https://github.com/intel/FSP/blob/15848ee4934acbd94069454f369e9869bb0f1295/FSP_License.pdf)
-- [Intel microcode version ADL-N 0x1d 06/12/2024](https://github.com/slimbootloader/firmwareblob/tree/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/m_19_b06e0_0000001d.mcb)
-    + [License](https://github.com/intel/slimbootloader/firmwareblob/blob/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/IntelMicrocodeLicense.txt)
-- [Intel microcode version ADL-S 0x3a 12/12/2024](https://github.com/slimbootloader/firmwareblob/tree/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/m_07_90672_0000003a.mcb)
+- [Intel microcode version ADL-N 0x1d 06/12/2024](https://github.com/slimbootloader/firmwareblob/tree/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/m_19_b06e0_0000001d.pdb)
     + [License](https://github.com/slimbootloader/firmwareblob/blob/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/IntelMicrocodeLicense.txt)
-- [Intel microcode version ADL-P 0x434 22/02/2024](https://github.com/slimbootloader/firmwareblob/tree/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/m_80_906a3_00000434.mcb)
+- [Intel microcode version ADL-S 0x3a 12/12/2024](https://github.com/slimbootloader/firmwareblob/tree/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/m_07_90672_0000003a.pdb)
+    + [License](https://github.com/slimbootloader/firmwareblob/blob/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/IntelMicrocodeLicense.txt)
+- [Intel microcode version ADL-P 0x434 22/02/2024](https://github.com/slimbootloader/firmwareblob/tree/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/m_80_906a3_00000434.pdb)
     + [License](https://github.com/slimbootloader/firmwareblob/blob/58900f79bf77d5032ce85cf4196b640123e316d8/Microcode/AlderLake/IntelMicrocodeLicense.txt)
 
 [hardkernel_odroid_h4_v0.9.0_slim_bootloader_uefi.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/slimbootloader/uefi/v0.9.0/hardkernel_odroid_h4_v0.9.0_slim_bootloader_uefi.rom.sha256
