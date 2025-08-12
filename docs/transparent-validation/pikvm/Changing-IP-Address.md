@@ -1,4 +1,4 @@
-# Changing IP Adresss on PiKVM
+# Changing IP Addresss on PiKVM
 
 Connect to PiKVM via Serial Connection or SSH.
 
