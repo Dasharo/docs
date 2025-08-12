@@ -1,4 +1,4 @@
-# Changing MAC Adresss on PiKVM
+# Changing MAC Addresss on PiKVM
 
 Connect to PiKVM via Serial Connection or SSH.
 
