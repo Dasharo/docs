@@ -13,7 +13,7 @@ For details about our release process please read
 
 </center>
 
-## v0.9.0 - 2025-08-05
+## v0.9.0 - 2025-08-12
 
 ### Added
 
@@ -32,6 +32,8 @@ For details about our release process please read
 ### Known issues
 
 - [Universal Payload hangs when SMM and SPI variable support is enabled](https://github.com/Dasharo/dasharo-issues/issues/1485)
+- [Dasharo (Slim Bootloader+UEFI) - Can't shutdown via power button in BIOS](https://github.com/Dasharo/dasharo-issues/issues/1513)
+- [Dasharo (Slim Bootloader + UEFI) freezes when trying to read flash](https://github.com/Dasharo/dasharo-issues/issues/1494)
 
 ### Binaries
 
@@ -41,14 +43,16 @@ For details about our release process please read
 [sha256][hardkernel_odroid_h4_v0.9.0_slim_bootloader_uefi_dev_signed.rom_hash]{.md-button}
 [sha256.sig][hardkernel_odroid_h4_v0.9.0_slim_bootloader_uefi_dev_signed.rom_sig]{.md-button}
 
-This is a Dasharo Pro Package Release. To access the pre-built binaries,
-you need to [subscribe to the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You can do this by purchasing a Dasharo Pro Package product from our [shop](TBD).
+This is a Dasharo Pro Package Release. To access the pre-built binaries, you
+need to [subscribe to the Dasharo Pro Package
+subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our
+[shop](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-slim-bootloaderuefi-pro-package-for-network-appliance/).
 As a subscriber, you will receive access to all firmware updates for the
-duration of your subscription via the Dasharo Pro Package newsletter, and
-gain entry to the Dasharo Premier Support invite-only live chat on the Matrix
-network, enabling direct engagement with the Dasharo Team and fellow subscribers
-for personalized, priority assistance.
+duration of your subscription via the Dasharo Pro Package newsletter, and gain
+entry to the Dasharo Premier Support invite-only live chat on the Matrix
+network, enabling direct engagement with the Dasharo Team and fellow
+subscribers for personalized, priority assistance.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
