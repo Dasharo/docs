@@ -181,16 +181,16 @@ wires:
     | J11 pin 5 | RST#                          |
     | J15 pin 1 | GND                           |
 
-Reference schematic:
-[RTE v1.1.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.1.0/rte.pdf)
-
-!!! Note
-
-    In RTE v1.0.0 or older, pins 8 and 9 are used for RST and PWR respectively.
     Reference schematic:
-    [RTE v1.0.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.0.0/rte.pdf)
-    In extreme cases you might need to use clips to grab pins of soldered-in power
-    and reset buttons.
+    [RTE v1.1.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.1.0/rte.pdf)
+
+    !!! Note
+
+        In RTE v1.0.0 or older, pins 8 and 9 are used for RST and PWR respectively.
+        Reference schematic:
+        [RTE v1.0.0 PDF](https://github.com/3mdeb/rte-schematics/blob/rte_v1.0.0/rte.pdf)
+        In extreme cases you might need to use clips to grab pins of soldered-in power
+        and reset buttons.
 
 3. Locate Power LED pin. A motherboard will usually have a dedicated set of
    headers where the power LED is connected, typically on the same header as
