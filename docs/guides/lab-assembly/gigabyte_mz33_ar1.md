@@ -2,9 +2,10 @@
 
 ## Introduction
 
-This document describes platform-specific details for assembling an Gigabyte
-MZ33-AR1 testing stand. Use this document as reference while going through
-[Generic Testing Stand
+This document describes platform-specific details for assembling an [Gigabyte
+MZ33-AR1](https://www.gigabyte.com/Enterprise/Server-Motherboard/MZ33-AR1-rev-3x)
+testing stand. Use this document as reference while going through [Generic
+Testing Stand
 Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 
 ## Prerequisites
@@ -56,7 +57,7 @@ table:
     ![](../../images/pomona_clip.jpg)
     ![](../../images/pomona_clip_with_cables.jpg)
 
-2. Connect the Pomona clip to the [SPI header](../transparent-validation/rte/v1.1.0/specification.md)
+2. Connect the Pomona clip to the [SPI header](../../transparent-validation/rte/v1.1.0/specification.md)
    on RTE.
 
     | SPI header | Pomona clip  |
@@ -156,9 +157,11 @@ should be powered up: both Sonoff and the power supply must be turned on.
 
 ### External flashing
 
-The external flashing procedure should be performed based on the scripts
-implemented on the RTE platform. To perform the flashing operation reproduce,
-the refer to the [recovery section](../../variants/gigabyte_mz33-ar1/recovery.md)
+The external flashing procedure should be performed using [OSFV
+cli](https://github.com/Dasharo/osfv-scripts).
+
+For external flashing hardware connection please refer to the [board's
+recovery section (setup with RTE)](../../variants/gigabyte_mz33-ar1/recovery.md).
 
 ### Ethernet
 
