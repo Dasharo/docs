@@ -38,13 +38,7 @@ then follow the steps below:
     git checkout gigabyte_mz33_ar1_v0.1.0
     ```
 
-2. Checkout submodules:
-
-    ```bash
-    git submodule update --init --checkout
-    ```
-
-3. Build the firmware:
+2. Build the firmware:
 
     ```bash
     ./build.sh mz33_ar1
