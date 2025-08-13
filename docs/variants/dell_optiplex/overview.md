@@ -40,8 +40,11 @@ grade C216 chipset.
 | Depth           | 41.70 cm                    | 41.00 cm                    | 31.20 cm                | 24.00 cm                       |
 | Weight          | 9.40 kg                     | 7.90 kg                     | 6.00 kg                 | 3.30 kg                        |
 
-Note: There also exists the OptiPlex Tower 7010 which has nothing to do with this
-IvyBridge series from a firmware point of view.
+!!! note
+
+    There also exists the OptiPlex Tower|SFF|Micro 7010 which is based on Intel
+    Raptor Lake and has nothing to do with this IvyBridge series from a firmware
+    point of view.
 
 If you wish to build, perform initial deployment, update or recover your setup,
 please refer to [documentation](#documentation) sections.
