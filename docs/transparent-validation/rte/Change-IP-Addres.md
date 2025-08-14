@@ -47,8 +47,9 @@
 
    Save the file and exit the editor.
 
-   > To return to a DHCP connection, remove the `Address` variable and set the
-   > `DHCP` property to `yes`. Alternatively, delete the entire configuration file.
+   > To return to a DHCP connection, remove the `Address` and `Gateway` variables,
+   > set the `DHCP` property to `yes`.
+   > Alternatively, delete the entire configuration file.
 
 1. Restart the systemd-networkd service:
 
