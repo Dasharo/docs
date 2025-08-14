@@ -137,7 +137,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [edk2 based on 7f90b9cd revision 19bf14b4](https://github.com/Dasharo/edk2/tree/19bf14b4)
 - [iPXE based on 6ba671ac revision 6ba671ac](https://github.com/ipxe/ipxe/tree/6ba671ac)
 
-[newsletter]: https://3mdeb.com/subscribe/protectli_uefi.html
 [protectli_vp4670_v1.1.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom
 [protectli_vp4670_v1.1.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom.sha256
 [protectli_vp4670_v1.1.0.rom_sig]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/v1.1.0/protectli_vp4670_v1.1.0.rom.sha256.sig
