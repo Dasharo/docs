@@ -1,6 +1,15 @@
 # Changing MAC Addresss on RTE
 
-Connect to RTE via Serial Connection.
+Connect with RTE via serial connection. While using a
+`minicom` there is a need to use the USB-UART converter.
+
+ Open the serial connection by executing the following command:
+    
+  ```bash
+  sudo minicom -D /dev/ttyUSB0 -b 115200 
+  ```
+
+Reboot RTE.
 
 While booting, wait for the message: `Hit any key to stop autoboot:`.
 
