@@ -42,7 +42,7 @@
    [Network]
    DHCP=no
    Address=192.168.X.X/24
-   Gateway=192.168.10.1
+   Gateway=192.168.X.X
    ```
 
    Save the file and exit the editor.
