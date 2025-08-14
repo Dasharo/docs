@@ -2,10 +2,12 @@
 
 Connect to RTE via Serial Connection.
 
-While booting rte wait for `Hit any key to stop autoboot:` popup.
-Hit any key to stop loading U-Boot.
+While booting, wait for the message: `Hit any key to stop autoboot:`.
 
-Overwrite the variable `ethaddres` replacing `XX:XX:XX:XX:XX:XX` with desired MAC Address:
+Press any key to stop loading U-Boot.
+
+Set the new MAC address, by Overwriting the variable `ethaddres` 
+replacing `XX:XX:XX:XX:XX:XX` with desired MAC Address:
 
 ```bash
 setenv ethaddr XX:XX:XX:XX:XX:XX
@@ -22,11 +24,11 @@ Restart the platform:
 run bootcmd
 ```
 
-After RTE Boots MAC Adress can be veifed my running:
+After RTE boots, verify the MAC address:
 
 ```bash
 ip link show eth0
 ```
 
-> Note: If Serial ID change, you will lost your custom MAC.
+> Note: If the Serial ID changes, your custom MAC will be lost!
 
