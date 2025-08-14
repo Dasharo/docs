@@ -1,14 +1,13 @@
-# Changing MAC Addresss on RTE
-
+# Changing MAC Address on RTE
 
 1. Connect with RTE via serial connection. While using a `minicom`
-  
+
    there is a need to use the USB-UART converter.
 
    Open the serial connection by executing the following command:
-    
+
     ```bash
-    sudo minicom -D /dev/ttyUSB0 -b 115200 
+    sudo minicom -D /dev/ttyUSB0 -b 115200
     ```
 
 1. Reboot RTE.
@@ -18,7 +17,7 @@
    Press any key to stop loading U-Boot.
 
 1. Set the new MAC address, by Overwriting the variable `ethaddres`
-    
+
    replacing `XX:XX:XX:XX:XX:XX` with desired MAC Address:
 
    ```bash
@@ -44,4 +43,3 @@
    ```
 
    > Note: If the Serial ID changes, your custom MAC will be lost!
-

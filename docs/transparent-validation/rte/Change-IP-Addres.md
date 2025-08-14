@@ -1,12 +1,12 @@
 # Changing RTE IP Address to static
 
 1. Connect with RTE via ssh or serial connection.
-   
+
    While using a `minicom` there is a need to use the USB-UART converter.
    The serial connection can be opened by executing the following command:
-    
+
    ```bash
-   sudo minicom -D /dev/ttyUSB0 -b 115200 
+   sudo minicom -D /dev/ttyUSB0 -b 115200
    ```
 
 1. Check the current IP address of the target network interface:
@@ -62,5 +62,6 @@
    ```bash
    ip a
    ```
-   > Note: If `DHCP` parameter is not set to `no` or the MAC address has a reserved IP,
-   > the changes may not be applied.
+
+   > Note: If `DHCP` parameter is not set to `no` or the MAC address has
+   > a reserved IP, the changes may not be applied.
