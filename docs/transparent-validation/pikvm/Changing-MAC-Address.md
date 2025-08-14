@@ -10,7 +10,7 @@
     sudo minicom -D /dev/ttyUSB0 -b 115200 
     ```
 
-1. Check the current MAC address of the interface you want to modify:
+1. Check the current MAC address of the network interface:
 
    ```bash
    ip a
@@ -29,8 +29,8 @@
    ```bash
    sudo nano /etc/udev/rules.d/70-persistent-net.rules
    ```
-1. Add following line, replacing `eth0` with your interface name
-   and `XX:XX:XX:XX:XX:XX` with your desired MAC address:
+1. Add following line, replacing `eth0` with the interface name
+   and `XX:XX:XX:XX:XX:XX` with desired MAC address:
 
    ```bash
    ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth0", RUN+="/usr/bin/ip link set dev eth0 address XX:XX:XX:XX:XX:XX"
@@ -44,7 +44,7 @@
    sudo reboot
    ```
 
-1. After reboot, verify the new MAC address for your interface:
+1. After reboot, verify the new MAC address. 
 
    ```bash
    ip link show eth0
