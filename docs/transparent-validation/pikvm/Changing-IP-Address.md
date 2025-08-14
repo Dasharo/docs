@@ -1,5 +1,4 @@
-# Changing PiKVM IP Addresss to static
-
+# Changing PiKVM IP Address to static
 
 1. Connect with PiKVM via serial connection. While using a `minicom`
 
@@ -8,7 +7,7 @@
    Open the serial connection by executing the following command:
 
     ```bash
-    sudo minicom -D /dev/ttyUSB0 -b 115200 
+    sudo minicom -D /dev/ttyUSB0 -b 115200
     ```
 
 1. Check the current IP address of the interface you want to modify:
@@ -43,7 +42,6 @@
    ```bash
    [Match]
    Name=wlan0
-
    [Network]
    DHCP=no
    Address=192.168.X.X/24
