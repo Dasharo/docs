@@ -1,4 +1,4 @@
-# Changing IP Addres for RTE to static
+# Changing RTE IP Addres to static
 
 1. Connect with RTE via ssh or serial connection.
    
