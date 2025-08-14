@@ -1,55 +1,64 @@
 # Changing IP Addres for RTE
 
-Connect to RTE via Serial Connection or SSH.
+1. Connect with RTE via ssh or serial connection.
 
-Check the current IP address of the target network interface:
+    While using a `minicom` there is a need to use the USB-UART converter.
 
-```bash
-ip a
-```
+   The serial connection can be opened by executing the following command:
+    
+    ```bash
+    sudo minicom -D /dev/ttyUSB0 -b 115200 
+    ```
 
-> Note the exact interface name for later use.
+1. Check the current IP address of the target network interface:
 
-Navigate to the network configuration files:
+   ```bash
+   ip a
+   ```
 
-```bash
-cd /etc/systemd/network
-```
+   > Note the exact interface name for later use.
 
-Open the file for the target interface using nano or vim.
+1. Navigate to the network configuration files:
 
-> If the file does not exist, create one following this scheme:
-> `10-eth0.network`, replacing `eth0` with the interface name
+   ```bash
+   cd /etc/systemd/network
+   ```
 
-```bash
-vim 10-eth0.network
-```
+1. Open the file for the target interface using nano or vim.
 
-The file content should look as follows. Replace `eth0` with the interface
-name, `192.168.X.X` with desired IP address and set the proper gateway:
+   > If the file does not exist, create one following this scheme:
+   > `10-eth0.network`, replacing `eth0` with the interface name
 
-```bash
-[Match]
-Name=eth0
+   ```bash
+   vim 10-eth0.network
+   ```
 
-[Network]
-DHCP=no
-Address=192.168.X.X/24
-Gateway=192.168.10.1
-```
+1. The file content should look as follows. Replace `eth0` with the interface
 
-Save the file and exit the editor.
+   name, `192.168.X.X` with desired IP address and set the proper gateway:
 
-Restart the systemd-networkd service:
+   ```bash
+   [Match]
+   Name=eth0
 
-```bash
-systemctl restart systemd-networkd
-```
+   [Network]
+   DHCP=no
+   Address=192.168.X.X/24
+   Gateway=192.168.10.1
+   ```
 
-Verify the new IP address of the interface:
+   Save the file and exit the editor.
 
-```bash
-ip a
-```
-> Note: If `DHCP` parameter is not set to `no` or the MAC address has a reserved IP,
-> the changes may not be applied.
+1. Restart the systemd-networkd service:
+
+   ```bash
+   systemctl restart systemd-networkd
+   ```
+
+1. Verify the new IP address of the interface:
+
+   ```bash
+   ip a
+   ```
+   > Note: If `DHCP` parameter is not set to `no` or the MAC address has a reserved IP,
+   > the changes may not be applied.
