@@ -1,4 +1,4 @@
-# Changing IP Addres for RTE
+# Changing IP Addres for RTE to static
 
 1. Connect with RTE via ssh or serial connection.
    
@@ -46,6 +46,9 @@
    ```
 
    Save the file and exit the editor.
+
+   > To return to a DHCP connection, remove the `Address` variable and set the
+   > `DHCP` property to `ipv4`. Alternatively, delete the entire configuration file.
 
 1. Restart the systemd-networkd service:
 
