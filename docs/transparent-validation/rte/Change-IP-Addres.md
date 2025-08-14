@@ -43,7 +43,7 @@ Save the file and exit the editor.
 Restart the systemd-networkd service:
 
 ```bash
-sudo systemctl restart systemd-networkd
+systemctl restart systemd-networkd
 ```
 
 Verify the new IP address of the interface:
