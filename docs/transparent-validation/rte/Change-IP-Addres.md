@@ -35,7 +35,6 @@
    ```
 
 1. The file content should look as follows. Replace `eth0` with the interface
-
    name, `192.168.X.X` with desired IP address and set the proper gateway:
 
    ```bash
