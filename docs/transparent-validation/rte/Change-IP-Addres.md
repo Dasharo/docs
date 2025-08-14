@@ -2,7 +2,7 @@
 
 Connect to RTE via Serial Connection or SSH.
 
-Check the current IP address of the interface you want to modify:
+Check the current IP address of the target network interface:
 
 ```bash
 ip a
@@ -16,17 +16,17 @@ Navigate to the network configuration files:
 cd /etc/systemd/network
 ```
 
-Open the file corresponding to desired network interface using nano or vim:
+Open the file for the target interface using nano or vim.
 
->If there is no file corresponding to the interface create one following naming scheme:
->`10-eth0.network` replacing `eth0` with intraface name
+> If the file does not exist, create one following this scheme:
+> `10-eth0.network`, replacing `eth0` with the interface name
 
 ```bash
 vim 10-eth0.network
 ```
 
-The content of the file should look as follows, reaplace `eth0` with name of the interface,
-`192.168.X.X` with desired IP Address and set proper gateway:
+The file content should look as follows. Replace `eth0` with the interface
+name, `192.168.X.X` with desired IP address and set the proper gateway:
 
 ```bash
 [Match]
@@ -46,11 +46,10 @@ Restart the systemd-networkd service:
 sudo systemctl restart systemd-networkd
 ```
 
-Verify the new IP address for your interface:
+Verify the new IP address of the interface:
 
 ```bash
 ip a
 ```
-
-> If the value for `DHCP` in not change to `no` and/or the mac address
-> has reserved IP Address the changes may not take effect
+> Note: If `DHCP` parameter is not set to `no` or the MAC address has a reserved IP,
+> the changes may not be applied.
