@@ -27,6 +27,7 @@
 1. Open the file for the target interface using nano or vim.
 
    > If the file does not exist, create one following this scheme:
+   > 
    > `10-eth0.network`, replacing `eth0` with the interface name
 
    ```bash
