@@ -1,8 +1,9 @@
 # Changing MAC Addresss on RTE
 
 
-1. Connect with RTE via serial connection. While using a
-   `minicom` there is a need to use the USB-UART converter.
+1. Connect with RTE via serial connection. While using a `minicom`
+  
+   there is a need to use the USB-UART converter.
 
    Open the serial connection by executing the following command:
     
@@ -16,7 +17,8 @@
 
    Press any key to stop loading U-Boot.
 
-1. Set the new MAC address, by Overwriting the variable `ethaddres` 
+1. Set the new MAC address, by Overwriting the variable `ethaddres`
+    
    replacing `XX:XX:XX:XX:XX:XX` with desired MAC Address:
 
    ```bash
