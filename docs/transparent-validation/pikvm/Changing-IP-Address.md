@@ -1,12 +1,12 @@
 # Changing PiKVM IP Addresss to static
 
 
-1. Connect with RTE via serial connection. While using a `minicom`
-  
+1. Connect with PiKVM via serial connection. While using a `minicom`
+
    there is a need to use the USB-UART converter.
 
    Open the serial connection by executing the following command:
-    
+
     ```bash
     sudo minicom -D /dev/ttyUSB0 -b 115200 
     ```
