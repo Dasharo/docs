@@ -1,51 +1,68 @@
-# Changing IP Addresss on PiKVM
+# Changing PiKVM IP Addresss to static
 
-Connect to PiKVM via Serial Connection or SSH.
 
-Check the current IP address of the interface you want to modify:
+1. Connect with RTE via serial connection. While using a `minicom`
+  
+   there is a need to use the USB-UART converter.
 
-```bash
-ip a
-```
+   Open the serial connection by executing the following command:
+    
+    ```bash
+    sudo minicom -D /dev/ttyUSB0 -b 115200 
+    ```
 
-> Note the exact interface name for later use.
+1. Check the current IP address of the interface you want to modify:
 
-Remount the filesystem in read-write mode:
+   ```bash
+   ip a
+   ```
 
-```bash
-sudo mount -o remount,rw /
-```
+   > Note the exact interface name for later use.
 
-Navigate to the network configuration files:
+1. Remount the filesystem in read-write mode:
 
-```bash
-cd /etc/systemd/network
-```
+   ```bash
+   sudo mount -o remount,rw /
+   ```
 
-Open the file corresponding to desired network interface using nano or vim:
+1. Navigate to the network configuration files:
 
-```bash
-sudo nano wlan0.network
-```
+   ```bash
+   cd /etc/systemd/network
+   ```
 
-Under `[Network]`, update `Address` and `Gateway` to your desired values:
+1. Open the file corresponding to desired network interface using nano or vim:
 
-```bash
-[Network]
-Address=192.168.X.X/24
-Gateway=192.168.X.X
-```
+   ```bash
+   sudo nano wlan0.network
+   ```
 
-Save the file and exit the editor.
+1. The file content should look as follows. Replace `wlan0` with the interface
+   name, `192.168.X.X` with desired IP address and set the proper gateway:
 
-Restart the systemd-networkd service:
+   ```bash
+   [Match]
+   Name=wlan0
 
-```bash
-sudo systemctl restart systemd-networkd
-```
+   [Network]
+   DHCP=no
+   Address=192.168.X.X/24
+   Gateway=192.168.X.X
+   ```
 
-Verify the new IP address for your interface:
+   Save the file and exit the editor.
 
-```bash
-ip a
-```
+   > To return to a DHCP connection, remove the `Address` and `Gateway` variables,
+   > set the `DHCP` property to `yes`.
+
+1. Restart the systemd-networkd service:
+
+   ```bash
+   sudo systemctl restart systemd-networkd
+   ```
+
+1. Verify the new IP address for your interface:
+
+   ```bash
+   ip a
+   ```
