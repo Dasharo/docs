@@ -256,7 +256,10 @@ email to [leads@3mdeb.com](mailto:leads@3mdeb.com) with a request.
 ## Newsletter
 
 If you are interested in the Dasharo, you are welcome to subscribe
-to the [Dasharo Newsletter](https://3mdeb.com/subscribe/dasharo_newsletter.html).
+to the Dasharo Newsletter:
+
+{{ subscribe_form("dbbf5ff3-976f-478e-beaf-749a280358ea",
+"Subscribe to Dasharo Newsletter") }}
 
 ## Gallery
 
