@@ -2,7 +2,7 @@
 
 Connect to PiKVM via Serial Connection or SSH.
 
-Check the current MAC address of the interface you want to modify:
+Check the current IP address of the interface you want to modify:
 
 ```bash
 ip a
