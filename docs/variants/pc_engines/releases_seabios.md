@@ -1,6 +1,6 @@
 # Release Notes
 
-This is a Dasharo Pro Package Release. o obtain access to the pre-built binaries,
+This is a Dasharo Pro Package Release. To obtain access to the pre-built binaries,
 you need to [subscribe to the Dasharo Pro Package subscriber](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
 You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/).
 As a subscriber, you will receive access to all firmware updates for the
@@ -8,11 +8,11 @@ duration of your subscription via the Dasharo Pro Package newsletter,
 and gain entry to the Dasharo Premier Support invite-only live chat
 on the Matrix network, enabling direct engagement with the Dasharo Team
 and fellow subscribers for personalized, priority assistance.
-
-Following Release Notes describe status of Dasharo (coreboot+SeaBIOS) variant
+The 
+Following Release Notes describe the status of Dasharo (coreboot+SeaBIOS) variant
 of open-source firmware development for PC Engines apu2/3/4/6 platform.
 
-For details about our release process please read
+For details about our release process, please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
 {{ subscribe_form("667a3af1-424e-439e-9144-57bfcf921ca4",
@@ -34,7 +34,7 @@ Test results for this release can be found
 
 ### Known issues
 
-- [apuled driver doesn't work in FreeBSD. Check the GPIOs document for workaround.](https://github.com/pcengines/coreboot/issues/329)
+- [apuled driver doesn't work in FreeBSD. Check the GPIOs document for a workaround.](https://github.com/pcengines/coreboot/issues/329)
 - [Some PCIe cards are not detected on certain OSes and/or in certain mPCIe slots. Check the mPCIe modules document for solution/workaround.](https://github.com/pcengines/apu2-documentation/issues/115)
 - [Booting with 2 USB 3.x sticks plugged in apu4 sometimes results in detecting only 1 stick](https://github.com/pcengines/seabios/issues/30)
 - [Certain USB 3.x sticks happen to not appear in boot menu](https://github.com/pcengines/seabios/issues/29)
@@ -57,10 +57,10 @@ Test results for this release can be found
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
 [become the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You will get the access to all of the firmware updates for the duration of the
-subscription via Dasharo Pro Package newsletter.
+You will get access to all of the firmware updates for the duration of the
+subscription via the Dasharo Pro Package newsletter.
 
-To verify binary integrity with hash and signature please follow the
+To verify binary integrity with a hash and signature, please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/pcengines_apu2/dasharo-release-24.08.00.x-for-pc-engines-signing-key.asc)
 
@@ -148,7 +148,7 @@ Test results for this release can be found
 [sha256][pcengines_apu6_seabios_v24.05.00.01.rom_hash]{.md-button}
 [sha256.sig][pcengines_apu6_seabios_v24.05.00.01.rom_sig]{.md-button}
 
-To verify binary integrity with hash and signature please follow the
+To verify binary integrity with a hash and signature, please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/pcengines_apu2/dasharo-release-24.05.00.x-for-pc-engines-signing-key.asc)
 
