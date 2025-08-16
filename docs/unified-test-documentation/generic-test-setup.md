@@ -24,8 +24,14 @@ for your device.
 #### OS installation
 
 Install all the supported operating systems.
-In case the 'OPERATING_SYSTEM' is supported by [Dasharo Preseeds](https://github.com/dasharo/preseeds)
-use the instructions from there. Otherwise continue with the steps below:
+* Use the ready-to-use disk images by running the
+[disk flashing utility test suite](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/util/preseeds.robot)
+in case every one, or some of the required `OPERATING_SYSTEM`s are available
+among the ready-to-use disk images. For more details refer to the instructions
+in the [disk flashing utility test suite](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/util/preseeds.robot).
+* Otherwise, in case the `OPERATING_SYSTEM` is supported by [Dasharo Preseeds](https://github.com/dasharo/preseeds)
+use the instructions from there.
+* Otherwise continue with the steps below:
 
 ##### OS installer
 
