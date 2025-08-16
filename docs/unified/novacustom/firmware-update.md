@@ -82,7 +82,7 @@ firmware version is currently installed on your device.
     1. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
        We recommend the network boot option.
 
-    1. In the main menu of Dasharo Tools Suite, select option `5` to proceed with
+    1. In the main menu of Dasharo Tools Suite, select option `2` to proceed with
        the installation of the firmware update.
 
     1. In case you want to know more about the firmware update option in Dasharo
