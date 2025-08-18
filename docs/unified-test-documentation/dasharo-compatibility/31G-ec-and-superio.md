@@ -1815,23 +1815,16 @@ can reset the EC.
 
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Attach [EC debugger](../../transparent-validation/ec-debugger/uart-relay.md)
-   to the DUT.
 
 **Test steps**
 
 1. Power on the DUT.
 1. Hold the power button pressed for at least 10 seconds
-1. Note any messages appearing on the EC debug interface.
+1. Note the DUT behavior
 
 **Expected result**
-
-1. The debug logs should contain a message indicating that the EC was reset due
-   to watchdog timeout reset, e.g.:
-
-    ```text
-    Last reset caused by PWRSW WDT Timeout!
-    ```
+1. The DUT should power off and on all within the 10 seconds
+of power button being pressed down
 
 ## ECR035.201 Soft Switch Microphone Key (Ubuntu)
 
