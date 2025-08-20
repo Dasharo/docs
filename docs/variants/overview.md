@@ -54,6 +54,10 @@ open-source firmware distribution.
 
 ## Desktop
 
+* Following desktops are supported under **Dasharo Support Package**:
+
+    - [NovaCustom NUC BOX 14th Gen](../unified/novacustom/overview.md)
+
 * Following desktops are supported under **Dasharo Pro Package**:
 
     - [Dasharo (coreboot+UEFI) Pro Package for Desktop](https://shop.3mdeb.com/shop/dasharo-pro-package/1year-desktop/)
