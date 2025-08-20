@@ -1,6 +1,6 @@
 # Overview
 
-## Hardkernel Gigabyte MZ33-AR1
+## Gigabyte MZ33-AR1
 
 <center>
 ![](../../images/gigabyte_mz33_ar1.webp)
