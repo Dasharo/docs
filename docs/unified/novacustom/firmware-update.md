@@ -96,6 +96,10 @@ firmware version is currently installed on your device.
 
         This update method is for advanced users only and is not recommended for
         regular end users.
+
+        > Please make sure you that you update the BIOS firmware and the EC firmware
+        > respectively, as the laptop will power off after the EC firmware flash.
+
     === "NUC BOX"
 
         ### Manual update
@@ -114,13 +118,10 @@ firmware version is currently installed on your device.
     1. These options were introduced in v1.5.0 for TGL models and v1.7.0 for ADL
        models. You can skip these steps if you are using an older firmware version.
 
-    Follow the manual update procedure described in the [DTS firmware update
+    Follow the local firmware update procedure described in the [DTS firmware update
     documentation](../../dasharo-tools-suite/documentation/features.md#local-firmware-update).
 
-    > Please make sure you that you update the BIOS firmware and the EC firmware
-    > respectively, as the laptop will power off after the EC firmware flash.
-    >
-    > Please also note that
+    > Please note that
     > [network boot must be enabled](../../dasharo-menu-docs/dasharo-system-features.md#networking-options)
     > if you want to boot to the Dasharo Tools Suite over a network connection.
 
