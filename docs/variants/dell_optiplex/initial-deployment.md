@@ -70,122 +70,23 @@ active. Press F1 to proceed and boot to your Linux system.
 
 ## Initial deployment
 
-To ensure a smooth deployment process, it is recommended to use the latest
-version of DTS available from the [releases
-page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
-then proceed with following the [Dasharo zero-touch initial deployment
-section](../../dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
-procedure. This will help you set up Dasharo effectively and without manual
-intervention. However, if you wish to flash firmware you have built yourself,
-you will need take an alternate route and go through firmware preparation.
+The deployment process depends on how you get Dasharo. If you got a [Pro Package](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
+please use the "Zero Touch" method to ensure a smooth installation. If you
+[built yourself](building-manual.md) you have to use the manual method.
 
-## Firmware preparation
+=== "Zero Touch"
+    Use the latest release of [Dasharo Tools Suite](../../dasharo-tools-suite/releases.md)
+    and follow the [Dasharo zero-touch initial deployment documentation](../../dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment).
+    This will help you set up Dasharo effectively and without manual
+    intervention.
 
-A fresh firmware binary built from source for this platform is not necessarily
-complete and ready to be deployed on hardware.
-
-If you have built it using the non-TXT config, you can safely go ahead and
-flash, the platform will be fully operational - but due to lack of EC firmware,
-the fans will always spin at full speed, which can be a nuisance.
-
-However, if you have build the firmware with TXT support, without patching the
-.rom with proprietary ACM blobs the platform might simply refuse to boot.
-
-This brings us to patching the binary. This guide covers the process of
-obtaining 3 firmware blobs necessary for a full-feature deployment on the
-OptiPlex platform:
-
-* `sch5545_ecfw.bin` - EC firmware
-* `txt_bios_acm.bin` - Ivy Bridge BIOS ACM - **TXT support only**
-* `txt_sinit_acm.bin` - Ivy Bridge SINIT ACM - **TXT support only**
-
-It is recommended you perform this process booted into the Dasharo Tools Suite,
-unless you are willing to install all of the reqiuired utilities yourself.
-
-### Obtaining the blobs
-
-The process consists of downloading the stock BIOS via an update link and
-extracting all of its contents, to then salvage what we need for our firmware.
-
-First, you will need to download the stock BIOS image from an update URL. As
-of the moment of writing this guide, the working link for OptiPlex 7010/9010
-is [this](https://dl.dell.com/FOLDER05066036M/1/O7010A29.exe).
-
-Then, extract all of the components using `binwalk`:
-
-```bash
-binwalk -e O7010A29.exe -C .
-```
-
-Assuming the extraction process was successful, you should now have an
-extracted UEFI image file, hidden under an unassuming name such as
-`65C10`. Deeper down the rabbit hole, you will now have to extract the
-blobs from this image using the `uefi-firmware` Python package, a set of scripts
-for parsing, extracting, and recreating UEFI firmware volumes. To install:
-
-```bash
-apt install python3-venv python3-pip
-python3 -m venv venv
-source venv/bin/activate
-pip install uefi-firmware==1.9
-```
-
-To extract the blobs (you may have to run the command twice):
-
-```bash
-uefi-firmware-parser -e "_O7010A29.exe.extracted/65C10" -O
-```
-
-Congratulations, you should now have access to the BIOS ACM and EC firmware
-files. Now, let's copy them with more readable names for future reference:
-
-* EC firmware -
-
-```bash
-cp _O7010A29.exe.extracted/65C10_output/pfsobject/\
-    section-7ec6c2b0-3fe3-42a0-a316-22dd0517c1e8/volume-0x50000/\
-    file-d386beb8-4b54-4e69-94f5-06091f67e0d3/section0.raw sch5545_ecfw.bin
-```
-
-* BIOS ACM file (only necessary for TXT support) -
-
-```bash
-cp _O7010A29.exe.extracted/65C10_output/pfsobject/\
-    section-7ec6c2b0-3fe3-42a0-a316-22dd0517c1e8/volume-0x500000/\
-    file-2d27c618-7dcd-41f5-bb10-21166be7e143/object-0.raw IVB_BIOSAC_PRODUCTION.bin
-```
-
-The SINIT file is fortunately available for download directly from Intel at
-[this url](https://cdrdv2.intel.com/v1/dl/getContent/630744)
-(again, only necessary for TXT support).
-
-### Patching the binary
-
-Now having prepared all of the ingredients, we can proceed with patching the
-raw binary, to which I will refer as `coreboot.rom`. It is assumed that the
-.rom is copied into the same directory as the extracted blobs.
-
-If you didn't enable TXT support in your build, you only need to run
-
-```bash
-cbfstool coreboot.rom add -f sch5545_ecfw.bin -n sch5545_ecfw.bin -t raw
-```
-
-If you are using TXT, run
-
-```bash
-cbfstool coreboot.rom add -f IVB_BIOSAC_PRODUCTION.bin -n txt_bios_acm.bin -t raw -a 0x20000
-cbfstool coreboot.rom add -f SNB_IVB_SINIT_20190708_PW.bin -n txt_sinit_acm.bin -t raw -c lzma
-```
-
-### Flashing
-
-The prepared binary is now ready to be flashed onto the platform's mainboard,
-using
-
-```bash
-flashrom -p internal -w coreboot.rom --ifd -i bios
-```
+=== "Manual"
+    To [flash your Dasharo binary manual](../../guides/firmware-reflash.md) it
+    is recommended to use [Flashrom on DTS](../../dasharo-tools-suite/documentation/features.md#local-firmware-update)
+    like this:
+    ```bash
+    flashrom -p internal -w coreboot.rom --ifd -i bios
+    ```
 
 ## Verification
 
