@@ -75,10 +75,10 @@ thus a failure to move data in some cases won’t necessarily abort an update.
 
 !!! note
 
-    Out of technical necessity, Intel Management Engine (Intel ME) must be
-    HAP-disabled in order for firmware to process a capsule successfully.  If
-    you're sure that the supplied capsule is the correct one, but you keep
-    getting this error:
+    Out of [technical necessity](https://github.com/Dasharo/dasharo-issues/issues/1302),
+    Intel Management Engine (Intel ME) must be HAP-disabled in order for
+    firmware to process a capsule successfully. If you're sure that the
+    supplied capsule is the correct one, but you keep getting this error:
 
     ```
     [FIRMWARE WARNING] Capsule updates are only supported while Intel ME is in HAP mode!
