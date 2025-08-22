@@ -49,6 +49,11 @@ table:
 | J11 pin 9      | FP_1 pin 11 (PWR_ON)        |
 | J11 pin 8      | FP_1 pin 15 (RST)           |
 | J15 pin 1 (GND)| FP_1 pin 13 (GND)           |
+| J10 pin 1      | FP_1 pin 5  (PWR LED-)      |
+
+> The `Power LED-` has inverted polarity. When board is running, its state is
+> low. When board is off, then the state is high. `Power LED+` is always high
+> when PSU is on.
 
 ### External flashing enabling
 
