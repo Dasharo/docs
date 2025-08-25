@@ -61,11 +61,6 @@ open-source firmware distribution.
         + [MSI PRO Z690-A](../unified/msi/overview.md)
         + [MSI PRO Z790-P](../unified/msi/overview.md)
 
-* Following desktops are supported under **Dasharo Community Support**:
-
-    - [MSI PRO Z690-A](../unified/msi/overview.md)
-    - [MSI PRO Z790-P](../unified/msi/overview.md)
-
 ## Workstation
 
 * Following workstations are supported under **Dasharo Community Support**:
