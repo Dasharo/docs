@@ -39,7 +39,7 @@ market_segment
     + `UEFI` - [Dasharo downstream](https://github.com/Dasharo/edk2) of
     [Tianocore EDK II](https://github.com/tianocore/edk2) reference
     implementation of the UEFI Specification.
-    + `SeaBIOS` - upstream or downstream version of [SeaBIOS](https://www.seabios.org/SeaBIOS)
+    + `SeaBIOS` - upstream or downstream version of [SeaBIOS](https://www.seabios.org)
     + `Heads` - upstream or downstream version of [Heads](https://github.com/linuxboot/heads/)
 
   The omission of this component implies no additional payload.
