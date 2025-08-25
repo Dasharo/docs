@@ -65,6 +65,9 @@ Become a part of the vibrant Dasharo community:
 
 > Find us on other social platforms using the icons at the bottom right.
 
+{{ subscribe_form("dbbf5ff3-976f-478e-beaf-749a280358ea",
+"Subscribe to Dasharo Newsletter") }}
+
 <!--
 
 ## 📢 Testimonials
