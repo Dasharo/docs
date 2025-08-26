@@ -38,6 +38,8 @@
   border-radius: 5px;
   text-align: center;
   width: 100%;
+  max-width: 500px;
+  min-height: 50px;
 }
 
 .subscribe-form input[type="email"] {
@@ -45,7 +47,6 @@
 }
 
 .subscribe-form button {
-  all: unset;
   background-color: var(--md-primary-fg-color);
   color: var(--md-primary-bg-color);
   cursor: pointer;
