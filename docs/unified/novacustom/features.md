@@ -164,7 +164,6 @@ laptops.
 
 === "NUC BOX"
 
-
 ## CPU throttling threshold
 
 The user can set a custom temperature (in °C), above which the CPU will start
@@ -226,4 +225,3 @@ Fan profiles are defined as follows:
 	| 100              | 100           |
 
 > Values in-between curve points are interpolated linearly.
-

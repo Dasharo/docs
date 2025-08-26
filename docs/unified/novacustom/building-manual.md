@@ -4,7 +4,7 @@
 
     ## Intro
 
-    This guide shows how to build Dasharo firmware for NovaCustom devices. 
+    This guide shows how to build Dasharo firmware for NovaCustom devices.
 
     ## Requirements
 
