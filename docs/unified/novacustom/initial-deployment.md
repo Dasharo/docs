@@ -9,6 +9,47 @@ devices.
 
 ## Installing Dasharo
 
+### Preparation
+
+On your host computer, install flashrom from sources:
+
+!!! note
+
+    Building from source is required, because the latest flashrom release
+    as of the time of writing does not have support for the flash chip model
+    present in these devices.
+
+1. Install build dependencies
+
+=== "APT package manager"
+
+    ```bash
+    apt update
+    apt upgrade
+    apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
+    ```
+=== "DNF package manager"
+
+    ```bash
+    dnf group install c-development development-tools
+    dnf install git debhelper pkgconf-pkg-config pciutils-devel libusb-compat-0.1-devel libftdi-devel meson
+    ```
+
+1. Clone the flashrom repository:
+
+    ```bash
+    git clone https://review.coreboot.org/flashrom.git
+    ```
+
+1. Build and install flashrom:
+
+    ```bash
+    cd flashrom
+    meson build
+    ninja -C build
+    sudo ninja -C build install
+    ```
+
 ### Initial Installation
 
 === "Laptops"
@@ -17,47 +58,6 @@ devices.
         Due to flash protection and Intel ME configuration present in vendor
         firmware, initial deployment must be performed externally (using a chip
         programmer like CH341a).
-
-        ### Preparation
-
-        On your host computer, install flashrom from sources:
-
-        !!! note
-
-            Building from source is required, because the latest flashrom release
-            as of the time of writing does not have support for the flash chip model
-            present in these devices.
-
-        1. Install build dependencies
-
-        === "APT package manager"
-
-            ```bash
-            apt update
-            apt upgrade
-            apt install git build-essential debhelper pkg-config libpci-dev libusb-1.0-0-dev libftdi1-dev meson
-            ```
-        === "DNF package manager"
-
-            ```bash
-            dnf group install c-development development-tools
-            dnf install git debhelper pkgconf-pkg-config pciutils-devel libusb-compat-0.1-devel libftdi-devel meson
-            ```
-
-        1. Clone the flashrom repository:
-
-            ```bash
-            git clone https://review.coreboot.org/flashrom.git
-            ```
-
-        1. Build and install flashrom:
-
-            ```bash
-            cd flashrom
-            meson build
-            ninja -C build
-            sudo ninja -C build install
-            ```
 
         ### EC installation
 
@@ -124,25 +124,6 @@ devices.
         has enabled Intel Boot Guard and BIOS Guard, it is not possible to do this
         from within the operating system and external flashing of the whole flash
         chip using a programmer like the CH341a is required.
-
-        ### Preparation
-
-        Install flashrom:
-
-        === "APT package manager"
-
-            ```bash
-            apt update
-            apt upgrade
-            sudo apt -y install flashrom
-            ```
-
-        === "DNF package manager"
-
-            ```bash
-            dnf install flashrom
-            ```
-
 
         ### BIOS installation
 
@@ -283,19 +264,6 @@ devices.
 
      This document describes the process of building, installing and running
     flashrom on Ubuntu 24.04.
-
-    ### Build flashrom
-
-    Please follow generic guide for [Dasharo flashrom fork](../../osf-trivia-list/deployment.md#how-to-install-dasharo-flashrom-fork).
-
-    ### Reading flash contents
-
-    Always prepare a backup of the current firmware image. To read from the flash
-    and save it to a file (`dump.rom`), execute the following command:
-
-    ```bash
-    flashrom -p internal -r dump.rom
-    ```
 
     ### Flashing Dasharo
 
