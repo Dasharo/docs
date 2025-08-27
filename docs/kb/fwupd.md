@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[fwupd][fwupd website] iis an open-source Linux daemon (background process), that
+[fwupd][fwupd website] is an open-source project, that
 is widely used to make firmware updates almost as seamless and simple
 as updating system packages. It is supported by most hardware vendors
 and Linux distributions.
