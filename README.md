@@ -131,12 +131,13 @@ lists. To do that, paste the custom macro content in the target markdown file:
 
 where:
 
-- `FORM-ID` - target mailing list form ID that can be found [here][lm-forms].
+- `FORM-ID` - target mailing list form ID that can be found [here][lm-forms]
+  (check target list and copy `checked_value=` content from Form HTML).
 - `Button text` - text to be shown on the button.
 
 Example for ODROID H4 subpage: [example code][h4-example]
 
-[lm-forms]: https://github.com/3mdeb/3mdeb-website/tree/main/static/subscribe
+[lm-forms]: https://listmonk.3mdeb.com/admin/lists/forms
 [h4-example]: https://github.com/Dasharo/docs/blob/38e0bbfa156575d2e4dda5d33bce00488f493fcf/docs/variants/hardkernel_odroid_h4/releases.md?plain=1#L19
 
 ## Navigation menu
