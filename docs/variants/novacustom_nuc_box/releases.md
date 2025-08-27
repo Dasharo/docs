@@ -21,6 +21,7 @@ Test results for this release can be found
 ### Added
 
 - Support for NovaCustom NUC BOX (Meteor Lake)
+- [Introduce updates via UEFI capsules (from this firmware onward)](https://github.com/Dasharo/dasharo-issues/issues/423)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot Verified Boot](https://docs.dasharo.com/guides/vboot-signing/)
 - [Intel ME soft disable](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20F-me-neuter/)
@@ -36,15 +37,8 @@ Test results for this release can be found
 - [Intel ME disable option in setup menu](https://docs.dasharo.com/osf-trivia-list/me/)
 - [Power on AC option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
 - [Fan profiles in setup Menu](https://docs.dasharo.com/unified/novacustom/fan-profiles/)
+- [Quiet boot/Fast boot](https://docs.dasharo.com/dasharo-menu-docs/boot-maintenance-mgr/)
 - [Throttling temperature adjustment in setup menu](https://docs.dasharo.com/unified/novacustom/features/#cpu-throttling-threshold)
-
-### Changed
-
-- N/A - initial release (deleteme)
-
-### Fixed
-
-- N/A - initial release (deleteme)
 
 ### Known issues
 
