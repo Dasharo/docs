@@ -4,11 +4,7 @@
 
     ## Intro
 
-    This guide shows how to build Dasharo firmware for NovaCustom devices. It
-    contains two components:
-
-    - [EC firmware](#build-dasharo-ec-firmware)
-    - [BIOS firmware](#build-dasharo-bios-firmware)
+    This guide shows how to build Dasharo firmware for NovaCustom devices.
 
     ## Requirements
 
@@ -35,246 +31,284 @@
             sudo dnf -y install git
             ```
 
-    ## Build Dasharo EC firmware
+    === "Laptops"
 
-    1. Clone the Dasharo ec repository:
+        Laptops consist of two firmware components:
 
-        ```bash
-        git clone https://github.com/Dasharo/ec.git
-        ```
+        - [EC firmware](#build-dasharo-ec-firmware)
+        - [BIOS firmware](#build-dasharo-bios-firmware)
 
-    1. Navigate to the source code directory and checkout to the desired revision:
+        ## Build Dasharo EC firmware
 
-        ```bash
-        cd ec
-        ```
+        1. Clone the Dasharo ec repository:
 
-        > Replace `X.Y.Z` with a valid version
-
-        === "V540TU"
             ```bash
-            git checkout novacustom_v540tu_vX.Y.Z
+            git clone https://github.com/Dasharo/ec.git
             ```
 
-        === "V560TU"
+        1. Navigate to the source code directory and checkout to the desired revision:
+
             ```bash
-            git checkout novacustom_v560tu_vX.Y.Z
+            cd ec
             ```
 
-        === "NS5x/7x 12th Gen"
+            > Replace `X.Y.Z` with a valid version
+
+            === "V540TU"
+                ```bash
+                git checkout novacustom_v540tu_vX.Y.Z
+                ```
+
+            === "V560TU"
+                ```bash
+                git checkout novacustom_v560tu_vX.Y.Z
+                ```
+
+            === "NS5x/7x 12th Gen"
+                ```bash
+                git checkout novacustom_ns5x_adl_vX.Y.Z
+                ```
+
+            === "NV4x 12th Gen"
+                ```bash
+                git checkout novacustom_nv4x_adl_vX.Y.Z
+                ```
+
+            === "NX5x/7x 11th Gen"
+                ```bash
+                git checkout novacustom_ns5x_tgl_vX.Y.Z
+                ```
+
+            === "NV4x 11th Gen"
+                ```bash
+                git checkout novacustom_nv4x_tgl_vX.Y.Z
+                ```
+
+        1. Checkout submodules:
+
             ```bash
-            git checkout novacustom_ns5x_adl_vX.Y.Z
+            git submodule update --init --recursive --checkout
             ```
 
-        === "NV4x 12th Gen"
+        1. Build the EC firmware:
+
+            === "V540TU"
+                ```bash
+                EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=v540tu ./build.sh
+                ```
+
+                The resulting image will be placed in: `novacustom_v540tu_ec.rom`.
+
+            === "V560TU"
+                ```bash
+                EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=v560tu ./build.sh
+                ```
+
+                The resulting image will be placed in: `novacustom_v560tu_ec.rom`.
+
+            === "NS5x/7x 12th Gen"
+                ```bash
+                EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_adl ./build.sh
+                ```
+
+                The resulting image will be placed in: `novacustom_ns5x_adl_ec.rom`.
+
+            === "NV4x 12th Gen"
+                ```bash
+                EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_adl ./build.sh
+                ```
+
+                The resulting image will be placed in: `novacustom_nv4x_adl_ec.rom`.
+
+            === "NX5x/7x 11th Gen"
+                ```bash
+                EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_tgl ./build.sh
+                ```
+
+                The resulting image will be placed in: `novacustom_ns5x_tgl_ec.rom`.
+
+            === "NV4x 11th Gen"
+                ```bash
+                EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_tgl ./build.sh
+                ```
+
+                The resulting image will be placed in: `novacustom_nv4x_tgl_ec.rom`.
+
+        ## Build Dasharo BIOS firmware
+
+        1. Clone the Dasharo coreboot repository:
+
             ```bash
-            git checkout novacustom_nv4x_adl_vX.Y.Z
+            cd ..
+            git clone https://github.com/Dasharo/coreboot.git
             ```
 
-        === "NX5x/7x 11th Gen"
+        1. Navigate to the source code directory and checkout to the desired revision:
+
             ```bash
-            git checkout novacustom_ns5x_tgl_vX.Y.Z
+            cd coreboot
             ```
 
-        === "NV4x 11th Gen"
+            > Replace `X.Y.Z` with a valid version
+
+            === "V540TU"
+                ```bash
+                git checkout novacustom_v540tu_vX.Y.Z
+                ```
+
+            === "V560TU"
+                ```bash
+                git checkout novacustom_v560tu_vX.Y.Z
+                ```
+
+            === "NS5x/7x 12th Gen"
+                ```bash
+                git checkout novacustom_ns5x_adl_vX.Y.Z
+                ```
+
+            === "NV4x 12th Gen"
+                ```bash
+                git checkout novacustom_nv4x_adl_vX.Y.Z
+                ```
+
+            === "NX5x/7x 11th Gen"
+                ```bash
+                git checkout novacustom_ns5x_tgl_vX.Y.Z
+                ```
+
+            === "NV4x 11th Gen"
+                ```bash
+                git checkout novacustom_nv4x_tgl_vX.Y.Z
+                ```
+
+        1. Copy the previously built EC firmware to the coreboot folder:
+
+            === "V540TU"
+                ```bash
+                cp ../ec/novacustom_v540tu_ec.rom ec.rom
+                ```
+
+            === "V560TU"
+                ```bash
+                cp ../ec/novacustom_v560tu_ec.rom ec.rom
+                ```
+
+            === "NS5x/7x 12th Gen"
+                ```bash
+                cp ../ec/novacustom_ns5x_adl_ec.rom ec.rom
+                ```
+
+            === "NV4x 12th Gen"
+                ```bash
+                cp ../ec/novacustom_nv4x_adl_ec.rom ec.rom
+                ```
+
+            === "NX5x/7x 11th Gen"
+                ```bash
+                cp ../ec/novacustom_ns5x_tgl_ec.rom ec.rom
+                ```
+
+            === "NV4x 11th Gen"
+                ```bash
+                cp ../ec/novacustom_nv4x_tgl_ec.rom ec.rom
+                ```
+
+        1. Checkout submodules:
+
             ```bash
-            git checkout novacustom_nv4x_tgl_vX.Y.Z
+            git submodule update --init --recursive --checkout
             ```
 
-    1. Checkout submodules:
+        1. Start docker container:
 
-        ```bash
-        git submodule update --init --recursive --checkout
-        ```
-
-    1. Build the EC firmware:
-
-        === "V540TU"
-            ```bash
-            EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=v540tu ./build.sh
-            ```
-
-            The resulting image will be placed in: `novacustom_v540tu_ec.rom`.
-
-        === "V560TU"
-            ```bash
-            EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=v560tu ./build.sh
-            ```
-
-            The resulting image will be placed in: `novacustom_v560tu_ec.rom`.
-
-        === "NS5x/7x 12th Gen"
-            ```bash
-            EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_adl ./build.sh
-            ```
-
-            The resulting image will be placed in: `novacustom_ns5x_adl_ec.rom`.
-
-        === "NV4x 12th Gen"
-            ```bash
-            EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_adl ./build.sh
-            ```
-
-            The resulting image will be placed in: `novacustom_nv4x_adl_ec.rom`.
-
-        === "NX5x/7x 11th Gen"
-            ```bash
-            EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=ns5x_tgl ./build.sh
-            ```
-
-            The resulting image will be placed in: `novacustom_ns5x_tgl_ec.rom`.
-
-        === "NV4x 11th Gen"
-            ```bash
-            EC_BOARD_VENDOR=novacustom EC_BOARD_MODEL=nv4x_tgl ./build.sh
-            ```
-
-            The resulting image will be placed in: `novacustom_nv4x_tgl_ec.rom`.
-
-    ## Build Dasharo BIOS firmware
-
-    1. Clone the Dasharo coreboot repository:
-
-        ```bash
-        cd ..
-        git clone https://github.com/Dasharo/coreboot.git
-        ```
-
-    1. Navigate to the source code directory and checkout to the desired revision:
-
-        ```bash
-        cd coreboot
-        ```
-
-        > Replace `X.Y.Z` with a valid version
-
-        === "V540TU"
-            ```bash
-            git checkout novacustom_v540tu_vX.Y.Z
-            ```
-
-        === "V560TU"
-            ```bash
-            git checkout novacustom_v560tu_vX.Y.Z
-            ```
-
-        === "NS5x/7x 12th Gen"
-            ```bash
-            git checkout novacustom_ns5x_adl_vX.Y.Z
-            ```
-
-        === "NV4x 12th Gen"
-            ```bash
-            git checkout novacustom_nv4x_adl_vX.Y.Z
-            ```
-
-        === "NX5x/7x 11th Gen"
-            ```bash
-            git checkout novacustom_ns5x_tgl_vX.Y.Z
-            ```
-
-        === "NV4x 11th Gen"
-            ```bash
-            git checkout novacustom_nv4x_tgl_vX.Y.Z
-            ```
-
-    1. Copy the previously built EC firmware to the coreboot folder:
-
-        === "V540TU"
-            ```bash
-            cp ../ec/novacustom_v540tu_ec.rom ec.rom
-            ```
-
-        === "V560TU"
-            ```bash
-            cp ../ec/novacustom_v560tu_ec.rom ec.rom
-            ```
-
-        === "NS5x/7x 12th Gen"
-            ```bash
-            cp ../ec/novacustom_ns5x_adl_ec.rom ec.rom
-            ```
-
-        === "NV4x 12th Gen"
-            ```bash
-            cp ../ec/novacustom_nv4x_adl_ec.rom ec.rom
-            ```
-
-        === "NX5x/7x 11th Gen"
-            ```bash
-            cp ../ec/novacustom_ns5x_tgl_ec.rom ec.rom
-            ```
-
-        === "NV4x 11th Gen"
-            ```bash
-            cp ../ec/novacustom_nv4x_tgl_ec.rom ec.rom
-            ```
-
-    1. Checkout submodules:
-
-        ```bash
-        git submodule update --init --recursive --checkout
-        ```
-
-    1. Start docker container:
-
-        ```bash
-        docker run --rm -it -u $UID \
-           -v $PWD:/home/coreboot/coreboot \
-           -w /home/coreboot/coreboot \
-           coreboot/coreboot-sdk:2023-11-24_2731fa619b /bin/bash
-        ```
-
-        - If the build commands ahead fail, try using an older container
             ```bash
             docker run --rm -it -u $UID \
-                -v $PWD:/home/coreboot/coreboot \
-                -w /home/coreboot/coreboot \
-                coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+               -v $PWD:/home/coreboot/coreboot \
+               -w /home/coreboot/coreboot \
+               coreboot/coreboot-sdk:2023-11-24_2731fa619b /bin/bash
             ```
 
-    1. Inside of the container, configure the build process:
+            - If the build commands ahead fail, try using an older container
+                ```bash
+                docker run --rm -it -u $UID \
+                    -v $PWD:/home/coreboot/coreboot \
+                    -w /home/coreboot/coreboot \
+                    coreboot/coreboot-sdk:2021-09-23_b0d87f753c /bin/bash
+                ```
 
-        === "V540TU"
+        1. Inside of the container, configure the build process:
+
+            === "V540TU"
+                ```bash
+                make distclean && cp configs/config.novacustom_v540tu .config
+                ```
+
+            === "V560TU"
+                ```bash
+                make distclean && cp configs/config.novacustom_v560tu .config
+                ```
+
+            === "NS5x/7x 12th Gen"
+                ```bash
+                make distclean && cp configs/config.novacustom_ns5x_adl .config
+                ```
+
+            === "NV4x 12th Gen"
+                ```bash
+                make distclean && cp configs/config.novacustom_nv4x_adl .config
+                ```
+
+            === "NX5x/7x 11th Gen"
+                ```bash
+                make distclean && cp configs/config.novacustom_ns5x_tgl .config
+                ```
+
+            === "NV4x 11th Gen"
+                ```bash
+                make distclean && cp configs/config.novacustom_nv4x_tgl .config
+                ```
+
+        1. Start the build process:
+
             ```bash
-            make distclean && cp configs/config.novacustom_v540tu .config
+            make olddefconfig && make
             ```
 
-        === "V560TU"
+        This will produce a Dasharo binary placed in `build/coreboot.rom`.
+
+        The binary will not contain a boot splash logo. Refer to
+        [logo customization](../../guides/logo-customization.md) for including one.
+
+    === "NUC BOX"
+
+        ## Build Instructions
+
+        1. Clone the Dasharo coreboot repository:
+
             ```bash
-            make distclean && cp configs/config.novacustom_v560tu .config
+            git clone https://github.com/Dasharo/coreboot.git
+            cd coreboot
             ```
 
-        === "NS5x/7x 12th Gen"
+        2. Checkout to a specific version (optional):
+
             ```bash
-            make distclean && cp configs/config.novacustom_ns5x_adl .config
+            git checkout novacustom_nuc_box_v0.9.0
             ```
 
-        === "NV4x 12th Gen"
+        3. Checkout submodules:
+
             ```bash
-            make distclean && cp configs/config.novacustom_nv4x_adl .config
+            git submodule update --init --checkout
             ```
 
-        === "NX5x/7x 11th Gen"
+        4. Build the firmware:
+
             ```bash
-            make distclean && cp configs/config.novacustom_ns5x_tgl .config
+            ./build.sh nuc_box
             ```
 
-        === "NV4x 11th Gen"
-            ```bash
-            make distclean && cp configs/config.novacustom_nv4x_tgl .config
-            ```
-
-    1. Start the build process:
-
-        ```bash
-        make olddefconfig && make
-        ```
-
-    This will produce a Dasharo binary placed in `build/coreboot.rom`.
-
-    The binary will not contain a boot splash logo. Refer to
-    [logo customization](../../guides/logo-customization.md) for including one.
+        The resulting coreboot image will be: `novacustom_nuc_box_v0.9.0.rom`
 
 === "Dasharo (coreboot + Heads)"
 

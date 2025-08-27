@@ -15,85 +15,96 @@ firmware version is currently installed on your device.
 
 === "Dasharo (UEFI)"
 
-    ## Prerequisites
+    === "Laptops"
 
-    Your firmware version can be checked by entering the
-    [Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md)
-    using the ++f2++ key while booting.
+        ## Prerequisites
 
-    > Advanced users can also [build](./building-manual.md) and/or flash the
-    > binaries themselves by following the steps under the [Manual
-    > update](#manual-update) section.
+        Your firmware version can be checked by entering the
+        [Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md)
+        using the ++f2++ key while booting.
 
-    ### Capsule Update via fwupd
+        > Advanced users can also [build](./building-manual.md) and/or flash the
+        > binaries themselves by following the steps under the [Manual
+        > update](#manual-update) section.
 
-    fwupd and Capsule Update are available starting with the following versions:
+        ### Capsule Update via fwupd
 
-    | Generation | Version |
-    | ---------- | ------- |
-    | 11th       | 1.6.0   |
-    | 12th       | 1.8.0   |
-    | 14th       | 1.0.0   |
+        fwupd and Capsule Update are available starting with the following versions:
 
-    !!! note
+        | Generation | Version |
+        | ---------- | ------- |
+        | 11th       | 1.6.0   |
+        | 12th       | 1.8.0   |
+        | 14th       | 1.0.0   |
 
-        Capsule updates are only available when Intel ME is HAP-Disabled and the
-        AC adapter is connected to the laptop
+        !!! note
 
-        See [this Knowledge Base article](../../../dasharo-menu-docs/dasharo-system-features/#intel-management-engine-options)
-        for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
-        for more context.
+            Capsule updates are only available when Intel ME is HAP-Disabled and the
+            AC adapter is connected to the laptop
 
-    To update your firmware, run the following commands:
+            See [this Knowledge Base article](../../../dasharo-menu-docs/dasharo-system-features/#intel-management-engine-options)
+            for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
+            for more context.
 
-    ```bash
-    $ sudo fwupdtool refresh
-    $ sudo fwupdtool update
-    ```
+        To update your firmware, run the following commands:
 
-    or use any other fwupd front-end of your choice, like GNOME Firmware Update.
-    Then, reboot your machine to apply the update.
+        ```bash
+        $ sudo fwupdtool refresh
+        $ sudo fwupdtool update
+        ```
 
-    !!! warning
-        Powering off instead of rebooting as instructed by fwupd will result in
-        aborting the update.
+        or use any other fwupd front-end of your choice, like GNOME Firmware Update.
+        Then, reboot your machine to apply the update.
 
-    ### Firmware Update Mode
+        !!! warning
+            Powering off instead of rebooting as instructed by fwupd will result in
+            aborting the update.
 
-    Firmware Update Mode is available starting with the following versions:
+        ### Firmware Update Mode
 
-    | Generation | Version |
-    | ---------- | ------- |
-    | 11th       | 1.5.0   |
-    | 12th       | 1.7.0   |
-    | 14th       | Any     |
+        Firmware Update Mode is available starting with the following versions:
 
-    To update using Firmware Update Mode, follow the
-    [generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
+        | Generation | Version |
+        | ---------- | ------- |
+        | 11th       | 1.5.0   |
+        | 12th       | 1.7.0   |
+        | 14th       | Any     |
 
-    Check out our [YouTube video](https://www.youtube.com/watch?v=muWjhrQ7bQk)
-    for a demonstration of Firmware Update Mode.
+        To update using Firmware Update Mode, follow the
+        [generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
 
-    ### Updating older versions
+        Check out our [YouTube video](https://www.youtube.com/watch?v=muWjhrQ7bQk)
+        for a demonstration of Firmware Update Mode.
 
-    1. First, ensure that [UEFI Secure Boot](../../dasharo-tools-suite/documentation/features.md#disabling-secure-boot)
-       has been disabled.
+        ### Updating older versions
 
-    1. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
-       We recommend the network boot option.
+        1. First, ensure that [UEFI Secure Boot](../../dasharo-tools-suite/documentation/features.md#disabling-secure-boot)
+           has been disabled.
 
-    1. In the main menu of Dasharo Tools Suite, select option `5` to proceed with
-       the installation of the firmware update.
+        1. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
+           We recommend the network boot option.
 
-    1. In case you want to know more about the firmware update option in Dasharo
-       Tools Suite, please check out the
-       [features section](../../dasharo-tools-suite/documentation/features.md#firmware-update)
-       of the dedicated Dasharo Tools Suite documentation page.
+        1. In the main menu of Dasharo Tools Suite, select option `5` to proceed with
+           the installation of the firmware update.
 
-    ### Manual update
+        1. In case you want to know more about the firmware update option in Dasharo
+           Tools Suite, please check out the
+           [features section](../../dasharo-tools-suite/documentation/features.md#firmware-update)
+           of the dedicated Dasharo Tools Suite documentation page.
 
-    This update method is for advanced users only and is not recommended for
-    regular end users.
+        ### Manual update
+
+        This update method is for advanced users only and is not recommended for
+        regular end users.
+
+        > Please make sure you that you update the BIOS firmware and the EC firmware
+        > respectively, as the laptop will power off after the EC firmware flash.
+
+    === "NUC BOX"
+
+        ### Manual update
+
+        Currently, the NUC BOX only supports updating the firmware manually via DTS.
 
     Ensure that the firmware protections are disabled (1) in
     [Dasharo Security Options](../../dasharo-menu-docs/dasharo-system-features.md).
@@ -107,13 +118,10 @@ firmware version is currently installed on your device.
     1. These options were introduced in v1.5.0 for TGL models and v1.7.0 for ADL
        models. You can skip these steps if you are using an older firmware version.
 
-    Follow the manual update procedure described in the [DTS firmware update
+    Follow the local firmware update procedure described in the [DTS firmware update
     documentation](../../dasharo-tools-suite/documentation/features.md#local-firmware-update).
 
-    > Please make sure you that you update the BIOS firmware and the EC firmware
-    > respectively, as the laptop will power off after the EC firmware flash.
-    >
-    > Please also note that
+    > Please note that
     > [network boot must be enabled](../../dasharo-menu-docs/dasharo-system-features.md#networking-options)
     > if you want to boot to the Dasharo Tools Suite over a network connection.
 
