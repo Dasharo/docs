@@ -72,6 +72,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Intel microcode version ADL-N N0 0x1d 06/12/2024](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-be-00)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
 
-[protectli_vp2440_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom
-[protectli_vp2440_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom.sha256
-[protectli_vp2440_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom.sha256.sig
+[protectli_vp2440_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom
+[protectli_vp2440_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom.sha256
+[protectli_vp2440_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom.sha256.sig
