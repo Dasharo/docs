@@ -26,7 +26,7 @@ simple button press.
 |--|
 |Firmware update available in Gnome Software|
 
-For more advanced users, and more lightweight
+For more advanced users or in more lightweight
 DEs/WMs `fwupdmgr` can be used in the terminal.
 
 * Detect the supported hardware
