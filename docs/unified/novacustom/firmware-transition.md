@@ -1,19 +1,16 @@
 # Firmware transition
 
+## Introduction
+
+This document describes the process of transitioning from Dasharo UEFI to Heads
+and the other way around.
+
 === "NUC BOX"
 
     The transition is currently only supported on laptops. The NUC BOX is
     currently not supported by Heads.
 
 === "Laptops"
-
-    ## Introduction
-
-    This document describes the process of transitioning from Dasharo UEFI to Heads
-    and the other way around.
-
-    > NOTE: The transition is currently only supported on laptops. The NUC BOX is
-      currently not supported by Heads.
 
     ## Switching from Dasharo UEFI to Heads
 
