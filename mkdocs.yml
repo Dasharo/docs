@@ -341,6 +341,7 @@ nav:
           - 'Protectli VP2440':
               - 'Releases': variants/protectli_vp2440/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_vp2440/hardware-matrix.md
+              - 'Openness score': variants/protectli_vp2440/openness_score.md
           - 'Protectli VP32XX':
               - 'Releases': variants/protectli_vp32xx/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_vp32xx/hardware-matrix.md
