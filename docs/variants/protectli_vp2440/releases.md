@@ -41,7 +41,7 @@ Test results for this release can be found
 - [Wake on LAN disabled by default on enp2s0 on VP2440](https://github.com/Dasharo/dasharo-issues/issues/1503)
 - [Long booting time on Protectli VP2440](https://github.com/Dasharo/dasharo-issues/issues/1502)
 - [Wake from S3 does not work on VP2440](https://github.com/Dasharo/dasharo-issues/issues/1351)
-- [No netework connection in DTS when LTE module plugged](https://github.com/Dasharo/dasharo-issues/issues/1289)
+- [No network connection in DTS when LTE module plugged](https://github.com/Dasharo/dasharo-issues/issues/1289)
 
 ### Binaries
 
