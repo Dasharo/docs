@@ -1,6 +1,8 @@
-# Introduction
+# fwupd
 
-`fwupd` is an open-source Linux daemon (background process), that
+## Introduction
+
+[fwupd][fwupd website] iis an open-source Linux daemon (background process), that
 is widely used to make firmware updates almost as seamless and simple
 as updating system packages. It is supported by most hardware vendors
 and Linux distributions.
@@ -14,7 +16,7 @@ for distributing and managing the firmware binaries to the users.
      support. Refer to the [Firmware update](https://docs.dasharo.com/unified/novacustom/firmware-update/)
      section of your device documentation.
 
-# Usage
+## Usage
 
 The most popular Desktop Environments like Gnome and KDE automatically
 look for firmware updates on LVFS and suggest performing them with a
@@ -50,3 +52,13 @@ DEs/WMs `fwupdmgr` can be used in the terminal.
     ```bash
     fwupdmgr update
     ```
+
+## References
+
+[fwupd website][fwupd website]
+[fwupd github repository][fwupd github repository]
+[fwupd documentation][fwupd documentation]
+
+[fwupd website]: https://fwupd.org
+[fwupd github repository]: https://github.com/fwupd/fwupd
+[fwupd documentation]: https://lvfs.readthedocs.io
