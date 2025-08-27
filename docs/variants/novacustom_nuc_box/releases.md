@@ -8,7 +8,7 @@ For details about our release process please read
 
 <center>
 
-{{ subscribe_form("https://newsletter.3mdeb.com/subscription/sB4G9eq9h",
+{{ subscribe_form("d982d4ac-f1b5-4926-9d89-e7bb71457dd9",
 "Subscribe to NovaCustom NUC BOX 14th Gen Dasharo Release Newsletter") }}
 
 </center>
