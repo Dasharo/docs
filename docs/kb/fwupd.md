@@ -13,8 +13,8 @@ for distributing and managing the firmware binaries to the users.
 !!! note
      `fwupd` depends on
      [Capsule Updates](https://docs.dasharo.com/guides/capsule-update/)
-     support. Refer to the [Firmware update](https://docs.dasharo.com/unified/novacustom/firmware-update/)
-     section of your device documentation.
+     support. Refer to the "Firmware update" section of your device
+     documentation (like [this one](https://docs.dasharo.com/unified/novacustom/firmware-update/)).
 
 ## Usage
 
