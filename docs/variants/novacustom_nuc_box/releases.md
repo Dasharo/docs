@@ -75,6 +75,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Intel microcode version MTL C0 0x00000020 0x25 19/03/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-aa-04)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
 
-[novacustom_nuc_box_mtl_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box/uefi/v0.9.0/novacustom_nuc_box_mtl_v0.9.0.rom
-[novacustom_nuc_box_mtl_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box/uefi/v0.9.0/novacustom_nuc_box_mtl_v0.9.0.rom.sha256
-[novacustom_nuc_box_mtl_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box/uefi/v0.9.0/novacustom_nuc_box_mtl_v0.9.0.rom.sha256.sig
+[novacustom_nuc_box_mtl_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.0/novacustom_nuc_box_mtl_v0.9.0.rom
+[novacustom_nuc_box_mtl_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.0/novacustom_nuc_box_mtl_v0.9.0.rom.sha256
+[novacustom_nuc_box_mtl_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.0/novacustom_nuc_box_mtl_v0.9.0.rom.sha256.sig
