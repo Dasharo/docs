@@ -48,6 +48,9 @@ Test results for this release can be found
 [protectli_vp2440_v0.9.0.rom][protectli_vp2440_v0.9.0.rom_file]{.md-button}
 [sha256][protectli_vp2440_v0.9.0.rom_hash]{.md-button}
 [sha256.sig][protectli_vp2440_v0.9.0.rom_sig]{.md-button}
+[protectli_vp2440_v0.9.0_dev_signed.rom][protectli_vp2440_v0.9.0_dev_signed.rom_file]{.md-button}
+[sha256_dev_signed][protectli_vp2440_v0.9.0_dev_signed.rom_hash]{.md-button}
+[sha256_dev_signed.sig][protectli_vp2440_v0.9.0_dev_signed.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
@@ -75,3 +78,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [protectli_vp2440_v0.9.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom
 [protectli_vp2440_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom.sha256
 [protectli_vp2440_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0.rom.sha256.sig
+[protectli_vp2440_v0.9.0_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0_dev_signed.rom
+[protectli_vp2440_v0.9.0_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0_dev_signed.rom.sha256
+[protectli_vp2440_v0.9.0_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_adln_vp2440/uefi/v0.9.0/protectli_vp2440_v0.9.0_dev_signed.rom.sha256.sig
