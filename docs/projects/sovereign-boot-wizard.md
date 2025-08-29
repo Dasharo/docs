@@ -61,6 +61,9 @@ feedback:
 Feel free to suggest new improvements and features to extend the Sovereign
 Boot Provisioning Wizard.
 
+If you have any questions about Sovereign Boot Provisioning Wizard, visit the
+[FAQ](../osf-trivia-list/sovereign-boot-wizard.md).
+
 ## Releases
 
 ### RC3 - 2025-08-29
