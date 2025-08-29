@@ -526,6 +526,7 @@ nav:
       - 'Jira Service Management': osf-trolling-list/jsm_documentation.md
       - 'Intel ME/CSME': osf-trivia-list/me.md
       - 'Capsule Update': osf-trivia-list/capsule-update.md
+      - 'Sovereign Boot Provisioning Wizard': osf-trivia-list/sovereign-boot-wizard.md
   - 'Ecosystem':
       - 'Overview': ecosystem/overview.md
     # - 'Customer Infrastructure': ecosystem/customer-infrastructure.md
