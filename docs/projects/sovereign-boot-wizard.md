@@ -71,7 +71,7 @@ If you have any questions about Sovereign Boot Provisioning Wizard, visit the
 #### Added
 
 * Filtering and skipping Microsoft certificates in the image signatures
-* Sovereign Boot tested on Hardkernel ODORID-H4 hardware
+* Sovereign Boot tested on Hardkernel ODROID-H4 hardware
 
 #### Fixed
 
