@@ -71,7 +71,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
     + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/LICENSE)
 - [Intel Management Engine version v18.0.5.2028](https://github.com/Dasharo/dasharo-blobs/blob/52647f9c/novacustom/nuc_box/me.bin)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel Firmware Support Package for Meteor Lake-H version 2024/04/30 v4122_12](https://github.com/Dasharo/dasharo-blobs/tree/52647f9c/novacustom/nuc_box/MeteorLakeFspBinPkg)
+- [Intel Firmware Support Package for Meteor Lake-H version 2024/04/30 v4122_12](https://github.com/Dasharo/dasharo-blobs/tree/52647f9c/novacustom/v5x0tu/MeteorLakeFspBinPkg)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
 - [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/52647f9c/novacustom/nuc_box/ifd.bin)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
