@@ -49,6 +49,61 @@ One may contribute to the project in many ways:
 
 ## Releases
 
+### RC3 - 2025-08-29
+
+#### Added
+
+* Filtering and skipping Microsoft certificates in the image signatures
+* Sovereign Boot tested on Hardkernel ODORID-H4 hardware
+
+#### Fixed
+
+* [Measured boot reports volume full error when chaining EFI binary from the
+  Sovereign Boot Provisioning
+  Wizard](https://github.com/Dasharo/dasharo-issues/issues/1479)
+* [UEFI Secure Boot variables protection not yet tested](https://github.com/Dasharo/dasharo-issues/issues/1478)
+
+#### Known issues
+
+* [Sovereign Boot Wizard does not discover alternative bootloaders yet](https://github.com/Dasharo/dasharo-issues/issues/1549)
+
+#### Binaries
+
+[coreboot.rom.sha256](https://cloud.3mdeb.com/index.php/s/AncgQjjXD55R37Z/download){.md-button}
+
+#### SBOM
+
+* [coreboot based on 24.12 revision hardkernel_odroid_h4_sovereign_boot-rc3](https://github.com/Dasharo/coreboot/tree/hardkernel_odroid_h4_sovereign_boot-rc3)
+    + [License](https://github.com/Dasharo/coreboot/blob/hardkernel_odroid_h4_sovereign_boot-rc3/COPYING)
+* [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc3](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc3)
+    + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc3/License.txt)
+
+#### Building
+
+Follow the [instructions for
+ODROID-H4](../variants/hardkernel_odroid_h4/building-manual.md#building) by using
+`hardkernel_odroid_h4_sovereign_boot-rc3` tag to checkout coreboot repository.
+The resulting file will be placed in `<coreboot_dir>/build/coreboot.rom`.
+
+#### Video demonstration
+
+Watch a short demonstration of Sovereign Boot Wizard in action. This video
+covers the new features of the Sovereign Boot Wizard and complements the
+documentation.
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/z316ml12hm8?si=xxeA4XMQt8Lnevr4"
+    title="Sovereign Boot Wizard RC3 Demo"
+    frameborder="0"
+    allow="accelerometer; autoplay;
+      clipboard-write; encrypted-media;
+      gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ### RC2 - 2025-07-31
 
 #### Added
@@ -138,7 +193,7 @@ documentation.
 <div class="video-wrapper">
   <iframe
     src="https://www.youtube.com/embed/jaDbdBFU1KI?si=lpiHDN3-MLXhmTRB"
-    title="Sovereign Boot Wizard RC1 Demo"
+    title="Sovereign Boot Wizard RC2 Demo"
     frameborder="0"
     allow="accelerometer; autoplay;
       clipboard-write; encrypted-media;
