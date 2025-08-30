@@ -86,21 +86,36 @@ If you have any questions about Sovereign Boot Provisioning Wizard, visit the
 
 #### Binaries
 
-[coreboot.rom.sha256](https://cloud.3mdeb.com/index.php/s/AncgQjjXD55R37Z/download){.md-button}
+[odroid.sha256](https://cloud.3mdeb.com/index.php/s/AncgQjjXD55R37Z/download){.md-button}
+
+[qemu_q35_sovereign-boot-rc3.rom](https://cloud.3mdeb.com/index.php/s/idyF8SAt2mt7PcY/download){.md-button}
+[qemu_q35_sovereign-boot-rc3.rom.sha256](https://cloud.3mdeb.com/index.php/s/8St37Wi6A56z3w5/download){.md-button}
 
 #### SBOM
 
 * [coreboot based on 24.12 revision hardkernel_odroid_h4_sovereign_boot-rc3](https://github.com/Dasharo/coreboot/tree/hardkernel_odroid_h4_sovereign_boot-rc3)
     + [License](https://github.com/Dasharo/coreboot/blob/hardkernel_odroid_h4_sovereign_boot-rc3/COPYING)
+* [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc3](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc3)
+    + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc3/COPYING)
 * [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc3](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc3)
     + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc3/License.txt)
 
 #### Building
 
-Follow the [instructions for
-ODROID-H4](../variants/hardkernel_odroid_h4/building-manual.md#building) by using
-`hardkernel_odroid_h4_sovereign_boot-rc3` tag to checkout coreboot repository.
-The resulting file will be placed in `<coreboot_dir>/build/coreboot.rom`.
+* ODROID-H4
+
+    Follow the [instructions for
+    ODROID-H4](../variants/hardkernel_odroid_h4/building-manual.md#building) by
+    using `hardkernel_odroid_h4_sovereign_boot-rc3` tag to checkout coreboot
+    repository. The resulting file will be placed in
+    `<coreboot_dir>/build/coreboot.rom`.
+
+* QEMU:
+
+    Follow the [instructions for
+    QEMU](../variants/qemu_q35/building-manual.md#procedure). Checkout
+    `qemu_q35_sovereign_boot-rc3` tag on coreboot repository and use new `qemu_svboot`
+    target as an argument to `./build.sh` script.
 
 #### Video demonstration
 
@@ -146,11 +161,6 @@ documentation.
   Wizard](https://github.com/Dasharo/dasharo-issues/issues/1479)
 * [UEFI Secure Boot variables protection not yet tested](https://github.com/Dasharo/dasharo-issues/issues/1478)
 
-#### Binaries
-
-[qemu_q35.rom](https://cloud.3mdeb.com/index.php/s/MHtDwBz7e2QMXTx/download){.md-button}
-[sha256](https://cloud.3mdeb.com/index.php/s/Ntki9AAJGooqf5Q/download){.md-button}
-
 #### SBOM
 
 * [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc2](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc2)
@@ -161,8 +171,9 @@ documentation.
 #### Building
 
 Follow the [instructions for
-QEMU](../variants/qemu_q35/building-manual.md#procedure) (use new
-`qemu_svboot` target as an argument to `./build.sh` script).
+QEMU](../variants/qemu_q35/building-manual.md#procedure). Checkout
+`qemu_q35_sovereign_boot-rc2` tag on coreboot repository and use new
+`qemu_svboot` target as an argument to `./build.sh` script.
 
 #### Testing
 
