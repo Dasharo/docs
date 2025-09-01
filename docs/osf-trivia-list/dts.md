@@ -32,17 +32,47 @@ This section describes how to do it.
   `Load your DPP keys`, by pressing `4` and `Enter`.
 
 * Next, rewrite the credentials received in the following order:
-    - `logs key`,
-    - `firmware download key`,
+    - `e-mail`,
     - `password`.
 
 * Credentials will be verified by DTS attempting to connect to our server. If
   successful, the message `Verification of the Dasharo DPP was successful. They
   are valid and will be used.` will be displayed.
 
-Below is a short video that presents loading of the DPP keys.
+Below is a short demo that presents loading of the DPP keys.
 
-![IMG](img/dpp-creds.gif)
+```console hl_lines="24-29"
+ Dasharo Tools Suite Script 2.6.0
+ (c) Dasharo <contact@dasharo.com>
+ Report issues at: https://github.com/Dasharo/dasharo-issues
+*********************************************************
+**                HARDWARE INFORMATION
+*********************************************************
+**    System Inf.: Emulation QEMU x86 q35/ich9
+** Baseboard Inf.: Emulation QEMU x86 q35/ich9
+**       CPU Inf.: QEMU Virtual CPU version 2.5+
+**    RAM Virtual: Not Specified
+*********************************************************
+**                FIRMWARE INFORMATION
+*********************************************************
+** BIOS Inf.: 3mdeb Dasharo (coreboot+UEFI) v0.2.1-rc1
+*********************************************************
+**     1) Dasharo HCL report
+**     2) Update Dasharo Firmware
+**     4) Load your DPP keys
+**     6) Transition Dasharo Firmware
+*********************************************************
+R to reboot  P to poweroff  S to enter shell
+K to launch SSH server  L to enable sending DTS logs
+
+Enter an option:
+4
+
+Enter DPP email:   you@example.com
+
+Enter password:    password
+Dasharo DPP credentials have been saved
+```
 
 ## How to support us?
 
