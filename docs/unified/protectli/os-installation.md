@@ -35,6 +35,8 @@ Installer images can be downloaded from the official
 Official documentation can be found
 [here](https://docs.netgate.com/pfsense/en/latest/install/index.html).
 
+[Dasharo pfSense 2.7.2 installation guide](./os-installation-pfsense.md)
+
 ### Installation images
 
 Installer images can be downloaded from the official
@@ -77,10 +79,7 @@ Installer images can be downloaded from the official
 Official documentation can be found
 [here](https://docs.opnsense.org/manual/install.html).
 
-!!! Note
-
-    When you boot the installer's live environment to start installation
-    you have to log in as **installer** with password **opnsense**.
+[Dasharo OPNsense 25.1 installation guide](./os-installation-opnsense.md)
 
 ### Installation images
 
