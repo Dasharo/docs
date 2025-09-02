@@ -24,6 +24,7 @@ for your device.
 #### OS installation
 
 Install all the supported operating systems.
+
 * Use the ready-to-use disk images by running the
 [automated disk flashing utility test suite](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/util/restore-disk-auto.robot)
 in case every one, or some of the required `OPERATING_SYSTEM`s are available
