@@ -47,7 +47,7 @@ Test results for this release can be found
 
 - [S3 sleep too short on ODROID H4 Plus](https://github.com/Dasharo/dasharo-issues/issues/1213)
 - [Can't delete signature of enrolled EFI file from DB as it's not shown](https://github.com/Dasharo/dasharo-issues/issues/1365)
-- [Dismisssing a pop-up in UEFI paylaod caused instant booting](https://github.com/Dasharo/dasharo-issues/issues/1539)
+- [Dismissing a pop-up in UEFI payload caused instant booting](https://github.com/Dasharo/dasharo-issues/issues/1539)
 - [Recovery of damaged variable storage causing random settings reset](https://github.com/Dasharo/dasharo-issues/issues/1293)
 
 ### Binaries
@@ -57,17 +57,37 @@ If you wish to use a Net Card module, please use the files suffixed with
 [ODROID
 wiki](https://wiki.odroid.com/accessory/connectivity/netcard3?s[]=netcard#netcard_bios_versions).
 
+[sha256][hardkernel_odroid_h4_v0.9.1.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1.cap)
+
 [sha256][hardkernel_odroid_h4_v0.9.1.rom_hash]{.md-button}
 [sha256.sig][hardkernel_odroid_h4_v0.9.1.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1.rom)
 
-[dev_signed.sha256][hardkernel_odroid_h4_v0.9.1_dev_signed.rom_hash]{.md-button}
-[dev_signed.sha256.sig][hardkernel_odroid_h4_v0.9.1_dev_signed.rom_sig]{.md-button}
+[sha256][hardkernel_odroid_h4_v0.9.1_dev_signed.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_dev_signed.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_dev_signed.cap)
 
-[netcard.sha256][hardkernel_odroid_h4_v0.9.1_netcard.rom_hash]{.md-button}
-[netcard.sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard.rom_sig]{.md-button}
+[sha256][hardkernel_odroid_h4_v0.9.1_dev_signed.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_dev_signed.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_dev_signed.rom)
 
-[netcard_dev_signed.sha256][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_hash]{.md-button}
-[netcard_dev_signed.sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_sig]{.md-button}
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard.cap)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard.rom)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom)
 
 This is a Dasharo Pro Package Release. To access the pre-built binaries,
 you need to [subscribe to the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
@@ -102,12 +122,20 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 - [Intel microcode version ADL-N N0 0x1d 06/12/2024](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-be-00)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
 
+[hardkernel_odroid_h4_v0.9.1.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.cap.sha256
+[hardkernel_odroid_h4_v0.9.1.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.cap.sha256.sig
 [hardkernel_odroid_h4_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.rom.sha256
 [hardkernel_odroid_h4_v0.9.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.rom.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.cap.sha256
+[hardkernel_odroid_h4_v0.9.1_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.cap.sha256.sig
 [hardkernel_odroid_h4_v0.9.1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.rom.sha256
 [hardkernel_odroid_h4_v0.9.1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.rom.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_netcard.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.cap.sha256
+[hardkernel_odroid_h4_v0.9.1_netcard.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.cap.sha256.sig
 [hardkernel_odroid_h4_v0.9.1_netcard.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.rom.sha256
 [hardkernel_odroid_h4_v0.9.1_netcard.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.rom.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap.sha256
+[hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap.sha256.sig
 [hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom.sha256
 [hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom.sha256.sig
 
