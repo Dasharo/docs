@@ -52,6 +52,11 @@ Test results for this release can be found
 
 ### Binaries
 
+If you wish to use a Net Card module, please use the files suffixed with
+`netcard`. They have the proper 4x1 bifurcation in M.2 slot as explained on
+[ODROID
+wiki](https://wiki.odroid.com/accessory/connectivity/netcard3?s[]=netcard#netcard_bios_versions).
+
 [sha256][hardkernel_odroid_h4_v0.9.1.rom_hash]{.md-button}
 [sha256.sig][hardkernel_odroid_h4_v0.9.1.rom_sig]{.md-button}
 
