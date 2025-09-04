@@ -189,7 +189,7 @@ Freight voiding any subsequent damage claims.
 ## The TPM module is required to install Heads. Will this one work?
 
 We do not recommend to buy any cheap replacement TPM chips. We observed board
-malfunctions with such chips. I can only advise to buy original MSI TPM chips:
+malfunctions with such chips. We can only advise buying original MSI TPM chips:
 <https://www.msi.com/Motherboard/TPM-20-Module>. 
 Either TPM 2.0 (MS-4462) or TPM 2.0 (9672), both will work. Pay attention to the
 interface used and pin count, it must be SPI interface and 12-1 pin. We also
