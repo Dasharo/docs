@@ -191,6 +191,12 @@ Select your operating system to view applicable instructions:
     Several features on Windows 11 (i. e. suspending the device) may not work or
     work unexpectedly without installing all of the updates and drivers.
 
+    ???+ info
+        On NUC BOX, to provide basic network connectivity, Intel ethernet driver must
+        be installed. Download link: [Intel® Network Adapter Driver for Microsoft Windows 11](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
+        After successful driver update on both ethernet ports, Windows Update should
+        be able to install correct Wi-Fi diver.
+
     To install all of them, log into the system, connect the device to the mains
     and Internet, then follow the steps below:
 
