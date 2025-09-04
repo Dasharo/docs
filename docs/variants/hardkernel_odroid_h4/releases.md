@@ -18,6 +18,127 @@ For details about our release process please read
 {{ subscribe_form("d4b31e80-7663-4f6b-8fcb-f5ff551eb1d6",
 "Subscribe to Hardkernel ODROID H4 Dasharo Release Newsletter") }}
 
+## v0.9.1 - 2025-09-03
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Hardkernel/Odroid_H4/v0.9.1_results.csv).
+
+### Added
+
+- Support for the Hardkernel ODROID H4 Ultra device
+- [Support for Net Card 2 module](https://github.com/Dasharo/dasharo-issues/issues/1281)
+- [Capsule Update integration](https://github.com/Dasharo/dasharo-issues/issues/1471)
+- [In-Band ECC option](https://github.com/Dasharo/dasharo-issues/issues/1276)
+- [Quiet and fast boot option](https://github.com/Dasharo/dasharo-issues/issues/1278)
+- [ME disable option](https://github.com/Dasharo/dasharo-issues/issues/1279)
+- Boot Guard status information to UEFI setup menu
+- Improved measured boot support
+- Microsoft Option ROM UEFI CA to Secure Boot DB
+- Check for flash descriptor writability when exposign HAP disable option
+
+### Changed
+
+- [VBT file to fix graphical output in firmware](https://github.com/Dasharo/dasharo-issues/issues/1353)
+- Flash descriptor updated to v1.1 (see SBOM)
+- Owner GUID of Secure Boot DB and KEK to Microsoft recommended values
+- Updated DBX to 2025-06-13
+
+### Fixed
+
+- [S3 sleep too short on ODROID H4 Plus](https://github.com/Dasharo/dasharo-issues/issues/1213)
+- [Can't delete signature of enrolled EFI file from DB as it's not shown](https://github.com/Dasharo/dasharo-issues/issues/1365)
+- [Dismissing a pop-up in UEFI payload caused instant booting](https://github.com/Dasharo/dasharo-issues/issues/1539)
+- [Recovery of damaged variable storage causing random settings reset](https://github.com/Dasharo/dasharo-issues/issues/1293)
+
+### Binaries
+
+If you wish to use a Net Card module, please use the files suffixed with
+`netcard`. They have the proper 4x1 bifurcation in M.2 slot as explained on
+[ODROID
+wiki](https://wiki.odroid.com/accessory/connectivity/netcard3?s[]=netcard#netcard_bios_versions).
+
+[sha256][hardkernel_odroid_h4_v0.9.1.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1.cap)
+
+[sha256][hardkernel_odroid_h4_v0.9.1.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1.rom)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_dev_signed.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_dev_signed.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_dev_signed.cap)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_dev_signed.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_dev_signed.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_dev_signed.rom)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard.cap)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard.rom)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap)
+
+[sha256][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_hash]{.md-button}
+[sha256.sig][hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_sig]{.md-button}
+(hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom)
+
+This is a Dasharo Pro Package Release. To access the pre-built binaries,
+you need to [subscribe to the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our
+[shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-pro-package-for-network-appliance/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter, and
+gain entry to the Dasharo Premier Support invite-only live chat on the Matrix
+network, enabling direct engagement with the Dasharo Team and fellow
+subscribers for personalized, priority assistance.
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/hardkernel_odroid_h4/dasharo-release-0.x-compatible-with-hardkernel-odroid-h4-family-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 24.12 revision 7d10ea62](https://github.com/Dasharo/coreboot/tree/7d10ea62)
+    + [License](https://github.com/Dasharo/coreboot/blob/7d10ea62/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202502 revision 91a7a092](https://github.com/Dasharo/edk2/tree/91a7a092)
+    + [License](https://github.com/Dasharo/edk2/blob/91a7a092/License.txt)
+- [Dasharo iPXE fork based on 2025.03 revision 6c7068fc](https://github.com/Dasharo/ipxe/tree/6c7068fc)
+    + [License](https://github.com/Dasharo/ipxe/blob/6c7068fc/COPYING.GPLv2)
+- [vboot based on f1f70f46dc revision f1f70f46](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/LICENSE)
+- [Intel Management Engine version v16.50.10.1351](https://github.com/Dasharo/dasharo-blobs/blob/52647f9c/hardkernel/odroid-h4/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/52647f9c/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.1](https://github.com/Dasharo/dasharo-blobs/blob/52647f9c/hardkernel/odroid-h4/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/52647f9c/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version IoT ADL-N MR6 (6023_00)](https://github.com/intel/FSP/commits/86c91116/AlderLakeFspBinPkg/IoT/AlderLakeN)
+    + [License](https://github.com/intel/FSP/blob/86c91116/FSP_License.pdf)
+- [Intel microcode version ADL-N N0 0x1d 06/12/2024](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-be-00)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
+
+[hardkernel_odroid_h4_v0.9.1.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.cap.sha256
+[hardkernel_odroid_h4_v0.9.1.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.cap.sha256.sig
+[hardkernel_odroid_h4_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.rom.sha256
+[hardkernel_odroid_h4_v0.9.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1.rom.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.cap.sha256
+[hardkernel_odroid_h4_v0.9.1_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.cap.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.rom.sha256
+[hardkernel_odroid_h4_v0.9.1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_dev_signed.rom.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_netcard.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.cap.sha256
+[hardkernel_odroid_h4_v0.9.1_netcard.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.cap.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_netcard.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.rom.sha256
+[hardkernel_odroid_h4_v0.9.1_netcard.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard.rom.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap.sha256
+[hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.cap.sha256.sig
+[hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom.sha256
+[hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/hardkernel_odroid_h4/uefi/v0.9.1/hardkernel_odroid_h4_v0.9.1_netcard_dev_signed.rom.sha256.sig
+
 ## v0.9.0 - 2025-02-20
 
 Test results for this release can be found
@@ -55,8 +176,8 @@ Test results for this release can be found
 [sha256][hardkernel_odroid_h4_v0.9.0.rom_hash]{.md-button}
 [sha256.sig][hardkernel_odroid_h4_v0.9.0.rom_sig]{.md-button}
 
-[sha256][hardkernel_odroid_h4_v0.9.0_dev_signed.rom_hash]{.md-button}
-[sha256.sig][hardkernel_odroid_h4_v0.9.0_dev_signed.rom_sig]{.md-button}
+[dev_signed.sha256][hardkernel_odroid_h4_v0.9.0_dev_signed.rom_hash]{.md-button}
+[dev_signed.sha256.sig][hardkernel_odroid_h4_v0.9.0_dev_signed.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
