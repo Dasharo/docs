@@ -3,7 +3,7 @@
 ## Introduction & installer pre-seed
 
 This document describes prepearation and usage of OPNsense Serial Installer
-in Dasharo testing environment. For start, USB stick with pfSense serial
+in Dasharo testing environment. For start, USB stick with OPNsense serial
 installer is required. All OSFV test IDs and names are referring to the following
 test suite:
 
@@ -91,10 +91,12 @@ Confirm with `OK`, wait for test suite to finish, and connect to DUT via serial.
 If nothing is displayed, try arrow keys, do not press `ENTER` at this point.
 
 You should be asked for installer credentials. Log in with:
+
 ```bash
 login: installer
 Password: opnsense
 ```
+
 ![](../../images/opnsense/opnsense_installer_login.png){: style="width:480px"}
 
 Now select keymap, or navigate to `Select` and confirm default with `ENTER`.
