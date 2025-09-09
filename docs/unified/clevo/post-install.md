@@ -262,3 +262,13 @@ Select your operating system to view applicable instructions:
 
     After the update, Thunderbolt Control Center will become available and the
     warning in device manager will disappear.
+
+    ### Enable hibernation
+
+    If you wish to use hibernation (S4) on your laptop, run these commands in
+    PowerShell as an Administrator:
+
+    ```powershell
+    powercfg /h on
+    powercfg /h /type full
+    ```
