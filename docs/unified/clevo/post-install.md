@@ -73,6 +73,20 @@ Select your operating system to view applicable instructions:
     curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup | sudo sh
     ```
 
+    ### Enable hibernation
+
+    If you wish to use hibernation (S4) on your laptop, please follow
+    [this guide](https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/)
+    . Then, execute the following command:
+
+    ```bash
+    echo 259:3 | sudo tee /sys/power/resume
+    ```
+    It might also be necessary to create or increase your current swap
+    partition/file - it should be slightly larger than the size of your RAM. In
+     such case, please refer to the instructions provided
+    [here](https://askubuntu.com/a/178726).
+
 === "Fedora"
     ### Touchpad hotkey enablement
 
@@ -140,6 +154,15 @@ Select your operating system to view applicable instructions:
     ```bash
     curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/sata-suspend-fixup | sudo sh
     ```
+
+    ### Enable hibernation
+
+    If you wish to use hibernation (S4) on your laptop, please follow
+    [this guide](https://discussion.fedoraproject.org/t/setup-hibernation-on-fedora-atomic-desktops/121534/3)
+    . It might also be necessary to create or increase your current swap
+    partition/file - it should be slightly larger than the size of your RAM. In
+     such case, please refer to the instructions provided
+    [here](https://superuser.com/questions/1778582/how-to-add-swap-space-on-fedora).
 
 === "Qubes OS"
     ### Touchpad hotkey enablement
