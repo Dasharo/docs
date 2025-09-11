@@ -15,8 +15,8 @@ measurements are done in response to user actions).
 TPM event log maintained throughout the boot process is meant to track this kind
 of information, but due to limitations of its format the log is rarely enough
 to understand all of the measurements.  This document is meant to describe when
-Dasharo updates PCRs so users would know which PCRs to use and when to expect
-their values to be changed.
+Dasharo updates PCRs so users would know which PCRs to use for sealing secrets
+and when to expect their values to be changed.
 
 Firmware components are described separately because not all components might
 be present in a given firmware variant.
@@ -45,14 +45,14 @@ firmware after coreboot, you get a mix of both.
 
 ### PCR banks
 
-At the time of writing (July 2024) coreboot supports extending only a single
-bank of a PCR despite ability of TPM 2.0 to handle multiple banks.  A PCR bank,
-which corresponds to a specific hash function, is fixed at build time:
+At the time of writing (September 2025) coreboot supports extending only a
+single bank of a PCR despite ability of TPM 2.0 to handle multiple banks.  A PCR
+bank, which corresponds to a specific hash function, is fixed at build time:
 
 | TPM version | PCR Bank
 | ----------- | --------
 | 1.2         | SHA-1 only
-| 2.0         | SHA-256 only (default used by Dasharo, but there are others)
+| 2.0         | SHA-256 only (default used by Dasharo, but there are other options)
 
 This has an implication for TPM 2.0 case when multiple PCR banks are active and
 used by EDK.  This is handled by using dummy hash values (`0100...`) for missing
@@ -74,8 +74,9 @@ ROM, which results in the same data being measured multiple times in some cases.
 
 ### PCR banks
 
-EDK allows a user to select which TPM banks are active and aligns measurements
-with that.  Practically this means usage of all available PCR banks by default.
+EDK allows a user to select which TPM banks are active and aligns its
+measurements with that.  Practically this means usage of all available PCR banks
+by default.
 
 Note that coreboot handles PCR banks differently, see above for more details and
 implications.
@@ -94,7 +95,7 @@ measurements.
 | PCR      | Event type                       | Condition           | Description
 | ---      | ----------                       | ---------           | -----------
 | PCR-0    | EV_S_CRTM_VERSION                | Always              | Firmware version (empty string ATM)
-| PCR-0    | EV_EFI_PLATFORM_FIRMWARE_BLOB    | Always              | UEFI firmware volume base+size (TPM2 could use v2 of the event, but doesn't ATM)
+| PCR-0    | EV_EFI_PLATFORM_FIRMWARE_BLOB    | Always              | UEFI firmware volume base+size (TPM2 could use v2 of the event, but doesn't ATM), can appear more than once
 | PCR-7    | EV_EFI_VARIABLE_DRIVER_CONFIG    | Always for TPM 2.0  | 61dfe48b-ca93-d211-aa0d-00e098032b8c:SecureBoot variable
 |          |                                  | These variables set | 61dfe48b-ca93-d211-aa0d-00e098032b8c:PK variable
 |          |                                  |                     | 61dfe48b-ca93-d211-aa0d-00e098032b8c:KEK variable
@@ -106,7 +107,7 @@ measurements.
 | PCR-1    | EV_EFI_VARIABLE_BOOT             | First boot try      | 61dfe48b-ca93-d211-aa0d-00e098032b8c:BootOrder variable
 |          |                                  |                     | 61dfe48b-ca93-d211-aa0d-00e098032b8c:Boot0000... variables
 | PCR-4    | EV_EFI_ACTION                    | Any boot try        | "Calling EFI Application from Boot Option"
-| PCR-0..7 | EV_SEPARATOR                     | Always              | Separator
+| PCR-0..7 | EV_SEPARATOR                     | Always              | Separator, the one for PCR-7 can appear earlier
 | PCR-1    | EV_EFI_HANDOFF_TABLES            | First boot try      | SMBIOS base+size (could use v2 of the event, but doesn't ATM)
 | PCR-4    | EV_EFI_BOOT_SERVICES_APPLICATION | Any boot try        | Hash of an EFI application (bootloader, UEFI shell, etc.)
 | PCR-7    | EV_EFI_VARIABLE_AUTHORITY        | Unknown             | Measurements done by shim as an extension of SecureBoot, listed here to show where they appear
