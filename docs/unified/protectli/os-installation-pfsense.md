@@ -2,8 +2,8 @@
 
 ## Introduction & installer pre-seed
 
-This document describes prepearation and usage of pfSense Serial Installer
-in Dasharo testing environment. For start, USB stick with pfSense serial
+This document describes preparation and usage of pfSense Serial Installer
+in Dasharo testing environment. For start, an USB stick with pfSense serial
 installer is required. All OSFV test IDs and names are referring to the following
 test suite:
 

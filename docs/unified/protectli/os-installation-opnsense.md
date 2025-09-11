@@ -2,8 +2,8 @@
 
 ## Introduction & installer pre-seed
 
-This document describes prepearation and usage of OPNsense Serial Installer
-in Dasharo testing environment. For start, USB stick with OPNsense serial
+This document describes preparation and usage of OPNsense Serial Installer
+in Dasharo testing environment. For start, an USB stick with OPNsense serial
 installer is required. All OSFV test IDs and names are referring to the following
 test suite:
 
@@ -56,7 +56,7 @@ with `yes` and `ENTER`.
 
 ![](../../images/opnsense/opnsense_preseed1.png){: style="width:480px"}
 
-From now, any modified `bsdinstall` part would be listed and differencec would be
+From now, any modified `bsdinstall` part would be listed and differences would be
 shown. Accept any change with `yes` and `ENTER`.
 
 ![](../../images/opnsense/opnsense_preseed2.png){: style="width:480px"}
