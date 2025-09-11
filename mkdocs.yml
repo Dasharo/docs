@@ -438,6 +438,14 @@ nav:
           - 'Recovery': variants/gigabyte_mz33-ar1/recovery.md
           - 'Hardware Configuration Matrix': variants/gigabyte_mz33-ar1/hardware-matrix.md
           - 'Test matrix': variants/gigabyte_mz33-ar1/test-matrix.md
+      - 'ASRock Rack SPC741D8-2L2T/BCM':
+          - 'Overview': variants/asrock_spc741d8/overview.md
+          - 'Releases': variants/asrock_spc741d8/releases.md
+          - 'Building manual': variants/asrock_spc741d8/building-manual.md
+          - 'Initial deployment': variants/asrock_spc741d8/initial-deployment.md
+          - 'Recovery': variants/asrock_spc741d8/recovery.md
+          - 'Hardware Configuration Matrix': variants/asrock_spc741d8/hardware-matrix.md
+          - 'Test matrix': variants/asrock_spc741d8/test-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
