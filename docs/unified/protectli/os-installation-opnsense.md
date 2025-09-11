@@ -107,6 +107,12 @@ To begin installation, select `Install (ZFS)`, navigate to `OK` and press `ENTER
 
 ![](../../images/opnsense/opnsense_zfs1.png){: style="width:480px"}
 
+Now, the ZFS pool name question may appear:
+
+![](../../images/opnsense/opnsense_pool.png){: style="width:480px"}
+
+Confirm with `ENTER`.
+
 Choose `stripe`, navigate to `OK` and press `ENTER`.
 
 ![](../../images/opnsense/opnsense_zfs2.png){: style="width:480px"}
