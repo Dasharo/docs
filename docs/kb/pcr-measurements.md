@@ -104,7 +104,7 @@ but it's not fixed and depends on TPM version (different drivers do things
 differently), user actions (picked a boot option from a menu or not), failure to
 boot and other things.
 
-ATM (at the moment) in the table means as of June 2024.  Empty cells match
+ATM (at the moment) in the table means as of September 2025.  Empty cells match
 contents of the last non-empty cell, so that it's easier to read sequences of
 measurements.
 
@@ -118,6 +118,7 @@ measurements.
 |          |                                  |                     | cbb219d7-3a3d-9645-a3bc-dad00e67656f:db variable
 |          |                                  |                     | cbb219d7-3a3d-9645-a3bc-dad00e67656f:dbx variable
 | PCR-0    | EV_POST_CODE                     | TPM present         | ACPI tables which are about to be published but not yet finalized for publishing
+| PCR-2    | EV_EFI_BOOT_SERVICES_DRIVER      | Option ROMs         | UEFI is loading an option ROM.
 | PCR-4    | EV_EFI_BOOT_SERVICES_APPLICATION | Boot menu/Setup     | Hash of an EFI application implementing UI
 | PCR-1    | 0x00DA0000                       | First boot try      | Dasharo-specific EFI variables (NUL-terminated ASCII name followed by variable's value)
 | PCR-1    | EV_EFI_VARIABLE_BOOT             | First boot try      | 61dfe48b-ca93-d211-aa0d-00e098032b8c:BootOrder variable
@@ -128,6 +129,7 @@ measurements.
 | PCR-4    | EV_EFI_BOOT_SERVICES_APPLICATION | Any boot try        | Hash of an EFI application (bootloader, UEFI shell, etc.)
 | PCR-7    | EV_EFI_VARIABLE_AUTHORITY        | Unknown             | Measurements done by shim as an extension of SecureBoot, listed here to show where they appear
 | PCR-8..9 | EV_IPL                           | Unknown             | Measurements done by a bootloader (GRUB, shim, etc.), listed here to show where they appear
+| PCR-9    | EV_EVENT_TAG                     | Early OS PCR data   | Measurements done by a kernel (EFI stub of Linux hashes initrd or kernel options), listed here to show where they appear
 | PCR-5    | EV_EFI_ACTION                    | OS is booting       | "Exit Boot Services Invocation"
 |          |                                  |                     | "Exit Boot Services Returned with Success"
 
