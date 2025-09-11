@@ -62,13 +62,29 @@ comply with TPM event log format.
 
 ### PCR measurements
 
-| PCR   | Event type | Condition  | Description
-| ---   | ---------- | ---------  | -----------
-| PCR-2 | EV_ACTION  | Always     | Stages, constant data, blobs, payload
-| PCR-3 | EV_ACTION  | If present | Runtime data
+| PCR   | Event type   | Condition       | Description
+| ---   | ----------   | ---------       | -----------
+| PCR-0 | EV_NO_ACTION | IBG, Locality 3 | Not a measurement, but a marker of startup locality
+| PCR-0 | EV_ACTION    | IBG             | Reconstructed IBB measurement
+| PCR-2 | EV_ACTION    | Always          | Stages, constant data, blobs, payload
+| PCR-3 | EV_ACTION    | If present      | Runtime data
+| PCR-7 | EV_ACTION    | IBG, optional   | Reconstructed authority measurement, pre-MeteorLake only, requested on provisioning
 
-The measurements are done each time a particular part of firmware is read from
-ROM, which results in the same data being measured multiple times in some cases.
+Non-IBG measurements are performed each time a particular part of firmware is
+read from ROM, which results in the same data being measured multiple times in
+some cases.
+
+IBG stands for Intel BootGuard (now part of CBnT), which is a static
+hardware-based Core Root of Trust for Measurement.  When a firmware image is
+configured and provisioned for IBG, CPU validates firmware and extends PCRs in
+the process.  No TPM event log exists at that point and it becomes a
+responsibility of coreboot to properly log the events done by hardware.
+
+!!! note
+
+    Correctly replaying IBG measurements requires relatively recent versions of
+    `tpm2_eventlog` (v5.6) or `fwupd` (v1.8.0) as older ones did not recognize
+    non-default startup locality and produced invalid expected PCR values.
 
 ## EDK measurements
 
