@@ -431,7 +431,7 @@ firmware.
                 ![](../../images/540TNDwson1.webp)
                 ![](../../images/540TNDwson2.webp)
 
-            === "V540TUPlug the programmer  14th Gen"
+            === "V540TU 14th Gen"
 
                 ![](../../images/540TUwson1.webp)
                 ![](../../images/540TUwson2.webp)
