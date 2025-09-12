@@ -39,9 +39,9 @@ chat](https://matrix.to/#/#dasharo:matrix.org). In 2024, the 3mdeb Dasharo Team
 was able to bring back PC Engines firmware in the form of Dasharo
 Pro/Enterprise Package (formerly known as Dasharo Pro Package) in two
 flavors [Dasharo
-(coreboot+SeaBIOS)](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
+(coreboot+SeaBIOS)](https://shop.3mdeb.com/product/1-year-dasharo-pro-package-for-network-appliance-corebootseabios/)
 and [Dasharo
-(coreboot+UEFI)](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/).
+(coreboot+UEFI)](https://shop.3mdeb.com/product/1-year-dasharo-pro-package-for-network-appliance/).
 
 ## References
 
