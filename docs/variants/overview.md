@@ -22,12 +22,12 @@ open-source firmware distribution.
 
 * Following network appliances are supported under **Dasharo Pro Package**:
 
-    - [Dasharo (coreboot+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance/)
+    - [Dasharo (coreboot+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/product/1-year-dasharo-pro-package-for-network-appliance/)
         + [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_uefi.md)
         + [Hardkernel Odroid H4+](../variants/hardkernel_odroid_h4/releases.md)
-    - [Dasharo (coreboot+SeaBIOS) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/1-year-dasharo-entry-subscription-for-network-appliance-corebootseabios/)
+    - [Dasharo (coreboot+SeaBIOS) Pro Package for Network Appliance](https://shop.3mdeb.com/product/1-year-dasharo-pro-package-for-network-appliance-corebootseabios/)
         + [PC Engines APU 2/3/4/6 platforms](../variants/pc_engines/releases_seabios.md)
-    - [Dasharo (Slim Bootloader+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-slim-bootloaderuefi-pro-package-for-network-appliance/)
+    - [Dasharo (Slim Bootloader+UEFI) Pro Package for Network Appliance](https://shop.3mdeb.com/product/dasharo-slim-bootloaderuefi-pro-package-for-network-appliance/)
         + [Hardkernel Odroid H4+](../variants/hardkernel_odroid_h4/releases_sbl.md)
 
 ## Laptops
@@ -43,7 +43,7 @@ open-source firmware distribution.
 
 * Following laptops are supported under **Dasharo Pro Package**:
 
-    - [Dasharo (coreboot+UEFI) transition to (coreboot+Heads) for Laptops](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/)
+    - [Dasharo (coreboot+UEFI) transition to (coreboot+Heads) for Laptops](https://shop.3mdeb.com/product/dasharo-corebootuefi-pro-package-upgrade-to-corebootheads-for-laptop-users/)
         + [NovaCustom V540TU 14th Gen](https://docs.dasharo.com/variants/novacustom_v540tu/releases_heads/)
         + [NovaCustom V560TU 14th Gen](https://docs.dasharo.com/variants/novacustom_v560tu/releases_heads/)
         + [NovaCustom NV4x 12th Gen](https://docs.dasharo.com/variants/novacustom_nv4x_adl/releases_heads/)

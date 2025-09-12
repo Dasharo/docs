@@ -3,7 +3,7 @@
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries you will have to
 [become a Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
-You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/dasharo-corebootuefi-entry-subscription-upgrade-to-corebootheads-for-laptop-users/).
+You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/product/dasharo-corebootuefi-pro-package-upgrade-to-corebootheads-for-laptop-users/).
 As a subscriber, you will receive access to all firmware updates for the
 duration of your subscription via the Dasharo Pro Package newsletter,
 and gain entry to the Dasharo Premier Support invite-only live chat
