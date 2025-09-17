@@ -141,6 +141,7 @@ laptops.
 	A **hybrid mode** that dynamically switches between the iGPU and dGPU
 	for **a balance of performance and efficiency**. Best for general use
 	with external display support.
+
 	- Automatic switching optimizes power and performance.
 	- Full external display support.
 	- Shorter battery life than iGPU Only.
@@ -151,6 +152,7 @@ laptops.
 	Designed for **maximum battery life**, this mode uses only the
 	integrated GPU. It significantly reduces power consumption but comes
 	with limitations.
+
 	- Maximizes battery life (up to **100%** longer than dGPU mode).
 	- No access to HDMI or second USB-C DisplayPort.
 
@@ -159,6 +161,7 @@ laptops.
 	Ideal for **gaming and high-performance tasks**, this mode connects
 	the internal display directly to the dedicated GPU, ensuring
 	**consistent maximum performance**.
+
 	- Delivers the highest performance.
 	- Increased power consumption.
 
