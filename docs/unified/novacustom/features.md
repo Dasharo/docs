@@ -165,6 +165,22 @@ laptops.
 	- Delivers the highest performance.
 	- Increased power consumption.
 
+	## Dasharo TrustRoot
+
+	Users willing to achieve highest level of security hardening can take
+	advantage of [Dasharo TrustRoot](../../glossary.md#dasharo-trustroot).
+	It's available on MeteorLake (MTL) devices since v1.0.0 release.  This is
+	done by choosing a fused version of binaries via
+	[DTS](../../dasharo-tools-suite/overview.md).  Capsule updates never enable
+	this feature.
+
+	!!! warning
+
+	    This feature cannot be disabled after being enabled on a given hardware.
+	    Switching it on constrains all future firmware updates.  See
+	    [Dasharo TrustRoot](../../glossary.md#dasharo-trustroot) for more
+	    details.
+
 === "NUC BOX"
 
 ## CPU throttling threshold
