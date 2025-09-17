@@ -70,3 +70,63 @@ You can also find an Openness Score comparison table in the
 [Supported hardware overview](./variants/overview.md#openness-comparison)
 section. It shows the comparison of binary openness between Dasharo and
 proprietary firmware.
+
+## Dasharo TrustRoot
+
+Dasharo TrustRoot hardens firmware security by leveraging a hardware-based
+Root of Trust.  It ensures platform integrity by verifying firmware authenticity
+during the earliest boot stages and refusing to proceed with the boot if
+firmware doesn't pass the checks.  **This renders platforms unbootable in an
+event of firmware tampering for the sake of not running an unknown and
+potentially compromised firmware.**
+
+!!! note
+
+    Making use of Dasharo TrustRoot has serious usability implications which
+    should be considered carefully.  For this reason firmware does not enable
+    this security mechanism by default requiring a user to explicitly opt-in
+    during a firmware update.
+
+    This kind of security hardening cryptographically validates firmware
+    against a specific private key managed by the device vendor.  Because the
+    private key is not available to device owners, neither adversaries nor the
+    device owners themselves can change the firmware to a version that's not
+    signed by that private key.
+
+    Another side-effect is that overall firmware layout becomes fixed once and
+    for all.
+
+Once Root of Trust has been established by hardware validating the early stages
+of firmware, Measured Boot mechanism can be used to build the Chain of Trust
+one step at a time.  With Measured Boot the part of firmware initially
+validated by hardware measures code and data that it makes use of before
+processing or running it.  That extends the trust to the new code, which in turn
+does the same to the code and data that it uses, and so on.  The Chain of Trust
+built this way relies on a TPM device and can be validated or leveraged to
+store secrets, but it's only as good as its root which, in case of Dasharo
+TrustRoot, is established in hardware.  More detailed and somewhat more
+technical information about Measured Boot is available
+[here](https://doc.coreboot.org/security/vboot/measured_boot.html) and
+[here](https://docs.dasharo.com/kb/pcr-measurements/).
+
+Secure Boot is another complementary security mechanism that benefits from
+Dasharo TrustRoot.  Once firmware as a whole is trusted, Secure Boot can be
+leveraged to ensure that only trusted device drivers or operating systems are
+loaded by the firmware.  Eventually the control reaches an OS that can further
+alter its behaviour to minimize security risks.
+
+!!! warning
+
+    Again, **once enabled, the firmware signing used by Dasharo TrustRoot
+    cannot be disabled!**  This is an irreversible process due to changes in
+    the device's hardware.  For Intel-based hardware (the only supported as of
+    September 2025), the permanent changes happen at the level of a chipset.
+
+    To be specific, field programmable fuses (FPFs) used to store hashes of
+    firmware signing keys are one-time programmable.  Initially, they don't
+    hold any specific value, but once a properly configured firmware is booted,
+    their value is set and cannot be modified ever again (this is called
+    "fusing").
+
+    Make sure you fully understand this information before choosing to flash a
+    firmware that enforces Dasharo TrustRoot.
