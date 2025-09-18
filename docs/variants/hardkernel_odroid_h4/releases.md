@@ -34,7 +34,7 @@ Test results for this release can be found
 - Boot Guard status information to UEFI setup menu
 - Improved measured boot support
 - Microsoft Option ROM UEFI CA to Secure Boot DB
-- Check for flash descriptor writability when exposign HAP disable option
+- Check for flash descriptor writability when exposing HAP disable option
 
 ### Changed
 
