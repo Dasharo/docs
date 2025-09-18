@@ -11,11 +11,6 @@ For details about our release process please read
 
 ## v1.0.0 - 2025-09-18
 
-!!! warning
-    Note: Due to [issue 1142](https://github.com/Dasharo/dasharo-issues/issues/1142),
-    this update must be installed by following the process described in
-    [Firmware Update - Manual Steps](https://docs.dasharo.com/unified/novacustom/firmware-update/#prerequisites)
-
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/NovaCustom/MTL_14th_Gen/V560TU/).
 
