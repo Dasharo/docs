@@ -446,6 +446,7 @@ nav:
           - 'Recovery': variants/asrock_spc741d8/recovery.md
           - 'Hardware Configuration Matrix': variants/asrock_spc741d8/hardware-matrix.md
           - 'Test matrix': variants/asrock_spc741d8/test-matrix.md
+          - 'Openness Score': variants/asrock_spc741d8/openness_score.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
