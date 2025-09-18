@@ -151,7 +151,7 @@ expensive than x86 platforms.
 
 Dasharo non-LTS release is a release that is validated with a reduced set of
 tests. The non-LTS name is adopted from distributions which mark their Long
-Term Support (LTS) releases as more validated/higher quality assurance. For
+Term Support (LTS) releases as extensively validated/higher quality assurance. For
 example see [Ubuntu documentation](https://ubuntu.com/about/release-cycle).
 
 The reduced set of tests includes the test cases marked with
