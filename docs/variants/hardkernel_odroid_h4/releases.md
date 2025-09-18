@@ -39,7 +39,7 @@ Test results for this release can be found
 ### Changed
 
 - [VBT file to fix graphical output in firmware](https://github.com/Dasharo/dasharo-issues/issues/1353)
-- Flash descriptor updated to v1.1 (see SBOM)
+- [Flash descriptor updated to v1.1 (see SBOM)](https://github.com/Dasharo/dasharo-blobs/blob/52647f9cc4b8934976ccb9eb01a857852889804a/hardkernel/odroid-h4/README.md)
 - Owner GUID of Secure Boot DB and KEK to Microsoft recommended values
 - Updated DBX to 2025-06-13
 
