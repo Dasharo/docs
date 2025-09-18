@@ -82,10 +82,13 @@ Select your operating system to view applicable instructions:
     ```bash
     echo 259:3 | sudo tee /sys/power/resume
     ```
+
     It might also be necessary to create or increase your current swap
     partition/file - it should be slightly larger than the size of your RAM. In
      such case, please refer to the instructions provided
-    [here](https://askubuntu.com/a/178726).
+    [here](https://askubuntu.com/a/178726). In case of creating a swap
+    partition, the fstab file should
+    [look a little different](https://askubuntu.com/a/711207).
 
 === "Fedora"
     ### Touchpad hotkey enablement
@@ -163,6 +166,9 @@ Select your operating system to view applicable instructions:
     partition/file - it should be slightly larger than the size of your RAM. In
      such case, please refer to the instructions provided
     [here](https://superuser.com/questions/1778582/how-to-add-swap-space-on-fedora).
+    In case of creating a swap
+    partition, the fstab file should
+    [look a little different](https://askubuntu.com/a/711207).
 
 === "Qubes OS"
     ### Touchpad hotkey enablement
@@ -272,3 +278,6 @@ Select your operating system to view applicable instructions:
     powercfg /h on
     powercfg /h /type full
     ```
+
+    Make sure that you have enough free space on the disk to fit the whole RAM.
+    Otherwise Windows won't be able to create a swap file and hibernate.
