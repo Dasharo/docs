@@ -9,10 +9,10 @@
 ASRock Rack SPC741D8-2L2T/BCM is a full-fledged single socket server board
 supporting Intel Sapphire Rapids processors.
 
-We gratefully acknowledge the [https://os.itec.kit.edu](https://os.itec.kit.edu) (Operating Systems Group)
-at Karlsruhe Institute of Technology (Fabian Meyer, Felix Zimmer, Yussuf Khalil)
-for their contribution in initiating the coreboot port for this platform and
-supporting open-source firmware development.
+We gratefully acknowledge the [https://os.itec.kit.edu](https://os.itec.kit.edu)
+(Operating Systems Group) at Karlsruhe Institute of Technology (Fabian Meyer,
+Felix Zimmer, Yussuf Khalil) for their contribution in initiating the coreboot
+port for this platform and supporting open-source firmware development.
 
 ## Documentation
 
