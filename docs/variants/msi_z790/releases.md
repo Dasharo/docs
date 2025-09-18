@@ -25,7 +25,9 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 
 ## v0.9.3 - 2025-09-18
 
-This is a non-LTS release and has a reduced scope of tests.
+This is a [non-LTS
+release](../../osf-trivia-list/dasharo.md#what-is-dasharo-non-lts-release) and
+has a reduced scope of tests.
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7e06/v0.9.3-results.csv).
@@ -34,7 +36,7 @@ Test results for this release can be found
 
 - Improved measured boot support
 - Microsoft Option ROM UEFI CA to Secure Boot DB
-- Check for flash descriptor writability when exposign HAP disable option
+- Check for flash descriptor writability when exposing HAP disable option
 
 ### Changed
 
