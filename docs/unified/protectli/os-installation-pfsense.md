@@ -8,7 +8,7 @@ installer is required. All OSFV test IDs and names are referring to the followin
 test suite:
 
 ```bash
-dasharo-compatibility/os-pfsense.robot
+dasharo-oses/os-pfsense.robot
 ```
 
 ### Installation media preparation
@@ -69,9 +69,11 @@ Confirm with `OK`, wait for test suite to finish, and connect to DUT via serial.
 If nothing is displayed, try arrow keys, do not press `ENTER` at this point.
 
 You will be asked for terminal type, confirm VT100 with `ENTER`:
+
 ![](../../images/pfsense/pfsense_terminal_vt100.png){: style="width:480px"}
 
 Then accept legal notice with `ENTER`:
+
 ![](../../images/pfsense/pfsense_notice_small.png){: style="width:480px"}
 
 Then, in main menu select `Install pfSense`, navigate to `OK` and press `ENTER`.
@@ -147,4 +149,5 @@ PFS002.502 Boot operating system from disk (pfSense)
 ```
 
 and check test output, expecting PASS:
+
 ![](../../images/pfsense/pfsense_working.png){: style="width:480px"}

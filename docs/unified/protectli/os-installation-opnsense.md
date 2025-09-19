@@ -8,7 +8,7 @@ installer is required. All OSFV test IDs and names are referring to the followin
 test suite:
 
 ```bash
-dasharo-compatibility/os-opnsense.robot
+dasharo-oses/os-opnsense.robot
 ```
 
 ### Installation media preparation
@@ -84,6 +84,7 @@ OPN001.503 Install operating system on disk (OPNsense)
 ```
 
 and wait for following dialog message:
+
 ![](../../images/opnsense/opnsense_serial.png){: style="width:480px"}
 
 Confirm with `OK`, wait for test suite to finish, and connect to DUT via serial.
@@ -152,5 +153,7 @@ Run:
 ```bash
 OPN002.503 Boot operating system from disk (OPNsense)
 ```
+
+and check test output, expecting PASS:
 
 ![](../../images/opnsense/opnsense_test.png){: style="width:480px"}
