@@ -6,7 +6,7 @@ Following documentation is v2 of naming convention following results of
 ## Synopsis
 
 ```plain
-Dasharo (framework[+payload]) [edition] Package for [platform]
+Dasharo (framework[+payload]) [edition] [release] Package for [platform]
 ```
 
 ## Description
@@ -41,26 +41,37 @@ mandatory in public names. Platform name should follow [supported hardware
 list](/variants/overview).
 - `edition`: Community | Pro | Enterprise (edition codes: DCP, DPP, DEP)
 
+- `release`: Rapid | Assured | LTS. Defines QA scope and support cadence. Codes
+are for internal use in filenames; public names spell out the release tier.
+    + `Rapid` - minimal regression only, scope depends on target hardware and
+  configuration, so that it can be 3 or 10 tests, it is very likely <=10% of
+  LTS,
+    + `Assured` in between Rapid and LTS, adding to `Rapid` only tests which
+  validate areas of firmware that experience change,s e.g., USB
+  improvements/fixes leads to test USB, measured boot changes then only TPM and
+  measured boot,
+    + `LTS` - full scope, typically once a year unless budget is available.
+
 This naming convention aims to provide clarity and precision, facilitating ease
 of understanding across Dasharo's firmware offerings.
 
 ## Examples
 
 ```plain
-Dasharo (coreboot+Heads) Pro Package for Novacustom NV4x 12th Gen
+Dasharo (coreboot+Heads) Pro Rapid Package for Novacustom NV4x 12th Gen
 ```
 
 A package aimed at professional retail customers with laptops, incorporating
 coreboot with the Heads payload.
 
 ```plain
-Dasharo (Slim Bootloader+UEFI) Pro Package for Hardkernel ODROID-H4
+Dasharo (Slim Bootloader+UEFI) Pro Assured Package for Hardkernel ODROID-H4
 ```
 
 A package that uses Slim Bootloader with UEFI payload on Hardkernel ODROID-H4.
 
 ```plain
-Dasharo (UEFI) Enterprise Package for MSI PRO Z690-A
+Dasharo (UEFI) Enterprise LTS Package for MSI PRO Z690-A
 ```
 
 A package for enterprise business customers for MSI PRO Z690-A, employing UEFI
