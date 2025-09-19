@@ -79,7 +79,7 @@ Test results for this release can be found
 [sha256.sig][novacustom_v54x_mtl_igpu_v1.0.0_btg_provisioned.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)

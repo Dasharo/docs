@@ -67,8 +67,9 @@ as in the example below.
 ### Set based on RPi 4 preparation
 
 To build PiKVM on RPi 4, use the
-[RPI 0 set documentation](#set-based-on-rpi-zero-2w) and replace the cable for
-connecting to the RPi and the cable for connecting with the CSI-2 bridge.
+[RPI 0 set documentation](#set-based-on-rpi-zero-2w-preparation) and replace
+the cable for connecting to the RPi and the cable for connecting with the
+CSI-2 bridge.
 
 ### OS image building and flashing
 

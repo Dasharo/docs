@@ -56,7 +56,7 @@ Test results for this release can be found
 [sha256.sig][dell_optiplex_7010_9010_v0.1.1.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/dell_optiplex_9010/dasharo-release-0.x-compatible-with-dell-optiplex-x010-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

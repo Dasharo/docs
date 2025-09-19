@@ -588,7 +588,6 @@ nav:
           - 'Generic Testing Stand Setup': unified-test-documentation/generic-testing-stand-setup.md
           - 'Dasharo compatibility':
               #pre-commit-sort-start
-              # - '[FAN] coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - '[AUD] Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
               - '[BBB] Boot block on low battery': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
               - '[BMF] BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
@@ -598,6 +597,7 @@ nav:
               - '[CBK] Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - '[CBO] Custom Boot Order': unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
               - '[CBP] coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
+              - '[CFN] coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - '[CLG] Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
               - '[CNB] Custom Network Boot entries': unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
               - '[CPU] CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md

@@ -343,7 +343,7 @@
         cd heads
         ```
 
-    1. Checkout to the desired revision:
+    2. Checkout to the desired revision:
 
         === "V540TU 14th Gen"
             ```bash
@@ -360,7 +360,7 @@
             git checkout novacustom_nv4x_adl_v0.9.2
             ```
 
-    1. Start the build inside the docker container:
+    3. Start the build inside the docker container:
 
         === "V540TU 14th Gen"
             ```bash

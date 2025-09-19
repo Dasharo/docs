@@ -1,6 +1,6 @@
 # Dasharo Compatibility: coreboot Fan Control
 
-## FAN001.001 Check CPU entry temperature and CPU fan speed
+## CFN001.001 Check CPU entry temperature and CPU fan speed
 
 **Test description**
 
@@ -40,7 +40,7 @@ available.
 There are visible data for `fan1` and `temp7` which represents CPU fan speed and
 CPU temperature.
 
-## FAN001.002 Check if increasing CPU temperature increases CPU fan speed
+## CFN001.002 Check if increasing CPU temperature increases CPU fan speed
 
 **Test description**
 
