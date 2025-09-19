@@ -310,7 +310,7 @@
     * Included 12v Power Supply, VESA mount kit, Serial Console Cable,
       SATA data and power cables for internal SSD, Quick Start Guide
 
-    ![](../../images/VP2440.png)
+    ![](../../images/VP2440.jpg)
 
     ## Documentation sections
 
