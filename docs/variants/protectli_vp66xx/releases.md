@@ -36,7 +36,7 @@ Test results for this release can be found
   [Missing tag string in VP66XX binary](https://github.com/Dasharo/dasharo-issues/issues/1391)
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-keys/protectli/release-keys/dasharo-release-0.9.x-for-protectli-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -103,7 +103,7 @@ and [VP6670](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/
 [sha256.sig][protectli_vp66xx_v0.9.1_dev_signed.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo-open-source-firmware-engineering-release-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

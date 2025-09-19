@@ -247,7 +247,7 @@
     and more. The VP3210/VP3230 is based on a 2 x 2.5 G network port
     design that leverages a low power, but versatile Alder Lake-N SoCs.
 
-    ![](/images/VP3210.png)
+    ![](../../images/VP3210.png)
 
     The VP3210/VP3230 can accommodate up to 48 GB DDR5 RAM and 4 TB M.2
     NVMe SSD storage drive. The built-in 32 GB eMMC module can be used for

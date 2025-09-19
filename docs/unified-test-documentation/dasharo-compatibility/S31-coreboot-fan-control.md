@@ -1,6 +1,6 @@
 # Dasharo Compatibility: coreboot Fan Control
 
-## FAN001.001 Check CPU entry temperature and CPU fan speed
+## CFN001.001 Check CPU entry temperature and CPU fan speed
 
 **Test description**
 
@@ -14,13 +14,13 @@ available.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
 **Test steps**
 
@@ -40,7 +40,7 @@ available.
 There are visible data for `fan1` and `temp7` which represents CPU fan speed and
 CPU temperature.
 
-## FAN001.002 Check if increasing CPU temperature increases CPU fan speed
+## CFN001.002 Check if increasing CPU temperature increases CPU fan speed
 
 **Test description**
 
@@ -54,13 +54,13 @@ temperature.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
 **Test steps**
 

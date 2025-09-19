@@ -5,13 +5,13 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
 1. Proceed with the
-    [Generic test setup: OS boot from disk](../generic-test-setup.md#os-boot-from-disk).
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Boot into Ubuntu and note down the original
     - UUID (via `dmidecode`)
     - Serial number (also via `dmidecode`)

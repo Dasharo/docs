@@ -52,7 +52,7 @@ Test results for this release can be found
 [sha256.sig][protectli_vp2430_v0.9.0_dev_signed.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/dasharo-open-source-firmware-engineering-release-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

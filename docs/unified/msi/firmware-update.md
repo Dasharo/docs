@@ -187,5 +187,6 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
 
 === "Dasharo (coreboot + Heads)"
 
-    [Build](#building-manual) or download Dasharo Heads firmware, and proceed with
+    [Build](./building-manual.md#dasharo-coreboot--heads) or download Dasharo
+    Heads firmware, and proceed with
     the official [Heads update documentation](https://osresearch.net/Updating).
