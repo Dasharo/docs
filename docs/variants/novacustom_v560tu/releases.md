@@ -13,7 +13,7 @@ For details about our release process please read
     The update to version **1.0.0** is temporarily disabled due to the risk of
     a critical issue. Please refer to
     [this issue](https://github.com/Dasharo/dasharo-issues/discussions/1627)
-    for more information
+    for more information.
 
 ## v1.0.0 - 2025-09-18
 
