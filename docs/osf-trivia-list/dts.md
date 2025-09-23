@@ -146,9 +146,11 @@ Do you want to send console logs to 3mdeb? [n/y]: y
 !!! tip
 
     If the automatic log submission does not work in your case, you can view and
-    copy the logs manually from `/tmp/logs/dts*.log`, `/var/local/dts-err*.log`
-    and `/var/local/flashrom.log`. Depending on your platform configuration and
-    connection method there might be different amount of files e.g.
+    copy the archive with logs manually from `/tmp/logs/*.tar.gz` or if the
+    archive wasn't created you can copy logs themselves from
+    `/tmp/logs/dts*.log` and `/var/local/*.log`. Depending on your platform
+    configuration and connection method there might be different amount of files
+    e.g.
 
     ```sh
     bash-5.2# ls /tmp/logs/
