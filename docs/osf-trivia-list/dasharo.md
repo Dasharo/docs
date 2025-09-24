@@ -250,6 +250,41 @@ we also have [coreboot with
 skiboot/heads](https://docs.dasharo.com/variants/talos_2/releases/) payload,
 and we expect more flavors to appear in the future.
 
+<!-- markdownlint-disable-next-line MD013 -->
+## What is the difference between Dasharo and traditional UEFI/BIOS firmware development provided by IBV?
+ 
+<!-- This answer need improvements -->
+
+Dasharo relies on open-source components with, as much as possible, a
+transparent supply chain. IBV-driven UEFI/BIOS development doesn’t reveal the
+firmware components supply chain details, so the customers don't know what
+components binary consists of and where the components come from. Dasharo
+enables the revenue model extension, but also cooperation with the community,
+crowdsourcing and organizations.  UEFI/BIOS business model is dedicated to IBV
+/ OEM customers only.  Dasharo delivers transparent validation results, on the
+contrary IBV UEFI/BIOS development process doesn’t reveal testing results, so
+the changes cannot be tracked. This also leads to low quality release notes and
+poor communication with end customers and users. Dasharo by design gives you
+the opportunity to differentiate through firmware and maximize hardware
+features utilization, where the most basic UEFI/BIOS provided by OEM/ODM with
+their platforms focus on crucial features and building margin through volume
+sales. Dasharo focus, strategy, and goals are targeting into domain-specific
+computing instead one size fits all.
+
+The average user doesn’t know how to update their BIOS firmware. This is
+because of lack of support, lack of long-term, regular releases, and finally,
+lack of explicit documentation with clear manuals. Firmware is considered part
+of hardware and this is the paradigm which is changing right now. Innovations
+around the releases are summarized, but without information concerning
+maintenance details. Dasharo's primary focus is features set, but long term we
+plan to offer customers product-dedicated GUI, continuous integration with
+regular releases supported by user-friendly documentation, support channels and
+video manuals.  Additional information about your Dasharo product releases,
+features, development and news can be provided in the form of newsletter
+campaigns and blog posts created directly by our specialists. The development
+of your Dasharo firmware can be tracked through Dasharo Regression Test Results
+website.
+
 ## What value Dasharo provides in comparison to coreboot?
 
 - Dasharo is open-source firmware distribution based on
