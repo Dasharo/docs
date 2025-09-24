@@ -44,6 +44,13 @@ After the firmware update is finished, the device will reboot automatically. If
 the update includes an Embedded Controller firmware update, it will be applied
 automatically after reboot and the device will reboot again.
 
+!!! warning
+
+    Keep in mind that the firmware will be updated automatically to the latest
+    Dasharo release and that you will not be able to provide DPP credentials.
+    This means that by default you can only use FUM to update to Dasharo
+    Community releases.
+
 !!! tip
 
     Check out a more detailed explanation and rationale for Firmware Update Mode
