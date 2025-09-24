@@ -58,60 +58,62 @@ firmware solution for a wide range of platforms and applications, aligning with
 the vision of a new golden age of computing advocated by experts in computer
 architecture.
 
-## What Dasharo provides?
+## What Dasharo Provides?
 
-Dasharo has 10 rules that govern the production and release of firmware within
-its ecosystem. Dasharo rules define what we deliver with every release. These
-rules are:
+Dasharo adheres to a set of ten rules designed to ensure the reliability,
+security, and transparency of its firmware ecosystem. These rules outline the
+consistent deliverables for each firmware release:
 
-1. Every release of firmware produced by Dasharo Ecosystem must contain [source
-code](https://github.com/Dasharo), binary, SHA256 hash, and Dasharo
-cryptographic signature of that hash.
-1. Dasharo Universe contains structured documentation for key activities
-related to open-source firmware life-cycle: initial deployment, update and
-recovery.
-1. Cryptographic keys hierarchy should be followed:
-
+1. **Comprehensive Release Kits**: Each Dasharo firmware release includes the
+   source code, reproducible binary, a SHA256 hash, and a cryptographic
+signature of that hash, hosted on [GitHub](https://github.com/Dasharo).
+1. **Detailed Documentation**: The Dasharo Universe features structured
+   documentation covering the entire lifecycle of open-source firmware,
+including building, deployment, updates, and recovery processes. Detail
+description of documentation sections is
+[here](https://github.com/Dasharo/docs/?tab=readme-ov-file#supported-hardware)
+1. **Cryptographic Key Hierarchy**: A structured key signing process, starting
+   from the
+[CEO/Founder](https://github.com/3mdeb/3mdeb-secpack/blob/master/keys/owner-key/piotr-krol-key.asc)
+down to customer-specific firmware release keys. All keys are accessible in the
+[3mdeb-secpack repository](https://github.com/3mdeb/3mdeb-secpack).
     + [CEO/Founder](https://github.com/3mdeb/3mdeb-secpack/blob/master/keys/owner-key/piotr-krol-key.asc)
-(GPG fingerint: `E030 9B2D 85A6 7E84 6329  E34B B2EE 71E9 67AA 9E4C`) which
-signs
+    (GPG fingerint: `5468 873B 74F1 6315 2785  D2CC 67D4 F3E3 72CB C3A9`) which
+    signs
     + [3mdeb Master
-Key](https://github.com/3mdeb/3mdeb-secpack/blob/master/keys/master-key/3mdeb-master-key.asc)
-(GPG fingerint: `1B57 85C2 965D 84CF 85D1  652B 4AFD 81D9 7BD3 7C54`) which
-signs
+    Key](https://github.com/3mdeb/3mdeb-secpack/blob/master/keys/master-key/3mdeb-master-key.asc)
+    (GPG fingerint: `1B57 85C2 965D 84CF 85D1  652B 4AFD 81D9 7BD3 7C54`) which
+    signs
     + [3mdeb Dasharo Master
-Key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/3mdeb-dasharo-master-key.asc)
-(GPG fingerint: `0D5F 6F1D A800 329E B7C5  97A2 ABE1 D0BC 6627 8008`) which
-signs
+    Key](https://github.com/3mdeb/3mdeb-secpack/blob/master/dasharo/3mdeb-dasharo-master-key.asc)
+    (GPG fingerint: `0D5F 6F1D A800 329E B7C5  97A2 ABE1 D0BC 6627 8008`) which
+    signs
     + [Customer Open Source Firmware Release x.y Signing
-Key](https://github.com/3mdeb/3mdeb-secpack/tree/master/customer-keys) (e.g.
-Novacustom Open Source Firmware Release 1.0 Signing Key)
+    Key](https://github.com/3mdeb/3mdeb-secpack/tree/master/customer-keys)
+    (e.g. Novacustom Open Source Firmware Release 1.0 Signing Key)
     + or [dedicated 3mdeb
-keys](https://github.com/3mdeb/3mdeb-secpack/tree/master/dasharo) to given
-platform.
-
-    Keys can be found in
-    [3mdeb-secpack](https://github.com/3mdeb/3mdeb-secpack) repository.
-
-1. Every release of firmware produced by Dasharo Ecosystem must have an
-attached test report according to requirements. Every test should be described
-by test specification documentation.
-1. Customer-specific Dasharo validation procedures are delivered with the
-release notes directly to the customer and does not have to be publicly
-available.
-1. Every firmware produced by Dasharo Ecosystem use [Semantic Versioning
-2.0.0](https://semver.org/) compatible versioning scheme. For details please
-check [description](https://docs.dasharo.com/dev-proc/versioning).
-1. Every firmware produced by Dasharo Ecosystem should use [Keep A Changelog
-1.0.0](https://keepachangelog.com/en/1.0.0/) compatible scheme as changelog
-format.
-1. Every Dasharo firmware release should be delivered with integrity and
-signature verification procedures.
-1. Every Dasharo firmware release must contain a detailed description of
-components and links to the range of code changes since the last release.
-1. Dasharo Ecosystem uses open-source software to create and maintain its
-firmware solutions, and the company strives to maintain transparency in its
-processes and procedures.
+    keys](https://github.com/3mdeb/3mdeb-secpack/tree/master/dasharo) to given
+    platform.
+1. **Mandatory Testing and Reporting**: Each release must come with an attached
+test report, detailed in the test specification documentation as well as
+hardware configuration matrix describing hardware configurations tested. Code
+automating some of test procedures can be found
+[here](https://github.com/Dasharo/open-source-firmware-validation).
+1. **Custom Validation Procedures**: Specific validation procedures tailored
+   for individual customers are included with release notes, and these may
+remain confidential. 
+1. **Versioning**: Firmware versions follow the [Semantic Versioning
+   2.0.0](https://semver.org/) scheme, ensuring systematic updates and
+compatibility tracking.
+1. **Changelog Compliance**: Utilization of the [Keep A Changelog
+   1.0.0](https://keepachangelog.com/en/1.0.0/) format for clear and structured
+changelogs.
+1. **Integrity and Verification**: Each firmware release includes detailed
+   integrity checks and signature verification procedures.
+1. **Software Bill of Materials (SBOM)**: Releases must detail all components and
+   include references to code changes since the last version.
+1. **Open-Source Commitment**: All firmware solutions are developed using
+    open-source software, promoting transparency and community engagement.
 
 These 10 rules are designed to ensure that every release of firmware produced
 by Dasharo Ecosystem is reliable, secure, and meets the needs of customers and
