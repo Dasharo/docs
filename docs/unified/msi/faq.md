@@ -183,3 +183,37 @@ the damages to the box and the damages to the item.
 Please notify us immediately so that we can initiate a damage claim with
 Freight. Failure to inspect for damages at the time of delivery could result in
 Freight voiding any subsequent damage claims.
+
+# Dasharo (coreboot+Heads) variant (not supported by Dasharo)
+
+## The TPM module is required to install Heads. Will this one work?
+
+We do not recommend to buy any cheap replacement TPM chips. We observed board
+malfunctions with such chips. We can only advise to buy original MSI TPM chips:
+<https://www.msi.com/Motherboard/TPM-20-Module>. Either TPM 2.0 (MS-4462) or TPM
+2.0 (9672), both will work. Please pay attention to the interface used and pin
+count, it must be SPI interface and 12-1 pin. You can also find this product
+available in our shop:
+<https://shop.3mdeb.com/shop/modules/tpm-2-0-msi-ms-4462/>.
+
+To be precise, TPM is required to run heads properly. Installation will succeed,
+but you will observe errors once you boot to heads.
+
+## Is it better to install Qubes OS before switching to Heads?
+
+If you ever want to transition back to UEFI and do not want to reinstall Qubes
+OS, then yes, it is best to install Qubes OS on UEFI firmware. In other cases
+reinstallation may be needed when switching between firmware flavours.
+
+## Will it work successfully once I get TPM, or is there some other issues?
+
+The Nitrokey tokens had a security vulnerability, which required the firmware on
+the token and heads to be both updated to fix this. Unfortunately, Dasharo heads
+firmware compatible with MSI desktops was not updated to fix this problem and it
+is not planned to have a new release. The community interest in heads on MSI
+desktops was too low to justify expenses, development and maintainership of this
+firmware flavour.
+
+That said, Dasharo + Heads firmware is no longer recommended to be
+installed/used with Nitrokeys on MSI desktops. For these particular reasons we
+no longer offer heads DPP subscriptions for MSI desktops anymore in our shop.
