@@ -503,6 +503,17 @@ consider [ways to help us](https://docs.dasharo.com/ways-you-can-help-us/)
 to gain a reputation that can lead to influencing Dasharo Community Supported
 roadmap.
 
+## Are there any Dasharo product lines that support the latest hardware?
+
+Yes, you can check our roadmap through [Dasharo GitHub
+Announcement](https://github.com/Dasharo/dasharo-issues/discussions/categories/announcements)
+and [Dasharo Github
+Projects](https://github.com/Dasharo/dasharo-issues/projects?type=classic)
+forum and [Supported Hardware][supported-hw] tab, where you can find our latest
+releases for the newest architectures. Dasharo Team aims to support the latest
+processor families available in the market, therefore our next big project will
+be related to Intel Raptor Lake generation.
+
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
 [dtsos]: ../dasharo-tools-suite/overview.md
 [lvfs]: https://fwupd.org/lvfs/docs/consulting
