@@ -503,6 +503,14 @@ consider [ways to help us](https://docs.dasharo.com/ways-you-can-help-us/)
 to gain a reputation that can lead to influencing Dasharo Community Supported
 roadmap.
 
+## Can Dasharo Team develop, maintain and support software for common laptops or desktops produced by well-known OEMs?
+
+Yes, the answer for such request is [Dasharo Support
+Package](https://docs.dasharo.com/osf-trolling-list/jsm_documentation/#dasharo-support-package).
+Details of such project should be discussed beforehand on the dedicated
+meeting, therefore feel free to book a matching time in our
+[calendar](https://calendly.com/3mdeb/consulting-remote-meeting).
+
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
 [dtsos]: ../dasharo-tools-suite/overview.md
 [lvfs]: https://fwupd.org/lvfs/docs/consulting
