@@ -46,11 +46,13 @@ the DUT reset, it is seen from the OS.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
+1. Proceed with the
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Proceed with the
    [Secure Boot Configuration](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
    to enable the `Attempt Secure Boot` option in the
@@ -1082,11 +1084,13 @@ inside.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
+1. Proceed with the
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Install the `sbctl` package through git by following [installation
     guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
 
@@ -1180,11 +1184,13 @@ on DUT.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
+1. Proceed with the
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Proceed with the [DTS: Build image with UEFI Secure Boot
     support](../../dasharo-tools-suite/documentation/building.md#build-image-with-uefi-secure-boot-support).
 
@@ -1244,11 +1250,13 @@ automatic certificate provisioning is attached and can be booted on DUT.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
+1. Proceed with the
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Proceed with the [DTS: Build image with UEFI Secure Boot support](../../dasharo-tools-suite/documentation/building.md#build-image-with-uefi-secure-boot-support).
 
 **Test steps**
@@ -1325,11 +1333,13 @@ can be enrolled from the operating system using `sbctl`.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
+1. Proceed with the
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Install the `sbctl` package through git by following [installation
     guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
 
@@ -1403,11 +1413,13 @@ format from the operating system while using `sbctl`.
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
+1. Proceed with the
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Install the `sbctl` package through git by following [installation
     guide](https://github.com/Foxboron/sbctl?tab=readme-ov-file#installation).
 

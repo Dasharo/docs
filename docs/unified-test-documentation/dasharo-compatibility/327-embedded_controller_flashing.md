@@ -20,12 +20,7 @@ EC firmware externally using Arduino.
 
 **Test steps**
 
-1. Prepare the hardware for flashing in accordance with the
-    [Prerequisites section](../../unified/novacustom/recovery.md#prerequisites).
-1. Prepare the firmware in accordance with the
-    [Preparation section](../../unified/novacustom/recovery.md#preparation).
-1. Flash the EC firmware in accordance with the
-    [Flashing section](../../unified/novacustom/recovery.md#flashing).
+1. Perform EC firmware flashing in accordance with the [EC Recovery section](../../unified/novacustom/recovery.md#ec)
 1. Note the results.
 
 **Expected result**

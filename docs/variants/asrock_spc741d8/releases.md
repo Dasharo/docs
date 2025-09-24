@@ -71,7 +71,7 @@ network, enabling direct engagement with the Dasharo Team and fellow
 subscribers for personalized, priority assistance.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/refs/heads/master/dasharo/asrock_spc741d8/dasharo-release-0.x-compatible-with-asrock-spc741d8-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

@@ -190,7 +190,7 @@ flashrom -p ch341a --ifd -i bios -w [path/to/coreboot.rom]
 
 ### Building
 
-Please refer to the [NovaCustom building manual](/unified/novacustom/building-manual/).
+Please refer to the [NovaCustom building manual](../unified/novacustom/building-manual.md).
 
 ### Debugging
 
