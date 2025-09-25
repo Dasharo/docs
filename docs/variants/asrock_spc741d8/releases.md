@@ -53,6 +53,7 @@ Test results for this release can be found
 - [Errors and unexpected messages printed during boot](https://github.com/Dasharo/dasharo-issues/issues/1609)
 - [SecureBoot can't boot file signed with custom PK](https://github.com/Dasharo/dasharo-issues/issues/1610)
 - [TPM PPI does not work](https://github.com/Dasharo/dasharo-issues/issues/1602)
+- [DCU custom boot logo is not displayed](https://github.com/Dasharo/dasharo-issues/issues/1629)
 
 ### Binaries
 
