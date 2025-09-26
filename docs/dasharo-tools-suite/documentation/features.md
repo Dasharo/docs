@@ -270,6 +270,28 @@ Rebooting in 5s:
 Rebooting
 ```
 
+### Firmware Update Mode
+
+If you boot into DTS when in Firmware Update Mode you will be asked if you want
+to continue with unattended update or enter DTS menu:
+
+```text
+Dasharo Tools Suite 2.7.1 DasharoToolsSuite tty1
+
+DasharoToolsSuite login: root (automatic login)
+
+You have entered Firmware Update Mode.:
+  1: If you wish to continue with unattended firmware update process
+  9: If you wish to go back to Dasharo Tools Suite menu
+
+Select an option:
+```
+
+If you choose option 1 you will start unattended update, which is identical to
+update described in [Firmware update](#firmware-update) except all questions
+will be skipped.
+If you choose `9` you will go back to DTS menu.
+
 ### Local firmware update
 
 To flash a local BIOS image (e.g. mounted from a USB stick), you can drop to the
