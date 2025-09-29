@@ -21,32 +21,51 @@
 1. Remount the filesystem in read-write mode:
 
    ```bash
-   sudo mount -o remount,rw /
+   sudo rw
    ```
 
-1. Open the file `/etc/udev/rules.d/70-persistent-net.rules` with nano or vim:
+1. Navigate to the network configuration files:
 
    ```bash
-   sudo nano /etc/udev/rules.d/70-persistent-net.rules
+   cd /etc/systemd/network
    ```
 
-1. Add following line, replacing `eth0` with the interface name
-   and `XX:XX:XX:XX:XX:XX` with desired MAC address:
+1. Open the file corresponding to desired network interface using nano or vim:
 
    ```bash
-   ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth0", RUN+="/usr/bin/ip link set dev eth0 address XX:XX:XX:XX:XX:XX"
+   sudo nano wlan0.network
    ```
 
-1. Reload udev rules and reboot PiKVM:
+1. Add following lines to the file. Replace  `xx:xx:xx:xx:xx:xx` with desired
+   MAC address:
 
    ```bash
-   sudo udevadm control --reload-rules
-   sudo udevadm trigger
-   sudo reboot
+   [Link]
+   MACAddress=xx:xx:xx:xx:xx:xx
    ```
 
-1. After reboot, verify the new MAC address.
+   Save the file and exit the editor.
+
+1. Restart the systemd-networkd service:
 
    ```bash
-   ip link show eth0
+   sudo systemctl restart systemd-networkd
+   ```
+
+1. Remount the filesystem in read-only mode:
+
+   ```bash
+   sudo ro
+   ```
+
+1. Reboot the system:
+
+   ```bash
+   sudo reboot now
+   ```
+
+1. Verify the new MAC address for your interface:
+
+   ```bash
+   ip a
    ```

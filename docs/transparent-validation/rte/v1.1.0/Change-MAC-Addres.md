@@ -10,36 +10,56 @@
     sudo minicom -D /dev/ttyUSB0 -b 115200
     ```
 
-1. Reboot RTE.
-
-   While booting, wait for the message: `Hit any key to stop autoboot:`.
-
-   Press any key to stop loading U-Boot.
-
-1. Set the new MAC address, by Overwriting the variable `ethaddres`
-
-   replacing `XX:XX:XX:XX:XX:XX` with desired MAC Address:
+1. Check the current MAC address of the target network interface:
 
    ```bash
-   setenv ethaddr XX:XX:XX:XX:XX:XX
+   ip a
    ```
 
-1. Save changes:
+   > Note the exact interface name for later use.
+
+1. Navigate to the network configuration files:
 
    ```bash
-   saveenv
+   cd /etc/systemd/network
    ```
 
-1. Restart the platform:
+1. Open the file for the target interface using nano or vim.
+
+   > If the file does not exist, create one following this scheme:
+   > `10-eth0.network`, replacing `eth0` with the interface name
 
    ```bash
-   run bootcmd
+   vim 10-eth0.network
    ```
+
+1. The file content should look as follows. Replace `eth0` with
+   the interface name, `xx:xx:xx:xx:xx:xx` with desired IP address
+
+   ```bash
+   [Match]
+   Name=eth0
+
+   [Network]
+   MACAddress=xx:xx:xx:xx:xx:xx
+   ```
+
+   Save the file and exit the editor.
+
+1. Restart the systemd-networkd service:
+
+   ```bash
+   systemctl restart systemd-networkd
+   ```
+
+1. Reboot the platform:
+
+  ```bash
+  reboot now
+  ```
 
 1. After RTE boots, verify the MAC address:
 
    ```bash
    ip link show eth0
    ```
-
-   > Note: If the Serial ID changes, your custom MAC will be lost!

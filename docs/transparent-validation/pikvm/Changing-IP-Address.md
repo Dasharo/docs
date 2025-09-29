@@ -21,7 +21,7 @@
 1. Remount the filesystem in read-write mode:
 
    ```bash
-   sudo mount -o remount,rw /
+   sudo rw
    ```
 
 1. Navigate to the network configuration files:
@@ -57,6 +57,12 @@
 
    ```bash
    sudo systemctl restart systemd-networkd
+   ```
+
+1. Remount the filesystem in read-only mode:
+
+   ```bash
+   sudo ro
    ```
 
 1. Verify the new IP address for your interface:
