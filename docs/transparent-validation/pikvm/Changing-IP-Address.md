@@ -65,6 +65,12 @@
    sudo ro
    ```
 
+1. Reboot the system:
+
+   ```bash
+   sudo reboot now
+   ```
+
 1. Verify the new IP address for your interface:
 
    ```bash
