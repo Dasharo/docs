@@ -66,6 +66,50 @@ If you have any questions about Sovereign Boot Provisioning Wizard, visit the
 
 ## Releases
 
+### RC4 - 2025-09-30
+
+#### Fixed
+
+* [Sovereign Boot Wizard does not discover alternative bootloaders yet](https://github.com/Dasharo/dasharo-issues/issues/1549)
+
+#### Binaries
+
+[qemu_q35_sovereign-boot-rc4.rom](https://cloud.3mdeb.com/index.php/s/ZyDFLrppzEfoP22/download){.md-button}
+[qemu_q35_sovereign-boot-rc4.rom.sha256](https://cloud.3mdeb.com/index.php/s/WtSgMSe3PqBQnxy/download){.md-button}
+
+#### SBOM
+
+* [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc4](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc4)
+    + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc4/COPYING)
+* [Dasharo EDKII fork based on edk2-stable202502 revision sovereign-boot-rc4](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc4)
+    + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc4/License.txt)
+
+#### Building
+
+Follow the [instructions for
+QEMU](../variants/qemu_q35/building-manual.md#procedure). Checkout
+`qemu_q35_sovereign_boot-rc4` tag on coreboot repository and use new
+`qemu_svboot` target as an argument to `./build.sh` script.
+
+#### Video demonstration
+
+Watch a short demonstration of Sovereign Boot Wizard in action. This video
+covers the new features of the Sovereign Boot Wizard and complements the
+documentation.
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/lmQLamzZ-lE?si=bduowzxhe8-jOlci"
+    title="Sovereign Boot Wizard RC4 Demo"
+    frameborder="0"
+    allow="accelerometer; autoplay;
+      clipboard-write; encrypted-media;
+      gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ### RC3 - 2025-08-29
 
 #### Added
