@@ -56,7 +56,7 @@ feedback:
 * [Handle OptionROMs in Sovereign Boot Wizard](https://github.com/Dasharo/dasharo-issues/issues/1548)
 * [Key discovery on filesystems in Sovereign Boot Wizard](https://github.com/Dasharo/dasharo-issues/issues/1550)
 * [Supporting different security models in Sovereign Boot Wizard](https://github.com/Dasharo/dasharo-issues/issues/1551)
-* [Implement Sovereing Boot Wizard lockdown mode](https://github.com/Dasharo/dasharo-issues/issues/1552)
+* [Implement Sovereign Boot Wizard lockdown mode](https://github.com/Dasharo/dasharo-issues/issues/1552)
 
 Feel free to suggest new improvements and features to extend the Sovereign
 Boot Provisioning Wizard.
