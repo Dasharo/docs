@@ -97,7 +97,7 @@ If you have any questions about Sovereign Boot Provisioning Wizard, visit the
     + [License](https://github.com/Dasharo/coreboot/blob/hardkernel_odroid_h4_sovereign_boot-rc3/COPYING)
 * [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc3](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc3)
     + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc3/COPYING)
-* [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc3](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc3)
+* [Dasharo EDKII fork based on edk2-stable202502 revision sovereign-boot-rc3](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc3)
     + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc3/License.txt)
 
 #### Building
@@ -165,7 +165,7 @@ documentation.
 
 * [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc2](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc2)
     + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc2/COPYING)
-* [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc2](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc2)
+* [Dasharo EDKII fork based on edk2-stable202502 revision sovereign-boot-rc2](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc2)
     + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc2/License.txt)
 
 #### Building
@@ -251,7 +251,7 @@ documentation.
 
 * [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc1](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc1)
     + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-rc1/COPYING)
-* [Dasharo EDKII fork based on edk2-stable202408.01 revision sovereign-boot-rc1](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc1)
+* [Dasharo EDKII fork based on edk2-stable202502 revision sovereign-boot-rc1](https://github.com/Dasharo/edk2/tree/sovereign-boot-rc1)
     + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-rc1/License.txt)
 
 #### Building
