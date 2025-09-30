@@ -128,13 +128,6 @@ documentation.
 
 * [Sovereign Boot Wizard does not discover alternative bootloaders yet](https://github.com/Dasharo/dasharo-issues/issues/1549)
 
-#### Binaries
-
-[odroid.sha256](https://cloud.3mdeb.com/index.php/s/AncgQjjXD55R37Z/download){.md-button}
-
-[qemu_q35_sovereign-boot-rc3.rom](https://cloud.3mdeb.com/index.php/s/idyF8SAt2mt7PcY/download){.md-button}
-[qemu_q35_sovereign-boot-rc3.rom.sha256](https://cloud.3mdeb.com/index.php/s/8St37Wi6A56z3w5/download){.md-button}
-
 #### SBOM
 
 * [coreboot based on 24.12 revision hardkernel_odroid_h4_sovereign_boot-rc3](https://github.com/Dasharo/coreboot/tree/hardkernel_odroid_h4_sovereign_boot-rc3)
