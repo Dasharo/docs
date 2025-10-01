@@ -9,12 +9,6 @@ For details about our release process please read
 {{ subscribe_form("d8319dd2-9108-48c5-86bf-318bb2ae94d2",
 "Subscribe to NovaCustom V560TU 14th Gen Dasharo Release Newsletter") }}
 
-!!! danger "Update to 1.0.0 temporarily unavailable"
-    The update to version **1.0.0** is temporarily disabled due to the risk of
-    a critical issue. Please refer to
-    [this issue](https://github.com/Dasharo/dasharo-issues/discussions/1627)
-    for more information.
-
 ## v1.0.0 - 2025-09-18
 
 Test results for this release can be found
