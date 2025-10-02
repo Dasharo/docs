@@ -559,6 +559,8 @@ nav:
                   - 'Quick Start Guide': transparent-validation/rte/v1.1.0/quick-start-guide.md
                   - 'Serial Port Connection Guide': transparent-validation/rte/v1.1.0/serial-port-connection-guide.md
                   - 'Flashing Guide': transparent-validation/rte/v1.1.0/flashing-guide.md
+                  - 'Changing MAC Address Guide': transparent-validation/rte/v1.1.0/Change-MAC-Addres.md
+                  - 'Static IP Address Guide': transparent-validation/rte/v1.1.0/Change-IP-Addres.md
         #     - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
               - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
               - 'Revision History': transparent-validation/rte/revision-history.md
@@ -571,6 +573,8 @@ nav:
               - 'Sonoff preparation': transparent-validation/sonoff/sonoff_preparation.md
           - 'PiKVM':
               - 'Assembly and validation': transparent-validation/pikvm/assembly-and-validation.md
+              - 'Changing MAC Address Guide': transparent-validation/pikvm/Changing-MAC-Address.md
+              - 'Static IP Address Guide': transparent-validation/pikvm/Changing-IP-Address.md
           - 'Twonkie':
               - 'Introduction': transparent-validation/twonkie/introduction.md
           - 'EC Debugger':
