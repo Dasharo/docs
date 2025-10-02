@@ -49,6 +49,9 @@ and the starting firmware version, if applicable.
 | NovaCustom | NS5x/7x TGL | Yes | v1.5.0 |
 | NovaCustom | NV4x ADL | Yes | v1.7.0 |
 | NovaCustom | NV4x TGL | Yes | v1.5.0 |
+| NovaCustom | V5x0TU MTL | Yes | v0.9.0 |
+| NovaCustom | V5x0TNx | Yes | v0.9.1 |
+| NovaCustom | NUC BOX | Yes | v0.9.0 |
 
 ## How to use Firmware Update Mode
 
