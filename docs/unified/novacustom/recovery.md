@@ -257,6 +257,72 @@ firmware.
     1. Reassemble the laptop: disconnect the Arduino from the laptop, disconnect the
        USB-C grounding cable, reinstall the keyboard, reinstall keyboard screws.
 
+    ??? "EC Recovery troubleshooting tips"
+
+        Flashing the EC firmware is highly unstable and many small and hard to
+        pinpoint factors might influence it causing the process to fail.
+        Here is a list of known tips and tricks, that are not a part of the
+        official recovery steps, but under some circumstances might help if
+        the flashing fails.
+
+        ### Repeat
+
+        Sometimes just repeating the flashing might help and no other steps
+        would be necessary. To make it easier you can use a bash loop like this
+        one:
+
+        ```
+        while ! sudo ecflash/target/release/examples/isp ec.rom; do sleep 1; done
+        ```
+
+        Don't overdo it. If flashing did not succeed after a couple minutes,
+        waiting any longer likely won't help.
+
+        ### Connections
+
+        Make sure that everything is connected correctly.
+        Try unplugging and plugging back every cable while running the flashing
+        loop in background.
+
+        ### Repeat all the steps from the beginning
+
+        It's easy to skip some essential step like building and flashing the
+        Arduino firmware, or forgetting to use a power blocker or to connect
+        the grounding cable altogether. Before trying any optional tips, please
+        verify that all the baseline instructions were performed with care.
+
+        ### Grounding
+
+        Turns out, that sometimes blocking the `5V` line on a USB cable is not
+        enough to keep the laptop not powered. The data lines (D+, D-) can carry
+        a little bit of current and make the flashing fail.
+
+        ![USB power blocker simple schematic](../../images/power_blocker_schematic.jpg){width=50%}
+
+        If blocking them is not feasible, try to only slightly lean the
+        connector against the USB-C port on the laptop. Just so that the outer
+        metal part of the connector touches the outer metal part of the charging
+        port. This way the data lines will stay unconnected while a ground
+        connection will be possible to maintain using the metal housing.
+
+        ![USB-C connector barely touching with the outer grounded shell](../../images/usb-c-connector-touching-port.jpg){width=50%}
+
+        ### Connecting power
+
+        These methods can be risky, so leave this option as a last resort when
+        nothing works.
+
+        It was found out experimentally, that in some scenarios, when nothing
+        else helps, connecting the internal battery or an AC charger can make
+        the flashing to succeed. Try to flash the EC with the battery connected,
+        and then with an AC charger connected.
+
+        A related trick you can try at this point is to connect the AC charger
+        before running the flashing utility, and disconnecting it during the
+        execution. Try to do that a couple times at different moments.
+
+
+
     ## BIOS Flashing
 
     Components Necessary to perform BIOS Recovery:
@@ -284,9 +350,9 @@ firmware.
             ![](../../images/CH341A-V.webp)
             ![](../../images/CH341A-V2.webp)
 
-        1. Plug the programmer into your host computer.
+        2. Plug the programmer into your host computer.
 
-        1. Remove bottom cover from the laptop.
+        3. Remove bottom cover from the laptop.
 
             === "NS5x/7x 11th Gen"
                 ![](../../images/ns50mu_board_chips.jpg)
@@ -294,13 +360,13 @@ firmware.
             === "NV4x 11th Gen"
                 ![](../../images/NV411th1.webp)
 
-        1. Unplug the battery (1)
+        4. Unplug the battery (1)
 
             !!! warning
 
                 Disconnecting the CMOS battery will result in the internal date being reset.
 
-        1. Place the SOIC-8 Pomona clip on the BIOS chip, taking care to align the CS pin with the
+        5. Place the SOIC-8 Pomona clip on the BIOS chip, taking care to align the CS pin with the
            white dot on the BIOS chip:
 
             === "NS5x/7x 11th Gen"
@@ -312,19 +378,19 @@ firmware.
                 ![](../../images/NV411th2.webp)
                 ![](../../images/NV411th21.webp)
 
-        1. Attach the SOIC-8 Pomona clip firmly in place and execute the following command
+        6. Attach the SOIC-8 Pomona clip firmly in place and execute the following command
            on your host computer:
 
             ```bash
             sudo flashrom -p ch341a_spi -w path/to/firmware.bin
             ```
 
-        1. Power on the laptop to verify the recovery passed. First boot may take a
+        7. Power on the laptop to verify the recovery passed. First boot may take a
            while, so be patient.
 
     === "12th Gen"
 
-        1. Attach the WSON probe to the programmer. Take care to align pin 1 indicated
+        8. Attach the WSON probe to the programmer. Take care to align pin 1 indicated
            on the probe's breakout board with pin 1 on the programmer:
 
             ![](../../images/ch341a_rec/ch341a_v17_with_breakout.webp)
@@ -337,9 +403,9 @@ firmware.
             ![](../../images/CH341A-V.webp)
             ![](../../images/CH341A-V2.webp)
 
-        1. Plug the programmer into your host computer.
+        9. Plug the programmer into your host computer.
 
-        1. Remove bottom cover from the laptop.
+        10. Remove bottom cover from the laptop.
 
             === "NS5x/7x 12th Gen"
 
@@ -349,13 +415,13 @@ firmware.
 
                 ![](../../images/NV412th1.webp)
 
-        1. Unplug the battery (1)
+        11. Unplug the battery (1)
 
             !!! warning
 
                 Disconnecting the CMOS battery will result in the internal date being reset.
 
-        1. Place the WSON probe on the BIOS chip, taking care to align the dot on the
+        12. Place the WSON probe on the BIOS chip, taking care to align the dot on the
            WSON probe with the white dot on the BIOS chip:
 
             === "NS5x/7x 12th Gen"
@@ -368,19 +434,19 @@ firmware.
                 ![](../../images/NV412th2.webp)
                 ![](../../images/NV412th21.webp)
 
-        1. Hold down the WSON probe firmly in place and execute the following command
+        13. Hold down the WSON probe firmly in place and execute the following command
            on your host computer:
 
             ```bash
             sudo flashrom -p ch341a_spi -w path/to/firmware.bin
             ```
 
-        1. Power on the laptop to verify the recovery passed. First boot may take a
+        14. Power on the laptop to verify the recovery passed. First boot may take a
            while, so be patient.
 
     === "14th Gen"
 
-        1. Attach the WSON probe to the programmer. Take care to align pin 1 indicated
+        15. Attach the WSON probe to the programmer. Take care to align pin 1 indicated
            on the probe's breakout board with pin 1 on the programmer:
 
             ![](../../images/ch341a_rec/ch341a_v17_with_breakout.webp)
@@ -393,9 +459,9 @@ firmware.
             ![](../../images/CH341A-V.webp)
             ![](../../images/CH341A-V1.webp)
 
-        1. Plug the programmer into your host computer.
+        16. Plug the programmer into your host computer.
 
-        1. Remove bottom cover from the laptop.
+        17. Remove bottom cover from the laptop.
 
             === "V540TND 14th Gen"
 
@@ -417,13 +483,13 @@ firmware.
 
                 ![](../../images/560TNE.webp)
 
-        1. Unplug the battery (1)
+        18. Unplug the battery (1)
 
             !!! warning
 
                 Disconnecting the CMOS battery will result in the internal date being reset.
 
-        1. Place the WSON probe on the BIOS chip, taking care to align the dot on the
+        19. Place the WSON probe on the BIOS chip, taking care to align the dot on the
            WSON probe with the white dot on the BIOS chip:
 
             === "V540TND 14th Gen"
@@ -451,14 +517,14 @@ firmware.
                 ![](../../images/560TNEwson1.webp)
                 ![](../../images/560TNEwson2.webp)
 
-        3. Hold down the WSON probe firmly in place and execute the following command
+        20. Hold down the WSON probe firmly in place and execute the following command
             on your host computer:
 
             ```bash
             sudo flashrom -p ch341a_spi --ifd -i fd -i me -i bios -w [backup.bin]
             ```
 
-        1. Power on the laptop to verify the recovery passed. First boot may take a
+        21. Power on the laptop to verify the recovery passed. First boot may take a
             while, so be patient.
 
 === "NUC BOX"
