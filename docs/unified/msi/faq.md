@@ -196,12 +196,12 @@ count, it must be SPI interface and 12-1 pin. You can also find this product
 available in our shop:
 <https://shop.3mdeb.com/shop/modules/tpm-2-0-msi-ms-4462/>.
 
-To be precise, TPM is required to run heads properly. Installation will succeed,
+To be precise, TPM is required to run Dasharo (coreboot+Heads) properly. Installation will succeed,
 but you will observe errors once you boot to heads.
 
-## Is it better to install Qubes OS before switching to Heads?
+## Is it better to install Qubes OS before switching to Dasharo (coreboot+Heads)?
 
-If you ever want to transition back to UEFI and do not want to reinstall Qubes
+If you ever want to transition back to Dasharo (coreboot+UEFI) and do not want to reinstall Qubes
 OS, then yes, it is best to install Qubes OS on UEFI firmware. In other cases
 reinstallation may be needed when switching between firmware flavours.
 
