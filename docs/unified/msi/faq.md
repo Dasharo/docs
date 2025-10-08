@@ -189,21 +189,21 @@ Freight voiding any subsequent damage claims.
 ## The TPM module is required to install Heads. Will this one work?
 
 We do not recommend to buy any cheap replacement TPM chips. We observed board
-malfunctions with such chips. We can only advise to buy original MSI TPM chips:
-<https://www.msi.com/Motherboard/TPM-20-Module>. Either TPM 2.0 (MS-4462) or TPM
-2.0 (9672), both will work. Please pay attention to the interface used and pin
-count, it must be SPI interface and 12-1 pin. You can also find this product
-available in our shop:
-<https://shop.3mdeb.com/shop/modules/tpm-2-0-msi-ms-4462/>.
+malfunctions with such chips. We can only advise to buy original [MSI TPM
+chips](https://www.msi.com/Motherboard/TPM-20-Module). Either TPM 2.0
+(MS-4462) or TPM 2.0 (9672), both will work. Please pay attention to the
+interface used and pin count, it must be SPI interface and 12-1 pin. You can
+also find this product available in [our shop](https://shop.3mdeb.com/shop/modules/tpm-2-0-msi-ms-4462/).
 
-To be precise, TPM is required to run Dasharo (coreboot+Heads) properly. Installation will succeed,
-but you will observe errors once you boot to heads.
+To be precise, TPM is required to run Dasharo (coreboot+Heads) properly.
+Installation will succeed, but you will observe errors once you boot to heads.
 
 ## Is it better to install Qubes OS before switching to Dasharo (coreboot+Heads)?
 
-If you ever want to transition back to Dasharo (coreboot+UEFI) and do not want to reinstall Qubes
-OS, then yes, it is best to install Qubes OS on UEFI firmware. In other cases
-reinstallation may be needed when switching between firmware flavours.
+If you ever want to transition back to Dasharo (coreboot+UEFI) and do not want
+to reinstall Qubes OS, then yes, it is best to install Qubes OS on UEFI
+firmware. In other cases reinstallation may be needed when switching between
+firmware flavours.
 
 ## Will it work successfully once I get TPM, or is there some other issues?
 
