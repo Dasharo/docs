@@ -131,6 +131,46 @@ Legend:
 Please report all errors experienced while performing a dump to
 [dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository.
 
+### HCL Report Using an External Firmware Binary
+
+_Note: The following feature is available in DTS version 2.7.2 and later._
+
+Proprietary or stock firmware may not support using the internal programmer to
+dump the contents of the flash memory that stores the firmware. This results in
+a less complete HCL report, which lacks an inbox firmware backup and the results
+of automated firmware analysis.
+
+As a workaround, DTS allows users to provide the firmware binary file manually.
+The firmware binary can be obtained, for example, by using an
+[external programmer](../../variants/asrock_spc741d8/recovery.md)
+(_NOTE: link describes writing operation, not reading!_) or by dumping the
+firmware via [BMC](https://www.gigabyte.com/Glossary/bmc).
+
+To use a user-provided firmware binary in an HCL report, copy it to the
+`/firmware/external/` directory. This can be done manually (for example, by
+transferring the binary on a flash drive and copying it to the destination) or
+over the network. The following example demonstrates the latter method, copying
+the binary via SCP:
+
+1. Boot up the DTS.
+1. Enable the SSH server.
+1. Copy the firmware binary to the target platform at `/firmware/external/` via
+   `scp`. An example command is shown below:
+
+    ```bash
+    scp <path_to_firmware_binary> root@<target_ip_address>:/firmware/external/
+    ```
+
+1. Proceed with generating the HCL report as usual.
+
+If the internal programmer fails to dump the firmware from the platform, DTS
+will automatically use the user-supplied firmware binary. The following message
+confirms that this fallback is in use:
+
+```log
+Firmware dump not found, but found user-supplied external binary.
+```
+
 ### BIOS backup
 
 One of the key components of HCL Report is your BIOS backup. To prepare BIOS
