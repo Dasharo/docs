@@ -154,6 +154,12 @@ the binary via SCP:
 
 1. Boot up the DTS.
 1. Enable the SSH server.
+1. Create `/firmware/external` directory over ssh.
+
+    ```bash
+    ssh root@<target_ip_address> 'mkdir -p /firmware/external'
+    ```
+
 1. Copy the firmware binary to the target platform at `/firmware/external/` via
    `scp`. An example command is shown below:
 
