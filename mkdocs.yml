@@ -506,6 +506,7 @@ nav:
   - 'Knowledge base':
       - 'Glossary': glossary.md
       - 'Dasharo Product Naming Convention': dasharo-naming-convention.md
+      - 'Dasharo Binaries Path Convention': kb/dasharo-binaries-paths-convention.md
       - 'Dasharo menu documentation':
           - 'Overview': dasharo-menu-docs/overview.md
           - 'Boot Maintenance Manager': dasharo-menu-docs/boot-maintenance-mgr.md

@@ -23,10 +23,26 @@ where:
   `apu4`
 - `<framework>` - firmware framework, like `coreboot`, `slimbootloader`, `heads`
 - `[_payload]` - optional, firmware payload, like `_uefi`, `_heads`, `_seabios`
-- `<version>` - Dasharo version, like `v0.9.0`, `v1.7.2-rc1`
+- `<version>` - Dasharo version, like `v0.9.0`, `v1.7.2-rc1`, compliant with
+  the [versioning scheme](https://docs.dasharo.com/dev-proc/versioning/).
 
-Example, path to the v1.0.0 release binaries for Novacustom V540TU laptop:
-- `/novacustom/v540tu/coreboot_uefi/1.0.0/`
+Examples:
+- Dasharo (coreboot+Heads) Community Package for Novacustom V540TNx 14th
+  Gen laptops v1.0.0
+    + (historically kept in one path due to compatibility):
+    + `/novacustom/v540tnd/coreboot_heads/1.0.0/`
+    + `/novacustom/v540tne/coreboot_heads/1.0.0/`
+- Dasharo (coreboot+UEFI) Pro Package for Protectli V1000-series v0.9.3
+    + (historically kept in two directories, a common `protectli_vault_jsl`
+      path,
+    and in more specific variants like `protectli_vault_jsl_v1210` due to
+    temporal compatibility):
+    + `/protectli/v1210/coreboot_uefi/v0.9.3/`
+    + `/protectli/v1410/coreboot_uefi/v0.9.3/`
+    + `/protectli/v1610/coreboot_uefi/v0.9.3/`
+- Dasharo (coreboot+SeaBIOS) Community Package for PC Engines APU4 v24.08.00.01
+    + (unique versioning scheme)
+    + `/pcengines/apu4/coreboot_seabios/v24.08.00.01/`
 
 ### Motivation
 
