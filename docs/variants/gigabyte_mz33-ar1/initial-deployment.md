@@ -1,10 +1,5 @@
 # Initial deployment
 
-Initial flashing of Dasharo firmware can be done from Linux using flashrom with
-the internal programmer or using the Dasharo Tools Suite included in the Dasharo
-Pro Package subscription (formerly Dasharo Entry Subscription). An instruction
-on how to use the DTS can be found in the [DTS documentation](../../dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
-
 This document describes the process of building, installing and running
 flashrom on Ubuntu 24.04.
 
