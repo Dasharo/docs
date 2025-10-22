@@ -16,6 +16,75 @@ Test results for this platform can be found
 > interchangeably. See [Protectli FW6 releases](../protectli_fw6/releases.md)
 > and [Protectli VP2410 releases](../protectli_vp2410/releases.md).
 
+## v1.2.1 - 2025-10-TBD
+
+This release is based on v1.2.0 release and brings support for the VP4651
+platform, which is essentialy VP4650 with CPU adjusted from i5-10210U to
+i5-10310U. It has been tested on VP4651 platform only. Users of the remaining
+platfoms should keep using the v1.2.0 release as the most recent one for these
+boards
+
+Test results for this release can be found
+[here](TBD).
+
+### Added
+
+- Added support for Protectli VP4651
+
+### Known issues
+
+- [Protectli VP4651 with more than 48 GB of RAM boots 2-3 seconds longer](https://github.com/Dasharo/dasharo-issues/issues/1654)
+
+### Binaries
+
+[protectli_vp46xx_v1.2.1-rc1.rom][protectli_vp46xx_v1.2.1-rc1.rom_file]{.md-button}
+[sha256][protectli_vp46xx_v1.2.1-rc1.rom_hash]{.md-button}
+[sha256.sig][protectli_vp46xx_v1.2.1-rc1.rom_sig]{.md-button}
+
+[protectli_vp46xx_v1.2.1-rc1_dev_signed.rom][protectli_vp46xx_v1.2.1-rc1_dev_signed.rom_file]{.md-button}
+[sha256][protectli_vp46xx_v1.2.1-rc1_dev_signed.rom_hash]{.md-button}
+[sha256.sig][protectli_vp46xx_v1.2.1-rc1_dev_signed.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/protectli/release-keys/dasharo-release-1.2.x-for-protectli-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 4.21 revision c7c97875](https://github.com/Dasharo/coreboot/tree/c7c97875)
+    + [License](https://github.com/Dasharo/coreboot/blob/c7c97875/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202002 revision d130aece](https://github.com/Dasharo/edk2/tree/d130aece)
+    + [License](https://github.com/Dasharo/edk2/blob/d130aece/License.txt)
+- [iPXE based on 2023.12 revision 838611b3](https://github.com/Dasharo/ipxe/tree/838611b3)
+    + [License](https://github.com/Dasharo/ipxe/blob/838611b3/COPYING.GPLv2)
+- [vboot based on 0c11187c75 revision 0c11187c](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/0c11187c/LICENSE)
+- [Intel Management Engine version v14.0.47.1558](https://github.com/Dasharo/dasharo-blobs/blob/0e5218dd/protectli/vault_cml/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/0e5218dd/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/0e5218dd/protectli/vault_cml/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/0e5218dd/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version CometLake1 9.0.7B.20](https://github.com/intel/FSP/tree/a6ee9636/CometLakeFspBinPkg/CometLake1)
+    + [License](https://github.com/intel/FSP/blob/a6ee9636/FSP_License.pdf)
+- [Intel Firmware Support Package version CometLake2 9.2.7B.20](https://github.com/intel/FSP/tree/a6ee9636/CometLakeFspBinPkg/CometLake2)
+    + [License](https://github.com/intel/FSP/blob/a6ee9636/FSP_License.pdf)
+- [Intel Firmware Support Package version CometLake1 9.0.7B.20](https://github.com/intel/FSP/tree/a6ee9636/CometLakeFspBinPkg/CometLake1)
+    + [License](https://github.com/intel/FSP/blob/a6ee9636/FSP_License.pdf)
+- [Intel Firmware Support Package version CometLake2 9.2.7B.20](https://github.com/intel/FSP/tree/a6ee9636/CometLakeFspBinPkg/CometLake2)
+    + [License](https://github.com/intel/FSP/blob/a6ee9636/FSP_License.pdf)
+- [Intel microcode version CML-U42 V0 0x000000f8](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250512/intel-ucode/06-8e-0c)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250512/license)
+- [Intel microcode version CML-U62 V1 A0 0x000000f8](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250512/intel-ucode/06-a6-00)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250512/license)
+- [Intel microcode version CML-U62 V2 K1 0x000000f8](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250512/intel-ucode/06-a6-01)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250512/license)
+
+[protectli_vp46xx_v1.2.1-rc1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/uefi/v1.2.1-rc1/protectli_vp46xx_v1.2.1-rc1.rom
+[protectli_vp46xx_v1.2.1-rc1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/uefi/v1.2.1-rc1/protectli_vp46xx_v1.2.1-rc1.rom.sha256
+[protectli_vp46xx_v1.2.1-rc1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/uefi/v1.2.1-rc1/protectli_vp46xx_v1.2.1-rc1.rom.sha256.sig
+[protectli_vp46xx_v1.2.1-rc1_dev_signed.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/uefi/v1.2.1-rc1/protectli_vp46xx_v1.2.1-rc1_dev_signed.rom
+[protectli_vp46xx_v1.2.1-rc1_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/uefi/v1.2.1-rc1/protectli_vp46xx_v1.2.1-rc1_dev_signed.rom.sha256
+[protectli_vp46xx_v1.2.1-rc1_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/protectli_vault_cml/uefi/v1.2.1-rc1/protectli_vp46xx_v1.2.1-rc1_dev_signed.rom.sha256.sig
+
 ## v1.2.0 - 2024-03-25
 
 Test results for this release can be found
