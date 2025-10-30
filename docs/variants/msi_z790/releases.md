@@ -25,8 +25,8 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 
 ## v0.9.3 - 2025-09-18
 
-This is a [non-LTS
-release](../../osf-trivia-list/dasharo.md#what-is-dasharo-non-lts-release) and
+This is a [Rapid
+release](../../dasharo-naming-convention.md) and
 has a reduced scope of tests.
 
 Test results for this release can be found
