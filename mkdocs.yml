@@ -303,6 +303,10 @@ nav:
           - 'Hardware setup': variants/asus_kgpe_d16/setup.md
           - 'SPI write protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
+      - 'Asus ROG CROSSHAIR VII HERO':
+          - 'Overview': variants/asus_c7h/overview.md
+          - 'Initial deployment': variants/asus_c7h/initial-deployment.md
+          - 'Recovery': variants/asus_c7h/recovery.md
       - 'Raptor CS Talos II':
           - 'Overview': variants/talos_2/overview.md
           - 'Releases': variants/talos_2/releases.md
