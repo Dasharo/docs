@@ -38,7 +38,7 @@ Available options:
 
 - `platform`: Indicates the target platform for the package. Platform is
 mandatory in public names. Platform name should follow [supported hardware
-list](/variants/overview).
+list](variants/overview.md).
 - `edition`: Community | Pro | Enterprise (edition codes: DCP, DPP, DEP)
 
 - `release`: Rapid | Assured | LTS. Defines QA scope and support cadence. Codes
