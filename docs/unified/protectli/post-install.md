@@ -19,7 +19,8 @@ Using `Device Manager`, select `Update Driver` for `Network Device` located in
 ## Linux
 
 This section covers Linux post-install steps tested on Ubuntu 22.04. It is
-likely that similar procedures would for others Linux distributions as well.
+likely that similar procedures would work for others Linux distributions as
+well.
 
 ### Cards using ath10k_pci driver report a firmware failure at module load
 
@@ -36,3 +37,22 @@ If you experience ath10k_pci failing to load with error in dmesg similar to:
 
 follow the [Protectli guide](https://kb.protectli.com/kb/wifi-modules-for-protectli-vaults/)
 (Section "Fix for M.2/mPCIe WiFi Card not Being Recognized") to fix the problem.
+
+### VP66XX v0.9.2 - fans stuck at a constant speed
+
+The v0.9.2 release shipped with an issue that caused the SuperIO CPU
+temperature reads to be stuck at a constant value, which in turn made the fans
+spin at constant speed. While this will no longer be the case in more recent
+releases, the issue can be mitigated on v0.9.2 by applying the `reboot=pci`
+kernel parameter in Ubuntu:
+
+* Run `sudo nano /etc/default/grub`
+* Modify the `GRUB_CMDLINE_LINUX_DEFAULT` line to contain `reboot=pci`, e.g.:
+
+  ```diff
+  -GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+  +GRUB_CMDLINE_LINUX_DEFAULT="quiet splash reboot=pci"
+  ```
+
+* Run `sudo update-grub`
+* Reboot

@@ -131,6 +131,52 @@ Legend:
 Please report all errors experienced while performing a dump to
 [dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository.
 
+### HCL Report Using an External Firmware Binary
+
+_Note: The following feature is available in DTS version 2.7.2 and later._
+
+Proprietary or stock firmware may not support using the internal programmer to
+dump the contents of the flash memory that stores the firmware. This results in
+a less complete HCL report, which lacks an inbox firmware backup and the results
+of automated firmware analysis.
+
+As a workaround, DTS allows users to provide the firmware binary file manually.
+The firmware binary can be obtained, for example, by using an
+[external programmer](../../variants/asrock_spc741d8/recovery.md)
+(_NOTE: link describes writing operation, not reading!_) or by dumping the
+firmware via [BMC](https://www.gigabyte.com/Glossary/bmc).
+
+To use a user-provided firmware binary in an HCL report, copy it to the
+`/firmware/external/` directory. This can be done manually (for example, by
+transferring the binary on a flash drive and copying it to the destination) or
+over the network. The following example demonstrates the latter method, copying
+the binary via SCP:
+
+1. Boot up the DTS.
+1. Enable the SSH server.
+1. Create `/firmware/external` directory over ssh.
+
+    ```bash
+    ssh root@<target_ip_address> 'mkdir -p /firmware/external'
+    ```
+
+1. Copy the firmware binary to the target platform at `/firmware/external/` via
+   `scp`. An example command is shown below:
+
+    ```bash
+    scp <path_to_firmware_binary> root@<target_ip_address>:/firmware/external/
+    ```
+
+1. Proceed with generating the HCL report as usual.
+
+If the internal programmer fails to dump the firmware from the platform, DTS
+will automatically use the user-supplied firmware binary. The following message
+confirms that this fallback is in use:
+
+```log
+Firmware dump not found, but found user-supplied external binary.
+```
+
 ### BIOS backup
 
 One of the key components of HCL Report is your BIOS backup. To prepare BIOS
@@ -269,6 +315,28 @@ Rebooting in 5s:
 1...
 Rebooting
 ```
+
+### Firmware Update Mode
+
+If you boot into DTS when in Firmware Update Mode you will be asked if you want
+to continue with unattended update or enter DTS menu:
+
+```text
+Dasharo Tools Suite 2.7.1 DasharoToolsSuite tty1
+
+DasharoToolsSuite login: root (automatic login)
+
+You have entered Firmware Update Mode.:
+  1: If you wish to continue with unattended firmware update process
+  9: If you wish to go back to Dasharo Tools Suite menu
+
+Select an option:
+```
+
+If you choose option 1 you will start unattended update, which is identical to
+update described in [Firmware update](#firmware-update) except all questions
+will be skipped.
+If you choose `9` you will go back to DTS menu.
 
 ### Local firmware update
 

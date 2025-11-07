@@ -5,11 +5,13 @@
 **Test setup**
 
 1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
+   [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. Proceed with the
-    [Generic test setup: OS installer](../generic-test-setup.md#os-installer).
+   [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
 1. Proceed with the
-    [Generic test setup: OS installation](../generic-test-setup.md#os-installation).
+   [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
+1. Proceed with the
+   [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Make yourself familiar with
     [SPI hardware write protection](https://docs.dasharo.com/variants/asus_kgpe_d16/spi-wp/).
 

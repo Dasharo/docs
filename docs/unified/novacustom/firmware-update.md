@@ -20,7 +20,7 @@ firmware version is currently installed on your device.
         ## Prerequisites
 
         Your firmware version can be checked by entering the
-        [Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides.md)
+        [Dasharo Setup Menu](../../dasharo-menu-docs/overview.md#dasharo-menu-guides)
         using the ++f2++ key while booting.
 
         > Advanced users can also [build](./building-manual.md) and/or flash the
@@ -42,7 +42,7 @@ firmware version is currently installed on your device.
             Capsule updates are only available when Intel ME is HAP-Disabled and the
             AC adapter is connected to the laptop
 
-            See [this Knowledge Base article](../../../dasharo-menu-docs/dasharo-system-features/#intel-management-engine-options)
+            See [this Knowledge Base article](../../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
             for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
             for more context.
 
@@ -78,16 +78,16 @@ firmware version is currently installed on your device.
 
         ### Updating older versions
 
-        1. First, ensure that [UEFI Secure Boot](../../dasharo-tools-suite/documentation/features.md#disabling-secure-boot)
+        1. First, ensure that [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#custom-mode-and-key-management)
            has been disabled.
 
-        1. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
+        2. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
            We recommend the network boot option.
 
-        1. In the main menu of Dasharo Tools Suite, select option `5` to proceed with
+        3. In the main menu of Dasharo Tools Suite, select option `5` to proceed with
            the installation of the firmware update.
 
-        1. In case you want to know more about the firmware update option in Dasharo
+        4. In case you want to know more about the firmware update option in Dasharo
            Tools Suite, please check out the
            [features section](../../dasharo-tools-suite/documentation/features.md#firmware-update)
            of the dedicated Dasharo Tools Suite documentation page.
@@ -129,6 +129,6 @@ firmware version is currently installed on your device.
 
     ## Firmware update
 
-    [Build](building-manual.md#dasharo-coreboot--head) or
+    [Build](building-manual.md#dasharo-coreboot--heads) or
     download Dasharo Heads firmware, and proceed with
     the official [Heads update documentation](https://osresearch.net/Updating).

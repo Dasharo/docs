@@ -441,11 +441,13 @@ nav:
       - 'ASRock Rack SPC741D8-2L2T/BCM':
           - 'Overview': variants/asrock_spc741d8/overview.md
           - 'Releases': variants/asrock_spc741d8/releases.md
+          - 'Firmware Update': variants/asrock_spc741d8/firmware-update.md
           - 'Building manual': variants/asrock_spc741d8/building-manual.md
           - 'Initial deployment': variants/asrock_spc741d8/initial-deployment.md
           - 'Recovery': variants/asrock_spc741d8/recovery.md
           - 'Hardware Configuration Matrix': variants/asrock_spc741d8/hardware-matrix.md
           - 'Test matrix': variants/asrock_spc741d8/test-matrix.md
+          - 'Openness Score': variants/asrock_spc741d8/openness_score.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
@@ -458,13 +460,14 @@ nav:
       - 'Verifying reproducible builds': guides/reproducible-build-verification.md
       - 'Boot logo replacement': guides/logo-customization.md
       - 'Lab Assembly':
-          - 'MinnowBoard Turbot': guides/lab-assembly/minnowboard-turbot.md
-          - 'MSI PRO Z690-A and Z790-P': guides/lab-assembly/msi-zx90.md
+          - 'ASRock SPC741D8-2L2T/BCM': guides/lab-assembly/asrock_spc741d8.md
           - 'Gigabyte MZ33-AR1': guides/lab-assembly/gigabyte_mz33_ar1.md
-          - 'Protectli': guides/lab-assembly/protectli.md
-          - 'Odroid H4': guides/lab-assembly/odroid-assembly-guide.md
+          - 'MSI PRO Z690-A and Z790-P': guides/lab-assembly/msi-zx90.md
+          - 'MinnowBoard Turbot': guides/lab-assembly/minnowboard-turbot.md
           - 'NovaCustom': guides/lab-assembly/novacustom.md
+          - 'Odroid H4': guides/lab-assembly/odroid-assembly-guide.md
           - 'PC Engines': guides/lab-assembly/pcengines.md
+          - 'Protectli': guides/lab-assembly/protectli.md
   - 'Development Process':
       - 'Source code structure': dev-proc/source-code-structure.md
       - 'Dasharo Product Guidelines: SMBIOS Information': dev-proc/smbios-rules.md
@@ -556,6 +559,8 @@ nav:
                   - 'Quick Start Guide': transparent-validation/rte/v1.1.0/quick-start-guide.md
                   - 'Serial Port Connection Guide': transparent-validation/rte/v1.1.0/serial-port-connection-guide.md
                   - 'Flashing Guide': transparent-validation/rte/v1.1.0/flashing-guide.md
+                  - 'Changing MAC Address Guide': transparent-validation/rte/v1.1.0/Change-MAC-Address.md
+                  - 'Static IP Address Guide': transparent-validation/rte/v1.1.0/Change-IP-Address.md
         #     - 'RTE and PC Engines': transparent-validation/rte/pcengines.md
               - 'RTE Reference OS': transparent-validation/rte/v1.1.0/reference-os.md
               - 'Revision History': transparent-validation/rte/revision-history.md
@@ -568,6 +573,8 @@ nav:
               - 'Sonoff preparation': transparent-validation/sonoff/sonoff_preparation.md
           - 'PiKVM':
               - 'Assembly and validation': transparent-validation/pikvm/assembly-and-validation.md
+              - 'Changing MAC Address Guide': transparent-validation/pikvm/Changing-MAC-Address.md
+              - 'Static IP Address Guide': transparent-validation/pikvm/Changing-IP-Address.md
           - 'Twonkie':
               - 'Introduction': transparent-validation/twonkie/introduction.md
           - 'EC Debugger':
@@ -587,7 +594,6 @@ nav:
           - 'Generic Testing Stand Setup': unified-test-documentation/generic-testing-stand-setup.md
           - 'Dasharo compatibility':
               #pre-commit-sort-start
-              # - '[FAN] coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - '[AUD] Audio Subsystem': unified-test-documentation/dasharo-compatibility/31F-audio-subsystem.md
               - '[BBB] Boot block on low battery': unified-test-documentation/dasharo-compatibility/359-boot-blocking.md
               - '[BMF] BIOS menu function keys': unified-test-documentation/dasharo-compatibility/357-bios-menu-function-keys.md
@@ -597,6 +603,7 @@ nav:
               - '[CBK] Custom Boot Menu Key': unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key.md
               - '[CBO] Custom Boot Order': unified-test-documentation/dasharo-compatibility/325-custom-boot-order.md
               - '[CBP] coreboot Base Port': unified-test-documentation/dasharo-compatibility/100-coreboot-base-port.md
+              - '[CFN] coreboot Fan control': unified-test-documentation/dasharo-compatibility/S31-coreboot-fan-control.md
               - '[CLG] Custom Logo': unified-test-documentation/dasharo-compatibility/304-custom-logo.md
               - '[CNB] Custom Network Boot entries': unified-test-documentation/dasharo-compatibility/30A-custom-network-boot-entries.md
               - '[CPU] CPU status': unified-test-documentation/dasharo-compatibility/31T-cpu-status.md

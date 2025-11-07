@@ -320,7 +320,7 @@ of the project documentation.
 
 Dasharo Support coming in form of three following packages:
 
-- Dasharo Community Support (DCP) - donation-driven development.
+- Dasharo Community Package (DCP) - donation-driven development.
 - Dasharo Support Package (DSP) - annual firmware support package.
 - Dasharo Enterprise Package (DEP) - custom SLA, corporate, and open roadmap
   alignment advisory.
@@ -330,8 +330,8 @@ initiative that leverages the expertise of community members and developers to
 improve firmware solutions for a range of hardware models.
 
 Platforms in scope of the program should comply with Dasharo quality criteria,
-which we slowly gather in [Dasharo Certification
-Program](#what-is-dasharo-certification-program).
+which we slowly gather in [Dasharo Certified Firmware
+Program](#what-is-dasharo-certified-firmware-program).
 
 3mdeb supports and maintains DCP-approved firmware through Dasharo Support
 Package (DSP) and Dasharo Enterprise Package (DEP). These packages offer
@@ -365,34 +365,34 @@ Certification Program providing certain quality criteria including test
 results. We always trying to minimize delta, but sometimes it can be up to 5k
 SLOC (or more I guess e.g. Talos II coreboot support).
 
-## What is the Dasharo Certification Program?
+## What is the Dasharo Certified Firmware Program?
 
-The Dasharo Certification Program (DCP) is a highly specialized certification
-program that benchmarks open-source firmware ecosystem deliverables. The
-program ensures that firmware is stable, secure, and dependable while aligning
-with the Dasharo values. DCP encourages developers to create their version of
-Dasharo or contribute to the Dasharo project or coreboot upstream, enabling
-them to leverage the power of open-source development to create custom firmware
-tailored to their specific needs based on years of Dasharo quality assurance
-results. The program's rigorous certification process entails comprehensive
-testing in the Dasharo Certification Lab, ensuring that the firmware binary
-meets the strict standards established by the program. By aligning with the
-Dasharo values, the certification program improves the overall posture of the
-open-source firmware ecosystem, making it long-term maintainable, sustainable,
-and trustworthy and providing specific service level agreements and warranties
-to commercial customers and the community.
+The Dasharo Certified Firmware (DCF) Program is a highly specialized
+certification program that benchmarks open-source firmware ecosystem
+deliverables. The program ensures that firmware is stable, secure, and
+dependable while aligning with the Dasharo values. DCF encourages developers to
+create their version of Dasharo or contribute to the Dasharo project or
+coreboot upstream, enabling them to leverage the power of open-source
+development to create custom firmware tailored to their specific needs based on
+years of Dasharo quality assurance results. The program's rigorous
+certification process entails comprehensive testing in the Dasharo
+Certification Lab, ensuring that the firmware binary meets the strict standards
+established by the program. By aligning with the Dasharo values, the
+certification program improves the overall posture of the open-source firmware
+ecosystem, making it long-term maintainable, sustainable, and trustworthy and
+providing specific service level agreements and warranties to commercial
+customers and the community.
 
-## What is DCP-approved firmware?
+## What is DCF-approved firmware?
 
-The Dasharo-certified firmware provides long-term maintenance over ten years
+The Dasharo Certified Firmware provides long-term maintenance over ten years
 after the CPU microarchitecture release, which means that OEM, ODM, hardware
 vendors, and other companies can rely on the firmware for a long time without
-worrying about end-of-life issues. Moreover, DCP-approved firmware vendors must
-provide professional support channels to ensure that other business entities
-can rely on those channels for long-term support regarding firmware and
-software.
+worrying about end-of-life issues. Moreover, DCF-approved vendors must provide
+professional support channels to ensure that other business entities can rely
+on those channels for long-term support regarding firmware and software.
 
-The validation process for DCP firmware is transparent. Test results and bug
+The validation process for DCF is transparent. Test results and bug
 reports are always publicly available, allowing the community to continually
 identify issues and improve the firmware. However, in case of a security
 embargo, the results can be kept under a strict but well-defined policy,

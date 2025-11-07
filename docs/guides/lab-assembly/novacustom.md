@@ -77,7 +77,7 @@ are needed to create testing stands for NovaCustom machines.
 
     See the onboard header chart from the NUC BOX manual:
 
-    ![](../images/nucbox_header.png)
+    ![](images/nucbox_header.png)
 
     Connect the power pin to RTE pin 410, and the reset pin to RTE pin 109
     following the
