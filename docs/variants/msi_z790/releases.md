@@ -121,10 +121,8 @@ key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
 - [Intel Firmware Support Package version RPL-S C.0.C8.50](https://github.com/intel/FSP/tree/5d0424c8/RaptorLakeFspBinPkg/Client/RaptorLakeS)
     + [License](https://github.com/intel/FSP/blob/5d0424c8/FSP_License.pdf)
-- [Intel microcode version ADL/RPL C0/H0 0x3a 12/12/2024](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-97-05)
-    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
-- [Intel microcode version RPL B0 0x12f 17/03/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-b7-01)
-    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
+- [Intel microcode based on 0x36 (for CPUIDs 00090672, 00090675, 000b06f2, 000b06f5), 0x12B (for CPUID 000b0671) revision 4f6e917d](https://github.com/Dasharo/dasharo-blobs/blob/4f6e917d/msi/ms7d25/microcode.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/INTEL_FSP_SIC_LICENSE.txt)
 
 [msi_ms7e06_v0.9.3_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/uefi/v0.9.3/msi_ms7e06_v0.9.3_ddr4.cap.sha256
 [msi_ms7e06_v0.9.3_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e06/uefi/v0.9.3/msi_ms7e06_v0.9.3_ddr4.cap.sha256.sig
