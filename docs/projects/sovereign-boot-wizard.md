@@ -72,11 +72,6 @@ If you have any questions about Sovereign Boot Provisioning Wizard, visit the
 
 * [Sovereign Boot Wizard does not discover alternative bootloaders yet](https://github.com/Dasharo/dasharo-issues/issues/1549)
 
-#### Binaries
-
-[qemu_q35_sovereign-boot-rc4.rom](https://cloud.3mdeb.com/index.php/s/ZyDFLrppzEfoP22/download){.md-button}
-[qemu_q35_sovereign-boot-rc4.rom.sha256](https://cloud.3mdeb.com/index.php/s/WtSgMSe3PqBQnxy/download){.md-button}
-
 #### SBOM
 
 * [coreboot based on 24.12 revision qemu_q35_sovereign_boot-rc4](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-rc4)
