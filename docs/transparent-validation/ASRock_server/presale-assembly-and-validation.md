@@ -10,7 +10,7 @@ specified components in [requirements](#requirements).
 | Part         | Model Name                                                      | Image                                   |
 |:-------------|:---------------------------------------------------------------:|:---------------------------------------:|
 | Motherboard  | ASRock SPC741D8                                                 |![Motherboard](images/motherboard.jpg)   |
-| CPU          | Intel Xeon Silver 4410Y                                         |![CPU](images/cpu.jpg)                   |
+| CPU          | Intel Xeon Silver 4410Y                                         |![CPU](images/CPU.jpg)                   |
 | Cooling      | Arcitc Freezer 4U-M                                             |![Cooler](images/cpu-cooler.jpg)         |
 | RAM          | Kingston 16GB DDR5 ECC KSM48R40BS8KMM-16HMR                     |![RAM](images/memory.jpg)                |
 | Power Supply | Seasonic Vertex GX 850W 80 Plus Gold                            |![Power Supply](images/power-supply.jpg) |
@@ -42,18 +42,18 @@ of the working station.
     that all the clips are fully engaged.
 
     ![Cooler Bracket](images/mounted-bracket.jpg)
-    ![Bracket Clips](imgaes/bracket-clips.jpg)
+    ![Bracket Clips](images/bracket-clips.jpg)
 
 1. Assemble the cooler by screwing in two metal pieces on both sides of the
     cooler. They can be found in the accessories box marked "LGA4677".
     You will need to screw in the holes marked "LGA4677".
 
-    ![Assambled Cooler](assambled-cooler.jpg)
+    ![Assambled Cooler](/images/assambled-cooler.jpg)
 
 1. Remove the CPU socket cover from the motherboard and very carefully place
     the CPU into the socket, making sure to line up the triangles.
 
-    ![Installed CPU](installed-CPU.jpg)
+    ![Installed CPU](images/installed-CPU.jpg)
 
 1. Apply thermal paste to the CPU, remove the peel from the bottom of the cooler,
     and place it on the CPU, ensuring the airflow arrows point in the direction
@@ -77,25 +77,25 @@ of the working station.
 1. Connect the cooler fan headers by attaching them together and securing them
     to the motherboard in the FAN1 port.
 
-    ![Fan Connectors](/images/fan-connectors.jpg)
+    ![Fan Connectors](images/fan-connectors.jpg)
 
 1. Install the memory modules into the DIMM slots. To insert a single module,
     open the latches on both sides. Then insert the RAM and gently press
     downward until the latches close automatically. Install memory according
     to the table. If only one module is used, place it in slot A1.
 
-    |                    |    | DIMM Number            |    |    |    |
-    | ------------------ | -- | ---------------------- | -- | -- | -- |
-    | DIMM SLOT          | 1  | 2                      | 4  | 6  | 8  |
-    | ------------------ | -- | ---------------------- | -- | -- | -- |
-    | A1                 | V  | V                      | V  | V  | V  |
-    | B1                 |    |                        |    | V  | V  |
-    | C1                 |    |                        | V  |    | V  |
-    | D1                 |    |                        |    | V  | V  |
-    | E1                 |    |                        | V  |    | V  |
-    | F1                 |    |                        |    | V  | V  |
-    | G1                 |    | V                      | V  | V  | V  |
-    | H1                 |    |                        |    | V  | V  |
+    |                    | DIMM Number   |    |    |    |    |
+    | ------------------ | ------------- | -- | -- | -- | -- |
+    | DIMM SLOT          | 1             | 2  | 4  | 6  | 8  |
+    | ------------------ | ------------- | -- | -- | -- | -- |
+    | A1                 | V             | V  | V  | V  | V  |
+    | B1                 |               |    |    | V  | V  |
+    | C1                 |               |    | V  |    | V  |
+    | D1                 |               |    |    | V  | V  |
+    | E1                 |               |    | V  |    | V  |
+    | F1                 |               |    |    | V  | V  |
+    | G1                 |               | V  | V  | V  | V  |
+    | H1                 |               |    |    | V  | V  |
 
     ![Installed RAM](images/installed-ram.jpg)
 
@@ -132,12 +132,12 @@ of the working station.
     cables and one 24-pin connector.
 
     ![PSU Cables](images/PSU-cables.jpg)
-    ![PSU Connected cables](PSU-cables-connected.jpg)
+    ![PSU Connected cables](images/PSU-cables-connected.jpg)
 
 1. Install the PSU in the case by placing it in its slot on the right side of
     the case and securing it with all four screws at the back.
 
-    ![Install PSU](installed-PSU.jpg)
+    ![Install PSU](images/installed-PSU.jpg)
 
 1. Place the motherboard into the case and fasten it with screws in the marked
     spots.
@@ -190,7 +190,7 @@ of the working station.
 1. If all connections have been made correctly, the device should start, and
     the boot logo should be shown.
 1. Install Dasharo firmware in accordance with
-    ![Initial Deployment]() -
+    ![Initial Deployment]()
 1. Power on the device.
 1. Boot to the Linux system (Ubuntu is recommended).
 1. Open a terminal window and run the following command:
@@ -215,4 +215,4 @@ of the working station.
 
 [Build]:
 [Board]:https://download.asrock.com/Manual/SPC741D8-2L2TBCM.pdf
-[Cooler]:https://support.arctic.de/freezer-4u-m/
+[Cooler]:https://support.arctic.de/freezer-4u-m/CoolerCoolerBuild
