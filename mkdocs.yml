@@ -548,7 +548,7 @@ nav:
           - 'MSI PRO Z690-A':
               - 'Presale assembly and validation': transparent-validation/msi-z690/presale-assembly-and-validation.md
           - 'ASRock SPC741D8':
-              - 'Presale assembly and validation': transparent-validation/ASRock SPC741D8/presale-assembly-and-validation.md
+              - 'Presale assembly and validation': transparent-validation/ASRock-SPC741D8/presale-assembly-and-validation.md
           - 'Supermicro X11 LGA1151 Series':
               - 'Theory of Operation': transparent-validation/supermicro_x11_lga1151_series/theory-of-operation.md
           - 'muxPi':
