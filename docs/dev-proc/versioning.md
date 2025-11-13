@@ -1,5 +1,63 @@
 # Versioning
 
+## Present versionning scheme
+
+### Reasoning for change
+
+- current versioning does not follow semantic versioning, and does bring very
+little meaninigful information on the release scope anyway (except for `Dasharo
+Pro Package`?)
+- the version numbers are set rather arbitrarily by a person responsible for
+the release
+- it's been difficult for us in a project like this, to draw very strict lines
+on when major/minor/patch version should be bumped, which has been causing
+passionate discussions based on subjective opinions and feelings rather than
+objective facts, with little to no value to the end product of this discussion
+(see above)
+- current versioning scheme is rather confusing than informative, as versioning
+is separated on a platform basis; this leads to scenarios such as:
+  - we have multiple platforms with the same release versions, each having
+  different scope and codebase (e.g. coreboot and paylaod versions) - we cannot
+  even try to version documentation with no consistent versioning of the
+  underlying product
+  - lower version of firmware for one platform is more recent and
+  fully-featured than higher version of firmware for another platform
+- more?
+
+### Versioning scheme proposal
+
+1. Dasharo releases are versioned by the year and month of `initial delivery`.
+   By `initial delivery` we mean here the first release happening at a given
+   date (year and month).
+
+1. There is no strict release cadence. There is a release roadmap presented
+   e.g. during [Dasharo User Group](https://vpub.dasharo.com/o/1), which is
+   driven mostly be the needs of parties involved in supporting Dasharo
+   development.
+
+1. There may be multiple releases delivered in the certain
+
+1. One releases
+
+2. 
+
+Valid version examples:
+- `25.01.01`  
+
+The most recent release for each supported platform should be reflected in the
+[Version Matrix](/variants/versions.md).
+
+References:
+- [U-Boot versioning](https://docs.u-boot.org/en/latest/develop/version.html) 
+- [coreboot releases](https://doc.coreboot.org/releases/index.html#release-notes)
+- [edk2 releases](https://github.com/tianocore/edk2/releases)
+- [Ubuntu release cycle](https://ubuntu.com/about/release-cycle)
+
+## Legacy versioning scheme
+
+> The legacy release (released before: TBD) used versioning scheme inspired by
+> (but not following exactly) the `Semantic Versioning` as described below.
+
 Dasharo Releases are versioned using [Semantic Versioning](https://semver.org/)
 and [Keep A Changelog](https://keepachangelog.com/en/1.0.0/) to document
 changes introduced in new releases.
@@ -17,7 +75,7 @@ Dasharo Releases can be divided into two categories:
 - Dasharo Pro/Enterprise Package (formerly Dasharo Entry Subscription) Releases
 - Dasharo Community Releases
 
-## Dasharo Pro Package Releases
+### Dasharo Pro Package Releases
 
 Dasharo Pro/Enterprise Package (formerly Dasharo Entry Subscription)
 subscribers receive firmware updates more frequently than the community. The
@@ -37,7 +95,7 @@ For details about the naming convention, please check
 
 [How to become Dasharo Pro Package subscriber?](../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber)
 
-## Dasharo Community Releases
+### Dasharo Community Releases
 
 Timeline for Dasharo Community Releases is communicated in [Dasharo
 Roadmap](https://github.com/Dasharo/presentations/blob/main/dasharo_roadmap.md)
@@ -49,7 +107,7 @@ Release updates, one can subscribed to free of charge mailing list for given
 hardware platform, for which the link can be found in menu on the left side
 (Supported Hardware->Hardware Model->Releases).
 
-## PC Engines releases and its exceptional versioning scheme
+### PC Engines releases and its exceptional versioning scheme
 
 Dasharo (coreboot+SeaBIOS) for PC Engines does not adhere to the typical
 versioning scheme used by Dasharo, which is semantic versioning. This is due to
@@ -73,7 +131,7 @@ The general rule for versioning pattern is as follows: `<coreboot_rel_ver>{.00.}
   Dasharo Team on top of the given coreboot release, starting from `01`, where
   version `00` means no changes were applied on top of the coreboot release.
 
-## Signing keys
+### Signing keys
 
 In Dasharo we use following rules for keys:
 
@@ -110,7 +168,7 @@ e.g. PC Engines. Examples:
 Most recent status should be reflected in
 [3mdeb-secpack](https://github.com/3mdeb/3mdeb-secpack) repository.
 
-## Promotion to production-level versioning (v1.0.0 and up)
+### Promotion to production-level versioning (v1.0.0 and up)
 
 A release may be promoted to v1.0.0 once it meets the following criteria:
 
