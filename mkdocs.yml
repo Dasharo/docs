@@ -171,6 +171,8 @@ plugins:
         'variants/novacustom_nuc_box/firmware-update.md': 'unified/novacustom/firmware-update.md'
         'variants/novacustom_nuc_box/recovery.md': 'unified/novacustom/recovery.md'
 
+        'transparent-validation/msi-z690/laboratory-assembly-guide.md': 'guides/lab-assembly/msi-zx90.md'
+
   # This parameter excludes the listed pages from being added to the sitemap.
   # This solves the problem of orphaned pages (pages that are in the site map,
   # but there are no internal links to them).
