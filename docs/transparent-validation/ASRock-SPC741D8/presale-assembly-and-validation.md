@@ -16,7 +16,7 @@ specified components in [requirements](#requirements).
 | Power Supply | Seasonic Vertex GX 850W 80 Plus Gold                            |![Power Supply](images/power-supply.jpg) |
 | Storage      | SSD Kingston KC3000 512 GB M.2 2280 NVMe                        |![Storage](images/storage.jpg)           |
 | Enclosure    | SilverStone RM42-502 4U Rack Chassis                            |![Enclosure](images/enclosure.jpg)       |
-| TPM          | ASRock TPM-SPI Module                                           |![TPM](images/TPM.jpg)                   |
+| TPM          | ASRock TPM-SPI Module                                           |![TPM](images/tpm-module.jpg)            |
 
 Additionally, you will need a screwdriver with bits P1, T30, and small pliers.
 Remember to make all connections with the grounding strap.
@@ -36,7 +36,7 @@ of the working station.
 
 1. In the motherboard box, find the CPU bracket marked "E1B".
 
-    ![CPU bracket](images/bracket.jpg)
+    ![CPU bracket](images/CPU-bracket.jpg)
 
 1. Attach the bracket to the CPU, making sure to line up the triangles and
     that all the clips are fully engaged.
@@ -48,7 +48,7 @@ of the working station.
     cooler. They can be found in the accessories box marked "LGA4677".
     You will need to screw in the holes marked "LGA4677".
 
-    ![Assambled Cooler](/images/assambled-cooler.jpg)
+    ![Assambled Cooler](images/assambled-cooler.jpg)
 
 1. Remove the CPU socket cover from the motherboard and very carefully place
     the CPU into the socket, making sure to line up the triangles.
@@ -87,7 +87,6 @@ of the working station.
     |                    | DIMM Number   |    |    |    |    |
     | ------------------ | ------------- | -- | -- | -- | -- |
     | DIMM SLOT          | 1             | 2  | 4  | 6  | 8  |
-    | ------------------ | ------------- | -- | -- | -- | -- |
     | A1                 | V             | V  | V  | V  | V  |
     | B1                 |               |    |    | V  | V  |
     | C1                 |               |    | V  |    | V  |
@@ -136,8 +135,6 @@ of the working station.
 
 1. Install the PSU in the case by placing it in its slot on the right side of
     the case and securing it with all four screws at the back.
-
-    ![Install PSU](images/installed-PSU.jpg)
 
 1. Place the motherboard into the case and fasten it with screws in the marked
     spots.
@@ -189,8 +186,7 @@ of the working station.
 1. Power on the device with the button located on the front panel.
 1. If all connections have been made correctly, the device should start, and
     the boot logo should be shown.
-1. Install Dasharo firmware in accordance with
-    ![Initial Deployment]()
+1. Install Dasharo firmware in accordance with [Initial Deployment][Deployment]
 1. Power on the device.
 1. Boot to the Linux system (Ubuntu is recommended).
 1. Open a terminal window and run the following command:
@@ -208,11 +204,12 @@ of the working station.
 
 * [Building manual][Build] - documentation contains information on how to build
     Dasharo compatible with ASRock SPC741D8.
-* [Board manual][Board] - documentation contains detailed information about
+* [Board Manual][BoardManual]  - documentation contains detailed information about
     the motherboard and its operations.
 * [CPU Cooler Manual][Cooler] - documentation contains information on how to
     properly assemble the CPU Cooler and mount the CPU to it.
 
-[Build]:
-[Board]:https://download.asrock.com/Manual/SPC741D8-2L2TBCM.pdf
-[Cooler]:https://support.arctic.de/freezer-4u-m/CoolerCoolerBuild
+[Deployment]: ../../variants/asrock_spc741d8/initial-deployment.md
+[Build]: ../../variants/asrock_spc741d8/building-manual.md
+[BoardManual]: https://download.asrock.com/Manual/SPC741D8-2L2TBCM.pdf
+[Cooler]: https://support.arctic.de/freezer-4u-m/CoolerCoolerBuild
