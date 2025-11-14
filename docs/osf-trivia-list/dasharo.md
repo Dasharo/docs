@@ -503,6 +503,24 @@ consider [ways to help us](https://docs.dasharo.com/ways-you-can-help-us/)
 to gain a reputation that can lead to influencing Dasharo Community Supported
 roadmap.
 
+## Can I port coreboot to the chosen platform myself since it is open-source?
+
+<!-- This answer needs improvement -->
+
+coreboot source-code is available in the official repository. That means you
+can port coreboot and adjust payload with chosen features providing that you
+are deeply experienced in firmware engineering and have a sufficient amount of
+time. Step-by-step procedures do not exist yet, so in case of any issue or bug,
+it is challenging to find a solution or at least a guide. Furthermore,
+integration, validation, emergency releases and maintenance may cause a problem
+without the constant support of an experienced firmware team. Are we trying to
+tell you that it is not a good idea to port and adjust coreboot by yourself?
+No. If you are experienced and porting coreboot will serve your purposes, you
+can fully manage it by yourself and we encourage you to do so! For OEM/ODM
+vendors, the need for time, quality and stability measures makes Dasharo the
+best choice. Let all the effort involved in porting, adjusting, maintenance and
+validation be on us – experienced firmware experts.
+
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
 [dtsos]: ../dasharo-tools-suite/overview.md
 [lvfs]: https://fwupd.org/lvfs/docs/consulting
