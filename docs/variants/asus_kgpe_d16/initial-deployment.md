@@ -1,19 +1,7 @@
 # Initial deployment
 
-Initial deployment of Dasharo firmware on ASUS KGPE-D16 can be done:
-
-* using DTS,
-* manually.
-
-## Initial deployment using DTS
-
-To ensure a smooth deployment process, it is recommended to use the latest
-version of DTS available from the [releases
-page](../../dasharo-tools-suite/releases.md). Once you have obtained it, you can
-then proceed with following the [Dasharo zero-touch initial deployment
-section](../../dasharo-tools-suite/documentation/features.md#dasharo-zero-touch-initial-deployment)
-procedure. This will help you set up Dasharo effectively and without manual
-intervention.
+Initial deployment of Dasharo firmware on ASUS KGPE-D16 can only be done
+manually. Support for DTS deployment has been dropped in versions `> 2.7.1`.
 
 ## Initial deployment manually
 
