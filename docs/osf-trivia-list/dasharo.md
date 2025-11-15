@@ -437,6 +437,48 @@ Certification Program:
 ## What is the difference between open-source firmware development in free time
 and open-source firmware development as a business?
 
+## How Dasharo Team respond to security incidents? How to report vulnerability
+in Dasharo?
+
+In case of any suddenly discovered vulnerabilities, according to Dasharo
+Maintenance Agreement, we will provide you with emergency release to
+prevent your platform from the potential threat. If you want to know
+more – [contact us](/pages/contact/).
+
+## What platforms/microarchitectures are supported?
+
+Dasharo is not limited by the processor architecture or hardware
+platform. We support any platform with the architecture x86, ARM/Arm64,
+POWER or RISC-V.
+
+## What Dasharo features are supported on my platform?
+
+Features that are supported on your platform mostly depend on the
+architecture, microarchitecture and hardware platform design. We need to
+get this basic information to provide you with the list of supported
+features on your platform. If you don’t know this information or you
+don’t know what platform would be the best choice for you – contact us,
+we will help you in either case.
+
+## How are Dasharo firmware updates requested?
+
+Firmware release cycle is set at the early product development stage and
+according to the individual case. Updates can vary widely, but one
+common schedule would be delivering updates to users every three to six
+months depending on the Open Source Core Framework Software release
+cycle. We also support emergency releases occurring in case of sudden
+vulnerabilities as well as customer on-demand builds.
+
+## Can I introduce custom firmware feature into my existing platform?
+
+Yes, Dasharo Team is very flexible in the terms of preparing the ideal solution
+for the client needs. For example, we can prepare project charter that contains
+coreboot port for target platform with UEFI payload, iPXE support, security
+hardening (e.g. Intel's Boot Guard) and on top of that, with full verification
+of the platform stability through a wide scope of automated regression
+testing.</br></br> Example Dasharo stack and how to build custom solution can
+be found [here](/pages/learn/#how-dasharo-works).
+
 -->
 
 ## Why there is no AMD mainboard supported in Dasharo ?
