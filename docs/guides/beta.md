@@ -22,6 +22,9 @@ fwupdmgr refresh
 fwupdmgr get-updates
 ```
 
+> Beta Releases are also announced through the `Dasharo - Beta` channel in the
+> Dasharo Matrix Space.
+
 ## Updating
 
 To update:
