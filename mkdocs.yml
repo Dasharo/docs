@@ -455,6 +455,7 @@ nav:
   - 'Guides':
       - 'Updating your firmware': guides/firmware-update.md
       - 'Capsule updates': guides/capsule-update.md
+      - 'Beta Updates': guides/beta.md
       - 'Flashing custom firmware': guides/firmware-reflash.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
       - 'Dasharo TrustRoot Fusing': guides/cpu-fusing.md
