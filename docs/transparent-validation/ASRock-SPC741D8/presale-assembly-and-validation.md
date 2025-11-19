@@ -11,7 +11,7 @@ specified components in [requirements](#requirements).
 |:-------------|:---------------------------------------------------------------:|:---------------------------------------:|
 | Motherboard  | ASRock SPC741D8                                                 |![Motherboard](images/motherboard.jpg)   |
 | CPU          | Intel Xeon Silver 4410Y                                         |![CPU](images/CPU.jpg)                   |
-| Cooling      | Arcitc Freezer 4U-M                                             |![Cooler](images/cpu-cooler.jpg)         |
+| Cooling      | Arctic Freezer 4U-M                                             |![Cooler](images/cpu-cooler.jpg)         |
 | RAM          | Kingston 16GB DDR5 ECC KSM48R40BS8KMM-16HMR                     |![RAM](images/memory.jpg)                |
 | Power Supply | Seasonic Vertex GX 850W 80 Plus Gold                            |![Power Supply](images/power-supply.jpg) |
 | Storage      | SSD Kingston KC3000 512 GB M.2 2280 NVMe                        |![Storage](images/storage.jpg)           |
