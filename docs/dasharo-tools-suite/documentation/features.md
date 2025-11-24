@@ -32,7 +32,7 @@ When DTS is started, it has following options for the user to choose from:
 * **L** [Enable sending DTS
   logs](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
 
-## Dasharo zero-touch initial deployment
+## Dasharo zero-touch initial deployment (i.e. DZTID)
 
 DTS can be used to flash Dasharo firmware on your hardware. To achieve this,
 boot DTS, choose option number `2`. After creating
