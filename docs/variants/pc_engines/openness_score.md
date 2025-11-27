@@ -5,6 +5,99 @@ Score](../../glossary.md#dasharo-openness-score) for PC Engines apu2 series
 Dasharo releases. The content of the page is generated with [Dasharo Openness
 Score utility](https://github.com/Dasharo/Openness-Score).
 
+## v0.9.1
+
+Openness Score for pcengines_apu2_v0.9.1.rom
+
+Open-source code percentage: **81.9%**
+Closed-source code percentage: **18.1%**
+
+* Image size: 8388608 (0x800000)
+* Number of regions: 12
+* Number of CBFSes: 2
+* Total open-source code size: 3382824 (0x339e28)
+* Total closed-source code size: 749792 (0xb70e0)
+* Total data size: 359852 (0x57dac)
+* Total empty size: 3896140 (0x3b734c)
+
+![](pcengines_apu2_v0.9.1.rom_openness_chart.png)
+
+![](pcengines_apu2_v0.9.1.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SMMSTORE | 0x0 | 0x40000 | data |
+| RW_NVRAM | 0x40000 | 0x1000 | data |
+| VBLOCK_A | 0x41000 | 0x2000 | data |
+| RW_FWID_A | 0x3fff00 | 0x100 | data |
+| FMAP | 0x400000 | 0x1000 | data |
+| RO_FRID | 0x401000 | 0x100 | data |
+| RO_FRID_PAD | 0x401100 | 0x700 | data |
+| GBB | 0x401800 | 0x10000 | data |
+
+### CBFS FW_MAIN_A
+
+* CBFS size: 3919616
+* Number of files: 10
+* Open-source files size: 1662740 (0x195f14)
+* Closed-source files size: 0 (0x0)
+* Data size: 6476 (0x194c)
+* Empty size: 2250400 (0x2256a0)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1475016 | none | open-source |
+| fallback/romstage | stage | 46520 | none | open-source |
+| fallback/ramstage | stage | 101109 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 5835 | none | open-source |
+| fallback/postcar | stage | 34260 | none | open-source |
+| config | raw | 4109 | LZMA | data |
+| revision | raw | 854 | none | data |
+| build_info | raw | 97 | none | data |
+| spd.bin | spd | 256 | none | data |
+| (empty) | null | 2250400 | none | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 4122624
+* Number of files: 16
+* Open-source files size: 1720084 (0x1a3f14)
+* Closed-source files size: 749792 (0xb70e0)
+* Data size: 7008 (0x1b60)
+* Empty size: 1645740 (0x191cac)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1475016 | none | open-source |
+| fallback/romstage | stage | 46520 | none | open-source |
+| fallback/ramstage | stage | 101109 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 5835 | none | open-source |
+| fallback/postcar | stage | 34260 | none | open-source |
+| bootblock | bootblock | 57344 | none | open-source |
+| AGESA | raw | 504032 | none | closed-source |
+| apu/amdfw | raw | 245760 | none | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| config | raw | 4109 | LZMA | data |
+| revision | raw | 854 | none | data |
+| build_info | raw | 97 | none | data |
+| spd.bin | spd | 256 | none | data |
+| (empty) | null | 356004 | none | empty |
+| (empty) | null | 1199716 | none | empty |
+| (empty) | null | 90020 | none | empty |
+
 ## v24.08.00.01
 
 Openness Score for pcengines_apu2_seabios_v24.08.00.01.rom
