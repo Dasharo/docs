@@ -34,12 +34,10 @@ Test results for this release can be found
 
 - [Installer of OpenBSD 7.5 & 7.7 won't boot on Dasharo v0.9.0, PC Engines APU2](https://github.com/Dasharo/dasharo-issues/issues/1465)
 - [APU2 - IO_PAGE_FAULTS on writes by ath10k_pci](https://github.com/Dasharo/dasharo-issues/issues/1134)
-- [APU2 - "L1 TLB multimatch"](https://github.com/Dasharo/dasharo-issues/issues/994)
 - [escape takes too long](https://github.com/Dasharo/dasharo-issues/issues/788)
 - [Driver Health Manager blank screen](https://github.com/Dasharo/dasharo-issues/issues/787)
 - [HDD Security Configuration blank screen](https://github.com/Dasharo/dasharo-issues/issues/786)
 - [Dasharo v0.9.0, apu4, apu6 - Call Trace at boot time](https://github.com/Dasharo/dasharo-issues/issues/784)
-- [TPMCMD007.002 CREATELOADED Function (Ubuntu 22.04) doesn't work](https://github.com/Dasharo/open-source-firmware-validation/issues/217)
 - [Firmware boot time reported by systemd-analyze is too high](https://github.com/Dasharo/dasharo-issues/issues/761)
 - [BIOS Lock does not work as expected](https://github.com/Dasharo/dasharo-issues/issues/754)
 - [CBMEM buffer too small to fill full boot log](https://github.com/Dasharo/dasharo-issues/issues/753)
