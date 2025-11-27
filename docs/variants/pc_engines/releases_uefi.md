@@ -18,15 +18,17 @@ For details about our release process please read
 {{ subscribe_form("667a3af1-424e-439e-9144-57bfcf921ca4",
 "Subscribe to Dasharo for PC Engines Release Notification Newsletter") }}
 
-## v0.9.1 - 2025-11-26
+## v0.9.1 - 2025-11-27
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/tree/main/boards/PCEngines/).
 
 ### Changed
 
-- [coreboot rebased on 24.12](https://doc.coreboot.org/releases/coreboot-24.12-relnotes.html)
-- EDK II rebased on edk2-stable202408
+- [Rebased coreboot repository to 24.12 (see SBOM)](https://doc.coreboot.org/releases/coreboot-24.12-relnotes.html)
+- Rebased edk2 repository to edk2-stable202502 (see SBOM)
+- Owner GUID of Secure Boot DB and KEK to Microsoft recommended values
+- Updated DBX to 2025-10-16
 
 ### Known issues
 
@@ -78,7 +80,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/da
 
 - [Dasharo coreboot fork based on 24.12 revision 217612e6](https://github.com/Dasharo/coreboot/tree/217612e6)
     + [License](https://github.com/Dasharo/coreboot/blob/217612e6/COPYING)
-- [Dasharo EDKII fork based on edk2-stable202408 revision 42934b12](https://github.com/Dasharo/edk2/tree/42934b12)
+- [Dasharo EDKII fork based on edk2-stable202502 revision 42934b12](https://github.com/Dasharo/edk2/tree/42934b12)
     + [License](https://github.com/Dasharo/edk2/blob/42934b12/License.txt)
 - [iPXE based on 6c7068fce4b revision 6c7068fc](https://github.com/Dasharo/ipxe/tree/6c7068fc)
     + [License](https://github.com/Dasharo/ipxe/blob/6c7068fc/COPYING.GPLv2)
