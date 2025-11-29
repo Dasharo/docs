@@ -23,6 +23,111 @@ For details about our release process please read
 {{ subscribe_form("bae1674f-bd25-4a12-b6b5-c2099739cd93",
 "Subscribe to Dasharo compatible with MSI PRO Z690-A Newsletter") }}
 
+## v1.1.6 - 2025-11-29
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7d25/v1.1.6-results.csv).
+
+### Changed
+
+- Updated CPU microcode (see SBOM)
+
+### Known issues
+
+- [XMP1 profile does not boot in combination with some DDR5 configurations](https://github.com/Dasharo/dasharo-issues/issues/683)
+- [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
+- [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
+- [Windows 11 VBS (Virtualization-based Security) appears Not enabled on System Information](https://github.com/Dasharo/dasharo-issues/issues/539)
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
+
+### Binaries
+
+[sha256][msi_ms7d25_v1.1.6_ddr4.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr4.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr4.cap)
+
+[sha256][msi_ms7d25_v1.1.6_ddr4.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr4.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr4.rom)
+
+[sha256][msi_ms7d25_v1.1.6_ddr4_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr4_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr4_dev_signed.cap)
+
+[sha256][msi_ms7d25_v1.1.6_ddr4_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr4_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr4_dev_signed.rom)
+
+[sha256][msi_ms7d25_v1.1.6_ddr5.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr5.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr5.cap)
+
+[sha256][msi_ms7d25_v1.1.6_ddr5.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr5.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr5.rom)
+
+[sha256][msi_ms7d25_v1.1.6_ddr5_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr5_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr5_dev_signed.cap)
+
+[sha256][msi_ms7d25_v1.1.6_ddr5_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.6_ddr5_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.6_ddr5_dev_signed.rom)
+
+This is a Dasharo Pro Package Release. To access the pre-built binaries,
+you need to [subscribe to the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our
+[shop](https://shop.3mdeb.com/product/1year-desktop/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter, and
+gain entry to the Dasharo Premier Support invite-only live chat on the Matrix
+network, enabling direct engagement with the Dasharo Team and fellow
+subscribers for personalized, priority assistance.
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 24.12 revision be7d58da](https://github.com/Dasharo/coreboot/tree/be7d58da)
+    + [License](https://github.com/Dasharo/coreboot/blob/be7d58da/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202502 revision 1c50dad8](https://github.com/Dasharo/edk2/tree/1c50dad8)
+    + [License](https://github.com/Dasharo/edk2/blob/1c50dad8/License.txt)
+- [Dasharo EDK2-platforms fork based on v0.9.0 revision 1002a596](https://github.com/Dasharo/edk2-platforms/tree/1002a596)
+    + [License](https://github.com/Dasharo/edk2-platforms/blob/1002a596/License.txt)
+- [iPXE based on 2025.03 revision 6c7068fc](https://github.com/Dasharo/ipxe/tree/6c7068fc)
+    + [License](https://github.com/Dasharo/ipxe/blob/6c7068fc/COPYING.GPLv2)
+- [vboot based on f1f70f46dc revision f1f70f46](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/LICENSE)
+- [Intel Management Engine version v16.1.30.2307](https://github.com/Dasharo/dasharo-blobs/blob/8dce7604/msi/ms7d25/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.1](https://github.com/Dasharo/dasharo-blobs/blob/8dce7604/msi/ms7d25/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version RPL-S C.0.C8.50](https://github.com/intel/FSP/tree/5d0424c8/RaptorLakeFspBinPkg/Client/RaptorLakeS)
+    + [License](https://github.com/intel/FSP/blob/5d0424c8/FSP_License.pdf)
+- [Intel microcode version ADL/RPL C0/H0 0x3d 12/10/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20251111/intel-ucode/06-97-05)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20251111/license)
+- [Intel microcode version RPL B0 0x132 08/10/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20251111/intel-ucode/06-b7-01)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20251111/license)
+
+[msi_ms7d25_v1.1.6_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4.cap.sha256
+[msi_ms7d25_v1.1.6_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4.cap.sha256.sig
+[msi_ms7d25_v1.1.6_ddr4.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4.rom.sha256
+[msi_ms7d25_v1.1.6_ddr4.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4.rom.sha256.sig
+[msi_ms7d25_v1.1.6_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4_dev_signed.cap.sha256
+[msi_ms7d25_v1.1.6_ddr4_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4_dev_signed.cap.sha256.sig
+[msi_ms7d25_v1.1.6_ddr4_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.6_ddr4_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr4_dev_signed.rom.sha256.sig
+[msi_ms7d25_v1.1.6_ddr5.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5.cap.sha256
+[msi_ms7d25_v1.1.6_ddr5.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5.cap.sha256.sig
+[msi_ms7d25_v1.1.6_ddr5.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5.rom.sha256
+[msi_ms7d25_v1.1.6_ddr5.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5.rom.sha256.sig
+[msi_ms7d25_v1.1.6_ddr5_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5_dev_signed.cap.sha256
+[msi_ms7d25_v1.1.6_ddr5_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5_dev_signed.cap.sha256.sig
+[msi_ms7d25_v1.1.6_ddr5_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.6_ddr5_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.6/msi_ms7d25_v1.1.6_ddr5_dev_signed.rom.sha256.sig
+
 ## v1.1.5 - 2025-09-18
 
 This is a [non-LTS
