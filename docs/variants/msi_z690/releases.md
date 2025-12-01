@@ -23,7 +23,7 @@ For details about our release process please read
 {{ subscribe_form("bae1674f-bd25-4a12-b6b5-c2099739cd93",
 "Subscribe to Dasharo compatible with MSI PRO Z690-A Newsletter") }}
 
-## v1.1.6 - 2025-11-29
+## v1.1.6 - 2025-12-01
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7d25/v1.1.6-results.csv).

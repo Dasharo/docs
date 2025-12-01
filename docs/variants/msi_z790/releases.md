@@ -23,7 +23,7 @@ recommend seeing our [FAQ](../../unified/msi/faq.md).
 {{ subscribe_form("b7d54f08-baae-4762-9ce2-c1df12bdca58",
 "Subscribe to MSI PRO Z790-P (WIFI) (DDR5) Dasharo Release Newsletter") }}
 
-## v0.9.4 - 2025-11-29
+## v0.9.4 - 2025-12-01
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7e06/v0.9.4-results.csv).
