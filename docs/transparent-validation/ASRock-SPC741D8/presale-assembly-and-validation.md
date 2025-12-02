@@ -1,9 +1,10 @@
-# Presale device assembly and validation
+# Presale device preparation and validation
 
 ## Introduction
 
-This document describes the assembly procedure of the ASRock SPC741D8 with
-specified components in [requirements](#requirements).
+This document describes the preparation (assembly, flashing and verification)
+procedure of the ASRock SPC741D8 with specified components in
+[requirements](#requirements).
 
 ## Requirements
 
@@ -179,26 +180,322 @@ of the working station.
 
     ![Case keys](images/case-keys.jpg)
 
-## Device validation
+## Stock Firmware verification
 
+Once the platform gets assembled, it is crucial to verify its functionality
+before attempting to flash Dasharo firmware. This is to exclude the possibility
+of the platform not booting due to bad hardware configuration.
+
+Here's a list of steps that need to be performed:
+
+1. Downloads the latests stable DTS version from
+    [releases](https://github.com/Dasharo/meta-dts/releases/) and
+    [flash the image](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/#bootable-usb-stick)
+    to the flash drive. For non-technical users, it is recommended to use Etcher
+    to flash the image onto the flash drive.
 1. Connect the device to the mains power.
 1. Open the front panel using the attached key.
+1. Plug the previously prepared flash drive into one of the available USB ports.
 1. Power on the device with the button located on the front panel.
-1. If all connections have been made correctly, the device should start, and
-    the boot logo should be shown.
-1. Install Dasharo firmware in accordance with [Initial Deployment][Deployment]
-1. Power on the device.
-1. Boot to the Linux system (Ubuntu is recommended).
-1. Open a terminal window and run the following command:
+1. Make the platform boot from the flash drive.
+1. Once DTS boots, run the HCL report with an option to send the logs to 3mdeb.
+1. Power off the device.
+
+## Flashing Dasharo Firmware
+
+The Dasharo firmware can only be flashed externally by removing the memory
+chip from the socket and using a dedicated adapter to flash it via CH341A
+(v1.7) programmer. The following list guides how to perform this operation:
+
+1. **Ensure the platform is disconnected from the power source!**
+1. Locate the BIOS flash memory socket. The flash memory socket is located
+    at the very bottom of the motherboard, below the NVME drive (or socket if
+    drive not yet mounted). The following picture showcases the socket location.
+
+    ![BIOS memory location](images/flash_location.jpg)
+
+1. Open the flash memory socket. To open the flash memory socket, it is advised
+    to remove the NVME drive, as there is very little space to grab the socket
+    door. Moreover, the socket door is sealed with a paper-like seal; one can
+    use pointy tweezers or a small knife to gently cut the seal along the door
+    edges as marked in the picture above. Once the previously mentioned things
+    were done, open up the socket by pulling up the tabs on the bigger door of
+    the chip memory socket. Once the bigger door is freed, one should be able to
+    perform the same operation for the smaller door. The partially opened socket
+    and the hinge direction have been showcased in the picture below.
+
+    ![BIOS socket open](images/socket_open.jpg)
+
+1. Remove the memory from the socket. To remove the memory from the socket,
+    one can slide a tweezers underneath the memory chip to lift it up. This
+    operation is much easier to perform with the NVME drive removed. The picture
+    below shows the removed flash memory and its orientation.
+
+    ![Flash chip](images/bios_flash_mem.jpg)
+
+    The first pin of the chip is always marked with a dot (stamp) on the
+    package. The dot and the first pin were highlighted by a red circle and
+    arrow, respectively.
+
+    _Note: While the picture shows `Macronix 5MX25L51245G` memory chip, the
+    platform might as well come with different chips like `Winbond W25Q512JV`,
+    therefore a chip model can differ. While the chips can be different, they
+    shall have the same specification, therefore settings on the programmer are
+    common for all the chips._
+
+1. Obtain the CH341A v1.7 programmer (the one with green PCB) and the SOIC-16
+    adapter. For your convenience, the right adapter has been labeled with the
+    platform name it was bought for.
+
+    ![Flash adapter](images/flsh_adapter.jpg)
+
+1. Set the programmers as follows:
+
+    - set voltage/logic level to 3.3V,
+    - set the programmer to flashing mode,
+    - put the adapter pins into the groves and secure it.
+
+    The above process has been shown in detail in the pictures below.
+
+    ![Programmer corner](images/flshr_corner.jpg)
+
+    The picture above showcases:
+
+    - where to put the jumper (marked with a red arrow),
+    - how to secure the adapter, by pulling the lever down when the pins are in
+    the grooves (marked with green arrow),
+    - the yellow circle showcases the 8 grooves at the rear of the programmer
+    shall be left unpopulated. The programmer uses the first 8 pins.
+
+    ![Programmer side](images/flasher_side.jpg)
+
+    The picture above showcases:
+
+    - leaver in the lock position (marked with green arrow),
+    - the logic level switch set to 3.3V (marked with a red arrow),
+    - the programmer type and version were highlighted in yellow.
+
+    _Note: On the bottom of the PCB, the programmer features a pictogram showing
+    how to set the voltage level switch. The two memory models that are known to
+    be mounted in this platform operate at 2.7 to 3.6 volts; it is safe to assume
+    all do, to be compatible with the motherboard logic levels._
+
+    ![programmer top](images/flshr_top.jpg)
+
+    The picture above showcases the top view of the programmer and adapter
+    combo. The red arrow and a circle showcase how to locate the first pin in
+    the socket. The rule is the same for memory chips; the dot means the first
+    pin. Thus, when placing memory in the socket, both dots should be aligned.
+
+1. Place the flash memory in the adapter (programmer). The picture below
+    showcases the BIOS flash memory being socketed in the SOIC-16 adapter that's
+    connected to the programmer.
+
+    ![Memory in the adapter](images/flsh_in_adaptr.jpg)
+
+    To socket the memory chip in an adapter, first place it freely in the
+    adapter. Make sure the dot on the memory chip and the dot on the adapter PCB
+    are aligned (are in the same corner). The dots were marked with red arrows
+    and circles.
+
+    Finally, push the border marked with the yellow arrows down and then release
+    them. The memory chip shall fall into place and be locked.
+
+1. Connect the programming combo to your computer.
+
+    _Note: Use of a USB extension cable is advised._
+
+1. Open up the terminal and probe the flash chip. The command shown below does
+    just that. It is safe to execute the command; no changes to the flash memory
+    are made.
+
+    **Command:**
 
     ```bash
-    sudo dmidecode -t 0 | grep Version
+    sudo flashrom -p ch341a_spi
     ```
 
-1. The output of the command above should be similar to:
-    `Version: Dasharo (coreboot+UEFI) <version>` where the version should
-    correspond to the version of the flashing binary used, eg. v1.0.0.
-1. Check in the system that everything is working correctly.
+    The expected output should be similar to the one shown below.
+
+    **Example log:**
+
+    ```log
+        λ sudo flashrom -p ch341a_spi
+        flashrom 1.4.0 on Linux 6.17.8-300.fc43.x86_64 (x86_64)
+        flashrom is free software, get the source code at https://flashrom.org
+
+        Found Winbond flash chip "W25Q512JV" (65536 kB, SPI) on ch341a_spi.
+        [...]
+    ```
+
+    It might so happen that, additionally, the following information will be
+    printed.
+
+    **Example log:**
+
+    ```log
+        This flash part has status UNTESTED for operations: WP
+        The test status of this chip may have been updated in the latest development
+        version of flashrom. [...]
+    ```
+
+    If that's the case, the message can be simply ignored.
+
+1. Dump the memory chip contents. This step is performed to ensure
+    connection and memory operations are stable. The set of commands shown below
+    does two memory dumps on the flash chip and prints the checksums of the
+    dumped memory images. The commands are safe to perform, chip contents are
+    **not** altered, but please note this might take a long amount of time
+    (`8min+` per operation).
+
+    **Command:**
+
+    ```bash
+    sudo flashrom -p ch341a_spi -r backup_p1.bin # Perform the first read
+    sudo flashrom -p ch341a_spi -r backup_p2.bin # Perform the second read
+    md5sum backup_p* # Calculate and print checksums for dumped memory images
+    ```
+
+    If the dumping memory succeeds, the "`Reading flash... done.`" will be
+    printed out.
+
+    **Example log:**
+
+    ```log
+    λ sudo flashrom -p ch341a_spi -r backup_p1.bin
+    flashrom 1.4.0 on Linux 6.17.8-300.fc43.x86_64 (x86_64)
+    flashrom is free software, get the source code at https://flashrom.org
+
+    Found Winbond flash chip "W25Q512JV" (65536 kB, SPI) on ch341a_spi.
+    [...]
+    You can also try to follow the instructions here:
+    https://www.flashrom.org/contrib_howtos/how_to_mark_chip_tested.html
+    Thanks for your help!
+    Reading flash... done.
+    ```
+
+    The output of `md5sum` command will be similar to the following.
+
+    **Example log:**
+
+    ```log
+    λ md5sum backup_p*
+    7519dd85799169b8561d2867f98ffec6  backup_p1.bin
+    7519dd85799169b8561d2867f98ffec6  backup_p2.bin
+    ```
+
+    Note that **the hashes will be different** than those in the above example.
+    The operation is considered a success if both hashes are the same.
+
+1. Obtain the newest firmware for the platform. Log in to
+    [Minio](https://dlui.dasharo.com), and go to the
+    `dasharo-asrock-spc741d8-uefi/SPC741D8` directory. The directory stores all
+    available firmware versions. Go to the directory containing the newest
+    available firmware version and download the two files:
+
+    - the firmware binary file with `.rom` extension.
+    - the control checksum file with extension `.rom.sha256`.
+
+1. In the terminal, go to the directory where the files have been downloaded.
+1. Execute the following command to verify whether the checksums match.
+
+    **Command:**
+
+    ```bash
+     sha256sum asrock_spc741d8_*.rom && cat asrock_spc741d8_*.rom.sha256
+    ```
+
+    The output of the command shall be as follows.
+
+    **Example log:**
+
+    ```log
+    λ sha256sum asrock_spc741d8_*.rom && cat asrock_spc741d8_*.rom.sha256
+    85e76fc57b5673c93aec6eb9e46ba00237f13636d62697506707971a28aa7a92  asrock_spc741d8_v0.9.0.rom
+    85e76fc57b5673c93aec6eb9e46ba00237f13636d62697506707971a28aa7a92  asrock_spc741d8_v0.9.0.rom
+    ```
+
+    _Note: The checksums shown in the example above are just an example._
+
+    The command will print out the checksum calculated locally and the master
+    checksum afterwards. If the checksums match, one can proceed.
+
+1. Flash the memory chip with new firmware. To flash the firmware onto the flash
+    chip, execute the command from the snippet below. **NOTE THAT THIS ACTION IS
+    DESTRUCTIVE. THE DEFAULT FIRMWARE WILL BE ERASED!**
+
+    _Note: In case flashing goes wrong, you shall still have copies of the
+    original firmware from a few steps before._
+
+    **Command:**
+
+    ```bash
+    sudo flashrom -p ch341a_spi -w <name_of_downloaded_.rom_file>
+    ```
+
+    _Note: The flashing can take `20min+`._
+
+    The output of the command will likely be as follows.
+
+    **Example log:**
+
+    ```log
+    λ sudo flashrom -p ch341a_spi -w asrock_spc741d8_v0.9.0.rom
+    flashrom 1.4.0 on Linux 6.17.8-300.fc43.x86_64 (x86_64)
+    flashrom is free software, get the source code at https://flashrom.org
+
+    Found Winbond flash chip "W25Q512JV" (65536 kB, SPI) on ch341a_spi.
+    [...]
+    Reading old flash chip contents... done.
+    Erase/write done from 0 to 3ffffff
+    Verifying flash... VERIFIED.
+    ```
+
+    If the "`Verifying flash... VERIFIED`" is printed out, the flashing has
+    succeeded.
+
+1. Put the memory chip back into the motherboard.
+    **First, disconnect the programmer from the computer**, and then remove the
+    flash memory from the socket. Use small tweezers to put the memory chip back
+    into the socket.
+
+    ![Chip in socket](images/flash_in_socket.jpg)
+
+    The picture above shows the proper orientation of the chip in the socket.
+    Pin 1 on the chip shall be the closest one to the arrow on the
+    silkscreen of the PCB. The dot showcasing chip orientation (pin one), and
+    the arrow on the silkscreen were marked with red circles.
+
+1. Close the socket doors, starting with the smaller one, followed by the
+    bigger one.
+1. Mount the NVME drive back if removed.
+1. Supply the power to the platform, and follow the procedure from the
+    "[Stock Firmware Verification](#stock-firmware-verification)".
+
+    The platform will take some time to boot for the first time, and it might
+    switch on and off multiple times during the procedure.
+
+    When DTS is booted, verify that the proper firmware version has been
+    flashed.
+
+    ![DTS FW version](images/dts_fw_ver.png)
+
+    The picture above showcases the DTS menu. The firmware information and
+    version shall be listed as in the image above. Note that the version shown
+    in the picture is just an example.
+
+1. Stick the holographic sticker on top of the socket. After the platform has
+    been verified to be working and proper firmware has been installed, the
+    socket needs to be sealed.
+
+    Remove the leftovers from the original paper sticker with isopropyl alcohol
+    and Q-tips (cotton buds). When the surface is dry, stick the new 3mdeb
+    holographic sticker parallel to the bottom edge of the motherboard.
+    Make sure the text orientation matches the text on the silkscreen (it's a
+    nice quality touch).
+
+When all steps were performed, the platform is ready to be backed up and
+shipped.
 
 ## Useful content
 
