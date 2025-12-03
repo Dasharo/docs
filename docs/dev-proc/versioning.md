@@ -1,9 +1,5 @@
 # Versioning
 
-Dasharo Releases are versioned using [Semantic Versioning](https://semver.org/)
-and [Keep A Changelog](https://keepachangelog.com/en/1.0.0/) to document
-changes introduced in new releases.
-
 Major version zero (0.y.z) is for initial development or first release issued
 and may not support all Dasharo Quality Criteria.
 
@@ -52,8 +48,7 @@ hardware platform, for which the link can be found in menu on the left side
 ## PC Engines releases and its exceptional versioning scheme
 
 Dasharo (coreboot+SeaBIOS) for PC Engines does not adhere to the typical
-versioning scheme used by Dasharo, which is semantic versioning. This is due to
-a couple of reasons:
+versioning scheme used by Dasharo. This is due to a couple of reasons:
 
 - We want to convey that this series of releases is a direct continuation of
   past efforts sponsored by PC Engines and published
