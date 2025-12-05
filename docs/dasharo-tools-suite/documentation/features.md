@@ -552,3 +552,22 @@ v1.2.20, pending the resolution of this issue. We will reintroduce them once we
 determine the appropriate action to address this dependency. Progress on this
 matter is being monitored through issue
 [288](https://github.com/Dasharo/dasharo-issues/issues/288).
+
+### Verify Intel Boot Guard key
+
+It's possible to verify which keys currently running firmware is signed with:
+
+1. Enter the shell in DTS
+
+1. Execute `btg_key_validator`
+
+Example output:
+
+```bash
+Reading flash...
+Extracting key manifest...
+Key matches NovaCustom Meteor Lake signing key.
+```
+
+The script will output information whether the platform firmware is signed with
+the correct Intel Boot Guard key.
