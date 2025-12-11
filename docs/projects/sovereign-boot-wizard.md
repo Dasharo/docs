@@ -64,7 +64,100 @@ Boot Provisioning Wizard.
 If you have any questions about Sovereign Boot Provisioning Wizard, visit the
 [FAQ](../osf-trivia-list/sovereign-boot-wizard.md).
 
+## Running in QEMU
+
+Sovereign Boot Wizard can be run with QEMU emulator. Set of minimal parameters
+required to run the Wizard:
+
+```bash
+qemu-system-x86_64 -m 4G -machine q35,smm=on -cpu Skylake-Client \
+  -global driver=cfi.pflash01,property=secure,value=off \
+  -drive if=pflash,format=raw,unit=0,file=${QEMU_FW_FILE} \
+  -global ICH9-LPC.disable_s3=1 \
+  -device virtio-scsi-pci,id=scsi \
+  -device qemu-xhci,id=usb -smp 2 \
+  -enable-kvm -mem-prealloc \
+  -object rng-random,id=rng0,filename=/dev/urandom \
+  -device virtio-rng-pci,max-bytes=1024,period=1000 \
+  -display gtk,window-close=off
+```
+
+Set `QEMU_FW_FILE` variable to point to the QEMU firmware binary with
+Sovereign Boot Wizard integrated. Optionally mount additional drives
+using `-hda` or `-hdb` parameters.
+
+!!! Note
+
+    To have a stretched, full screen menu window, disable the [Serial Port
+    Console Redirection](../dasharo-menu-docs/dasharo-system-features.md#serial-port-configuration)
+    once booted to the firmware setup in QEMU.
+
 ## Releases
+
+### v1.0.0 - 2025-12-10
+
+#### Added
+
+* Interactive mode for fine-grained control of bootloaders and key databases
+  once the wizard is provisioned:
+    + Listing all bootloaders and their certificates, attributes and an option
+      to add/remove certificates or image hash to the databases
+    + Listing all entries in Trusted Key/Image Database (DB) and Untrusted
+      Key/Image Database (DBX) with an option to remove entries
+    + Option to enroll a certificate or image hash from a file on a disk
+
+#### Fixed
+
+* [Sovereign Boot shows that it detected bootloader/key when running QEMU with
+  empty disk image](https://github.com/Dasharo/dasharo-issues/issues/1685)
+* Sovereign Boot Wizard boots the last trusted bootloader instead of first
+  when provisioning is finished
+* Sovereign Boot Wizard does not set the selected trusted bootloader as first
+  boot priority when provisioning is finished
+* Sovereign Boot Wizard does not remove the image data from untrusted database
+  if the image verification fails and user wants to change their trust
+  decision for the image.
+
+#### SBOM
+
+* [coreboot based on 24.12 revision qemu_q35_sovereign_boot-v1.0.0](https://github.com/Dasharo/coreboot/tree/qemu_q35_sovereign_boot-v1.0.0)
+    + [License](https://github.com/Dasharo/coreboot/blob/qemu_q35_sovereign_boot-v1.0.0/COPYING)
+* [Dasharo EDKII fork based on edk2-stable202502 revision sovereign-boot-v1.0.0](https://github.com/Dasharo/edk2/tree/sovereign-boot-v1.0.0)
+    + [License](https://github.com/Dasharo/edk2/blob/sovereign-boot-v1.0.0/License.txt)
+
+#### Building
+
+Follow the [instructions for
+QEMU](../variants/qemu_q35/building-manual.md#procedure). Checkout
+`qemu_q35_sovereign_boot-v1.0.0` tag on coreboot repository and use new
+`qemu_svboot` target as an argument to `./build.sh` script.
+
+### Binaries
+
+[qemu_q35_sovereign-boot-v1.0.0.rom][qemu_q35_sovereign-boot-v1.0.0.rom]{.md-button}
+[sha256][qemu_q35_sovereign-boot-v1.0.0.rom.sha256]{.md-button}
+
+[qemu_q35_sovereign-boot-v1.0.0.rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/sovereign-boot-v1.0.0/qemu_q35_sovereign-boot-v1.0.0.rom
+[qemu_q35_sovereign-boot-v1.0.0.rom.sha256]: https://dl.3mdeb.com/open-source-firmware/Dasharo/qemu_q35/sovereign-boot-v1.0.0/qemu_q35_sovereign-boot-v1.0.0.rom.sha256
+
+#### Video demonstration
+
+Watch a short demonstration of Sovereign Boot Wizard in action. This video
+covers the new features of the Sovereign Boot Wizard and complements the
+documentation.
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/680OddBR1ds?si=Bv3a64yl80FAHjp5"
+    title="Sovereign Boot Wizard v1.0.0 Demo"
+    frameborder="0"
+    allow="accelerometer; autoplay;
+      clipboard-write; encrypted-media;
+      gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ### RC4 - 2025-09-30
 
