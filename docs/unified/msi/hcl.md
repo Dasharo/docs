@@ -49,7 +49,7 @@ hardware.
 
     </center>
 
-=== "Memory HCL (12 Sep 2023)"
+=== "Memory HCL (11 Dec 2025)"
 
     Memory hardware Compatibility List presents the DIMM modules tested and verified
     to work with Dasharo in 3mdeb laboratory.
