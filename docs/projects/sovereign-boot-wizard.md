@@ -148,7 +148,7 @@ documentation.
 
 <div class="video-wrapper">
   <iframe
-    src="TBD"
+    src="https://www.youtube.com/embed/680OddBR1ds?si=Bv3a64yl80FAHjp5"
     title="Sovereign Boot Wizard v1.0.0 Demo"
     frameborder="0"
     allow="accelerometer; autoplay;
