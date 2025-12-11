@@ -64,6 +64,34 @@ Boot Provisioning Wizard.
 If you have any questions about Sovereign Boot Provisioning Wizard, visit the
 [FAQ](../osf-trivia-list/sovereign-boot-wizard.md).
 
+## Running in QEMU
+
+Sovereign Boot Wizard can be run with QEMU emulator. Set of minimal parameters
+required to run the Wizard:
+
+```bash
+qemu-system-x86_64 -m 4G -machine q35,smm=on -cpu Skylake-Client \
+  -global driver=cfi.pflash01,property=secure,value=off \
+  -drive if=pflash,format=raw,unit=0,file=${QEMU_FW_FILE} \
+  -global ICH9-LPC.disable_s3=1 \
+  -device virtio-scsi-pci,id=scsi \
+  -device qemu-xhci,id=usb -smp 2 \
+  -enable-kvm -mem-prealloc \
+  -object rng-random,id=rng0,filename=/dev/urandom \
+  -device virtio-rng-pci,max-bytes=1024,period=1000 \
+  -display gtk,window-close=off
+```
+
+Set `QEMU_FW_FILE` variable to point to the QEMU firmware binary with
+Sovereign Boot Wizard integrated. Optionally mount additional drives
+using `-hda` or `-hdb` parameters.
+
+!!! Note
+
+    To have a stretched, full screen menu window, disable the [Serial Port
+    Console Redirection](../dasharo-menu-docs/dasharo-system-features.md#serial-port-configuration)
+    once booted to the firmware setup in QEMU.
+
 ## Releases
 
 ### v1.0.0 - 2025-12-10
