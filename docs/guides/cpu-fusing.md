@@ -12,6 +12,7 @@ For more details check [Glossary / Dasharo TrustRoot](../glossary.md#dasharo-tru
     freaks. This operation permanently modifies your CPU. Reverting it
     is only possible by replacing the CPU in the device.
     Fusing vendor keys onto your CPU makes it impossible to:
+
     - Use custom firmware not authorized by the vendor
     - Update the firmware to a custom one if the support for your device ends
 

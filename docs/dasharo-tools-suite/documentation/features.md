@@ -3,23 +3,23 @@
 This section describes the functionality of the Dasharo Tools Suite. These are:
 
 - [Features](#features)
-  - [Available Commands](#available-commands)
-  - [Dasharo zero-touch initial deployment (i.e. DZTID)](#dasharo-zero-touch-initial-deployment-ie-dztid)
-  - [HCL Report](#hcl-report)
-    - [HCL Report correctness](#hcl-report-correctness)
-    - [HCL Report Using an External Firmware Binary](#hcl-report-using-an-external-firmware-binary)
-    - [BIOS backup](#bios-backup)
-  - [Firmware update](#firmware-update)
-    - [Firmware Update Mode](#firmware-update-mode)
-    - [Local firmware update](#local-firmware-update)
-    - [Update issues](#update-issues)
-  - [EC transition](#ec-transition)
-  - [EC update](#ec-update)
-  - [Fusing the device vendor keys](#fusing-the-device-vendor-keys)
-  - [Verify Intel Boot Guard key](#verify-intel-boot-guard-key)
-  - [Additional features](#additional-features)
-    - [Run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically)
-    - [Run DTS using VentoyOS](#run-dts-using-ventoyos)
+    + [Available Commands](#available-commands)
+    + [Dasharo zero-touch initial deployment (i.e. DZTID)](#dasharo-zero-touch-initial-deployment-ie-dztid)
+    + [HCL Report](#hcl-report)
+        - [HCL Report correctness](#hcl-report-correctness)
+        - [HCL Report Using an External Firmware Binary](#hcl-report-using-an-external-firmware-binary)
+        - [BIOS backup](#bios-backup)
+    + [Firmware update](#firmware-update)
+        - [Firmware Update Mode](#firmware-update-mode)
+        - [Local firmware update](#local-firmware-update)
+        - [Update issues](#update-issues)
+    + [EC transition](#ec-transition)
+    + [EC update](#ec-update)
+    + [Fusing the device vendor keys](#fusing-the-device-vendor-keys)
+    + [Verify Intel Boot Guard key](#verify-intel-boot-guard-key)
+    + [Additional features](#additional-features)
+        - [Run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically)
+        - [Run DTS using VentoyOS](#run-dts-using-ventoyos)
 
 ## Available Commands
 
@@ -506,7 +506,7 @@ To perform fusing procedure:
 3. Boot Dasharo Tools Suite and choose the option `7) Fuse platform`.
    ![DTS Choosing the option to fuse the device](../images/dts-fusing-1.png)
     1. If you are not using the newest Dasharo version available, you will be
-    prompted to update Dasharo first. Proceed with [Firmware Update] (#firmware-update)
+    prompted to update Dasharo first. Proceed with [Firmware Update](#firmware-update)
    and try again.
 4. You will be prompted to confirm that you want to fuse the device. Select `y`
    to continue or `n` to cancel.
