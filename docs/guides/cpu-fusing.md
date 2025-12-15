@@ -21,7 +21,7 @@ For more details check [Glossary / Dasharo TrustRoot](../glossary.md#dasharo-tru
 ## Fusing the device vendor keys using Dasharo Tools Suite
 
 It's the recommended way of fusing your device. For details refer
-to [Dasharo Tools Suite documentation](../dasharo-tools-suite/documentation/features.md#fuse-platform)
+to [Dasharo Tools Suite documentation](../dasharo-tools-suite/documentation/features.md#fusing-the-device-vendor-keys)
 
 ## Fusing the device using an EOM capsule (ADVANCED!)
 
