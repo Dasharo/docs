@@ -188,7 +188,7 @@ of the platform not booting due to bad hardware configuration.
 
 Here's a list of steps that need to be performed:
 
-1. Downloads the latests stable DTS version from
+1. Download the latest stable DTS version from
     [releases](https://github.com/Dasharo/meta-dts/releases/) and
     [flash the image](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/#bootable-usb-stick)
     to the flash drive. For non-technical users, it is recommended to use Etcher
@@ -209,13 +209,13 @@ chip from the socket and using a dedicated adapter to flash it via CH341A
 
 1. **Ensure the platform is disconnected from the power source!**
 1. Locate the BIOS flash memory socket. The flash memory socket is located
-    at the very bottom of the motherboard, below the NVME drive (or socket if
+    at the very bottom of the motherboard, below the NVMe drive (or socket if
     drive not yet mounted). The following picture showcases the socket location.
 
     ![BIOS memory location](images/flash_location.jpg)
 
 1. Open the flash memory socket. To open the flash memory socket, it is advised
-    to remove the NVME drive, as there is very little space to grab the socket
+    to remove the NVMe drive, as there is very little space to grab the socket
     door. Moreover, the socket door is sealed with a paper-like seal; one can
     use pointy tweezers or a small knife to gently cut the seal along the door
     edges as marked in the picture above. Once the previously mentioned things
@@ -227,8 +227,8 @@ chip from the socket and using a dedicated adapter to flash it via CH341A
     ![BIOS socket open](images/socket_open.jpg)
 
 1. Remove the memory from the socket. To remove the memory from the socket,
-    one can slide a tweezers underneath the memory chip to lift it up. This
-    operation is much easier to perform with the NVME drive removed. The picture
+    one can slide tweezers underneath the memory chip to lift it up. This
+    operation is much easier to perform with the NVMe drive removed. The picture
     below shows the removed flash memory and its orientation.
 
     ![Flash chip](images/bios_flash_mem.jpg)
@@ -271,7 +271,7 @@ chip from the socket and using a dedicated adapter to flash it via CH341A
 
     The picture above showcases:
 
-    - leaver in the lock position (marked with green arrow),
+    - lever in the lock position (marked with green arrow),
     - the logic level switch set to 3.3V (marked with a red arrow),
     - the programmer type and version were highlighted in yellow.
 
@@ -384,7 +384,7 @@ chip from the socket and using a dedicated adapter to flash it via CH341A
     7519dd85799169b8561d2867f98ffec6  backup_p2.bin
     ```
 
-    Note that **the hashes will be different** than those in the above example.
+    Note that **the hashes will be different** from those in the above example.
     The operation is considered a success if both hashes are the same.
 
 1. Obtain the newest firmware for the platform. Log in to
@@ -468,7 +468,7 @@ chip from the socket and using a dedicated adapter to flash it via CH341A
 
 1. Close the socket doors, starting with the smaller one, followed by the
     bigger one.
-1. Mount the NVME drive back if removed.
+1. Mount the NVMe drive back if removed.
 1. Supply the power to the platform, and follow the procedure from the
     "[Stock Firmware Verification](#stock-firmware-verification)".
 
@@ -501,7 +501,7 @@ shipped.
 
 * [Building manual][Build] - documentation contains information on how to build
     Dasharo compatible with ASRock SPC741D8.
-* [Board Manual][BoardManual]  - documentation contains detailed information about
+* [Board Manual][BoardManual] - documentation contains detailed information about
     the motherboard and its operations.
 * [CPU Cooler Manual][Cooler] - documentation contains information on how to
     properly assemble the CPU Cooler and mount the CPU to it.
