@@ -517,12 +517,17 @@ firmware.
                 ![](../../images/560TNEwson1.webp)
                 ![](../../images/560TNEwson2.webp)
 
-        20. Hold down the WSON probe firmly in place and execute the following command
-            on your host computer:
+        20. Hold down the WSON probe firmly in place and execute the following
+            commands on your host computer:
 
             ```bash
-            sudo flashrom -p ch341a_spi --ifd -i fd -i me -i bios -w [backup.bin]
+            sudo flashrom -p ch341a_spi --ifd -i fd -w [backup.bin] && \
+            sudo flashrom -p ch341a_spi --ifd -i me -i bios -w [backup.bin]
             ```
+
+            _Note: The commands will first flash FD region, followed by ME and
+            BIOS regions. The reason is all regions are FD dependent, therefore,
+            it must be ensured the FD gets flashed first._
 
         21. Power on the laptop to verify the recovery passed. First boot may take a
             while, so be patient.
