@@ -193,6 +193,13 @@ Here's a list of steps that need to be performed:
     [flash the image](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/#bootable-usb-stick)
     to the flash drive. For non-technical users, it is recommended to use Etcher
     to flash the image onto the flash drive.
+
+    !!! note
+
+        Make sure DTS version is at least `v2.7.3`. If it isn't available yet,
+        use the newest release candidate version: `v2.7.3-rc<x>` as this version
+        added PCR values to the HCL report.
+
 1. Connect the device to the mains power.
 1. Open the front panel using the attached key.
 1. Plug the previously prepared flash drive into one of the available USB ports.
