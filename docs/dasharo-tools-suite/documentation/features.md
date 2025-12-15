@@ -2,34 +2,42 @@
 
 This section describes the functionality of the Dasharo Tools Suite. These are:
 
-* [DTS available commands](#available-commands)
-* [Dasharo zero-touch initial deployment](#dasharo-zero-touch-initial-deployment),
-* [HCL Report](#hcl-report),
-* [Firmware update](#firmware-update),
-    + [Local firmware update](#local-firmware-update),
-* [EC transition](#ec-transition),
-* [EC update](#ec-update),
-* [additional features](#additional-features),
-    + [run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically),
-    + [run DTS using VentoyOS](#run-dts-using-ventoyos).
+- [Features](#features)
+  - [Available Commands](#available-commands)
+  - [Dasharo zero-touch initial deployment (i.e. DZTID)](#dasharo-zero-touch-initial-deployment-ie-dztid)
+  - [HCL Report](#hcl-report)
+    - [HCL Report correctness](#hcl-report-correctness)
+    - [HCL Report Using an External Firmware Binary](#hcl-report-using-an-external-firmware-binary)
+    - [BIOS backup](#bios-backup)
+  - [Firmware update](#firmware-update)
+    - [Firmware Update Mode](#firmware-update-mode)
+    - [Local firmware update](#local-firmware-update)
+    - [Update issues](#update-issues)
+  - [EC transition](#ec-transition)
+  - [EC update](#ec-update)
+  - [Fusing the device vendor keys](#fusing-the-device-vendor-keys)
+  - [Verify Intel Boot Guard key](#verify-intel-boot-guard-key)
+  - [Additional features](#additional-features)
+    - [Run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically)
+    - [Run DTS using VentoyOS](#run-dts-using-ventoyos)
 
 ## Available Commands
 
 When DTS is started, it has following options for the user to choose from:
 
-* **1)** [Dasharo HCL Report](#hcl-report) - generate Hardware
+- **1)** [Dasharo HCL Report](#hcl-report) - generate Hardware
   Compatibility List Report
-* **2)** [Update Dasharo Firmware](#firmware-update) or [Install Dasharo
+- **2)** [Update Dasharo Firmware](#firmware-update) or [Install Dasharo
   Firmware](#dasharo-zero-touch-initial-deployment)
-* **3)** [Restore Firmware from Dasharo HCL Report](#update-issues)
-* **4)** [Load your DPP
+- **3)** [Restore Firmware from Dasharo HCL Report](#update-issues)
+- **4)** [Load your DPP
     keys](../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
     \- Load your Dasharo Pro Package (DPP) keys
-* **R** Reboot
-* **P** Poweroff
-* **S** Enter shell
-* **K** Launch SSH Server
-* **L** [Enable sending DTS
+- **R** Reboot
+- **P** Poweroff
+- **S** Enter shell
+- **K** Launch SSH Server
+- **L** [Enable sending DTS
   logs](../../osf-trivia-list/dts.md#how-can-i-help-the-support-team-diagnose-my-problem-faster)
 
 ## Dasharo zero-touch initial deployment (i.e. DZTID)
@@ -60,20 +68,20 @@ version of Dasharo, which we provide for given hardware.
 
 This feature is supported on the following platforms:
 
-* ASUS KGPE-D16,
-* Dell OptiPlex 7010/9010,
-* MSI PRO Z690-A DDR4,
-* MSI PRO Z690-A DDR5,
-* MSI PRO Z790-P DDR4,
-* MSI PRO Z790-P DDR5,
-* NovaCustom NV4x (only 11th Gen (Tiger Lake)),
-* NovaCustom NS5x/7x (only 11th Gen (Tiger Lake)),
-* ODROID-H4+.
+- ASUS KGPE-D16,
+- Dell OptiPlex 7010/9010,
+- MSI PRO Z690-A DDR4,
+- MSI PRO Z690-A DDR5,
+- MSI PRO Z790-P DDR4,
+- MSI PRO Z790-P DDR5,
+- NovaCustom NV4x (only 11th Gen (Tiger Lake)),
+- NovaCustom NS5x/7x (only 11th Gen (Tiger Lake)),
+- ODROID-H4+.
 
 And partially (only EC firmware flashing) on:
 
-* NovaCustom V540TU/TNx,
-* NovaCustom V560TU/TNx.
+- NovaCustom V540TU/TNx,
+- NovaCustom V560TU/TNx.
 
 ## HCL Report
 
@@ -185,11 +193,11 @@ contribute information about your hardware configuration.
 
 Please consider the following options depending on your situation:
 
-* **YES** - If you decide to contribute, you can always [get back to
+- **YES** - If you decide to contribute, you can always [get back to
   us](https://www.dasharo.com/pages/contact/) and ask about BIOS backup, which
   we will provide after simple verification that you are the owner of the
   hardware.
-* **NO (default)** - If you decide to not contribute, your situation depends on
+- **NO (default)** - If you decide to not contribute, your situation depends on
   the boot method you used to execute DTS:
     + **Network Boot** - please note that Dasharo booted over iPXE assumes no
       storage available, so the report, and your BIOS backup are stored in
@@ -412,7 +420,7 @@ firmware.
 DTS allows to update open-source Embedded Controller firmware to the newer
 version. This is how we can achieve that.
 
-* Retrieve information about your current EC.
+- Retrieve information about your current EC.
 
     ```bash
     dasharo_ectool info
@@ -426,10 +434,10 @@ version. This is how we can achieve that.
     version: 2022-08-16_c12ff1a
     ```
 
-* Download the newest version of Embedded Controller firmware.
-* Plug in power supply, without it, flashing EC is not possible as losing power
+- Download the newest version of Embedded Controller firmware.
+- Plug in power supply, without it, flashing EC is not possible as losing power
   may cause in damaged firmware.
-* Flash Embedded Controller firmware internally.
+- Flash Embedded Controller firmware internally.
 
     ```bash
     dasharo_ectool flash ec_file.rom
@@ -457,10 +465,10 @@ version. This is how we can achieve that.
 
   > Note: this is example output, versions may differ
 
-* Computer will shut down automatically.
-* Power on your computer. Booting process may take a while.
-* After boot, choose option `S` to drop to Shell.
-* Retrieve information about your updated EC.
+- Computer will shut down automatically.
+- Power on your computer. Booting process may take a while.
+- After boot, choose option `S` to drop to Shell.
+- Retrieve information about your updated EC.
 
     ```bash
     dasharo_ectool info
@@ -473,6 +481,40 @@ version. This is how we can achieve that.
     board: clevo/ns50mu
     version: 2022-08-31_cbff21b
     ```
+
+## Fusing the device vendor keys
+
+DTS can be used to fuse the device vendor keys onto the SoC to enable
+the Dasharo TrustRoot feature.
+
+!!! warning
+
+    This operation is irreversible and can seriously hinder the devices
+    usability for the sake of security. Make sure you understand the
+    consequences before continuing.
+    Refer to [Glossary / Dasharo TrustRoot](../../glossary.md#dasharo-trustroot)
+    for more details.
+
+The decision to fuse the keys requires the user to explicitly opt-in.
+Updating the firmware will never fuse the device on its own.
+
+To perform fusing procedure:
+
+1. Make sure a power supply is connected to the device if it is battery powered
+2. Make sure the device has Dasharo firmware and the support for Dasharo
+   TrustRoot.
+3. Boot Dasharo Tools Suite and choose the option `7) Fuse platform`.
+   ![DTS Choosing the option to fuse the device](../images/dts-fusing-1.png)
+    1. If you are not using the newest Dasharo version available, you will be
+    prompted to update Dasharo first. Proceed with [Firmware Update] (#firmware-update)
+   and try again.
+4. You will be prompted to confirm that you want to fuse the device. Select `y`
+   to continue or `n` to cancel.
+5. From now on the rest of the procedure will look like a normal firmware update.
+   You will be asked to verify the device model and the firmware version about
+   to be installed along the fusing procedure.
+6. After everything is done, your device will reboot.
+   ![DTS All the confirmations for fusing the device](../images/dts-fusing-2.png)
 
 ## Verify Intel Boot Guard key
 
@@ -506,11 +548,11 @@ You can use the
 [local-ipxe-server.sh](https://github.com/Dasharo/meta-dts/blob/main/scripts/local-ipxe-server.sh)
 script for that. What it does is:
 
-* automatically download the latest version of DTS artifacts needed for iPXE
+- automatically download the latest version of DTS artifacts needed for iPXE
   boot,
-* creates a `dts.ipxe` bootchain file, which will boot DTS and also run your
+- creates a `dts.ipxe` bootchain file, which will boot DTS and also run your
   custom script,
-* creates a simple, python-based HTTP server, from which you will be able to
+- creates a simple, python-based HTTP server, from which you will be able to
   boot DTS.
 
 > Note: This functionality is available from version 1.2.19.
