@@ -1,9 +1,9 @@
-# Laboratory stand dedicated to MSI PRO Z690-A/Z790-P platforms assembly guide
+# Laboratory stand dedicated to MSI PRO B850 platforms assembly guide
 
 ## Introduction
 
 This document describes platform-specific details for assembling an MSI PRO
-Z690-A and Z790-P testing stand. Use this document as reference while going
+B 850 testing stand. Use this document as reference while going
 through [Generic Testing Stand
 Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 
@@ -12,19 +12,11 @@ Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
 The below table contains information about all elements which are needed to
 create the testing stand.
 
-* MSI PRO Z690-A or MSI PRO Z790-P platform
+* MSI PRO B850 platform
 * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 * Sonoff S20 type E
-* 4x standard female-female connection wire 2.54 mm raster
+* 7x standard female-female connection wire 2.54 mm raster
 * 7x standard female-female connection wire 2.54/2.00 mm raster
-* USB-UART converter with 4-wire cable
-* 4-pin header 2.54 mm raster
-
-### MSI PRO Z790-P
-
-MSI PRO Z790-P platform should be prepared in accordance with the
-[Motherboard assembly](../../transparent-validation/msi-z690/presale-assembly-and-validation.md#motherboard-assembly-only)
-documentation.
 
 ## Connections
 
@@ -35,6 +27,7 @@ The following sections describe how to enable all of the following features:
 * enabling basic power actions with the platform (power off/power on/reset),
 * external flashing with the RTE,
 * device power status readout.
+* enabling cmos clear
 
 ### Serial connection
 
@@ -47,16 +40,11 @@ The following sections describe how to enable all of the following features:
 1. Connect the RTE J18 header to the platform JBD1 header as described in the
     table:
 
-    | RTE             | MSI PRO Z690-A/Z790-P                     |
-    |:---------------:|:-----------------------------------------:|
-    | J18 pin 1 (GND) | JBD1 pin 1 (pin closer to JBAT1)          |
-    | J18 pin 2 (RX)  | JBD1 pin 2 (pin further from JBAT1)       |
-
-    > Note: Pins on JBD1 are not described in the documentation. They have been
-    discovered experimentally. Pay attention to the connections.
-
-    ![msi_z690_lab_serial_panel](images/msi_z690_lab_serial_panel.jpg)
-    ![msi_z690_lab_serial_RTE](images/msi_z690_lab_serial_RTE.jpg)
+    | RTE             | MSI PRO B850            |
+    |:---------------:|:-----------------------:|
+    | J18 pin 1 (GND) | JCOM1 pin 5             |
+    | J18 pin 2 (RX)  | JCOM1 pin 3             |
+    | J18 pin 3 (TX)  | JCOM1 pin 2             |
 
 ### Power supply controlling
 
@@ -67,15 +55,25 @@ Connect SeaSonic FOCUS Plus Platinum to Sonoff.
 Connect the RTE J11 header to the platform JFP1 header as described in the
 table:
 
-| RTE            | MSI PRO Z690-A/Z790-P       |
+| RTE            | MSI PRO B850                |
 |:--------------:|:---------------------------:|
 | J11 pin 9      | JFP1 pin 6 (PWR_ON)         |
 | J11 pin 8      | JFP1 pin 7 (RST)            |
 | J15 pin 1 (GND)| JFP1 pin 5 (GND)            |
+| J10 pin 1      | JFP1 pin 2 (PWR_LED)        |
 
-![msi_z690_lab_chip_power_RTE](images/msi_z690_lab_chip_power_RTE.jpg)
-![msi_z690_lab_chip_ground_RTE](images/msi_z690_lab_chip_ground_RTE.jpg)
-![msi_z690_lab_chip_power_connections](images/msi_z690_lab_chip_power_connections.jpg)
+![msi_b850_lab_chip_power_connections](images/msi_b850_lab_chip_power_connections.jpg)
+
+### CMOS Clear enabling
+
+Connect the RTE J11 header to the platform JBAT1 header as described in the
+table:
+
+| RTE            | MSI PRO B850                    |
+|:--------------:|:-------------------------------:|
+| J11 pin 11  | JBAT1 pin 2(closer to JFP1)     |
+
+![msi_b850_cmos](images/msi_b850_cmos.jpg)
 
 ### External flashing enabling
 
@@ -83,7 +81,7 @@ table:
 
 Connect the RTE SPI header to the platform as described in the table:
 
-| RTE SPI header      | MSI PRO Z690-A/Z790-P                                |
+| RTE SPI header      | MSI PRO B850                                         |
 |:-------------------:|:----------------------------------------------------:|
 | J7 pin 1 (Vcc)      | JTPM1 pin 1 (SPI Power)                              |
 | J7 pin 2 (GND)      | JTPM1 pin 7 (GND)                                    |
@@ -96,80 +94,7 @@ Connect the RTE SPI header to the platform as described in the table:
 > header. JTPM1 is a 2mm pitch header, you will need 2mm to 2.54mm
 > female-female dupont wires to connect to RTE.
 
-![msi_z690_spi](images/msi_z690_spi.jpeg)
-![msi_z690_lab_SPI_RTE](images/msi_z690_lab_SPI_RTE.jpg)
-
-#### With discrete TPM
-
-Alternative connection with TPM and external flashing requires some
-preparation before a TPM can flashing wires can be connected. You will need:
-
-* flat screwdriver
-* pliers
-* MSI SPI TPM 2.0
-* 6x test hook clips
-* [a 2mm pitch header 2x6 pin with long through pins](https://www.mouser.pl/ProductDetail/Samtec/ESQT-106-02-F-D-785?qs=0ekZTeX6RYyA%252Bo3ZUhzipw%3D%3D)
-
-![msi_tpm_items](images/tpm/msi_tpm_items.jpg)
-
-1. Push down the black stopper down. You may help yourself with a small flat
-   screwdriver by creafully pushing it in the points 1, 2 and 3 shown in the
-   picture below:
-
-    ![tpm_header_prep1](images/tpm/tpm_header_prep1.jpg)
-
-2. Repeat pushing it down until the TPM goes fully in, leaving a small gap
-   between TPM connector and the header's black shield:
-
-    ![tpm_header_prep2](images/tpm/tpm_header_prep2.jpg)
-
-3. MSI TPM header has one "no-pin". Locate it on the TPM module and mark the
-   pin on the header to be removed:
-
-    ![tpm_header_prep3](images/tpm/tpm_header_prep3.jpg)
-
-4. Bend the marked pin to be removed:
-
-    ![tpm_header_prep4](images/tpm/tpm_header_prep4.jpg)
-
-5. Carefully keep bending the marked pin forwards and backwards until it
-   breaks:
-
-    ![tpm_header_prep5](images/tpm/tpm_header_prep5.jpg)
-
-6. Put the TPM onto the header and push the black shield up so that the gap is
-   removed:
-
-    ![tpm_header_prepared](images/tpm/tpm_header_prepared.jpg)
-
-7. Connect the test hook clips to the header's legs so that it matches the
-   JTPM1's SPI power, GND, BIOS SPI CS, SPI clock, MISO, MOSI:
-
-    ![msi_tpm_wires](images/tpm/msi_tpm_wires.jpg)
-    ![msi_z690_jtpm1](../../unified/msi/images/msi_z690_jtpm1.jpeg)
-
-8. Connect such "spider" to the mainboard's JTPM1 header (remember to match
-   the "no-pin: location).
-9. Connect the femal pin side of the test hook clips to the RTE:
-
-    | RTE SPI header      | MSI Z690-A                               |
-    |:-------------------:|:----------------------------------------:|
-    | J7 pin 1 (Vcc)      | JTPM1 pin 1 (SPI Power)                  |
-    | J7 pin 2 (GND)      | JTPM1 pin 7 (GND)                        |
-    | J7 pin 3 (CS)       | JTPM1 pin 5 (RESERVED / BIOS SPI CS pin) |
-    | J7 pin 4 (SCLK)     | JTPM1 pin 6 (SPI Clock)                  |
-    | J7 pin 5 (MISO)     | JTPM1 pin 3 (MISO)                       |
-    | J7 pin 6 (MOSI)     | JTPM1 pin 4 (MOSI)                       |
-
-### Device power status readout
-
-Connect the RTE J1 header to the platform JFP1 header as shown in the picture
-below:
-
-![reading_power_status](images/reading_power_status.png)
-
-The values ​​of `R1`, `R2`, `V1` and `V2` should meet the relationship according
-to the formula `R1/R2 = V2/V1`. `V1` cannot be greater than 3.3V (RTE property).
+![msi_b850_spi](images/msi_b850_spi.jpg)
 
 ### Complete Setup
 
@@ -185,7 +110,7 @@ performed to enable all of the test stand features:
 
 Complete setup should looks as follows:
 
-![msi_z690_lab_complete](images/msi_z690_lab_complete.jpg)
+![msi_b850_lab_complete](images/msi_b850_lab_complete.jpg)
 
 ## Theory of operation
 
@@ -196,6 +121,7 @@ The following sections describe how to use all of the enabled features:
 * enabling basic power actions with the platform (power off/power on/reset),
 * external flashing with the RTE,
 * device power status readout.
+* enabling Cmos clear
 
 ### Serial connection
 
@@ -309,8 +235,13 @@ Example output:
 * `1` means that the platform is turned on.
 * `0` means that the platform is turned off.
 
-### USB devices
+### CMOS clear
 
-USB 3.x (blue) ports in the 4 port column of rear I/O have an issue where if
-they are populated during boot, the boot process will slow to a crawl. Do not
-populate these ports on boards installed in the lab.
+To clear the CMOS, turn off the power with Sonoff or relay and use the
+following commands:
+
+```bash
+echo 1 > /sys/class/gpio/gpio412/value
+sleep 10
+echo 0 > /sys/class/gpio/gpio412/value
+```
