@@ -188,17 +188,11 @@ of the platform not booting due to bad hardware configuration.
 
 Here's a list of steps that need to be performed:
 
-1. Download the latest stable DTS version from
+1. Download the latest DTS version (pre-release (`rc`) included) from
     [releases](https://github.com/Dasharo/meta-dts/releases/) and
     [flash the image](https://docs.dasharo.com/dasharo-tools-suite/documentation/running/#bootable-usb-stick)
     to the flash drive. For non-technical users, it is recommended to use Etcher
     to flash the image onto the flash drive.
-
-    !!! note
-
-        Make sure DTS version is at least `v2.7.3`. If it isn't available yet,
-        use the newest release candidate version: `v2.7.3-rc<x>` as this version
-        added PCR values to the HCL report.
 
 1. Connect the device to the mains power.
 1. Open the front panel using the attached key.
