@@ -457,6 +457,7 @@ nav:
       - 'Capsule updates': guides/capsule-update.md
       - 'Flashing custom firmware': guides/firmware-reflash.md
       - 'Firmware signing for vboot': guides/vboot-signing.md
+      - 'Dasharo TrustRoot Fusing': guides/cpu-fusing.md
       - 'Dasharo Reviewers Guide': guides/dasharo-reviewers-guide.md
       - 'Verifying signatures': guides/signature-verification.md
       - 'Verifying reproducible builds': guides/reproducible-build-verification.md
