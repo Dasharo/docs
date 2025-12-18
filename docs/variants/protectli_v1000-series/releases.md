@@ -12,7 +12,7 @@ For details about our release process please read
 ## v0.9.4 - 2025-12-18
 
 Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/JSL_v1000/v0.9.4_results.csv).
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/Protectli/JSL_v1000/).
 
 ### Added
 
