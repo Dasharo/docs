@@ -221,6 +221,81 @@ nav:
       - 'Overview': variants/overview.md
       - 'Version matrix': variants/versions.md
       # - 'Hardware Compatibility List': variants/hardware-compatibility-list.md
+      - 'ASRock Rack SPC741D8-2L2T/BCM':
+          - 'Overview': variants/asrock_spc741d8/overview.md
+          - 'Releases': variants/asrock_spc741d8/releases.md
+          - 'Firmware Update': variants/asrock_spc741d8/firmware-update.md
+          - 'Building manual': variants/asrock_spc741d8/building-manual.md
+          - 'Initial deployment': variants/asrock_spc741d8/initial-deployment.md
+          - 'Recovery': variants/asrock_spc741d8/recovery.md
+          - 'Hardware Configuration Matrix': variants/asrock_spc741d8/hardware-matrix.md
+          - 'Test matrix': variants/asrock_spc741d8/test-matrix.md
+          - 'Openness Score': variants/asrock_spc741d8/openness_score.md
+      - 'Asus KGPE-D16':
+          - 'Overview': variants/asus_kgpe_d16/overview.md
+          - 'Releases': variants/asus_kgpe_d16/releases.md
+          - 'Building manual': variants/asus_kgpe_d16/building-manual.md
+          - 'Initial deployment': variants/asus_kgpe_d16/initial-deployment.md
+          - 'Firmware update': variants/asus_kgpe_d16/firmware-update.md
+          - 'Recovery': variants/asus_kgpe_d16/recovery.md
+          - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
+          - 'Test matrix': variants/asus_kgpe_d16/test-matrix.md
+          - 'Fan Control': variants/asus_kgpe_d16/fan-control.md
+          - 'Hardware setup': variants/asus_kgpe_d16/setup.md
+          - 'SPI write protection': variants/asus_kgpe_d16/spi-wp.md
+          - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
+      - 'Dell OptiPlex':
+          - 'Overview': variants/dell_optiplex/overview.md
+          - 'Releases': variants/dell_optiplex/releases.md
+          - 'Building manual': variants/dell_optiplex/building-manual.md
+          - 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
+          - 'Test matrix': variants/dell_optiplex/test-matrix.md
+          - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
+          - 'Firmware update': variants/dell_optiplex/firmware-update.md
+          - 'Recovery': variants/dell_optiplex/recovery.md
+          - 'Openness score': variants/dell_optiplex/openness-score.md
+          - 'FAQ': variants/dell_optiplex/faq.md
+      - 'Gigabyte MZ33-AR1':
+          - 'Overview': variants/gigabyte_mz33-ar1/overview.md
+          - 'Releases': variants/gigabyte_mz33-ar1/releases.md
+          - 'Building manual': variants/gigabyte_mz33-ar1/building-manual.md
+          - 'Initial deployment': variants/gigabyte_mz33-ar1/initial-deployment.md
+          - 'Recovery': variants/gigabyte_mz33-ar1/recovery.md
+          - 'Hardware Configuration Matrix': variants/gigabyte_mz33-ar1/hardware-matrix.md
+          - 'Test matrix': variants/gigabyte_mz33-ar1/test-matrix.md
+      - 'Hardkernel ODROID H4':
+          - 'Overview': variants/hardkernel_odroid_h4/overview.md
+          - 'Releases': variants/hardkernel_odroid_h4/releases.md
+          - 'Slim Bootloader releases': variants/hardkernel_odroid_h4/releases_sbl.md
+          - 'Building manual': variants/hardkernel_odroid_h4/building-manual.md
+          - 'Initial deployment': variants/hardkernel_odroid_h4/initial-deployment.md
+          - 'Firmware update': variants/hardkernel_odroid_h4/firmware-update.md
+          - 'Recovery': variants/hardkernel_odroid_h4/recovery.md
+          - 'Hardware Configuration Matrix': variants/hardkernel_odroid_h4/hardware-matrix.md
+          - 'Test matrix': variants/hardkernel_odroid_h4/test-matrix.md
+          - 'Openness score': variants/hardkernel_odroid_h4/openness_score.md
+      - 'MSI desktops':
+          - 'Overview': unified/msi/overview.md
+          - 'Building manual': unified/msi/building-manual.md
+          - 'Initial deployment': unified/msi/initial-deployment.md
+          - 'Firmware update': unified/msi/firmware-update.md
+          - 'Recovery': unified/msi/recovery.md
+          - 'Development': unified/msi/development.md
+          - 'FAQ': unified/msi/faq.md
+          - 'Hardware Compatibility': unified/msi/hcl.md
+          - 'Firmware transition': unified/msi/firmware-transition.md
+          - 'MSI PRO Z690-A':
+              - 'Releases': variants/msi_z690/releases.md
+              - 'Heads releases': variants/msi_z690/releases_heads.md
+              - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
+              - 'Test matrix': variants/msi_z690/test-matrix.md
+              - 'Openness score': variants/msi_z690/openness_score.md
+          - 'MSI PRO Z790-P':
+              - 'Releases': variants/msi_z790/releases.md
+              - 'Heads releases': variants/msi_z790/releases_heads.md
+              - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
+              - 'Test matrix': variants/msi_z790/test-matrix.md
+              - 'Openness score': variants/msi_z790/openness_score.md
       - 'NovaCustom':
           - 'Overview': unified/novacustom/overview.md
           - 'Building manual': unified/novacustom/building-manual.md
@@ -281,48 +356,19 @@ nav:
               - 'Hardware Configuration Matrix': variants/novacustom_ns5x_tgl/hardware-matrix.md
               - 'Test matrix': variants/novacustom_ns5x_tgl/test-matrix.md
               - 'Openness score': variants/novacustom_ns5x_tgl/openness-score.md
-      - 'Dell OptiPlex':
-          - 'Overview': variants/dell_optiplex/overview.md
-          - 'Releases': variants/dell_optiplex/releases.md
-          - 'Building manual': variants/dell_optiplex/building-manual.md
-          - 'Hardware Configuration Matrix': variants/dell_optiplex/hardware-matrix.md
-          - 'Test matrix': variants/dell_optiplex/test-matrix.md
-          - 'Initial deployment': variants/dell_optiplex/initial-deployment.md
-          - 'Firmware update': variants/dell_optiplex/firmware-update.md
-          - 'Recovery': variants/dell_optiplex/recovery.md
-          - 'Openness score': variants/dell_optiplex/openness-score.md
-          - 'FAQ': variants/dell_optiplex/faq.md
-      - 'Asus KGPE-D16':
-          - 'Overview': variants/asus_kgpe_d16/overview.md
-          - 'Releases': variants/asus_kgpe_d16/releases.md
-          - 'Building manual': variants/asus_kgpe_d16/building-manual.md
-          - 'Initial deployment': variants/asus_kgpe_d16/initial-deployment.md
-          - 'Firmware update': variants/asus_kgpe_d16/firmware-update.md
-          - 'Recovery': variants/asus_kgpe_d16/recovery.md
-          - 'Hardware configuration matrix': variants/asus_kgpe_d16/hardware-matrix.md
-          - 'Test matrix': variants/asus_kgpe_d16/test-matrix.md
-          - 'Fan Control': variants/asus_kgpe_d16/fan-control.md
-          - 'Hardware setup': variants/asus_kgpe_d16/setup.md
-          - 'SPI write protection': variants/asus_kgpe_d16/spi-wp.md
-          - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
-      - 'Raptor CS Talos II':
-          - 'Overview': variants/talos_2/overview.md
-          - 'Releases': variants/talos_2/releases.md
-          - 'Building manual': variants/talos_2/building-manual.md
-          - 'Initial deployment': variants/talos_2/initial-deployment.md
-          - 'Firmware update': variants/talos_2/firmware-update.md
-          - 'Recovery': variants/talos_2/recovery.md
-          - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
-          - 'Test matrix': variants/talos_2/test-matrix.md
-          - 'Conference materials': variants/talos_2/conferences.md
-          - 'TPM connection and support': variants/talos_2/tpm-support.md
-      - 'Tuxedo IBS15':
-          - 'Releases': variants/tuxedo_ibs15/releases.md
-          - 'Building manual': variants/tuxedo_ibs15/building.md
-          - 'Installation manual': variants/tuxedo_ibs15/installation.md
-          - 'Post-installation setup': variants/tuxedo_ibs15/post_install.md
-          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
-          - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
+      - 'PC Engines':
+          - 'Overview': variants/pc_engines/overview.md
+          - 'Releases (coreboot+UEFI)': variants/pc_engines/releases_uefi.md
+          - 'Releases (coreboot+SeaBIOS)': variants/pc_engines/releases_seabios.md
+          - 'Building manual': variants/pc_engines/building-manual.md
+          - 'Initial deployment': variants/pc_engines/initial-deployment.md
+          - 'Firmware update': variants/pc_engines/firmware-update.md
+          - 'Recovery': variants/pc_engines/recovery.md
+          - 'Hardware Configuration Matrix': variants/pc_engines/hardware-matrix.md
+          - 'Openness score': variants/pc_engines/openness_score.md
+          - 'FAQ': variants/pc_engines/faq.md
+          - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
+          - 'Firmware write protection': variants/pc_engines/bios-lock.md
       - 'Protectli':
           - 'Overview': unified/protectli/overview.md
           - 'Building manual': unified/protectli/building-manual.md
@@ -376,28 +422,17 @@ nav:
           - 'Firmware update': variants/qemu_q35/firmware-update.md
           - 'Recovery': variants/qemu_q35/recovery.md
           - 'Hardware Configuration Matrix': variants/qemu_q35/hardware-matrix.md
-      - 'MSI desktops':
-          - 'Overview': unified/msi/overview.md
-          - 'Building manual': unified/msi/building-manual.md
-          - 'Initial deployment': unified/msi/initial-deployment.md
-          - 'Firmware update': unified/msi/firmware-update.md
-          - 'Recovery': unified/msi/recovery.md
-          - 'Development': unified/msi/development.md
-          - 'FAQ': unified/msi/faq.md
-          - 'Hardware Compatibility': unified/msi/hcl.md
-          - 'Firmware transition': unified/msi/firmware-transition.md
-          - 'MSI PRO Z690-A':
-              - 'Releases': variants/msi_z690/releases.md
-              - 'Heads releases': variants/msi_z690/releases_heads.md
-              - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
-              - 'Test matrix': variants/msi_z690/test-matrix.md
-              - 'Openness score': variants/msi_z690/openness_score.md
-          - 'MSI PRO Z790-P':
-              - 'Releases': variants/msi_z790/releases.md
-              - 'Heads releases': variants/msi_z790/releases_heads.md
-              - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
-              - 'Test matrix': variants/msi_z790/test-matrix.md
-              - 'Openness score': variants/msi_z790/openness_score.md
+      - 'Raptor CS Talos II':
+          - 'Overview': variants/talos_2/overview.md
+          - 'Releases': variants/talos_2/releases.md
+          - 'Building manual': variants/talos_2/building-manual.md
+          - 'Initial deployment': variants/talos_2/initial-deployment.md
+          - 'Firmware update': variants/talos_2/firmware-update.md
+          - 'Recovery': variants/talos_2/recovery.md
+          - 'Hardware configuration matrix': variants/talos_2/hardware-matrix.md
+          - 'Test matrix': variants/talos_2/test-matrix.md
+          - 'Conference materials': variants/talos_2/conferences.md
+          - 'TPM connection and support': variants/talos_2/tpm-support.md
       - 'Supermicro X11 LGA1151 Series':
           - 'Overview': variants/supermicro_x11_lga1151_series/overview.md
           - 'Releases': variants/supermicro_x11_lga1151_series/releases.md
@@ -408,48 +443,13 @@ nav:
           - 'Firmware update': variants/supermicro_x11_lga1151_series/firmware-update.md
           - 'Recovery': variants/supermicro_x11_lga1151_series/recovery.md
           - 'FAQ': variants/supermicro_x11_lga1151_series/faq.md
-      - 'PC Engines':
-          - 'Overview': variants/pc_engines/overview.md
-          - 'Releases (coreboot+UEFI)': variants/pc_engines/releases_uefi.md
-          - 'Releases (coreboot+SeaBIOS)': variants/pc_engines/releases_seabios.md
-          - 'Building manual': variants/pc_engines/building-manual.md
-          - 'Initial deployment': variants/pc_engines/initial-deployment.md
-          - 'Firmware update': variants/pc_engines/firmware-update.md
-          - 'Recovery': variants/pc_engines/recovery.md
-          - 'Hardware Configuration Matrix': variants/pc_engines/hardware-matrix.md
-          - 'Openness score': variants/pc_engines/openness_score.md
-          - 'FAQ': variants/pc_engines/faq.md
-          - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
-          - 'Firmware write protection': variants/pc_engines/bios-lock.md
-      - 'Hardkernel ODROID H4':
-          - 'Overview': variants/hardkernel_odroid_h4/overview.md
-          - 'Releases': variants/hardkernel_odroid_h4/releases.md
-          - 'Slim Bootloader releases': variants/hardkernel_odroid_h4/releases_sbl.md
-          - 'Building manual': variants/hardkernel_odroid_h4/building-manual.md
-          - 'Initial deployment': variants/hardkernel_odroid_h4/initial-deployment.md
-          - 'Firmware update': variants/hardkernel_odroid_h4/firmware-update.md
-          - 'Recovery': variants/hardkernel_odroid_h4/recovery.md
-          - 'Hardware Configuration Matrix': variants/hardkernel_odroid_h4/hardware-matrix.md
-          - 'Test matrix': variants/hardkernel_odroid_h4/test-matrix.md
-          - 'Openness score': variants/hardkernel_odroid_h4/openness_score.md
-      - 'Gigabyte MZ33-AR1':
-          - 'Overview': variants/gigabyte_mz33-ar1/overview.md
-          - 'Releases': variants/gigabyte_mz33-ar1/releases.md
-          - 'Building manual': variants/gigabyte_mz33-ar1/building-manual.md
-          - 'Initial deployment': variants/gigabyte_mz33-ar1/initial-deployment.md
-          - 'Recovery': variants/gigabyte_mz33-ar1/recovery.md
-          - 'Hardware Configuration Matrix': variants/gigabyte_mz33-ar1/hardware-matrix.md
-          - 'Test matrix': variants/gigabyte_mz33-ar1/test-matrix.md
-      - 'ASRock Rack SPC741D8-2L2T/BCM':
-          - 'Overview': variants/asrock_spc741d8/overview.md
-          - 'Releases': variants/asrock_spc741d8/releases.md
-          - 'Firmware Update': variants/asrock_spc741d8/firmware-update.md
-          - 'Building manual': variants/asrock_spc741d8/building-manual.md
-          - 'Initial deployment': variants/asrock_spc741d8/initial-deployment.md
-          - 'Recovery': variants/asrock_spc741d8/recovery.md
-          - 'Hardware Configuration Matrix': variants/asrock_spc741d8/hardware-matrix.md
-          - 'Test matrix': variants/asrock_spc741d8/test-matrix.md
-          - 'Openness Score': variants/asrock_spc741d8/openness_score.md
+      - 'Tuxedo IBS15':
+          - 'Releases': variants/tuxedo_ibs15/releases.md
+          - 'Building manual': variants/tuxedo_ibs15/building.md
+          - 'Installation manual': variants/tuxedo_ibs15/installation.md
+          - 'Post-installation setup': variants/tuxedo_ibs15/post_install.md
+          - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
+          - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':
