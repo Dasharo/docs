@@ -16,8 +16,8 @@ Test results for this release can be found
 
 ### Added
 
-- [Intel Management Engine Options menu (Disable Soft and Disable HAP)](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/)
-- [CPU Throttling Temperature Offset option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/)
+- [Intel Management Engine Options menu (Disable Soft and Disable HAP)](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#intel-management-engine-options)
+- [CPU Throttling Temperature Offset option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
 - [Power state after power or AC loss option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/)
 - [Enable wake from USB devices on Jasper Lake](https://github.com/Dasharo/coreboot/commit/d2f6b3fa9c068c9a0177a2eb921a4b69a34b8447)
 - [Intel Jasper Lake CrashLog support](https://github.com/Dasharo/coreboot/commit/07dd73c9214b766762a89ffe51f27c77799293be)
