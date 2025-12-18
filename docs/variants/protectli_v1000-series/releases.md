@@ -38,6 +38,7 @@ Test results for this release can be found
 
 - [M.2 SATA devices not detected on Protectli V12xx](https://github.com/Dasharo/dasharo-issues/issues/1401)
 - [Efibootmgr returns Bad address on FreeBSD on Protectli V1410](https://github.com/Dasharo/dasharo-issues/issues/1001)
+- [SUSP DUT wakes up from S3 instantly](https://github.com/Dasharo/dasharo-issues/issues/1332)
 
 ### Known issues
 
