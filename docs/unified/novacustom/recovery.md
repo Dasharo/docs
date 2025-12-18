@@ -527,6 +527,45 @@ firmware.
         21. Power on the laptop to verify the recovery passed. First boot may take a
             while, so be patient.
 
+    ### Troubleshooting
+
+    If the device is not booting, despite following these instructions, follow
+    the troubleshooting steps below:
+
+    #### CMOS Reset
+
+    1. Disconnect the power supply
+
+    1. Disconnect the system battery and the CMOS battery
+
+    1. Press the power button repeatedly to discharge any remaining charge
+
+    1. Leave the laptop disconnected from power for one minute
+
+    1. Plug everything back in and power on the laptop
+
+    #### Flash erase + CMOS reset
+
+    1. Using flashrom, erase the entire flash chip:
+
+       ```bash
+       sudo flashrom -p ch341a_spi --erase
+       ```
+
+    1. Disconnect the system battery and the CMOS battery
+
+    1. Press the power button repeatedly to discharge any remaining charge
+
+    1. Leave the laptop disconnected from power for one minute
+
+    1. Flash the correct firmware for the platform
+
+       ```bash
+       sudo flashrom -p ch341a_spi -w path/to/firmware.bin
+       ```
+
+    1. Plug everything back in and power on the laptop
+
 === "NUC BOX"
 
     The NovaCustom NUC BOX-155H platform utilizes a socket-mounted WSON8 flash
