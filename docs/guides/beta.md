@@ -6,8 +6,8 @@ This document explains the Dasharo Beta update channel, how to enroll in it and
 how to downgrade back to stable.
 
 The Dasharo Beta update channel provides pre-release binaries ready for public
-testing by a group of beta testers. These binaries are not thoroughly tested,
-but provide a preview of future features and enhancements.
+testing by a group of beta testers. These binaries are not tested as thoroughly
+as full releases, but provide a preview of future features and enhancements.
 
 Dasharo Beta is only available for a select group devices. Currently, these
 include:
