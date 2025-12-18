@@ -521,15 +521,20 @@ To perform fusing procedure:
 It's possible to verify which keys currently running firmware is signed with:
 
 1. Enter the shell in DTS
-
 1. Execute `btg_key_validator`
 
 Example output:
 
 ```bash
+Waiting for network connection ...
+Network connection have been established!
+Downloading board configs repository...
+Checking if board is Dasharo compatible.
 Reading flash...
 Extracting key manifest...
-Key matches NovaCustom Meteor Lake signing key.
+Firmware is signed with expected key hash:
+  e64b6b0e82c68fecc58f750d3696c26e1c98bf9e3149c81f3b2ed775eb9d2c157a99c103c62c44
+c0cdc61be971caeae1
 ```
 
 The script will output information whether the platform firmware is signed with
