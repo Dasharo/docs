@@ -537,7 +537,13 @@ firmware.
     If the device is not booting, despite following these instructions, follow
     the troubleshooting steps below:
 
+    #### Replace the ram modules
+
+    Try replacing the RAM modules and booting again.
+
     #### CMOS Reset
+
+    Try performing a CMOS reset:
 
     1. Disconnect the power supply
 
@@ -551,15 +557,17 @@ firmware.
 
     #### Flash erase + CMOS reset
 
+    Try to boot the laptop with the flash erased once, and perform a CMOS reset:
+
     1. Using flashrom, erase the entire flash chip:
 
        ```bash
        sudo flashrom -p ch341a_spi --erase
        ```
 
-    1. Disconnect the system battery and the CMOS battery
+    1. Power on the laptop
 
-    1. Press the power button repeatedly to discharge any remaining charge
+    1. Disconnect the system battery and the CMOS battery
 
     1. Leave the laptop disconnected from power for one minute
 
