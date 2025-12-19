@@ -171,6 +171,13 @@ quite generic but still useful:
 * `Not Ready` indicates that the capsule is unsupported by this firmware, likely
   because it isn't compatible
 
+You may also see the following screen:
+
+![BtG capsule error](../images/menus/capsule_btg_error.jpg)
+
+If you see this error, contact our support at support@dasharo.com, making sure
+to attach a photo of the screen you're seeing.
+
 ## Further information
 
 * [Overview of Update Capsules](../kb/capsule-updates-overview.md)
