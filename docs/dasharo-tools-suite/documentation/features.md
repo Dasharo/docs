@@ -15,7 +15,7 @@ This section describes the functionality of the Dasharo Tools Suite. These are:
         - [Update issues](#update-issues)
     + [EC transition](#ec-transition)
     + [EC update](#ec-update)
-    + [Fusing the device vendor keys](#fusing-the-device-vendor-keys)
+    + [Fuse Platform (Dasharo TrustRoot)](#fuse-platform-dasharo-trustroot)
     + [Verify Intel Boot Guard key](#verify-intel-boot-guard-key)
     + [Additional features](#additional-features)
         - [Run commands from iPXE shell automatically](#run-commands-from-ipxe-shell-automatically)
@@ -482,7 +482,7 @@ version. This is how we can achieve that.
     version: 2022-08-31_cbff21b
     ```
 
-## Fusing the device vendor keys
+## Fuse Platform (Dasharo TrustRoot)
 
 DTS can be used to fuse the device vendor keys onto the SoC to enable
 the Dasharo TrustRoot feature.
@@ -498,7 +498,7 @@ the Dasharo TrustRoot feature.
 The decision to fuse the keys requires the user to explicitly opt-in.
 Updating the firmware will never fuse the device on its own.
 
-To perform fusing procedure:
+To perform the fusing procedure:
 
 1. Make sure a power supply is connected to the device if it is battery powered
 2. Make sure the device has Dasharo firmware and the support for Dasharo
