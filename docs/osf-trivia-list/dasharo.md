@@ -305,6 +305,10 @@ toolchain, discussed in the [build process
 section](https://docs.dasharo.com/osf-trolling-list/build_process)
 of the project documentation.
 
+Feel free to visit [Github
+dasharo-issues](https://github.com/Dasharo/dasharo-issues) repository and leave
+feedback, rise issue or ask question.
+
 ### Dasharo Long Term Maintenance
 
 - We provide long term maintenance - coreboot community for various reasons, do
