@@ -503,6 +503,57 @@ consider [ways to help us](https://docs.dasharo.com/ways-you-can-help-us/)
 to gain a reputation that can lead to influencing Dasharo Community Supported
 roadmap.
 
+## What consulting services can Dasharo Team provide beyond online courses?
+
+<!-- This answer needs improvement -->
+
+We offer a wide range of consulting services at all stages of the
+hardware life cycle. These include open-source firmware feasibility
+analysis, proprietary to open-source transition plans, firmware
+porting, custom development and debugging, automated firmware
+validation, and maintenance through Dasharo open-source firmware
+distribution. We also provide firmware incident response, Trusted
+Computing consulting and development, Root of Trust implementation and
+integration, and more.
+
+We provide the same services as Independent BIOS Vendors but using open-source
+firmware components:
+
+- open-source firmware feasibility analysis at all levels of project maturity
+(from concept to production hardware),
+- proprietary to open-source transition plan,
+- coreboot and other open-source firmware (EC firmware, OpenBMC, LinuxBoot,
+EDKII, SlimBootloader) porting,
+- power-on support (remote and on-site),
+- custom development and debugging,
+- automated firmware validation development and maintenance,
+- maintenance through [Dasharo open-source firmware distribution](https://dasharo.com),
+- firmware incident response (ME updates, CVE tracking, and mitigation),
+- Trusted Computing consulting and development,
+- Root of Trust implementation and integration.
+
+Dasharo publicly supported hardware can be found [here][supported-hw].
+
+Some service catalogs with more exhaustive descriptions are
+[here](https://3mdeb.com/service-catalogues/). We are pretty sure the above list
+does not exhaust all the capabilities we gained over the last eight years of
+open-source firmware development, so if something is not on the list but you
+need such support, please let us know, and we can check if we can support you.
+
+We offer support using three tiers depending on your SLA requirements (Dasharo
+Community Support, Dasharo Support Package, and Dasharo Enterprise Package).
+More in [Dasharo Professional Support](#dasharo-professional-support).
+
+We also offer training services. Did you already complete freely available
+materials at [OST2][ost2]. [Arch4031][arch4031] should give you basic knowledge of
+coreboot for free, and a recently published updated version of [Arch4021][arch4021]
+provide an introduction to UEFI. After completing those courses, you will
+understand better coreboot and UEFI environment, and we can discuss more
+advanced training as part of [Pace Enterprise Training](https://paceenterprisetraining.com).
+
+If you are interested in our services, feel free to [contact
+us](https://3mdeb.com/contact).
+
 [coreboot-scope]: https://doc.coreboot.org/#scope-of-the-coreboot-project
 [dtsos]: ../dasharo-tools-suite/overview.md
 [lvfs]: https://fwupd.org/lvfs/docs/consulting
@@ -515,3 +566,6 @@ roadmap.
 [msi-z690a]: ../unified/msi/overview.md
 [vpub]: https://vpub.dasharo.com/
 [dasharo-matrix]: https://matrix.to/#/#dasharo:matrix.org
+[ost2]: https://ost2.fyi/
+[arch4021]: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Arch4031_x86-64_RV_coreboot+2021_v1/about
+[arch4031]: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Arch4021_intro_UEFI+2023_v1/about
