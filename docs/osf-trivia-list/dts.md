@@ -78,49 +78,59 @@ Dasharo DPP credentials have been saved
 
 In general there are three ways to support us:
 
-### I have more time than money and I can code
+### I have more time than money, and I can code
 
 Please help us develop Dasharo influence on open-source firmware market and
 spread the word about it. There are multiple ways to do that:
 
 * [Join Dasharo Matrix
   Community](../ways-you-can-help-us.md#join-dasharo-matrix-community) and
-  support other members of community
-* [Join Dasharo open-source firmware
+  support other members of the community.
+* [Join Dasharo open-source firmware.
   vPub](../ways-you-can-help-us.md#join-dasharo-open-source-firmware-vpub) or
   other related event organized by 3mdeb or Dasharo Team.
-* [Write a Google review](../ways-you-can-help-us.md#write-a-google-review)
+* [Write a Google review](../ways-you-can-help-us.md#write-a-google-review).
 * [Follow us on social
   media](../ways-you-can-help-us.md#follow-us-on-social-media) and help
   spreading the word about Dasharo.
 * [Contribute](../ways-you-can-help-us.md#contribute-through-github)
   documentation, test results, [Dasharo Hardware Compatibility List
-  Reports](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#hcl-report)
+  Reports](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#hcl-report).
 
-To get access to DTS you should [contact 3mdeb](mailto:leads@3mdeb.com) or
-[Dasharo Team](mailto:contact@dasharo.com) and prove your contribution
-regarding above areas of support and influence. If it would be meaningful we
-would be glad to give you access to DTS for a year.
+Access to the Dasharo Pro Package (DPP) is granted based on your level of
+contribution or support for the Dasharo ecosystem. Since Dasharo Tools Suite
+(DTS) is publicly available, this section refers specifically to access to DPP.
 
-### I have more time than money and I can't code
+To request access, please contact [3mdeb](mailto:leads@3mdeb.com) or [Dasharo
+Team](mailto:contact@dasharo.com) and provide evidence of your contribution or
+support described below. Each request is evaluated individually. If it would be
+meaningful, we would be glad to give you access to DPP granted accordingly to
+your input.
 
-Please [contribute](../ways-you-can-help-us.md#contribute-through-github)
-ideas for new features, review documentation and help testing bug fixes.
+### I have more time than money, and I can't code
 
-If you would like to pursue that path please contact us on [Dasharo -
+You can contribute by proposing ideas for new features, reviewing documentation,
+and helping with testing and validation of bug fixes.
+
+Please see [ways you can help
+us](../ways-you-can-help-us.md#contribute-through-github) for details.
+
+If you would like to follow that path, contact us on [Dasharo -
 General](https://matrix.to/#/#dasharo-general:matrix.org) Matrix channel to
-agree on scope of contribution to avoid any potential collision with other
-developers. To get access to DTS you should contact
-[3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com)
-with links to your contribution and we would be glad to provide one year of DTS
-SE updates.
+agree on the scope of your contribution to avoid any potential collision with
+other developers. 
+
+Once your contribution is completed, contact [3mdeb](mailto:leads@3mdeb.com) or
+[Dasharo Team](mailto:contact@dasharo.com) with links or references to your
+work. Access to the Dasharo Pro Package will be granted for a period and scope
+adequate to your contribution.
 
 ### I have more money than time
 
-Please [donate](../ways-you-can-help-us.md#donate-money) using one of
-available methods and contact [3mdeb](mailto:leads@3mdeb.com) or [Dasharo
-Team](mailto:contact@dasharo.com) to let us know about your donation. Minimal
-donating to access DTS with one year update support is 60EUR.
+You may support the project financially by making a [donation](../ways-you-can-help-us.md#donate-money) or purchasing a Dasharo Pro Package via the [online store](https://shop.3mdeb.com/product-category/dasharo-pro-package/). After completing your donation or purchase, please contact [3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com) to confirm your support.
+
+The scope and duration of DPP access depend on the selected package and current
+pricing listed in the store.
 
 ## How can I help the support team diagnose my problem faster?
 
