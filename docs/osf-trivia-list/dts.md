@@ -118,7 +118,7 @@ us](../ways-you-can-help-us.md#contribute-through-github) for details.
 If you would like to follow that path, contact us on [Dasharo -
 General](https://matrix.to/#/#dasharo-general:matrix.org) Matrix channel to
 agree on the scope of your contribution to avoid any potential collision with
-other developers. 
+other developers.
 
 Once your contribution is completed, contact [3mdeb](mailto:leads@3mdeb.com) or
 [Dasharo Team](mailto:contact@dasharo.com) with links or references to your
@@ -127,7 +127,13 @@ adequate to your contribution.
 
 ### I have more money than time
 
-You may support the project financially by making a [donation](../ways-you-can-help-us.md#donate-money) or purchasing a Dasharo Pro Package via the [online store](https://shop.3mdeb.com/product-category/dasharo-pro-package/). After completing your donation or purchase, please contact [3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com) to confirm your support.
+You may support the project financially by making a
+[donation](../ways-you-can-help-us.md#donate-money) or purchasing a Dasharo Pro
+Package via the [online
+store](https://shop.3mdeb.com/product-category/dasharo-pro-package/). After
+completing your donation or purchase, please contact
+[3mdeb](mailto:leads@3mdeb.com) or [Dasharo Team](mailto:contact@dasharo.com) to
+confirm your support.
 
 The scope and duration of DPP access depend on the selected package and current
 pricing listed in the store.
