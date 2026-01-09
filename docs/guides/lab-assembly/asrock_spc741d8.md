@@ -3,7 +3,7 @@
 ## Introduction
 
 This document describes platform-specific details for assembling an [ASRock Rack
-SPC741D8-2L2T/BCM](https://www.asrockrack.com/general/productdetail.pl.asp?Model=SPC741D8-2L2T/BCM#Specifications)
+SPC741D8-2L2T/BCM](https://www.asrockrack.com/general/productdetail.asp?Model=SPC741D8-2L2T/BCM#Specifications)
 testing stand. Use this document as reference while going through [Generic
 Testing Stand
 Setup](../../unified-test-documentation/generic-testing-stand-setup.md)
