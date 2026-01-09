@@ -45,9 +45,13 @@ firmware after coreboot, you get a mix of both.
 
 ### PCR banks
 
-At the time of writing (September 2025) coreboot supports extending only a
-single bank of a PCR despite ability of TPM 2.0 to handle multiple banks.  A PCR
-bank, which corresponds to a specific hash function, is fixed at build time:
+Since 2026 Dasharo's fork of coreboot started supporting extending all active
+banks of a TPM 2.0 that it knows about.  All prior releases (including some in
+the early 2026 and releases using older version of the code base) can update
+at most a single PCR bank.
+
+A PCR bank corresponds to a specific hash function, it's fixed for TPM 1.2 and
+is selected during build for TPM 2.0:
 
 | TPM version | PCR Bank
 | ----------- | --------
@@ -56,9 +60,15 @@ bank, which corresponds to a specific hash function, is fixed at build time:
 
 This has an implication for TPM 2.0 case when multiple PCR banks are active and
 used by EDK.  This is handled by using dummy hash values (`0100...`) for missing
-digests (SHA-1) which do not correspond to actual PCR updates.  Doing this
-breaks replaying of TPM log unless fake digests are skipped, but it allows to
-comply with TPM event log format.
+digests (most often SHA-1) which do not correspond to actual PCR updates.
+Doing this breaks replaying of TPM log unless fake digests are skipped, but it
+allows to comply with TPM event log format.
+
+While newer versions of the firmware support multiple digests, the exact set of
+supported algorithms is still fixed at build time.  This means that it is still
+possible to have some banks unpopulated if coreboot doesn't know a particular
+digest (by default only SHA-1 and SHA-256 are selected leaving less popular
+SHA-384 and SHA-512 disabled).
 
 ### PCR measurements
 
