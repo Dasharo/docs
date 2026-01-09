@@ -36,6 +36,28 @@ Select your operating system to view applicable instructions:
 
     and reboot to use the new kernel.
 
+    ### Microphone mute key enablement
+
+    On laptops which support it, (V54x, V56x, NV4xPZ), a fix might be needed
+    if the version of systemd on your system is lower than `257`:
+
+    ```bash
+    systemd --version
+    ```
+
+    Example:
+    ```
+    ubuntu@3mdeb:/$ systemd --version
+    systemd 255 (255.4-1ubuntu8.12)
+    ```
+
+    In that case execute the following  command to apply a fix:
+    ```bash
+    curl -sSf https://raw.githubusercontent.com/Dasharo/dasharo-tools/main/clevo/mic-switch-fixup | sudo sh
+    ```
+
+    and reboot the device.
+
     ### NVIDIA drivers
 
     If your device comes with NVIDIA graphics, proprietary NVIDIA drivers are
@@ -44,15 +66,15 @@ Select your operating system to view applicable instructions:
     1. Install drivers according to
        [instructions provided by Ubuntu](https://ubuntu.com/server/docs/nvidia-drivers-installation)
 
-    1. Reboot the device to apply changes
+    2. Reboot the device to apply changes
 
-    1. (Optional) If you're suffering from poor battery life caused by the GPU
+    3. (Optional) If you're suffering from poor battery life caused by the GPU
        not turning off, ensure On-Demand mode is enabled in NVIDIA Control
        Panel:
 
        ![](../../images/nv4x_nvidia_panel.jpg){ class="center" }
 
-    1. (Optional) If the GPU is still not powering down, run the following
+    4. (Optional) If the GPU is still not powering down, run the following
        command, and then reboot the laptop:
 
         ```bash
