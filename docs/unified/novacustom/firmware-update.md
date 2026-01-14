@@ -92,6 +92,9 @@ firmware version is currently installed on your device.
            [features section](../../dasharo-tools-suite/documentation/features.md#firmware-update)
            of the dedicated Dasharo Tools Suite documentation page.
 
+        If you see any errors during the update, check the [Troubleshooting](../../guides/capsule-update.md#troubleshooting)
+        section of the Capsule Update guide.
+
         ### Manual update
 
         This update method is for advanced users only and is not recommended for
