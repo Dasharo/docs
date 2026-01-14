@@ -159,6 +159,8 @@ page of the [Setup][main-page].
 
 ## Troubleshooting
 
+### Looking up abort reason after a reboot
+
 In case the update process has aborted, one can run `CapsuleApp.efi -S` in UEFI
 Shell to get basic information pointing to the reason:
 
@@ -170,6 +172,8 @@ quite generic but still useful:
 * `Security Violation` indicates an issue with capsule's signature
 * `Not Ready` indicates that the capsule is unsupported by this firmware, likely
   because it isn't compatible
+
+### Interactive error during an update
 
 You may also see the following screen:
 
