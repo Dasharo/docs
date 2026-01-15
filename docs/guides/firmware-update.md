@@ -59,6 +59,24 @@ information.
 
 Here are known issues, grouped by the platform vendor.
 
+### Generic
+
+#### Heads update fails
+
+Heads firmware update fails with error message displaying issues with (any of)
+FD, ME or BIOS regions being either locked or not not flashed.
+
+??? success "Solution"
+
+    For heads update, the following regions must be unlocked and flashed: FD,
+    ME, BIOS. If any of the regions is locked, the update will not proceed
+    in order to avoid bricking the device.
+
+    For ME related warnings, please ensure the Intel Management Engine is
+    disabled in Dasharo settings. Please disable management engine using
+    `HAP` mode, and if the update still fails after the change, please also try
+    with ME in "soft-disabled" mode.
+
 ### MSI
 
 ---
