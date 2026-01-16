@@ -29,7 +29,7 @@ When DTS is started, it has following options for the user to choose from:
   Compatibility List Report
 - **2)** [Update Dasharo Firmware](#firmware-update) or [Install Dasharo
   Firmware](#dasharo-zero-touch-initial-deployment)
-- **3)** [Restore Firmware from Dasharo HCL Report](#update-issues)
+- **3)** Restore Firmware from Dasharo HCL Report (Deprecated)
 - **4)** [Load your DPP
     keys](../../osf-trivia-list/dts.md#how-can-i-use-my-dasharo-pro-package-credentials)
     \- Load your Dasharo Pro Package (DPP) keys
@@ -381,23 +381,13 @@ If you see the following pop-ups during the first boot after the update:
 ![error-0x13](../images/error-0x13.png)
 
 You probably performed an update using a deprecated version of Dasharo Tools
-Suite and have not disabled BIOS lock. Do not worry, nothing bad has happened.
-If you backed up your old firmware, do the following steps:
+Suite and have not disabled BIOS lock. If you backed up your old firmware,
+there is still a possibility to restore it.
 
-1. Reboot your device and turn off BIOS lock (you can find this option in
-[Dasharo Security
-Options](../../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
-as `BIOS boot medium lock`).
-1. Boot the DTS you backed up your old firmware with and choose option 3, which
-will restore it.
-1. After restoring the firmware, perform another update, but make sure you are
-using the [latest Dasharo Tools Suite
-version](https://github.com/Dasharo/meta-dts/releases/latest) (new DTS has tools
-to protect you from such issues).
-
-If you used `flashrom` as described in [Local firmware
-update](#local-firmware-update), flash the firmware again, but make sure the
-BIOS lock is turned off this time.
+Please follow steps described in the
+[Local firmware update](#local-firmware-update) section to restore the default
+firmware and flash the new firmware again, but make sure the BIOS lock is turned
+off this time.
 
 ## EC transition
 
