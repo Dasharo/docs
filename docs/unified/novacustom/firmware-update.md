@@ -60,6 +60,9 @@ firmware version is currently installed on your device.
             Powering off instead of rebooting as instructed by fwupd will result in
             aborting the update.
 
+        If you see any errors during the update, check the [Troubleshooting](../../guides/capsule-update.md#troubleshooting)
+        section of the Capsule Update guide.
+
         ### Firmware Update Mode
 
         Firmware Update Mode is available starting with the following versions:
@@ -91,9 +94,6 @@ firmware version is currently installed on your device.
            Tools Suite, please check out the
            [features section](../../dasharo-tools-suite/documentation/features.md#firmware-update)
            of the dedicated Dasharo Tools Suite documentation page.
-
-        If you see any errors during the update, check the [Troubleshooting](../../guides/capsule-update.md#troubleshooting)
-        section of the Capsule Update guide.
 
         ### Manual update
 
