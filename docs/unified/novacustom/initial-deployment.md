@@ -79,6 +79,16 @@ On your host computer, install flashrom from sources:
             flashrom -p ite_ec:boardmismatch=force,romsize=128K -w path/to/ec.rom
             ```
 
+        !!! note
+
+            After `flashrom` finishes, the internal keyboard will stop working.
+            To reboot the device and use the newly installed EC firmware you need
+            to either connect an external keyboard, or set up an SSH server
+            beforehand to connect and execute a command like `reboot`.
+            Otherwise, with no possibility of accessing the terminal,
+            it will be necessary or disconnect the internal battery to reboot
+            the device.
+
         ### BIOS installation
 
         Steps for installing Dasharo BIOS:
