@@ -28,7 +28,7 @@ security of your platform.
 For individuals Dasharo provides optional features in subscription model called
 [Dasharo Pro Package](../dev-proc/versioning.md#dasharo-pro-package-releases).
 
-## Why 3mdeb created Dasharo?
+## Why did 3mdeb create Dasharo?
 
 3mdeb created Dasharo to establish a recognized brand with a proven history of
 successful firmware integrations. Dasharo aims to deliver added
@@ -58,7 +58,7 @@ firmware solution for a wide range of platforms and applications, aligning with
 the vision of a new golden age of computing advocated by experts in computer
 architecture.
 
-## What Dasharo provides?
+## What does Dasharo provide?
 
 Dasharo has 10 rules that govern the production and release of firmware within
 its ecosystem. Dasharo rules define what we deliver with every release. These
@@ -119,7 +119,7 @@ the community. By following these rules, Dasharo Ecosystem provides a
 consistent and high-quality firmware solution for a wide range of platforms and
 applications.
 
-## What is Dasharo binary blob policy?
+## What is Dasharo's binary blob policy?
 
 Modern x86 platforms' firmware requires closed source blobs to be integrated
 into the image to properly initialize the silicon. The ecosystem is shifting
@@ -215,7 +215,7 @@ based firmware distribution. It doesn't mean we agree with that decision:
 - Rules seem not to be applied equally to all contributors of
   [coreboot distribution][cb-distro].
 
-## Why Dasharo is not called coreboot firmware distribution?
+## Why is Dasharo not called a coreboot firmware distribution?
 
 While the coreboot is now the default open-source framework for Dasharo, we do
 not want to limit Dasharo to one framework. We also expect another firmware
@@ -231,7 +231,7 @@ we also have [coreboot with
 skiboot/heads](https://docs.dasharo.com/variants/talos_2/releases/) payload,
 and we expect more flavors to appear in the future.
 
-## What value Dasharo provides in comparison to coreboot?
+## What value does Dasharo provide in comparison to coreboot?
 
 - Dasharo is open-source firmware distribution based on
   [coreboot](https://coreboot.org) and other open-source firmware frameworks
@@ -346,7 +346,7 @@ Certification Program providing certain quality criteria including test
 results. We always trying to minimize delta, but sometimes it can be up to 5k
 SLOC (or more I guess e.g. Talos II coreboot support).
 
-## What is Dasharo Certified Firmware Program?
+## What is the Dasharo Certified Firmware Program?
 
 The Dasharo Certified Firmware (DCF) Program is a highly specialized
 certification program that benchmarks open-source firmware ecosystem
