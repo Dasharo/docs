@@ -31,6 +31,8 @@
 | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.1-rc4 | Dasharo HCL report |
 | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.2 | Dasharo HCL report |
 | Kingston | KF3600C17D4/8GX | 8192 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.3 | Dasharo HCL report |
+| Kingston | KF3600C17D4/8GX | 8 GB | 2400 MT/s | -/-/&#10004 | v1.0.0 | Dasharo HCL report |
+| Kingston | KF3600C17D4/8GX | 8 GB | 2400 MT/s | &#10004/-/- | v1.1.2 | Dasharo HCL report |
 | Kingston | KF3600C18D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
 | Kingston | KF3600C18D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | -/-/&#10004 | v1.1.2 | Dasharo HCL report |
 | Kingston | KF3600C18D4/32GX | 32768 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.1.3 | Dasharo HCL report |

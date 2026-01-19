@@ -517,15 +517,67 @@ firmware.
                 ![](../../images/560TNEwson1.webp)
                 ![](../../images/560TNEwson2.webp)
 
-        20. Hold down the WSON probe firmly in place and execute the following command
-            on your host computer:
+        20. Hold down the WSON probe firmly in place and execute the following
+            commands on your host computer:
 
             ```bash
-            sudo flashrom -p ch341a_spi --ifd -i fd -i me -i bios -w [backup.bin]
+            sudo flashrom -p ch341a_spi --ifd -i fd -w [backup.bin] && \
+            sudo flashrom -p ch341a_spi --ifd -i me -i bios -w [backup.bin]
             ```
+
+            _Note: The commands will first flash FD region, followed by ME and
+            BIOS regions. The reason is all regions are FD dependent, therefore,
+            it must be ensured the FD gets flashed first._
 
         21. Power on the laptop to verify the recovery passed. First boot may take a
             while, so be patient.
+
+    ### Troubleshooting
+
+    If the device is not booting, despite following these instructions, follow
+    the troubleshooting steps below:
+
+    #### Replace the ram modules
+
+    Try replacing the RAM modules and booting again.
+
+    #### CMOS Reset
+
+    Try performing a CMOS reset:
+
+    1. Disconnect the power supply
+
+    1. Disconnect the system battery and the CMOS battery
+
+    1. Press the power button repeatedly to discharge any remaining charge
+
+    1. Leave the laptop disconnected from power for one minute
+
+    1. Plug everything back in and power on the laptop
+
+    #### Flash erase + CMOS reset
+
+    Try to boot the laptop with the flash erased once, and perform a CMOS reset:
+
+    1. Using flashrom, erase the entire flash chip:
+
+       ```bash
+       sudo flashrom -p ch341a_spi --erase
+       ```
+
+    1. Power on the laptop
+
+    1. Disconnect the system battery and the CMOS battery
+
+    1. Leave the laptop disconnected from power for one minute
+
+    1. Flash the correct firmware for the platform
+
+       ```bash
+       sudo flashrom -p ch341a_spi -w path/to/firmware.bin
+       ```
+
+    1. Plug everything back in and power on the laptop
 
 === "NUC BOX"
 

@@ -147,25 +147,6 @@ There is also a libre, POWER9-based server/workstation Talos II by Raptor
 Computing Systems, which also do not use any binary blobs, however it is more
 expensive than x86 platforms.
 
-## What is a Dasharo non-LTS release?
-
-Dasharo non-LTS release is a release that is validated with a reduced set of
-tests. The non-LTS name is adopted from distributions which mark their Long
-Term Support (LTS) releases as extensively validated/higher quality assurance. For
-example see [Ubuntu documentation](https://ubuntu.com/about/release-cycle).
-
-The reduced set of tests includes the test cases marked with
-`minimal-regression` tag in the [OSFV
-repository](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/docs/adding-and-naming-test-cases.md#test-workflow-tag-guidelines).
-Tagging the tests allow to run a subset of tests with given tag. Example
-command, how to run `minimal-regression` tests can be found
-[here](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/README.md#running-regression-tests-with-additional-arguments).
-
-Dasharo releases which are not marked as non-LTS undergo a full set of
-regression tests applicable for a platform. To check results of the tests or
-the test scope for given release, visit [OSFV results
-repository](https://github.com/Dasharo/osfv-results).
-
 ## Why Dasharo?
 
 ### Open-source firmware ecosystem problems

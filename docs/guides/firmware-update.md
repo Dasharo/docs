@@ -57,9 +57,31 @@ information.
 
 ## Known issues
 
-### Problem
+Here are known issues, grouped by the platform vendor.
 
-Platform: `MSI`
+### Generic
+
+#### Heads update fails
+
+Heads firmware update fails with error message displaying issues with (any of)
+FD, ME or BIOS regions being either locked or not not flashed.
+
+??? success "Solution"
+
+    For heads update, the following regions must be unlocked and flashed: FD,
+    ME, BIOS. If any of the regions is locked, the update will not proceed
+    in order to avoid bricking the device.
+
+    For ME related warnings, please ensure the Intel Management Engine is
+    disabled in Dasharo settings. Please disable management engine using
+    `HAP` mode, and if the update still fails after the change, please also try
+    with ME in "soft-disabled" mode.
+
+### MSI
+
+---
+
+#### Locked FD region and ME warnings
 
 The following warnings appear when updating Dasharo:
 
@@ -68,19 +90,19 @@ The firmware binary to be flashed contains Flash Descriptor (FD), but FD is not 
 The firmware binary contains Management Engine (ME), but ME is not disabled!
 ```
 
-### Solution
+??? success "Solution"
 
-The locked Flash Descriptor makes it impossible to unlock and flash the
-Management Engine. The problem is not critical and you may continue with the
-update process. Your firmware will contain old ME. However, we advise to perform
-additional steps to flash it, as the old ME may cause some issues in the future.
-To do that, you will have to flash firmware with FD and ME externally using
-FlashBIOS. This will bypass the locks on those regions. If you wish to proceed
-with this approach, please follow the steps in the
-[recovery guide][recovery-msi]. Keep in mind that the memory will need to be
-trained again, and firmware settings will be reset.
+    The locked Flash Descriptor makes it impossible to unlock and flash the
+    Management Engine. The problem is not critical and you may continue with the
+    update process. Your firmware will contain old ME. However, we advise to perform
+    additional steps to flash it, as the old ME may cause some issues in the future.
+    To do that, you will have to flash firmware with FD and ME externally using
+    FlashBIOS. This will bypass the locks on those regions. If you wish to proceed
+    with this approach, please follow the steps in the
+    [recovery guide][recovery-msi]. Keep in mind that the memory will need to be
+    trained again, and firmware settings will be reset.
 
-### Problem
+#### FlashBIOS not working
 
 Platform: `MSI Z790-P DDR4`
 
@@ -88,16 +110,16 @@ Dasharo version: Before `v0.9.2`
 
 FlashBIOS does not work
 
-### Solution
+??? success "Solution"
 
-The problem is likely caused by the fact that we changed the versioning scheme
-of firmware. Due to this mismatch, FlashBIOS only works for `Z790-P DDR4` since
-`v0.9.2`. If you wish to update to that version, you will first need to flash
-the BIOS region with `v0.9.2` firmware and then use FlashBIOS to flash
-everything, including ME. You can flash BIOS with the following command:
+    The problem is likely caused by the fact that we changed the versioning scheme
+    of firmware. Due to this mismatch, FlashBIOS only works for `Z790-P DDR4` since
+    `v0.9.2`. If you wish to update to that version, you will first need to flash
+    the BIOS region with `v0.9.2` firmware and then use FlashBIOS to flash
+    everything, including ME. You can flash BIOS with the following command:
 
-```bash
-flashrom -p internal --noverify-all --ifd -i bios -w <firmware_file>
-```
+    ```bash
+    flashrom -p internal --noverify-all --ifd -i bios -w <firmware_file>
+    ```
 
 [recovery-msi]: ../unified/msi/recovery.md

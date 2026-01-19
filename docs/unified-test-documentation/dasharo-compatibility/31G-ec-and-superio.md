@@ -1742,21 +1742,24 @@ This test verifies the automatic EC firmware update / sync feature in coreboot.
 
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Downgrade to the previous firmware version (both EC and coreboot must be
-   downgraded) if needed.
 1. Keep AC adapter or USB-PD power supply connected for the duration of the
    test.
+1. Choose an older EC firmware to be flashed. Notice that EC firmware packaged
+    in Dasharo releases and release candidates might be built from the same
+    code across consecutive releases if no updates have happened.
+    Make sure the flashed EC firmware is built from different code.
+1. Downgrade the EC firmware to an older version using
+    [dasharo_ectool](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update)
+    , and reboot.
+1. Note the EC firmware version displayed on the Dasharo boot screen.
 
 **Test steps**
 
 1. Power on the DUT.
-1. Proceed with the firmware update steps [as documented in the firmware update
-   guide](../../guides/firmware-update.md).
-1. Reboot the DUT after updating firmware.
-1. Wait until the DUT updates the EC (indicated by the fans spinning at full
+2. Wait until the DUT updates the EC (indicated by the fans spinning at full
    speed) and powers off.
-1. Power on the DUT.
-1. Note the EC firmware version displayed on the Dasharo boot screen.
+3. Power on the DUT.
+4. Note the EC firmware version displayed on the Dasharo boot screen.
 
 **Expected result**
 
@@ -1781,17 +1784,22 @@ coreboot does not attempt to update the EC while an AC adapter is not connected.
 
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Downgrade to the previous firmware version (both EC and coreboot must be
-   downgraded) if needed.
+1. Keep AC adapter or USB-PD power supply connected for the duration of the
+   test.
+1. Choose an older EC firmware to be flashed. Notice that EC firmware packaged
+    in Dasharo releases and release candidates might be built from the same
+    code across consecutive releases if no updates have happened.
+    Make sure the flashed EC firmware is built from different code.
+1. Downgrade the EC firmware to an older version using
+    [dasharo_ectool](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update)
+    , and reboot.
+1. Note the EC firmware version displayed on the Dasharo boot screen.
 
 **Test steps**
-
-1. Power on the DUT.
-1. Proceed with the firmware update steps [as documented in the firmware update
-   guide](../../guides/firmware-update.md).
-1. Disconnect the AC adapter, if connected.
-1. Reboot the DUT.
-1. Note the contents of the popup displayed on the Dasharo boot screen.
+1. Make sure the device runs from battery power, i.e. no AC adapters or USB-PD
+   chargers connected.
+2. Power on the DUT.
+3. Note the contents of the popup displayed on the Dasharo boot screen.
 
 **Expected result**
 
