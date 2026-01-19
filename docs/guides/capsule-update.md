@@ -177,7 +177,7 @@ quite generic but still useful:
 
 You may also see the following screen:
 
-![BtG capsule error](../images/menus/capsule_btg_error.jpg)
+![BtG capsule error](../images/menus/capsule_btg_error.png)
 
 If you see this error, contact our support at support@dasharo.com, making sure
 to attach a photo of the screen you're seeing.
