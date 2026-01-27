@@ -130,3 +130,15 @@ alter its behaviour to minimize security risks.
 
     Make sure you fully understand this information before choosing to flash a
     firmware that enforces Dasharo TrustRoot.
+
+## Dasharo TrustRoot fusing
+
+By default, Dasharo TrustRoot-enabled releases are published as binaries that
+do not lock the platform down. This means that TrustRoot is active, and
+unauthorized updates to the BIOS region will be detected, but the chipset fuses
+are not burnt. Unburnt fuses allow for replacing the chipset configuration,
+which would disable TrustRoot again.
+
+To perform proper platform lockdown, burn the fuses and permanently enable
+Dasharo TrustRoot with no way to disable it again, the platform must be fused.
+To perform fusing, follow the [CPU Fusing Guide](guides/cpu-fusing.md).
