@@ -61,10 +61,32 @@ Here are known issues, grouped by the platform vendor.
 
 ### Generic
 
+#### Failed to queue capsule update
+
+The most likely reason for this error is enabled ME. If FD region is unlocked,
+then capsule update requires ME to be HAP disabled.
+
+??? note
+
+    In case of locked FD region, e.g. on some
+    [MSI platforms](#locked-fd-region-and-me-warnings) or on [fused NovaCustom
+    laptops](../dasharo-tools-suite/documentation/features.md#fuse-platform-dasharo-trustroot)
+    updates don't require ME to be HAP disabled (as it can't be done) so
+    solution below won't work for you. In that case, please report the issue.
+
+??? success "Solution"
+
+    1. Set ME mode to [disabled (HAP)](../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
+    1. Save changes and reboot platform
+    1. Try the [update again](#firmware-update-mode)
+
+If update still fails, please [report
+it](../dasharo-tools-suite/overview.md#reporting-issues).
+
 #### Heads update fails
 
 Heads firmware update fails with error message displaying issues with (any of)
-FD, ME or BIOS regions being either locked or not not flashed.
+FD, ME or BIOS regions being either locked or not flashed.
 
 ??? success "Solution"
 
