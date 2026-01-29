@@ -9,6 +9,94 @@ For details about our release process please read
 {{ subscribe_form("c82fe8ab-8332-460e-8251-401f0d7b89ee",
 "Subscribe to NovaCustom V540TU 14th Gen Dasharo Release Newsletter") }}
 
+## v1.0.1 - 2026-01-29
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/NovaCustom/MTL_14th_Gen/V540TU/).
+
+### Added
+
+- [Intel Boot Guard OEM Signing Key check in capsule update](https://docs.dasharo.com/guides/capsule-update/#troubleshooting)
+
+### Changed
+
+- UEFI DBX updated to 2025-10-16
+- Intel Microcode updated to microcode-20251111
+
+### Fixed
+
+- [No external HDMI display (Firmware)](https://github.com/dasharo/dasharo-issues/issues/1098)
+- [Logo out of proportion](https://github.com/Dasharo/dasharo-issues/issues/1238)
+- [External audio devices don't work in Windows](https://github.com/Dasharo/dasharo-issues/issues/1583)
+- [When battery is low, USB-PD is constantly charging then discharging](https://github.com/Dasharo/dasharo-issues/issues/1660)
+- [Touchpad not working in Windows installer](https://github.com/Dasharo/dasharo-issues/issues/1657)
+- [Low graphics performance](https://github.com/Dasharo/dasharo-issues/issues/1243)
+- [Fusing process fails](https://github.com/Dasharo/dasharo-issues/issues/1622)
+- [USB-PD charger overdraw](https://github.com/Dasharo/dasharo-issues/issues/1599)
+- [SMMSTORE writes are unreliable if SMM_BWP is enabled](https://github.com/Dasharo/dasharo-issues/issues/1664)
+- [DBX update via fwupd fails](https://github.com/Dasharo/dasharo-issues/issues/1641)
+- [USB keyboard through docking station not working before OS boots](https://github.com/Dasharo/dasharo-issues/issues/1662)
+- [Windows installer claims it doesn't meet the requirements](https://github.com/Dasharo/dasharo-issues/issues/1658)
+- [Cannot enable memory integrity kern isolation in Windows Security](https://github.com/Dasharo/dasharo-issues/issues/1674)
+
+### Known issues
+
+- [Previous power state restoration doesn't work](https://github.com/Dasharo/dasharo-issues/issues/931)
+- [Artifacts in video playback in some players using HW acceleration](https://github.com/Dasharo/dasharo-issues/issues/948)
+- [Only native resolution listed for internal panel](https://github.com/Dasharo/dasharo-issues/issues/949)
+- [Early DMA protection cannot be applied to NovaCustom MTL](https://github.com/Dasharo/dasharo-issues/issues/985)
+- [Spurious USB 3 disconnects with Sonnet Echo 11 Thunderbolt 4 dock](https://github.com/Dasharo/dasharo-issues/issues/1081)
+- [GRUB installation fails sometimes](https://github.com/Dasharo/dasharo-issues/issues/1594)
+- [Capsule Updates require ME to be manually disabled](https://github.com/Dasharo/dasharo-issues/issues/1302)
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
+- [Microphone mute Fn key doesn't work in Windows](https://github.com/Dasharo/dasharo-issues/issues/1006)
+- [48GB SODIMMs get hot during MemTest86+](https://github.com/Dasharo/dasharo-issues/issues/1125)
+
+### Binaries
+
+[novacustom_v54x_mtl_igpu_ec_v1.0.1.rom][novacustom_v54x_mtl_igpu_ec_v1.0.1.rom_file]{.md-button}
+[sha256][novacustom_v54x_mtl_igpu_ec_v1.0.1.rom_hash]{.md-button}
+[sha256.sig][novacustom_v54x_mtl_igpu_ec_v1.0.1.rom_sig]{.md-button}
+
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap][novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap_file]{.md-button}
+[sha256][novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap_hash]{.md-button}
+[sha256.sig][novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap_sig]{.md-button}
+
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom][novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom_file]{.md-button}
+[sha256][novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom_hash]{.md-button}
+[sha256.sig][novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 25.03 revision 6de027d1](https://github.com/Dasharo/coreboot/tree/6de027d1)
+- [Dasharo EDKII fork based on edk2-stable202502 revision 917172ee](https://github.com/Dasharo/edk2/tree/917172ee)
+- [Dasharo iPXE fork based on 2025.03 revision 6c7068fc](https://github.com/Dasharo/ipxe/tree/6c7068fc)
+    + [License](https://github.com/Dasharo/ipxe/blob/6c7068fc/COPYING.GPLv2)
+- [vboot based on 3d37d2aafe revision f1f70f46](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/LICENSE)
+- [Intel Management Engine version v18.0.10.2285](https://github.com/Dasharo/dasharo-blobs/blob/8dce7604/novacustom/v5x0tu/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package for Meteor Lake-H version 2024/04/30 v4122_12](https://github.com/Dasharo/dasharo-blobs/tree/8dce7604/novacustom/v5x0tu/MeteorLakeFspBinPkg)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/8dce7604/novacustom/v5x0tu/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel microcode version MTL C0 0x00000025 0x25 19/03/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20251111/intel-ucode/06-aa-04)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20251111/license)
+
+[novacustom_v54x_mtl_igpu_ec_v1.0.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_ec_v1.0.1.rom
+[novacustom_v54x_mtl_igpu_ec_v1.0.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_ec_v1.0.1.rom.sha256
+[novacustom_v54x_mtl_igpu_ec_v1.0.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_ec_v1.0.1.rom.sha256.sig
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap.sha256
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cap.sha256.sig
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom.sha256
+[novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.rom.sha256.sig
+
 ## v1.0.0 - 2025-09-18
 
 Test results for this release can be found
