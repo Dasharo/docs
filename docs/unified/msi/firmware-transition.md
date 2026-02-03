@@ -30,8 +30,7 @@ flashrom -p internal -w <heads_fw_file>
 
     ME has to be disabled and descriptor unlocked to flash full file. MSI
     firmware began to ship the platforms with ME and flash descriptor regions
-    read-only. Unlocking the descriptor is possible using Firmware Update Mode
-    on Dasharo v0.9.1.
+    read-only.
 
 ## Transition from Dasharo Heads back to UEFI
 
