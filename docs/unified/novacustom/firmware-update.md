@@ -65,13 +65,13 @@ firmware version is currently installed on your device.
 
         ### Firmware Update Mode
 
-        Firmware Update Mode is available starting with the following versions:
+        Firmware Update Mode is available on the following versions:
 
-        | Generation | Version |
-        | ---------- | ------- |
-        | 11th       | 1.5.0   |
-        | 12th       | 1.7.0   |
-        | 14th       | Any     |
+        | Generation |    Version    |
+        | ---------- | ------------- |
+        | 11th       | > 1.5.0       |
+        | 12th       | > 1.7.0       |
+        | 14th       | 0.9.0 - 0.9.1 |
 
         To update using Firmware Update Mode, follow the
         [generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
