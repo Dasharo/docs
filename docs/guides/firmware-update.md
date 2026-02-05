@@ -11,6 +11,43 @@ This document is a guide for updating firmware on your Dasharo-powered device.
     [the compatibility table](../guides/capsule-update.md#supported-devices)
     there.
 
+## fwupd / LVFS
+
+Some platforms support updates via fwupd / LVFS starting with the following
+firmware versions:
+
+|   Vendor   | Generation | Version |
+| ---------- | ---------- | ------- |
+| NovaCustom | 11th       | 1.6.0   |
+| NovaCustom | 12th       | 1.8.0   |
+| NovaCustom | 14th       | 1.0.0   |
+
+!!! note
+
+    Capsule updates are only available when Intel ME is HAP-Disabled (on unfused
+    platforms), and the AC adapter is connected to the laptop.
+
+    See [this Knowledge Base article](../../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
+    for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
+    for more context.
+
+To update your firmware, run the following commands:
+
+```bash
+$ sudo fwupdtool refresh
+$ sudo fwupdtool update
+```
+
+or use any other fwupd front-end of your choice, like GNOME Firmware Update.
+Then, reboot your machine to apply the update.
+
+!!! warning
+    Powering off instead of rebooting as instructed by fwupd will result in
+    aborting the update.
+
+If you see any errors during the update, check the [Troubleshooting](../../guides/capsule-update.md#troubleshooting)
+section of the Capsule Update guide.
+
 ## Firmware Update Mode
 
 Newer Dasharo releases support Firmware Update Mode, which performs updates
