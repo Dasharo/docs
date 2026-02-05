@@ -39,8 +39,8 @@ firmware version is currently installed on your device.
 
         !!! note
 
-            Capsule updates are only available when Intel ME is HAP-Disabled and the
-            AC adapter is connected to the laptop
+            Capsule updates are only available when Intel ME is HAP-Disabled
+            (on unfused platforms) and the AC adapter is connected to the laptop.
 
             See [this Knowledge Base article](../../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
             for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
@@ -65,13 +65,13 @@ firmware version is currently installed on your device.
 
         ### Firmware Update Mode
 
-        Firmware Update Mode is available starting with the following versions:
+        Firmware Update Mode is available on the following versions:
 
-        | Generation | Version |
-        | ---------- | ------- |
-        | 11th       | 1.5.0   |
-        | 12th       | 1.7.0   |
-        | 14th       | Any     |
+        | Generation |    Version    |                         Note                         |
+        | ---------- | ------------- | ---------------------------------------------------- |
+        | 11th       | > 1.5.0       |                                                      |
+        | 12th       | > 1.7.0       |                                                      |
+        | 14th       | 0.9.0 - 0.9.1 | On newer versions, please use fwupd directly instead |
 
         To update using Firmware Update Mode, follow the
         [generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
