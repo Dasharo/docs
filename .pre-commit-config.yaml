@@ -38,7 +38,7 @@ repos:
     rev: v2.3.0
     hooks:
       - id: codespell
-        exclude: '^.*.(webp|jpeg|jpg|png|pdf|svg)$'
+        exclude: '^.*\.(webp|jpeg|jpg|png|pdf|svg)$'
 
   - repo: https://github.com/3mdeb/hooks
     rev: v0.1.5
@@ -52,12 +52,12 @@ repos:
         name: Check double slashes in external URLs
         entry: https?:\/\/[^\s]*(?<!http:)((?<!https:)\/\/).*
         language: pygrep
-        exclude: '^.*.(webp|jpeg|jpg|png|pdf|svg)$'
+        exclude: '^.*\.(webp|jpeg|jpg|png|pdf|svg)$'
       - id: double_slashes_url_markdown
         name: Check double slashes in markdown URLs
         entry: (\:\s|\()[^\s]*(?<!http:)((?<!https:)\/\/)
         language: pygrep
-        exclude: '^.*.(webp|jpeg|jpg|png|pdf|svg)$'
+        exclude: '^.*\.(webp|jpeg|jpg|png|pdf|svg)$'
       - id: internal_links
         name: Check internal markdown links (http://192.168.x.x or http://10.x.x.x)
         entry: \]\(https?:\/\/(192\.168\.[0-9]+\.[0-9]+|10\.[0-9]+\.[0-9]+\.[0-9]+)[^)]*\)
