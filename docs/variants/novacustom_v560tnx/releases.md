@@ -9,6 +9,16 @@ For details about our release process please read
 {{ subscribe_form("afc2dba2-664f-4b85-9fea-70df53400f1f",
 "Subscribe to NovaCustom V56xTNx 14th Gen Dasharo Release Newsletter") }}
 
+!!! note
+    `btg_prod` binaries are signed with production Intel Boot Guard keys,
+    and are safe to install on platforms with Boot Guard disabled as well as
+    those that have Boot Guard enabled, and both on fused and unfused platforms.
+
+    Flashing these binaries enables Boot Guard but does not perform platform
+    fusing, which means that the Boot Guard key configuration is mutable as long
+    as the platform is not fused. Check the [TrustRoot documentation](../../unified/novacustom/features.md#dasharo-trustroot)
+    for more information.
+
 ## v1.0.0 - 2026-01-29
 
 Test results for this release can be found
