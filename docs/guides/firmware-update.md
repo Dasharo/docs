@@ -61,6 +61,23 @@ Here are known issues, grouped by the platform vendor.
 
 ### Generic
 
+#### Firmware doesn't support capsule update in FUM
+
+This issue can happen if DTS was booted via [FUM](#firmware-update-mode) on
+Dasharo firmware version that does not support capsule updates while in FUM.
+It can only occur when in Firmware Update Mode and only if capsules are
+available as this is default way of updating or fusing your firmware.
+
+??? note
+
+    You can read more about this issue at
+    <https://github.com/Dasharo/dasharo-issues/issues/1759>
+
+??? success "Solution"
+
+    Boot DTS without Firmware Update Mode. To do that you can follow
+    [DTS documentation](../../dasharo-tools-suite/documentation/running).
+
 #### Failed to queue capsule update
 
 The most likely reason for this error is enabled ME. If FD region is unlocked,
