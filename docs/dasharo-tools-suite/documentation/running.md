@@ -18,10 +18,15 @@ This section describes how to boot DTS using iPXE.
 Below are the requirements that must be met to run DTS over a network on the
 platform:
 
-* Dasharo device with DTS functionality integrated,
+* platform must be running Dasharo UEFI firmware,
 * wired network connection,
-* [Secure Boot disabled](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* If device if flashed with Dasharo and support following functionality
+* [Secure Boot
+  disabled](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
+* [Network Boot
+  enabled](../../dasharo-menu-docs/dasharo-system-features.md#networking-options),
+* if firmware supports following
+  [Dasharo Security
+  Options](../../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
     + disabled BIOS lock feature,
     + disabled SMM BIOS write protection feature.
 
@@ -96,7 +101,7 @@ platform:
   section.
 * Wired network connection,
 * [Secure Boot disabled](../../dasharo-menu-docs/device-manager.md#secure-boot-configuration),
-* If device if flashed with Dasharo and support following functionality
+* If device is flashed with Dasharo and support following functionality
     + disabled BIOS lock feature,
     + disabled SMM BIOS write protection feature.
 
