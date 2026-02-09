@@ -463,6 +463,7 @@ nav:
       - 'Verifying signatures': guides/signature-verification.md
       - 'Verifying reproducible builds': guides/reproducible-build-verification.md
       - 'Boot logo replacement': guides/logo-customization.md
+      - 'Top Swap Redundancy': guides/redundancy.md
       - 'Lab Assembly':
           - 'ASRock SPC741D8-2L2T/BCM': guides/lab-assembly/asrock_spc741d8.md
           - 'Gigabyte MZ33-AR1': guides/lab-assembly/gigabyte_mz33_ar1.md
