@@ -495,9 +495,9 @@ To perform the fusing procedure:
    TrustRoot.
 3. Boot Dasharo Tools Suite and choose the option `7) Fuse platform`.
    ![DTS Choosing the option to fuse the device](../images/dts-fusing-1.png)
-    1. If you are not using the newest Dasharo version available, you will be
-    prompted to update Dasharo first. Proceed with [Firmware Update](#firmware-update)
-   and try again.
+    1. If you have older firmware which doesn't support fusing yet, you will be
+        prompted to update your firmware first. Proceed with
+        [Firmware Update](#firmware-update) and try again.
 4. You will be prompted to confirm that you want to fuse the device. Select `y`
    to continue or `n` to cancel.
 5. From now on the rest of the procedure will look like a normal firmware update.
