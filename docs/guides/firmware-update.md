@@ -27,7 +27,7 @@ firmware versions:
     Capsule updates are only available when Intel ME is HAP-Disabled (on unfused
     platforms), and the AC adapter is connected to the laptop.
 
-    See [this Knowledge Base article](../../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
+    See [this Knowledge Base article](../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
     for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
     for more context.
 
@@ -112,8 +112,19 @@ available as this is default way of updating or fusing your firmware.
 
 ??? success "Solution"
 
-    Boot DTS without Firmware Update Mode. To do that you can follow
+    * Boot DTS without Firmware Update Mode. To do that you can follow
     [DTS documentation](../../dasharo-tools-suite/documentation/running).
+    * When in Firmware Update Mode make sure to use
+        [dts.ipxe](https://boot.dasharo.com/dts/dts.ipxe) script when booting
+        DTS. You can do that by:
+
+        * Letting FUM boot it by default
+        * Choosing `Dasharo Tools Suite` in `Dasharo Network Boot Menu`
+
+            ![](images/dasharo-network-boot-menu.png)
+
+        * Running it manually from iPXE shell by following [Launching
+            DTS](../../dasharo-tools-suite/documentation/running/#launching-dts)
 
 #### Failed to queue capsule update
 
