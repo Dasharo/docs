@@ -467,6 +467,7 @@ nav:
           - 'ASRock SPC741D8-2L2T/BCM': guides/lab-assembly/asrock_spc741d8.md
           - 'Gigabyte MZ33-AR1': guides/lab-assembly/gigabyte_mz33_ar1.md
           - 'MSI PRO Z690-A and Z790-P': guides/lab-assembly/msi-zx90.md
+          - 'MSI PRO B850': guides/lab-assembly/msi-b850.md
           - 'MinnowBoard Turbot': guides/lab-assembly/minnowboard-turbot.md
           - 'NovaCustom': guides/lab-assembly/novacustom.md
           - 'Odroid H4': guides/lab-assembly/odroid-assembly-guide.md
