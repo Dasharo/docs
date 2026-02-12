@@ -19,6 +19,20 @@ designed to configure Dasharo binary images.
     ./dcu logo <dasharo_image> -l <logo_file>
     ```
 
+    Changing logo on a fused platform requires adding more arguments to flashrom commands:
+
+    - read only bios region
+
+    ```bash
+    flashrom -p internal --ifd -i bios -r <dasharo_image>
+    ```
+
+    - write only bios region + add noverify
+
+    ```bash
+    flashrom -p internal --ifd -i bios -w <dasharo_image> --noverify-all
+    ```
+
 === "Dasharo (coreboot + Heads)"
 
     Logo customization is not supported as of now. To replace the logo,
