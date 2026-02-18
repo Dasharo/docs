@@ -23,7 +23,7 @@ firmware versions:
 | NovaCustom | 14th       | 1.0.0   |
 
 For instructions on how to perform updates using FWUPD and how to use the tool
-in general, refer to the [Dasharo fwupd documentation](../kb/fwupd.md#updating-the-firmware)
+in general, refer to the [Dasharo fwupd documentation](../kb/fwupd.md#updating-the-firmware).
 
 ## Firmware Update Mode
 

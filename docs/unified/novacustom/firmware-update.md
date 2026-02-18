@@ -29,6 +29,9 @@ firmware version is currently installed on your device.
 
         ### Capsule Update via fwupd
 
+        Using fwupd is the recommended and simplest way to perform Dasharo
+        firmware updates on supported devices.
+
         fwupd and Capsule Update are available starting with the following versions:
 
         | Generation | Version |
@@ -37,33 +40,7 @@ firmware version is currently installed on your device.
         | 12th       | 1.8.0   |
         | 14th       | 1.0.0   |
 
-        !!! note
-
-            Capsule updates are only available when Intel ME is HAP-Disabled
-            (on unfused platforms) and the AC adapter is connected to the laptop.
-
-            Additionally, Capsule Update is currently not supported on Windows.
-
-            See [this Knowledge Base article](../../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
-            for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
-            for more context.
-
-        To update your firmware, run the following commands:
-
-        ```bash
-        $ sudo fwupdtool refresh
-        $ sudo fwupdtool update
-        ```
-
-        or use any other fwupd front-end of your choice, like GNOME Firmware Update.
-        Then, reboot your machine to apply the update.
-
-        !!! warning
-            Powering off instead of rebooting as instructed by fwupd will result in
-            aborting the update.
-
-        If you see any errors during the update, check the [Troubleshooting](../../guides/capsule-update.md#troubleshooting)
-        section of the Capsule Update guide.
+        For instructions on how to use fwupd and update the firmware, follow the [Dasharo fwupd documentation](../../kb/fwupd.md#update-instructions).
 
         ### Firmware Update Mode
 
@@ -76,7 +53,7 @@ firmware version is currently installed on your device.
         | 14th       | 0.9.0 - 0.9.1 | On newer versions, please use fwupd directly instead |
 
         To update using Firmware Update Mode, follow the
-        [generic Firmware Update documentation](../../guides/firmware-update.md#firmware-update-mode).
+        [Generic Firmware Update Documentation](../../guides/firmware-update.md#firmware-update-mode).
 
         Check out our [YouTube video](https://www.youtube.com/watch?v=muWjhrQ7bQk)
         for a demonstration of Firmware Update Mode.

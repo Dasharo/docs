@@ -18,21 +18,28 @@ for distributing and managing the firmware binaries to the users.
 
 ## Firmware Update Prerequisites
 
-## Intel ME
+### Intel ME
 
-On devices with an Intel Management Engine that are not fused using the
-[Dasharo Trust Root](https://docs.dasharo.com/glossary/#dasharo-trustroot)
-technology, it needs to be switched to the `Disabled (HAP)` state to perform the
-update. Fwupd is unable to disable Intel ME automatically. This needs to be done
-manually before the intent for updating the system. Afterwards, Intel ME needs
-to be manually turned back on if desired.
-Check [Intel Management Engine Options](../dasharo-menu-docs/dasharo-system-features/#intel-management-engine-options)
+This only applies to devices with an Intel Management Engine, that are not fused
+using the [Dasharo Trust Root](https://docs.dasharo.com/glossary/#dasharo-trustroot)
+technology, and use Dasharo versions released before 2026. Check your release
+notes to verify if the step is required.
+
+Intel Management Engine needs to be disabled manually to successfully perform an
+fwupd update. Failing to do so won't do any harm to the system, but the update
+will be rejected.
+
+Intel ME needs to be switched to the `Disabled (HAP)` state using the Setup Menu
+to perform the update. It cannot be done automatically by fwupd. Afterwards,
+Intel ME needs to be manually turned back on if desired.
+
+Check [Intel Management Engine Options](../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
 documentation for details on how to set ME mode to `Disabled (HAP)`.
-See [this Knowledge Base article](../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
+See this [Intel ME/CSME FAQ page](../osf-trivia-list/me.md)
 for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
 for more context.
 
-## Charger connected
+### Charger connected
 
 On battery powered devices (laptops) the AC charger must be connected
 before running fwupdmgr in order to start the update. It must be connected
@@ -50,7 +57,8 @@ simple button press.
 |--|
 |Firmware update available in Gnome Software|
 
-Before starting the update, make sure to fill all the [prerequisites](#preparation--prerequisites).
+Before starting the update, check whether the [prerequisites](#firmware-update-prerequisites)
+are met.
 
 ### CLI
 
@@ -63,9 +71,9 @@ Most Operating Systems come with fwupd preinstalled and use
 it to perform firmware updates.
 
 === "Windows"
-    fwupdmgr is not supported on Windows. If that is the only
-    Operating System you with to use, other update methods need to
-    be considered.
+    Dasharo Capsule Updates using fwupdmgr are not currently supported on
+    Windows. If that is the only Operating System you with to use, other update
+    methods need to be considered.
 
 === "Ubuntu"
     Check if fwupdmgr is installed. Executing the command should
@@ -95,8 +103,8 @@ it to perform firmware updates.
     If not, install it using:
 
     ```bash
-    $ apt update
-    $ apt install fwupdmgr
+    $ sudo apt update
+    $ sudo apt install fwupdmgr
     ```
 
 === "Fedora"
@@ -126,7 +134,7 @@ it to perform firmware updates.
     If not, install it using:
 
     ```bash
-    $ dnf install fwupdmgr
+    $ sudo dnf install fwupdmgr
     ```
 
 === "QubesOS"
@@ -139,7 +147,7 @@ it to perform firmware updates.
     Executing the command should print the help screen:
 
     ```bash
-    $ qubes-fwupdmgr
+    $ sudo qubes-fwupdmgr
     ```
 
     <details><summary>Example output</summary>
@@ -176,10 +184,10 @@ it to perform firmware updates.
 ### Checking the current firmware version
 
 === "Ubuntu, Fedora"
-    To check the currently used firmware version, run the following commands
+    To check the currently used firmware version, run the following command
 
     ```bash
-    $ sudo fwupdmgr get-devices
+    $ fwupdmgr get-devices
     ```
 
     Look for `System Firmware` or `UEFI Device Firmware` in the output.
@@ -203,13 +211,13 @@ it to perform firmware updates.
     </details>
 
 === "QubesOS"
-    To check for available updates for your device, run the following commands
+    To check for available updates for your device, run the following command
 
     ```bash
     $ sudo qubes-fwupdmgr get-devices
     ```
 
-    Look for `UEFI Device Firmware` or `System Firmware` in the output
+    Look for `System Firmware` or `UEFI Device Firmware` in the output.
 
     <details><summary>Example of get-devices output</summary>
         ```
@@ -241,34 +249,12 @@ it to perform firmware updates.
         As a fallback on Dasharo firmware, use `dmidecode` to verify the firmware version.
         Run:
         ```bash
-        sudo dmidecode | less
+        $ sudo dmidecode -t bios | grep Version:
         ```
-        And search for `Version:`.
-        <details><summary>Example:</summary>
-            ```
-            # dmidecode 3.6
-            Getting SMBIOS data from sysfs.
-            SMBIOS 3.0.0 present.
-            Table at 0x48D23000.
-
-            Handle 0x0000, DMI type 0, 26 bytes
-            BIOS Information
-                    Vendor: 3mdeb
-                    Version: Dasharo (coreboot+UEFI) v1.0.0
-                    Release Date: 09/16/2025
-                    ROM Size: 32 MB
-                    Characteristics:
-                            PCI is supported
-                            PC Card (PCMCIA) is supported
-                            BIOS is upgradeable
-                            Selectable boot is supported
-                            ACPI is supported
-                            Targeted content distribution is supported
-                            UEFI is supported
-                    BIOS Revision: 1.0
-                    Firmware Revision: 0.0
-            ```
-        </details>
+        Example output:
+        ```txt
+        Version: Dasharo (coreboot+UEFI) v1.0.0
+        ```
     </details>
 
 ### Checking for updates
@@ -277,8 +263,8 @@ it to perform firmware updates.
     To check for available updates for your device, run the following commands
 
     ```bash
-    $ sudo fwupdmgr refresh
-    $ sudo fwupdmgr get-updates
+    $ fwupdmgr refresh
+    $ fwupdmgr get-updates
     ```
 
     <details><summary>Example of a possible update from v1.0.0 to v1.0.1:</summary>
@@ -338,8 +324,8 @@ it to perform firmware updates.
     To check for available updates for your device, run the following commands
 
     ```bash
-    $ sudo qubes-fwupdmgr refresh
-    $ sudo qubes-fwupdmgr get-updates
+    $ qubes-fwupdmgr refresh
+    $ qubes-fwupdmgr get-updates
     ```
     TODO
 
@@ -347,7 +333,8 @@ it to perform firmware updates.
 
 ### Preparation / Prerequisites
 
-Before starting the update, make sure to fill all the [prerequisites](#preparation--prerequisites).
+Before starting the update, check whether the [prerequisites](#firmware-update-prerequisites)
+are met.
 
 #### Update instructions
 
@@ -355,7 +342,7 @@ Before starting the update, make sure to fill all the [prerequisites](#preparati
     To update your firmware, run the following commands:
 
     ```bash
-    $ sudo fwupdmgr refresh
+    $ fwupdmgr refresh
     $ sudo fwupdmgr update
     ```
 
@@ -406,6 +393,10 @@ Before starting the update, make sure to fill all the [prerequisites](#preparati
     ```
     TODO
 
+!!! warning
+    After the command finishes fwupd will instruct to reboot the device.
+    Powering off instead of rebooting will result in the update being aborted.
+
 #### Troubleshooting
 
 ##### No output from fwupdmgr update
@@ -441,31 +432,31 @@ and look for `Problems` header and red text under device entries.
 If you see any errors during the update, check the [Troubleshooting](../guides/capsule-update.md#troubleshooting)
 section of the Capsule Update guide.
 
-##### fwupdmgr ass for AC despite it being connected
+##### fwupdmgr asks for AC despite it being connected
 
-The check for AC charger being connected in linux fails when the firmware
-implements battery a [charging threshold](http://127.0.0.1:8000/unified/novacustom/features/#charge-thresholds)
-that disconnects the charger once the battery is full. If the battery is full
-and not charging at the moment, the check in fwupdmgr will think the charger
-is disconnected.
+The check for AC charger being connected in Linux fails when the firmware
+configures a [charging threshold](http://127.0.0.1:8000/unified/novacustom/features/#charge-thresholds)
+for the battery that disconnects the charger once the battery reaches the threshold.
+If the battery is considered full and not charging at the moment, the check in
+fwupdmgr will think the charger is disconnected.
 
 There are two options to work this issue around:
 
 - Deplete battery charge a couple percent, so that it
     doesn't stop charging for the duration of fwupdmgr running the checks.
-- Disable battery charge thresholds in the firm
+- Disable battery charging thresholds in the firmware.
 
 ### Verifying the firmware update result
 
 === "Ubuntu, Fedora"
-    To check the result of your firmware update, run the following commands:
+    To check the result of your firmware update, run the following command:
 
     ```bash
-    $ sudo fwupdmgr get-results
+    $ fwupdmgr get-results
     ```
 
     You will be prompted to select a device, for Dasharo firmware updates, select
-    `System Firmware` or `UEFI Device Firmware`
+    `System Firmware` or `UEFI Device Firmware`.
 
     <details><summary>Example of `fwupdmgr get-results` output after a successful update</summary>
         ```
@@ -499,8 +490,7 @@ There are two options to work this issue around:
 
     This output means the firmware version has changed to the expected one.
     To manually verify this has really happened, refer to
-    [Checking The Current Firmware Version](#checking-the-current-firmware-version)
-    .
+    [Checking The Current Firmware Version](#checking-the-current-firmware-version).
 
 === "QubesOS"
     To update your firmware, run the following commands:
@@ -554,7 +544,7 @@ progress bar, a message like this will appear on top of the screen:
 `[FIRMWARE WARNING] Capsule Updates are only supported while Intel ME is in HAP mode!`
 
 Make sure the Intel ME mode in Setup menu is `Disabled (HAP)`. Refer to the
-[prerequisites section](#preparation--prerequisites) and try again.
+[prerequisites section](#firmware-update-prerequisites) and try again.
 
 ## References
 
