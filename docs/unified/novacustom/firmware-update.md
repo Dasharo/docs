@@ -82,7 +82,8 @@ firmware version is currently installed on your device.
         ### Updating older versions
 
         1. First, ensure that [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#custom-mode-and-key-management)
-           has been disabled.
+           has been disabled and that [Network Boot](../../dasharo-menu-docs/dasharo-system-features.md#networking-options)
+           has been enabled.
 
         2. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
            We recommend the network boot option.
