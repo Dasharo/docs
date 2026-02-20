@@ -54,6 +54,13 @@
 
             > Replace `X.Y.Z` with a valid version
 
+            !!! warning
+
+                Releases predating ns5x_adl_v1.7.0, i.e. earlier than October 2023,
+                might not build in custom shells on OS'es other than Fedora. In such case,
+                it is recommended to run `bash` before `build.sh`.
+                See [issue #407](https://github.com/Dasharo/dasharo-issues/issues/407).
+
             === "V540TU"
                 ```bash
                 git checkout novacustom_v540tu_vX.Y.Z

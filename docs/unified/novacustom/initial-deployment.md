@@ -167,6 +167,14 @@ On your host computer, install flashrom from sources:
         6. Install Dasharo BIOS, replacing `[path]` with the path to the firmware
             image you want to flash, e.g. `novacustom_ns5x_adl_full_v1.4.0.rom`
 
+            !!! warning
+
+                Please use the `_full` binaries, **if they're available** for a given
+                release. Full binaries contain all necessary blobs for platform operation.
+                Flashing the entire chip with the base binaries for such releases will
+                result in a brick.
+                See [issue #1525](https://github.com/Dasharo/dasharo-issues/issues/1525).
+
             ```bash
             flashrom -p ch341a_spi -w [path]
             ```
