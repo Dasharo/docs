@@ -42,6 +42,8 @@ firmware version is currently installed on your device.
             Capsule updates are only available when Intel ME is HAP-Disabled
             (on unfused platforms) and the AC adapter is connected to the laptop.
 
+            Additionally, Capsule Update is currently not supported on Windows.
+
             See [this Knowledge Base article](../../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
             for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
             for more context.
@@ -82,7 +84,8 @@ firmware version is currently installed on your device.
         ### Updating older versions
 
         1. First, ensure that [UEFI Secure Boot](../../dasharo-menu-docs/device-manager.md#custom-mode-and-key-management)
-           has been disabled.
+           has been disabled and that [Network Boot](../../dasharo-menu-docs/dasharo-system-features.md#networking-options)
+           has been enabled.
 
         2. Boot to the [Dasharo Tools Suite](../../dasharo-tools-suite/documentation/running.md#bootable-over-a-network).
            We recommend the network boot option.
