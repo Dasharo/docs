@@ -15,8 +15,10 @@ create the testing stand.
 * MSI PRO B850 platform
 * [RTE v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
 * Sonoff S20 type E
-* 7x standard female-female connection wire 2.54 mm raster
+* 4x standard female-female connection wire 2.54 mm raster
 * 7x standard female-female connection wire 2.54/2.00 mm raster
+* 1x DB9 null modem cable
+* 1x IDC 9-pin to DB9 adapter
 
 ## Connections
 
@@ -31,20 +33,14 @@ The following sections describe how to enable all of the following features:
 
 ### Serial connection
 
-1. Attach the jumpers in the RTE J16 header to enable header J18:
+1. Attach the jumpers in the RTE J16 header to enable header RS232:
 
     | Jumper position (TX)      | Jumper position (RX)            |
     |:-------------------------:|:-------------------------------:|
-    | EXT + COM                 | EXT + COM                       |
+    | RS232 + COM               | RS232 + COM                     |
 
-1. Connect the RTE J18 header to the platform JBD1 header as described in the
-    table:
-
-    | RTE             | MSI PRO B850            |
-    |:---------------:|:-----------------------:|
-    | J18 pin 1 (GND) | JCOM1 pin 5             |
-    | J18 pin 2 (RX)  | JCOM1 pin 3             |
-    | J18 pin 3 (TX)  | JCOM1 pin 2             |
+1. Connect the RTE rs232 header to the platform JBD1 header using IDC to DB9 adapter
+    and DB9 null modem cable.
 
 ### Power supply controlling
 
@@ -128,29 +124,6 @@ The following sections describe how to use all of the enabled features:
 The method of setting and using serial connection is described in the
 [Serial connection guide](../../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 
-### Power supply controlling
-
-Power supply controlling (in this case: controlling the state of Sonoff)
-should be performed based on the `sonoff.sh` script implemented in `meta-rte`
-(OS image dedicated to the RTE platform).
-
-> Note, that before using the above-mentioned script, it should be modified and
-`SONOFF_IP` parameter should be set in accordance with obtained Sonoff IP address.
-
-To perform basic power operations use the below-described commands:
-
-1. Turn on the power supply:
-
-    ```bash
-    ./sonoff on
-    ```
-
-1. Turn off the power supply:
-
-    ```bash
-    ./sonoff on
-    ```
-
 ### Basic power operations
 
 Basic power operations should be performed based on the `rte_ctrl` script
@@ -182,9 +155,9 @@ should be powered up: both Sonoff and the power supply must be turned on.
 
 The external flashing procedure should be performed based on the scripts
 implemented on the RTE platform. To perform the flashing operation reproduce,
-the below-described steps:
+the steps described below:
 
-> Note: the `flash.sh` script, used in this chapter, is available only in 0.8.1
+> Note: the `flash.sh` script, used in this chapter, is available only in 0.8.0
 > or newer RTE OS releases, check [meta-rte](https://github.com/3mdeb/meta-rte)
 > for more inf..
 
