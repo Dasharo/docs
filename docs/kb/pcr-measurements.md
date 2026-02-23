@@ -150,8 +150,25 @@ and data they use and also show up in the event log.  You can find more details
 in the documentation of respective tools (e.g., for [GRUB2][grub] or
 [shim][shim]).
 
+Due to this fact the failing to reconstruct some of the PCRs does not
+mean a firmware issue.
+
+The table below shows the PCR Usage according to
+[TCG PC Client Platform Firmware Profile Specification][tcg-pcclient-pfps].
+The firmware mainly uses the PCRs in range 0-7, and the range 8-15 is reserved
+for the OS:
+![PCR usage table](images/pcr_usage.png)
+
+It's worth keeping that in mind when analysing the reconstructed PCRs,
+as especially the PCR 10 extended by
+[Integrity Management Architecture](https://ima-doc.readthedocs.io/en/latest/index.html)
+implementation in Linux
+[had a history of failing to be reconstructed from the TPM logs][pcr_10_issue].
+
 [grub]: https://www.gnu.org/software/grub/manual/grub/html_node/Measured-Boot.html
 [shim]: https://github.com/rhboot/shim/blob/master/README.tpm
+[tcg-pcclient-pfps]: https://trustedcomputinggroup.org/wp-content/uploads/TCG_PCClient_PFP_r1p05_v23_pub.pdf
+[pcr_10_issue]: https://github.com/Dasharo/dasharo-issues/issues/1709#issuecomment-3791854544
 
 ## Caveats
 
