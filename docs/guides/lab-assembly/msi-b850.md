@@ -154,7 +154,7 @@ should be powered up: both Sonoff and the power supply must be turned on.
 ### External flashing
 
 The external flashing procedure should be performed based on the scripts
-implemented on the RTE platform. To perform the flashing operation reproduce,
+implemented on the RTE platform. To perform the flashing operation, reproduce
 the steps described below:
 
 > Note: the `flash.sh` script, used in this chapter, is available only in 0.8.0
