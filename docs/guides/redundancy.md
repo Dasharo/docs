@@ -25,7 +25,7 @@ to map them - effectively allowing to swap the two chunks.
 * **A/B Slot Setup**: The top of the firmware is divided into two slots:
 `BOOTBLOCK` and `TOPSWAP`, which contain bootblocks "chosen" by the Top
 Swap mechanism. They in turn choose `COREBOOT` and `COREBOOT_TS` regions
-correspondingly to load consecutive stages from.
+respectively to load consecutive stages from.
 
 * **Runtime CMOS Control**: The CMOS option `attempt_slot_b` controls the Top
 Swap state, also enabling users to manually select the active slot by setting
@@ -50,4 +50,4 @@ reboot, the system will boot from the newly updated slot.
 ## Further reading
 
 For a more detailed documentation of the implementation, please read the
-[upstream coreboot documentation](WIP.com).
+[upstream coreboot documentation](https://doc.coreboot.org/soc/intel/redundancy.html).
