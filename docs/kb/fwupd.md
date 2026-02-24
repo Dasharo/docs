@@ -395,7 +395,18 @@ are met.
 
 !!! warning
     After the command finishes fwupd will instruct to reboot the device.
-    Powering off instead of rebooting will result in the update being aborted.
+    The fwupd UEFI application that performs the update will be booted
+    automatically after a reboot, unless there's user interaction
+    Entering the Setup Menu, Boot Manager, or interfering in any other way will
+    abort the update.
+    Allow the device to reboot freely and do not press any buttons until the
+    update finishes.
+
+    Devices that have an Embedded Controller
+    [might stay powered off after the update][dts-ec-update] and need to be
+    powered on.
+
+[dts-ec-update]: https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update
 
 #### Troubleshooting
 
