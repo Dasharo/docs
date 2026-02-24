@@ -471,7 +471,7 @@ There are two options to work this issue around:
 
     <details><summary>Example of `fwupdmgr get-results` output after a successful update</summary>
         ```
-        $ sudo fwupdmgr get-results
+        $ fwupdmgr get-results
         0.	Cancel
         1.	597c1adb5fa5096f1949ae7535b85dc6ddd34f80 ((null))
         2.	4bde70ba4e39b28f9eab1628f9dd6e6244c03027 (Core™ Ultra 7 155H)
@@ -520,7 +520,7 @@ to `Disabled (HAP)` mode prior to running the update.
 
 <details><summary>Example of fwupdmgr get-results output when that happens</summary>
 ```
-$ sudo fwupdmgr get-results
+$ fwupdmgr get-results
 0. Cancel
 1. 597c1adb5fa5096f1949ae7535b85dc6ddd34f80 ((null))
 2. 4bde70ba4e39b28f9eab1628f9dd6e6244c03027 (Core™ Ultra 7 155H)
