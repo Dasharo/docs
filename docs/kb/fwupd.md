@@ -470,6 +470,65 @@ and look for `Problems` header and red text under device entries.
     the status of the last correctly initiated Update. Without an AC connected,
     the update did not even start keeping the previous value of `Update State`.
 </details>
+
+To verify if the problem really occurs, you can run the command in verbose mode:
+
+```bash
+$ sudo fwupdmgr update -v
+```
+
+The output might suggest what's the issue, example:
+<!-- markdownlint-disable MD013 -->
+<details><summary>Example of fwupdmgr update -v</summary>
+    ```txt
+    $ sudo fwupdmgr update -v
+    (pkttyagent:4378): GLib-GIO-DEBUG: 11:44:32.011: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus < 2.73.3)
+    (fwupdmgr:4376): GLib-GIO-DEBUG: 11:44:32.019: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.019: watch_fast: "/system/proxy/" (establishing: 0, active: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: watch_fast: "/system/proxy/http/" (establishing: 0, active: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: watch_fast: "/system/proxy/https/" (establishing: 0, active: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: watch_fast: "/system/proxy/ftp/" (establishing: 0, active: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: watch_fast: "/system/proxy/socks/" (establishing: 0, active: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: unwatch_fast: "/system/proxy/" (active: 0, establishing: 1)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: unwatch_fast: "/system/proxy/http/" (active: 0, establishing: 1)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: unwatch_fast: "/system/proxy/https/" (active: 0, establishing: 1)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: unwatch_fast: "/system/proxy/ftp/" (active: 0, establishing: 1)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.020: unwatch_fast: "/system/proxy/socks/" (active: 0, establishing: 1)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.021: watch_established: "/system/proxy/" (establishing: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.021: watch_established: "/system/proxy/http/" (establishing: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.021: watch_established: "/system/proxy/https/" (establishing: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.021: watch_established: "/system/proxy/ftp/" (establishing: 0)
+    (fwupdmgr:4376): dconf-DEBUG: 11:44:32.021: watch_established: "/system/proxy/socks/" (establishing: 0)
+    (fwupdmgr:4376): GLib-GIO-DEBUG: 11:44:32.021: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ‘gio-vfs’
+    (fwupdmgr:4376): pxbackend-DEBUG: 11:44:32.021: px_config_sysconfig_set_config_file: Could not read file /etc/sysconfig/proxy
+    (fwupdmgr:4376): pxbackend-DEBUG: 11:44:32.021: Active config plugins:
+    (fwupdmgr:4376): pxbackend-DEBUG: 11:44:32.021:  - config-env
+    (fwupdmgr:4376): pxbackend-DEBUG: 11:44:32.021:  - config-kde
+    (fwupdmgr:4376): pxbackend-DEBUG: 11:44:32.021:  - config-gnome
+    (fwupdmgr:4376): pxbackend-DEBUG: 11:44:32.021:  - config-sysconfig
+    (fwupdmgr:4376): GLib-GIO-DEBUG: 11:44:32.023: Failed to initialize portal (GNetworkMonitorPortal) for gio-network-monitor: Not using portals
+    (fwupdmgr:4376): GLib-GIO-DEBUG: 11:44:32.024: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus < 2.73.3)
+    (fwupdmgr:4376): GLib-GIO-DEBUG: 11:44:32.026: _g_io_module_get_default: Found default implementation networkmanager (GNetworkMonitorNM) for ‘gio-network-monitor’
+    (fwupdmgr:4376): pxbackend-DEBUG: 11:44:32.026: px_manager_constructed: Up and running
+    (fwupdmgr:4376): GLib-GIO-DEBUG: 11:44:32.026: _g_io_module_get_default: Found default implementation libproxy (GLibproxyResolver) for ‘gio-proxy-resolver’
+    (fwupdmgr:4376): Fwupd-DEBUG: 11:44:32.028: Emitting ::status-changed() [idle]
+    Devices with no available firmware updates:
+    • SSDPR-PX600-250-80
+    • UEFI dbx
+    (fwupdmgr:4376): FuMain-DEBUG: 11:44:32.043: ignoring 204ce525ed4dbc468e789eb029f3627dd13d6cf4: System Firmware is not currently updatable: Device requires AC power to be connected
+    ```
+</details>
+<!-- markdownlint-enable MD013 -->
+
+On the end of the verbose output we can see the line
+
+```txt
+(fwupdmgr:4376): FuMain-DEBUG: 11:44:32.043: ignoring 204ce525ed4dbc468e789eb029f3627dd13d6cf4: System Firmware is not currently updatable: Device requires AC power to be connected
+```
+
+Which tells us that the update was rejected, because there's no AC adapter
+connected.
+
 If you see any errors during the update, check the [Troubleshooting](../guides/capsule-update.md#troubleshooting)
 section of the Capsule Update guide.
 
