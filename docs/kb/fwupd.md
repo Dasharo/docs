@@ -138,6 +138,7 @@ it to perform firmware updates.
     ```
 
 === "QubesOS"
+
     To use fwupdmgr on QubesOS the program needs to be run on
     the `dom0` qube and it requires internet connection.
     For that reason a fwupdmgr wrapper for QubesOS exists,
@@ -327,11 +328,15 @@ it to perform firmware updates.
     $ qubes-fwupdmgr refresh
     $ qubes-fwupdmgr get-updates
     ```
-    TODO
+
+    !!! warning
+        As of QubesOS R4.3 on 02-2026 qubes-fwupdmgr might not work correctly
+        and the updates on LVFS may not be found using this tool. Refer to
+        [troubleshooting](#no-updates-available-qubesos).
 
 ### Updating the firmware
 
-### Preparation / Prerequisites
+#### Preparation / Prerequisites
 
 Before starting the update, check whether the [prerequisites](#firmware-update-prerequisites)
 are met.
@@ -391,7 +396,11 @@ are met.
     $ sudo qubes-fwupdmgr refresh
     $ sudo qubes-fwupdmgr update
     ```
-    TODO
+
+    !!! warning
+        As of QubesOS R4.3 on 02-2026 qubes-fwupdmgr might not work correctly
+        and the updates on LVFS may not be found using this tool. Refer to
+        [troubleshooting](#no-updates-available-qubesos).
 
 !!! warning
     After the command finishes fwupd will instruct to reboot the device.
@@ -408,7 +417,28 @@ are met.
 
 [dts-ec-update]: https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update
 
-#### Troubleshooting
+#### Local Update
+
+If using LVFS is undesirable or not possible, a fwupd firmware update can be
+performed using a locally available cabinet (.cab) file downloaded from any
+source. We will use `novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cab` downloaded from
+[dl.3mdeb.com][cabinet_file] as an example.
+[cabinet_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/uefi/v1.0.1/
+
+=== "Ubuntu, Fedora, QubesOS"
+    To update your firmware using a locally available cabinet file, follow the
+    steps:
+
+    1. Allow updates from untrusted sources
+        ```bash
+        $ printf '[fwupd]\\nOnlyTrusted=false\\n' | sudo tee /etc/fwupd/fwupd.conf
+        ```
+    2. Perform a local install
+        ```bash
+        $ sudo fwupdmgr local-install novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cab
+        ```
+
+#### Update troubleshooting
 
 ##### No output from fwupdmgr update
 
@@ -457,7 +487,20 @@ There are two options to work this issue around:
     doesn't stop charging for the duration of fwupdmgr running the checks.
 - Disable battery charging thresholds in the firmware.
 
-### Verifying the firmware update result
+##### No updates available (QubesOS)
+
+As of QubesOS R4.3 on 02-2026
+[qubes-fwupdmgr does not work correctly][qubes-fwupdmgr-issue]
+and the updates on LVFS might not be found using this tool.
+In such case, there are still a few options to perform the update.
+Either use a different update method according to the `Firmware Update`
+page for your device in the `Supported hardware` tab, or perform
+a [Local Update](#local-update) using a fwupd cabinet (.cab) file downloaded
+manually from fwupd.org.
+
+[qubes-fwupdmgr-issue]: https://github.com/fwupd/fwupd/issues/9933
+
+#### Verifying the firmware update result
 
 === "Ubuntu, Fedora"
     To check the result of your firmware update, run the following command:
@@ -511,7 +554,7 @@ There are two options to work this issue around:
     $ sudo qubes-fwupdmgr update
     ```
 
-#### Troubleshooting
+#### Update result troubleshooting
 
 ##### Failed to run update on reboot: expected ... and got
 
@@ -552,7 +595,9 @@ Device Flags:         • Internal device
 When that happens after rebooting instead of a Dasharo themed update
 progress bar, a message like this will appear on top of the screen:
 
-`[FIRMWARE WARNING] Capsule Updates are only supported while Intel ME is in HAP mode!`
+```txt
+[FIRMWARE WARNING] Capsule Updates are only supported while Intel ME is in HAP mode!
+```
 
 Make sure the Intel ME mode in Setup menu is `Disabled (HAP)`. Refer to the
 [prerequisites section](#firmware-update-prerequisites) and try again.
