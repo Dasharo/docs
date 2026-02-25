@@ -651,7 +651,7 @@ Device Flags:         • Internal device
 ```
 </details>
 
-When that happens after rebooting, instead of a Dasharo-themed update
+When that happens after rebooting, instead of am update
 progress bar, a message like this will appear on top of the screen:
 
 ```txt
