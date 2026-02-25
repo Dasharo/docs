@@ -50,6 +50,7 @@ reboot, the system will boot from the newly updated slot.
 ## Further reading
 
 For a more detailed documentation of the implementation, please read the
-[upstream coreboot documentation](https://doc.coreboot.org/soc/intel/redundancy.html)
-(not yet available as of February 24, can also be viewed
-[here](https://github.com/coreboot/coreboot/blob/main/Documentation/soc/intel/redundancy.md))
+[upstream coreboot documentation](https://doc.coreboot.org/soc/intel)
+("_doc.coreboot.org/soc/intel/redundancy.html"_, not yet available as of
+February 25th 2026, can also be viewed
+[here](https://github.com/coreboot/coreboot/blob/main/Documentation/soc/intel/redundancy.md)).
