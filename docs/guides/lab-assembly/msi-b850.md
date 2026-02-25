@@ -40,7 +40,7 @@ The following sections describe how to enable all of the following features:
     | RS232 + COM               | RS232 + COM                     |
 
 1. Connect the RTE RS232 DB9 connector to the platform JCOM1 header using
-    IDC to DB9 adapter.
+    IDC to DB9 adapter and DB9 null modem cable.
 
 ### Power supply controlling
 
