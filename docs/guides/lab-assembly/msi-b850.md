@@ -33,14 +33,14 @@ The following sections describe how to enable all of the following features:
 
 ### Serial connection
 
-1. Attach the jumpers in the RTE J16 header to enable header RS232:
+1. Attach the jumpers in the RTE J16 header to enable RS232 DB9 connector:
 
     | Jumper position (TX)      | Jumper position (RX)            |
     |:-------------------------:|:-------------------------------:|
     | RS232 + COM               | RS232 + COM                     |
 
-1. Connect the RTE rs232 header to the platform JBD1 header using IDC to DB9 adapter
-    and DB9 null modem cable.
+1. Connect the RTE RS232 DB9 connector to the platform JCOM1 header using
+    IDC to DB9 adapter.
 
 ### Power supply controlling
 
