@@ -12,16 +12,16 @@ for distributing and managing the firmware binaries to the users.
 
 !!! note
      `fwupd` depends on
-     [Capsule Updates](https://docs.dasharo.com/guides/capsule-update/)
+     [Capsule Updates](../guides/capsule-update.md)
      support. Refer to the "Firmware update" section of your device
-     documentation (like [this one](https://docs.dasharo.com/unified/novacustom/firmware-update/)).
+     documentation (like [this one](../unified/novacustom/firmware-update.md)).
 
 ## Firmware Update Prerequisites
 
 ### Intel ME
 
 This only applies to devices with an Intel Management Engine, that are not fused
-using the [Dasharo Trust Root](https://docs.dasharo.com/glossary/#dasharo-trustroot)
+using the [Dasharo Trust Root](../glossary.md#dasharo-trustroot)
 technology, and use Dasharo versions released before 2026. Check your release
 notes to verify if the step is required.
 
@@ -415,7 +415,7 @@ are met.
     [might stay powered off after the update][dts-ec-update] and need to be
     powered on.
 
-[dts-ec-update]: https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update
+[dts-ec-update]: ../dasharo-tools-suite/documentation/features.md#ec-update
 
 #### Local Update
 
