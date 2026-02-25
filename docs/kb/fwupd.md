@@ -431,7 +431,7 @@ source. We will use `novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cab` downloaded fr
 
     1. Allow updates from untrusted sources
         ```bash
-        $ printf '[fwupd]\\nOnlyTrusted=false\\n' | sudo tee /etc/fwupd/fwupd.conf
+        $ printf '[fwupd]\nOnlyTrusted=false\n' | sudo tee /etc/fwupd/fwupd.conf
         ```
     2. Perform a local install
         ```bash
