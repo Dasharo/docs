@@ -4,8 +4,8 @@
 
 [fwupd][fwupd website] is an open-source project, that
 is widely used to make firmware updates almost as seamless and simple
-as updating system packages. Most hardware vendors support it
-and Linux distributions.
+as updating system packages. Most hardware vendors and Linux
+distributions support it.
 
 The `fwupd` daemon relies on the Linux Vendor Firmware Service (LVFS)
 for distributing and managing the firmware binaries to the users.
