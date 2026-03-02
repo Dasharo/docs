@@ -577,6 +577,10 @@ nav:
               - 'Specification': transparent-validation/sd-wire/specification.md
               - 'Usage': transparent-validation/sd-wire/usage-validation.md
               - 'FAQ': transparent-validation/sd-wire/faq.md
+          - 'USB Sniffer':
+              - 'Usage and Preperation': transparent-validation/usb-sniffer/usage-validation.md
+          - 'USB Armory':
+              - 'Usage and Preperation': transparent-validation/usb-armory/usage-validation.md
           - 'Sonoff':
               - 'Sonoff preparation': transparent-validation/sonoff/sonoff_preparation.md
           - 'PiKVM':
