@@ -727,6 +727,78 @@ This produces `gepcap` directory with a relevant part of EDK.  The directory
 also includes a shell wrapper `GenerateCapsule` along with the test keys in
 `keys` subdirectory.
 
+### Creating a cabinet
+
+A fwupd cabinet (`.cab`) file suitable for submission to LVFS can be created
+from a capsule by running the following from coreboot's root directory:
+
+```bash
+./capsule.sh create_cabinet coreboot.cap
+```
+
+The command requires `fwupdtool` to be available in `PATH` and must be run
+from coreboot's root directory where a `.config` file is present (the same
+requirement as for `make`).  The input file must be a valid FMP capsule.
+
+The output cabinet file is named after the input capsule with `.cap` replaced
+by `.cab` (e.g. `msi-ms7d25-ddr4-v1.1.9.cap` becomes
+`msi-ms7d25-ddr4-v1.1.9.cab`).
+
+The cabinet contains:
+
+- the capsule file (stored as `firmware.bin`)
+- an auto-generated `firmware.metainfo.xml` derived from the coreboot
+  configuration (`CONFIG_MAINBOARD_SMBIOS_PRODUCT_NAME`,
+  `CONFIG_MAINBOARD_VERSION`, `CONFIG_LOCALVERSION`,
+  `CONFIG_DRIVERS_EFI_MAIN_FW_GUID`, and vendor name)
+
+### Uploading to LVFS
+
+A cabinet can be uploaded to LVFS using:
+
+```bash
+./capsule.sh upload_lvfs [options] [cabinet-file]
+```
+
+If `cabinet-file` is not specified, the command looks for a single `.cab` file
+in the current directory and fails if there are none or more than one.
+
+The command requires `curl` to be available in `PATH`.
+
+Credentials (email and API token) are resolved in the following order of
+increasing priority:
+
+1. A credentials file (default: `~/.config/dasharo-credentials/lvfs`)
+   containing `LVFS_EMAIL`, `LVFS_TOKEN`, and optionally `LVFS_URL` shell
+   variable assignments
+2. Environment variables `LVFS_EMAIL`, `LVFS_TOKEN`, and `LVFS_URL`
+3. Command-line flags `-e`, `-t`, and `-u`
+
+Available options:
+
+- `-c file` — path to credentials file (default:
+  `~/.config/dasharo-credentials/lvfs`)
+- `-u url` — LVFS base URL (default: `$LVFS_URL` or `https://fwupd.org`)
+- `-e email` — LVFS account email (default: `$LVFS_EMAIL`)
+- `-t token` — LVFS API token (default: `$LVFS_TOKEN`)
+
+Example using a credentials file:
+
+```bash
+# ~/.config/dasharo-credentials/lvfs:
+# LVFS_EMAIL=user@example.com
+# LVFS_TOKEN=secret-token
+
+./capsule.sh upload_lvfs msi-ms7d25-ddr4-v1.1.9.cab
+```
+
+Example passing credentials on the command line:
+
+```bash
+./capsule.sh upload_lvfs -e user@example.com -t secret-token \
+                         msi-ms7d25-ddr4-v1.1.9.cab
+```
+
 ## Alternatives
 
 It's also possible to generate capsules via EDK's build system by configuring it
