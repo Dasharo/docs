@@ -50,13 +50,15 @@ mentioned, it means that it doesn't support this update method.
 
 ## What's preserved by an update
 
-| Type         | Notes                                                   |
-| ----         | -----                                                   |
-| SMMSTORE     | holds UEFI Variables such as [settings] or [boot order] |
-| ROMHOLE      | only on MSI                                             |
-| SMBIOS       | unique data like serial number or UUID                  |
-| boot logo    | [set by the user](logo-customization.md)                |
-| GbE          | unique Gigabit Ethernet configuration (MAC address)     |
+| Type                           | Notes                                                    |
+| ----                           | -----                                                    |
+| SMMSTORE                       | holds UEFI Variables such as [settings] or [boot order]  |
+| ROMHOLE                        | only on MSI                                              |
+| SMBIOS                         | unique data like serial number or UUID                   |
+| boot logo                      | [set by the user](logo-customization.md)                 |
+| GbE                            | unique Gigabit Ethernet configuration (MAC address)      |
+| RW_MRC_CACHE (V2-only)         | RAM training cache                                       |
+| RECOVERY_MRC_CACHE (V2-only)   | recovery RAM training cache, a/a for recovery boot path  |
 
 Preservation is done as a best effort. However some firmware changes are
 expected (e.g., current custom logo can be too large for the new firmware),
@@ -146,10 +148,9 @@ thus a failure to move data in some cases won't necessarily abort an update.
 
     !!! note
 
-        Many releases for Protectli devices have a textual progress bar. If
-        you happen to be doing the update over serial console with no monitor
-        plugged in, V2 releases will also fall back to the textual mode over
-        serial.
+        Some releases use a textual progress bar by design. If you happen to
+        be doing the update over serial console with no monitor plugged in, V2
+        releases will also fall back to the textual mode over serial.
 
     !!! warning
 
