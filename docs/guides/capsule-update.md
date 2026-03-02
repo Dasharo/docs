@@ -125,9 +125,11 @@ On failure:
 A failed update is followed by a recovery attempt, which is not guaranteed to
 succeed, but should leave the system bootable in most cases.
 
-After either a successful or failed update, the machine will reboot
-automatically.  After that, if everything succeeded, you should have an updated
-firmware with data migrated from the previous version.
+After a successful update, the machine will reboot automatically.  After that,
+if everything succeeded, you should have an updated firmware with data migrated
+from the previous version. In the case of a failure, you will be prompted
+to press `Enter` to attempt reboot. After such reboot successfully restored
+previous firmware might boot, but it can't be guaranteed.
 
 [bmm]: ../dasharo-menu-docs/overview.md#boot-manager-menu
 [otb]: ../dasharo-menu-docs/overview.md#one-time-boot
