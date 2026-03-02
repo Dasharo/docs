@@ -135,7 +135,14 @@ thus a failure to move data in some cases won't necessarily abort an update.
         ![Initiating a capsule update](../images/uefi-shell-capsule-app-posting.png)
 
 7. An ongoing firmware update with graphical progress bar looks like this:
-   ![Ongoing capsule update](../images/uefi-capsule-update.png)
+
+    === "Newer versions (V2)"
+
+        ![Ongoing capsule update](../images/uefi-capsule-update.png)
+
+    === "Older versions"
+
+        ![Ongoing capsule update](../images/uefi-capsule-update-v1.png)
 
     !!! note
 
