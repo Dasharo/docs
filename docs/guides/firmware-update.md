@@ -16,11 +16,13 @@ This document is a guide for updating firmware on your Dasharo-powered device.
 Some platforms support updates via fwupd / LVFS starting with the following
 firmware versions:
 
-|   Vendor   | Generation | Version |
-| ---------- | ---------- | ------- |
-| NovaCustom | 11th       | 1.6.0   |
-| NovaCustom | 12th       | 1.8.0   |
-| NovaCustom | 14th       | 1.0.0   |
+|   Vendor   | Model                     | Version |
+| ---------- | --------------------------| ------- |
+| NovaCustom | NV4x, NS5x, NS7x 11th Gen | 1.6.0   |
+| NovaCustom | NV4x, NS5x, NS7x 12th Gen | 1.8.0   |
+| NovaCustom | V54x, V56x                | 1.0.0   |
+| MSI        | PRO Z690-A                | 1.1.7   |
+| MSI        | PRO Z790-P                | 0.9.5   |
 
 For instructions on how to perform updates using FWUPD and how to use the tool
 in general, refer to the [Dasharo fwupd documentation](../kb/fwupd.md#updating-the-firmware).
