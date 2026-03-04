@@ -22,31 +22,8 @@ firmware versions:
 | NovaCustom | 12th       | 1.8.0   |
 | NovaCustom | 14th       | 1.0.0   |
 
-!!! note
-
-    Capsule updates are only available when Intel ME is HAP-Disabled (on unfused
-    platforms), and the AC adapter is connected to the laptop.
-
-    See [this Knowledge Base article](../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
-    for information about disabling the ME, or [Issue #1302](https://github.com/Dasharo/dasharo-issues/issues/1302)
-    for more context.
-
-To update your firmware, run the following commands:
-
-```bash
-$ sudo fwupdtool refresh
-$ sudo fwupdtool update
-```
-
-or use any other fwupd front-end of your choice, like GNOME Firmware Update.
-Then, reboot your machine to apply the update.
-
-!!! warning
-    Powering off instead of rebooting as instructed by fwupd will result in
-    aborting the update.
-
-If you see any errors during the update, check the [Troubleshooting](../guides/capsule-update.md#troubleshooting)
-section of the Capsule Update guide.
+For instructions on how to perform updates using FWUPD and how to use the tool
+in general, refer to the [Dasharo fwupd documentation](../kb/fwupd.md#updating-the-firmware).
 
 ## Firmware Update Mode
 
