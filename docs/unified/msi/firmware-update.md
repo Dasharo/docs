@@ -23,6 +23,16 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
     1. v0.9.0 for Z790-P and v1.1.2 for Z690-A introduced support for Firmware
        Update Mode
 
+    ### Capsule Update via fwupd
+
+    Using fwupd is the recommended and simplest way to perform Dasharo
+    firmware updates on supported devices.
+
+    To check which firmware versions support fwupd updates, check
+    [Firmware Update Guide](../../guides/firmware-update.md#fwupd--lvfs).
+
+    For instructions on how to use fwupd and update the firmware, follow the [Dasharo fwupd documentation](../../kb/fwupd.md#update-instructions).
+
     ### Firmware Update Mode
 
     If the currently installed Dasharo version supports Firmware Update Mode, follow

@@ -27,20 +27,16 @@ firmware version is currently installed on your device.
         > binaries themselves by following the steps under the [Manual
         > update](#manual-update) section.
 
-        ### Capsule Update via fwupd
+         ### Capsule Update via fwupd
 
         Using fwupd is the recommended and simplest way to perform Dasharo
         firmware updates on supported devices.
 
-        fwupd and Capsule Update are available starting with the following versions:
+        To check which firmware versions support fwupd updates, check
+        [Firmware Update Guide](../../guides/firmware-update.md#fwupd--lvfs).
 
-        | Generation | Version |
-        | ---------- | ------- |
-        | 11th       | 1.6.0   |
-        | 12th       | 1.8.0   |
-        | 14th       | 1.0.0   |
-
-        For instructions on how to use fwupd and update the firmware, follow the [Dasharo fwupd documentation](../../kb/fwupd.md#update-instructions).
+        For instructions on how to use fwupd and update the firmware, follow the
+        [Dasharo fwupd documentation](../../kb/fwupd.md#update-instructions).
 
         ### Firmware Update Mode
 
