@@ -35,6 +35,21 @@ coreboot port on the PC Engines apu2 family of mainboards.
     | **TPM**                        | PC Engines TPM.4A module                         |
     | **Power Supply**               | 12V power supply                                 |
     | **Power Control**              | RTE v1.0.0                                       |
+=== "apu3"
+
+    | Component                      | Description                                      |
+    |--------------------------------|--------------------------------------------------|
+    | **CPU**                        | AMD GX-412TC SOC                                 |
+    |                                | Passive cooling to enclosure                     |
+    | **RAM**                        | 2 GB DDR3 non-ECC (soldered)                     |
+    | **SSD**                        | Apacer ST170 32GB
+    | **Flash memory**               | Winbond W25Q64JV                                 |
+    | **USB pendrives**              | SanDisk 3.2Gen1
+    | **Wireless card**              | Qualcomm Atheros AR928X
+    | **Network**                    | 3x i211AT Gigabit Ethernet                       |
+    | **TPM**                        | -                                                |
+    | **Power Supply**               | 12V power supply                                 |
+    | **Power Control**              | RTE v1.0.0                                       |
 === "apu4"
 
     | Component                      | Description                                      |
