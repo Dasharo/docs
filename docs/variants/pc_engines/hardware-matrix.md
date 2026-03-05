@@ -35,7 +35,7 @@ coreboot port on the PC Engines apu2 family of mainboards.
     | **TPM**                        | PC Engines TPM.4A module                         |
     | **Power Supply**               | 12V power supply                                 |
     | **Power Control**              | RTE v1.0.0                                       |
-=== "apu3"
+=== "apu3C"
 
     | Component                      | Description                                      |
     |--------------------------------|--------------------------------------------------|
