@@ -263,6 +263,7 @@ nav:
           - 'Recovery': variants/gigabyte_mz33-ar1/recovery.md
           - 'Hardware Configuration Matrix': variants/gigabyte_mz33-ar1/hardware-matrix.md
           - 'Test matrix': variants/gigabyte_mz33-ar1/test-matrix.md
+          - 'Press': variants/gigabyte_mz33-ar1/press.md
       - 'Hardkernel ODROID H4':
           - 'Overview': variants/hardkernel_odroid_h4/overview.md
           - 'Releases': variants/hardkernel_odroid_h4/releases.md
