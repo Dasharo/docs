@@ -55,15 +55,6 @@ documentation._
     - [MSI Z790-P PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI)
     - [MSI Z790-P PRO WIFI Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ790-P_PROZ790-PWIFI.pdf)
 
-## Press releases
-
-* [PC Gamer](https://www.pcgamer.com/coreboot-on-intel-motherboard/)
-* [Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Coreboot-Start-ADL-MSI-Dasharo)
-* [Tom's Hardware](https://www.tomshardware.com/news/msi-z690-a-pro-wifi-coreboot)
-* [Root.cz](https://www.root.cz/zpravicky/port-coreboot-na-intel-alder-lake-z690-od-msi/)
-* [GN24](https://game-news24.com/2022/04/13/open-source-coreboot-bios-is-ported-to-msi-z690-a-motherboard/)
-* [ITBusiness](https://web.archive.org/web/20220413125518/https://itbusiness.com.ua/gamezone/113401-u-etogo-neubivaemogo-bios-s-otkrytym-ishodnym-kodom-ogromnyj-potenczial.html)
-
 ## Buy the MSI PRO Z690-A DDR4 with Dasharo firmware
 
 The Full PC Build with MSI PRO Z690-A/Z790-P DDR4/DDR5 motherboard with Dasharo
