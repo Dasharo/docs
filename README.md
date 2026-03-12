@@ -160,6 +160,7 @@ no more sections:
         - 'Security and Privacy (optional)': variants/<vendor_model>/security-and-privacy.md
         - 'Other manuals (optional)': variants/<vendor_model>/other-manuals.md
         - 'FAQ (optional)': variants/<vendor_model>/faq.md
+        - 'Press and Media Coverage': variants/<vendor_model>/press-and-media-coverage.md
 ```
 
 - `Vendor` can have multiple meanings, but it can be a vendor who sells the
