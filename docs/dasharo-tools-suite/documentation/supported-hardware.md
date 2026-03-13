@@ -26,3 +26,10 @@ proprietary vendor EC firmware to the Dasharo EC firmware on this hardware:
 * [NovaCustom V540TNx](../../variants/novacustom_v540tnx/releases.md)
 * [NovaCustom V560TU](../../variants/novacustom_v560tu/releases.md)
 * [NovaCustom V560TNx](../../variants/novacustom_v560tnx/releases.md)
+
+## Generated mapping matrix (experimental)
+
+The table below is generated from DTS metadata mapping in `dts-configs` (see `Dasharo/dts-configs#39`) to reduce manual drift in this page.
+
+--8<-- "dasharo-tools-suite/documentation/_generated-supported-hardware-matrix.md"
+
