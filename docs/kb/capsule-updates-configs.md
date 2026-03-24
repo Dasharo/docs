@@ -3,7 +3,7 @@
 Dasharo releases that support Capsule Updates need to include a number of
 additional options in their coreboot configuration file. The options correspond
 to the required payload data described in
-[Capsule Updates Details - Required Payload Data](./edk2-capsule-updates.md#capsule-information)
+[Capsule Updates Details - Required Payload Data](./edk2-capsule-updates.md#capsule-information).
 
 ## Configuration
 
@@ -13,9 +13,9 @@ in the `configs/` directory under the name of
 
 The options that need to be set are:
 
-- `CONFIG_DRIVERS_EFI_MAIN_FW_GUID`
-- `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`
-- `CONFIG_DRIVERS_EFI_MAIN_FW_LSV`
+- [`CONFIG_DRIVERS_EFI_MAIN_FW_GUID`](#config_drivers_efi_main_fw_guid)
+- [`CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`](#config_drivers_efi_main_fw_version)
+- [`CONFIG_DRIVERS_EFI_MAIN_FW_LSV`](#config_drivers_efi_main_fw_lsv)
 
 ### CONFIG_DRIVERS_EFI_MAIN_FW_GUID
 
@@ -40,8 +40,8 @@ Capsule Update.
 The `CONFIG_LOCALVERSION` option is a string representation of the version
 which does not allow reliable comparisons.
 The value consists of 8 hexadecimal digits which are grouped
-into four groups of two numbers. Each group represents a single component of
-a Dasharo version according to the [Versioning](https://docs.dasharo.com/dev-proc/versioning/)
+into four groups of two digits. Each group represents a single component of
+a Dasharo version according to the [Versioning](../dev-proc/versioning.md).
 `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION` has to be updated on new releases to always
 match the `CONFIG_LOCALVERSION`.
 
@@ -67,7 +67,7 @@ The value represents the lowest firmware version, that will be accepted as
 a valid one. A Capsule Update to a version lower than
 `CONFIG_DRIVERS_EFI_MAIN_FW_LSV` will not be allowed. May be used to forbid
 downgrading to versions with severe security vulnerabilities. The value
-takes the same format as `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`
+takes the same format as `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`.
 
 Examples:
 
