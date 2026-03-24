@@ -294,7 +294,8 @@ of the output JSON file.
 
 The verification of capsules is performed via
 [public-key cryptography][wiki-pkc] (the concepts most relevant here: key pairs
-and subkeys).  This security mechanism uses a root key pair like this:
+and subkeys).  This security mechanism is meant to use a root key pair like
+this:
 
 1. Public key is embedded into the firmware at build time (one key is enough,
    but using multiple keys is also supported).
@@ -302,7 +303,22 @@ and subkeys).  This security mechanism uses a root key pair like this:
 3. Signature embedded in the capsule is validated against the public key when
    an update is attempted to decide whether to perform the update.
 
-Things to note:
+The above describes a situation when `FmpDxe` is part of the firmware rather
+than a capsule.  The latter is more desirable in practice because it distributes
+update code in the capsule, thus permitting changes to the update process which
+were not anticipated at the time of the previous release.  Because `FmpDxe` is
+the entity responsible for capsule verification, moving it into the capsule
+removes the security guarantee unless it's enforced by other means.
+`SignedCapsulePkg` is one way of addressing this situation which it does by
+having a two-part driver: a smaller part lives in the firmware and another one
+goes into capsules.  However, `SignedCapsulePkg` comes with a lot of baggage
+and is hard to use when EDK is a payload for a multitude of different devices,
+which is why [sealed capsules] were implemented as a much simpler alternative.
+In short: an update capsule with `FmpDxe` is embedded as a payload of a capsule
+with no drivers, firmware checks signature on the outer capsule's payload and
+then processes the inner capsule in its place.
+
+More things to note:
 
 - public root key is well-known
 - private root key is stored in a safe place and nobody but the owner should
@@ -328,6 +344,7 @@ versions will be compatible with one another (unless `LowestSupportedVersion`
 interferes).
 
 [wiki-pkc]: https://en.wikipedia.org/wiki/Public-key_cryptography
+[sealed capsules]: https://github.com/tianocore/edk2/pull/12254
 
 ## Generating signing keys with OpenSSL
 
@@ -686,6 +703,18 @@ Output file name is generated based on coreboot options like
 
 - `emulation-qemu-q35-v0.2.0.cap`
 - `msi-ms7d25-ddr4-v1.1.9.cap`
+
+### Sealed capsules
+
+When `CONFIG_EDK2_CAPSULES_V2` is set but `CONFIG_EDK2_CAPSULES_V2_TRANSITION`
+isn't, `capsule.sh` produces a two-level capsule where the outer one is signed
+by the keys specified by the parameters and the inner one is signed with EDK's
+test keys.
+
+The inner capsule is signed because `FmpDxe` fails if there is no signature.
+The test keys are used because it doesn't matter what the keys are as long as
+the signature is valid and matches root key embedded into `FmpDxe` (not to be
+confused with the key embedded into the firmware itself).
 
 ### Generating test signing keys
 
