@@ -440,7 +440,7 @@ for these types of files in general, so don't read too much meaning into them.
 
 #### Prepare _root_ for EDK build system
 
-EDK gets _root_ certificate(s) in a PCD.  The PCD name differ and support one
+EDK gets _root_ certificate(s) in a PCD.  The PCD names differ and support one
 or many certificates, in this case it's
 `gFmpDevicePkgTokenSpaceGuid.PcdFmpDevicePkcs7CertBufferXdr` which expects one
 or more certificates in DER (binary) form combined via XDR (simple format where
