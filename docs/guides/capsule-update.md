@@ -29,6 +29,14 @@ mentioned, it means that it doesn't support this update method.
 | NovaCustom   | NUC BOX         | v0.9.0                   | —                           |
 | Protectli    | Vault VP66xx    | v0.9.3                   | —                           |
 
+!!! note
+
+    Enforcing capsule authentication in V2 made newer capsules incompatible
+    with the older ones.  The first release with V2 publishes capsules of the
+    older kind which can be used to upgrade from prior releases, but starting
+    with this release **older capsules are no longer accepted** to not
+    compromise capsule authentication enhancements.
+
 ## Prerequisites
 
 * _UEFI Shell_<br>
