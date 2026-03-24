@@ -33,8 +33,8 @@ on the user, resulting in higher probability of making a mistake.
 ### Embedded Flashing Code
 
 Firmware reads and writes system flash chip as part of its normal operation.
-Capsule update mechanism reuses very same code to switch to a different firmware
-image.
+Capsule update mechanism reuses the very same code to switch to a different
+firmware image.
 
 This way the means for firmware update are always there and require only minimal
 extra input to submit the capsule for an update.
@@ -53,7 +53,7 @@ require use of several firmware update tools in the right order.
 The metadata can even take into account compatibility requirements between
 firmware of different components.  For example, if you're trying to update a
 system firmware which requires EC version 1.2 but currently running EC firmware
-is of version 1.1, the update will no happen, likely avoiding bricking the
+is of version 1.1, the update will not happen, likely avoiding bricking the
 device.
 
 ### Convenience
