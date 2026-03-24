@@ -1,8 +1,8 @@
 # Capsule Update releases
 
 Dasharo releases that support Capsule Updates need to include a number of
-additional options in their coreboot configuration file. The options correspond
-to the required payload data described in
+additional options in their coreboot configuration file. The most important
+options directly correspond to the required payload data described in
 [Capsule Updates Details - Required Payload Data](./edk2-capsule-updates.md#capsule-information).
 
 ## Configuration
@@ -11,11 +11,17 @@ The coreboot configuration file can be found in the coreboot repository
 in the `configs/` directory under the name of
 `config.<coreboot_mainboard_vendor>_<coreboot_mainboard_model>`.
 
-The options that need to be set are:
+The options that must be set are:
 
 - [`CONFIG_DRIVERS_EFI_MAIN_FW_GUID`](#config_drivers_efi_main_fw_guid)
 - [`CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`](#config_drivers_efi_main_fw_version)
 - [`CONFIG_DRIVERS_EFI_MAIN_FW_LSV`](#config_drivers_efi_main_fw_lsv)
+
+The following settings may not be set (read their description to know under
+which conditions):
+
+- [`CONFIG_EDK2_CAPSULES_V2`](#config_edk2_capsules_v2)
+- [`CONFIG_EDK2_CAPSULES_V2_TRANSITION`](#config_edk2_capsules_v2_transition)
 
 ### CONFIG_DRIVERS_EFI_MAIN_FW_GUID
 
@@ -72,3 +78,33 @@ takes the same format as `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`.
 Examples:
 
 - Forbid changing the version to anything below release v0.1.0 - `CONFIG_DRIVERS_EFI_MAIN_FW_LSV="0x00010080"`
+
+### CONFIG_EDK2_CAPSULES_V2
+
+This boolean option enables more advanced features:
+
+- Enforcing authentication of capsule images before processing them.
+- Vendor's logo shown on the screen during an update, scaled proportionally.
+- Smoother progress bar increments that better reflect amount of work done/left.
+- Pop-up reporting success/failure of the firmware update with some diagnostic
+  information.
+- Best-effort recovery if the update has failed halfway.
+
+Some devices don't have this option set, but newer releases may transition to
+this version of capsules (see
+[`CONFIG_EDK2_CAPSULES_V2_TRANSITION`](#config_edk2_capsules_v2_transition)).
+Devices that have capsules enabled for the first time should preferably use
+this option from the start to avoid transitioning later.
+
+### CONFIG_EDK2_CAPSULES_V2_TRANSITION
+
+This boolean option marks a release as transitional from initial capsule
+implementation (v1) to a more advanced version (v2).  Due to authentication
+changes capsules can only be processed by an appropriate firmware (i.e.,
+v1-firmware and v1-capsule, v2-firmware and v2-capsule), which on its own makes
+upgrading to a v2-firmware via capsules impossible.  Enabling this option
+requests [`capsule.sh` script](./edk2-capsule-updates.md#capsulesh-script) to
+build v1-capsule for a v2-firmware thus permitting updates from v1-firmware.
+
+This option needs to be set only for a single public release, the first one that
+gets `CONFIG_EDK2_CAPSULES_V2` set after using v1-capsules in previous releases.
