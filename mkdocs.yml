@@ -263,6 +263,7 @@ nav:
           - 'Recovery': variants/gigabyte_mz33-ar1/recovery.md
           - 'Hardware Configuration Matrix': variants/gigabyte_mz33-ar1/hardware-matrix.md
           - 'Test matrix': variants/gigabyte_mz33-ar1/test-matrix.md
+          - 'Press and Media Coverage': variants/gigabyte_mz33-ar1/press-and-media-coverage.md
       - 'Hardkernel ODROID H4':
           - 'Overview': variants/hardkernel_odroid_h4/overview.md
           - 'Releases': variants/hardkernel_odroid_h4/releases.md
@@ -290,6 +291,7 @@ nav:
               - 'Hardware Configuration Matrix': variants/msi_z690/hardware-matrix.md
               - 'Test matrix': variants/msi_z690/test-matrix.md
               - 'Openness score': variants/msi_z690/openness_score.md
+              - 'Press and Media Coverage': variants/msi_z690/press-and-media-coverage.md
           - 'MSI PRO Z790-P':
               - 'Releases': variants/msi_z790/releases.md
               - 'Heads releases': variants/msi_z790/releases_heads.md
