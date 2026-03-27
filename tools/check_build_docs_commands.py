@@ -6,11 +6,8 @@ import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = [
-    ROOT / "docs" / "variants" / "overview.md",
-    ROOT / "docs" / "variants" / "building-manual.md",
-    ROOT / "docs" / "variants" / "building-uefi.md",
-]
+# Focus on build docs pages across variants
+DOCS = sorted((ROOT / "docs" / "variants").glob("**/building-manual.md"))
 BLOCK_RE = re.compile(r"```(?:bash|sh|shell)?\n(.*?)```", re.S)
 ALLOWED_PREFIXES = (
     "git ", "make", "cmake", "docker", "podman", "python", "python3", "pip", "pip3",
@@ -43,10 +40,11 @@ def main() -> int:
     failures = []
     warns = []
     tested = 0
+    if not DOCS:
+        print("[docs-check] no build-manual.md files found")
+        return 1
+
     for doc in DOCS:
-        if not doc.exists():
-            warns.append((str(doc), 0, "file missing; skipped"))
-            continue
         text = doc.read_text(encoding="utf-8", errors="ignore")
         for i, block in enumerate(extract_blocks(text), 1):
             tested += 1
@@ -61,6 +59,8 @@ def main() -> int:
                     continue
                 if not s.startswith(ALLOWED_PREFIXES):
                     warns.append((str(doc), i, f"line {ln}: uncommon prefix -> {s}"))
+
+    print(f"[docs-check] scanned files: {len(DOCS)}")
     print(f"[docs-check] tested blocks: {tested}")
     if warns:
         print("[docs-check] warnings:")
