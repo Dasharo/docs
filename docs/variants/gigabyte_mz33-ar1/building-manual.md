@@ -29,7 +29,7 @@ then follow the steps below:
 
     ```bash
     cd coreboot
-    git checkout gigabyte_mz33_ar1_<version>
+    git checkout gigabyte_mz33_ar1_VERSION_TAG
     ```
 
     For example
@@ -45,4 +45,4 @@ then follow the steps below:
     ```
 
     The resulting coreboot image will be placed in the coreboot directory as
-    `gigabyte_mz33_ar1_<version>.rom`.
+    `gigabyte_mz33_ar1_VERSION_TAG.rom`.
