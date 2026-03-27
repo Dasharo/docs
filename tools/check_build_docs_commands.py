@@ -21,6 +21,12 @@ def extract_blocks(text: str):
         if b:
             yield b
 
+
+def should_skip_block(block: str) -> bool:
+    b = block.lower()
+    markers = ["<version>", "<variant>", "(docker)", "<path>"]
+    return any(m in b for m in markers)
+
 def check_bash_syntax(block: str):
     with tempfile.NamedTemporaryFile("w", suffix=".sh", delete=True) as f:
         f.write(block + "\n")
@@ -48,6 +54,10 @@ def main() -> int:
         text = doc.read_text(encoding="utf-8", errors="ignore")
         for i, block in enumerate(extract_blocks(text), 1):
             tested += 1
+            if should_skip_block(block):
+                warns.append((str(doc), i, "placeholder/pseudocode block skipped"))
+                continue
+
             ok, err = check_bash_syntax(block)
             if not ok:
                 failures.append((str(doc), i, err))
