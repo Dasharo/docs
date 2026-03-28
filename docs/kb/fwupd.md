@@ -11,7 +11,7 @@ The `fwupd` daemon relies on the Linux Vendor Firmware Service (LVFS)
 for distributing and managing the firmware binaries to the users.
 
 !!! note
-     `fwupd` depends on
+     The use of `fwupd` for firmware updates depends on
      [Capsule Updates](../guides/capsule-update.md)
      support. Check that your device and its firmware are listed in the
      ["Supported devices" section](../guides/capsule-update.md#supported-devices)
@@ -21,7 +21,7 @@ for distributing and managing the firmware binaries to the users.
 
 ### Intel ME
 
-This only applies to devices with an Intel Management Engine that are not fused
+This only applies to devices with the Intel Management Engine that are not fused
 using the [Dasharo Trust Root](../glossary.md#dasharo-trustroot) technology and
 don't yet use Capsules V2.
 
@@ -29,9 +29,9 @@ Intel Management Engine needs to be disabled manually to successfully perform an
 fwupd update. Failing to do so won't do any harm to the system, but the update
 will be rejected.
 
-Intel ME needs to be switched to the `Disabled (HAP)` state using the Setup Menu
-to perform the update. It cannot be done automatically by fwupd. Afterwards,
-Intel ME needs to be manually turned back on if desired.
+Intel ME needs to be switched to the `Disabled (HAP)` state in the Setup Menu
+to perform the update. This step cannot be done automatically by fwupd.
+Afterwards, Intel ME needs to be manually turned back on if desired.
 
 Check [Intel Management Engine Options](../dasharo-menu-docs/dasharo-system-features.md#intel-management-engine-options)
 documentation for details on how to set ME mode to `Disabled (HAP)`.
@@ -42,7 +42,7 @@ for more context.
 ### Charger connected
 
 On battery-powered devices (laptops), the AC charger must be connected
-before running fwupdmgr to start the update. It must be connected
+before running `fwupdmgr` to start the update. It must be connected
 for the whole duration of the update, until the device boots back up normally.
 
 ## Usage
@@ -63,7 +63,7 @@ are met.
 ### CLI
 
 For more advanced users or in a more lightweight
-DEs/WMs `fwupdmgr` can be used in the terminal.
+DEs/WMs `fwupdmgr` command can be used in the terminal.
 
 #### Installation
 
@@ -71,13 +71,13 @@ Most Operating Systems come with fwupd preinstalled and use
 it to perform firmware updates.
 
 === "Windows"
-    Dasharo Capsule Updates using fwupdmgr are not currently supported on
+    Dasharo Capsule Updates using `fwupdmgr` are not currently supported on
     Windows. If that is the only Operating System you wish to use, other update
     methods need to be considered.
 
 === "Ubuntu"
-    Check if fwupdmgr is installed. Executing the command should
-    print the versions of all fwupdmgr components:
+    Check if `fwupdmgr` is installed. Executing the command should
+    print the versions of all `fwupdmgr` components:
 
     ```bash
     $ fwupdmgr --version
@@ -108,8 +108,8 @@ it to perform firmware updates.
     ```
 
 === "Fedora"
-    Check if fwupdmgr is installed. Executing the command should
-    print the versions of all fwupdmgr components:
+    Check if `fwupdmgr` is installed. Executing the command should
+    print the versions of all `fwupdmgr` components:
 
     ```bash
     $ fwupdmgr --version
@@ -139,12 +139,12 @@ it to perform firmware updates.
 
 === "QubesOS"
 
-    To use fwupdmgr on QubesOS, the program needs to be run on
+    To use `fwupdmgr` on QubesOS, the program needs to be run on
     the `dom0` qube, and it requires an internet connection.
-    For that reason, a fwupdmgr wrapper for QubesOS exists,
+    For that reason, a `fwupdmgr` wrapper for QubesOS exists,
     that sets up the network tunnels for the firmware update
-    downloads to be possible from dom0.
-    The qubes-fwupdmgr package should be installed out of the box.
+    downloads to be possible from `dom0`.
+    The `qubes-fwupdmgr` package should be installed out of the box.
     Executing the command should print the help screen:
 
     ```bash
@@ -212,7 +212,7 @@ it to perform firmware updates.
     </details>
 
 === "QubesOS"
-    To check for available updates for your device, run the following command
+    To check the currently used firmware version, run the following command
 
     ```bash
     $ sudo qubes-fwupdmgr get-devices
@@ -246,7 +246,7 @@ it to perform firmware updates.
             UpdateState         2
         ```
         As of QubesOS R4.2.3, the firmware version is not interpreted correctly
-        by fwupdmgr.
+        by `fwupdmgr`.
         As a fallback on Dasharo firmware, use `dmidecode` to verify the firmware version.
         Run:
         ```bash
@@ -330,7 +330,7 @@ it to perform firmware updates.
     ```
 
     !!! warning
-        As of QubesOS R4.3 on 02-2026, qubes-fwupdmgr might not work correctly
+        As of QubesOS R4.3 on 02-2026, `qubes-fwupdmgr` might not work correctly
         and the updates on LVFS may not be found using this tool. Refer to
         [troubleshooting](#no-updates-available-qubesos).
 
@@ -398,18 +398,18 @@ are met.
     ```
 
     !!! warning
-        As of QubesOS R4.3 on 02-2026, qubes-fwupdmgr might not work correctly
+        As of QubesOS R4.3 on 02-2026, `qubes-fwupdmgr` might not work correctly
         and the updates on LVFS may not be found using this tool. Refer to
         [troubleshooting](#no-updates-available-qubesos).
 
 !!! warning
-    After the command finishes, fwupd will instruct the device to reboot.
+    After the command finishes, a reboot is necessary to apply the update.
     The fwupd UEFI application that performs the update will be booted
-    automatically after a reboot, unless there's user interaction
+    automatically after a reboot, unless there is a user interaction.
     Entering the Setup Menu, Boot Manager, or interfering in any other way will
     abort the update.
     Allow the device to reboot freely, and do not press any buttons until the
-    update finishes.
+    update finishes unless there is a dialog related to the update.
 
     Devices that have an Embedded Controller
     [might stay powered off after the update][dts-ec-update] and need to be
@@ -442,7 +442,7 @@ source. We will use `novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cab` downloaded fr
 
 ##### No output from fwupdmgr update
 
-Depending on the version of fwupdmgr, issues like the AC being disconnected on
+Depending on the version of `fwupdmgr`, issues like the AC being disconnected on
 battery-powered devices might not be printed explicitly right away after
 trying to perform an update. In such a case, try running the `get-devices` command
 and look for the `Problems` header and red text under device entries.
@@ -538,12 +538,12 @@ The check for an AC charger being connected in Linux fails when the firmware
 configures a [charging threshold](http://127.0.0.1:8000/unified/novacustom/features/#charge-thresholds)
 for the battery that disconnects the charger once the battery reaches the threshold.
 If the battery is considered full and not charging at the moment, the check in
-fwupdmgr will think the charger is disconnected.
+`fwupdmgr` will think the charger is disconnected.
 
 There are two options to work around this issue:
 
 - Deplete battery charge a couple of percent, so that it
-    doesn't stop charging for the duration of fwupdmgr running the checks.
+  doesn't stop charging for the duration of `fwupdmgr` running the checks.
 - Disable battery charging thresholds in the firmware.
 
 ##### No updates available (QubesOS)
@@ -602,16 +602,14 @@ manually from fwupd.org.
     </details>
 
     This output means the firmware version has changed to the expected one.
-    To manually verify this has really happened, refer to
-    [Checking The Current Firmware Version](#checking-the-current-firmware-version).
 
 === "QubesOS"
-    To update your firmware, run the following commands:
+    `qubes-fwupdmgr` doesn't currently support `get-results` command of
+    `fwupdmgr`.
 
-    ```bash
-    $ sudo qubes-fwupdmgr refresh
-    $ sudo qubes-fwupdmgr update
-    ```
+
+For another way to verify an update has really happened refer to
+[Checking The Current Firmware Version](#checking-the-current-firmware-version).
 
 #### Update result troubleshooting
 
@@ -651,14 +649,14 @@ Device Flags:         • Internal device
 ```
 </details>
 
-When that happens after rebooting, instead of am update
+When that happens after rebooting, instead of an update
 progress bar, a message like this will appear on top of the screen:
 
 ```txt
 [FIRMWARE WARNING] Capsule Updates are only supported while Intel ME is in HAP mode!
 ```
 
-Make sure the Intel ME mode in the Setup menu is `Disabled (HAP)`. Refer to the
+Make sure the Intel ME mode in the Setup Menu is `Disabled (HAP)`. Refer to the
 [prerequisites section](#firmware-update-prerequisites) and try again.
 
 ## References
