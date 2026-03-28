@@ -13,17 +13,17 @@ for distributing and managing the firmware binaries to the users.
 !!! note
      `fwupd` depends on
      [Capsule Updates](../guides/capsule-update.md)
-     support. Refer to the "Firmware update" section of your device
-     documentation (like [this one](../unified/novacustom/firmware-update.md)).
+     support. Check that your device and its firmware are listed in the
+     ["Supported devices" section](../guides/capsule-update.md#supported-devices)
+     there.
 
 ## Firmware Update Prerequisites
 
 ### Intel ME
 
 This only applies to devices with an Intel Management Engine that are not fused
-using the [Dasharo Trust Root](../glossary.md#dasharo-trustroot)
-technology, and use Dasharo versions released before 2026. Check your release
-notes to verify if the step is required.
+using the [Dasharo Trust Root](../glossary.md#dasharo-trustroot) technology and
+don't yet use Capsules V2.
 
 Intel Management Engine needs to be disabled manually to successfully perform an
 fwupd update. Failing to do so won't do any harm to the system, but the update
