@@ -182,9 +182,76 @@ it to perform firmware updates.
         ```
     </details>
 
+=== "FreeBSD"
+
+    !!! warning
+        `fwupd` on FreeBSD is very much work in progress as of March 2026.  The
+        basic elements are there, but user experience may be far from perfect.
+        In particular, not all functionality is available (e.g., `fwupd` won't
+        reboot for you, update may be reported as "in progress" after it has
+        been applied) or works reliably (may complain about missing ESP,
+        although this error may be gone on second try or after restarting
+        `fwupd`).  In addition to that, FreeBSD loader and/or kernel has issues
+        with ESRT which may prevent `uefi_capsule` plugin of `fwupd` from
+        working.
+
+    `fwupd` is available in ports, but the version there lacks UEFI capsules.
+    The necessary changes are being [upstreamed][D55590], until then a
+    relatively complicated setup in necessary to have a chance of firmware
+    updates working.  The following instructions assume the system isn't
+    configured much, make adjustments to not overwrite existing configuration if
+    that's not the case.
+
+    Start by switching from "quaterly" to "latest" packages to have an already
+    updated `bsdisks` (necessary to find ESP):
+
+    ```terminal
+    # mkdir -p /usr/local/etc/pkg/repos
+    # sed 's!/quarterly!/latest!' /etc/pkg/FreeBSD.conf > /usr/local/etc/pkg/repos/FreeBSD.conf
+    ```
+
+    Then install `fwupd`, `bsdisks` and various build dependencies.  A few ports
+    will be reinstalled later, this step is just to reuse binary packages and
+    not build everything from sources.  Run the following command:
+
+    ```terminal
+    # pkg install fwupd bsdisks meson help2man noto-sans py311-Jinja2 py311-pygobject py311-pangocffi gettext-tools pkgconf vala dbus cmake ninja git
+    ```
+
+    Now get the version of ports with necessary fixes and reinstall the
+    packages (cloning will take time, building can too; there will also be a few
+    dialogs about port options, just agreeing should do but can choose to not
+    build documentation):
+
+    ```terminal
+    # git clone --branch=fwupd-2026 --depth=1 --filter=blob:none https://github.com/3mdeb/freebsd-ports /usr/ports
+    # make -C /usr/ports/devel/efivar/ deinstall
+    # make -C /usr/ports/devel/gnu-efi/ reinstall
+    # make -C /usr/ports/sysutils/fwupd-efi/ reinstall
+    # make -C /usr/ports/sysutils/fwupd/ reinstall
+    ```
+
+    `fwupd` communicates with `bsdisks` over D-Bus, so it must be running
+    (`fwupdmgr` also depends on D-Bus, otherwise using `fwupdtool` as root is
+    the only option).  It can be enabled permanently and then launched like
+    this:
+
+    ```terminal
+    # echo 'dbus_enable="YES"' >> /etc/rc.conf
+    # service dbus start
+    ```
+
+    This is how to start D-Bus temporarily:
+
+    ```terminal
+    # service dbus onestart
+    ```
+
+[D55590]: https://reviews.freebsd.org/D55590
+
 ### Checking the current firmware version
 
-=== "Ubuntu, Fedora"
+=== "Ubuntu, Fedora, FreeBSD"
     To check the currently used firmware version, run the following command
 
     ```bash
@@ -260,7 +327,7 @@ it to perform firmware updates.
 
 ### Checking for updates
 
-=== "Ubuntu, Fedora"
+=== "Ubuntu, Fedora, FreeBSD"
     To check for available updates for your device, run the following commands
 
     ```bash
@@ -402,6 +469,40 @@ are met.
         and the updates on LVFS may not be found using this tool. Refer to
         [troubleshooting](#no-updates-available-qubesos).
 
+=== "FreeBSD"
+    To update your firmware, run the following commands:
+
+    ```terminal
+    # fwupdmgr refresh
+    # fwupdmgr update --no-reboot-check
+    # reboot
+    ```
+
+    <details><summary>Example of an update process:</summary>
+        ```
+        # fwupdmgr update --no-reboot-check
+        Devices with no available firmware updates:
+        • UEFI dbx
+        • SSDPR-PX600-250-80
+        ╔══════════════════════════════════════════════════════════════════════════════╗
+        ║ Upgrade System Firmware from 1.0.0 to 1.0.1?                                 ║
+        ╠══════════════════════════════════════════════════════════════════════════════╣
+        ║ New Dasharo firmware release for the NovaCustom Meteor Lake laptops          ║
+        ║                                                                              ║
+        ║ with integrated graphics, featuring numerous bug fixes, performance          ║
+        ║                                                                              ║
+        ║ improvements and stability fixes.                                            ║
+        ║                                                                              ║
+        ║ V54x_6x_TU must remain plugged into a power source for the duration of the   ║
+        ║ update to avoid damage.                                                      ║
+        ╚══════════════════════════════════════════════════════════════════════════════╝
+        Perform operation? [Y|n]: y
+        Waiting…                 [***************************************]
+        Successfully installed firmware
+        Do not turn off your computer or remove the AC adapter while the update is in progress.
+        ```
+    </details>
+
 !!! warning
     After the command finishes, a reboot is necessary to apply the update.
     The fwupd UEFI application that performs the update will be booted
@@ -436,6 +537,23 @@ source. We will use `novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cab` downloaded fr
     2. Perform a local install
         ```bash
         $ sudo fwupdmgr local-install novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cab
+        ```
+
+=== "FreeBSD"
+    To update your firmware using a locally available cabinet file, follow the
+    steps:
+
+    1. Allow updates from untrusted sources
+        ```terminal
+        # printf '[fwupd]\nOnlyTrusted=false\n' > /usr/local/etc/fwupd/fwupd.conf
+        ```
+    2. Perform a local install
+        ```terminal
+        # fwupdmgr local-install --no-reboot-check novacustom_v54x_mtl_igpu_v1.0.1_btg_prod.cab
+        ```
+    3. Reboot to apply the update
+        ```terminal
+        # reboot
         ```
 
 #### Update troubleshooting
@@ -607,6 +725,17 @@ manually from fwupd.org.
     `qubes-fwupdmgr` doesn't currently support `get-results` command of
     `fwupdmgr`.
 
+=== "FreeBSD"
+    The following command is supposed to report update results:
+
+    ```bash
+    $ fwupdmgr get-results
+    ```
+
+    However, this is likely to not produce any results because fwupd fails to
+    finalize the update.  `fwupdmgr get-devices` incorrectly states that "An
+    update is in progress" along with displaying version that shows the update
+    has already happened.
 
 For another way to verify an update has really happened refer to
 [Checking The Current Firmware Version](#checking-the-current-firmware-version).
