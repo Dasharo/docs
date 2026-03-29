@@ -371,7 +371,7 @@
 
         === "V540TU 14th Gen"
             ```bash
-            /docker_repro.sh make BOARD=novacustom-v540tu
+            ./docker_repro.sh make BOARD=novacustom-v540tu
             ```
 
             This will produce a Dasharo binary placed in
