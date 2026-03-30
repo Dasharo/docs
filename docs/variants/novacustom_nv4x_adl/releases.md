@@ -20,6 +20,8 @@ Test results for this release can be found
 - [Dasharo TrustRoot (Intel Boot Guard) support](https://docs.dasharo.com/glossary/#dasharo-trustroot)
 - [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
 - [Human-readable UEFI Secure Boot key management screens](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
+- [ACPI driver](https://docs.dasharo.com/unified/novacustom/features/#acpi-driver)
+- [Quiet boot/Fast boot](https://docs.dasharo.com/dasharo-menu-docs/boot-maintenance-mgr/)
 
 ### Changed
 
