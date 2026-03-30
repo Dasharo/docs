@@ -27,7 +27,7 @@ firmware version is currently installed on your device.
         > binaries themselves by following the steps under the [Manual
         > update](#manual-update) section.
 
-         ### Capsule Update via fwupd
+        ### Capsule Update via fwupd
 
         Using fwupd is the recommended and simplest way to perform Dasharo
         firmware updates on supported devices.

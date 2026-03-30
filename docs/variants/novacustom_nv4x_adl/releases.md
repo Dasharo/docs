@@ -9,6 +9,104 @@ For details about our release process please read
 {{ subscribe_form("310eac18-d302-478f-a617-5f5d65e8e0ac",
 "Subscribe to NovaCustom NV4x 12th Gen Dasharo Release Newsletter") }}
 
+## v1.8.0 - 2026-03-30
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCustom/ADL_12th_Gen/NV41PZ/).
+
+### Added
+
+- [Firmware update via UEFI capsule update interface with LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [Dasharo TrustRoot (Intel Boot Guard) support](https://docs.dasharo.com/glossary/#dasharo-trustroot)
+- [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
+- [Human-readable UEFI Secure Boot key management screens](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
+- [ACPI driver](https://docs.dasharo.com/unified/novacustom/features/#acpi-driver)
+- [Quiet boot/Fast boot](https://docs.dasharo.com/dasharo-menu-docs/boot-maintenance-mgr/)
+
+### Changed
+
+- [coreboot rebased on 24.12](https://doc.coreboot.org/releases/coreboot-24.12-relnotes.html)
+- EDK II rebased on edk2-stable202502
+- Owner GUID of Secure Boot DB and KEK to Microsoft recommended values
+- [Password policy updated to allow passphrases with lowercase-only characters per modern NIST standards](https://github.com/Dasharo/dasharo-issues/issues/646)
+- [Early boot DMA protection option now warns about Windows incompatibility](https://github.com/Dasharo/dasharo-issues/issues/1771)
+
+### Fixed
+
+- [Popup with information about recovery mode is displayed after flashing with a valid binary](https://github.com/Dasharo/dasharo-issues/issues/269)
+- [Display brightness not dark enough](https://github.com/Dasharo/dasharo-issues/issues/297)
+- [SD card is not recognized as bootable](https://github.com/Dasharo/dasharo-issues/issues/454)
+- [Power state after power failure option does not work as intended](https://github.com/Dasharo/dasharo-issues/issues/524)
+- [Closing the lid generates ACPI Error: No handler or method for GPE 6B](https://github.com/Dasharo/dasharo-issues/issues/640)
+- [The laptop does not automatically wake up from hibernation using rtcwake](https://github.com/Dasharo/dasharo-issues/issues/485)
+- [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
+- [Function Lock setting is not saved after cold boot](https://github.com/Dasharo/dasharo-issues/issues/458)
+- [Some devices on dock are not detected after warmboot or reboot](https://github.com/Dasharo/dasharo-issues/issues/632)
+- [Some commands in dasharo_ectool fail](https://github.com/Dasharo/dasharo-issues/issues/648)
+- [Wake from sleep: laptop brightness frequently goes to max](https://github.com/Dasharo/dasharo-issues/issues/988)
+- [Bogus X2APIC entries in MADT ACPI table](https://github.com/Dasharo/dasharo-issues/issues/1094)
+- [Qubes OS doesn't reboot after S3 suspend on NV41PZ](https://github.com/Dasharo/dasharo-issues/issues/1097)
+- [Disk Write Performance lower than expected](https://github.com/Dasharo/dasharo-issues/issues/1357)
+- [Following initial deployment and recovery documentation leads to unbootable system](https://github.com/Dasharo/dasharo-issues/issues/1525)
+- [PCIe over Thunderbolt not working](https://github.com/Dasharo/dasharo-issues/issues/1638)
+- [Windows TPM Ready: False](https://github.com/Dasharo/dasharo-issues/issues/1797)
+
+### Known issues
+
+- [Poor Package C-state residency at idle after first s2idle cycle](https://github.com/Dasharo/dasharo-issues/issues/631)
+- [Incomplete serial console output](https://github.com/Dasharo/dasharo-issues/issues/614)
+- [Turning wifi/bt off inside BIOS leads to an ACPI error message while system start on Gentoo Linux](https://github.com/Dasharo/dasharo-issues/issues/638)
+- [Hibernation fails with UG69PD2 Rev.A1 docking station](https://github.com/Dasharo/dasharo-issues/issues/1501)
+- [pts/compression-7zip performance worse on "performance" mode](https://github.com/Dasharo/dasharo-issues/issues/1794)
+- [QubesOS FWUPD gets wrong firmware version; local update fails](https://github.com/Dasharo/dasharo-issues/issues/1802)
+
+### Binaries
+
+[novacustom_nv4x_adl_ec_v1.8.0.rom][novacustom_nv4x_adl_ec_v1.8.0.rom_file]{.md-button}
+[sha256][novacustom_nv4x_adl_ec_v1.8.0.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_adl_ec_v1.8.0.rom_sig]{.md-button}
+
+[novacustom_nv4x_adl_v1.8.0_btg_prod.rom][novacustom_nv4x_adl_v1.8.0_btg_prod.rom_file]{.md-button}
+[sha256][novacustom_nv4x_adl_v1.8.0_btg_prod.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_adl_v1.8.0_btg_prod.rom_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 24.12 revision 281a7fec](https://github.com/Dasharo/coreboot/tree/281a7fec)
+- [Dasharo EDKII fork based on edk2-stable202502 revision 927ef7ba](https://github.com/Dasharo/edk2/tree/927ef7ba)
+    + [License](https://github.com/Dasharo/edk2/blob/927ef7ba/License.txt)
+- [Dasharo fork of edk2-platforms based on v0.9.0 revision 1002a596](https://github.com/Dasharo/edk2-platforms/tree/1002a596)
+    + [License](https://github.com/Dasharo/edk2-platforms/blob/1002a596/License.txt)
+- [Dasharo fork of System76 EC based on af6bd04 revision af6bd04d](https://github.com/Dasharo/ec/tree/af6bd04d/)
+    + [License](https://github.com/Dasharo/ec/blob/af6bd04d/LICENSE)
+- [Dasharo iPXE fork based on v1.21.1 revision 6c7068fc](https://github.com/Dasharo/ipxe/tree/6c7068fc)
+    + [License](https://github.com/Dasharo/ipxe/blob/6c7068fc/COPYING.GPLv2)
+- [vboot based on f1f70f46 revision f1f70f46](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/LICENSE)
+- [Intel Management Engine version v16.1.40.2765](https://github.com/Dasharo/dasharo-blobs/blob/668d80d1/novacustom/nv4x_adl/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.1](https://github.com/Dasharo/dasharo-blobs/blob/668d80d1/novacustom/nv4x_adl/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel GOP Driver version v21.0.1066](https://github.com/Dasharo/dasharo-blobs/blob/668d80d1/novacustom/nv4x_adl/IntelGopDriver.efi)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package for Raptor Lake-P version IoT RPL-P IPU 2026.1 (6311_00)](https://github.com/intel/FSP/tree/23cf2587/RaptorLakeFspBinPkg/IoT/RaptorLakeP)
+    + [License](https://github.com/intel/FSP/blob/23cf2587/FSP_License.pdf)
+- [Intel microcode version ADL-P R0 0xc 10/07/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260227/intel-ucode/06-9a-04)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260227/license)
+- [Intel microcode version RPL-P J0 0x6134 08/10/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260227/intel-ucode/06-ba-02)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260227/license)
+
+[novacustom_nv4x_adl_ec_v1.8.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/uefi/v1.8.0/novacustom_nv4x_adl_ec_v1.8.0.rom
+[novacustom_nv4x_adl_ec_v1.8.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/uefi/v1.8.0/novacustom_nv4x_adl_ec_v1.8.0.rom.sha256
+[novacustom_nv4x_adl_ec_v1.8.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/uefi/v1.8.0/novacustom_nv4x_adl_ec_v1.8.0.rom.sha256.sig
+[novacustom_nv4x_adl_v1.8.0_btg_prod.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/uefi/v1.8.0/novacustom_nv4x_adl_v1.8.0_btg_prod.rom
+[novacustom_nv4x_adl_v1.8.0_btg_prod.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/uefi/v1.8.0/novacustom_nv4x_adl_v1.8.0_btg_prod.rom.sha256
+[novacustom_nv4x_adl_v1.8.0_btg_prod.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/uefi/v1.8.0/novacustom_nv4x_adl_v1.8.0_btg_prod.rom.sha256.sig
+
 ## v1.7.2 - 2024-01-03
 
 Test results for this release can be found
