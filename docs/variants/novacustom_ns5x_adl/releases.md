@@ -64,14 +64,6 @@ Test results for this release can be found
 [sha256][novacustom_ns5x_adl_ec_v1.8.0.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_adl_ec_v1.8.0.rom_sig]{.md-button}
 
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cab][novacustom_ns5x_adl_v1.8.0_btg_prod.cab_file]{.md-button}
-[sha256][novacustom_ns5x_adl_v1.8.0_btg_prod.cab_hash]{.md-button}
-[sha256.sig][novacustom_ns5x_adl_v1.8.0_btg_prod.cab_sig]{.md-button}
-
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cap][novacustom_ns5x_adl_v1.8.0_btg_prod.cap_file]{.md-button}
-[sha256][novacustom_ns5x_adl_v1.8.0_btg_prod.cap_hash]{.md-button}
-[sha256.sig][novacustom_ns5x_adl_v1.8.0_btg_prod.cap_sig]{.md-button}
-
 [novacustom_ns5x_adl_v1.8.0_btg_prod.rom][novacustom_ns5x_adl_v1.8.0_btg_prod.rom_file]{.md-button}
 [sha256][novacustom_ns5x_adl_v1.8.0_btg_prod.rom_hash]{.md-button}
 [sha256.sig][novacustom_ns5x_adl_v1.8.0_btg_prod.rom_sig]{.md-button}
@@ -109,12 +101,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [novacustom_ns5x_adl_ec_v1.8.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_ec_v1.8.0.rom
 [novacustom_ns5x_adl_ec_v1.8.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_ec_v1.8.0.rom.sha256
 [novacustom_ns5x_adl_ec_v1.8.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_ec_v1.8.0.rom.sha256.sig
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cab_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.cab
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cab_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.cab.sha256
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cab_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.cab.sha256.sig
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cap_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.cap
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.cap.sha256
-[novacustom_ns5x_adl_v1.8.0_btg_prod.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.cap.sha256.sig
 [novacustom_ns5x_adl_v1.8.0_btg_prod.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.rom
 [novacustom_ns5x_adl_v1.8.0_btg_prod.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.rom.sha256
 [novacustom_ns5x_adl_v1.8.0_btg_prod.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_ns5x_adl/uefi/v1.8.0/novacustom_ns5x_adl_v1.8.0_btg_prod.rom.sha256.sig
