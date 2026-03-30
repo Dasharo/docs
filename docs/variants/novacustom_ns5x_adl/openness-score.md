@@ -7,7 +7,7 @@ Score utility](https://github.com/Dasharo/Openness-Score).
 
 ## v1.8.0
 
-Openness Score for novacustom_ns5x_adl_v1.8.0_btg_devel.rom
+Openness Score for novacustom_ns5x_adl_v1.8.0_btg_prod.rom
 
 Open-source code percentage: **30.8%**
 Closed-source code percentage: **69.2%**
@@ -20,9 +20,9 @@ Closed-source code percentage: **69.2%**
 * Total data size: 955138 (0xe9302)
 * Total empty size: 19650812 (0x12bd8fc)
 
-![](novacustom_ns5x_adl_v1.8.0_btg_devel.rom_openness_chart.png)
+![](novacustom_ns5x_adl_v1.8.0_btg_prod.rom_openness_chart.png)
 
-![](novacustom_ns5x_adl_v1.8.0_btg_devel.rom_openness_chart_full_image.png)
+![](novacustom_ns5x_adl_v1.8.0_btg_prod.rom_openness_chart_full_image.png)
 
 > Numbers given above already include the calculations from CBFS regions
 > presented below

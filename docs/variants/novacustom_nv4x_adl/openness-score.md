@@ -7,7 +7,7 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 ## v1.8.0
 
-Openness Score for novacustom_nv4x_adl_v1.8.0_btg_devel.rom
+Openness Score for novacustom_nv4x_adl_v1.8.0_btg_prod.rom
 
 Open-source code percentage: **30.8%**
 Closed-source code percentage: **69.2%**
@@ -20,9 +20,9 @@ Closed-source code percentage: **69.2%**
 * Total data size: 954756 (0xe9184)
 * Total empty size: 19653244 (0x12be27c)
 
-![](novacustom_nv4x_adl_v1.8.0_btg_devel.rom_openness_chart.png)
+![](novacustom_nv4x_adl_v1.8.0_btg_prod.rom_openness_chart.png)
 
-![](novacustom_nv4x_adl_v1.8.0_btg_devel.rom_openness_chart_full_image.png)
+![](novacustom_nv4x_adl_v1.8.0_btg_prod.rom_openness_chart_full_image.png)
 
 > Numbers given above already include the calculations from CBFS regions
 > presented below
