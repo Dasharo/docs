@@ -47,10 +47,50 @@ This command sequence writes the new firmware image into the appropriate regions
 `attempt_slot_b` CMOS option to "Enable". This ensures that after the next
 reboot, the system will boot from the newly updated slot.
 
+## Security: Chain of Trust with TrustRoot and CBFS Verification
+
+### Slot Integrity via CBFS Verification
+
+Each redundancy slot is protected by **CBFS Verification**: the bootblock
+contains cryptographic hashes of all other CBFS files, and each file's hash
+is checked before it is loaded. This ensures that any corruption or tampering
+within a slot is detected before the affected code runs, regardless of which
+slot is active.
+
+### Dasharo TrustRoot Integration
+
+When TrustRoot is enabled, it extends the root of trust into hardware.
+On every boot, the Boot Guard ACM — executed directly by the CPU before any
+firmware code runs — cryptographically verifies the **bootblock** of the active
+slot. Because the bootblock in turn holds the CBFS hashes, a single hardware
+verification anchors the integrity of the entire slot.
+
+The full chain of trust proceeds as follows:
+
+1. **Boot Guard ACM** (hardware) verifies the active slot's bootblock.
+2. **Bootblock** uses CBFS Verification to check and load `romstage`.
+3. Each subsequent stage verifies the next until the **UEFI payload** is
+   reached.
+4. **UEFI Secure Boot** takes over to verify OS boot loaders and drivers.
+
+### Interaction with Top Swap
+
+The Top Swap mechanism selects which bootblock the CPU presents to Boot Guard
+at reset. Boot Guard verifies whichever bootblock is currently mapped (slot A
+or slot B), so both slots must be signed with the same key for the platform to
+boot successfully from either. A CMOS reset falls back to slot A, which is the
+read-only golden copy — ensuring there is always a known-good, Boot Guard
+verified image available for recovery.
+
+!!! note
+
+    The CMOS-backed `attempt_slot_b` bit selects the active slot; physically
+    removing or shorting the CMOS battery resets this bit and unconditionally
+    restores slot A as the boot target.
+
 ## Further reading
 
 For a more detailed documentation of the implementation, please read the
-[upstream coreboot documentation](https://doc.coreboot.org/soc/intel)
-(_"doc.coreboot.org/soc/intel/redundancy.html"_, not yet available as of
-February 25th 2026, can also be viewed
+[upstream coreboot documentation](https://doc.coreboot.org/soc/intel/redundancy.html)
+(can also be viewed
 [here](https://github.com/coreboot/coreboot/blob/main/Documentation/soc/intel/redundancy.md)).
