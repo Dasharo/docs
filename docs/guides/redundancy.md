@@ -47,7 +47,7 @@ This command sequence writes the new firmware image into the appropriate regions
 `attempt_slot_b` CMOS option to "Enable". This ensures that after the next
 reboot, the system will boot from the newly updated slot.
 
-## Security: Chain of Trust with Intel Boot Guard and CBFS Verification
+## Security: Chain of Trust with TrustRoot and CBFS Verification
 
 ### Slot Integrity via CBFS Verification
 
@@ -57,9 +57,9 @@ is checked before it is loaded. This ensures that any corruption or tampering
 within a slot is detected before the affected code runs, regardless of which
 slot is active.
 
-### Intel Boot Guard Integration
+### Dasharo TrustRoot Integration
 
-When Intel Boot Guard is enabled, it extends the root of trust into hardware.
+When TrustRoot is enabled, it extends the root of trust into hardware.
 On every boot, the Boot Guard ACM — executed directly by the CPU before any
 firmware code runs — cryptographically verifies the **bootblock** of the active
 slot. Because the bootblock in turn holds the CBFS hashes, a single hardware
