@@ -106,6 +106,49 @@ has a thick connector, which prevents standard 2.54mm wire to be connected:
 
   ![ODROID LED hook](images/odroid_power_led_hook.jpg)
 
+### Power button connection
+
+The platform features PWR pin for powering on and shutting down the device.
+Connect two wires to pins 17 (`PWR_BTN`) and 9 (`GND`) on the Odroids' GPIO
+header. The pinout can be found
+[here](https://wiki.odroid.com/odroid-h4/hardware/io_expansion_gpio#io_expansion_gpio_map).
+
+The `PWR_BTN` must be connected to `pin 6` on RTE `J11` header, and the `GND`
+must be connected to RTE `pin 1` on `J15` header. This has been summarized in
+the table below:
+
+| RTE J11 | RTE J15 | Odroid H4 EXPANSION HEADER |
+|:--------|:--------|:---------------------------|
+| `pin 6` | --      | `pin 17` (`PWR_BUTTON`)    |
+| --      | `pin 1` | `pin 19` (`GND`)           |
+
+_Note: Odroid does not feature `RESET` pin on onboard header._
+
+### Preparing custom cables for power supply controlling
+
+The Odroid h4 dc plug/socket specification is `5.5mm` x `2.1mm`. The RTE, on
+the other hand, has `5.5mm` x `2.5mm` ports. This means if you attempt to connect
+RTE to Odroid with RTE compatible cable, the power won't be flowing as there will
+be `0.4mm` gap in the connector itself. This is why a custom set of cables
+is needed.
+
+You'll need to either create (solder) or buy a following set of cables:
+
+* `5.5mm` x `2.5mm` male plug - `5.5mm` x `2.1mm` female connector.
+* `5.5mm` x `2.5mm` male plug - `5.5mm` x `2.1mm` male plug.
+
+Custom set of cables has been showcased in the pictures below:
+
+![Plugs](images/odroid_plugs.jpg)
+
+![Cables](images/odroid_cable.jpg)
+
+To connect the cables:
+
+* plug `5.5mm` x `2.5mm` male plugs into the RTE (order **does not** matter),
+* plug the Odroid power brick into the female end on one of the cables,
+* plug the `5.5mm` x `2.1mm` male plug into the Odroid dc port.
+
 ## Theory of operation
 
 The following sections describe how to use all of the enabled features:
