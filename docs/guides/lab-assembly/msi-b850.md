@@ -92,6 +92,20 @@ Connect the RTE SPI header to the platform as described in the table:
 
 ![msi_b850_spi](images/msi_b850_spi.jpg)
 
+## Optional: RTE Mounting and Cable Management
+
+Where space and setup conditions allow, it is recommended to mount the RTE
+directly to the motherboard using nylon standoffs and screws, as shown in the
+picture below. This approach improves the overall stability of the test stand
+and reduces the risk of accidental disconnections during testing.
+
+![msi_b850_rte_mounted](images/msi_b850_rte_mounted.jpg)
+
+Additionally, it is advisable to secure the connection cables by routing and
+fastening them along the RTE board. Proper cable management minimizes strain
+on the connectors and helps prevent intermittent contact issues that could
+affect test reliability.
+
 ### Complete Setup
 
 After preparing all of the connections also three activities should be
