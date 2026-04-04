@@ -50,7 +50,7 @@ Compile:
 ```
 
 The resulting coreboot image will be placed in the current directory as
-`qemu_q35_<version>.rom`.
+`qemu_q35_VERSION_TAG.rom`.
 
 > To build a QEMU image with all features and menus enabled, invoke:
 >

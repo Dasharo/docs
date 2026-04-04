@@ -29,7 +29,7 @@ then follow the steps below:
 
     ```bash
     cd coreboot
-    git checkout asrock_spc741d8_<version>
+    git checkout asrock_spc741d8_VERSION_TAG
     ```
 
     For example
@@ -45,4 +45,4 @@ then follow the steps below:
     ```
 
     The resulting coreboot image will be placed in the coreboot directory as
-    `asrock_spc741d8_<version>.rom`.
+    `asrock_spc741d8_VERSION_TAG.rom`.
