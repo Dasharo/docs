@@ -27,7 +27,7 @@ then follow the steps below:
 
     ```bash
     cd coreboot
-    git checkout hardkernel_odroid_h4_<version>
+    git checkout hardkernel_odroid_h4_VERSION_TAG
     ```
 
     For example
@@ -49,7 +49,7 @@ then follow the steps below:
     ```
 
     The resulting coreboot image will be placed in the coreboot directory as
-    `hardkernel_odroid_h4_<version>.rom`.
+    `hardkernel_odroid_h4_VERSION_TAG.rom`.
 
 ## Building Slim Bootloader
 
@@ -66,8 +66,8 @@ then follow the steps below:
 1. To build a specific version, checkout to the version's tag.
     Skip this step otherwise.
 
-    ```bash
-    git checkout hardkernel_odroid_h4_<version>
+    ```text
+    git checkout hardkernel_odroid_h4_VERSION_TAG
     ```
 
     For example
