@@ -369,9 +369,32 @@
 
     3. Start the build inside the docker container:
 
+        !!! note "Why not just run `./docker_repro.sh`?"
+            `docker_repro.sh` mounts the repository at its actual host path
+            inside the container (e.g. `/home/user/heads`). The build system
+            records that path as the cross-compiler's installation prefix, so
+            two builds from different checkout locations produce different
+            binaries. The official Dasharo releases are always built with the
+            repository mounted at `/home/coreboot/coreboot`, which is what the
+            commands below replicate.
+
+            This may be addressed in later releases, but to be safe and match
+            the released binary hash, always use the explicit mount below
+            instead of `docker_repro.sh`.
+
+        The correct docker image version for each release is recorded in
+        `.circleci/config.yml`. The commands below read it automatically, so
+        they stay correct across releases without any manual edits.
+
         === "V540TU 14th Gen"
             ```bash
-            /docker_repro.sh make BOARD=novacustom-v540tu
+            DOCKER_IMAGE=$(grep -oP '^\s*-?\s*image:\s*\K(tlaurion/heads-dev-env:[^\s]+)' \
+                .circleci/config.yml | head -n 1)
+            docker run --rm -it \
+                -v "$(pwd)":/home/coreboot/coreboot \
+                -w /home/coreboot/coreboot \
+                "${DOCKER_IMAGE}" \
+                -- make BOARD=novacustom-v540tu
             ```
 
             This will produce a Dasharo binary placed in
@@ -379,7 +402,13 @@
 
         === "V560TU 14th Gen"
             ```bash
-            ./docker_repro.sh make BOARD=novacustom-v560tu
+            DOCKER_IMAGE=$(grep -oP '^\s*-?\s*image:\s*\K(tlaurion/heads-dev-env:[^\s]+)' \
+                .circleci/config.yml | head -n 1)
+            docker run --rm -it \
+                -v "$(pwd)":/home/coreboot/coreboot \
+                -w /home/coreboot/coreboot \
+                "${DOCKER_IMAGE}" \
+                -- make BOARD=novacustom-v560tu
             ```
 
             This will produce a Dasharo binary placed in
@@ -387,7 +416,13 @@
 
         === "NV4x 12th Gen"
             ```bash
-            ./docker_repro.sh make BOARD=novacustom-nv4x_adl
+            DOCKER_IMAGE=$(grep -oP '^\s*-?\s*image:\s*\K(tlaurion/heads-dev-env:[^\s]+)' \
+                .circleci/config.yml | head -n 1)
+            docker run --rm -it \
+                -v "$(pwd)":/home/coreboot/coreboot \
+                -w /home/coreboot/coreboot \
+                "${DOCKER_IMAGE}" \
+                -- make BOARD=novacustom-nv4x_adl
             ```
 
             This will produce a Dasharo binary placed in
