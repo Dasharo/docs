@@ -27,7 +27,8 @@ grade C216 chipset.
 ### Current support scope
 
 At the moment, Dasharo deployment/recovery support for this variant is focused on the
-**OptiPlex 7010/9010 SFF shared baseline**. Other form factors (DT/MT/USFF) may share
+**OptiPlex 7010/9010 SFF shared baseline**. Other form factors
+(DT/MT/USFF) may share parts of the platform but require
 parts of the platform but require separate validation work before being treated as
 fully supported in the same way.
 
