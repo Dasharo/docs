@@ -5,6 +5,14 @@
 The test matrix is used to determine the scope of tests which the DUT is
 subjected from before the release of the new binary.
 
+
+
+!!! note
+
+    Current validation baseline for this variant tracks the shared **OptiPlex
+    7010/9010 SFF** support scope. Results for other form factors (DT/MT/USFF)
+    may require separate validation scope definitions.
+
 ## Module: Dasharo compatibility
 
 | No.  | Supported test suite                              | Test suite ID | Supported test cases                 |
