@@ -8,10 +8,9 @@ subjected from before the release of the new binary.
 
 
 !!! note
-
-    Current validation baseline for this variant tracks the shared **OptiPlex
-    7010/9010 SFF** support scope. Results for other form factors (DT/MT/USFF)
-    may require separate validation scope definitions.
+    Current validation baseline for this variant tracks the shared
+    **OptiPlex 7010/9010 SFF** support scope. Results for other form factors
+    (DT/MT/USFF) may require separate validation scope definitions.
 
 ## Module: Dasharo compatibility
 
