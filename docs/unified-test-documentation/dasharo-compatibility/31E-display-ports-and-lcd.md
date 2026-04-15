@@ -39,11 +39,11 @@ during firmware execution phase.
 
 1. Logo appears on the screen during firmware execution phase.
 
-## DSP001.201 Internal LCD in OS (Ubuntu)
+## DSP001.201 Internal display in OS (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## DSP001.301 Internal LCD in OS (Windows)
+## DSP001.301 Internal display in OS (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 

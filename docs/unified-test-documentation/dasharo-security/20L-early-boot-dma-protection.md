@@ -16,7 +16,7 @@
     [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
 1. Disable Secure Boot.
 
-## EDP001.001 Enable early Boot DMA Protection support
+## EDP001.001 Enable early boot DMA protection support
 
 **Test description**
 
@@ -112,7 +112,7 @@ Indicate that VT-D engine 1 had PMR enabled earlier, which is expected.
 
 If all above conditions are met, test pass.
 
-## EDP002.001 Disable early Boot DMA Protection support
+## EDP002.001 Disable early boot DMA protection support
 
 **Test description**
 

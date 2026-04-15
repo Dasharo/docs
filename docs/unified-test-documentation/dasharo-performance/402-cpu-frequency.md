@@ -21,7 +21,7 @@ The test is fully automated. Refer to https://github.com/Dasharo/open-source-fir
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF001.003 CPU not stuck on initial frequency (Heads+Debian)
+## CPF001.209 CPU not stuck on initial frequency (Heads+Debian)
 
 **Test description**
 
@@ -70,34 +70,34 @@ cpu MHz		: 2800.000
 cpu MHz		: 2800.000
 ```
 
-## CPF002.201 CPU runs on expected frequency (Ubuntu)
+## CPF002.201 CPU not stuck on initial frequency (Battery) (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF002.301 CPU runs on expected frequency (Windows)
+## CPF002.301 CPU not stuck on initial frequency (Battery) (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF003.201 CPU runs on expected frequency (Ubuntu, battery)
+## CPF003.201 CPU not stuck on initial frequency (AC) (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF003.301 CPU runs on expected frequency (Windows, battery)
+## CPF003.301 CPU not stuck on initial frequency (AC) (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF004.201 CPU with load runs on expected frequency (Ubuntu)
+## CPF004.201 CPU not stuck on initial frequency (USB-PD) (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF004.301 CPU with load runs on expected frequency (Windows)
+## CPF004.301 CPU not stuck on initial frequency (USB-PD) (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF005.201 CPU with load runs on expected frequency (Ubuntu, battery)
+## CPF005.201 CPU runs on expected frequency (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CPF005.301 CPU with load runs on expected frequency (Windows, battery)
+## CPF005.301 CPU runs on expected frequency (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

@@ -16,7 +16,7 @@
     [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
 1. Disable Secure Boot.
 
-## CBMEM001.201 coreboot booting time measure after coldboot (Ubuntu)
+## CBMEM001.201 Serial boot time measure: coreboot booting time after coldboot (Ubuntu)
 
 **Test description**
 
@@ -50,10 +50,10 @@ sudo ./cbmem -T
 The output of the command should contain the information about duration of
 all boot stages.
 
-## CBMEM002.201 coreboot booting time measure after warmboot (Ubuntu)
+## CBMEM002.201 Serial boot time measure: coreboot booting time after warmboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## CBMEM003.201 coreboot booting time measure after system reboot (Ubuntu)
+## CBMEM003.201 Serial boot time measure: coreboot booting time after system reboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

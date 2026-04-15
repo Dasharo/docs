@@ -19,7 +19,7 @@
     apt-get install --assume-yes lm-sensors
     ```
 
-## FNM001.001 Fan does not stuck after coldboot (Ubuntu)
+## FNM001.201 Fan does not stuck after coldboot (Ubuntu)
 
 **Test description**
 
@@ -64,7 +64,7 @@ Example output:
 fan1:        1131 RPM  (min =  329 RPM)
 ```
 
-## FNM002.001 Fan does not stuck after warmboot (Ubuntu)
+## FNM002.201 Fan does not stuck after warmboot (Ubuntu)
 
 **Test description**
 
@@ -108,7 +108,7 @@ Example output:
 fan1:        1131 RPM  (min =  329 RPM)
 ```
 
-## FNM003.001 Fan does not stuck after reboot (Ubuntu)
+## FNM003.201 Fan does not stuck after reboot (Ubuntu)
 
 **Test description**
 

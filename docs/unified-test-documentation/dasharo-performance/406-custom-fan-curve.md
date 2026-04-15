@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## CFC001.001 Custom fan curve silent profile measure (Ubuntu)
+## CFC001.201 Custom fan curve silent profile measure (Ubuntu)
 
 **Test description**
 
@@ -63,7 +63,7 @@ The values of CPU temperature and fan speeds should match the
 [device specific instructions](#verifying-the-temperature-and-fan-speeds)
 on verifying the `Silent` fan curve.
 
-## CFC002.001 Custom fan curve performance profile measure (Ubuntu)
+## CFC002.201 Custom fan curve performance profile measure (Ubuntu)
 
 **Test description**
 
@@ -114,7 +114,7 @@ The values of CPU temperature and fan speeds should match the
 [device specific instructions](#verifying-the-temperature-and-fan-speeds)
 on verifying the `Performance` fan curve.
 
-## CFC003.001 Custom fan curve OFF profile measure (Ubuntu)
+## CFC003.201 Custom fan curve OFF profile measure (Ubuntu)
 
 **Test description**
 

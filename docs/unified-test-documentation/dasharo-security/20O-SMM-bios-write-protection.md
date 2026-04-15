@@ -14,7 +14,7 @@
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Disable Secure Boot.
 
-## SMM001.001 SMM BIOS write protection enabling (Ubuntu)
+## SMM001.201 SMM BIOS write protection enabling (Ubuntu)
 
 **Test description**
 
@@ -70,7 +70,7 @@ Example output:
 Enabling flash write... Warning: BIOS region SMM protection is enabled!
 ```
 
-## SMM002.001 SMM BIOS write protection disabling (Ubuntu)
+## SMM002.201 SMM BIOS write protection disabling (Ubuntu)
 
 **Test description**
 

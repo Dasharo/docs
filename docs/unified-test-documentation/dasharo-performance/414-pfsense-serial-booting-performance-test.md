@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BPS001.001 Boot pfSense LTS CE (serial output) from disk after cold-boot
+## BPS001.502 Boot pfSense LTS CE (serial output) from disk after cold-boot (pfSense)
 
 **Test description**
 
@@ -44,7 +44,7 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPS002.001 Boot pfSense LTS CE (serial output) from disk after warm-boot
+## BPS002.502 Boot pfSense LTS CE (serial output) from disk after warm-boot (pfSense)
 
 **Test description**
 
@@ -74,7 +74,7 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPS003.001 Boot pfSense LTS CE (serial output) from disk after reboot
+## BPS003.502 Boot pfSense LTS CE (serial output) from disk after reboot (pfSense)
 
 **Test description**
 

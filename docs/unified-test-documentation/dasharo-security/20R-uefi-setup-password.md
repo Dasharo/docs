@@ -186,7 +186,7 @@ Password functionality by entering empty password.
 1. Password window should not be displayed.
 1. The DUT should boot into `Setup Menu`.
 
-## PSW007.001 Attempt to set non-compilant password
+## PSW007.001 Attempt to set non-compliant password
 
 **Test description**
 

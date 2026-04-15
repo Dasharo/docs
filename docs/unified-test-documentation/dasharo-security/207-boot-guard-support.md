@@ -1,6 +1,6 @@
 # Dasharo Security: Boot Guard support
 
-## BGS001.001 Boot Guard support (Ubuntu)
+## BGS001.201 Boot Guard support (Ubuntu)
 
 **Test description**
 

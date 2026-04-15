@@ -87,7 +87,7 @@ SUMMARY
 Thanks you for supporting Dasharo!
 ```
 
-## DTS003.001 DTS option power-off DUT works correctly
+## DTS003.001 DTS option reboot DUT works correctly
 
 **Test description**
 
@@ -116,7 +116,7 @@ turns off the DUT.
 
 The DUT should be turned off without any complications.
 
-## DTS004.001 DTS option reboot DUT works correctly
+## DTS004.001 DTS accessing shell works correctly
 
 **Test description**
 
@@ -145,7 +145,7 @@ the DUT.
 
 The DUT should be rebooted without any complications.
 
-## DTS005.001 DTS drop-to-shell option works correctly
+## DTS005.001 Flash device from DTS shell by using flashrom works correctly
 
 **Test description**
 
@@ -182,7 +182,7 @@ Entering shell, to leave type exit and press Enter or press LCtrl+D
 bash-5.1#
 ```
 
-## DTS006.001 Flash device from DTS shell by using flashrom works correctly
+## DTS006.001 Flash device EC firmware by using DTS built-in script works correctly
 
 **Test description**
 
@@ -249,7 +249,7 @@ Example output:
 Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
 
-## DTS007.001 Update device firmware from DTS Shell by using fwupd works correctly
+## DTS007.001 Update device EC firmware by using DTS works correctly
 
 **Test description**
 
@@ -302,7 +302,7 @@ Example output:
 Version: Dasharo (coreboot+UEFI) v1.1.0
 ```
 
-## DTS008.001 Flash device EC firmware by using DTS built-in script works correctly
+## DTS008.001 DTS option power-off DUT works correctly
 
 **Test description**
 
@@ -336,7 +336,7 @@ firmware by using the built-in script in DTS.
     [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-transition),
     should correspond to the latest version.
 
-## DTS009.001 Update device EC firmware by using DTS works correctly
+## DTS009.001 Update Dasharo firmware by using DTS via USB works correctly
 
 **Test description**
 
@@ -371,7 +371,7 @@ firmware by using dasharo_ectool in DTS.
     [documentation](https://docs.dasharo.com/dasharo-tools-suite/documentation/features/#ec-update),
     should correspond to the binary version used.
 
-## DTS010.001 Test firmware update in pre-release DTS over iPXE
+## DTS010.001 Deploy Dasharo firmware by using DTS works correctly
 
 **Test description**
 

@@ -57,7 +57,7 @@ detected after hot-plug.
     all hard disks connected to the device.
 1. The refreshed list should contain additional item - mounted SATA disk.
 
-## SHT001.002 SATA hot plug (Ubuntu)
+## SHT001.201 SATA hot plug (Ubuntu)
 
 **Test description**
 
@@ -106,7 +106,7 @@ Number  Start   End     Size    File system  Name                  Flags
 (...)
 ```
 
-## SHT001.003 SATA hot plug (Windows)
+## SHT001.301 SATA hot plug (Windows)
 
 **Test description**
 

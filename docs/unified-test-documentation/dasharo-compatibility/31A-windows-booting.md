@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## WBT001.001 Windows 11 installation and boot
+## WBT001.301 Windows 11 installation and boot (Windows)
 
 **Test description**
 
@@ -39,7 +39,7 @@ and works properly.
 
 The Windows 11 login screen should be displayed.
 
-## WBT002.001 Windows 10 installation and boot
+## WBT002.301 Windows 10 installation and boot (Windows)
 
 **Test description**
 

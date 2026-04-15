@@ -7,7 +7,7 @@
 1. Proceed with the
     [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
-## FED001.001 Fedora installation
+## FED001.202 Fedora installation (Fedora)
 
 **Test description**
 
@@ -32,7 +32,7 @@ This test aims to verify that Fedora Stable distribution could be installed.
 
 The information about successful installation should be displayed.
 
-## FED001.002 Boot Fedora
+## FED002.202 Boot Fedora (Fedora)
 
 **Test description**
 

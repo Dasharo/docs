@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BFB001.001 Boot FreeBSD-RELEASE from disk after cold-boot
+## BFB001.501 Boot FreeBSD-RELEASE from disk after cold-boot (FreeBSD)
 
 **Test description**
 
@@ -43,7 +43,7 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BFB002.001 Boot FreeBSD-RELEASE from disk after warm-boot
+## BFB002.501 Boot FreeBSD-RELEASE from disk after warm-boot (FreeBSD)
 
 **Test description**
 
@@ -72,7 +72,7 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BFB003.001 Boot FreeBSD-RELEASE from disk after reboot
+## BFB003.501 Boot FreeBSD-RELEASE from disk after reboot (FreeBSD)
 
 **Test description**
 

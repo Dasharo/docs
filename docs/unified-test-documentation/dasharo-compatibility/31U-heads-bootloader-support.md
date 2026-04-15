@@ -7,7 +7,7 @@
 1. Proceed with the
     [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
-## HDS001.001 Heads installation
+## HDS001.001 Install Heads
 
 **Test description**
 
