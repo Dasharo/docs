@@ -24,7 +24,6 @@ internals but differ a bit regarding expansion possibilities. Additionally the
 Precision T1650 has essentially the same board as the MT featuring a workstation
 grade C216 chipset.
 
-
 ### Current support scope
 
 At the moment, Dasharo deployment/recovery support for this variant is focused on the
