@@ -92,7 +92,7 @@ subjected from before the release of the new binary.
     [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
     [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
     [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
@@ -124,8 +124,8 @@ subjected from before the release of the new binary.
     [BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
     [BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
     [BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-    [BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-    [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+    [BOS]: ../../unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+    [BOV]: ../../unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
@@ -157,7 +157,7 @@ subjected from before the release of the new binary.
     | 20.  | [USB detection][UDT]                  | UDT           | All                                  |
     | 21.  | [USB booting][UBT]                    | UBT           | All                                  |
     | 22.  | [pfSense support][PFS]                | PFS           | All                                  |
-    | 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
+    | 23.  | [OPNSense support][OPN]               | OPN           | All                                  |
     | 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
     | 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
 
@@ -184,7 +184,7 @@ subjected from before the release of the new binary.
     [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
     [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
     [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
@@ -227,8 +227,8 @@ subjected from before the release of the new binary.
     | 7.   | [FreeBSD booting performance test][BFB] | BFB           | All                                |
     | 8.   | [Proxmox booting performance test][BPM] | BPM           | All                                |
     | 9.   | [Ubuntu Server booting performance test][BUS] | BUS           | All                          |
-    | 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All               |
-    | 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All               |
+    | 10.  | [OPNSense (serial output) booting performance test][BOS] | BOS           | All               |
+    | 11.  | [OPNSense (VGA output) booting performance test][BOV]    | BOV           | All               |
     | 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All               |
     | 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               |
 
@@ -241,8 +241,8 @@ subjected from before the release of the new binary.
     [BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
     [BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
     [BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-    [BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-    [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+    [BOS]: ../../unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+    [BOV]: ../../unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
@@ -272,7 +272,7 @@ subjected from before the release of the new binary.
     | 20.  | [USB detection][UDT]                  | UDT           | All                                  |
     | 21.  | [USB booting][UBT]                    | UBT           | All                                  |
     | 22.  | [pfSense support][PFS]                | PFS           | All                                  |
-    | 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
+    | 23.  | [OPNSense support][OPN]               | OPN           | All                                  |
     | 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
     | 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
 
@@ -297,7 +297,7 @@ subjected from before the release of the new binary.
     [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
     [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
     [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
@@ -339,8 +339,8 @@ subjected from before the release of the new binary.
     | 7.   | [FreeBSD booting performance test][BFB] | BFB           | All                                |
     | 8.   | [Proxmox booting performance test][BPM] | BPM           | All                                |
     | 9.   | [Ubuntu Server booting performance test][BUS] | BUS           | All                          |
-    | 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All               |
-    | 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All               |
+    | 10.  | [OPNSense (serial output) booting performance test][BOS] | BOS           | All               |
+    | 11.  | [OPNSense (VGA output) booting performance test][BOV]    | BOV           | All               |
     | 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All               |
     | 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               |
 
@@ -353,8 +353,8 @@ subjected from before the release of the new binary.
     [BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
     [BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
     [BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-    [BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-    [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+    [BOS]: ../../unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+    [BOV]: ../../unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
@@ -465,7 +465,7 @@ subjected from before the release of the new binary.
     | 19.  | [USB detection][UDT]                              | UDT           | All                                  |
     | 20.  | [USB booting][UBT]                                | UBT           | All                                  |
     | 21.  | [pfSense support][PFS]                            | PFS           | All                                  |
-    | 22.  | [OPNsense support][OPN]                           | OPN           | All                                  |
+    | 22.  | [OPNSense support][OPN]                           | OPN           | All                                  |
     | 23.  | [Proxmox support][PVE]                            | PVE           | All                                  |
     | 24.  | [Ubuntu Server support][USS]                      | USS           | All                                  |
 
@@ -492,7 +492,7 @@ subjected from before the release of the new binary.
     [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
     [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
     [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
@@ -529,8 +529,8 @@ subjected from before the release of the new binary.
     | 7.   | [FreeBSD booting performance test][BFB]                  | BFB           | All                                  |
     | 8.   | [Proxmox booting performance test][BPM]                  | BPM           | All                                  |
     | 9.   | [Ubuntu Server booting performance test][BUS]            | BUS           | All                                  |
-    | 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All                                  |
-    | 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All                                  |
+    | 10.  | [OPNSense (serial output) booting performance test][BOS] | BOS           | All                                  |
+    | 11.  | [OPNSense (VGA output) booting performance test][BOV]    | BOV           | All                                  |
     | 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All                                  |
     | 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All                                  |
 
@@ -543,8 +543,8 @@ subjected from before the release of the new binary.
     [BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
     [BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
     [BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-    [BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-    [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+    [BOS]: ../../unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+    [BOV]: ../../unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
@@ -573,7 +573,7 @@ subjected from before the release of the new binary.
     | 20.  | [USB detection][UDT]                  | UDT           | All                                  |
     | 21.  | [USB booting][UBT]                    | UBT           | All                                  |
     | 22.  | [pfSense support][PFS]                | PFS           | All                                  |
-    | 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
+    | 23.  | [OPNSense support][OPN]               | OPN           | All                                  |
     | 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
     | 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
     | 26. | [Auto boot time-out][BMM]             | BMM           | All                                  |
@@ -605,7 +605,7 @@ subjected from before the release of the new binary.
     [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
     [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
     [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
     [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
@@ -656,8 +656,8 @@ subjected from before the release of the new binary.
     | 7.   | [FreeBSD booting performance test][BFB] | BFB           | All                                |
     | 8.   | [Proxmox booting performance test][BPM] | BPM           | All                                |
     | 9.   | [Ubuntu Server booting performance test][BUS] | BUS           | All                          |
-    | 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All               |
-    | 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All               |
+    | 10.  | [OPNSense (serial output) booting performance test][BOS] | BOS           | All               |
+    | 11.  | [OPNSense (VGA output) booting performance test][BOV]    | BOV           | All               |
     | 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All               |
     | 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               |
 
@@ -670,8 +670,8 @@ subjected from before the release of the new binary.
     [BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
     [BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
     [BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-    [BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-    [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+    [BOS]: ../../unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+    [BOV]: ../../unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
@@ -701,7 +701,7 @@ subjected from before the release of the new binary.
     | 20.  | [USB detection][UDT]                  | UDT           | All                                  |
     | 21.  | [USB booting][UBT]                    | UBT           | All                                  |
     | 22.  | [pfSense support][PFS]                | PFS           | All                                  |
-    | 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
+    | 23.  | [OPNSense support][OPN]               | OPN           | All                                  |
     | 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
     | 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
 
@@ -726,7 +726,7 @@ subjected from before the release of the new binary.
     [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
     [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
     [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
 
@@ -768,8 +768,8 @@ subjected from before the release of the new binary.
     | 7.   | [FreeBSD booting performance test][BFB] | BFB           | All                                |
     | 8.   | [Proxmox booting performance test][BPM] | BPM           | All                                |
     | 9.   | [Ubuntu Server booting performance test][BUS] | BUS           | All                          |
-    | 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All               |
-    | 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All               |
+    | 10.  | [OPNSense (serial output) booting performance test][BOS] | BOS           | All               |
+    | 11.  | [OPNSense (VGA output) booting performance test][BOV]    | BOV           | All               |
     | 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All               |
     | 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               |
 
@@ -782,8 +782,8 @@ subjected from before the release of the new binary.
     [BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
     [BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
     [BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-    [BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-    [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+    [BOS]: ../../unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+    [BOV]: ../../unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md
 
@@ -812,7 +812,7 @@ subjected from before the release of the new binary.
     | 20.  | [USB detection][UDT]                  | UDT           | All                                  |
     | 21.  | [USB booting][UBT]                    | UBT           | All                                  |
     | 22.  | [pfSense support][PFS]                | PFS           | All                                  |
-    | 23.  | [OPNsense support][OPN]               | OPN           | All                                  |
+    | 23.  | [OPNSense support][OPN]               | OPN           | All                                  |
     | 24.  | [Proxmox support][PVE]                | PVE           | All                                  |
     | 25.  | [Ubuntu Server support][USS]          | USS           | All                                  |
     | 26. | [Auto boot time-out][BMM]             | BMM           | All                                  |
@@ -844,7 +844,7 @@ subjected from before the release of the new binary.
     [UDT]: ../../unified-test-documentation/dasharo-compatibility/31O-usb-detect.md
     [UBT]: ../../unified-test-documentation/dasharo-compatibility/31N-usb-boot.md
     [PFS]: ../../unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
-    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+    [OPN]: ../../unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
     [PVE]: ../../unified-test-documentation/dasharo-compatibility/348-proxmox-support.md
     [USS]: ../../unified-test-documentation/dasharo-compatibility/349-ubuntu-server-support.md
     [CPU]: ../../unified-test-documentation/dasharo-compatibility/31T-cpu-status.md
@@ -895,8 +895,8 @@ subjected from before the release of the new binary.
     | 7.   | [FreeBSD booting performance test][BFB] | BFB           | All                                |
     | 8.   | [Proxmox booting performance test][BPM] | BPM           | All                                |
     | 9.   | [Ubuntu Server booting performance test][BUS] | BUS           | All                          |
-    | 10.  | [OPNsense (serial output) booting performance test][BOS] | BOS           | All               |
-    | 11.  | [OPNsense (VGA output) booting performance test][BOV]    | BOV           | All               |
+    | 10.  | [OPNSense (serial output) booting performance test][BOS] | BOS           | All               |
+    | 11.  | [OPNSense (VGA output) booting performance test][BOV]    | BOV           | All               |
     | 12.  | [pfSense (serial output) booting performance test][BPS]  | BPS           | All               |
     | 13.  | [pfSense (VGA output) booting performance test][BPV]     | BPV           | All               |
 
@@ -909,7 +909,7 @@ subjected from before the release of the new binary.
     [BFB]: ../../unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
     [BPM]: ../../unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
     [BUS]: ../../unified-test-documentation/dasharo-performance/411-ubuntu-server-booting-performance-test.md
-    [BOS]: ../../unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-    [BOV]: ../../unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+    [BOS]: ../../unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+    [BOV]: ../../unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
     [BPS]: ../../unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
     [BPV]: ../../unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md

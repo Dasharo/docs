@@ -13,34 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## VBO006.001 Verified boot support (firmware)
-
-**Test description**
-
-Verified Boot is a method of verifying that the firmware components come from a
-trusted source. This test aims to confirm that verified boot is enabled and
-functional.
-
-**Test setup**
-
-1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
-1. Disable Secure Boot.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Read coreboot loading logs.
-
-**Expected result**
-
-The logs should indicate that vboot is enabled and verstage has been entered:
-
-```text
-VBOOT: Loading verstage.
-```
-
-## VBO006.002 Verified boot support (Ubuntu)
+## VBO006.201 Verified boot support (Ubuntu)
 
 **Test description**
 
@@ -86,33 +59,7 @@ PCR-0 2547cc736e951fa4919853c43ae890861a3b3264000000000000000000000000 SHA256 [V
 PCR-1 e3324765a25f8a59c7c20cc35c1c33a8ab384159d2b40a269246b0b4491cdf89 SHA256 [VBOOT: GBB HWID]
 ```
 
-## VBO007.001 Verified boot: Booting from Slot A (firmware)
-
-**Test description**
-
-If the signatures for firmware stored in vboot Slot A are correct, vboot should
-proceed to boot from Slot A.
-
-**Test setup**
-
-1. Proceed with the
-    [Generic test setup: firmware](../generic-test-setup.md#firmware).
-1. Disable Secure Boot.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Read coreboot loading logs.
-
-**Expected result**
-
-The logs should indicate that vboot has chosen to boot from slot A:
-
-```text
-Slot A is selected
-```
-
-## VBO007.002 Verified boot: Booting from Slot A (Ubuntu)
+## VBO007.201 Booting from Slot A (Ubuntu)
 
 **Test description**
 
@@ -152,7 +99,7 @@ slot A:
 Slot A is selected
 ```
 
-## VBO008.001 Verified boot: Booting from Recovery (Ubuntu)
+## VBO008.201 Booting from Recovery (Ubuntu)
 
 **Test description**
 
@@ -290,7 +237,7 @@ command:
 After pressing `ENTER` the DUT should immediately move to the next stages of
 booting.
 
-## VBO011.001 Booting after flashing with valid binary (Ubuntu)
+## VBO011.001 Recovery popup is not displayed when correctly signed firmware is flashed in RW_A
 
 **Test description**
 

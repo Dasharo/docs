@@ -650,7 +650,7 @@ nav:
               - '[NBT] Network boot utilities': unified-test-documentation/dasharo-compatibility/315b-netboot-utilities.md
               - '[NVI] NVIDIA Graphics support': unified-test-documentation/dasharo-compatibility/319-nvidia-graphics.md
               - '[NVM] NVME support': unified-test-documentation/dasharo-compatibility/312-nvme-support.md
-              - '[OPN] OPNsense support': unified-test-documentation/dasharo-compatibility/342-OPNsense-support.md
+              - '[OPN] OPNSense support': unified-test-documentation/dasharo-compatibility/342-OPNSense-support.md
               - '[PBT] Petitboot payload support': unified-test-documentation/dasharo-compatibility/31V-petitboot-payload-support.md
               - '[PEX] PCI Express ports support': unified-test-documentation/dasharo-compatibility/31R-pcie-ports.md
               - '[PFS] pfSense support': unified-test-documentation/dasharo-compatibility/341-pfSense-support.md
@@ -697,8 +697,8 @@ nav:
               #pre-commit-sort-start
               - '[BDE] Debian booting performance test': unified-test-documentation/dasharo-performance/408-debian-booting-performance-test.md
               - '[BFB] FreeBSD booting performance test': unified-test-documentation/dasharo-performance/409-freebsd-booting-performance-test.md
-              - '[BOS] OPNsense (serial output) booting performance test': unified-test-documentation/dasharo-performance/412-opnsense-serial-booting-performance-test.md
-              - '[BOV] OPNsense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/413-opnsense-vga-booting-performance-test.md
+              - '[BOS] OPNSense (serial output) booting performance test': unified-test-documentation/dasharo-performance/412-OPNSense-serial-booting-performance-test.md
+              - '[BOV] OPNSense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/413-OPNSense-vga-booting-performance-test.md
               - '[BPM] Proxmox booting performance test': unified-test-documentation/dasharo-performance/410-proxmox-booting-performance-test.md
               - '[BPS] pfSense (serial output) booting performance test': unified-test-documentation/dasharo-performance/414-pfsense-serial-booting-performance-test.md
               - '[BPV] pfSense (VGA output) booting performance test': unified-test-documentation/dasharo-performance/415-pfsense-vga-booting-performance-test.md

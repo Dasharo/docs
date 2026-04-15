@@ -49,7 +49,7 @@ be distinguished:
 * Fedora 41
 * FreeBSD 13.2
 * Proxmox VE 7.4
-* OPNsense 23.01
+* OPNSense 23.01
 * pfSense CE 2.6.0
 
 `* Unless specified otherwise in the test`

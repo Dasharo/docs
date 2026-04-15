@@ -17,7 +17,7 @@
     - Serial number (also via `dmidecode`)
     - BGRT bootsplash logo hash (located in `/sys/firmware/acpi/bgrt`)
 
-## CUP001.001 Capsule Update With Wrong Keys (UEFI Shell)
+## CUP001.001 Capsule Update With Wrong Keys
 
 **Test description**
 
@@ -57,7 +57,7 @@ instructions given in our
 
 ---
 
-## CUP002.001 Capsule Update With Wrong GUID (UEFI Shell)
+## CUP002.001 Capsule Update With Wrong GUID
 
 **Test description**
 
@@ -208,7 +208,7 @@ instructions given in our
 
 ---
 
-## CUP170.001 Verifying UUID (Ubuntu)
+## CUP170.201 Verifying UUID (Ubuntu)
 
 **Test description**
 
@@ -239,7 +239,7 @@ instructions given in our
 
 ---
 
-## CUP180.001 Verifying Serial Number (Ubuntu)
+## CUP180.201 Verifying Serial Number (Ubuntu)
 
 **Test description**
 
@@ -270,7 +270,7 @@ instructions given in our
 
 ---
 
-## CUP190.001 Verifying If Custom Logo Persists Across Updates (Ubuntu)
+## CUP190.201 Verifying If Custom Logo Persists Across updates (Ubuntu)
 
 **Test description**
 

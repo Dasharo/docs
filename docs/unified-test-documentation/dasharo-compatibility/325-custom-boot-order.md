@@ -7,7 +7,7 @@
 1. Proceed with the
     [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
-## CBO001.001 Custom boot order (SeaBIOS)
+## CBO001.102 Custom boot order (SeaBIOS)
 
 **Test description**
 
@@ -54,7 +54,7 @@ Select boot device:
 7. Payload [memtest]
 ```
 
-## CBO001.002 Custom boot order (edk2)
+## CBO001.101 Custom Boot Order (EDK2 UEFI)
 
 **Test description**
 

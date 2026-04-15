@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## SUSP001.201 Platform suspend and resume (Ubuntu, wakeup flag)
+## SUSP001.201 Platform suspend and resume (Ubuntu) (wakeup flag)
 
 **Test description**
 
@@ -116,7 +116,7 @@ is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP001.203 Platform suspend and resume (QubesOS, wakeup flag)
+## SUSP001.203 Platform suspend and resume (Qubes OS) (wakeup flag)
 
 **Test description**
 
@@ -176,7 +176,7 @@ this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP002.201 Platform suspend and resume (Ubuntu, press key)
+## SUSP002.201 Platform suspend and resume (Ubuntu) (press key)
 
 **Test description**
 
@@ -273,7 +273,7 @@ on the keyboard is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP002.203 Platform suspend and resume (QubesOS, press key)
+## SUSP002.203 Platform suspend and resume (Qubes OS) (press key)
 
 **Test description**
 
@@ -327,7 +327,7 @@ keyboard is tested in this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP003.201 Platform suspend and resume (Ubuntu, push power button)
+## SUSP003.201 Platform suspend and resume (Ubuntu) (power button)
 
 **Test description**
 
@@ -424,7 +424,7 @@ power button is tested in this case.
     /usr/lib/pm-utils/sleep.d/000kernel-change resume suspend: success.
     ```
 
-## SUSP003.203 Platform suspend and resume (QubesOS, push power button)
+## SUSP003.203 Platform suspend and resume (Qubes OS) (power button)
 
 **Test description**
 
@@ -478,7 +478,7 @@ tested in this case.
     Feb 10 16:39:10 dom0 systemd-sleep[14729]: System resumed.
     ```
 
-## SUSP004.201 Platform suspend and resume (Ubuntu, Wake-on-LAN)
+## SUSP004.201 Platform suspend and resume (Ubuntu) (Wake-on-LAN)
 
 **Test description**
 

@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BUB001.001 Boot Ubuntu LTS from disk after cold-boot
+## BUB001.201 Boot Ubuntu LTS from disk after cold-boot (Ubuntu)
 
 **Test description**
 
@@ -43,7 +43,7 @@ DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUB002.001 Boot Ubuntu LTS from disk after warm-boot
+## BUB002.201 Boot Ubuntu LTS from disk after warm-boot (Ubuntu)
 
 **Test description**
 
@@ -72,7 +72,7 @@ DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BUB003.001 Boot Ubuntu LTS from disk after reboot
+## BUB003.201 Boot Ubuntu LTS from disk after reboot (Ubuntu)
 
 **Test description**
 

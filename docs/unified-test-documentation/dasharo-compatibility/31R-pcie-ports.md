@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## PEX001.001 PCI Express card detection (Ubuntu)
+## PEX001.201 PCI Express card detection (Ubuntu)
 
 **Test description**
 
@@ -52,7 +52,7 @@ The output of the command should contain the plugged device name:
 
 The exact name and revision may be different depending on hardware configuration.
 
-## PEX001.002 PCI Express card detection (Windows)
+## PEX001.301 PCI Express card detection (Windows)
 
 **Test description**
 

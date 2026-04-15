@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## SPM001.001 2x S0ix suspend cycle (Battery) (Ubuntu)
+## SPM001.201 2x S0ix suspend cycle (Battery) (Ubuntu)
 
 **Test description**
 
@@ -52,7 +52,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM001.002 2x S0ix suspend cycle (Battery) (Windows)
+## SPM001.301 2x S0ix suspend cycle (Battery) (Windows)
 
 **Test description**
 
@@ -91,7 +91,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM002.001 2x S0ix suspend cycle (AC) (Ubuntu)
+## SPM002.201 2x S0ix suspend cycle (AC) (Ubuntu)
 
 **Test description**
 
@@ -130,7 +130,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM002.002 2x S0ix suspend cycle (AC) (Windows)
+## SPM002.301 2x S0ix suspend cycle (AC) (Windows)
 
 **Test description**
 
@@ -169,7 +169,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM003.001 2x S3 suspend cycle (Battery) (Ubuntu)
+## SPM003.201 2x S3 suspend cycle (Battery) (Ubuntu)
 
 **Test description**
 
@@ -208,7 +208,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM003.002 2x S3 suspend cycle (Battery) (Windows)
+## SPM003.301 2x S3 suspend cycle (Battery) (Windows)
 
 **Test description**
 
@@ -247,7 +247,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM004.001 2x S3 suspend cycle (AC) (Ubuntu)
+## SPM004.201 2x S3 suspend cycle (AC) (Ubuntu)
 
 **Test description**
 
@@ -286,7 +286,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM004.002 2x S3 suspend cycle (AC) (Windows)
+## SPM004.301 2x S3 suspend cycle (AC) (Windows)
 
 **Test description**
 
@@ -325,7 +325,7 @@ Sleep mode should be entered correctly on each attempt.
 Waking up should proceed without issues on each attempt. All basic functionality
 (i.e. builtin keyboard, touchpad, display etc) should keep working.
 
-## SPM005.001 2x warmboot cycle (Battery) (Ubuntu)
+## SPM005.201 2x warmboot cycle (Battery) (Ubuntu)
 
 **Test description**
 
@@ -364,7 +364,7 @@ Powering on should proceed without issues on each attempt. All basic
 functionality (i.e. builtin keyboard, touchpad, display etc) should keep
 working.
 
-## SPM005.002 2x warmboot cycle (Battery) (Windows)
+## SPM005.301 2x warmboot cycle (Battery) (Windows)
 
 **Test description**
 
@@ -403,7 +403,7 @@ Powering on should proceed without issues on each attempt. All basic
 functionality (i.e. builtin keyboard, touchpad, display etc) should keep
 working.
 
-## SPM006.001 2x warmboot cycle (AC) (Ubuntu)
+## SPM006.201 2x warmboot cycle (AC) (Ubuntu)
 
 **Test description**
 
@@ -442,7 +442,7 @@ Powering on should proceed without issues on each attempt. All basic
 functionality (i.e. builtin keyboard, touchpad, display etc) should keep
 working.
 
-## SPM006.002 2x warmboot cycle (AC) (Windows)
+## SPM006.301 2x warmboot cycle (AC) (Windows)
 
 **Test description**
 

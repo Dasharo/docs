@@ -1,4 +1,4 @@
-# Dasharo Performance: OPNsense (VGA output) booting performance test
+# Dasharo Performance: OPNSense (VGA output) booting performance test
 
 ## Test cases common documentation
 
@@ -13,17 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BOV001.001 Boot OPNsense (VGA output) from disk after cold-boot
+## BOV001.503 Boot OPNSense (VGA output) from disk after cold-boot (OPNSense)
 
 **Test description**
 
-This test aims to verify that OPNsense (VGA output) could be booted from the
+This test aims to verify that OPNSense (VGA output) could be booted from the
 disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense VGA
+1. `OPERATING_SYSTEM` = OPNSense VGA
 
 **Test setup**
 
@@ -43,18 +43,18 @@ disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOV002.001 Boot OPNsense (VGA output) stable from disk after warm-boot
+## BOV002.503 Boot OPNSense (VGA output) from disk after warm-boot (OPNSense)
 
 **Test description**
 
-This test aims to verify that OPNsense (VGA output) stable could be booted
+This test aims to verify that OPNSense (VGA output) stable could be booted
 from the disk on the DUT after warm-boot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense VGA
+1. `OPERATING_SYSTEM` = OPNSense VGA
 
 **Test setup**
 
@@ -73,18 +73,18 @@ iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOV003.001 Boot OPNsense (VGA output) stable from disk after reboot
+## BOV003.503 Boot OPNSense (VGA output) from disk after reboot (OPNSense)
 
 **Test description**
 
-This test aims to verify that OPNsense (VGA output) stable could be booted
+This test aims to verify that OPNSense (VGA output) stable could be booted
 from the disk on the DUT after reboot. The test is performed in multiple
 iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense VGA
+1. `OPERATING_SYSTEM` = OPNSense VGA
 
 **Test setup**
 

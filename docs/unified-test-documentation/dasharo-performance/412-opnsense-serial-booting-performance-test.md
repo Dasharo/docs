@@ -1,4 +1,4 @@
-# Dasharo Performance: OPNsense (serial output) booting performance test
+# Dasharo Performance: OPNSense (serial output) booting performance test
 
 ## Test cases common documentation
 
@@ -13,17 +13,17 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BOS001.001 Boot OPNsense (serial output) from disk after cold-boot
+## BOS001.503 Boot OPNSense (serial output) from disk after cold-boot (OPNSense)
 
 **Test description**
 
-This test aims to verify that OPNsense (serial output) could be booted from the
+This test aims to verify that OPNSense (serial output) could be booted from the
 disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense serial
+1. `OPERATING_SYSTEM` = OPNSense serial
 
 **Test setup**
 
@@ -43,17 +43,17 @@ disk on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOS002.001 Boot OPNsense (serial output) from disk after warm-boot
+## BOS002.503 Boot OPNSense (serial output) from disk after warm-boot (OPNSense)
 
 **Test description**
 
-This test aims to verify that OPNsense (serial output) could be booted from the
+This test aims to verify that OPNSense (serial output) could be booted from the
 disk on the DUT after warm-boot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense serial
+1. `OPERATING_SYSTEM` = OPNSense serial
 
 **Test setup**
 
@@ -72,17 +72,17 @@ disk on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BOS003.001 Boot OPNsense (serial output) from disk after reboot
+## BOS003.503 Boot OPNSense (serial output) from disk after reboot (OPNSense)
 
 **Test description**
 
-This test aims to verify that OPNsense (serial output) could be booted from the
+This test aims to verify that OPNSense (serial output) could be booted from the
 disk on the DUT after reboot. The test is performed in multiple iterations.
 
 **Test configuration data**
 
 1. `FIRMWARE` = Dasharo
-1. `OPERATING_SYSTEM` = OPNsense serial
+1. `OPERATING_SYSTEM` = OPNSense serial
 
 **Test setup**
 

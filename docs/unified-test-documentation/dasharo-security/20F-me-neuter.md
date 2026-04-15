@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## MNE001.001 Intel ME mode option is available and has the correct default state
+## MNE001.001 ME disable option is available and has the correct default state
 
 **Test description**
 
@@ -42,11 +42,11 @@ platform with the Dasharo firmware is correct.
 
 The `Intel ME mode` field should inform that the current state is `Enabled`.
 
-## MNE002.201 Intel ME mode option Enabled works correctly (Ubuntu)
+## MNE002.201 ME disable option off works correctly (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## MNE004.201 Intel ME mode option Disable (HAP) works correctly (Ubuntu)
+## MNE004.201 ME disable HAP bit option works correctly (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 

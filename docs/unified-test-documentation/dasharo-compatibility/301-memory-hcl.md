@@ -1,6 +1,6 @@
 # Dasharo compatibility: Memory HCL
 
-## HCL001.001 Memory HCL - boot into OS (Ubuntu)
+## HCL001.201 Memory HCL - boot into OS (Ubuntu)
 
 **Test description**
 

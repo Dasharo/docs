@@ -201,7 +201,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [Dasharo BIOS lock menu is missing](https://github.com/Dasharo/dasharo-issues/issues/291)
 - [iPXE entry doesn't occur in setup menu](https://github.com/Dasharo/dasharo-issues/issues/289)
-- [Impossibility of pfSense/OPNsense console versions installation](https://github.com/Dasharo/dasharo-issues/issues/289)
+- [Impossibility of pfSense/OPNSense console versions installation](https://github.com/Dasharo/dasharo-issues/issues/289)
 
 ### Known issues
 

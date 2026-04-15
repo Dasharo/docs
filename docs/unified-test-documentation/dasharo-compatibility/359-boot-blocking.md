@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BBB001.001 Boot blocking (charger disconnected) (Ubuntu)
+## BBB001.201 Boot blocking (charger disconnected) (Ubuntu)
 
 **Test description**
 
@@ -80,7 +80,7 @@ stress-ng: info:  [25309] dispatching hogs: 16 cpu
 
     ![boot_block](../../images/battery_block_popup.jpg)
 
-## BBB001.002 Boot blocking (charger connected) (Ubuntu)
+## BBB002.201 Boot blocking (charger connected) (Ubuntu)
 
 **Test description**
 
@@ -137,7 +137,7 @@ done
 1. After reboot, the warning message should not appear and the DUT should boot
     normally.
 
-## BBB002.001 Battery not connected warning (Firmware)
+## BBB003.101 Battery not connected warning (EDK2 UEFI)
 
 **Test description**
 

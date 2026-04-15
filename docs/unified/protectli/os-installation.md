@@ -72,19 +72,19 @@ Official documentation can be found
 Installer images can be downloaded from the official
 [website](https://proxmox.com/en/downloads/proxmox-virtual-environment/iso).
 
-## OPNsense
+## OPNSense
 
 ### Installation documentation
 
 Official documentation can be found
-[here](https://docs.opnsense.org/manual/install.html).
+[here](https://docs.OPNSense.org/manual/install.html).
 
-[Dasharo OPNsense 25.1 installation guide](./os-installation-opnsense.md)
+[Dasharo OPNSense 25.1 installation guide](./os-installation-OPNSense.md)
 
 ### Installation images
 
 Installer images can be downloaded from the official
-[website](https://opnsense.org/download/).
+[website](https://OPNSense.org/download/).
 
 ## XCP-NG
 
