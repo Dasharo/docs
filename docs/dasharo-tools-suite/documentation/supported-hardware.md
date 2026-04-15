@@ -33,4 +33,3 @@ The table below is generated from DTS metadata mapping in `dts-configs`
 (see `Dasharo/dts-configs#39`) to reduce manual drift in this page.
 
 --8<-- "dasharo-tools-suite/documentation/_generated-supported-hardware-matrix.md"
-
