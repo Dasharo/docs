@@ -28,8 +28,8 @@ grade C216 chipset.
 
 At the moment, Dasharo deployment/recovery support for this variant is focused on the
 **OptiPlex 7010/9010 SFF shared baseline**. Other form factors
-(DT/MT/USFF) may share parts of the platform but require
-fully supported in the same way.
+(DT/MT/USFF) may share parts of the platform but require separate validation
+work before being treated as fully supported in the same way.
 
 |                 | MT - Medium Tower           | DT - Desktop                | SFF - Small Form Factor | USFF - Ultra Small Form Factor |
 | --------------- | --------------------------- | --------------------------- | ----------------------- | ------------------------------ |
