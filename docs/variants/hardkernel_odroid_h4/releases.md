@@ -59,7 +59,6 @@ Test results for this release can be found
 - [Empty boot entry in Boot Menu](https://github.com/Dasharo/dasharo-issues/issues/1651)
 - [Long boot after reset](https://github.com/Dasharo/dasharo-issues/issues/1544)
 - [Can't shutdown via power button in BIOS](https://github.com/Dasharo/dasharo-issues/issues/1513)
-- [Dasharo (Slim Bootloader + UEFI) freezes when trying to read flash](https://github.com/Dasharo/dasharo-issues/issues/1494)
 - [TCG2 Configuration missing when changing Intel ME mode Disabled (HAP) -> Enabled](https://github.com/Dasharo/dasharo-issues/issues/1106)
 
 ### Binaries
