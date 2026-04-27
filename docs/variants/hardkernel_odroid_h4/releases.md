@@ -50,6 +50,10 @@ Test results for this release can be found
 - [Dismissing a pop-up in UEFI payload caused instant booting](https://github.com/Dasharo/dasharo-issues/issues/1539)
 - [Recovery of damaged variable storage causing random settings reset](https://github.com/Dasharo/dasharo-issues/issues/1293)
 
+### Known issues
+
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
+
 ### Binaries
 
 If you wish to use a Net Card module, please use the files suffixed with

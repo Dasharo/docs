@@ -47,6 +47,7 @@ Test results for this release can be found
 - [Qubes OS spd5118 error in dmesg](https://github.com/Dasharo/dasharo-issues/issues/1493)
 - [NUCBOX unexpected dmesg errors](https://github.com/Dasharo/dasharo-issues/issues/1531)
 - [Wake by USB keyboard not working in Qubes](https://github.com/Dasharo/dasharo-issues/issues/731)
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
 
 ### Binaries
 

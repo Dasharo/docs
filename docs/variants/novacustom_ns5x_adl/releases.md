@@ -57,6 +57,7 @@ Test results for this release can be found
 - [Turning wifi/bt off inside BIOS leads to an ACPI error message while system start on Gentoo Linux](https://github.com/Dasharo/dasharo-issues/issues/638)
 - [Hibernation fails with UG69PD2 Rev.A1 docking station](https://github.com/Dasharo/dasharo-issues/issues/1501)
 - [QubesOS FWUPD gets wrong firmware version; local update fails](https://github.com/Dasharo/dasharo-issues/issues/1802)
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
 
 ### Binaries
 

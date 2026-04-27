@@ -59,6 +59,7 @@ Test results for this release can be found
 - [Hibernation fails with UG69PD2 Rev.A1 docking station](https://github.com/Dasharo/dasharo-issues/issues/1501)
 - [pts/compression-7zip performance worse on "performance" mode](https://github.com/Dasharo/dasharo-issues/issues/1794)
 - [QubesOS FWUPD gets wrong firmware version; local update fails](https://github.com/Dasharo/dasharo-issues/issues/1802)
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
 
 ### Binaries
 
