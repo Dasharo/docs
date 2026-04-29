@@ -221,6 +221,20 @@ The following sections describe how to use all of the enabled features:
 The method of setting and using serial connection is described in the
 [Serial connection guide](../../transparent-validation/rte/v1.1.0/serial-port-connection-guide.md).
 
+=== "V1000 series"
+
+    In the case of V1000 series there's a bug, which results in `ttyUSB0` being
+    unavailable if RTE gets rebooted when the DUT is sharing its serial via USB
+    Type-C serial connection. A workaround requires:
+
+
+    - ensuring that RTE is on
+    - disconnecting power supply from the V1000
+    - disconnecting the USB Type-C-to-USB Type-A cable from RTE
+    - enabling power supply for the V1000
+    - connecting the USB Type-C-to-USB Type-A cable to RTE
+    - The `ttyUSB0` will be available until the next RTE reboot.
+
 ### Power supply controlling
 
 === "VP2410"
