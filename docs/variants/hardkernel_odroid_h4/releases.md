@@ -50,6 +50,17 @@ Test results for this release can be found
 - [Dismissing a pop-up in UEFI payload caused instant booting](https://github.com/Dasharo/dasharo-issues/issues/1539)
 - [Recovery of damaged variable storage causing random settings reset](https://github.com/Dasharo/dasharo-issues/issues/1293)
 
+### Known issues
+
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
+- [Low quality FUM warning](https://github.com/Dasharo/dasharo-issues/issues/1777)
+- [TPM is cleared after HAP disabling and then reenabling ME](https://github.com/Dasharo/dasharo-issues/issues/1784)
+- [Changing both Intel ME state SMM BIOS write protection results in no video output requiring second reboot](https://github.com/Dasharo/dasharo-issues/issues/1778)
+- [Empty boot entry in Boot Menu](https://github.com/Dasharo/dasharo-issues/issues/1651)
+- [Long boot after reset](https://github.com/Dasharo/dasharo-issues/issues/1544)
+- [Can't shutdown via power button in BIOS](https://github.com/Dasharo/dasharo-issues/issues/1513)
+- [TCG2 Configuration missing when changing Intel ME mode Disabled (HAP) -> Enabled](https://github.com/Dasharo/dasharo-issues/issues/1106)
+
 ### Binaries
 
 If you wish to use a Net Card module, please use the files suffixed with
