@@ -128,7 +128,6 @@ Closed-source code percentage: **84.4%**
 | (empty) | null | 36 | none | empty |
 | (empty) | null | 4237604 | none | empty |
 
-
 ## v0.9.0
 
 Openness Score for novacustom_nuc_box_mtl_v0.9.0.rom

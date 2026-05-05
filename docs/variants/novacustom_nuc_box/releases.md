@@ -38,7 +38,7 @@ Test results for this release can be found
 - [NUCBOX unexpected dmesg errors on v0.9.0-rc4](https://github.com/Dasharo/dasharo-issues/issues/1531)
 - [Better RAM string in DTS, add separators](https://github.com/Dasharo/dasharo-issues/issues/1559)
 - [GRUB installation fails sometimes](https://github.com/Dasharo/dasharo-issues/issues/1594)
-- [PCIe controller does not work with linux withouth disabling mmoconf](https://github.com/Dasharo/dasharo-issues/issues/1690)
+- [PCIe controller does not work with linux without disabling mmoconf](https://github.com/Dasharo/dasharo-issues/issues/1690)
 - [NUC Box: OS doesn't boot with eGPU on m2 PCIe](https://github.com/Dasharo/dasharo-issues/issues/1811)
 - [NUC Box: eGPU is unstable with Thunderbolt 4](https://github.com/Dasharo/dasharo-issues/issues/1812)
 - [Can't update ME on NUC BOX: Error occurred while trying to create container EspiOobNvar. Reason: 'espi_oob_enabled''](https://github.com/Dasharo/dasharo-issues/issues/1830)
@@ -58,8 +58,6 @@ Test results for this release can be found
 [novacustom_nuc_box_mtl_v0.9.1.rom][novacustom_nuc_box_mtl_v0.9.1.rom_file]{.md-button}
 [sha256][novacustom_nuc_box_mtl_v0.9.1.rom_hash]{.md-button}
 [sha256.sig][novacustom_nuc_box_mtl_v0.9.1.rom_sig]{.md-button}
-
-
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
