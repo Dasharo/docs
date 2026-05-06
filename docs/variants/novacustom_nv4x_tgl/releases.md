@@ -542,9 +542,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.5.0_sha]{ .md-button }
 [sha256.sig][v0.5.0_sig]{ .md-button }
 
-[v0.5.0_rom]:https://cloud.3mdeb.com/index.php/s/ywZtKFR3J3Y3sbG
-[v0.5.0_sha]:https://cloud.3mdeb.com/index.php/s/6BeLRkSaawB42T6
-[v0.5.0_sig]:https://cloud.3mdeb.com/index.php/s/xM8FcCsMc8kfmKB
+[v0.5.0_rom]:https://cloud.3mdeb.com/index.php/s/MtTMrPjHARQSsjH
+[v0.5.0_sha]:https://cloud.3mdeb.com/index.php/s/7AdXD2eQjC3F7pf
+[v0.5.0_sig]:https://cloud.3mdeb.com/index.php/s/7AdXD2eQjC3F7pf
 
 ### SBOM (Software Bill of Materials)
 
@@ -583,9 +583,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.4.0_sha]{ .md-button }
 [sha256.sig][v0.4.0_sig]{ .md-button }
 
-[v0.4.0_rom]:https://cloud.3mdeb.com/index.php/s/MZnCrbWqaKPc8st
-[v0.4.0_sha]:https://cloud.3mdeb.com/index.php/s/2SkwmGFoyAf2e7d
-[v0.4.0_sig]:https://cloud.3mdeb.com/index.php/s/HZxynzX3zDscTXr
+[v0.4.0_rom]:https://cloud.3mdeb.com/index.php/s/T36bBoyooKnErq9
+[v0.4.0_sha]:https://cloud.3mdeb.com/index.php/s/7iemJtrt3ddJnsf
+[v0.4.0_sig]:https://cloud.3mdeb.com/index.php/s/7iemJtrt3ddJnsf
 
 ### SBOM (Software Bill of Materials)
 
@@ -617,9 +617,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.3.0_sha]{ .md-button }
 [sha256.sig][v0.3.0_sig]{ .md-button }
 
-[v0.3.0_rom]:https://cloud.3mdeb.com/index.php/s/D7atioMH5Ega6JZ
-[v0.3.0_sha]:https://cloud.3mdeb.com/index.php/s/j7RxnDWEzreD6w3
-[v0.3.0_sig]:https://cloud.3mdeb.com/index.php/s/NLbgZiyiMFRyZt7
+[v0.3.0_rom]:https://cloud.3mdeb.com/index.php/s/xyFQPt3to5Xqqe2
+[v0.3.0_sha]:https://cloud.3mdeb.com/index.php/s/f9e4rQJJ6A7xyz9
+[v0.3.0_sig]:https://cloud.3mdeb.com/index.php/s/QewpkteprxTZ25m
 
 ### SBOM (Software Bill of Materials)
 
@@ -652,9 +652,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.2.1_sha]{ .md-button }
 [sha256.sig][v0.2.1_sig]{ .md-button }
 
-[v0.2.1_rom]:https://cloud.3mdeb.com/index.php/s/9f9S9zNHZDYW8NM
-[v0.2.1_sha]:https://cloud.3mdeb.com/index.php/s/q7aZz4LFA6B5byD
-[v0.2.1_sig]:https://cloud.3mdeb.com/index.php/s/YnNXcyQyfKkabDG
+[v0.2.1_rom]:https://cloud.3mdeb.com/index.php/s/rBx3ZM6dCo8ZWnT
+[v0.2.1_sha]:https://cloud.3mdeb.com/index.php/s/G7xEmAEwpyDs88t
+[v0.2.1_sig]:https://cloud.3mdeb.com/index.php/s/CbrHc3pT9nwWrde
 
 ### SBOM (Software Bill of Materials)
 
@@ -693,9 +693,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.2.0_sha]{ .md-button }
 [sha256.sig][v0.2.0_sig]{ .md-button }
 
-[v0.2.0_rom]:https://cloud.3mdeb.com/index.php/s/BnWwH7X8RYinm7x
-[v0.2.0_sha]:https://cloud.3mdeb.com/index.php/s/xrwfNdC9PnfoMEL
-[v0.2.0_sig]:https://cloud.3mdeb.com/index.php/s/yWitrxMRrCHYPE4
+[v0.2.0_rom]:https://cloud.3mdeb.com/index.php/s/TwpYgYrqTY9AbBQ
+[v0.2.0_sha]:https://cloud.3mdeb.com/index.php/s/xKaQHCKn6RGjsrA
+[v0.2.0_sig]:https://cloud.3mdeb.com/index.php/s/xmR6SxrfbpGNQBR
 
 ### SBOM (Software Bill of Materials)
 
@@ -722,10 +722,10 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 [All in one zip][v0.1.2_aio]
 
-[v0.1.2_rom]:https://cloud.3mdeb.com/index.php/s/zzWBdLkF78Ax6pP/download
-[v0.1.2_sha]:https://cloud.3mdeb.com/index.php/s/mYzWRma6CYQpZg6/download
-[v0.1.2_sig]:https://cloud.3mdeb.com/index.php/s/d6bsNzpnWyqLbqC/download
-[v0.1.2_aio]:https://cloud.3mdeb.com/index.php/s/LXQizpTxg7C9g94/download
+[v0.1.2_rom]:https://cloud.3mdeb.com/index.php/s/oQe2zjQyiMFfLpB
+[v0.1.2_sha]:https://cloud.3mdeb.com/index.php/s/d3mEyBjkoQpywB5
+[v0.1.2_sig]:https://cloud.3mdeb.com/index.php/s/42jatQBgcEQjZnq
+[v0.1.2_aio]:https://cloud.3mdeb.com/index.php/s/kxbLbPSG4CgfB8S
 
 ### SBOM (Software Bill of Materials)
 

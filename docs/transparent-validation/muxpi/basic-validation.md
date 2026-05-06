@@ -19,8 +19,7 @@
 ## NanoPi setup
 
 1. Prepare microSD card (minimum 8GB) for NanoPi NEO operating system.
-1. Download and extract image -
-    [link](https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download)
+1. Download and extract image - [link][nanopi-image].
 1. Flash image into microSD card ([Etcher](https://www.balena.io/etcher/)
     tool could be helpful)
 
@@ -32,8 +31,6 @@
 1. Plug ETH cable to RJ45 NanoPi port.
 1. Plug microUSB<->USB cable to muxPi and your machine.
 1. Plug in power supply.
-![](https://cloud.3mdeb.com/index.php/s/o3D5fwWbjscXDw9/preview)
-
 1. Make sure that jumpers are correctly set according to image:
 
     ![](../../images/muxpi1.4_jumpers.jpg)
@@ -133,8 +130,7 @@ prepared by Tizen group (the code is not open yet, but this process is in
 progress). To flash muxPi's microcontroller, follow steps below:
 
 1. Make sure that VDD jumper is left open.
-1. Download binary file -
-[link](https://cloud.3mdeb.com/index.php/s/adnEZLgo2diXkdw/download).
+1. Download binary file - [link][cortex-image].
 1. Copy binary to nanoPi: `scp <path-to-file> root@192.168.4.XXX:/root/`
 1. Update package lists (nanoPi): `apt-get update`
 1. Install stm32flash utility (nanoPi): `sudo apt-get install stm32flash`
@@ -251,3 +247,6 @@ Minicom quick guide:
 ---
 
 _Images source: [Wiki Tizen](http://web.archive.org/web/20230702190152/https://wiki.tizen.org/MuxPi)_
+
+[nanopi-image]: https://cloud.3mdeb.com/index.php/s/Tda8wDTjrCY63gq/download
+[cortex-image]: https://cloud.3mdeb.com/index.php/s/YZYYdfNf9wDDEq3/download

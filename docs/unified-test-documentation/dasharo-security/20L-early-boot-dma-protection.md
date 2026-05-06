@@ -12,8 +12,7 @@
    [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
-1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
 
 ## EDP001.001 Enable early Boot DMA Protection support
@@ -33,8 +32,7 @@ DMA transactions by configuring VT-D/IOMMU should be active.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -129,8 +127,7 @@ PCIe devices DMA transactions by configuring VT-D/IOMMU should be non-active.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -167,3 +164,5 @@ Example output with unwanted results:
 [INFO ]  Setting DMA protection [0x100000000 - 0x00000008afc00000]
 [INFO ]  Successfully enabled VT-d PMR DMA protection
 ```
+
+[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ/download
