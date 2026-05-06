@@ -47,10 +47,6 @@ Test results for this release can be found
 
 ### Binaries
 
-[novacustom_nuc_box_mtl_v0.9.1.cab][novacustom_nuc_box_mtl_v0.9.1.cab_file]{.md-button}
-[sha256][novacustom_nuc_box_mtl_v0.9.1.cab_hash]{.md-button}
-[sha256.sig][novacustom_nuc_box_mtl_v0.9.1.cab_sig]{.md-button}
-
 [novacustom_nuc_box_mtl_v0.9.1.cap][novacustom_nuc_box_mtl_v0.9.1.cap_file]{.md-button}
 [sha256][novacustom_nuc_box_mtl_v0.9.1.cap_hash]{.md-button}
 [sha256.sig][novacustom_nuc_box_mtl_v0.9.1.cap_sig]{.md-button}
@@ -80,9 +76,6 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 - [Intel microcode version MTL C0 0x00000020 0x25 19/03/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-aa-04)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
 
-[novacustom_nuc_box_mtl_v0.9.1.cab_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.1/novacustom_nuc_box_mtl_v0.9.1.cab
-[novacustom_nuc_box_mtl_v0.9.1.cab_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.1/novacustom_nuc_box_mtl_v0.9.1.cab.sha256
-[novacustom_nuc_box_mtl_v0.9.1.cab_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.1/novacustom_nuc_box_mtl_v0.9.1.cab.sha256.sig
 [novacustom_nuc_box_mtl_v0.9.1.cap_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.1/novacustom_nuc_box_mtl_v0.9.1.cap
 [novacustom_nuc_box_mtl_v0.9.1.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.1/novacustom_nuc_box_mtl_v0.9.1.cap.sha256
 [novacustom_nuc_box_mtl_v0.9.1.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.1/novacustom_nuc_box_mtl_v0.9.1.cap.sha256.sig
