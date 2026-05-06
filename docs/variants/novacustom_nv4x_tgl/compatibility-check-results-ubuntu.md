@@ -122,11 +122,6 @@ vendor/Dasharo firmware is shown.
 | 79     | usb/storage-preinserted-disk/by-uuid/3bb6b676-1c4d-4ffb-8ede-e68f513fcdf1| YES              | YES             |
 | 80     | usb/storage-preinserted-disk/by-uuid/452E-652F  | YES              | YES             |
 
-### Logs from tests
-
-Logs are available under this
-[link](https://cloud.3mdeb.com/index.php/s/rrERogJkmGe9N8a).
-
 ## Summary
 
 Test results are the same for vendor and dasharo firmware, with no differences.
