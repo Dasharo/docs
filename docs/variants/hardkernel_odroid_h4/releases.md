@@ -1,6 +1,6 @@
 # Hardkernel ODROID H4 Dasharo Release Notes
 
-This is a Dasharo Pro Package Release. o obtain access to the pre-built binaries,
+This is a Dasharo Pro Package Release. To obtain access to the pre-built binaries,
 you need to [subscribe to the Dasharo Pro Package subscriber](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
 You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/product/1-year-dasharo-pro-package-for-network-appliance/).
 As a subscriber, you will receive access to all firmware updates for the
