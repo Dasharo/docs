@@ -51,8 +51,8 @@ Test results for this release can be found
 
 ### Known issues
 
-- [Hotkeys (e.g KEY_PLAYPAUSE) are not implemented in Qubes OS](https://github.com/QubesOS/qubes-issues/issues/9698)
 - [Existing Qubes installation is not found as bootable after transition back to EDK2](https://github.com/Dasharo/dasharo-issues/issues/713)
+- [Confusing UX when updating heads firmware](https://github.com/Dasharo/dasharo-issues/issues/896)
 
 ### Binaries
 
