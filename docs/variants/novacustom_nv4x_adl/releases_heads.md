@@ -20,6 +20,86 @@ For details about our release process please read
 {{ subscribe_form("310eac18-d302-478f-a617-5f5d65e8e0ac",
 "Subscribe to NovaCustom NV4x 12th Gen Dasharo Release Newsletter") }}
 
+## v0.9.3 - 2026-05-07
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCustom/ADL_12th_Gen/NV41PZ/heads).
+
+### Added
+
+- [Added Dasharo EC module to Heads, enabling embedded controller firmware management from within the firmware](https://github.com/linuxboot/heads/pull/2062)
+- [Added EC firmware version display in System Information menu and recovery shell](https://github.com/linuxboot/heads/pull/2063)
+- [Added integrity gate for TPM reseal and factory reset paths; confirms /boot integrity before allowing secret-sealing or re-ownership](https://github.com/linuxboot/heads/pull/2068)
+- [Added disk and TPM swap detection with guided user recovery flow](https://github.com/linuxboot/heads/pull/2068)
+- [Added TOTP display before prompting for TPM Disk Unlock Key passphrase](https://github.com/linuxboot/heads/pull/2024)
+
+### Changed
+
+- [Switched nv4x_adl coreboot build to Intel IoT FSP (from Client FSP), fixing S3 suspend wake failures and improving Thunderbolt USB fallback detection](https://github.com/Dasharo/coreboot/commit/08b09351ada817fa13339b2c39141f2f5fead1e1)
+- Updated Intel microcode to the February 2026 release
+- [Improved Nitrokey 3 (NK3) device-specific branding and PIN labels throughout the user interface](https://github.com/linuxboot/heads/pull/2088)
+
+### Fixed
+
+- [Qubes OS fails to reboot after S3 suspend on NV41PZ](https://github.com/Dasharo/dasharo-issues/issues/1097)
+- [ACPI Error in dmesg after lid close and open during s0ix sleep cycle (GPE 6B event had no ACPI handler)](https://github.com/Dasharo/dasharo-issues/issues/640)
+- [Some commands in dasharo_ectool failed due to outdated EC protocol (system76 EC replaced with Dasharo EC)](https://github.com/Dasharo/dasharo-issues/issues/648)
+- [TOTP display loop did not flush keyboard input before waiting for ESC key, causing stale input to skip the prompt](https://github.com/linuxboot/heads/pull/2059)
+- [HOTP counter incorrectly reset to 0 during OEM factory reset and device re-ownership](https://github.com/linuxboot/heads/pull/2054)
+- [Disk size incorrectly reported for drives larger than 2 TB (replaced fdisk -l with sysfs-based enumeration)](https://github.com/linuxboot/heads/pull/2035)
+- [Archlinux and Tails distro signing keys contained expired subkeys, causing ISO verification failures in the field](https://github.com/linuxboot/heads/pull/2078)
+
+### Known issues
+
+- [Hotkeys (e.g KEY_PLAYPAUSE) are not implemented in Qubes OS](https://github.com/QubesOS/qubes-issues/issues/9698)
+- [Existing Qubes installation is not found as bootable after transition back to EDK2](https://github.com/Dasharo/dasharo-issues/issues/713)
+
+### Binaries
+
+[sha256][novacustom_nv4x_adl_ec_v0.9.3.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_adl_ec_v0.9.3.rom_sig]{.md-button}
+(novacustom_nv4x_adl_ec_v0.9.3.rom)
+[sha256][novacustom_nv4x_adl_v0.9.3_heads.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_adl_v0.9.3_heads.rom_sig]{.md-button}
+(novacustom_nv4x_adl_v0.9.3_heads.rom)
+This is a Dasharo Pro Package Release. To access the pre-built binaries,
+you need to [subscribe to the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our
+[shop](https://shop.3mdeb.com/product/dasharo-corebootuefi-pro-package-upgrade-to-corebootheads-for-laptop-users/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter, and
+gain entry to the Dasharo Premier Support invite-only live chat on the Matrix
+network, enabling direct engagement with the Dasharo Team and fellow
+subscribers for personalized, priority assistance.
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo heads fork based on v0.2.1 revision 1c4948f6](https://github.com/Dasharo/heads/tree/1c4948f6)
+    + [License](https://github.com/Dasharo/heads/blob/1c4948f6/COPYING)
+- [Dasharo fork of System76 EC based on d198b64 revision d198b641](https://github.com/Dasharo/ec/tree/d198b641/)
+    + [License](https://github.com/Dasharo/ec/blob/d198b641/LICENSE)
+- [Dasharo coreboot fork based on 24.12 revision 281a7fec](https://github.com/Dasharo/coreboot/tree/281a7fec/)
+    + [License](https://github.com/Dasharo/coreboot/blob/281a7fec/LICENSES)
+- [Intel Management Engine version v16.1.40.2765](https://github.com/Dasharo/dasharo-blobs/blob/668d80d1/novacustom/nv4x_adl/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.1](https://github.com/Dasharo/dasharo-blobs/blob/668d80d1/novacustom/nv4x_adl/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package for Raptor Lake-P version IoT RPL-P IPU 2026.1 (6311_00)](https://github.com/intel/FSP/tree/23cf2587/RaptorLakeFspBinPkg/IoT/RaptorLakeP)
+    + [License](https://github.com/intel/FSP/blob/23cf2587/FSP_License.pdf)
+- [Intel microcode version ADL-P R0 0xc 10/07/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260227/intel-ucode/06-9a-04)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260227/license)
+- [Intel microcode version RPL-P J0 0x6134 08/10/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260227/intel-ucode/06-ba-02)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260227/license)
+
+[novacustom_nv4x_adl_ec_v0.9.3.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.3/novacustom_nv4x_adl_ec_v0.9.3.rom.sha256
+[novacustom_nv4x_adl_ec_v0.9.3.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.3/novacustom_nv4x_adl_ec_v0.9.3.rom.sha256.sig
+[novacustom_nv4x_adl_v0.9.3_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.3/novacustom_nv4x_adl_v0.9.3_heads.rom.sha256
+[novacustom_nv4x_adl_v0.9.3_heads.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/heads/v0.9.3/novacustom_nv4x_adl_v0.9.3_heads.rom.sha256.sig
+
 ## v0.9.2 - 2025-06-12
 
 Test results for this release can be found
