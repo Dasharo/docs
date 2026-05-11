@@ -67,6 +67,7 @@ Test results for this release can be found
 - [Early DMA protection cannot be applied to NovaCustom MTL models](https://github.com/Dasharo/dasharo-issues/issues/985)
 
 ### Binaries
+
 [sha256][novacustom_v54x_mtl_igpu_ec_v0.9.1.rom_hash]{.md-button}
 [sha256.sig][novacustom_v54x_mtl_igpu_ec_v0.9.1.rom_sig]{.md-button}
 [sha256][novacustom_v54x_mtl_igpu_v0.9.1_heads.rom_hash]{.md-button}
