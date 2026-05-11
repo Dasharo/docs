@@ -94,13 +94,13 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-key
     + [License](https://github.com/Dasharo/ec/blob/d198b641/LICENSE)
 - [Dasharo coreboot fork based on 24.12 revision 6de027d1](https://github.com/Dasharo/coreboot/tree/6de027d1/)
     + [License](https://github.com/Dasharo/coreboot/blob/6de027d1/LICENSES)
-- [Intel Management Engine version v18.0.10.2285](https://github.com/Dasharo/dasharo-blobs/blob/668d80d1/novacustom/v5x0tu/me.bin)
+- [Intel Management Engine version v18.0.10.2285](https://github.com/Dasharo/dasharo-blobs/blob/8dce7604/novacustom/v5x0tu/me.bin)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel Firmware Support Package for Meteor Lake-H version 2024/04/30 v4122_12](https://github.com/Dasharo/dasharo-blobs/tree/668d80d1/novacustom/v5x0tu/MeteorLakeFspBinPkg)
+- [Intel Firmware Support Package for Meteor Lake-H version 2024/04/30 v4122_12](https://github.com/Dasharo/dasharo-blobs/tree/8dce7604/novacustom/v5x0tu/MeteorLakeFspBinPkg)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/668d80d1/novacustom/v5x0tu/descriptor.bin)
+- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/8dce7604/novacustom/v5x0tu/descriptor.bin)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel microcode version MTL C0 0x00000025 0x28 24/09/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20251111/intel-ucode/06-aa-04)
+- [Intel microcode version MTL C0 0x00000025 0x25 19/03/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20251111/intel-ucode/06-aa-04)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20251111/license)
 
 [novacustom_v54x_mtl_igpu_ec_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/heads/v0.9.1/novacustom_v54x_mtl_igpu_ec_v0.9.1.rom.sha256
