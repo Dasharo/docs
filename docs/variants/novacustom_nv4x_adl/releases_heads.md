@@ -20,7 +20,7 @@ For details about our release process please read
 {{ subscribe_form("310eac18-d302-478f-a617-5f5d65e8e0ac",
 "Subscribe to NovaCustom NV4x 12th Gen Dasharo Release Newsletter") }}
 
-## v0.9.3 - 2026-05-07
+## v0.9.3 - 2026-05-11
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/tree/main/boards/NovaCustom/ADL_12th_Gen/NV41PZ/heads).
