@@ -5,6 +5,73 @@ Score](../../glossary.md#dasharo-openness-score) for NovaCustom NV4XPZ Dasharo
 releases. The content of the page is generated with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
+## v0.9.3 Heads
+
+Openness Score for novacustom_nv4x_adl_v0.9.3_heads.rom
+
+Open-source code percentage: **60.0%**
+Closed-source code percentage: **40.0%**
+
+* Image size: 33554432 (0x2000000)
+* Number of regions: 7
+* Number of CBFSes: 1
+* Total open-source code size: 9985278 (0x985cfe)
+* Total closed-source code size: 6645457 (0x6566d1)
+* Total data size: 106473 (0x19fe9)
+* Total empty size: 16817224 (0x1009c48)
+
+![](novacustom_nv4x_adl_v0.9.3_heads.rom_openness_chart.png)
+
+![](novacustom_nv4x_adl_v0.9.3_heads.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x1000 | 0x4b6000 | closed-source |
+| SI_DESC | 0x0 | 0x1000 | data |
+| RW_MRC_CACHE | 0x1000000 | 0x10000 | data |
+| FMAP | 0x1010000 | 0x200 | data |
+| SI_DEVICEEXT2 | 0x4b7000 | 0xb49000 | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 16711168
+* Number of files: 20
+* Open-source files size: 9985278 (0x985cfe)
+* Closed-source files size: 1705681 (0x1a06d1)
+* Data size: 36329 (0x8de9)
+* Empty size: 4983880 (0x4c0c48)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 9616058 | none | open-source |
+| fallback/romstage | stage | 94168 | none | open-source |
+| fallback/ramstage | stage | 171972 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 23248 | none | open-source |
+| fallback/postcar | stage | 42968 | none | open-source |
+| bootblock | bootblock | 36864 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 569344 | none | closed-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 333763 | LZ4 | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| intel_fit | intel_fit | 80 | none | data |
+| config | raw | 4932 | LZMA | data |
+| revision | raw | 867 | none | data |
+| build_info | raw | 96 | none | data |
+| bootsplash.jpg | bootsplash | 26784 | none | data |
+| vbt.bin | raw | 1290 | LZMA | data |
+| cmos_layout.bin | cmos_layout | 800 | none | data |
+| (empty) | null | 100 | none | empty |
+| (empty) | null | 4983780 | none | empty |
+
 ## v1.8.0
 
 Openness Score for novacustom_nv4x_adl_v1.8.0_btg_prod.rom
