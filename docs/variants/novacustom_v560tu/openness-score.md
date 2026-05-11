@@ -5,6 +5,73 @@ Score](../../glossary.md#dasharo-openness-score) for NovaCustom V540TU Dasharo
 releases. The content of the page is generated with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
+## v0.9.1 Heads
+
+Openness Score for novacustom_v56x_mtl_igpu_v0.9.1_heads.rom
+
+Open-source code percentage: **49.5%**
+Closed-source code percentage: **50.5%**
+
+* Image size: 33554432 (0x2000000)
+* Number of regions: 8
+* Number of CBFSes: 1
+* Total open-source code size: 9957789 (0x97f19d)
+* Total closed-source code size: 10153434 (0x9aedda)
+* Total data size: 119489 (0x1d2c1)
+* Total empty size: 13323720 (0xcb4dc8)
+
+![](novacustom_v56x_mtl_igpu_v0.9.1_heads.rom_openness_chart.png)
+
+![](novacustom_v56x_mtl_igpu_v0.9.1_heads.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x6000 | 0x885000 | closed-source |
+| SI_DESC | 0x0 | 0x4000 | data |
+| RW_MRC_CACHE | 0x1000000 | 0x10000 | data |
+| FMAP | 0x1010000 | 0x200 | data |
+| SI_DEVICEEXT2 | 0x88b000 | 0x775000 | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 16711168
+* Number of files: 20
+* Open-source files size: 9957789 (0x97f19d)
+* Closed-source files size: 1211866 (0x127dda)
+* Data size: 37057 (0x90c1)
+* Empty size: 5504456 (0x53fdc8)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 9613498 | none | open-source |
+| fallback/romstage | stage | 89160 | none | open-source |
+| fallback/ramstage | stage | 167584 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 23083 | none | open-source |
+| fallback/postcar | stage | 31696 | none | open-source |
+| bootblock | bootblock | 32768 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 140288 | none | closed-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 268660 | LZ4 | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| intel_fit | intel_fit | 80 | none | data |
+| config | raw | 5021 | LZMA | data |
+| revision | raw | 867 | none | data |
+| build_info | raw | 97 | none | data |
+| bootsplash.jpg | bootsplash | 26784 | none | data |
+| vbt.bin | raw | 1745 | LZ4 | data |
+| cmos_layout.bin | cmos_layout | 800 | none | data |
+| (empty) | null | 1060 | none | empty |
+| (empty) | null | 5503396 | none | empty |
+
 ## v1.0.1
 
 Openness Score for novacustom_v56x_mtl_igpu_v1.0.1_btg_prod.rom
