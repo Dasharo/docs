@@ -72,7 +72,6 @@ Closed-source code percentage: **40.0%**
 | (empty) | null | 100 | none | empty |
 | (empty) | null | 4983780 | none | empty |
 
-
 ## v1.8.0
 
 Openness Score for novacustom_nv4x_adl_v1.8.0_btg_prod.rom
