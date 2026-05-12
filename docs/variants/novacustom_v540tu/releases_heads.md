@@ -104,10 +104,10 @@ using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-key
 - [Intel microcode version MTL C0 0x00000025 0x25 19/03/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20251111/intel-ucode/06-aa-04)
     + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20251111/license)
 
-[novacustom_v54x_mtl_igpu_ec_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/heads/v0.9.1/novacustom_v54x_mtl_igpu_ec_v0.9.1.rom.sha256
-[novacustom_v54x_mtl_igpu_ec_v0.9.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/heads/v0.9.1/novacustom_v54x_mtl_igpu_ec_v0.9.1.rom.sha256.sig
-[novacustom_v54x_mtl_igpu_v0.9.1_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/heads/v0.9.1/novacustom_v54x_mtl_igpu_v0.9.1_heads.rom.sha256
-[novacustom_v54x_mtl_igpu_v0.9.1_heads.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v5x0_mtl/novacustom_mtl_igpu/novacustom_v540tu_mtl/heads/v0.9.1/novacustom_v54x_mtl_igpu_v0.9.1_heads.rom.sha256.sig
+[novacustom_v54x_mtl_igpu_ec_v0.9.1.rom_hash]:    https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl_igpu/heads/v0.9.1/novacustom_v54x_mtl_igpu_ec_v0.9.1.rom.sha256
+[novacustom_v54x_mtl_igpu_ec_v0.9.1.rom_sig]:     https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl_igpu/heads/v0.9.1/novacustom_v54x_mtl_igpu_ec_v0.9.1.rom.sha256.sig
+[novacustom_v54x_mtl_igpu_v0.9.1_heads.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl_igpu/heads/v0.9.1/novacustom_v54x_mtl_igpu_v0.9.1_heads.rom.sha256
+[novacustom_v54x_mtl_igpu_v0.9.1_heads.rom_sig]:  https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_v54x_mtl_igpu/heads/v0.9.1/novacustom_v54x_mtl_igpu_v0.9.1_heads.rom.sha256.sig
 
 ## v0.9.0 - 2025-03-20
 
