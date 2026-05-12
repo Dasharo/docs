@@ -354,17 +354,17 @@
 
         === "V540TU 14th Gen"
             ```bash
-            git checkout novacustom_v54x_mtl_v0.9.0
+            git checkout novacustom_v54x_mtl_heads_v0.9.1
             ```
 
         === "V560TU 14th Gen"
             ```bash
-            git checkout novacustom_v56x_mtl_v0.9.0
+            git checkout novacustom_v56x_mtl_heads_v0.9.1
             ```
 
         === "NV4x 12th Gen"
             ```bash
-            git checkout novacustom_nv4x_adl_v0.9.2
+            git checkout novacustom_nv4x_adl_heads_v0.9.3
             ```
 
     3. Start the build inside the docker container:
@@ -426,7 +426,7 @@
             ```
 
             This will produce a Dasharo binary placed in
-            `build/x86/novacustom-nv4x_adl/dasharo-novacustom-nv4x_adl-novacustom_nv4x_adl_v0.9.2.rom`.
+            `build/x86/novacustom-nv4x_adl/dasharo-novacustom-nv4x_adl-novacustom_nv4x_adl_heads_v0.9.3.rom`.
 
 ## Install Dasharo firmware
 
