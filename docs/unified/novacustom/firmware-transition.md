@@ -86,6 +86,18 @@ and the other way around.
 
     Your device should reboot into UEFI firmware.
 
+    !!! warning "PLEASE NOTE:"
+
+        There is an [issue](https://github.com/Dasharo/dasharo-issues/issues/1837) with
+        transitioning between the **v0.9.1 release of Heads on V5x0TU** laptops and UEFI firmware,
+        where the flash attempt fails and ends in recovery shell. in such case
+        please run the command:
+        ```
+        flashprog -p internal:boardmismatch=force -w /media/novacustom_${MODEL}_mtl_igpu_v0.9.1_heads.rom
+        ```
+        Where `${MODEL}` is `v56x` or `v54x`.
+
+
     > When reverting to UEFI, it's not possible to restore EFI boot manager entries
     > that were added before installing Heads. Therefore, you may need to re-create
     > your boot entries manually, or find your boot loader using `Boot From File`
