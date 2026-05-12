@@ -72,6 +72,74 @@ Closed-source code percentage: **40.0%**
 | (empty) | null | 100 | none | empty |
 | (empty) | null | 4983780 | none | empty |
 
+## v0.9.2 Heads
+
+Openness Score for novacustom_nv4x_adl_v0.9.2_heads.rom
+
+Open-source code percentage: **60.1%**
+Closed-source code percentage: **39.9%**
+
+* Image size: 33554432 (0x2000000)
+* Number of regions: 7
+* Number of CBFSes: 1
+* Total open-source code size: 9944607 (0x97be1f)
+* Total closed-source code size: 6593380 (0x649b64)
+* Total data size: 106613 (0x1a075)
+* Total empty size: 16909832 (0x1020608)
+
+![](novacustom_nv4x_adl_v0.9.2_heads.rom_openness_chart.png)
+
+![](novacustom_nv4x_adl_v0.9.2_heads.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x1000 | 0x4b6000 | closed-source |
+| SI_DESC | 0x0 | 0x1000 | data |
+| RW_MRC_CACHE | 0x1000000 | 0x10000 | data |
+| FMAP | 0x1010000 | 0x200 | data |
+| SI_DEVICEEXT2 | 0x4b7000 | 0xb49000 | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 16711168
+* Number of files: 20
+* Open-source files size: 9944607 (0x97be1f)
+* Closed-source files size: 1653604 (0x193b64)
+* Data size: 36469 (0x8e75)
+* Empty size: 5076488 (0x4d7608)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 9597114 | none | open-source |
+| fallback/romstage | stage | 84704 | none | open-source |
+| fallback/ramstage | stage | 169034 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 22719 | none | open-source |
+| fallback/postcar | stage | 35068 | none | open-source |
+| bootblock | bootblock | 35968 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 562176 | none | closed-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 304996 | LZ4 | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| intel_fit | intel_fit | 80 | none | data |
+| config | raw | 4689 | LZMA | data |
+| revision | raw | 867 | none | data |
+| build_info | raw | 96 | none | data |
+| bootsplash.jpg | bootsplash | 26784 | none | data |
+| vbt.bin | raw | 1290 | LZMA | data |
+| cmos.default | cmos_default | 256 | none | data |
+| cmos_layout.bin | cmos_layout | 800 | none | data |
+| (empty) | null | 996 | none | empty |
+| (empty) | null | 5075492 | none | empty |
+
 ## v1.8.0
 
 Openness Score for novacustom_nv4x_adl_v1.8.0_btg_prod.rom
