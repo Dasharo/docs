@@ -6,26 +6,28 @@ The following documentation describes the process of recovering hardware from
 the brick state using an [RTE](../../transparent-validation/rte/introduction.md)
 and Dasharo open-source firmware.
 
+## Flashing via BMC
+
+1. Ensure the board is soft powered off and BMC active (PSU connected and
+   powered).
+2. Log in to BMC admin panel with unique credentials for your platform. Login
+   is `admin` and password is unique , present on a sticker on the board box.
+3. Navigate to `Maintenance` -> `Firmware Update`
+
+   ![](../../images/giga_bmc_update1.jpg){ class="center" }
+
+4. In the file selection field, press the file selection button and find the
+   `gigabyte_mz33_ar1_v0.9.x.rbu` file on your host device.
+5. Click to proceed with flashing and confirm.
+
+   ![](../../images/giga_bmc_update2.jpg){ class="center" }
+
+6. Wait until the process completes and then power on the board.
+
 ## External flashing
 
 The external programming and recovery from bricks caused by Dasharo can be
-achieved by flashing only a portion of BIOS flash memory. Currently, due to
-various limitations of AMD firmware image assembling, Dasharo images do not
-incorporate the PSP firmwares and are only suitable to co-work with PSP
-firmware blobs present inside vendor images.
-
-To flash the relevant portion of the BIOS to recover, the following flashrom
-layout `layout_file` is needed:
-
-```txt
-00000000:01cbffff reserved
-01cc0000:01ffffff bios
-```
-
-The Dasharo image with Turin support occupies the last 0x340000 bytes of the
-BIOS flash, as this is the flash region being copied by PSP in the vendor
-image. We reuse it to copy the whole coreboot to RAM before jumping to reset
-vector.
+achieved by flashing o
 
 === "RTE"
     ### Prerequisites
@@ -74,7 +76,7 @@ vector.
 
         ```bash
         flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 \
-            -w [path_to_binary] --layout layout_file -i bios -N
+            -w [path_to_binary]
         ```
 
         > The board sinks too much current which results in SPI Vcc to drop
@@ -133,8 +135,7 @@ vector.
     6.  Flash the platform by using the following command:
 
         ```bash
-        flashrom -p ch341a_spi -w [path_to_binary] \
-            --layout layout_file -i bios -N
+        flashrom -p ch341a_spi -w [path_to_binary]
         ```
 
     7. Take off the pomona clip from the chip.

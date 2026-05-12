@@ -15,34 +15,9 @@ MZ33-AR1.
 
 ## Building
 
-To build Dasharo (coreboot+UEFI) firmware image, first clone the coreboot
-repository:
+!!! Error "STOP"
 
-```bash
-git clone https://github.com/Dasharo/coreboot.git
-```
-
-then follow the steps below:
-
-1. To build a specific version checkout to the version's tag.
-    Skip this step otherwise.
-
-    ```bash
-    cd coreboot
-    git checkout gigabyte_mz33_ar1_<version>
-    ```
-
-    For example
-
-    ```bash
-    git checkout gigabyte_mz33_ar1_v0.1.0
-    ```
-
-2. Build the firmware:
-
-    ```bash
-    ./build.sh mz33_ar1
-    ```
-
-    The resulting coreboot image will be placed in the coreboot directory as
-    `gigabyte_mz33_ar1_<version>.rom`.
+    Building the firmware from source is currently only available after
+    purchasing the product from [our
+    shop](https://shop.3mdeb.com/product/full-build-gigabyte-mz33-ar1-with-dasharo-corebootuefi-pro-package-for-servers/)
+    and agreeing to the terms of service.

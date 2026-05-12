@@ -14,6 +14,8 @@ AMD Genoa and AMD Turin EPYC server processors.
 - [Releases](./releases.md) - Groups information about all releases.
 - [Building Manual](./building-manual.md) - Describes how to build Dasharo
   compatible with the Gigabyte MZ33-AR1.
+- [Firmware update](./firmware-update.md) - explains supported Dasharo
+  open-source firmware update methods.
 - [Initial Deployment](./initial-deployment.md) - Describes initial Dasharo
   deployment methods (i. e. flashing new firmware) compatible with Gigabyte
   MZ33-AR1.
