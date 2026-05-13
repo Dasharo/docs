@@ -111,3 +111,9 @@ firmware version is currently installed on your device.
     [Build](building-manual.md#dasharo-coreboot--heads) or
     download Dasharo Heads firmware, and proceed with
     the official [Heads update documentation](https://osresearch.net/Updating).
+
+    !!! warning "PLEASE NOTE:"
+        As of the Heads releases **v0.9.1 for V5x0TU** and **v0.9.3 for
+        NV4xPZ**, a **barrell jack power supply** needs to be plugged in during
+        the update, due to EC firmware sync.
+    
