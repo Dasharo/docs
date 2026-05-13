@@ -92,9 +92,11 @@ and the other way around.
         transitioning between the **v0.9.1 release of Heads on V5x0TU** laptops and UEFI firmware,
         where the flash attempt fails and ends in recovery shell. in such case
         please run the command:
+
         ```sh
         flashprog -p internal:boardmismatch=force -w /media/novacustom_${MODEL}_mtl_igpu_v1.0.1_btg_prod.rom --ifd -i bios -i fd -i me
         ```
+
         Where `${MODEL}` is `v56x` or `v54x`.
 
 
