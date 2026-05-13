@@ -116,4 +116,3 @@ firmware version is currently installed on your device.
         As of the Heads releases **v0.9.1 for V5x0TU** and **v0.9.3 for
         NV4xPZ**, a **barrell jack power supply** needs to be plugged in during
         the update, due to EC firmware sync.
-    
