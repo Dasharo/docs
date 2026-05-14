@@ -15,10 +15,10 @@ Closed-source code percentage: **76.9%**
 * Image size: 33554432 (0x2000000)
 * Number of regions: 30
 * Number of CBFSes: 4
-* Total open-source code size: 1649040 (0x192990)
+* Total open-source code size: 1648422 (0x192726)
 * Total closed-source code size: 5480640 (0x53a0c0)
-* Total data size: 1779260 (0x1b263c)
-* Total empty size: 7868276 (0x780f74)
+* Total data size: 1779366 (0x1b26a6)
+* Total empty size: 7868788 (0x781174)
 
 ![](gigabyte_mz33_ar1_v0.9.0.rom_openness_chart.png)
 
@@ -53,10 +53,10 @@ Closed-source code percentage: **76.9%**
 
 * CBFS size: 8353792
 * Number of files: 21
-* Open-source files size: 1649040 (0x192990)
+* Open-source files size: 1648422 (0x192726)
 * Closed-source files size: 5185728 (0x4f20c0)
-* Data size: 39912 (0x9be8)
-* Empty size: 1479112 (0x1691c8)
+* Data size: 40018 (0x9c52)
+* Empty size: 1479624 (0x1693c8)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -64,9 +64,9 @@ Closed-source code percentage: **76.9%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/payload | simple elf | 1342885 | none | open-source |
-| fallback/romstage | stage | 33488 | LZ4 | open-source |
-| fallback/ramstage | stage | 254131 | LZMA | open-source |
+| fallback/payload | simple elf | 1342255 | none | open-source |
+| fallback/romstage | stage | 33487 | LZ4 | open-source |
+| fallback/ramstage | stage | 254144 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 18536 | none | open-source |
 | cpu_microcode_b100.bin | microcode | 14368 | none | closed-source |
 | cpu_microcode_b110.bin | microcode | 14368 | none | closed-source |
@@ -81,10 +81,10 @@ Closed-source code percentage: **76.9%**
 | build_info | raw | 106 | none | data |
 | cmos_layout.bin | cmos_layout | 864 | none | data |
 | logo.bmp | raw | 11977 | LZMA | data |
-| sbom | raw | 19613 | none | data |
+| sbom | raw | 19700 | none | data |
 | header_pointer | cbfs header | 4 | none | data |
 | (empty) | null | 2340 | none | empty |
-| (empty) | null | 1476772 | none | empty |
+| (empty) | null | 1477284 | none | empty |
 
 ### CBFS FW_MAIN_A
 
