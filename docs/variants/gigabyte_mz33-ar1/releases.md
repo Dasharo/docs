@@ -87,9 +87,9 @@ Test results for this release can be found
 
 #### SBOM CycloneDX
 
+[gigabyte_mz33_ar1_v0.9.0.sbom.json][gigabyte_mz33_ar1_v0.9.0.sbom.json_file]{.md-button}
 [sha256][gigabyte_mz33_ar1_v0.9.0.sbom.json_hash]{.md-button}
 [sha256.sig][gigabyte_mz33_ar1_v0.9.0.sbom.json_sig]{.md-button}
-(gigabyte_mz33_ar1_v0.9.0.sbom.json)
 
 This is a Dasharo Pro Package release. For this platform, access to pre-built
 binaries is provided exclusively through the
@@ -132,5 +132,6 @@ artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [gigabyte_mz33_ar1_v0.9.0.rbu_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256
 [gigabyte_mz33_ar1_v0.9.0.rbu_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256.sig
 
+[gigabyte_mz33_ar1_v0.9.0.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json
 [gigabyte_mz33_ar1_v0.9.0.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json.sha256
 [gigabyte_mz33_ar1_v0.9.0.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json.sha256.sig
