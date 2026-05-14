@@ -260,9 +260,11 @@ nav:
           - 'Releases': variants/gigabyte_mz33-ar1/releases.md
           - 'Building manual': variants/gigabyte_mz33-ar1/building-manual.md
           - 'Initial deployment': variants/gigabyte_mz33-ar1/initial-deployment.md
+          - 'Firmware update': variants/gigabyte_mz33-ar1/firmware-update.md
           - 'Recovery': variants/gigabyte_mz33-ar1/recovery.md
           - 'Hardware Configuration Matrix': variants/gigabyte_mz33-ar1/hardware-matrix.md
           - 'Test matrix': variants/gigabyte_mz33-ar1/test-matrix.md
+          - 'Openness score': variants/gigabyte_mz33-ar1/openness-score.md
           - 'Press and Media Coverage': variants/gigabyte_mz33-ar1/press-and-media-coverage.md
       - 'Hardkernel ODROID H4':
           - 'Overview': variants/hardkernel_odroid_h4/overview.md
