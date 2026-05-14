@@ -65,6 +65,11 @@ Test results for this release can be found
 
 ### Binaries
 
+> Keep in mind that AMD openSIL is in a Proof of Concept state, meaning that
+> AMD does not provide any support for openSIL solutions, and the firmware
+> should not be used in production or high risk environments. Use of the
+> firmware is at the user's responsibility.
+
 #### Raw Dasharo image
 
 [sha256][gigabyte_mz33_ar1_v0.9.0.rom_hash]{.md-button}
