@@ -1,23 +1,11 @@
 # Initial deployment
 
-This document describes the process of building, installing and running
-flashrom on Ubuntu 24.04.
+The Dasharo firmware should be already deployed when purchasing the product
+from [our
+shop](https://shop.3mdeb.com/product/full-build-gigabyte-mz33-ar1-with-dasharo-corebootuefi-pro-package-for-servers/)
+and agreeing to the terms of service.
 
-## Build flashrom
+## Initial deployment via BMC
 
-Please follow generic guide for [Dasharo flashrom fork](../../osf-trivia-list/deployment.md#how-to-install-dasharo-flashrom-fork).
-
-## Reading flash contents
-
-Always prepare a backup of the current firmware image. To read from the flash
-and save it to a file (`dump.rom`), execute the following command:
-
-```bash
-flashrom -p internal -r dump.rom
-```
-
-## Flashing Dasharo
-
-To flash Dasharo on the platform, it is only possible with an external
-programmer currently. Follow the same process as in [recovery
-section](recovery.md).
+Use the same procedure as in [Flashing via BMC in Recovery
+section](recovery.md#flashing-via-bmc).
