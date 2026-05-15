@@ -119,6 +119,40 @@ Embedding videos with in-line HTML `iframe` tag does not work.
 instead. To embed an video simply type the following in markdown:
 `![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)` (example).
 
+### Embedding ToS checkbox
+
+A ToS acceptance checkbox can be added to any release page to gate binary
+downloads behind a user acknowledgement. The feature is opt-in per page.
+
+**1. Add the checkbox macro** above the content you want to protect:
+
+```md
+{{ tos_checkbox("unique-section-id") }}
+```
+
+**2. Wrap the protected content** in an HTML div with a matching `id`:
+
+```md
+<div id="unique-section-id" class="tos-gate-content" markdown="1" style="display: none">
+
+...binary download buttons and related content...
+
+</div>
+```
+
+`tos_checkbox` accepts an optional `tos_url` argument to override the default
+Terms of Service link:
+
+```md
+{{ tos_checkbox("unique-section-id", tos_url="https://example.com/terms") }}
+```
+
+For pages with multiple release sections, use a distinct `section-id` per
+release (e.g. `vendor-board-v100-binaries`, `vendor-board-v090-binaries`). See
+[`docs/variants/gigabyte_mz33-ar1/releases.md`][tos-example] for example.
+
+[tos-example]: docs/variants/gigabyte_mz33-ar1/releases.md
+
 ### Embedding subscribe forms
 
 It is possible to embed subscribe form for the selfhosted Listmonk mailing

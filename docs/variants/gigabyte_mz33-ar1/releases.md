@@ -73,6 +73,10 @@ Test results for this release can be found
 
 ### Binaries
 
+{{ tos_checkbox("gigabyte-mz33-ar1-v090-binaries") }}
+
+<div id="gigabyte-mz33-ar1-v090-binaries" class="tos-gate-content" markdown="1" style="display: none">
+
 #### Raw Dasharo image
 
 [sha256][gigabyte_mz33_ar1_v0.9.0.rom_hash]{.md-button}
@@ -90,6 +94,8 @@ Test results for this release can be found
 [gigabyte_mz33_ar1_v0.9.0.sbom.json][gigabyte_mz33_ar1_v0.9.0.sbom.json_file]{.md-button}
 [sha256][gigabyte_mz33_ar1_v0.9.0.sbom.json_hash]{.md-button}
 [sha256.sig][gigabyte_mz33_ar1_v0.9.0.sbom.json_sig]{.md-button}
+
+</div>
 
 This is a Dasharo Pro Package release. For this platform, access to pre-built
 binaries is provided exclusively through the
