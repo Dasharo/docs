@@ -29,6 +29,9 @@ extra:
       link: https://www.reddit.com/r/Dasharo
     - icon: fontawesome/brands/discord
       link: https://discord.gg/QseTVHum3w
+    - icon: fontawesome/solid/scale-balanced
+      link: https://www.dasharo.com/pages/terms/
+      name: Dasharo Terms of Service
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
