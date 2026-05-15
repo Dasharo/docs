@@ -9,16 +9,16 @@ utility](https://github.com/Dasharo/Openness-Score).
 
 Openness Score for gigabyte_mz33_ar1_v0.9.0.rom
 
-Open-source code percentage: **23.1%**
-Closed-source code percentage: **76.9%**
+Open-source code percentage: **24.1%**
+Closed-source code percentage: **75.9%**
 
 * Image size: 33554432 (0x2000000)
-* Number of regions: 30
+* Number of regions: 31
 * Number of CBFSes: 4
 * Total open-source code size: 1648422 (0x192726)
-* Total closed-source code size: 5480640 (0x53a0c0)
-* Total data size: 1779366 (0x1b26a6)
-* Total empty size: 7868788 (0x781174)
+* Total closed-source code size: 5185728 (0x4f20c0)
+* Total data size: 2074278 (0x1fa6a6)
+* Total empty size: 24646004 (0x1781174)
 
 ![](gigabyte_mz33_ar1_v0.9.0.rom_openness_chart.png)
 
@@ -45,9 +45,12 @@ Closed-source code percentage: **76.9%**
 | VBLOCK_DEV | 0xe06000 | 0x2000 | data |
 | RW_VPD | 0xe08000 | 0x2000 | data |
 | RW_NVRAM | 0xe0a000 | 0x6000 | data |
+| PSP_SEV_NVRAM | 0xe48000 | 0x8000 | data |
 | CONSOLE | 0xe50000 | 0x20000 | data |
+| PSP_RPMC_NVRAM | 0xe70000 | 0x40000 | data |
 | SMMSTORE | 0xeb0000 | 0x80000 | data |
 | RW_MRC_CACHE | 0xf30000 | 0xd0000 | data |
+| UNUSED | 0x1000000 | 0x1000000 | empty |
 
 ### CBFS COREBOOT
 
