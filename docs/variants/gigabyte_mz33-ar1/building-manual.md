@@ -69,4 +69,4 @@ Now build the firmware:
 ```
 
 The resulting coreboot image will be placed in the coreboot directory as
-`asrock_spc741d8_<version>.rom` and
+`gigabyte_mz33_ar1_<version>.rom` and `gigabyte_mz33_ar1_<version>.rbu`.
