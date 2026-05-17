@@ -1,0 +1,38 @@
+---
+name: ToS gate tests
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - main.py
+      - docs/javascripts/tos-gate.js
+      - overrides/main.html
+      - mkdocs.yml
+      - docs/**
+      - tests/test_tos_gate.py
+      - requirements.txt
+  pull_request:
+    paths:
+      - main.py
+      - docs/javascripts/tos-gate.js
+      - overrides/main.html
+      - mkdocs.yml
+      - docs/**
+      - tests/test_tos_gate.py
+      - requirements.txt
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run ToS gate tests
+        run: pytest tests/test_tos_gate.py -v
