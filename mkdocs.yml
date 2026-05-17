@@ -35,6 +35,7 @@ extra:
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
+  - javascripts/tos-gate.js
   - https://cdn.jsdelivr.net/npm/vega@5
   - https://cdn.jsdelivr.net/npm/vega-lite@5
   - https://cdn.jsdelivr.net/npm/vega-embed@6

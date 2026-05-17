@@ -121,37 +121,73 @@ instead. To embed an video simply type the following in markdown:
 
 ### Embedding ToS checkbox
 
-A ToS acceptance checkbox can be added to any release page to gate binary
-downloads behind a user acknowledgement. The feature is opt-in per page.
+A ToS acceptance checkbox can be added to any page to gate binary downloads
+and/or prose content behind a user acknowledgement. The feature is opt-in per
+page.
 
-**1. Add the checkbox macro** above the content you want to protect:
+#### Gating download buttons
+
+Use the `tos_gated_downloads` macro and pass a unique `section_id` together
+with the list of files. Use the **group format** to preserve subsection
+headings matching the original release layout:
 
 ```md
-{{ tos_checkbox("unique-section-id") }}
+{{ tos_gated_downloads("vendor-board-vXYZ-binaries", [
+  {"group": "Raw firmware image", "note": "(vendor_board_vX.Y.Z.rom)", "items": [
+    {"label": "sha256",     "url": "https://dl.3mdeb.com/.../file.rom.sha256"},
+    {"label": "sha256.sig", "url": "https://dl.3mdeb.com/.../file.rom.sha256.sig"}
+  ]},
+  {"group": "SBOM CycloneDX", "items": [
+    {"label": "sbom.json",   "url": "https://dl.3mdeb.com/.../file.sbom.json"},
+    {"label": "sha256",      "url": "https://dl.3mdeb.com/.../file.sbom.json.sha256"},
+    {"label": "sha256.sig",  "url": "https://dl.3mdeb.com/.../file.sbom.json.sha256.sig"}
+  ]}
+]) }}
 ```
 
-**2. Wrap the protected content** in an HTML div with a matching `id`:
+Download links are **not** emitted into the HTML source - they are
+base64-encoded in a `data-payload` attribute and injected by `tos-gate.js` only
+after the user checks the box. This keeps URLs out of page source and prevents
+them from being indexed.
+
+Download buttons with groups example:
+[`docs/variants/gigabyte_mz33-ar1/releases.md`][tos-example]
+
+#### Optional argument (`tos_url`)
+
+Overrides the default Terms of Service link:
 
 ```md
-<div id="unique-section-id" class="tos-gate-content" markdown="1" style="display: none">
+{{ tos_gated_downloads("...", [...], tos_url="https://example.com/terms") }}
+```
 
-...binary download buttons and related content...
+#### Optional hiding prose content
+
+Pass `prose_section_id` to make the same checkbox also show/hide one or more
+blocks of descriptive text. Wrap each prose block in a div with a matching
+`data-prose-group` attribute:
+
+```md
+{{ tos_gated_downloads("vendor-board-vXYZ-blobs",
+  [{"label": "blobs.zip", "url": "https://dl.3mdeb.com/.../blobs.zip"}],
+  prose_section_id="vendor-board-vXYZ-blobs-prose") }}
+
+<div data-prose-group="vendor-board-vXYZ-blobs-prose"
+     class="tos-gate-content" markdown="1" style="display: none">
+
+Further instructions that only make sense after downloading...
 
 </div>
 ```
 
-`tos_checkbox` accepts an optional `tos_url` argument to override the default
-Terms of Service link:
+Multiple divs sharing the same `data-prose-group` value are all toggled by
+the single checkbox, so one gate can reveal several separate prose sections.
 
-```md
-{{ tos_checkbox("unique-section-id", tos_url="https://example.com/terms") }}
-```
-
-For pages with multiple release sections, use a distinct `section-id` per
-release (e.g. `vendor-board-v100-binaries`, `vendor-board-v090-binaries`). See
-[`docs/variants/gigabyte_mz33-ar1/releases.md`][tos-example] for example.
+Combined buttons + prose example:
+[`docs/variants/gigabyte_mz33-ar1/building-manual.md`][tos-prose-example]
 
 [tos-example]: docs/variants/gigabyte_mz33-ar1/releases.md
+[tos-prose-example]: docs/variants/gigabyte_mz33-ar1/building-manual.md
 
 ### Embedding subscribe forms
 
