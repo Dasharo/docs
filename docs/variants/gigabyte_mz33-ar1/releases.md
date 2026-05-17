@@ -74,11 +74,13 @@ Test results for this release can be found
 ### Binaries
 
 {{ tos_gated_downloads("gigabyte-mz33-ar1-v090-binaries", [
-  {"group": "Raw Dasharo image", "note": "(gigabyte_mz33_ar1_v0.9.0.rom)", "items": [
+  {"group": "Raw Dasharo image",
+   "note": "(gigabyte_mz33_ar1_v0.9.0.rom)", "items": [
     {"label": "sha256",     "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rom.sha256"},
     {"label": "sha256.sig", "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rom.sha256.sig"}
   ]},
-  {"group": "Update via BMC image", "note": "(gigabyte_mz33_ar1_v0.9.0.rbu)", "items": [
+  {"group": "Update via BMC image",
+   "note": "(gigabyte_mz33_ar1_v0.9.0.rbu)", "items": [
     {"label": "sha256",     "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256"},
     {"label": "sha256.sig", "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256.sig"}
   ]},
@@ -123,4 +125,3 @@ included in the firmware images. It describes a complete set of components
 and their versions used to build the firmware images. The published SBOM
 artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [sbom-tools](https://github.com/sbom-tool/sbom-tools).
-
