@@ -354,17 +354,17 @@
 
         === "V540TU 14th Gen"
             ```bash
-            git checkout novacustom_v54x_mtl_v0.9.0
+            git checkout novacustom_v54x_mtl_heads_v0.9.1
             ```
 
         === "V560TU 14th Gen"
             ```bash
-            git checkout novacustom_v56x_mtl_v0.9.0
+            git checkout novacustom_v56x_mtl_heads_v0.9.1
             ```
 
         === "NV4x 12th Gen"
             ```bash
-            git checkout novacustom_nv4x_adl_v0.9.2
+            git checkout novacustom_nv4x_adl_heads_v0.9.3
             ```
 
     3. Start the build inside the docker container:
@@ -388,8 +388,7 @@
 
         === "V540TU 14th Gen"
             ```bash
-            DOCKER_IMAGE=$(grep -oP '^\s*-?\s*image:\s*\K(tlaurion/heads-dev-env:[^\s]+)' \
-                .circleci/config.yml | head -n 1)
+            DOCKER_IMAGE=$(grep -oP '^\s*-\s*image:\s*\K[^\s]+' .circleci/config.yml | head -n 1)
             docker run --rm -it \
                 -v "$(pwd)":/home/coreboot/coreboot \
                 -w /home/coreboot/coreboot \
@@ -402,8 +401,7 @@
 
         === "V560TU 14th Gen"
             ```bash
-            DOCKER_IMAGE=$(grep -oP '^\s*-?\s*image:\s*\K(tlaurion/heads-dev-env:[^\s]+)' \
-                .circleci/config.yml | head -n 1)
+            DOCKER_IMAGE=$(grep -oP '^\s*-\s*image:\s*\K[^\s]+' .circleci/config.yml | head -n 1)
             docker run --rm -it \
                 -v "$(pwd)":/home/coreboot/coreboot \
                 -w /home/coreboot/coreboot \
@@ -416,8 +414,7 @@
 
         === "NV4x 12th Gen"
             ```bash
-            DOCKER_IMAGE=$(grep -oP '^\s*-?\s*image:\s*\K(tlaurion/heads-dev-env:[^\s]+)' \
-                .circleci/config.yml | head -n 1)
+            DOCKER_IMAGE=$(grep -oP '^\s*-\s*image:\s*\K[^\s]+' .circleci/config.yml | head -n 1)
             docker run --rm -it \
                 -v "$(pwd)":/home/coreboot/coreboot \
                 -w /home/coreboot/coreboot \
@@ -426,7 +423,7 @@
             ```
 
             This will produce a Dasharo binary placed in
-            `build/x86/novacustom-nv4x_adl/dasharo-novacustom-nv4x_adl-novacustom_nv4x_adl_v0.9.2.rom`.
+            `build/x86/novacustom-nv4x_adl/dasharo-novacustom-nv4x_adl-novacustom_nv4x_adl_heads_v0.9.3.rom`.
 
 ## Install Dasharo firmware
 

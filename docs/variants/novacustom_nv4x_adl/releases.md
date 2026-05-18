@@ -192,6 +192,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [Dasharo coreboot fork based on 4.21 revision cb6ef1b9](https://github.com/Dasharo/coreboot/tree/cb6ef1b9)
 - [Dasharo EDKII fork based on edk2-stable202002 revision b7274c98](https://github.com/Dasharo/edk2/tree/b7274c98)
+- [Dasharo fork of System76 EC based on 2b2c17a revision 2b2c17a](https://github.com/Dasharo/ec/tree/2b2c17a/)
+    + [License](https://github.com/Dasharo/ec/blob/2b2c17a/LICENSE)
 
 [novacustom_nv4x_adl_ec_v1.7.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_ec_v1.7.2.rom
 [novacustom_nv4x_adl_ec_v1.7.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.2/novacustom_nv4x_adl_ec_v1.7.2.rom.sha256
@@ -295,6 +297,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [Dasharo coreboot fork based on 4.21 revision 36032e55](https://github.com/Dasharo/coreboot/tree/36032e55)
 - [Dasharo EDKII fork based on edk2-stable202002 revision b68e46b0](https://github.com/Dasharo/edk2/tree/b68e46b0)
+- [Dasharo fork of System76 EC based on f148431 revision f148431](https://github.com/Dasharo/ec/tree/f148431/)
+    + [License](https://github.com/Dasharo/ec/blob/f148431/LICENSE)
 
 [novacustom_nv4x_adl_ec_v1.7.1.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.1/novacustom_nv4x_adl_ec_v1.7.1.rom
 [novacustom_nv4x_adl_ec_v1.7.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.7.1/novacustom_nv4x_adl_ec_v1.7.1.rom.sha256
@@ -368,6 +372,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [Dasharo coreboot fork based on 1a8eb6c02103727431ac1ea23f4f507e49f3cde7 revision a3056ac5](https://github.com/Dasharo/coreboot/tree/a3056ac5)
 - [Dasharo EDKII fork based on e0334c228ce4ba51f47ff79a118f214031d4650f revision bd421b40](https://github.com/Dasharo/edk2/tree/bd421b40)
+- [Dasharo fork of System76 EC based on c0fe220 revision c0fe220](https://github.com/Dasharo/ec/tree/c0fe220/)
+    + [License](https://github.com/Dasharo/ec/blob/c0fe220/LICENSE)
 - Intel ME version 16.1.25.1865
 
 [novacustom_nv4x_adl_ec_v1.6.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.6.0/novacustom_nv4x_adl_ec_v1.6.0.rom
@@ -422,6 +428,8 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - [Dasharo coreboot fork based on 1a8eb6c02103727431ac1ea23f4f507e49f3cde7 revision cd975d74](https://github.com/Dasharo/coreboot/tree/cd975d74)
 - [Dasharo EDKII fork based on e0334c228ce4ba51f47ff79a118f214031d4650f revision abfdef40](https://github.com/Dasharo/edk2/tree/abfdef40)
+- [Dasharo fork of System76 EC based on 45eb3b4 revision 45eb3b4](https://github.com/Dasharo/ec/tree/45eb3b4/)
+    + [License](https://github.com/Dasharo/ec/blob/45eb3b4/LICENSE)
 
 [novacustom_nv4x_adl_ec_v1.4.0.rom_file]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.4.0/novacustom_nv4x_adl_ec_v1.4.0.rom
 [novacustom_nv4x_adl_ec_v1.4.0.rom_hash]: https://3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_adl/v1.4.0/novacustom_nv4x_adl_ec_v1.4.0.rom.sha256

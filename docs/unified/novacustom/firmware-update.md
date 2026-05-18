@@ -111,3 +111,15 @@ firmware version is currently installed on your device.
     [Build](building-manual.md#dasharo-coreboot--heads) or
     download Dasharo Heads firmware, and proceed with
     the official [Heads update documentation](https://osresearch.net/Updating).
+
+    !!! warning "PLEASE NOTE:"
+        As of the Heads releases **v0.9.1 for V5x0TU** and **v0.9.3 for
+        NV4xPZ**, a **barrel jack power supply** needs to be plugged in during
+        the update. The reboot triggered by the EC update resets the USB-PD
+        controller, which does not come back up in time for the EC update's
+        AC adapter check, causing it to fail. A barrel jack supply bypasses
+        this issue.
+
+        Furthermore, please make sure that you have followed our
+        [Initial deployment](https://docs.dasharo.com/unified/novacustom/initial-deployment/#apt-package-manager_1)
+        guide beforehand, specifically the section on EC firmware installation.
