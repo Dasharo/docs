@@ -102,11 +102,3 @@ TPM2 log entry 9:
     	 SHA1: cd32830f83a4f74b75d7feac6c03bd3ad8d553f5
     Event data: BOOTKERNEL
 ```
-
-## Additional information
-
-The Module is available at the official
-[3mdeb store](https://shop.3mdeb.com/shop/modules/tpm-1-2-compatible-with-raptor-computing-systems-talos-ii-mainboard/).
-
-You can also buy the product by mailing us at:
-[shopping@3mdeb.com](mailto:shopping@3mdeb.com).

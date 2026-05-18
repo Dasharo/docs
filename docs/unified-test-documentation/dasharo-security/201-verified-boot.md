@@ -168,8 +168,7 @@ should revert to booting from the recovery slot.
     [Test cases common documentation](#test-cases-common-documentation) section.
 1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
-1. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/s/DAn2sdk3osSxG8A)
-    signed with wrong vboot keys.
+1. Obtain coreboot binary signed with wrong vboot keys.
 
 **Test steps**
 
