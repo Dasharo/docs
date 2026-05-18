@@ -73,23 +73,23 @@ Test results for this release can be found
 
 ### Binaries
 
-{{ tos_gated_downloads("gigabyte-mz33-ar1-v090-binaries", [
-  {"group": "Raw Dasharo image",
-   "note": "(gigabyte_mz33_ar1_v0.9.0.rom)", "items": [
-    {"label": "sha256",     "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rom.sha256"},
-    {"label": "sha256.sig", "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rom.sha256.sig"}
-  ]},
-  {"group": "Update via BMC image",
-   "note": "(gigabyte_mz33_ar1_v0.9.0.rbu)", "items": [
-    {"label": "sha256",     "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256"},
-    {"label": "sha256.sig", "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256.sig"}
-  ]},
-  {"group": "SBOM CycloneDX", "items": [
-    {"label": "sbom.json",   "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json"},
-    {"label": "sha256",      "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json.sha256"},
-    {"label": "sha256.sig",  "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json.sha256.sig"}
-  ]}
-]) }}
+#### Raw Dasharo image
+
+[sha256][gigabyte_mz33_ar1_v0.9.0.rom_hash]{.md-button}
+[sha256.sig][gigabyte_mz33_ar1_v0.9.0.rom_sig]{.md-button}
+(gigabyte_mz33_ar1_v0.9.0.rom)
+
+#### Update via BMC image
+
+[sha256][gigabyte_mz33_ar1_v0.9.0.rbu_hash]{.md-button}
+[sha256.sig][gigabyte_mz33_ar1_v0.9.0.rbu_sig]{.md-button}
+(gigabyte_mz33_ar1_v0.9.0.rbu)
+
+#### SBOM CycloneDX
+
+[gigabyte_mz33_ar1_v0.9.0.sbom.json][gigabyte_mz33_ar1_v0.9.0.sbom.json_file]{.md-button}
+[sha256][gigabyte_mz33_ar1_v0.9.0.sbom.json_hash]{.md-button}
+[sha256.sig][gigabyte_mz33_ar1_v0.9.0.sbom.json_sig]{.md-button}
 
 This is a Dasharo Pro Package release. For this platform, access to pre-built
 binaries is provided exclusively through the
@@ -125,3 +125,13 @@ included in the firmware images. It describes a complete set of components
 and their versions used to build the firmware images. The published SBOM
 artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [sbom-tools](https://github.com/sbom-tool/sbom-tools).
+
+[gigabyte_mz33_ar1_v0.9.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rom.sha256
+[gigabyte_mz33_ar1_v0.9.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rom.sha256.sig
+
+[gigabyte_mz33_ar1_v0.9.0.rbu_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256
+[gigabyte_mz33_ar1_v0.9.0.rbu_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.rbu.sha256.sig
+
+[gigabyte_mz33_ar1_v0.9.0.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json
+[gigabyte_mz33_ar1_v0.9.0.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json.sha256
+[gigabyte_mz33_ar1_v0.9.0.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/gigabyte_mz33_ar1_v0.9.0.sbom.json.sha256.sig
