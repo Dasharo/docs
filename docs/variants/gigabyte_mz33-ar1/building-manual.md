@@ -54,7 +54,7 @@ then follow the steps below:
      class="tos-gate-content" markdown="1"
      style="display: none">
 
-- Then unzip it to the following directory:
+- Unzip the package to the following directory:
 
     ```bash
     unzip Turin.zip -d 3rdparty/blobs/soc/amd/
