@@ -25,7 +25,7 @@ to verify that the implemented Boot Guard mechanism works correctly.
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+    [cloud](https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ) to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**

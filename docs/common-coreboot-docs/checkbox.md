@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[Checkbox](https://checkbox.readthedocs.io/en/latest/) is a flexible test
+[Checkbox](https://documentation.ubuntu.com/checkbox/stable/) is a flexible test
 automation software. It’s the main tool used in Ubuntu Certification program.
 This document describes the usage of Checkbox on Ubuntu 22.04, but it can work
 on older versions of Ubuntu as well.
@@ -192,7 +192,7 @@ any results. Example of running one test plan:
     ```
 
 For more details about these (and others) commands visit
-[checkbox-cli](https://checkbox.readthedocs.io/en/latest/how-to/index.html).
+[checkbox-cli](https://documentation.ubuntu.com/checkbox/stable/how-to/).
 
 ## Troubleshooting
 

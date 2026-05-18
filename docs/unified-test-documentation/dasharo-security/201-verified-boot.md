@@ -57,8 +57,7 @@ functional.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-    to the DUT.
+1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -128,8 +127,7 @@ proceed to boot from Slot A.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
+1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -168,11 +166,9 @@ should revert to booting from the recovery slot.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
+1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
-1. Obtain [coreboot binary](https://cloud.3mdeb.com/index.php/s/DAn2sdk3osSxG8A)
-    signed with wrong vboot keys.
+1. Obtain coreboot binary signed with wrong vboot keys.
 
 **Test steps**
 
@@ -307,8 +303,7 @@ displayed.
 
 1. Proceed with the
    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` and `flashrom` from <https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd>
-   to the DUT.
+1. Download [`cbmem`][cbmem] and [`flashrom`][flashrom] to the DUT.
 1. Disable Secure Boot.
 1. Slot A is flashed with an binary with wrong-signed vboot keys.
 1. Obtain the correct `coreboot binary` appropriate for the DUT.
@@ -342,3 +337,6 @@ displayed.
     ```bash
     VB2:vb2_check_recovery() Recovery reason from previous boot: 0x0 / 0x0
     ```
+
+[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ/download
+[flashrom]: https://cloud.3mdeb.com/index.php/s/CttXYWdT8Y2ewQC/download

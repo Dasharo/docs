@@ -320,7 +320,7 @@ Currently implemented set of functionalities can be validated using
    page](https://github.com/Dasharo/meta-dts/releases) and place it, e.g. in
    `$HOME` directory.
 5. Obtain the Sovereign Boot [test data
-   image](https://cloud.3mdeb.com/index.php/s/DxMziEtRmpdwqBK/download)
+   image](https://cloud.3mdeb.com/index.php/s/o7JfpWTxidZiKpb/download)
    (`svboot_test_data.img`) and place it, e.g. in `$HOME` directory.
 6. Start the QEMU with the following command in separate window/tab in the
    `open-source-firmware-validation` directory:

@@ -11,7 +11,7 @@
 Preparation of the muxPi's "heart":
 
 1. Prepare microSD card (minimum 8GB) for NanoPi NEO operating system.
-1. Download and extract image - [link][nanopi-image2]
+1. Download and extract image - [link][nanopi-image]
 1. Flash image into microSD card ([Etcher][etcher] tool could be helpful)
 1. Insert card to NanoPi microSD slot.
 1. Attach NanoPi to muxPi connectors.
@@ -567,8 +567,7 @@ uart --- Get current value of UART voltage or set if new value is given [in mill
 
 _Images source: [Wiki Tizen](http://web.archive.org/web/20230702190152/https://wiki.tizen.org/MuxPi)_
 
-[nanopi-image]: https://cloud.3mdeb.com/index.php/s/MENgScifExeeo6P/download
-[nanopi-image2]: https://cloud.3mdeb.com/index.php/s/n42rLcAQ5cWcxgW/download
-[cortex-binary]: https://cloud.3mdeb.com/index.php/s/adnEZLgo2diXkdw/download
+[nanopi-image]: https://cloud.3mdeb.com/index.php/s/Tda8wDTjrCY63gq/download
+[cortex-binary]: https://cloud.3mdeb.com/index.php/s/YZYYdfNf9wDDEq3/download
 [etcher]: https://www.balena.io/etcher/
 [usb-m]: http://web.archive.org/web/20230702190152/https://wiki.tizen.org/MuxPi#USB-M

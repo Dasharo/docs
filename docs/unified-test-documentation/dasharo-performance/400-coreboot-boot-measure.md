@@ -12,8 +12,7 @@
    [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).gi
-1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Download `cbmem` from the [cloud][cbmem] to the DUT.
 1. Disable Secure Boot.
 
 ## CBMEM001.201 coreboot booting time measure after coldboot (Ubuntu)
@@ -33,8 +32,7 @@ results and specify the platform stability.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Download `cbmem` from the [cloud][cbmem] to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -57,3 +55,5 @@ The test is fully automated. Refer to https://github.com/Dasharo/open-source-fir
 ## CBMEM003.201 coreboot booting time measure after system reboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ

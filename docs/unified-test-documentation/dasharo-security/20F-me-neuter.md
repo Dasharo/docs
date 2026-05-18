@@ -69,8 +69,7 @@ of PCIe 5.0 firmware by Dasharo works.
 
 1. Proceed with the
     [Test cases common documentation](#test-cases-common-documentation) section.
-1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/zTqkJQdNtJDo5Nd) to the DUT.
+1. Download `cbmem` from the [cloud][cbmem] to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -185,3 +184,5 @@ If there are no errors printed nearby concerning the HSPHY, test pass.
 ## MNE006.201 Check Intel ME version (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
+
+[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ/download
