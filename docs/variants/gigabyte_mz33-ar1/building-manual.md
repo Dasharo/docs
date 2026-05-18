@@ -46,15 +46,15 @@ then follow the steps below:
 
 3. Download the package with necessary blobs and put it in proper directory:
 
-{{ tos_checkbox("gigabyte-mz33-ar1-v090-blobs") }}
+{{ tos_gated_downloads("gigabyte-mz33-ar1-v090-blobs",
+  [{"label": "Turin.zip", "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/Turin.zip"}],
+  prose_section_id="gigabyte-mz33-ar1-v090-blobs-prose") }}
 
-<div id="gigabyte-mz33-ar1-v090-blobs"
+<div data-prose-group="gigabyte-mz33-ar1-v090-blobs-prose"
      class="tos-gate-content" markdown="1"
      style="display: none">
 
-- Download the [blobs
-package](https://dl.3mdeb.com/open-source-firmware/Dasharo/gigabyte_mz33_ar1/uefi/v0.9.0/Turin.zip).
-- Then unzip it to the following directory:
+- Unzip the package to the following directory:
 
     ```bash
     unzip Turin.zip -d 3rdparty/blobs/soc/amd/
