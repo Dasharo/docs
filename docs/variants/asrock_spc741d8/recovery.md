@@ -20,13 +20,9 @@ and Dasharo open-source firmware.
 To prepare the stand for flashing follow the steps described in
 the [Generic test stand setup](../../unified-test-documentation/generic-testing-stand-setup.md#detailed-description-of-the-process).
 
-Then, follow the following steps:
+Connect the RTE to the BIOS_PH1 header according to the following pinout:
 
-1. Connect the adapter cable to the `BIOS_PH1` header on the board
-2. Map out the BIOS pins: Using a multimeter in continuity mode, probe each
-   of the 2.54mm pins against each of the pins on the SOIC-16 BIOS package
-3. Once you have labeled each of the pins, connect them to the RTE's SPI
-   header
+![pinout](../../images/spc741d8_bios_ph1.jpg)
 
 ### Firmware flashing
 
