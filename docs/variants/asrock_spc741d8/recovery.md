@@ -24,6 +24,11 @@ Connect the RTE to the BIOS_PH1 header according to the following pinout:
 
 ![pinout](../../images/spc741d8_bios_ph1.jpg)
 
+The mentioned BIOS_PH1 header is not listed in the SPC741D8-2L2T user manual.
+It can be found next to the debug code seven segment display as marked on the
+image below.
+![SPI header](../../images/spc741d8_bios_phi_marked.jpg)
+
 ### Firmware flashing
 
 To flash firmware follow the steps described below:
