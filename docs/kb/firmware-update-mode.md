@@ -33,25 +33,8 @@ boot.
 
 ## Supported devices
 
-The following table describes which devices support Firmware Update Mode
-and the starting firmware version, if applicable.
-
-!!! note
-
-    Firmware Update Mode is currently only supported in UEFI firmware versions,
-    not in SeaBIOS or Heads-based firmware flavors.
-
-| Manufacturer | Device | FUM supported | Starting with FW version |
-| --- | --- | --- | --- |
-| MSI | Z690-A PRO | Yes | v1.1.2 |
-| MSI | Z790-P PRO | Yes | v0.9.0 |
-| NovaCustom | NS5x/7x ADL | Yes | v1.7.0 |
-| NovaCustom | NS5x/7x TGL | Yes | v1.5.0 |
-| NovaCustom | NV4x ADL | Yes | v1.7.0 |
-| NovaCustom | NV4x TGL | Yes | v1.5.0 |
-| NovaCustom | V5x0TU MTL | Yes | v0.9.0 |
-| NovaCustom | V5x0TNx | Yes | v0.9.1 |
-| NovaCustom | NUC BOX | Yes | v0.9.0 |
+For a table describing the support for different firmware update methods
+refer to the [Firmware Update Method Support Table](./firmware-update.md#firmware-update-method-support-table).
 
 ## How to use Firmware Update Mode
 

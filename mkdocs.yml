@@ -87,6 +87,7 @@ plugins:
   - search
   - macros
   - mkdocs-video
+  - table-reader
   - include-markdown:
       encoding: ascii
       preserve_includer_indent: true
