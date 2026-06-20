@@ -34,7 +34,7 @@ boot.
 ## Supported devices
 
 For a table describing the support for different firmware update methods
-refer to the [Firmware Update Method Support Table](./firmware-update.md#firmware-update-method-support-table).
+refer to the [Firmware Update Method Support Table](../guides/firmware-update.md#firmware-update-method-support-table).
 
 ## How to use Firmware Update Mode
 

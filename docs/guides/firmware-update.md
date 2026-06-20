@@ -8,6 +8,7 @@ This document is a guide for updating firmware on your Dasharo-powered device.
 
 The table below shows which firmware update methods are supported
 for which devices supporting the Dasharo firmware.
+
 - Every device supports manual updates.
 - If a device is missing from the table, the only update method supported is
 flashing a firmware ROM file manually.
@@ -28,13 +29,8 @@ is planned.
 
 !!! note
 
-    Firmware Update Mode (FUM) is currently only supported in UEFI firmware,
-    not supported in SeaBIOS or Heads-based firmware flavors.
-
-!!! note
-
-    Update Capsules are only supported in UEFI/EDK2 firmware versions,
-    not in SeaBIOS or Heads-based firmware flavors.
+    Firmware Update Mode (FUM) and Capsule Updates are only supported in UEFI
+    firmware, not supported in SeaBIOS or Heads-based firmware flavors.
 
 !!! note
 
