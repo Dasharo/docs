@@ -208,7 +208,8 @@ on the keyboard is tested in this case.
     ```
 
 1. Wait 15 seconds.
-1. Press any key on the keyboard to resume the system.
+1. Press any key on the keyboard to resume the system. (PiKVM does not support
+weaking from suspend state)
 1. Log into the system again.
 1. Execute the following command to get the results of suspend process:
 
