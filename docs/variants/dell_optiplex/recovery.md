@@ -229,3 +229,153 @@ Use following procedure if your 4M flash contain vendor BIOS.
 ```bash
 flashrom -w your_bios_backup_8M.bin -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c "MX25L6406E/MX25L6408E"
 ```
+
+# RaspberryPi Recovery
+
+## Overview
+
+If you attempted to flash dasharo, using the below command, without using
+the Dasharo Tools Suite OEM you may have caused a break within the Intel ME
+region of the flash chip.
+
+```bash
+flashrom -p internal --ifd -i bios -i me -w <dasharo_optiplex_9010_firmware>
+```
+
+## Required Items
+
+You will need to purchase an
+[8 Pin Pomona Clip](https://www.digikey.com/en/products/detail/pomona-electronics/5250/745102?s=N4IgTCBcDaIKxjgBgAQAUD2BbDA7AhiiALoC%2BQA),
+a [16 Pin Pomona Clip](https://www.digikey.com/en/products/detail/pomona-electronics/5252/745103?s=N4IgTCBcDaIKxgQAgAoHsC2aB2BDJIAugL5A),
+a [Raspberry pi 3B+ or above](https://www.adafruit.com/product/3775?src=raspberrypi),
+and [female-to-female DuPont cables](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98)
+
+## Steps
+
+1. Remove heatsink from CPU. [Linked video with correct timestamp](https://youtu.be/oFu3zpvo1Vg?t=240)
+
+1. Plug your DuPont female-to-female connectors to the RPi as displayed below.
+
+  Edge of pi (furthest from you)
+              (UART)
+             TX
+L         GND | RX                    CS
+E          |  |  |                    |
+F +--------------------------------------------------------------+
+T |  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  |
+  |  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  |
+E +--------------------------^--^--^--^-----------------------^--+
+                             |  |  |  |                       20
+D                     (VCC)-3.3V| MISO|                       |
+G                             MOSI    CLK                    GND
+E
+  Body of Pi (closest to you)
+CREDIT: [skulls](https://github.com/merge/skulls/blob/master/x230/README.md)
+
+1. Activate your SPI interface on your RPi.
+
+```bash
+sudo raspi-config
+```
+
+Select _Interface Options_
+Select _SPI_
+Select _enable_
+
+Confirm changes.
+
+1. Split your backup file located on your RPi.
+
+```bash
+split -b8M bio_backup.bin
+```
+
+This should produce two (2) separate files within your directory,
+xaa and xab. You xaa blob will be 8MB (ME blob) and your xab
+will be 4MB (BIOS blob).
+
+1. With your PC and your RPi powered off and power cords
+_removed_ clip the 8 Pin Pomona Clip to the 8 Pin chip.
+
+<center>
+### 8 Pin Clip
+Left Side Clip
+x  x  x  x
+^     ^  ^
+|     |  |
+GND  MISO|
+         CS
+
+Right Side Clip
+x  x  x  x
+^  ^     ^
+|  |     |
+MOSI    VCC
+  CLK
+</center>
+
+1. Boot the RPi.
+
+1. Test to ensure the RPi can read the chip.
+
+```bash
+sudo flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=16000 -V
+```
+
+If successful, flashrom will display the chips read (should have 4 chips read).
+
+1. With the split backup (xaa and xab) in your current directory flash
+the chip and wait.
+
+```bash
+sudo flashrom -w xab -p linux_spi:dev=/dev/spidev0.0,spispeed=16000 -c "MX25L3205D/MX25L3208D" -V
+```
+
+1. After a successful flash, shutdown the RPi and remove the clip.
+
+1. Plug the DuPont female-to-female connectors to the 16 Pin Pomona Clip
+
+<center>
+### 16 Pin Clip
+Left Side Clip
+x  x  x  x  x  x  x  x
+   ^              ^  ^
+   |              |  |
+  VCC            CS  |
+                    MISO
+Right Side Clip
+x  x  x  x  x  x  x  x
+^  ^                 ^
+|  |                 |
+CLK|                GND
+  MOSI
+</center>
+
+1. With your PC and your RPi powered off and power cords _removed_ clip the
+16 Pin Pomona Clip to the 16 Pin chip.
+
+1. Boot the RPi.
+
+1. Again, test to ensure the RPi can read the chip.
+
+```bash
+sudo flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=16000 -V
+```
+
+If successful, flashrom will display the chips read (should have 4 chips
+read).
+
+1. With the split backup (xaa and xab) in your current directory flash
+the chip and wait.
+
+```bash
+sudo flashrom -w xaa -p linux_spi:dev=/dev/spidev0.0,spispeed=16000 -c "MX25L6406E/MX25L6408E" -V
+```
+
+1. After a successful flash, shutdown the RPi and remove the clip.
+
+1. With the CMOS battery removed, plug in the power to the tower and power on.
+If you have a successful boot (output displayed and white light on power button),
+power down the machine and reinsert the CMOS battery. Again, power on the machine.
+
+1. If successful, you will have a stable system to re-attampt flashing Dasharo.
