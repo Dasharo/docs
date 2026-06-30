@@ -4,66 +4,41 @@
 
 This document is a guide for updating firmware on your Dasharo-powered device.
 
-!!! tip
+## Firmware Update Method Support Table
 
-    If your current firmware supports UEFI Update Capsules, there is a dedicated
-    [guide on their usage](../guides/capsule-update.md).  If unsure, check out
-    [the compatibility table](../guides/capsule-update.md#supported-devices)
-    there.
+The table below shows which firmware update methods are supported
+for which devices supporting the Dasharo firmware.
 
-## fwupd / LVFS
+- Every device supports manual updates.
+- If a device is missing from the table, the only update method supported is
+flashing a firmware ROM file manually.
+- A hyphen means no support for a given method.
+- A version in a column means the method is supported starting from the given
+Dasharo version. The update to the first supported version for a given method
+needs to be performed using other methods.
+- The table might contain upcoming and not yet released versions if the feature
+is planned.
 
-Some platforms support updates via fwupd / LVFS starting with the following
-firmware versions:
+{{ read_csv('./firmware-update-method-support-table.csv') }}
 
-|   Vendor   | Model                     | Version |
-| ---------- | --------------------------| ------- |
-| NovaCustom | NV4x, NS5x, NS7x 11th Gen | 1.6.0   |
-| NovaCustom | NV4x, NS5x, NS7x 12th Gen | 1.8.0   |
-| NovaCustom | V54x, V56x                | 1.0.0   |
-| MSI        | PRO Z690-A                | 1.1.7   |
-| MSI        | PRO Z790-P                | 0.9.5   |
+[fum]: ../kb/firmware-update-mode.md
+[cup1]: ./capsule-update.md
+[fwupd]: ../kb/fwupd.md
+[lvfs]: ../kb/fwupd.md
+[cup2]: ./capsule-update.md
 
-For instructions on how to perform updates using FWUPD and how to use the tool
-in general, refer to the [Dasharo fwupd documentation](../kb/fwupd.md#updating-the-firmware).
+!!! note
 
-## Firmware Update Mode
+    Firmware Update Mode (FUM) and Capsule Updates are only supported in UEFI
+    firmware, not supported in SeaBIOS or Heads-based firmware flavors.
 
-Newer Dasharo releases support Firmware Update Mode, which performs updates
-automatically over the network.
+!!! note
 
-!!! question "Does my device support Firmware Update Mode?"
-
-    Not sure if your device supports Firmware Update Mode? Check out the
-    [compatibility table](../kb/firmware-update-mode.md#supported-devices) in the
-    Knowledge Base section.
-
-To enter Firmware Update Mode:
-
-1. Enter the Setup Menu and navigate to Dasharo System Features:
-![](./images/setup_menu_dsf.png)
-1. Navigate to `Dasharo Security Options`:
-![](./images/setup_menu_dsc.png)
-1. Select `Firmware Update Mode`:
-![](./images/setup_menu_fum.png)
-1. When prompted, press Enter to accept. The device will reboot in Firmware
-  Update Mode.
-![](./images/setup_menu_fum_confirmation.png)
-1. After reboot, when prompted, press the indicated key on the keyboard.
-  Alternatively, to abort Firmware Update Mode, press Enter instead or simply
-  wait for the timeout to expire.
-
-Once in Firmware Update Mode, proceed with the firmware update steps outlined
-in device-specific documentation.
-
-After the firmware update is finished, the device will reboot automatically. If
-the update includes an Embedded Controller firmware update, it will be applied
-automatically after reboot and the device will reboot again.
-
-!!! tip
-
-    Check out a more detailed explanation and rationale for Firmware Update Mode
-    in the [Knowledge Base](../kb/firmware-update-mode.md) section.
+    Enforcing capsule authentication in V2 made newer capsules incompatible
+    with the older ones.  The first release with V2 publishes capsules of the
+    older kind which can be used to upgrade from prior releases, but starting
+    with this release **older capsules are no longer accepted** to not
+    compromise capsule authentication enhancements.
 
 ## Manual update
 

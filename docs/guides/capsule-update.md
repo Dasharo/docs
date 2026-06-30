@@ -9,33 +9,8 @@ this compares to other update methods.
 
 ## Supported devices
 
-!!! note
-
-    Update Capsules are only supported in UEFI/EDK2 firmware versions,
-    not in SeaBIOS or Heads-based firmware flavors.
-
-The following table describes which devices support Update Capsules
-and since which firmware release, if applicable.  If a particular device isn't
-mentioned, it means that it doesn't support this update method.
-
-| Manufacturer |     Device      | Starting with FW version | V2 starting with FW version |
-| ------------ | --------------- | ------------------------ | --------------------------- |
-| Hardkernel   | Odroid H4+      | v0.9.1                   | —                           |
-| MSI          | Z690-A PRO      | v1.1.4                   | v1.1.7                      |
-| MSI          | Z790-P PRO      | v0.9.2                   | v0.9.5                      |
-| NovaCustom   | 11th Gen series | v1.6.0                   | —                           |
-| NovaCustom   | 12th Gen series | v1.8.0                   | —                           |
-| NovaCustom   | 14th Gen series | v1.0.0                   | —                           |
-| NovaCustom   | NUC BOX         | v0.9.0                   | —                           |
-| Protectli    | Vault VP66xx    | v0.9.3                   | —                           |
-
-!!! note
-
-    Enforcing capsule authentication in V2 made newer capsules incompatible
-    with the older ones.  The first release with V2 publishes capsules of the
-    older kind which can be used to upgrade from prior releases, but starting
-    with this release **older capsules are no longer accepted** to not
-    compromise capsule authentication enhancements.
+For a table representing the support for different firmware update methods
+refer to the [Firmware Update Method Support Table](./firmware-update.md#firmware-update-method-support-table).
 
 ## Prerequisites
 
