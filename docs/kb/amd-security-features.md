@@ -28,7 +28,7 @@ The features covered are:
 ## AMD ROM Armor
 
 AMD ROM Armor protects the SPI flash against unauthorized writes. It is AMD's
-equivalent of [SMM BIOS write protection](../kb/firmware-update-mode.md) used on
+equivalent of [SMM BIOS write protection](firmware-update-mode.md) used on
 Intel Dasharo platforms.
 
 ### How it works
@@ -61,7 +61,7 @@ controlled by the `Enable SMM BIOS write protection` option under
 
     As with SMM BIOS write protection on Intel platforms, this protection must
     be disabled before flashing firmware from the running OS. Use
-    [Firmware Update Mode](../kb/firmware-update-mode.md) to temporarily disable
+    [Firmware Update Mode](firmware-update-mode.md) to temporarily disable
     firmware protections for the duration of a single boot.
 
 ### Verification
@@ -92,10 +92,10 @@ SME is enabled on AMD Turin Dasharo builds.
 
 ### Verification
 
-If support for SME is present, MSR 0xc00100010 (MSR_AMD64_SYSCFG) can be used to
+If support for SME is present, MSR 0xc0010010 (MSR_AMD64_SYSCFG) can be used to
 determine if SME is enabled and/or to enable memory encryption:
 
-```
+```text
 0xc0010010:
         Bit[23]   0 = memory encryption features are disabled
                   1 = memory encryption features are enabled
@@ -103,7 +103,7 @@ determine if SME is enabled and/or to enable memory encryption:
 
 For example:
 
-```
+```shell
 ubuntu@3mdeb:~$ sudo rdmsr 0xc0010010
 3fc0000
 ```
@@ -181,6 +181,6 @@ configuration registers cannot be modified from the OS.
 ## References
 
 - [Dasharo Security Options](../dasharo-menu-docs/dasharo-system-features.md#dasharo-security-options)
-- [Firmware Update Mode](../kb/firmware-update-mode.md)
+- [Firmware Update Mode](firmware-update-mode.md)
 - [Gigabyte MZ33-AR1 overview](../variants/gigabyte_mz33-ar1/overview.md)
 - [AMD openSIL project](https://github.com/openSIL/openSIL)
