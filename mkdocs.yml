@@ -535,6 +535,7 @@ nav:
           - 'Capsule Updates Overview': kb/capsule-updates-overview.md
           - 'Capsule Updates Details': kb/edk2-capsule-updates.md
           - 'Capsule Updates Configs': kb/capsule-updates-configs.md
+      - 'AMD platform security features': kb/amd-security-features.md
       - 'PCR Measurements': kb/pcr-measurements.md
       - 'NovaCustom dev setup': kb/laptop-dev-env.md
       - 'Flash Regions': kb/flashregions.md
