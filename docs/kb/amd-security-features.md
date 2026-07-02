@@ -173,10 +173,17 @@ they are not user-configurable.
 ### Verification
 
 These lockdowns are enforced by hardware lock bits set during POST. On a Linux
-host, [CHIPSEC](https://github.com/chipsec/chipsec) can be used to inspect the
-relevant lock bits and confirm that SMRAM and the SMI/FCH configuration are
-locked. The expected result is that the lock bits are set and the corresponding
-configuration registers cannot be modified from the OS.
+host, fwupd may be used to verify the SMM lockdown:
+
+```shell
+sudo fwupdtool security
+HSI-1
+✔ SMM locked down:               Locked
+✔ Fused platform:                Locked
+✔ Supported CPU:                 Valid
+✔ UEFI bootservice variables:    Locked
+✘ TPM v2.0:                      Not found
+```
 
 ## References
 
