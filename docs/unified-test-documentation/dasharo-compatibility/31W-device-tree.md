@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo compatibility: Device tree
 
 ## Test cases common documentation

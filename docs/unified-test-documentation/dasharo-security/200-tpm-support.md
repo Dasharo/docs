@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: TPM Support
 
 ## Test cases common documentation

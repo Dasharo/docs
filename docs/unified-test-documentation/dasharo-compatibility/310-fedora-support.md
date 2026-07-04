@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Fedora support
 
 ## Test cases common documentation

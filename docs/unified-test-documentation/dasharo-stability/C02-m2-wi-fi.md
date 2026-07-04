@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Stability: M.2 Wi-fi
 
 ## Test cases common documentation

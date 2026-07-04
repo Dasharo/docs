@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Memtest payload support
 
 ## MEM001.001 Memtest availability

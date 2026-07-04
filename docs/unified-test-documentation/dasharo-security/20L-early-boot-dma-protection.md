@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: Early Boot DMA Protection
 
 ## Test cases common documentation

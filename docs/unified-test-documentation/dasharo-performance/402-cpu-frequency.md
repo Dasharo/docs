@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Performance: CPU frequency measure
 
 ## Test cases common documentation

@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Performance: Custom fan curve
 
 ## Test cases common documentation

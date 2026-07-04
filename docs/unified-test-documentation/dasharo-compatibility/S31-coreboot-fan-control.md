@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: coreboot Fan Control
 
 ## CFN001.001 Check CPU entry temperature and CPU fan speed

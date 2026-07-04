@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Sleep mode
 
 ## Test cases common documentation

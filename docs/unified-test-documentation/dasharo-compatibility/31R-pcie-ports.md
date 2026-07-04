@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: PCI Express ports support
 
 ## Test cases common documentation

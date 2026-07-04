@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Firmware locally building and flashing
 
 ## Test cases common documentation

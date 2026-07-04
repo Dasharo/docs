@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Laboratory stand dedicated to MSI PRO Z690-A/Z790-P platforms assembly guide
 
 ## Introduction

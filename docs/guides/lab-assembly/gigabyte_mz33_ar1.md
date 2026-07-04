@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Laboratory stand dedicated to MGigabyte MZ33-AR1 platform assembly guide
 
 ## Introduction

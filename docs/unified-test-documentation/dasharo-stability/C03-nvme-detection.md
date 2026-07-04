@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Stability: NVMe detection
 
 ## Test cases common documentation

@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo compatibility: Custom Logo
 
 ## CLG001.001 Custom boot logo

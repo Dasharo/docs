@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Suspend mechanism switching (S0ix/S3)
 
 ## Test cases common documentation

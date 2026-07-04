@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Firmware update using fwupd
 
 ## Test cases common documentation

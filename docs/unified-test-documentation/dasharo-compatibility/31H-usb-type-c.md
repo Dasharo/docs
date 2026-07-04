@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: USB-C/Thunderbolt support with charging and display
 
 ## Test cases common documentation

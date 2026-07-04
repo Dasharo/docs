@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Laboratory stand dedicated to MSI PRO B850 platforms assembly guide
 
 ## Introduction

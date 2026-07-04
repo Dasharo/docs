@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo compatibility: USB HID and MSC Support
 
 ## Test cases common documentation

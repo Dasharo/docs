@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: UEFI Setup password
 
 ## Test cases common documentation

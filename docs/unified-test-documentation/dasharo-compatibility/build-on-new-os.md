@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Building from source on a newly installed OS works
 
 ## Test cases common documentation

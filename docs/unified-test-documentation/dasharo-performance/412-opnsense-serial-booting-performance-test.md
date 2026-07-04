@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Performance: OPNsense (serial output) booting performance test
 
 ## Test cases common documentation

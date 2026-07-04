@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: SATA LED and PC speaker error indication
 
 ## ERR001.001 SATA LED and PC speaker error indication support (firmware)

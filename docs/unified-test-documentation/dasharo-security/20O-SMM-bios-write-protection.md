@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: SMM BIOS write protection
 
 ## Test cases common documentation

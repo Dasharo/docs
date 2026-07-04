@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Stability: Capsule Update
 
 ## Test cases common documentation

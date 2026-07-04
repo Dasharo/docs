@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: USB Boot
 
 ## UBT001.001 USB detect and boot after coldboot
