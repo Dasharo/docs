@@ -39,14 +39,14 @@ Test results for this release can be found
 - [Windows 11 booting](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31A-windows-booting/)
 - [Serial port console redirection](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31G-ec-and-superio/#sio004001-serial-port-in-firmware)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
-- [SMM BIOS write protection with AMD ROM Armor](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [SMM BIOS write protection with AMD ROM Armor](https://docs.dasharo.com/kb/amd-security-features/#amd-rom-armor)
 - [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [Setup menu password configuration](https://docs.dasharo.com/dasharo-menu-docs/overview/#dasharo-menu-guides)
 - [USB stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
 - [Network stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)
 - TPM PPI support with UEFI variable backend
 - [SBOM generation for AMD PSP blobs](https://doc.coreboot.org/sbom/sbom.html)
-- AMD SME and AMD SEV-SNP support
+- [AMD SME and AMD SEV-SNP support](https://docs.dasharo.com/kb/amd-security-features/#amd-secure-memory-encryption-sme)
 - [UEFI Capsule Updarte v1 support](https://docs.dasharo.com/unified-test-documentation/dasharo-stability/capsule-update/)
 - Rebased coreboot on 25.12 tag
 - Rebased iPXE on last commit of February 2026

@@ -26,3 +26,6 @@ AMD Genoa and AMD Turin EPYC server processors.
     validation procedure.
 - [Test Matrix](./test-matrix.md) - Describes validation scope used during
     Dasharo firmware validation procedure.
+- [AMD platform security features](../../kb/amd-security-features.md) - Describes
+    the AMD security features (ROM Armor, SME, SEV-SNP, FCH/GPIO/SMM lockdown)
+    available on this platform and how to verify them.
