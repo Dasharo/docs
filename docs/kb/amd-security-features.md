@@ -74,7 +74,7 @@ controller:
 flashrom -p internal -w coreboot.rom
 ```
 
-The write should be refused. A read using an external programmer (or a write
+The write should be refused. A write using an external programmer (or a write
 performed through the firmware update path) still works. After disabling the
 protection via Firmware Update Mode, the same write should succeed, confirming
 that the protection is what blocks it.
