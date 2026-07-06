@@ -28,7 +28,7 @@ The features covered are:
 ## AMD ROM Armor
 
 AMD ROM Armor protects the SPI flash against unauthorized writes. It is AMD's
-equivalent of [SMM BIOS write protection](firmware-update-mode.md) used on
+equivalent of [SMM BIOS write protection](flash-write-dependencies.md) used on
 Intel Dasharo platforms.
 
 ### How it works
