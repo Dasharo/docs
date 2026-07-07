@@ -5,6 +5,6 @@ the BIOS SPI flash chip.
 
 ## Flashing Dasharo
 
-To flash Dasharo on the platform, it is currently only possible with an
+Flashing Dasharo on the platform is currently only possible with an
 external programmer. Follow the same process as in the
 [recovery section](recovery.md#external-flashing).
