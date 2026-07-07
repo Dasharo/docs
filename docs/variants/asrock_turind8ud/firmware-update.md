@@ -1,7 +1,5 @@
 # Firmware update
 
-**Please read the [overview page](overview.md) first!**
-
 ASRock Rack TURIND8UD-2T/X550 runs Dasharo firmware with a
 [LinuxBoot](https://www.linuxboot.org/) payload.
 
