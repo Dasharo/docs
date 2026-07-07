@@ -1,8 +1,5 @@
 # Firmware update
 
-ASRock Rack TURIND8UD-2T/X550 runs Dasharo firmware with a
-[LinuxBoot](https://www.linuxboot.org/) payload.
-
 !!! warning "No in-band firmware update is available yet"
 
     There is currently **no supported method for updating the Dasharo
