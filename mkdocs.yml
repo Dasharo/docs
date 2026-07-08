@@ -237,6 +237,16 @@ nav:
           - 'Hardware Configuration Matrix': variants/asrock_spc741d8/hardware-matrix.md
           - 'Test matrix': variants/asrock_spc741d8/test-matrix.md
           - 'Openness Score': variants/asrock_spc741d8/openness_score.md
+      - 'ASRock Rack TURIND8UD-2T/X550':
+          - 'Overview': variants/asrock_turind8ud/overview.md
+          - 'Releases': variants/asrock_turind8ud/releases.md
+          - 'Firmware Update': variants/asrock_turind8ud/firmware-update.md
+          - 'Building manual': variants/asrock_turind8ud/building-manual.md
+          - 'Initial deployment': variants/asrock_turind8ud/initial-deployment.md
+          - 'Recovery': variants/asrock_turind8ud/recovery.md
+          - 'Hardware Configuration Matrix': variants/asrock_turind8ud/hardware-matrix.md
+          - 'Test matrix': variants/asrock_turind8ud/test-matrix.md
+          - 'Openness Score': variants/asrock_turind8ud/openness-score.md
       - 'Asus KGPE-D16':
           - 'Overview': variants/asus_kgpe_d16/overview.md
           - 'Releases': variants/asus_kgpe_d16/releases.md
