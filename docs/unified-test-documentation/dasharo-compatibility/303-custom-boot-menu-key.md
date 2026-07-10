@@ -1,6 +1,6 @@
 # Dasharo compatibility: Custom Boot Keys
 
-## CBK001.001 Custom Boot Menu Key
+## CBK001.001 Custom boot menu key
 
 **Test description**
 

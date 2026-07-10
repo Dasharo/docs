@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BPM001.001 Boot Proxmox Virtual Environment from disk after cold-boot
+## BPM001.210 Boot Proxmox Virtual Environment from disk after cold-boot (Proxmox)
 
 **Test description**
 
@@ -43,7 +43,7 @@ the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPM002.001 Boot Proxmox Virtual Environment from disk after warm-boot
+## BPM002.210 Boot Proxmox Virtual Environment from disk after warm-boot (Proxmox)
 
 **Test description**
 
@@ -72,7 +72,7 @@ the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BPM003.001 Boot Proxmox Virtual Environment from disk after reboot
+## BPM003.210 Boot Proxmox Virtual Environment from disk after reboot (Proxmox)
 
 **Test description**
 

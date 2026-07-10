@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## SMW0001.201 Wi-fi connection after cold boot (Ubuntu)
+## SMW001.201 Wi-fi connection after cold boot (Ubuntu)
 
 **Test description**
 
@@ -97,14 +97,14 @@ after performing a cold boot. The test should be performed in multiple iteration
             XX:XX:XX:XX:XX:XX  NED-WIFI                Infra  11    270 Mbit/s  17      ▂___  WPA2
     ```
 
-## SMW0002.201 Wi-fi connection after warm boot (Ubuntu)
+## SMW002.201 Wi-fi connection after warm boot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## SMW0003.201 Wi-fi connection after reboot (Ubuntu)
+## SMW003.201 Wi-fi connection after reboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## SMW0004.201 Wi-fi connection after suspension (Ubuntu)
+## SMW004.201 Wi-fi connection after suspension (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

@@ -14,7 +14,7 @@
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. The `Thunderbolt docking station` connected to the Thunderbolt port.
 
-## NET001.001 201 controller after coldboot (Ubuntu)
+## NET001.201 NET controller after coldboot (Ubuntu)
 
 **Test description**
 
@@ -91,11 +91,11 @@ is able to connect to the network after coldboot.
     up
     ```
 
-## NET002.201 NET controller after warmboot (Ubuntu)
+## NET002.201 Net controller after warmboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## NET003.201 NET controller after reboot (Ubuntu)
+## NET003.201 Net controller after reboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 

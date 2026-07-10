@@ -52,7 +52,7 @@ dedicated for coreboot. Example output:
 00000000: 636f 7265 626f 6f74 00                   coreboot
 ```
 
-## DVT002.001 Memory for coreboot is reserved (Ubuntu)
+## DVT002.001 Memory for coreboot is reserved
 
 **Test description**
 

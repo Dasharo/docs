@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BWI001.001 Boot Windows from disk after cold-boot
+## BWI001.301 Boot Windows from disk after cold-boot (Windows)
 
 **Test description**
 
@@ -43,7 +43,7 @@ on the DUT after cold-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BWI002.001 Boot Windows from disk after warm-boot
+## BWI002.301 Boot Windows from disk after warm-boot (Windows)
 
 **Test description**
 
@@ -72,7 +72,7 @@ on the DUT after warm-boot. The test is performed in multiple iterations.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## BWI003.001 Boot Windows from disk after reboot
+## BWI003.301 Boot Windows from disk after reboot (Windows)
 
 **Test description**
 

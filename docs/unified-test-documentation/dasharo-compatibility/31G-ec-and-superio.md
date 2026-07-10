@@ -1059,7 +1059,7 @@ system.
 1. Pressing the button once should make laptop enter sleep mode.
 1. The power LED should be blinking green, indicating the laptop is sleeping.
 
-## ECR021.201 Keyboard (function key: RGB keyboard toggle) in OS (Ubuntu)
+## ECR031.201 Keyboard (function key: RGB keyboard toggle) in OS (Ubuntu)
 
 **Test description**
 
@@ -1088,7 +1088,7 @@ the operating system.
 1. Pressing the button once should disable the keyboard backlight.
 1. Pressing the button again should re-enable the keyboard backlight.
 
-## ECR021.301 Keyboard (function key: RGB keyboard toggle) in OS (Windows)
+## ECR031.301 Keyboard (function key: RGB keyboard toggle) in OS (Windows)
 
 **Test description**
 
@@ -1117,7 +1117,7 @@ the operating system.
 1. Pressing the button once should disable the keyboard backlight.
 1. Pressing the button again should re-enable the keyboard backlight.
 
-## ECR022.201 RGB keyboard next color FN key in OS (Ubuntu)
+## ECR032.201 RGB keyboard next color FN key in OS (Ubuntu)
 
 **Test description**
 
@@ -1147,7 +1147,7 @@ by the operating system.
 1. Pressing the button once should switch the keyboard color.
 1. All color modes according to product documentation should be accessible.
 
-## ECR022.301 RGB keyboard next color FN key in OS (Windows)
+## ECR032.301 RGB keyboard next color FN key in OS (Windows)
 
 **Test description**
 
@@ -1177,7 +1177,7 @@ by the operating system.
 1. Pressing the button once should switch the keyboard color.
 1. All color modes according to product documentation should be accessible.
 
-## ECR023.201 RGB keyboard brightness down FN key in OS (Ubuntu)
+## ECR033.201 RGB keyboard brightness down FN key in OS (Ubuntu)
 
 **Test description**
 
@@ -1205,7 +1205,7 @@ properly by the operating system.
 
 1. Pressing the button once should lower the keyboard backlight
 
-## ECR023.301 RGB keyboard brightness down FN key in OS (Windows)
+## ECR033.301 RGB keyboard brightness down FN key in OS (Windows)
 
 **Test description**
 
@@ -1233,7 +1233,7 @@ properly by the operating system.
 
 1. Pressing the button once should lower the keyboard backlight.
 
-## ECR024.201 RGB keyboard brightness up FN key in OS (Ubuntu)
+## ECR034.201 RGB keyboard brightness up FN key in OS (Ubuntu)
 
 **Test description**
 
@@ -1261,7 +1261,7 @@ properly by the operating system.
 
 1. Pressing the button once should increase the keyboard backlight.
 
-## ECR024.301 RGB keyboard brightness up FN key in OS (Windows)
+## ECR034.301 RGB keyboard brightness up FN key in OS (Windows)
 
 **Test description**
 
@@ -1318,7 +1318,7 @@ illuminates in firmware.
 
 1. After cold-boot keyboard brightness and colors settings remain the same.
 
-## ECR025.201 Permanent keyboard illumination after cold-boot (Ubuntu)
+## ECR025.201 Permanent keyboard illumination after cold boot (Ubuntu)
 
 **Test description**
 
@@ -1351,7 +1351,7 @@ illuminates in Ubuntu.
 
 1. After cold-boot keyboard brightness and colors settings remain the same.
 
-## ECR025.301 Permanent keyboard illumination after cold-boot (Windows)
+## ECR025.301 Permanent keyboard illumination after cold boot (Windows)
 
 **Test description**
 
@@ -1412,7 +1412,7 @@ illuminates in firmware.
 
 1. After warm-boot keyboard brightness and colors settings remain the same.
 
-## ECR026.201 Permanent keyboard illumination after warm-boot (Ubuntu)
+## ECR026.201 Permanent keyboard illumination after warm boot (Ubuntu)
 
 **Test description**
 
@@ -1444,7 +1444,7 @@ illuminates in Ubuntu.
 
 1. After warm-boot keyboard brightness and colors settings remain the same.
 
-## ECR026.301 Permanent keyboard illumination after warm-boot (Windows)
+## ECR026.301 Permanent keyboard illumination after warm boot (Windows)
 
 **Test description**
 
@@ -1719,15 +1719,7 @@ Windows.
 
 1. The function keys `F1` - `F12` behave as if `Fn` key is pressed.
 
-## ECR030.201 Charging until 98% battery level (Ubuntu)
-
-The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## ECR031.201 Not charging between 95% and 98% levels (Ubuntu)
-
-The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## ECR032.001 EC firmware sync in coreboot
+## ECR032.001 EC firmware sync in coreboot blocked when AC not connected <!-- OSFV_DOCS_SKIP -->
 
 **Test description**
 
@@ -1768,7 +1760,7 @@ This test verifies the automatic EC firmware update / sync feature in coreboot.
 1. There should not be a pop-up indicating that the EC update failed for any
    reason.
 
-## ECR033.001 EC firmware sync in coreboot blocked when AC not connected
+## ECR033.001 EC power button watchdog
 
 **Test description**
 
@@ -1807,7 +1799,7 @@ coreboot does not attempt to update the EC while an AC adapter is not connected.
    not proceed correctly, and asking them to reboot with an AC adapter
    connected.
 
-## ECR034.001 EC power button watchdog
+## ECR033.001 EC power button watchdog <!-- OSFV_DOCS_SKIP -->
 
 **Test description**
 
@@ -1834,7 +1826,7 @@ can reset the EC.
 1. The DUT should power off and on all within the 10 seconds
 of power button being pressed down
 
-## ECR035.201 Soft Switch Microphone Key (Ubuntu)
+## ECR030.201 Soft Switch Microphone Key (Ubuntu)
 
 **Test description**
 
@@ -1865,7 +1857,7 @@ This test verifies that Fn+4 key combination for microphone soft switch works
  aforementioned bar which state is currently active as noise made will
  make the bar go back and forth if ON and completely still if OFF
 
-## ECR034.301 Soft Switch Microphone Key (Windows)
+## ECR030.301 Soft Switch Microphone Key (Windows)
 
 **Test description**
 

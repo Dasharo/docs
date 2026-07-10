@@ -31,7 +31,7 @@ flashing the platform with the Dasharo firmware is correct.
 The `Secure Boot State` field should inform that the current state of
 Secure Boot is `Disabled`.
 
-## SBO002.001 UEFI Secure Boot (Ubuntu)
+## SBO002.201 UEFI Secure Boot (Ubuntu)
 
 **Test description**
 
@@ -94,7 +94,7 @@ The output of the command should contain the line:
 secureboot: Secure boot enabled
 ```
 
-## SBO002.002 UEFI Secure Boot (Windows)
+## SBO002.301 UEFI Secure Boot (Windows)
 
 **Test description**
 
@@ -149,7 +149,7 @@ enabled:
 True
 ```
 
-## SBO003.001 Attempt to boot file with the correct key from Shell (firmware)
+## SBO003.101 Attempt to boot file with the correct key from Shell (EDK2 UEFI)
 
 **Test description**
 
@@ -217,7 +217,7 @@ the output) and the output of the command shows file content. Example output:
 Hello, world!
 ```
 
-## SBO004.001 Attempt to boot file without the key from Shell (firmware)
+## SBO004.101 Attempt to boot file without the key from Shell (EDK2 UEFI)
 
 **Test description**
 
@@ -273,7 +273,7 @@ denied is displayed. Example output:
 Command Error Status: Access Denied
 ```
 
-## SBO005.001 Attempt to boot file with the wrong-signed key from Shell (firmware)
+## SBO005.101 Attempt to boot file with the wrong-signed key from Shell (EDK2 UEFI)
 
 **Test description**
 
@@ -330,7 +330,7 @@ denied is displayed. Example output:
 Command Error Status: Access Denied
 ```
 
-## SBO006.001 Reset Secure Boot Keys option availability (firmware)
+## SBO006.101 Reset Secure Boot Keys option availability (EDK2 UEFI)
 
 **Test description**
 
@@ -361,7 +361,7 @@ after flashing the platform with the Dasharo firmware.
 The `Reset Secure Boot Keys` option should be listed after entering the key
 management submenu.
 
-## SBO007.001 Attempt to boot the file after restoring keys to default (firmware)
+## SBO007.101 Attempt to boot the file after restoring keys to default (EDK2 UEFI)
 
 **Test description**
 
@@ -477,7 +477,7 @@ Command Error Status: Access Denied
 After selecting the `Reset Secure Boot Keys` option, the Secure boot state
 should be automatically enabled.
 
-## SBO008.001 Attempt to enroll the key in the incorrect format (firmware)
+## SBO008.101 Attempt to enroll the key in the incorrect format (EDK2 UEFI)
 
 **Test description**
 
@@ -1069,7 +1069,7 @@ image.
 
 File does not boot correctly: `Command Error Status: Access Denied`.
 
-## SBO012.001 Boot OS Signed And Enrolled From Inside System (Ubuntu)
+## SBO012.201 Boot OS Signed And Enrolled From Inside System (Ubuntu)
 
 **Test description**
 

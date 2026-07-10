@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## USB001.001 USB devices detection (firmware)
+## USB001.001 USB devices detected in FW
 
 **Test description**
 
@@ -42,15 +42,15 @@ correctly by the firmware and all basic keys work according to their labels.
 
 1. Flash drive entry is listed in the boot menu.
 
-## USB001.201 USB devices detection in OS (Ubuntu)
+## USB001.201 USB devices detected by OS (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## USB001.301 USB devices detection in OS (Windows)
+## USB001.301 USB devices detected by OS (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## USB002.201 USB keyboard detection (firmware)
+## USB002.201 USB keyboard in OS (Ubuntu)
 
 **Test description**
 
@@ -77,11 +77,7 @@ by the firmware and all basic keys work according to their labels.
 
 1. All menus can be entered using the external USB keyboard.
 
-## USB002.002 USB keyboard detection (Ubuntu)
-
-The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
-
-## USB002.301 USB keyboard detection (Windows)
+## USB002.301 USB keyboard in OS (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
@@ -89,6 +85,6 @@ The test is fully automated. Refer to https://github.com/Dasharo/open-source-fir
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## USB003.002 Upload 1GB file on USB storage (Windows)
+## USB003.301 Upload 1GB file on USB storage (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

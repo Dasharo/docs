@@ -1,6 +1,6 @@
 # Dasharo Compatibility: NVMe support
 
-## NVM001.001 NVMe support (firmware)
+## NVM001.001 NVMe support in firmware
 
 **Test description**
 
@@ -27,7 +27,7 @@ detect NVMe disk in the M.2 slot.
 
 1. The NVMe disk should be listed on the bootable devices list.
 
-## NVM001.201 NVMe support (Ubuntu)
+## NVM001.201 NVMe support in OS (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 

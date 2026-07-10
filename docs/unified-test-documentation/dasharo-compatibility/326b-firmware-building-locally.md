@@ -16,7 +16,7 @@
     the relevant platform:
     * [NovaCustom laptops](../../unified/novacustom/building-manual.md)
 
-## FLB001.001 Firmware locally build
+## FLB001.201 Firmware locally build (Ubuntu)
 
 **Test description**
 
@@ -48,7 +48,7 @@ platform.
 The `build` location should contain the binary file, which size is equal to the
 flash chip size.
 
-## FLB002.001 Flash locally built firmware
+## FLB002.201 Flash locally built firmware (Ubuntu)
 
 **Test description**
 

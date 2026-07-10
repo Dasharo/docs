@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## TPM001.001 TPM Support (TPM events)
+## TPM001.001 TPM Support (firmware)
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
@@ -25,38 +25,11 @@ The test suite is fully automated. Refer to https://github.com/Dasharo/open-sour
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## TPM001.004 TPM Support (BIOS)
-
-**Test description**
-
-This test aims to verify that the TPM is initialized correctly.
-
-**Test configuration data**
-
-1. `FIRMWARE` = Dasharo
-
-**Test setup**
-
-1. Proceed with the
-    [Test cases common documentation](#test-cases-common-documentation) section.
-1. Disable Secure Boot.
-
-**Test steps**
-
-1. Power on the DUT.
-1. Boot into the BIOS.
-1. Enter Device Manager.
-1. Enter TCG2 Configuration
-
-**Expected result**
-
-`Current TPM Device` should contain `TPM 2.0` or `TPM 1.2`.
-
-## TPM002.201 Verify TPM version (Ubuntu)
+## TPM002.201 Verify TPM Version (Ubuntu)
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## TPM002.301 Verify TPM version (Windows)
+## TPM002.301 Verify TPM Version (Windows)
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 

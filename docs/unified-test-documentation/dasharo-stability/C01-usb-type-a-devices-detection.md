@@ -14,7 +14,7 @@
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 1. Connect the `USB device` to the USB Type-A port.
 
-## SUD0001.201 USB devices detection after cold boot (Ubuntu)
+## SUD001.201 USB devices detection after cold boot (Ubuntu)
 
 **Test description**
 
@@ -62,14 +62,14 @@ iterations.
 The output of each `lsusb` command should contain an entry of the connected
 `USB device`.
 
-## SUD0002.201 USB devices detection after warm boot (Ubuntu)
+## SUD002.201 USB devices detection after warm boot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## SUD0003.201 USB devices detection after reboot (Ubuntu)
+## SUD003.201 USB devices detection after reboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## SUD0004.201 USB devices detection after suspension (Ubuntu)
+## SUD004.201 USB devices detection after suspension (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

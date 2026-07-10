@@ -7,7 +7,7 @@
 1. Proceed with the
     [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
-## QBS001.001 QubesOS installation
+## QBS001.203 Qubes OS installation (Qubes OS)
 
 **Test description**
 
@@ -32,7 +32,7 @@ This test aims to verify that QubesOS Stable distribution could be installed.
 
 The information about successful installation should be displayed.
 
-## QBS001.002 Boot QubesOS
+## QBS002.203 Boot Qubes OS (Qubes OS)
 
 **Test description**
 

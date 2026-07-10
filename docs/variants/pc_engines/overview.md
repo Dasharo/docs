@@ -21,7 +21,7 @@ PC Engines is a well-recognized brand in the open-source community mostly
 because of full [schematics availability (apu2d
 example)](https://www.pcengines.ch/schema/apu2d.pdf) and use of [open-source
 firmware](https://pcengines.github.io/). PC Engines products are top-rated
-among pfSense and OPNsense users. What you can see based on the number of forum
+among pfSense and OPNSense users. What you can see based on the number of forum
 topics regarding apu platforms.
 
 ## Status

@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## SLM001.001 Sleep mode - battery monitoring (Ubuntu)
+## SLM001.201 Sleep mode - battery monitoring (Ubuntu)
 
 **Test description**
 
@@ -61,7 +61,7 @@ the OS.
 | 6h             | 80%              |
 | 24h (optional) | 57%              |
 
-## SLM000.002 Sleep mode - battery monitoring (Windows)
+## SLM000.301 Sleep mode - battery monitoring (Windows)
 
 **Test description**
 

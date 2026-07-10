@@ -7,7 +7,7 @@
 1. Proceed with the
    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
-## PFS001.001 pfSense stable (serial output) installation on Hard Disk
+## PFS001.502 Install operating system on disk (pfSense)
 
 **Test description**
 
@@ -33,7 +33,7 @@ on the hard disk on the DUT.
 
 The information about successful installation should be displayed.
 
-## PFS001.002 Boot pfSense stable (serial output) from Hard Disk
+## PFS002.502 Boot operating system from disk (pfSense)
 
 **Test description**
 

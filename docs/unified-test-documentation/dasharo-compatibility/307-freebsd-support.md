@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## BSD001.001 FreeBSD installation and boot
+## BSD001.501 FreeBSD installation and boot (FreeBSD)
 
 **Test description**
 

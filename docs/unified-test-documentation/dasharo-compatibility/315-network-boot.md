@@ -8,7 +8,7 @@
     [Generic test setup: firmware](../generic-test-setup.md#firmware).
 1. The DUT should be connected to the Internet by using an Ethernet cable.
 
-## PXE001.001 Dasharo Network Boot is bootable
+## PXE001.001 Dasharo Network Boot is available
 
 **Test description**
 
@@ -209,7 +209,7 @@ This test aims to verify that the `iPXE Shell` option in
 After configuring the network interfaces, connecting to the server and booting,
 `netboot.xyz` menu should appear.
 
-## PXE007.001 iPXE network boot
+## PXE007.001 Dasharo Network Boot over https not http
 
 **Test description**
 

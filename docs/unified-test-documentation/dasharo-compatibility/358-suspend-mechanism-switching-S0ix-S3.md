@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## SMS001.001 Suspend to Idle (S0ix) check (Ubuntu)
+## SMS001.201 Suspend to Idle (S0ix) check (Ubuntu)
 
 **Test description**
 
@@ -62,7 +62,7 @@ Example output:
 [s2idle] shallow
 ```
 
-## SMS001.002 Suspend to RAM (S3) check (Ubuntu)
+## SMS002.201 Suspend to RAM (S3) check (Ubuntu)
 
 **Test description**
 

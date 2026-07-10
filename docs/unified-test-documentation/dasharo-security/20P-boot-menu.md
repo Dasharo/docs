@@ -7,7 +7,7 @@
 1. Proceed with the
    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
-## BMA001.001 Boot menu enabling
+## BMA001.001 Boot menu enable
 
 **Test description**
 
@@ -51,7 +51,7 @@ This test aims to verify that, the boot menu is accessible when the
 1. After using the `BOOT MENU KEY` during boot, the boot menu should be
    displayed.
 
-## BMA002.001 Boot menu disabling
+## BMA002.001 Boot menu disable
 
 **Test description**
 

@@ -13,7 +13,7 @@
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
 
-## SNV0001.201 NVMe detection after cold boot (Ubuntu)
+## SNV001.201 NVMe detection after cold boot (Ubuntu)
 
 **Test description**
 
@@ -61,14 +61,14 @@ on the DUT NVMe disk. Example output:
 01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller 980
 ```
 
-## SNV0001.201 NVMe detection after warm boot (Ubuntu)
+## SNV002.201 NVMe detection after warm boot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## SNV0003.201 NVMe detection after reboot (Ubuntu)
+## SNV003.201 NVMe detection after reboot (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## SNV0004.201 NVMe detection after suspension (Ubuntu)
+## SNV004.201 NVMe detection after suspension (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

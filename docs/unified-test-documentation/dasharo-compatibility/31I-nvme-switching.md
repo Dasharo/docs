@@ -1,6 +1,6 @@
 # Dasharo Compatibility: M.2 automatic SATA/NVMe switching support
 
-## MSS001.001 M.2 automatic SATA/NVMe switching support (Ubuntu)
+## MSS001.201 M.2 automatic SATA/NVMe switching support (Ubuntu)
 
 **Test description**
 

@@ -58,7 +58,7 @@ Tigerlake HDMI
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## AUD002.201 Audio playback (Ubuntu)
+## AUD002.201 Internal speaker audio playback (Ubuntu)
 
 **Test description**
 
@@ -94,7 +94,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-## AUD002.301 Audio playback (Windows)
+## AUD002.301 Internal speaker audio playback (Windows)
 
 **Test description**
 
@@ -124,7 +124,7 @@ recordings.
 
 Sound should be played from the integrated speakers.
 
-## AUD003.201 Audio capture (Ubuntu)
+## AUD003.201 Internal microphone audio capture (Ubuntu)
 
 **Test description**
 
@@ -164,7 +164,7 @@ This test aims to verify that the audio subsystem is able to capture audio.
 
 The recorded audio clip is recorded correctly and played back.
 
-## AUD003.301 Audio capture (Windows)
+## AUD003.301 Internal microphone audio capture (Windows)
 
 **Test description**
 
@@ -385,11 +385,11 @@ an external headset.
 1. The result of the test after clicking the `Stop Test` bar should be more than
     0% of the total volume.
 
-## AUD007.201 HDMI Audio recognition (Ubuntu)
+## AUD007.201 HDMI audio recognition (Ubuntu)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-## AUD007.301 HDMI Audio recognition (Windows)
+## AUD007.301 HDMI audio recognition (Windows)
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 

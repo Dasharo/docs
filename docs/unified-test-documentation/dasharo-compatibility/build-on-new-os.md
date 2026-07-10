@@ -7,7 +7,7 @@
 1. Proceed with the
    [Generic test setup: firmware](../generic-test-setup.md#firmware).
 
-## BNO001.001 Build on a newly installed OS (Ubuntu)
+## BNO001.201 Build on a newly installed OS (Ubuntu)
 
 **Test description**
 
@@ -31,7 +31,7 @@ in the case of testing on a Novacustom laptop.
 **Expected result**
 The build process should result in creating a rom file.
 
-## BNO001.002 Boot (Ubuntu)
+## BNO002.201 Boot (Ubuntu)
 
 **Test description**
 

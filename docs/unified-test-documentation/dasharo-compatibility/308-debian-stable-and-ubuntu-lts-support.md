@@ -117,7 +117,7 @@ from USB storage attached to the DUT.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## LBT003.001 Debian Stable installation on Hard Disk
+## LBT003.208 Debian stable installation on Hard Disk (Debian)
 
 **Test description**
 
@@ -144,7 +144,7 @@ on the hard disk on the DUT.
 
 The information about successful installation should be displayed.
 
-## LBT003.002 Boot Debian from Hard Disk
+## LBT003.208 Boot Debian from Hard Disk (Debian)
 
 **Test description**
 
@@ -173,7 +173,7 @@ the hard disk on the DUT.
 
 The `OPERATING_SYSTEM` login screen should be displayed.
 
-## LBT004.001 Ubuntu LTS installation on Hard Disk
+## LBT004.201 Ubuntu LTS installation on Hard Disk (Ubuntu)
 
 **Test description**
 
@@ -200,7 +200,7 @@ installed on the hard disk on the DUT.
 
 The information about successful installation should be displayed.
 
-## LBT004.002 Boot Ubuntu From Hard Disk
+## LBT005.201 Boot Ubuntu From Hard Disk (Ubuntu)
 
 **Test description**
 
