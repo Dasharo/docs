@@ -5,7 +5,7 @@
 The tables below contain information about current components of the testing
 environment for Dell OptiPlex workstations available in 3mdeb testing laboratory.
 
-## OptiPlex 7010
+## OptiPlex 7010/9010 (shared SFF baseline)
 
 | Component                      | Description                                             |
 |--------------------------------|---------------------------------------------------------|
@@ -22,7 +22,7 @@ environment for Dell OptiPlex workstations available in 3mdeb testing laboratory
 | **Power Control**              | 1. Sonoff Web Server                                    |
 | **Remote Testing Environment** | 1. RTE `v1.1.0` (firmware `v0.7.5`) connected via RS232 |
 
-## OptiPlex 9010
+## OptiPlex 9010 (additional tested unit)
 
 | Component                      | Description                                             |
 |--------------------------------|---------------------------------------------------------|
