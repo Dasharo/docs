@@ -14,7 +14,7 @@ open-source firmware. Following procedure is supported for following models
 :-------:|:-----:|
 |Dell    | OptiPlex 7010 SFF |
 |Dell    | OptiPlex 7010 DT |
-|Dell    | OptiPlex 9010 SFF |
+|Dell    | OptiPlex 7010/9010 SFF |
 
 </center>
 
