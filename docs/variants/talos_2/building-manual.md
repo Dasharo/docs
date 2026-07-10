@@ -30,9 +30,9 @@ To build coreboot image, follow the steps below:
 1. Inside of the container, configure and start the build process:
 
     ```bash
-    (docker)cp configs/config.raptor-cs-talos-2 .config
-    (docker)make olddefconfig
-    (docker)make
+    cp configs/config.raptor-cs-talos-2 .config
+    make olddefconfig
+    make
     ```
 
 ## Building heads

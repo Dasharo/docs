@@ -29,9 +29,9 @@ To build coreboot image, follow the steps below:
 4. Inside of the container, configure and start the build process:
 
     ```bash
-    (docker)cp configs/config.asus_kgpe_d16_<variant> .config
-    (docker)make olddefconfig
-    (docker)make
+    cp configs/config.asus_kgpe_d16_<variant> .config
+    make olddefconfig
+    make
     ```
 
 This will produce a debug binary placed in `build/coreboot.rom` for a 2MB flash
