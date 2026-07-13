@@ -11,7 +11,8 @@ coreboot port on the ASRock Rack TURIND8UD-2T/X550.
 | CPU cooler                 | ARCTIC Freezer 4U-SP5 (single tower, AMD SP5)                               |
 | RAM                        | Kingston 16GB ECC Registered DDR5 1Rx8 5600MHz                              |
 |                            | PC5-44800 RDIMM (KSM56R46BS8PMI-16HAI)                                      |
-| Flash memory               | Winbond W25Q256JVFQ                                                         |
+| BIOS Flash memory          | Winbond W25Q256JVFQ                                                         |
+| BMC Flash memory           | Macronix MX25L51245G                                                        |
 | Network                    | Local network wired connection                                              |
 | Storage                    | Kingston KC3000 512GB M.2 2280 PCIe Gen4 x4 NVMe SSD                        |
 | Power Supply               | Seasonic VERTEX GX-750 (750W, 80 Plus Gold)                                 |
