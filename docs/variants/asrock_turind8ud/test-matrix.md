@@ -3,7 +3,8 @@
 ## About
 
 The test matrix is used to determine the scope of tests which the DUT is
-subjected to before the release of the new binary compatible with
-ASRock Rack TURIND8UD-2T/X550.
+subjected from before the release of the new binary.
 
-> Under construction
+Please refer to the [tests results repository](https://github.com/Dasharo/osfv-results/tree/main/boards/ASRock/TURIND8UD/).
+You can preview the testing scope for upcoming releases and see the results for
+releases which already have been tested.
