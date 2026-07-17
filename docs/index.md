@@ -54,7 +54,7 @@ Become a part of the vibrant Dasharo community:
 
 - **Chat with Us**: Join the conversation in the [Dasharo Matrix
   Workspace](https://matrix.to/#/#dasharo:matrix.org).
-* **Stay Updated**: Follow the latest Dasharo community events, public project
+- **Stay Updated**: Follow the latest Dasharo community events, public project
   updates, and boot security initiatives:
     + **[Boot Security Mastery Conference](https://3mdeb.com/events/#_boot-security-mastery-conference)**:
       A five day event combining practical education with industry knowledge
