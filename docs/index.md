@@ -54,12 +54,22 @@ Become a part of the vibrant Dasharo community:
 
 - **Chat with Us**: Join the conversation in the [Dasharo Matrix
   Workspace](https://matrix.to/#/#dasharo:matrix.org).
-- **Stay Updated**: Don't miss our quarterly [Dasharo
-  Events](https://vpub.dasharo.com/) featuring:
-    + **Dasharo User Group (DUG)**: A forum for Dasharo users to connect, share
-      experiences, and stay informed.
-    + **Dasharo Developers vPub**: A relaxed virtual meetup for developers and
-      enthusiasts to discuss, share, and connect.
+* **Stay Updated**: Follow the latest Dasharo community events, public project
+  updates, and boot security initiatives:
+    + **[Boot Security Mastery Conference](https://3mdeb.com/events/#_boot-security-mastery-conference)**:
+      A five day event combining practical education with industry knowledge
+      exchange, including talks, workshops, and hands on labs. The conference
+      will take place from September 21 to 25, 2026, in Gdańsk, Poland.
+    + **[Dasharo openSIL Integration Status](https://3mdeb.com/events/#_dasharo-opensil-integration-status)**:
+      Public sessions covering the current status and development of Dasharo
+      integration with AMD openSIL.
+    + **[Dasharo FSP Integration Status](https://3mdeb.com/events/#_dasharo-fsp-integration-status)**:
+      Public sessions covering the current status and development of Dasharo
+      integration with Intel FSP.
+    + **[Dasharo User Group and Developers vPub](https://3mdeb.com/events/#_dasharo-user-group-13-developers-vpub-0x12)**:
+      Community events for Dasharo users, developers, and open source firmware
+      enthusiasts. The upcoming edition has been temporarily canceled. Any
+      updates will be published on the event page.
 - **Get involved** via the
   [Bug Bounty](https://github.com/Dasharo/dasharo-issues?tab=readme-ov-file#bug-bounty).
 
