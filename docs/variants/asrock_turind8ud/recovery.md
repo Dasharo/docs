@@ -60,13 +60,13 @@ directly to the TPM header with the TPM module removed.
     10. Check if the flash chip is connected properly
 
         ```bash
-        flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000
+        flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c W25Q256JV_Q
         ```
 
     11. Flash the platform by using the following command:
 
         ```bash
-        flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 \
+        flashrom -p linux_spi:dev=/dev/spidev1.0,spispeed=16000 -c W25Q256JV_Q \
             -w [path_to_binary]
         ```
 
@@ -109,13 +109,13 @@ directly to the TPM header with the TPM module removed.
     5. Check if the flash chip is connected properly
 
         ```bash
-        flashrom -p ch341a_spi
+        flashrom -p ch341a_spi -c W25Q256JV_Q
         ```
 
     6.  Flash the platform by using the following command:
 
         ```bash
-        flashrom -p ch341a_spi -w [path_to_binary]
+        flashrom -p ch341a_spi -c W25Q256JV_Q -w [path_to_binary]
         ```
 
     7. Disconnect the programmer from the TPM header.
