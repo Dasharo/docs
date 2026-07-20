@@ -12,7 +12,7 @@ Feel free to refer to above sources or [contact
 community](https://docs.dasharo.com/#community), if you can't find your
 hardware.
 
-=== "CPU HCL (18 Mar 2025)"
+=== "CPU HCL (20 Jul 2026)"
 
     CPU Hardware Compatibility List presents the CPUs tested and verified
     to work with Dasharo by community. The following list does not include CPU
@@ -49,7 +49,7 @@ hardware.
 
     </center>
 
-=== "Memory HCL (11 Dec 2025)"
+=== "Memory HCL (20 Jul 2026)"
 
     Memory hardware Compatibility List presents the DIMM modules tested and verified
     to work with Dasharo in 3mdeb laboratory.

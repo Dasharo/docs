@@ -28,6 +28,8 @@
 | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.0 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.1 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.2 | Dasharo HCL Report |
+| 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.3 | Dasharo HCL Report |
+| 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.6 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900KF | v1.1.1 | [Github PR][4] |
 | 12th Gen Intel(R) Core(TM) i9-12900KS | v1.1.1 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900T | v1.1.0 | Dasharo HCL Report |
