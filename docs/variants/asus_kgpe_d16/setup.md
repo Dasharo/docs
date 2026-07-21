@@ -266,5 +266,3 @@ to the Dasharo Newsletter:
 ![](../../images/kgpe_1.jpg)
 ![](../../images/kgpe_2.jpg)
 ![](../../images/kgpe_3.jpg)
-
-[flashchip-adapter]: https://shop.3mdeb.com/shop/adapters/flash-chip-adapters/asus-kgpe-d16-flash-chip-adapter/

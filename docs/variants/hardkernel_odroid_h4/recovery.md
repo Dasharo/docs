@@ -49,11 +49,20 @@ can be found on the [ODROID Wiki](https://wiki.odroid.com/odroid-h4/hardware/res
 
     * [Prepared RTE](../../transparent-validation/rte/v1.1.0/quick-start-guide.md)
     * 6x female-female wire cables
+    * Pomona Soic-Clip or a similar SOIP-8 pin flash clip.
 
     ### Connections
 
     To prepare the stand for flashing follow the steps described in
     the [Generic test stand setup](../../unified-test-documentation/generic-testing-stand-setup.md#detailed-description-of-the-process)
+
+    You'll have to use the flash clip to interface with one of the BIOS
+    chips, they're located on the back of the board:
+    ![](./odroid_flash_location.jpg)
+
+    The dot indicates pin 1, connect to the J7 header using its silkscreen
+    as a reference:
+    ![](./odroid_flash_diagram.png)
 
     ### Firmware flashing
 

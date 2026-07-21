@@ -24,7 +24,7 @@ are needed to create testing stands for Protectli machines.
     works. On v1.0.0 and older there is no need for additional step of enabling
     SPI GPIO, it is required only from v1.1.0 onwards. If it would not be
     reflected in [model file](https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli/src/osfv/models)
-    it may lead to issues. For more details please check [here](https://github.com/Dasharo/osfv-scripts/issues/86).
+    it may lead to issues.
 
 * [RTE
 v1.1.0](https://shop.3mdeb.com/shop/open-source-hardware/open-source-hardware-3mdeb/rte/)
