@@ -83,8 +83,7 @@ binaries is provided exclusively through the
 [Full Build for ASRock Rack TURIND8UD-2T/X550](https://shop.3mdeb.com/product/full-build-asrock-turind8ud-2t-x550-with-dasharo-pro-package-for-servers/),
 a bundled hardware-and-firmware product available in
 the 3mdeb shop. A standalone Dasharo Pro Package subscription is not offered
-for this platform; additional purchase options (Enterprise Build and Barebones
-Build) are expected in the next 3-6 months.
+for this platform.
 
 With the Full Build, you receive firmware updates for the duration of your
 subscription via the Dasharo Pro Package newsletter, and gain entry to the
