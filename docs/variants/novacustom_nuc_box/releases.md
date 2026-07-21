@@ -21,6 +21,8 @@ Test results for this release can be found
 ### Added
 
 - Report Intel ME firmware status (FWSTS) in SMBIOS
+- [SBOM embedded into firmware](https://github.com/Dasharo/coreboot/pull/859)
+- [Support for additional USB controller (pci2usb) for Qubes OS certification](https://github.com/Dasharo/dasharo-issues/issues/1690)
 
 ### Changed
 
@@ -65,11 +67,11 @@ Test results for this release can be found
 - [Varmilo USB keyboard doesn't work in firmware menu](https://github.com/Dasharo/dasharo-issues/issues/1477)
 - [Better RAM string in DTS, add separators](https://github.com/Dasharo/dasharo-issues/issues/1559)
 - [GRUB installation fails sometimes](https://github.com/Dasharo/dasharo-issues/issues/1594)
-- [PCIe controller does not work with linux without disabling mmoconf](https://github.com/Dasharo/dasharo-issues/issues/1690)
 - [NUC Box: OS doesn't boot with eGPU on m2 PCIe](https://github.com/Dasharo/dasharo-issues/issues/1811)
 - [NUC Box: eGPU is unstable with Thunderbolt 4](https://github.com/Dasharo/dasharo-issues/issues/1812)
 - [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
 - [Capsule Updates require ME to be manually disabled](https://github.com/Dasharo/dasharo-issues/issues/1302)
+- [Error during (S0ix); matches stock firmware](https://github.com/Dasharo/dasharo-issues/issues/1894)
 
 ### Binaries
 
