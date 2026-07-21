@@ -36,7 +36,7 @@ For details about our release process please read
     [Dasharo Pro Package FAQ](../../osf-trivia-list/dasharo-pro-package.md)
     for more details.
 
-## v0.9.0 - 2026-07-20
+## v0.9.0 - 2026-07-21
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/ASRock/TURIND8UD/).
