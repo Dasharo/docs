@@ -13,6 +13,113 @@ For details about our release process please read
 
 </center>
 
+## v0.9.2 - 2026-07-21
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/NovaCustom/MTL_14th_Gen/NUC_BOX/).
+
+### Added
+
+- Report Intel ME firmware status (FWSTS) in SMBIOS
+
+### Changed
+
+- Switched to the Arrow Lake-U/H IoT FSP; refer to SBOM section
+- [Support extending both SHA-1 and SHA-256 PCRs](https://github.com/Dasharo/dasharo-issues/issues/982)
+- Updated TPM ACPI device path (can help with Windows 11)
+- TPM log no longer uses entries of fixed size
+- [Improved CPU performance by lowering the Energy Performance Preference (EPP) value from 0xb3 to 0x73](https://github.com/Dasharo/dasharo-issues/issues/1711)
+- Increased the SMMSTORE region to 512 KB
+- Skip the FSP Thunderbolt connect-topology command
+- Check for flash descriptor writability when exposing HAP disable option
+- Aligned GPIO configuration with stock firmware
+- Shrunk the ME region in the flash layout to fit the consumer ME binary
+- Updated ME to the newer version; refer to SBOM section
+- Intel Microcode updated to microcode-20260512
+- UEFI DBX updated to 2025-10-16
+- Removed MMX/SSE instructions from UEFI runtime (affects FreeBSD)
+- Make BIOS Lock work with all flash-lock (BOOTMEDIA_LOCK) types
+
+### Fixed
+
+- [Very slow boot caused by FSP POST codes routed to I2C instead of Port 80](https://github.com/Dasharo/dasharo-issues/issues/1874)
+- [Can't update ME on NUC BOX: Error occurred while trying to create container EspiOobNvar](https://github.com/Dasharo/dasharo-issues/issues/1830)
+- [Recovery of damaged variable storage causing random settings reset](https://github.com/Dasharo/dasharo-issues/issues/1293)
+- [SMMSTORE writes are unreliable if SMM_BWP is enabled](https://github.com/Dasharo/dasharo-issues/issues/1664)
+- [Cannot enter Firmware Update Mode twice in a row](https://github.com/Dasharo/dasharo-issues/issues/1759)
+- [Cyclic platform suspend and resume (S0ix) is slower than expected](https://github.com/Dasharo/dasharo-issues/issues/1870)
+- Device in the second M.2 slot fails to resume from suspend
+- S0ix suspend compatibility (GPIO initialization moved to ramstage)
+- Ghost PS/2 device reported to the OS
+- CBFS verification was skipped in SMM
+- CSE, graphics framebuffer and I2C MMIO resources now allocated below 4 GB
+  (Resizable BAR compatibility)
+- TPM CRB MMIO address range is now reserved
+- Skip EV_NO_ACTION events when measuring the bootblock cache to PCR
+  (measured-boot log correctness)
+- USB mass storage: retry reset on read for more reliable detection
+
+### Known issues
+
+- [Unlisted error in dmesg | STB002.002 | QubesOS | Heads & UEFI](https://github.com/Dasharo/dasharo-issues/issues/1201)
+- [Varmilo USB keyboard doesn't work in firmware menu](https://github.com/Dasharo/dasharo-issues/issues/1477)
+- [Better RAM string in DTS, add separators](https://github.com/Dasharo/dasharo-issues/issues/1559)
+- [GRUB installation fails sometimes](https://github.com/Dasharo/dasharo-issues/issues/1594)
+- [PCIe controller does not work with linux without disabling mmoconf](https://github.com/Dasharo/dasharo-issues/issues/1690)
+- [NUC Box: OS doesn't boot with eGPU on m2 PCIe](https://github.com/Dasharo/dasharo-issues/issues/1811)
+- [NUC Box: eGPU is unstable with Thunderbolt 4](https://github.com/Dasharo/dasharo-issues/issues/1812)
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
+- [Capsule Updates require ME to be manually disabled](https://github.com/Dasharo/dasharo-issues/issues/1302)
+
+### Binaries
+
+[novacustom_nuc_box_mtl_v0.9.2.cap][novacustom_nuc_box_mtl_v0.9.2.cap_file]{.md-button}
+[sha256][novacustom_nuc_box_mtl_v0.9.2.cap_hash]{.md-button}
+[sha256.sig][novacustom_nuc_box_mtl_v0.9.2.cap_sig]{.md-button}
+[novacustom_nuc_box_mtl_v0.9.2.rom][novacustom_nuc_box_mtl_v0.9.2.rom_file]{.md-button}
+[sha256][novacustom_nuc_box_mtl_v0.9.2.rom_hash]{.md-button}
+[sha256.sig][novacustom_nuc_box_mtl_v0.9.2.rom_sig]{.md-button}
+[novacustom_nuc_box_mtl_v0.9.2.sbom.json][novacustom_nuc_box_mtl_v0.9.2.sbom.json_file]{.md-button}
+[sha256][novacustom_nuc_box_mtl_v0.9.2.sbom.json_hash]{.md-button}
+[sha256.sig][novacustom_nuc_box_mtl_v0.9.2.sbom.json_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 25.12 revision 974f6ff0](https://github.com/Dasharo/coreboot/tree/974f6ff0)
+- [Dasharo EDKII fork based on edk2-stable202508 revision df708434](https://github.com/Dasharo/edk2/tree/df708434)
+- [Dasharo iPXE fork based on 2025.08 revision 6c7068fc](https://github.com/Dasharo/ipxe/tree/6c7068fc)
+    + [License](https://github.com/Dasharo/ipxe/blob/6c7068fc/COPYING.GPLv2)
+- [vboot based on f1f70f46dc revision f1f70f46](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/f1f70f46/LICENSE)
+- [Intel Management Engine version v18.1.18.2724](https://github.com/Dasharo/dasharo-blobs/blob/647347ae/novacustom/nuc_box/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package for Arrow Lake-U/H version IoT ARL-UH IPU 2026.3 (6114_54)](https://github.com/intel/FSP/commits/7cb9638a/ArrowLakeFspBinPkg/IoT/ArrowLakeUH)
+    + [License](https://github.com/intel/FSP/blob/7cb9638a/FSP_License.pdf)
+- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/647347ae/novacustom/nuc_box/ifd.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel microcode version MTL C0 0x00000028 0x28 24/09/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260512/intel-ucode/06-aa-04)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260512/license)
+
+An [integrated SBOM](https://doc.coreboot.org/sbom/sbom.html) is also
+included in the firmware images. It describes a complete set of components
+and their versions used to build the firmware images. The published SBOM
+artifact is in CycloneDX format and can be viewed by SBOM tools, for example
+[sbom-tools](https://github.com/sbom-tool/sbom-tools).
+
+[novacustom_nuc_box_mtl_v0.9.2.cap_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.cap
+[novacustom_nuc_box_mtl_v0.9.2.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.cap.sha256
+[novacustom_nuc_box_mtl_v0.9.2.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.cap.sha256.sig
+[novacustom_nuc_box_mtl_v0.9.2.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.rom
+[novacustom_nuc_box_mtl_v0.9.2.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.rom.sha256
+[novacustom_nuc_box_mtl_v0.9.2.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.rom.sha256.sig
+[novacustom_nuc_box_mtl_v0.9.2.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.sbom.json
+[novacustom_nuc_box_mtl_v0.9.2.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.sbom.json.sha256
+[novacustom_nuc_box_mtl_v0.9.2.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nuc_box_mtl/uefi/v0.9.2/novacustom_nuc_box_mtl_v0.9.2.sbom.json.sha256.sig
+
 ## v0.9.1 - 2026-05-05
 
 Test results for this release can be found
