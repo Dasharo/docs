@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Custom Boot Order
 
 ## Test cases common documentation

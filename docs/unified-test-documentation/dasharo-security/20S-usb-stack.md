@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: USB stack enable/disable
 
 ## Test cases common documentation

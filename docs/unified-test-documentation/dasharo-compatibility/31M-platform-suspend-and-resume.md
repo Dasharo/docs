@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Platform suspend and resume
 
 ## Test cases common documentation

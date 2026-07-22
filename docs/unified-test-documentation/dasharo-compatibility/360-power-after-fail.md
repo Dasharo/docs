@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Power State After Power Failure
 
 ## PSF001.001 Check Power State After Power Failure default state (firmware)

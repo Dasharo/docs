@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Embedded controller flashing
 
 ## ECF001.001 EC firmware external flashing

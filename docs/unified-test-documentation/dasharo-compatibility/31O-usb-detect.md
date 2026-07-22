@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: USB Detection
 
 ## UDT001.001 USB detection after coldboot

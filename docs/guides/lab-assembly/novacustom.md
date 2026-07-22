@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Laboratory stand dedicated to NovaCustom platforms assembly guide
 
 ## Introduction

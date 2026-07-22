@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: ME neuter/disable
 
 ## Test cases common documentation

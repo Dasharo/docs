@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Test Specifiaction - overview
 
 The release procedure is always preceded by validation procedure. It is done

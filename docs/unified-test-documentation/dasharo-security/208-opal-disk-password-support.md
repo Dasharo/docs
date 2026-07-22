@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: TCG OPAL disk password support
 
 ## DMP001.001 TCG OPAL disk password set and check

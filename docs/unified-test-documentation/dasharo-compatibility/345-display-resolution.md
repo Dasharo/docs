@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo compatibility: Display resolution - QubesOS
 
 ## Test cases common documentation

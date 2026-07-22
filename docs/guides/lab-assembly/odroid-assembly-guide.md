@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Laboratory stand dedicated to Odroid-H4 platforms assembly guide
 
 ## Introduction

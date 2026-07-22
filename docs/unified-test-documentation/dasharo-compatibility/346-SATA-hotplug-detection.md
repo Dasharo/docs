@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo compatibility: SATA hot plug
 
 ## Test cases common documentation

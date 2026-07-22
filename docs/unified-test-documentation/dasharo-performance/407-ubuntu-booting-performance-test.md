@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Performance: Ubuntu booting performance test
 
 ## Test cases common documentation

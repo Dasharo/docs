@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: Verified Boot support
 
 ## Test cases common documentation

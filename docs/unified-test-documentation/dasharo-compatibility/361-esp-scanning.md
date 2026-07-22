@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: ESP Partition Scanning
 
 ## Test cases common documentation

@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Laboratory stand dedicated to ASRock Rack SPC741D8-2L2T/BCM lab assembly guide
 
 ## Introduction

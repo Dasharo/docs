@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: Boot menu enable/disable
 
 ## Test cases common documentation

@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Performance: coreboot boot measure
 
 ## Test cases common documentation

@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: NET controller after coldboot/warmboot/reboot/suspend
 
 ## Test cases common documentation

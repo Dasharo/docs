@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: NVMe support
 
 ## NVM001.001 NVMe support (firmware)

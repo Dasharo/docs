@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Laboratory stand dedicated to PC Engines platforms assembly guide
 
 ## Introduction

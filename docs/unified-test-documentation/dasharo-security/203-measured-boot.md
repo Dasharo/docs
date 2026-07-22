@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: Measured Boot support
 
 The test suite is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop

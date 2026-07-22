@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo: coreboot base port
 
 ## Test cases common documentation

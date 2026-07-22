@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: BIOS menu function keys
 
 ## Test cases common documentation

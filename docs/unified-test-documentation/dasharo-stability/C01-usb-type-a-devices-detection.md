@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Stability: USB Type-A devices detection
 
 ## Test cases common documentation

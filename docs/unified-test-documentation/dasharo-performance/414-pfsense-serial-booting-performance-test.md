@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Performance: pfSense (serial output) booting performance test
 
 ## Test cases common documentation

@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo compatibility: Super I/O initialization - QubesOS
 
 ## Test cases common documentation

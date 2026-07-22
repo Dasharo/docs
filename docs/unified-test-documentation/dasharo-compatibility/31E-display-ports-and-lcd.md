@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Display ports and LCD support
 
 ## Test cases common documentation

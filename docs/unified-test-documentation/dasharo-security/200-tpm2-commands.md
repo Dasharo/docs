@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: TPM2 commands
 
 ## Test cases common documentation

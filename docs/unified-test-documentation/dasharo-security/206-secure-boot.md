@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Security: UEFI Secure Boot
 
 ## SBO001.001 Check Secure Boot default state (firmware)

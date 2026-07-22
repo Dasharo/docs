@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Embedded Controller and Super I/O initialization
 
 ## Test cases common documentation

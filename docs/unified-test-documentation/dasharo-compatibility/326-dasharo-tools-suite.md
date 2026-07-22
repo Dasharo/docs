@@ -1,3 +1,8 @@
+---
+search:
+  boost: -1
+---
+
 # Dasharo Compatibility: Dasharo Tools Suite
 
 ## Test cases common documentation
