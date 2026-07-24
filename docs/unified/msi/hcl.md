@@ -47,6 +47,13 @@ hardware.
             end="<!--end-->"
         %}
 
+    === "PRO B850-P WIFI"
+        {%
+            include-markdown "../../resources/hcl/cpu/pro-b850-p-wifi.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
     </center>
 
 === "Memory HCL (11 Dec 2025)"
@@ -115,6 +122,13 @@ hardware.
     === "PRO Z790-P (WIFI)"
         {%
             include-markdown "../../resources/hcl/memory/pro-z790-p-wifi.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "PRO B850-P WIFI"
+        {%
+            include-markdown "../../resources/hcl/memory/pro-b850-p-wifi.md"
             start="<!--start-->"
             end="<!--end-->"
         %}
@@ -290,6 +304,33 @@ Maintainer documentation](../../dev-proc/hcl-maintainer.md).
       ```
 
     - [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_z790)
+      as attachments outputs of following command:
+
+      ```bash
+      decode-dimms > decode-dimms.log 2> decode-dimms.err.log
+      ```
+
+      In email please include Dasharo version.
+
+      ```text
+      Dasharo version:
+      ```
+
+=== "PRO B850-P (WIFI)"
+    - Use [Dasharo Tools Suite HCL report](../../dasharo-tools-suite/documentation/features.md#hcl-report)
+      to upload report automatically.
+    - Create new issue in [Dasharo issues repository](https://github.com/Dasharo/dasharo-issues/issues/new?assignees=&labels=P%3A+default%2C+T%3A+hcl&template=hcl-report.md&title=CPU+HCL+report+for+msi_b850).
+    - Create PR directly to [Dasharo documentation repository](https://github.com/Dasharo/docs).
+
+    - [CPU HCL email](mailto:contact@dasharo.com?subject=CPU HCL report for msi_b850)
+      your `/proc/cpuinfo` or relevant information using following template:
+
+      ```text
+      CPU model:
+      Dasharo version:
+      ```
+
+    - [Memory HCL email](mailto:contact@dasharo.com?subject=Memory HCL report for msi_b850)
       as attachments outputs of following command:
 
       ```bash

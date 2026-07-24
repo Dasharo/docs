@@ -34,6 +34,7 @@ command. The binaries can be found on the
 
 * [MSI PRO Z690-A release page](../../variants/msi_z690/releases.md)
 * [MSI PRO Z790-P release page](../../variants/msi_z790/releases.md).
+* [MSI PRO B850-P release page](../../variants/msi_b850/releases.md).
 
 #### Reading flash contents
 
@@ -204,17 +205,20 @@ own keys during updates.
 
 #### Flashing Dasharo
 
-**WARNING**: If you use an external/discrete GPU and migrate to Dasharo, be
-sure to unplug the dGPU first (when the machine is powered off before proceeding
-with flashing), as Dasharo firmware does not support all GPU cards properly yet
-(as of version v1.0.0). There is a high risk for the graphical output to break
-in the firmware when dGPU is connected. Effectively it leaves the only option to
-boot in blind into a previously installed OS (if the platform does not brick and
-if an OS is present on a disk). The first boot may take up to 2 minutes to
-fully train the memory, so be patient and wait for the Dasharo logo to appear,
-subsequent boots will take only seconds. MSI EZ debug leds are not supported by
-Dasharo and you may notice a red led to be lit. If the platform boots with an
-integrated GPU, you may try to plug the external GPU back and boot again.
+!!! Warning
+
+    If you use an external/discrete GPU and migrate to Dasharo, be sure to
+    unplug the dGPU first (when the machine is powered off before proceeding
+    with flashing), as Dasharo firmware does not support all GPU cards properly
+    yet (as of version v1.0.0). There is a high risk for the graphical output
+    to break in the firmware when dGPU is connected. Effectively it leaves the
+    only option to boot in blind into a previously installed OS (if the
+    platform does not brick and if an OS is present on a disk). The first boot
+    may take up to 2 minutes to fully train the memory, so be patient and wait
+    for the Dasharo logo to appear, subsequent boots will take only seconds.
+    MSI EZ debug leds may not be supported by Dasharo on all boards and you may
+    notice a red led to be lit. If the platform boots with an integrated GPU,
+    you may try to plug the external GPU back and boot again.
 
 To flash Dasharo on the platform, execute the following command:
 
@@ -250,11 +254,21 @@ To flash Dasharo on the platform, execute the following command:
     sudo flashrom -p internal -w msi_ms7e06_vVERSION_ddr5.rom --ifd -i bios
     ```
 
-**IMPORTANT!** After the command succeeds, invoke `sudo reboot` or click the
-reboot/restart in the GUI to reboot the board. Press `ENTER` when prompted on
-the screen to remove the installation media (if Ubuntu live is used). DO NOT
-POWEROFF THE BOARD as SMI handlers of original MSI firmware may overwrite flash
-contents and cause a brick.
+=== "PRO B850-P WIFI"
+
+    Initial deployment is only possible with external programmer or MSI
+    FlashBIOS. Flash is not accessible to hsot operating system due to [AMD
+    ROM Armor](../../kb/amd-security-features.md#amd-rom-armor) protection.
+    Use Dasharo binaries to flash Dasharo using one of the recovery methods
+    described in [Recovery section](recovery.md).
+
+!!! Important
+
+    After the command succeeds, invoke `sudo reboot` or click the
+    reboot/restart in the GUI to reboot the board. Press `ENTER` when prompted
+    on the screen to remove the installation media (if Ubuntu live is used).
+    **DO NOT POWEROFF THE BOARD** as SMI handlers of original MSI firmware may
+    overwrite flash contents and cause a brick.
 
 After migration from MSI firmware to Dasharo and reboot, the firmware will fail
 the memory training. After reboot wait approximately 30 seconds and then power

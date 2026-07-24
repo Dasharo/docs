@@ -12,7 +12,8 @@ or an [RTE](https://shop.3mdeb.com/shop/open-source-hardware/rte/).
 
 Since Dasharo v1.1.2 (PRO Z690-A) / v0.9.0 (PRO Z790-P) release it is also
 possible to use MSI FlashBIOS button feature to recover using an image placed
-in the USB stick.
+in the USB stick. MSI PRO B850-P supports MSI FlashBIOS in every Dasharo
+release.
 
 ## Using MSI FlashBIOS button
 
@@ -116,7 +117,7 @@ as reserved in the board manual).
 
 ![JTPM1](images/msi_z690_jtpm1.jpeg)
 
-| CH341a breakout board | MSI Z690-A/Z790-P                                    |
+| CH341a breakout board | MSI Z690-A/Z790-P/B850-P                             |
 |:---------------------:|:----------------------------------------------------:|
 | pin 1 (CS)            | JTPM1 pin 5 (RESERVED / BIOS SPI CS pin)             |
 | pin 2 (MISO)          | JTPM1 pin 3 (MISO)                                   |

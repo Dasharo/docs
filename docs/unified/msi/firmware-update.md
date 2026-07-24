@@ -190,6 +190,16 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
         flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
         ```
 
+    === "PRO B850-P boards"
+
+        If updating firmware using custom builds without changing the flashmap,
+        only the `COREBOOT` partition of the flash needs to be updated. Flash it
+        using the following command:
+
+        ```bash
+        flashrom -p internal -w [path] --fmap -i COREBOOT
+        ```
+
     #### Troubleshooting
 
     Possible errors are described in the

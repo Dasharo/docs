@@ -316,6 +316,11 @@ nav:
               - 'Hardware Configuration Matrix': variants/msi_z790/hardware-matrix.md
               - 'Test matrix': variants/msi_z790/test-matrix.md
               - 'Openness score': variants/msi_z790/openness_score.md
+          - 'MSI PRO B850-P':
+              - 'Releases': variants/msi_b850/releases.md
+              - 'Hardware Configuration Matrix': variants/msi_b850/hardware-matrix.md
+              - 'Test matrix': variants/msi_b850/test-matrix.md
+              - 'Openness score': variants/msi_b850/openness_score.md
       - 'NovaCustom':
           - 'Overview': unified/novacustom/overview.md
           - 'Building manual': unified/novacustom/building-manual.md

@@ -3,7 +3,7 @@
 ## Introduction
 
 This document describes the process of transitioning from Dasharo UEFI to Heads
-and the other way around.
+and the other way around for MSI Z690-A and Z790-P boards.
 
 ## Transition from Dasharo UEFI to Heads variant
 
