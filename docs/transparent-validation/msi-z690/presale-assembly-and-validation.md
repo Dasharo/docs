@@ -148,24 +148,23 @@ To prepare the motherboard the following operations should be performed:
 ## Device validation
 
 1. Connect the device to the mains.
-1. Power on the device with the button located on the front panel.
-1. If all connections have been made correctly, the device should start and
+2. Power on the device with the button located on the front panel.
+3. If all connections have been made correctly, the device should start and
     the boot logo should be shown.
-1. Install Dasharo firmware in accordance with
-    [Initial Deployment](../../unified/msi/initial-deployment.md) -
-    the `Migrating SMBIOS unique data` chapter can be skipped.
-1. Power on the device.
-1. Boot to Linux system (Ubuntu is recommended).
-1. Open a terminal window and run the following command:
+4. Install Dasharo firmware in accordance with
+   [Initial Deployment](../../unified/msi/initial-deployment.md).
+5. Power on the device.
+6. Boot to Linux system (Ubuntu is recommended).
+7. Open a terminal window and run the following command:
 
     ```bash
     sudo dmidecode -t 0 | grep Version
     ```
 
-1. The output of the command above should be similar to:
+8. The output of the command above should be similar to:
     `Version: Dasharo (coreboot+UEFI) <version>` where the version should
     correspond to the version of the flashing binary used eg. v1.0.0.
-1. Check in the system that everything is working properly.
+9. Check in the system that everything is working properly.
 
 ## Useful content
 
