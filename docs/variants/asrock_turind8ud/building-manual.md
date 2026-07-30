@@ -5,6 +5,13 @@
 This guide shows how to build Dasharo firmware compatible with ASRock Rack
 TURIND8UD-2T/X550.
 
+Two firmware variants are available:
+
+- coreboot+LinuxBoot: coreboot with LinuxBoot payload and u-root userland.
+  Does not feature a setup menu. Compatible with Linux-based operating systems.
+- coreboot+UEFI: coreboot with TianoCore EDK II as the payload. Exposes a
+  standard UEFI boot loader and setup menu. Can boot UEFI-compatible OSes.
+
 ## Requirements
 
 - Docker
@@ -15,8 +22,7 @@ TURIND8UD-2T/X550.
 
 ## Building
 
-To build Dasharo (coreboot+UEFI) firmware image, first clone the coreboot
-repository:
+To build a Dasharo firmware image, first clone the coreboot repository:
 
 ```bash
 git clone https://github.com/Dasharo/coreboot.git
@@ -27,16 +33,31 @@ then follow the steps below:
 1. To build a specific version checkout to the version's tag.
     Skip this step otherwise.
 
-    ```bash
-    cd coreboot
-    git checkout asrock_turind8ud_linuxboot_<version>
-    ```
+    === "LinuxBoot"
 
-    For example
+        ```bash
+        cd coreboot
+        git checkout asrock_turind8ud_linuxboot_<version>
+        ```
 
-    ```bash
-    git checkout asrock_turind8ud_linuxboot_v0.9.0
-    ```
+        For example
+
+        ```bash
+        git checkout asrock_turind8ud_linuxboot_v0.9.0
+        ```
+
+    === "UEFI"
+
+        ```bash
+        cd coreboot
+        git checkout asrock_turind8ud_uefi_<version>
+        ```
+
+        For example
+
+        ```bash
+        git checkout asrock_turind8ud_uefi_v0.9.0
+        ```
 
 2. Checkout submodules:
 
@@ -64,9 +85,20 @@ then follow the steps below:
 
 Now build the firmware:
 
-```bash
-./build.sh asrock_turind8ud_linuxboot
-```
+=== "LinuxBoot"
 
-The resulting coreboot image will be placed in the coreboot directory as
-`asrock_turind8ud_linuxboot_<version>.rom`.
+    ```bash
+    ./build.sh asrock_turind8ud_linuxboot
+    ```
+
+    The resulting coreboot image will be placed in the coreboot directory as
+    `asrock_turind8ud_linuxboot_<version>.rom`.
+
+=== "UEFI"
+
+    ```bash
+    ./build.sh asrock_turind8ud_uefi
+    ```
+
+    The resulting coreboot image will be placed in the coreboot directory as
+    `asrock_turind8ud_uefi_<version>.rom`.
