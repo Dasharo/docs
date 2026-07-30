@@ -136,3 +136,4 @@ Each metric is calculated using the formula:
 | Novacustom NSxxPU | novacustom_ns5x_adl_v1.7.2.rom | NSx0PU(32M).09 | -26.3 | -0.8 | -7.2 |
 | Novacustom NS5xMU | novacustom_ns5x_tgl_v1.5.2.rom | NS50_70MU.16N | -30.6 | 2.9 | -23.4 |
 | Gigabyte MZ33-AR1 | gigabyte_mz33_ar1_v0.9.0.rom | MZ33-AR1_R21_F14/image.bin | -80.0 | 5301.8 | 227.3 |
+| MSI MS-7E56 | msi_ms7e56_v0.9.0.rom | E7E56AMSI.2A92 | -79.1 | 167010300.0 | 377.3 |
