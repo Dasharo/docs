@@ -4,7 +4,7 @@
 
 _**TBD**: this page should contain most important information about Dasharo OSF
 support for MSI PRO Z690 including presentations, demos, external
-resources, reviews etc. Currently it just points to subsecations of the
+resources, reviews etc. Currently it just points to subsections of the
 documentation._
 
 -->
@@ -25,6 +25,15 @@ documentation._
         \- describes the platform's hardware configuration used during the
         Dasharo firmware validation procedure.
     - [Test matrix](../../variants/msi_z790/test-matrix.md) - describes the
+       validation scope used during the Dasharo firmware validation procedure.
+
+=== "PRO B850-P WIFI"
+    - [Releases](../../variants/msi_b850/releases.md) - groups information about
+       all releases compatible with MSI PRO B850-P WIFI.
+    - [Hardware configuration matrix](../../variants/msi_b850/hardware-matrix.md)
+        \- describes the platform's hardware configuration used during the
+        Dasharo firmware validation procedure.
+    - [Test matrix](../../variants/msi_b850/test-matrix.md) - describes the
        validation scope used during the Dasharo firmware validation procedure.
 
 * [Building manual](building-manual.md) - describes how to build Dasharo for
@@ -55,10 +64,14 @@ documentation._
     - [MSI Z790-P PRO WIFI site](https://www.msi.com/Motherboard/PRO-Z790-P-WIFI)
     - [MSI Z790-P PRO WIFI Board manual](https://download.msi.com/archive/mnu_exe/mb/PROZ790-P_PROZ790-PWIFI.pdf)
 
+=== "PRO B850-P WIFI"
+    - [MSI B850-P PRO WIFI site](https://www.msi.com/Motherboard/PRO-B850-P-WIFI)
+    - [MSI B850-P PRO WIFI Board manual](https://download.msi.com/archive/mnu_exe/mb/PROB850-PWIFI_English.pdf)
+
 ## Buy the MSI PRO Z690-A DDR4 with Dasharo firmware
 
-The Full PC Build with MSI PRO Z690-A/Z790-P DDR4/DDR5 motherboard with Dasharo
-firmware is available at the official [3mdeb
+The Full PC Build with MSI PRO Z690-A/Z790-P DDR4/DDR5 or B850-P WIFI
+motherboard with Dasharo firmware is available at the official [3mdeb
 store](https://shop.3mdeb.com/product-category/dasharo-supported-hardware/).
 
 You can also buy the product by mailing us at:

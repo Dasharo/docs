@@ -140,12 +140,6 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
 
     That means you are good to go.
 
-    #### Migrating SMBIOS unique data (optional)
-
-    Before flashing you may migrate your serial number and UUID as
-    described in [Initial deployment](./initial-deployment.md#migrating-smbios-unique-data).
-    Applicable to Dasharo v1.1.0 (PRO Z690-A) / v0.9.0 (PRO Z790-P) and later.
-
     #### Flashing using flashrom
 
     === "PRO Z690-A boards"
@@ -188,6 +182,16 @@ Alternatively, it can be checked in the `BIOS Setup Menu`.
 
         ```bash
         flashrom -p internal -w [path] --fmap -i RW_SECTION_A -i RW_SECTION_B
+        ```
+
+    === "PRO B850-P boards"
+
+        If updating firmware using custom builds without changing the flashmap,
+        only the `COREBOOT` partition of the flash needs to be updated. Flash it
+        using the following command:
+
+        ```bash
+        flashrom -p internal -w [path] --fmap -i COREBOOT
         ```
 
     #### Troubleshooting

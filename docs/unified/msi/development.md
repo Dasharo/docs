@@ -12,11 +12,18 @@ Dasharo compatible with the MSI PRO Z690-A and PRO Z790-P platform.
 - peripherals listed in the:
     + [PRO Z690-A Hardware Configuration Matrix](../../variants/msi_z690/hardware-matrix.md)
     + [PRO Z790-P Hardware Configuration Matrix](../../variants/msi_z790/hardware-matrix.md)
+    + [PRO B850-P Hardware Configuration Matrix](../../variants/msi_b850/hardware-matrix.md)
 - [RTE](https://3mdeb.com/open-source-hardware/#rte)
 - [Sonoff S20 Smart Plug](https://wiki.iteadstudio.com/S20_Smart_Socket)
    with [custom firmware](http://web.archive.org/web/20240221030444/https://esphome.io/devices/sonoff_s20.html)
+- DB9 null modem cable (MSI PRO B850-P only)
+- DB9 serial port to 10 pin header adapter (MSI PRO B850-P only)
 
 ### Serial debug
+
+!!! Note
+
+    MSI PRO Z690-A/Z790-P only!
 
 - Attach the jumpers in `J16` header to enable header `J18` according to the
   table below:
@@ -27,7 +34,7 @@ Dasharo compatible with the MSI PRO Z690-A and PRO Z790-P platform.
 
 - Connect signals from the `J18` header to serial receiver:
 
-| RTE             | Msi Z690                                  |
+| RTE             | Msi Z690/Z790                             |
 |:---------------:|:-----------------------------------------:|
 | J18 pin 1 (GND) | JBD1 pin 1 (pin closer to JBAT1)          |
 | J18 pin 2 (RX)  | JBD1 pin 2 (pin further from JBAT1)       |
@@ -40,12 +47,22 @@ from booting, but we cannot provide input to the platform at the same time.
 
 ![JBD1](images/msi_z690_serial_panel.jpg)
 
+### Serial console
+
+!!! Note
+
+    MSI PRO B850-P only!
+
+1. Connect IDC 10-pin to DB9 adapter to `JCOM1` on the board
+2. Connect DB9 adapter end with DB9 null model cable
+3. Connect one end of DB9 null modem cable to RTE RS232 DB9 connector.
+
 ### SPI
 
 - For external flashing, connect `RTE` with motherboard according to the table
   below:
 
-| RTE SPI header      | MSI Z690-A/Z790-P                                    |
+| RTE SPI header      | MSI Z690-A/Z790-P/B850-P                             |
 |:-------------------:|:----------------------------------------------------:|
 | J7 pin 1 (Vcc)      | JTPM1 pin 1 (SPI Power)                              |
 | J7 pin 2 (GND)      | JTPM1 pin 7 (GND)                                    |
@@ -78,7 +95,7 @@ manual).
 
 > JFP1 is located in the corner of the mainbaord, near SATA interface ports
 
-| RTE            | MSI Z690-A/Z790-P           |
+| RTE            | MSI Z690-A/Z790-P/B850-P    |
 |:--------------:|:---------------------------:|
 | J11 pin 9      | JFP1 pin 6 (PWR_ON)         |
 | J11 pin 8      | JFP1 pin 7 (RST)            |
@@ -86,5 +103,5 @@ manual).
 
 #### Power supply control
 
-Connect `SeaSonic FOCUS Plus Platinum` power supply unit to the mains via
-`Sonoff S20 Smart Plug`. To power control via RTE, `Sonoff` smart plug
+Connect the power supply unit to the mains via `Sonoff S20 Smart Plug`. To
+power control via RTE, `Sonoff` smart plug

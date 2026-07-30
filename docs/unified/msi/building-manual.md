@@ -71,6 +71,14 @@
         >   most recent release version
         > - `msi_ms7d25/release` branch for the release versions up to v0.9.0
 
+    === "PRO B850-P WIFI"
+        > Replace the `REVISION` with one of the:
+        >
+        > - `msi_ms7e56_vVERSION` tag for the given release `VERSION`
+        >   (e.g. `msi_ms7e56_v0.9.0`), **RECOMMENDED**
+        > - `dasharo-25.12` branch for a development version with unreleased changes past
+        >   most recent release version
+
     ```bash
     git clone https://github.com/Dasharo/coreboot.git -b REVISION
     cd coreboot
@@ -121,6 +129,34 @@
         ```
 
         The resulting Dasharo firmware image will be placed at `$PWD/msi_ms7e06_VERSION_ddr4.rom`.
+
+    === "PRO B850-P WIFI"
+        Download the AMD Phoenix AM5 blobs.
+
+        {{ tos_gated_downloads("msi-ms7e56-v090-blobs",
+        [{"label": "PhoenixAM5.zip", "url": "https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7e56/uefi/v0.9.0/PhoenixAM5.zip"}],
+        prose_section_id="msi-ms7e56-v090-blobs-prose") }}
+
+        <div data-prose-group="msi-ms7e56-v090-blobs-prose"
+            class="tos-gate-content" markdown="1"
+            style="display: none">
+
+        Unzip the package to the following directory:
+
+            ```bash
+            unzip PhoenixAM5.zip -d 3rdparty/blobs/soc/amd/
+            ```
+
+        </div>
+
+        And then execute:
+
+
+        ```bash
+        ./build.sh b850p
+        ```
+
+        The resulting Dasharo firmware image will be placed at `$PWD/msi_ms7e56_VERSION.rom`.
 
 === "Dasharo (coreboot + Heads)"
 
