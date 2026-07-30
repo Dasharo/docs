@@ -69,7 +69,7 @@ Test results for this release can be found
 - [Previous power state restoration does not work for powered off
   state](https://github.com/Dasharo/dasharo-issues/issues/1844)
 - [Ubuntu 26.04 with serial console sometimes halts during boot on MSI PRO
-  B805-P](https://github.com/Dasharo/dasharo-issues/issues/1897)
+  B850-P](https://github.com/Dasharo/dasharo-issues/issues/1897)
 - [Firmware flashing and reset to defaults do not give the same
   measurements](https://github.com/Dasharo/dasharo-issues/issues/1842)
 - [WiFi occasionally disappears on MSI PRO B850-P
