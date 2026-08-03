@@ -3,13 +3,14 @@
 This is a Dasharo Pro Package Release. To obtain access to the pre-built
 binaries, you need to [subscribe to the Dasharo Pro Package
 subscriber](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
-You can do this by purchasing a Dasharo Pro Package product from our
-[shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1year-desktop/). As a
-subscriber, you will receive access to all firmware updates for the duration
-of your subscription via the Dasharo Pro Package newsletter, and gain entry to
-the Dasharo Premier Support invite-only live chat on the Matrix network,
-enabling direct engagement with the Dasharo Team and fellow subscribers for
-personalized, priority assistance.
+You can do this by purchasing a Full PC build with Dasharo Pro Package product
+from our
+[shop](https://shop.3mdeb.com/product/dasharo-full-pc-build-msi-pro-b850-p-wifi-ddr5/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter, and gain
+entry to the Dasharo Premier Support invite-only live chat on the Matrix
+network, enabling direct engagement with the Dasharo Team and fellow
+subscribers for personalized, priority assistance.
 
 Following Release Notes describe status of Open Source Firmware development
 for MSI PRO B850-P WIFI.
