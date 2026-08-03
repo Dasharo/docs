@@ -321,6 +321,7 @@ nav:
               - 'Hardware Configuration Matrix': variants/msi_b850/hardware-matrix.md
               - 'Test matrix': variants/msi_b850/test-matrix.md
               - 'Openness score': variants/msi_b850/openness_score.md
+              - 'Press and Media Coverage': variants/msi_b850/press-and-media-coverage.md
       - 'NovaCustom':
           - 'Overview': unified/novacustom/overview.md
           - 'Building manual': unified/novacustom/building-manual.md
