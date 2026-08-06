@@ -64,7 +64,14 @@ open-source firmware distribution.
         + [Dell OptiPlex](dell_optiplex/overview.md)
         + [MSI PRO Z690-A](../unified/msi/overview.md)
         + [MSI PRO Z790-P](../unified/msi/overview.md)
+    - [Dasharo: Full PC Build MSI PRO B850-P](https://shop.3mdeb.com/product/dasharo-full-pc-build-msi-pro-b850-p-wifi-ddr5/)
         + [MSI PRO B850-P](../unified/msi/overview.md)
+
+    !!! note
+
+        Full-build platforms are supported exclusively as part of a validated
+        full-build purchase. Support for these platforms cannot be purchased
+        separately through a standalone Dasharo Pro Package.
 
 * Following desktops are supported under **Dasharo Community Support**:
 
