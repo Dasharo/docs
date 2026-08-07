@@ -9,7 +9,12 @@ For details about our release process please read
 <center>
 
 {{ subscribe_form("3d024561-472f-4fd3-9cf1-ba070be56862",
-"Subscribe to ASRock Rack TURIND8UD-2T/X550 Dasharo Release Newsletter") }}
+"Subscribe to ASRock Rack TURIND8UD-2T/X550 Dasharo (coreboot+LinuxBoot)
+Release Newsletter") }}
+
+{{ subscribe_form("17705dae-3106-4f58-9d12-bf048bf57400",
+"Subscribe to ASRock Rack TURIND8UD-2T/X550 Dasharo (coreboot+UEFI)
+Release Newsletter") }}
 
 </center>
 
