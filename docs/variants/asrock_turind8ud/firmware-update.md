@@ -33,3 +33,5 @@ TURIND8UD platform.
         submenu.
     5. Select the "Firmware Update Mode" option
     6. Follow instructions on screen to perform the automatic update of firmware
+
+    For more details, see [Firmware Update Mode](../../../kb/firmware-update-mode/)
