@@ -29,9 +29,9 @@ TURIND8UD platform.
     2. While the device is booting, hold the `ESC` key to enter the UEFI Setup
         Menu.
     3. Enter the `Dasharo System Features` menu using the arrow keys and Enter.
-    4. Enter the [Dasharo Security Options](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+    4. Enter the [Dasharo Security Options](../../../dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
         submenu.
-    5. Select the "Firmware Update Mode" option
-    6. Follow instructions on screen to perform the automatic update of firmware
+    5. Select the "Firmware Update Mode" option.
+    6. Follow instructions on screen to perform the automatic update of firmware.
 
-    For more details, see [Firmware Update Mode](../../../kb/firmware-update-mode/)
+    For more details, see [Firmware Update Mode](../../../kb/firmware-update-mode/).
