@@ -1,4 +1,22 @@
-# USB Armory usage and preparation
+# USB armory usage and preparation
+
+**Project attribution and scope**
+
+USB armory is an open-hardware project authored by **Andrea Barisani, Andrej
+Rosano, and Daniele Bianco**.
+
+The canonical source for the original design and project documentation is
+the [official USB armory repository](https://github.com/usbarmory/usbarmory)
+and its [project wiki](https://github.com/usbarmory/usbarmory/wiki).
+
+This page is supplementary documentation prepared by 3mdeb for the
+USB armory Mk II manufacturing revision independently manufactured and
+sold by 3mdeb.
+
+3mdeb is not the original designer of USB armory Mk II. The 3mdeb
+manufacturing revision includes component, PCB, and production-file
+changes documented separately below. It is not manufactured, sponsored,
+or endorsed by the upstream authors or maintainers.
 
 ## Requirements
 
