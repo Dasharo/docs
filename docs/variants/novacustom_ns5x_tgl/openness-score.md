@@ -5,6 +5,134 @@ Score](../../glossary.md#dasharo-openness-score) for NovaCustom NS5/7XPU Dasharo
 releases. The content of the page is generated with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
+## v1.6.0
+
+Openness Score for novacustom_ns5x_tgl_v1.6.0.rom
+
+Open-source code percentage: **34.0%**
+Closed-source code percentage: **66.0%**
+
+* Image size: 16777216 (0x1000000)
+* Number of regions: 23
+* Number of CBFSes: 3
+* Total open-source code size: 3912152 (0x3bb1d8)
+* Total closed-source code size: 7598798 (0x73f2ce)
+* Total data size: 888746 (0xd8faa)
+* Total empty size: 4377520 (0x42cbb0)
+
+![](novacustom_ns5x_tgl_v1.6.0.rom_openness_chart.png)
+
+![](novacustom_ns5x_tgl_v1.6.0.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x1000 | 0x4ff000 | closed-source |
+| SI_DESC | 0x0 | 0x1000 | data |
+| RECOVERY_MRC_CACHE | 0x500000 | 0x10000 | data |
+| RW_MRC_CACHE | 0x510000 | 0x10000 | data |
+| SMMSTORE | 0x520000 | 0x80000 | data |
+| SHARED_DATA | 0x5a0000 | 0x2000 | data |
+| VBLOCK_DEV | 0x5a2000 | 0x2000 | data |
+| RW_NVRAM | 0x5a4000 | 0x6000 | data |
+| CONSOLE | 0x5aa000 | 0x20000 | data |
+| VBLOCK_A | 0x6ca000 | 0x2000 | data |
+| RW_FWID_A | 0xafff00 | 0x100 | data |
+| FMAP | 0xb00000 | 0x800 | data |
+| RO_FRID | 0xb00800 | 0x100 | data |
+| RO_FRID_PAD | 0xb00900 | 0x700 | data |
+| GBB | 0xb01000 | 0x3000 | data |
+
+### CBFS BOOTSPLASH
+
+* CBFS size: 1048576
+* Number of files: 1
+* Open-source files size: 0 (0x0)
+* Closed-source files size: 0 (0x0)
+* Data size: 28 (0x1c)
+* Empty size: 1048548 (0xfffe4)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| (empty) | null | 1048548 | none | empty |
+
+### CBFS FW_MAIN_A
+
+* CBFS size: 4407040
+* Number of files: 16
+* Open-source files size: 1904876 (0x1d10ec)
+* Closed-source files size: 1180007 (0x120167)
+* Data size: 13993 (0x36a9)
+* Empty size: 1308164 (0x13f604)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1548953 | none | open-source |
+| fallback/romstage | stage | 101744 | none | open-source |
+| fallback/ramstage | stage | 153935 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 21924 | none | open-source |
+| fallback/postcar | stage | 78320 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 211968 | none | closed-source |
+| fspm.bin | fsp | 651264 | none | closed-source |
+| fsps.bin | fsp | 300415 | LZ4 | closed-source |
+| config | raw | 6041 | LZMA | data |
+| revision | raw | 859 | none | data |
+| build_info | raw | 102 | none | data |
+| vbt.bin | raw | 1318 | LZMA | data |
+| sbom | raw | 3873 | none | data |
+| (empty) | null | 1252 | none | empty |
+| (empty) | null | 1306912 | none | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 5226496
+* Number of files: 23
+* Open-source files size: 2007276 (0x1ea0ec)
+* Closed-source files size: 1180007 (0x120167)
+* Data size: 18405 (0x47e5)
+* Empty size: 2020808 (0x1ed5c8)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1548953 | none | open-source |
+| fallback/romstage | stage | 101744 | none | open-source |
+| fallback/ramstage | stage | 153935 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 21924 | none | open-source |
+| fallback/postcar | stage | 78320 | none | open-source |
+| bootblock | bootblock | 102400 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 211968 | none | closed-source |
+| fspm.bin | fsp | 651264 | none | closed-source |
+| fsps.bin | fsp | 300415 | LZ4 | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| intel_fit | intel_fit | 272 | none | data |
+| boot_policy_manifest.bin | raw | 1536 | none | data |
+| key_manifest.bin | raw | 1024 | none | data |
+| config | raw | 6041 | LZMA | data |
+| revision | raw | 859 | none | data |
+| build_info | raw | 102 | none | data |
+| vbt.bin | raw | 1318 | LZMA | data |
+| etc/ps2-keyboard-spinup | raw | 8 | none | data |
+| cmos_layout.bin | cmos_layout | 852 | none | data |
+| sbom | raw | 3873 | none | data |
+| (empty) | null | 484 | none | empty |
+| (empty) | null | 2020324 | none | empty |
+
 ## v1.5.2
 
 Report has been generated with Openness Score utility version v0.2
