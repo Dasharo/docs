@@ -70,6 +70,12 @@ example.
 
 ![](../images/menus/health_mgr.jpeg){ class="center" }
 
+## Platform Setup Menu
+
+This submenu allows configuring platform-specific options.
+
+For more information see [Platform Setup Menu](platform-setup-menu.md)
+
 ## Secure Boot Configuration
 
 This submenu allows configuring UEFI Secure Boot functionality.
