@@ -240,6 +240,7 @@ nav:
       - 'ASRock Rack TURIND8UD-2T/X550':
           - 'Overview': variants/asrock_turind8ud/overview.md
           - 'Releases': variants/asrock_turind8ud/releases.md
+          - 'LinuxBoot releases': variants/asrock_turind8ud/releases_linuxboot.md
           - 'Firmware Update': variants/asrock_turind8ud/firmware-update.md
           - 'Building manual': variants/asrock_turind8ud/building-manual.md
           - 'Initial deployment': variants/asrock_turind8ud/initial-deployment.md
