@@ -16,7 +16,26 @@ jobs:
         uses: actions/checkout@v4.1.1
 
       - name: Test links
-        uses: 3mdeb/lychee-log-action@main
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: '--timeout 60 --suggest --max-redirects 20 -a 403,406,429,500,502,503,522,999 .'
+          output: log.json
+          format: json
+          fail: false
+          failIfEmpty: false
+          checkbox: false
+          # Keep the JSON output compatible with lychee-log-parser.
+          lycheeVersion: v0.15.1
+
+      - name: Checkout link log parser
+        uses: actions/checkout@v4.1.1
+        with:
+          repository: 3mdeb/lychee-log-parser
+          path: lychee-log-parser
+
+      - name: Parse link checker log
+        run: |
+          lychee-log-parser/src/lychee_log_parser.py 404..407 409..417 421..428 431 451 -t -n || { cat github_job_summary.md > "${GITHUB_STEP_SUMMARY}"; exit 1; }
 
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
