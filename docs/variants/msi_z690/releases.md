@@ -23,6 +23,162 @@ For details about our release process please read
 {{ subscribe_form("bae1674f-bd25-4a12-b6b5-c2099739cd93",
 "Subscribe to Dasharo compatible with MSI PRO Z690-A Newsletter") }}
 
+## v1.1.7 - 2026-08-13
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7d25/v1.1.7-results.csv).
+
+### Added
+
+- [SBOM embedded into firmware](https://github.com/Dasharo/dasharo-issues/issues/129)
+- MRC cache is now preserved by capsule updates to avoid memory retraining
+- Detection of TPMs that support only a single active bank
+- New setup submenu with various experimental CPU and overclocking options
+  under Device Manager -> Platform Setup Menu. Use at your own risk, no
+  support is provided for these options.
+- New experimental RAM voltage configuration options for DDR4 variants under
+  Device Manager -> Platform Setup Menu. Use at your own risk, no support is
+  provided for these options.
+- [Perliminary support for SMI Transfer Monitor with an option to enable it via
+  setup](https://docs.dasharo.com/guides/smi-transfer-monitor/)
+- Restoring default settings with CMOS battery reset
+- EZ Debug LED support
+- Verification of XMP profile and rofile requested voltage on DDR4 variants
+- Ramping the RAM voltage per XMP profile needs on DDR4 variants (DDR5
+  variants ramp the voltage inside Intel FSP)
+
+### Changed
+
+- Updated CPU microcode (see SBOM)
+- Increased size of UEFI variable store
+- [Support extending both SHA-1 and SHA-256 PCRs for dTPM](https://github.com/Dasharo/dasharo-issues/issues/982)
+- TPM log no longer uses entries of fixed size
+- Updated TPM ACPI device path (can help with Windows 11)
+- [Removed MMX/SSE instructions from UEFI runtime drivers (fixes efivar on
+  FreeBSD)](https://github.com/Dasharo/dasharo-issues/issues/1001)
+- Register serial console after VGA (affects FreeBSD)
+- XMP profile selection option moved to Device Manager -> Platform Setup Menu
+  (requires enabling overclocking option first)
+- Disabled USB port power when powering off the machine
+
+### Fixed
+
+- [Unable to apply UEFI dbx 20250902 update via fwupdmgr](https://github.com/Dasharo/dasharo-issues/issues/1691)
+- [Cannot enter Firmware Update Mode twice in a row](https://github.com/Dasharo/dasharo-issues/issues/1759)
+- XMP profile option showing XMP3 profile on DDR4 platforms
+
+### Known issues
+
+- [XMP1 profile does not boot in combination with some DDR5
+  configurations](https://github.com/Dasharo/dasharo-issues/issues/683)
+- [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
+- [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
+- [Windows 11 VBS (Virtualization-based Security) appears Not enabled on
+  System Information](https://github.com/Dasharo/dasharo-issues/issues/539)
+- [Ubuntu fails to boot with early DMA protection Enabled](https://github.com/Dasharo/dasharo-issues/issues/1869)
+
+### Binaries
+
+[sha256][msi_ms7d25_v1.1.7_ddr4.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr4.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr4.cap)
+[sha256][msi_ms7d25_v1.1.7_ddr4.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr4.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr4.rom)
+[msi_ms7d25_v1.1.7_ddr4.sbom.json][msi_ms7d25_v1.1.7_ddr4.sbom.json_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.7_ddr4.sbom.json_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr4.sbom.json_sig]{.md-button}
+[sha256][msi_ms7d25_v1.1.7_ddr4_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr4_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr4_dev_signed.cap)
+[sha256][msi_ms7d25_v1.1.7_ddr4_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr4_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr4_dev_signed.rom)
+[sha256][msi_ms7d25_v1.1.7_ddr5.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr5.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr5.cap)
+[sha256][msi_ms7d25_v1.1.7_ddr5.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr5.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr5.rom)
+[msi_ms7d25_v1.1.7_ddr5.sbom.json][msi_ms7d25_v1.1.7_ddr5.sbom.json_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.7_ddr5.sbom.json_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr5.sbom.json_sig]{.md-button}
+[sha256][msi_ms7d25_v1.1.7_ddr5_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr5_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr5_dev_signed.cap)
+[sha256][msi_ms7d25_v1.1.7_ddr5_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.7_ddr5_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.7_ddr5_dev_signed.rom)
+
+This is a Dasharo Pro Package release. For this platform, access to pre-built
+binaries is provided exclusively through the [Full Build for MSI PRO Z690-A
+(WIFI) and PRO Z690-A (WIFI)
+DDR4](https://shop.3mdeb.com/product/1year-desktop/), a bundled
+hardware-and-firmware product available in the 3mdeb shop. A standalone
+Dasharo Pro Package subscription is not offered for this platform.
+
+With the Full Build, you receive firmware updates for the duration of your
+subscription via the Dasharo Pro Package newsletter, and gain entry to the
+Dasharo Premier Support invite-only live chat on the Matrix network, enabling
+direct engagement with the Dasharo Team and fellow subscribers for
+personalized, priority assistance.
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 25.12 revision c96f0b7a](https://github.com/Dasharo/coreboot/tree/c96f0b7a)
+    + [License](https://github.com/Dasharo/coreboot/blob/c96f0b7a/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202602 revision 5dc2238e](https://github.com/Dasharo/edk2/tree/5dc2238e)
+    + [License](https://github.com/Dasharo/edk2/blob/5dc2238e/License.txt)
+- [Dasharo EDK2-platforms fork based on 1002a59639f111a2f8178b77d1f5fde0ea8d976f revision 1002a596](https://github.com/Dasharo/edk2-platforms/tree/1002a596)
+    + [License](https://github.com/Dasharo/edk2-platforms/blob/1002a596/License.txt)
+- [iPXE based on ad8cbcee950840547f87394179a7e712e1c3c06f revision ad8cbcee](https://github.com/Dasharo/ipxe/tree/ad8cbcee)
+    + [License](https://github.com/Dasharo/ipxe/blob/ad8cbcee/COPYING.GPLv2)
+- [vboot based on 3f94e2c7ed revision 3f94e2c7](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3f94e2c7/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3f94e2c7/LICENSE)
+- [Intel Management Engine version v16.1.30.2307](https://github.com/Dasharo/dasharo-blobs/blob/0ca1dcac/msi/ms7d25/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.1](https://github.com/Dasharo/dasharo-blobs/blob/0ca1dcac/msi/ms7d25/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version RPL-S C.0.C8.50](https://github.com/intel/FSP/tree/23cf2587/RaptorLakeFspBinPkg/Client/RaptorLakeS)
+    + [License](https://github.com/intel/FSP/blob/23cf2587/FSP_License.pdf)
+- [Intel microcode version ADL/RPL C0/H0 0x3e 12/10/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260811/intel-ucode/06-97-05)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260811/license)
+- [Intel microcode version RPL B0 0x137 18/02/2026](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260811/intel-ucode/06-b7-01)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260811/license)
+
+An [integrated SBOM](https://doc.coreboot.org/sbom/sbom.html) is also included
+in the firmware images. It describes a complete set of components and their
+versions used to build the firmware images. The published SBOM artifact is in
+CycloneDX format and can be viewed by SBOM tools, for example
+[sbom-tools](https://github.com/sbom-tool/sbom-tools).
+
+[msi_ms7d25_v1.1.7_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4.cap.sha256
+[msi_ms7d25_v1.1.7_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4.cap.sha256.sig
+[msi_ms7d25_v1.1.7_ddr4.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4.rom.sha256
+[msi_ms7d25_v1.1.7_ddr4.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4.rom.sha256.sig
+[msi_ms7d25_v1.1.7_ddr4.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4.sbom.json
+[msi_ms7d25_v1.1.7_ddr4.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4.sbom.json.sha256
+[msi_ms7d25_v1.1.7_ddr4.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4.sbom.json.sha256.sig
+[msi_ms7d25_v1.1.7_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4_dev_signed.cap.sha256
+[msi_ms7d25_v1.1.7_ddr4_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4_dev_signed.cap.sha256.sig
+[msi_ms7d25_v1.1.7_ddr4_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.7_ddr4_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr4_dev_signed.rom.sha256.sig
+[msi_ms7d25_v1.1.7_ddr5.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5.cap.sha256
+[msi_ms7d25_v1.1.7_ddr5.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5.cap.sha256.sig
+[msi_ms7d25_v1.1.7_ddr5.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5.rom.sha256
+[msi_ms7d25_v1.1.7_ddr5.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5.rom.sha256.sig
+[msi_ms7d25_v1.1.7_ddr5.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5.sbom.json
+[msi_ms7d25_v1.1.7_ddr5.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5.sbom.json.sha256
+[msi_ms7d25_v1.1.7_ddr5.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5.sbom.json.sha256.sig
+[msi_ms7d25_v1.1.7_ddr5_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5_dev_signed.cap.sha256
+[msi_ms7d25_v1.1.7_ddr5_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5_dev_signed.cap.sha256.sig
+[msi_ms7d25_v1.1.7_ddr5_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.7_ddr5_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.7/msi_ms7d25_v1.1.7_ddr5_dev_signed.rom.sha256.sig
+
 ## v1.1.6 - 2025-12-01
 
 Test results for this release can be found
