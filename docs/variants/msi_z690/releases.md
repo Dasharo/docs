@@ -27,50 +27,54 @@ For details about our release process please read
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7d25/v1.1.7-results.csv).
+This is an [Assured Dasharo release](../../dasharo-naming-convention.md#description).
 
 ### Added
 
 - [SBOM embedded into firmware](https://github.com/Dasharo/dasharo-issues/issues/129)
 - MRC cache is now preserved by capsule updates to avoid memory retraining
-- Detection of TPMs that support only a single active bank
-- New setup submenu with various experimental CPU and overclocking options
+- [Detection of TPMs that support only a single active bank](https://github.com/Dasharo/edk2/pull/282)
+- [New setup submenu with various experimental CPU and overclocking options
   under Device Manager -> Platform Setup Menu. Use at your own risk, no
-  support is provided for these options.
-- New experimental RAM voltage configuration options for DDR4 variants under
+  support is provided for these
+  options.](https://docs.dasharo.com/dasharo-menu-docs/platform-setup-menu/)
+- [New experimental RAM voltage configuration options for DDR4 variants under
   Device Manager -> Platform Setup Menu. Use at your own risk, no support is
-  provided for these options.
-- [Perliminary support for SMI Transfer Monitor with an option to enable it via
-  setup](https://docs.dasharo.com/guides/smi-transfer-monitor/)
-- Restoring default settings with CMOS battery reset
-- EZ Debug LED support
-- Verification of XMP profile and rofile requested voltage on DDR4 variants
-- Ramping the RAM voltage per XMP profile needs on DDR4 variants (DDR5
-  variants ramp the voltage inside Intel FSP)
+  provided for these
+  options.](https://docs.dasharo.com/dasharo-menu-docs/platform-setup-menu/)
+- [Perliminary support for SMI Transfer Monitor with an option to enable it
+  via setup](https://docs.dasharo.com/guides/smi-transfer-monitor/)
+- [Restoring default settings with CMOS battery reset](https://github.com/Dasharo/dasharo-issues/issues/1233)
+- [EZ Debug LED support](https://github.com/Dasharo/dasharo-issues/issues/1911)
+- [Verification of XMP profile and profile requested voltage on DDR4
+  variants](https://github.com/Dasharo/dasharo-issues/issues/605)
+- [Ramping the RAM voltage per XMP profile needs on DDR4 variants (DDR5
+  variants ramp the voltage inside Intel
+  FSP)](https://github.com/Dasharo/dasharo-issues/issues/605#issuecomment-1891021617)
 
 ### Changed
 
 - Updated CPU microcode (see SBOM)
-- Increased size of UEFI variable store
 - [Support extending both SHA-1 and SHA-256 PCRs for dTPM](https://github.com/Dasharo/dasharo-issues/issues/982)
 - TPM log no longer uses entries of fixed size
-- Updated TPM ACPI device path (can help with Windows 11)
+- [Updated TPM ACPI device path (can help with Windows 11)](https://github.com/Dasharo/coreboot/pull/796)
 - [Removed MMX/SSE instructions from UEFI runtime drivers (fixes efivar on
   FreeBSD)](https://github.com/Dasharo/dasharo-issues/issues/1001)
 - Register serial console after VGA (affects FreeBSD)
-- XMP profile selection option moved to Device Manager -> Platform Setup Menu
-  (requires enabling overclocking option first)
-- Disabled USB port power when powering off the machine
+- [XMP profile selection option moved to Device Manager -> Platform Setup Menu
+  (requires enabling overclocking option
+  first)](https://docs.dasharo.com/dasharo-menu-docs/platform-setup-menu/)
+- [Disabled USB port power when powering off the machine](https://github.com/Dasharo/dasharo-issues/issues/1910)
 
 ### Fixed
 
 - [Unable to apply UEFI dbx 20250902 update via fwupdmgr](https://github.com/Dasharo/dasharo-issues/issues/1691)
 - [Cannot enter Firmware Update Mode twice in a row](https://github.com/Dasharo/dasharo-issues/issues/1759)
-- XMP profile option showing XMP3 profile on DDR4 platforms
+- [XMP profile option showing XMP3 profile on DDR4 platforms](https://github.com/Dasharo/dasharo-issues/issues/683#issuecomment-1907380025)
 
 ### Known issues
 
-- [XMP1 profile does not boot in combination with some DDR5
-  configurations](https://github.com/Dasharo/dasharo-issues/issues/683)
+- [XMP1 profile does not boot in combination with some DDR5 configurations](https://github.com/Dasharo/dasharo-issues/issues/683)
 - [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
 - [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
 - [Windows 11 VBS (Virtualization-based Security) appears Not enabled on
