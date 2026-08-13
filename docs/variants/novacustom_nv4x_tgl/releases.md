@@ -6,8 +6,167 @@ NovaCustom NV4x 11th Gen
 For details about our release process please read
 [Dasharo Standard Release Process](../../dev-proc/standard-release-process.md).
 
+<center>
+
 {{ subscribe_form("68d08070-7966-476d-a2f0-212dda0e2723",
 "Subscribe to NovaCustom NV4x 11th Gen Dasharo Release Newsletter") }}
+
+</center>
+
+## v1.6.0 - 2026-08-13
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/NovaCustom/TGL_11th_Gen/NV41MZ/v1.6.0-results.csv).
+
+### Added
+
+- [Firmware update via UEFI capsule update interface with LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
+- [Quiet boot/Fast boot](https://docs.dasharo.com/dasharo-menu-docs/boot-maintenance-mgr/)
+- [FTDI controller support](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/docs/novacustom.md)
+- [Sleep-and-charge ports](https://github.com/Dasharo/ec/pull/66)
+- [Sleep type option](https://github.com/Dasharo/coreboot/pull/738)
+- [ACPI driver](https://docs.dasharo.com/unified/novacustom/features/#acpi-driver)
+- [Human-readable UEFI Secure Boot key management screens](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
+- [Microphone Switch (FN+4)](https://docs.dasharo.com/unified/clevo/post-install/#microphone-mute-key-enablement)
+- [Software Bill of Materials (SBOM) embedded in the firmware image, covering the payload, ME, EC, microcode, FSP, ACMs, flash descriptor, vboot and iPXE](https://github.com/Dasharo/dasharo-issues/issues/962)
+- [CBFS verification integrated with vboot](https://doc.coreboot.org/security/vboot/index.html)
+- [EC firmware stored in the main SPI flash and updated together with the firmware](https://github.com/Dasharo/dasharo-issues/issues/359)
+- [CPU throttling threshold configurable in firmware setup](https://github.com/Dasharo/dasharo-issues/issues/663)
+- [USB port power configuration option](https://github.com/Dasharo/coreboot/commit/071eeafb0b)
+- [ACPI thermal monitoring and fan control](https://github.com/Dasharo/dasharo-issues/issues/148)
+- [SMBIOS serial number and UUID reported from the firmware](https://github.com/Dasharo/coreboot/commit/6943cc51d6)
+
+### Changed
+
+- [coreboot rebased on 24.12](https://doc.coreboot.org/releases/coreboot-24.12-relnotes.html)
+- EDK II rebased on edk2-stable202502
+- UEFI DBX updated to 2026-06-30
+- Intel Microcode updated to microcode-20260227
+- Owner GUID of Secure Boot DB and KEK to Microsoft recommended values
+- [Password policy updated to allow passphrases with lowercase-only characters per modern NIST standards](https://github.com/Dasharo/dasharo-issues/issues/646)
+- [Early boot DMA protection option now warns about Windows incompatibility](https://github.com/Dasharo/dasharo-issues/issues/1771)
+- [EC firmware is now built from Dasharo EC](https://github.com/Dasharo/coreboot/commit/b992a83e96)
+- [Intel ME firmware and flash descriptor are now sourced from the public dasharo-blobs repository](https://github.com/Dasharo/dasharo-blobs)
+
+### Fixed
+
+- [Hybrid Graphics Mode in Setup on iGPU only system](https://github.com/Dasharo/dasharo-issues/issues/1858)
+- [Incomplete serial console output](https://github.com/Dasharo/dasharo-issues/issues/614)
+- [Some devices on dock are not detected after warmboot or reboot](https://github.com/Dasharo/dasharo-issues/issues/632)
+- [Some commands in dasharo_ectool fail](https://github.com/Dasharo/dasharo-issues/issues/648)
+- [Function Lock setting is not saved after cold boot](https://github.com/Dasharo/dasharo-issues/issues/458)
+- [Power state after power failure option does not work as intended](https://github.com/Dasharo/dasharo-issues/issues/524)
+- [The laptop does not automatically wake up from hibernation using rtcwake](https://github.com/Dasharo/dasharo-issues/issues/485)
+- [No HDMI output in firmware](https://github.com/Dasharo/dasharo-issues/issues/533)
+- [Connecting and immediately disconnecting the charger, sets the battery status in OS to "charging" for about 2 minutes](https://github.com/Dasharo/dasharo-issues/issues/350)
+- [Laptop hangs up after 20 cycles of the suspend procedure](https://github.com/Dasharo/dasharo-issues/issues/305)
+- [Screen brightness keys not working on Windows 11](https://github.com/Dasharo/dasharo-issues/issues/1274)
+- [CPU fan spins out of control](https://github.com/Dasharo/dasharo-issues/issues/1262)
+- [SBOM BIOS and SINIT ACM version missing](https://github.com/Dasharo/dasharo-issues/issues/1895)
+- [Laptop battery lasts too little to finish on-battery load test](https://github.com/Dasharo/dasharo-issues/issues/1857)
+- [DisplayPort does not work on NV41MZ](https://github.com/Dasharo/dasharo-issues/issues/1893)
+- [iPXE options exit immediately](https://github.com/Dasharo/dasharo-issues/issues/1853)
+- [Suspend mechanism switching between S0ix and S3 does not work](https://github.com/Dasharo/dasharo-issues/issues/466)
+- [SD card is not recognized as bootable](https://github.com/Dasharo/dasharo-issues/issues/454)
+- [Firmware secure NVRAM (TPM) initialization error](https://github.com/Dasharo/dasharo-issues/issues/1248)
+- [Board vendor not recognized](https://github.com/Dasharo/dasharo-issues/issues/1244)
+- [Proper fwupd support for vboot](https://github.com/Dasharo/dasharo-issues/issues/206)
+- [Internal keyboard sometimes does not work in firmware](https://github.com/Dasharo/dasharo-issues/issues/295)
+- [The screen brightness level gets stuck when keys are held](https://github.com/Dasharo/dasharo-issues/issues/341)
+- [Missing information about cache](https://github.com/Dasharo/dasharo-issues/issues/343)
+- [EC flashing errors report](https://github.com/Dasharo/dasharo-issues/issues/345)
+- [SD card reader driver cannot be detected after Windows 10 installation](https://github.com/Dasharo/dasharo-issues/issues/152)
+- [Waking up from sleep on Ubuntu 22.04 is not 100% reliable](https://github.com/Dasharo/dasharo-issues/issues/205)
+- [GPU fan runs too fast](https://github.com/Dasharo/dasharo-issues/issues/388)
+- [Function Lock feature for NV40x Tiger Lake laptops](https://github.com/Dasharo/dasharo-issues/issues/308)
+- [OS fails to resume from S3 on some board revisions](https://github.com/Dasharo/dasharo-issues/issues/523)
+- [Platform fails to resume from S3 suspend](https://github.com/Dasharo/dasharo-issues/issues/554)
+- [Cannot perform initial deployment with a discrete GPU](https://github.com/Dasharo/dasharo-issues/issues/699)
+- [Windows 11 fails to resume from hibernation](https://github.com/Dasharo/dasharo-issues/issues/529)
+- [Ability to boot to Clonezilla Server (iPXE)](https://github.com/Dasharo/dasharo-issues/issues/573)
+- [Closing the lid generates ACPI Error: No handler or method for GPE 6B](https://github.com/Dasharo/dasharo-issues/issues/640)
+- [Following initial deployment and recovery documentation leads to unbootable system](https://github.com/Dasharo/dasharo-issues/issues/1525)
+
+### Known issues
+
+- [Poor Package C-state residency at idle after first s2idle cycle](https://github.com/Dasharo/dasharo-issues/issues/631)
+- [S3 sleep does not work - experimental](https://github.com/Dasharo/dasharo-issues/issues/1856)
+- [Turning wifi/bt off inside BIOS leads to an ACPI error message while system start on Gentoo Linux](https://github.com/Dasharo/dasharo-issues/issues/638)
+- [Early boot DMA protection is disabled in OS despite enabling it in FW](https://github.com/Dasharo/dasharo-issues/issues/548)
+- [F7 Function Key controlled by the firmware](https://github.com/Dasharo/dasharo-issues/issues/391)
+- [Capsule update signing is not enforced](https://github.com/Dasharo/dasharo-issues/issues/1075)
+- [PCR-7 (authority) measurement is not fully reconstructed](https://github.com/Dasharo/dasharo-issues/issues/1705)
+- [EC update requires barrel jack, ignores USB-PD](https://github.com/Dasharo/dasharo-issues/issues/1850)
+- [Crash when using external GPU over Thunderbolt 3](https://github.com/Dasharo/dasharo-issues/issues/1849)
+- [Display gets 100% brightness on wakeup](https://github.com/Dasharo/dasharo-issues/issues/772)
+- [Hybrid Graphics Mode shown in Setup on iGPU only system](https://github.com/Dasharo/dasharo-issues/issues/1858)
+- [No ability to change active PCR banks with TPM PPI in FW](https://github.com/Dasharo/dasharo-issues/issues/521)
+- [UCSI interface is not functional](https://github.com/Dasharo/dasharo-issues/issues/60)
+
+### Binaries
+
+[novacustom_nv4x_tgl_ec_v1.6.0.rom][novacustom_nv4x_tgl_ec_v1.6.0.rom_file]{.md-button}
+[sha256][novacustom_nv4x_tgl_ec_v1.6.0.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_tgl_ec_v1.6.0.rom_sig]{.md-button}
+[novacustom_nv4x_tgl_v1.6.0.cap][novacustom_nv4x_tgl_v1.6.0.cap_file]{.md-button}
+[sha256][novacustom_nv4x_tgl_v1.6.0.cap_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_tgl_v1.6.0.cap_sig]{.md-button}
+[novacustom_nv4x_tgl_v1.6.0.rom][novacustom_nv4x_tgl_v1.6.0.rom_file]{.md-button}
+[sha256][novacustom_nv4x_tgl_v1.6.0.rom_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_tgl_v1.6.0.rom_sig]{.md-button}
+[novacustom_nv4x_tgl_v1.6.0.sbom.json][novacustom_nv4x_tgl_v1.6.0.sbom.json_file]{.md-button}
+[sha256][novacustom_nv4x_tgl_v1.6.0.sbom.json_hash]{.md-button}
+[sha256.sig][novacustom_nv4x_tgl_v1.6.0.sbom.json_sig]{.md-button}
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature verification](/guides/signature-verification)
+using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 24.12 revision 77504cc4](https://github.com/Dasharo/coreboot/tree/77504cc4)
+- [Dasharo fork of System76 EC based on 2026-07-22_f2a20fa revision a3c183f2](https://github.com/Dasharo/ec/tree/a3c183f2/)
+    + [License](https://github.com/Dasharo/ec/blob/a3c183f2/LICENSE)
+- [Dasharo EDKII fork based on edk2-stable202502 revision 93bc0155](https://github.com/Dasharo/edk2/tree/93bc0155)
+    + [License](https://github.com/Dasharo/edk2/blob/93bc0155/License.txt)
+- [Dasharo fork of edk2-platforms based on v0.9.0 revision 1002a596](https://github.com/Dasharo/edk2-platforms/tree/1002a596)
+    + [License](https://github.com/Dasharo/edk2-platforms/blob/1002a596/License.txt)
+- [Dasharo iPXE fork based on v1.21.1 revision 6c7068fc](https://github.com/Dasharo/ipxe/tree/6c7068fc)
+    + [License](https://github.com/Dasharo/ipxe/blob/6c7068fc/COPYING.GPLv2)
+- [vboot based on f1f70f46 revision 5c360ef4](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/5c360ef4/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/5c360ef4/LICENSE)
+- [Intel Management Engine version v15.0.47.2473](https://github.com/Dasharo/dasharo-blobs/blob/cc5549a8/novacustom/nv4x_tgl/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/cc5549a8/novacustom/nv4x_tgl/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel GOP Driver version v17.0.1087](https://github.com/Dasharo/dasharo-blobs/blob/cc5549a8/novacustom/nv4x_tgl/IntelGopDriver.efi)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package for Tiger Lake version Edge Platforms TGL-UP3/H IPU 2026.1 (8063_03) FSP](https://github.com/intel/FSP/tree/23cf2587/RaptorLakeFspBinPkg/IoT/RaptorLakeP)
+    + [License](https://github.com/intel/FSP/blob/23cf2587/FSP_License.pdf)
+- [Intel microcode version TGL-H R0 0xbe 24/07/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260227/intel-ucode/06-8c-01)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260227/license)
+- [Intel microcode version TGL-R C0 0x3e 24/07/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260227/intel-ucode/06-8c-02)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260227/license)
+
+An [integrated SBOM](https://doc.coreboot.org/sbom/sbom.html) is also
+included in the firmware images. It describes a complete set of components
+and their versions used to build the firmware images. The published SBOM
+artifact is in CycloneDX format and can be viewed by SBOM tools, for example
+[sbom-tools](https://github.com/sbom-tool/sbom-tools).
+
+[novacustom_nv4x_tgl_ec_v1.6.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_ec_v1.6.0.rom
+[novacustom_nv4x_tgl_ec_v1.6.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_ec_v1.6.0.rom.sha256
+[novacustom_nv4x_tgl_ec_v1.6.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_ec_v1.6.0.rom.sha256.sig
+[novacustom_nv4x_tgl_v1.6.0.cap_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.cap
+[novacustom_nv4x_tgl_v1.6.0.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.cap.sha256
+[novacustom_nv4x_tgl_v1.6.0.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.cap.sha256.sig
+[novacustom_nv4x_tgl_v1.6.0.rom_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.rom
+[novacustom_nv4x_tgl_v1.6.0.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.rom.sha256
+[novacustom_nv4x_tgl_v1.6.0.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.rom.sha256.sig
+[novacustom_nv4x_tgl_v1.6.0.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.sbom.json
+[novacustom_nv4x_tgl_v1.6.0.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.sbom.json.sha256
+[novacustom_nv4x_tgl_v1.6.0.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/uefi/v1.6.0/novacustom_nv4x_tgl_v1.6.0.sbom.json.sha256.sig
 
 ## v1.5.2 - 2024-01-11
 
