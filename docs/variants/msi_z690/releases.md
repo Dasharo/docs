@@ -114,19 +114,6 @@ This is an [Assured Dasharo release](../../dasharo-naming-convention.md#descript
 [sha256.sig][msi_ms7d25_v1.1.7_ddr5_dev_signed.rom_sig]{.md-button}
 (msi_ms7d25_v1.1.7_ddr5_dev_signed.rom)
 
-This is a Dasharo Pro Package release. For this platform, access to pre-built
-binaries is provided exclusively through the [Full Build for MSI PRO Z690-A
-(WIFI) and PRO Z690-A (WIFI)
-DDR4](https://shop.3mdeb.com/product/1year-desktop/), a bundled
-hardware-and-firmware product available in the 3mdeb shop. A standalone
-Dasharo Pro Package subscription is not offered for this platform.
-
-With the Full Build, you receive firmware updates for the duration of your
-subscription via the Dasharo Pro Package newsletter, and gain entry to the
-Dasharo Premier Support invite-only live chat on the Matrix network, enabling
-direct engagement with the Dasharo Team and fellow subscribers for
-personalized, priority assistance.
-
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)

@@ -114,19 +114,6 @@ This is an [Assured Dasharo release](../../dasharo-naming-convention.md#descript
 [sha256.sig][msi_ms7e06_v0.9.5_ddr5_dev_signed.rom_sig]{.md-button}
 (msi_ms7e06_v0.9.5_ddr5_dev_signed.rom)
 
-This is a Dasharo Pro Package release. For this platform, access to pre-built
-binaries is provided exclusively through the [Full Build for MSI PRO Z790-P
-(WIFI) and PRO Z790-P (WIFI)
-DDR4](https://shop.3mdeb.com/product/1year-desktop/), a bundled
-hardware-and-firmware product available in the 3mdeb shop. A standalone
-Dasharo Pro Package subscription is not offered for this platform.
-
-With the Full Build, you receive firmware updates for the duration of your
-subscription via the Dasharo Pro Package newsletter, and gain entry to the
-Dasharo Premier Support invite-only live chat on the Matrix network, enabling
-direct engagement with the Dasharo Team and fellow subscribers for
-personalized, priority assistance.
-
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](/guides/signature-verification)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7e06/dasharo-release-0.x-compatible-with-msi-ms-7e06-signing-key.asc)
