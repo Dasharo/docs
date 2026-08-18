@@ -92,6 +92,7 @@ open-source firmware distribution.
 
     - [Gigabyte MZ33-AR1](gigabyte_mz33-ar1/overview.md)
     - [ASRock Rack SPC741D8-2L2T/BCM](asrock_spc741d8/overview.md)
+    - [ASRock Rack TURIND8UD-2T/X550](asrock_turind8ud/overview.md)
 
 * Following servers are supported under **Dasharo Community Support**:
 
