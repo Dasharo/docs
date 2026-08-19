@@ -139,31 +139,19 @@ artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [asrock_turind8ud_v0.9.0.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/uefi/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256
 [asrock_turind8ud_v0.9.0.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/uefi/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256.sig
 
-#### CRA compliance
+### CRA compliance
 
 CRA compliance status generated with [sbom-tools](https://github.com/sbom-tool/sbom-tools)
-0.1.19
 
-##### Phase 1
-
-```text
-EU CRA Phase 1 (2027)
- COMPLIANT — With warnings
- Integrity ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░     3 (37.5%)
- Security  ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░     3 (37.5%)
- Doc Meta  █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (12.5%)
- License   █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (12.5%)
-```
-
-##### Phase 2
+#### Phase 2
 
 ```text
-EU CRA Phase 2 (2029)
- COMPLIANT — With warnings
- Security  ██████████████████░░░░░░░░░░░░░░░░░░░░░░     5 (45.5%)
- Integrity ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     3 (27.3%)
- Doc Meta  ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     2 (18.2%)
- License   ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (9.1%)
+EU CRA Phase 2 (2027)
+COMPLIANT — With warnings
+Security  ███████████████████████░░░░░░░░░░░░░░░░░     9 (56.2%)
+Integrity ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     3 (18.8%)
+Doc Meta  ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     3 (18.8%)
+License   ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (6.2%)
 ```
 
 ### fwupd HSI
@@ -208,11 +196,10 @@ Runtime Suffix -!
 ✘ UEFI secure boot:              Disabled
 ```
 
-### Failure reasons
+#### Failure reasons
 
 - Platform Secure Boot is currently not implemented in Dasharo firmware.
-- SPI Write Protection can be fixed by selecting SMM BIOS Write Protection in
-  the UEFI Setup Menu.
+- [SPI Write Protection can be fixed by selecting SMM BIOS Write Protection in the UEFI Setup Menu.](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - SPI Replay Protection (RPMC) is unsupported by the board's SPI BIOS chip.
 - Pre-boot DMA protection is currently not supported for AMD platforms in
   Dasharo firmware.
