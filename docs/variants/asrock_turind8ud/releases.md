@@ -138,3 +138,56 @@ artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [asrock_turind8ud_v0.9.0.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/uefi/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json
 [asrock_turind8ud_v0.9.0.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/uefi/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256
 [asrock_turind8ud_v0.9.0.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/uefi/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256.sig
+
+### fwupd HSI
+
+```text
+HSI-1
+✔ SMM locked down:               Locked
+✔ BIOS firmware updates:         Enabled
+✔ Fused platform:                Locked
+✔ Supported CPU:                 Valid
+✔ TPM empty PCRs:                Valid
+✔ TPM v2.0:                      Found
+✔ UEFI bootservice variables:    Locked
+✔ UEFI platform key:             Valid
+
+HSI-2
+✔ IOMMU:                         Enabled
+✔ Platform debugging:            Locked
+✔ TPM PCR0 reconstruction:       Valid
+✘ Platform secure boot:          Disabled
+✘ SPI write protection:          Disabled
+
+HSI-3
+✔ CET Platform:                  Supported
+✔ Suspend-to-ram:                Disabled
+✘ SPI replay protection:         Not supported
+✘ Pre-boot DMA protection:       Disabled
+✘ Suspend-to-idle:               Disabled
+
+HSI-4
+✔ Processor rollback protection: Enabled
+✔ SMAP:                          Enabled
+✘ Encrypted RAM:                 Not supported
+
+Runtime Suffix -!
+✔ fwupd plugins:                 Untainted
+✔ Linux kernel:                  Untainted
+✔ UEFI db:                       Valid
+✘ CET OS Support:                Not supported
+✘ Linux kernel lockdown:         Disabled
+✘ Linux swap:                    Unencrypted
+✘ UEFI secure boot:              Disabled
+```
+
+### Failure reasons
+
+- Platform Secure Boot is currently not implemented in Dasharo firmware.
+- SPI Write Protection can be fixed by selecting SMM BIOS Write Protection in
+  the UEFI Setup Menu.
+- SPI Replay Protection (RPMC) is unsupported by the board's SPI BIOS chip.
+- Pre-boot DMA protection is currently not supported for AMD platforms in
+  Dasharo firmware.
+- Suspend-to-idle isn't supported on server hardware.
+- Encrypted RAM is currently not supported in Dasharo firmware.
