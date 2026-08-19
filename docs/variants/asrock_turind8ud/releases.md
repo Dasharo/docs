@@ -142,6 +142,7 @@ artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 #### CRA compliance
 
 CRA compliance status generated with [sbom-tools](https://github.com/sbom-tool/sbom-tools)
+0.1.19
 
 ##### Phase 1
 
