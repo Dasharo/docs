@@ -139,6 +139,32 @@ artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [asrock_turind8ud_v0.9.0.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/uefi/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256
 [asrock_turind8ud_v0.9.0.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/uefi/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256.sig
 
+#### CRA compliance
+
+CRA compliance status generated with [sbom-tools](https://github.com/sbom-tool/sbom-tools)
+
+##### Phase 1
+
+```text
+EU CRA Phase 1 (2027)
+ COMPLIANT — With warnings
+ Integrity ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░     3 (37.5%)
+ Security  ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░     3 (37.5%)
+ Doc Meta  █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (12.5%)
+ License   █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (12.5%)
+```
+
+##### Phase 2
+
+```text
+EU CRA Phase 2 (2029)
+ COMPLIANT — With warnings
+ Security  ██████████████████░░░░░░░░░░░░░░░░░░░░░░     5 (45.5%)
+ Integrity ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     3 (27.3%)
+ Doc Meta  ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     2 (18.2%)
+ License   ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (9.1%)
+```
+
 ### fwupd HSI
 
 ```text
