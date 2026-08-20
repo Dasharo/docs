@@ -29,7 +29,7 @@ password](../dasharo-menu-docs/overview.md#user-password-management). This
 password prevents only unauthorized entrances to setup menu. It is not able to
 protect against trusting a newly attached bootloader by using the Sovereign
 Boot Provisioning Wizard capability to prompt to trust the bootloader when
-bootloader. verification fails.
+bootloader verification fails.
 
 That is why besides enabling Sovereign Boot Provisioning Wizard, one should
 also enable:
