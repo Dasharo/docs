@@ -1,0 +1,20 @@
+---
+name: docs-build-command-check
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  docs-build-command-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run build-docs command checks (non-executing)
+        run: python3 tools/check_build_docs_commands.py
