@@ -120,3 +120,66 @@ artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [asrock_turind8ud_v0.9.0.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/linuxboot/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json
 [asrock_turind8ud_v0.9.0.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/linuxboot/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256
 [asrock_turind8ud_v0.9.0.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_turind8ud/linuxboot/v0.9.0/asrock_turind8ud_v0.9.0.sbom.json.sha256.sig
+
+### CRA compliance
+
+CRA compliance status generated with [sbom-tools](https://github.com/sbom-tool/sbom-tools)
+
+#### Phase 2
+
+```text
+EU CRA Phase 2 (2027)
+NON-COMPLIANT — With errors
+Integrity                ████████████████░░░░░░░░░░░░░░░░░░░░░░░░    11 (40.7%)
+Security                 █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░     9 (33.3%)
+Doc Meta                 ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     4 (14.8%)
+Component Identification ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     2 (7.4%)
+License                  █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (3.7%)
+```
+
+### fwupd HSI
+
+```text
+HSI-1
+✔ SMM locked down:               Locked
+✔ BIOS firmware updates:         Enabled
+✔ Fused platform:                Locked
+✔ Supported CPU:                 Valid
+✔ TPM empty PCRs:                Valid
+✔ TPM v2.0:                      Found
+
+HSI-2
+✔ IOMMU:                         Enabled
+✔ Platform debugging:            Locked
+✔ TPM PCR0 reconstruction:       Valid
+✘ Platform secure boot:          Disabled
+✘ SPI write protection:          Disabled
+
+HSI-3
+✔ CET Platform:                  Supported
+✔ Suspend-to-ram:                Disabled
+✘ SPI replay protection:         Not supported
+✘ Pre-boot DMA protection:       Disabled
+✘ Suspend-to-idle:               Disabled
+
+HSI-4
+✔ Processor rollback protection: Enabled
+✔ SMAP:                          Enabled
+✘ Encrypted RAM:                 Not supported
+
+Runtime Suffix -!
+✔ fwupd plugins:                 Untainted
+✔ Linux kernel:                  Untainted
+✘ CET OS Support:                Not supported
+✘ Linux kernel lockdown:         Disabled
+✘ Linux swap:                    Unencrypted
+```
+
+#### Failure reasons
+
+- [Platform Secure Boot is currently not implemented in Dasharo firmware.](https://blog.3mdeb.com/2026/2026-07-02-msi_pro_b850p_part6/#platform-secure-boot)
+- SPI Write Protection cannot be enabled on LinuxBoot.
+- SPI Replay Protection (RPMC) is unsupported by the board's SPI BIOS chip.
+- [Pre-boot DMA protection is currently not supported for AMD platforms in Dasharo firmware.](https://github.com/Dasharo/dasharo-issues/issues/1903)
+- Suspend-to-idle isn't supported on server hardware.
+- [Encrypted RAM is currently not supported in Dasharo firmware.](https://github.com/Dasharo/dasharo-issues/issues/1920)
