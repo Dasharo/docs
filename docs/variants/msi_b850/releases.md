@@ -44,13 +44,13 @@ Test results for this release can be found
 - [AMD fTPM support in coreboot and EDK2 UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/200-tpm-support/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [SMM BIOS write protection with AMD ROM Armor 3](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
-- [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [Setup menu password configuration](https://docs.dasharo.com/dasharo-menu-docs/overview/#dasharo-menu-guides)
 - [USB stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
 - [Network stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)
 - TPM PPI support with UEFI variable backend
 - [SBOM generation for AMD PSP blobs, video and LAN drivers](https://doc.coreboot.org/sbom/sbom.html)
-- [UEFI Capsule Update v1 support](https://docs.dasharo.com/unified-test-documentation/dasharo-stability/capsule-update/)
+- [Capsule Update V1](https://docs.dasharo.com/unified-test-documentation/dasharo-stability/capsule-update/)
 - Rebased coreboot on 25.12 tag
 - Rebased iPXE on last commit of February 2026
 - [Support for firmware flashing via MSI FlashBIOS](https://docs.dasharo.com/unified/msi/recovery/#using-msi-flashbios-button)

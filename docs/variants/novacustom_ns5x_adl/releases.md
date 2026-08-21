@@ -16,7 +16,9 @@ Test results for this release can be found
 
 ### Added
 
-- [Firmware update via UEFI capsule update interface with LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [FWUPD](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [LVFS](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - [Dasharo TrustRoot (Intel Boot Guard) support](https://docs.dasharo.com/glossary/#dasharo-trustroot)
 - [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
 - [Human-readable UEFI Secure Boot key management screens](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
@@ -194,7 +196,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Firmware update mode](https://docs.dasharo.com../../guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com../../guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [Early boot DMA protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)

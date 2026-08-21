@@ -33,7 +33,7 @@ Test results for this release can be found
 - [Sleep type option](https://github.com/Dasharo/coreboot/pull/738/files)
 - [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
 - [ACPI driver](https://docs.dasharo.com/unified/novacustom/features/#acpi-driver)
-- [UEFI Capsule Update support](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - Fedora support
 - [Intel Boot Guard OEM Signing Key check in capsule update](https://docs.dasharo.com/guides/capsule-update/#troubleshooting)
 
@@ -145,7 +145,7 @@ Test results for this release can be found
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
 - [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
-- [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [Current limiting for USB-PD power supplies](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31H-usb-type-c/#utc020001-usb-type-c-pd-current-limiting-ubuntu-2204)
