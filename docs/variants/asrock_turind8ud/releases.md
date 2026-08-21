@@ -172,7 +172,7 @@ HSI-2
 ✔ Platform debugging:            Locked
 ✔ TPM PCR0 reconstruction:       Valid
 ✘ Platform secure boot:          Disabled
-✘ SPI write protection:          Disabled
+✔ SPI write protection:          Enabled
 
 HSI-3
 ✔ CET Platform:                  Supported
@@ -198,10 +198,8 @@ Runtime Suffix -!
 
 #### Failure reasons
 
-- Platform Secure Boot is currently not implemented in Dasharo firmware.
-- [SPI Write Protection can be fixed by selecting SMM BIOS Write Protection in the UEFI Setup Menu.](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [Platform Secure Boot is currently not implemented in Dasharo firmware.](https://blog.3mdeb.com/2026/2026-07-02-msi_pro_b850p_part6/#platform-secure-boot)
 - SPI Replay Protection (RPMC) is unsupported by the board's SPI BIOS chip.
-- Pre-boot DMA protection is currently not supported for AMD platforms in
-  Dasharo firmware.
+- [Pre-boot DMA protection is currently not supported for AMD platforms in Dasharo firmware.](https://github.com/Dasharo/dasharo-issues/issues/1903)
 - Suspend-to-idle isn't supported on server hardware.
-- Encrypted RAM is currently not supported in Dasharo firmware.
+- [Encrypted RAM is currently not supported in Dasharo firmware.](https://github.com/Dasharo/dasharo-issues/issues/1920)
