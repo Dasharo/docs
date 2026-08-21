@@ -27,7 +27,7 @@ Test results for this release can be found
 
 - Support for the Hardkernel ODROID H4 Ultra device
 - [Support for Net Card 2 module](https://github.com/Dasharo/dasharo-issues/issues/1281)
-- [Capsule Update integration](https://github.com/Dasharo/dasharo-issues/issues/1471)
+- [Capsule Update V1](https://github.com/Dasharo/dasharo-issues/issues/1471)
 - [In-Band ECC option](https://github.com/Dasharo/dasharo-issues/issues/1276)
 - [Quiet and fast boot option](https://github.com/Dasharo/dasharo-issues/issues/1278)
 - [ME disable option](https://github.com/Dasharo/dasharo-issues/issues/1279)

@@ -413,7 +413,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Introduce updates via UEFI capsules (from this firmware onward)](https://github.com/Dasharo/dasharo-issues/issues/423)
+- [Capsule Update V1](https://github.com/Dasharo/dasharo-issues/issues/423)
 - [Preserve user data during a capsule update](https://github.com/Dasharo/dasharo-issues/issues/809)
 - [CPU configuration menu](https://github.com/Dasharo/dasharo-issues/issues/134)
 - [Update to a much newer EDKII revision](https://github.com/Dasharo/dasharo-issues/issues/432)
@@ -613,7 +613,7 @@ Test results for this release can be found
 - [MSI ACPI device that triggers automatic driver and utility installation manager](https://www.youtube.com/watch?v=K-v-veV_jvI)
 - [Support for logo customization](https://docs.dasharo.com../../guides/logo-customization/)
 - UEFI 2.8 errata C compliance in EDKII fork
-- [Firmware Update Mode feature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
+- [Firmware Update Mode](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [This is a Dasharo Pro Package release](https://docs.dasharo.com/dev-proc/versioning/#dasharo-pro-package-releases)
 - [Use new microcode version, refer to SBOM](https://github.com/coreboot/intel-microcode/commit/390edfb411ba7de8559ad40597c7acb6c6a1ea96)
 - [Use new ME version, refer to SBOM](https://github.com/Dasharo/dasharo-blobs/tree/main/msi/ms7e06)

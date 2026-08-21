@@ -200,13 +200,13 @@ Test results for this release can be found
 ### Added
 
 - Support for NovaCustom NUC BOX (Meteor Lake)
-- [Introduce updates via UEFI capsules (from this firmware onward)](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot Verified Boot](https://docs.dasharo.com/guides/vboot-signing/)
 - [Intel ME soft disable](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20F-me-neuter/)
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
-- [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [Early Sign of Life display output](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/347-sign-of-life/)
