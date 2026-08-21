@@ -494,6 +494,7 @@ nav:
       - 'Top Swap Redundancy': guides/redundancy.md
       - 'Lab Assembly':
           - 'ASRock SPC741D8-2L2T/BCM': guides/lab-assembly/asrock_spc741d8.md
+          - 'ASRock TURIND8UD-2T/X550': guides/lab-assembly/asrock_turind8ud.md
           - 'Gigabyte MZ33-AR1': guides/lab-assembly/gigabyte_mz33_ar1.md
           - 'MSI PRO Z690-A and Z790-P': guides/lab-assembly/msi-zx90.md
           - 'MSI PRO B850': guides/lab-assembly/msi-b850.md
