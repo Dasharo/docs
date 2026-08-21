@@ -40,13 +40,11 @@ firmware version is currently installed on your device.
 
         ### Firmware Update Mode
 
-        Firmware Update Mode is available on the following versions:
-
-        | Generation |    Version    |                         Note                         |
-        | ---------- | ------------- | ---------------------------------------------------- |
-        | 11th       | > 1.5.0       |                                                      |
-        | 12th       | > 1.7.0       |                                                      |
-        | 14th       | 0.9.0 - 0.9.1 | On newer versions, please use fwupd directly instead |
+        To check which firmware versions support Firmware Update Mode, check
+        the [Firmware Update Method Support
+        Table](../../guides/firmware-update.md#firmware-update-method-support-table).
+        On 14th Gen, once your firmware supports fwupd, please use fwupd
+        directly instead of Firmware Update Mode.
 
         To update using Firmware Update Mode, follow the
         [Generic Firmware Update Documentation](../../guides/firmware-update.md#firmware-update-mode).

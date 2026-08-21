@@ -63,7 +63,18 @@ repos:
         entry: \]\(https?:\/\/(192\.168\.[0-9]+\.[0-9]+|10\.[0-9]+\.[0-9]+\.[0-9]+)[^)]*\)
         language: pygrep
         types: [text]
+      - id: check-openness-score-freshness
+        name: Check openness score comparison table freshness
+        entry: python3 scripts/check_openness_score_freshness.py
+        language: system
+        files: ^docs/variants/.*_openness_chart\.png$|^docs/variants/overview\.md$
+      - id: generate-firmware-update-support-table
+        name: Regenerate firmware update method support table
+        entry: python3 scripts/generate_firmware_update_support_table.py
+        language: system
+        files: ^docs/variants/.*/releases\.md$|^docs/guides/firmware-update-method-support-table\.csv$|^scripts/generate_firmware_update_support_table\.py$
+        pass_filenames: false
 
 ci:
-  autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
+  autoupdate_commit_msg: "pre-commit: autoupdate hooks"
   autofix_prs: false

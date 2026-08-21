@@ -20,7 +20,9 @@ Test results for this release can be found
 
 ### Added
 
-- [Firmware update via UEFI capsule update interface with LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [FWUPD](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [LVFS](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
 - [Quiet boot/Fast boot](https://docs.dasharo.com/dasharo-menu-docs/boot-maintenance-mgr/)
 - [FTDI controller support](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/docs/novacustom.md)
@@ -263,7 +265,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Firmware update mode](https://docs.dasharo.com../../guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com../../guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [Early boot DMA protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
