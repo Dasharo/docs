@@ -21,9 +21,14 @@ for the CPU, RAM, case, power supply, and so on.
 - NOUS A1T smart outlet
 - IDC to RS232 adapter
 - RS232 null modem cable
-- DuPont 2.0mm to 2.54mm pitch cables (for the host SPI flash)
-- 3x female to female wire cables
-- 2x5 1.27mm pitch IDC connector to individual 2.54mm female DuPont connector
+- SPI flash TPM adapter set, one for the motherboard `TPM_BIOS_PH_1` header and
+    one for the SPI extender HAT
+- matching IDC or FPC cable around 30 cm long (for the host SPI flash),
+    depending on adapter used in previous point
+    * FPC: pitch 1 mm, 13 conductors, same side contacts
+    * IDC: pitch: 2.54 mm, 14 conductors
+- 3x 2.54 mm female to female jumper wire cables
+- 2x5 1.27mm pitch IDC connector to individual 2.54mm female connector
     cables (for the BMC SPI flash)
 - 3D printed RTE mount (modular base with a stackable RTE base)
 - 4x M3 6mm screws with nuts (to join the 3D printed parts)
@@ -71,9 +76,10 @@ The following sections describe how to enable all of the following features:
 
 ### Serial connection
 
-- Fit the jumpers on the RTE [UART output select
+- Fit both jumpers, the TX one and the RX one, on the RTE [UART output select
     header](../../transparent-validation/rte/v1.1.0/specification.md#uart-output-select-header)
-    to select `RS232 + COM`.
+    (`J16`) to `RS232 + COM`. That routes the serial output to the DB9
+    connector.
 - Connect the IDC to RS232 adapter to the COM1 header on the motherboard.
 
     ![](images/turind8ud_serial.jpg)
@@ -125,16 +131,50 @@ automatically.**
 #### Host boot flash
 
 The host BIOS SPI flash is programmed through the on-board TPM header, which
-exposes the SPI bus. Remove the TPM module and wire the `SPI_1` header to the
-TPM header. For the pinout and detailed wiring, refer to the
-[board's recovery section (setup with RTE)](../../variants/asrock_turind8ud/recovery.md#external-flashing).
+exposes the SPI bus. An SPI flash TPM adapter PCB set carry the bus between the
+motherboard and the RTE, one on the motherboard `TPM_BIOS_PH_1` header and one
+on the SPI extender HAT, joined by a ribbon cable. Do not wire the TPM header
+with individual jumper wires - that wiring does not work reliably at the SPI
+clock used for flashing.
 
-![](images/turind8ud_tpm_flash.jpg)
+The adapters come in two variants, one with an IDC connector and one with an FPC
+connector:
+
+![](images/turind8ud_tpm_adapters.jpg)
+
+Pick one pair and use it on both ends. The rest of this guide uses the FPC cable:
+
+![](images/turind8ud_tpm_adapter_pair.jpg)
+
+The cable should be around 30 cm - longer cables may not work.
+
+Install the motherboard-side adapter before mounting the board in the case - it
+can also be done with the board already in the case, but it is harder. Install
+the PCB with the `TO MOBO` silkscreen (on the reverse side) onto the TPM header,
+aligned with the bolt hole, and make sure all pins sit tightly:
+
+![](images/turind8ud_tpm_adapter_close.jpg)
+
+The TPM module goes back on the adapter's pass-through header, so the platform
+keeps its TPM while the flash stays reachable:
+
+![](images/turind8ud_tpm_adapter_installed.jpg)
+
+The second adapter mounts on the `SPI_1` header of the SPI extender HAT:
+
+![](images/turind8ud_tpm_adapter_hat.jpg)
+
+Route the cable from the motherboard down to the HAT:
+
+![](images/turind8ud_tpm_adapter_routing.jpg)
+
+For the TPM header pinout, refer to the
+[board's recovery section (setup with RTE)](../../variants/asrock_turind8ud/recovery.md#external-flashing).
 
 #### BMC flash
 
 `BMC_PH1` is a 2x5 1.27mm pitch header. Use the 1.27mm IDC connector to
-individual 2.54mm female DuPont connector cables to wire the `SPI_2` header to
+individual 2.54mm female connector cables to wire the `SPI_2` header to
 it according to the table:
 
 | `SPI_2` | BMC_PH1 pin |
