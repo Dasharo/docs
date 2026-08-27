@@ -92,6 +92,7 @@ open-source firmware distribution.
 
     - [Gigabyte MZ33-AR1](gigabyte_mz33-ar1/overview.md)
     - [ASRock Rack SPC741D8-2L2T/BCM](asrock_spc741d8/overview.md)
+    - [ASRock Rack TURIND8UD-2T/X550](asrock_turind8ud/overview.md)
 
 * Following servers are supported under **Dasharo Community Support**:
 
@@ -144,3 +145,4 @@ Each metric is calculated using the formula:
 | Novacustom NS5xMU | novacustom_ns5x_tgl_v1.6.0.rom | NS50_70MU_1.07.14.bin | -29.8 | 43.3 | -18.6 |
 | Gigabyte MZ33-AR1 | gigabyte_mz33_ar1_v0.9.0.rom | MZ33-AR1_R21_F14/image.bin | -80.0 | 5301.8 | 227.3 |
 | MSI MS-7E56 | msi_ms7e56_v0.9.0.rom | E7E56AMSI.2A92 | -79.1 | 167010300.0 | 377.3 |
+| ASRock Rack TURIND8UD UEFI | asrock_turind8ud_v0.9.0.rom | TURIND8UD-2T-X550_10.05.ROM | -80.2 | 166073900.0 | 228.1 |
