@@ -1,0 +1,36 @@
+---
+name: docs-build-command-check
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  docs-build-command-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Collect changed files
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git diff --name-only origin/${{ github.base_ref }}...HEAD > changed_files.txt
+          else
+            git diff --name-only HEAD~1..HEAD > changed_files.txt || true
+          fi
+          tr '\n' ' ' < changed_files.txt > changed_files_space.txt
+          echo "files=$(cat changed_files_space.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Run build-docs command checks (changed files only)
+        run: |
+          python3 tools/check_build_docs_commands.py --files ${{ steps.changed.outputs.files }}
