@@ -4,7 +4,7 @@ The Device Manager is a EDKII standard submenu which collects various device
 setups like TPM, UEFI Secure Boot, TCG OPAL Drive Password, SATA Password and
 others.
 
-![](../images/menus/dev_mgr.jpeg){ class="center" }
+![](../images/menus/cfr_menu_location.png){ class="center" }
 
 ## TCG Drive Management
 

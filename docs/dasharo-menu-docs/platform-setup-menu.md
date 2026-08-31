@@ -11,40 +11,65 @@ Example view of the menu options:
 
 ![](../images/menus/platform_setup3.jpeg){ class="center" }
 
-## Overclocking menu
+The available settings vary by platform:
 
-Overclocking options may appear only on overclocking capable platforms such as
-Intel-based MSI PRO Z690-A/Z790-P boards. Enabling the overclocking causes
-more options to appear.
+=== "MSI Intel desktops"
 
-!!! Danger
+    ## Overclocking menu
 
-    **These options are EXPERIMENTAL!** Be sure to have a recovery method before
-    changing any of these options. THey may cause system instability or
-    hardware damage. Use them at your own responsibility. Warranty claims due
-    to damage caused by changing this optiosn will not be accepted and support
-    is not provided.
+    Overclocking options may appear only on overclocking capable platforms such as
+    Intel-based MSI PRO Z690-A/Z790-P boards. Enabling the overclocking causes
+    more options to appear.
 
-![](../images/menus/platform_setup_oc.jpeg){ class="center" }
+    !!! Danger
 
-Feel free to contribute documentation and tips how to modify these options or
-to explain their meaning based on your experiments.
+        **These options are EXPERIMENTAL!** Be sure to have a recovery method before
+        changing any of these options. THey may cause system instability or
+        hardware damage. Use them at your own responsibility. Warranty claims due
+        to damage caused by changing this optiosn will not be accepted and support
+        is not provided.
 
-## RAM overvolting menu
+    ![](../images/menus/platform_setup_oc.jpeg){ class="center" }
 
-RAM overvolting options are specific to DDR4 variants of Intel-based MSI PRO
-Z690-A/Z790-P boards. Changing the RAM overvolting option to manual causes
-more options to appear.
+    Feel free to contribute documentation and tips how to modify these options or
+    to explain their meaning based on your experiments.
 
-!!! Danger
+    ## RAM overvolting menu
 
-    **These options are EXPERIMENTAL!** Be sure to have a recovery method before
-    changing any of these options. THey may cause system instability or
-    hardware damage. Use them at your own responsibility. Warranty claims due
-    to damage caused by changing this optiosn will not be accepted and support
-    is not provided.
+    RAM overvolting options are specific to DDR4 variants of Intel-based MSI PRO
+    Z690-A/Z790-P boards. Changing the RAM overvolting option to manual causes
+    more options to appear.
 
-![](../images/menus/platform_setup_ramov.jpeg){ class="center" }
+    !!! Danger
 
-Feel free to contribute documentation and tips how to modify these options or
-to explain their meaning based on your experiments.
+        **These options are EXPERIMENTAL!** Be sure to have a recovery method before
+        changing any of these options. THey may cause system instability or
+        hardware damage. Use them at your own responsibility. Warranty claims due
+        to damage caused by changing this optiosn will not be accepted and support
+        is not provided.
+
+    ![](../images/menus/platform_setup_ramov.jpeg){ class="center" }
+
+    Feel free to contribute documentation and tips how to modify these options or
+    to explain their meaning based on your experiments.
+
+=== "ASRock SPC741D8"
+
+    ## IIO Bifurcation
+
+    These settings enable bifurcation (splitting) of physical PCIe links into
+    several narrower links. For example, a physical x16 slot may be bifurcated into
+    four x4 links, allowing the use of 4 PCIe devices in a single slot (an
+    appropriate riser module is required).
+
+    ![](../images/menus/cfr_bifurcation_menu.png){ class="center" }
+
+    Available values:
+
+    * x16
+    * x8x8
+    * x4x4x8
+    * x8x4x4
+    * x4x4x4x4
+
+    These settings require a reboot to take effect.
