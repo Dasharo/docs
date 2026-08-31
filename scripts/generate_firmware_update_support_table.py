@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 """
-Regenerate docs/guides/firmware-update-method-support-table.csv from the
-standardized "Added" bullets in docs/variants/*/releases.md.
+Regenerate docs/guides/firmware-update-method-support-table.csv from docs/variants/*/releases.md
 
 Each releases.md is scanned for bullets, under a "### Added" heading, whose
-link text is exactly one of these ("Firmware
-Update Mode", "Capsule Update V1", "FWUPD", "LVFS", "Capsule Update V2"). The
-lowest version a feature is found under is recorded as the version it's
-"supported starting from".
+link text is exactly one of these bullet titles: "Firmware Update Mode",
+"Capsule Update V1", "FWUPD support", "LVFS support", "Capsule Update V2".
 """
 
 import csv
@@ -20,11 +17,14 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 VARIANTS_DIR = REPO_ROOT / "docs/variants"
 CSV_PATH = REPO_ROOT / "docs/guides/firmware-update-method-support-table.csv"
 
+# Not real hardware
+EXCLUDED_VARIANTS = {"qemu_q35"}
+
 FEATURES = [
     ("Firmware Update Mode", "[Firmware Update Mode][fum]"),
     ("Capsule Update V1", "[Capsule Update V1][cup1]"),
-    ("FWUPD", "[FWUPD][fwupd]"),
-    ("LVFS", "[LVFS][lvfs]"),
+    ("FWUPD support", "[FWUPD][fwupd]"),
+    ("LVFS support", "[LVFS][lvfs]"),
     ("Capsule Update V2", "[Capsule Update V2][cup2]"),
 ]
 FEATURE_NAMES = {name for name, _ in FEATURES}
@@ -54,8 +54,9 @@ def parse_manufacturer_device(text):
 
 
 def parse_feature_versions(text):
-    """Return {feature_name: version_tuple} for the lowest version each
-    standardized feature bullet appears under in this file."""
+    """Return {feature_name: version_tuple} for the lowest version
+    each searched bullet appears under in this file.
+    """
     best = {}
     current_version = None
     in_added_section = False
@@ -92,6 +93,8 @@ def format_version(version):
 def collect_rows():
     rows = []
     for releases_md in sorted(VARIANTS_DIR.glob("*/releases.md")):
+        if releases_md.parent.name in EXCLUDED_VARIANTS:
+            continue
         text = releases_md.read_text()
         manufacturer, device = parse_manufacturer_device(text)
         if manufacturer is None:
@@ -123,7 +126,8 @@ def main():
     if new_content == old_content:
         return 0
     CSV_PATH.write_text(new_content)
-    print(f"Regenerated {CSV_PATH.relative_to(REPO_ROOT)} from releases.md changelogs.")
+    print(f"Regenerated {CSV_PATH.relative_to(
+        REPO_ROOT)} from releases.md changelogs.")
     print("Review the change and stage the file, then commit again.")
     return 1
 
