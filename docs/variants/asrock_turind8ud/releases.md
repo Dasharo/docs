@@ -60,7 +60,7 @@ Test results for this release can be found
 - [Serial port console redirection](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/31G-ec-and-superio/#sio004001-serial-port-in-firmware)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [SMM BIOS write protection with AMD ROM Armor](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
-- [Firmware update mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [Setup menu password configuration](https://docs.dasharo.com/dasharo-menu-docs/overview/#dasharo-menu-guides)
 - [USB stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
 - [Network stack disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#networking-options)

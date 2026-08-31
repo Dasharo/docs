@@ -51,6 +51,7 @@ Test results for this release can be found
 - TPM PPI support with UEFI variable backend
 - [SBOM generation for AMD PSP blobs, video and LAN drivers](https://doc.coreboot.org/sbom/sbom.html)
 - [Capsule Update V1](https://docs.dasharo.com/unified-test-documentation/dasharo-stability/capsule-update/)
+- [FWUPD support](https://docs.dasharo.com/kb/fwupd/)
 - Rebased coreboot on 25.12 tag
 - Rebased iPXE on last commit of February 2026
 - [Support for firmware flashing via MSI FlashBIOS](https://docs.dasharo.com/unified/msi/recovery/#using-msi-flashbios-button)

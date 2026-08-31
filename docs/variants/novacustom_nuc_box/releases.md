@@ -201,6 +201,8 @@ Test results for this release can be found
 
 - Support for NovaCustom NUC BOX (Meteor Lake)
 - [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [FWUPD support](https://docs.dasharo.com/kb/fwupd/)
+- [LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot Verified Boot](https://docs.dasharo.com/guides/vboot-signing/)
 - [Intel ME soft disable](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20F-me-neuter/)

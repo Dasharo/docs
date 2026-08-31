@@ -21,8 +21,8 @@ Test results for this release can be found
 ### Added
 
 - [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
-- [FWUPD](https://docs.dasharo.com/kb/capsule-updates-overview/)
-- [LVFS](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [FWUPD support](https://docs.dasharo.com/kb/fwupd/)
+- [LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
 - [Quiet boot/Fast boot](https://docs.dasharo.com/dasharo-menu-docs/boot-maintenance-mgr/)
 - [FTDI controller support](https://github.com/Dasharo/open-source-firmware-validation/blob/develop/docs/novacustom.md)
