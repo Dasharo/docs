@@ -1,14 +1,17 @@
 Manufacturer,Device,[Firmware Update Mode][fum],[Capsule Update V1][cup1],[FWUPD][fwupd],[LVFS][lvfs],[Capsule Update V2][cup2]
-Hardkernel,ODROID H4,-,v0.9.1,-,-,-
-MSI,PRO B850-P WIFI,v0.9.0,v0.9.0,-,-,-
-MSI,PRO Z690-A (WIFI) (DDR4),v1.1.2,v1.1.4,-,-,-
-MSI,PRO Z790-P (WIFI) (DDR5),v0.9.0,v0.9.2,-,-,-
+ASRock,Rack TURIND8UD-2T/X550,v0.9.0,-,-,-,-
+Dell,OptiPlex 7010/9010,v0.1.1,-,-,-,-
+Gigabyte,MZ33-AR1,v0.9.0,-,-,-,-
+Hardkernel,ODROID H4,-,v0.9.1,v0.9.1,v0.9.1,-
+MSI,PRO B850-P WIFI,v0.9.0,v0.9.0,v0.9.0,-,-
+MSI,PRO Z690-A (WIFI) (DDR4),v1.1.2,v1.1.4,v1.1.4,-,-
+MSI,PRO Z790-P (WIFI) (DDR5),v0.9.0,v0.9.2,v0.9.2,-,-
 NovaCustom,NS5x/7x 11th Gen,v1.5.1,v1.6.0,v1.6.0,v1.6.0,-
 NovaCustom,NS5x/7x 12th Gen,v1.7.1,v1.8.0,v1.8.0,v1.8.0,-
-NovaCustom,NUC BOX 14th Gen,v0.9.0,v0.9.0,-,-,-
+NovaCustom,NUC BOX 14th Gen,v0.9.0,v0.9.0,v0.9.0,v0.9.0,-
 NovaCustom,NV4x 11th Gen,v1.5.1,v1.6.0,v1.6.0,v1.6.0,-
 NovaCustom,NV4x 12th Gen,v1.7.1,v1.8.0,v1.8.0,v1.8.0,-
-NovaCustom,V540TU,v0.9.0,v1.0.0,-,-,-
-NovaCustom,V54xTNx 14th Gen,v0.9.1,v1.0.0,-,-,-
-NovaCustom,V560TU,v0.9.0,v1.0.0,-,-,-
-NovaCustom,V56xTNx 14th Gen,v0.9.1,v1.0.0,-,-,-
+NovaCustom,V540TU,v0.9.0,v1.0.0,v1.0.0,v1.0.0,-
+NovaCustom,V54xTNx 14th Gen,v0.9.1,v1.0.0,v1.0.0,v1.0.0,-
+NovaCustom,V560TU,v0.9.0,v1.0.0,v1.0.0,v1.0.0,-
+NovaCustom,V56xTNx 14th Gen,v0.9.1,v1.0.0,v1.0.0,v1.0.0,-
