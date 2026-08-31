@@ -414,6 +414,7 @@ Test results for this release can be found
 ### Added
 
 - [Capsule Update V1](https://github.com/Dasharo/dasharo-issues/issues/423)
+- [FWUPD support](https://docs.dasharo.com/kb/fwupd/)
 - [Preserve user data during a capsule update](https://github.com/Dasharo/dasharo-issues/issues/809)
 - [CPU configuration menu](https://github.com/Dasharo/dasharo-issues/issues/134)
 - [Update to a much newer EDKII revision](https://github.com/Dasharo/dasharo-issues/issues/432)

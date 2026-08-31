@@ -34,6 +34,8 @@ Test results for this release can be found
 - [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
 - [ACPI driver](https://docs.dasharo.com/unified/novacustom/features/#acpi-driver)
 - [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [FWUPD support](https://docs.dasharo.com/kb/fwupd/)
+- [LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - Fedora support
 - [Intel Boot Guard OEM Signing Key check in capsule update](https://docs.dasharo.com/guides/capsule-update/#troubleshooting)
 
