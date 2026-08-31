@@ -4,7 +4,7 @@ The Device Manager is a EDKII standard submenu which collects various device
 setups like TPM, UEFI Secure Boot, TCG OPAL Drive Password, SATA Password and
 others.
 
-![](../images/menus/dev_mgr.jpeg){ class="center" }
+![](../images/menus/cfr_menu_location.png){ class="center" }
 
 ## TCG Drive Management
 
@@ -224,3 +224,30 @@ driver used and link status. Example view with MAC address blurred:
 ![](../images/menus/net_dev_list2.jpeg){ class="center" }
 
 ![](../images/menus/net_dev_list3.jpeg){ class="center" }
+
+## Platform Setup Menu
+
+This submenu contains platform-specific settings for the given platform. They
+may differ based on which device you are using and are hardware-specific. The
+following settings may be implemented depending on platform:
+
+### IIO Bifurcation
+
+These settings enable bifurcation (splitting) of physical PCIe links into
+several narrower links. For example, a physical x16 slot may be bifurcated into
+four x4 links, allowing the use of 4 PCIe devices in a single slot (an
+appropriate riser module is required).
+
+![](../images/menus/cfr_bifurcation_menu.png){ class="center" }
+
+Available values:
+
+* x16
+* x8x8
+* x4x4x8
+* x8x4x4
+* x4x4x4x4
+
+Platforms these options are implemented on:
+
+* ASRock Rack SPC741D8-2L2T/BCM
