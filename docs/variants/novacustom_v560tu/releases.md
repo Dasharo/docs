@@ -123,7 +123,7 @@ Test results for this release can be found
 - [ACPI driver](https://docs.dasharo.com/unified/novacustom/features/#acpi-driver)
 - [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - [FWUPD support](https://docs.dasharo.com/kb/fwupd/)
-- [LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [LVFS support](https://lvfs.readthedocs.io/en/latest/intro.html)
 - Fedora support
 
 ### Changed

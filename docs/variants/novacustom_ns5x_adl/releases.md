@@ -18,7 +18,7 @@ Test results for this release can be found
 
 - [Capsule Update V1](https://docs.dasharo.com/kb/capsule-updates-overview/)
 - [FWUPD support](https://docs.dasharo.com/kb/fwupd/)
-- [LVFS support](https://docs.dasharo.com/kb/capsule-updates-overview/)
+- [LVFS support](https://lvfs.readthedocs.io/en/latest/intro.html)
 - [Dasharo TrustRoot (Intel Boot Guard) support](https://docs.dasharo.com/glossary/#dasharo-trustroot)
 - [PCR-0 reconstruction](https://github.com/Dasharo/coreboot/pull/740)
 - [Human-readable UEFI Secure Boot key management screens](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#secure-boot-configuration)
