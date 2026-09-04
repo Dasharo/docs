@@ -30,7 +30,7 @@ Test results for this release can be found
 
 ### Changed
 
-- UEFI DBX updated to 2025-10-16
+- UEFI DBX updated to 2025-09-02
 - Intel Microcode updated to microcode-20251111
 
 ### Fixed

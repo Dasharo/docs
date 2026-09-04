@@ -43,7 +43,7 @@ Test results for this release can be found
 
 - [coreboot rebased on 24.12](https://doc.coreboot.org/releases/coreboot-24.12-relnotes.html)
 - EDK II rebased on edk2-stable202502
-- UEFI DBX updated to 2025-10-16
+- UEFI DBX updated to 2025-09-02
 - Intel Microcode updated to microcode-20251111
 - Owner GUID of Secure Boot DB and KEK to Microsoft recommended values
 
