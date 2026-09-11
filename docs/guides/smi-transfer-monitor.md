@@ -31,6 +31,41 @@ STM on Linux requires two components:
     kernel modules to make it work. Do not attempt it unless you are aware of
     the risks involved with the process.
 
+## Limitations
+
+### No Intel TXT integration on Sapphire Rapids and Emerald Rapids
+
+The SINIT ACMs published for 4th and 5th Generation Intel Xeon Scalable
+processors (Sapphire Rapids and Emerald Rapids) do not implement STM support.
+Consequently, on these platforms Intel TXT and STM are not integrated:
+
+- **The STM is not measured by a dynamic launch.** The ACM neither validates
+  nor measures the contents of MSEG, so no PCR in the DRTM chain (PCR 17/18)
+  reflects which STM is present, or whether an STM is present at all.
+- **The STM cannot be constrained by a Launch Control Policy.** An LCP can
+  govern the MLE, but it has no way to require a specific STM measurement.
+- **Attestation of the MLE says nothing about SMM protection.** A verifier
+  inspecting the DRTM quote of a TXT-launched hypervisor cannot tell whether
+  SMI handlers are being interposed by an STM.
+
+Trust in the STM therefore rests on the static chain of trust rather than on
+the dynamic one: the STM image is part of the firmware image, measured into
+PCR 0 by the SRTM at boot, and protected at runtime by the platform's firmware
+protections (Intel Boot Guard, SPI flash write protection and SMM BIOS write
+protection).
+
+!!! note
+
+    This is a limitation of the Intel-signed SINIT ACM, not of Dasharo, and it
+    cannot be worked around in firmware. Lifting it requires an ACM release
+    from Intel that implements the STM checks defined by the TXT and STM
+    specifications.
+
+The limitation is confined to the measurement and launch-control side of TXT.
+It does not affect the STM's runtime function: once launched through the OS
+opt-in path, the monitor still interposes on every SMI and confines SMI
+handlers to the memory, I/O and MSR resources they have declared.
+
 ## Prerequisites
 
 - Intel x86_64 system with VT-x (VMX) support
