@@ -55,7 +55,7 @@ The available settings vary by platform:
 
 === "ASRock SPC741D8"
 
-    ## IIO Bifurcation
+    ## PCIe Bifurcation
 
     These settings enable bifurcation (splitting) of physical PCIe links into
     several narrower links. For example, a physical x16 slot may be bifurcated into
