@@ -6,3 +6,5 @@ HDA
 HAD
 hda
 had
+   Attributes: No Do + AuthRead + PlatformCreate + PolicyDelete + Writte + PolicyWrite
+   Attributes: PolicyWrite + No Do + AuthRead + PlatformCreate + PolicyDelete + WriteSTClear + Writte
