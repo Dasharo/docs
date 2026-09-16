@@ -76,9 +76,9 @@ and survive reboots:
 | `0x01c10103` | PS   | Platform Supplier policy, written by the platform manufacturer
 | `0x01c10102` | AUX  | Auxiliary index used by the ACM to store TXT state
 
-A TPM that has never been provisioned, or that has been cleared, has neither
-index defined. A measured launch on such a platform fails in the SINIT ACM with
-an LCP or TPM error (see [Reading the TXT error code](#reading-the-txt-error-code)).
+A TPM that has never been provisioned, has neither index defined. A measured
+launch on such a platform fails in the SINIT ACM with an LCP or TPM error (see
+[Reading the TXT error code](#reading-the-txt-error-code)).
 
 Provisioning is done from the running OS with `txt-prov` from the
 [Converged Security Suite][css]. Build it:
@@ -135,7 +135,7 @@ The command prompts for a password, which is mandatory and not echoed. Its
 SHA-256 hash becomes the authorization policy protecting the PS index, so
 writing or deleting that index later - with `ps-update` or `ps-delete` -
 requires the same password. Record it somewhere safe; there is no recovery
-path short of clearing the TPM.
+path, and even a TPM clear does not remove the indices.
 
 Verify the result:
 
@@ -173,12 +173,6 @@ INFO[0000]
 The PS index `AuthPolicy` above is an example: it is derived from the password
 entered during provisioning and will differ on your platform. The AUX index
 `AuthPolicy` is a fixed Intel-defined value and should match exactly.
-
-!!! warning
-
-    Clearing the TPM (from the setup menu, or with `tpm2_clear`) removes the
-    AUX index and breaks measured launch until the platform is provisioned
-    again. Do not clear the TPM without planning to re-run `txt-prov`.
 
 [css]: https://github.com/9elements/converged-security-suite
 
@@ -597,8 +591,7 @@ Two combinations carry a decodable sub-field:
 
 - **Class `0x0d` with major error `0x0a`** - the ACM hit a TPM error, and bits
   24:16 hold the TPM return code. This is the signature to look for when the
-  TPM is not [provisioned](#tpm-provisioning), has been cleared, or is
-  unresponsive.
+  TPM is not [provisioned](#tpm-provisioning) or is unresponsive.
 - **Class `0x10`** - an LCP version 2 error. Bits 21:16 hold the minor error
   code and bits 24:22 the index of the policy list element that failed. Expect
   this when the PS index holds a policy the current MLE does not satisfy.
