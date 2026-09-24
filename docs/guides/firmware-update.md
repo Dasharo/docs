@@ -16,8 +16,6 @@ flashing a firmware ROM file manually.
 - A version in a column means the method is supported starting from the given
 Dasharo version. The update to the first supported version for a given method
 needs to be performed using other methods.
-- The table might contain upcoming and not yet released versions if the feature
-is planned.
 
 {{ read_csv('./firmware-update-method-support-table.csv') }}
 
