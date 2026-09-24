@@ -10,6 +10,7 @@ exact bracketed titles:
 - `FWUPD support`
 - `LVFS support`
 - `Capsule Update V2`
+- `EC Capsule Update`
 
 Example:
 

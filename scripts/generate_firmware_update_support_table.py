@@ -26,6 +26,7 @@ FEATURES = [
     ("FWUPD support", "[FWUPD][fwupd]"),
     ("LVFS support", "[LVFS][lvfs]"),
     ("Capsule Update V2", "[Capsule Update V2][cup2]"),
+    ("EC Capsule Update", "[EC Capsule Update][ec-cup]"),
 ]
 FEATURE_NAMES = {name for name, _ in FEATURES}
 HEADER = ["Manufacturer", "Device"] + [column for _, column in FEATURES]

@@ -16,6 +16,10 @@ flashing a firmware ROM file manually.
 - A version in a column means the method is supported starting from the given
 Dasharo version. The update to the first supported version for a given method
 needs to be performed using other methods.
+- Capsules can be used to update the main system firmware and EC firmware.
+Versioning (V1/V2) applies to both. Handling of EC capsules by the main
+firmware is mutually exclusive with the system firmware auto-updating the EC
+during boot.
 
 {{ read_csv('./firmware-update-method-support-table.csv') }}
 
@@ -24,6 +28,7 @@ needs to be performed using other methods.
 [fwupd]: ../kb/fwupd.md
 [lvfs]: ../kb/fwupd.md
 [cup2]: ./capsule-update.md
+[ec-cup]: ./capsule-update.md
 
 !!! note
 
