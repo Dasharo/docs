@@ -691,15 +691,25 @@ coreboot's root directory:
 (The command assumes that signing keys from `BaseTools/Source/Python/Pkcs7Sign/`
 in EDK have been copied to `keys/`.)
 
-Add `-b` flag if the firmware targets a laptop, this will add a DXE for checking
-battery status.
+Optional parameters:
+
+- `-b`.  Adds a DXE for checking battery status.  Needed if the firmware
+  targets a laptop.
+- `-c name.cap`.  Specifies the path to the output file, so it's not created in
+  the current directory with an automatically-generated name.
+- `-e ec.rom`.  Indicates that the capsule is to contain the specified EC
+  firmware image instead of `build/coreboot.rom`.
+- `-k keys-dir`.  A shorter equivalent of `-t`/`-o`/`-s` if files are named as
+  in `keygen` (`root.pub.pem`, `sub.pub.pem`, `sign.p12`).  Can be combined with
+  `-t`/`-o`/`-s` by specifying them after `-k`.
+- `-y`.  Overwrites an existing output file without asking for confirmation.
 
 JSON file will be automatically generated based on the contents of coreboot's
 `.config` file which contains all the necessary information when the capsule
 support is enabled (and the script aborts if it's not the case).
 
-Output file name is generated based on coreboot options like
-`CONFIG_MAINBOARD_DIR` and `CONFIG_LOCALVERSION`, for example:
+Without the `-c` option, the output file name is generated based on coreboot
+options like `CONFIG_MAINBOARD_DIR` and `CONFIG_LOCALVERSION`, for example:
 
 - `emulation-qemu-q35-v0.2.0.cap`
 - `msi-ms7d25-ddr4-v1.1.9.cap`
@@ -733,9 +743,7 @@ Installing root certificate (before build):
      payloads/external/edk2/workspace/Dasharo/DasharoPayloadPkg/
 
 Signing a capsule (after build):
-  ./capsule.sh make -t my-test-keys/root.pub.pem \
-                    -o my-test-keys/sub.pub.pem \
-                    -s my-test-keys/sign.p12
+  ./capsule.sh make -k my-test-keys
 ```
 
 !!! warning
@@ -756,6 +764,21 @@ This produces `gepcap` directory with a relevant part of EDK.  The directory
 also includes a shell wrapper `GenerateCapsule` along with the test keys in
 `keys` subdirectory.
 
+### Resigning a capsule
+
+Resigning involves unpacking (decoding) a capsule and packing (encoding) it
+back using a specified set of keys.  This should generally not be applied to V1
+capsules, which are always built using test keys and verify themselves, unless
+the same test keys are used.  The command is meant for signing V2 capsules by
+the owner of the root key embedded in the firmware.
+
+```bash
+./capsule.sh resign -k keys original.cap resigned.cap
+```
+
+`-t`/`-o`/`-s` options are also supported.  `-k` is just a shorthand, as in the
+case of the `make` subcommand.
+
 ### Creating a cabinet
 
 A fwupd cabinet (`.cab`) file suitable for submission to LVFS can be created
@@ -764,6 +787,10 @@ from a capsule by running the following from coreboot's root directory:
 ```bash
 ./capsule.sh create_cabinet coreboot.cap
 ```
+
+Add `-e` flag (takes no argument) if the firmware targets EC.  This affects
+which `CONFIG_*` options are used, and how the fields of `firmware.metainfo.xml`
+inside the generated cabinet are filled.
 
 The command requires `fwupdtool` to be available in `PATH` and must be run
 from coreboot's root directory where a `.config` file is present (the same
