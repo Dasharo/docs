@@ -70,7 +70,7 @@ available as this is default way of updating or fusing your firmware.
 ??? success "Solution"
 
     * Boot DTS without Firmware Update Mode. To do that you can follow
-    [DTS documentation](../../dasharo-tools-suite/documentation/running).
+    [DTS documentation](../dasharo-tools-suite/documentation/running.md).
     * When in Firmware Update Mode make sure to use
         [dts.ipxe](https://boot.dasharo.com/dts/dts.ipxe) script when booting
         DTS. You can do that by:
@@ -81,7 +81,7 @@ available as this is default way of updating or fusing your firmware.
             ![](images/dasharo-network-boot-menu.png)
 
         * Running it manually from iPXE shell by following [Launching
-            DTS](../../dasharo-tools-suite/documentation/running/#launching-dts)
+            DTS](../dasharo-tools-suite/documentation/running.md#launching-dts)
 
 #### Failed to queue capsule update
 
