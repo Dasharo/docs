@@ -17,6 +17,13 @@ for distributing and managing the firmware binaries to the users.
      ["Supported devices" section](../guides/capsule-update.md#supported-devices)
      there.
 
+     At the moment, there are two kinds of capsules, each targeting different
+     components of a system: the main system firmware and EC firmware. The
+     components show up as separate devices in `fwupd`, but look and function
+     very similarly. These instructions demonstrate working with the main
+     firmware but are applicable to capsules of any kind unless the difference
+     in behaviour is called out explicitly.
+
 ## Firmware Update Prerequisites
 
 ### Intel ME
