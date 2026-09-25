@@ -150,7 +150,7 @@ keys (relative paths assume build of Dasharo coreboot):
 {
   "EmbeddedDrivers": [
     {
-      "Driver": "../Build/DasharoPayloadPkgX64/RELEASE_COREBOOT/X64/FmpDxe.efi"
+      "Driver": "../Build/DasharoPayloadPkgX64/RELEASE_COREBOOT/X64/FmpDevicePkg/FmpDxe/00112233-4455-6677-8899-aabbccddeeff/OUTPUT/FmpDxe.efi"
     }
   ],
   "Payloads": [
