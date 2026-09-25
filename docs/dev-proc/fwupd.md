@@ -57,4 +57,7 @@ Press `y` to restart and check if the update proceeds without errors.
 ## Uploading to LVFS
 
 Follow [upstream fwupd documentation](https://lvfs.readthedocs.io/en/latest/upload.html)
-for a detailed guide for uploading cabinets to LVFS.
+for a detailed guide for uploading cabinets to LVFS manually.
+
+Alternatively, use `./capsule.sh upload_lvfs`, which is covered in
+[Capsule Update Details](../kb/edk2-capsule-updates.md#uploading-to-lvfs).
