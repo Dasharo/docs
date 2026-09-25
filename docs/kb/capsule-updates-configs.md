@@ -11,11 +11,17 @@ The coreboot configuration file can be found in the coreboot repository
 in the `configs/` directory under the name of
 `config.<coreboot_mainboard_vendor>_<coreboot_mainboard_model>`.
 
-The options that must be set are:
+The options that must be set for the main system firmware are:
 
 - [`CONFIG_DRIVERS_EFI_MAIN_FW_GUID`](#config_drivers_efi_main_fw_guid)
 - [`CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`](#config_drivers_efi_main_fw_version)
 - [`CONFIG_DRIVERS_EFI_MAIN_FW_LSV`](#config_drivers_efi_main_fw_lsv)
+
+The following options can be added to enable capsule updates of EC:
+
+- [`CONFIG_DRIVERS_EFI_EC_FW_GUID`](#config_drivers_efi_ec_fw_guid)
+- [`CONFIG_DRIVERS_EFI_EC_FW_SIZE`](#config_drivers_efi_ec_fw_size)
+- [`CONFIG_DRIVERS_EFI_EC_FW_LSV`](#config_drivers_efi_ec_fw_lsv) (optional)
 
 The following settings may not be set (read their description to know under
 which conditions):
@@ -78,6 +84,26 @@ takes the same format as `CONFIG_DRIVERS_EFI_MAIN_FW_VERSION`.
 Examples:
 
 - Forbid changing the version to anything below release v0.1.0 - `CONFIG_DRIVERS_EFI_MAIN_FW_LSV="0x00010080"`
+
+### CONFIG_DRIVERS_EFI_EC_FW_GUID
+
+A direct analogue of
+[`CONFIG_DRIVERS_EFI_MAIN_FW_GUID`](#config_drivers_efi_main_fw_guid) for EC
+firmware. GUID values must be unique across firmware types, so this can't match
+a value used for the system firmware.
+
+### CONFIG_DRIVERS_EFI_EC_FW_SIZE
+
+This specifies the size of an EC firmware image in bytes. coreboot exposes this
+information in CBMEM for EDK2 to consume and validate that the capsule's payload
+is of a suitable size.
+
+### CONFIG_DRIVERS_EFI_EC_FW_LSV
+
+A direct analogue of
+[`CONFIG_DRIVERS_EFI_MAIN_FW_LSV`](#config_drivers_efi_main_fw_lsv) for EC
+firmware. Defaults to `0` and can remain unset unless there is a reason to
+disallow older EC firmware versions.
 
 ### CONFIG_EDK2_CAPSULES_V2
 
