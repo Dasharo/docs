@@ -33,12 +33,22 @@ Overwrite already existing 'novacustom-mtl-h-v1.0.0-rc2.cap'? [y/N] y
 Created the capsule at 'novacustom-mtl-h-v1.0.0-rc2.cap'
 ```
 
+`-b` adds a DXE that checks for AC power on laptops. Add `-y` flag to overwrite
+the output file without a prompt. Add `-e ec.rom` to build an EC capsule. See
+[here](../kb/edk2-capsule-updates.md#building-a-capsule_1) for full usage
+documentation.
+
 Now prepare the cabinet:
 
 ```bash
 ./capsule.sh create_cabinet novacustom-mtl-h-v1.0.0-rc2.cap
 File novacustom-mtl-h-v1.0.0-rc2.cap.cab created
 ```
+
+Add `-e` flag (no argument in this case) for EC capsules. It affects which
+options from `.config` are used, and a few other values in the XML metadata
+file. See [here](../kb/edk2-capsule-updates.md#creating-a-cabinet) for full
+usage documentation.
 
 ## Local testing
 
