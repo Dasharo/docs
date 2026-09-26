@@ -10,9 +10,11 @@
 | Corsair | CMK32GX4M2E3200C16 | 16384 MB | 2133 MT/s (PC4-17000) | -/-/&#10004 | v1.1.0 | Dasharo HCL report |
 | Corsair | CMK32GX4M2E3200C16 | 16384 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
 | Corsair | CMK64GX4M2E3200C16 | 32768 MB | 2133 MT/s (PC4-17000) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+| Crucial | BLS16G4D32AESB.M16FE | 16 GB | 2400 MT/s | -/&#10004/- | v1.1.6 | Dasharo HCL report |
 | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
 | Crucial Technology | BL16G32C16U4B.16FE | 16384 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
 | Crucial Technology | BLS16G4D32AESB.M16FE | 16384 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.1.1 | Dasharo HCL report |
+| Crucial Technology | BLS16G4D32AESB.M16FE | 16384 MB | 2400 MT/s (PC4-19200) | &#10004/-/- | v1.1.6 | Dasharo HCL report |
 | Crucial Technology | CT8G4DFS8266.C8FJ | 8192 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.0 | Dasharo HCL report |
 | Essencore Limited (former ISD Technology Limited) | KD4AGU880-36A180X | 16384 MB | 2666 MT/s (PC4-21300) | -/-/&#10004 | v1.1.1 | Dasharo HCL report |
 | G Skill Intl | F4-3600C18-32GVK | 32768 MB | 2666 MT/s (PC4-21300) | &#10004/-/- | v1.1.2 | Dasharo HCL report |
