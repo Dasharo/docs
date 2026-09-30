@@ -36,7 +36,7 @@ Created the capsule at 'novacustom-mtl-h-v1.0.0-rc2.cap'
 Now prepare the cabinet:
 
 ```bash
-./capsule_cabinet.sh novacustom-mtl-h-v1.0.0-rc2.cap
+./capsule.sh create_cabinet novacustom-mtl-h-v1.0.0-rc2.cap
 File novacustom-mtl-h-v1.0.0-rc2.cap.cab created
 ```
 
