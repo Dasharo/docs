@@ -30,8 +30,8 @@ coreboot port on the NovaCustom NS51/NS70 laptops.
 | --- | --------------------------------------------------- |
 | 1.  | DC-In Jack                                          |
 | 2.  | HDMI-Out Port                                       |
-| 3.  | USB 3.2 Gen 2 Type-A Port                           |
-| 4.  | USB 3.2 Gen 2 Type-A Port with [Always On USB][aou] |
+| 3.  | USB 3.2 Gen 2 Type-A Port with [Always On USB][aou] |
+| 4.  | USB 3.2 Gen 2 Type-C Port                           |
 | 5.  | Thunderbolt 4 Port with Power Delivery (DC-IN)      |
 | 6.  | Speaker                                             |
 
