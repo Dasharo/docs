@@ -1,0 +1,43 @@
+@startuml
+skinparam dpi 200
+skinparam backgroundColor #F4F4F4
+<style>
+sequenceDiagram {
+    participant {
+        Margin 0 25 0 25
+    }
+}
+</style>
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam titleBorderColor #3DD63D
+skinparam titleBorderThickness 1
+skinparam titleFontStyle bold
+skinparam sequence {
+    ArrowColor #333333
+    LifeLineBorderColor #333333
+    ActorBorderColor #3DD63D
+    ActorBackgroundColor #F4F4F4
+    ParticipantBorderColor #3DD63D
+    ParticipantBorderThickness 2
+    ParticipantBackgroundColor #F4F4F4
+    ParticipantFontStyle bold
+    ParticipantFontSize 16
+}
+
+title CMOS Reset
+
+actor User
+participant "CMOS Battery" as cmos
+participant "Firmware" as fw
+participant "Variable Store" as vars
+
+User -> cmos : Remove
+fw -> cmos : Read state
+cmos -> fw : Return clear state
+fw -> vars : Read setup password\nand Secure Boot keys
+vars -> fw : Return preserved data
+fw -> fw : Copy to temporary buffer
+fw -> vars : Erase settings
+fw -> vars : Restore setup password\nand Secure Boot keys
+@enduml
