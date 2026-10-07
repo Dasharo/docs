@@ -91,33 +91,10 @@ the CPU(might be hidden under the blue frame) aligned to the top left corner of 
     Install memory according
     to the table. For example, if installing 1 stick place it in slot A1, if installing 4 sticks - in slots C1, A1, G1, I1.
 
-    |                    | DIMM Number   |    |    |    |    |    |    |    |    |    |
-    | ------------------ | ------------- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-    | DIMM SLOT          | 1             | 2  | 4  | 6  | 8  | 10 | 12 | 16 | 20 | 24 |
-    | F1                 |               |    |    |    |    |    | V  |    |    | V  |
-    | F0                 |               |    |    |    |    |    |    |    |    | V  |
-    | E1                 |               |    |    |    | V  | V  | V  | V  | V  | V  |
-    | E0                 |               |    |    |    |    |    |    | V  | V  | V  |
-    | D1                 |               |    |    |    |    | V  | V  |    | V  | V  |
-    | D0                 |               |    |    |    |    |    |    |    | V  | V  |
-    | C1                 |               |    | V  | V  | V  | V  | V  | V  | V  | V  |
-    | C0                 |               |    |    |    | V  |    |    | V  | V  | V  |
-    | B1                 |               |    |    | V  | V  | V  | V  | V  | V  | V  |
-    | B0                 |               |    |    |    |    |    |    | V  | V  | V  |
-    | A1                 | V             | V  | V  | V  | V  | V  | V  | V  | V  | V  |
-    | A0                 |               |    |    |    | V  |    |    | V  | V  | V  |
-    | G0                 |               |    |    |    | V  |    |    | V  | V  | V  |
-    | G1                 |               | V  | V  | V  | V  | V  | V  | V  | V  | V  |
-    | H0                 |               |    |    |    |    |    |    | V  | V  | V  |
-    | H1                 |               |    |    | V  | V  | V  | V  | V  | V  | V  |
-    | I0                 |               |    |    |    | V  |    |    | V  | V  | V  |
-    | I1                 |               |    | V  | V  | V  | V  | V  | V  | V  | V  |
-    | J0                 |               |    |    |    |    |    |    |    | V  | V  |
-    | J1                 |               |    |    |    |    | V  | V  |    | V  | V  |
-    | K0                 |               |    |    |    |    |    |    | V  | V  | V  |
-    | K1                 |               |    |    |    | V  | V  | V  | V  | V  | V  |
-    | L0                 |               |    |    |    |    |    |    |    |    | V  |
-    | L1                 |               |    |    |    |    |    | V  |    |    | V  |
+    
+    ![DRAM DIMM Table](images/dimm_table.png)
+    
+
     
     ![Installed RAM](images/cpu_installation11.jpg)
     
@@ -154,7 +131,7 @@ the CPU(might be hidden under the blue frame) aligned to the top left corner of 
 
     ![M2 noheatsink](images/m2_installation4.jpg)
 
-1. (Optional)Install the TPM module in the slot marked "SPI_TPM"
+1. (Optional)Install the TPM module in the slot marked "SPI_TPM". Pay attention to the no-pin placement.
 
     ![TPM installation](images/spi_ctm012_installation.jpg)
 
@@ -308,31 +285,9 @@ The BMC ip is shown when booting or in BIOS under "Server Management -> BMC Netw
     - RTE/SPI: .rom
     
 1. Download the chosen file and its respective sha256 signature file(.sha256).
-1. Verify the downloaded file's signature. Follow the steps from below example with .rom files.
-    - In the terminal, go to the directory where the files have been downloaded.
-    - Execute the following command to verify whether the checksums match.
 
-        **Command:**
+1. Verify the downloaded file's signature, refer to [Signature verification](../../guides/signature-verification/).
 
-        ```bash
-         sha256sum gigabyte_mz33_ar1_*.rom && cat gigabyte_mz33_ar1_*.rom.sha256
-        ```
-
-        The output of the command shall be as follows.
-
-        **Example log:**
-
-        ```log
-        λ sha256sum gigabyte_mz33_ar1_v0.9.0.rom && cat gigabyte_mz33_ar1_v0.9.0.rom.sha256
-        536e9a4aba1f6d24e30c306be82b97ca1545e38cdbe610f6323b5ce8d5361c90  gigabyte_mz33_ar1_v0.9.0.rom
-        536e9a4aba1f6d24e30c306be82b97ca1545e38cdbe610f6323b5ce8d5361c90  gigabyte_mz33_ar1_v0.9.0.rom
-        ```
-
-        _Note: The checksums shown in the example above are just an example._
-
-        The command will print out the checksum calculated locally and the master
-        checksum afterwards. If the checksums match, one can proceed.
-    
 ### Flashing and verification
 
 #### BMC
@@ -363,16 +318,6 @@ The BMC ip is shown when booting or in BIOS under "Server Management -> BMC Netw
     The picture above showcases the DTS menu. The firmware information and
     version shall be listed as in the image above. Note that the version shown
     in the picture is just an example.
-
-1. Stick the holographic sticker on top of the socket. After the platform has
-    been verified to be working and proper firmware has been installed, the
-    socket needs to be sealed.
-
-    Remove the leftovers from the original paper sticker with isopropyl alcohol
-    and Q-tips (cotton buds). When the surface is dry, stick the new 3mdeb
-    holographic sticker parallel to the bottom edge of the motherboard.
-    Make sure the text orientation matches the text on the silkscreen (it's a
-    nice quality touch).
 
 When all steps were performed, the platform is ready to be backed up and
 shipped.
