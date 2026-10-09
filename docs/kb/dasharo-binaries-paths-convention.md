@@ -2,6 +2,7 @@
 
 Dasharo firmware binaries are available to download on [dl.3mdeb.com][dl.3mdeb.com]
 and [dlui.dasharo.com][dlui.dasharo.com]. These sources are being managed
+
 - manually
 - using semi-manual automation
 - fully automated CI
@@ -84,7 +85,7 @@ migrated and no legacy release is copied into the new tree.
 
 ### Motivation
 
-#### <framework>[_payload]
+#### \<framework>[_payload]
 
 Historically, the firmware framework and payload were generally not present in
 the paths, which looked like `/<platform_family>/<version>/`.
@@ -99,7 +100,7 @@ framework/payload combination to reduce the ambiguity. The two fields form one
 path element, so every binary sits at the same depth whether or not it has a
 payload.
 
-#### <vendor>/<model>
+#### \<vendor>/\<model>
 
 The idea to separate the `<platform_family>` into the vendor and specific models
 has a couple reasons behind it:
