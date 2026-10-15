@@ -1,0 +1,20 @@
+---
+name: Reject new tests
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  fail_on_test:
+    runs-on: ubuntu-latest
+    name: Reject new tests
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: .github/scripts/notests.sh
