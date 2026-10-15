@@ -19,7 +19,7 @@ Motherboards with Dasharo preinstalled can be purchased
 Full server builds can be purchased
 [here](https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/).
 
-## v0.9.1 - 2026-10-14
+## v0.9.1 - 2026-10-15
 
 Test results for this release can be found
 [here](https://github.com/Dasharo/osfv-results/blob/main/boards/ASRock/SPC741D8-2L2T-BCM/).
@@ -37,6 +37,7 @@ Test results for this release can be found
 - [DCU custom boot logo is not displayed](https://github.com/Dasharo/dasharo-issues/issues/1629)
 - [TPM PPI does not work](https://github.com/Dasharo/dasharo-issues/issues/1602)
 - [Long boot time](https://github.com/Dasharo/dasharo-issues/issues/1585)
+- [SecureBoot can't boot file signed with custom PK](https://github.com/Dasharo/dasharo-issues/issues/1610)
 
 ### Known issues
 
@@ -84,7 +85,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/refs/head
 
 ### SBOM (Software Bill of Materials)
 
-- [Dasharo coreboot fork based on 25.12 revision 62592a4f](https://github.com/Dasharo/coreboot/tree/62592a4f)
+- [Dasharo coreboot fork based on 25.12 revision 1de5aa93](https://github.com/Dasharo/coreboot/tree/1de5aa93)
 - [Dasharo EDKII fork based on edk2-stable202502 revision bdb92c0e](https://github.com/Dasharo/edk2/tree/bdb92c0e)
 - [Dasharo iPXE fork based on 2025.03 revision ad8cbcee](https://github.com/Dasharo/ipxe/tree/ad8cbcee)
     + [License](https://github.com/Dasharo/ipxe/blob/ad8cbcee/COPYING.GPLv2)
@@ -94,10 +95,10 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/refs/head
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
 - [Intel Flash Descriptor version v1.0](https://github.com/Dasharo/dasharo-blobs/blob/69f6817e/asrock/spc741d8/descriptor.bin)
     + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
-- [Intel microcode version SPR-HBM 0x2c000435 02/03/2026](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-8f-08)
-    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
-- [Intel microcode version SPR-SP 0x210002f4 02/03/2026](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20250812/intel-ucode/06-cf-02)
-    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20250812/license)
+- [Intel microcode version SPR-HBM 0x2c000435 02/03/2026](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260812/intel-ucode/06-8f-08)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260812/license)
+- [Intel microcode version EMR-SP 0x210002f4 02/03/2026](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260812/intel-ucode/06-cf-02)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260812/license)
 
 An [integrated SBOM](https://doc.coreboot.org/sbom/sbom.html) is also
 included in the firmware images. It describes a complete set of components

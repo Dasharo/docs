@@ -15,10 +15,10 @@ Closed-source code percentage: **96.9%**
 * Image size: 67108864 (0x4000000)
 * Number of regions: 12
 * Number of CBFSes: 2
-* Total open-source code size: 1771072 (0x1b0640)
+* Total open-source code size: 1775469 (0x1b176d)
 * Total closed-source code size: 55716848 (0x3522bf0)
-* Total data size: 513820 (0x7d71c)
-* Total empty size: 9107124 (0x8af6b4)
+* Total data size: 513903 (0x7d76f)
+* Total empty size: 9102644 (0x8ae534)
 
 ![](asrock_spc741d8_v0.9.1.rom_openness_chart.png)
 
@@ -61,10 +61,10 @@ Closed-source code percentage: **96.9%**
 
 * CBFS size: 15235072
 * Number of files: 23
-* Open-source files size: 1771072 (0x1b0640)
+* Open-source files size: 1775469 (0x1b176d)
 * Closed-source files size: 5389296 (0x523bf0)
-* Data size: 16128 (0x3f00)
-* Empty size: 8058576 (0x7af6d0)
+* Data size: 16211 (0x3f53)
+* Empty size: 8054096 (0x7ae550)
 
 > Numbers given above are already normalized (i.e. they already include size
 > of metadata and possible closed-source LAN drivers included in the payload
@@ -72,13 +72,13 @@ Closed-source code percentage: **96.9%**
 
 | CBFS filename | CBFS filetype | Size | Compression | Category |
 | ------------- | ------------- | ---- | ----------- | -------- |
-| fallback/payload | simple elf | 1366368 | none | open-source |
+| fallback/payload | simple elf | 1366661 | none | open-source |
 | fallback/romstage | stage | 69120 | none | open-source |
-| fallback/ramstage | stage | 159763 | LZMA | open-source |
+| fallback/ramstage | stage | 159773 | LZMA | open-source |
 | fallback/dsdt.aml | raw | 11301 | none | open-source |
 | fallback/postcar | stage | 48444 | none | open-source |
-| stm.bin | raw | 66924 | LZMA | open-source |
-| bootblock | bootblock | 49152 | none | open-source |
+| stm.bin | raw | 66922 | LZMA | open-source |
+| bootblock | bootblock | 53248 | none | open-source |
 | cpu_microcode_blob.bin | microcode | 1796096 | none | closed-source |
 | fspm.bin | fsp | 3375104 | none | closed-source |
 | fsps.bin | fsp | 185328 | LZ4 | closed-source |
@@ -87,14 +87,15 @@ Closed-source code percentage: **96.9%**
 | intel_fit | intel_fit | 272 | none | data |
 | boot_policy_manifest.bin | raw | 1536 | none | data |
 | key_manifest.bin | raw | 1024 | none | data |
-| config | raw | 5014 | LZMA | data |
+| config | raw | 5078 | LZMA | data |
 | revision | raw | 908 | none | data |
 | build_info | raw | 107 | none | data |
 | sbom | raw | 4939 | none | data |
-| (empty) | null | 266276 | none | empty |
+| (empty) | null | 265892 | none | empty |
 | (empty) | null | 932 | none | empty |
 | (empty) | null | 7742308 | none | empty |
-| (empty) | null | 49060 | none | empty |
+| (empty) | null | 44964 | none | empty |
+(empty) | null | 49060 | none | empty |
 
 ## v0.9.0
 
