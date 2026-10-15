@@ -58,7 +58,16 @@ to explain their meaning based on your experiments.
 
 ## PCIe Bifurcation
 
-**Available on:** ASRock SPC741D8
+**Available on:** ASRock SPC741D8, Protectli V2210
+
+!!! info
+    On Protectli V2210, setting the bifurcation requires modifying the PCIe
+    link assignment bits in the Intel Flash Descriptor at runtime. Due to this
+    the Flash Descriptor cannot be locked, so fwupd HSI level HSI-1 is unachievable.
+
+    Boot Guard provisioning also locks down the Flash Descriptor by default,
+    therefore the option is not compatible with potential enablement of
+    Intel Boot Guard in its current form.
 
 These settings enable bifurcation (splitting) of physical PCIe links into
 several narrower links. For example, a physical x16 slot may be bifurcated into
@@ -67,7 +76,7 @@ appropriate riser module is required).
 
 ![](../images/menus/cfr_bifurcation_menu.png){ class="center" }
 
-Available values:
+Available values (ASRock SPC741D8):
 
 * x16
 * x8x8
@@ -75,4 +84,16 @@ Available values:
 * x8x4x4
 * x4x4x4x4
 
+Available values (Protectli V2210):
+
+* 1x4 (1 link of width x4)
+* 2x2 (2 links of width x2)
+* 4x1 (4 links of width x1)
+
 These settings require a reboot to take effect.
+
+!!! note
+    On Protectli V2210 these settings are currently available at
+    `Dasharo System Settings` -> `PCI/PCIe Configuration`
+
+    ![](../images/menus/vfr_bifurcation_menu.jpeg){ class="center" }
