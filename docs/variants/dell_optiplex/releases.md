@@ -29,7 +29,8 @@ Test results for this release can be found
     This release is compatible with both the **Dell OptiPlex 7010 and 9010**,
     SFF variants as they are essentially identical.
     However, we have only tested it on a 7010 SFF and cannot guarantee full
-    functionality on a 9010 SFF. It is recommended to test the release on the
+    functionality on a 7010/9010 SFF shared baseline. It is recommended to test the
+    release on the
     9010 and [report any issues](https://github.com/Dasharo/dasharo-issues/issues).
     On MT and DT variants limited functionality of PCI/PCIe and SATA ports can be
     observed. See [this issue](https://github.com/Dasharo/dasharo-issues/issues/1182).
