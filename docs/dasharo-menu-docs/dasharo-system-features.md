@@ -198,6 +198,20 @@ Flow chart for the two settings mentioned above:
       depends on your specific device, for a detailed specification, check your
       mainboard's Hardware Configuration Matrix in the appropriate model
       documentation in the [Supported Hardware section](../variants/overview.md).
+- `Integrated GPU Render Standby` - controls Render Standby (RC6), the deepest
+  idle power state of the iGPU. When the GPU has nothing to render,
+  the graphics driver powers down its render engine and wakes it up as soon as
+  new work arrives, which lowers power consumption. On Meteor Lake (MTL) models,
+  waking up from RC6 can occasionally hang the GPU. There is no driver fix for
+  this yet, so the firmware lets you turn Render Standby off. Defaults to
+  disabled.
+    + **Disabled** (default) - the render engine stays powered while the GPU is
+      idle. This avoids the hangs at the cost of somewhat higher power
+      consumption.
+    + **Enabled** - the GPU can enter RC6. Idle power consumption is lower and
+      battery life is longer.
+
+![](../images/menus/dasharo_render_standby.png){ class="center" }
 
 ## PCI/PCIe Configuration
 

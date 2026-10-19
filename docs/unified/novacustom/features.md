@@ -165,6 +165,27 @@ laptops.
 	- Delivers the highest performance.
 	- Increased power consumption.
 
+	## Integrated GPU Render Standby
+
+	Render Standby (RC6) is the deepest idle power state of the iGPU.
+	When the GPU has nothing to render, the graphics driver powers down its
+	render engine and wakes it up as soon as new work arrives, which lowers power
+	consumption.
+
+	On Meteor Lake (MTL) models, waking up from RC6 can occasionally hang the GPU.
+	There is no driver fix for this yet, so the firmware lets you turn Render
+	Standby off.
+
+	The option is located in `Dasharo System Features > Power Management Options > Integrated GPU Render Standby` and is disabled by default:
+
+	- **Disabled** (default) - the render engine stays powered while the GPU is
+	  idle. This avoids the hangs at the cost of somewhat higher power
+	  consumption.
+	- **Enabled** - the GPU can enter RC6. Idle power consumption is lower and
+	  battery life is longer.
+
+	![](../../images/menus/dasharo_render_standby.png){ class="center" }
+
 	## Dasharo TrustRoot
 
 	Users willing to achieve highest level of security hardening can take
