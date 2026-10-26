@@ -154,3 +154,141 @@ issue from which the report is sourced.
     > network is connected and Windows Update is enabled. On Linux, consult your
     > distribution's documentation on DisplayLink compatibility. Preboot video
     > output is not supported.
+
+<!-- dts-hw-conf-gen: begin of generated HCL tables, see data/hcl-tables.tsv -->
+=== "CPU HCL (30 Oct 2026)"
+
+    CPU Hardware Compatibility List presents the CPUs reported to work with
+    Dasharo.
+
+    Legend:
+
+    * CPU Model: CPU model name.
+    * Dasharo version: Dasharo version on which the report was created.
+        - `-` if version was not reported
+        - the firmware flavor is given in parentheses, unless it is
+          coreboot+UEFI, e.g. `v0.9.0 (coreboot+heads)`
+    * Source:
+        - `Dasharo HCL Report` if it was reported using
+          [DTS](../../dasharo-tools-suite/documentation/features.md#hcl-report).
+        - Link to the report if it comes from a public hardware database.
+
+    === "V54 14th Gen"
+        {%
+            include-markdown "../../resources/hcl/cpu/novacustom-v54-mtl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "V56 14th Gen"
+        {%
+            include-markdown "../../resources/hcl/cpu/novacustom-v56-mtl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NV4x 12th Gen"
+        {%
+            include-markdown "../../resources/hcl/cpu/novacustom-nv4x-adl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NS5x/7x 12th Gen"
+        {%
+            include-markdown "../../resources/hcl/cpu/novacustom-ns5x-adl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NV4x 11th Gen"
+        {%
+            include-markdown "../../resources/hcl/cpu/novacustom-nv4x-tgl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NS5x/7x 11th Gen"
+        {%
+            include-markdown "../../resources/hcl/cpu/novacustom-ns5x-tgl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NUC BOX 14th Gen"
+        {%
+            include-markdown "../../resources/hcl/cpu/novacustom-nuc-box.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+=== "Memory HCL (30 Oct 2026)"
+
+    Memory Hardware Compatibility List presents the memory modules reported to
+    work with Dasharo.
+
+    Legend:
+
+    * Manufacturer, Part Number, Size, Speed: as read from the module SPD
+      (`decode-dimms`) or, when unavailable, from the SMBIOS tables.
+    * Configuration 1/2/4: &#10004; marks whether the report was created with
+      1, 2 or 4 modules installed.
+    * Dasharo version: Dasharo version on which the report was created.
+        - `-` if version was not reported
+        - the firmware flavor is given in parentheses, unless it is
+          coreboot+UEFI, e.g. `v0.9.0 (coreboot+heads)`
+    * Source:
+        - `Dasharo HCL report` if it was reported using
+          [DTS](../../dasharo-tools-suite/documentation/features.md#hcl-report).
+        - Link to the report if it comes from a public hardware database.
+
+    === "V54 14th Gen"
+        {%
+            include-markdown "../../resources/hcl/memory/novacustom-v54-mtl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "V56 14th Gen"
+        {%
+            include-markdown "../../resources/hcl/memory/novacustom-v56-mtl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NV4x 12th Gen"
+        {%
+            include-markdown "../../resources/hcl/memory/novacustom-nv4x-adl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NS5x/7x 12th Gen"
+        {%
+            include-markdown "../../resources/hcl/memory/novacustom-ns5x-adl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NV4x 11th Gen"
+        {%
+            include-markdown "../../resources/hcl/memory/novacustom-nv4x-tgl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NS5x/7x 11th Gen"
+        {%
+            include-markdown "../../resources/hcl/memory/novacustom-ns5x-tgl.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+    === "NUC BOX 14th Gen"
+        {%
+            include-markdown "../../resources/hcl/memory/novacustom-nuc-box.md"
+            start="<!--start-->"
+            end="<!--end-->"
+        %}
+
+<!-- dts-hw-conf-gen: end of generated HCL tables -->

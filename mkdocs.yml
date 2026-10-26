@@ -238,6 +238,7 @@ nav:
           - 'Hardware Configuration Matrix': variants/asrock_spc741d8/hardware-matrix.md
           - 'Test matrix': variants/asrock_spc741d8/test-matrix.md
           - 'Openness Score': variants/asrock_spc741d8/openness_score.md
+          - 'Hardware Compatibility List': variants/asrock_spc741d8/hcl.md
       - 'ASRock Rack TURIND8UD-2T/X550':
           - 'Overview': variants/asrock_turind8ud/overview.md
           - 'Releases': variants/asrock_turind8ud/releases.md
@@ -249,6 +250,7 @@ nav:
           - 'Hardware Configuration Matrix': variants/asrock_turind8ud/hardware-matrix.md
           - 'Test matrix': variants/asrock_turind8ud/test-matrix.md
           - 'Openness Score': variants/asrock_turind8ud/openness-score.md
+          - 'Hardware Compatibility List': variants/asrock_turind8ud/hcl.md
       - 'Asus KGPE-D16':
           - 'Overview': variants/asus_kgpe_d16/overview.md
           - 'Releases': variants/asus_kgpe_d16/releases.md
@@ -262,6 +264,7 @@ nav:
           - 'Hardware setup': variants/asus_kgpe_d16/setup.md
           - 'SPI write protection': variants/asus_kgpe_d16/spi-wp.md
           - 'TPM measured boot': variants/asus_kgpe_d16/tpm-mboot.md
+          - 'Hardware Compatibility List': variants/asus_kgpe_d16/hcl.md
       - 'Dell OptiPlex':
           - 'Overview': variants/dell_optiplex/overview.md
           - 'Releases': variants/dell_optiplex/releases.md
@@ -273,6 +276,7 @@ nav:
           - 'Recovery': variants/dell_optiplex/recovery.md
           - 'Openness score': variants/dell_optiplex/openness-score.md
           - 'FAQ': variants/dell_optiplex/faq.md
+          - 'Hardware Compatibility List': variants/dell_optiplex/hcl.md
       - 'Gigabyte MZ33-AR1':
           - 'Overview': variants/gigabyte_mz33-ar1/overview.md
           - 'Releases': variants/gigabyte_mz33-ar1/releases.md
@@ -284,6 +288,7 @@ nav:
           - 'Test matrix': variants/gigabyte_mz33-ar1/test-matrix.md
           - 'Openness score': variants/gigabyte_mz33-ar1/openness-score.md
           - 'Press and Media Coverage': variants/gigabyte_mz33-ar1/press-and-media-coverage.md
+          - 'Hardware Compatibility List': variants/gigabyte_mz33-ar1/hcl.md
       - 'Hardkernel ODROID H4':
           - 'Overview': variants/hardkernel_odroid_h4/overview.md
           - 'Releases': variants/hardkernel_odroid_h4/releases.md
@@ -295,6 +300,7 @@ nav:
           - 'Hardware Configuration Matrix': variants/hardkernel_odroid_h4/hardware-matrix.md
           - 'Test matrix': variants/hardkernel_odroid_h4/test-matrix.md
           - 'Openness score': variants/hardkernel_odroid_h4/openness_score.md
+          - 'Hardware Compatibility List': variants/hardkernel_odroid_h4/hcl.md
       - 'MSI desktops':
           - 'Overview': unified/msi/overview.md
           - 'Building manual': unified/msi/building-manual.md
@@ -397,6 +403,7 @@ nav:
           - 'FAQ': variants/pc_engines/faq.md
           - 'Announcement': variants/pc_engines/post-eol-fw-announcement.md
           - 'Firmware write protection': variants/pc_engines/bios-lock.md
+          - 'Hardware Compatibility List': variants/pc_engines/hcl.md
       - 'Protectli':
           - 'Overview': unified/protectli/overview.md
           - 'Building manual': unified/protectli/building-manual.md
@@ -406,6 +413,7 @@ nav:
           - 'Recovery': unified/protectli/recovery.md
           - 'Test matrix': unified/protectli/test-matrix.md
           - 'OS installation': unified/protectli/os-installation.md
+          - 'Hardware Compatibility List': unified/protectli/hcl.md
           - 'Protectli FW6':
               - 'Releases': variants/protectli_fw6/releases.md
               - 'Hardware Configuration Matrix': variants/protectli_fw6/hardware-matrix.md
@@ -471,6 +479,7 @@ nav:
           - 'Firmware update': variants/supermicro_x11_lga1151_series/firmware-update.md
           - 'Recovery': variants/supermicro_x11_lga1151_series/recovery.md
           - 'FAQ': variants/supermicro_x11_lga1151_series/faq.md
+          - 'Hardware Compatibility List': variants/supermicro_x11_lga1151_series/hcl.md
       - 'Tuxedo IBS15':
           - 'Releases': variants/tuxedo_ibs15/releases.md
           - 'Building manual': variants/tuxedo_ibs15/building.md
@@ -478,6 +487,7 @@ nav:
           - 'Post-installation setup': variants/tuxedo_ibs15/post_install.md
           - 'Hardware Configuration Matrix': variants/tuxedo_ibs15/hardware-matrix.md
           - 'Test matrix': variants/tuxedo_ibs15/test-matrix.md
+          - 'Hardware Compatibility List': variants/tuxedo_ibs15/hcl.md
 # - 'Development Environment':
 #     - 'Nix': dev-env/nix-dev-env.md
   - 'Guides':

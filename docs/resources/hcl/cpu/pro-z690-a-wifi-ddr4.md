@@ -28,12 +28,16 @@
 | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.0 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.1 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.2 | Dasharo HCL Report |
+| 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.3 | Dasharo HCL Report |
+| 12th Gen Intel(R) Core(TM) i9-12900K | v1.1.6 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900KF | v1.1.1 | [Github PR][4] |
 | 12th Gen Intel(R) Core(TM) i9-12900KS | v1.1.1 | Dasharo HCL Report |
 | 12th Gen Intel(R) Core(TM) i9-12900T | v1.1.0 | Dasharo HCL Report |
 | 13th Gen Intel(R) Core(TM) i5-13600K | v0.9.0 | Dasharo HCL Report |
 | 13th Gen Intel(R) Core(TM) i5-13600K | v1.1.2 | Dasharo HCL Report |
+| 13th Gen Intel(R) Core(TM) i7-13700K | v1.1.6 | Dasharo HCL Report |
 | 14th Gen Intel(R) Core(TM) i7-14700K | v0.9.0 | Dasharo HCL Report |
+| Intel(R) Core(TM) i7-14700K | v0.9.0 (coreboot+heads) | [Qubes HCL reports](https://forum.qubes-os.org/t/30567) |
 
 [1]: https://forum.qubes-os.org/t/msi-pro-z690-a-wifi-ddr4-with-alder-lake-12900k/11490/6
 [2]: https://groups.google.com/g/qubes-users/c/lGOjuApLD_o/m/TBZN0PsXEgAJ
