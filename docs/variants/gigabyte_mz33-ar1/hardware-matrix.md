@@ -9,7 +9,7 @@ coreboot port on the Gigabyte MZ33-AR1.
 
 | Component                      | Description                                                                   |
 |--------------------------------|-------------------------------------------------------------------------------|
-| **CPU**                        | AMD EPYC™ 9015	                                                         |
+| **CPU**                        | AMD EPYC™ 9015                                                          |
 | **CPU Cooler**                 | Arctic Freezer 4U-SP5                                                         |
 | **RAM**                        | Slot 1: Micron 16GB DDR5 48000B MTC10F1084S1RC48BA1 ECC RDIMM                 |
 |                                | Slot 2: Micron 16GB DDR5 48000B MTC10F1084S1RC48BA1 ECC RDIMM                 |
