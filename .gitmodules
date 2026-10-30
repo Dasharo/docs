@@ -1,0 +1,3 @@
+[submodule ".taskfile-templates"]
+	path = .taskfile-templates
+	url = ssh://git@git.3mdeb.com:2222/3mdeb/taskfile-templates.git

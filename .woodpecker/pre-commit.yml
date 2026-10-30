@@ -1,0 +1,44 @@
+---
+# Woodpecker CI workflow: pre-commit
+# Runs the hooks from .pre-commit-config.yaml (same ruleset as pre-commit.ci
+# on upstream GitHub).
+#
+# Based on .taskfile-templates/woodpecker/lint.yml.
+
+# See .taskfile-templates/README.md > Woodpecker CI wiring for why this clone:
+# block looks like this (SSH submodule URL rewrite, environment: vs settings:).
+clone:
+  - name: git
+    image: woodpeckerci/plugin-git
+    environment:
+      PLUGIN_RECURSIVE: "true"
+      GIT_CONFIG_COUNT: "1"
+      GIT_CONFIG_KEY_0: "url.https://git.3mdeb.com/.insteadOf"
+      GIT_CONFIG_VALUE_0: "ssh://git@git.3mdeb.com:2222/"
+
+variables:
+  - &install-task sh .taskfile-templates/scripts/install-task.sh
+
+# Branch rulesets gate on the PR run, so push only covers the default branch
+# (post-merge) instead of duplicating every PR run on its source branch.
+when:
+  - event: [pull_request, manual]
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+
+steps:
+  - name: pre-commit
+    # The Alpine base of docker:27-cli ships an npm that predates `--allow-git`,
+    # which pre-commit >= 4.6.1 passes when installing node hooks (npm 11.11+
+    # rejects it with EALLOWGIT).
+    image: docker:27-cli
+    environment:
+      TASK_VERSION: v3.44.0
+    commands:
+      # System node/npm makes pre-commit use language_version `system` for
+      # node hooks (markdownlint) instead of nodeenv, whose version parsing
+      # breaks on pre-release entries in the Node.js release index.
+      - apk add --no-cache git python3 py3-pip nodejs npm
+      - pip install --quiet --break-system-packages 'pre-commit>=4.7.0'
+      - *install-task
+      - task lint:run

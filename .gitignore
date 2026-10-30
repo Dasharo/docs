@@ -2,3 +2,4 @@ venv/
 site/
 utils/blc/blc.txt
 __pycache__/
+log.json

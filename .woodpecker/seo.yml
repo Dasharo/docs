@@ -1,0 +1,78 @@
+---
+# Woodpecker CI workflow: SEO
+# Mirrors .github/workflows/seo.yml. The check logic lives in Taskfile.yml;
+# seo:links / seo:orphan-pages / seo:canonical-links can also be run locally.
+#
+# All checks run directly in their step containers: seo:links in the lychee
+# image (Docker-in-Docker via docker-run.yml left lychee without the
+# workspace), seo-spy because the local HTTP server and the checker must
+# share localhost.
+
+# See .taskfile-templates/README.md > Woodpecker CI wiring for why this clone:
+# block looks like this (SSH submodule URL rewrite, environment: vs settings:).
+clone:
+  - name: git
+    image: woodpeckerci/plugin-git
+    environment:
+      PLUGIN_RECURSIVE: "true"
+      GIT_CONFIG_COUNT: "1"
+      GIT_CONFIG_KEY_0: "url.https://git.3mdeb.com/.insteadOf"
+      GIT_CONFIG_VALUE_0: "ssh://git@git.3mdeb.com:2222/"
+
+variables:
+  - &install-task sh .taskfile-templates/scripts/install-task.sh
+  # python:3.11-slim, not 3.12: seo-spy pins wheels (e.g. cffi 1.15.1) that
+  # have no Python 3.12 builds. curl is for install-task.sh.
+  - &seo-spy-setup apt-get update -qq && apt-get install -y --no-install-recommends git curl
+
+# Branch rulesets gate on the PR run, so push only covers the default branch
+# (post-merge) instead of duplicating every PR run on its source branch.
+when:
+  - event: [pull_request, manual]
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+
+steps:
+  - name: link-check
+    # Not the lycheeverse/lychee image: 0.15.1 is built on EOL Debian bullseye
+    # (apt fails) and its -alpine variant runs as non-root (no apk).
+    image: python:3.12-alpine3.22
+    depends_on: []
+    # Disabled during internal testing: its requests to github.com are the
+    # suspected cause of other steps' GitHub downloads timing out.
+    when:
+      - evaluate: 'false'
+    environment:
+      TASK_VERSION: v3.44.0
+      # Same lychee version as the GitHub workflow; the release publishes no
+      # checksums, so the static musl build's SHA-256 is pinned here.
+      LYCHEE_TARBALL: lychee-v0.15.1-x86_64-unknown-linux-musl.tar.gz
+      LYCHEE_SHA256: 94a69befb2887374632945ba823561ac5e954dd803cd31094a5d33df3900581f
+    commands:
+      # git for lychee-log-parser
+      - apk add --no-cache git
+      - wget -qO "/tmp/$LYCHEE_TARBALL" "https://github.com/lycheeverse/lychee/releases/download/v0.15.1/$LYCHEE_TARBALL"
+      - echo "$LYCHEE_SHA256  /tmp/$LYCHEE_TARBALL" | sha256sum -c -
+      - tar -xzf "/tmp/$LYCHEE_TARBALL" -C /usr/local/bin lychee
+      - *install-task
+      - task seo:links
+
+  - name: orphan-pages
+    image: python:3.11-slim
+    depends_on: []
+    environment:
+      TASK_VERSION: v3.44.0
+    commands:
+      - *seo-spy-setup
+      - *install-task
+      - task seo:orphan-pages
+
+  - name: canonical-links
+    image: python:3.11-slim
+    depends_on: []
+    environment:
+      TASK_VERSION: v3.44.0
+    commands:
+      - *seo-spy-setup
+      - *install-task
+      - task seo:canonical-links

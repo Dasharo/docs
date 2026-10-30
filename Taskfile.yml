@@ -1,0 +1,96 @@
+---
+version: '3'
+
+includes:
+  lint:
+    taskfile: .taskfile-templates/templates/lint/pre-commit.yml
+
+vars:
+  # Mirrors the lychee-action step of .github/workflows/seo.yml. lychee skips
+  # hidden paths (incl. .taskfile-templates) but ignores .gitignore, so leave
+  # out a local mkdocs build output.
+  # --max-concurrency: lychee's default of 128 parallel requests is the likely
+  # cause of CI connections to github.com timing out, also in other steps.
+  LYCHEE_ARGS: >-
+    --no-progress --timeout 60 --suggest --max-redirects 20
+    --max-concurrency 16
+    --accept 403,406,429,500,502,503,522,999
+    --exclude-path site --format json --output log.json
+  # Status codes lychee-log-parser treats as broken links, on top of errors
+  # without a status code (other than timeouts and network errors)
+  LINK_ERROR_CODES: 404..407 409..417 421..428 431 451
+  SEO_SPY_REPO: https://github.com/3mdeb/seo-spy
+  LYCHEE_LOG_PARSER_REPO: https://github.com/3mdeb/lychee-log-parser
+  SERVE_BASE: http://0.0.0.0:8000
+
+tasks:
+  default:
+    cmds:
+      - task --list
+
+  seo:links:
+    desc: Check all links with lychee (v0.15.1 on PATH) and evaluate the log with lychee-log-parser
+    cmds:
+      - rm -f log.json
+      # Exit code 2 means broken links, which the parser below evaluates; any
+      # other failure is a real error.
+      - lychee {{.LYCHEE_ARGS}} . || [ $? -eq 2 ]
+      - |
+        set -eu
+        PARSER_DIR=$(mktemp -d)
+        trap 'rm -rf "$PARSER_DIR"' EXIT
+        git clone -q --depth 1 {{.LYCHEE_LOG_PARSER_REPO}} "$PARSER_DIR"
+        LOG="$PWD/log.json"
+        cd "$PARSER_DIR"
+        python3 src/lychee_log_parser.py -l "$LOG" -t -n {{.LINK_ERROR_CODES}}
+
+  seo:orphan-pages:
+    desc: Check for orphan pages using seo-spy
+    cmds:
+      - task: seo:spy
+        vars:
+          ARGS: -o --ignore-path resources/hcl/
+
+  seo:canonical-links:
+    desc: Check canonical links using seo-spy
+    cmds:
+      - task: seo:spy
+        vars:
+          ARGS: -c
+
+  # Builds the site, serves it with sitemap.xml pointing at the local server
+  # and runs seo-spy against it. Requires Python 3.11 (seo-spy pins wheels
+  # unavailable for newer versions) and git. The site is built into a
+  # per-invocation temporary directory so orphan-pages and canonical-links
+  # can run in parallel on the same workspace.
+  #
+  # Runs under a real sh: Task's built-in interpreter has no `kill` and its
+  # `$!` is not a PID, so the background server could not be stopped.
+  seo:spy:
+    internal: true
+    cmds:
+      - |
+        sh -eu <<'EOF'
+        SEO_SPY_DIR=$(mktemp -d)
+        SITE_DIR=$(mktemp -d)
+        SERVER_PID=""
+        trap 'kill $SERVER_PID 2>/dev/null || true; rm -rf "$SEO_SPY_DIR" "$SITE_DIR"' EXIT
+        git clone -q --depth 1 {{.SEO_SPY_REPO}} "$SEO_SPY_DIR"
+        # Separate installs, in the GitHub workflow's order: the two files pin
+        # conflicting versions of shared packages and the project's must win.
+        pip install --quiet --disable-pip-version-check --root-user-action=ignore \
+          -r "$SEO_SPY_DIR/requirements.txt"
+        # numpy (via mkdocs-table-reader-plugin -> pandas) >= 2.4 requires an
+        # x86-64-v2 CPU, which some CI agents (e.g. generic QEMU CPU model) lack.
+        pip install --quiet --disable-pip-version-check --root-user-action=ignore \
+          -r requirements.txt 'numpy<2.4'
+        mkdocs build --quiet --site-dir "$SITE_DIR"
+        sed -i 's|https://docs.dasharo.com|{{.SERVE_BASE}}|g' "$SITE_DIR/sitemap.xml"
+        python3 -m http.server --directory "$SITE_DIR" 8000 >/dev/null 2>&1 &
+        SERVER_PID=$!
+        until python3 -c 'import urllib.request; urllib.request.urlopen("{{.SERVE_BASE}}")' 2>/dev/null; do
+          kill -0 "$SERVER_PID" 2>/dev/null || { echo "seo:spy: HTTP server exited" >&2; exit 1; }
+          sleep 1
+        done
+        python3 "$SEO_SPY_DIR/seo_spy/main.py" -d {{.SERVE_BASE}} {{.ARGS}}
+        EOF
