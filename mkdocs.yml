@@ -1,4 +1,5 @@
 ---
+INHERIT: umami.yml
 site_name: Dasharo Universe
 site_url: https://docs.dasharo.com
 

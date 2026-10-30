@@ -1,0 +1,143 @@
+{#-
+  Umami analytics provider for Material for MkDocs, selected with
+  `extra.analytics.provider: umami` (see umami.yml). Renders nothing unless
+  both website_id and host are set.
+
+  Umami auto-tracking is disabled; page views are sent from Material's
+  document$ observable so instant navigation reports the correct URL and
+  title. Every event carries the current URL explicitly for the same reason.
+-#}
+{% set analytics = config.extra.analytics %}
+{% if analytics.website_id and analytics.host %}
+<script id="__analytics">
+function __md_analytics() {
+  var config = {
+    host: {{ analytics.host.rstrip("/") | tojson }},
+    websiteId: {{ analytics.website_id | tojson }},
+    domains: {{ analytics.domains | d("", true) | tojson }},
+    editUri: {{ config.edit_uri | d("", true) | tojson }},
+    notFound: {{ (not page) | tojson }}
+  };
+  var downloads = /\.(pdf|zip|tar|gz|xz|7z|bin|rom|img|iso|csv|xlsx?|docx?|odt|ods|pptx?)$/i;
+  var state = { url: null, query: "" };
+
+  function track(name, data) {
+    if (!window.umami) return;
+    window.umami.track(function (props) {
+      var payload = Object.assign({}, props, {
+        url: location.pathname + location.search,
+        title: document.title,
+        referrer: state.referrer
+      });
+      if (name) {
+        payload.name = name;
+        payload.data = data;
+      }
+      return payload;
+    });
+  }
+
+  function searchQuery() {
+    var form = document.forms.search;
+    return form ? form.query.value.trim().slice(0, 100) : "";
+  }
+
+  function searchResults() {
+    var meta = document.querySelector(".md-search-result__meta");
+    return meta ? parseInt(meta.textContent, 10) || 0 : 0;
+  }
+
+  function onDocument() {
+    var url = location.pathname + location.search;
+    if (url === state.url) return;
+    state.referrer = state.url ? location.origin + state.url : document.referrer;
+    state.url = url;
+
+    /* 404 page (only ever the initial full load): report the missing path
+       instead of a page view */
+    if (config.notFound) {
+      config.notFound = false;
+      track("not-found", { path: url, referrer: document.referrer });
+    } else {
+      track();
+    }
+
+    var feedback = document.forms.feedback;
+    if (typeof feedback === "undefined") return;
+    feedback.querySelectorAll("[type=submit]").forEach(function (button) {
+      button.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        var value = this.getAttribute("data-md-value");
+        track("feedback", { page: location.pathname, rating: value });
+        feedback.firstElementChild.disabled = true;
+        var note = feedback.querySelector(
+          ".md-feedback__note [data-md-value='" + value + "']");
+        if (note) note.hidden = false;
+      });
+    });
+    feedback.hidden = false;
+  }
+
+  function onClick(ev) {
+    var el = ev.target.closest("a[href], .md-clipboard");
+    if (!el) return;
+    var page = location.pathname;
+
+    if (el.matches(".md-clipboard")) {
+      track("code-copy", { page: page });
+    } else if (el.matches(".md-content__button")) {
+      var isEdit = config.editUri && el.href.indexOf(config.editUri) !== -1;
+      track(isEdit ? "page-edit" : "page-view-source", { page: page });
+    } else if (el.matches(".md-search-result__link")) {
+      track("search-result-click", {
+        query: searchQuery(),
+        target: el.pathname
+      });
+    } else if (!/^https?:$/.test(el.protocol)) {
+      return;
+    } else if (downloads.test(el.pathname)) {
+      /* before the outbound check: firmware binaries are served from
+         dl.3mdeb.com, including the ToS-gated download buttons */
+      track("file-download", {
+        page: page,
+        host: el.hostname,
+        file: el.pathname
+      });
+    } else if (el.hostname !== location.hostname) {
+      track("outbound-link", { page: page, host: el.hostname, url: el.href });
+    }
+  }
+
+  function onSearchBlur() {
+    var query = searchQuery();
+    if (!query || query === state.query) return;
+    state.query = query;
+    track("search", { query: query, results: searchResults() });
+  }
+
+  function setup() {
+    document$.subscribe(onDocument);
+    document.addEventListener("click", onClick, true);
+    document.addEventListener("auxclick", onClick, true);
+    if (document.forms.search) {
+      document.forms.search.query.addEventListener("blur", onSearchBlur);
+    }
+  }
+
+  var script = document.createElement("script");
+  script.async = true;
+  script.src = config.host + "/script.js";
+  script.setAttribute("data-website-id", config.websiteId);
+  script.setAttribute("data-auto-track", "false");
+  if (config.domains) script.setAttribute("data-domains", config.domains);
+  script.addEventListener("load", function () {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", setup);
+    } else {
+      setup();
+    }
+  });
+  document.getElementById("__analytics").insertAdjacentElement("afterend", script);
+}
+</script>
+{% endif %}

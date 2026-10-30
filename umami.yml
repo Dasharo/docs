@@ -1,0 +1,31 @@
+---
+# Umami telemetry configuration, merged into mkdocs.yml via INHERIT.
+#
+# Values are injected from the environment at build time (GitHub Actions
+# secrets in .github/workflows/deploy.yml). When UMAMI_WEBSITE_ID or
+# UMAMI_HOST is empty, no tracking code is rendered, so local `mkdocs serve`,
+# Woodpecker, PR and fork builds never report anything.
+#
+# UMAMI_WEBSITE_ID - website UUID from Umami (Settings -> Websites)
+# UMAMI_HOST       - publicly reachable Umami base URL
+# UMAMI_DOMAINS    - comma-separated hostnames allowed to report; protects
+#                    stats from copies of the site served elsewhere
+extra:
+  analytics:
+    provider: umami
+    website_id: !ENV [UMAMI_WEBSITE_ID, ""]
+    host: !ENV [UMAMI_HOST, ""]
+    domains: !ENV [UMAMI_DOMAINS, "docs.dasharo.com"]
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Use the edit icon at the top of the
+            page to propose an improvement on GitHub.
