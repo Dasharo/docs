@@ -349,7 +349,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot based on 4.16 revision 546e1c86](https://github.com/Dasharo/coreboot/tree/546e1c86)
+- [coreboot based on 4.16 revision 69ca6181](https://github.com/Dasharo/coreboot/tree/69ca6181)
 - [edk2 based on 7f90b9cd revision 7f90b9cd](https://github.com/Dasharo/edk2/tree/7f90b9cd)
 - [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 - [Cometlake1 FSP 9.0.7B.20](https://github.com/intel/FSP/tree/10eae55b8eb0febfa2dfabf4017701b072866170/CometLakeFspBinPkg/CometLake1)
