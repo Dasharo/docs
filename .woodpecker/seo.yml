@@ -38,10 +38,6 @@ steps:
     # (apt fails) and its -alpine variant runs as non-root (no apk).
     image: python:3.12-alpine3.22
     depends_on: []
-    # Disabled during internal testing: its requests to github.com are the
-    # suspected cause of other steps' GitHub downloads timing out.
-    when:
-      - evaluate: 'false'
     environment:
       TASK_VERSION: v3.44.0
       # Same lychee version as the GitHub workflow; the release publishes no
