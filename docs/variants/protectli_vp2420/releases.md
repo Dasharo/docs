@@ -268,8 +268,8 @@ gpg -v --verify protectli_vp2420_v1.0.0.rom.sha256.sig protectli_vp2420_v1.0.0.r
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot based on c492b427 revision c86c9266](https://github.com/Dasharo/coreboot/tree/c86c9266)
-- [edk2 based on e461f08 revision 7948a20](https://github.com/Dasharo/edk2/tree/7948a20)
+- [coreboot based on c492b427 revision d32ac25b](https://github.com/Dasharo/coreboot/tree/d32ac25b)
+- [edk2 based on e461f08 revision 29407dfc](https://github.com/Dasharo/edk2/tree/29407dfc)
 - [iPXE for EFI revision 988d2](https://github.com/ipxe/ipxe/tree/988d2c13cdf0f0b4140685af35ced70ac5b3283c)
 
 [v1.0.0_rom]: https://3mdeb.com/open-source-firmware/Dasharo/protectli_vault_ehl/v1.0.0/protectli_vp2420_v1.0.0.rom
