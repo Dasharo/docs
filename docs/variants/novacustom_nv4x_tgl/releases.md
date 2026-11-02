@@ -559,7 +559,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot based on e3e965b1 revision baada726](https://github.com/Dasharo/coreboot/tree/baada726)
+- [coreboot based on e3e965b1 revision 5c2533a4](https://github.com/Dasharo/coreboot/tree/5c2533a4)
 - [edk2 based on 2020.03.17 revision cad23725](https://github.com/Dasharo/edk2/tree/cad23725)
 
 ## v1.1.0 - 2022-03-23
@@ -671,7 +671,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 ### SBOM (Software Bill of Materials)
 
-- [coreboot based on ae9a8447 revision e995fc1c](https://github.com/Dasharo/coreboot/commit/e995fc1c)
+- [coreboot based on ae9a8447 revision 538c29bc](https://github.com/Dasharo/coreboot/commit/538c29bc)
 - [edk2 based on 2020.03.17 revision 59ae285f](https://github.com/Dasharo/edk2/tree/59ae285f)
 
 ## v0.5.0 - 2021-11-19
