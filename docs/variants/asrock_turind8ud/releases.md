@@ -267,7 +267,7 @@ requirements with [sbom-tools](https://github.com/sbom-tool/sbom-tools).
     | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Platform debugging** | Hardware debugging interfaces are disabled and locked. | Locked |
     | :material-check-circle:{ style="color: #00c853" title="Passed" } | **TPM PCR0 reconstruction** | The TPM boot measurements match the firmware event log. | Valid |
     | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **Platform secure boot** | The processor only runs firmware signed with the platform vendor's key (AMD PSB).<br>**Why it fails:** [issue 1](#hsi-issue-1) | Disabled |
-    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **SPI write protection** | The firmware flash chip is locked against writes from the OS.<br>**Why it fails:** [issue 2](#hsi-issue-2) | Disabled |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **SPI write protection** | The firmware flash chip is locked against writes from the OS.<br>**Why it fails:** [note 2](#hsi-issue-2) | Disabled |
 
 ??? failure "HSI-3 Protected: 2 of 5 checks passed"
 
