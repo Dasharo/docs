@@ -44,7 +44,7 @@ Release Newsletter") }}
 ## v0.9.0 - 2026-08-13
 
 Test results for this release can be found
-[here](https://github.com/Dasharo/osfv-results/blob/main/boards/ASRock/TURIND8UD/UEFI/).
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/ASRock/TURIND8UD/UEFI/v0.9.0-rc3_results.csv).
 
 ### Added
 
