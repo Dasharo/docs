@@ -184,6 +184,69 @@ Please notify us immediately so that we can initiate a damage claim with
 Freight. Failure to inspect for damages at the time of delivery could result
 in Freight voiding any subsequent damage claims.
 
+## Are MSI PRO Z690-A and Z790-P firmware releases production-ready?
+
+Both platforms are still considered pre-production and have not been formally
+promoted to production-level status. Older Z690-A releases use v1.x.x numbering,
+but this alone does not indicate production-level maturity under the current
+[Dasharo versioning
+policy](https://docs.dasharo.com/dev-proc/versioning/#promotion-to-production-level-versioning-v100-and-up).
+Stability issues have been reported with Z690-A v1.1.7 and Z790-P v0.9.5. Users
+experiencing these issues may consider previous firmware versions while awaiting
+fixes. For the latest information, check the [Z690-A release
+notes](https://docs.dasharo.com/variants/msi_z690/releases/), [Z790-P release
+notes](https://docs.dasharo.com/variants/msi_z790/releases/) and [known issues
+on GitHub](https://github.com/Dasharo/dasharo-issues/issues).
+
+## Which motherboard is recommended: MSI PRO Z690-A or Z790-P?
+
+We generally recommend the [MSI PRO
+Z790-P](https://shop.3mdeb.com/product/msi-pro-z790-p-wifi-ddr5-motherboard-with-dasharo-pro-package/).
+It is a newer platform, better suited for high-performance 13th and
+14th-generation Intel processors. Both motherboards offer similar functionality
+with Dasharo, but the Z790-P chipset provides improvements in PCIe connectivity,
+including PCIe Gen4 support for certain slots previously limited to Gen3.
+Additionally, Z690-A motherboards are becoming increasingly difficult to obtain.
+
+## Which motherboard offers better compatibility with Qubes OS?
+
+Both MSI PRO Z690-A and Z790-P offer comparable compatibility with Qubes OS when
+using Dasharo firmware. The Z690-A was previously offered in an officially
+Qubes-certified configuration, although that product is no longer available. The
+Z790-P can also run Qubes OS, but this should not be interpreted as official
+certification of every hardware configuration.
+
+## Can I use dedicated GPUs and PCIe passthrough with Qubes OS?
+
+GPU compatibility depends on the selected Dasharo firmware variant and hardware
+configuration. The Dasharo (coreboot+Heads) configuration has limitations
+regarding dedicated GPU initialization and display output. See
+[Issue #794](https://github.com/Dasharo/dasharo-issues/issues/794). Dasharo
+(coreboot+UEFI) does not have this particular Heads limitation. However, PCIe
+device passthrough may still encounter issues related to PCIe bus resets, as
+described in [Issue #771](https://github.com/Dasharo/dasharo-issues/issues/771).
+Users planning to use GPU passthrough should verify compatibility with their
+specific GPU models and firmware version.
+
+## Can reflashing Dasharo firmware remove potential tampering?
+
+Reflashing Dasharo with a trusted firmware image can remove many software-based
+firmware modifications, provided the affected flash regions are overwritten.
+However, reflashing cannot guarantee the removal of all forms of tampering,
+particularly physical hardware modifications. Some situations may require
+external firmware programming or additional hardware inspection. Software
+reflashing alone should not be considered a complete guarantee against
+tampering.
+
+## Can I selectively disable NVMe drives in Dasharo for secure dual boot?
+
+No. Dasharo currently does not provide an option to selectively disable
+individual NVMe drives through firmware settings. However, this does not prevent
+dual boot configurations. Ubuntu and Windows dual boot has been successfully
+validated with Dasharo. Please note that dual boot does not provide complete
+isolation between operating systems, as both systems may still be able to access
+connected storage devices.
+
 # Dasharo (coreboot+Heads) variant (not supported by Dasharo)
 
 ## The TPM module is required to install Heads. Will this one work?
