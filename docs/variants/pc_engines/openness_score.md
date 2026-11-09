@@ -5,6 +5,86 @@ Score](../../glossary.md#dasharo-openness-score) for PC Engines apu2 series
 Dasharo releases. The content of the page is generated with [Dasharo Openness
 Score utility](https://github.com/Dasharo/Openness-Score).
 
+## v26.09.00.01
+
+Openness Score for pcengines_apu2_seabios_v26.09.00.01.rom
+
+Open-source code percentage: **37.7%**
+Closed-source code percentage: **62.3%**
+
+* Image size: 8388608 (0x800000)
+* Number of regions: 13
+* Number of CBFSes: 1
+* Total open-source code size: 453786 (0x6ec9a)
+* Total closed-source code size: 749792 (0xb70e0)
+* Total data size: 449114 (0x6da5a)
+* Total empty size: 6735916 (0x66c82c)
+
+![](pcengines_apu2_seabios_v26.09.00.01.rom_openness_chart.png)
+
+![](pcengines_apu2_seabios_v26.09.00.01.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| BOOTORDER | 0x0 | 0x1000 | data |
+| RW_VPD | 0x1000 | 0x4000 | data |
+| SMMSTORE | 0x5000 | 0x20000 | data |
+| RO_VPD | 0x200000 | 0x4000 | data |
+| FMAP | 0x204000 | 0x800 | data |
+| RO_FRID | 0x204800 | 0x40 | data |
+| RO_FRID_PAD | 0x204840 | 0x7c0 | data |
+| GBB | 0x205000 | 0x40000 | data |
+| RW_UNUSED | 0x25000 | 0x1db000 | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 6008832
+* Number of files: 28
+* Open-source files size: 453786 (0x6ec9a)
+* Closed-source files size: 749792 (0xb70e0)
+* Data size: 14938 (0x3a5a)
+* Empty size: 4790316 (0x49182c)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/romstage | stage | 38480 | none | open-source |
+| fallback/ramstage | stage | 95143 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 7231 | none | open-source |
+| fallback/postcar | stage | 42076 | none | open-source |
+| fallback/payload | simple elf | 67943 | none | open-source |
+| img/memtest | simple elf | 47502 | none | open-source |
+| img/setup | simple elf | 27411 | none | open-source |
+| genroms/pxe.rom | raw | 95232 | none | open-source |
+| bootblock | bootblock | 32768 | none | open-source |
+| AGESA | raw | 504032 | none | closed-source |
+| apu/amdfw | raw | 245760 | none | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| config | raw | 3471 | LZMA | data |
+| revision | raw | 775 | none | data |
+| build_info | raw | 88 | none | data |
+| spd.bin | spd | 256 | none | data |
+| payload_config | raw | 1694 | none | data |
+| payload_revision | raw | 217 | none | data |
+| bootorder_map | raw | 153 | none | data |
+| bootorder_def | raw | 624 | none | data |
+| etc/boot-menu-key | raw | 8 | none | data |
+| etc/boot-menu-wait | raw | 8 | none | data |
+| etc/boot-menu-message | raw | 48 | none | data |
+| etc/sercon-port | raw | 8 | none | data |
+| sbom | raw | 5602 | none | data |
+| (empty) | null | 3475940 | none | empty |
+| (empty) | null | 675492 | none | empty |
+| (empty) | null | 638884 | none | empty |
+
 ## v0.9.1
 
 Openness Score for pcengines_apu2_v0.9.1.rom
