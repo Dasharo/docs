@@ -186,6 +186,38 @@ laptops.
 
 	![](../../images/menus/dasharo_render_standby.png){ class="center" }
 
+	## HDMI 2.1 FRL
+
+	Meteor Lake (MTL) laptops have an HDMI 2.1 port that supports Fixed Rate
+	Link (FRL) mode. FRL gives the bandwidth needed for high resolutions and
+	refresh rates, such as 4K at 120 Hz or higher. The level of support
+	depends on the GPU that drives the HDMI port.
+
+	| Model   | HDMI wired to | FRL since | Windows   | Linux         |
+	| ------- | ------------- | --------- | --------- | ------------- |
+	| V5xxTU  | iGPU (Intel)  | v1.0.2    | Supported | Not supported |
+	| V5xxTNx | dGPU (NVIDIA) | v0.9.1    | Supported | Supported     |
+
+	### V5xxTU (iGPU)
+
+	Starting with v1.0.2, the firmware enables HDMI 2.1 FRL on the integrated
+	GPU. On Windows, FRL works together with Variable Refresh Rate (VRR) and
+	Display Stream Compression (DSC).
+
+	On Linux, the HDMI port falls back to TMDS mode, and is limited to HDMI 2.0
+	bandwidth. The Intel graphics driver changes that add FRL support for this
+	platform are not yet merged into the upstream Linux kernel.
+
+	### V5xxTNx (dGPU)
+
+	On these models, the HDMI port is wired to the NVIDIA dGPU. HDMI 2.1 FRL
+	works since the first release (v0.9.1).
+
+	The HDMI port works only when the dGPU is active. In
+	[iGPU Only](#igpu-only) mode the dGPU is powered off, and the HDMI port
+	gives no output. Use [NVIDIA Optimus](#nvidia-optimus-igpu-dgpu) or
+	[dGPU Only](#dgpu-only) mode to use the HDMI port.
+
 	## Dasharo TrustRoot
 
 	Users willing to achieve highest level of security hardening can take
