@@ -46,7 +46,16 @@ laptops.
 	- charging will stop once the battery level reaches the upper threshold
 	(default: 98%)
 
-	Custom charge thresholds can be configured using the Dasharo setup menu.
+	The thresholds are selected with the `Battery Charge Profile` option in the
+	[Power Management Options](../../dasharo-menu-docs/dasharo-system-features.md#power-management-options)
+	menu:
+
+	- Standard (default) - charging starts below 95% and stops at 98%
+	- Longevity - charging starts below 60% and stops at 80%. This is the most
+	effective option for devices that are mostly connected to a power adapter,
+	as it keeps the battery away from the high charge levels where wear and
+	swelling are the worst.
+	- Custom - the start and stop thresholds are set manually
 
 	### Battery bypass mode
 
@@ -61,8 +70,8 @@ laptops.
 	is achieved, the battery stops charging and again no current
 	is flowing through it, preventing excessive wear.
 	    + If you are using the device like a desktop computer, having it
-	constantly connected to the power adapter, consider lowering the
-	charge thresholds to about 70-80%. By keeping the battery at a lower
+	constantly connected to the power adapter, consider selecting the
+	`Longevity` battery charge profile. By keeping the battery at a lower
 	charge level the battery wear overtime can be reduced.
 	- Hybrid Power Boost mode - the device is powered from the battery and the
 	power adapter at the same time. This mode activates only when the power

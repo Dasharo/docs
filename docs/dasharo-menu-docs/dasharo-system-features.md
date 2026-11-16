@@ -164,15 +164,25 @@ Currently available options:
       generation Intel Core processors or newer).
       > Note: On some devices, S3 support is considered experimental. On these
       > devices, the option will be marked as such.
+- `Battery Charge Profile` - selects the battery charge thresholds.
+    + **Standard** (default) - charging starts when the battery level drops
+      below 95% and stops at 98%.
+    + **Longevity** - charging starts when the battery level drops below 60%
+      and stops at 80%. Use this profile if the device is mostly connected to
+      a power adapter. Keeping the battery at a high charge level for a long
+      time accelerates wear and swelling.
+    + **Custom** - shows the `Battery Start Threshold` and
+      `Battery Stop Threshold` options to set the thresholds manually.
 - `Battery Start Threshold` - The value set by this option represents the
 percentage of battery power; if it is above this value, the DUT won't start
 charging. If the DUT has started charging before this level, it will not stop
-until the battery stop threshold is reached.
+until the battery stop threshold is reached. Shown only with the `Custom`
+battery charge profile.
 - `Battery Stop Threshold` - the value set by this option represents the
 percentage of battery power that the device will never exceed - it will
-stop charging.
+stop charging. Shown only with the `Custom` battery charge profile.
 
-Flow chart for the two settings mentioned above:
+Flow chart for the start and stop thresholds:
 
 ![](../images/battery_threshold_flowchart.png){class="center"}
 
