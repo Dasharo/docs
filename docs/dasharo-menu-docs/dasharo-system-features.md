@@ -154,6 +154,14 @@ Currently available options:
     + `Silent` - the fan will operate at lower speeds to reduce noise,
     + `Performance` - the fan will operate at higher speeds, to allow for
        increased performance.
+    + `Custom` - the fan will operate at speeds set by the user on the
+       custom 4 point curve.
+- `Custom fan curve` - Settings for the custom 4 point fan curve. This menu will
+   appear only if `Fan profile` is set to `Custom`:
+    + `Point X temperature (C)` - temperature for point X on the fan curve. Can be a value of 0-100.
+    + `Point X fan duty (%)` - fan speed for point X on the fan curve. Can be a value of 0-100.
+![](../images/custom_curve_menu.jpg){class="center"}
+
 - `Platform sleep type` - sets the active sleep mode to be available for OS
     + `Suspend to Idle (S0ix)` (default) - also known as modern standby. Select
       this option if using Windows. S3 sleep mode may not be working well with
