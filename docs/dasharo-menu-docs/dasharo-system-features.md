@@ -167,7 +167,7 @@ Currently available options:
 - `Battery Charge Profile` - selects the battery charge thresholds.
     + **Standard** (default) - charging starts when the battery level drops
       below 95% and stops at 98%.
-    + **Longevity** - charging starts when the battery level drops below 60%
+    + **Longevity** - charging starts when the battery level drops below 78%
       and stops at 80%. Use this profile if the device is mostly connected to
       a power adapter. Keeping the battery at a high charge level for a long
       time accelerates wear and swelling.

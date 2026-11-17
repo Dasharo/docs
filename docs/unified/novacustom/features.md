@@ -51,7 +51,7 @@ laptops.
 	menu:
 
 	- Standard (default) - charging starts below 95% and stops at 98%
-	- Longevity - charging starts below 60% and stops at 80%. This is the most
+	- Longevity - charging starts below 78% and stops at 80%. This is the most
 	effective option for devices that are mostly connected to a power adapter,
 	as it keeps the battery away from the high charge levels where wear and
 	swelling are the worst.
