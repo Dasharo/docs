@@ -158,8 +158,10 @@ Currently available options:
        custom 4 point curve.
 - `Custom fan curve` - Settings for the custom 4 point fan curve. This menu will
    appear only if `Fan profile` is set to `Custom`:
-    + `Point X temperature (C)` - temperature for point X on the fan curve. Can be a value of 0-100.
-    + `Point X fan duty (%)` - fan speed for point X on the fan curve. Can be a value of 0-100.
+    + `Point X temperature (C)` - temperature for point X on the fan curve.
+       Can be a value of 0-100.
+    + `Point X fan duty (%)` - fan speed for point X on the fan curve.
+       Can be a value of 0-100.
 ![](../images/custom_curve_menu.jpg){class="center"}
 
 - `Platform sleep type` - sets the active sleep mode to be available for OS
