@@ -195,7 +195,7 @@ laptops.
 
 	| Model   | HDMI wired to | FRL since | Windows   | Linux         |
 	| ------- | ------------- | --------- | --------- | ------------- |
-	| V5xxTU  | iGPU (Intel)  | v1.0.2    | Supported | Not supported |
+	| V5xxTU  | iGPU (Intel)  | v1.1.0    | Supported | Not supported |
 	| V5xxTNx | dGPU (NVIDIA) | v0.9.1    | Supported | Supported     |
 
 	### V5xxTU (iGPU)
