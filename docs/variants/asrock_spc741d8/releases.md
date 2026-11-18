@@ -53,22 +53,16 @@ Test results for this release can be found
 
 ### Binaries
 
-[sha256][asrock_spc741d8_v0.9.1.rom_hash]{.md-button}
-[sha256.sig][asrock_spc741d8_v0.9.1.rom_sig]{.md-button}
-(asrock_spc741d8_v0.9.1.rom)
 [asrock_spc741d8_v0.9.1.sbom.json][asrock_spc741d8_v0.9.1.sbom.json_file]{.md-button}
 [sha256][asrock_spc741d8_v0.9.1.sbom.json_hash]{.md-button}
 [sha256.sig][asrock_spc741d8_v0.9.1.sbom.json_sig]{.md-button}
-[sha256][asrock_spc741d8_v0.9.1_btg_devel.rom_hash]{.md-button}
-[sha256.sig][asrock_spc741d8_v0.9.1_btg_devel.rom_sig]{.md-button}
-(asrock_spc741d8_v0.9.1_btg_devel.rom)
 [sha256][asrock_spc741d8_v0.9.1_txt.rom_hash]{.md-button}
 [sha256.sig][asrock_spc741d8_v0.9.1_txt.rom_sig]{.md-button}
 (asrock_spc741d8_v0.9.1_txt.rom)
 
 This is a Dasharo Pro Package release. For this platform, access to pre-built
 binaries is provided exclusively through the
-[Full Build for ASRock Rack SPC741D8-2L2T/BCM](https://shop.3mdeb.com/product/dasharo-corebootuefi-pro-package-for-servers/),
+[Full Build for ASRock Rack SPC741D8-2L2T/BCM](https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/),
 a bundled hardware-and-firmware product available in
 the 3mdeb shop. A standalone Dasharo Pro Package subscription is not offered
 for this platform.
@@ -120,13 +114,9 @@ Doc Meta  ██████████░░░░░░░░░░░░░�
 Integrity █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     1 (12.5%)
 ```
 
-[asrock_spc741d8_v0.9.1.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1.rom.sha256
-[asrock_spc741d8_v0.9.1.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1.rom.sha256.sig
 [asrock_spc741d8_v0.9.1.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1.sbom.json
 [asrock_spc741d8_v0.9.1.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1.sbom.json.sha256
 [asrock_spc741d8_v0.9.1.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1.sbom.json.sha256.sig
-[asrock_spc741d8_v0.9.1_btg_devel.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1_btg_devel.rom.sha256
-[asrock_spc741d8_v0.9.1_btg_devel.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1_btg_devel.rom.sha256.sig
 [asrock_spc741d8_v0.9.1_txt.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1_txt.rom.sha256
 [asrock_spc741d8_v0.9.1_txt.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.1/asrock_spc741d8_v0.9.1_txt.rom.sha256.sig
 
