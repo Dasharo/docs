@@ -41,21 +41,16 @@ laptops.
 	lifespan of the battery:
 
 	- charging will only start when the battery level is below the lower threshold
-	(default: 95%)
 
 	- charging will stop once the battery level reaches the upper threshold
-	(default: 98%)
 
 	The thresholds are selected with the `Battery Charge Profile` option in the
+	Dasharo setup menu. See
 	[Power Management Options](../../dasharo-menu-docs/dasharo-system-features.md#power-management-options)
-	menu:
-
-	- Standard (default) - charging starts below 95% and stops at 98%
-	- Longevity - charging starts below 78% and stops at 80%. This is the most
-	effective option for devices that are mostly connected to a power adapter,
-	as it keeps the battery away from the high charge levels where wear and
-	swelling are the worst.
-	- Custom - the start and stop thresholds are set manually
+	for the available profiles and their thresholds. The `Longevity` profile is
+	the most effective option for devices that are mostly connected to a power
+	adapter, as it keeps the battery away from the high charge levels where wear
+	and swelling are the worst.
 
 	### Battery bypass mode
 
