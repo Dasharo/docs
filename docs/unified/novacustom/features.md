@@ -206,7 +206,8 @@ laptops.
 
 	On Linux, the HDMI port falls back to TMDS mode, and is limited to HDMI 2.0
 	bandwidth. The Intel graphics driver changes that add FRL support for this
-	platform are not yet merged into the upstream Linux kernel.
+	platform are not yet merged into the upstream Linux kernel as of version
+	v7.3.
 
 	### V5xxTNx (dGPU)
 
