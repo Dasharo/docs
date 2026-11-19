@@ -5,6 +5,82 @@ Score](../../glossary.md#dasharo-openness-score) for ASRock Rack
 SPC741D8-2L2T/BCM Dasharo releases. The content of the page is generated with
 [Dasharo Openness Score utility](https://github.com/Dasharo/Openness-Score).
 
+## v0.9.3
+
+Openness Score for asrock_spc741d8_v0.9.3_txt.rom
+
+Open-source code percentage: **3.1%**
+Closed-source code percentage: **96.9%**
+
+* Image size: 67108864 (0x4000000)
+* Number of regions: 12
+* Number of CBFSes: 1
+* Total open-source code size: 1817079 (0x1bb9f7)
+* Total closed-source code size: 56038639 (0x35714ef)
+* Total data size: 517898 (0x7e70a)
+* Total empty size: 8735248 (0x854a10)
+
+![](asrock_spc741d8_v0.9.3_txt.rom_openness_chart.png)
+
+![](asrock_spc741d8_v0.9.3_txt.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x1000 | 0x2fef000 | closed-source |
+| SI_DESC | 0x0 | 0x1000 | data |
+| RW_MRC_CACHE | 0x3000000 | 0x10000 | data |
+| SMMSTORE | 0x3010000 | 0x40000 | data |
+| CONSOLE | 0x3050000 | 0x20000 | data |
+| RW_VPD | 0x3070000 | 0x4000 | data |
+| FMAP | 0x3074000 | 0x1000 | data |
+| RO_VPD | 0x3075000 | 0x4000 | data |
+
+### CBFS COREBOOT
+
+* CBFS size: 16281600
+* Number of files: 25
+* Open-source files size: 1817079 (0x1bb9f7)
+* Closed-source files size: 5711087 (0x5724ef)
+* Data size: 18186 (0x470a)
+* Empty size: 8735248 (0x854a10)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1401138 | none | open-source |
+| fallback/romstage | stage | 71448 | none | open-source |
+| fallback/dsdt.aml | raw | 11313 | none | open-source |
+| fallback/postcar | stage | 48180 | none | open-source |
+| stm.bin | raw | 66920 | LZMA | open-source |
+| fallback/ramstage | stage | 164832 | LZMA | open-source |
+| bootblock | bootblock | 53248 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 1796096 | none | closed-source |
+| txt_bios_acm.bin | raw | 262144 | none | closed-source |
+| fspm.bin | fsp | 3375104 | none | closed-source |
+| fsps.bin | fsp | 185328 | LZ4 | closed-source |
+| txt_sinit_acm.bin | raw | 59647 | LZMA | closed-source |
+| fspt.bin | fsp | 32768 | none | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| intel_fit | intel_fit | 272 | none | data |
+| boot_policy_manifest.bin | raw | 1536 | none | data |
+| key_manifest.bin | raw | 1024 | none | data |
+| config | raw | 5273 | LZMA | data |
+| revision | raw | 908 | none | data |
+| build_info | raw | 107 | none | data |
+| sbom | raw | 6349 | none | data |
+| (empty) | null | 24100 | none | empty |
+| (empty) | null | 2788 | none | empty |
+| (empty) | null | 8663396 | none | empty |
+| (empty) | null | 44964 | none | empty |
+
 ## v0.9.1
 
 Openness Score for asrock_spc741d8_v0.9.1.rom
