@@ -116,6 +116,16 @@ and their versions used to build the firmware images. The published SBOM
 artifact is in CycloneDX format and can be viewed by SBOM tools, for example
 [sbom-tools](https://github.com/sbom-tool/sbom-tools).
 
+### Measured boot provenance report
+
+[asrock_spc741d8_v0.9.3_txt_mbprov_report.html][asrock_spc741d8_v0.9.3_txt_mbprov_report.html_file]{.md-button}
+
+The measured boot provenance report presents the evidence collected from a
+running Dasharo machine (its SPI image, the TCG event logs of coreboot and the
+payload, the live PCR values, a TPM quote, platform registers) and matches it
+against the SBOM and the reproducibly built firmware image. It exists so that
+reviewers can audit the firmware and to present attestation reference.
+
 ### EU Cyber Resilience Act (CRA)
 
 The [EU Cyber Resilience Act](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
@@ -322,6 +332,7 @@ requirements with [sbom-tools](https://github.com/sbom-tool/sbom-tools).
     ✘ Linux swap:                    Unencrypted
     ```
 
+[asrock_spc741d8_v0.9.3_txt_mbprov_report.html_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.3/asrock_spc741d8_v0.9.3_txt_mbprov_report.html
 [asrock_spc741d8_v0.9.3.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.3/asrock_spc741d8_v0.9.3.sbom.json
 [asrock_spc741d8_v0.9.3.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.3/asrock_spc741d8_v0.9.3.sbom.json.sha256
 [asrock_spc741d8_v0.9.3.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/asrock_spc741d8/uefi/v0.9.3/asrock_spc741d8_v0.9.3.sbom.json.sha256.sig
