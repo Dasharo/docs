@@ -1,4 +1,5 @@
 Manufacturer,Device,[Firmware Update Mode][fum],[Capsule Update V1][cup1],[FWUPD][fwupd],[LVFS][lvfs],[Capsule Update V2][cup2],[EC Capsule Update][ec-cup]
+ASRock,Rack SPC741D8-2L2T/BCM,-,v0.9.3,-,-,-,-
 ASRock,Rack TURIND8UD-2T/X550,v0.9.0,-,-,-,-,-
 Dell,OptiPlex 7010/9010,v0.1.1,-,-,-,-,-
 Gigabyte,MZ33-AR1,v0.9.0,-,-,-,-,-

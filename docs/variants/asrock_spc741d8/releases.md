@@ -30,7 +30,7 @@ Test results for this release can be found
 - Enabled boot media write protection
 - ME/SPS FWSTS reporting via SMBIOS
 - ACM version extraction in SBOM
-- [UEFI Capsule Update V1 support with Capsule on Disk](https://docs.dasharo.com/unified-test-documentation/dasharo-stability/capsule-update/)
+- [Capsule Update V1](https://docs.dasharo.com/unified-test-documentation/dasharo-stability/capsule-update/)
 
 ### Changed
 
