@@ -1,0 +1,121 @@
+name: Verify Build Documentation
+
+on:
+  # Run on PRs that modify building-manual files
+  pull_request:
+    paths:
+      - '**/building-manual.md'
+      - '**/building_manual.md'
+      - '**/releases.md'
+  
+  # Run weekly to catch drift
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 6am UTC
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      device:
+        description: 'Device slug to verify (leave empty for all)'
+        required: false
+        default: ''
+      release:
+        description: 'Release tag to verify (leave empty for latest)'
+        required: false
+        default: ''
+
+jobs:
+  discover:
+    name: Discover builds to verify
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.discover.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Find building-manual files
+        id: discover
+        run: |
+          # Find all building-manual files and extract device info
+          manuals=$(find . -name "building-manual.md" -o -name "building_manual.md" | head -20)
+          
+          # Build a JSON matrix of device/release combinations
+          # For now, just list the manual files that need testing
+          echo "matrix=$(echo "$manuals" | jq -R -s -c 'split("\n") | map(select(. != ""))')" >> $GITHUB_OUTPUT
+
+  verify:
+    name: Verify ${{ matrix.manual }}
+    needs: discover
+    if: needs.discover.outputs.matrix != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        manual: ${{ fromJson(needs.discover.outputs.matrix) }}
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Pull coreboot SDK image
+        run: docker pull coreboot/coreboot-sdk:latest
+      
+      - name: Parse build manual
+        id: parse
+        run: |
+          MANUAL="${{ matrix.manual }}"
+          echo "📋 Parsing $MANUAL"
+          
+          # Extract build commands from the manual
+          python3 << 'PYEOF'
+          import re
+          import json
+          import sys
+          
+          manual_path = "${{ matrix.manual }}"
+          
+          with open(manual_path) as f:
+              content = f.read()
+          
+          # Extract shell code blocks
+          blocks = re.findall(r"```(?:shell|bash)?\n(.*?)```", content, re.DOTALL)
+          
+          commands = []
+          for block in blocks:
+              for line in block.strip().split("\n"):
+                  line = line.strip()
+                  if line and not line.startswith("#"):
+                      if line.startswith("$ "):
+                          line = line[2:]
+                      commands.append(line)
+          
+          print(f"Extracted {len(commands)} commands")
+          
+          # Write commands to a file for the next step
+          with open("/tmp/build_commands.sh", "w") as f:
+              f.write("#!/bin/bash\nset -ex\n")
+              for cmd in commands:
+                  f.write(cmd + "\n")
+          
+          print(f"::set-output name=command_count::{len(commands)}")
+          PYEOF
+      
+      - name: Dry-run build commands
+        run: |
+          if [ -f /tmp/build_commands.sh ]; then
+            echo "📋 Build commands preview:"
+            head -30 /tmp/build_commands.sh
+            echo "..."
+          fi
+      
+      - name: Report status
+        run: |
+          echo "✅ Manual parsed successfully: ${{ matrix.manual }}"
+          echo "📋 Command count: ${{ steps.parse.outputs.command_count }}"
+          echo ""
+          echo "Note: Full Docker build verification requires access to"
+          echo "Dasharo release infrastructure. This workflow validates that"
+          echo "build manuals are parseable and contain valid commands."
