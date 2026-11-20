@@ -24,6 +24,14 @@ internals but differ a bit regarding expansion possibilities. Additionally the
 Precision T1650 has essentially the same board as the MT featuring a workstation
 grade C216 chipset.
 
+### Current support scope
+
+At the moment, Dasharo deployment/recovery support for this variant
+is focused on the **OptiPlex 7010/9010 SFF shared baseline**.
+Other form factors
+(DT/MT/USFF) may share parts of the platform but require separate validation
+work before being treated as fully supported in the same way.
+
 |                 | MT - Medium Tower           | DT - Desktop                | SFF - Small Form Factor | USFF - Ultra Small Form Factor |
 | --------------- | --------------------------- | --------------------------- | ----------------------- | ------------------------------ |
 | UDIMM           | 4                           | 4                           | 4                       | 2                              |
