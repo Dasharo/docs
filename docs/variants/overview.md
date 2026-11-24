@@ -125,8 +125,8 @@ Each metric is calculated using the formula:
 | --- | --- | --- | --- | --- | --- |
 | MSI MS-7D25 DDR4 | msi_ms7d25_v1.1.8_ddr4.rom | E7D25IMS.1L0 | -30.8 | 940.1 | -15.3 |
 | MSI MS-7D25 DDR5 | msi_ms7d25_v1.1.8_ddr5.rom | E7D25IMS.AL0 | -30.8 | 940.1 | -15.2 |
-| MSI MS-7E06 DDR4 | msi_ms7e06_v0.9.5_ddr4.rom | E7E07IMS.1K0 | -28.0 | 935.4 | -16.9 |
-| MSI MS-7E06 DDR5 | msi_ms7e06_v0.9.5_ddr5.rom | E7E07IMS.AJ0 | -28.1 | 935.3 | -16.9 |
+| MSI MS-7E06 DDR4 | msi_ms7e06_v0.9.6_ddr4.rom | E7E06IMS.1F0 | -30.5 | 940.2 | -15.6 |
+| MSI MS-7E06 DDR5 | msi_ms7e06_v0.9.6_ddr4.rom | E7E06IMS.AH0 | -30.6 | 940.2 | -15.5 |
 | Protectli FW6 | protectli_all_fw6_vault_kbl_v1.0.14.rom | fw6_all_YKR6LV30.bin | -47.0 | 2163.8 | 116.8 |
 | Protectli V1210 | protectli_v1210_v0.9.4.rom | v1210_JPL.2LAN.S4G.PCIE.6W.013.bin | -28.4 | 5305.0 | 33.6 |
 | Protectli V1211 | protectli_v1211_v0.9.4.rom | v1211_JPL.2LAN.D8G.PCIE.6W.009.bin | -28.4 | 5304.8 | 33.6 |
