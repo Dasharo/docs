@@ -2,6 +2,7 @@
 <!--start-->
 | CPU Model | Dasharo version |  Source  |
 |:---------:|:----------------------:|:---------:|
+| INTEL(R) XEON(R) SILVER 4516Y+ | v0.9.3 | Dasharo HCL Report |
 | Intel(R) Xeon(R) Silver 4410Y | v0.9.0 | Dasharo HCL Report |
 | Intel(R) Xeon(R) Silver 4410Y | v0.9.0-rc3 | Dasharo HCL Report |
 | Intel(R) Xeon(R) Silver 4410Y | v0.9.0-rc4 | Dasharo HCL Report |

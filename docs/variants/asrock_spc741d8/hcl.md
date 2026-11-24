@@ -12,7 +12,7 @@ please consult
 [Dasharo HCL Maintainer documentation](../../dev-proc/hcl-maintainer.md).
 
 <!-- dts-hw-conf-gen: begin of generated HCL tables, see data/hcl-tables.tsv -->
-=== "CPU HCL (26 Oct 2026)"
+=== "CPU HCL (24 Nov 2026)"
 
     CPU Hardware Compatibility List presents the CPUs reported to work with
     Dasharo.
@@ -52,7 +52,7 @@ please consult
         - the firmware flavor is given in parentheses, unless it is
           coreboot+UEFI, e.g. `v0.9.0 (coreboot+heads)`
     * Source:
-        - `Dasharo HCL report` if it was reported using
+        - `Dasharo HCL Report` if it was reported using
           [DTS](../../dasharo-tools-suite/documentation/features.md#hcl-report).
         - Link to the report if it comes from a public hardware database.
 

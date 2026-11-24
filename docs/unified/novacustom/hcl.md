@@ -238,7 +238,7 @@ issue from which the report is sourced.
         - the firmware flavor is given in parentheses, unless it is
           coreboot+UEFI, e.g. `v0.9.0 (coreboot+heads)`
     * Source:
-        - `Dasharo HCL report` if it was reported using
+        - `Dasharo HCL Report` if it was reported using
           [DTS](../../dasharo-tools-suite/documentation/features.md#hcl-report).
         - Link to the report if it comes from a public hardware database.
 
