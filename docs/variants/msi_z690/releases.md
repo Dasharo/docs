@@ -23,6 +23,404 @@ For details about our release process please read
 {{ subscribe_form("bae1674f-bd25-4a12-b6b5-c2099739cd93",
 "Subscribe to Dasharo compatible with MSI PRO Z690-A Newsletter") }}
 
+## v1.1.8 - 2026-11-24
+
+Test results for this release can be found
+[here](https://github.com/Dasharo/osfv-results/blob/main/boards/msi/ms7d25/v1.1.8-results.csv).
+
+### Added
+
+- USB port power configuration option
+- USB wake support
+- Quiet boot/Fast boot options
+- Dasharo ACPI driver support for temperature and fan monitoring
+
+### Changed
+
+- Updated CPU microcode (see SBOM)
+- New settings in Platform Setup Menu now reset to platform-default value
+  instead to zero and will show those values on first boot
+- Per Regulation (EU) 2024/2847, Annex I, Part I, point (2)(b), enabling
+  secure configuration by default - UEFI Secure Boot, SMM BWP, DMA protection.
+  Users with discrete GPUs with unsigned optionROMs or optionROMs not
+  respecting DMA protection and EDKII IOMMU protocol may stop giving graphical
+  output in the firmware. Other add-on cards with insecure optionROMs may also
+  be affected.
+
+### Fixed
+
+- [Incorrect DIMM SPD size causing DDR5 XMP training failure](https://github.com/Dasharo/dasharo-issues/issues/1923)
+- [OS failing to boot with iGPU and dGPU](https://github.com/Dasharo/dasharo-issues/issues/1922)
+- [CPU Turbo Boost not functional](https://github.com/Dasharo/dasharo-issues/issues/1919)
+- [Firmware UI not stretched to full screen resolution](https://github.com/Dasharo/dasharo-issues/issues/1914)
+- [Firmware unable to detect disks](https://github.com/Dasharo/dasharo-issues/issues/1913)
+- PCI Enumeration Done IPC command incorrectly sent to PMC
+- Incorrect PCI ASPM and Clock PM default settings
+
+### Known issues
+
+- [XMP1 profile does not boot in combination with some DDR5 configurations](https://github.com/Dasharo/dasharo-issues/issues/683)
+- [Cannot wake from suspend via RTC on QubesOS](https://github.com/Dasharo/dasharo-issues/issues/484)
+- [Windows 11 installer unable to detect i225 Ethernet NIC](https://github.com/Dasharo/dasharo-issues/issues/482)
+- [Windows 11 VBS (Virtualization-based Security) appears Not enabled on
+  System Information](https://github.com/Dasharo/dasharo-issues/issues/539)
+- [Ubuntu fails to boot with early DMA protection Enabled](https://github.com/Dasharo/dasharo-issues/issues/1869)
+
+### Binaries
+
+[sha256][msi_ms7d25_v1.1.8_ddr4.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr4.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr4.cap)
+[sha256][msi_ms7d25_v1.1.8_ddr4.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr4.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr4.rom)
+[msi_ms7d25_v1.1.8_ddr4.sbom.json][msi_ms7d25_v1.1.8_ddr4.sbom.json_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.8_ddr4.sbom.json_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr4.sbom.json_sig]{.md-button}
+[sha256][msi_ms7d25_v1.1.8_ddr4_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr4_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr4_dev_signed.cap)
+[sha256][msi_ms7d25_v1.1.8_ddr4_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr4_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr4_dev_signed.rom)
+[sha256][msi_ms7d25_v1.1.8_ddr5.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr5.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr5.cap)
+[sha256][msi_ms7d25_v1.1.8_ddr5.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr5.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr5.rom)
+[msi_ms7d25_v1.1.8_ddr5.sbom.json][msi_ms7d25_v1.1.8_ddr5.sbom.json_file]{.md-button}
+[sha256][msi_ms7d25_v1.1.8_ddr5.sbom.json_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr5.sbom.json_sig]{.md-button}
+[sha256][msi_ms7d25_v1.1.8_ddr5_dev_signed.cap_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr5_dev_signed.cap_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr5_dev_signed.cap)
+[sha256][msi_ms7d25_v1.1.8_ddr5_dev_signed.rom_hash]{.md-button}
+[sha256.sig][msi_ms7d25_v1.1.8_ddr5_dev_signed.rom_sig]{.md-button}
+(msi_ms7d25_v1.1.8_ddr5_dev_signed.rom)
+
+This is a Dasharo Pro Package release. For this platform, access to pre-built
+binaries is provided exclusively through the [Full Build for MSI PRO Z690-A
+(WIFI) and PRO Z690-A (WIFI)
+DDR4](https://shop.3mdeb.com/product/1year-desktop/), a bundled
+hardware-and-firmware product available in the 3mdeb shop. A standalone
+Dasharo Pro Package subscription is not offered for this platform.
+
+With the Full Build, you receive firmware updates for the duration of your
+subscription via the Dasharo Pro Package newsletter, and gain entry to the
+Dasharo Premier Support invite-only live chat on the Matrix network, enabling
+direct engagement with the Dasharo Team and fellow subscribers for
+personalized, priority assistance.
+
+To verify binary integrity with hash and signature please follow the
+instructions in [Dasharo release signature
+verification](../../guides/signature-verification.md) using [this
+key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/msi_ms7d25/dasharo-release-1.x-compatible-with-msi-ms-7d25-signing-key.asc)
+
+### SBOM (Software Bill of Materials)
+
+- [Dasharo coreboot fork based on 25.12 revision 47e2b560](https://github.com/Dasharo/coreboot/tree/47e2b560)
+    + [License](https://github.com/Dasharo/coreboot/blob/47e2b560/COPYING)
+- [Dasharo EDKII fork based on edk2-stable202602 revision 0cacb9d1](https://github.com/Dasharo/edk2/tree/0cacb9d1)
+    + [License](https://github.com/Dasharo/edk2/blob/0cacb9d1/License.txt)
+- [Dasharo EDK2-platforms fork based on 1002a59639f111a2f8178b77d1f5fde0ea8d976f revision 4db2845d](https://github.com/Dasharo/edk2-platforms/tree/4db2845d)
+    + [License](https://github.com/Dasharo/edk2-platforms/blob/4db2845d/License.txt)
+- [iPXE based on ad8cbcee950840547f87394179a7e712e1c3c06f revision ad8cbcee](https://github.com/Dasharo/ipxe/tree/ad8cbcee)
+    + [License](https://github.com/Dasharo/ipxe/blob/ad8cbcee/COPYING.GPLv2)
+- [vboot based on 3f94e2c7ed revision 3f94e2c7](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3f94e2c7/)
+    + [License](https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/3f94e2c7/LICENSE)
+- [Intel Management Engine version v16.1.30.2307](https://github.com/Dasharo/dasharo-blobs/blob/fbe0c65c/msi/ms7d25/me.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Flash Descriptor version v1.1](https://github.com/Dasharo/dasharo-blobs/blob/fbe0c65c/msi/ms7d25/descriptor.bin)
+    + [License](https://github.com/Dasharo/dasharo-blobs/blob/main/licenses/pv%20intel%20obl%20software%20license%20agreement%2011.2.2017.pdf)
+- [Intel Firmware Support Package version RPL-S C.0.C8.50](https://github.com/intel/FSP/tree/7cb9638a/RaptorLakeFspBinPkg/Client/RaptorLakeS)
+    + [License](https://github.com/intel/FSP/blob/7cb9638a/FSP_License.pdf)
+- [Intel microcode version ADL/RPL C0/H0 0x3e 12/10/2025](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260925/intel-ucode/06-97-05)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260925/license)
+- [Intel microcode version RPL B0 0x137 18/02/2026](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/tree/microcode-20260925/intel-ucode/06-b7-01)
+    + [License](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/blob/microcode-20260925/license)
+
+An [integrated SBOM](https://doc.coreboot.org/sbom/sbom.html) is also
+included in the firmware images. It describes a complete set of components
+and their versions used to build the firmware images. The published SBOM
+artifact is in CycloneDX format and can be viewed by SBOM tools, for example
+[sbom-tools](https://github.com/sbom-tool/sbom-tools).
+
+### Measured boot provenance report
+
+[msi_ms7d25_v1.1.8_ddr4_mbprov_report.html][msi_ms7d25_v1.1.8_ddr4_mbprov_report.html_file]{.md-button}
+
+The measured boot provenance report presents the evidence collected from a
+running Dasharo machine (its SPI image, the TCG event logs of coreboot and the
+payload, the live PCR values, a TPM quote, platform registers) and matches it
+against the SBOM and the reproducibly built firmware image. It exists so that
+reviewers can audit the firmware and to present attestation reference.
+
+### EU Cyber Resilience Act (CRA)
+
+The [EU Cyber Resilience Act](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
+requires manufacturers to document what their products are made of and how
+they handle security issues. This release ships a Software Bill of Materials
+(SBOM) that lists every firmware component. We check it against the CRA
+requirements with [sbom-tools](https://github.com/sbom-tool/sbom-tools).
+
+!!! success "EU CRA Phase 1 (2026): Compliant"
+
+    *Vulnerability and incident reporting (Article 14): how security issues are reported to us and how we notify the authorities. Applies from 11 September 2026.*
+
+    All mandatory requirements are met. 1 recommendation can still be improved.
+
+    | Area | What it covers | :material-close-circle:{ style="color: #ff5252" title="Failed" } Errors | :material-alert:{ style="color: #ff9100" title="Warning" } Warnings | :material-information:{ style="color: #448aff" title="Info" } Info |
+    | --- | --- | :---: | :---: | :---: |
+    | **Security Information** | How to report vulnerabilities and get security updates | 0 | 0 | 4 |
+    | **Integrity Information** | Checksums that prove each component is unmodified | 0 | 0 | 1 |
+    | **Document Metadata** | Who made the firmware and when the SBOM was created | 0 | 1 | 0 |
+
+    **Errors** are serious gaps. **Warnings** are smaller gaps or
+    recommendations; after a phase's deadline, missing items are reported as
+    warnings too. **Info** findings are for reference only.
+
+    ??? info "Show all findings"
+
+        - :material-alert:{ style="color: #ff9100" title="Warning" }
+          **CRA Art. 13(7) / Annex I Part II (1): SBOM freshness** (Document Metadata): SBOM has no creation timestamp; keep the documented component inventory current when components change
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Annex I Part I (2)(f): Component integrity information (hash)** (Integrity Information): Component 'coreboot' missing cryptographic hash (recommended for integrity)
+          *Components: coreboot*
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Annex I Part II (1): Documented vulnerability information** (Security Information): No vulnerability data or vulnerability assertion found; include vulnerability information or a statement of no known vulnerabilities
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Art. 13(17): Vulnerability disclosure contact** (Security Information): Security contact provided via CRA sidecar (consider adding a security-contact externalReference to the SBOM)
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Art. 13(8) / 13(19): Support period disclosure** (Security Information): Consider specifying a support end date for security updates
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Art. 14(7): ENISA single reporting platform** (Security Information): No ENISA single reporting platform identifier — track ENISA publication and add `enisaReportingPlatformId` to the CRA sidecar when available
+
+!!! success "EU CRA Phase 2 (2027): Compliant"
+
+    *All CRA requirements for products sold in the EU, including a complete SBOM, security updates and a support period. Applies from 11 December 2027.*
+
+    All mandatory requirements are met. 1 recommendation can still be improved.
+
+    | Area | What it covers | :material-close-circle:{ style="color: #ff5252" title="Failed" } Errors | :material-alert:{ style="color: #ff9100" title="Warning" } Warnings | :material-information:{ style="color: #448aff" title="Info" } Info |
+    | --- | --- | :---: | :---: | :---: |
+    | **Security Information** | How to report vulnerabilities and get security updates | 0 | 0 | 6 |
+    | **Document Metadata** | Who made the firmware and when the SBOM was created | 0 | 1 | 1 |
+    | **Integrity Information** | Checksums that prove each component is unmodified | 0 | 0 | 1 |
+
+    **Errors** are serious gaps. **Warnings** are smaller gaps or
+    recommendations; after a phase's deadline, missing items are reported as
+    warnings too. **Info** findings are for reference only.
+
+    ??? info "Show all findings"
+
+        - :material-alert:{ style="color: #ff9100" title="Warning" }
+          **CRA Art. 13(7) / Annex I Part II (1): SBOM freshness** (Document Metadata): SBOM has no creation timestamp; keep the documented component inventory current when components change
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Annex V: EU Declaration of Conformity reference** (Document Metadata): Missing reference to the EU Declaration of Conformity (attestation or certification external reference) for product class Default
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Annex I Part I (2)(f): Component integrity information (hash)** (Integrity Information): Component 'coreboot' missing cryptographic hash (recommended for integrity)
+          *Components: coreboot*
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Annex I Part II (1): Documented vulnerability information** (Security Information): No vulnerability data or vulnerability assertion found; include vulnerability information or a statement of no known vulnerabilities
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Annex I Part II (5): Coordinated vulnerability disclosure policy** (Security Information): CVD policy URL provided via CRA sidecar (consider adding an advisories externalReference to the SBOM)
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Annex II (7): Component lifecycle status** (Security Information): Consider including component lifecycle/end-of-support information
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Art. 13(17): Vulnerability disclosure contact** (Security Information): Security contact provided via CRA sidecar (consider adding a security-contact externalReference to the SBOM)
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Art. 13(8) / 13(19): Support period disclosure** (Security Information): Consider specifying a support end date for security updates
+        - :material-information:{ style="color: #448aff" title="Info" }
+          **CRA Art. 14(7): ENISA single reporting platform** (Security Information): No ENISA single reporting platform identifier — track ENISA publication and add `enisaReportingPlatformId` to the CRA sidecar when available
+
+### Platform security (fwupd HSI)
+
+!!! danger "HSI:0 (Insecure State)"
+
+    Little or no firmware protection was detected.
+
+    [fwupd](https://fwupd.org) tested this firmware on real hardware and gave
+    it a Host Security ID of **HSI:0**, level 0
+    on a scale from 0 (Insecure) to 4 (Secure). Higher is better. To reach a
+    level, the platform must pass all of the checks at that level and at all
+    of the levels below it.
+    [More about HSI](https://fwupd.github.io/libfwupdplugin/hsi.html).
+
+| Level | What it covers | Checks passed | Result |
+| --- | --- | :---: | :---: |
+| **HSI-1**<br>Critical | The most basic protections, considered essential. A failure here could let an attacker compromise the firmware without physical access. | 13 / 14 | :material-close-circle:{ style="color: #ff5252" title="Failed" } |
+| **HSI-2**<br>Risky | Protection of the boot process against an attacker with local access. Failures here are theoretical or hard to exploit. | 6 / 8 | :material-close-circle:{ style="color: #ff5252" title="Failed" } |
+| **HSI-3**<br>Protected | Out-of-band protection of the firmware, possibly including recovery. | 2 / 5 | :material-close-circle:{ style="color: #ff5252" title="Failed" } |
+| **HSI-4**<br>Secure | Encryption and execution protection for the firmware. | 2 / 2 | :material-check-circle:{ style="color: #00c853" title="Passed" } |
+| **Runtime (!)** | Security issues in the operating system that was running during the test, such as an unencrypted swap partition. They add a "!" to the result but never change the level. | 4 / 6 | :material-alert:{ style="color: #ff9100" title="Warning" } |
+
+??? failure "HSI-1 Critical: 13 of 14 checks passed"
+
+    | | Check | What it checks | Status |
+    | :---: | --- | --- | --- |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **BIOS firmware updates** | Firmware updates can be installed through the standard UEFI capsule mechanism. | Enabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **csme16 override** | The Intel Management Engine cannot be forced into debug mode. | Locked |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **csme16 v16.1.30.2307** | The Intel Management Engine firmware has no known vulnerabilities. | Valid |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Platform debugging** | Hardware debugging interfaces are disabled and locked. | Disabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **SPI write** | The firmware flash chip is locked against writes from the OS. | Disabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **SPI lock** | The firmware flash chip is locked against writes from the OS. | Enabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **SPI BIOS region** | Only trusted firmware code (SMM) can write the flash chip. | Locked |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Supported CPU** | fwupd knows how to check the security of this processor. | Valid |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **TPM empty PCRs** | The firmware records every boot stage in the TPM. | Valid |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **TPM v2.0** | A TPM 2.0 security chip is present and usable. | Found |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **UEFI bootservice variables** | Firmware-internal UEFI variables cannot be changed from the OS. | Locked |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **UEFI platform key** | Secure Boot uses a valid, non-test platform key. | Valid |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **UEFI secure boot** | Only signed bootloaders and operating systems are allowed to start. | Enabled |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **SPI BIOS Descriptor** | The flash layout cannot be changed to unlock protected regions.<br>**Why it fails:** [issue 1](#hsi-issue-1) | Invalid |
+
+??? failure "HSI-2 Risky: 6 of 8 checks passed"
+
+    | | Check | What it checks | Status |
+    | :---: | --- | --- | --- |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Intel BootGuard** | Intel Boot Guard, a hardware root of trust for the firmware, is enabled. | Enabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Intel BootGuard OTP fuse** | The Boot Guard configuration is permanently burned into the chipset. | Valid |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Intel GDS mitigation** |  | Enabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **IOMMU** | Devices are restricted to the memory they are allowed to use (blocks DMA attacks, e.g. via Thunderbolt). | Enabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Platform debugging** | Hardware debugging interfaces are disabled and locked. | Locked |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **TPM PCR0 reconstruction** | The TPM boot measurements match the firmware event log. | Valid |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **Intel BootGuard ACM protected** | The Intel Boot Guard code that verifies the firmware is itself protected.<br>**Why it fails:** [issue 4](#hsi-issue-4) | Invalid |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **Intel BootGuard verified boot** | Boot Guard checks the firmware signature before running it.<br>**Why it fails:** [issue 5](#hsi-issue-5) | Invalid |
+
+??? failure "HSI-3 Protected: 2 of 5 checks passed"
+
+    | | Check | What it checks | Status |
+    | :---: | --- | --- | --- |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **CET Platform** | Control-flow Enforcement Technology, which blocks a common class of exploits, is available. | Supported |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Pre-boot DMA protection** | Devices cannot read or write memory through DMA before the OS has started. | Enabled |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **Intel BootGuard error policy** | The system refuses to boot if firmware verification fails.<br>**Why it fails:** [issue 6](#hsi-issue-6) | Invalid |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **Suspend-to-idle** | The system supports modern standby, which keeps protections active while asleep.<br>**Why it fails:** [issue 2](#hsi-issue-2) | Disabled |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **Suspend-to-ram** | The system does not use S3 sleep, during which memory is less protected.<br>**Why it fails:** [issue 3](#hsi-issue-3) | Enabled |
+
+??? success "HSI-4 Secure: 2 of 2 checks passed"
+
+    | | Check | What it checks | Status |
+    | :---: | --- | --- | --- |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Encrypted RAM** | RAM contents are encrypted, protecting against cold-boot and bus snooping attacks. | Enabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **SMAP** | The kernel is prevented from accidentally accessing user memory. | Enabled |
+
+??? warning "Runtime: 4 of 6 checks passed"
+
+    Security issues in the operating system that was running during the test, such as an unencrypted swap partition. They add a "!" to the result but never change the level.
+
+    | | Check | What it checks | Status |
+    | :---: | --- | --- | --- |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **fwupd plugins** | fwupd is running without third-party plugins. | Untainted |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Linux kernel lockdown** | The Linux kernel blocks root from modifying the running kernel. | Enabled |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **Linux kernel** | The Linux kernel has not loaded unsigned or proprietary modules. | Untainted |
+    | :material-check-circle:{ style="color: #00c853" title="Passed" } | **UEFI db** | The Secure Boot allow-list is up to date. | Valid |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **CET OS Support** | The operating system uses Control-flow Enforcement Technology to block a common class of exploits.<br>**Why it fails:** [issue 7](#hsi-issue-7) | Not supported |
+    | :material-close-circle:{ style="color: #ff5252" title="Failed" } | **Linux swap** | Swap space is encrypted, so memory contents are not written to disk in the clear.<br>**Why it fails:** [issue 8](#hsi-issue-8) | Unencrypted |
+
+#### Why some checks fail
+
+1. <a id="hsi-issue-1"></a>**SPI BIOS Descriptor (HSI-1):** Flash regions are
+   not locked to allow ME HAP mode to be enabled. Future releases may lock the
+   descriptor.
+2. <a id="hsi-issue-2"></a>**Suspend-to-idle (HSI-3):** Suspend-to-idle is can
+   be supported on this platform, but many PCIe cards do not work well with
+   that sleep mode, thus it is not enabled yet. Future releases may enable
+   this feature.
+3. <a id="hsi-issue-3"></a>**Suspend-to-ram (HSI-3):** Suspend-to-ram is
+   enabled by default on this platform, but can be made runtime configurable
+   when Suspend-to-idle is properly supported. Future releases may add setup
+   option with Suspend-to-ram disabled by default, in favor of
+   Suspend-to-idle.
+4. <a id="hsi-issue-4"></a>**Intel BootGuard ACM protected (HSI-2):** Intel
+   Boot Guard is possible to be enabled on this platform, as they come with ME
+   in manufacturing mode, unlike Z790 boards. To keep parity with Z790 boards,
+   BootGuard is disabled for now.
+5. <a id="hsi-issue-5"></a>**Intel BootGuard verified boot (HSI-2):** Intel
+   Boot Guard is possible to be enabled on this platform, as they come with ME
+   in manufacturing mode, unlike Z790 boards. To keep parity with Z790 boards,
+   BootGuard is disabled for now.
+6. <a id="hsi-issue-6"></a>**Intel BootGuard error policy (HSI-3):** Intel
+   Boot Guard is possible to be enabled on this platform, as they come with ME
+   in manufacturing mode, unlike Z790 boards. To keep parity with Z790 boards,
+   BootGuard is disabled for now.
+7. <a id="hsi-issue-7"></a>**CET OS Support (Runtime):** [CET OS check is not
+   reliable.](https://github.com/fwupd/fwupd/issues/10162)
+8. <a id="hsi-issue-8"></a>**Linux swap (Runtime):** The swap partitions or
+   image files are not encrypted by default on Linux.
+
+??? abstract "Full `fwupdmgr security` output"
+
+    ```text
+    HSI-1
+    ✔ BIOS firmware updates:         Enabled
+    ✔ csme16 override:               Locked
+    ✔ csme16 v16.1.30.2307:          Valid
+    ✔ Platform debugging:            Disabled
+    ✔ SPI write:                     Disabled
+    ✔ SPI lock:                      Enabled
+    ✔ SPI BIOS region:               Locked
+    ✔ Supported CPU:                 Valid
+    ✔ TPM empty PCRs:                Valid
+    ✔ TPM v2.0:                      Found
+    ✔ UEFI bootservice variables:    Locked
+    ✔ UEFI platform key:             Valid
+    ✔ UEFI secure boot:              Enabled
+    ✘ SPI BIOS Descriptor:           Invalid
+
+    HSI-2
+    ✔ Intel BootGuard:               Enabled
+    ✔ Intel BootGuard OTP fuse:      Valid
+    ✔ Intel GDS mitigation:          Enabled
+    ✔ IOMMU:                         Enabled
+    ✔ Platform debugging:            Locked
+    ✔ TPM PCR0 reconstruction:       Valid
+    ✘ Intel BootGuard ACM protected: Invalid
+    ✘ Intel BootGuard verified boot: Invalid
+
+    HSI-3
+    ✔ CET Platform:                  Supported
+    ✔ Pre-boot DMA protection:       Enabled
+    ✘ Intel BootGuard error policy:  Invalid
+    ✘ Suspend-to-idle:               Disabled
+    ✘ Suspend-to-ram:                Enabled
+
+    HSI-4
+    ✔ Encrypted RAM:                 Enabled
+    ✔ SMAP:                          Enabled
+
+    Runtime Suffix -!
+    ✔ fwupd plugins:                 Untainted
+    ✔ Linux kernel lockdown:         Enabled
+    ✔ Linux kernel:                  Untainted
+    ✔ UEFI db:                       Valid
+    ✘ CET OS Support:                Not supported
+    ✘ Linux swap:                    Unencrypted
+    ```
+
+[msi_ms7d25_v1.1.8_ddr4_mbprov_report.html_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4_mbprov_report.html
+[msi_ms7d25_v1.1.8_ddr4.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4.cap.sha256
+[msi_ms7d25_v1.1.8_ddr4.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4.cap.sha256.sig
+[msi_ms7d25_v1.1.8_ddr4.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4.rom.sha256
+[msi_ms7d25_v1.1.8_ddr4.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4.rom.sha256.sig
+[msi_ms7d25_v1.1.8_ddr4.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4.sbom.json
+[msi_ms7d25_v1.1.8_ddr4.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4.sbom.json.sha256
+[msi_ms7d25_v1.1.8_ddr4.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4.sbom.json.sha256.sig
+[msi_ms7d25_v1.1.8_ddr4_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4_dev_signed.cap.sha256
+[msi_ms7d25_v1.1.8_ddr4_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4_dev_signed.cap.sha256.sig
+[msi_ms7d25_v1.1.8_ddr4_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.8_ddr4_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr4_dev_signed.rom.sha256.sig
+[msi_ms7d25_v1.1.8_ddr5.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5.cap.sha256
+[msi_ms7d25_v1.1.8_ddr5.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5.cap.sha256.sig
+[msi_ms7d25_v1.1.8_ddr5.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5.rom.sha256
+[msi_ms7d25_v1.1.8_ddr5.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5.rom.sha256.sig
+[msi_ms7d25_v1.1.8_ddr5.sbom.json_file]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5.sbom.json
+[msi_ms7d25_v1.1.8_ddr5.sbom.json_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5.sbom.json.sha256
+[msi_ms7d25_v1.1.8_ddr5.sbom.json_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5.sbom.json.sha256.sig
+[msi_ms7d25_v1.1.8_ddr5_dev_signed.cap_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5_dev_signed.cap.sha256
+[msi_ms7d25_v1.1.8_ddr5_dev_signed.cap_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5_dev_signed.cap.sha256.sig
+[msi_ms7d25_v1.1.8_ddr5_dev_signed.rom_hash]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5_dev_signed.rom.sha256
+[msi_ms7d25_v1.1.8_ddr5_dev_signed.rom_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/msi_ms7d25/uefi/v1.1.8/msi_ms7d25_v1.1.8_ddr5_dev_signed.rom.sha256.sig
+
 ## v1.1.7 - 2026-08-13
 
 Test results for this release can be found
@@ -82,6 +480,11 @@ This is an [Assured Dasharo release](../../dasharo-naming-convention.md#descript
 - [Ubuntu fails to boot with early DMA protection Enabled](https://github.com/Dasharo/dasharo-issues/issues/1869)
 
 ### Binaries
+
+!!! Notice
+
+    The release binaries have been withdrawn from the storage system to avoid
+    updates to the unstable firmware version.
 
 [sha256][msi_ms7d25_v1.1.7_ddr4.cap_hash]{.md-button}
 [sha256.sig][msi_ms7d25_v1.1.7_ddr4.cap_sig]{.md-button}

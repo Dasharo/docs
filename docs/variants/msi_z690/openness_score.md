@@ -6,6 +6,173 @@ compatible with MSI PRO Z690-A boards. The content of the page is generated
 with [Dasharo Openness Score
 utility](https://github.com/Dasharo/Openness-Score).
 
+## v1.1.8
+
+Report has been generated with Openness Score utility version v0.2-5-g6f4af25e78d5
+
+Openness Score for msi_ms7d25_v1.1.8_ddr5.rom
+
+Open-source code percentage: **39.2%**
+Closed-source code percentage: **60.8%**
+
+* Image size: 33554432 (0x2000000)
+* Number of regions: 36
+* Number of CBFSes: 4
+* Total open-source code size: 5699358 (0x56f71e)
+* Total closed-source code size: 8823123 (0x86a153)
+* Total data size: 1491217 (0x16c111)
+* Total empty size: 17540734 (0x10ba67e)
+
+![](msi_ms7d25_v1.1.8_ddr5.rom_openness_chart.png)
+
+![](msi_ms7d25_v1.1.8_ddr5.rom_openness_chart_full_image.png)
+
+> Numbers given above already include the calculations from CBFS regions
+> presented below
+
+### FMAP regions
+
+| FMAP region | Offset | Size | Category |
+| ----------- | ------ | ---- | -------- |
+| SI_ME | 0x1000 | 0x3ff000 | closed-source |
+| SI_DESC | 0x0 | 0x1000 | data |
+| SMMSTORE | 0x1000000 | 0x80000 | data |
+| BPA | 0x1080000 | 0x20000 | data |
+| RECOVERY_MRC_CACHE | 0x10a0000 | 0x20000 | data |
+| RW_MRC_CACHE | 0x10c0000 | 0x20000 | data |
+| RW_ELOG | 0x10e0000 | 0x4000 | data |
+| SHARED_DATA | 0x10e4000 | 0x2000 | data |
+| VBLOCK_DEV | 0x10e6000 | 0x2000 | data |
+| RW_VPD | 0x10e8000 | 0x2000 | data |
+| RW_NVRAM | 0x10ea000 | 0x6000 | data |
+| CONSOLE | 0x10f0000 | 0x20000 | data |
+| HSPHY_FW | 0x1110000 | 0x8000 | data |
+| VBLOCK_A | 0x1318000 | 0x10000 | data |
+| RW_FWID_A | 0x17bff00 | 0x100 | data |
+| ROMHOLE | 0x17c0000 | 0x20000 | data |
+| VBLOCK_B | 0x17e0000 | 0x10000 | data |
+| RW_FWID_B | 0x1bfff00 | 0x100 | data |
+| RO_VPD | 0x1c00000 | 0x4000 | data |
+| FMAP | 0x1c04000 | 0x800 | data |
+| RO_FRID | 0x1c04800 | 0x100 | data |
+| GBB | 0x1c05000 | 0x3000 | data |
+| UNUSED | 0x400000 | 0xc00000 | empty |
+| RO_FRID_PAD | 0x1c04900 | 0x700 | empty |
+
+### CBFS BOOTSPLASH
+
+* CBFS size: 2097152
+* Number of files: 1
+* Open-source files size: 0 (0x0)
+* Closed-source files size: 0 (0x0)
+* Data size: 28 (0x1c)
+* Empty size: 2097124 (0x1fffe4)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| (empty) | null | 2097124 | none | empty |
+
+### CBFS FW_MAIN_A
+
+* CBFS size: 4816640
+* Number of files: 15
+* Open-source files size: 1867018 (0x1c7d0a)
+* Closed-source files size: 1544305 (0x179071)
+* Data size: 15388 (0x3c1c)
+* Empty size: 1389929 (0x153569)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1408960 | none | open-source |
+| fallback/romstage | stage | 113480 | none | open-source |
+| fallback/ramstage | stage | 175116 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 12381 | none | open-source |
+| fallback/postcar | stage | 90156 | none | open-source |
+| stm.bin | raw | 66925 | LZMA | open-source |
+| cpu_microcode_blob.bin | microcode | 474112 | none | closed-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 283761 | LZ4 | closed-source |
+| config | raw | 6145 | LZMA | data |
+| revision | raw | 903 | none | data |
+| build_info | raw | 138 | none | data |
+| vbt.bin | raw | 1257 | LZMA | data |
+| sbom | raw | 5883 | none | data |
+| (empty) | null | 2148 | none | empty |
+
+### CBFS FW_MAIN_B
+
+* CBFS size: 4259584
+* Number of files: 15
+* Open-source files size: 1867018 (0x1c7d0a)
+* Closed-source files size: 1544305 (0x179071)
+* Data size: 15388 (0x3c1c)
+* Empty size: 832873 (0xcb569)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1408960 | none | open-source |
+| fallback/romstage | stage | 113480 | none | open-source |
+| fallback/ramstage | stage | 175116 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 12381 | none | open-source |
+| fallback/postcar | stage | 90156 | none | open-source |
+| stm.bin | raw | 66925 | LZMA | open-source |
+| cpu_microcode_blob.bin | microcode | 474112 | none | closed-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 283761 | LZ4 | closed-source |
+| config | raw | 6145 | LZMA | data |
+| revision | raw | 903 | none | data |
+| build_info | raw | 138 | none | data |
+| vbt.bin | raw | 1257 | LZMA | data |
+| sbom | raw | 5883 | none | data |
+| (empty) | null | 2148 | none | empty |
+
+### CBFS COREBOOT
+
+* CBFS size: 4161536
+* Number of files: 19
+* Open-source files size: 1965322 (0x1dfd0a)
+* Closed-source files size: 1544305 (0x179071)
+* Data size: 15805 (0x3dbd)
+* Empty size: 636104 (0x9b4c8)
+
+> Numbers given above are already normalized (i.e. they already include size
+> of metadata and possible closed-source LAN drivers included in the payload
+> which are not visible in the table below)
+
+| CBFS filename | CBFS filetype | Size | Compression | Category |
+| ------------- | ------------- | ---- | ----------- | -------- |
+| fallback/payload | simple elf | 1408960 | none | open-source |
+| fallback/romstage | stage | 113480 | none | open-source |
+| fallback/ramstage | stage | 175116 | LZMA | open-source |
+| fallback/dsdt.aml | raw | 12381 | none | open-source |
+| fallback/postcar | stage | 90156 | none | open-source |
+| stm.bin | raw | 66925 | LZMA | open-source |
+| bootblock | bootblock | 98304 | none | open-source |
+| cpu_microcode_blob.bin | microcode | 474112 | none | closed-source |
+| fspm.bin | fsp | 786432 | none | closed-source |
+| fsps.bin | fsp | 283761 | LZ4 | closed-source |
+| cbfs_master_header | cbfs header | 32 | none | data |
+| intel_fit | intel_fit | 80 | none | data |
+| config | raw | 6145 | LZMA | data |
+| revision | raw | 903 | none | data |
+| build_info | raw | 138 | none | data |
+| vbt.bin | raw | 1257 | LZMA | data |
+| sbom | raw | 5883 | none | data |
+| (empty) | null | 1892 | none | empty |
+| (empty) | null | 634212 | none | empty |
+
 ## v1.1.7
 
 Openness Score for msi_ms7d25_v1.1.7_ddr5.rom
