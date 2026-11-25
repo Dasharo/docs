@@ -1,5 +1,8 @@
 # Dasharo System Features
 
+!!! note
+    Some features may not be available on all devices.
+
 When entering the `Dasharo System Features` menu, one may see the following
 submenus to appear:
 
