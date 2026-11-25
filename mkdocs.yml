@@ -219,6 +219,10 @@ plugins:
   - charts:
       vega_theme_light: default
       vega_theme_dark: default
+# Fragments embedded through include-markdown, not standalone pages
+not_in_nav: |
+  /resources/hcl/
+
 nav:
   - 'Intro':
       - 'About Dasharo': index.md
@@ -413,6 +417,8 @@ nav:
           - 'Recovery': unified/protectli/recovery.md
           - 'Test matrix': unified/protectli/test-matrix.md
           - 'OS installation': unified/protectli/os-installation.md
+          - 'pfSense installation': unified/protectli/os-installation-pfsense.md
+          - 'OPNsense installation': unified/protectli/os-installation-opnsense.md
           - 'Hardware Compatibility List': unified/protectli/hcl.md
           - 'Protectli FW6':
               - 'Releases': variants/protectli_fw6/releases.md

@@ -233,7 +233,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 ### Added
 
 - Support for VP2420 platform
-- [Vboot Verified Boot](https://docs.dasharo.com../../guides/vboot-signing/)
+- [Vboot Verified Boot](https://docs.dasharo.com/guides/vboot-signing/)
 - [TPM Measured Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/203-measured-boot/)
 - [Vboot recovery notification in UEFI Payload](https://docs.dasharo.com/unified-test-documentation/dasharo-security/201-verified-boot/)
 - [UEFI Shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)

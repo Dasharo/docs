@@ -148,9 +148,9 @@ refer to:
 Default PiKVM login: `admin`, password: `admin`
 
 Firmware source: [Dasharo
-Universe](https://docs.dasharo.com/variants/protectli_vp2410/releases/) or
-[Cloud](https://cloud.3mdeb.com/index.php/apps/files/?dir=/projects/dasharo/releases&fileid=297139)
-(only for logged in users), alternatively newest builds can be found at [Github](https://github.com/Dasharo/coreboot/).
+Universe](https://docs.dasharo.com/variants/protectli_vp2410/releases/),
+alternatively newest builds can be found at
+[Github](https://github.com/Dasharo/coreboot/).
 
 Running tests: [Open Source Firmware Remote Test Environment](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#getting-started)
 It is strongly suggested to run your first test on [QEMU](https://github.com/Dasharo/open-source-firmware-validation?tab=readme-ov-file#qemu-workflow).

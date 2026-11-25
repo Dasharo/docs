@@ -61,4 +61,4 @@ The test is fully automated. Refer to https://github.com/Dasharo/open-source-fir
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ
+[cbmem]: https://dl.3mdeb.com/dasharo/osfv/cbmem

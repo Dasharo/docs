@@ -116,7 +116,7 @@ Test results for this release can be found
 [sha256.sig][novacustom_ns5x_tgl_v1.6.0.sbom.json_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -257,7 +257,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Firmware Update Mode](https://docs.dasharo.com../../guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [Early boot DMA protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
@@ -507,7 +507,7 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 - Support for NovaCustom NS7x
 - [Support for RGB Keyboard](https://docs.dasharo.com/unified/novacustom/features/)
-- [Persistent boot logo implementation](https://docs.dasharo.com../../guides/logo-customization)
+- [Persistent boot logo implementation](https://docs.dasharo.com/guides/logo-customization)
 
 ### Changed
 

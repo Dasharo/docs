@@ -21,5 +21,5 @@ references related to this platform.
   *@GigaComputing - X – February 24, 2026*
 - [How Open-Source Firmware Is Advancing Secure and Confidential Computing,
   Showcased at FOSDEM
-  2026](https://www.techblume.com/post/how-open-source-firmware-is-advancing-secure-and-confidential-computing-showcased-at-fosdem-2026)<br>
+  2026](https://web.archive.org/web/20260613040819/https://www.techblume.com/post/how-open-source-firmware-is-advancing-secure-and-confidential-computing-showcased-at-fosdem-2026)<br>
   *TechBlume – February, 2026*

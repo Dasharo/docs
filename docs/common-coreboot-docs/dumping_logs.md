@@ -25,8 +25,7 @@ with the firmware. This method requires Secure Boot to be disabled.
 
 Options to get `cbmem` utility:
 
-1. Download precompiled utility from [3mdeb
-   cloud](https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ/download)
+1. [Download precompiled utility](https://dl.3mdeb.com/dasharo/osfv/cbmem)
 2. Use [Dasharo Tools Suite](https://docs.dasharo.com/dasharo-tools-suite/releases#v110)
    v1.1.0 or newer which has `cbmem` utility built in.
 3. Compile `cbmem utility`. See procedure below.

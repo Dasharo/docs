@@ -170,4 +170,5 @@ Example output with unwanted results:
 [INFO ]  Successfully enabled VT-d PMR DMA protection
 ```
 
-[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ/download
+[cbmem]: https://dl.3mdeb.com/dasharo/osfv/cbmem
+[flashrom]: https://dl.3mdeb.com/dasharo/osfv/flashrom

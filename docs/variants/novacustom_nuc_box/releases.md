@@ -86,7 +86,7 @@ Test results for this release can be found
 [sha256.sig][novacustom_nuc_box_mtl_v0.9.2.sbom.json_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -165,7 +165,7 @@ Test results for this release can be found
 [sha256.sig][novacustom_nuc_box_mtl_v0.9.1.rom_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

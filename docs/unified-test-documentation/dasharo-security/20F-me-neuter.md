@@ -190,4 +190,4 @@ If there are no errors printed nearby concerning the HSPHY, test pass.
 
 The test is fully automated. Refer to https://github.com/Dasharo/open-source-firmware-validation/tree/develop
 
-[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ/download
+[cbmem]: https://dl.3mdeb.com/dasharo/osfv/cbmem

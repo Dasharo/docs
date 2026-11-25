@@ -343,5 +343,5 @@ displayed.
     VB2:vb2_check_recovery() Recovery reason from previous boot: 0x0 / 0x0
     ```
 
-[cbmem]: https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ/download
-[flashrom]: https://cloud.3mdeb.com/index.php/s/CttXYWdT8Y2ewQC/download
+[cbmem]: https://dl.3mdeb.com/dasharo/osfv/cbmem
+[flashrom]: https://dl.3mdeb.com/dasharo/osfv/flashrom

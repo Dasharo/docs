@@ -248,5 +248,5 @@ Minicom quick guide:
 
 _Images source: [Wiki Tizen](http://web.archive.org/web/20230702190152/https://wiki.tizen.org/MuxPi)_
 
-[nanopi-image]: https://cloud.3mdeb.com/index.php/s/Tda8wDTjrCY63gq/download
-[cortex-image]: https://cloud.3mdeb.com/index.php/s/YZYYdfNf9wDDEq3/download
+[nanopi-image]: https://dl.3mdeb.com/3mdeb/hardware/muxpi/nanopi-os-image.zip
+[cortex-image]: https://dl.3mdeb.com/3mdeb/hardware/muxpi/firmware-05.bin

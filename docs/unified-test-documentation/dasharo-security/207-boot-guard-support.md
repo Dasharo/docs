@@ -29,8 +29,7 @@ to verify that the implemented Boot Guard mechanism works correctly.
    [Generic test setup: OS preparation](../generic-test-setup.md#os-preparation).
 1. Proceed with the
    [Generic test setup: OS post installation steps](../generic-test-setup.md#post-installation).
-1. Download `cbmem` from the
-    [cloud](https://cloud.3mdeb.com/index.php/s/5aed4HEwWbCiESZ) to the DUT.
+1. Download `cbmem` from the [cloud][cbmem] to the DUT.
 1. Disable Secure Boot.
 
 **Test steps**
@@ -96,3 +95,5 @@ following:
 1. If TPM is physically mounted on the platform, the `TPM type` field should
     contain information about the type of the mounted TPM; also, in that
     situation, field `TPM success` should have the value 1.
+
+[cbmem]: https://dl.3mdeb.com/dasharo/osfv/cbmem

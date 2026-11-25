@@ -31,8 +31,9 @@ a firmware update screen, asking you to not power off the computer.
 !!! note "Note"
 
     Capsule updates via `/dev/efi_capsule_loader` on Linux are not supported
-    because capsules can not survive resets see [issue](TBD). Only Capsule on
-    Disk is supported.
+    because capsules can not survive resets see
+    [issue](https://github.com/Dasharo/dasharo-issues/issues/1843).
+    Only Capsule on Disk is supported.
 
 ### Updating via BMC
 

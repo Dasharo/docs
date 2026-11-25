@@ -248,25 +248,25 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.4.0_bootblock_sha]{ .md-button }
 [sha256.sig][v0.4.0_bootblock_sig]{ .md-button }
 
-[v0.4.0_bootblock_rom]: https://cloud.3mdeb.com/index.php/s/wLTKyH86idYMLfW
-[v0.4.0_bootblock_sha]: https://cloud.3mdeb.com/index.php/s/mRkb6kj4B9Dm9Ak
-[v0.4.0_bootblock_sig]: https://cloud.3mdeb.com/index.php/s/geeofbZsrjef8bT
+[v0.4.0_bootblock_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/raptor-cs_talos-2_bootblock_v0.4.0.signed.ecc
+[v0.4.0_bootblock_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/raptor-cs_talos-2_bootblock_v0.4.0.signed.ecc.sha256
+[v0.4.0_bootblock_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/raptor-cs_talos-2_bootblock_v0.4.0.signed.ecc.sha256.sig
 
 [dasharo_talos_2_coreboot.rom.signed.ecc][v0.4.0_coreboot_rom]{ .md-button }
 [sha256][v0.4.0_coreboot_sha]{ .md-button }
 [sha256.sig][v0.4.0_coreboot_sig]{ .md-button }
 
-[v0.4.0_coreboot_rom]: https://cloud.3mdeb.com/index.php/s/qn3xJGM6LpSBbRd
-[v0.4.0_coreboot_sha]: https://cloud.3mdeb.com/index.php/s/H5NAFpSkbb7aDj6
-[v0.4.0_coreboot_sig]: https://cloud.3mdeb.com/index.php/s/cge3Qiro5AY4Tnt
+[v0.4.0_coreboot_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/raptor-cs_talos-2_coreboot_v0.4.0.rom.signed.ecc
+[v0.4.0_coreboot_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/raptor-cs_talos-2_coreboot_v0.4.0.rom.signed.ecc.sha256
+[v0.4.0_coreboot_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/raptor-cs_talos-2_coreboot_v0.4.0.rom.signed.ecc.sha256.sig
 
 [zImage_v0.4.0.bundled][v0.4.0_bundled_rom]{ .md-button }
 [sha256][v0.4.0_bundled_sha]{ .md-button }
 [sha256.sig][v0.4.0_bundled_sig]{ .md-button }
 
-[v0.4.0_bundled_rom]: https://cloud.3mdeb.com/index.php/s/99jaA4PNoGSQ9M2
-[v0.4.0_bundled_sha]: https://cloud.3mdeb.com/index.php/s/CmzScS7dGPePXKs
-[v0.4.0_bundled_sig]: https://cloud.3mdeb.com/index.php/s/yQDjCgJwjoiwbyP
+[v0.4.0_bundled_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/zImage_v0.4.0.bundled
+[v0.4.0_bundled_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/zImage_v0.4.0.bundled.sha256
+[v0.4.0_bundled_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/raptor-cs_talos-2/v0.4.0/zImage_v0.4.0.bundled.sha256.sig
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)

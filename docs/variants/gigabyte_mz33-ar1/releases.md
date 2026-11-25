@@ -106,7 +106,7 @@ direct engagement with the Dasharo Team and fellow subscribers for
 personalized, priority assistance.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/dasharo/gigabyte_mz33-ar1/dasharo-release-0.x-compatible-with-gigabyte-mz33-ar1-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

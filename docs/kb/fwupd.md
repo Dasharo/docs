@@ -660,7 +660,7 @@ section of the Capsule Update guide.
 ##### fwupdmgr asks for AC despite it being connected
 
 The check for an AC charger being connected in Linux fails when the firmware
-configures a [charging threshold](http://127.0.0.1:8000/unified/novacustom/features/#charge-thresholds)
+configures a [charging threshold](../unified/novacustom/features.md#charge-thresholds)
 for the battery that disconnects the charger once the battery reaches the threshold.
 If the battery is considered full and not charging at the moment, the check in
 `fwupdmgr` will think the charger is disconnected.

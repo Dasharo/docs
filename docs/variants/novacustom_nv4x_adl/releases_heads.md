@@ -72,7 +72,7 @@ network, enabling direct engagement with the Dasharo Team and fellow
 subscribers for personalized, priority assistance.
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://github.com/3mdeb/3mdeb-secpack/blob/master/customer-keys/novacustom/dasharo-release-0.9.x-for-novacustom-signing-key.asc)
 
 ### SBOM (Software Bill of Materials)

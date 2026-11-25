@@ -124,7 +124,7 @@ Test results for this release can be found
 [sha256.sig][novacustom_nv4x_tgl_v1.6.0.sbom.json_sig]{.md-button}
 
 To verify binary integrity with hash and signature please follow the
-instructions in [Dasharo release signature verification](/guides/signature-verification)
+instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
 using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/customer-keys/novacustom/novacustom-open-source-firmware-release-1.x-key.asc)
 
 ### SBOM (Software Bill of Materials)
@@ -265,7 +265,7 @@ Test results for this release can be found
 
 ### Added
 
-- [Firmware Update Mode](https://docs.dasharo.com../../guides/firmware-update/#firmware-update-mode)
+- [Firmware Update Mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
 - [BIOS boot medium write-protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [SMM BIOS write protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
 - [Early boot DMA protection](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
@@ -705,9 +705,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.5.0_sha]{ .md-button }
 [sha256.sig][v0.5.0_sig]{ .md-button }
 
-[v0.5.0_rom]:https://cloud.3mdeb.com/index.php/s/MtTMrPjHARQSsjH
-[v0.5.0_sha]:https://cloud.3mdeb.com/index.php/s/7AdXD2eQjC3F7pf
-[v0.5.0_sig]:https://cloud.3mdeb.com/index.php/s/7AdXD2eQjC3F7pf
+[v0.5.0_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.5.0/dasharo_clevo_nv41mz_0.5.0.rom
+[v0.5.0_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.5.0/dasharo_clevo_nv41mz_0.5.0.SHA256
+[v0.5.0_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.5.0/dasharo_clevo_nv41mz_0.5.0.SHA256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -746,9 +746,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.4.0_sha]{ .md-button }
 [sha256.sig][v0.4.0_sig]{ .md-button }
 
-[v0.4.0_rom]:https://cloud.3mdeb.com/index.php/s/T36bBoyooKnErq9
-[v0.4.0_sha]:https://cloud.3mdeb.com/index.php/s/7iemJtrt3ddJnsf
-[v0.4.0_sig]:https://cloud.3mdeb.com/index.php/s/7iemJtrt3ddJnsf
+[v0.4.0_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.4.0/dasharo_clevo_nv41mz_0.4.0.rom
+[v0.4.0_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.4.0/dasharo_clevo_nv41mz_0.4.0.SHA256
+[v0.4.0_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.4.0/dasharo_clevo_nv41mz_0.4.0.SHA256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -780,9 +780,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.3.0_sha]{ .md-button }
 [sha256.sig][v0.3.0_sig]{ .md-button }
 
-[v0.3.0_rom]:https://cloud.3mdeb.com/index.php/s/xyFQPt3to5Xqqe2
-[v0.3.0_sha]:https://cloud.3mdeb.com/index.php/s/f9e4rQJJ6A7xyz9
-[v0.3.0_sig]:https://cloud.3mdeb.com/index.php/s/QewpkteprxTZ25m
+[v0.3.0_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.3.0/dasharo_clevo_nv41mz_0.3.0.rom
+[v0.3.0_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.3.0/dasharo_clevo_nv41mz_0.3.0.SHA256
+[v0.3.0_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.3.0/dasharo_clevo_nv41mz_0.3.0.SHA256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -815,9 +815,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.2.1_sha]{ .md-button }
 [sha256.sig][v0.2.1_sig]{ .md-button }
 
-[v0.2.1_rom]:https://cloud.3mdeb.com/index.php/s/rBx3ZM6dCo8ZWnT
-[v0.2.1_sha]:https://cloud.3mdeb.com/index.php/s/G7xEmAEwpyDs88t
-[v0.2.1_sig]:https://cloud.3mdeb.com/index.php/s/CbrHc3pT9nwWrde
+[v0.2.1_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.2.1/dasharo_clevo_nv41mz_0.2.1.rom
+[v0.2.1_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.2.1/dasharo_clevo_nv41mz_0.2.1.rom.SHA256
+[v0.2.1_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.2.1/dasharo_clevo_nv41mz_0.2.1.rom.SHA256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -856,9 +856,9 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 [sha256][v0.2.0_sha]{ .md-button }
 [sha256.sig][v0.2.0_sig]{ .md-button }
 
-[v0.2.0_rom]:https://cloud.3mdeb.com/index.php/s/TwpYgYrqTY9AbBQ
-[v0.2.0_sha]:https://cloud.3mdeb.com/index.php/s/xKaQHCKn6RGjsrA
-[v0.2.0_sig]:https://cloud.3mdeb.com/index.php/s/xmR6SxrfbpGNQBR
+[v0.2.0_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.2.0/dasharo_clevo_nv41mz_0.2.0.rom
+[v0.2.0_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.2.0/dasharo_clevo_nv41mz_0.2.0.SHA256
+[v0.2.0_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.2.0/dasharo_clevo_nv41mz_0.2.0.SHA256.sig
 
 ### SBOM (Software Bill of Materials)
 
@@ -885,10 +885,10 @@ using [this key](https://raw.githubusercontent.com/3mdeb/3mdeb-secpack/master/cu
 
 [All in one zip][v0.1.2_aio]
 
-[v0.1.2_rom]:https://cloud.3mdeb.com/index.php/s/oQe2zjQyiMFfLpB
-[v0.1.2_sha]:https://cloud.3mdeb.com/index.php/s/d3mEyBjkoQpywB5
-[v0.1.2_sig]:https://cloud.3mdeb.com/index.php/s/42jatQBgcEQjZnq
-[v0.1.2_aio]:https://cloud.3mdeb.com/index.php/s/kxbLbPSG4CgfB8S
+[v0.1.2_rom]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.1.2/dasharo_clevo_nv41mz_0.1.2.rom
+[v0.1.2_sha]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.1.2/dasharo_clevo_nv41mz_0.1.2.rom.SHA256
+[v0.1.2_sig]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.1.2/dasharo_clevo_nv41mz_0.1.2.rom.SHA256.sig
+[v0.1.2_aio]: https://dl.3mdeb.com/open-source-firmware/Dasharo/novacustom_nv4x_tgl/v0.1.2/dasharo_clevo_nv41mz_0.1.2.zip
 
 ### SBOM (Software Bill of Materials)
 
