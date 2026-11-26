@@ -1,7 +1,7 @@
 # MSI PRO Z790-P (WIFI) (DDR5) Dasharo Release Notes
 
 This is a Dasharo Pro Package Release. To obtain access to the pre-built binaries,
-you need to [subscribe to the Dasharo Pro Package subscriber](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
+you need to [obtain the Dasharo Pro Package](https://docs.dasharo.com/ways-you-can-help-us/#become-a-dasharo-pro-package-subscriber).
 You can do this by purchasing a Dasharo Pro Package product from our [shop](https://shop.3mdeb.com/shop/dasharo-pro-package/1year-desktop/).
 As a subscriber, you will receive access to all firmware updates for the
 duration of your subscription via the Dasharo Pro Package newsletter,
@@ -98,18 +98,15 @@ Test results for this release can be found
 [sha256.sig][msi_ms7e06_v0.9.6_ddr5_dev_signed.rom_sig]{.md-button}
 (msi_ms7e06_v0.9.6_ddr5_dev_signed.rom)
 
-This is a Dasharo Pro Package release. For this platform, access to pre-built
-binaries is provided exclusively through the
-[Full Build for MSI PRO Z790-P (WIFI) and PRO Z790-P (WIFI) DDR4](https://shop.3mdeb.com/product/1year-desktop/),
-a bundled hardware-and-firmware product available in
-the 3mdeb shop. A standalone Dasharo Pro Package subscription is not offered
-for this platform.
-
-With the Full Build, you receive firmware updates for the duration of your
-subscription via the Dasharo Pro Package newsletter, and gain entry to the
-Dasharo Premier Support invite-only live chat on the Matrix network, enabling
-direct engagement with the Dasharo Team and fellow subscribers for
-personalized, priority assistance.
+This is a Dasharo Pro Package Release. To access the pre-built binaries,
+you need to [obtain the Dasharo Pro Package](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+You can do this by purchasing a Dasharo Pro Package product from our
+[shop](https://shop.3mdeb.com/product/1year-desktop/).
+As a subscriber, you will receive access to all firmware updates for the
+duration of your subscription via the Dasharo Pro Package newsletter, and
+gain entry to the Dasharo Premier Support invite-only live chat on the Matrix
+network, enabling direct engagement with the Dasharo Team and fellow
+subscribers for personalized, priority assistance.
 
 To verify binary integrity with hash and signature please follow the
 instructions in [Dasharo release signature verification](../../guides/signature-verification.md)
@@ -513,7 +510,7 @@ This is an [Assured Dasharo release](../../dasharo-naming-convention.md#descript
 (msi_ms7e06_v0.9.5_ddr5_dev_signed.rom)
 
 This is a Dasharo Pro Package Release. To access the pre-built binaries,
-you need to [subscribe to the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+you need to [obtain the Dasharo Pro Package](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You can do this by purchasing a Dasharo Pro Package product from our
 [shop](https://shop.3mdeb.com/product/1year-desktop/).
 As a subscriber, you will receive access to all firmware updates for the
@@ -630,7 +627,7 @@ Test results for this release can be found
 (msi_ms7e06_v0.9.4_ddr5_dev_signed.rom)
 
 This is a Dasharo Pro Package Release. To access the pre-built binaries,
-you need to [subscribe to the Dasharo Pro Package subscriber](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
+you need to [obtain the Dasharo Pro Package](../../ways-you-can-help-us.md#become-a-dasharo-pro-package-subscriber).
 You can do this by purchasing a Dasharo Pro Package product from our
 [shop](https://shop.3mdeb.com/product/1year-desktop/).
 As a subscriber, you will receive access to all firmware updates for the
